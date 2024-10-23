@@ -1,0 +1,45 @@
+{
+  "type": "maven",
+  "namespace": "org.aspectj",
+  "name": "aspectjweaver",
+  "version": "1.6.0",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "AspectJ weaver",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "http://www.aspectj.org",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": "epl-1.0",
+  "declared_license": [
+    {
+      "name": "Eclipse Public License - v 1.0",
+      "url": "http://www.eclipse.org/legal/epl-v10.html",
+      "comments": null,
+      "distribution": "repo"
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.aspectj/aspectjweaver@1.6.0?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.6.0/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.6.0/aspectjweaver-1.6.0.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.6.0/aspectjweaver-1.6.0.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.aspectj/aspectjweaver@1.6.0"
+}

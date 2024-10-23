@@ -1,0 +1,28 @@
+graft src
+
+graft thirdparty
+graft etc/thirdparty
+recursive-include etc/thirdparty *
+
+include *.LICENSE
+include NOTICE
+include *.ABOUT
+include *.toml
+include *.yml
+include *.rst
+include setup.*
+include configure*
+include requirements*
+include .giti*
+
+include extractcode*
+include scancode*
+
+# path to executable used by a built app
+include PYTHON_EXECUTABLE
+
+include Dockerfile
+include .VERSION
+
+global-exclude *.py[co] __pycache__ *.*~
+

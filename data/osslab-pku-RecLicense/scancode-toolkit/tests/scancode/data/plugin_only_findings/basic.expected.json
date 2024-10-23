@@ -1,0 +1,228 @@
+{
+  "dependencies": [],
+  "packages": [],
+  "files": [
+    {
+      "path": "basic.tgz/basic/dir2/subdir/bcopy.s",
+      "type": "file",
+      "name": "bcopy.s",
+      "base_name": "bcopy",
+      "extension": ".s",
+      "size": 32452,
+      "sha1": "99f20eafc7b7e1c8e21bced55c8cdd05339bec77",
+      "md5": "e1c66adaf6b8aa90e348668ac4869a61",
+      "sha256": "230de4eee886fa5ac0b056242ee0a9e90ac1d2fa425b14219902a9839fb4d59e",
+      "mime_type": "text/x-c",
+      "file_type": "C source, ASCII text, with CRLF line terminators",
+      "programming_language": "GAS",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "licenses": [
+        {
+          "key": "bsd-original-uc",
+          "score": 100.0,
+          "name": "BSD-Original-UC",
+          "short_name": "BSD-Original-UC",
+          "category": "Permissive",
+          "is_exception": false,
+          "is_unknown": false,
+          "owner": "Regents of the University of California",
+          "homepage_url": "ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change",
+          "text_url": "http://www.xfree86.org/3.3.6/COPYRIGHT2.html",
+          "reference_url": "https://scancode-licensedb.aboutcode.org/bsd-original-uc",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/bsd-original-uc.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/bsd-original-uc.yml",
+          "spdx_license_key": "BSD-4-Clause-UC",
+          "spdx_url": "https://spdx.org/licenses/BSD-4-Clause-UC",
+          "start_line": 25,
+          "end_line": 51,
+          "matched_rule": {
+            "identifier": "bsd-original-uc_3.RULE",
+            "license_expression": "bsd-original-uc",
+            "licenses": [
+              "bsd-original-uc"
+            ],
+            "referenced_filenames": [],
+            "is_license_text": true,
+            "is_license_notice": false,
+            "is_license_reference": false,
+            "is_license_tag": false,
+            "is_license_intro": false,
+            "has_unknown": false,
+            "matcher": "2-aho",
+            "rule_length": 243,
+            "matched_length": 243,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        }
+      ],
+      "license_expressions": [
+        "bsd-original-uc"
+      ],
+      "percentage_of_license_text": 4.82,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) 1993 The Regents of the University of California",
+          "start_line": 22,
+          "end_line": 22
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Regents of the University of California",
+          "start_line": 22,
+          "end_line": 22
+        }
+      ],
+      "authors": [
+        {
+          "author": "the University of California, Berkeley and its contributors",
+          "start_line": 35,
+          "end_line": 36
+        }
+      ],
+      "package_data": [],
+      "for_packages": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "basic.tgz/basic/main.c",
+      "type": "file",
+      "name": "main.c",
+      "base_name": "main",
+      "extension": ".c",
+      "size": 1940,
+      "sha1": "35017ed9762bdc9d16054a40ceefdda8b362083a",
+      "md5": "8d0a3b3fe1c96a49af2a66040193291b",
+      "sha256": "c6f6fb075abb1414982b4aaea37093d9120ce28fea1484ca7e275c262ec09b1c",
+      "mime_type": "text/x-c",
+      "file_type": "C source, ASCII text",
+      "programming_language": "C",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "licenses": [
+        {
+          "key": "gpl-2.0",
+          "score": 100.0,
+          "name": "GNU General Public License 2.0",
+          "short_name": "GPL 2.0",
+          "category": "Copyleft",
+          "is_exception": false,
+          "is_unknown": false,
+          "owner": "Free Software Foundation (FSF)",
+          "homepage_url": "http://www.gnu.org/licenses/gpl-2.0.html",
+          "text_url": "http://www.gnu.org/licenses/gpl-2.0.txt",
+          "reference_url": "https://scancode-licensedb.aboutcode.org/gpl-2.0",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-2.0.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-2.0.yml",
+          "spdx_license_key": "GPL-2.0-only",
+          "spdx_url": "https://spdx.org/licenses/GPL-2.0-only",
+          "start_line": 5,
+          "end_line": 12,
+          "matched_rule": {
+            "identifier": "gpl-2.0_or_bsd-new_aes_1.RULE",
+            "license_expression": "gpl-2.0 OR bsd-new",
+            "licenses": [
+              "gpl-2.0",
+              "bsd-new"
+            ],
+            "referenced_filenames": [
+              "COPYING",
+              "README"
+            ],
+            "is_license_text": false,
+            "is_license_notice": true,
+            "is_license_reference": false,
+            "is_license_tag": false,
+            "is_license_intro": false,
+            "has_unknown": false,
+            "matcher": "2-aho",
+            "rule_length": 50,
+            "matched_length": 50,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        },
+        {
+          "key": "bsd-new",
+          "score": 100.0,
+          "name": "BSD-3-Clause",
+          "short_name": "BSD-3-Clause",
+          "category": "Permissive",
+          "is_exception": false,
+          "is_unknown": false,
+          "owner": "Regents of the University of California",
+          "homepage_url": "http://www.opensource.org/licenses/BSD-3-Clause",
+          "text_url": "http://www.opensource.org/licenses/BSD-3-Clause",
+          "reference_url": "https://scancode-licensedb.aboutcode.org/bsd-new",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/bsd-new.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/bsd-new.yml",
+          "spdx_license_key": "BSD-3-Clause",
+          "spdx_url": "https://spdx.org/licenses/BSD-3-Clause",
+          "start_line": 5,
+          "end_line": 12,
+          "matched_rule": {
+            "identifier": "gpl-2.0_or_bsd-new_aes_1.RULE",
+            "license_expression": "gpl-2.0 OR bsd-new",
+            "licenses": [
+              "gpl-2.0",
+              "bsd-new"
+            ],
+            "referenced_filenames": [
+              "COPYING",
+              "README"
+            ],
+            "is_license_text": false,
+            "is_license_notice": true,
+            "is_license_reference": false,
+            "is_license_tag": false,
+            "is_license_intro": false,
+            "has_unknown": false,
+            "matcher": "2-aho",
+            "rule_length": 50,
+            "matched_length": 50,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        }
+      ],
+      "license_expressions": [
+        "gpl-2.0 OR bsd-new"
+      ],
+      "percentage_of_license_text": 19.01,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) 2006, Jouni Malinen <j@w1.fi>",
+          "start_line": 3,
+          "end_line": 3
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Jouni Malinen",
+          "start_line": 3,
+          "end_line": 3
+        }
+      ],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

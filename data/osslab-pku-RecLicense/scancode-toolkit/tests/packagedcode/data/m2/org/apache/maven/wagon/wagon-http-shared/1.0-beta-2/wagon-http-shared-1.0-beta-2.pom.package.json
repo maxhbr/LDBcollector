@@ -1,0 +1,49 @@
+{
+  "type": "maven",
+  "namespace": "org.apache.maven.wagon",
+  "name": "wagon-http-shared",
+  "version": "1.0-beta-2",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Maven Wagon HTTP Shared Library\nShared Library for the wagon-http, and wagon-http-lightweight wagon providers.",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": null,
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": "http://jira.codehaus.org/browse/WAGONHTTP",
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.apache.maven.wagon/wagon-http-shared@1.0-beta-2?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/jtidy/jtidy@4aug2000r7-dev",
+      "extracted_requirement": "4aug2000r7-dev",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/wagon-http-shared-1.0-beta-2.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/wagon-http-shared-1.0-beta-2.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.apache.maven.wagon/wagon-http-shared@1.0-beta-2"
+}

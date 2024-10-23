@@ -1,0 +1,59 @@
+{
+  "type": "maven",
+  "namespace": "org.codehaus.plexus",
+  "name": "plexus-components",
+  "version": "1.1.9",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Plexus Components Parent Project",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": null,
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": "http://fisheye.codehaus.org/browse/plexus/plexus-components/trunk/",
+  "vcs_url": "svn+http://svn.codehaus.org/plexus/plexus-components/trunk/",
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.codehaus.plexus/plexus-components@1.1.9?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/org.codehaus.plexus/plexus-component-api@1.0-alpha-16",
+      "extracted_requirement": "1.0-alpha-16",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.codehaus.plexus/plexus-container-default@1.0-alpha-16",
+      "extracted_requirement": "1.0-alpha-16",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.9/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.codehaus.plexus/plexus-components@1.1.9"
+}

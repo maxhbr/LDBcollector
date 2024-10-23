@@ -1,0 +1,97 @@
+{
+  "dependencies": [],
+  "packages": [
+    {
+      "type": "rpm",
+      "namespace": null,
+      "name": "alfandega",
+      "version": "2.0-1.7.3",
+      "qualifiers": {},
+      "subpath": null,
+      "primary_language": null,
+      "description": "A perl modules for iptables firewall control.",
+      "release_date": null,
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "http://alfandega.sourceforge.net/",
+      "download_url": null,
+      "size": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha512": null,
+      "bug_tracking_url": null,
+      "code_view_url": null,
+      "vcs_url": null,
+      "copyright": null,
+      "license_expression": "gpl-1.0-plus",
+      "declared_license": "GPL",
+      "notice_text": null,
+      "source_packages": [
+        "pkg:rpm/alfandega@2.0-1.7.3?arch=src"
+      ],
+      "extra_data": {},
+      "repository_homepage_url": null,
+      "repository_download_url": null,
+      "api_data_url": null,
+      "package_uid": "pkg:rpm/alfandega@2.0-1.7.3?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "datafile_paths": [
+        "alfandega-2.0-1.7.3.noarch.rpm"
+      ],
+      "datasource_ids": [
+        "rpm_archive"
+      ],
+      "purl": "pkg:rpm/alfandega@2.0-1.7.3"
+    }
+  ],
+  "files": [
+    {
+      "path": "alfandega-2.0-1.7.3.noarch.rpm",
+      "type": "file",
+      "package_data": [
+        {
+          "type": "rpm",
+          "namespace": null,
+          "name": "alfandega",
+          "version": "2.0-1.7.3",
+          "qualifiers": {},
+          "subpath": null,
+          "primary_language": null,
+          "description": "A perl modules for iptables firewall control.",
+          "release_date": null,
+          "parties": [],
+          "keywords": [],
+          "homepage_url": "http://alfandega.sourceforge.net/",
+          "download_url": null,
+          "size": null,
+          "sha1": null,
+          "md5": null,
+          "sha256": null,
+          "sha512": null,
+          "bug_tracking_url": null,
+          "code_view_url": null,
+          "vcs_url": null,
+          "copyright": null,
+          "license_expression": null,
+          "declared_license": "GPL",
+          "notice_text": null,
+          "source_packages": [
+            "pkg:rpm/alfandega@2.0-1.7.3?arch=src"
+          ],
+          "file_references": [],
+          "extra_data": {},
+          "dependencies": [],
+          "repository_homepage_url": null,
+          "repository_download_url": null,
+          "api_data_url": null,
+          "datasource_id": "rpm_archive",
+          "purl": "pkg:rpm/alfandega@2.0-1.7.3"
+        }
+      ],
+      "for_packages": [
+        "pkg:rpm/alfandega@2.0-1.7.3?uuid=fixed-uid-done-for-testing-5642512d1758"
+      ],
+      "scan_errors": []
+    }
+  ]
+}

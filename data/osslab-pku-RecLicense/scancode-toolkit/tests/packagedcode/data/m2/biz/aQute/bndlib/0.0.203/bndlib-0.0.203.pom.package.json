@@ -1,0 +1,53 @@
+{
+  "type": "maven",
+  "namespace": "biz.aQute",
+  "name": "bndlib",
+  "version": "0.0.203",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "BND Library\nJAR Processing Library for creating and verifying OSGi manifest headers",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "organization",
+      "role": "owner",
+      "name": "aQute SARL",
+      "email": null,
+      "url": "http://www.aQute.biz"
+    }
+  ],
+  "keywords": [],
+  "homepage_url": "http://www.aQute.biz/Code/Bnd",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": "apache-2.0",
+  "declared_license": [
+    {
+      "name": "This material is licensed under the Apache Software License, Version 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0",
+      "comments": null,
+      "distribution": "repo"
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/biz.aQute/bndlib@0.0.203?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/biz/aQute/bndlib/0.0.203/",
+  "repository_download_url": "https://repo1.maven.org/maven2/biz/aQute/bndlib/0.0.203/bndlib-0.0.203.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/biz/aQute/bndlib/0.0.203/bndlib-0.0.203.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/biz.aQute/bndlib@0.0.203"
+}

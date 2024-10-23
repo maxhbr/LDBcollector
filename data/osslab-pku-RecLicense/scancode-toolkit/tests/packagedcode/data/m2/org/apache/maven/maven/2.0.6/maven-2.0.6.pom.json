@@ -1,0 +1,216 @@
+{
+  "model_version": "4.0.0",
+  "group_id": "org.apache.maven",
+  "artifact_id": "maven",
+  "version": "2.0.6",
+  "classifier": null,
+  "packaging": "pom",
+  "parent": {
+    "group_id": "org.apache.maven",
+    "artifact_id": "maven-parent",
+    "version": "5",
+    "classifier": null,
+    "type": "pom"
+  },
+  "name": "Maven",
+  "description": "Maven is a project development management and comprehension tool. Based on the concept of a project object model: builds, dependency management, documentation creation, site publication, and distribution publication are all controlled from the declarative file. Maven can be extended by plugins to utilise a number of other development tools for reporting or the build process.",
+  "inception_year": "2001",
+  "url": "http://maven.apache.org",
+  "organization_name": null,
+  "organization_url": null,
+  "licenses": [],
+  "developers": [],
+  "contributors": [],
+  "modules": [
+    "maven-artifact",
+    "maven-artifact-manager",
+    "maven-artifact-test",
+    "maven-core",
+    "maven-error-diagnostics",
+    "maven-model",
+    "maven-monitor",
+    "maven-plugin-api",
+    "maven-plugin-descriptor",
+    "maven-plugin-parameter-documenter",
+    "maven-plugin-registry",
+    "maven-profile",
+    "maven-project",
+    "maven-reporting",
+    "maven-repository-metadata",
+    "maven-script",
+    "maven-settings"
+  ],
+  "mailing_lists": [
+    {
+      "name": "Maven User List",
+      "archive_url": "http://mail-archives.apache.org/mod_mbox/maven-users"
+    }
+  ],
+  "scm": {
+    "connection": "scm:svn:https://svn.apache.org/repos/asf/maven/components/tags/maven-2.0.6",
+    "developer_connection": null,
+    "url": "https://svn.apache.org/repos/asf/maven/components/tags/maven-2.0.6",
+    "tag": null
+  },
+  "issue_management": {
+    "system": "jira",
+    "url": "http://jira.codehaus.org/browse/MNG"
+  },
+  "ci_management": {},
+  "distribution_management": {
+    "download_url": null,
+    "site": {
+      "id": "apache.website",
+      "name": null,
+      "url": "scp://people.apache.org/www/maven.apache.org/ref/${project.version}/"
+    },
+    "repository": {},
+    "snapshot_repository": {}
+  },
+  "repositories": [],
+  "plugin_repositories": [],
+  "dependencies": {
+    "test": [
+      {
+        "group_id": "junit",
+        "artifact_id": "junit",
+        "version": "3.8.1",
+        "required": true
+      }
+    ],
+    "dependencyManagement": [
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-model",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-project",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven.reporting",
+        "artifact_id": "maven-reporting-api",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-repository-metadata",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-artifact",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-artifact-manager",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-artifact-test",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-settings",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-plugin-parameter-documenter",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-profile",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-plugin-registry",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-plugin-api",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven",
+        "artifact_id": "maven-monitor",
+        "version": "2.0.6",
+        "required": true
+      },
+      {
+        "group_id": "org.codehaus.plexus",
+        "artifact_id": "plexus-container-default",
+        "version": "1.0-alpha-9-stable-1",
+        "required": true
+      },
+      {
+        "group_id": "org.codehaus.plexus",
+        "artifact_id": "plexus-utils",
+        "version": "1.4.1",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven.wagon",
+        "artifact_id": "wagon-provider-api",
+        "version": "1.0-beta-2",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven.wagon",
+        "artifact_id": "wagon-ssh",
+        "version": "1.0-beta-2",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven.wagon",
+        "artifact_id": "wagon-ssh-external",
+        "version": "1.0-beta-2",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven.wagon",
+        "artifact_id": "wagon-file",
+        "version": "1.0-beta-2",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.maven.wagon",
+        "artifact_id": "wagon-http-lightweight",
+        "version": "1.0-beta-2",
+        "required": true
+      },
+      {
+        "group_id": "easymock",
+        "artifact_id": "easymock",
+        "version": "1.2_Java1.3",
+        "required": true
+      },
+      {
+        "group_id": "classworlds",
+        "artifact_id": "classworlds",
+        "version": "1.1",
+        "required": true
+      }
+    ]
+  }
+}

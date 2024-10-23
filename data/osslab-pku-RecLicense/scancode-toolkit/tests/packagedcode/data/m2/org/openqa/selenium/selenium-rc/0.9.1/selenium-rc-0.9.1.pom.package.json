@@ -1,0 +1,139 @@
+{
+  "type": "maven",
+  "namespace": "org.openqa.selenium",
+  "name": "selenium-rc",
+  "version": "0.9.1",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Selenium RC",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "http://www.openqa.org/selenium-rc",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.openqa.selenium/selenium-rc@0.9.1?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/org.openqa.selenium.server/selenium-server-coreless@0.9.1",
+      "extracted_requirement": "0.9.1",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.openqa.selenium.server/selenium-server@0.9.1",
+      "extracted_requirement": "0.9.1",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.openqa.selenium.core/selenium-core@0.8.3-SNAPSHOT",
+      "extracted_requirement": "0.8.3-SNAPSHOT",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.openqa.selenium.ide/selenium-ide@0.8.1-SNAPSHOT",
+      "extracted_requirement": "0.8.1-SNAPSHOT",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/ant/ant@1.6.5",
+      "extracted_requirement": "1.6.5",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/jetty/org.mortbay.jetty@5.1.10",
+      "extracted_requirement": "5.1.10",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/commons-logging/commons-logging@1.0.4",
+      "extracted_requirement": "1.0.4",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.servlet/servlet-api@2.4",
+      "extracted_requirement": "2.4",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/rhino/js@1.6R2",
+      "extracted_requirement": "1.6R2",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/junit/junit@3.8.1",
+      "extracted_requirement": "3.8.1",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/openqa/selenium/selenium-rc/0.9.1/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/openqa/selenium/selenium-rc/0.9.1/selenium-rc-0.9.1.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/openqa/selenium/selenium-rc/0.9.1/selenium-rc-0.9.1.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.openqa.selenium/selenium-rc@0.9.1"
+}

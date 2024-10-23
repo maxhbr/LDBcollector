@@ -1,0 +1,5 @@
+license_expression: etalab-2.0 AND unknown-license-reference
+is_license_notice: yes
+relevance: 80
+referenced_filenames:
+    - LICENSE.md

@@ -1,0 +1,319 @@
+#!/usr/bin/env bash
+#
+# Copyright (c) nexB Inc. and others. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0 AND MIT
+# See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
+# ScanCode is a trademark of nexB Inc.
+# See https://github.com/nexB/ for support or download.
+# See https://aboutcode.org for more information about nexB OSS projects.
+#
+
+set -e
+#set -x
+
+###################################################################################
+###################################################################################
+# from https://raw.githubusercontent.com/mkropat/sh-realpath/58c03982cfd8accbcf0c4426a4adf0f120a8b2bb/realpath.sh
+# realpath emulation for portability on *nix
+# this allow running scancode from arbitrary locations and from symlinks
+#
+# Copyright (c) 2014 Michael Kropat
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+
+realpath() {
+    canonicalize_path "$(resolve_symlinks "$1")"
+}
+
+resolve_symlinks() {
+    _resolve_symlinks "$1"
+}
+
+_resolve_symlinks() {
+    _assert_no_path_cycles "$@" || return
+
+    local dir_context path
+    path=$(readlink -- "$1")
+    if [ $? -eq 0 ]; then
+        dir_context=$(dirname -- "$1")
+        _resolve_symlinks "$(_prepend_dir_context_if_necessary "$dir_context" "$path")" "$@"
+    else
+        printf '%s\n' "$1"
+    fi
+}
+
+_prepend_dir_context_if_necessary() {
+    if [ "$1" = . ]; then
+        printf '%s\n' "$2"
+    else
+        _prepend_path_if_relative "$1" "$2"
+    fi
+}
+
+_prepend_path_if_relative() {
+    case "$2" in
+        /* ) printf '%s\n' "$2" ;;
+         * ) printf '%s\n' "$1/$2" ;;
+    esac
+}
+
+_assert_no_path_cycles() {
+    local target path
+
+    target=$1
+    shift
+
+    for path in "$@"; do
+        if [ "$path" = "$target" ]; then
+            return 1
+        fi
+    done
+}
+
+canonicalize_path() {
+    if [ -d "$1" ]; then
+        _canonicalize_dir_path "$1"
+    else
+        _canonicalize_file_path "$1"
+    fi
+}
+
+_canonicalize_dir_path() {
+    (cd "$1" 2>/dev/null && pwd -P)
+}
+
+_canonicalize_file_path() {
+    local dir file
+    dir=$(dirname -- "$1")
+    file=$(basename -- "$1")
+    (cd "$dir" 2>/dev/null && printf '%s/%s\n' "$(pwd -P)" "$file")
+}
+
+###################################################################################
+###################################################################################
+
+# Now run configure proper
+
+################################
+# Setup current directory where this script lives
+CFG_BIN="$( realpath "${BASH_SOURCE[0]}" )"
+CFG_ROOT_DIR="$( cd "$( dirname "${CFG_BIN}" )" && pwd )"
+
+CFG_BIN_DIR=$CFG_ROOT_DIR/$VIRTUALENV_DIR/bin
+
+# force relaunching under X86-64 architecture on macOS M1/ARM 
+if [[ $OSTYPE == 'darwin'* && $(uname -m) == 'arm64' && $(sysctl -in sysctl.proc_translated) == 0 ]]; then
+    arch -x86_64 /bin/bash -c "$CFG_ROOT_DIR/configure $*"
+    exit $?
+fi
+
+################################
+# A configuration script to set things up:
+# create a virtualenv and install or update thirdparty packages.
+# Source this script for initial configuration
+# Use configure --help for details
+#
+# NOTE: please keep in sync with Windows script configure.bat
+#
+# This script will search for a virtualenv.pyz app in etc/thirdparty/virtualenv.pyz
+# Otherwise it will download the latest from the VIRTUALENV_PYZ_URL default
+################################
+CLI_ARGS=$1
+
+################################
+# Defaults. Change these variables to customize this script
+################################
+
+BASE=".[packages]"
+BASE_DEV=".[packages,testing]"
+if [[ $OSTYPE == 'darwin'* ]]; then
+    BASE="."
+    BASE_DEV=".[testing]"
+fi
+
+# Requirement arguments passed to pip and used by default or with --dev.
+REQUIREMENTS="--editable $BASE --constraint requirements.txt --constraint requirements-linux.txt"
+DEV_REQUIREMENTS="--editable $BASE_DEV --constraint requirements.txt --constraint requirements-linux.txt --constraint requirements-dev.txt"
+DOCS_REQUIREMENTS="--editable .[docs] --constraint requirements.txt"
+REL_REQUIREMENTS="--requirement etc/scripts/requirements.txt"
+PROD_REQUIREMENTS="scancode_toolkit*.whl"
+
+# where we create a virtualenv
+VIRTUALENV_DIR=venv
+
+# Cleanable files and directories to delete with the --clean option
+CLEANABLE="build venv"
+
+# extra  arguments passed to pip
+PIP_EXTRA_ARGS=" "
+
+# the URL to download virtualenv.pyz if needed
+VIRTUALENV_PYZ_URL=https://bootstrap.pypa.io/virtualenv.pyz
+################################
+
+
+################################
+# Current directory where this script lives
+CFG_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CFG_BIN_DIR=$CFG_ROOT_DIR/$VIRTUALENV_DIR/bin
+
+
+################################
+# Thirdparty package locations and index handling
+# Find packages from the local thirdparty directory if present
+thirddir=$CFG_ROOT_DIR/thirdparty
+if [[ "$(echo $thirddir/*.whl)x" != "$thirddir/*.whlx" ]]; then
+    PIP_EXTRA_ARGS="--no-index --find-links $CFG_ROOT_DIR/thirdparty"
+    CFG_REQUIREMENTS=$PROD_REQUIREMENTS
+else
+    CFG_REQUIREMENTS=$REQUIREMENTS
+fi
+
+
+################################
+# Set the quiet flag to empty if not defined
+if [[ "$CFG_QUIET" == "" ]]; then
+    CFG_QUIET=" "
+fi
+
+
+################################
+# Find a proper Python to run
+# Use environment variables or a file if available.
+# Otherwise the latest Python by default.
+find_python() {
+    if [[ "$PYTHON_EXECUTABLE" == "" ]]; then
+        # check for a file named PYTHON_EXECUTABLE
+        if [ -f "$CFG_ROOT_DIR/PYTHON_EXECUTABLE" ]; then
+            PYTHON_EXECUTABLE=$(cat "$CFG_ROOT_DIR/PYTHON_EXECUTABLE")
+        else
+            PYTHON_EXECUTABLE=python3
+        fi
+    fi
+}
+
+
+################################
+create_virtualenv() {
+    # create a virtualenv for Python
+    # Note: we do not use the bundled Python 3 "venv" because its behavior and
+    # presence is not consistent across Linux distro and sometimes pip is not
+    # included either by default. The virtualenv.pyz app cures all these issues.
+
+    VENV_DIR="$1"
+    if [ ! -f "$CFG_BIN_DIR/python" ]; then
+
+        mkdir -p "$CFG_ROOT_DIR/$VENV_DIR"
+
+        if [ -f "$CFG_ROOT_DIR/etc/thirdparty/virtualenv.pyz" ]; then
+            VIRTUALENV_PYZ="$CFG_ROOT_DIR/etc/thirdparty/virtualenv.pyz"
+        else
+            VIRTUALENV_PYZ="$CFG_ROOT_DIR/$VENV_DIR/virtualenv.pyz"
+            wget -O "$VIRTUALENV_PYZ" "$VIRTUALENV_PYZ_URL" 2>/dev/null || curl -o  "$VIRTUALENV_PYZ" "$VIRTUALENV_PYZ_URL"
+        fi
+
+        $PYTHON_EXECUTABLE "$VIRTUALENV_PYZ" \
+            --wheel embed --pip embed --setuptools embed \
+            --never-download \
+            --no-periodic-update \
+            --no-vcs-ignore \
+            $CFG_QUIET \
+            "$CFG_ROOT_DIR/$VENV_DIR"
+    fi
+}
+
+
+################################
+install_packages() {
+    # install requirements in virtualenv
+    # note: --no-build-isolation means that pip/wheel/setuptools will not
+    # be reinstalled a second time and reused from the virtualenv and this
+    # speeds up the installation.
+    # We always have the PEP517 build dependencies installed already.
+
+    "$CFG_BIN_DIR/pip" install \
+        --upgrade \
+        --no-build-isolation \
+        $CFG_QUIET \
+        $PIP_EXTRA_ARGS \
+        $1
+}
+
+
+################################
+cli_help() {
+    echo An initial configuration script
+    echo "  usage: ./configure [options]"
+    echo
+    echo The default is to configure for regular use. Use --dev for development.
+    echo
+    echo The options are:
+    echo " --clean: clean built and installed files and exit."
+    echo " --dev:   configure the environment for development."
+    echo " --help:  display this help message and exit."
+    echo
+    echo By default, the python interpreter version found in the path is used.
+    echo Alternatively, the PYTHON_EXECUTABLE environment variable can be set to
+    echo configure another Python executable interpreter to use. If this is not
+    echo set, a file named PYTHON_EXECUTABLE containing a single line with the
+    echo path of the Python executable to use will be checked last.
+    set +e
+    exit
+}
+
+
+################################
+clean() {
+    # Remove cleanable file and directories and files from the root dir.
+    echo "* Cleaning ..."
+    for cln in $CLEANABLE;
+        do rm -rf "${CFG_ROOT_DIR:?}/${cln:?}";
+    done
+    set +e
+    exit
+}
+
+
+################################
+# Main command line entry point
+
+# We are using getopts to parse option arguments that start with "-"
+while getopts :-: optchar; do
+    case "${optchar}" in
+        -)
+            case "${OPTARG}" in
+                help  ) cli_help;;
+                clean ) find_python && clean;;
+                dev   ) CFG_REQUIREMENTS="$DEV_REQUIREMENTS";;
+                docs   ) CFG_REQUIREMENTS="$DOCS_REQUIREMENTS";;
+                rel   ) CFG_REQUIREMENTS="$REL_REQUIREMENTS";;
+            esac;;
+    esac
+done
+
+PIP_EXTRA_ARGS="$PIP_EXTRA_ARGS"
+
+find_python
+create_virtualenv "$VIRTUALENV_DIR"
+install_packages "$CFG_REQUIREMENTS"
+. "$CFG_BIN_DIR/activate"
+
+
+set +e

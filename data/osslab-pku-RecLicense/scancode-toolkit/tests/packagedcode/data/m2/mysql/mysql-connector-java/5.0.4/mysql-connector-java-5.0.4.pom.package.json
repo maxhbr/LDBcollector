@@ -1,0 +1,45 @@
+{
+  "type": "maven",
+  "namespace": "mysql",
+  "name": "mysql-connector-java",
+  "version": "5.0.4",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "MySQL java connector",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "http://dev.mysql.com/usingmysql/java/",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": "http://svn.mysql.com/svnpublic/connector-j/trunk/connector-j",
+  "vcs_url": "svn+http://svn.mysql.com/svnpublic/connector-j/trunk/connector-j",
+  "copyright": null,
+  "license_expression": "gpl-2.0 AND gpl-1.0-plus AND gpl-2.0 WITH mysql-linking-exception-2018",
+  "declared_license": [
+    {
+      "name": "The GNU General Public License, Version 2",
+      "url": "http://www.gnu.org/licenses/gpl.txt",
+      "comments": "MySQL Connector/J contains exceptions to GPL requirements when linking with other components\n      \t\tthat are licensed under OSI-approved open source licenses, see EXCEPTIONS-CONNECTOR-J\n      \t\tin this distribution for more details.",
+      "distribution": "repo"
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/mysql/mysql-connector-java@5.0.4?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.0.4/",
+  "repository_download_url": "https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.0.4/mysql-connector-java-5.0.4.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.0.4/mysql-connector-java-5.0.4.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/mysql/mysql-connector-java@5.0.4"
+}

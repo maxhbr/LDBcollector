@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "iproute.c",
+      "type": "file",
+      "name": "iproute.c",
+      "base_name": "iproute",
+      "extension": ".c",
+      "size": 469,
+      "sha1": "f0f352c14a8d0b0510cbbeae056542ae7f252151",
+      "md5": "b8e7112a6e82921687fd1e008e72058f",
+      "sha256": "9a011f0109d277cb165f7e8fbcfce4cd3d160b511838228e304c5116fec6038f",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "C",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

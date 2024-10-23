@@ -1,0 +1,57 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": "pydep",
+    "version": "0.0",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": "A simple module that will print the dependencies of a python projectUsage: python -m pydep <dir>",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Beyang Liu",
+        "email": null,
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "http://github.com/sourcegraph/pydep",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": null,
+    "declared_license": {},
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:pypi/pip@7.1.2",
+        "extracted_requirement": "pip==7.1.2",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://pypi.org/project/pydep",
+    "repository_download_url": "https://pypi.org/packages/source/p/pydep/pydep-0.0.tar.gz",
+    "api_data_url": "https://pypi.org/pypi/pydep/0.0/json",
+    "datasource_id": "pypi_setup_py",
+    "purl": "pkg:pypi/pydep@0.0"
+  }
+]

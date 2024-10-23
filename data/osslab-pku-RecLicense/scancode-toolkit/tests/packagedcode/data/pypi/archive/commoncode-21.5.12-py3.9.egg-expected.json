@@ -1,0 +1,207 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": "commoncode",
+    "version": "21.5.12",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": "Set of common utilities, originally split from ScanCode\nCommonCode\n==========\n\n- license: Apache-2.0\n- copyright: copyright (c) nexB. Inc. and others\n- homepage_url: https://github.com/nexB/commoncode\n- keywords: utilities, scancode-toolkit, commoncode\n\nCommoncode provides a set of common functions and utilities for handling various things like paths,\ndates, files and hashes. It started as library in scancode-toolkit.\nVisit https://aboutcode.org and https://github.com/nexB/ for support and download.\n\n\nTo install this package use::\n\n    pip install commoncode\n\n\n\nAlternatively, to set up a development environment::\n\n    source configure --dev\n\nTo run unit tests::\n\n    pytest -vvs -n 2\n\nTo clean up development environment::\n\n    ./configure --clean",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "nexB. Inc. and others",
+        "email": "info@aboutcode.org",
+        "url": null
+      }
+    ],
+    "keywords": [
+      "utilities",
+      "scancode-toolkit",
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Topic :: Software Development",
+      "Topic :: Utilities"
+    ],
+    "homepage_url": "https://github.com/nexB/commoncode",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "apache-2.0",
+    "declared_license": {
+      "license": "Apache-2.0"
+    },
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [
+      {
+        "path": "src/commoncode/__init__.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": ".",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:pypi/attrs",
+        "extracted_requirement": "attrs!=20.1.0,>=18.1",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/click",
+        "extracted_requirement": "click>=6.0.0",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/text-unidecode",
+        "extracted_requirement": "text_unidecode>=1.0",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/beautifulsoup4",
+        "extracted_requirement": "Beautifulsoup4<5.0.0,>=4.0.0",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/requests",
+        "extracted_requirement": "requests<3.0.0,>=2.7.0",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/intbitset",
+        "extracted_requirement": "intbitset<3.0,>=2.3.0",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/saneyaml",
+        "extracted_requirement": "saneyaml",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/typing",
+        "extracted_requirement": "typing<3.7,>=3.6; python_version < \"3.7\"",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/sphinx",
+        "extracted_requirement": "Sphinx>=3.3.1; extra == \"docs\"",
+        "scope": "docs",
+        "is_runtime": true,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/sphinx-rtd-theme",
+        "extracted_requirement": "sphinx-rtd-theme>=0.5.0; extra == \"docs\"",
+        "scope": "docs",
+        "is_runtime": true,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/doc8",
+        "extracted_requirement": "doc8>=0.8.1; extra == \"docs\"",
+        "scope": "docs",
+        "is_runtime": true,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/pytest",
+        "extracted_requirement": "pytest>=6; extra == \"testing\"",
+        "scope": "testing",
+        "is_runtime": true,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/pytest-xdist",
+        "extracted_requirement": "pytest-xdist>=2; extra == \"testing\"",
+        "scope": "testing",
+        "is_runtime": true,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://pypi.org/project/commoncode",
+    "repository_download_url": "https://pypi.org/packages/source/c/commoncode/commoncode-21.5.12.tar.gz",
+    "api_data_url": "https://pypi.org/pypi/commoncode/21.5.12/json",
+    "datasource_id": "pypi_egg",
+    "purl": "pkg:pypi/commoncode@21.5.12"
+  }
+]

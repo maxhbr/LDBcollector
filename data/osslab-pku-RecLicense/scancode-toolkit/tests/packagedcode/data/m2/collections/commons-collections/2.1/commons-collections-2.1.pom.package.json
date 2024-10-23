@@ -1,0 +1,85 @@
+{
+  "type": "maven",
+  "namespace": "commons-collections",
+  "name": "commons-collections",
+  "version": "2.1",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Collections\nCommons Collections",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Morgan Delagrange",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Geir Magnusson",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Craig McClanahan",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Rodney Waldoff",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "David Weinrich",
+      "email": null,
+      "url": null
+    }
+  ],
+  "keywords": [],
+  "homepage_url": null,
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/commons-collections/commons-collections@2.1?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/junit/junit@3.7",
+      "extracted_requirement": "3.7",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/commons-collections/commons-collections/2.1/",
+  "repository_download_url": "https://repo1.maven.org/maven2/commons-collections/commons-collections/2.1/commons-collections-2.1.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/commons-collections/commons-collections/2.1/commons-collections-2.1.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/commons-collections/commons-collections@2.1"
+}

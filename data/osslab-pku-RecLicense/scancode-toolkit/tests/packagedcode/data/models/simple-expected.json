@@ -1,0 +1,47 @@
+{
+  "type": "rpm",
+  "namespace": null,
+  "name": "Sample",
+  "version": null,
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": null,
+  "description": "Some package",
+  "release_date": null,
+  "parties": [
+    {
+      "type": null,
+      "role": "author",
+      "name": "Some Author",
+      "email": "some@email.com",
+      "url": null
+    }
+  ],
+  "keywords": [
+    "some",
+    "keyword"
+  ],
+  "homepage_url": null,
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": "git+https://somerepo.com/that.git",
+  "copyright": null,
+  "license_expression": "apache-2.0",
+  "declared_license": "apache-2.0",
+  "notice_text": null,
+  "source_packages": [],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [],
+  "repository_homepage_url": null,
+  "repository_download_url": null,
+  "api_data_url": null,
+  "datasource_id": "rpm_archive",
+  "purl": "pkg:rpm/Sample"
+}

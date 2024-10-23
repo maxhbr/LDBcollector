@@ -1,0 +1,42 @@
+name: CI About Files
+
+on: [push, pull_request]
+
+permissions:
+  contents: read # to fetch code (actions/checkout)
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.7]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Configure VirtualEnv
+        run: ./configure --dev
+
+      - name: Activate VirtualEnv
+        run: source venv/bin/activate
+
+      #- name: Check About Files in thirdparty
+      #  run: ./venv/bin/about check thirdparty/
+
+      - name: Check About Files in thirdparty
+        run: ./venv/bin/about check src/
+
+      - name: Check About Files in thirdparty
+        run: ./venv/bin/about check etc/
+
+      - name: Check About Files in thirdparty
+        run: ./venv/bin/about check scancode-toolkit.ABOUT

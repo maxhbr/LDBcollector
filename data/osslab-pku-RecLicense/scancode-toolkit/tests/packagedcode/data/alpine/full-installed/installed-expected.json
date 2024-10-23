@@ -1,0 +1,1468 @@
+[
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "musl",
+    "version": "1.1.24-r8",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "the musl c library (libc) implementation",
+    "release_date": "2020-05-22",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Timo Ter\u00e4s ",
+        "email": "<timo.teras@iki.fi>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://musl.libc.org/",
+    "download_url": null,
+    "size": 377239,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=afc38b4a14533b4d1c22a11c1b248be0372ec040",
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": "MIT",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/musl@1.1.24-r8"
+    ],
+    "file_references": [
+      {
+        "path": "lib/ld-musl-x86_64.so.1",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "lib/libc.musl-x86_64.so.1",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/musl@1.1.24-r8?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "busybox",
+    "version": "1.31.1-r16",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "Size optimized toolbox of many common UNIX utilities",
+    "release_date": "2020-05-22",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://busybox.net/",
+    "download_url": null,
+    "size": 505682,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=38ef6cebfd8498e03f0636b00c62bdf42fbf5eb2",
+    "copyright": null,
+    "license_expression": "gpl-2.0",
+    "declared_license": "GPL-2.0-only",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/busybox@1.31.1-r16"
+    ],
+    "file_references": [
+      {
+        "path": "bin/busybox",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "bin/sh",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/securetty",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/udhcpd.conf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/logrotate.d/acpid",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/network/if-up.d/dad",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/udhcpc/default.script",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/busybox@1.31.1-r16?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "alpine-baselayout",
+    "version": "3.2.0-r6",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "Alpine base dir structure and init scripts",
+    "release_date": "2020-05-28",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+    "download_url": null,
+    "size": 19917,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=e1c51734fa96fa4bac92e9f14a474324c67916fc",
+    "copyright": null,
+    "license_expression": "gpl-2.0",
+    "declared_license": "GPL-2.0-only",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/alpine-baselayout@3.2.0-r6"
+    ],
+    "file_references": [
+      {
+        "path": "etc/fstab",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/group",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/hostname",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/hosts",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/inittab",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/modules",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/motd",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/mtab",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/passwd",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/profile",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/protocols",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/services",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/shadow",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/shells",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/sysctl.conf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/crontabs/root",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/modprobe.d/aliases.conf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/modprobe.d/blacklist.conf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/modprobe.d/i386.conf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/modprobe.d/kms.conf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/profile.d/color_prompt",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/profile.d/locale",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "lib/sysctl.d/00-alpine.conf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "sbin/mkmntdirs",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "var/run",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "var/spool/mail",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "var/spool/cron/crontabs",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/alpine-baselayout@3.2.0-r6?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "alpine-keys",
+    "version": "2.2-r0",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "Public keys for Alpine Linux packages",
+    "release_date": "2020-03-12",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://alpinelinux.org",
+    "download_url": null,
+    "size": 5460,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=a8372f3ce6e7a3f4cf28524aa729b334eb9d2fd6",
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": "MIT",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/alpine-keys@2.2-r0"
+    ],
+    "file_references": [
+      {
+        "path": "etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/mips64/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/alpine-keys@2.2-r0?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "libcrypto1.1",
+    "version": "1.1.1g-r0",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "Crypto library from openssl",
+    "release_date": "2020-04-21",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Timo Teras ",
+        "email": "<timo.teras@iki.fi>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://www.openssl.org/",
+    "download_url": null,
+    "size": 1207565,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=8d308c15ed58152196218b079d66720ad606405a",
+    "copyright": null,
+    "license_expression": "openssl-ssleay",
+    "declared_license": "OpenSSL",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/openssl@1.1.1g-r0"
+    ],
+    "file_references": [
+      {
+        "path": "etc/ssl/ct_log_list.cnf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/ssl/ct_log_list.cnf.dist",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/ssl/openssl.cnf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/ssl/openssl.cnf.dist",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/ssl/misc/CA.pl",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/ssl/misc/tsget",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/ssl/misc/tsget.pl",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "lib/libcrypto.so.1.1",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/lib/libcrypto.so.1.1",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/lib/engines-1.1/afalg.so",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/lib/engines-1.1/capi.so",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/lib/engines-1.1/padlock.so",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/libcrypto1.1@1.1.1g-r0?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "libssl1.1",
+    "version": "1.1.1g-r0",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "SSL shared libraries",
+    "release_date": "2020-04-21",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Timo Teras ",
+        "email": "<timo.teras@iki.fi>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://www.openssl.org/",
+    "download_url": null,
+    "size": 212078,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=8d308c15ed58152196218b079d66720ad606405a",
+    "copyright": null,
+    "license_expression": "openssl-ssleay",
+    "declared_license": "OpenSSL",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/openssl@1.1.1g-r0"
+    ],
+    "file_references": [
+      {
+        "path": "lib/libssl.so.1.1",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/lib/libssl.so.1.1",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/libssl1.1@1.1.1g-r0?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "ca-certificates-bundle",
+    "version": "20191127-r2",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "Pre generated bundle of Mozilla certificates",
+    "release_date": "2020-03-05",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+    "download_url": null,
+    "size": 125283,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=7363758e1d81ca25dace4597c1bcf0c92119159c",
+    "copyright": null,
+    "license_expression": "mpl-2.0 AND gpl-2.0-plus",
+    "declared_license": "MPL-2.0 GPL-2.0-or-later",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/ca-certificates@20191127-r2"
+    ],
+    "file_references": [
+      {
+        "path": "etc/ssl/cert.pem",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "etc/ssl/certs/ca-certificates.crt",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/ca-certificates-bundle@20191127-r2?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "libtls-standalone",
+    "version": "2.9.1-r1",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "libtls extricated from libressl sources",
+    "release_date": "2020-04-25",
+    "parties": [],
+    "keywords": [],
+    "homepage_url": "https://www.libressl.org/",
+    "download_url": null,
+    "size": 33144,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=7ebfa23b6119a24ca9b9375bdc55373259192da1",
+    "copyright": null,
+    "license_expression": "isc",
+    "declared_license": "ISC",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/libtls-standalone@2.9.1-r1"
+    ],
+    "file_references": [
+      {
+        "path": "usr/lib/libtls-standalone.so.1",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/lib/libtls-standalone.so.1.0.0",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:alpine/ca-certificates-bundle",
+        "extracted_requirement": null,
+        "scope": "depend",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/libtls-standalone@2.9.1-r1?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "ssl_client",
+    "version": "1.31.1-r16",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "EXternal ssl_client for busybox wget",
+    "release_date": "2020-05-22",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://busybox.net/",
+    "download_url": null,
+    "size": 4314,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=38ef6cebfd8498e03f0636b00c62bdf42fbf5eb2",
+    "copyright": null,
+    "license_expression": "gpl-2.0",
+    "declared_license": "GPL-2.0-only",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/busybox@1.31.1-r16"
+    ],
+    "file_references": [
+      {
+        "path": "usr/bin/ssl_client",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/ssl_client@1.31.1-r16?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "zlib",
+    "version": "1.2.11-r3",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "A compression/decompression Library",
+    "release_date": "2019-08-26",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://zlib.net/",
+    "download_url": null,
+    "size": 51197,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=388a4fb3640f8ccbd18e105df3ad741dca4247e1",
+    "copyright": null,
+    "license_expression": "zlib",
+    "declared_license": "Zlib",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/zlib@1.2.11-r3"
+    ],
+    "file_references": [
+      {
+        "path": "lib/libz.so.1",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "lib/libz.so.1.2.11",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/zlib@1.2.11-r3?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "apk-tools",
+    "version": "2.10.5-r1",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "Alpine Package Keeper - package manager for alpine",
+    "release_date": "2020-05-21",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://gitlab.alpinelinux.org/alpine/apk-tools",
+    "download_url": null,
+    "size": 103041,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=6fb6e4266ba2a4c451d2c31c55eaf5b2d1642f8b",
+    "copyright": null,
+    "license_expression": "gpl-2.0",
+    "declared_license": "GPL-2.0-only",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/apk-tools@2.10.5-r1"
+    ],
+    "file_references": [
+      {
+        "path": "sbin/apk",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/apk-tools@2.10.5-r1?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "scanelf",
+    "version": "1.2.6-r0",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "Scan ELF binaries for stuff",
+    "release_date": "2020-05-19",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities",
+    "download_url": null,
+    "size": 36446,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=753fa8d765c7a4edb76f11b1995f84cdcb45bce5",
+    "copyright": null,
+    "license_expression": "gpl-2.0",
+    "declared_license": "GPL-2.0-only",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/pax-utils@1.2.6-r0"
+    ],
+    "file_references": [
+      {
+        "path": "usr/bin/scanelf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/scanelf@1.2.6-r0?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "musl-utils",
+    "version": "1.1.24-r8",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "the musl c library (libc) implementation",
+    "release_date": "2020-05-22",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Timo Ter\u00e4s ",
+        "email": "<timo.teras@iki.fi>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://musl.libc.org/",
+    "download_url": null,
+    "size": 37691,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=afc38b4a14533b4d1c22a11c1b248be0372ec040",
+    "copyright": null,
+    "license_expression": "mit AND bsd-new AND gpl-2.0-plus",
+    "declared_license": "MIT BSD GPL2+",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/musl@1.1.24-r8"
+    ],
+    "file_references": [
+      {
+        "path": "sbin/ldconfig",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/bin/getconf",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/bin/getent",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/bin/iconv",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "usr/bin/ldd",
+        "size": 0,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:alpine/scanelf",
+        "extracted_requirement": null,
+        "scope": "depend",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/musl-utils@1.1.24-r8?arch=x86_64"
+  },
+  {
+    "type": "alpine",
+    "namespace": null,
+    "name": "libc-utils",
+    "version": "0.7.2-r3",
+    "qualifiers": {
+      "arch": "x86_64"
+    },
+    "subpath": null,
+    "primary_language": null,
+    "description": "Meta package to pull in correct libc",
+    "release_date": "2020-03-31",
+    "parties": [
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "Natanael Copa ",
+        "email": "<ncopa@alpinelinux.org>",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://alpinelinux.org",
+    "download_url": null,
+    "size": 1226,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "git+http://git.alpinelinux.org/aports/commit/?id=60424133be2e79bbfeff3d58147a22886f817ce2",
+    "copyright": null,
+    "license_expression": "bsd-simplified AND bsd-new",
+    "declared_license": "BSD-2-Clause AND BSD-3-Clause",
+    "notice_text": null,
+    "source_packages": [
+      "pkg:alpine/libc-dev@0.7.2-r3"
+    ],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:alpine/musl-utils",
+        "extracted_requirement": null,
+        "scope": "depend",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "alpine_installed_db",
+    "purl": "pkg:alpine/libc-utils@0.7.2-r3?arch=x86_64"
+  }
+]

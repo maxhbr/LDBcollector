@@ -1,0 +1,45 @@
+{
+  "type": "maven",
+  "namespace": "c3p0",
+  "name": "c3p0",
+  "version": "0.9.0.4",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "c3p0:JDBC DataSources/Resource Pools\nc3p0 is an easy-to-use library for augmenting traditional (DriverManager-based) JDBC drivers with JNDI-bindable DataSources,\n    including DataSources that implement Connection and Statement Pooling, as described by the jdbc3 spec and jdbc2 std extension.",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "http://c3p0.sourceforge.net",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": "lgpl-2.0-plus",
+  "declared_license": [
+    {
+      "name": "GNU LESSER GENERAL PUBLIC LICENSE",
+      "url": "http://www.gnu.org/licenses/lgpl.txt",
+      "comments": null,
+      "distribution": null
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/c3p0/c3p0@0.9.0.4?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/c3p0/c3p0/0.9.0.4/",
+  "repository_download_url": "https://repo1.maven.org/maven2/c3p0/c3p0/0.9.0.4/c3p0-0.9.0.4.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/c3p0/c3p0/0.9.0.4/c3p0-0.9.0.4.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/c3p0/c3p0@0.9.0.4"
+}

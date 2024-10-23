@@ -1,0 +1,169 @@
+[
+  {
+    "type": "npm",
+    "namespace": "@invisionag",
+    "name": "eslint-config-ivx",
+    "version": "0.0.2",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "JavaScript",
+    "description": null,
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Alexander Plavinski",
+        "email": "alexander.plavinski@invision.de",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": null,
+    "download_url": "https://registry.npmjs.org/@invisionag/eslint-config-ivx/-/eslint-config-ivx-0.0.2.tgz",
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "https://github.com/ivx/eslint-config-ivx.git",
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": [
+      "MIT"
+    ],
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:npm/babel-eslint",
+        "extracted_requirement": "^7.2.3",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-config-airbnb",
+        "extracted_requirement": "^15.0.2",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-config-prettier",
+        "extracted_requirement": "^2.3.0",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-plugin-flowtype",
+        "extracted_requirement": "^2.34.1",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-plugin-import",
+        "extracted_requirement": "^2.6.1",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-plugin-jsx-a11y",
+        "extracted_requirement": "^5.1.1",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-plugin-prettier",
+        "extracted_requirement": "^2.1.2",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-plugin-react",
+        "extracted_requirement": "^7.1.0",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint",
+        "extracted_requirement": "^3.19.0",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/prettier",
+        "extracted_requirement": "^1.5.2",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint",
+        "extracted_requirement": "^3.19.0",
+        "scope": "peerDependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/prettier",
+        "extracted_requirement": "^1.5.2",
+        "scope": "peerDependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://www.npmjs.com/package/@invisionag/eslint-config-ivx",
+    "repository_download_url": "https://registry.npmjs.org/@invisionag/eslint-config-ivx/-/eslint-config-ivx-0.0.2.tgz",
+    "api_data_url": "https://registry.npmjs.org/@invisionag%2feslint-config-ivx",
+    "datasource_id": "npm_package_json",
+    "purl": "pkg:npm/%40invisionag/eslint-config-ivx@0.0.2"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "type": "maven",
+  "namespace": "org.apache.maven.scm",
+  "name": "maven-scm-provider-cvs-commons",
+  "version": "1.0-beta-3",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Maven SCM CVS Provider - Common library",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": null,
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.apache.maven.scm/maven-scm-provider-cvs-commons@1.0-beta-3?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/org.apache.maven.scm/maven-scm-provider-cvstest@1.0-beta-3",
+      "extracted_requirement": "1.0-beta-3",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-provider-cvs-commons/1.0-beta-3/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-provider-cvs-commons/1.0-beta-3/maven-scm-provider-cvs-commons-1.0-beta-3.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-provider-cvs-commons/1.0-beta-3/maven-scm-provider-cvs-commons-1.0-beta-3.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.apache.maven.scm/maven-scm-provider-cvs-commons@1.0-beta-3"
+}

@@ -1,0 +1,239 @@
+{
+  "dependencies": [
+    {
+      "purl": "pkg:generic/python",
+      "extracted_requirement": "python_requires>= 3.7",
+      "scope": "python",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": false,
+      "resolved_package": {},
+      "extra_data": {},
+      "dependency_uid": "pkg:generic/python?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "for_package_uid": "pkg:pypi/click@attr:%20click.__version__?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "datafile_path": "setup.cfg",
+      "datasource_id": "pypi_setup_cfg"
+    },
+    {
+      "purl": "pkg:pypi/colorama",
+      "extracted_requirement": "colorama; platform_system == \"Windows\"",
+      "scope": "install",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": false,
+      "resolved_package": {},
+      "extra_data": {},
+      "dependency_uid": "pkg:pypi/colorama?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "for_package_uid": "pkg:pypi/click@attr:%20click.__version__?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "datafile_path": "setup.py",
+      "datasource_id": "pypi_setup_py"
+    },
+    {
+      "purl": "pkg:pypi/importlib-metadata",
+      "extracted_requirement": "importlib-metadata; python_version < \"3.8\"",
+      "scope": "install",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": false,
+      "resolved_package": {},
+      "extra_data": {},
+      "dependency_uid": "pkg:pypi/importlib-metadata?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "for_package_uid": "pkg:pypi/click@attr:%20click.__version__?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "datafile_path": "setup.py",
+      "datasource_id": "pypi_setup_py"
+    }
+  ],
+  "packages": [
+    {
+      "type": "pypi",
+      "namespace": null,
+      "name": "click",
+      "version": "attr: click.__version__",
+      "qualifiers": {},
+      "subpath": null,
+      "primary_language": "Python",
+      "description": null,
+      "release_date": null,
+      "parties": [
+        {
+          "type": "person",
+          "role": "author",
+          "name": "Armin Ronacher",
+          "email": "armin.ronacher@active-4.com",
+          "url": null
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://palletsprojects.com/p/click/",
+      "download_url": null,
+      "size": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha512": null,
+      "bug_tracking_url": null,
+      "code_view_url": null,
+      "vcs_url": null,
+      "copyright": null,
+      "license_expression": null,
+      "declared_license": null,
+      "notice_text": null,
+      "source_packages": [],
+      "extra_data": {},
+      "repository_homepage_url": null,
+      "repository_download_url": null,
+      "api_data_url": null,
+      "package_uid": "pkg:pypi/click@attr:%20click.__version__?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "datafile_paths": [
+        "setup.cfg"
+      ],
+      "datasource_ids": [
+        "pypi_setup_cfg"
+      ],
+      "purl": "pkg:pypi/click@attr:%20click.__version__"
+    }
+  ],
+  "files": [
+    {
+      "path": "MANIFEST.in",
+      "type": "file",
+      "package_data": [],
+      "for_packages": [
+        "pkg:pypi/click@attr:%20click.__version__?uuid=fixed-uid-done-for-testing-5642512d1758"
+      ],
+      "scan_errors": []
+    },
+    {
+      "path": "setup.cfg",
+      "type": "file",
+      "package_data": [
+        {
+          "type": "pypi",
+          "namespace": null,
+          "name": "click",
+          "version": "attr: click.__version__",
+          "qualifiers": {},
+          "subpath": null,
+          "primary_language": "Python",
+          "description": null,
+          "release_date": null,
+          "parties": [
+            {
+              "type": "person",
+              "role": "author",
+              "name": "Armin Ronacher",
+              "email": "armin.ronacher@active-4.com",
+              "url": null
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://palletsprojects.com/p/click/",
+          "download_url": null,
+          "size": null,
+          "sha1": null,
+          "md5": null,
+          "sha256": null,
+          "sha512": null,
+          "bug_tracking_url": null,
+          "code_view_url": null,
+          "vcs_url": null,
+          "copyright": null,
+          "license_expression": null,
+          "declared_license": null,
+          "notice_text": null,
+          "source_packages": [],
+          "file_references": [],
+          "extra_data": {},
+          "dependencies": [
+            {
+              "purl": "pkg:generic/python",
+              "extracted_requirement": "python_requires>= 3.7",
+              "scope": "python",
+              "is_runtime": true,
+              "is_optional": false,
+              "is_resolved": false,
+              "resolved_package": {},
+              "extra_data": {}
+            }
+          ],
+          "repository_homepage_url": null,
+          "repository_download_url": null,
+          "api_data_url": null,
+          "datasource_id": "pypi_setup_cfg",
+          "purl": "pkg:pypi/click@attr:%20click.__version__"
+        }
+      ],
+      "for_packages": [
+        "pkg:pypi/click@attr:%20click.__version__?uuid=fixed-uid-done-for-testing-5642512d1758"
+      ],
+      "scan_errors": []
+    },
+    {
+      "path": "setup.py",
+      "type": "file",
+      "package_data": [
+        {
+          "type": "pypi",
+          "namespace": null,
+          "name": "click",
+          "version": null,
+          "qualifiers": {},
+          "subpath": null,
+          "primary_language": "Python",
+          "description": "",
+          "release_date": null,
+          "parties": [],
+          "keywords": [],
+          "homepage_url": null,
+          "download_url": null,
+          "size": null,
+          "sha1": null,
+          "md5": null,
+          "sha256": null,
+          "sha512": null,
+          "bug_tracking_url": null,
+          "code_view_url": null,
+          "vcs_url": null,
+          "copyright": null,
+          "license_expression": null,
+          "declared_license": {},
+          "notice_text": null,
+          "source_packages": [],
+          "file_references": [],
+          "extra_data": {},
+          "dependencies": [
+            {
+              "purl": "pkg:pypi/colorama",
+              "extracted_requirement": "colorama; platform_system == \"Windows\"",
+              "scope": "install",
+              "is_runtime": true,
+              "is_optional": false,
+              "is_resolved": false,
+              "resolved_package": {},
+              "extra_data": {}
+            },
+            {
+              "purl": "pkg:pypi/importlib-metadata",
+              "extracted_requirement": "importlib-metadata; python_version < \"3.8\"",
+              "scope": "install",
+              "is_runtime": true,
+              "is_optional": false,
+              "is_resolved": false,
+              "resolved_package": {},
+              "extra_data": {}
+            }
+          ],
+          "repository_homepage_url": "https://pypi.org/project/click",
+          "repository_download_url": null,
+          "api_data_url": "https://pypi.org/pypi/click/json",
+          "datasource_id": "pypi_setup_py",
+          "purl": "pkg:pypi/click"
+        }
+      ],
+      "for_packages": [
+        "pkg:pypi/click@attr:%20click.__version__?uuid=fixed-uid-done-for-testing-5642512d1758"
+      ],
+      "scan_errors": []
+    }
+  ]
+}

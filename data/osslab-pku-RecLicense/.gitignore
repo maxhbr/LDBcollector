@@ -1,0 +1,27 @@
+perl-5.28.1/
+perl-5.28.1.tar.gz
+ninka
+scancode_1
+frontend-vue3
+test_scan
+temp_files
+.vscode
+*.log
+projects.json
+data
+token
+scancode-toolkit/
+# python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store

@@ -1,0 +1,126 @@
+{
+  "type": "maven",
+  "namespace": "httpunit",
+  "name": "httpunit",
+  "version": "1.6.2",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "HttpUnit\nA Java library for the automatic stimulation and testing of web applications.",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "http://httpunit.sourceforge.net",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": "mit",
+  "declared_license": [
+    {
+      "name": "MIT License",
+      "url": "http://httpunit.sourceforge.net/doc/license.html",
+      "comments": null,
+      "distribution": null
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/httpunit/httpunit@1.6.2?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/xerces/xmlParserAPIs@2.2.1",
+      "extracted_requirement": "2.2.1",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/xerces/xercesImpl@2.6.2",
+      "extracted_requirement": "2.6.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/nekohtml/nekohtml@0.9.1",
+      "extracted_requirement": "0.9.1",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/rhino/js@1.5R4.1",
+      "extracted_requirement": "1.5R4.1",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.servlet/servlet-api@2.3",
+      "extracted_requirement": "2.3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/jtidy/jtidy@4aug2000r7-dev",
+      "extracted_requirement": "4aug2000r7-dev",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/junit/junit@3.8.1",
+      "extracted_requirement": "3.8.1",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.mail/mail@1.4",
+      "extracted_requirement": "1.4",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/httpunit/httpunit/1.6.2/",
+  "repository_download_url": "https://repo1.maven.org/maven2/httpunit/httpunit/1.6.2/httpunit-1.6.2.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/httpunit/httpunit/1.6.2/httpunit-1.6.2.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/httpunit/httpunit@1.6.2"
+}

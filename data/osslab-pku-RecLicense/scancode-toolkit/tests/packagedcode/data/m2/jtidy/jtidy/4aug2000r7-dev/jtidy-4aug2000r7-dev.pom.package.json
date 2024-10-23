@@ -1,0 +1,53 @@
+{
+  "type": "maven",
+  "namespace": "jtidy",
+  "name": "jtidy",
+  "version": "4aug2000r7-dev",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "JTidy\nJTidy is a Java port of HTML Tidy, a HTML syntax checker and pretty printer. Like its non-Java cousin, JTidy can be used as a tool for cleaning up malformed and faulty HTML. In addition, JTidy provides a DOM parser for real-world HTML.",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "organization",
+      "role": "owner",
+      "name": "JTidy",
+      "email": null,
+      "url": "http://jtidy.sf.net"
+    }
+  ],
+  "keywords": [],
+  "homepage_url": "http://jtidy.sourceforge.net",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": "http://svn.sourceforge.net/viewcvs.cgi/jtidy/trunk/jtidy/",
+  "vcs_url": "svn+https://svn.sourceforge.net/svnroot/jtidy/trunk/jtidy/",
+  "copyright": null,
+  "license_expression": "tidy AND unknown",
+  "declared_license": [
+    {
+      "name": "Java HTML Tidy License",
+      "url": "http://svn.sourceforge.net/viewvc/*checkout*/jtidy/trunk/jtidy/LICENSE.txt?revision=95",
+      "comments": null,
+      "distribution": "repo"
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/jtidy/jtidy@4aug2000r7-dev?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/jtidy/jtidy/4aug2000r7-dev/",
+  "repository_download_url": "https://repo1.maven.org/maven2/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/jtidy/jtidy@4aug2000r7-dev"
+}

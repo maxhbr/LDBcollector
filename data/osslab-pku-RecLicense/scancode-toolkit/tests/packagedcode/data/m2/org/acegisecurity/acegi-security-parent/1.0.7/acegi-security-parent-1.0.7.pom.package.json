@@ -1,0 +1,330 @@
+{
+  "type": "maven",
+  "namespace": "org.acegisecurity",
+  "name": "acegi-security-parent",
+  "version": "1.0.7",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Acegi Security\nAcegi Security System for Spring",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Ben Alex",
+      "email": "benalex at users.sourceforge.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Colin Sampaleanu",
+      "email": "colinml1 at exis.com",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Carlos Sanchez",
+      "email": "carlossg at users.sourceforge.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Luke Taylor",
+      "email": "luke_t at users.sourceforge.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Ray Krueger",
+      "email": "raykrueger at users.sourceforge.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Robert Sanders",
+      "email": "robertsanders at users.sourceforge.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Mark St.Godard",
+      "email": "markstg at users.sourceforge.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "John A. Lewis",
+      "email": "johnalewis at users.sourceforge.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Alan Stewart",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Cameron Braid",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Patrick Burleson",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Francois Beausoleil",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Wesley Hall",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Scott Evans",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Travis Gregg",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Karel Miarka",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "James Monaghan",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Andrew Petro",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Aaron Tang",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Orlando Garcia Carmona",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Joni Suominen",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Sergio Berna",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Paulo Neves",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Mike Perham",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Robin Bramley",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Robert Sanders",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Vishal Puri",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Martin Algesten",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "organization",
+      "role": "owner",
+      "name": "Interface21, Inc",
+      "email": null,
+      "url": "http://sourceforge.net/projects/acegisecurity"
+    }
+  ],
+  "keywords": [],
+  "homepage_url": "http://acegisecurity.org/",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": "http://opensource.atlassian.com/projects/spring/browse/SEC",
+  "code_view_url": "http://acegisecurity.svn.sourceforge.net/svnroot/acegisecurity/spring-security/tags/acegi-security-parent-1.0.7",
+  "vcs_url": "svn+https://acegisecurity.svn.sourceforge.net/svnroot/acegisecurity/spring-security/tags/acegi-security-parent-1.0.7",
+  "copyright": null,
+  "license_expression": "apache-2.0",
+  "declared_license": [
+    {
+      "name": "The Apache Software License, Version 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+      "comments": null,
+      "distribution": "repo"
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.acegisecurity/acegi-security-parent@1.0.7?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/junit/junit@3.8.1",
+      "extracted_requirement": "3.8.1",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-core@1.2.9",
+      "extracted_requirement": "1.2.9",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-mock@1.2.9",
+      "extracted_requirement": "1.2.9",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-remoting@1.2.9",
+      "extracted_requirement": "1.2.9",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-web@1.2.9",
+      "extracted_requirement": "1.2.9",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-jdbc@1.2.9",
+      "extracted_requirement": "1.2.9",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-support@1.2.9",
+      "extracted_requirement": "1.2.9",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/log4j/log4j@1.2.9",
+      "extracted_requirement": "1.2.9",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/acegisecurity/acegi-security-parent/1.0.7/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/acegisecurity/acegi-security-parent/1.0.7/acegi-security-parent-1.0.7.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/acegisecurity/acegi-security-parent/1.0.7/acegi-security-parent-1.0.7.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.acegisecurity/acegi-security-parent@1.0.7"
+}

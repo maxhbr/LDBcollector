@@ -1,0 +1,153 @@
+{
+  "model_version": "4.0.0",
+  "group_id": "org.apache.shale",
+  "artifact_id": "shale-parent",
+  "version": "1.0.4",
+  "classifier": null,
+  "packaging": "pom",
+  "parent": {
+    "group_id": "org.apache.shale",
+    "artifact_id": "shale-master",
+    "version": "2",
+    "classifier": null,
+    "type": "pom"
+  },
+  "name": "Apache Shale Framework Parent POM",
+  "description": "The Apache Shale Framework",
+  "inception_year": null,
+  "url": "http://shale.apache.org",
+  "organization_name": null,
+  "organization_url": null,
+  "licenses": [],
+  "developers": [],
+  "contributors": [],
+  "modules": [
+    "shale-application",
+    "shale-clay",
+    "shale-core",
+    "shale-dialog",
+    "shale-dialog-basic",
+    "shale-dialog-scxml",
+    "shale-remoting",
+    "shale-spring",
+    "shale-test",
+    "shale-tiles",
+    "shale-validator",
+    "shale-view"
+  ],
+  "mailing_lists": [],
+  "scm": {
+    "connection": "scm:svn:http://svn.apache.org/repos/asf/shale/framework/trunk",
+    "developer_connection": null,
+    "url": "http://svn.apache.org/viewvc/shale/framework/trunk",
+    "tag": null
+  },
+  "issue_management": {},
+  "ci_management": {},
+  "distribution_management": {
+    "download_url": null,
+    "site": {
+      "id": "apache-site",
+      "name": null,
+      "url": "scp://people.apache.org/www/shale.apache.org"
+    },
+    "repository": {},
+    "snapshot_repository": {}
+  },
+  "repositories": [
+    {
+      "id": "apache.snapshots",
+      "name": "Apache Development Snapshot Repository",
+      "url": "http://people.apache.org/repo/m2-snapshot-repository"
+    }
+  ],
+  "plugin_repositories": [],
+  "dependencies": {
+    "dependencyManagement": [
+      {
+        "group_id": "antlr",
+        "artifact_id": "antlr",
+        "version": "2.7.2",
+        "required": true
+      },
+      {
+        "group_id": "commons-chain",
+        "artifact_id": "commons-chain",
+        "version": "1.1",
+        "required": true
+      },
+      {
+        "group_id": "commons-digester",
+        "artifact_id": "commons-digester",
+        "version": "1.8",
+        "required": true
+      },
+      {
+        "group_id": "commons-logging",
+        "artifact_id": "commons-logging",
+        "version": "1.1",
+        "required": true
+      },
+      {
+        "group_id": "commons-validator",
+        "artifact_id": "commons-validator",
+        "version": "1.3.1",
+        "required": true
+      },
+      {
+        "group_id": "htmlunit",
+        "artifact_id": "htmlunit",
+        "version": "1.8",
+        "required": true
+      },
+      {
+        "group_id": "javax.portlet",
+        "artifact_id": "portlet-api",
+        "version": "1.0",
+        "required": true
+      },
+      {
+        "group_id": "javax.servlet",
+        "artifact_id": "jsp-api",
+        "version": "2.0",
+        "required": true
+      },
+      {
+        "group_id": "javax.servlet",
+        "artifact_id": "jstl",
+        "version": "1.1.2",
+        "required": true
+      },
+      {
+        "group_id": "javax.servlet",
+        "artifact_id": "servlet-api",
+        "version": "2.4",
+        "required": true
+      },
+      {
+        "group_id": "junit",
+        "artifact_id": "junit",
+        "version": "3.8.1",
+        "required": true
+      },
+      {
+        "group_id": "org.apache.myfaces.core",
+        "artifact_id": "myfaces-api",
+        "version": "1.1.4",
+        "required": true
+      },
+      {
+        "group_id": "oro",
+        "artifact_id": "oro",
+        "version": "2.0.8",
+        "required": true
+      },
+      {
+        "group_id": "taglibs",
+        "artifact_id": "standard",
+        "version": "1.1.2",
+        "required": true
+      }
+    ]
+  }
+}

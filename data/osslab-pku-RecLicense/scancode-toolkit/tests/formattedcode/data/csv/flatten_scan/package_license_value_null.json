@@ -1,0 +1,87 @@
+{
+  "files": [
+    {
+      "path": "package.json",
+      "type": "file",
+      "name": "package.json",
+      "base_name": "package",
+      "extension": ".json",
+      "size": 2200,
+      "date": "2018-04-11",
+      "sha1": "918376afce796ef90eeda1d6695f2289c90491ac",
+      "md5": "1f66239a9b850c5e60a9382dbe2162d2",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text, with very long lines",
+      "programming_language": "JSON",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "package_data": [
+        {
+          "type": "npm",
+          "namespace": null,
+          "name": "cookie-signature",
+          "version": "1.0.3",
+          "qualifiers": {},
+          "subpath": null,
+          "primary_language": "JavaScript",
+          "description": "Sign and unsign cookies",
+          "size": null,
+          "release_date": null,
+          "parties": [
+            {
+              "type": "person",
+              "role": "author",
+              "name": "TJ Holowaychuk",
+              "email": "tj@learnboost.com",
+              "url": null
+            }
+          ],
+          "keywords": [
+            "cookie",
+            "sign",
+            "unsign"
+          ],
+          "homepage_url": null,
+          "download_url": "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.3.tgz",
+          "download_checksums": [],
+          "bug_tracking_url": "https://github.com/visionmedia/node-cookie-signature/issues",
+          "code_view_url": null,
+          "vcs_tool": "git",
+          "vcs_repository": "https://github.com/visionmedia/node-cookie-signature.git",
+          "vcs_revision": null,
+          "copyright": null,
+          "license_expression": null,
+          "declared_licensing": null,
+          "notice_text": null,
+          "dependencies": [
+            {
+              "purl": "pkg:npm/mocha",
+              "requirement": "*",
+              "scope": "devDependencies",
+              "is_runtime": false,
+              "is_optional": true,
+              "is_resolved": false
+            },
+            {
+              "purl": "pkg:npm/should",
+              "requirement": "*",
+              "scope": "devDependencies",
+              "is_runtime": false,
+              "is_optional": true,
+              "is_resolved": false
+            }
+          ],
+          "source_packages": []
+        }
+      ],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

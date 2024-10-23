@@ -1,0 +1,86 @@
+{
+  "type": "maven",
+  "namespace": "org.testng",
+  "name": "testng",
+  "version": "5.8",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "TestNG\nTestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "http://testng.org",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": "http://testng.googlecode.com/svn/trunk",
+  "vcs_url": "svn+http://testng.googlecode.com/svn/trunk/",
+  "copyright": null,
+  "license_expression": "apache-2.0",
+  "declared_license": [
+    {
+      "name": "Apache License, Version 2.0",
+      "url": "http://apache.org/licenses/LICENSE-2.0",
+      "comments": null,
+      "distribution": null
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.testng/testng@5.8?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/ant/ant@1.6.5",
+      "extracted_requirement": "1.6.5",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/junit/junit@3.8.1",
+      "extracted_requirement": "3.8.1",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/qdox/qdox@1.6.1",
+      "extracted_requirement": "1.6.1",
+      "scope": "provided",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.beanshell/bsh@2.0b4",
+      "extracted_requirement": "2.0b4",
+      "scope": "provided",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/testng/testng/5.8/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/testng/testng/5.8/testng-5.8.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/testng/testng/5.8/testng-5.8.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.testng/testng@5.8"
+}

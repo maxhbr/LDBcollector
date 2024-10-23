@@ -1,0 +1,154 @@
+{
+  "type": "maven",
+  "namespace": "org.codehaus.mojo",
+  "name": "maven-buildnumber-plugin",
+  "version": "0.9.6",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Maven Build Number Plugin",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Julian Wood",
+      "email": "woodj@ucalgary.ca",
+      "url": null
+    }
+  ],
+  "keywords": [],
+  "homepage_url": null,
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": "http://commons.ucalgary.ca/mantis/set_project.php?project_id=36",
+  "code_view_url": "http://woodj@apollo.ucalgary.ca:8800/maven-buildnumber-plugin/tags/maven-buildnumber-plugin-0.9.6",
+  "vcs_url": "svn+http://woodj@apollo.ucalgary.ca:8800/maven-buildnumber-plugin/tags/maven-buildnumber-plugin-0.9.6",
+  "copyright": null,
+  "license_expression": "mit AND (mit AND unknown)",
+  "declared_license": [
+    {
+      "name": "The MIT License",
+      "url": "http://commons.ucalgary.ca/projects/licenses/mit-license.txt",
+      "comments": null,
+      "distribution": "repo"
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.codehaus.mojo/maven-buildnumber-plugin@0.9.6?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-project@2.0.2",
+      "extracted_requirement": "2.0.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-settings@2.0.2",
+      "extracted_requirement": "2.0.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-plugin-api@2.0.2",
+      "extracted_requirement": "2.0.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.scm/maven-scm-api@1.0-beta-3",
+      "extracted_requirement": "1.0-beta-3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.scm/maven-scm-manager-plexus@1.0-beta-3",
+      "extracted_requirement": "1.0-beta-3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.scm/maven-scm-provider-svnexe@1.0-beta-3",
+      "extracted_requirement": "1.0-beta-3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.scm/maven-scm-provider-cvsexe@1.0-beta-3",
+      "extracted_requirement": "1.0-beta-3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.scm/maven-scm-provider-starteam@1.0-beta-3",
+      "extracted_requirement": "1.0-beta-3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.scm/maven-scm-provider-clearcase@1.0-beta-3",
+      "extracted_requirement": "1.0-beta-3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.scm/maven-scm-provider-perforce@1.0-beta-3",
+      "extracted_requirement": "1.0-beta-3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/codehaus/mojo/maven-buildnumber-plugin/0.9.6/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/codehaus/mojo/maven-buildnumber-plugin/0.9.6/maven-buildnumber-plugin-0.9.6.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/codehaus/mojo/maven-buildnumber-plugin/0.9.6/maven-buildnumber-plugin-0.9.6.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.codehaus.mojo/maven-buildnumber-plugin@0.9.6"
+}

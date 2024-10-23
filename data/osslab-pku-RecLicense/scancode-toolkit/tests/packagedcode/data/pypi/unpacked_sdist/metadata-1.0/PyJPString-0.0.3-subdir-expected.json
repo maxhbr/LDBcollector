@@ -1,0 +1,219 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": "PyJPString",
+    "version": "0.0.3",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": "Python japanese string utilities.\nUNKNOWN",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "odoku",
+        "email": "masashi.onogawa@wamw.jp",
+        "url": null
+      }
+    ],
+    "keywords": [
+      "japanese",
+      "string"
+    ],
+    "homepage_url": "http://github.com/odoku/PyJPString",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": {
+      "license": "MIT"
+    },
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [
+      {
+        "path": "setup.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "PyJPString.egg-info/PKG-INFO",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "PyJPString.egg-info/SOURCES.txt",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "PyJPString.egg-info/dependency_links.txt",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "PyJPString.egg-info/requires.txt",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "PyJPString.egg-info/top_level.txt",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "jpstring/__init__.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "jpstring/converters.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "jpstring/normalizers.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "jpstring/patterns.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "jpstring/string.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "jpstring/validators.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "jpstring/django/__init__.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "jpstring/django/validators.py",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:pypi/six",
+        "extracted_requirement": "six>=1.10.0",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/zenhan",
+        "extracted_requirement": "zenhan>=0.5.2",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/django",
+        "extracted_requirement": "django; extra == \"test\"",
+        "scope": "test",
+        "is_runtime": true,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/pytest@2.9.1",
+        "extracted_requirement": "pytest==2.9.1; extra == \"test\"",
+        "scope": "test",
+        "is_runtime": true,
+        "is_optional": true,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://pypi.org/project/PyJPString",
+    "repository_download_url": "https://pypi.org/packages/source/P/PyJPString/PyJPString-0.0.3.tar.gz",
+    "api_data_url": "https://pypi.org/pypi/PyJPString/0.0.3/json",
+    "datasource_id": "pypi_editable_egg_pkginfo",
+    "purl": "pkg:pypi/pyjpstring@0.0.3"
+  }
+]

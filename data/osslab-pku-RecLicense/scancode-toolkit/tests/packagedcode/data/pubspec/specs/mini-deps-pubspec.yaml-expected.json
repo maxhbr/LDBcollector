@@ -1,0 +1,83 @@
+[
+  {
+    "type": "dart",
+    "namespace": null,
+    "name": "flutter_oss_licenses",
+    "version": "1.0.1",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "dart",
+    "description": "A tool for generating detail and better OSS license list using pubspec.lock.",
+    "release_date": null,
+    "parties": [],
+    "keywords": [],
+    "homepage_url": "https://github.com/espresso3389/flutter_oss_licenses",
+    "download_url": "https://pub.dartlang.org/packages/flutter_oss_licenses/versions/1.0.1.tar.gz",
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": null,
+    "declared_license": null,
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {
+      "executables": {
+        "generate": ""
+      }
+    },
+    "dependencies": [
+      {
+        "purl": "pkg:pubspec/path@1.7.0",
+        "extracted_requirement": "1.7.0",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pubspec/meta",
+        "extracted_requirement": "^1.2.4",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pubspec/yaml",
+        "extracted_requirement": "^3.1.0",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pubspec/sdk",
+        "extracted_requirement": ">=2.12.0 <3.0.0",
+        "scope": "environment",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://pub.dev/packages/flutter_oss_licenses/versions/1.0.1",
+    "repository_download_url": "https://pub.dartlang.org/packages/flutter_oss_licenses/versions/1.0.1.tar.gz",
+    "api_data_url": "https://pub.dev/api/packages/flutter_oss_licenses/versions/1.0.1",
+    "datasource_id": "pubspec_yaml",
+    "purl": "pkg:dart/flutter_oss_licenses@1.0.1"
+  }
+]

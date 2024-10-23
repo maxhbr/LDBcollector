@@ -1,0 +1,2 @@
+ if (gpl)
+    // GP logs may have >255 sectors

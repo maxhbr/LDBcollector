@@ -1,0 +1,14 @@
+{$RECLIC_DOMAIN} {
+	route {
+		handle_path /api/* {
+			reverse_proxy backend:5000 {
+				header_down +Access-Control-Allow-Origin "*"
+				header_down +Access-Control-Allow-Methods "OPTIONS, DELETE, GET, HEAD, POST, PUT"
+			}
+		}
+		root * /wwwroot
+		try_files {path} /index.html
+		file_server
+	}
+	log
+}

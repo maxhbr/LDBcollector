@@ -1,0 +1,104 @@
+{
+  "type": "maven",
+  "namespace": "org.apache.maven.surefire",
+  "name": "surefire",
+  "version": "2.4.2",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "SureFire\nSurefire is a test framework project.",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Jesse Kuhnert",
+      "email": null,
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Vincent Siveton",
+      "email": "vincent.siveton@gmail.com",
+      "url": null
+    }
+  ],
+  "keywords": [],
+  "homepage_url": "http://maven.apache.org/surefire",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": "http://jira.codehaus.org/browse/SUREFIRE",
+  "code_view_url": "http://svn.apache.org/viewcvs.cgi/maven/surefire/tags/surefire-2.4.2",
+  "vcs_url": "svn+http://svn.apache.org/repos/asf/maven/surefire/tags/surefire-2.4.2",
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.apache.maven.surefire/surefire@2.4.2?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/junit/junit@3.8.1",
+      "extracted_requirement": "3.8.1",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/jmock/jmock@1.0.1",
+      "extracted_requirement": "1.0.1",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.surefire/surefire-api@2.4.2",
+      "extracted_requirement": "2.4.2",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.surefire/surefire-booter@2.4.2",
+      "extracted_requirement": "2.4.2",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.codehaus.plexus/plexus-utils@1.4.9",
+      "extracted_requirement": "1.4.9",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.4.2/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.4.2/surefire-2.4.2.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.4.2/surefire-2.4.2.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.apache.maven.surefire/surefire@2.4.2"
+}

@@ -1,0 +1,144 @@
+{
+  "type": "maven",
+  "namespace": "net.bytebuddy",
+  "name": "byte-buddy-parent",
+  "version": "1.7.1-SNAPSHOT",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Byte Buddy (parent)\nByte Buddy is a Java library for creating Java classes at run time.\n        The parent artifact contains configuration information that concern all modules.",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Rafael Winterhalter",
+      "email": "rafael.wth@gmail.com",
+      "url": "http://rafael.codes"
+    }
+  ],
+  "keywords": [],
+  "homepage_url": "http://bytebuddy.net",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": "https://github.com/raphw/byte-buddy/issues",
+  "code_view_url": "https://github.com/raphw/byte-buddy.git",
+  "vcs_url": "git+https://github.com/raphw/byte-buddy.git",
+  "copyright": null,
+  "license_expression": "apache-2.0",
+  "declared_license": [
+    {
+      "name": "The Apache Software License, Version 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+      "comments": "A business-friendly OSS license",
+      "distribution": "repo"
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/net.bytebuddy/byte-buddy-parent@1.7.1-SNAPSHOT?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/com.google.code.findbugs/annotations@3.0.1u2",
+      "extracted_requirement": "3.0.1u2",
+      "scope": "provided",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.projectlombok/lombok@1.16.16",
+      "extracted_requirement": "1.16.16",
+      "scope": "provided",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.ow2.asm/asm@5.2",
+      "extracted_requirement": "5.2",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.ow2.asm/asm-commons@5.2",
+      "extracted_requirement": "5.2",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.ow2.asm/asm-util@5.2",
+      "extracted_requirement": "5.2",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.ow2.asm/asm-analysis@5.2",
+      "extracted_requirement": "5.2",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/junit/junit@4.12",
+      "extracted_requirement": "4.12",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.mockito/mockito-core@2.7.22",
+      "extracted_requirement": "2.7.22",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/com.google.android/android@4.1.1.4",
+      "extracted_requirement": "4.1.1.4",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.7.1-SNAPSHOT/",
+  "repository_download_url": "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.7.1-SNAPSHOT/byte-buddy-parent-1.7.1-SNAPSHOT.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.7.1-SNAPSHOT/byte-buddy-parent-1.7.1-SNAPSHOT.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/net.bytebuddy/byte-buddy-parent@1.7.1-SNAPSHOT"
+}

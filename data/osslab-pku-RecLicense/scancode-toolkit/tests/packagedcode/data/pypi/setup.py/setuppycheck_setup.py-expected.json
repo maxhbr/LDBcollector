@@ -1,0 +1,63 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": "setuppycheck",
+    "version": null,
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": "Checks for questionable practices in setup.py files.",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Marc Abramowitz",
+        "email": "msabramo@gmail.com",
+        "url": null
+      }
+    ],
+    "keywords": [
+      "setup.py",
+      "pin",
+      "dependencies"
+    ],
+    "homepage_url": "https://github.com/msabramo/setuppycheck",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": {
+      "license": "MIT"
+    },
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:pypi/mock",
+        "extracted_requirement": "mock",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://pypi.org/project/setuppycheck",
+    "repository_download_url": null,
+    "api_data_url": "https://pypi.org/pypi/setuppycheck/json",
+    "datasource_id": "pypi_setup_py",
+    "purl": "pkg:pypi/setuppycheck"
+  }
+]
