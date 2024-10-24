@@ -3,5 +3,5 @@
  */
 
 
-rootProject.name = "LicenseLynx"
+rootProject.name = "licenselynx"
 include("src")
