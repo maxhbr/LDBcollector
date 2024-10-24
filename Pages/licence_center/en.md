@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Licence Center - ifrOSS.org"
+title: "License Center - ifrOSS.org"
 ---
 
-<h1 style="text-align: center;">ifrOSS Licence Center</h1>
+<h1 style="text-align: center;">ifrOSS License Center</h1>
 
 ## Categories
 The ifrOSS License Center collects licenses for free content and assigns them to different license types. These are organized into the following categories:
