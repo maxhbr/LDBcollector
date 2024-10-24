@@ -28,7 +28,7 @@ The license agreements listed serve to grant the user further rights of use in a
 18. [Typesafe, Inc. Individual Contributor License Agreement](http://downloads.typesafe.com/website/legal/TypesafeContributorLicenseAgreement-Individual-v2.2.pdf)
 19. [W3C Community Contributor License Agreement](http://www.w3.org/community/about/agreements/cla/)
 
-### CLA with exlclusive licensing and assignements
+### CLA with exclusive licensing and assignments
 
 1. [Free Software Foundation Assignment (GNU)](https://web.archive.org/web/20160512041501/http://ftp.xemacs.org:80/old-beta/FSF/assign.changes)
 2. [Free Software Foundation Europe Fiduciary License Agreement](http://fsfe.org/activities/ftf/FLA.en.pdf)
