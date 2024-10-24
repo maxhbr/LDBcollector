@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.58
+Version:        1.59
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,24 @@ make check-grammar
 
 
 %changelog
+* Thu Oct 24 2024 Miroslav Suchý <msuchy@redhat.com> 1.59-1
+- add public domain findings for sdl-telnet
+- add public domain findings for libmodplug
+- add public domain findings for mb2md
+- add public domain findings for perl-DateTime-Precise
+- add public domain findings for gimpfx-foundry
+- add public domain findings for gnome-valgrind-session
+- add public domain findings for sqlite2
+- Blessing.toml -> blessing.toml
+- add public domain findings for surfraw
+- add GPL-3.0-or-later WITH GPL-3.0-389-ds-base-exception
+- add public domain findings for klt
+- add public domain findings for libb64
+- add public domain dedication of emacs-slime
+- add public domain dedication of cproto
+- add public domain dedication for cockatrice
+- add LGPL-2.1-or-later WITH Independent-modules-exception
+
 * Thu Oct 10 2024 Miroslav Suchý <msuchy@redhat.com> 1.58-1
 - add Ultra permissive dedication of docbook5-schemas
 - add public domain dedication for clc
