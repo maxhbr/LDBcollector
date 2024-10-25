@@ -24,6 +24,8 @@
         "X-Consortium",
         "x11-xconsortium",
         "MIT-X-Consortium-License",
-        "X11 License (MIT)"
+        "X11 License (MIT)",
+        "MIT X11 License",
+        "MIT/X11 (BSD like)"
     ]
 }
