@@ -1,0 +1,14 @@
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+        <rect width="100%" height="100%" fill="#1e1e1e"/>
+
+        <text x="30" y="60" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">
+            Total Mappings: <tspan font-weight="bold">8546</tspan>
+        </text>
+
+        <text x="30" y="100" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">
+            Top Licenses:
+        </text>
+        <text x="30" y="140" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-2.0-only: <tspan font-weight="bold">25</tspan></text><text x="30" y="170" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">CC-BY-4.0: <tspan font-weight="bold">22</tspan></text><text x="30" y="200" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">GPL-1.0-only: <tspan font-weight="bold">21</tspan></text><text x="30" y="230" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-2.1-only: <tspan font-weight="bold">21</tspan></text><text x="30" y="260" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-3.0-only: <tspan font-weight="bold">21</tspan></text>
+    </svg>
+    
