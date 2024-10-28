@@ -16,8 +16,8 @@
         "ts-jest": "^29.1.2",
         "typescript": "^5.4.5"
     },
-    "name": "licenselynx",
-    "version": "0.7.0",
+    "name": "@licenselynx/licenselynx",
+    "version": "0.7.5",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "directories": {
