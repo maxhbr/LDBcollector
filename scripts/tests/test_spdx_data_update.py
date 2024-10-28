@@ -2,9 +2,9 @@ import pytest
 import os
 import json
 from unittest import mock
-from src.update.spdx_data_update import (download_spdx_license_list, load_spdx_license_list, delete_file, create_json,
+from src.update.spdx_data_update import (download_spdx_license_list, load_spdx_license_list, delete_file,
                                          remove_duplicate_licenses, collect_duplicates, check_canonical_name_with_file,
-                                         build_canonical_dictionary, is_spdx_source, DATA_DIR)
+                                         build_canonical_dictionary, is_spdx_source, DATA_DIR, process_json)
 
 
 # Mock logger to avoid side effects in tests
@@ -74,7 +74,7 @@ def test_delete_file_not_exists(mock_logger):
 
 
 # Test for create_json
-def test_create_json_dump(mock_logger):
+def test_process_json_dump(mock_logger):
     input_file = "licenses.json"
     license_data = {"licenses": [{"licenseId": "TEST", "name": "TEST License"}]}
 
@@ -82,11 +82,11 @@ def test_create_json_dump(mock_logger):
          mock.patch("src.update.spdx_data_update.build_canonical_dictionary"), \
          mock.patch("src.update.spdx_data_update.check_canonical_name_with_file"), \
          mock.patch("json.dump") as mock_json_dump:
-        create_json(input_file, is_exception=False)
+        process_json(input_file, is_exception=False)
         mock_json_dump.assert_called_once()
 
 
-def test_create_json_already_exists(mock_logger):
+def test_process_json_already_exists(mock_logger):
     input_file = "spdx_license_list.json"
     spdx_license_data = {"licenses": [{"licenseId": "MIT", "name": "MIT License"}]}
 
@@ -104,12 +104,12 @@ def test_create_json_already_exists(mock_logger):
          mock.patch("src.update.spdx_data_update.build_canonical_dictionary"), \
          mock.patch("src.update.spdx_data_update.check_canonical_name_with_file"), \
          mock.patch("json.dump") as mock_json_dump:
-        create_json(input_file, is_exception=False)
+        process_json(input_file, is_exception=False)
         mock_logger.debug.assert_called_once_with(f"License already exists: {output_file}")
         mock_json_dump.assert_not_called()
 
 
-def test_create_json_exception_dump(mock_logger):
+def test_process_json_exception_dump(mock_logger):
     input_file = "licenses.json"
     license_data = {"exceptions": [{"licenseExceptionId": "TEST_exception", "name": "TEST_exception License"}]}
 
@@ -117,11 +117,11 @@ def test_create_json_exception_dump(mock_logger):
          mock.patch("src.update.spdx_data_update.build_canonical_dictionary"), \
          mock.patch("src.update.spdx_data_update.check_canonical_name_with_file"), \
          mock.patch("json.dump") as mock_json_dump:
-        create_json(input_file, is_exception=True)
+        process_json(input_file, is_exception=True)
         mock_json_dump.assert_called_once()
 
 
-def test_create_json_exception_already_exists(mock_logger):
+def test_process_json_exception_already_exists(mock_logger):
     input_file = "licenses.json"
     spdx_exception_data = \
         {"exceptions": [{"licenseExceptionId": "389-exception", "name": "389 Directory Server Exception"}]}
@@ -140,7 +140,7 @@ def test_create_json_exception_already_exists(mock_logger):
         mock.patch("src.update.spdx_data_update.build_canonical_dictionary"), \
          mock.patch("src.update.spdx_data_update.check_canonical_name_with_file"), \
          mock.patch("json.dump") as mock_json_dump:
-        create_json(input_file, is_exception=True)
+        process_json(input_file, is_exception=True)
         mock_logger.debug.assert_called_once_with(f"License already exists: {output_file}")
         mock_json_dump.assert_not_called()
 
@@ -265,7 +265,7 @@ def test_is_spdx_source():
 def test_main(mock_logger):
     # Mock the external function calls
     with mock.patch("src.update.spdx_data_update.download_spdx_license_list") as mock_download, \
-         mock.patch("src.update.spdx_data_update.create_json") as mock_create_json, \
+         mock.patch("src.update.spdx_data_update.process_json") as mock_process_json, \
          mock.patch("src.update.spdx_data_update.delete_file") as mock_delete_file:
         # Call the main function
         from src.update.spdx_data_update import main
@@ -283,11 +283,11 @@ def test_main(mock_logger):
         )
 
         # Check that create_json was called twice (once for license, once for exception)
-        assert mock_create_json.call_count == 2
-        mock_create_json.assert_any_call("spdx_license_list.json", is_exception=False)
-        mock_create_json.assert_any_call("spdx_exceptions.json", is_exception=True)
+        assert mock_process_json.call_count == 2
+        mock_process_json.assert_any_call("spdx_license_list.json", is_exception=False)
+        mock_process_json.assert_any_call("spdx_exceptions.json", is_exception=True)
 
-        # Check that delete_file was called twice (once for license file, once for exception file)
+        # Check that delete_file was called twice (once for a spdx license file, once for a spdx exception file)
         assert mock_delete_file.call_count == 2
         mock_delete_file.assert_any_call("spdx_license_list.json")
         mock_delete_file.assert_any_call("spdx_exceptions.json")

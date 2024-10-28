@@ -27,24 +27,22 @@ def generate_svg(total_mappings, top_licenses, is_dark_mode=False):
         text_color = "#333333"  # Dark grey text
         accent_color = "#007bff"  # Soft blue for top licenses
 
-    # Create an SVG string without the header
-    svg_template = f'''
-    <svg xmlns="http://www.w3.org/2000/svg" width="600" height="300">
-        <rect width="100%" height="100%" fill="{background_color}"/>
-
-        <text x="30" y="60" font-family="Arial, sans-serif" font-size="24" fill="{text_color}">
-            Total Mappings: <tspan font-weight="bold">{total_mappings}</tspan>
-        </text>
-
-        <text x="30" y="100" font-family="Arial, sans-serif" font-size="20" fill="{text_color}">
-            Top Licenses:
-        </text>
-        {"".join([
-        f'<text x="30" y="{140 + i * 30}" font-family="Arial, sans-serif" font-size="18" fill="{accent_color}">{name}: <tspan font-weight="bold">{count}</tspan></text>'
+    # Generate the top licenses section
+    license_text = "".join(
+        f'<text x="30" y="{140 + i * 30}" font-family="Arial, sans-serif" '
+        f'font-size="18" fill="{accent_color}">{name}: <tspan font-weight="bold">{count}</tspan></text>'
         for i, (name, count) in enumerate(top_licenses)
-    ])}
-    </svg>
-    '''
+    )
+
+    # Read SVG template and format it
+    with open("resources/template.svg") as f:
+        svg_template = f.read().format(
+            background_color=background_color,
+            text_color=text_color,
+            total_mappings=total_mappings,
+            license_text=license_text
+        )
+
     return svg_template
 
 
