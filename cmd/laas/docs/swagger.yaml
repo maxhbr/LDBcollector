@@ -167,6 +167,10 @@ definitions:
       url:
         example: https://opensource.org/licenses/MIT
         type: string
+      user:
+        allOf:
+        - $ref: '#/definitions/models.User'
+        description: Reference to User
     required:
     - fullname
     - shortname

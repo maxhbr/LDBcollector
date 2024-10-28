@@ -47,6 +47,8 @@ type LicenseDB struct {
 	Marydone        *bool                                        `json:"marydone" gorm:"column:marydone;not null;default:false"`
 	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
 	Obligations     []*Obligation                                `gorm:"many2many:obligation_licenses;" json:"obligations"`
+	UserId          int64                                        `json:"-" example:"123"`                             // Foreign key to User
+	User            User                                         `gorm:"foreignKey:UserId;references:Id" json:"user"` // Reference to User
 }
 
 func (l *LicenseDB) BeforeSave(tx *gorm.DB) (err error) {
@@ -99,6 +101,8 @@ type LicenseUpdateJSONSchema struct {
 	Marydone        *bool                                        `json:"marydone" example:"false"`
 	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
 	Obligations     []*Obligation                                `json:"obligations"`
+	UserId          int64                                        `json:"-" example:"123"` // Foreign key to User
+	User            User                                         `json:"-"`               // Reference to User
 }
 
 // UpdateExternalRefsJSONPayload struct represents the external ref key value pairs for update
