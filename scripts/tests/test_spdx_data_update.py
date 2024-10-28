@@ -4,7 +4,7 @@ import json
 from unittest import mock
 from src.update.spdx_data_update import (download_spdx_license_list, load_spdx_license_list, delete_file, create_json,
                                          remove_duplicate_licenses, collect_duplicates, check_canonical_name_with_file,
-                                         build_canonical_dictionary, DATA_DIR)
+                                         build_canonical_dictionary, is_spdx_source, DATA_DIR)
 
 
 # Mock logger to avoid side effects in tests
@@ -87,11 +87,20 @@ def test_create_json_dump(mock_logger):
 
 
 def test_create_json_already_exists(mock_logger):
-    input_file = "licenses.json"
-    license_data = {"licenses": [{"licenseId": "MIT", "name": "MIT License"}]}
-    output_file = os.path.join(DATA_DIR, "MIT.json")
+    input_file = "spdx_license_list.json"
+    spdx_license_data = {"licenses": [{"licenseId": "MIT", "name": "MIT License"}]}
 
-    with mock.patch("builtins.open", mock.mock_open(read_data=json.dumps(license_data))), \
+    output_file = os.path.join(DATA_DIR, "MIT.json")
+    mit_license_data = {"canonical": "MIT", "src": "spdx"}
+
+    mock_open_instance = mock.mock_open()
+
+    mock_open_instance.side_effect = [
+        mock.mock_open(read_data=json.dumps(spdx_license_data)).return_value,
+        mock.mock_open(read_data=json.dumps(mit_license_data)).return_value
+    ]
+
+    with mock.patch("builtins.open", mock_open_instance), \
          mock.patch("src.update.spdx_data_update.build_canonical_dictionary"), \
          mock.patch("src.update.spdx_data_update.check_canonical_name_with_file"), \
          mock.patch("json.dump") as mock_json_dump:
@@ -114,11 +123,21 @@ def test_create_json_exception_dump(mock_logger):
 
 def test_create_json_exception_already_exists(mock_logger):
     input_file = "licenses.json"
-    license_data = {"exceptions": [{"licenseExceptionId": "389-exception", "name": "389 Directory Server Exception"}]}
-    output_file = os.path.join(DATA_DIR, "389-exception.json")
+    spdx_exception_data = \
+        {"exceptions": [{"licenseExceptionId": "389-exception", "name": "389 Directory Server Exception"}]}
 
-    with mock.patch("builtins.open", mock.mock_open(read_data=json.dumps(license_data))), \
-         mock.patch("src.update.spdx_data_update.build_canonical_dictionary"), \
+    output_file = os.path.join(DATA_DIR, "389-exception.json")
+    exception_license_data = {"canonical": "389-exception", "src": "spdx"}
+
+    mock_open_instance = mock.mock_open()
+
+    mock_open_instance.side_effect = [
+        mock.mock_open(read_data=json.dumps(spdx_exception_data)).return_value,
+        mock.mock_open(read_data=json.dumps(exception_license_data)).return_value
+    ]
+
+    with mock.patch("builtins.open", mock_open_instance), \
+        mock.patch("src.update.spdx_data_update.build_canonical_dictionary"), \
          mock.patch("src.update.spdx_data_update.check_canonical_name_with_file"), \
          mock.patch("json.dump") as mock_json_dump:
         create_json(input_file, is_exception=True)
@@ -226,6 +245,21 @@ def test_build_canonical_dictionary(mock_logger):
         # Ensure both files were opened
         mock_file.assert_any_call(os.path.join(DATA_DIR, "MIT.json"), 'r')
         mock_file.assert_any_call(os.path.join(DATA_DIR, "GPL.json"), 'r')
+
+
+def test_is_spdx_source():
+    file_name = "MIT.json"
+
+    # Mock the data in file
+    mit_data = {"canonical": "MIT", "src": "scancode-licensedb"}
+
+    with mock.patch("builtins.open", mock.mock_open()), \
+         mock.patch("json.load") as mock_json_load:
+        mock_json_load.side_effect = [mit_data]
+
+        return_value = is_spdx_source(file_name)
+
+        assert return_value is False
 
 
 def test_main(mock_logger):

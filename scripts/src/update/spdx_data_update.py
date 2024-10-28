@@ -47,7 +47,7 @@ def delete_file(filepath):
         logger.debug(f"File '{filepath}' does not exist.")
 
 
-def create_json(input_file, is_exception: bool = False):
+def process_json(input_file, is_exception: bool = False):
     """
     Create a JSON file that contains SPDX license information
     Args:
@@ -89,33 +89,57 @@ def create_json(input_file, is_exception: bool = False):
         collect_duplicates(duplicate_aliases, is_deprecated, output_file, name)
 
         if not os.path.exists(output_file):
-            logger.debug(f"Creating new data file: {output_file}")
-
-            # Determine the aliases for the current license
-            aliases = [name]
-
-            output_data = {
-                "canonical": license_id,
-                "aliases": {
-                    "spdx": aliases,
-                    "custom": []
-                },
-                "src": "spdx"
-            }
-
-            # Write new data to the file
-            with open(output_file, 'w') as outfile:
-                json.dump(output_data, outfile, indent=4)
+            create_json(license_id, name, output_file)
         else:
-            logger.debug(f"License already exists: {output_file}")
-
-            # Rename file if filename and canonical name are different now
-            check_canonical_name_with_file(canonical_to_file, license_id, output_file)
+            process_existing_license(canonical_to_file, license_id, output_file)
 
     duplicate_aliases = {key: value for key, value in duplicate_aliases.items()
                          if isinstance(value, list) and len(value) >= 2}
 
     remove_duplicate_licenses(duplicate_aliases)
+
+
+def process_existing_license(canonical_to_file, license_id, output_file):
+    logger.debug(f"License already exists: {output_file}")
+    if is_spdx_source(output_file):
+        # Rename file if filename and canonical name are different now
+        check_canonical_name_with_file(canonical_to_file, license_id, output_file)
+    else:
+        logger.warning(f"{output_file} exists based on other source than SPDX."
+                       f"If necessary correct manually.")
+
+
+def create_json(license_id, name, output_file):
+    logger.debug(f"Creating new data file: {output_file}")
+    # Determine the aliases for the current license
+    aliases = [name]
+    output_data = {
+        "canonical": license_id,
+        "aliases": {
+            "spdx": aliases,
+            "custom": []
+        },
+        "src": "spdx"
+    }
+    # Write new data to the file
+    with open(output_file, 'w') as outfile:
+        json.dump(output_data, outfile, indent=4)
+
+
+def is_spdx_source(file_name):
+    """
+    Checks if the source of the license file is SPDX
+    Args:
+        file_name: license file name
+
+    Returns: True if the source in the license file is SPDX and False if not
+    """
+    with open(file_name, 'r') as f:
+        data = json.load(f)
+    if data['src'] != 'spdx':
+        return False
+    else:
+        return True
 
 
 def remove_duplicate_licenses(duplicate_aliases):
@@ -161,7 +185,7 @@ def collect_duplicates(duplicate_aliases, is_deprecated, output_file, name):
 
 def check_canonical_name_with_file(canonical_to_file, license_id, output_file):
     """
-    Check for existing canonical name and rename file if canonical name changed and file name and
+    Check for existing canonical name and rename file if canonical name changed
 
     Args:
         canonical_to_file: Mapping of canonical_name and filepath
@@ -203,12 +227,12 @@ def main():
     spdx_exception_file = "spdx_exceptions.json"
 
     download_spdx_license_list(spdx_license_url, spdx_license_file)
-    create_json(spdx_license_file, is_exception=False)
+    process_json(spdx_license_file, is_exception=False)
 
     delete_file(spdx_license_file)
 
     download_spdx_license_list(spdx_exception_url, spdx_exception_file)
-    create_json(spdx_exception_file, is_exception=True)
+    process_json(spdx_exception_file, is_exception=True)
     delete_file(spdx_exception_file)
 
 
