@@ -1,4 +1,10 @@
 # License Lynx
+## License Mapping Statistics
+
+![License Statistics](stats.svg)
+
+
+
 ## Overview
 License Lynx is a comprehensive project focused on centralizing various licenses and their aliases into a unified database. 
 Additionally, we offer tools to streamline the process of mapping licenses to their canonical names, typically represented by SPDX IDs.
