@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Permission Terms (MIT old style variant 004)"
+category: "Permission"
+shortName: "PT-MIT-old-04"
+
+canonicalNameHistory:
+  - "MIT Old Style License (sparse)"
+  - "Permission Terms (variant 122)"
+
+alternativeNames:
+  - "mit-old-style-sparse"
+
+otherIds: 
+  - "scancode:mit-old-style-sparse"

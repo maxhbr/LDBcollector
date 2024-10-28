@@ -19,6 +19,7 @@ alternativeNames:
   - "{{Spencer-86}} https://spdx.org/licenses/Spencer-86"
   - "licenses.nuget.org/Spencer-86"
   - "https://spdx.org/licenses/spencer-86"
+  - "Regexp License"
 
 otherIds: 
   - "scancode:regexp"

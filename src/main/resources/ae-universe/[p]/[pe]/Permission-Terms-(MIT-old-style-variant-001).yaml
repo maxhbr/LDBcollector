@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "MIT Old Style License (variant 001)"
-category: "MIT Old Style"
-shortName: "MIT-Old-Style-001"
+canonicalName: "Permission Terms (MIT old style variant 001)"
+category: "Permission"
+shortName: "PT-MIT-old-01"
 
 canonicalNameHistory:
   - "MIT Old Style License (001)"
+  - "MIT Old Style License (variant 001)"
 
 alternativeNames:
   - "MIT Old Style License (001)"

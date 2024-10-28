@@ -4,7 +4,7 @@
 
 canonicalName: "TrustedQSL License"
 category: "TrustedQSL"
-shortName: "TrustedQSL-License"
+spdxIdentifier: "TrustedQSL"
 
 alternativeNames:
   - "TrustedQSL License"

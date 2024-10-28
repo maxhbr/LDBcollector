@@ -8,6 +8,8 @@ spdxIdentifier: "NIST-PD-fallback"
 
 alternativeNames:
   - "NIST Public Domain Notice (with license fallback)"
+  - "NIST Public Domain Notice with license fallback"
+  - "NIST-PD-fallback"
 
 otherIds: 
   - "scancode:nist-pd-fallback"

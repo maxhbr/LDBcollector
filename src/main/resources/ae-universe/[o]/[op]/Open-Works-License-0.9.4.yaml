@@ -2,15 +2,16 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Permission Terms (variant 122)"
-category: "Permission"
-shortName: "PT-Var122"
+canonicalName: "Open Works License 0.9.4"
+category: "Open Works License"
+shortName: "owl-0.9.4"
 
 canonicalNameHistory:
-  - "MIT Old Style License (sparse)"
+  - "Open Works License v0.9.4"
 
 alternativeNames:
-  - "mit-old-style-sparse"
+  - "Open Works License"
+  - "owl-0.9.4"
 
 otherIds: 
-  - "scancode:mit-old-style-sparse"
+  - "scancode:owl-0.9.4"

@@ -2,13 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Permission Terms (variant 077)"
+canonicalName: "Permission Terms (MIT old style variant 003)"
 category: "Permission"
-shortName: "PT-Var077"
+shortName: "PT-MIT-old-03"
 
 canonicalNameHistory:
   - "Permission Terms Var077"
   - "MIT Old Style License (variant 004)"
+  - "Permission Terms (variant 077)"
 
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "NTP"

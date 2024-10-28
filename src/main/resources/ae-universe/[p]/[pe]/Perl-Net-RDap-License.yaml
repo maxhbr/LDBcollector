@@ -2,12 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "MIT License (SEI)"
-category: "MIT"
-shortName: "MIT-SEI"
+canonicalName: "Perl Net RDap License"
+category: "Perl Net RDap License"
+shortName: "perl-net-rdap-license"
 
 alternativeNames:
-  - "MIT (SEI)"
+  - "Perl Net RDap License"
+  - "perl-net-rdap-license"
 
-otherIds: 
-  - "scancode:vince"

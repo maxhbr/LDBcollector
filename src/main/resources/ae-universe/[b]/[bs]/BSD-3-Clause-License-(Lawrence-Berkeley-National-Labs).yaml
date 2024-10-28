@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (Lawrence Berkeley National Labs)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-LBNL"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (variant 050)"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
@@ -14,6 +17,8 @@ osiCategory: "special purpose"
 alternativeNames:
   - "BSD-3-Clause-LBNL"
   - "Lawrence Berkeley National Labs BSD variant license"
+  - "BSD 3-Clause License (variant 050)"
+  - "BSD-3-Clause-050"
 
 otherIds: 
   - "scancode:lbnl-bsd"

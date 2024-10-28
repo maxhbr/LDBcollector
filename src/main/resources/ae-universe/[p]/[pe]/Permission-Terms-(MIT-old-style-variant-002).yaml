@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Permission Terms (MIT old style variant 002)"
+category: "Permission"
+shortName: "PT-MIT-old-02"
+
+canonicalNameHistory:
+  - "MIT Old Style License"
+  - "Permission Terms (variant 123)"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style"
+
+otherIds: 
+  - "scancode:mit-old-style"

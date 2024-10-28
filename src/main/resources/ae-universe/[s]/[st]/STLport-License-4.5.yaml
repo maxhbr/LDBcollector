@@ -11,6 +11,8 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "STLport License v4.5"
+  - "STLport License 4.5"
+  - "STLport-4.5"
 
 otherIds: 
   - "scancode:stlport-4.5"

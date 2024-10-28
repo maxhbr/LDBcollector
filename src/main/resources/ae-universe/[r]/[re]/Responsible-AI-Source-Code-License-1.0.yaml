@@ -2,12 +2,15 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Reponsible AI Source Code License 1.0"
-category: "Reponsible AI Source Code License"
+canonicalName: "Responsible AI Source Code License 1.0"
+category: "Responsible AI Source Code License"
 shortName: "responsible-ai-source-1.0"
 
-alternativeNames:
+canonicalNameHistory:
   - "Reponsible AI Source Code License 1.0"
+
+alternativeNames:
+  - "Responsible AI Source Code License 1.0"
 
 otherIds: 
   - "scancode:responsible-ai-source-1.0"

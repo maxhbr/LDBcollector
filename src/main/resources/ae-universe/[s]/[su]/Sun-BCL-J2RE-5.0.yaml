@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Sun BCL J2RE 5.0"
+category: "Sun BCL J2RE"
+shortName: "sun-bcl-j2re-5.0"
+
+alternativeNames:
+  - "http://java.sun.com/j2se/1.5.0/jre-1_5_0_06-license.txt"
+  - "Sun BCL J2RE 5.0"
+  - "sun-bcl-j2re-5.0"
+
+otherIds: 
+  - "scancode:sun-bcl-j2re-5.0"

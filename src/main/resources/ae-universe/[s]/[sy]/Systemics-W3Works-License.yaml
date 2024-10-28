@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Systemics W3Works License"
+category: "Systemics"
+shortName: "Systemics-W3Works"
+spdxIdentifier: "BSD-Systemics-W3Works"
+
+canonicalNameHistory:
+  - "Systemics W3Works BSD variant license"
+  - "BSD Systemics W3Works License"
+
+alternativeNames:
+  - "Systemics W3Works BSD variant license"
+  - "BSD Systemics W3Works License"
+
+otherIds: 
+  - "scancode:bsd-systemics-w3works"

@@ -2,17 +2,15 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Permission Terms (variant 123)"
+canonicalName: "Permission Terms (SEI)"
 category: "Permission"
-shortName: "PT-Var123"
+shortName: "PT-SEI"
 
 canonicalNameHistory:
-  - "MIT Old Style License"
-
-openCoDEStatus: "approved"
+  - "MIT License (SEI)"
 
 alternativeNames:
-  - "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style"
+  - "MIT (SEI)"
 
 otherIds: 
-  - "scancode:mit-old-style"
+  - "scancode:vince"

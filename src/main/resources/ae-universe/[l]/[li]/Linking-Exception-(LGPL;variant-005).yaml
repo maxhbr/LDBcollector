@@ -13,6 +13,7 @@ canonicalNameHistory:
 type: "exception"
 
 alternativeNames:
+  - "Linking Exception (LGPL; variant 005)"
   - "GCC exception, Version 2.0"
   - "GCC exception 2.0"
   - "GCC-exception, Version 2.0"

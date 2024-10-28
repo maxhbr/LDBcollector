@@ -11,3 +11,5 @@ type: "exception"
 alternativeNames:
   - "MySQL FOSS License Exception"
 
+otherIds: 
+  - "scancode:oracle-mysql-foss-exception-2.0"
