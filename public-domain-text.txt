@@ -93,6 +93,12 @@ text = '''
 This file is in the Public Domain.
 '''
 
+package = icon
+location = https://www2.cs.arizona.edu/icon/ftp/README
+text = '''
+All material here is in the public domain.
+'''
+
 package = cockatrice
 location = https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gs.svg?plain=1
            https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/icons/lock.svg?plain=1
