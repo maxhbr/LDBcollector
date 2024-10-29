@@ -6,12 +6,10 @@
 
 "use strict";
 
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
-import "./fonts/nunito.css";
-import "./theme/main.scss";
-
-
+import './fonts/nunito.css'
+import './theme/main.scss'
 
 /* Aside: submenus toggle */
 Array.from(document.getElementsByClassName('menu is-menu-main')).forEach(function (el) {
@@ -46,4 +44,12 @@ Array.from(document.getElementsByClassName('jb-navbar-menu-toggle')).forEach(fun
 });
 
 
+/* Filter form application */
+Array.from(document.getElementsByClassName('hermine-filter-form')).forEach(function (el) {
+  Array.from(el.getElementsByTagName('select')).forEach(function (select) {
+    select.addEventListener('change', function (e) {
+      el.submit();
+    });
+  })
+})
 

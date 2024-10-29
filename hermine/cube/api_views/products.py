@@ -55,6 +55,13 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     lookup_field = "id"
 
+    def get_queryset(self):
+        queryset = self.queryset
+        name = self.request.query_params.get("name")
+        if name is not None:
+            queryset = self.queryset.filter(name=name)
+        return queryset
+
 
 class ReleaseViewSet(viewsets.ModelViewSet):
     serializer_class = ReleaseSerializer
