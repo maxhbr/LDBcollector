@@ -8,7 +8,7 @@ from src.update.update_readme import (
     load_license_data,
     count_canonical_licenses,
     generate_svg,
-    main,
+    update_readme,
 )
 
 # Sample JSON data for testing
@@ -104,7 +104,7 @@ def test_main_creates_svg_file():
          patch("src.update.update_readme.save_svg") as mock_save_svg, \
          patch("builtins.open", mock_open(read_data=sample_svg_template)):
         # Call the main function
-        main('mock_path', svg_file_path)
+        update_readme('mock_path', svg_file_path)
 
         # Check if save_svg was called with the correct arguments
         mock_save_svg.assert_called_once()

@@ -20,7 +20,10 @@ mypy = "^1.9.0"
 [tool.poetry.scripts]
 data_validation = "src.validate.data_validation:main"
 merge_data = "src.load.merge_data:main"
-data_update = "src.update.data_update:main"
+spdx_data_update = "src.update.spdx_data_update:main"
+scancode_licensedb_data_update = "src.update.scancode_licensedb_data_update:main"
+update_readme = "src.update.update_readme:main"
+generate_api_files = "src.web_api.generate_api_files:main"
 
 [build-system]
 requires = ["poetry-core"]

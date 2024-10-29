@@ -15,13 +15,13 @@ def generate_hash(content):
     return hashlib.md5(json.dumps(content, sort_keys=True).encode('utf-8')).hexdigest()
 
 
-def generate_files(input_file, dir):
+def generate_files(input_file, directory):
     # Load the merged_data.json file
     with open(input_file, 'r') as file:
         merged_data = json.load(file)
 
     # Directory to store the JSON files
-    api_directory = dir  # 'api/license'
+    api_directory = directory  # 'api/license'
 
     # Create the directory if it doesn't exist
     os.makedirs(api_directory, exist_ok=True)
@@ -59,10 +59,14 @@ def generate_files(input_file, dir):
                 json.dump(content, f, indent=4)
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input_file', help='input file', required=True)
     parser.add_argument('-d', '--dir', help='output directory', required=False, default='api/license')
     args = parser.parse_args()
 
     generate_files(args.input_file, args.dir)
+
+
+if __name__ == '__main__':
+    main()

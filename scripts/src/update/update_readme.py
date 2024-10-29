@@ -51,7 +51,7 @@ def save_svg(svg_content, file_path):
         f.write(svg_content)
 
 
-def main(license_data_file_path, svg_file_path):
+def update_readme(license_data_file_path, svg_file_path):
     # Load license data
     license_data = load_license_data(license_data_file_path)
 
@@ -68,5 +68,9 @@ def main(license_data_file_path, svg_file_path):
     print("SVG updated successfully.")
 
 
+def main():
+    update_readme("merged_data.json", "../../../stats.svg")
+
+
 if __name__ == '__main__':
-    main("merged_data.json", "../../../stats.svg")
+    main()
