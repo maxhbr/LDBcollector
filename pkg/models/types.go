@@ -279,9 +279,18 @@ type AuditResponse struct {
 	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
+// ObligationType represents one of the possible of obligation type values
 type ObligationType struct {
-	Id   int64  `gorm:"primary_key"`
-	Type string `gorm:"unique;not null"`
+	Id     int64  `gorm:"primary_key" json:"-"`
+	Type   string `gorm:"unique;not null" validate:"required,uppercase" example:"PERMISSION" json:"type"`
+	Active *bool  `gorm:"not null;default:true" json:"-"`
+}
+
+// ObligationTypeResponse represents the response format for obligation type data.
+type ObligationTypeResponse struct {
+	Status int              `json:"status" example:"200"`
+	Data   []ObligationType `json:"data"`
+	Meta   *PaginationMeta  `json:"paginationmeta"`
 }
 
 type ObligationClassification struct {
@@ -322,9 +331,11 @@ func (o *Obligation) BeforeCreate(tx *gorm.DB) (err error) {
 		}
 		allTypes := ""
 		for i := 0; i < len(obTypes); i++ {
-			allTypes += fmt.Sprintf(" %s", obTypes[i].Type)
-			if o.Type.Type == obTypes[i].Type {
-				o.Type = &obTypes[i]
+			if *obTypes[i].Active {
+				allTypes += fmt.Sprintf(" %s", obTypes[i].Type)
+				if o.Type.Type == obTypes[i].Type {
+					o.Type = &obTypes[i]
+				}
 			}
 		}
 		if o.Type.Id == 0 {
@@ -389,9 +400,11 @@ func (o *Obligation) BeforeUpdate(tx *gorm.DB) (err error) {
 		}
 		allTypes := ""
 		for i := 0; i < len(obTypes); i++ {
-			allTypes += fmt.Sprintf(" %s", obTypes[i].Type)
-			if o.Type.Type == obTypes[i].Type {
-				o.Type = &obTypes[i]
+			if *obTypes[i].Active {
+				allTypes += fmt.Sprintf(" %s", obTypes[i].Type)
+				if o.Type.Type == obTypes[i].Type {
+					o.Type = &obTypes[i]
+				}
 			}
 		}
 		if o.Type.Id == 0 {

@@ -133,6 +133,9 @@ func Router() *gin.Engine {
 				obligations.POST("import", ImportObligations)
 				obligations.PATCH(":topic", UpdateObligation)
 				obligations.DELETE(":topic", DeleteObligation)
+				obligations.GET("/types", GetAllObligationType)
+				obligations.POST("/types", CreateObligationType)
+				obligations.DELETE("/types/:type", DeleteObligationType)
 			}
 			obMap := authorizedv1.Group("/obligation_maps")
 			{
@@ -218,6 +221,9 @@ func Router() *gin.Engine {
 				obligations.POST("import", ImportObligations)
 				obligations.PATCH(":topic", UpdateObligation)
 				obligations.DELETE(":topic", DeleteObligation)
+				obligations.GET("/types", GetAllObligationType)
+				obligations.POST("/types", CreateObligationType)
+				obligations.DELETE("/types/:type", DeleteObligationType)
 			}
 			obMap := authorizedv1.Group("/obligation_maps")
 			{

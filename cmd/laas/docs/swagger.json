@@ -1263,6 +1263,160 @@
                 }
             }
         },
+        "/obligations/types": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get all active obligation types from the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get all active obligation types",
+                "operationId": "GetAllObligationType",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active obligation only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationTypeResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No obligation types in DB",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Create an obligation type",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Create an obligation type",
+                "operationId": "CreateObligationType",
+                "parameters": [
+                    {
+                        "description": "Obligation type to create",
+                        "name": "obligation_type",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationType"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationTypeResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "409": {
+                        "description": "obligation type already exists",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while creating new obligation type",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/types/{type}": {
+            "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Deactivate an obligation type",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Deactivate obligation type",
+                "operationId": "DeleteObligationType",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Obligation Type",
+                        "name": "type",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "cannot delete obligation type 'RISK' as it's still referenced by some obligations",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "obligation type 'RISK' not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while deleting obligation type",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/obligations/{topic}": {
             "get": {
                 "security": [
@@ -2363,12 +2517,31 @@
         },
         "models.ObligationType": {
             "type": "object",
+            "required": [
+                "type"
+            ],
             "properties": {
-                "id": {
-                    "type": "integer"
-                },
                 "type": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "PERMISSION"
+                }
+            }
+        },
+        "models.ObligationTypeResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationType"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },
