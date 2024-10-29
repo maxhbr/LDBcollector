@@ -255,3 +255,9 @@ software is granted. This software is provided "as is" without
 express or implied warranty, and with no claim as to its
 suitability for any purpose.
 '''
+
+package = samcoupe-rom
+location = https://src.fedoraproject.org/rpms/samcoupe-rom/blob/rawhide/f/redistribution-permission.txt
+text = '''
+I hereby allow all my SAM Coupé titles (including ROMs) and associated manuals to be freely (re)distributed.
+'''
