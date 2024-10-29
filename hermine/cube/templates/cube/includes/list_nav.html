@@ -2,25 +2,49 @@
 SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
 SPDX-License-Identifier: AGPL-3.0-only
 -->
-<div class="level">
+<div class="level is-aligned-center">
   <div class="level-left">
     <div class="level-item">
-      <form>
-        <div class="field has-addons">
-          <div class="control">
-            <label class="is-sr-only" for="search_field">Search</label>
-            <input id="search_field" class="input" name="search" placeholder="Search" value="{{ query }}" />
+      <form class="hermine-filter-form">
+        {% if search_form %}
+          <div class="field has-addons">
+            <div class="control">
+              <label class="is-sr-only" for="search_field">Search</label>
+              <input id="search_field" class="input is-small" name="search" placeholder="Search" value="{{ search_form.search.value|default_if_none:"" }}" />
+            </div>
+            <div class="control">
+              <button class="button is-small" type="submit">Search</button>
+            </div>
           </div>
-          <div class="control">
-            <button class="button" type="submit">Search</button>
-          </div>
-        </div>
+        {% endif %}
+        {% for field in filter.form %}
+          {% if field.name == 'search' %}
+            <div class="field has-addons">
+              <div class="control">
+                <label class="is-sr-only" for="search_field">Search</label>
+                <input id="search_field" class="input is-small" name="search" placeholder="Search" value="{{ search_form.search.value }}" />
+              </div>
+              <div class="control">
+                <button class="button is-small  " type="submit">Search</button>
+              </div>
+            </div>
+          {% else %}
+            <div class="field bulma is-horizontal">
+              <div class="field-label">
+                <label for="{{ field.name }}" class="label">{{ field.label }}</label>
+              </div>
+              <div class="control">
+                {{ field }}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
       </form>
     </div>
   </div>
   <div class="level-right">
     <div class="level-item">
-      <nav class="pagination" role="navigation" aria-label="Pagination">
+      <nav class="pagination is-small" role="navigation" aria-label="Pagination">
         <ul class="pagination-list">
           {% if page_obj.number > 2 %}
             <li>

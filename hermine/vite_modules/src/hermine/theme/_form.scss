@@ -92,3 +92,25 @@
     }
   }
 }
+
+.hermine-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > .field {
+    margin-right: $default-padding * .5;
+    margin-bottom: 0;
+    margin-top: $default-padding * .5;
+
+    .field-label {
+      @extend .is-small;
+      margin-bottom: 0;
+      margin-right: $default-padding * 0.125;
+      text-wrap: nowrap;
+    }
+
+    .select, button {
+      @extend .is-small;
+    }
+  }
+}
