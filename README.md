@@ -1,25 +1,28 @@
-# License Lynx
+# LicenseLynx
+
 ## License Mapping Statistics
 
 ![License Statistics](stats.svg)
 
-
-
 ## Overview
-License Lynx is a comprehensive project focused on centralizing various licenses and their aliases into a unified database. 
-Additionally, we offer tools to streamline the process of mapping licenses to their canonical names, typically represented by SPDX IDs.
 
-For that, we offer libraries in Python, Java, and TypeScript.
+LicenseLynx is a comprehensive project
+focused on bridging the gap between unknown or ambiguous license names and their canonical license names.
+Additionally, we offer libraries for Python, Java,
+and TypeScript to streamline the process of mapping licenses to their canonical names,
+typically represented by SPDX IDs.
 
 ## Folder Structure
-The folders **Java**, **Python**, and **TypeScript** are providing libraries to use in code. 
+
+The folders **Java**, **Python**, and **TypeScript** are providing libraries to use in code.
 The folder **scripts** contains several useful scripts to update, transform, and verify data.
-In the folder **website** we host a static website to introduce the community to the License Lynx project.
-<!--- ## Usage --->
+In the folder **website** we host a static website to introduce the community to the LicenseLynx project.
 
 ## Data source structure
-In folder **datasource** all licenses are stored in single json-files. 
+
+In folder **data** all licenses are stored in single json-files.
 The structure of a stored license looks like this:
+
 ```json
 {
     "canonical": "LGPL-2.0-only",
@@ -47,7 +50,6 @@ The structure of a stored license looks like this:
 | canonical | Canonical name for license                                                                           |
 | aliases   | Dictionary of sources, where each source is list of aliases of license (e.g. "spdx", "custom", etc.) |
 | src       | Source for canonical license name                                                                    |
-
 
 ## Contributing
 

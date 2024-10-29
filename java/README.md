@@ -5,7 +5,7 @@ For Java, use the ``map`` method from the ``LicenseLynx`` class to achieve the s
 ## Usage
 
 ```java
-import com.siemens.licenselynx;
+import com.siemens.licenselynx.*;
 
 public class LicenseExample {
     public static void main(String[] args) {
