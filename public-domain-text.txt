@@ -29,6 +29,17 @@ text = '''
 text here
 '''
 
+package = golang-github-xi2-xz
+location = https://github.com/xi2/xz/blob/master/LICENSE
+text = '''
+All the files in this package have been written by Michael Cross,
+Lasse Collin and/or Igor PavLov. All these files have been put
+into the public domain. You can do whatever you want with these
+files.
+
+This software is provided "as is", without any warranty.
+'''
+
 package = sdl-telnet
 location = https://github.com/SDL-Hercules-390/telnet/blob/master/README.md?plain=1#L31
 text = '''
