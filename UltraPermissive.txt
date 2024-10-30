@@ -25,6 +25,12 @@ text = '''
 text here
 '''
 
+package = radial
+location = http://www.nhn.ou.edu/~hegarty/radial/radial-1.0.f
+text = '''
+This program is free, but donations are welcome. :)
+'''
+
 package = rubygem-ruby-shadow
 location = https://github.com/apalmblad/ruby-shadow/blob/master/LICENSE
 text = '''
