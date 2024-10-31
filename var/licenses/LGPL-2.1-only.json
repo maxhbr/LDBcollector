@@ -61,6 +61,8 @@
         "LPGL -2.1",
         "Gnu Lesser General Public License (LGPL), Version 2.1",
         "GNU Lesser General Public License (LGPL), Version 2.1",
-        "The GNU Lesser General Public License, version 2.1"
+      "The GNU Lesser General Public License, version 2.1",
+      "GNU LGPL version 2.1",
+        "LGPLv2.1 only"
     ]
 }
