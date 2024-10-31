@@ -287,7 +287,7 @@ def conflict_dection(file_license_results,dependencies):
     return list(confilct_copyleft_set),confilct_depend_dict
 
 if __name__ == "__main__":
-    licenses_in_files, dep_tree,require_dist=license_detection_files("/home/wwxu/RecLicense/backend/temp_files/2024-08-12 12:16:49.123700/test_project","/home/wwxu/RecLicense/backend/temp_files/2024-08-12 12:16:49.123700/test_project.json")
+    licenses_in_files, dep_tree,require_dist=license_detection_files("/data/wwxu/RecLicense/backend/temp_files/2024-10-31 16:00:27.040584/osslab-pku_gfi-bot","/data/wwxu/RecLicense/backend/temp_files/2024-10-31 16:00:27.040584/osslab-pku_gfi-bot.json")
     # depends=depend_detection("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie/temp.json")
     # print(res)
     # print(conflict_dection_compliance(res))

@@ -10,7 +10,12 @@ from pymongo import MongoClient
 from packaging.requirements import Requirement, InvalidRequirement
 from packaging.version import parse as parse_version, InvalidVersion
 
-
+logging.basicConfig(
+    filename=f"./app/logging/backend.log",
+    filemode='a',
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    level=logging.DEBUG
+)
 logger = logging.getLogger(__name__)
 
 
@@ -178,7 +183,7 @@ class Z3DependencyResolver:
         extras = set() if extras is None else extras
         pfmt_args = {"compact": True, "width": 200}
 
-        logger.debug(
+        logger.info(
             "Resolving %s-%s, requires = %s, extras = %s, before = %s",
             self.package,
             self.version,

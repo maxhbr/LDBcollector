@@ -14,7 +14,12 @@ from pymongo import MongoClient
 from packaging.requirements import Requirement, InvalidRequirement
 from packaging.version import InvalidVersion, parse as parse_version
 from .analysis import is_compatible
-
+logging.basicConfig(
+    filename=f"./app/logging/logging.log",
+    filemode='a',
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    level=logging.DEBUG
+)
 
 logger = logging.getLogger(__name__)
 
@@ -152,6 +157,7 @@ class Z3Remediator:
         req_queue = [d for d in reversed(require_dist)]
         req_set = set(req_queue)
 
+        logger.info("Start build Solution Space...")
         while len(req_queue) > 0:
             try:
                 req_text = req_queue.pop(0)
@@ -171,15 +177,16 @@ class Z3Remediator:
                 req = Requirement(pkg_name)
 
             candidates, incomp_cands = self.match_version(req, before)
-
+            logger.debug("Candidates for %s: %s", req_text, candidates)
             for ver, next_requires in candidates:
                 pkgver2reqs[(pkg_name, ver)] = next_requires
                 for r in reversed(next_requires):
                     if r not in req_set:
                         req_set.add(r)
                         req_queue.append(r)
-
+           
             # Add possible migrations to the queue for direct deps
+            logger.debug("Start addressing direct deps...")
             if pkg_name in direct_deps:
                 for alternative_pkg in self.mig_base.rules[req.name.lower()]:
                     r = alternative_pkg.lower()
