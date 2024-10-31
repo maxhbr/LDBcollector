@@ -18,7 +18,7 @@ logging.basicConfig(
     filename=f"./app/logging/logging.log",
     filemode='a',
     format="%(asctime)s [%(levelname)s] %(message)s",
-    level=logging.DEBUG
+    level=logging.INFO
 )
 
 logger = logging.getLogger(__name__)
@@ -390,6 +390,7 @@ class Z3Remediator:
                 logger.info("Unsat")
                 # return None
                 break
+        logger.info("New trees have been generated")
         return new_trees, direct_deps
 
     def summarize_changes(
@@ -433,7 +434,7 @@ def get_remediation(mongo_uri: str, package: str, version: str,requires_dist, de
     before = datetime.now(tz=timezone.utc)
     #requires_dist, before = sample["requires_dist"], sample["release_date"]
     original_tree = {i.lower(): dep_tree[i] for i in dep_tree}
-    logger.debug("Original tree: %s", original_tree)
+    logger.info("Original tree: %s", original_tree)
     remed["original_tree"]=original_tree
     dr = Z3Remediator(mongo_uri, package, version, license)
     new_trees, direct_deps = dr.remediate(requires_dist, original_tree, before=before)

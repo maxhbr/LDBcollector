@@ -14,7 +14,7 @@ logging.basicConfig(
     filename=f"./app/logging/backend.log",
     filemode='a',
     format="%(asctime)s [%(levelname)s] %(message)s",
-    level=logging.DEBUG
+    level=logging.INFO
 )
 logger = logging.getLogger(__name__)
 
@@ -193,13 +193,13 @@ class Z3DependencyResolver:
         )
 
         pkgver2reqs, req2cands = self.build_solution_space(require_dist, extras, before)
-        logger.debug("(pkg, ver) -> reqs: \n%s", pformat(pkgver2reqs, **pfmt_args))
-        logger.debug("req -> cand vers: \n%s", pformat(req2cands, **pfmt_args))
-
+        #logger.debug("(pkg, ver) -> reqs: \n%s", pformat(pkgver2reqs, **pfmt_args))
+        #logger.debug("req -> cand vers: \n%s", pformat(req2cands, **pfmt_args))
+        logger.info("Solution space size: %d", len(pkgver2reqs))
         z3solver, var_dict, ignored = self.build_z3_constraints(pkgver2reqs, req2cands)
-        logger.debug("Assertions: \n%s", "\n".join(map(str, z3solver.assertions())))
-        logger.debug("Ignored constraints: %s", pformat(ignored, **pfmt_args))
-
+        #logger.debug("Assertions: \n%s", "\n".join(map(str, z3solver.assertions())))
+        #logger.debug("Ignored constraints: %s", pformat(ignored, **pfmt_args))
+        logger.info("Constraints have been added")
         return self.get_solution(z3solver, var_dict)
 
     def __del__(self):
