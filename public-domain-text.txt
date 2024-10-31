@@ -82,6 +82,19 @@ text = '''
 The source code is in the public domain, available for both commercial and non-commerical use.
 '''
 
+package = libgenht
+# file LICENSE
+location = http://www.repo.hu/projects/genht/releases/genht-1.1.3.tar.gz
+text = '''
+Public Domain.
+
+genht was written by Szabolcs Nagy in 2010.
+
+The whole project, including all source files are placed in the
+Public Domain by the author. There is absolutely no restriction
+on use or distribution of these files.
+'''
+
 package = cproto
 # See LICENSE in sources tarball
 location = https://invisible-island.net/cproto/cproto.html
