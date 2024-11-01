@@ -25,6 +25,14 @@ text = '''
 text here
 '''
 
+package = lyx
+# file ./lib/fonts/README
+location = http://ftp.lyx.org/pub/lyx/stable/2.4.x/lyx-2.4.2.1.tar.xz
+text = '''
+The author of these fonts, Basil K. Malyshev, has kindly
+granted permission to use and modify these fonts.
+'''
+
 package = radial
 location = http://www.nhn.ou.edu/~hegarty/radial/radial-1.0.f
 text = '''
