@@ -18,6 +18,7 @@
         "Berkeley DB License",
         "scancode:sleepycat",
         "osi:Sleepycat",
-        "sleepycat"
+        "sleepycat",
+        "Sleepycat license"
     ]
 }

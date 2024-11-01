@@ -35,7 +35,8 @@
                 "Apache Software Licenses",
                 "The Apache License",
                 "Apache license",
-                "License :: OSI Approved :: Apache Software License"
+                "License :: OSI Approved :: Apache Software License",
+                "OSI Approved Apache Software License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -200,7 +201,10 @@
                 "License :: OSI Approved :: GNU Library or...",
                 "License :: OSI Approved :: GNU Lesser General Public License v2",
                 "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
-                "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)"
+              "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+              "GNU Library/LGPL",
+              "GNU Library",
+              "GNU Lesser General Public v2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -264,6 +268,12 @@
                 "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
             ],
             "problem": "This license has different versions (1.0, 1.1 and 1.2). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+        },
+        "Unicode License": {
+            "aliases": [
+                "Unicode"
+            ],
+            "problem": "This license has different variants/versions (Unicode Terms of Use, Unicode-3.0, Unicode Inc License Agreement .... ). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
         "Zope Public License": {
             "aliases": [

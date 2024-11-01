@@ -20,6 +20,7 @@
         "Curl",
         "curl licence",
         "Libcurl license",
-        "MIT License (Customized with curl note)"
-  ]
+        "MIT License (Customized with curl note)",
+        "The curl License"
+    ]
 }
