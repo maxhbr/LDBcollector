@@ -561,7 +561,7 @@ class FossLicenses:
 
             for alias in reversed(collections.OrderedDict(sorted(ambig_aliases.items(), key=lambda x: len(x[0])))):
                 if alias in fixed_license_expression:
-                    fixed_license_expression = re.sub(re.escape(alias), ambig, fixed_license_expression)
+                    fixed_license_expression = re.sub(re.escape(alias), ambig_aliases[alias], fixed_license_expression)
                     break
 
         compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE, fixed_license_expression)]
