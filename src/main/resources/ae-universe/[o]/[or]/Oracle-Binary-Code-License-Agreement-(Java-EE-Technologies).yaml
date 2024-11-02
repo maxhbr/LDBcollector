@@ -8,6 +8,8 @@ shortName: "Oracle-BCLA-Java-EE"
 
 alternativeNames:
   - "Oracle Binary Code License Agreement for Java EE Technologies"
+  - "Oracle Binary Code License Agreement (Java EE Technologies)"
+  - "Oracle-BCLA-Java-EE"
 
 otherIds: 
   - "scancode:oracle-bcl-javaee"
