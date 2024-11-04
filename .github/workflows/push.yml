@@ -68,6 +68,7 @@ jobs:
          cd python
          pip install -r requirements.txt
          pip install -r requirements-dev.txt
+         cd ..
          make stats
          make clean && git diff && ls -al 
 
