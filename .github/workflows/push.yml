@@ -62,4 +62,7 @@ jobs:
         report_paths: '**/TEST-*.xml'
     - name: Status update
       run: |
-        make status && git commit -m "Auto update README and STATUS files" STATUS.md README.md
+        make status
+        git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
+        git config --global user.name "${GH_USERNAME}"
+        git commit -m "Auto update README and STATUS files" STATUS.md README.md
