@@ -29,6 +29,33 @@ text = '''
 text here
 '''
 
+package = nacl
+# crypto_scalarmult/curve25519/donna_c64/smult.c
+location = http://hyperelliptic.org/nacl/nacl-20110221.tar.bz2
+text = '''
+Code released into the public domain.
+
+curve25519-donna: Curve25519 elliptic curve, public key function
+
+http://code.google.com/p/curve25519-donna/
+
+Adam Langley <agl@imperialviolet.org>
+
+Derived from public domain C code by Daniel J. Bernstein <djb@cr.yp.to>
+
+More information about curve25519 can be found here
+  http://cr.yp.to/ecdh.html
+'''
+
+package = nacl
+# crypto_scalarmult/curve25519/ref/base.c
+# crypto_scalarmult/curve25519/ref/smult.c
+location = http://hyperelliptic.org/nacl/nacl-20110221.tar.bz2
+text = '''
+Public domain.
+Derived from public domain code by D. J. Bernstein.
+'''
+
 package = golang-github-xi2-xz
 location = https://github.com/xi2/xz/blob/master/LICENSE
 text = '''
