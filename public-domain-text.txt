@@ -137,6 +137,18 @@ text = '''
 This package is in the Public Domain.
 '''
 
+package = oflb-goudy-bookletter-1911-fonts
+# only in lookaside cache of Fedora
+# in file GoudyBookletter1911.otf
+location = chemoelectric_-_Goudy_Bookletter_1.zip
+text = '''
+This font has been released into the public domain by its author, Barry Schwartz. This applies worldwide.
+
+In some countries this may not be legally possible; if so:
+
+Barry Schwartz grants anyone the right to use this work for any purpose, without any conditions, unless such conditions are required by law.
+'''
+
 package = gnome-valgrind-session
 location = http://hp.cl.no/proj/gnome-valgrind-session/src/gnome-valgrind-session-1.1.tar.bz2
 # in almost every other file
