@@ -70,7 +70,8 @@ jobs:
          pip install -r requirements-dev.txt
          cd ..
          make stats
-         make clean && git diff && ls -al 
+         make clean && git diff && ls -al
+         cat STATUS.md
 
       # If the generated files are updated, this action pushes a commit.
       - uses: int128/update-generated-files-action@v2
