@@ -60,16 +60,18 @@ jobs:
       if: ${{ always() && github.event.pull_request.head.repo.full_name == github.repository }}
       with:
         report_paths: '**/TEST-*.xml'
-    - name: Status update
-      run: |
-        make status
-        git config --global user.name "${{ github.actor }}"
-        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-        git branch auto-status-update
-        git checkout auto-status-update
-        git add STATUS.md README.md
-        git commit -m "Auto update README and STATUS files" STATUS.md README.md
-        git push -u origin auto-status-update
-        git checkout main
-        git branch -D auto-status-update
-        git push auto-status-update --delete auto-status-update
+
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push a commit
+      pull-requests: write # Required to create a pull request
+    steps:
+      - uses: actions/checkout@v4
+
+      # Something to generate files
+      - run: make status
+
+      # If the generated files are updated, this action pushes a commit.
+      - uses: int128/update-generated-files-action@v2
+ 
