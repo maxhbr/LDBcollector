@@ -54,9 +54,25 @@ jobs:
         flame licenses
         flame operators
         flame compats
-    - name: Publish Test Report
-      uses: mikepenz/action-junit-report@v4
-      # always run even if the previous step fails but only for the main repo
-      if: ${{ always() && github.event.pull_request.head.repo.full_name == github.repository }}
-      with:
-        report_paths: '**/TEST-*.xml'
+
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push a commit
+      pull-requests: write # Required to create a pull request
+    steps:
+      - uses: actions/checkout@v4
+
+      # Something to generate files
+      - run: |
+         cd python
+         pip install -r requirements.txt
+         pip install -r requirements-dev.txt
+         cd ..
+         make stats-file
+         make clean && git diff && ls -al
+         cat STATUS.md
+
+      # If the generated files are updated, this action pushes a commit.
+      - uses: int128/update-generated-files-action@v2
+ 
