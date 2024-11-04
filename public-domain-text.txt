@@ -2177,6 +2177,14 @@ The core package and most ports are in the public domain, but a few files in the
 This software is provided AS IS with NO WARRANTY whatsoever.
 '''
 
+package = nec2c
+location = https://github.com/KJ7LNW/nec2c/blob/master/README#L205
+text = '''
+nec2c is Public Domain, same as the original FORTRAN source.
+Please keep any software you write incorporating nec2c in Public
+Domain or at least use an open license like GPL or BSD.
+'''
+
 package = mingw-pdcurses
 # current version in rawhide
 location = https://github.com/wmcbrine/PDCurses/archive/refs/tags/3.8.tar.gz
