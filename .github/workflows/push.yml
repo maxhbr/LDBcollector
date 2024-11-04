@@ -66,4 +66,4 @@ jobs:
         git config --global user.email "hesa@sandklef.com"
         git config --global user.name "Henrik Sandkef"
         git commit -m "Auto update README and STATUS files" STATUS.md README.md
-        git push -f origin main
+        git push -u origin main    
