@@ -68,7 +68,7 @@ jobs:
          cd python
          pip install -r requirements.txt
          pip install -r requirements-dev.txt
-         make status
+         make stats
          make clean && git diff && ls -al 
 
       # If the generated files are updated, this action pushes a commit.
