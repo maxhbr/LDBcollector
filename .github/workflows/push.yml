@@ -63,6 +63,6 @@ jobs:
     - name: Status update
       run: |
         make status
-        git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
-        git config --global user.name "${GH_USERNAME}"
+        git config user.email "${GH_USERNAME}@users.noreply.github.com"
+        git config user.name "${GH_USERNAME}"
         git commit -m "Auto update README and STATUS files" STATUS.md README.md
