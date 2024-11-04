@@ -71,7 +71,7 @@ jobs:
 
       # Something to generate files
       - run: |
-          cd python && python3 setup.py install
+          cd python && pip3 install -r requirements.txt
           make status
           make clean && git diff && ls -al 
 
