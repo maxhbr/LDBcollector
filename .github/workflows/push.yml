@@ -63,8 +63,13 @@ jobs:
     - name: Status update
       run: |
         make status
-        git config --global user.email "hesa@sandklef.com"
-        git config --global user.name "Henrik Sandkef"
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        git branch auto-status-update
+        git checkout auto-status-update
         git add STATUS.md README.md
         git commit -m "Auto update README and STATUS files" STATUS.md README.md
-        git push
+        git push -u origin auto-status-update
+        git checkout main
+        git branch -D auto-status-update
+        git push auto-status-update --delete auto-status-update
