@@ -39,3 +39,7 @@ class AboutView(TemplateView):
 
 class ProfileView(LoginRequiredMixin, TemplateView):
     template_name = "cube/profile.html"
+
+
+class Error404View(TemplateView):
+    template_name = "404.html"
