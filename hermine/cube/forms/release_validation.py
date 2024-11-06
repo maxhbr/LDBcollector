@@ -240,7 +240,10 @@ class CreateDerogationForm(BaseUsageConditionForm):
                 (self.ANY, "Any modification"),
             )
 
-        del self.fields["product_release"]
+        self.fields["product_release"].choices = (
+            (self.RELEASE, f"Only {self.usage.release}"),
+            (self.PRODUCT, f"All {self.usage.release.product} releases"),
+        )
 
     def save(self, **kwargs):
         if self.cleaned_data["linking_choice"] == self.USAGE:
