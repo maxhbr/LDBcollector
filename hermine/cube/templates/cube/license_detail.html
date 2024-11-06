@@ -244,6 +244,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <div class="card-content">
         {% if license.context_derogations %}
           <p>There is {{ license.context_derogations.count }} generic contexts authorized for this license (listed below) and {% if license.derogations.count > 0 %} <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
+          <div class="table-container">
           <table>
             <tr>
               <th>Linking</th>
@@ -273,6 +274,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               </tr>
             {% endfor %}
           </table>
+          </div>
         {% else %}
           <p><em>There are no generic contexts of usage authorized for this license.</em>{% if license.derogations.count > 0 %} There are <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
         {% endif %}

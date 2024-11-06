@@ -77,6 +77,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   <h2 class="title is-2">Releases for this product</h2>
   {% if perms.cube.view_release %}
+    <div class="table-container">
     <table class="table is-striped is-hoverable is-fullwidth">
       <thead>
         <tr>
@@ -109,6 +110,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
+    </div>
   {% else %}
     You don't have the permission to view releases.
   {% endif %}

@@ -43,6 +43,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endfor %}
   </p>
   <h2 class="title is-2">List of compliance actions to follow</h2>
+  <div class="table-container">
   <table class="table">
     <thead>
       <tr>
@@ -72,9 +73,11 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% endfor %}
     </tbody>
   </table>
+  </div>
 
   {% if specifics_involved %}
     <h2 class="title is-2">List of license-specific obligations to follow</h2>
+    <div class="table-container">
     <table class="table">
       <thead>
         <tr>
@@ -95,6 +98,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
+    </div>
   {% endif %}
 
 {% endblock %}

@@ -40,6 +40,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 {% block content %}
   {% include "cube/includes/list_nav.html" %}
   <p>The list of corrections and confirmations of license information related to 3rd party components.</p>
+  <div class="table-container">
   <table class="table is-striped is-hoverable is-fullwidth">
     <thead class="table is-bordered has-text-centered">
       <tr>
@@ -87,6 +88,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
       {% endfor %}
     </tbody>
   </table>
+  </div>
   {% include "cube/includes/list_nav.html" %}
 
 {% endblock %}

@@ -32,6 +32,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block content %}
   {% include "cube/includes/release_tabs.html" with active_tab="bom" object=release %}
   {% include "cube/includes/list_nav.html" %}
+  <div class="table-container">
   <table class="table">
     <thead>
       <tr>
@@ -79,6 +80,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% endfor %}
     </tbody>
   </table>
+  </div>
   {% include "cube/includes/list_nav.html" %}
 {% endblock %}
 
