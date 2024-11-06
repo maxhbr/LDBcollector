@@ -44,60 +44,60 @@ SPDX-License-Identifier: AGPL-3.0-only
   </p>
   <h2 class="title is-2">List of compliance actions to follow</h2>
   <div class="table-container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>In core?</th>
-        <th>Name</th>
-        <th>Lead</th>
-        <th>Metacategory</th>
-        <th>Active/Passive</th>
-        <th>Components</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for generic in generics_involved %}
+    <table class="table">
+      <thead>
         <tr>
-          <td>{% if generic.in_core %}
-            <span class="tag is-primary"> In core</span>
-          {% else %}
-            <span class="tag is-danger"> Not in core</span>
-          {% endif %}
-          </td>
-          <td><a href="{% url 'cube:generic_detail' generic.id %}">{{generic.name}}</a></td>
-          <td>{{generic.team.name}}</td>
-          <td>{{generic.metacategory}}</td>
-          <td>{{generic.passivity}}</td>
-          <td><a href="{% url 'cube:release_generic' object.id generic.id %}">Concerned components</a></td>
+          <th>In core?</th>
+          <th>Name</th>
+          <th>Lead</th>
+          <th>Metacategory</th>
+          <th>Active/Passive</th>
+          <th>Components</th>
         </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {% for generic in generics_involved %}
+          <tr>
+            <td>{% if generic.in_core %}
+              <span class="tag is-primary"> In core</span>
+            {% else %}
+              <span class="tag is-danger"> Not in core</span>
+            {% endif %}
+            </td>
+            <td><a href="{% url 'cube:generic_detail' generic.id %}">{{generic.name}}</a></td>
+            <td>{{generic.team.name}}</td>
+            <td>{{generic.metacategory}}</td>
+            <td>{{generic.passivity}}</td>
+            <td><a href="{% url 'cube:release_generic' object.id generic.id %}">Concerned components</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 
   {% if specifics_involved %}
     <h2 class="title is-2">List of license-specific obligations to follow</h2>
     <div class="table-container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>License</th>
-          <th>Obligation</th>
-          <th>Text</th>
-          <th>Active/Passive</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for obligation in specifics_involved %}
+      <table class="table">
+        <thead>
           <tr>
-            <td>{{obligation.license.spdx_id}}</td>
-            <td>{{obligation.name}}</td>
-            <td>{{obligation.verbatim}}</td>
-            <td>{{obligation.passivity}}</td>
+            <th>License</th>
+            <th>Obligation</th>
+            <th>Text</th>
+            <th>Active/Passive</th>
           </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {% for obligation in specifics_involved %}
+            <tr>
+              <td>{{obligation.license.spdx_id}}</td>
+              <td>{{obligation.name}}</td>
+              <td>{{obligation.verbatim}}</td>
+              <td>{{obligation.passivity}}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   {% endif %}
 

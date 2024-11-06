@@ -36,32 +36,32 @@ SPDX-License-Identifier: AGPL-3.0-only -->
   {% include "cube/includes/list_nav.html" %}
   <p>The list of the software products that you develop internally.</p>
   <div class="table-container">
-  <table class="table is-striped is-hoverable is-fullwidth">
-    <thead>
-      <tr>
-        <th>Product</th>
-        <th>Categories</th>
-        <th>Description</th>
-        <th>Owner</th>
-        <th># of releases</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for product in object_list %}
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead>
         <tr>
-          <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
-          <td> {% for category in product.categories.all %} <a href="{% url 'cube:category_detail' category.id %}"><span class="tag is-dark">{{ category }}</span></a> {% endfor %}</td>
-          <td> {{ product.description|truncatechars:50 }}</td>
-          <td>{{product.owner}}</td>
-          <td>{{product.releases.all|length}}</td>
-          <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a>
-            {% if perms.cube.change_product %} | <a href="{% url "cube:product_update" product.id %}" target="_blank"><i class="far fa-edit"></i></a>{% endif %}
-          </td>
+          <th>Product</th>
+          <th>Categories</th>
+          <th>Description</th>
+          <th>Owner</th>
+          <th># of releases</th>
+          <th>Actions</th>
         </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {% for product in object_list %}
+          <tr>
+            <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
+            <td> {% for category in product.categories.all %} <a href="{% url 'cube:category_detail' category.id %}"><span class="tag is-dark">{{ category }}</span></a> {% endfor %}</td>
+            <td> {{ product.description|truncatechars:50 }}</td>
+            <td>{{product.owner}}</td>
+            <td>{{product.releases.all|length}}</td>
+            <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a>
+              {% if perms.cube.change_product %} | <a href="{% url "cube:product_update" product.id %}" target="_blank"><i class="far fa-edit"></i></a>{% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
   {% include "cube/includes/list_nav.html" %}
 {% endblock %}
