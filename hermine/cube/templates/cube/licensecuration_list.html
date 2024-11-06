@@ -40,53 +40,55 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 {% block content %}
   {% include "cube/includes/list_nav.html" %}
   <p>The list of corrections and confirmations of license information related to 3rd party components.</p>
-  <table class="table is-striped is-hoverable is-fullwidth">
-    <thead class="table is-bordered has-text-centered">
-      <tr>
-        <th colspan="3">Component</th>
-        <th rowspan="2">Stated license</th>
-        <th rowspan="2">Corrected license</th>
-        <th rowspan="2">Explanation</th>
-        <th rowspan="2">Updated</th>
-        <th rowspan="2">Actions</th>
-      </tr>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Versions</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for curation in object_list %}
+  <div class="table-container">
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead class="table is-bordered has-text-centered">
         <tr>
-          <td>{{ curation.component.name }}{{ curation.version.component.name }}</td>
-          <td>{{ curation.component.purl_type }}{{ curation.version.component.purl_type }}</td>
-          <td>{{ curation.version.version_number }}{{ curation.version_constraint }}</td>
-          <td>{{ curation.expression_in }}</td>
-          <td>
-            {% if curation.is_confirmation or curation.is_simplification %}
-              <i class="fas fa-check"></i> <em>Confirmed</em>
-            {% else %}
-              {{ curation.expression_out }}
-            {% endif %}
-          </td>
-          <td>{{ curation.explanation|truncatechars:50 }}</td>
-          <td>{{ curation.updated }} ({{ curation.author|default:"<em>author unknown</em>" }})</td>
-          <td>
-            {% if perms.cube.change_licensecuration %}
-              <a href="{%url 'cube:licensecuration_update' curation.id %}"><i class="far fa-edit"></i></a> |
-            {% endif %}
-            {% if perms.cube.export_licensecuration %}
-              {% if curation.is_ort_compatible %}
-                <a href="{%url 'cube:licensecuration_single_export' curation.id %}" title="Export as ORT curation file"><i class="fa fa-download"></i></a></td>
+          <th colspan="3">Component</th>
+          <th rowspan="2">Stated license</th>
+          <th rowspan="2">Corrected license</th>
+          <th rowspan="2">Explanation</th>
+          <th rowspan="2">Updated</th>
+          <th rowspan="2">Actions</th>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Versions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for curation in object_list %}
+          <tr>
+            <td>{{ curation.component.name }}{{ curation.version.component.name }}</td>
+            <td>{{ curation.component.purl_type }}{{ curation.version.component.purl_type }}</td>
+            <td>{{ curation.version.version_number }}{{ curation.version_constraint }}</td>
+            <td>{{ curation.expression_in }}</td>
+            <td>
+              {% if curation.is_confirmation or curation.is_simplification %}
+                <i class="fas fa-check"></i> <em>Confirmed</em>
               {% else %}
-                <i class="fas fa-ban" title="Curation is not compatible with ORT export format"></i>
+                {{ curation.expression_out }}
               {% endif %}
-            {% endif %}
-          </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+            </td>
+            <td>{{ curation.explanation|truncatechars:50 }}</td>
+            <td>{{ curation.updated }} ({{ curation.author|default:"<em>author unknown</em>" }})</td>
+            <td>
+              {% if perms.cube.change_licensecuration %}
+                <a href="{%url 'cube:licensecuration_update' curation.id %}"><i class="far fa-edit"></i></a> |
+              {% endif %}
+              {% if perms.cube.export_licensecuration %}
+                {% if curation.is_ort_compatible %}
+                  <a href="{%url 'cube:licensecuration_single_export' curation.id %}" title="Export as ORT curation file"><i class="fa fa-download"></i></a></td>
+                {% else %}
+                  <i class="fas fa-ban" title="Curation is not compatible with ORT export format"></i>
+                {% endif %}
+              {% endif %}
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
   {% include "cube/includes/list_nav.html" %}
 
 {% endblock %}
