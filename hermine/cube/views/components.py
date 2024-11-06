@@ -3,17 +3,17 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.db.models import Count
+from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views import generic
-from django.shortcuts import get_object_or_404, redirect
 
 from cube.forms.components import LicenseCurationCreateForm, LicenseCurationUpdateForm
 from cube.models import Component, LicenseCuration, Funding
-from cube.views.mixins import SearchMixin, SaveAuthorMixin, QuerySuccessUrlMixin
 from cube.utils.funding import get_fundings_from_purl
+from cube.views.mixins import SearchMixin, SaveAuthorMixin, QuerySuccessUrlMixin
 
 
 class ComponentListView(
@@ -76,8 +76,15 @@ class ComponentUpdateView(
 
 
 class LicenseCurationListView(
-    LoginRequiredMixin, PermissionRequiredMixin, generic.ListView
+    LoginRequiredMixin, PermissionRequiredMixin, SearchMixin, generic.ListView
 ):
+    search_fields = (
+        "expression_in",
+        "expression_out",
+        "component__name",
+        "version__component__name",
+        "version__purl",
+    )
     permission_required = "cube.view_licensecuration"
     paginate_by = 50
     model = LicenseCuration
