@@ -1130,6 +1130,159 @@ const docTemplate = `{
                 }
             }
         },
+        "/obligations/classifications": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Get all active obligation classifications from the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get all active obligation classifications",
+                "operationId": "GetAllObligationClassification",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active obligation classification only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationClassificationResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No obligation classifications in DB",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Create an obligation classification",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Create an obligation classification",
+                "operationId": "CreateObligationClassification",
+                "parameters": [
+                    {
+                        "description": "Obligation classification to create",
+                        "name": "obligation_classification",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationClassification"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationClassificationResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "409": {
+                        "description": "obligation classification already exists",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while creating new obligation classification",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/classifications/{classification}": {
+            "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Deactivate an obligation classification",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Deactivate obligation classification",
+                "operationId": "DeleteObligationClassification",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Obligation Classification",
+                        "name": "classification",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "cannot delete obligation classification 'GREEN' as it's still referenced by some obligations",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "obligation classification 'GREEN' not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while deleting obligation classification",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/obligations/export": {
             "get": {
                 "security": [
@@ -1274,8 +1427,7 @@ const docTemplate = `{
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": [],
-                        "{}": []
+                        "ApiKeyAuth": []
                     }
                 ],
                 "description": "Get all active obligation types from the service",
@@ -1293,7 +1445,7 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "boolean",
-                        "description": "Active obligation only",
+                        "description": "Active obligation type only",
                         "name": "active",
                         "in": "query",
                         "required": true
@@ -2350,15 +2502,36 @@ const docTemplate = `{
         },
         "models.ObligationClassification": {
             "type": "object",
+            "required": [
+                "classification",
+                "color"
+            ],
             "properties": {
                 "classification": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "GREEN"
                 },
                 "color": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "#00FF00"
+                }
+            }
+        },
+        "models.ObligationClassificationResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationClassification"
+                    }
                 },
-                "id": {
-                    "type": "integer"
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },
