@@ -33,53 +33,53 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% include "cube/includes/release_tabs.html" with active_tab="bom" object=release %}
   {% include "cube/includes/list_nav.html" %}
   <div class="table-container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Sub project</th>
-        <th>Scope</th>
-        <th>Component</th>
-        <th>Concluded License</th>
-        <th>Chosen License</th>
-        <th>Modification</th>
-        <th>Exploitation</th>
-        <th>Linking type</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for usage in object_list %}
+    <table class="table">
+      <thead>
         <tr>
-          <td><abbr title="{{ usage.project|truncatechars:50 }}">{{ usage.project|truncatechars:20 }}</abbr></td>
-          <td>{{ usage.scope }}</td>
-          <td style="word-break: break-all"><a href="{% url 'cube:component_detail' usage.version.component.id %}" >{{ usage.version }}</a></td>
-          <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr }}</td>
-          <td>{{ usage.license_expression }}</td>
-          <td>
-            {% if usage.component_modified == "Altered" %}
-              <span class="tag is-warning">
-            {% else %}
-              <span class="tag is-light">
-            {% endif %}
-            {{ usage.component_modified }}
-          </span>
-        </td>
-        <td>{{ usage.get_exploitation_display }}</td>
-        <td>{{ usage.linking }}</td>
-        <td>
-          {% if perms.cube.change_usage %}
-            <a href="{% url "cube:usage_update" usage.id %}" title="Last updated on: {{ usage.addition_date }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
-          {% endif %}{% if perms.cube.delete_usage %}
-            | <a href="{% url "cube:usage_delete" usage.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
-          {% endif %}
-          {% if usage.description %}
-            <a href="#" title="{{ usage.description }}"><span class="icon"><i class="fas fa-comment"></i></span></a>
-          {% endif %}
-        </td>
+          <th>Sub project</th>
+          <th>Scope</th>
+          <th>Component</th>
+          <th>Concluded License</th>
+          <th>Chosen License</th>
+          <th>Modification</th>
+          <th>Exploitation</th>
+          <th>Linking type</th>
+          <th>Actions</th>
         </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {% for usage in object_list %}
+          <tr>
+            <td><abbr title="{{ usage.project|truncatechars:50 }}">{{ usage.project|truncatechars:20 }}</abbr></td>
+            <td>{{ usage.scope }}</td>
+            <td style="word-break: break-all"><a href="{% url 'cube:component_detail' usage.version.component.id %}" >{{ usage.version }}</a></td>
+            <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr }}</td>
+            <td>{{ usage.license_expression }}</td>
+            <td>
+              {% if usage.component_modified == "Altered" %}
+                <span class="tag is-warning">
+              {% else %}
+                <span class="tag is-light">
+              {% endif %}
+              {{ usage.component_modified }}
+            </span>
+          </td>
+          <td>{{ usage.get_exploitation_display }}</td>
+          <td>{{ usage.linking }}</td>
+          <td>
+            {% if perms.cube.change_usage %}
+              <a href="{% url "cube:usage_update" usage.id %}" title="Last updated on: {{ usage.addition_date }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}{% if perms.cube.delete_usage %}
+              | <a href="{% url "cube:usage_delete" usage.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+            {% endif %}
+            {% if usage.description %}
+              <a href="#" title="{{ usage.description }}"><span class="icon"><i class="fas fa-comment"></i></span></a>
+            {% endif %}
+          </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
   {% include "cube/includes/list_nav.html" %}
 {% endblock %}

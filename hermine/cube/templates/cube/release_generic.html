@@ -29,43 +29,43 @@ SPDX-License-Identifier: AGPL-3.0-only
     {{ generic.description|linebreaks }}
 
     <div class="table-container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Subproject:Scope</th>
-          <th>Component (Version)</th>
-          <th>Linking</th>
-          <th>Exploitation</th>
-          <th>Modified</th>
-          <th>License of this version</th>
-          <th>License of this usage</th>
-          <th>Applicable Licenses</th>
-          <th>Edit</th>
-
-        </tr>
-      </thead>
-      <tbody>
-
-        {% for usage in usages %}
+      <table class="table">
+        <thead>
           <tr>
-            <td>{{ usage.project }}:{{ usage.scope }}</td>
-            <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a>({{ usage.version.version_number }})</td>
-            <td>{{ usage.linking }}</td>
-            <td>{{ usage.get_exploitation_display }}</td>
-            <td>{{ usage.modified|yesno:"yes,no,maybe" }}</td>
-            <td>{{ usage.version.effective_license}}</td>
-            <td>{{ usage.license_expression }}</td>
-            <td>{% for license_chosen in usage.licenses_chosen.all %}
-              <a href="{% url 'cube:license_detail' license_chosen.id %}"><span class="tag {{ license_chosen|licenseAllowedCSS }}">
-                {{ license_chosen.spdx_id }}
-              </span></a>
-            {% endfor %}
-            </td>
-            <td><a href="{% url 'cube:usage_update' usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <th>Subproject:Scope</th>
+            <th>Component (Version)</th>
+            <th>Linking</th>
+            <th>Exploitation</th>
+            <th>Modified</th>
+            <th>License of this version</th>
+            <th>License of this usage</th>
+            <th>Applicable Licenses</th>
+            <th>Edit</th>
+
           </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+
+          {% for usage in usages %}
+            <tr>
+              <td>{{ usage.project }}:{{ usage.scope }}</td>
+              <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a>({{ usage.version.version_number }})</td>
+              <td>{{ usage.linking }}</td>
+              <td>{{ usage.get_exploitation_display }}</td>
+              <td>{{ usage.modified|yesno:"yes,no,maybe" }}</td>
+              <td>{{ usage.version.effective_license}}</td>
+              <td>{{ usage.license_expression }}</td>
+              <td>{% for license_chosen in usage.licenses_chosen.all %}
+                <a href="{% url 'cube:license_detail' license_chosen.id %}"><span class="tag {{ license_chosen|licenseAllowedCSS }}">
+                  {{ license_chosen.spdx_id }}
+                </span></a>
+              {% endfor %}
+              </td>
+              <td><a href="{% url 'cube:usage_update' usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
 {% endblock %}
