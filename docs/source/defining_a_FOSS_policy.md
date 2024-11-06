@@ -17,47 +17,50 @@ The analysis of a licence is divided in three parts:
 ### Characterics pertaining to the identity of the licence
 
 **SPDX Identifier:**  
-The [short SPDX ID](https://spdx.dev/ids/) of the licence, including possible exceptions.  
-E.g. : `GPL-3.0-only WITH GCC-exception-3.1`
+SPDX is an open standard for communicating software bill of material information, including components, licenses, copyrights, and security references. SPDX short-form identifiers permits to communicate FOSS license information in a simple, efficient, portable and machine-readable manner
 
-**Name:**  
-The full name, as defined by the SPDX standard
-
-**Url:**  
-The reference URL of the licence
-
+**Copyright notice:**
+Copyright notice is a legal form of notice to inform the public that the work is protected by copyright law and potentially gives information about the copyright owner, the date of publication etc.   
 **Copyleft:**  
-The type of reciprocity clause of the licence.  
+This clause present in the Open Source licenses imposes to the one who uses and/or modifies a component under the aforementioned license to redistribute/use it under the terms of the same license.  
 Possible choices are:
-  - Persmissive
-  - Strong copyleft
-  - Weak copyleft
-  - Strong network copyleft
-  - Weak network copyleft
+  - Persmissive:  When the open source license does not require redistribution/reuse of the component under the terms of the same agreement.
+  - Strong copyleft: Derivative works or works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.
+  - Weak copyleft: Redistribution of the software or work, modified or not, can only be done under the initial license but new components can be added under other licenses, see proprietary license.
+  - Strong network copyleft: Derivative works or works based on the Open Source Software must be made available to users interacting with your application remotely through a computer network under the initial license or another license approved by the initial license.
+  - Weak network copyleft: Redistribution of the software or work, modified or not, can only be made available to users interacting with your application remotely through a computer network under the initial license but new components can be added under other licenses, see proprietary license.
 
 **FOSS:**  
-If the licence if considered *Free or Open Source software*.  
+FOSS is the official definition of the Free Software Foundation or the Open Source Initiative.
 Possible values are:
   - We consider it is FOSS
   - We consider it is NOT FOSS
   - FOSS - deduced (when it's approved by the FSF or the OSI)
   - NOT FOSS - deduced (when the FSF or the OSI have explicitely declared it as such)
 
+**Permissive:** 
+When the open source license does not require redistribution/reuse of the component under the terms of the same agreement.
+
 **Law choice:**  
-The choice of applicable law
+Provision of the Licence Agreement establishing the law applicable to the Licence Agreement.
 
 **Venue choice:**  
-The choice of venue
+Provision of the Licence Agreement establishing the location of competent courts in case of litigation relating to the Licence Agreement.
 
 **Disclaimer of Warranty:**  
-If the licence has a warranty disclaimer
+A provision in the Licence Agreement aiming at excluding or limiting certain warranties over the said component.
 
 **Limitation of Liability:**  
-If the licence has a non-liability clause
+Provision in the contract that reduces or eliminates the possibility of being held liable for an event related to a product or service offered
 
-**Exact text of the license:**  
-The whole text of the licence, in case it is not referenced on the SPDX website.
+**Full Clause**	
+Full clause	Indicates whether the no warranty and limitation of liability clause is fulfilled.
 
+**AND:** 
+Term indicating that the right holder has submitted the component to multiple licences at once
+
+**OR:**
+Term that indicates that the owner of the right to subject the component to multiple licences from which the user can choose 
 ### Foss Policy 
 
 **Review status**  
@@ -67,8 +70,9 @@ The possible choices are:
 - To discuss
 - Pending
 
-**OSS Policy**  
-The acceptability of the licence.  
+**FOSS Policy status**  
+The status of the license as defined by the Open Source policy. 
+
 Possible choices are:
 - Always allowed (Green)
 - Never allowed (Red)
@@ -76,46 +80,68 @@ Possible choices are:
 
 Note: the Policy will remain Grey until it has been reviewed
 
-**OSS Policy explanation**  
-The motivation for non green choices, and the acceptable contexts for orange licences. 
-
-**Comment**  
-To explain the interpretation of the licence
 
 ### Conditions of use
 
 **Patent grant**  
-True if the licence contains a patent grant, along with the copyright grant.
+A specific situation in which the text of a license also grants an exclusive, worldwide license on the patents to make, have made, use and sell the licensed products.
+**Patent Peace:**
+Enforcing patents against licensees or making a non-infringement agreement contrary to the license is prohibited.
 
 **Ethical clause**  
-True if the licence contains an ethical clause (e.g. the JSON Licence)
+ A provision in the Licence Agreement setting certain rules relating to ethical practices and laws that may apply.
 
 **Only non-commercial use**  
-True if the licence allows only non-commercial uses (e.g. Creative commons with a NC clause)
+Provision in thecontractt prohibiting its use is subject to a financial consideration or a commercial advantage.
 
+### Specific technical notions
+
+**Dependencies:**
+Software element necessary for the execution of a program. A distinction is made between direct dependencies (dependencies that are called explicitly by the application that uses them) and indirect dependencies (called "dependencies of dependencies" of the application).
+**Network access:** 
+Functionalities provided by the network (back-end).
+**Non-source code distribution:** 
+Distribution in a form (e.g. binaries/object code/obfuscated code, etc.) which is not the preferred form for carrying out modifications.
+**Source code Distribution:** 
+Distribution in a preferred form for making changes (source code).
+**Source code and non source code distribution:** 
+Distribution  in a preferred form for making changes (source code) and  in a form (e.g. binaries/object code/obfuscated code, etc.) which is not the preferred form for carrying out modifications.
+**To normalize:**	
+Check that components have valid SPDX license expressions during the Step 1 and add curation if not.
+**Versions:**	
+Versions refer to components (release refer to a product).
 
 ### Other optional information
 
 The information below can be usefull, but is considered secondary from an operational point of view (only available in the Django Admnin interface).
 
-- **categories:** Currently, it is just a text to receive free text, that could be a comma separated list, for instance.
-- **steward:** The name of the entity that is allowed to create new versions of the licence (e.g. : the Eclipse Foundation for the EPL-2.0)
-- **osi_approved:** If the licence has been approved by the OSI
-- **fsf_approved:** If the licence has been approved by the FSF
-- **non_tivoisation:** True if the licence contains a clause against [tivoization](https://en.wikipedia.org/wiki/Tivoization) (e.g. GPL-3.0-only)
+- **categories:** 
+- **steward:** 
+- **osi_approved:** 
+- **fsf_approved:** 
+- **non_tivoisation:** 
 
-## Authorised contexts
+## Authorised contexts and specific derogations
+
 For licences that are allowed only in certain contexts, it is possible to define them automatically if they only depend on technical criteria:
 - The type of linking between the dependency and your own code
-- The type of exploitation that will be made of the dependency
+- The type of exploitation that will be made of the dependency : the exploitation mode is how the software component is shared with a) third parties or b) inside a company.
 - The modification status of the dependency
 - The scope in which the dependency is used
-- A category to which the product belongs
+- A category to which the product belongs: a category makes it possible to group together several products sharing a common characteristic that makes sense at the company level. 
 
+**An authorised context** is context in which a licence is authorized according to technical or business criteria. 
+
+**A specific derogations** allow the use of a licence that is not authorised a priori in the context of a specific project or component. They are granted on a case-by-case basis by the company's ad hoc entity, justified, etc.
 
 ## Obligations and compliance actions
 
 ### Licence obligations
+
+**Core obligation:** 
+Set of obligations an organization systematically applies according to its open source compliance policy. 
+**Core status:** 
+Status indicating whether or not the obligation is in the core.
 
 #### Text of the obligations
 
@@ -127,8 +153,8 @@ For instance, in the BSD-3-Clause, this would be typed :
 #### Active/Passive obligation
 
 **Active Obligations**
+Active obligations are those that require the team to act.
 
-Obligations that require specific actions to be in compliance with the licence.
 
 For instance, in the BSD-3-Clause, the following obligation is active:
 
@@ -136,7 +162,7 @@ For instance, in the BSD-3-Clause, the following obligation is active:
 
 **Passive Obligations**
 
-Obligations that require that you refrain from doing something.
+Passive obligations are those that can be met without specific action.
 
 For instance, in the BSD-3-Clause, the following obligation is passive:
 
@@ -146,14 +172,15 @@ For instance, in the BSD-3-Clause, the following obligation is passive:
 
 An active obligation can be triggered by the combination of two factors. The first one is related to the exploitation of the software, the second one to its modification status. 
 
-- **Exploitation**: Indicates which scenario triggers the obligation
+- **Exploitation**: 
   - Distribution as source code
   - Distribution as non source form
   - Providing access through the network  
 
 If an obligation is triggered by two different types of exploitation, you'll have to create two instances of this obligation, one for each triggering scenario.
 
-- **Modification**: Indicates if the obligations applies only if the component is modified, only if it is not modified or in both cases.
+- **Modification**: 
+Indicates if the obligations applies only if the component is modified, only if it is not modified or in both cases.
 
 ### Compliance actions
 
@@ -166,7 +193,5 @@ Some compliance actions are very common and have a low cost of implementations. 
 The set of such compliance actions are named "core compliance actions".
 
 So if a release of a product has all its compliance actions in the core, you know that you don't have any specific action to perform to reach compliance.
-
-
 
 
