@@ -47,7 +47,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                   {{ derogation.license.spdx_id }}
                 </span></a>
               </td>
-              <td>{{ derogation.category|default:"<em>Any</em>" }}</td>
+              <td>{% if derogation.category%}<a href="{% url 'cube:category_detail' derogation.category.id %}">{{ derogation.category }}</a>{% else %}<em>Any</em>{% endif %}</td>
               <td>{{ derogation.version|default:derogation.component|default:"<em>Any</em>" }}</td>
               <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
               <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
@@ -70,6 +70,3 @@ SPDX-License-Identifier: AGPL-3.0-only
   </div>
 
 {% endblock %}
-
-
-

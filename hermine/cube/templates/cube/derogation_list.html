@@ -49,7 +49,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               <td> <a href="{% url 'cube:license_detail' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
                 {{ derogation.license.spdx_id }}
               </span></a></td>
-              <td>{{ derogation.release|default:derogation.product }}</td>
+              <td>{% if derogation.product %}<a href="{% url 'cube:product_detail' derogation.product.id %}">{{ derogation.product }}</a>{% endif %}{% if derogation.release %} <a href="{% url 'cube:release_summary' derogation.release.id %}">{{ derogation.release }}</a>{% endif %}</td>
               <td>{{ derogation.version|default:derogation.component|default:"<em>Any</em>" }}</td>
               <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
               <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
@@ -71,6 +71,3 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
   </div>
 {% endblock %}
-
-
-
