@@ -24,6 +24,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   {% if confirmed_usages %}
     <h5 class="title is-5">Confirmed expressions</h5>
+    <div class="table-container">
     <table class="table">
       <thead>
         <tr>
@@ -66,10 +67,12 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
+    </div>
   {% endif %}
 
   {% if corrected_usages %}
     <h5 class="title is-5">Corrected expressions</h5>
+    <div class="table-container">
     <table class="table">
       <thead>
         <tr>
@@ -114,6 +117,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
+    </div>
   {% endif %}
 
 {% endblock %}

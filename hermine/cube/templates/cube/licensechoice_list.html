@@ -33,6 +33,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
   {% include "cube/includes/list_nav.html" %}
   <p>This is the list of <em>global</em> license choices, which apply on all components, products, scope or exploitation.
     See <a href="{% url 'admin:cube_licensechoice_changelist' %}"> all license choices</a>.</p>
+  <div class="table-container">
   <table class="table is-striped is-hoverable is-fullwidth">
     <thead>
       <tr>
@@ -59,6 +60,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
       {% endfor %}
     </tbody>
   </table>
+  </div>
   {% include "cube/includes/list_nav.html" %}
 
 {% endblock %}
