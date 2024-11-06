@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <div class="field has-addons">
               <div class="control">
                 <label class="is-sr-only" for="search_field">Search</label>
-                <input id="search_field" class="input is-small" name="search" placeholder="Search" value="{{ search_form.search.value }}" />
+                <input id="search_field" class="input is-small" name="search" placeholder="Search" value="{{ field.value|default_if_none:"" }}" />
               </div>
               <div class="control">
                 <button class="button is-small  " type="submit">Search</button>
@@ -49,7 +49,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% if page_obj.number > 2 %}
             <li>
               <a class="pagination-link"
-                 href="?page=1&search={{ query }}"
+                 href="{% querystring page=1 %}"
                  aria-label="Go to first page"
               >
                 1
@@ -64,7 +64,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% if page_obj.has_previous %}
             <li>
               <a class="pagination-link"
-                 href="?page={{ page_obj.previous_page_number }}&search={{ query }}"
+                 href="{% querystring page=page_obj.previous_page_number %}"
                  aria-label="Go to page {{ page_obj.previous_page_number }}"
               >
                 {{ page_obj.previous_page_number }}
@@ -79,7 +79,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% if page_obj.has_next %}
             <li>
               <a class="pagination-link"
-                 href="?page={{ page_obj.next_page_number }}&search={{ query }}"
+                 href="{% querystring page=page_obj.next_page_number %}"
                  aria-label="Go to page {{ page_obj.next_page_number }}"
               >
                 {{ page_obj.next_page_number }}
@@ -94,7 +94,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% if page_obj.number < page_obj.paginator.num_pages|add:"-1" %}
             <li>
               <a class="pagination-link"
-                 href="?page={{ page_obj.paginator.num_pages }}&search={{ query }}"
+                 href="{% querystring page=page_obj.paginator.num_pages %}"
                  aria-label="Go to last page"
               >
                 {{ page_obj.paginator.num_pages }}
