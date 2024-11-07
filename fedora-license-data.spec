@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.60
+Version:        1.61
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,9 @@ make check-grammar
 
 
 %changelog
+* Thu Nov 07 2024 Miroslav Suchý <msuchy@redhat.com> 1.61-1
+- Revert "add LicenseRef-BSD-3-Clause-firmware"
+
 * Thu Nov 07 2024 Miroslav Suchý <msuchy@redhat.com> 1.60-1
 - add LicenseRef-Intel-firmware
 - add public domain dedication for oflb-goudy-bookletter-1911-fonts
