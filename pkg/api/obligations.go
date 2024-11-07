@@ -63,7 +63,7 @@ func GetAllObligation(c *gin.Context) {
 		return
 	}
 	query := db.DB.Model(&models.Obligation{})
-	query.Where("active = ?", parsedActive)
+	query.Where(&models.Obligation{Active: &parsedActive})
 
 	_ = utils.PreparePaginateResponse(c, query, &models.ObligationResponse{})
 
@@ -174,13 +174,13 @@ func CreateObligation(c *gin.Context) {
 
 	if result.Error != nil {
 		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
+			Status:    http.StatusBadRequest,
 			Message:   "Failed to create obligation",
 			Error:     result.Error.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusInternalServerError, er)
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
@@ -277,13 +277,13 @@ func UpdateObligation(c *gin.Context) {
 		return nil
 	}); err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
+			Status:    http.StatusBadRequest,
 			Message:   "Failed to update license",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusInternalServerError, er)
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
@@ -463,13 +463,13 @@ func ImportObligations(c *gin.Context) {
 	decoder := json.NewDecoder(file)
 	if err := decoder.Decode(&obligations); err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
+			Status:    http.StatusBadRequest,
 			Message:   "invalid json",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusInternalServerError, er)
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
@@ -491,7 +491,7 @@ func ImportObligations(c *gin.Context) {
 				FirstOrCreate(&oldObligation)
 			if result.Error != nil {
 				res.Data = append(res.Data, models.LicenseError{
-					Status:    http.StatusInternalServerError,
+					Status:    http.StatusBadRequest,
 					Message:   fmt.Sprintf("Failed to create/update obligation: %s", result.Error.Error()),
 					Error:     *ob.Topic,
 					Path:      c.Request.URL.Path,
@@ -504,7 +504,7 @@ func ImportObligations(c *gin.Context) {
 				ctx := context.WithValue(context.Background(), models.ContextKey("oldObligation"), &oldObligation)
 				if err := tx.WithContext(ctx).Omit("Licenses", "Topic").Clauses(clause.Returning{}).Updates(&newObligation).Error; err != nil {
 					res.Data = append(res.Data, models.LicenseError{
-						Status:    http.StatusInternalServerError,
+						Status:    http.StatusBadRequest,
 						Message:   fmt.Sprintf("Failed to update obligation: %s", err.Error()),
 						Error:     *ob.Topic,
 						Path:      c.Request.URL.Path,
@@ -728,7 +728,7 @@ func GetAllObligationPreviews(c *gin.Context) {
 		return
 	}
 
-	if err = db.DB.Joins("Type").Where("active = ?", parsedActive).Find(&obligations).Error; err != nil {
+	if err = db.DB.Joins("Type").Where(&models.Obligation{Active: &parsedActive}).Find(&obligations).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "Unable to fetch obligations",

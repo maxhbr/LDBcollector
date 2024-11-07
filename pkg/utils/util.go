@@ -446,6 +446,19 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
+	} else if audit.Type == "obligationType" || audit.Type == "ObligationType" {
+		audit.Entity = &models.ObligationType{}
+		if err := db.DB.Where(&models.ObligationType{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "obligation type corresponding with this audit does not exist",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return err
+		}
 	}
 	return nil
 }
