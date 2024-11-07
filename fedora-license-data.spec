@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.59
+Version:        1.60
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,29 @@ make check-grammar
 
 
 %changelog
+* Thu Nov 07 2024 Miroslav Suchý <msuchy@redhat.com> 1.60-1
+- add LicenseRef-Intel-firmware
+- add public domain dedication for oflb-goudy-bookletter-1911-fonts
+- add public domain dedication for nacl
+- add Apache-2.0 WITH mxml-exception
+- add public domain dedication for nec2c
+- add any-OSI-perl-modules
+- add public domain dedication for ogre
+- add text of Unsplash license
+- add LicenseRef-Intel-firmware
+- add SGI-B-1.1 as not-allowed
+- add public domain dedication for libgenht
+- add ultra permissive findings for lyx
+- add public domain findings for golang-github-xi2-xz
+- add UltraPermissive dedication of package samcoupe-rom
+- add UltraPermissive dedication of package radial
+- add LicenseRef-MIT-CRL-Xim license as not-allowed
+- add public domain findings for icon
+- add public domain findings for jhead
+- add public domain findings for mingw-pdcurses
+- add LicenseRef-BASS (beneath a steel sky) as not-allowed
+- add public domain and ultra permissive findings for rubygem-ruby-shadow
+
 * Thu Oct 24 2024 Miroslav Suchý <msuchy@redhat.com> 1.59-1
 - add public domain findings for sdl-telnet
 - add public domain findings for libmodplug
