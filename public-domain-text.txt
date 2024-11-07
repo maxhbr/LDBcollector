@@ -259,6 +259,48 @@ Ants Is free, public domain -- do with it what you want (it would be
 nice if you gave me credit for the original game).
 '''
 
+package = ogre
+location = https://github.com/OGRECave/ogre/blob/e90817bd1cb73d709843d2ebe32fae31161617ea/Components/Volume/src/OgreVolumeIsoSurfaceTablesMC.h#L34
+text = '''
+Marching Cubes tables from the public domain code found on
+http://local.wasp.uwa.edu.au/~pbourke/geometry/polygonise/
+in
+http://paulbourke.net/geometry/polygonise/marchingsource.cpp
+Thanks!
+'''
+
+package = ogre
+location = https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreCylinderEmitter.h#L28
+           https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreEllipsoidEmitter.h
+           https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreRingEmitter.h#L28
+           https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreHollowEllipsoidEmitter.h#L28
+           https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreEllipsoidEmitter.h#L28
+text = '''
+Original author: Tels <http://bloodgate.com>, released as public domain
+'''
+
+package = ogre
+location = Tools/MaterialEditor/wxscintilla_1.69.2/src/scintilla/src/LexGen.py
+text = '''
+Released to the public domain.
+'''
+
+package = ogre
+location = Tools/MaterialEditor/wxscintilla_1.69.2/src/scintilla/src/RESearch.h
+           Tools/MaterialEditor/wxscintilla_1.69.2/src/scintilla/src/StyleContext.cxx
+text = '''
+This file is in the public domain.
+'''
+
+package = ogre
+location = OgreMain/src/nedmalloc/malloc.c.h
+text = '''
+This is a version (aka dlmalloc) of malloc/free/realloc written by
+Doug Lea and released to the public domain, as explained at
+http://creativecommons.org/licenses/publicdomain.  Send questions,
+comments, complaints, performance data, etc to dl@cs.oswego.edu
+'''
+
 package = filedrop
 location = https://iharder.sourceforge.net/current/java/filedrop/
 text = '''
