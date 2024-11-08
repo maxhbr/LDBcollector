@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-CRC32"
-status = [ "allowed" ]
+status = [ "not-allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/CRC32
@@ -17,3 +17,6 @@ legacy-abbreviation = [
     "CRC32"
 ]
 
+notes = '''
+deprecated, use LicenseRef-Fedora-UltraPermissive instead.
+'''
