@@ -293,10 +293,19 @@ type ObligationTypeResponse struct {
 	Meta   *PaginationMeta  `json:"paginationmeta"`
 }
 
+// ObligationClassification represents one of the possible of obligation classification values
 type ObligationClassification struct {
-	Id             int64  `gorm:"primary_key"`
-	Classification string `gorm:"unique;not null"`
-	Color          string `gorm:"unique; not null"`
+	Id             int64  `gorm:"primary_key" json:"-"`
+	Classification string `gorm:"unique;not null" validate:"required,uppercase" example:"GREEN" json:"classification"`
+	Color          string `gorm:"unique; not null" validate:"required,hexcolor" example:"#00FF00" json:"color"`
+	Active         *bool  `gorm:"not null;default:true" json:"-"`
+}
+
+// ObligationClassificationResponse represents the response format for obligation classification data.
+type ObligationClassificationResponse struct {
+	Status int                        `json:"status" example:"200"`
+	Data   []ObligationClassification `json:"data"`
+	Meta   *PaginationMeta            `json:"paginationmeta"`
 }
 
 // Obligation represents an obligation record in the database.
@@ -359,9 +368,11 @@ func (o *Obligation) BeforeCreate(tx *gorm.DB) (err error) {
 		}
 		allClassifications := ""
 		for i := 0; i < len(obClassifications); i++ {
-			allClassifications += fmt.Sprintf(" %s", obClassifications[i].Classification)
-			if o.Classification.Classification == obClassifications[i].Classification {
-				o.Classification = &obClassifications[i]
+			if *obClassifications[i].Active {
+				allClassifications += fmt.Sprintf(" %s", obClassifications[i].Classification)
+				if o.Classification.Classification == obClassifications[i].Classification {
+					o.Classification = &obClassifications[i]
+				}
 			}
 		}
 		if o.Classification.Id == 0 {
@@ -431,9 +442,11 @@ func (o *Obligation) BeforeUpdate(tx *gorm.DB) (err error) {
 		}
 		allClassifications := ""
 		for i := 0; i < len(obClassifications); i++ {
-			allClassifications += fmt.Sprintf(" %s", obClassifications[i].Classification)
-			if o.Classification.Classification == obClassifications[i].Classification {
-				o.Classification = &obClassifications[i]
+			if *obClassifications[i].Active {
+				allClassifications += fmt.Sprintf(" %s", obClassifications[i].Classification)
+				if o.Classification.Classification == obClassifications[i].Classification {
+					o.Classification = &obClassifications[i]
+				}
 			}
 		}
 		if o.Classification.Id == 0 {
