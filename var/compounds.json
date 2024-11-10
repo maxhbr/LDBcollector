@@ -25,8 +25,8 @@
                 "GNU General Public License, Version 2, with the Classpath Exception",
                 "GPL-2.0-only WITH Classpath Exception",
                 "GPL-2.0-only WITH Classpath exception",
-              "GPL 2 + classpath exception",
-              "GPL-2.0-only WITH classpath exception"
+                "GPL 2 + classpath exception",
+                "GPL-2.0-only WITH classpath exception"
             ]
         },
         {
@@ -81,7 +81,8 @@
                 "GPL v3 w/Runtime exception",
                 "GCC Runtime Library Exception 3.1 to GPL 3.0",
                 "GNU General Public License v3.0 w/GCC Runtime Library exception",
-                "GPLv3 + GCC Runtime Library Exception version 3.1"
+                "GPLv3 + GCC Runtime Library Exception version 3.1",
+                "GPL 3.0 w/RTE"
             ],
             "compatibility_as": "0BSD"
         },
