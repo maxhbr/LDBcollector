@@ -67,6 +67,14 @@ files.
 This software is provided "as is", without any warranty.
 '''
 
+package = python-nine
+location = https://github.com/nandoflorestan/nine/blob/master/LICENSE.rst
+text = '''
+I, the copyright holder of this work, hereby release it into the public domain. This applies worldwide.
+
+In case this is not legally possible, I grant any entity the right to use, modify and redistribute this work for any purpose, without any conditions.
+'''
+
 package = sdl-telnet
 location = https://github.com/SDL-Hercules-390/telnet/blob/master/README.md?plain=1#L31
 text = '''
