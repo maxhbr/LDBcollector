@@ -243,11 +243,16 @@
             ],
             "problem": "OSI has approved many licenses. You It is not possible to determine which license is meant with this information."
         },
-        "SIL Open Font License ": {
+        "SIL Open Font License": {
             "aliases": [
                 "SIL OPEN FONT LICENSE"
             ],
             "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+        },
+        "Permissive": {
+            "aliases": [
+            ],
+            "problem": "This is a class of licenses and not a license."
         },
         "Python Software Foundation License": {
             "aliases": [
