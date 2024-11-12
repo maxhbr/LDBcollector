@@ -20,3 +20,4 @@ attic
 resources/logback-test.xml
 .clj-kondo/.cache
 .nvd
+.DS_Store
