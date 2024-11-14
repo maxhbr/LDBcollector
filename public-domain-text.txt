@@ -67,6 +67,12 @@ files.
 This software is provided "as is", without any warranty.
 '''
 
+package = perl-Math-Expression-Evaluator
+location = https://metacpan.org/pod/Math::Expression::Evaluator::Lexer
+text = '''
+However all code examples are to be public domain, so you can use it in any way you want to.
+'''
+
 package = python-nine
 location = https://github.com/nandoflorestan/nine/blob/master/LICENSE.rst
 text = '''
