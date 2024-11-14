@@ -339,8 +339,11 @@ Released to the public domain.
 '''
 
 package = ogre
+          perl-MaxMind-DB-Reader-XS
 location = Tools/MaterialEditor/wxscintilla_1.69.2/src/scintilla/src/RESearch.h
            Tools/MaterialEditor/wxscintilla_1.69.2/src/scintilla/src/StyleContext.cxx
+           https://github.com/maxmind/MaxMind-DB-Reader-XS/blob/main/c/perl_math_int128.c#L2
+           https://github.com/maxmind/MaxMind-DB-Reader-XS/blob/main/c/perl_math_int64.c#L2
 text = '''
 This file is in the public domain.
 '''
