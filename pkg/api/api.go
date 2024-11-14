@@ -114,7 +114,7 @@ func Router() *gin.Engine {
 				licenses.GET("/preview", GetAllLicensePreviews)
 				licenses.POST("", CreateLicense)
 				licenses.PATCH(":shortname", UpdateLicense)
-				licenses.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), ImportLicenses)
+				licenses.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), ImportLicenses)
 			}
 			search := authorizedv1.Group("/search")
 			{
@@ -122,13 +122,13 @@ func Router() *gin.Engine {
 			}
 			users := authorizedv1.Group("/users")
 			{
-				users.GET("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetAllUser)
+				users.GET("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.GetAllUser)
 				users.GET("/profile", auth.GetUserProfile)
-				users.GET(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetUser)
-				users.POST("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.CreateUser)
+				users.GET(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.GetUser)
+				users.POST("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.CreateUser)
 				users.PATCH("", auth.UpdateProfile)
-				users.PATCH(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.UpdateUser)
-				users.DELETE(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.DeleteUser)
+				users.PATCH(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.UpdateUser)
+				users.DELETE(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.DeleteUser)
 			}
 			obligations := authorizedv1.Group("/obligations")
 			{
@@ -138,7 +138,7 @@ func Router() *gin.Engine {
 				obligations.GET(":topic/audits", GetObligationAudits)
 				obligations.GET("export", ExportObligations)
 				obligations.POST("", CreateObligation)
-				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), ImportObligations)
+				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), ImportObligations)
 				obligations.PATCH(":topic", UpdateObligation)
 				obligations.DELETE(":topic", DeleteObligation)
 				obligations.GET("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationType)
@@ -226,18 +226,18 @@ func Router() *gin.Engine {
 			}
 			users := authorizedv1.Group("/users")
 			{
-				users.GET("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetAllUser)
+				users.GET("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.GetAllUser)
 				users.GET("/profile", auth.GetUserProfile)
-				users.GET(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetUser)
-				users.POST("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.CreateUser)
-				users.PATCH(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.UpdateUser)
+				users.GET(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.GetUser)
+				users.POST("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.CreateUser)
+				users.PATCH(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.UpdateUser)
 				users.PATCH("", auth.UpdateProfile)
-				users.DELETE(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.DeleteUser)
+				users.DELETE(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), auth.DeleteUser)
 			}
 			obligations := authorizedv1.Group("/obligations")
 			{
 				obligations.POST("", CreateObligation)
-				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), ImportObligations)
+				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), ImportObligations)
 				obligations.PATCH(":topic", UpdateObligation)
 				obligations.DELETE(":topic", DeleteObligation)
 				obligations.GET("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationType)

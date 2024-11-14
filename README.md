@@ -119,7 +119,7 @@ psql -h localhost -p 5432 -U fossy -d fossology
 
 Run the following query to create the first user.
 ```sql
-INSERT INTO users (username, userpassword, userlevel) VALUES ('<username>', '<password>', 'admin'); 
+INSERT INTO users (username, userpassword, userlevel, display_name, user_email) VALUES ('<username>', '<password>', 'SUPER_ADMIN', '<display_name>', '<user_email>');
 ```
 
 ### Generating Swagger Documentation

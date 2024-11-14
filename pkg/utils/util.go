@@ -8,6 +8,7 @@
 package utils
 
 import (
+	"context"
 	"encoding/base64"
 	"encoding/json"
 	"errors"
@@ -15,6 +16,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"reflect"
 	"strconv"
 	"strings"
 	"time"
@@ -201,7 +203,7 @@ const (
 	IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
 )
 
-func InsertOrUpdateLicenseOnImport(tx *gorm.DB, license *models.LicenseDB, externalRefs *models.UpdateExternalRefsJSONPayload) (string, LicenseImportStatusCode, *models.LicenseDB, *models.LicenseDB) {
+func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *models.UpdateExternalRefsJSONPayload, username string) (string, LicenseImportStatusCode) {
 	var message string
 	var importStatus LicenseImportStatusCode
 	var newLicense, oldLicense models.LicenseDB
@@ -211,58 +213,78 @@ func InsertOrUpdateLicenseOnImport(tx *gorm.DB, license *models.LicenseDB, exter
 	if err := validate.Struct(license); err != nil {
 		message = fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag())
 		importStatus = IMPORT_FAILED
-		return message, importStatus, &oldLicense, &newLicense
+		return message, importStatus
 	}
 
-	result := tx.
-		Where(&models.LicenseDB{Shortname: license.Shortname}).
-		Attrs(license).
-		FirstOrCreate(&oldLicense)
-	if result.Error != nil {
-		message = fmt.Sprintf("failed to create license: %s", result.Error.Error())
-		importStatus = IMPORT_FAILED
-		return message, importStatus, &oldLicense, &newLicense
-	} else if result.RowsAffected == 0 {
-		// case when license exists in database and is updated
-
-		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
-		if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", &externalRefs.ExternalRef)).Error; err != nil {
-			message = fmt.Sprintf("failed to update license: %s", err.Error())
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
+		ctx := context.WithValue(context.Background(), models.ContextKey("user"), username)
+		result := tx.WithContext(ctx).
+			Where(&models.LicenseDB{Shortname: license.Shortname}).
+			Attrs(license).
+			FirstOrCreate(&oldLicense)
+		if result.Error != nil {
+			message = fmt.Sprintf("failed to import license: %s", result.Error.Error())
 			importStatus = IMPORT_FAILED
-			return message, importStatus, &oldLicense, &newLicense
-		}
+			return errors.New(message)
+		} else if result.RowsAffected == 0 {
+			// case when license exists in database and is updated
 
-		// https://github.com/go-gorm/gorm/issues/3938: BeforeSave hook is called on the struct passed in .Model()
-		// Cannot pass empty newLicense struct in .Model() as all fields will be empty and no validation will happen
-		newLicense = *license
+			// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
+			if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", &externalRefs.ExternalRef)).Error; err != nil {
+				message = fmt.Sprintf("failed to update license: %s", err.Error())
+				importStatus = IMPORT_FAILED
+				return errors.New(message)
+			}
 
-		// Update all other fields except external_ref and rf_shortname
-		query := tx.Model(&newLicense).Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("external_ref", "rf_shortname")
+			// https://github.com/go-gorm/gorm/issues/3938: BeforeSave hook is called on the struct passed in .Model()
+			// Cannot pass empty newLicense struct in .Model() as all fields will be empty and no validation will happen
+			newLicense = *license
 
-		// Do not update text in import if it was modified manually
-		if *oldLicense.Flag == 2 {
-			query = query.Omit("rf_text")
-		}
+			// Update all other fields except external_ref and rf_shortname
+			query := tx.Model(&newLicense).Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("external_ref", "rf_shortname")
 
-		if err := query.Clauses(clause.Returning{}).Updates(&newLicense).Error; err != nil {
-			message = fmt.Sprintf("failed to update license: %s", err.Error())
-			importStatus = IMPORT_FAILED
-			return message, importStatus, &oldLicense, &newLicense
-		}
+			// Do not update text in import if it was modified manually
+			if *oldLicense.Flag == 2 {
+				query = query.Omit("rf_text")
+			}
 
-		if *newLicense.Flag == 2 {
-			message = "all fields except text were updated. text was updated manually and cannot be overwritten in an import."
-			importStatus = IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
-			// error is not returned here as it will rollback the transaction
+			if err := query.Clauses(clause.Returning{}).Updates(&newLicense).Error; err != nil {
+				message = fmt.Sprintf("failed to update license: %s", err.Error())
+				importStatus = IMPORT_FAILED
+				return errors.New(message)
+			}
+
+			if *newLicense.Flag == 2 {
+				message = "all fields except text were updated. text was updated manually and cannot be overwritten in an import."
+				importStatus = IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
+				// error is not returned here as it will rollback the transaction
+			} else {
+				importStatus = IMPORT_LICENSE_UPDATED
+			}
+
+			if err := AddChangelogsForLicenseUpdate(tx, username, &newLicense, &oldLicense); err != nil {
+				message = fmt.Sprintf("failed to update license: %s", err.Error())
+				importStatus = IMPORT_FAILED
+				return errors.New(message)
+			}
 		} else {
-			importStatus = IMPORT_LICENSE_UPDATED
+			// case when license doesn't exist in database and is inserted
+			importStatus = IMPORT_LICENSE_CREATED
 		}
-	} else {
-		// case when license doesn't exist in database and is inserted
-		importStatus = IMPORT_LICENSE_CREATED
-	}
 
-	return message, importStatus, &oldLicense, &newLicense
+		return nil
+	})
+
+	if importStatus == IMPORT_FAILED {
+		red := "\033[31m"
+		reset := "\033[0m"
+		log.Printf("%s%s: %s%s", red, *license.Shortname, message, reset)
+	} else {
+		green := "\033[32m"
+		reset := "\033[0m"
+		log.Printf("%sImport for license '%s' successful%s", green, *license.Shortname, reset)
+	}
+	return message, importStatus
 }
 
 // GenerateDiffForReplacingLicenses creates list of license associations to be created and deleted such that the list of currently associated
@@ -399,20 +421,16 @@ func Populatedb(datafile string) {
 	if err := json.Unmarshal(byteResult, &licenses); err != nil {
 		log.Fatalf("error reading from json file: %v", err)
 	}
+
+	user := models.User{}
+	level := "SUPER_ADMIN"
+	if err := db.DB.Where(&models.User{Userlevel: &level}).First(&user).Error; err != nil {
+		log.Fatalf("Failed to find a super admin")
+	}
+
 	for _, license := range licenses {
 		result := Converter(license)
-		_ = db.DB.Transaction(func(tx *gorm.DB) error {
-			errMessage, importStatus, _, _ := InsertOrUpdateLicenseOnImport(tx, &result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})})
-			if importStatus == IMPORT_FAILED {
-				// ANSI escape code for red text
-				red := "\033[31m"
-				reset := "\033[0m"
-				log.Printf("%s%s: %s%s", red, *result.Shortname, errMessage, reset)
-				return errors.New(errMessage)
-			}
-			return nil
-		})
-
+		_, _ = InsertOrUpdateLicenseOnImport(&result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, *user.Username)
 	}
 }
 
@@ -491,4 +509,262 @@ func GetKid(token string) (string, error) {
 	var header JWSHeader
 	err = json.Unmarshal(decodedBytes, &header)
 	return header.KeyID, err
+}
+
+// addChangelogsForLicenseUpdate adds changelogs for the updated fields on license update
+func AddChangelogsForLicenseUpdate(tx *gorm.DB, username string,
+	newLicense, oldLicense *models.LicenseDB) error {
+	var changes []models.ChangeLog
+
+	if *oldLicense.Fullname != *newLicense.Fullname {
+		changes = append(changes, models.ChangeLog{
+			Field:        "Fullname",
+			OldValue:     oldLicense.Fullname,
+			UpdatedValue: newLicense.Fullname,
+		})
+	}
+	if *oldLicense.Url != *newLicense.Url {
+		changes = append(changes, models.ChangeLog{
+			Field:        "Url",
+			OldValue:     oldLicense.Url,
+			UpdatedValue: newLicense.Url,
+		})
+	}
+	if oldLicense.AddDate != newLicense.AddDate {
+		oldVal := oldLicense.AddDate.Format(time.RFC3339)
+		newVal := newLicense.AddDate.Format(time.RFC3339)
+		changes = append(changes, models.ChangeLog{
+			Field:        "Adddate",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.Active != *newLicense.Active {
+		oldVal := strconv.FormatBool(*oldLicense.Active)
+		newVal := strconv.FormatBool(*newLicense.Active)
+		changes = append(changes, models.ChangeLog{
+			Field:        "Active",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.Copyleft != *newLicense.Copyleft {
+		oldVal := strconv.FormatBool(*oldLicense.Copyleft)
+		newVal := strconv.FormatBool(*newLicense.Copyleft)
+		changes = append(changes, models.ChangeLog{
+			Field:        "Copyleft",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.FSFfree != *newLicense.FSFfree {
+		oldVal := strconv.FormatBool(*oldLicense.FSFfree)
+		newVal := strconv.FormatBool(*newLicense.FSFfree)
+		changes = append(changes, models.ChangeLog{
+			Field:        "FSFfree",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.GPLv2compatible != *newLicense.GPLv2compatible {
+		oldVal := strconv.FormatBool(*oldLicense.GPLv2compatible)
+		newVal := strconv.FormatBool(*newLicense.GPLv2compatible)
+		changes = append(changes, models.ChangeLog{
+			Field:        "GPLv2compatible",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.GPLv3compatible != *newLicense.GPLv3compatible {
+		oldVal := strconv.FormatBool(*oldLicense.GPLv3compatible)
+		newVal := strconv.FormatBool(*newLicense.GPLv3compatible)
+		changes = append(changes, models.ChangeLog{
+			Field:        "GPLv3compatible",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.OSIapproved != *newLicense.OSIapproved {
+		oldVal := strconv.FormatBool(*oldLicense.OSIapproved)
+		newVal := strconv.FormatBool(*newLicense.OSIapproved)
+		changes = append(changes, models.ChangeLog{
+			Field:        "OSIapproved",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.Text != *newLicense.Text {
+		changes = append(changes, models.ChangeLog{
+			Field:        "Text",
+			OldValue:     oldLicense.Text,
+			UpdatedValue: newLicense.Text,
+		})
+	}
+	if *oldLicense.TextUpdatable != *newLicense.TextUpdatable {
+		oldVal := strconv.FormatBool(*oldLicense.TextUpdatable)
+		newVal := strconv.FormatBool(*newLicense.TextUpdatable)
+		changes = append(changes, models.ChangeLog{
+			Field:        "TextUpdatable",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.Fedora != *newLicense.Fedora {
+		changes = append(changes, models.ChangeLog{
+			Field:        "Fedora",
+			OldValue:     oldLicense.Fedora,
+			UpdatedValue: newLicense.Fedora,
+		})
+	}
+	if *oldLicense.Flag != *newLicense.Flag {
+		oldVal := strconv.FormatInt(*oldLicense.Flag, 10)
+		newVal := strconv.FormatInt(*newLicense.Flag, 10)
+		changes = append(changes, models.ChangeLog{
+			Field:        "Flag",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.Notes != *newLicense.Notes {
+		changes = append(changes, models.ChangeLog{
+			Field:        "Notes",
+			OldValue:     oldLicense.Notes,
+			UpdatedValue: newLicense.Notes,
+		})
+	}
+	if *oldLicense.DetectorType != *newLicense.DetectorType {
+		oldVal := strconv.FormatInt(*oldLicense.DetectorType, 10)
+		newVal := strconv.FormatInt(*newLicense.DetectorType, 10)
+		changes = append(changes, models.ChangeLog{
+			Field:        "DetectorType",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.Source != *newLicense.Source {
+		changes = append(changes, models.ChangeLog{
+			Field:        "Source",
+			OldValue:     oldLicense.Source,
+			UpdatedValue: newLicense.Source,
+		})
+	}
+	if *oldLicense.SpdxId != *newLicense.SpdxId {
+		changes = append(changes, models.ChangeLog{
+			Field:        "SpdxId",
+			OldValue:     oldLicense.SpdxId,
+			UpdatedValue: newLicense.SpdxId,
+		})
+	}
+	if *oldLicense.Risk != *newLicense.Risk {
+		oldVal := strconv.FormatInt(*oldLicense.Risk, 10)
+		newVal := strconv.FormatInt(*newLicense.Risk, 10)
+		changes = append(changes, models.ChangeLog{
+			Field:        "Risk",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+	if *oldLicense.Marydone != *newLicense.Marydone {
+		oldVal := strconv.FormatBool(*oldLicense.Marydone)
+		newVal := strconv.FormatBool(*newLicense.Marydone)
+		changes = append(changes, models.ChangeLog{
+			Field:        "Marydone",
+			OldValue:     &oldVal,
+			UpdatedValue: &newVal,
+		})
+	}
+
+	oldLicenseExternalRef := oldLicense.ExternalRef.Data()
+	oldExternalRefVal := reflect.ValueOf(oldLicenseExternalRef)
+	typesOf := oldExternalRefVal.Type()
+
+	newLicenseExternalRef := newLicense.ExternalRef.Data()
+	newExternalRefVal := reflect.ValueOf(newLicenseExternalRef)
+
+	for i := 0; i < oldExternalRefVal.NumField(); i++ {
+		fieldName := typesOf.Field(i).Name
+
+		switch typesOf.Field(i).Type.String() {
+		case "*boolean":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*bool)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*bool)
+			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
+				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
+				var oldVal, newVal *string
+				oldVal, newVal = nil, nil
+
+				if oldFieldPtr != nil {
+					_oldVal := fmt.Sprintf("%t", *oldFieldPtr)
+					oldVal = &_oldVal
+				}
+
+				if newFieldPtr != nil {
+					_newVal := fmt.Sprintf("%t", *newFieldPtr)
+					newVal = &_newVal
+				}
+
+				changes = append(changes, models.ChangeLog{
+					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
+					OldValue:     oldVal,
+					UpdatedValue: newVal,
+				})
+			}
+		case "*string":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*string)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*string)
+			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
+				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
+				changes = append(changes, models.ChangeLog{
+					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
+					OldValue:     oldFieldPtr,
+					UpdatedValue: newFieldPtr,
+				})
+			}
+		case "*int":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*int)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*int)
+			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
+				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
+				var oldVal, newVal *string
+				oldVal, newVal = nil, nil
+
+				if oldFieldPtr != nil {
+					_oldVal := fmt.Sprintf("%d", *oldFieldPtr)
+					oldVal = &_oldVal
+				}
+
+				if newFieldPtr != nil {
+					_newVal := fmt.Sprintf("%d", *newFieldPtr)
+					newVal = &_newVal
+				}
+
+				changes = append(changes, models.ChangeLog{
+					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
+					OldValue:     oldVal,
+					UpdatedValue: newVal,
+				})
+			}
+		}
+	}
+
+	if len(changes) != 0 {
+		var user models.User
+		if err := tx.Where(models.User{Username: &username}).First(&user).Error; err != nil {
+			return err
+		}
+
+		audit := models.Audit{
+			UserId:     user.Id,
+			TypeId:     newLicense.Id,
+			Timestamp:  time.Now(),
+			Type:       "license",
+			ChangeLogs: changes,
+		}
+
+		if err := tx.Create(&audit).Error; err != nil {
+			return err
+		}
+	}
+
+	return nil
 }
