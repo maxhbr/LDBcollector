@@ -1,0 +1,19 @@
+[license]
+expression = "LicenseRef-soundfont"
+status = [ "not-allowed" ]
+url = '''
+https://src.fedoraproject.org/rpms/PersonalCopy-Lite-soundfont/blob/adb3db552a8330d3600388bfb1bd6e0fb41b86c2/f/LICENSE.txt
+'''
+
+text = '''
+The PersonalCopy sound fonts by Jim Roe may be freely (re)distributed
+and used under the following conditions:
+
+1) This license text must always be included in the distribution
+2a) They must be distributed in their original form
+2b) As an exception to 2a they may be distributed converted into an
+     other soundfont format such as for example the Gravis Ultrasound
+     .pat format
+3) Neither the PersonalCopy soundfonts nor any of their individual
+    components, in Original or Modified Versions, may be sold by itself.
+'''
