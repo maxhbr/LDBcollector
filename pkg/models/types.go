@@ -13,6 +13,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"strings"
 	"time"
 
 	"github.com/go-playground/validator/v10"
@@ -385,6 +386,25 @@ type Obligation struct {
 	Licenses                   []*LicenseDB              `gorm:"many2many:obligation_licenses;"`
 	Type                       *ObligationType           `gorm:"foreignKey:ObligationTypeId"`
 	Classification             *ObligationClassification `gorm:"foreignKey:ObligationClassificationId"`
+	Category                   *string                   `json:"category" gorm:"default:GENERAL" enums:"DISTRIBUTION,PATENT,INTERNAL,CONTRACTUAL,EXPORT_CONTROL,GENERAL" example:"DISTRIBUTION"`
+}
+
+var validCategories = []string{"DISTRIBUTION", "PATENT", "INTERNAL", "CONTRACTUAL", "EXPORT_CONTROL", "GENERAL"}
+
+func validateCategory(o *Obligation) error {
+	allCategories := strings.Join(validCategories, ", ")
+	// Check if the provided category is in the list of valid categories
+	categoryValid := false
+	for _, cat := range validCategories {
+		if *o.Category == cat {
+			categoryValid = true
+			break
+		}
+	}
+	if !categoryValid {
+		return fmt.Errorf("category must be one of the following values: %s", allCategories)
+	}
+	return nil
 }
 
 func (o *Obligation) BeforeCreate(tx *gorm.DB) (err error) {
@@ -442,6 +462,10 @@ func (o *Obligation) BeforeCreate(tx *gorm.DB) (err error) {
 		}
 	}
 
+	if err := validateCategory(o); err != nil {
+		return err
+	}
+
 	for i := 0; i < len(o.Licenses); i++ {
 		var license LicenseDB
 		if err := tx.Where(LicenseDB{Shortname: o.Licenses[i].Shortname}).First(&license).Error; err != nil {
@@ -450,7 +474,7 @@ func (o *Obligation) BeforeCreate(tx *gorm.DB) (err error) {
 		o.Licenses[i] = &license
 	}
 
-	return
+	return nil
 }
 
 type ContextKey string
@@ -515,6 +539,13 @@ func (o *Obligation) BeforeUpdate(tx *gorm.DB) (err error) {
 			return fmt.Errorf("obligation classification must be one of the following values:%s", allClassifications)
 		}
 	}
+
+	if o.Category != nil {
+		if err := validateCategory(o); err != nil {
+			return err
+		}
+	}
+
 	return
 }
 
@@ -528,6 +559,7 @@ func (o *Obligation) MarshalJSON() ([]byte, error) {
 		Active:        o.Active,
 		TextUpdatable: o.TextUpdatable,
 		Shortnames:    []string{},
+		Category:      o.Category,
 	}
 
 	if o.Type != nil {
@@ -536,6 +568,13 @@ func (o *Obligation) MarshalJSON() ([]byte, error) {
 
 	if o.Classification != nil {
 		ob.Classification = &o.Classification.Classification
+	}
+
+	if o.Category != nil && *o.Category != "" {
+		ob.Category = o.Category
+	} else {
+		defaultCategory := "GENERAL"
+		ob.Category = &defaultCategory
 	}
 
 	for i := 0; i < len(o.Licenses); i++ {
@@ -563,6 +602,7 @@ func (o *Obligation) UnmarshalJSON(data []byte) error {
 	o.Comment = dto.Comment
 	o.Active = dto.Active
 	o.TextUpdatable = dto.TextUpdatable
+	o.Category = dto.Category
 
 	if dto.Type != nil {
 		o.Type = &ObligationType{
@@ -597,6 +637,7 @@ type ObligationDTO struct {
 	Active         *bool    `json:"active"`
 	TextUpdatable  *bool    `json:"text_updatable" example:"true"`
 	Shortnames     []string `json:"shortnames" validate:"required" example:"GPL-2.0-only,GPL-2.0-or-later"`
+	Category       *string  `json:"category" example:"DISTRIBUTION" validate:"required"`
 }
 
 // ObligationUpdateDTO represents an obligation json object.
@@ -609,6 +650,7 @@ type ObligationUpdateDTO struct {
 	Comment        *string `json:"comment"`
 	Active         *bool   `json:"active"`
 	TextUpdatable  *bool   `json:"text_updatable" example:"true"`
+	Category       *string `json:"category" example:"DISTRIBUTION"`
 }
 
 func (obDto *ObligationUpdateDTO) Converter() *Obligation {
@@ -626,6 +668,7 @@ func (obDto *ObligationUpdateDTO) Converter() *Obligation {
 	o.Comment = obDto.Comment
 	o.Active = obDto.Active
 	o.TextUpdatable = obDto.TextUpdatable
+	o.Category = obDto.Category
 
 	return &o
 }

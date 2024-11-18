@@ -2647,6 +2647,18 @@ const docTemplate = `{
                 "active": {
                     "type": "boolean"
                 },
+                "category": {
+                    "type": "string",
+                    "enum": [
+                        "DISTRIBUTION",
+                        "PATENT",
+                        "INTERNAL",
+                        "CONTRACTUAL",
+                        "EXPORT_CONTROL",
+                        "GENERAL"
+                    ],
+                    "example": "DISTRIBUTION"
+                },
                 "classification": {
                     "$ref": "#/definitions/models.ObligationClassification"
                 },
@@ -2726,6 +2738,7 @@ const docTemplate = `{
         "models.ObligationDTO": {
             "type": "object",
             "required": [
+                "category",
                 "classification",
                 "shortnames",
                 "text",
@@ -2735,6 +2748,10 @@ const docTemplate = `{
             "properties": {
                 "active": {
                     "type": "boolean"
+                },
+                "category": {
+                    "type": "string",
+                    "example": "DISTRIBUTION"
                 },
                 "classification": {
                     "type": "string",
@@ -2918,6 +2935,10 @@ const docTemplate = `{
             "properties": {
                 "active": {
                     "type": "boolean"
+                },
+                "category": {
+                    "type": "string",
+                    "example": "DISTRIBUTION"
                 },
                 "classification": {
                     "type": "string",

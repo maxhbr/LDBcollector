@@ -332,6 +332,16 @@ definitions:
     properties:
       active:
         type: boolean
+      category:
+        enum:
+        - DISTRIBUTION
+        - PATENT
+        - INTERNAL
+        - CONTRACTUAL
+        - EXPORT_CONTROL
+        - GENERAL
+        example: DISTRIBUTION
+        type: string
       classification:
         $ref: '#/definitions/models.ObligationClassification'
       comment:
@@ -387,6 +397,9 @@ definitions:
     properties:
       active:
         type: boolean
+      category:
+        example: DISTRIBUTION
+        type: string
       classification:
         example: GREEN
         type: string
@@ -415,6 +428,7 @@ definitions:
         example: RISK
         type: string
     required:
+    - category
     - classification
     - shortnames
     - text
@@ -520,6 +534,9 @@ definitions:
     properties:
       active:
         type: boolean
+      category:
+        example: DISTRIBUTION
+        type: string
       classification:
         example: GREEN
         type: string
