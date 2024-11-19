@@ -34,7 +34,7 @@ django.setup()
 # -- Project information -----------------------------------------------------
 
 project = "Hermine"
-copyright = "2021, Hermine Team"
+copyright = "2021, Hermine Team. Licensed under CC-BY-4.0."
 author = "Hermine Team"
 
 
