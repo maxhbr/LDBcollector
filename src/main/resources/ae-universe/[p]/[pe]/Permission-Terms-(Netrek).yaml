@@ -9,3 +9,5 @@ spdxIdentifier: "HPND-Netrek"
 canonicalNameHistory:
   - "Permission Terms (Nettrek)"
 
+otherIds: 
+  - "scancode:hpnd-netrek"

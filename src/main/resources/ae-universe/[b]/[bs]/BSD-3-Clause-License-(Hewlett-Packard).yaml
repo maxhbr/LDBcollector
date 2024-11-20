@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Hewlett-Packard BSD variant license"
-category: "BSD-3-Clause-HP"
+canonicalName: "BSD 3-Clause License (Hewlett-Packard)"
+category: "BSD"
 spdxIdentifier: "BSD-3-Clause-HP"
+
+canonicalNameHistory:
+  - "Hewlett-Packard BSD variant license"
 
 alternativeNames:
   - "BSD-3-Clause-HP"

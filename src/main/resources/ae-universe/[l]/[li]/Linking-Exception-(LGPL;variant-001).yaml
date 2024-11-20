@@ -12,5 +12,5 @@ canonicalNameHistory:
 type: "exception"
 
 otherIds: 
-  - "scancode:lgpl-2.1-plus-linking"
   - "scancode:linking-exception-2.1-plus"
+  - "scancode:lgpl-2.1-plus-linking"

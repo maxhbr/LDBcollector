@@ -4,15 +4,12 @@
 
 canonicalName: "Broadcom CFE License"
 category: "Broadcom CFE License"
-spdxIdentifier: "DEC-3-Clause"
+shortName: "broadcom-cfe-license"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "broadcom-cfe"
-  - "DEC-3-Clause"
-  - "DEC 3-Clause License"
 
 otherIds: 
   - "scancode:broadcom-cfe"
-  - "scancode:dec-3-clause"

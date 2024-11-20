@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "DocBook Schema License"
-category: "DocBook Schema"
-spdxIdentifier: "DocBook-Schema"
+canonicalName: "DEC 3-Clause License"
+category: "DEC 3-Clause License"
+spdxIdentifier: "DEC-3-Clause"
 
 alternativeNames:
-  - "DocBook Schema License"
+  - "DEC-3-Clause"
+  - "DEC 3-Clause License"
 
 otherIds: 
-  - "scancode:docbook-schema"
+  - "scancode:dec-3-clause"

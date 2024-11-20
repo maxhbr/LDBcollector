@@ -12,3 +12,5 @@ canonicalNameHistory:
 
 type: "exception"
 
+otherIds: 
+  - "scancode:erlang-otp-linking-exception"

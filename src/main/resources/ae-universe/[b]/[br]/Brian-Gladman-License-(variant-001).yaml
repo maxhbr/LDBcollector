@@ -2,9 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Firmware License"
-category: "Firmware"
-shortName: "Firmware"
+canonicalName: "Brian Gladman License (variant 001)"
+category: "Brian Gladman License"
+shortName: "Brian-Gladman-var-001"
 
-otherIds: 
-  - "scancode:binary-linux-firmware"
