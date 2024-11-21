@@ -1961,6 +1961,7 @@ it what you wish.
 
 package = irssi
           python-django-pdb
+          python-hexdump
 location = https://github.com/irssi/irssi/blob/master/scripts/autoop.pl#L13
            https://github.com/irssi/irssi/blob/master/scripts/buf.pl#L16
            https://github.com/irssi/irssi/blob/master/scripts/dns.pl#L21
@@ -1972,6 +1973,7 @@ location = https://github.com/irssi/irssi/blob/master/scripts/autoop.pl#L13
            https://github.com/irssi/irssi/blob/master/scripts/examples/msg-event.pl#L14
            https://github.com/irssi/irssi/blob/master/scripts/examples/redirect.pl#L15
            https://github.com/HassenPy/django-pdb/blob/master/setup.py#L47
+           https://pypi.org/project/hexdump/
 text = '''
 Public Domain
 '''
