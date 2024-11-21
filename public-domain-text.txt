@@ -29,6 +29,12 @@ text = '''
 text here
 '''
 
+package = allegro
+location = docs/src/addons._tx
+text = '''
+License: public domain
+'''
+
 package = nacl
 # crypto_scalarmult/curve25519/donna_c64/smult.c
 location = http://hyperelliptic.org/nacl/nacl-20110221.tar.bz2
