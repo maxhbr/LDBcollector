@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.61
+Version:        1.62
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,27 @@ make check-grammar
 
 
 %changelog
+* Fri Nov 22 2024 Miroslav Suchý <msuchy@redhat.com> 1.62-1
+- add Avasys public license as allowed-firmware
+- add public domain dedication for python-hexdump
+- add public domain dedication for allegro (loadpng addon)
+- add LicenseRef-soundfont as not-allowed
+- add broadcom firmware license
+- Reclassify LicenseRef-qmail as allowed (deprecated)
+- add GPL-2.0-only WITH CGAL-linking-exception
+- add firmware licensing terms for atmel-firmware
+- add wwl license
+- add generic-xts license
+- add LicenseRef-Mod-Archive as not-allowed
+- add public domain dedication for perl-Math-Expression-Evaluator
+- add public domain dedication for perl-MaxMind-DB-Reader-XS
+- add public domain dedication for python-django-pdb
+- add UltraPermissive dedication of package python-utmp
+- add public domain dedication for re2c
+- add public domain dedication for python-nine
+- add public domain dedication for perl-Devel-Trace
+- add LGPL-3.0-or-later WITH LGPL-3.0-linking-exception
+
 * Thu Nov 07 2024 Miroslav Suchý <msuchy@redhat.com> 1.61-1
 - Revert "add LicenseRef-BSD-3-Clause-firmware"
 
