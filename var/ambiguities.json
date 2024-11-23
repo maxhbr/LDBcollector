@@ -64,7 +64,8 @@
                 "Boost",
                 "Boost Software License",
                 "Boost Software Licence",
-                "boost"
+                "boost",
+                "Boost-Software-License"
             ],
             "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -208,7 +209,8 @@
               "GNU Lesser General Public v2",
               "LGPL v2",
               "LGPL2",
-              "GPL LGPL-2"
+              "GPL LGPL-2",
+              "LGPLGNU LIBRARY GENERAL PUBLIC LICENSE Version 2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -269,7 +271,8 @@
                 "PSF License",
                 "Python Software License",
                 "Python-Software-Foundation-License",
-                "Python Software Foundation"
+                "Python Software Foundation",
+                "Python Software Foundation License (PSFL)"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
