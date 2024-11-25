@@ -16,6 +16,7 @@
         "The Unlincence",
         "UNLICENSED",
         "License :: OSI Approved :: The Unlicense",
-        "License :: OSI Approved :: The Unlicense (Unlicense)"
+        "License :: OSI Approved :: The Unlicense (Unlicense)",
+        "public domain (\"Unlicense\")"
     ]
 }

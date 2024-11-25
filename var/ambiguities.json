@@ -64,7 +64,8 @@
                 "Boost",
                 "Boost Software License",
                 "Boost Software Licence",
-                "boost"
+                "boost",
+                "Boost-Software-License"
             ],
             "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -175,7 +176,8 @@
                 "GNU GENERAL PUBLIC LICENSE",
                 "License :: OSI Approved :: GNU General Public License",
                 "License :: OSI Approved :: GNU General Public License (GPL)",
-                "GNU General Public License (GPL)"
+                "GNU General Public License (GPL)",
+                "GNU-GPL"
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -204,7 +206,11 @@
               "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
               "GNU Library/LGPL",
               "GNU Library",
-              "GNU Lesser General Public v2"
+              "GNU Lesser General Public v2",
+              "LGPL v2",
+              "LGPL2",
+              "GPL LGPL-2",
+              "LGPLGNU LIBRARY GENERAL PUBLIC LICENSE Version 2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -226,7 +232,8 @@
             "aliases": [
                 "MPL",
                 "MPL-1",
-                "MPLv1"
+                "MPLv1",
+                "Mozilla-permissive"
             ],
             "problem": "This license has different version (1.0, 1.1 and 2.0). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
@@ -243,11 +250,16 @@
             ],
             "problem": "OSI has approved many licenses. You It is not possible to determine which license is meant with this information."
         },
-        "SIL Open Font License ": {
+        "SIL Open Font License": {
             "aliases": [
                 "SIL OPEN FONT LICENSE"
             ],
             "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+        },
+        "Permissive": {
+            "aliases": [
+            ],
+            "problem": "This is a class of licenses and not a license."
         },
         "Python Software Foundation License": {
             "aliases": [
@@ -259,7 +271,8 @@
                 "PSF License",
                 "Python Software License",
                 "Python-Software-Foundation-License",
-                "Python Software Foundation"
+                "Python Software Foundation",
+                "Python Software Foundation License (PSFL)"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
