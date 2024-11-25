@@ -72,9 +72,10 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
 
 <p>Most open source licenses also have <span class="license-limitations"><span class="license-sprite"></span></span> <b>limitations</b> that usually disclaim warranty and liability, and sometimes expressly exclude patents or trademarks from licenses' grants.</p>
 
-<dl>
 {% assign seen_tags = '' %}
 {% for type in types %}
+### {% if type == "permissions" %}Permissions{% elsif type == "conditions" %}Conditions{% else %}Limitations{% endif %}
+  <dl>
   {% assign rules = site.data.rules[type] | sort: "label" %}
   {% for rule_obj in rules %}
     {% assign req = rule_obj.tag %}
@@ -92,5 +93,5 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
       {% endfor %}
     {% endfor %}
   {% endfor %}
+  </dl>
 {% endfor %}
-</dl>
