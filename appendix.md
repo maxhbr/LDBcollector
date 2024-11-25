@@ -87,7 +87,17 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
       {% assign rs = site.data.rules[t] | sort: "label" %}
       {% for r in rs %}
         {% if r.tag == req %}
-          <dd class="license-{{t}}"><span class="license-sprite"></span> {{ r.description }}</dd>
+          {% if r.tag contains "--" %}
+            {% assign lite = " lite" %}
+          {% else %}
+            {% assign lite = "" %}
+          {% endif %}
+          <dd class="license-{{t}}">
+            <span class="{{ r.tag | append: lite }}">
+              <span class="license-sprite {{ r.tag }}"></span>
+            </span>
+            {{ r.description }}
+          </dd>
         {% endif %}
       {% endfor %}
     {% endfor %}
