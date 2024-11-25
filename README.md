@@ -57,11 +57,11 @@ Current support:
 |Type            | Number |
 |----------------|--------|
 |Licenses        | 184    |
-|Aliases         | 2508     |
+|Aliases         | 2528     |
 |Compatibilities | 23     |
 |Operators       | 14   |
-|Ambiguities     | 139 |
-|Compounds       | 29   |
+|Ambiguities     | 147 |
+|Compounds       | 33   |
 
 # About
 
