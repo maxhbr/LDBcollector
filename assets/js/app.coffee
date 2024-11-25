@@ -43,7 +43,7 @@ class Choosealicense
         # Exclude license elements in the legend
         licenseLiElement = $(".license-#{ruletype} .#{rule["tag"]}").not("dd.license-#{ruletype} .#{rule["tag"]}")
         tooltipAttr = @tooltipAttributesMapperByRuleType[ruletype]
-        licenseLiElement.attr "aria-label", "#{tooltipAttr.heading}: #{rule.description}"
+        licenseLiElement.attr "aria-label", "#{rule.label} #{tooltipAttr.heading.toLowerCase()}: #{rule.description}"
         licenseLiElement.addClass("hint--bottom
                                    hint--large
                                    hint--no-animate
