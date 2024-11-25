@@ -40,14 +40,15 @@ class Choosealicense
     # Dynamically add annotations as title attribute to rule list items
     for ruletype, rules of window.annotations
       for rule in rules
-        licenseLiElement = $(".license-#{ruletype} .#{rule["tag"]}")
+        # Only select license elements in table, not legend
+        licenseLiElement = $("td.license-#{ruletype} .#{rule["tag"]}")
         tooltipAttr = @tooltipAttributesMapperByRuleType[ruletype]
         licenseLiElement.attr "aria-label", "#{tooltipAttr.heading}: #{rule.description}"
         licenseLiElement.addClass("hint--bottom
                                    hint--large
                                    hint--no-animate
                                    #{tooltipAttr.color}
-                                   orverride-hint-inline")
+                                   override-hint-inline")
 
   # Initializes Clipboard.js
   initClipboard: ->
