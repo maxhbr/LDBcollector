@@ -29,6 +29,19 @@ text = '''
 text here
 '''
 
+package = python-zmq
+location = examples/device/device.py
+text = '''
+This example is placed in the Public Domain
+It may also be used under the Creative Commons CC-0 License, (C) PyZMQ Developers
+'''
+
+package = python-zmq
+location = examples/win32-interrupt/display.py
+text = '''
+This file has been placed in the public domain.
+'''
+
 package = mg
 # https://bugzilla.redhat.com/show_bug.cgi?id=2328778
 location = https://github.com/hboetes/mg/blob/master/autoexec.c
