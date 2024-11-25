@@ -29,6 +29,86 @@ text = '''
 text here
 '''
 
+package = mg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2328778
+location = https://github.com/hboetes/mg/blob/master/autoexec.c
+           https://github.com/hboetes/mg/blob/master/basic.c
+           https://github.com/hboetes/mg/blob/master/bell.c
+           https://github.com/hboetes/mg/blob/master/buffer.c
+           https://github.com/hboetes/mg/blob/master/chrdef.h
+           https://github.com/hboetes/mg/blob/master/cinfo.c
+           https://github.com/hboetes/mg/blob/master/cmode.c
+           https://github.com/hboetes/mg/blob/master/cscope.c
+           https://github.com/hboetes/mg/blob/master/def.h
+           https://github.com/hboetes/mg/blob/master/dir.c
+           https://github.com/hboetes/mg/blob/master/dired.c
+           https://github.com/hboetes/mg/blob/master/display.c
+           https://github.com/hboetes/mg/blob/master/echo.c
+           https://github.com/hboetes/mg/blob/master/extend.c
+           https://github.com/hboetes/mg/blob/master/file.c
+           https://github.com/hboetes/mg/blob/master/fileio.c
+           https://github.com/hboetes/mg/blob/master/funmap.c
+           https://github.com/hboetes/mg/blob/master/funmap.h
+           https://github.com/hboetes/mg/blob/master/grep.c
+           https://github.com/hboetes/mg/blob/master/help.c
+           https://github.com/hboetes/mg/blob/master/interpreter.c
+           https://github.com/hboetes/mg/blob/master/kbd.c
+           https://github.com/hboetes/mg/blob/master/kbd.h
+           https://github.com/hboetes/mg/blob/master/key.h
+           https://github.com/hboetes/mg/blob/master/keymap.c
+           https://github.com/hboetes/mg/blob/master/line.c
+           https://github.com/hboetes/mg/blob/master/log.c
+           https://github.com/hboetes/mg/blob/master/log.h
+           https://github.com/hboetes/mg/blob/master/macro.c
+           https://github.com/hboetes/mg/blob/master/macro.h
+           https://github.com/hboetes/mg/blob/master/main.c
+           https://github.com/hboetes/mg/blob/master/match.c
+           https://github.com/hboetes/mg/blob/master/mg.1
+           https://github.com/hboetes/mg/blob/master/modes.c
+           https://github.com/hboetes/mg/blob/master/paragraph.c
+           https://github.com/hboetes/mg/blob/master/pathnames.h
+           https://github.com/hboetes/mg/blob/master/region.c
+           https://github.com/hboetes/mg/blob/master/re_search.c
+           https://github.com/hboetes/mg/blob/master/search.c
+           https://github.com/hboetes/mg/blob/master/spawn.c
+           https://github.com/hboetes/mg/blob/master/tags.c
+           https://github.com/hboetes/mg/blob/master/tty.c
+           https://github.com/hboetes/mg/blob/master/ttyio.c
+           https://github.com/hboetes/mg/blob/master/ttykbd.c
+           https://github.com/hboetes/mg/blob/master/undo.c
+           https://github.com/hboetes/mg/blob/master/util.c
+           https://github.com/hboetes/mg/blob/master/version.c
+           https://github.com/hboetes/mg/blob/master/window.c
+           https://github.com/hboetes/mg/blob/master/word.c
+           https://github.com/hboetes/mg/blob/master/yank.c
+text = '''
+This file is in the public domain.
+'''
+
+package = mg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2328778
+location = https://github.com/hboetes/mg/blob/master/GNUmakefile
+           https://github.com/hboetes/mg/blob/master/mg-static/generate-mg-static
+text = '''
+This Makefile has been written by Han Boetes
+<hboetes@gmail.com> and is released in Public Domain.
+'''
+
+package = mg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2328778
+location = https://github.com/hboetes/mg/blob/master/meson.build
+text = '''
+This file has been written by Han Boetes <hboetes@gmail.com> and is
+released in Public Domain.
+'''
+
+package = mg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2328778
+location = https://github.com/hboetes/mg/blob/master/tutorial#L353-L356
+text = '''
+This document is in the public domain.
+```
+
 package = allegro
 location = docs/src/addons._tx
 text = '''
