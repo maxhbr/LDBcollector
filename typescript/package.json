@@ -1,4 +1,10 @@
 {
+    "name": "@licenselynx/licenselynx",
+    "version": "0.7.5",
+    "author": "Leo Reinmann",
+    "keywords": [],
+    "license": "Apache-2.0",
+    "description": "Unified License Mapper",
     "devDependencies": {
         "@babel/preset-typescript": "^7.24.1",
         "@jest/globals": "^29.7.0",
@@ -16,8 +22,6 @@
         "ts-jest": "^29.1.2",
         "typescript": "^5.4.5"
     },
-    "name": "@licenselynx/licenselynx",
-    "version": "0.7.5",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "directories": {
@@ -29,9 +33,5 @@
         "copy-resources": "copyfiles -u 1 \"src/**/*.!(ts)\" dist",
         "test": "jest --coverage",
         "lint": "eslint . --ext .ts"
-    },
-    "keywords": [],
-    "author": "Leo Reinmann",
-    "license": "Apache-2.0",
-    "description": "Unified License Mapper"
+    }
 }
