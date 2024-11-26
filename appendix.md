@@ -72,36 +72,24 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
 
 <p>Most open source licenses also have <span class="license-limitations"><span class="license-sprite"></span></span> <b>limitations</b> that usually disclaim warranty and liability, and sometimes expressly exclude patents or trademarks from licenses' grants.</p>
 
-{% assign seen_tags = '' %}
 {% for type in types %}
 ### {% if type == "permissions" %}Permissions{% elsif type == "conditions" %}Conditions{% else %}Limitations{% endif %}
   <dl>
   {% assign rules = site.data.rules[type] | sort: "label" %}
   {% for rule_obj in rules %}
     {% assign req = rule_obj.tag %}
-    {% if seen_tags contains req %}
-      {% continue %}
-    {% endif %}
     <dt id="{{ req }}">{{ rule_obj.label }}</dt>
-    {% capture seen_tags %}{{ seen_tags | append:req }}{% endcapture %}
-    {% for t in types %}
-      {% assign rs = site.data.rules[t] | sort: "label" %}
-      {% for r in rs %}
-        {% if r.tag == req %}
-          {% if r.tag contains "--" %}
-            {% assign lite = " lite" %}
-          {% else %}
-            {% assign lite = "" %}
-          {% endif %}
-          <dd class="license-{{t}}">
-            <span class="{{ r.tag | append: lite }}">
-              <span class="license-sprite {{ r.tag }}"></span>
-            </span>
-            {{ r.description }}
-          </dd>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
+    <dd class="license-{{ type }}">
+      {% if req contains "--" %}
+        {% assign lite = " lite" %}
+      {% else %}
+        {% assign lite = "" %}
+      {% endif %}
+      <span class="{{ req | append: lite }}">
+        <span class="license-sprite {{ req }}"></span>
+      </span>
+      {{ rule_obj.description }}
+    </dd>
   {% endfor %}
   </dl>
 {% endfor %}
