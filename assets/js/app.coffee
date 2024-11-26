@@ -40,10 +40,10 @@ class Choosealicense
     # Dynamically add annotations as title attribute to rule list items
     for ruletype, rules of window.annotations
       for rule in rules
-        # Only select license elements in table, not legend
-        licenseLiElement = $("td.license-#{ruletype} .#{rule["tag"]}")
+        # Exclude license elements in the legend
+        licenseLiElement = $(".license-#{ruletype} .#{rule["tag"]}").not("dd.license-#{ruletype} .#{rule["tag"]}")
         tooltipAttr = @tooltipAttributesMapperByRuleType[ruletype]
-        licenseLiElement.attr "aria-label", "#{tooltipAttr.heading}: #{rule.description}"
+        licenseLiElement.attr "aria-label", "#{rule.label} #{tooltipAttr.heading.toLowerCase()}: #{rule.description}"
         licenseLiElement.addClass("hint--bottom
                                    hint--large
                                    hint--no-animate
