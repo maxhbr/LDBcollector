@@ -43,6 +43,10 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{usage.version.effective_license}}</td>
             <td>{{usage.license_expression }} </td>
             <td>
+              <string>ID :</string> {{usage.license_choices.0.id}}<br>
+              {% if usage.license_choices.0.explanation|length >= 1 %}
+                {{usage.license_choices.0.explanation|truncatechars:40}}<br>
+              {% endif %}
               {% if usage.license_choices|length == 1 %}
                 {% if perms.cube.change_licensechoice %}
                   <a href="{% url "cube:licensechoice_update" usage.license_choices.0.pk %}?from={{ request.path|urlencode }}">Edit rule</a>
