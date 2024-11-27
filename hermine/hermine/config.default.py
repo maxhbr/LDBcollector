@@ -50,6 +50,13 @@ DATABASES = {
 # The maximum possible size for a SBOM to import, in bytes
 MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10MB, you have to set it in bytes
 
+###############################
+## Third party authentication #
+###############################
+
+# # For authentication through a header set by a reverse proxy
+# REMOTE_USER_HEADER = "HTTP_X_REMOTE_USER"
+
 # # For configuring OAuthn the following parameters are required :
 # OAUTH_DOMAIN =
 # OAUTH_CLIENT_ID =
