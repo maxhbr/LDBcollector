@@ -53,18 +53,20 @@ def test_generate_svg_light_mode():
         svg_content = generate_svg(
             total_mappings=6,
             top_licenses=[("MIT", 3), ("Apache 2.0", 2), ("GPL 3.0", 1)],
+            total_number_licenses=10,
             is_dark_mode=False
         )
         expected_svg_content = sample_svg_template.format(
             background_color="#ffffff",
             text_color="#333333",
             total_mappings=6,
+            total_number_licenses=10,
             license_text=(
-                '<text x="30" y="140" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
+                '<text x="30" y="180" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
                 'MIT: <tspan font-weight="bold">3</tspan></text>'
-                '<text x="30" y="170" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
+                '<text x="30" y="210" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
                 'Apache 2.0: <tspan font-weight="bold">2</tspan></text>'
-                '<text x="30" y="200" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
+                '<text x="30" y="240" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
                 'GPL 3.0: <tspan font-weight="bold">1</tspan></text>'
             )
         )
@@ -77,18 +79,20 @@ def test_generate_svg_dark_mode():
         svg_content = generate_svg(
             total_mappings=6,
             top_licenses=[("MIT", 3), ("Apache 2.0", 2), ("GPL 3.0", 1)],
-            is_dark_mode=True
+            is_dark_mode=True,
+            total_number_licenses=10,
         )
         expected_svg_content = sample_svg_template.format(
             background_color="#1e1e1e",
             text_color="#ffffff",
             total_mappings=6,
+            total_number_licenses=10,
             license_text=(
-                '<text x="30" y="140" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
+                '<text x="30" y="180" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
                 'MIT: <tspan font-weight="bold">3</tspan></text>'
-                '<text x="30" y="170" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
+                '<text x="30" y="210" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
                 'Apache 2.0: <tspan font-weight="bold">2</tspan></text>'
-                '<text x="30" y="200" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
+                '<text x="30" y="240" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
                 'GPL 3.0: <tspan font-weight="bold">1</tspan></text>'
             )
         )
