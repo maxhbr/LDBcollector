@@ -54,6 +54,11 @@ urlpatterns = [
         name="component_populars",
     ),
     path(
+        "components/create/",
+        views.ComponentCreateView.as_view(),
+        name="component_create",
+    ),
+    path(
         "components/<int:pk>/",
         views.ComponentDetailView.as_view(),
         name="component_detail",
@@ -62,6 +67,16 @@ urlpatterns = [
         "components/<int:pk>/edit/",
         views.ComponentUpdateView.as_view(),
         name="component_update",
+    ),
+    path(
+        "components/<int:pk>/create_version/",
+        views.VersionCreateView.as_view(),
+        name="version_create",
+    ),
+    path(
+        "components/<int:component_id>/versions/<int:pk>/",
+        views.VersionUpdateView.as_view(),
+        name="version_update",
     ),
     path(
         "components/<int:component_id>/update_funding/",
@@ -79,9 +94,14 @@ urlpatterns = [
         name="licensecuration_create",
     ),
     path(
-        "curations/edit/<int:pk>/",
+        "curations/<int:pk>/edit/",
         views.LicenseCurationUpdateView.as_view(),
         name="licensecuration_update",
+    ),
+    path(
+        "curations/<int:pk>/delete/",
+        views.LicenseCurationDeleteView.as_view(),
+        name="licensecuration_delete",
     ),
     path(
         "curations/export/",
@@ -192,6 +212,11 @@ urlpatterns = [
         "derogations/",
         views.DerogationListView.as_view(),
         name="derogation_list",
+    ),
+    path(
+        "derogations/<int:pk>/delete/",
+        views.DerogationDeleteView.as_view(),
+        name="derogation_delete",
     ),
     path(
         "licensechoices/",

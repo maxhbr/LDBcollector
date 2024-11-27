@@ -1,0 +1,24 @@
+{% extends "cube/cube.html" %}
+{% block title %}{% if object %}{{ object.component.name }} - Edit version{% else %}{{ license }} - Add version{% endif %}{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url "cube:component_list" %}">Components</a></li>
+    {% if object %}
+      <li><a href="{% url 'cube:component_detail' object.component.id %}">{{ object.component.name }}</a></li>
+      <li>Version {{ object.version_number }}</li>
+      <li>Edit</li>
+    {% else %}
+      <li><a href="{% url 'cube:component_detail' component.id %}">{{ component.name }}</a></li>
+      <li>Add version</li>
+    {% endif %}
+  </ul>
+{% endblock %}
+{% block herozone %}
+  <h1 class="title">{% if object %}Edit version <em>{{ object.name }}</em> ({{ object.component.name }}){% else %}Add version for {{ component.name }}{% endif %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% include "cube/includes/default_form.html" %}
+{% endblock %}

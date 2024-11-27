@@ -1,0 +1,76 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}{{ object.license }} - Delete{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    {% if is_context_auth %}
+      <li><a href="{% url "cube:authorizedcontext_list" %}">Authorized contexts</a></li>
+    {% else %}
+      <li><a href="{% url "cube:derogation_list" %}">Derogations</a></li>
+    {% endif %}
+    <li>Delete {{ object.license.spdx_id }} {% if is_context_auth %}authorized context{% else %}derogation{% endif %}</li>
+  </ul>
+{% endblock %}
+{% block herozone %}
+  <h1 class="title">Delete {% if is_context_auth %}authorized context{% else %}derogation{% endif %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete the following {% if is_context_auth %}authorized context{% else %}derogation{% endif %}?</p>
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>License</th>
+            {% if is_context_auth %}
+              <th>Product category</th>
+            {% else %}
+              <th>Product / Release</th>
+            {% endif %}
+            <th>Component / Version</th>
+            <th>Scope</th>
+            <th>Linking</th>
+            <th>Modification</th>
+            <th>Exploitation</th>
+            <th>Justification</th>
+            <th>Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="{% url 'cube:license_detail' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
+                {{ derogation.license.spdx_id }}
+              </span></a>
+            </td>
+            {% if is_context_auth %}
+              <td>{{ derogation.category|default:"<em>Any</em>" }}</td>
+            {% else %}
+              <td>{{ derogation.release|default:derogation.product }}</td>
+            {% endif %}
+            <td>{{ derogation.version|default:derogation.component|default:"<em>Any</em>" }}</td>
+            <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
+            <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
+            <td>{{ derogation.get_modification_display|default:"<em>Any</em>" }}</td>
+            <td>{{ derogation.get_exploitation_display|default:"<em>Any</em>" }}</td>
+            <td>{{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}</td>
+            <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    {{ form }}
+    <input type="submit" class="button is-primary" value="Confirm">
+  </form>
+{% endblock %}
