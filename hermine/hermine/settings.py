@@ -80,6 +80,10 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+if getattr(config, "REMOTE_USER_HEADER", None):
+    MIDDLEWARE.append("cube.middlewares.RemoteUserMiddleware")
+    REMOTE_USER_HEADER = config.REMOTE_USER_HEADER
+
 ROOT_URLCONF = "hermine.urls"
 
 TEMPLATES = [
