@@ -14,7 +14,11 @@ SPDX-License-Identifier: MIT
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{% static 'favicon.ico' %}">
-    {% include "hermine/index.html" %}
+
+    <!-- Vite build modules -->
+    <script src="{% static 'hermine/modules.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'hermine/style.css' %}" />
+
     <title>{% block title %}{% endblock %} - Hermine
     </title>
   </head>
