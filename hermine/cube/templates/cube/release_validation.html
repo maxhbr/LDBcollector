@@ -77,7 +77,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               <a href="{% url 'cube:release_licensecuration_create' usage.id %}">Add curation rule</a>
             {% endif %}</td>
             <td>{% if perms.cube.change_version %}
-              <a href="{% url 'admin:cube_version_change' usage.version.id  %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+              <a href="{% url "cube:version_update" usage.version.component.id usage.version.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
             {% endif %}</td>
           </tr>
         {% endfor %}
@@ -136,14 +136,14 @@ SPDX-License-Identifier: AGPL-3.0-only
                   (No website)
                 {% endif %}
               </td>
-              <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{ usage.version.version_number }}</a></td>
+              <td><a href="{% url "cube:version_update" usage.version.component.id usage.version.id %}?from={{ request.path|urlencode }}">{{ usage.version.version_number }}</a></td>
               <td>{{ usage.scope }}</td>
               <td>{{ usage.version.spdx_valid_license_expr }} </td>
               <td>{% if perms.cube.add_licensecuration %}
                 <a href="{% url 'cube:release_andsvalidation_create' usage.id %}">Confirm / Correct</a>
               {% endif %}</td>
               <td>{% if perms.cube.change_version %}
-                <a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+                <a href="{% url "cube:version_update" usage.version.component.id usage.version.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
               {% endif %}</td>
             </tr>
           {% endfor %}
@@ -507,7 +507,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             </td>
             <td>
               {% if perms.cube.change_derogation %}<a href="{% url "admin:cube_derogation_change" derogation.id %}" title="Edit this derogation"><span class="icon"><i class="fas fa-edit"></i></span></a>{% endif %}
-              {% if perms.cube.delete_derogation %} | <a href="{% url "admin:cube_derogation_delete" derogation.id %}" title="Delete this derogation"><span class="icon"><i class="fas fa-trash"></i></span></a>{% endif %}
+              {% if perms.cube.delete_derogation %} | <a href="{% url "cube:derogation_delete" derogation.id %}?from={{ request.path|urlencode }}" title="Delete this derogation"><span class="icon"><i class="fas fa-trash"></i></span></a>{% endif %}
             </td>
           </tr>
         {% endfor %}

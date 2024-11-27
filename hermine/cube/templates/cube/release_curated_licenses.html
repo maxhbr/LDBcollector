@@ -64,7 +64,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 {% endif %}
               </td>
               <td>{% if perms.cube.change_version %}
-                <a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+                <a href="{% url "cube:version_update" usage.version.component.id usage.version.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
               {% endif %}</td>
             </tr>
           {% endfor %}

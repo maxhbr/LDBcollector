@@ -51,7 +51,7 @@ class AbstractComponentRule(models.Model):
         elif self.component:
             return f"{self.component} (any version)"
         else:
-            return "any"
+            return "any component"
 
     def clean(self):
         """Model validation

@@ -24,6 +24,17 @@ SPDX-License-Identifier: AGPL-3.0-only
   </h1>
 {% endblock %}
 
+{% block actions %}
+  {% if perms.cube.add_component %}
+    <a class="button is-info is-inverted" href="{% url 'cube:component_create'%}">
+      <span class="icon">
+        <i class="fas fa-plus"></i>
+      </span>
+      <span>Create a new component</span>
+    </a>
+  {% endif %}
+{% endblock %}
+
 {% block content %}
   {% include "cube/includes/list_nav.html" %}
   <p>The list of the 3rd party (mostly Open Source) components that you reuse in your products.</p>

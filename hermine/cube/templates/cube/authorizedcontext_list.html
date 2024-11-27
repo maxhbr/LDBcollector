@@ -60,7 +60,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                   <a href="{% url "cube:authorizedcontext_update" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
                 {% endif %}{% if perms.cube.change_derogation and perms.cube.delete_derogation %} | {% endif %}
                 {% if perms.cube.delete_derogation %}
-                  <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                  <a href="{% url "cube:derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
                 {% endif %}
               </td>
           {% endfor %}
