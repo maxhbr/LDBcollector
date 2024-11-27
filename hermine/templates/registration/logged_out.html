@@ -12,8 +12,10 @@ SPDX-License-Identifier: MIT
 
     <link rel="preload" href="{% static 'cube/css/login.css' %}" as="style">
     <link rel="stylesheet" type="text/css" href="{% static 'cube/css/login.css' %}">
-    {% include "hermine/index.html" %}
 
+    <!-- Vite build modules -->
+    <script src="{% static 'hermine/modules.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'hermine/style.css' %}" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
