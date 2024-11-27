@@ -5,8 +5,12 @@
         Total Mappings: <tspan font-weight="bold">{total_mappings}</tspan>
     </text>
 
-    <text x="30" y="100" font-family="Arial, sans-serif" font-size="20" fill="{text_color}">
-        Top Licenses:
+    <text x="30" y="100" font-family="Arial, sans-serif" font-size="24" fill="{text_color}">
+        Total number of licenses: <tspan font-weight="bold">{total_number_licenses}</tspan>
+    </text>
+
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="24" fill="{text_color}">
+        Top mapped licenses:
     </text>
 
     {license_text}

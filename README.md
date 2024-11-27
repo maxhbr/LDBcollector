@@ -2,7 +2,7 @@
 
 ## License Mapping Statistics
 
-![License Statistics](stats.svg)
+[![stats.svg](stats.svg)](#License-Mapping-Statistics)
 
 ## Overview
 

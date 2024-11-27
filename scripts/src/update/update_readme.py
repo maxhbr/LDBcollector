@@ -12,11 +12,11 @@ def count_canonical_licenses(license_data):
 
 
 def prepare_top_licenses_text(canonical_counts):
-    top_3_canonical = canonical_counts.most_common(5)
-    return top_3_canonical
+    top_canonical = canonical_counts.most_common(5)
+    return top_canonical
 
 
-def generate_svg(total_mappings, top_licenses, is_dark_mode=False):
+def generate_svg(total_mappings, total_number_licenses, top_licenses, is_dark_mode=False):
     # Define colors for light and dark modes
     if is_dark_mode:
         background_color = "#1e1e1e"  # Dark background
@@ -29,7 +29,7 @@ def generate_svg(total_mappings, top_licenses, is_dark_mode=False):
 
     # Generate the top licenses section
     license_text = "".join(
-        f'<text x="30" y="{140 + i * 30}" font-family="Arial, sans-serif" '
+        f'<text x="30" y="{180 + i * 30}" font-family="Arial, sans-serif" '
         f'font-size="18" fill="{accent_color}">{name}: <tspan font-weight="bold">{count}</tspan></text>'
         for i, (name, count) in enumerate(top_licenses)
     )
@@ -40,6 +40,7 @@ def generate_svg(total_mappings, top_licenses, is_dark_mode=False):
             background_color=background_color,
             text_color=text_color,
             total_mappings=total_mappings,
+            total_number_licenses=total_number_licenses,
             license_text=license_text
         )
 
@@ -61,8 +62,10 @@ def update_readme(license_data_file_path, svg_file_path):
     canonical_counts = count_canonical_licenses(license_data)
     top_licenses = prepare_top_licenses_text(canonical_counts)
 
+    total_number_licenses = len(canonical_counts)
+
     # Generate and save SVG
-    svg_content = generate_svg(total_mappings, top_licenses, is_dark_mode=True)
+    svg_content = generate_svg(total_mappings, total_number_licenses, top_licenses, is_dark_mode=True)
     save_svg(svg_content, svg_file_path)
 
     print("SVG updated successfully.")
