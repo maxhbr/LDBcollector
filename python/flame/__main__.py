@@ -259,7 +259,7 @@ def main():
             print(formatted)
         except Exception as e:
             if args.verbose:
-                print(traceback.format_exc())
+                print(traceback.format_exc(), file=sys.stderr)
 
             formatted, warnings = formatter.format_error(e, args.verbose)
             print(formatted)
