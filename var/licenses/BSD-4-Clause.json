@@ -21,6 +21,7 @@
         "scancode:bsd-original",
         "Original BSD license",
         "bsd-original",
-        "BSD-4-Clause-License"
+        "BSD-4-Clause-License",
+        "BSD4.4 clause"
     ]
 }

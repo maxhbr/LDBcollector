@@ -49,6 +49,7 @@ LICENSE_OPERATORS_TAG = 'license_operators'
 #
 # Note: OR and AND needs a space around them to prevent splitting for
 # example "OReilly" in to "OR eilly"
+LICENSE_SPLIT_RE_CLEAN = r' AND | OR |\(|\)'
 LICENSE_SPLIT_RE = r'( AND | OR |\(|\))'
 
 class Validation(Enum):
@@ -551,7 +552,7 @@ class FossLicenses:
         try:
             compat_license_expression = self.expression_license(license_expression, validations=validations, update_dual=False)
             fixed_license_expression = compat_license_expression['identified_license']
-        except Exception:
+        except Exception as e:
             fixed_license_expression = license_expression
             ambig_aliases = {}
             for ambig in self.ambiguities_list():
@@ -563,8 +564,7 @@ class FossLicenses:
                 if alias in fixed_license_expression:
                     fixed_license_expression = re.sub(re.escape(alias), ambig_aliases[alias], fixed_license_expression)
                     break
-
-        compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE, fixed_license_expression)]
+        compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE_CLEAN, fixed_license_expression)]
         compat_licenses = [x for x in compat_licenses if x]
         unknown_symbols = set()
         for compat_license in compat_licenses:
@@ -706,7 +706,7 @@ class FossLicenses:
                 self.__validate_license_relaxed(license_expression)
             if Validation.OSADL in validations:
                 compat_license_expression = self.expression_compatibility_as(license_expression)['compat_license']
-                compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', compat_license_expression)]
+                compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE_CLEAN, compat_license_expression)]
                 compat_licenses = [x for x in compat_licenses if x]
                 compat_support = self.__validate_compatibilities_support(compat_licenses)
                 self.__validate_licenses_osadl(compat_support)
