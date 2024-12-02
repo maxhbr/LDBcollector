@@ -210,6 +210,47 @@ text = '''
                      END OF TERMS AND CONDITIONS
 '''
 
+package = sigrok-firmware
+location = https://github.com/sigrokproject/sigrok-firmware/blob/master/asix-sigma/LICENSE.Sigma
+text = '''
+Copyright (c) 2006-2016, ASIX s.r.o.
+All rights reserved.
+
+Redistribution. Redistribution and use in hex coded form, without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions must reproduce the above copyright notice and the
+   following disclaimer in the documentation and/or other materials
+   provided with the distribution.
+
+* Redistributions must retain the same format. It is not allowed to
+   include or distribute documentation about the format itself in any
+   other form than source files.
+
+* Neither the name of ASIX s.r.o. nor the names of
+   its suppliers may be used to endorse or promote products derived
+   from this software without specific prior written permission.
+
+* No reverse engineering, decompilation, or disassembly of this
+   software is permitted.
+
+* Modifications and/or source files may be requested from ASIX s.r.o.
+   in well-founded cases.
+
+THIS SOFTWARE IS PROVIDED BY ASIX S.R.O. ''AS IS'' AND ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL ASIX S.R.O. BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+'''
+
 package =
 location =
 text = '''
