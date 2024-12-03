@@ -212,15 +212,77 @@ type LicenseError struct {
 // User struct is representation of user information.
 type User struct {
 	Id           int64   `json:"id" gorm:"primary_key" example:"123"`
-	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
-	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`
+	Username     *string `json:"username" gorm:"unique;not null" example:"fossy"`
+	DisplayName  *string `json:"display_name" gorm:"not null" example:"fossy"`
+	UserEmail    *string `json:"user_email" gorm:"unique;not null" example:"fossy@org.com"`
+	Userlevel    *string `json:"user_level" gorm:"not null" example:"USER"`
 	Userpassword *string `json:"-"`
+	Active       *bool   `json:"-" gorm:"not null;default:true"`
 }
 
-type UserInput struct {
-	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
-	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`
-	Userpassword *string `json:"password,omitempty" binding:"required" example:"fossy"`
+func (u *User) BeforeCreate(tx *gorm.DB) (err error) {
+	if u.Username != nil && *u.Username == "" {
+		return errors.New("username cannot be an empty string")
+	}
+	if u.DisplayName != nil && *u.DisplayName == "" {
+		return errors.New("display_name cannot be an empty string")
+	}
+	if u.UserEmail != nil && *u.UserEmail == "" {
+		return errors.New("user email cannot be an empty string")
+	}
+	if u.Userlevel != nil && *u.Userlevel == "" {
+		return errors.New("user level cannot be an empty string")
+	}
+	return
+}
+
+func (u *User) BeforeUpdate(tx *gorm.DB) (err error) {
+	if u.Username != nil && *u.Username == "" {
+		return errors.New("username cannot be an empty string")
+	}
+	if u.DisplayName != nil && *u.DisplayName == "" {
+		return errors.New("display_name cannot be an empty string")
+	}
+	if u.UserEmail != nil && *u.UserEmail == "" {
+		return errors.New("user email cannot be an empty string")
+	}
+	if u.Userlevel != nil && *u.Userlevel == "" {
+		return errors.New("user level cannot be an empty string")
+	}
+	if u.Userpassword != nil && *u.Userpassword == "" {
+		return errors.New("user password cannot be an empty string")
+	}
+	return
+}
+
+type UserCreate struct {
+	Id           int64   `json:"-"`
+	Username     *string `json:"username" validate:"required" example:"fossy"`
+	DisplayName  *string `json:"display_name" validate:"required" example:"fossy"`
+	UserEmail    *string `json:"user_email" validate:"required,email" example:"fossy@org.com"`
+	Userlevel    *string `json:"user_level" validate:"required,oneof=USER ADMIN" example:"ADMIN"`
+	Userpassword *string `json:"user_password" example:"fossy"`
+	Active       *bool   `json:"-"`
+}
+
+type UserUpdate struct {
+	Id           int64   `json:"-"`
+	Username     *string `json:"username" example:"fossy"`
+	DisplayName  *string `json:"display_name" example:"fossy"`
+	UserEmail    *string `json:"user_email" validate:"omitempty,email"`
+	Userlevel    *string `json:"user_level" validate:"omitempty,oneof=USER ADMIN" example:"ADMIN"`
+	Userpassword *string `json:"user_password"`
+	Active       *bool   `json:"active"`
+}
+
+type ProfileUpdate struct {
+	Id           int64   `json:"-"`
+	Username     *string `json:"-"`
+	DisplayName  *string `json:"display_name" example:"fossy"`
+	UserEmail    *string `json:"user_email" validate:"omitempty,email"`
+	Userlevel    *string `json:"-"`
+	Userpassword *string `json:"user_password"`
+	Active       *bool   `json:"-"`
 }
 
 type UserLogin struct {

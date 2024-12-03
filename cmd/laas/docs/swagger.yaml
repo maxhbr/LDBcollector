@@ -559,6 +559,16 @@ definitions:
         example: 20
         type: integer
     type: object
+  models.ProfileUpdate:
+    properties:
+      display_name:
+        example: fossy
+        type: string
+      user_email:
+        type: string
+      user_password:
+        type: string
+    type: object
   models.SearchLicense:
     properties:
       field:
@@ -590,33 +600,46 @@ definitions:
     type: object
   models.User:
     properties:
+      display_name:
+        example: fossy
+        type: string
       id:
         example: 123
         type: integer
-      userlevel:
-        example: admin
+      user_email:
+        example: fossy@org.com
+        type: string
+      user_level:
+        example: USER
         type: string
       username:
         example: fossy
         type: string
-    required:
-    - userlevel
-    - username
     type: object
-  models.UserInput:
+  models.UserCreate:
     properties:
-      password:
+      display_name:
         example: fossy
         type: string
-      userlevel:
-        example: admin
+      user_email:
+        example: fossy@org.com
+        type: string
+      user_level:
+        enum:
+        - USER
+        - ADMIN
+        example: ADMIN
+        type: string
+      user_password:
+        example: fossy
         type: string
       username:
         example: fossy
         type: string
     required:
-    - password
-    - userlevel
+    - display_name
+    - user_email
+    - user_level
     - username
     type: object
   models.UserLogin:
@@ -642,6 +665,27 @@ definitions:
       status:
         example: 200
         type: integer
+    type: object
+  models.UserUpdate:
+    properties:
+      active:
+        type: boolean
+      display_name:
+        example: fossy
+        type: string
+      user_email:
+        type: string
+      user_level:
+        enum:
+        - USER
+        - ADMIN
+        example: ADMIN
+        type: string
+      user_password:
+        type: string
+      username:
+        example: fossy
+        type: string
     type: object
 info:
   contact:
@@ -1153,6 +1197,10 @@ paths:
               token:
                 type: string
             type: object
+        "401":
+          description: Incorrect username or password
+          schema:
+            $ref: '#/definitions/models.LicenseError'
       summary: Login
       tags:
       - Users
@@ -1838,6 +1886,10 @@ paths:
       description: Get all service users
       operationId: GetAllUsers
       parameters:
+      - description: Active user only
+        in: query
+        name: active
+        type: boolean
       - description: Page number
         in: query
         name: page
@@ -1862,6 +1914,34 @@ paths:
       summary: Get users
       tags:
       - Users
+    patch:
+      consumes:
+      - application/json
+      description: Users can update their profile using this endpoint
+      operationId: UpdateProfile
+      parameters:
+      - description: Profile fields to update
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.ProfileUpdate'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.UserResponse'
+        "400":
+          description: Invalid json body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Users can update their profile using this endpoint
+      tags:
+      - Users
     post:
       consumes:
       - application/json
@@ -1873,7 +1953,7 @@ paths:
         name: user
         required: true
         schema:
-          $ref: '#/definitions/models.UserInput'
+          $ref: '#/definitions/models.UserCreate'
       produces:
       - application/json
       responses:
@@ -1894,18 +1974,43 @@ paths:
       summary: Create new user
       tags:
       - Users
-  /users/{id}:
+  /users/{username}:
+    delete:
+      consumes:
+      - application/json
+      description: Deactivate an user
+      operationId: DeleteUser
+      parameters:
+      - description: Username of the user to be marked as inactive
+        in: path
+        name: username
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+        "404":
+          description: No user with given username found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Deactivate user
+      tags:
+      - Users
     get:
       consumes:
       - application/json
-      description: Get a single user by ID
+      description: Get a single user by username
       operationId: GetUser
       parameters:
-      - description: User ID
+      - description: Username
         in: path
-        name: id
+        name: username
         required: true
-        type: integer
+        type: string
       produces:
       - application/json
       responses:
@@ -1926,9 +2031,71 @@ paths:
       summary: Get a user
       tags:
       - Users
+    patch:
+      consumes:
+      - application/json
+      description: Update a service user, requires admin rights
+      operationId: UpdateUser
+      parameters:
+      - description: username of the user to be updated
+        in: path
+        name: username
+        required: true
+        type: string
+      - description: User to update
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.UserUpdate'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.UserResponse'
+        "400":
+          description: Invalid json body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "403":
+          description: This resource requires elevated access rights
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Update user, requires admin rights
+      tags:
+      - Users
+  /users/oidc:
+    post:
+      consumes:
+      - application/json
+      description: Create a new service user via oidc id token
+      operationId: CreateOidcUser
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.UserResponse'
+        "400":
+          description: Invalid json body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "409":
+          description: User already exists
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Create new user via oidc id token
+      tags:
+      - Users
 securityDefinitions:
   ApiKeyAuth:
-    description: Token from /login endpoint
+    description: Token from /login endpoint. Enter the token with the `Bearer ` prefix,
+      e.g. \"Bearer eyJhbGciOiJ.....\"
     in: header
     name: Authorization
     type: apiKey

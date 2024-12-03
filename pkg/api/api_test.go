@@ -205,12 +205,14 @@ func TestSearchInLicense2(t *testing.T) {
 
 func TestGetUser(t *testing.T) {
 	password := "fossy"
+	username := "fossy"
+	userlevel := "ADMIN"
 	expectUser := models.User{
-		Username:     "fossy",
+		Username:     &username,
 		Userpassword: &password,
-		Userlevel:    "admin",
+		Userlevel:    &userlevel,
 	}
-	w := makeRequest("GET", "/api/user/1", nil, false)
+	w := makeRequest("GET", "/api/user/fossy", nil, false)
 	assert.Equal(t, http.StatusOK, w.Code)
 
 	var res models.UserResponse
@@ -225,10 +227,12 @@ func TestGetUser(t *testing.T) {
 
 func TestCreateUser(t *testing.T) {
 	password := "abc123"
+	username := "fossy"
+	userlevel := "ADMIN"
 	user := models.User{
-		Username:     "general_user",
+		Username:     &username,
 		Userpassword: &password,
-		Userlevel:    "participant",
+		Userlevel:    &userlevel,
 	}
 	w := makeRequest("POST", "/api/user", user, true)
 	assert.Equal(t, http.StatusOK, w.Code)

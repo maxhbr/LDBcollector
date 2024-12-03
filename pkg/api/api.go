@@ -45,7 +45,7 @@ import (
 //	@securityDefinitions.apikey	ApiKeyAuth
 //	@in							header
 //	@name						Authorization
-//	@description				Token from /login endpoint
+//	@description				Token from /login endpoint. Enter the token with the `Bearer ` prefix, e.g. \"Bearer eyJhbGciOiJ.....\"
 
 const (
 	DEFAULT_PORT                            = "8080"
@@ -97,6 +97,10 @@ func Router() *gin.Engine {
 			{
 				apiCollection.GET("", GetAPICollection)
 			}
+			oidc := unAuthorizedv1.Group("/users/oidc")
+			{
+				oidc.POST("", auth.CreateOidcUser)
+			}
 		}
 
 		authorizedv1 := r.Group("/api/v1")
@@ -110,7 +114,7 @@ func Router() *gin.Engine {
 				licenses.GET("/preview", GetAllLicensePreviews)
 				licenses.POST("", CreateLicense)
 				licenses.PATCH(":shortname", UpdateLicense)
-				licenses.POST("import", ImportLicenses)
+				licenses.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), ImportLicenses)
 			}
 			search := authorizedv1.Group("/search")
 			{
@@ -118,9 +122,12 @@ func Router() *gin.Engine {
 			}
 			users := authorizedv1.Group("/users")
 			{
-				users.GET("", auth.GetAllUser)
-				users.GET(":id", auth.GetUser)
-				users.POST("", auth.CreateUser)
+				users.GET("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetAllUser)
+				users.GET(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetUser)
+				users.POST("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.CreateUser)
+				users.PATCH("", auth.UpdateProfile)
+				users.PATCH(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.UpdateUser)
+				users.DELETE(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.DeleteUser)
 			}
 			obligations := authorizedv1.Group("/obligations")
 			{
@@ -130,15 +137,15 @@ func Router() *gin.Engine {
 				obligations.GET(":topic/audits", GetObligationAudits)
 				obligations.GET("export", ExportObligations)
 				obligations.POST("", CreateObligation)
-				obligations.POST("import", ImportObligations)
+				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), ImportObligations)
 				obligations.PATCH(":topic", UpdateObligation)
 				obligations.DELETE(":topic", DeleteObligation)
-				obligations.GET("/types", GetAllObligationType)
-				obligations.POST("/types", CreateObligationType)
-				obligations.DELETE("/types/:type", DeleteObligationType)
-				obligations.GET("/classifications", GetAllObligationClassification)
-				obligations.POST("/classifications", CreateObligationClassification)
-				obligations.DELETE("/classifications/:classification", DeleteObligationClassification)
+				obligations.GET("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationType)
+				obligations.POST("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationType)
+				obligations.DELETE("/types/:type", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationType)
+				obligations.GET("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationClassification)
+				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
+				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
 			}
 			obMap := authorizedv1.Group("/obligation_maps")
 			{
@@ -201,6 +208,10 @@ func Router() *gin.Engine {
 			{
 				apiCollection.GET("", GetAPICollection)
 			}
+			oidc := unAuthorizedv1.Group("/users/oidc")
+			{
+				oidc.POST("", auth.CreateOidcUser)
+			}
 		}
 
 		authorizedv1 := r.Group("/api/v1")
@@ -214,22 +225,25 @@ func Router() *gin.Engine {
 			}
 			users := authorizedv1.Group("/users")
 			{
-				users.GET("", auth.GetAllUser)
-				users.GET(":id", auth.GetUser)
-				users.POST("", auth.CreateUser)
+				users.GET("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetAllUser)
+				users.GET(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetUser)
+				users.POST("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.CreateUser)
+				users.PATCH(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.UpdateUser)
+				users.PATCH("", auth.UpdateProfile)
+				users.DELETE(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.DeleteUser)
 			}
 			obligations := authorizedv1.Group("/obligations")
 			{
 				obligations.POST("", CreateObligation)
-				obligations.POST("import", ImportObligations)
+				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), ImportObligations)
 				obligations.PATCH(":topic", UpdateObligation)
 				obligations.DELETE(":topic", DeleteObligation)
-				obligations.GET("/types", GetAllObligationType)
-				obligations.POST("/types", CreateObligationType)
-				obligations.DELETE("/types/:type", DeleteObligationType)
-				obligations.GET("/classifications", GetAllObligationClassification)
-				obligations.POST("/classifications", CreateObligationClassification)
-				obligations.DELETE("/classifications/:classification", DeleteObligationClassification)
+				obligations.GET("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationType)
+				obligations.POST("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationType)
+				obligations.DELETE("/types/:type", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationType)
+				obligations.GET("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationClassification)
+				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
+				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
 			}
 			obMap := authorizedv1.Group("/obligation_maps")
 			{

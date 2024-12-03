@@ -718,7 +718,7 @@ func addChangelogsForLicenseUpdate(tx *gorm.DB, username string,
 
 	if len(changes) != 0 {
 		var user models.User
-		if err := tx.Where(models.User{Username: username}).First(&user).Error; err != nil {
+		if err := tx.Where(models.User{Username: &username}).First(&user).Error; err != nil {
 			return err
 		}
 
