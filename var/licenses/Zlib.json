@@ -27,6 +27,8 @@
         "scancode:zlib",
         "scancode:d-zlib",
         "osi:Zlib",
-        "zlib-libpng"
+      "zlib-libpng",
+      "Zlib license",
+      "zlib license"
     ]
 }
