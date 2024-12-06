@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.62
+Version:        1.63
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,11 @@ make check-grammar
 
 
 %changelog
+* Fri Dec 06 2024 Miroslav Suchý <msuchy@redhat.com> 1.63-1
+- add LICENSE.Sigma from sigrok-firmware
+- Add public-domain text for python-zmq
+- add public domain for mg
+
 * Fri Nov 22 2024 Miroslav Suchý <msuchy@redhat.com> 1.62-1
 - add Avasys public license as allowed-firmware
 - add public domain dedication for python-hexdump
