@@ -272,7 +272,9 @@
                 "Python Software License",
                 "Python-Software-Foundation-License",
                 "Python Software Foundation",
-                "Python Software Foundation License (PSFL)"
+              "Python Software Foundation License (PSFL)",
+              "The Python Software Foundation License",
+              "PSF-License"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
