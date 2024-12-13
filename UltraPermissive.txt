@@ -25,6 +25,12 @@ text = '''
 text here
 '''
 
+package = libcsv
+location = https://github.com/rgamble/libcsv/blob/b1d5212831842ee5869d99bc208a21837e4037d5/README#L18
+text = '''
+The example programs are not covered under a license and can be used without restriction.
+'''
+
 package = python-utmp
 # in file debian/copyright
 location = http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/python-utmp_0.8.2.tar.gz
