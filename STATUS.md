@@ -2,8 +2,8 @@
 |Type            | Number |
 |----------------|--------|
 |Licenses        | 184    |
-|Aliases         | 2536     |
+|Aliases         | 2550     |
 |Compatibilities | 23     |
 |Operators       | 14   |
-|Ambiguities     | 147 |
-|Compounds       | 33   |
+|Ambiguities     | 149 |
+|Compounds       | 35   |
