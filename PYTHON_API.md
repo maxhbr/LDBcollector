@@ -19,14 +19,16 @@ pip install .
 # Using
 
 Create a LicenseDatabase object
-```python
+```python3
+python3
 >>> from flame.license_db import FossLicenses
 >>> fl = FossLicenses()
 
 ```
 
 Get the license for "BSD3 & x11-keith-packard"
-```python
+```python3
+python3
 >>> from flame.license_db import FossLicenses
 >>> fl = FossLicenses()
 >>> expression = fl.expression_license('BSD3 & x11-keith-packard')
@@ -36,7 +38,8 @@ BSD-3-Clause AND LicenseRef-flame-x11-keith-packard
 ```
 
 Get the compatible license expression for "BSD3 & x11-keith-packard"
-```python
+```python3
+python3
 >>> from flame.license_db import FossLicenses
 >>> fl = FossLicenses()
 >>> expression = fl.expression_compatibility_as('BSD3 & x11-keith-packard')
@@ -60,6 +63,7 @@ If you want to add your own licenses (e.g. your company's) you can do this in tw
 Here you don't need the config file and instead pass the directory in a config object directly to `FossLicenses`.
 
 ```python3
+python3
 >>> from flame.license_db import FossLicenses
 >>> fl = FossLicenses(config={'additional-license-dir': 'licenses'})
 >>> expression = fl.expression_compatibility_as('LicenseRef-mycompany-mylicense')
@@ -79,7 +83,8 @@ The config file, `flame-config.json`, looks like this:
 
 Pass the config file using the environment varialbe `FLAME_USER_CONFIG`.
 
-```FLAME_USER_CONFIG=flame-config.json python3
+```
+FLAME_USER_CONFIG=flame-config.json python3
 >>> from flame.license_db import FossLicenses
 >>> fl = FossLicenses()
 >>> expression = fl.expression_compatibility_as('LicenseRef-mycompany-mylicense')
