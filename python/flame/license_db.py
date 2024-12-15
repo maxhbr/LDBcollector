@@ -49,8 +49,8 @@ LICENSE_OPERATORS_TAG = 'license_operators'
 #
 # Note: OR and AND needs a space around them to prevent splitting for
 # example "OReilly" in to "OR eilly"
-LICENSE_SPLIT_RE_CLEAN = r' AND | OR |\(|\)'
 LICENSE_SPLIT_RE = r'( AND | OR |\(|\))'
+LICENSE_SPLIT_RE_CLEAN = r' AND | OR |\(|\) | \||\&'
 
 class Validation(Enum):
     RELAXED = 1
@@ -97,6 +97,7 @@ class FossLicenses:
         self.supported_licenses = None
         self.compat_cache = {}
         self.license_cache = {}
+        self.needles_map = {}
 
     def __str_to_loggin_info(self, config):
         logging_level = config.get('level')
@@ -159,6 +160,9 @@ class FossLicenses:
                 data = self.__read_license_file(license_file, check)
                 licenses[data['spdxid']] = data
                 for alias in data[FLAME_ALIASES_TAG]:
+                    # remove multiple blanks
+                    alias = re.sub(' [ ]*', ' ', alias)
+
                     if alias in aliases:
                         raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
 
@@ -245,8 +249,45 @@ class FossLicenses:
             'identified_via': ret_id,
         }
 
+    def __init_needles(self, needles, needle_tag, license_expression, allow_letter=False):
+        if needle_tag not in self.needles_map:
+            my_needles = []
+            for needle in reversed(collections.OrderedDict(sorted(needles.items(), key=lambda x: len(x[0])))):
+
+                if allow_letter:
+                    reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
+                else:
+                    reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&)' % re.escape(needle)
+                my_needles.append([re.compile(reg_exp), needle])
+            self.needles_map[needle_tag] = my_needles
+
+        return self.needles_map[needle_tag]
+
     def __update_license_expression_helper(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
+        self.__init_needles(needles, needle_tag, license_expression, allow_letter)
+        for c_needle in self.needles_map[needle_tag]:
+            regexp = c_needle[0]
+            needle = c_needle[1]
+            if allow_letter:
+                extra_add = ' '
+            else:
+                extra_add = ''
+
+            if regexp.search(license_expression):
+                replacement = needles[needle]
+                extra_add = " "
+                license_expression = regexp.sub(f'\\1 {extra_add}{replacement}{extra_add}\\2', license_expression)
+
+        fixed = re.sub(r'\s\s*', ' ', license_expression).strip()
+        return {
+            'license_expression': fixed,
+            'identifications': replacements,
+        }
+
+    def __update_license_expression_helper_orig(self, needles, needle_tag, license_expression, allow_letter=False):
+        replacements = []
+
         for needle in reversed(collections.OrderedDict(sorted(needles.items(), key=lambda x: len(x[0])))):
             if allow_letter:
                 reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
@@ -318,7 +359,7 @@ class FossLicenses:
 
         """
         if not isinstance(license_expression, str):
-            raise FlameException('Wrong type (type(license_expresssion)) of input to the function expression_license. Only string is allowed.')
+            raise FlameException(f'Wrong type ({type(license_expression)}) of input to the function expression_license. Only string is allowed. License expressions: {license_expression}')
 
         # remove multiple blanks
         license_expression = re.sub(' [ ]*', ' ', license_expression)
@@ -345,6 +386,7 @@ class FossLicenses:
 
         tmp_license_expression = ret['license_expression']
         for alias in reversed(collections.OrderedDict(sorted(aliases.items(), key=lambda x: len(x[0])))):
+
             needle = r'(?:\s+|^)%s(?:\s+|$)' % re.escape(alias.replace(" and ", " AND "))
             if re.search(needle, tmp_license_expression):
                 real_lic = self.license_db[AMBIG_TAG]['aliases'][alias]
@@ -552,7 +594,7 @@ class FossLicenses:
         try:
             compat_license_expression = self.expression_license(license_expression, validations=validations, update_dual=False)
             fixed_license_expression = compat_license_expression['identified_license']
-        except Exception as e:
+        except Exception:
             fixed_license_expression = license_expression
             ambig_aliases = {}
             for ambig in self.ambiguities_list():
@@ -564,6 +606,7 @@ class FossLicenses:
                 if alias in fixed_license_expression:
                     fixed_license_expression = re.sub(re.escape(alias), ambig_aliases[alias], fixed_license_expression)
                     break
+
         compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE_CLEAN, fixed_license_expression)]
         compat_licenses = [x for x in compat_licenses if x]
         unknown_symbols = set()
@@ -660,7 +703,7 @@ class FossLicenses:
 
         >>> fl = FossLicenses()
         >>> compat = fl.expression_compatibility_as('x11-keith-packard')
-        >>> print(compat['compatibilities'][0]['name'])
+        >>> print(compat['compat_license'])
         HPND
 
         """
@@ -706,7 +749,7 @@ class FossLicenses:
                 self.__validate_license_relaxed(license_expression)
             if Validation.OSADL in validations:
                 compat_license_expression = self.expression_compatibility_as(license_expression)['compat_license']
-                compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE_CLEAN, compat_license_expression)]
+                compat_licenses = [x.strip() for x in re.split('\\(|OR|AND|\\)', compat_license_expression)]
                 compat_licenses = [x for x in compat_licenses if x]
                 compat_support = self.__validate_compatibilities_support(compat_licenses)
                 self.__validate_licenses_osadl(compat_support)

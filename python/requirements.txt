@@ -4,6 +4,6 @@
 
 jsonschema
 PyYAML
-license_expression
+license_expression == 30.3.1
 osadl_matrix
 spdx_license_list
