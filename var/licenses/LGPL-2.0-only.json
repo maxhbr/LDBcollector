@@ -7,11 +7,23 @@
   "scancode_key": "lgpl-2.0",
   "spdxid": "LGPL-2.0-only",
   "aliases": [
-      "LGPL-2.0-only",
-      "scancode://lgpl-2.0",
-      "LGPL 2.0",
-      "LGPLv2.0",
-      "LGPL-2",
-      "lgpl-2.0"
+    "LGPL-2.0-only",
+    "scancode://lgpl-2.0",
+    "LGPL 2.0",
+    "LGPLv2.0",
+    "LGPL-2",
+    "lgpl-2.0",
+    "GNU Library General Public License v2 only",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+    "GNU Lesser General Public License v2 (LGPLv2)",
+    "LGPLv2",
+    "LGPL2",
+    "GNU Library General Public License version 2",
+    "License :: OSI Approved :: GNU Lesser General Public License v2",
+    "GNU Lesser General Public v2",
+    "LGPL v2",
+    "GPL LGPL-2",
+    "LGPLGNU LIBRARY GENERAL PUBLIC LICENSE Version 2",
+    "GNU LGPLv2"
   ]
 }
