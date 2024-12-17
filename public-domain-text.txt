@@ -29,6 +29,25 @@ text = '''
 text here
 '''
 
+package = stb
+location = https://github.com/nothings/stb/blob/5c205738c191bcb0abc65c4febfa9bd25ff35234/tests/caveview/stb_gl.h#L1-L2
+text = '''
+Originally written by Jeff Roberts at RAD Game Tools - 2015/10/20.
+Hereby placed in public domain.
+'''
+
+package = stb
+location = https://github.com/nothings/stb/blob/5c205738c191bcb0abc65c4febfa9bd25ff35234/tests/caveview/stb_gl.h#L1
+text = '''
+stbgl - v0.04 - Sean Barrett 2008 - public domain
+'''
+
+package = stb
+location = https://github.com/nothings/stb/blob/5c205738c191bcb0abc65c4febfa9bd25ff35234/tests/caveview/win32/SDL_windows_main.c#L2
+text = '''
+SDL_windows_main.c, placed in the public domain by Sam Lantinga  4/13/98
+'''
+
 package = python-zmq
 location = examples/device/device.py
 text = '''
