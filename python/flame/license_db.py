@@ -418,8 +418,8 @@ class FossLicenses:
             try:
                 updated_license = str(self.license_expression.parse(ret['license_expression']))
             except boolean.boolean.ParseError as e:
-                update_problem = f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}'
-                updated_license = updates_object['license_expression']
+                update_problem = f'Could not parse "ret["license_expression"]". Exception: {e}'
+                updated_license = ret['license_expression']
 
         license_parsed = updated_license
 
