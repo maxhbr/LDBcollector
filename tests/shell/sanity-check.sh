@@ -206,6 +206,8 @@ check_presence curl " -i -e curl " ""
 
 check_presence dtoa " -i -e dtoa -e x11 -e MIT" ""
 
+check_presence DocBook-XML " -i -e dmit -e docbook " ""
+
 check_presence ECL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence ECL-2.0 " -e 2.0 -e 2" " -e 1"
 check_presence EFL-1.0 " -e 1.0 -e 1" " -e 2"
@@ -259,7 +261,6 @@ check_presence LGPL-3.0-or-later " $LGPL_COMMON -e 3 -e later" " -e 2"
 
 check_presence LicenseRef-scancode-boost-original " -i -e original " ""
 check_presence LicenseRef-scancode-cvwl " -i -e cvwl -e MITRE " ""
-check_presence LicenseRef-scancode-docbook " -i -e dmit -e docbook " ""
 check_presence LicenseRef-scancode-g10-permissive " -i -e  g10 " ""
 check_presence LicenseRef-scancode-indiana-extreme " -i -e indiana " " -e 1.2"
 check_presence LicenseRef-scancode-iso-8879 " -i 8879 " ""
