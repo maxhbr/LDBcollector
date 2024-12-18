@@ -15,8 +15,7 @@
         },
         "GNU Affero General Public License": {
             "aliases": [
-                "AGPL",
-                "GNU Affero General Public License"
+                "AGPL"
             ],
             "problem": "This license has different versions (1.0, 2.0 and 3.0) and different names (version 1.0 does not have GNU in the name). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -182,37 +181,20 @@
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
         "GNU Lesser General Public License": {
-            "aliases": [
-                "LGPL",
-                "GNU LGPL",
-                "GNU Library General Public License",
-                "GNU Library General Public License v2 only",
-                "GNU Library General Public License v2 only",
-                "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
-                "GNU Lesser General Public License v2 (LGPLv2)",
-                "LGPLv2 or later",
-                "LGPLv2",
-                "LGPL-2",
-                "LGPL2",
-                "LGPL+",
-                "GNU LGPLv2",
-                "lgpl",
-                "GNU Library General Public License version 2",
-                "GNU LESSER GENERAL PUBLIC LICENSE",
-                "Lesser General Public License",
-                "License :: OSI Approved :: GNU Library or...",
-                "License :: OSI Approved :: GNU Lesser General Public License v2",
-                "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
-              "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
-              "GNU Library/LGPL",
-              "GNU Library",
-              "GNU Lesser General Public v2",
-              "LGPL v2",
-              "LGPL2",
-              "GPL LGPL-2",
-              "LGPLGNU LIBRARY GENERAL PUBLIC LICENSE Version 2"
-            ],
-            "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+          "aliases": [
+            "LGPL",
+            "GNU LGPL",
+            "GNU Library General Public License",
+            "LGPL+",
+            "lgpl",
+            "GNU LESSER GENERAL PUBLIC LICENSE",
+            "Lesser General Public License",
+            "License :: OSI Approved :: GNU Library or...",
+            "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+            "GNU Library/LGPL",
+            "GNU Library"
+          ],
+          "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
         "MIT Style": {
             "aliases": [

@@ -12,6 +12,7 @@
         "mulanpsl-2.0",
         "Mulan PSL v2",
         "scancode://mulanpsl-2.0",
-        "License :: OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)"
+        "License :: OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
+        "License :: OSI Approved :: Mulan Permissive Software License v2"
     ]
 }
