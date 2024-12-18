@@ -334,7 +334,7 @@ check_presence TCL " -i -e tcl " ""
 check_presence TU-Berlin-1.0 " -e 1 -e berlin" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
-check_presence Unicode-3.0 " -i -e unicode-3 -e unicode-v3 " ""
+check_presence Unicode-3.0 " -i -e 'unicode-[v]3' -e 'unicode license v3' " ""
 check_presence UnixCrypt " -i -e unixcrypt" ""
 check_presence Unlicense " -i -e unlicense  -e unli[n]cence " ""
 check_presence UPL-1.0 " -i -e upl -e universal" ""
