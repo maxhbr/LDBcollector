@@ -10,7 +10,7 @@ require (
 	github.com/swaggo/files v1.0.1
 	github.com/swaggo/gin-swagger v1.6.0
 	github.com/swaggo/swag v1.16.2
-	golang.org/x/crypto v0.21.0
+	golang.org/x/crypto v0.31.0
 	golang.org/x/exp v0.0.0-20231219180239-dc181d75b848
 	gorm.io/driver/postgres v1.5.2
 	gorm.io/gorm v1.25.1
@@ -19,7 +19,7 @@ require (
 require (
 	github.com/go-sql-driver/mysql v1.7.0 // indirect
 	github.com/jackc/puddle/v2 v2.2.1 // indirect
-	golang.org/x/sync v0.5.0 // indirect
+	golang.org/x/sync v0.10.0 // indirect
 	gorm.io/driver/mysql v1.4.7 // indirect
 )
 
@@ -60,10 +60,10 @@ require (
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
 	golang.org/x/arch v0.3.0 // indirect
-	golang.org/x/net v0.23.0 // indirect
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
-	golang.org/x/tools v0.16.0 // indirect
+	golang.org/x/net v0.25.0 // indirect
+	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
