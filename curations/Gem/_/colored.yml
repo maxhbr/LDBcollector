@@ -1,0 +1,7 @@
+- id: "Gem::colored"
+  curations:
+    comment: |
+      The Gem info only contains a homepage, but no VCS info.
+    vcs:
+      type: "Git"
+      url: "https://github.com/defunkt/colored.git"
