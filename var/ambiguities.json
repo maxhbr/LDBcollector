@@ -192,7 +192,8 @@
             "License :: OSI Approved :: GNU Library or...",
             "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
             "GNU Library/LGPL",
-            "GNU Library"
+            "GNU Library",
+            "GNU Library or GNU Lesser General Public License"
           ],
           "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
