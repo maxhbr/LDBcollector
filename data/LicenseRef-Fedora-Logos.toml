@@ -12,4 +12,5 @@ For more info see https://gitlab.com/fedora/legal/fedora-license-data/-/issues/2
 
 packages_with_exceptions = [
     "fedora-logos",
+    "fedora-remix-logos",
 ]
