@@ -110,7 +110,12 @@ def is_package_json_file(path):
         return False
 
 def parse_pyfile(filename,sondir):
-    content = open(filename, 'r').read()
+    try:
+        with open(filename, 'r') as f:
+            content = f.read()
+    except Exception as e:
+        return set()
+   
     return parse_python_content(content,sondir)
 
 def get_packages(import_name: str) -> set:

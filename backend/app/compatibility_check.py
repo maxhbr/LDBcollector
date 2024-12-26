@@ -90,13 +90,15 @@ def get_dependencies_licenses(file_path):
             mongo_uri = "mongodb://localhost:27017/"
             dr = Z3DependencyResolver(mongo_uri, file_path.split("/")[-1])
             dep_tree = dr.resolve(require_dist)
-            for i in dep_tree:
-                pkg = mongo_pypi.find_one({"name": i, "version": dep_tree[i]})
-                if pkg:
-                    if i in direct_dep:
-                        dep_license[f"direct_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
-                    else:
-                        dep_license[f"indirect_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
+            if dep_tree:
+                
+                for i in dep_tree:
+                    pkg = mongo_pypi.find_one({"name": i, "version": dep_tree[i]})
+                    if pkg:
+                        if i in direct_dep:
+                            dep_license[f"direct_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
+                        else:
+                            dep_license[f"indirect_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
 
     return dep_license , dep_tree, require_dist
 
@@ -204,7 +206,7 @@ def conflict_dection_compliance(res):
     confilct_copyleft_set = set()
     confilct_depend_dict = []
     if root_license not in check_license_list:
-        return [f"The license ({root_license}) of this project is not within our knowledge scope. Please manually check for compliance."],[]
+        return [f"The license ({root_license}) of this project is not within our knowledge scope. Please manually check for compliance."],[],[]
 
     for file in res:
         if file == "LICENSE": 

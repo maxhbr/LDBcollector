@@ -38,7 +38,11 @@ def git_check(unzip_path):
     "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
     "compatible_combine_list":compatible_combine_list}
     lock.release()
-def git_check_c(unzip_path):
+def git_check_c(unzip_path: str):
+    """
+    Check the license of the project in the given path.
+    param: unzip_path: str: The path of the unzipped project.
+    """
     licenses_in_files, dep_tree,require_dist=license_detection_files(unzip_path, unzip_path+".json")
     #dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
     if "LICENSE" not in licenses_in_files or not licenses_in_files["LICENSE"]:
@@ -63,6 +67,7 @@ def git_check_c(unzip_path):
     "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
     "compatible_combine_list":compatible_combine_list,"remediation":rem_lst}
     lock.release()
+    return job[unzip_path]
 
 def get_client_ip():
     if request.headers.getlist("X-Forwarded-For"):
