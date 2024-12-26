@@ -18,7 +18,7 @@
                   <span style="font-size: 20px;color:white">License Compatibility Check</span>
                 </div>
                 <div class="file-url" v-loading="loading"
-                  element-loading-text="Please be patient. It may take a while...">
+                  element-loading-text="It may take a while... A Project like Pytorch needs about 11 minutes to be resolved completely. Please be patient and do not close the page. ">
                   <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository
                     url. </p>
                   <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
