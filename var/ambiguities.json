@@ -35,7 +35,8 @@
                 "The Apache License",
                 "Apache license",
                 "License :: OSI Approved :: Apache Software License",
-                "OSI Approved Apache Software License"
+              "OSI Approved Apache Software License",
+              "apache"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -123,7 +124,8 @@
         "Eclipse Public License": {
             "aliases": [
                 "EPL",
-                "Eclipse Public License (EPL)"
+              "Eclipse Public License (EPL)",
+              "Eclipse Public Licenses"
             ],
             "problem": "There are two versions of the EPL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -192,7 +194,8 @@
             "License :: OSI Approved :: GNU Library or...",
             "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
             "GNU Library/LGPL",
-            "GNU Library"
+            "GNU Library",
+            "GNU Library or GNU Lesser General Public License"
           ],
           "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },

@@ -121,12 +121,12 @@ stats:
 	@echo ""
 	@echo "|Type            | Number |"
 	@echo "|----------------|--------|"
-	@echo "|Licenses        | `PYTHONPATH=./python ./python/flame/__main__.py licenses | wc -l`    |"
-	@echo "|Aliases         | `PYTHONPATH=./python ./python/flame/__main__.py aliases | wc -l`     |"
-	@echo "|Compatibilities | `PYTHONPATH=./python ./python/flame/__main__.py compats | wc -l`     |"
-	@echo "|Operators       | `PYTHONPATH=./python ./python/flame/__main__.py operators | wc -l`   |"
-	@echo "|Ambiguities     | `PYTHONPATH=./python ./python/flame/__main__.py ambiguities | wc -l` |"
-	@echo "|Compounds       | `PYTHONPATH=./python ./python/flame/__main__.py compounds | wc -l`   |"
+	@echo "|Licenses        | `./devel/flame licenses    | wc -l`    |"
+	@echo "|Aliases         | `./devel/flame aliases     | wc -l`   |"
+	@echo "|Compatibilities | `./devel/flame compats     | wc -l`     |"
+	@echo "|Operators       | `./devel/flame operators   | wc -l`     |"
+	@echo "|Ambiguities     | `./devel/flame ambiguities | wc -l`    |"
+	@echo "|Compounds       | `./devel/flame compounds   | wc -l`     |"
 
 stats-file:
 	@make --silent stats > STATUS.md

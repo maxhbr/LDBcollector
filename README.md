@@ -56,12 +56,12 @@ Current support:
 
 |Type            | Number |
 |----------------|--------|
-|Licenses        | 184    |
-|Aliases         | 2563     |
+|Licenses        | 186    |
+|Aliases         | 2575   |
 |Compatibilities | 23     |
-|Operators       | 14   |
-|Ambiguities     | 131 |
-|Compounds       | 35   |
+|Operators       | 14     |
+|Ambiguities     | 134    |
+|Compounds       | 36     |
 
 # About
 
