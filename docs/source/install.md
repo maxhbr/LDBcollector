@@ -69,7 +69,7 @@ echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
 # optional : configure HOST if you use something else than localhost:80
 echo "HERMINE_HOST=example.com" >> .env
 # start the services in background
-docker-compose --profile https up -d
+docker compose --profile https up -d
 ```
 
 Hermine should be accessible at `https://example.com`. Caddy automatically sets up
@@ -79,7 +79,7 @@ To update your instance :
 
 ```bash
 git switch main && git pull
-docker-compose --profile https up -d --build
+docker compose --profile https up -d --build
 ```
 
 ### Localhost profile (to use behind a reverse proxy)
@@ -92,7 +92,7 @@ echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
 # configure port
 echo "PORT=9000" >> .env
 # start the services in background
-docker-compose --profile localhost up -d
+docker compose --profile localhost up -d
 ```
 
 ## Hermine Docker image 
@@ -104,7 +104,7 @@ serve static files and proxy other requests to the Docker image.
 You first need to build the image :
 
 ```bash
-docker build -t hermine .c
+docker build -t hermine .
 ```
 
 ### Image configuration
@@ -143,6 +143,15 @@ docker run -d \
   --volume /host/path/to/static_directory:$STATIC_ROOT hermine
   --env-file .env \
   hermine
+```
+
+#### Postgres Tips
+It's best practice to use a dedicated schema for each application and for specific users.
+
+If you do this, you'll need to change the default schema for the user configured in `POSTGRES_USER` (e.g. myUser) to be able to use your dedicated schema (e.g. mySchema).
+Otherwise you may have problems, as your user shouldn't have the right to create tables in the `public` schema.
+```sql
+ALTER ROLE myUser SET search_path TO mySchema;
 ```
 
 ## Manual install
