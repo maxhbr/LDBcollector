@@ -104,7 +104,7 @@ serve static files and proxy other requests to the Docker image.
 You first need to build the image :
 
 ```bash
-docker build -t hermine .c
+docker build -t hermine .
 ```
 
 ### Image configuration
