@@ -69,7 +69,7 @@ echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
 # optional : configure HOST if you use something else than localhost:80
 echo "HERMINE_HOST=example.com" >> .env
 # start the services in background
-docker-compose --profile https up -d
+docker compose --profile https up -d
 ```
 
 Hermine should be accessible at `https://example.com`. Caddy automatically sets up
@@ -79,7 +79,7 @@ To update your instance :
 
 ```bash
 git switch main && git pull
-docker-compose --profile https up -d --build
+docker compose --profile https up -d --build
 ```
 
 ### Localhost profile (to use behind a reverse proxy)
@@ -92,7 +92,7 @@ echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
 # configure port
 echo "PORT=9000" >> .env
 # start the services in background
-docker-compose --profile localhost up -d
+docker compose --profile localhost up -d
 ```
 
 ## Hermine Docker image 
