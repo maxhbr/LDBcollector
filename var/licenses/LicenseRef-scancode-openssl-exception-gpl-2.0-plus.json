@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "OpenSSL exception to GPL 2.0 or later",
+  "scancode_key": "openssl-exception-gpl-2.0-plus",
+  "spdxid": "LicenseRef-scancode-openssl-exception-gpl-2.0-plus",
+  "aliases": [
+  ]
+}
