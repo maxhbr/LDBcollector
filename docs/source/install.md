@@ -145,6 +145,15 @@ docker run -d \
   hermine
 ```
 
+#### Postgres Tips
+It's best practice to use a dedicated schema for each application and for specific users.
+
+If you do this, you'll need to change the default schema for the user configured in `POSTGRES_USER` (e.g. myUser) to be able to use your dedicated schema (e.g. mySchema).
+Otherwise you may have problems, as your user shouldn't have the right to create tables in the `public` schema.
+```sql
+ALTER ROLE myUser SET search_path TO mySchema;
+```
+
 ## Manual install
 
 ### Install python dependencies
