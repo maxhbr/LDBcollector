@@ -30,7 +30,9 @@
                 "GPL-2.0-only WITH classpath exception",
                 "GPLv2.0 w/ CPE",
                 "GPL v2.0 w/ CPE",
-                "GPL2 w CPE"
+              "GPL2 w CPE",
+              "GPL-2.0-only WITH the Classpath Exception",
+              "GPL-2.0-only WITH the classpath exception"
             ]
         },
         {

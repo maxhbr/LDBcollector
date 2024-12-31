@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "OpenSSL exception to LGPL",
+  "scancode_key": "openssl-exception-lgpl",
+  "spdxid": "LicenseRef-scancode-openssl-exception-lgpl",
+  "aliases": [
+  ]
+}

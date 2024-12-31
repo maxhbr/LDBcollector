@@ -165,6 +165,11 @@ check_presence BlueOak-1.0.0  " -i -e 1 -e model" " -e 2"
 check_presence Bootloader-exception " -i bootloader" ""
 check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
 
+
+check_presence LicenseRef-scancode-openssl-exception-lgpl.json " -i -e openssl" ""
+check_presence LicenseRef-scancode-openssl-exception-gpl-2.0-plus " -i -e openssl" ""
+check_presence LicenseRef-scancode-openssl-exception-lgpl2.0plus " -i -e openssl" ""
+
 check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e BSL-1 -e BSL1 -e 1 "  
 check_presence LicenseRef-scancode-ssleay " -i -e leay "        " -e openssl"  
 

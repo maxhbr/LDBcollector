@@ -15,6 +15,8 @@
         "bzip2 License 2010",
         "libzip2 version 1.0.6",
         "scancode:bzip2-libbzip-2010",
-        "bzip2-libbzip-2010"
+      "bzip2-libbzip-2010",
+      "bzip2 License",
+      "BZip2"
   ]
 }
