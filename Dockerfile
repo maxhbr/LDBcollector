@@ -58,6 +58,8 @@ COPY hermine $INSTALL_PATH/hermine
 # copy node modules
 COPY --from=build $INSTALL_PATH/hermine/vite_modules/dist $INSTALL_PATH/hermine/vite_modules/dist
 
+# Copy optional shared.json if it exists
+COPY docker/*shared.json $INSTALL_PATH/
 COPY docker/docker-entrypoint.sh $INSTALL_PATH/
 COPY docker/config.py $INSTALL_PATH/hermine/hermine/config.py
 
