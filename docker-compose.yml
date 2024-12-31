@@ -21,7 +21,6 @@ services:
       context: .
     volumes:
       - static_volume:/opt/hermine/static
-      - $PWD/docker/shared.json:/opt/hermine/shared.json
     environment:
       # hard-coded defaults for docker-compose
       - SUPERUSER=admin
