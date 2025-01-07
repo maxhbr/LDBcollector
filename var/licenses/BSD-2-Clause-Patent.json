@@ -13,6 +13,7 @@
         "BSD-2-Clause Plus Patent License",
         "scancode:bsd-plus-patent",
         "osi:BSDplusPatent",
-        "bsd-plus-patent"
+        "bsd-plus-patent",
+        "BSD+Patent"
   ]
 }
