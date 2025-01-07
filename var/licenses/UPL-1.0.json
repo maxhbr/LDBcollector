@@ -17,6 +17,7 @@
         "osi:UPL",
         "scancode:upl-1.0",
         "License :: OSI Approved :: Universal Permissive License",
-        "License :: OSI Approved :: Universal Permissive License (UPL)"
+        "License :: OSI Approved :: Universal Permissive License (UPL)",
+        "The Universal Permissive License Version 1.0"
     ]
 }
