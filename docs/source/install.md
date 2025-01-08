@@ -1,5 +1,5 @@
-<!---  
-SPDX-FileCopyrightText: Hermine team <hermine@inno3.fr> 
+<!---
+SPDX-FileCopyrightText: Hermine team <hermine@inno3.fr>
 SPDX-License-Identifier: CC-BY-4.0
 -->
 
@@ -40,7 +40,7 @@ not for `docker-compose` (Compose v1).
 Two profiles are available :
 * an `https` profile where Caddy is configured with automatic HTTPS. It can easily be
 deployed on a VPS.
-* a `localhost` profile to use Hermine on a local machine or behind a reverse proxy (not suited for development) 
+* a `localhost` profile to use Hermine on a local machine or behind a reverse proxy (not suited for development)
 
 Configuration is made through a [`.env` file](https://github.com/bkeepers/dotenv) which should be
 placed at the root of the project. Relevant [configuration variables
@@ -75,7 +75,7 @@ docker compose --profile https up -d
 Hermine should be accessible at `https://example.com`. Caddy automatically sets up
 and renew HTTPS certificates.
 
-To update your instance : 
+To update your instance :
 
 ```bash
 git switch main && git pull
@@ -95,7 +95,7 @@ echo "PORT=9000" >> .env
 docker compose --profile localhost up -d
 ```
 
-## Hermine Docker image 
+## Hermine Docker image
 
 You can also use the Hermine Docker image to run Hermine in your own Docker environment,
 without using Docker Compose. You will need to set up your own PostgreSQL database, as well as a reverse proxy to
@@ -114,7 +114,7 @@ You can use a `.env` file to set them up.
 
 The minimal configuration is :
 * **SECRET**: the secret key used by Django to sign session cookies
-* **DJANGO_PORT**: the port on which the container will listen for requests 
+* **DJANGO_PORT**: the port on which the container will listen for requests
 * **POSTGRES_HOST**: the hostname of the PostgreSQL database
 * **POSTGRES_PORT**: the port of the PostgreSQL database
 * **POSTGRES_NAME**: the name of the PostgreSQL database
@@ -128,7 +128,7 @@ The minimal configuration is :
 
 Optional configuration :
 * **CSRF_TRUSTED_ORIGINS**: a list of trusted origins for CSRF protection, defaults to `[HOST]`
-* **THREADS**: the number of threads used by gunicorn workers, defaults to number of CPU cores 
+* **THREADS**: the number of threads used by gunicorn workers, defaults to number of CPU cores
 * **MAX_UPLOAD_SIZE**: the maximum size that the SBOM to import can be (in bytes), defaults to 10MB
 
 You will need to be able to access the STATIC_ROOT directory from your reverse proxy,
@@ -195,14 +195,11 @@ Here are the parameters you may want to change in your `hermine/hermine/config.p
 
 Update the database structure and create a superuser :
 ```
-# activate poetry shell
-poetry shell
-
 # create database structure
-python hermine/manage.py migrate
+poetry run hermine/manage.py migrate
 
 # create a superuser
-python hermine/manage.py createsuperuser
+poetry run hermine/manage.py createsuperuser
 ```
 
 
@@ -213,7 +210,7 @@ How you want to serve Hermine is up to you. You should be familiar with WSGI ser
 
 A typical installation is :
 
-* Gunicorn or another WSGI server (running Hermine's `wsgi.py`) 
+* Gunicorn or another WSGI server (running Hermine's `wsgi.py`)
 * NGinx to serve static files and proxy other requests to Gunicorn
 
 Hermine is not different from any other Django application. You can find more information in [Django documentation](https://docs.djangoproject.com/en/4.1/howto/deployment/).
@@ -221,8 +218,8 @@ Hermine is not different from any other Django application. You can find more in
 For development purpose, you can simply run :
 
 ```bash
-# run the server 
-python hermine/manage.py runserver
+# run the server
+poetry run hermine/manage.py runserver
 ```
 
 #### Static files
@@ -232,7 +229,7 @@ install, you must run `collectstatic` to copy static files to the `static`
 directory (or any other configured in `config.py`).
 
 ```bash
-python hermine/manage.py collectstatic
+poetry run hermine/manage.py collectstatic
 ```
 
 You can find more information in [Django documentation](https://docs.djangoproject.com/en/4.1/howto/static-files/deployment/).
@@ -254,7 +251,7 @@ For Docker installs, the following environment variables can be set :
 
 On manual install, you should set these parameters in the `config.py` file.
 
-Further information can be found in [Python Social Auth’s documentation](https://python-social-auth.readthedocs.io/en/latest/configuration/django.html) 
+Further information can be found in [Python Social Auth’s documentation](https://python-social-auth.readthedocs.io/en/latest/configuration/django.html)
 on which Hermine relies.
 
 Users will be created on the fly at authentication by the OAuth server.
@@ -267,4 +264,3 @@ Hermine provides two test endpoints which you can use in your monitoring system.
 `/ping/` always send a 200 response, and can be used to check server availability.
 
 `/ready/` does the same but also tries to connect to Hermine database. It sends a 200 response if it succeeds.
-
