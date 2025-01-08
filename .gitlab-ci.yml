@@ -10,13 +10,13 @@
 # Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
-image: python:3.8-alpine
+image: python:3.12-alpine
 
 include:
   - template: Jobs/Dependency-Scanning.gitlab-ci.yml
-  - project: 'to-be-continuous/docker'
-    ref: '5.10.1'
-    file: '/templates/gitlab-ci-docker.yml'
+  - project: "to-be-continuous/docker"
+    ref: "5.10.1"
+    file: "/templates/gitlab-ci-docker.yml"
 
 variables:
   DOCKER_DRIVER: overlay2
@@ -31,45 +31,45 @@ variables:
 tests:
   stage: test
   rules:
-  - if: "$CI_PIPELINE_SOURCE == 'merge_request_event'"
+    - if: "$CI_PIPELINE_SOURCE == 'merge_request_event'"
   script:
-  - apk --no-cache add curl
-  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev
-    cargo
-  - pip install --upgrade pip
-  - curl -sSL https://install.python-poetry.org | python -
-  - export PATH="/root/.local/bin:$PATH"
-  - poetry about
-  - poetry install
-  - cp hermine/hermine/config.default.py hermine/hermine/config.py
-  - cd hermine
-  - poetry run black --check .
-  - poetry run ruff check .
-  - poetry run djhtml cube/templates/ --check
-  - poetry run python manage.py makemigrations | grep "No changes detected" || echo "Migrations are not up to date"
-  - poetry run python manage.py test
+    - apk --no-cache add curl
+    - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev
+      cargo
+    - pip install --upgrade pip
+    - curl -sSL https://install.python-poetry.org | python -
+    - export PATH="/root/.local/bin:$PATH"
+    - poetry about
+    - poetry install
+    - cp hermine/hermine/config.default.py hermine/hermine/config.py
+    - cd hermine
+    - poetry run black --check .
+    - poetry run ruff check .
+    - poetry run djhtml cube/templates/ --check
+    - poetry run python manage.py makemigrations | grep "No changes detected" || echo "Migrations are not up to date"
+    - poetry run python manage.py test
 
 pages:
   stage: production
   rules:
-  - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
-    changes:
-      - docs/**/*
+    - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
+      changes:
+        - docs/**/*
   script:
-  - apk --no-cache add curl
-  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev cargo
-  - pip install --upgrade pip
-  - curl -sSL https://install.python-poetry.org | python -
-  - export PATH="/root/.local/bin:$PATH"
-  - poetry about
-  - poetry install
-  - cp hermine/hermine/config.default.py hermine/hermine/config.py
-  - poetry run sphinx-build -b html docs/source docs/build/html
-  - mkdir public
-  - cp -r docs/build/html/* public/
+    - apk --no-cache add curl
+    - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev cargo
+    - pip install --upgrade pip
+    - curl -sSL https://install.python-poetry.org | python -
+    - export PATH="/root/.local/bin:$PATH"
+    - poetry about
+    - poetry install
+    - cp hermine/hermine/config.default.py hermine/hermine/config.py
+    - poetry run sphinx-build -b html docs/source docs/build/html
+    - mkdir public
+    - cp -r docs/build/html/* public/
   artifacts:
     paths:
-    - public
+      - public
 
 release:
   stage: publish
