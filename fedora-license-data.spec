@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.63
+Version:        1.64
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,14 @@ make check-grammar
 
 
 %changelog
+* Thu Jan 09 2025 Miroslav Suchý <msuchy@redhat.com> 1.64-1
+- add copyleft-next-0.3.1 license
+- Add public-domain text for llvm-test-suite
+- document usage exception for fedora-remix-logos
+- add MIPS and ThirdEye licenses
+- add libcsv UltraPermissive dedication
+- Add public-domain text for stb
+
 * Fri Dec 06 2024 Miroslav Suchý <msuchy@redhat.com> 1.63-1
 - add LICENSE.Sigma from sigrok-firmware
 - Add public-domain text for python-zmq
