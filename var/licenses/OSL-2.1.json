@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Open Software License 2.1",
+  "scancode_key": "osl-2.1",
+  "spdxid": "OSL-2.1",
+  "aliases": [
+   "OSL 2.1",
+   "OSL-2.1",
+   "Open Software License 2.1",
+   "Open Software License, Version 2.1",
+   "Open Software License, version 2.1",
+   "Open Software Licensev. 2.1",
+   "osi:OSL-2.1",
+   "scancode://osl-2.1",
+   "scancode:osl-2.1"
+  ]
+}
