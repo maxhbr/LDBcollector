@@ -139,6 +139,7 @@ class ReleaseValidationStep2View(
             **update_validation_step(self.object),
         }
 
+
 class ReleaseValidationStep3View(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
@@ -168,6 +169,7 @@ class ReleaseValidationStep3View(
             **context,
             **update_validation_step(self.object),
         }
+
 
 class ReleaseValidationStep4View(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
@@ -199,6 +201,7 @@ class ReleaseValidationStep4View(
             **update_validation_step(self.object),
         }
 
+
 class ReleaseValidationStep5View(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
@@ -228,6 +231,7 @@ class ReleaseValidationStep5View(
             **context,
             **update_validation_step(self.object),
         }
+
 
 class AbstractCreateUsageConditionView(
     LoginRequiredMixin, PermissionRequiredMixin, SaveAuthorMixin, CreateView
