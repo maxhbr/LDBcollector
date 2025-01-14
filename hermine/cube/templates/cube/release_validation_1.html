@@ -1,0 +1,157 @@
+<!--
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+
+{% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
+    <li>{{object.release_number}}</li>
+    <li>Validation</li>
+  </ul>
+{% endblock %}
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">Release: {{object.release_number}}</p>
+  </div>
+{% endblock %}
+{% block content %}
+
+  {% include "cube/includes/release_tabs.html" with active_tab="validation" %}
+  <div class="tabs is-toggle is-fullwidth">
+    <ul>
+      <li class="is-active">
+        <a>
+          <span class="icon is-small">
+          {% if invalid_expressions %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+          {% endif %}
+          </span>
+          <span>Valid SPDX</span>
+        </a>
+      </li>
+      <li>
+        <a href="{% url "cube:release_validation_step_2" object.id %}">
+          <span class="icon is-small">
+          {% if to_confirm %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+          {% endif %}
+          </span>
+          <span>Confirm ANDs</span>
+        </a>
+      </li>
+      <li>
+        <a href="{% url "cube:release_validation_step_1" object.id %}">
+          <span class="icon is-small">
+              {% if unset_scopes %}<i class="fas fa-times" aria-hidden="true"></i>
+              {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+              {% endif %}
+          </span>
+          <span>Define exploitations</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="icon is-small">
+              {% if to_resolve %}<i class="fas fa-times" aria-hidden="true"></i>
+              {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+              {% endif %}
+          </span>
+          <span>Licence choices</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="icon is-small">
+              {% if release.valid_step < 5 %}<i class="fas fa-times" aria-hidden="true"></i>
+              {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+              {% endif %}
+          </span>
+          <span>Check policy</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  {% if object.valid_step < 5 %}
+    <p>You have completed validation step {{ object.valid_step }} out of 5 </p>
+    <progress class="progress is-large" value="{{ object.valid_step }}" max="5"></progress>
+  {% else %}
+    <article class="message is-success is-large">
+      <div class="message-header">
+        <p>Finished</p>
+      </div>
+      <div class="message-body">
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span>
+        That's it ! All your usages are valid, qualified, and checked.
+        You can now proceed to the check of your obligations.
+      </div>
+    </article>
+    <hr />
+  {% endif %}
+  <h4 class="title is-4">Step 1 - Check that components have valid SPDX license expressions</h4>
+
+  {% if invalid_expressions %}
+    <article class="message is-warning">
+      <div class="message-header">
+        <p>Some licenses need to be normalized</p>
+      </div>
+      <div class="message-body">
+        <strong>{{ invalid_expressions|length }}</strong> components license information are not valid SPDX expressions</div>
+    </article>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Imported license expression</th>
+          <th>Add curation</th>
+          <th>Edit version</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for usage in invalid_expressions %}
+          <tr>
+            <td>
+              <a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a>
+              {% if usage.version.component.homepage_url and usage.version.component.homepage_url != 'NOASSERTION' %}
+                (<a href="{{usage.version.component.homepage_url}}" target="_blank">website <span class="icon is-small"><i class="fas fa-link"></i></span></a>)
+              {% else %}
+                (No website)
+              {% endif %}
+            </td>
+            <td>{{ usage.version.declared_license_expr }}</td>
+            <td>{% if perms.cube.add_licensecuration %}
+              <a href="{% url 'cube:release_licensecuration_create' usage.id %}">Add curation rule</a>
+            {% endif %}</td>
+            <td>{% if perms.cube.change_version %}
+              <a href="{% url "cube:version_update" usage.version.component.id usage.version.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  {% else %}
+    <article class="message is-success">
+      <div class="message-header">
+        <p>Success</p>
+      </div>
+      <div class="message-body">
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the {{ object.usage_set.all|length }} components used have SPDX valid licensing information.
+      </div>
+    </article>
+  {% endif %}
+
+  {% if fixed_expressions %}
+    <p>List <a href="{% url "cube:release_curated_licenses" object.id %}">{{ fixed_expressions|length }} license curations</a>
+      for this release.</p>
+  {% endif %}
+
+
+{% endblock %}

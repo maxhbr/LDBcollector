@@ -157,10 +157,10 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% if to_confirm %}
     <article class="message is-warning">
       <div class="message-header">
-        <p>Some ANDs in license expressions need to be confirmed</p>
+        <p>Some ANDs in licence expressions need to be confirmed</p>
       </div>
       <div class="message-body">
-        Certain ANDs in license expression are actually ORs, triggering unnecessary constraints.
+        Certain ANDs in licence expression are actually ORs, triggering unnecessary constraints.
         Please check and confirm/correct the following {{ to_confirm|length }} usages.
       </div>
     </article>
@@ -240,7 +240,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
-          <th>Sub-project</th>
+          <th>Subproject</th>
           <th>Scope</th>
           <th>Components</th>
           <th>Actions</th>
@@ -287,7 +287,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
-          <th>Sub-project</th>
+          <th>Subproject</th>
           <th>Scope</th>
           <th>Component</th>
           <th>License expression</th>
@@ -360,7 +360,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
-          <th>Sub-project</th>
+          <th>Subproject</th>
           <th>Scope</th>
           <th>Component</th>
           <th>Applicable Licenses</th>
@@ -418,7 +418,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
-          <th>Sub-project</th>
+          <th>Subproject</th>
           <th>Scope</th>
           <th>Component</th>
           <th>Linking type</th>
@@ -447,7 +447,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                     {{ license_chosen.spdx_id }}
                   </span>
                 {% endif %}
-                {% if perms.cube.add_derogation and not license_chosen.policy.allowed == "always" %}
+                {% if perms.cube.add_derogation and not license_chosen.allowed == "always" %}
                   <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>
                 {% endif %}
               {% endfor %}
@@ -479,10 +479,10 @@ SPDX-License-Identifier: AGPL-3.0-only
                     {{ license_chosen.spdx_id }}
                   </span>
                 {% endif %}
-                {% if perms.cube.change_licensepolicy and not license_chosen.policy.allowed == "always" %}
+                {% if perms.cube.change_license and not license_chosen.allowed == "always" %}
                   <a href="{% url 'cube:license_detail' license_chosen.id %}">Update authorized contexts</a> |
                 {% endif %}
-                {% if perms.cube.add_derogation and not license_chosen.policy.allowed == "always" %}
+                {% if perms.cube.add_derogation and not license_chosen.allowed == "always" %}
                   <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>
                 {% endif %}
               {% endfor %}
@@ -568,102 +568,4 @@ SPDX-License-Identifier: AGPL-3.0-only
     </table>
   {% endif %}
 
-  <h4 class="title is-4">Step 6 - Check licenses compatibility</h4>
-
-  {% if release.outbound_licenses.count %}
-    <p>
-      Exploitation licenses{{ release.outbound_licenses.count|pluralize }} :
-      {% for lic in release.outbound_licenses.all %}
-        <a href="{% url "cube:license_detail" lic.pk %}">{{ lic.long_name }}</a>
-        {% if not forloop.last %}, {% endif %}
-      {% endfor %}
-    </p>
-  {% else %}
-    <p>
-      No exploitation licenses selected. This may be a correct choice if the release is not distributed,
-      or for most proprietary licenses.
-    </p>
-  {% endif %}
-
-  {% if perms.cube.change_release %}
-    <a class="button mb-4" href="{% url "cube:release_update" release.pk %}?from={{ request.path|urlencode }}">Edit release</a>
-  {% endif %}
-
-  {% if incompatible_usages or incompatible_licenses %}
-    <article class="message is-danger">
-      <div class="message-header">
-        <p>Some component licenses are not compatible with exploitation licenses of the release.</p>
-      </div>
-      <div class="message-body">
-        <p>
-          {{ incompatible_usages|length }} component{{ incompatible_usages|length|pluralize }}
-          use{{ incompatible_usages|length|pluralize:"s," }} licenses that are not compatible with exploitation licenses of the release
-          ({{ incompatible_licenses|length }} incompatible license{{ incompatible_licenses|length|pluralize }}
-          in total).
-        </p>
-      </div>
-    </article>
-    <table class="table is-bordered is-striped">
-      <thead>
-        <tr>
-          <th>Component</th>
-          <th>Exploitation</th>
-          <th>Linking</th>
-          <th>Licenses</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for usage in incompatible_usages %}
-          <tr>
-            <td>
-              {% if perms.cube.view_version %}
-                <a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a>
-              {% else %}
-                {{ usage.version }}
-              {% endif %}
-            </td>
-            <td>{{ usage.get_exploitation_display }}</td>
-            <td>{{ usage.get_linking_display }}</td>
-            <td>
-              {% for lic in usage.licenses_chosen.all %}
-                {% if perms.cube.view_license %}
-                  <a href="{% url "cube:license_detail" lic.pk %}">
-                    <span class="tag {{ lic|licenseAllowedCSS }}">
-                      {{ lic.spdx_id }}
-                    </span>
-                  </a>
-                {% else %}
-                  <span class="tag {{ lic|licenseAllowedCSS }}">
-                    {{ lic.spdx_id }}
-                  </span>
-                {% endif %}
-              {% endfor %}
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  {% endif %}
-
-  {% if not incompatible_usages and not incompatible_licenses %}
-    {% if release.valid_step > 5 %}
-      <article class="message is-success">
-        <div class="message-header">
-          <p>Success</p>
-        </div>
-        <div class="message-body">
-          <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All component licenses are compatible with the choice of exploitation licenses.
-        </div>
-      </article>
-    {% else %}
-      <article class="message is-info">
-        <div class="message-header">
-          <p>Waiting for previous steps</p>
-        </div>
-        <div class="message-body">
-          Validate previous steps to check all licenses against policy.
-        </div>
-      </article>
-    {% endif %}
-  {% endif %}
 {% endblock %}
