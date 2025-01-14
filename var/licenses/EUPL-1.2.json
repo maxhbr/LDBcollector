@@ -23,6 +23,7 @@
         "scancode:eupl-1.2",
         "osi:EUPL-1.2",
         "License :: OSI Approved :: European Union Public Licence 1.2",
-        "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)"
+        "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)",
+        "European Union Public License, version 1.2"
     ]
 }

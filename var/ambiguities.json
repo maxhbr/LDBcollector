@@ -236,6 +236,11 @@
             ],
             "problem": "OSI has approved many licenses. You It is not possible to determine which license is meant with this information."
         },
+        "Open Software License": {
+          "aliases": [
+          ],
+          "problem": "This license has different versions (1.0, 1.1, 2.0, 2.1 and 3.0) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+        },
         "SIL Open Font License": {
             "aliases": [
                 "SIL OPEN FONT LICENSE"

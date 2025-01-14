@@ -17,6 +17,7 @@
         "MPLv1.0",
         "scancode:mpl-1.0",
         "osi:MPL-1.0",
-        "mpl-1.0"
+        "mpl-1.0",
+        "Mozilla Public License, version 1.0"
     ]
 }

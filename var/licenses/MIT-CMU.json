@@ -1,0 +1,17 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "CMU Style",
+  "scancode_key": "cmu-uc",
+  "spdxid": "MIT-CMU",
+  "aliases": [
+   "CMU License",
+   "CMU UC Regents License",
+   "LicenseRef-scancode-cmu-template",
+   "MIT-CMU",
+   "scancode://cmu-template",
+   "scancode://cmu-uc"
+  ]
+}

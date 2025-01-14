@@ -1,3 +1,4 @@
+
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
@@ -17,6 +18,7 @@
         "scancode:bsd-1-clause",
         "BSD 1C",
         "bsd-1-clause",
-        "BSD 1-Clause"
+        "BSD 1-Clause",
+        "1-clause BSD License"
     ]
 }
