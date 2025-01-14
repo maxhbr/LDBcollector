@@ -29,9 +29,9 @@ SPDX-License-Identifier: AGPL-3.0-only
       <li class="is-active">
         <a>
           <span class="icon is-small">
-          {% if invalid_expressions %}<i class="fas fa-times" aria-hidden="true"></i>
-          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
-          {% endif %}
+            {% if invalid_expressions %}<i class="fas fa-times" aria-hidden="true"></i>
+            {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+            {% endif %}
           </span>
           <span>Valid SPDX</span>
         </a>
@@ -39,9 +39,9 @@ SPDX-License-Identifier: AGPL-3.0-only
       <li>
         <a>
           <span class="icon is-small">
-          {% if to_confirm %}<i class="fas fa-times" aria-hidden="true"></i>
-          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
-          {% endif %}
+            {% if to_confirm %}<i class="fas fa-times" aria-hidden="true"></i>
+            {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+            {% endif %}
           </span>
           <span>Confirm ANDs</span>
         </a>
@@ -49,9 +49,9 @@ SPDX-License-Identifier: AGPL-3.0-only
       <li>
         <a>
           <span class="icon is-small">
-              {% if unset_scopes %}<i class="fas fa-times" aria-hidden="true"></i>
-              {% else %}<i class="fas fa-check" aria-hidden="true"></i>
-              {% endif %}
+            {% if unset_scopes %}<i class="fas fa-times" aria-hidden="true"></i>
+            {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+            {% endif %}
           </span>
           <span>Define exploitations</span>
         </a>
@@ -59,9 +59,9 @@ SPDX-License-Identifier: AGPL-3.0-only
       <li>
         <a>
           <span class="icon is-small">
-              {% if to_resolve %}<i class="fas fa-times" aria-hidden="true"></i>
-              {% else %}<i class="fas fa-check" aria-hidden="true"></i>
-              {% endif %}
+            {% if to_resolve %}<i class="fas fa-times" aria-hidden="true"></i>
+            {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+            {% endif %}
           </span>
           <span>Licence choices</span>
         </a>
@@ -69,9 +69,9 @@ SPDX-License-Identifier: AGPL-3.0-only
       <li>
         <a>
           <span class="icon is-small">
-              {% if release.valid_step < 5 %}<i class="fas fa-times" aria-hidden="true"></i>
-              {% else %}<i class="fas fa-check" aria-hidden="true"></i>
-              {% endif %}
+            {% if release.valid_step < 5 %}<i class="fas fa-times" aria-hidden="true"></i>
+            {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+            {% endif %}
           </span>
           <span>Check policy</span>
         </a>

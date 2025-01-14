@@ -139,6 +139,96 @@ class ReleaseValidationStep2View(
             **update_validation_step(self.object),
         }
 
+class ReleaseValidationStep3View(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
+    """
+    step 1 : checks that license metadata are present and correct
+    """
+
+    model = Release
+    template_name = "cube/release_validation_3.html"
+    permission_required = "cube.view_release"
+
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .prefetch_related(
+                "usage_set",
+                "usage_set__version",
+                "usage_set__version__component",
+            )
+        )
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step(self.object),
+        }
+
+class ReleaseValidationStep4View(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
+    """
+    step 1 : checks that license metadata are present and correct
+    """
+
+    model = Release
+    template_name = "cube/release_validation_4.html"
+    permission_required = "cube.view_release"
+
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .prefetch_related(
+                "usage_set",
+                "usage_set__version",
+                "usage_set__version__component",
+            )
+        )
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step(self.object),
+        }
+
+class ReleaseValidationStep5View(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
+    """
+    step 1 : checks that license metadata are present and correct
+    """
+
+    model = Release
+    template_name = "cube/release_validation_5.html"
+    permission_required = "cube.view_release"
+
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .prefetch_related(
+                "usage_set",
+                "usage_set__version",
+                "usage_set__version__component",
+            )
+        )
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step(self.object),
+        }
+
 class AbstractCreateUsageConditionView(
     LoginRequiredMixin, PermissionRequiredMixin, SaveAuthorMixin, CreateView
 ):
