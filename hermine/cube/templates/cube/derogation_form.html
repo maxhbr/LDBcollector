@@ -15,7 +15,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     {% if form.usage %}
       <li><a href="{% url 'cube:product_detail' form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
-      <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
+      <li><a href="{% url 'cube:release_validation_step_1' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
       <li>Add authorized context</li>
     {% else %}
       <li><a href="{% url 'cube:license_detail' license.id %}">{{ license }}</a></li>
@@ -45,6 +45,3 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% include "cube/includes/default_form.html" %}
 
 {% endblock %}
-
-
-
