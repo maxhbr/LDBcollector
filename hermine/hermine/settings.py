@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
     "django.forms",
     "social_django",
@@ -75,6 +76,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -210,6 +212,13 @@ STATICFILES_DIRS = [
     os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "dist"),
     os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "src", "hermine"),
 ]
+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"
+    }
+}
+
 LOGIN_REDIRECT_URL = "cube:dashboard"
 LOGIN_URL = "login"
 
