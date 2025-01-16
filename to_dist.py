@@ -5,6 +5,7 @@
 import json
 import os
 from datetime import datetime
+from common import LICENSE_SHARED_FIELDS, GENERIC_SHARED_FIELDS
 
 objects = []
 obligations = []
@@ -17,7 +18,11 @@ for filename in os.listdir("./generics"):
         objects.append(
             {
                 "model": "cube.generic",
-                "fields": generic_fields,
+                "fields": {
+                    key: value
+                    for key, value in generic_fields.items()
+                    if key in GENERIC_SHARED_FIELDS
+                },
             }
         )
 
@@ -31,7 +36,11 @@ for filename in os.listdir("./licenses"):
         objects.append(
             {
                 "model": "cube.license",
-                "fields": license_fields,
+                "fields": {
+                    key: value
+                    for key, value in license_fields.items()
+                    if key in LICENSE_SHARED_FIELDS
+                },
             }
         )
 
