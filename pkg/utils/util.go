@@ -8,10 +8,10 @@
 package utils
 
 import (
+	"encoding/base64"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"html"
 	"log"
 	"net/http"
 	"os"
@@ -152,8 +152,6 @@ func HashPassword(user *models.User) error {
 		return err
 	}
 	*user.Userpassword = string(hashedPassword)
-
-	user.Username = html.EscapeString(strings.TrimSpace(user.Username))
 
 	return nil
 }
@@ -370,7 +368,7 @@ func createObligationMapChangelog(tx *gorm.DB, username string,
 	}
 
 	var user models.User
-	if err := tx.Where(models.User{Username: username}).First(&user).Error; err != nil {
+	if err := tx.Where(models.User{Username: &username}).First(&user).Error; err != nil {
 		return err
 	}
 
@@ -474,4 +472,23 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 		}
 	}
 	return nil
+}
+
+// https://github.com/lestrrat-go/jwx/discussions/547
+// Get kid field value from JWS Header
+func GetKid(token string) (string, error) {
+	type JWSHeader struct {
+		KeyID string `json:"kid"`
+	}
+
+	parts := strings.Split(token, ".")
+
+	decodedBytes, err := base64.StdEncoding.DecodeString(parts[0])
+	if err != nil {
+		return "", err
+	}
+
+	var header JWSHeader
+	err = json.Unmarshal(decodedBytes, &header)
+	return header.KeyID, err
 }

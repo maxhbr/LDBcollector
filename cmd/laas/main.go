@@ -7,15 +7,20 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"log"
+	"os"
 
 	"github.com/joho/godotenv"
+	"github.com/lestrrat-go/httprc/v3"
+	"github.com/lestrrat-go/jwx/v3/jwk"
 	"gorm.io/gorm/clause"
 
 	_ "github.com/dave/jennifer/jen"
 	_ "github.com/fossology/LicenseDb/cmd/laas/docs"
 	"github.com/fossology/LicenseDb/pkg/api"
+	"github.com/fossology/LicenseDb/pkg/auth"
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
@@ -47,6 +52,23 @@ func main() {
 	}
 
 	flag.Parse()
+
+	if os.Getenv("TOKEN_HOUR_LIFESPAN") == "" || os.Getenv("API_SECRET") == "" || os.Getenv("DEFAULT_ISSUER") == "" {
+		log.Fatal("Mandatory environment variables not configured")
+	}
+
+	if os.Getenv("JWKS_URI") != "" {
+		cache, err := jwk.NewCache(context.Background(), httprc.NewClient())
+		if err != nil {
+			log.Fatalf("Failed to create a jwk.Cache from the oidc provider's URL: %s", err)
+		}
+
+		if err := cache.Register(context.Background(), os.Getenv("JWKS_URI")); err != nil {
+			log.Fatalf("Failed to create a jwk.Cache from the oidc provider's URL: %s", err)
+		}
+
+		auth.Jwks = cache
+	}
 
 	db.Connect(dbhost, port, user, dbname, password)
 

@@ -256,7 +256,7 @@ func toggleObligationTypeActiveStatus(c *gin.Context, tx *gorm.DB, obType *model
 
 	username := c.GetString("username")
 	var user models.User
-	if err := tx.Where(models.User{Username: username}).First(&user).Error; err != nil {
+	if err := tx.Where(models.User{Username: &username}).First(&user).Error; err != nil {
 		return errors.New("unable to change 'active' status of obligation type")
 	}
 
