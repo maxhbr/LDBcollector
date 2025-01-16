@@ -1,0 +1,7 @@
+- id: "Maven:edu.berkeley.cs.jqf:jqf-maven-plugin"
+  curations:
+    comment: |-
+      Set the VCS path of the module inside the multi-module repository.
+      See also https://github.com/rohanpadhye/JQF/blob/ba9566c/maven-plugin/pom.xml.
+    vcs:
+      path: "maven-plugin"
