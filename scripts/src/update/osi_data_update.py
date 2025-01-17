@@ -15,24 +15,43 @@ sys.path.append(os.path.abspath(os.path.join(script_dir, '../../')))
 DATA_DIR = os.path.abspath(os.path.join(script_dir, '../../../data'))
 
 
-def download_index_json(url, output_file):
+def download_license_list_json(url, output_file):
+    """
+    Download the license list
+    Args:
+        url: URL to the license list
+        output_file: Path to the output file
+    """
     response = requests.get(url)
     if response.status_code == 200:
         with open(output_file, 'wb') as f:
             f.write(response.content)
-        logger.debug("ScanCode index list downloaded successfully.")
+        logger.debug("OSI license list downloaded successfully.")
     else:
-        logger.debug("Failed to download ScanCode index list.")
+        logger.debug("Failed to download OSI license list.")
 
 
 def load_json_file(filepath):
+    """
+    Load the license list from json file and return it as a dictionary
+    Args:
+        filepath: Path to the license list file
+
+    Returns:
+        data (dict): Dictionary of the license list
+    """
     logger.debug("Load json file from {}".format(filepath))
     with open(filepath, 'r') as f:
-        spdx_data = json.load(f)
-    return spdx_data
+        data = json.load(f)
+    return data
 
 
 def delete_file(filepath):
+    """
+    Delete the license list file
+    Args:
+        filepath: Path to the license list file
+    """
     if os.path.exists(filepath):
         os.remove(filepath)
         logger.debug(f"File '{filepath}' deleted successfully.")
@@ -41,6 +60,12 @@ def delete_file(filepath):
 
 
 def update_data(canonical_id, osi_aliases):
+    """
+    Update the existing license with OSI metadata
+    Args:
+        canonical_id: Canonical ID for the license
+        osi_aliases: List of name variation for the license
+    """
     filepath = os.path.join(DATA_DIR, f"{canonical_id}.json")
     with open(filepath, 'r') as f:
         data = json.load(f)
@@ -64,25 +89,15 @@ def update_data(canonical_id, osi_aliases):
         json.dump(data, outfile, indent=4)
 
 
-def add_data(license_id, aliases):
-    logger.debug(f"Adding data for {license_id}")
-    output_data = {
-        "canonical": license_id,
-        "aliases": {
-            "osi": aliases,
-            "custom": []
-        },
-        "src": "osi"
-    }
-
-    new_output_file = os.path.join(DATA_DIR, f"{license_id}.json")
-
-    # Write new data to the file if it does not exist or has different content
-    with open(new_output_file, 'w') as outfile:
-        json.dump(output_data, outfile, indent=4)
-
-
 def get_aliases(entry):
+    """
+    Get aliases for a license entry
+    Args:
+        entry: The license entry from the license list
+
+    Returns:
+        aliases (list): list of aliases for the license
+    """
     aliases = []
 
     if entry["name"]:
@@ -94,42 +109,16 @@ def get_aliases(entry):
     return aliases
 
 
-def process_licenses():
-    filepath = "osi_license_list.json"
-
-    # Download and load index.json of ScanCode LicenseDB
-    download_index_json("https://api.opensource.org/licenses/", filepath)
-    index_data = load_json_file(filepath)
-
-    files_list = os.listdir(DATA_DIR)
-    unprocessed_licenses = []
-    for entry in index_data:
-        # Get license id and extract from the url of the OSI Page
-        license_id = entry["id"]
-
-        url_id = extract_url_id(entry)
-
-        aliases = get_aliases(entry)
-
-        # Process licenses where both ids are unrecognized in an extra step
-        if not (f"{license_id}.json" in files_list or f"{url_id}.json" in files_list):
-            unprocessed_license = process_unrecognized_license_id(aliases, license_id, url_id)
-            if unprocessed_license:
-                unprocessed_licenses.append(unprocessed_license)
-        else:
-            if f"{license_id}.json" in files_list:
-                aliases.append(url_id)
-                update_data(license_id, aliases)
-            else:
-                aliases.append(license_id)
-                update_data(url_id, aliases)
-    if unprocessed_licenses:
-        logger.info(f"Unprocessed {len(unprocessed_licenses)}\n"
-                    f"{unprocessed_licenses}")
-    delete_file(filepath)
-
-
 def extract_url_id(entry):
+    """
+    Extract the url id from OSI Page link of a license entry
+    Args:
+        entry: The license entry from the license list
+
+    Returns:
+        url_id (string): the url id of the license entry
+
+    """
     url_id = ""
     links = entry["links"]
     for link in links:
@@ -200,11 +189,42 @@ def get_file_for_unrecognised_id(license_name_variations):
     return file
 
 
-def handle_data(alias, license_id):
-    if os.path.exists(os.path.join(DATA_DIR, f"{license_id}.json")):
-        update_data(license_id, alias)
-    else:
-        add_data(license_id, alias)
+def process_licenses():
+    """
+    Processes the license list and updates the license entries
+    """
+    filepath = "osi_license_list.json"
+
+    # Download and load index.json of OSI license list
+    download_license_list_json("https://api.opensource.org/licenses/", filepath)
+    license_list = load_json_file(filepath)
+
+    files_list = os.listdir(DATA_DIR)
+    unprocessed_licenses = []
+    for entry in license_list:
+        # Get license id and extract from the url of the OSI Page
+        license_id = entry["id"]
+
+        url_id = extract_url_id(entry)
+
+        aliases = get_aliases(entry)
+
+        # Process licenses where both ids are unrecognized in an extra step
+        if not (f"{license_id}.json" in files_list or f"{url_id}.json" in files_list):
+            unprocessed_license = process_unrecognized_license_id(aliases, license_id, url_id)
+            if unprocessed_license:
+                unprocessed_licenses.append(unprocessed_license)
+        else:
+            if f"{license_id}.json" in files_list:
+                aliases.append(url_id)
+                update_data(license_id, aliases)
+            else:
+                aliases.append(license_id)
+                update_data(url_id, aliases)
+    if unprocessed_licenses:
+        logger.info(f"Unprocessed {len(unprocessed_licenses)}\n"
+                    f"{unprocessed_licenses}")
+    delete_file(filepath)
 
 
 if __name__ == "__main__":
