@@ -13,3 +13,9 @@
       The code was found on SourceForge based on the package namespace.
     vcs:
       revision: "latest9.0"
+- id: "Maven:net.sf.saxon:saxon:9.1.0.8j"
+  curations:
+    comment: |-
+      The code was found on SourceForge based on the package namespace.
+    vcs:
+      revision: "9.1.0.8"
