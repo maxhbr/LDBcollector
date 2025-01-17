@@ -1,10 +1,15 @@
-- id: "Maven:net.sf.saxon:saxon:9"
+- id: "Maven:net.sf.saxon:saxon"
   curations:
     comment: |-
-      The POM (https://nexus.intranda.com/repository/maven-releases/net/sf/saxon/saxon/9/saxon-9.pom, not hosted on
-      Maven Central) does not provide an SCM tag. The code was found on SourceForge based on the package namespace.
+      The POMs for the different versions either have an outdated SCM tag (e.g. https://repo1.maven.org/maven2/net/sf/saxon/saxon/8.7/saxon-8.7.pom)
+      or no tag at all (e.g. https://nexus.intranda.com/repository/maven-releases/net/sf/saxon/saxon/9/saxon-9.pom).
     vcs:
       type: "Subversion"
       url: "https://svn.code.sf.net/p/saxon/code"
-      revision: "latest9.0"
       path: "bj"
+- id: "Maven:net.sf.saxon:saxon:9"
+  curations:
+    comment: |-
+      The code was found on SourceForge based on the package namespace.
+    vcs:
+      revision: "latest9.0"
