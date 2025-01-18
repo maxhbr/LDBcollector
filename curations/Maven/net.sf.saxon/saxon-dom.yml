@@ -1,0 +1,15 @@
+- id: "Maven:net.sf.saxon:saxon-dom"
+  curations:
+    comment: |-
+      The POMs for the different versions either have an outdated SCM tag (e.g. https://repo1.maven.org/maven2/net/sf/saxon/saxon-dom/8.7/saxon-dom-8.7.pom)
+      or no tag at all (e.g. https://rapi.tools.ops.smartbear.io/nexus/content/groups/public/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.pom).
+    vcs:
+      type: "Subversion"
+      url: "https://svn.code.sf.net/p/saxon/code"
+      path: "bj/net/sf/saxon/dom"
+- id: "Maven:net.sf.saxon:saxon-dom:9.1.0.8j"
+  curations:
+    comment: |-
+      The code was found on SourceForge based on the package namespace.
+    vcs:
+      revision: "9.1.0.8"
