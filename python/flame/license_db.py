@@ -359,7 +359,7 @@ class FossLicenses:
 
         """
         if not isinstance(license_expression, str):
-            raise FlameException(f'Wrong type ({type(license_expression)}) of input to the function expression_license. Only string is allowed. License expressions: {license_expression}')
+            raise FlameException(f'License "{license_expression}" is of wrong type ({type(license_expression)}). Only string is allowed.')
 
         # remove multiple blanks
         license_expression = re.sub(' [ ]*', ' ', license_expression)
@@ -418,7 +418,7 @@ class FossLicenses:
             try:
                 updated_license = str(self.license_expression.parse(ret['license_expression']))
             except boolean.boolean.ParseError as e:
-                update_problem = f'Could not parse "ret["license_expression"]". Exception: {e}'
+                update_problem = f'Could not parse "{ret["license_expression"]}". Exception: {e}'
                 updated_license = ret['license_expression']
 
         license_parsed = updated_license
