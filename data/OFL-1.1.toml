@@ -3,6 +3,13 @@
 expression = "OFL-1.1"
 status = [ "allowed-fonts" ]
 
+usage = '''
+Fedora Linux does not differ OFL-1.1 and OFL-1.1-no-RFN.
+The difference is only in the license header and according the matching
+guidelines they are equal.
+When you find OFL-1.1-no-RFN in your sources you can use OFL-1.1 id.
+'''
+
 [fedora]
 
 legacy-name = [
