@@ -303,7 +303,7 @@ Emojis for the links can be copied from https://emojipedia.org
 | **Licence** | - |
 | **Links** | [🇬🇧](http://www.internetcases.com/library/cases/2005-11-28_wallace_v_fsf.pdf) |
 
-# Frankreich
+# France
 
 | **Name** | Cour d’appel de Paris, 2024-02-14, Case No. 2/18071 |
 |:---:|:---:|
@@ -363,7 +363,7 @@ Emojis for the links can be copied from https://emojipedia.org
 | **Licence** | - |
 | **Links** | [🇬🇧](https://www-oschina-net.translate.goog/news/159435?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=nui) |
 
-# Spanien
+# Spain
 
 | **Name** | Audiencia Provincial de Madrid, Sección 28, 2007-07-05, Case No. 150/2007 |
 |:---:|:---:|
@@ -402,7 +402,7 @@ Emojis for the links can be copied from https://emojipedia.org
 | **Licence** | - |
 | **Links** | [🇬🇧](http://www.law.co.il/media/computer-law/reuveni_rivlin.pdf) |
 
-# Niederlanden
+# Netherlands
 
 | **Name** | Rechtbank Amsterdam, 2006-03-09, Case No. 334492 / KG 06-176 SR |
 |:---:|:---:|
@@ -411,7 +411,7 @@ Emojis for the links can be copied from https://emojipedia.org
 | **Licence** | - |
 | **Links** | [🇳🇱](http://zoeken.rechtspraak.nl/resultpage.aspx?snelzoeken=true&searchtype=ljn&ljn=AV4204&u_ljn=AV4204) [🇬🇧](http://mirrors.creativecommons.org/judgements/Curry-Audax-English.pdf) |
 
-# Belgien
+# Belgium
 
 | **Name** | Tribunal de première instance de Nivelles, 2010-10-26, Case No. 09-1684-A |
 |:---:|:---:|
