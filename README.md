@@ -11,7 +11,7 @@ Die Inhaltsseiten befinden sich alle in `./Pages/`. Jede Seite hat ihren eigenen
 ## Seitenübersicht
 
 | Seite | URL | Markdown-Datei | Status | Anmerkung |
-|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|
 | Homepage (DE) | https://ifrOSS.github.io/ifrOSS/index.html | [./index.html](https://github.com/ifrOSS/ifrOSS/blob/master/index.html) | ✅ | - |
 | Homepage (EN) | https://ifrOSS.github.io/ifrOSS/index_en.html | [./index_en.html](https://github.com/ifrOSS/ifrOSS/blob/master/index_en.html) | ✅ | - |
 | Commiter Agreements (DE) | https://ifrOSS.github.io/ifrOSS/Pages/commiter_agreements/de | [./Pages/commiter_agreements/de.md](https://github.com/ifrOSS/ifrOSS/blob/master/Pages/commiter_agreements/de.md) | ✅ | - |
