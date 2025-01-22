@@ -14,7 +14,7 @@ class ErrorTrackingHandler(logging.Handler):
             self.error_occurred = True
 
 
-def setup_logger(logger_name, log_file=os.path.join(parent_dir, 'licence_lynx.log'), log_level=logging.INFO):
+def setup_logger(logger_name, log_file=os.path.join(parent_dir, 'licencelynx.log'), log_level=logging.INFO):
     """
     Set up a logger with the specified name, log file, and log level.
 
