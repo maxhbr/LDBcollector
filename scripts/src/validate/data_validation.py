@@ -99,17 +99,18 @@ def access_aliases(aliases, all_aliases, filename):
                 all_aliases[license_name] = [filename]
 
 
-def check_src_and_canonical(spdx_license_list, spdx_exception, scancode_list):
+def check_src_and_canonical(spdx_license_list, spdx_exception):
     for filename in os.listdir(DATA_DIR):
         if filename.endswith(JSON_EXTENSION):
             filepath = os.path.join(DATA_DIR, filename)
             with (open(filepath, 'r') as f):
                 data = json.load(f)
                 canonical_name = data.get("canonical")
-                if canonical_name not in spdx_license_list and \
-                        canonical_name not in spdx_exception and \
-                        canonical_name not in scancode_list:
+                if (canonical_name in spdx_license_list or canonical_name in spdx_exception) and data["src"] != "spdx":
                     logger.error(f"If src is SPDX, canonical name '{canonical_name}' must be in SPDX license list")
+                elif (canonical_name not in spdx_license_list and
+                      canonical_name not in spdx_exception) and data["src"] == "spdx":
+                    logger.error(f"Canonical name '{canonical_name}' is in SPDX license list but source is not 'spdx'.")
 
 
 def check_length_and_characters():
@@ -157,9 +158,8 @@ def main():
     spdx_exception = load_ids_from_license_list(spdx_exception_file, LicenseListType.SPDX_EXCEPTION)
 
     download_license_list(scancode_licensedb_url, scancode_licensedb_file, "ScanCode LicenseDB license list")
-    scancode_list = load_ids_from_license_list(scancode_licensedb_file, LicenseListType.SCANCODE_LICENSEDB)
 
-    check_src_and_canonical(spdx_licenses, spdx_exception, scancode_list)
+    check_src_and_canonical(spdx_licenses, spdx_exception)
     delete_file(spdx_license_file)
     delete_file(spdx_exception_file)
     delete_file(scancode_licensedb_file)
