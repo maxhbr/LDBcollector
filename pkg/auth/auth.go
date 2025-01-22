@@ -803,6 +803,47 @@ func Login(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"token": token})
 }
 
+// GetUserProfile retrieves the user's own profile.
+//
+//	@Summary		Get user's own profile
+//	@Description	Get user's own profile
+//	@Id				GetUserProfile
+//	@Tags			Users
+//	@Accept			json
+//	@Produce		json
+//	@Success		200	{object}	models.UserResponse
+//	@Failure		400	{object}	models.LicenseError	"Invalid user"
+//	@Failure		404	{object}	models.LicenseError	"User not found"
+//	@Security		ApiKeyAuth
+//	@Router			/users/profile [get]
+func GetUserProfile(c *gin.Context) {
+	var user models.User
+	username := c.GetString("username")
+
+	active := true
+	if err := db.DB.Where(models.User{Username: &username, Active: &active}).First(&user).Error; err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusNotFound,
+			Message:   "no user with such username exists",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusNotFound, er)
+		return
+	}
+
+	res := models.UserResponse{
+		Data:   []models.User{user},
+		Status: http.StatusOK,
+		Meta: &models.PaginationMeta{
+			ResourceCount: 1,
+		},
+	}
+
+	c.JSON(http.StatusOK, res)
+}
+
 // encryptUserPassword checks if the password is already encrypted or not. If
 // not, it encrypts the password.
 func encryptUserPassword(user *models.User) error {
