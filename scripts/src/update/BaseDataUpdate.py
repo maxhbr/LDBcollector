@@ -107,6 +107,8 @@ class BaseDataUpdate:
             },
             "src": self.src
         }
+
+        filepath = os.path.join(self.DATA_DIR, f"{canonical_id}.json")
         # Write new data to the file
-        with open(f"{self.DATA_DIR}/{canonical_id}.json", 'w') as outfile:
+        with open(filepath, 'w') as outfile:
             json.dump(output_data, outfile, indent=4)
