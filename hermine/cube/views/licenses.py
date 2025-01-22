@@ -12,7 +12,7 @@ from django.db.models import Count
 from django.db.models.functions import Lower
 from django.forms import modelform_factory
 from django.http import HttpResponse
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import (
@@ -29,6 +29,7 @@ from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
+from cube.forms.licenses import ObligationForm
 from cube.forms.licenses import (
     ObligationGenericDiffForm,
     CopyReferenceLicensesForm,
@@ -36,8 +37,8 @@ from cube.forms.licenses import (
     CopyReferenceObligationForm,
     SyncEverythingFromReferenceForm,
 )
-from cube.forms.licenses import ObligationForm
 from cube.models import License, Generic, Obligation
+from cube.models.licenses import LicensePolicy
 from cube.utils.reference import (
     LICENSE_SHARED_FIELDS,
     OBLIGATION_SHARED_FIELDS,
@@ -138,10 +139,16 @@ class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
 
 
 class LicensePolicyUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
-    permission_required = "cube.change_license"
-    model = License
-    form_class = modelform_factory(License, exclude=LICENSE_SHARED_FIELDS)
+    permission_required = "cube.change_licensepolicy"
+    model = LicensePolicy
+    fields = ("status", "categories", "allowed", "allowed_explanation")
     template_name = "cube/license_update_policy.html"
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(LicensePolicy, license=self.kwargs["pk"])
+
+    def get_success_url(self):
+        return reverse("cube:license_detail", args=[self.kwargs["pk"]])
 
 
 class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
@@ -358,13 +365,13 @@ class LicensePrintView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
         textdoc.text.addElement(h)
 
         p = P(text="Validation Color: ")
-        v = Span(stylename=boldstyle, text=self.object.allowed)
+        v = Span(stylename=boldstyle, text=self.object.policy.allowed)
         p.addElement(v)
         textdoc.text.addElement(p)
 
-        if self.object.allowed_explanation is not None:
+        if self.object.policy.allowed_explanation is not None:
             p = P(text="Explanation: ")
-            v = Span(stylename=boldstyle, text=self.object.allowed_explanation)
+            v = Span(stylename=boldstyle, text=self.object.policy.allowed_explanation)
             p.addElement(v)
             textdoc.text.addElement(p)
 

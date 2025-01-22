@@ -6,8 +6,6 @@
             "long_name": "Fake allowed License-1.0",
             "steward": "",
             "copyleft": "None",
-            "allowed": "always",
-            "allowed_explanation": "",
             "url": "",
             "osi_approved": null,
             "fsf_approved": null,
@@ -28,8 +26,6 @@
             "long_name": "Fake Context Allowed License-1.0",
             "steward": "",
             "copyleft": "Weak",
-            "allowed": "context",
-            "allowed_explanation": "Only allowed for dynamically linked components",
             "url": "",
             "osi_approved": null,
             "fsf_approved": null,
@@ -41,6 +37,22 @@
             "law_choice": "",
             "comment": "",
             "verbatim": ""
+        }
+    },
+    {
+        "model": "cube.licensepolicy",
+        "fields": {
+            "license": ["LicenseRef-fakeLicense-Allowed-1.0"],
+            "allowed": "always",
+            "allowed_explanation": ""
+        }
+    },
+        {
+        "model": "cube.licensepolicy",
+        "fields": {
+            "license": ["LicenseRef-fakeLicense-ContextAllowed-1.0"],
+            "allowed": "context",
+            "allowed_explanation": "Only allowed for dynamically linked components"
         }
     },
     {

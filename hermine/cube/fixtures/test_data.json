@@ -92,13 +92,9 @@
     "pk": 1,
     "fields": {
         "spdx_id": "LicenseRef-FakeLicense-1.0",
-        "status": "To check",
         "long_name": "Fake License",
-        "categories": "",
         "steward": "Test corp.",
         "copyleft": "Network",
-        "allowed": "context",
-        "allowed_explanation": "Only allowed for test projects",
         "url": "",
         "osi_approved": false,
         "fsf_approved": false,
@@ -111,6 +107,17 @@
         "venue_choice": "",
         "comment": "",
         "verbatim": ""
+    }
+},
+{
+    "model": "cube.licensepolicy",
+    "pk": 1,
+    "fields": {
+        "license": 1,
+        "status": "To check",
+        "categories": "",
+        "allowed": "context",
+        "allowed_explanation": "Only allowed for test projects"
     }
 },
 {

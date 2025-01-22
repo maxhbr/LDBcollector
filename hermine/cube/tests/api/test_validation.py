@@ -14,6 +14,7 @@ from cube.models import (
     Derogation,
     License,
 )
+from cube.models.licenses import LicensePolicy
 from cube.utils.licenses import handle_licenses_json
 from cube.utils.release_validation import (
     STEP_CURATION,
@@ -76,10 +77,11 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.create_product()
         self.create_release()
         import_licenses()
-        License.objects.create(
+        lic = License.objects.create(
             spdx_id="LicenseRef-fakeLicense-NotAnalyzed-1.0",
-            allowed=License.ALLOWED_ALWAYS,
         )
+        lic.policy.allowed = LicensePolicy.ALLOWED_ALWAYS
+        lic.policy.save()
 
         self.create_curations()
         self.create_ands_corrections()
@@ -307,5 +309,6 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         allowed_license = License.objects.get(
             spdx_id="LicenseRef-fakeLicense-NotAnalyzed-1.0"
         )
-        allowed_license.allowed = License.ALLOWED_ALWAYS
+        allowed_license.policy.allowed = LicensePolicy.ALLOWED_ALWAYS
+        allowed_license.policy.save()
         allowed_license.save()

@@ -133,22 +133,22 @@ SPDX-License-Identifier: AGPL-3.0-only
           </p>
           <p><b>Review status:</b>
             <span class="tag {{ license|licenseReviewCSS }}">
-              {{ license.get_status_display }}
+              {{ license.policy.get_status_display }}
             </span>
           </p>
           <p><b>FOSS policy status:</b>
             <span class="tag {{ license|licenseAllowedCSS }}">
-              {{ license.get_allowed_display }}
+              {{ license.policy.get_allowed_display }}
             </span>
           </p>
           <p><b>Explanation of FOSS policy:</b></p>
-          {% if license.allowed_explanation %}
+          {% if license.policy.allowed_explanation %}
             <div class="content">
-              {{ license.allowed_explanation|linebreaks }}
+              {{ license.policy.allowed_explanation|linebreaks }}
             </div>
           {% else %}
             <p>
-              <em>No explanation has been given for this OSS policy</em> {% if perms.cube.change_license %}- <a href="{% url "cube:license_update" license.id %}">Edit</a>{% endif %}
+              <em>No explanation has been given for this OSS policy</em> {% if perms.cube.change_licensepolicy %}- <a href="{% url "cube:license_update_policy" license.id %}">Edit</a>{% endif %}
             </p>
           {% endif %}
         </div>
@@ -230,7 +230,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </section>
   {% endif %}
-  {% if license.allowed == "context" or license.context_derogations %}
+  {% if license.policy.allowed == "context" or license.context_derogations %}
     <section class="card">
       <header class="card-header">
         <p class="card-header-title">

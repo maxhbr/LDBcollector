@@ -13,7 +13,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <ul>
     <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url 'cube:license_list' %}">Licenses</a></li>
-    <li><a href="{% url "cube:license_detail" license.id %}">{{ license.spdx_id }}</a></li>
+    <li><a href="{% url "cube:license_detail" object.license.id %}">{{ object.license.spdx_id }}</a></li>
     <li>Edit policy</li>
   </ul>
 {% endblock %}

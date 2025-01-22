@@ -10,9 +10,11 @@ from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
+from rest_framework.generics import RetrieveUpdateAPIView
 from rest_framework.response import Response
 
 from cube.models import License, Usage, Generic, Obligation
+from cube.models.licenses import LicensePolicy
 from cube.serializers import (
     LicenseSerializer,
     SBOMSerializer,
@@ -20,6 +22,7 @@ from cube.serializers import (
     ObligationSerializer,
     GenericsAndObligationsSerializer,
     LicenseObligationSerializer,
+    LicensePolicySerializer,
 )
 from cube.utils.licenses import (
     get_licenses_triggered_obligations,
@@ -72,6 +75,29 @@ class LicenseViewSet(viewsets.ModelViewSet):
         self.check_object_permissions(self.request, obj)
 
         return obj
+
+
+class LicensePolicyView(RetrieveUpdateAPIView):
+    serializer_class = LicensePolicySerializer
+    queryset = LicensePolicy.objects.all()
+    lookup_url_kwarg = "license__spdx_id"
+    lookup_value_regex = "[^/]+"
+    lookup_field = "license__spdx_id"
+
+    def get_object(self):
+        policy, create = LicensePolicy.objects.get_or_create(
+            license__spdx_id=self.kwargs["license__spdx_id"]
+        )
+        return policy
+
+    def perform_update(self, serializer):
+        serializer.save(
+            license=License.objects.get(spdx_id=self.kwargs["license__spdx_id"])
+        )
+
+    def get_serializer(self, *args, **kwargs):
+        kwargs.setdefault("context", self.get_serializer_context())
+        return self.serializer_class(*args, **kwargs)
 
 
 class SPDXFilter(filters.BaseInFilter, filters.ModelChoiceFilter):
