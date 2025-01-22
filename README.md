@@ -21,7 +21,7 @@ Die Inhaltsseiten befinden sich alle in `/Pages/`. Jede Seite hat ihren eigenen 
 | Urteilssammlung zu Creative Commons Lizenzen (DE) | https://ifrOSS.github.io/ifrOSS/Pages/creative_commons_cases/de | [/Pages/creative_commons_cases/de.md](/Pages/creative_commons_cases/de.md) | ✅ | - |
 | Urteilssammlung zu Creative Commons Lizenzen (EN) | https://ifrOSS.github.io/ifrOSS/Pages/creative_commons_cases/en | [/Pages/creative_commons_cases/en.md](/Pages/creative_commons_cases/en.md) | ✅ | - |
 | Urteilssammlung zu FOSS Lizenzen (DE) | https://ifrOSS.github.io/ifrOSS/Pages/oss_cases/de | [/Pages/oss_cases/de.md](/Pages/oss_cases/de.md) | ✅ | - |
-| Urteilssammlung zu FOSS Lizenzen (EN) | https://ifrOSS.github.io/ifrOSS/Pages/oss_cases/en | [/Pages/oss_cases/en.md](/Pages/oss_cases/en.md) | ❌ | Übersetzung fehlt |
+| Urteilssammlung zu FOSS Lizenzen (EN) | https://ifrOSS.github.io/ifrOSS/Pages/oss_cases/en | [/Pages/oss_cases/en.md](/Pages/oss_cases/en.md) | ✅ | - |
 | Lizenzzenter (DE) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/de | [/Pages/licence_center/de.md](/Pages/licence_center/de.md) | ✅ | - |
 | Lizenzzenter (EN) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/en | [/Pages/licence_center/en.md](/Pages/licence_center/en.md) | ✅ | - |
 | Lizenzzenter - Freie Software und Open Source Lizenzen (DE) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/foss/de | [/Pages/licence_center/foss/de.md](/Pages/licence_center/foss/de.md) | ☑️ | SPDX-tags fehlen |
