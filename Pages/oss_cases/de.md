@@ -18,6 +18,8 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 --->
 
+<p><a href="/ifrOSS/index.html">Homepage</a> > Urteilssammlung zu OSS Lizenzen<br></p>
+
 <h1 style="text-align: center;">ifrOSS Urteilssammlung zu OSS Lizenzen</h1>
 <h1>Inhalt</h1>
 
@@ -25,8 +27,6 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 {:toc}
 
 # Deutschland
-
-## Urheberrecht und Wettbewerbsrecht
 
 | **Bezeichnung** | LG Mannheim, Vergleich v. 27.12.2021, Az. 7 O 2/21 |
 |:---:|:---:|
@@ -188,8 +188,6 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Thema** | - |
 | **Lizenz** | - |
 | **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/urteil_lg_muenchen_gpl.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/judgment_dc_munich_gpl.pdf) |
-
-## Sonstige Rechte
 
 | **Bezeichnung** | OLG Köln, Urteil v. 30.9.2016, Az. 6 U 18/16 |
 |:---:|:---:|

@@ -3,6 +3,8 @@ layout: default
 title: "Committer Agreements - ifrOSS.org"
 ---
 
+<p><a href="/ifrOSS/index.html">Homepage</a> > Committer Agreements<br></p>
+
 <h1 style="text-align: center;">Committer Agreements</h1>
 
 Der folgende Abschnitt führt Vereinbarungen auf, die die Umstände

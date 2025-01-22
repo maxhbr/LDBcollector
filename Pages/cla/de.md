@@ -3,6 +3,8 @@ layout: default
 title: "Contributor License Agreements - ifrOSS.org"
 ---
 
+<p><a href="/ifrOSS/index.html">Homepage</a> > Contributor License Agreements<br></p>
+
 <h1 style="text-align: center;">Contributor License Agreements</h1>
 
 Die aufgeführten Lizenzvereinbarungen dienen dazu, dem Verwender über die im Wege einer Open Source Lizenz eingeräumten Nutzungsrechte hinaus weitere Nutzungsrechte einzuräumen, um diesem z.B. einen Lizenzwechsel zu ermöglichen. Umfassende Informationen dazu sowie Mustertexte finden sich unter [http://contributoragreements.org/](http://contributoragreements.org/).

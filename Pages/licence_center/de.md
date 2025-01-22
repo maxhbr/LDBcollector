@@ -3,7 +3,9 @@ layout: default
 title: "Lizenzcenter - ifrOSS.org"
 ---
 
-<h1 style="text-align: center;">ifrOSS Lizenzcenter</h1>
+<p><a href="/ifrOSS/index.html">Homepage</a> > Licence Center<br></p>
+
+<h1 style="text-align: center;">ifrOSS Licence Center</h1>
 
 ## Kategorien
 Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und verschiedenen Lizenztypen zugeordnet. Dies betrifft folgende Kategorien:
