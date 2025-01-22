@@ -1,287 +1,172 @@
+from unittest.mock import MagicMock, patch
 import pytest
 import os
-import json
-from unittest import mock
-from src.update.scancode_licensedb_data_update import (
-    download_index_json, load_json_file, delete_file, download_license_json,
-    get_alias, update_data, add_data, process_licenses
-)
+from src.update.ScancodeLicensedbDataUpdate import ScancodeLicensedbDataUpdate
 
 
-# Mock logger to avoid side effects in tests
-@pytest.fixture
-def mock_logger():
-    with mock.patch("src.update.scancode_licensedb_data_update.logger") as logger_mock:
-        yield logger_mock
-
-
-@pytest.fixture
-def mock_load_json_file():
-    with mock.patch('src.update.scancode_licensedb_data_update.load_json_file') as mock_load_json_file:
-        yield mock_load_json_file
-
-
-@pytest.fixture
-def mock_download_license_json():
-    with (mock.patch('src.update.scancode_licensedb_data_update.download_license_json')
-          as mock_download_license_json_file):
-        yield mock_download_license_json_file
-
-
-@pytest.fixture
-def mock_get_alias():
-    with mock.patch('src.update.scancode_licensedb_data_update.get_alias') as mock_get_alias:
-        yield mock_get_alias
-
-
-@pytest.fixture
-def mock_update_data():
-    with mock.patch('src.update.scancode_licensedb_data_update.update_data') as mock_update_data:
-        yield mock_update_data
-
-
-@pytest.fixture
-def mock_handle_data():
-    with mock.patch('src.update.scancode_licensedb_data_update.handle_data') as mock_handle_data:
-        yield mock_handle_data
-
-
-def test_download_index_json_success(mock_logger):
-    url = "https://example.com/index.json"
-    output_file = "output.json"
-
-    with mock.patch("src.update.scancode_licensedb_data_update.requests.get") as mock_get:
-        mock_get.return_value.status_code = 200
-        mock_get.return_value.content = b"{}"
-
-        with mock.patch("builtins.open", mock.mock_open()) as mock_file:
-            download_index_json(url, output_file)
-            mock_get.assert_called_once_with(url)
-            mock_file.assert_called_once_with(output_file, 'wb')
-            # noinspection PyArgumentList
-            mock_file().write.assert_called_once_with(b"{}")
-            mock_logger.debug.assert_called_with("ScanCode index list downloaded successfully.")
-
-
-def test_download_index_json_failure(mock_logger):
-    url = "https://example.com/index.json"
-    output_file = "output.json"
-
-    with mock.patch("src.update.scancode_licensedb_data_update.requests.get") as mock_get:
-        mock_get.return_value.status_code = 404
-
-        with mock.patch("builtins.open", mock.mock_open()):
-            download_index_json(url, output_file)
-            mock_logger.debug.assert_called_with("Failed to download ScanCode index list.")
-
-
-# Test for load_json_file function
-def test_load_json_file(mock_logger):
-    filepath = "test.json"
-    json_data = {"key": "value"}
-
-    with mock.patch("builtins.open", mock.mock_open(read_data=json.dumps(json_data))):
-        result = load_json_file(filepath)
-        assert result == json_data
-        mock_logger.debug.assert_called_with(f"Load json file from {filepath}")
-
-
-def test_delete_file_exists(mock_logger):
-    filepath = "test.json"
-
-    with mock.patch("os.path.exists", return_value=True), mock.patch("os.remove") as mock_remove:
-        delete_file(filepath)
-        mock_remove.assert_called_once_with(filepath)
-        mock_logger.debug.assert_called_once_with(f"File '{filepath}' deleted successfully.")
-
-
-def test_delete_file_not_exists(mock_logger):
-    filepath = "test.json"
-
-    with mock.patch("os.path.exists", return_value=False), mock.patch("os.remove") as mock_remove:
-        delete_file(filepath)
-        mock_remove.assert_not_called()
-        mock_logger.debug.assert_called_once_with(f"File '{filepath}' does not exist.")
-
-
-# Test for download_license_json function
-def test_download_license_json_success(mock_logger):
-    license_key = "mit"
-    output_file = "mit.json"
-    url = f"https://scancode-licensedb.aboutcode.org/{license_key}.json"
-
-    with mock.patch("src.update.scancode_licensedb_data_update.requests.get") as mock_get:
-        mock_get.return_value.status_code = 200
-        mock_get.return_value.content = b"{}"
-
-        with mock.patch("builtins.open", mock.mock_open()) as mock_file:
-            download_license_json(license_key, output_file)
-            mock_get.assert_called_once_with(url)
-            mock_file.assert_called_once_with(output_file, 'wb')
-            # noinspection PyArgumentList
-            mock_file().write.assert_called_once_with(b"{}")
-            mock_logger.debug.assert_called_once_with(f"License {license_key}.json downloaded successfully.")
-
-
-def test_download_license_json_failure(mock_logger):
-    license_key = "mit"
-    output_file = "mit.json"
-
-    with mock.patch("src.update.scancode_licensedb_data_update.requests.get") as mock_get:
-        mock_get.return_value.status_code = 404
-
-        with mock.patch("builtins.open", mock.mock_open()):
-            download_license_json(license_key, output_file)
-            mock_logger.debug.assert_called_once_with(f"Failed to download License {license_key}.json")
-
-
-# Test for get_alias function
-def test_get_alias_with_spdx(mock_logger):
+# Test for get_aliases function
+def test_get_alias_with_spdx(capsys):
     license_data = {
         "key": "mit",
         "short_name": "MIT",
         "name": "MIT License",
         "other_spdx_license_keys": ["mit-alt"]
     }
+    scancode_licensedb_data_update = ScancodeLicensedbDataUpdate()
 
-    alias = get_alias(license_data, is_spdx=True)
+    alias = scancode_licensedb_data_update.get_aliases(license_data, is_spdx=True)
     assert set(alias) == {"mit", "MIT", "MIT License", "mit-alt"}
 
 
-def test_get_alias_without_spdx(mock_logger):
+def test_get_alias_without_spdx(capsys):
     license_data = {
         "short_name": "MIT",
         "name": "MIT License",
         "key": "mit",
     }
+    scancode_licensedb_data_update = ScancodeLicensedbDataUpdate()
 
-    alias = get_alias(license_data, is_spdx=False)
+    alias = scancode_licensedb_data_update.get_aliases(license_data, is_spdx=False)
     assert set(alias) == {"MIT", "MIT License"}
 
 
-def test_update_data(mock_logger):
-    canonical_id = "MIT"
-    scancode_aliases = ["mit-alt", "MIT License"]
-
-    data = {
-        "canonical": canonical_id,
-        "aliases": {
-            "scancode-licensedb": [],
-            "spdx": []
-        }
-    }
-
-    with mock.patch("builtins.open", mock.mock_open(read_data=json.dumps(data))) as mock_file, \
-         mock.patch("json.dump") as mock_json_dump:
-        update_data(canonical_id, scancode_aliases)
-
-        expected_file_path = os.path.abspath(os.path.join("../../../data", f"{canonical_id}.json"))
-
-        mock_file.assert_any_call(expected_file_path, 'r')
-
-        mock_file.assert_any_call(expected_file_path, 'w')
-
-        mock_json_dump.assert_called_once()
+@pytest.fixture
+def scancode_licensedb_update():
+    """
+    Fixture to initialize an instance of ScancodeLicensedbDataUpdate with a mock DATA_DIR.
+    """
+    class_instance = ScancodeLicensedbDataUpdate()
+    class_instance.DATA_DIR = "/mock/data/dir"
+    class_instance.EXCEPTION_SCANCODE_LICENSEDB = {"exception_license"}
+    class_instance.LOGGER = MagicMock()  # Mock logger to suppress actual logging
+    return class_instance
 
 
-def test_add_data(mock_logger):
-    license_key = "MIT"
-    aliases = ["mit", "MIT License"]
-
-    output_data = {
-        "canonical": license_key,
-        "aliases": {
-            "scancode-licensedb": aliases,
-            "custom": []
+def test_process_license(scancode_licensedb_update, capsys):
+    mock_license_list = [
+        {
+            "license_key": "3com-microcode",
+            "spdx_license_key": "LicenseRef-scancode-3com-microcode",
+            "other_spdx_license_keys": [],
+            "json": "3com-microcode.json",
         },
-        "src": "scancode-licensedb"
+        {
+            "license_key": "lgpl-2.0",
+            "spdx_license_key": "LGPL-2.0-only",
+            "other_spdx_license_keys": [
+                "LGPL-2.0",
+                "LicenseRef-LGPL-2",
+                "LicenseRef-LGPL-2.0"
+            ]
+        },
+        {
+            "license_key": "lgpl-200",
+            "other_spdx_license_keys": [
+                "LGPL-200.0",
+                "LicenseRef-LGPL-200",
+                "LicenseRef-LGPL-200.0"
+            ]
+        }
+    ]
+
+    mock_license_licenseref = {
+        "key": "3com-microcode",
+        "short_name": "3Com Microcode",
+        "name": "3Com Microcode",
+        "spdx_license_key": "LicenseRef-scancode-3com-microcode"
     }
 
-    expected_file_path = os.path.abspath(os.path.join("../../../data", f"{license_key}.json"))
+    mock_license_spdx = {
+        "key": "lgpl-2.0",
+        "short_name": "LGPL 2.0",
+        "name": "GNU Library General Public License 2.0",
+        "spdx_license_key": "LGPL-2.0-only",
+        "other_spdx_license_keys": [
+            "LGPL-2.0",
+            "LicenseRef-LGPL-2",
+            "LicenseRef-LGPL-2.0"
+        ]
+    }
 
-    with mock.patch("builtins.open", mock.mock_open()) as mock_file, \
-         mock.patch("json.dump") as mock_json_dump:
-        add_data(license_key, aliases)
-        # Assert that the correct file path is used
-        mock_file.assert_called_once_with(expected_file_path, 'w')
-        # noinspection PyArgumentList
-        mock_json_dump.assert_called_once_with(output_data, mock_file(), indent=4)
+    mock_license_no_spdx = {
+        "key": "lgpl-200",
+        "short_name": "LGPL 200.0",
+        "name": "GNU Library General Public License 200.0",
+    }
+    scancode_licensedb_update.download_json_file = MagicMock()
+    scancode_licensedb_update.load_json_file = MagicMock(
+        side_effect=[mock_license_list, mock_license_licenseref, mock_license_spdx, mock_license_no_spdx])
+    scancode_licensedb_update.update_license_file = MagicMock()
+    scancode_licensedb_update.create_license_file = MagicMock()
+    scancode_licensedb_update.handle_data = MagicMock()
+    scancode_licensedb_update.delete_file = MagicMock()
 
+    scancode_licensedb_update.process_licenses()
 
-def test_license_in_exceptions(mock_logger, mock_load_json_file):
-    # Mock data setup: license key in exceptions
-    index_data = [{"license_key": "bsd-2-clause-netbsd"}]
-    mock_load_json_file.return_value = index_data
+    assert scancode_licensedb_update.download_json_file.call_count == 4
+    assert scancode_licensedb_update.load_json_file.call_count == 4
+    assert scancode_licensedb_update.handle_data.call_count == 2
+    assert scancode_licensedb_update.delete_file.call_count == 4
 
-    # Call the process_licenses function
-    process_licenses()
+    scancode_licensedb_update.LOGGER.debug.assert_any_call("Starts with 'LicenseRef' as SPDX key")
+    scancode_licensedb_update.LOGGER.debug.assert_any_call("No other spdx license keys for 3com-microcode")
+    scancode_licensedb_update.LOGGER.debug.assert_any_call("lgpl-2.0 is already a spdx license")
+    scancode_licensedb_update.LOGGER.debug.assert_any_call("No SPDX license key found for lgpl-200")
 
-    # Extract all logger.debug call arguments
-    logged_messages = [call.args[0] for call in mock_logger.debug.call_args_list]
-
-    # Verify that the specific "Skipping" message was logged
-    assert 'Skipping bsd-2-clause-netbsd' in logged_messages
-
-
-def test_spdx_license_key(mock_load_json_file, mock_download_license_json, mock_logger,
-                          mock_handle_data, mock_update_data, mock_get_alias):
-    # Case where spdx_license_key is present and does not start with "LicenseRef"
-    index_data = [{"license_key": "some-license"}]
-    license_data = {"spdx_license_key": "SPDX-1234"}
-
-    # Mock load_json_file to return index_data and license_data
-    mock_load_json_file.side_effect = [index_data, license_data]
-
-    # Call the process_licenses function
-    process_licenses()
-
-    # Check if get_alias and update_data are called correctly
-    mock_get_alias.assert_called_with(license_data, is_spdx=True)
-    mock_update_data.assert_called_with("SPDX-1234", mock_get_alias.return_value)
-    mock_handle_data.assert_not_called()
-
-    # Case where spdx_license_key starts with "LicenseRef"
-    license_data = {"spdx_license_key": "LicenseRef-1234"}
-    mock_load_json_file.side_effect = [index_data, license_data]
-
-    # Call the process_licenses function again
-    process_licenses()
-
-    # Check if get_alias and handle_data are called correctly
-    mock_get_alias.assert_called_with(license_data, is_spdx=False)
-    mock_handle_data.assert_called_with(mock_get_alias.return_value, "some-license")
-    # Assert that mock_update_data is only called once
-    assert mock_update_data.call_count == 1
+    assert scancode_licensedb_update.LOGGER.debug.call_count == 5
 
 
-def test_no_spdx_license_key(mock_load_json_file, mock_download_license_json, mock_logger,
-                             mock_handle_data, mock_get_alias):
-    # Case where spdx_license_key is not present
-    index_data = [{"license_key": "some-license"}]
-    license_data = {}
+@patch("os.path.exists")
+def test_handle_data_update(mock_exists, scancode_licensedb_update):
+    """
+    Test the case where the license file already exists.
+    """
 
-    # Mock load_json_file to return index_data and license_data
-    mock_load_json_file.side_effect = [index_data, license_data]
+    # Mock class methods
+    scancode_licensedb_update.update_license_file = MagicMock()
+    scancode_licensedb_update.create_license_file = MagicMock()
 
-    # Call the process_licenses function
-    process_licenses()
+    # Mock os.path.exists to return True
+    mock_exists.return_value = True
 
-    # Check if get_alias and handle_data are called when no spdx_license_key
-    mock_get_alias.assert_called_with(license_data, is_spdx=False)
-    mock_handle_data.assert_called_with(mock_get_alias.return_value, "some-license")
+    # Define input arguments
+    aliases = ["Alias1", "Alias2"]
+    license_key = "test_license"
 
-    logged_messages = [call.args[0] for call in mock_logger.debug.call_args_list]
+    # Call the method under test
+    scancode_licensedb_update.handle_data(aliases, license_key)
 
-    assert 'No SPDX license key found for some-license' in logged_messages
+    # Assert that update_license_file was called with the correct arguments
+    scancode_licensedb_update.update_license_file.assert_called_once_with(license_key, aliases)
+
+    # Assert that create_license_file was NOT called
+    scancode_licensedb_update.create_license_file.assert_not_called()
 
 
-# Test for process_licenses function (integration test)
-def test_process_licenses(mock_logger):
-    with mock.patch("src.update.scancode_licensedb_data_update.download_index_json"), \
-         mock.patch("src.update.scancode_licensedb_data_update.load_json_file",
-                    return_value=[{"license_key": "mit"}]), \
-         mock.patch("src.update.scancode_licensedb_data_update.download_license_json"), \
-         mock.patch("src.update.scancode_licensedb_data_update.get_alias", return_value=["MIT", "MIT License"]), \
-         mock.patch("src.update.scancode_licensedb_data_update.update_data"), \
-         mock.patch("src.update.scancode_licensedb_data_update.delete_file"):
-        process_licenses()
+@patch("os.path.exists")
+def test_handle_data_create(mock_exists, scancode_licensedb_update):
+    """
+    Test the case where the license file does not exist.
+    """
+    instance = scancode_licensedb_update
+
+    # Mock class methods
+    instance.update_license_file = MagicMock()
+    instance.create_license_file = MagicMock()
+
+    # Mock os.path.exists to return False
+    mock_exists.return_value = False
+
+    # Define input arguments
+    aliases = ["Alias1", "Alias2"]
+    license_key = "test_license"
+
+    # Call the method under test
+    instance.handle_data(aliases, license_key)
+
+    # Assert that create_license_file was called with the correct arguments
+    output_filepath = os.path.join(instance.DATA_DIR, f"{license_key}.json")
+    instance.create_license_file.assert_called_once_with(license_key, aliases, output_filepath)
+
+    # Assert that update_license_file was NOT called
+    instance.update_license_file.assert_not_called()

@@ -233,7 +233,7 @@ def test_check_unique_aliases_failure():
 
 def test_check_src_and_canonical():
     spdx_licenses = ["MIT", "Apache-2.0"]
-    test_data = {"canonical": "MIT", "src": "SPDX"}
+    test_data = {"canonical": "MIT", "src": "spdx"}
 
     os.makedirs("test_data", exist_ok=True)
     filepath = os.path.join("test_data", "test_file.json")
@@ -243,15 +243,14 @@ def test_check_src_and_canonical():
 
     with mock.patch('src.validate.data_validation.DATA_DIR', "test_data"):
         with mock.patch('src.validate.data_validation.logger', mock_logger):
-            check_src_and_canonical(spdx_licenses, [], [])
+            check_src_and_canonical(spdx_licenses, [])
 
     mock_logger.error.assert_not_called()
 
 
-def test_check_src_and_canonical_failure():
+def test_check_src_and_canonical_failure_source_not_spdx():
     spdx_licenses = ["MIT", "Apache-2.0"]
-    canonical_name = "NO_SPDX_LICENSE"
-    test_data = {"canonical": canonical_name, "src": "SPDX"}
+    test_data = {"canonical": "MIT", "src": "Not-SPDX"}
 
     filepath = os.path.join("test_data", "test_file.json")
 
@@ -260,10 +259,28 @@ def test_check_src_and_canonical_failure():
 
     with mock.patch('src.validate.data_validation.DATA_DIR', "test_data"):
         with mock.patch('src.validate.data_validation.logger', mock_logger):
-            check_src_and_canonical(spdx_licenses, [], [])
+            check_src_and_canonical(spdx_licenses, [])
 
     mock_logger.error.assert_called_with(
-        f"If src is SPDX, canonical name '{canonical_name}' must be in SPDX license list")
+        "If src is SPDX, canonical name 'MIT' must be in SPDX license list")
+
+
+def test_check_src_and_canonical_failure_source_is_spdx():
+    spdx_licenses = ["MIT", "Apache-2.0"]
+    canonical_name = "NO_SPDX_LICENSE"
+    test_data = {"canonical": canonical_name, "src": "spdx"}
+
+    filepath = os.path.join("test_data", "test_file.json")
+
+    with open(filepath, 'w') as f:
+        json.dump(test_data, f)
+
+    with mock.patch('src.validate.data_validation.DATA_DIR', "test_data"):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_src_and_canonical(spdx_licenses, [])
+
+    mock_logger.error.assert_called_with(
+        f"Canonical name '{canonical_name}' is in SPDX license list but source is not 'spdx'.")
 
 
 def test_check_length_and_characters():
@@ -330,13 +347,13 @@ def test_main_integration():
     mock_logger.handlers[1].error_occurred = False  # Simulate no error occurring
 
     with mock.patch("src.validate.data_validation.download_license_list"), \
-         mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-         mock.patch("src.validate.data_validation.delete_file"), \
-         mock.patch("src.validate.data_validation.check_json_filename"), \
-         mock.patch("src.validate.data_validation.check_unique_aliases"), \
-         mock.patch("src.validate.data_validation.check_length_and_characters"):
+        mock.patch("src.validate.data_validation.load_ids_from_license_list",
+                   side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
+        mock.patch("src.validate.data_validation.check_src_and_canonical"), \
+        mock.patch("src.validate.data_validation.delete_file"), \
+        mock.patch("src.validate.data_validation.check_json_filename"), \
+        mock.patch("src.validate.data_validation.check_unique_aliases"), \
+        mock.patch("src.validate.data_validation.check_length_and_characters"):
         main()
 
         # Verify that no error occurred (if checking the logger)
@@ -349,13 +366,13 @@ def test_main_integration_fail():
     mock_logger.handlers[1].error_occurred = True  # Simulate an error occurring
 
     with mock.patch("src.validate.data_validation.download_license_list"), \
-         mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-         mock.patch("src.validate.data_validation.delete_file"), \
-         mock.patch("src.validate.data_validation.check_json_filename"), \
-         mock.patch("src.validate.data_validation.check_unique_aliases"), \
-         mock.patch("src.validate.data_validation.check_length_and_characters"):
+        mock.patch("src.validate.data_validation.load_ids_from_license_list",
+                   side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
+        mock.patch("src.validate.data_validation.check_src_and_canonical"), \
+        mock.patch("src.validate.data_validation.delete_file"), \
+        mock.patch("src.validate.data_validation.check_json_filename"), \
+        mock.patch("src.validate.data_validation.check_unique_aliases"), \
+        mock.patch("src.validate.data_validation.check_length_and_characters"):
         main()
 
         # Verify that no error occurred (if checking the logger)
