@@ -1,6 +1,6 @@
 # ifrOSS Knowledge Center
 
-Urteils- und Lizenzsammlung des Instituts für Rechtsfragen der Freien und Open Source Software.
+Urteils- und Lizenzsammlungen des Instituts für Rechtsfragen der Freien und Open Source Software.
 
 ## Struktur
 
