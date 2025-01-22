@@ -197,7 +197,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Bezeichnung** | OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14 |
 |:---:|:---:|
 | **Parteien** | - |
-| **Thema** | nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported); Schadensersatz für nicht-kommerziellen Nutzung ([]Kommentar bei ifrOSS(http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial)) |
+| **Thema** | nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported); Schadensersatz für nicht-kommerziellen Nutzung ([Kommentar bei ifrOSS](http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial)) |
 | **Lizenz** | - |
 | **Links** | [🇩🇪](http://medien-internet-und-recht.de/pdf/VT-MIR-2014-Dok-121.pdf) |
 
@@ -262,7 +262,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Bezeichnung** | US District Court, Eastern District of Kentucky Central Division, 2018-07-10, Case No. 5:2017cv00173 |
 |:---:|:---:|
 | **Parteien** | Philpot v. LM Communications II of South Carolina, Inc. |
-| **Thema** | Durchsetzung vonn CC-BY-2.0 Generic wegen unterlassener Urhebernennung |
+| **Thema** | Durchsetzung von CC-BY-2.0 Generic wegen unterlassener Urhebernennung |
 | **Lizenz** | - |
 | **Links** | [🇬🇧](https://law.justia.com/cases/federal/district-courts/kentucky/kyedce/5:2017cv00173/82876/80/) |
 
@@ -289,8 +289,8 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 | **Bezeichnung** | United States District Court for the District of Columbia, 2015-08-18, Case No. 14-1043 (ABJ) |
 |:---:|:---:|
-| **Parteien** | - |
-| **Thema** | Drauglis v. Kappa Map Group, LLC |
+| **Parteien** | Drauglis v. Kappa Map Group, LLC |
+| **Thema** | - |
 | **Lizenz** | - |
 | **Links** | [🇬🇧](https://cases.justia.com/federal/district-courts/district-of-columbia/dcdce/1:2014cv01043/166825/39/0.pdf?ts=1439987006) |
 
