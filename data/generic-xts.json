@@ -1,0 +1,10 @@
+{
+    "canonical": "generic-xts",
+    "aliases": {
+        "spdx": [
+            "Generic XTS License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "djangosnippets-tos",
+    "aliases": {
+        "scancode-licensedb": [
+            "Djangosnippets TOS",
+            "LicenseRef-scancode-djangosnippets-tos",
+            "Djangosnippets Terms of Service"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

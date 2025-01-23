@@ -1,0 +1,12 @@
+{
+    "canonical": "fsl-1.1-apache-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "FSL-1.1-Apache-2.0",
+            "Functional Source License, Version 1.1, Apache 2.0 Future License",
+            "LicenseRef-scancode-fsl-1.1-apache-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

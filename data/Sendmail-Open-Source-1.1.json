@@ -1,0 +1,13 @@
+{
+    "canonical": "Sendmail-Open-Source-1.1",
+    "aliases": {
+        "spdx": [
+            "Sendmail Open Source License v1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "sendmail-open-source-1.1"
+        ]
+    },
+    "src": "spdx"
+}

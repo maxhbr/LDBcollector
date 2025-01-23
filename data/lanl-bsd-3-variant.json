@@ -1,0 +1,12 @@
+{
+    "canonical": "lanl-bsd-3-variant",
+    "aliases": {
+        "scancode-licensedb": [
+            "Los Alamos National Labs BSD-3 Variant",
+            "LANL BSD-3 Variant",
+            "LicenseRef-scancode-lanl-bsd-3-variant"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

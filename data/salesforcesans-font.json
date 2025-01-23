@@ -1,0 +1,11 @@
+{
+    "canonical": "salesforcesans-font",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-salesforcesans-font",
+            "SalesforceSans Font License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

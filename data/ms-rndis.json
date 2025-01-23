@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-rndis",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-ms-rndis",
+            "MS-RNDIS",
+            "Remote Network Driver Interface Specification (RNDIS) Protocol"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

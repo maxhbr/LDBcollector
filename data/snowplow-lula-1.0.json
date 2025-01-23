@@ -1,0 +1,12 @@
+{
+    "canonical": "snowplow-lula-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-snowplow-lula-1.0",
+            "Snowplow Limited Use License Agreement 1.0",
+            "Snowplow Limited Use License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

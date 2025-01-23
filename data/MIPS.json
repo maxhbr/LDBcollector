@@ -1,0 +1,13 @@
+{
+    "canonical": "MIPS",
+    "aliases": {
+        "spdx": [
+            "MIPS License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mips"
+        ]
+    },
+    "src": "spdx"
+}

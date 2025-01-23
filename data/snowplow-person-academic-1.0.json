@@ -1,0 +1,12 @@
+{
+    "canonical": "snowplow-person-academic-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Snowplow Personal & Academic License Agreement 1.0",
+            "Snowplow Personal-Academic License 1.0",
+            "LicenseRef-scancode-snowplow-person-academic-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

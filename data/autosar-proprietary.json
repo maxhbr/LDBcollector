@@ -1,0 +1,11 @@
+{
+    "canonical": "autosar-proprietary",
+    "aliases": {
+        "scancode-licensedb": [
+            "AUTOSAR Proprietary Notice",
+            "LicenseRef-scancode-autosar-proprietary"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

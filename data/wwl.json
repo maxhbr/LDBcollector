@@ -1,0 +1,10 @@
+{
+    "canonical": "wwl",
+    "aliases": {
+        "spdx": [
+            "WWL License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}
