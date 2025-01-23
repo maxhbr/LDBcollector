@@ -7,6 +7,7 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
     def __init__(self):
         super().__init__(src="scancode-licensedb")
 
+        self.url = "https://scancode-licensedb.aboutcode.org/index.json"
         load_dotenv()
 
         self.EXCEPTION_SCANCODE_LICENSEDB = os.getenv('EXCEPTION_SCANCODE_LICENSEDB')
@@ -54,6 +55,32 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
 
         return list(aliases)
 
+    def process_unrecognized_license_id(self, aliases: list, license_id: str):
+        """
+        Process unrecognized license to either find the license file with all the  license name variations or return the
+        unprocessed license if no match is found
+
+        Args:
+            aliases: A list of aliases associated with this license
+            license_id: id of the license
+
+        Returns:
+            license_id (string): the id of the license if the license file is not found or None
+        """
+        self.LOGGER.debug(f"Processing unrecognized license {license_id}...")
+
+        # Get all variations of license and merge them into a list
+        license_name_variations = []
+        license_name_variations.extend(aliases)
+        license_name_variations.extend([license_id])
+
+        filename = self.get_file_for_unrecognised_id(license_name_variations)
+
+        if not filename:
+            self.LOGGER.info(f"File not found for {license_id}.\n")
+            return license_id
+        return None
+
     def handle_data(self, aliases, license_key):
         """
         Determine if a license file must be updated or created
@@ -65,8 +92,9 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
         if os.path.exists(os.path.join(self.DATA_DIR, f"{license_key}.json")):
             self.update_license_file(license_key, aliases)
         else:
-            output_filepath = os.path.join(self.DATA_DIR, f"{license_key}.json")
-            self.create_license_file(license_key, aliases, output_filepath)
+            license_key = self.process_unrecognized_license_id(aliases, license_key)
+            if license_key:
+                self.create_license_file(license_key, aliases)
 
     def process_licenses(self):
         """
@@ -76,7 +104,7 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
         filepath = "licensedb_index.json"
 
         # Download and load index.json of ScanCode LicenseDB
-        self.download_json_file("https://scancode-licensedb.aboutcode.org/index.json", filepath)
+        self.download_json_file(self.url, filepath)
         index_data = self.load_json_file(filepath)
 
         for lic in index_data:

@@ -112,3 +112,31 @@ class BaseDataUpdate:
         # Write new data to the file
         with open(filepath, 'w') as outfile:
             json.dump(output_data, outfile, indent=4)
+
+    def get_file_for_unrecognised_id(self, license_name_variations):
+        """
+        Get file path for unrecognized license id by iterating through every file and searching for matching license
+        name variation.
+        Args:
+            license_name_variations:
+
+        Returns:
+            filename (string): file name for recognized license id or None if file isn't found
+        """
+        self.LOGGER.debug(f"Searching for unrecognized license id for {license_name_variations}...")
+
+        file = None
+        for license_variation in license_name_variations:
+            for filename in os.listdir(self.DATA_DIR):
+                filepath = os.path.join(self.DATA_DIR, filename)
+                with open(filepath, 'r') as f:
+                    data = json.load(f)
+                    aliases = data.get("aliases", {})
+
+                    aliases = list(itertools.chain.from_iterable(list(aliases.values())))
+
+                    if license_variation in aliases:
+                        self.LOGGER.debug(f"Found with {license_variation} in file {filename}")
+                        file = filename
+                        break
+        return file

@@ -1,5 +1,3 @@
-import itertools
-import json
 import os
 from src.update.BaseDataUpdate import BaseDataUpdate
 
@@ -79,32 +77,6 @@ class OsiDataUpdate(BaseDataUpdate):
             self.update_license_file(license_id, license_name_variations)
 
         return unprocessed_license
-
-    def get_file_for_unrecognised_id(self, license_name_variations):
-        """
-        Get file path for unrecognized license id by iterating through every file and searching for matching license
-        name variation.
-        Args:
-            license_name_variations:
-
-        Returns:
-            filename (string): file name for recognized license id or None if file isn't found
-        """
-
-        file = None
-        for license_variation in license_name_variations:
-            for filename in os.listdir(self.DATA_DIR):
-                filepath = os.path.join(self.DATA_DIR, filename)
-                with open(filepath, 'r') as f:
-                    data = json.load(f)
-                    aliases = data.get("aliases", {})
-
-                    aliases = list(itertools.chain.from_iterable(list(aliases.values())))
-
-                    if license_variation in aliases:
-                        file = filename
-                        break
-        return file
 
     def process_licenses(self):
         """
