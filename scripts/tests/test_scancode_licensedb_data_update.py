@@ -1,6 +1,5 @@
 from unittest.mock import MagicMock, patch
 import pytest
-import os
 from src.update.ScancodeLicensedbDataUpdate import ScancodeLicensedbDataUpdate
 
 
@@ -199,4 +198,3 @@ def test_handle_data_not_create(mock_exists, scancode_licensedb_update):
 
     # Assert that update_license_file was NOT called
     instance.update_license_file.assert_not_called()
-
