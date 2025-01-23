@@ -153,6 +153,7 @@ def test_handle_data_create(mock_exists, scancode_licensedb_update):
     # Mock class methods
     instance.update_license_file = MagicMock()
     instance.create_license_file = MagicMock()
+    instance.get_file_for_unrecognised_id = MagicMock(side_effect=[None])
 
     # Mock os.path.exists to return False
     mock_exists.return_value = False
@@ -165,8 +166,37 @@ def test_handle_data_create(mock_exists, scancode_licensedb_update):
     instance.handle_data(aliases, license_key)
 
     # Assert that create_license_file was called with the correct arguments
-    output_filepath = os.path.join(instance.DATA_DIR, f"{license_key}.json")
-    instance.create_license_file.assert_called_once_with(license_key, aliases, output_filepath)
+    instance.create_license_file.assert_called_once_with(license_key, aliases)
 
     # Assert that update_license_file was NOT called
     instance.update_license_file.assert_not_called()
+
+
+@patch("os.path.exists")
+def test_handle_data_not_create(mock_exists, scancode_licensedb_update):
+    """
+    Test the case where the license file does not exist.
+    """
+    instance = scancode_licensedb_update
+
+    # Mock class methods
+    instance.update_license_file = MagicMock()
+    instance.create_license_file = MagicMock()
+    instance.get_file_for_unrecognised_id = MagicMock(side_effect=["test_license"])
+
+    # Mock os.path.exists to return False
+    mock_exists.return_value = False
+
+    # Define input arguments
+    aliases = ["Alias1", "Alias2"]
+    license_key = "test_license"
+
+    # Call the method under test
+    instance.handle_data(aliases, license_key)
+
+    # Assert that create_license_file was called with the correct arguments
+    instance.create_license_file.assert_not_called()
+
+    # Assert that update_license_file was NOT called
+    instance.update_license_file.assert_not_called()
+

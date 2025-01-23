@@ -141,6 +141,23 @@ def check_length_and_characters():
                     logger.error(f"Canonical name '{canonical_name}' contains forbidden characters")
 
 
+def check_no_empty_field_except_custom():
+    for filename in os.listdir(DATA_DIR):
+        filepath = os.path.join(DATA_DIR, filename)
+        with open(filepath, 'r') as f:
+            data = json.load(f)
+
+            if not data["canonical"]:
+                logger.error(f"Field 'canonical' in '{filename}' is empty.")
+            if not data["aliases"]:
+                logger.error(f"Field 'aliases' in '{filename}' is empty.")
+            for key, value in data["aliases"].items():
+                if not value and key != "custom":
+                    logger.error(f"Alias list in '{filename}' for field '{key}' is empty.")
+            if not data["src"]:
+                logger.error(f"Field 'src' in '{filename}' is empty.")
+
+
 def main():
     spdx_license_url = "https://raw.githubusercontent.com/spdx/license-list-data/main/json/licenses.json"
     spdx_license_file = "spdx_license_list.json"
@@ -168,6 +185,7 @@ def main():
     check_unique_aliases()
     check_length_and_characters()
 
+    check_no_empty_field_except_custom()
     # Check if error occurred
     if logger.handlers[1].error_occurred:
         exit(1)
