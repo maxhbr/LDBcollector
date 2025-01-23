@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "uoi-ncsa",
             "NCSA Open Source License"
+        ],
+        "osi": [
+            "The University of Illinois/NCSA Open Source License"
         ]
     },
     "src": "spdx"

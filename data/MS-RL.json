@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "MS-RL",
             "ms-rl"
+        ],
+        "osi": [
+            "Microsoft Reciprocal License (MS-RL)"
         ]
     },
     "src": "spdx"

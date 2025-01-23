@@ -11,6 +11,9 @@
             "GPL 3.0",
             "gpl-3.0",
             "LicenseRef-gpl-3.0"
+        ],
+        "osi": [
+            "GNU General Public License, Version 3.0"
         ]
     },
     "src": "spdx"

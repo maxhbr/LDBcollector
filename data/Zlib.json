@@ -26,6 +26,9 @@
         "scancode-licensedb": [
             "ZLIB License",
             "zlib"
+        ],
+        "osi": [
+            "The zlib/libpng License (Zlib)"
         ]
     },
     "src": "spdx"

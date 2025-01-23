@@ -23,6 +23,9 @@
         "scancode-licensedb": [
             "CDDL 1.0",
             "cddl-1.0"
+        ],
+        "osi": [
+            "Common Development and Distribution License, Version 1.0"
         ]
     },
     "src": "spdx"

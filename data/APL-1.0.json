@@ -9,6 +9,9 @@
             "APL 1.0",
             "adapt-1.0",
             "Adaptive Public License"
+        ],
+        "osi": [
+            "Adaptive Public License, Version 1.0"
         ]
     },
     "src": "spdx"

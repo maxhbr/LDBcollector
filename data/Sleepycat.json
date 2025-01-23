@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "sleepycat",
             "Sleepycat License (Berkeley Database License)"
+        ],
+        "osi": [
+            "The Sleepycat License"
         ]
     },
     "src": "spdx"

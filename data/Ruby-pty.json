@@ -4,7 +4,10 @@
         "spdx": [
             "Ruby pty extension license"
         ],
-        "custom": []
+        "custom": [],
+        "scancode-licensedb": [
+            "ruby-pty"
+        ]
     },
     "src": "spdx"
 }

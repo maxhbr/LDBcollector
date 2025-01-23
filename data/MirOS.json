@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "MirOS License",
             "mir-os"
+        ],
+        "osi": [
+            "The MirOS Licence (MirOS)"
         ]
     },
     "src": "spdx"

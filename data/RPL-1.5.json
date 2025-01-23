@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "RPL 1.5",
             "rpl-1.5"
+        ],
+        "osi": [
+            "Reciprocal Public License, Version 1.5"
         ]
     },
     "src": "spdx"

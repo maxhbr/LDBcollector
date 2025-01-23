@@ -26,6 +26,9 @@
             "LicenseRef-LGPL-2.1",
             "lgpl-2.1",
             "LGPL 2.1"
+        ],
+        "osi": [
+            "GNU Lesser General Public License, Version 2.1"
         ]
     },
     "src": "spdx"

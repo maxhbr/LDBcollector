@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "RealNetworks Public Source License 1.0",
             "rpsl-1.0"
+        ],
+        "osi": [
+            "RealNetworks Public Source License, Version 1.0"
         ]
     },
     "src": "spdx"

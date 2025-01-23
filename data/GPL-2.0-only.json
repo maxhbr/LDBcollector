@@ -11,6 +11,9 @@
             "GPL 2.0",
             "GNU General Public License 2.0",
             "gpl-2.0"
+        ],
+        "osi": [
+            "GNU General Public License, Version 2.0"
         ]
     },
     "src": "spdx"

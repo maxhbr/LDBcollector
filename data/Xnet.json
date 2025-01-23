@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "xnet",
             "Altera License"
+        ],
+        "osi": [
+            "The X.Net, Inc. License"
         ]
     },
     "src": "spdx"

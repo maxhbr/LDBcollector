@@ -19,6 +19,10 @@
         "scancode-licensedb": [
             "bsd-new",
             "LicenseRef-scancode-libzip"
+        ],
+        "osi": [
+            "Revised BSD License",
+            "BSD-3"
         ]
     },
     "src": "spdx"

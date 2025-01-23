@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "nosl-3.0",
             "Non-Profit OSL 3.0"
+        ],
+        "osi": [
+            "The Non-Profit Open Software License, Version 3.0"
         ]
     },
     "src": "spdx"

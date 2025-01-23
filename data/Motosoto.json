@@ -9,6 +9,9 @@
             "motosoto-0.9.1",
             "Motosoto 0.9.1",
             "Motosoto Open Source License v0.9.1"
+        ],
+        "osi": [
+            "Motosoto Open Source License, Version 0.9.1"
         ]
     },
     "src": "spdx"

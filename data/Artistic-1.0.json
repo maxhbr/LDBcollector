@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "artistic-1.0",
             "Artistic 1.0"
+        ],
+        "osi": [
+            "Artistic License, Version 1.0"
         ]
     },
     "src": "spdx"

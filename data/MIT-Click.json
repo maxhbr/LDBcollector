@@ -4,7 +4,12 @@
         "spdx": [
             "MIT Click License"
         ],
-        "custom": []
+        "custom": [],
+        "scancode-licensedb": [
+            "click-license",
+            "Click License",
+            "LicenseRef-scancode-click-license"
+        ]
     },
     "src": "spdx"
 }

@@ -4,7 +4,12 @@
         "spdx": [
             "DocBook XML License"
         ],
-        "custom": []
+        "custom": [],
+        "scancode-licensedb": [
+            "Docbook License",
+            "LicenseRef-scancode-docbook",
+            "docbook"
+        ]
     },
     "src": "spdx"
 }

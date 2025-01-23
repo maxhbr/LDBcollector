@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "lppl-1.3c",
             "LPPL 1.3c"
+        ],
+        "osi": [
+            "LaTeX Project Public License, Version 1.3c"
         ]
     },
     "src": "spdx"

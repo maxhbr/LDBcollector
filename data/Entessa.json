@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "entessa-1.0",
             "Entessa 1.0"
+        ],
+        "osi": [
+            "Entessa Public License"
         ]
     },
     "src": "spdx"

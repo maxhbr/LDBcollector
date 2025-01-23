@@ -25,6 +25,9 @@
         "scancode-licensedb": [
             "ofl-1.1",
             "OFL 1.1"
+        ],
+        "osi": [
+            "SIL Open Font License, Version 1.1"
         ]
     },
     "src": "spdx"

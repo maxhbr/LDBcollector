@@ -7,6 +7,9 @@
         "custom": [],
         "scancode-licensedb": [
             "fair"
+        ],
+        "osi": [
+            "Fair License (Fair)"
         ]
     },
     "src": "spdx"

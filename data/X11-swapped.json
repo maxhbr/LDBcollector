@@ -4,7 +4,10 @@
         "spdx": [
             "X11 swapped final paragraphs"
         ],
-        "custom": []
+        "custom": [],
+        "scancode-licensedb": [
+            "x11-swapped"
+        ]
     },
     "src": "spdx"
 }

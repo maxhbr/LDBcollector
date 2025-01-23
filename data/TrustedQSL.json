@@ -4,7 +4,10 @@
         "spdx": [
             "TrustedQSL License"
         ],
-        "custom": []
+        "custom": [],
+        "scancode-licensedb": [
+            "trustedqsl"
+        ]
     },
     "src": "spdx"
 }

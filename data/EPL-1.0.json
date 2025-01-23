@@ -23,6 +23,9 @@
         "scancode-licensedb": [
             "EPL 1.0",
             "epl-1.0"
+        ],
+        "osi": [
+            "Eclipse Public License, Version 1.0"
         ]
     },
     "src": "spdx"

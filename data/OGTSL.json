@@ -7,6 +7,9 @@
         "custom": [],
         "scancode-licensedb": [
             "opengroup"
+        ],
+        "osi": [
+            "The Open Group Test Suite License (OGTSL)"
         ]
     },
     "src": "spdx"

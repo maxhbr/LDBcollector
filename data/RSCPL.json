@@ -9,6 +9,9 @@
             "Ricoh Source Code Public License 1.0",
             "Ricoh Source Code Public License v1.0",
             "ricoh-1.0"
+        ],
+        "osi": [
+            "The Ricoh Source Code Public License"
         ]
     },
     "src": "spdx"

@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "mpl-1.0",
             "MPL 1.0"
+        ],
+        "osi": [
+            "Mozilla Public License, Version 1.0"
         ]
     },
     "src": "spdx"

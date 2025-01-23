@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "php-3.0",
             "PHP License 3.0"
+        ],
+        "osi": [
+            "The PHP License, Version 3.0"
         ]
     },
     "src": "spdx"

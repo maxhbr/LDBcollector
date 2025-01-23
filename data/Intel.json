@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "Intel BSD - Export Control",
             "intel-bsd-export-control"
+        ],
+        "osi": [
+            "The Intel Open Source License"
         ]
     },
     "src": "spdx"

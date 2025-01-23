@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "Lucent Public License 1.0",
             "lucent-pl-1.0"
+        ],
+        "osi": [
+            "Lucent Public License, Plan 9, Version 1.0"
         ]
     },
     "src": "spdx"

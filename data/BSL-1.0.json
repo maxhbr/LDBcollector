@@ -21,6 +21,9 @@
         "scancode-licensedb": [
             "Boost 1.0",
             "boost-1.0"
+        ],
+        "osi": [
+            "Boost Software License 1.0 (BSL-1.0)"
         ]
     },
     "src": "spdx"

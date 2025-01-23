@@ -9,6 +9,9 @@
             "Q Public License Version 1.0",
             "qpl-1.0",
             "QPL 1.0"
+        ],
+        "osi": [
+            "The Q Public License Version (QPL-1.0)"
         ]
     },
     "src": "spdx"

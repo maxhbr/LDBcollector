@@ -9,6 +9,9 @@
             "Educational Community License 2.0",
             "ecl-2.0",
             "ECL 2.0"
+        ],
+        "osi": [
+            "Educational Community License, Version 2.0"
         ]
     },
     "src": "spdx"

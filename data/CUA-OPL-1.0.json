@@ -9,6 +9,9 @@
             "CUA Office Public License 1.0",
             "CUA-OPL-1.0",
             "cua-opl-1.0"
+        ],
+        "osi": [
+            "CUA Office Public License"
         ]
     },
     "src": "spdx"

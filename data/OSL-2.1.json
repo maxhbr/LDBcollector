@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "osl-2.1",
             "OSL 2.1"
+        ],
+        "osi": [
+            "Open Software License, Version 2.1"
         ]
     },
     "src": "spdx"

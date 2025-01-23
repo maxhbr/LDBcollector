@@ -24,6 +24,9 @@
         "scancode-licensedb": [
             "mpl-1.1",
             "MPL 1.1"
+        ],
+        "osi": [
+            "Mozilla Public License, Version 1.1"
         ]
     },
     "src": "spdx"

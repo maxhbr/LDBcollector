@@ -9,6 +9,9 @@
             "Academic Free License 3.0",
             "afl-3.0",
             "AFL 3.0"
+        ],
+        "osi": [
+            "Academic Free License, Version 3.0"
         ]
     },
     "src": "spdx"

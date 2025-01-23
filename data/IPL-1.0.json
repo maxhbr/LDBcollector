@@ -9,6 +9,9 @@
             "IPL 1.0",
             "ibmpl-1.0",
             "IBM Public License"
+        ],
+        "osi": [
+            "IBM Public License, Version 1.0"
         ]
     },
     "src": "spdx"

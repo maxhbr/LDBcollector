@@ -9,6 +9,9 @@
             "Sybase Open Watcom Public License v1.0",
             "sybase",
             "Open Watcom 1.0"
+        ],
+        "osi": [
+            "The Sybase Open Source Licence"
         ]
     },
     "src": "spdx"

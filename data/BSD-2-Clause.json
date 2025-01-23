@@ -13,6 +13,10 @@
         "scancode-licensedb": [
             "BSD-2",
             "bsd-simplified"
+        ],
+        "osi": [
+            "Simplified BSD License",
+            "FreeBSD License"
         ]
     },
     "src": "spdx"

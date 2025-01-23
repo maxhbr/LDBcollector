@@ -9,6 +9,9 @@
             "Eiffel Forum License 1.0",
             "EFL 1.0",
             "efl-1.0"
+        ],
+        "osi": [
+            "The Eiffel Forum License, Version 1"
         ]
     },
     "src": "spdx"

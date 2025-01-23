@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "CeCILL 2.1",
             "cecill-2.1"
+        ],
+        "osi": [
+            "Cea Cnrs Inria Logiciel Libre License, Version 2.1"
         ]
     },
     "src": "spdx"

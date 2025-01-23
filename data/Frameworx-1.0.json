@@ -9,6 +9,9 @@
             "Frameworx Open License v1.0",
             "Frameworx 1.0",
             "frameworx-1.0"
+        ],
+        "osi": [
+            "Frameworx License, Version 1.0"
         ]
     },
     "src": "spdx"

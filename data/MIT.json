@@ -18,6 +18,10 @@
             "mit",
             "LicenseRef-MIT-TC",
             "LicenseRef-MIT-Bootstrap"
+        ],
+        "osi": [
+            "MIT/Expat License",
+            "Expat"
         ]
     },
     "src": "spdx"

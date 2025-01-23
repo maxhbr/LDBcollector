@@ -9,6 +9,9 @@
             "SPL 1.0",
             "spl-1.0",
             "Sun Public License 1.0"
+        ],
+        "osi": [
+            "Sun Public License, Version 1.0"
         ]
     },
     "src": "spdx"

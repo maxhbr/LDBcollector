@@ -8,6 +8,9 @@
         "scancode-licensedb": [
             "CPL 1.0",
             "cpl-1.0"
+        ],
+        "osi": [
+            "Common Public License, Version 1.0"
         ]
     },
     "src": "spdx"

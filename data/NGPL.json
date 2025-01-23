@@ -7,6 +7,9 @@
         "custom": [],
         "scancode-licensedb": [
             "ngpl"
+        ],
+        "osi": [
+            "The Nethack General Public License"
         ]
     },
     "src": "spdx"

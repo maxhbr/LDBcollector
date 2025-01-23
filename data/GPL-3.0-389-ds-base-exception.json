@@ -4,7 +4,10 @@
         "spdx": [
             "GPL-3.0 389 DS Base Exception"
         ],
-        "custom": []
+        "custom": [],
+        "scancode-licensedb": [
+            "gpl-3.0-389-ds-base-exception"
+        ]
     },
     "src": "spdx"
 }

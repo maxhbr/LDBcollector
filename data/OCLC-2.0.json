@@ -7,6 +7,9 @@
         "custom": [],
         "scancode-licensedb": [
             "oclc-2.0"
+        ],
+        "osi": [
+            "The OCLC Research Public License, Version 2.0"
         ]
     },
     "src": "spdx"

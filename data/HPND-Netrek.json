@@ -4,7 +4,12 @@
         "spdx": [
             "Historical Permission Notice and Disclaimer - Netrek variant"
         ],
-        "custom": []
+        "custom": [],
+        "scancode-licensedb": [
+            "Historical Permission Notice and Disclaimer Netrek variant",
+            "HPND Netrek variant",
+            "hpnd-netrek"
+        ]
     },
     "src": "spdx"
 }

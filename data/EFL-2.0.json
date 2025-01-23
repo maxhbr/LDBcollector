@@ -9,6 +9,9 @@
             "Eiffel Forum License 2.0",
             "efl-2.0",
             "EFL 2.0"
+        ],
+        "osi": [
+            "Eiffel Forum License, Version 2"
         ]
     },
     "src": "spdx"
