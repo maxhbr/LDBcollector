@@ -65,6 +65,8 @@ venv
 /**/*.js
 /**/*.xml
 /**/*.json
+/**/*.tgz
+
 
 !data/*
 

@@ -27,10 +27,16 @@
     "directories": {
         "test": "tests"
     },
+    "files": [
+        "dist/index.js",
+        "dist/models/LicenseObject.js",
+        "dist/services/LicenseLynx.js",
+        "resources/merged_data.json",
+        "README.md"
+    ],
     "scripts": {
         "clean": "rimraf dist",
-        "build": "npm run clean && tsc && npm run copy-resources",
-        "copy-resources": "copyfiles -u 1 \"src/**/*.!(ts)\" dist",
+        "build": "npm run clean && tsc",
         "test": "jest --coverage",
         "lint": "eslint . --ext .ts"
     }
