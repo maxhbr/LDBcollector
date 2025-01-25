@@ -17,7 +17,7 @@ with open('requirements-dev.txt') as f:
     requirements_dev = f.read().splitlines()
 
 setuptools.setup(
-    name="foss-flame",
+    name="foss_flame",
     version=SW_VERSION,
     author="Henrik Sanklef",
     author_email="hesa@sandklef.com",
