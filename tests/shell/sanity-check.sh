@@ -120,6 +120,10 @@ check_presence()
         echo OK
     else
         echo FAILURE
+        if [ "$EXIT_ON_FAILURE" = "true" ]
+        then
+            exit 1
+        fi
     fi
 }
 
@@ -153,6 +157,7 @@ check_presence Apache-2.0 " -e 2" "-e 1"
 check_presence APSL-2.0 " -e 2" "-e 1 -e [3-9]"
 
 check_presence Artistic-1.0 " -e 1.0 -e 1" "-e 2 "
+check_presence Artistic-1.0-Perl " -i -e Perl" "-e 2 "
 check_presence Artistic-2.0 " -e 2 -e 2.0 " "-e 1"
 
 check_presence Autoconf-exception-2.0 " -e autoconf " " -e 3"
@@ -166,7 +171,7 @@ check_presence Bootloader-exception " -i bootloader" ""
 check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
 
 
-check_presence LicenseRef-scancode-openssl-exception-lgpl.json " -i -e openssl" ""
+check_presence LicenseRef-scancode-openssl-exception-lgpl " -i -e openssl" ""
 check_presence LicenseRef-scancode-openssl-exception-gpl-2.0-plus " -i -e openssl" ""
 check_presence LicenseRef-scancode-openssl-exception-lgpl2.0plus " -i -e openssl" ""
 
@@ -280,6 +285,8 @@ check_presence Libpng " -i -e libpng -e PNG  " " -e 2 "
 check_presence libpng-2.0 " -i -e libpng -e PNG  " ""
 check_presence libtiff " -i -e tiff  " ""
 check_presence Libtool-exception " -i -e libtool  " ""
+check_presence LiLiQ-P-1.1 " -i -e \"liliq-p\"  -e \"liliq p\" -e permissive "
+check_presence LiLiQ-R-1.1 " -i -e \"liliq-r\"  -e \"liliq r\" -e Réciprocité "
 check_presence Linux-syscall-note " -i -e syscall  " ""
 check_presence LLVM-exception " -i -e llvm  " ""
 
@@ -288,6 +295,7 @@ check_presence MirOS " -i -e MirOS -e mir-os" ""
 check_presence MIT " -i -e MIT -e Expat" " -i -e 0 -e we -e advert -e modern "
 check_presence MIT-0 " -e 0 -i -e \"no attribution\"" " -i -e we -e advert -e modern -e wu"
 check_presence MIT-advertising " -e 0 -i -e advertising -e enlighten" " -i -e \"no advertising\" -e wu -e 0 -e modern"
+check_presence MIT-CMU " -i -e cmu" " -i -e advertising -e 0 -e wu -e open"
 check_presence MIT-Modern-Variant " -i -e modern" " -i -e advertising -e 0 -e wu"
 check_presence MIT-open-group " -i -e opengroup -e open-group -e open\ group " " -i -e advertising -e modern -e 0 "
 check_presence MIT-Wu " -i -e wu -e addition " " -i -e advertising -e modern -e 0 "
@@ -311,11 +319,12 @@ check_presence NTP " -i -e ntp -e network " ""
 
 check_presence OCaml-LGPL-linking-exception " -i -e ocaml" ""
 check_presence ODC-By-1.0 " -i -e 1.0 -e odc" ""
-check_presence OFL-1.0 " -e 1.0" " -e 1.1"
+check_presence OFL-1.0 " -e 1.0 " " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
 check_presence OGTSL " -i -e ogtsl -e Open\ Group -e ogts\ license -e opengroup" ""
 check_presence OML " -i -e oml -e market -e fastcgi -e OM\ License" ""
 check_presence OpenSSL " -i -e openssl " ""
+check_presence OSL-2.1 " -i -e Open\ Software -e OSL-2 -e OSL\ 2" ""
 check_presence OSL-3.0 " -i -e Open\ Software -e OSL-3 -e OSL\ 3" ""
 
 check_presence Plexus " -i -e plexus -e classworlds " ""
@@ -349,7 +358,7 @@ check_presence VSL-1.0 " -i -e VSL -e Vovida" " -e 2"
 
 check_presence W3C " -i -e w3c -e w3.org " " -e 1998 -e 2015 "
 check_presence W3C-19980720 " 1998 " " -e 2015 "
-check_presence W3C-20150513 " 2015 " " -e 1998 "
+check_presence W3C-20150513 " -e 2015 -e Document " " -e 1998 "
 check_presence WTFPL " -i -e WTFPL -e what -e wtf\ p" ""
 
 check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT' -e MIT-X" "" 
