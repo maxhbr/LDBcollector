@@ -1,23 +1,22 @@
 {
     "name": "@licenselynx/licenselynx",
-    "version": "0.7.5",
+    "version": "0.8.0",
     "author": "Leo Reinmann",
     "keywords": [],
     "license": "Apache-2.0",
     "description": "Unified License Mapper",
     "devDependencies": {
         "@babel/preset-typescript": "^7.24.1",
+        "@eslint/eslintrc": "^3.2.0",
+        "@eslint/js": "^9.19.0",
         "@jest/globals": "^29.7.0",
         "@types/jest": "^29.5.12",
-        "@types/mock-fs": "^4.13.4",
         "@types/node": "^20.12.12",
-        "@typescript-eslint/eslint-plugin": "^7.11.0",
-        "@typescript-eslint/parser": "^7.11.0",
-        "copyfiles": "^2.4.1",
-        "eslint": "^8.57.0",
+        "@typescript-eslint/eslint-plugin": "^8.22.0",
+        "@typescript-eslint/parser": "^8.22.0",
+        "eslint": "^9.18.0",
         "globals": "^15.3.0",
         "jest": "^29.7.0",
-        "mock-fs": "^5.2.0",
         "rimraf": "^6.0.1",
         "ts-jest": "^29.1.2",
         "typescript": "^5.4.5"
@@ -29,15 +28,13 @@
     },
     "files": [
         "dist/index.js",
-        "dist/models/LicenseObject.js",
-        "dist/services/LicenseLynx.js",
-        "resources/merged_data.json",
+        "tests/resources/merged_data.json",
         "README.md"
     ],
     "scripts": {
         "clean": "rimraf --no-interactive --verbose dist",
         "build": "npm run clean && tsc",
         "test": "jest --coverage",
-        "lint": "eslint . --ext .ts"
+        "lint": "eslint *.ts "
     }
 }

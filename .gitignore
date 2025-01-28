@@ -44,7 +44,6 @@ venv
 /python/toms_demo.py
 **/__pycache__/
 
-
 # --- SCRIPTS ---
 
 /scripts/.idea
@@ -67,6 +66,7 @@ venv
 /**/*.json
 /**/*.tgz
 
+!typescript/package-lock.json
 
 !data/*
 
