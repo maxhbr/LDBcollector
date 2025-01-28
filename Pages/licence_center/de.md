@@ -3,7 +3,9 @@ layout: default
 title: "Lizenzcenter - ifrOSS.org"
 ---
 
-<h1 style="text-align: center;">ifrOSS Lizenzcenter</h1>
+<p><a href="/ifrOSS/index.html">Homepage</a> > Licence Center<br></p>
+
+<h1 style="text-align: center;">ifrOSS Licence Center</h1>
 
 ## Kategorien
 Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und verschiedenen Lizenztypen zugeordnet. Dies betrifft folgende Kategorien:
@@ -14,7 +16,7 @@ Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und 
 * [Open Hardware Lizenzen](/ifrOSS/Pages/licence_center/openhardware/de)
 * [Sonstige Freie Lizenzen](/ifrOSS/Pages/licence_center/other_licenses/de)
 * [Ähnliche Lizenzen, die nicht den Anforderungen der Open Source Definition genügen](/ifrOSS/Pages/licence_center/nonfree/de)
-* [Ethical Lizenzen](/ifrOSS/Pages/licence_center/ethical/de)
+* [Ethische Lizenzen](/ifrOSS/Pages/licence_center/ethical/de)
 * [Public Domain Erklärungen](/ifrOSS/Pages/licence_center/public_domain/de)
 * [Open AI Lizenzen](/ifrOSS/Pages/licence_center/openai/de)
  

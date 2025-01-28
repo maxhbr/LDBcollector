@@ -13,7 +13,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 --->
 
-<p><a href="/ifrOSS/Pages/licence_center/de">Licence Center</a> > Open AI Lizenzen<br></p>
+<p><a href="/ifrOSS/index.html">Homepage</a><a href="/ifrOSS/Pages/licence_center/de"> > Licence Center</a> > Open AI Lizenzen<br></p>
 
 <h1 style="text-align: center;">ifrOSS Licence Center - Open AI Lizenzen</h1>
 
