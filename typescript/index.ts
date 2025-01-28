@@ -1,4 +1,4 @@
-import * as mergedData from './tests/resources/merged_data.json';
+import * as mergedData from './resources/merged_data.json';
 
 export interface LicenseObject {
     readonly canonical: string;

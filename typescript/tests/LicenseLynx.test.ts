@@ -1,13 +1,19 @@
 import {map} from "../index";
 
-jest.mock('fs', () => ({
-    readFileSync: jest.fn(),
-}));
+jest.mock('../resources/merged_data.json', () => {
+  return require('./resources/merged_data.json');
+});
 
 describe('LicenseLynx tests', () => {
     beforeAll(() => {
-        jest.spyOn(global.console, 'error').mockImplementation(() => {
-        });
+        jest.spyOn(global.console, 'error').mockImplementation(() => {});
+
+        // Mock process.cwd to point to the ./tests directory
+        jest.spyOn(process, 'cwd').mockReturnValue(require('path').resolve(__dirname, './tests'));
+    });
+
+    afterAll(() => {
+        jest.restoreAllMocks();
     });
 
     afterEach(() => {
