@@ -13,7 +13,7 @@ Emojis for the links can be copied from https://emojipedia.org
 
 --->
 
-<p><a href="/ifrOSS/index_en.html">Homepage</a><a href="/ifrOSS/Pages/licence_center/en"> > Licence Center</a> > Other Free Licenses<br></p>
+<p><a href="/ifrOSS/index_en.html">Homepage</a> > <a href="/ifrOSS/Pages/licence_center/en">Licence Center</a> > Other Free Licenses<br></p>
 
 <h1 style="text-align: center;">ifrOSS Licence Center - Other Free Licenses</h1>
 
