@@ -8,6 +8,80 @@ In der obersten Eben befinden sich `/index.html` und seine englischsprachige Var
 
 Die Inhaltsseiten befinden sich alle in `/Pages/`. Jede Seite hat ihren eigenen Ordner, so z.B. `/Pages/creative_commons_cases/`, der wiederrum jeweils zwei Markdown-Dateien enthält für jede Sprache, hier `/Pages/creative_commons_cases/de.md` und `/Pages/creative_commons_cases/en.md`. Es ist wichtig das beide Versionen immer Formatgleich bleiben, alles außer Textänderungen sollten immer wiedergespiegelt werden. Enthält eine Seite Unterseiten ändert dies nichts an der Struktur, beim Licence-Center befindet sich die deutsche Hauptseite bei `/Pages/licence_center/de.md`, dessen deutsche Unterseite über FOSS-Lizenzen befindet sich dann bei `/Pages/licence_center/foss/de.md`.
 
+## Lizenzen im Licence Center hinzufügen
+
+Neue Lizenzen können wie folgt im rohen Markdown-Code in der relevanten Tabelle nach einem Zeilenbruch eingefügt werden:
+
+```
+| Lizenz | Text | SPDX-tag |
+|:---:|:---:|:---:|
+| Example Licence 1 | [🇬🇧](https://example.com) | example-1.0 |
+| Example Licence 2 | [🇬🇧](https://example.com) | example-2.0 |   <---  neue Lizenz
+```
+
+Die Template ist die folgende:
+```
+| Lizenzname | [🇬🇧](link) | SPDX-Tag |
+```
+
+Mehrere Links für mehrere Sprachen können ebenfalls eingefügt werden:
+```
+| Lizenz | Text | SPDX-tag |
+|:---:|:---:|:---:|
+| Example Licence 1 | [🇬🇧](https://example.com/en)[🇩🇪](https://example.com/de) | example-1.0 |
+                       ^^          ^^^             ^^          ^^^
+                    EN-Emoji     EN-Link        DE-Emoji     DE-Link
+```
+
+Flaggenemojis für die Sprachangabe können [hier](https://emojipedia.org/) entnommen werden.
+
+## Urteile in den Urteilssammlungen hinzufügen
+
+Neue Urteile können wie folgt im rohen Markdown-Code in der relvanten geographischen Kategorie eingefügt werden:
+
+```
+# Deutschland
+
+| **Bezeichnung** | LG Musterstadt, Urteil v. 01.01.2025 |
+|:---:|:---:|
+| **Parteien** | Blib v. Blob |
+| **Thema** | Urheberrecht |
+| **Lizenz** | example-1.0 |
+| **Links** | [🇩🇪](https://www.example.com/1) |
+
+| **Bezeichnung** | LG Musterstadt, Urteil v. 02.01.2025 |
+|:---:|:---:|                                                       <
+| **Parteien** | Blub v. Blab |                                     <     neues Urteil
+| **Thema** | Urheberrecht |                                        <
+| **Lizenz** | example-1.0 |                                        <
+| **Links** | [🇩🇪](https://www.example.com/2) |
+
+```
+
+Die Template ist die folgende:
+```
+| **Bezeichnung** | - |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇩🇪]() |
+```
+
+Mehrere Links für mehrere Sprachen können ebenfalls eingefügt werden:
+```
+| **Bezeichnung** | - |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://example.com/de)[🇬🇧](https://example.com/en) |
+               ^^          ^^^             ^^          ^^^
+            DE-Emoji     DE-Link        EN-Emoji     EN-Link
+```
+
+Flaggenemojis für die Sprachangabe können [hier](https://emojipedia.org/) entnommen werden.
+
 ## Seitenübersicht
 
 | Seite | URL | Markdown-Datei | Status | Anmerkung |
