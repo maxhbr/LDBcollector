@@ -19,7 +19,6 @@ Before the JSON files are pushed to the main branch, the files will be validated
 5. The length of an entry must not be longer than 100 characters
 6. An entry must not include one of the forbidden characters which are ``{"#", "$", "%", "=", "[", "]", "?", "<", ">", ":", "/", "\\", "|", "*", " "}``
 
-
 ## Data Structure
 
 All licenses are stored in single JSON files within the **data** folder. Each file contains the canonical name, its aliases with their sources, and the source of the canonical name. For example:

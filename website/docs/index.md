@@ -1,4 +1,4 @@
-![LicenseLynx](assets/background.jpg)
+<h1 align="center"><img src="assets/background.jpg"/, alt="LicenseLynx Hero Banner"></h1>
 
 # LicenseLynx
 
