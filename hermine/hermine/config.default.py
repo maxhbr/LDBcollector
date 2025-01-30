@@ -21,6 +21,11 @@ HOST = "example.com"
 # SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 # CSRF_TRUSTED_ORIGINS = ["https://" + HOST]
 
+# If you want to serve Hermine under a subpath,
+# setting SCRIPT_NAME in the WSGI server is the recommended way.
+# You can use the following line to force the script name in Django
+# FORCE_SCRIPT_NAME = "/hermine"
+
 # Static files location, defaults to static/ in the Hermine root dir
 # In production, static files should be served by a web server like nginx
 # STATIC_ROOT = "/path/to/static/root"

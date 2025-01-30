@@ -48,6 +48,9 @@ if host := getattr(config, "HOST", None):
 else:
     ALLOWED_HOSTS = []
 
+if getattr(config, "FORCE_SCRIPT_NAME", None):
+    FORCE_SCRIPT_NAME = config.FORCE_SCRIPT_NAME
+
 USE_X_FORWARDED_HOST = getattr(config, "USE_X_FORWARDED_HOST", False)
 SECURE_PROXY_SSL_HEADER = getattr(config, "SECURE_PROXY_SSL_HEADER", None)
 
@@ -91,9 +94,6 @@ TEMPLATES = [
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
             os.path.join(BASE_DIR, "templates"),
-            # Empty before build
-            os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "dist"),
-            os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "src"),
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -191,7 +191,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = "/static/"
+STATIC_URL = "static/"
 STATIC_ROOT = getattr(config, "STATIC_ROOT", os.path.join(BASE_DIR, "..", "static"))
 
 APPEND_SLASH = True
@@ -206,13 +206,12 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
-# The following line raises a Warning. Moving the folder to the right place does not
-# fix it.
 STATICFILES_DIRS = [
-    os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "dist", "hermine"),
+    os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "dist"),
     os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "src", "hermine"),
 ]
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "cube:dashboard"
+LOGIN_URL = "login"
 
 # Always send errors to console
 LOGGING = {
