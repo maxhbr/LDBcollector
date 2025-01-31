@@ -46,7 +46,6 @@ extra:
 
 plugins:
   - search
-  - awesome-pages
 
 copyright: Copyright &copy; 2025 Siemens AG
 
