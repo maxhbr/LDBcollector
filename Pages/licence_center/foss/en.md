@@ -38,7 +38,7 @@ Software under such licenses may be referred to as Free or Open Source Software.
 
 Licenses without copyleft are characterized by the fact that they grant the licensee all freedoms of an open source license and do not contain any conditions regarding the type of license to be used for modifications of the software. This allows the licensee to redistribute modified versions of the software under any license conditions, i.e. also convert them into proprietary software.
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | 4Suite License (v. 1.1) | [🇬🇧](https://web.archive.org/web/20060210220828/http://4suite.org/COPYRIGHT.doc) | - |
 | Academic Free License (AFL) (v. 1.0) | [🇬🇧](https://web.archive.org/web/20020808082753/http://www.rosenlaw.com:80/afl.html) | - |
@@ -171,7 +171,7 @@ In the case of licenses with a strict copyleft effect, the licensee is obliged t
 
 The licenses listed here contain the different GPL versions and derived license texts. There are also some GPL variants with exceptions from the strong copyleft. These licenses with exceptions are then to be understood as weak copyleft, but are listed here for the sake of a better orientation.
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | Affero General Public License (v. 1) | [🇬🇧](http://web.archive.org/web/20190826200024/http://www.affero.org/oagpl.html) | - |
 | Affero General Public License (v. 2) | [🇬🇧](http://web.archive.org/web/20191008070005/http://www.affero.org/agpl2.html) | - |
@@ -193,7 +193,7 @@ The licenses listed here contain the different GPL versions and derived license 
 
 #### Other Licenses with Strong Copyleft
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | Arphic Public License | [🇬🇧](http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE) | - |
 | Contrat de License de Logiciel Libre CeCILL (v. 1.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1-US.html) | - |
@@ -239,7 +239,7 @@ Licenses with weak copyleft have a copyleft effect, which does not include all d
 
 MPL-style licenses have file-based Copyleft, i.e. if modifications of the software are implemented in separate files, these files can also be redistributed under other, e.g. proprietary license terms. The aim is to facilitate the combination of software under different license types.
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | Common Development and Distribution License (CDDL) (v. 1.0) | [🇬🇧](http://oss.oracle.com/licenses/CDDL) | - |
 | Common Development and Distribution License, Version 1.1 (CDDL v 1.1) | [🇬🇧](https://javaee.github.io/glassfish/LICENSE) | - |
@@ -285,7 +285,7 @@ MPL-style licenses have file-based Copyleft, i.e. if modifications of the softwa
 
 #### Other Licenses with Weak Copyleft
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | Adaptive Public License (v.1.0) | [🇬🇧](https://web.archive.org/web/20070722115014/http://www.mamook.net/mediawiki/index.php/Adaptive_Public_License) | - |
 | Apple Public Source License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20060323040828/https://opensource.apple.com/apsl/2.0.txt) | - |
@@ -320,7 +320,7 @@ MPL-style licenses have file-based Copyleft, i.e. if modifications of the softwa
 
 Some licenses have different legal consequences, depending on how extensive a modification is. In addition, the licensee is given various options as to how further developments can be redistributed.
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | ANTLR 2 License | [🇬🇧](http://www.antlr2.org/license.html) | - |
 | Artistic License (v. 1.0) | [🇬🇧](http://www.perlfoundation.org/artistic_license_1_0 (Einordnung unklar)) | - |
@@ -347,7 +347,7 @@ Some licenses have different legal consequences, depending on how extensive a mo
 
 The licenses with privileges grant the licensees all of the rights that make up Free Software, but at the same time provide special privileges for the licensor in the event of modifications by the licensee. These licenses are mostly used with programs that were originally distributed proprietarily.
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | Apple Public Source License 1.0 (Einordnung unklar) | [🇬🇧](https://www.apple.com/publicsource/license.html) | - |
 | Apple Public Source License 1.1 (Einordnung unklar) | [🇬🇧](https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE) | - |
