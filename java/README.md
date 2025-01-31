@@ -2,6 +2,10 @@
 
 For Java, use the ``map`` method from the ``LicenseLynx`` class to achieve the same functionality.
 
+## Installation
+
+UNDER CONSTRUCTION
+
 ## Usage
 
 ```java
