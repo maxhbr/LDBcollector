@@ -19,9 +19,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 ## Lizenzen für KI-Modelle
 
-Die hier aufgelisteten Lizenzen erlauben eine umfassende Nachnutzung von KI-Modellen (neuronale Netze) oder in Zusammenhang stehenden Programmcode und Datensammlungen, ohne zwingend die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. 
-Ein Verständnis oder gar Definition dessen, was "Open AI" ist, hat sich noch nicht herausgebidet, der Begriff "Open AI" wird von der OpenAI Inc. sogar irreführend verwendet. ChatGPT und DALL-E stehen nicht unter Lizenzen, die eine umfassende Nachnutzung der Modelle gestatten. 
-Ein Überblick über die Systematik der RAIL-Lizenzen findet sich unter https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses.
+Die hier aufgelisteten Lizenzen erlauben eine umfassende Nachnutzung von KI-Modellen (neuronale Netze) oder in Zusammenhang stehenden Programmcode und Datensammlungen, ohne zwingend die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Ein Verständnis oder gar Definition dessen, was "Open AI" ist, hat sich noch nicht herausgebidet, der Begriff "Open AI" wird von der OpenAI Inc. sogar irreführend verwendet. ChatGPT und DALL-E stehen nicht unter Lizenzen, die eine umfassende Nachnutzung der Modelle gestatten. Ein Überblick über die Systematik der RAIL-Lizenzen findet sich unter https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses.
 
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|
