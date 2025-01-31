@@ -8,7 +8,7 @@ Project providing insights on the {metæffekt} license database covering
 * 249 specific and commonly used license expressions, and
 * 57 consolidated markers.
 
-as of 1st February 2024.
+as of 1st February 2025.
 
 The following links provide letter-specific overviews on the license information:
 
@@ -100,7 +100,7 @@ are used for identification purposes only.
 
 The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 
-Copyright © metaeffekt GmbH 2021-2024. All rights reserved.
+Copyright © metaeffekt GmbH 2021-2025. All rights reserved.
 
 ## Contribution
 As this repository is largely showing converted data. A direct contribution in the form of patches is
