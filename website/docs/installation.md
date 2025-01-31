@@ -14,6 +14,6 @@ UNDER CONSTRUCTION
 
 ## TypeScript
 
-The TypeScript library is being only published to the SBOM regisitry:
+The TypeScript library is only being published to the SBOM registry:
 
 UNDER CONSTRUCTION

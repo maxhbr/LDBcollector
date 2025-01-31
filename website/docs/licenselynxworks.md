@@ -1,23 +1,23 @@
 # How LicenseLynx Works
 
-## Data import
+## Data Import
 
-LicenseLynx goes through the license lists of SPDX, ScanCode LicenseDB, and OSI and tries to map the licenses with the SPDX ID and uses it as the cannonical name.
-If a license is not in the SPDX license list, then the key of ScanCode LicenseDB will be used as cannanonical name.
+LicenseLynx goes through the license lists of SPDX, ScanCode LicenseDB, and OSI and tries to map the licenses with the SPDX ID, using it as the canonical name.
+If a license is not in the SPDX license list, then the key of ScanCode LicenseDB will be used as the canonical name.
 The license list of OSI is mainly there to enrich the existing data.
 
 Each license is saved as a JSON file.
-This makes editing single licenses much easier and mitigates the risk of editing not affected licenses.
-Also, using JSON files means that there is no need to maintain a database system which makes it more open to edit changes and more accessible to use.
+This makes editing single licenses much easier and mitigates the risk of editing unaffected licenses.
+Also, using JSON files means that there is no need to maintain a database system, making it more open to edits and more accessible to use.
 
-Before the JSON files are pushed to the main branch, the files will be validated, so that following criterias are met:
+Before the JSON files are pushed to the main branch, they will be validated to ensure the following criteria are met:
 
-1. JSON filename must be equal to the canonical name
-2. Each aliases must be unique globally
-3. If the source of an license file is SPDX, canonical name must exist in the SPDX license list
-4. No empty fields are allowed except in ``aliases`` the ``custom`` field
-5. The length of an entry must not be longer than 100 characters
-6. An entry must not include one of the forbidden characters which are ``{"#", "$", "%", "=", "[", "]", "?", "<", ">", ":", "/", "\\", "|", "*", " "}``
+1. The JSON filename must be equal to the canonical name.  
+2. Each alias must be unique globally.  
+3. If the source of a license file is SPDX, the canonical name must exist in the SPDX license list.  
+4. No empty fields are allowed except in `aliases` and the `custom` field.  
+5. The length of an entry must not exceed 100 characters.  
+6. An entry must not include any of the forbidden characters: `{"#", "$", "%", "=", "[", "]", "?", "<", ">", ":", "/", "\\", "|", "*", " "}`.  
 
 ## Data Structure
 
