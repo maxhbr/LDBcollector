@@ -8,5 +8,9 @@ spdxIdentifier: "OpenSSL"
 
 openCoDEStatus: "approved"
 
+alternativeNames:
+  - "OpenSSL License"
+  - "OpenSSL/SSLeay License"
+
 otherIds: 
   - "scancode:openssl-ssleay"

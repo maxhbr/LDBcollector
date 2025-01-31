@@ -2,12 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "TM-XML Terms"
-category: "TM-XML"
-shortName: "TM-XML-Terms"
+canonicalName: "CORE License"
+category: "CORE License"
+shortName: "CORE-License"
 
 alternativeNames:
-  - "http://www.tm-xml.org"
-  - "http://tm-xml.org/"
-  - "TM-XML"
+  - "CORE License"
+  - "CORE-License"
 

@@ -4,7 +4,10 @@
 
 canonicalName: "Open Diameter License"
 category: "Open Diameter"
-shortName: "Open-Diameter"
+shortName: "open-diameter"
+
+alternativeNames:
+  - "Open Diameter License"
 
 otherIds: 
   - "scancode:open-diameter"

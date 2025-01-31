@@ -13,6 +13,8 @@ type: "exception"
 
 alternativeNames:
   - "Unlimited Binary Linking Exception"
+  - "Linking Exception (variant 002)"
 
 otherIds: 
   - "scancode:unlimited-binary-use-exception"
+  - "scancode:unlimited-binary-linking"

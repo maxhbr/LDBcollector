@@ -10,7 +10,6 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "X License"
-  - "MIT/X Consortium"
   - "X/MIT License"
   - "X11 License"
   - "MIT/X11"
@@ -18,4 +17,4 @@ alternativeNames:
   - "Expat~X with X exception"
 
 otherIds: 
-  - "scancode:x11-xconsortium"
+  - "scancode:x11"

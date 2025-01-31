@@ -13,4 +13,7 @@ canonicalNameHistory:
 alternativeNames:
   - "X11-swapped"
   - "X11 swapped final paragraphs"
+  - "X11 License (swapped)"
 
+otherIds: 
+  - "scancode:x11-swapped"

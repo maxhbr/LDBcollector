@@ -6,5 +6,8 @@ canonicalName: "Civilian Open Source License"
 category: "Civilian Open Source"
 shortName: "Civilian-Open-Source"
 
+alternativeNames:
+  - "Civilian Open Source License"
+
 otherIds: 
   - "scancode:cosli"

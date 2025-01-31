@@ -10,6 +10,9 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "SSH OpenSSH license"
+  - "SSH-OpenSSH License"
+  - "https://spdx.org/licenses/SSH-OpenSSH"
+  - "licenses.nuget.org/SSH-OpenSSH"
 
 otherIds: 
   - "scancode:openssh"

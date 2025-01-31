@@ -4,10 +4,14 @@
 
 canonicalName: "Microsoft Software License (patterns & practices)"
 category: "Microsoft Software"
-shortName: "MS-patterns-and-practices"
+shortName: "msppl"
+
+canonicalNameHistory:
+  - "Microsoft patterns & practices License"
 
 alternativeNames:
   - "Microsoft patterns & practices License"
+  - "Microsoft Software License (patterns & practices)"
 
 otherIds: 
   - "scancode:msppl"

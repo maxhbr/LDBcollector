@@ -6,7 +6,13 @@ canonicalName: "Oracle OpenJDK Classpath and Assembly Exception"
 category: "Oracle OpenJDK Exception"
 shortName: "Oracle-OpenJDK-Classpath-Assembly-Exception"
 
+canonicalNameHistory:
+  - "OpenJDK Classpath and Assembly Exception"
+
 type: "exception"
+
+alternativeNames:
+  - "http://openjdk.java.net/legal/assembly-exception.html"
 
 otherIds: 
   - "scancode:openjdk-exception"

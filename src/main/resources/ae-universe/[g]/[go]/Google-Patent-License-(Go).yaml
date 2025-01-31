@@ -8,6 +8,10 @@ shortName: "Google-Patent-Go"
 
 alternativeNames:
   - "Google Patent License for Go"
+  - "Google Patent License (Go)"
+  - "Google-Patent-Go"
+  - "https://golang.org/PATENTS"
+  - "google-patent-license-golang"
 
 otherIds: 
   - "scancode:google-patent-license-golang"

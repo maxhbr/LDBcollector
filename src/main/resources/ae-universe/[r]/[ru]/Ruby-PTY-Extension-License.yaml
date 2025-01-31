@@ -12,4 +12,7 @@ canonicalNameHistory:
 alternativeNames:
   - "Ruby-pty"
   - "Ruby pty extension license"
+  - "Ruby PTY Extension License"
 
+otherIds: 
+  - "scancode:ruby-pty"

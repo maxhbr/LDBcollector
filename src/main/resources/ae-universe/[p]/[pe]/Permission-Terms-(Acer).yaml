@@ -6,8 +6,12 @@ canonicalName: "Permission Terms (Acer)"
 category: "Permission"
 shortName: "PT-Acer"
 
+canonicalNameHistory:
+  - "X11-Style (Acer)"
+
 alternativeNames:
   - "X11-Style (Acer)"
+  - "Permission Terms (Acer)"
 
 otherIds: 
   - "scancode:x11-acer"

@@ -13,6 +13,7 @@ canonicalNameHistory:
 alternativeNames:
   - "BSD-Systemics"
   - "Systemics BSD variant license"
+  - "BSD 4-Clause License (Systemics; without endorsement clause)"
 
 otherIds: 
   - "scancode:bsd-systemics"
