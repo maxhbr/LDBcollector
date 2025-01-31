@@ -365,12 +365,12 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 # Italien
 
-| **Bezeichnung** | Cout of Venice, Urteil v. 13.12.2021 |
+| **Bezeichnung** | Tribunale di Venezia, Urteil v. 13.12.2021 |
 |:---:|:---:|
 | **Parteien** | Ovation s.r.l.  v. Nerds Farm s.r.l. |
 | **Thema** | Urheberrecht |
 | **Lizenz** | GPL-3.0 |
-| **Links** | [🇮🇹](https://www.dynamic.ooo/court-of-venice-order/) |
+| **Links** | [🇮🇹](https://www.dynamic.ooo/press/groundbreaking-acknowledgment-of-free-software-in-italy/#) [🇬🇧](https://www.dynamic.ooo/court-of-venice-order/) |
 
 # Spanien
 
