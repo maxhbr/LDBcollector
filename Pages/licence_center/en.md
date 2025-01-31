@@ -10,7 +10,7 @@ title: "License Center - ifrOSS.org"
 ## Categories
 The ifrOSS License Center collects licenses for free content and assigns them to different license types. These are organized into the following categories:
 
-* [Free Software und Open Source Licences](/ifrOSS/wip.html)
+* [Free Software und Open Source Licences](/ifrOSS/Pages/licence_center/foss/en)
 * [Open Content Licences](/ifrOSS/wip.html)
 * [Open Data Licences](/ifrOSS/wip.html)
 * [Open Hardware Licences](/ifrOSS/wip.html)

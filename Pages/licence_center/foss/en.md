@@ -318,7 +318,7 @@ MPL-style licenses have file-based Copyleft, i.e. if modifications of the softwa
 
 ### Licenses with Choice Options
 
-DSome licenses have different legal consequences, depending on how extensive a modification is. In addition, the licensee is given various options as to how further developments can be redistributed.
+Some licenses have different legal consequences, depending on how extensive a modification is. In addition, the licensee is given various options as to how further developments can be redistributed.
 
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|
