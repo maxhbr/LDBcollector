@@ -123,6 +123,7 @@ func Router() *gin.Engine {
 			users := authorizedv1.Group("/users")
 			{
 				users.GET("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetAllUser)
+				users.GET("/profile", auth.GetUserProfile)
 				users.GET(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetUser)
 				users.POST("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.CreateUser)
 				users.PATCH("", auth.UpdateProfile)
@@ -226,6 +227,7 @@ func Router() *gin.Engine {
 			users := authorizedv1.Group("/users")
 			{
 				users.GET("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetAllUser)
+				users.GET("/profile", auth.GetUserProfile)
 				users.GET(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.GetUser)
 				users.POST("", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.CreateUser)
 				users.PATCH(":username", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), auth.UpdateUser)
