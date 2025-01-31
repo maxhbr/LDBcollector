@@ -66,7 +66,7 @@ The API call format is: `/api/license/{license_name}.json`
 
 Because the Web API is a file directory, the extension `.json` must be added to find the file. Also, the characater ``/`` must be replaced with ``_``.
 
-### Example API Call
+**Example API Call**:
 
 Original License Name:
 
