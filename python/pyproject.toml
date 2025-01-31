@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "licenselynx"
 version = "0.7.8"
-description = "Unified License Mapper"
+description = "Unified License database and License Mapper"
 authors = ["Leo Reinmann <leo.reinmann@siemens.com>"]
 readme = "README.md"
 license = "Apache-2.0"
