@@ -19,7 +19,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 ## Sonstige (non-free) Software Lizenzen
 
-Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten. Eine Sammlung skurriler "Bad Licenses findet sich bei https://github.com/ErikMcClure/bad-licenses.
+Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten. Eine weiterführende Sammlung findet sich bei https://github.com/ErikMcClure/bad-licenses.
 
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|
