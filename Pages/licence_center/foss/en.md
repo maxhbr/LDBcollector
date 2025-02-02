@@ -16,7 +16,7 @@ Emojis for the links can be copied from https://emojipedia.org
 <p><a href="/ifrOSS/index_en.html">Homepage</a> > <a href="/ifrOSS/Pages/licence_center/en">Licence Center</a> > > FOSS<br></p>
 
 <h1 style="text-align: center;">ifrOSS License Center - FOSS Licenses</h1>
-<h1>Inhalt</h1>
+<h1>Contents</h1>
 
 * TOC
 {:toc}
