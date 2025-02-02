@@ -13,4 +13,4 @@ EOF
     exit 0
 fi
 
-exec nix run ".#"
+exec nix run ".#" -- "$@"
