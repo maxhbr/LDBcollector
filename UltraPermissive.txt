@@ -25,6 +25,15 @@ text = '''
 text here
 '''
 
+package = crosswords
+location = http://web.archive.org/web/20230405115957/https://peterbroda.me/crosswords/wordlist/
+text = '''
+You are free to use this list in any way you'd like. This includes
+commercial uses, though I'd appreciate it if you didn't just turn around and
+try to sell it (but I mean, I'll still offer it for free to anyone so that
+wouldn't be a smart business venture anyway).
+'''
+
 package = libcsv
 location = https://github.com/rgamble/libcsv/blob/b1d5212831842ee5869d99bc208a21837e4037d5/README#L18
 text = '''
