@@ -363,6 +363,15 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Lizenz** | - |
 | **Links** | [🇬🇧](https://www-oschina-net.translate.goog/news/159435?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=nui) |
 
+# Italien
+
+| **Bezeichnung** | Tribunale di Venezia, Urteil v. 13.12.2021 |
+|:---:|:---:|
+| **Parteien** | Ovation s.r.l.  v. Nerds Farm s.r.l. |
+| **Thema** | Urheberrecht |
+| **Lizenz** | GPL-3.0 |
+| **Links** | [🇮🇹](https://www.dynamic.ooo/press/groundbreaking-acknowledgment-of-free-software-in-italy/#) [🇬🇧](https://www.dynamic.ooo/court-of-venice-order/) |
+
 # Spanien
 
 | **Bezeichnung** | Audiencia Provincial de Madrid, Sección 28, 2007-07-05, Case No. 150/2007 |
