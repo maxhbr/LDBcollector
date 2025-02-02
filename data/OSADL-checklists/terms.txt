@@ -32,6 +32,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Documentation.txt
 https://www.osadl.org/fileadmin/checklists/terms/Documented%20format.txt
 https://www.osadl.org/fileadmin/checklists/terms/Duration.txt
 https://www.osadl.org/fileadmin/checklists/terms/Dynamic.txt
+https://www.osadl.org/fileadmin/checklists/terms/Easily.txt
 https://www.osadl.org/fileadmin/checklists/terms/Effective.txt
 https://www.osadl.org/fileadmin/checklists/terms/Equivalent.txt
 https://www.osadl.org/fileadmin/checklists/terms/Feasible.txt
@@ -89,6 +90,7 @@ https://www.osadl.org/fileadmin/checklists/terms/On%20other%20server.txt
 https://www.osadl.org/fileadmin/checklists/terms/On%20same%20server.txt
 https://www.osadl.org/fileadmin/checklists/terms/Original%20author.txt
 https://www.osadl.org/fileadmin/checklists/terms/Original%20license.txt
+https://www.osadl.org/fileadmin/checklists/terms/Original%20name.txt
 https://www.osadl.org/fileadmin/checklists/terms/Original%20source%20code.txt
 https://www.osadl.org/fileadmin/checklists/terms/Original%20work.txt
 https://www.osadl.org/fileadmin/checklists/terms/Other%20contributors.txt
@@ -121,6 +123,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Source%20code.txt
 https://www.osadl.org/fileadmin/checklists/terms/Stand-alone.txt
 https://www.osadl.org/fileadmin/checklists/terms/Standard%20license%20notice.txt
 https://www.osadl.org/fileadmin/checklists/terms/Strong%20copyleft%20license.txt
+https://www.osadl.org/fileadmin/checklists/terms/Substantial%20font%20modification.txt
 https://www.osadl.org/fileadmin/checklists/terms/Substantial%20source%20code%20modification.txt
 https://www.osadl.org/fileadmin/checklists/terms/Substantial%20work.txt
 https://www.osadl.org/fileadmin/checklists/terms/Target%20binary.txt

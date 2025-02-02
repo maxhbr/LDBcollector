@@ -1,4 +1,5 @@
 https://www.osadl.org/fileadmin/checklists/actions/Add.txt
+https://www.osadl.org/fileadmin/checklists/actions/Append.txt
 https://www.osadl.org/fileadmin/checklists/actions/Credit.txt
 https://www.osadl.org/fileadmin/checklists/actions/Delete.txt
 https://www.osadl.org/fileadmin/checklists/actions/Disable.txt

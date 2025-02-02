@@ -65,6 +65,7 @@ https://www.osadl.org/fileadmin/checklists/unreflicenses/Libpng.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/LicenseRef-scancode-bsla-no-advert.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/LicenseRef-scancode-info-zip-2003-05.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/LicenseRef-scancode-ppp.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT-0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT-CMU.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-1.1.txt
@@ -96,6 +97,7 @@ https://www.osadl.org/fileadmin/checklists/unreflicenses/Sleepycat.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Spencer-86.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/SunPro.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/Ubuntu-font-1.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2015.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2016.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Unlicense.txt
