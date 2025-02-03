@@ -248,7 +248,8 @@
             "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
         "Permissive": {
-            "aliases": [
+          "aliases": [
+            "PERMISSIVE"
             ],
             "problem": "This is a class of licenses and not a license."
         },
