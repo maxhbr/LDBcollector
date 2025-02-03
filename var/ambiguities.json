@@ -121,6 +121,12 @@
             ],
             "problem": "There are couple of varians and versions of the Creative Commons licenses. Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
+        "Dual License": {
+            "aliases": [
+                "Dual license"
+            ],
+          "problem": "Dual license is not a license. It refers to the relationship between two (or more) licenses."
+        },
         "Eclipse Public License": {
             "aliases": [
                 "EPL",
