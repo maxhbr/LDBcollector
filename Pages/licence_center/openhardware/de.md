@@ -17,7 +17,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 <h1 style="text-align: center;">ifrOSS Licence Center - Open Hardware Lizenzen</h1>
 
-## Open Hardware Licenses
+## Open Hardware Lizenzen
 
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|

@@ -21,7 +21,7 @@ Emojis for the links can be copied from https://emojipedia.org
 
 The following section lists licenses that are neither subject to the category of free software nor to the area of open content and thus form a separate category in the area of intellectual property.
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | BiOS Material Transfer Agreemant (v. 1.0) | [🇬🇧](http://www.bios.net/daisy/bios/licenses/2998/3004.html) | - |
 | CAMBIA Plant Molecular Enabling Technology BiOS License (v. 1.5) | [🇬🇧](http://www.bios.net/daisy/bios/3530/version/default/part/AttachmentData/data/BiOS%20License%20and%20Tech%20Support%20Agreement%20version%201.5.pdf) | - |

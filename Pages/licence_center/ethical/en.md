@@ -21,7 +21,7 @@ Emojis for the links can be copied from https://emojipedia.org
 
 Increasingly, there is a desire to achieve ethical goals through licensing. This is usually done by requiring conduct that is understood to be ethical or by prohibiting allegedly unethical conduct. Therefore, these licenses are usually not compatible with the open source definition, since clauses 5 and 6 "No Discrimination Against Persons or Groups"/"No Discrimination Against Fields of Endeavor" do not provide for such restrictions. For more information see https://ethicalsource.dev/.
 
-| Lizenz | Text | SPDX-tag |
+| Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | 966.ICU | [🇬🇧](https://github.com/996icu/996.ICU) | - |
 | ACAB License | [🇬🇧](https://github.com/jgrey4296/acab/blob/main/LICENSE) | - |
