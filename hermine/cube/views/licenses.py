@@ -11,7 +11,7 @@ from django.core.exceptions import ValidationError, SuspiciousOperation
 from django.db.models import Count
 from django.db.models.functions import Lower
 from django.forms import modelform_factory
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
@@ -24,6 +24,7 @@ from django.views.generic import (
     DeleteView,
     TemplateView,
 )
+from django.views.generic.edit import BaseFormView
 from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
@@ -47,19 +48,19 @@ from cube.utils.reference import (
 from cube.views.mixins import SearchMixin, LicenseRelatedMixin, SharedDataRequiredMixin
 
 
-class FormErrorsToMessagesMixin:
+class ImportFormMixin:
     def form_invalid(self, form):
         for field, errs in form.errors.items():
             for err in errs:
                 messages.add_message(self.request, messages.ERROR, err)
-        return super().form_invalid(form)
+        return HttpResponseRedirect(self.get_success_url())
 
     def form_valid(self, form):
         try:
             form.save()
         except ValidationError as e:
             messages.add_message(self.request, messages.ERROR, e.message)
-            return super().form_invalid(form)
+            return self.form_invalid(form)
         messages.add_message(self.request, messages.SUCCESS, "File imported.")
         return super().form_valid(form)
 
@@ -68,17 +69,13 @@ class LicensesListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
     SearchMixin,
-    FormErrorsToMessagesMixin,
     ListView,
-    FormView,
 ):
     permission_required = "cube.view_license"
     model = License
     context_object_name = "licenses"
     paginate_by = 50
     ordering = [Lower("spdx_id")]
-    form_class = ImportLicensesForm
-    success_url = reverse_lazy("cube:license_list")
     search_fields = ("long_name", "spdx_id")
     template_name = "cube/license_list.html"
 
@@ -89,12 +86,19 @@ class LicensesListView(
         )
         return qs
 
-    @method_decorator(
-        permission_required_decorator("cube.import_license", raise_exception=True)
-    )
-    def post(self, *args, **kwargs):
-        self.object_list = self.get_queryset()
-        return super().post(*args, **kwargs)
+
+class LicenseImportAllAsSingleFileView(
+    LoginRequiredMixin, PermissionRequiredMixin, ImportFormMixin, BaseFormView
+):
+    """
+    Support direct importing of licenses from a shared.json file
+    from hermine-data repository as well as importing
+    licenses from licenses.json files exported from Hermine UI.
+    """
+
+    permission_required = "cube.import_license"
+    form_class = ImportLicensesForm
+    success_url = reverse_lazy("cube:license_list")
 
 
 class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
@@ -510,7 +514,7 @@ class ObligationsListView(LoginRequiredMixin, PermissionRequiredMixin, ListView)
 class GenericListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
-    FormErrorsToMessagesMixin,
+    ImportFormMixin,
     ListView,
     FormView,
 ):
