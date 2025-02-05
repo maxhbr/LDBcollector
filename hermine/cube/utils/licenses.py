@@ -18,7 +18,7 @@ from cube.utils.importers import create_or_replace_by_natural_key
 from cube.utils.reference import LICENSE_SHARED_FIELDS, GENERIC_SHARED_FIELDS
 
 if TYPE_CHECKING:
-    from cube.models import License, Obligation
+    from cube.models import License
 
 logger = logging.getLogger(__name__)
 
@@ -225,7 +225,7 @@ def handle_licenses_json_or_shared_json(data):
             dict["objects"],
         ):
             obj.save()
-        logger.info(f"Import a shared.json file directly into database.")
+        logger.info("Import a shared.json file directly into database.")
         return
 
     for obj in deserialize("json", data, handle_forward_references=True):
