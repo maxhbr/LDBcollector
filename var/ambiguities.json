@@ -278,7 +278,8 @@
         },
         "Sun Industry Standards Source License": {
             "aliases": [
-                "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
+                "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
+              "SISSL"
             ],
             "problem": "This license has different versions (1.0, 1.1 and 1.2). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
