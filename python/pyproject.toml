@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "licenselynx"
-version = "0.7.8"
+version = "0.8.0"
 description = "Unified License Mapper"
 authors = ["Leo Reinmann <leo.reinmann@siemens.com>"]
 readme = "README.md"
