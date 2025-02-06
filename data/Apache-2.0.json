@@ -7,7 +7,9 @@
         "custom": [
             "Apache License, Version 2.0",
             "Apache License v2.0",
-            "Apache v2.0"
+            "Apache v2.0",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, 2.0"
         ],
         "scancode-licensedb": [
             "LicenseRef-Apache-2.0",
