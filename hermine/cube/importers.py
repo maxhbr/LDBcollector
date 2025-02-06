@@ -176,6 +176,12 @@ def import_spdx_file(
             else ""
         )
 
+        description = (
+            package.description
+            if package.description is not None
+            else ""
+        )
+
         declared_license = (
             str(package.license_declared)
             if package.license_declared is not None
@@ -205,7 +211,7 @@ def import_spdx_file(
             release_id,
             "",
             comp_name,
-            {"homepage_url": comp_url},
+            {"homepage_url": comp_url, "description": description},
             version_number,
             declared_license,
             concluded_license,
