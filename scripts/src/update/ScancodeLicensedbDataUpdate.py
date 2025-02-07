@@ -1,11 +1,15 @@
+import logging
 import os
 from dotenv import load_dotenv
 from src.update.BaseDataUpdate import BaseDataUpdate
 
 
 class ScancodeLicensedbDataUpdate(BaseDataUpdate):
-    def __init__(self):
-        super().__init__(src="scancode-licensedb")
+    def __init__(self, debug=False):
+        if debug:
+            super().__init__(src="scancode-licensedb", log_level=logging.DEBUG)
+        else:
+            super().__init__(src="scancode-licensedb", log_level=logging.INFO)
 
         self._base_url = "https://scancode-licensedb.aboutcode.org/"
         self._index_url = f"{self._base_url}index.json"

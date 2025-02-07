@@ -6,8 +6,12 @@ from src.update.BaseDataUpdate import BaseDataUpdate
 
 
 class SpdxDataUpdate(BaseDataUpdate):
-    def __init__(self):
+    def __init__(self, debug=False):
         super().__init__(src="spdx", log_level=logging.DEBUG)
+        if debug:
+            super().__init__(src="spdx", log_level=logging.DEBUG)
+        else:
+            super().__init__(src="spdx", log_level=logging.INFO)
 
     def update_non_spdx_license_file(self, license_id: str, data: dict, old_license_filepath, license_name: str) -> None:
         """
@@ -141,5 +145,5 @@ class SpdxDataUpdate(BaseDataUpdate):
             {"exceptions": self._process_licenses(spdx_exceptions_url, "licenseExceptionId", "exceptions")})
 
         number_unprocessed_licenses = len(unprocessed_licenses["licenses"]) + len(unprocessed_licenses["exceptions"])
-        self._LOGGER.info(f"Processed {number_unprocessed_licenses}.\n"
+        self._LOGGER.info(f"Unprocessed {number_unprocessed_licenses}.\n"
                           f"{unprocessed_licenses}")

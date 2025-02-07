@@ -1,10 +1,14 @@
+import logging
 import os
 from src.update.BaseDataUpdate import BaseDataUpdate
 
 
 class OsiDataUpdate(BaseDataUpdate):
-    def __init__(self):
-        super().__init__(src="osi")
+    def __init__(self, debug=False):
+        if debug:
+            super().__init__(src="osi", log_level=logging.DEBUG)
+        else:
+            super().__init__(src="osi", log_level=logging.INFO)
 
     @staticmethod
     def get_aliases(entry: dict) -> list[str]:
