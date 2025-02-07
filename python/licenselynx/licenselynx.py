@@ -4,7 +4,12 @@ from importlib import resources
 
 class LicenseLynx:
     @staticmethod
-    def map(license_name):
+    def map(license_name: str):
+        """
+        Maps license name to the canonical license identifier
+        :param license_name: string of a license name
+        :return: LicenseObject with the canonical license identifier and source or None if no license is found
+        """
         try:
             file_path = resources.files("licenselynx.resources").joinpath("merged_data.json")
 

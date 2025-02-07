@@ -6,7 +6,9 @@ authors = ["Leo Reinmann <leo.reinmann@siemens.com>"]
 readme = "README.md"
 license = "Apache-2.0"
 packages = [{ include = "licenselynx" }]
-include = [{ path = "licenselynx/resources/merged_data.json" }]
+include = [
+    { path = "licenselynx/resources/merged_data.json", format = ["sdist", "wheel"] }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
