@@ -88,7 +88,8 @@
                 "BSD-Style License",
                 "BSD license",
                 "License :: OSI Approved :: BSD License",
-                "BSD licensed code"
+              "BSD licensed code",
+              "BSD Software License"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -255,7 +256,8 @@
         },
         "Permissive": {
           "aliases": [
-            "PERMISSIVE"
+            "PERMISSIVE",
+            "permissive"
             ],
             "problem": "This is a class of licenses and not a license."
         },
