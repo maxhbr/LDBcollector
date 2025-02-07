@@ -1,8 +1,8 @@
 import argparse
 
-import OsiDataUpdate
-import ScancodeLicensedbDataUpdate
-import SpdxDataUpdate
+from src.update.OsiDataUpdate import OsiDataUpdate
+from src.update.ScancodeLicensedbDataUpdate import ScancodeLicensedbDataUpdate
+from src.update.SpdxDataUpdate import SpdxDataUpdate
 
 
 def main():
@@ -15,13 +15,13 @@ def main():
     args = parser.parse_args()
 
     if args.spdx:
-        spdx = SpdxDataUpdate.SpdxDataUpdate(args.debug)
+        spdx = SpdxDataUpdate(args.debug)
         spdx.process_licenses()
     if args.scancode:
-        scancode = ScancodeLicensedbDataUpdate.ScancodeLicensedbDataUpdate(args.debug)
+        scancode = ScancodeLicensedbDataUpdate(args.debug)
         scancode.process_licenses()
     if args.osi:
-        osi = OsiDataUpdate.OsiDataUpdate(args.debug)
+        osi = OsiDataUpdate(args.debug)
         osi.process_licenses()
 
 

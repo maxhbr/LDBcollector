@@ -109,5 +109,5 @@ def test_process_licenses(mock_delete_file, mock_update_license, mock_listdir, m
 def test_process_licenses_summary(mock_process, spdx_data_update, caplog):
     spdx_data_update.process_licenses()
 
-    assert caplog.text.__contains__("Processed 1.\n{'licenses': ['license1'], 'exceptions': []}")
+    assert caplog.text.__contains__("Unprocessed 1.\n{'licenses': ['license1'], 'exceptions': []}")
     mock_process.assert_called()
