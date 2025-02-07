@@ -35,9 +35,9 @@ def scancode_licensedb_update():
     Fixture to initialize an instance of ScancodeLicensedbDataUpdate with a mock DATA_DIR.
     """
     class_instance = ScancodeLicensedbDataUpdate()
-    class_instance.DATA_DIR = "/mock/data/dir"
-    class_instance.EXCEPTION_SCANCODE_LICENSEDB = {"exception_license"}
-    class_instance.LOGGER = MagicMock()  # Mock logger to suppress actual logging
+    class_instance._DATA_DIR = "/mock/data/dir"
+    class_instance._EXCEPTION_SCANCODE_LICENSEDB = {"exception_license"}
+    class_instance._LOGGER = MagicMock()  # Mock logger to suppress actual logging
     return class_instance
 
 
@@ -107,12 +107,12 @@ def test_process_license(scancode_licensedb_update, capsys):
     assert scancode_licensedb_update.handle_data.call_count == 2
     assert scancode_licensedb_update.delete_file.call_count == 4
 
-    scancode_licensedb_update.LOGGER.debug.assert_any_call("Starts with 'LicenseRef' as SPDX key")
-    scancode_licensedb_update.LOGGER.debug.assert_any_call("No other spdx license keys for 3com-microcode")
-    scancode_licensedb_update.LOGGER.debug.assert_any_call("lgpl-2.0 is already a spdx license")
-    scancode_licensedb_update.LOGGER.debug.assert_any_call("No SPDX license key found for lgpl-200")
+    scancode_licensedb_update._LOGGER.debug.assert_any_call("Starts with 'LicenseRef' as SPDX key")
+    scancode_licensedb_update._LOGGER.debug.assert_any_call("No other spdx license keys for 3com-microcode")
+    scancode_licensedb_update._LOGGER.debug.assert_any_call("lgpl-2.0 is already a spdx license")
+    scancode_licensedb_update._LOGGER.debug.assert_any_call("No SPDX license key found for lgpl-200")
 
-    assert scancode_licensedb_update.LOGGER.debug.call_count == 5
+    assert scancode_licensedb_update._LOGGER.debug.call_count == 5
 
 
 @patch("os.path.exists")
@@ -152,7 +152,7 @@ def test_handle_data_create(mock_exists, scancode_licensedb_update):
     # Mock class methods
     instance.update_license_file = MagicMock()
     instance.create_license_file = MagicMock()
-    instance.get_file_for_unrecognised_id = MagicMock(side_effect=[None])
+    instance.get_file_for_unrecognized_id = MagicMock(side_effect=[None])
 
     # Mock os.path.exists to return False
     mock_exists.return_value = False
@@ -181,7 +181,7 @@ def test_handle_data_not_create(mock_exists, scancode_licensedb_update):
     # Mock class methods
     instance.update_license_file = MagicMock()
     instance.create_license_file = MagicMock()
-    instance.get_file_for_unrecognised_id = MagicMock(side_effect=["test_license"])
+    instance.get_file_for_unrecognized_id = MagicMock(side_effect=["test_license"])
 
     # Mock os.path.exists to return False
     mock_exists.return_value = False

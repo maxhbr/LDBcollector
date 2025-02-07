@@ -33,7 +33,7 @@ def test_update_non_spdx_license_file(mock_json_dump, mock_open, mock_rename, sp
     assert data["aliases"]["other-source"] == ["old-license-alias", "old-license"]
     assert data["aliases"]["spdx"] == [license_name]
 
-    new_filepath = os.path.join(spdx_data_update.DATA_DIR, f"{license_id}.json")
+    new_filepath = os.path.join(spdx_data_update._DATA_DIR, f"{license_id}.json")
     mock_rename.assert_called_once_with(old_license_filepath, new_filepath)
     mock_json_dump.assert_called_once()
 
@@ -43,13 +43,13 @@ def test_update_non_spdx_license_file(mock_json_dump, mock_open, mock_rename, sp
 def test_get_file_for_unrecognised_id(mock_open, mock_listdir, spdx_data_update):
     license_name_variations = ["alias2", "unknown-alias"]
 
-    result = spdx_data_update.get_file_for_unrecognised_id(license_name_variations)
+    result = spdx_data_update.get_file_for_unrecognized_id(license_name_variations)
 
     assert result == "file1.json"
     assert mock_listdir.call_count == 2
 
 
-@patch("src.update.SpdxDataUpdate.SpdxDataUpdate.get_file_for_unrecognised_id", return_value=None)
+@patch("src.update.SpdxDataUpdate.SpdxDataUpdate.get_file_for_unrecognized_id", return_value=None)
 def test_process_unrecognized_license_id_file_not_found(mock_get_file, spdx_data_update):
     aliases = ["alias1", "alias2"]
     license_id = "unknown-license"
@@ -60,7 +60,7 @@ def test_process_unrecognized_license_id_file_not_found(mock_get_file, spdx_data
     mock_get_file.assert_called_once()
 
 
-@patch("src.update.SpdxDataUpdate.SpdxDataUpdate.get_file_for_unrecognised_id", return_value="test.json")
+@patch("src.update.SpdxDataUpdate.SpdxDataUpdate.get_file_for_unrecognized_id", return_value="test.json")
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.update_license_file")
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.update_non_spdx_license_file")
 @patch("builtins.open", new_callable=mock_open, read_data='{"src": "other-source"}')
@@ -96,9 +96,9 @@ def test_process_licenses(mock_delete_file, mock_update_license, mock_listdir, m
 
     # Assertions
     mock_download_json.assert_called_once_with("dummy_url", "spdx_license_list.json")
-    mock_listdir.assert_called_once_with(spdx_data_update.DATA_DIR)
+    mock_listdir.assert_called_once_with(spdx_data_update._DATA_DIR)
     mock_load_json.assert_any_call("spdx_license_list.json")
-    mock_load_json.assert_any_call(os.path.join(spdx_data_update.DATA_DIR, "id1.json"))
+    mock_load_json.assert_any_call(os.path.join(spdx_data_update._DATA_DIR, "id1.json"))
     mock_update_license.assert_called_once_with("id1", ["name1"])
     mock_delete_file.assert_called_once_with("spdx_license_list.json")
 

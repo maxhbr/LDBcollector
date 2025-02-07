@@ -9,7 +9,7 @@ class SpdxDataUpdate(BaseDataUpdate):
     def __init__(self):
         super().__init__(src="spdx", log_level=logging.DEBUG)
 
-    def update_non_spdx_license_file(self, license_id, data, old_license_filepath, license_name):
+    def update_non_spdx_license_file(self, license_id: str, data: dict, old_license_filepath, license_name: str) -> None:
         """
         Update the license file where the source is not SPDX to SPDX by adding SPDX data to the license file and rename
         the license file to the new canonical id
@@ -19,7 +19,7 @@ class SpdxDataUpdate(BaseDataUpdate):
             old_license_filepath: filepath to already existing license file
             license_name: name of the SPDX license for aliases
         """
-        self.LOGGER.info(f"Updating non spdx license source with spdx source for {license_id}...")
+        self._LOGGER.info(f"Updating non spdx license source with spdx source for {license_id}...")
 
         # Remove SPDX id and name variation if it is already saved in another source
         for alias in data["aliases"].items():
@@ -36,19 +36,19 @@ class SpdxDataUpdate(BaseDataUpdate):
         old_src = data["src"]
         old_canonical_id = data["canonical"]
 
-        data["src"] = self.src
+        data["src"] = self._src
         data["canonical"] = license_id
         if old_canonical_id is not license_id:
             data["aliases"][old_src].append(old_canonical_id)
 
-        new_license_filepath = os.path.join(self.DATA_DIR, f"{license_id}.json")
+        new_license_filepath = os.path.join(self._DATA_DIR, f"{license_id}.json")
 
         os.rename(old_license_filepath, new_license_filepath)
 
         with open(new_license_filepath, 'w') as outfile:
             json.dump(data, outfile, indent=4)
 
-    def process_unrecognized_license_id(self, aliases, license_id):
+    def process_unrecognized_license_id(self, aliases: list, license_id: str) -> str | None:
         """
         Process unrecognized license to either find the license file with all the  license name variations or return the
         unprocessed license if no match is found
@@ -60,23 +60,23 @@ class SpdxDataUpdate(BaseDataUpdate):
         Returns:
             license_id (string): the id of the license if the license file is not found or None
         """
-        self.LOGGER.debug(f"Processing unrecognized license {license_id}...")
+        self._LOGGER.debug(f"Processing unrecognized license {license_id}...")
 
         # Get all variations of license and merge them into a list
         license_name_variations = []
         license_name_variations.extend(aliases)
         license_name_variations.extend([license_id])
 
-        filename = self.get_file_for_unrecognised_id(license_name_variations)
+        filename = self.get_file_for_unrecognized_id(license_name_variations)
 
         if not filename:
-            self.LOGGER.info(f"File not found for {license_id}.\n"
-                             f"Please edit license file manually if the license already exists or"
-                             f" create a new license file.")
+            self._LOGGER.info(f"File not found for {license_id}.\n"
+                              f"Please edit license file manually if the license already exists or"
+                              f" create a new license file.")
             return license_id
         else:
             license_file_id = filename.rsplit(".", maxsplit=1)[0]
-            license_filepath = os.path.join(self.DATA_DIR, f"{license_file_id}.json")
+            license_filepath = os.path.join(self._DATA_DIR, f"{license_file_id}.json")
             data = self.load_json_file(license_filepath)
 
             if data["src"] == "spdx":
@@ -85,7 +85,7 @@ class SpdxDataUpdate(BaseDataUpdate):
                 self.update_non_spdx_license_file(license_id, data, license_filepath, aliases[0])
             return None
 
-    def _process_licenses(self, url: str, json_id: str, license_list_type: str):
+    def _process_licenses(self, url: str, json_id: str, license_list_type: str) -> list[str]:
         """
         Processes the SPDX license list with the given url, json ID and license list type and either update or create
         a license file
@@ -100,7 +100,7 @@ class SpdxDataUpdate(BaseDataUpdate):
         self.download_json_file(url, filepath)
         license_list = self.load_json_file(filepath)[license_list_type]
 
-        files_list = os.listdir(self.DATA_DIR)
+        files_list = os.listdir(self._DATA_DIR)
 
         unprocessed_licenses = []
 
@@ -114,7 +114,7 @@ class SpdxDataUpdate(BaseDataUpdate):
                 if unprocessed_license_id:
                     unprocessed_licenses.append(unprocessed_license_id)
             else:
-                license_filepath = os.path.join(self.DATA_DIR, f"{license_id}.json")
+                license_filepath = os.path.join(self._DATA_DIR, f"{license_id}.json")
                 data = self.load_json_file(license_filepath)
                 if data["src"] == "spdx":
                     self.update_license_file(license_id, [entry["name"]])
@@ -141,5 +141,5 @@ class SpdxDataUpdate(BaseDataUpdate):
             {"exceptions": self._process_licenses(spdx_exceptions_url, "licenseExceptionId", "exceptions")})
 
         number_unprocessed_licenses = len(unprocessed_licenses["licenses"]) + len(unprocessed_licenses["exceptions"])
-        self.LOGGER.info(f"Processed {number_unprocessed_licenses}.\n"
-                         f"{unprocessed_licenses}")
+        self._LOGGER.info(f"Processed {number_unprocessed_licenses}.\n"
+                          f"{unprocessed_licenses}")

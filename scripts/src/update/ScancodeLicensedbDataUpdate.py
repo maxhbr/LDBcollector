@@ -7,12 +7,14 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
     def __init__(self):
         super().__init__(src="scancode-licensedb")
 
-        self.url = "https://scancode-licensedb.aboutcode.org/index.json"
+        self._base_url = "https://scancode-licensedb.aboutcode.org/"
+        self._index_url = f"{self._base_url}index.json"
+
         load_dotenv()
 
-        self.EXCEPTION_SCANCODE_LICENSEDB = os.getenv('EXCEPTION_SCANCODE_LICENSEDB')
+        self._EXCEPTION_SCANCODE_LICENSEDB = os.getenv('EXCEPTION_SCANCODE_LICENSEDB')
 
-    def get_aliases(self, license_data, is_spdx=True):
+    def get_aliases(self, license_data: dict, is_spdx=True) -> list[str]:
         """
         Get the aliases for the given license
         Args:
@@ -44,7 +46,7 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
             if license_ref_spdy_key:
                 aliases.update([license_ref_spdy_key])
         else:
-            self.LOGGER.debug(f"No other spdx license keys for {license_data['key']}")
+            self._LOGGER.debug(f"No other spdx license keys for {license_data['key']}")
             if is_spdx:
                 aliases = {license_key, short_name, name}
             else:
@@ -55,7 +57,7 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
 
         return list(aliases)
 
-    def process_unrecognized_license_id(self, aliases: list, license_id: str):
+    def process_unrecognized_license_id(self, aliases: list[str], license_id: str) -> str | None:
         """
         Process unrecognized license to either find the license file with all the  license name variations or return the
         unprocessed license if no match is found
@@ -67,21 +69,21 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
         Returns:
             license_id (string): the id of the license if the license file is not found or None
         """
-        self.LOGGER.debug(f"Processing unrecognized license {license_id}...")
+        self._LOGGER.debug(f"Processing unrecognized license {license_id}...")
 
         # Get all variations of license and merge them into a list
         license_name_variations = []
         license_name_variations.extend(aliases)
         license_name_variations.extend([license_id])
 
-        filename = self.get_file_for_unrecognised_id(license_name_variations)
+        filename = self.get_file_for_unrecognized_id(license_name_variations)
 
         if not filename:
-            self.LOGGER.info(f"File not found for {license_id}.\n")
+            self._LOGGER.info(f"File not found for {license_id}.\n")
             return license_id
         return None
 
-    def handle_data(self, aliases, license_key):
+    def handle_data(self, aliases: list[str], license_key: str) -> None:
         """
         Determine if a license file must be updated or created
         Args:
@@ -89,14 +91,14 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
             license_key: ScanCode LicenseDB's license key
         """
 
-        if os.path.exists(os.path.join(self.DATA_DIR, f"{license_key}.json")):
+        if os.path.exists(os.path.join(self._DATA_DIR, f"{license_key}.json")):
             self.update_license_file(license_key, aliases)
         else:
-            license_key = self.process_unrecognized_license_id(aliases, license_key)
-            if license_key:
-                self.create_license_file(license_key, aliases)
+            unrecognized_license_id = self.process_unrecognized_license_id(aliases, license_key)
+            if unrecognized_license_id:
+                self.create_license_file(unrecognized_license_id, aliases)
 
-    def process_licenses(self):
+    def process_licenses(self) -> None:
         """
         Process licenses for scancode-licensedb
         """
@@ -104,14 +106,14 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
         filepath = "licensedb_index.json"
 
         # Download and load index.json of ScanCode LicenseDB
-        self.download_json_file(self.url, filepath)
+        self.download_json_file(self._index_url, filepath)
         index_data = self.load_json_file(filepath)
 
         for lic in index_data:
             license_key = lic["license_key"]
 
-            if license_key in self.EXCEPTION_SCANCODE_LICENSEDB:
-                self.LOGGER.debug(f"Skipping {license_key}")
+            if license_key in self._EXCEPTION_SCANCODE_LICENSEDB:
+                self._LOGGER.debug(f"Skipping {license_key}")
                 continue
 
             # Create filepath
@@ -119,7 +121,7 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
             license_filepath = os.path.join(filename)
 
             # Download license to specified filepath and load downloaded json file as dictionary
-            url = "https://scancode-licensedb.aboutcode.org/" + license_key + ".json"
+            url = self._base_url + license_key + ".json"
             self.download_json_file(url, license_filepath)
 
             license_data = self.load_json_file(license_filepath)
@@ -128,15 +130,15 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
                 spdx_id = license_data["spdx_license_key"]
 
                 if not spdx_id.startswith("LicenseRef"):
-                    self.LOGGER.debug(f"{license_key} is already a spdx license")
+                    self._LOGGER.debug(f"{license_key} is already a spdx license")
                     aliases = self.get_aliases(license_data, is_spdx=True)
                     self.update_license_file(spdx_id, aliases)
                 else:
-                    self.LOGGER.debug("Starts with 'LicenseRef' as SPDX key")
+                    self._LOGGER.debug("Starts with 'LicenseRef' as SPDX key")
                     aliases = self.get_aliases(license_data, is_spdx=False)
                     self.handle_data(aliases, license_key)
             else:
-                self.LOGGER.debug(f"No SPDX license key found for {license_key}")
+                self._LOGGER.debug(f"No SPDX license key found for {license_key}")
                 aliases = self.get_aliases(license_data, is_spdx=False)
                 self.handle_data(aliases, license_key)
 

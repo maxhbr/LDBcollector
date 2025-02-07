@@ -71,8 +71,8 @@ def test_process_unrecognized_license_id_recognized_still_unrecognized(capsys):
 def osi_data_update():
     """Fixture to initialize the OsiDataUpdate instance."""
     updater = OsiDataUpdate()
-    updater.LOGGER = MagicMock()  # Mock the logger
-    updater.DATA_DIR = "mock_data_dir"  # Mock data directory
+    updater._LOGGER = MagicMock()  # Mock the logger
+    updater._DATA_DIR = "mock_data_dir"  # Mock data directory
     return updater
 
 
@@ -124,4 +124,4 @@ def test_process_licenses(osi_data_update):
             osi_data_update.update_license_file.assert_called_once()
 
             osi_data_update.delete_file.assert_called_once_with("osi_license_list.json")
-            osi_data_update.LOGGER.info.assert_any_call("Unprocessed licenses: 1\n['license-2']")
+            osi_data_update._LOGGER.info.assert_any_call("Unprocessed licenses: 1\n['license-2']")

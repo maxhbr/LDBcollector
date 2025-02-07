@@ -4,7 +4,7 @@ from collections import Counter
 from unittest.mock import patch, mock_open
 import pytest
 
-from src.update.update_readme import (
+from src.statistics.update_readme import (
     load_license_data,
     count_canonical_licenses,
     generate_svg,
@@ -104,8 +104,8 @@ def test_main_creates_svg_file():
     svg_file_path = 'mock_output.svg'
 
     # Mock the load_license_data and save_svg functions
-    with patch("src.update.update_readme.load_license_data", return_value=sample_license_data), \
-         patch("src.update.update_readme.save_svg") as mock_save_svg, \
+    with patch("src.statistics.update_readme.load_license_data", return_value=sample_license_data), \
+         patch("src.statistics.update_readme.save_svg") as mock_save_svg, \
          patch("builtins.open", mock_open(read_data=sample_svg_template)):
         # Call the main function
         update_readme('mock_path', svg_file_path)
