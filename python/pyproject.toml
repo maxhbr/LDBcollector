@@ -1,17 +1,24 @@
-[tool.poetry]
+[project]
 name = "licenselynx"
 version = "0.8.1"
 description = "Unified License Mapper"
-authors = ["Leo Reinmann <leo.reinmann@siemens.com>"]
+authors = [
+    { name = "Leo Reinmann", email = "leo.reinmann@siemens.com" }
+]
 readme = "README.md"
 license = "Apache-2.0"
-packages = [{ include = "licenselynx" }]
+requires-python = ">=3.11"
+
+
+
+[tool.poetry]
+package-mode = true
+packages = [
+    { include = "licenselynx" }
+]
 include = [
     { path = "licenselynx/resources/merged_data.json", format = ["sdist", "wheel"] }
 ]
-
-[tool.poetry.dependencies]
-python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.8.0"
