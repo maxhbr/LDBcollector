@@ -5,8 +5,7 @@
 
 from django import template
 
-from cube.models import License
-from cube.models.licenses import LicensePolicy
+from cube.models import License, LicensePolicy
 
 register = template.Library()
 

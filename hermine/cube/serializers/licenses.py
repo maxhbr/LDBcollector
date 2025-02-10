@@ -4,8 +4,7 @@
 
 from rest_framework import serializers
 
-from cube.models import License, Obligation, Generic, Team
-from cube.models.licenses import LicensePolicy
+from cube.models import License, LicensePolicy, Obligation, Generic, Team
 
 
 class GenericNameField(serializers.CharField):

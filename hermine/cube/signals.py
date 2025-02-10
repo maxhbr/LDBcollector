@@ -7,8 +7,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from packageurl import PackageURL
 
-from cube.models import Version, Exploitation, License, Usage
-from cube.models.licenses import LicensePolicy
+from cube.models import Version, Exploitation, License, LicensePolicy, Usage
 from cube.utils.spdx import explode_spdx_to_units
 
 logger = logging.getLogger(__name__)

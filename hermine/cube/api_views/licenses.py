@@ -13,8 +13,7 @@ from rest_framework.decorators import action
 from rest_framework.generics import RetrieveUpdateAPIView
 from rest_framework.response import Response
 
-from cube.models import License, Usage, Generic, Obligation
-from cube.models.licenses import LicensePolicy
+from cube.models import License, LicensePolicy, Usage, Generic, Obligation
 from cube.serializers import (
     LicenseSerializer,
     SBOMSerializer,

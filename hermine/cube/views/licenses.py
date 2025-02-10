@@ -37,8 +37,7 @@ from cube.forms.licenses import (
     CopyReferenceObligationForm,
     SyncEverythingFromReferenceForm,
 )
-from cube.models import License, Generic, Obligation
-from cube.models.licenses import LicensePolicy
+from cube.models import License, LicensePolicy, Generic, Obligation
 from cube.utils.reference import (
     LICENSE_SHARED_FIELDS,
     OBLIGATION_SHARED_FIELDS,

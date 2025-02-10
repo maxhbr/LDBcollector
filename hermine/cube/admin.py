@@ -13,13 +13,13 @@ from .models import Generic
 from .models import License
 from .models import LicenseChoice
 from .models import LicenseCuration
+from .models import LicensePolicy
 from .models import Obligation
 from .models import Product
 from .models import Release
 from .models import Team
 from .models import Usage
 from .models import Version
-from .models.licenses import LicensePolicy
 from .models.policy import AbstractUsageRule
 from .utils.spdx import is_ambiguous
 

@@ -13,8 +13,8 @@ from cube.models import (
     Exploitation,
     Derogation,
     License,
+    LicensePolicy,
 )
-from cube.models.licenses import LicensePolicy
 from cube.utils.licenses import handle_licenses_json
 from cube.utils.release_validation import (
     STEP_CURATION,

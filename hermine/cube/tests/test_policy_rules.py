@@ -9,11 +9,11 @@ from cube.models import (
     LicenseCuration,
     LicenseChoice,
     License,
+    LicensePolicy,
     Derogation,
     Category,
     Product,
 )
-from cube.models.licenses import LicensePolicy
 from cube.utils.release_validation import (
     apply_curations,
     propagate_choices,

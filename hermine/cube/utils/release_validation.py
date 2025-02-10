@@ -17,12 +17,12 @@ from django.db.models import (
 from cube.models import (
     Release,
     License,
+    LicensePolicy,
     LicenseChoice,
     LicenseCuration,
     Exploitation,
     Derogation,
 )
-from cube.models.licenses import LicensePolicy
 from cube.utils.spdx import has_ors, is_ambiguous, simplified
 
 logger = logging.getLogger(__name__)
