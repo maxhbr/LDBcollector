@@ -179,6 +179,7 @@ def import_spdx_file(
         description = (
             package.description
             if package.description is not None
+            and str(package.description) != "NOASSERTION"
             else ""
         )
 
