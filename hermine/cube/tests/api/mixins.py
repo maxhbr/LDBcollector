@@ -20,7 +20,6 @@ class BaseHermineAPITestCase(BaseAPITestCase):
         data = {
             "spdx_id": self.SPDX_ID,
             "long_name": "license posted through api",
-            "allowed": "context",
             "copyleft": "Strong",
             "foss": "Yes",
             "obligation_set": [],

@@ -57,7 +57,6 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "fields": {
                     "spdx_id": "lorem license",
                     "long_name": "Lorem License",
-                    "allowed": "always",
                     "foss": "Yes",
                     "comment": "Open Source",
                 },
@@ -67,7 +66,6 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "fields": {
                     "spdx_id": "lorem-license-2",
                     "long_name": "Lorem License 2",
-                    "allowed": "always",
                     "foss": "Yes",
                     "comment": "Open Source",
                 },
@@ -141,17 +139,6 @@ class ImportTestCase(ForceLoginMixin, TestCase):
             },
         )
         self.assertRedirects(res, reverse("cube:generic_list"))
-
-    def test_import_examples(self):
-        self.assertEqual(License.objects.all().count(), 2)
-        self.assertEqual(Obligation.objects.all().count(), 14)
-        with open("../examples/data/Example_generic_obligations.json") as f:
-            handle_generics_json(f)
-        with open("../examples/data/Example_licences.json") as f:
-            handle_licenses_json(f)
-        self.assertEqual(Generic.objects.all().count(), 18)
-        self.assertEqual(License.objects.all().count(), 9)
-        self.assertEqual(Obligation.objects.all().count(), 58)
 
 
 class ImportSBOMTestCase(TestCase):

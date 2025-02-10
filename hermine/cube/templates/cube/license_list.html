@@ -113,11 +113,11 @@ SPDX-License-Identifier: AGPL-3.0-only
                     <a href="{% url 'cube:license_detail' license.id %}" >{{ license.long_name }}</a></td>
                   <td>
                     <span class="tag {{ license | licenseAllowedCSS }}">
-                      {{ license.get_allowed_display }}
+                      {{ license.policy.get_allowed_display }}
                     </span>
                   </td>
-                  <td>{% if license.allowed %}{{ license.obligation_count }} obligation{{ license.obligation_count|pluralize }}{% endif %}</td>
-                  <td>{% if license.status == 'Checked' %} <i class="fas fa-check-square"></i> {%else%} {{license.status}}{% endif %}</td>
+                  <td>{% if license.policy.allowed %}{{ license.obligation_count }} obligation{{ license.obligation_count|pluralize }}{% endif %}</td>
+                  <td>{% if license.policy.status == 'Checked' %} <i class="fas fa-check-square"></i> {%else%} {{license.policy.status}}{% endif %}</td>
                   {% if is_shared_reference_loaded %}
                     <td>
                       {% if not license.reference_diff %}

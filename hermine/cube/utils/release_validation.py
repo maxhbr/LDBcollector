@@ -17,6 +17,7 @@ from django.db.models import (
 from cube.models import (
     Release,
     License,
+    LicensePolicy,
     LicenseChoice,
     LicenseCuration,
     Exploitation,
@@ -190,7 +191,7 @@ def check_licenses_against_policy(release: Release):
         for license in usage.licenses_chosen.all():
             involved_lic.add(license)
 
-            if license.allowed == License.ALLOWED_ALWAYS:
+            if license.policy.allowed == LicensePolicy.ALLOWED_ALWAYS:
                 continue
 
             if any(u.derogation is not None for u in usages):
@@ -202,11 +203,11 @@ def check_licenses_against_policy(release: Release):
                         derogations.add(derogation)
                     continue
 
-            if license.allowed == License.ALLOWED_NEVER:
+            if license.policy.allowed == LicensePolicy.ALLOWED_NEVER:
                 usages_lic_never_allowed.add(usage)
-            elif license.allowed == License.ALLOWED_CONTEXT:
+            elif license.policy.allowed == LicensePolicy.ALLOWED_CONTEXT:
                 usages_lic_context_allowed.add(usage)
-            elif not license.allowed:
+            elif not license.policy.allowed:
                 usages_lic_unknown.add(usage)
 
     return {
