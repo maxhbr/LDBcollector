@@ -1,5 +1,15 @@
 # Changelog
 
+## To be releases :
+
+BREAKING:
+* Static files are served by default by [Whitenoise](https://whitenoise.readthedocs.io/).
+* `localhost` docker compose profile is removed. The default profile is now the one to use
+  locally or behind a reverse proxy. In this default profile, there is no more Caddy image : the Django
+  image now directly binds to $PORT. In order to prevent any conflict when upgrading, you should
+  run `docker compose up -d --remove-orphans` . 
+
+
 ## 0.3.5
 
 FEATURES:

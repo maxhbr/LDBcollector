@@ -36,16 +36,21 @@ tests:
     - apk --no-cache add curl
     - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev
       cargo
+    - apk --no-cache add nodejs npm
     - pip install --upgrade pip
     - curl -sSL https://install.python-poetry.org | python -
     - export PATH="/root/.local/bin:$PATH"
     - poetry about
     - poetry install
     - cp hermine/hermine/config.default.py hermine/hermine/config.py
+    - mkdir -p hermine/vite_modules/dist
+    - npm ci
+    - npm run build
     - cd hermine
     - poetry run black --check .
     - poetry run ruff check .
     - poetry run djhtml cube/templates/ --check
+    - poetry run python manage.py collectstatic --noinput
     - poetry run python manage.py makemigrations | grep "No changes detected" || echo "Migrations are not up to date"
     - poetry run python manage.py test
 

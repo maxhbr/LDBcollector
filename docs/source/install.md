@@ -29,18 +29,16 @@ Hermine provides a [Docker Compose](https://docs.docker.com/compose/) configurat
 following services:
 * a PostgreSQL database
 * a [gunicorn](https://gunicorn.org/) server for the Python backend
-* a [Caddy](https://caddyserver.com/) server to
-[serve static files](https://docs.djangoproject.com/en/4.1/howto/static-files/deployment/)
-and proxy other requests to gunicorn
+* an optional [Caddy](https://caddyserver.com/) server to deploy Hermine with HTTPS out-of-the-box
 
 Beware this config is for `docker compose`
 ([Compose v2](https://docs.docker.com/compose/migrate/))
 not for `docker-compose` (Compose v1).
 
 Two profiles are available :
+* a default profile to use Hermine on a local machine or behind a reverse proxy (not suited for development)
 * an `https` profile where Caddy is configured with automatic HTTPS. It can easily be
 deployed on a VPS.
-* a `localhost` profile to use Hermine on a local machine or behind a reverse proxy (not suited for development)
 
 Configuration is made through a [`.env` file](https://github.com/bkeepers/dotenv) which should be
 placed at the root of the project. Relevant [configuration variables
@@ -56,6 +54,23 @@ In case you need to access the `django-admin` tool from outside Docker, you shou
 
 To automatically init the database with [reference data](reference_data.md), just put the `shared.json` file in the `docker/` directory
 before starting the containers.
+
+### Default profile (to use locally or behind a reverse proxy)
+
+You must set `PORT` instead of `HERMINE_HOST` variable.
+
+```bash
+# configure secret key
+echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
+# configure port
+echo "PORT=9000" >> .env
+# optional : configure HOST if you plan to use Hermine behind a reverse proxy
+echo "HERMINE_HOST=example.com" >> .env
+# start the services in background
+docker compose up -d
+
+# Visit http://localhost:9000 and login with admin / admin
+```
 
 ### HTTPS profile (for deployment on a VPS)
 
@@ -80,19 +95,6 @@ To update your instance :
 ```bash
 git switch main && git pull
 docker compose --profile https up -d --build
-```
-
-### Localhost profile (to use behind a reverse proxy)
-
-You must set `PORT` insted of `HERMINE_HOST` variable.
-
-```bash
-# configure secret key
-echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
-# configure port
-echo "PORT=9000" >> .env
-# start the services in background
-docker compose --profile localhost up -d
 ```
 
 ## Hermine Docker image
@@ -131,16 +133,10 @@ Optional configuration :
 * **THREADS**: the number of threads used by gunicorn workers, defaults to number of CPU cores
 * **MAX_UPLOAD_SIZE**: the maximum size that the SBOM to import can be (in bytes), defaults to 10MB
 
-You will need to be able to access the STATIC_ROOT directory from your reverse proxy,
-and to serve its content on `example.com/static/`, so you should probably mount it as a volume.
-Read more about [serving static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
-in Django documentation.
-
 Example of command to run the container :
 ```bash
 docker run -d \
   --name hermine \
-  --volume /host/path/to/static_directory:$STATIC_ROOT hermine
   --env-file .env \
   hermine
 ```
@@ -211,9 +207,11 @@ How you want to serve Hermine is up to you. You should be familiar with WSGI ser
 A typical installation is :
 
 * Gunicorn or another WSGI server (running Hermine's `wsgi.py`)
-* NGinx to serve static files and proxy other requests to Gunicorn
+* Nginx to proxy requests to Gunicorn and handle HTTPS
 
-Hermine is not different from any other Django application. You can find more information in [Django documentation](https://docs.djangoproject.com/en/4.1/howto/deployment/).
+Static files are handled by [Whitenoise](https://whitenoise.readthedocs.io/), so
+you can serve them directly from your WSGI server. Otherwise, Hermine is not different
+from any other Django application. You can find more information in [Django documentation](https://docs.djangoproject.com/en/4.1/howto/deployment/).
 
 For development purpose, you can simply run :
 
@@ -221,18 +219,6 @@ For development purpose, you can simply run :
 # run the server
 poetry run hermine/manage.py runserver
 ```
-
-#### Static files
-
-Static files should be served by your web server. After
-install, you must run `collectstatic` to copy static files to the `static`
-directory (or any other configured in `config.py`).
-
-```bash
-poetry run hermine/manage.py collectstatic
-```
-
-You can find more information in [Django documentation](https://docs.djangoproject.com/en/4.1/howto/static-files/deployment/).
 
 ## OAuth
 
