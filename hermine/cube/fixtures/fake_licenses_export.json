@@ -25,7 +25,7 @@
             "spdx_id": "LicenseRef-fakeLicense-ContextAllowed-1.0",
             "long_name": "Fake Context Allowed License-1.0",
             "steward": "",
-            "copyleft": "Weak",
+            "copyleft": "Strong",
             "url": "",
             "osi_approved": null,
             "fsf_approved": null,
@@ -132,6 +132,38 @@
             "verbatim": "An active fake Obligation related to Fake Generic 1 and triggered by Distribution of Source or Object, Modified or not",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    },
+        {
+        "model":  "cube.obligation",
+        "fields":  {
+            "license":  [
+                "LicenseRef-fakeLicense-ContextAllowed-1.0"
+            ],
+            "generic":  [
+                "Fake - Generic 2 - Modified only"
+            ],
+            "name": "Fake Perm 1. For Gen 2 : Obligation for : Distributed Source or Object, Only if Modified",
+            "verbatim": "An active fake Obligation related to Fake Generic 2 and triggered by Distribution of Source or Object, only if Modified",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        }
+    },
+    {
+        "model":  "cube.obligation",
+        "fields":  {
+            "license":  [
+                "LicenseRef-fakeLicense-ContextAllowed-1.0"
+            ],
+            "generic":  [
+                "Fake - Generic 3 - Remote access"
+            ],
+            "name": "Fake Perm 1. For Gen 3 : Obligation for : Network access, Modified or not",
+            "verbatim": "An active fake Obligation related to Fake Generic 1 and triggered by Network access Modified or not",
+            "passivity": "Active",
+            "trigger_expl": "NetworkAccess",
             "trigger_mdf": "AlteredUnmodified"
         }
     },

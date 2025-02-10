@@ -1,6 +1,7 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
+from typing import Self, Optional
 
 from django.db import models
 from django.db.models import Q, F
@@ -8,6 +9,7 @@ from django.urls import reverse_lazy
 from django.utils.functional import cached_property
 
 from cube.models import Usage
+from cube.utils.licenses import is_compatible
 from cube.utils.reference import (
     license_reference_diff,
     generic_reference_diff,
@@ -109,6 +111,14 @@ class License(models.Model):
 
     def natural_key(self):
         return (self.spdx_id,)
+
+    def is_compatible_with(
+        self,
+        outbound: Optional[Self],
+        linking: str,
+        exploitation: str,
+    ):
+        return is_compatible(self, outbound, linking, exploitation)
 
     @property
     def is_core_covered(self):
@@ -391,3 +401,40 @@ class Obligation(models.Model):
 
     def __str__(self):
         return self.license.__str__() + " -" + self.name
+
+
+class Compatibility(models.Model):
+    from_license = models.ForeignKey(
+        "License",
+        on_delete=models.CASCADE,
+        related_name="compatibility_from",
+        verbose_name="From license",
+    )
+    to_license = models.ForeignKey(
+        "License",
+        on_delete=models.CASCADE,
+        related_name="compatibility_to",
+        verbose_name="To license",
+    )
+    DIRECTION_ASCENDING = "A"
+    DIRECTION_DESCENDING = "D"
+    DIRECTION_CHOICES = [
+        (DIRECTION_ASCENDING, "Ascending"),
+        (DIRECTION_DESCENDING, "Descending"),
+    ]
+    direction = models.CharField(
+        max_length=1,
+        choices=DIRECTION_CHOICES,
+        default="A",
+        help_text="Ascending means the license explicitly allows re-licensing under the other one. Descending means the license explicitly allows inclusion of"
+        " works under the other one inside a combination or derivative work..",
+    )
+    verbatim = models.TextField(
+        "Exact text of the compatibility",
+        blank=True,
+    )
+
+    class Meta:
+        unique_together = ["from_license", "to_license"]
+        verbose_name = "Compatibility"
+        verbose_name_plural = "Compatibilities"

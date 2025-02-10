@@ -33,6 +33,7 @@ STEP_CONFIRM_AND = 2
 STEP_EXPLOITATIONS = 3
 STEP_CHOICES = 4
 STEP_POLICY = 5
+STEP_COMPATIBILITY = 6
 
 
 # Functions with side effect to update releases according to curations and choices
@@ -344,6 +345,36 @@ def validate_policy(release):
     return step_5_valid, context
 
 
+def validate_compatibility(release):
+    """
+    Check that the licenses are compatible with the exploitation license.
+    """
+    context = dict()
+
+    usages = release.usage_set.exclude(linking="").exclude(exploitation="")
+    incompatible_usages = set()
+    incompatible_licenses = set()
+
+    outbound_licenses = License.objects.filter(
+        Q(releases=release)
+        | Q(outbound_products=release.product)
+        | Q(outbound_categories__product=release.product)
+    )
+    for outbound_license in outbound_licenses if outbound_licenses.count() else (None,):
+        for usage in usages:
+            for dependency_license in usage.licenses_chosen.exclude(copyleft="").all():
+                if not dependency_license.is_compatible_with(
+                    outbound_license, usage.linking, usage.exploitation
+                ):
+                    incompatible_usages.add(usage)
+                    incompatible_licenses.add(dependency_license)
+
+    context["incompatible_usages"] = incompatible_usages
+    context["incompatible_licenses"] = incompatible_licenses
+
+    return len(incompatible_usages) == 0 and len(incompatible_licenses) == 0, context
+
+
 # Apply all rules and check validation steps
 def update_validation_step(release: Release):
     info = dict()
@@ -375,6 +406,11 @@ def update_validation_step(release: Release):
     info.update(context)
     if step5 and validation_step == 4:
         validation_step = 5
+
+    step6, context = validate_compatibility(release)
+    info.update(context)
+    if step6 and validation_step == 5:
+        validation_step = 6
 
     release.valid_step = validation_step
     release.save()

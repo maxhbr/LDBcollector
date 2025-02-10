@@ -4,11 +4,18 @@
 from django import forms
 
 from cube.forms.mixins import AutocompleteFormMixin
-from cube.models import Product
+from cube.models import Product, Category
 
 
 class ProductForm(AutocompleteFormMixin, forms.ModelForm):
     class Meta:
         model = Product
-        autocomplete_fields = ["categories"]
+        autocomplete_fields = ["categories", "outbound_licenses"]
+        fields = "__all__"
+
+
+class CategoryForm(AutocompleteFormMixin, forms.ModelForm):
+    class Meta:
+        model = Category
+        autocomplete_fields = ["outbound_licenses"]
         fields = "__all__"

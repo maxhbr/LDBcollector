@@ -20,7 +20,7 @@ class BaseHermineAPITestCase(BaseAPITestCase):
         data = {
             "spdx_id": self.SPDX_ID,
             "long_name": "license posted through api",
-            "copyleft": "Strong",
+            "copyleft": "None",
             "foss": "Yes",
             "obligation_set": [],
         }
@@ -64,6 +64,13 @@ class BaseHermineAPITestCase(BaseAPITestCase):
             "commit": "a9eb85ea214a6cfa6882f4be041d5cce7bee3e45",
         }
         return self.client.post(url, data)
+
+    def add_outbound_license(self):
+        url = "/api/products/1/"
+        data = {
+            "outbound_licenses": ["LicenseRef-fakeLicense-ContextAllowed-1.0"],
+        }
+        return self.client.patch(url, data)
 
     def create_product(self):
         url = "/api/products/"

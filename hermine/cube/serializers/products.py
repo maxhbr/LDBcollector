@@ -4,7 +4,7 @@
 
 from rest_framework import serializers
 
-from cube.models import Product, Release, Usage, Exploitation
+from cube.models import Product, Release, Usage, Exploitation, License
 from cube.serializers import (
     UsageSerializer,
     LicenseSerializer,
@@ -27,6 +27,9 @@ class ReleaseSerializer(serializers.ModelSerializer):
 
     validation_step = serializers.IntegerField(source="valid_step", read_only=True)
     exploitations = ExploitationSerializer(many=True, read_only=True)
+    outbound_licenses = serializers.SlugRelatedField(
+        many=True, slug_field="spdx_id", queryset=License.objects.all(), required=False
+    )
 
     class Meta:
         use_natural_foreign_keys = True
@@ -40,6 +43,7 @@ class ReleaseSerializer(serializers.ModelSerializer):
             "validation_step",
             "commit",
             "exploitations",
+            "outbound_licenses",
         ]
 
 
@@ -74,50 +78,24 @@ class ProductSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of Products on the following fields :"""
 
     releases = ReleaseSerializer(
-        read_only=False, many=True, allow_null=True, required=False
+        read_only=True, many=True, allow_null=True, required=False
+    )
+    outbound_licenses = serializers.SlugRelatedField(
+        many=True, slug_field="spdx_id", queryset=License.objects.all(), required=False
     )
 
     class Meta:
         use_natural_foreign_keys = True
         model = Product
-        fields = ["id", "name", "description", "owner", "releases"]
+        fields = [
+            "id",
+            "name",
+            "description",
+            "owner",
+            "releases",
+            "outbound_licenses",
+        ]
         read_only_field = "name"
-
-    def create(self, validated_data):
-        releases_data = validated_data.pop("releases", [])
-        product = Product.objects.create(**validated_data)
-        for release_data in releases_data:
-            try:
-                Release.objects.create(product=product, **release_data)
-            except Exception:
-                print("Could not create release ", release_data, " of ", product)
-        return product
-
-    def update(self, instance, validated_data):
-        """Updates a product overwriting existing data. You should explicitely give
-        every data you want to keep in the 'validated data parameter.
-
-        :param instance: The instance of product you want to update.
-        :type instance: Product
-        :param validated_data: A dict matching product serialization. Releases are
-            nested in 'releases'.
-        :type validated_data: [type]
-        :return: [description]
-        :rtype: [type]
-        """
-
-        Release.objects.filter(product=instance).delete()
-        releases_data = validated_data.pop("releases")
-        for release_data in releases_data:
-            updated_release = Release.objects.create(**release_data, product=instance)
-            try:
-                instance.releases.add(updated_release)
-            except Exception:
-                print("Could not create releases of", instance)
-        for field, value in validated_data.items():
-            setattr(instance, field, value)
-        instance.save()
-        return instance
 
 
 ## Validation step serializers
@@ -155,6 +133,11 @@ class PolicyValidationSerializer(BaseValidationStepSerializer):
     usages_lic_unknown = UsageSerializer(read_only=True, many=True)
     involved_lic = LicenseSerializer(read_only=True, many=True)
     derogations = DerogationSerializer(read_only=True, many=True)
+
+
+class CompatibilityValidationSerializer(BaseValidationStepSerializer):
+    incompatible_usages = UsageSerializer(read_only=True, many=True)
+    incompatible_licenses = LicenseSerializer(read_only=True, many=True)
 
 
 class UploadSPDXSerializer(serializers.Serializer):
