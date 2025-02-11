@@ -2,7 +2,12 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+import io
+import json
 import logging
+import re
+import tarfile
+import unicodedata
 from typing import Iterable, TYPE_CHECKING
 
 from django.core.serializers import serialize, deserialize
@@ -10,10 +15,10 @@ from django.db import transaction
 from django.db.models import prefetch_related_objects
 
 from cube.utils.importers import create_or_replace_by_natural_key
+from cube.utils.reference import LICENSE_SHARED_FIELDS, GENERIC_SHARED_FIELDS
 
 if TYPE_CHECKING:
     from cube.models import License
-
 
 logger = logging.getLogger(__name__)
 
@@ -126,34 +131,111 @@ def get_generic_usages(usages, generic):
 
 
 def export_licenses(indent=False):
-    from cube.models import Obligation, License
+    from cube.models import Obligation, License, LicensePolicy, Generic
 
     return serialize(
         "json",
-        list(License.objects.all()) + list(Obligation.objects.all()),
+        list(Generic.objects.all())
+        + list(License.objects.all())
+        + list(Obligation.objects.all())
+        + list(LicensePolicy.objects.all()),
         indent=4 if indent else None,
         use_natural_foreign_keys=True,
         use_natural_primary_keys=True,
     )
 
 
+def export_shared_archive():
+    from cube.models import License, Generic
+
+    # Create a tar file with one json file per license
+    with io.BytesIO() as tar_buffer:
+        with tarfile.open(fileobj=tar_buffer, mode="w:gz") as tar:
+            for license in License.objects.all():
+                license_json = serialize(
+                    "json",
+                    [license],
+                    use_natural_foreign_keys=True,
+                    use_natural_primary_keys=True,
+                )
+                # Filter shared fields
+                license_dict = json.loads(license_json)[0]
+                license_dict = {
+                    k: v
+                    for k, v in license_dict["fields"].items()
+                    if k in LICENSE_SHARED_FIELDS
+                }
+
+                obligation_json = serialize(
+                    "json",
+                    license.obligation_set.all(),
+                    use_natural_foreign_keys=True,
+                    use_natural_primary_keys=True,
+                    indent=4,
+                )
+                license_dict["obligations"] = [
+                    o["fields"] for o in json.loads(obligation_json)
+                ]
+
+                license_file = io.BytesIO(
+                    json.dumps(license_dict, indent=4).encode("utf-8")
+                )
+                tarinfo = tarfile.TarInfo(name=f"licenses/{license.spdx_id}.json")
+                tarinfo.size = len(license_file.getvalue())
+                tar.addfile(tarinfo, license_file)
+
+            for generic in Generic.objects.all():
+                generic_json = serialize(
+                    "json",
+                    [generic],
+                    use_natural_foreign_keys=True,
+                    use_natural_primary_keys=True,
+                )
+                # Filter shared fields
+                generic_dict = json.loads(generic_json)[0]
+                generic_dict = {
+                    k: v
+                    for k, v in generic_dict["fields"].items()
+                    if k in GENERIC_SHARED_FIELDS
+                }
+                generic_file = io.BytesIO(
+                    json.dumps(generic_dict, indent=4).encode("utf-8")
+                )
+                filename = unicodedata.normalize("NFKD", generic.name)
+                filename = re.sub(r"[^\w\s-]", "", filename).strip().lower()
+                filename = re.sub(r"[-\s]+", "-", filename)
+                tarinfo = tarfile.TarInfo(name=f"generics/{filename}.json")
+                tarinfo.size = len(generic_file.getvalue())
+                tar.addfile(tarinfo, generic_file)
+
+        return tar_buffer.getvalue()
+
+
 @transaction.atomic()
-def handle_licenses_json(data):
-    created, updated = 0, 0
-    for license_or_obligation in deserialize(
-        "json", data, handle_forward_references=True
-    ):
+def handle_licenses_json_or_shared_json(data):
+    """
+    Support direct importing of licenses from a shared.json file
+    from hermine-data repository as well as importing
+    licenses from licenses.json files exported from Hermine UI.
+    """
+    dict = json.loads(data)
+    if "objects" in dict:
+        for obj in deserialize(
+            "python",
+            dict["objects"],
+        ):
+            obj.save()
+        logger.info("Import a shared.json file directly into database.")
+        return
+
+    for obj in deserialize("json", data, handle_forward_references=True):
         from cube.models import Generic
 
-        if len(license_or_obligation.deferred_fields) > 0:
-            name = license_or_obligation.deferred_fields[
-                list(license_or_obligation.deferred_fields.keys())[0]
+        # Legacy, allow import of license without generics
+        if "generic" in [f.cache_name for f in obj.deferred_fields.keys()]:
+            name = obj.deferred_fields[
+                next(f for f in obj.deferred_fields.keys() if f.cache_name == "generic")
             ][0]
             Generic.objects.get_or_create(name=name)
 
-        if create_or_replace_by_natural_key(license_or_obligation):
-            created += 1
-        else:
-            updated += 1
-
-    logger.info(f"Licenses : {created} created / {updated} updated")
+        create_or_replace_by_natural_key(obj)

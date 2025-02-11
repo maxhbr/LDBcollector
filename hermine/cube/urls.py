@@ -137,7 +137,21 @@ urlpatterns = [
         views.LicenseDiffUpdateView.as_view(),
         name="license_diff_update",
     ),
-    path("licenses/export/", views.LicenseExportView.as_view(), name="license_export"),
+    path(
+        "licenses/export/single-file/",
+        views.LicenseExportAllAsSingleFileView.as_view(),
+        name="license_export_all_json",
+    ),
+    path(
+        "licenses/export/archive/",
+        views.LicenseExportAllAsArchiveView.as_view(),
+        name="license_export_all_archive",
+    ),
+    path(
+        "licenses/import/single-file/",
+        views.LicenseImportAllAsSingleFileView.as_view(),
+        name="license_import_all_json",
+    ),
     path(
         "licenses/<int:license_id>/export/",
         views.LicenseSingleExportView.as_view(),

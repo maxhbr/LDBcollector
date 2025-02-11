@@ -15,7 +15,7 @@ from cube.models import (
     License,
     LicensePolicy,
 )
-from cube.utils.licenses import handle_licenses_json
+from cube.utils.licenses import handle_licenses_json_or_shared_json
 from cube.utils.release_validation import (
     STEP_CURATION,
     STEP_CONFIRM_AND,
@@ -30,7 +30,7 @@ def import_licenses():
     with open(
         os.path.join(settings.BASE_DIR, "cube/fixtures/fake_licenses_export.json")
     ) as licenses_file:
-        handle_licenses_json(licenses_file.read())
+        handle_licenses_json_or_shared_json(licenses_file.read())
 
 
 class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
