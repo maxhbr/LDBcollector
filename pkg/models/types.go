@@ -15,6 +15,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/github/go-spdx/v2/spdxexp"
 	"github.com/go-playground/validator/v10"
 	"gorm.io/datatypes"
 	"gorm.io/gorm"
@@ -61,6 +62,11 @@ func (l *LicenseDB) BeforeSave(tx *gorm.DB) (err error) {
 	}
 	if l.SpdxId != nil && *l.SpdxId == "" {
 		return errors.New("spdx_id cannot be an empty string")
+	} else {
+		valid, _ := spdxexp.ValidateLicenses([]string{*l.SpdxId})
+		if !valid {
+			return errors.New("spdx_id does not follow spdx license expression specifications")
+		}
 	}
 	if l.Risk != nil && (*l.Risk < 0 && *l.Risk > 5) {
 		return errors.New("risk can have values from 0 to 5 only")
