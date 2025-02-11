@@ -1,4 +1,12 @@
-class LicenseObject:
+class LicenseObject(object):
     def __init__(self, canonical, src):
-        self.canonical = canonical
-        self.src = src
+        self._canonical = canonical
+        self._src = src
+
+    @property
+    def canonical(self):
+        return self._canonical
+
+    @property
+    def src(self):
+        return self._src
