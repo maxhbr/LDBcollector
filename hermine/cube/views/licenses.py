@@ -171,17 +171,6 @@ class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
     ]
     template_name = "cube/license_create.html"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["shared_fields"] = []
-        context["policy_fields"] = []
-        for field in context["form"]:
-            if field.name in LICENSE_SHARED_FIELDS:
-                context["shared_fields"].append(field)
-            else:
-                context["policy_fields"].append(field)
-        return context
-
 
 class LicenseDiffView(
     LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, DetailView
