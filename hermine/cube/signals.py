@@ -27,9 +27,13 @@ def update_component_repository(sender, instance: Version, created, **kwargs):
 
 @receiver(post_save, sender=Exploitation, dispatch_uid="update_usages_exploitations")
 def update_usages_exploitations(sender, instance: Exploitation, created, **kwargs):
-    instance.release.usage_set.filter(
-        project=instance.project, scope=instance.scope
-    ).update(exploitation=instance.exploitation)
+    usages = instance.release.usage_set.all()
+    if instance.project:
+        usages = usages.filter(project=instance.project)
+    if instance.scope:
+        usages = usages.filter(scope=instance.scope)
+
+    usages.update(exploitation=instance.exploitation)
 
 
 @receiver(post_save, sender=Version, dispatch_uid="create_missing_licenses")

@@ -291,7 +291,7 @@ def validate_exploitations(release: Release):
         try:
             release.exploitations.get(
                 (Q(scope=scope) | Q(scope="")) & (Q(project=project) | Q(project=""))
-            )
+            ).save()
         except Exploitation.DoesNotExist:
             unset_scopes.add((project, scope, count))
         except Exploitation.MultipleObjectsReturned:
@@ -301,7 +301,13 @@ def validate_exploitations(release: Release):
     context["exploitations"] = release.exploitations.all()
     context["unset_scopes"] = unset_scopes
 
-    return len(unset_scopes) == 0, context
+    valid = len(unset_scopes) == 0
+
+    # We better crash than give wrong results
+    if valid:
+        assert not release.usage_set.filter(exploitation="").exists()
+
+    return valid, context
 
 
 def validate_choices(release):
