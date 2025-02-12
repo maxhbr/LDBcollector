@@ -70,7 +70,6 @@ class ImportFormMixin:
 class LicensesListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
-    FormView,
     FilterView,
 ):
     permission_required = "cube.view_license"
@@ -79,8 +78,6 @@ class LicensesListView(
     context_object_name = "licenses"
     paginate_by = 50
     ordering = [Lower("spdx_id")]
-    form_class = ImportLicensesForm
-    success_url = reverse_lazy("cube:license_list")
     template_name = "cube/license_list.html"
 
     def get_queryset(self):
