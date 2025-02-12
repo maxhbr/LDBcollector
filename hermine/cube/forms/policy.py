@@ -44,7 +44,7 @@ class AuthorizedContextForm(forms.ModelForm):
             ("", "---------"),
             *(
                 (scope, scope)
-                for scope in Usage.objects.values_list("scope", flat=True).distinct()
+                for scope in set(Usage.objects.values_list("scope", flat=True))
             ),
         )
 
