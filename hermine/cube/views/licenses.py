@@ -25,10 +25,12 @@ from django.views.generic import (
     TemplateView,
 )
 from django.views.generic.edit import BaseFormView
+from django_filters.views import FilterView
 from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
+from cube.filters import LicenseFilter
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
 from cube.forms.licenses import ObligationForm
 from cube.forms.licenses import (
@@ -45,7 +47,7 @@ from cube.utils.reference import (
     join_obligations,
     GENERIC_SHARED_FIELDS,
 )
-from cube.views.mixins import SearchMixin, LicenseRelatedMixin, SharedDataRequiredMixin
+from cube.views.mixins import LicenseRelatedMixin, SharedDataRequiredMixin
 
 
 class ImportFormMixin:
@@ -68,15 +70,14 @@ class ImportFormMixin:
 class LicensesListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
-    SearchMixin,
-    ListView,
+    FilterView,
 ):
     permission_required = "cube.view_license"
     model = License
+    filterset_class = LicenseFilter
     context_object_name = "licenses"
     paginate_by = 50
     ordering = [Lower("spdx_id")]
-    search_fields = ("long_name", "spdx_id")
     template_name = "cube/license_list.html"
 
     def get_queryset(self):

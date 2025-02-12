@@ -27,3 +27,16 @@ class ReleaseBomFilter(
     o = django_filters.OrderingFilter(
         fields=("project", "scope", "exploitation", "license_expression")
     )
+
+
+class LicenseFilter(
+    django_filters.FilterSet,
+):
+    search = django_filters.CharFilter(
+        field_name="long_name", lookup_expr="icontains", label="Search"
+    )
+    copyleft = ValueFilter()
+    patent_grant = ValueFilter()
+    policy__allowed = ValueFilter()
+    policy__status = ValueFilter()
+    o = django_filters.OrderingFilter(fields=("spdx_id", "policy__allowed"))
