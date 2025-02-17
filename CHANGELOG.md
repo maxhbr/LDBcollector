@@ -27,6 +27,7 @@ BREAKING:
 * Separate `LicensePolicy` model from `License` model [440cd374](https://gitlab.com/hermine-project/hermine/-/commit/440cd374) [7b6dbafd](https://gitlab.com/hermine-project/hermine/-/commit/7b6dbafd) 
 * Remove unused fields (License version, radical, autoupgrade and inspiration) [662a6a4e](https://gitlab.com/hermine-project/hermine/-/commit/662a6a4e31d5a1faedf77db5861f0dcebd5e1551)
 * Static files are served by default by [Whitenoise](https://whitenoise.readthedocs.io/) [7698ab33](https://gitlab.com/hermine-project/hermine/-/commit/7698ab33) [44976899](https://gitlab.com/hermine-project/hermine/-/commit/44976899) [0a257499](https://gitlab.com/hermine-project/hermine/-/commit/0a257499)
+* Static files in are collected at build time in Dockerfile [a7029ee8](https://gitlab.com/hermine-project/hermine/-/commit/a7029ee8)
 * `localhost` docker compose profile is removed. The default profile is now the one to use
   locally or behind a reverse proxy. In this default profile, there is no more Caddy image : the Django
   image now directly binds to $PORT. In order to prevent any conflict when upgrading, you should
