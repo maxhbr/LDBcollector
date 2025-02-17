@@ -2,8 +2,31 @@
 
 ## To be releases :
 
+FEATURES :
+* Add filters on release SBOM table [12011ee1](https://gitlab.com/hermine-project/hermine/-/commit/12011ee1beecae5cba63f2bbf2eb4b623de5ef38) [97083969](https://gitlab.com/hermine-project/hermine/-/commit/97083969)
+* Create a proper 404 page [7741223a](https://gitlab.com/hermine-project/hermine/-/commit/7741223a)
+* Add search in curations page [8510e823](https://gitlab.com/hermine-project/hermine/-/commit/8510e823)
+* Derogation can be created from release validation page [c04bdbd8](https://gitlab.com/hermine-project/hermine/-/commit/c04bdbd8)
+* Add horizontal scroll on tables [e57a3837](https://gitlab.com/hermine-project/hermine/-/commit/e57a3837)
+* Add new links to objects detail page in lists [4c60a007](https://gitlab.com/hermine-project/hermine/-/commit/4c60a007) 
+* Allow authentification through `HTTP-X-Remote-User` header [c741c3de](https://gitlab.com/hermine-project/hermine/-/commit/c741c3de)
+* Add missing native forms and remove links to admin panel [7478c0d8](https://gitlab.com/hermine-project/hermine/-/commit/7478c0d8)
+* Display licenses choices explanations in release choices list [1c62b474](https://gitlab.com/hermine-project/hermine/-/commit/1c62b474)
+* Add `shared.json` in Docker image if available [c0b17538](https://gitlab.com/hermine-project/hermine/-/commit/c0b17538)
+* Allow deploys under subpaths [2620d5b7](https://gitlab.com/hermine-project/hermine/-/commit/2620d5b7)
+* Import "description" field with SPDX imports [90b48596](https://gitlab.com/hermine-project/hermine/-/commit/90b48596)
+* Create a new export mode to use for [hermine-data](https://gitlab.com/hermine-project/hermine-data) contributions and update UX of import / export [9f8184b5](https://gitlab.com/hermine-project/hermine/-/commit/9f8184b5) [33ac4095](https://gitlab.com/hermine-project/hermine/-/commit/33ac4095)
+
+BUGFIXES:
+* List only distinct scopes when creating Authorized contexts [23d9bebf](https://gitlab.com/hermine-project/hermine/-/commit/23d9bebfab0f33f4b1b7225248a0167d28e55f15)
+* Allow derogation creation when no product or release in form [f217f2fc](https://gitlab.com/hermine-project/hermine/-/commit/f217f2fc8af1539c7d8e56b50b8a1369b2522fb4) [7861d118](https://gitlab.com/hermine-project/hermine/-/commit/7861d11824108de8680d294a08f0f49716668019)
+* Fix autocomplete fields styling [2e28be23](https://gitlab.com/hermine-project/hermine/-/commit/2e28be23)
+* Exploitation choices did not transfer to usages when scope or project filters were blank [25d611b7](https://gitlab.com/hermine-project/hermine/-/commit/25d611b7)
+
 BREAKING:
-* Static files are served by default by [Whitenoise](https://whitenoise.readthedocs.io/).
+* Separate `LicensePolicy` model from `License` model [440cd374](https://gitlab.com/hermine-project/hermine/-/commit/440cd374) [7b6dbafd](https://gitlab.com/hermine-project/hermine/-/commit/7b6dbafd) 
+* Remove unused fields (License version, radical, autoupgrade and inspiration) [662a6a4e](https://gitlab.com/hermine-project/hermine/-/commit/662a6a4e31d5a1faedf77db5861f0dcebd5e1551)
+* Static files are served by default by [Whitenoise](https://whitenoise.readthedocs.io/) [7698ab33](https://gitlab.com/hermine-project/hermine/-/commit/7698ab33) [44976899](https://gitlab.com/hermine-project/hermine/-/commit/44976899) [0a257499](https://gitlab.com/hermine-project/hermine/-/commit/0a257499)
 * `localhost` docker compose profile is removed. The default profile is now the one to use
   locally or behind a reverse proxy. In this default profile, there is no more Caddy image : the Django
   image now directly binds to $PORT. In order to prevent any conflict when upgrading, you should
