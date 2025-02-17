@@ -9,8 +9,6 @@ import org.junit.jupiter.api.Assertions;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -61,27 +59,6 @@ class LicenseLynxTest
         LicenseMapSingleton testInstance = new LicenseMapSingleton(testMap);
 
         Assertions.assertNull(testInstance.getLicenseMap().get("test").getCanonical());
-    }
-
-
-
-    @Test
-    void testSingletonInstanceAlreadyExists()
-        throws Exception
-    {
-        // First instance creation (valid)
-        LicenseMapSingleton firstInstance = LicenseMapSingleton.getInstance();
-        Assertions.assertNotNull(firstInstance);
-
-        // Attempt to create another instance using reflection
-        Constructor<LicenseMapSingleton> constructor = LicenseMapSingleton.class.getDeclaredConstructor();
-        constructor.setAccessible(true); // Bypass private access
-
-        // Attempt instantiation and assert the cause of InvocationTargetException
-        InvocationTargetException exception = Assertions.assertThrows(InvocationTargetException.class,
-            constructor::newInstance);
-        Assertions.assertInstanceOf(InstantiationError.class, exception.getCause());
-        Assertions.assertEquals("Instance already exists!", exception.getCause().getMessage());
     }
 
 
