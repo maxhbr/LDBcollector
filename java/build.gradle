@@ -3,6 +3,7 @@
  */
 
 plugins {
+    id 'java'
     id 'java-library'
     id 'jacoco'
     id 'idea'
@@ -70,27 +71,11 @@ dependencies {
     implementation 'org.slf4j:slf4j-api:2.0.16'
     implementation group: 'net.jcip', name: 'jcip-annotations', version: '1.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.1'
+
+    compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
+    compileOnly 'javax.annotation:javax.annotation-api:1.3.2'
 }
 
-
-sourceSets {
-    main {
-        java {
-            srcDirs = ['src/main/java']
-        }
-        resources {
-            srcDirs = ['src/main/resources']
-        }
-    }
-    test {
-        java {
-            srcDirs = ['src/test/java']
-        }
-        resources {
-            srcDirs = ['src/test/resources']
-        }
-    }
-}
 
 tasks.named('test') {
     useJUnitPlatform()
@@ -231,32 +216,9 @@ javadocJar {
 /*
  * - - - -  JAVADOC  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
-//tasks.named('javadoc').configure {
-//    title = project.name + " v${project.version}"
-//    options.locale = 'en'
-//    options.encoding = 'UTF-8'
-//    options.docEncoding = 'UTF-8'
-//    options.charSet = 'UTF-8'
-//    options.windowTitle = project.name
-//    options.noDeprecated = true
-//    options.header = project.name + " v${project.version}"
-//    options.links('https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/',
-//        'https://docs.oracle.com/javase/8/docs/api/')
-//
-//    // javadoc does not inherit the proxy settings (https://issues.gradle.org/browse/GRADLE-1228)
-//    if (System.properties['http.proxyHost'] != null) {
-//        options.jFlags('-DproxyHost=' + System.properties['http.proxyHost'],
-//            '-DproxyPort=' + System.properties['http.proxyPort'],
-//            '-DproxyUser=' + System.properties['http.proxyUser'],
-//            '-DproxyPassword=' + System.properties['http.proxyPassword'])
-//    }
-//
-//    // workaround for JDK 9+: https://github.com/gradle/gradle/issues/11182
-//    def currentJavaVersion = JavaVersion.current()
-//    if (currentJavaVersion >= JavaVersion.VERSION_1_9) {
-//        options.addStringOption("-release", "8")
-//    }
-//}
+javadoc {
+    destinationDir = file("${buildDir}/docs/javadoc")
+}
 
 
 /*

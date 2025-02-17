@@ -1,8 +1,11 @@
-package com.siemens.licenselynx.dto;
+package com.siemens.licenselynx;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import net.jcip.annotations.Immutable;
+
+import javax.annotation.Nonnull;
 
 
 /**
@@ -26,8 +29,8 @@ public class LicenseObject
      */
     @JsonCreator
     public LicenseObject(
-        @JsonProperty("canonical") final String pCanonical,
-        @JsonProperty("src") String pSrc)
+        @JsonProperty("canonical") @Nonnull final String pCanonical,
+        @JsonProperty("src") @Nonnull final String pSrc)
     {
         this.canonical = pCanonical;
         this.src = pSrc;
@@ -38,6 +41,7 @@ public class LicenseObject
      *
      * @return The canonical name.
      */
+    @Nonnull
     public String getCanonical()
     {
         return canonical;
@@ -48,6 +52,7 @@ public class LicenseObject
      *
      * @return The source URL.
      */
+    @Nonnull
     public String getSrc()
     {
         return src;
