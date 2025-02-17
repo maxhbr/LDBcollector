@@ -49,7 +49,10 @@ def create_missing_licenses(sender, instance: Version, created, **kwargs):
 
 
 @receiver(post_save, sender=License, dispatch_uid="create_missing_policies")
-def create_missing_policies(sender, instance: License, created, **kwargs):
+def create_missing_policies(sender, instance: License, using, **kwargs):
+    if using == "shared":
+        return
+
     LicensePolicy.objects.get_or_create(license=instance)
 
 
