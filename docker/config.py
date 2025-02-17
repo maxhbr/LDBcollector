@@ -4,7 +4,7 @@ DEBUG = os.environ.get("PRODUCTION", "").lower() == "false"
 ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING", "").lower() == "true"
 HOST = os.environ.get("HOST")
 FORCE_SCRIPT_NAME = os.environ.get("FORCE_SCRIPT_NAME")
-STATIC_ROOT = os.environ.get("STATIC_ROOT")
+STATIC_ROOT = "/opt/hermine/static"
 MAX_UPLOAD_SIZE = (
     int(os.environ.get("MAX_UPLOAD_SIZE"))
     if os.environ.get("MAX_UPLOAD_SIZE")
