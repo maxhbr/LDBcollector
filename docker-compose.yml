@@ -20,8 +20,6 @@ services:
   django-common: &django
     build:
       context: .
-    volumes:
-      - $PWD/docker/shared.json:/opt/hermine/shared.json
     environment:
       # hard-coded defaults for docker-compose
       - SUPERUSER=admin
