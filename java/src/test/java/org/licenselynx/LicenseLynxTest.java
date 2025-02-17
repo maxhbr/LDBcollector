@@ -1,10 +1,14 @@
 package com.siemens.licenselynx;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.junit.jupiter.api.Assertions;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UncheckedIOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -24,10 +28,6 @@ class LicenseLynxTest
     @Test
     void testMapNonExistingLicense()
     {
-        Map<String, LicenseObject> testMap = new HashMap<>();
-        testMap.put("test", new LicenseObject("TestCanonical", "TestSrc"));
-        LicenseMapSingleton testInstance = new LicenseMapSingleton(testMap);
-
         // Arrange
         String licenseName = "nonExistingLicense";
 
@@ -96,5 +96,50 @@ class LicenseLynxTest
         Assertions.assertSame(instance1, instance2, "getInstance() should always return the same instance");
     }
 
+    @Test
+    void testNullInputStream()
+    {
+        // Arrange
+        ClassLoader mockClassLoader = new ClassLoader()
+        {
+            @Override
+            public InputStream getResourceAsStream(final String pName)
+            {
+                return null;
+            }
+        };
+
+        LicenseDataLoader loader = new LicenseDataLoader(new ObjectMapper(), mockClassLoader);
+
+        // Act && Assert
+        Assertions.assertThrows(IllegalArgumentException.class, () -> loader.loadLicenses());
+    }
+
+    @Test
+    void testIOException()
+    {
+        // Arrange
+        ClassLoader mockClassLoader = new ClassLoader()
+        {
+            @Override
+            public InputStream getResourceAsStream(final String pName)
+            {
+                return new InputStream()
+                {
+                    @Override
+                    public int read()
+                        throws IOException
+                    {
+                        throw new IOException("Test IOException");
+                    }
+                };
+            }
+        };
+
+        LicenseDataLoader loader = new LicenseDataLoader(new ObjectMapper(), mockClassLoader);
+
+        // Act && Assert
+        Assertions.assertThrows(UncheckedIOException.class, () -> loader.loadLicenses());
+    }
 
 }

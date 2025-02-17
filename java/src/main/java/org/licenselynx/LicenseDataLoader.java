@@ -9,9 +9,9 @@ import org.slf4j.LoggerFactory;
 import javax.annotation.Nonnull;
 import java.io.BufferedInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.util.Map;
-import java.util.Objects;
 
 
 /**
@@ -24,24 +24,36 @@ class LicenseDataLoader
 
     private static final String RESOURCE_NAME = "merged_data.json";
 
+    private final ObjectMapper objectMapper;
+    private final ClassLoader classLoader;
+
+    // Constructor for production code using ClassLoader by default
+    public LicenseDataLoader() {
+        this(new ObjectMapper(), LicenseDataLoader.class.getClassLoader());  // Default to the system classloader
+    }
+
+    // Constructor for testability, injecting ClassLoader
+    public LicenseDataLoader(ObjectMapper objectMapper, ClassLoader classLoader) {
+        this.objectMapper = objectMapper;
+        this.classLoader = classLoader;
+    }
+
     @Nonnull
-    Map<String, LicenseObject> loadLicenses()
-    {
+    public Map<String, LicenseObject> loadLicenses() {
         try (
-            BufferedInputStream bufferedInputStream = new BufferedInputStream(
-                Objects.requireNonNull(LicenseLynx.class.getClassLoader().getResourceAsStream(RESOURCE_NAME),
-                    "Resource not found: " + RESOURCE_NAME))
+            InputStream resourceStream = classLoader.getResourceAsStream(RESOURCE_NAME)
         ) {
-            ObjectMapper objectMapper = new ObjectMapper();
+            if (resourceStream == null) {
+                throw new IllegalArgumentException("Resource not found: " + RESOURCE_NAME);
+            }
+            try (BufferedInputStream bufferedInputStream = new BufferedInputStream(resourceStream)) {
+                Map<String, LicenseObject> licenseMap = objectMapper.readValue(bufferedInputStream,
+                    new TypeReference<Map<String, LicenseObject>>() {});
 
-            Map<String, LicenseObject> licenseMap = objectMapper.readValue(bufferedInputStream,
-                new TypeReference<Map<String, LicenseObject>>() {});
-
-            LOGGER.info("Successfully loaded license mappings");
-            return licenseMap;
-        }
-        catch (IOException e)
-        {
+                LOGGER.info("Successfully loaded license mappings");
+                return licenseMap;
+            }
+        } catch (IOException e) {
             throw new UncheckedIOException("Failed to read JSON file: " + RESOURCE_NAME, e);
         }
     }
