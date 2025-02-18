@@ -19,7 +19,9 @@ from django.views.generic import (
     DetailView,
     TemplateView,
 )
+from django_filters.views import FilterView
 
+from cube.filters import ReleaseBomFilter
 from cube.forms.importers import ImportBomForm
 from cube.forms.releases import UsageForm
 from cube.importers import (
@@ -38,7 +40,6 @@ from cube.utils.licenses import (
     get_generic_usages,
 )
 from cube.views.mixins import (
-    SearchMixin,
     ReleaseContextMixin,
     ReleaseExploitationFormMixin,
     QuerySuccessUrlMixin,
@@ -231,24 +232,20 @@ class ReleaseBomExportView(LoginRequiredMixin, PermissionRequiredMixin, DetailVi
 
 class ReleaseBomView(
     LoginRequiredMixin,
-    SearchMixin,
     ReleaseContextMixin,
     PermissionRequiredMixin,
-    generic.ListView,
+    FilterView,
 ):
     model = Usage
+    filterset_class = ReleaseBomFilter
     template_name = "cube/release_bom.html"
     paginate_by = 50
-    search_fields = ("version__purl",)
     permission_required = "cube.view_release"
 
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset(*args, **kwargs)
         release_id = self.kwargs["release_pk"]
-        queryset = queryset.filter(release=release_id).order_by(
-            "project", "scope", "exploitation", "license_expression"
-        )
-        return queryset
+        return queryset.filter(release__id=release_id)
 
 
 class UsageCreateView(

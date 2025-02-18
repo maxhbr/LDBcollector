@@ -4,25 +4,27 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib import admin
 
-# Register your models here.
-
-from .models import Product
 from .models import Category
-from .models import Release
 from .models import Component
-from .models import Funding
-from .models import Version
-from .models import Usage
-from .models import License
-from .models import Generic
-from .models import Obligation
 from .models import Derogation
-from .models import LicenseChoice
 from .models import Exploitation
-from .models import Team
+from .models import Funding
+from .models import Generic
+from .models import License
+from .models import LicenseChoice
 from .models import LicenseCuration
+from .models import LicensePolicy
+from .models import Obligation
+from .models import Product
+from .models import Release
+from .models import Team
+from .models import Usage
+from .models import Version
 from .models.policy import AbstractUsageRule
 from .utils.spdx import is_ambiguous
+
+
+# Register your models here.
 
 
 class ObligationInline(admin.StackedInline):
@@ -63,8 +65,8 @@ class UsageInlineTab(admin.TabularInline):
 
 class LicenseAdmin(admin.ModelAdmin):
     inlines = [ObligationInline]
-    list_display = ("spdx_id", "allowed", "status")
-    list_filter = ["status"]
+    list_display = ("spdx_id", "long_name", "copyleft")
+    list_filter = ["copyleft", "liability", "warranty"]
     search_fields = ["spdx_id"]
     fieldsets = (
         (
@@ -88,11 +90,6 @@ class LicenseAdmin(admin.ModelAdmin):
             {
                 "classes": ("collapse",),
                 "fields": (
-                    "license_version",
-                    "radical",
-                    "autoupgrade",
-                    "inspiration_spdx",
-                    "inspiration",
                     "foss",
                     "osi_approved",
                     "fsf_approved",
@@ -100,21 +97,17 @@ class LicenseAdmin(admin.ModelAdmin):
             },
         ),
         (
-            "Policy",
-            {
-                "fields": (
-                    "status",
-                    "allowed",
-                    "allowed_explanation",
-                    "comment",
-                )
-            },
-        ),
-        (
             "Conditions of use",
             {"fields": ("patent_grant", "non_commercial", "ethical_clause")},
         ),
     )
+
+
+class LicensePolicyAdmin(admin.ModelAdmin):
+    list_display = ("license__spdx_id", "allowed", "status")
+    list_filter = ["status", "allowed"]
+    search_fields = ["spdx_id"]
+    fields = ("status", "allowed", "allowed_explanation", "categories")
 
 
 class GenericAdmin(admin.ModelAdmin):
@@ -308,6 +301,7 @@ class DerogationAdmin(UsageRuleAdminMixin, admin.ModelAdmin):
 
 
 admin.site.register(License, LicenseAdmin)
+admin.site.register(LicensePolicy, LicensePolicyAdmin)
 admin.site.register(Obligation, ObligationAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)

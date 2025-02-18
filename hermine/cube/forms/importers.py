@@ -12,7 +12,7 @@ from django.core.serializers.base import DeserializationError
 
 from cube.models import Release, Usage
 from cube.utils.generics import handle_generics_json
-from cube.utils.licenses import handle_licenses_json
+from cube.utils.licenses import handle_licenses_json_or_shared_json
 from cube.utils.validators import validate_file_size
 
 
@@ -45,9 +45,11 @@ class ImportLicensesForm(BaseJsonImportForm):
     def save(self):
         file = self.cleaned_data["file"]
         try:
-            handle_licenses_json(file)
+            handle_licenses_json_or_shared_json(file)
         except DeserializationError as e:
-            raise ValidationError(str(e))
+            raise ValidationError(
+                str(e) or "An error occurred while importing licenses."
+            )
         except KeyError:
             raise ValidationError('Each license object must have a "spdx_id" field.')
 
@@ -81,8 +83,12 @@ class ImportBomForm(forms.ModelForm):
         initial=None,
         label="Components linking",
     )
-    default_project_name = forms.CharField(max_length=750, required=False)
-    default_scope_name = forms.CharField(max_length=50, required=False)
+    default_project_name = forms.CharField(
+        max_length=Usage.MAX_LENGTH_DEFAULT_PROJECT_NAME, required=False
+    )
+    default_scope_name = forms.CharField(
+        max_length=Usage.MAX_LENGTH_DEFAULT_SCOPE_NAME, required=False
+    )
 
     class Meta:
         model = Release

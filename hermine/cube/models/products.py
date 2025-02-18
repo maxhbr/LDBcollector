@@ -100,10 +100,14 @@ class Exploitation(models.Model):
         Release, on_delete=models.CASCADE, related_name="exploitations"
     )
     scope = models.CharField(
-        max_length=50, blank=True, help_text="Leave blank to apply for any scope"
+        max_length=Usage.MAX_LENGTH_DEFAULT_SCOPE_NAME,
+        blank=True,
+        help_text="Leave blank to apply for any scope",
     )
     project = models.CharField(
-        max_length=750, blank=True, help_text="Leave blank to apply for any project"
+        max_length=Usage.MAX_LENGTH_DEFAULT_PROJECT_NAME,
+        blank=True,
+        help_text="Leave blank to apply for any project",
     )
     exploitation = models.CharField(
         max_length=50,

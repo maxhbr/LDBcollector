@@ -133,22 +133,22 @@ SPDX-License-Identifier: AGPL-3.0-only
           </p>
           <p><b>Review status:</b>
             <span class="tag {{ license|licenseReviewCSS }}">
-              {{ license.get_status_display }}
+              {{ license.policy.get_status_display }}
             </span>
           </p>
           <p><b>FOSS policy status:</b>
             <span class="tag {{ license|licenseAllowedCSS }}">
-              {{ license.get_allowed_display }}
+              {{ license.policy.get_allowed_display }}
             </span>
           </p>
           <p><b>Explanation of FOSS policy:</b></p>
-          {% if license.allowed_explanation %}
+          {% if license.policy.allowed_explanation %}
             <div class="content">
-              {{ license.allowed_explanation|linebreaks }}
+              {{ license.policy.allowed_explanation|linebreaks }}
             </div>
           {% else %}
             <p>
-              <em>No explanation has been given for this OSS policy</em> {% if perms.cube.change_license %}- <a href="{% url "cube:license_update" license.id %}">Edit</a>{% endif %}
+              <em>No explanation has been given for this OSS policy</em> {% if perms.cube.change_licensepolicy %}- <a href="{% url "cube:license_update_policy" license.id %}">Edit</a>{% endif %}
             </p>
           {% endif %}
         </div>
@@ -230,7 +230,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </section>
   {% endif %}
-  {% if license.allowed == "context" or license.context_derogations %}
+  {% if license.policy.allowed == "context" or license.context_derogations %}
     <section class="card">
       <header class="card-header">
         <p class="card-header-title">
@@ -244,35 +244,37 @@ SPDX-License-Identifier: AGPL-3.0-only
       <div class="card-content">
         {% if license.context_derogations %}
           <p>There is {{ license.context_derogations.count }} generic contexts authorized for this license (listed below) and {% if license.derogations.count > 0 %} <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
-          <table>
-            <tr>
-              <th>Linking</th>
-              <th>Modification</th>
-              <th>Exploitation</th>
-              <th>Product category</th>
-              <th>Scope</th>
-              <th>Justification</th>
-              <th>Updated</th>
-              <th>Action</th>
-            </tr>
-            {% for derogation in license.context_derogations %}
+          <div class="table-container">
+            <table>
               <tr>
-                <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
-                <td>{{ derogation.get_modification_display|default:"<em>Any</em>" }}</td>
-                <td>{{ derogation.get_exploitation_display|default:"<em>Any</em>" }}</td>
-                <td>{{ derogation.category|default:"<em>Any</em>" }}</td>
-                <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
-                <td>
-                  {{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}
-                </td>
-                <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
-                <td style="white-space: nowrap">
-                  <a href="{% url "cube:authorizedcontext_update" derogation.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-                  <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
-                </td>
+                <th>Linking</th>
+                <th>Modification</th>
+                <th>Exploitation</th>
+                <th>Product category</th>
+                <th>Scope</th>
+                <th>Justification</th>
+                <th>Updated</th>
+                <th>Action</th>
               </tr>
-            {% endfor %}
-          </table>
+              {% for derogation in license.context_derogations %}
+                <tr>
+                  <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
+                  <td>{{ derogation.get_modification_display|default:"<em>Any</em>" }}</td>
+                  <td>{{ derogation.get_exploitation_display|default:"<em>Any</em>" }}</td>
+                  <td>{{ derogation.category|default:"<em>Any</em>" }}</td>
+                  <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
+                  <td>
+                    {{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}
+                  </td>
+                  <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
+                  <td style="white-space: nowrap">
+                    <a href="{% url "cube:authorizedcontext_update" derogation.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+                    <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+          </div>
         {% else %}
           <p><em>There are no generic contexts of usage authorized for this license.</em>{% if license.derogations.count > 0 %} There are <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
         {% endif %}

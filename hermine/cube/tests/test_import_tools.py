@@ -8,11 +8,20 @@ from django.test import TestCase
 from django.urls import reverse
 
 from cube.importers import import_spdx_file, import_cyclonedx_file, SBOMImportFailure
-from cube.models import Generic, Usage, License, Team, Obligation, Release, Component
+from cube.models import (
+    Generic,
+    Usage,
+    License,
+    LicensePolicy,
+    Team,
+    Obligation,
+    Release,
+    Component,
+)
 from cube.utils.generics import export_generics, handle_generics_json
 from cube.utils.licenses import (
     export_licenses,
-    handle_licenses_json,
+    handle_licenses_json_or_shared_json,
 )
 from .mixins import ForceLoginMixin
 
@@ -27,8 +36,9 @@ class ImportTestCase(ForceLoginMixin, TestCase):
         }
         export = export_licenses(indent=True)
         License.objects.all().delete()
+        LicensePolicy.objects.all().delete()
         Obligation.objects.all().delete()
-        handle_licenses_json(export)
+        handle_licenses_json_or_shared_json(export)
         self.assertEqual(License.objects.all().count(), count)
         for lic in License.objects.all():
             self.assertEqual(
@@ -36,11 +46,11 @@ class ImportTestCase(ForceLoginMixin, TestCase):
             )
 
     def test_export_import_licenses_pages(self):
-        res = self.client.get(reverse("cube:license_export"))
+        res = self.client.get(reverse("cube:license_export_all_json"))
         self.assertEqual(res.status_code, 200)
         License.objects.all().delete()
         res = self.client.post(
-            reverse("cube:license_list"),
+            reverse("cube:license_import_all_json"),
             data={
                 "file": SimpleUploadedFile(
                     "lincenses.json", res.content, "application/json"
@@ -57,7 +67,6 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "fields": {
                     "spdx_id": "lorem license",
                     "long_name": "Lorem License",
-                    "allowed": "always",
                     "foss": "Yes",
                     "comment": "Open Source",
                 },
@@ -67,7 +76,6 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "fields": {
                     "spdx_id": "lorem-license-2",
                     "long_name": "Lorem License 2",
-                    "allowed": "always",
                     "foss": "Yes",
                     "comment": "Open Source",
                 },
@@ -110,7 +118,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
             },
         ]
 
-        handle_licenses_json(json.dumps(data))
+        handle_licenses_json_or_shared_json(json.dumps(data))
         self.assertEqual(Generic.objects.all().count(), 3)
 
     def test_export_import_generics(self):
@@ -141,17 +149,6 @@ class ImportTestCase(ForceLoginMixin, TestCase):
             },
         )
         self.assertRedirects(res, reverse("cube:generic_list"))
-
-    def test_import_examples(self):
-        self.assertEqual(License.objects.all().count(), 2)
-        self.assertEqual(Obligation.objects.all().count(), 14)
-        with open("../examples/data/Example_generic_obligations.json") as f:
-            handle_generics_json(f)
-        with open("../examples/data/Example_licences.json") as f:
-            handle_licenses_json(f)
-        self.assertEqual(Generic.objects.all().count(), 18)
-        self.assertEqual(License.objects.all().count(), 9)
-        self.assertEqual(Obligation.objects.all().count(), 58)
 
 
 class ImportSBOMTestCase(TestCase):

@@ -60,11 +60,20 @@ component_router.register(
     r"versions", api_views.VersionViewSet, basename="component-versions"
 )
 
+policy_routes = [
+    path(
+        "licenses/<str:license__spdx_id>/policy/",
+        api_views.LicensePolicyView.as_view(),
+        name="licenses-policy",
+    ),
+]
+
 urlpatterns = router.urls
 urlpatterns += [
     path("", include(obligation_router.urls)),
     path("", include(product_router.urls)),
     path("", include(release_router.urls)),
     path("", include(component_router.urls)),
+    path("", include(policy_routes)),
     path("token-auth/", authviews.obtain_auth_token),
 ]

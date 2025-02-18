@@ -9,6 +9,7 @@ from cube.models import (
     LicenseCuration,
     LicenseChoice,
     License,
+    LicensePolicy,
     Derogation,
     Category,
     Product,
@@ -242,9 +243,9 @@ class LicensePolicyTestCase(TestCase):
         self.assertEqual(lic.pop().spdx_id, "LicenseRef-FakeLicense-Permissive")
 
     def test_never(self):
-        License.objects.filter(spdx_id="LicenseRef-FakeLicense-Permissive").update(
-            allowed=License.ALLOWED_NEVER
-        )
+        LicensePolicy.objects.filter(
+            license__spdx_id="LicenseRef-FakeLicense-Permissive"
+        ).update(allowed=LicensePolicy.ALLOWED_NEVER)
         never, context, unknown, lic, derogations = check_licenses_against_policy(
             self.release
         ).values()
@@ -256,9 +257,9 @@ class LicensePolicyTestCase(TestCase):
         self.assertEqual(lic.pop().spdx_id, "LicenseRef-FakeLicense-Permissive")
 
     def test_allowed(self):
-        License.objects.filter(spdx_id="LicenseRef-FakeLicense-Permissive").update(
-            allowed=License.ALLOWED_ALWAYS
-        )
+        LicensePolicy.objects.filter(
+            license__spdx_id="LicenseRef-FakeLicense-Permissive"
+        ).update(allowed=LicensePolicy.ALLOWED_ALWAYS)
         never, context, unknown, lic, derogations = check_licenses_against_policy(
             self.release
         ).values()
@@ -318,9 +319,9 @@ class LicensePolicyTestCase(TestCase):
             component=self.release.usage_set.last().version.component,
             license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
         )
-        License.objects.filter(spdx_id="LicenseRef-FakeLicense-Permissive").update(
-            allowed=License.ALLOWED_NEVER
-        )
+        LicensePolicy.objects.filter(
+            license__spdx_id="LicenseRef-FakeLicense-Permissive"
+        ).update(allowed=LicensePolicy.ALLOWED_NEVER)
         never, context, unknown, lic, derogations = check_licenses_against_policy(
             self.release
         ).values()

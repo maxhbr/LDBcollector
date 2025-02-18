@@ -16,32 +16,47 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block actions %}
-  {% if perms.cube.import_generic %}
-    <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:generic_list' %}" method="post">
-      {% csrf_token %}
-      <div class="field has-addons">
-        <p class="control">
-          <input class="input" name="file" type="file" placeholder="Your email">
-        </p>
-        <p class="control">
-          <button class="button" value="Import JSON" type="submit">
-            <span class="icon"><i class="fas fa-file-import"></i></span>
-            <span>Import</span></button>
-        </p>
+  <a class="button" href="{% url "cube:generic_create" %}">
+    <span class="icon"><i class="fas fa-plus"></i></span>
+    <span>Create a new compliance action</span>
+  </a>
+  {% if perms.cube.import_generic or permis.cube.export_generic %}
+    <div class="dropdown is-hoverable is-right">
+      <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+          <span>Import/export</span>
+          <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
       </div>
-    </form>
-    <a class="button" href="{% url "cube:generic_create" %}">
-      <span class="icon"><i class="fas fa-plus"></i></span>
-      <span>Create a new compliance action</span>
-    </a>
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          {% if perms.cube.export_generic %}
+            <a href="{% url 'cube:generic_export' %}" class="dropdown-item">
+              <span class="icon is-small">
+                <i class="fas fa-file-export"></i>
+              </span>
+              <span>Export all compliance actions as a single JSON file (for importing to another instance)</span>
+            </a>
+          {% endif %}
+          {% if perms.cube.import_generic %}
+            <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:generic_list' %}" method="post">
+              {% csrf_token %}
+              <input class="is-hidden" name="file" type="file" hidden="hidden" accept=".json" onchange="document.getElementById('import_generics').submit();">
+            </form>
+            <a href="#" class="dropdown-item" onclick="document.getElementById('import_generics').elements['file'].click();">
+              <span class="icon is-small">
+                <i class="fas fa-file-import"></i>
+              </span>
+              <span>Import all compliance actions from a single JSON file (overwrite all compliance actions)</span>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
   {% endif %}
-  {% if perms.cube.export_generic %}
-    <a href="{% url 'cube:generic_export' %}" class="button">
-      <span class="icon"><i class="fas fa-file-export"></i></span>
-      <span>Export as JSON</span>
-    </a>
-  {% endif %}
-{% endblock %}<>
+{% endblock %}
 
 {% block herozone %}
   <h1 class="title">

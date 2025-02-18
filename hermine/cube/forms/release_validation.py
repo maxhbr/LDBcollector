@@ -175,14 +175,19 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
             )
 
     def save(self, **kwargs):
-        if self.cleaned_data["product_release"] == self.PRODUCT:
-            self.instance.product = self.usage.release.product
-        elif self.cleaned_data["product_release"] == self.RELEASE:
-            self.instance.release = self.usage.release
-        elif self.cleaned_data["product_release"] != self.ANY:
-            self.instance.category = Category.objects.get(
-                pk=self.cleaned_data["product_release"]
-            )
+        if (
+            "product_release" in self.cleaned_data
+            and self.cleaned_data["product_release"]
+        ):
+            if self.cleaned_data["product_release"] == self.PRODUCT:
+                self.instance.product = self.usage.release.product
+            elif self.cleaned_data["product_release"] == self.RELEASE:
+                self.instance.release = self.usage.release
+            elif self.cleaned_data["product_release"] != self.ANY:
+                self.instance.category = Category.objects.get(
+                    pk=self.cleaned_data["product_release"]
+                )
+
         if self.cleaned_data["exploitation_choice"] == self.USAGE:
             self.instance.exploitation = self.usage.exploitation
         if self.cleaned_data["scope_choice"] == self.USAGE:
@@ -235,7 +240,10 @@ class CreateDerogationForm(BaseUsageConditionForm):
                 (self.ANY, "Any modification"),
             )
 
-        del self.fields["product_release"]
+        self.fields["product_release"].choices = (
+            (self.RELEASE, f"Only {self.usage.release}"),
+            (self.PRODUCT, f"All {self.usage.release.product} releases"),
+        )
 
     def save(self, **kwargs):
         if self.cleaned_data["linking_choice"] == self.USAGE:
