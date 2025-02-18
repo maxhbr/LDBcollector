@@ -5,7 +5,7 @@ from threading import Lock
 
 
 class Singleton(type):
-    _instances = {}
+    _instances: dict[type, type] = {}
     _lock: Lock = Lock()
 
     def __call__(cls, *args, **kwargs):
@@ -26,5 +26,5 @@ class LicenseMapSingleton(metaclass=Singleton):
             raise e.with_traceback(sys.exc_info()[2])
 
     @property
-    def merged_data(self):
+    def merged_data(self) -> dict:
         return self._merged_data
