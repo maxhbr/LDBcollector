@@ -5,7 +5,7 @@
 
 from django import template
 
-from cube.models import License
+from cube.models import License, LicensePolicy
 
 register = template.Library()
 
@@ -21,11 +21,11 @@ def licenseAllowedCSS(license: License):
 
     """
 
-    if license.allowed == License.ALLOWED_ALWAYS:
+    if license.policy.allowed == LicensePolicy.ALLOWED_ALWAYS:
         return "is-success"
-    elif license.allowed == License.ALLOWED_CONTEXT:
+    elif license.policy.allowed == LicensePolicy.ALLOWED_CONTEXT:
         return "is-warning"
-    elif license.allowed == License.ALLOWED_NEVER:
+    elif license.policy.allowed == LicensePolicy.ALLOWED_NEVER:
         return "is-danger"
     else:
         return "is-dark"
@@ -41,11 +41,11 @@ def licenseReviewCSS(license: License):
     :rtype: string
 
     """
-    if license.status == License.STATUS_CHECKED:
+    if license.policy.status == LicensePolicy.STATUS_CHECKED:
         return "is-success"
-    if license.status == License.STATUS_PENDING:
+    if license.policy.status == LicensePolicy.STATUS_PENDING:
         return "is-warning"
-    if license.status == License.STATUS_TO_DISCUSS:
+    if license.policy.status == LicensePolicy.STATUS_TO_DISCUSS:
         return "is-danger"
     return "is-dark"
 

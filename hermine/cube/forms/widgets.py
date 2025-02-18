@@ -31,8 +31,10 @@ class AutocompleteMixin(AdminAutocompleteMixin):
 
 
 class AutocompleteWidget(AutocompleteMixin, forms.Select):
+    template_name = "cube/forms/widgets/autocomplete.html"
     pass
 
 
 class AutocompleteMultipleWidget(AutocompleteMixin, forms.SelectMultiple):
+    template_name = "cube/forms/widgets/autocomplete.html"
     pass

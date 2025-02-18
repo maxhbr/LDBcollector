@@ -4,7 +4,7 @@
 
 from rest_framework import serializers
 
-from cube.models import License, Obligation, Generic, Team
+from cube.models import License, LicensePolicy, Obligation, Generic, Team
 
 
 class GenericNameField(serializers.CharField):
@@ -81,14 +81,8 @@ class LicenseSerializer(serializers.ModelSerializer):
             "id",
             "spdx_id",
             "long_name",
-            "license_version",
-            "radical",
-            "autoupgrade",
             "steward",
-            "inspiration_spdx",
             "copyleft",
-            "allowed",
-            "allowed_explanation",
             "url",
             "osi_approved",
             "fsf_approved",
@@ -123,6 +117,20 @@ class LicenseSerializer(serializers.ModelSerializer):
             setattr(instance, field, value)
         instance.save()
         return instance
+
+
+class LicensePolicySerializer(serializers.ModelSerializer):
+    license = serializers.SlugRelatedField(slug_field="spdx_id", read_only=True)
+
+    class Meta:
+        model = LicensePolicy
+        fields = [
+            "license",
+            "allowed",
+            "allowed_explanation",
+            "categories",
+            "status",
+        ]
 
 
 class GenericSerializer(serializers.ModelSerializer):

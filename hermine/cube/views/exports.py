@@ -14,7 +14,10 @@ from django.views.generic.detail import SingleObjectMixin
 from cube.models import License, LicenseCuration
 from cube.serializers import LicenseSerializer
 from cube.utils.generics import export_generics as export_generics_json
-from cube.utils.licenses import export_licenses as export_licenses_json
+from cube.utils.licenses import (
+    export_licenses as export_licenses_json,
+    export_shared_archive,
+)
 from cube.utils.ort import export_curations
 
 
@@ -36,7 +39,7 @@ class BaseExportFileView(View):
         return response
 
 
-class LicenseExportView(
+class LicenseExportAllAsSingleFileView(
     LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
 ):
     permission_required = "cube.export_license"
@@ -44,6 +47,17 @@ class LicenseExportView(
 
     def get_data(self):
         return export_licenses_json(indent=True)
+
+
+class LicenseExportAllAsArchiveView(
+    LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
+):
+    permission_required = "cube.export_license"
+    filename = "hermine-data.gzip"
+    content_type = "gzip"
+
+    def get_data(self):
+        return export_shared_archive()
 
 
 class LicenseSingleExportView(

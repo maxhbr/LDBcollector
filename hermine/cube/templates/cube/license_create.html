@@ -22,31 +22,5 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
-  <form method="post">
-    {% csrf_token %}
-    {{ form.non_field_errors }}
-    <div class="field is-horizontal">
-      <div class="field-label"></div>
-      <div class="field-body">
-        <h2>License data</h2>
-      </div>
-    </div>
-    {% for field in shared_fields %}
-      <div{% with classes=field.css_classes %} class="field is-horizontal bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
-        {% include "django/forms/field.html" %}
-      </div>
-    {% endfor %}
-    <div class="field is-horizontal mt-6">
-      <div class="field-label"></div>
-      <div class="field-body">
-        <h2>Internal policy</h2>
-      </div>
-    </div>
-    {% for field in policy_fields %}
-      <div{% with classes=field.css_classes %} class="field is-horizontal bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
-        {% include "django/forms/field.html" %}
-      </div>
-    {% endfor %}
-    {% include "cube/includes/bulma_submit.html" %}
-  </form>
+  {% include "cube/includes/default_form.html" %}
 {% endblock %}

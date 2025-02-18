@@ -77,38 +77,40 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   <h2 class="title is-2">Releases for this product</h2>
   {% if perms.cube.view_release %}
-    <table class="table is-striped is-hoverable is-fullwidth">
-      <thead>
-        <tr>
-          <th>Product</th>
-          <th>Release</th>
-          <th>Status</th>
-          <th>Dependencies</th>
-          <th>Validation Steps</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for release in product.releases.all %}
+    <div class="table-container">
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
           <tr>
-            <td>{{product.name}}</td>
-            <td><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a>
-            </td>
-            <td>{{release.ship_status}}</td>
-            <td>{{release.usage_set.all|length}}</td>
-            <td>
-              <progress class="progress is-primary" value="{{ release.valid_step }}" max="5">15%
-              </progress>
-            </td>
-            <td>
-              <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
-              <a href="{%  url 'cube:release_import' release.id %}"><i class="fas fa-upload"></i></a> |
-              <a href="{% url 'cube:release_update' release.id %}?from={{ request.path|urlencode }}"><i class="far fa-edit"></i></a>
-            </td>
+            <th>Product</th>
+            <th>Release</th>
+            <th>Status</th>
+            <th>Dependencies</th>
+            <th>Validation Steps</th>
+            <th>Actions</th>
           </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {% for release in product.releases.all %}
+            <tr>
+              <td>{{product.name}}</td>
+              <td><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a>
+              </td>
+              <td>{{release.ship_status}}</td>
+              <td>{{release.usage_set.all|length}}</td>
+              <td>
+                <progress class="progress is-primary" value="{{ release.valid_step }}" max="5">15%
+                </progress>
+              </td>
+              <td>
+                <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
+                <a href="{%  url 'cube:release_import' release.id %}"><i class="fas fa-upload"></i></a> |
+                <a href="{% url 'cube:release_update' release.id %}?from={{ request.path|urlencode }}"><i class="far fa-edit"></i></a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   {% else %}
     You don't have the permission to view releases.
   {% endif %}

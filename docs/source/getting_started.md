@@ -1,5 +1,5 @@
-<!---  
-SPDX-FileCopyrightText: Hermine team <hermine@inno3.fr> 
+<!---
+SPDX-FileCopyrightText: Hermine team <hermine@inno3.fr>
 SPDX-License-Identifier: CC-BY-4.0
 -->
 
@@ -11,11 +11,12 @@ SPDX-License-Identifier: CC-BY-4.0
 - In Hermine a ***product*** is a piece of software that you develop internally.
 - ***Procucts*** can be grouped into differents ***categories***.
 - A ***release*** is a version of a product.
-- A ***component*** is a third party FOSS component used by you 
+- A ***component*** is a third party FOSS component used by you
 - A ***version*** is a version of a component
-- A ***scope*** is a scenario in which a 3rd party dependency is used. Typically, in a nodeJS project there is two scopes: `dependencies` and `devDependencies`. 
+- A ***scope*** is a scenario in which a 3rd party dependency is used. Typically, in a nodeJS project there is two scopes: `dependencies` and `devDependencies`.
 The exact meaning depends on each package manager (see for instance [Maven's documentation for Dependency Scopes](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope))
 
+Definitions of various terms related to compliance have been collected in [a glossary (ODS format)](_static/Hermine_glossary.ods).
 
 ## Main questions Hermine helps you answer
 
@@ -31,7 +32,7 @@ Hermine helps you automatically validate the inclusion of an Open Source compone
 :align: center
 ```
 
-### What actions should I perform to comply with the licenses of the included Open Source component?  
+### What actions should I perform to comply with the licenses of the included Open Source component?
 
  Hermine helps you identify Which obligations you should comply with, once you have included an Open Source component in your software product.
 
@@ -44,23 +45,23 @@ Hermine helps you automatically validate the inclusion of an Open Source compone
 
 ### What are the Open Source components used across my different products?
 
-Hermine allows you to identify the different products including a given version of an Open Source component, 
+Hermine allows you to identify the different products including a given version of an Open Source component,
 to list the most frequently used Open Source component accross all your products, etc.
 
 ## Manual workflow
 
-### Define a licence policy by reviewing licences 
+### Define a licence policy by reviewing licences
 
 You must first create a licence policy by [analysing the Open Source licences](defining_a_FOSS_policy.md).
 If you want to test the application, you can import the shared data provided by the Hermine project (analysed licences and compliance actions) :
-- Download the [Compliance actions JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Example_generic_obligations.json) and import it from the <span class ="guilabel">Generic Obligations</span> page. 
-- Download the [License JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Exemple_licences.json) and import it from the <span class ="guilabel">Licenses</span> page. 
+- Download the [Compliance actions JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Example_generic_obligations.json) and import it from the <span class ="guilabel">Generic Obligations</span> page.
+- Download the [License JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Exemple_licences.json) and import it from the <span class ="guilabel">Licenses</span> page.
 
 
 ### Create product and a release
 
-- From the Product list page (<span class ="guilabel">Your products --> All products</span>), create a new product by clicking "Create a new product"  
-- Then from the page of the product you've just created, create a release for this product by clicking "Create a release for this product" 
+- From the Product list page (<span class ="guilabel">Your products --> All products</span>), create a new product by clicking "Create a new product"
+- Then from the page of the product you've just created, create a release for this product by clicking "Create a release for this product"
 
 ### Express your exploitation choices
 
@@ -80,7 +81,7 @@ http://127.0.0.1:8080/release/1/exploitation
 
 There are currently two supported formats to import raw SBOMS: [OSS Review Toolkit]'s native format and SPDX.
 
-#### OSS Review Toolkit's EvaluatedModel 
+#### OSS Review Toolkit's EvaluatedModel
 
 - To generate an `EvaluatedModel` report with ORT from the Analyzer results:
 
@@ -90,7 +91,7 @@ ort analyze -i /path/to/sourcecode -o /folder/for/analyzer/ -f JSON
 then
 
 ```bash
-ort report -f EvaluatedModel -i /folder/for/analyzer/analyzer-result.json -o /folder/for/reporter  
+ort report -f EvaluatedModel -i /folder/for/analyzer/analyzer-result.json -o /folder/for/reporter
 ```
 #### SPDX
 
@@ -137,13 +138,8 @@ You can add derogations in order to handle specific cases.
 
 ### Read your validated SBOM
 
-Once you have passed all the validation steps, you can read the resulting SBOM in the "Bill of Materials" tab. You can tweak each usage, for instance to change the exploitation on individual components. 
+Once you have passed all the validation steps, you can read the resulting SBOM in the "Bill of Materials" tab. You can tweak each usage, for instance to change the exploitation on individual components.
 
 ### Read your obligations
 
 The "Obligations" tab lists the resulting obligations.
-
-
-
-
-

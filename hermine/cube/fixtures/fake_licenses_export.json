@@ -4,14 +4,8 @@
         "fields": {
             "spdx_id": "LicenseRef-fakeLicense-Allowed-1.0",
             "long_name": "Fake allowed License-1.0",
-            "license_version": "1.0",
-            "radical": "fakeLicense-allowed",
-            "autoupgrade": null,
             "steward": "",
-            "inspiration_spdx": "",
             "copyleft": "None",
-            "allowed": "always",
-            "allowed_explanation": "",
             "url": "",
             "osi_approved": null,
             "fsf_approved": null,
@@ -30,14 +24,8 @@
         "fields": {
             "spdx_id": "LicenseRef-fakeLicense-ContextAllowed-1.0",
             "long_name": "Fake Context Allowed License-1.0",
-            "license_version": "Fake Context Allowed License",
-            "radical": "Fake Context Allowed License-1.0",
-            "autoupgrade": null,
             "steward": "",
-            "inspiration_spdx": "",
             "copyleft": "Weak",
-            "allowed": "context",
-            "allowed_explanation": "Only allowed for dynamically linked components",
             "url": "",
             "osi_approved": null,
             "fsf_approved": null,
@@ -49,6 +37,22 @@
             "law_choice": "",
             "comment": "",
             "verbatim": ""
+        }
+    },
+    {
+        "model": "cube.licensepolicy",
+        "fields": {
+            "license": ["LicenseRef-fakeLicense-Allowed-1.0"],
+            "allowed": "always",
+            "allowed_explanation": ""
+        }
+    },
+        {
+        "model": "cube.licensepolicy",
+        "fields": {
+            "license": ["LicenseRef-fakeLicense-ContextAllowed-1.0"],
+            "allowed": "context",
+            "allowed_explanation": "Only allowed for dynamically linked components"
         }
     },
     {

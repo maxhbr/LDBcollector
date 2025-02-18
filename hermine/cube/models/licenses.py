@@ -8,7 +8,10 @@ from django.urls import reverse_lazy
 from django.utils.functional import cached_property
 
 from cube.models import Usage
-from cube.utils.reference import license_reference_diff, generic_reference_diff
+from cube.utils.reference import (
+    license_reference_diff,
+    generic_reference_diff,
+)
 from cube.utils.validators import validate_spdx_id
 
 
@@ -20,8 +23,6 @@ class LicenseManager(models.Manager):
 class License(models.Model):
     """
     A license identified by its SPDX id.
-
-
     """
 
     COPYLEFT_NONE = "None"
@@ -36,17 +37,7 @@ class License(models.Model):
         (COPYLEFT_NETWORK, "Strong network copyleft"),
         (COPYLEFT_NETWORK_WEAK, "Weak network copyleft"),
     ]
-    ALLOWED_ALWAYS = "always"
-    ALLOWED_NEVER = "never"
-    ALLOWED_CONTEXT = "context"
-    ALLOWED_NOTFOSS = "notfoss"
-    ALLOWED_CHOICES = [
-        (ALLOWED_ALWAYS, "Always allowed"),
-        (ALLOWED_NEVER, "Never allowed"),
-        (ALLOWED_CONTEXT, "Allowed depending on context"),
-        (ALLOWED_NOTFOSS, "Out of FOSS Policy"),
-        ("", "Not reviewed yet"),
-    ]
+
     FOSS_YES = "Yes"
     FOSS_YES_AUTO = "Yes-Auto"
     FOSS_NO = "No"
@@ -57,16 +48,7 @@ class License(models.Model):
         (FOSS_NO, "We consider it is NOT FOSS"),
         (FOSS_NO_AUTO, "NOT FOSS - deduced"),
     ]
-    STATUS_CHECKED = "Checked"
-    STATUS_PENDING = "Pending"
-    STATUS_TO_DISCUSS = "To_Discuss"
-    STATUS_TO_CHECK = "To_Check"
-    STATUS_CHOICES = [
-        (STATUS_CHECKED, "Checked"),
-        (STATUS_PENDING, "Pending"),
-        (STATUS_TO_DISCUSS, "To discuss"),
-        (STATUS_TO_CHECK, "To check"),
-    ]
+
     LIABILITY_FULL = "Full"
     LIABILITY_PARTIAL = "Partial"
     LIABILITY_ABSENT = "Absent"
@@ -88,38 +70,9 @@ class License(models.Model):
     spdx_id = models.CharField(
         "SPDX Identifier", max_length=200, unique=True, validators=[validate_spdx_id]
     )
-    status = models.CharField(
-        "Review status",
-        max_length=20,
-        choices=STATUS_CHOICES,
-        default="To check",
-    )
     long_name = models.CharField("Name", max_length=200, blank=True)
-    categories = models.CharField(max_length=200, blank=True)
-    license_version = models.CharField(max_length=200, blank=True)
-    radical = models.CharField(max_length=200, blank=True)
-    autoupgrade = models.BooleanField(null=True)
     steward = models.CharField(max_length=200, blank=True)
-    inspiration_spdx = models.CharField(
-        max_length=200,
-        blank=True,
-        help_text="SPDX Identifier of another license which inspired this one",
-    )
-    inspiration = models.ForeignKey(
-        "self",
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-        help_text="A Licence which inspired this one",
-    )
-
     copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
-    allowed = models.CharField(
-        "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True
-    )
-    allowed_explanation = models.TextField(
-        "OSS Policy explanation", max_length=1500, blank=True
-    )
     url = models.URLField(max_length=200, blank=True)
     osi_approved = models.BooleanField(null=True, verbose_name="OSI Approved")
     fsf_approved = models.BooleanField(null=True, verbose_name="FSF Approved")
@@ -196,6 +149,69 @@ class License(models.Model):
             ("export_license", "Can export licenses"),
             ("import_license", "Can import licenses"),
         )
+
+
+class LicensePolicyManager(models.Manager):
+    def get_by_natural_key(self, license_spdx_id):
+        return self.get(license__spdx_id=license_spdx_id)
+
+
+class LicensePolicy(models.Model):
+    """
+    A policy associated with a license.
+    """
+
+    STATUS_CHECKED = "Checked"
+    STATUS_PENDING = "Pending"
+    STATUS_TO_DISCUSS = "To_Discuss"
+    STATUS_TO_CHECK = "To_Check"
+    STATUS_CHOICES = [
+        (STATUS_CHECKED, "Checked"),
+        (STATUS_PENDING, "Pending"),
+        (STATUS_TO_DISCUSS, "To discuss"),
+        (STATUS_TO_CHECK, "To check"),
+    ]
+
+    ALLOWED_ALWAYS = "always"
+    ALLOWED_NEVER = "never"
+    ALLOWED_CONTEXT = "context"
+    ALLOWED_NOTFOSS = "notfoss"
+    ALLOWED_CHOICES = [
+        (ALLOWED_ALWAYS, "Always allowed"),
+        (ALLOWED_NEVER, "Never allowed"),
+        (ALLOWED_CONTEXT, "Allowed depending on context"),
+        (ALLOWED_NOTFOSS, "Out of FOSS Policy"),
+        ("", "Not reviewed yet"),
+    ]
+
+    objects = LicensePolicyManager()
+
+    license = models.OneToOneField(
+        License, on_delete=models.CASCADE, related_name="policy"
+    )
+    status = models.CharField(
+        "Review status",
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default="To check",
+    )
+    categories = models.CharField(max_length=200, blank=True)
+    allowed = models.CharField(
+        "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True
+    )
+    allowed_explanation = models.TextField(
+        "OSS Policy explanation", max_length=1500, blank=True
+    )
+
+    def __str__(self):
+        return f"Policy for {self.license.spdx_id}"
+
+    def natural_key(self):
+        return self.license.natural_key()
+
+    class Meta:
+        verbose_name = "License policy"
+        verbose_name_plural = "License policies"
 
 
 class TeamManager(models.Manager):

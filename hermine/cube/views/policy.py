@@ -3,7 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.urls import reverse, reverse_lazy
-from django.views.generic import CreateView, UpdateView, ListView
+from django.views.generic import CreateView, UpdateView, ListView, DeleteView
 
 from cube.forms.policy import (
     LicenseChoiceCreateForm,
@@ -63,6 +63,22 @@ class DerogationListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
         product=None,
         release=None,
     )
+
+
+class DerogationDeleteView(
+    LoginRequiredMixin, PermissionRequiredMixin, QuerySuccessUrlMixin, DeleteView
+):
+    permission_required = "cube.delete_derogation"
+    model = Derogation
+    context_object_name = "derogation"
+    success_url = reverse_lazy("cube:derogation_list")
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["is_context_auth"] = bool(
+            not self.object.product and not self.object.release
+        )
+        return context
 
 
 class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):

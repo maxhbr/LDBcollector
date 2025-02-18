@@ -32,10 +32,10 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
 
-  {% if license.allowed_explanation %}
+  {% if license.policy.allowed_explanation %}
     <p>The usage of the license <b>{{ license }}</b> is restricted by the following policy: </p>
     <div class="content">
-      {{ license.allowed_explanation|linebreaks }}
+      {{ license.policy.allowed_explanation|linebreaks }}
     </div>
     <p>You can add a context that reflects this policy.</p>
   {% else %}

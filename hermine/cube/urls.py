@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#  SPDX-FileCopyrightText: 2024 Jules Jouvin <gitlab.com/julesJVN>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.urls import path, include
@@ -10,6 +11,7 @@ app_name = "cube"
 urlpatterns = [
     path("", views.DashboardView.as_view(), name="dashboard"),
     path("about/", views.AboutView.as_view(), name="about"),
+    path("profile/", views.ProfileView.as_view(), name="profile"),
     # Product views
     path("products/", views.ProductListView.as_view(), name="product_list"),
     path(
@@ -52,6 +54,11 @@ urlpatterns = [
         name="component_populars",
     ),
     path(
+        "components/create/",
+        views.ComponentCreateView.as_view(),
+        name="component_create",
+    ),
+    path(
         "components/<int:pk>/",
         views.ComponentDetailView.as_view(),
         name="component_detail",
@@ -60,6 +67,16 @@ urlpatterns = [
         "components/<int:pk>/edit/",
         views.ComponentUpdateView.as_view(),
         name="component_update",
+    ),
+    path(
+        "components/<int:pk>/create_version/",
+        views.VersionCreateView.as_view(),
+        name="version_create",
+    ),
+    path(
+        "components/<int:component_id>/versions/<int:pk>/",
+        views.VersionUpdateView.as_view(),
+        name="version_update",
     ),
     path(
         "components/<int:component_id>/update_funding/",
@@ -77,9 +94,14 @@ urlpatterns = [
         name="licensecuration_create",
     ),
     path(
-        "curations/edit/<int:pk>/",
+        "curations/<int:pk>/edit/",
         views.LicenseCurationUpdateView.as_view(),
         name="licensecuration_update",
+    ),
+    path(
+        "curations/<int:pk>/delete/",
+        views.LicenseCurationDeleteView.as_view(),
+        name="licensecuration_delete",
     ),
     path(
         "curations/export/",
@@ -115,7 +137,21 @@ urlpatterns = [
         views.LicenseDiffUpdateView.as_view(),
         name="license_diff_update",
     ),
-    path("licenses/export/", views.LicenseExportView.as_view(), name="license_export"),
+    path(
+        "licenses/export/single-file/",
+        views.LicenseExportAllAsSingleFileView.as_view(),
+        name="license_export_all_json",
+    ),
+    path(
+        "licenses/export/archive/",
+        views.LicenseExportAllAsArchiveView.as_view(),
+        name="license_export_all_archive",
+    ),
+    path(
+        "licenses/import/single-file/",
+        views.LicenseImportAllAsSingleFileView.as_view(),
+        name="license_import_all_json",
+    ),
     path(
         "licenses/<int:license_id>/export/",
         views.LicenseSingleExportView.as_view(),
@@ -190,6 +226,11 @@ urlpatterns = [
         "derogations/",
         views.DerogationListView.as_view(),
         name="derogation_list",
+    ),
+    path(
+        "derogations/<int:pk>/delete/",
+        views.DerogationDeleteView.as_view(),
+        name="derogation_delete",
     ),
     path(
         "licensechoices/",
