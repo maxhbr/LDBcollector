@@ -55,7 +55,7 @@ venv
 
 # --- TYPESCRIPT ---
 /typescript/node_modules
-/typescript/*/dist
+/typescript/dist
 /typescript/.vscode
 /typescript/.idea/
 /typescript/_support/
