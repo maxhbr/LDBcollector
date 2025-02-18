@@ -18,14 +18,14 @@ from rest_framework.response import Response
 from cube.importers import (
     import_spdx_file,
     import_cyclonedx_file,
-    import_ort_evaluated_model_json_file,
+    import_ort_evaluated_model_json_file,add_dependency
 )
 from cube.models import Product, Release, Exploitation
 from cube.serializers import (
     ReleaseSerializer,
     UploadSPDXSerializer,
     UploadCycloneDXSerializer,
-    UploadORTSerializer,
+    UploadORTSerializer,DependencySerializer
 )
 from cube.serializers.products import (
     ProductSerializer,
@@ -454,5 +454,33 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             release.id,
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
+        )
+        return Response()
+
+
+
+class CreateSingleDependencyViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [IsAuthenticated]
+    serializer_class = DependencySerializer
+    parser_classes = (MultiPartParser,)
+
+    @swagger_auto_schema(responses={201: "Created"})
+    def create(self, request, *args, **kwargs):
+        """Upload an ORT Evaluated model file to Hermine."""
+        self.request.user.has_perm("cube.change_release")
+        return super().create(request, *args, **kwargs)
+
+    def perform_create(self, serializer):
+        release = serializer.validated_data["release"]
+        purl_type = serializer.validated_data["purl_type"]
+        name = serializer.validated_data["name"]
+        add_dependency(release.id,purl_type,name, version_number = serializer.validated_data.get("version_number","Current")
+            ,concluded_license = serializer.validated_data.get("corrected_license","")
+            ,declared_license=serializer.validated_data.get("declared_license_expr",""),
+            purl=serializer.validated_data.get("purl","")
+            , scope=serializer.validated_data.get("default_scope_name", ""),
+            linking=serializer.validated_data.get("linking", ""),
+            project=serializer.validated_data.get("default_project_name", ""),
+            component_defaults= serializer.validated_data.get("component_defaults", {})
         )
         return Response()

@@ -21,6 +21,7 @@ router.register(
     r"upload_cyclonedx", api_views.UploadCYCLONEDXViewSet, basename="upload_cyclonedx"
 )
 router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
+router.register(r"Single_dependency", api_views.CreateSingleDependencyViewSet, basename="Single_dependency")
 router.register(r"releases", api_views.ReleaseViewSet, basename="releases")
 
 # Compliance actions
