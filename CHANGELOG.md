@@ -1,6 +1,6 @@
 # Changelog
 
-## To be releases :
+## O.4.0:
 
 FEATURES :
 * Add filters on release SBOM table [12011ee1](https://gitlab.com/hermine-project/hermine/-/commit/12011ee1beecae5cba63f2bbf2eb4b623de5ef38) [97083969](https://gitlab.com/hermine-project/hermine/-/commit/97083969)
@@ -8,7 +8,7 @@ FEATURES :
 * Add search in curations page [8510e823](https://gitlab.com/hermine-project/hermine/-/commit/8510e823)
 * Derogation can be created from release validation page [c04bdbd8](https://gitlab.com/hermine-project/hermine/-/commit/c04bdbd8)
 * Add horizontal scroll on tables [e57a3837](https://gitlab.com/hermine-project/hermine/-/commit/e57a3837)
-* Add new links to objects detail page in lists [4c60a007](https://gitlab.com/hermine-project/hermine/-/commit/4c60a007) 
+* Add new links to objects detail page in lists [4c60a007](https://gitlab.com/hermine-project/hermine/-/commit/4c60a007)
 * Allow authentification through `HTTP-X-Remote-User` header [c741c3de](https://gitlab.com/hermine-project/hermine/-/commit/c741c3de)
 * Add missing native forms and remove links to admin panel [7478c0d8](https://gitlab.com/hermine-project/hermine/-/commit/7478c0d8)
 * Display licenses choices explanations in release choices list [1c62b474](https://gitlab.com/hermine-project/hermine/-/commit/1c62b474)
@@ -24,14 +24,14 @@ BUGFIXES:
 * Exploitation choices did not transfer to usages when scope or project filters were blank [25d611b7](https://gitlab.com/hermine-project/hermine/-/commit/25d611b7)
 
 BREAKING:
-* Separate `LicensePolicy` model from `License` model [440cd374](https://gitlab.com/hermine-project/hermine/-/commit/440cd374) [7b6dbafd](https://gitlab.com/hermine-project/hermine/-/commit/7b6dbafd) 
+* Separate `LicensePolicy` model from `License` model [440cd374](https://gitlab.com/hermine-project/hermine/-/commit/440cd374) [7b6dbafd](https://gitlab.com/hermine-project/hermine/-/commit/7b6dbafd)
 * Remove unused fields (License version, radical, autoupgrade and inspiration) [662a6a4e](https://gitlab.com/hermine-project/hermine/-/commit/662a6a4e31d5a1faedf77db5861f0dcebd5e1551)
 * Static files are served by default by [Whitenoise](https://whitenoise.readthedocs.io/) [7698ab33](https://gitlab.com/hermine-project/hermine/-/commit/7698ab33) [44976899](https://gitlab.com/hermine-project/hermine/-/commit/44976899) [0a257499](https://gitlab.com/hermine-project/hermine/-/commit/0a257499)
 * Static files in are collected at build time in Dockerfile [a7029ee8](https://gitlab.com/hermine-project/hermine/-/commit/a7029ee8)
 * `localhost` docker compose profile is removed. The default profile is now the one to use
   locally or behind a reverse proxy. In this default profile, there is no more Caddy image : the Django
   image now directly binds to $PORT. In order to prevent any conflict when upgrading, you should
-  run `docker compose up -d --remove-orphans` . 
+  run `docker compose up -d --remove-orphans` .
 
 
 ## 0.3.5
@@ -81,14 +81,14 @@ DOCUMENTATION:
 * Update page for REST API ([12ab064](https://gitlab.com/hermine-project/hermine/commit/12ab064))
 
 
-CI: 
+CI:
 * Use to be continuous Docker template ([f29e26a](https://gitlab.com/hermine-project/hermine/commit/f29e26a))
 * Use TBC standard stages ([be246a0](https://gitlab.com/hermine-project/hermine/commit/be246a0))
 * Fix Trivy's Docker image ([a0c54dd](https://gitlab.com/hermine-project/hermine/commit/a0c54dd))
 * Temporary removal to fix the blocking false positives ([7974279](https://gitlab.com/hermine-project/hermine/commit/7974279))
 * Delete the apt-get lists after installing ([815efe7](https://gitlab.com/hermine-project/hermine/commit/815efe7))
 * Update poetry version to allow package-mode option ([b31489d](https://gitlab.com/hermine-project/hermine/commit/b31489d))
-   
+
 MISC:
 
 ## 0.3.2
@@ -201,8 +201,8 @@ MISC :
   * feat: make threads configurable ([1b74668](https://gitlab.com/hermine-project/hermine/commit/1b74668))
   * fix:Transfer CSRF_TRUSTED_ORIGINS to django container env ([e06402b](https://gitlab.com/hermine-project/hermine/commit/e06402b))
   * improve gunicorn conf ([dc6b257](https://gitlab.com/hermine-project/hermine/commit/dc6b257))
-  * switch to python:3.10-slim-bullseye (no secu issues) and add optional pip module to install ([c2fcba5](https://gitlab.com/hermine-project/hermine/commit/c2fcba5)) 
-  
+  * switch to python:3.10-slim-bullseye (no secu issues) and add optional pip module to install ([c2fcba5](https://gitlab.com/hermine-project/hermine/commit/c2fcba5))
+
 BUGFIXES :
 * fix: raise 404 on shared reference pages when no shared data is loaded ([477d9d2](https://gitlab.com/hermine-project/hermine/commit/477d9d2))
 * fix boolean var env when not defined ([8298cd7](https://gitlab.com/hermine-project/hermine/commit/8298cd7))
