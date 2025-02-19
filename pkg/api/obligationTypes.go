@@ -31,7 +31,7 @@ import (
 //	@Param			active	query		bool	true	"Active obligation type only"
 //	@Success		200		{object}	models.ObligationTypeResponse
 //	@Failure		404		{object}	models.LicenseError	"No obligation types in DB"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/obligations/types [get]
 func GetAllObligationType(c *gin.Context) {
 	var obligationTypes []models.ObligationType
