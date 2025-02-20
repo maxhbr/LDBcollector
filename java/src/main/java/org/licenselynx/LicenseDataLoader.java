@@ -31,7 +31,7 @@ class LicenseDataLoader
 
 
     // Constructor for production code using ClassLoader by default
-    public LicenseDataLoader()
+    LicenseDataLoader()
     {
         this(new ObjectMapper(), LicenseDataLoader.class.getClassLoader());  // Default to the system classloader
     }
@@ -39,7 +39,7 @@ class LicenseDataLoader
 
 
     // Constructor for testability, injecting ClassLoader
-    public LicenseDataLoader(final ObjectMapper pObjectMapper, final ClassLoader pClassLoader)
+    LicenseDataLoader(final ObjectMapper pObjectMapper, final ClassLoader pClassLoader)
     {
         this.objectMapper = pObjectMapper;
         this.classLoader = pClassLoader;
@@ -48,7 +48,7 @@ class LicenseDataLoader
 
 
     @Nonnull
-    public Map<String, LicenseObject> loadLicenses()
+    Map<String, LicenseObject> loadLicenses()
     {
         try (
             InputStream resourceStream = classLoader.getResourceAsStream(RESOURCE_NAME)
