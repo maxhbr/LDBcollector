@@ -34,7 +34,8 @@ class LicenseMapSingleton
      */
     private LicenseMapSingleton()
     {
-        if (instance != null) {
+        if (instance != null)
+        {
             throw new InstantiationError("Instance already exists!");
         }
 
@@ -51,7 +52,8 @@ class LicenseMapSingleton
     @Nonnull
     static synchronized LicenseMapSingleton getInstance()
     {
-        if (instance == null) {
+        if (instance == null)
+        {
             instance = new LicenseMapSingleton();
         }
         return instance;
