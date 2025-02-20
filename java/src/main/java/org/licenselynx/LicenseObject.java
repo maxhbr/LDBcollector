@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import net.jcip.annotations.Immutable;
 
 import javax.annotation.Nonnull;
+import java.util.Objects;
 
 
 /**
@@ -21,6 +22,8 @@ public class LicenseObject
     @JsonProperty
     private final String src;
 
+
+
     /**
      * Constructor for LicenseObject.
      *
@@ -29,12 +32,14 @@ public class LicenseObject
      */
     @JsonCreator
     public LicenseObject(
-        @JsonProperty("canonical") @Nonnull final String pCanonical,
-        @JsonProperty("src") @Nonnull final String pSrc)
+        @JsonProperty("canonical") final String pCanonical,
+        @JsonProperty("src") final String pSrc)
     {
-        this.canonical = pCanonical;
-        this.src = pSrc;
+        this.canonical = Objects.requireNonNull(pCanonical);
+        this.src = Objects.requireNonNull(pSrc);
     }
+
+
 
     /**
      * Gets the canonical name of the license.
@@ -46,6 +51,8 @@ public class LicenseObject
     {
         return canonical;
     }
+
+
 
     /**
      * Gets the source of the license.
