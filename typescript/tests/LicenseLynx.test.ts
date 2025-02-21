@@ -32,6 +32,6 @@ describe('LicenseLynx tests', () => {
     });
 
     it('should return reject error when license not found', async () => {
-        return expect(map('licenseNonExisting')).rejects.toEqual({error: 'License licenseNonExisting not found'});
+        return expect(map('licenseNonExisting')).rejects.toEqual(new Error('error: License licenseNonExisting not found'));
     });
 });

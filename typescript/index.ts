@@ -33,7 +33,7 @@ export const map = function (licenseName: string) {
                 resolve({canonical, src});
             }
         }
-        reject({error: 'License ' + licenseName + ' not found',});
+        reject(new Error('error: License ' + licenseName + ' not found'));
     })
 }
 
