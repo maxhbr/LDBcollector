@@ -60,4 +60,4 @@ our [Contribution Guidelines](https://licenselynx.org/contribution) for detailed
 
 This project is licensed under the terms of the [Apache License, Version 2.0](LICENSE).
 
-Copyright (c) Siemens AG 2024
+Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED

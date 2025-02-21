@@ -20,3 +20,9 @@ public class LicenseExample {
     }
 }
 ```
+
+## License
+
+This project is licensed under the terms of the [Apache License, Version 2.0](../LICENSE.md).
+
+Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
