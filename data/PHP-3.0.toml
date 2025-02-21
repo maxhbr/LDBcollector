@@ -1,0 +1,15 @@
+[license]
+
+expression = "PHP-3.01"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "PHP License v3.0"
+]
+
+legacy-abbreviation = [
+    "PHP"
+]
+
