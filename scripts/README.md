@@ -61,7 +61,7 @@ Below are the instructions for making this replacement in both Windows and Linux
 The API call format is: ``/api/license/{license_name}.json``
 
 It is also possible to retrieve the whole license mapping as one json-file.
-The URL is ``/json/{version}/mapping.json``. 
+The URL is ``/json/{version}/mapping.json``.
 The version number is necessary due to modifications and additions of licenses over time.
 To always get the most recent version, use ``/json/latest/mapping.json``.
 
@@ -73,3 +73,9 @@ The file must end with ```.json```.
 The script ``generate_api_files.py`` has two options.
 First option is ``--input/-i``, which takes the merged data file from ``merge_data.py``.
 Second option is ``--dir/-d``, which is by default ``api/license`` and creates the files for the Web API.
+
+## License
+
+This project is licensed under the [Apache License, Version 2.0](../LICENSE.md).
+
+Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
