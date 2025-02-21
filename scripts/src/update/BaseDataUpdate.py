@@ -38,7 +38,7 @@ class BaseDataUpdate:
         else:
             self._LOGGER.debug(f"Failed to download {self._src} license list.")
 
-    def load_json_file(self, filepath) -> dict:
+    def load_json_file(self, filepath: str) -> dict:
         """
         Load the license list from json file and return it as a dictionary
         Args:

@@ -16,7 +16,7 @@ class SpdxDataUpdate(BaseDataUpdate):
         else:
             super().__init__(src="spdx", log_level=logging.INFO)
 
-    def update_non_spdx_license_file(self, license_id: str, data: dict, old_license_filepath, license_name: str) -> None:
+    def update_non_spdx_license_file(self, license_id: str, data: dict, old_license_filepath: str, license_name: str) -> None:
         """
         Update the license file where the source is not SPDX to SPDX by adding SPDX data to the license file and rename
         the license file to the new canonical id

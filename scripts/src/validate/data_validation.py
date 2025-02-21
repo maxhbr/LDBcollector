@@ -22,7 +22,7 @@ class LicenseListType(Enum):
     SCANCODE_LICENSEDB = 3
 
 
-def download_license_list(url, output_file, license_list_name):
+def download_license_list(url: str, output_file: str, license_list_name: str):
     response = requests.get(url)
     if response.status_code == 200:
         with open(output_file, 'wb') as f:
@@ -32,7 +32,7 @@ def download_license_list(url, output_file, license_list_name):
         logger.error(f"Failed to download {license_list_name}.")
 
 
-def load_ids_from_license_list(filepath, license_list_type: LicenseListType):
+def load_ids_from_license_list(filepath: str, license_list_type: LicenseListType) -> list[str]:
     with open(filepath, 'r') as f:
         data = json.load(f)
     license_ids = []
@@ -58,7 +58,7 @@ def load_ids_from_license_list(filepath, license_list_type: LicenseListType):
     return license_ids
 
 
-def delete_file(filepath):
+def delete_file(filepath: str):
     if os.path.exists(filepath):
         os.remove(filepath)
         logger.info(f"File '{filepath}' deleted successfully.")
@@ -92,7 +92,7 @@ def check_unique_aliases():
             logger.error(f"Alias '{alias}' is not unique globally. Affected file: {filenames}")
 
 
-def access_aliases(aliases, all_aliases, filename):
+def access_aliases(aliases: dict, all_aliases: dict, filename: str):
     for alias in aliases:
         source = aliases[alias]
         for license_name in source:
@@ -102,17 +102,17 @@ def access_aliases(aliases, all_aliases, filename):
                 all_aliases[license_name] = [filename]
 
 
-def check_src_and_canonical(spdx_license_list, spdx_exception):
+def check_src_and_canonical(spdx_license_list: list, spdx_exception_list: list):
     for filename in os.listdir(DATA_DIR):
         if filename.endswith(JSON_EXTENSION):
             filepath = os.path.join(DATA_DIR, filename)
             with (open(filepath, 'r') as f):
                 data = json.load(f)
                 canonical_name = data.get("canonical")
-                if (canonical_name in spdx_license_list or canonical_name in spdx_exception) and data["src"] != "spdx":
+                if (canonical_name in spdx_license_list or canonical_name in spdx_exception_list) and data["src"] != "spdx":
                     logger.error(f"If src is SPDX, canonical name '{canonical_name}' must be in SPDX license list")
                 elif (canonical_name not in spdx_license_list and
-                      canonical_name not in spdx_exception) and data["src"] == "spdx":
+                      canonical_name not in spdx_exception_list) and data["src"] == "spdx":
                     logger.error(f"Canonical name '{canonical_name}' is in SPDX license list but source is not 'spdx'.")
 
 

@@ -5,21 +5,20 @@ import json
 from collections import Counter
 
 
-def load_license_data(file_path):
+def load_license_data(file_path: str) -> dict:
     with open(file_path, 'r') as f:
         return json.load(f)
 
 
-def count_canonical_licenses(license_data):
+def count_canonical_licenses(license_data: dict) -> Counter[str]:
     return Counter(entry['canonical'] for entry in license_data.values())
 
 
-def prepare_top_licenses_text(canonical_counts):
-    top_canonical = canonical_counts.most_common(5)
-    return top_canonical
+def prepare_top_licenses_text(canonical_counts: Counter[str]) -> list[tuple[str, int]]:
+    return canonical_counts.most_common(5)
 
 
-def generate_svg(total_mappings, total_number_licenses, top_licenses, is_dark_mode=False):
+def generate_svg(total_mappings: int, total_number_licenses: int, top_licenses: list[tuple[str, int]], is_dark_mode=False):
     # Define colors for light and dark modes
     if is_dark_mode:
         background_color = "#1e1e1e"  # Dark background
@@ -50,12 +49,12 @@ def generate_svg(total_mappings, total_number_licenses, top_licenses, is_dark_mo
     return svg_template
 
 
-def save_svg(svg_content, file_path):
+def save_svg(svg_content: str, file_path: str):
     with open(file_path, 'w') as f:
         f.write(svg_content)
 
 
-def update_readme(license_data_file_path, svg_file_path):
+def update_readme(license_data_file_path: str, svg_file_path: str):
     # Load license data
     license_data = load_license_data(license_data_file_path)
 

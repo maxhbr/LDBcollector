@@ -11,7 +11,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.abspath(os.path.join(script_dir, '../../../data'))
 
 
-def read_data(data_dir):
+def read_data(data_dir: str) -> dict:
     data = {}
     for filename in os.listdir(data_dir):
         if filename.endswith(".json"):
@@ -28,12 +28,12 @@ def read_data(data_dir):
     return data
 
 
-def write_data(alias_mapping, output_path):
+def write_data(alias_mapping: dict, output_path: str):
     with open(output_path, 'w') as outfile:
         json.dump(alias_mapping, outfile, indent=4)
 
 
-def merge_data_to_paths(data_dir, output_path):
+def merge_data_to_paths(data_dir: str, output_path: str):
     data = read_data(data_dir)
 
     write_data(data, output_path)
