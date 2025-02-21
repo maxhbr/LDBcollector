@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+ */
 module.exports = {
     transform: {'^.+\\.ts?$': 'ts-jest'},
     testEnvironment: 'node',

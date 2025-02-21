@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+ */
 import {map} from "../index";
 
 jest.mock('../resources/merged_data.json', () => {

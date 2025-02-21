@@ -1,3 +1,6 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
 import pytest
 from unittest.mock import patch, mock_open, MagicMock
 from src.update.BaseDataUpdate import BaseDataUpdate

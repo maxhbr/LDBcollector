@@ -1,3 +1,6 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
 import json
 import os
 from collections import Counter

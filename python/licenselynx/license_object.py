@@ -1,3 +1,6 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
 class LicenseObject(object):
     def __init__(self, canonical: str, src: str):
         self._canonical = canonical

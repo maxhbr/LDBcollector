@@ -1,3 +1,6 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
 import sys
 from typing import Optional
 from licenselynx.license_object import LicenseObject

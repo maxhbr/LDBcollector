@@ -1,3 +1,6 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
 from unittest.mock import MagicMock, patch
 import pytest
 from src.update.ScancodeLicensedbDataUpdate import ScancodeLicensedbDataUpdate

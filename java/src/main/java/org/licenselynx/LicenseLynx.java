@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+ */
 package com.siemens.licenselynx;
 
 import javax.annotation.CheckForNull;

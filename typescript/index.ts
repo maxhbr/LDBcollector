@@ -1,3 +1,7 @@
+/**
+ *
+ * Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+ */
 import * as mergedData from './resources/merged_data.json';
 
 export interface LicenseObject {

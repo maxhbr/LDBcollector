@@ -1,8 +1,12 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
 import argparse
 
 from src.update.OsiDataUpdate import OsiDataUpdate
 from src.update.ScancodeLicensedbDataUpdate import ScancodeLicensedbDataUpdate
 from src.update.SpdxDataUpdate import SpdxDataUpdate
+import src.validate.data_validation as validation
 
 
 def main():
@@ -23,6 +27,8 @@ def main():
     if args.osi:
         osi = OsiDataUpdate(args.debug)
         osi.process_licenses()
+
+    validation.main()
 
 
 if __name__ == '__main__':

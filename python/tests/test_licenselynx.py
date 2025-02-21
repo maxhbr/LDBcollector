@@ -1,5 +1,7 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
 import json
-
 import pytest
 from unittest.mock import mock_open, patch, MagicMock
 from licenselynx.licenselynx import LicenseLynx

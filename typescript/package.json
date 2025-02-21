@@ -30,7 +30,8 @@
     "files": [
         "dist/index.js",
         "tests/resources/merged_data.json",
-        "README.md"
+        "README.md",
+        "../LICENSE.md"
     ],
     "scripts": {
         "clean": "rimraf --no-interactive --verbose dist",

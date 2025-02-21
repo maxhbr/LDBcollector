@@ -1,3 +1,6 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
 import logging
 import os
 from src.update.BaseDataUpdate import BaseDataUpdate
