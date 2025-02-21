@@ -26,6 +26,6 @@ echo license w/ slash | sed 's/\//_/g'
 
 ## License
 
-This project is licensed under the terms of the [Apache License, Version 2.0](../LICENSE.md).
+Unless otherwise noted, the contents of the website is licensed under [CC-BY-4.0](LICENSE.md).
 
 Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
