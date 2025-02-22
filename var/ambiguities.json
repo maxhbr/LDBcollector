@@ -162,7 +162,7 @@
             "aliases": [
                 "GNU v3",
                 "License :: OSI Approved :: GNU...v3 or later",
-                "License :: OSI Approved :: GNU...v2 or later"
+              "License :: OSI Approved :: GNU...v2 or later"
             ],
             "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
         },
@@ -186,7 +186,8 @@
                 "License :: OSI Approved :: GNU General Public License",
                 "License :: OSI Approved :: GNU General Public License (GPL)",
                 "GNU General Public License (GPL)",
-                "GNU-GPL"
+              "GNU-GPL",
+              "GPL license"
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
