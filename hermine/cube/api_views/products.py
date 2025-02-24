@@ -484,20 +484,23 @@ class CreateSingleDependencyViewSet(viewsets.GenericViewSet):
         release = serializer.validated_data["release"]
         purl_type = serializer.validated_data["purl_type"]
         name = serializer.validated_data["name"]
-        usage, _ = add_dependency(
-            release.id,
-            purl_type,
-            name,
-            version_number=serializer.validated_data.get("version_number", "Current"),
-            concluded_license=serializer.validated_data.get("spdx_valid_license_expr", ""),
-            declared_license=serializer.validated_data.get("declared_license_expr", ""),
-            purl=serializer.validated_data.get("purl", ""),
-            scope=serializer.validated_data.get("default_scope_name", ""),
-            linking=serializer.validated_data.get("linking", ""),
-            project=serializer.validated_data.get("default_project_name", ""),
-            component_defaults={
-                "homepage_url": serializer.validated_data.get("homepage_url", ""),
-                "description": serializer.validated_data.get("description", ""),
-            },
-        )
-        return Response(UsageSerializer(usage).data)
+        try:
+            usage, _ = add_dependency(
+                release.id,
+                purl_type,
+                name,
+                version_number=serializer.validated_data.get("version_number", "Current"),
+                concluded_license=serializer.validated_data.get("spdx_valid_license_expr", ""),
+                declared_license=serializer.validated_data.get("declared_license_expr", ""),
+                purl=serializer.validated_data.get("purl", ""),
+                scope=serializer.validated_data.get("default_scope_name", ""),
+                linking=serializer.validated_data.get("linking", ""),
+                project=serializer.validated_data.get("default_project_name", ""),
+                component_defaults={
+                    "homepage_url": serializer.validated_data.get("homepage_url", ""),
+                    "description": serializer.validated_data.get("description", ""),
+                },
+            )
+            return Response(UsageSerializer(usage).data)
+        except ValueError as e :
+            return Response({str(e)})
