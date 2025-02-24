@@ -7,7 +7,7 @@ from django.contrib import admin
 from django.db import models
 from django.forms import TextInput
 
-from .models import Category, Token
+from .models import Category, Token, Compatibility
 from .models import Component
 from .models import Derogation
 from .models import Exploitation
@@ -112,6 +112,12 @@ class LicensePolicyAdmin(admin.ModelAdmin):
     list_filter = ["status", "allowed"]
     search_fields = ["spdx_id"]
     fields = ("status", "allowed", "allowed_explanation", "categories")
+
+
+class CompatibilityAdmin(admin.ModelAdmin):
+    list_display = ("__str__",)
+    list_filter = ["direction"]
+    search_fields = ["spdx_id"]
 
 
 class GenericAdmin(admin.ModelAdmin):
@@ -345,6 +351,7 @@ class TokenAdmin(admin.ModelAdmin):
 
 admin.site.register(License, LicenseAdmin)
 admin.site.register(LicensePolicy, LicensePolicyAdmin)
+admin.site.register(Compatibility, CompatibilityAdmin)
 admin.site.register(Obligation, ObligationAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)

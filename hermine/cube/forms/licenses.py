@@ -5,7 +5,7 @@ from django.db import transaction
 from django.forms import ModelForm, ModelChoiceField, Form
 
 from cube.forms.mixins import AutocompleteFormMixin
-from cube.models import Generic, Obligation, License
+from cube.models import Generic, Obligation, License, Compatibility
 from cube.utils.reference import GENERIC_SHARED_FIELDS, LICENSE_SHARED_FIELDS
 
 
@@ -150,3 +150,10 @@ class ObligationForm(AutocompleteFormMixin, ModelForm):
             "trigger_mdf",
         )
         autocomplete_fields = ["generic"]
+
+
+class CompatibilityForm(AutocompleteFormMixin, ModelForm):
+    class Meta:
+        model = Compatibility
+        fields = ("to_license", "direction")
+        autocomplete_fields = ["to_license"]

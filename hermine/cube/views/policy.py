@@ -16,7 +16,11 @@ from cube.models import (
     Derogation,
     LicenseChoice,
 )
-from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin, QuerySuccessUrlMixin
+from cube.views.mixins import (
+    CreateLicenseRelatedMixin,
+    SaveAuthorMixin,
+    QuerySuccessUrlMixin,
+)
 
 
 class AuthorizedContextListView(
@@ -51,15 +55,12 @@ class AuthorizedContextCreateView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
     SaveAuthorMixin,
-    LicenseRelatedMixin,
+    CreateLicenseRelatedMixin,
     CreateView,
 ):
     permission_required = "cube.add_derogation"
     template_name = "cube/derogation_form.html"
     form_class = AuthorizedContextForm
-
-    def get_success_url(self):
-        return reverse("cube:license_detail", args=[self.object.license.id])
 
 
 class DerogationListView(LoginRequiredMixin, PermissionRequiredMixin, FilterView):

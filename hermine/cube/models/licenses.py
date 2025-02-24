@@ -434,6 +434,9 @@ class Compatibility(models.Model):
         blank=True,
     )
 
+    def __str__(self):
+        return f"{self.from_license} {'->' if self.direction == self.DIRECTION_ASCENDING else '<-'} {self.to_license}"
+
     class Meta:
         unique_together = ["from_license", "to_license"]
         verbose_name = "Compatibility"
