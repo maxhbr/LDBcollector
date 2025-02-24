@@ -12,13 +12,11 @@
     },
     "files": [
         "dist/index.js",
-        "tests/resources/merged_data.json",
-        "README.md",
-        "../LICENSE.md"
+        "README.md"
     ],
     "scripts": {
         "clean": "rimraf --no-interactive --verbose dist",
-        "build": "esbuild index.ts --bundle --platform=node --target=node20 --sourcemap --outfile=dist/index.js",
+        "build": "esbuild index.ts --bundle --platform=node --target=node10 --outdir=dist && tsc --emitDeclarationOnly --outDir dist",
         "test": "jest --coverage",
         "lint": "eslint *.ts "
     },
