@@ -29,13 +29,13 @@ ext {
     grgit.open(currentDir: project.rootDir).withCloseable { gitRepo ->
         gitVersion = grgit.describe {
             tags = true
-            match = ['java_v*']
+            match = ['v*']
             always = true
         }
         gitHash = gitRepo.head().id
         gitCleanBuild = gitRepo.status().isClean()
-        if (gitVersion.startsWith('java_v')) {
-            gitVersion = gitVersion.substring('java_v'.length())
+        if (gitVersion.startsWith('v')) {
+            gitVersion = gitVersion.substring('v'.length())
         }
         if (!gitCleanBuild) {
             gitVersion += '-dirty'
