@@ -27,7 +27,7 @@ downloading from the release page.
 
 Hermine provides a [Docker Compose](https://docs.docker.com/compose/) configuration with the
 following services:
-* a PostgreSQL database
+* a PostgreSQL database version 16
 * a [gunicorn](https://gunicorn.org/) server for the Python backend
 * an optional [Caddy](https://caddyserver.com/) server to deploy Hermine with HTTPS out-of-the-box
 
@@ -100,7 +100,7 @@ docker compose --profile https up -d --build
 ## Hermine Docker image
 
 You can also use the Hermine Docker image to run Hermine in your own Docker environment,
-without using Docker Compose. You will need to set up your own PostgreSQL database, as well as a reverse proxy to
+without using Docker Compose. You will need to set up your own PostgreSQL database (version 14 required, 16 or above is recommanded), as well as a reverse proxy to
 serve static files and proxy other requests to the Docker image.
 
 You first need to build the image :
