@@ -19,7 +19,7 @@ from cube.utils.validators import validate_file_size
 class ExploitationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exploitation
-        fields = ["scope", "project", "exploitation"]
+        fields = ["id", "scope", "project", "exploitation"]
 
 
 class ReleaseSerializer(serializers.ModelSerializer):
