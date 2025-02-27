@@ -136,6 +136,34 @@ tasks.register('createVersionFile') {
 tasks.named('processResources').configure { it.dependsOn(tasks.createVersionFile) }
 sourceSets.main.resources.srcDir(tasks.createVersionFile.temporaryDir)
 
+tasks.register("checkAndDownloadJson") {
+    def resourcesDir = file("src/main/resources")
+    def jsonFile = file("$resourcesDir/merged_data.json")
+    def downloadUrl = "https://licenselynx.org/json/latest/mapping.json"
+
+    doLast {
+        if (!jsonFile.exists()) {
+            println "merged_data.json not found. Downloading from $downloadUrl..."
+            resourcesDir.mkdirs()
+            jsonFile.withOutputStream { output ->
+                new URL(downloadUrl).withInputStream { input ->
+                    output << input
+                }
+            }
+            println "Downloaded data.json to $jsonFile"
+        } else {
+            println "merged_data.json already exists. Skipping download."
+        }
+    }
+}
+
+tasks.named("processResources") {
+    def isCI = providers.gradleProperty("isCI")
+
+    if (!isCI.present) {
+        dependsOn("checkAndDownloadJson")
+    }
+}
 
 /*
  * - - - -  TESTS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
