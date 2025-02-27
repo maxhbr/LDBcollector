@@ -31,7 +31,7 @@ import (
 //	@Param			active	query		bool	true	"Active obligation classification only"
 //	@Success		200		{object}	models.ObligationClassificationResponse
 //	@Failure		404		{object}	models.LicenseError	"No obligation classifications in DB"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/obligations/classifications [get]
 func GetAllObligationClassification(c *gin.Context) {
 	var obligationClassifications []models.ObligationClassification

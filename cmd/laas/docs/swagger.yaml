@@ -1601,7 +1601,8 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - ApiKeyAuth: []
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get all active obligation classifications
       tags:
       - Obligations
@@ -1787,7 +1788,8 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - ApiKeyAuth: []
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get all active obligation types
       tags:
       - Obligations

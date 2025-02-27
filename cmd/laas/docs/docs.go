@@ -1140,7 +1140,8 @@ const docTemplate = `{
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get all active obligation classifications from the service",
@@ -1433,7 +1434,8 @@ const docTemplate = `{
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get all active obligation types from the service",

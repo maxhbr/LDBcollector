@@ -141,10 +141,10 @@ func Router() *gin.Engine {
 				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), ImportObligations)
 				obligations.PATCH(":topic", UpdateObligation)
 				obligations.DELETE(":topic", DeleteObligation)
-				obligations.GET("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationType)
+				obligations.GET("/types", GetAllObligationType)
 				obligations.POST("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationType)
 				obligations.DELETE("/types/:type", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationType)
-				obligations.GET("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationClassification)
+				obligations.GET("/classifications", GetAllObligationClassification)
 				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
 				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
 			}
@@ -184,6 +184,8 @@ func Router() *gin.Engine {
 				obligations.GET(":topic", GetObligation)
 				obligations.GET(":topic/audits", GetObligationAudits)
 				obligations.GET("export", ExportObligations)
+				obligations.GET("/types", GetAllObligationType)
+				obligations.GET("/classifications", GetAllObligationClassification)
 			}
 			obMap := unAuthorizedv1.Group("/obligation_maps")
 			{
@@ -240,10 +242,8 @@ func Router() *gin.Engine {
 				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), ImportObligations)
 				obligations.PATCH(":topic", UpdateObligation)
 				obligations.DELETE(":topic", DeleteObligation)
-				obligations.GET("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationType)
 				obligations.POST("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationType)
 				obligations.DELETE("/types/:type", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationType)
-				obligations.GET("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), GetAllObligationClassification)
 				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
 				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
 			}
