@@ -269,6 +269,42 @@ const docTemplate = `{
                 }
             }
         },
+        "/dashboard": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Fetches data to be displayed on the dashboard",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Fetches data to be displayed on the dashboard",
+                "operationId": "GetDashboardData",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.DashboardResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Something went wrong",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/health": {
             "get": {
                 "description": "Check health of the service",
@@ -2231,6 +2267,19 @@ const docTemplate = `{
                 }
             }
         },
+        "models.CategoryObligationCount": {
+            "type": "object",
+            "properties": {
+                "category": {
+                    "type": "string",
+                    "example": "GENERAL"
+                },
+                "count": {
+                    "type": "integer",
+                    "example": 6
+                }
+            }
+        },
         "models.ChangeLog": {
             "type": "object",
             "properties": {
@@ -2267,6 +2316,51 @@ const docTemplate = `{
                 },
                 "paginationmeta": {
                     "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
+        "models.Dashboard": {
+            "type": "object",
+            "properties": {
+                "category_obligation_frequency": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.CategoryObligationCount"
+                    }
+                },
+                "licenses_count": {
+                    "type": "integer",
+                    "example": 2
+                },
+                "monthly_license_changes_count": {
+                    "type": "integer",
+                    "example": 6
+                },
+                "obligations_count": {
+                    "type": "integer",
+                    "example": 7
+                },
+                "risk_license_frequency": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.RiskLicenseCount"
+                    }
+                },
+                "users_count": {
+                    "type": "integer",
+                    "example": 5
+                }
+            }
+        },
+        "models.DashboardResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/models.Dashboard"
                 },
                 "status": {
                     "type": "integer",
@@ -2892,6 +2986,19 @@ const docTemplate = `{
                 },
                 "user_password": {
                     "type": "string"
+                }
+            }
+        },
+        "models.RiskLicenseCount": {
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "integer",
+                    "example": 6
+                },
+                "risk": {
+                    "type": "integer",
+                    "example": 2
                 }
             }
         },

@@ -162,6 +162,10 @@ func Router() *gin.Engine {
 				audit.GET(":audit_id/changes", GetChangeLogs)
 				audit.GET(":audit_id/changes/:id", GetChangeLogbyId)
 			}
+			dashboard := authorizedv1.Group("/dashboard")
+			{
+				dashboard.GET("", GetDashboardData)
+			}
 		}
 	} else {
 		unAuthorizedv1 := r.Group("/api/v1")
@@ -214,6 +218,10 @@ func Router() *gin.Engine {
 			oidc := unAuthorizedv1.Group("/users/oidc")
 			{
 				oidc.POST("", auth.CreateOidcUser)
+			}
+			dashboard := unAuthorizedv1.Group("/dashboard")
+			{
+				dashboard.GET("", GetDashboardData)
 			}
 		}
 

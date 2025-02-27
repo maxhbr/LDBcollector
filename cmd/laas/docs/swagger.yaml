@@ -54,6 +54,15 @@ definitions:
         example: 200
         type: integer
     type: object
+  models.CategoryObligationCount:
+    properties:
+      category:
+        example: GENERAL
+        type: string
+      count:
+        example: 6
+        type: integer
+    type: object
   models.ChangeLog:
     properties:
       audit_id:
@@ -80,6 +89,37 @@ definitions:
         type: array
       paginationmeta:
         $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.Dashboard:
+    properties:
+      category_obligation_frequency:
+        items:
+          $ref: '#/definitions/models.CategoryObligationCount'
+        type: array
+      licenses_count:
+        example: 2
+        type: integer
+      monthly_license_changes_count:
+        example: 6
+        type: integer
+      obligations_count:
+        example: 7
+        type: integer
+      risk_license_frequency:
+        items:
+          $ref: '#/definitions/models.RiskLicenseCount'
+        type: array
+      users_count:
+        example: 5
+        type: integer
+    type: object
+  models.DashboardResponse:
+    properties:
+      data:
+        $ref: '#/definitions/models.Dashboard'
       status:
         example: 200
         type: integer
@@ -518,6 +558,15 @@ definitions:
       user_password:
         type: string
     type: object
+  models.RiskLicenseCount:
+    properties:
+      count:
+        example: 6
+        type: integer
+      risk:
+        example: 2
+        type: integer
+    type: object
   models.SearchLicense:
     properties:
       field:
@@ -809,6 +858,29 @@ paths:
       summary: Get a changelog
       tags:
       - Audits
+  /dashboard:
+    get:
+      consumes:
+      - application/json
+      description: Fetches data to be displayed on the dashboard
+      operationId: GetDashboardData
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.DashboardResponse'
+        "500":
+          description: Something went wrong
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
+      summary: Fetches data to be displayed on the dashboard
+      tags:
+      - Dashboard
   /health:
     get:
       consumes:
