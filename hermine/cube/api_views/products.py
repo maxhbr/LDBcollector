@@ -14,6 +14,7 @@ from rest_framework.mixins import CreateModelMixin
 from rest_framework.parsers import MultiPartParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework import serializers
 
 from cube.importers import (
     import_spdx_file,
@@ -509,4 +510,4 @@ class CreateSingleDependencyViewSet(viewsets.GenericViewSet):
             )
             return Response(UsageSerializer(usage).data)
         except ValueError as e:
-            return Response({str(e)})
+            raise serializers.ValidationError(e)
