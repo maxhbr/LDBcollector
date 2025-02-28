@@ -489,9 +489,15 @@ class CreateSingleDependencyViewSet(viewsets.GenericViewSet):
                 release.id,
                 purl_type,
                 name,
-                version_number=serializer.validated_data.get("version_number", "Current"),
-                concluded_license=serializer.validated_data.get("spdx_valid_license_expr", ""),
-                declared_license=serializer.validated_data.get("declared_license_expr", ""),
+                version_number=serializer.validated_data.get(
+                    "version_number", "Current"
+                ),
+                concluded_license=serializer.validated_data.get(
+                    "spdx_valid_license_expr", ""
+                ),
+                declared_license=serializer.validated_data.get(
+                    "declared_license_expr", ""
+                ),
                 purl=serializer.validated_data.get("purl", ""),
                 scope=serializer.validated_data.get("default_scope_name", ""),
                 linking=serializer.validated_data.get("linking", ""),
@@ -502,5 +508,5 @@ class CreateSingleDependencyViewSet(viewsets.GenericViewSet):
                 },
             )
             return Response(UsageSerializer(usage).data)
-        except ValueError as e :
+        except ValueError as e:
             return Response({str(e)})

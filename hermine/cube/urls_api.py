@@ -22,9 +22,9 @@ router.register(
 )
 router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
 router.register(
-    r"single_dependency",
+    r"add_dependency",
     api_views.CreateSingleDependencyViewSet,
-    basename="single_dependency",
+    basename="add_dependency",
 )
 router.register(r"releases", api_views.ReleaseViewSet, basename="releases")
 
