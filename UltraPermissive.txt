@@ -151,6 +151,14 @@ text = '''
 .\" %%%LICENSE_END
 '''
 
+package = perl-Math-FFT
+location = https://www.kurims.kyoto-u.ac.jp/~ooura/fft.html
+text = '''
+Copyright Takuya OOURA, 1996-2001
+
+You may use, copy, modify and distribute this code for any purpose (include commercial use) and without fee. Please refer to this package when you modify this code.
+'''
+
 package = xorg-x11-fonts
 location = https://gitlab.freedesktop.org/xorg/font/cursor-misc/-/blob/master/COPYING?ref_type=heads
 text = '''
