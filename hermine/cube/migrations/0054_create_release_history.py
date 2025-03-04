@@ -7,13 +7,12 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
     dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ("cube", "0048_alter_usage_exploitation_alter_usage_linking"),
+        ("cube", "0053_licensepolicy_remove_license_allowed_and_more"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name="History",
+            name="ImportHistory",
             fields=[
                 (
                     "id",
@@ -25,7 +24,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("file_name", models.CharField(blank=True, max_length=200)),
-                ("file_format", models.CharField(blank=True, max_length=10)),
+                ("file_type", models.CharField(blank=True, max_length=10)),
                 ("file_component_link", models.CharField(blank=True, max_length=20)),
                 ("importation_date", models.DateTimeField(blank=True, max_length=20)),
                 (

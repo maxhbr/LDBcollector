@@ -17,6 +17,7 @@ from rest_framework.response import Response
 from rest_framework import serializers
 
 from cube.importers import (
+    add_import_history,
     import_spdx_file,
     import_cyclonedx_file,
     import_ort_evaluated_model_json_file,
@@ -52,6 +53,7 @@ from cube.utils.release_validation import (
     validate_policy,
     apply_curations,
 )
+from cube.models.products import BomType
 
 
 class ProductViewSet(viewsets.ModelViewSet):
@@ -416,6 +418,13 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             ),
             default_scope_name=serializer.validated_data.get("default_scope_name", ""),
         )
+        add_import_history(
+            spdx_file,
+            BomType.BOM_SPDX,
+            serializer.validated_data.get("linking", ""),
+            self.request.user,
+            release,
+        )
         return Response()
 
 
@@ -443,6 +452,13 @@ class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             ),
             default_scope_name=serializer.validated_data.get("default_scope_name", ""),
         )
+        add_import_history(
+            cyclonedx_file,
+            BomType.BOM_CYCLONEDX,
+            serializer.validated_data.get("linking", ""),
+            self.request.user,
+            release,
+        )
         return Response()
 
 
@@ -465,6 +481,13 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             release.id,
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
+        )
+        add_import_history(
+            ort_file,
+            BomType.BOM_ORT,
+            serializer.validated_data.get("linking", ""),
+            self.request.user,
+            release,
         )
         return Response()
 

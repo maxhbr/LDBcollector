@@ -14,6 +14,7 @@ from cube.models import Release, Usage
 from cube.utils.generics import handle_generics_json
 from cube.utils.licenses import handle_licenses_json_or_shared_json
 from cube.utils.validators import validate_file_size
+from cube.models.products import BomType
 
 
 class BaseJsonImportForm(forms.Form):
@@ -55,14 +56,6 @@ class ImportLicensesForm(BaseJsonImportForm):
 
 
 class ImportBomForm(forms.ModelForm):
-    BOM_ORT = "ORTBom"
-    BOM_SPDX = "SPDXBom"
-    BOM_CYCLONEDX = "CYCLONEDXBom"
-    BOM_CHOICES = (
-        (BOM_ORT, "ORT Evaluated model (JSON)"),
-        (BOM_SPDX, "SPDX Bill of Materials"),
-        (BOM_CYCLONEDX, "CycloneDX Bill of Materials (JSON)"),
-    )
     IMPORT_MODE_MERGE = "Merge"
     IMPORT_MODE_REPLACE = "Replace"
     IMPORT_MODE_CHOICES = (
@@ -72,7 +65,7 @@ class ImportBomForm(forms.ModelForm):
         ),
         (IMPORT_MODE_MERGE, "Add new component usages while keeping previous ones"),
     )
-    bom_type = forms.ChoiceField(label="File format", choices=BOM_CHOICES)
+    bom_type = forms.ChoiceField(label="File format", choices=BomType.BOM_CHOICES)
     file = forms.FileField(validators=[validate_file_size])
     import_mode = forms.ChoiceField(
         choices=IMPORT_MODE_CHOICES, widget=forms.RadioSelect

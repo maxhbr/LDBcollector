@@ -20,6 +20,7 @@ from .models import Release
 from .models import Team
 from .models import Usage
 from .models import Version
+from .models import ImportHistory
 from .models.policy import AbstractUsageRule
 from .utils.spdx import is_ambiguous
 
@@ -316,3 +317,4 @@ admin.site.register(LicenseChoice, LicenseChoiceAdmin)
 admin.site.register(Derogation, DerogationAdmin)
 admin.site.register(Exploitation)
 admin.site.register(Team)
+admin.site.register(ImportHistory)

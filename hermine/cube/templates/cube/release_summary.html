@@ -168,5 +168,42 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </div>
   </div>
+  <!--- Added by JEMAI Ahmed [Issue 207]--->
+  <div class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon"><i class="fas fa-sitemap"></i></span>
+        Import history
+      </p>
+    </header>
+    <div class="card-content">
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>File name</th>
+            <th>Format</th>
+            <th>Component link</th>
+            <th>Date</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for history in history_model_data %}
+            <tr>
+              <td> {{history.file_name}}</td>
+              <td> {{history.file_type}} </td>
+              <td> {{history.file_component_link}} </td>
+              <td> {{history.importation_date}} </td>
+              <td>{{history.importation_author}} </td>
+
+            </tr>
+
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!------------------->
 {% endblock %}
 

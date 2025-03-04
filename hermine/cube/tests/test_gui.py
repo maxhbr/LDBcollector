@@ -5,7 +5,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from cube.forms.importers import ImportBomForm
-from cube.models import Usage
+from cube.models import Usage, BomType
 
 
 class ImportForm(TestCase):
@@ -16,7 +16,7 @@ class ImportForm(TestCase):
         self.client.post(
             url,
             {
-                "bom_type": ImportBomForm.BOM_SPDX,
+                "bom_type": BomType.BOM_SPDX,
                 "import_mode": ImportBomForm.IMPORT_MODE_REPLACE,
                 "linking": Usage.LINKING_DYNAMIC,
                 "file": open("cube/fixtures/fake_sbom.json", "r"),

@@ -31,9 +31,9 @@ from cube.importers import (
     import_spdx_file,
     import_cyclonedx_file,
     SBOMImportFailure,
-    add_product_history,
+    add_import_history,
 )
-from cube.models import Release, Usage, Generic, History, Product
+from cube.models import Release, Usage, Generic, ImportHistory
 from cube.utils.licenses import (
     get_usages_obligations,
     get_generic_usages,
@@ -43,6 +43,7 @@ from cube.views.mixins import (
     ReleaseExploitationFormMixin,
     QuerySuccessUrlMixin,
 )
+from cube.models.products import BomType
 
 logger = logging.getLogger(__name__)
 
@@ -64,6 +65,19 @@ class ReleaseSummaryView(
 
     template_name = "cube/release_summary.html"
     permission_required = "cube.view_release"
+
+    ############ Added bu JEMAI Ahmed [Issue 207]#################
+    def get_context_data(self, **kwargs: Any):
+        context = super().get_context_data(**kwargs)
+        history_model_data = ImportHistory.objects.filter(
+            related_release=context["release"]
+        )
+        context["history_model_data"] = history_model_data
+
+        return context
+
+
+########################################
 
 
 class ReleaseUpdateView(
@@ -88,14 +102,14 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     def form_valid(self, form):
         replace = form.cleaned_data["import_mode"] == ImportBomForm.IMPORT_MODE_REPLACE
         try:
-            if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
+            if form.cleaned_data["bom_type"] == BomType.BOM_ORT:
                 import_ort_evaluated_model_json_file(
                     self.request.FILES["file"],
                     self.object.pk,
                     replace,
                     linking=form.cleaned_data.get("linking"),
                 )
-            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_SPDX:
+            elif form.cleaned_data["bom_type"] == BomType.BOM_SPDX:
                 import_spdx_file(
                     self.request.FILES["file"],
                     self.object.pk,
@@ -104,7 +118,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     default_project_name=form.cleaned_data.get("default_project_name"),
                     default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
-            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_CYCLONEDX:
+            elif form.cleaned_data["bom_type"] == BomType.BOM_CYCLONEDX:
                 import_cyclonedx_file(
                     self.request.FILES["file"],
                     self.object.pk,
@@ -114,9 +128,9 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
             ################### Added by JEMAI Ahmed [Issue 207]#############################""
-            add_product_history(
+            add_import_history(
                 self.request.FILES["file"],
-                str(self.request.FILES["file"]).split(".")[-1],
+                form.cleaned_data["bom_type"],
                 form.cleaned_data.get("linking"),
                 self.request.user,
                 self.object,
@@ -142,16 +156,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
 
         return super().form_valid(form)
 
-    ############ Added bu JEMAI Ahmed [Issue 207]#################
-    def get_context_data(self, **kwargs: Any):
-        context = super().get_context_data(**kwargs)
-        history_model_data = History.objects.filter(related_release=self.object)
-        context["history_model_data"] = history_model_data
 
-        return context
-
-
-########################################
 class ReleaseObligationsView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
