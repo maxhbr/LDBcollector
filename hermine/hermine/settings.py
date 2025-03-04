@@ -14,6 +14,7 @@ To edit your specific install config create a file named config.py
 """
 
 import os
+import re
 
 from django.contrib import messages
 
@@ -39,14 +40,21 @@ DEBUG = getattr(config, "DEBUG", False)
 
 if host := getattr(config, "HOST", None):
     ALLOWED_HOSTS = [host]
-    csrf_url = (
-        getattr(config, "CSRF_TRUSTED_ORIGINS", None)
-        if getattr(config, "CSRF_TRUSTED_ORIGINS", None)
-        else host
-    )
-    CSRF_TRUSTED_ORIGINS = ["https://" + csrf_url]
 else:
     ALLOWED_HOSTS = []
+
+if csrf := getattr(config, "CSRF_TRUSTED_ORIGINS", None):
+    if isinstance(csrf, list):
+        # well formatted list of https://example.com as in config.default.py
+        CSRF_TRUSTED_ORIGINS = csrf
+    elif isinstance(csrf, str):
+        # single string (from environment) as in docker config.py
+        CSRF_TRUSTED_ORIGINS = [
+            origin if re.match("^https?://", origin) else "https://" + origin
+            for origin in csrf.split(",")
+        ]
+elif host := getattr(config, "HOST", None):
+    CSRF_TRUSTED_ORIGINS = ["https://" + host]
 
 if getattr(config, "FORCE_SCRIPT_NAME", None):
     FORCE_SCRIPT_NAME = config.FORCE_SCRIPT_NAME
