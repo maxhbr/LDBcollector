@@ -11,6 +11,11 @@ from cube.models.policy import (
     LicenseChoice,
     Derogation,
 )
-from cube.models.products import Product, Category, Release, Exploitation, ImportHistory, BomType
+from cube.models.products import (
+    Product,
+    Category,
+    Release,
+    Exploitation,
+)
 
 # Constant for Usage and Derogation models
