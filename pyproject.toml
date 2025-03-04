@@ -58,7 +58,7 @@ djhtml = "^3.0.6"
 exclude = "hermine/cube/migrations"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.2.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
