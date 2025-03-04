@@ -34,6 +34,7 @@ class AuthorizedContextUpdateView(
     permission_required = "cube.change_derogation"
     template_name = "cube/derogation_form.html"
     form_class = AuthorizedContextForm
+    model = Derogation
     success_url = reverse_lazy("cube:authorizedcontext_list")
 
     def get_context_data(self, **kwargs):
