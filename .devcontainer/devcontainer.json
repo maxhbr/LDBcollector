@@ -1,6 +1,6 @@
 {
 	"name": "poetry3-poetry-pyenv",
-	"image": "nikolaik/python-nodejs:python3.12-nodejs20",
+	"image": "nikolaik/python-nodejs:python3.13-nodejs23",
 
 	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
 	// "features": {},
