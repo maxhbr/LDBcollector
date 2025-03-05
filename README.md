@@ -56,11 +56,11 @@ Current support:
 
 |Type            | Number |
 |----------------|--------|
-|Licenses        | 194    |
-|Aliases         | 2652   |
+|Licenses        | 195    |
+|Aliases         | 2696   |
 |Compatibilities | 23     |
 |Operators       | 14     |
-|Ambiguities     | 135    |
+|Ambiguities     | 143    |
 |Compounds       | 38     |
 
 # About
