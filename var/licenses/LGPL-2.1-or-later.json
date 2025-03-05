@@ -63,6 +63,7 @@
         "lgpl-2.1-plus",
         "LPGL-2.1+",
         "LGPL-2.1-or later",
-      "GNU Library or Lesser General Public License (LGPL) (LGPL 2.1+)"
+      "GNU Library or Lesser General Public License (LGPL) (LGPL 2.1+)",
+      "GNU Lesser General Public License-2.1+"
     ]
 }

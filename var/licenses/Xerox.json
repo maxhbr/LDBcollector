@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "MIT with Export Control",
+  "scancode_key": "mit-export-control",
+  "spdxid": "Xerox",
+  "aliases": [
+    "MIT-Export-Control",
+    "MIT with Export Control",
+    "scancode://mit-export-control",
+    "Xerox",
+    "Xerox License",
+    "https://spdx.org/licenses/xerox",
+    "mit-export-control",
+    "scancode:mit-export-control",
+    "XEROX License",
+    "XEROX LICENSE",
+    "MIT-US-exp",
+    "MIT-Export"
+  ]
+}

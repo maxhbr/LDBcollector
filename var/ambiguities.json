@@ -36,7 +36,8 @@
                 "Apache license",
                 "License :: OSI Approved :: Apache Software License",
               "OSI Approved Apache Software License",
-              "apache"
+              "apache",
+              "OSI-Approved-::-Apache-Software-License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -88,7 +89,8 @@
                 "BSD-Style License",
                 "BSD license",
                 "License :: OSI Approved :: BSD License",
-                "BSD licensed code"
+              "BSD licensed code",
+              "BSD Software License"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -120,6 +122,12 @@
                 "Creative Commons"
             ],
             "problem": "There are couple of varians and versions of the Creative Commons licenses. Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
+        "Dual License": {
+            "aliases": [
+                "Dual license"
+            ],
+          "problem": "Dual license is not a license. It refers to the relationship between two (or more) licenses."
         },
         "Eclipse Public License": {
             "aliases": [
@@ -154,7 +162,7 @@
             "aliases": [
                 "GNU v3",
                 "License :: OSI Approved :: GNU...v3 or later",
-                "License :: OSI Approved :: GNU...v2 or later"
+              "License :: OSI Approved :: GNU...v2 or later"
             ],
             "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
         },
@@ -178,7 +186,8 @@
                 "License :: OSI Approved :: GNU General Public License",
                 "License :: OSI Approved :: GNU General Public License (GPL)",
                 "GNU General Public License (GPL)",
-                "GNU-GPL"
+              "GNU-GPL",
+              "GPL license"
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -248,7 +257,9 @@
             "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
         "Permissive": {
-            "aliases": [
+          "aliases": [
+            "PERMISSIVE",
+            "permissive"
             ],
             "problem": "This is a class of licenses and not a license."
         },
@@ -271,7 +282,8 @@
         },
         "Sun Industry Standards Source License": {
             "aliases": [
-                "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
+                "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
+              "SISSL"
             ],
             "problem": "This license has different versions (1.0, 1.1 and 1.2). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
@@ -285,7 +297,8 @@
             "aliases": [
                 "zpl",
                 "ZPL",
-                "License :: OSI Approved :: Zope Public License"
+                "License :: OSI Approved :: Zope Public License",
+                "Zope-Public-License"
             ],
             "problem": "This license has different versions (1.0, 1.1, 2.0 and 2.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         }

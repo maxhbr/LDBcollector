@@ -135,7 +135,7 @@ check_test_case
 # check_schema
 
 ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\" -e \" 0 \" -e \"0C\" -e \"free[ -]public\""
-BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
+BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd -e liberal"
 BSD2_PATENT_PRESENT=" -i -e patent" 
 BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' -e EDL -e eclipse -e 2.0 "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
@@ -360,10 +360,10 @@ check_presence W3C " -i -e w3c -e w3.org " " -e 1998 -e 2015 "
 check_presence W3C-19980720 " 1998 " " -e 2015 "
 check_presence W3C-20150513 " -e 2015 -e Document " " -e 1998 "
 check_presence WTFPL " -i -e WTFPL -e what -e wtf\ p" ""
-
 check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT' -e MIT-X" "" 
 check_presence X11-distribute-modifications-variant " -i -e modifications -e fsf" ""
 check_presence x11-keith-packard " -i -e packard -e hpnd " ""
+check_presence Xerox " -i -e xerox -e exp" " -i -e advertising -e 0 -e wu -e open"
 check_presence Xfig " -i -e Xfig" ""
 check_presence Xnet " -i -e Xnet -e altera -e x.net" ""
 check_presence xpp " -i -e xpp -e indiana " ""

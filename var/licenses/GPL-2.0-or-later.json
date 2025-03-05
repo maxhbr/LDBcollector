@@ -60,6 +60,11 @@
         "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
       "GPLv2-or-later",
       "GPLv2 or later",
-      "GNU General Public License-2.0-or-later"
+      "GNU General Public License-2.0-or-later",
+      "GNU General Public Licensev2+",
+      "GNU General Public License-2+",
+      "GNU General Public License-2.0+",
+      "https://spdx.org/licenses/GNU General Public License-2.0+.html",
+      "GNU General Public License-2.0+ https://spdx.org/licenses/GNU General Public License-2.0+.html"
     ]
 }
