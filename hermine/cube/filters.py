@@ -40,3 +40,17 @@ class LicenseFilter(
     policy__allowed = ValueFilter()
     policy__status = ValueFilter()
     o = django_filters.OrderingFilter(fields=("spdx_id", "policy__allowed"))
+
+
+class ComponentFilter(
+    django_filters.FilterSet,
+):
+    search = django_filters.CharFilter(
+        field_name="name", lookup_expr="icontains", label="Search in name"
+    )
+    search_description = django_filters.CharFilter(
+        field_name="description", lookup_expr="icontains", label="Search in description"
+    )
+    purl_type = ValueFilter()
+    programming_language = ValueFilter()
+    o = django_filters.OrderingFilter(fields=("name", "usages_count"))

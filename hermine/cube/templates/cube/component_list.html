@@ -45,6 +45,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <th>Type</th>
         <th>Versions</th>
         <th>Description</th>
+        <th>Usages count</th>
       </tr>
     </thead>
     <tbody>
@@ -59,6 +60,9 @@ SPDX-License-Identifier: AGPL-3.0-only
           </td>
           <td>
             {{ component.description|truncatechars:42 }}
+          </td>
+          <td>
+            {{ component.usages_count }}
           </td>
         </tr>
 

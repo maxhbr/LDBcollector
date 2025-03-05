@@ -9,7 +9,9 @@ from django.db.models import Count
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views import generic
+from django_filters.views import FilterView
 
+from cube.filters import ComponentFilter
 from cube.forms.components import LicenseCurationCreateForm, LicenseCurationUpdateForm
 from cube.models import Component, LicenseCuration, Funding, Version
 from cube.utils.funding import get_fundings_from_purl
@@ -17,35 +19,19 @@ from cube.views.mixins import SearchMixin, SaveAuthorMixin, QuerySuccessUrlMixin
 
 
 class ComponentListView(
-    LoginRequiredMixin, PermissionRequiredMixin, SearchMixin, generic.ListView
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    FilterView,
 ):
     permission_required = "cube.view_component"
     model = Component
     template_name = "cube/component_list.html"
     paginate_by = 30
     ordering = ["name"]
-    search_fields = ("name", "description", "spdx_expression")
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        populars = Component.objects.annotate(
-            popularity=Count("versions__usage__id")
-        ).order_by("-popularity")[:10]
-        context["populars"] = populars
-        return context
-
-
-class ComponentPopularListView(
-    LoginRequiredMixin, PermissionRequiredMixin, generic.ListView
-):
-    permission_required = "cube.view_component"
-    model = Component
-    template_name = "cube/component_popular.html"
+    filterset_class = ComponentFilter
 
     def get_queryset(self):
-        return Component.objects.annotate(
-            popularity=Count("versions__usage__id")
-        ).order_by("-popularity")[:50]
+        return Component.objects.annotate(usages_count=Count("versions__usage__id"))
 
 
 class ComponentDetailView(

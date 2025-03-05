@@ -49,11 +49,6 @@ urlpatterns = [
     # Components views
     path("components/", views.ComponentListView.as_view(), name="component_list"),
     path(
-        "components/popular/",
-        views.ComponentPopularListView.as_view(),
-        name="component_populars",
-    ),
-    path(
         "components/create/",
         views.ComponentCreateView.as_view(),
         name="component_create",
