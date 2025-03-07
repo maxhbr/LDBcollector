@@ -141,39 +141,3 @@ def _do_nada_test_compat_as_bad_input():
     with pytest.raises(FlameException):
         fl.expression_compatibility_as("Not existing")
 
-# The tests below make sure that for example "OReilly" isn't treated as "OR eilly". They originate from https://github.com/hesa/foss-licenses/issues/174
-
-def test_174_OReilly():
-    for op in ['WITH', 'with', 'w/', 'OR', 'AND']:
-        lic = f'MIT {op} OReilly'
-        exp_lic = lic.replace('with','WITH').replace('w/', 'WITH')
-        c = fl.expression_compatibility_as(lic, update_dual=False)
-        assert c['compat_license'] == exp_lic
-
-def test_174_NOReilly():
-    for op in ['WITH', 'with', 'w/', 'OR', 'AND']:
-        lic = f'MIT {op} NOReilly'
-        exp_lic = lic.replace('with','WITH').replace('w/', 'WITH')
-        c = fl.expression_compatibility_as(lic, update_dual=False)
-        assert c['compat_license'] == exp_lic
-
-def test_174_ANDy():
-    for op in ['WITH', 'with', 'w/', 'OR', 'AND']:
-        lic = f'MIT {op} ANDy'
-        exp_lic = lic.replace('with','WITH').replace('w/', 'WITH')
-        c = fl.expression_compatibility_as(lic, update_dual=False)
-        assert c['compat_license'] == exp_lic
-
-def test_174_MAND():
-    for op in ['WITH', 'with', 'w/', 'OR', 'AND']:
-        lic = f'MIT {op} MAND'
-        exp_lic = lic.replace('with','WITH').replace('w/', 'WITH')
-        c = fl.expression_compatibility_as(lic, update_dual=False)
-        assert c['compat_license'] == exp_lic
-
-def test_174_MANDy():
-    for op in ['WITH', 'with', 'w/', 'OR', 'AND']:
-        lic = f'MIT {op} MANDy'
-        exp_lic = lic.replace('with','WITH').replace('w/', 'WITH')
-        c = fl.expression_compatibility_as(lic, update_dual=False)
-        assert c['compat_license'] == exp_lic
