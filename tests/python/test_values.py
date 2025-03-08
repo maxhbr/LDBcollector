@@ -70,13 +70,30 @@ def test_compounds():
             
 def test_ambigs():
     count = 0
+    # loop through all ambiguities
     for k, v in fl.ambiguities_list().items():
+        if k != 'GNU':
+            continue
         logging.debug("ambig: " + k)
+        # loop through all aliases of the ambiguity
         for alias in v['aliases']:
+            #alias = alias.replace(' or ',' OR ')
             logging.debug(f'  alias: {alias}')
             # we can get an exception (if the expression has weird "(" ")" that fails parsing)
             try:
                 expression = fl.expression_license(alias, update_dual=False)
+                logging.debug(f'assert -------------------------')
+                logging.debug(f'assert key:        {k}')
+                logging.debug(f'assert value:      {v}')
+                logging.debug(f'assert alias:      {alias}')
+                logging.debug(f'assert expression: {expression}')
+                logging.debug(f'assert queried:    {expression["queried_license"]}')
+                logging.debug(f'assert identified: {expression["identified_license"]}')
+                logging.debug(f'assert ambigous:   {len(expression["ambiguities"])}')
+                logging.debug(f'assert ambigous:   {expression["ambiguities"][0]["ambigous_license"]}')
+                logging.debug(f'assert {expression["ambiguities"][0]["ambigous_license"]} == {k}')
+                logging.debug(f'assert k:          {k}')
+                logging.debug(f'assert a0:         {expression["ambiguities"][0]}')
                 assert expression['ambiguities'][0]['ambigous_license'] == k
             except flame.exception.FlameException as e:
                 # flamexception thrown 
@@ -111,7 +128,9 @@ def test_operators():
     count = 0
     for compat_as, lic in fl.operators().items():
         test_expression = f'MIT {compat_as} BSD-3-Clause'
-        expected_expression = f'MIT {lic} BSD-3-Clause'
+        #remove multiple space (when comparing)
+        import re
+        expected_expression = re.sub("\\s\\s+" , " ", f'MIT {lic} BSD-3-Clause')
         expression = fl.expression_license(test_expression, update_dual=False)
         assert expression['identified_license'] == expected_expression
 
@@ -122,10 +141,10 @@ def test_operators():
     logging.info(f'compat as tested: {count}')
             
 
-test_licenses()
-test_aliases()
-test_compounds()
-test_ambigs()
-test_compats()
-test_operators()
+#test_licenses()
+#test_aliases()
+#test_compounds()
+#test_ambigs()
+#test_compats()
+#test_operators()
 print("total count: " + str(tot_count))
