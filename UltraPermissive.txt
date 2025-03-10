@@ -25,6 +25,21 @@ text = '''
 text here
 '''
 
+package = aastr
+location = https://github.com/adventuregamestudio/ags/tree/master/Common/libsrc/aastr-0.1.1
+text = '''
+This file is gift-ware.  This file is given to you freely
+as a gift.  You may use, modify, redistribute, and generally hack
+it about in any way you like, and you do not have to give anyone
+anything in return.
+
+I do not accept any responsibility for any effects, adverse or
+otherwise, that this code may have on just about anything that
+you can think of.  Use it at your own risk.
+
+Copyright (C) 1998, 1999  Michael Bukin
+'''
+
 package = crosswords
 location = http://web.archive.org/web/20230405115957/https://peterbroda.me/crosswords/wordlist/
 text = '''
