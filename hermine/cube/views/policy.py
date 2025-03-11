@@ -4,7 +4,9 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, UpdateView, ListView, DeleteView
+from django_filters.views import FilterView
 
+from cube.filters import DerogationFilter
 from cube.forms.policy import (
     LicenseChoiceCreateForm,
     LicenseChoiceUpdateForm,
@@ -17,11 +19,15 @@ from cube.models import (
 from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin, QuerySuccessUrlMixin
 
 
-class AuthorizedContextListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+class AuthorizedContextListView(
+    LoginRequiredMixin, PermissionRequiredMixin, FilterView
+):
     queryset = Derogation.objects.filter(product=None, release=None)
     permission_required = "cube.view_derogation"
     template_name = "cube/authorizedcontext_list.html"
+    filterset_class = DerogationFilter
     context_object_name = "authorized_contexts"
+    paginate_by = 30
 
 
 class AuthorizedContextUpdateView(
@@ -55,14 +61,17 @@ class AuthorizedContextCreateView(
         return reverse("cube:license_detail", args=[self.object.license.id])
 
 
-class DerogationListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+class DerogationListView(LoginRequiredMixin, PermissionRequiredMixin, FilterView):
     permission_required = "cube.view_derogation"
     model = Derogation
     context_object_name = "derogations"
+    template_name = "cube/derogation_list.html"
+    filterset_class = DerogationFilter
     queryset = Derogation.objects.exclude(
         product=None,
         release=None,
     )
+    paginate_by = 30
 
 
 class DerogationDeleteView(

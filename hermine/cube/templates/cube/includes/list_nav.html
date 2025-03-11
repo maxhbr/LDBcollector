@@ -19,13 +19,15 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endif %}
         {% for field in filter.form %}
           {% if field.name|slice:"0:6" == 'search' %}
-            <div class="field has-addons">
-              <div class="control">
-                <label class="is-sr-only" for="{{ field.name }}_field">{{ field.label }}</label>
-                <input id="{{ field.name }}_field" class="input is-small" name="{{ field.name }}" placeholder="{{ field.label }}" value="{{ field.value|default_if_none:"" }}" />
+            <div class="field bulma has-addons">
+              <div class="field-label">
+                <label for="{{ field.name }}_field">{{ field.label }}</label>
               </div>
               <div class="control">
-                <button class="button is-small" type="submit">{{ field.label }}</button>
+                <input id="{{ field.name }}_field" class="input is-small" name="{{ field.name }}" value="{{ field.value|default_if_none:"" }}" />
+              </div>
+              <div class="control">
+                <button class="button is-small" type="submit">Search</button>
               </div>
             </div>
           {% else %}
