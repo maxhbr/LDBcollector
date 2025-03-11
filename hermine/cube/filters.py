@@ -56,6 +56,18 @@ class LicenseFilter(
     o = django_filters.OrderingFilter(fields=("spdx_id", "policy__allowed"))
 
 
+class LicenseCurationFilter(
+    django_filters.FilterSet,
+):
+    search_component = ComponentOrVersionFilter()
+    search_expression_in = django_filters.CharFilter(
+        field_name="expression_in", lookup_expr="icontains", label="Stated license"
+    )
+    search_expression_out = django_filters.CharFilter(
+        field_name="expression_out", lookup_expr="icontains", label="Corrected license"
+    )
+
+
 class ComponentFilter(
     django_filters.FilterSet,
 ):

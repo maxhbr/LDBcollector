@@ -11,11 +11,11 @@ from django.urls import reverse_lazy
 from django.views import generic
 from django_filters.views import FilterView
 
-from cube.filters import ComponentFilter
+from cube.filters import ComponentFilter, LicenseCurationFilter
 from cube.forms.components import LicenseCurationCreateForm, LicenseCurationUpdateForm
 from cube.models import Component, LicenseCuration, Funding, Version
 from cube.utils.funding import get_fundings_from_purl
-from cube.views.mixins import SearchMixin, SaveAuthorMixin, QuerySuccessUrlMixin
+from cube.views.mixins import SaveAuthorMixin, QuerySuccessUrlMixin
 
 
 class ComponentListView(
@@ -129,20 +129,12 @@ class VersionUpdateView(
         return reverse_lazy("cube:component_detail", args=[self.object.component.id])
 
 
-class LicenseCurationListView(
-    LoginRequiredMixin, PermissionRequiredMixin, SearchMixin, generic.ListView
-):
-    search_fields = (
-        "expression_in",
-        "expression_out",
-        "component__name",
-        "version__component__name",
-        "version__purl",
-    )
+class LicenseCurationListView(LoginRequiredMixin, PermissionRequiredMixin, FilterView):
     permission_required = "cube.view_licensecuration"
     paginate_by = 50
     model = LicenseCuration
     template_name = "cube/licensecuration_list.html"
+    filterset_class = LicenseCurationFilter
 
 
 class LicenseCurationCreateView(
