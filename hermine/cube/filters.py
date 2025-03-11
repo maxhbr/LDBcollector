@@ -80,3 +80,12 @@ class DerogationFilter(django_filters.FilterSet):
     linking = ValueFilter()
     modification = ValueFilter()
     exploitation = ValueFilter()
+
+
+class LicenseChoiceFilter(django_filters.FilterSet):
+    search_expression_in = django_filters.CharFilter(
+        field_name="expression_in", lookup_expr="icontains", label="License expression"
+    )
+    search_expression_out = django_filters.CharFilter(
+        field_name="expression_out", lookup_expr="icontains", label="Choice"
+    )

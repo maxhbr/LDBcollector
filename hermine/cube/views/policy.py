@@ -3,10 +3,10 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.urls import reverse, reverse_lazy
-from django.views.generic import CreateView, UpdateView, ListView, DeleteView
+from django.views.generic import CreateView, UpdateView, DeleteView
 from django_filters.views import FilterView
 
-from cube.filters import DerogationFilter
+from cube.filters import DerogationFilter, LicenseChoiceFilter
 from cube.forms.policy import (
     LicenseChoiceCreateForm,
     LicenseChoiceUpdateForm,
@@ -90,11 +90,12 @@ class DerogationDeleteView(
         return context
 
 
-class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, FilterView):
     permission_required = "cube.view_licensechoice"
     model = LicenseChoice
     template_name = "cube/licensechoice_list.html"
     paginate_by = 50
+    filterset_class = LicenseChoiceFilter
     queryset = LicenseChoice.objects.filter(
         product__isnull=True,
         release__isnull=True,
