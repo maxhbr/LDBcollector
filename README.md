@@ -58,6 +58,6 @@ our [Contribution Guidelines](https://licenselynx.org/contribution) for detailed
 
 ## License
 
-This project is licensed under the [Apache License, Version 2.0](LICENSE).
+This project is licensed under the [Apache License, Version 2.0](LICENSE) (SPDX-License-Identifier: Apache-2.0).
 
 Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED

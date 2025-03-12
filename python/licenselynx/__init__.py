@@ -1,3 +1,3 @@
-# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
-
+# SPDX-FileCopyrightText: Copyright 2025 Siemens AG
+# SPDX-License-Identifier: Apache-2.0
 """Licenselynx Python Library"""

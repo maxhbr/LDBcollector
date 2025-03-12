@@ -23,6 +23,6 @@ public class LicenseExample {
 
 ## License
 
-This project is licensed under the [Apache License, Version 2.0](../LICENSE.md).
+This project is licensed under the [Apache License, Version 2.0](../LICENSE.md) (SPDX-License-Identifier: Apache-2.0).
 
 Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
