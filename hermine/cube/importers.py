@@ -339,7 +339,7 @@ def add_dependency(
     except Exploitation.DoesNotExist:
         exploitation = ""
 
-    Usage.objects.get_or_create(
+    return Usage.objects.get_or_create(
         version_id=version.id,
         release_id=release_id,
         project=project,

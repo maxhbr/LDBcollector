@@ -184,3 +184,18 @@ class UploadORTSerializer(serializers.Serializer):
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+
+
+class DependencySerializer(serializers.Serializer):
+    release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
+    purl_type = serializers.CharField(max_length=200, required=True)
+    name = serializers.CharField(max_length=200, required=True)
+    version_number = serializers.CharField(max_length=200, required=True)
+    declared_license_expr = serializers.CharField(max_length=500, required=False)
+    spdx_valid_license_expr = serializers.CharField(max_length=500, required=False)
+    linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    purl = serializers.CharField(max_length=250, required=False)
+    default_project_name = serializers.CharField(max_length=750, required=False)
+    default_scope_name = serializers.CharField(max_length=50, required=False)
+    homepage_url = serializers.CharField(max_length=500, required=False)
+    description = serializers.CharField(max_length=500, required=False)

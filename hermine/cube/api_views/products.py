@@ -14,11 +14,13 @@ from rest_framework.mixins import CreateModelMixin
 from rest_framework.parsers import MultiPartParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework import serializers
 
 from cube.importers import (
     import_spdx_file,
     import_cyclonedx_file,
     import_ort_evaluated_model_json_file,
+    add_dependency,
 )
 from cube.models import Product, Release, Exploitation
 from cube.serializers import (
@@ -26,7 +28,9 @@ from cube.serializers import (
     UploadSPDXSerializer,
     UploadCycloneDXSerializer,
     UploadORTSerializer,
+    DependencySerializer,
 )
+from cube.serializers.components import UsageSerializer
 from cube.serializers.products import (
     ProductSerializer,
     ExpressionValidationSerializer,
@@ -463,3 +467,47 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             linking=serializer.validated_data.get("linking", ""),
         )
         return Response()
+
+
+class CreateSingleDependencyViewSet(viewsets.GenericViewSet):
+    permission_classes = [IsAuthenticated]
+    parser_classes = (MultiPartParser,)
+
+    @swagger_auto_schema(
+        request_body=DependencySerializer(),
+        responses={201: UsageSerializer()},
+    )
+    def create(self, request, *args, **kwargs):
+        """Upload a single dependency."""
+        request.user.has_perm("cube.change_release")
+        serializer = DependencySerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        release = serializer.validated_data["release"]
+        purl_type = serializer.validated_data["purl_type"]
+        name = serializer.validated_data["name"]
+        try:
+            usage, _ = add_dependency(
+                release.id,
+                purl_type,
+                name,
+                version_number=serializer.validated_data.get(
+                    "version_number", "Current"
+                ),
+                concluded_license=serializer.validated_data.get(
+                    "spdx_valid_license_expr", ""
+                ),
+                declared_license=serializer.validated_data.get(
+                    "declared_license_expr", ""
+                ),
+                purl=serializer.validated_data.get("purl", ""),
+                scope=serializer.validated_data.get("default_scope_name", ""),
+                linking=serializer.validated_data.get("linking", ""),
+                project=serializer.validated_data.get("default_project_name", ""),
+                component_defaults={
+                    "homepage_url": serializer.validated_data.get("homepage_url", ""),
+                    "description": serializer.validated_data.get("description", ""),
+                },
+            )
+            return Response(UsageSerializer(usage).data)
+        except ValueError as e:
+            raise serializers.ValidationError(e)
