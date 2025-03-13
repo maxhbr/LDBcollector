@@ -48,6 +48,7 @@ services:
       - EMAIL_USE_SSL=${HERMINE_EMAIL_USE_SSL:-True} # activate for connections using STARTSSL (usually on port 587)
       - DEFAULT_FROM_EMAIL=${HERMINE_FROM_EMAIL}
       - FORCE_SCRIPT_NAME=${HERMINE_FORCE_SCRIPT_NAME}
+      - AUTH_TOKEN_HASH=${HERMINE_AUTH_TOKEN_HASH} # default is sha256
     links:
       - db
     networks:

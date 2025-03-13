@@ -14,6 +14,7 @@ from django.conf import settings
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "your-django-secret-key"
+# AUTH_TOKEN_HASH = "sha256" # any hash algorithm supported by hashlib
 
 HOST = "example.com"
 # Reverse proxy configuration

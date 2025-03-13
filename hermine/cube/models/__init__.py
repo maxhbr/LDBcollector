@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib.auth.models import User
 
+from cube.models.auth import Token
 from cube.models.components import Component, Version, Usage, Funding
 from cube.models.licenses import License, LicensePolicy, Team, Generic, Obligation
 from cube.models.policy import (
