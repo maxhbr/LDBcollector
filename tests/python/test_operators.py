@@ -30,6 +30,8 @@ def __test_impl(lic_expr1, lic_op, lic_expr2, expected_lic, addons):
 
 
 def test_and_mit_gpl2():
+    # For some operators we require separators, for other not
+    # This is reflected in the array/list below
     for op in [' AND ', '<AND>', ' & ', ' && ']:
         __test_impl('mit', op, 'GPLv2', 'MIT AND GPL-2.0-only', ['', ' '])
 
