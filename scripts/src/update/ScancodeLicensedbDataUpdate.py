@@ -31,36 +31,19 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
         Returns:
             aliases (list): the aliases for the given license
         """
-
-        license_key = None
-        if is_spdx:
-            license_key = license_data["key"]
         short_name = license_data["short_name"]
         name = license_data["name"]
+        aliases = {short_name, name}
 
-        license_ref_spdy_key = None
-
+        if is_spdx:
+            license_key = license_data["key"]
+            aliases.update([license_key])
         if "spdx_license_key" in license_data and license_data["spdx_license_key"].startswith("LicenseRef"):
             license_ref_spdy_key = license_data["spdx_license_key"]
+            aliases.update([license_ref_spdy_key])
         if "other_spdx_license_keys" in license_data:
             other_spdx_license_keys = license_data["other_spdx_license_keys"]
-            aliases = set(other_spdx_license_keys)
-
-            if is_spdx:
-                aliases.update([license_key, short_name, name])
-            else:
-                aliases.update([short_name, name])
-            if license_ref_spdy_key:
-                aliases.update([license_ref_spdy_key])
-        else:
-            self._LOGGER.debug(f"No other spdx license keys for {license_data['key']}")
-            if is_spdx:
-                aliases = {license_key, short_name, name}
-            else:
-                aliases = {short_name, name}
-
-            if license_ref_spdy_key:
-                aliases.update([license_ref_spdy_key])
+            aliases.update(other_spdx_license_keys)
 
         return list(aliases)
 

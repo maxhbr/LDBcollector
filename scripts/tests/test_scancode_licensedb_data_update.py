@@ -12,12 +12,12 @@ def test_get_alias_with_spdx(capsys):
         "key": "mit",
         "short_name": "MIT",
         "name": "MIT License",
-        "other_spdx_license_keys": ["mit-alt"]
+        "other_spdx_license_keys": ["mit-alt", "mit-license"]
     }
     scancode_licensedb_data_update = ScancodeLicensedbDataUpdate()
 
     alias = scancode_licensedb_data_update.get_aliases(license_data, is_spdx=True)
-    assert set(alias) == {"mit", "MIT", "MIT License", "mit-alt"}
+    assert set(alias) == {"mit", "MIT", "MIT License", "mit-alt", "mit-license"}
 
 
 def test_get_alias_without_spdx(capsys):
