@@ -3,27 +3,28 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from itertools import groupby, chain
 
+from django.db import transaction
 from django.http import HttpResponse
 from django.urls import reverse
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from junit_xml import TestCase, TestSuite, to_xml_report_string
+from rest_framework import serializers
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.mixins import CreateModelMixin
 from rest_framework.parsers import MultiPartParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from rest_framework import serializers
 
 from cube.importers import (
-    add_import_history,
+    add_import_history_entry,
     import_spdx_file,
     import_cyclonedx_file,
     import_ort_evaluated_model_json_file,
     add_dependency,
 )
-from cube.models import Product, Release, Exploitation
+from cube.models import Product, Release, Exploitation, SBOMImport
 from cube.serializers import (
     ReleaseSerializer,
     UploadSPDXSerializer,
@@ -53,7 +54,6 @@ from cube.utils.release_validation import (
     validate_policy,
     apply_curations,
 )
-from cube.models.products import BomType
 
 
 class ProductViewSet(viewsets.ModelViewSet):
@@ -405,6 +405,7 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
         self.request.user.has_perm("cube.change_release")
         return super().create(request, *args, **kwargs)
 
+    @transaction.atomic()
     def perform_create(self, serializer):
         spdx_file = serializer.validated_data["spdx_file"]
         release = serializer.validated_data["release"]
@@ -418,9 +419,10 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             ),
             default_scope_name=serializer.validated_data.get("default_scope_name", ""),
         )
-        add_import_history(
+        add_import_history_entry(
             spdx_file,
-            BomType.BOM_SPDX,
+            SBOMImport.BOM_SPDX,
+            serializer.validated_data.get("replace", False),
             serializer.validated_data.get("linking", ""),
             self.request.user,
             release,
@@ -439,6 +441,7 @@ class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
         self.request.user.has_perm("cube.change_release")
         return super().create(request, *args, **kwargs)
 
+    @transaction.atomic()
     def perform_create(self, serializer):
         cyclonedx_file = serializer.validated_data["cyclonedx_file"]
         release = serializer.validated_data["release"]
@@ -452,9 +455,10 @@ class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             ),
             default_scope_name=serializer.validated_data.get("default_scope_name", ""),
         )
-        add_import_history(
+        add_import_history_entry(
             cyclonedx_file,
-            BomType.BOM_CYCLONEDX,
+            SBOMImport.BOM_CYCLONEDX,
+            serializer.validated_data.get("replace", False),
             serializer.validated_data.get("linking", ""),
             self.request.user,
             release,
@@ -473,6 +477,7 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
         self.request.user.has_perm("cube.change_release")
         return super().create(request, *args, **kwargs)
 
+    @transaction.atomic()
     def perform_create(self, serializer):
         ort_file = serializer.validated_data["ort_file"]
         release = serializer.validated_data["release"]
@@ -482,9 +487,10 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
         )
-        add_import_history(
+        add_import_history_entry(
             ort_file,
-            BomType.BOM_ORT,
+            SBOMImport.BOM_ORT,
+            serializer.validated_data.get("replace", False),
             serializer.validated_data.get("linking", ""),
             self.request.user,
             release,

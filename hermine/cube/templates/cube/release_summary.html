@@ -168,7 +168,6 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </div>
   </div>
-  <!--- Added by JEMAI Ahmed [Issue 207]--->
   <div class="card">
     <header class="card-header">
       <p class="card-header-title">
@@ -182,28 +181,30 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <th>File name</th>
             <th>Format</th>
-            <th>Component link</th>
+            <th>Mode</th>
+            <th>Component linking</th>
             <th>Date</th>
             <th>Author</th>
           </tr>
         </thead>
         <tbody>
-          {% for history in history_model_data %}
+          {% for import in release.import_history.all %}
             <tr>
-              <td> {{history.file_name}}</td>
-              <td> {{history.file_type}} </td>
-              <td> {{history.file_component_link}} </td>
-              <td> {{history.importation_date}} </td>
-              <td>{{history.importation_author}} </td>
-
+              <td>{{ import.file_name }}</td>
+              <td>{{ import.file_type }}</td>
+              <td>{{ import.get_mode_display }}</td>
+              <td>{{ import.get_linking_display }}</td>
+              <td>{{ import.date }}</td>
+              <td>{{ import.user }}</td>
             </tr>
-
+          {% empty %}
+            <tr>
+              <td colspan="5"><em>No import history</em></td>
+            </tr>
           {% endfor %}
         </tbody>
       </table>
     </div>
   </div>
-
-  <!------------------->
 {% endblock %}
 

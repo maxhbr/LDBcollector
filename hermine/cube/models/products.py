@@ -7,17 +7,6 @@ from django.db import models
 from django.urls import reverse_lazy
 
 
-class BomType:
-    BOM_ORT = "ORTBom"
-    BOM_SPDX = "SPDXBom"
-    BOM_CYCLONEDX = "CYCLONEDXBom"
-    BOM_CHOICES = (
-        (BOM_ORT, "ORT Evaluated model (JSON)"),
-        (BOM_SPDX, "SPDX Bill of Materials"),
-        (BOM_CYCLONEDX, "CycloneDX Bill of Materials (JSON)"),
-    )
-
-
 class Product(models.Model):
     """
     A product which dependencies are to be audited.
@@ -131,15 +120,3 @@ class Exploitation(models.Model):
 
     class Meta:
         unique_together = ["release", "scope", "project"]
-
-
-######### Added by JEMAI Ahmed [Issue 207] ############
-class ImportHistory(models.Model):
-    file_name = models.CharField(max_length=200, blank=True)
-    file_type = models.CharField(max_length=12, choices=BomType.BOM_CHOICES, blank=True)
-    file_component_link = models.CharField(max_length=20, blank=True)
-    importation_date = models.DateTimeField(max_length=20, blank=True)
-    importation_author = models.ForeignKey(User, on_delete=models.PROTECT, blank=True)
-    related_release = models.ForeignKey(
-        Release, on_delete=models.PROTECT, blank=True, default=1
-    )
