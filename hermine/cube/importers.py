@@ -466,12 +466,12 @@ def parse_spdx_file(spdx_file: File):
     return parse_file(spdx_file.name)
 
 
-def add_import_history_entry(file_name, file_type, mode, linking, user, release):
+def add_import_history_entry(file_name, file_type, mode, linking, user, release_id):
     SBOMImport.objects.create(
         file_name=file_name,
         file_type=file_type,
         mode=mode,
         linking=linking,
         user=user,
-        release=release,
+        release_id=release_id,
     )

@@ -6,15 +6,15 @@ from itertools import groupby, chain
 from django.db import transaction
 from django.http import HttpResponse
 from django.urls import reverse
+from django.utils.decorators import method_decorator
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import serializers
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.mixins import CreateModelMixin
 from rest_framework.parsers import MultiPartParser
-from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from cube.importers import (
@@ -24,7 +24,9 @@ from cube.importers import (
     import_ort_evaluated_model_json_file,
     add_dependency,
 )
-from cube.models import Product, Release, Exploitation, SBOMImport
+from cube.models import Product, Release, Exploitation
+from cube.models import SBOMImport
+from cube.permissions import UpdateSBOMPermissions
 from cube.serializers import (
     ReleaseSerializer,
     UploadSPDXSerializer,
@@ -394,24 +396,31 @@ class ExploitationViewSet(viewsets.ModelViewSet):
         serializer.save(release_id=self.kwargs["release_id"])
 
 
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: "Created"})
+)
 class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
-    permission_classes = [IsAuthenticated]  # Custom permissions in .create
+    permission_classes = [UpdateSBOMPermissions]
     serializer_class = UploadSPDXSerializer
     parser_classes = (MultiPartParser,)
 
-    @swagger_auto_schema(responses={201: "Created"})
-    def create(self, request, *args, **kwargs):
-        """Upload an SPDX file to Hermine."""
-        self.request.user.has_perm("cube.change_release")
-        return super().create(request, *args, **kwargs)
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
 
     @transaction.atomic()
     def perform_create(self, serializer):
         spdx_file = serializer.validated_data["spdx_file"]
-        release = serializer.validated_data["release"]
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
         import_spdx_file(
             spdx_file,
-            release.pk,
+            release_id,
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
             default_project_name=serializer.validated_data.get(
@@ -425,29 +434,36 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             serializer.validated_data.get("replace", False),
             serializer.validated_data.get("linking", ""),
             self.request.user,
-            release,
+            release_id,
         )
-        return Response()
+        return Response(status=status.HTTP_201_CREATED)
 
 
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: "Created"})
+)
 class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [UpdateSBOMPermissions]
     serializer_class = UploadCycloneDXSerializer
     parser_classes = (MultiPartParser,)
 
-    @swagger_auto_schema(responses={201: "Created"})
-    def create(self, request, *args, **kwargs):
-        """Upload a CycloneDX file to Hermine."""
-        self.request.user.has_perm("cube.change_release")
-        return super().create(request, *args, **kwargs)
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
 
     @transaction.atomic()
     def perform_create(self, serializer):
         cyclonedx_file = serializer.validated_data["cyclonedx_file"]
-        release = serializer.validated_data["release"]
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
         import_cyclonedx_file(
             cyclonedx_file,
-            release.pk,
+            release_id,
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
             default_project_name=serializer.validated_data.get(
@@ -461,29 +477,36 @@ class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             serializer.validated_data.get("replace", False),
             serializer.validated_data.get("linking", ""),
             self.request.user,
-            release,
+            release_id,
         )
-        return Response()
+        return Response(status=status.HTTP_201_CREATED)
 
 
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: "Created"})
+)
 class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [UpdateSBOMPermissions]
     serializer_class = UploadORTSerializer
     parser_classes = (MultiPartParser,)
 
-    @swagger_auto_schema(responses={201: "Created"})
-    def create(self, request, *args, **kwargs):
-        """Upload an ORT Evaluated model file to Hermine."""
-        self.request.user.has_perm("cube.change_release")
-        return super().create(request, *args, **kwargs)
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
 
     @transaction.atomic()
     def perform_create(self, serializer):
         ort_file = serializer.validated_data["ort_file"]
-        release = serializer.validated_data["release"]
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
         import_ort_evaluated_model_json_file(
             ort_file,
-            release.id,
+            release_id,
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
         )
@@ -493,30 +516,35 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             serializer.validated_data.get("replace", False),
             serializer.validated_data.get("linking", ""),
             self.request.user,
-            release,
+            release_id,
         )
-        return Response()
+        return Response(status=status.HTTP_201_CREATED)
 
 
-class CreateSingleDependencyViewSet(viewsets.GenericViewSet):
-    permission_classes = [IsAuthenticated]
-    parser_classes = (MultiPartParser,)
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: UsageSerializer()})
+)
+class CreateSingleDependencyViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [UpdateSBOMPermissions]
+    serializer_class = DependencySerializer
 
-    @swagger_auto_schema(
-        request_body=DependencySerializer(),
-        responses={201: UsageSerializer()},
-    )
-    def create(self, request, *args, **kwargs):
-        """Upload a single dependency."""
-        request.user.has_perm("cube.change_release")
-        serializer = DependencySerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        release = serializer.validated_data["release"]
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
+
+    def perform_create(self, serializer):
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
         purl_type = serializer.validated_data["purl_type"]
         name = serializer.validated_data["name"]
         try:
             usage, _ = add_dependency(
-                release.id,
+                release_id,
                 purl_type,
                 name,
                 version_number=serializer.validated_data.get(
