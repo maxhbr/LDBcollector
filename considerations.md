@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2025 Henrik Sandklef <hesa@sandklef.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
 
 # Replacing alias, operators etc
 
