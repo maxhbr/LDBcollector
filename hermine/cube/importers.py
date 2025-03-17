@@ -1,5 +1,4 @@
-# SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
-# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+# SPDX-FileCopyrightText: 2025 Hermine-team <hermine@inno3.fr>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
@@ -23,7 +22,7 @@ from spdx_tools.spdx.model import ExternalPackageRefCategory
 from spdx_tools.spdx.parser.error import SPDXParsingError
 from spdx_tools.spdx.parser.parse_anything import parse_file
 
-from cube.models import Component, Version, Usage, Exploitation
+from cube.models import Component, Version, Usage, Exploitation, SBOMImport
 from cube.utils.spdx import is_valid, simplified
 
 logger = logging.getLogger(__name__)
@@ -465,3 +464,14 @@ def parse_spdx_file(spdx_file: File):
         return parse_file(spdx_file.temporary_file_path())
 
     return parse_file(spdx_file.name)
+
+
+def add_import_history_entry(file_name, file_type, mode, linking, user, release):
+    SBOMImport.objects.create(
+        file_name=file_name,
+        file_type=file_type,
+        mode=mode,
+        linking=linking,
+        user=user,
+        release=release,
+    )

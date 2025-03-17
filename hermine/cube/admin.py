@@ -17,6 +17,7 @@ from .models import LicensePolicy
 from .models import Obligation
 from .models import Product
 from .models import Release
+from .models import SBOMImport
 from .models import Team
 from .models import Usage
 from .models import Version
@@ -300,6 +301,20 @@ class DerogationAdmin(UsageRuleAdminMixin, admin.ModelAdmin):
     )
 
 
+class SBOMImportAdmin(admin.ModelAdmin):
+    list_display = (
+        "file_name",
+        "file_type",
+        "mode",
+        "linking",
+        "date",
+        "user",
+        "release",
+    )
+    fields = ("file_name", "file_type", "mode", "linking", "date", "user", "release")
+    readonly_fields = fields
+
+
 admin.site.register(License, LicenseAdmin)
 admin.site.register(LicensePolicy, LicensePolicyAdmin)
 admin.site.register(Obligation, ObligationAdmin)
@@ -316,3 +331,4 @@ admin.site.register(LicenseChoice, LicenseChoiceAdmin)
 admin.site.register(Derogation, DerogationAdmin)
 admin.site.register(Exploitation)
 admin.site.register(Team)
+admin.site.register(SBOMImport, SBOMImportAdmin)

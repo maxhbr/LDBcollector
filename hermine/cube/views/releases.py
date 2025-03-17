@@ -7,6 +7,7 @@ import logging
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.db import transaction
 from django.forms import Form
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -29,12 +30,9 @@ from cube.importers import (
     import_spdx_file,
     import_cyclonedx_file,
     SBOMImportFailure,
+    add_import_history_entry,
 )
-from cube.models import (
-    Release,
-    Usage,
-    Generic,
-)
+from cube.models import Release, Usage, Generic, SBOMImport
 from cube.utils.licenses import (
     get_usages_obligations,
     get_generic_usages,
@@ -86,17 +84,18 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     def get_success_url(self):
         return reverse("cube:release_import", kwargs={"pk": self.object.pk})
 
+    @transaction.atomic()
     def form_valid(self, form):
-        replace = form.cleaned_data["import_mode"] == ImportBomForm.IMPORT_MODE_REPLACE
+        replace = form.cleaned_data["import_mode"] == SBOMImport.IMPORT_MODE_REPLACE
         try:
-            if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
+            if form.cleaned_data["bom_type"] == SBOMImport.BOM_ORT:
                 import_ort_evaluated_model_json_file(
                     self.request.FILES["file"],
                     self.object.pk,
                     replace,
                     linking=form.cleaned_data.get("linking"),
                 )
-            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_SPDX:
+            elif form.cleaned_data["bom_type"] == SBOMImport.BOM_SPDX:
                 import_spdx_file(
                     self.request.FILES["file"],
                     self.object.pk,
@@ -105,7 +104,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     default_project_name=form.cleaned_data.get("default_project_name"),
                     default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
-            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_CYCLONEDX:
+            elif form.cleaned_data["bom_type"] == SBOMImport.BOM_CYCLONEDX:
                 import_cyclonedx_file(
                     self.request.FILES["file"],
                     self.object.pk,
@@ -114,6 +113,14 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     default_project_name=form.cleaned_data.get("default_project_name"),
                     default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
+            add_import_history_entry(
+                self.request.FILES["file"],
+                form.cleaned_data["bom_type"],
+                form.cleaned_data.get("import_mode"),
+                form.cleaned_data.get("linking"),
+                self.request.user,
+                self.object,
+            )
         except SBOMImportFailure as e:
             form.add_error("file", e)
             return super().form_invalid(form)
