@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2025 Henrik Sandklef <hesa@sandklef.com>
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-# Replacing alias, operators etc
+# Order of replacing alias, operators etc
 
 ## Approaches
 
@@ -23,7 +23,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 | update expr           | MIT AND GPL-2.0-only         |
 | Status                | OK                           |
 
-
+The examples above show that updating operators first and then expressions does not work.
 
 
 ### Expression first approach
@@ -42,4 +42,5 @@ SPDX-License-Identifier: GPL-3.0-or-later
 | Status                | Fail                         |
 
 
+The examples above show that updating expressions first and then operators does not work.
 
