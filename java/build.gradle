@@ -160,9 +160,9 @@ tasks.register("checkAndDownloadJson") {
 }
 
 tasks.named("processResources") {
-    def isCI = providers.gradleProperty("isCI")
+    def isCI = System.getenv("CI")
 
-    if (!isCI.present) {
+    if (!isCI) {
         dependsOn("checkAndDownloadJson")
     }
 }

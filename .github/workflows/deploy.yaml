@@ -63,7 +63,7 @@ jobs:
           mkdir ./java/src/main/resources/
           python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
           cd java
-          gradle ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport -PisCI=true
+          gradle ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport
 
   test-and-lint-typescript:
     runs-on: ubuntu-latest
@@ -88,8 +88,14 @@ jobs:
 
 
 
-  deploy-python:
+  pypi-publish:
+    name: Upload release to PyPI
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/licenselynx
+    permissions:
+      id-token: write
     needs: test-and-lint-python
     steps:
       - name: Checkout
@@ -110,16 +116,20 @@ jobs:
       - name: Install dependencies
         run: |
           cd python
-          poetry install --no-root
+          poetry install --sync --no-interaction
       - name: Copy LICENSE file
         run: |
           cp LICENSE python/LICENSE
-      - name: Build and publish
+      - name: Package project
         run: |
           mkdir -p python/licenselynx/resources
           python3 scripts/src/load/merge_data.py -o ./python/licenselynx/resources/merged_data.json
           cd python
-          poetry publish --build -vvv
+          poetry build
+      - name: Publish package to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: python/dist
 
 
   deploy-java:
@@ -140,11 +150,12 @@ jobs:
       - name: Run build
         run: |
           cd java
-          gradle --stacktrace --no-daemon clean build
+          gradle --stacktrace --no-daemon clean build  -PisCI=true
       - name: Run publish
         run: |
           mkdir ./java/src/main/resources/
           python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
+          cd java
           gradle --stacktrace --no-daemon publishMavenJavaPublicationToMavenCentralStagingRepository
         env:
           signingKey: ${{ secrets.SIGNINGKEY }}
@@ -163,6 +174,9 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
+      - name: Copy LICENSE file
+        run: |
+          cp LICENSE typescript/LICENSE
       - run: |
           python3 scripts/src/load/merge_data.py -o ./typescript/resources/merged_data.json
           cd typescript

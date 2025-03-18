@@ -33,7 +33,7 @@ jobs:
           python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
           cd java
           ls src/main/resources
-          gradle ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport publishToMavenLocal -PisCI=true | tee job.log
+          gradle ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport publishToMavenLocal | tee job.log
           cat job.log | grep -- " - Instruction Coverage: " | sed -e "s/.* //" > build/coverage.txt
       - name: Run coverage badge job
         run: |
