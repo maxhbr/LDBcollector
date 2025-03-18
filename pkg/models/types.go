@@ -92,12 +92,13 @@ func validateLicenseFields(l *LicenseDB) error {
 	if l.Text != nil && *l.Text == "" {
 		return errors.New("text cannot be an empty string")
 	}
-	if l.SpdxId != nil && *l.SpdxId == "" {
-		return errors.New("spdx_id cannot be an empty string")
-	} else {
-		valid, _ := spdxexp.ValidateLicenses([]string{*l.SpdxId})
-		if !valid {
-			return errors.New("spdx_id does not follow spdx license expression specifications")
+	if l.SpdxId != nil {
+		if *l.SpdxId == "" {
+			return errors.New("spdx_id cannot be an empty string")
+		} else {
+			if valid, _ := spdxexp.ValidateLicenses([]string{*l.SpdxId}); !valid {
+				return errors.New("spdx_id does not follow spdx license expression specifications")
+			}
 		}
 	}
 	if l.Risk != nil && (*l.Risk < 0 || *l.Risk > 5) {

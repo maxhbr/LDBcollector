@@ -719,6 +719,75 @@ const docTemplate = `{
                         }
                     }
                 }
+            },
+            "patch": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Update a license in the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Update a license",
+                "operationId": "UpdateLicense",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Shortname of the license to be updated",
+                        "name": "shortname",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Update license body (requires only the fields to be updated)",
+                        "name": "license",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseUpdateJSONSchema"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "License updated successfully",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid license body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "License with shortname not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "409": {
+                        "description": "License with same shortname already exists",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Failed to update license",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
             }
         },
         "/login": {
@@ -2618,6 +2687,98 @@ const docTemplate = `{
                         "GPL-2.0-only",
                         "GPL-2.0-or-later"
                     ]
+                }
+            }
+        },
+        "models.LicenseUpdateJSONSchema": {
+            "type": "object",
+            "properties": {
+                "FSFfree": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "Fedora": {
+                    "type": "string",
+                    "example": "Fedora"
+                },
+                "GPLv2compatible": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "GPLv3compatible": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "OSIapproved": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "active": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "copyleft": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "detector_type": {
+                    "type": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
+                    "example": 1
+                },
+                "external_ref": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
+                },
+                "flag": {
+                    "type": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
+                    "example": 1
+                },
+                "fullname": {
+                    "type": "string",
+                    "example": "MIT License"
+                },
+                "marydone": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "notes": {
+                    "type": "string",
+                    "example": "This license has been superseded."
+                },
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Obligation"
+                    }
+                },
+                "risk": {
+                    "type": "integer",
+                    "maximum": 5,
+                    "minimum": 0,
+                    "example": 1
+                },
+                "source": {
+                    "type": "string",
+                    "example": "Source"
+                },
+                "spdx_id": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                },
+                "text_updatable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "url": {
+                    "type": "string",
+                    "example": "https://opensource.org/licenses/MIT"
                 }
             }
         },
