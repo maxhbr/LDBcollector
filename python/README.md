@@ -5,7 +5,11 @@ The return value is an object with the canonical name and the source of the lice
 
 ## Installation
 
-UNDER CONSTRUCTION 
+To install the library, run following command:
+
+```shell
+pip install licenselynx 
+```
 
 ## Usage
 

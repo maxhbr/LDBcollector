@@ -61,6 +61,7 @@ venv
 /typescript/_support/
 /typescript/coverage/
 
+/**/*.txt
 /**/*.js
 /**/*.xml
 /**/*.json

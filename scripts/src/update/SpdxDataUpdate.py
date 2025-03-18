@@ -92,7 +92,7 @@ class SpdxDataUpdate(BaseDataUpdate):
                 self.update_non_spdx_license_file(license_id, data, license_filepath, aliases[0])
             return None
 
-    def _process_licenses(self, url: str, json_id: str, license_list_type: str) -> list[str]:
+    def _process_licenses(self, url: str, json_id: str, license_list_type: str):
         """
         Processes the SPDX license list with the given url, json ID and license list type and either update or create
         a license file
@@ -109,8 +109,6 @@ class SpdxDataUpdate(BaseDataUpdate):
 
         files_list = os.listdir(self._DATA_DIR)
 
-        unprocessed_licenses = []
-
         for entry in license_list:
             # Get license id and extract from the url of the SPDX Page
             license_id = entry[json_id]
@@ -119,7 +117,7 @@ class SpdxDataUpdate(BaseDataUpdate):
             if f"{license_id}.json" not in files_list:
                 unprocessed_license_id = self.process_unrecognized_license_id([entry["name"]], license_id)
                 if unprocessed_license_id:
-                    unprocessed_licenses.append(unprocessed_license_id)
+                    self.create_license_file(unprocessed_license_id, [entry["name"]])
             else:
                 license_filepath = os.path.join(self._DATA_DIR, f"{license_id}.json")
                 data = self.load_json_file(license_filepath)
@@ -130,8 +128,6 @@ class SpdxDataUpdate(BaseDataUpdate):
 
         self.delete_file(filepath)
 
-        return unprocessed_licenses
-
     def process_licenses(self):
         """
         Processes the SPDX license and exception list and summarizes the unprocessed licenses.
@@ -140,13 +136,6 @@ class SpdxDataUpdate(BaseDataUpdate):
 
         spdx_exceptions_url = "https://raw.githubusercontent.com/spdx/license-list-data/main/json/exceptions.json"
 
-        unprocessed_licenses = {}
+        self._process_licenses(spdx_licenses_url, "licenseId", "licenses")
 
-        unprocessed_licenses.update(
-            {"licenses": self._process_licenses(spdx_licenses_url, "licenseId", "licenses")})
-        unprocessed_licenses.update(
-            {"exceptions": self._process_licenses(spdx_exceptions_url, "licenseExceptionId", "exceptions")})
-
-        number_unprocessed_licenses = len(unprocessed_licenses["licenses"]) + len(unprocessed_licenses["exceptions"])
-        self._LOGGER.info(f"Unprocessed {number_unprocessed_licenses}.\n"
-                          f"{unprocessed_licenses}")
+        self._process_licenses(spdx_exceptions_url, "licenseExceptionId", "exceptions")

@@ -9,6 +9,7 @@ plugins {
     id 'jacoco'
     id 'idea'
     id 'checkstyle'
+    id 'signing'
     id 'maven-publish'
     id 'org.ajoberstar.grgit' version '4.1.1'
     id 'org.barfuin.gradle.jacocolog' version '3.1.0'
@@ -303,7 +304,17 @@ publishing {
     repositories {
         maven {
             name = 'localBuildDir'
-            url = "$buildDir/maven-repo-test"
+            url = project.layout.buildDirectory.dir('maven-repo-test')
+        }
+        if (project.hasProperty('SB_SONATYPE_USER') && project.hasProperty('SB_SONATYPE_PASSWORD')) {
+            maven {
+                name = 'mavenCentralStaging'
+                url = 'https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/'
+                credentials {
+                    username = project.getProperty('SB_SONATYPE_USER')
+                    password = project.getProperty('SB_SONATYPE_PASSWORD')
+                }
+            }
         }
     }
     publications {
@@ -317,7 +328,8 @@ publishing {
                 licenses {
                     license {
                         name = 'Apache-2.0'
-                        url = project.ext.codeRepo + '/-/raw/v' + project.version + '/LICENSE.md'
+                        url = 'https://raw.githubusercontent.com/licenselynx/licenselynx/refs/tags/v' +
+                                project.version + '/LICENSE'
                     }
                 }
                 developers {
@@ -334,5 +346,18 @@ publishing {
                 }
             }
         }
+    }
+}
+if (!Boolean.parseBoolean(System.getenv('CI')) || project.hasProperty('signingKey')) {
+    signing {
+        if (Boolean.parseBoolean(System.getenv('CI'))) {
+            def signingKey = project.getProperty('signingKey')
+            def signingPassword = project.getProperty('signingPassword')
+            useInMemoryPgpKeys(signingKey, signingPassword)
+        }
+        else {
+            useGpgCmd()   // use local GPG installation and agent
+        }
+        sign publishing.publications.mavenJava
     }
 }

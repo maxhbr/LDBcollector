@@ -21,6 +21,11 @@
         "test": "jest --coverage",
         "lint": "eslint *.ts "
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/licenselynx/licenselynx.git",
+        "directory": "typescript/"
+    },
     "devDependencies": {
         "@babel/preset-typescript": "^7.24.1",
         "@eslint/eslintrc": "^3.2.0",

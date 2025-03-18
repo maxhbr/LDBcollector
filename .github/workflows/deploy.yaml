@@ -1,0 +1,176 @@
+name: Deploy libraries
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+jobs:
+  test-and-lint-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: |
+          pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry
+          cache-dependency-path: python/poetry.lock
+      - name: Set Poetry environment
+        run: |
+          cd python
+          poetry env use 3.11
+      - name: Install dependencies
+        run: |
+          cd python
+          poetry install --no-root
+      - name: Run the automated tests
+        run: |
+          cd python
+          poetry run pytest -vv
+      - name: Test build
+        run: |
+          mkdir -p python/licenselynx/resources
+          python3 scripts/src/load/merge_data.py -o ./python/licenselynx/resources/merged_data.json
+          cd python
+          poetry build
+          python3 check_files.py
+      - name: Run the linting
+        run: |
+          cd python
+          poetry run mypy licenselynx tests
+          poetry run flake8 licenselynx
+          poetry run flake8 tests
+
+  test-and-lint-java:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 8
+      - name: Setup Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Run build release
+        run: |
+          mkdir ./java/src/main/resources/
+          python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
+          cd java
+          gradle ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport -PisCI=true
+
+  test-and-lint-typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Set up node
+        run: |
+          cd typescript
+          npm ci --prefer-offline -no-audit
+      - name: Run the automated tests
+        run: |
+          cd typescript
+          npm run test
+      - name: Run linting
+        run: |
+          cd typescript
+          npm run lint
+
+
+
+  deploy-python:
+    runs-on: ubuntu-latest
+    needs: test-and-lint-python
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: |
+          pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry
+          cache-dependency-path: python/poetry.lock
+      - name: Set Poetry environment
+        run: |
+          cd python
+          poetry env use 3.11
+      - name: Install dependencies
+        run: |
+          cd python
+          poetry install --no-root
+      - name: Copy LICENSE file
+        run: |
+          cp LICENSE python/LICENSE
+      - name: Build and publish
+        run: |
+          mkdir -p python/licenselynx/resources
+          python3 scripts/src/load/merge_data.py -o ./python/licenselynx/resources/merged_data.json
+          cd python
+          poetry publish --build -vvv
+
+
+  deploy-java:
+    runs-on: ubuntu-latest
+    needs: test-and-lint-java
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 8
+      - name: Setup Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Run build
+        run: |
+          cd java
+          gradle --stacktrace --no-daemon clean build
+      - name: Run publish
+        run: |
+          mkdir ./java/src/main/resources/
+          python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
+          gradle --stacktrace --no-daemon publishMavenJavaPublicationToMavenCentralStagingRepository
+        env:
+          signingKey: ${{ secrets.SIGNINGKEY }}
+          signingPassword: ${{ secrets.SIGNINGPASSWORD }}
+
+
+  deploy-typescript:
+    runs-on: ubuntu-latest
+    needs: test-and-lint-typescript
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+      - run: |
+          python3 scripts/src/load/merge_data.py -o ./typescript/resources/merged_data.json
+          cd typescript
+          npm ci
+      - run: |
+          cd typescript
+          npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

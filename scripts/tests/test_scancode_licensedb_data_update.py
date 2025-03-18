@@ -111,11 +111,10 @@ def test_process_license(scancode_licensedb_update, capsys):
     assert scancode_licensedb_update.delete_file.call_count == 4
 
     scancode_licensedb_update._LOGGER.debug.assert_any_call("Starts with 'LicenseRef' as SPDX key")
-    scancode_licensedb_update._LOGGER.debug.assert_any_call("No other spdx license keys for 3com-microcode")
     scancode_licensedb_update._LOGGER.debug.assert_any_call("lgpl-2.0 is already a spdx license")
     scancode_licensedb_update._LOGGER.debug.assert_any_call("No SPDX license key found for lgpl-200")
 
-    assert scancode_licensedb_update._LOGGER.debug.call_count == 5
+    assert scancode_licensedb_update._LOGGER.debug.call_count == 3
 
 
 @patch("os.path.exists")

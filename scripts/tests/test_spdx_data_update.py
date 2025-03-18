@@ -82,20 +82,26 @@ def test_process_unrecognized_license_id_found_non_spdx(mock_open, mock_update_n
 
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.download_json_file")
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.load_json_file")
-@patch("os.listdir", return_value=["id1.json"])
+@patch("os.listdir", return_value=["id1.json", "id3.json"])
+@patch("src.update.SpdxDataUpdate.SpdxDataUpdate.get_file_for_unrecognized_id", return_value=None)
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.update_license_file")
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.delete_file")
-def test_process_licenses(mock_delete_file, mock_update_license, mock_listdir, mock_load_json, mock_download_json,
-                          spdx_data_update):
+@patch("src.update.SpdxDataUpdate.SpdxDataUpdate.create_license_file")
+@patch("src.update.SpdxDataUpdate.SpdxDataUpdate.update_non_spdx_license_file")
+def test_process_licenses(mock_update_non_spdx_license_file, mock_create_license_file, mock_delete_file, mock_update_license,
+                          mock_get_file_for_unrecognized_id, mock_listdir, mock_load_json, mock_download_json, spdx_data_update):
     # Mock the behavior of load_json_file for different calls
     mock_load_json.side_effect = [
         # First call: return SPDX licenses list
-        {"licenses": [{"licenseId": "id1", "name": "name1"}]},
+        {"licenses": [{"licenseId": "id1", "name": "name1"},
+                      {"licenseId": "id2", "name": "name2"},
+                      {"licenseId": "id3", "name": "name3"}]},
         # Second call: return the content of the id1.json file
-        {"src": "spdx"}
+        {"src": "spdx"},
+        {"src": "non-spdx"}
     ]
 
-    result = spdx_data_update._process_licenses("dummy_url", "licenseId", "licenses")
+    spdx_data_update._process_licenses("dummy_url", "licenseId", "licenses")
 
     # Assertions
     mock_download_json.assert_called_once_with("dummy_url", "spdx_license_list.json")
@@ -104,13 +110,8 @@ def test_process_licenses(mock_delete_file, mock_update_license, mock_listdir, m
     mock_load_json.assert_any_call(os.path.join(spdx_data_update._DATA_DIR, "id1.json"))
     mock_update_license.assert_called_once_with("id1", ["name1"])
     mock_delete_file.assert_called_once_with("spdx_license_list.json")
+    mock_create_license_file.assert_called_once_with("id2", ["name2"])
+    mock_get_file_for_unrecognized_id.assert_called_once_with(['name2', 'id2'])
 
-    assert result == []  # No unprocessed licenses
-
-
-@patch("src.update.SpdxDataUpdate.SpdxDataUpdate._process_licenses", side_effect=[["license1"], []])
-def test_process_licenses_summary(mock_process, spdx_data_update, caplog):
-    spdx_data_update.process_licenses()
-
-    assert caplog.text.__contains__("Unprocessed 1.\n{'licenses': ['license1'], 'exceptions': []}")
-    mock_process.assert_called()
+    filepath = os.path.join(spdx_data_update._DATA_DIR, "id3.json")
+    mock_update_non_spdx_license_file.assert_called_once_with("id3", {"src": "non-spdx"}, filepath, "name3")
