@@ -17,6 +17,11 @@
 # The actual text found that allow redistribution..
 #
 # Copy template below and add yours to top of list, adding a space between entries.
+#
+# package = 
+# location = 
+# text = '''
+# '''
 
 package = atmel-firmware
 location = http://www.thekelleys.org.uk/atmel/atmel-firmware-1.3.tar.gz
