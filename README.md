@@ -114,7 +114,7 @@ go run ./cmd/laas
 ### Create first user
 Connect to the database using `psql` with the following command.
 ```bash
-psql -h localhost -p 5432 -U fossy -d fossology
+psql -h localhost -p 5432 -U fossy -d licensedb
 ```
 
 Run the following query to create the first user.

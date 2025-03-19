@@ -36,7 +36,7 @@ var (
 	// argument to enter the database user
 	user = flag.String("user", "fossy", "user name")
 	// name of database to be connected
-	dbname = flag.String("dbname", "fossology", "database name")
+	dbname = flag.String("dbname", "licensedb", "database name")
 	// password of the database
 	password = flag.String("password", "fossy", "password")
 	// path of data file

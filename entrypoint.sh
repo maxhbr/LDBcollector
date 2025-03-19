@@ -6,7 +6,7 @@ set -e
 
 db_host="${DB_HOST:-localhost}"
 db_port="${DB_PORT:-5432}"
-db_name="${DB_NAME:-fossology}"
+db_name="${DB_NAME:-licensedb}"
 db_user="${DB_USER:-fossy}"
 db_password="${DB_PASSWORD:-fossy}"
 populate_db="${POPULATE_DB:-true}"
