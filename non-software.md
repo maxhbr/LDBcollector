@@ -20,7 +20,7 @@ The [SIL Open Font License 1.1](/licenses/ofl-1.1/) keeps fonts open, allowing t
 
 ### Hardware
 
-Designs for [open source hardware](https://www.oshwa.org/definition/) ranging from furniture to [FPGAs](https://www.oshwa.org/best-practices-for-sharing-fpga-designs-2/) are covered by CERN Open Hardware licenses: [CERN-OHL-P-2.0](/licenses/cern-ohl-p-2.0/) (permissive), [CERN-OHL-W-2.0](/licenses/cern-ohl-w-2.0/) (weakly reciprocal), and [CERN-OHL-S-2.0](/licenses/cern-ohl-s-2.0/) (strongly reciprocal).
+Designs for [open source hardware](https://oshwa.org/resources/open-source-hardware-definition/) ranging from furniture to [FPGAs](https://oshwa.org/resources/best-practices-for-sharing-fpga-designs/) are covered by CERN Open Hardware licenses: [CERN-OHL-P-2.0](/licenses/cern-ohl-p-2.0/) (permissive), [CERN-OHL-W-2.0](/licenses/cern-ohl-w-2.0/) (weakly reciprocal), and [CERN-OHL-S-2.0](/licenses/cern-ohl-s-2.0/) (strongly reciprocal).
 
 ### Mixed projects
 
