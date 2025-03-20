@@ -4,6 +4,9 @@ SPDX-FileCopyrightText: 2025 Henrik Sandklef <hesa@sandklef.com>
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
+This file discusses misc tricky issues related to replacing aliases, operators etc and in which order.
+
+
 # Order of replacing alias, operators etc
 
 ## Approaches
