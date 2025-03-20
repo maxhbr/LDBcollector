@@ -255,9 +255,9 @@ class FossLicenses:
             for needle in reversed(collections.OrderedDict(sorted(needles.items(), key=lambda x: len(x[0])))):
 
                 if allow_letter:
-                    reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
+                    reg_exp = r'( |>|\(|^|\)|\||/|[a-zA-Z0-9])%s( |<|$|\)|\||&|[a-zA-Z0-9])' % re.escape(needle)
                 else:
-                    reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&)' % re.escape(needle)
+                    reg_exp = r'( |>|\(|^|\)|\||/)%s( |<|$|\)|\||&)' % re.escape(needle)
                 my_needles.append([re.compile(reg_exp), needle])
             self.needles_map[needle_tag] = my_needles
 
@@ -277,7 +277,7 @@ class FossLicenses:
             if regexp.search(license_expression):
                 replacement = needles[needle]
                 extra_add = " "
-                license_expression = regexp.sub(f'\\1 {extra_add}{replacement}{extra_add}\\2', license_expression)
+                license_expression = regexp.sub(f'\\1{extra_add}{replacement}{extra_add}\\2', license_expression)
 
         fixed = re.sub(r'\s\s*', ' ', license_expression).strip()
         return {
@@ -341,17 +341,97 @@ class FossLicenses:
         }
 
     def expression_license(self, license_expression, validations=None, update_dual=True):
-        """
+        r"""
         Return an object with information about the normalized license for the license given.
 
         :param license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
         :type license_expression: str
+        :param validations: list of validations to perform
+        :type license_expression: list
+        :param update_dual: True to update implicit dual licenses
+        :type update_dual: boolean
         :raise FlameException: if license_expression is not valid
-        :return: a normalized license expression
+        :return: a normalized license expression and meta information
         :rtype: list
 
-        :Example:
+        if you just want the normalized license, do:
 
+           normalized_license = fl.expression_license('GNU & GPLv2+')['identified_license']
+
+
+        A license gets normalized in te following steps/pipes:
+
+
+        input/license ---> \
+
+             +-------+
+        ---> | alias | \
+             +-------+
+
+             +-------+
+        ---> | ambig | \
+             +-------+
+
+             +----------+
+        ---> | operator | \
+             +----------+
+
+             +-------+
+        ---> | dual  | \
+             +-------+
+
+        ---> normalized
+
+        Describing the steps/pipes:
+
+        alias: normalizes license names like "BSD3" to SPDX identifiers like "BSD-3-Clause"
+
+        ambig: identifies and stores ambiguities like "GNU", which is a project and not a license
+
+        operator: normalizes operators like "||" to SPDX syntax like "OR"
+
+        dual: normalizes implicit dual licenses like "GPL-2.0-or-later" to "GPL-2.0-only OR GPL-3.0-only" (note: updating dual license can be disabled)
+
+        Example
+        --------------------
+        License: GNU & GPLv2+
+          alias applied -----> GNU & GPL-2.0-or-later
+          ambig applied -----> GNU & GPL-2.0-or-later  (ambiguity "GNU" discovered and saved)
+          operator applied --> GNU AND GPL-2.0-or-later
+          dual applied ------> GNU AND (GPL-2.0-only OR GPL-3.0-only)
+        Normalized: GNU AND (GPL-2.0-only OR GPL-3.0-only)
+        Ambiguities: GNU
+
+        Example response:
+        --------------------
+        {
+          "queried_license": "GNU & GPLv2+",
+          "identified_license": "GNU AND (GPL-2.0-only OR GPL-3.0-only)",
+          "identifications": [],
+          "ambiguities": [
+            {
+              "license": "GNU & GPL-2.0-or-later",
+              "ambigous_license": "GNU",
+              "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant.",
+              "description": "An ambiguity was identified in \"GNU & GPL-2.0-or-later\". The ambiguous license is \"GNU\". Problem: There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
+            }
+          ],
+          "updated_license": "GNU AND (GPL-2.0-only OR GPL-3.0-only)",
+          "license_parsed": "GNU AND (GPL-2.0-only OR GPL-3.0-only)",
+          "updates": [
+            {
+              "license-expression": "GPL-2.0-or-later",
+              "license": "GPL-2.0-or-later",
+              "updates": [
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+              ],
+              "updated-license": " ( GPL-2.0-only OR GPL-3.0-only ) "
+            }
+          ]
+        }
+
+        :Example:
         >>> fl = FossLicenses()
         >>> expression = fl.expression_license('BSD3 & x11-keith-packard')
         >>> print(expression['identified_license'])
@@ -359,7 +439,7 @@ class FossLicenses:
 
         """
         if not isinstance(license_expression, str):
-            raise FlameException(f'License "{license_expression}" is of wrong type ({type(license_expression)}). Only string is allowed.')
+            raise FlameException(f'Wrong type ({type(license_expression)}) of input to the function expression_license. Only string is allowed. License expression: {license_expression}')
 
         # remove multiple blanks
         license_expression = re.sub(' [ ]*', ' ', license_expression)
@@ -374,11 +454,6 @@ class FossLicenses:
                                                       'alias',
                                                       license_expression)
         replacements += ret['identifications']
-        ret = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
-                                                      'operator',
-                                                      ret['license_expression'],
-                                                      allow_letter=True)
-        replacements += ret['identifications']
 
         # manage ambiguities
         ambiguities = []
@@ -387,13 +462,19 @@ class FossLicenses:
         tmp_license_expression = ret['license_expression']
         for alias in reversed(collections.OrderedDict(sorted(aliases.items(), key=lambda x: len(x[0])))):
 
-            needle = r'(?:\s+|^)%s(?:\s+|$)' % re.escape(alias.replace(" and ", " AND "))
-            if re.search(needle, tmp_license_expression):
+            needle = r'(?:\s+|^)%s(?:\s+|$)' % re.escape(alias)
+            needle_tmp = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
+                                                                 "operator",
+                                                                 needle,
+                                                                 allow_letter=True)
+            needle_fixed = needle_tmp["license_expression"]
+            needle_fixed = needle.replace(" or ", " OR ")
+            if re.search(needle_fixed, tmp_license_expression):
                 real_lic = self.license_db[AMBIG_TAG]['aliases'][alias]
                 if alias != real_lic:
                     about_license = f'An ambiguity was identified in "{ret["license_expression"]}". The ambiguous license is "{real_lic}", identified via "{alias}".'
                 else:
-                    about_license = f'An ambiguity was identified in "{ret["license_expression"]}". The ambiguous license is "{real_lic}"-'
+                    about_license = f'An ambiguity was identified in "{ret["license_expression"]}". The ambiguous license is "{real_lic}".'
                 problem = self.license_db[AMBIG_TAG]["ambiguities"][real_lic]["problem"]
                 ambiguities.append({
                     'license': ret['license_expression'],
@@ -401,7 +482,13 @@ class FossLicenses:
                     'problem': problem,
                     'description': f'{about_license} Problem: {problem}',
                 })
-                tmp_license_expression = re.sub(needle, ' ', tmp_license_expression)
+
+        # operators
+        ret = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
+                                                      'operator',
+                                                      ret['license_expression'],
+                                                      allow_letter=True)
+        replacements += ret['identifications']
 
         update_problem = None
         updates = []
@@ -418,7 +505,7 @@ class FossLicenses:
             try:
                 updated_license = str(self.license_expression.parse(ret['license_expression']))
             except boolean.boolean.ParseError as e:
-                update_problem = f'Could not parse "{ret["license_expression"]}". Exception: {e}'
+                update_problem = f'Could not parse "ret["license_expression"]". Exception: {e}'
                 updated_license = ret['license_expression']
 
         license_parsed = updated_license
