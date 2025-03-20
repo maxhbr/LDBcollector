@@ -229,7 +229,3 @@ then you can start `flame` to read the config file like this:
 ```
 FLAME_USER_CONFIG=flame-config.json flame licenses
 ```
-
-# Considerations
-
-In the file [CONSIDERATIONS](https://github.com/hesa/foss-licenses/blob/main/CONSIDERATIONS.md) we try to record and explain the reasoning behind our approaches.
