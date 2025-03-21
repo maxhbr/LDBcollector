@@ -348,6 +348,8 @@ func CreateLicense(c *gin.Context) {
 	c.JSON(http.StatusCreated, res)
 }
 
+type ContextKey string
+
 // UpdateLicense Update license with given shortname and create audit and changelog entries.
 //
 //	@Summary		Update a license
@@ -365,8 +367,6 @@ func CreateLicense(c *gin.Context) {
 //	@Failure		500			{object}	models.LicenseError				"Failed to update license"
 //	@Security		ApiKeyAuth
 //	@Router			/licenses/{shortname} [patch]
-type ContextKey string
-
 func UpdateLicense(c *gin.Context) {
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var updates models.LicenseUpdateJSONSchema
