@@ -48,9 +48,9 @@ type LicenseDB struct {
 	Flag            *int64                                       `json:"flag" gorm:"default:1;column:rf_flag;not null;default:0" validate:"omitempty,min=0,max=2" example:"1"`
 	Marydone        *bool                                        `json:"marydone" gorm:"column:marydone;not null;default:false"`
 	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
-	Obligations     []*Obligation                                `gorm:"many2many:obligation_licenses;" json:"obligations"`
-	UserId          int64                                        `json:"-" example:"123"`                             // Foreign key to User
-	User            User                                         `gorm:"foreignKey:UserId;references:Id" json:"user"` // Reference to User
+	Obligations     []*Obligation                                `gorm:"many2many:obligation_licenses;" json:"-"`
+	UserId          int64                                        `json:"-" example:"123"`                                   // Foreign key to User
+	User            User                                         `gorm:"foreignKey:UserId;references:Id" json:"created_by"` // Reference to User
 }
 
 // BeforeCreate hook to validate data and log the user who is creating the record

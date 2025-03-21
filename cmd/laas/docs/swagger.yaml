@@ -163,6 +163,10 @@ definitions:
         type: string
       copyleft:
         type: boolean
+      created_by:
+        allOf:
+        - $ref: '#/definitions/models.User'
+        description: Reference to User
       detector_type:
         example: 1
         maximum: 2
@@ -183,10 +187,6 @@ definitions:
       notes:
         example: This license has been superseded.
         type: string
-      obligations:
-        items:
-          $ref: '#/definitions/models.Obligation'
-        type: array
       risk:
         maximum: 5
         minimum: 0
@@ -207,10 +207,6 @@ definitions:
       url:
         example: https://opensource.org/licenses/MIT
         type: string
-      user:
-        allOf:
-        - $ref: '#/definitions/models.User'
-        description: Reference to User
     required:
     - fullname
     - shortname

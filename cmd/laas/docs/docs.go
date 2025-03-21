@@ -2499,6 +2499,14 @@ const docTemplate = `{
                 "copyleft": {
                     "type": "boolean"
                 },
+                "created_by": {
+                    "description": "Reference to User",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    ]
+                },
                 "detector_type": {
                     "type": "integer",
                     "maximum": 2,
@@ -2524,12 +2532,6 @@ const docTemplate = `{
                 "notes": {
                     "type": "string",
                     "example": "This license has been superseded."
-                },
-                "obligations": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.Obligation"
-                    }
                 },
                 "risk": {
                     "type": "integer",
@@ -2557,14 +2559,6 @@ const docTemplate = `{
                 "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
-                },
-                "user": {
-                    "description": "Reference to User",
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/models.User"
-                        }
-                    ]
                 }
             }
         },
