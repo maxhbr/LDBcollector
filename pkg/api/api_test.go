@@ -24,7 +24,7 @@ import (
 // running the tests, and exiting with the appropriate exit code.
 func TestMain(m *testing.M) {
 	gin.SetMode(gin.TestMode)
-	dbname := "fossology"
+	dbname := "licensedb"
 	user := "fossy"
 	password := "fossy"
 	port := "5432"

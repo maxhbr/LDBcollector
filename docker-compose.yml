@@ -10,7 +10,7 @@ services:
       DB_HOST: postgres
       DB_PORT: 5432
       DB_USER: fossy
-      DB_NAME: fossology
+      DB_NAME: licensedb
       POPULATE_DB: true
       GIN_MODE: debug
     ports:
@@ -27,7 +27,7 @@ services:
     environment:
       POSTGRES_PASSWORD: fossy
       POSTGRES_USER: fossy
-      POSTGRES_DB: fossology
+      POSTGRES_DB: licensedb
 #    ports:
 #      - "5432:5432"
     volumes:
