@@ -1107,8 +1107,14 @@ const docTemplate = `{
                             "$ref": "#/definitions/models.SwaggerObligationResponse"
                         }
                     },
-                    "404": {
-                        "description": "No obligations in DB",
+                    "400": {
+                        "description": "Invalid active value",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }

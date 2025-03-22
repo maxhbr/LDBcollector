@@ -40,7 +40,8 @@ import (
 //	@Param			limit		query		int		false	"Number of records per page"
 //	@Param			order_by	query		string	false	"Asc or desc ordering"	Enums(asc, desc)	default(asc)
 //	@Success		200			{object}	models.SwaggerObligationResponse
-//	@Failure		404			{object}	models.LicenseError	"No obligations in DB"
+//	@Failure		400			{object}	models.LicenseError	"Invalid active value"
+//	@Failure		500			{object}	models.LicenseError	"Internal server error"
 //	@Security		ApiKeyAuth || {}
 //	@Router			/obligations [get]
 func GetAllObligation(c *gin.Context) {
