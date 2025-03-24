@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "BSD 3-Clause License (Los Alamos National Labs)"
+category: "BSD"
+shortName: "BSD-3-Clause-LANL"
+
+alternativeNames:
+  - "Los Alamos National Labs BSD-3 Variant"
+  - "LANL-BSD-3-Variant"
+
+otherIds: 
+  - "scancode:lanl-bsd-3-variant"
