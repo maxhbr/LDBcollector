@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Sun BCL Web Start"
+category: "Sun BCL Web Start"
+shortName: "sun-bcl-web-start"
+
+alternativeNames:
+  - "Sun BCL Web Start"
+  - "JAVATM WEB START VERSION 1.2.x"
+
+otherIds: 
+  - "scancode:sun-bcl-web-start"
