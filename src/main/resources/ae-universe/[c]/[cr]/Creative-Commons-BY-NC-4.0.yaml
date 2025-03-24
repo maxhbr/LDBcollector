@@ -14,9 +14,12 @@ openCoDEStatus: "not approved"
 osiStatus: "ineligible"
 
 alternativeNames:
-  - "CC-BY-NC-4.0"
   - "Creative Commons Attribution Non Commercial 4.0 International"
-  - "Creative Commons Attribution-NonCommercial 4.0 International"
+  - "Attribution-NonCommercial 4.0"
+  - "CC-BY-NC-4.0"
+  - "CC BY-NC 4.0"
+  - "http://creativecommons.org/licenses/by-nc/4.0"
+  - "https://creativecommons.org/licenses/by-nc/4.0"
 
 otherIds: 
   - "scancode:cc-by-nc-4.0"

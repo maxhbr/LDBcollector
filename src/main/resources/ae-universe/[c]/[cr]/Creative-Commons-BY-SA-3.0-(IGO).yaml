@@ -6,5 +6,11 @@ canonicalName: "Creative Commons BY-SA 3.0 (IGO)"
 category: "CC-BY-SA"
 spdxIdentifier: "CC-BY-SA-3.0-IGO"
 
+alternativeNames:
+  - "Attribution-ShareAlike 3.0 IGO"
+  - "CC BY-SA 3.0 IGO"
+  - "http://creativecommons.org/licenses/by-sa/3.0/igo"
+  - "https://creativecommons.org/licenses/by-sa/3.0/igo"
+
 otherIds: 
   - "scancode:cc-by-sa-3.0-igo"

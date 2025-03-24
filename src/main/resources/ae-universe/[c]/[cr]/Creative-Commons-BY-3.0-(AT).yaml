@@ -15,6 +15,11 @@ osiStatus: "pending"
 
 alternativeNames:
   - "Creative Commons BY 3.0 (Austria)"
+  - "CC BY 3.0 AT"
+  - "Namensnennung 3.0 Österreich"
+  - "Attribution 3.0 Austria"
+  - "http://creativecommons.org/licenses/by/3.0/at"
+  - "https://creativecommons.org/licenses/by/3.0/at"
 
 otherIds: 
   - "scancode:cc-by-3.0-at"

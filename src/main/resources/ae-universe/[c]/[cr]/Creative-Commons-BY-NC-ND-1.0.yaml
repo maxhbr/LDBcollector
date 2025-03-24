@@ -17,8 +17,12 @@ osiStatus: "ineligible"
 alternativeNames:
   - "Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic"
   - "CC-BY-NC-ND-1.0"
+  - "CC BY-ND-NC 1.0"
   - "Creative Commons Attribution-NoDerivs-NonCommercial 1.0"
   - "Creative Commons BY-NC-ND 1.0"
+  - "Attribution-NoDerivs-NonCommercial 1.0 Generic"
+  - "http://creativecommons.org/licenses/by-nc-nd/1.0"
+  - "https://creativecommons.org/licenses/by-nc-nd/1.0"
 
 otherIds: 
   - "scancode:cc-by-nc-nd-1.0"

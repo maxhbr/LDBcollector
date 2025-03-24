@@ -8,6 +8,10 @@ shortName: "CC-ND-1.0"
 
 alternativeNames:
   - "Creative Commons NoDerivatives License 1.0"
+  - "NoDerivs 1.0"
+  - "CC ND 1.0"
+  - "http://creativecommons.org/licenses/nd/1.0"
+  - "https://creativecommons.org/licenses/nd/1.0"
 
 otherIds: 
   - "scancode:cc-nd-1.0"

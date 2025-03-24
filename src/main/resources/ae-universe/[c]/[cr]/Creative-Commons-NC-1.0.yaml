@@ -8,6 +8,10 @@ shortName: "CC-NC-1.0"
 
 alternativeNames:
   - "Creative Commons NonCommercial License 1.0"
+  - "NonCommercial 1.0"
+  - "CC NC 1.0"
+  - "http://creativecommons.org/licenses/nc/1.0"
+  - "https://creativecommons.org/licenses/nc/1.0"
 
 otherIds: 
   - "scancode:cc-nc-1.0"

@@ -11,12 +11,12 @@ openCoDEStatus: "approved"
 osiStatus: "pending"
 
 alternativeNames:
-  - "CC-BY-4.0"
   - "Creative Commons Attribution 4.0"
-  - "http://creativecommons.org/licenses/by/4.0"
-  - "https://creativecommons.org/licenses/by/4.0/"
-  - "CC BY 4.0"
   - "Namensnennung 4.0 International"
+  - "CC-BY-4.0"
+  - "CC BY 4.0"
+  - "http://creativecommons.org/licenses/by/4.0"
+  - "https://creativecommons.org/licenses/by/4.0"
 
 otherIds: 
   - "scancode:cc-by-4.0"

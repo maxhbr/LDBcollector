@@ -11,8 +11,10 @@ openCoDEStatus: "approved"
 osiStatus: "pending"
 
 alternativeNames:
-  - "Creative Commons Attribution 2.5 Australia"
-  - "https://creativecommons.org/licenses/by/2.5/au/legalcode"
+  - "Attribution 2.5 Australia"
+  - "CC BY 2.5 AU"
+  - "http://creativecommons.org/licenses/by/2.5/au"
+  - "https://creativecommons.org/licenses/by/2.5/au"
 
 otherIds: 
   - "scancode:cc-by-2.5-au"

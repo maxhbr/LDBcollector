@@ -10,6 +10,10 @@ osiStatus: "ineligible"
 
 alternativeNames:
   - "Creative Commons BY-NC-ND 2.0 (Australia)"
+  - "CC BY-NC-ND 2.0 AU"
+  - "Attribution-NonCommercial-NoDerivs 2.0 Australia"
+  - "http://creativecommons.org/licenses/by-nc-nd/2.0/au"
+  - "https://creativecommons.org/licenses/by-nc-nd/2.0/au"
 
 otherIds: 
   - "scancode:cc-by-nc-nd-2.0-au"

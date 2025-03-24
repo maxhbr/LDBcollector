@@ -15,8 +15,11 @@ osiStatus: "pending"
 
 alternativeNames:
   - "Creative Commons Attribution 1.0"
+  - "Attribution 1.0 Generic"
   - "CC-BY-1.0"
+  - "CC BY 1.0"
   - "http://creativecommons.org/licenses/by/1.0"
+  - "https://creativecommons.org/licenses/by/1.0"
 
 otherIds: 
   - "scancode:cc-by-1.0"

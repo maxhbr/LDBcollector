@@ -7,10 +7,13 @@ category: "CC-BY-NC-SA"
 shortName: "CC-BY-NC-SA-3.0-US"
 
 alternativeNames:
+  - "CC BY-NC-SA 3.0 US"
   - "Attribution-NonCommercial-ShareAlike 3.0 United States"
-  - "Attribution-NonCommercial-ShareAlike 3.0 US"
   - "Attribution-Non Commercial-Share Alike 3.0 United States"
   - "Attribution-Non Commercial-Share Alike 3.0 US"
+  - "Attribution-NonCommercial-ShareAlike 3.0 US"
+  - "http://creativecommons.org/licenses/by-nc-sa/3.0/us"
+  - "https://creativecommons.org/licenses/by-nc-sa/3.0/us"
 
 otherIds: 
   - "scancode:cc-by-nc-sa-3.0-us"

@@ -8,6 +8,10 @@ shortName: "CC-SA-1.0"
 
 alternativeNames:
   - "Creative Commons ShareAlike License 1.0"
+  - "CC SA 1.0"
+  - "ShareAlike 1.0 Generic"
+  - "http://creativecommons.org/licenses/sa/1.0"
+  - "https://creativecommons.org/licenses/sa/1.0"
 
 otherIds: 
   - "scancode:cc-sa-1.0"

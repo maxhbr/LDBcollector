@@ -12,9 +12,13 @@ osiStatus: "ineligible"
 
 alternativeNames:
   - "Creative Commons Attribution No Derivatives 3.0 Germany"
+  - "CC BY-ND 3.0 DE"
   - "licenses.nuget.org/CC-BY-ND-3.0-DE"
   - "{{CC-BY-ND-3.0-DE}} https://spdx.org/licenses/CC-BY-ND-3.0-DE"
-  - "Creative Commons Namensnennung - Keine Bearbeitungen 3.0 Deutschland"
+  - "Namensnennung - Keine Bearbeitungen 3.0 Deutschland"
+  - "Attribution-NoDerivs 3.0 Germany"
+  - "http://creativecommons.org/licenses/by-nd/3.0/de"
+  - "https://creativecommons.org/licenses/by-nd/3.0/de"
 
 otherIds: 
   - "scancode:cc-by-nd-3.0-de"

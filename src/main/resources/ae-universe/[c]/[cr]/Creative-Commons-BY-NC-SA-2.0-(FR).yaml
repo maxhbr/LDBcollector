@@ -12,7 +12,11 @@ osiStatus: "ineligible"
 
 alternativeNames:
   - "CC-BY-NC-SA-2.0-FR"
-  - "Creative Commons Attribution-NonCommercial-ShareAlike 2.0 France"
+  - "CC BY-NC-SA 2.0 FR"
+  - "Paternité - Pas d'Utilisation Commerciale - Partage Des Conditions Initiales A l'Identique 2.0"
+  - "Attribution-NonCommercial-ShareAlike 2.0 France"
+  - "http://creativecommons.org/licenses/by-nc-sa/2.0/fr"
+  - "https://creativecommons.org/licenses/by-nc-sa/2.0/fr"
 
 otherIds: 
   - "scancode:cc-by-nc-sa-2.0-fr"

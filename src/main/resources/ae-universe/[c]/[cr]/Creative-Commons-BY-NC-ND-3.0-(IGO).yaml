@@ -12,6 +12,10 @@ osiStatus: "ineligible"
 
 alternativeNames:
   - "Creative Commons BY-NC-ND 3.0 (IGO)"
+  - "CC BY-NC-ND 3.0 IGO"
+  - "Attribution-NonCommercial-NoDerivs 3.0 IGO"
+  - "http://creativecommons.org/licenses/by-nc-nd/3.0/igo"
+  - "https://creativecommons.org/licenses/by-nc-nd/3.0/igo"
 
 otherIds: 
   - "scancode:cc-by-nc-nd-3.0-igo"

@@ -16,10 +16,13 @@ osiStatus: "pending"
 alternativeNames:
   - "Creative Commons Attribution Share Alike 2.5"
   - "CC-BY-SA-2.5"
-  - "Creative Commons Attribution-ShareAlike 2.5"
-  - "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)"
   - "CC-BY-SA 2.5"
   - "CC BY-SA 2.5"
+  - "Creative Commons Attribution-ShareAlike 2.5"
+  - "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)"
+  - "Attribution-ShareAlike 2.5 Generic"
+  - "http://creativecommons.org/licenses/by-sa/2.5"
+  - "https://creativecommons.org/licenses/by-sa/2.5"
 
 otherIds: 
   - "scancode:cc-by-sa-2.5"
