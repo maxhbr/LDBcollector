@@ -8,10 +8,12 @@ spdxIdentifier: "BSD-3-Clause-No-Nuclear-License"
 
 canonicalNameHistory:
   - "BSD 3-Clause No Nuclear License"
+  - "Sun BSD-Style with Nuclear Restrictions"
 
 openCoDEStatus: "not approved"
 
 alternativeNames:
+  - "Sun BSD-Style with Nuclear Restrictions"
   - "BSD 3-Clause No Nuclear License"
   - "BSD 3 Clause No Nuclear License"
 
