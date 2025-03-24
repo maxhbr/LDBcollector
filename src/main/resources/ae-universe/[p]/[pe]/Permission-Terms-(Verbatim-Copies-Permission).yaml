@@ -6,5 +6,10 @@ canonicalName: "Permission Terms (Verbatim Copies Permission)"
 category: "Permission"
 shortName: "PT-Verbatim-Copies"
 
+alternativeNames:
+  - "{{Linux-man-pages-copyleft}} https://spdx.org/licenses/Linux-man-pages-copyleft"
+  - "licenses.nuget.org/Linux-man-pages-copyleft"
+  - "{{Verbatim-man-pages}} https://spdx.org/licenses/Verbatim-man-pages"
+
 otherIds: 
   - "scancode:verbatim-manual"
