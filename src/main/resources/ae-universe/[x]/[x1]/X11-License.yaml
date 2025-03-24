@@ -6,6 +6,9 @@ canonicalName: "X11 License"
 category: "X11"
 spdxIdentifier: "X11"
 
+canonicalNameHistory:
+  - "X11-Style (X Consortium)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:
@@ -15,6 +18,7 @@ alternativeNames:
   - "MIT/X11"
   - "X11 LICENSE"
   - "Expat~X with X exception"
+  - "X11-Style (X Consortium)"
 
 otherIds: 
   - "scancode:x11"
