@@ -133,6 +133,9 @@ Optional configuration :
 * **THREADS**: the number of threads used by gunicorn workers, defaults to number of CPU cores
 * **MAX_UPLOAD_SIZE**: the maximum size that the SBOM to import can be (in bytes), defaults to 10MB
 
+Other configuration variables are available, you can find them in the
+[docker-compose.yml](https://gitlab.com/hermine-project/hermine/-/blob/main/docker-compose.yml) file.
+
 Example of command to run the container :
 ```bash
 docker run -d \

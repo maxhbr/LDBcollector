@@ -12,6 +12,14 @@ urlpatterns = [
     path("", views.DashboardView.as_view(), name="dashboard"),
     path("about/", views.AboutView.as_view(), name="about"),
     path("profile/", views.ProfileView.as_view(), name="profile"),
+    path(
+        "api-token/<int:pk>/delete/",
+        views.APITokenDeleteView.as_view(),
+        name="api_token_delete",
+    ),
+    path(
+        "api-token/create/", views.APITokenCreateView.as_view(), name="api_token_create"
+    ),
     # Product views
     path("products/", views.ProductListView.as_view(), name="product_list"),
     path(

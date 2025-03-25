@@ -5,6 +5,9 @@ from django.contrib.auth.models import User
 from django.urls import reverse, URLPattern
 from rest_framework.test import APITestCase
 
+from cube.models import Token
+from cube.models.auth import make_token_key
+
 
 def get_api_patterns():
     from cube.urls_api import urlpatterns
@@ -37,7 +40,7 @@ class PermissionsTestCase(APITestCase):
                 if response.status_code == 405:
                     response = self.client.post(reverse(f"cube:api:{pattern}"))
                 self.assertNotEqual(response.status_code, 403)
-                self.client.logout()
+                self.assertNotEqual(response.status_code, 401)
 
     def test_admin(self):
         User.objects.create_superuser("admin", "adminuser@test.com", "password")
@@ -48,4 +51,18 @@ class PermissionsTestCase(APITestCase):
                 if response.status_code == 405:
                     response = self.client.post(reverse(f"cube:api:{pattern}"))
                 self.assertNotEqual(response.status_code, 403)
-                self.client.logout()
+                self.assertNotEqual(response.status_code, 401)
+
+    def test_token_authentication(self):
+        User.objects.create_superuser("admin", "adminuser@test.com", "password")
+        user = User.objects.get(username="admin")
+        key = make_token_key()
+        Token.objects.create(user=user, key=key)
+        self.client.credentials(HTTP_AUTHORIZATION=f"Token {key}")
+        for pattern in get_api_patterns():
+            with self.subTest(pattern=pattern):
+                response = self.client.get(reverse(f"cube:api:{pattern}"))
+                if response.status_code == 405:
+                    response = self.client.post(reverse(f"cube:api:{pattern}"))
+                self.assertNotEqual(response.status_code, 403)
+                self.assertNotEqual(response.status_code, 401)

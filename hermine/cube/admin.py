@@ -2,9 +2,12 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-from django.contrib import admin
 
-from .models import Category
+from django.contrib import admin
+from django.db import models
+from django.forms import TextInput
+
+from .models import Category, Token
 from .models import Component
 from .models import Derogation
 from .models import Exploitation
@@ -300,6 +303,31 @@ class DerogationAdmin(UsageRuleAdminMixin, admin.ModelAdmin):
     )
 
 
+class TokenAdmin(admin.ModelAdmin):
+    list_display = ("description", "user", "created", "expires", "description")
+    fields = ["description", "user", "ttl", "created", "expires"]
+    readonly_fields = ("created", "key", "created", "expires")
+    search_fields = ["user__username"]
+
+    formfield_overrides = {
+        models.TextField: {"widget": TextInput()},
+    }
+
+    @admin.display(description="Expiration")
+    def expires(self, obj):
+        return obj.created + obj.ttl if obj.ttl is not None else "Never"
+
+    def get_fields(self, request, obj=None):
+        fields = super().get_fields(request, obj)
+        if obj is None:
+            fields = ("key", *fields)
+
+        return fields
+
+    def get_changeform_initial_data(self, request):
+        return {"user": request.user}
+
+
 admin.site.register(License, LicenseAdmin)
 admin.site.register(LicensePolicy, LicensePolicyAdmin)
 admin.site.register(Obligation, ObligationAdmin)
@@ -316,3 +344,4 @@ admin.site.register(LicenseChoice, LicenseChoiceAdmin)
 admin.site.register(Derogation, DerogationAdmin)
 admin.site.register(Exploitation)
 admin.site.register(Team)
+admin.site.register(Token, TokenAdmin)

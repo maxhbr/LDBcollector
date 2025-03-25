@@ -28,6 +28,7 @@ DATABASES = {
 }
 
 SECRET_KEY = os.environ.get("SECRET")
+AUTH_TOKEN_HASH = os.environ.get("AUTH_TOKEN_HASH") or "sha256"
 
 # SMTP settings
 EMAIL_HOST = os.environ.get("EMAIL_HOST")
