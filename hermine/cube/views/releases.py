@@ -119,7 +119,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                 form.cleaned_data.get("import_mode"),
                 form.cleaned_data.get("linking"),
                 self.request.user,
-                self.object,
+                self.object.id,
             )
         except SBOMImportFailure as e:
             form.add_error("file", e)

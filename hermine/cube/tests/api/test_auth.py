@@ -1,7 +1,7 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Permission
 from django.urls import reverse, URLPattern
 from rest_framework.test import APITestCase
 
@@ -39,8 +39,19 @@ class PermissionsTestCase(APITestCase):
                 response = self.client.get(reverse(f"cube:api:{pattern}"))
                 if response.status_code == 405:
                     response = self.client.post(reverse(f"cube:api:{pattern}"))
-                self.assertNotEqual(response.status_code, 403)
-                self.assertNotEqual(response.status_code, 401)
+                self.assertEqual(response.status_code, 403)
+
+    def test_all_permissions_user(self):
+        user = User.objects.create_user("test", "testuser@test.com", "password")
+        user.user_permissions.set(list(Permission.objects.all()))
+        self.client.login(username="test", password="password")
+        for pattern in get_api_patterns():
+            with self.subTest(pattern=pattern):
+                response = self.client.get(reverse(f"cube:api:{pattern}"))
+                if response.status_code == 405:
+                    response = self.client.post(reverse(f"cube:api:{pattern}"))
+                self.assertGreaterEqual(response.status_code, 200)
+                self.assertLessEqual(response.status_code, 400)
 
     def test_admin(self):
         User.objects.create_superuser("admin", "adminuser@test.com", "password")
@@ -50,8 +61,8 @@ class PermissionsTestCase(APITestCase):
                 response = self.client.get(reverse(f"cube:api:{pattern}"))
                 if response.status_code == 405:
                     response = self.client.post(reverse(f"cube:api:{pattern}"))
-                self.assertNotEqual(response.status_code, 403)
-                self.assertNotEqual(response.status_code, 401)
+                self.assertGreaterEqual(response.status_code, 200)
+                self.assertLessEqual(response.status_code, 400)
 
     def test_token_authentication(self):
         User.objects.create_superuser("admin", "adminuser@test.com", "password")
@@ -64,5 +75,5 @@ class PermissionsTestCase(APITestCase):
                 response = self.client.get(reverse(f"cube:api:{pattern}"))
                 if response.status_code == 405:
                     response = self.client.post(reverse(f"cube:api:{pattern}"))
-                self.assertNotEqual(response.status_code, 403)
-                self.assertNotEqual(response.status_code, 401)
+                self.assertGreaterEqual(response.status_code, 200)
+                self.assertLessEqual(response.status_code, 400)
