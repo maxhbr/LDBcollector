@@ -60,6 +60,12 @@ class ImportBomForm(forms.ModelForm):
     import_mode = forms.ChoiceField(
         choices=SBOMImport.IMPORT_MODE_CHOICES, widget=forms.RadioSelect
     )
+    component_update_mode = forms.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        help_text="When a component is already present in Hermine database, "
+        "you can choose to override all its informations with this SBOM content. "
+        "Be aware that this may impact other products or release validations on the instance.",
+    )
     linking = forms.ChoiceField(
         choices=((None, "---"), *Usage.LINKING_CHOICES),
         required=False,

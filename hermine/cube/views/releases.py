@@ -93,6 +93,9 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     self.request.FILES["file"],
                     self.object.pk,
                     replace,
+                    component_update_mode=form.cleaned_data.get(
+                        "component_update_mode"
+                    ),
                     linking=form.cleaned_data.get("linking"),
                 )
             elif form.cleaned_data["bom_type"] == SBOMImport.BOM_SPDX:
@@ -100,6 +103,9 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     self.request.FILES["file"],
                     self.object.pk,
                     replace,
+                    component_update_mode=form.cleaned_data.get(
+                        "component_update_mode"
+                    ),
                     linking=form.cleaned_data.get("linking"),
                     default_project_name=form.cleaned_data.get("default_project_name"),
                     default_scope_name=form.cleaned_data.get("default_scope_name"),
@@ -109,6 +115,9 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     self.request.FILES["file"],
                     self.object.pk,
                     replace,
+                    component_update_mode=form.cleaned_data.get(
+                        "component_update_mode"
+                    ),
                     linking=form.cleaned_data.get("linking"),
                     default_project_name=form.cleaned_data.get("default_project_name"),
                     default_scope_name=form.cleaned_data.get("default_scope_name"),
@@ -117,6 +126,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                 self.request.FILES["file"],
                 form.cleaned_data["bom_type"],
                 form.cleaned_data.get("import_mode"),
+                form.cleaned_data.get("component_update_mode"),
                 form.cleaned_data.get("linking"),
                 self.request.user,
                 self.object.id,

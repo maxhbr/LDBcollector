@@ -2,7 +2,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
+import os
 
+from django.conf import settings
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
@@ -17,6 +19,8 @@ from cube.models import (
     Obligation,
     Release,
     Component,
+    SBOMImport,
+    Version,
 )
 from cube.utils.generics import export_generics, handle_generics_json
 from cube.utils.licenses import (
@@ -156,7 +160,7 @@ class ImportSBOMTestCase(TestCase):
 
     def test_import_sbom_linking_and_replace(self):
         self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 2)
-        with open("cube/fixtures/fake_sbom.json") as f:
+        with open(os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")) as f:
             import_spdx_file(f, 1, linking=Usage.LINKING_DYNAMIC)
         usage = Usage.objects.get(
             version__component__name="spdx-valid-dependency",
@@ -171,7 +175,7 @@ class ImportSBOMTestCase(TestCase):
         self.assertEqual(Component.objects.count(), 7)
         self.assertEqual(usage.linking, Usage.LINKING_DYNAMIC)
 
-        with open("cube/fixtures/fake_sbom.json") as f:
+        with open(os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")) as f:
             import_spdx_file(f, 1, replace=False)
         new_usage = Usage.objects.get(
             version__component__name="spdx-valid-dependency",
@@ -182,7 +186,7 @@ class ImportSBOMTestCase(TestCase):
             new_usage.pk,
         )
 
-        with open("cube/fixtures/fake_sbom.json") as f:
+        with open(os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")) as f:
             import_spdx_file(f, 1, replace=True)
         new_usage = Usage.objects.get(
             version__component__name="spdx-valid-dependency",
@@ -191,6 +195,89 @@ class ImportSBOMTestCase(TestCase):
         self.assertNotEqual(
             usage.pk,
             new_usage.pk,
+        )
+
+    def test_override_components(self):
+        self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 2)
+        with open(os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")) as f:
+            import_spdx_file(f, 1, linking=Usage.LINKING_DYNAMIC)
+        no_assertion_version = Version.objects.get(
+            version_number="v1", component__name="no-assertion-dependency"
+        )
+        valid_version = Version.objects.get(
+            version_number="v1", component__name="spdx-valid-dependency"
+        )
+        self.assertEqual(no_assertion_version.declared_license_expr, "NOASSERTION")
+        self.assertEqual(no_assertion_version.spdx_valid_license_expr, "")
+        self.assertEqual(
+            valid_version.declared_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+
+        with open(
+            os.path.join(
+                settings.BASE_DIR, "cube/fixtures/fake_sbom_updated_components.json"
+            )
+        ) as f:
+            import_spdx_file(
+                f, 1, component_update_mode=SBOMImport.COMPONENT_UPDATE_DEFAULT
+            )
+        no_assertion_version = Version.objects.get(
+            version_number="v1", component__name="no-assertion-dependency"
+        )
+        valid_version = Version.objects.get(
+            version_number="v1", component__name="spdx-valid-dependency"
+        )
+        self.assertEqual(
+            no_assertion_version.declared_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            no_assertion_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.declared_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+
+        with open(
+            os.path.join(
+                settings.BASE_DIR, "cube/fixtures/fake_sbom_updated_components.json"
+            )
+        ) as f:
+            import_spdx_file(
+                f, 1, component_update_mode=SBOMImport.COMPONENT_UPDATE_OVERRIDE
+            )
+        no_assertion_version = Version.objects.get(
+            version_number="v1", component__name="no-assertion-dependency"
+        )
+        valid_version = Version.objects.get(
+            version_number="v1", component__name="spdx-valid-dependency"
+        )
+        self.assertEqual(
+            no_assertion_version.declared_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            no_assertion_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.declared_license_expr,
+            "LicenseRef-fakeLicense-Allowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-Allowed-1.0",
         )
 
 

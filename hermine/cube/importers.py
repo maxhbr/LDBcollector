@@ -34,7 +34,11 @@ class SBOMImportFailure(Exception):
 
 @transaction.atomic()
 def import_ort_evaluated_model_json_file(
-    json_file: File | TextIO, release_id: int, replace=False, linking: str = ""
+    json_file: File | TextIO,
+    release_id: int,
+    replace=False,
+    component_update_mode=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+    linking: str = "",
 ):
     try:
         data = json.load(json_file)
@@ -126,6 +130,7 @@ def import_ort_evaluated_model_json_file(
                     declared_licenses,
                     spdx_valid_license,
                     linking,
+                    component_update_mode,
                     current_purl,
                     project_name,
                     scope_name,
@@ -143,6 +148,7 @@ def import_ort_evaluated_model_json_file(
                 declared_licenses,
                 spdx_valid_license,
                 linking,
+                component_update_mode,
                 current_purl,
             )
 
@@ -152,6 +158,7 @@ def import_spdx_file(
     spdx_file: File | TextIO,
     release_id: int,
     replace=False,
+    component_update_mode=SBOMImport.COMPONENT_UPDATE_DEFAULT,
     linking: str = "",
     default_project_name: str = "",
     default_scope_name: str = "",
@@ -216,6 +223,7 @@ def import_spdx_file(
             declared_license,
             concluded_license,
             linking,
+            component_update_mode,
             purl,
             default_project_name,
             default_scope_name,
@@ -229,6 +237,7 @@ def import_cyclonedx_file(
     cyclonedx_file: File | TextIO,
     release_id,
     replace=False,
+    component_update_mode=SBOMImport.COMPONENT_UPDATE_DEFAULT,
     linking: str = "",
     default_project_name: str = "",
     default_scope_name: str = "",
@@ -281,6 +290,7 @@ def import_cyclonedx_file(
             declared_license,
             "",
             linking,
+            component_update_mode,
             str(component.purl),
             default_project_name,
             default_scope_name,
@@ -296,6 +306,7 @@ def add_dependency(
     declared_license,
     concluded_license,
     linking,
+    component_update_mode=SBOMImport.COMPONENT_UPDATE_DEFAULT,
     purl="",
     project="",
     scope="",
@@ -319,11 +330,12 @@ def add_dependency(
         # Prefer explicit type over the purl type
         component_purl_type = component_purl_type or purl_obj.type
 
-    component, component_log = add_component(
-        component_purl_type, component_name, component_defaults
+    component, component_log = _add_component(
+        component_update_mode, component_purl_type, component_name, component_defaults
     )
 
-    version, version_log = add_version(
+    version, version_log = _add_version(
+        component_update_mode,
         component,
         version_number,
         declared_license=declared_license,
@@ -349,7 +361,12 @@ def add_dependency(
     )
 
 
-def add_component(component_purl_type, component_name, component_defaults):
+def _add_component(
+    component_update_mode,
+    component_purl_type,
+    component_name,
+    component_defaults,
+):
     import_log = ""
     component = Component.objects.filter(
         purl_type=component_purl_type, name=component_name
@@ -361,7 +378,15 @@ def add_component(component_purl_type, component_name, component_defaults):
         import_conflicts = []
 
         if component_defaults.get("description", ""):
-            if not component.description:
+            if (
+                not component.description
+                or component.description == "NOASSERTION"
+                or (
+                    component_update_mode == SBOMImport.COMPONENT_UPDATE_OVERRIDE
+                    and component.description
+                    != component_defaults.get("description", "")
+                )
+            ):
                 component.description = component_defaults["description"]
                 save_component = True
             elif component.description != component_defaults["description"]:
@@ -371,7 +396,15 @@ def add_component(component_purl_type, component_name, component_defaults):
                 )
 
         if component_defaults.get("homepage_url", ""):
-            if not component.homepage_url:
+            if (
+                not component.homepage_url
+                or component.homepage_url == "NOASSERTION"
+                or (
+                    component_update_mode == SBOMImport.COMPONENT_UPDATE_OVERRIDE
+                    and component.homepage_url
+                    != component_defaults.get("homepage_url", "")
+                )
+            ):
                 component.homepage_url = component_defaults.get("homepage_url", "")
                 save_component = True
             elif component.homepage_url != component_defaults.get("homepage_url", ""):
@@ -399,7 +432,14 @@ def add_component(component_purl_type, component_name, component_defaults):
     return component, import_log
 
 
-def add_version(component, version_number, declared_license, concluded_license, purl):
+def _add_version(
+    component_update_mode,
+    component,
+    version_number,
+    declared_license,
+    concluded_license,
+    purl,
+):
     import_log = ""
     version = Version.objects.filter(
         component=component, version_number=version_number
@@ -411,19 +451,43 @@ def add_version(component, version_number, declared_license, concluded_license, 
         save_version = False
         version_conflicts = set()
 
-        if not version.declared_license_expr:
+        if (
+            not version.declared_license_expr
+            or version.declared_license_expr == "NOASSERTION"
+            or (
+                component_update_mode == SBOMImport.COMPONENT_UPDATE_OVERRIDE
+                and version.declared_license_expr != declared_license
+            )
+        ):
             version.declared_license_expr = declared_license
             save_version = True
         elif version.declared_license_expr != declared_license:
             version_conflicts.add("declared_license_expr")
 
-        if not version.spdx_valid_license_expr:
-            version.spdx_valid_license_expr = concluded_license
+        if (
+            not version.spdx_valid_license_expr
+            or version.spdx_valid_license_expr == "NOASSERTION"
+            or (
+                component_update_mode == SBOMImport.COMPONENT_UPDATE_OVERRIDE
+                and version.spdx_valid_license_expr
+                != (concluded_license and simplified(concluded_license))
+            )
+        ):
+            version.spdx_valid_license_expr = concluded_license and simplified(
+                concluded_license
+            )
             save_version = True
         elif version.spdx_valid_license_expr != concluded_license:
             version_conflicts.add("spdx_valid_license_expr")
 
-        if not version.purl:
+        if (
+            not version.purl
+            or version.purl == "NOASSERTION"
+            or (
+                component_update_mode == SBOMImport.COMPONENT_UPDATE_OVERRIDE
+                and version.purl != purl
+            )
+        ):
             version.purl = purl
             save_version = True
         elif version.purl != purl:
@@ -466,11 +530,14 @@ def parse_spdx_file(spdx_file: File):
     return parse_file(spdx_file.name)
 
 
-def add_import_history_entry(file_name, file_type, mode, linking, user, release_id):
+def add_import_history_entry(
+    file_name, file_type, mode, component_update_mode, linking, user, release_id
+):
     SBOMImport.objects.create(
         file_name=file_name,
         file_type=file_type,
         mode=mode,
+        component_update_mode=component_update_mode,
         linking=linking,
         user=user,
         release_id=release_id,

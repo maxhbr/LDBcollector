@@ -4,7 +4,8 @@
 
 from rest_framework import serializers
 
-from cube.models import Product, Release, Usage, Exploitation, License
+from cube.models import Product, Release, Usage, Exploitation, License, SBOMImport
+
 from cube.serializers import (
     UsageSerializer,
     LicenseSerializer,
@@ -145,6 +146,11 @@ class UploadSPDXSerializer(serializers.Serializer):
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
     default_project_name = serializers.CharField(
         max_length=Usage.MAX_LENGTH_DEFAULT_PROJECT_NAME, required=False
     )
@@ -158,6 +164,11 @@ class UploadCycloneDXSerializer(serializers.Serializer):
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
     default_project_name = serializers.CharField(max_length=750, required=False)
     default_scope_name = serializers.CharField(max_length=50, required=False)
 
@@ -166,6 +177,11 @@ class UploadORTSerializer(serializers.Serializer):
     ort_file = serializers.FileField(validators=[validate_file_size])
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
 
 
@@ -177,6 +193,11 @@ class DependencySerializer(serializers.Serializer):
     declared_license_expr = serializers.CharField(max_length=500, required=False)
     spdx_valid_license_expr = serializers.CharField(max_length=500, required=False)
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
     purl = serializers.CharField(max_length=250, required=False)
     default_project_name = serializers.CharField(max_length=750, required=False)
     default_scope_name = serializers.CharField(max_length=50, required=False)
