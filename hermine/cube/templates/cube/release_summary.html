@@ -168,5 +168,42 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </div>
   </div>
+  <div class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon"><i class="fas fa-history"></i></span>
+        Import history
+      </p>
+    </header>
+    <div class="card-content">
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>File name</th>
+            <th>Format</th>
+            <th>Mode</th>
+            <th>Component linking</th>
+            <th>Date</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for import in release.import_history.all %}
+            <tr>
+              <td>{{ import.file_name }}</td>
+              <td>{{ import.file_type }}</td>
+              <td>{{ import.get_mode_display }}</td>
+              <td>{{ import.get_linking_display }}</td>
+              <td>{{ import.date }}</td>
+              <td>{{ import.user }}</td>
+            </tr>
+          {% empty %}
+            <tr>
+              <td colspan="5"><em>No import history</em></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
 {% endblock %}
-
