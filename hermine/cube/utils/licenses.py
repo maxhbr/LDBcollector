@@ -238,4 +238,13 @@ def handle_licenses_json_or_shared_json(data):
             ][0]
             Generic.objects.get_or_create(name=name)
 
+        # Create missing teams on the fly
+        if "team" in [f.cache_name for f in obj.deferred_fields.keys()]:
+            team = obj.deferred_fields[
+                next(f for f in obj.deferred_fields.keys() if f.cache_name == "team")
+            ][0]
+            from cube.models import Team
+
+            Team.objects.get_or_create(name=team)
+
         create_or_replace_by_natural_key(obj)
