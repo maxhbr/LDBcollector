@@ -443,6 +443,9 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             spdx_file,
             release_id,
             serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
             linking=serializer.validated_data.get("linking", ""),
             default_project_name=serializer.validated_data.get(
                 "default_project_name", ""
@@ -453,6 +456,9 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             spdx_file,
             SBOMImport.BOM_SPDX,
             serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
             serializer.validated_data.get("linking", ""),
             self.request.user,
             release_id,
@@ -486,6 +492,9 @@ class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             cyclonedx_file,
             release_id,
             serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
             linking=serializer.validated_data.get("linking", ""),
             default_project_name=serializer.validated_data.get(
                 "default_project_name", ""
@@ -496,6 +505,9 @@ class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             cyclonedx_file,
             SBOMImport.BOM_CYCLONEDX,
             serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
             serializer.validated_data.get("linking", ""),
             self.request.user,
             release_id,
@@ -529,12 +541,18 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             ort_file,
             release_id,
             serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
             linking=serializer.validated_data.get("linking", ""),
         )
         add_import_history_entry(
             ort_file,
             SBOMImport.BOM_ORT,
             serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
             serializer.validated_data.get("linking", ""),
             self.request.user,
             release_id,
@@ -576,6 +594,9 @@ class CreateSingleDependencyViewSet(CreateModelMixin, viewsets.GenericViewSet):
                 ),
                 declared_license=serializer.validated_data.get(
                     "declared_license_expr", ""
+                ),
+                component_update_mode=serializer.validated_data.get(
+                    "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
                 ),
                 purl=serializer.validated_data.get("purl", ""),
                 scope=serializer.validated_data.get("default_scope_name", ""),

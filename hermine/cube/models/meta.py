@@ -50,9 +50,22 @@ class SBOMImport(models.Model):
         (IMPORT_MODE_MERGE, "Add new component usages while keeping previous ones"),
     )
 
+    COMPONENT_UPDATE_DEFAULT = "Default"
+    COMPONENT_UPDATE_OVERRIDE = "Override"
+    COMPONENT_UPDATE_CHOICES = (
+        (COMPONENT_UPDATE_DEFAULT, "Default: update missing informations only"),
+        (
+            COMPONENT_UPDATE_OVERRIDE,
+            "Override all informations",
+        ),
+    )
+
     file_name = models.CharField(max_length=200, blank=True)
     file_type = models.CharField(max_length=12, choices=BOM_CHOICES, blank=True)
     mode = models.CharField(max_length=20, choices=IMPORT_MODE_CHOICES)
+    component_update_mode = models.CharField(
+        max_length=20, choices=COMPONENT_UPDATE_CHOICES
+    )
     linking = models.CharField(
         max_length=20,
         choices=Usage.LINKING_CHOICES,
