@@ -16,6 +16,7 @@ app_name = "api"
 router = Router()
 
 # Validation pipeline endpoints
+# DEPRECATED: use /releases/<id>/(upload_spdx|upload_cyclonedx|upload_ort|add_dependency) instead
 router.register(r"upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
 router.register(
     r"upload_cyclonedx", api_views.UploadCYCLONEDXViewSet, basename="upload_cyclonedx"
@@ -57,6 +58,22 @@ product_router.register(
 release_router = routers.NestedSimpleRouter(router, r"releases", lookup="release")
 release_router.register(
     r"exploitations", api_views.ExploitationViewSet, basename="releases-exploitations"
+)
+release_router.register(
+    r"upload_spdx", api_views.UploadSPDXViewSet, basename="releases-upload_spdx"
+)
+release_router.register(
+    r"upload_cyclonedx",
+    api_views.UploadCYCLONEDXViewSet,
+    basename="releases-upload_cyclonedx",
+)
+release_router.register(
+    r"upload_ort", api_views.UploadORTViewSet, basename="releases-upload_ort"
+)
+release_router.register(
+    r"add_dependency",
+    api_views.CreateSingleDependencyViewSet,
+    basename="releases-add_dependency",
 )
 
 component_router = routers.NestedSimpleRouter(router, r"components", lookup="component")

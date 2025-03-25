@@ -38,12 +38,13 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         with open(
             os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")
         ) as sbom_file:
-            url = reverse("cube:api:upload_spdx-list")
+            url = reverse(
+                "cube:api:releases-upload_spdx-list", kwargs={"release_id": 1}
+            )
             res = self.client.post(
                 url,
                 {
                     "spdx_file": sbom_file,
-                    "release": 1,
                     "replace": False,
                     "linking": Usage.LINKING_DYNAMIC,
                 },

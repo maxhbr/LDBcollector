@@ -25,6 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
   <div class="content">
+    <h2>Informations</h2>
     <dl>
       <dt><strong>Username</strong></dt>
       <dd>{{user.username}}</dd>
@@ -33,6 +34,34 @@ SPDX-License-Identifier: AGPL-3.0-only
       <dt><strong>Roles</strong></dt>
       <dd><ul>{% for group in user.groups.all %} <li>{{ group }}</li> {%endfor%}</ul></dd>
     </dl>
+    <h2>API Tokens</h2>
+    <p>API tokens are used to authenticate to the Hermine API. They are used to access the API from external tools or scripts.</p>
+    {% if user.auth_token.count %}
+      <table class="table">
+        <tr>
+          <th>ID</th>
+          <th>Created</th>
+          <th>Expiration</th>
+          <th></th>
+        </tr>
+        {% for token in user.auth_token.all %}
+          <tr>
+            <td>{{ token.description }}</td>
+            <td>{{ token.created }}</td>
+            <td>{{ token.expiry }}</td>
+            <td>
+              <form action="{% url 'cube:api_token_delete' token.pk %}" method="post">
+                {% csrf_token %}
+                <button type="submit" class="delete"></button>
+              </form>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      <p><em>No API token created.</em></p>
+    {% endif %}
+    <a href="{% url 'cube:api_token_create' %}" class="button">Create a new API token</a>
   </div>
 
 {% endblock %}

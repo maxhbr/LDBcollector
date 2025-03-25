@@ -75,7 +75,6 @@ INSTALLED_APPS = [
     "django.forms",
     "social_django",
     "rest_framework",
-    "rest_framework.authtoken",
     "django_filters",
     "hermine",
     "cube.apps.CubeConfig",
@@ -254,11 +253,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 # REST API stuff
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions
-    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.DjangoModelPermissions"],
+    "DEFAULT_PERMISSION_CLASSES": ["cube.permissions.ReadWriteDjangoModelPermissions"],
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework.authentication.BasicAuthentication",
         "rest_framework.authentication.SessionAuthentication",
-        "rest_framework.authentication.TokenAuthentication",
+        "cube.auth.HashedTokenAuthentication",
     ],
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 50,
