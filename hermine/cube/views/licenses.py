@@ -32,7 +32,7 @@ from odf.text import H, P, Span
 
 from cube.filters import LicenseFilter
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
-from cube.forms.licenses import ObligationForm
+from cube.forms.licenses import ObligationForm, CompatibilityForm
 from cube.forms.licenses import (
     ObligationGenericDiffForm,
     CopyReferenceLicensesForm,
@@ -40,14 +40,14 @@ from cube.forms.licenses import (
     CopyReferenceObligationForm,
     SyncEverythingFromReferenceForm,
 )
-from cube.models import License, LicensePolicy, Generic, Obligation
+from cube.models import License, LicensePolicy, Generic, Obligation, Compatibility
 from cube.utils.reference import (
     LICENSE_SHARED_FIELDS,
     OBLIGATION_SHARED_FIELDS,
     join_obligations,
     GENERIC_SHARED_FIELDS,
 )
-from cube.views.mixins import LicenseRelatedMixin, SharedDataRequiredMixin
+from cube.views.mixins import CreateLicenseRelatedMixin, SharedDataRequiredMixin
 
 
 class ImportFormMixin:
@@ -153,6 +153,25 @@ class LicensePolicyUpdateView(LoginRequiredMixin, PermissionRequiredMixin, Updat
 
     def get_success_url(self):
         return reverse("cube:license_detail", args=[self.kwargs["pk"]])
+
+
+class CompatibilityCreateView(
+    LoginRequiredMixin, PermissionRequiredMixin, CreateLicenseRelatedMixin, CreateView
+):
+    permission_required = "cube.update_license"
+    related_field_name = "from_license"
+    model = Compatibility
+    form_class = CompatibilityForm
+    template_name = "cube/compatibility_create.html"
+
+
+class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    permission_required = "cube.update_license"
+    model = Compatibility
+    template_name = "cube/compatibility_confirm_delete.html"
+
+    def get_success_url(self):
+        return reverse("cube:license_detail", args=[self.object.from_license.pk])
 
 
 class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
@@ -445,15 +464,12 @@ class LicensePrintView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
 
 
 class ObligationCreateView(
-    LoginRequiredMixin, PermissionRequiredMixin, LicenseRelatedMixin, CreateView
+    LoginRequiredMixin, PermissionRequiredMixin, CreateLicenseRelatedMixin, CreateView
 ):
     permission_required = "cube.add_obligation"
     model = Obligation
     license = None
     form_class = ObligationForm
-
-    def get_success_url(self):
-        return reverse("cube:license_detail", args=[self.object.license.id])
 
 
 class ObligationUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):

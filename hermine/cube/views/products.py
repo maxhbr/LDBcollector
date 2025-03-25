@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
 from django.views import generic
 
-from cube.forms.products import ProductForm
+from cube.forms.products import ProductForm, CategoryForm
 from cube.models import Product, Release, Category
 from cube.views.mixins import SearchMixin
 
@@ -96,8 +96,8 @@ class CategoryCreateView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView
 ):
     permission_required = "cube.add_category"
-    fields = "__all__"
     model = Category
+    form_class = CategoryForm
     template_name = "cube/category_create.html"
 
 
@@ -105,6 +105,6 @@ class CategoryUpdateView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView
 ):
     permission_required = "cube.change_category"
-    fields = "__all__"
     model = Category
+    form_class = CategoryForm
     template_name = "cube/category_update.html"

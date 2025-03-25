@@ -24,7 +24,7 @@ from django_filters.views import FilterView
 
 from cube.filters import ReleaseBomFilter
 from cube.forms.importers import ImportBomForm
-from cube.forms.releases import UsageForm
+from cube.forms.releases import UsageForm, ReleaseForm
 from cube.importers import (
     import_ort_evaluated_model_json_file,
     import_spdx_file,
@@ -69,7 +69,7 @@ class ReleaseUpdateView(
     LoginRequiredMixin, PermissionRequiredMixin, QuerySuccessUrlMixin, UpdateView
 ):
     model = Release
-    fields = ["product", "release_number", "commit", "ship_status"]
+    form_class = ReleaseForm
     permission_required = "cube.change_release"
     template_name = "cube/release_update.html"
 

@@ -158,6 +158,17 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ license.get_copyleft_display|default:"Unknown" }}
             </span>
           </p>
+          <p><b>Explicit compatibilities:</b>
+            {% for compatibility in license.compatibility_from.all %}
+              <span class="tag {{ compatibility.to_license|licenseAllowedCSS }}">
+                {{ compatibility.to_license.spdx_id }}
+                ({{ compatibility.get_direction_display }}&nbsp;<a href="{% url 'cube:compatibility_delete' license.pk compatibility.pk %}" class="delete"></a>
+              </span>
+            {% endfor %}
+            <a href="{% url 'cube:compatibility_create' license.pk %}" class="button is-small is-white">
+              <i class="fa fa-plus"></i>
+            </a>
+          </p>
           <p><b>Actually FOSS:</b>
             <span class="tag {{ license|licenseFOSSCSS }}">
               {{ license.get_foss_display|default:"Unknown" }}
@@ -226,7 +237,6 @@ SPDX-License-Identifier: AGPL-3.0-only
           <summary><strong>Verbatim text of the license:</strong></summary>
           <div class="is-italic">{{ license.verbatim|linebreaks }}</div>
         </details>
-
       </div>
     </section>
   {% endif %}
@@ -282,8 +292,6 @@ SPDX-License-Identifier: AGPL-3.0-only
           <span class="icon"><i class="fas fa-plus"></i></span>
           <span>Add an authorized context</span>
         </a></p>
-
-
 
       </div>
     </section>

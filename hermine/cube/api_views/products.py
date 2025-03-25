@@ -33,6 +33,7 @@ from cube.serializers import (
     UploadCycloneDXSerializer,
     UploadORTSerializer,
     DependencySerializer,
+    CompatibilityValidationSerializer,
 )
 from cube.serializers.components import UsageSerializer
 from cube.serializers.products import (
@@ -55,6 +56,7 @@ from cube.utils.release_validation import (
     validate_choices,
     validate_policy,
     apply_curations,
+    validate_compatibility,
 )
 
 
@@ -206,6 +208,25 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         )
 
         return Response(PolicyValidationSerializer(response).data)
+
+    @swagger_auto_schema(
+        responses={200: CompatibilityValidationSerializer()},
+    )
+    @action(detail=True, methods=["get"])
+    def validation_6(self, request, **kwargs):
+        """
+        Check that the licenses are compatible with policy.
+        """
+        response = {}
+        release = self.get_object()
+
+        response["valid"], context = validate_compatibility(release)
+        response.update(context)
+        response["details"] = reverse(
+            "cube:release_validation", kwargs={"pk": release.pk}
+        )
+
+        return Response(CompatibilityValidationSerializer(response).data)
 
     @swagger_auto_schema(
         responses={

@@ -6,7 +6,14 @@ from django.contrib.auth.models import User
 
 from cube.models.auth import Token
 from cube.models.components import Component, Version, Usage, Funding
-from cube.models.licenses import License, LicensePolicy, Team, Generic, Obligation
+from cube.models.licenses import (
+    License,
+    LicensePolicy,
+    Team,
+    Generic,
+    Obligation,
+    Compatibility,
+)
 from cube.models.meta import SBOMImport, ReleaseConsultation
 from cube.models.policy import (
     LicenseCuration,

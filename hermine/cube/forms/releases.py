@@ -5,7 +5,20 @@
 from django.forms import ModelForm
 
 from cube.forms.mixins import AutocompleteFormMixin
-from cube.models import Usage
+from cube.models import Usage, Release
+
+
+class ReleaseForm(AutocompleteFormMixin, ModelForm):
+    class Meta:
+        model = Release
+        fields = [
+            "product",
+            "release_number",
+            "commit",
+            "ship_status",
+            "outbound_licenses",
+        ]
+        autocomplete_fields = ["outbound_licenses"]
 
 
 class UsageForm(AutocompleteFormMixin, ModelForm):

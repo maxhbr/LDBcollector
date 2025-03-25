@@ -9,6 +9,7 @@ from django.db.models.functions import Coalesce
 from django.forms import Form, CharField
 from django.http import Http404
 from django.shortcuts import get_object_or_404
+from django.urls import reverse
 
 from cube.models import License, Release
 from cube.utils.reference import is_shared_reference_loaded
@@ -61,7 +62,9 @@ class SearchMixin:
         return context
 
 
-class LicenseRelatedMixin:
+class CreateLicenseRelatedMixin:
+    related_field_name = "license"
+
     def dispatch(self, request, *args, **kwargs):
         self.license = get_object_or_404(License, id=kwargs["license_pk"])
         return super().dispatch(request, *args, **kwargs)
@@ -72,8 +75,14 @@ class LicenseRelatedMixin:
         return context
 
     def form_valid(self, form):
-        form.instance.license = self.license
+        setattr(form.instance, self.related_field_name, self.license)
         return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse(
+            "cube:license_detail",
+            args=[getattr(self.object, self.related_field_name).id],
+        )
 
 
 class SaveAuthorMixin:

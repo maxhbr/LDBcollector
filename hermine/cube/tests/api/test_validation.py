@@ -22,6 +22,7 @@ from cube.utils.release_validation import (
     STEP_EXPLOITATIONS,
     STEP_CHOICES,
     STEP_POLICY,
+    STEP_COMPATIBILITY,
 )
 from .mixins import BaseHermineAPITestCase
 
@@ -229,11 +230,35 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(res.data["valid"], True)
         self.assertEqual(len(res.data["derogations"]), 1)
 
-        ## Finished
         res = self.client.post(
             reverse("cube:api:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_POLICY)
+
+        # Step 6
+        self.client.post(
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
+        )
+        res = self.client.get(
+            reverse("cube:api:releases-validation-6", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["valid"], False)
+        self.assertEqual(len(res.data["incompatible_usages"]), 1)
+        self.assertEqual(len(res.data["incompatible_licenses"]), 1)
+        self.add_outbound_license()
+        self.client.post(
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
+        )
+        res = self.client.get(
+            reverse("cube:api:releases-validation-6", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["valid"], True)
+
+        ## Finished
+        res = self.client.post(
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["validation_step"], STEP_COMPATIBILITY)
 
     def test_multiple_curations(self):
         self.create_product()
@@ -288,7 +313,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
             release_id=1,
             scope=Usage.DEFAULT_SCOPE,
             project="",
-            exploitation=Usage.EXPLOITATION_INTERNAL,
+            exploitation=Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE,
         )
 
     def create_choices(self):

@@ -8,11 +8,11 @@ import logging
 import re
 import tarfile
 import unicodedata
-from typing import Iterable, TYPE_CHECKING
+from typing import Iterable, TYPE_CHECKING, Optional
 
 from django.core.serializers import serialize, deserialize
 from django.db import transaction
-from django.db.models import prefetch_related_objects
+from django.db.models import prefetch_related_objects, Q
 
 from cube.utils.importers import create_or_replace_by_natural_key
 from cube.utils.reference import LICENSE_SHARED_FIELDS, GENERIC_SHARED_FIELDS
@@ -248,3 +248,75 @@ def handle_licenses_json_or_shared_json(data):
             Team.objects.get_or_create(name=team)
 
         create_or_replace_by_natural_key(obj)
+
+
+def is_compatible(
+    dependency_license: "License",
+    outbound_license: Optional["License"],
+    linking: str,
+    exploitation: str,
+):
+    from cube.models import Compatibility, Obligation, Usage, License
+
+    if linking not in (key for key, value in Usage.LINKING_CHOICES):
+        raise ValueError(f"Linking value {linking} is not a valid linking value")
+    if exploitation not in (key for key, value in Usage.EXPLOITATION_CHOICES):
+        raise ValueError(
+            f"Exploitation value {exploitation} is not a valid exploitation value"
+        )
+
+    # Identic licenses are always compatible
+    if outbound_license and outbound_license.pk == dependency_license.pk:
+        return True
+
+    # Explicit compatibility
+    if Compatibility.objects.filter(
+        Q(
+            from_license=dependency_license,
+            to_license=outbound_license,
+            direction=Compatibility.DIRECTION_ASCENDING,
+        )
+        | Q(
+            from_license=outbound_license,
+            to_license=dependency_license,
+            direction=Compatibility.DIRECTION_DESCENDING,
+        )
+    ).exists():
+        return True
+
+    # Inbound copyleft compatibility
+    if dependency_license.copyleft == "":
+        raise ValueError(f"License {dependency_license} has no copyleft information")
+    weak_copyleft = dependency_license.copyleft in [
+        License.COPYLEFT_WEAK,
+        License.COPYLEFT_NETWORK_WEAK,
+    ] and linking in [Usage.LINKING_STATIC, Usage.LINKING_MINGLED]
+    strong_copyleft = dependency_license.copyleft in [
+        License.COPYLEFT_STRONG,
+        License.COPYLEFT_NETWORK,
+    ] and linking in [
+        Usage.LINKING_DYNAMIC,
+        Usage.LINKING_STATIC,
+        Usage.LINKING_MINGLED,
+    ]
+    exploitation_copyleft = exploitation in [
+        Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE,
+        Usage.EXPLOITATION_DISTRIBUTION_SOURCE,
+        Usage.EXPLOITATION_DISTRIBUTION_BOTH,
+    ] or (
+        exploitation == Usage.EXPLOITATION_NETWORK
+        and dependency_license.copyleft
+        in [License.COPYLEFT_NETWORK, License.COPYLEFT_NETWORK_WEAK]
+    )
+    inbound_copyleft = (weak_copyleft or strong_copyleft) and exploitation_copyleft
+    if inbound_copyleft:
+        return False
+
+    # Outbound copyleft compatibility
+    if outbound_license and outbound_license.copyleft != License.COPYLEFT_NONE:
+        return not Obligation.objects.filter(
+            Q(license=dependency_license)
+            & ~Q(generic__obligation__license=outbound_license)
+        ).exists()
+
+    return True

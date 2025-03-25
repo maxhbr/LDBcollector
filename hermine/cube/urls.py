@@ -131,6 +131,16 @@ urlpatterns = [
         views.LicensePolicyUpdateView.as_view(),
         name="license_update_policy",
     ),
+    path(
+        "licenses/<int:license_pk>/add_compatibility/",
+        views.CompatibilityCreateView.as_view(),
+        name="compatibility_create",
+    ),
+    path(
+        "licenses/<int:license_pk>/delete_compatibility/<int:pk>/",
+        views.CompatibilityDeleteView.as_view(),
+        name="compatibility_delete",
+    ),
     path("licenses/new/", views.LicenseCreateView.as_view(), name="license_create"),
     path(
         "licenses/<int:pk>/diff/", views.LicenseDiffView.as_view(), name="license_diff"

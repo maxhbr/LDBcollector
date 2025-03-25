@@ -34,7 +34,7 @@ from cube.models import (
 )
 from cube.utils.release_validation import update_validation_step, propagate_choices
 from cube.utils.spdx import simplified
-from cube.views import LicenseRelatedMixin
+from cube.views import CreateLicenseRelatedMixin
 from cube.views.mixins import (
     SaveAuthorMixin,
     ReleaseContextMixin,
@@ -298,7 +298,7 @@ class ReleaseUpdateLicenseChoiceView(
 
 
 class ReleaseDerogationCreateView(
-    LicenseRelatedMixin, AbstractCreateUsageConditionView
+    CreateLicenseRelatedMixin, AbstractCreateUsageConditionView
 ):
     model = Derogation
     form_class = CreateDerogationForm
