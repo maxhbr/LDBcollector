@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.5.0 - RC1
+
+FEATURES :
+* [Add step for Outbound license compatibility](https://gitlab.com/hermine-project/hermine/-/merge_requests/582)
+* [Hash tokens and set expiry date](https://gitlab.com/hermine-project/hermine/-/merge_requests/605)
+* [Allow updating existing components on SBOM import](https://gitlab.com/hermine-project/hermine/-/merge_requests/606)
+* [Keep track of and display import history for a release](https://gitlab.com/hermine-project/hermine/-/merge_requests/600)
+* [Add API endpoint to add a single dependency to a release](https://gitlab.com/hermine-project/hermine/-/merge_requests/596)
+* [Add filters/seach on components, authorized contexts, derogations, licenses choices and curations.](https://gitlab.com/hermine-project/hermine/-/merge_requests/602)
+
+BUGFIXES:
+* [Limit default API permissions](https://gitlab.com/hermine-project/hermine/-/merge_requests/605)
+* [Create missing teams on the fly when importing Compliance actions](https://gitlab.com/hermine-project/hermine/-/merge_requests/601)
+* [Fix edition of authorized context](https://gitlab.com/hermine-project/hermine/-/merge_requests/599)
+* [API: Add id field listing exploitations ](https://gitlab.com/hermine-project/hermine/-/merge_requests/595)
+*[Allow to set CSRF_TRUSTED_ORIGINS in Docker environment with or without protocols ](https://gitlab.com/hermine-project/hermine/-/merge_requests/594)
+*[Set Poetry minimal version to 2.0](https://gitlab.com/hermine-project/hermine/-/merge_requests/597)
+* [Set Postgres version in docker compose](https://gitlab.com/hermine-project/hermine/-/merge_requests/587)
+
 ## O.4.0:
 
 FEATURES :
