@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-CRC32"
-status = [ "not-allowed" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/CRC32
