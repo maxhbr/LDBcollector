@@ -175,6 +175,7 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
+          scope: '@licenselynx'
       - name: Copy LICENSE file
         run: |
           cp LICENSE typescript/LICENSE
@@ -182,6 +183,12 @@ jobs:
           python3 scripts/src/load/merge_data.py -o ./typescript/resources/merged_data.json
           cd typescript
           npm ci
+      - name: Configure npm authentication
+        run: |
+          cd typescript
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: |
           cd typescript
           npm publish --provenance --access public
