@@ -276,7 +276,6 @@ tasks.named('javadoc').configure {
 }
 
 
-
 /*
  * - - - -  CHECKSTYLE  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
@@ -306,13 +305,16 @@ publishing {
             name = 'localBuildDir'
             url = project.layout.buildDirectory.dir('maven-repo-test')
         }
-        if (project.hasProperty('SB_SONATYPE_USER') && project.hasProperty('SB_SONATYPE_PASSWORD')) {
+        if (project.hasProperty('licenselynx_publish_credentials')) {
             maven {
-                name = 'mavenCentralStaging'
-                url = 'https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/'
-                credentials {
-                    username = project.getProperty('SB_SONATYPE_USER')
-                    password = project.getProperty('SB_SONATYPE_PASSWORD')
+                name = 'mavenSonatypeCentral'
+                url = 'https://central.sonatype.com/api/v1/publisher/deployments/download/'
+                credentials(HttpHeaderCredentials) {
+                    name = "Authorization"
+                    value = "Bearer ${licenselynx_publish_credentials}"
+                }
+                authentication {
+                    header(HttpHeaderAuthentication)
                 }
             }
         }
@@ -329,7 +331,7 @@ publishing {
                     license {
                         name = 'Apache-2.0'
                         url = 'https://raw.githubusercontent.com/licenselynx/licenselynx/refs/tags/v' +
-                                project.version + '/LICENSE'
+                            project.version + '/LICENSE'
                     }
                 }
                 developers {
@@ -348,14 +350,14 @@ publishing {
         }
     }
 }
+
 if (!Boolean.parseBoolean(System.getenv('CI')) || project.hasProperty('signingKey')) {
     signing {
         if (Boolean.parseBoolean(System.getenv('CI'))) {
             def signingKey = project.getProperty('signingKey')
             def signingPassword = project.getProperty('signingPassword')
             useInMemoryPgpKeys(signingKey, signingPassword)
-        }
-        else {
+        } else {
             useGpgCmd()   // use local GPG installation and agent
         }
         sign publishing.publications.mavenJava

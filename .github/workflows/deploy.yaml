@@ -143,6 +143,12 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 8
+          server-id: central
+          server-username: MAVEN_USERNAME
+          server-password: MAVEN_CENTRAL_TOKEN
+          gpg-private-key: ${{ secrets.SIGNINGKEY }}
+          gpg-passphrase: MAVEN_GPG_PASSPHRASE
+          cache: maven
       - name: Setup Gradle 8.9
         uses: gradle/actions/setup-gradle@v4
         with:
@@ -150,7 +156,7 @@ jobs:
       - name: Run build
         run: |
           cd java
-          gradle --stacktrace --no-daemon clean build  -PisCI=true
+          gradle --stacktrace --no-daemon clean build
       - name: Run publish
         run: |
           mkdir ./java/src/main/resources/
@@ -158,8 +164,9 @@ jobs:
           cd java
           gradle --stacktrace --no-daemon publishMavenJavaPublicationToMavenCentralStagingRepository
         env:
-          signingKey: ${{ secrets.SIGNINGKEY }}
-          signingPassword: ${{ secrets.SIGNINGPASSWORD }}
+          ORG_GRADLE_PROJECT_signingKey: ${{ secrets.SIGNINGKEY }}
+          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.SIGNINGPASSWORD }}
+          ORG_GRADLE_PROJECT_licenselynx_publish_credentials: ${{ secrets.LICENSELYNX_PUBLISH_CREDENTIALS }}
 
 
   deploy-typescript:
