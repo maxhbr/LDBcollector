@@ -11,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "",
+    "warranty": "",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "In the preambule, it mentions explicitely that the source code can't be sold in itself, but the actual text of the licence is not very clear about it. This has been improved in verison 1.1 with the addition of 4.g",
     "verbatim": "",
     "obligations": [

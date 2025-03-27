@@ -11,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "",
+    "warranty": "",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [
@@ -46,10 +49,10 @@
                 "OLDAP-2.2.1"
             ],
             "generic": [
-                "Do not use project or contributor names for endorsement or promotion."
+                "Respect trademarks"
             ],
-            "name": "No use of names for endorsment",
-            "verbatim": "3. The name \"OpenLDAP\" must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation.",
+            "name": "Respect trademarks",
+            "verbatim": "4. Products derived from this Software may not be called \"OpenLDAP\" nor may \"OpenLDAP\" appear in their names without prior written permission of the OpenLDAP Foundation.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
@@ -59,10 +62,10 @@
                 "OLDAP-2.2.1"
             ],
             "generic": [
-                "Respect trademarks"
+                "Do not use project or contributor names for endorsement or promotion."
             ],
-            "name": "Respect trademarks",
-            "verbatim": "4. Products derived from this Software may not be called \"OpenLDAP\" nor may \"OpenLDAP\" appear in their names without prior written permission of the OpenLDAP Foundation.",
+            "name": "No use of names for endorsment",
+            "verbatim": "3. The name \"OpenLDAP\" must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"

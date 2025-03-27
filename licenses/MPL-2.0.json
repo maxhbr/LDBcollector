@@ -11,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "",
+    "warranty": "",
     "law_choice": "in the courts of a jurisdiction where the defendant maintains its principal place of business and such litigation shall be governed by laws of that jurisdiction",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [
