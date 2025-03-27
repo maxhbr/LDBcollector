@@ -156,7 +156,7 @@ jobs:
           mkdir ./java/src/main/resources/
           python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
           cd java
-          gradle --stacktrace --no-daemon publishMavenJavaPublicationToMavenCentralStagingRepository
+          gradle --stacktrace --no-daemon publishMavenJavaPublicationToMavenSonatypeCentralRepository
         env:
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.SIGNINGKEY }}
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.SIGNINGPASSWORD }}
