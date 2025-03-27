@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.65
+Version:        1.66
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,19 @@ make check-grammar
 
 
 %changelog
+* Thu Mar 27 2025 Miroslav Suchý <msuchy@redhat.com> 1.66-1
+- Mark LicenseRef-CRC32 as deprecated
+- allow packages that includes or bundle ccan as an exception
+- add LicenseRef-Julius-dictation-kit as not allowed
+- add Seiko-Epson license to firmware
+- add public domain findings for sc
+- add ultra permissive dedication of perl-Math-FFT
+- add aastr ultra permissive dedication
+- add GPL-2.0-or-later WITH mif-exception
+- add public domain dedication for libtelnet
+- Add PHP-3.0
+- LicenseRef-Fedora-Public-Domain: Add zpaqfranz
+
 * Thu Feb 20 2025 Miroslav Suchý <msuchy@redhat.com> 1.65-1
 - Add BSD-3-Clause WITH AdditionRef-WebM-patent license
 - add public domain dedication in desktop-backgrouds
