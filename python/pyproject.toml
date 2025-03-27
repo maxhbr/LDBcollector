@@ -4,7 +4,7 @@
 #
 [project]
 name = "licenselynx"
-version = "0.9.8"
+version = "0.9.9"
 description = "Unified License Mapper"
 authors = [
     { name = "Leo Reinmann", email = "leo.reinmann@siemens.com" }
