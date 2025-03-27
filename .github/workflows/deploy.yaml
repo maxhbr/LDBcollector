@@ -143,12 +143,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 8
-          server-id: central
-          server-username: MAVEN_USERNAME
-          server-password: MAVEN_CENTRAL_TOKEN
-          gpg-private-key: ${{ secrets.SIGNINGKEY }}
-          gpg-passphrase: MAVEN_GPG_PASSPHRASE
-          cache: maven
       - name: Setup Gradle 8.9
         uses: gradle/actions/setup-gradle@v4
         with:
