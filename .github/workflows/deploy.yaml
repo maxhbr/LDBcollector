@@ -135,6 +135,7 @@ jobs:
   deploy-java:
     runs-on: ubuntu-latest
     needs: test-and-lint-java
+    environment: gpg secrets
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -166,6 +167,7 @@ jobs:
   deploy-typescript:
     runs-on: ubuntu-latest
     needs: test-and-lint-typescript
+    environment: npm
     permissions:
       contents: read
       id-token: write
