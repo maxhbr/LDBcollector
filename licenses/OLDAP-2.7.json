@@ -11,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "",
+    "warranty": "",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [
@@ -46,9 +49,9 @@
                 "OLDAP-2.7"
             ],
             "generic": [
-                "Respect trademarks"
+                "Do not use project or contributor names for endorsement or promotion."
             ],
-            "name": "Respect trademarks",
+            "name": "No use of names for endorsment",
             "verbatim": "The names of the authors and copyright holders must not be used in advertising or otherwise to promote the sale, use or other dealing in this Software without specific, written prior permission. Title to copyright in this Software shall at all times remain with copyright holders.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
@@ -59,9 +62,9 @@
                 "OLDAP-2.7"
             ],
             "generic": [
-                "Do not use project or contributor names for endorsement or promotion."
+                "Respect trademarks"
             ],
-            "name": "No use of names for endorsment",
+            "name": "Respect trademarks",
             "verbatim": "The names of the authors and copyright holders must not be used in advertising or otherwise to promote the sale, use or other dealing in this Software without specific, written prior permission. Title to copyright in this Software shall at all times remain with copyright holders.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",

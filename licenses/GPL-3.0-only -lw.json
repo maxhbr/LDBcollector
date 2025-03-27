@@ -11,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": null,
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "No",
+    "venue_choice": "No",
     "comment": "",
     "verbatim": "Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.",
     "obligations": [

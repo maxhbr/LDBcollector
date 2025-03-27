@@ -11,7 +11,10 @@
     "ethical_clause": null,
     "non_commercial": null,
     "non_tivoisation": null,
+    "liability": "",
+    "warranty": "",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "Deprecated This licenseID has been deprecated since SPDX license list version 3.10.",
     "verbatim": "",
     "obligations": [
