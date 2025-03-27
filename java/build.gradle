@@ -308,7 +308,7 @@ publishing {
         if (project.hasProperty('licenselynx_publish_credentials')) {
             maven {
                 name = 'mavenSonatypeCentral'
-                url = 'https://central.sonatype.com/api/v1/publisher/deployments/download/'
+                url = 'https://central.sonatype.com/api/v1/publisher'
                 credentials(HttpHeaderCredentials) {
                     name = "Authorization"
                     value = "Bearer ${licenselynx_publish_credentials}"
