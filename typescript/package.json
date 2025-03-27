@@ -23,7 +23,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/licenselynx/licenselynx.git",
+        "url": "git://github.com/licenselynx/licenselynx.git",
         "directory": "typescript/"
     },
     "devDependencies": {
