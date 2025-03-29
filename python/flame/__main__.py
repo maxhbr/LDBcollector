@@ -158,7 +158,8 @@ def get_parser():
     return parser
 
 def interactive_shell(fl, formatter, args):
-    return FlameShell().cmdloop()
+    FlameShell().cmdloop()
+    return "", None
 
 def parse():
 
