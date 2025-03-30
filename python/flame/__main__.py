@@ -144,10 +144,14 @@ def get_parser():
     parser_os.set_defaults(which='operators', func=operators)
 
     # shell
-    parser_os = subparsers.add_parser(
+    parser_sh = subparsers.add_parser(
         'shell',
         help='Start interactive shell')
-    parser_os.set_defaults(which='shell', func=interactive_shell)
+    parser_sh.add_argument('-s', '--silent',
+                        action='store_true',
+                        help='minimize output',
+                        default=False)
+    parser_sh.set_defaults(which='shell', func=interactive_shell)
 
     # unknown
     parser_u = subparsers.add_parser(
@@ -158,7 +162,7 @@ def get_parser():
     return parser
 
 def interactive_shell(fl, formatter, args):
-    FlameShell().cmdloop()
+    FlameShell(not args.silent).cmdloop()
     return "", None
 
 def parse():
