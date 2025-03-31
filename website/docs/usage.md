@@ -32,8 +32,8 @@ import {map} from "@licenselynx/licenselynx";
 // Map the license name
 const licenseObject = map('license1');
 
-console.log(licenseObject.getCanonical());
-console.log(licenseObject.getSrc());
+console.log(licenseObject.canonical);
+console.log(licenseObject.src);
 ```
 
 ## Java
