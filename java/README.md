@@ -26,7 +26,7 @@ pom.xml:
 ## Usage
 
 ```java
-import com.siemens.licenselynx.*;
+import org.licenselynx.*;
 
 public class LicenseExample {
     public static void main(String[] args) {
