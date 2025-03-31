@@ -4,7 +4,9 @@
 
 The Python library is being published to the following registries:
 
-UNDER CONSTRUCTION
+```shell
+pip install licenselynx 
+```
 
 ## Java
 
@@ -14,6 +16,8 @@ UNDER CONSTRUCTION
 
 ## TypeScript
 
-The TypeScript library is only being published to the SBOM registry:
+To install the library, run following command:
 
-UNDER CONSTRUCTION
+```shell
+npm install @licenselynx/licenselynx
+```
