@@ -4,7 +4,24 @@ For Java, use the ``map`` method from the ``LicenseLynx`` class to achieve the s
 
 ## Installation
 
-UNDER CONSTRUCTION
+To install the Java library, add it to Gradle or Maven build.
+
+build.gradle:
+
+```groovy
+implementation 'org.licenselynx:licenselynx:1.0.0'
+```
+
+pom.xml:
+
+```xml
+
+<dependency>
+    <groupId>org.licenselynx</groupId>
+    <artifactId>licenselynx</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
 
 ## Usage
 
