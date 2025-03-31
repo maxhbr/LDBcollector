@@ -89,6 +89,4 @@ API Call:
 ## Data mapping
 
 It is also possible to retrieve the whole license mapping as one json-file.
-The URL is `/json/{version}/mapping.json`.
-The version number is necessary due to modifications and additions of licenses over time.
 To always get the most recent version, use `/json/latest/mapping.json`.
