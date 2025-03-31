@@ -61,7 +61,7 @@ class FlameShell(cmd.Cmd):
             pass
 
     def do_unknown(self, arg):
-        """."""
+        """Output the unknown licenses in the supplied license expression."""
         license_name = self.__read_license()
         try:
             self.flame.unknown_symbols([license_name])
@@ -69,7 +69,7 @@ class FlameShell(cmd.Cmd):
             print("Unknown: " + str(e))
 
     def do_license(self, arg):
-        """."""
+        """Identify the SPDX license identifiers (if any) for the license expression."""
         license_name = self.__read_license()
         try:
             expression = self.flame.expression_license(license_name, validations=None, update_dual=False)
@@ -80,7 +80,7 @@ class FlameShell(cmd.Cmd):
             print(str(e))
 
     def do_simplify(self, arg):
-        """."""
+        """Simplify the supplied license expression."""
         license_name = self.__read_license()
         try:
             expression = self.flame.expression_license(license_name, validations=None, update_dual=False)
