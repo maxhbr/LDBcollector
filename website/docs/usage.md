@@ -11,7 +11,7 @@ To use LicenseLynx in Python, you can call the `map` method from the `LicenseLyn
 **Example:**
 
 ```python
-from LicenseLynx import LicenseLynx
+from licenselynx.licenselynx import LicenseLynx
 
 # Map the license name
 license_object = LicenseLynx.map("licenseName")
@@ -27,7 +27,7 @@ In TypeScript, you need to import the `map` function from the `LicenseLynx` modu
 Example:
 
 ```typescript
-import { map } from 'LicenseLynx';
+import {map} from "@licenselynx/licenselynx";
 
 // Map the license name
 const licenseObject = map('license1');
@@ -43,7 +43,7 @@ For Java, use the `map` method from the `LicenseLynx` class to achieve the same 
 Example:
 
 ```java
-import com.siemens.LicenseLynx;
+import org.licenselynx.*;
 
 public class LicenseExample {
     public static void main(String[] args) {
