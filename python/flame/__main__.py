@@ -148,9 +148,9 @@ def get_parser():
         'shell',
         help='Start interactive shell')
     parser_sh.add_argument('-s', '--silent',
-                        action='store_true',
-                        help='minimize output',
-                        default=False)
+                           action='store_true',
+                           help='minimize output',
+                           default=False)
     parser_sh.set_defaults(which='shell', func=interactive_shell)
 
     # unknown

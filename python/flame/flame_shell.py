@@ -15,7 +15,8 @@ from flame.format import OutputFormatterFactory
 
 
 class FlameShell(cmd.Cmd):
-#    intro = 'Welcome to the Flame shell. Type help or ? to list commands.\n'
+    intro = ''
+    # Welcome to the Flame shell. Type help or ? to list commands.\n'
     prompt = '>>> '
     file = None
 
@@ -59,13 +60,11 @@ class FlameShell(cmd.Cmd):
         except EOFError:
             pass
 
-    
     def do_unknown(self, arg):
         """."""
         license_name = self.__read_license()
         try:
-            unknowns = self.flame.unknown_symbols([license_name])
-            #print(str(unknowns[0]))
+            self.flame.unknown_symbols([license_name])
         except Exception as e:
             print("Unknown: " + str(e))
 
@@ -76,7 +75,7 @@ class FlameShell(cmd.Cmd):
             expression = self.flame.expression_license(license_name, validations=None, update_dual=False)
             res, err = OutputFormatterFactory.formatter("text").format_expression(expression, self.verbose)
             print(str(res))
-            
+
         except Exception as e:
             print(str(e))
 
@@ -88,15 +87,15 @@ class FlameShell(cmd.Cmd):
             simplified = self.flame.simplify([expression['identified_license']])
             res, err = OutputFormatterFactory.formatter("text").format_licenses([str(simplified)], self.verbose)
             print(str(res))
-            
+
         except Exception as e:
             print(str(e))
 
     def do_verbose(self, arg):
         """Make the interaction more verbose."""
         self.verbose_mode = True
-        prompt = '>>> '
-        
+        self.prompt = '>>> '
+
     def do_silent(self, arg):
         """Make the interaction less verbose (default)."""
         self.verbose_mode = False
