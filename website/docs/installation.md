@@ -2,7 +2,7 @@
 
 ## Python
 
-The Python library is being published to the following registries:
+To install the Python library, run following command:
 
 ```shell
 pip install licenselynx 
@@ -10,13 +10,28 @@ pip install licenselynx
 
 ## Java
 
-The Java library is being published to the following registries:
+To install the Java library, add it to Gradle or Maven build.
 
-UNDER CONSTRUCTION
+build.gradle:
+
+```groovy
+implementation 'org.licenselynx:licenselynx:1.0.0'
+```
+
+pom.xml:
+
+```xml
+
+<dependency>
+    <groupId>org.licenselynx</groupId>
+    <artifactId>licenselynx</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
 
 ## TypeScript
 
-To install the library, run following command:
+To install the TypeScript library, run following command:
 
 ```shell
 npm install @licenselynx/licenselynx
