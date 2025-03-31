@@ -2,6 +2,11 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+#
+# Interactive flame shell
+#
+
+
 import cmd
 import sys
 
@@ -10,13 +15,17 @@ from flame.format import OutputFormatterFactory
 
 
 class FlameShell(cmd.Cmd):
-    intro = 'Welcome to the Flame shell. Type help or ? to list commands.\n'
+#    intro = 'Welcome to the Flame shell. Type help or ? to list commands.\n'
     prompt = '>>> '
     file = None
 
     def __init__(self, verbose=False):
         cmd.Cmd.__init__(self)
-        self.verbose_mode = verbose
+        if verbose:
+            self.do_verbose(None)
+            self.output('Welcome to the Flame shell. Type help or ? to list commands.\n')
+        else:
+            self.do_silent(None)
         self.formatter = None
         self.flame = FossLicenses()
 
@@ -39,7 +48,7 @@ class FlameShell(cmd.Cmd):
         return True
 
     def emptyline(self):
-        return self.do_text(None)
+        return ""
 
     def __read_license(self):
         if self.verbose_mode:
@@ -86,7 +95,7 @@ class FlameShell(cmd.Cmd):
     def do_verbose(self, arg):
         """Make the interaction more verbose."""
         self.verbose_mode = True
-        prompt = ''
+        prompt = '>>> '
         
     def do_silent(self, arg):
         """Make the interaction less verbose (default)."""
