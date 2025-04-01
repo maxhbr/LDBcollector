@@ -18,16 +18,25 @@ class ValueFilter(django_filters.ChoiceFilter):
         return super().field
 
 
-class ComponentOrVersionFilter(django_filters.CharFilter):
-    def __init__(self):
-        super().__init__(label="Component")
+class MultiFieldSearchFilter(django_filters.CharFilter):
+    fields: list[str]
 
-    def filter(self, qs, value: str):
+    def __init__(self, fields=None, *args, **kwargs):
+        if fields is not None:
+            self.fields = fields
+        super().__init__(*args, **kwargs)
+
+    def filter(self, qs, value):
         if value in EMPTY_VALUES:
             return qs
-        return self.filter(
-            Q(component__name__icontains=value) | Q(version__component__icontains=value)
-        )
+        query = Q()
+        for field in self.fields:
+            query |= Q(**{f"{field}__icontains": value})
+        return qs.filter(query)
+
+
+class ComponentOrVersionFilter(django_filters.CharFilter):
+    fields = ("component__name", "version__component__name")
 
 
 class ReleaseBomFilter(
@@ -46,9 +55,7 @@ class ReleaseBomFilter(
 class LicenseFilter(
     django_filters.FilterSet,
 ):
-    search = django_filters.CharFilter(
-        field_name="long_name", lookup_expr="icontains", label="Search"
-    )
+    search = MultiFieldSearchFilter(fields=("spdx_id", "long_name"), label="Search")
     copyleft = ValueFilter()
     patent_grant = ValueFilter()
     policy__allowed = ValueFilter()
@@ -83,8 +90,8 @@ class ComponentFilter(
 
 
 class DerogationFilter(django_filters.FilterSet):
-    search_license = django_filters.CharFilter(
-        field_name="license__spdx_id", lookup_expr="icontains", label="License SPDX"
+    search_license = MultiFieldSearchFilter(
+        fields=("license__spdx_id", "license__long_name"), label="Search by license"
     )
     category = ValueFilter(label="Product category")
     search = ComponentOrVersionFilter()
