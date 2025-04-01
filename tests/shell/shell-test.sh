@@ -28,6 +28,7 @@ test_shell()
         echo "  command: $COMMAND"
         echo "  exepcted: $EXPECTED"
         echo "  actual:   $ACTUAL"
+        exit 1
     fi
 
     echo "OK"
@@ -38,6 +39,15 @@ test_shell_silent()
     test_shell "$1" "$2" "-s"
 }
 
+# test command: license
 test_shell_silent "license\nmit" "MIT"
 test_shell_silent "license\nmit and mit" "MIT AND MIT"
+
+# test command: simplify
 test_shell_silent "simplify\nmit and mit" "MIT"
+test_shell_silent "simplify\nGPL-2.0-only" "GPL-2.0-only"
+
+# test command: unknown 
+test_shell_silent "unknown\nsomeweirdlicense" "Unknown: Unknown symbols identified.
+someweirdlicense"
+test_shell_silent "unknown\nmit" ""
