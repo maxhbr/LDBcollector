@@ -2,110 +2,106 @@
 SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
 SPDX-License-Identifier: AGPL-3.0-only
 -->
-<div class="level is-aligned-center">
-  <div class="level-left">
-    <div class="level-item">
-      <form class="hermine-filter-form">
-        {% if search_form %}
-          <div class="field has-addons">
+<div class="columns is-6">
+  <div class="column">
+    <form class="hermine-filter-form">
+      {% if search_form %}
+        <div class="field has-addons">
+          <div class="control">
+            <label class="is-sr-only" for="search_field">Search</label>
+            <input id="search_field" class="input is-small" name="search" placeholder="Search" value="{{ search_form.search.value|default_if_none:"" }}" />
+          </div>
+          <div class="control">
+            <button class="button is-small" type="submit">Search</button>
+          </div>
+        </div>
+      {% endif %}
+      {% for field in filter.form %}
+        {% if field.name|slice:"0:6" == 'search' %}
+          <div class="field bulma has-addons">
+            <div class="field-label">
+              <label for="{{ field.name }}_field">{{ field.label }}</label>
+            </div>
             <div class="control">
-              <label class="is-sr-only" for="search_field">Search</label>
-              <input id="search_field" class="input is-small" name="search" placeholder="Search" value="{{ search_form.search.value|default_if_none:"" }}" />
+              <input id="{{ field.name }}_field" class="input is-small" name="{{ field.name }}" value="{{ field.value|default_if_none:"" }}" />
             </div>
             <div class="control">
               <button class="button is-small" type="submit">Search</button>
             </div>
           </div>
+        {% else %}
+          <div class="field bulma is-horizontal">
+            <div class="field-label">
+              <label for="{{ field.name }}" class="label">{{ field.label }}</label>
+            </div>
+            <div class="control">
+              {{ field }}
+            </div>
+          </div>
         {% endif %}
-        {% for field in filter.form %}
-          {% if field.name|slice:"0:6" == 'search' %}
-            <div class="field bulma has-addons">
-              <div class="field-label">
-                <label for="{{ field.name }}_field">{{ field.label }}</label>
-              </div>
-              <div class="control">
-                <input id="{{ field.name }}_field" class="input is-small" name="{{ field.name }}" value="{{ field.value|default_if_none:"" }}" />
-              </div>
-              <div class="control">
-                <button class="button is-small" type="submit">Search</button>
-              </div>
-            </div>
-          {% else %}
-            <div class="field bulma is-horizontal">
-              <div class="field-label">
-                <label for="{{ field.name }}" class="label">{{ field.label }}</label>
-              </div>
-              <div class="control">
-                {{ field }}
-              </div>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </form>
-    </div>
+      {% endfor %}
+    </form>
   </div>
-  <div class="level-right">
-    <div class="level-item">
-      <nav class="pagination is-small" role="navigation" aria-label="Pagination">
-        <ul class="pagination-list">
-          {% if page_obj.number > 2 %}
-            <li>
-              <a class="pagination-link"
-                 href="{% querystring page=1 %}"
-                 aria-label="Go to first page"
-              >
-                1
-              </a>
-            </li>
-          {% endif %}
-          {% if page_obj.number > 3 %}
-            <li>
-              <span class="pagination-ellipsis">&hellip;</span>
-            </li>
-          {% endif %}
-          {% if page_obj.has_previous %}
-            <li>
-              <a class="pagination-link"
-                 href="{% querystring page=page_obj.previous_page_number %}"
-                 aria-label="Go to page {{ page_obj.previous_page_number }}"
-              >
-                {{ page_obj.previous_page_number }}
-              </a>
-            </li>
-          {% endif %}
+  <div class="column is-narrow">
+    <nav class="pagination is-small" role="navigation" aria-label="Pagination">
+      <ul class="pagination-list">
+        {% if page_obj.number > 2 %}
           <li>
-            <a class="pagination-link is-current" aria-label="Page {{ page_obj.number }}" aria-current="page">
-              {{ page_obj.number }}
+            <a class="pagination-link"
+               href="{% querystring page=1 %}"
+               aria-label="Go to first page"
+            >
+              1
             </a>
           </li>
-          {% if page_obj.has_next %}
-            <li>
-              <a class="pagination-link"
-                 href="{% querystring page=page_obj.next_page_number %}"
-                 aria-label="Go to page {{ page_obj.next_page_number }}"
-              >
-                {{ page_obj.next_page_number }}
-              </a>
-            </li>
-          {% endif %}
-          {% if page_obj.number < page_obj.paginator.num_pages|add:"-2" %}
-            <li>
-              <span class="pagination-ellipsis">&hellip;</span>
-            </li>
-          {% endif %}
-          {% if page_obj.number < page_obj.paginator.num_pages|add:"-1" %}
-            <li>
-              <a class="pagination-link"
-                 href="{% querystring page=page_obj.paginator.num_pages %}"
-                 aria-label="Go to last page"
-              >
-                {{ page_obj.paginator.num_pages }}
-              </a>
-            </li>
-          {% endif %}
-        </ul>
-      </nav>
-    </div>
+        {% endif %}
+        {% if page_obj.number > 3 %}
+          <li>
+            <span class="pagination-ellipsis">&hellip;</span>
+          </li>
+        {% endif %}
+        {% if page_obj.has_previous %}
+          <li>
+            <a class="pagination-link"
+               href="{% querystring page=page_obj.previous_page_number %}"
+               aria-label="Go to page {{ page_obj.previous_page_number }}"
+            >
+              {{ page_obj.previous_page_number }}
+            </a>
+          </li>
+        {% endif %}
+        <li>
+          <a class="pagination-link is-current" aria-label="Page {{ page_obj.number }}" aria-current="page">
+            {{ page_obj.number }}
+          </a>
+        </li>
+        {% if page_obj.has_next %}
+          <li>
+            <a class="pagination-link"
+               href="{% querystring page=page_obj.next_page_number %}"
+               aria-label="Go to page {{ page_obj.next_page_number }}"
+            >
+              {{ page_obj.next_page_number }}
+            </a>
+          </li>
+        {% endif %}
+        {% if page_obj.number < page_obj.paginator.num_pages|add:"-2" %}
+          <li>
+            <span class="pagination-ellipsis">&hellip;</span>
+          </li>
+        {% endif %}
+        {% if page_obj.number < page_obj.paginator.num_pages|add:"-1" %}
+          <li>
+            <a class="pagination-link"
+               href="{% querystring page=page_obj.paginator.num_pages %}"
+               aria-label="Go to last page"
+            >
+              {{ page_obj.paginator.num_pages }}
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
   </div>
 </div>
 
