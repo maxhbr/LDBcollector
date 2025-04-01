@@ -55,7 +55,7 @@ ruff = "^0.6.7"
 djhtml = "^3.0.6"
 
 [tool.black]
-exclude = "hermine/cube/migrations"
+extend-exclude = "hermine/cube/migrations"
 
 [build-system]
 requires = ["poetry-core>=2.0.0"]
