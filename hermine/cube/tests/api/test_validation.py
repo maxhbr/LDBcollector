@@ -92,7 +92,9 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.create_derogations()
         self.import_sbom()
 
-        res = self.client.get(reverse("cube:release_validation", kwargs={"pk": 1}))
+        res = self.client.get(
+            reverse("cube:release_validation_step_1", kwargs={"pk": 1})
+        )
         self.assertEqual(res.status_code, 200)
         self.assertEqual(res.context["object"].valid_step, STEP_POLICY)
         self.assertEqual(len(res.context["derogations"]), 1)
