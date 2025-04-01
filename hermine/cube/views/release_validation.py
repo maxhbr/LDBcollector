@@ -32,7 +32,15 @@ from cube.models import (
     Derogation,
     Exploitation,
 )
-from cube.utils.release_validation import update_validation_step, propagate_choices
+from cube.utils.release_validation import (
+    update_validation_step_1,
+    update_validation_step_2,
+    update_validation_step_3,
+    update_validation_step_4,
+    update_validation_step_5,
+    update_validation_step_6,
+    propagate_choices,
+)
 from cube.utils.spdx import simplified
 from cube.views import CreateLicenseRelatedMixin
 from cube.views.mixins import (
@@ -40,42 +48,6 @@ from cube.views.mixins import (
     ReleaseContextMixin,
     QuerySuccessUrlMixin,
 )
-
-
-class ReleaseValidationView(
-    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
-):
-    """
-    Shows 4 validation steps for a release of a product:
-    step 1 : checks that license metadata are present and correct
-    step 2 : checks that no licenses expression is ambiguous
-    step 3 : ensure all scopes have a defined exploitation
-    step 4 : resolves choices in case of multi-licenses
-    step 5 : checks that chosen licenses are compatible with policy and derogs
-    """
-
-    model = Release
-    template_name = "cube/release_validation.html"
-    permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-            )
-        )
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-
-        return {
-            **context,
-            **update_validation_step(self.object),
-        }
 
 
 class ReleaseValidationStep1View(
@@ -105,7 +77,7 @@ class ReleaseValidationStep1View(
 
         return {
             **context,
-            **update_validation_step(self.object),
+            **update_validation_step_1(self.object),
         }
 
 
@@ -113,7 +85,7 @@ class ReleaseValidationStep2View(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
     """
-    step 1 : checks that license metadata are present and correct
+    step 2 : checks that no licenses expression is ambiguous
     """
 
     model = Release
@@ -136,7 +108,7 @@ class ReleaseValidationStep2View(
 
         return {
             **context,
-            **update_validation_step(self.object),
+            **update_validation_step_2(self.object),
         }
 
 
@@ -144,7 +116,7 @@ class ReleaseValidationStep3View(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
     """
-    step 1 : checks that license metadata are present and correct
+    step 3 : ensure all scopes have a defined exploitation
     """
 
     model = Release
@@ -167,7 +139,7 @@ class ReleaseValidationStep3View(
 
         return {
             **context,
-            **update_validation_step(self.object),
+            **update_validation_step_3(self.object),
         }
 
 
@@ -175,7 +147,7 @@ class ReleaseValidationStep4View(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
     """
-    step 1 : checks that license metadata are present and correct
+    step 4 : resolves choices in case of multi-licenses
     """
 
     model = Release
@@ -198,7 +170,7 @@ class ReleaseValidationStep4View(
 
         return {
             **context,
-            **update_validation_step(self.object),
+            **update_validation_step_4(self.object),
         }
 
 
@@ -206,7 +178,7 @@ class ReleaseValidationStep5View(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
     """
-    step 1 : checks that license metadata are present and correct
+    step 5 : checks that chosen licenses are compatible with policy and derogs
     """
 
     model = Release
@@ -229,7 +201,38 @@ class ReleaseValidationStep5View(
 
         return {
             **context,
-            **update_validation_step(self.object),
+            **update_validation_step_5(self.object),
+        }
+
+
+class ReleaseValidationStep6View(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
+    """
+    step 6 : checks that licenses are compatible with release license
+    """
+
+    model = Release
+    template_name = "cube/release_validation_6.html"
+    permission_required = "cube.view_release"
+
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .prefetch_related(
+                "usage_set",
+                "usage_set__version",
+                "usage_set__version__component",
+            )
+        )
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step_6(self.object),
         }
 
 
@@ -248,7 +251,9 @@ class AbstractCreateUsageConditionView(
         return kwargs
 
     def get_success_url(self):
-        return reverse("cube:release_validation", kwargs={"pk": self.usage.release.id})
+        return reverse(
+            "cube:release_validation_step_1", kwargs={"pk": self.usage.release.id}
+        )
 
 
 class AbstractResetCorrectedLicenseView(

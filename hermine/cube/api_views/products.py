@@ -126,7 +126,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             usage.version for usage in context["fixed_expressions"]
         ]
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_1", kwargs={"pk": release.pk}
         )
 
         return Response(ExpressionValidationSerializer(response).data)
@@ -146,7 +146,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["valid"], context = validate_ands(release)
         response["to_confirm"] = context["to_confirm"]
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_2", kwargs={"pk": release.pk}
         )
 
         return Response(AndsValidationSerializer(response).data)
@@ -166,7 +166,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["exploitations"] = context["exploitations"]
         response["unset_scopes"] = context["unset_scopes"]
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_3", kwargs={"pk": release.pk}
         )
 
         return Response(ExploitationsValidationSerializer(response).data)
@@ -185,7 +185,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["valid"], context = validate_choices(release)
         response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_4", kwargs={"pk": release.pk}
         )
 
         return Response(ChoicesValidationSerializer(response).data)
@@ -204,7 +204,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["valid"], context = validate_policy(release)
         response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_5", kwargs={"pk": release.pk}
         )
 
         return Response(PolicyValidationSerializer(response).data)
@@ -223,7 +223,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["valid"], context = validate_compatibility(release)
         response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_6", kwargs={"pk": release.pk}
         )
 
         return Response(CompatibilityValidationSerializer(response).data)

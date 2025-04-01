@@ -345,11 +345,6 @@ urlpatterns = [
     ),
     # Release validation related views
     path(
-        "releases/<int:pk>/validation/",
-        views.ReleaseValidationView.as_view(),
-        name="release_validation",
-    ),
-    path(
         "releases/<int:pk>/validation/step_1",
         views.ReleaseValidationStep1View.as_view(),
         name="release_validation_step_1",
@@ -373,6 +368,11 @@ urlpatterns = [
         "releases/<int:pk>/validation/step_5",
         views.ReleaseValidationStep5View.as_view(),
         name="release_validation_step_5",
+    ),
+    path(
+        "releases/<int:pk>/validation/step_6",
+        views.ReleaseValidationStep6View.as_view(),
+        name="release_validation_step_6",
     ),
     ## Step 1
     path(

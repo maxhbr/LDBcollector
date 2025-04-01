@@ -416,3 +416,97 @@ def update_validation_step(release: Release):
     release.save()
 
     return info
+
+
+# Apply all rules and check validation steps
+def update_validation_step_1(release: Release):
+    info = dict()
+    validation_step = release.valid_step + 0
+    apply_curations(release)
+    step1, context = validate_expressions(release)
+    info.update(context)
+    if step1:
+        validation_step = max(validation_step, 1)
+    else:
+        validation_step = 0
+
+    release.valid_step = validation_step + 0
+    release.save()
+
+    return info
+
+
+# Apply all rules and check validation steps
+def update_validation_step_2(release: Release):
+    info = dict()
+    validation_step = release.valid_step
+    step2, context = validate_ands(release)
+    info.update(context)
+    if step2 and validation_step >= 1:
+        validation_step = max(validation_step, 2)
+    else:
+        validation_step = min(validation_step, 1)
+    release.valid_step = validation_step
+    release.save()
+
+    return info
+
+
+def update_validation_step_3(release: Release):
+    info = dict()
+    validation_step = release.valid_step
+    step3, context = validate_exploitations(release)
+    info.update(context)
+    if step3 and validation_step >= 2:
+        validation_step = max(validation_step, 3)
+    else:
+        validation_step = min(validation_step, 2)
+    release.valid_step = validation_step
+    release.save()
+
+    return info
+
+
+def update_validation_step_4(release: Release):
+    info = dict()
+    validation_step = release.valid_step
+    step4, context = validate_choices(release)
+    info.update(context)
+    if step4 and validation_step >= 3:
+        validation_step = max(validation_step, 4)
+    else:
+        validation_step = min(validation_step, 3)
+    release.valid_step = validation_step
+    release.save()
+
+    return info
+
+
+def update_validation_step_5(release: Release):
+    info = dict()
+    validation_step = release.valid_step
+    step5, context = validate_policy(release)
+    info.update(context)
+    if step5 and validation_step >= 4:
+        validation_step = max(validation_step, 5)
+    else:
+        validation_step = min(validation_step, 4)
+    release.valid_step = validation_step
+    release.save()
+
+    return info
+
+
+def update_validation_step_6(release: Release):
+    info = dict()
+    validation_step = release.valid_step
+    step6, context = validate_compatibility(release)
+    info.update(context)
+    if step6 and validation_step >= 5:
+        validation_step = max(validation_step, 6)
+    else:
+        validation_step = min(validation_step, 5)
+    release.valid_step = validation_step
+    release.save()
+
+    return info
