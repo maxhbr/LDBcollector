@@ -16,6 +16,7 @@ import flame.config
 from flame.format import OUTPUT_FORMATS
 from flame.format import OutputFormatterFactory
 from flame.exception import FlameException
+from flame.flame_shell import FlameShell
 
 def get_parser():
 
@@ -142,6 +143,16 @@ def get_parser():
         'operators', help='Display all operators')
     parser_os.set_defaults(which='operators', func=operators)
 
+    # shell
+    parser_sh = subparsers.add_parser(
+        'shell',
+        help='Start interactive shell')
+    parser_sh.add_argument('-s', '--silent',
+                           action='store_true',
+                           help='minimize output',
+                           default=False)
+    parser_sh.set_defaults(which='shell', func=interactive_shell)
+
     # unknown
     parser_u = subparsers.add_parser(
         'unknown', help='Show the unknown licenses for a license expression. Intended for foss-licenses developers.')
@@ -149,6 +160,10 @@ def get_parser():
     parser_u.add_argument('license', type=str, nargs='+', help='license expression to fix')
 
     return parser
+
+def interactive_shell(fl, formatter, args):
+    FlameShell(not args.silent).cmdloop()
+    return "", None
 
 def parse():
 

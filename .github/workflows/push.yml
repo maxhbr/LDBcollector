@@ -48,6 +48,7 @@ jobs:
         make check_license_schema
     - name: CLI check
       run: |
+        tests/shell/shell-test.sh
         flame -h
         flame license BSD3
         flame compat BSD3
