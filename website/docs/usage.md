@@ -49,9 +49,8 @@ public class LicenseExample {
     public static void main(String[] args) {
         // Map the license name
         LicenseObject licenseObject = LicenseLynx.map("licenseName");
-
-        System.out.println(licenseObject.canonical);
-        System.out.println(licenseObject.src);
+        System.out.println(licenseObject.getCanonical());
+        System.out.println(licenseObject.getSrc());
     }
 }
 ```
