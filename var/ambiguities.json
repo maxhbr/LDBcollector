@@ -37,7 +37,8 @@
                 "License :: OSI Approved :: Apache Software License",
               "OSI Approved Apache Software License",
               "apache",
-              "OSI-Approved-::-Apache-Software-License"
+              "OSI-Approved-::-Apache-Software-License",
+              "LICENSE-APACHE"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -276,7 +277,9 @@
                 "Python Software Foundation",
               "Python Software Foundation License (PSFL)",
               "The Python Software Foundation License",
-              "PSF-License"
+              "PSF-License",
+              "psf-license",
+              "PSF LICENSE"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
