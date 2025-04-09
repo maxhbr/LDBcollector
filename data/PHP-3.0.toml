@@ -1,6 +1,6 @@
 [license]
 
-expression = "PHP-3.01"
+expression = "PHP-3.0"
 status = [ "allowed" ]
 
 [fedora]
