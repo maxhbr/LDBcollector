@@ -294,24 +294,24 @@ func HandleInvalidUrl(c *gin.Context) {
 //	@Failure		500	{object}	models.LicenseError	"Connection to DB failed"
 //	@Router			/health [get]
 func GetHealth(c *gin.Context) {
-	// Fetch one license from DB to check if connection is still working.
-	var license models.LicenseDB
-	err := db.DB.Where(&models.LicenseDB{}).First(&license).Error
-	if license.Id == 0 || err != nil {
-		errorMessage := ""
-		if err != nil {
-			errorMessage = err.Error()
-		}
+	// Check if the database connection is active
+	sqlDB, err := db.DB.DB()
+	if err == nil {
+		err = sqlDB.Ping()
+	}
+	// If database is not connnected, return an error response
+	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "Database is not running or connected",
-			Error:     errorMessage,
+			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusInternalServerError, er)
 		return
 	}
+	// If the database is connected and no error, return success
 	er := models.LicenseError{
 		Status:    http.StatusOK,
 		Message:   "Database is running and connected",
