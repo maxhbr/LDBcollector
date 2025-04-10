@@ -722,7 +722,7 @@ func ImportLicenses(c *gin.Context) {
 //	@Router			/licenses/export [get]
 func ExportLicenses(c *gin.Context) {
 	var licenses []models.LicenseDB
-	query := db.DB.Model(&models.LicenseDB{})
+	query := db.DB.Model(&models.LicenseDB{}).Preload("User")
 	err := query.Find(&licenses).Error
 	if err != nil {
 		er := models.LicenseError{
