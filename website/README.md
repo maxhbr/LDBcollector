@@ -1,5 +1,20 @@
 # License Lynx
 
+## Build website locally
+
+The website uses [mkdocs](https://www.mkdocs.org/getting-started/) as static site generator.
+To build the website, use following command:
+
+```shell
+mkdocs build
+```
+
+To start the build-in server, use following command:
+
+```shell
+mkdocs serve
+```
+
 ## License Lynx Web API
 
 The License Lynx Web API simulates an API environment but functions as a file directory hosted on GitLab Pages.
