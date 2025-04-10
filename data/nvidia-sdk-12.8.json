@@ -1,0 +1,12 @@
+{
+    "canonical": "nvidia-sdk-12.8",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-nvidia-sdk-12.8",
+            "NVIDIA Software Development Kits v12.8",
+            "License Agreement for NVIDIA Software Development Kits v12.8"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

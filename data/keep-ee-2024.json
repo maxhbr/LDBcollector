@@ -1,0 +1,12 @@
+{
+    "canonical": "keep-ee-2024",
+    "aliases": {
+        "scancode-licensedb": [
+            "Keep Enterprise Edition (EE)",
+            "The Keep Enterprise Edition (EE) license (the Enterprise License)",
+            "LicenseRef-scancode-keep-ee-2024"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

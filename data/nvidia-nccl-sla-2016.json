@@ -1,0 +1,11 @@
+{
+    "canonical": "nvidia-nccl-sla-2016",
+    "aliases": {
+        "scancode-licensedb": [
+            "NVIDIA NCCL SLA 2016",
+            "LicenseRef-scancode-nvidia-nccl-sla-2016"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

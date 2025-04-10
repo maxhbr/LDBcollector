@@ -1,0 +1,13 @@
+{
+    "canonical": "elixir-trademark-policy",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-elixir-trademark-policy",
+            "Elixir Trademark Policy",
+            "Elixir Team Trademarks Policy",
+            "LicenseRef-elixir-trademark-policy"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}
