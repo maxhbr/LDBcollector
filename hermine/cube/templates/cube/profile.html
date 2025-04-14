@@ -48,7 +48,13 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td>{{ token.description }}</td>
             <td>{{ token.created }}</td>
-            <td>{{ token.expiry }}</td>
+            <td>
+              {% if token.expiry == "Never" or token.expiry >= current_time %}
+                {{ token.expiry }}
+              {% else %}
+                <span class="tag is-danger is-light">Expired</span>
+              {%endif%}
+            </td>
             <td>
               <form action="{% url 'cube:api_token_delete' token.pk %}" method="post">
                 {% csrf_token %}
