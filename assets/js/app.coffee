@@ -139,9 +139,9 @@ class LicenseSuggestion
       callback null, info
     .fail (e) ->
       if e.status == 404
-        callback new Error "Repository <b>#{repositoryFullName}</b> not found."
+        callback new Error "Repository #{repositoryFullName} not found."
       else
-        callback new Error "Network error when trying to get information about <b>#{repositoryFullName}</b>."
+        callback new Error "Network error when trying to get information about #{repositoryFullName}."
 
   # Generates a message showing that a repository is already licensed
   repositoryLicense: (repositoryFullName, license) ->
