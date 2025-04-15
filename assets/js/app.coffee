@@ -112,7 +112,7 @@ class LicenseSuggestion
 
   # Try to extract the repository full name from the user input
   parseUserInput: (userInput) ->
-    repository = /https?:\/\/github\.com\/([^\/]+)\/([^\/]+)\/?$/.exec userInput
+    repository = /https?:\/\/github\.com\/([^\/]+)\/([^\/]+)/.exec userInput
     [_, username, project] = repository
     return username + '/' + project.replace /(\.git)$/, ''
 
