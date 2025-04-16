@@ -48,11 +48,17 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td>{{ token.description }}</td>
             <td>{{ token.created }}</td>
-            <td>{{ token.expiry }}</td>
+            <td>
+              {% if token.expiry == "Never" or token.expiry >= current_time %}
+                {{ token.expiry }}
+              {% else %}
+                <span class="tag is-danger is-light">Expired on {{ token.expiry }}</span>
+              {%endif%}
+            </td>
             <td>
               <form action="{% url 'cube:api_token_delete' token.pk %}" method="post">
                 {% csrf_token %}
-                <button type="submit" class="delete"></button>
+                <button type="submit" class="delete button is-danger" title="Delete token"></button>
               </form>
             </td>
           </tr>
@@ -61,7 +67,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% else %}
       <p><em>No API token created.</em></p>
     {% endif %}
-    <a href="{% url 'cube:api_token_create' %}" class="button">Create a new API token</a>
+    <a href="{% url 'cube:api_token_create' %}" class="button is-primary">Create a new API token</a>
   </div>
 
 {% endblock %}

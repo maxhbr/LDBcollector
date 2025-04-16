@@ -8,6 +8,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, DeleteView, CreateView
+from django.utils import timezone
 
 from cube.forms.misc import APITokenForm
 from cube.models import License, Product, Component, Release, Generic, Token
@@ -41,6 +42,11 @@ class AboutView(TemplateView):
 
 class ProfileView(LoginRequiredMixin, TemplateView):
     template_name = "cube/profile.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["current_time"] = timezone.now()
+        return context
 
 
 class APITokenCreateView(CreateView):
