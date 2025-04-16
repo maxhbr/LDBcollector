@@ -21,6 +21,7 @@
         "scancode:freetype",
         "freetype",
         "Freetype",
-        "The FreeType Project LICENSE"
+      "The FreeType Project LICENSE",
+      "Freetype License"
     ]
 }
