@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.5.0 - RC1
+## 0.5.0
 
 FEATURES :
 * [Add step for Outbound license compatibility](https://gitlab.com/hermine-project/hermine/-/merge_requests/582)

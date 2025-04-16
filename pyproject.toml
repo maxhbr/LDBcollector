@@ -5,7 +5,7 @@
 
 [tool.poetry]
 name = "hermine-project"
-version = "0.5.0-RC1"
+version = "0.5.0"
 description = ""
 authors = [
     "Camille Moulin <cmoulin@inno3.fr>",
