@@ -172,6 +172,11 @@ npm install
 npm run build
 ```
 
+
+```bash
+poetry run hermine/manage.py collectstatic
+```
+
 ### Configure your instance
 
 Before the first run, you have to create a `config.py` file in the `hermine/hermine/` directory.
