@@ -8,3 +8,5 @@ spdxIdentifier: "BSD-4-Clause-Shortened"
 
 openCoDEStatus: "approved"
 
+otherIds: 
+  - "scancode:bsd-4-clause-shortened"

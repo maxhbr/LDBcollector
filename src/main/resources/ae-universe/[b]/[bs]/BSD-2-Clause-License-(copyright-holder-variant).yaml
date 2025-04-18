@@ -9,3 +9,5 @@ shortName: "BSD-2-Clause-copyright"
 canonicalNameHistory:
   - "BSD 2-Clause License (copyright variant)"
 
+otherIds: 
+  - "scancode:bsd-2-clause-netbsd"

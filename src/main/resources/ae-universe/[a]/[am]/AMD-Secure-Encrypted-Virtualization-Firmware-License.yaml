@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
 canonicalName: "AMD Secure Encrypted Virtualization Firmware License"
-category: "AMD Firmware"
+category: "Firmware"
 shortName: "AMD-SEV-Firmware"
 
 alternativeNames:

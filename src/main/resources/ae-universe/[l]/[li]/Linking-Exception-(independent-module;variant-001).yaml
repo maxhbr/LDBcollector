@@ -17,3 +17,4 @@ alternativeNames:
 otherIds: 
   - "scancode:broadcom-linking-unmodified"
   - "scancode:broadcom-linking-exception-2.0"
+  - "scancode:broadcom-unmodified-exception"

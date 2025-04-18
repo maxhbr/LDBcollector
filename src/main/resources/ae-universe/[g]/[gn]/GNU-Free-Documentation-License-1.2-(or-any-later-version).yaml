@@ -21,3 +21,5 @@ alternativeNames:
   - "Change license on the manual to GFDLv1.2+"
   - "GNU FDL version 1.2 or later"
 
+otherIds: 
+  - "scancode:gfdl-1.2-plus"

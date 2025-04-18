@@ -10,3 +10,9 @@ canonicalNameHistory:
   - "BSD 2-Clause License (variant 015)"
   - "BSD 2-Clause License (copyright holder variant; with Authors View Marker)"
 
+alternativeNames:
+  - "BSD-2-Clause-FreeBSD License"
+
+otherIds: 
+  - "scancode:bsd-2-clause-views"
+  - "scancode:bsd-2-clause-freebsd"

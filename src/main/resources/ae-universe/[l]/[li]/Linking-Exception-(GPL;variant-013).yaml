@@ -17,7 +17,6 @@ alternativeNames:
   - "freertos exception 2.0"
   - "freertos-exception, Version 2.0"
   - "freertos-exception, 2.0"
-  - "FreeRTOS"
 
 otherIds: 
   - "scancode:freertos-exception-2.0"

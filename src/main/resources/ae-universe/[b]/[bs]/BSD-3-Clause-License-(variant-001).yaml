@@ -12,3 +12,5 @@ canonicalNameHistory:
 alternativeNames:
   - "This file is a 1:1 port from the OpenBSD blowfish.c"
 
+otherIds: 
+  - "scancode:bsd-intel"

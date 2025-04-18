@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
 canonicalName: "NXP Firmware License"
-category: "NXP Firmware"
+category: "Firmware"
 shortName: "NXP-Firmware"
 
 alternativeNames:

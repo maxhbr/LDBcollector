@@ -6,3 +6,5 @@ canonicalName: "NVIDIA SDK CUDA License 2018"
 category: "NVIDIA SDK CUDA"
 shortName: "NVIDIA-SDK-CUDA-2018"
 
+otherIds: 
+  - "scancode:nvidia-cuda-supplement-2020"

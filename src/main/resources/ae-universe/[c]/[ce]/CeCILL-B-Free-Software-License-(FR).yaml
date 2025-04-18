@@ -9,6 +9,7 @@ shortName: "CeCILL-B-FSL-FR"
 alternativeNames:
   - "`CECILL-B` - [CEA CNRS INRIA Logiciel Libre](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt)"
   - "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL-B"
+  - "CeCILL-B Free Software License (FR)"
 
 otherIds: 
   - "scancode:cecill-b"
