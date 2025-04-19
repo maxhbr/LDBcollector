@@ -2460,3 +2460,849 @@ originally authored by James Gosling,
 and subsequently modified and posted to USENET by
 Mark Weiser under the name vc.
 '''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/arm64/7zAsm.S
+text = '''
+// 2021-04-25 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/arm64/LzmaDecOpt.S
+text = '''
+// 2021-04-25 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/7zAsm.asm
+text = '''
+; 2023-12-08 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/7zCrcOpt.asm
+text = '''
+; 2023-12-08 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/AesOpt.asm
+text = '''
+; 2021-12-25 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/LzFindOpt.asm
+text = '''
+2024-06-18: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/LzmaDecOpt.asm
+text = '''
+2024-06-18: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/Sha1Opt.asm
+text = '''
+2024-06-16 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/Sha256Opt.asm
+text = '''
+2024-06-16 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/XzCrc64Opt.asm
+text = '''
+2023-12-08 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7z.h
+text = '''
+/* 7z.h -- 7z interface
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zAlloc.c
+text = '''
+2023-03-04 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zAlloc.h
+text = '''
+2023-03-04 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zArcIn.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zBuf.c
+text = '''
+2017-04-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zBuf.h
+text = '''
+2023-03-04 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zBuf2.c
+text = '''
+2017-04-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zCrc.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zCrc.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zCrcOpt.c
+text = '''
+2023-12-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zDec.c
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zFile.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zFile.h
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zStream.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zTypes.h
+text = '''
+2024-01-24 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zVersion.h
+text = '''
+#define MY_AUTHOR_NAME "Igor Pavlov"
+#define MY_COPYRIGHT_CR "Copyright (c) 1999-2024 Igor Pavlov"
+#define MY_COPYRIGHT MY_COPYRIGHT_CR
+#define MY_COPYRIGHT MY_COPYRIGHT_PD
+#define MY_COPYRIGHT_PD "Igor Pavlov : Public domain"
+#define MY_DATE "2024-11-29"
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zWindows.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Aes.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Aes.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/AesOpt.c
+text = '''
+Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Alloc.c
+text = '''
+2024-02-18 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Alloc.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bcj2.c
+text = '''
+2023-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bcj2.h
+text = '''
+2023-03-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bcj2Enc.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Blake2.h
+text = '''
+2024-01-17 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Blake2s.c
+text = '''
+2015-2019 : Samuel Neves : original code : CC0 1.0 Universal (CC0 1.0). */
+2024-05-18 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bra.c
+text = '''
+2024-01-20 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bra.h
+text = '''
+2024-01-20 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bra86.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/BraIA64.c
+text = '''
+2023-02-20 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/BwtSort.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/BwtSort.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Compiler.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/CpuArch.c
+text = '''
+Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/CpuArch.h
+text = '''
+Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Delta.c
+text = '''
+2021-02-09 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Delta.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/DllSecur.c
+text = '''
+2023-12-03 : Igor Pavlov : Public domain *
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/DllSecur.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/HuffEnc.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/HuffEnc.h
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFind.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFind.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFindMt.c
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFindMt.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFindOpt.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzHash.h
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2Dec.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2Dec.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2DecMt.c
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2DecMt.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2Enc.c
+text = '''
+2023-04-13 : Igor Pavlov : Public domain *
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2Enc.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma86.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma86Dec.c
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma86Enc.c
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaDec.c
+text = '''
+2023-04-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaDec.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaEnc.c
+text = '''
+Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaEnc.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaLib.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaLib.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Md5.c
+text = '''
+: Igor Pavlov : Public domain
+This code is based on Colin Plumb's public domain md5.c code */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Md5.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/MtCoder.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/MtCoder.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/MtDec.c
+text = '''
+2024-02-20 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/MtDec.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd.h
+text = '''
+PPMd var.I (2002): Dmitry Shkarin : Public domain
+This code is based on PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+This code is based on PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain
+PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7Dec.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7Enc.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7aDec.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.H (2001): Dmitry Shkarin : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd8.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+This code is based on PPMd var.I (2002): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd8.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.I (2002): Dmitry Shkarin : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd8Dec.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.I (2002): Dmitry Shkarin : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd8Enc.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.I (2002): Dmitry Shkarin : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Precomp.h
+text = '''
+2024-01-25 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/RotateDefs.h
+text = '''
+2023-06-18 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha1.c
+text = '''
+: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha1.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha1Opt.c
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha256.c
+text = '''
+: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha256.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha256Opt.c
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha3.c
+text = '''
+: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha3.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha512.c
+text = '''
+: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha512.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha512Opt.c
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sort.c
+text = '''
+2014-04-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sort.h
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/SwapBytes.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/SwapBytes.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Threads.c
+text = '''
+2024-03-28 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Threads.h
+text = '''
+2024-03-28 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7z/7zMain.c
+text = '''
+2024-02-28 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7z/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7z/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipInstall/7zipInstall.c
+text = '''
+2024-04-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipInstall/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipInstall/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipUninstall/7zipUninstall.c
+text = '''
+2024-03-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipUninstall/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipUninstall/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/Lzma/LzmaUtil.c
+text = '''
+2023-03-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/Lzma/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/LzmaLib/LzmaLibExports.c
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/LzmaLib/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/LzmaLib/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/SfxSetup/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/SfxSetup/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/SfxSetup/SfxSetup.c
+text = '''
+
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Xxh64.h
+text = '''
+2024-01-24 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Xz.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Xz.h
+text = '''
+2024-01-26 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzCrc64.c
+text = '''
+2023-12-08 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzCrc64.h
+text = '''
+2023-12-08 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzCrc64Opt.c
+text = '''
+2023-12-08 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzDec.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzEnc.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzEnc.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzIn.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/ZstdDec.h
+text = '''
+2024-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/CPP/7zip/Archive/PpmdHandler.cpp
+text = '''
+2020 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.H (2001) / var.I (2002): Dmitry Shkarin : Public domain
+'''
