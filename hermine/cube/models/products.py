@@ -73,7 +73,7 @@ class Release(models.Model):
 
     SHIPPING_CHOICES = [
         ("Archived", "Archived"),
-        ("Active", "In developpement"),
+        ("Active", "In development"),
         ("Published", "Published"),
     ]
     product = models.ForeignKey(

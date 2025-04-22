@@ -45,7 +45,7 @@ class SBOMImport(models.Model):
     IMPORT_MODE_CHOICES = (
         (
             IMPORT_MODE_REPLACE,
-            "Delete all previously saved component usages and remplace with new import",
+            "Delete all previously saved component usages and replace with new import",
         ),
         (IMPORT_MODE_MERGE, "Add new component usages while keeping previous ones"),
     )
@@ -53,10 +53,10 @@ class SBOMImport(models.Model):
     COMPONENT_UPDATE_DEFAULT = "Default"
     COMPONENT_UPDATE_OVERRIDE = "Override"
     COMPONENT_UPDATE_CHOICES = (
-        (COMPONENT_UPDATE_DEFAULT, "Default: update missing informations only"),
+        (COMPONENT_UPDATE_DEFAULT, "Default: update missing information only"),
         (
             COMPONENT_UPDATE_OVERRIDE,
-            "Override all informations",
+            "Override all information",
         ),
     )
 
