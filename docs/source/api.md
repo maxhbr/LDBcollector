@@ -7,7 +7,7 @@ SPDX-License-Identifier: CC-BY-4.0
 # REST API
 
 Hermine's API uses the [Djano REST](https://www.django-rest-framework.org/) framework.
-There is an auto-generated doc for the API using [drf-yasg](https://drf-yasg.readthedocs.io/en/stable/) available at `{HERMINE_HOST}/api-doc/`for users with admin rights.
+There is an auto-generated doc for the API using [drf-yasg](https://drf-yasg.readthedocs.io/en/stable/) available at `{HERMINE_HOST}/api-doc/` for users with admin rights.
 
 :::{danger}
 Most API endpoints have a trailing slash. If you omit it, you may get a 301 redirect, which may cause problems in case of `POST` requests.
@@ -19,7 +19,7 @@ The most convenient way to authenticate to the API is probably to use a token.
 You can get such token by making a POST request on `api/token-auth/` with the 
 fields `username` and `password` in a form-data, using your Hermine credentials.
 
-In Python, using [requests](https://docs.python-requests.org/en/latest/),  it would look like:
+In Python, using [requests](https://docs.python-requests.org/en/latest/), it would look like:
 
 
 ```python
@@ -44,7 +44,7 @@ You will get a response like :
 }
 ```
 
-This token can then be passed in a HTTP Header to authenticate your API calls:
+This token can then be passed in an HTTP Header to authenticate your API calls:
   
 `"Authorization" : "Token 1273e3f6XXXXXXXXXXXXXXXX71209ac3bf29"`.
 
@@ -299,7 +299,7 @@ Gets the list of scopes with their associated default exploitation mode and the 
 :return: 
   - `valid` is set to true if all scopes in the release have a default exploitation mode defined;
   - `details` prompts the relative url to Hermine's UI for validation of the targeted release;
-  - `exploitations` is an array of truple defining for each `scope` `project` couple the associated `exploitation`;
+  - `exploitations` is an array of tuple defining for each `scope` `project` couple the associated `exploitation`;
   - `unset_scopes` is an array of names of scopes that have no default exploitation mode defined.
 ```
 
@@ -347,7 +347,7 @@ The response type is `application/json` with the following schema :
 
 ```{py:function} GET api/releases/<int:release_id>/validation_4/
 
-Gets the list of components requiring a choice of license and the list of components with exisiting choice of license.
+Gets the list of components requiring a choice of license and the list of components with existing choice of license.
 
 :param int release: the id of the release whose components' license choices are checked;
 :return: 
@@ -465,7 +465,7 @@ A complex license expression is an expression with more than one License express
 
 A choice has to be made, either by keeping the whole expression either by picking the chosen licenses in the expression.
 
-To make a choice, click on "choose expression" in hermine UI. Pick the desired scope, type the actual expression you'll want to use for this component, and enter an explanation for your choice.
+To make a choice, click on "choose expression" in Hermine UI. Pick the desired scope, type the actual expression you'll want to use for this component, and enter an explanation for your choice.
 
 This will create a UsageChoice object that is linked to the Usage object.
 
@@ -691,7 +691,7 @@ The response type is `application/json` with the following schema :
 }
 ```
 
-API endpoint that allows to know if there are Usages of unnacepted licenses in this release.
+API endpoint that allows to know if there are Usages of unaccepted licenses in this release.
 In this case, you must set relevant derogations in Hermine UI.
 
 
@@ -758,13 +758,13 @@ POST /api/generics/sbom/
             "package_id": "foobar",
             "spdx": "MIT",
             "exploitation": "DistributionSource",
-            "modificaiton": "Altered"
+            "modification": "Altered"
         },
         {
             "package_id": "barfoo",
             "spdx": "Apache-2.0",
             "exploitation": "DistributionSourceDistributionNonSource",
-            "modificaiton": "Unmodified"
+            "modification": "Unmodified"
         }
     ]
 }

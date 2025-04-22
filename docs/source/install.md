@@ -100,7 +100,7 @@ docker compose --profile https up -d --build
 ## Hermine Docker image
 
 You can also use the Hermine Docker image to run Hermine in your own Docker environment,
-without using Docker Compose. You will need to set up your own PostgreSQL database (version 14 required, 16 or above is recommanded), as well as a reverse proxy to
+without using Docker Compose. You will need to set up your own PostgreSQL database (version 14 required, 16 or above is recommended), as well as a reverse proxy to
 serve static files and proxy other requests to the Docker image.
 
 You first need to build the image :
@@ -124,7 +124,7 @@ The minimal configuration is :
 * **POSTGRES_PASSWORD**: the password to connect to the PostgreSQL database
 * **SUPERUSER**: the username of the superuser created at first launch
 * **PASSWORD**: the password of the superuser created at first launch
-* **HOST**: the external url of your Hermine instance (ex: `example.com`), should be the same as the one used in the reverse proxy configuration
+* **HOST**: the external URL of your Hermine instance (ex: `example.com`), should be the same as the one used in the reverse proxy configuration
 * **TRUST_PROXY_HEADERS**: should be set to "True" as you are using a reverse proxy
 * **STATIC_ROOT**: the directory of the volume where static files will be stored
 
@@ -148,7 +148,7 @@ docker run -d \
 It's best practice to use a dedicated schema for each application and for specific users.
 
 If you do this, you'll need to change the default schema for the user configured in `POSTGRES_USER` (e.g. myUser) to be able to use your dedicated schema (e.g. mySchema).
-Otherwise you may have problems, as your user shouldn't have the right to create tables in the `public` schema.
+Otherwise, you may have problems, as your user shouldn't have the right to create tables in the `public` schema.
 ```sql
 ALTER ROLE myUser SET search_path TO mySchema;
 ```
@@ -157,7 +157,7 @@ ALTER ROLE myUser SET search_path TO mySchema;
 
 ### Install python dependencies
 
-You should run Hermine in a Python virtual environnement.
+You should run Hermine in a Python virtual environment.
 Using [poetry](https://python-poetry.org/docs/), you can create the
 virtual environment and install the dependencies with:
 
@@ -191,7 +191,7 @@ Here are the parameters you may want to change in your `hermine/hermine/config.p
 
 | Parameter name | Description | Default value |
 | -------------- | ----- | ------------- |
-| HOST |  The url of your Hermine instance | "<span>example.com</span>" |
+| HOST |  The URL of your Hermine instance | "<span>example.com</span>" |
 | MAX_UPLOAD_SIZE | The maximum size that the SBOM to import can be (in bytes) |10\*1024\*1024|
 | SECRET_KEY | The key that Django will use to encrypt data | "your-django-secret-key" |
 | DEBUG | Enables debug functionality, should be disabled in production | False |

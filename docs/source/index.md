@@ -16,13 +16,13 @@ Some options like [code fences using colors](https://myst-parser.readthedocs.io/
 You will find the source of this documentation in the `docs/source` folder of the [repo](https://gitlab.com/hermine-project/hermine/-/tree/main/docs).
 
 To build it locally, you must first install the application locally and configure it [as explained in the installation page](install.md#manual-install).
-Dont't forget to activate your poetry env with :
+Don't forget to activate your poetry env with :
 ```bash
 poetry env activate
 ```
 and executing the displayed command.
 
-Then you can actually build the html pages:
+Then you can actually build the HTML pages:
 ```bash
 sphinx-build -b html docs/source docs/build/html
 ```

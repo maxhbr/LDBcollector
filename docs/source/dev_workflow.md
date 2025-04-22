@@ -31,7 +31,7 @@ python manage.py test
 
 You can also run Hermine inside a [DevContainer](https://containers.dev/).
 
-It allows to develop inside a container, in a described and clean environnment. You need to find how to integrate it to your IDE.
+It allows development inside a container, in a described and clean environment. You need to find how to integrate it to your IDE.
 
 The PostCreate command will do the database migrations, you need to create your superuser and run the server. You also need to create your config file from default one.
 ```bash
