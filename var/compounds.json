@@ -4,6 +4,13 @@
         "comment": ""
     },
     "compounds": [
+      {
+        "spdxid": "AGPL 3.0 WITH romic-exception",
+        "aliases": [
+          "linking-exception-agpl-3.0",
+          "AGPL-3.0-only WITH romic-exception"
+        ]
+      },
         {
             "spdxid": "Apache-2.0 WITH LLVM-exception",
             "aliases": [
