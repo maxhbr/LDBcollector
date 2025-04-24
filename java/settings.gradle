@@ -4,4 +4,3 @@
  */
 
 rootProject.name = "licenselynx"
-include("src")
