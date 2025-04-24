@@ -1,0 +1,16 @@
+{
+    "canonical": "OGTSL",
+    "aliases": {
+        "spdx": [
+            "Open Group Test Suite License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "opengroup"
+        ],
+        "osi": [
+            "The Open Group Test Suite License (OGTSL)"
+        ]
+    },
+    "src": "spdx"
+}

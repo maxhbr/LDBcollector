@@ -1,0 +1,15 @@
+{
+    "canonical": "Bison-exception-1.24",
+    "aliases": {
+        "spdx": [
+            "Bison exception 1.24"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Bison exception to GPL 2.0 or later",
+            "LicenseRef-scancode-bison-exception-2.0",
+            "bison-exception-2.0"
+        ]
+    },
+    "src": "spdx"
+}

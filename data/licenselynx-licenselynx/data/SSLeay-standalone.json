@@ -1,0 +1,15 @@
+{
+    "canonical": "SSLeay-standalone",
+    "aliases": {
+        "spdx": [
+            "SSLeay License - standalone"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ssleay-windows",
+            "LicenseRef-scancode-ssleay-windows",
+            "Original SSLeay License with Windows Clause"
+        ]
+    },
+    "src": "spdx"
+}

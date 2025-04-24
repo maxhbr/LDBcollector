@@ -1,0 +1,15 @@
+{
+    "canonical": "TGPPL-1.0",
+    "aliases": {
+        "spdx": [
+            "Transitive Grace Period Public Licence 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-tgppl-1.0",
+            "TGGPL 1.0",
+            "tgppl-1.0"
+        ]
+    },
+    "src": "spdx"
+}

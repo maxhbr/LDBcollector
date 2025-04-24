@@ -1,0 +1,14 @@
+{
+    "canonical": "MIT-CMU",
+    "aliases": {
+        "spdx": [
+            "CMU License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "cmu-uc",
+            "CMU Style"
+        ]
+    },
+    "src": "spdx"
+}

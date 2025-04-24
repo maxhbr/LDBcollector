@@ -1,0 +1,11 @@
+{
+    "canonical": "colt",
+    "aliases": {
+        "scancode-licensedb": [
+            "Colt License Agreement",
+            "LicenseRef-scancode-colt"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

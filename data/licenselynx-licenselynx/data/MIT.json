@@ -1,0 +1,28 @@
+{
+    "canonical": "MIT",
+    "aliases": {
+        "spdx": [
+            "MIT License"
+        ],
+        "custom": [
+            "MIT License (MIT)",
+            "MIT Open Source License",
+            "MIT License (Open Source)",
+            "MIT Open License",
+            "MIT (Open Source)",
+            "MIT (Open License)"
+        ],
+        "scancode-licensedb": [
+            "LicenseRef-MIT-Diehl",
+            "LicenseRef-MIT-Discord",
+            "mit",
+            "LicenseRef-MIT-TC",
+            "LicenseRef-MIT-Bootstrap"
+        ],
+        "osi": [
+            "MIT/Expat License",
+            "Expat"
+        ]
+    },
+    "src": "spdx"
+}

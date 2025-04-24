@@ -1,0 +1,11 @@
+{
+    "canonical": "karl-peterson",
+    "aliases": {
+        "scancode-licensedb": [
+            "Karl Peterson License",
+            "LicenseRef-scancode-karl-peterson"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

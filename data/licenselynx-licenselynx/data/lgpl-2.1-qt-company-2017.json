@@ -1,0 +1,10 @@
+{
+    "canonical": "lgpl-2.1-qt-company-2017",
+    "aliases": {
+        "scancode-licensedb": [
+            "LGPL 2.1 with Qt Company Exception 2017"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "IPA",
+    "aliases": {
+        "spdx": [
+            "IPA Font License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "IPA Font License Agreement v1.0",
+            "ipa-font",
+            "IPA Font License 1.0"
+        ]
+    },
+    "src": "spdx"
+}

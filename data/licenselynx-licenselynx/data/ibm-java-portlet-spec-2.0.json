@@ -1,0 +1,12 @@
+{
+    "canonical": "ibm-java-portlet-spec-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "IBM Java Portlet Specification 2.0",
+            "IBM Java Portlet Specification 2.0 License",
+            "LicenseRef-scancode-ibm-java-portlet-spec-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

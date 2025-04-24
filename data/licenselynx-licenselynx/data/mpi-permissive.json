@@ -1,0 +1,13 @@
+{
+    "canonical": "mpi-permissive",
+    "aliases": {
+        "spdx": [
+            "mpi Permissive License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mpi-permissive"
+        ]
+    },
+    "src": "spdx"
+}

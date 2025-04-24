@@ -1,0 +1,14 @@
+{
+    "canonical": "YPL-1.1",
+    "aliases": {
+        "spdx": [
+            "Yahoo! Public License v1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ypl-1.1",
+            "YPL 1.1"
+        ]
+    },
+    "src": "spdx"
+}

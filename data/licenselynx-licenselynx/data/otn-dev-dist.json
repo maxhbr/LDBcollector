@@ -1,0 +1,12 @@
+{
+    "canonical": "otn-dev-dist",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle Technology Network Development and Distribution License Terms",
+            "OTN License",
+            "LicenseRef-scancode-otn-dev-dist"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "LPPL-1.2",
+    "aliases": {
+        "spdx": [
+            "LaTeX Project Public License v1.2"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "lppl-1.2",
+            "LPPL 1.2"
+        ]
+    },
+    "src": "spdx"
+}

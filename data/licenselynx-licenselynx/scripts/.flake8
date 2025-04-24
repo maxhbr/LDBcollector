@@ -1,0 +1,15 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
+[flake8]
+exclude =
+    .git,
+    dist,
+    __pycache__,
+    poetry-cache
+max-line-length = 140
+max-complexity = 8
+count = True
+statistics = True
+doctests = True
+show-source = True

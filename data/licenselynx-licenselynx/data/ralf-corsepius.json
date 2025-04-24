@@ -1,0 +1,10 @@
+{
+    "canonical": "ralf-corsepius",
+    "aliases": {
+        "scancode-licensedb": [
+            "Ralf Corsepius License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

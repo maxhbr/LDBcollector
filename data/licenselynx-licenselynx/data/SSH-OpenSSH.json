@@ -1,0 +1,14 @@
+{
+    "canonical": "SSH-OpenSSH",
+    "aliases": {
+        "spdx": [
+            "SSH OpenSSH license"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "openssh",
+            "OpenSSH License"
+        ]
+    },
+    "src": "spdx"
+}

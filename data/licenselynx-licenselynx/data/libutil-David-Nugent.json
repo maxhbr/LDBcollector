@@ -1,0 +1,13 @@
+{
+    "canonical": "libutil-David-Nugent",
+    "aliases": {
+        "spdx": [
+            "libutil David Nugent License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "libutil-david-nugent"
+        ]
+    },
+    "src": "spdx"
+}

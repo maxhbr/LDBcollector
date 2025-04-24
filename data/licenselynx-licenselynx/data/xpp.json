@@ -1,0 +1,15 @@
+{
+    "canonical": "xpp",
+    "aliases": {
+        "spdx": [
+            "XPP License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "indiana-extreme-1.2",
+            "Indiana University Extreme! Lab Software License Version 1.2",
+            "Indiana Extreme License 1.2"
+        ]
+    },
+    "src": "spdx"
+}

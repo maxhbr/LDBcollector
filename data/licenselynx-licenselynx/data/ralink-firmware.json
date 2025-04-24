@@ -1,0 +1,11 @@
+{
+    "canonical": "ralink-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Ralink Firmware License",
+            "LicenseRef-scancode-ralink-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

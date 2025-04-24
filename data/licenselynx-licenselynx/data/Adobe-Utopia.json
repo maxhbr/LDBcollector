@@ -1,0 +1,13 @@
+{
+    "canonical": "Adobe-Utopia",
+    "aliases": {
+        "spdx": [
+            "Adobe Utopia Font License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "adobe-utopia"
+        ]
+    },
+    "src": "spdx"
+}

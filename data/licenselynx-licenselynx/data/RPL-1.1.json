@@ -1,0 +1,17 @@
+{
+    "canonical": "RPL-1.1",
+    "aliases": {
+        "spdx": [
+            "Reciprocal Public License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "RPL 1.1",
+            "rpl-1.1"
+        ],
+        "osi": [
+            "Reciprocal Public License, Version 1.1"
+        ]
+    },
+    "src": "spdx"
+}

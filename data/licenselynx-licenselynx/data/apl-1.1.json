@@ -1,0 +1,12 @@
+{
+    "canonical": "apl-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "APL-1.1",
+            "Academic Public License version 1.1",
+            "LicenseRef-scancode-apl-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

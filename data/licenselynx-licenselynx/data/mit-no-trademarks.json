@@ -1,0 +1,11 @@
+{
+    "canonical": "mit-no-trademarks",
+    "aliases": {
+        "scancode-licensedb": [
+            "MIT No Commercial Use of Trademarks",
+            "LicenseRef-scancode-mit-no-trademarks"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

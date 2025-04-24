@@ -1,0 +1,11 @@
+{
+    "canonical": "argouml",
+    "aliases": {
+        "scancode-licensedb": [
+            "ArgoUML License",
+            "LicenseRef-scancode-argouml"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

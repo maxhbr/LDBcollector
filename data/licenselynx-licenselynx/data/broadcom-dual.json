@@ -1,0 +1,10 @@
+{
+    "canonical": "broadcom-dual",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Dual GPL-Commercial"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

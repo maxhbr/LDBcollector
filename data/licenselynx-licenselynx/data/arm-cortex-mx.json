@@ -1,0 +1,11 @@
+{
+    "canonical": "arm-cortex-mx",
+    "aliases": {
+        "scancode-licensedb": [
+            "ARM Cortex-Mx Proprietary",
+            "LicenseRef-scancode-arm-cortex-mx"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

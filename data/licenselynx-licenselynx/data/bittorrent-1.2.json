@@ -1,0 +1,12 @@
+{
+    "canonical": "bittorrent-1.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "BitTorrent Open Source License 1.2",
+            "BitTorrent 1.2",
+            "LicenseRef-scancode-bittorrent-1.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

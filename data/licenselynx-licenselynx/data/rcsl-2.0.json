@@ -1,0 +1,12 @@
+{
+    "canonical": "rcsl-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "RealNetworks Community Source License v2.0",
+            "RCSL R&D 2.0",
+            "LicenseRef-scancode-rcsl-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

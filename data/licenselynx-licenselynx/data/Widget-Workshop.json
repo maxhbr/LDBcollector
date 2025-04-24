@@ -1,0 +1,13 @@
+{
+    "canonical": "Widget-Workshop",
+    "aliases": {
+        "spdx": [
+            "Widget Workshop License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "widget-workshop"
+        ]
+    },
+    "src": "spdx"
+}

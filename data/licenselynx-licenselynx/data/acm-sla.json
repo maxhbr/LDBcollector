@@ -1,0 +1,12 @@
+{
+    "canonical": "acm-sla",
+    "aliases": {
+        "scancode-licensedb": [
+            "ACM Software License Agreement",
+            "ACM SLA",
+            "LicenseRef-scancode-acm-sla"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

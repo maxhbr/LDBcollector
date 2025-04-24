@@ -1,0 +1,12 @@
+{
+    "canonical": "owal-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Opera Web Applications License 1.0",
+            "Opera Web Applications License v1.0",
+            "LicenseRef-scancode-owal-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

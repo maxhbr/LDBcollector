@@ -1,0 +1,14 @@
+{
+    "canonical": "OFL-1.0",
+    "aliases": {
+        "spdx": [
+            "SIL Open Font License 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "OFL 1.0",
+            "ofl-1.0"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "ms-windows-sdk-server-2008-net-3.5",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-ms-windows-sdk-server-2008-net-3.5",
+            "Microsoft Windows SDK for Windows Server 2008 and .NET Framework 3.5",
+            "MS Windows SDK Server 2008 .NET Framework 3.5",
+            "LicenseRef-scancode-ms-win-sdk-server-2008-net-3.5"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

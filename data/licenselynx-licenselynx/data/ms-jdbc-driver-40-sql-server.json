@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-jdbc-driver-40-sql-server",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft JDBC Driver 4.0 for SQL Server",
+            "MS JDBC Driver 4.0 for SQL Server",
+            "LicenseRef-scancode-ms-jdbc-driver-40-sql-server"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

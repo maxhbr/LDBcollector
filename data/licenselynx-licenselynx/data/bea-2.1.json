@@ -1,0 +1,12 @@
+{
+    "canonical": "bea-2.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "BEA Public License 2.1",
+            "BEA 2.1",
+            "LicenseRef-scancode-bea-2.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

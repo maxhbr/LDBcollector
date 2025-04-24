@@ -1,0 +1,15 @@
+{
+    "canonical": "zlib-acknowledgement",
+    "aliases": {
+        "spdx": [
+            "zlib/libpng License with Acknowledgement"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Nunit",
+            "ZLIB License with Acknowledgment",
+            "zlib-acknowledgement"
+        ]
+    },
+    "src": "spdx"
+}

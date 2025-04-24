@@ -1,0 +1,14 @@
+{
+    "canonical": "libtiff",
+    "aliases": {
+        "spdx": [
+            "libtiff License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "x11-tiff",
+            "X11-Style (Tiff)"
+        ]
+    },
+    "src": "spdx"
+}

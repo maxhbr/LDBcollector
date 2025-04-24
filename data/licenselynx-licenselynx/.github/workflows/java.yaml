@@ -1,0 +1,50 @@
+name: Java CI
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - java/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - java/**
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 8
+      - name: Setup Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Run automated tests
+        run: |
+          mkdir ./java/src/main/resources/
+          python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
+          cd java
+          ls src/main/resources
+          gradle ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport publishToMavenLocal | tee job.log
+          cat job.log | grep -- " - Instruction Coverage: " | sed -e "s/.* //" > build/coverage.txt
+      - name: Run coverage badge job
+        run: |
+          sudo apt-get install xq
+          pip install anybadge
+          cov_value=$(cat java/build/coverage.txt)
+          rm -v java/build/coverage.txt
+          cov_value="${cov_value%\%}"
+          JOB_COVERAGE=$(printf "%.1f\n" $(bc <<< "${cov_value}"))
+          echo Creating badge with coverage value ${JOB_COVERAGE}
+          anybadge --label java:coverage --value ${JOB_COVERAGE} --suffix "%" --file website/badges/coverage-java.svg --overwrite
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update badge for java

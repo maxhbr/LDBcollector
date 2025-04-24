@@ -1,0 +1,11 @@
+{
+    "canonical": "shital-shah",
+    "aliases": {
+        "scancode-licensedb": [
+            "Shital Shah License",
+            "LicenseRef-scancode-shital-shah"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

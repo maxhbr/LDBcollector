@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-capicom",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft CAPICOM License",
+            "LicenseRef-scancode-ms-capicom"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

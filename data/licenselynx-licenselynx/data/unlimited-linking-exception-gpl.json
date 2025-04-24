@@ -1,0 +1,12 @@
+{
+    "canonical": "unlimited-linking-exception-gpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-unlimited-linking-exception-gpl",
+            "Unlimited linking exception to GPL",
+            "LicenseRef-scancode-unlimited-link-exception-gpl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "fmt-exception",
+    "aliases": {
+        "spdx": [
+            "fmt exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-object-form-exception-to-mit",
+            "object-form-exception-to-mit",
+            "Object Form Exception to MIT"
+        ]
+    },
+    "src": "spdx"
+}

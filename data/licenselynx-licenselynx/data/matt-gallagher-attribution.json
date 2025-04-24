@@ -1,0 +1,11 @@
+{
+    "canonical": "matt-gallagher-attribution",
+    "aliases": {
+        "scancode-licensedb": [
+            "Matt Gallagher Attribution License",
+            "LicenseRef-scancode-matt-gallagher-attribution"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

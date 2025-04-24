@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-invisible-eula-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Invisible Computing EULA 1.0",
+            "MS Invisible Computing EULA 1.0",
+            "LicenseRef-scancode-ms-invisible-eula-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

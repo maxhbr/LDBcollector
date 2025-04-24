@@ -1,0 +1,11 @@
+{
+    "canonical": "infineon-free",
+    "aliases": {
+        "scancode-licensedb": [
+            "Infineon Free Software License",
+            "LicenseRef-scancode-infineon-free"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

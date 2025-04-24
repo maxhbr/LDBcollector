@@ -1,0 +1,15 @@
+{
+    "canonical": "GNAT-exception",
+    "aliases": {
+        "spdx": [
+            "GNAT exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ada-linking-exception",
+            "LicenseRef-scancode-ada-linking-exception",
+            "Ada linking exception to GPL 2.0 or later"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,16 @@
+#
+# SPDX-FileCopyrightText: Copyright 2025 Siemens AG
+# SPDX-License-Identifier: Apache-2.0
+#
+[flake8]
+exclude =
+    .git,
+    dist,
+    __pycache__,
+    poetry-cache
+max-line-length = 140
+max-complexity = 8
+count = True
+statistics = True
+doctests = True
+show-source = True

@@ -1,0 +1,12 @@
+{
+    "canonical": "tigra-calendar-3.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "Tigra Calendar v3.2 License",
+            "Tigra Calendar 3.2 License",
+            "LicenseRef-scancode-tigra-calendar-3.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

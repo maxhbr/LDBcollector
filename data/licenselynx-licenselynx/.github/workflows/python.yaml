@@ -1,0 +1,90 @@
+name: Python CI
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - python/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - python/**
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: |
+          pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry
+          cache-dependency-path: python/poetry.lock
+      - name: Set Poetry environment
+        run: |
+          cd python
+          poetry env use 3.11
+      - name: Install dependencies
+        run: |
+          cd python
+          poetry install --no-root
+      - name: Run the automated tests
+        run: |
+          cd python
+          poetry run coverage run --branch -m pytest -vv
+          poetry run coverage report --omit="tests/*"
+          poetry run coverage xml --omit="tests/*"
+      - name: Test build
+        run: |
+          mkdir -p python/licenselynx/resources
+          python3 scripts/src/load/merge_data.py -o ./python/licenselynx/resources/merged_data.json
+          cd python
+          poetry build
+          python3 check_files.py
+      - name: Run coverage badge
+        run: |
+          sudo apt-get install xq
+          pip install anybadge
+          cov_value=$(xq --xpath "//coverage/@line-rate" python/coverage.xml)
+          cov_rounded=$(printf "%.1f\n" $(bc <<< "100*${cov_value}"))
+          echo "Coverage found: ${cov_rounded}%"
+          anybadge --label python:coverage --value ${cov_rounded} --suffix "%" --file website/badges/coverage-python.svg --overwrite
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update badge for python
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: |
+          pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry
+          cache-dependency-path: python/poetry.lock
+      - name: Set Poetry environment
+        run: |
+          cd python
+          poetry env use 3.11
+      - name: Install dependencies
+        run: |
+          cd python
+          poetry install --no-root
+      - name: Run the linting
+        run: |
+          cd python
+          poetry run mypy licenselynx tests
+          poetry run flake8 licenselynx
+          poetry run flake8 tests

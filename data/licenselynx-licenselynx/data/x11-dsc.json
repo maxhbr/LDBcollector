@@ -1,0 +1,11 @@
+{
+    "canonical": "x11-dsc",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (DSC Technologies)",
+            "LicenseRef-scancode-x11-dsc"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

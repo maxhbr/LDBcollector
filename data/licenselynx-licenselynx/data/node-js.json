@@ -1,0 +1,11 @@
+{
+    "canonical": "node-js",
+    "aliases": {
+        "scancode-licensedb": [
+            "Node License",
+            "LicenseRef-scancode-node-js"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

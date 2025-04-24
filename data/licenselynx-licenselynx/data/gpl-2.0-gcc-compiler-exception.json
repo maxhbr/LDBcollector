@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-gcc-compiler-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with GCC compiler exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-sissl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Industry Standards Source License 1.0",
+            "LicenseRef-scancode-sun-sissl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

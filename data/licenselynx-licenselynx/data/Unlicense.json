@@ -1,0 +1,14 @@
+{
+    "canonical": "Unlicense",
+    "aliases": {
+        "spdx": [
+            "The Unlicense"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Unlicense",
+            "unlicense"
+        ]
+    },
+    "src": "spdx"
+}

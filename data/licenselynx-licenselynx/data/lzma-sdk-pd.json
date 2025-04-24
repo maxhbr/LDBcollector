@@ -1,0 +1,11 @@
+{
+    "canonical": "lzma-sdk-pd",
+    "aliases": {
+        "scancode-licensedb": [
+            "LZMA SDK Public Domain",
+            "LicenseRef-scancode-lzma-sdk-pd"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

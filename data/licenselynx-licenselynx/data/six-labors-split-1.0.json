@@ -1,0 +1,11 @@
+{
+    "canonical": "six-labors-split-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Six Labors Split License 1.0",
+            "LicenseRef-scancode-six-labors-split-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

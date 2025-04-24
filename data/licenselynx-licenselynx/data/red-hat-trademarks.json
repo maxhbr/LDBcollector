@@ -1,0 +1,11 @@
+{
+    "canonical": "red-hat-trademarks",
+    "aliases": {
+        "scancode-licensedb": [
+            "Red Hat Trademarks License",
+            "LicenseRef-scancode-red-hat-trademarks"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "amd-linux-firmware-export",
+    "aliases": {
+        "scancode-licensedb": [
+            "AMD Linux Firmware Export License",
+            "LicenseRef-scancode-amd-linux-firmware-export"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

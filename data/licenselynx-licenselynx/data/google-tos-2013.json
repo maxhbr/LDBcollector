@@ -1,0 +1,12 @@
+{
+    "canonical": "google-tos-2013",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google TOS 2013",
+            "Google Terms of Service 2013",
+            "LicenseRef-scancode-google-tos-2013"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

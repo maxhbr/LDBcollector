@@ -1,0 +1,12 @@
+{
+    "canonical": "ascender-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Ascender EULA",
+            "Ascender Corporation End User License Agreement",
+            "LicenseRef-scancode-ascender-eula"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

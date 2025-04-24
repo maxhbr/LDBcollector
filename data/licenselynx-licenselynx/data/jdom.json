@@ -1,0 +1,11 @@
+{
+    "canonical": "jdom",
+    "aliases": {
+        "scancode-licensedb": [
+            "JDOM License",
+            "LicenseRef-scancode-jdom"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

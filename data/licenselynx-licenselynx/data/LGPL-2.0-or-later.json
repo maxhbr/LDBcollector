@@ -1,0 +1,17 @@
+{
+    "canonical": "LGPL-2.0-or-later",
+    "aliases": {
+        "spdx": [
+            "GNU Library General Public License v2 or later",
+            "LGPL-2.0+"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "GNU Library General Public License 2.0 or later",
+            "LGPL 2.0 or later",
+            "lgpl-2.0-plus",
+            "LicenseRef-LGPL"
+        ]
+    },
+    "src": "spdx"
+}

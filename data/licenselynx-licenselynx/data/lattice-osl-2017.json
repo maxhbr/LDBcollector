@@ -1,0 +1,11 @@
+{
+    "canonical": "lattice-osl-2017",
+    "aliases": {
+        "scancode-licensedb": [
+            "Lattice Open Source License 2017",
+            "LicenseRef-scancode-lattice-osl-2017"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

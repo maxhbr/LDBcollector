@@ -1,0 +1,11 @@
+{
+    "canonical": "libmib",
+    "aliases": {
+        "scancode-licensedb": [
+            "LibMib License",
+            "LicenseRef-scancode-libmib"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "InnoSetup",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-inno-setup",
+            "inno-setup"
+        ],
+        "custom": [],
+        "spdx": [
+            "Inno Setup License"
+        ]
+    },
+    "src": "spdx"
+}

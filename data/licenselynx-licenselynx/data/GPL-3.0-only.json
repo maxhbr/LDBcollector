@@ -1,0 +1,20 @@
+{
+    "canonical": "GPL-3.0-only",
+    "aliases": {
+        "spdx": [
+            "GNU General Public License v3.0 only",
+            "GPL-3.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "GNU General Public License 3.0",
+            "GPL 3.0",
+            "gpl-3.0",
+            "LicenseRef-gpl-3.0"
+        ],
+        "osi": [
+            "GNU General Public License, Version 3.0"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "code-credit-license-1.0.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Code Credit License v1.0.1",
+            "LicenseRef-scancode-code-credit-license-1.0.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

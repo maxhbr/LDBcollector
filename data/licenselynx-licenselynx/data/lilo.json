@@ -1,0 +1,11 @@
+{
+    "canonical": "lilo",
+    "aliases": {
+        "scancode-licensedb": [
+            "LILO License",
+            "LicenseRef-scancode-lilo"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

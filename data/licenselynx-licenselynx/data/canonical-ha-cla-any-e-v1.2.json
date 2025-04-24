@@ -1,0 +1,12 @@
+{
+    "canonical": "canonical-ha-cla-any-e-v1.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "Canonical-HA-CLA-ANY-E_v1.2",
+            "Canonical Entity Contributor License Agreement v1.2",
+            "LicenseRef-scancode-canonical-ha-cla-any-e-v1.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

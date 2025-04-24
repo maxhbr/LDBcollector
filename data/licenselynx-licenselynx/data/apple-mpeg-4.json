@@ -1,0 +1,11 @@
+{
+    "canonical": "apple-mpeg-4",
+    "aliases": {
+        "scancode-licensedb": [
+            "Apple MPEG-4 License",
+            "LicenseRef-scancode-apple-mpeg-4"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

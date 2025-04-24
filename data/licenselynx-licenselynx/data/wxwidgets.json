@@ -1,0 +1,11 @@
+{
+    "canonical": "wxwidgets",
+    "aliases": {
+        "scancode-licensedb": [
+            "wxWidgets Licence",
+            "LicenseRef-scancode-wxwidgets"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

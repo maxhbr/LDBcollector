@@ -1,0 +1,14 @@
+{
+    "canonical": "MulanPSL-2.0",
+    "aliases": {
+        "spdx": [
+            "Mulan Permissive Software License, Version 2"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Mulan PSL v2",
+            "mulanpsl-2.0"
+        ]
+    },
+    "src": "spdx"
+}

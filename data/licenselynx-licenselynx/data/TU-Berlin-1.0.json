@@ -1,0 +1,15 @@
+{
+    "canonical": "TU-Berlin-1.0",
+    "aliases": {
+        "spdx": [
+            "Technische Universitaet Berlin License 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "tu-berlin",
+            "TU Berlin License 1.0",
+            "Technische Universitaet Berlin Attribution License 1.0"
+        ]
+    },
+    "src": "spdx"
+}

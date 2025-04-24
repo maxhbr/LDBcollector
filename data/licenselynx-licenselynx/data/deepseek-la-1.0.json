@@ -1,0 +1,11 @@
+{
+    "canonical": "deepseek-la-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "DeepSeek License Agreement v1.0",
+            "LicenseRef-scancode-deepseek-la-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

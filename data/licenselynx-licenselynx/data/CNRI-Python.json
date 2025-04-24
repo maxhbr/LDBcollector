@@ -1,0 +1,18 @@
+{
+    "canonical": "CNRI-Python",
+    "aliases": {
+        "spdx": [
+            "CNRI Python License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "CNRI Open Source License Agreement for Python 1.6",
+            "cnri-python-1.6",
+            "CNRI Python 1.6"
+        ],
+        "osi": [
+            "CNRI portion of the multi-part Python License"
+        ]
+    },
+    "src": "spdx"
+}

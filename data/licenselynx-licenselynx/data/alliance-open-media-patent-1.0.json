@@ -1,0 +1,12 @@
+{
+    "canonical": "alliance-open-media-patent-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Alliance for Open Media Patent License 1.0",
+            "Open Media Patent 1.0",
+            "LicenseRef-scancode-alliance-open-media-patent-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

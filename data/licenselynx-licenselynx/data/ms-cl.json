@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-cl",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS-CL",
+            "Microsoft Shared Source Community License",
+            "LicenseRef-scancode-ms-cl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

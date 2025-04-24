@@ -1,0 +1,15 @@
+{
+    "canonical": "JasPer-2.0",
+    "aliases": {
+        "spdx": [
+            "JasPer License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "JasPer License 2.0",
+            "jasper-2.0",
+            "JasPer 2.0"
+        ]
+    },
+    "src": "spdx"
+}

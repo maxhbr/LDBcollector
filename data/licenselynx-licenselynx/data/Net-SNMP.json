@@ -1,0 +1,15 @@
+{
+    "canonical": "Net-SNMP",
+    "aliases": {
+        "spdx": [
+            "Net-SNMP License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "net-snmp",
+            "Net SNMP License",
+            "LicenseRef-scancode-net-snmp"
+        ]
+    },
+    "src": "spdx"
+}

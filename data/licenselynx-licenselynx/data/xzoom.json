@@ -1,0 +1,13 @@
+{
+    "canonical": "xzoom",
+    "aliases": {
+        "spdx": [
+            "xzoom License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "xzoom"
+        ]
+    },
+    "src": "spdx"
+}

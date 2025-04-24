@@ -1,0 +1,11 @@
+{
+    "canonical": "genode-agpl-3.0-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Genode exception to AGPL 3.0",
+            "LicenseRef-scancode-genode-agpl-3.0-exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "visual-idiot",
+    "aliases": {
+        "scancode-licensedb": [
+            "Visual Idiot License",
+            "Visual Idiot",
+            "LicenseRef-scancode-visual-idiot"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

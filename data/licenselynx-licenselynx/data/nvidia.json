@@ -1,0 +1,11 @@
+{
+    "canonical": "nvidia",
+    "aliases": {
+        "scancode-licensedb": [
+            "NVIDIA License",
+            "LicenseRef-scancode-nvidia"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

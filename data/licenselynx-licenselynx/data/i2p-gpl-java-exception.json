@@ -1,0 +1,14 @@
+{
+    "canonical": "i2p-gpl-java-exception",
+    "aliases": {
+        "spdx": [
+            "i2p GPL+Java Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "i2p-gpl-java-exception",
+            "i2p GPL plus Java Exception"
+        ]
+    },
+    "src": "spdx"
+}

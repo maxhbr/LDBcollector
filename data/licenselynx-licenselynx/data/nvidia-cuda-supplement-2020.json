@@ -1,0 +1,11 @@
+{
+    "canonical": "nvidia-cuda-supplement-2020",
+    "aliases": {
+        "scancode-licensedb": [
+            "CUDA Toolkit Supplement to SLA for NVIDIA SDKs",
+            "LicenseRef-scancode-nvidia-cuda-supplement-2020"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "rubyencoder-commercial",
+    "aliases": {
+        "scancode-licensedb": [
+            "RubyEncoder Commercial Licence",
+            "LicenseRef-scancode-rubyencoder-commercial"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

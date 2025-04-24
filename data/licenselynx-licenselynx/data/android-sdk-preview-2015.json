@@ -1,0 +1,12 @@
+{
+    "canonical": "android-sdk-preview-2015",
+    "aliases": {
+        "scancode-licensedb": [
+            "Android SDK Preview License Agreement",
+            "Android SDK Preview License",
+            "LicenseRef-scancode-android-sdk-preview-2015"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

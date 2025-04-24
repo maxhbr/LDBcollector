@@ -1,0 +1,11 @@
+{
+    "canonical": "jetbrains-purchase-terms",
+    "aliases": {
+        "scancode-licensedb": [
+            "JetBrains Purchase Terms",
+            "LicenseRef-scancode-jetbrains-purchase-terms"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

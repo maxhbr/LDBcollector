@@ -1,0 +1,11 @@
+{
+    "canonical": "openi-pl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenI Public License 1.0",
+            "LicenseRef-scancode-openi-pl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

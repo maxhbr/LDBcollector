@@ -1,0 +1,14 @@
+{
+    "canonical": "Libtool-exception",
+    "aliases": {
+        "spdx": [
+            "Libtool Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "libtool-exception-2.0",
+            "GNU Libtool exception to GPL 2.0"
+        ]
+    },
+    "src": "spdx"
+}

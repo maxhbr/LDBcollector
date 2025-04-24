@@ -1,0 +1,14 @@
+{
+    "canonical": "Hippocratic-2.1",
+    "aliases": {
+        "spdx": [
+            "Hippocratic License 2.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Hippocratic License v2.1",
+            "hippocratic-2.1"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "westhawk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Westhawk License",
+            "LicenseRef-scancode-westhawk"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "amlogic-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Amlogic Linux Firmware License",
+            "LicenseRef-scancode-amlogic-linux-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

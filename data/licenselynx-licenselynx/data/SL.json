@@ -1,0 +1,13 @@
+{
+    "canonical": "SL",
+    "aliases": {
+        "spdx": [
+            "SL License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "sl"
+        ]
+    },
+    "src": "spdx"
+}

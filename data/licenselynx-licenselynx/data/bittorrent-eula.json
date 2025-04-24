@@ -1,0 +1,12 @@
+{
+    "canonical": "bittorrent-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "BitTorrent EULA",
+            "BitTorrent End User License Agreement (EULA)",
+            "LicenseRef-scancode-bittorrent-eula"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

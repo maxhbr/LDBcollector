@@ -1,0 +1,14 @@
+{
+    "canonical": "snprintf",
+    "aliases": {
+        "spdx": [
+            "snprintf License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "snprintf",
+            "LicenseRef-scancode-snprintf"
+        ]
+    },
+    "src": "spdx"
+}

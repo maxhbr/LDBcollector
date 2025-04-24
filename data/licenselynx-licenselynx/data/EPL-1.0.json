@@ -1,0 +1,32 @@
+{
+    "canonical": "EPL-1.0",
+    "aliases": {
+        "spdx": [
+            "Eclipse Public License 1.0"
+        ],
+        "custom": [
+            "Eclipse Public License v1.0",
+            "EPL License 1.0",
+            "EPL v1.0",
+            "EPL License",
+            "Eclipse License 1.0",
+            "Eclipse Public License",
+            "Eclipse Public License Version 1.0",
+            "EPL 1.0 License",
+            "EPL-1.0 License",
+            "EPL (1.0)",
+            "Eclipse Public License (1.0)",
+            "EPL Version 1.0",
+            "Eclipse Public License v1.0 (EPL-1.0)",
+            "EPL 1.0 Open Source License"
+        ],
+        "scancode-licensedb": [
+            "EPL 1.0",
+            "epl-1.0"
+        ],
+        "osi": [
+            "Eclipse Public License, Version 1.0"
+        ]
+    },
+    "src": "spdx"
+}

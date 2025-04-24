@@ -1,0 +1,11 @@
+{
+    "canonical": "qca-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "QCA Linux Firmware License",
+            "LicenseRef-scancode-qca-linux-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

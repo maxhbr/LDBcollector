@@ -1,0 +1,11 @@
+{
+    "canonical": "geoff-kuenning-1993",
+    "aliases": {
+        "scancode-licensedb": [
+            "Geoff Kuenning License 1993",
+            "LicenseRef-scancode-geoff-kuenning-1993"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

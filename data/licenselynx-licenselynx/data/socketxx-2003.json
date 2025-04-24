@@ -1,0 +1,11 @@
+{
+    "canonical": "socketxx-2003",
+    "aliases": {
+        "scancode-licensedb": [
+            "Socketxx License 2003",
+            "LicenseRef-scancode-socketxx-2003"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "saxix-mit",
+    "aliases": {
+        "scancode-licensedb": [
+            "Stefano Apostolico MIT License",
+            "LicenseRef-scancode-saxix-mit"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

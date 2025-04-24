@@ -1,0 +1,13 @@
+{
+    "canonical": "HPND-export-US",
+    "aliases": {
+        "spdx": [
+            "HPND with US Government export control warning"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "hpnd-export-us"
+        ]
+    },
+    "src": "spdx"
+}

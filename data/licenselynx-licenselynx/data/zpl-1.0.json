@@ -1,0 +1,12 @@
+{
+    "canonical": "zpl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "ZPL 1.0",
+            "Zope Public License 1.0",
+            "LicenseRef-scancode-zpl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

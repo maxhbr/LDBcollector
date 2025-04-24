@@ -1,0 +1,11 @@
+{
+    "canonical": "intel-confidential",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel Confidential",
+            "LicenseRef-scancode-intel-confidential"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

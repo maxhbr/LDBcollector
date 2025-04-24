@@ -1,0 +1,11 @@
+{
+    "canonical": "newran",
+    "aliases": {
+        "scancode-licensedb": [
+            "Newran License",
+            "LicenseRef-scancode-newran"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

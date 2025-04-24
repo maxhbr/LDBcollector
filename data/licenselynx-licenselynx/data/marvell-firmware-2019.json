@@ -1,0 +1,11 @@
+{
+    "canonical": "marvell-firmware-2019",
+    "aliases": {
+        "scancode-licensedb": [
+            "Marvell Firmware License 2019",
+            "LicenseRef-scancode-marvell-firmware-2019"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

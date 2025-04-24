@@ -1,0 +1,11 @@
+{
+    "canonical": "zeusbench",
+    "aliases": {
+        "scancode-licensedb": [
+            "ZeusBench notice",
+            "LicenseRef-scancode-zeusbench"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

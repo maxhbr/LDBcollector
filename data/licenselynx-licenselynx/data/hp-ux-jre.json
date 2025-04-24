@@ -1,0 +1,12 @@
+{
+    "canonical": "hp-ux-jre",
+    "aliases": {
+        "scancode-licensedb": [
+            "Hewlett Packard JRE License",
+            "HP JRE License",
+            "LicenseRef-scancode-hp-ux-jre"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

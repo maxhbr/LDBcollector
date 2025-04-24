@@ -1,0 +1,11 @@
+{
+    "canonical": "javascript-exception-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Javascript exception to GPL 2.0",
+            "LicenseRef-scancode-javascript-exception-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

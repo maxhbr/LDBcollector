@@ -1,0 +1,11 @@
+{
+    "canonical": "qskinny-exception-lgpl-2.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "QSkinny Exception to LGPL 2.1",
+            "LicenseRef-scancode-qskinny-exception-lgpl-2.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

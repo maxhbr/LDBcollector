@@ -1,0 +1,10 @@
+{
+    "canonical": "cmu-template",
+    "aliases": {
+        "scancode-licensedb": [
+            "Carnegie Mellon Template License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

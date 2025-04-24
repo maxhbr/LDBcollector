@@ -1,0 +1,16 @@
+{
+    "canonical": "OpenPBS-2.3",
+    "aliases": {
+        "spdx": [
+            "OpenPBS v2.3 Software License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "OpenPBS Software License v2.3",
+            "LicenseRef-scancode-openpbs-2.3",
+            "openpbs-2.3",
+            "OpenPBS 2.3"
+        ]
+    },
+    "src": "spdx"
+}

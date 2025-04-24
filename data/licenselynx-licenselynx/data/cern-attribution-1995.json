@@ -1,0 +1,11 @@
+{
+    "canonical": "cern-attribution-1995",
+    "aliases": {
+        "scancode-licensedb": [
+            "CERN Attribution 1995",
+            "LicenseRef-scancode-cern-attribution-1995"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

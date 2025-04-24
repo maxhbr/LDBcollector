@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-ws-routing-spec",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft WS Routing Specifications License",
+            "MS WS Routing Specifications License",
+            "LicenseRef-scancode-ms-ws-routing-spec"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

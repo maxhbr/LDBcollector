@@ -1,0 +1,10 @@
+{
+    "canonical": "bzip2-1.0.5",
+    "aliases": {
+        "spdx": [
+            "bzip2 and libbzip2 License v1.0.5"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

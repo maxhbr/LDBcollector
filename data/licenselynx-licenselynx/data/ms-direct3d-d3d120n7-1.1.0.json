@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-direct3d-d3d120n7-1.1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Direct3D D3D12On7 1.1.0",
+            "MS Direct3D D3D12On7 1.1.0",
+            "LicenseRef-scancode-ms-direct3d-d3d120n7-1.1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

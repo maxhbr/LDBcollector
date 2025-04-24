@@ -1,0 +1,16 @@
+{
+    "canonical": "CMU-Mach",
+    "aliases": {
+        "spdx": [
+            "CMU Mach License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "carnegie-mellon-contributors",
+            "Carnegie Mellon Contributors",
+            "Carnegie Mellon Contributors License",
+            "LicenseRef-scancode-carnegie-mellon-contributors"
+        ]
+    },
+    "src": "spdx"
+}

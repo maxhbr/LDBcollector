@@ -1,0 +1,13 @@
+{
+    "canonical": "libselinux-1.0",
+    "aliases": {
+        "spdx": [
+            "libselinux public domain notice"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "selinux-nsa-declaration-1.0"
+        ]
+    },
+    "src": "spdx"
+}

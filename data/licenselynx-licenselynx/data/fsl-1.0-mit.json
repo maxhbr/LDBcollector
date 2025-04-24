@@ -1,0 +1,12 @@
+{
+    "canonical": "fsl-1.0-mit",
+    "aliases": {
+        "scancode-licensedb": [
+            "FSL-1.0-MIT",
+            "Functional Source License, Version 1.0, MIT Change License",
+            "LicenseRef-scancode-fsl-1.0-mit"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

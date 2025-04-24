@@ -1,0 +1,13 @@
+{
+    "canonical": "metamail",
+    "aliases": {
+        "spdx": [
+            "metamail License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "metamail"
+        ]
+    },
+    "src": "spdx"
+}

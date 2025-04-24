@@ -1,0 +1,11 @@
+{
+    "canonical": "paypal-sdk-2013-2016",
+    "aliases": {
+        "scancode-licensedb": [
+            "PayPal SDK License 2013-2016",
+            "LicenseRef-scancode-paypal-sdk-2013-2016"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

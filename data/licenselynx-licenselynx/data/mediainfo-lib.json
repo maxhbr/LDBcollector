@@ -1,0 +1,11 @@
+{
+    "canonical": "mediainfo-lib",
+    "aliases": {
+        "scancode-licensedb": [
+            "MediaInfo(Lib) License",
+            "LicenseRef-scancode-mediainfo-lib"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

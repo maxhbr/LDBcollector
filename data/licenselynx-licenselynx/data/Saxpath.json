@@ -1,0 +1,13 @@
+{
+    "canonical": "Saxpath",
+    "aliases": {
+        "spdx": [
+            "Saxpath License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "saxpath"
+        ]
+    },
+    "src": "spdx"
+}

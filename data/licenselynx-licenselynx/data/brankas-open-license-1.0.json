@@ -1,0 +1,11 @@
+{
+    "canonical": "brankas-open-license-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Brankas Open License 1.0",
+            "LicenseRef-scancode-brankas-open-license-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

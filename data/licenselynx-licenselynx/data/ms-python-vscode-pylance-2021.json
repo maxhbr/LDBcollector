@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-python-vscode-pylance-2021",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Pylance Extension for VSCode License",
+            "Microsoft Pylance Extension for Visual Studio Code License",
+            "LicenseRef-scancode-ms-python-vscode-pylance-2021"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

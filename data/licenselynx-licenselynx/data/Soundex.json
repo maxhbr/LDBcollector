@@ -1,0 +1,15 @@
+{
+    "canonical": "Soundex",
+    "aliases": {
+        "spdx": [
+            "Soundex License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "soundex",
+            "LicenseRef-scancode-soundex",
+            "Soundex"
+        ]
+    },
+    "src": "spdx"
+}

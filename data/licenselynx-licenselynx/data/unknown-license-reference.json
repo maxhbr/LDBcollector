@@ -1,0 +1,12 @@
+{
+    "canonical": "unknown-license-reference",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unknown License reference",
+            "Unknown License file reference",
+            "LicenseRef-scancode-unknown-license-reference"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "iso-recorder",
+    "aliases": {
+        "scancode-licensedb": [
+            "ISO Recorder License",
+            "LicenseRef-scancode-iso-recorder"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

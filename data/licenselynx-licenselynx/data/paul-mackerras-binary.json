@@ -1,0 +1,11 @@
+{
+    "canonical": "paul-mackerras-binary",
+    "aliases": {
+        "scancode-licensedb": [
+            "Paul Mackerras Binary License",
+            "LicenseRef-scancode-paul-mackerras-binary"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

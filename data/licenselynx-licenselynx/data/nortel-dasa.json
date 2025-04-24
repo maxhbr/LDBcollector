@@ -1,0 +1,11 @@
+{
+    "canonical": "nortel-dasa",
+    "aliases": {
+        "scancode-licensedb": [
+            "Nortel DASA License",
+            "LicenseRef-scancode-nortel-dasa"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

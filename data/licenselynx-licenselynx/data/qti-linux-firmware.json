@@ -1,0 +1,11 @@
+{
+    "canonical": "qti-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "QTI Linux Firmware",
+            "LicenseRef-scancode-qti-linux-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-api-code-pack-net",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Windows API Code Pack for Microsoft .NET Framework",
+            "MS Windows API Code Pack for .NET",
+            "LicenseRef-scancode-ms-api-code-pack-net"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

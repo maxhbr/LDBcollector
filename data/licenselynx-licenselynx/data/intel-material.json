@@ -1,0 +1,11 @@
+{
+    "canonical": "intel-material",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel Material License",
+            "LicenseRef-scancode-intel-material"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "adaptec-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adaptec EULA",
+            "LicenseRef-scancode-adaptec-eula"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

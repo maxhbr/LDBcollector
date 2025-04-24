@@ -1,0 +1,14 @@
+{
+    "canonical": "BSD-3-Clause-No-Nuclear-License",
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause No Nuclear License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Sun BSD-Style with Nuclear Restrictions",
+            "sun-bsd-no-nuclear"
+        ]
+    },
+    "src": "spdx"
+}

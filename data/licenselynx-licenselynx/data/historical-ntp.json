@@ -1,0 +1,11 @@
+{
+    "canonical": "historical-ntp",
+    "aliases": {
+        "scancode-licensedb": [
+            "Historical Notice - NTP",
+            "LicenseRef-scancode-historical-ntp"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

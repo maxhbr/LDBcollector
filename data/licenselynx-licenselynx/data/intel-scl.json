@@ -1,0 +1,11 @@
+{
+    "canonical": "intel-scl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel Source Code License Agreement",
+            "LicenseRef-scancode-intel-scl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

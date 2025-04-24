@@ -1,0 +1,12 @@
+{
+    "canonical": "sata",
+    "aliases": {
+        "scancode-licensedb": [
+            "Star And Thank Author License",
+            "SATA License",
+            "LicenseRef-scancode-sata"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

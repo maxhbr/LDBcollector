@@ -1,0 +1,14 @@
+{
+    "canonical": "PS-or-PDF-font-exception-20170817",
+    "aliases": {
+        "spdx": [
+            "PS/PDF font exception (2017-08-17)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "PS-or-PDF-font-exception-20170817",
+            "ps-or-pdf-font-exception-20170817"
+        ]
+    },
+    "src": "spdx"
+}

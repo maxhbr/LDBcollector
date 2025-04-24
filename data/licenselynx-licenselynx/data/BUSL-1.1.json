@@ -1,0 +1,14 @@
+{
+    "canonical": "BUSL-1.1",
+    "aliases": {
+        "spdx": [
+            "Business Source License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bsl-1.1",
+            "LicenseRef-scancode-bsl-1.1"
+        ]
+    },
+    "src": "spdx"
+}

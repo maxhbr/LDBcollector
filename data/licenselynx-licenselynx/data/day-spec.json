@@ -1,0 +1,11 @@
+{
+    "canonical": "day-spec",
+    "aliases": {
+        "scancode-licensedb": [
+            "Day Specification License",
+            "LicenseRef-scancode-day-spec"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

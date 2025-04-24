@@ -1,0 +1,11 @@
+{
+    "canonical": "binary-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Binary-Only Linux Firmware License",
+            "LicenseRef-scancode-binary-linux-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

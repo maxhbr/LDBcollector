@@ -1,0 +1,15 @@
+{
+    "canonical": "Aladdin",
+    "aliases": {
+        "spdx": [
+            "Aladdin Free Public License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Aladdin Free Public License v8",
+            "afpl-8.0",
+            "Aladdin FPL v8"
+        ]
+    },
+    "src": "spdx"
+}

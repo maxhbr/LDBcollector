@@ -1,0 +1,11 @@
+{
+    "canonical": "ogc-document-2020",
+    "aliases": {
+        "scancode-licensedb": [
+            "OGC Document Notice 2020",
+            "LicenseRef-scancode-ogc-document-2020"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

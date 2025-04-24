@@ -1,0 +1,12 @@
+{
+    "canonical": "java-app-stub",
+    "aliases": {
+        "scancode-licensedb": [
+            "Java App Stub License",
+            "Java Application Stub Binary Module License",
+            "LicenseRef-scancode-java-app-stub"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

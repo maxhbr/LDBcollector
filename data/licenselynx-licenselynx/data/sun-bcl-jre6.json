@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-bcl-jre6",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL JRE 6",
+            "LicenseRef-scancode-sun-bcl-jre6"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

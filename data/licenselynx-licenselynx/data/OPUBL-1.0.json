@@ -1,0 +1,15 @@
+{
+    "canonical": "OPUBL-1.0",
+    "aliases": {
+        "spdx": [
+            "Open Publication License v1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Open Publication License 1.0",
+            "openpub",
+            "LicenseRef-scancode-openpub"
+        ]
+    },
+    "src": "spdx"
+}

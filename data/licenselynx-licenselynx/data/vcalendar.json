@@ -1,0 +1,11 @@
+{
+    "canonical": "vcalendar",
+    "aliases": {
+        "scancode-licensedb": [
+            "VCalendar License",
+            "LicenseRef-scancode-vcalendar"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

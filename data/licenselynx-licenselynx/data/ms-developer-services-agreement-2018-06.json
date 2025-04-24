@@ -1,0 +1,13 @@
+{
+    "canonical": "ms-developer-services-agreement-2018-06",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Developer Services Agreement 2018-06",
+            "MS Developer Services Agreement 2018-06",
+            "LicenseRef-scancode-ms-developer-services-agreement-2018-06",
+            "LicenseRef-scancode-ms-dev-services-2018-06"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

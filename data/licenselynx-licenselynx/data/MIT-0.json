@@ -1,0 +1,15 @@
+{
+    "canonical": "MIT-0",
+    "aliases": {
+        "spdx": [
+            "MIT No Attribution"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-ekioh",
+            "MIT-0-Clause",
+            "mit-0"
+        ]
+    },
+    "src": "spdx"
+}

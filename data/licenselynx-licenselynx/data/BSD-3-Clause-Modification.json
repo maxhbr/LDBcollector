@@ -1,0 +1,15 @@
+{
+    "canonical": "BSD-3-Clause-Modification",
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause Modification"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-repoze",
+            "repoze",
+            "Repoze License"
+        ]
+    },
+    "src": "spdx"
+}

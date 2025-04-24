@@ -1,0 +1,14 @@
+{
+    "canonical": "OpenSSL",
+    "aliases": {
+        "spdx": [
+            "OpenSSL License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "openssl-ssleay",
+            "OpenSSL/SSLeay License"
+        ]
+    },
+    "src": "spdx"
+}

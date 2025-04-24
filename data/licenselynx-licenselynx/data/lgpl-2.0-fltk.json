@@ -1,0 +1,10 @@
+{
+    "canonical": "lgpl-2.0-fltk",
+    "aliases": {
+        "scancode-licensedb": [
+            "LGPL 2.0 with FLTK exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

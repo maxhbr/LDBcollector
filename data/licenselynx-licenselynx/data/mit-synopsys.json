@@ -1,0 +1,11 @@
+{
+    "canonical": "mit-synopsys",
+    "aliases": {
+        "scancode-licensedb": [
+            "MIT Synopsys License",
+            "LicenseRef-scancode-mit-synopsys"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

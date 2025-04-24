@@ -1,0 +1,11 @@
+{
+    "canonical": "biosl-4.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "BIOSL v4",
+            "LicenseRef-scancode-biosl-4.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

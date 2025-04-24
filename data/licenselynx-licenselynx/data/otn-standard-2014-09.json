@@ -1,0 +1,12 @@
+{
+    "canonical": "otn-standard-2014-09",
+    "aliases": {
+        "scancode-licensedb": [
+            "OTN License 2014-09",
+            "Oracle Technology Network License Agreement 2014-09",
+            "LicenseRef-scancode-otn-standard-2014-09"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "tumbolia",
+    "aliases": {
+        "scancode-licensedb": [
+            "Tumbolia Public License",
+            "LicenseRef-scancode-tumbolia"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

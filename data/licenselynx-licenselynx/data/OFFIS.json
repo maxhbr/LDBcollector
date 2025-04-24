@@ -1,0 +1,13 @@
+{
+    "canonical": "OFFIS",
+    "aliases": {
+        "spdx": [
+            "OFFIS License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "offis"
+        ]
+    },
+    "src": "spdx"
+}

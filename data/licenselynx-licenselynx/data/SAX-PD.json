@@ -1,0 +1,15 @@
+{
+    "canonical": "SAX-PD",
+    "aliases": {
+        "spdx": [
+            "Sax Public Domain Notice"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "sax-pd",
+            "SAX Public Domain Notice",
+            "SAX-PD"
+        ]
+    },
+    "src": "spdx"
+}

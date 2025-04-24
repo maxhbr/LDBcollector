@@ -1,0 +1,13 @@
+{
+    "canonical": "PCRE2-exception",
+    "aliases": {
+        "spdx": [
+            "PCRE2 exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "pcre2-exception"
+        ]
+    },
+    "src": "spdx"
+}

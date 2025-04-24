@@ -1,0 +1,11 @@
+{
+    "canonical": "pdf-creator-pilot",
+    "aliases": {
+        "scancode-licensedb": [
+            "PDF Creator Pilot License Agreement",
+            "LicenseRef-scancode-pdf-creator-pilot"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

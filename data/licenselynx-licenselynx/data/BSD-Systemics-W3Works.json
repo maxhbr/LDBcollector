@@ -1,0 +1,14 @@
+{
+    "canonical": "BSD-Systemics-W3Works",
+    "aliases": {
+        "spdx": [
+            "Systemics W3Works BSD variant license"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Systemics W3Works License",
+            "bsd-systemics-w3works"
+        ]
+    },
+    "src": "spdx"
+}

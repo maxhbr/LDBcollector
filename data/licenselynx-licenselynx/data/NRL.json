@@ -1,0 +1,13 @@
+{
+    "canonical": "NRL",
+    "aliases": {
+        "spdx": [
+            "NRL License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "nrl"
+        ]
+    },
+    "src": "spdx"
+}

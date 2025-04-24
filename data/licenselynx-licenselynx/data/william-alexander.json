@@ -1,0 +1,11 @@
+{
+    "canonical": "william-alexander",
+    "aliases": {
+        "scancode-licensedb": [
+            "William Alexander License",
+            "LicenseRef-scancode-william-alexander"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

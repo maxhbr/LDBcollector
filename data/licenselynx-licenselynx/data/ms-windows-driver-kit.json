@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-windows-driver-kit",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Windows Driver Kit License",
+            "MS Windows Driver Kit License",
+            "LicenseRef-scancode-ms-windows-driver-kit"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

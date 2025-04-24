@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-bison-2.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 or later with Bison 2.2 exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

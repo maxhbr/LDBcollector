@@ -1,0 +1,14 @@
+{
+    "canonical": "curl",
+    "aliases": {
+        "spdx": [
+            "curl License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "curl",
+            "cURL License"
+        ]
+    },
+    "src": "spdx"
+}

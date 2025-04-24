@@ -1,0 +1,12 @@
+{
+    "canonical": "rh-standard-eula-2019",
+    "aliases": {
+        "scancode-licensedb": [
+            "Red Hat Standard EULA",
+            "Red Hat Standard End User License Agreement",
+            "LicenseRef-scancode-rh-standard-eula-2019"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

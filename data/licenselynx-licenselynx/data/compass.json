@@ -1,0 +1,11 @@
+{
+    "canonical": "compass",
+    "aliases": {
+        "scancode-licensedb": [
+            "Compass License",
+            "LicenseRef-scancode-compass"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

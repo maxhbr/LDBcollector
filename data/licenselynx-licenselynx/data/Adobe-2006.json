@@ -1,0 +1,14 @@
+{
+    "canonical": "Adobe-2006",
+    "aliases": {
+        "spdx": [
+            "Adobe Systems Incorporated Source Code License Agreement"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Adobe Source Code License 2006",
+            "adobe-scl"
+        ]
+    },
+    "src": "spdx"
+}

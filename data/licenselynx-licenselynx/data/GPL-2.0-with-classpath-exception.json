@@ -1,0 +1,14 @@
+{
+    "canonical": "GPL-2.0-with-classpath-exception",
+    "aliases": {
+        "spdx": [
+            "GNU General Public License v2.0 w/Classpath exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gpl-2.0-classpath",
+            "GPL 2.0 with classpath exception"
+        ]
+    },
+    "src": "spdx"
+}

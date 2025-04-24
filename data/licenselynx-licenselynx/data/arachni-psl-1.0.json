@@ -1,0 +1,12 @@
+{
+    "canonical": "arachni-psl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Arachni PSL v1.0",
+            "Arachni Public Source License v1.0",
+            "LicenseRef-scancode-arachni-psl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

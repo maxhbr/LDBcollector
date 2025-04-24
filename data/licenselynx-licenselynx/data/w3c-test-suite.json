@@ -1,0 +1,12 @@
+{
+    "canonical": "w3c-test-suite",
+    "aliases": {
+        "scancode-licensedb": [
+            "W3C Test Suite Licence",
+            "W3C Test Suite",
+            "LicenseRef-scancode-w3c-test-suite"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

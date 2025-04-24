@@ -1,0 +1,12 @@
+{
+    "canonical": "kde-accepted-lgpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "KDE Accepted LGPL",
+            "LicenseRef-KDE-Accepted-LGPL",
+            "LicenseRef-scancode-kde-accepted-lgpl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

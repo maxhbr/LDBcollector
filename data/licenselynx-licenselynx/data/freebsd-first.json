@@ -1,0 +1,11 @@
+{
+    "canonical": "freebsd-first",
+    "aliases": {
+        "scancode-licensedb": [
+            "FreeBSD unmodified first lines License",
+            "LicenseRef-scancode-freebsd-first"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "utopia",
+    "aliases": {
+        "scancode-licensedb": [
+            "License to TeX Users Group for the Utopia Typeface",
+            "Utopia Typeface License",
+            "LicenseRef-scancode-utopia"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

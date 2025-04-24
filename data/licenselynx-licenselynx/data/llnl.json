@@ -1,0 +1,11 @@
+{
+    "canonical": "llnl",
+    "aliases": {
+        "scancode-licensedb": [
+            "LLNL",
+            "LicenseRef-scancode-llnl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

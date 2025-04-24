@@ -1,0 +1,11 @@
+{
+    "canonical": "broadleaf-fair-use",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadleaf Fair Use License Agreement v1.0",
+            "LicenseRef-scancode-broadleaf-fair-use"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "openssl-exception-agpl-3.0-monit",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-openssl-exception-agpl-3.0-monit",
+            "OpenSSL exception to AGPL 3.0 - Monit style",
+            "LicenseRef-scancode-openssl-exception-agpl3.0monit"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

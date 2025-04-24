@@ -1,0 +1,14 @@
+{
+    "canonical": "DRL-1.0",
+    "aliases": {
+        "spdx": [
+            "Detection Rule License 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "drl-1.0",
+            "DRL-1.0"
+        ]
+    },
+    "src": "spdx"
+}

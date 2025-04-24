@@ -1,0 +1,14 @@
+{
+    "canonical": "TORQUE-1.1",
+    "aliases": {
+        "spdx": [
+            "TORQUE v2.5+ Software License v1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "torque-1.1",
+            "TORQUE 1.1"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "SMLNJ",
+    "aliases": {
+        "spdx": [
+            "Standard ML of New Jersey License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "StandardML-NJ",
+            "Standard ML of New Jersey",
+            "standard-ml-nj"
+        ]
+    },
+    "src": "spdx"
+}

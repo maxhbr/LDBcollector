@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-libgit2",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with libgit2 exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

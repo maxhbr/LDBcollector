@@ -1,0 +1,11 @@
+{
+    "canonical": "winzip-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "WinZip EULA",
+            "LicenseRef-scancode-winzip-eula"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-sdk-spec-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun SDK Specification 1.1",
+            "LicenseRef-scancode-sun-sdk-spec-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

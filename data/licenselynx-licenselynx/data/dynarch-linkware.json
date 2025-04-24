@@ -1,0 +1,11 @@
+{
+    "canonical": "dynarch-linkware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dynarch Linkware Agreement",
+            "LicenseRef-scancode-dynarch-linkware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

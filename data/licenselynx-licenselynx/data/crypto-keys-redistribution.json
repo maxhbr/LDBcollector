@@ -1,0 +1,11 @@
+{
+    "canonical": "crypto-keys-redistribution",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cryptographic keys redistribution",
+            "LicenseRef-scancode-crypto-keys-redistribution"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

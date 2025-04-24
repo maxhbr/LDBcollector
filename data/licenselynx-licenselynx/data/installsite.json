@@ -1,0 +1,11 @@
+{
+    "canonical": "installsite",
+    "aliases": {
+        "scancode-licensedb": [
+            "InstallSite License Agreement",
+            "LicenseRef-scancode-installsite"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

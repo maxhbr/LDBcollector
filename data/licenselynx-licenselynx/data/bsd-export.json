@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-export",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-Export",
+            "LicenseRef-scancode-bsd-export"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "com-oreilly-servlet",
+    "aliases": {
+        "scancode-licensedb": [
+            "com.oreilly.servlet License",
+            "LicenseRef-scancode-com-oreilly-servlet"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

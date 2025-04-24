@@ -1,0 +1,13 @@
+{
+    "canonical": "xkeyboard-config-Zinoviev",
+    "aliases": {
+        "spdx": [
+            "xkeyboard-config Zinoviev License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "xkeyboard-config-zinoviev"
+        ]
+    },
+    "src": "spdx"
+}

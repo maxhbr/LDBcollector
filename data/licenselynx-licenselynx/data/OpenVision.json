@@ -1,0 +1,13 @@
+{
+    "canonical": "OpenVision",
+    "aliases": {
+        "spdx": [
+            "OpenVision License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "openvision"
+        ]
+    },
+    "src": "spdx"
+}

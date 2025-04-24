@@ -1,0 +1,14 @@
+{
+    "canonical": "NCBI-PD",
+    "aliases": {
+        "spdx": [
+            "NCBI Public Domain Notice"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-ncbi",
+            "ncbi"
+        ]
+    },
+    "src": "spdx"
+}

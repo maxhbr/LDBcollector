@@ -1,0 +1,17 @@
+{
+    "canonical": "Apache-1.1",
+    "aliases": {
+        "spdx": [
+            "Apache License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "apache-1.1",
+            "Apache 1.1"
+        ],
+        "osi": [
+            "Apache Software License, Version 1.1"
+        ]
+    },
+    "src": "spdx"
+}

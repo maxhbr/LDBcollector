@@ -1,0 +1,12 @@
+{
+    "canonical": "qt-commercial-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Qt Commercial License v1.1",
+            "Qt for Application Development License Agreement v1.1",
+            "LicenseRef-scancode-qt-commercial-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "pivotal-tou",
+    "aliases": {
+        "scancode-licensedb": [
+            "Pivotal Software Terms of Use",
+            "LicenseRef-scancode-pivotal-tou"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

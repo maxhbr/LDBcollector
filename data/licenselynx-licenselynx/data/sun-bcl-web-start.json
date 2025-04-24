@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-bcl-web-start",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL Web Start",
+            "LicenseRef-scancode-sun-bcl-web-start"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

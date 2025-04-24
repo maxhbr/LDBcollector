@@ -1,0 +1,13 @@
+{
+    "canonical": "BSD-Source-Code",
+    "aliases": {
+        "spdx": [
+            "BSD Source Code Attribution"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bsd-source-code"
+        ]
+    },
+    "src": "spdx"
+}

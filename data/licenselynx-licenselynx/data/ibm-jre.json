@@ -1,0 +1,12 @@
+{
+    "canonical": "ibm-jre",
+    "aliases": {
+        "scancode-licensedb": [
+            "IBM JRE License",
+            "IBM Java Runtime Environment License",
+            "LicenseRef-scancode-ibm-jre"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

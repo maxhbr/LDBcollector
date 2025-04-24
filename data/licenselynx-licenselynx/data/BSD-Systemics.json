@@ -1,0 +1,13 @@
+{
+    "canonical": "BSD-Systemics",
+    "aliases": {
+        "spdx": [
+            "Systemics BSD variant license"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bsd-systemics"
+        ]
+    },
+    "src": "spdx"
+}

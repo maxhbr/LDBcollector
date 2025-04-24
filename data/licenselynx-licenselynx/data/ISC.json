@@ -1,0 +1,23 @@
+{
+    "canonical": "ISC",
+    "aliases": {
+        "spdx": [
+            "ISC License"
+        ],
+        "custom": [
+            "Internet Systems Consortium License",
+            "ISC License (Internet Systems Consortium)",
+            "Internet Systems Consortium Open Source License",
+            "ISC Open Source License",
+            "ISC License (Open Source)",
+            "ISC Open License"
+        ],
+        "scancode-licensedb": [
+            "isc"
+        ],
+        "osi": [
+            "ISC License (ISC)"
+        ]
+    },
+    "src": "spdx"
+}

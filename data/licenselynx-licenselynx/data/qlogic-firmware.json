@@ -1,0 +1,11 @@
+{
+    "canonical": "qlogic-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "QLogic Firmware License",
+            "LicenseRef-scancode-qlogic-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

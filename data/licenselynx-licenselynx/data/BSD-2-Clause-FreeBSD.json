@@ -1,0 +1,14 @@
+{
+    "canonical": "BSD-2-Clause-FreeBSD",
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause FreeBSD License"
+        ],
+        "scancode-licensedb": [
+            "BSD-2-Clause-FreeBSD",
+            "BSD-2-Clause-FreeBSD License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

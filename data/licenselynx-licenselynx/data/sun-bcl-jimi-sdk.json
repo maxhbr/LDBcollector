@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-bcl-jimi-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL JIMI SDK",
+            "LicenseRef-scancode-sun-bcl-jimi-sdk"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

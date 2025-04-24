@@ -1,0 +1,10 @@
+{
+    "canonical": "ttf2pt1",
+    "aliases": {
+        "scancode-licensedb": [
+            "TTF2PT1 Project License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

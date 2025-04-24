@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-3.0-font",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 3.0 or later with font exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

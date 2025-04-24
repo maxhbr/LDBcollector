@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-programsynthesis-7.22.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft ProgramSynthesis 7.22.0",
+            "MS ProgramSynthesis 7.22.0",
+            "LicenseRef-scancode-ms-programsynthesis-7.22.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

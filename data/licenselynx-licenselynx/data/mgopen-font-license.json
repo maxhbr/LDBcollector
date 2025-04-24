@@ -1,0 +1,11 @@
+{
+    "canonical": "mgopen-font-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "MgOpen Font License",
+            "LicenseRef-scancode-mgopen-font-license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

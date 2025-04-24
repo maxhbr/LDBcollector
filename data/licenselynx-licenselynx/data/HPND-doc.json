@@ -1,0 +1,14 @@
+{
+    "canonical": "HPND-doc",
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - documentation variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Historical documentation variant",
+            "hpnd-doc"
+        ]
+    },
+    "src": "spdx"
+}

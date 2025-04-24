@@ -1,0 +1,11 @@
+{
+    "canonical": "jamon",
+    "aliases": {
+        "scancode-licensedb": [
+            "JAMon License",
+            "LicenseRef-scancode-jamon"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

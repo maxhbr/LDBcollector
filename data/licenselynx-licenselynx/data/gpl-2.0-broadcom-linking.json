@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-broadcom-linking",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with Broadcom Linking Exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

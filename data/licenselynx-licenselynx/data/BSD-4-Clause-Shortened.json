@@ -1,0 +1,14 @@
+{
+    "canonical": "BSD-4-Clause-Shortened",
+    "aliases": {
+        "spdx": [
+            "BSD 4 Clause Shortened"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bsd-4-clause-shortened",
+            "BSD-4-Clause-Shortened"
+        ]
+    },
+    "src": "spdx"
+}

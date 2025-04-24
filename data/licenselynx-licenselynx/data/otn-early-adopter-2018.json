@@ -1,0 +1,12 @@
+{
+    "canonical": "otn-early-adopter-2018",
+    "aliases": {
+        "scancode-licensedb": [
+            "OTN Early Adopter Development License 2018",
+            "OTN Early Adopter 2018",
+            "LicenseRef-scancode-otn-early-adopter-2018"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

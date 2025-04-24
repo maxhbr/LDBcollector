@@ -1,0 +1,11 @@
+{
+    "canonical": "netcomponents",
+    "aliases": {
+        "scancode-licensedb": [
+            "NetComponents License",
+            "LicenseRef-scancode-netcomponents"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

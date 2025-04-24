@@ -1,0 +1,12 @@
+{
+    "canonical": "ccg-research-academic",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cognitive Computation Group Research License",
+            "CogComp Research and Academic Use License",
+            "LicenseRef-scancode-ccg-research-academic"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

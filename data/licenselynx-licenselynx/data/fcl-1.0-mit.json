@@ -1,0 +1,12 @@
+{
+    "canonical": "fcl-1.0-mit",
+    "aliases": {
+        "scancode-licensedb": [
+            "FCL-1.0-MIT",
+            "LicenseRef-scancode-fcl-1.0-mit",
+            "Fair Core License, Version 1.0, MIT Future License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

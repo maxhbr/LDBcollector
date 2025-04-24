@@ -1,0 +1,11 @@
+{
+    "canonical": "autoopts-exception-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "AutoOpts exception to GPL 2.0 or later",
+            "LicenseRef-scancode-autoopts-exception-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

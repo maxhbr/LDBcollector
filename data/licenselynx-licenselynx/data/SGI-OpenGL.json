@@ -1,0 +1,15 @@
+{
+    "canonical": "SGI-OpenGL",
+    "aliases": {
+        "spdx": [
+            "SGI OpenGL License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "x11-opengl",
+            "LicenseRef-scancode-x11-opengl",
+            "X11-Style (OpenGL)"
+        ]
+    },
+    "src": "spdx"
+}

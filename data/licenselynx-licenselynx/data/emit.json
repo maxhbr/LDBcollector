@@ -1,0 +1,11 @@
+{
+    "canonical": "emit",
+    "aliases": {
+        "scancode-licensedb": [
+            "Enhanced MIT License",
+            "LicenseRef-scancode-emit"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

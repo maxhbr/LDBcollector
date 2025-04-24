@@ -1,0 +1,11 @@
+{
+    "canonical": "aptana-exception-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Aptana exception to GPL 3.0",
+            "LicenseRef-scancode-aptana-exception-3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

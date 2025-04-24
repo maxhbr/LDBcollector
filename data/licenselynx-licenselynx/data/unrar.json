@@ -1,0 +1,11 @@
+{
+    "canonical": "unrar",
+    "aliases": {
+        "scancode-licensedb": [
+            "UnRar License",
+            "LicenseRef-scancode-unrar"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "wxWindows",
+    "aliases": {
+        "spdx": [
+            "wxWindows Library License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "wxWindows Library Licence 3.1",
+            "wxwindows"
+        ]
+    },
+    "src": "spdx"
+}

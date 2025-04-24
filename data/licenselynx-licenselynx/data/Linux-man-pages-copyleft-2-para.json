@@ -1,0 +1,14 @@
+{
+    "canonical": "Linux-man-pages-copyleft-2-para",
+    "aliases": {
+        "spdx": [
+            "Linux man-pages Copyleft - 2 paragraphs"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Linux man-pages 2 para",
+            "linux-man-pages-2-para"
+        ]
+    },
+    "src": "spdx"
+}

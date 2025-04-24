@@ -1,0 +1,14 @@
+{
+    "canonical": "Graphics-Gems",
+    "aliases": {
+        "spdx": [
+            "Graphics Gems License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-graphics-gems",
+            "graphics-gems"
+        ]
+    },
+    "src": "spdx"
+}

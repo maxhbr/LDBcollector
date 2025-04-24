@@ -1,0 +1,13 @@
+{
+    "canonical": "McPhee-slideshow",
+    "aliases": {
+        "spdx": [
+            "McPhee Slideshow License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mcphee-slideshow"
+        ]
+    },
+    "src": "spdx"
+}

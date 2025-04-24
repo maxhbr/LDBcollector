@@ -1,0 +1,11 @@
+{
+    "canonical": "ecosrh-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cygnus eCos Public License 1.0",
+            "LicenseRef-scancode-ecosrh-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

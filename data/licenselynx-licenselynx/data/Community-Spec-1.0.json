@@ -1,0 +1,15 @@
+{
+    "canonical": "Community-Spec-1.0",
+    "aliases": {
+        "spdx": [
+            "Community Specification License 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "csl-1.0",
+            "CSL-1.0",
+            "LicenseRef-scancode-csl-1.0"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-javascript",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with Javascript exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

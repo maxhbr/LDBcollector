@@ -1,0 +1,12 @@
+{
+    "canonical": "nysl-0.9982-jp",
+    "aliases": {
+        "scancode-licensedb": [
+            "NYSL 0.9982 Japanese",
+            "NYSL 0.9982 JP",
+            "LicenseRef-scancode-nysl-0.9982-jp"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

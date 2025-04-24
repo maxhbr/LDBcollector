@@ -1,0 +1,13 @@
+{
+    "canonical": "MMIXware",
+    "aliases": {
+        "spdx": [
+            "MMIXware License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mmixware"
+        ]
+    },
+    "src": "spdx"
+}

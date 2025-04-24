@@ -1,0 +1,15 @@
+{
+    "canonical": "Autoconf-exception-generic",
+    "aliases": {
+        "spdx": [
+            "Autoconf generic exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "autoconf-simple-exception-2.0",
+            "LicenseRef-scancode-autoconf-simple-exception-2.0",
+            "Autoconf simple exception to GPL-2.0"
+        ]
+    },
+    "src": "spdx"
+}

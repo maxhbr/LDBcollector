@@ -1,0 +1,12 @@
+{
+    "canonical": "pdl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "PDL-1.0",
+            "Public Documentation License Version 1.0",
+            "LicenseRef-scancode-pdl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

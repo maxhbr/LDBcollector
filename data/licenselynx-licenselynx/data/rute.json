@@ -1,0 +1,12 @@
+{
+    "canonical": "rute",
+    "aliases": {
+        "scancode-licensedb": [
+            "Rute Users Tutorial and Exposition License 0.8.0",
+            "Rute Users Tutorial and Exposition License v0.8.0",
+            "LicenseRef-scancode-rute"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

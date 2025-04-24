@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-entity-framework-4.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Entity Framework 4.1 License",
+            "Microsoft Entity Framework 4.1 License",
+            "LicenseRef-scancode-ms-entity-framework-4.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "gSOAP-1.3b",
+    "aliases": {
+        "spdx": [
+            "gSOAP Public License v1.3b"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gsoap-1.3b"
+        ]
+    },
+    "src": "spdx"
+}

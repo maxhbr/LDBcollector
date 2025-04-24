@@ -1,0 +1,10 @@
+{
+    "canonical": "apache-due-credit",
+    "aliases": {
+        "scancode-licensedb": [
+            "Apache Due Credit Variant"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

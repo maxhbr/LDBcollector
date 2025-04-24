@@ -1,0 +1,11 @@
+{
+    "canonical": "owtchart",
+    "aliases": {
+        "scancode-licensedb": [
+            "OWTChart License",
+            "LicenseRef-scancode-owtchart"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

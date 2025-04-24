@@ -1,0 +1,14 @@
+{
+    "canonical": "psutils",
+    "aliases": {
+        "spdx": [
+            "psutils License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "psutils",
+            "PS Utilities License"
+        ]
+    },
+    "src": "spdx"
+}

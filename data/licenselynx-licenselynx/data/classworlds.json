@@ -1,0 +1,10 @@
+{
+    "canonical": "classworlds",
+    "aliases": {
+        "scancode-licensedb": [
+            "Classworlds License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

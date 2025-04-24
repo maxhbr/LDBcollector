@@ -1,0 +1,12 @@
+{
+    "canonical": "us-govt-public-domain",
+    "aliases": {
+        "scancode-licensedb": [
+            "United States Government Public Domain",
+            "US Government Public Domain",
+            "LicenseRef-scancode-us-govt-public-domain"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

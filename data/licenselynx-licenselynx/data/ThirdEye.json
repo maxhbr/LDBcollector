@@ -1,0 +1,13 @@
+{
+    "canonical": "ThirdEye",
+    "aliases": {
+        "spdx": [
+            "ThirdEye License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "thirdeye"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "rh-ubi-eula-2019",
+    "aliases": {
+        "scancode-licensedb": [
+            "Red Hat UBI EULA",
+            "Red Hat Universal Base Image EULA",
+            "LicenseRef-scancode-rh-ubi-eula-2019"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

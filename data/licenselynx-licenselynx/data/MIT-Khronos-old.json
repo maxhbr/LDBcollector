@@ -1,0 +1,13 @@
+{
+    "canonical": "MIT-Khronos-old",
+    "aliases": {
+        "spdx": [
+            "MIT Khronos - old variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mit-khronos-old"
+        ]
+    },
+    "src": "spdx"
+}

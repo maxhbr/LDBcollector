@@ -1,0 +1,11 @@
+{
+    "canonical": "intel-royalty-free",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel Royalty Free License",
+            "LicenseRef-scancode-intel-royalty-free"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

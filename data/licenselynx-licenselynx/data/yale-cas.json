@@ -1,0 +1,11 @@
+{
+    "canonical": "yale-cas",
+    "aliases": {
+        "scancode-licensedb": [
+            "Yale CAS License",
+            "LicenseRef-scancode-yale-cas"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

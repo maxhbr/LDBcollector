@@ -1,0 +1,10 @@
+{
+    "canonical": "etalab-2.0-fr",
+    "aliases": {
+        "scancode-licensedb": [
+            "Etalab Open License 2.0 French"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "examdiff",
+    "aliases": {
+        "scancode-licensedb": [
+            "ExamDiff License",
+            "LicenseRef-scancode-examdiff"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

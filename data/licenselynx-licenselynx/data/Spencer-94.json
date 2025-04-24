@@ -1,0 +1,14 @@
+{
+    "canonical": "Spencer-94",
+    "aliases": {
+        "spdx": [
+            "Spencer License 94"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "hs-regexp",
+            "Henry Spencer Regexp License"
+        ]
+    },
+    "src": "spdx"
+}

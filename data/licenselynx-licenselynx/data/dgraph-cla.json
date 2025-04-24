@@ -1,0 +1,11 @@
+{
+    "canonical": "dgraph-cla",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dgraph Community License Agreement",
+            "LicenseRef-scancode-dgraph-cla"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

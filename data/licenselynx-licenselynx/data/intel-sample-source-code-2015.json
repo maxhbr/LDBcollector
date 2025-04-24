@@ -1,0 +1,12 @@
+{
+    "canonical": "intel-sample-source-code-2015",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel Sample Source Code 2015",
+            "Intel Sample Source Code License Agreement 2015",
+            "LicenseRef-scancode-intel-sample-source-code-2015"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

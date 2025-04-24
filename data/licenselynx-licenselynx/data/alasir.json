@@ -1,0 +1,12 @@
+{
+    "canonical": "alasir",
+    "aliases": {
+        "scancode-licensedb": [
+            "Alasir Licence",
+            "The Alasir Licence",
+            "LicenseRef-scancode-alasir"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

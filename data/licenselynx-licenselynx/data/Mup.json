@@ -1,0 +1,13 @@
+{
+    "canonical": "Mup",
+    "aliases": {
+        "spdx": [
+            "Mup License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mup"
+        ]
+    },
+    "src": "spdx"
+}

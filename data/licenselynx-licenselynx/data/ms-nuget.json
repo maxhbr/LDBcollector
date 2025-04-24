@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-nuget",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Nuget License",
+            "MS Nuget",
+            "LicenseRef-scancode-ms-nuget"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

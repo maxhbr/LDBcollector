@@ -1,0 +1,11 @@
+{
+    "canonical": "cryptopp",
+    "aliases": {
+        "scancode-licensedb": [
+            "Crypto++ License",
+            "LicenseRef-scancode-cryptopp"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

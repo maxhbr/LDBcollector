@@ -1,0 +1,29 @@
+{
+    "canonical": "0BSD",
+    "aliases": {
+        "spdx": [
+            "BSD Zero Clause License"
+        ],
+        "custom": [
+            "0BSD License",
+            "BSD Zero Clause",
+            "BSD Zero-Clause",
+            "BSD Zero-Clause License",
+            "BSD-0-Clause",
+            "BSD 0-Clause",
+            "Zero-Clause BSD",
+            "Zero-Clause BSD License",
+            "Zero Clause BSD",
+            "Zero Clause BSD License",
+            "ZeroBSD",
+            "ZeroBSD License",
+            "BSD0",
+            "BSD Zero",
+            "Zero-Clause BSD License (0BSD)"
+        ],
+        "scancode-licensedb": [
+            "bsd-zero"
+        ]
+    },
+    "src": "spdx"
+}

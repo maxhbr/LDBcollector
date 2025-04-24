@@ -1,0 +1,11 @@
+{
+    "canonical": "greg-roelofs",
+    "aliases": {
+        "scancode-licensedb": [
+            "Greg Roelofs License",
+            "LicenseRef-scancode-greg-roelofs"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

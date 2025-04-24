@@ -1,0 +1,12 @@
+{
+    "canonical": "uofu-rfpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "UURF Public License",
+            "University of Utah Research Foundation Public License",
+            "LicenseRef-scancode-uofu-rfpl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

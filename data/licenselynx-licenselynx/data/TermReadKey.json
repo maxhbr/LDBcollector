@@ -1,0 +1,15 @@
+{
+    "canonical": "TermReadKey",
+    "aliases": {
+        "spdx": [
+            "TermReadKey License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-term-readkey",
+            "Term Readkey License",
+            "term-readkey"
+        ]
+    },
+    "src": "spdx"
+}

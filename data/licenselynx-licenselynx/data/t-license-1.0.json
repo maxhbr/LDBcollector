@@ -1,0 +1,11 @@
+{
+    "canonical": "t-license-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "T-License 1.0",
+            "LicenseRef-scancode-t-license-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

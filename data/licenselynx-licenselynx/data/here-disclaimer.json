@@ -1,0 +1,11 @@
+{
+    "canonical": "here-disclaimer",
+    "aliases": {
+        "scancode-licensedb": [
+            "HERE Disclaimer",
+            "LicenseRef-scancode-here-disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

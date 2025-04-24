@@ -1,0 +1,17 @@
+{
+    "canonical": "MS-RL",
+    "aliases": {
+        "spdx": [
+            "Microsoft Reciprocal License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "MS-RL",
+            "ms-rl"
+        ],
+        "osi": [
+            "Microsoft Reciprocal License (MS-RL)"
+        ]
+    },
+    "src": "spdx"
+}

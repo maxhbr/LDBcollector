@@ -1,0 +1,12 @@
+{
+    "canonical": "google-corporate-cla",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google Corporate CLA",
+            "Google Software Grant and Corporate Contributor License Agreement",
+            "LicenseRef-scancode-google-corporate-cla"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

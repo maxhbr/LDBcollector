@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-asp-net-web-pages-2",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS ASP.NET Web Pages 2 License",
+            "Microsoft ASP.NET Web Pages 2 License",
+            "LicenseRef-scancode-ms-asp-net-web-pages-2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

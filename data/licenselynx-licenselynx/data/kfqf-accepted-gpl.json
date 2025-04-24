@@ -1,0 +1,12 @@
+{
+    "canonical": "kfqf-accepted-gpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-KFQF-Accepted-GPL",
+            "KFQF Accepted GPL",
+            "LicenseRef-scancode-kfqf-accepted-gpl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

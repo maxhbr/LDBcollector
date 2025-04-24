@@ -1,0 +1,12 @@
+{
+    "canonical": "nist-nvd-api-tou",
+    "aliases": {
+        "scancode-licensedb": [
+            "NIST NVD API TOU",
+            "NIST NVD API Terms of Use",
+            "LicenseRef-scancode-nist-nvd-api-tou"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "digia-qt-preview",
+    "aliases": {
+        "scancode-licensedb": [
+            "Digia Qt Technology Preview License Agreement 2.4",
+            "Digia Qt Preview Agreement 2.4",
+            "LicenseRef-scancode-digia-qt-preview"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

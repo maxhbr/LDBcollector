@@ -1,0 +1,11 @@
+{
+    "canonical": "cadence-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cadence Linux Firmware License",
+            "LicenseRef-scancode-cadence-linux-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

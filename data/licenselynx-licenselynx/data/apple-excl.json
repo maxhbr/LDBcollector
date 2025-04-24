@@ -1,0 +1,11 @@
+{
+    "canonical": "apple-excl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Apple Example Code License",
+            "LicenseRef-scancode-apple-excl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

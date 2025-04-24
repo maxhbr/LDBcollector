@@ -1,0 +1,12 @@
+{
+    "canonical": "wthpl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "WTHPL 1.0",
+            "DO WHAT THE HELL YOU WANT TO PUBLIC LICENSE 1.0",
+            "LicenseRef-scancode-wthpl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

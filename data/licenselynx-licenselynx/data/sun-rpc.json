@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-rpc",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun RPC License",
+            "LicenseRef-scancode-sun-rpc"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

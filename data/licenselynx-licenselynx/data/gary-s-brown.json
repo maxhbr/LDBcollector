@@ -1,0 +1,11 @@
+{
+    "canonical": "gary-s-brown",
+    "aliases": {
+        "scancode-licensedb": [
+            "Gary S. Brown License",
+            "LicenseRef-scancode-gary-s-brown"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

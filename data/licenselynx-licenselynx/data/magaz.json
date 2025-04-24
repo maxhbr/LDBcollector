@@ -1,0 +1,13 @@
+{
+    "canonical": "magaz",
+    "aliases": {
+        "spdx": [
+            "magaz License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "magaz"
+        ]
+    },
+    "src": "spdx"
+}

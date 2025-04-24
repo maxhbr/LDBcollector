@@ -1,0 +1,33 @@
+{
+    "canonical": "MPL-1.1",
+    "aliases": {
+        "spdx": [
+            "Mozilla Public License 1.1"
+        ],
+        "custom": [
+            "Mozilla Public License v1.1",
+            "MPL v1.1",
+            "MPL 1.1 License",
+            "MPL v1.1 License",
+            "Mozilla Public License 1.1 (MPL)",
+            "MPL (1.1)",
+            "MPL-1.1 License",
+            "MPL 1.1 (Mozilla)",
+            "MPL 1.1 (Open Source)",
+            "Mozilla Public License (1.1)",
+            "Mozilla Public License (MPL 1.1)",
+            "Mozilla License 1.1",
+            "MPL 1.1 Open Source License",
+            "MPL 1.1 (Open Source License)",
+            "Mozilla Public License v1.1 (MPL)"
+        ],
+        "scancode-licensedb": [
+            "mpl-1.1",
+            "MPL 1.1"
+        ],
+        "osi": [
+            "Mozilla Public License, Version 1.1"
+        ]
+    },
+    "src": "spdx"
+}

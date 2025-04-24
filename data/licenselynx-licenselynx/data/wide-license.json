@@ -1,0 +1,11 @@
+{
+    "canonical": "wide-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "WIDE License",
+            "LicenseRef-scancode-wide-license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

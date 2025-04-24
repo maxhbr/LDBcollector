@@ -1,0 +1,12 @@
+{
+    "canonical": "gradle-enterprise-sla-2022-11-08",
+    "aliases": {
+        "scancode-licensedb": [
+            "Gradle Enterprise SLA 2022-",
+            "Gradle Enterprise Software License Agreement 2022-11-08",
+            "LicenseRef-scancode-gradle-enterprise-sla-2022-11-"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

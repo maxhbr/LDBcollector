@@ -1,0 +1,13 @@
+{
+    "canonical": "CFITSIO",
+    "aliases": {
+        "spdx": [
+            "CFITSIO License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "cfitsio"
+        ]
+    },
+    "src": "spdx"
+}

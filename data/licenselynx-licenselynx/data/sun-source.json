@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-source",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun source code License",
+            "LicenseRef-scancode-sun-source"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

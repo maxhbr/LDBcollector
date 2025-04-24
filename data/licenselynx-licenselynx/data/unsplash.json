@@ -1,0 +1,11 @@
+{
+    "canonical": "unsplash",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unsplash License",
+            "LicenseRef-scancode-unsplash"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

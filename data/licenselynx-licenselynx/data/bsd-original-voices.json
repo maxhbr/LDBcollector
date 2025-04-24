@@ -1,0 +1,12 @@
+{
+    "canonical": "bsd-original-voices",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-4-Clause with Voices",
+            "BSD-4-Clause with Voices in Head",
+            "LicenseRef-scancode-bsd-original-voices"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

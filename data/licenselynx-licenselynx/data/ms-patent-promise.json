@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-patent-promise",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Patent Promise for .NET Libraries and Runtime Components",
+            "MS Patent Promise for .NET",
+            "LicenseRef-scancode-ms-patent-promise"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

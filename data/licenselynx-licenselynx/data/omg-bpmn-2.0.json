@@ -1,0 +1,12 @@
+{
+    "canonical": "omg-bpmn-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OMG Business Process Model and Notation 2.0",
+            "LicenseRef-scancode-omg-bpmn-2.0",
+            "OMG BPMN 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "aop-pd",
+    "aliases": {
+        "scancode-licensedb": [
+            "AOP Public Domain License",
+            "AOP-PD"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

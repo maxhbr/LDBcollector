@@ -1,0 +1,15 @@
+{
+    "canonical": "GFDL-1.2-or-later",
+    "aliases": {
+        "spdx": [
+            "GNU Free Documentation License v1.2 or later"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "GFDL-1.2+",
+            "GFDL 1.2 or later",
+            "gfdl-1.2-plus"
+        ]
+    },
+    "src": "spdx"
+}

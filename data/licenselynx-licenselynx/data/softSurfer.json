@@ -1,0 +1,14 @@
+{
+    "canonical": "softSurfer",
+    "aliases": {
+        "spdx": [
+            "softSurfer License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "softsurfer",
+            "LicenseRef-scancode-softsurfer"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "cisco-avch264-patent",
+    "aliases": {
+        "scancode-licensedb": [
+            "AVC/H.264 Patent Portfolio License",
+            "LicenseRef-scancode-cisco-avch264-patent"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

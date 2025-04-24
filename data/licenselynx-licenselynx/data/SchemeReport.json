@@ -1,0 +1,13 @@
+{
+    "canonical": "SchemeReport",
+    "aliases": {
+        "spdx": [
+            "Scheme Language Report License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "schemereport"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "Spencer-99",
+    "aliases": {
+        "spdx": [
+            "Spencer License 99"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "henry-spencer-1999",
+            "Henry Spencer License 1999"
+        ]
+    },
+    "src": "spdx"
+}

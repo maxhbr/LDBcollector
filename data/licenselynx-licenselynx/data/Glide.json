@@ -1,0 +1,15 @@
+{
+    "canonical": "Glide",
+    "aliases": {
+        "spdx": [
+            "3dfx Glide License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "3DFX GLIDE",
+            "glide",
+            "3DFX GLIDE Source Code General Public License"
+        ]
+    },
+    "src": "spdx"
+}

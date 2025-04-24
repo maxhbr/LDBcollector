@@ -1,0 +1,13 @@
+{
+    "canonical": "cockroachdb-use-grant-for-bsl-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-cockroachdb-use-grant-for-bsl-1.1",
+            "CockroachDB Additional Use Grant for BSL 1.1",
+            "CockroachDB Use Grant for BSL 1.1",
+            "LicenseRef-scancode-cockroachdb-use-grant-bsl-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

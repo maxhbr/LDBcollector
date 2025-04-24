@@ -1,0 +1,10 @@
+{
+    "canonical": "erlang-otp-linking-exception",
+    "aliases": {
+        "spdx": [
+            "Erlang/OTP Linking Exception"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

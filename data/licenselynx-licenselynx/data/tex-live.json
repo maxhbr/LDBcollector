@@ -1,0 +1,11 @@
+{
+    "canonical": "tex-live",
+    "aliases": {
+        "scancode-licensedb": [
+            "TeX Live License",
+            "LicenseRef-scancode-tex-live"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

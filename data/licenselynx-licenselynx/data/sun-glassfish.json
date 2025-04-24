@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-glassfish",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun GlassFish License",
+            "LicenseRef-scancode-sun-glassfish"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

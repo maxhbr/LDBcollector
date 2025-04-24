@@ -1,0 +1,14 @@
+{
+    "canonical": "OLDAP-1.4",
+    "aliases": {
+        "spdx": [
+            "Open LDAP Public License v1.4"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "openldap-1.4",
+            "OpenLDAP Public License 1.4"
+        ]
+    },
+    "src": "spdx"
+}

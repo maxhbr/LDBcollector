@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-lmbench",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with LMBench exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

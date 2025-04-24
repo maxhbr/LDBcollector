@@ -1,0 +1,34 @@
+{
+    "canonical": "OFL-1.1",
+    "aliases": {
+        "spdx": [
+            "SIL Open Font License 1.1"
+        ],
+        "custom": [
+            "Open Font License 1.1",
+            "Open Font License v1.1",
+            "OFL v1.1",
+            "OFL 1.1 License",
+            "OFL v1.1 License",
+            "Open Font License 1.1 (OFL)",
+            "OFL (1.1)",
+            "OFL-1.1 License",
+            "OFL 1.1 (Open Font)",
+            "OFL 1.1 (Open Font License)",
+            "Open Font License (1.1)",
+            "Open Font License (OFL 1.1)",
+            "OFL 1.1 Open Source License",
+            "OFL 1.1 (Open Source)",
+            "OFL License v1.1",
+            "OFL (Open Font License 1.1)"
+        ],
+        "scancode-licensedb": [
+            "ofl-1.1",
+            "OFL 1.1"
+        ],
+        "osi": [
+            "SIL Open Font License, Version 1.1"
+        ]
+    },
+    "src": "spdx"
+}

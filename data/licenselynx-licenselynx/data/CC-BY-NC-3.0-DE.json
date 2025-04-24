@@ -1,0 +1,14 @@
+{
+    "canonical": "CC-BY-NC-3.0-DE",
+    "aliases": {
+        "spdx": [
+            "Creative Commons Attribution Non Commercial 3.0 Germany"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "cc-by-nc-3.0-de",
+            "CC-BY-NC-3.0-DE"
+        ]
+    },
+    "src": "spdx"
+}

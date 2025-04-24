@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-asp-net-tools-pre-release",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS ASP.NET Tools Pre-Release License",
+            "Microsoft ASP.NET Tools Pre-Release License",
+            "LicenseRef-scancode-ms-asp-net-tools-pre-release"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

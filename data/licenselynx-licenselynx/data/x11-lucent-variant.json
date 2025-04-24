@@ -1,0 +1,11 @@
+{
+    "canonical": "x11-lucent-variant",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (Lucent-variant)",
+            "LicenseRef-scancode-x11-lucent-variant"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

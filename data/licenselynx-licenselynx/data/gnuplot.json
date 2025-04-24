@@ -1,0 +1,13 @@
+{
+    "canonical": "gnuplot",
+    "aliases": {
+        "spdx": [
+            "gnuplot License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gnuplot"
+        ]
+    },
+    "src": "spdx"
+}

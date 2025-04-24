@@ -1,0 +1,11 @@
+{
+    "canonical": "mattkruse",
+    "aliases": {
+        "scancode-licensedb": [
+            "Matt Kruse License",
+            "LicenseRef-scancode-mattkruse"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

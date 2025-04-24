@@ -1,0 +1,11 @@
+{
+    "canonical": "vicomsoft-software",
+    "aliases": {
+        "scancode-licensedb": [
+            "Vicomsoft Software License",
+            "LicenseRef-scancode-vicomsoft-software"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

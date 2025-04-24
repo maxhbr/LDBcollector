@@ -1,0 +1,13 @@
+{
+    "canonical": "URT-RLE",
+    "aliases": {
+        "spdx": [
+            "Utah Raster Toolkit Run Length Encoded License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "urt-rle"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "homebrewed",
+    "aliases": {
+        "scancode-licensedb": [
+            "Homebrewed or Craft Beer License",
+            "Homebrewed License",
+            "LicenseRef-scancode-homebrewed"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

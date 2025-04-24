@@ -1,0 +1,13 @@
+{
+    "canonical": "Rdisc",
+    "aliases": {
+        "spdx": [
+            "Rdisc License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "rdisc"
+        ]
+    },
+    "src": "spdx"
+}

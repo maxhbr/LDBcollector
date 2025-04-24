@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-new-derivative",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-Derivative",
+            "LicenseRef-scancode-bsd-new-derivative"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

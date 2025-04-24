@@ -1,0 +1,11 @@
+{
+    "canonical": "anepokis-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Anepokis License 1.0",
+            "LicenseRef-scancode-anepokis-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

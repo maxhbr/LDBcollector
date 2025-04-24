@@ -1,0 +1,12 @@
+{
+    "canonical": "liferay-marketplace-tos",
+    "aliases": {
+        "scancode-licensedb": [
+            "Liferay Marketplace Terms of Service Agreement",
+            "Liferay Marketplace TOS",
+            "LicenseRef-scancode-liferay-marketplace-tos"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

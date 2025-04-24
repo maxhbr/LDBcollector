@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-visual-studio-code-2022",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Visual Studio Code License 2022",
+            "Microsoft Visual Studio Code License 2022",
+            "LicenseRef-scancode-ms-visual-studio-code-2022"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "symphonysoft",
+    "aliases": {
+        "scancode-licensedb": [
+            "Symphonysoft",
+            "Symphonysoft License",
+            "LicenseRef-scancode-symphonysoft"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

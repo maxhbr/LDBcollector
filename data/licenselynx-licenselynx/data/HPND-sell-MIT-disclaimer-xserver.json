@@ -1,0 +1,14 @@
+{
+    "canonical": "HPND-sell-MIT-disclaimer-xserver",
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - sell xserver variant with MIT disclaimer"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Historical sell xserver variant",
+            "hpnd-sell-mit-disclaimer-xserver"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "X11-swapped",
+    "aliases": {
+        "spdx": [
+            "X11 swapped final paragraphs"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "x11-swapped"
+        ]
+    },
+    "src": "spdx"
+}

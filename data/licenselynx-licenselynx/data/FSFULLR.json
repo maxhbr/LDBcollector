@@ -1,0 +1,15 @@
+{
+    "canonical": "FSFULLR",
+    "aliases": {
+        "spdx": [
+            "FSF Unlimited License (with License Retention)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "fsf-unlimited",
+            "Free Software Foundation - Unlimited License",
+            "FSF-Unlimited"
+        ]
+    },
+    "src": "spdx"
+}

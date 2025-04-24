@@ -1,0 +1,12 @@
+{
+    "canonical": "generic-tos",
+    "aliases": {
+        "scancode-licensedb": [
+            "Generic Terms of Service",
+            "Generic ToS",
+            "LicenseRef-scancode-generic-tos"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,33 @@
+{
+    "canonical": "Apache-2.0",
+    "aliases": {
+        "spdx": [
+            "Apache License 2.0"
+        ],
+        "custom": [
+            "Apache License, Version 2.0",
+            "Apache License Version 2.0",
+            "Apache License v2.0",
+            "Apache v2.0",
+            "The Apache License, Version 2.0",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, 2.0"
+        ],
+        "scancode-licensedb": [
+            "LicenseRef-Apache-2.0",
+            "Apache 2.0",
+            "LicenseRef-Apache",
+            "apache-2.0",
+            "Apache License, 2.0",
+            "Apache 2",
+            "Apache-2",
+            "Apache License 2",
+            "Apache License Version 2",
+            "Apache-2 License",
+            "Apache v2",
+            "Apache-2.0 License",
+            "Apache-2.0 License (Apache Software Foundation)"
+        ]
+    },
+    "src": "spdx"
+}

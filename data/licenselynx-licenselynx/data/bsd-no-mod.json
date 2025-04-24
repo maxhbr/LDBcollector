@@ -1,0 +1,12 @@
+{
+    "canonical": "bsd-no-mod",
+    "aliases": {
+        "scancode-licensedb": [
+            "Madwifi License Agreement",
+            "Madwifi License",
+            "LicenseRef-scancode-bsd-no-mod"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "snapeda-design-exception-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "SnapEDA Design Exception 1.0",
+            "LicenseRef-scancode-snapeda-design-exception-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

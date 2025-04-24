@@ -1,0 +1,11 @@
+{
+    "canonical": "bigdigits",
+    "aliases": {
+        "scancode-licensedb": [
+            "BigDigits License",
+            "LicenseRef-scancode-bigdigits"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

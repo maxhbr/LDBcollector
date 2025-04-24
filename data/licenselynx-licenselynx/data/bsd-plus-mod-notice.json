@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-plus-mod-notice",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD plus modification notice",
+            "LicenseRef-scancode-bsd-plus-mod-notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

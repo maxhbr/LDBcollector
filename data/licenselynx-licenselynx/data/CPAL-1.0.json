@@ -1,0 +1,17 @@
+{
+    "canonical": "CPAL-1.0",
+    "aliases": {
+        "spdx": [
+            "Common Public Attribution License 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "cpal-1.0",
+            "CPAL 1.0"
+        ],
+        "osi": [
+            "Common Public Attribution License Version 1.0 (CPAL-1.0)"
+        ]
+    },
+    "src": "spdx"
+}

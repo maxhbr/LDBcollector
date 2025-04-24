@@ -1,0 +1,10 @@
+{
+    "canonical": "see-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "See License mention"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

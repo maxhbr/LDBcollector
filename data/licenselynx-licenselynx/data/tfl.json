@@ -1,0 +1,12 @@
+{
+    "canonical": "tfl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Truly Free License",
+            "TFL",
+            "LicenseRef-scancode-tfl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

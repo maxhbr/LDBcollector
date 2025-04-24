@@ -1,0 +1,13 @@
+{
+    "canonical": "swrule",
+    "aliases": {
+        "spdx": [
+            "swrule License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "swrule"
+        ]
+    },
+    "src": "spdx"
+}

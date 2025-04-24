@@ -1,0 +1,12 @@
+{
+    "canonical": "ocb-patent-openssl-2013",
+    "aliases": {
+        "scancode-licensedb": [
+            "Patent License for OpenSSL of OCB 2013",
+            "OCB Patent License for OpenSSL 2013",
+            "LicenseRef-scancode-ocb-patent-openssl-2013"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

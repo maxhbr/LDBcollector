@@ -1,0 +1,11 @@
+{
+    "canonical": "xilinx-2016",
+    "aliases": {
+        "scancode-licensedb": [
+            "Xilinx License 2016",
+            "LicenseRef-scancode-xilinx-2016"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

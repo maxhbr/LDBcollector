@@ -1,0 +1,13 @@
+<!DOCTYPE suppressions PUBLIC "-//Checkstyle//DTD Suppressions 1.1//EN"
+    "https://checkstyle.org/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+
+    <!-- Test classes are subject to a relaxed set of rules. -->
+    <suppress files="[/\\]src[/\\]test[/\\]java[/\\]" checks="JavadocPackage|MagicNumber|ParameterNumber" />
+    <suppress files="[/\\]src[/\\]test[/\\]java[/\\]" id="MethodNameMain" />
+    <suppress files="[/\\]src[/\\]test[/\\]java[/\\].+?[/\\]model[/\\]ValidTimestamps" checks="VisibilityModifier" />
+
+    <suppress files="[/\\]src[/\\]main[/\\]java[/\\]" id="MethodNameTest" />
+
+</suppressions>

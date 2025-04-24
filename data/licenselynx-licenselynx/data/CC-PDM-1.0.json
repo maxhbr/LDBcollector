@@ -1,0 +1,16 @@
+{
+    "canonical": "CC-PDM-1.0",
+    "aliases": {
+        "spdx": [
+            "Creative    Commons Public Domain Mark 1.0 Universal"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "CC-PD Mark 1.0",
+            "Creative Commons Public Domain Mark 1.0",
+            "cc-pdm-1.0",
+            "LicenseRef-scancode-cc-pdm-1.0"
+        ]
+    },
+    "src": "spdx"
+}

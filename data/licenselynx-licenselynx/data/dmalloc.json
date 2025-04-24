@@ -1,0 +1,11 @@
+{
+    "canonical": "dmalloc",
+    "aliases": {
+        "scancode-licensedb": [
+            "dmalloc License",
+            "LicenseRef-scancode-dmalloc"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

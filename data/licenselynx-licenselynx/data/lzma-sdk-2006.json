@@ -1,0 +1,11 @@
+{
+    "canonical": "lzma-sdk-2006",
+    "aliases": {
+        "scancode-licensedb": [
+            "LZMA SDK 2006",
+            "LicenseRef-scancode-lzma-sdk-2006"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

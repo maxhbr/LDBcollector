@@ -1,0 +1,14 @@
+{
+    "canonical": "RHeCos-1.1",
+    "aliases": {
+        "spdx": [
+            "Red Hat eCos Public License v1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Red Hat eCos Public License 1.1",
+            "ecosrh-1.1"
+        ]
+    },
+    "src": "spdx"
+}

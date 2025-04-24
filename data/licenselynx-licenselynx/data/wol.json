@@ -1,0 +1,11 @@
+{
+    "canonical": "wol",
+    "aliases": {
+        "scancode-licensedb": [
+            "Wide Open License",
+            "LicenseRef-scancode-wol"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

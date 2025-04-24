@@ -1,0 +1,14 @@
+{
+    "canonical": "Vim",
+    "aliases": {
+        "spdx": [
+            "Vim License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "vim",
+            "VIM License"
+        ]
+    },
+    "src": "spdx"
+}

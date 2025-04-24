@@ -1,0 +1,15 @@
+{
+    "canonical": "mplus",
+    "aliases": {
+        "spdx": [
+            "mplus Font License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-m-plus",
+            "m-plus",
+            "M+ Fonts license"
+        ]
+    },
+    "src": "spdx"
+}

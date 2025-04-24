@@ -1,0 +1,11 @@
+{
+    "canonical": "odc-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Open Data Commons Attribution License",
+            "ODC-By"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

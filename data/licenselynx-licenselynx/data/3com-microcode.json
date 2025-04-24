@@ -1,0 +1,11 @@
+{
+    "canonical": "3com-microcode",
+    "aliases": {
+        "scancode-licensedb": [
+            "3Com Microcode",
+            "LicenseRef-scancode-3com-microcode"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

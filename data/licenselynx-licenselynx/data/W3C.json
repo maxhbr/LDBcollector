@@ -1,0 +1,17 @@
+{
+    "canonical": "W3C",
+    "aliases": {
+        "spdx": [
+            "W3C Software Notice and License (2002-12-31)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "w3c",
+            "W3C Software Notice and License"
+        ],
+        "osi": [
+            "The W3C Software Notice and License"
+        ]
+    },
+    "src": "spdx"
+}

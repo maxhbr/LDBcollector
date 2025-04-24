@@ -1,0 +1,12 @@
+{
+    "canonical": "epo-osl-2005.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "EPO Open Source Licence No. 2005/1",
+            "EPO-OSL",
+            "LicenseRef-scancode-epo-osl-2005.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

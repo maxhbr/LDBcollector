@@ -1,0 +1,16 @@
+{
+    "canonical": "PostgreSQL",
+    "aliases": {
+        "spdx": [
+            "PostgreSQL License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "postgresql"
+        ],
+        "osi": [
+            "The PostgreSQL Licence"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "python-cwi",
+    "aliases": {
+        "scancode-licensedb": [
+            "Python CWI License",
+            "Python CWI License Agreement",
+            "LicenseRef-scancode-python-cwi"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

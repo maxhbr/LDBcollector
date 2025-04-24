@@ -1,0 +1,18 @@
+{
+    "canonical": "LiLiQ-P-1.1",
+    "aliases": {
+        "spdx": [
+            "Licence Libre du Qu\u00c3\u00a9bec \u00e2\u20ac\u201c Permissive version 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LiLiQ-P-1.1",
+            "Licence Libre du Qu\u00e9bec \u2013 Permissive version 1.1",
+            "liliq-p-1.1"
+        ],
+        "osi": [
+            "Licence Libre du Qu\u00c3\u00a9bec \u00e2\u20ac\u201c Permissive, Version 1.1"
+        ]
+    },
+    "src": "spdx"
+}

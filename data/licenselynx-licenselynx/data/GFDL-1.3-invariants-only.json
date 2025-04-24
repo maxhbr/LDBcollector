@@ -1,0 +1,14 @@
+{
+    "canonical": "GFDL-1.3-invariants-only",
+    "aliases": {
+        "spdx": [
+            "GNU Free Documentation License v1.3 only - invariants"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gfdl-1.3-invariants-only",
+            "GFDL-1.3-invariants-only"
+        ]
+    },
+    "src": "spdx"
+}

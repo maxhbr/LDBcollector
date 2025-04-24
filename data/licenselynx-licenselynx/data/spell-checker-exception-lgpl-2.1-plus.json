@@ -1,0 +1,12 @@
+{
+    "canonical": "spell-checker-exception-lgpl-2.1-plus",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-spell-checker-exception-lgpl-2.1-plus",
+            "Spell-Checker exception to LGPL 2.1 or later",
+            "LicenseRef-scancode-spell-exception-lgpl-2.1-plus"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "foobar2000",
+    "aliases": {
+        "scancode-licensedb": [
+            "foobar2000 License",
+            "LicenseRef-scancode-foobar2000"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

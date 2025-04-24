@@ -1,0 +1,11 @@
+{
+    "canonical": "codexia",
+    "aliases": {
+        "scancode-licensedb": [
+            "Codexia License",
+            "LicenseRef-scancode-codexia"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

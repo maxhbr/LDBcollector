@@ -1,0 +1,11 @@
+{
+    "canonical": "mit-old-style",
+    "aliases": {
+        "scancode-licensedb": [
+            "MIT Old Style",
+            "LicenseRef-scancode-mit-old-style"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

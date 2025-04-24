@@ -1,0 +1,87 @@
+name: Scripts CI
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - scripts/**
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Install Poetry
+        run: |
+          pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry
+          cache-dependency-path: scripts/poetry.lock
+      - name: Set Poetry environment
+        run: |
+          cd scripts
+          poetry env use 3.11
+      - name: Install dependencies
+        run: |
+          cd scripts
+          poetry lock
+          poetry install --no-root
+      - name: Run the automated tests
+        run: |
+          cd scripts
+          poetry run coverage run --branch -m pytest -vv
+          poetry run coverage report --omit="tests/*"
+          poetry run coverage xml --omit="tests/*"
+      - name: Run coverage badge
+        run: |
+          sudo apt-get install xq
+          pip install anybadge
+          cov_value=$(xq --xpath "//coverage/@line-rate" scripts/coverage.xml)
+          cov_rounded=$(printf "%.1f\n" $(bc <<< "100*${cov_value}"))
+          echo "Coverage found: ${cov_rounded}%"
+          anybadge --label scripts:coverage --value ${cov_rounded} --suffix "%" --file website/badges/coverage-scripts.svg --overwrite
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update badge for scripts
+
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: |
+          pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry
+          cache-dependency-path: scripts/poetry.lock
+      - name: Set Poetry environment
+        run: |
+          cd scripts
+          poetry env use 3.11
+      - name: Install dependencies
+        run: |
+          cd scripts
+          poetry install --no-root
+      - name: Run the linting
+        run: |
+          cd scripts
+          poetry run mypy src tests
+          poetry run flake8 src
+          poetry run flake8 tests

@@ -1,0 +1,12 @@
+{
+    "canonical": "josl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Jabber 1.0",
+            "Jabber Open Source License 1.0",
+            "LicenseRef-scancode-josl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

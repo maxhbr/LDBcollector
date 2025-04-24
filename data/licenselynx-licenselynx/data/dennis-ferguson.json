@@ -1,0 +1,11 @@
+{
+    "canonical": "dennis-ferguson",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dennis Ferguson License",
+            "LicenseRef-scancode-dennis-ferguson"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

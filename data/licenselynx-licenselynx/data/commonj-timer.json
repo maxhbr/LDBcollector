@@ -1,0 +1,12 @@
+{
+    "canonical": "commonj-timer",
+    "aliases": {
+        "scancode-licensedb": [
+            "CommonJ Timer License",
+            "CommonJ Timer and Work Manager License",
+            "LicenseRef-scancode-commonj-timer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

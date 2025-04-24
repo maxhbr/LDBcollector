@@ -1,0 +1,13 @@
+{
+    "canonical": "OGDL-Taiwan-1.0",
+    "aliases": {
+        "spdx": [
+            "Taiwan Open Government Data License, version 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ogdl-taiwan-1.0"
+        ]
+    },
+    "src": "spdx"
+}

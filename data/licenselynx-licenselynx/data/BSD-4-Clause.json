@@ -1,0 +1,14 @@
+{
+    "canonical": "BSD-4-Clause",
+    "aliases": {
+        "spdx": [
+            "BSD 4-Clause \"Original\" or \"Old\" License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "BSD-Original",
+            "bsd-original"
+        ]
+    },
+    "src": "spdx"
+}

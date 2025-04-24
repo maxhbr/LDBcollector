@@ -1,0 +1,17 @@
+{
+    "canonical": "PHP-3.0",
+    "aliases": {
+        "spdx": [
+            "PHP License v3.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "php-3.0",
+            "PHP License 3.0"
+        ],
+        "osi": [
+            "The PHP License, Version 3.0"
+        ]
+    },
+    "src": "spdx"
+}

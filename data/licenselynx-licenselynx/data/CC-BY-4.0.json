@@ -1,0 +1,33 @@
+{
+    "canonical": "CC-BY-4.0",
+    "aliases": {
+        "spdx": [
+            "Creative Commons Attribution 4.0 International"
+        ],
+        "custom": [
+            "CC BY 4.0",
+            "Creative Commons Attribution 4.0",
+            "Creative Commons BY 4.0",
+            "CC-BY v4.0",
+            "CC BY v4.0",
+            "CC-BY License 4.0",
+            "Creative Commons Attribution License 4.0",
+            "CC Attribution 4.0",
+            "CC Attribution License 4.0",
+            "CC BY License 4.0",
+            "CC-BY Version 4.0",
+            "Creative Commons License Version 4.0",
+            "CC BY v4",
+            "CC-BY v4",
+            "Creative Commons Attribution Version 4.0",
+            "CC 4.0 BY",
+            "CC-BY-4.0 International",
+            "CC-BY-4.0 Generic"
+        ],
+        "scancode-licensedb": [
+            "cc-by-4.0",
+            "Creative Commons Attribution 4.0 International Public License"
+        ]
+    },
+    "src": "spdx"
+}

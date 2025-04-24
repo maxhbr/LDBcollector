@@ -1,0 +1,11 @@
+{
+    "canonical": "gco-v3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "GCO-v3.0",
+            "LicenseRef-scancode-gco-v3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

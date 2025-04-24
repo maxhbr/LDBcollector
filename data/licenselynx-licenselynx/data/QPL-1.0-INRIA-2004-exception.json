@@ -1,0 +1,15 @@
+{
+    "canonical": "QPL-1.0-INRIA-2004-exception",
+    "aliases": {
+        "spdx": [
+            "INRIA QPL 1.0 2004 variant exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-inria-linking-exception",
+            "inria-linking-exception",
+            "INRIA Linking Exception to QPL 1.0"
+        ]
+    },
+    "src": "spdx"
+}

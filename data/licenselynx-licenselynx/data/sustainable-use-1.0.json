@@ -1,0 +1,12 @@
+{
+    "canonical": "sustainable-use-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sustainable Use 1.0",
+            "Sustainable Use License 1.0",
+            "LicenseRef-scancode-sustainable-use-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

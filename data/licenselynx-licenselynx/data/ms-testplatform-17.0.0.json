@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-testplatform-17.0.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS TestPlatform 17.0.0",
+            "Microsoft Visual Studio TestPlatform 17.0.0",
+            "LicenseRef-scancode-ms-testplatform-17.0.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,17 @@
+{
+    "canonical": "GPL-3.0-or-later",
+    "aliases": {
+        "spdx": [
+            "GNU General Public License v3.0 or later",
+            "GPL-3.0+"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "GPL 3.0 or later",
+            "GNU General Public License 3.0 or later",
+            "gpl-3.0-plus",
+            "LicenseRef-GPL-3.0-or-later"
+        ]
+    },
+    "src": "spdx"
+}

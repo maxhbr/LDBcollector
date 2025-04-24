@@ -1,0 +1,46 @@
+{
+    "name": "@licenselynx/licenselynx",
+    "version": "1.0.0",
+    "author": "Leo Reinmann",
+    "keywords": [],
+    "license": "Apache-2.0",
+    "description": "Unified License Mapper",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "directories": {
+        "test": "tests"
+    },
+    "files": [
+        "dist/index.js",
+        "dist/index.d.ts",
+        "README.md"
+    ],
+    "scripts": {
+        "clean": "rimraf --no-interactive --verbose dist",
+        "build": "esbuild index.ts --bundle --platform=node --target=node10 --outdir=dist && tsc --emitDeclarationOnly --outDir dist",
+        "test": "jest --coverage",
+        "lint": "eslint *.ts "
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/licenselynx/licenselynx.git",
+        "directory": "typescript/"
+    },
+    "devDependencies": {
+        "@babel/preset-typescript": "^7.24.1",
+        "@eslint/eslintrc": "^3.2.0",
+        "@eslint/js": "^9.19.0",
+        "@jest/globals": "^29.7.0",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.12.12",
+        "@typescript-eslint/eslint-plugin": "^8.22.0",
+        "@typescript-eslint/parser": "^8.22.0",
+        "eslint": "^9.18.0",
+        "globals": "^15.3.0",
+        "jest": "^29.7.0",
+        "rimraf": "^6.0.1",
+        "ts-jest": "^29.1.2",
+        "typescript": "^5.4.5",
+        "esbuild": "0.25.0"
+    }
+}

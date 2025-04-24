@@ -1,0 +1,12 @@
+{
+    "canonical": "gpl-2.0-djvu",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with DjVu Patent Grant",
+            "GNU General Public License 2.0 with DjVu Patent Grant",
+            "LicenseRef-scancode-gpl-2.0-djvu"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

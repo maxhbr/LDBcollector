@@ -1,0 +1,11 @@
+{
+    "canonical": "netdata-ncul1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Netdata Cloud UI License v1.0 (NCUL1)",
+            "LicenseRef-scancode-netdata-ncul1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

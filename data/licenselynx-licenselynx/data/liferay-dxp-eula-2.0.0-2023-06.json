@@ -1,0 +1,11 @@
+{
+    "canonical": "liferay-dxp-eula-2.0.0-2023-06",
+    "aliases": {
+        "scancode-licensedb": [
+            "Liferay-DXP-EULA-2.0.0-2023-06",
+            "LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

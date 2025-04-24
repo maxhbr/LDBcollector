@@ -1,0 +1,13 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
+
+*    text=auto
+
+/gradlew text eol=lf
+
+*.sh text eol=lf
+
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.bat text eol=crlf

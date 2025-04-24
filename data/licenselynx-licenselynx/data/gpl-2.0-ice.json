@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-ice",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with Ice exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

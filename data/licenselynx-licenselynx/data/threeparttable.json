@@ -1,0 +1,13 @@
+{
+    "canonical": "threeparttable",
+    "aliases": {
+        "spdx": [
+            "threeparttable License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "threeparttable"
+        ]
+    },
+    "src": "spdx"
+}

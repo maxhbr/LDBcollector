@@ -1,0 +1,17 @@
+{
+    "canonical": "Artistic-2.0",
+    "aliases": {
+        "spdx": [
+            "Artistic License 2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "artistic-2.0",
+            "Artistic 2.0"
+        ],
+        "osi": [
+            "Artistic License, Version 2.0"
+        ]
+    },
+    "src": "spdx"
+}

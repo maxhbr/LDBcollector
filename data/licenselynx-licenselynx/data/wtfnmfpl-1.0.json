@@ -1,0 +1,11 @@
+{
+    "canonical": "wtfnmfpl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "WTFNMFPL-1.0",
+            "LicenseRef-scancode-wtfnmfpl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "unlimited-binary-linking",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unlimited Binary Linking Exception",
+            "LicenseRef-scancode-unlimited-binary-linking"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

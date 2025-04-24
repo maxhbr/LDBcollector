@@ -1,0 +1,11 @@
+{
+    "canonical": "classic-vb",
+    "aliases": {
+        "scancode-licensedb": [
+            "Classic VB License",
+            "LicenseRef-scancode-classic-vb"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "ImageMagick",
+    "aliases": {
+        "spdx": [
+            "ImageMagick License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "imagemagick"
+        ]
+    },
+    "src": "spdx"
+}

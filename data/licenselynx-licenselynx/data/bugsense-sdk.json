@@ -1,0 +1,11 @@
+{
+    "canonical": "bugsense-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "BugSense SDK License",
+            "LicenseRef-scancode-bugsense-sdk"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

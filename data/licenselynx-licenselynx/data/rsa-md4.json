@@ -1,0 +1,12 @@
+{
+    "canonical": "rsa-md4",
+    "aliases": {
+        "scancode-licensedb": [
+            "RSA-MD4 License",
+            "RSA Data Security MD4",
+            "LicenseRef-scancode-rsa-md4"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

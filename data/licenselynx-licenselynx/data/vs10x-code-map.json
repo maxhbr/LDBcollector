@@ -1,0 +1,11 @@
+{
+    "canonical": "vs10x-code-map",
+    "aliases": {
+        "scancode-licensedb": [
+            "VS10x Code Map",
+            "LicenseRef-scancode-vs10x-code-map"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

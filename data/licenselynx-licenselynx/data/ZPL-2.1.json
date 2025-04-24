@@ -1,0 +1,29 @@
+{
+    "canonical": "ZPL-2.1",
+    "aliases": {
+        "spdx": [
+            "Zope Public License 2.1"
+        ],
+        "custom": [
+            "Zope Public License v2.1",
+            "ZPL v2.1",
+            "ZPL 2.1 License",
+            "ZPL v2.1 License",
+            "Zope Public License 2.1 (ZPL)",
+            "ZPL (2.1)",
+            "ZPL-2.1 License",
+            "ZPL 2.1 (Zope)",
+            "ZPL 2.1 (Public License)",
+            "Zope License 2.1",
+            "ZPL (Public License)",
+            "ZPL 2.1 Open Source License",
+            "ZPL 2.1 (Open Source)",
+            "Zope Public License v2.1 (ZPL)"
+        ],
+        "scancode-licensedb": [
+            "zpl-2.1",
+            "ZPL 2.1"
+        ]
+    },
+    "src": "spdx"
+}

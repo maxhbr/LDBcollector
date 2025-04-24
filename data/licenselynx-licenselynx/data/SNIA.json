@@ -1,0 +1,13 @@
+{
+    "canonical": "SNIA",
+    "aliases": {
+        "spdx": [
+            "SNIA Public License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "snia"
+        ]
+    },
+    "src": "spdx"
+}

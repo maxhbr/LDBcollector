@@ -1,0 +1,13 @@
+{
+    "canonical": "AGPL-3.0",
+    "aliases": {
+        "spdx": [
+            "GNU Affero General Public License v3.0"
+        ],
+        "custom": [],
+        "osi": [
+            "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)"
+        ]
+    },
+    "src": "spdx"
+}

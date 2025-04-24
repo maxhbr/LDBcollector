@@ -1,0 +1,10 @@
+{
+    "canonical": "hs-regexp-orig",
+    "aliases": {
+        "scancode-licensedb": [
+            "Henry Spencer Original Regexp License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

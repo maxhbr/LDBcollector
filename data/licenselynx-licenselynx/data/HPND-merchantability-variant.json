@@ -1,0 +1,15 @@
+{
+    "canonical": "HPND-merchantability-variant",
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - merchantability variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-codesourcery-2004",
+            "codesourcery-2004",
+            "CodeSourcery 2004"
+        ]
+    },
+    "src": "spdx"
+}

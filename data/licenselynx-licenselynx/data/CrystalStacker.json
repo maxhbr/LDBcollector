@@ -1,0 +1,14 @@
+{
+    "canonical": "CrystalStacker",
+    "aliases": {
+        "spdx": [
+            "CrystalStacker License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Crystal Stacker License",
+            "crystal-stacker"
+        ]
+    },
+    "src": "spdx"
+}

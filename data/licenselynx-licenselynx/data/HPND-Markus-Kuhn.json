@@ -1,0 +1,15 @@
+{
+    "canonical": "HPND-Markus-Kuhn",
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - Markus Kuhn variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-markus-kuhn-license",
+            "markus-kuhn-license",
+            "Markus Kuhn License"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "splunk-sla",
+    "aliases": {
+        "scancode-licensedb": [
+            "Splunk SLA",
+            "Splunk Software License Agreement",
+            "LicenseRef-scancode-splunk-sla"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

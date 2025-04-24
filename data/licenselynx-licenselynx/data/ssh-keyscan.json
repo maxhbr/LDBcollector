@@ -1,0 +1,13 @@
+{
+    "canonical": "ssh-keyscan",
+    "aliases": {
+        "spdx": [
+            "ssh-keyscan License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ssh-keyscan"
+        ]
+    },
+    "src": "spdx"
+}

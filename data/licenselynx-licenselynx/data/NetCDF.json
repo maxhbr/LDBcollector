@@ -1,0 +1,23 @@
+{
+    "canonical": "NetCDF",
+    "aliases": {
+        "spdx": [
+            "NetCDF license"
+        ],
+        "custom": [
+            "NetCDF Software License",
+            "NetCDF License (Open Source)",
+            "NetCDF Open Source License",
+            "NetCDF (Open Source)",
+            "NetCDF (Software License)",
+            "NetCDF Open License",
+            "NetCDF Public License",
+            "NetCDF (Public License)"
+        ],
+        "scancode-licensedb": [
+            "netcdf",
+            "NetCDF License"
+        ]
+    },
+    "src": "spdx"
+}

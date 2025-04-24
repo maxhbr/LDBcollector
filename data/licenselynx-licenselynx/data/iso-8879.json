@@ -1,0 +1,11 @@
+{
+    "canonical": "iso-8879",
+    "aliases": {
+        "scancode-licensedb": [
+            "ISO 8879",
+            "LicenseRef-scancode-iso-8879"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "cpol-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "CPOL 1.0",
+            "Code Project Open License (CPOL) 1.0",
+            "LicenseRef-scancode-cpol-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

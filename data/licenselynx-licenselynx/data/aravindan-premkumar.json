@@ -1,0 +1,11 @@
+{
+    "canonical": "aravindan-premkumar",
+    "aliases": {
+        "scancode-licensedb": [
+            "Aravindan Premkumar Licenase",
+            "LicenseRef-scancode-aravindan-premkumar"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

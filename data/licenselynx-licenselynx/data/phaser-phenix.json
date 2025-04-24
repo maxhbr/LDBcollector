@@ -1,0 +1,11 @@
+{
+    "canonical": "phaser-phenix",
+    "aliases": {
+        "scancode-licensedb": [
+            "Phaser Commercial EULA (Phenix)",
+            "LicenseRef-scancode-phaser-phenix"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

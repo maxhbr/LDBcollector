@@ -1,0 +1,11 @@
+{
+    "canonical": "houdini-project",
+    "aliases": {
+        "scancode-licensedb": [
+            "Houdini Project License",
+            "LicenseRef-scancode-houdini"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "protobuf",
+    "aliases": {
+        "scancode-licensedb": [
+            "Protobuf License",
+            "LicenseRef-scancode-protobuf"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

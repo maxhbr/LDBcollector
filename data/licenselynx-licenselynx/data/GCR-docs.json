@@ -1,0 +1,13 @@
+{
+    "canonical": "GCR-docs",
+    "aliases": {
+        "spdx": [
+            "Gnome GCR Documentation License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gcr-docs"
+        ]
+    },
+    "src": "spdx"
+}

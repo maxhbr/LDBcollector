@@ -1,0 +1,11 @@
+{
+    "canonical": "paolo-messina-2000",
+    "aliases": {
+        "scancode-licensedb": [
+            "Paolo Messina 2000",
+            "LicenseRef-scancode-paolo-messina-2000"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

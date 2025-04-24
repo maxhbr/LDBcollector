@@ -1,0 +1,11 @@
+{
+    "canonical": "clojure-exception-to-gpl-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Clojure Exception to GPL-3.0",
+            "LicenseRef-scancode-clojure-exception-to-gpl-3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

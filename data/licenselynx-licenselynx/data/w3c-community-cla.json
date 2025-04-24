@@ -1,0 +1,12 @@
+{
+    "canonical": "w3c-community-cla",
+    "aliases": {
+        "scancode-licensedb": [
+            "W3C Community CLA",
+            "W3C Community Contributor License Agreement (CLA)",
+            "LicenseRef-scancode-w3c-community-cla"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "Adobe-Display-PostScript",
+    "aliases": {
+        "spdx": [
+            "Adobe Display PostScript License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "X11-Style (Adobe)",
+            "LicenseRef-scancode-x11-adobe",
+            "x11-adobe"
+        ]
+    },
+    "src": "spdx"
+}

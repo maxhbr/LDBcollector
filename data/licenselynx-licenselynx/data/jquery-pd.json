@@ -1,0 +1,12 @@
+{
+    "canonical": "jquery-pd",
+    "aliases": {
+        "scancode-licensedb": [
+            "jQuery-Tools-PD",
+            "jQuery Tools Public Domain License",
+            "LicenseRef-scancode-jquery-pd"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

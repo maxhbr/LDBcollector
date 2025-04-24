@@ -1,0 +1,365 @@
+/*
+ * SPDX-FileCopyrightText: Copyright 2025 Siemens AG
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'jacoco'
+    id 'idea'
+    id 'checkstyle'
+    id 'signing'
+    id 'maven-publish'
+    id 'org.ajoberstar.grgit' version '4.1.1'
+    id 'org.barfuin.gradle.jacocolog' version '3.1.0'
+    id 'org.barfuin.gradle.taskinfo' version '2.2.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+import org.gradle.internal.jvm.Jvm
+
+/*
+ * - - - -  PROJECT METADATA  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+ext {
+    buildTimestamp = new Date()
+    grgit.open(currentDir: project.rootDir).withCloseable { gitRepo ->
+        gitVersion = grgit.describe {
+            tags = true
+            match = ['v*']
+            always = true
+        }
+        gitHash = gitRepo.head().id
+        gitCleanBuild = gitRepo.status().isClean()
+        if (gitVersion.startsWith('v')) {
+            gitVersion = gitVersion.substring('v'.length())
+        }
+        if (!gitCleanBuild) {
+            gitVersion += '-dirty'
+        }
+    }
+    website = 'https://licenselynx.org/'
+    codeRepo = 'https://github.org/licenselynx/licenselynx'
+}
+
+group = 'org.licenselynx'
+description = 'Unified License Mapper'
+version = project.ext.gitVersion
+
+project.gradle.taskGraph.whenReady { taskGraph ->
+    if (taskGraph.hasTask(':jar')) {
+        logger.lifecycle("\nBuilding ${project.name} ${project.version}")
+    }
+}
+
+
+/*
+ * - - - -  DEPENDENCIES  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+    testImplementation 'org.mockito:mockito-core:3.+'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.+'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.16'
+
+    implementation 'org.slf4j:slf4j-api:2.0.16'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.1'
+
+    compileOnly group: 'net.jcip', name: 'jcip-annotations', version: '1.0'
+    compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
+    compileOnly 'javax.annotation:javax.annotation-api:1.3.2'
+}
+
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+/*
+ * - - - -  INTELLIJ CONFIG  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+idea.module {
+    downloadSources = true
+    downloadJavadoc = true
+    excludeDirs += file('.idea')
+    excludeDirs += file('_support')
+    excludeDirs += file('bin')
+}
+idea.project {
+    jdkName = JavaVersion.VERSION_1_8
+    languageLevel = JavaVersion.VERSION_1_8
+}
+
+
+/*
+ * - - - -  COMPILATION  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    }
+    withSourcesJar()
+    withJavadocJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation' << '-proc:none'
+}
+
+tasks.register('createVersionFile') {
+    group = LifecycleBasePlugin.BUILD_GROUP
+    description = 'Create a properties file containing the current version number.'
+    final File outFile = new File(temporaryDir, "licenselynx-version.properties")
+    outputs.file(outFile)
+    doLast {
+        Properties props = new Properties()
+        props.setProperty('clean', String.valueOf(project.ext.gitCleanBuild))
+        props.setProperty('libGroup', project.group)
+        props.setProperty('libName', project.name)
+        props.setProperty('libVersion', project.getVersion().toString())
+        props.setProperty('libWebsite', "${project.ext.codeRepo}/-/tree/main/java")
+        props.setProperty('libDescription', project.description)
+        props.setProperty('specName', project.name)
+        props.setProperty('specWebsite', project.ext.website)
+        outFile.withPrintWriter('UTF-8', {
+            props.store(it, rootProject.name + ' version information')
+        })
+    }
+}
+tasks.named('processResources').configure { it.dependsOn(tasks.createVersionFile) }
+sourceSets.main.resources.srcDir(tasks.createVersionFile.temporaryDir)
+
+tasks.register("checkAndDownloadJson") {
+    def resourcesDir = file("src/main/resources")
+    def jsonFile = file("$resourcesDir/merged_data.json")
+    def downloadUrl = "https://licenselynx.org/json/latest/mapping.json"
+
+    doLast {
+        if (!jsonFile.exists()) {
+            println "merged_data.json not found. Downloading from $downloadUrl..."
+            resourcesDir.mkdirs()
+            jsonFile.withOutputStream { output ->
+                new URL(downloadUrl).withInputStream { input ->
+                    output << input
+                }
+            }
+            println "Downloaded data.json to $jsonFile"
+        } else {
+            println "merged_data.json already exists. Skipping download."
+        }
+    }
+}
+
+tasks.named("processResources") {
+    def isCI = System.getenv("CI")
+
+    if (!isCI) {
+        dependsOn("checkAndDownloadJson")
+    }
+}
+
+/*
+ * - - - -  TESTS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+tasks.named('jacocoTestReport').configure {
+    it.dependsOn tasks.named('test')
+    reports {
+        html.required = true
+        xml.required = true
+        csv.required = false
+    }
+}
+tasks.named('check').configure { t ->
+    t.dependsOn tasks.named('jacocoTestReport')
+}
+
+
+/*
+ * - - - -  ARTIFACTS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+tasks.named('jar').configure {
+    into('META-INF') {
+        from '../LICENSE.md'
+    }
+    manifest {
+        attributes = [
+            'Manifest-Version'           : '1.0',
+            'Specification-Title'        : project.name,
+            'Specification-Vendor'       : 'The LicenseLynx OSS Projec',
+            'Specification-Vendor-Id'    : 'org.licenselynx',
+            'Specification-Version'      : project.version,
+            'Implementation-Title'       : project.name,
+            'Implementation-Vendor'      : 'The LicenseLynx OSS Projec',
+            'Implementation-Vendor-Id'   : 'org.licenselynx',
+            'Implementation-Version'     : project.version,
+            'Implementation-SCM-Revision': project.ext.gitHash,
+            'Automatic-Module-Name'      : 'org.licenselynx',
+            'Website'                    : project.ext.website,
+            'Created-By'                 : "Gradle ${gradle.gradleVersion}",
+            'Built-By'                   : System.getProperty('user.name'),
+            'Build-Jdk'                  : Jvm.current().toString(),
+            'Build-Clean'                : project.ext.gitCleanBuild
+        ]
+    }
+    doFirst {
+        manifest {
+            attributes 'Build-Timestamp': project.ext.buildTimestamp.toString()
+        }
+    }
+}
+
+sourcesJar {
+    into('META-INF') {
+        from '../LICENSE.md'
+    }
+    afterEvaluate {
+        manifest.getAttributes().putAll(tasks.jar.manifest.attributes.findAll { it.key != 'Automatic-Module-Name' })
+        manifest {
+            attributes 'Build-Timestamp': project.ext.buildTimestamp.toString()
+        }
+    }
+}
+tasks.sourcesJar.dependsOn tasks.createVersionFile
+
+javadocJar {
+    into('META-INF') {
+        from '../LICENSE.md'
+    }
+    afterEvaluate {
+        manifest.getAttributes().putAll(tasks.jar.manifest.attributes.findAll { it.key != 'Automatic-Module-Name' })
+        manifest {
+            attributes 'Build-Timestamp': project.ext.buildTimestamp.toString()
+        }
+    }
+}
+
+
+/*
+ * - - - -  JAVADOC  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+
+tasks.named('javadoc').configure {
+    title = project.name + " v${project.version}"
+    options.locale = 'en'
+    options.encoding = 'UTF-8'
+    options.docEncoding = 'UTF-8'
+    options.charSet = 'UTF-8'
+    options.windowTitle = project.name
+    options.noDeprecated = true
+    options.header = project.name + " v${project.version}"
+    options.links('https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/',
+        'https://docs.oracle.com/javase/8/docs/api/')
+
+    // javadoc does not inherit the proxy settings (https://issues.gradle.org/browse/GRADLE-1228)
+    if (System.properties['http.proxyHost'] != null) {
+        options.jFlags('-DproxyHost=' + System.properties['http.proxyHost'],
+            '-DproxyPort=' + System.properties['http.proxyPort'],
+            '-DproxyUser=' + System.properties['http.proxyUser'],
+            '-DproxyPassword=' + System.properties['http.proxyPassword'])
+    }
+
+    // workaround for JDK 9+: https://github.com/gradle/gradle/issues/11182
+    def currentJavaVersion = JavaVersion.current()
+    if (currentJavaVersion >= JavaVersion.VERSION_1_9) {
+        options.addStringOption("-release", "8")
+    }
+}
+
+
+/*
+ * - - - -  CHECKSTYLE  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+checkstyle {
+    toolVersion '8.27'
+    showViolations = true
+    ignoreFailures = false
+}
+project.extensions.findByName('checkstyle').sourceSets.each { SourceSet s ->
+    Checkstyle task = (Checkstyle) tasks.findByName(s.getTaskName('checkstyle', null))
+    task.setSource(s.allSource)
+    getLogger().info('Reconfigured task \'' + task.name + '\' to include all files in sourceSet \'' + s.name + '\'')
+}
+
+dependencies {
+    checkstyle "com.puppycrawl.tools:checkstyle:${project.extensions.checkstyle.toolVersion}"
+    checkstyle group: 'com.github.sevntu-checkstyle', name: 'sevntu-checks', version: '1.37.0'
+}
+
+
+/*
+ * - - - -  PUBLISHING  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+publishing {
+    repositories {
+        maven {
+            name = 'localBuildDir'
+            url = project.layout.buildDirectory.dir('maven-repo-test')
+        }
+        if (project.hasProperty('licenselynx_publish_credentials')) {
+            maven {
+                name = 'mavenSonatypeCentral'
+                url = 'https://central.sonatype.com/api/v1/publisher'
+                credentials(HttpHeaderCredentials) {
+                    name = "Authorization"
+                    value = "Bearer ${licenselynx_publish_credentials}"
+                }
+                authentication {
+                    header(HttpHeaderAuthentication)
+                }
+            }
+        }
+    }
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            pom {
+                name = project.name
+                description = (String) project.description
+                url = (String) project.ext.website
+                inceptionYear = '2024'
+                licenses {
+                    license {
+                        name = 'Apache-2.0'
+                        url = 'https://raw.githubusercontent.com/licenselynx/licenselynx/refs/tags/v' +
+                            project.version + '/LICENSE'
+                    }
+                }
+                developers {
+                    developer {
+                        name = 'Leo Reinmann'
+                        email = 'leo.reinmann@siemens.com'
+                    }
+                }
+                final String ga = 'git@github.com:licenselynx/licenselynx.git'
+                scm {
+                    connection = 'scm:git:' + ga
+                    developerConnection = 'scm:git:' + ga
+                    url = ga
+                }
+            }
+        }
+    }
+}
+
+if (!Boolean.parseBoolean(System.getenv('CI')) || project.hasProperty('signingKey')) {
+    signing {
+        if (Boolean.parseBoolean(System.getenv('CI'))) {
+            def signingKey = project.getProperty('signingKey')
+            def signingPassword = project.getProperty('signingPassword')
+            useInMemoryPgpKeys(signingKey, signingPassword)
+        } else {
+            useGpgCmd()   // use local GPG installation and agent
+        }
+        sign publishing.publications.mavenJava
+    }
+}

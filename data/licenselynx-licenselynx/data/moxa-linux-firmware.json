@@ -1,0 +1,11 @@
+{
+    "canonical": "moxa-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Moxa Linux Firmware License",
+            "LicenseRef-scancode-moxa-linux-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

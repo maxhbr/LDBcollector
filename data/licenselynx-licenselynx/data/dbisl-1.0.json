@@ -1,0 +1,12 @@
+{
+    "canonical": "dbisl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "DB Inner Source License 1.0",
+            "LicenseRef-scancode-dbisl-1.0",
+            "Deutsche Bahn Inner Source License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "arm-llvm-sga",
+    "aliases": {
+        "scancode-licensedb": [
+            "ARM LLVM Grant",
+            "ARM LLVM Software Grant License Agreement",
+            "LicenseRef-scancode-arm-llvm-sga"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

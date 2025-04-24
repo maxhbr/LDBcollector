@@ -1,0 +1,11 @@
+{
+    "canonical": "mediatek-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "MediaTek Firmware License",
+            "LicenseRef-scancode-mediatek-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

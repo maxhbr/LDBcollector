@@ -1,0 +1,12 @@
+{
+    "canonical": "vcvrack-exception-to-gpl-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "VCV Rack Non-Commercial Plugin License Exception to GPL 3.0",
+            "VCV Rack NC Exception to GPL 3.0",
+            "LicenseRef-scancode-vcvrack-exception-to-gpl-3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,18 @@
+{
+    "canonical": "VSL-1.0",
+    "aliases": {
+        "spdx": [
+            "Vovida Software License v1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Vovida Software License v. 1.0",
+            "vsl-1.0",
+            "Vovida Software License 1.0"
+        ],
+        "osi": [
+            "The Vovida Software License, Version 1.0"
+        ]
+    },
+    "src": "spdx"
+}

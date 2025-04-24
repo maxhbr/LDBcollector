@@ -1,0 +1,11 @@
+{
+    "canonical": "teamdev-services",
+    "aliases": {
+        "scancode-licensedb": [
+            "TeamDev Services License",
+            "LicenseRef-scancode-teamdev-services"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

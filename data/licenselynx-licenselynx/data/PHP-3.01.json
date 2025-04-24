@@ -1,0 +1,14 @@
+{
+    "canonical": "PHP-3.01",
+    "aliases": {
+        "spdx": [
+            "PHP License v3.01"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "PHP License 3.01",
+            "php-3.01"
+        ]
+    },
+    "src": "spdx"
+}

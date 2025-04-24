@@ -1,0 +1,14 @@
+{
+    "canonical": "Unicode-DFS-2015",
+    "aliases": {
+        "spdx": [
+            "Unicode License Agreement - Data Files and Software (2015)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Unicode DFS 2015",
+            "unicode-dfs-2015"
+        ]
+    },
+    "src": "spdx"
+}

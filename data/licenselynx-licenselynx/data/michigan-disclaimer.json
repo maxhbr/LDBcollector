@@ -1,0 +1,12 @@
+{
+    "canonical": "michigan-disclaimer",
+    "aliases": {
+        "scancode-licensedb": [
+            "University of Michigan Open Source License",
+            "University of Michigan OSL",
+            "LicenseRef-scancode-michigan-disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

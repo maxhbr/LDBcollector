@@ -1,0 +1,12 @@
+{
+    "canonical": "vhfpl-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "vhfPL 1.1",
+            "vhf Public License V 1.1",
+            "LicenseRef-scancode-vhfpl-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

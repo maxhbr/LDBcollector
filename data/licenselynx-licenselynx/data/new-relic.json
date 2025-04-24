@@ -1,0 +1,11 @@
+{
+    "canonical": "new-relic",
+    "aliases": {
+        "scancode-licensedb": [
+            "New Relic License",
+            "LicenseRef-scancode-new-relic"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

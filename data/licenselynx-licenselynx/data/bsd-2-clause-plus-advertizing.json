@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-2-clause-plus-advertizing",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-2-Clause-plus-advertizing",
+            "LicenseRef-scancode-bsd-2-clause-plus-advertizing"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

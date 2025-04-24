@@ -1,0 +1,11 @@
+{
+    "canonical": "stream-benchmark",
+    "aliases": {
+        "scancode-licensedb": [
+            "STREAM Benchmark License",
+            "LicenseRef-scancode-stream-benchmark"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

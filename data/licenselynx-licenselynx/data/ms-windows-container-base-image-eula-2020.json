@@ -1,0 +1,13 @@
+{
+    "canonical": "ms-windows-container-base-image-eula-2020",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Windows Container Base Image EULA 2020",
+            "Microsoft Windows Container Base Image EULA 2020",
+            "LicenseRef-scancode-ms-windows-container-base-image-eula-2020",
+            "LicenseRef-scancode-ms-win-container-eula-2020"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

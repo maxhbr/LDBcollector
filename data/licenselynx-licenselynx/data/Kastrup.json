@@ -1,0 +1,13 @@
+{
+    "canonical": "Kastrup",
+    "aliases": {
+        "spdx": [
+            "Kastrup License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "kastrup"
+        ]
+    },
+    "src": "spdx"
+}

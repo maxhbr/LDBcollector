@@ -1,0 +1,12 @@
+{
+    "canonical": "bsd-unchanged",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD Simplified with Unchanged requirement",
+            "BSD Unchanged",
+            "LicenseRef-scancode-bsd-unchanged"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

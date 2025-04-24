@@ -1,0 +1,11 @@
+{
+    "canonical": "niels-ferguson",
+    "aliases": {
+        "scancode-licensedb": [
+            "Niels Ferguson License",
+            "LicenseRef-scancode-niels-ferguson"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

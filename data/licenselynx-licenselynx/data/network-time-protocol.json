@@ -1,0 +1,10 @@
+{
+    "canonical": "network-time-protocol",
+    "aliases": {
+        "scancode-licensedb": [
+            "Duplicate Network Time Protocol License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

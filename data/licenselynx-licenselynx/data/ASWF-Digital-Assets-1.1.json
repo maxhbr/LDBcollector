@@ -1,0 +1,15 @@
+{
+    "canonical": "ASWF-Digital-Assets-1.1",
+    "aliases": {
+        "spdx": [
+            "ASWF Digital Assets License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-aswf-digital-assets-1.1",
+            "ASWF Digital Assets License v1.1",
+            "aswf-digital-assets-1.1"
+        ]
+    },
+    "src": "spdx"
+}

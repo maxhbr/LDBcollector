@@ -1,0 +1,11 @@
+{
+    "canonical": "wink",
+    "aliases": {
+        "scancode-licensedb": [
+            "Wink License",
+            "LicenseRef-scancode-wink"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "here-proprietary",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-Proprietary-HERE",
+            "HERE Proprietary License",
+            "HERE Proprietary",
+            "LicenseRef-scancode-here-proprietary"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

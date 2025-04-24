@@ -1,0 +1,11 @@
+{
+    "canonical": "dune-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "DUNE exception to the GPL",
+            "LicenseRef-scancode-dune-exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

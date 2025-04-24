@@ -1,0 +1,12 @@
+{
+    "canonical": "sun-ssscfr-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Solaris Source Code (Foundation Release) License 1.1",
+            "Sun Solaris Source Code License 1.1",
+            "LicenseRef-scancode-sun-ssscfr-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

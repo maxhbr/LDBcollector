@@ -1,0 +1,10 @@
+{
+    "canonical": "bzip2-libbzip-1.0.5",
+    "aliases": {
+        "scancode-licensedb": [
+            "bzip2 License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

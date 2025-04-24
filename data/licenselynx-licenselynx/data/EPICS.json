@@ -1,0 +1,13 @@
+{
+    "canonical": "EPICS",
+    "aliases": {
+        "spdx": [
+            "EPICS Open License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "epics"
+        ]
+    },
+    "src": "spdx"
+}

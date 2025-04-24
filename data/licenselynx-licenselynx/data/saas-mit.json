@@ -1,0 +1,11 @@
+{
+    "canonical": "saas-mit",
+    "aliases": {
+        "scancode-licensedb": [
+            "SaaS MIT License",
+            "LicenseRef-scancode-saas-mit"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

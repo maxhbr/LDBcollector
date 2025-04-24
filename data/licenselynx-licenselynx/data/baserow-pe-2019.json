@@ -1,0 +1,12 @@
+{
+    "canonical": "baserow-pe-2019",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-baserow-pe-2019",
+            "Baserow PE License 2019",
+            "Baserow Premium Edition License (the \"PE License\") 2019"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "Asterisk-linking-protocols-exception",
+    "aliases": {
+        "spdx": [
+            "Asterisk linking protocols exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "asterisk-linking-protocols-exception"
+        ]
+    },
+    "src": "spdx"
+}

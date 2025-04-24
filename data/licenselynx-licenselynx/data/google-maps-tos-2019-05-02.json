@@ -1,0 +1,12 @@
+{
+    "canonical": "google-maps-tos-2019-05-02",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google Maps Platform ToS 2019-05-02",
+            "Google Maps Platform Terms of Service 2019-05-02",
+            "LicenseRef-scancode-google-maps-tos-2019-05-02"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

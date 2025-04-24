@@ -1,0 +1,13 @@
+{
+    "canonical": "TTWL",
+    "aliases": {
+        "spdx": [
+            "Text-Tabs+Wrap License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ttwl"
+        ]
+    },
+    "src": "spdx"
+}

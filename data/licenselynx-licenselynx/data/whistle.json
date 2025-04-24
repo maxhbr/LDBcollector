@@ -1,0 +1,11 @@
+{
+    "canonical": "whistle",
+    "aliases": {
+        "scancode-licensedb": [
+            "Whistle Communications License",
+            "LicenseRef-scancode-whistle"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

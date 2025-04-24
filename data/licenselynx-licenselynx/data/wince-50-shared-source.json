@@ -1,0 +1,12 @@
+{
+    "canonical": "wince-50-shared-source",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Windows CE 5.0 Shared Source License Agreement",
+            "MS Windows CE 5.0 Shared Source License",
+            "LicenseRef-scancode-wince-50-shared-source"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

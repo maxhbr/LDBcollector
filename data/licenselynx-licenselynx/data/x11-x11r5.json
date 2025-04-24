@@ -1,0 +1,11 @@
+{
+    "canonical": "x11-x11r5",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-R5",
+            "LicenseRef-scancode-x11-x11r5"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

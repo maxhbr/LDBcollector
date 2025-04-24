@@ -1,0 +1,12 @@
+{
+    "canonical": "statewizard",
+    "aliases": {
+        "scancode-licensedb": [
+            "StateWizard License Agreement",
+            "StateWizard License",
+            "LicenseRef-scancode-statewizard"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "bapl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Booz Allen Public License v1.0",
+            "LicenseRef-scancode-bapl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "GPL-3.0-with-autoconf-exception",
+    "aliases": {
+        "spdx": [
+            "GNU General Public License v3.0 w/Autoconf exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gpl-3.0-autoconf",
+            "GPL 3.0 with Autoconf exception"
+        ]
+    },
+    "src": "spdx"
+}

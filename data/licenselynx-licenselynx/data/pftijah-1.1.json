@@ -1,0 +1,12 @@
+{
+    "canonical": "pftijah-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "PfTijah Public License v1.1",
+            "PfTijah Public License 1.1",
+            "LicenseRef-scancode-pftijah-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

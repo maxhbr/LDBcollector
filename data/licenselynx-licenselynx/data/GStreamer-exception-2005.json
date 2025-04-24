@@ -1,0 +1,13 @@
+{
+    "canonical": "GStreamer-exception-2005",
+    "aliases": {
+        "spdx": [
+            "GStreamer Exception (2005)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gstreamer-exception-2005"
+        ]
+    },
+    "src": "spdx"
+}

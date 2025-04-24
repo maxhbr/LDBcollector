@@ -1,0 +1,13 @@
+{
+    "canonical": "CNRI-Jython",
+    "aliases": {
+        "spdx": [
+            "CNRI Jython License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "cnri-jython"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "bakoma-fonts-1995",
+    "aliases": {
+        "scancode-licensedb": [
+            "BaKoMa Fonts Licence 1995",
+            "LicenseRef-scancode-bakoma-fonts-1995"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

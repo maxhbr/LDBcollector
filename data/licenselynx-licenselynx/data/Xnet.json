@@ -1,0 +1,17 @@
+{
+    "canonical": "Xnet",
+    "aliases": {
+        "spdx": [
+            "X.Net License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "xnet",
+            "Altera License"
+        ],
+        "osi": [
+            "The X.Net, Inc. License"
+        ]
+    },
+    "src": "spdx"
+}

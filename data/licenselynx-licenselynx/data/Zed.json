@@ -1,0 +1,13 @@
+{
+    "canonical": "Zed",
+    "aliases": {
+        "spdx": [
+            "Zed License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "zed"
+        ]
+    },
+    "src": "spdx"
+}

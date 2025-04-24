@@ -1,0 +1,11 @@
+{
+    "canonical": "google-patent-license-webm",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google Patent License for WebM",
+            "LicenseRef-scancode-google-patent-license-webm"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

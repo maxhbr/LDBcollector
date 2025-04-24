@@ -1,0 +1,11 @@
+{
+    "canonical": "pcre",
+    "aliases": {
+        "scancode-licensedb": [
+            "PCRE License",
+            "LicenseRef-scancode-pcre"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

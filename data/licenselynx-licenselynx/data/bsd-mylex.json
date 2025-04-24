@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-mylex",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-Mylex",
+            "LicenseRef-scancode-bsd-mylex"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

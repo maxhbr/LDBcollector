@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-oracle-mysql-foss",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with Oracle MySQL FOSS exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

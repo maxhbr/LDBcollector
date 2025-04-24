@@ -1,0 +1,12 @@
+{
+    "canonical": "helios-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Helios EULA",
+            "Helios",
+            "LicenseRef-scancode-helios-eula"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-sql-server-data-tools",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft SQL Server Data Tools License",
+            "MS SQL Server Data Tools License",
+            "LicenseRef-scancode-ms-sql-server-data-tools"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

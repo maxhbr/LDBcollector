@@ -1,0 +1,13 @@
+{
+    "canonical": "Qhull",
+    "aliases": {
+        "spdx": [
+            "Qhull License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "qhull"
+        ]
+    },
+    "src": "spdx"
+}

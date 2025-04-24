@@ -1,0 +1,12 @@
+{
+    "canonical": "android-sdk-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "Android Software Development Kit License Agreement 2015",
+            "Android SDK License 2015",
+            "LicenseRef-scancode-android-sdk-license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-refl",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Reference License",
+            "Microsoft Reference License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

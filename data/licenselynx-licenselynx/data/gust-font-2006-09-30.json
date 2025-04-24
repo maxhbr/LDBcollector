@@ -1,0 +1,11 @@
+{
+    "canonical": "gust-font-2006-09-30",
+    "aliases": {
+        "scancode-licensedb": [
+            "GUST Font License 2006-09-30",
+            "LicenseRef-scancode-gust-font-2006-09-30"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

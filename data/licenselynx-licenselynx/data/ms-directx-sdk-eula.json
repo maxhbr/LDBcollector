@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-directx-sdk-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft DirectX SDK EULA",
+            "MS DirectX SDK EULA",
+            "LicenseRef-scancode-ms-directx-sdk-eula"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

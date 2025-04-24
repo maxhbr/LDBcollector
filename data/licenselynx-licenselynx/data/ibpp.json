@@ -1,0 +1,11 @@
+{
+    "canonical": "ibpp",
+    "aliases": {
+        "scancode-licensedb": [
+            "IBPP License",
+            "LicenseRef-scancode-ibpp"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

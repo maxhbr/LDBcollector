@@ -1,0 +1,11 @@
+{
+    "canonical": "broadcom-linking-exception-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Linking Exception to GPL 2.0",
+            "LicenseRef-scancode-bcm-linking-exception-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

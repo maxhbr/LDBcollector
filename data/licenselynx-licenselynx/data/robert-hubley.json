@@ -1,0 +1,11 @@
+{
+    "canonical": "robert-hubley",
+    "aliases": {
+        "scancode-licensedb": [
+            "Robert Hubley License",
+            "LicenseRef-scancode-robert-hubley"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "CC-PDDC",
+    "aliases": {
+        "spdx": [
+            "Creative Commons Public Domain Dedication and Certification"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "CC-PD",
+            "Creative Commons Public Domain Certification",
+            "cc-pd"
+        ]
+    },
+    "src": "spdx"
+}

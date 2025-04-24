@@ -1,0 +1,11 @@
+{
+    "canonical": "google-analytics-tos",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google Analytics Terms of Service",
+            "LicenseRef-scancode-google-analytics-tos"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

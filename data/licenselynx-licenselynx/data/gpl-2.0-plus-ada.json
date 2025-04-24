@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-plus-ada",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 or later with Ada exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

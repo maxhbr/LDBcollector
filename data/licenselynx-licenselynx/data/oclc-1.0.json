@@ -1,0 +1,11 @@
+{
+    "canonical": "oclc-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OCLC Research Public License 1.0",
+            "LicenseRef-scancode-oclc-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

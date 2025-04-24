@@ -1,0 +1,10 @@
+{
+    "canonical": "linum",
+    "aliases": {
+        "scancode-licensedb": [
+            "Linum Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

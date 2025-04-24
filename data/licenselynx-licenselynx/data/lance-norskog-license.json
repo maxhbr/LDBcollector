@@ -1,0 +1,11 @@
+{
+    "canonical": "lance-norskog-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "Lance Norskog License",
+            "LicenseRef-scancode-lance-norskog-license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

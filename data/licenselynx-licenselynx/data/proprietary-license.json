@@ -1,0 +1,13 @@
+{
+    "canonical": "proprietary-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "Proprietary License",
+            "LicenseRef-LICENSE",
+            "LicenseRef-LICENSE.md",
+            "LicenseRef-scancode-proprietary-license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

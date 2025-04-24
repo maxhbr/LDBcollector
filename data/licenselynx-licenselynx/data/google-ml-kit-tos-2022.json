@@ -1,0 +1,12 @@
+{
+    "canonical": "google-ml-kit-tos-2022",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google ML Kit Terms of Service 2022",
+            "Google ML Kit TOS 2022",
+            "LicenseRef-scancode-google-ml-kit-tos-2022"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

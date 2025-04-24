@@ -1,0 +1,11 @@
+{
+    "canonical": "tso-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "Theodore Ts'o license",
+            "LicenseRef-scancode-tso-license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

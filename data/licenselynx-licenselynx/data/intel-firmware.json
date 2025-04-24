@@ -1,0 +1,11 @@
+{
+    "canonical": "intel-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel Firmware License",
+            "LicenseRef-scancode-intel-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

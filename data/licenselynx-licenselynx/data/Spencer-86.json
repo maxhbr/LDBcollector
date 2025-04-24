@@ -1,0 +1,15 @@
+{
+    "canonical": "Spencer-86",
+    "aliases": {
+        "spdx": [
+            "Spencer License 86"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Regexp License",
+            "LicenseRef-scancode-regexp",
+            "regexp"
+        ]
+    },
+    "src": "spdx"
+}

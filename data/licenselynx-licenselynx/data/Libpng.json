@@ -1,0 +1,14 @@
+{
+    "canonical": "Libpng",
+    "aliases": {
+        "spdx": [
+            "libpng License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "libpng",
+            "Libpng License"
+        ]
+    },
+    "src": "spdx"
+}

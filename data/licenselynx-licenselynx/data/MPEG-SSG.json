@@ -1,0 +1,15 @@
+{
+    "canonical": "MPEG-SSG",
+    "aliases": {
+        "spdx": [
+            "MPEG Software Simulation"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-mpeg-ssg",
+            "MPEG SSG License",
+            "mpeg-ssg"
+        ]
+    },
+    "src": "spdx"
+}

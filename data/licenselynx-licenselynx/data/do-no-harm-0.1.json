@@ -1,0 +1,11 @@
+{
+    "canonical": "do-no-harm-0.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Do No Harm",
+            "LicenseRef-scancode-do-no-harm-0.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

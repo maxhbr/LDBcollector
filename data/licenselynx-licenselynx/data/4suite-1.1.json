@@ -1,0 +1,12 @@
+{
+    "canonical": "4suite-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "4Suite License v1.1",
+            "4Suite 1.1",
+            "LicenseRef-scancode-4suite-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

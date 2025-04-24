@@ -1,0 +1,12 @@
+{
+    "canonical": "us-govt-unlimited-rights",
+    "aliases": {
+        "scancode-licensedb": [
+            "US Government Grant of Unlimited Rights",
+            "US Government Unlimited Rights",
+            "LicenseRef-scancode-us-govt-unlimited-rights"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

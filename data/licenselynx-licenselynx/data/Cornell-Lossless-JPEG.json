@@ -1,0 +1,13 @@
+{
+    "canonical": "Cornell-Lossless-JPEG",
+    "aliases": {
+        "spdx": [
+            "Cornell Lossless JPEG License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "cornell-lossless-jpeg"
+        ]
+    },
+    "src": "spdx"
+}

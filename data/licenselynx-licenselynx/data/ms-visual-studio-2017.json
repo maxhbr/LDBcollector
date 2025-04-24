@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-visual-studio-2017",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Visual Studio 2017",
+            "Microsoft Visual Studio 2017",
+            "LicenseRef-scancode-ms-visual-studio-2017"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

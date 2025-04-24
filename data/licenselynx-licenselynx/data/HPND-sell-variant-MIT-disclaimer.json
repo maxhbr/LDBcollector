@@ -1,0 +1,13 @@
+{
+    "canonical": "HPND-sell-variant-MIT-disclaimer",
+    "aliases": {
+        "spdx": [
+            "HPND sell variant with MIT disclaimer"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "hpnd-sell-variant-mit-disclaimer"
+        ]
+    },
+    "src": "spdx"
+}

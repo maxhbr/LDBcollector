@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-web-developer-tools-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Web Developer Tools 1.0",
+            "MS Web Developer Tools 1.0",
+            "LicenseRef-scancode-ms-web-developer-tools-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

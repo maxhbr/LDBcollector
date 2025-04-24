@@ -1,0 +1,12 @@
+{
+    "canonical": "philips-proprietary-notice-2000",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-philips-proprietary-notice-2000",
+            "Philips Proprietary Notice 2000",
+            "LicenseRef-scancode-philips-proprietary-notice2000"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

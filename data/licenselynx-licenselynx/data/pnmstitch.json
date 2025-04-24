@@ -1,0 +1,13 @@
+{
+    "canonical": "pnmstitch",
+    "aliases": {
+        "spdx": [
+            "pnmstitch License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "pnmstitch"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "synthesis-toolkit",
+    "aliases": {
+        "scancode-licensedb": [
+            "Synthesis Toolkit License",
+            "LicenseRef-scancode-synthesis-toolkit"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

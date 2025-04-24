@@ -1,0 +1,13 @@
+{
+    "canonical": "dvipdfm",
+    "aliases": {
+        "spdx": [
+            "dvipdfm License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "dvipdfm"
+        ]
+    },
+    "src": "spdx"
+}

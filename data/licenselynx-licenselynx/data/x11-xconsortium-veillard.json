@@ -1,0 +1,12 @@
+{
+    "canonical": "x11-xconsortium-veillard",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-x11-xconsortium_veillard",
+            "X11-Style (X Consortium Veillard)",
+            "LicenseRef-scancode-x11-xconsortium-veillard"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

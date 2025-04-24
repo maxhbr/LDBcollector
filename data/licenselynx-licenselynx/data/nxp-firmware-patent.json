@@ -1,0 +1,11 @@
+{
+    "canonical": "nxp-firmware-patent",
+    "aliases": {
+        "scancode-licensedb": [
+            "NXP Firmware with Patent License",
+            "LicenseRef-scancode-nxp-firmware-patent"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

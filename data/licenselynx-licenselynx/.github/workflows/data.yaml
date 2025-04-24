@@ -1,0 +1,53 @@
+name: Data CI
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - data/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - data/**
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: |
+          pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry
+          cache-dependency-path: scripts/poetry.lock
+      - name: Set Poetry environment
+        run: |
+          cd scripts
+          poetry env use 3.11
+      - name: Install dependencies
+        run: |
+          cd scripts
+          poetry install --no-root
+      - name: Run data validation
+        run: |
+          cd scripts
+          poetry run data_validation
+      - name: Run statistics file
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          python3 scripts/src/load/merge_data.py -o ./scripts/src/statistics/merged_data.json
+          cd scripts/src/statistics
+          python3 update_readme.py
+          cd ../../../
+      - name: Upload statistics file
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update statistics in readme

@@ -1,0 +1,12 @@
+{
+    "canonical": "nist-srd",
+    "aliases": {
+        "scancode-licensedb": [
+            "NIST SRD License",
+            "NIST Standard Reference Data License",
+            "LicenseRef-scancode-nist-srd"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-ttf-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS TrueType Fonts EULA",
+            "Microsoft TrueType Fonts EULA",
+            "LicenseRef-scancode-ms-ttf-eula"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

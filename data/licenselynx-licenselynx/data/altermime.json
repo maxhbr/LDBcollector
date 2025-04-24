@@ -1,0 +1,11 @@
+{
+    "canonical": "altermime",
+    "aliases": {
+        "scancode-licensedb": [
+            "alterMIME License",
+            "LicenseRef-scancode-altermime"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

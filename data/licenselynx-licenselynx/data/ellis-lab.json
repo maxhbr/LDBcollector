@@ -1,0 +1,11 @@
+{
+    "canonical": "ellis-lab",
+    "aliases": {
+        "scancode-licensedb": [
+            "EllisLab License",
+            "LicenseRef-scancode-ellis-lab"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

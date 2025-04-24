@@ -1,0 +1,10 @@
+{
+    "canonical": "unbuntu-font-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Obsolete Font License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

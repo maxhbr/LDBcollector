@@ -1,0 +1,14 @@
+{
+    "canonical": "OML",
+    "aliases": {
+        "spdx": [
+            "Open Market License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "FastCGI DevKit",
+            "fastcgi-devkit"
+        ]
+    },
+    "src": "spdx"
+}

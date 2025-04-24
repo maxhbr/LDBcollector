@@ -1,0 +1,17 @@
+{
+    "canonical": "Python-2.0",
+    "aliases": {
+        "spdx": [
+            "Python License 2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "python",
+            "Python Software Foundation License v2"
+        ],
+        "osi": [
+            "Python License, Version 2.0"
+        ]
+    },
+    "src": "spdx"
+}

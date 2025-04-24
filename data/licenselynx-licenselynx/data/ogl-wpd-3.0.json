@@ -1,0 +1,12 @@
+{
+    "canonical": "ogl-wpd-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OGL-WPD-3.0",
+            "Western Power Distribution Open Data Licence v3.0",
+            "LicenseRef-scancode-ogl-wpd-3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

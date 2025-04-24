@@ -1,0 +1,11 @@
+{
+    "canonical": "riverbank-sip",
+    "aliases": {
+        "scancode-licensedb": [
+            "Riverbank SIP License",
+            "LicenseRef-scancode-riverbank-sip"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

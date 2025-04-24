@@ -1,0 +1,12 @@
+{
+    "canonical": "adobe-dng-spec-patent",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe DNG Specification patent license",
+            "Adobe Digital Negative (DNG) Specification patent license",
+            "LicenseRef-scancode-adobe-dng-spec-patent"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

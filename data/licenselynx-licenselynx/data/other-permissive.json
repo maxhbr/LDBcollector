@@ -1,0 +1,12 @@
+{
+    "canonical": "other-permissive",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-Fedora-UltraPermissive",
+            "Other Permissive Licenses",
+            "LicenseRef-scancode-other-permissive"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

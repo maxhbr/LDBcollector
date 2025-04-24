@@ -1,0 +1,10 @@
+{
+    "canonical": "digia-qt-exception-lgpl-2.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Digia Qt Exception to LGPL 2.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

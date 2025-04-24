@@ -1,0 +1,12 @@
+{
+    "canonical": "ocsl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OCSL 1.0",
+            "Oracle Community Source License v1.0",
+            "LicenseRef-scancode-ocsl-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

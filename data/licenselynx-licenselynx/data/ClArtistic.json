@@ -1,0 +1,13 @@
+{
+    "canonical": "ClArtistic",
+    "aliases": {
+        "spdx": [
+            "Clarified Artistic License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "artistic-clarified"
+        ]
+    },
+    "src": "spdx"
+}

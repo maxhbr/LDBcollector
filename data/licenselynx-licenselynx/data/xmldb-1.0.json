@@ -1,0 +1,11 @@
+{
+    "canonical": "xmldb-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "XML:DB Initiative Software License 1.0",
+            "LicenseRef-scancode-xmldb-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

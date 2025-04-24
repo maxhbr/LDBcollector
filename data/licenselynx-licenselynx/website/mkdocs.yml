@@ -1,0 +1,64 @@
+#
+# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
+#
+site_name: LicenseLynx
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  logo: assets/LicenseLynx_Icon.png
+  favicon: assets/LicenseLynx_Icon.png
+  features:
+    - navigation.footer
+
+nav:
+  - Introduction: index.md
+  - FAQ: faq.md
+  - How LicenseLynx works: licenselynxworks.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Contributing: contribution.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/licenselynx/licenselynx
+
+plugins:
+  - search
+
+copyright: Copyright &copy; 2025 Siemens AG
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
