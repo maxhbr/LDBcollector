@@ -21,9 +21,9 @@ strict digraph {
     5974 [label="Fedora:BSD-3-Clause-acpica"
          ,color="#e09d4b"
          ,shape=doubleoctagon];
-    28526 [label="OrtLicenseCategorization\n55dc216b56eba3f507588a61fecf7553"
+    28631 [label="OrtLicenseCategorization\n55dc216b56eba3f507588a61fecf7553"
           ,fontcolor=gray
-          ,color="#e06f45"
+          ,color="#dc574a"
           ,fillcolor="beige;1"
           ,shape=ellipse];
     504 -> 505 [weight=0.5
@@ -45,6 +45,6 @@ strict digraph {
                ,color="#b8bf62"];
     5973 -> 5974 [weight=0.5
                  ,color="#e09d4b"];
-    28526 -> 505 [weight=0.5
-                 ,color="#e06f45"];
+    28631 -> 505 [weight=0.5
+                 ,color="#dc574a"];
 }

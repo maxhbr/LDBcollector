@@ -55,16 +55,16 @@
 <path fill="none" stroke="#e09d4b" stroke-width="2" d="M840.48,-878.61C787.15,-878.19 752.96,-878.7 724.27,-880.8"/>
 <polygon fill="#e09d4b" stroke="#e09d4b" stroke-width="2" points="715.54,-881.52 725.13,-876.21 718.05,-880.81 725.46,-880.2 725.5,-880.7 725.54,-881.2 718.13,-881.81 725.87,-885.18 715.54,-881.52"/>
 </g>
-<!-- 39403 -->
+<!-- 39506 -->
 <g id="node21" class="node">
-<title>39403</title>
+<title>39506</title>
 <polygon fill="none" stroke="#00876c" points="1700.27,-759.6 1700.27,-774.52 1583.01,-785.06 1417.19,-785.06 1299.93,-774.52 1299.93,-759.6 1417.19,-749.06 1583.01,-749.06 1700.27,-759.6"/>
 <polygon fill="none" stroke="#00876c" points="1704.27,-755.95 1704.27,-778.17 1583.19,-789.06 1417.01,-789.06 1295.93,-778.17 1295.93,-755.95 1417.01,-745.06 1583.19,-745.06 1704.27,-755.95"/>
 <text text-anchor="middle" x="1500.1" y="-762.01" font-family="Times,serif" font-size="14.00">metaeffekt:BSD 3&#45;Clause License (attribution)</text>
 </g>
-<!-- 417&#45;&gt;39403 -->
+<!-- 417&#45;&gt;39506 -->
 <g id="edge4" class="edge">
-<title>417&#45;&gt;39403</title>
+<title>417&#45;&gt;39506</title>
 <path fill="none" stroke="#00876c" stroke-width="2" d="M1060.51,-856.07C1175.61,-817.13 1243.97,-794.77 1296.55,-782.11"/>
 <polygon fill="#00876c" stroke="#00876c" stroke-width="2" points="1304.82,-780.18 1296.1,-786.83 1302.44,-781.25 1295.2,-782.94 1295.08,-782.45 1294.97,-781.97 1302.21,-780.28 1294.06,-778.07 1304.82,-780.18"/>
 </g>
@@ -87,61 +87,61 @@
 <path fill="none" stroke="#e09d4b" stroke-width="2" d="M852.19,-931.45C793.56,-925.09 756.62,-920.92 727.09,-917.16"/>
 <polygon fill="#e09d4b" stroke="#e09d4b" stroke-width="2" points="718.52,-916.04 729.01,-912.87 721.12,-915.88 728.5,-916.84 728.43,-917.33 728.37,-917.83 720.99,-916.87 727.85,-921.8 718.52,-916.04"/>
 </g>
-<!-- 8762 -->
+<!-- 8783 -->
 <g id="node12" class="node">
-<title>8762</title>
+<title>8783</title>
 <polygon fill="none" stroke="#00876c" points="780.7,-1175.24 780.7,-1190.15 689.41,-1200.7 560.29,-1200.7 469,-1190.15 469,-1175.24 560.29,-1164.7 689.41,-1164.7 780.7,-1175.24"/>
 <polygon fill="none" stroke="#00876c" points="784.7,-1171.68 784.7,-1193.72 689.64,-1204.7 560.06,-1204.7 465,-1193.72 465,-1171.68 560.06,-1160.7 689.64,-1160.7 784.7,-1171.68"/>
 <text text-anchor="middle" x="624.85" y="-1177.65" font-family="Times,serif" font-size="14.00">BlueOak:BSD&#45;3&#45;Clause&#45;Attribution</text>
 </g>
-<!-- 418&#45;&gt;8762 -->
+<!-- 418&#45;&gt;8783 -->
 <g id="edge7" class="edge">
-<title>418&#45;&gt;8762</title>
+<title>418&#45;&gt;8783</title>
 <path fill="none" stroke="#00876c" stroke-width="2" d="M930.99,-966.2C748.29,-1079.34 719.9,-1097.89 657.66,-1153.19"/>
 <polygon fill="#00876c" stroke="#00876c" stroke-width="2" points="651.29,-1158.87 655.76,-1148.86 652.87,-1156.79 658.42,-1151.84 658.75,-1152.21 659.09,-1152.59 653.54,-1157.54 661.75,-1155.57 651.29,-1158.87"/>
 </g>
-<!-- 27699 -->
+<!-- 27804 -->
 <g id="node15" class="node">
-<title>27699</title>
+<title>27804</title>
 <polygon fill="none" stroke="#e18745" points="1475.07,-1030.72 1475.07,-1045.63 1381.83,-1056.18 1249.96,-1056.18 1156.72,-1045.63 1156.72,-1030.72 1249.96,-1020.18 1381.83,-1020.18 1475.07,-1030.72"/>
 <polygon fill="none" stroke="#e18745" points="1479.07,-1027.15 1479.07,-1049.21 1382.05,-1060.18 1249.74,-1060.18 1152.72,-1049.21 1152.72,-1027.15 1249.74,-1016.18 1382.05,-1016.18 1479.07,-1027.15"/>
 <text text-anchor="middle" x="1315.89" y="-1033.13" font-family="Times,serif" font-size="14.00">fossology:BSD&#45;3&#45;Clause&#45;Attribution</text>
 </g>
-<!-- 418&#45;&gt;27699 -->
+<!-- 418&#45;&gt;27804 -->
 <g id="edge8" class="edge">
-<title>418&#45;&gt;27699</title>
+<title>418&#45;&gt;27804</title>
 <path fill="none" stroke="#e18745" stroke-width="2" d="M1021.57,-965.4C1092.01,-993.26 1135.95,-1010.1 1170.05,-1020.43"/>
 <polygon fill="#e18745" stroke="#e18745" stroke-width="2" points="1178.46,-1022.88 1167.6,-1024.4 1175.86,-1022.64 1168.72,-1020.56 1168.86,-1020.08 1169,-1019.6 1176.14,-1021.68 1170.11,-1015.76 1178.46,-1022.88"/>
 </g>
-<!-- 36468 -->
+<!-- 36571 -->
 <g id="node19" class="node">
-<title>36468</title>
+<title>36571</title>
 <polygon fill="none" stroke="#379469" points="1092.32,-1396.94 1092.32,-1411.85 1010.44,-1422.4 894.63,-1422.4 812.75,-1411.85 812.75,-1396.94 894.63,-1386.4 1010.44,-1386.4 1092.32,-1396.94"/>
 <polygon fill="none" stroke="#379469" points="1096.32,-1393.42 1096.32,-1415.37 1010.69,-1426.4 894.38,-1426.4 808.75,-1415.37 808.75,-1393.42 894.38,-1382.4 1010.69,-1382.4 1096.32,-1393.42"/>
 <text text-anchor="middle" x="952.53" y="-1399.35" font-family="Times,serif" font-size="14.00">cavil:BSD&#45;3&#45;Clause&#45;Attribution</text>
 </g>
-<!-- 418&#45;&gt;36468 -->
+<!-- 418&#45;&gt;36571 -->
 <g id="edge9" class="edge">
-<title>418&#45;&gt;36468</title>
+<title>418&#45;&gt;36571</title>
 <path fill="none" stroke="#379469" stroke-width="2" d="M963.71,-966.17C922.7,-1232.58 919.95,-1257.73 945.02,-1371.07"/>
 <polygon fill="#379469" stroke="#379469" stroke-width="2" points="946.92,-1379.57 940.35,-1370.79 945.87,-1377.18 944.25,-1369.92 944.74,-1369.81 945.23,-1369.7 946.85,-1376.96 949.13,-1368.83 946.92,-1379.57"/>
 </g>
-<!-- 418&#45;&gt;39403 -->
+<!-- 418&#45;&gt;39506 -->
 <g id="edge10" class="edge">
-<title>418&#45;&gt;39403</title>
+<title>418&#45;&gt;39506</title>
 <path fill="none" stroke="#00876c" stroke-dasharray="5,2" d="M1022.5,-922.43C1246.66,-835.89 1313.48,-810.86 1392.84,-790.99"/>
 <polygon fill="#00876c" stroke="#00876c" points="1402.44,-788.64 1393.8,-795.39 1398.76,-789.54 1392.72,-791.02 1392.72,-791.02 1392.72,-791.02 1398.76,-789.54 1391.65,-786.65 1402.44,-788.64"/>
 </g>
-<!-- 50955 -->
+<!-- 51058 -->
 <g id="node25" class="node">
-<title>50955</title>
+<title>51058</title>
 <polygon fill="none" stroke="#dac767" points="1016.49,-1046.57 1016.49,-1061.49 938.5,-1072.03 828.2,-1072.03 750.21,-1061.49 750.21,-1046.57 828.2,-1036.03 938.5,-1036.03 1016.49,-1046.57"/>
 <polygon fill="none" stroke="#dac767" points="1020.49,-1043.08 1020.49,-1064.98 938.77,-1076.03 827.93,-1076.03 746.21,-1064.98 746.21,-1043.08 827.93,-1032.03 938.77,-1032.03 1020.49,-1043.08"/>
 <text text-anchor="middle" x="883.35" y="-1048.98" font-family="Times,serif" font-size="14.00">fosslight:BSD with attribution</text>
 </g>
-<!-- 418&#45;&gt;50955 -->
+<!-- 418&#45;&gt;51058 -->
 <g id="edge11" class="edge">
-<title>418&#45;&gt;50955</title>
+<title>418&#45;&gt;51058</title>
 <path fill="none" stroke="#dac767" stroke-width="2" d="M944.18,-966.03C915.38,-994.08 904.29,-1006.23 896.34,-1021.64"/>
 <polygon fill="#dac767" stroke="#dac767" stroke-width="2" points="892.68,-1029.6 892.76,-1018.64 893.29,-1027.07 896.4,-1020.31 896.85,-1020.52 897.31,-1020.72 894.2,-1027.48 900.94,-1022.39 892.68,-1029.6"/>
 </g>
@@ -164,21 +164,21 @@
 <path fill="none" stroke="#e09d4b" stroke-dasharray="5,2" d="M911.16,-985.41C763.79,-959.38 723.14,-950.21 666.41,-925.77"/>
 <polygon fill="#e09d4b" stroke="#e09d4b" points="657.5,-921.86 668.47,-921.76 660.96,-923.38 666.66,-925.88 666.66,-925.88 666.66,-925.88 660.96,-923.38 664.85,-930 657.5,-921.86"/>
 </g>
-<!-- 419&#45;&gt;8762 -->
+<!-- 419&#45;&gt;8783 -->
 <g id="edge14" class="edge">
-<title>419&#45;&gt;8762</title>
+<title>419&#45;&gt;8783</title>
 <path fill="none" stroke="#00876c" stroke-width="2" d="M951.44,-1021.82C785.52,-1107.41 744.48,-1128.33 684.88,-1155.62"/>
 <polygon fill="#00876c" stroke="#00876c" stroke-width="2" points="676.95,-1159.24 684.18,-1150.99 679.07,-1157.72 685.84,-1154.63 686.04,-1155.09 686.25,-1155.54 679.49,-1158.63 687.91,-1159.18 676.95,-1159.24"/>
 </g>
-<!-- 419&#45;&gt;27699 -->
+<!-- 419&#45;&gt;27804 -->
 <g id="edge15" class="edge">
-<title>419&#45;&gt;27699</title>
+<title>419&#45;&gt;27804</title>
 <path fill="none" stroke="#e18745" stroke-width="2" d="M1053.75,-1018.71C1090.22,-1030.05 1118.38,-1038.44 1141.65,-1044.29"/>
 <polygon fill="#e18745" stroke="#e18745" stroke-width="2" points="1149.98,-1046.31 1139.2,-1048.33 1147.37,-1046.19 1140.15,-1044.44 1140.26,-1043.96 1140.38,-1043.47 1147.61,-1045.22 1141.32,-1039.58 1149.98,-1046.31"/>
 </g>
-<!-- 419&#45;&gt;50955 -->
+<!-- 419&#45;&gt;51058 -->
 <g id="edge16" class="edge">
-<title>419&#45;&gt;50955</title>
+<title>419&#45;&gt;51058</title>
 <path fill="none" stroke="#dac767" stroke-width="2" d="M952.09,-1022.01C949.06,-1023.6 946.24,-1025.07 943.6,-1026.44"/>
 <polygon fill="#dac767" stroke="#dac767" stroke-width="2" points="935.87,-1030.43 942.69,-1021.85 937.92,-1028.81 944.53,-1025.4 944.75,-1025.85 944.98,-1026.29 938.37,-1029.7 946.82,-1029.85 935.87,-1030.43"/>
 </g>
@@ -214,9 +214,9 @@
 <polygon fill="none" stroke="black" points="1664.77,-425.4 1664.77,-440.31 1646.49,-450.86 1620.64,-450.86 1602.36,-440.31 1602.36,-425.4 1620.64,-414.86 1646.49,-414.86 1664.77,-425.4"/>
 <text text-anchor="middle" x="1633.56" y="-427.81" font-family="Times,serif" font-size="14.00">BSD</text>
 </g>
-<!-- 5935&#45;&gt;39403 -->
+<!-- 5935&#45;&gt;39506 -->
 <g id="edge19" class="edge">
-<title>5935&#45;&gt;39403</title>
+<title>5935&#45;&gt;39506</title>
 <path fill="none" stroke="#00876c" stroke-dasharray="5,2" d="M1632.46,-451.14C1626.08,-553.48 1620.31,-568.15 1519.12,-735.62"/>
 <polygon fill="#00876c" stroke="#00876c" points="1514.22,-743.72 1515.55,-732.83 1516.18,-740.48 1519.4,-735.16 1519.4,-735.16 1519.4,-735.16 1516.18,-740.48 1523.25,-737.49 1514.22,-743.72"/>
 </g>
@@ -233,131 +233,131 @@
 <path fill="none" stroke="#e09d4b" d="M294.72,-867.92C333.3,-871.86 380.52,-876.55 460.09,-884.38"/>
 <polygon fill="#e09d4b" stroke="#e09d4b" points="459.73,-887.86 470.03,-885.36 460.42,-880.89 459.73,-887.86"/>
 </g>
-<!-- 8761 -->
+<!-- 8782 -->
 <g id="node11" class="node">
-<title>8761</title>
+<title>8782</title>
 <ellipse fill="none" stroke="#00876c" cx="249.2" cy="-1438.3" rx="154.5" ry="28.99"/>
 <text text-anchor="middle" x="249.2" y="-1441.5" font-family="Times,serif" font-size="14.00" fill="gray">BlueOakCouncil</text>
 <text text-anchor="middle" x="249.2" y="-1425" font-family="Times,serif" font-size="14.00" fill="gray">4c96dffa2ede20940f61a3ab4f185345</text>
 </g>
-<!-- 8761&#45;&gt;8762 -->
+<!-- 8782&#45;&gt;8783 -->
 <g id="edge21" class="edge">
-<title>8761&#45;&gt;8762</title>
+<title>8782&#45;&gt;8783</title>
 <path fill="none" stroke="#00876c" d="M287.06,-1409.88C357.85,-1357 388.8,-1336.39 580.88,-1211.33"/>
 <polygon fill="#00876c" stroke="#00876c" points="582.7,-1214.31 589.18,-1205.92 578.89,-1208.45 582.7,-1214.31"/>
 </g>
-<!-- 12756 -->
+<!-- 12862 -->
 <g id="node13" class="node">
-<title>12756</title>
+<title>12862</title>
 <polygon fill="none" stroke="black" points="1902.38,-488.34 1902.38,-503.25 1854.25,-513.8 1786.17,-513.8 1738.04,-503.25 1738.04,-488.34 1786.17,-477.8 1854.25,-477.8 1902.38,-488.34"/>
 <text text-anchor="middle" x="1820.21" y="-490.75" font-family="Times,serif" font-size="14.00">scancode:bsd&#45;ack</text>
 </g>
-<!-- 12756&#45;&gt;39403 -->
+<!-- 12862&#45;&gt;39506 -->
 <g id="edge22" class="edge">
-<title>12756&#45;&gt;39403</title>
+<title>12862&#45;&gt;39506</title>
 <path fill="none" stroke="#00876c" stroke-dasharray="5,2" d="M1804.15,-513.82C1737.79,-588.08 1720.87,-602.26 1538.91,-738.1"/>
 <polygon fill="#00876c" stroke="#00876c" points="1531.1,-743.93 1536.42,-734.34 1534.13,-741.67 1539.11,-737.95 1539.11,-737.95 1539.11,-737.95 1534.13,-741.67 1541.81,-741.55 1531.1,-743.93"/>
 </g>
-<!-- 27698 -->
+<!-- 27803 -->
 <g id="node14" class="node">
-<title>27698</title>
+<title>27803</title>
 <ellipse fill="none" stroke="#e18745" cx="1419.59" cy="-1097.8" rx="159.81" ry="28.99"/>
 <text text-anchor="middle" x="1419.59" y="-1101" font-family="Times,serif" font-size="14.00" fill="gray">Fossology</text>
 <text text-anchor="middle" x="1419.59" y="-1084.5" font-family="Times,serif" font-size="14.00" fill="gray">706d4e4f0c18122b6de720ed981eb051</text>
 </g>
-<!-- 27698&#45;&gt;27699 -->
+<!-- 27803&#45;&gt;27804 -->
 <g id="edge23" class="edge">
-<title>27698&#45;&gt;27699</title>
+<title>27803&#45;&gt;27804</title>
 <path fill="none" stroke="#e18745" d="M1374.36,-1069.7C1372.2,-1068.5 1369.88,-1067.23 1367.39,-1065.86"/>
 <polygon fill="#e18745" stroke="#e18745" points="1369.29,-1062.91 1358.83,-1061.22 1365.95,-1069.06 1369.29,-1062.91"/>
 </g>
-<!-- 28515 -->
+<!-- 28620 -->
 <g id="node16" class="node">
-<title>28515</title>
-<ellipse fill="none" stroke="#e06f45" cx="1049.54" cy="-438.02" rx="160.87" ry="28.99"/>
+<title>28620</title>
+<ellipse fill="none" stroke="#dc574a" cx="1049.54" cy="-438.02" rx="160.87" ry="28.99"/>
 <text text-anchor="middle" x="1049.54" y="-441.22" font-family="Times,serif" font-size="14.00" fill="gray">OrtLicenseCategorization</text>
 <text text-anchor="middle" x="1049.54" y="-424.72" font-family="Times,serif" font-size="14.00" fill="gray">4427c3119783715f3e2b763dc9462294</text>
 </g>
-<!-- 28515&#45;&gt;417 -->
+<!-- 28620&#45;&gt;417 -->
 <g id="edge24" class="edge">
-<title>28515&#45;&gt;417</title>
-<path fill="none" stroke="#e06f45" d="M1038.99,-467.13C1002.54,-568.77 1000.02,-593.69 989.55,-843.07"/>
-<polygon fill="#e06f45" stroke="#e06f45" points="986.06,-842.69 989.14,-852.83 993.06,-842.98 986.06,-842.69"/>
+<title>28620&#45;&gt;417</title>
+<path fill="none" stroke="#dc574a" d="M1038.99,-467.13C1002.54,-568.77 1000.02,-593.69 989.55,-843.07"/>
+<polygon fill="#dc574a" stroke="#dc574a" points="986.06,-842.69 989.14,-852.83 993.06,-842.98 986.06,-842.69"/>
 </g>
-<!-- 35370 -->
+<!-- 35473 -->
 <g id="node17" class="node">
-<title>35370</title>
-<ellipse fill="none" stroke="#e09d4b" cx="962.54" cy="-815.89" rx="158.75" ry="28.99"/>
+<title>35473</title>
+<ellipse fill="none" stroke="#e18745" cx="962.54" cy="-815.89" rx="158.75" ry="28.99"/>
 <text text-anchor="middle" x="962.54" y="-819.09" font-family="Times,serif" font-size="14.00" fill="gray">OrtLicenseCategorization</text>
 <text text-anchor="middle" x="962.54" y="-802.59" font-family="Times,serif" font-size="14.00" fill="gray">8080a882568e11c649e8e2eebc7c88a2</text>
 </g>
-<!-- 35370&#45;&gt;417 -->
+<!-- 35473&#45;&gt;417 -->
 <g id="edge25" class="edge">
-<title>35370&#45;&gt;417</title>
-<path fill="none" stroke="#e09d4b" d="M969.21,-845.27C969.25,-845.35 969.28,-845.44 969.32,-845.52"/>
-<polygon fill="#e09d4b" stroke="#e09d4b" points="965.38,-845.44 972.93,-852.87 971.67,-842.35 965.38,-845.44"/>
+<title>35473&#45;&gt;417</title>
+<path fill="none" stroke="#e18745" d="M969.21,-845.27C969.25,-845.35 969.28,-845.44 969.32,-845.52"/>
+<polygon fill="#e18745" stroke="#e18745" points="965.38,-845.44 972.93,-852.87 971.67,-842.35 965.38,-845.44"/>
 </g>
-<!-- 36467 -->
+<!-- 36570 -->
 <g id="node18" class="node">
-<title>36467</title>
+<title>36570</title>
 <ellipse fill="none" stroke="#379469" cx="899.77" cy="-1849.56" rx="161.93" ry="28.99"/>
 <text text-anchor="middle" x="899.77" y="-1852.76" font-family="Times,serif" font-size="14.00" fill="gray">CavilLicenseChange</text>
 <text text-anchor="middle" x="899.77" y="-1836.26" font-family="Times,serif" font-size="14.00" fill="gray">3602cbb938b4970bb9415980f9284449</text>
 </g>
-<!-- 36467&#45;&gt;36468 -->
+<!-- 36570&#45;&gt;36571 -->
 <g id="edge26" class="edge">
-<title>36467&#45;&gt;36468</title>
+<title>36570&#45;&gt;36571</title>
 <path fill="none" stroke="#379469" d="M901.37,-1820.19C907.09,-1717.05 910.34,-1692.3 947.61,-1437.97"/>
 <polygon fill="#379469" stroke="#379469" points="951.03,-1438.77 949.02,-1428.37 944.11,-1437.76 951.03,-1438.77"/>
 </g>
-<!-- 39402 -->
+<!-- 39505 -->
 <g id="node20" class="node">
-<title>39402</title>
+<title>39505</title>
 <ellipse fill="none" stroke="#00876c" cx="1919.21" cy="-1053.22" rx="155.03" ry="28.99"/>
 <text text-anchor="middle" x="1919.21" y="-1056.42" font-family="Times,serif" font-size="14.00" fill="gray">MetaeffektLicense</text>
 <text text-anchor="middle" x="1919.21" y="-1039.92" font-family="Times,serif" font-size="14.00" fill="gray">4cdb478fcac388479abf801a7f52a4c6</text>
 </g>
-<!-- 39402&#45;&gt;39403 -->
+<!-- 39505&#45;&gt;39506 -->
 <g id="edge27" class="edge">
-<title>39402&#45;&gt;39403</title>
+<title>39505&#45;&gt;39506</title>
 <path fill="none" stroke="#00876c" d="M1897.85,-1024.14C1816.16,-913.74 1792.63,-897.7 1560.95,-794.18"/>
 <polygon fill="#00876c" stroke="#00876c" points="1562.42,-791 1551.86,-790.12 1559.57,-797.39 1562.42,-791"/>
 </g>
-<!-- 39404 -->
+<!-- 39507 -->
 <g id="node22" class="node">
-<title>39404</title>
+<title>39507</title>
 <polygon fill="none" stroke="#00876c" points="2147.91,-606.86 2147.91,-621.77 2057.59,-632.32 1929.85,-632.32 1839.53,-621.77 1839.53,-606.86 1929.85,-596.32 2057.59,-596.32 2147.91,-606.86"/>
 <polygon fill="none" stroke="#00876c" points="2151.91,-603.3 2151.91,-625.33 2057.82,-636.32 1929.62,-636.32 1835.53,-625.33 1835.53,-603.3 1929.62,-592.32 2057.82,-592.32 2151.91,-603.3"/>
 <text text-anchor="middle" x="1993.72" y="-609.27" font-family="Times,serif" font-size="14.00">BSD 3&#45;Clause License (attribution)</text>
 </g>
-<!-- 39404&#45;&gt;39403 -->
+<!-- 39507&#45;&gt;39506 -->
 <g id="edge28" class="edge">
-<title>39404&#45;&gt;39403</title>
+<title>39507&#45;&gt;39506</title>
 <path fill="none" stroke="#00876c" stroke-width="2" d="M1916.78,-635.23C1838.77,-656.85 1786.01,-673.69 1579.41,-741.15"/>
 <polygon fill="#00876c" stroke="#00876c" stroke-width="2" points="1571.13,-743.85 1579.24,-736.47 1573.41,-742.58 1580.48,-740.27 1580.64,-740.75 1580.79,-741.22 1573.72,-743.53 1582.04,-745.03 1571.13,-743.85"/>
 </g>
-<!-- 39405 -->
+<!-- 39508 -->
 <g id="node23" class="node">
-<title>39405</title>
+<title>39508</title>
 <polygon fill="none" stroke="#00876c" points="2066.73,-822.88 2066.73,-837.79 1998.8,-848.34 1902.73,-848.34 1834.8,-837.79 1834.8,-822.88 1902.73,-812.34 1998.8,-812.34 2066.73,-822.88"/>
 <text text-anchor="middle" x="1950.76" y="-825.29" font-family="Times,serif" font-size="14.00">BSD 3&#45;Clause Attribution</text>
 </g>
-<!-- 39405&#45;&gt;39403 -->
+<!-- 39508&#45;&gt;39506 -->
 <g id="edge29" class="edge">
-<title>39405&#45;&gt;39403</title>
+<title>39508&#45;&gt;39506</title>
 <path fill="none" stroke="#00876c" stroke-dasharray="5,2" d="M1901.32,-812.15C1841.86,-791.03 1805.27,-782.84 1715.31,-776.88"/>
 <polygon fill="#00876c" stroke="#00876c" points="1705.58,-776.26 1715.85,-772.41 1709.36,-776.5 1715.56,-776.9 1715.56,-776.9 1715.56,-776.9 1709.36,-776.5 1715.28,-781.39 1705.58,-776.26"/>
 </g>
-<!-- 50954 -->
+<!-- 51057 -->
 <g id="node24" class="node">
-<title>50954</title>
+<title>51057</title>
 <ellipse fill="none" stroke="#dac767" cx="928.96" cy="-1121.89" rx="159.28" ry="28.99"/>
 <text text-anchor="middle" x="928.96" y="-1125.09" font-family="Times,serif" font-size="14.00" fill="gray">FOSSLight</text>
 <text text-anchor="middle" x="928.96" y="-1108.59" font-family="Times,serif" font-size="14.00" fill="gray">f5cb22edb525bda40c39674e02e735db</text>
 </g>
-<!-- 50954&#45;&gt;50955 -->
+<!-- 51057&#45;&gt;51058 -->
 <g id="edge30" class="edge">
-<title>50954&#45;&gt;50955</title>
+<title>51057&#45;&gt;51058</title>
 <path fill="none" stroke="#dac767" d="M895.15,-1093.14C894.16,-1091.35 893.26,-1089.43 892.41,-1087.3"/>
 <polygon fill="#dac767" stroke="#dac767" points="895.78,-1086.35 889.35,-1077.93 889.13,-1088.52 895.78,-1086.35"/>
 </g>

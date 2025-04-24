@@ -21,17 +21,17 @@ strict digraph {
     6000 [label="Fedora:BSD-Attribution-HPND-disclaimer"
          ,color="#e09d4b"
          ,shape=doubleoctagon];
-    28534 [label="OrtLicenseCategorization\nc4227f67ef49129519f2dbd3e7bca605"
+    28639 [label="OrtLicenseCategorization\nc4227f67ef49129519f2dbd3e7bca605"
           ,fontcolor=gray
-          ,color="#e06f45"
+          ,color="#dc574a"
           ,fillcolor="beige;1"
           ,shape=ellipse];
-    36505 [label="CavilLicenseChange\ne00b8d81844a4ec4e47c56c6cb5ee959"
+    36608 [label="CavilLicenseChange\ne00b8d81844a4ec4e47c56c6cb5ee959"
           ,fontcolor=gray
           ,color="#379469"
           ,fillcolor="beige;1"
           ,shape=ellipse];
-    36506 [label="cavil:BSD-Attribution-HPND-disclaimer"
+    36609 [label="cavil:BSD-Attribution-HPND-disclaimer"
           ,color="#379469"
           ,shape=doubleoctagon];
     574 -> 575 [weight=0.5
@@ -47,11 +47,11 @@ strict digraph {
                 ,arrowhead=vee
                 ,weight=0.7
                 ,color="#e09d4b"];
-    576 -> 36506 [style=bold
+    576 -> 36609 [style=bold
                  ,arrowhead=vee
                  ,weight=0.7
                  ,color="#379469"];
-    576 -> 36506 [style=bold
+    576 -> 36609 [style=bold
                  ,arrowhead=vee
                  ,weight=0.7
                  ,color="#379469"];
@@ -61,8 +61,8 @@ strict digraph {
                ,color="#b8bf62"];
     5999 -> 6000 [weight=0.5
                  ,color="#e09d4b"];
-    28534 -> 575 [weight=0.5
-                 ,color="#e06f45"];
-    36505 -> 36506 [weight=0.5
+    28639 -> 575 [weight=0.5
+                 ,color="#dc574a"];
+    36608 -> 36609 [weight=0.5
                    ,color="#379469"];
 }

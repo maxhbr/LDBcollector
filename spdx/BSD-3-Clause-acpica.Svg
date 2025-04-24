@@ -87,18 +87,18 @@
 <path fill="none" stroke="#e09d4b" d="M185.54,-58.26C237.98,-114.03 258.49,-137.53 389.45,-289.47"/>
 <polygon fill="#e09d4b" stroke="#e09d4b" points="386.42,-291.32 395.6,-296.61 391.72,-286.75 386.42,-291.32"/>
 </g>
-<!-- 28526 -->
+<!-- 28631 -->
 <g id="node7" class="node">
-<title>28526</title>
-<ellipse fill="none" stroke="#e06f45" cx="169.83" cy="-654.43" rx="156.09" ry="28.99"/>
+<title>28631</title>
+<ellipse fill="none" stroke="#dc574a" cx="169.83" cy="-654.43" rx="156.09" ry="28.99"/>
 <text text-anchor="middle" x="169.83" y="-657.63" font-family="Times,serif" font-size="14.00" fill="gray">OrtLicenseCategorization</text>
 <text text-anchor="middle" x="169.83" y="-641.13" font-family="Times,serif" font-size="14.00" fill="gray">55dc216b56eba3f507588a61fecf7553</text>
 </g>
-<!-- 28526&#45;&gt;505 -->
+<!-- 28631&#45;&gt;505 -->
 <g id="edge7" class="edge">
-<title>28526&#45;&gt;505</title>
-<path fill="none" stroke="#e06f45" d="M234.14,-681.18C312.21,-711.48 347.69,-710.71 467.04,-678.48"/>
-<polygon fill="#e06f45" stroke="#e06f45" points="467.89,-681.88 476.62,-675.88 466.05,-675.12 467.89,-681.88"/>
+<title>28631&#45;&gt;505</title>
+<path fill="none" stroke="#dc574a" d="M234.14,-681.18C312.21,-711.48 347.69,-710.71 467.04,-678.48"/>
+<polygon fill="#dc574a" stroke="#dc574a" points="467.89,-681.88 476.62,-675.88 466.05,-675.12 467.89,-681.88"/>
 </g>
 </g>
 </svg>

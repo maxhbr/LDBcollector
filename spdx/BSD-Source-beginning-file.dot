@@ -13,9 +13,9 @@ strict digraph {
     605 [label="BSD Source Code Attribution - beginning of file variant"
         ,color="#b8bf62"
         ,shape=doubleoctagon];
-    28538 [label="OrtLicenseCategorization\n6319d87e305e88c2eaaf2fe43a317f01"
+    28643 [label="OrtLicenseCategorization\n6319d87e305e88c2eaaf2fe43a317f01"
           ,fontcolor=gray
-          ,color="#e06f45"
+          ,color="#dc574a"
           ,fillcolor="beige;1"
           ,shape=ellipse];
     602 -> 603 [weight=0.5
@@ -27,6 +27,6 @@ strict digraph {
                ,arrowhead=vee
                ,weight=0.7
                ,color="#b8bf62"];
-    28538 -> 603 [weight=0.5
-                 ,color="#e06f45"];
+    28643 -> 603 [weight=0.5
+                 ,color="#dc574a"];
 }
