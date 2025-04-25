@@ -50,6 +50,7 @@ library
       Ldbcollector.Source.Hermine
       Ldbcollector.Source.HitachiOpenLicense
       Ldbcollector.Source.Ifross
+      Ldbcollector.Source.LicenseLynx
       Ldbcollector.Source.Metaeffekt
       Ldbcollector.Source.OKFN
       Ldbcollector.Source.ORT

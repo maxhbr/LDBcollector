@@ -19,6 +19,7 @@ import Ldbcollector.Source.GoogleLicensePolicy
 import Ldbcollector.Source.Hermine
 import Ldbcollector.Source.HitachiOpenLicense
 import Ldbcollector.Source.Ifross
+import Ldbcollector.Source.LicenseLynx
 import Ldbcollector.Source.Metaeffekt
 import Ldbcollector.Source.OKFN
 import Ldbcollector.Source.ORT
@@ -58,6 +59,7 @@ applySources curation = do
           applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv"),
           applySource (EclipseOrgLegal "./data/eclipse.org-legal-licenses.json"),
           applySource (Ifross "./data/ifrOSS-ifrOSS.yaml"),
+          applySource (LicenseLynxData "./data/licenselynx-licenselynx/data"),
           applySource (TLDRLicenseNamings "data/tldrlegal/tldrLicenses.csv"),
           applySource (Curation curation)
         ]
