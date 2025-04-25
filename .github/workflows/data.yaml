@@ -5,11 +5,13 @@ on:
       - main
     paths:
       - data/**
+      - .github/workflows/data.yaml
   pull_request:
     branches:
       - main
     paths:
       - data/**
+      - .github/workflows/data.yaml
 jobs:
   validation:
     runs-on: ubuntu-latest
@@ -50,4 +52,5 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Update statistics in readme
+          commit_message: "chore: update statistics in README.md"
+          branch: chore/update-statistics-svg
