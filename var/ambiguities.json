@@ -15,7 +15,8 @@
         },
         "GNU Affero General Public License": {
             "aliases": [
-                "AGPL"
+              "AGPL",
+              " Affero General Public License"
             ],
             "problem": "This license has different versions (1.0, 2.0 and 3.0) and different names (version 1.0 does not have GNU in the name). Without a version number it is not possible to determine which of the versions is meant."
         },
