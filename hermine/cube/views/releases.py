@@ -19,6 +19,7 @@ from django.views.generic import (
     UpdateView,
     DetailView,
     TemplateView,
+    DeleteView,
 )
 from django_filters.views import FilterView
 
@@ -72,6 +73,14 @@ class ReleaseUpdateView(
     form_class = ReleaseForm
     permission_required = "cube.change_release"
     template_name = "cube/release_update.html"
+
+
+class ReleaseDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    model = Release
+    permission_required = "cube.delete_release"
+
+    def get_success_url(self):
+        return reverse("cube:product_detail", kwargs={"pk": self.object.product_id})
 
 
 class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):

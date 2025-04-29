@@ -293,6 +293,11 @@ urlpatterns = [
         name="release_summary",
     ),
     path(
+        "releases/<int:pk>/delete/",
+        views.ReleaseDeleteView.as_view(),
+        name="release_delete",
+    ),
+    path(
         "releases/<int:pk>/import/",
         views.ReleaseImportView.as_view(),
         name="release_import",
