@@ -9,11 +9,11 @@ SPDX-License-Identifier: CC-BY-4.0
 ## Main concepts used
 
 - In Hermine a ***product*** is a piece of software that you develop internally.
-- ***Procucts*** can be grouped into differents ***categories***.
+- ***Products*** can be grouped into different ***categories***.
 - A ***release*** is a version of a product.
 - A ***component*** is a third party FOSS component used by you
 - A ***version*** is a version of a component
-- A ***scope*** is a scenario in which a 3rd party dependency is used. Typically, in a nodeJS project there is two scopes: `dependencies` and `devDependencies`.
+- A ***scope*** is a scenario in which a 3rd party dependency is used. Typically, in a nodeJS project there are two scopes: `dependencies` and `devDependencies`.
 The exact meaning depends on each package manager (see for instance [Maven's documentation for Dependency Scopes](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope))
 
 Definitions of various terms related to compliance have been collected in [a glossary (ODS format)](_static/Hermine_glossary.ods).
@@ -46,14 +46,14 @@ Hermine helps you automatically validate the inclusion of an Open Source compone
 ### What are the Open Source components used across my different products?
 
 Hermine allows you to identify the different products including a given version of an Open Source component,
-to list the most frequently used Open Source component accross all your products, etc.
+to list the most frequently used Open Source component across all your products, etc.
 
 ## Manual workflow
 
-### Define a licence policy by reviewing licences
+### Define a license policy by reviewing licenses
 
-You must first create a licence policy by [analysing the Open Source licences](defining_a_FOSS_policy.md).
-If you want to test the application, you can import the shared data provided by the Hermine project (analysed licences and compliance actions) :
+You must first create a license policy by [analyzing the Open Source licenses](defining_a_FOSS_policy.md).
+If you want to test the application, you can import the shared data provided by the Hermine project (analyzed licenses and compliance actions) :
 - Download the [Compliance actions JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Example_generic_obligations.json) and import it from the <span class ="guilabel">Generic Obligations</span> page.
 - Download the [License JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Exemple_licences.json) and import it from the <span class ="guilabel">Licenses</span> page.
 
@@ -113,7 +113,7 @@ Go to the "Validation steps" tab to validate the components you have just import
 
 Check that all the packages have a proper SPDX expression.
 
-Some package may miss licence information or carry information that doesn't follow the SPDX standard.
+Some package may miss license information or carry information that doesn't follow the SPDX standard.
 
 You can create "curation" rules. That will be stored and reused when the same component is used in another release/product.
 
@@ -121,7 +121,7 @@ You can create "curation" rules. That will be stored and reused when the same co
 
 Confirm ANDs operators in SPDX expressions are not actual mis-reported ORs.
 
-In some situations multiple licences are just expressed as a list, which is automatically converted as a cumulative expression ("A AND B"), while the reality of the licencing is actually alternative ("A OR B"), often causing false alarms.
+In some situations multiple licenses are just expressed as a list, which is automatically converted as a cumulative expression ("A AND B"), while the reality of the licensing is actually alternative ("A OR B"), often causing false alarms.
 
 #### Validation Step 3
 
@@ -129,11 +129,11 @@ This will list every scope used in you release and check that every one of them 
 
 #### Validation Step 4
 
-When a component is proposed under different licences, you must explicitely which one will be applied in your situation. You can create choice rules that will apply to different component / versions.
+When a component is proposed under different licenses, you must explicitly which one will be applied in your situation. You can create choice rules that will apply to different component / versions.
 
 #### Validation Step 5
 
-Check that the licences are compatible with your policy.
+Check that the licenses are compatible with your policy.
 You can add derogations in order to handle specific cases.
 
 ### Read your validated SBOM

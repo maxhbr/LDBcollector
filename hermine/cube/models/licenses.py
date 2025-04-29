@@ -389,7 +389,7 @@ class Obligation(models.Model):
         choices=TRIGGER_MDF_CHOICES,
         default=Usage.MODIFICATION_ANY,
         verbose_name="Triggering modifications",
-        help_text="Status of modication necessary to trigger this obligation",
+        help_text="Status of modification necessary to trigger this obligation",
     )
 
     def natural_key(self):

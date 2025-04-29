@@ -90,7 +90,7 @@ class LicenseAdmin(admin.ModelAdmin):
             },
         ),
         (
-            "Optional informations",
+            "Optional information",
             {
                 "classes": ("collapse",),
                 "fields": (

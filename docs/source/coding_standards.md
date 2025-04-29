@@ -10,7 +10,7 @@ SPDX-License-Identifier: CC-BY-4.0
 Before pushing code or content to the project's repo, you have to check that you 
 own the appropriate rights to publish it under the project's licenses, and approve 
 the terms of the [Developer Certificate of Origin version 1.1](https://developercertificate.org/). 
-To do so, you have to sign-off your commits by adding the `--signoff` option to 
+To do so, you have to sign off your commits by adding the `--signoff` option to 
 your `git commit` commands.
 
 ## REUSE standard
@@ -24,7 +24,7 @@ We try to follow the [REUSE standard](https://reuse.software/). So if you add a 
 
 ## Code linting
 
-We use [Black](https://pypi.org/project/black/) for harmonising code formatting, 
+We use [Black](https://pypi.org/project/black/) for harmonizing code formatting, 
 [Ruff](https://github.com/charliermarsh/ruff) for linting and 
 [DjHTML](https://github.com/rtts/djhtml) for indenting Django Templates.
 
@@ -84,7 +84,7 @@ class ObjectNameDeleteView(DetailView):
 ## Commit messages
 
 It would be nice to try to follow the [Conventional Commits standards](https://www.conventionalcommits.org/en/v1.0.0/).
-In order to respect it, the commit message should follows the template:
+In order to respect it, the commit message should follow the template:
 
 ```
 <type>[optional scope]: <description>

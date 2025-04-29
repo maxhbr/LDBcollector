@@ -174,10 +174,10 @@
                 "LicenseRef-fakeLicense-ContextAllowed-1.0"
             ],
             "generic":  [
-                "Fake - Generic 5 - Copyleft - Modfied"
+                "Fake - Generic 5 - Copyleft - Modified"
             ],
             "name": "Fake WeakCopylft 1. For Gen 1 : Obligation for : Distributed Source or Object, Only if Modified",
-            "verbatim": "An active fake Obligation related to Fake Generic 4 and triggered by Distribution and modificaiton",
+            "verbatim": "An active fake Obligation related to Fake Generic 4 and triggered by Distribution and modification",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "Altered"
