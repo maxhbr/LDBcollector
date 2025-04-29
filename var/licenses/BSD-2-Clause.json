@@ -62,6 +62,9 @@
       "two-clause BSD",
       "simplified BSD",
       "Liberal BSD license",
-      "FreeBSD"
+      "FreeBSD",
+      "BSD 2 Clause FreeBSD",
+      "BSD2_CLAUSE",
+      "BSD license 2-clause"
     ]
 }
