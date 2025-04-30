@@ -15,7 +15,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   </ul>
 {% endblock %}
 {% block actions %}
-  {% if perms.cube.create_license %}
+  {% if perms.cube.add_license %}
     <a href="{% url 'cube:license_create' %}" class="button">
       <span class="icon is-small">
         <i class="fas fa-plus"></i>
@@ -146,5 +146,3 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 
 {% endblock %}
-
-
