@@ -23,17 +23,15 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 8
-      - name: Setup Gradle 8.9
+      - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: "8.9"
       - name: Run automated tests
         run: |
           mkdir ./java/src/main/resources/
           python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
           cd java
           ls src/main/resources
-          gradle ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport publishToMavenLocal | tee job.log
+          ./gradlew ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport publishToMavenLocal | tee job.log
           cat job.log | grep -- " - Instruction Coverage: " | sed -e "s/.* //" > build/coverage.txt
       - name: Run coverage badge job
         run: |
