@@ -2,12 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Jython License"
-category: "Jython"
-shortName: "Jython"
-
-alternativeNames:
-  - "The Jython License"
+canonicalName: "MIT License (FreeRTOS)"
+category: "MIT"
+shortName: "MIT-FreeRTOS"
 
 otherIds: 
-  - "scancode:jython"
+  - "scancode:freertos-mit"

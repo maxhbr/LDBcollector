@@ -22,4 +22,3 @@ alternativeNames:
 
 otherIds: 
   - "scancode:llvm-exception"
-  - "scancode:apache-exception-llvm"

@@ -2,10 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "BSD 2-Clause License (variant 006)"
-category: "BSD"
-shortName: "BSD-2-Clause-006"
+canonicalName: "Redistribution Terms (variant 034)"
+category: "RT"
+shortName: "RT-Var034"
 
 canonicalNameHistory:
   - "BSD 2-Clause License Var006"
+  - "BSD 2-Clause License (variant 006)"
 

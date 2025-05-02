@@ -11,4 +11,3 @@ type: "exception"
 
 otherIds: 
   - "scancode:fltk-exception-lgpl-2.0"
-  - "scancode:lgpl-2.0-fltk"

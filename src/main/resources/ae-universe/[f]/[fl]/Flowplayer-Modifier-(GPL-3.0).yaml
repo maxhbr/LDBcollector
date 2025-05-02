@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Flowplayer Modifier (GPL 3.0)"
+category: "Flowplayer Modifier"
+shortName: "Flowplayer-Modifier-GPL-3.0"
+
+canonicalNameHistory:
+  - "Flowplayer License (GPL 3.0)"
+
+type: "modifier"
+
+otherIds: 
+  - "scancode:flowplayer-gpl-3.0"

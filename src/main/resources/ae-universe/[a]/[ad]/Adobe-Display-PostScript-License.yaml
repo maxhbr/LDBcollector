@@ -6,7 +6,17 @@ canonicalName: "Adobe Display PostScript License"
 category: "Adobe Display PostScript"
 spdxIdentifier: "Adobe-Display-PostScript"
 
+canonicalNameHistory:
+  - "X11-Style (Adobe)"
+  - "X11 License (Adobe)"
+
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Adobe-Display-PostScript"
   - "Adobe Display PostScript"
+  - "X11-Style (Adobe)"
+  - "X11-Adobe"
 
+otherIds: 
+  - "scancode:x11-adobe"

@@ -9,3 +9,5 @@ spdxIdentifier: "DocBook-Stylesheet"
 alternativeNames:
   - "DocBook Stylesheet License"
 
+otherIds: 
+  - "scancode:docbook-stylesheet"

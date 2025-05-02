@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "MIT Permission (Kerberos)"
+canonicalName: "Permission Terms (MIT Kerberos)"
 category: "Permission"
-shortName: "MIT-Permission-Kerberos"
+shortName: "Permission-MIT-Kerberos"
 
 canonicalNameHistory:
   - "Mit Permission (Kerberos)"
+  - "MIT Permission (Kerberos)"
 
 otherIds: 
   - "scancode:mit-no-trademarks"

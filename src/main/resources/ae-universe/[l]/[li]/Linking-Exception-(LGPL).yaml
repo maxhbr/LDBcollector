@@ -14,4 +14,3 @@ type: "exception"
 
 otherIds: 
   - "scancode:lgpl-3.0-linking-exception"
-  - "scancode:linking-exception-lgpl-3.0"

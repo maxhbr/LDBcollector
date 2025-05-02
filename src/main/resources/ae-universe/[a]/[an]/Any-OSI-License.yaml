@@ -9,6 +9,7 @@ spdxIdentifier: "any-OSI"
 alternativeNames:
   - "any-OSI"
   - "Any OSI License"
+  - "any OSI approved license"
 
 otherIds: 
   - "scancode:any-osi"

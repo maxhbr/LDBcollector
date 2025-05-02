@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Flowplayer License (GPL 3.0)"
-category: "Flowplayer"
-shortName: "flowplayer-gpl-3.0"
+canonicalName: "TTF2PT1 Project License"
+category: "TTF2PT1"
+shortName: "TTF2PT1"
 
 otherIds: 
-  - "scancode:flowplayer-gpl-3.0"
+  - "scancode:ttf2pt1"

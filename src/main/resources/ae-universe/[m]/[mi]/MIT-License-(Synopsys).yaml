@@ -2,15 +2,21 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "MIT Synopsys License"
-category: "MIT Synopsys License"
+canonicalName: "MIT License (Synopsys)"
+category: "MIT"
 shortName: "MIT-Synopsys"
+
+canonicalNameHistory:
+  - "MIT Synopsys License"
+  - "Permission Terms (Synopsys)"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "mit-synopsys"
+  - "synopsys-mit"
   - "MIT Synopsys License"
 
 otherIds: 
   - "scancode:mit-synopsys"
+  - "scancode:synopsys-mit"
