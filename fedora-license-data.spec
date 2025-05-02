@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.66
+Version:        1.67
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,24 @@ make check-grammar
 
 
 %changelog
+* Fri May 02 2025 Miroslav Suchý <msuchy@redhat.com> 1.67-1
+- add autossh man page ultra permissive dedication
+- add LGPL-2.1-only WITH Digia-Qt-LGPL-exception-1.1
+- add jove license
+- add man2html license
+- add DocBook-DTD license
+- add BSD-2-Clause-pkgconf-disclaimer
+- correct expression of PHP-3.0
+- Add SpacemiT esos.elf license as allowed-firmware
+- Add 7zip public domain headers
+- add Game-Programming-Gems license
+- add LGPL-2.1-or-later WITH polyparse-exception
+- add GPL-3.0-or-later WITH GPL-3.0-linking-source-exception
+- enhance BSD-3-Clause-Clear usage text
+- document known exception for kernel for BSD-3-Clause-Clear
+- add LicenseRef-Hauppauge-firmware-eula as not allowed
+- add LicenseRef-Hauppauge as not allowed
+
 * Thu Mar 27 2025 Miroslav Suchý <msuchy@redhat.com> 1.66-1
 - Mark LicenseRef-CRC32 as deprecated
 - allow packages that includes or bundle ccan as an exception
