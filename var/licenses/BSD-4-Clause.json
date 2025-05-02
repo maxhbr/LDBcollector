@@ -22,6 +22,9 @@
         "Original BSD license",
         "bsd-original",
         "BSD-4-Clause-License",
-        "BSD4.4 clause"
+      "BSD4.4 clause",
+      "BSD 4 Clause",
+      "BSD4_CLAUSE",
+      "4-clause BSD"
     ]
 }
