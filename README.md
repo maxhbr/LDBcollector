@@ -8,7 +8,7 @@ Project providing insights on the {metæffekt} license database covering
 * 268 specific and commonly used license expressions, and
 * 58 consolidated markers.
 
-as of 02nd May 2025.
+as of 2nd May 2025.
 
 The following links provide letter-specific overviews on the license information:
 
@@ -111,7 +111,7 @@ internal dataset to produce the corrected outputs.
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 32.1.2 is used. The version has not been fully processed, yet. Updates pending.
+Currently, ScanCode version 32.3.3 is used as reference version.
 
 Non-approved OSI status information is not yet complete; more details is added incrementally.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected
