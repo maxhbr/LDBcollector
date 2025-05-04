@@ -43,6 +43,7 @@ This is an overview of open licenses intended for databases. An overview of the 
 | Norwegian Licence for Open Government Data (NLOD) 1.0 | [🇬🇧](https://data.norge.no/nlod/en/1.0) | - |
 | Norwegian Licence for Open Government Data (NLOD) 2.0 | [🇬🇧](https://data.norge.no/nlod/en/2.0) | - |
 | Open Data Commons Attribution License (ODC-By) | [🇬🇧](https://opendatacommons.org/licenses/by/1.0/) | - |
+| Open Data Commons Licenses (ODCL) | [🇬🇧](https://shs.hal.science/halshs-04343942/document) | SPDX-Tag |
 | Open Data Commons Public Domain Dedication and License (PDDL) | [🇬🇧](https://opendatacommons.org/licenses/pddl/1.0/) | - |
 | Open Data License STIB-MIVB | [🇬🇧](https://opendata.stib-mivb.be/store/license) | - |
 | Open Database License (ODbL) (v1.0) | [🇬🇧](https://opendatacommons.org/licenses/odbl/1.0/) | - |
