@@ -226,7 +226,14 @@ Emojis for the links can be copied from https://emojipedia.org
 
 # USA
 
-| **Name** | US Court of Appeals for the Ninth Circuit, 2022-02-18, Cas No. 21-16029 |
+| **Name** | US District Court, N.D. California, 2023-10-25, Case No. 5:18-cv-07182-EJD |
+|:---:|:---:|
+| **Parties** | Neo4j, Inc. v. PureThink, LLC |
+| **Subject** | Confirmation that when licencing under the AGPL-3.0 with its ‘Commons Clause’, the ‘Commons Clause’ may not be removed and the software may be designated as open source software. Violation of the Lanham Act if proprietary software is referred to as "free and open source" |
+| **Licence** | - |
+| **Links** | [🇬🇧](https://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscourts.cand.335295.216.0.pdf) |
+
+| **Name** | US Court of Appeals for the Ninth Circuit, 2022-02-18, Case No. 21-16029 |
 |:---:|:---:|
 | **Parties** | Neo4j, Inc. v. PureThink, LLC |
 | **Subject** | Confirmation (preliminary procedure) that when licencing under the AGPL-3.0 with its ‘Commons Clause’, the ‘Commons Clause’ may not be removed and the software may be designated as open source software. ([Commentary at Software Freedom Conservancy](https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/)) |
