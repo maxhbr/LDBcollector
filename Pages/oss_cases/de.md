@@ -226,6 +226,13 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 # USA
 
+| **Name** | US District Court, N.D. California, 2023-10-25, Case No. 5:18-cv-07182-EJD |
+|:---:|:---:|
+| **Parties** | Neo4j, Inc. v. PureThink, LLC |
+| **Subject** | Bestätigung, dass bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" die "Commons Clause" nicht entfernt werden darf. Verletzung des Lanham Act wenn proprieträe Software als "free and open source" bezeichnet wird. |
+| **Licence** | - |
+| **Links** | [🇬🇧](https://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscourts.cand.335295.216.0.pdf) |
+
 | **Bezeichnung** | US Court of Appeals for the Ninth Circuit, 2022-02-18, Cas No. 21-16029 |
 |:---:|:---:|
 | **Parteien** | Neo4j, Inc. v. PureThink, LLC |
