@@ -23,9 +23,10 @@ The licenses listed here originate from the Free Software sphere or give themsel
 
 | Licence | Text | SPDX-tag |
 |:---:|:---:|:---:|
-| Aladdin Free Public License (v8.0) | [🇬🇧](http://www.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm) | - |
-| Aladdin Free Public License (v9.0) | [🇬🇧](https://web.archive.org/web/20121218095513/http://www.artifex.com:80/downloads/doc/Public.htm) | - |
-| "Anti 996" License (v1.0) | [🇬🇧](https://github.com/996icu/996.ICU/blob/master/LICENSE) | - |
+| Academic Public License (v1.1) | [🇬🇧](https://github.com/mmodenesi/omnetpy/blob/master/License) | LicenseRef-scancode-apl-1.1 |
+| Aladdin Free Public License (v8.0) | [🇬🇧](http://www.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm) | Aladdin |
+| Aladdin Free Public License (v9.0) | [🇬🇧](https://web.archive.org/web/20121218095513/http://www.artifex.com:80/downloads/doc/Public.htm) | LicenseRef-scancode-afpl-9.0 |
+| "Anti 996" License (v1.0) | [🇬🇧](https://github.com/996icu/996.ICU/blob/master/LICENSE) | LicenseRef-scancode-996-icu-1.0 |
 | AT&T Source Code Agreement (v1.2D) | [🇬🇧](http://web.archive.org/web/20050424024245/http://www.research.att.com/sw/license/ast-open.html) | - |
 | BigScience RAIL License (v1.0) | [🇬🇧](https://huggingface.co/spaces/bigscience/license) | - |
 | Business Source License 1.1 | [🇬🇧](https://mariadb.com/bsl11/) | - |
@@ -44,7 +45,7 @@ The licenses listed here originate from the Free Software sphere or give themsel
 | JasPer Software License (1.0) | [🇬🇧](http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE) | - |
 | MCU path license 2018 | [🇬🇧](https://01.org/mcu-path-license-2018) | - |
 | Microsoft Limited Permissive License (Ms-LPL) | [🇬🇧](https://web.archive.org/web/20070509061152/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedpermissivelicense.mspx ) | - |
-| Microsoft Limited Public License (Ms-LPL) | [🇬🇧](https://web.archive.org/web/20071223053203/http://microsoft.com:80/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx ) | - |
+| Microsoft Limited Public License (Ms-LPL) | [🇬🇧](https://web.archive.org/web/20071223053203/http://microsoft.com:80/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx ) | MS-LPL |
 | Microsoft Limited Community License (Ms-LCL) | [🇬🇧](https://web.archive.org/web/20070427113623/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedcommunitylicense.mspx) | - |
 | Microsoft Reference License (Ms-RefL) | [🇬🇧](https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx) | - |
 | Microsoft Limited Reciprocal License (Ms-LRL) | [🇬🇧](https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx) | - |
