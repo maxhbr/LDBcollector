@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.1
+
+BUGFIXES:
+* chore: update dependencies ([c326beb](https://gitlab.com/hermine-project/hermine/commit/c326beb))
+* design: Harmonize to US English - code ([f2511fe](https://gitlab.com/hermine-project/hermine/commit/f2511fe)), closes [#146](https://gitlab.com/hermine-project/hermine/issues/146)
+* docs: collect static required with Whitenoise ([cfe9994](https://gitlab.com/hermine-project/hermine/commit/cfe9994))
+* docs: Harmonize to US English - docs ([023d22a](https://gitlab.com/hermine-project/hermine/commit/023d22a)), closes [#146](https://gitlab.com/hermine-project/hermine/issues/146)
+* fix: display expiry date + css tweaks ([8d6035b](https://gitlab.com/hermine-project/hermine/commit/8d6035b))
+* fix: last releases consulted permission ([f3b83c4](https://gitlab.com/hermine-project/hermine/commit/f3b83c4))
+* fix: set correct permission name for creating license ([82e1974](https://gitlab.com/hermine-project/hermine/commit/82e1974))
+* improvement : mention when a Token has expired ([747aeee](https://gitlab.com/hermine-project/hermine/commit/747aeee)), closes [#373](https://gitlab.com/hermine-project/hermine/issues/373)
+* improvement: Change button color to red (danger) ([6b3279d](https://gitlab.com/hermine-project/hermine/commit/6b3279d))
+* ui : ability to delete release ([b1a21c1](https://gitlab.com/hermine-project/hermine/commit/b1a21c1)), closes [#368](https://gitlab.com/hermine-project/hermine/issues/368)
+
 ## 0.5.0
 
 FEATURES :
