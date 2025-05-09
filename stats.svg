@@ -13,7 +13,7 @@
         Top mapped licenses:
     </text>
 
-    <text x="30" y="180" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-2.0-only: <tspan font-weight="bold">25</tspan></text><text x="30" y="210" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">Apache-2.0: <tspan font-weight="bold">22</tspan></text><text x="30" y="240" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">CC-BY-4.0: <tspan font-weight="bold">22</tspan></text><text x="30" y="270" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-2.1-only: <tspan font-weight="bold">22</tspan></text><text x="30" y="300" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-3.0-only: <tspan font-weight="bold">22</tspan></text>
+    <text x="30" y="180" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-2.0-only: <tspan font-weight="bold">25</tspan></text><text x="30" y="210" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">GPL-1.0-only: <tspan font-weight="bold">22</tspan></text><text x="30" y="240" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">Apache-2.0: <tspan font-weight="bold">22</tspan></text><text x="30" y="270" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">CC-BY-4.0: <tspan font-weight="bold">22</tspan></text><text x="30" y="300" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-2.1-only: <tspan font-weight="bold">22</tspan></text>
     <text>
 
     </text>
