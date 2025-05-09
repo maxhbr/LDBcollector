@@ -19,7 +19,9 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          token: ${{secrets.PUSH_TOKEN}}
       - name: Install Poetry
         run: |
           pipx install poetry
@@ -55,6 +57,3 @@ jobs:
           commit_message: "chore: update statistics in README.md"
           branch: main
           commit_user_name: "CI/CD Push Token"
-          token: ${{secrets.PUSH_TOKEN}}
-          push_options: '--force'
-
