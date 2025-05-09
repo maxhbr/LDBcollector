@@ -56,3 +56,5 @@ jobs:
           branch: main
           commit_user_name: "CI/CD Push Token"
           token: ${{secrets.PUSH_TOKEN}}
+          push_options: '--force'
+
