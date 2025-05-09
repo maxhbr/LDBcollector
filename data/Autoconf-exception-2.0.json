@@ -10,5 +10,6 @@
             "Autoconf exception to GPL 2.0 or later"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

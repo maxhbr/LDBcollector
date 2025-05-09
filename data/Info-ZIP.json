@@ -10,5 +10,6 @@
             "Info-Zip License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

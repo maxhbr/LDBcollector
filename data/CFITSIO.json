@@ -9,5 +9,6 @@
             "cfitsio"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

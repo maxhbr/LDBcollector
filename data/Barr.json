@@ -10,5 +10,6 @@
             "barr-tex"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

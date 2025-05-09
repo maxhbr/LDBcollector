@@ -11,5 +11,6 @@
             "zlib-acknowledgement"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

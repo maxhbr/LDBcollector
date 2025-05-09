@@ -10,5 +10,6 @@
             "cern-ohl-w-2.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

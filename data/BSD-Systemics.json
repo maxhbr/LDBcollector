@@ -9,5 +9,6 @@
             "bsd-systemics"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "openvpn-openssl-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

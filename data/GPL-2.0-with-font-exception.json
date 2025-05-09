@@ -10,5 +10,6 @@
             "GPL 2.0 with font exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

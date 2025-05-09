@@ -10,5 +10,6 @@
             "GCC Runtime Library Exception v3.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "lzma-sdk-9.11-to-9.20"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

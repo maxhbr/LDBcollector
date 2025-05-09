@@ -14,5 +14,6 @@
             "CNRI portion of the multi-part Python License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "cc-by-sa-2.1-jp"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

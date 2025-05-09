@@ -13,5 +13,6 @@
             "The Zope Public License, Version 2.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

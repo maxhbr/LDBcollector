@@ -10,5 +10,6 @@
             "HP 1986 License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

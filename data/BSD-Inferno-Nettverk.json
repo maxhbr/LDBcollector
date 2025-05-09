@@ -9,5 +9,6 @@
             "bsd-inferno-nettverk"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

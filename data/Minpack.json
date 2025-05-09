@@ -11,5 +11,6 @@
             "LicenseRef-scancode-minpack"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

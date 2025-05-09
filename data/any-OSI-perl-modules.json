@@ -10,5 +10,6 @@
             "any-osi-perl-modules"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

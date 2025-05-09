@@ -9,5 +9,6 @@
             "widget-workshop"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

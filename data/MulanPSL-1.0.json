@@ -10,5 +10,6 @@
             "Mulan PSL v1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

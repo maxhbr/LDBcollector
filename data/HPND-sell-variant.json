@@ -10,5 +10,6 @@
             "X11-Style (Keith Packard)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

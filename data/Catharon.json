@@ -12,5 +12,6 @@
             "Catharon Open Source License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "cecill-b"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

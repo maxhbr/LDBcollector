@@ -10,5 +10,6 @@
             "antlr-pd-fallback"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "bsd-3-clause-no-nuclear-warranty"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

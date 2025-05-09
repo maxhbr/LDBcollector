@@ -10,5 +10,6 @@
             "SGI Free Software License B 1.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

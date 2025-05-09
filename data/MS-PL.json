@@ -17,5 +17,6 @@
             "MS-PL"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

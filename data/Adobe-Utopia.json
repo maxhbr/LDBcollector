@@ -9,5 +9,6 @@
             "adobe-utopia"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

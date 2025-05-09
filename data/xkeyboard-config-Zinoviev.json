@@ -9,5 +9,6 @@
             "xkeyboard-config-zinoviev"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

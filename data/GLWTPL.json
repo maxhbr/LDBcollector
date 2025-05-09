@@ -10,5 +10,6 @@
             "GLWTPL"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "LicenseRef-scancode-mit-taylor-variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

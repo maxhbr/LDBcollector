@@ -10,5 +10,6 @@
             "BSD-1-Clause"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

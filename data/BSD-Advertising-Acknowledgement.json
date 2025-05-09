@@ -9,5 +9,6 @@
             "bsd-advertising-acknowledgement"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

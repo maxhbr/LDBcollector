@@ -13,5 +13,6 @@
             "GNU Affero General Public License 3.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

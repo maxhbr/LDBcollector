@@ -10,5 +10,6 @@
             "Henry Spencer License 1999"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

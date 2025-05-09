@@ -10,5 +10,6 @@
             "ACE TAO License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

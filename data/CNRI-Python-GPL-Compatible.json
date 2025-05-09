@@ -11,5 +11,6 @@
             "CNRI Python 1.6.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

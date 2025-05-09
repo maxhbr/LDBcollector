@@ -14,5 +14,6 @@
             "The Eiffel Forum License, Version 1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

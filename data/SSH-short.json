@@ -10,5 +10,6 @@
             "Tatu Ylonen License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

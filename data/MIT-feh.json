@@ -10,5 +10,6 @@
             "MIT Acknowledgment License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "LicenseRef-scancode-unicode-v3"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

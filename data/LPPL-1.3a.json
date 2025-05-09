@@ -10,5 +10,6 @@
             "LPPL 1.3a"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

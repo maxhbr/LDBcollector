@@ -29,5 +29,6 @@
             "Apache-2.0 License (Apache Software Foundation)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

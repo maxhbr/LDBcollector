@@ -11,5 +11,6 @@
             "Historical - INRIA-IMAG variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

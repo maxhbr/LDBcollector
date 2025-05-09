@@ -11,5 +11,6 @@
             "Historical UC variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

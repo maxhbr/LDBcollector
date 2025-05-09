@@ -10,5 +10,6 @@
             "Historical Fenneberg-Livingston variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

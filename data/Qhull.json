@@ -9,5 +9,6 @@
             "qhull"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

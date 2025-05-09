@@ -11,5 +11,6 @@
             "LicenseRef-scancode-mozilla-gc"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -13,5 +13,6 @@
             "The PHP License, Version 3.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

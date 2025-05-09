@@ -10,5 +10,6 @@
             "LicenseRef-scancode-ttyp0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

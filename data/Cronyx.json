@@ -9,5 +9,6 @@
             "cronyx"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

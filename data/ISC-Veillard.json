@@ -11,5 +11,6 @@
             "mit-veillard-variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

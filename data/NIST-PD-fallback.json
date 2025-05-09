@@ -10,5 +10,6 @@
             "NIST Public Domain Notice with fallback"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

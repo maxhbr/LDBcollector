@@ -10,5 +10,6 @@
             "KiCad Libraries Exception to CC-BY-SA-4.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

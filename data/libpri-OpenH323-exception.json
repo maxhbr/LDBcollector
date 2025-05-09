@@ -9,5 +9,6 @@
             "libpri-openh323-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

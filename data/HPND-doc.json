@@ -10,5 +10,6 @@
             "hpnd-doc"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

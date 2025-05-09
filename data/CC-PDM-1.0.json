@@ -12,5 +12,6 @@
             "LicenseRef-scancode-cc-pdm-1.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

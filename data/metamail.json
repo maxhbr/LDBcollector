@@ -9,5 +9,6 @@
             "metamail"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

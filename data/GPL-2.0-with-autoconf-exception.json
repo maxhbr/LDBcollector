@@ -10,5 +10,6 @@
             "gpl-2.0-autoconf"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

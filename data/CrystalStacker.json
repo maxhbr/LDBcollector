@@ -10,5 +10,6 @@
             "crystal-stacker"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

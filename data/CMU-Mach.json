@@ -12,5 +12,6 @@
             "LicenseRef-scancode-carnegie-mellon-contributors"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

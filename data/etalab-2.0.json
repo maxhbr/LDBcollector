@@ -11,5 +11,6 @@
             "LicenseRef-scancode-etalab-2.0-fr"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "bcrypt-solar-designer"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

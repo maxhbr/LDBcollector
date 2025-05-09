@@ -13,5 +13,6 @@
             "LicenseRef-scancode-verbatim-manual"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

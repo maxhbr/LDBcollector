@@ -9,5 +9,6 @@
             "xskat"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

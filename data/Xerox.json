@@ -10,5 +10,6 @@
             "MIT with Export Control"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

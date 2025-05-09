@@ -9,5 +9,6 @@
             "wsuipa"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

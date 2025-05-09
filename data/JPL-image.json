@@ -9,5 +9,6 @@
             "jpl-image"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

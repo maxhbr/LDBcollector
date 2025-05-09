@@ -9,5 +9,6 @@
             "gpl-3.0-389-ds-base-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

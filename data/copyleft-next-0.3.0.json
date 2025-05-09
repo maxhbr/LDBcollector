@@ -9,5 +9,6 @@
             "copyleft-next-0.3.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

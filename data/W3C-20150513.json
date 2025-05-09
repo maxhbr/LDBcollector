@@ -11,5 +11,6 @@
             "W3C-SOFTWARE-DOC-20150513"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

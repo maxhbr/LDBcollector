@@ -9,5 +9,6 @@
             "magaz"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "PBM Library License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

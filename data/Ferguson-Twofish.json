@@ -9,5 +9,6 @@
             "ferguson-twofish"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

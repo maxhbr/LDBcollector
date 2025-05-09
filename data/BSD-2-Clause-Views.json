@@ -10,5 +10,6 @@
             "bsd-2-clause-views"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

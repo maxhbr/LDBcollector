@@ -10,5 +10,6 @@
             "OpenSSL/SSLeay License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

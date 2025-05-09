@@ -14,5 +14,6 @@
             "Motosoto Open Source License, Version 0.9.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

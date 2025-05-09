@@ -11,5 +11,6 @@
             "docbook"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

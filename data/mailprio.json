@@ -9,5 +9,6 @@
             "mailprio"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

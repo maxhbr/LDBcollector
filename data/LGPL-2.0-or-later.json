@@ -13,5 +13,6 @@
             "LicenseRef-LGPL"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

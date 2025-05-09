@@ -14,5 +14,6 @@
             "Educational Community License, Version 1.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

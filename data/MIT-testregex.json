@@ -9,5 +9,6 @@
             "mit-testregex"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

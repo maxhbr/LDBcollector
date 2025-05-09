@@ -11,5 +11,6 @@
             "rsa-md5"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "gl2ps"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

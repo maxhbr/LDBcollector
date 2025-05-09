@@ -12,5 +12,6 @@
             "3D Slicer Contribution and Software License Agreement v1.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

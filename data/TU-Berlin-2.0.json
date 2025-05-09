@@ -10,5 +10,6 @@
             "tu-berlin-2.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

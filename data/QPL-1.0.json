@@ -14,5 +14,6 @@
             "The Q Public License Version (QPL-1.0)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

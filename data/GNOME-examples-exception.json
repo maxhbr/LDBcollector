@@ -9,5 +9,6 @@
             "gnome-examples-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

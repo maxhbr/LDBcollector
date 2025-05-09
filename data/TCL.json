@@ -9,5 +9,6 @@
             "tcl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

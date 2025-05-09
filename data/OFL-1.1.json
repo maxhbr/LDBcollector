@@ -30,5 +30,6 @@
             "SIL Open Font License, Version 1.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

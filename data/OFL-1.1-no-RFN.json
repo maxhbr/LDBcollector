@@ -10,5 +10,6 @@
             "ofl-1.1-no-rfn"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -24,5 +24,6 @@
             "Expat"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

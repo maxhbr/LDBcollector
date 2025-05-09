@@ -10,5 +10,6 @@
             "Haskell Report License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

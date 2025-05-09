@@ -10,5 +10,6 @@
             "GFDL-1.2-invariants-only"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

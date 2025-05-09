@@ -14,7 +14,10 @@ from src.validate.data_validation import (
     check_length_and_characters,
     check_src_and_canonical,
     LicenseListType,
-    main
+    main,
+    check_no_empty_field_except_custom,
+    check_rejected_field_exists,
+    check_rejected_not_in_valid_fields
 )
 
 # Mock setup_logger to avoid actual logging
@@ -289,7 +292,7 @@ def test_check_src_and_canonical_failure_source_is_spdx():
 def test_check_length_and_characters():
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"canonical": "valid_name", "src": "valid_src", "aliases": ["valid_alias", "valid_alias2"]}
+    valid_data = {"canonical": "valid_name", "src": "valid_src", "aliases": {"spdx": ["valid_alias", "valid_alias2"]}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
 
@@ -309,8 +312,8 @@ def test_check_length_and_characters_failure():
     os.makedirs("test_data", exist_ok=True)
 
     src_too_long = "a" * (max_length + 1)
-    long_data = {"canonical": "a" * (max_length + 1), "aliases": ["a" * (max_length + 1)], "src": src_too_long}
-    forbidden_data = {"canonical": "invalid#name", "aliases": "alias1", "src": "src"}
+    long_data = {"canonical": "a" * (max_length + 1), "aliases": {"spdx": ["a" * (max_length + 1)], "custom": []}, "src": src_too_long}
+    forbidden_data = {"canonical": "invalid#name", "aliases": {"spdx": ["alias1"], "custom": []}, "src": "src"}
 
     filepath_long = os.path.join("test_data", "long.json")
     filepath_forbidden = os.path.join("test_data", "forbidden.json")
@@ -350,13 +353,13 @@ def test_main_integration():
     mock_logger.handlers[1].error_occurred = False  # Simulate no error occurring
 
     with mock.patch("src.validate.data_validation.download_license_list"), \
-         mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-         mock.patch("src.validate.data_validation.delete_file"), \
-         mock.patch("src.validate.data_validation.check_json_filename"), \
-         mock.patch("src.validate.data_validation.check_unique_aliases"), \
-         mock.patch("src.validate.data_validation.check_length_and_characters"):
+        mock.patch("src.validate.data_validation.load_ids_from_license_list",
+                   side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
+        mock.patch("src.validate.data_validation.check_src_and_canonical"), \
+        mock.patch("src.validate.data_validation.delete_file"), \
+        mock.patch("src.validate.data_validation.check_json_filename"), \
+        mock.patch("src.validate.data_validation.check_unique_aliases"), \
+        mock.patch("src.validate.data_validation.check_length_and_characters"):
         main()
 
         # Verify that no error occurred (if checking the logger)
@@ -369,17 +372,123 @@ def test_main_integration_fail():
     mock_logger.handlers[1].error_occurred = True  # Simulate an error occurring
 
     with mock.patch("src.validate.data_validation.download_license_list"), \
-         mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-         mock.patch("src.validate.data_validation.delete_file"), \
-         mock.patch("src.validate.data_validation.check_json_filename"), \
-         mock.patch("src.validate.data_validation.check_unique_aliases"), \
-         mock.patch("src.validate.data_validation.check_length_and_characters"):
+        mock.patch("src.validate.data_validation.load_ids_from_license_list",
+                   side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
+        mock.patch("src.validate.data_validation.check_src_and_canonical"), \
+        mock.patch("src.validate.data_validation.delete_file"), \
+        mock.patch("src.validate.data_validation.check_json_filename"), \
+        mock.patch("src.validate.data_validation.check_unique_aliases"), \
+        mock.patch("src.validate.data_validation.check_length_and_characters"):
         main()
 
         # Verify that no error occurred (if checking the logger)
         assert mock_logger.handlers[1].error_occurred, "An error occurred in the logger"
+
+
+def test_check_no_empty_field_except_custom_success():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"custom": [], "canonical": "valid_name", "src": "valid_src",
+                  "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_no_empty_field_except_custom()
+
+    assert mock_logger.error.call_count == 0
+
+
+def test_check_no_empty_field_except_custom_failure():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"custom": [], "canonical": "", "src": "valid_src",
+                  "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_no_empty_field_except_custom()
+
+    assert mock_logger.error.call_count == 1
+
+
+def test_check_rejected_field_exists_success():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": [], "canonical": "valid_name", "src": "valid_src", "aliases": ["valid_alias", "valid_alias2"]}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_rejected_field_exists()
+
+    assert mock_logger.error.call_count == 0
+
+
+def test_check_rejected_field_exists_failure():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"canonical": "valid_name", "src": "valid_src", "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_rejected_field_exists()
+
+    assert mock_logger.error.call_count == 1
+
+
+def test_check_rejected_not_in_valid_fields_success():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name", "src": "valid_src",
+                  "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_rejected_not_in_valid_fields()
+
+    assert mock_logger.error.call_count == 0
+
+
+def test_check_rejected_not_in_valid_fields_failure():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name", "src": "valid_src",
+                  "aliases": {"spdx": ["not_valid_alias", "valid_alias2"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_rejected_not_in_valid_fields()
+
+    assert mock_logger.error.call_count == 1
 
 
 if __name__ == "__main__":

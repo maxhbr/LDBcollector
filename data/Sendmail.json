@@ -9,5 +9,6 @@
             "sendmail"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

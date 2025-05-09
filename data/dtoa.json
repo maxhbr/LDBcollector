@@ -11,5 +11,6 @@
             "LicenseRef-scancode-x11-lucent"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

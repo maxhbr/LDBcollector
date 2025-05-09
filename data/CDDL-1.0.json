@@ -28,5 +28,6 @@
             "Common Development and Distribution License, Version 1.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

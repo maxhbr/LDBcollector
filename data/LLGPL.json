@@ -12,5 +12,6 @@
             "llgpl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

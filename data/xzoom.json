@@ -9,5 +9,6 @@
             "xzoom"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

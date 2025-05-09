@@ -10,5 +10,6 @@
             "sugarcrm-1.1.3"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

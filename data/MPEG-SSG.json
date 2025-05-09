@@ -11,5 +11,6 @@
             "mpeg-ssg"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

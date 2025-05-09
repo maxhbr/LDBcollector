@@ -12,5 +12,6 @@
             "intel-osl-1993"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

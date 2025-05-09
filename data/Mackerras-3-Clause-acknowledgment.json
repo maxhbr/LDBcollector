@@ -11,5 +11,6 @@
             "paul-mackerras"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "nlpl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "bsd-plus-patent"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

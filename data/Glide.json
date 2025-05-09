@@ -11,5 +11,6 @@
             "3DFX GLIDE Source Code General Public License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "blueoak-1.0.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

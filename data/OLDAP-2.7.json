@@ -10,5 +10,6 @@
             "openldap-2.7"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

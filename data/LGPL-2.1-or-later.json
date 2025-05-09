@@ -12,5 +12,6 @@
             "lgpl-2.1-plus"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

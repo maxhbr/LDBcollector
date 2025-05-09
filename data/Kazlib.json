@@ -10,5 +10,6 @@
             "Kazlib"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

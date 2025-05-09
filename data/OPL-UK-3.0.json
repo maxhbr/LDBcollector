@@ -10,5 +10,6 @@
             "opl-uk-3.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

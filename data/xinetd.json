@@ -9,5 +9,6 @@
             "xinetd"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

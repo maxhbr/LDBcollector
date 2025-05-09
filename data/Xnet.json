@@ -13,5 +13,6 @@
             "The X.Net, Inc. License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

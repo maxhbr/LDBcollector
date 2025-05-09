@@ -31,5 +31,6 @@
             "The zlib/libpng License (Zlib)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

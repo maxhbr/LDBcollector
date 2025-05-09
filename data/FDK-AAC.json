@@ -11,5 +11,6 @@
             "LicenseRef-scancode-fraunhofer-fdk-aac-codec"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

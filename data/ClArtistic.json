@@ -9,5 +9,6 @@
             "artistic-clarified"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

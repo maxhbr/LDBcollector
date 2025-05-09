@@ -10,5 +10,6 @@
             "wxwindows"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "swl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

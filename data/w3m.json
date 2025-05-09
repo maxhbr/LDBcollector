@@ -9,5 +9,6 @@
             "w3m"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

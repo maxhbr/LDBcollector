@@ -9,5 +9,6 @@
             "dvipdfm"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "nist-software"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

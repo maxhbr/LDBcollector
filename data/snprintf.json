@@ -10,5 +10,6 @@
             "LicenseRef-scancode-snprintf"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

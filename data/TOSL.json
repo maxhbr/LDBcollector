@@ -11,5 +11,6 @@
             "Trusster Open Source License 1.0a"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

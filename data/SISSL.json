@@ -13,5 +13,6 @@
             "Sun Industry Standards Source License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

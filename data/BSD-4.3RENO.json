@@ -11,5 +11,6 @@
             "bsd-original-uc-1986"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

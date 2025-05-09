@@ -9,5 +9,6 @@
             "cnri-jython"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

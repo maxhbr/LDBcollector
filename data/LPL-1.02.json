@@ -13,5 +13,6 @@
             "Lucent Public License, Version 1.02"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "adobe-scl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

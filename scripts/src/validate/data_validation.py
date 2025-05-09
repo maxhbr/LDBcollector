@@ -127,6 +127,7 @@ def check_length_and_characters():
                 data = json.load(f)
                 canonical_name = data.get("canonical")
                 aliases = data.get("aliases")
+                aliases = flatten_aliases_dict(aliases)
                 src = data.get("src")
 
                 # Max length check
@@ -161,6 +162,36 @@ def check_no_empty_field_except_custom():
                 logger.error(f"Field 'src' in '{filename}' is empty.")
 
 
+def check_rejected_field_exists():
+    for filename in os.listdir(DATA_DIR):
+        filepath = os.path.join(DATA_DIR, filename)
+        with open(filepath, 'r') as f:
+            data = json.load(f)
+            if "rejected" not in data:
+                logger.error(f"rejected field '{filename}' does not exist.")
+
+
+def check_rejected_not_in_valid_fields():
+    for filename in os.listdir(DATA_DIR):
+        if filename.endswith(".json"):
+            filepath = os.path.join(DATA_DIR, filename)
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+                aliases = data.get("aliases", [])
+                aliases_list = flatten_aliases_dict(aliases)
+                rejected = data.get("rejected", [])
+                matched = set(aliases_list) & set(rejected)
+                if matched:
+                    logger.error(f"rejected aliases {matched} in '{filename}' is in aliases list")
+
+
+def flatten_aliases_dict(aliases_dict):
+    aliases_list = []
+    for src, aliases in aliases_dict.items():
+        aliases_list += aliases
+    return aliases_list
+
+
 def main():
     spdx_license_url = "https://raw.githubusercontent.com/spdx/license-list-data/main/json/licenses.json"
     spdx_license_file = "spdx_license_list.json"
@@ -180,6 +211,10 @@ def main():
     download_license_list(scancode_licensedb_url, scancode_licensedb_file, "ScanCode LicenseDB license list")
 
     check_src_and_canonical(spdx_licenses, spdx_exception)
+
+    check_rejected_field_exists()
+    check_rejected_not_in_valid_fields()
+
     delete_file(spdx_license_file)
     delete_file(spdx_exception_file)
     delete_file(scancode_licensedb_file)

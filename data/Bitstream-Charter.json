@@ -11,5 +11,6 @@
             "LicenseRef-scancode-x11-bitstream"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

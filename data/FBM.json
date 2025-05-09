@@ -9,5 +9,6 @@
             "fbm"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

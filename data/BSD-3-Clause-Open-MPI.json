@@ -9,5 +9,6 @@
             "bsd-3-clause-open-mpi"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

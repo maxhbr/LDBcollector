@@ -10,5 +10,6 @@
             "autoconf-macro-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

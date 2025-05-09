@@ -9,5 +9,6 @@
             "sendmail-8.23"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

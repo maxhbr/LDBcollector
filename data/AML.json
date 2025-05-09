@@ -10,5 +10,6 @@
             "Apple Sample Code License 2006"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

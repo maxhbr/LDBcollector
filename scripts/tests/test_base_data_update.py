@@ -82,6 +82,7 @@ def test_create_license_file(mock_json_dump, mock_open, mock_join, base_data_upd
             "test_source": aliases,
             "custom": []
         },
-        "src": "test_source"
+        "src": "test_source",
+        "rejected": []
     }
     mock_json_dump.assert_called_once_with(expected_data, mock_open(), indent=4)

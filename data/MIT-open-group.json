@@ -11,5 +11,6 @@
             "LicenseRef-scancode-x11-opengroup"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

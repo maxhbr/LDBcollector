@@ -10,5 +10,6 @@
             "Interbase Public License 1.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

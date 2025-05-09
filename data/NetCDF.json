@@ -19,5 +19,6 @@
             "NetCDF License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

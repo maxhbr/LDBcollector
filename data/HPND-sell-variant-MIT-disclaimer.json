@@ -9,5 +9,6 @@
             "hpnd-sell-variant-mit-disclaimer"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "glulxe"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

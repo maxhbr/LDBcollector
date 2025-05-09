@@ -9,5 +9,6 @@
             "ijg-short"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

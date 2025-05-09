@@ -11,5 +11,6 @@
             "openssl-exception-gpl-3.0-plus"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

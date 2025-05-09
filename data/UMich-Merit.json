@@ -9,5 +9,6 @@
             "umich-merit"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

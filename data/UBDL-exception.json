@@ -12,5 +12,6 @@
             "Unmodified Binary Distribution Licence Exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

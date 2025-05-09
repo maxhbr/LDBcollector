@@ -10,5 +10,6 @@
             "BSD-4-Clause-Shortened"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

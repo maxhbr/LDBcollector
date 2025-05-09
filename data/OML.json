@@ -10,5 +10,6 @@
             "fastcgi-devkit"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "nrl-permission"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

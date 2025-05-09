@@ -13,5 +13,6 @@
             "Entessa Public License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

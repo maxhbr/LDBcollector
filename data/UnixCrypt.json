@@ -9,5 +9,6 @@
             "unixcrypt"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

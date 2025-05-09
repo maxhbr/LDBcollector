@@ -10,5 +10,6 @@
             "Allegro 4 License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "bsd-original-uc"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

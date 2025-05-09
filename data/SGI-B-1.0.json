@@ -10,5 +10,6 @@
             "sgi-fslb-1.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

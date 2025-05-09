@@ -11,5 +11,6 @@
             "x11-adobe"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

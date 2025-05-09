@@ -11,5 +11,6 @@
             "Soundex"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -13,5 +13,6 @@
             "The University of Illinois/NCSA Open Source License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

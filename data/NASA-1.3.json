@@ -14,5 +14,6 @@
             "NASA Open Source Agreement, Version 1.3"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

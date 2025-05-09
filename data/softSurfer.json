@@ -10,5 +10,6 @@
             "LicenseRef-scancode-softsurfer"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "CodeSourcery 2004"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

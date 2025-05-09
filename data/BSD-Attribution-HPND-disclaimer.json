@@ -12,5 +12,6 @@
             "LicenseRef-scancode-cmu-computing-services"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

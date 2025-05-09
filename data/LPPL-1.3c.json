@@ -13,5 +13,6 @@
             "LaTeX Project Public License, Version 1.3c"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -12,5 +12,6 @@
             "LicenseRef-scancode-independent-module-linking-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

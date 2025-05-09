@@ -10,5 +10,6 @@
             "CMU Style"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

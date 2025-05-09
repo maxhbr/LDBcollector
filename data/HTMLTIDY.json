@@ -10,5 +10,6 @@
             "tidy"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

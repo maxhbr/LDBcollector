@@ -9,5 +9,6 @@
             "latex2e-translated-notice"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

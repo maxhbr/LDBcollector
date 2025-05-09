@@ -11,5 +11,6 @@
             "hpnd-netrek"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

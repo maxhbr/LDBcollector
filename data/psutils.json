@@ -10,5 +10,6 @@
             "PS Utilities License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

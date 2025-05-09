@@ -10,5 +10,6 @@
             "SMPPL"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

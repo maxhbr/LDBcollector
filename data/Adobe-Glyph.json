@@ -10,5 +10,6 @@
             "adobe-glyph"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

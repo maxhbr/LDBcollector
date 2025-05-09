@@ -12,5 +12,6 @@
             "MIT With Modification Obligations"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

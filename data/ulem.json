@@ -9,5 +9,6 @@
             "ulem"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

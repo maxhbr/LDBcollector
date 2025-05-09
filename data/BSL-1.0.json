@@ -26,5 +26,6 @@
             "Boost Software License 1.0 (BSL-1.0)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

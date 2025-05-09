@@ -10,5 +10,6 @@
             "CC-BY-NC-SA-2.0-UK"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

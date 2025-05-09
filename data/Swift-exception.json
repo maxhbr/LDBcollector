@@ -11,5 +11,6 @@
             "apple-runtime-library-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

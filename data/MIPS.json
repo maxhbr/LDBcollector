@@ -9,5 +9,6 @@
             "mips"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "app-s2p"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

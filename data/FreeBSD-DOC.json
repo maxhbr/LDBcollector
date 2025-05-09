@@ -11,5 +11,6 @@
             "LicenseRef-scancode-freebsd-doc"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

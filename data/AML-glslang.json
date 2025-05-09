@@ -11,5 +11,6 @@
             "NVIDIA 2002 License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

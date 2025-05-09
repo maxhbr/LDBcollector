@@ -10,5 +10,6 @@
             "bsd-original"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

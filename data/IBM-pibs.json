@@ -10,5 +10,6 @@
             "IBM PowerPC Software"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

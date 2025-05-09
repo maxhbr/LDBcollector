@@ -9,5 +9,6 @@
             "libutil-david-nugent"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "FreeRTOS exception to GPL 2.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

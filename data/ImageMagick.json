@@ -9,5 +9,6 @@
             "imagemagick"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

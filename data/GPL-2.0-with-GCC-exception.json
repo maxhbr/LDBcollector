@@ -11,5 +11,6 @@
             "GPL 2.0 or later with GCC LInking exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

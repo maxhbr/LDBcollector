@@ -9,5 +9,6 @@
             "hpnd-export-us"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

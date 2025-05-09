@@ -9,5 +9,6 @@
             "cgal-linking-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

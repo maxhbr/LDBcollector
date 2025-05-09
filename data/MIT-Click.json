@@ -11,5 +11,6 @@
             "LicenseRef-scancode-click-license"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

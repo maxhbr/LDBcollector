@@ -26,5 +26,6 @@
             "cc-by-3.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

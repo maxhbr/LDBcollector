@@ -9,5 +9,6 @@
             "cornell-lossless-jpeg"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "Technische Universitaet Berlin Attribution License 1.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

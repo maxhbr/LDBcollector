@@ -13,5 +13,6 @@
             "LicenseRef-GPL"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "Zimbra PL 1.4"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

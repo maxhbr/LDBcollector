@@ -11,5 +11,6 @@
             "BSD-3-Clause-No-Military"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -25,5 +25,6 @@
             "bsd-zero"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

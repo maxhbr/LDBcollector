@@ -9,5 +9,6 @@
             "any-osi"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

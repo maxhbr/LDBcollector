@@ -9,5 +9,6 @@
             "crossword"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

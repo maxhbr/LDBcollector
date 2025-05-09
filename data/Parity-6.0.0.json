@@ -9,5 +9,6 @@
             "parity-6.0.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

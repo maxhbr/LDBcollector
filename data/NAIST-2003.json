@@ -11,5 +11,6 @@
             "LicenseRef-scancode-naist-2003"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

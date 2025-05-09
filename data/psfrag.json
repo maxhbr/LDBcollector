@@ -9,5 +9,6 @@
             "psfrag"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

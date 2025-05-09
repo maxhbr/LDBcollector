@@ -108,7 +108,8 @@ class BaseDataUpdate:
                 self._src: aliases,
                 "custom": []
             },
-            "src": self._src
+            "src": self._src,
+            "rejected": []
         }
 
         filepath = os.path.join(self._DATA_DIR, f"{canonical_id}.json")

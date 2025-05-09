@@ -11,5 +11,6 @@
             "LicenseRef-scancode-bsd-simplified-darwin"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

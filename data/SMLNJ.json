@@ -11,5 +11,6 @@
             "standard-ml-nj"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

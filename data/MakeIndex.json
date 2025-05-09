@@ -10,5 +10,6 @@
             "MakeIndex Distribution Notice"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "i2p GPL plus Java Exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -14,5 +14,6 @@
             "The Ricoh Source Code Public License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

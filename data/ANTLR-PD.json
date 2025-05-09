@@ -10,5 +10,6 @@
             "ANTLR-PD"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

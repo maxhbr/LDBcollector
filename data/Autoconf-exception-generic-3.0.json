@@ -11,5 +11,6 @@
             "LicenseRef-scancode-autoconf-simple-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

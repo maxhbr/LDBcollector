@@ -9,5 +9,6 @@
             "hidapi"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "afl-2.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

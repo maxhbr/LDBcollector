@@ -9,5 +9,6 @@
             "mit-khronos-old"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

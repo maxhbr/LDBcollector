@@ -9,5 +9,6 @@
             "fsfap-no-warranty-disclaimer"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "X11-Style (Tiff)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

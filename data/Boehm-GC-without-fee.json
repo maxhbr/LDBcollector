@@ -12,5 +12,6 @@
             "stlport-4.5"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

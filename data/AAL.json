@@ -10,5 +10,6 @@
             "attribution"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "caldera-no-preamble"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

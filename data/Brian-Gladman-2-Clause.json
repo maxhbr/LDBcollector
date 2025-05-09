@@ -11,5 +11,6 @@
             "Brian Gladman License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

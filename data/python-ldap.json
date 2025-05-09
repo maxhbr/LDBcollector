@@ -9,5 +9,6 @@
             "python-ldap"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

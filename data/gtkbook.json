@@ -9,5 +9,6 @@
             "gtkbook"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

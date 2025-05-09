@@ -9,5 +9,6 @@
             "mtll"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

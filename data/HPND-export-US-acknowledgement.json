@@ -10,5 +10,6 @@
             "HPND US export acknowledgment"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

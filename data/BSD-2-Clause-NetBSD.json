@@ -11,5 +11,6 @@
             "BSD-2-Clause-NetBSD"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

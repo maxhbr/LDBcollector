@@ -9,5 +9,6 @@
             "abstyles"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

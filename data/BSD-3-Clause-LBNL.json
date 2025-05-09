@@ -10,5 +10,6 @@
             "LBNL BSD Variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

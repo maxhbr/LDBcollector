@@ -9,5 +9,6 @@
             "imlib2"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

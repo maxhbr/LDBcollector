@@ -10,5 +10,6 @@
             "oracle-bsd-no-nuclear"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

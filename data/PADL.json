@@ -9,5 +9,6 @@
             "padl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

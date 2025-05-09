@@ -11,5 +11,6 @@
             "libgd License 2018"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

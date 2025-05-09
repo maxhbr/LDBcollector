@@ -11,5 +11,6 @@
             "LicenseRef-scancode-mit-modern"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

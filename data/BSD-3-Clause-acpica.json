@@ -11,5 +11,6 @@
             "Intel BSD License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

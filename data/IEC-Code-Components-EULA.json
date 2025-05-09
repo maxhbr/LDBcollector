@@ -11,5 +11,6 @@
             "IEC Code Components End-user licence agreement"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

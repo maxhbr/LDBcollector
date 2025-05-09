@@ -11,5 +11,6 @@
             "M+ Fonts license"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

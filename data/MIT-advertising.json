@@ -11,5 +11,6 @@
             "Enlightenment (EFL) MIT-Style License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "cc-by-2.5-au"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

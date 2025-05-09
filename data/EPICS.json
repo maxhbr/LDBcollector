@@ -9,5 +9,6 @@
             "epics"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

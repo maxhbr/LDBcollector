@@ -12,5 +12,6 @@
             "Berkeley Software License Agreement"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

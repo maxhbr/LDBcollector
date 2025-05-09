@@ -10,5 +10,6 @@
             "python-2.0.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

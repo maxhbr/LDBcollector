@@ -9,5 +9,6 @@
             "pnmstitch"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

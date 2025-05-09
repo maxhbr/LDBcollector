@@ -11,5 +11,6 @@
             "Original SSLeay License with Windows Clause"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "tcp-wrappers"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

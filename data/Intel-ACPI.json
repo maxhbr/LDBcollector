@@ -10,5 +10,6 @@
             "intel-acpi"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

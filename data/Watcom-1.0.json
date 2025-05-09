@@ -14,5 +14,6 @@
             "The Sybase Open Source Licence"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

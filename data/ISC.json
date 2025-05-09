@@ -19,5 +19,6 @@
             "ISC License (ISC)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

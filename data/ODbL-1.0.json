@@ -11,5 +11,6 @@
             "ODC Open Database License v1.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

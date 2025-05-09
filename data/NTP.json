@@ -13,5 +13,6 @@
             "NTP License (NTP)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "X11-Style (FSF)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

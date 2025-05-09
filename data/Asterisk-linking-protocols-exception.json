@@ -9,5 +9,6 @@
             "asterisk-linking-protocols-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

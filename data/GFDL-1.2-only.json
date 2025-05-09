@@ -12,5 +12,6 @@
             "GNU Free Documentation License v1.2"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

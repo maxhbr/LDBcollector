@@ -9,5 +9,6 @@
             "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

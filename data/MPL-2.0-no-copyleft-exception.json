@@ -10,5 +10,6 @@
             "mpl-2.0-no-copyleft-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

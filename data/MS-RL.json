@@ -13,5 +13,6 @@
             "Microsoft Reciprocal License (MS-RL)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

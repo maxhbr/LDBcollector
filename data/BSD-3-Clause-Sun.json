@@ -11,5 +11,6 @@
             "bsd-3-clause-sun"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

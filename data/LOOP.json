@@ -9,5 +9,6 @@
             "loop"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

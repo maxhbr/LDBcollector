@@ -9,5 +9,6 @@
             "leptonica"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

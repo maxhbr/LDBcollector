@@ -10,5 +10,6 @@
             "beerware"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

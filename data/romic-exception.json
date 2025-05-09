@@ -11,5 +11,6 @@
             "LicenseRef-scancode-linking-exception-agpl-3.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

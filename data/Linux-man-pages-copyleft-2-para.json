@@ -10,5 +10,6 @@
             "linux-man-pages-2-para"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

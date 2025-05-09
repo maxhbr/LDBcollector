@@ -10,5 +10,6 @@
             "Artistic 1.0 w/clause 8"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

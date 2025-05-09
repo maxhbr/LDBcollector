@@ -13,5 +13,6 @@
             "AGPL 3.0 or later"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

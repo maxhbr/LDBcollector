@@ -9,5 +9,6 @@
             "d-fsl-1.0-de"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

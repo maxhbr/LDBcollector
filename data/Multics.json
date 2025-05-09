@@ -9,5 +9,6 @@
             "multics"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

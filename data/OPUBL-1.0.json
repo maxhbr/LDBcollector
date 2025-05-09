@@ -11,5 +11,6 @@
             "LicenseRef-scancode-openpub"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

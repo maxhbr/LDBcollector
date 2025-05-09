@@ -9,5 +9,6 @@
             "mpi-permissive"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

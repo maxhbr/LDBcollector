@@ -10,5 +10,6 @@
             "clear-bsd"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

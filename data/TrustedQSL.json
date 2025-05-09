@@ -9,5 +9,6 @@
             "trustedqsl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

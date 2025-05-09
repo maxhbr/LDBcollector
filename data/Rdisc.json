@@ -9,5 +9,6 @@
             "rdisc"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

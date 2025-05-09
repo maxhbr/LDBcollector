@@ -10,5 +10,6 @@
             "ncbi"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

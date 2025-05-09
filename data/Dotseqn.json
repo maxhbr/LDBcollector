@@ -9,5 +9,6 @@
             "dotseqn"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

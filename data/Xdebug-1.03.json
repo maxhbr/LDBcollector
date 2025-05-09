@@ -9,5 +9,6 @@
             "xdebug-1.03"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

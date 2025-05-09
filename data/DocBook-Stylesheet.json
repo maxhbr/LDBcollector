@@ -9,5 +9,6 @@
             "docbook-stylesheet"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

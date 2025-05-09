@@ -11,5 +11,6 @@
             "x11-oar"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

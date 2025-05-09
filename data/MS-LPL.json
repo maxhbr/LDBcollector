@@ -12,5 +12,6 @@
             "LicenseRef-scancode-ms-lpl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

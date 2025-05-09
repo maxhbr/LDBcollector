@@ -11,5 +11,6 @@
             "LicenseRef-scancode-openssl-exception-gpl-2.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

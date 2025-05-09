@@ -10,5 +10,6 @@
             "CC-BY-NC-SA-3.0-DE"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

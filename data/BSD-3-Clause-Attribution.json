@@ -10,5 +10,6 @@
             "bsd-ack"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

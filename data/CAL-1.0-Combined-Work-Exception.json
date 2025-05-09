@@ -10,5 +10,6 @@
             "cal-1.0-combined-work-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

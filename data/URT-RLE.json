@@ -9,5 +9,6 @@
             "urt-rle"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

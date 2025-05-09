@@ -10,5 +10,6 @@
             "Henry Spencer Regexp License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

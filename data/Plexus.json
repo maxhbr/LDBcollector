@@ -10,5 +10,6 @@
             "dom4j"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

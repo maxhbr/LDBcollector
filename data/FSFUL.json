@@ -11,5 +11,6 @@
             "FSF Free Software License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

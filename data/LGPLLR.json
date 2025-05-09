@@ -10,5 +10,6 @@
             "LGPLLR"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

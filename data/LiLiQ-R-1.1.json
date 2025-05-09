@@ -14,5 +14,6 @@
             "Licence Libre du Qu\u00c3\u00a9bec \u00e2\u20ac\u201c R\u00c3\u00a9ciprocit\u00c3\u00a9, Version 1.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

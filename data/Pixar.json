@@ -9,5 +9,6 @@
             "pixar"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

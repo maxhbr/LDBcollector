@@ -11,5 +11,6 @@
             "historical"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

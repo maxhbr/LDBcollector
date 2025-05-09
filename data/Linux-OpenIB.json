@@ -10,5 +10,6 @@
             "Linux-OpenIB"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

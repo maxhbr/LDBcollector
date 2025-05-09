@@ -9,5 +9,6 @@
             "gsoap-1.3b"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

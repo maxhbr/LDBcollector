@@ -13,5 +13,6 @@
             "The W3C Software Notice and License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "linux-man-pages-copyleft-var"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

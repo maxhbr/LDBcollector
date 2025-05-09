@@ -13,5 +13,6 @@
             "The Sleepycat License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

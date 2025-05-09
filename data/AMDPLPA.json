@@ -10,5 +10,6 @@
             "AMD PLPA License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

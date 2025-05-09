@@ -11,5 +11,6 @@
             "AFL 1.1"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

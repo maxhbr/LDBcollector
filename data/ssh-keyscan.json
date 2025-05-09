@@ -9,5 +9,6 @@
             "ssh-keyscan"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

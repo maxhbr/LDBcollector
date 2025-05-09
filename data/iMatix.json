@@ -10,5 +10,6 @@
             "sfl-license"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

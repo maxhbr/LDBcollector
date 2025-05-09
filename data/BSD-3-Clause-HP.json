@@ -9,5 +9,6 @@
             "bsd-3-clause-hp"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

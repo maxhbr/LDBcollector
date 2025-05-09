@@ -10,5 +10,6 @@
             "WxWindows Library Exception to GNU Licenses"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

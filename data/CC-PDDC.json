@@ -11,5 +11,6 @@
             "cc-pd"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

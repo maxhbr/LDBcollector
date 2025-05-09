@@ -11,5 +11,6 @@
             "SMAIL General Public License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

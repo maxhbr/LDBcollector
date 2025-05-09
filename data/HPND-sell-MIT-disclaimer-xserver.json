@@ -10,5 +10,6 @@
             "hpnd-sell-mit-disclaimer-xserver"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

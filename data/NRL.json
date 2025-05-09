@@ -9,5 +9,6 @@
             "nrl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

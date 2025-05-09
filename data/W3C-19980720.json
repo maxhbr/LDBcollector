@@ -10,5 +10,6 @@
             "w3c-software-19980720"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

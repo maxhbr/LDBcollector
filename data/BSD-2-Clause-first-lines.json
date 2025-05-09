@@ -10,5 +10,6 @@
             "bsd-2-clause-first-lines"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

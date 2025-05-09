@@ -10,5 +10,6 @@
             "OpenLDAP Public License 1.3"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -29,5 +29,6 @@
             "Creative Commons Attribution 4.0 International Public License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

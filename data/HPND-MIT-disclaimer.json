@@ -10,5 +10,6 @@
             "Historical with MIT disclaimer"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

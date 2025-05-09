@@ -9,5 +9,6 @@
             "check-cvs"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

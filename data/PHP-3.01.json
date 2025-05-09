@@ -10,5 +10,6 @@
             "php-3.01"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

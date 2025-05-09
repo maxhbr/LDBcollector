@@ -11,5 +11,6 @@
             "hdparm"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

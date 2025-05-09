@@ -27,5 +27,6 @@
             "X11-Style (X Consortium)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

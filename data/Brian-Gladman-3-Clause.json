@@ -11,5 +11,6 @@
             "LicenseRef-scancode-brian-gladman-dual"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

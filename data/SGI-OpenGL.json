@@ -11,5 +11,6 @@
             "X11-Style (OpenGL)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

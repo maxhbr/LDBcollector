@@ -14,5 +14,6 @@
             "Eiffel Forum License, Version 2"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

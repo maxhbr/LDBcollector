@@ -9,5 +9,6 @@
             "qpl-1.0-inria-2004"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

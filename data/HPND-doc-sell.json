@@ -10,5 +10,6 @@
             "Historical documentation sell variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

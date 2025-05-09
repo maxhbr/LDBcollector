@@ -11,5 +11,6 @@
             "MIT no advertising with Export Control"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

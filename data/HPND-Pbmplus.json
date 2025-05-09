@@ -11,5 +11,6 @@
             "hpnd-pbmplus"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

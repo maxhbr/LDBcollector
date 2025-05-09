@@ -12,5 +12,6 @@
             "Flex License v2.5"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

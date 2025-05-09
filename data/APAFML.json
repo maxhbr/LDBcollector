@@ -9,5 +9,6 @@
             "apafml"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "LicenseRef-scancode-tex-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "OSF 1990 License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

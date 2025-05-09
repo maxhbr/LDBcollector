@@ -9,5 +9,6 @@
             "bsd-protection"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

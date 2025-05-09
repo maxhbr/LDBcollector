@@ -11,5 +11,6 @@
             "peter-deutsch-document"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "cc-by-3.0-de"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

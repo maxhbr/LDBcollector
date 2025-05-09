@@ -12,5 +12,6 @@
             "The PostgreSQL Licence"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

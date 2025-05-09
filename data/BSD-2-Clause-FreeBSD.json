@@ -10,5 +10,6 @@
         ],
         "custom": []
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

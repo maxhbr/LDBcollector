@@ -11,5 +11,6 @@
             "Historical Permission Notice and Disclaimer sell regexpr variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "dec-3-clause"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

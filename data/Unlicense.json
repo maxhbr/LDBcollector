@@ -10,5 +10,6 @@
             "unlicense"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "ruby-pty"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

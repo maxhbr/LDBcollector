@@ -11,5 +11,6 @@
             "GFDL 1.1 or later"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

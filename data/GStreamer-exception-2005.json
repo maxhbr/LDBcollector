@@ -9,5 +9,6 @@
             "gstreamer-exception-2005"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

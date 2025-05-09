@@ -10,5 +10,6 @@
             "jpnic-idnkit"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

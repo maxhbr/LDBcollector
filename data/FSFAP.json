@@ -9,5 +9,6 @@
             "fsf-ap"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

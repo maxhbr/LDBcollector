@@ -11,5 +11,6 @@
             "Creative Commons Attribution Share Alike License 2.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -10,5 +10,6 @@
             "gpl-3.0-gcc"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

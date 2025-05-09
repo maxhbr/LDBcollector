@@ -11,5 +11,6 @@
             "Academic Free License 1.2"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

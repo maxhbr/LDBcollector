@@ -14,5 +14,6 @@
             "LicenseRef-scancode-apache-patent-provision-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

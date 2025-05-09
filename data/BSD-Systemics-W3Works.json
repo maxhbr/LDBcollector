@@ -10,5 +10,6 @@
             "bsd-systemics-w3works"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

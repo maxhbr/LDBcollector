@@ -11,5 +11,6 @@
             "LicenseRef-scancode-net-snmp"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "tmate"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

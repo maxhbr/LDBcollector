@@ -11,5 +11,6 @@
             "MIT Xfig Variant"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

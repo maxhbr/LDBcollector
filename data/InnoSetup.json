@@ -10,5 +10,6 @@
             "Inno Setup License"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

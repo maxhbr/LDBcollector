@@ -12,5 +12,6 @@
             "The Open Group Test Suite License (OGTSL)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

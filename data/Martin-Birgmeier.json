@@ -11,5 +11,6 @@
             "LicenseRef-scancode-martin-birgmeier"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

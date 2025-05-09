@@ -9,5 +9,6 @@
             "threeparttable"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

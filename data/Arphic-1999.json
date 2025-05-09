@@ -10,5 +10,6 @@
             "arphic-public"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

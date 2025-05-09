@@ -10,5 +10,6 @@
             "HPND sell variant with MIT disclaimer reverse"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -11,5 +11,6 @@
             "thor-pl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

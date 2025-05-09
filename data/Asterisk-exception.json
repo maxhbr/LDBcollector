@@ -9,5 +9,6 @@
             "asterisk-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

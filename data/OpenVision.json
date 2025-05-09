@@ -9,5 +9,6 @@
             "openvision"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

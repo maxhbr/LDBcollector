@@ -10,5 +10,6 @@
             "font-exception-gpl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

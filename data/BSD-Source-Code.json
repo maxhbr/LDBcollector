@@ -9,5 +9,6 @@
             "bsd-source-code"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

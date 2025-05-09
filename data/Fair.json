@@ -12,5 +12,6 @@
             "Fair License (Fair)"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

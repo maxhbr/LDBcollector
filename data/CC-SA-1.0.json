@@ -11,5 +11,6 @@
             "Creative Commons Share Alike 1.0 Generic"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

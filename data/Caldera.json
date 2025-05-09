@@ -9,5 +9,6 @@
             "caldera"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

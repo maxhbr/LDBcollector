@@ -9,5 +9,6 @@
             "unicode-tou"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

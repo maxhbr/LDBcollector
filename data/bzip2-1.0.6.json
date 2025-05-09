@@ -11,5 +11,6 @@
             "bzip2 License 2010"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

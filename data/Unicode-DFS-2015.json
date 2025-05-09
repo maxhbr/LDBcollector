@@ -10,5 +10,6 @@
             "unicode-dfs-2015"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

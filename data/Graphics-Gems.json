@@ -10,5 +10,6 @@
             "graphics-gems"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

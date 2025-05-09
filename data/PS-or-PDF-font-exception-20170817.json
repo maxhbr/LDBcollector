@@ -10,5 +10,6 @@
             "ps-or-pdf-font-exception-20170817"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

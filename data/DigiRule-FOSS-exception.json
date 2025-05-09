@@ -11,5 +11,6 @@
             "digirule-foss-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -13,5 +13,6 @@
             "The Non-Profit Open Software License, Version 3.0"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

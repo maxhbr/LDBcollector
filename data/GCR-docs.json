@@ -9,5 +9,6 @@
             "gcr-docs"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

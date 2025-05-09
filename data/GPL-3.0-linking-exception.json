@@ -9,5 +9,6 @@
             "gpl-3.0-linking-exception"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

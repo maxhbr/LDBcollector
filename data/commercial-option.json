@@ -6,5 +6,6 @@
         ],
         "custom": []
     },
-    "src": "scancode-licensedb"
+    "src": "scancode-licensedb",
+    "rejected": []
 }

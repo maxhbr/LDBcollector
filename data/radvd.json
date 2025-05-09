@@ -10,5 +10,6 @@
             "radvd"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

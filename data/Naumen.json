@@ -10,5 +10,6 @@
             "naumen"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }

@@ -9,5 +9,6 @@
             "ppl"
         ]
     },
-    "src": "spdx"
+    "src": "spdx",
+    "rejected": []
 }
