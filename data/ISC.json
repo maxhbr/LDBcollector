@@ -10,7 +10,9 @@
             "Internet Systems Consortium Open Source License",
             "ISC Open Source License",
             "ISC License (Open Source)",
-            "ISC Open License"
+            "ISC Open License",
+            "ISCL",
+            "isc-license"
         ],
         "scancode-licensedb": [
             "isc"

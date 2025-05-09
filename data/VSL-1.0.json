@@ -4,7 +4,9 @@
         "spdx": [
             "Vovida Software License v1.0"
         ],
-        "custom": [],
+        "custom": [
+            "Vovida"
+        ],
         "scancode-licensedb": [
             "Vovida Software License v. 1.0",
             "vsl-1.0",

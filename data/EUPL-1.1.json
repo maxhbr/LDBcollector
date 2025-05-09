@@ -4,7 +4,9 @@
         "spdx": [
             "European Union Public License 1.1"
         ],
-        "custom": [],
+        "custom": [
+            "eupl1.1"
+        ],
         "scancode-licensedb": [
             "EUPL 1.1",
             "European Union Public Licence 1.1",

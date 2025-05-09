@@ -14,7 +14,10 @@
             "Boost License v1.0",
             "Boost License Version 1.0",
             "Boost-1.0",
-            "Boost-1.0 License"
+            "Boost-1.0 License",
+            "Boost",
+            "bsl1.0",
+            "bsl"
         ],
         "scancode-licensedb": [
             "Boost 1.0",

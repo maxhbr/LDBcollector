@@ -11,7 +11,12 @@
             "Apache v2.0",
             "The Apache License, Version 2.0",
             "The Apache Software License, Version 2.0",
-            "The Apache Software License, 2.0"
+            "The Apache Software License, 2.0",
+            "APACHEv2",
+            "APL2",
+            "APLv2.0",
+            "Apache2.0",
+            "Apache2"
         ],
         "scancode-licensedb": [
             "LicenseRef-Apache-2.0",

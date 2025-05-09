@@ -5,7 +5,9 @@
             "GNU General Public License v2.0 or later",
             "GPL-2.0+"
         ],
-        "custom": [],
+        "custom": [
+            "GPLv2+"
+        ],
         "scancode-licensedb": [
             "gpl-2.0-plus",
             "GNU General Public License 2.0 or later",

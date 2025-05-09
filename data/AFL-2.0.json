@@ -4,7 +4,11 @@
         "spdx": [
             "Academic Free License v2.0"
         ],
-        "custom": [],
+        "custom": [
+            "afl2.0",
+            "afl-2",
+            "afl2"
+        ],
         "scancode-licensedb": [
             "afl-2.0",
             "Academic Free License 2.0",
@@ -13,5 +17,8 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "afl-2",
+        "afl2"
+    ]
 }

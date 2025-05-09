@@ -4,7 +4,10 @@
         "spdx": [
             "The Unlicense"
         ],
-        "custom": [],
+        "custom": [
+            "UNLICENSED",
+            "Unlicence"
+        ],
         "scancode-licensedb": [
             "Unlicense",
             "unlicense"

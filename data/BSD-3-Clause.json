@@ -14,7 +14,9 @@
             "BSD License 3-Clause",
             "New BSD License",
             "Modified BSD License",
-            "3-Clause BSD License"
+            "3-Clause BSD License",
+            "BSD3",
+            "EDL-1.0"
         ],
         "scancode-licensedb": [
             "bsd-new",

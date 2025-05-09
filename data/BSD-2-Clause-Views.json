@@ -4,7 +4,9 @@
         "spdx": [
             "BSD 2-Clause with views sentence"
         ],
-        "custom": [],
+        "custom": [
+            "FreeBSD"
+        ],
         "scancode-licensedb": [
             "BSD-2-Clause-Views",
             "bsd-2-clause-views"

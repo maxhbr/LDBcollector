@@ -33,6 +33,8 @@
         "LGPL v3 only",
         "LGPLv3 only",
         "LGPLv3",
-        "LGPLv3 (only)"
+        "LGPLv3 (only)",
+        "LGPL-3",
+        "LGPL3"
     ]
 }
