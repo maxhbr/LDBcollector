@@ -55,5 +55,4 @@ jobs:
           commit_message: "chore: update statistics in README.md"
           branch: main
           commit_user_name: "CI/CD Push Token"
-          push_origin: true
-          github_token: ${{secrets.PUSH_TOKEN}}
+          token: ${{secrets.PUSH_TOKEN}}
