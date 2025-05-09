@@ -29,6 +29,12 @@
         "osi:Zlib",
       "zlib-libpng",
       "Zlib license",
-      "zlib license"
+      "zlib license",
+      "Zlib (simple permissive)",
+      "ZLIB_LIBPNG_LICENSE",
+      "Z-lib license",
+      "ZLIB_LICENSE",
+      "zlib-libpng-like-permissive",
+      "Zlib License"
     ]
 }
