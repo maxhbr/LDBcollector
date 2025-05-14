@@ -29,6 +29,22 @@ text = '''
 text here
 '''
 
+package = jemalloc
+location = include/jemalloc/internal/hash.h
+text = '''
+The following hash function is based on MurmurHash3, placed into the public
+domain by Austin Appleby.  See https://github.com/aappleby/smhasher for
+details.
+'''
+
+package = rust-tikv-jemalloc-sys
+location = jemalloc/include/jemalloc/internal/hash.h
+text = '''
+The following hash function is based on MurmurHash3, placed into the public
+domain by Austin Appleby.  See https://github.com/aappleby/smhasher for
+details.
+'''
+
 package = llvm-test-suite
 location = https://github.com/llvm/llvm-test-suite/blob/main/SingleSource/Benchmarks/CoyoteBench/LICENSE.txt
 text = '''
