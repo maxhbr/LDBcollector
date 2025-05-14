@@ -39,7 +39,8 @@
               "OSI Approved Apache Software License",
               "apache",
               "OSI-Approved-::-Apache-Software-License",
-              "LICENSE-APACHE"
+              "LICENSE-APACHE",
+              "Apache other"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -92,7 +93,11 @@
                 "BSD license",
                 "License :: OSI Approved :: BSD License",
               "BSD licensed code",
-              "BSD Software License"
+              "BSD Software License",
+              "BSD_License",
+              "BSD_License_",
+              "BSD like",
+              "BSD-LIKE"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -187,7 +192,7 @@
                 "GNU GENERAL PUBLIC LICENSE",
                 "License :: OSI Approved :: GNU General Public License",
                 "License :: OSI Approved :: GNU General Public License (GPL)",
-                "GNU General Public License (GPL)",
+              "GNU General Public License (GPL)",
               "GNU-GPL",
               "GPL license"
             ],
@@ -208,7 +213,8 @@
             "GNU Library",
             "GNU Library or GNU Lesser General Public License",
             "GNU Lesser General Public License v1.0",
-            "LGPL license"
+            "LGPL license",
+            "GNU Lesser Public License"
           ],
           "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -222,7 +228,9 @@
                 "MIT Like",
                 "MIT-style License.",
                 "MIT-license",
-                "MIT-Licences"
+              "MIT-Licences",
+              "MIT-like License",
+              "MIT Style License"
             ],
             "problem": "This is not a license identifier. It is most likely a license similar to MIT, but without more information no assumptions can be made."
         },
