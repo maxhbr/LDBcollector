@@ -7,6 +7,7 @@ from xml.etree import ElementTree
 import pandas as pd
 from packaging.requirements import Requirement, InvalidRequirement
 import logging
+from lxml import etree
 P2I_FILE = './app/knowledgebase/p2i.csv'
 p2idf = pd.read_csv(P2I_FILE)
 p2idf['import_lower'] = p2idf['import'].str.lower()
@@ -173,11 +174,13 @@ def parse_package_json(package_json):
 
 def parse_pom_content(pom_xml):
     if pom_xml is None:
-        return {}
+        return set()
     result = set()
-
     namespaces = {'xmlns': 'http://maven.apache.org/POM/4.0.0'}
-    root = ElementTree.parse(pom_xml)
+    # lxml 解析器，容错性强
+    parser = etree.XMLParser(resolve_entities=False, recover=True)
+    tree = etree.parse(pom_xml, parser)
+    root = tree.getroot()
     properties = {}
     properties_node = root.find(".//xmlns:properties", namespaces=namespaces)
     if properties_node is not None:
@@ -192,10 +195,10 @@ def parse_pom_content(pom_xml):
     for d in deps:
         group_id = d.find("xmlns:groupId", namespaces=namespaces)
         artifact_id = d.find("xmlns:artifactId", namespaces=namespaces)
-        version = d.find("xmlns:version", namespaces=namespaces)
+        # version = d.find("xmlns:version", namespaces=namespaces)
         group_id_text = ""
         artifact_id_text = ""
-        #version_text = ""
+        # version_text = ""
         if group_id is not None and group_id.text is not None:
             group_id_text = replace_variables_in_pom(group_id.text, properties)
         if artifact_id is not None and artifact_id.text is not None:
