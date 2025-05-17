@@ -4,4 +4,5 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-PYTHONPATH=./python python/flame/__main__.py $*
+SCRIPT_DIR=$(dirname ${BASH_SOURCE[0]})/../
+PYTHONPATH=${SCRIPT_DIR}/python ${SCRIPT_DIR}/python/flame/__main__.py $*
