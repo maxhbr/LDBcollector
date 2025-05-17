@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Affero General Public License 1.0 or later",
+  "scancode_key": "agpl-1.0-plus",
+  "spdxid": "AGPL-1.0-or-later",
+  "aliases": [
+   "Affero General Public License 1.0 or later",
+   "Affero General Public License v1.0 or later",
+   "AGPL-1.0+",
+   "AGPL 1.0 or later",
+   "AGPL-1.0-or-later",
+   "scancode://agpl-1.0-plus",
+   "https://spdx.org/licenses/agpl-1.0-or-later",
+   "scancode:agpl-1.0-plus"
+  ]
+}
