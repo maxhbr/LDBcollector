@@ -12,3 +12,5 @@ alternativeNames:
   - "CGAL Linking Exception"
   - "Linking Exception (CGAL)"
 
+otherIds: 
+  - "scancode:cgal-linking-exception"

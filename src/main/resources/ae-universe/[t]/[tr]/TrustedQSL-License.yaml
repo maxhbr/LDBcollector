@@ -9,3 +9,5 @@ spdxIdentifier: "TrustedQSL"
 alternativeNames:
   - "TrustedQSL License"
 
+otherIds: 
+  - "scancode:trustedqsl"

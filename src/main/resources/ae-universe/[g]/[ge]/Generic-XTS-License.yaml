@@ -9,3 +9,5 @@ shortName: "generic-xts-license"
 alternativeNames:
   - "Generic XTS License"
 
+otherIds: 
+  - "scancode:generic-xts"

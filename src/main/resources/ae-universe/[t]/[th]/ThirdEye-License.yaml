@@ -9,3 +9,5 @@ spdxIdentifier: "ThirdEye"
 alternativeNames:
   - "ThirdEye License"
 
+otherIds: 
+  - "scancode:thirdeye"

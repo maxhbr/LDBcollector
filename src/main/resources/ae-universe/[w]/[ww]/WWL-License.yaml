@@ -9,3 +9,5 @@ shortName: "WWL"
 alternativeNames:
   - "WWL License"
 
+otherIds: 
+  - "scancode:wwl"

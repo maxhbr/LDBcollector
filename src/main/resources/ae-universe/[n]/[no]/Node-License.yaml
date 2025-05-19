@@ -9,8 +9,6 @@ shortName: "node-js"
 alternativeNames:
   - "Node-js License"
   - "Node.js License"
-  - "Copyright Node.js contributors. All rights reserved."
-  - "node-js"
 
 otherIds: 
   - "scancode:node-js"

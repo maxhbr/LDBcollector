@@ -9,3 +9,5 @@ spdxIdentifier: "MIPS"
 alternativeNames:
   - "MIPS License"
 
+otherIds: 
+  - "scancode:mips"
