@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2024 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>
 # SPDX-License-Identifier: GPL-2.0-only
-FROM golang:1.22 AS build
+FROM golang:1.23 AS build
 
 WORKDIR /LicenseDb
 
