@@ -93,6 +93,18 @@ text = '''
 The example programs are not covered under a license and can be used without restriction.
 '''
 
+package = libisds
+location = https://repo.or.cz/libisds.git/blob_plain/2365bb4d53884226463897341e6c52cd99b157cc:/po/Makefile.in.in
+text = '''
+This file can be copied and used freely without restrictions.  It can
+be used in projects which are not available under the GNU General Public
+License but which still want to provide support for the GNU gettext
+functionality.
+Please note that the actual code of GNU gettext is covered by the GNU
+General Public License and is *not* in the public domain.
+text here
+'''
+
 package = python-utmp
 # in file debian/copyright
 location = http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/python-utmp_0.8.2.tar.gz
