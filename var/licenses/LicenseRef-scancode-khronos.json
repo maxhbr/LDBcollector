@@ -1,0 +1,12 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Khronos License",
+  "scancode_key": "khronos",
+  "spdxid": "LicenseRef-scancode-khronos",
+  "aliases": [
+    "Khronos"
+  ]
+}

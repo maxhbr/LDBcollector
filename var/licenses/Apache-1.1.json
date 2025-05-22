@@ -22,6 +22,9 @@
         "https://spdx.org/licenses/apache-1.1",
         "scancode:apache-1.1",
         "osi:Apache-1.1",
-        "apache-1.1"
+      "apache-1.1",
+      "Apache 1.1",
+      "Apache License v.1.1",
+      "APACHE1.1"
     ]
 }

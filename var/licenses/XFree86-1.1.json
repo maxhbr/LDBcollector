@@ -12,6 +12,7 @@
         "XFree86 1.1 License",
         "scancode://xfree86-1.1",
         "scancode:xfree86-1.1",
-        "xfree86-1.1"
+      "xfree86-1.1",
+      "XFree86 1.1"
     ]
 }

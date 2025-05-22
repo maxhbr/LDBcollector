@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "BSD Acknowledgment License",
+  "scancode_key": "bsd-ack",
+  "spdxid": "BSD-3-Clause-Attribution",
+  "aliases": [
+   "BSD 3-Clause License (attribution)",
+   "BSD Acknowledgment License",
+   "scancode://bsd-ack",
+   "BSD 3-Clause Attribution",
+   "BSD with attribution",
+    "scancode:bsd-ack",
+    "BSD 3 Clause Attribution",
+    "The Clear BSD"
+  ]
+}

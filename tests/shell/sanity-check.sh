@@ -89,13 +89,17 @@ check_presence()
     if [ "$PRESENT" != "" ]
     then
         echo "FAIL"
-        echo " * cause: Not present in $FILE"
+        echo " * cause: Not present ($PRESENT) in $FILE"
         echo " --------------------------"
         echo "Should be present: $REG_EXP_PRESENCE"
+        echo " --------------------------"
+        echo "Try yourself: "
+        echo "              cat $FILE | jq  -r .aliases[] | grep -v \"$REG_EXP_PRESENCE\""
         echo " --------------------------"
         RET=$(( $RET + 1 ))
         _RET="FAIL"
         LICENSE_ERRORS="$LICENSE_ERRORS  $REG_EXP_PRESENCE not present in $FILE"
+        exit
     fi
 
     # check unpresence
@@ -147,6 +151,8 @@ check_presence AFL-2.0 " -e 2.0 " "-e 1 -e 2.1 -e 3"
 check_presence AFL-2.1 " -e 2.1 " "-e 1. -e 2.0 -e 0  -e 3"
 check_presence AFL-3.0 " -e 3 " "-e 1 -e 2 "
 
+check_presence AGPL-1.0-only     " -i -e 1 -e affero" " -e '1 ' -e 2 -e later -e plus -e + -e library -e lesser "
+check_presence AGPL-1.0-or-later     " -i -e 1 -e affero" " -e '1 '  -e library -e lesser "
 check_presence AGPL-3.0-only     " -i -e 3 -e affero" " -e '1 ' -e 2 -e later -e plus -e + -e library -e lesser "
 check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2  -e library -e lesser "
 
@@ -171,19 +177,20 @@ check_presence Bootloader-exception " -i bootloader" ""
 check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
 
 
+check_presence LicenseRef-scancode-khronos " -i -e khronos" ""
 check_presence LicenseRef-scancode-openssl-exception-lgpl " -i -e openssl" ""
 check_presence LicenseRef-scancode-openssl-exception-gpl-2.0-plus " -i -e openssl" ""
 check_presence LicenseRef-scancode-openssl-exception-lgpl2.0plus " -i -e openssl" ""
-
 check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e BSL-1 -e BSL1 -e 1 "  
 check_presence LicenseRef-scancode-ssleay " -i -e leay "        " -e openssl"  
 
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
 check_presence BSD-1-Clause " -i BSD" " -e 2 -e 3 -e 4 "
-check_presence BSD-2-Clause "$BSD2_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
+check_presence BSD-2-Clause "$BSD2_PRESENT" " -e 3 "
 check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-2-Clause-Views " -i -e view"  " -e 0 -e 1 -e 3 -e 4"
 check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT  -i -e two -e simplified -e freebsd "
+check_presence BSD-3-Clause-Attribution " -i -e ack -e attribution" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-3-Clause-Clear " -i -e clear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-3-Clause-Modification " -i -e modification -e repoze " " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-3-Clause-No-Nuclear-Warranty " -i -e nuclear" " -e 0 -e 1 -e 2 -e 4"
@@ -331,6 +338,7 @@ check_presence Plexus " -i -e plexus -e classworlds " ""
 check_presence PostgreSQL " -i -e postgresql " ""
 check_presence Python-2.0.1 " -i -e Python " ""
 
+check_presence romic-exception " -i -e romic " ""
 check_presence RSA-MD " -i -e RSA " ""
 check_presence RSCPL " -i -e RSCPL -e Ricoh " ""
 
@@ -371,7 +379,7 @@ check_presence xpp " -i -e xpp -e indiana " ""
 check_presence LicenseRef-scancode-xfree86-1.0 " -i -e 1.0 " " -e  X/MIT -e 1.1 " 
 check_presence XFree86-1.1 " -i -e 1.1 " " -e  X/MIT -e 1.0 " 
 
-check_presence Zlib " -i -e libz -e zlib" " -i bsd "
+check_presence Zlib " -i -e libz -e zlib -e z-lib" " -i bsd "
 check_presence ZPL-1.1 " -e 1.1" " -e 2"
 check_presence ZPL-2.0 " -e 2.0" " -e 1 -e 2.1"
 check_presence ZPL-2.1 " -e 2.1" " -e 1.1 -e 2.0"

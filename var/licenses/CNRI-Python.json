@@ -21,6 +21,7 @@
         "http://www.opensource.org/licenses/CNRI-Python",
         "osi:CNRI-Python",
         "scancode:cnri-python-1.6",
-        "The CNRI portion of the multi-part Python License"
+      "The CNRI portion of the multi-part Python License",
+      "CNRI"
     ]
 }

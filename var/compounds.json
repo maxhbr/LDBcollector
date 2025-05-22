@@ -4,6 +4,13 @@
         "comment": ""
     },
     "compounds": [
+      {
+        "spdxid": "AGPL 3.0 WITH romic-exception",
+        "aliases": [
+          "linking-exception-agpl-3.0",
+          "AGPL-3.0-only WITH romic-exception"
+        ]
+      },
         {
             "spdxid": "Apache-2.0 WITH LLVM-exception",
             "aliases": [
@@ -32,7 +39,8 @@
                 "GPL v2.0 w/ CPE",
               "GPL2 w CPE",
               "GPL-2.0-only WITH the Classpath Exception",
-              "GPL-2.0-only WITH the classpath exception"
+              "GPL-2.0-only WITH the classpath exception",
+              "GPLv2+CE"
             ]
         },
         {
@@ -90,7 +98,12 @@
                 "GNU General Public License v3.0 w/GCC Runtime Library exception",
                 "GPLv3 + GCC Runtime Library Exception version 3.1",
               "GPL 3.0 w/RTE",
-              "GPL-3 w/ GCC exception"
+              "GPL-3 w/ GCC exception",
+              "GPL-3.0-only WITH GCC exception",
+              "GPL-3.0-only WITH GCC Runtime Library exception",
+              "GPL-3.0+-with-GCC-exception",
+              "GPL-2.0-only WITH GCC exception",
+              "GPL-2.0-only WITH GCC Runtime Library exception"
             ],
             "compatibility_as": "0BSD"
         },

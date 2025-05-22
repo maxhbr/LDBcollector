@@ -9,7 +9,8 @@
 #     check-license-file.sh <LICENSE-FILE>
 # 
 
+SCRIPT_DIR=$(dirname ${BASH_SOURCE[0]})/../
 cat $1 | while read LICENSE
 do
     printf "unknown\n$LICENSE\n" 
-done | ./devel/flame shell -s | grep -v Unknown
+done | ${SCRIPT_DIR}/devel/flame shell -s | grep -v Unknown
