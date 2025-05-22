@@ -2,14 +2,18 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "UnRar License"
-category: "UnRar License"
-shortName: "UnRar"
+canonicalName: "UnRAR License"
+category: "UnRAR License"
+shortName: "UnRAR"
+
+canonicalNameHistory:
+  - "UnRar License"
 
 openCoDEStatus: "not approved"
 
 alternativeNames:
   - "UnRar License"
+  - "UnRAR License"
   - "unRAR license"
 
 otherIds: 
