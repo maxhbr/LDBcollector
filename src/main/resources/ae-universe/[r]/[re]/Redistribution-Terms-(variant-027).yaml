@@ -8,6 +8,12 @@ shortName: "RT-027"
 
 canonicalNameHistory:
   - "BSD alike (display obligation)"
+  - "BSD 3-Clause License (1988)"
+
+alternativeNames:
+  - "BSD 3-Clause License (1988)"
+  - "BSD 3-Clause License 1988"
+  - "bsd 3 clause license 1988"
 
 otherIds: 
   - "scancode:bsd-1988"

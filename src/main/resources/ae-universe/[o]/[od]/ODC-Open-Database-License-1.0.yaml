@@ -2,17 +2,23 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "ODbL 1.0"
-category: "ODbL"
+canonicalName: "ODC Open Database License 1.0"
+category: "ODC"
+shortName: "ODC-ODL-1.0"
 spdxIdentifier: "ODbL-1.0"
+
+canonicalNameHistory:
+  - "ODbL 1.0"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "ODbL, Version 1.0"
   - "ODbL, 1.0"
+  - "ODL-1.0"
+  - "ODL v1.0"
   - "ODC Open Database License"
-  - "Open Data Commons Open Database License"
+  - "Open Database License"
 
 otherIds: 
   - "scancode:odbl-1.0"

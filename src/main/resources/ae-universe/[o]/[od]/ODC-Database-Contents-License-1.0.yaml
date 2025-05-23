@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "ODC Database Contents License 1.0"
-category: "ODC Database Contents License"
-shortName: "DbCL-1.0"
+category: "ODC Contents"
+shortName: "ODC-DCL-1.0"
 
 alternativeNames:
   - "https://opendatacommons.org/licenses/dbcl/1.0/"

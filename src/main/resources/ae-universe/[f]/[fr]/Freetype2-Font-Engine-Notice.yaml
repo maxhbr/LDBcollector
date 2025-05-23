@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Freetype2 Project License"
-category: "Freetype"
-shortName: "Freetype2"
+canonicalName: "Freetype2 Font Engine Notice"
+category: "Freetype2 Notice"
+shortName: "Freetype2-Font-Engine"
+
+canonicalNameHistory:
+  - "Freetype2 Project License"
 
 alternativeNames:
   - "FreeType 2  font  engine license"

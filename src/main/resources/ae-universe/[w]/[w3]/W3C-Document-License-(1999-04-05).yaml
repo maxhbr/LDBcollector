@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "W3C Document Notice and License"
+canonicalName: "W3C Document License (1999-04-05)"
 category: "W3C Document Notice and License"
 shortName: "W3C-Document-Notice"
+
+canonicalNameHistory:
+  - "W3C Document Notice and License"
 
 alternativeNames:
   - "W3C® DOCUMENT NOTICE AND LICENSE"

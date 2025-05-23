@@ -2,7 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "XZ Utils License 5.0"
-category: "XZ Utils"
-shortName: "XZ-Utils-5.0"
+canonicalName: "Permission Terms (SunSoft)"
+category: "Permission"
+shortName: "PT-SunSoft"
+
+alternativeNames:
+  - "SunSoft License"
 
