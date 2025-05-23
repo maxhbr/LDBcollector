@@ -29,8 +29,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-  logo: assets/LicenseLynx_Icon.png
-  favicon: assets/LicenseLynx_Icon.png
+  logo: assets/LicenseLynx-favicon.ico
+  favicon: assets/LicenseLynx-favicon.ico
   features:
     - navigation.footer
 
