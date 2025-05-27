@@ -6,7 +6,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMix
 from django.db.models import F
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import generic
 from django.views.decorators.http import require_POST
@@ -464,3 +464,13 @@ class ReleaseDerogationCreateView(
     form_class = CreateDerogationForm
     permission_required = "cube.add_derogation"
     template_name = "cube/release_derogation_create.html"
+
+    def get_success_url(self):
+        success_url = self.request.GET.get("from", "")
+        if not success_url:
+            usage_id = self.kwargs["usage_pk"]
+            release_id = Usage.objects.get(pk=usage_id).release_id
+            success_url = reverse_lazy(
+                "cube:release_validation_step_5", args=[release_id]
+            )
+        return success_url

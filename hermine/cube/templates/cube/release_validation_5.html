@@ -243,7 +243,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                   <a href="{% url 'cube:license_detail' license_chosen.id %}">Update authorized contexts</a> |
                 {% endif %}
                 {% if perms.cube.add_derogation and not license_chosen.allowed == "always" %}
-                  <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>
+                  <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}?from={{ request.path|urlencode }}"> Add Derogation </a>
                 {% endif %}
               {% endfor %}
             </td>
