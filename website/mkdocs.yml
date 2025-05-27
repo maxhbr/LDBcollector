@@ -37,6 +37,7 @@ theme:
 nav:
   - Introduction: index.md
   - FAQ: faq.md
+  - Data Quality: data-quality.md
   - How LicenseLynx works: licenselynxworks.md
   - Installation: installation.md
   - Usage: usage.md

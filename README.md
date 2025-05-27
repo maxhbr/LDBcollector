@@ -67,6 +67,11 @@ The structure of a stored license looks like this:
 | aliases   | Dictionary of sources, where each source is list of aliases of license (e.g. "spdx", "custom", etc.) |
 | src       | Source for canonical license name                                                                    |
 
+## Data Quality
+
+With LicenseLynx we aim to have a deterministic mean of license mappings.
+For more details, head to our [website](https://licenselynx.org/data-quality) to find out more.
+
 ## Contributing
 
 We welcome contributions from the community to improve this project. If you'd like to contribute, please refer to
