@@ -34,7 +34,7 @@ The folders **Java**, **Python**, and **TypeScript** are providing libraries to 
 The folder **scripts** contains several useful scripts to update, transform, and verify data.
 In the folder **website** we host a static website to introduce the community to the LicenseLynx project.
 
-## Data source structure
+## Data structure
 
 In folder **data** all licenses are stored in single json-files.
 The structure of a stored license looks like this:
@@ -57,6 +57,7 @@ The structure of a stored license looks like this:
         ]
     },
     "src": "spdx"
+    "rejected": []
 }
 
 ```
