@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.67
+Version:        1.68
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,21 @@ make check-grammar
 
 
 %changelog
+* Tue Jun 03 2025 Miroslav Suchý <msuchy@redhat.com> 1.68-1
+- add CC-SA-1.0 as allowed-content
+- allow golang-x-perf to use CC-BY-4.0 for code as an exception
+- add GPL-3.0-or-later WITH Libtool-exception
+- UltraPermissive: Add a text found in libisds
+- add LicenseRef-Geotrans as not-allowed
+- Add public-domain dedication for jemalloc/rust-tikv-jemalloc-sys
+- add Aspell-RU
+- add ngrep
+- add Unlicense-libwhirlpool
+- add Unlicense-libtelnet
+- add CDLA-Permissive-2.0
+- add BSD-3-Clause WITH AdditionRef-Dart
+- add UltraPermissive dedication of autossh
+
 * Fri May 02 2025 Miroslav Suchý <msuchy@redhat.com> 1.67-1
 - add autossh man page ultra permissive dedication
 - add LGPL-2.1-only WITH Digia-Qt-LGPL-exception-1.1
