@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "CeCILL Free Software License Agreement v1.1",
+  "scancode_key": "cecill-1.1",
+  "spdxid": "CECILL-1.1",
+  "aliases": [
+   "CeCILL 1.1 English",
+   "CeCILL Free Software License Agreement 1.1",
+   "scancode://cecill-1.1",
+   "CECILL-1.1",
+   "FREE SOFTWARE LICENSING AGREEMENT CeCILL Notice",
+   "https://spdx.org/licenses/cecill-1.1",
+   "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html",
+   "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt",
+    "scancode:cecill-1.1",
+    "CeCILL Free Software License Agreement v1.1"
+  ]
+}
