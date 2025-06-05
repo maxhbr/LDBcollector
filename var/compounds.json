@@ -26,6 +26,12 @@
             "compatibility_as": "0BSD"            
         },
         {
+          "spdxid": "GPL-2.0-only WITH Bootloader-exception",
+          "aliases": [
+            "GPL-2.0-with-Bootloader-exception"
+          ]
+        },
+        {
             "spdxid": "GPL-2.0-only WITH Classpath-exception-2.0",
             "aliases": [
                 "GPL-2.0-with-classpath-exception",
