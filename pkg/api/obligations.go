@@ -10,6 +10,7 @@ package api
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"net/http"
 	"path/filepath"
@@ -155,6 +156,7 @@ func GetObligation(c *gin.Context) {
 //	@Router			/obligations [post]
 func CreateObligation(c *gin.Context) {
 	var obligation models.Obligation
+	username := c.GetString("username")
 
 	if err := c.ShouldBindJSON(&obligation); err != nil {
 		er := models.LicenseError{
@@ -168,45 +170,61 @@ func CreateObligation(c *gin.Context) {
 		return
 	}
 
-	result := db.DB.
-		Where(&models.Obligation{Topic: obligation.Topic}).
-		Or(&models.Obligation{Md5: obligation.Md5}).
-		FirstOrCreate(&obligation)
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
+		result := tx.
+			Where(&models.Obligation{Topic: obligation.Topic}).
+			Or(&models.Obligation{Md5: obligation.Md5}).
+			FirstOrCreate(&obligation)
 
-	if result.Error != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "Failed to create obligation",
-			Error:     result.Error.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		if result.Error != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "Failed to create obligation",
+				Error:     result.Error.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return result.Error
 		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
 
-	if result.RowsAffected == 0 {
-		er := models.LicenseError{
-			Status:  http.StatusConflict,
-			Message: "can not create obligation with same topic or text",
-			Error: fmt.Sprintf("Error: Obligation with topic '%s' or Text '%s'... already exists",
-				*obligation.Topic, (*obligation.Text)[0:10]),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		if result.RowsAffected == 0 {
+			er := models.LicenseError{
+				Status:  http.StatusConflict,
+				Message: "can not create obligation with same topic or text",
+				Error: fmt.Sprintf("Error: Obligation with topic '%s' or Text '%s'... already exists",
+					*obligation.Topic, (*obligation.Text)[0:10]),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusConflict, er)
+			return errors.New("can not create obligation with same topic or text")
 		}
-		c.JSON(http.StatusConflict, er)
-		return
-	}
 
-	res := models.ObligationResponse{
-		Data:   []models.Obligation{obligation},
-		Status: http.StatusCreated,
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
-	}
+		if err := addChangelogsForObligation(tx, username, &obligation, &models.Obligation{}); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "Failed to create obligation",
+				Error:     result.Error.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return err
+		}
 
-	c.JSON(http.StatusCreated, res)
+		res := models.ObligationResponse{
+			Data:   []models.Obligation{obligation},
+			Status: http.StatusCreated,
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+
+		c.JSON(http.StatusCreated, res)
+
+		return nil
+	})
 }
 
 // UpdateObligation updates an existing active obligation record
@@ -269,7 +287,7 @@ func UpdateObligation(c *gin.Context) {
 			return err
 		}
 
-		if err := addChangelogsForObligationUpdate(tx, username, newObligation, &oldObligation); err != nil {
+		if err := addChangelogsForObligation(tx, username, newObligation, &oldObligation); err != nil {
 			return err
 		}
 
@@ -513,7 +531,7 @@ func ImportObligations(c *gin.Context) {
 					})
 					return err
 				}
-				if err := addChangelogsForObligationUpdate(tx, username, &newObligation, &oldObligation); err != nil {
+				if err := addChangelogsForObligation(tx, username, &newObligation, &oldObligation); err != nil {
 					res.Data = append(res.Data, models.LicenseError{
 						Status:    http.StatusInternalServerError,
 						Message:   "Failed to update license",
@@ -531,6 +549,17 @@ func ImportObligations(c *gin.Context) {
 				})
 
 			} else {
+
+				if err := addChangelogsForObligation(tx, username, &oldObligation, &models.Obligation{}); err != nil {
+					res.Data = append(res.Data, models.LicenseError{
+						Status:    http.StatusInternalServerError,
+						Message:   "Failed to update license",
+						Error:     err.Error(),
+						Path:      c.Request.URL.Path,
+						Timestamp: time.Now().Format(time.RFC3339),
+					})
+					return err
+				}
 				// case when obligation doesn't exist in database and is inserted
 				res.Data = append(res.Data, models.ObligationImportStatus{
 					Data:    models.ObligationId{Id: oldObligation.Id, Topic: *oldObligation.Topic},
@@ -615,69 +644,45 @@ func ExportObligations(c *gin.Context) {
 	c.JSON(http.StatusOK, &obligations)
 }
 
-// addChangelogsForObligationUpdate adds changelogs for the updated fields on obligation update
-func addChangelogsForObligationUpdate(tx *gorm.DB, username string,
+// addChangelogsForObligation adds changelogs for the updated fields on obligation update
+func addChangelogsForObligation(tx *gorm.DB, username string,
 	newObligation, oldObligation *models.Obligation) error {
 	var user models.User
 	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
 		return err
 	}
 	var changes []models.ChangeLog
-	if (*oldObligation.Type).Type != (*newObligation.Type).Type {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Type",
-			OldValue:     &(*oldObligation.Type).Type,
-			UpdatedValue: &(*newObligation.Type).Type,
-		})
+
+	var oldType, newType *string
+	oldType = nil
+	newType = nil
+	if oldObligation.Type != nil {
+		oldType = &(oldObligation.Type).Type
 	}
-	if oldObligation.Md5 != newObligation.Md5 {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Text",
-			OldValue:     oldObligation.Text,
-			UpdatedValue: newObligation.Text,
-		})
+	if newObligation.Type != nil {
+		newType = &(newObligation.Type).Type
 	}
-	if (*oldObligation.Classification).Classification != (*newObligation.Classification).Classification {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Classification",
-			OldValue:     &(*oldObligation.Classification).Classification,
-			UpdatedValue: &(*newObligation.Classification).Classification,
-		})
+	utils.AddChangelog("Type", oldType, newType, &changes)
+
+	utils.AddChangelog("Text", oldObligation.Text, newObligation.Text, &changes)
+
+	oldType = nil
+	newType = nil
+	if oldObligation.Classification != nil {
+		oldType = &(oldObligation.Classification).Classification
 	}
-	if *oldObligation.Modifications != *newObligation.Modifications {
-		oldVal := strconv.FormatBool(*oldObligation.Modifications)
-		newVal := strconv.FormatBool(*newObligation.Modifications)
-		changes = append(changes, models.ChangeLog{
-			Field:        "Modifications",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
+	if newObligation.Classification != nil {
+		newType = &(newObligation.Classification).Classification
 	}
-	if *oldObligation.Comment != *newObligation.Comment {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Comment",
-			OldValue:     oldObligation.Comment,
-			UpdatedValue: newObligation.Comment,
-		})
-	}
-	if *oldObligation.Active != *newObligation.Active {
-		oldVal := strconv.FormatBool(*oldObligation.Active)
-		newVal := strconv.FormatBool(*newObligation.Active)
-		changes = append(changes, models.ChangeLog{
-			Field:        "Active",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldObligation.TextUpdatable != *newObligation.TextUpdatable {
-		oldVal := strconv.FormatBool(*oldObligation.TextUpdatable)
-		newVal := strconv.FormatBool(*newObligation.TextUpdatable)
-		changes = append(changes, models.ChangeLog{
-			Field:        "TextUpdatable",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
+	utils.AddChangelog("Classification", oldType, newType, &changes)
+
+	utils.AddChangelog("Modifications", oldObligation.Modifications, newObligation.Modifications, &changes)
+
+	utils.AddChangelog("Comment", oldObligation.Comment, newObligation.Comment, &changes)
+
+	utils.AddChangelog("Active", oldObligation.Active, newObligation.Active, &changes)
+
+	utils.AddChangelog("Text Updatable", oldObligation.TextUpdatable, newObligation.TextUpdatable, &changes)
 
 	if len(changes) != 0 {
 		audit := models.Audit{

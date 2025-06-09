@@ -254,6 +254,12 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 				return errors.New(message)
 			}
 
+			if err := AddChangelogsForLicense(tx, username, &newLicense, &oldLicense); err != nil {
+				message = fmt.Sprintf("failed to update license: %s", err.Error())
+				importStatus = IMPORT_FAILED
+				return errors.New(message)
+			}
+
 			if *newLicense.Flag == 2 {
 				message = "all fields except text were updated. text was updated manually and cannot be overwritten in an import."
 				importStatus = IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
@@ -261,14 +267,15 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 			} else {
 				importStatus = IMPORT_LICENSE_UPDATED
 			}
+		} else {
+			// case when license doesn't exist in database and is inserted
 
-			if err := AddChangelogsForLicenseUpdate(tx, username, &newLicense, &oldLicense); err != nil {
-				message = fmt.Sprintf("failed to update license: %s", err.Error())
+			if err := AddChangelogsForLicense(tx, username, &oldLicense, &models.LicenseDB{}); err != nil {
+				message = fmt.Sprintf("failed to create license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
 			}
-		} else {
-			// case when license doesn't exist in database and is inserted
+
 			importStatus = IMPORT_LICENSE_CREATED
 		}
 
@@ -383,11 +390,9 @@ func createObligationMapChangelog(tx *gorm.DB, username string,
 	newLicenseAssociations, oldLicenseAssociations []string, obligation *models.Obligation) error {
 	oldVal := strings.Join(oldLicenseAssociations, ", ")
 	newVal := strings.Join(newLicenseAssociations, ", ")
-	change := models.ChangeLog{
-		Field:        "Licenses",
-		OldValue:     &oldVal,
-		UpdatedValue: &newVal,
-	}
+
+	var changes []models.ChangeLog
+	AddChangelog("Licenses", &oldVal, &newVal, &changes)
 
 	var user models.User
 	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
@@ -399,7 +404,7 @@ func createObligationMapChangelog(tx *gorm.DB, username string,
 		TypeId:     obligation.Id,
 		Timestamp:  time.Now(),
 		Type:       "obligation",
-		ChangeLogs: []models.ChangeLog{change},
+		ChangeLogs: changes,
 	}
 
 	if err := tx.Create(&audit).Error; err != nil {
@@ -511,168 +516,56 @@ func GetKid(token string) (string, error) {
 	return header.KeyID, err
 }
 
-// addChangelogsForLicenseUpdate adds changelogs for the updated fields on license update
-func AddChangelogsForLicenseUpdate(tx *gorm.DB, username string,
+func AddChangelog[T any](fieldName string, oldValue, newValue *T, changes *[]models.ChangeLog) {
+	var _oldValue, _newValue string
+	if oldValue != nil {
+		_oldValue = fmt.Sprintf("%v", *oldValue)
+	} else {
+		_oldValue = ""
+	}
+	if newValue != nil {
+		_newValue = fmt.Sprintf("%v", *newValue)
+	} else {
+		_newValue = ""
+	}
+	if _oldValue != _newValue {
+		*changes = append(*changes, models.ChangeLog{
+			Field:        fieldName,
+			OldValue:     &_oldValue,
+			UpdatedValue: &_newValue,
+		})
+	}
+}
+
+// AddChangelogsForLicense adds changelogs for the updated fields on license update
+func AddChangelogsForLicense(tx *gorm.DB, username string,
 	newLicense, oldLicense *models.LicenseDB) error {
 	var changes []models.ChangeLog
 
-	if *oldLicense.Fullname != *newLicense.Fullname {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Fullname",
-			OldValue:     oldLicense.Fullname,
-			UpdatedValue: newLicense.Fullname,
-		})
-	}
-	if *oldLicense.Url != *newLicense.Url {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Url",
-			OldValue:     oldLicense.Url,
-			UpdatedValue: newLicense.Url,
-		})
-	}
-	if oldLicense.AddDate != newLicense.AddDate {
-		oldVal := oldLicense.AddDate.Format(time.RFC3339)
-		newVal := newLicense.AddDate.Format(time.RFC3339)
-		changes = append(changes, models.ChangeLog{
-			Field:        "Adddate",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.Active != *newLicense.Active {
-		oldVal := strconv.FormatBool(*oldLicense.Active)
-		newVal := strconv.FormatBool(*newLicense.Active)
-		changes = append(changes, models.ChangeLog{
-			Field:        "Active",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.Copyleft != *newLicense.Copyleft {
-		oldVal := strconv.FormatBool(*oldLicense.Copyleft)
-		newVal := strconv.FormatBool(*newLicense.Copyleft)
-		changes = append(changes, models.ChangeLog{
-			Field:        "Copyleft",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.FSFfree != *newLicense.FSFfree {
-		oldVal := strconv.FormatBool(*oldLicense.FSFfree)
-		newVal := strconv.FormatBool(*newLicense.FSFfree)
-		changes = append(changes, models.ChangeLog{
-			Field:        "FSFfree",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.GPLv2compatible != *newLicense.GPLv2compatible {
-		oldVal := strconv.FormatBool(*oldLicense.GPLv2compatible)
-		newVal := strconv.FormatBool(*newLicense.GPLv2compatible)
-		changes = append(changes, models.ChangeLog{
-			Field:        "GPLv2compatible",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.GPLv3compatible != *newLicense.GPLv3compatible {
-		oldVal := strconv.FormatBool(*oldLicense.GPLv3compatible)
-		newVal := strconv.FormatBool(*newLicense.GPLv3compatible)
-		changes = append(changes, models.ChangeLog{
-			Field:        "GPLv3compatible",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.OSIapproved != *newLicense.OSIapproved {
-		oldVal := strconv.FormatBool(*oldLicense.OSIapproved)
-		newVal := strconv.FormatBool(*newLicense.OSIapproved)
-		changes = append(changes, models.ChangeLog{
-			Field:        "OSIapproved",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.Text != *newLicense.Text {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Text",
-			OldValue:     oldLicense.Text,
-			UpdatedValue: newLicense.Text,
-		})
-	}
-	if *oldLicense.TextUpdatable != *newLicense.TextUpdatable {
-		oldVal := strconv.FormatBool(*oldLicense.TextUpdatable)
-		newVal := strconv.FormatBool(*newLicense.TextUpdatable)
-		changes = append(changes, models.ChangeLog{
-			Field:        "TextUpdatable",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.Fedora != *newLicense.Fedora {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Fedora",
-			OldValue:     oldLicense.Fedora,
-			UpdatedValue: newLicense.Fedora,
-		})
-	}
-	if *oldLicense.Flag != *newLicense.Flag {
-		oldVal := strconv.FormatInt(*oldLicense.Flag, 10)
-		newVal := strconv.FormatInt(*newLicense.Flag, 10)
-		changes = append(changes, models.ChangeLog{
-			Field:        "Flag",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.Notes != *newLicense.Notes {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Notes",
-			OldValue:     oldLicense.Notes,
-			UpdatedValue: newLicense.Notes,
-		})
-	}
-	if *oldLicense.DetectorType != *newLicense.DetectorType {
-		oldVal := strconv.FormatInt(*oldLicense.DetectorType, 10)
-		newVal := strconv.FormatInt(*newLicense.DetectorType, 10)
-		changes = append(changes, models.ChangeLog{
-			Field:        "DetectorType",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.Source != *newLicense.Source {
-		changes = append(changes, models.ChangeLog{
-			Field:        "Source",
-			OldValue:     oldLicense.Source,
-			UpdatedValue: newLicense.Source,
-		})
-	}
-	if *oldLicense.SpdxId != *newLicense.SpdxId {
-		changes = append(changes, models.ChangeLog{
-			Field:        "SpdxId",
-			OldValue:     oldLicense.SpdxId,
-			UpdatedValue: newLicense.SpdxId,
-		})
-	}
-	if *oldLicense.Risk != *newLicense.Risk {
-		oldVal := strconv.FormatInt(*oldLicense.Risk, 10)
-		newVal := strconv.FormatInt(*newLicense.Risk, 10)
-		changes = append(changes, models.ChangeLog{
-			Field:        "Risk",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
-	if *oldLicense.Marydone != *newLicense.Marydone {
-		oldVal := strconv.FormatBool(*oldLicense.Marydone)
-		newVal := strconv.FormatBool(*newLicense.Marydone)
-		changes = append(changes, models.ChangeLog{
-			Field:        "Marydone",
-			OldValue:     &oldVal,
-			UpdatedValue: &newVal,
-		})
-	}
+	AddChangelog("Fullname", oldLicense.Fullname, newLicense.Fullname, &changes)
+
+	AddChangelog("Url", oldLicense.Url, newLicense.Url, &changes)
+
+	oldVal := oldLicense.AddDate.Format(time.RFC3339)
+	newVal := newLicense.AddDate.Format(time.RFC3339)
+	AddChangelog("Add Date", &oldVal, &newVal, &changes)
+
+	AddChangelog("Active", oldLicense.Active, newLicense.Active, &changes)
+	AddChangelog("Copyleft", oldLicense.Copyleft, newLicense.Copyleft, &changes)
+	AddChangelog("FSF Free", oldLicense.FSFfree, newLicense.FSFfree, &changes)
+	AddChangelog("GPLv2 Compatible", oldLicense.GPLv2compatible, newLicense.GPLv2compatible, &changes)
+	AddChangelog("GPLv3 Compatible", oldLicense.GPLv3compatible, newLicense.GPLv3compatible, &changes)
+	AddChangelog("OSI Approved", oldLicense.OSIapproved, newLicense.OSIapproved, &changes)
+	AddChangelog("Text", oldLicense.Text, newLicense.Text, &changes)
+	AddChangelog("Text Updatable", oldLicense.TextUpdatable, newLicense.TextUpdatable, &changes)
+	AddChangelog("Fedora", oldLicense.Fedora, newLicense.Fedora, &changes)
+	AddChangelog("Flag", oldLicense.Flag, newLicense.Flag, &changes)
+	AddChangelog("Notes", oldLicense.Notes, newLicense.Notes, &changes)
+	AddChangelog("DetectorType", oldLicense.DetectorType, newLicense.DetectorType, &changes)
+	AddChangelog("Source", oldLicense.Source, newLicense.Source, &changes)
+	AddChangelog("Spdx Id", oldLicense.SpdxId, newLicense.SpdxId, &changes)
+	AddChangelog("Risk", oldLicense.Risk, newLicense.Risk, &changes)
+	AddChangelog("Marydone", oldLicense.Marydone, newLicense.Marydone, &changes)
 
 	oldLicenseExternalRef := oldLicense.ExternalRef.Data()
 	oldExternalRefVal := reflect.ValueOf(oldLicenseExternalRef)
@@ -688,62 +581,15 @@ func AddChangelogsForLicenseUpdate(tx *gorm.DB, username string,
 		case "*boolean":
 			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*bool)
 			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*bool)
-			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
-				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
-				var oldVal, newVal *string
-				oldVal, newVal = nil, nil
-
-				if oldFieldPtr != nil {
-					_oldVal := fmt.Sprintf("%t", *oldFieldPtr)
-					oldVal = &_oldVal
-				}
-
-				if newFieldPtr != nil {
-					_newVal := fmt.Sprintf("%t", *newFieldPtr)
-					newVal = &_newVal
-				}
-
-				changes = append(changes, models.ChangeLog{
-					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
-					OldValue:     oldVal,
-					UpdatedValue: newVal,
-				})
-			}
+			AddChangelog(fmt.Sprintf("External Reference %s", fieldName), oldFieldPtr, newFieldPtr, &changes)
 		case "*string":
 			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*string)
 			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*string)
-			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
-				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
-				changes = append(changes, models.ChangeLog{
-					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
-					OldValue:     oldFieldPtr,
-					UpdatedValue: newFieldPtr,
-				})
-			}
+			AddChangelog(fmt.Sprintf("External Reference %s", fieldName), oldFieldPtr, newFieldPtr, &changes)
 		case "*int":
 			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*int)
 			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*int)
-			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
-				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
-				var oldVal, newVal *string
-				oldVal, newVal = nil, nil
-
-				if oldFieldPtr != nil {
-					_oldVal := fmt.Sprintf("%d", *oldFieldPtr)
-					oldVal = &_oldVal
-				}
-
-				if newFieldPtr != nil {
-					_newVal := fmt.Sprintf("%d", *newFieldPtr)
-					newVal = &_newVal
-				}
-
-				changes = append(changes, models.ChangeLog{
-					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
-					OldValue:     oldVal,
-					UpdatedValue: newVal,
-				})
-			}
+			AddChangelog(fmt.Sprintf("External Reference %s", fieldName), oldFieldPtr, newFieldPtr, &changes)
 		}
 	}
 

@@ -295,57 +295,74 @@ func CreateLicense(c *gin.Context) {
 		return
 	}
 
-	username := c.GetString("username")
-	ctx := context.WithValue(context.Background(), models.ContextKey("user"), username)
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 
-	result := db.DB.WithContext(ctx).
-		Where(&models.LicenseDB{Shortname: input.Shortname}).
-		FirstOrCreate(&input)
+		username := c.GetString("username")
+		ctx := context.WithValue(context.Background(), models.ContextKey("user"), username)
 
-	if result.Error != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Failed to create license",
-			Error:     result.Error.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		result := tx.WithContext(ctx).
+			Where(&models.LicenseDB{Shortname: input.Shortname}).
+			FirstOrCreate(&input)
+
+		if result.Error != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to create license",
+				Error:     result.Error.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return result.Error
 		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
-	if result.RowsAffected == 0 {
-		er := models.LicenseError{
-			Status:    http.StatusConflict,
-			Message:   "can not create license with same shortname",
-			Error:     fmt.Sprintf("Error: License with shortname '%s' already exists", *input.Shortname),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		if result.RowsAffected == 0 {
+			er := models.LicenseError{
+				Status:    http.StatusConflict,
+				Message:   "can not create license with same shortname",
+				Error:     fmt.Sprintf("Error: License with shortname '%s' already exists", *input.Shortname),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusConflict, er)
+			return errors.New("can not create license with same shortname")
 		}
-		c.JSON(http.StatusConflict, er)
-		return
-	}
 
-	if err := db.DB.Preload("User").First(&input).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Failed to create license",
-			Error:     result.Error.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		if err := tx.Preload("User").First(&input).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to create license",
+				Error:     result.Error.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return result.Error
 		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
 
-	res := models.LicenseResponse{
-		Data:   []models.LicenseDB{input},
-		Status: http.StatusCreated,
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
-	}
+		if err := utils.AddChangelogsForLicense(tx, username, &input, &models.LicenseDB{}); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update license",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
+		}
 
-	c.JSON(http.StatusCreated, res)
+		res := models.LicenseResponse{
+			Data:   []models.LicenseDB{input},
+			Status: http.StatusCreated,
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+
+		c.JSON(http.StatusCreated, res)
+
+		return nil
+	})
 }
 
 type ContextKey string
@@ -473,7 +490,7 @@ func UpdateLicense(c *gin.Context) {
 			return err
 		}
 
-		if err := utils.AddChangelogsForLicenseUpdate(tx, username, &newLicense, &oldLicense); err != nil {
+		if err := utils.AddChangelogsForLicense(tx, username, &newLicense, &oldLicense); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",

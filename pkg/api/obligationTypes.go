@@ -14,6 +14,7 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"gorm.io/gorm"
@@ -95,6 +96,7 @@ func GetAllObligationType(c *gin.Context) {
 //	@Router			/obligations/types [post]
 func CreateObligationType(c *gin.Context) {
 	var obType models.ObligationType
+	username := c.GetString("username")
 	if err := c.ShouldBindJSON(&obType); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -120,7 +122,7 @@ func CreateObligationType(c *gin.Context) {
 		return
 	}
 
-	if err := db.DB.Transaction(func(tx *gorm.DB) error {
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		result := tx.Where(&models.ObligationType{Type: obType.Type}).FirstOrCreate(&obType)
 		if result.Error != nil {
 			er := models.LicenseError{
@@ -156,21 +158,31 @@ func CreateObligationType(c *gin.Context) {
 				c.JSON(http.StatusConflict, er)
 				return err
 			}
+		} else {
+			if err := addChangelogForObligationType(tx, username, &models.ObligationType{}, &obType); err != nil {
+				er := models.LicenseError{
+					Status:    http.StatusInternalServerError,
+					Message:   "something went wrong while creating new obligation type",
+					Error:     err.Error(),
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				}
+				c.JSON(http.StatusInternalServerError, er)
+				return err
+			}
 		}
+
+		res := models.ObligationTypeResponse{
+			Status: http.StatusCreated,
+			Data:   []models.ObligationType{obType},
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+
+		c.JSON(http.StatusCreated, res)
 		return nil
-	}); err != nil {
-		return
-	}
-
-	res := models.ObligationTypeResponse{
-		Status: http.StatusCreated,
-		Data:   []models.ObligationType{obType},
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
-	}
-
-	c.JSON(http.StatusCreated, res)
+	})
 }
 
 // DeleteObligationType marks an existing obligation type record as inactive
@@ -248,37 +260,39 @@ func DeleteObligationType(c *gin.Context) {
 	c.Status(http.StatusOK)
 }
 
+func addChangelogForObligationType(tx *gorm.DB, username string, oldObType, newObType *models.ObligationType) error {
+	var user models.User
+	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
+		return errors.New("unable to update obligation type")
+	}
+
+	var changes []models.ChangeLog
+	utils.AddChangelog("Active", oldObType.Active, newObType.Active, &changes)
+	utils.AddChangelog("Type", &oldObType.Type, &newObType.Type, &changes)
+
+	audit := models.Audit{
+		UserId:     user.Id,
+		TypeId:     newObType.Id,
+		Timestamp:  time.Now(),
+		Type:       "ObligationType",
+		ChangeLogs: changes,
+	}
+
+	if err := tx.Create(&audit).Error; err != nil {
+		return errors.New("unable to update obligation type")
+	}
+
+	return nil
+}
+
 func toggleObligationTypeActiveStatus(c *gin.Context, tx *gorm.DB, obType *models.ObligationType) error {
-	*obType.Active = !*obType.Active
-	if err := tx.Clauses(clause.Returning{}).Updates(&obType).Error; err != nil {
+	newObType := *obType
+	*newObType.Active = !*newObType.Active
+	if err := tx.Clauses(clause.Returning{}).Updates(&newObType).Error; err != nil {
 		return errors.New("unable to change 'active' status of obligation type")
 	}
 
 	username := c.GetString("username")
-	var user models.User
-	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		return errors.New("unable to change 'active' status of obligation type")
-	}
 
-	oldVal := strconv.FormatBool(!*obType.Active)
-	newVal := strconv.FormatBool(*obType.Active)
-	change := models.ChangeLog{
-		Field:        "Active",
-		OldValue:     &oldVal,
-		UpdatedValue: &newVal,
-	}
-
-	audit := models.Audit{
-		UserId:     user.Id,
-		TypeId:     obType.Id,
-		Timestamp:  time.Now(),
-		Type:       "ObligationType",
-		ChangeLogs: []models.ChangeLog{change},
-	}
-
-	if err := tx.Create(&audit).Error; err != nil {
-		return errors.New("unable to change 'active' status of obligation type")
-	}
-
-	return nil
+	return addChangelogForObligationType(tx, username, obType, &newObType)
 }
