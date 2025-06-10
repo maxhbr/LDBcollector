@@ -403,7 +403,7 @@ func createObligationMapChangelog(tx *gorm.DB, username string,
 		UserId:     user.Id,
 		TypeId:     obligation.Id,
 		Timestamp:  time.Now(),
-		Type:       "obligation",
+		Type:       "OBLIGATION",
 		ChangeLogs: changes,
 	}
 
@@ -412,6 +412,166 @@ func createObligationMapChangelog(tx *gorm.DB, username string,
 	}
 
 	return nil
+}
+
+func AddChangelogForObligationType(tx *gorm.DB, username string, oldObType, newObType *models.ObligationType) error {
+	var user models.User
+	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
+		return errors.New("unable to update obligation type")
+	}
+
+	var changes []models.ChangeLog
+	AddChangelog("Active", oldObType.Active, newObType.Active, &changes)
+	AddChangelog("Type", &oldObType.Type, &newObType.Type, &changes)
+
+	if len(changes) != 0 {
+		audit := models.Audit{
+			UserId:     user.Id,
+			TypeId:     newObType.Id,
+			Timestamp:  time.Now(),
+			Type:       "TYPE",
+			ChangeLogs: changes,
+		}
+
+		if err := tx.Create(&audit).Error; err != nil {
+			return errors.New("unable to update obligation type")
+		}
+	}
+
+	return nil
+}
+
+func ToggleObligationTypeActiveStatus(username string, tx *gorm.DB, obType *models.ObligationType) error {
+	newObType := *obType
+	newActive := !*obType.Active
+	newObType.Active = &newActive
+	if err := tx.Clauses(clause.Returning{}).Updates(&newObType).Error; err != nil {
+		return errors.New("unable to change 'active' status of obligation type")
+	}
+
+	return AddChangelogForObligationType(tx, username, obType, &newObType)
+}
+
+func AddChangelogForObligationClassification(tx *gorm.DB, username string, oldObClassification, newObClassification *models.ObligationClassification) error {
+	var user models.User
+	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
+		return errors.New("unable to update obligation classification")
+	}
+
+	var changes []models.ChangeLog
+	AddChangelog("Active", oldObClassification.Active, newObClassification.Active, &changes)
+	AddChangelog("Classification", &oldObClassification.Classification, &newObClassification.Classification, &changes)
+
+	if len(changes) != 0 {
+		audit := models.Audit{
+			UserId:     user.Id,
+			TypeId:     newObClassification.Id,
+			Timestamp:  time.Now(),
+			Type:       "CLASSIFICATION",
+			ChangeLogs: changes,
+		}
+
+		if err := tx.Create(&audit).Error; err != nil {
+			return errors.New("unable to update obligation classification")
+		}
+	}
+
+	return nil
+}
+
+func ToggleObligationClassificationActiveStatus(username string, tx *gorm.DB, obClassification *models.ObligationClassification) error {
+	newObClassification := *obClassification
+	newActive := !*obClassification.Active
+	newObClassification.Active = &newActive
+	if err := tx.Clauses(clause.Returning{}).Updates(&newObClassification).Error; err != nil {
+		return errors.New("unable to change 'active' status of obligation classification")
+	}
+
+	return AddChangelogForObligationClassification(tx, username, obClassification, &newObClassification)
+}
+
+// ObligationTypeStatusCode is internally used for checking status of a obligation type creation
+type ObligationFieldCreateStatusCode int
+
+// Status codes covering various scenarios that can occur on a license import
+const (
+	CREATE_FAILED ObligationFieldCreateStatusCode = iota + 1
+	VALIDATION_FAILED
+	CONFLICT
+	CONFLICT_ACTIVATION_FAILED
+	CREATED
+)
+
+func CreateObType(obType *models.ObligationType, username string) (error, ObligationFieldCreateStatusCode) {
+	validate := validator.New(validator.WithRequiredStructEnabled())
+	if err := validate.Struct(obType); err != nil {
+		return err, VALIDATION_FAILED
+	}
+
+	var status ObligationFieldCreateStatusCode
+	err := db.DB.Transaction(func(tx *gorm.DB) error {
+		result := tx.Where(&models.ObligationType{Type: obType.Type}).FirstOrCreate(&obType)
+		if result.Error != nil {
+			status = CREATE_FAILED
+			return result.Error
+		}
+		if result.RowsAffected == 0 {
+			if *obType.Active {
+				status = CONFLICT
+				return errors.New("obligation type already exists")
+			}
+			if err := ToggleObligationTypeActiveStatus(username, tx, obType); err != nil {
+				status = CONFLICT_ACTIVATION_FAILED
+				return err
+			}
+		} else {
+			if err := AddChangelogForObligationType(tx, username, &models.ObligationType{}, obType); err != nil {
+				status = CREATE_FAILED
+				return err
+			}
+		}
+
+		status = CREATED
+		return nil
+	})
+
+	return err, status
+}
+
+func CreateObClassification(obClassification *models.ObligationClassification, username string) (error, ObligationFieldCreateStatusCode) {
+	validate := validator.New(validator.WithRequiredStructEnabled())
+	if err := validate.Struct(obClassification); err != nil {
+		return err, VALIDATION_FAILED
+	}
+
+	var status ObligationFieldCreateStatusCode
+	err := db.DB.Transaction(func(tx *gorm.DB) error {
+		result := tx.Where(&models.ObligationClassification{Classification: obClassification.Classification}).FirstOrCreate(&obClassification)
+		if result.Error != nil {
+			status = CREATE_FAILED
+			return result.Error
+		}
+		if result.RowsAffected == 0 {
+			if *obClassification.Active {
+				status = CONFLICT
+				return errors.New("obligation classification already exists")
+			}
+			if err := ToggleObligationClassificationActiveStatus(username, tx, obClassification); err != nil {
+				status = CONFLICT_ACTIVATION_FAILED
+				return err
+			}
+		} else {
+			if err := AddChangelogForObligationClassification(tx, username, &models.ObligationClassification{}, obClassification); err != nil {
+				status = CREATE_FAILED
+				return err
+			}
+		}
+
+		status = CREATED
+		return nil
+	})
+
+	return err, status
 }
 
 // Populatedb populates the database with license data from a JSON file.
@@ -437,11 +597,53 @@ func Populatedb(datafile string) {
 		result := Converter(license)
 		_, _ = InsertOrUpdateLicenseOnImport(&result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, *user.UserName)
 	}
+
+	DEFAULT_OBLIGATION_TYPES := []*models.ObligationType{
+		{Type: "OBLIGATION"},
+		{Type: "RISK"},
+		{Type: "RESTRICTION"},
+		{Type: "RIGHT"},
+	}
+
+	for _, obType := range DEFAULT_OBLIGATION_TYPES {
+		err, status := CreateObType(obType, *user.UserName)
+
+		if status == CREATED || status == CONFLICT {
+			green := "\033[32m"
+			reset := "\033[0m"
+			log.Printf("%s%s: %s%s", green, obType.Type, "Obligation type created successfully", reset)
+		} else {
+			red := "\033[31m"
+			reset := "\033[0m"
+			log.Printf("%s%s: %s%s", red, obType.Type, err.Error(), reset)
+		}
+	}
+
+	DEFAULT_OBLIGATION_CLASSIFICATIONS := []*models.ObligationClassification{
+		{Classification: "GREEN", Color: "#00FF00"},
+		{Classification: "WHITE", Color: "#FFFFFF"},
+		{Classification: "YELLOW", Color: "#FFDE21"},
+		{Classification: "RED", Color: "#FF0000"},
+	}
+
+	for _, obClassification := range DEFAULT_OBLIGATION_CLASSIFICATIONS {
+		err, status := CreateObClassification(obClassification, *user.UserName)
+
+		if status == CREATED || status == CONFLICT {
+			green := "\033[32m"
+			reset := "\033[0m"
+			log.Printf("%s%s: %s%s", green, obClassification.Classification, "Obligation classification created successfully", reset)
+		} else {
+			red := "\033[31m"
+			reset := "\033[0m"
+			log.Printf("%s%s: %s%s", red, obClassification.Classification, err.Error(), reset)
+		}
+	}
 }
 
 // GetAuditEntity is an utility function to fetch obligation or license associated with an audit
 func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
-	if audit.Type == "license" || audit.Type == "License" {
+	if audit.Type == "LICENSE" {
 		audit.Entity = &models.LicenseDB{}
 		if err := db.DB.Where(&models.LicenseDB{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
 			er := models.LicenseError{
@@ -454,7 +656,7 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
-	} else if audit.Type == "obligation" || audit.Type == "Obligation" {
+	} else if audit.Type == "OBLIGATION" {
 		audit.Entity = &models.Obligation{}
 		if err := db.DB.Joins("Type").Joins("Classification").Where(&models.Obligation{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
 			er := models.LicenseError{
@@ -467,7 +669,7 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
-	} else if audit.Type == "obligationType" || audit.Type == "ObligationType" {
+	} else if audit.Type == "TYPE" {
 		audit.Entity = &models.ObligationType{}
 		if err := db.DB.Where(&models.ObligationType{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
 			er := models.LicenseError{
@@ -480,7 +682,7 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
-	} else if audit.Type == "obligationClassification" || audit.Type == "ObligationClassification" {
+	} else if audit.Type == "CLASSIFICATION" {
 		audit.Entity = &models.ObligationClassification{}
 		if err := db.DB.Where(&models.ObligationClassification{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
 			er := models.LicenseError{
@@ -603,7 +805,7 @@ func AddChangelogsForLicense(tx *gorm.DB, username string,
 			UserId:     user.Id,
 			TypeId:     newLicense.Id,
 			Timestamp:  time.Now(),
-			Type:       "license",
+			Type:       "LICENSE",
 			ChangeLogs: changes,
 		}
 

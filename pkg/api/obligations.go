@@ -689,7 +689,7 @@ func addChangelogsForObligation(tx *gorm.DB, username string,
 			UserId:     user.Id,
 			TypeId:     newObligation.Id,
 			Timestamp:  time.Now(),
-			Type:       "Obligation",
+			Type:       "OBLIGATION",
 			ChangeLogs: changes,
 		}
 

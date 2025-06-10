@@ -6,7 +6,6 @@
 package api
 
 import (
-	"errors"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -18,7 +17,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
 )
 
 // GetAllObligationType retrieves a list of all obligation types
@@ -109,8 +107,39 @@ func CreateObligationType(c *gin.Context) {
 		return
 	}
 
-	validate := validator.New(validator.WithRequiredStructEnabled())
-	if err := validate.Struct(&obType); err != nil {
+	err, status := utils.CreateObType(&obType, username)
+
+	if status == utils.CREATED {
+		res := models.ObligationTypeResponse{
+			Status: http.StatusCreated,
+			Data:   []models.ObligationType{obType},
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+		c.JSON(http.StatusCreated, res)
+
+	} else if status == utils.CONFLICT {
+		er := models.LicenseError{
+			Status:    http.StatusConflict,
+			Message:   "obligation type already exists",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusConflict, er)
+
+	} else if status == utils.CONFLICT_ACTIVATION_FAILED {
+		er := models.LicenseError{
+			Status:    http.StatusConflict,
+			Message:   "obligation type already exists, something went wrong while reactvating it",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusConflict, er)
+
+	} else if status == utils.VALIDATION_FAILED {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "can not create obligation type with these field values",
@@ -119,70 +148,18 @@ func CreateObligationType(c *gin.Context) {
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusBadRequest, er)
-		return
+
+	} else {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "something went wrong while creating new obligation type",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+
 	}
-
-	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		result := tx.Where(&models.ObligationType{Type: obType.Type}).FirstOrCreate(&obType)
-		if result.Error != nil {
-			er := models.LicenseError{
-				Status:    http.StatusInternalServerError,
-				Message:   "something went wrong while creating new obligation type",
-				Error:     result.Error.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusInternalServerError, er)
-			return result.Error
-		}
-		if result.RowsAffected == 0 {
-			if *obType.Active {
-				er := models.LicenseError{
-					Status:    http.StatusConflict,
-					Message:   "obligation type already exists",
-					Error:     "obligation type already exists",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusConflict, er)
-				return errors.New("obligation type already exists")
-			}
-			if err := toggleObligationTypeActiveStatus(c, tx, &obType); err != nil {
-				er := models.LicenseError{
-					Status:    http.StatusConflict,
-					Message:   "obligation type already exists, something went wrong while reactvating it",
-					Error:     err.Error(),
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusConflict, er)
-				return err
-			}
-		} else {
-			if err := addChangelogForObligationType(tx, username, &models.ObligationType{}, &obType); err != nil {
-				er := models.LicenseError{
-					Status:    http.StatusInternalServerError,
-					Message:   "something went wrong while creating new obligation type",
-					Error:     err.Error(),
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusInternalServerError, er)
-				return err
-			}
-		}
-
-		res := models.ObligationTypeResponse{
-			Status: http.StatusCreated,
-			Data:   []models.ObligationType{obType},
-			Meta: &models.PaginationMeta{
-				ResourceCount: 1,
-			},
-		}
-
-		c.JSON(http.StatusCreated, res)
-		return nil
-	})
 }
 
 // DeleteObligationType marks an existing obligation type record as inactive
@@ -203,6 +180,7 @@ func CreateObligationType(c *gin.Context) {
 func DeleteObligationType(c *gin.Context) {
 	var obType models.ObligationType
 	obTypeParam := c.Param("type")
+	username := c.GetString("username")
 	if err := db.DB.Where(models.ObligationType{Type: obTypeParam}).First(&obType).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
@@ -246,7 +224,7 @@ func DeleteObligationType(c *gin.Context) {
 	}
 
 	if err := db.DB.Transaction(func(tx *gorm.DB) error {
-		return toggleObligationTypeActiveStatus(c, tx, &obType)
+		return utils.ToggleObligationTypeActiveStatus(username, tx, &obType)
 	}); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
@@ -256,43 +234,7 @@ func DeleteObligationType(c *gin.Context) {
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusInternalServerError, er)
+		return
 	}
 	c.Status(http.StatusOK)
-}
-
-func addChangelogForObligationType(tx *gorm.DB, username string, oldObType, newObType *models.ObligationType) error {
-	var user models.User
-	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		return errors.New("unable to update obligation type")
-	}
-
-	var changes []models.ChangeLog
-	utils.AddChangelog("Active", oldObType.Active, newObType.Active, &changes)
-	utils.AddChangelog("Type", &oldObType.Type, &newObType.Type, &changes)
-
-	audit := models.Audit{
-		UserId:     user.Id,
-		TypeId:     newObType.Id,
-		Timestamp:  time.Now(),
-		Type:       "ObligationType",
-		ChangeLogs: changes,
-	}
-
-	if err := tx.Create(&audit).Error; err != nil {
-		return errors.New("unable to update obligation type")
-	}
-
-	return nil
-}
-
-func toggleObligationTypeActiveStatus(c *gin.Context, tx *gorm.DB, obType *models.ObligationType) error {
-	newObType := *obType
-	*newObType.Active = !*newObType.Active
-	if err := tx.Clauses(clause.Returning{}).Updates(&newObType).Error; err != nil {
-		return errors.New("unable to change 'active' status of obligation type")
-	}
-
-	username := c.GetString("username")
-
-	return addChangelogForObligationType(tx, username, obType, &newObType)
 }
