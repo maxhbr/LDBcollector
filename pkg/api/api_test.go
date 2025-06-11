@@ -208,9 +208,9 @@ func TestGetUser(t *testing.T) {
 	username := "fossy"
 	userlevel := "ADMIN"
 	expectUser := models.User{
-		Username:     &username,
-		Userpassword: &password,
-		Userlevel:    &userlevel,
+		UserName:     &username,
+		UserPassword: &password,
+		UserLevel:    &userlevel,
 	}
 	w := makeRequest("GET", "/api/user/fossy", nil, false)
 	assert.Equal(t, http.StatusOK, w.Code)
@@ -230,9 +230,9 @@ func TestCreateUser(t *testing.T) {
 	username := "fossy"
 	userlevel := "ADMIN"
 	user := models.User{
-		Username:     &username,
-		Userpassword: &password,
-		Userlevel:    &userlevel,
+		UserName:     &username,
+		UserPassword: &password,
+		UserLevel:    &userlevel,
 	}
 	w := makeRequest("POST", "/api/user", user, true)
 	assert.Equal(t, http.StatusOK, w.Code)

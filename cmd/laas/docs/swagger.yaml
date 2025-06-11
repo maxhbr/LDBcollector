@@ -675,7 +675,7 @@ definitions:
       user_level:
         example: USER
         type: string
-      username:
+      user_name:
         example: fossy
         type: string
     type: object
@@ -693,17 +693,17 @@ definitions:
         - ADMIN
         example: ADMIN
         type: string
-      user_password:
+      user_name:
         example: fossy
         type: string
-      username:
+      user_password:
         example: fossy
         type: string
     required:
     - display_name
     - user_email
     - user_level
-    - username
+    - user_name
     type: object
   models.UserLogin:
     properties:
@@ -744,10 +744,10 @@ definitions:
         - ADMIN
         example: ADMIN
         type: string
-      user_password:
-        type: string
-      username:
+      user_name:
         example: fossy
+        type: string
+      user_password:
         type: string
     type: object
 info:
