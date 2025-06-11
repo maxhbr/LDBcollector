@@ -1,0 +1,12 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Z Shell License",
+  "scancode_key": "zsh",
+  "spdxid": "LicenseRef-scancode-zsh",
+  "aliases": [
+    "ZSH License"
+  ]
+}
