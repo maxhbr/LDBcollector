@@ -158,7 +158,7 @@ class LicensePolicyUpdateView(LoginRequiredMixin, PermissionRequiredMixin, Updat
 class CompatibilityCreateView(
     LoginRequiredMixin, PermissionRequiredMixin, CreateLicenseRelatedMixin, CreateView
 ):
-    permission_required = "cube.update_license"
+    permission_required = "cube.change_license"
     related_field_name = "from_license"
     model = Compatibility
     form_class = CompatibilityForm
@@ -166,7 +166,7 @@ class CompatibilityCreateView(
 
 
 class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
-    permission_required = "cube.update_license"
+    permission_required = "cube.change_license"
     model = Compatibility
     template_name = "cube/compatibility_confirm_delete.html"
 
