@@ -619,7 +619,7 @@ func ExportObligations(c *gin.Context) {
 func addChangelogsForObligationUpdate(tx *gorm.DB, username string,
 	newObligation, oldObligation *models.Obligation) error {
 	var user models.User
-	if err := tx.Where(models.User{Username: &username}).First(&user).Error; err != nil {
+	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
 		return err
 	}
 	var changes []models.ChangeLog

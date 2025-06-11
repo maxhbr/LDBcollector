@@ -73,26 +73,6 @@ func main() {
 
 	db.Connect(dbhost, port, user, dbname, password)
 
-	if err := db.DB.AutoMigrate(&models.LicenseDB{}); err != nil {
-		log.Fatalf("Failed to automigrate database: %v", err)
-	}
-
-	if err := db.DB.AutoMigrate(&models.User{}); err != nil {
-		log.Fatalf("Failed to automigrate database: %v", err)
-	}
-
-	if err := db.DB.AutoMigrate(&models.Audit{}); err != nil {
-		log.Fatalf("Failed to automigrate database: %v", err)
-	}
-
-	if err := db.DB.AutoMigrate(&models.ChangeLog{}); err != nil {
-		log.Fatalf("Failed to automigrate database: %v", err)
-	}
-
-	if err := db.DB.AutoMigrate(&models.Obligation{}); err != nil {
-		log.Fatalf("Failed to automigrate database: %v", err)
-	}
-
 	DEFAULT_OBLIGATION_TYPES := []*models.ObligationType{
 		{Type: "OBLIGATION"},
 		{Type: "RISK"},

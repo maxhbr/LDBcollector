@@ -148,12 +148,12 @@ func ParseIdToInt(c *gin.Context, id string, idType string) (int64, error) {
 // HashPassword hashes the password of the user using bcrypt. It also trims the
 // username and escapes the HTML characters.
 func HashPassword(user *models.User) error {
-	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(*user.Userpassword), bcrypt.DefaultCost)
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(*user.UserPassword), bcrypt.DefaultCost)
 
 	if err != nil {
 		return err
 	}
-	*user.Userpassword = string(hashedPassword)
+	*user.UserPassword = string(hashedPassword)
 
 	return nil
 }
@@ -390,7 +390,7 @@ func createObligationMapChangelog(tx *gorm.DB, username string,
 	}
 
 	var user models.User
-	if err := tx.Where(models.User{Username: &username}).First(&user).Error; err != nil {
+	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
 		return err
 	}
 
@@ -424,13 +424,13 @@ func Populatedb(datafile string) {
 
 	user := models.User{}
 	level := "SUPER_ADMIN"
-	if err := db.DB.Where(&models.User{Userlevel: &level}).First(&user).Error; err != nil {
+	if err := db.DB.Where(&models.User{UserLevel: &level}).First(&user).Error; err != nil {
 		log.Fatalf("Failed to find a super admin")
 	}
 
 	for _, license := range licenses {
 		result := Converter(license)
-		_, _ = InsertOrUpdateLicenseOnImport(&result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, *user.Username)
+		_, _ = InsertOrUpdateLicenseOnImport(&result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, *user.UserName)
 	}
 }
 
@@ -749,7 +749,7 @@ func AddChangelogsForLicenseUpdate(tx *gorm.DB, username string,
 
 	if len(changes) != 0 {
 		var user models.User
-		if err := tx.Where(models.User{Username: &username}).First(&user).Error; err != nil {
+		if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
 			return err
 		}
 

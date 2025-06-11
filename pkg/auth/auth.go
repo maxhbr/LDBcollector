@@ -79,7 +79,7 @@ func CreateUser(c *gin.Context) {
 	}
 
 	user := models.User(input)
-	*user.Username = html.EscapeString(strings.TrimSpace(*user.Username))
+	*user.UserName = html.EscapeString(strings.TrimSpace(*user.UserName))
 	*user.DisplayName = html.EscapeString(strings.TrimSpace(*user.DisplayName))
 	err := utils.HashPassword(&user)
 	if err != nil {
@@ -94,7 +94,7 @@ func CreateUser(c *gin.Context) {
 		return
 	}
 
-	result := db.DB.Where(models.User{Username: user.Username}).FirstOrCreate(&user)
+	result := db.DB.Where(models.User{UserName: user.UserName}).FirstOrCreate(&user)
 	if result.Error != nil {
 		if errors.Is(result.Error, gorm.ErrDuplicatedKey) {
 			er := models.LicenseError{
@@ -117,9 +117,9 @@ func CreateUser(c *gin.Context) {
 		}
 		return
 	} else if result.RowsAffected == 0 {
-		errMessage := fmt.Sprintf("Error: User with username '%s' already exists", *user.Username)
+		errMessage := fmt.Sprintf("Error: User with username '%s' already exists", *user.UserName)
 		if !*user.Active {
-			errMessage = fmt.Sprintf("Error: User with username '%s' already exists, but is deactivated", *user.Username)
+			errMessage = fmt.Sprintf("Error: User with username '%s' already exists, but is deactivated", *user.UserName)
 		}
 		er := models.LicenseError{
 			Status:    http.StatusConflict,
@@ -310,14 +310,14 @@ func CreateOidcUser(c *gin.Context) {
 	level := "USER"
 
 	user := models.User{
-		Username:    &username,
+		UserName:    &username,
 		UserEmail:   &email,
-		Userlevel:   &level,
+		UserLevel:   &level,
 		DisplayName: &displayname,
 	}
 
 	result := db.DB.
-		Where(&models.User{Username: user.Username}).
+		Where(&models.User{UserName: user.UserName}).
 		FirstOrCreate(&user)
 	if result.Error != nil {
 		errMessage := "Something went wrong. Try again."
@@ -345,9 +345,9 @@ func CreateOidcUser(c *gin.Context) {
 	}
 
 	if result.RowsAffected == 0 {
-		errMessage := fmt.Sprintf("Error: User with username '%s' already exists", *user.Username)
+		errMessage := fmt.Sprintf("Error: User with username '%s' already exists", *user.UserName)
 		if !*user.Active {
-			errMessage = fmt.Sprintf("Error: User with username '%s' already exists, but is deactivated", *user.Username)
+			errMessage = fmt.Sprintf("Error: User with username '%s' already exists, but is deactivated", *user.UserName)
 		}
 		er := models.LicenseError{
 			Status:    http.StatusConflict,
@@ -390,7 +390,7 @@ func UpdateUser(c *gin.Context) {
 	var user models.User
 	username := c.Param("username")
 
-	if err := db.DB.Where(models.User{Username: &username}).First(&user).Error; err != nil {
+	if err := db.DB.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "no user with such username exists",
@@ -429,13 +429,13 @@ func UpdateUser(c *gin.Context) {
 	}
 
 	updatedUser := models.User(input)
-	if updatedUser.Username != nil {
-		*updatedUser.Username = html.EscapeString(strings.TrimSpace(*updatedUser.Username))
+	if updatedUser.UserName != nil {
+		*updatedUser.UserName = html.EscapeString(strings.TrimSpace(*updatedUser.UserName))
 	}
 	if updatedUser.DisplayName != nil {
 		*updatedUser.DisplayName = html.EscapeString(strings.TrimSpace(*updatedUser.DisplayName))
 	}
-	if updatedUser.Userpassword != nil {
+	if updatedUser.UserPassword != nil {
 		err := utils.HashPassword(&updatedUser)
 		if err != nil {
 			er := models.LicenseError{
@@ -490,7 +490,7 @@ func UpdateProfile(c *gin.Context) {
 	var user models.User
 	username := c.GetString("username")
 
-	if err := db.DB.Where(models.User{Username: &username}).First(&user).Error; err != nil {
+	if err := db.DB.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "no user with such username exists",
@@ -532,7 +532,7 @@ func UpdateProfile(c *gin.Context) {
 	if updatedUser.DisplayName != nil {
 		*updatedUser.DisplayName = html.EscapeString(strings.TrimSpace(*updatedUser.DisplayName))
 	}
-	if updatedUser.Userpassword != nil {
+	if updatedUser.UserPassword != nil {
 		err := utils.HashPassword(&updatedUser)
 		if err != nil {
 			er := models.LicenseError{
@@ -587,7 +587,7 @@ func DeleteUser(c *gin.Context) {
 	var user models.User
 	username := c.Param("username")
 	active := true
-	if err := db.DB.Where(models.User{Username: &username, Active: &active}).First(&user).Error; err != nil {
+	if err := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "no user with such username exists",
@@ -679,7 +679,7 @@ func GetUser(c *gin.Context) {
 	username := c.Param("username")
 
 	active := true
-	if err := db.DB.Where(models.User{Username: &username, Active: &active}).First(&user).Error; err != nil {
+	if err := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "no user with such username exists",
@@ -732,7 +732,7 @@ func Login(c *gin.Context) {
 	password := input.Userpassword
 	active := true
 	var user models.User
-	result := db.DB.Where(models.User{Username: &username, Active: &active}).First(&user)
+	result := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user)
 	if result.Error != nil {
 		er := models.LicenseError{
 			Status:    http.StatusUnauthorized,
@@ -746,7 +746,7 @@ func Login(c *gin.Context) {
 		return
 	}
 
-	if user.Userpassword == nil {
+	if user.UserPassword == nil {
 		er := models.LicenseError{
 			Status:    http.StatusUnauthorized,
 			Message:   "Incorrect username or password",
@@ -774,7 +774,7 @@ func Login(c *gin.Context) {
 	}
 
 	// Check if the password matches
-	err = utils.VerifyPassword(password, *user.Userpassword)
+	err = utils.VerifyPassword(password, *user.UserPassword)
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusUnauthorized,
@@ -821,7 +821,7 @@ func GetUserProfile(c *gin.Context) {
 	username := c.GetString("username")
 
 	active := true
-	if err := db.DB.Where(models.User{Username: &username, Active: &active}).First(&user).Error; err != nil {
+	if err := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "no user with such username exists",
@@ -847,17 +847,17 @@ func GetUserProfile(c *gin.Context) {
 // encryptUserPassword checks if the password is already encrypted or not. If
 // not, it encrypts the password.
 func encryptUserPassword(user *models.User) error {
-	_, err := bcrypt.Cost([]byte(*user.Userpassword))
+	_, err := bcrypt.Cost([]byte(*user.UserPassword))
 	if err == nil {
 		return nil
 	}
 
-	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(*user.Userpassword), bcrypt.DefaultCost)
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(*user.UserPassword), bcrypt.DefaultCost)
 
 	if err != nil {
 		return err
 	}
-	*user.Userpassword = string(hashedPassword)
+	*user.UserPassword = string(hashedPassword)
 
 	db.DB.Model(&user).Updates(user)
 

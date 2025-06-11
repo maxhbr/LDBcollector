@@ -3217,7 +3217,7 @@
                     "type": "string",
                     "example": "USER"
                 },
-                "username": {
+                "user_name": {
                     "type": "string",
                     "example": "fossy"
                 }
@@ -3229,7 +3229,7 @@
                 "display_name",
                 "user_email",
                 "user_level",
-                "username"
+                "user_name"
             ],
             "properties": {
                 "display_name": {
@@ -3248,11 +3248,11 @@
                     ],
                     "example": "ADMIN"
                 },
-                "user_password": {
+                "user_name": {
                     "type": "string",
                     "example": "fossy"
                 },
-                "username": {
+                "user_password": {
                     "type": "string",
                     "example": "fossy"
                 }
@@ -3314,12 +3314,12 @@
                     ],
                     "example": "ADMIN"
                 },
-                "user_password": {
-                    "type": "string"
-                },
-                "username": {
+                "user_name": {
                     "type": "string",
                     "example": "fossy"
+                },
+                "user_password": {
+                    "type": "string"
                 }
             }
         }

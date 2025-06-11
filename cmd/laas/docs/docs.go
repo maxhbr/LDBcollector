@@ -3224,7 +3224,7 @@ const docTemplate = `{
                     "type": "string",
                     "example": "USER"
                 },
-                "username": {
+                "user_name": {
                     "type": "string",
                     "example": "fossy"
                 }
@@ -3236,7 +3236,7 @@ const docTemplate = `{
                 "display_name",
                 "user_email",
                 "user_level",
-                "username"
+                "user_name"
             ],
             "properties": {
                 "display_name": {
@@ -3255,11 +3255,11 @@ const docTemplate = `{
                     ],
                     "example": "ADMIN"
                 },
-                "user_password": {
+                "user_name": {
                     "type": "string",
                     "example": "fossy"
                 },
-                "username": {
+                "user_password": {
                     "type": "string",
                     "example": "fossy"
                 }
@@ -3321,12 +3321,12 @@ const docTemplate = `{
                     ],
                     "example": "ADMIN"
                 },
-                "user_password": {
-                    "type": "string"
-                },
-                "username": {
+                "user_name": {
                     "type": "string",
                     "example": "fossy"
+                },
+                "user_password": {
+                    "type": "string"
                 }
             }
         }
