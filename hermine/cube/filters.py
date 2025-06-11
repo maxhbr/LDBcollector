@@ -91,10 +91,13 @@ class ComponentFilter(
 
 class DerogationFilter(django_filters.FilterSet):
     search_license = MultiFieldSearchFilter(
-        fields=("license__spdx_id", "license__long_name"), label="Search by license"
+        fields=("license__spdx_id", "license__long_name"), label="License"
     )
-    category = ValueFilter(label="Product category")
-    search = ComponentOrVersionFilter()
+    component = django_filters.CharFilter(
+        field_name="version__component__name",
+        lookup_expr="icontains",
+        label="Composant",
+    )
     scope = ValueFilter()
     linking = ValueFilter()
     modification = ValueFilter()
