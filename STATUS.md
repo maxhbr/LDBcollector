@@ -1,9 +1,9 @@
 
 |Type            | Number |
 |----------------|--------|
-|Licenses        | 201    |
-|Aliases         | 2805   |
-|Compatibilities | 23     |
+|Licenses        | 205    |
+|Aliases         | 2833   |
+|Compatibilities | 22     |
 |Operators       | 14     |
-|Ambiguities     | 159    |
-|Compounds       | 46     |
+|Ambiguities     | 160    |
+|Compounds       | 51     |
