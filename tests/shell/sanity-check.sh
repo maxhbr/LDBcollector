@@ -213,7 +213,8 @@ check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
 
 check_presence CECILL-B " -i -e cecill-b -e cecill\ b" " -e -A -e -C"
 check_presence CECILL-C " -i -e cecill-c -e cecill\ c" " -e -A -e -B"
-check_presence CECILL-2.1 " -i -e cecill-2.1 -e 2.1" " -e -A -e -B -e -C"
+check_presence CECILL-1.1 " -i -e cecill-1.1 -e 1.1" " -e -A -e -B -e -C -e 2.1"
+check_presence CECILL-2.1 " -i -e cecill-2.1 -e 2.1" " -e -A -e -B -e -C -e 1.1"
 
 check_presence CNRI-Python " -i -e CNRI  " ""
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
