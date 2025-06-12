@@ -54,6 +54,13 @@ OAUTH_USER_URL = os.environ.get("OAUTH_USER_URL")
 OAUTH_USERNAME_PROPERTY = os.environ.get("OAUTH_USERNAME_PROPERTY", "username")
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = os.environ.get("SOCIAL_AUTH_REDIRECT_IS_HTTPS")
 
+KEYCLOAK_DOMAIN = os.environ.get("KEYCLOAK_DOMAIN")
+KEYCLOAK_CLIENT_ID = os.environ.get("KEYCLOAK_CLIENT_ID")
+KEYCLOAK_CLIENT_SECRET = os.environ.get("KEYCLOAK_CLIENT_SECRET")
+KEYCLOAK_ID_KEY = os.environ.get("KEYCLOAK_ID_KEY")
+KEYCLOAK_TOKEN_URL = os.environ.get("KEYCLOAK_TOKEN_URL")
+KEYCLOAK_AUTHORIZE_URL = os.environ.get("KEYCLOAK_AUTHORIZE_URL")
+
 if AZUREAD_TENANT_ID is not None:
     AZUREAD_CLIENT = {
         "client_id": OAUTH_CLIENT_ID,
@@ -80,4 +87,14 @@ if OAUTH_CLIENT_ID is not None:
             "email": res.get("email"),
         },
         "host": f"https://{HOST}",  # host for redirect_uri
+    }
+# For configuring KEYCLOAK the following parameters are required :
+if KEYCLOAK_CLIENT_ID is not None:
+    KEYCLOAK_CLIENT = {
+        "domain": KEYCLOAK_DOMAIN,
+        "client_id": KEYCLOAK_CLIENT_ID,
+        "client_secret": KEYCLOAK_CLIENT_SECRET,
+        "access_token_url": KEYCLOAK_TOKEN_URL,
+        "authorize_url": KEYCLOAK_AUTHORIZE_URL,
+        "id_key": KEYCLOAK_ID_KEY,
     }
