@@ -286,7 +286,8 @@ check_presence LicenseRef-scancode-public-domain " -i -e domain -e public " ""
 check_presence LicenseRef-scancode-wtfpl-1.0 " -i -e wtfpl " ""
 check_presence LicenseRef-scancode-unicode " -i -e unicode " " -e 3"
 check_presence LicenseRef-scancode-xfree86-1.0 " -i -e xfree86 " ""
-check_presence LicenseRef-scancode-zpl-1.0 "-i -e zpl" ""
+check_presence LicenseRef-scancode-zpl-1.0 "-i -e zpl" " -i -e zsh"
+check_presence LicenseRef-scancode-zsh " -i -e zsh"  "-i -e zpl"
 
 check_presence Libpng " -i -e libpng -e PNG  " " -e 2 "
 check_presence libpng-2.0 " -i -e libpng -e PNG  " ""
@@ -313,6 +314,8 @@ check_presence MPL-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
 check_presence MPL-2.0 " -e 2" " -e 1"
 check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e 1"
+
+check_presence MS-PL " -i -e ms -e microsoft " " -i -e mpl"
 
 check_presence MulanPSL-1.0 " -e 1" " -e 2"
 check_presence MulanPSL-2.0 " -e 2" " -e 1"
