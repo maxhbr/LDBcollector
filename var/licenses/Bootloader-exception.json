@@ -1,12 +1,12 @@
 {
-    "meta": {
-        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
-    },
-    "name": "Bootloader Distribution Exception to GPL 2.0 or later",
-    "scancode_key": "bootloader-exception",
-    "spdxid": "Bootloader-exception",
-    "aliases": [
-        "bootloader-exception"
-    ]
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Bootloader Distribution Exception to GPL 2.0 or later",
+  "scancode_key": "bootloader-exception",
+  "spdxid": "Bootloader-exception",
+  "aliases": [
+    "Bootloader Distribution Exception to GNU General Public License 2.0"
+  ]
 }

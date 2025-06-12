@@ -26,6 +26,12 @@
             "compatibility_as": "0BSD"            
         },
         {
+          "spdxid": "GPL-2.0-only WITH Bootloader-exception",
+          "aliases": [
+            "GPL-2.0-with-Bootloader-exception"
+          ]
+        },
+        {
             "spdxid": "GPL-2.0-only WITH Classpath-exception-2.0",
             "aliases": [
                 "GPL-2.0-with-classpath-exception",
@@ -40,7 +46,9 @@
               "GPL2 w CPE",
               "GPL-2.0-only WITH the Classpath Exception",
               "GPL-2.0-only WITH the classpath exception",
-              "GPLv2+CE"
+              "GPLv2+CE",
+              "GNU General Public License Version 2 with \"CLASSPATH\" EXCEPTION TO THE GNU General Public License VERSION 2 by Oracle",
+              "GNU General Public License Version 2 with \"CLASSPATH\" EXCEPTION TO THE GNU General Public License VERSION 2 by Sun Microsystems"
             ]
         },
         {
@@ -52,7 +60,9 @@
             "spdxid": "GPL-2.0-only WITH Linux-syscall-note",
             "aliases": [
               "GPL-2.0-only WITH Linux-syscall-note-exception",
-              "GPL-2 with Linux-syscall-note exception"
+              "GPL-2 with Linux-syscall-note exception",
+              "GPL-2.0-only WITH Linux Syscall Note",
+              "gpl-2.0-with-linux-syscall-note"
             ],
             "compatibility_as": "GPL-2.0-only WITH Classpath-exception-2.0"
         },

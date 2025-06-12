@@ -218,6 +218,10 @@
           ],
           "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
+        "Indiana University Extreme! Lab Software License": {
+          "aliases": [],
+          "problem": "This license has different versions (1.1 and 1.2 / xpp). Without a version number it is not possible to determine which of the versions is meant."
+        },
         "MIT Style": {
             "aliases": [
                 "MIT-style License",
@@ -292,7 +296,8 @@
               "psf-license",
               "PSF LICENSE",
               "Python Open Source GPL Compatible License Agreement",
-              "Software Foundation License"
+              "Software Foundation License",
+              "PSF LICENSE AGREEMENT FOR PYTHON"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },

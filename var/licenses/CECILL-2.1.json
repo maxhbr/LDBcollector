@@ -23,6 +23,7 @@
         "osi:CECILL-2.1",
         "scancode:cecill-2.1",
         "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1",
-        "\"License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1"
+      "\"License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1",
+      "CeCILL_V2.1"
     ]
 }
