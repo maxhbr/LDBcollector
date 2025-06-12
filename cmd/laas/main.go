@@ -16,14 +16,12 @@ import (
 	"github.com/joho/godotenv"
 	"github.com/lestrrat-go/httprc/v3"
 	"github.com/lestrrat-go/jwx/v3/jwk"
-	"gorm.io/gorm/clause"
 
 	_ "github.com/dave/jennifer/jen"
 	_ "github.com/fossology/LicenseDb/cmd/laas/docs"
 	"github.com/fossology/LicenseDb/pkg/api"
 	"github.com/fossology/LicenseDb/pkg/auth"
 	"github.com/fossology/LicenseDb/pkg/db"
-	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 )
 
@@ -72,27 +70,6 @@ func main() {
 	}
 
 	db.Connect(dbhost, port, user, dbname, password)
-
-	DEFAULT_OBLIGATION_TYPES := []*models.ObligationType{
-		{Type: "OBLIGATION"},
-		{Type: "RISK"},
-		{Type: "RESTRICTION"},
-		{Type: "RIGHT"},
-	}
-	DEFAULT_OBLIGATION_CLASSIFICATIONS := []*models.ObligationClassification{
-		{Classification: "GREEN", Color: "#00FF00"},
-		{Classification: "WHITE", Color: "#FFFFFF"},
-		{Classification: "YELLOW", Color: "#FFDE21"},
-		{Classification: "RED", Color: "#FF0000"},
-	}
-
-	if err := db.DB.Clauses(clause.OnConflict{DoNothing: true}).Create(DEFAULT_OBLIGATION_TYPES).Error; err != nil {
-		log.Fatalf("Failed to seed database with default obligation types: %s", err.Error())
-	}
-
-	if err := db.DB.Clauses(clause.OnConflict{DoNothing: true}).Create(DEFAULT_OBLIGATION_CLASSIFICATIONS).Error; err != nil {
-		log.Fatalf("Failed to seed database with default obligation classifications: %s", err.Error())
-	}
 
 	if *populatedb {
 		utils.Populatedb(*datafile)

@@ -6,7 +6,6 @@
 package api
 
 import (
-	"errors"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -14,10 +13,10 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
 )
 
 // GetAllObligationClassification retrieves a list of all obligation classifications
@@ -95,6 +94,7 @@ func GetAllObligationClassification(c *gin.Context) {
 //	@Router			/obligations/classifications [post]
 func CreateObligationClassification(c *gin.Context) {
 	var obClassification models.ObligationClassification
+	username := c.GetString("username")
 	if err := c.ShouldBindJSON(&obClassification); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -107,8 +107,39 @@ func CreateObligationClassification(c *gin.Context) {
 		return
 	}
 
-	validate := validator.New(validator.WithRequiredStructEnabled())
-	if err := validate.Struct(&obClassification); err != nil {
+	err, status := utils.CreateObClassification(&obClassification, username)
+
+	if status == utils.CREATED {
+		res := models.ObligationClassificationResponse{
+			Status: http.StatusCreated,
+			Data:   []models.ObligationClassification{obClassification},
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+		c.JSON(http.StatusCreated, res)
+
+	} else if status == utils.CONFLICT {
+		er := models.LicenseError{
+			Status:    http.StatusConflict,
+			Message:   "obligation classification already exists",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusConflict, er)
+
+	} else if status == utils.CONFLICT_ACTIVATION_FAILED {
+		er := models.LicenseError{
+			Status:    http.StatusConflict,
+			Message:   "obligation classification already exists, something went wrong while reactvating it",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusConflict, er)
+
+	} else if status == utils.VALIDATION_FAILED {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "can not create obligation classification with these field values",
@@ -117,60 +148,18 @@ func CreateObligationClassification(c *gin.Context) {
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusBadRequest, er)
-		return
-	}
 
-	if err := db.DB.Transaction(func(tx *gorm.DB) error {
-		result := tx.Where(&models.ObligationClassification{Classification: obClassification.Classification}).FirstOrCreate(&obClassification)
-		if result.Error != nil {
-			er := models.LicenseError{
-				Status:    http.StatusInternalServerError,
-				Message:   "something went wrong while creating new obligation classification",
-				Error:     result.Error.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusInternalServerError, er)
-			return result.Error
+	} else {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "something went wrong while creating new obligation classification",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		if result.RowsAffected == 0 {
-			if *obClassification.Active {
-				er := models.LicenseError{
-					Status:    http.StatusConflict,
-					Message:   "obligation classification already exists",
-					Error:     "obligation classification already exists",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusConflict, er)
-				return errors.New("obligation classification already exists")
-			}
-			if err := toggleObligationClassificationActiveStatus(c, tx, &obClassification); err != nil {
-				er := models.LicenseError{
-					Status:    http.StatusConflict,
-					Message:   "obligation classification already exists, something went wrong while reactvating it",
-					Error:     err.Error(),
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusConflict, er)
-				return err
-			}
-		}
-		return nil
-	}); err != nil {
-		return
-	}
+		c.JSON(http.StatusInternalServerError, er)
 
-	res := models.ObligationClassificationResponse{
-		Status: http.StatusCreated,
-		Data:   []models.ObligationClassification{obClassification},
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
 	}
-
-	c.JSON(http.StatusCreated, res)
 }
 
 // DeleteObligationClassification marks an existing obligation classification record as inactive
@@ -191,6 +180,7 @@ func CreateObligationClassification(c *gin.Context) {
 func DeleteObligationClassification(c *gin.Context) {
 	var obClassification models.ObligationClassification
 	obClassificationParam := c.Param("classification")
+	username := c.GetString("username")
 	if err := db.DB.Where(models.ObligationClassification{Classification: obClassificationParam}).First(&obClassification).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
@@ -234,7 +224,7 @@ func DeleteObligationClassification(c *gin.Context) {
 	}
 
 	if err := db.DB.Transaction(func(tx *gorm.DB) error {
-		return toggleObligationClassificationActiveStatus(c, tx, &obClassification)
+		return utils.ToggleObligationClassificationActiveStatus(username, tx, &obClassification)
 	}); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
@@ -244,41 +234,7 @@ func DeleteObligationClassification(c *gin.Context) {
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusInternalServerError, er)
+		return
 	}
 	c.Status(http.StatusOK)
-}
-
-func toggleObligationClassificationActiveStatus(c *gin.Context, tx *gorm.DB, obClassification *models.ObligationClassification) error {
-	*obClassification.Active = !*obClassification.Active
-	if err := tx.Clauses(clause.Returning{}).Updates(&obClassification).Error; err != nil {
-		return errors.New("unable to change 'active' status of obligation classification")
-	}
-
-	username := c.GetString("username")
-	var user models.User
-	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		return errors.New("unable to change 'active' status of obligation classification")
-	}
-
-	oldVal := strconv.FormatBool(!*obClassification.Active)
-	newVal := strconv.FormatBool(*obClassification.Active)
-	change := models.ChangeLog{
-		Field:        "Active",
-		OldValue:     &oldVal,
-		UpdatedValue: &newVal,
-	}
-
-	audit := models.Audit{
-		UserId:     user.Id,
-		TypeId:     obClassification.Id,
-		Timestamp:  time.Now(),
-		Type:       "ObligationClassification",
-		ChangeLogs: []models.ChangeLog{change},
-	}
-
-	if err := tx.Create(&audit).Error; err != nil {
-		return errors.New("unable to change 'active' status of obligation classification")
-	}
-
-	return nil
 }
