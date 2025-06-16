@@ -66,7 +66,7 @@ class LicenseFilter(
 class LicenseCurationFilter(
     django_filters.FilterSet,
 ):
-    search_component = ComponentOrVersionFilter()
+    search_component = ComponentOrVersionFilter(label="Component")
     search_expression_in = django_filters.CharFilter(
         field_name="expression_in", lookup_expr="icontains", label="Stated license"
     )
@@ -93,11 +93,7 @@ class DerogationFilter(django_filters.FilterSet):
     search_license = MultiFieldSearchFilter(
         fields=("license__spdx_id", "license__long_name"), label="License"
     )
-    component = django_filters.CharFilter(
-        field_name="version__component__name",
-        lookup_expr="icontains",
-        label="Composant",
-    )
+    search_component = ComponentOrVersionFilter(label="Component")
     scope = ValueFilter()
     linking = ValueFilter()
     modification = ValueFilter()
