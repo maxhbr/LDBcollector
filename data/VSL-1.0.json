@@ -5,7 +5,6 @@
             "Vovida Software License v1.0"
         ],
         "custom": [
-            "Vovida"
         ],
         "scancode-licensedb": [
             "Vovida Software License v. 1.0",
@@ -18,5 +17,7 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "Vovida"
+    ]
 }

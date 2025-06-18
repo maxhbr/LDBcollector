@@ -19,8 +19,7 @@
             "LGPL-2.1-only License",
             "LGPL 2.1 License (only)",
             "LGPL v2.1 License (only)",
-            "LGPLv2.1 (only)",
-            "LGPL2"
+            "LGPLv2.1 (only)"
         ],
         "scancode-licensedb": [
             "GNU Lesser General Public License 2.1",
@@ -33,6 +32,8 @@
         ]
     },
     "src": "spdx",
-    "rejected": [],
+    "rejected": [
+        "LGPL2"
+    ],
     "risky": []
 }

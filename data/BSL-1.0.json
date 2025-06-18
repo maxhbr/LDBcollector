@@ -15,9 +15,7 @@
             "Boost License Version 1.0",
             "Boost-1.0",
             "Boost-1.0 License",
-            "Boost",
-            "bsl1.0",
-            "bsl"
+            "bsl1.0"
         ],
         "scancode-licensedb": [
             "Boost 1.0",
@@ -31,6 +29,8 @@
     "rejected": [],
     "risky": [
         "Boost License",
-        "Boost Software License"
+        "Boost Software License",
+        "Boost",
+        "bsl"
     ]
 }

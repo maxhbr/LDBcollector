@@ -6,7 +6,6 @@
             "LGPL-3.0+"
         ],
         "custom": [
-            "LGPLv3+"
         ],
         "scancode-licensedb": [
             "GNU Lesser General Public License 3.0 or later",
@@ -16,5 +15,7 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "LGPLv3+"
+    ]
 }

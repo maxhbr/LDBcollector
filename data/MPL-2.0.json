@@ -21,10 +21,7 @@
             "MPL 2.0 (Open Source License)",
             "Mozilla Public License v2.0 (MPL)",
             "MPLv2.0",
-            "MPLv2",
-            "mpl-2",
-            "mpl2.0",
-            "mpl2"
+            "mpl2.0"
         ],
         "scancode-licensedb": [
             "mpl-2.0",
@@ -36,5 +33,9 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "MPLv2",
+        "mpl-2",
+        "mpl2"
+    ]
 }

@@ -6,7 +6,6 @@
             "GPL-3.0+"
         ],
         "custom": [
-            "GPLv3+"
         ],
         "scancode-licensedb": [
             "GPL 3.0 or later",
@@ -17,5 +16,7 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "GPLv3+"
+    ]
 }

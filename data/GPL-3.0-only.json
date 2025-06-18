@@ -6,8 +6,6 @@
             "GPL-3.0"
         ],
         "custom": [
-            "GPLv3",
-            "gpl3"
         ],
         "scancode-licensedb": [
             "GNU General Public License 3.0",
@@ -21,5 +19,8 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "GPLv3",
+        "gpl3"
+    ]
 }

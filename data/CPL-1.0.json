@@ -5,7 +5,6 @@
             "Common Public License 1.0"
         ],
         "custom": [
-            "CPL"
         ],
         "scancode-licensedb": [
             "CPL 1.0",
@@ -17,5 +16,7 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "CPL"
+    ]
 }

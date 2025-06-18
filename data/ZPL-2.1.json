@@ -17,8 +17,7 @@
             "Zope License 2.1",
             "ZPL 2.1 Open Source License",
             "ZPL 2.1 (Open Source)",
-            "Zope Public License v2.1 (ZPL)",
-            "zope"
+            "Zope Public License v2.1 (ZPL)"
         ],
         "scancode-licensedb": [
             "zpl-2.1",
@@ -27,7 +26,8 @@
     },
     "src": "spdx",
     "rejected": [
-        "ZPL (Public License)"
+        "ZPL (Public License)",
+        "zope"
     ],
     "risky": []
 }

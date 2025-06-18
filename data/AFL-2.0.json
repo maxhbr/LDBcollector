@@ -5,9 +5,7 @@
             "Academic Free License v2.0"
         ],
         "custom": [
-            "afl2.0",
-            "afl-2",
-            "afl2"
+            "afl2.0"
         ],
         "scancode-licensedb": [
             "afl-2.0",
