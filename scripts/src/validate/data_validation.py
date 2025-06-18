@@ -222,7 +222,6 @@ def check_version_between_canonical_and_alias():
 
                 canonical_tokens = extract_version_tokens(canonical)
                 canonical_has_version = bool(canonical_tokens)
-
                 compare_versions(aliases_list, canonical_has_version, canonical_tokens, wrong_version)
                 if wrong_version:
                     logger.error(f'{filename} has wrong versions for aliases: {wrong_version}')
@@ -233,7 +232,7 @@ def compare_versions(aliases_list, canonical_has_version, canonical_tokens, wron
     if canonical_has_version:
         for alias in aliases_list:
             alias_tokens = extract_version_tokens(alias)
-            if not alias_tokens & canonical_tokens:
+            if alias_tokens != canonical_tokens:
                 wrong_version.append(alias)
 
 
