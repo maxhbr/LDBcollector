@@ -6,11 +6,12 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "bison-exception-2.2",
-            "Bison 2.2 exception to GPL 2.0 or later"
+            "bison-exception-2.2"
         ]
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "Bison 2.2 exception to GPL 2.0 or later"
+    ]
 }

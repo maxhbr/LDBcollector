@@ -1,12 +1,11 @@
 {
     "canonical": "gpl-2.0-plus-syntext",
     "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 or GPL 3.0 with Syntext Serna exception"
-        ],
         "custom": []
     },
     "src": "scancode-licensedb",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "GPL 2.0 or GPL 3.0 with Syntext Serna exception"
+    ]
 }
