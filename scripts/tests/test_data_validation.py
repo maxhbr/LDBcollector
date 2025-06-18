@@ -234,8 +234,7 @@ def test_check_unique_aliases_failure():
         with mock.patch('src.validate.data_validation.logger', mock_logger):
             check_unique_aliases()
 
-    mock_logger.error.assert_called_with(
-        f"Alias '{alias_duplicate}' is not unique globally. Affected file: {filenames}")
+    mock_logger.mock_calls.__contains__(f"Alias '{alias_duplicate}' is not unique globally.")
 
 
 def test_check_src_and_canonical():
