@@ -1,0 +1,13 @@
+{
+    "canonical": "joplin-server-personal-v1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Joplin Server Personal Use License v1",
+            "LicenseRef-scancode-joplin-server-personal-v1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

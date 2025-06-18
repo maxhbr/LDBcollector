@@ -10,17 +10,12 @@
             "LGPL v3.0 only",
             "GNU LGPL v3.0 only",
             "LGPL v3.0",
-            "LGPLv3-only",
-            "LGPL v3 only",
             "LGPL 3.0 (only)",
             "GNU LGPL 3.0 (only)",
             "LGPL-3.0 (only)",
-            "LGPLv3 only",
-            "LGPLv3",
             "LGPL-3.0-only License",
             "LGPL 3.0 License (only)",
-            "LGPL v3.0 License (only)",
-            "LGPLv3 (only)"
+            "LGPL v3.0 License (only)"
         ],
         "scancode-licensedb": [
             "LGPL 3.0",
@@ -32,5 +27,12 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "LGPLv3-only",
+        "LGPL v3 only",
+        "LGPLv3 only",
+        "LGPLv3",
+        "LGPLv3 (only)"
+    ]
 }

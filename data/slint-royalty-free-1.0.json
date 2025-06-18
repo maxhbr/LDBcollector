@@ -2,12 +2,14 @@
     "canonical": "slint-royalty-free-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "Slint Royalty-free Desktop and Web Applications License, version 1.0.1",
-            "Slint Royalty-free License 1.0.1",
             "LicenseRef-scancode-slint-royalty-free-1.0"
         ],
         "custom": []
     },
     "src": "scancode-licensedb",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Slint Royalty-free Desktop and Web Applications License, version 1.0.1",
+        "Slint Royalty-free License 1.0.1"
+    ]
 }

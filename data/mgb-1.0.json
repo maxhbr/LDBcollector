@@ -1,0 +1,14 @@
+{
+    "canonical": "mgb-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "MGB 1.0",
+            "MGB Open Source License 1.0",
+            "LicenseRef-scancode-mgb-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

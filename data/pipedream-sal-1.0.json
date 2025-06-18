@@ -1,0 +1,14 @@
+{
+    "canonical": "pipedream-sal-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-pipedream-sal-1.0",
+            "Pipedream Source Available License 1.0",
+            "Pipedream Source Available License Version 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

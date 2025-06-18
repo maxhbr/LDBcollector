@@ -6,10 +6,12 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "qwt-exception-1.0",
-            "Qwt exception to LGPL 2.1"
+            "qwt-exception-1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Qwt exception to LGPL 2.1"
+    ]
 }

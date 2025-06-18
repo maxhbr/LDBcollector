@@ -9,10 +9,13 @@
         "scancode-licensedb": [
             "GNU General Public License 1.0 or later",
             "GPL 1.0 or later",
-            "gpl-1.0-plus",
-            "LicenseRef-GPL"
+            "gpl-1.0-plus"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [
+        "GPL",
+        "LicenseRef-GPL"
+    ],
+    "risky": []
 }

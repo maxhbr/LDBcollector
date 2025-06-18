@@ -7,10 +7,12 @@
         "custom": [],
         "scancode-licensedb": [
             "NLOD-1.0",
-            "nlod-1.0",
-            "Norwegian Licence for Open Government Data"
+            "nlod-1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Norwegian Licence for Open Government Data"
+    ]
 }

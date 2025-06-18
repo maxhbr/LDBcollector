@@ -1,0 +1,16 @@
+{
+    "canonical": "FSL-1.1-MIT",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-fsl-1.1-mit",
+            "fsl-1.1-mit"
+        ],
+        "custom": [],
+        "spdx": [
+            "Functional Source License, Version 1.1, MIT Future License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

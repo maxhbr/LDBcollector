@@ -1,0 +1,14 @@
+{
+    "canonical": "obsidian-tos-2025",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-obsidian-tos-2025",
+            "Obsidian Terms of Service 2025",
+            "Obsidian TOS 2025"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

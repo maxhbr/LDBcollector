@@ -1,0 +1,14 @@
+{
+    "canonical": "selv1",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-selv1",
+            "SELv1",
+            "Stalwart Enterprise License 1.0 (SELv1) Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

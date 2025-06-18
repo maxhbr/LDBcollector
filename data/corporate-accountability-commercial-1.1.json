@@ -2,13 +2,15 @@
     "canonical": "corporate-accountability-commercial-1.1",
     "aliases": {
         "scancode-licensedb": [
-            "CC+CAL",
             "LicenseRef-scancode-corporate-accountability-commercial-1.1",
-            "CC + Corporate Accountability Lab",
             "LicenseRef-scancode-accountability-commercial-1.1"
         ],
         "custom": []
     },
     "src": "scancode-licensedb",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "CC + Corporate Accountability Lab",
+        "CC+CAL"
+    ]
 }

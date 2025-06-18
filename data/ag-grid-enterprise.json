@@ -1,0 +1,13 @@
+{
+    "canonical": "ag-grid-enterprise",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-ag-grid-enterprise",
+            "AG Grid Enterprise License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

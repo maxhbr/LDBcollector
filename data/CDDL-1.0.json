@@ -8,8 +8,6 @@
             "Common Development and Distribution License v1.0",
             "CDDL License 1.0",
             "CDDL v1.0",
-            "CDDL License",
-            "Common Development and Distribution License",
             "CDDL 1.0 License",
             "CDDL Version 1.0",
             "CDDL 1.0 (CDDL-1.0)",
@@ -29,5 +27,9 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [
+        "CDDL License",
+        "Common Development and Distribution License"
+    ],
+    "risky": []
 }

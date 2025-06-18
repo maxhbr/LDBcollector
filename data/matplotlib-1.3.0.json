@@ -1,0 +1,13 @@
+{
+    "canonical": "matplotlib-1.3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-matplotlib-1.3.0",
+            "matplotlib 1.3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

@@ -6,7 +6,6 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "LicenseRef-AGPL",
             "GNU Affero General Public License 3.0 or later",
             "agpl-3.0-plus",
             "AGPL-3.0+",
@@ -14,5 +13,8 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [
+        "LicenseRef-AGPL"
+    ],
+    "risky": []
 }

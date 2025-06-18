@@ -2,12 +2,14 @@
     "canonical": "mulanpsl-2.0-en",
     "aliases": {
         "scancode-licensedb": [
-            "Mulan Permissive Software License, Version 2 (English)",
             "Mulan PSL v2.0 (En)",
             "LicenseRef-scancode-mulanpsl-2.0-en"
         ],
         "custom": []
     },
     "src": "scancode-licensedb",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Mulan Permissive Software License, Version 2 (English)"
+    ]
 }

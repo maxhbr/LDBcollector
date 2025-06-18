@@ -15,7 +15,6 @@
             "ZPL 2.1 (Zope)",
             "ZPL 2.1 (Public License)",
             "Zope License 2.1",
-            "ZPL (Public License)",
             "ZPL 2.1 Open Source License",
             "ZPL 2.1 (Open Source)",
             "Zope Public License v2.1 (ZPL)"
@@ -26,5 +25,8 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [
+        "ZPL (Public License)"
+    ],
+    "risky": []
 }

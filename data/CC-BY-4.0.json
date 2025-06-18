@@ -17,8 +17,6 @@
             "CC BY License 4.0",
             "CC-BY Version 4.0",
             "Creative Commons License Version 4.0",
-            "CC BY v4",
-            "CC-BY v4",
             "Creative Commons Attribution Version 4.0",
             "CC 4.0 BY",
             "CC-BY-4.0 International",
@@ -30,5 +28,9 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "CC BY v4",
+        "CC-BY v4"
+    ]
 }

@@ -1,0 +1,14 @@
+{
+    "canonical": "geogebra-ncla-2022",
+    "aliases": {
+        "scancode-licensedb": [
+            "GeoGebra Non-Commercial License 2022",
+            "GeoGebra Non-Commercial License Agreement 2022",
+            "LicenseRef-scancode-geogebra-ncla-2022"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

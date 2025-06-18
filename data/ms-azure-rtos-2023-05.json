@@ -1,0 +1,14 @@
+{
+    "canonical": "ms-azure-rtos-2023-05",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-ms-azure-rtos-2023-05",
+            "Microsoft Azure RTOS 2023-05",
+            "MS Azure RTOS 2023-05"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

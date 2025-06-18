@@ -17,7 +17,8 @@ from src.validate.data_validation import (
     main,
     check_no_empty_field_except_custom,
     check_rejected_field_exists,
-    check_rejected_not_in_valid_fields
+    check_rejected_not_in_valid_fields,
+    check_version_between_canonical_and_alias
 )
 
 # Mock setup_logger to avoid actual logging
@@ -489,6 +490,44 @@ def test_check_rejected_not_in_valid_fields_failure():
             check_rejected_not_in_valid_fields()
 
     assert mock_logger.error.call_count == 1
+
+
+def test_check_version_between_canonical_and_alias_success():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
+                  "aliases": {"spdx": ["The Valid License"], "scancode-licensedb": ["valid_alias_1.0"], "custom": ["vl 1.0"]}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+
+    assert mock_logger.error.call_count == 0
+
+
+def test_check_version_between_canonical_and_alias_failure(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
+                  "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["wrong_version_3.0"]}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+
+    assert mock_logger.error.call_count == 1
+    assert str(mock_logger.method_calls).__contains__(
+        "valid.json has wrong versions for aliases: ['invalid_alias_version', 'wrong_version_3.0']")
 
 
 if __name__ == "__main__":

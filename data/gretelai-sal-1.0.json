@@ -1,0 +1,14 @@
+{
+    "canonical": "gretelai-sal-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Gretel.AI SAL 1.0",
+            "Gretel.AI Source Available License Agreement v1.0",
+            "LicenseRef-scancode-gretelai-sal-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

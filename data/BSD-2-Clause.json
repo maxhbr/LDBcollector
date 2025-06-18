@@ -21,5 +21,6 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": []
 }

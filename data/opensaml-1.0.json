@@ -2,12 +2,14 @@
     "canonical": "opensaml-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "OpenSAML License v1",
-            "OpenSAML License Version 1",
             "LicenseRef-scancode-opensaml-1.0"
         ],
         "custom": []
     },
     "src": "scancode-licensedb",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "OpenSAML License v1",
+        "OpenSAML License Version 1"
+    ]
 }

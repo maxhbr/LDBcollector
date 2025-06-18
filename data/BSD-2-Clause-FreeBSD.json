@@ -11,5 +11,6 @@
         "custom": []
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": []
 }

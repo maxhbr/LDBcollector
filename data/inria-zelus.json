@@ -1,0 +1,14 @@
+{
+    "canonical": "inria-zelus",
+    "aliases": {
+        "scancode-licensedb": [
+            "INRIA Non-Commercial License Agreement for the Z\u00e9lus compiler",
+            "INRIA NCLA Zelus",
+            "LicenseRef-scancode-inria-zelus"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

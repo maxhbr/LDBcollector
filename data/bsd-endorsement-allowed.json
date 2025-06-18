@@ -1,0 +1,13 @@
+{
+    "canonical": "bsd-endorsement-allowed",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD Endorsement Allowed",
+            "LicenseRef-scancode-bsd-endorsement-allowed"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

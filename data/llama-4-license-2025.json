@@ -1,0 +1,13 @@
+{
+    "canonical": "llama-4-license-2025",
+    "aliases": {
+        "scancode-licensedb": [
+            "Llama 4 Acceptable Use Policy 2025",
+            "LicenseRef-scancode-llama-4-license-2025"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

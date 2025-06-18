@@ -6,10 +6,12 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "Open CASCADE Exception to LGPL 2.1",
             "occt-exception-1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Open CASCADE Exception to LGPL 2.1"
+    ]
 }

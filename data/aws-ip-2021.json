@@ -1,0 +1,14 @@
+{
+    "canonical": "aws-ip-2021",
+    "aliases": {
+        "scancode-licensedb": [
+            "AWS Intellectual Property License 2021",
+            "LicenseRef-scancode-aws-ip-2021",
+            "AWS IP License 2021"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

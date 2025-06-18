@@ -12,26 +12,28 @@
             "GNU LGPL v2.0 only",
             "LGPL v2.0",
             "GNU Lesser General Public License 2.0",
-            "LGPLv2-only",
-            "LGPL v2 only",
             "LGPL 2.0 (only)",
             "GNU LGPL 2.0 (only)",
             "LGPL-2.0 (only)",
-            "LGPLv2 only",
-            "LGPLv2",
             "LGPL-2.0-only License",
             "LGPL 2.0 License (only)",
-            "LGPL v2.0 License (only)",
-            "LGPLv2 (only)"
+            "LGPL v2.0 License (only)"
         ],
         "scancode-licensedb": [
             "GNU Library General Public License 2.0",
-            "LicenseRef-LGPL-2",
             "LGPL 2.0",
             "LicenseRef-LGPL-2.0",
             "lgpl-2.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "LGPLv2-only",
+        "LGPL v2 only",
+        "LGPLv2 only",
+        "LGPLv2",
+        "LGPLv2 (only)",
+        "LicenseRef-LGPL-2"
+    ]
 }

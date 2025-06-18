@@ -3,11 +3,13 @@
     "aliases": {
         "scancode-licensedb": [
             "Atmosphere Software License Version 0.4",
-            "atmosphere",
             "LicenseRef-scancode-atmosphere-0.4"
         ],
         "custom": []
     },
     "src": "scancode-licensedb",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "atmosphere"
+    ]
 }

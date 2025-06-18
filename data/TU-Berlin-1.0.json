@@ -6,11 +6,13 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "tu-berlin",
             "TU Berlin License 1.0",
             "Technische Universitaet Berlin Attribution License 1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [
+        "tu-berlin"
+    ],
+    "risky": []
 }

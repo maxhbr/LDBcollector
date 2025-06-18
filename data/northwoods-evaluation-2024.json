@@ -1,0 +1,13 @@
+{
+    "canonical": "northwoods-evaluation-2024",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-northwoods-evaluation-2024",
+            "Northwoods Software Evaluation License 2024"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

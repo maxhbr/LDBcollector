@@ -1,0 +1,14 @@
+{
+    "canonical": "ca-ossl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Computer Associates Open Source Software License 1.0",
+            "LicenseRef-scancode-ca-ossl-1.0",
+            "CA Open Source Software License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

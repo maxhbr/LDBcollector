@@ -6,11 +6,13 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "LicenseRef-scancode-elastic-license-v2",
-            "elastic-license-v2",
             "Elastic License 2.0 (ELv2)"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "LicenseRef-scancode-elastic-license-v2",
+        "elastic-license-v2"
+    ]
 }

@@ -1,0 +1,13 @@
+{
+    "canonical": "ofrak-community-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-ofrak-community-1.1",
+            "OFRAK Community License Agreement 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

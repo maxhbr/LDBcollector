@@ -6,11 +6,13 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "LicenseRef-scancode-nicta-psl",
-            "nicta-psl",
             "NICTA Public Software Licence 1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "LicenseRef-scancode-nicta-psl",
+        "nicta-psl"
+    ]
 }

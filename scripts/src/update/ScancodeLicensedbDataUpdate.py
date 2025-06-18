@@ -3,7 +3,6 @@
 #
 import logging
 import os
-from dotenv import load_dotenv
 from src.update.BaseDataUpdate import BaseDataUpdate
 
 
@@ -17,11 +16,12 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
         self._base_url = "https://scancode-licensedb.aboutcode.org/"
         self._index_url = f"{self._base_url}index.json"
 
-        load_dotenv()
+        exceptions = self.load_json_file("resources/exceptions.json")
 
-        self._EXCEPTION_SCANCODE_LICENSEDB = os.getenv('EXCEPTION_SCANCODE_LICENSEDB')
+        self._EXCEPTION_SCANCODE_LICENSEDB = exceptions.get("scancode-licensedb")
 
-    def get_aliases(self, license_data: dict, is_spdx=True) -> list[str]:
+    @staticmethod
+    def get_aliases(license_data: dict, is_spdx=True) -> list[str]:
         """
         Get the aliases for the given license
         Args:
@@ -108,7 +108,7 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
 
             # Create filepath
             filename = license_key + ".json"
-            license_filepath = os.path.join(filename)
+            license_filepath = os.path.join(filename).__str__()
 
             # Download license to specified filepath and load downloaded json file as dictionary
             url = self._base_url + license_key + ".json"

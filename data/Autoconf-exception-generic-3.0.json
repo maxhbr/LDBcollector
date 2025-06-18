@@ -4,13 +4,13 @@
         "spdx": [
             "Autoconf generic exception for GPL-3.0"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Autoconf simple exception",
-            "autoconf-simple-exception",
-            "LicenseRef-scancode-autoconf-simple-exception"
-        ]
+        "custom": []
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [
+        "Autoconf simple exception",
+        "autoconf-simple-exception",
+        "LicenseRef-scancode-autoconf-simple-exception"
+    ],
+    "risky": []
 }

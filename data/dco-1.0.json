@@ -1,0 +1,14 @@
+{
+    "canonical": "dco-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Developer Certificate of Origin 1.0",
+            "LicenseRef-scancode-dco-1.0",
+            "DCO 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

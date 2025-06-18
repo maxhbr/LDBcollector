@@ -1,0 +1,13 @@
+{
+    "canonical": "generaluser-gs-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-generaluser-gs-2.0",
+            "GeneralUser GS License v2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

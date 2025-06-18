@@ -1,0 +1,13 @@
+{
+    "canonical": "clearthought-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Clearthought Software License v2.0",
+            "LicenseRef-scancode-clearthought-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

@@ -6,10 +6,12 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "nokia-qt-exception-1.1",
-            "Nokia Qt Exception to LGPL 2.1"
+            "nokia-qt-exception-1.1"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Nokia Qt Exception to LGPL 2.1"
+    ]
 }

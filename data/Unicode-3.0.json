@@ -4,12 +4,12 @@
         "spdx": [
             "Unicode License v3"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "unicode-v3",
-            "LicenseRef-scancode-unicode-v3"
-        ]
+        "custom": []
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "unicode-v3",
+        "LicenseRef-scancode-unicode-v3"
+    ]
 }

@@ -4,13 +4,13 @@
         "spdx": [
             "BSD 4.3 RENO License"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-bsd-original-uc-1986",
-            "BSD-Original-UC-1986",
-            "bsd-original-uc-1986"
-        ]
+        "custom": []
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "LicenseRef-scancode-bsd-original-uc-1986",
+        "BSD-Original-UC-1986",
+        "bsd-original-uc-1986"
+    ]
 }

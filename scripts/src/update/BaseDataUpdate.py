@@ -76,12 +76,21 @@ class BaseDataUpdate:
         data = self.load_json_file(filepath)
         existing_aliases = data.get("aliases", {})
 
+        risky_aliases = data.get("risky", [])
+        rejected_aliases = data.get("rejected", [])
+
         # Get all aliases and canonical id and flat 2D list to 1D list and add canonical ID to prevent duplication
         aliases_list = list(itertools.chain.from_iterable(list(existing_aliases.values())))
         aliases_list.append(data.get("canonical"))
 
         # Add each unique alias to license if alias is not None
         for alias in aliases:
+            if alias in risky_aliases:
+                self._LOGGER.debug(f"For {canonical_id} the alias '{alias}' is already in risky list")
+                continue
+            if alias in rejected_aliases:
+                self._LOGGER.debug(f"For {canonical_id} the alias '{alias}' is already in rejected list")
+                continue
             if alias not in aliases_list:
                 self._LOGGER.debug(f"Updating alias for canonical id {canonical_id}")
 
@@ -109,7 +118,8 @@ class BaseDataUpdate:
                 "custom": []
             },
             "src": self._src,
-            "rejected": []
+            "rejected": [],
+            "risky": []
         }
 
         filepath = os.path.join(self._DATA_DIR, f"{canonical_id}.json")

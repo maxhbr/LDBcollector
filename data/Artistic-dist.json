@@ -1,0 +1,12 @@
+{
+    "canonical": "Artistic-dist",
+    "aliases": {
+        "spdx": [
+            "Artistic License 1.0 (dist)"
+        ],
+        "custom": []
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

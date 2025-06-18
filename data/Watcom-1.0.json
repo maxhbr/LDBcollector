@@ -7,7 +7,6 @@
         "custom": [],
         "scancode-licensedb": [
             "Sybase Open Watcom Public License v1.0",
-            "sybase",
             "Open Watcom 1.0"
         ],
         "osi": [
@@ -15,5 +14,8 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "sybase"
+    ]
 }

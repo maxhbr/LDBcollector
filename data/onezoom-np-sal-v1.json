@@ -1,0 +1,13 @@
+{
+    "canonical": "onezoom-np-sal-v1",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-onezoom-np-sal-v1",
+            "OneZoom Non-Profit Source Available Licence v1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

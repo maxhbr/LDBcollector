@@ -1,0 +1,12 @@
+{
+    "canonical": "Unlicense-libwhirlpool",
+    "aliases": {
+        "spdx": [
+            "Unlicense - libwhirlpool variant"
+        ],
+        "custom": []
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

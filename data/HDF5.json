@@ -1,0 +1,17 @@
+{
+    "canonical": "HDF5",
+    "aliases": {
+        "scancode-licensedb": [
+            "HDF5License",
+            "LicenseRef-scancode-hdf5",
+            "hdf5"
+        ],
+        "custom": [],
+        "spdx": [
+            "HDF5 License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

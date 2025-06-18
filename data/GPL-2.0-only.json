@@ -5,7 +5,19 @@
             "GNU General Public License v2.0 only",
             "GPL-2.0"
         ],
-        "custom": [],
+        "custom": [
+            "GPL-2.0-only",
+            "GPL 2.0 only",
+            "GPL v2.0 only",
+            "GNU GPL v2.0 only",
+            "GPL v2.0",
+            "GPL 2.0 (only)",
+            "GNU GPL 2.0 (only)",
+            "GPL-2.0 (only)",
+            "GPL-2.0-only License",
+            "GPL 2.0 License (only)",
+            "GPL v2.0 License (only)"
+        ],
         "scancode-licensedb": [
             "LicenseRef-GPL-2.0",
             "GPL 2.0",
@@ -17,5 +29,12 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "GPLv2-only",
+        "GPLv2 only",
+        "GPLv2",
+        "GPLv2 (only)",
+        "GPL v2 only"
+    ]
 }

@@ -7,13 +7,15 @@
         "custom": [],
         "scancode-licensedb": [
             "IPL 1.0",
-            "ibmpl-1.0",
-            "IBM Public License"
+            "ibmpl-1.0"
         ],
         "osi": [
             "IBM Public License, Version 1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "IBM Public License"
+    ]
 }

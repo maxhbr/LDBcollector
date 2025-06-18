@@ -7,13 +7,15 @@
         "custom": [],
         "scancode-licensedb": [
             "APL 1.0",
-            "adapt-1.0",
-            "Adaptive Public License"
+            "adapt-1.0"
         ],
         "osi": [
             "Adaptive Public License, Version 1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Adaptive Public License"
+    ]
 }

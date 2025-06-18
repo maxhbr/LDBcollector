@@ -1,0 +1,14 @@
+{
+    "canonical": "inria-icesl",
+    "aliases": {
+        "scancode-licensedb": [
+            "INRIA IceSL EULA",
+            "INRIA End User License Agreement for IceSL Software",
+            "LicenseRef-scancode-inria-icesl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

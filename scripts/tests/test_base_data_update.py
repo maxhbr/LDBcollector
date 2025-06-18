@@ -51,7 +51,8 @@ def test_delete_file(mock_exists, mock_remove, base_data_update):
 
 
 @patch("os.path.join", return_value="/path/to/license.json")
-@patch("builtins.open", new_callable=mock_open, read_data='{"canonical": "test", "aliases": {"source": ["alias1"]}}')
+@patch("builtins.open", new_callable=mock_open,
+       read_data='{"canonical": "test", "aliases": {"source": ["alias1"]}, "rejected": ["rejected_alias"], "risky": ["risky_alias"]}')
 @patch("json.dump")
 def test_update_license_file(mock_json_dump, mock_open, mock_join, base_data_update):
     canonical_id = "test_license"
@@ -59,9 +60,33 @@ def test_update_license_file(mock_json_dump, mock_open, mock_join, base_data_upd
 
     base_data_update.update_license_file(canonical_id, aliases)
 
+    expected_data = {"canonical": "test", "aliases": {"source": ["alias1"], "test_source": ["alias2"]}, "rejected": ["rejected_alias"],
+                     "risky": ["risky_alias"]}
+
     mock_join.assert_called_once()
     mock_open.assert_called_with("/path/to/license.json", "w")
     mock_json_dump.assert_called_once()
+    mock_json_dump.assert_called_once_with(expected_data, mock_open(), indent=4)
+
+
+@patch("os.path.join", return_value="/path/to/license.json")
+@patch("builtins.open", new_callable=mock_open,
+       read_data='{"canonical": "test", "aliases": {"source": ["alias1"]}, "rejected": ["rejected_alias"], "risky": ["risky_alias"]}')
+@patch("json.dump")
+def test_update_license_file_rejected_and_risky(mock_json_dump, mock_open, mock_join, base_data_update, caplog):
+    canonical_id = "test_license"
+    aliases = ["risky_alias", "rejected_alias"]
+
+    base_data_update.update_license_file(canonical_id, aliases)
+
+    expected_data = {"canonical": "test", "aliases": {"source": ["alias1"]}, "rejected": ["rejected_alias"], "risky": ["risky_alias"]}
+
+    mock_join.assert_called_once()
+    mock_open.assert_called_with("/path/to/license.json", "w")
+    mock_json_dump.assert_called_once()
+    assert caplog.text.__contains__("For test_license the alias 'risky_alias' is already in risky list")
+    assert caplog.text.__contains__("For test_license the alias 'rejected_alias' is already in rejected list")
+    mock_json_dump.assert_called_once_with(expected_data, mock_open(), indent=4)
 
 
 @patch("os.path.join", return_value="/path/to/data/license.json")
@@ -83,6 +108,8 @@ def test_create_license_file(mock_json_dump, mock_open, mock_join, base_data_upd
             "custom": []
         },
         "src": "test_source",
-        "rejected": []
+        "rejected": [],
+        "risky": []
+
     }
     mock_json_dump.assert_called_once_with(expected_data, mock_open(), indent=4)

@@ -1,0 +1,13 @@
+{
+    "canonical": "mattermost-sal-2024",
+    "aliases": {
+        "scancode-licensedb": [
+            "Mattermost Source Available License 2024",
+            "LicenseRef-scancode-mattermost-sal-2024"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

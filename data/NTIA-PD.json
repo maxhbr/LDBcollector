@@ -1,0 +1,12 @@
+{
+    "canonical": "NTIA-PD",
+    "aliases": {
+        "spdx": [
+            "NTIA Public Domain Notice"
+        ],
+        "custom": []
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

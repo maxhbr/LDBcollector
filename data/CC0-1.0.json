@@ -6,11 +6,8 @@
         ],
         "custom": [
             "CC0 1.0",
-            "CC0",
             "CC Zero 1.0",
-            "CC0 License",
             "CC0 1.0 Universal",
-            "CC0 Universal",
             "Creative Commons Zero 1.0",
             "Creative Commons Zero v1.0",
             "Creative Commons Zero License 1.0",
@@ -18,7 +15,6 @@
             "CC Zero v1.0",
             "CC0 Universal 1.0",
             "CC0-1.0 License",
-            "Creative Commons Zero",
             "Creative Commons CC0 1.0"
         ],
         "scancode-licensedb": [
@@ -27,5 +23,11 @@
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "CC0",
+        "CC0 License",
+        "CC0 Universal",
+        "Creative Commons Zero"
+    ]
 }

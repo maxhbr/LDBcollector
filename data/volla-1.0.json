@@ -1,0 +1,13 @@
+{
+    "canonical": "volla-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Volla Licence 1.0",
+            "LicenseRef-scancode-volla-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

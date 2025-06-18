@@ -4,8 +4,13 @@
         "spdx": [
             "bzip2 and libbzip2 License v1.0.5"
         ],
-        "custom": []
+        "custom": [],
+        "scancode-licensedb": [
+            "bzip2-libbzip-1.0.5",
+            "bzip2-1.0.5"
+        ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": []
 }

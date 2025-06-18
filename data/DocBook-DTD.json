@@ -1,0 +1,12 @@
+{
+    "canonical": "DocBook-DTD",
+    "aliases": {
+        "spdx": [
+            "DocBook DTD License"
+        ],
+        "custom": []
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

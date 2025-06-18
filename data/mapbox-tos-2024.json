@@ -1,0 +1,14 @@
+{
+    "canonical": "mapbox-tos-2024",
+    "aliases": {
+        "scancode-licensedb": [
+            "Mapbox TOS 2024",
+            "LicenseRef-scancode-mapbox-tos-2024",
+            "Mapbox Terms of Service 2024"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

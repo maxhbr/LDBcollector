@@ -4,13 +4,13 @@
         "spdx": [
             "THOR Public License 1.0"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Thor Public License",
-            "LicenseRef-scancode-thor-pl",
-            "thor-pl"
-        ]
+        "custom": []
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Thor Public License",
+        "LicenseRef-scancode-thor-pl",
+        "thor-pl"
+    ]
 }

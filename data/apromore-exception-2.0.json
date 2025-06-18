@@ -1,0 +1,13 @@
+{
+    "canonical": "apromore-exception-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Apromore Exception to GPL 2.0 or later",
+            "LicenseRef-scancode-apromore-exception-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

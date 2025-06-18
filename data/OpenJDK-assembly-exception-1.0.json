@@ -6,10 +6,12 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "openjdk-assembly-exception-1.0",
-            "OpenJDK Assembly exception to GPL 2.0"
+            "openjdk-assembly-exception-1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "OpenJDK Assembly exception to GPL 2.0"
+    ]
 }

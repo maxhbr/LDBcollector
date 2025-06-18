@@ -4,13 +4,13 @@
         "spdx": [
             "PNG Reference Library version 2"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "libpng-v2",
-            "LIbpng License v2",
-            "PNG Reference Library License version 2"
-        ]
+        "custom": []
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "libpng-v2",
+        "LIbpng License v2",
+        "PNG Reference Library License version 2"
+    ]
 }

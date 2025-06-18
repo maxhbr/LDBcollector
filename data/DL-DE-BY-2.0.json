@@ -6,12 +6,14 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "Datenlizenz Deutschland - Namensnennung - Version 2.0 - Deutsch",
-            "dl-de/by-2-0-de",
-            "LicenseRef-scancode-dl-de-by-2-0-de",
-            "dl-de-by-2-0-de"
+            "Datenlizenz Deutschland - Namensnennung - Version 2.0 - Deutsch"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "dl-de/by-2-0-de",
+        "LicenseRef-scancode-dl-de-by-2-0-de",
+        "dl-de-by-2-0-de"
+    ]
 }

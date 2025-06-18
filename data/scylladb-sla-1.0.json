@@ -1,0 +1,14 @@
+{
+    "canonical": "scylladb-sla-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "ScyllaDB Software License Agreement 1.0",
+            "LicenseRef-scancode-scylladb-sla-1.0",
+            "ScyllaDB SLA 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

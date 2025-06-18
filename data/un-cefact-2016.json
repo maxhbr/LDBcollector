@@ -1,0 +1,13 @@
+{
+    "canonical": "un-cefact-2016",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-un-cefact-2016",
+            "UN-CEFACT License 2016"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

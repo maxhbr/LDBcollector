@@ -1,0 +1,12 @@
+{
+    "canonical": "Aspell-RU",
+    "aliases": {
+        "spdx": [
+            "Aspell Russian License"
+        ],
+        "custom": []
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

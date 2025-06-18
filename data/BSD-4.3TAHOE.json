@@ -4,14 +4,14 @@
         "spdx": [
             "BSD 4.3 TAHOE License"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "bsla",
-            "BSLA",
-            "LicenseRef-scancode-bsla",
-            "Berkeley Software License Agreement"
-        ]
+        "custom": []
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "bsla",
+        "BSLA",
+        "LicenseRef-scancode-bsla",
+        "Berkeley Software License Agreement"
+    ]
 }

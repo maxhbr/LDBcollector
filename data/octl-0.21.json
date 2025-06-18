@@ -1,0 +1,14 @@
+{
+    "canonical": "octl-0.21",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-octl-0.21",
+            "Open Compensation Token License v0.21",
+            "Open Compensation Token License Version 0.21"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "sudo",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-sudo",
+            "Sudo License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "radiance-sl-v2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Radiance Software License, Version 2.0",
+            "LicenseRef-scancode-radiance-sl-v2.0",
+            "Radiance Software License v2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

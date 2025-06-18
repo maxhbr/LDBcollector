@@ -6,11 +6,13 @@
         ],
         "custom": [],
         "scancode-licensedb": [
-            "Open Publication License 1.0",
-            "openpub",
-            "LicenseRef-scancode-openpub"
+            "Open Publication License 1.0"
         ]
     },
     "src": "spdx",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "openpub",
+        "LicenseRef-scancode-openpub"
+    ]
 }

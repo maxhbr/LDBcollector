@@ -4,6 +4,7 @@
 import json
 import os
 from enum import Enum
+import re
 
 import requests
 from src.logger import setup_logger
@@ -192,6 +193,50 @@ def flatten_aliases_dict(aliases_dict):
     return aliases_list
 
 
+def extract_version_tokens(identifier) -> set:
+    """
+    Extracts version tokens from an identifier.
+    It looks for tokens that are either numeric or are recognized digit words.
+    """
+    token_pattern = re.compile(r'(\d+\.\d+(?:\.\d+)*)', re.IGNORECASE)
+    version_tokens = set(token_pattern.findall(identifier))
+    return version_tokens
+
+
+def check_version_between_canonical_and_alias():
+    affected_licenses = {}
+    for filename in os.listdir(DATA_DIR):
+        if filename.endswith(".json"):
+            filepath = os.path.join(DATA_DIR, filename)
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+                aliases = data.get("aliases", [])
+                scancode_aliases = []
+                if 'scancode-licensedb' in aliases:
+                    scancode_aliases = aliases.pop('scancode-licensedb')
+                custom_aliases = aliases.pop('custom')
+                aliases_list = scancode_aliases + custom_aliases
+                canonical = data.get("canonical", [])
+
+                wrong_version = []
+
+                canonical_tokens = extract_version_tokens(canonical)
+                canonical_has_version = bool(canonical_tokens)
+
+                compare_versions(aliases_list, canonical_has_version, canonical_tokens, wrong_version)
+                if wrong_version:
+                    logger.error(f'{filename} has wrong versions for aliases: {wrong_version}')
+                    affected_licenses[canonical] = wrong_version
+
+
+def compare_versions(aliases_list, canonical_has_version, canonical_tokens, wrong_version):
+    if canonical_has_version:
+        for alias in aliases_list:
+            alias_tokens = extract_version_tokens(alias)
+            if not alias_tokens & canonical_tokens:
+                wrong_version.append(alias)
+
+
 def main():
     spdx_license_url = "https://raw.githubusercontent.com/spdx/license-list-data/main/json/licenses.json"
     spdx_license_file = "spdx_license_list.json"
@@ -224,6 +269,8 @@ def main():
     check_length_and_characters()
 
     check_no_empty_field_except_custom()
+
+    check_version_between_canonical_and_alias()
     # Check if error occurred
     if logger.handlers[1].error_occurred:
         exit(1)

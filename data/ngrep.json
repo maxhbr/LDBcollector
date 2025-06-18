@@ -1,0 +1,12 @@
+{
+    "canonical": "ngrep",
+    "aliases": {
+        "spdx": [
+            "ngrep License"
+        ],
+        "custom": []
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

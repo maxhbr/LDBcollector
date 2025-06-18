@@ -1,0 +1,14 @@
+{
+    "canonical": "eclipse-tck-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Eclipse TCK v1.1",
+            "LicenseRef-scancode-eclipse-tck-1.1",
+            "Eclipse Foundation Technology Compatibility Kit License - v1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

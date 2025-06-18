@@ -3,11 +3,13 @@
     "aliases": {
         "scancode-licensedb": [
             "MulanPubl-1.0",
-            "Mulan Public License, Version 1 (Mulan PubL v1)",
             "LicenseRef-scancode-mulanpubl-1.0"
         ],
         "custom": []
     },
     "src": "scancode-licensedb",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Mulan Public License, Version 1 (Mulan PubL v1)"
+    ]
 }

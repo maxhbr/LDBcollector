@@ -2,12 +2,14 @@
     "canonical": "magpie-exception-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "MAgPIE Exception to AGPL 3.0",
-            "MAgPIE License Exception to AGPL 3.0",
             "LicenseRef-scancode-magpie-exception-1.0"
         ],
         "custom": []
     },
     "src": "scancode-licensedb",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "MAgPIE Exception to AGPL 3.0",
+        "MAgPIE License Exception to AGPL 3.0"
+    ]
 }

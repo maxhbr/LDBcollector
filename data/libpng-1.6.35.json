@@ -1,0 +1,12 @@
+{
+    "canonical": "libpng-1.6.35",
+    "aliases": {
+        "spdx": [
+            "PNG Reference Library License v1 (for libpng 0.5 through 1.6.35"
+        ],
+        "custom": []
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
+}

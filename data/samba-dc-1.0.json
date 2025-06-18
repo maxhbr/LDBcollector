@@ -1,0 +1,14 @@
+{
+    "canonical": "samba-dc-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-samba-dc-1.0",
+            "Samba Developer's Declaration, Version 1.0",
+            "Samba DC 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}

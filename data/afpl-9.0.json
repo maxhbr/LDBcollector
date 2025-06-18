@@ -2,12 +2,14 @@
     "canonical": "afpl-9.0",
     "aliases": {
         "scancode-licensedb": [
-            "Aladdin Free Public License v9",
-            "Aladdin FPL v9",
             "LicenseRef-scancode-afpl-9.0"
         ],
         "custom": []
     },
     "src": "scancode-licensedb",
-    "rejected": []
+    "rejected": [],
+    "risky": [
+        "Aladdin Free Public License v9",
+        "Aladdin FPL v9"
+    ]
 }

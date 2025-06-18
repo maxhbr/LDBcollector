@@ -1,0 +1,13 @@
+{
+    "canonical": "mov-ai-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-mov-ai-1.0",
+            "Mov.AI License version 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb",
+    "rejected": [],
+    "risky": []
+}
