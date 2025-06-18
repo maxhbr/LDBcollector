@@ -514,7 +514,7 @@ def test_check_version_between_canonical_and_alias_failure(caplog):
     os.makedirs("test_data", exist_ok=True)
 
     valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
-                  "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["wrong_version_3.0"]}}
+                  "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["wrong_version_3.0_1.0"]}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
 
@@ -527,7 +527,7 @@ def test_check_version_between_canonical_and_alias_failure(caplog):
 
     assert mock_logger.error.call_count == 1
     assert str(mock_logger.method_calls).__contains__(
-        "valid.json has wrong versions for aliases: ['invalid_alias_version', 'wrong_version_3.0']")
+        "valid.json has wrong versions for aliases: ['invalid_alias_version', 'wrong_version_3.0_1.0']")
 
 
 if __name__ == "__main__":
