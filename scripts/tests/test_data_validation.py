@@ -354,13 +354,13 @@ def test_main_integration():
     mock_logger.handlers[1].error_occurred = False  # Simulate no error occurring
 
     with mock.patch("src.validate.data_validation.download_license_list"), \
-        mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                   side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-        mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-        mock.patch("src.validate.data_validation.delete_file"), \
-        mock.patch("src.validate.data_validation.check_json_filename"), \
-        mock.patch("src.validate.data_validation.check_unique_aliases"), \
-        mock.patch("src.validate.data_validation.check_length_and_characters"):
+         mock.patch("src.validate.data_validation.load_ids_from_license_list",
+                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
+         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
+         mock.patch("src.validate.data_validation.delete_file"), \
+         mock.patch("src.validate.data_validation.check_json_filename"), \
+         mock.patch("src.validate.data_validation.check_unique_aliases"), \
+         mock.patch("src.validate.data_validation.check_length_and_characters"):
         main()
 
         # Verify that no error occurred (if checking the logger)
@@ -373,13 +373,13 @@ def test_main_integration_fail():
     mock_logger.handlers[1].error_occurred = True  # Simulate an error occurring
 
     with mock.patch("src.validate.data_validation.download_license_list"), \
-        mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                   side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-        mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-        mock.patch("src.validate.data_validation.delete_file"), \
-        mock.patch("src.validate.data_validation.check_json_filename"), \
-        mock.patch("src.validate.data_validation.check_unique_aliases"), \
-        mock.patch("src.validate.data_validation.check_length_and_characters"):
+         mock.patch("src.validate.data_validation.load_ids_from_license_list",
+                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
+         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
+         mock.patch("src.validate.data_validation.delete_file"), \
+         mock.patch("src.validate.data_validation.check_json_filename"), \
+         mock.patch("src.validate.data_validation.check_unique_aliases"), \
+         mock.patch("src.validate.data_validation.check_length_and_characters"):
         main()
 
         # Verify that no error occurred (if checking the logger)
