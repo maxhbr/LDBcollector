@@ -90,10 +90,10 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% for version in object.versions.all %}
     <h3>{{ object.name }} : {{ version.version_number }} <a title="Edit this version" href="{% url 'cube:version_update' component.id version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></h3>
     <p><strong><span class="icon"><i class="fas fa-balance-scale"></i></span>License expression:</strong>
-      {% if version.corrected_license%}
-        {{version.corrected_license}} (corrected from {{ version.spdx_valid_license_expr }})
+      {% if version.corrected_license %}
+        {{ version.corrected_license }} (corrected from {{ version.imported_license }})
       {% elif version.spdx_valid_license_expr  %}
-        {{version.spdx_valid_license_expr}}
+        {{ version.spdx_valid_license_expr }}
         {% if version.spdx_valid_license_expr != version.declared_license_expr %}
           (declared License expression was {{ version.declared_license_expr }})
         {% endif %}

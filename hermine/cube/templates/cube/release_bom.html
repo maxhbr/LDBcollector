@@ -53,7 +53,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td><abbr title="{{ usage.project|truncatechars:50 }}">{{ usage.project|truncatechars:20 }}</abbr></td>
             <td>{{ usage.scope }}</td>
             <td style="word-break: break-all"><a href="{% url 'cube:component_detail' usage.version.component.id %}" >{{ usage.version }}</a></td>
-            <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr }}</td>
+            <td>{{ usage.version.effective_license }}</td>
             <td>{{ usage.license_expression }}</td>
             <td>
               {% if usage.component_modified == "Altered" %}
