@@ -4,6 +4,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.urls import path, include
+from django.views.generic import RedirectView
 
 from . import views, api_views
 
@@ -344,6 +345,11 @@ urlpatterns = [
         name="usage_delete",
     ),
     # Release validation related views
+    path(
+        "releases/<int:pk>/validation/",
+        RedirectView.as_view(pattern_name="release_validation_step_1", permanent=True),
+        name="release_validation",
+    ),
     path(
         "releases/<int:pk>/validation/step_1",
         views.ReleaseValidationStep1View.as_view(),
