@@ -1836,6 +1836,135 @@ const docTemplate = `{
                 }
             }
         },
+        "/oidcClients": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Get all oidc clients added by the user for initiating M2M flow with fossology",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "OIDC Clients"
+                ],
+                "summary": "Get all oidc clients added by the user",
+                "operationId": "GetUserOidcClients",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.OidcClientsResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Something went wrong",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Add a new client for initiating M2M flow with fossology",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "OIDC Clients"
+                ],
+                "summary": "Adds a new oidc client",
+                "operationId": "CreateOidcClient",
+                "parameters": [
+                    {
+                        "description": "Oidc client to add",
+                        "name": "oidc_client",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.CreateDeleteOidcClientDTO"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.OidcClientsResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "409": {
+                        "description": "oidc client already exists",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while adding new oidc client",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Remove an oidc client if it gets expired or is compromised",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "OIDC Clients"
+                ],
+                "summary": "Remove an oidc client",
+                "operationId": "RevokeClient",
+                "parameters": [
+                    {
+                        "description": "Oidc client to add",
+                        "name": "oidc_client",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.CreateDeleteOidcClientDTO"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "404": {
+                        "description": "Oidc Client not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/search": {
             "post": {
                 "security": [
@@ -2396,6 +2525,18 @@ const docTemplate = `{
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.CreateDeleteOidcClientDTO": {
+            "type": "object",
+            "required": [
+                "clientId"
+            ],
+            "properties": {
+                "clientId": {
+                    "type": "string",
+                    "example": "qwerty"
                 }
             }
         },
@@ -3104,6 +3245,40 @@ const docTemplate = `{
                 "type": {
                     "type": "string",
                     "example": "RISK"
+                }
+            }
+        },
+        "models.OidcClientDTO": {
+            "type": "object",
+            "properties": {
+                "add_date": {
+                    "type": "string"
+                },
+                "client_id": {
+                    "type": "string",
+                    "example": "qwerty"
+                },
+                "id": {
+                    "type": "integer",
+                    "example": 123
+                }
+            }
+        },
+        "models.OidcClientsResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.OidcClientDTO"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },

@@ -166,6 +166,12 @@ func Router() *gin.Engine {
 			{
 				dashboard.GET("", GetDashboardData)
 			}
+			oidcClient := authorizedv1.Group("/oidcClients")
+			{
+				oidcClient.GET("", GetUserOidcClients)
+				oidcClient.POST("", AddOidcClient)
+				oidcClient.DELETE("", RevokeClient)
+			}
 		}
 	} else {
 		unAuthorizedv1 := r.Group("/api/v1")
@@ -259,6 +265,12 @@ func Router() *gin.Engine {
 			{
 				obMap.PATCH("topic/:topic/license", PatchObligationMap)
 				obMap.PUT("topic/:topic/license", UpdateLicenseInObligationMap)
+			}
+			oidcClient := authorizedv1.Group("/oidcClients")
+			{
+				oidcClient.GET("", GetUserOidcClients)
+				oidcClient.POST("", AddOidcClient)
+				oidcClient.DELETE("", RevokeClient)
 			}
 		}
 	}
