@@ -1,5 +1,5 @@
 [versions]
-ort = "61.0.0"
+ort = "61.1.0"
 
 [libraries]
 ortModel = { module = "org.ossreviewtoolkit:model", version.ref = "ort" }
