@@ -57,7 +57,8 @@
                 "License :: OSI Approved :: Artistic License",
                 "Artistic License",
                 "Artistic",
-                "Artistic License (Perl)"
+              "Artistic License (Perl)",
+              "Artistc"
             ],
             "problem": "This license has different version (1.0, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -97,7 +98,8 @@
               "BSD_License",
               "BSD_License_",
               "BSD like",
-              "BSD-LIKE"
+              "BSD-LIKE",
+              "bsd"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
