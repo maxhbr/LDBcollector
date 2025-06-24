@@ -12,19 +12,29 @@ DATA_DIR = os.path.abspath(os.path.join(script_dir, '../../../data'))
 
 
 def read_data(data_dir: str) -> dict:
-    data = {}
+    canonical_dict = {}
+    risky_dict = {}
+
     for filename in os.listdir(data_dir):
-        if filename.endswith(".json"):
-            filepath = os.path.join(data_dir, filename)
-            with open(filepath, 'r') as f:
-                license_data = json.load(f)
-                canonical_name = license_data.get("canonical")
-                src = license_data.get("src")
-                aliases = license_data.get("aliases", [])
-                data[canonical_name] = {"canonical": canonical_name, "src": src}
-                for source in aliases:
-                    for alias in aliases[source]:
-                        data[alias] = {"canonical": canonical_name, "src": src}
+        filepath = os.path.join(data_dir, filename)
+        with open(filepath, 'r') as f:
+            license_data = json.load(f)
+            canonical_name = license_data.get("canonical")
+            src = license_data.get("src")
+            aliases = license_data.get("aliases", [])
+
+            canonical_dict[canonical_name] = {"canonical": canonical_name, "src": src}
+            for source in aliases:
+                for alias in aliases[source]:
+                    canonical_dict[alias] = {"canonical": canonical_name, "src": src}
+
+            risky_aliases = license_data.get("risky")
+            if not risky_aliases:
+                continue
+            for element in risky_aliases:
+                risky_dict[element] = {"canonical": canonical_name, "src": src}
+    data = {"canonical_list": canonical_dict, "risky_list": risky_dict}
+
     return data
 
 
