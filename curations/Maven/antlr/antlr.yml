@@ -11,7 +11,7 @@
       url: "http://www.antlr2.org/download/antlr-2.7.6.tar.gz"
       hash:
         value: "e923acd81c590234ea241da96a536e3dcf7f77fb"
-        algorithm: "SHA1"
+        algorithm: "SHA-1"
 - id: "Maven:antlr:antlr:2.7.7"
   curations:
     comment: |
@@ -20,7 +20,7 @@
       url: "http://www.antlr2.org/download/antlr-2.7.7.tar.gz"
       hash:
         value: "802655c343cc7806aaf1ec2177a0e663ff209de1"
-        algorithm: "SHA1"
+        algorithm: "SHA-1"
 - id: "Maven:antlr:antlr:2.7.7"
   curations:
     comment: |

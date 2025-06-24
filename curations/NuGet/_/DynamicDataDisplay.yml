@@ -8,4 +8,4 @@
       url: "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:4f72c3a2df183509a8a698645a436d0399536d22/raw"
       hash:
         value: "3d712598add793473d19d3a63e7b5b5846ef5729"
-        algorithm: "SHA1"
+        algorithm: "SHA-1"
