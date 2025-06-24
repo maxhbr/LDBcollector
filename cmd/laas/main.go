@@ -27,17 +27,6 @@ import (
 
 // declare flags to input the basic requirement of database connection and the path of the data file
 var (
-	// argument to enter the name of database host
-	dbhost = flag.String("host", "localhost", "host name")
-	// port number of the host
-	port = flag.String("port", "5432", "port number")
-	// argument to enter the database user
-	user = flag.String("user", "fossy", "user name")
-	// name of database to be connected
-	dbname = flag.String("dbname", "licensedb", "database name")
-	// password of the database
-	password = flag.String("password", "fossy", "password")
-	// path of data file
 	datafile = flag.String("datafile", "licenseRef.json", "datafile path")
 	// auto-update the database
 	populatedb = flag.Bool("populatedb", false, "boolean variable to update database")
@@ -68,8 +57,14 @@ func main() {
 
 		auth.Jwks = cache
 	}
+	// database infoget from the .env
+	dbhost := os.Getenv("DB_HOST")
+	port := os.Getenv("DB_PORT")
+	user := os.Getenv("DB_USER")
+	dbname := os.Getenv("DB_NAME")
+	password := os.Getenv("DB_PASSWORD")
 
-	db.Connect(dbhost, port, user, dbname, password)
+	db.Connect(&dbhost, &port, &user, &dbname, &password)
 
 	if *populatedb {
 		utils.Populatedb(*datafile)
