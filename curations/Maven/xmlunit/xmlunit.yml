@@ -5,7 +5,7 @@
       license header but a non-SPDX license name tag. Also the SVN repository URL is wrong as it either points to the
       view URL or hard-codes the trunk revision.
     declared_license_mapping:
-      BSD License: "BSD-3-Clause"
+      "BSD License": "BSD-3-Clause"
     vcs:
       type: "Subversion"
       url: "https://svn.code.sf.net/p/xmlunit/code"
