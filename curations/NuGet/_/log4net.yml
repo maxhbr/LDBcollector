@@ -37,7 +37,7 @@
   curations:
     comment: "The package metadata lacks the VCS info."
     vcs:
-      type: Git
+      type: "Git"
       url: "https://github.com/apache/logging-log4net.git"
 - id: "NuGet::log4net:"
   curations:

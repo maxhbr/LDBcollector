@@ -4,7 +4,7 @@
       No VCS information in package metadata. This repo was chosen because the original
       maintainer of SharpSvn is a contributor and it is actively maintained.
     vcs:
-      type: Git
+      type: "Git"
       url: "https://github.com/AmpScm/SharpSvn.git"
 - id: "NuGet::SharpSvn.1.9-x64:1.9007.3987.251"
   curations:
