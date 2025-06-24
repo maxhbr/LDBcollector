@@ -1,4 +1,4 @@
-- id: "Maven:org.unbroken-dome.gradle-plugins:gradle-testsets-plugin"
+- id: "Maven:org.unbroken-dome.gradle-plugins:gradle-testsets-plugin:"
   curations:
     vcs:
       type: "Git"

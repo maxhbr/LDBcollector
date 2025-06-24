@@ -1,10 +1,10 @@
-- id: "Maven:edu.berkeley.cs.jqf:jqf-instrument"
+- id: "Maven:edu.berkeley.cs.jqf:jqf-instrument:"
   curations:
     comment: |-
       Mapped based on https://github.com/rohanpadhye/JQF/blob/ba9566c/LICENSE.
     declared_license_mapping:
       "FreeBSD License": "BSD-2-Clause"
-- id: "Maven:edu.berkeley.cs.jqf:jqf-instrument"
+- id: "Maven:edu.berkeley.cs.jqf:jqf-instrument:"
   curations:
     comment: |-
       Set the VCS path of the module inside the multi-module repository.

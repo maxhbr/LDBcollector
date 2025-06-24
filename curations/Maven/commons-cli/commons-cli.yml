@@ -1,4 +1,4 @@
-- id: "Maven:commons-cli:commons-cli"
+- id: "Maven:commons-cli:commons-cli:"
   curations:
     comment: |
       The source code repository has moved from Subversion to Git.

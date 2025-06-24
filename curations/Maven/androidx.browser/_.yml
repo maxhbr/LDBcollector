@@ -1,4 +1,4 @@
-- id: "Maven:androidx.browser"
+- id: "Maven:androidx.browser::"
   curations:
     comment: |
       Enforce scanning the source artifact, because figuring out the relevant files in the VCS is

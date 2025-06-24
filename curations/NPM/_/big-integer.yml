@@ -1,4 +1,4 @@
-- id: "NPM::big-integer"
+- id: "NPM::big-integer:"
   curations:
     comment: |
       The package metadata only contains an SSH URL that requires authentication, also see

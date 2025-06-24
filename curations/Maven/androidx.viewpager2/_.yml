@@ -1,4 +1,4 @@
-- id: "Maven:androidx.viewpager2"
+- id: "Maven:androidx.viewpager2::"
   curations:
     comment: |
       Enforce scanning the source artifact, because figuring out the relevant files in the VCS is

@@ -1,4 +1,4 @@
-- id: "Maven:junit:junit-dep"
+- id: "Maven:junit:junit-dep:"
   curations:
     comment: |
       The SCM tags from the POMs are outdated. As the "junit-dep" artifacts are the same as the ones from Maven group ID

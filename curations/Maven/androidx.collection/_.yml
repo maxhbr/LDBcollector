@@ -1,4 +1,4 @@
-- id: "Maven:androidx.collection"
+- id: "Maven:androidx.collection::"
   curations:
     comment: |
       Enforce scanning the source artifact, because figuring out the relevant files in the VCS is

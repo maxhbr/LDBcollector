@@ -1,4 +1,4 @@
-- id: "Maven:org.niis.xrd4j"
+- id: "Maven:org.niis.xrd4j::"
   curations:
     comment: |
       The POM only contained an authenticated SCM URL before https://github.com/nordic-institute/xrd4j/pull/30.

@@ -1,4 +1,4 @@
-- id: "Gem::colored"
+- id: "Gem::colored:"
   curations:
     comment: |
       The Gem info only contains a homepage, but no VCS info.

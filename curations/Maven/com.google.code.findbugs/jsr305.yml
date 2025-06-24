@@ -1,4 +1,4 @@
-- id: "Maven:com.google.code.findbugs:jsr305"
+- id: "Maven:com.google.code.findbugs:jsr305:"
   curations:
     comment: |
       The Subversion repository at https://findbugs.googlecode.com/svn/trunk/ has been moved to GitHub.

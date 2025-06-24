@@ -1,4 +1,4 @@
-- id: "Maven:org.apache.poi:poi-ooxml-schemas"
+- id: "Maven:org.apache.poi:poi-ooxml-schemas:"
   curations:
     comment: |
       No SCM tag is in the POM, but the repository was found via Internet search.

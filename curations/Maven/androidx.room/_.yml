@@ -1,4 +1,4 @@
-- id: "Maven:androidx.room"
+- id: "Maven:androidx.room::"
   curations:
     comment: |
       Enforce scanning the source artifact, because figuring out the relevant files in the VCS is

@@ -1,4 +1,4 @@
-- id: "Maven:org.niis.xrd4j:rest"
+- id: "Maven:org.niis.xrd4j:rest:"
   curations:
     comment: |
       Non-standard path within the repository.

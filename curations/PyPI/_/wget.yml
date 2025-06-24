@@ -1,4 +1,4 @@
-- id: "PyPI::wget"
+- id: "PyPI::wget:"
   curations:
     comment: |
       Enforce scanning the source artifact as the repository at http://bitbucket.org/techtonik/python-wget.git is not

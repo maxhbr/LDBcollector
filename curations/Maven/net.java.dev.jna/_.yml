@@ -1,4 +1,4 @@
-- id: "Maven:net.java.dev.jna"
+- id: "Maven:net.java.dev.jna::"
   curations:
     comment: |
       Enforce scanning the source artifact, because figuring out the relevant files in the VCS is

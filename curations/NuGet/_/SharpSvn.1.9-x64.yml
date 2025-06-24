@@ -1,4 +1,4 @@
-- id: "NuGet::SharpSvn.1.9-x64"
+- id: "NuGet::SharpSvn.1.9-x64:"
   curations:
     comment: |
       No VCS information in package metadata. This repo was chosen because the original

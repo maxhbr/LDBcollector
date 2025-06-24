@@ -1,4 +1,4 @@
-- id: "Maven:androidx.vectordrawable"
+- id: "Maven:androidx.vectordrawable::"
   curations:
     comment: |
       Enforce scanning the source artifact, because figuring out the relevant files in the VCS is

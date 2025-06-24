@@ -1,4 +1,4 @@
-- id: "Maven:org.jlleitschuh.gradle:ktlint-gradle"
+- id: "Maven:org.jlleitschuh.gradle:ktlint-gradle:"
   curations:
     vcs:
       type: "Git"

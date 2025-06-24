@@ -1,4 +1,4 @@
-- id: "Maven:androidx.customview"
+- id: "Maven:androidx.customview::"
   curations:
     comment: |
       Enforce scanning the source artifact, because figuring out the relevant files in the VCS is

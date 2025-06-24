@@ -1,4 +1,4 @@
-- id: "Maven:commons-logging:commons-logging-api"
+- id: "Maven:commons-logging:commons-logging-api:"
   curations:
     comment: |-
       No SCM tag in the POM: https://repo1.maven.org/maven2/commons-logging/commons-logging-api/1.0.3/commons-logging-api-1.0.3.pom

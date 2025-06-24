@@ -1,4 +1,4 @@
-- id: "Maven:net.sf.saxon:saxon"
+- id: "Maven:net.sf.saxon:saxon:"
   curations:
     comment: |-
       The POMs for the different versions either have an outdated SCM tag (e.g. https://repo1.maven.org/maven2/net/sf/saxon/saxon/8.7/saxon-8.7.pom)
