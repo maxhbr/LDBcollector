@@ -15,7 +15,6 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
-import java.util.Map;
 
 
 /**
@@ -52,7 +51,7 @@ class LicenseDataLoader
 
 
     @Nonnull
-    Map<String, LicenseObject> loadLicenses()
+    LicenseMap loadLicenses()
     {
         try (
             InputStream resourceStream = classLoader.getResourceAsStream(RESOURCE_NAME)
@@ -64,8 +63,8 @@ class LicenseDataLoader
             }
             try (BufferedInputStream bufferedInputStream = new BufferedInputStream(resourceStream))
             {
-                Map<String, LicenseObject> licenseMap = objectMapper.readValue(bufferedInputStream,
-                    new TypeReference<Map<String, LicenseObject>>()
+                LicenseMap licenseMap = objectMapper.readValue(bufferedInputStream,
+                    new TypeReference<LicenseMap>()
                     {
                     });
 

@@ -1,6 +1,14 @@
 {
-    "test-license": {
-        "canonical": "testCanonical",
-        "src": "testSrc"
+    "canonical_list": {
+        "test-license": {
+            "canonical": "testCanonical",
+            "src": "testSrc"
+        }
+    },
+    "risky_list": {
+        "test-risky-license": {
+            "canonical": "testCanonical",
+            "src": "testSrc"
+        }
     }
 }

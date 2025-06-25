@@ -35,10 +35,62 @@ class LicenseLynxTest
         String licenseName = "nonExistingLicense";
 
         // Act
+        LicenseObject result1 = LicenseLynx.map(licenseName);
+        LicenseObject result2 = LicenseLynx.map(licenseName, true);
+        LicenseObject result3 = LicenseLynx.map(licenseName, false);
+
+        // Assert
+        Assertions.assertNull(result1);
+        Assertions.assertNull(result2);
+        Assertions.assertNull(result3);
+
+    }
+
+    @Test
+    void testMapCanonicalLicense()
+    {
+        // Arrange
+        String licenseName = "test-license";
+
+        // Act
         LicenseObject result = LicenseLynx.map(licenseName);
 
         // Assert
-        Assertions.assertNull(result);
+        assert result != null;
+        Assertions.assertEquals(result.getCanonical(), "testCanonical");
+        Assertions.assertEquals(result.getSrc(), "testSrc");
+    }
+
+
+    @Test
+    void testMapRiskyLicense()
+    {
+        // Arrange
+        String licenseName = "test-risky-license";
+
+        // Act
+        LicenseObject result = LicenseLynx.map(licenseName, true);
+
+        // Assert
+        assert result != null;
+        Assertions.assertEquals(result.getCanonical(), "testCanonical");
+        Assertions.assertEquals(result.getSrc(), "testSrc");
+    }
+
+
+    @Test
+    void testMapRiskyLicenseNotEnabled()
+    {
+        // Arrange
+        String licenseName = "test-risky-license";
+
+        // Act
+        LicenseObject result1 = LicenseLynx.map(licenseName, false);
+        LicenseObject result2 = LicenseLynx.map(licenseName);
+
+        // Assert
+        assert result1 == null;
+        assert result2 == null;
     }
 
 
@@ -47,11 +99,17 @@ class LicenseLynxTest
     void testWithInjectedLicenseMap()
     {
         Map<String, LicenseObject> testMap = new HashMap<>();
-        testMap.put("test", new LicenseObject("TestCanonical", "TestSrc"));
-        LicenseMapSingleton testInstance = new LicenseMapSingleton(testMap);
+        Map<String, LicenseObject> testRiskyMap = new HashMap<>();
 
-        Assertions.assertEquals("TestCanonical", testInstance.getLicenseMap().get("test").getCanonical());
-        Assertions.assertEquals("TestSrc", testInstance.getLicenseMap().get("test").getSrc());
+        testMap.put("test", new LicenseObject("TestCanonical", "TestSrc"));
+        testRiskyMap.put("testRisky", new LicenseObject("TestCanonicalRisky", "TestSrcRisky"));
+
+        LicenseMap licenseMap = new LicenseMap(testMap, testRiskyMap);
+        LicenseMapSingleton testInstance = new LicenseMapSingleton(licenseMap);
+
+        Assertions.assertEquals("TestCanonical",
+            testInstance.getLicenseMap().getCanonicalLicenseMap().get("test").getCanonical());
+        Assertions.assertEquals("TestSrc", testInstance.getLicenseMap().getCanonicalLicenseMap().get("test").getSrc());
     }
 
 

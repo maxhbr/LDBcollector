@@ -5,7 +5,6 @@
 package org.licenselynx;
 
 import javax.annotation.Nonnull;
-import java.util.Map;
 import java.util.Objects;
 
 
@@ -14,7 +13,7 @@ import java.util.Objects;
  */
 class LicenseMapSingleton
 {
-    private final Map<String, LicenseObject> licenseMap;
+    private final LicenseMap licenseMap;
 
     private static LicenseMapSingleton instance;
 
@@ -25,7 +24,7 @@ class LicenseMapSingleton
      *
      * @param pLicenseMap the license map to use (must not be null)
      */
-    LicenseMapSingleton(@Nonnull final Map<String, LicenseObject> pLicenseMap)
+    LicenseMapSingleton(@Nonnull final LicenseMap pLicenseMap)
     {
         this.licenseMap = Objects.requireNonNull(pLicenseMap, "licenseMap cannot be null");
     }
@@ -71,7 +70,7 @@ class LicenseMapSingleton
      * @return a non-null map containing license mappings
      */
     @Nonnull
-    Map<String, LicenseObject> getLicenseMap()
+    LicenseMap getLicenseMap()
     {
         return licenseMap;
     }
