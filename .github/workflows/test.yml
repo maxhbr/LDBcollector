@@ -1,0 +1,53 @@
+# SPDX-FileCopyrightText:  2025 Chayan Das <01chayandas@gmail.com>
+# SPDX-License-Identifier: GPL-2.0-only
+
+name: E2E Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:13
+        env:
+          POSTGRES_USER: fossy
+          POSTGRES_PASSWORD: fossy
+          POSTGRES_DB: licensedb_Test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.22' 
+
+    - name: Generate code
+      run: |
+        cp external_ref_fields.example.yaml external_ref_fields.yaml
+        go generate ./...
+        
+    - name: Prepare .env.test file for CI
+      run: cp configs/.env.test.example .env.test
+      
+
+    - name: Install dependencies
+      run: go mod download
+
+    - name: Run tests
+      run: go test ./pkg/api -v

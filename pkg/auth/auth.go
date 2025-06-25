@@ -759,7 +759,7 @@ func Login(c *gin.Context) {
 		return
 	}
 
-	err := encryptUserPassword(&user)
+	err := EncryptUserPassword(&user)
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
@@ -844,9 +844,9 @@ func GetUserProfile(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// encryptUserPassword checks if the password is already encrypted or not. If
+// EncryptUserPassword checks if the password is already encrypted or not. If
 // not, it encrypts the password.
-func encryptUserPassword(user *models.User) error {
+func EncryptUserPassword(user *models.User) error {
 	_, err := bcrypt.Cost([]byte(*user.UserPassword))
 	if err == nil {
 		return nil

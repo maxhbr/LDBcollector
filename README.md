@@ -112,7 +112,7 @@ go build ./cmd/laas
   values of the environment variables as per your requirement.
 
 ```bash
-cp .env.example .env
+cp configs/.env.dev.example .env
 vim .env
 ```
 
@@ -160,3 +160,19 @@ INSERT INTO users (user_name, user_password, user_level, display_name, user_emai
     ```bash
     swag fmt --generalInfo ./pkg/api/api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils
     ```
+
+### Testing (local)
+The PostgreSQL user `fossy` must have the `CREATEDB` privilege in order to:
+
+- Programmatically create and drop a test database.
+- Apply migrations on the test DB before running tests.
+
+```json
+sudo -u postgres psql; // log into psql with postgres super user 
+ALTER USER fossy CREATEDB; // alter the role for fossy
+\du ;                     // verify role 
+```
+Create the `.env.test` file file in the `configs` directory of the project.
+```
+cp configs/.env.test.example .env.test
+```
