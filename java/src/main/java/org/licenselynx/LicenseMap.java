@@ -30,8 +30,8 @@ class LicenseMap
 
     @JsonCreator
     public LicenseMap(
-        @JsonProperty("canonical_list") final Map<String, LicenseObject> pCanonicalLicenseMap,
-        @JsonProperty("risky_list") final Map<String, LicenseObject> pRiskyLicenseMap)
+        @JsonProperty("stable_map") final Map<String, LicenseObject> pCanonicalLicenseMap,
+        @JsonProperty("risky_map") final Map<String, LicenseObject> pRiskyLicenseMap)
     {
         this.canonicalLicenseMap = Objects.requireNonNull(pCanonicalLicenseMap);
         this.riskyLicenseMap = Objects.requireNonNull(pRiskyLicenseMap);

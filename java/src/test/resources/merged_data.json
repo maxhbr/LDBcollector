@@ -1,11 +1,11 @@
 {
-    "canonical_list": {
+    "stable_map": {
         "test-license": {
             "canonical": "testCanonical",
             "src": "testSrc"
         }
     },
-    "risky_list": {
+    "risky_map": {
         "test-risky-license": {
             "canonical": "testCanonical",
             "src": "testSrc"

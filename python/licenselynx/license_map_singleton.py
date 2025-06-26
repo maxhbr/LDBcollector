@@ -30,10 +30,10 @@ class _LicenseMapSingleton(metaclass=_Singleton):
                 data = json.load(file)
 
                 canonical_map = {}
-                for key, value in data["canonical_list"].items():
+                for key, value in data["stable_map"].items():
                     canonical_map[key] = LicenseObject(**value)
                 risky_map = {}
-                for key, value in data["risky_list"].items():
+                for key, value in data["risky_map"].items():
                     canonical_map[key] = LicenseObject(**value)
 
                 self._merged_data = _LicenseMap(canonical_map, risky_map)
