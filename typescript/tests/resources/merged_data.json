@@ -1,6 +1,14 @@
 {
-    "BSD Zero Clause": {
-        "canonical": "0BSD",
-        "src": "spdx"
+    "stable_map": {
+        "BSD Zero Clause": {
+            "canonical": "0BSD",
+            "src": "spdx"
+        }
+    },
+    "risky_map": {
+        "BSD Zero Clause Risky": {
+            "canonical": "0BSD",
+            "src": "spdx"
+        }
     }
 }

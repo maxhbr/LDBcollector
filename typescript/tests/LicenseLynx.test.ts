@@ -5,12 +5,13 @@
 import {map} from "../index";
 
 jest.mock('../resources/merged_data.json', () => {
-  return require('./resources/merged_data.json');
+    return require('./resources/merged_data.json');
 });
 
 describe('LicenseLynx tests', () => {
     beforeAll(() => {
-        jest.spyOn(global.console, 'error').mockImplementation(() => {});
+        jest.spyOn(global.console, 'error').mockImplementation(() => {
+        });
 
         // Mock process.cwd to point to the ./tests directory
         jest.spyOn(process, 'cwd').mockReturnValue(require('path').resolve(__dirname, './tests'));
@@ -32,7 +33,17 @@ describe('LicenseLynx tests', () => {
         });
     });
 
+    it('should return data when license exists in risky map', async () => {
+        return map("BSD Zero Clause Risky", true).then(licenseObject => {
+            expect(licenseObject).not.toBe(null);
+            expect(licenseObject!.canonical).toEqual('0BSD');
+            expect(licenseObject!.src).toEqual('spdx');
+        });
+    });
+
     it('should return reject error when license not found', async () => {
-        return expect(map('licenseNonExisting')).rejects.toEqual(new Error('error: License licenseNonExisting not found'));
+        await expect(map('licenseNonExisting')).rejects.toEqual(new Error('error: License licenseNonExisting not found'));
+        return expect(map('licenseNonExisting', true)).rejects.toEqual(new Error('error: License licenseNonExisting not found'));
+
     });
 });

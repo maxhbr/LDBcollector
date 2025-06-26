@@ -9,8 +9,13 @@ export interface LicenseObject {
     readonly src: string;
 }
 
+export interface LicenseMap {
+    [licenseName: string]: LicenseObject;
+}
+
 interface LicenseRepository {
-    [key: string]: LicenseObject
+    stable_map: LicenseMap;
+    risky_map: LicenseMap;
 }
 
 
@@ -18,21 +23,27 @@ interface LicenseRepository {
  * Maps the given license name to its corresponding data.
  *
  * @param licenseName the name of the license to map
+ * @param risky enable risky mappings
  * @returns LicenseObject as promise or error if not found
  */
-export const map = function (licenseName: string) {
+export const map = function (licenseName: string, risky: boolean = false) {
     return new Promise<LicenseObject>((resolve, reject) => {
         const licenses = mergedData as LicenseRepository;
-        const licenseData = licenses[licenseName];
+        let licenseData = licenses.stable_map[licenseName];
+
+        if (!licenseData && risky) {
+            licenseData = licenses.risky_map[licenseName];
+        }
 
         if (licenseData) {
             const canonical = licenseData.canonical;
             const src = licenseData.src;
 
             if (canonical && src) {
-                resolve({canonical, src});
+                resolve(Object.freeze({canonical, src}));
             }
         }
+
         reject(new Error('error: License ' + licenseName + ' not found'));
     })
 }
