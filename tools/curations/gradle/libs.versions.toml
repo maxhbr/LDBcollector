@@ -1,6 +1,0 @@
-[versions]
-ort = "61.3.0"
-
-[libraries]
-ortModel = { module = "org.ossreviewtoolkit:model", version.ref = "ort" }
-ortNuGetPackageManager = { module = "org.ossreviewtoolkit.plugins.packagemanagers:nuget-package-manager", version.ref = "ort" }

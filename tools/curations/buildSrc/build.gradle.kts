@@ -7,8 +7,8 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.ortModel)
-    implementation(libs.ortNuGetPackageManager)
+    implementation(ortLibs.model)
+    implementation(ortLibs.ortPlugins.packageManagers.nuget)
 
     // Leave out the versions so that the same versions as in ORT are used.
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
