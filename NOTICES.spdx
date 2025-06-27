@@ -1,0 +1,767 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+
+##-------------------------
+## Document Information
+##-------------------------
+
+DocumentNamespace: http://debian/repo/SPDX2TV_LicenseDb-main-backend.zip.spdx
+DocumentName: /srv/srv/fotransfer/repository/report
+SPDXID: SPDXRef-DOCUMENT
+
+##-------------------------
+## Creation Information
+##-------------------------
+
+Creator: Tool: spdx2
+Creator: Person: fossy (y)
+CreatorComment: <text>
+This document was created using license information and a generator from Fossology.
+</text>
+Created: 2025-06-26T11:23:23Z
+LicenseListVersion: 3.22
+
+##-------------------------
+## Package Information
+##-------------------------
+
+
+PackageName: LicenseDb-main-backend.zip
+PackageFileName: LicenseDb-main-backend.zip
+SPDXID: SPDXRef-upload71599
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 4.5
+FilesAnalyzed: true
+PackageVerificationCode: 7074c6caa4b4f6b34ea5d19fec7b3b6b7e57694b
+PackageChecksum: SHA1: a78e1ce7f5bab930acd6faade6949667af3fd41a
+PackageChecksum: SHA256: c0633dde86b1bd491d11d720df17a450ff552585d0f3c052feb1660d370a21de
+PackageChecksum: MD5: 9d44318f00e558b3222cdf24e8c684d6
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageLicenseComments: <text> licenseInfoInFile determined by Scanners:
+ - nomos ("4.5.0.10-ng".66fe38)
+ - monk ("4.5.0.10-ng".66fe38)
+ - ojo ("4.5.0.10-ng".66fe38) </text>
+PackageLicenseInfoFromFiles: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageComment: <text> straight GPL-2.0 with a view MIT </text>
+PackageAttributionText: <text> The source code of the covered code, including build and install scripts, must be made available in any of the following way:  
+ * together with your product, or 
+ * by including a written offer in your ReadMe_OSS to deliver on physical media; 
+ * when you distribute the binaries solely on a website, it is sufficient to make the source code available through the same website.
+
+
+Covered code means the source code of the package including the source code developed by [Your Legal Entity], which is affected by the effective copyleft effect.
+
+In case of GPL-3.0 / LGPL-3.0 / AGPL-3.0 it is allowed to provide a written offer in your ReadMe_OSS where the covered source code, including build and install scripts, can be downloaded from a website.
+
+In case of CPL-1.0, EPL-1.0, EPL-2.0, MPL-1.1, MPL-2.0, SPL-1.0, RHeCos-1.1 it is allowed to make the covered source code available on a website. The licenses do not require that the build and installation scripts have to be made available. Thus they can be provided but it is not a must.
+
+In case of Ecos-1.0 and Cygnus-eCos-1.0 the source code of the modifications must be made available to the initial developer too.
+
+In case of OSL-3.0 you must make the source code of OSL covered code, available either: 
+ 1. together witch each copy of the work or 
+ 2. in an online repository
+[Your Legal Entity] will loose all rights (i.e. copyright and patent rights) granted to [Your Legal Entity] source code covered by this license if [Your Legal Entity] makes legal claims regarding [Your Legal Entity] patents in the OSS code covered by this license
+If you distribute your product on or accompanied by data carriers (e.g. DVDs), include the following text on the data carriers, otherwise include a leaflet with same content:
+“Copyright © [Your Legal Entity] , [YYYY], and licensors. All rights reserved.
+Portions include Open Source Software. See ReadMe_OSS for details.”
+
+E.g. [Your Legal Entity] = Siemens AG
+You must contact your Patent Strategy Manager to check the patentleft effect
+In case of AGPL-1.0, AGPL-3.0:
+* If the copyleft effect applies and if your Application supports interaction with users through a computer network, you must provide all users with online access to the source code of your Application free-of-charge
+
+
+In case of GPL-2.0, GPL-3.0:
+* linking statically or dynamically to GPL covered code typically triggers the copyleft effect and causes your own code to become GPL’ed too
+* code changes and additions made to the GPL covered code must be distributed under GPL
+* derivative works of the program has to be licensed under the same license
+
+In case of LGPL-2.0, LGPL-2.1, LGPL-3.0:
+* linking statically requires you to provide the complete machine-readable application code, as object code and/or source code, so that the user can modify the library and then relink to produce a modified executable containing the modified library
+* code changes and additions made to the LGPL covered code must be distributed under LGPL
+
+In case of EPL-1.0 or CPL-1.0 or IPL-1.0:
+* code changes and additions made to the EPL-1.0/EPL-2.0/CPL-1.0/IPL-1.0 covered code must be distributed under EPL-1.0/EPL-2.0/CPL-1.0/IPL-1.0. 
+
+In case of OSL-3.0:
+Derivative Works have to be licensed under OSL-3.0.
+
+In case of QPL-1.0:
+All modifications must be licensed under QPL-1.0
+Any other software linking to software under QPL-1.0 must be distributed in Source code form free of charge including the right to modify and re-distribute such other software.
+
+In any case contact your 3rd Party Software Manager to check the copyleft effect
+do not modify files licensed under this license
+
+For Eclipse-Foundation-Specification-License-v1.0:
+No right to create modifications or derivatives of Eclipse Foundation documents is granted pursuant to this license, except anyone may prepare and distribute derivative works and portions of this document in software that implements the specification, in supporting materials accompanying such software, and in documentation of such software. The publication of derivative works of this document for use as a technical specification is expressly prohibited.
+
+For EFTCKL-1.1:
+You are not allowed to modify the TCK.
+
+For JLF-GR-License:
+You may not modify the graphics, and must use them true to color and unmodified in every way.
+
+For Unicode-TOU:
+as long as not explictily allowed you are not permitted to modifiy any file licensed under Unicode-TOU
+
+For Lucida-Font-License:
+If you need to modify material licensed under this license. You need to consult your 3rd Part Software Manager
+
+For OFL-1.0 and OFL-1.1:
+Do not modify the font, keep the font binaries separate from Siemens Code (do not combine/merge the font binaries with Siemens Code).
+
+For Permission-Notice-Documentation-OASISLicense:
+The document that is licensed under the license itself does not be modified in any way, such as by removing the copyright notice or references to OASIS, except as needed for the purpose of developing OASIS specifications, in which case the procedures for copyrights defined in the OASIS Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.
+
+For Adobe-Glyph:
+No modification, editing or other alteration of the document licensed under the license is allowed. </text>
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-upload71599
+
+
+##--------------------------
+## File Information
+##--------------------------
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/LICENSES/MIT.txt
+SPDXID: SPDXRef-item295911153
+FileChecksum: SHA1: 39e012eae09ccca06bf6ce1d7778a48d8cc3b3af
+FileChecksum: SHA256: d78930d559f68ee1b8d5c69df99c42a223921b1953e9bb59d7ef1785acb81fb3
+FileChecksum: MD5: e493ecd60301f33264b0ead26660e2c9
+LicenseConcluded: LicenseRef-fossology-MIT-29d2803fe5a4f734ff162d165aea47a5
+
+LicenseInfoInFile: MIT
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/LICENSES/GPL-2.0-only.txt
+SPDXID: SPDXRef-item295911152
+FileChecksum: SHA1: 4cc77b90af91e615a64ae04893fdffa7939db84c
+FileChecksum: SHA256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643
+FileChecksum: MD5: b234ee4d69f5fce4486a80fdaf4a4263
+LicenseConcluded: License-of-GNU-Licenses
+
+LicenseInfoInFile: GPL-2.0-or-later
+
+LicenseInfoInFile: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0+-with-libtool-exception
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.github/workflows/codeql.yml
+SPDXID: SPDXRef-item295911130
+FileChecksum: SHA1: ffa278a2c2b1c2610aee40b83921f2b5a473e2ea
+FileChecksum: SHA256: e8ef1bdeac34e73defc575c1084f0788031675df33847ce0f742a529ab36e796
+FileChecksum: MD5: 79f91e39e56dd90a27f6c24cae72f532
+LicenseConcluded: MIT
+
+LicenseInfoInFile: MIT
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/README.md
+SPDXID: SPDXRef-item295911150
+FileChecksum: SHA1: 7f212d0324bdda7b71e9220c7ffd874366368fae
+FileChecksum: SHA256: 76b353283e88713745f427c50fa695ec908526a8ab40698566036769ad936975
+FileChecksum: MD5: 29c60f4d58490d209ff3e4a7c1b29343
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+
+LicenseInfoInFile: JSON
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.reuse/dep5
+SPDXID: SPDXRef-item295911144
+FileChecksum: SHA1: 6fd201f6df8a2c4e7652114466bccb7bb422dcca
+FileChecksum: SHA256: 58623690e8c1d8aa8e3e3f8373432e9cdd14a393d3d69bd6f1a2119672bcc4e6
+FileChecksum: MD5: b502b43125dffa850ea4a278c6f9b3f2
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> Copyright: Fossology contributors </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/utils/util.go
+SPDXID: SPDXRef-item295911163
+FileChecksum: SHA1: 5378cdd7a052de30815d3099834ada4afb8a056b
+FileChecksum: SHA256: fdb4e2687337576545e75b8eceb3d25c13891ee10228b3cde310fab245ec2dd2
+FileChecksum: MD5: e295761180a49cac5866f6390ea7ba46
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+
+LicenseInfoInFile: GPL-3.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/models/types.go
+SPDXID: SPDXRef-item295911160
+FileChecksum: SHA1: 2c0023bd44498e6a5955745e32470600c00c0f89
+FileChecksum: SHA256: f41dd83abec42d00f1cb0590af35a7c95f169cf51d0ecb8ec05d92272af3d5d9
+FileChecksum: MD5: 214549a8ed9e31493729ad172c363271
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: MIT
+
+LicenseInfoInFile: GPL-2.0-only
+
+LicenseInfoInFile: GPL-3.0-only
+
+LicenseInfoInFile: JSON
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/licenses.go
+SPDXID: SPDXRef-item295911169
+FileChecksum: SHA1: 01215ae6e5e7e29623b0d7e7ff10b112973fa08d
+FileChecksum: SHA256: 6fb230b51539003f58a2b4e0d8b22335552715b3bcdc05e320e5b8ca778ea3e3
+FileChecksum: MD5: 0dfa2c8cdffbfb8630742f2682ab73bb
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+
+LicenseInfoInFile: GPL-3.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/api_test.go
+SPDXID: SPDXRef-item295911165
+FileChecksum: SHA1: 273f3ebe60e053772d8c4c2fd5a2bba1f2e28dd6
+FileChecksum: SHA256: 04de303df0cef93f7c93397bd35a618cf9a5d78852533d3566ec71ef3da32f9d
+FileChecksum: MD5: c8bda005f55435bf7ab8143294f38769
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: MIT
+
+LicenseInfoInFile: GPL-2.0-only
+
+LicenseInfoInFile: PostgreSQL
+
+LicenseInfoInFile: BSD
+
+LicenseInfoInFile: Autoconf-exception-2.0
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.env.example
+SPDXID: SPDXRef-item295911180
+FileChecksum: SHA1: f72fcfb6afd03f829f0d249f34ff4737131b34b1
+FileChecksum: SHA256: 829c56c8ee1de38aee4c22cb85c009ce265d509fb2e16e814362910eba08cd42
+FileChecksum: MD5: 8e141151969566e03ef34cff344e9f66
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/db/db.go
+SPDXID: SPDXRef-item295911176
+FileChecksum: SHA1: 34bc1483eb6ba690b17d6dc93d82cd54fe463bf8
+FileChecksum: SHA256: 2dfe123c508fbcc847371c54825c014fec85c27ad4cf7f8a3fbe09b68bf3574b
+FileChecksum: MD5: 3cea1f67082f301a6258a2f41b8cfdf2
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/docker-compose.yml
+SPDXID: SPDXRef-item295911181
+FileChecksum: SHA1: e12e60f7593d9be331563b68b40842e8ba68f1f4
+FileChecksum: SHA256: 49c6ea523f40a5d971b99c787836de72dc22e7e0d51eee095292ec5222981acd
+FileChecksum: MD5: ad03fe4951a9f459809cee476f8003d7
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>  </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/middleware/middleware.go
+SPDXID: SPDXRef-item295911178
+FileChecksum: SHA1: 93e38abb24eb84a3d788934cc45c5cb8560b2f03
+FileChecksum: SHA256: 91579512b06c4a3e959e221a7a126891b8a8f1b1063ccaf1e9a05c8d5b409b23
+FileChecksum: MD5: 0ab51181354cf8d1797e125b29889f39
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2024 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/dashboard.go
+SPDXID: SPDXRef-item295911174
+FileChecksum: SHA1: e7aa832f795c1bff500b51872474fab13a301f73
+FileChecksum: SHA256: c2b40d1f03cbe87f53836b9fca437bab449d0f706e1864b09b70b0f174caf4bf
+FileChecksum: MD5: 26383c17c1da50b61f2b7dac7a260091
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2025 Siemens AG SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/obligations.go
+SPDXID: SPDXRef-item295911173
+FileChecksum: SHA1: 9f77c55485b815db030e4a7091a629147f4f16e9
+FileChecksum: SHA256: 544bb4cb63e562aaf060fe44b444dd98a4c738886e5ff6967535ab856cd18814
+FileChecksum: MD5: 1e82dfc47923121a0c371aee9e826c08
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/obligationTypes.go
+SPDXID: SPDXRef-item295911171
+FileChecksum: SHA1: 4a3c1a3dd711c1a02675eebe08da7a82d80c8622
+FileChecksum: SHA256: 25f584306ba01ad1b73a9b8cc10caa1896b98e0ee597ab0e6eb52cbdbf121414
+FileChecksum: MD5: c94dcd23eda505da68b900e4ce37d7ef
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Siemens AG SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/obligationClassifications.go
+SPDXID: SPDXRef-item295911170
+FileChecksum: SHA1: 323fd8fe0128882d0b55b58f97b833a120034ef5
+FileChecksum: SHA256: 938b790e05a85ac1992798626db6d553649200092d4106fc9855025e0424b594
+FileChecksum: MD5: 90dc7f3bbf9b923f3d641be48f8b0021
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Siemens AG SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/api.go
+SPDXID: SPDXRef-item295911168
+FileChecksum: SHA1: b5297702f6fc3345eea590be974f69ebcda5bead
+FileChecksum: SHA256: 6fe442873df65a114dc6851f09b7a10c8b5ab467f46c30a164f0ed24437dac6a
+FileChecksum: MD5: 2024fa7d734a8ce6c2037ac38c2252dc
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/audit.go
+SPDXID: SPDXRef-item295911167
+FileChecksum: SHA1: a681731b75c852c20c00456650e3b17bb631691f
+FileChecksum: SHA256: 2cf872df12ee774d09073769fa191c0eca194340ab31abb798e5911d171914a5
+FileChecksum: MD5: 7d45b08ddeee749855b7c0515ce4a775
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/obligationmap.go
+SPDXID: SPDXRef-item295911166
+FileChecksum: SHA1: 163916f8225a6774b17a272a70dbb61cfde7e0e4
+FileChecksum: SHA256: a9f3396b87b03f3d7f7877a50719e07cff0b8780c3ce3c54d980c29cd392c80f
+FileChecksum: MD5: 57f0398e2ee3e50ef7e42dba72cb5bce
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/auth/auth.go
+SPDXID: SPDXRef-item295911157
+FileChecksum: SHA1: 542a112499779bcd36f8ef2dcf93e10663a87a37
+FileChecksum: SHA256: f90fbcfc6a2d690a5a30303ad1b325be6a0d6c463e10ffc53f7cd5716217ddd0
+FileChecksum: MD5: db8244fdddbfc6644da79583fcce5640
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+2024 Dearsh Oberoi <oberoidearsh@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/Dockerfile
+SPDXID: SPDXRef-item295911142
+FileChecksum: SHA1: 4061d2872d3a4fa03dab2b7145125de001709742
+FileChecksum: SHA256: 3266884a624facfda2a52111d011efc6dfd86cf82518082055be4c1a76eedf24
+FileChecksum: MD5: c9cf6c2fc43dcf4b9bed7c6e0f70bac3
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>  </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/entrypoint.sh
+SPDXID: SPDXRef-item295911145
+FileChecksum: SHA1: e490156a17c5fbd148e6e0e8839b3eb0ccb7755d
+FileChecksum: SHA256: ece53cdc403a61117c457a28df43b90471065a1c26b2f8cca424e5791bdf1d13
+FileChecksum: MD5: 69bc37e7575d92ffeb0a7a94b67148bc
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/cmd/laas/main.go
+SPDXID: SPDXRef-item295911141
+FileChecksum: SHA1: 0c03afcd9bfed3027f746a9df11c8d7a33f715bf
+FileChecksum: SHA256: 3f9a4a3dc10e4d8ebd8f965961d13e2c7b0c8a117996b3951f0a80ec85707f58
+FileChecksum: MD5: 87ddd68d65a4d9744bf13de36c06bbd5
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com>
+2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.github/workflows/go.yml
+SPDXID: SPDXRef-item295911129
+FileChecksum: SHA1: ea7de2103095890d611360ce38adcac83ec0e6c3
+FileChecksum: SHA256: 3d4ba25a18865bfcbc911969f41224fd608393044fdcb674396cbf019742e5e7
+FileChecksum: MD5: 9e2c8861e6d759bb42c0406a5729590a
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.github/workflows/api-swagger.yml
+SPDXID: SPDXRef-item295911127
+FileChecksum: SHA1: 49bc2564c0512e66bce4b22e9ba474a47a85e6ea
+FileChecksum: SHA256: 7355195f3aaa66b2f9a0eedebab250f224f56e1e8bc81679e52dc188d8827f02
+FileChecksum: MD5: db25f7b4d9e792f7b9c4a26f047334f6
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/external_ref_fields.example.yaml
+SPDXID: SPDXRef-item295911179
+FileChecksum: SHA1: 441709730d97c3caec3bca900f300b0359c36200
+FileChecksum: SHA256: 142f4747f0c13da743979df9ef55048064a627f3555c7a2f7aabf5153a861173
+FileChecksum: MD5: fdf9993688e9d7d50ff6bf64268b0e3d
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.github/workflows/golangci.yml
+SPDXID: SPDXRef-item295911125
+FileChecksum: SHA1: c862d6ecf119f3eae547ff7af4ba58f365122978
+FileChecksum: SHA256: 2cdbc5c7dcffc3352066620d4afc171221d73c0d7c93b139128a65f5863d8609
+FileChecksum: MD5: 7e49ebc0410473b1d13ad170a1528da2
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Divij Sharma <divijs75@gmail.com>  </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/cmd/laas/gen.go
+SPDXID: SPDXRef-item295911140
+FileChecksum: SHA1: b5b5bc72e2f1271e211dfbe801d56fe3bf1bc024
+FileChecksum: SHA256: 74163c5164d04d0a1f22e8dafc3946379eb225cb554b41cdd0a821a22717f87c
+FileChecksum: MD5: 98e56e63c9353cb816552914f25384a2
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Dearsh Oberoi <oberoidearsh@gmail.com>
+2024 Siemens AG </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.gitignore
+SPDXID: SPDXRef-item295911132
+FileChecksum: SHA1: 2fd0f7ac1b3f71ccae213cee836baa024f46c086
+FileChecksum: SHA256: f65de39bc858a67658f3ae03025ab845adff21e5644943bdc9ec78a8861d18b4
+FileChecksum: MD5: 9b742f867c3aa80a13b1a3073f31c730
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/cmd/laas/gen_external_ref_schema.go
+SPDXID: SPDXRef-item295911135
+FileChecksum: SHA1: 9954d7339fef741da50d0b8c1516639dd13dd0c4
+FileChecksum: SHA256: b7032a9437527824ccadca83b67ca2fcf6a1d9ccdaacf88b9442d3d7386fa015
+FileChecksum: MD5: 6fa16c447f7ecbbf6e94b16e164d70ce
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Dearsh Oberoi <oberoidearsh@gmail.com>
+2024 Siemens AG </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.github/pull_request_template.md
+SPDXID: SPDXRef-item295911131
+FileChecksum: SHA1: cbf2bacd1d82403d6d395b0b7113e3ff609d06ae
+FileChecksum: SHA256: 218c45c7dbac802ff19da9c7ffc2419e2cdc5c3d863ab2e9ee6467aad59e62d9
+FileChecksum: MD5: e574da810194b0a7993a7c470943bfae
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Avinal Kumar <avinal.xlvii@gmail.com>  </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.github/workflows/docker-build-push.yml
+SPDXID: SPDXRef-item295911128
+FileChecksum: SHA1: 34f29f64acc56b1330e02743f995d16bf7fcc74e
+FileChecksum: SHA256: 723a0f22f37b0ae9761d129d0dab4b4fb2246ced156b269bd2d38a70c0ce7423
+FileChecksum: MD5: 90df5c5e090eb2b13ada338a46d03f13
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2024 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/.github/workflows/reuse-lint.yml
+SPDXID: SPDXRef-item295911126
+FileChecksum: SHA1: 805a41b7cce51160700886135f5eeb82c9f5dff9
+FileChecksum: SHA256: e24faf73a82fa00bed0ab6f1158ca17830cd6b569865d0f22cf0ba6c0713921d
+FileChecksum: MD5: 9102dad4eadce8a19058bb7c67bb8a15
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Siemens AG SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/api/doc.go
+SPDXID: SPDXRef-item295911172
+FileChecksum: SHA1: 3fdda946d456ff21db346e5faf9aedaeaf7fca49
+FileChecksum: SHA256: fa459a7ef66814d8057f7406b960923ab44cf18e12575198a515ff7ac06ce295
+FileChecksum: MD5: 6bbe418f37481a0df188d2fb9026cfda
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/models/doc.go
+SPDXID: SPDXRef-item295911161
+FileChecksum: SHA1: 6c725d430556c1f4f276eaf85fdfdd18cd6b7783
+FileChecksum: SHA256: ac04927e5e51410b3e8afa406bc60feb9e8db11cb7c8da80154fc34b7fdd69cd
+FileChecksum: MD5: 7e9e432a666c6015747df4c3772f16c3
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/pkg/auth/doc.go
+SPDXID: SPDXRef-item295911158
+FileChecksum: SHA1: dca7e1eb5a2a44f55a103fa80f4d4c39952e77c5
+FileChecksum: SHA256: 2dfe7c738e6351efba2ccbe4e548f9524178735fab707af79364686e4cab47d6
+FileChecksum: MD5: a87820900880c749aad04e82528d38ba
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/docs/assets/licensedb_erd.png.license
+SPDXID: SPDXRef-item295911148
+FileChecksum: SHA1: f38a4ed130e0e89f1c5b6ba2e61ccfd604ee95f1
+FileChecksum: SHA256: e324a3117acec90f063c081fe115102173d1b19054ab34ffd9fa248a02f5d4e9
+FileChecksum: MD5: d9b3ccd607b2cf5b8fabed2faf14dde0
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/go.sum.license
+SPDXID: SPDXRef-item295911182
+FileChecksum: SHA1: 515e5f8d7f94b0aec45f90db4159a633bac303c3
+FileChecksum: SHA256: cf101355352c773425c617f48b806fe85cde3608da7b8461cd3acf4eaaf7bd37
+FileChecksum: MD5: 9022ed6a8cae6447854be277e8b4c317
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/go.mod.license
+SPDXID: SPDXRef-item295911122
+FileChecksum: SHA1: 515e5f8d7f94b0aec45f90db4159a633bac303c3
+FileChecksum: SHA256: cf101355352c773425c617f48b806fe85cde3608da7b8461cd3acf4eaaf7bd37
+FileChecksum: MD5: 9022ed6a8cae6447854be277e8b4c317
+LicenseConcluded: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0-only
+FileCopyrightText: <text> 2023 Kavya Shukla <kavyuushukla@gmail.com> </text>
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/LICENSE
+SPDXID: SPDXRef-item295911121
+FileChecksum: SHA1: 4cc77b90af91e615a64ae04893fdffa7939db84c
+FileChecksum: SHA256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643
+FileChecksum: MD5: b234ee4d69f5fce4486a80fdaf4a4263
+LicenseConcluded: NOASSERTION
+
+LicenseInfoInFile: GPL-2.0-or-later
+
+LicenseInfoInFile: GPL-2.0-only
+
+LicenseInfoInFile: GPL-2.0+-with-libtool-exception
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/cmd/laas/docs/swagger.yaml
+SPDXID: SPDXRef-item295911137
+FileChecksum: SHA1: 32bc9943d2f209bd503c56e6d4e112cc0c3246d8
+FileChecksum: SHA256: 5626f79e28ea1b2cd32f1ffbe5db88c9c130cb00c30c566fcf2c8b70d82fcfb5
+FileChecksum: MD5: 957880e020769af894d0a790d13c2436
+LicenseConcluded: NOASSERTION
+
+LicenseInfoInFile: MIT
+
+LicenseInfoInFile: GPL-3.0-only
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/cmd/laas/docs/swagger.json
+SPDXID: SPDXRef-item295911138
+FileChecksum: SHA1: 974d73696e3835ec75a4db21b7ca39c04f991ce3
+FileChecksum: SHA256: 26a2a6c4c02e535e7f6e20a94fce027135b716238679aecfa4c2672fa1c1bf56
+FileChecksum: MD5: 4d0dd56ba50c07c2c7ba322e893c8204
+LicenseConcluded: NOASSERTION
+
+LicenseInfoInFile: MIT
+
+LicenseInfoInFile: GPL-3.0-only
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/cmd/laas/docs/docs.go
+SPDXID: SPDXRef-item295911139
+FileChecksum: SHA1: d8ca041f43c50e80e73176a7af77a247944953d2
+FileChecksum: SHA256: d3732d81e66f99f38aa77469f7edaeda370d354a363d4f1226b4ae25e20c1534
+FileChecksum: MD5: 1d96dda40203f7d71cad5e06e12b5f8e
+LicenseConcluded: NOASSERTION
+
+LicenseInfoInFile: MIT
+
+LicenseInfoInFile: GPL-3.0-only
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/docs/assets/licensedb_erd.png
+SPDXID: SPDXRef-item295911149
+FileChecksum: SHA1: bfa6d4a736230f2c85d58ebc76bd77705f3de78f
+FileChecksum: SHA256: cea5e249aff83c6977c72d8d6de98a5dd92d5303af7a92939facdffc8d2a7703
+FileChecksum: MD5: ee417a763bf0b8228c5bcd45d89da929
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/go.sum
+SPDXID: SPDXRef-item295911154
+FileChecksum: SHA1: 142608960e77f65041156175e92b733c12fac9dc
+FileChecksum: SHA256: 374d2d435649e3bb156f143ce655fc3f5d3d47224a94cdff7f7d3758b7d32610
+FileChecksum: MD5: 8f0fd07591397976f5cdc70d1451ebc4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+##File
+
+FileName: LicenseDb-main-backend.zip/LicenseDb-main/go.mod
+SPDXID: SPDXRef-item295911183
+FileChecksum: SHA1: 1142994bed390ccffe81217507bee17117b1d3a5
+FileChecksum: SHA256: 2821e1426dc472d5cbb8ed9d17a052550a6862cb037b7a05c8179a990724c4ba
+FileChecksum: MD5: a430c96a4f18a03eb3cbe189b1f56781
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+
+
+##-------------------------
+## License Information
+##-------------------------
+
+  
+LicenseID: LicenseRef-fossology-MIT-29d2803fe5a4f734ff162d165aea47a5
+LicenseName: MIT License
+ExtractedText: <text> MIT License
+
+Copyright (c) 2020 GitHub
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. THIS LICENSE DOES NOT GRANT YOU RIGHTS TO USE ANY CONTRIBUTORS'
+NAME, LOGO, OR TRADEMARKS. </text>
+
