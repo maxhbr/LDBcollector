@@ -110,6 +110,8 @@
       "BSD-3 clause license",
       "BSD-3-Clause",
       "bsd-c3",
-      "modified bsd license"
+      "modified bsd license",
+      "3-clause bsd license",
+      "bsd-3"
     ]
 }
