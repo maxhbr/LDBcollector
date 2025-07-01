@@ -49,27 +49,24 @@ from cube.views.mixins import (
 )
 
 
-class ReleaseValidationStep1View(
+class ReleaseValidationStepBaseView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
+    permission_required = "cube.view_release"
+    model = Release
+    queryset = Release.objects.prefetch_related(
+        "usage_set",
+        "usage_set__version",
+        "usage_set__version__component",
+    )
+
+
+class ReleaseValidationStep1View(ReleaseValidationStepBaseView):
     """
     step 1 : checks that license metadata are present and correct
     """
 
-    model = Release
     template_name = "cube/release_validation_1.html"
-    permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-            )
-        )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -80,27 +77,12 @@ class ReleaseValidationStep1View(
         }
 
 
-class ReleaseValidationStep2View(
-    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
-):
+class ReleaseValidationStep2View(ReleaseValidationStepBaseView):
     """
     step 2 : checks that no licenses expression is ambiguous
     """
 
-    model = Release
     template_name = "cube/release_validation_2.html"
-    permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-            )
-        )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -111,27 +93,12 @@ class ReleaseValidationStep2View(
         }
 
 
-class ReleaseValidationStep3View(
-    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
-):
+class ReleaseValidationStep3View(ReleaseValidationStepBaseView):
     """
     step 3 : ensure all scopes have a defined exploitation
     """
 
-    model = Release
     template_name = "cube/release_validation_3.html"
-    permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-            )
-        )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -142,27 +109,12 @@ class ReleaseValidationStep3View(
         }
 
 
-class ReleaseValidationStep4View(
-    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
-):
+class ReleaseValidationStep4View(ReleaseValidationStepBaseView):
     """
     step 4 : resolves choices in case of multi-licenses
     """
 
-    model = Release
     template_name = "cube/release_validation_4.html"
-    permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-            )
-        )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -173,27 +125,12 @@ class ReleaseValidationStep4View(
         }
 
 
-class ReleaseValidationStep5View(
-    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
-):
+class ReleaseValidationStep5View(ReleaseValidationStepBaseView):
     """
     step 5 : checks that chosen licenses are compatible with policy and derogs
     """
 
-    model = Release
     template_name = "cube/release_validation_5.html"
-    permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-            )
-        )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -204,27 +141,12 @@ class ReleaseValidationStep5View(
         }
 
 
-class ReleaseValidationStep6View(
-    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
-):
+class ReleaseValidationStep6View(ReleaseValidationStepBaseView):
     """
     step 6 : checks that licenses are compatible with release license
     """
 
-    model = Release
     template_name = "cube/release_validation_6.html"
-    permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-            )
-        )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
