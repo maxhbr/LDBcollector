@@ -26,18 +26,18 @@ def test_read_data(data_dir):
     data = read_data(str(data_dir))
     print(data)
     assert len(data) == 2
-    assert len(data["canonical_list"]) == 6
-    assert len(data["risky_list"]) == 1
+    assert len(data["stable_map"]) == 6
+    assert len(data["risky_map"]) == 1
 
-    assert "license1" in data["canonical_list"]
-    assert "lic1" in data["canonical_list"]
-    assert "lic1_custom" in data["canonical_list"]
+    assert "license1" in data["stable_map"]
+    assert "lic1" in data["stable_map"]
+    assert "lic1_custom" in data["stable_map"]
 
-    assert "license2" in data["canonical_list"]
-    assert "lic2" in data["canonical_list"]
-    assert "lic2_alt" in data["canonical_list"]
+    assert "license2" in data["stable_map"]
+    assert "lic2" in data["stable_map"]
+    assert "lic2_alt" in data["stable_map"]
 
-    assert "lic1_risky" in data["risky_list"]
+    assert "lic1_risky" in data["risky_map"]
 
 
 def test_write_data(tmpdir):
@@ -111,7 +111,7 @@ def test_main_integration(temp_data_dir, temp_output_file, monkeypatch):
 
     # Expected alias mappings
     expected_output = {
-        "canonical_list": {
+        "stable_map": {
             "MIT": {
                 "canonical": "MIT",
                 "src": "spdx"
@@ -141,7 +141,7 @@ def test_main_integration(temp_data_dir, temp_output_file, monkeypatch):
                 "src": "spdx"
             },
         },
-        'risky_list': {
+        'risky_map': {
             "risky_gpl_3": {
                 "canonical": "GPL",
                 "src": "spdx"
