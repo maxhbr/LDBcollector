@@ -17,7 +17,8 @@ def reset_singleton(monkeypatch):
 
 
 def test_license_map_singleton():
-    mock_data = {"stable_map": {"MIT": {"canonical": "MIT License", "src": "spdx"}}, "risky_map": {}}
+    mock_data = {"stable_map": {"MIT": {"canonical": "MIT License", "src": "spdx"}},
+                 "risky_map": {"MIT2": {"canonical": "MIT License", "src": "spdx"}}}
 
     with patch('importlib.resources.files') as mock_resources_files:
         mock_file = MagicMock()
@@ -29,6 +30,11 @@ def test_license_map_singleton():
         instance2 = _LicenseMapSingleton()
 
         assert instance == instance2
+        assert instance.merged_data.risky_map.get("MIT2").canonical == "MIT License"
+        assert instance.merged_data.risky_map.get("MIT2").src == "spdx"
+
+        assert instance.merged_data.stable_map.get("MIT").canonical == "MIT License"
+        assert instance.merged_data.stable_map.get("MIT").src == "spdx"
 
 
 def test_map_with_existing_license():

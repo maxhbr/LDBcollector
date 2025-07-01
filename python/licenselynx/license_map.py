@@ -9,5 +9,5 @@ from licenselynx.license_object import LicenseObject
 
 @dataclass
 class _LicenseMap(object):
-    canonical_map: dict[str, LicenseObject]
+    stable_map: dict[str, LicenseObject]
     risky_map: dict[str, LicenseObject]

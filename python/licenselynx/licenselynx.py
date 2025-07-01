@@ -23,7 +23,7 @@ class LicenseLynx:
 
             instance = _LicenseMapSingleton()
 
-            license_object: Optional[LicenseObject] = instance.merged_data.canonical_map.get(license_name)
+            license_object: Optional[LicenseObject] = instance.merged_data.stable_map.get(license_name)
 
             if not license_object and risky:
                 license_object = instance.merged_data.risky_map.get(license_name)
