@@ -311,20 +311,17 @@ class UpdateLicenseCurationView(AbstractResetCorrectedLicenseView):
 
 
 # Step 2
-class ReleaseAndsValidationCreateView(AbstractCreateUsageConditionView):
+class ReleaseAndsValidationCreateView(
+    QuerySuccessUrlMixin, AbstractCreateUsageConditionView
+):
     model = LicenseCuration
     form_class = CreateAndsValidationForm
     permission_required = "cube.add_licensecuration"
 
-    def get_success_url(self):
-        success_url = self.request.GET.get("from", "")
-        if not success_url:
-            usage_id = self.kwargs["usage_pk"]
-            release_id = Usage.objects.get(pk=usage_id).release_id
-            success_url = reverse_lazy(
-                "cube:release_validation_step_2", args=[release_id]
-            )
-        return success_url
+    def get_default_success_url(self):
+        return reverse_lazy(
+            "cube:release_validation_step_2", args=[self.usage.release_id]
+        )
 
 
 class ReleaseAndsConfirmationView(PermissionRequiredMixin, TemplateView):
@@ -423,21 +420,18 @@ class ReleaseExploitationDeleteView(
 # Step 4
 
 
-class ReleaseLicenseChoiceCreateView(AbstractCreateUsageConditionView):
+class ReleaseLicenseChoiceCreateView(
+    QuerySuccessUrlMixin, AbstractCreateUsageConditionView
+):
     model = LicenseChoice
     template_name = "cube/release_licensechoice_create.html"
     form_class = CreateLicenseChoiceForm
     permission_required = "cube.add_licensechoice"
 
-    def get_success_url(self):
-        success_url = self.request.GET.get("from", "")
-        if not success_url:
-            usage_id = self.kwargs["usage_pk"]
-            release_id = Usage.objects.get(pk=usage_id).release_id
-            success_url = reverse_lazy(
-                "cube:release_validation_step_4", args=[release_id]
-            )
-        return success_url
+    def get_default_success_url(self):
+        return reverse_lazy(
+            "cube:release_validation_step_4", args=[self.usage.release_id]
+        )
 
 
 class ReleaseLicenseChoiceListView(
@@ -478,19 +472,14 @@ class ReleaseUpdateLicenseChoiceView(
 
 
 class ReleaseDerogationCreateView(
-    CreateLicenseRelatedMixin, AbstractCreateUsageConditionView
+    QuerySuccessUrlMixin, CreateLicenseRelatedMixin, AbstractCreateUsageConditionView
 ):
     model = Derogation
     form_class = CreateDerogationForm
     permission_required = "cube.add_derogation"
     template_name = "cube/release_derogation_create.html"
 
-    def get_success_url(self):
-        success_url = self.request.GET.get("from", "")
-        if not success_url:
-            usage_id = self.kwargs["usage_pk"]
-            release_id = Usage.objects.get(pk=usage_id).release_id
-            success_url = reverse_lazy(
-                "cube:release_validation_step_5", args=[release_id]
-            )
-        return success_url
+    def get_default_success_url(self):
+        return reverse_lazy(
+            "cube:release_validation_step_5", args=[self.usage.release_id]
+        )
