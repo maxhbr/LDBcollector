@@ -39,7 +39,6 @@ from cube.utils.release_validation import (
     update_validation_step_4,
     update_validation_step_5,
     update_validation_step_6,
-    propagate_choices,
 )
 from cube.utils.spdx import simplified
 from cube.views import CreateLicenseRelatedMixin
@@ -443,7 +442,7 @@ class ReleaseLicenseChoiceListView(
     permission_required = "cube.view_release"
 
     def get_queryset(self):
-        return propagate_choices(self.release)["resolved"]
+        return update_validation_step_4(self.release)["resolved"]
 
 
 @method_decorator(require_POST, "dispatch")

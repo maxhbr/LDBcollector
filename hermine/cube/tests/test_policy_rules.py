@@ -15,9 +15,9 @@ from cube.models import (
     Product,
 )
 from cube.utils.release_validation import (
-    apply_curations,
-    propagate_choices,
-    check_licenses_against_policy,
+    _apply_curations,
+    _propagate_choices,
+    _check_licenses_against_policy,
 )
 
 
@@ -32,7 +32,7 @@ class LicenseCurationTestCase(TestCase):
         self.release = Release.objects.get(id=1)
 
     def apply_curations(self):
-        apply_curations(self.release)
+        _apply_curations(self.release)
 
     def assert_curation_applied(self):
         self.assertEqual(
@@ -126,10 +126,10 @@ class LicenseChoiceTestCase(TestCase):
             expression_in="LicenseRef-FakeLicense OR AND LicenseRef-FakeLicense-Permissive",
             expression_out="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
         )
-        apply_curations(self.release)
+        _apply_curations(self.release)
 
     def propagate_choices(self):
-        propagate_choices(self.release)
+        _propagate_choices(self.release)
 
     def assert_choice_propagated(self):
         self.assertEqual(
@@ -224,15 +224,15 @@ class LicensePolicyTestCase(TestCase):
             expression_in="LicenseRef-FakeLicense OR AND LicenseRef-FakeLicense-Permissive",
             expression_out="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
         )
-        apply_curations(self.release)
+        _apply_curations(self.release)
         LicenseChoice.objects.create(
             expression_in="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
             expression_out="LicenseRef-FakeLicense-Permissive",
         )
-        propagate_choices(self.release)
+        _propagate_choices(self.release)
 
     def test_unknown(self):
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 2)  # LicenseRef-FakeLicense-Permissive
@@ -246,7 +246,7 @@ class LicensePolicyTestCase(TestCase):
         LicensePolicy.objects.filter(
             license__spdx_id="LicenseRef-FakeLicense-Permissive"
         ).update(allowed=LicensePolicy.ALLOWED_NEVER)
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 0)
@@ -260,7 +260,7 @@ class LicensePolicyTestCase(TestCase):
         LicensePolicy.objects.filter(
             license__spdx_id="LicenseRef-FakeLicense-Permissive"
         ).update(allowed=LicensePolicy.ALLOWED_ALWAYS)
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 0)
@@ -275,7 +275,7 @@ class LicensePolicyTestCase(TestCase):
             release=self.release,
             license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
         )
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 0)
@@ -289,7 +289,7 @@ class LicensePolicyTestCase(TestCase):
             version=self.release.usage_set.last().version,
             license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
         )
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(
@@ -305,7 +305,7 @@ class LicensePolicyTestCase(TestCase):
             component=self.release.usage_set.last().version.component,
             license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
         )
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 0)
@@ -322,7 +322,7 @@ class LicensePolicyTestCase(TestCase):
         LicensePolicy.objects.filter(
             license__spdx_id="LicenseRef-FakeLicense-Permissive"
         ).update(allowed=LicensePolicy.ALLOWED_NEVER)
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 0)
@@ -338,7 +338,7 @@ class LicensePolicyTestCase(TestCase):
             version_constraint=SimpleSpec(">=1.0.0"),
             license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
         )
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 0)
@@ -353,7 +353,7 @@ class LicensePolicyTestCase(TestCase):
             version_constraint=SimpleSpec(">=2.0.0"),
             license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
         )
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 1)
@@ -372,7 +372,7 @@ class LicensePolicyTestCase(TestCase):
             category=categories[0],
             license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
         )
-        never, context, unknown, lic, derogations = check_licenses_against_policy(
+        never, context, unknown, lic, derogations = _check_licenses_against_policy(
             self.release
         ).values()
         self.assertEqual(len(unknown), 0)
