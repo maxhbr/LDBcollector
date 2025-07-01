@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.68
+Version:        1.69
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,9 @@ make check-grammar
 
 
 %changelog
+* Tue Jul 01 2025 Miroslav Suchý <msuchy@redhat.com> 1.69-1
+- add BSD-3-Clause-No-Nuclear-License as not allowed
+
 * Tue Jun 03 2025 Miroslav Suchý <msuchy@redhat.com> 1.68-1
 - add CC-SA-1.0 as allowed-content
 - allow golang-x-perf to use CC-BY-4.0 for code as an exception
