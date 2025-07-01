@@ -2,7 +2,7 @@
     <rect width="100%" height="100%" fill="#1e1e1e"/>
 
     <text x="30" y="60" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">
-        Total Mappings: <tspan font-weight="bold">8931</tspan>
+        Total Mappings: <tspan font-weight="bold">8954</tspan>
     </text>
 
     <text x="30" y="100" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">
@@ -13,7 +13,7 @@
         Top mapped licenses:
     </text>
 
-    <text x="30" y="180" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-2.1-only: <tspan font-weight="bold">22</tspan></text><text x="30" y="210" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">Zlib: <tspan font-weight="bold">22</tspan></text><text x="30" y="240" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">OFL-1.1: <tspan font-weight="bold">21</tspan></text><text x="30" y="270" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">X11: <tspan font-weight="bold">20</tspan></text><text x="30" y="300" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">CC-BY-4.0: <tspan font-weight="bold">20</tspan></text>
+    <text x="30" y="180" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">LGPL-2.1-only: <tspan font-weight="bold">22</tspan></text><text x="30" y="210" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">MPL-2.0: <tspan font-weight="bold">22</tspan></text><text x="30" y="240" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">Zlib: <tspan font-weight="bold">22</tspan></text><text x="30" y="270" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">OFL-1.1: <tspan font-weight="bold">21</tspan></text><text x="30" y="300" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">X11: <tspan font-weight="bold">20</tspan></text>
     <text>
 
     </text>
