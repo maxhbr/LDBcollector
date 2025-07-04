@@ -19,6 +19,18 @@
         ],
         "osi": [
             "ISC License (ISC)"
+        ],
+        "pypi-classifiers": [
+            "License :: ISC License (ISCL)",
+            "OSI Approved :: ISC License (ISCL)",
+            "License :: OSI Approved :: ISC License",
+            "License :: ISC License",
+            "OSI Approved :: ISC License",
+            "License :: OSI Approved :: ISCL",
+            "License :: ISCL",
+            "OSI Approved :: ISCL",
+            "License :: OSI Approved :: ISC License (ISCL)",
+            "ISC License (ISCL)"
         ]
     },
     "src": "spdx",

@@ -11,6 +11,18 @@
         ],
         "osi": [
             "The MirOS Licence (MirOS)"
+        ],
+        "pypi-classifiers": [
+            "License :: MirOS License (MirOS)",
+            "OSI Approved :: MirOS License (MirOS)",
+            "License :: OSI Approved :: MirOS License",
+            "License :: MirOS License",
+            "OSI Approved :: MirOS License",
+            "License :: OSI Approved :: MirOS",
+            "License :: MirOS",
+            "OSI Approved :: MirOS",
+            "License :: OSI Approved :: MirOS License (MirOS)",
+            "MirOS License (MirOS)"
         ]
     },
     "src": "spdx",

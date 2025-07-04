@@ -29,6 +29,18 @@
         ],
         "osi": [
             "Mozilla Public License, Version 2.0"
+        ],
+        "pypi-classifiers": [
+            "License :: Mozilla Public License 2.0 (MPL 2.0)",
+            "OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+            "License :: OSI Approved :: Mozilla Public License 2.0",
+            "License :: Mozilla Public License 2.0",
+            "OSI Approved :: Mozilla Public License 2.0",
+            "License :: OSI Approved :: MPL 2.0",
+            "License :: MPL 2.0",
+            "OSI Approved :: MPL 2.0",
+            "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+            "Mozilla Public License 2.0 (MPL 2.0)"
         ]
     },
     "src": "spdx",

@@ -34,6 +34,17 @@
         "LGPLv2 only",
         "LGPLv2",
         "LGPLv2 (only)",
-        "LicenseRef-LGPL-2"
+        "LicenseRef-LGPL-2",
+        "License :: GNU Lesser General Public License v2 (LGPLv2)",
+        "OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+        "License :: OSI Approved :: GNU Lesser General Public License v2",
+        "License :: GNU Lesser General Public License v2",
+        "OSI Approved :: GNU Lesser General Public License v2",
+        "License :: OSI Approved :: LGPLv2",
+        "License :: LGPLv2",
+        "OSI Approved :: LGPLv2",
+        "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+        "GNU Lesser General Public License v2",
+        "GNU Lesser General Public License v2 (LGPLv2)"
     ]
 }

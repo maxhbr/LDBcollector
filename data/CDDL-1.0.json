@@ -25,6 +25,18 @@
         ],
         "osi": [
             "Common Development and Distribution License, Version 1.0"
+        ],
+        "pypi-classifiers": [
+            "License :: Common Development and Distribution License 1.0 (CDDL-1.0)",
+            "OSI Approved :: Common Development and Distribution License 1.0 (CDDL-1.0)",
+            "License :: OSI Approved :: Common Development and Distribution License 1.0",
+            "License :: Common Development and Distribution License 1.0",
+            "OSI Approved :: Common Development and Distribution License 1.0",
+            "License :: OSI Approved :: CDDL-1.0",
+            "License :: CDDL-1.0",
+            "OSI Approved :: CDDL-1.0",
+            "License :: OSI Approved :: Common Development and Distribution License 1.0 (CDDL-1.0)",
+            "Common Development and Distribution License 1.0 (CDDL-1.0)"
         ]
     },
     "src": "spdx",

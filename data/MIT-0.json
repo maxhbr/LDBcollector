@@ -9,6 +9,19 @@
             "LicenseRef-scancode-ekioh",
             "MIT-0-Clause",
             "mit-0"
+        ],
+        "pypi-classifiers": [
+            "License :: MIT No Attribution License (MIT-0)",
+            "OSI Approved :: MIT No Attribution License (MIT-0)",
+            "License :: OSI Approved :: MIT No Attribution License",
+            "License :: MIT No Attribution License",
+            "OSI Approved :: MIT No Attribution License",
+            "License :: OSI Approved :: MIT-0",
+            "License :: MIT-0",
+            "OSI Approved :: MIT-0",
+            "License :: OSI Approved :: MIT No Attribution License (MIT-0)",
+            "MIT No Attribution License",
+            "MIT No Attribution License (MIT-0)"
         ]
     },
     "src": "spdx",

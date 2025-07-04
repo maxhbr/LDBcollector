@@ -10,6 +10,11 @@
         ],
         "osi": [
             "The Open Group Test Suite License (OGTSL)"
+        ],
+        "pypi-classifiers": [
+            "License :: Open Group Test Suite License",
+            "OSI Approved :: Open Group Test Suite License",
+            "License :: OSI Approved :: Open Group Test Suite License"
         ]
     },
     "src": "spdx",

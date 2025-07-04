@@ -29,6 +29,11 @@
         ],
         "osi": [
             "The zlib/libpng License (Zlib)"
+        ],
+        "pypi-classifiers": [
+            "License :: zlib/libpng License",
+            "OSI Approved :: zlib/libpng License",
+            "License :: OSI Approved :: zlib/libpng License"
         ]
     },
     "src": "spdx",

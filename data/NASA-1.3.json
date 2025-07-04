@@ -12,6 +12,19 @@
         ],
         "osi": [
             "NASA Open Source Agreement, Version 1.3"
+        ],
+        "pypi-classifiers": [
+            "License :: NASA Open Source Agreement v1.3 (NASA-1.3)",
+            "OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)",
+            "License :: OSI Approved :: NASA Open Source Agreement v1.3",
+            "License :: NASA Open Source Agreement v1.3",
+            "OSI Approved :: NASA Open Source Agreement v1.3",
+            "License :: OSI Approved :: NASA-1.3",
+            "License :: NASA-1.3",
+            "OSI Approved :: NASA-1.3",
+            "License :: OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)",
+            "NASA Open Source Agreement v1.3",
+            "NASA Open Source Agreement v1.3 (NASA-1.3)"
         ]
     },
     "src": "spdx",

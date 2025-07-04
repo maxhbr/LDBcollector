@@ -4,8 +4,7 @@
         "spdx": [
             "Vovida Software License v1.0"
         ],
-        "custom": [
-        ],
+        "custom": [],
         "scancode-licensedb": [
             "Vovida Software License v. 1.0",
             "vsl-1.0",
@@ -13,6 +12,11 @@
         ],
         "osi": [
             "The Vovida Software License, Version 1.0"
+        ],
+        "pypi-classifiers": [
+            "License :: Vovida Software License 1.0",
+            "OSI Approved :: Vovida Software License 1.0",
+            "License :: OSI Approved :: Vovida Software License 1.0"
         ]
     },
     "src": "spdx",

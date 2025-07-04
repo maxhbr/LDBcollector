@@ -8,6 +8,18 @@
         "scancode-licensedb": [
             "cmu-uc",
             "CMU Style"
+        ],
+        "pypi-classifiers": [
+            "License :: CMU License (MIT-CMU)",
+            "OSI Approved :: CMU License (MIT-CMU)",
+            "License :: OSI Approved :: CMU License",
+            "License :: CMU License",
+            "OSI Approved :: CMU License",
+            "License :: OSI Approved :: MIT-CMU",
+            "License :: MIT-CMU",
+            "OSI Approved :: MIT-CMU",
+            "License :: OSI Approved :: CMU License (MIT-CMU)",
+            "CMU License (MIT-CMU)"
         ]
     },
     "src": "spdx",

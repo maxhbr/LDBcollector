@@ -16,6 +16,9 @@
     "src": "spdx",
     "rejected": [],
     "risky": [
-        "IBM Public License"
+        "IBM Public License",
+        "License :: IBM Public License",
+        "OSI Approved :: IBM Public License",
+        "License :: OSI Approved :: IBM Public License"
     ]
 }

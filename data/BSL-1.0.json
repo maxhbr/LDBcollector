@@ -23,6 +23,17 @@
         ],
         "osi": [
             "Boost Software License 1.0 (BSL-1.0)"
+        ],
+        "pypi-classifiers": [
+            "License :: Boost Software License 1.0 (BSL-1.0)",
+            "OSI Approved :: Boost Software License 1.0 (BSL-1.0)",
+            "License :: OSI Approved :: Boost Software License 1.0",
+            "License :: Boost Software License 1.0",
+            "OSI Approved :: Boost Software License 1.0",
+            "License :: OSI Approved :: BSL-1.0",
+            "License :: BSL-1.0",
+            "OSI Approved :: BSL-1.0",
+            "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)"
         ]
     },
     "src": "spdx",

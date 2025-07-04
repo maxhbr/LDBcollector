@@ -12,6 +12,19 @@
         ],
         "osi": [
             "CNRI portion of the multi-part Python License"
+        ],
+        "pypi-classifiers": [
+            "License :: Python License (CNRI Python License)",
+            "OSI Approved :: Python License (CNRI Python License)",
+            "License :: OSI Approved :: Python License",
+            "License :: Python License",
+            "OSI Approved :: Python License",
+            "License :: OSI Approved :: CNRI Python License",
+            "License :: CNRI Python License",
+            "OSI Approved :: CNRI Python License",
+            "License :: OSI Approved :: Python License (CNRI Python License)",
+            "Python License",
+            "Python License (CNRI Python License)"
         ]
     },
     "src": "spdx",

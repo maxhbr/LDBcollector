@@ -25,6 +25,18 @@
         ],
         "osi": [
             "Eclipse Public License, Version 1.0"
+        ],
+        "pypi-classifiers": [
+            "License :: Eclipse Public License 1.0 (EPL-1.0)",
+            "OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
+            "License :: OSI Approved :: Eclipse Public License 1.0",
+            "License :: Eclipse Public License 1.0",
+            "OSI Approved :: Eclipse Public License 1.0",
+            "License :: OSI Approved :: EPL-1.0",
+            "License :: EPL-1.0",
+            "OSI Approved :: EPL-1.0",
+            "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
+            "Eclipse Public License 1.0 (EPL-1.0)"
         ]
     },
     "src": "spdx",

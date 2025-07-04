@@ -23,6 +23,18 @@
         ],
         "scancode-licensedb": [
             "bsd-zero"
+        ],
+        "pypi-classifiers": [
+            "License :: Zero-Clause BSD (0BSD)",
+            "OSI Approved :: Zero-Clause BSD (0BSD)",
+            "License :: OSI Approved :: Zero-Clause BSD",
+            "License :: Zero-Clause BSD",
+            "OSI Approved :: Zero-Clause BSD",
+            "License :: OSI Approved :: 0BSD",
+            "License :: 0BSD",
+            "OSI Approved :: 0BSD",
+            "License :: OSI Approved :: Zero-Clause BSD (0BSD)",
+            "Zero-Clause BSD (0BSD)"
         ]
     },
     "src": "spdx",

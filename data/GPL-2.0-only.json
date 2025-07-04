@@ -6,9 +6,6 @@
             "GPL-2.0"
         ],
         "custom": [
-
-        ],
-        "custom": [
             "GPL-2.0-only",
             "GPL 2.0 only",
             "GPL v2.0 only",
@@ -40,6 +37,18 @@
         "GPLv2 (only)",
         "GPL v2 only",
         "GPL-2",
-        "GPL2"
+        "GPL2",
+        "License :: GNU General Public License v2 (GPLv2)",
+        "OSI Approved :: GNU General Public License v2 (GPLv2)",
+        "License :: OSI Approved :: GNU General Public License v2",
+        "License :: GNU General Public License v2",
+        "OSI Approved :: GNU General Public License v2",
+        "License :: OSI Approved :: GPLv2",
+        "License :: GPLv2",
+        "OSI Approved :: GPLv2",
+        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+        "GPLv2",
+        "GNU General Public License v2",
+        "GNU General Public License v2 (GPLv2)"
     ]
 }

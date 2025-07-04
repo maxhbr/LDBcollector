@@ -35,6 +35,17 @@
         "LGPLv3",
         "LGPLv3 (only)",
         "LGPL-3",
-        "LGPL3"
+        "LGPL3",
+        "License :: GNU Lesser General Public License v3 (LGPLv3)",
+        "OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+        "License :: OSI Approved :: GNU Lesser General Public License v3",
+        "License :: GNU Lesser General Public License v3",
+        "OSI Approved :: GNU Lesser General Public License v3",
+        "License :: OSI Approved :: LGPLv3",
+        "License :: LGPLv3",
+        "OSI Approved :: LGPLv3",
+        "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+        "GNU Lesser General Public License v3",
+        "GNU Lesser General Public License v3 (LGPLv3)"
     ]
 }

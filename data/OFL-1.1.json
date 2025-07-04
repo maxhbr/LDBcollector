@@ -28,6 +28,18 @@
         ],
         "osi": [
             "SIL Open Font License, Version 1.1"
+        ],
+        "pypi-classifiers": [
+            "License :: SIL Open Font License 1.1 (OFL-1.1)",
+            "OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)",
+            "License :: OSI Approved :: SIL Open Font License 1.1",
+            "License :: SIL Open Font License 1.1",
+            "OSI Approved :: SIL Open Font License 1.1",
+            "License :: OSI Approved :: OFL-1.1",
+            "License :: OFL-1.1",
+            "OSI Approved :: OFL-1.1",
+            "License :: OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)",
+            "SIL Open Font License 1.1 (OFL-1.1)"
         ]
     },
     "src": "spdx",

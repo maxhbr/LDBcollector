@@ -27,6 +27,11 @@
         "osi": [
             "MIT/Expat License",
             "Expat"
+        ],
+        "pypi-classifiers": [
+            "License :: MIT License",
+            "OSI Approved :: MIT License",
+            "License :: OSI Approved :: MIT License"
         ]
     },
     "src": "spdx",

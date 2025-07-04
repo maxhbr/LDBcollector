@@ -14,6 +14,18 @@
         ],
         "osi": [
             "European Union Public License, Version 1.1"
+        ],
+        "pypi-classifiers": [
+            "License :: European Union Public Licence 1.1 (EUPL 1.1)",
+            "OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
+            "License :: OSI Approved :: European Union Public Licence 1.1",
+            "License :: European Union Public Licence 1.1",
+            "OSI Approved :: European Union Public Licence 1.1",
+            "License :: OSI Approved :: EUPL 1.1",
+            "License :: EUPL 1.1",
+            "OSI Approved :: EUPL 1.1",
+            "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
+            "European Union Public Licence 1.1 (EUPL 1.1)"
         ]
     },
     "src": "spdx",

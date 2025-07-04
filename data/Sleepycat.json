@@ -11,6 +11,11 @@
         ],
         "osi": [
             "The Sleepycat License"
+        ],
+        "pypi-classifiers": [
+            "License :: Sleepycat License",
+            "OSI Approved :: Sleepycat License",
+            "License :: OSI Approved :: Sleepycat License"
         ]
     },
     "src": "spdx",

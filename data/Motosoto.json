@@ -12,6 +12,11 @@
         ],
         "osi": [
             "Motosoto Open Source License, Version 0.9.1"
+        ],
+        "pypi-classifiers": [
+            "License :: Motosoto License",
+            "OSI Approved :: Motosoto License",
+            "License :: OSI Approved :: Motosoto License"
         ]
     },
     "src": "spdx",
