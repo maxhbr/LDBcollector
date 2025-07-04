@@ -35,10 +35,13 @@ import org.licenselynx.*;
 
 public class LicenseExample {
     public static void main(String[] args) {
-        // Map the license name.
+        // Map the license name
         LicenseObject licenseObject = LicenseLynx.map("licenseName");
         System.out.println(licenseObject.getCanonical());
         System.out.println(licenseObject.getSrc());
+        
+        // Map the license name with risky mappings enables
+        LicenseObject licenseObject = LicenseLynx.map("licenseName", true);
     }
 }
 ```

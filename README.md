@@ -1,4 +1,5 @@
 # LicenseLynx
+
 ![python coverage](website/badges/coverage-python.svg)
 ![java coverage](website/badges/coverage-java.svg)
 ![typescript coverage](website/badges/coverage-typescript.svg)
@@ -9,8 +10,6 @@
 [![typescript pipeline](https://github.com/licenselynx/licenselynx/actions/workflows/typescript.yaml/badge.svg)](https://github.com/licenselynx/licenselynx/actions/workflows/typescript.yaml)
 [![scripts pipeline](https://github.com/licenselynx/licenselynx/actions/workflows/scripts.yaml/badge.svg)](https://github.com/licenselynx/licenselynx/actions/workflows/scripts.yaml)
 [![data pipeline](https://github.com/licenselynx/licenselynx/actions/workflows/data.yaml/badge.svg)](https://github.com/licenselynx/licenselynx/actions/workflows/data.yaml)
-
-
 
 [![GitHub Tag](https://img.shields.io/github/v/tag/licenselynx/licenselynx)](https://github.com/licenselynx/licenselynx/releases/latest)
 
@@ -56,8 +55,9 @@ The structure of a stored license looks like this:
             "lgpl-2.0"
         ]
     },
-    "src": "spdx"
-    "rejected": []
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }
 
 ```
@@ -67,6 +67,8 @@ The structure of a stored license looks like this:
 | canonical | Canonical name for license                                                                           |
 | aliases   | Dictionary of sources, where each source is list of aliases of license (e.g. "spdx", "custom", etc.) |
 | src       | Source for canonical license name                                                                    |
+| rejected  | List of rejected aliases                                                                             |
+| risky     | List of risky aliases                                                                                |
 
 ## Data Quality
 

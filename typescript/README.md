@@ -20,6 +20,9 @@ import {map} from "@licenselynx/licenselynx";
 const licenseObject = map('license1');
 console.log(licenseObject.canonical);
 console.log(licenseObject.src);
+
+// Map the license name with risky mappings enabled
+const licenseObject = map('license1', true);
 ```
 
 ## License

@@ -21,6 +21,10 @@ license_object = LicenseLynx.map("licenseName")
 
 print(license_object.canonical)
 print(license_object.src)
+
+# Map the license name with risky mappings enabled
+license_object = LicenseLynx.map("licenseName", risky=True)
+
 ```
 
 ## License
