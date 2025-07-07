@@ -186,6 +186,12 @@ text = '''
 This document is in the public domain.
 ```
 
+package = heimdal
+location = https://github.com/heimdal/heimdal/blob/a6cf94577c0d1e5bca5304342e4ddffb18255afe/lib/hcrypto/des.c#L900
+text = '''
+A portable, public domain, version of the Data Encryption Standard.
+'''
+
 package = allegro
 location = docs/src/addons._tx
 text = '''
