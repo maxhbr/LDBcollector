@@ -18,7 +18,7 @@
     <li{% if active_tab == "step_1" %} class="is-active"{% endif %}>
       <a href="{% url "cube:release_validation_step_1" object.id %}">
         <span class="icon is-small">
-          {% if invalid_expressions %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% if release.valid_step < 1 %}<i class="fas fa-times" aria-hidden="true"></i>
           {% else %}<i class="fas fa-check" aria-hidden="true"></i>
           {% endif %}
         </span>
