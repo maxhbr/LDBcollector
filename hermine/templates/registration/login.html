@@ -72,6 +72,10 @@ SPDX-License-Identifier: MIT
                   <a class="button is-block is-primary is-large is-fullwidth" href="{% url 'social:begin' 'default' %}">OAuth</a><br />
                   <input type="hidden" name="next" value="{{ next }}" />
                 {% endif %}
+                {% if "azuread" in backends.backends %}
+                  <a class="button is-block is-primary is-large is-fullwidth" href="{% url 'social:begin' 'azuread' %}">Azure AD</a><br />
+                  <input type="hidden" name="next" value="{{ next }}" />
+                {% endif %}
               </form>
             </div>
             <p class="has-text-grey">

@@ -3,6 +3,7 @@ import os
 DEBUG = os.environ.get("PRODUCTION", "").lower() == "false"
 ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING", "").lower() == "true"
 HOST = os.environ.get("HOST")
+
 FORCE_SCRIPT_NAME = os.environ.get("FORCE_SCRIPT_NAME")
 STATIC_ROOT = "/opt/hermine/static"
 MAX_UPLOAD_SIZE = (
@@ -39,6 +40,7 @@ EMAIL_USE_TLS = os.environ.get("EMAIL_USE_TLS", "").lower() == "true"
 EMAIL_USE_SSL = os.environ.get("EMAIL_USE_SSL", "").lower() == "true"
 DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL")
 
+AZUREAD_TENANT_ID = os.environ.get("AZUREAD_TENANT_ID")
 
 # Load OAuth application settings into memory
 OAUTH_CLIENT_ID = os.environ.get("OAUTH_CLIENT_ID")
@@ -51,6 +53,14 @@ OAUTH_AUTHORIZE_URL = os.environ.get("OAUTH_AUTHORIZE_URL")
 OAUTH_USER_URL = os.environ.get("OAUTH_USER_URL")
 OAUTH_USERNAME_PROPERTY = os.environ.get("OAUTH_USERNAME_PROPERTY", "username")
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = os.environ.get("SOCIAL_AUTH_REDIRECT_IS_HTTPS")
+
+if AZUREAD_TENANT_ID is not None:
+    AZUREAD_CLIENT = {
+        "client_id": OAUTH_CLIENT_ID,
+        "client_secret": OAUTH_CLIENT_SECRET,
+        "tenant_id": AZUREAD_TENANT_ID,
+        "host": f"https://{HOST}",  # host for redirect_uri
+    }
 
 # For configuring OAuth the following parameters are required :
 if OAUTH_CLIENT_ID is not None:
@@ -69,4 +79,5 @@ if OAUTH_CLIENT_ID is not None:
             "username": res.get(OAUTH_USERNAME_PROPERTY),
             "email": res.get("email"),
         },
+        "host": f"https://{HOST}",  # host for redirect_uri
     }
