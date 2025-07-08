@@ -32,3 +32,11 @@ class OAuth2(BaseOAuth2):
             settings.OAUTH_CLIENT["user_url"],
             headers={"Authorization": f"bearer {access_token}"},
         )
+
+    def get_redirect_uri(self, state=None):
+        """Build redirect_uri based on configured HOST  (SOCIAL_AUTH_DEFAULT_HOST)"""
+        host = self.setting("HOST", None)
+        if host:
+            self.redirect_uri = f"{host}/oauth/complete/{self.name}/"
+
+        return super().get_redirect_uri(state)

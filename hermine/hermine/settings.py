@@ -38,8 +38,10 @@ SECRET_KEY = config.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getattr(config, "DEBUG", False)
 
-if host := getattr(config, "HOST", None):
-    ALLOWED_HOSTS = [host]
+if hasattr(config, "ALLOWED_HOSTS"):
+    ALLOWED_HOSTS = config.ALLOWED_HOSTS
+elif hasattr(config, "HOST"):
+    ALLOWED_HOSTS = [config.HOST]
 else:
     ALLOWED_HOSTS = []
 
@@ -154,16 +156,27 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # OAuth support
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+]
+SOCIAL_AUTH_URL_NAMESPACE = "social"
 
 if getattr(config, "OAUTH_CLIENT", None) is not None:
     OAUTH_CLIENT = config.OAUTH_CLIENT
     SOCIAL_AUTH_DEFAULT_KEY = OAUTH_CLIENT["client_id"]
     SOCIAL_AUTH_DEFAULT_SECRET = OAUTH_CLIENT["client_secret"]
-    AUTHENTICATION_BACKENDS = [
-        "cube.oauth.OAuth2",
-        "django.contrib.auth.backends.ModelBackend",
-    ]
-    SOCIAL_AUTH_URL_NAMESPACE = "social"
+    SOCIAL_AUTH_DEFAULT_HOST = OAUTH_CLIENT["host"]
+    AUTHENTICATION_BACKENDS.append("cube.oauth.OAuth2")
+
+
+if getattr(config, "AZUREAD_CLIENT", None) is not None:
+    AZUREAD_CLIENT = config.AZUREAD_CLIENT
+    SOCIAL_AUTH_AZUREAD_KEY = AZUREAD_CLIENT["client_id"]
+    SOCIAL_AUTH_AZUREAD_SECRET = AZUREAD_CLIENT["client_secret"]
+    SOCIAL_AUTH_AZUREAD_TENANT_ID = AZUREAD_CLIENT["tenant_id"]
+    SOCIAL_AUTH_AZUREAD_HOST = AZUREAD_CLIENT["host"]
+    AUTHENTICATION_BACKENDS.append("cube.azuread_auth.Entra")
+
 
 # SMTP
 

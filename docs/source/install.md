@@ -228,8 +228,16 @@ For development purpose, you can simply run :
 poetry run hermine/manage.py runserver
 ```
 
-## OAuth
+## External Authentication
 
+Hermine supports OAuth2 (by default) and Azure AD.
+
+Further information can be found in [Python Social Auth’s documentation](https://python-social-auth.readthedocs.io/en/latest/configuration/django.html)
+on which Hermine relies.
+
+Users will be created on the fly at authentication by the external auth server.
+
+### OAuth2 Authentication
 You can use an OAuth2 server as authentication backend by setting OAuth parameters.
 
 For Docker installs, the following environment variables can be set :
@@ -245,10 +253,17 @@ For Docker installs, the following environment variables can be set :
 
 On manual install, you should set these parameters in the `config.py` file.
 
-Further information can be found in [Python Social Auth’s documentation](https://python-social-auth.readthedocs.io/en/latest/configuration/django.html)
-on which Hermine relies.
+### Azure AD Authentication
 
-Users will be created on the fly at authentication by the OAuth server.
+You can use an Entra server as authentication backend by setting some parameters.
+
+For Docker installs, the following environment variables can be set :
+* **AZUREAD_TENANT_ID**: your Microsoft Azure tenant ID
+* **OAUTH_CLIENT_ID**: the client ID of Hermine application registered in Entra
+* **OAUTH_CLIENT_SECRET**: the client secret of Hermine application registered in Entra
+
+On manual install, you should set these parameters in the `config.py` file.
+
 
 
 ## Health check
