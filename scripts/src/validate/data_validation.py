@@ -211,11 +211,13 @@ def check_version_between_canonical_and_alias():
             with open(filepath, 'r') as f:
                 data = json.load(f)
                 aliases = data.get("aliases", [])
-                scancode_aliases = []
-                if 'scancode-licensedb' in aliases:
-                    scancode_aliases = aliases.pop('scancode-licensedb')
+
                 custom_aliases = aliases.pop('custom')
-                aliases_list = scancode_aliases + custom_aliases
+                aliases_list = custom_aliases
+                for alias_src, alias_list in aliases.items():
+                    if alias_src == 'spdx' or alias_src == 'osi':
+                        continue
+                    aliases_list += alias_list
                 canonical = data.get("canonical", [])
 
                 wrong_version = []
@@ -224,6 +226,7 @@ def check_version_between_canonical_and_alias():
                 canonical_has_version = bool(canonical_tokens)
                 compare_versions(aliases_list, canonical_has_version, canonical_tokens, wrong_version)
                 if wrong_version:
+                    wrong_version.sort()
                     logger.error(f'{filename} has wrong versions for aliases: {wrong_version}')
                     affected_licenses[canonical] = wrong_version
 
