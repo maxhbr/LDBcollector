@@ -188,7 +188,7 @@ tasks.named('check').configure { t ->
  */
 tasks.named('jar').configure {
     into('META-INF') {
-        from '../LICENSE.md'
+        from '../LICENSE'
     }
     manifest {
         attributes = [
@@ -219,7 +219,7 @@ tasks.named('jar').configure {
 
 sourcesJar {
     into('META-INF') {
-        from '../LICENSE.md'
+        from '../LICENSE'
     }
     afterEvaluate {
         manifest.getAttributes().putAll(tasks.jar.manifest.attributes.findAll { it.key != 'Automatic-Module-Name' })
@@ -232,7 +232,7 @@ tasks.sourcesJar.dependsOn tasks.createVersionFile
 
 javadocJar {
     into('META-INF') {
-        from '../LICENSE.md'
+        from '../LICENSE'
     }
     afterEvaluate {
         manifest.getAttributes().putAll(tasks.jar.manifest.attributes.findAll { it.key != 'Automatic-Module-Name' })
