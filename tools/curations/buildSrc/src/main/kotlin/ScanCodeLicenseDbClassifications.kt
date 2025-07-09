@@ -98,6 +98,7 @@ private data class LicenseDetails(
     val minimumCoverage: Int? = null,
     val standardNotice: String? = null,
     val isDeprecated: Boolean = false,
+    val replacedBy: List<String> = emptyList(),
     val isException: Boolean = false,
     val isGeneric: Boolean = false,
     val isUnknown: Boolean = false,
