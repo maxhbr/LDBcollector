@@ -194,11 +194,11 @@ tasks.named('jar').configure {
         attributes = [
             'Manifest-Version'           : '1.0',
             'Specification-Title'        : project.name,
-            'Specification-Vendor'       : 'The LicenseLynx OSS Projec',
+            'Specification-Vendor'       : 'The LicenseLynx OSS Project',
             'Specification-Vendor-Id'    : 'org.licenselynx',
             'Specification-Version'      : project.version,
             'Implementation-Title'       : project.name,
-            'Implementation-Vendor'      : 'The LicenseLynx OSS Projec',
+            'Implementation-Vendor'      : 'The LicenseLynx OSS Project',
             'Implementation-Vendor-Id'   : 'org.licenselynx',
             'Implementation-Version'     : project.version,
             'Implementation-SCM-Revision': project.ext.gitHash,
