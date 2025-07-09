@@ -121,7 +121,12 @@ private fun downloadLicenseIndex(): List<License> =
 private fun downloadLicenseDetails(license: License): LicenseDetails {
     val url = INDEX_JSON_URL.substringBeforeLast("/") + "/${license.json}"
     LOGGER.info("GET $url.")
-    return JSON_MAPPER.readValue<LicenseDetails>(URL(url))
+
+    return runCatching {
+        JSON_MAPPER.readValue<LicenseDetails>(URL(url))
+    }.onFailure { e ->
+        LOGGER.warn("Could not get license details from $url: ${e.message}.")
+    }.getOrThrow()
 }
 
 @OptIn(kotlin.time.ExperimentalTime::class)
