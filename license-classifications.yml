@@ -1654,6 +1654,10 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-activision-eula"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-actuate-birt-ihub-ftype-sla"
   categories:
   - "proprietary-free"
@@ -1801,6 +1805,10 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-ag-grid-enterprise"
+  categories:
+  - "commercial"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-agentxpp"
   categories:
   - "commercial"
@@ -1922,6 +1930,10 @@ categorizations:
 - id: "LicenseRef-scancode-ampas"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-amplication-ee-2022"
+  categories:
+  - "proprietary-free"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-ams-fonts"
   categories:
@@ -2230,6 +2242,10 @@ categorizations:
   categories:
   - "source-available"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-aws-ip-2021"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-baekmuk-fonts"
   categories:
   - "permissive"
@@ -2269,6 +2285,10 @@ categorizations:
 - id: "LicenseRef-scancode-beal-screamer"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-beegfs-eula-2024"
+  categories:
+  - "source-available"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-beerware"
   categories:
@@ -2372,6 +2392,14 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-bohl-0.2"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-bola10"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-bola11"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -2600,6 +2628,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-bsd-endorsement-allowed"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-bsd-export"
   categories:
   - "permissive"
@@ -2777,6 +2809,10 @@ categorizations:
 - id: "LicenseRef-scancode-c-uda-1.0"
   categories:
   - "free-restricted"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-ca-ossl-1.0"
+  categories:
+  - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-ca-tosl-1.1"
   categories:
@@ -3340,6 +3376,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-clearthought-2.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-click-license"
   categories:
   - "permissive"
@@ -3409,10 +3449,6 @@ categorizations:
 - id: "LicenseRef-scancode-cockroach"
   categories:
   - "source-available"
-  - "include-in-notice-file"
-- id: "LicenseRef-scancode-code-credit-license-1.0-0"
-  categories:
-  - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-code-credit-license-1.0.0"
   categories:
@@ -3687,6 +3723,14 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-databricks-db"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-databricks-dbx-2021"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-datamekanix-license"
   categories:
   - "permissive"
@@ -3910,6 +3954,10 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-dumb"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-dvipdfm"
   categories:
   - "permissive"
@@ -3992,6 +4040,10 @@ categorizations:
   - "copyleft-limited"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-eclipse-tck-1.1"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-ecma-documentation"
   categories:
   - "free-restricted"
@@ -4032,6 +4084,10 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-efsl-1.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-efsl-2.0"
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
@@ -4148,6 +4204,18 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-epson-avasys-pl-2008"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-epson-linux-sla-2023"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-eqvsl-1.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-eric-glass"
   categories:
   - "permissive"
@@ -4492,9 +4560,17 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-geant4-sl-1.0"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-gemma-tou-2024-04-01"
   categories:
   - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-generaluser-gs-2.0"
+  categories:
+  - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-generic-amiwm"
   categories:
@@ -4527,6 +4603,10 @@ categorizations:
 - id: "LicenseRef-scancode-geoff-kuenning-1993"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-geogebra-ncla-2022"
+  categories:
+  - "proprietary-free"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-gfdl-1.1"
   categories:
@@ -4885,6 +4965,10 @@ categorizations:
 - id: "LicenseRef-scancode-gregory-pietsch"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-gretelai-sal-1.0"
+  categories:
+  - "source-available"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-gsoap-1.3a"
   categories:
@@ -5382,6 +5466,18 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-inria-compcert"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-inria-icesl"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-inria-zelus"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-installsite"
   categories:
   - "free-restricted"
@@ -5630,6 +5726,10 @@ categorizations:
   - "free-restricted"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-jmagnetic"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-joplin-server-personal-v1"
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
@@ -5882,6 +5982,10 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-lens-tos-2023"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-leptonica"
   categories:
   - "permissive"
@@ -6070,6 +6174,10 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-llama-4-license-2025"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-llama-license-2023"
   categories:
   - "proprietary-free"
@@ -6214,6 +6322,10 @@ categorizations:
   categories:
   - "commercial"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-mapbox-tos-2024"
+  categories:
+  - "commercial"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-markus-kuhn-license"
   categories:
   - "permissive"
@@ -6234,9 +6346,17 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-matplotlib-1.3.0"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-matt-gallagher-attribution"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-mattermost-sal-2024"
+  categories:
+  - "source-available"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-matthew-kwan"
   categories:
@@ -6321,6 +6441,10 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-mgb-1.0"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-mgopen-font-license"
   categories:
   - "permissive"
@@ -6503,6 +6627,10 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-mov-ai-1.0"
+  categories:
+  - "source-available"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-moxa-linux-firmware"
   categories:
   - "proprietary-free"
@@ -6599,6 +6727,18 @@ categorizations:
   - "proprietary-free"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-ms-azure-data-studio"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-ms-azure-rtos-2020-05"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-ms-azure-rtos-2020-07"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-ms-azure-rtos-2023-05"
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
@@ -7174,6 +7314,10 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-new-relic-1.0"
+  categories:
+  - "commercial"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-newlib-historical"
   categories:
   - "permissive"
@@ -7278,7 +7422,15 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-northwoods-evaluation-2024"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-northwoods-sla-2021"
+  categories:
+  - "commercial"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-northwoods-sla-2024"
   categories:
   - "commercial"
   - "include-in-notice-file"
@@ -7455,6 +7607,14 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-obsidian-tos-2025"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-ocamlpro-nc-v1"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-ocb-non-military-2013"
   categories:
   - "proprietary-free"
@@ -7487,6 +7647,10 @@ categorizations:
   - "copyleft-limited"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-octl-0.21"
+  categories:
+  - "source-available"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-oculus-sdk"
   categories:
   - "copyleft-limited"
@@ -7568,6 +7732,14 @@ categorizations:
   categories:
   - "free-restricted"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-ofrak-community-1.1"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-ofrak-pro-1.0"
+  categories:
+  - "commercial"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-ogc"
   categories:
   - "permissive"
@@ -7640,6 +7812,10 @@ categorizations:
 - id: "LicenseRef-scancode-on2-patent"
   categories:
   - "patent-license"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-onezoom-np-sal-v1"
+  categories:
+  - "source-available"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-ooura-2001"
   categories:
@@ -8235,6 +8411,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-pipedream-sal-1.0"
+  categories:
+  - "source-available"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-pivotal-tou"
   categories:
   - "commercial"
@@ -8306,6 +8486,10 @@ categorizations:
 - id: "LicenseRef-scancode-postgresql"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-postman-tos-2024"
+  categories:
+  - "proprietary-free"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-powervr-tools-software-eula"
   categories:
@@ -8492,6 +8676,15 @@ categorizations:
   categories:
   - "free-restricted"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-radiance-sl-v1.0"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-radiance-sl-v2.0"
+  categories:
+  - "copyleft-limited"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "LicenseRef-scancode-radvd"
   categories:
   - "permissive"
@@ -8636,6 +8829,10 @@ categorizations:
   categories:
   - "commercial"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-root-cert-3.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-rpl-1.1"
   categories:
   - "copyleft-limited"
@@ -8728,7 +8925,7 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
-- id: "LicenseRef-scancode-samba-dco-1.0"
+- id: "LicenseRef-scancode-samba-dc-1.0"
   categories:
   - "cla"
 - id: "LicenseRef-scancode-san-francisco-font"
@@ -8832,6 +9029,10 @@ categorizations:
   - "copyleft-limited"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-scylladb-sla-1.0"
+  categories:
+  - "source-available"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-secret-labs-2011"
   categories:
   - "permissive"
@@ -8842,6 +9043,10 @@ categorizations:
 - id: "LicenseRef-scancode-selinux-nsa-declaration-1.0"
   categories:
   - "public-domain"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-selv1"
+  categories:
+  - "commercial"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-semgrep-registry"
   categories:
@@ -8905,6 +9110,10 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-sglib"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-sgmlug"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -9058,6 +9267,10 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-sonar-sal-1.0"
+  categories:
+  - "source-available"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-soundex"
   categories:
   - "permissive"
@@ -9178,6 +9391,10 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-stu-nicholls"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-sudo"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -9708,6 +9925,10 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-trendmicro-cl-1.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-triptracker"
   categories:
   - "proprietary-free"
@@ -9803,6 +10024,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-un-cefact-2016"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-unbuntu-font-1.0"
   categories:
   - "free-restricted"
@@ -9834,6 +10059,10 @@ categorizations:
 - id: "LicenseRef-scancode-unicode-tou"
   categories:
   - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-unicode-ucd"
+  categories:
+  - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-unicode-v3"
   categories:
@@ -9989,6 +10218,10 @@ categorizations:
   - "copyleft-limited"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-volla-1.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-vostrom"
   categories:
   - "copyleft"
@@ -10031,6 +10264,10 @@ categorizations:
 - id: "LicenseRef-scancode-w3c-community-cla"
   categories:
   - "cla"
+- id: "LicenseRef-scancode-w3c-community-final-spec"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-w3c-docs-19990405"
   categories:
   - "free-restricted"
@@ -10064,6 +10301,10 @@ categorizations:
   - "free-restricted"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-w3m"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-wadalab"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -10427,6 +10668,14 @@ categorizations:
 - id: "LicenseRef-scancode-zed"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-zeebe-community-1.0"
+  categories:
+  - "source-available"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-zeebe-community-1.1"
+  categories:
+  - "source-available"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-zeeff"
   categories:
