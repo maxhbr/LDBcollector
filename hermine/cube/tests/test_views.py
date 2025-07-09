@@ -26,7 +26,10 @@ class UnauthenticatedTestCase(TestCase):
         reverse("cube:product_detail", kwargs={"pk": 1}),
         reverse("cube:component_list"),
         reverse("cube:component_detail", kwargs={"pk": 2}),
-        reverse("cube:release_validation", kwargs={"pk": 1}),
+        *[
+            reverse(f"cube:release_validation_step_{step}", kwargs={"pk": 1})
+            for step in range(1, 7)
+        ],
         reverse("cube:release_summary", kwargs={"release_pk": 1}),
         reverse("cube:release_bom", kwargs={"release_pk": 1}),
         reverse("cube:release_bom_export", kwargs={"pk": 1}),
@@ -111,7 +114,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(res.status_code, 200)
 
     def test_release_validation_view(self):
-        url = reverse("cube:release_validation", kwargs={"pk": 1})
+        url = reverse("cube:release_validation_step_1", kwargs={"pk": 1})
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "Release: 1.0")  # release number
@@ -133,7 +136,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
                 "component_version": CreateLicenseCurationForm.ANY,
             },
         )
-        self.assertRedirects(res, reverse("cube:release_validation", args=[1]))
+        self.assertRedirects(res, reverse("cube:release_validation_step_1", args=[1]))
         self.assertEqual(LicenseCuration.objects.all().count(), 1)
         self.assertEqual(LicenseCuration.objects.first().author, self.user)
         self.assertEqual(LicenseChoice.objects.all().count(), 0)

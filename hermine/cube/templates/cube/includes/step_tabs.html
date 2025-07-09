@@ -1,0 +1,79 @@
+{% if object.valid_step < 6 %}
+  <p>You have completed  {{ object.valid_step }} out of 6 validation steps</p>
+{% else %}
+  <article class="message is-success is-large">
+    <div class="message-header">
+      <p>Finished</p>
+    </div>
+    <div class="message-body">
+      <span class="icon has-text-success"><i class="fas fa-check-square"></i></span>
+      That's it ! All your usages are valid, qualified, and checked.
+      You can now proceed to the check of your obligations.
+    </div>
+  </article>
+  <hr />
+{% endif %}
+<div class="tabs is-toggle is-fullwidth">
+  <ul>
+    <li{% if active_tab == "step_1" %} class="is-active"{% endif %}>
+      <a href="{% url "cube:release_validation_step_1" object.id %}">
+        <span class="icon is-small">
+          {% if release.valid_step < 1 %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+          {% endif %}
+        </span>
+        <span>Valid SPDX</span>
+      </a>
+    </li>
+    <li{% if active_tab == "step_2" %} class="is-active"{% endif %}>
+      <a href="{% url "cube:release_validation_step_2" object.id %}">
+        <span class="icon is-small">
+          {% if release.valid_step < 2 %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+          {% endif %}
+        </span>
+        <span>Confirm ANDs</span>
+      </a>
+    </li>
+    <li{% if active_tab == "step_3" %} class="is-active"{% endif %}>
+      <a href="{% url "cube:release_validation_step_3" object.id %}">
+        <span class="icon is-small">
+          {% if release.valid_step < 3 %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+          {% endif %}
+        </span>
+        <span>Define exploitations</span>
+      </a>
+    </li>
+    <li{% if active_tab == "step_4" %} class="is-active"{% endif %}>
+      <a href="{% url "cube:release_validation_step_4" object.id %}">
+        <span class="icon is-small">
+          {% if release.valid_step < 4 %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+          {% endif %}
+        </span>
+        <span>License choices</span>
+      </a>
+    </li>
+    <li{% if active_tab == "step_5" %} class="is-active"{% endif %}>
+      <a href="{% url "cube:release_validation_step_5" object.id %}">
+        <span class="icon is-small">
+          {% if release.valid_step < 5 %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+          {% endif %}
+        </span>
+        <span>Check policy</span>
+      </a>
+    </li>
+    <li{% if active_tab == "step_6" %} class="is-active"{% endif %}>
+      <a href="{% url "cube:release_validation_step_6" object.id %}">
+        <span class="icon is-small">
+          {% if release.valid_step < 6 %}<i class="fas fa-times" aria-hidden="true"></i>
+          {% else %}<i class="fas fa-check" aria-hidden="true"></i>
+          {% endif %}
+        </span>
+        <span>Check compatibility</span>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,73 @@
+<!--
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+
+{% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
+    <li>{{object.release_number}}</li>
+    <li>Validation</li>
+  </ul>
+{% endblock %}
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">Release: {{object.release_number}}</p>
+  </div>
+{% endblock %}
+{% block content %}
+
+  {% include "cube/includes/release_tabs.html" with active_tab="validation" %}
+  {% include "cube/includes/step_tabs.html" with active_tab="step_3" %}
+
+  <h4 class="title is-4">Step 3 - Defined exploitation mode for each scope</h4>
+
+  {% if unset_scopes %}
+    <article class="message is-warning">
+      <div class="message-header">
+        <p>Some scopes have no exploitation mode defined.</p>
+      </div>
+    </article>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Sub-project</th>
+          <th>Scope</th>
+          <th>Components</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for project, scope, components_count in unset_scopes %}
+          <tr>
+            <td>{{ project }}</td>
+            <td>{{ scope }}</td>
+            <td>{{ components_count }}</td>
+            <td><a href="{% url 'cube:release_exploitation_create' release.id %}?project={{ project }}&scope={{ scope }}&from={{ request.path|urlencode }}">
+              Set exploitation mode
+            </a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <article class="message is-success">
+      <div class="message-header">
+        <p>Success</p>
+      </div>
+      <div class="message-body">
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All scopes have an exploitation mode defined.
+      </div>
+    </article>
+  {% endif %}
+
+  <p>See exploitations details on <a href="{% url "cube:release_summary" object.id %}">release summary</a>.</p>
+
+{% endblock %}

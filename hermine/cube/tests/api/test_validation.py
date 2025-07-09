@@ -76,6 +76,9 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(len(res.data), 2)
 
     def test_validation_view(self):
+        # TODO: this is a UI test, not API
+        #   it should not live in tests/api/ folder
+        #   but it currently depends on provisionning methods
         self.create_product()
         self.create_release()
         import_licenses()
@@ -92,8 +95,11 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.create_derogations()
         self.import_sbom()
 
-        res = self.client.get(reverse("cube:release_validation", kwargs={"pk": 1}))
-        self.assertEqual(res.status_code, 200)
+        for step in range(1, 6):
+            res = self.client.get(
+                reverse(f"cube:release_validation_step_{step}", kwargs={"pk": 1})
+            )
+            self.assertEqual(res.status_code, 200)
         self.assertEqual(res.context["object"].valid_step, STEP_POLICY)
         self.assertEqual(len(res.context["derogations"]), 1)
 

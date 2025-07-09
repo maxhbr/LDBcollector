@@ -152,7 +152,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                 You successfully uploaded your file.
                 You can add components from another source or check the
                 validation steps you need to achieve in the <b><a
-                href="{reverse("cube:release_validation",
+                href="{reverse("cube:release_validation_step_1",
                 kwargs={"pk": self.object.id})}"> Validation tab</a></b>.
                 """
             ),

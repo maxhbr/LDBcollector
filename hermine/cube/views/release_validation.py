@@ -6,7 +6,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMix
 from django.db.models import F
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import generic
 from django.views.decorators.http import require_POST
@@ -32,7 +32,14 @@ from cube.models import (
     Derogation,
     Exploitation,
 )
-from cube.utils.release_validation import update_validation_step, propagate_choices
+from cube.utils.release_validation import (
+    update_validation_step_1,
+    update_validation_step_2,
+    update_validation_step_3,
+    update_validation_step_4,
+    update_validation_step_5,
+    update_validation_step_6,
+)
 from cube.utils.spdx import simplified
 from cube.views import CreateLicenseRelatedMixin
 from cube.views.mixins import (
@@ -42,39 +49,111 @@ from cube.views.mixins import (
 )
 
 
-class ReleaseValidationView(
+class ReleaseValidationStepBaseView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
-    """
-    Shows 4 validation steps for a release of a product:
-    step 1 : checks that license metadata are present and correct
-    step 2 : checks that no licenses expression is ambiguous
-    step 3 : ensure all scopes have a defined exploitation
-    step 4 : resolves choices in case of multi-licenses
-    step 5 : checks that chosen licenses are compatible with policy and derogs
-    """
-
-    model = Release
-    template_name = "cube/release_validation.html"
     permission_required = "cube.view_release"
+    model = Release
+    queryset = Release.objects.prefetch_related(
+        "usage_set",
+        "usage_set__version",
+        "usage_set__version__component",
+    )
 
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-            )
-        )
+
+class ReleaseValidationStep1View(ReleaseValidationStepBaseView):
+    """
+    step 1 : checks that license metadata are present and correct
+    """
+
+    template_name = "cube/release_validation_1.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
         return {
             **context,
-            **update_validation_step(self.object),
+            **update_validation_step_1(self.object),
+        }
+
+
+class ReleaseValidationStep2View(ReleaseValidationStepBaseView):
+    """
+    step 2 : checks that no licenses expression is ambiguous
+    """
+
+    template_name = "cube/release_validation_2.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step_2(self.object),
+        }
+
+
+class ReleaseValidationStep3View(ReleaseValidationStepBaseView):
+    """
+    step 3 : ensure all scopes have a defined exploitation
+    """
+
+    template_name = "cube/release_validation_3.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step_3(self.object),
+        }
+
+
+class ReleaseValidationStep4View(ReleaseValidationStepBaseView):
+    """
+    step 4 : resolves choices in case of multi-licenses
+    """
+
+    template_name = "cube/release_validation_4.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step_4(self.object),
+        }
+
+
+class ReleaseValidationStep5View(ReleaseValidationStepBaseView):
+    """
+    step 5 : checks that chosen licenses are compatible with policy and derogs
+    """
+
+    template_name = "cube/release_validation_5.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step_5(self.object),
+        }
+
+
+class ReleaseValidationStep6View(ReleaseValidationStepBaseView):
+    """
+    step 6 : checks that licenses are compatible with release license
+    """
+
+    template_name = "cube/release_validation_6.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        return {
+            **context,
+            **update_validation_step_6(self.object),
         }
 
 
@@ -93,7 +172,9 @@ class AbstractCreateUsageConditionView(
         return kwargs
 
     def get_success_url(self):
-        return reverse("cube:release_validation", kwargs={"pk": self.usage.release.id})
+        return reverse(
+            "cube:release_validation_step_1", kwargs={"pk": self.usage.release.id}
+        )
 
 
 class AbstractResetCorrectedLicenseView(
@@ -151,10 +232,17 @@ class UpdateLicenseCurationView(AbstractResetCorrectedLicenseView):
 
 
 # Step 2
-class ReleaseAndsValidationCreateView(AbstractCreateUsageConditionView):
+class ReleaseAndsValidationCreateView(
+    QuerySuccessUrlMixin, AbstractCreateUsageConditionView
+):
     model = LicenseCuration
     form_class = CreateAndsValidationForm
     permission_required = "cube.add_licensecuration"
+
+    def get_default_success_url(self):
+        return reverse_lazy(
+            "cube:release_validation_step_2", args=[self.usage.release_id]
+        )
 
 
 class ReleaseAndsConfirmationView(PermissionRequiredMixin, TemplateView):
@@ -253,11 +341,18 @@ class ReleaseExploitationDeleteView(
 # Step 4
 
 
-class ReleaseLicenseChoiceCreateView(AbstractCreateUsageConditionView):
+class ReleaseLicenseChoiceCreateView(
+    QuerySuccessUrlMixin, AbstractCreateUsageConditionView
+):
     model = LicenseChoice
     template_name = "cube/release_licensechoice_create.html"
     form_class = CreateLicenseChoiceForm
     permission_required = "cube.add_licensechoice"
+
+    def get_default_success_url(self):
+        return reverse_lazy(
+            "cube:release_validation_step_4", args=[self.usage.release_id]
+        )
 
 
 class ReleaseLicenseChoiceListView(
@@ -269,7 +364,7 @@ class ReleaseLicenseChoiceListView(
     permission_required = "cube.view_release"
 
     def get_queryset(self):
-        return propagate_choices(self.release)["resolved"]
+        return update_validation_step_4(self.release)["resolved"]
 
 
 @method_decorator(require_POST, "dispatch")
@@ -298,9 +393,14 @@ class ReleaseUpdateLicenseChoiceView(
 
 
 class ReleaseDerogationCreateView(
-    CreateLicenseRelatedMixin, AbstractCreateUsageConditionView
+    QuerySuccessUrlMixin, CreateLicenseRelatedMixin, AbstractCreateUsageConditionView
 ):
     model = Derogation
     form_class = CreateDerogationForm
     permission_required = "cube.add_derogation"
     template_name = "cube/release_derogation_create.html"
+
+    def get_default_success_url(self):
+        return reverse_lazy(
+            "cube:release_validation_step_5", args=[self.usage.release_id]
+        )

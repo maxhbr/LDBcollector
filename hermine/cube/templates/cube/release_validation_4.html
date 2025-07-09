@@ -1,0 +1,102 @@
+<!--
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+
+{% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
+    <li>{{object.release_number}}</li>
+    <li>Validation</li>
+  </ul>
+{% endblock %}
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">Release: {{object.release_number}}</p>
+  </div>
+{% endblock %}
+{% block content %}
+
+  {% include "cube/includes/release_tabs.html" with active_tab="validation" %}
+  {% include "cube/includes/step_tabs.html" with active_tab="step_4" %}
+
+  <h4 class="title is-4">Step 4 - Resolve license choices for this release</h4>
+
+  {% if to_resolve %}
+    <article class="message is-warning">
+      <div class="message-header">
+        <p>Some components need an explicit license choice</p>
+      </div>
+      <div class="message-body">
+        {{ to_resolve|length }} license Expressions contain several licenses. Choose whether you want to use one of them or every of them
+      </div>
+    </article>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Sub-project</th>
+          <th>Scope</th>
+          <th>Component</th>
+          <th>License expression</th>
+          <th>Add choice</th>
+          {% if perms.cube.add_licensecuration %}<th>Correct license</th>{% endif %}
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for usage in to_resolve %}
+          <tr>
+            <td>{{ usage.project }}</td>
+            <td>{{ usage.scope }}</td>
+            <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a> </td>
+            <td>{{ usage.version.effective_license }}</td>
+            <td>{% if perms.cube.add_licensechoice %}
+              <a href="{% url 'cube:release_licensechoice_create' usage.id %}">Add choice rule</a>
+            {% endif %}</td>
+            {% if perms.cube.add_licensecuration %}<td><a href="{% url "cube:release_licensecuration_create" usage.id %}">Correct license</a></td>{% endif %}
+            <td>{% if perms.cube.change_usage %}
+              <a href="{% url "cube:usage_update" usage.id %}?from={{ request.path|urlencode }}" title="Edit this usage"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}{% if perms.cube.delete_usage %}
+              | <a href="{% url "cube:usage_delete" usage.id %}?from={{ request.path|urlencode }}" title="Delete this usage"><span class="icon"><i class="fas fa-trash"></i></span></a>
+            {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% elif release.valid_step >= 2 %}
+  {% comment %}
+    It maybe stuck at 2 if some exploitation modes are not defined, even if all license choices have been made
+  {% endcomment %}
+    <article class="message is-success">
+      <div class="message-header">
+        <p>Success</p>
+      </div>
+      <div class="message-body">
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All license choices have been made for this release.
+      </div>
+    </article>
+  {% else %}
+    <article class="message is-info">
+      <div class="message-header">
+        <p>Waiting for previous steps</p>
+      </div>
+      <div class="message-body">
+        Currently no choice to make, but step 2 still needs to be validated.
+      </div>
+    </article>
+  {% endif %}
+  {% if resolved %}
+    <p>List <a href="{% url "cube:release_licensechoice_list" object.id %}">{{ resolved|length }} license choices</a>
+      for this release.</p>
+  {% endif %}
+
+
+{% endblock %}

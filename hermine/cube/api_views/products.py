@@ -49,14 +49,13 @@ from cube.serializers.products import (
 )
 from cube.utils.licenses import get_usages_obligations
 from cube.utils.release_validation import (
-    update_validation_step,
-    validate_expressions,
-    validate_ands,
-    validate_exploitations,
-    validate_choices,
-    validate_policy,
-    apply_curations,
-    validate_compatibility,
+    update_validation_step_6,
+    update_validation_step_5,
+    update_validation_step_4,
+    update_validation_step_3,
+    update_validation_step_2,
+    update_validation_step_1,
+    update_all_steps,
 )
 
 
@@ -101,7 +100,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         Recalculate validation step of the release
         """
         release = self.get_object()
-        update_validation_step(release)
+        update_all_steps(release)
 
         return Response(self.get_serializer_class()(release).data)
 
@@ -116,9 +115,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         """
         response = {}
         release = self.get_object()
-        apply_curations(release)
 
-        response["valid"], context = validate_expressions(release)
+        context = update_validation_step_1(release)
+        response["valid"] = release.valid_step >= 1
         response["invalid_expressions"] = [
             usage.version for usage in context["invalid_expressions"]
         ]
@@ -126,7 +125,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             usage.version for usage in context["fixed_expressions"]
         ]
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_1", kwargs={"pk": release.pk}
         )
 
         return Response(ExpressionValidationSerializer(response).data)
@@ -141,12 +140,12 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         """
         response = {}
         release = self.get_object()
-        apply_curations(release)
 
-        response["valid"], context = validate_ands(release)
+        context = update_validation_step_2(release)
+        response["valid"] = release.valid_step >= 2
         response["to_confirm"] = context["to_confirm"]
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_2", kwargs={"pk": release.pk}
         )
 
         return Response(AndsValidationSerializer(response).data)
@@ -162,11 +161,11 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_exploitations(release)
-        response["exploitations"] = context["exploitations"]
-        response["unset_scopes"] = context["unset_scopes"]
+        context = update_validation_step_3(release)
+        response["valid"] = release.valid_step >= 3
+        response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_3", kwargs={"pk": release.pk}
         )
 
         return Response(ExploitationsValidationSerializer(response).data)
@@ -182,10 +181,11 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_choices(release)
+        context = update_validation_step_4(release)
+        response["valid"] = release.valid_step >= 4
         response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_4", kwargs={"pk": release.pk}
         )
 
         return Response(ChoicesValidationSerializer(response).data)
@@ -201,10 +201,11 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_policy(release)
+        context = update_validation_step_5(release)
+        response["valid"] = release.valid_step >= 5
         response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_5", kwargs={"pk": release.pk}
         )
 
         return Response(PolicyValidationSerializer(response).data)
@@ -220,10 +221,11 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_compatibility(release)
+        context = update_validation_step_6(release)
+        response["valid"] = release.valid_step >= 6
         response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_6", kwargs={"pk": release.pk}
         )
 
         return Response(CompatibilityValidationSerializer(response).data)
@@ -260,41 +262,36 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         Returns a JUnit report for the validation steps of the release.
         """
         release = self.get_object()
-        apply_curations(release)
+        step, context = update_all_steps(release)
 
         expressions_step = TestCase(
             "Licenses curation",
         )
-        valid, context = validate_expressions(release)
-        if not valid:
+        if not step >= 1:
             expressions_step.add_failure_info(
                 message=f"{len(context['invalid_expressions'])} components license information are not valid SPDX expressions"
             )
 
         ands_step = TestCase("ANDs confirmation")
-        valid, context = validate_ands(release)
-        if not valid:
+        if not step >= 2:
             ands_step.add_failure_info(
                 f"{len(context['to_confirm'])} expressions are ambiguous"
             )
 
         exploitation_step = TestCase("Scope exploitations")
-        valid, context = validate_exploitations(release)
-        if not valid:
+        if not step >= 3:
             exploitation_step.add_failure_info(
                 f"{len(context['unset_scopes'])} scopes have no exploitation defined"
             )
 
         choices_step = TestCase("License choices")
-        valid, context = validate_choices(release)
-        if not valid:
+        if not step >= 4:
             choices_step.add_failure_info(
                 f"{len(context['to_resolve'])} licenses choices to resolve"
             )
 
         policy_step = TestCase("Policy compatibility")
-        valid, context = validate_policy(release)
-        if not valid:
+        if not step >= 5:
             count = (
                 len(context["usages_lic_never_allowed"])
                 + len(context["usages_lic_context_allowed"])
@@ -302,9 +299,23 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             )
             policy_step.add_failure_info(f"{count} invalid component usages")
 
+        compatibility_step = TestCase("Compatibility compatibility")
+        if not step >= 6:
+            count = len(context["incompatible_usages"])
+            compatibility_step.add_failure_info(
+                f"{count} usages with incompatible licenses"
+            )
+
         ts = TestSuite(
             f"{release} Hermine validation steps",
-            [expressions_step, ands_step, exploitation_step, choices_step, policy_step],
+            [
+                expressions_step,
+                ands_step,
+                exploitation_step,
+                choices_step,
+                policy_step,
+                compatibility_step,
+            ],
         )
 
         return HttpResponse(
