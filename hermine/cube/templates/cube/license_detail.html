@@ -117,7 +117,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <div class="columns">
         <div class="column">
           <p><b>SPDX identifier:</b>
-            {% if object.spdx_id|slice:":11" == 'LicenseRef-' %}
+            {% if 'LicenseRef-' in object.spdx_id or 'WITH' in object.spdx_id %}
               <span> {{ object.spdx_id }} </span>
             {% else %}
               <a href="https://spdx.org/licenses/{{ object.spdx_id }}.html" target="_blank">
