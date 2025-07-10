@@ -7,7 +7,12 @@ category: "Apple Example Code License"
 shortName: "Apple-ExCL"
 
 alternativeNames:
+  - "Apple Example Code License"
   - "apple-excl"
+  - "Apple-ExCL"
+  - "Apple OpenEML License"
+  - "Apple-Open-EML License"
+  - "apple-sample-code-license"
 
 otherIds: 
   - "scancode:apple-excl"

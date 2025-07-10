@@ -1,7 +1,7 @@
 # {metæffekt}-universe
 Project providing insights on the {metæffekt} license database covering
 
-* 2652 modeled license terms,
+* 2665 modeled license terms,
 * 185 exceptions,
 * 7 modifiers
 * 2 restrictions

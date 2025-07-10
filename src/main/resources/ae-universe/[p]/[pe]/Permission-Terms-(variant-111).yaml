@@ -6,3 +6,6 @@ canonicalName: "Permission Terms (variant 111)"
 category: "Permission"
 shortName: "PT-Var111"
 
+alternativeNames:
+  - "HPND with different disclaimer"
+
