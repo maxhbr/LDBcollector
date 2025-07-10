@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Linux man-pages Copyleft - 2 paragraphs"
-category: "Linux-man-pages-copyleft-2-para"
+canonicalName: "Linux man-pages (2 paragraphs)"
+category: "Linux man-pages"
 spdxIdentifier: "Linux-man-pages-copyleft-2-para"
+
+canonicalNameHistory:
+  - "Linux man-pages Copyleft - 2 paragraphs"
 
 alternativeNames:
   - "Linux-man-pages-copyleft-2-para"

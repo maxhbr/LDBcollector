@@ -6,3 +6,10 @@ canonicalName: "XZ Utils Notice 5.0"
 category: "XZ Utils"
 shortName: "XZ-Utils-Notice-5.0"
 
+canonicalNameHistory:
+  - "XZ Utils License 5.0"
+
+alternativeNames:
+  - "XZ-Utils License 5.0"
+  - "xz utils license 5.0"
+

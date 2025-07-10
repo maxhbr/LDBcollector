@@ -2,10 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "JUnRAR License"
-category: "JUnRAR License"
-shortName: "JUnRAR"
+canonicalName: "LZMA SDK Linking Exception"
+category: "LZMA SDK Exception"
+shortName: "LZMA-SDK-Linking-Exception"
 
-canonicalNameHistory:
-  - "JUnRar License"
+type: "exception"
 

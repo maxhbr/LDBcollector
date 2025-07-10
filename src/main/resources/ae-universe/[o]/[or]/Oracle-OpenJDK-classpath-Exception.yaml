@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Oracle OpenJDK classpath Exception"
-category: "Oracle OpenJDK classpath Exception"
-shortName: "Oracle-OpenJDK-classpath-Exception"
+canonicalName: "Oracle OpenJDK Classpath Exception"
+category: "Oracle OpenJDK Classpath Exception"
+shortName: "Oracle-OpenJDK-Classpath-Exception"
+
+canonicalNameHistory:
+  - "Oracle OpenJDK classpath Exception"
 
 type: "exception"
 

@@ -6,3 +6,9 @@ canonicalName: "XZ Utils Notice"
 category: "XZ Utils"
 shortName: "XZ-Utils-Notice"
 
+canonicalNameHistory:
+  - "XZ Utils License"
+
+alternativeNames:
+  - "XZ Utils License 1.0"
+

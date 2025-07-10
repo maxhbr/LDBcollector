@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Linux man-pages Copyleft Variant"
-category: "Linux-man-pages-copyleft-var"
+canonicalName: "Linux man-pages"
+category: "Linux man-pages"
 spdxIdentifier: "Linux-man-pages-copyleft-var"
+
+canonicalNameHistory:
+  - "Linux man-pages Copyleft Variant"
 
 alternativeNames:
   - "Linux-man-pages-copyleft-var"

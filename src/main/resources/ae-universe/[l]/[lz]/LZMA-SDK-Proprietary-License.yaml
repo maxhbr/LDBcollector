@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "LZMA SDK Original"
-category: "LZMA SDK Original"
-shortName: "lzma-sdk-original"
+canonicalName: "LZMA SDK Proprietary License"
+category: "LZMA SDK License"
+shortName: "LZMA-SDK-Proprietary"
+
+canonicalNameHistory:
+  - "LZMA SDK Original"
 
 alternativeNames:
   - "LZMA SDK Original"

@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "European Space Agency Public License 2.4 (weak copyleft; Type 2)"
-category: "European Space Agency Public License Weak Copyleft"
+canonicalName: "ESA Public License 2.4 (weak copyleft; Type 2)"
+category: "ESA Public License"
 shortName: "ESA-PL-Weak-Copyleft-2.4"
+
+canonicalNameHistory:
+  - "European Space Agency Public License 2.4 (weak copyleft; Type 2)"
 
 alternativeNames:
   - "European Space Agency Public License 2.4 (Weak Copyleft; Type 2)"
