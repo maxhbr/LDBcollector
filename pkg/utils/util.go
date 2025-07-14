@@ -241,7 +241,7 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 			newLicense = *license
 
 			// Update all other fields except external_ref and rf_shortname
-			query := tx.Model(&newLicense).Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("external_ref", "rf_shortname")
+			query := tx.Model(&newLicense).Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("external_ref", "rf_shortname", "User")
 
 			// Do not update text in import if it was modified manually
 			if *oldLicense.Flag == 2 {
