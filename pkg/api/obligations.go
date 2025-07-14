@@ -157,6 +157,7 @@ func GetObligation(c *gin.Context) {
 func CreateObligation(c *gin.Context) {
 	var obligation models.Obligation
 	username := c.GetString("username")
+	ctx := context.WithValue(context.Background(), models.ContextKey("user"), username)
 
 	if err := c.ShouldBindJSON(&obligation); err != nil {
 		er := models.LicenseError{
@@ -171,7 +172,7 @@ func CreateObligation(c *gin.Context) {
 	}
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		result := tx.
+		result := tx.WithContext(ctx).
 			Where(&models.Obligation{Topic: obligation.Topic}).
 			Or(&models.Obligation{Md5: obligation.Md5}).
 			FirstOrCreate(&obligation)
