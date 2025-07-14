@@ -7,7 +7,7 @@ https://www.inchi-trust.org/wp/download/106/LICENCE.pdf
 '''
 
 usage = '''
-FIXME - allowed in inchi package
+According to section 3 of the license you can use it as GPL-2.0-or-later.
 '''
 
 text = '''
@@ -210,7 +210,3 @@ In the event that you require anything else or have any questions, please write 
 or contact us via email at: [INSERT EMAIL ADDRESS]
 © 2020 IUPAC and InChI Trust
 '''
-
-packages_with_exceptions = [
-    "inchi"
-]
