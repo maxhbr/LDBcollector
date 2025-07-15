@@ -185,6 +185,8 @@ class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
         "law_choice",
         "venue_choice",
         "patent_grant",
+        "osi_approved",
+        "fsf_approved",
         "foss",
         "non_commercial",
         "ethical_clause",
