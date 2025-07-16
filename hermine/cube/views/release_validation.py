@@ -54,11 +54,6 @@ class ReleaseValidationStepBaseView(
 ):
     permission_required = "cube.view_release"
     model = Release
-    queryset = Release.objects.prefetch_related(
-        "usage_set",
-        "usage_set__version",
-        "usage_set__version__component",
-    )
 
 
 class ReleaseValidationStep1View(ReleaseValidationStepBaseView):
