@@ -36,7 +36,7 @@ def has_ors(spdx_expression: str):
         return False
 
     if isinstance(parsed, BaseSymbol):
-        return "or-later" in str(parsed)
+        return "or-later" in str(parsed) and "3.0" not in str(parsed)
 
     if "OR" in parsed.operator:
         return True
