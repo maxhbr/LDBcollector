@@ -306,6 +306,9 @@ if ENABLE_PROFILING:
     SILKY_AUTHENTICATION = True
     SILKY_AUTHORISATION = True
 
+    def SILKY_INTERCEPT_FUNC(request):
+        return not request.path.startswith("/static/")
+
     def SILKY_PERMISSIONS(user):
         return user.is_superuser
 

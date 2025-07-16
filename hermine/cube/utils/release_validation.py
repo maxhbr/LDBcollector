@@ -41,7 +41,8 @@ def _apply_curations(release):
     Apply curations to the release's usages, should be called before validating step 1 and 2.
     """
     usages = (
-        release.usage_set.filter(version__corrected_license="").annotate(
+        release.usage_set.filter(version__corrected_license="")
+        .annotate(
             imported_license=Case(
                 When(
                     version__spdx_valid_license_expr="",
@@ -61,6 +62,7 @@ def _apply_curations(release):
                 ).values("expression_out")[:1]
             )  # includes curations with semantic versioning
         )
+        .select_related("version")
     )
 
     for usage in usages:
@@ -88,9 +90,9 @@ def _propagate_choices(release: Release):
     """
 
     usages = (
-        release.usage_set.filter(license_expression="")
-        .select_related("version", "version__component", "release", "release__product")
-        .prefetch_related("licenses_chosen")
+        release.usage_set.filter(license_expression="").select_related(
+            "version", "version__component"
+        )
         # includes choices with semantic versioning which may not match
         # but still a big performance boost to skip usage with no derogation later
         .annotate(
@@ -113,7 +115,9 @@ def _propagate_choices(release: Release):
         if usage.version.license_is_ambiguous:
             continue
 
-        if not has_ors(usage.version.effective_license):
+        if usage.version.effective_license and not has_ors(
+            usage.version.effective_license
+        ):
             try:
                 usage.license_expression = usage.version.effective_license
                 usage.save()
@@ -165,8 +169,8 @@ def _check_licenses_against_policy(release: Release):
 
     usages = (
         release.usage_set.exclude(licenses_chosen=None)
-        .select_related("version", "version__component", "release", "release__product")
-        .prefetch_related("licenses_chosen")
+        .select_related("version", "version__component")
+        .prefetch_related("licenses_chosen", "licenses_chosen__policy")
         # includes derogations with semantic versioning which may not match
         # but still a big performance boost to skip usage with no derogation later
         .annotate(
@@ -233,7 +237,7 @@ def _validate_expressions(release):
     context = dict()
     invalid_expressions = release.usage_set.filter(
         version__spdx_valid_license_expr="", version__corrected_license=""
-    )
+    ).select_related("version", "version__component")
     context["invalid_expressions"] = invalid_expressions
 
     context["fixed_expressions"] = release.usage_set.filter(
@@ -257,7 +261,7 @@ def _validate_ands(release: Release):
         usage
         for usage in release.usage_set.exclude(
             version__spdx_valid_license_expr=""
-        ).select_related("version")
+        ).select_related("version", "version__component")
         if is_ambiguous(usage.version.spdx_valid_license_expr)
     ]
 
