@@ -169,8 +169,8 @@ def _check_licenses_against_policy(release: Release):
 
     usages = (
         release.usage_set.exclude(licenses_chosen=None)
-        .select_related("version", "version__component", "release", "release__product")
-        .prefetch_related("licenses_chosen")
+        .select_related("version", "version__component")
+        .prefetch_related("licenses_chosen", "licenses_chosen__policy")
         # includes derogations with semantic versioning which may not match
         # but still a big performance boost to skip usage with no derogation later
         .annotate(
