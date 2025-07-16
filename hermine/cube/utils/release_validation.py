@@ -115,7 +115,9 @@ def _propagate_choices(release: Release):
         if usage.version.license_is_ambiguous:
             continue
 
-        if not has_ors(usage.version.effective_license):
+        if usage.version.effective_license and not has_ors(
+            usage.version.effective_license
+        ):
             try:
                 usage.license_expression = usage.version.effective_license
                 usage.save()
