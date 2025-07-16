@@ -177,6 +177,18 @@ if getattr(config, "AZUREAD_CLIENT", None) is not None:
     SOCIAL_AUTH_AZUREAD_HOST = AZUREAD_CLIENT["host"]
     AUTHENTICATION_BACKENDS.append("cube.azuread_auth.Entra")
 
+# keycloak
+if getattr(config, "KEYCLOAK_CLIENT", None) is not None:
+    KEYCLOAK_CLIENT = config.KEYCLOAK_CLIENT
+    SOCIAL_AUTH_KEYCLOAK_BASE_URL = KEYCLOAK_CLIENT["domain"]
+    SOCIAL_AUTH_KEYCLOAK_KEY = KEYCLOAK_CLIENT["client_id"]
+    SOCIAL_AUTH_KEYCLOAK_SECRET = KEYCLOAK_CLIENT["client_secret"]
+    SOCIAL_AUTH_KEYCLOAK_PUBLIC_KEY = KEYCLOAK_CLIENT["id_key"]
+    SOCIAL_AUTH_KEYCLOAK_AUTHORIZATION_URL = KEYCLOAK_CLIENT["authorize_url"]
+    SOCIAL_AUTH_KEYCLOAK_ACCESS_TOKEN_URL = KEYCLOAK_CLIENT["access_token_url"]
+    SOCIAL_AUTH_KEYCLOAK_ID_KEY = "email"
+    AUTHENTICATION_BACKENDS.append("cube.keycloak_auth.KeycloakBackend")
+
 
 # SMTP
 
