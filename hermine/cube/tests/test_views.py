@@ -30,7 +30,7 @@ class UnauthenticatedTestCase(TestCase):
             reverse(f"cube:release_validation_step_{step}", kwargs={"pk": 1})
             for step in range(1, 7)
         ],
-        reverse("cube:release_summary", kwargs={"release_pk": 1}),
+        reverse("cube:release_summary", kwargs={"pk": 1}),
         reverse("cube:release_bom", kwargs={"release_pk": 1}),
         reverse("cube:release_bom_export", kwargs={"pk": 1}),
         reverse("cube:license_list"),
@@ -107,7 +107,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_release_summary_with_multiple_exploitation_choice(self):
-        url = reverse("cube:release_summary", kwargs={"release_pk": 1})
+        url = reverse("cube:release_summary", kwargs={"pk": 1})
         Exploitation.objects.create(release_id=1, scope="back")
         Exploitation.objects.create(release_id=1, scope="front")
         res = self.client.get(url)

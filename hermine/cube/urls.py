@@ -289,7 +289,7 @@ urlpatterns = [
         name="release_update",
     ),
     path(
-        "releases/<int:release_pk>/",
+        "releases/<int:pk>/",
         views.ReleaseSummaryView.as_view(),
         name="release_summary",
     ),
