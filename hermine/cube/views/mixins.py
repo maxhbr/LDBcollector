@@ -130,7 +130,7 @@ class ReleaseExploitationFormMixin:
 
         # List existing scopes
         scopes = list(
-            self.release.usage_set.values("project", "scope")
+            self.object.usage_set.values("project", "scope")
             .annotate(count=Count("*"))
             .values("project", "scope", "count")
             .order_by("project", "scope")
@@ -138,12 +138,12 @@ class ReleaseExploitationFormMixin:
 
         # Attach existing exploitations to scopes
         for scope in scopes:
-            scope["exploitation"] = self.release.exploitations.filter(
+            scope["exploitation"] = self.object.exploitations.filter(
                 project=scope["project"], scope=scope["scope"]
             ).first()
 
         # Add exploitations with no usages
-        for exploitation in self.release.exploitations.filter(
+        for exploitation in self.object.exploitations.filter(
             *[(~Q(project=scope["project"], scope=scope["scope"])) for scope in scopes]
         ):
             scopes.append(
@@ -156,11 +156,11 @@ class ReleaseExploitationFormMixin:
             )
 
         # Usages with ad-hoc exploitation
-        exploitation_rules_subquery = self.release.exploitations.filter(
+        exploitation_rules_subquery = self.object.exploitations.filter(
             project=OuterRef("project"), scope=OuterRef("scope")
         ).values("exploitation")[:1]
         adhoc_exploitations = (
-            self.release.usage_set.annotate(
+            self.object.usage_set.annotate(
                 registered_exploitation=Coalesce(
                     Subquery(exploitation_rules_subquery), Value("")
                 )

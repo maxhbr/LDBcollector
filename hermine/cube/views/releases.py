@@ -51,16 +51,19 @@ class ReleaseSummaryView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
     ReleaseExploitationFormMixin,
-    ReleaseContextMixin,
-    TemplateView,
+    DetailView,
 ):
-    def get(self, *args, **kwargs):
+    model = Release
+    context_object_name = "release"
+
+    def render_to_response(self, context, **response_kwargs):
         from cube.models.meta import ReleaseConsultation
 
         ReleaseConsultation.objects.update_or_create(
-            user=self.request.user, release=self.release
+            user=self.request.user, release=self.object
         )
-        return super().get(*args, **kwargs)
+
+        return super().render_to_response(context, **response_kwargs)
 
     template_name = "cube/release_summary.html"
     permission_required = "cube.view_release"
