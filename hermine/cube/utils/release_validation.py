@@ -327,9 +327,14 @@ def _validate_choices(release):
     Does not mutate anything. Run `propagate_choices` before calling this method.
     """
     context = dict()
-    context["to_resolve"] = release.usage_set.filter(
-        license_expression=""
-    ).select_related("version", "version__component", "release", "release__product")
+    context["to_resolve"] = [
+        u
+        for u in release.usage_set.filter(
+            Q(license_expression="")
+            & ~Q(version__spdx_valid_license_expr="", version__corrected_license="")
+        ).select_related("version", "version__component", "release", "release__product")
+        if not u.version.license_is_ambiguous
+    ]
 
     return len(context["to_resolve"]) == 0, context
 
