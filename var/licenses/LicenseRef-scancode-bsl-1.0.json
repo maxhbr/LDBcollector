@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Business Source License 1.0",
+  "scancode_key": "bsl-1.0",
+  "spdxid": "LicenseRef-scancode-bsl-1.0",
+  "aliases": [
+  ]
+}
