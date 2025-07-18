@@ -69,8 +69,12 @@ def _apply_curations(release):
         if usage.curation is not None:
             # Check there are no conflicting curations (subquery returns only first row)
             try:
-                curation = LicenseCuration.objects.for_version(usage.version).get()
-                usage.version.corrected_license = curation.expression_out
+                usage.version.corrected_license = (
+                    LicenseCuration.objects.for_version(usage.version)
+                    .values_list("expression_out", flat=True)
+                    .distinct()
+                    .get()
+                )
                 usage.version.save()
             except (
                 LicenseCuration.DoesNotExist,
@@ -136,6 +140,7 @@ def _propagate_choices(release: Release):
                 expression_out = (
                     LicenseChoice.objects.for_usage(usage)
                     .values_list("expression_out", flat=True)
+                    .distinct()
                     .get()
                 )
             except (LicenseChoice.DoesNotExist, LicenseChoice.MultipleObjectsReturned):
