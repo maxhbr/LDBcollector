@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BSD 1-Clause License (build system)"
-category: "BSD Build System"
+category: "BSD"
 shortName: "BSD-1-Clause-Build"
 
 canonicalNameHistory:

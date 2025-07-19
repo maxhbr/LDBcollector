@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Windows Binary Build Conditions"
-category: "Binary-Build"
+category: "Windows Binary Build"
 shortName: "Windows-Binary-Conditions"
 
 alternativeNames:

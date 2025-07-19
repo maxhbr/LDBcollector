@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Linking Exception (GPL; variant 015)"
-category: "GPl Linking Exception"
+category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-015"
 spdxIdentifier: "mif-exception"
 

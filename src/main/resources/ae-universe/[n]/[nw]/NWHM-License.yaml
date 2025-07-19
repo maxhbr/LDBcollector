@@ -2,12 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Non White Heterosexual Male"
-category: "Non White Heterosexual Male"
+canonicalName: "NWHM License"
+category: "NWHM"
 shortName: "NWHM"
 
 alternativeNames:
   - "Non White Heterosexual Male"
+  - "Non-White-Heterosexual-Male License"
+  - "NWHM-License"
 
 otherIds: 
   - "scancode:nwhm"

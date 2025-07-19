@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "NVIDIA 2002 Proprietary License"
-category: "NVIDIA"
+category: "NVIDIA Proprietary"
 spdxIdentifier: "AML-glslang"
 
 canonicalNameHistory:

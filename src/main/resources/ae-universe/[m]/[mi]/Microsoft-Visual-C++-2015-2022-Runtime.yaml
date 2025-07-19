@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft Visual C++ 2015-2022 Runtime"
-category: "Microsoft Visual C++ 2015-2022 Runtime"
+category: "Microsoft Visual C++"
 shortName: "ms-visual-cpp-2015-runtime"
 
 alternativeNames:

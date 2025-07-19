@@ -82,6 +82,7 @@ alternativeNames:
   - "Apache Software License v2"
   - "www.apache.org/licenses/LICENSE-2.0"
   - "This is released under the Apache license. The API's upstream prototype implementation also formed the basis of V8's implementation in src/wasm/c-api.cc."
+  - "https://github.com/grafana/azure-monitor-datasource/blob/master/LICENSE"
 
 otherIds: 
   - "scancode:apache-2.0"

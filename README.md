@@ -1,14 +1,14 @@
 # {metæffekt}-universe
 Project providing insights on the {metæffekt} license database covering
 
-* 2665 modeled license terms,
-* 185 exceptions,
+* 2710 modeled license terms,
+* 186 exceptions,
 * 7 modifiers
 * 2 restrictions
-* 271 specific and commonly used license expressions, and
+* 273 specific and commonly used license expressions, and
 * 60 consolidated markers.
 
-as of 10th July 2025.
+as of 19th July 2025.
 
 The following links provide letter-specific overviews on the license information:
 
@@ -80,6 +80,13 @@ The internal representation (and therefore the content shown here) is based on S
 
 All company names, organization names, license names, and product names mentioned in this documentation
 are used for identification purposes only.
+
+Please note that this database of license terms yields to be a complete reference of public terms and conditions.
+Yet this also means that licenses are part of the universe that may be insulting, sexist, racist, discriminating or 
+simply unethical. {metaæffekt} does neither promote these licenses nor adopt the language or statements. 
+In order to reduce the visibility of such terms we apply - in contrary to our usual policy - abbreviations in case
+the license name is problematic. 
+terms.
 
 ## Licensing
 

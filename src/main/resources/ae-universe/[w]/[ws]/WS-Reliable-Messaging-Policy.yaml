@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "WS Reliable Messaging Policy"
-category: "WS"
+category: "WS Reliable Messaging Policy"
 shortName: "WS-Reliable-Messaging-Policy"
 
 alternativeNames:

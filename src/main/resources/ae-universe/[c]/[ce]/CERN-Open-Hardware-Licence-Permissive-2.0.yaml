@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "CERN Open Hardware Licence Permissive 2.0"
-category: "CERN Open Hardware Licence Permissive"
+category: "CERN OHL Permissive"
 spdxIdentifier: "CERN-OHL-P-2.0"
 
 osiStatus: "approved"

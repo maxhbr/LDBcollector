@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "CERN Open Hardware Licence Strongly Reciprocal 2.0"
-category: "CERN Open Hardware Licence Strongly Reciprocal"
+category: "CERN OHL Strongly Reciprocal"
 spdxIdentifier: "CERN-OHL-S-2.0"
 
 osiStatus: "approved"

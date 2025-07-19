@@ -17,7 +17,6 @@ alternativeNames:
   - "GNU General Public License (GPL) version 2, or any later version"
   - "GNU General Public License Version 2 or later"
   - "GNU General Public License v2 or later"
-  - "GNU General Public License v2.0 or later"
   - "GNU General Public License version 2+"
   - "GNU General Public License, Version 2.0 or any later version"
   - "GNU General Public License; either version 2 of the License, or (at your option) any later version"
@@ -32,6 +31,7 @@ alternativeNames:
   - "GPLv2 +"
   - "gplv2+"
   - "GNU General Public License v2+"
+  - "GNU General Public License, v2.0 or later"
   - "GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version"
   - "GNU General Public License as published by the Free Software Foundation; either version 2 of of the License, or (at your option) any later version"
   - "GNU General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version"
@@ -56,6 +56,7 @@ alternativeNames:
   - "GPL v2 or later"
   - "GNU General Public License (GPL), version 2, or at your option any later version"
   - "under the terms of the GNU General Public License (GPL) as published by the Free Software Foundation either version 2 of that License or (at your option) any later version"
+  - "GNU General Public Licence as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version"
 
 otherIds: 
   - "scancode:gpl-2.0-plus"
