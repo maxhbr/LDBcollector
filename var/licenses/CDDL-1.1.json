@@ -16,6 +16,7 @@
         "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
         "https://oss.oracle.com/licenses/CDDL+GPL-1.1",
         "scancode:cddl-1.1",
-        "cddl-1.1"
+      "cddl-1.1",
+      "CDDL v1.1"
     ]
 }
