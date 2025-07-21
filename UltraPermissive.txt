@@ -25,6 +25,15 @@ text = '''
 text here
 '''
 
+package = tolua++
+location = tolua++-1.0.93.tar.bz2 
+text = '''
+This code is free software; you can redistribute it and/or modify it.
+The software provided hereunder is on an "as is" basis, and
+the author has no obligation to provide maintenance, support, updates,
+enhancements, or modifications.
+'''
+
 package = autossh
 # autossh.c
 location = https://www.harding.motd.ca/autossh/autossh-1.4g.tgz
