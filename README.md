@@ -85,8 +85,7 @@ Please note that this database of license terms yields to be a complete referenc
 Yet this also means that licenses are part of the universe that may be insulting, sexist, racist, discriminating or 
 simply unethical. {metaæffekt} does neither promote these licenses nor adopt the language or statements. 
 In order to reduce the visibility of such terms we apply - in contrary to our usual policy - abbreviations in case
-the license name is problematic. 
-terms.
+the license name is problematic.
 
 ## Licensing
 
