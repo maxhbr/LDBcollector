@@ -2306,10 +2306,11 @@ const docTemplate = `{
                 "type": {
                     "type": "string",
                     "enum": [
-                        "obligation",
-                        "license"
+                        "OBLIGATION",
+                        "LICENSE",
+                        "USER"
                     ],
-                    "example": "license"
+                    "example": "LICENSE"
                 },
                 "type_id": {
                     "type": "integer",

@@ -2,6 +2,7 @@
 // SPDX-FileCopyrightText: 2023 Siemens AG
 // SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
 // SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com>
+// SPDX-FileContributor: 2025 Chayan Das <01chayandas@gmail.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only
 
@@ -358,7 +359,7 @@ type Audit struct {
 	UserId     int64       `json:"user_id" gorm:"column:user_id" example:"123"`
 	User       User        `gorm:"foreignKey:UserId;references:Id" json:"user"`
 	Timestamp  time.Time   `json:"timestamp" gorm:"column:timestamp" example:"2023-12-01T18:10:25.00+05:30"`
-	Type       string      `json:"type" gorm:"column:type" enums:"obligation,license" example:"license"`
+	Type       string      `json:"type" gorm:"column:type" enums:"OBLIGATION,LICENSE,USER" example:"LICENSE"`
 	TypeId     int64       `json:"type_id" gorm:"column:type_id" example:"34"`
 	Entity     interface{} `json:"entity" gorm:"-" swaggertype:"object"`
 	ChangeLogs []ChangeLog `json:"-"`

@@ -78,69 +78,88 @@ func CreateUser(c *gin.Context) {
 		return
 	}
 
-	user := models.User(input)
-	*user.UserName = html.EscapeString(strings.TrimSpace(*user.UserName))
-	*user.DisplayName = html.EscapeString(strings.TrimSpace(*user.DisplayName))
-	err := utils.HashPassword(&user)
-	if err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "password hashing failed",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 
-	result := db.DB.Where(models.User{UserName: user.UserName}).FirstOrCreate(&user)
-	if result.Error != nil {
-		if errors.Is(result.Error, gorm.ErrDuplicatedKey) {
+		username := c.GetString("username")
+		user := models.User(input)
+		*user.UserName = html.EscapeString(strings.TrimSpace(*user.UserName))
+		*user.DisplayName = html.EscapeString(strings.TrimSpace(*user.DisplayName))
+		err := utils.HashPassword(&user)
+		if err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "password hashing failed",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return nil
+		}
+
+		result := tx.Where(models.User{UserName: user.UserName}).FirstOrCreate(&user)
+		if result.Error != nil {
+			if errors.Is(result.Error, gorm.ErrDuplicatedKey) {
+				er := models.LicenseError{
+					Status:    http.StatusConflict,
+					Message:   "Failed to create the new user",
+					Error:     "User with this email id already exists",
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				}
+				c.JSON(http.StatusConflict, er)
+			} else {
+				er := models.LicenseError{
+					Status:    http.StatusInternalServerError,
+					Message:   "Failed to create the new user",
+					Error:     result.Error.Error(),
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				}
+				c.JSON(http.StatusInternalServerError, er)
+			}
+			return nil
+		} else if result.RowsAffected == 0 {
+			errMessage := fmt.Sprintf("Error: User with username '%s' already exists", *user.UserName)
+			if !*user.Active {
+				errMessage = fmt.Sprintf("Error: User with username '%s' already exists, but is deactivated", *user.UserName)
+			}
 			er := models.LicenseError{
 				Status:    http.StatusConflict,
-				Message:   "Failed to create the new user",
-				Error:     "User with this email id already exists",
+				Message:   "can not create user",
+				Error:     errMessage,
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 			c.JSON(http.StatusConflict, er)
-		} else {
+			return nil
+		}
+
+		if err := utils.AddChangelogsForUser(tx, username, &user, &models.User{}); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
-				Message:   "Failed to create the new user",
-				Error:     result.Error.Error(),
+				Message:   "Failed to update changelogs",
+				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 			c.JSON(http.StatusInternalServerError, er)
+			return err
 		}
-		return
-	} else if result.RowsAffected == 0 {
-		errMessage := fmt.Sprintf("Error: User with username '%s' already exists", *user.UserName)
-		if !*user.Active {
-			errMessage = fmt.Sprintf("Error: User with username '%s' already exists, but is deactivated", *user.UserName)
-		}
-		er := models.LicenseError{
-			Status:    http.StatusConflict,
-			Message:   "can not create user",
-			Error:     errMessage,
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusConflict, er)
-		return
-	}
 
-	res := models.UserResponse{
-		Data:   []models.User{user},
-		Status: http.StatusCreated,
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
-	}
+		res := models.UserResponse{
+			Data:   []models.User{user},
+			Status: http.StatusCreated,
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
 
-	c.JSON(http.StatusCreated, res)
+		c.JSON(http.StatusCreated, res)
+
+		return nil
+	})
+
 }
 
 // CreateOidcUser creates a new user via oidc id token
@@ -387,90 +406,119 @@ func CreateOidcUser(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/users/{username} [patch]
 func UpdateUser(c *gin.Context) {
-	var user models.User
-	username := c.Param("username")
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
+		var olduser models.User
+		var updates models.UserUpdate
+		username := c.Param("username")
 
-	if err := db.DB.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   "no user with such username exists",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		if err := tx.Where(models.User{UserName: &username}).First(&olduser).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "no user with such username exists",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return nil
 		}
-		c.JSON(http.StatusNotFound, er)
-		return
-	}
 
-	var input models.UserUpdate
-	if err := c.ShouldBindJSON(&input); err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "invalid json body",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
-
-	validate := validator.New(validator.WithRequiredStructEnabled())
-	if err := validate.Struct(&input); err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "can not update user with these field values",
-			Error:     fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
-
-	updatedUser := models.User(input)
-	if updatedUser.UserName != nil {
-		*updatedUser.UserName = html.EscapeString(strings.TrimSpace(*updatedUser.UserName))
-	}
-	if updatedUser.DisplayName != nil {
-		*updatedUser.DisplayName = html.EscapeString(strings.TrimSpace(*updatedUser.DisplayName))
-	}
-	if updatedUser.UserPassword != nil {
-		err := utils.HashPassword(&updatedUser)
-		if err != nil {
+		// var input models.UserUpdate
+		if err := c.ShouldBindJSON(&updates); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
-				Message:   "password hashing failed",
+				Message:   "invalid json body",
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 			c.JSON(http.StatusBadRequest, er)
-			return
+			return nil
 		}
-	}
 
-	updatedUser.Id = user.Id
-	if err := db.DB.Clauses(clause.Returning{}).Updates(&updatedUser).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Failed to update user",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		validate := validator.New(validator.WithRequiredStructEnabled())
+		if err := validate.Struct(&updates); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "can not update user with these field values",
+				Error:     fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return nil
 		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
 
-	res := models.UserResponse{
-		Data:   []models.User{updatedUser},
-		Status: http.StatusOK,
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
-	}
-	c.JSON(http.StatusOK, res)
+		updatedUser := models.User(updates)
+		if updatedUser.UserName != nil {
+			*updatedUser.UserName = html.EscapeString(strings.TrimSpace(*updatedUser.UserName))
+		}
+		if updatedUser.DisplayName != nil {
+			*updatedUser.DisplayName = html.EscapeString(strings.TrimSpace(*updatedUser.DisplayName))
+		}
+		if updatedUser.UserPassword != nil {
+			err := utils.HashPassword(&updatedUser)
+			if err != nil {
+				er := models.LicenseError{
+					Status:    http.StatusBadRequest,
+					Message:   "password hashing failed",
+					Error:     err.Error(),
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				}
+				c.JSON(http.StatusBadRequest, er)
+				return nil
+			}
+		}
+		updatedUser.Id = olduser.Id
+		// update the user in the database
+		if err := tx.Updates(&updatedUser).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update user",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return nil
+		}
+		// fetch the updated user to return
+		if err := tx.First(&updatedUser, updatedUser.Id).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to fetch updated user",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return nil
+		}
+		if err := utils.AddChangelogsForUser(tx, *updatedUser.UserName, &updatedUser, &olduser); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update user",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
+		}
+
+		res := models.UserResponse{
+			Data:   []models.User{updatedUser},
+			Status: http.StatusCreated,
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+
+		c.JSON(http.StatusCreated, res)
+
+		return nil
+	})
 }
 
 // UpdateProfile updates one's user profile
@@ -487,87 +535,105 @@ func UpdateUser(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/users [patch]
 func UpdateProfile(c *gin.Context) {
-	var user models.User
-	username := c.GetString("username")
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
+		var olduser models.User
+		var changes models.ProfileUpdate
 
-	if err := db.DB.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   "no user with such username exists",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		username := c.GetString("username")
+
+		if err := tx.Where(models.User{UserName: &username}).First(&olduser).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "no user with such username exists",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return nil
 		}
-		c.JSON(http.StatusNotFound, er)
-		return
-	}
 
-	var input models.ProfileUpdate
-	if err := c.ShouldBindJSON(&input); err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "invalid json body",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
-
-	validate := validator.New(validator.WithRequiredStructEnabled())
-	if err := validate.Struct(&input); err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "can not update profile with these field values",
-			Error:     fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
-
-	updatedUser := models.User(input)
-	if updatedUser.DisplayName != nil {
-		*updatedUser.DisplayName = html.EscapeString(strings.TrimSpace(*updatedUser.DisplayName))
-	}
-	if updatedUser.UserPassword != nil {
-		err := utils.HashPassword(&updatedUser)
-		if err != nil {
+		if err := c.ShouldBindJSON(&changes); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
-				Message:   "password hashing failed",
+				Message:   "invalid json body",
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 			c.JSON(http.StatusBadRequest, er)
-			return
+			return nil
 		}
-	}
 
-	updatedUser.Id = user.Id
-	if err := db.DB.Clauses(clause.Returning{}).Updates(&updatedUser).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Failed to update user",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		validate := validator.New(validator.WithRequiredStructEnabled())
+		if err := validate.Struct(&changes); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "can not update profile with these field values",
+				Error:     fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return nil
 		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
 
-	res := models.UserResponse{
-		Data:   []models.User{updatedUser},
-		Status: http.StatusOK,
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
-	}
-	c.JSON(http.StatusOK, res)
+		updatedUser := models.User(changes)
+		if updatedUser.DisplayName != nil {
+			*updatedUser.DisplayName = html.EscapeString(strings.TrimSpace(*updatedUser.DisplayName))
+		}
+		if updatedUser.UserPassword != nil {
+			err := utils.HashPassword(&updatedUser)
+			if err != nil {
+				er := models.LicenseError{
+					Status:    http.StatusBadRequest,
+					Message:   "password hashing failed",
+					Error:     err.Error(),
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				}
+				c.JSON(http.StatusBadRequest, er)
+				return nil
+			}
+		}
+
+		updatedUser.Id = olduser.Id
+		if err := tx.Clauses(clause.Returning{}).Updates(&updatedUser).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update user",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return nil
+		}
+		if err := utils.AddChangelogsForUser(tx, username, &updatedUser, &olduser); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update profile",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
+		}
+
+		res := models.UserResponse{
+			Data:   []models.User{updatedUser},
+			Status: http.StatusCreated,
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+
+		c.JSON(http.StatusCreated, res)
+
+		return nil
+	})
+
 }
 
 // DeleteUser marks an existing user record as inactive
@@ -584,33 +650,51 @@ func UpdateProfile(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/users/{username} [delete]
 func DeleteUser(c *gin.Context) {
-	var user models.User
-	username := c.Param("username")
-	active := true
-	if err := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   "no user with such username exists",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
+		var olduser models.User
+		username := c.Param("username")
+		active := true
+		if err := tx.Where(models.User{UserName: &username, Active: &active}).First(&olduser).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "no user with such username exists",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return nil
 		}
-		c.JSON(http.StatusNotFound, er)
-		return
-	}
-	*user.Active = false
-	if err := db.DB.Updates(&user).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "failed to delete user",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		updatedUser := olduser
+		updateActive := false
+		updatedUser.Active = &updateActive
+
+		if err := tx.Updates(&updatedUser).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "failed to delete user",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return nil
 		}
-		c.JSON(http.StatusNotFound, er)
-		return
-	}
-	c.Status(http.StatusNoContent)
+		if err := utils.AddChangelogsForUser(tx, username, &updatedUser, &olduser); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update profile",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
+		}
+
+		c.Status(http.StatusNoContent)
+		return nil
+	})
 }
 
 // GetAllUser retrieves a list of all users from the database.

@@ -29,9 +29,10 @@ definitions:
         type: string
       type:
         enum:
-        - obligation
-        - license
-        example: license
+        - OBLIGATION
+        - LICENSE
+        - USER
+        example: LICENSE
         type: string
       type_id:
         example: 34
