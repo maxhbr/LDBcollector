@@ -2,13 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Don't Be a Dick Public License 1.1"
-category: "Don't Be a Dick Public License"
-shortName: "DBaD-1.1"
+canonicalName: "DBAD Public License 1.0"
+category: "DBAD"
+shortName: "DBaD-1.0"
 
-alternativeNames:
-  - "dbad-1.1"
+canonicalNameHistory:
+  - "Don't Be a Dick Public License 1.0"
 
 otherIds: 
-  - "scancode:dbad-1.1"
   - "scancode:dbad"

@@ -2,15 +2,16 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "ABRMS License"
-category: "ABRMS"
-shortName: "ABRMS"
+canonicalName: "DBAD Public License 1.1"
+category: "DBAD"
+shortName: "DBaD-1.1"
 
 canonicalNameHistory:
-  - "Anyone But Richard Stallman License"
+  - "Don't Be a Dick Public License 1.1"
 
 alternativeNames:
-  - "The 'Anyone But Richard M Stallman' license"
+  - "dbad-1.1"
 
 otherIds: 
-  - "scancode:abrms"
+  - "scancode:dbad-1.1"
+  - "scancode:dbad"

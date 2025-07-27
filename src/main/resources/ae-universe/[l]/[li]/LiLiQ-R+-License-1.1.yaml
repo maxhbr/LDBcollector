@@ -2,15 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Licence Libre du Québec – Réciprocité forte version 1.1"
-category: "LiLiQ Rplus"
+canonicalName: "LiLiQ R+ License 1.1"
+category: "LiLiQ R+"
 spdxIdentifier: "LiLiQ-Rplus-1.1"
 
 canonicalNameHistory:
   - "LiLiQ Rplus License 1.1"
-
-osiStatus: "approved"
-osiCategory: "international"
+  - "Licence Libre du Québec – Réciprocité forte version 1.1"
 
 alternativeNames:
   - "LiLiQ Rplus, Version 1.1"

@@ -10,3 +10,17 @@ osiStatus: "pending"
 
 unspecific: true
 
+alternativeNames:
+  - "CreativeCommons BY"
+  - "CreativeCommons-BY"
+  - "CC-BY"
+  - "CC BY"
+  - "CreativeCommons Attribution"
+  - "CC Attribution"
+  - "creativecommons by"
+  - "creativecommons-by"
+  - "cc-by"
+  - "cc by"
+  - "creativecommons attribution"
+  - "cc attribution"
+
