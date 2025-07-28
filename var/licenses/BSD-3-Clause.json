@@ -113,6 +113,11 @@
       "modified bsd license",
       "3-clause bsd license",
       "bsd-3",
-      "BDS 3C"
+      "BDS 3C",
+      "EDL-1.0",
+      "Eclipse Distribution License 1.0 (BSD-3-Clause)",
+      "Eclipse Distribution License 1.0",
+      "edl-1",
+      "new bsd"
     ]
 }
