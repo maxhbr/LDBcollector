@@ -9,6 +9,9 @@ shortName: "PD-libselinux"
 canonicalNameHistory:
   - "libselinux License"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "libselinux-1.0"
+
 alternativeNames:
   - "libselinux License"
 

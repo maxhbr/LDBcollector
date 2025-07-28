@@ -5,10 +5,13 @@
 canonicalName: "Public Domain (libselinux; variant 001)"
 category: "Public Domain libselinux"
 shortName: "PD-libselinux-001"
+spdxIdentifier: "libselinux-1.0"
 
 canonicalNameHistory:
   - "libselinux public domain notice"
   - "Public Domain Notice (libselinux)"
+
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "libselinux public domain notice"
