@@ -1,0 +1,133 @@
+{
+    "spdx_id": "OPUBL-1.0",
+    "long_name": "Open Publication License v1.0",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://spdx.org/licenses/OPUBL-1.0.html",
+    "osi_approved": null,
+    "fsf_approved": null,
+    "foss": "No",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": null,
+    "liability": "Absent",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "This license is NOT FOSS if option A or option B is selected.",
+    "verbatim": "Open Publication License\r\n\r\nv1.0, 8 June 1999\r\n\r\n    I.REQUIREMENTS ON BOTH UNMODIFIED AND MODIFIED VERSIONS\r\n\r\n    The Open Publication works may be reproduced and distributed in whole or in part, in any medium physical or electronic, provided that the terms of this license are adhered to, and that this license or an incorporation of it by reference (with any options elected by the author(s) and/or publisher) is displayed in the reproduction.\r\n\r\n    Proper form for an incorporation by reference is as follows:\r\n\r\n    Copyright (c) <year> by <author's name or designee>. This material may be distributed only subject to the terms and conditions set forth in the Open Publication License, vX.Y or later (the latest version is presently available at http://www.opencontent.org/openpub/).\r\n\r\n    The reference must be immediately followed with any options elected by the author(s) and/or publisher of the document (see section VI).\r\n\r\n    Commercial redistribution of Open Publication-licensed material is permitted.\r\n\r\n    Any publication in standard (paper) book form shall require the citation of the original publisher and author. The publisher and author's names shall appear on all outer surfaces of the book. On all outer surfaces of the book the original publisher's name shall be as large as the title of the work and cited as possessive with respect to the title.\r\n    II.COPYRIGHT\r\n\r\n    The copyright to each Open Publication is owned by its author(s) or designee.\r\n    III.SCOPE OF LICENSE\r\n\r\n    The following license terms apply to all Open Publication works, unless otherwise explicitly stated in the document.\r\n\r\n    Mere aggregation of Open Publication works or a portion of an Open Publication work with other works or programs on the same media shall not cause this license to apply to those other works. The aggregate work shall contain a notice specifying the inclusion of the Open Publication material and appropriate copyright notice.\r\n\r\n    SEVERABILITY. If any part of this license is found to be unenforceable in any jurisdiction, the remaining portions of the license remain in force.\r\n\r\n    NO WARRANTY. Open Publication works are licensed and provided \"as is\" without warranty of any kind, express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose or a warranty of non-infringement.\r\n    IV.REQUIREMENTS ON MODIFIED WORKS\r\n\r\n    All modified versions of documents covered by this license, including translations, anthologies, compilations and partial documents, must meet the following requirements:\r\n        1.The modified version must be labeled as such.\r\n        2.The person making the modifications must be identified and the modifications dated.\r\n        3.Acknowledgement of the original author and publisher if applicable must be retained according to normal academic citation practices.\r\n        4.The location of the original unmodified document must be identified.\r\n        5.The original author's (or authors') name(s) may not be used to assert or imply endorsement of the resulting document without the original author's (or authors') permission.\r\n\r\n    V.GOOD-PRACTICE RECOMMENDATIONS\r\n\r\n    In addition to the requirements of this license, it is requested from and strongly recommended of redistributors that:\r\n        1.If you are distributing Open Publication works on hardcopy or CD-ROM, you provide email notification to the authors of your intent to redistribute at least thirty days before your manuscript or media freeze, to give the authors time to provide updated documents. This notification should describe modifications, if any, made to the document.\r\n        2.All substantive modifications (including deletions) be either clearly marked up in the document or else described in an attachment to the document.\r\n        3.Finally, while it is not mandatory under this license, it is considered good form to offer a free copy of any hardcopy and CD-ROM expression of an Open Publication-licensed work to its author(s).\r\n\r\n    VI.LICENSE OPTIONS\r\n\r\n    The author(s) and/or publisher of an Open Publication-licensed document may elect certain options by appending language to the reference to or copy of the license. These options are considered part of the license instance and must be included with the license (or its incorporation by reference) in derived works.\r\n\r\n    A. To prohibit distribution of substantively modified versions without the explicit permission of the author(s). \"Substantive modification\" is defined as a change to the semantic content of the document, and excludes mere changes in format or typographical corrections.\r\n\r\n    To accomplish this, add the phrase `Distribution of substantively modified versions of this document is prohibited without the explicit permission of the copyright holder.' to the license reference or copy.\r\n\r\n    B. To prohibit any publication of this work or derivative works in whole or in part in standard (paper) book form for commercial purposes is prohibited unless prior permission is obtained from the copyright holder.\r\n\r\n    To accomplish this, add the phrase 'Distribution of the work or derivative of the work in any standard (paper) book form is prohibited unless prior permission is obtained from the copyright holder.' to the license reference or copy.\r\n\r\nOPEN PUBLICATION POLICY APPENDIX:\r\n\r\n(This is not considered part of the license.)\r\n\r\nOpen Publication works are available in source format via the Open Publication home page at http://works.opencontent.org/.\r\n\r\nOpen Publication authors who want to include their own license on Open Publication works may do so, as long as their terms are not more restrictive than the Open Publication license.\r\n\r\nIf you have questions about the Open Publication License, please contact David Wiley, and/or the Open Publication Authors' List at opal@opencontent.org, via email.\r\n\r\nTo subscribe to the Open Publication Authors' List: Send E-mail to opal-request@opencontent.org with the word \"subscribe\" in the body.\r\n\r\nTo post to the Open Publication Authors' List: Send E-mail to opal@opencontent.org or simply reply to a previous post.\r\n\r\nTo unsubscribe from the Open Publication Authors' List: Send E-mail to opal-request@opencontent.org with the word \"unsubscribe\" in the body.",
+    "obligations": [
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": [
+                "Add specific legal mentions in the documentation"
+            ],
+            "name": "Distribution in paper book require citation of the original author",
+            "verbatim": "Any publication in standard (paper) book form shall require the citation of the original publisher and author. The publisher and author's names shall appear on all outer surfaces of the book. On all outer surfaces of the book the original publisher's name shall be as large as the title of the work and cited as possessive with respect to the title.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce the copyright notice and license in documentation",
+            "verbatim": "The Open Publication works may be reproduced and distributed in whole or in part, in any medium physical or electronic, provided that the terms of this license are adhered to, and that this license or an incorporation of it by reference (with any options elected by the author(s) and/or publisher) is displayed in the reproduction .\r\nProper form for an incorporation by reference is as follows:\r\nCopyright (c) <year> by <author's name or designee>. This material may be distributed only subject to the terms and conditions set forth in the Open Publication License, vX.Y or later (the latest version is presently available at http://www.opencontent.org/openpub/).\r\nThe reference must be immediately followed with any options elected by the author(s) and/or publisher of the document (see section VI).\r\n[...]\r\nThe aggregate work shall contain a notice specifying the inclusion of the Open Publication material and appropriate copyright notice.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Mention modifications, the contributor and original author",
+            "verbatim": "IV. 1.The modified version must be labeled  as such.\r\nIV. 2.The person making the modifications must be identified and the modifications dated. \r\nIV. 3.Acknowledgement of the original author and publisher if applicable must be retained according to normal academic citation practices .\r\n[...]\r\nV. (recommendations) 2.All substantive modifications (including deletions) be either clearly marked up in the document or else described in an attachment to the document.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": [
+                "Add specific legal mentions in the documentation"
+            ],
+            "name": "Identify location of the original unmodified work",
+            "verbatim": "IV. 4.The location of the original unmodified document must be identified .",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": [
+                "Strong Copyleft"
+            ],
+            "name": "Copyleft with mere aggregation exception",
+            "verbatim": "\u2022\tIII.SCOPE OF LICENSE \r\nThe following license terms apply to all Open Publication works, unless otherwise explicitly stated in the document.\r\nMere aggregation of Open Publication works or a portion of an Open Publication work with other works or programs on the same media shall not cause this license to apply to those other works.  The aggregate work shall contain a notice specifying the inclusion of the Open Publication material and appropriate copyright notice.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "Do not use original authors names without prior written permission",
+            "verbatim": "o\t5.The original author's (or authors') name(s) may not be used to assert or imply endorsement of the resulting document without the original author's (or authors') permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": null,
+            "name": "Email authors in case of physical distribution and offer a copy (optional)",
+            "verbatim": "V (recommendations). \r\n1.If you are distributing Open Publication works on hardcopy or CD-ROM , you provide email notification  to the authors of your intent to redistribute at least thirty days before your manuscript or media freeze, to give the authors time to provide updated documents. This notification should describe modifications, if any, made to the document.\r\n[...]\r\n3.Finally, while it is not mandatory under this license, it is considered good form to offer a free copy of any hardcopy and CD-ROM expression of an Open Publication-licensed work to its author(s).",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": null,
+            "name": "With \"Option A\" distribution of substantively modified versions is prohibed",
+            "verbatim": "A. To prohibit distribution of substantively modified versions without the explicit permission of the author(s). \"Substantive modification\" is defined as a change to the semantic content of the document, and excludes mere changes in format or typographical corrections.\r\nTo accomplish this, add the phrase `Distribution of substantively modified versions of this document is prohibited without the explicit permission of the copyright holder.' to the license reference or copy.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "OPUBL-1.0"
+            ],
+            "generic": null,
+            "name": "With \"Option B\" distribution of the work in paper book is prohibited",
+            "verbatim": "B. To prohibit any publication of this work or derivative works in whole or in part in standard (paper) book form for commercial purposes is prohibited unless prior permission is obtained from the copyright holder. \r\nTo accomplish this, add the phrase 'Distribution of the work or derivative of the work in any standard (paper) book form is prohibited unless prior permission is obtained from the copyright holder.' to the license reference or copy.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

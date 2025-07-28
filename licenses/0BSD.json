@@ -11,11 +11,11 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
-    "liability": "",
-    "warranty": "",
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
     "venue_choice": "",
     "comment": "",
-    "verbatim": "",
+    "verbatim": "BSD Zero Clause License\r\n\r\nCopyright (C) YEAR by AUTHOR EMAIL\r\n\r\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
     "obligations": []
 }

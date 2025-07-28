@@ -1,6 +1,6 @@
 {
-  "name": "Track and mention modifications in the source code",
-  "description": "Document all your modifications made in the source code of third-party Open Source components in order to clearly attribute each contribution.",
-  "metacategory": "Mentions",
-  "passivity": "Active"
+    "name": "Track and mention modifications in the source code",
+    "description": "Document all your modifications made in the source code of third-party Open Source components in order to clearly attribute each contribution.",
+    "metacategory": "Mentions",
+    "passivity": "Active"
 }

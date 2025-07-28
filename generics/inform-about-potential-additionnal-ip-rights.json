@@ -1,6 +1,6 @@
 {
-  "name": "Inform about potential additionnal IP rights",
-  "description": "If you are or become aware of additional IP rights (including your own patent rights) that are necessary to operate the software, you have to share this information with other users and contributors.",
-  "metacategory": "IPManagement",
-  "passivity": "Active"
+    "name": "Inform about potential additionnal IP rights",
+    "description": "If you are or become aware of additional IP rights (including your own patent rights) that are necessary to operate the software, you have to share this information with other users and contributors.",
+    "metacategory": "IPManagement",
+    "passivity": "Active"
 }

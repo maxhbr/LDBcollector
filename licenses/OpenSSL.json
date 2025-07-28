@@ -1,0 +1,87 @@
+{
+    "spdx_id": "OpenSSL",
+    "long_name": "OpenSSL License",
+    "steward": "",
+    "copyleft": "None",
+    "url": "http://www.openssl.org/source/license.html",
+    "osi_approved": false,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "La clause \r\n 6. Redistributions of any form whatsoever must retain the following acknowledgment: \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\" \r\nest suppos\u00e9e remplie par la reproduction de la licence.",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "OpenSSL"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License in documentation",
+            "verbatim": "2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. \r\n\r\n SSLeay License : 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OpenSSL"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License in source code",
+            "verbatim": "1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. \r\n\r\nSSLeay License :  1. Redistributions of source code must retain the copyright notice, this list of conditions and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OpenSSL"
+            ],
+            "generic": [
+                "Add specific legal mentions in the documentation"
+            ],
+            "name": "Extra mentions",
+            "verbatim": "SSLeay License :  If this package is used in a product, Eric Young should be given attribution as the author of the parts of the library used. This can be in the form of a textual message at program startup or in documentation (online or textual) provided with the package.\r\n\r\nSSLeay License :  4. If you include any Windows specific code (or a derivative thereof) from the apps directory (application code) you must include an acknowledgement: \"This product includes software written by Tim Hudson (tjh@cryptsoft.com)\"",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OpenSSL"
+            ],
+            "generic": [
+                "Add specific mentions in advertising"
+            ],
+            "name": "Mention in advertising mentionning features",
+            "verbatim": "3. All advertising materials mentioning features or use of this software must display the following acknowledgment: \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\" \r\n\r\nSSLeay License : 3. All advertising materials mentioning features or use of this software must display the following acknowledgement:\r\n\"This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\"\r\nThe word 'cryptographic' can be left out if the rouines from the library being used are not cryptographic related :-).",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OpenSSL"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "No use of OpenSSL name",
+            "verbatim": "4. The names \"OpenSSL Toolkit\" and \"OpenSSL Project\" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact openssl-core@openssl.org.\r\n5. Products derived from this software may not be called \"OpenSSL\" nor may \"OpenSSL\" appear in their names without prior written permission of the OpenSSL Project.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

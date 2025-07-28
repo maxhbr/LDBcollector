@@ -1,0 +1,163 @@
+{
+    "spdx_id": "APL-1.0",
+    "long_name": "Adaptive Public License 1.0",
+    "steward": "",
+    "copyleft": "Weak",
+    "url": "https://opensource.org/licenses/APL-1.0",
+    "osi_approved": true,
+    "fsf_approved": false,
+    "foss": "Yes-Auto",
+    "patent_grant": true,
+    "ethical_clause": null,
+    "non_commercial": null,
+    "non_tivoisation": null,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "laws of the Governing Jurisdiction ; cf.  EXHIBIT A - PART 3",
+    "venue_choice": "that if the Governing Jurisdiction is not assigned in Part 3 of Exhibit A, then the Governing Jurisdiction shall be the State of New York.",
+    "comment": "Patent Grant - unknown: \r\nPART 6: PATENT LICENSING TERMS\r\nFor the purposes of this License, paragraphs A, B, C, D and E of this Part 6 of Exhibit A are only incorporated and form part of the terms of the License if the Initial Contributor places an \"X\" or \"x\" in the selection box alongside the YES answer to the question immediately below.\r\n\r\nIs this a Patents-Included License pursuant to Section 2.2 of the License?\r\n\r\nYES [ ]\r\n\r\nNO [ ]\r\nBy default, if YES is not selected by the Initial Contributor, the answer is NO.",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user",
+            "verbatim": "3.2. EXECUTABLE DISTRIBUTIONS OF THE LICENSED WORK.\r\nA Distributor may choose to distribute the Licensed Work, or any portion thereof, in Executable form (an \"EXECUTABLE DISTRIBUTION\") to any third party, under the terms of Section 2 of this License, provided the Executable Distribution is made available under and accompanied by a copy of this License, AND provided at least ONE of the following conditions is fulfilled:\r\n\r\n    (a) The Executable Distribution must be accompanied by the Source Code for the Licensed Work making up the Executable Distribution, and the Source Code must be distributed on the same media as the Executable Distribution or using an Electronic Distribution Mechanism; or\r\n    (b) The Executable Distribution must be accompanied with a written offer, valid for at least thirty six (36) months, to give any third party under the terms of this License, for a charge no more than the cost of physically performing source distribution, a complete machine-readable copy of the Source Code for the Licensed Work making up the Executable Distribution, to be available and distributed using an Electronic Distribution Mechanism, and such Executable Distribution must remain available in Source Code form to any third party via the Electronic Distribution Mechanism (or any replacement Electronic Distribution Mechanism the particular Distributor may reasonably need to turn to as a substitute) for said at least thirty six (36) months.\r\n\r\nFor greater certainty, the above-noted requirements apply to any Licensed Work or portion thereof distributed to any third party in Executable form, whether such distribution is made alone, in combination with a Larger Work or Independent Modules, or in some other combination.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "License and notices in source code",
+            "verbatim": "3.1.(b) All Distributors must distribute the Licensed Work in accordance with the terms of the License, and must include a copy of this License (including without limitation Exhibit A and the accompanying Supplement File) with each copy of the Licensed Work distributed. In particular, this License must be prominently distributed with the Licensed Work in a file called \"license.txt.\" In addition, the License Notice in Part 5 of Exhibit A must be included at the beginning of all Source Code files, and viewable to a user in any executable such that the License Notice is reasonably brought to the attention of any party using the Licensed Work. \r\n3.4. REQUIRED NOTICES IN SOURCE CODE.\r\nEach Subsequent Contributor must ensure that the notice set out in Part 5 of Exhibit A is included in each file of the Source Code for each Subsequent Work originating from that particular Subsequent Contributor, if such notice is not already included in each such file. If it is not possible to put such notice in a particular Source Code file due to its structure, then the Subsequent Contributor must include such notice in a location (such as a relevant directory in which the file is stored) where a user would be likely to look for such a notice.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "3.1.(b) All Distributors must distribute the Licensed Work in accordance with the terms of the License, and must include a copy of this License (including without limitation Exhibit A and the accompanying Supplement File) with each copy of the Licensed Work distributed. In particular, this License must be prominently distributed with the Licensed Work in a file called \"license.txt.\" In addition, the License Notice in Part 5 of Exhibit A must be included at the beginning of all Source Code files, and viewable to a user in any executable such that the License Notice is reasonably brought to the attention of any party using the Licensed Work.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Marking modifications",
+            "verbatim": "3.8. DESCRIPTION OF DISTRIBUTED MODIFICATIONS.\r\n\r\n    (a) Each Subsequent Contributor (including the Initial Contributor where the Initial Contributor also qualifies as a Subsequent Contributor) must cause each Subsequent Work created or contributed to by that Subsequent Contributor to contain a file documenting the changes, in accordance with the requirements of Part 1 of the Supplement File, that such Subsequent Contributor made in the creation or contribution to that Subsequent Work. If no Supplement File exists or no requirements are set out in Part 1 of the Supplement File, then there are no requirements for Subsequent Contributors to document changes that they make resulting in Subsequent Works.\r\n    (b) The Initial Contributor may at any time introduce requirements or add to or change earlier requirements (in each case, the \"EARLIER DESCRIPTION REQUIREMENTS\") for documenting changes resulting in Subsequent Works by revising Part 1 of each copy of the Supplement File distributed by the Initial Contributor with future copies of the Licensed Work so that Part 1 then contains new requirements (the \"NEW DESCRIPTION REQUIREMENTS\") for documenting such changes.\r\n    (c) Any Recipient receiving at any time any copy of an Initial Work or any Subsequent Work under a copy of this License (in each case, an \"Earlier LICENSED COPY\") having the Earlier Description Requirements may choose, with respect to each such Earlier Licensed Copy, to comply with the Earlier Description Requirements or the New Description Requirements. Where a Recipient chooses to comply with the New Description Requirements, that Recipient will, when thereafter distributing any copies of any such Earlier Licensed Copy, include a Supplement File having a section entitled Part 1 that contains a copy of the New Description Requirements.\r\n    (d) For greater certainty, the intent of Part 1 of the Supplement File is to provide a mechanism (if any) by which Subsequent Contributors must document changes that they make to the Licensed Work resulting in Subsequent Works. Part 1 of any Supplement File shall not be used to increase or reduce the scope of the license granted in Article 2 of this License or in any other way increase or decrease the rights and obligations of any Recipient, and shall at no time serve as the basis for terminating the License. Further, a Recipient can be required to correct and change its documentation procedures to comply with Part 1 of the Supplement File, but cannot be penalised with damages. Part 1 of any Supplement File is only binding on each Recipient of any Licensed Work to the extent Part 1 sets out the requirements for documenting changes to the Initial Work or any Subsequent Work.\r\n    (e) An example of a set of requirements for documenting changes and contributions made by Subsequent Contributor is set out in Part 7 of Exhibit A of this License. Part 7 is a sample only and is not binding on Recipients, unless (subject to the earlier paragraphs of this Section 3.8) those are the requirements that the Initial Contributor includes in Part 1 of the Supplement File with the copies of the Initial Work distributed under this License.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Add specific legal mentions in the user interface (if applicable)"
+            ],
+            "name": "Display specific elements in Program",
+            "verbatim": "3.10. LIMITED RECOGNITION OF INITIAL CONTRIBUTOR.\r\n\r\n    (a) As a modest attribution to the Initial Contributor, in the hope that its promotional value may help justify the time, money and effort invested in writing the Initial Work, the Initial Contributor may include in Part 2 of the Supplement File a requirement that each time an executable program resulting from the Initial Work or any Subsequent Work, or a program dependent thereon, is launched or run, a prominent display of the Initial Contributor's attribution information must occur (the \"ATTRIBUTION INFORMATION\"). The Attribution Information must be included at the beginning of each Source Code file. For greater certainty, the Initial Contributor may specify in the Supplement File that the above attribution requirement only applies to an executable program resulting from the Initial Work or any Subsequent Work, but not a program dependent thereon. The intent is to provide for reasonably modest attribution, therefore the Initial Contributor may not require Recipients to display, at any time, more than the following Attribution Information: (a) a copyright notice including the name of the Initial Contributor; (b) a word or one phrase (not exceeding 10 words); (c) one digital image or graphic provided with the Initial Work; and (d) a URL (collectively, the \"ATTRIBUTION LIMITS\").\r\n    (b) If no Supplement File exists, or no Attribution Information is set out in Part 2 of the Supplement File, then there are no requirements for Recipients to display any Attribution Information of the Initial Contributor.\r\n    (c) Each Recipient acknowledges that all trademarks, service marks and/or trade names contained within Part 2 of the Supplement File distributed with the Licensed Work are the exclusive property of the Initial Contributor and may only be used with the permission of the Initial Contributor, or under circumstances otherwise permitted by law, or as expressly set out in this License.\r\n3.11. For greater certainty, any description or attribution provisions contained within a Supplement File may only be used to specify the nature of the description or attribution requirements, as the case may be. Any provision in a Supplement File that otherwise purports to modify, vary, nullify or amend any right, obligation or representation contained herein shall be deemed void to that extent, and shall be of no force or effect.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "License Agreement must exclude other contributors for additionnal terms"
+            ],
+            "name": "Exclusion of other contributors responsability for additionnal terms",
+            "verbatim": "4.1. COMMERCIAL SERVICES. \r\nA Recipient (\"COMMERCIAL RECIPIENT\") may choose to offer, and to charge a fee for, warranty, support, indemnity or liability obligations (collectively, \"SERVICES\") to one or more other Recipients or Distributors. However, such Commercial Recipient may do so only on that Commercial Recipient's own behalf, and not on behalf of any other Distributor or Recipient, and Commercial Recipient must make it clear than any such warranty, support, indemnity or liability obligation(s) is/are offered by Commercial Recipient alone.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Indemnify contributors against claims"
+            ],
+            "name": "Indemnification of other contributors",
+            "verbatim": "4.2. INDEMNITY.\r\nCommercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this License is intended to facilitate the commercial use of the Licensed Work, the Distributor who includes any of the Licensed Work in a commercial product offering should do so in a manner which does not create potential liability for other Distributors. Therefore, if a Distributor includes the Licensed Work in a commercial product offering or offers any Services, such Distributor (\"COMMERCIAL DISTRIBUTOR\") hereby agrees to defend and indemnify every other Distributor or Subsequent Contributor (in each case an \"INDEMNIFIED PARTY\") against any losses, damages and costs (collectively \"LOSSES\") arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Party to the extent caused by the acts or omissions of such Commercial Distributor in connection with its distribution of any of the Licensed Work in a commercial product offering or in connection with any Services. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Party must: (a) promptly notify the Commercial Distributor in writing of such claim; and (b) allow the Commercial Distributor to control, and co-operate with the Commercial Distributor in, the defense and any related settlement negotiations. The Indemnified Party may participate in any such claim at its own expense.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Do not enforce patent rights (Patent peace)"
+            ],
+            "name": "Do not enforce patent rights (Patent peace)",
+            "verbatim": "a) This License does not include or grant any patent license whatsoever from the Initial Contributor, Subsequent Contributor, or any Distributor unless, at the time the Initial Work is first distributed or made available under this License (as the case may be), the Initial Contributor has selected pursuant to Part 6 of Exhibit A the patent terms in paragraphs A, B, C, D and E from Part 6 of Exhibit A. If this is not done then the Initial Work and any other Subsequent Work is made available under the License without any patent license (the \"PATENTS-EXCLUDED LICENSE\").\r\n\r\nPART 6: PATENT LICENSING TERMS\r\nFor the purposes of this License, paragraphs A, B, C, D and E of this Part 6 of Exhibit A are only incorporated and form part of the terms of the License if the Initial Contributor places an \"X\" or \"x\" in the selection box alongside the YES answer to the question immediately below.\r\n\r\nIs this a Patents-Included License pursuant to Section 2.2 of the License?\r\n\r\nYES [ ]\r\n\r\nNO [ ]\r\n\r\nBy default, if YES is not selected by the Initial Contributor, the answer is NO.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak copyleft",
+            "verbatim": "3.3. SOURCE CODE DISTRIBUTIONS.\r\nWhen a Distributor makes the Licensed Work, or any portion thereof, available to any Person in Source Code form, it must be made available under this License \r\n\r\n 3.6. INDEPENDENT MODULES.\r\nThis License shall not apply to Independent Modules of any Initial Contributor, Subsequent Contributor, Distributor or any Recipient, and such Independent Modules may be licensed or made available under one or more separate license agreements.\r\n3.7. LARGER WORKS.\r\nAny Distributor or Recipient may create or contribute to a Larger Work by combining any of the Licensed Work with other code not governed by the terms of this License, and may distribute the Larger Work as one or more products. However, in any such case, Distributor or Recipient (as the case may be) must make sure that the requirements of this License are fulfilled for the Licensed Work portion of the Larger Work.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsement",
+            "verbatim": "3.9. USE OF DISTRIBUTOR NAME.\r\nThe name of a Distributor may not be used by any other Distributor to endorse or promote the Licensed Work or products derived from the Licensed Work, without prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APL-1.0"
+            ],
+            "generic": null,
+            "name": "Minimal duration for public availability of work",
+            "verbatim": "3.1.(a) A Subsequent Contributor shall make that Subsequent Contributor's Subsequent Work(s) available to the public via an Electronic Distribution Mechanism for a period of at least twelve (12) months. The aforesaid twelve (12) month period shall begin within a reasonable time after the creation of the Subsequent Work and no later than sixty (60) days after first distribution of that Subsequent Contributor's Subsequent Work.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

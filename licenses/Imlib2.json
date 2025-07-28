@@ -1,0 +1,74 @@
+{
+    "spdx_id": "Imlib2",
+    "long_name": "Imlib2 License",
+    "steward": "",
+    "copyleft": "Weak",
+    "url": "http://trac.enlightenment.org/e/browser/trunk/imlib2/COPYING",
+    "osi_approved": false,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "",
+    "warranty": "",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "Je ne suis pas s\u00fbr de la clause de weak copyleft",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Imlib2"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user",
+            "verbatim": "Making the source \r\navailable publicly means including the source for this software with the \r\ndistribution, or a method to get this software via some reasonable mechanism \r\n(electronic transfer via a network or media) as well as making an offer to \r\nsupply the source on request. This Copyright notice serves as an offer to \r\nsupply the source on on request as well. Instead of this, supplying \r\nacknowledgments of use of this software in either Copyright notices, Manuals, \r\nPublicity and Marketing documents or any documentation provided with any \r\nproduct containing this software.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Imlib2"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "The above copyright notice and this permission notice shall be included in all copies of the Software and its Copyright notices.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Imlib2"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": ". In addition publicly documented acknowledgment must be given that this software has been used if no source code of this software is made available publicly.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Imlib2"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak copyleft",
+            "verbatim": "This Copyright notice serves as an offer to \r\nsupply the source on on request as well. Instead of this, supplying \r\nacknowledgments of use of this software in either Copyright notices, Manuals, \r\nPublicity and Marketing documents or any documentation provided with any \r\nproduct containing this software.\r\n\r\nThis License does not apply to any software \r\nthat links to the libraries provided by this software (statically or \r\ndynamically), but only to the software provided.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

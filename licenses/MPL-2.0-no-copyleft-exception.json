@@ -1,0 +1,139 @@
+{
+    "spdx_id": "MPL-2.0-no-copyleft-exception",
+    "long_name": "Mozilla Public License 2.0 (no copyleft exception)",
+    "steward": "",
+    "copyleft": "Weak",
+    "url": "http://www.mozilla.org/MPL/2.0/",
+    "osi_approved": true,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": true,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "in the courts of a jurisdiction where the defendant maintains its principal place of business and such litigation shall be governed by laws of that jurisdiction",
+    "venue_choice": "",
+    "comment": "This license list entry is for use when the MPL's Exhibit B is used, which effectively negates the copyleft compatibility clause in section 3.3.\r\n\r\nExhibit B - \"Incompatible With Secondary Licenses\" Notice\r\n\r\n---------------------------------------------------------\r\n\r\nThis Source Code Form is \"Incompatible With Secondary Licenses\", as defined by the Mozilla Public License, v. 2.0.\r\n\r\n3.3. Distribution of a Larger Work\r\n\r\nYou may create and distribute a Larger Work under terms of Your choice, provided that You also comply with the requirements of this License for the Covered Software. If the Larger Work is a combination of Covered Software with a work governed by one or more Secondary Licenses, and the Covered Software is not Incompatible With Secondary Licenses, this License permits You to additionally distribute such Covered Software under the terms of such Secondary License(s), so that the recipient of the Larger Work may, at their option, further distribute the Covered Software under the terms of either this License or such Secondary License(s).",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Inform end user how to get CSC",
+            "verbatim": "3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\nsuch Covered Software must also be made available in Source Code Form, as described in Section 3.1, and You must inform recipients of the Executable Form how they can obtain a copy of such Source Code Form by reasonable means in a timely manner, at a charge no more than the cost of distribution to the recipient; and",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve licences and IP notices (factual correction allowed)",
+            "verbatim": "3.4. Notices\r\n\r\nYou may not remove or alter the substance of any license notices (including copyright notices, patent notices, disclaimers of warranty, or limitations of liability) contained within the Source Code Form of the Covered Software, except that You may alter any license notices to the extent required to remedy known factual inaccuracies.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "Indemnify contributors against claims"
+            ],
+            "name": "Indemnification of contributors",
+            "verbatim": "3.5\r\nYou hereby agree to indemnify every Contributor for any liability incurred by such Contributor as a result of warranty, support, indemnity or liability terms You offer. You may include additional disclaimers of warranty and limitations of liability specific to any jurisdiction.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "Do not restrict the rights of the license"
+            ],
+            "name": "Don't limit rights from upstream",
+            "verbatim": "3.2. Distribution of Executable Form\r\n(b) You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients' rights in the Source Code Form under this License.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "License Agreement must exclude other contributors for additionnal terms"
+            ],
+            "name": "Stating clearly that other contributors are not bound by any extra provision",
+            "verbatim": "3.5 [...] However, You may do so only on Your own behalf, and not on behalf of any Contributor. You must make it absolutely clear that any such warranty, support, indemnity, or liability obligation is offered by You alone",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak Copyleft",
+            "verbatim": "3.1. Distribution of Source Form  All distribution of Covered Software in Source Code Form, including any Modifications that You create or to which You contribute, must be under the terms of this License. You must inform recipients that the Source Code Form of the Covered Software is governed by the terms of this License, and how they can obtain a copy of this License. You may not attempt to alter or restrict the recipients' rights in the Source Code Form. 3.2. Distribution of Executable Form  If You distribute Covered Software in Executable Form then:      (a) such Covered Software must also be made available in Source Code Form, as described in Section 3.1, and You must inform recipients of the Executable Form how they can obtain a copy of such Source Code Form by reasonable means in a timely manner, at a charge no more than the cost of distribution to the recipient; and     (b) You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients' rights in the Source Code Form under this License.  3.3. Distribution of a Larger Work\r\n\r\nYou may create and distribute a Larger Work under terms of Your choice, provided that You also comply with the requirements of this License for the Covered Software. If the Larger Work is a combination of Covered Software with a work governed by one or more Secondary Licenses, and the Covered Software is not Incompatible With Secondary Licenses, this License permits You to additionally distribute such Covered Software under the terms of such Secondary License(s), so that the recipient of the Larger Work may, at their option, further distribute the Covered Software under the terms of either this License or such Secondary License(s).",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "Do not enforce patent rights (Patent peace)"
+            ],
+            "name": "Patent Peace",
+            "verbatim": "5.2. If You initiate litigation against any entity by asserting a patent infringement claim (excluding declaratory judgment actions, counter-claims, and cross-claims) alleging that a Contributor Version directly or indirectly infringes any patent, then the rights granted to You by any and all Contributors for the Covered Software under Section 2.1 of this License shall terminate.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "Inability to Comply Due to Statute or Regulation"
+            ],
+            "name": "Description of inability to comply",
+            "verbatim": "4. Inability to Comply Due to Statute or Regulation\r\n\r\nIf it is impossible for You to comply with any of the terms of this License with respect to some or all of the Covered Software due to statute, judicial order, or regulation then You must: (a) comply with the terms of this License to the maximum extent possible; and (b) describe the limitations and the code they affect. Such description must be placed in a text file included with all distributions of the Covered Software under this License. Except to the extent prohibited by statute or regulation, such description must be sufficiently detailed for a recipient of ordinary skill to be able to understand it",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0-no-copyleft-exception"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "Respect trademarks",
+            "verbatim": "2.3 [...]\r\nThis License does not grant any rights in the trademarks, service marks, or logos of any Contributor (except as may be necessary to comply with the notice requirements in Section 3.4).",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}
