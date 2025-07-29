@@ -680,6 +680,19 @@ func DeleteUser(c *gin.Context) {
 			c.JSON(http.StatusNotFound, er)
 			return nil
 		}
+
+		if err := tx.Where(&models.OidcClient{UserId: updatedUser.Id}).Delete(&models.OidcClient{}).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "failed to delete user",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
+		}
+
 		if err := utils.AddChangelogsForUser(tx, username, &updatedUser, &olduser); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,

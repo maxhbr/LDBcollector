@@ -94,6 +94,14 @@ definitions:
         example: 200
         type: integer
     type: object
+  models.CreateDeleteOidcClientDTO:
+    properties:
+      clientId:
+        example: qwerty
+        type: string
+    required:
+    - clientId
+    type: object
   models.Dashboard:
     properties:
       category_obligation_frequency:
@@ -592,6 +600,29 @@ definitions:
       type:
         example: RISK
         type: string
+    type: object
+  models.OidcClientDTO:
+    properties:
+      add_date:
+        type: string
+      client_id:
+        example: qwerty
+        type: string
+      id:
+        example: 123
+        type: integer
+    type: object
+  models.OidcClientsResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.OidcClientDTO'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
     type: object
   models.PaginationMeta:
     properties:
@@ -1938,6 +1969,89 @@ paths:
       summary: Deactivate obligation type
       tags:
       - Obligations
+  /oidcClients:
+    delete:
+      consumes:
+      - application/json
+      description: Remove an oidc client if it gets expired or is compromised
+      operationId: RevokeClient
+      parameters:
+      - description: Oidc client to add
+        in: body
+        name: oidc_client
+        required: true
+        schema:
+          $ref: '#/definitions/models.CreateDeleteOidcClientDTO'
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+        "404":
+          description: Oidc Client not found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Remove an oidc client
+      tags:
+      - OIDC Clients
+    get:
+      description: Get all oidc clients added by the user for initiating M2M flow
+        with fossology
+      operationId: GetUserOidcClients
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.OidcClientsResponse'
+        "500":
+          description: Something went wrong
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Get all oidc clients added by the user
+      tags:
+      - OIDC Clients
+    post:
+      consumes:
+      - application/json
+      description: Add a new client for initiating M2M flow with fossology
+      operationId: CreateOidcClient
+      parameters:
+      - description: Oidc client to add
+        in: body
+        name: oidc_client
+        required: true
+        schema:
+          $ref: '#/definitions/models.CreateDeleteOidcClientDTO'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.OidcClientsResponse'
+        "400":
+          description: invalid json body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "409":
+          description: oidc client already exists
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: something went wrong while adding new oidc client
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Adds a new oidc client
+      tags:
+      - OIDC Clients
   /search:
     post:
       consumes:
