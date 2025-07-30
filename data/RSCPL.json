@@ -12,6 +12,11 @@
         ],
         "osi": [
             "The Ricoh Source Code Public License"
+        ],
+        "pypi-classifier": [
+            "License :: OSI Approved :: Ricoh Source Code Public License",
+            "OSI Approved :: Ricoh Source Code Public License",
+            "License :: Ricoh Source Code Public License"
         ]
     },
     "src": "spdx",

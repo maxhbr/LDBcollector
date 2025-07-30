@@ -11,6 +11,11 @@
         ],
         "osi": [
             "The Intel Open Source License"
+        ],
+        "pypi-classifier": [
+            "License :: OSI Approved :: Intel Open Source License",
+            "OSI Approved :: Intel Open Source License",
+            "License :: Intel Open Source License"
         ]
     },
     "src": "spdx",

@@ -17,6 +17,17 @@
     "src": "spdx",
     "rejected": [],
     "risky": [
-        "GPLv3+"
+        "GPLv3+",
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+        "OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+        "License :: GNU General Public License v3 or later (GPLv3+)",
+        "GNU General Public License v3 or later (GPLv3+)",
+        "License :: OSI Approved :: GNU General Public License v3 or later",
+        "OSI Approved :: GNU General Public License v3 or later",
+        "License :: GNU General Public License v3 or later",
+        "GNU General Public License v3 or later",
+        "License :: OSI Approved :: GPLv3+",
+        "OSI Approved :: GPLv3+",
+        "License :: GPLv3+"
     ]
 }

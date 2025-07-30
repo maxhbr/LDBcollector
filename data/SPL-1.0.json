@@ -16,5 +16,10 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "License :: OSI Approved :: Sun Public License",
+        "OSI Approved :: Sun Public License",
+        "License :: Sun Public License",
+        "Sun Public License"
+    ]
 }

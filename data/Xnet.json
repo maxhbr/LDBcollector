@@ -11,6 +11,11 @@
         ],
         "osi": [
             "The X.Net, Inc. License"
+        ],
+        "pypi-classifier": [
+            "License :: OSI Approved :: X.Net License",
+            "OSI Approved :: X.Net License",
+            "License :: X.Net License"
         ]
     },
     "src": "spdx",

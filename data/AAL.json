@@ -8,6 +8,11 @@
         "scancode-licensedb": [
             "AAL",
             "attribution"
+        ],
+        "pypi-classifiers": [
+            "License :: OSI Approved :: Attribution Assurance License",
+            "OSI Approved :: Attribution Assurance License",
+            "License :: Attribution Assurance License"
         ]
     },
     "src": "spdx",

@@ -13,5 +13,18 @@
     },
     "src": "spdx",
     "rejected": [],
-    "risky": []
+    "risky": [
+        "License :: OSI Approved :: Universal Permissive License (UPL)",
+        "OSI Approved :: Universal Permissive License (UPL)",
+        "License :: Universal Permissive License (UPL)",
+        "Universal Permissive License (UPL)",
+        "License :: OSI Approved :: Universal Permissive License",
+        "OSI Approved :: Universal Permissive License",
+        "License :: Universal Permissive License",
+        "Universal Permissive License",
+        "License :: OSI Approved :: UPL",
+        "OSI Approved :: UPL",
+        "License :: UPL",
+        "UPL"
+    ]
 }

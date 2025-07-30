@@ -17,6 +17,10 @@
     "src": "spdx",
     "rejected": [],
     "risky": [
-        "CPL"
+        "CPL",
+        "License :: OSI Approved :: Common Public License",
+        "OSI Approved :: Common Public License",
+        "License :: Common Public License",
+        "Common Public License"
     ]
 }
