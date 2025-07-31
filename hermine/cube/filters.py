@@ -45,6 +45,7 @@ class ReleaseBomFilter(
     search = django_filters.CharFilter(
         field_name="version__purl", lookup_expr="icontains", label="Search"
     )
+    license_expression = ValueFilter()
     project = ValueFilter()
     scope = ValueFilter()
     o = django_filters.OrderingFilter(
