@@ -27,13 +27,17 @@ class SPDXToolsTestCase(TestCase):
 
     def test_or_later_has_ors(self):
         self.assertFalse(has_ors("GPL-3.0-only"))
+        self.assertFalse(has_ors("AGPL-3.0-only"))
         self.assertFalse(has_ors("GPL-3.0"))
+        self.assertFalse(has_ors("GPL-3.0-or-later"))
+        self.assertFalse(has_ors("GPL-3.0+"))
+        self.assertFalse(has_ors("LGPL-3.0-or-later"))
 
-        self.assertTrue(has_ors("GPL-3.0-or-later"))
         self.assertTrue(has_ors("GPL-2.0-or-later WITH Classpath-exception-2.0"))
-        self.assertTrue(has_ors("GPL-3.0-or-later AND BSD"))
+        self.assertTrue(has_ors("GPL-2.0-or-later AND BSD"))
+        self.assertTrue(has_ors("LGPL-2.0-or-later"))
+        self.assertTrue(has_ors("LGPL-2.1-or-later"))
 
-        self.assertTrue(has_ors("GPL-3.0+"))
         self.assertTrue(has_ors("GPL-2.0+ WITH Classpath-exception-2.0"))
 
     def test_is_valid_spdx_license(self):
