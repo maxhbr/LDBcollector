@@ -6,5 +6,12 @@ canonicalName: "Permission Terms (Nice License)"
 category: "Permission"
 shortName: "PT-Nice"
 
+canonicalNameHistory:
+  - "Nice License 1.0.0"
+
+alternativeNames:
+  - "Permission Terms (Nice License)"
+  - "Nice License 1.0.0"
+
 otherIds: 
   - "scancode:nice"
