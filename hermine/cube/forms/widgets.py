@@ -19,7 +19,7 @@ class AutocompleteMixin(AdminAutocompleteMixin):
         self.i18n_name = get_select2_language()
 
     def get_url(self):
-        return reverse("admin:autocomplete")
+        return reverse("autocomplete")
 
     @property
     def media(self):
