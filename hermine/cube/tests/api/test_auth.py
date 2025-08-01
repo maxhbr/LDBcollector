@@ -77,3 +77,16 @@ class PermissionsTestCase(APITestCase):
                     response = self.client.post(reverse(f"cube:api:{pattern}"))
                 self.assertGreaterEqual(response.status_code, 200)
                 self.assertLessEqual(response.status_code, 400)
+
+    def test_autocomplete_endpoint(self):
+        response = self.client.get(
+            f"{reverse('autocomplete')}?term=GPL&app_label=cube&model_name=compatibility&field_name=to_license"
+        )
+        self.assertEqual(response.status_code, 403)
+
+        User.objects.create_user("test", "testiser@test.com", "password")
+        self.client.login(username="test", password="password")
+        response = self.client.get(
+            f"{reverse('autocomplete')}?term=GPL&app_label=cube&model_name=compatibility&field_name=to_license"
+        )
+        self.assertEqual(response.status_code, 403)

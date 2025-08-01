@@ -18,8 +18,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.conf import settings
+from django.contrib import admin
 from django.db import connection, Error as DBError
 from django.http import HttpResponse, HttpResponseServerError
 from django.urls import include, path, re_path
@@ -61,6 +61,11 @@ urlpatterns = [
     path("ping/", lambda r: HttpResponse("OK")),
     path("ready/", ready),
     path("admin/", admin.site.urls),
+    path(
+        "autocomplete/",
+        admin.site.autocomplete_view,
+        name="autocomplete",
+    ),
     path("accounts/", include("django.contrib.auth.urls")),
     path("oauth/", include("social_django.urls", namespace="social")),
     re_path(
