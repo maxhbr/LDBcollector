@@ -35,7 +35,7 @@ class MultiFieldSearchFilter(django_filters.CharFilter):
         return qs.filter(query)
 
 
-class ComponentOrVersionFilter(django_filters.CharFilter):
+class ComponentOrVersionFilter(MultiFieldSearchFilter):
     fields = ("component__name", "version__component__name")
 
 
