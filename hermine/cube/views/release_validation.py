@@ -65,10 +65,15 @@ class ReleaseValidationStep1View(ReleaseValidationStepBaseView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        step1info = update_validation_step_1(self.object)
 
         return {
             **context,
-            **update_validation_step_1(self.object),
+            **step1info,
+            "invalid_expressions": [
+                (usage, step1info["conflicting_curations"].get(usage.id, None))
+                for usage in step1info["invalid_expressions"]
+            ],
         }
 
 
@@ -81,10 +86,15 @@ class ReleaseValidationStep2View(ReleaseValidationStepBaseView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        step2info = update_validation_step_2(self.object)
 
         return {
             **context,
-            **update_validation_step_2(self.object),
+            **step2info,
+            "to_confirm": [
+                (usage, step2info["conflicting_curations"].get(usage.id, None))
+                for usage in step2info["to_confirm"]
+            ],
         }
 
 
@@ -113,10 +123,15 @@ class ReleaseValidationStep4View(ReleaseValidationStepBaseView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        step4info = update_validation_step_4(self.object)
 
         return {
             **context,
-            **update_validation_step_4(self.object),
+            **step4info,
+            "to_resolve": [
+                (usage, step4info["conflicting_choices"].get(usage.id, None))
+                for usage in step4info["to_resolve"]
+            ],
         }
 
 

@@ -3,6 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 from itertools import groupby
+from typing import TypedDict, Tuple
 
 from django.db.models import (
     Count,
@@ -22,6 +23,8 @@ from cube.models import (
     LicenseCuration,
     Exploitation,
     Derogation,
+    Usage,
+    Version,
 )
 from cube.utils.spdx import has_ors, is_ambiguous, simplified
 
@@ -36,7 +39,45 @@ STEP_POLICY = 5
 STEP_COMPATIBILITY = 6
 
 
-def _apply_curations(release):
+class Step1Info(TypedDict):
+    invalid_expressions: list[Usage]
+    fixed_expressions: list[Usage]
+    nb_validated_components: int
+    conflicting_curations: dict[int, list[LicenseCuration]]
+
+
+class Step2Info(TypedDict):
+    to_confirm: list[Usage]
+    confirmed: list[Version]
+    corrected: list[Version]
+    conflicting_curations: dict[int, list[LicenseCuration]]
+
+
+class Step3Info(TypedDict):
+    exploitations: list[Exploitation]
+    unset_scopes: set[Tuple[str, str, int]]
+
+
+class Step4Info(TypedDict):
+    to_resolve: list[Usage]
+    resolved: set[Usage]
+    conflicting_choices: dict[int, list[LicenseChoice]]
+
+
+class Step5Info(TypedDict):
+    usages_lic_never_allowed: set[Usage]
+    usages_lic_context_allowed: set[Usage]
+    usages_lic_unknown: set[Usage]
+    involved_lic: set[License]
+    derogations: set[Derogation]
+
+
+class Step6Info(TypedDict):
+    incompatible_usages: set[Usage]
+    incompatible_licenses: set[License]
+
+
+def _apply_curations(release) -> dict[Usage, list[LicenseCuration]]:
     """
     Apply curations to the release's usages, should be called before validating step 1 and 2.
     """
@@ -65,6 +106,8 @@ def _apply_curations(release):
         .select_related("version")
     )
 
+    conflicting_curations = dict()
+
     for usage in usages:
         if usage.curation is not None:
             # Check there are no conflicting curations (subquery returns only first row)
@@ -76,14 +119,16 @@ def _apply_curations(release):
                     .get()
                 )
                 usage.version.save()
-            except (
-                LicenseCuration.DoesNotExist,
-                LicenseCuration.MultipleObjectsReturned,
-            ):
-                logger.warning("Multiple curations for %s", usage.version.component)
+            except LicenseCuration.DoesNotExist:
+                pass
+            except LicenseCuration.MultipleObjectsReturned:
+                curations = LicenseCuration.objects.for_version(usage.version)
+                conflicting_curations[usage.id] = list(curations)
+
+    return conflicting_curations
 
 
-def _propagate_choices(release: Release):
+def _propagate_choices(release: Release) -> dict[Usage, list[LicenseChoice]]:
     """
     Transfer license information from component to usage.
     Set usage.license_expression if there is no ambiguity.
@@ -115,6 +160,8 @@ def _propagate_choices(release: Release):
         )
     )
 
+    conflicting_choices = dict()
+
     for usage in usages:
         if usage.version.license_is_ambiguous:
             continue
@@ -143,22 +190,17 @@ def _propagate_choices(release: Release):
                     .distinct()
                     .get()
                 )
-            except (LicenseChoice.DoesNotExist, LicenseChoice.MultipleObjectsReturned):
-                logger.warning("Multiple choices for %s", usage)
+            except LicenseChoice.DoesNotExist:
+                pass
+            except LicenseChoice.MultipleObjectsReturned:
+                conflicting_choices[usage.id] = list(
+                    LicenseChoice.objects.for_usage(usage)
+                )
             else:
                 usage.license_expression = expression_out
                 usage.save()
 
-    resolved = {
-        usage
-        for usage in release.usage_set.all()
-        .select_related("version")
-        .exclude(license_expression="")
-        if has_ors(
-            usage.version.effective_license
-        )  # we want to list only usages for which a choice was actually necessary
-    }
-    return {"resolved": resolved}
+    return conflicting_choices
 
 
 def _check_licenses_against_policy(release: Release):
@@ -340,6 +382,15 @@ def _validate_choices(release):
         ).select_related("version", "version__component", "release", "release__product")
         if not u.version.license_is_ambiguous
     ]
+    context["resolved"] = {
+        usage
+        for usage in release.usage_set.all()
+        .select_related("version")
+        .exclude(license_expression="")
+        if has_ors(
+            usage.version.effective_license
+        )  # we want to list only usages for which a choice was actually necessary
+    }
 
     return len(context["to_resolve"]) == 0, context
 
@@ -450,16 +501,19 @@ def update_all_steps(release: Release):
     return step, info
 
 
-def update_validation_step_1(release: Release):
+def update_validation_step_1(release: Release) -> Step1Info:
     """
     Apply curations and check for invalid SPDX license expressions,
     update the release validation step accordingly.
     """
     info = dict()
     validation_step = release.valid_step + 0
-    _apply_curations(release)
+    conflicting_curations = _apply_curations(release)
     step1, context = _validate_expressions(release)
+
     info.update(context)
+    info["conflicting_curations"] = conflicting_curations
+
     if step1:
         validation_step = max(validation_step, 1)
     else:
@@ -471,16 +525,19 @@ def update_validation_step_1(release: Release):
     return info
 
 
-def update_validation_step_2(release: Release):
+def update_validation_step_2(release: Release) -> Step2Info:
     """
     Apply curations and confirm that ANDs operators in SPDX expressions are not poorly registered ORs,
     and update the release validation step accordingly.
     """
-    info = dict()
+    info: Step2Info = dict()
     validation_step = release.valid_step
-    _apply_curations(release)
+    conflicting_curations = _apply_curations(release)
     step2, context = _validate_ands(release)
+
     info.update(context)
+    info["conflicting_curations"] = conflicting_curations
+
     if step2 and validation_step >= 1:
         validation_step = max(validation_step, 2)
     else:
@@ -491,7 +548,7 @@ def update_validation_step_2(release: Release):
     return info
 
 
-def update_validation_step_3(release: Release):
+def update_validation_step_3(release: Release) -> Step3Info:
     """
     Check all usages have a defined exploitation, and update the release validation step accordingly.
     """
@@ -507,16 +564,19 @@ def update_validation_step_3(release: Release):
     return context
 
 
-def update_validation_step_4(release: Release):
+def update_validation_step_4(release: Release) -> Step4Info:
     """
     Propagate license choices to usages and check for unresolved licenses,
     and update the release validation step accordingly.
     """
     info = dict()
     validation_step = release.valid_step
-    info.update(_propagate_choices(release))
+    conflicting_choices = _propagate_choices(release)
     step4, context = _validate_choices(release)
+
     info.update(context)
+    info["conflicting_choices"] = conflicting_choices
+
     if step4 and validation_step >= 3:
         validation_step = max(validation_step, 4)
     else:
@@ -527,7 +587,7 @@ def update_validation_step_4(release: Release):
     return info
 
 
-def update_validation_step_5(release: Release):
+def update_validation_step_5(release: Release) -> Step5Info:
     """
     Check for licenses that are not allowed in the context of the product,
     and update the release validation step accordingly.
@@ -544,7 +604,7 @@ def update_validation_step_5(release: Release):
     return context
 
 
-def update_validation_step_6(release: Release):
+def update_validation_step_6(release: Release) -> Step6Info:
     """
     Check that the licenses are compatible with the exploitation license,
     and update the release validation step accordingly.

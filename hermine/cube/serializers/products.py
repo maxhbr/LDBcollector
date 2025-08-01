@@ -5,14 +5,13 @@
 from rest_framework import serializers
 
 from cube.models import Product, Release, Usage, Exploitation, License, SBOMImport
-
 from cube.serializers import (
     UsageSerializer,
     LicenseSerializer,
-    VersionSerializer,
     DerogationSerializer,
     GenericSerializer,
     ObligationSerializer,
+    UsageWithVersionsSerializer,
 )
 from cube.utils.validators import validate_file_size
 
@@ -108,12 +107,12 @@ class BaseValidationStepSerializer(serializers.Serializer):
 
 
 class ExpressionValidationSerializer(BaseValidationStepSerializer):
-    invalid_expressions = VersionSerializer(read_only=True, many=True)
-    fixed_expressions = VersionSerializer(read_only=True, many=True)
+    invalid_expressions = UsageWithVersionsSerializer(read_only=True, many=True)
+    fixed_expressions = UsageWithVersionsSerializer(read_only=True, many=True)
 
 
 class AndsValidationSerializer(BaseValidationStepSerializer):
-    to_confirm = UsageSerializer(read_only=True, many=True)
+    to_confirm = UsageWithVersionsSerializer(read_only=True, many=True)
 
 
 class ExploitationsValidationSerializer(BaseValidationStepSerializer):

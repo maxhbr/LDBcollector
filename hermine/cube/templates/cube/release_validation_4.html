@@ -45,19 +45,25 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>Scope</th>
           <th>Component</th>
           <th>License expression</th>
-          <th>Add choice</th>
+          <th>Choice</th>
           {% if perms.cube.add_licensecuration %}<th>Correct license</th>{% endif %}
           <th>Actions</th>
         </tr>
       </thead>
       <tbody>
-        {% for usage in to_resolve %}
+        {% for usage, conflicting_choices in to_resolve %}
           <tr>
             <td>{{ usage.project }}</td>
             <td>{{ usage.scope }}</td>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a> </td>
             <td>{{ usage.version.effective_license }}</td>
-            <td>{% if perms.cube.add_licensechoice %}
+            <td>{% if conflicting_choices %}
+              {{ conflicting_choices|length }} choices apply. {% if perms.cube.change_licensecuration %}Edit choices
+                {% for choice in conflicting_choices %}
+                  <a href="{% url "cube:licensechoice_update" choice.pk %}?from={{ request.path|urlencode }}">
+                    {{ choice.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
+                {% endfor %}{% endif %}
+            {% elif perms.cube.add_licensechoice %}
               <a href="{% url 'cube:release_licensechoice_create' usage.id %}">Add choice rule</a>
             {% endif %}</td>
             {% if perms.cube.add_licensecuration %}<td><a href="{% url "cube:release_licensecuration_create" usage.id %}">Correct license</a></td>{% endif %}
