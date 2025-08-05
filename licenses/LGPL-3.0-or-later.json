@@ -11,8 +11,8 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": true,
-    "liability": "",
-    "warranty": "",
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
     "venue_choice": "",
     "comment": "",
@@ -36,19 +36,6 @@
                 "LGPL-3.0-or-later"
             ],
             "generic": [
-                "Display legal mentions in the user interface (if applicable)"
-            ],
-            "name": "Display Appropriate Legal Notices in Program",
-            "verbatim": "[GPL]5. d) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.\r\n[LGPL]\r\n4.c) For a Combined Work that displays copyright notices during execution, include the copyright notice for the Library among these notices, as well as a reference directing the user to the copies of the GNU GPL and this license document.",
-            "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "Altered"
-        },
-        {
-            "license": [
-                "LGPL-3.0-or-later"
-            ],
-            "generic": [
                 "Reproduce license and legal mentions in documentation"
             ],
             "name": "Licence and acknowledgement in documentation",
@@ -56,6 +43,19 @@
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "generic": [
+                "Display legal mentions in the user interface (if applicable)"
+            ],
+            "name": "Display Appropriate Legal Notices in Program",
+            "verbatim": "[GPL]5. d) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.\r\n[LGPL]\r\n4.c) For a Combined Work that displays copyright notices during execution, include the copyright notice for the Library among these notices, as well as a reference directing the user to the copies of the GNU GPL and this license document.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
         },
         {
             "license": [

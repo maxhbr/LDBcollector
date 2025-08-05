@@ -1,6 +1,6 @@
 {
-  "name": "Reproduce license and legal mentions in documentation",
-  "description": "Reproduce within the documentation the complete text of the licenses, copyright notices and other texts related to involved Intellectual Property.",
-  "metacategory": "Mentions",
-  "passivity": "Active"
+    "name": "Reproduce license and legal mentions in documentation",
+    "description": "Reproduce within the documentation the complete text of the licenses, copyright notices and other texts related to involved Intellectual Property.",
+    "metacategory": "Mentions",
+    "passivity": "Active"
 }

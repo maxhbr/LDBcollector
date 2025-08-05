@@ -1,6 +1,6 @@
 {
-  "name": "Add specific mentions in advertising",
-  "description": "Display of specific content in any advertising document mentioning the features or the use of the software. (This obligation is commonly referred to by the FSF as the \"Obnoxious Advertising Clause\").",
-  "metacategory": "Communication",
-  "passivity": "Active"
+    "name": "Add specific mentions in advertising",
+    "description": "Display of specific content in any advertising document mentioning the features or the use of the software. (This obligation is commonly referred to by the FSF as the \"Obnoxious Advertising Clause\").",
+    "metacategory": "Communication",
+    "passivity": "Active"
 }

@@ -1,0 +1,74 @@
+{
+    "spdx_id": "BSD-3-Clause-Attribution",
+    "long_name": "BSD with attribution",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "BSD-3-Clause-Attribution"
+            ],
+            "generic": [
+                "Add specific legal mentions in the documentation"
+            ],
+            "name": "Specific acknowledgement in documentation",
+            "verbatim": "4. Redistributions of any form whatsoever must retain the following acknowledgment: 'This product includes software developed by the \"Universidad de Palermo, Argentina\" (http://www.palermo.edu/).'",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-3-Clause-Attribution"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-3-Clause-Attribution"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-3-Clause-Attribution"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

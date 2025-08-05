@@ -1,0 +1,137 @@
+{
+    "spdx_id": "EPL-1.0",
+    "long_name": "Eclipse Public License 1.0",
+    "steward": "Eclipse Foundation",
+    "copyleft": "Weak",
+    "url": "http://www.eclipse.org/legal/epl-v10.html",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": true,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "laws of the State of New York and the intellectual property laws of the United States of America",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Make CSC available",
+            "verbatim": "3. REQUIREMENTS\r\nA Contributor may choose to distribute the Program in object code form under\r\nits own license agreement, provided that:\r\n[...]\r\nb. its license agreement:\r\n[...]\r\niv. states that source code for the Program is available from such Contributor,\r\nand informs licensees how to obtain it in a reasonable manner on or through\r\na medium customarily used for software exchange.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "License and notices in source code",
+            "verbatim": "3. REQUIREMENTS\r\n[...]\r\nb. a copy of this Agreement must be included with each copy of the Program.\r\nContributors may not remove or alter any copyright notices contained within\r\nthe Program.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Identifying one's contributions",
+            "verbatim": "3. REQUIREMENTS\r\n[...]\r\nEach Contributor must identify itself as the originator of its Contribution,\r\nif any, in a manner that reasonably allows subsequent Recipients to identify\r\nthe originator of the Contribution. .",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": [
+                "License Agreement must exclude other contributors for additionnal terms"
+            ],
+            "name": "Stating clearly that other contributors are not bound by any extra provision",
+            "verbatim": "3. REQUIREMENTS\r\nA Contributor may choose to distribute the Program in object code form under\r\nits own license agreement, provided that:\r\n[...]\r\nb. its license agreement:\r\n[...]\r\niii. states that any provisions which differ from this Agreement are offered\r\nby that Contributor alone and not by any other party; and",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": [
+                "Indemnify contributors against claims"
+            ],
+            "name": "Indemnification of contributors",
+            "verbatim": "4. COMMERCIAL DISTRIBUTION\r\n\r\n[....]  hereby agrees to defend and indemnify\r\nevery other Contributor (\"Indemnified Contributor\") against any losses, damages\r\nand costs (collectively \"Losses\") arising from claims, lawsuits and other\r\nlegal actions brought by a third party against the Indemnified Contributor\r\nto the extent caused by the acts or omissions of such Commercial Contributor\r\nin connection with its distribution of the Program in a commercial product\r\noffering. The obligations in this section do not apply to any claims or Losses\r\nrelating to any actual or alleged intellectual property infringement. In order\r\nto qualify, an Indemnified Contributor must: a) promptly notify the Commercial\r\nContributor in writing of such claim, and b) allow the Commercial Contributor\r\nto control, and cooperate with the Commercial Contributor in, the defense\r\nand any related settlement negotiations. The Indemnified Contributor may participate\r\nin any such claim at its own expense.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": [
+                "License Agreement must exclude other contributors for additionnal terms"
+            ],
+            "name": "License agreement disclaiming warranty and liability on behalf of other contributors",
+            "verbatim": "b. its license agreement:\r\n\r\ni. effectively disclaims on behalf of all Contributors all warranties and\r\nconditions, express and implied, including warranties or conditions of title\r\nand non-infringement, and implied warranties or conditions of merchantability\r\nand fitness for a particular purpose;\r\n\r\nii. effectively excludes on behalf of all Contributors all liability for damages,\r\nincluding direct, indirect, special, incidental and consequential damages,\r\nsuch as lost profits;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": [
+                "Do not enforce patent rights (Patent peace)"
+            ],
+            "name": "Patent peace",
+            "verbatim": "7. GENERAL\r\n[...]\r\nIf Recipient institutes patent litigation against any entity (including a\r\ncross-claim or counterclaim in a lawsuit) alleging that the Program itself\r\n(excluding combinations of the Program with other software or hardware) infringes such Recipient's patent(s), then such Recipient's rights granted under Section 2(b) shall terminate as of the date such litigation is filed.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak copyleft",
+            "verbatim": "3. REQUIREMENTS\r\n[...]\r\nWhen the Program is made available in source code form:\r\na. it must be made available under this Agreement; and",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-1.0"
+            ],
+            "generic": null,
+            "name": "License agreement : how to obtain source code",
+            "verbatim": "3. REQUIREMENTS\r\nA Contributor may choose to distribute the Program in object code form under\r\nits own license agreement, provided that:\r\n[...]\r\nb. its license agreement:\r\n[...]\r\niv. states that source code for the Program is available from such Contributor,\r\nand informs licensees how to obtain it in a reasonable manner on or through\r\na medium customarily used for software exchange.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

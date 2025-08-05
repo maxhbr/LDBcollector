@@ -11,11 +11,11 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
-    "liability": "",
-    "warranty": "",
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
     "venue_choice": "",
-    "comment": "Traiter la question du patent grant implicite",
+    "comment": "implicit patent grant",
     "verbatim": "",
     "obligations": [
         {

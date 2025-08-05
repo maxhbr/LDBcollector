@@ -1,0 +1,21 @@
+{
+    "spdx_id": "blessing",
+    "long_name": "SQLite Blessing",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": true,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Absent",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": []
+}

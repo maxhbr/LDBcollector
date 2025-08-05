@@ -1,0 +1,74 @@
+{
+    "spdx_id": "OFL-1.0",
+    "long_name": "SIL Open Font License 1.0",
+    "steward": "",
+    "copyleft": "Strong",
+    "url": "http://scripts.sil.org/cms/scripts/page.php?item_id=OFL10_web",
+    "osi_approved": false,
+    "fsf_approved": true,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "[Font License]\r\n\r\nThe identifier OFL-1.0 can be used to indicate that version 1.0 of the SIL Open Font License applies, without asserting whether or not a Reserved Font Name is used. See OFL-1.0-RFN and OFL-1.0-no-RFN for alternative identifiers that can be used to express explicitly that a Reserved Font Name is used or is not used, respectively.",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "OFL-1.0"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "2) Standard or Modified Versions of the Font Software may be bundled, redistributed and sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OFL-1.0"
+            ],
+            "generic": [
+                "Don't sell the software in itself"
+            ],
+            "name": "Don't sell the software in itself",
+            "verbatim": "1) Neither the Font Software nor any of its individual components, in Standard or Modified Versions, may be sold by itself.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OFL-1.0"
+            ],
+            "generic": [
+                "Strong Copyleft"
+            ],
+            "name": "Strong copyleft",
+            "verbatim": "5) The Font Software, modified or unmodified, in part or in whole, must be distributed using this license, and may not be distributed under any other license.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OFL-1.0"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "Do not use project or contributor names for endorsement or promotion.",
+            "verbatim": "4) The name(s) of the Copyright Holder or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder and the Author(s) or with their explicit written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

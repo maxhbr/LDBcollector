@@ -1,0 +1,74 @@
+{
+    "spdx_id": "Sleepycat",
+    "long_name": "Sleepycat License",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://opensource.org/licenses/Sleepycat",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Sleepycat"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user",
+            "verbatim": "Redistributions in any form must be accompanied by information on how to obtain complete source code for the DB software and any accompanying software that uses the DB software. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Sleepycat"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Sleepycat"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce license and legal mentions in documentation",
+            "verbatim": "Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Sleepycat"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "Do not use project or contributor names for endorsement or promotion.",
+            "verbatim": "Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

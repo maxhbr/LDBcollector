@@ -1,0 +1,61 @@
+{
+    "spdx_id": "Qhull",
+    "long_name": "Qhull License",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/Qhull",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "No-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Qhull"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "1. All copyright notices must remain intact in all files.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Qhull"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce license and legal mentions in documentation",
+            "verbatim": "2. A copy of this text file must be distributed along with any copies of Qhull that you redistribute; this includes copies that you have modified, or copies of programs or other software products that include Qhull.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Qhull"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Track and mention modifications in the source code",
+            "verbatim": "3. If you modify Qhull, you must include a notice giving the name of the person performing the modification, the date of modification, and the reason for such modification.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

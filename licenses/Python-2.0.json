@@ -11,8 +11,8 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
-    "liability": "",
-    "warranty": "",
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "law of the State of California,  law of the State of Virginia,",
     "venue_choice": "",
     "comment": "",
@@ -29,7 +29,7 @@
             "verbatim": "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2\r\n 3. In the event Licensee prepares a derivative work that is based on or incorporates Python or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python. \r\n\r\nCNRI OPEN SOURCE LICENSE AGREEMENT (for Python 1.6b1)\r\n 3. In the event Licensee prepares a derivative work that is based on or incorporates Python 1.6b1 or any part thereof, and wants to make the derivative work available to the public as provided herein, then Licensee hereby agrees to indicate in any such work the nature of the modifications made to Python 1.6b1.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "Altered"
+            "trigger_mdf": "AlteredUnmodified"
         },
         {
             "license": [
