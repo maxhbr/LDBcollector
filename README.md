@@ -167,7 +167,7 @@ The PostgreSQL user `fossy` must have the `CREATEDB` privilege in order to:
 - Programmatically create and drop a test database.
 - Apply migrations on the test DB before running tests.
 
-```json
+```bash
 sudo -u postgres psql; // log into psql with postgres super user 
 ALTER USER fossy CREATEDB; // alter the role for fossy
 \du ;                     // verify role 

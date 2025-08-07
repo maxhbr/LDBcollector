@@ -681,6 +681,41 @@ definitions:
     - field
     - search_term
     type: object
+  models.SimilarLicense:
+    properties:
+      id:
+        example: 123
+        type: integer
+      shortname:
+        example: MIT
+        type: string
+      similarity:
+        type: number
+      text:
+        example: MIT License Text here
+        type: string
+    type: object
+  models.SimilarObligation:
+    properties:
+      id:
+        example: 123
+        type: integer
+      similarity:
+        type: number
+      text:
+        example: obligation text here
+        type: string
+      topic:
+        example: MIT license
+        type: string
+    type: object
+  models.SimilarityRequest:
+    properties:
+      text:
+        type: string
+    required:
+    - text
+    type: object
   models.SwaggerObligationResponse:
     properties:
       data:
@@ -1292,6 +1327,41 @@ paths:
       summary: Get shortnames of all active licenses
       tags:
       - Licenses
+  /licenses/similarity:
+    post:
+      consumes:
+      - application/json
+      description: Compares input license text with existing ones using pg_trgm similarity
+      operationId: getSimilarLicense
+      parameters:
+      - description: Input license text to compare
+        in: body
+        name: license
+        required: true
+        schema:
+          $ref: '#/definitions/models.SimilarityRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: List of similar licenses
+          schema:
+            items:
+              $ref: '#/definitions/models.SimilarLicense'
+            type: array
+        "400":
+          description: Invalid request or query failed
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Find similar license texts
+      tags:
+      - Licenses
   /login:
     post:
       consumes:
@@ -1867,6 +1937,42 @@ paths:
       - '{}': []
         ApiKeyAuth: []
       summary: Get topic and types of all active obligations
+      tags:
+      - Obligations
+  /obligations/similarity:
+    post:
+      consumes:
+      - application/json
+      description: Returns the top 5 obligations with text similar to the input using
+        pg_trgm
+      operationId: getSimilarObligation
+      parameters:
+      - description: Text to compare against stored obligations
+        in: body
+        name: obligation
+        required: true
+        schema:
+          $ref: '#/definitions/models.SimilarityRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Similar obligations found
+          schema:
+            items:
+              $ref: '#/definitions/models.SimilarObligation'
+            type: array
+        "400":
+          description: Invalid input or database query failure
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Unexpected server error
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Find similar obligations
       tags:
       - Obligations
   /obligations/types:

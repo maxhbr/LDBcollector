@@ -676,6 +676,61 @@ const docTemplate = `{
                 }
             }
         },
+        "/licenses/similarity": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Compares input license text with existing ones using pg_trgm similarity",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Find similar license texts",
+                "operationId": "getSimilarLicense",
+                "parameters": [
+                    {
+                        "description": "Input license text to compare",
+                        "name": "license",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.SimilarityRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of similar licenses",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.SimilarLicense"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid request or query failed",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/licenses/{shortname}": {
             "get": {
                 "security": [
@@ -1467,6 +1522,61 @@ const docTemplate = `{
                         "description": "OK",
                         "schema": {
                             "$ref": "#/definitions/models.ObligationPreviewResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/similarity": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Returns the top 5 obligations with text similar to the input using pg_trgm",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Find similar obligations",
+                "operationId": "getSimilarObligation",
+                "parameters": [
+                    {
+                        "description": "Text to compare against stored obligations",
+                        "name": "obligation",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.SimilarityRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Similar obligations found",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.SimilarObligation"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input or database query failure",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Unexpected server error",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
                         }
                     }
                 }
@@ -3360,6 +3470,57 @@ const docTemplate = `{
                 "search_term": {
                     "type": "string",
                     "example": "MIT License"
+                }
+            }
+        },
+        "models.SimilarLicense": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "example": 123
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "similarity": {
+                    "type": "number"
+                },
+                "text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                }
+            }
+        },
+        "models.SimilarObligation": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "example": 123
+                },
+                "similarity": {
+                    "type": "number"
+                },
+                "text": {
+                    "type": "string",
+                    "example": "obligation text here"
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "MIT license"
+                }
+            }
+        },
+        "models.SimilarityRequest": {
+            "type": "object",
+            "required": [
+                "text"
+            ],
+            "properties": {
+                "text": {
+                    "type": "string"
                 }
             }
         },

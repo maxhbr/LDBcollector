@@ -69,6 +69,7 @@ func main() {
 	if *populatedb {
 		utils.Populatedb(*datafile)
 	}
+	utils.SetSimilarityThreshold() // Set the similarity threshold from the environment variable
 
 	r := api.Router()
 

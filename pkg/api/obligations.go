@@ -2,6 +2,7 @@
 // SPDX-FileCopyrightText: 2023 Siemens AG
 // SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
 // SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com>
+// SPDX-FileContributor: 2025 Chayan Das <01chayandas@gmail.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only
 
@@ -756,5 +757,60 @@ func GetAllObligationPreviews(c *gin.Context) {
 		Status: http.StatusOK,
 	}
 
+	c.JSON(http.StatusOK, res)
+}
+
+// getSimilarObligation finds similar obligation texts using trigram similarity
+//
+//	@Summary		Find similar obligations
+//	@Description	Returns the top 5 obligations with text similar to the input using pg_trgm
+//	@ID				getSimilarObligation
+//	@Tags			Obligations
+//	@Accept			json
+//	@Produce		json
+//	@Param			obligation	body		models.SimilarityRequest	true	"Text to compare against stored obligations"
+//	@Success		200			{object}	[]models.SimilarObligation	"Similar obligations found"
+//	@Failure		400			{object}	models.LicenseError			"Invalid input or database query failure"
+//	@Failure		500			{object}	models.LicenseError			"Unexpected server error"
+//	@Security		ApiKeyAuth
+//	@Router			/obligations/similarity [post]
+func getSimilarObligations(c *gin.Context) {
+	var req models.SimilarityRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Text field is required",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	var results []models.SimilarObligation
+	rawQuery := `
+		SELECT id, topic,text, similarity(text, ?) AS similarity
+		FROM obligations
+		WHERE text % ?
+		ORDER BY similarity DESC
+	`
+	if err := db.DB.Raw(rawQuery, req.Text, req.Text).Scan(&results).Error; err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Database query failed",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	res := models.ApiResponse[[]models.SimilarObligation]{
+		Status: http.StatusOK,
+		Data:   results,
+		Meta: &models.PaginationMeta{
+			ResourceCount: len(results),
+		},
+	}
 	c.JSON(http.StatusOK, res)
 }
