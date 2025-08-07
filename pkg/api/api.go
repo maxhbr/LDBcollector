@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
 // SPDX-FileCopyrightText: 2023 Siemens AG
 // SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+// SPDX-FileContributor: 2025 Chayan Das <01chayandas@gmail.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only
 
@@ -115,6 +116,8 @@ func Router() *gin.Engine {
 				licenses.POST("", CreateLicense)
 				licenses.PATCH(":shortname", UpdateLicense)
 				licenses.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), ImportLicenses)
+				licenses.POST("/similarity", getSimilarLicenses)
+
 			}
 			search := authorizedv1.Group("/search")
 			{
@@ -147,6 +150,7 @@ func Router() *gin.Engine {
 				obligations.GET("/classifications", GetAllObligationClassification)
 				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
 				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
+				obligations.POST("/similarity", getSimilarObligations)
 			}
 			obMap := authorizedv1.Group("/obligation_maps")
 			{
@@ -239,6 +243,8 @@ func Router() *gin.Engine {
 				licenses.POST("", CreateLicense)
 				licenses.PATCH(":shortname", UpdateLicense)
 				licenses.POST("import", ImportLicenses)
+				licenses.POST("/similarity", getSimilarLicenses)
+
 			}
 			users := authorizedv1.Group("/users")
 			{
@@ -260,6 +266,7 @@ func Router() *gin.Engine {
 				obligations.DELETE("/types/:type", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationType)
 				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
 				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
+				obligations.POST("/similarity", getSimilarObligations)
 			}
 			obMap := authorizedv1.Group("/obligation_maps")
 			{

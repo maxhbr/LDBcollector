@@ -847,3 +847,25 @@ type DashboardResponse struct {
 	Status int       `json:"status" example:"200"`
 	Data   Dashboard `json:"data"`
 }
+type SimilarLicense struct {
+	Id         int64   `json:"id" gorm:"column:rf_id" example:"123"`
+	Shortname  *string `json:"shortname" gorm:"column:rf_shortname" example:"MIT"`
+	Text       *string `json:"text" gorm:"column:rf_text" example:"MIT License Text here"`
+	Similarity float64 `json:"similarity"`
+}
+
+type SimilarObligation struct {
+	Id         int64   `gorm:"primary_key;column:id" json:"id" example:"123" `
+	Topic      *string `gorm:"column:topic" json:"topic" example:"MIT license"`
+	Text       *string `gorm:"column:text" json:"text"  example:"obligation text here"`
+	Similarity float64 `json:"similarity"`
+}
+type SimilarityRequest struct {
+	Text string `json:"text" binding:"required"`
+}
+
+type ApiResponse[T any] struct {
+	Status int `json:"status"`
+	Data   T   `json:"data,omitempty"`
+	Meta   any `json:"meta,omitempty"`
+}

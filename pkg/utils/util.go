@@ -625,6 +625,28 @@ func Populatedb(datafile string) {
 	}
 }
 
+// SetSimilarityThreshold parses the env var and sets the threshold in Postgres.
+func SetSimilarityThreshold() {
+	defaultThreshold := 0.7
+	thresholdStr := os.Getenv("SIMILARITY_THRESHOLD")
+
+	threshold := defaultThreshold
+	if thresholdStr != "" {
+		if parsed, err := strconv.ParseFloat(thresholdStr, 64); err == nil {
+			threshold = parsed
+		} else {
+			log.Printf("Invalid SIMILARITY_THRESHOLD '%s', using default %.1f", thresholdStr, defaultThreshold)
+		}
+	} else {
+		log.Printf("SIMILARITY_THRESHOLD not set, using default %.1f", defaultThreshold)
+	}
+
+	query := fmt.Sprintf("SET pg_trgm.similarity_threshold = %f", threshold)
+	if err := db.DB.Exec(query).Error; err != nil {
+		log.Println("Failed to set similarity threshold:", err)
+	}
+}
+
 // GetAuditEntity is an utility function to fetch obligation or license associated with an audit
 func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 	if audit.Type == "LICENSE" {
