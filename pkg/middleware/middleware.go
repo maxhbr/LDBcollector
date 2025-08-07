@@ -82,12 +82,13 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 				return
 			}
 
-			if err := db.DB.Where(models.User{Id: user.Id}).First(&user).Error; err != nil {
+			active := true
+			if err := db.DB.Where(models.User{Id: user.Id, Active: &active}).First(&user).Error; err != nil {
 				log.Printf("\033[31mError: %s\033[0m", err.Error())
 				unauthorized(c, "User not found. Please check your credentials.")
 				return
 			}
-			c.Set("username", *user.UserName)
+			c.Set("userId", user.Id)
 			c.Set("role", *user.UserLevel)
 		} else if iss == os.Getenv("OIDC_ISSUER") {
 
@@ -199,7 +200,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 				}
 			}
 
-			c.Set("username", *user.UserName)
+			c.Set("userId", user.Id)
 			c.Set("role", *user.UserLevel)
 		} else {
 			log.Printf("\033[31mError: Issuer '%s' not supported or not configured in .env\033[0m", iss)

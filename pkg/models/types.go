@@ -59,34 +59,7 @@ func (LicenseDB) TableName() string {
 }
 
 // BeforeCreate hook to validate data and log the user who is creating the record
-func (l *LicenseDB) BeforeCreate(tx *gorm.DB) (err error) {
-	username, ok := tx.Statement.Context.Value(ContextKey("user")).(string)
-	if !ok {
-		return errors.New("username not found in context")
-	}
-	user := User{UserName: &username}
-	if err := tx.Where(&user).First(&user).Error; err != nil {
-		return errors.New("user not found")
-	}
-	l.User = User{}
-	l.UserId = user.Id
-
-	if err := validateLicenseFields(l); err != nil {
-		return err
-	}
-	return nil
-}
-
-// BeforeUpdate hook to validate data and log the user who is updating the record
-func (l *LicenseDB) BeforeUpdate(tx *gorm.DB) (err error) {
-	if err := validateLicenseFields(l); err != nil {
-		return err
-	}
-	return nil
-}
-
-// Helper function to validate fields
-func validateLicenseFields(l *LicenseDB) error {
+func (l *LicenseDB) BeforeSave(tx *gorm.DB) (err error) {
 	if l.Shortname != nil && *l.Shortname == "" {
 		return errors.New("shortname cannot be an empty string")
 	}

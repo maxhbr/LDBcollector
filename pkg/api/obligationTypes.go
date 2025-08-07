@@ -94,7 +94,7 @@ func GetAllObligationType(c *gin.Context) {
 //	@Router			/obligations/types [post]
 func CreateObligationType(c *gin.Context) {
 	var obType models.ObligationType
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(int64)
 	if err := c.ShouldBindJSON(&obType); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -107,7 +107,7 @@ func CreateObligationType(c *gin.Context) {
 		return
 	}
 
-	err, status := utils.CreateObType(&obType, username)
+	err, status := utils.CreateObType(&obType, userId)
 
 	if status == utils.CREATED {
 		res := models.ObligationTypeResponse{
@@ -180,7 +180,7 @@ func CreateObligationType(c *gin.Context) {
 func DeleteObligationType(c *gin.Context) {
 	var obType models.ObligationType
 	obTypeParam := c.Param("type")
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(int64)
 	if err := db.DB.Where(models.ObligationType{Type: obTypeParam}).First(&obType).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
@@ -224,7 +224,7 @@ func DeleteObligationType(c *gin.Context) {
 	}
 
 	if err := db.DB.Transaction(func(tx *gorm.DB) error {
-		return utils.ToggleObligationTypeActiveStatus(username, tx, &obType)
+		return utils.ToggleObligationTypeActiveStatus(userId, tx, &obType)
 	}); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
