@@ -28,22 +28,9 @@ import (
 func GetUserOidcClients(c *gin.Context) {
 	var oidcClients []models.OidcClient
 
-	username := c.GetString("username")
-	var user models.User
-	active := true
-	if err := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Unable to fetch oidc clients",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
+	userId := c.MustGet("userId").(int64)
 
-	if err := db.DB.Where(&models.OidcClient{UserId: user.Id}).Find(&oidcClients).Error; err != nil {
+	if err := db.DB.Where(&models.OidcClient{UserId: userId}).Find(&oidcClients).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "Unable to fetch oidc clients",
@@ -100,23 +87,10 @@ func AddOidcClient(c *gin.Context) {
 		return
 	}
 
-	username := c.GetString("username")
-	var user models.User
-	active := true
-	if err := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Unable to create oidc client",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
+	userId := c.MustGet("userId").(int64)
 
 	oidcClient := models.OidcClient(oidcClientDto)
-	oidcClient.UserId = user.Id
+	oidcClient.UserId = userId
 
 	result := db.DB.Where(&models.OidcClient{ClientId: oidcClient.ClientId}).FirstOrCreate(&oidcClient)
 
@@ -182,23 +156,10 @@ func RevokeClient(c *gin.Context) {
 		return
 	}
 
-	username := c.GetString("username")
-	var user models.User
-	active := true
-	if err := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Unable to delete oidc client",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
+	userId := c.MustGet("userId").(int64)
 
 	oidcClient := models.OidcClient(deleteOidcClientDto)
-	result := db.DB.Where(&models.OidcClient{ClientId: deleteOidcClientDto.ClientId, UserId: user.Id}).Delete(&oidcClient)
+	result := db.DB.Where(&models.OidcClient{ClientId: deleteOidcClientDto.ClientId, UserId: userId}).Delete(&oidcClient)
 
 	if result.Error != nil {
 		er := models.LicenseError{

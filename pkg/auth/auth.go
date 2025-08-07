@@ -80,7 +80,7 @@ func CreateUser(c *gin.Context) {
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 
-		username := c.GetString("username")
+		userId := c.MustGet("userId").(int64)
 		user := models.User(input)
 		*user.UserName = html.EscapeString(strings.TrimSpace(*user.UserName))
 		*user.DisplayName = html.EscapeString(strings.TrimSpace(*user.DisplayName))
@@ -135,7 +135,7 @@ func CreateUser(c *gin.Context) {
 			return nil
 		}
 
-		if err := utils.AddChangelogsForUser(tx, username, &user, &models.User{}); err != nil {
+		if err := utils.AddChangelogsForUser(tx, userId, &user, &models.User{}); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update changelogs",
@@ -406,6 +406,7 @@ func CreateOidcUser(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/users/{username} [patch]
 func UpdateUser(c *gin.Context) {
+	userId := c.MustGet("userId").(int64)
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var olduser models.User
 		var updates models.UserUpdate
@@ -495,7 +496,7 @@ func UpdateUser(c *gin.Context) {
 			c.JSON(http.StatusInternalServerError, er)
 			return nil
 		}
-		if err := utils.AddChangelogsForUser(tx, *updatedUser.UserName, &updatedUser, &olduser); err != nil {
+		if err := utils.AddChangelogsForUser(tx, userId, &updatedUser, &olduser); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update user",
@@ -515,7 +516,7 @@ func UpdateUser(c *gin.Context) {
 			},
 		}
 
-		c.JSON(http.StatusCreated, res)
+		c.JSON(http.StatusOK, res)
 
 		return nil
 	})
@@ -539,9 +540,9 @@ func UpdateProfile(c *gin.Context) {
 		var olduser models.User
 		var changes models.ProfileUpdate
 
-		username := c.GetString("username")
+		userId := c.MustGet("userId").(int64)
 
-		if err := tx.Where(models.User{UserName: &username}).First(&olduser).Error; err != nil {
+		if err := tx.Where(models.User{Id: userId}).First(&olduser).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   "no user with such username exists",
@@ -609,7 +610,7 @@ func UpdateProfile(c *gin.Context) {
 			c.JSON(http.StatusInternalServerError, er)
 			return nil
 		}
-		if err := utils.AddChangelogsForUser(tx, username, &updatedUser, &olduser); err != nil {
+		if err := utils.AddChangelogsForUser(tx, userId, &updatedUser, &olduser); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update profile",
@@ -629,7 +630,7 @@ func UpdateProfile(c *gin.Context) {
 			},
 		}
 
-		c.JSON(http.StatusCreated, res)
+		c.JSON(http.StatusOK, res)
 
 		return nil
 	})
@@ -652,9 +653,9 @@ func UpdateProfile(c *gin.Context) {
 func DeleteUser(c *gin.Context) {
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var olduser models.User
-		username := c.Param("username")
+		userId := c.MustGet("userId").(int64)
 		active := true
-		if err := tx.Where(models.User{UserName: &username, Active: &active}).First(&olduser).Error; err != nil {
+		if err := tx.Where(models.User{Id: userId, Active: &active}).First(&olduser).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   "no user with such username exists",
@@ -693,7 +694,7 @@ func DeleteUser(c *gin.Context) {
 			return err
 		}
 
-		if err := utils.AddChangelogsForUser(tx, username, &updatedUser, &olduser); err != nil {
+		if err := utils.AddChangelogsForUser(tx, userId, &updatedUser, &olduser); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update profile",
@@ -915,10 +916,10 @@ func Login(c *gin.Context) {
 //	@Router			/users/profile [get]
 func GetUserProfile(c *gin.Context) {
 	var user models.User
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(int64)
 
 	active := true
-	if err := db.DB.Where(models.User{UserName: &username, Active: &active}).First(&user).Error; err != nil {
+	if err := db.DB.Where(models.User{Id: userId, Active: &active}).First(&user).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "no user with such username exists",

@@ -186,8 +186,8 @@ func PatchObligationMap(c *gin.Context) {
 		}
 	}
 
-	username := c.GetString("username")
-	newLicenseAssociations, errs := utils.PerformObligationMapActions(username, &obligation, removeLicenses, insertLicenses)
+	userId := c.MustGet("userId").(int64)
+	newLicenseAssociations, errs := utils.PerformObligationMapActions(userId, &obligation, removeLicenses, insertLicenses)
 	if len(errs) != 0 {
 		var combinedErrors string
 		for _, err := range errs {
@@ -272,8 +272,8 @@ func UpdateLicenseInObligationMap(c *gin.Context) {
 
 	utils.GenerateDiffForReplacingLicenses(&obligation, obMapInput.Shortnames, &removeLicenses, &insertLicenses)
 
-	username := c.GetString("username")
-	newLicenseAssociations, errs := utils.PerformObligationMapActions(username, &obligation, removeLicenses, insertLicenses)
+	userId := c.MustGet("userId").(int64)
+	newLicenseAssociations, errs := utils.PerformObligationMapActions(userId, &obligation, removeLicenses, insertLicenses)
 	if len(errs) != 0 {
 		var combinedErrors string
 		for _, err := range errs {

@@ -8,7 +8,6 @@
 package utils
 
 import (
-	"context"
 	"encoding/base64"
 	"encoding/json"
 	"errors"
@@ -203,7 +202,7 @@ const (
 	IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
 )
 
-func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *models.UpdateExternalRefsJSONPayload, username string) (string, LicenseImportStatusCode) {
+func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *models.UpdateExternalRefsJSONPayload, userId int64) (string, LicenseImportStatusCode) {
 	var message string
 	var importStatus LicenseImportStatusCode
 	var newLicense, oldLicense models.LicenseDB
@@ -216,9 +215,9 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 		return message, importStatus
 	}
 
+	license.UserId = userId
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		ctx := context.WithValue(context.Background(), models.ContextKey("user"), username)
-		result := tx.WithContext(ctx).
+		result := tx.
 			Where(&models.LicenseDB{Shortname: license.Shortname}).
 			Attrs(license).
 			FirstOrCreate(&oldLicense)
@@ -254,7 +253,7 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 				return errors.New(message)
 			}
 
-			if err := AddChangelogsForLicense(tx, username, &newLicense, &oldLicense); err != nil {
+			if err := AddChangelogsForLicense(tx, userId, &newLicense, &oldLicense); err != nil {
 				message = fmt.Sprintf("failed to update license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
@@ -270,7 +269,7 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 		} else {
 			// case when license doesn't exist in database and is inserted
 
-			if err := AddChangelogsForLicense(tx, username, &oldLicense, &models.LicenseDB{}); err != nil {
+			if err := AddChangelogsForLicense(tx, userId, &oldLicense, &models.LicenseDB{}); err != nil {
 				message = fmt.Sprintf("failed to create license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
@@ -329,7 +328,7 @@ func GenerateDiffForReplacingLicenses(obligation *models.Obligation, newLicenseA
 // PerformObligationMapActions created associations for licenses in insertLicenses and deletes
 // associations for licenses in removeLicenses. It also calculates changelog for the changes.
 // It returns the final list of associated licenses.
-func PerformObligationMapActions(username string, obligation *models.Obligation,
+func PerformObligationMapActions(userId int64, obligation *models.Obligation,
 	removeLicenses, insertLicenses []string) ([]string, []error) {
 	createLicenseAssociations := []models.LicenseDB{}
 	deleteLicenseAssociations := []models.LicenseDB{}
@@ -378,7 +377,7 @@ func PerformObligationMapActions(username string, obligation *models.Obligation,
 			newLicenseAssociations = append(newLicenseAssociations, *lic.Shortname)
 		}
 
-		return createObligationMapChangelog(tx, username, newLicenseAssociations, oldLicenseAssociations, obligation)
+		return createObligationMapChangelog(tx, userId, newLicenseAssociations, oldLicenseAssociations, obligation)
 	}); err != nil {
 		errs = append(errs, err)
 	}
@@ -386,7 +385,7 @@ func PerformObligationMapActions(username string, obligation *models.Obligation,
 }
 
 // createObligationMapChangelog creates the changelog for the obligation map changes.
-func createObligationMapChangelog(tx *gorm.DB, username string,
+func createObligationMapChangelog(tx *gorm.DB, userId int64,
 	newLicenseAssociations, oldLicenseAssociations []string, obligation *models.Obligation) error {
 	oldVal := strings.Join(oldLicenseAssociations, ", ")
 	newVal := strings.Join(newLicenseAssociations, ", ")
@@ -394,13 +393,8 @@ func createObligationMapChangelog(tx *gorm.DB, username string,
 	var changes []models.ChangeLog
 	AddChangelog("Licenses", &oldVal, &newVal, &changes)
 
-	var user models.User
-	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		return err
-	}
-
 	audit := models.Audit{
-		UserId:     user.Id,
+		UserId:     userId,
 		TypeId:     obligation.Id,
 		Timestamp:  time.Now(),
 		Type:       "OBLIGATION",
@@ -414,19 +408,14 @@ func createObligationMapChangelog(tx *gorm.DB, username string,
 	return nil
 }
 
-func AddChangelogForObligationType(tx *gorm.DB, username string, oldObType, newObType *models.ObligationType) error {
-	var user models.User
-	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		return errors.New("unable to update obligation type")
-	}
-
+func AddChangelogForObligationType(tx *gorm.DB, userId int64, oldObType, newObType *models.ObligationType) error {
 	var changes []models.ChangeLog
 	AddChangelog("Active", oldObType.Active, newObType.Active, &changes)
 	AddChangelog("Type", &oldObType.Type, &newObType.Type, &changes)
 
 	if len(changes) != 0 {
 		audit := models.Audit{
-			UserId:     user.Id,
+			UserId:     userId,
 			TypeId:     newObType.Id,
 			Timestamp:  time.Now(),
 			Type:       "TYPE",
@@ -441,7 +430,7 @@ func AddChangelogForObligationType(tx *gorm.DB, username string, oldObType, newO
 	return nil
 }
 
-func ToggleObligationTypeActiveStatus(username string, tx *gorm.DB, obType *models.ObligationType) error {
+func ToggleObligationTypeActiveStatus(userId int64, tx *gorm.DB, obType *models.ObligationType) error {
 	newObType := *obType
 	newActive := !*obType.Active
 	newObType.Active = &newActive
@@ -449,22 +438,17 @@ func ToggleObligationTypeActiveStatus(username string, tx *gorm.DB, obType *mode
 		return errors.New("unable to change 'active' status of obligation type")
 	}
 
-	return AddChangelogForObligationType(tx, username, obType, &newObType)
+	return AddChangelogForObligationType(tx, userId, obType, &newObType)
 }
 
-func AddChangelogForObligationClassification(tx *gorm.DB, username string, oldObClassification, newObClassification *models.ObligationClassification) error {
-	var user models.User
-	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		return errors.New("unable to update obligation classification")
-	}
-
+func AddChangelogForObligationClassification(tx *gorm.DB, userId int64, oldObClassification, newObClassification *models.ObligationClassification) error {
 	var changes []models.ChangeLog
 	AddChangelog("Active", oldObClassification.Active, newObClassification.Active, &changes)
 	AddChangelog("Classification", &oldObClassification.Classification, &newObClassification.Classification, &changes)
 
 	if len(changes) != 0 {
 		audit := models.Audit{
-			UserId:     user.Id,
+			UserId:     userId,
 			TypeId:     newObClassification.Id,
 			Timestamp:  time.Now(),
 			Type:       "CLASSIFICATION",
@@ -479,7 +463,7 @@ func AddChangelogForObligationClassification(tx *gorm.DB, username string, oldOb
 	return nil
 }
 
-func ToggleObligationClassificationActiveStatus(username string, tx *gorm.DB, obClassification *models.ObligationClassification) error {
+func ToggleObligationClassificationActiveStatus(userId int64, tx *gorm.DB, obClassification *models.ObligationClassification) error {
 	newObClassification := *obClassification
 	newActive := !*obClassification.Active
 	newObClassification.Active = &newActive
@@ -487,7 +471,7 @@ func ToggleObligationClassificationActiveStatus(username string, tx *gorm.DB, ob
 		return errors.New("unable to change 'active' status of obligation classification")
 	}
 
-	return AddChangelogForObligationClassification(tx, username, obClassification, &newObClassification)
+	return AddChangelogForObligationClassification(tx, userId, obClassification, &newObClassification)
 }
 
 // ObligationTypeStatusCode is internally used for checking status of a obligation type creation
@@ -502,7 +486,7 @@ const (
 	CREATED
 )
 
-func CreateObType(obType *models.ObligationType, username string) (error, ObligationFieldCreateStatusCode) {
+func CreateObType(obType *models.ObligationType, userId int64) (error, ObligationFieldCreateStatusCode) {
 	validate := validator.New(validator.WithRequiredStructEnabled())
 	if err := validate.Struct(obType); err != nil {
 		return err, VALIDATION_FAILED
@@ -520,12 +504,12 @@ func CreateObType(obType *models.ObligationType, username string) (error, Obliga
 				status = CONFLICT
 				return errors.New("obligation type already exists")
 			}
-			if err := ToggleObligationTypeActiveStatus(username, tx, obType); err != nil {
+			if err := ToggleObligationTypeActiveStatus(userId, tx, obType); err != nil {
 				status = CONFLICT_ACTIVATION_FAILED
 				return err
 			}
 		} else {
-			if err := AddChangelogForObligationType(tx, username, &models.ObligationType{}, obType); err != nil {
+			if err := AddChangelogForObligationType(tx, userId, &models.ObligationType{}, obType); err != nil {
 				status = CREATE_FAILED
 				return err
 			}
@@ -538,7 +522,7 @@ func CreateObType(obType *models.ObligationType, username string) (error, Obliga
 	return err, status
 }
 
-func CreateObClassification(obClassification *models.ObligationClassification, username string) (error, ObligationFieldCreateStatusCode) {
+func CreateObClassification(obClassification *models.ObligationClassification, userId int64) (error, ObligationFieldCreateStatusCode) {
 	validate := validator.New(validator.WithRequiredStructEnabled())
 	if err := validate.Struct(obClassification); err != nil {
 		return err, VALIDATION_FAILED
@@ -556,12 +540,12 @@ func CreateObClassification(obClassification *models.ObligationClassification, u
 				status = CONFLICT
 				return errors.New("obligation classification already exists")
 			}
-			if err := ToggleObligationClassificationActiveStatus(username, tx, obClassification); err != nil {
+			if err := ToggleObligationClassificationActiveStatus(userId, tx, obClassification); err != nil {
 				status = CONFLICT_ACTIVATION_FAILED
 				return err
 			}
 		} else {
-			if err := AddChangelogForObligationClassification(tx, username, &models.ObligationClassification{}, obClassification); err != nil {
+			if err := AddChangelogForObligationClassification(tx, userId, &models.ObligationClassification{}, obClassification); err != nil {
 				status = CREATE_FAILED
 				return err
 			}
@@ -595,7 +579,7 @@ func Populatedb(datafile string) {
 
 	for _, license := range licenses {
 		result := Converter(license)
-		_, _ = InsertOrUpdateLicenseOnImport(&result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, *user.UserName)
+		_, _ = InsertOrUpdateLicenseOnImport(&result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, user.Id)
 	}
 
 	DEFAULT_OBLIGATION_TYPES := []*models.ObligationType{
@@ -606,7 +590,7 @@ func Populatedb(datafile string) {
 	}
 
 	for _, obType := range DEFAULT_OBLIGATION_TYPES {
-		err, status := CreateObType(obType, *user.UserName)
+		err, status := CreateObType(obType, user.Id)
 
 		if status == CREATED || status == CONFLICT {
 			green := "\033[32m"
@@ -627,7 +611,7 @@ func Populatedb(datafile string) {
 	}
 
 	for _, obClassification := range DEFAULT_OBLIGATION_CLASSIFICATIONS {
-		err, status := CreateObClassification(obClassification, *user.UserName)
+		err, status := CreateObClassification(obClassification, user.Id)
 
 		if status == CREATED || status == CONFLICT {
 			green := "\033[32m"
@@ -740,7 +724,7 @@ func AddChangelog[T any](fieldName string, oldValue, newValue *T, changes *[]mod
 }
 
 // AddChangelogsForLicense adds changelogs for the updated fields on license update
-func AddChangelogsForLicense(tx *gorm.DB, username string,
+func AddChangelogsForLicense(tx *gorm.DB, userId int64,
 	newLicense, oldLicense *models.LicenseDB) error {
 	var changes []models.ChangeLog
 
@@ -797,7 +781,7 @@ func AddChangelogsForLicense(tx *gorm.DB, username string,
 
 	if len(changes) != 0 {
 		var user models.User
-		if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
+		if err := tx.Where(models.User{Id: userId}).First(&user).Error; err != nil {
 			return err
 		}
 
@@ -818,7 +802,7 @@ func AddChangelogsForLicense(tx *gorm.DB, username string,
 }
 
 // AddChangelogsForUser adds changelogs for the updated fields on user update
-func AddChangelogsForUser(tx *gorm.DB, username string,
+func AddChangelogsForUser(tx *gorm.DB, userId int64,
 	newUser, oldUser *models.User) error {
 	var changes []models.ChangeLog
 
@@ -830,7 +814,7 @@ func AddChangelogsForUser(tx *gorm.DB, username string,
 
 	if len(changes) != 0 {
 		var user models.User
-		if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
+		if err := tx.Where(models.User{Id: userId}).First(&user).Error; err != nil {
 			return err
 		}
 

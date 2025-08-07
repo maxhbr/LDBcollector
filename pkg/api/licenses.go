@@ -8,7 +8,6 @@
 package api
 
 import (
-	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -270,6 +269,8 @@ func GetLicense(c *gin.Context) {
 func CreateLicense(c *gin.Context) {
 	var input models.LicenseDB
 
+	userId := c.MustGet("userId").(int64)
+
 	if err := c.ShouldBindJSON(&input); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -295,12 +296,10 @@ func CreateLicense(c *gin.Context) {
 		return
 	}
 
+	input.UserId = userId
+	input.User = models.User{}
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-
-		username := c.GetString("username")
-		ctx := context.WithValue(context.Background(), models.ContextKey("user"), username)
-
-		result := tx.WithContext(ctx).
+		result := tx.
 			Where(&models.LicenseDB{Shortname: input.Shortname}).
 			FirstOrCreate(&input)
 
@@ -339,7 +338,7 @@ func CreateLicense(c *gin.Context) {
 			return result.Error
 		}
 
-		if err := utils.AddChangelogsForLicense(tx, username, &input, &models.LicenseDB{}); err != nil {
+		if err := utils.AddChangelogsForLicense(tx, userId, &input, &models.LicenseDB{}); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
@@ -390,7 +389,7 @@ func UpdateLicense(c *gin.Context) {
 		var externalRefsPayload models.UpdateExternalRefsJSONPayload
 		var oldLicense models.LicenseDB
 
-		username := c.GetString("username")
+		userId := c.MustGet("userId").(int64)
 
 		shortname := c.Param("shortname")
 		if err := tx.Where(models.LicenseDB{Shortname: &shortname}).First(&oldLicense).Error; err != nil {
@@ -478,7 +477,7 @@ func UpdateLicense(c *gin.Context) {
 		newLicense := models.LicenseDB(updates)
 
 		// Update all other fields except external_ref and rf_shortname
-		if err := tx.Model(&newLicense).Omit("external_ref", "rf_shortname", "Obligations").Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).Updates(newLicense).Error; err != nil {
+		if err := tx.Model(&newLicense).Omit("ExternalRef", "Shortname", "Obligations", "User").Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).Updates(newLicense).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
@@ -490,7 +489,7 @@ func UpdateLicense(c *gin.Context) {
 			return err
 		}
 
-		if err := utils.AddChangelogsForLicense(tx, username, &newLicense, &oldLicense); err != nil {
+		if err := utils.AddChangelogsForLicense(tx, userId, &newLicense, &oldLicense); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
@@ -616,7 +615,7 @@ func SearchInLicense(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/licenses/import [post]
 func ImportLicenses(c *gin.Context) {
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(int64)
 	file, header, err := c.Request.FormFile("file")
 	if err != nil {
 		er := models.LicenseError{
@@ -687,7 +686,7 @@ func ImportLicenses(c *gin.Context) {
 	}
 
 	for i := range licenses {
-		errMessage, importStatus := utils.InsertOrUpdateLicenseOnImport(&licenses[i], &externalRefs[i], username)
+		errMessage, importStatus := utils.InsertOrUpdateLicenseOnImport(&licenses[i], &externalRefs[i], userId)
 
 		if importStatus == utils.IMPORT_FAILED {
 			erroredLicense := ""

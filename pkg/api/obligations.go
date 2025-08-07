@@ -156,8 +156,7 @@ func GetObligation(c *gin.Context) {
 //	@Router			/obligations [post]
 func CreateObligation(c *gin.Context) {
 	var obligation models.Obligation
-	username := c.GetString("username")
-	ctx := context.WithValue(context.Background(), models.ContextKey("user"), username)
+	userId := c.MustGet("userId").(int64)
 
 	if err := c.ShouldBindJSON(&obligation); err != nil {
 		er := models.LicenseError{
@@ -172,7 +171,7 @@ func CreateObligation(c *gin.Context) {
 	}
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		result := tx.WithContext(ctx).
+		result := tx.
 			Where(&models.Obligation{Topic: obligation.Topic}).
 			Or(&models.Obligation{Md5: obligation.Md5}).
 			FirstOrCreate(&obligation)
@@ -202,7 +201,7 @@ func CreateObligation(c *gin.Context) {
 			return errors.New("can not create obligation with same topic or text")
 		}
 
-		if err := addChangelogsForObligation(tx, username, &obligation, &models.Obligation{}); err != nil {
+		if err := addChangelogsForObligation(tx, userId, &obligation, &models.Obligation{}); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
 				Message:   "Failed to create obligation",
@@ -247,7 +246,7 @@ func CreateObligation(c *gin.Context) {
 func UpdateObligation(c *gin.Context) {
 	var updates models.ObligationUpdateDTO
 	var oldObligation models.Obligation
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(int64)
 	tp := c.Param("topic")
 
 	if err := db.DB.Joins("Classification").Joins("Type").Preload("Licenses").Where(models.Obligation{Topic: &tp}).First(&oldObligation).Error; err != nil {
@@ -288,7 +287,7 @@ func UpdateObligation(c *gin.Context) {
 			return err
 		}
 
-		if err := addChangelogsForObligation(tx, username, newObligation, &oldObligation); err != nil {
+		if err := addChangelogsForObligation(tx, userId, newObligation, &oldObligation); err != nil {
 			return err
 		}
 
@@ -452,7 +451,7 @@ func GetObligationAudits(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/obligations/import [post]
 func ImportObligations(c *gin.Context) {
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(int64)
 	file, header, err := c.Request.FormFile("file")
 	if err != nil {
 		er := models.LicenseError{
@@ -532,7 +531,7 @@ func ImportObligations(c *gin.Context) {
 					})
 					return err
 				}
-				if err := addChangelogsForObligation(tx, username, &newObligation, &oldObligation); err != nil {
+				if err := addChangelogsForObligation(tx, userId, &newObligation, &oldObligation); err != nil {
 					res.Data = append(res.Data, models.LicenseError{
 						Status:    http.StatusInternalServerError,
 						Message:   "Failed to update license",
@@ -551,7 +550,7 @@ func ImportObligations(c *gin.Context) {
 
 			} else {
 
-				if err := addChangelogsForObligation(tx, username, &oldObligation, &models.Obligation{}); err != nil {
+				if err := addChangelogsForObligation(tx, userId, &oldObligation, &models.Obligation{}); err != nil {
 					res.Data = append(res.Data, models.LicenseError{
 						Status:    http.StatusInternalServerError,
 						Message:   "Failed to update license",
@@ -572,6 +571,8 @@ func ImportObligations(c *gin.Context) {
 			return nil
 		})
 
+		// creating license-obligation associations out of the transaction so that obligations
+		// are created/updated even if the association fails(license is not found etc)
 		var shortnames, removeLicenses, insertLicenses []string
 		for _, lic := range ob.Licenses {
 			shortnames = append(shortnames, *lic.Shortname)
@@ -580,8 +581,8 @@ func ImportObligations(c *gin.Context) {
 
 		utils.GenerateDiffForReplacingLicenses(&oldObligation, shortnames, &removeLicenses, &insertLicenses)
 
-		username := c.GetString("username")
-		_, errs := utils.PerformObligationMapActions(username, &oldObligation, removeLicenses, insertLicenses)
+		userId := c.MustGet("userId").(int64)
+		_, errs := utils.PerformObligationMapActions(userId, &oldObligation, removeLicenses, insertLicenses)
 		if len(errs) != 0 {
 			var combinedErrors string
 			for _, err := range errs {
@@ -646,12 +647,8 @@ func ExportObligations(c *gin.Context) {
 }
 
 // addChangelogsForObligation adds changelogs for the updated fields on obligation update
-func addChangelogsForObligation(tx *gorm.DB, username string,
+func addChangelogsForObligation(tx *gorm.DB, userId int64,
 	newObligation, oldObligation *models.Obligation) error {
-	var user models.User
-	if err := tx.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-		return err
-	}
 	var changes []models.ChangeLog
 
 	var oldType, newType *string
@@ -687,7 +684,7 @@ func addChangelogsForObligation(tx *gorm.DB, username string,
 
 	if len(changes) != 0 {
 		audit := models.Audit{
-			UserId:     user.Id,
+			UserId:     userId,
 			TypeId:     newObligation.Id,
 			Timestamp:  time.Now(),
 			Type:       "OBLIGATION",

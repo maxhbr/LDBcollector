@@ -94,7 +94,7 @@ func GetAllObligationClassification(c *gin.Context) {
 //	@Router			/obligations/classifications [post]
 func CreateObligationClassification(c *gin.Context) {
 	var obClassification models.ObligationClassification
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(int64)
 	if err := c.ShouldBindJSON(&obClassification); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -107,7 +107,7 @@ func CreateObligationClassification(c *gin.Context) {
 		return
 	}
 
-	err, status := utils.CreateObClassification(&obClassification, username)
+	err, status := utils.CreateObClassification(&obClassification, userId)
 
 	if status == utils.CREATED {
 		res := models.ObligationClassificationResponse{
@@ -180,7 +180,7 @@ func CreateObligationClassification(c *gin.Context) {
 func DeleteObligationClassification(c *gin.Context) {
 	var obClassification models.ObligationClassification
 	obClassificationParam := c.Param("classification")
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(int64)
 	if err := db.DB.Where(models.ObligationClassification{Classification: obClassificationParam}).First(&obClassification).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
@@ -224,7 +224,7 @@ func DeleteObligationClassification(c *gin.Context) {
 	}
 
 	if err := db.DB.Transaction(func(tx *gorm.DB) error {
-		return utils.ToggleObligationClassificationActiveStatus(username, tx, &obClassification)
+		return utils.ToggleObligationClassificationActiveStatus(userId, tx, &obClassification)
 	}); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
