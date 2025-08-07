@@ -17,6 +17,10 @@
    "OLDAP License, Version 2.8",
    "OLDAP, Version 2.8",
    "OpenLDAP Public License Version 2.8, 17 August 2003",
-   "scancode:openldap-2.8"
+    "scancode:openldap-2.8",
+    "openldap-2.8",
+    "OpenLDAP-2.8",
+    "OpenLDAP Public License Version 2.8"
+
   ]
 }
