@@ -435,7 +435,7 @@ class FossLicenses:
         >>> fl = FossLicenses()
         >>> expression = fl.expression_license('BSD3 & x11-keith-packard')
         >>> print(expression['identified_license'])
-        BSD-3-Clause AND LicenseRef-flame-x11-keith-packard
+        BSD-3-Clause AND HPND-sell-variant
 
         """
         if not isinstance(license_expression, str):
