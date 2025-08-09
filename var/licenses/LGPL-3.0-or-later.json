@@ -97,6 +97,9 @@
         "scancode:lgpl-3.0-plus",
         "GNU Lesser General Public License v3 or later (LGPLv3+)",
         "lgpl-3.0-plus",
-        "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)"
+      "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+      "lgpl-3+",
+      "GNU Lesser General Public License-3+",
+      "GNU Lesser General Public License-3.0-or-later"
     ]
 }

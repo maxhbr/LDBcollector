@@ -17,6 +17,7 @@
         "https://spdx.org/licenses/sax-pd",
         "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt",
         "scancode:sax-pd",
-        "sax-pd"
+      "sax-pd",
+      "The SAX License"
     ]
 }

@@ -22,6 +22,8 @@
         "osi:CNRI-Python",
         "scancode:cnri-python-1.6",
       "The CNRI portion of the multi-part Python License",
-      "CNRI"
+      "CNRI",
+      "CNRI Python Software Foundation License",
+      "CNRI Python Software Foundation License License"
     ]
 }

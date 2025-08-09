@@ -35,6 +35,10 @@
         "lgpl-2.0-plus",
       "License :: OSI Approved :: GNU Lesser General Public License v2 or later",
       "LGPLv2 or later",
-      "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)"
+      "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+      "GNU Lesser General Public License-2.0-or-later",
+      "GNU Lesser General Public License-2+",
+      "GNU Lesser General Public v2+",
+      "lgpl-2+"
     ]
 }

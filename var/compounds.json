@@ -5,10 +5,10 @@
     },
     "compounds": [
       {
-        "spdxid": "AGPL 3.0 WITH romic-exception",
+        "spdxid": "AGPL-3.0-only WITH romic-exception",
         "aliases": [
           "linking-exception-agpl-3.0",
-          "AGPL-3.0-only WITH romic-exception"
+          "AGPL 3.0 WITH romic-exception"
         ]
       },
         {
@@ -48,7 +48,11 @@
               "GPL-2.0-only WITH the classpath exception",
               "GPLv2+CE",
               "GNU General Public License Version 2 with \"CLASSPATH\" EXCEPTION TO THE GNU General Public License VERSION 2 by Oracle",
-              "GNU General Public License Version 2 with \"CLASSPATH\" EXCEPTION TO THE GNU General Public License VERSION 2 by Sun Microsystems"
+              "GNU General Public License Version 2 with \"CLASSPATH\" EXCEPTION TO THE GNU General Public License VERSION 2 by Sun Microsystems",
+              "GPLv2+CPE",
+              "GPL-2.0-only WITH CPE",
+              "GPL-2.0-only w/ CPE",
+              "GPLv2 w/ CPE"
             ]
         },
         {
@@ -111,15 +115,16 @@
               "GPL-3 w/ GCC exception",
               "GPL-3.0-only WITH GCC exception",
               "GPL-3.0-only WITH GCC Runtime Library exception",
-              "GPL-3.0+-with-GCC-exception",
               "GPL-2.0-only WITH GCC exception",
-              "GPL-2.0-only WITH GCC Runtime Library exception"
+              "GPL-2.0-only WITH GCC Runtime Library exception",
+              "GNU General Public License 3 plus GCC RUNTIME LIBRARY EXCEPTION"
             ],
             "compatibility_as": "0BSD"
         },
         {
             "spdxid": "GPL-3.0-or-later WITH GCC-exception-3.1",
             "aliases": [
+              "GPL-3.0+-with-GCC-exception"
             ],
             "compatibility_as": "0BSD"
         },

@@ -1,0 +1,13 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Berkeley Software License Agreement",
+  "scancode_key": "bsla",
+  "spdxid": "BSD-4.3TAHOE",
+  "aliases": [
+    "bsla",
+    "BSLA"
+  ]
+}

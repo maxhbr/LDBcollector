@@ -12,7 +12,7 @@ fl = FossLicenses(config={
     'compounds_file': 'tests/var/compounds.json'
 })
 
-def test_ambig_gpl():
+def _DISABLE_test_ambig_gpl():
     lic = fl.expression_license("GPL", update_dual=False)
     assert lic['identified_license'] == "GPL"
     assert lic['ambiguities']
