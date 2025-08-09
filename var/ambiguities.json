@@ -22,6 +22,7 @@
         },
         "Apache License": {
             "aliases": [
+                "License :: OSI Approved :: Apache Software License",
                 "Apache",
                 "Apache License",
                 "Apache Software License",
@@ -35,7 +36,6 @@
                 "Apache Software Licenses",
                 "The Apache License",
                 "Apache license",
-                "License :: OSI Approved :: Apache Software License",
               "OSI Approved Apache Software License",
               "apache",
               "OSI-Approved-::-Apache-Software-License",
@@ -99,17 +99,24 @@
               "BSD_License_",
               "BSD like",
               "BSD-LIKE",
-              "bsd"
+              "bsd",
+              "BSD-clause",
+              "bsd license"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
         "BSL": {
-            "aliases": [
-                "bsl-1",
-                "BSL-1"
-            ],
-            "problem": "BSL or BSL-1 might refer to the Boost License(s) Original Boost and BSL-1.0. BSL can also refer to Business Source License or BUSL."
+          "aliases": [
+            "bsl-1",
+            "BSL-1"
+          ],
+          "problem": "BSL or BSL-1 might refer to the Boost License(s) Original Boost and BSL-1.0. BSL can also refer to Business Source License or BUSL."
         },
+      "Business Source License": {
+        "aliases": [
+        ],
+        "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+      },
         "Common Development and Distribution License": {
             "aliases": [
                 "CDDL",
@@ -213,10 +220,13 @@
             "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
             "GNU Library/LGPL",
             "GNU Library",
+            "gnu library",
             "GNU Library or GNU Lesser General Public License",
             "GNU Lesser General Public License v1.0",
             "LGPL license",
-            "GNU Lesser Public License"
+            "GNU Lesser Public License",
+            "lesser general public license",
+            "Lesser GPL"
           ],
           "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -244,7 +254,9 @@
             "aliases": [
                 "MPL",
                 "MPL-1",
-                "MPLv1",
+              "MPLv1",
+              "mpl",
+              "MPL License",
               "Mozilla-permissive",
               "Mozilla"
             ],
@@ -261,7 +273,14 @@
             "aliases": [
                 "License :: OSI Approved"
             ],
-            "problem": "OSI has approved many licenses. You It is not possible to determine which license is meant with this information."
+            "problem": "OSI has approved many licenses. It is not possible to determine which license is meant with this information."
+        },
+        "OpenLDAP Public License": {
+          "aliases": [
+            "openldap",
+            "OpenLDAP"
+          ],
+          "problem": "This license has different versions (1.1, 1.2, 1.3, 1.4, 2.0, 2.0.1, 2.1, 2.2, 2.2.1, 2.2.2, 2.3, 2.4, 2.5, 2.6, 2.7 and 2.8) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
         "Open Software License": {
           "aliases": [
