@@ -62,6 +62,10 @@ def test_compounds():
         for alias in compound['aliases']:
             logging.debug(f'  alias: {alias}')
             expression = fl.expression_license(alias, update_dual=False)
+#            print("Checking alias:      " + str(alias), file=sys.stderr)
+#            print("Checking expression: " + str(expression), file=sys.stderr)
+#            print("Checking identified: " + str(expression['identified_license']), file=sys.stderr)
+#            print("Checking compound:   " + str(compound_spdx), file=sys.stderr)
             assert compound_spdx == expression['identified_license']
             count += 1
     global tot_count
