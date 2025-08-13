@@ -17,158 +17,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/github/go-spdx/v2/spdxexp"
+	"github.com/fossology/LicenseDb/pkg/validations"
 	"github.com/go-playground/validator/v10"
-	"gorm.io/datatypes"
 	"gorm.io/gorm"
 )
-
-// The LicenseDB struct represents a license entity with various attributes and
-// properties associated with it.
-// It provides structured storage for license-related information.
-type LicenseDB struct {
-	Id              int64                                        `json:"-" gorm:"primary_key;column:rf_id" example:"123"`
-	Shortname       *string                                      `json:"shortname" gorm:"column:rf_shortname" validate:"required" example:"MIT"`
-	Fullname        *string                                      `json:"fullname" gorm:"column:rf_fullname" validate:"required" example:"MIT License"`
-	Text            *string                                      `json:"text" gorm:"column:rf_text" validate:"required" example:"MIT License Text here"`
-	Url             *string                                      `json:"url" gorm:"column:rf_url;default:''" example:"https://opensource.org/licenses/MIT"`
-	AddDate         time.Time                                    `json:"add_date" gorm:"column:rf_add_date" example:"2023-12-01T18:10:25.00+05:30"`
-	Copyleft        *bool                                        `json:"copyleft" gorm:"column:rf_copyleft;default:false"`
-	FSFfree         *bool                                        `json:"FSFfree" gorm:"column:rf_fsffree;default:false"`
-	OSIapproved     *bool                                        `json:"OSIapproved" gorm:"column:rf_osiapproved;default:false"`
-	GPLv2compatible *bool                                        `json:"GPLv2compatible" gorm:"column:rf_gplv2compatible;default:false"`
-	GPLv3compatible *bool                                        `json:"GPLv3compatible" gorm:"column:rf_gplv3compatible;default:false"`
-	Notes           *string                                      `json:"notes" gorm:"column:rf_notes" example:"This license has been superseded."`
-	Fedora          *string                                      `json:"Fedora" gorm:"column:rf_fedora"`
-	TextUpdatable   *bool                                        `json:"text_updatable" gorm:"column:rf_text_updatable;default:false"`
-	DetectorType    *int64                                       `json:"detector_type" gorm:"column:rf_detector_type" validate:"omitempty,min=0,max=2" example:"1"`
-	Active          *bool                                        `json:"active" gorm:"column:rf_active;default:true"`
-	Source          *string                                      `json:"source" gorm:"column:rf_source"`
-	SpdxId          *string                                      `json:"spdx_id" gorm:"column:rf_spdx_id" validate:"required" example:"MIT"`
-	Risk            *int64                                       `json:"risk" gorm:"column:rf_risk" validate:"omitempty,min=0,max=5"`
-	Flag            *int64                                       `json:"flag" gorm:"column:rf_flag" validate:"omitempty,min=0,max=2" example:"1"`
-	Marydone        *bool                                        `json:"marydone" gorm:"column:marydone;default:false"`
-	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref" gorm:"column:external_ref"`
-	Obligations     []*Obligation                                `gorm:"many2many:obligation_licenses;joinForeignKey:license_db_id ;joinReferences: obligation_id" json:"-"`
-	UserId          int64                                        `json:"-" example:"123"`                                   // Foreign key to User
-	User            User                                         `gorm:"foreignKey:UserId;references:Id" json:"created_by"` // Reference to User
-}
-
-func (LicenseDB) TableName() string {
-	return "license_dbs"
-}
-
-// BeforeCreate hook to validate data and log the user who is creating the record
-func (l *LicenseDB) BeforeSave(tx *gorm.DB) (err error) {
-	if l.Shortname != nil && *l.Shortname == "" {
-		return errors.New("shortname cannot be an empty string")
-	}
-	if l.Fullname != nil && *l.Fullname == "" {
-		return errors.New("fullname cannot be an empty string")
-	}
-	if l.Text != nil && *l.Text == "" {
-		return errors.New("text cannot be an empty string")
-	}
-	if l.SpdxId != nil {
-		if *l.SpdxId == "" {
-			return errors.New("spdx_id cannot be an empty string")
-		} else {
-			if valid, _ := spdxexp.ValidateLicenses([]string{*l.SpdxId}); !valid {
-				return errors.New("spdx_id does not follow spdx license expression specifications")
-			}
-		}
-	}
-	if l.Risk != nil && (*l.Risk < 0 || *l.Risk > 5) {
-		return errors.New("risk can have values from 0 to 5 only")
-	}
-	if l.Flag != nil && (*l.Flag < 0 || *l.Flag > 2) {
-		return errors.New("flag can have values from 0 to 2 only")
-	}
-	if l.DetectorType != nil && (*l.DetectorType < 0 || *l.DetectorType > 2) {
-		return errors.New("detector_type can have values from 0 to 2 only")
-	}
-	return nil
-}
-
-// LicenseUpdateJSONSchema struct represents the input format for updating an existing license.
-type LicenseUpdateJSONSchema struct {
-	Id              int64                                        `json:"-" example:"123"`
-	Shortname       *string                                      `json:"-" example:"MIT"`
-	Fullname        *string                                      `json:"fullname" example:"MIT License"`
-	Text            *string                                      `json:"text" example:"MIT License Text here"`
-	Url             *string                                      `json:"url" example:"https://opensource.org/licenses/MIT"`
-	AddDate         time.Time                                    `json:"-" example:"2023-12-01T18:10:25.00+05:30"`
-	Copyleft        *bool                                        `json:"copyleft" example:"false"`
-	FSFfree         *bool                                        `json:"FSFfree" example:"false"`
-	OSIapproved     *bool                                        `json:"OSIapproved" example:"false"`
-	GPLv2compatible *bool                                        `json:"GPLv2compatible" example:"false"`
-	GPLv3compatible *bool                                        `json:"GPLv3compatible" example:"false"`
-	Notes           *string                                      `json:"notes" example:"This license has been superseded."`
-	Fedora          *string                                      `json:"Fedora" example:"Fedora"`
-	TextUpdatable   *bool                                        `json:"text_updatable" example:"false"`
-	DetectorType    *int64                                       `json:"detector_type" validate:"omitempty,min=0,max=2" example:"1"`
-	Active          *bool                                        `json:"active" example:"true"`
-	Source          *string                                      `json:"source" example:"Source"`
-	SpdxId          *string                                      `json:"spdx_id" example:"MIT"`
-	Risk            *int64                                       `json:"risk" validate:"omitempty,min=0,max=5" example:"1"`
-	Flag            *int64                                       `json:"flag" validate:"omitempty,min=0,max=2" example:"1"`
-	Marydone        *bool                                        `json:"marydone" example:"false"`
-	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
-	Obligations     []*Obligation                                `json:"obligations"`
-	UserId          int64                                        `json:"-" example:"123"` // Foreign key to User
-	User            User                                         `json:"-"`               // Reference to User
-}
-
-// UpdateExternalRefsJSONPayload struct represents the external ref key value pairs for update
-type UpdateExternalRefsJSONPayload struct {
-	ExternalRef map[string]interface{} `json:"external_ref"`
-}
-
-type LicenseJson struct {
-	Shortname       string `json:"rf_shortname"`
-	Fullname        string `json:"rf_fullname"`
-	Text            string `json:"rf_text"`
-	Url             string `json:"rf_url"`
-	AddDate         string `json:"rf_add_date"`
-	Copyleft        string `json:"rf_copyleft"`
-	FSFfree         string `json:"rf_FSFfree"`
-	OSIapproved     string `json:"rf_OSIapproved"`
-	GPLv2compatible string `json:"rf_GPLv2compatible"`
-	GPLv3compatible string `json:"rf_GPLv3compatible"`
-	Notes           string `json:"rf_notes"`
-	Fedora          string `json:"rf_Fedora"`
-	TextUpdatable   string `json:"rf_text_updatable"`
-	DetectorType    int64  `json:"rf_detector_type"`
-	Active          string `json:"rf_active"`
-	Source          string `json:"rf_source"`
-	SpdxCompatible  string `json:"rf_spdx_compatible"`
-	Risk            string `json:"rf_risk"`
-	Flag            string `json:"rf_flag"`
-	Marydone        string `json:"marydone"`
-}
-
-// LicensePreviewResponse gets us the list of all license shortnames
-type LicensePreviewResponse struct {
-	Status     int      `json:"status" example:"200"`
-	Shortnames []string `json:"shortnames" example:"GPL-2.0-only,GPL-2.0-or-later"`
-}
-
-// LicenseId is the id of successfully imported license
-type LicenseId struct {
-	Shortname string `json:"shortname" example:"MIT"`
-}
-
-// LicenseImportStatus is the status of license records successfully inserted in the database during import
-type LicenseImportStatus struct {
-	Status int       `json:"status" example:"200"`
-	Data   LicenseId `json:"data"`
-}
-
-// ImportObligationsResponse is the response structure for import obligation response
-type ImportLicensesResponse struct {
-	Status int           `json:"status" example:"200"`
-	Data   []interface{} `json:"data"` // can be of type models.LicenseError or models.LicenseImportStatus
-}
 
 // The PaginationMeta struct represents additional metadata associated with a
 // license retrieval operation.
@@ -203,16 +55,6 @@ func (p PaginationInput) GetOffset() int64 {
 // GetLimit returns the limit value for gorm.
 func (p PaginationInput) GetLimit() int64 {
 	return p.Limit
-}
-
-// LicenseResponse struct is representation of design API response of license.
-// The LicenseResponse struct represents the response data structure for
-// retrieving license information.
-// It is used to encapsulate license-related data in an organized manner.
-type LicenseResponse struct {
-	Status int             `json:"status" example:"200"`
-	Data   []LicenseDB     `json:"data"`
-	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
 // The LicenseError struct represents an error response related to license operations.
@@ -630,8 +472,7 @@ func (o *Obligation) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	validate := validator.New(validator.WithRequiredStructEnabled())
-	if err := validate.Struct(&dto); err != nil {
+	if err := validations.Validate.Struct(&dto); err != nil {
 		return fmt.Errorf("field '%s' failed validation: %s", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag())
 	}
 

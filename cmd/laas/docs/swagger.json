@@ -356,30 +356,6 @@
                         "in": "query"
                     },
                     {
-                        "type": "integer",
-                        "description": "License detector type",
-                        "name": "detector_type",
-                        "in": "query"
-                    },
-                    {
-                        "type": "boolean",
-                        "description": "GPLv2 compatibility flag status of license",
-                        "name": "gplv2compatible",
-                        "in": "query"
-                    },
-                    {
-                        "type": "boolean",
-                        "description": "GPLv3 compatibility flag status of license",
-                        "name": "gplv3compatible",
-                        "in": "query"
-                    },
-                    {
-                        "type": "boolean",
-                        "description": "Mary done flag status of license",
-                        "name": "marydone",
-                        "in": "query"
-                    },
-                    {
                         "type": "boolean",
                         "description": "Active license only",
                         "name": "active",
@@ -389,12 +365,6 @@
                         "type": "boolean",
                         "description": "OSI Approved flag status of license",
                         "name": "osiapproved",
-                        "in": "query"
-                    },
-                    {
-                        "type": "boolean",
-                        "description": "FSF Free flag status of license",
-                        "name": "fsffree",
                         "in": "query"
                     },
                     {
@@ -485,7 +455,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseDB"
+                            "$ref": "#/definitions/models.LicenseCreateDTO"
                         }
                     }
                 ],
@@ -540,7 +510,7 @@
                         "schema": {
                             "type": "array",
                             "items": {
-                                "$ref": "#/definitions/models.LicenseDB"
+                                "$ref": "#/definitions/models.LicenseResponseDTO"
                             }
                         }
                     },
@@ -800,7 +770,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseUpdateJSONSchema"
+                            "$ref": "#/definitions/models.LicenseUpdateDTO"
                         }
                     }
                 ],
@@ -2716,7 +2686,7 @@
                 }
             }
         },
-        "models.LicenseDB": {
+        "models.LicenseCreateDTO": {
             "type": "object",
             "required": [
                 "fullname",
@@ -2725,69 +2695,37 @@
                 "text"
             ],
             "properties": {
-                "FSFfree": {
-                    "type": "boolean"
-                },
-                "Fedora": {
-                    "type": "string"
-                },
-                "GPLv2compatible": {
-                    "type": "boolean"
-                },
-                "GPLv3compatible": {
-                    "type": "boolean"
-                },
                 "OSIapproved": {
                     "type": "boolean"
                 },
                 "active": {
                     "type": "boolean"
                 },
-                "add_date": {
-                    "type": "string",
-                    "example": "2023-12-01T18:10:25.00+05:30"
-                },
                 "copyleft": {
                     "type": "boolean"
                 },
-                "created_by": {
-                    "description": "Reference to User",
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/models.User"
-                        }
-                    ]
-                },
-                "detector_type": {
-                    "type": "integer",
-                    "maximum": 2,
-                    "minimum": 0,
-                    "example": 1
-                },
                 "external_ref": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
-                },
-                "flag": {
-                    "type": "integer",
-                    "maximum": 2,
-                    "minimum": 0,
-                    "example": 1
+                    "$ref": "#/definitions/models.LicenseDBSchemaExtension"
                 },
                 "fullname": {
                     "type": "string",
                     "example": "MIT License"
                 },
-                "marydone": {
-                    "type": "boolean"
-                },
                 "notes": {
                     "type": "string",
                     "example": "This license has been superseded."
                 },
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
                 "risk": {
                     "type": "integer",
                     "maximum": 5,
-                    "minimum": 0
+                    "minimum": 0,
+                    "example": 1
                 },
                 "shortname": {
                     "type": "string",
@@ -2810,6 +2748,122 @@
                 "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
+                }
+            }
+        },
+        "models.LicenseDB": {
+            "type": "object",
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "addDate": {
+                    "type": "string"
+                },
+                "copyleft": {
+                    "type": "boolean"
+                },
+                "externalRef": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
+                },
+                "fullname": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Obligation"
+                    }
+                },
+                "osiapproved": {
+                    "type": "boolean"
+                },
+                "risk": {
+                    "type": "integer"
+                },
+                "shortname": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "spdxId": {
+                    "type": "string"
+                },
+                "text": {
+                    "type": "string"
+                },
+                "textSetBy": {
+                    "type": "integer"
+                },
+                "textUpdatable": {
+                    "type": "boolean"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "user": {
+                    "$ref": "#/definitions/models.User"
+                },
+                "userId": {
+                    "type": "integer",
+                    "format": "int64"
+                }
+            }
+        },
+        "models.LicenseDBSchemaExtension": {
+            "type": "object",
+            "properties": {
+                "ack_text": {
+                    "type": "string"
+                },
+                "acknowledgement": {
+                    "type": "boolean"
+                },
+                "advertising_restrictions": {
+                    "type": "boolean"
+                },
+                "non_commercial": {
+                    "type": "boolean"
+                },
+                "osadl_link": {
+                    "type": "string"
+                },
+                "other_license_name": {
+                    "type": "string"
+                },
+                "patent_left": {
+                    "type": "boolean"
+                },
+                "print_on_data_carrier": {
+                    "type": "boolean"
+                },
+                "prohibited": {
+                    "type": "boolean"
+                },
+                "ref_component": {
+                    "type": "string"
+                },
+                "reviewed": {
+                    "type": "boolean"
+                },
+                "scancode_link": {
+                    "type": "string"
+                },
+                "source_code_available": {
+                    "type": "boolean"
+                },
+                "spdx_link": {
+                    "type": "string"
+                },
+                "tldr_link": {
+                    "type": "string"
                 }
             }
         },
@@ -2838,20 +2892,12 @@
                 }
             }
         },
-        "models.LicenseId": {
+        "models.LicenseImportStatus": {
             "type": "object",
             "properties": {
                 "shortname": {
                     "type": "string",
                     "example": "MIT"
-                }
-            }
-        },
-        "models.LicenseImportStatus": {
-            "type": "object",
-            "properties": {
-                "data": {
-                    "$ref": "#/definitions/models.LicenseId"
                 },
                 "status": {
                     "type": "integer",
@@ -2908,7 +2954,7 @@
                 "data": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/models.LicenseDB"
+                        "$ref": "#/definitions/models.LicenseResponseDTO"
                     }
                 },
                 "paginationmeta": {
@@ -2917,6 +2963,69 @@
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.LicenseResponseDTO": {
+            "type": "object",
+            "properties": {
+                "OSIapproved": {
+                    "type": "boolean"
+                },
+                "active": {
+                    "type": "boolean"
+                },
+                "add_date": {
+                    "type": "string"
+                },
+                "copyleft": {
+                    "type": "boolean"
+                },
+                "created_by": {
+                    "$ref": "#/definitions/models.User"
+                },
+                "external_ref": {
+                    "$ref": "#/definitions/models.LicenseDBSchemaExtension"
+                },
+                "fullname": {
+                    "type": "string",
+                    "example": "MIT License"
+                },
+                "notes": {
+                    "type": "string",
+                    "example": "This license has been superseded."
+                },
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "risk": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "spdx_id": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                },
+                "text_updatable": {
+                    "type": "boolean"
+                },
+                "url": {
+                    "type": "string",
+                    "example": "https://opensource.org/licenses/MIT"
                 }
             }
         },
@@ -2935,25 +3044,9 @@
                 }
             }
         },
-        "models.LicenseUpdateJSONSchema": {
+        "models.LicenseUpdateDTO": {
             "type": "object",
             "properties": {
-                "FSFfree": {
-                    "type": "boolean",
-                    "example": false
-                },
-                "Fedora": {
-                    "type": "string",
-                    "example": "Fedora"
-                },
-                "GPLv2compatible": {
-                    "type": "boolean",
-                    "example": false
-                },
-                "GPLv3compatible": {
-                    "type": "boolean",
-                    "example": false
-                },
                 "OSIapproved": {
                     "type": "boolean",
                     "example": false
@@ -2966,28 +3059,13 @@
                     "type": "boolean",
                     "example": false
                 },
-                "detector_type": {
-                    "type": "integer",
-                    "maximum": 2,
-                    "minimum": 0,
-                    "example": 1
-                },
                 "external_ref": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
-                },
-                "flag": {
-                    "type": "integer",
-                    "maximum": 2,
-                    "minimum": 0,
-                    "example": 1
+                    "type": "object",
+                    "additionalProperties": true
                 },
                 "fullname": {
                     "type": "string",
                     "example": "MIT License"
-                },
-                "marydone": {
-                    "type": "boolean",
-                    "example": false
                 },
                 "notes": {
                     "type": "string",

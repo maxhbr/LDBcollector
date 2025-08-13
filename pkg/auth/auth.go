@@ -33,6 +33,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
+	"github.com/fossology/LicenseDb/pkg/validations"
 )
 
 var Jwks *jwk.Cache
@@ -65,8 +66,7 @@ func CreateUser(c *gin.Context) {
 		return
 	}
 
-	validate := validator.New(validator.WithRequiredStructEnabled())
-	if err := validate.Struct(&input); err != nil {
+	if err := validations.Validate.Struct(&input); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "can not create user with these field values",
@@ -437,8 +437,7 @@ func UpdateUser(c *gin.Context) {
 			return nil
 		}
 
-		validate := validator.New(validator.WithRequiredStructEnabled())
-		if err := validate.Struct(&updates); err != nil {
+		if err := validations.Validate.Struct(&updates); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
 				Message:   "can not update user with these field values",
@@ -566,8 +565,7 @@ func UpdateProfile(c *gin.Context) {
 			return nil
 		}
 
-		validate := validator.New(validator.WithRequiredStructEnabled())
-		if err := validate.Struct(&changes); err != nil {
+		if err := validations.Validate.Struct(&changes); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
 				Message:   "can not update profile with these field values",

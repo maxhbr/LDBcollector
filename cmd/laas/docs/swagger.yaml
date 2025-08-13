@@ -153,50 +153,28 @@ definitions:
         example: 200
         type: integer
     type: object
-  models.LicenseDB:
+  models.LicenseCreateDTO:
     properties:
-      FSFfree:
-        type: boolean
-      Fedora:
-        type: string
-      GPLv2compatible:
-        type: boolean
-      GPLv3compatible:
-        type: boolean
       OSIapproved:
         type: boolean
       active:
         type: boolean
-      add_date:
-        example: "2023-12-01T18:10:25.00+05:30"
-        type: string
       copyleft:
         type: boolean
-      created_by:
-        allOf:
-        - $ref: '#/definitions/models.User'
-        description: Reference to User
-      detector_type:
-        example: 1
-        maximum: 2
-        minimum: 0
-        type: integer
       external_ref:
-        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
-      flag:
-        example: 1
-        maximum: 2
-        minimum: 0
-        type: integer
+        $ref: '#/definitions/models.LicenseDBSchemaExtension'
       fullname:
         example: MIT License
         type: string
-      marydone:
-        type: boolean
       notes:
         example: This license has been superseded.
         type: string
+      obligations:
+        items:
+          type: string
+        type: array
       risk:
+        example: 1
         maximum: 5
         minimum: 0
         type: integer
@@ -222,6 +200,83 @@ definitions:
     - spdx_id
     - text
     type: object
+  models.LicenseDB:
+    properties:
+      active:
+        type: boolean
+      addDate:
+        type: string
+      copyleft:
+        type: boolean
+      externalRef:
+        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
+      fullname:
+        type: string
+      id:
+        type: integer
+      notes:
+        type: string
+      obligations:
+        items:
+          $ref: '#/definitions/models.Obligation'
+        type: array
+      osiapproved:
+        type: boolean
+      risk:
+        type: integer
+      shortname:
+        type: string
+      source:
+        type: string
+      spdxId:
+        type: string
+      text:
+        type: string
+      textSetBy:
+        type: integer
+      textUpdatable:
+        type: boolean
+      url:
+        type: string
+      user:
+        $ref: '#/definitions/models.User'
+      userId:
+        format: int64
+        type: integer
+    type: object
+  models.LicenseDBSchemaExtension:
+    properties:
+      ack_text:
+        type: string
+      acknowledgement:
+        type: boolean
+      advertising_restrictions:
+        type: boolean
+      non_commercial:
+        type: boolean
+      osadl_link:
+        type: string
+      other_license_name:
+        type: string
+      patent_left:
+        type: boolean
+      print_on_data_carrier:
+        type: boolean
+      prohibited:
+        type: boolean
+      ref_component:
+        type: string
+      reviewed:
+        type: boolean
+      scancode_link:
+        type: string
+      source_code_available:
+        type: boolean
+      spdx_link:
+        type: string
+      tldr_link:
+        type: string
+    type: object
   models.LicenseError:
     properties:
       error:
@@ -240,16 +295,11 @@ definitions:
         example: "2023-12-01T10:00:51+05:30"
         type: string
     type: object
-  models.LicenseId:
+  models.LicenseImportStatus:
     properties:
       shortname:
         example: MIT
         type: string
-    type: object
-  models.LicenseImportStatus:
-    properties:
-      data:
-        $ref: '#/definitions/models.LicenseId'
       status:
         example: 200
         type: integer
@@ -287,13 +337,57 @@ definitions:
     properties:
       data:
         items:
-          $ref: '#/definitions/models.LicenseDB'
+          $ref: '#/definitions/models.LicenseResponseDTO'
         type: array
       paginationmeta:
         $ref: '#/definitions/models.PaginationMeta'
       status:
         example: 200
         type: integer
+    type: object
+  models.LicenseResponseDTO:
+    properties:
+      OSIapproved:
+        type: boolean
+      active:
+        type: boolean
+      add_date:
+        type: string
+      copyleft:
+        type: boolean
+      created_by:
+        $ref: '#/definitions/models.User'
+      external_ref:
+        $ref: '#/definitions/models.LicenseDBSchemaExtension'
+      fullname:
+        example: MIT License
+        type: string
+      notes:
+        example: This license has been superseded.
+        type: string
+      obligations:
+        items:
+          type: string
+        type: array
+      risk:
+        example: 1
+        type: integer
+      shortname:
+        example: MIT
+        type: string
+      source:
+        type: string
+      spdx_id:
+        example: MIT
+        type: string
+      text:
+        example: MIT License Text here
+        type: string
+      text_updatable:
+        type: boolean
+      url:
+        example: https://opensource.org/licenses/MIT
+        type: string
     type: object
   models.LicenseShortnamesInput:
     properties:
@@ -305,20 +399,8 @@ definitions:
           type: string
         type: array
     type: object
-  models.LicenseUpdateJSONSchema:
+  models.LicenseUpdateDTO:
     properties:
-      FSFfree:
-        example: false
-        type: boolean
-      Fedora:
-        example: Fedora
-        type: string
-      GPLv2compatible:
-        example: false
-        type: boolean
-      GPLv3compatible:
-        example: false
-        type: boolean
       OSIapproved:
         example: false
         type: boolean
@@ -328,24 +410,12 @@ definitions:
       copyleft:
         example: false
         type: boolean
-      detector_type:
-        example: 1
-        maximum: 2
-        minimum: 0
-        type: integer
       external_ref:
-        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
-      flag:
-        example: 1
-        maximum: 2
-        minimum: 0
-        type: integer
+        additionalProperties: true
+        type: object
       fullname:
         example: MIT License
         type: string
-      marydone:
-        example: false
-        type: boolean
       notes:
         example: This license has been superseded.
         type: string
@@ -1044,22 +1114,6 @@ paths:
         in: query
         name: spdxid
         type: string
-      - description: License detector type
-        in: query
-        name: detector_type
-        type: integer
-      - description: GPLv2 compatibility flag status of license
-        in: query
-        name: gplv2compatible
-        type: boolean
-      - description: GPLv3 compatibility flag status of license
-        in: query
-        name: gplv3compatible
-        type: boolean
-      - description: Mary done flag status of license
-        in: query
-        name: marydone
-        type: boolean
       - description: Active license only
         in: query
         name: active
@@ -1067,10 +1121,6 @@ paths:
       - description: OSI Approved flag status of license
         in: query
         name: osiapproved
-        type: boolean
-      - description: FSF Free flag status of license
-        in: query
-        name: fsffree
         type: boolean
       - description: Copyleft flag status of license
         in: query
@@ -1133,7 +1183,7 @@ paths:
         name: license
         required: true
         schema:
-          $ref: '#/definitions/models.LicenseDB'
+          $ref: '#/definitions/models.LicenseCreateDTO'
       produces:
       - application/json
       responses:
@@ -1203,7 +1253,7 @@ paths:
         name: license
         required: true
         schema:
-          $ref: '#/definitions/models.LicenseUpdateJSONSchema'
+          $ref: '#/definitions/models.LicenseUpdateDTO'
       produces:
       - application/json
       responses:
@@ -1243,7 +1293,7 @@ paths:
           description: OK
           schema:
             items:
-              $ref: '#/definitions/models.LicenseDB'
+              $ref: '#/definitions/models.LicenseResponseDTO'
             type: array
         "500":
           description: Failed to fetch Licenses
