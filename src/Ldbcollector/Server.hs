@@ -184,15 +184,14 @@ htmlHead' embedStyles title = do
   H.head $ do
     H.title (H.toMarkup title)
     H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
-    H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-    H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+    H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     if embedStyles
         then H.style $ H.toMarkup (bsToText stylesheet)
         else H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
-    -- H.script H.! A.src "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" $ pure ()
-    H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
-    H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
-    H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
+    -- H.script H.! A.src "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" $ pure ()
+    H.script H.! A.type_ "text/javascript" H.! A.src "https://d3js.org/d3.v7.min.js" $ pure ()
+    H.script H.! A.type_ "text/javascript" H.! A.src "https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js" $ pure ()
+    H.script H.! A.type_ "text/javascript" H.! A.src "https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js" $ pure ()
 
 htmlHead :: T.Text -> H.Markup
 htmlHead = htmlHead' False
@@ -316,9 +315,8 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
       H.div H.! A.class_ "content" H.! A.id "content-summary" $ summaryContent licenseGraph subgraph cluster
       H.div H.! A.class_ "content" H.! A.id "content-policy" $ do
         "tbd."
-      H.script H.! A.src "/script.js" $
+      H.script H.! A.type_ "text/javascript" H.! A.src "/script.js" $
         pure ()
-      H.script "main();"
 
 singleHtml :: T.Text ->  LicenseGraph -> LicenseGraphType -> LicenseNameCluster -> H.Html
 singleHtml licRaw licenseGraph subgraph cluster =
