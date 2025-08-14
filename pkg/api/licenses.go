@@ -848,6 +848,7 @@ func getSimilarLicenses(c *gin.Context) {
 		return
 	}
 	var results []models.SimilarLicense
+	utils.SetSimilarityThreshold()
 	query := `
 		SELECT rf_id, rf_shortname, rf_text, similarity(rf_text, ?) AS similarity
 		FROM license_dbs
