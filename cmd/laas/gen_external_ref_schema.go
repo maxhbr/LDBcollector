@@ -77,7 +77,7 @@ func main() {
 			log.Fatalf("Failed to instantiate json schema for external ref in license: %v", err)
 			return
 		}
-		field = field.Tag(map[string]string{"json": fmt.Sprintf("%s,omitempty", f.Name)})
+		field = field.Tag(map[string]string{"json": fmt.Sprintf("%s,omitempty", f.Name), "swaggerignore": "true"})
 		fields = append(fields, field)
 	}
 

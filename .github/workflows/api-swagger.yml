@@ -38,13 +38,17 @@ jobs:
     - name: Check doc diff
       run: |
         diff swag/docs/docs.go cmd/laas/docs/docs.go > swagger-diff.txt || true
-        # Check if file swagger-diff.txt is empty
-        if [ -s swagger-diff.txt ]
-        then
-          # If file is not empty, echo a message and exit 1
-          echo "Swagger docs are not up to date. Please run 'swag init' and commit the changes."
-          exit 1
-        fi
+          # Check if file swagger-diff.txt is empty
+          if [ -s swagger-diff.txt ]
+          then
+            # If file is not empty, print the diff content
+            echo "--- Start of Swagger Diff ---"
+            cat swagger-diff.txt
+            echo "--- End of Swagger Diff ---"
+            # Then echo a message and exit 1
+            echo "Swagger docs are not up to date. Please run 'swag init' and commit the changes."
+            exit 1
+          fi
 
   doc-fmt:
     runs-on: ubuntu-latest

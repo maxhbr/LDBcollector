@@ -2825,54 +2825,7 @@ const docTemplate = `{
             }
         },
         "models.LicenseDBSchemaExtension": {
-            "type": "object",
-            "properties": {
-                "ack_text": {
-                    "type": "string"
-                },
-                "acknowledgement": {
-                    "type": "boolean"
-                },
-                "advertising_restrictions": {
-                    "type": "boolean"
-                },
-                "non_commercial": {
-                    "type": "boolean"
-                },
-                "osadl_link": {
-                    "type": "string"
-                },
-                "other_license_name": {
-                    "type": "string"
-                },
-                "patent_left": {
-                    "type": "boolean"
-                },
-                "print_on_data_carrier": {
-                    "type": "boolean"
-                },
-                "prohibited": {
-                    "type": "boolean"
-                },
-                "ref_component": {
-                    "type": "string"
-                },
-                "reviewed": {
-                    "type": "boolean"
-                },
-                "scancode_link": {
-                    "type": "string"
-                },
-                "source_code_available": {
-                    "type": "boolean"
-                },
-                "spdx_link": {
-                    "type": "string"
-                },
-                "tldr_link": {
-                    "type": "string"
-                }
-            }
+            "type": "object"
         },
         "models.LicenseError": {
             "type": "object",
