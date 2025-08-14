@@ -94,6 +94,17 @@ func GetAudit(c *gin.Context) {
 	if err != nil {
 		return
 	}
+	if parsedId == 0 {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Invalid audit ID",
+			Error:     "audit ID must be greater than 0",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
 
 	if err := db.DB.Preload("User").Where(&models.Audit{Id: parsedId}).First(&audit).Error; err != nil {
 		er := models.LicenseError{
@@ -142,6 +153,17 @@ func GetChangeLogs(c *gin.Context) {
 	id := c.Param("audit_id")
 	parsedId, err := utils.ParseIdToInt(c, id, "audit")
 	if err != nil {
+		return
+	}
+	if parsedId == 0 {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Invalid audit ID",
+			Error:     "audit ID must be greater than 0",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
@@ -206,6 +228,18 @@ func GetChangeLogbyId(c *gin.Context) {
 	changelogId := c.Param("id")
 	parsedChangeLogId, err := utils.ParseIdToInt(c, changelogId, "changelog")
 	if err != nil {
+		return
+	}
+
+	if parsedChangeLogId == 0 {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Invalid changelog ID",
+			Error:     "changelog ID must be greater than 0",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
