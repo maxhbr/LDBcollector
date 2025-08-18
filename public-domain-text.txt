@@ -29,6 +29,15 @@ text = '''
 text here
 '''
 
+package = tinyxml2
+location = resources/dream.xml
+text = '''
+<P>Text placed in the public domain by Moby Lexical Tools, 1992.</P>
+<P>SGML markup by Jon Bosak, 1992-1994.</P>
+<P>XML version by Jon Bosak, 1996-1998.</P>
+<P>This work may be freely copied and distributed worldwide.</P>
+'''
+
 package = dcm2niix
 location = console/nifti1_io_core.cpp
 text = '''
