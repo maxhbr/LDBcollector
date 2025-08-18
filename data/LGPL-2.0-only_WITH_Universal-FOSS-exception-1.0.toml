@@ -1,0 +1,9 @@
+[license]
+expression = "LGPL-2.0-only WITH Universal-FOSS-exception-1.0"
+status = [ "allowed" ]
+
+usage = '''
+Allowance of this SPDX license expression does not signify that
+Fedora regards "Interfaces" as protected by copyright.
+'''
+
