@@ -31,6 +31,7 @@ Die hier aufgelisteten Lizenzen erlauben eine umfassende Nachnutzung von KI-Mode
 | Functional Source License, Version 1.1, MIT Future License | [🇬🇧](https://github.com/Pythagora-io/gpt-pilot/blob/main/LICENSE) | - |
 | GEMMA Terms of Use (Version release : February 21, 2024) | [🇬🇧](https://ai.google.dev/gemma/terms ) | - |
 | Llma 2 Community License Agreement (Version Release Date : July 18, 2023) | [🇬🇧](https://github.com/facebookresearch/llama/blob/v2/LICENSE) | - |
+| OpenMDW License Agreement | [🇬🇧](https://github.com/OpenMDW/OpenMDW/blob/main/1.0/LICENSE.openmdw) | OpenMDW-1.0 |
 | Responsible Artificial Intelligence Source Code License (v 1.0) (OpenRAIL-S) | [🇬🇧](https://www.licenses.ai/source-code-license-v1 ) | - |
 | Responsible Artificial Intelligence Source Code License (v 1.1) (OpenRAIL-S) | [🇬🇧](https://www.licenses.ai/source-code-license) | - |
 | SIL RAIL-M RAIL License (v1.0) | [🇬🇧](https://huggingface.co/spaces/sil-ai/model-license) | - |
