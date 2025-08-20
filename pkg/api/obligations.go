@@ -788,6 +788,7 @@ func getSimilarObligations(c *gin.Context) {
 		return
 	}
 	var results []models.SimilarObligation
+	utils.SetSimilarityThreshold()
 	rawQuery := `
 		SELECT id, topic,text, similarity(text, ?) AS similarity
 		FROM obligations
