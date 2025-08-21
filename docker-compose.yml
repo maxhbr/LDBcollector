@@ -11,8 +11,12 @@ services:
       DB_PORT: 5432
       DB_USER: fossy
       DB_NAME: licensedb
-      POPULATE_DB: true
       GIN_MODE: debug
+      DEFAULT_ISSUER: http://localhost:8080
+      SIMILARITY_THRESHOLD: 0.9
+      PORT: 8080
+      TOKEN_HOUR_LIFESPAN: 24
+      READ_API_AUTHENTICATION_ENABLED: false
     ports:
       - 8080:8080
     depends_on:
@@ -28,8 +32,8 @@ services:
       POSTGRES_PASSWORD: fossy
       POSTGRES_USER: fossy
       POSTGRES_DB: licensedb
-#    ports:
-#      - "5432:5432"
+    #    ports:
+    #      - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     restart: always

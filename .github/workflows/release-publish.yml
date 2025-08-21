@@ -1,18 +1,14 @@
-# SPDX-FileCopyrightText: 2025 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>
+# SPDX-FileCopyrightText: 2024 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>
 # SPDX-License-Identifier: GPL-2.0-only
 
-name: Build and Push Docker Image
+name: Build and Push Docker Image (Release)
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  release:
+    types: published
 
 jobs:
-  docker-build:
+  docker-release:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,24 +19,22 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Log in to GHCR
-        if: github.ref_name == 'main'
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and Push image
+      - name: Build and Push release image
         uses: docker/build-push-action@v4
         with:
-          push: ${{ github.ref_name == 'main' }}
+          push: true
           context: .
           tags: |
+            ghcr.io/${{ github.repository_owner }}/licensedb:${{ github.event.release.tag_name }}
             ghcr.io/${{ github.repository_owner }}/licensedb:latest
-            ghcr.io/${{ github.repository_owner }}/licensedb:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
       - name: Log out from GHCR
-        if: github.ref_name == 'main'
         run: docker logout ghcr.io
