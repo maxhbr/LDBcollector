@@ -23,6 +23,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/auth"
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/utils"
+	"github.com/fossology/LicenseDb/pkg/validations"
 )
 
 // declare flags to input the basic requirement of database connection and the path of the data file
@@ -65,6 +66,10 @@ func main() {
 	password := os.Getenv("DB_PASSWORD")
 
 	db.Connect(&dbhost, &port, &user, &dbname, &password)
+
+	if err := validations.RegisterValidations(); err != nil {
+		log.Fatalf("Failed to set up validations: %s", err)
+	}
 
 	if *populatedb {
 		utils.Populatedb(*datafile)

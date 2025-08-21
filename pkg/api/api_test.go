@@ -23,6 +23,7 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/validations"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"github.com/stretchr/testify/assert"
@@ -57,7 +58,9 @@ func TestMain(m *testing.M) {
 		log.Fatalf(" Failed to seed user: %v", err)
 	}
 	log.Println("First user created")
-
+	if err := validations.RegisterValidations(); err != nil {
+		log.Fatalf("Failed to set up validations: %s", err)
+	}
 	serverPort := os.Getenv("PORT")
 	if serverPort == "" {
 		port = "8080"
@@ -148,8 +151,8 @@ func TestCreateUser(t *testing.T) {
 			t.Errorf("Error unmarshalling JSON: %v", err)
 			return
 		}
-		assert.Equal(t, user.UserName, res.Data[0].UserName)
-		assert.Equal(t, user.UserLevel, res.Data[0].UserLevel)
+		assert.Equal(t, *user.UserName, *res.Data[0].UserName)
+		assert.Equal(t, *user.UserLevel, *res.Data[0].UserLevel)
 	})
 
 	t.Run("MissingFields", func(t *testing.T) {
@@ -199,18 +202,15 @@ func TestCreateUser(t *testing.T) {
 }
 
 func TestCreateLicense(t *testing.T) {
-	license := models.LicenseDB{
-		Shortname:    ptr("MIT"),
-		Fullname:     ptr("MIT License"),
-		Text:         ptr(`MIT License copyright (c) <year> <copyright holders> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`),
-		Url:          ptr("https://opensource.org/licenses/MIT"),
-		Notes:        ptr("This license is OSI approved."),
-		Fedora:       ptr("Yes"),
-		DetectorType: ptr(int64(1)),
-		Source:       ptr("spdx"),
-		SpdxId:       ptr("MIT"),
-		Risk:         ptr(int64(2)),
-		Flag:         ptr(int64(1)),
+	license := models.LicenseCreateDTO{
+		Shortname: "MIT",
+		Fullname:  "MIT License",
+		Text:      `MIT License copyright (c) <year> <copyright holders> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`,
+		Url:       "https://opensource.org/licenses/MIT",
+		Notes:     "This license is OSI approved.",
+		Source:    "spdx",
+		SpdxId:    "MIT",
+		Risk:      int64(2),
 	}
 
 	t.Run("success", func(t *testing.T) {
@@ -224,56 +224,47 @@ func TestCreateLicense(t *testing.T) {
 		if len(res.Data) == 0 {
 			t.Fatal("Response data is empty, cannot validate fields")
 		}
-		assert.Equal(t, *license.Shortname, *res.Data[0].Shortname)
-		assert.Equal(t, *license.Fullname, *res.Data[0].Fullname)
-		assert.Equal(t, *license.Text, *res.Data[0].Text)
-		assert.Equal(t, *license.SpdxId, *res.Data[0].SpdxId)
+		assert.Equal(t, license.Shortname, res.Data[0].Shortname)
+		assert.Equal(t, license.Fullname, res.Data[0].Fullname)
+		assert.Equal(t, license.Text, res.Data[0].Text)
+		assert.Equal(t, license.SpdxId, res.Data[0].SpdxId)
 	})
 	t.Run("missingFields", func(t *testing.T) {
-		invalidLicense := models.LicenseDB{
-			Shortname:    ptr(""),
-			Fullname:     ptr(""),
-			Text:         ptr(""),
-			Url:          ptr(""),
-			SpdxId:       ptr(""),
-			DetectorType: ptr(int64(1)),
-			Notes:        ptr("This license is OSI approved."),
-			Fedora:       ptr("Yes"),
-			Risk:         ptr(int64(2)),
-			Flag:         ptr(int64(1)),
+		invalidLicense := models.LicenseCreateDTO{
+			Shortname: "",
+			Fullname:  "",
+			Text:      "",
+			Url:       "",
+			SpdxId:    "",
+			Notes:     "This license is OSI approved.",
+			Risk:      int64(2),
 		}
 		w := makeRequest("POST", "/licenses", invalidLicense, true)
-		assert.Equal(t, http.StatusInternalServerError, w.Code)
+		assert.Equal(t, http.StatusBadRequest, w.Code)
 	})
 	t.Run("unauthorized", func(t *testing.T) {
-		license := models.LicenseDB{
-			Shortname:    ptr("UnauthorizedLicense"),
-			Fullname:     ptr("Unauthorized License"),
-			Text:         ptr("This license should not be created without authentication."),
-			Url:          ptr("https://licenses.org/unauthorized"),
-			SpdxId:       ptr("UNAUTHORIZED"),
-			DetectorType: ptr(int64(1)),
-			Notes:        ptr("This license is OSI approved."),
-			Fedora:       ptr("Yes"),
-			Risk:         ptr(int64(2)),
-			Flag:         ptr(int64(1)),
+		license := models.LicenseCreateDTO{
+			Shortname: "UnauthorizedLicense",
+			Fullname:  "Unauthorized License",
+			Text:      "This license should not be created without authentication.",
+			Url:       "https://licenses.org/unauthorized",
+			SpdxId:    "UNAUTHORIZED",
+			Notes:     "This license is OSI approved.",
+			Risk:      int64(2),
 		}
 		w := makeRequest("POST", "/licenses", license, false)
 		assert.Equal(t, http.StatusUnauthorized, w.Code)
 	})
 	t.Run("duplicateLicense", func(t *testing.T) {
-		license := models.LicenseDB{
-			Shortname:    ptr("Test1"),
-			Fullname:     ptr("Blank ExternalRef License"),
-			Text:         ptr("Test license with blank ExternalRef"),
-			Url:          ptr("https://licenses.org/blankref"),
-			SpdxId:       ptr("MIT"),
-			DetectorType: ptr(int64(1)),
-			Source:       ptr("spdx"),
-			Notes:        ptr("This license is OSI approved."),
-			Fedora:       ptr("Yes"),
-			Risk:         ptr(int64(2)),
-			Flag:         ptr(int64(1)),
+		license := models.LicenseCreateDTO{
+			Shortname: "Test1",
+			Fullname:  "Blank ExternalRef License",
+			Text:      "Test license with blank ExternalRef",
+			Url:       "https://licenses.org/blankref",
+			SpdxId:    "MIT",
+			Source:    "spdx",
+			Notes:     "This license is OSI approved.",
+			Risk:      int64(2),
 		}
 		w1 := makeRequest("POST", "/licenses", license, true)
 		assert.Equal(t, http.StatusCreated, w1.Code)
@@ -285,17 +276,14 @@ func TestCreateLicense(t *testing.T) {
 }
 
 func TestGetLicense(t *testing.T) {
-	license := models.LicenseDB{
-		Shortname:     ptr("MIT"),
-		Fullname:      ptr("MIT License"),
-		Text:          ptr("MIT License\n\nCopyright (c) <year> <copyright holders>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"),
-		Url:           ptr("https://opensource.org/licenses/MIT"),
-		TextUpdatable: ptr(false),
-		DetectorType:  ptr(int64(1)),
-		Active:        ptr(true),
-		Flag:          ptr(int64(1)),
-		Marydone:      ptr(true),
-		SpdxId:        ptr("MIT"),
+	license := models.LicenseResponseDTO{
+		Shortname:     "MIT",
+		Fullname:      "MIT License",
+		Text:          "MIT License\n\nCopyright (c) <year> <copyright holders>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+		Url:           "https://opensource.org/licenses/MIT",
+		TextUpdatable: false,
+		Active:        true,
+		SpdxId:        "MIT",
 	}
 	t.Run("existingLicense", func(t *testing.T) {
 		w := makeRequest("GET", "/licenses/MIT", nil, true)
@@ -307,7 +295,7 @@ func TestGetLicense(t *testing.T) {
 			return
 		}
 
-		assert.Equal(t, *license.Shortname, *res.Data[0].Shortname)
+		assert.Equal(t, license.Shortname, res.Data[0].Shortname)
 	})
 	t.Run("nonExistingLicense", func(t *testing.T) {
 		w := makeRequest("GET", "/licenses/NonExistentLicense", nil, true)
@@ -327,33 +315,25 @@ func TestGetLicense(t *testing.T) {
 
 func TestUpdateLicense(t *testing.T) {
 
-	expectedLicense := models.LicenseDB{
-		Shortname:     ptr("MIT"),
-		Fullname:      ptr("MIT License updated"),
-		Text:          ptr("MIT License\n\nCopyright (c) <year> <copyright holders>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"),
-		Url:           ptr("https://opensource.org/licenses/MIT"),
-		TextUpdatable: ptr(true),
-		DetectorType:  ptr(int64(1)),
-		Active:        ptr(true),
-		Flag:          ptr(int64(1)),
-		Marydone:      ptr(true),
-		SpdxId:        ptr("MIT"),
+	expectedLicense := models.LicenseResponseDTO{
+		Fullname:      "MIT License updated",
+		Text:          "MIT License\n\nCopyright (c) <year> <copyright holders>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+		Url:           "https://opensource.org/licenses/MIT",
+		TextUpdatable: true,
+		Active:        true,
+		SpdxId:        "MIT",
 	}
 	t.Run("updatetextwithoutpermission", func(t *testing.T) {
-		license := models.LicenseDB{
+		license := models.LicenseUpdateDTO{
 			TextUpdatable: ptr(false),
 		}
 		// Attempt to update text without permission
-		licenseToUpdate := models.LicenseDB{
-			Shortname:     ptr("MIT"),
+		licenseToUpdate := models.LicenseUpdateDTO{
 			Fullname:      ptr("MIT License updated"),
 			Text:          ptr("updated text for MIT License"),
 			Url:           ptr("https://opensource.org/licenses/MIT"),
 			TextUpdatable: ptr(false),
-			DetectorType:  ptr(int64(1)),
 			Active:        ptr(true),
-			Flag:          ptr(int64(1)),
-			Marydone:      ptr(true),
 			SpdxId:        ptr("MIT"),
 		}
 		w1 := makeRequest("PATCH", "/licenses/MIT", license, true)
@@ -364,7 +344,7 @@ func TestUpdateLicense(t *testing.T) {
 
 	})
 	t.Run("UpdateExistingLicense", func(t *testing.T) {
-		license := models.LicenseDB{
+		license := models.LicenseUpdateDTO{
 			TextUpdatable: ptr(true),
 		}
 		w1 := makeRequest("PATCH", "/licenses/MIT", license, true)
@@ -379,22 +359,17 @@ func TestUpdateLicense(t *testing.T) {
 			return
 		}
 
-		assert.Equal(t, *expectedLicense.Shortname, *res.Data[0].Shortname)
-		assert.Equal(t, *expectedLicense.Fullname, *res.Data[0].Fullname)
-		assert.Equal(t, *expectedLicense.TextUpdatable, *res.Data[0].TextUpdatable)
+		assert.Equal(t, expectedLicense.Fullname, res.Data[0].Fullname)
+		assert.Equal(t, expectedLicense.TextUpdatable, res.Data[0].TextUpdatable)
 	})
 
 	t.Run("UpdateNonExistingLicense", func(t *testing.T) {
-		nonExistingLicense := models.LicenseDB{
-			Shortname:     ptr("NonExistentLicense"),
+		nonExistingLicense := models.LicenseUpdateDTO{
 			Fullname:      ptr("Non Existent License"),
 			Text:          ptr("This license does not exist."),
 			Url:           ptr("https://licenses.org/nonexistent"),
 			TextUpdatable: ptr(false),
-			DetectorType:  ptr(int64(1)),
 			Active:        ptr(true),
-			Flag:          ptr(int64(1)),
-			Marydone:      ptr(true),
 			SpdxId:        ptr("NONEXISTENT"),
 		}
 		w := makeRequest("PATCH", "/licenses/NonExistentLicense", nonExistingLicense, true)

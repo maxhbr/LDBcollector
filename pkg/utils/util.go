@@ -30,6 +30,7 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/validations"
 )
 
 var (
@@ -38,93 +39,6 @@ var (
 	// DefaultLimit Set default max limit to 20
 	DefaultLimit int64 = 20
 )
-
-// The Converter function takes an input of type models.LicenseJson and converts it into a
-// corresponding models.LicenseDB object.
-// It performs several field assignments and transformations to create the LicenseDB object,
-// including generating the SpdxId based on the SpdxCompatible field.
-// The resulting LicenseDB object is returned as the output of this function.
-func Converter(input models.LicenseJson) models.LicenseDB {
-	spdxCompatible, err := strconv.ParseBool(input.SpdxCompatible)
-	if err != nil {
-		spdxCompatible = false
-	}
-	if spdxCompatible {
-		input.SpdxCompatible = input.Shortname
-	} else {
-		input.SpdxCompatible = "LicenseRef-fossology-" + input.Shortname
-	}
-
-	copyleft, err := strconv.ParseBool(input.Copyleft)
-	if err != nil {
-		copyleft = false
-	}
-	fsfFree, err := strconv.ParseBool(input.FSFfree)
-	if err != nil {
-		fsfFree = false
-	}
-	osiApproved, err := strconv.ParseBool(input.OSIapproved)
-	if err != nil {
-		osiApproved = false
-	}
-	gplv2Compatible, err := strconv.ParseBool(input.GPLv2compatible)
-	if err != nil {
-		gplv2Compatible = false
-	}
-	gplv3Compatible, err := strconv.ParseBool(input.GPLv3compatible)
-	if err != nil {
-		gplv3Compatible = false
-	}
-	textUpdatable, err := strconv.ParseBool(input.TextUpdatable)
-	if err != nil {
-		textUpdatable = false
-	}
-	active, err := strconv.ParseBool(input.Active)
-	if err != nil {
-		active = false
-	}
-	marydone, err := strconv.ParseBool(input.Marydone)
-	if err != nil {
-		marydone = false
-	}
-	addDate, err := time.Parse(time.RFC3339, input.AddDate)
-	if err != nil {
-		addDate = time.Now()
-	}
-	detectorType := input.DetectorType
-	risk, err := strconv.ParseInt(input.Risk, 10, 64)
-	if err != nil {
-		risk = 0
-	}
-	flag, err := strconv.ParseInt(input.Flag, 10, 64)
-	if err != nil {
-		flag = 1
-	}
-
-	result := models.LicenseDB{
-		Shortname:       &input.Shortname,
-		Fullname:        &input.Fullname,
-		Text:            &input.Text,
-		Url:             &input.Url,
-		Copyleft:        &copyleft,
-		AddDate:         addDate,
-		FSFfree:         &fsfFree,
-		OSIapproved:     &osiApproved,
-		GPLv2compatible: &gplv2Compatible,
-		GPLv3compatible: &gplv3Compatible,
-		Notes:           &input.Notes,
-		Fedora:          &input.Fedora,
-		TextUpdatable:   &textUpdatable,
-		DetectorType:    &detectorType,
-		Active:          &active,
-		Source:          &input.Source,
-		SpdxId:          &input.SpdxCompatible,
-		Risk:            &risk,
-		Flag:            &flag,
-		Marydone:        &marydone,
-	}
-	return result
-}
 
 // ParseIdToInt convert the string ID from gin.Context to an integer and throw error if conversion fails. Also,
 // update the gin.Context with REST API error.
@@ -207,15 +121,15 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 	var importStatus LicenseImportStatusCode
 	var newLicense, oldLicense models.LicenseDB
 
-	validate := validator.New(validator.WithRequiredStructEnabled())
-
-	if err := validate.Struct(license); err != nil {
+	if err := validations.Validate.Struct(license); err != nil {
 		message = fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag())
 		importStatus = IMPORT_FAILED
 		return message, importStatus
 	}
 
 	license.UserId = userId
+	textSetBy := int64(models.TEXT_SET_VIA_LICENSE_IMPORT)
+	license.TextSetBy = &textSetBy
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		result := tx.
 			Where(&models.LicenseDB{Shortname: license.Shortname}).
@@ -228,6 +142,16 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 		} else if result.RowsAffected == 0 {
 			// case when license exists in database and is updated
 
+			newLicense = *license
+
+			if *oldLicense.Text != *newLicense.Text {
+				if !*oldLicense.TextUpdatable {
+					message = "Field `text_updatable` needs to be true to update the text"
+					importStatus = IMPORT_FAILED
+					return errors.New("Field `text_updatable` needs to be true to update the text")
+				}
+			}
+
 			// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
 			if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", &externalRefs.ExternalRef)).Error; err != nil {
 				message = fmt.Sprintf("failed to update license: %s", err.Error())
@@ -235,19 +159,15 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 				return errors.New(message)
 			}
 
-			// https://github.com/go-gorm/gorm/issues/3938: BeforeSave hook is called on the struct passed in .Model()
-			// Cannot pass empty newLicense struct in .Model() as all fields will be empty and no validation will happen
-			newLicense = *license
-
 			// Update all other fields except external_ref and rf_shortname
-			query := tx.Model(&newLicense).Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("external_ref", "rf_shortname", "User")
+			query := tx.Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("ExternalRef", "Obligations", "User", "Shortname")
 
 			// Do not update text in import if it was modified manually
-			if *oldLicense.Flag == 2 {
+			if *oldLicense.TextSetBy == models.TEXT_SET_VIA_MANUAL_UPDATE {
 				query = query.Omit("rf_text")
 			}
 
-			if err := query.Clauses(clause.Returning{}).Updates(&newLicense).Error; err != nil {
+			if err := query.Clauses(clause.Returning{}).Updates(&newLicense).Scan(&newLicense).Error; err != nil {
 				message = fmt.Sprintf("failed to update license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
@@ -259,7 +179,7 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 				return errors.New(message)
 			}
 
-			if *newLicense.Flag == 2 {
+			if *newLicense.TextSetBy == models.TEXT_SET_VIA_MANUAL_UPDATE {
 				message = "all fields except text were updated. text was updated manually and cannot be overwritten in an import."
 				importStatus = IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
 				// error is not returned here as it will rollback the transaction
@@ -487,8 +407,7 @@ const (
 )
 
 func CreateObType(obType *models.ObligationType, userId int64) (error, ObligationFieldCreateStatusCode) {
-	validate := validator.New(validator.WithRequiredStructEnabled())
-	if err := validate.Struct(obType); err != nil {
+	if err := validations.Validate.Struct(obType); err != nil {
 		return err, VALIDATION_FAILED
 	}
 
@@ -523,8 +442,7 @@ func CreateObType(obType *models.ObligationType, userId int64) (error, Obligatio
 }
 
 func CreateObClassification(obClassification *models.ObligationClassification, userId int64) (error, ObligationFieldCreateStatusCode) {
-	validate := validator.New(validator.WithRequiredStructEnabled())
-	if err := validate.Struct(obClassification); err != nil {
+	if err := validations.Validate.Struct(obClassification); err != nil {
 		return err, VALIDATION_FAILED
 	}
 
@@ -578,8 +496,21 @@ func Populatedb(datafile string) {
 	}
 
 	for _, license := range licenses {
-		result := Converter(license)
-		_, _ = InsertOrUpdateLicenseOnImport(&result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, user.Id)
+		result := license.Converter()
+		if err := validations.Validate.Struct(&result); err != nil {
+			red := "\033[31m"
+			reset := "\033[0m"
+			log.Printf("%s%s: %s%s", red, result.Shortname, fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()), reset)
+			continue
+		}
+		lic, err := result.ConvertToLicenseDB()
+		if err != nil {
+			red := "\033[31m"
+			reset := "\033[0m"
+			log.Printf("%s%s: %s%s", red, *lic.Shortname, err.Error(), reset)
+			continue
+		}
+		_, _ = InsertOrUpdateLicenseOnImport(&lic, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, user.Id)
 	}
 
 	DEFAULT_OBLIGATION_TYPES := []*models.ObligationType{
@@ -751,29 +682,16 @@ func AddChangelogsForLicense(tx *gorm.DB, userId int64,
 	var changes []models.ChangeLog
 
 	AddChangelog("Fullname", oldLicense.Fullname, newLicense.Fullname, &changes)
-
 	AddChangelog("Url", oldLicense.Url, newLicense.Url, &changes)
-
-	oldVal := oldLicense.AddDate.Format(time.RFC3339)
-	newVal := newLicense.AddDate.Format(time.RFC3339)
-	AddChangelog("Add Date", &oldVal, &newVal, &changes)
-
 	AddChangelog("Active", oldLicense.Active, newLicense.Active, &changes)
 	AddChangelog("Copyleft", oldLicense.Copyleft, newLicense.Copyleft, &changes)
-	AddChangelog("FSF Free", oldLicense.FSFfree, newLicense.FSFfree, &changes)
-	AddChangelog("GPLv2 Compatible", oldLicense.GPLv2compatible, newLicense.GPLv2compatible, &changes)
-	AddChangelog("GPLv3 Compatible", oldLicense.GPLv3compatible, newLicense.GPLv3compatible, &changes)
 	AddChangelog("OSI Approved", oldLicense.OSIapproved, newLicense.OSIapproved, &changes)
 	AddChangelog("Text", oldLicense.Text, newLicense.Text, &changes)
 	AddChangelog("Text Updatable", oldLicense.TextUpdatable, newLicense.TextUpdatable, &changes)
-	AddChangelog("Fedora", oldLicense.Fedora, newLicense.Fedora, &changes)
-	AddChangelog("Flag", oldLicense.Flag, newLicense.Flag, &changes)
 	AddChangelog("Notes", oldLicense.Notes, newLicense.Notes, &changes)
-	AddChangelog("DetectorType", oldLicense.DetectorType, newLicense.DetectorType, &changes)
 	AddChangelog("Source", oldLicense.Source, newLicense.Source, &changes)
 	AddChangelog("Spdx Id", oldLicense.SpdxId, newLicense.SpdxId, &changes)
 	AddChangelog("Risk", oldLicense.Risk, newLicense.Risk, &changes)
-	AddChangelog("Marydone", oldLicense.Marydone, newLicense.Marydone, &changes)
 
 	oldLicenseExternalRef := oldLicense.ExternalRef.Data()
 	oldExternalRefVal := reflect.ValueOf(oldLicenseExternalRef)
@@ -809,7 +727,7 @@ func AddChangelogsForLicense(tx *gorm.DB, userId int64,
 
 		audit := models.Audit{
 			UserId:     user.Id,
-			TypeId:     newLicense.Id,
+			TypeId:     int64(newLicense.Id),
 			Timestamp:  time.Now(),
 			Type:       "LICENSE",
 			ChangeLogs: changes,
