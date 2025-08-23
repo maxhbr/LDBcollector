@@ -19,7 +19,7 @@ fl = FossLicenses(config={
 
 def test_supported():
     licenses = fl.licenses()
-    assert len(licenses) == 6
+    assert len(licenses) == 7
 
 def test_osadl_validation():
     fl.expression_license("MIT", validations=[Validation.OSADL])
@@ -70,5 +70,4 @@ def test_scancode_relaxed():
     fl.expression_license("GPL-2.0-only WITH Classpath-exception-2.0", validations=[Validation.SCANCODE])
 
     fl.expression_license("LicenseRef-scancode-unknown-license-reference", validations=[Validation.SCANCODE])
-
 

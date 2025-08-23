@@ -24,7 +24,7 @@ fl_matrix = FossLicenses(config={
 
 def test_licenses():
     licenses = fl_default.licenses()
-    assert len(licenses) == 6
+    assert len(licenses) == 7
 
 def test_compat_default():
     compat = fl_default.expression_compatibility_as("MIT")
