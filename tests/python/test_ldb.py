@@ -17,12 +17,12 @@ fl = FossLicenses(config={
 
 def test_supported():
     licenses = fl.licenses()
-    assert len(licenses) == 6
+    assert len(licenses) == 7
 
 def test_alias_list():
     # list of all aliases
     aliases = fl.alias_list()
-    assert len(aliases) == 11
+    assert len(aliases) == 12
 
 def test_alias_list_gpl():
     # list of all aliases with license with GPL
