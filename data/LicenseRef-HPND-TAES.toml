@@ -1,0 +1,24 @@
+[license]
+expression = "LicenseRef-HPND-TAES"
+status = [ "not-allowed" ]
+
+text = '''
+** Copyright (C) 1991 Texas Agricultural Experiment Station, employer for
+** hire of James Darrell McCauley
+**
+** Permission to use, copy, modify, and distribute this software and its
+** documentation for any purpose and without fee is hereby granted, provided
+** that the above copyright notice appear in all copies and that both that
+** copyright notice and this permission notice appear in supporting
+** documentation.  This software is provided "as is" without express or
+** implied warranty.
+**
+** THE TEXAS AGRICULTURAL EXPERIMENT STATION (TAES) AND THE TEXAS A&M
+** UNIVERSITY SYSTEM (TAMUS) MAKE NO EXPRESS OR IMPLIED WARRANTIES
+** (INCLUDING BY WAY OF EXAMPLE, MERCHANTABILITY) WITH RESPECT TO ANY
+** ITEM, AND SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL
+** OR CONSEQUENTAL DAMAGES ARISING OUT OF THE POSESSION OR USE OF
+** ANY SUCH ITEM. LICENSEE AND/OR USER AGREES TO INDEMNIFY AND HOLD
+** TAES AND TAMUS HARMLESS FROM ANY CLAIMS ARISING OUT OF THE USE OR
+** POSSESSION OF SUCH ITEMS.
+'''
