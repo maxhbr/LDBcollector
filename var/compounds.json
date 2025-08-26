@@ -117,7 +117,8 @@
               "GPL-3.0-only WITH GCC Runtime Library exception",
               "GPL-2.0-only WITH GCC exception",
               "GPL-2.0-only WITH GCC Runtime Library exception",
-              "GNU General Public License 3 plus GCC RUNTIME LIBRARY EXCEPTION"
+              "GNU General Public License 3 plus GCC RUNTIME LIBRARY EXCEPTION",
+              "GNU General Public Licensev3 w/Runtime exception V3.1"
             ],
             "compatibility_as": "0BSD"
         },
