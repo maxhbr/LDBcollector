@@ -28,8 +28,8 @@ rpmlint:
 	$(TOPDIR)/tools/mkrpmlint.py $(SRCDIR) $(RPMLINT_SPDX) $(RPMLINT_LEGACY)
 
 grammar: json
-	$(GRAMMARDIR)/generate-spdx-ids.py $(JSONDB) > $(GRAMMARDIR)/fedora-spdx.txt
-	$(GRAMMARDIR)/generate-all-spdx-ids.py $(JSONDB) > $(GRAMMARDIR)/fedora-all-spdx.txt
+	$(GRAMMARDIR)/generate-spdx-ids.py $(JSONDB) | sort > $(GRAMMARDIR)/fedora-spdx.txt
+	$(GRAMMARDIR)/generate-all-spdx-ids.py $(JSONDB) | sort > $(GRAMMARDIR)/fedora-all-spdx.txt
 	$(GRAMMARDIR)/create-grammar.py $(GRAMMARDIR)/grammar.lark \
 		$(GRAMMARDIR)/fedora-spdx.txt > $(GRAMMARDIR)/full-grammar.lark
 	$(GRAMMARDIR)/create-grammar.py $(GRAMMARDIR)/grammar.lark \
