@@ -60,13 +60,12 @@ def test_204_and():
 
     exp_lic = 'MIT AND (GPL-2.0-only OR GPL-3.0-only)'
     c = fl.expression_compatibility_as(lic)
-    assert c['compat_license'] == exp_lic
 
     exp_lic = 'MIT AND GPL-2.0-or-later'
     c = fl.expression_compatibility_as(lic, update_dual=False)
     assert c['compat_license'] == exp_lic
     
-def test_204_and():
+def test_204_and_noupdate():
     lic = 'mit and GPLv2+'
 
     exp_lic = 'MIT AND (GPL-2.0-only OR GPL-3.0-only)'

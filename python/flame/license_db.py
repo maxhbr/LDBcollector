@@ -221,7 +221,7 @@ class FossLicenses:
         logging.debug(f'duals_file: {duals_file}')
         logging.debug(f'config: {self.config}')
 
-        self.license_expression = license_expression.get_spdx_licensing()
+        self.license_expression = license_expression.Licensing([])
         self.license_db[DUALS_TAG] = duals
         self.license_db[AMBIG_TAG] = self.ambiguities
         self.license_db[LICENSES_TAG] = licenses
@@ -501,12 +501,14 @@ class FossLicenses:
             except boolean.boolean.ParseError as e:
                 update_problem = f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}'
                 updated_license = updates_object['license_expression']
+                print("2")
         else:
             try:
                 updated_license = str(self.license_expression.parse(ret['license_expression']))
             except boolean.boolean.ParseError as e:
                 update_problem = f'Could not parse "ret["license_expression"]". Exception: {e}'
                 updated_license = ret['license_expression']
+                print("3")
 
         license_parsed = updated_license
 
