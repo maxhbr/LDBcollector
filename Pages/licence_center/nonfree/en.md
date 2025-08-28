@@ -31,18 +31,18 @@ The licenses listed here originate from the Free Software sphere or give themsel
 | BigScience RAIL License (v1.0) | [🇬🇧](https://huggingface.co/spaces/bigscience/license) | - |
 | Business Source License 1.1 | [🇬🇧](https://mariadb.com/bsl11/) | - |
 | Chicken Dance License (v0.2) | [🇬🇧](https://github.com/supertunaman/cdl/blob/master/COPYING ) | - |
-| Code Project Open License (CPOL) 1.02 | [🇬🇧](https://www.codeproject.com/info/cpol10.aspx) | - |
+| Code Project Open License (CPOL) 1.02 | [🇬🇧](https://www.codeproject.com/info/cpol10.aspx) |  CPOL-1.02 |
 | Commons Clause | [🇬🇧](https://commonsclause.com/) | - |
 | Confluent Community License (v1.0) | [🇬🇧](https://www.confluent.io/confluent-community-license/) | - |
 | CrossPoint Quelltext Lizenz (alt) | [🇬🇧](http://www.crosspoint.de/oldlicense.html) | - |
-| Elastic License 2.0 (ELv2) | [🇬🇧](https://www.elastic.co/de/licensing/elastic-license) | - |
+| Elastic License 2.0 (ELv2) | [🇬🇧](https://www.elastic.co/de/licensing/elastic-license) |  Elastic-2.0 |
 | Enhydra Public License (v1.1) (Einordnung umstritten) | [🇬🇧](http://ksoap.objectweb.org/software/license/index.html) | - |
 | FSF (Feminist Software Foundation) Public License | [🇬🇧](https://gitlab.com/femsf/c-plus-equality/-/blob/master/LICENSE.FemSFPL) | - |
 | Functional Source License (v1.0), MIT Change License | [🇬🇧](https://github.com/getsentry/fsl.software/blob/main/FSL-1.0-MIT.template.md) | - |
 | Functional Source License (v1.0), Apache 2.0 Change License | [🇬🇧](https://github.com/getsentry/fsl.software/blob/main/FSL-1.0-Apache-2.0.template.md) | - |
 | Hacktivismo Enhanced-Source Software License Agreement (v0.1) (HESSLA) | [🇬🇧](http://www.hacktivismo.com/about/hessla.php) | - |
 | Jahia Community Source License (JSCL) (v.012) | [🇬🇧](http://www.jahia.org/jahia/Jahia/pid/145) | - |
-| JasPer Software License (1.0) | [🇬🇧](http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE) | - |
+| JasPer Software License (1.0) | [🇬🇧](http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE) |  JasPer-2.0 |
 | MCU path license 2018 | [🇬🇧](https://01.org/mcu-path-license-2018) | - |
 | Microsoft Limited Permissive License (Ms-LPL) | [🇬🇧](https://web.archive.org/web/20070509061152/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedpermissivelicense.mspx ) | - |
 | Microsoft Limited Public License (Ms-LPL) | [🇬🇧](https://web.archive.org/web/20071223053203/http://microsoft.com:80/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx ) | MS-LPL |
@@ -50,19 +50,19 @@ The licenses listed here originate from the Free Software sphere or give themsel
 | Microsoft Reference License (Ms-RefL) | [🇬🇧](https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx) | - |
 | Microsoft Limited Reciprocal License (Ms-LRL) | [🇬🇧](https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx) | - |
 | MMT License | [🇬🇧](https://github.com/UniFormal/MMT/blob/master/COPYING.txt) | - |
-| Nagios Open Software License (v1.3) | [🇬🇧](https://github.com/NagiosEnterprises/ncpa/blob/master/LICENSE.rst) | - |
+| Nagios Open Software License (v. 1.3) | [🇬🇧](https://github.com/NagiosEnterprises/ncpa/blob/master/LICENSE.rst) | - |
 | Nmap Public Source License Version (v0.92) | [🇬🇧](https://svn.nmap.org/nmap/LICENSE) | - |
-| Open Public License | [🇬🇧](http://wyatterp.com/opl.html (Einordnung umstritten)) | - |
-| Open RTLinux Patent License (v1.0) | [🇬🇧](http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE) | - |
+| Open Public License (v. 1.0) | [🇬🇧](http://wyatterp.com/opl.html (Einordnung umstritten)) |  OPL-1.0 |
+| Open RTLinux Patent License (v. 1.0) | [🇬🇧](http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE) | - |
 | Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX | [🇬🇧](https://www.oracle.com/downloads/licenses/binary-code-license.html) | - |
 | OS.Cash Free License | [🇬🇧](https://os.cash/licenses/free?details=true) | - |
 | OS.Cash Library License | [🇬🇧](https://os.cash/licenses/library?details=true) | - |
 | Personal Public License (v3a) | [🇬🇧](https://github.com/uboslinux/ubos-admin/blob/master/LICENSE) | - |
-| PLS Free Software License Agreement (v1.0) | [🇬🇧](http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm) | - |
-| RedHat eCos Public License (v1.1) (Einordnung umstritten) | [🇬🇧](http://ecos.sourceware.org/old-license.html) | - |
+| PLS Free Software License Agreement (v. 1.0) | [🇬🇧](http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm) | - |
+| RedHat eCos Public License (v. 1.1) (Einordnung umstritten) | [🇬🇧](http://ecos.sourceware.org/old-license.html) | - |
 | Scilab license | [🇬🇧](http://www.worldlii.org/int/other/PubRL/2009/51.html) | - |
-| Server Side Public License (v1.0) (Einordnung umstritten) | [🇬🇧](https://www.mongodb.com/licensing/server-side-public-license) | - |
-| SGI Free Software License B (v1.0) (Einordnung umstritten) | [🇬🇧](http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html) | - |
+| Server Side Public License (v. 1.0) (Einordnung umstritten) | [🇬🇧](https://www.mongodb.com/licensing/server-side-public-license) |  SSPL-1.0 |
+| SGI Free Software License B (v. 1.0) (Einordnung umstritten) | [🇬🇧](http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html) |  SGI-B-1.0 |
 | ShippySoft Source Available License (SSSAL) | [🇬🇧](http://www.shippysoft.com/license.shtml) | - |
 | Squeak License (Apple) | [🇬🇧](https://web.archive.org/web/20150308154920/http://www.squeak.org:80/SqueakLicense) | - |
 | Sun Microsystems, Inc Binary Code License Agreement | [🇬🇧](https://download.java.net/media/jai/builds/release/1_1_3/LICENSE-jai.txt) | - |
