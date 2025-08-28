@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Jasper Reports License 1.0",
+  "scancode_key": "jasper-1.0",
+  "spdxid": "LicenseRef-scancode-jasper-1.0",
+  "aliases": [
+  ]
+}
