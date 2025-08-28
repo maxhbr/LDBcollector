@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft ASP.NET 2.0 Ajax Extensions"
+category: "Microsoft ASP.NET"
+shortName: "MS-ASP-NET-2.0-Ajax-Extensions"
+
+canonicalNameHistory:
+  - "Microsoft Software Supplemental License - ASP.NET 2.0 AJAX EXTENSIONS"
+
+alternativeNames:
+  - "ms-asp-net-ajax-supplemental-terms"
+
+otherIds: 
+  - "scancode:ms-asp-net-ajax-supplemental-terms"

@@ -1,0 +1,23 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "NVIDIA Proprietary License 2002"
+category: "NVIDIA Proprietary"
+shortName: "NVIDIA-2002-Proprietary"
+spdxIdentifier: "AML-glslang"
+
+canonicalNameHistory:
+  - "AML-glslang License"
+  - "NVIDIA 2002 Proprietary License"
+
+alternativeNames:
+  - "nvidia-2002"
+  - "NVIDIA-2002"
+  - "NVIDIA 2002 Proprietary License"
+  - "AML-glslang"
+  - "AML glslang variant License"
+  - "AML License (glslang variant)"
+
+otherIds: 
+  - "scancode:nvidia-2002"

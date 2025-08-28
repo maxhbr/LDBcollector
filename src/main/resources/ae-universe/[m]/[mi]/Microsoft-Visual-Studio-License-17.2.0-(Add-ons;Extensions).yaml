@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft Visual Studio License 17.2.0 (Add-ons; Extensions)"
+category: "Microsoft Visual Studio"
+shortName: "MS-VS-17.2.0-Add-ons-Extensions"
+
+canonicalNameHistory:
+  - "Microsoft Visual Studio Add-Ons and Extensions 17.2.0"
+  - "Microsoft Visual Studio Add-Ons 17.2.0 (with Extensions)"
+
+alternativeNames:
+  - "Microsoft Visual Studio Add-Ons and Extensions 17.2.0"
+  - "MICROSOFT VISUAL STUDIO ADD-ONs and EXTENSIONS"
+
+otherIds: 
+  - "scancode:ms-vs-addons-ext-17.2.0"

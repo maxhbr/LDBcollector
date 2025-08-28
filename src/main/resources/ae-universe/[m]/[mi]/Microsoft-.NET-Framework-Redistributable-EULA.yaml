@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft .NET Framework Redistributable EULA"
-category: "Microsoft .NET Framework Redistributable EULA"
-shortName: "MS-NET-FRAMEWORK-Deployment"
+category: "Microsoft .NET Framework Redistributable"
+shortName: "MS-NET-Framework-Redistributable"
 
 alternativeNames:
   - "Microsoft .NET Framework Redistributable EULA"

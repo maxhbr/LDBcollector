@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft Systems Journal Sample Code License"
-category: "Microsoft Systems Journal Sample Code License"
-shortName: "MSJ-Sample-Code"
+category: "Microsoft Systems Journal Sample Code"
+shortName: "MS-Sys-Journal-Sample-Code"
 
 alternativeNames:
   - "msj-sample-code"

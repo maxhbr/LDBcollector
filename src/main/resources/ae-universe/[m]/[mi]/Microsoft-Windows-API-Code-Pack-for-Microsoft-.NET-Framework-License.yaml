@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft Windows API Code Pack for Microsoft .NET Framework License"
-category: "Microsoft Windows API Code Pack for Microsoft .NET Framework License"
-shortName: "Ms-Windows-API-Code-Pack-NET-Framework"
+category: "Microsoft Windows API Code Pack"
+shortName: "MS-Win-API-Code-Pack-NET-Framework"
 
 alternativeNames:
   - "MICROSOFT WINDOWS API CODE PACK FOR MICROSOFT .NET FRAMEWORK"

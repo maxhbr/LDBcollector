@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft Visual Studio 2015 SDK License"
+category: "Microsoft Visual Studio SDK"
+shortName: "MS-VS-2015-SDK"
+
+canonicalNameHistory:
+  - "Microsoft Visual Studio 2015 Software Development Kit License"
+
+alternativeNames:
+  - "Microsoft Visual Studio 2015 Software Development Kit License"
+  - "ms-visual-2015-sdk"
+
+otherIds: 
+  - "scancode:ms-visual-2015-sdk"

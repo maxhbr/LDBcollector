@@ -6,6 +6,10 @@ canonicalName: "Xerox License"
 category: "Xerox"
 spdxIdentifier: "Xerox"
 
+canonicalNameHistory:
+  - "MIT (export control)"
+  - "MIT with Export Control"
+
 openCoDEStatus: "approved"
 
 alternativeNames:
@@ -13,4 +17,7 @@ alternativeNames:
   - "Xerox License"
   - "XEROX LICENSE"
   - "XEROX License"
+  - "mit-export-control"
 
+otherIds: 
+  - "scancode:mit-export-control"

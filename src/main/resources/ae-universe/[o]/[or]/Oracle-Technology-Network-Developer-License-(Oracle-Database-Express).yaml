@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Oracle Technology Network Developer License (Oracle Database Express)"
-category: "OTN"
-shortName: "OTN-Database-Express"
+category: "OTN Developer"
+shortName: "OTN-Dev-Oracle-Database-Express"
 
 canonicalNameHistory:
   - "Oracle Technology Network Oracle Express License Agreement"

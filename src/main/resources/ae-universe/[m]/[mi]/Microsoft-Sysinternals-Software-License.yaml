@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft Sysinternals Software License"
+category: "Microsoft Sysinternals"
+shortName: "MS-Sysinternals"
+
+canonicalNameHistory:
+  - "Microsoft Sysinternals Software License Terms"
+
+alternativeNames:
+  - "Microsoft Sysinternals Software License Terms"
+
+otherIds: 
+  - "scancode:ms-sysinternals-sla"

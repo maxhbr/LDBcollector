@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft Windows Rally Development Kit License"
-category: "Microsoft Windows Rally Development Kit License"
-shortName: "Microsoft-Windows-Rally-DevKit"
+category: "Microsoft Windows Rally Development Kit"
+shortName: "MS-Win-Rally-DevKit"
 
 otherIds: 
   - "scancode:microsoft-windows-rally-devkit"

@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft Windows Operating System License 2018"
+category: "Microsoft Windows Operating System"
+shortName: "MS-Win-OS-2018"
+
+canonicalNameHistory:
+  - "Microsoft Windows Operating System License 2019"
+
+alternativeNames:
+  - "Microsoft Windows Operating System License 2018"
+  - "WINDOWS OPERATING SYSTEM"
+
+otherIds: 
+  - "scancode:ms-windows-os-2018"

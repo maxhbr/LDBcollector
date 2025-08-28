@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "X11 License (Xilinx)"
+category: "X11"
+shortName: "X11-Xilinx"
+
+canonicalNameHistory:
+  - "X11-Style (Xilinx)"
+
+otherIds: 
+  - "scancode:xilinx-2016"

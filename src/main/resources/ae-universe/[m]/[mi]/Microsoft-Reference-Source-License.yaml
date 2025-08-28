@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft Reference Source License"
-category: "Microsoft Reference Source License"
-shortName: "MS-RSL"
+category: "Microsoft Reference Source"
+shortName: "MS-Reference-Source"
 
 alternativeNames:
   - "http://www.microsoft.com/resources/sharedsource/referencesourcelicense.mspx"

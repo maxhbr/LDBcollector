@@ -19,7 +19,6 @@ alternativeNames:
   - "Cygwin license"
   - "CYGWIN_LICENSE"
   - "ftp://ftp.nstream.pl/Rozne/iperf-2.0.5-2-win32/doc/cygwin.html"
-  - "<http://gnu.org/licenses/>"
 
 otherIds: 
   - "scancode:cygwin-exception-3.0"

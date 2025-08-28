@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft Container EULA"
-category: "Microsoft Container EULA"
-shortName: "ms-container-eula"
+category: "Microsoft Container"
+shortName: "MS-Container-EULA"
 
 alternativeNames:
   - "Microsoft Container EULA"

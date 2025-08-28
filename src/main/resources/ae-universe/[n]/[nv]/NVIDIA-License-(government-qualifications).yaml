@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "NVIDIA License (government qualifications)"
-category: "NVIDIA License Government Qualifications"
-shortName: "NVIDIA-Gov"
+category: "NVIDIA government qualifications"
+shortName: "NVIDIA-government-qualifications"
 
 canonicalNameHistory:
   - "NVIDIA License with Government Qualifications"

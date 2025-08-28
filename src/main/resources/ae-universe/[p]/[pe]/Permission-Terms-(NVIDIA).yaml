@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (NVIDIA)"
-category: "NVIDIA Permission"
-shortName: "NVIDIA-PT"
+category: "Permission"
+shortName: "PT-NVIDIA"
 
 canonicalNameHistory:
   - "NVIDIA Permission Terms"

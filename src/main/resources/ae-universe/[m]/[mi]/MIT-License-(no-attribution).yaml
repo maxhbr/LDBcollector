@@ -4,6 +4,7 @@
 
 canonicalName: "MIT License (no attribution)"
 category: "MIT"
+shortName: "MIT-no-attribution"
 spdxIdentifier: "MIT-0"
 
 openCoDEStatus: "approved"
