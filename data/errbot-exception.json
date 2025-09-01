@@ -1,13 +1,13 @@
 {
-    "canonical": "errbot-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "Errbot exception",
-            "LicenseRef-scancode-errbot-exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "errbot-exception",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Errbot exception",
+      "LicenseRef-scancode-errbot-exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

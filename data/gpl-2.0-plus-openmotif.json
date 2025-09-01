@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-plus-openmotif",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 or later with Open Motif exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-plus-openmotif",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 or later with Open Motif exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

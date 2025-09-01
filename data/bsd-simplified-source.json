@@ -1,13 +1,13 @@
 {
-    "canonical": "bsd-simplified-source",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD-Simplified source",
-            "LicenseRef-scancode-bsd-simplified-source"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bsd-simplified-source",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BSD-Simplified source",
+      "LicenseRef-scancode-bsd-simplified-source"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

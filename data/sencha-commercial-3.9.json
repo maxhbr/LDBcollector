@@ -1,14 +1,14 @@
 {
-    "canonical": "sencha-commercial-3.9",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sencha Software License Agreement v3.9",
-            "Sencha Software License Agreement 3.9",
-            "LicenseRef-scancode-sencha-commercial-3.9"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sencha-commercial-3.9",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sencha Software License Agreement v3.9",
+      "Sencha Software License Agreement 3.9",
+      "LicenseRef-scancode-sencha-commercial-3.9"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-openjdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with OpenJDK Classpath exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-openjdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with OpenJDK Classpath exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

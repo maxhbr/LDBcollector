@@ -1,28 +1,28 @@
 {
-    "canonical": "MIT-CMU",
-    "aliases": {
-        "spdx": [
-            "CMU License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "cmu-uc",
-            "CMU Style"
-        ],
-        "pypi-classifiers": [
-            "License :: CMU License (MIT-CMU)",
-            "OSI Approved :: CMU License (MIT-CMU)",
-            "License :: OSI Approved :: CMU License",
-            "License :: CMU License",
-            "OSI Approved :: CMU License",
-            "License :: OSI Approved :: MIT-CMU",
-            "License :: MIT-CMU",
-            "OSI Approved :: MIT-CMU",
-            "License :: OSI Approved :: CMU License (MIT-CMU)",
-            "CMU License (MIT-CMU)"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "MIT-CMU",
+  "aliases": {
+    "spdx": [
+      "CMU License"
+    ],
+    "custom": [],
+    "pypiClassifiers": [
+      "License :: CMU License (MIT-CMU)",
+      "OSI Approved :: CMU License (MIT-CMU)",
+      "License :: OSI Approved :: CMU License",
+      "License :: CMU License",
+      "OSI Approved :: CMU License",
+      "License :: OSI Approved :: MIT-CMU",
+      "License :: MIT-CMU",
+      "OSI Approved :: MIT-CMU",
+      "License :: OSI Approved :: CMU License (MIT-CMU)",
+      "CMU License (MIT-CMU)"
+    ],
+    "scancodeLicensedb": [
+      "cmu-uc",
+      "CMU Style"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

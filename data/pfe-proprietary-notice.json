@@ -1,13 +1,13 @@
 {
-    "canonical": "pfe-proprietary-notice",
-    "aliases": {
-        "scancode-licensedb": [
-            "PFE Proprietary Notice",
-            "LicenseRef-scancode-pfe-proprietary-notice"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "pfe-proprietary-notice",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "PFE Proprietary Notice",
+      "LicenseRef-scancode-pfe-proprietary-notice"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

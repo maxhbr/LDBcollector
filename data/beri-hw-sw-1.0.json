@@ -1,13 +1,13 @@
 {
-    "canonical": "beri-hw-sw-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "BERI Hardware-Software License v1.0",
-            "LicenseRef-scancode-beri-hw-sw-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "beri-hw-sw-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BERI Hardware-Software License v1.0",
+      "LicenseRef-scancode-beri-hw-sw-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "mut-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "muT-License",
-            "LicenseRef-scancode-mut-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "mut-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "muT-License",
+      "LicenseRef-scancode-mut-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

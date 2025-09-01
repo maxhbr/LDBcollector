@@ -1,15 +1,15 @@
 {
-    "canonical": "Bahyph",
-    "aliases": {
-        "spdx": [
-            "Bahyph License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "bahyph"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Bahyph",
+  "aliases": {
+    "spdx": [
+      "Bahyph License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "bahyph"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

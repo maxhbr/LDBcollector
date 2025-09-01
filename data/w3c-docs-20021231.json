@@ -1,14 +1,14 @@
 {
-    "canonical": "w3c-docs-20021231",
-    "aliases": {
-        "scancode-licensedb": [
-            "W3C-DOCS-20021231",
-            "W3C Document License (2002-12-31)",
-            "LicenseRef-scancode-w3c-docs-20021231"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "w3c-docs-20021231",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "W3C-DOCS-20021231",
+      "W3C Document License (2002-12-31)",
+      "LicenseRef-scancode-w3c-docs-20021231"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

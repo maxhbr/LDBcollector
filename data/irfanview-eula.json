@@ -1,13 +1,13 @@
 {
-    "canonical": "irfanview-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "IrfanView EULA",
-            "LicenseRef-scancode-irfanview-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "irfanview-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "IrfanView EULA",
+      "LicenseRef-scancode-irfanview-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

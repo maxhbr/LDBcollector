@@ -1,13 +1,13 @@
 {
-    "canonical": "lilo",
-    "aliases": {
-        "scancode-licensedb": [
-            "LILO License",
-            "LicenseRef-scancode-lilo"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "lilo",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LILO License",
+      "LicenseRef-scancode-lilo"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

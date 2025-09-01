@@ -1,14 +1,14 @@
 {
-    "canonical": "damail",
-    "aliases": {
-        "scancode-licensedb": [
-            "Don't Ask Me About It License",
-            "DAMAIL",
-            "LicenseRef-scancode-damail"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "damail",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Don't Ask Me About It License",
+      "DAMAIL",
+      "LicenseRef-scancode-damail"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,17 +1,17 @@
 {
-    "canonical": "Artistic-1.0-Perl",
-    "aliases": {
-        "spdx": [
-            "Artistic License 1.0 (Perl)"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "artistic-perl-1.0",
-            "Artistic License (Perl) 1.0",
-            "Artistic-Perl-1.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Artistic-1.0-Perl",
+  "aliases": {
+    "spdx": [
+      "Artistic License 1.0 (Perl)"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "artistic-perl-1.0",
+      "Artistic License (Perl) 1.0",
+      "Artistic-Perl-1.0"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

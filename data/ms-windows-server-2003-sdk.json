@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-windows-server-2003-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Windows Server 2003 SP1 Platform SDK License",
-            "MS Windows Server 2003 SP1 Platform SDK License",
-            "LicenseRef-scancode-ms-windows-server-2003-sdk"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-windows-server-2003-sdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Windows Server 2003 SP1 Platform SDK License",
+      "MS Windows Server 2003 SP1 Platform SDK License",
+      "LicenseRef-scancode-ms-windows-server-2003-sdk"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

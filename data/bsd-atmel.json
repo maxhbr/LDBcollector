@@ -1,13 +1,13 @@
 {
-    "canonical": "bsd-atmel",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD Atmel License",
-            "LicenseRef-scancode-bsd-atmel"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bsd-atmel",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BSD Atmel License",
+      "LicenseRef-scancode-bsd-atmel"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

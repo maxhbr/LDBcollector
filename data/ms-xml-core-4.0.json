@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-xml-core-4.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft XML Core Services (MSXML) 4.0 EULA",
-            "MSXML 4.0 EULA",
-            "LicenseRef-scancode-ms-xml-core-4.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-xml-core-4.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft XML Core Services (MSXML) 4.0 EULA",
+      "MSXML 4.0 EULA",
+      "LicenseRef-scancode-ms-xml-core-4.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

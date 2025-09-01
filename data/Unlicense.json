@@ -1,31 +1,31 @@
 {
-    "canonical": "Unlicense",
-    "aliases": {
-        "spdx": [
-            "The Unlicense"
-        ],
-        "custom": [
-            "UNLICENSED",
-            "Unlicence"
-        ],
-        "scancode-licensedb": [
-            "Unlicense",
-            "unlicense"
-        ],
-        "pypi-classifier": [
-            "License :: OSI Approved :: The Unlicense (Unlicense)",
-            "OSI Approved :: The Unlicense (Unlicense)",
-            "License :: The Unlicense (Unlicense)",
-            "The Unlicense (Unlicense)",
-            "License :: OSI Approved :: The Unlicense",
-            "OSI Approved :: The Unlicense",
-            "License :: The Unlicense",
-            "License :: OSI Approved :: Unlicense",
-            "OSI Approved :: Unlicense",
-            "License :: Unlicense"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Unlicense",
+  "aliases": {
+    "spdx": [
+      "The Unlicense"
+    ],
+    "custom": [
+      "UNLICENSED",
+      "Unlicence"
+    ],
+    "scancodeLicensedb": [
+      "Unlicense",
+      "unlicense"
+    ],
+    "pypiClassifier": [
+      "License :: OSI Approved :: The Unlicense (Unlicense)",
+      "OSI Approved :: The Unlicense (Unlicense)",
+      "License :: The Unlicense (Unlicense)",
+      "The Unlicense (Unlicense)",
+      "License :: OSI Approved :: The Unlicense",
+      "OSI Approved :: The Unlicense",
+      "License :: The Unlicense",
+      "License :: OSI Approved :: Unlicense",
+      "OSI Approved :: Unlicense",
+      "License :: Unlicense"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

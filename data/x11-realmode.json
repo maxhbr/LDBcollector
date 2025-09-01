@@ -1,13 +1,13 @@
 {
-    "canonical": "x11-realmode",
-    "aliases": {
-        "scancode-licensedb": [
-            "X11-Style (Realmode)",
-            "LicenseRef-scancode-x11-realmode"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "x11-realmode",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "X11-Style (Realmode)",
+      "LicenseRef-scancode-x11-realmode"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,17 +1,17 @@
 {
-    "canonical": "Boehm-GC",
-    "aliases": {
-        "spdx": [
-            "Boehm-Demers-Weiser GC License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "mozilla-gc",
-            "Mozilla GC License",
-            "LicenseRef-scancode-mozilla-gc"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Boehm-GC",
+  "aliases": {
+    "spdx": [
+      "Boehm-Demers-Weiser GC License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "mozilla-gc",
+      "Mozilla GC License",
+      "LicenseRef-scancode-mozilla-gc"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

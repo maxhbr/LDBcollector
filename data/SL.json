@@ -1,15 +1,15 @@
 {
-    "canonical": "SL",
-    "aliases": {
-        "spdx": [
-            "SL License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "sl"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "SL",
+  "aliases": {
+    "spdx": [
+      "SL License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "sl"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "java-research-1.6",
-    "aliases": {
-        "scancode-licensedb": [
-            "Java Research License 1.6",
-            "Java Research License Version 1.6",
-            "LicenseRef-scancode-java-research-1.6"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "java-research-1.6",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Java Research License 1.6",
+      "Java Research License Version 1.6",
+      "LicenseRef-scancode-java-research-1.6"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

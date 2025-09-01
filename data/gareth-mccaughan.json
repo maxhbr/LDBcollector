@@ -1,13 +1,13 @@
 {
-    "canonical": "gareth-mccaughan",
-    "aliases": {
-        "scancode-licensedb": [
-            "Gareth McCaughan License",
-            "LicenseRef-scancode-gareth-mccaughan"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gareth-mccaughan",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Gareth McCaughan License",
+      "LicenseRef-scancode-gareth-mccaughan"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-visual-studio-code",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Visual Studio Code License",
-            "MS Visual Studio Code License",
-            "LicenseRef-scancode-ms-visual-studio-code"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-visual-studio-code",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Visual Studio Code License",
+      "MS Visual Studio Code License",
+      "LicenseRef-scancode-ms-visual-studio-code"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "etalab-2.0-en",
-    "aliases": {
-        "scancode-licensedb": [
-            "Etalab Open License 2.0 English",
-            "LicenseRef-scancode-etalab-2.0-en"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "etalab-2.0-en",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Etalab Open License 2.0 English",
+      "LicenseRef-scancode-etalab-2.0-en"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

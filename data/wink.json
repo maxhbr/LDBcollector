@@ -1,13 +1,13 @@
 {
-    "canonical": "wink",
-    "aliases": {
-        "scancode-licensedb": [
-            "Wink License",
-            "LicenseRef-scancode-wink"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "wink",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Wink License",
+      "LicenseRef-scancode-wink"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

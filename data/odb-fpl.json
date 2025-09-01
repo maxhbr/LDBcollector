@@ -1,14 +1,14 @@
 {
-    "canonical": "odb-fpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "ODB FPL",
-            "ODB Free Proprietary License (FPL)",
-            "LicenseRef-scancode-odb-fpl"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "odb-fpl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ODB FPL",
+      "ODB Free Proprietary License (FPL)",
+      "LicenseRef-scancode-odb-fpl"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

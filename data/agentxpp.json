@@ -1,13 +1,13 @@
 {
-    "canonical": "agentxpp",
-    "aliases": {
-        "scancode-licensedb": [
-            "AgentX++ License Agreement",
-            "LicenseRef-scancode-agentxpp"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "agentxpp",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "AgentX++ License Agreement",
+      "LicenseRef-scancode-agentxpp"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

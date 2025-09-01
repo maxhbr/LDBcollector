@@ -1,17 +1,17 @@
 {
-    "canonical": "CPOL-1.02",
-    "aliases": {
-        "spdx": [
-            "Code Project Open License 1.02"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Code Project Open License (CPOL) 1.02",
-            "CPOL 1.02",
-            "cpol-1.02"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "CPOL-1.02",
+  "aliases": {
+    "spdx": [
+      "Code Project Open License 1.02"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "Code Project Open License (CPOL) 1.02",
+      "CPOL 1.02",
+      "cpol-1.02"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

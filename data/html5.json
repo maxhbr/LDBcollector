@@ -1,14 +1,14 @@
 {
-    "canonical": "html5",
-    "aliases": {
-        "scancode-licensedb": [
-            "HTML 5 specification License",
-            "HTML 5 spec License",
-            "LicenseRef-scancode-html5"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "html5",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "HTML 5 specification License",
+      "HTML 5 spec License",
+      "LicenseRef-scancode-html5"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

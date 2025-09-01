@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-reactive-extensions-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Reactive Extensions EULA",
-            "MS Reactive Extensions EULA",
-            "LicenseRef-scancode-ms-reactive-extensions-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-reactive-extensions-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Reactive Extensions EULA",
+      "MS Reactive Extensions EULA",
+      "LicenseRef-scancode-ms-reactive-extensions-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

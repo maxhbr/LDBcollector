@@ -1,13 +1,13 @@
 {
-    "canonical": "libmib",
-    "aliases": {
-        "scancode-licensedb": [
-            "LibMib License",
-            "LicenseRef-scancode-libmib"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "libmib",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LibMib License",
+      "LicenseRef-scancode-libmib"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

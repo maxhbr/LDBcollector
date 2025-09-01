@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-cl",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS-CL",
-            "Microsoft Shared Source Community License",
-            "LicenseRef-scancode-ms-cl"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-cl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS-CL",
+      "Microsoft Shared Source Community License",
+      "LicenseRef-scancode-ms-cl"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

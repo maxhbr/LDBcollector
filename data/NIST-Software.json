@@ -1,15 +1,15 @@
 {
-    "canonical": "NIST-Software",
-    "aliases": {
-        "spdx": [
-            "NIST Software License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "nist-software"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "NIST-Software",
+  "aliases": {
+    "spdx": [
+      "NIST Software License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "nist-software"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

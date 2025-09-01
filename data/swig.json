@@ -1,13 +1,13 @@
 {
-    "canonical": "swig",
-    "aliases": {
-        "scancode-licensedb": [
-            "SWIG Library License",
-            "LicenseRef-scancode-swig"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "swig",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "SWIG Library License",
+      "LicenseRef-scancode-swig"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

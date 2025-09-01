@@ -1,17 +1,17 @@
 {
-    "canonical": "NPL-1.1",
-    "aliases": {
-        "spdx": [
-            "Netscape Public License v1.1"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "NPL 1.1",
-            "npl-1.1",
-            "Netscape Public License 1.1"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "NPL-1.1",
+  "aliases": {
+    "spdx": [
+      "Netscape Public License v1.1"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "NPL 1.1",
+      "npl-1.1",
+      "Netscape Public License 1.1"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

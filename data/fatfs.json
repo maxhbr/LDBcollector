@@ -1,13 +1,13 @@
 {
-    "canonical": "fatfs",
-    "aliases": {
-        "scancode-licensedb": [
-            "FatFs License",
-            "LicenseRef-scancode-fatfs"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "fatfs",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "FatFs License",
+      "LicenseRef-scancode-fatfs"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

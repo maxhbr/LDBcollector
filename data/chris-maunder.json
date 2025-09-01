@@ -1,13 +1,13 @@
 {
-    "canonical": "chris-maunder",
-    "aliases": {
-        "scancode-licensedb": [
-            "Chris Maunder License",
-            "LicenseRef-scancode-chris-maunder"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "chris-maunder",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Chris Maunder License",
+      "LicenseRef-scancode-chris-maunder"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

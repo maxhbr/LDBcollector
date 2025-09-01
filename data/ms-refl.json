@@ -1,13 +1,13 @@
 {
-    "canonical": "ms-refl",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Reference License",
-            "Microsoft Reference License"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-refl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS Reference License",
+      "Microsoft Reference License"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "ldpgpl-1a",
-    "aliases": {
-        "scancode-licensedb": [
-            "LDPGPL-1a",
-            "Linux Documentation Project General Public License v1a, November 1998",
-            "LicenseRef-scancode-ldpgpl-1a"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ldpgpl-1a",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LDPGPL-1a",
+      "Linux Documentation Project General Public License v1a, November 1998",
+      "LicenseRef-scancode-ldpgpl-1a"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

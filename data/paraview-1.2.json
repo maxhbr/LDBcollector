@@ -1,13 +1,13 @@
 {
-    "canonical": "paraview-1.2",
-    "aliases": {
-        "scancode-licensedb": [
-            "ParaView License 1.2",
-            "LicenseRef-scancode-paraview-1.2"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "paraview-1.2",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ParaView License 1.2",
+      "LicenseRef-scancode-paraview-1.2"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

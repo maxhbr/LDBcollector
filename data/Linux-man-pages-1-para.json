@@ -1,15 +1,15 @@
 {
-    "canonical": "Linux-man-pages-1-para",
-    "aliases": {
-        "spdx": [
-            "Linux man-pages - 1 paragraph"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "linux-man-pages-1-para"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Linux-man-pages-1-para",
+  "aliases": {
+    "spdx": [
+      "Linux man-pages - 1 paragraph"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "linux-man-pages-1-para"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,15 +1,15 @@
 {
-    "canonical": "Latex2e-translated-notice",
-    "aliases": {
-        "spdx": [
-            "Latex2e with translated notice permission"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "latex2e-translated-notice"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Latex2e-translated-notice",
+  "aliases": {
+    "spdx": [
+      "Latex2e with translated notice permission"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "latex2e-translated-notice"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

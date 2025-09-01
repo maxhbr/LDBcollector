@@ -1,13 +1,13 @@
 {
-    "canonical": "geoserver-exception-2.0-plus",
-    "aliases": {
-        "scancode-licensedb": [
-            "GeoServer exception to GPL 2.0 or later",
-            "LicenseRef-scancode-geoserver-exception-2.0-plus"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "geoserver-exception-2.0-plus",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GeoServer exception to GPL 2.0 or later",
+      "LicenseRef-scancode-geoserver-exception-2.0-plus"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

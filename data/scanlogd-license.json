@@ -1,13 +1,13 @@
 {
-    "canonical": "scanlogd-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "scanlogd License",
-            "LicenseRef-scancode-scanlogd-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "scanlogd-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "scanlogd License",
+      "LicenseRef-scancode-scanlogd-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

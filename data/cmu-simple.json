@@ -1,14 +1,14 @@
 {
-    "canonical": "cmu-simple",
-    "aliases": {
-        "scancode-licensedb": [
-            "Carnegie Mellon Simple License",
-            "CMU Simple License",
-            "LicenseRef-scancode-cmu-simple"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "cmu-simple",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Carnegie Mellon Simple License",
+      "CMU Simple License",
+      "LicenseRef-scancode-cmu-simple"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "agere-sla",
-    "aliases": {
-        "scancode-licensedb": [
-            "Agere WindModem EULA",
-            "Agere Systems WinModem EULA",
-            "LicenseRef-scancode-agere-sla"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "agere-sla",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Agere WindModem EULA",
+      "Agere Systems WinModem EULA",
+      "LicenseRef-scancode-agere-sla"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

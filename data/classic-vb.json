@@ -1,13 +1,13 @@
 {
-    "canonical": "classic-vb",
-    "aliases": {
-        "scancode-licensedb": [
-            "Classic VB License",
-            "LicenseRef-scancode-classic-vb"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "classic-vb",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Classic VB License",
+      "LicenseRef-scancode-classic-vb"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

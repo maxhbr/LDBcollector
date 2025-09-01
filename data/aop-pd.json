@@ -1,13 +1,13 @@
 {
-    "canonical": "aop-pd",
-    "aliases": {
-        "scancode-licensedb": [
-            "AOP Public Domain License",
-            "AOP-PD"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "aop-pd",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "AOP Public Domain License",
+      "AOP-PD"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

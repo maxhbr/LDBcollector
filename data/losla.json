@@ -1,14 +1,14 @@
 {
-    "canonical": "losla",
-    "aliases": {
-        "scancode-licensedb": [
-            "LOSLA",
-            "LEGO Open Source License Agreement",
-            "LicenseRef-scancode-losla"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "losla",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LOSLA",
+      "LEGO Open Source License Agreement",
+      "LicenseRef-scancode-losla"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,15 +1,15 @@
 {
-    "canonical": "Wsuipa",
-    "aliases": {
-        "spdx": [
-            "Wsuipa License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "wsuipa"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Wsuipa",
+  "aliases": {
+    "spdx": [
+      "Wsuipa License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "wsuipa"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,12 +1,12 @@
 {
-    "canonical": "libcap",
-    "aliases": {
-        "scancode-licensedb": [
-            "libcap License"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "libcap",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "libcap License"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

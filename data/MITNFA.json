@@ -1,17 +1,17 @@
 {
-    "canonical": "MITNFA",
-    "aliases": {
-        "spdx": [
-            "MIT +no-false-attribs license"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "mit-no-false-attribs",
-            "MIT with no false attribution License",
-            "MIT no false attribution License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "MITNFA",
+  "aliases": {
+    "spdx": [
+      "MIT +no-false-attribs license"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "mit-no-false-attribs",
+      "MIT with no false attribution License",
+      "MIT no false attribution License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

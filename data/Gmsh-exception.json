@@ -1,16 +1,16 @@
 {
-    "canonical": "Gmsh-exception",
-    "aliases": {
-        "spdx": [
-            "Gmsh exception>"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Gmsh exception",
-            "gmsh-exception"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Gmsh-exception",
+  "aliases": {
+    "spdx": [
+      "Gmsh exception>"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "Gmsh exception",
+      "gmsh-exception"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "ralink-firmware",
-    "aliases": {
-        "scancode-licensedb": [
-            "Ralink Firmware License",
-            "LicenseRef-scancode-ralink-firmware"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ralink-firmware",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Ralink Firmware License",
+      "LicenseRef-scancode-ralink-firmware"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "semgrep-registry",
-    "aliases": {
-        "scancode-licensedb": [
-            "Semgrep Registry License",
-            "LicenseRef-scancode-semgrep-registry"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "semgrep-registry",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Semgrep Registry License",
+      "LicenseRef-scancode-semgrep-registry"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

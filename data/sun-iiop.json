@@ -1,13 +1,13 @@
 {
-    "canonical": "sun-iiop",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun IIOP License",
-            "LicenseRef-scancode-sun-iiop"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sun-iiop",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sun IIOP License",
+      "LicenseRef-scancode-sun-iiop"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

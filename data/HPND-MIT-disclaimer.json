@@ -1,16 +1,16 @@
 {
-    "canonical": "HPND-MIT-disclaimer",
-    "aliases": {
-        "spdx": [
-            "Historical Permission Notice and Disclaimer with MIT disclaimer"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "hpnd-mit-disclaimer",
-            "Historical with MIT disclaimer"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "HPND-MIT-disclaimer",
+  "aliases": {
+    "spdx": [
+      "Historical Permission Notice and Disclaimer with MIT disclaimer"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "hpnd-mit-disclaimer",
+      "Historical with MIT disclaimer"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

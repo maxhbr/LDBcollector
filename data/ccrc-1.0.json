@@ -1,12 +1,12 @@
 {
-    "canonical": "ccrc-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Common Cure Rights Commitment v1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ccrc-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Common Cure Rights Commitment v1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

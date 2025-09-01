@@ -1,17 +1,17 @@
 {
-    "canonical": "lsof",
-    "aliases": {
-        "spdx": [
-            "lsof License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "purdue-bsd",
-            "Purdue BSD-Style License",
-            "LicenseRef-scancode-purdue-bsd"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "lsof",
+  "aliases": {
+    "spdx": [
+      "lsof License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "purdue-bsd",
+      "Purdue BSD-Style License",
+      "LicenseRef-scancode-purdue-bsd"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

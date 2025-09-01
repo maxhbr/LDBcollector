@@ -1,14 +1,14 @@
 {
-    "canonical": "generic-tos",
-    "aliases": {
-        "scancode-licensedb": [
-            "Generic Terms of Service",
-            "Generic ToS",
-            "LicenseRef-scancode-generic-tos"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "generic-tos",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Generic Terms of Service",
+      "Generic ToS",
+      "LicenseRef-scancode-generic-tos"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

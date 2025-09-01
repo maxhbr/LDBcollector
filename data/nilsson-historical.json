@@ -1,13 +1,13 @@
 {
-    "canonical": "nilsson-historical",
-    "aliases": {
-        "scancode-licensedb": [
-            "Nilsson Historical License",
-            "LicenseRef-scancode-nilsson-historical"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "nilsson-historical",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Nilsson Historical License",
+      "LicenseRef-scancode-nilsson-historical"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

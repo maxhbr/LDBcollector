@@ -1,13 +1,13 @@
 {
-    "canonical": "sglib",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sglib License",
-            "LicenseRef-scancode-sglib"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sglib",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sglib License",
+      "LicenseRef-scancode-sglib"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

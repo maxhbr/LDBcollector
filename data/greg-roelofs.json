@@ -1,13 +1,13 @@
 {
-    "canonical": "greg-roelofs",
-    "aliases": {
-        "scancode-licensedb": [
-            "Greg Roelofs License",
-            "LicenseRef-scancode-greg-roelofs"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "greg-roelofs",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Greg Roelofs License",
+      "LicenseRef-scancode-greg-roelofs"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

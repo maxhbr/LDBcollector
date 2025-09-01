@@ -1,13 +1,13 @@
 {
-    "canonical": "mit-specification-disclaimer",
-    "aliases": {
-        "scancode-licensedb": [
-            "MIT with Specification Disclaimer",
-            "LicenseRef-scancode-mit-specification-disclaimer"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "mit-specification-disclaimer",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MIT with Specification Disclaimer",
+      "LicenseRef-scancode-mit-specification-disclaimer"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

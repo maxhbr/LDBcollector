@@ -1,17 +1,17 @@
 {
-    "canonical": "AML-glslang",
-    "aliases": {
-        "spdx": [
-            "AML glslang variant License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "nvidia-2002",
-            "LicenseRef-scancode-nvidia-2002",
-            "NVIDIA 2002 License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "AML-glslang",
+  "aliases": {
+    "spdx": [
+      "AML glslang variant License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "nvidia-2002",
+      "LicenseRef-scancode-nvidia-2002",
+      "NVIDIA 2002 License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

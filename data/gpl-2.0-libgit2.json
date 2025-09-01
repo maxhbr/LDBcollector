@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-libgit2",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with libgit2 exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-libgit2",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with libgit2 exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

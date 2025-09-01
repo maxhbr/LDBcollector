@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-edge-devtools-2022",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Edge Developer Tools 2022",
-            "Microsoft Edge Developer Tools 2022",
-            "LicenseRef-scancode-ms-edge-devtools-2022"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-edge-devtools-2022",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS Edge Developer Tools 2022",
+      "Microsoft Edge Developer Tools 2022",
+      "LicenseRef-scancode-ms-edge-devtools-2022"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

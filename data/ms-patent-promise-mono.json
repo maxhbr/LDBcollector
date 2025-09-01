@@ -1,13 +1,13 @@
 {
-    "canonical": "ms-patent-promise-mono",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Patent Promise for Mono",
-            "LicenseRef-scancode-ms-patent-promise-mono"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-patent-promise-mono",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Patent Promise for Mono",
+      "LicenseRef-scancode-ms-patent-promise-mono"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

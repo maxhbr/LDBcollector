@@ -1,15 +1,15 @@
 {
-    "canonical": "OLFL-1.3",
-    "aliases": {
-        "spdx": [
-            "Open Logistics Foundation License Version 1.3"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "olfl-1.3"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "OLFL-1.3",
+  "aliases": {
+    "spdx": [
+      "Open Logistics Foundation License Version 1.3"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "olfl-1.3"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

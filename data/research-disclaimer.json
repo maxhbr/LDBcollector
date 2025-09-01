@@ -1,13 +1,13 @@
 {
-    "canonical": "research-disclaimer",
-    "aliases": {
-        "scancode-licensedb": [
-            "Research Software Disclaimer",
-            "LicenseRef-scancode-research-disclaimer"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "research-disclaimer",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Research Software Disclaimer",
+      "LicenseRef-scancode-research-disclaimer"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

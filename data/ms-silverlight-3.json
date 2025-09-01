@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-silverlight-3",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Silverlight 3 License",
-            "MS Silverlight 3 License",
-            "LicenseRef-scancode-ms-silverlight-3"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-silverlight-3",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Silverlight 3 License",
+      "MS Silverlight 3 License",
+      "LicenseRef-scancode-ms-silverlight-3"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

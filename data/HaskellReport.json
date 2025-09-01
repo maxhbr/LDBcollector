@@ -1,16 +1,16 @@
 {
-    "canonical": "HaskellReport",
-    "aliases": {
-        "spdx": [
-            "Haskell Language Report License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "haskell-report",
-            "Haskell Report License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "HaskellReport",
+  "aliases": {
+    "spdx": [
+      "Haskell Language Report License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "haskell-report",
+      "Haskell Report License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

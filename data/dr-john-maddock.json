@@ -1,12 +1,12 @@
 {
-    "canonical": "dr-john-maddock",
-    "aliases": {
-        "scancode-licensedb": [
-            "Dr John Maddock License"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "dr-john-maddock",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Dr John Maddock License"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

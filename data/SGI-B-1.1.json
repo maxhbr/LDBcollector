@@ -1,16 +1,16 @@
 {
-    "canonical": "SGI-B-1.1",
-    "aliases": {
-        "spdx": [
-            "SGI Free Software License B v1.1"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "sgi-freeb-1.1",
-            "SGI Free Software License B 1.1"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "SGI-B-1.1",
+  "aliases": {
+    "spdx": [
+      "SGI Free Software License B v1.1"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "sgi-freeb-1.1",
+      "SGI Free Software License B 1.1"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "larabie",
-    "aliases": {
-        "scancode-licensedb": [
-            "Larabie Fonts EULA",
-            "LicenseRef-scancode-larabie"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "larabie",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Larabie Fonts EULA",
+      "LicenseRef-scancode-larabie"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

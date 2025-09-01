@@ -1,13 +1,13 @@
 {
-    "canonical": "cgic",
-    "aliases": {
-        "scancode-licensedb": [
-            "CGIC License",
-            "LicenseRef-scancode-cgic"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "cgic",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "CGIC License",
+      "LicenseRef-scancode-cgic"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

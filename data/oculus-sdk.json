@@ -1,13 +1,13 @@
 {
-    "canonical": "oculus-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oculus SDK License Agreement",
-            "LicenseRef-scancode-oculus-sdk"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oculus-sdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Oculus SDK License Agreement",
+      "LicenseRef-scancode-oculus-sdk"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

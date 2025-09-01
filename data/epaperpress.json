@@ -1,13 +1,13 @@
 {
-    "canonical": "epaperpress",
-    "aliases": {
-        "scancode-licensedb": [
-            "ePaperPress License",
-            "LicenseRef-scancode-epaperpress"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "epaperpress",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ePaperPress License",
+      "LicenseRef-scancode-epaperpress"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

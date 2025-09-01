@@ -1,12 +1,12 @@
 {
-    "canonical": "proprietary",
-    "aliases": {
-        "scancode-licensedb": [
-            "Proprietary"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "proprietary",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Proprietary"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

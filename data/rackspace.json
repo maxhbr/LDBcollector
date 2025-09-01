@@ -1,13 +1,13 @@
 {
-    "canonical": "rackspace",
-    "aliases": {
-        "scancode-licensedb": [
-            "Rackspace License",
-            "LicenseRef-scancode-rackspace"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "rackspace",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Rackspace License",
+      "LicenseRef-scancode-rackspace"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

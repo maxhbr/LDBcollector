@@ -1,12 +1,12 @@
 {
-    "canonical": "digia-qt-exception-lgpl-2.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Digia Qt Exception to LGPL 2.1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "digia-qt-exception-lgpl-2.1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Digia Qt Exception to LGPL 2.1"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

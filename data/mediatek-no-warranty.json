@@ -1,13 +1,13 @@
 {
-    "canonical": "mediatek-no-warranty",
-    "aliases": {
-        "scancode-licensedb": [
-            "MediaTek No Warranty Clause",
-            "LicenseRef-scancode-mediatek-no-warranty"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "mediatek-no-warranty",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MediaTek No Warranty Clause",
+      "LicenseRef-scancode-mediatek-no-warranty"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

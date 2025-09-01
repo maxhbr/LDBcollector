@@ -1,15 +1,15 @@
 {
-    "canonical": "epo-osl-2005.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-epo-osl-2005.1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": [
-        "EPO Open Source Licence No. 2005/1",
-        "EPO-OSL"
+  "canonical": "epo-osl-2005.1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-epo-osl-2005.1"
     ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": [
+    "EPO Open Source Licence No. 2005/1",
+    "EPO-OSL"
+  ]
 }

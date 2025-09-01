@@ -1,13 +1,13 @@
 {
-    "canonical": "codexia",
-    "aliases": {
-        "scancode-licensedb": [
-            "Codexia License",
-            "LicenseRef-scancode-codexia"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "codexia",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Codexia License",
+      "LicenseRef-scancode-codexia"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

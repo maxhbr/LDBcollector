@@ -1,14 +1,14 @@
 {
-    "canonical": "bsla-no-advert",
-    "aliases": {
-        "scancode-licensedb": [
-            "Berkeley Software License Agreement with no advertizing",
-            "BSLA no advertizing",
-            "LicenseRef-scancode-bsla-no-advert"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bsla-no-advert",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Berkeley Software License Agreement with no advertizing",
+      "BSLA no advertizing",
+      "LicenseRef-scancode-bsla-no-advert"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

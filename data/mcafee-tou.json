@@ -1,14 +1,14 @@
 {
-    "canonical": "mcafee-tou",
-    "aliases": {
-        "scancode-licensedb": [
-            "McAfee Software royalty-Free License",
-            "McAfee Free License",
-            "LicenseRef-scancode-mcafee-tou"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "mcafee-tou",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "McAfee Software royalty-Free License",
+      "McAfee Free License",
+      "LicenseRef-scancode-mcafee-tou"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

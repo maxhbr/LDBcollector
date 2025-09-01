@@ -1,12 +1,12 @@
 {
-    "canonical": "bsd-original-uc-1990",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD-Original-UC-1990"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bsd-original-uc-1990",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BSD-Original-UC-1990"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

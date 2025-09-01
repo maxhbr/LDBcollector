@@ -1,13 +1,13 @@
 {
-    "canonical": "asn1",
-    "aliases": {
-        "scancode-licensedb": [
-            "ASN.1 Object Dumping Code License",
-            "LicenseRef-scancode-asn1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "asn1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ASN.1 Object Dumping Code License",
+      "LicenseRef-scancode-asn1"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

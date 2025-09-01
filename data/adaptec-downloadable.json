@@ -1,13 +1,13 @@
 {
-    "canonical": "adaptec-downloadable",
-    "aliases": {
-        "scancode-licensedb": [
-            "Adaptec Downloadable Software License",
-            "LicenseRef-scancode-adaptec-downloadable"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "adaptec-downloadable",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Adaptec Downloadable Software License",
+      "LicenseRef-scancode-adaptec-downloadable"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

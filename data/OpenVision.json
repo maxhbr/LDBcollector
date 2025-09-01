@@ -1,15 +1,15 @@
 {
-    "canonical": "OpenVision",
-    "aliases": {
-        "spdx": [
-            "OpenVision License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "openvision"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "OpenVision",
+  "aliases": {
+    "spdx": [
+      "OpenVision License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "openvision"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

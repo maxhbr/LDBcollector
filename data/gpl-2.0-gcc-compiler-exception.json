@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-gcc-compiler-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with GCC compiler exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-gcc-compiler-exception",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with GCC compiler exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

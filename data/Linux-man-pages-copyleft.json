@@ -1,19 +1,19 @@
 {
-    "canonical": "Linux-man-pages-copyleft",
-    "aliases": {
-        "spdx": [
-            "Linux man-pages Copyleft"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "verbatim-manual",
-            "Verbatim Copies",
-            "Verbatim Copies Permission",
-            "Verbatim-man-pages",
-            "LicenseRef-scancode-verbatim-manual"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Linux-man-pages-copyleft",
+  "aliases": {
+    "spdx": [
+      "Linux man-pages Copyleft"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "verbatim-manual",
+      "Verbatim Copies",
+      "Verbatim Copies Permission",
+      "Verbatim-man-pages",
+      "LicenseRef-scancode-verbatim-manual"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

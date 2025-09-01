@@ -1,13 +1,13 @@
 {
-    "canonical": "bigdigits",
-    "aliases": {
-        "scancode-licensedb": [
-            "BigDigits License",
-            "LicenseRef-scancode-bigdigits"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bigdigits",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BigDigits License",
+      "LicenseRef-scancode-bigdigits"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

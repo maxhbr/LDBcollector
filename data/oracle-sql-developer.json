@@ -1,13 +1,13 @@
 {
-    "canonical": "oracle-sql-developer",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle SQL Developer License Terms",
-            "LicenseRef-scancode-oracle-sql-developer"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oracle-sql-developer",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Oracle SQL Developer License Terms",
+      "LicenseRef-scancode-oracle-sql-developer"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

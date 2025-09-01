@@ -1,13 +1,13 @@
 {
-    "canonical": "intel-code-samples",
-    "aliases": {
-        "scancode-licensedb": [
-            "Intel Code Samples License",
-            "LicenseRef-scancode-intel-code-samples"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "intel-code-samples",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Intel Code Samples License",
+      "LicenseRef-scancode-intel-code-samples"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

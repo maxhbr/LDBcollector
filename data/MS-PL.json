@@ -1,23 +1,23 @@
 {
-    "canonical": "MS-PL",
-    "aliases": {
-        "spdx": [
-            "Microsoft Public License"
-        ],
-        "custom": [
-            "MS Public License",
-            "MS-PL License",
-            "Microsoft License",
-            "MSPL",
-            "MSPL License",
-            "Microsoft Public License (MS-PL)"
-        ],
-        "scancode-licensedb": [
-            "ms-pl",
-            "MS-PL"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "MS-PL",
+  "aliases": {
+    "spdx": [
+      "Microsoft Public License"
+    ],
+    "custom": [
+      "MS Public License",
+      "MS-PL License",
+      "Microsoft License",
+      "MSPL",
+      "MSPL License",
+      "Microsoft Public License (MS-PL)"
+    ],
+    "scancodeLicensedb": [
+      "ms-pl",
+      "MS-PL"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

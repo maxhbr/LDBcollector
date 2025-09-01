@@ -1,13 +1,13 @@
 {
-    "canonical": "sun-bcl-web-start",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun BCL Web Start",
-            "LicenseRef-scancode-sun-bcl-web-start"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sun-bcl-web-start",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sun BCL Web Start",
+      "LicenseRef-scancode-sun-bcl-web-start"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

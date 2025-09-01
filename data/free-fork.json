@@ -1,14 +1,14 @@
 {
-    "canonical": "free-fork",
-    "aliases": {
-        "scancode-licensedb": [
-            "Free-Fork License",
-            "University of Washington Free-Fork License",
-            "LicenseRef-scancode-free-fork"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "free-fork",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Free-Fork License",
+      "University of Washington Free-Fork License",
+      "LicenseRef-scancode-free-fork"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

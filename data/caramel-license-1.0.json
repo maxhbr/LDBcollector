@@ -1,14 +1,14 @@
 {
-    "canonical": "caramel-license-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-caramel-1.0",
-            "Caramel License 1.0",
-            "Caramel Software License 1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "caramel-license-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-caramel-1.0",
+      "Caramel License 1.0",
+      "Caramel Software License 1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

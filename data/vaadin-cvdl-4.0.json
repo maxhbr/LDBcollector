@@ -1,13 +1,13 @@
 {
-    "canonical": "vaadin-cvdl-4.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Commercial Vaadin Developer License 4.0",
-            "LicenseRef-scancode-vaadin-cvdl-4.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "vaadin-cvdl-4.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Commercial Vaadin Developer License 4.0",
+      "LicenseRef-scancode-vaadin-cvdl-4.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "robert-hubley",
-    "aliases": {
-        "scancode-licensedb": [
-            "Robert Hubley License",
-            "LicenseRef-scancode-robert-hubley"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "robert-hubley",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Robert Hubley License",
+      "LicenseRef-scancode-robert-hubley"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

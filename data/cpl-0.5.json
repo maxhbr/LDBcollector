@@ -1,14 +1,14 @@
 {
-    "canonical": "cpl-0.5",
-    "aliases": {
-        "scancode-licensedb": [
-            "CPL 0.5",
-            "Common Public License 0.5",
-            "LicenseRef-scancode-cpl-0.5"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "cpl-0.5",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "CPL 0.5",
+      "Common Public License 0.5",
+      "LicenseRef-scancode-cpl-0.5"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

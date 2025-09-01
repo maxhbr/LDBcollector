@@ -1,16 +1,16 @@
 {
-    "canonical": "Borceux",
-    "aliases": {
-        "spdx": [
-            "Borceux license"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "borceux",
-            "Borceux License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Borceux",
+  "aliases": {
+    "spdx": [
+      "Borceux license"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "borceux",
+      "Borceux License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

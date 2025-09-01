@@ -1,13 +1,13 @@
 {
-    "canonical": "bsd-2-clause-plus-advertizing",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD-2-Clause-plus-advertizing",
-            "LicenseRef-scancode-bsd-2-clause-plus-advertizing"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bsd-2-clause-plus-advertizing",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BSD-2-Clause-plus-advertizing",
+      "LicenseRef-scancode-bsd-2-clause-plus-advertizing"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

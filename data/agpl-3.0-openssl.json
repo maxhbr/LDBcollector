@@ -1,12 +1,12 @@
 {
-    "canonical": "agpl-3.0-openssl",
-    "aliases": {
-        "scancode-licensedb": [
-            "AGPL 3.0 with OpenSSL exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "agpl-3.0-openssl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "AGPL 3.0 with OpenSSL exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

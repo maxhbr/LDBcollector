@@ -1,14 +1,14 @@
 {
-    "canonical": "google-maps-tos-2018-10-31",
-    "aliases": {
-        "scancode-licensedb": [
-            "Google Maps Platform ToS 2018-10-31",
-            "Google Maps Platform Terms of Service 2018-10-31",
-            "LicenseRef-scancode-google-maps-tos-2018-10-31"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "google-maps-tos-2018-10-31",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Google Maps Platform ToS 2018-10-31",
+      "Google Maps Platform Terms of Service 2018-10-31",
+      "LicenseRef-scancode-google-maps-tos-2018-10-31"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

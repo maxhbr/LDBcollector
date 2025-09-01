@@ -1,13 +1,13 @@
 {
-    "canonical": "amd-linux-firmware-export",
-    "aliases": {
-        "scancode-licensedb": [
-            "AMD Linux Firmware Export License",
-            "LicenseRef-scancode-amd-linux-firmware-export"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "amd-linux-firmware-export",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "AMD Linux Firmware Export License",
+      "LicenseRef-scancode-amd-linux-firmware-export"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

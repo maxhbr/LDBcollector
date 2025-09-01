@@ -1,13 +1,13 @@
 {
-    "canonical": "scribbles",
-    "aliases": {
-        "scancode-licensedb": [
-            "Scribbles Demos Recognizer Notice",
-            "LicenseRef-scancode-scribbles"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "scribbles",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Scribbles Demos Recognizer Notice",
+      "LicenseRef-scancode-scribbles"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

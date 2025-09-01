@@ -1,16 +1,16 @@
 {
-    "canonical": "CC-BY-NC-ND-3.0-DE",
-    "aliases": {
-        "spdx": [
-            "Creative Commons Attribution Non Commercial No Derivatives 3.0 Germany"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "CC-BY-NC-ND-3.0-DE",
-            "cc-by-nc-nd-3.0-de"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "CC-BY-NC-ND-3.0-DE",
+  "aliases": {
+    "spdx": [
+      "Creative Commons Attribution Non Commercial No Derivatives 3.0 Germany"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "CC-BY-NC-ND-3.0-DE",
+      "cc-by-nc-nd-3.0-de"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

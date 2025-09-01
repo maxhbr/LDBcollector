@@ -1,13 +1,13 @@
 {
-    "canonical": "paul-hsieh-exposition",
-    "aliases": {
-        "scancode-licensedb": [
-            "Paul Hsieh Exposition License",
-            "LicenseRef-scancode-paul-hsieh-exposition"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "paul-hsieh-exposition",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Paul Hsieh Exposition License",
+      "LicenseRef-scancode-paul-hsieh-exposition"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

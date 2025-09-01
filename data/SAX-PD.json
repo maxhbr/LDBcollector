@@ -1,17 +1,17 @@
 {
-    "canonical": "SAX-PD",
-    "aliases": {
-        "spdx": [
-            "Sax Public Domain Notice"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "sax-pd",
-            "SAX Public Domain Notice",
-            "SAX-PD"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "SAX-PD",
+  "aliases": {
+    "spdx": [
+      "Sax Public Domain Notice"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "sax-pd",
+      "SAX Public Domain Notice",
+      "SAX-PD"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

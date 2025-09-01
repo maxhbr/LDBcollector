@@ -1,13 +1,13 @@
 {
-    "canonical": "avisynth-c-interface-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "Avisynth C Interface Exception",
-            "LicenseRef-scancode-avisynth-c-exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "avisynth-c-interface-exception",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Avisynth C Interface Exception",
+      "LicenseRef-scancode-avisynth-c-exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "nxp-mc-firmware",
-    "aliases": {
-        "scancode-licensedb": [
-            "NXP MC Firmware License",
-            "LicenseRef-scancode-nxp-mc-firmware"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "nxp-mc-firmware",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "NXP MC Firmware License",
+      "LicenseRef-scancode-nxp-mc-firmware"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

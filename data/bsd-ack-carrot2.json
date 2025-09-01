@@ -1,13 +1,13 @@
 {
-    "canonical": "bsd-ack-carrot2",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD Acknowledgment (Carrot2) License",
-            "LicenseRef-scancode-bsd-ack-carrot2"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bsd-ack-carrot2",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BSD Acknowledgment (Carrot2) License",
+      "LicenseRef-scancode-bsd-ack-carrot2"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

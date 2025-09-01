@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-opus-patent-2012",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Opus Patent Terms 2012",
-            "MS Opus Patent Terms 2012",
-            "LicenseRef-scancode-ms-opus-patent-2012"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-opus-patent-2012",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Opus Patent Terms 2012",
+      "MS Opus Patent Terms 2012",
+      "LicenseRef-scancode-ms-opus-patent-2012"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

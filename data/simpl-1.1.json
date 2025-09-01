@@ -1,14 +1,14 @@
 {
-    "canonical": "simpl-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Simple Public License Version 1.1",
-            "SimPL 1.1",
-            "LicenseRef-scancode-simpl-1.1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "simpl-1.1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Simple Public License Version 1.1",
+      "SimPL 1.1",
+      "LicenseRef-scancode-simpl-1.1"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

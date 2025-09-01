@@ -1,13 +1,13 @@
 {
-    "canonical": "planet-source-code",
-    "aliases": {
-        "scancode-licensedb": [
-            "Planet Source Code License",
-            "LicenseRef-scancode-planet-source-code"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "planet-source-code",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Planet Source Code License",
+      "LicenseRef-scancode-planet-source-code"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

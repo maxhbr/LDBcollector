@@ -1,15 +1,15 @@
 {
-    "canonical": "Noweb",
-    "aliases": {
-        "spdx": [
-            "Noweb License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "noweb"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Noweb",
+  "aliases": {
+    "spdx": [
+      "Noweb License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "noweb"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

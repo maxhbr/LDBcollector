@@ -1,14 +1,14 @@
 {
-    "canonical": "gradle-enterprise-sla-2022-11-08",
-    "aliases": {
-        "scancode-licensedb": [
-            "Gradle Enterprise SLA 2022-",
-            "Gradle Enterprise Software License Agreement 2022-11-08",
-            "LicenseRef-scancode-gradle-enterprise-sla-2022-11-"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gradle-enterprise-sla-2022-11-08",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Gradle Enterprise SLA 2022-",
+      "Gradle Enterprise Software License Agreement 2022-11-08",
+      "LicenseRef-scancode-gradle-enterprise-sla-2022-11-"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

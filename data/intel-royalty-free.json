@@ -1,13 +1,13 @@
 {
-    "canonical": "intel-royalty-free",
-    "aliases": {
-        "scancode-licensedb": [
-            "Intel Royalty Free License",
-            "LicenseRef-scancode-intel-royalty-free"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "intel-royalty-free",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Intel Royalty Free License",
+      "LicenseRef-scancode-intel-royalty-free"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

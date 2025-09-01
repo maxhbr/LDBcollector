@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-asp-net-software",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft ASP.NET Software License",
-            "MS ASP.NET Software License",
-            "LicenseRef-scancode-ms-asp-net-software"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-asp-net-software",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft ASP.NET Software License",
+      "MS ASP.NET Software License",
+      "LicenseRef-scancode-ms-asp-net-software"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

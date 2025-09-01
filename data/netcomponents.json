@@ -1,13 +1,13 @@
 {
-    "canonical": "netcomponents",
-    "aliases": {
-        "scancode-licensedb": [
-            "NetComponents License",
-            "LicenseRef-scancode-netcomponents"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "netcomponents",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "NetComponents License",
+      "LicenseRef-scancode-netcomponents"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "monkeysaudio",
-    "aliases": {
-        "scancode-licensedb": [
-            "Monkeys Audio License Agreement",
-            "LicenseRef-scancode-monkeysaudio"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "monkeysaudio",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Monkeys Audio License Agreement",
+      "LicenseRef-scancode-monkeysaudio"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

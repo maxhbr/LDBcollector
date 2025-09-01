@@ -1,14 +1,14 @@
 {
-    "canonical": "softfloat",
-    "aliases": {
-        "scancode-licensedb": [
-            "SoftFloat Legal Notice",
-            "SoftFloat",
-            "LicenseRef-scancode-softfloat"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "softfloat",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "SoftFloat Legal Notice",
+      "SoftFloat",
+      "LicenseRef-scancode-softfloat"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

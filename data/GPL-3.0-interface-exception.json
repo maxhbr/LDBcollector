@@ -1,15 +1,15 @@
 {
-    "canonical": "GPL-3.0-interface-exception",
-    "aliases": {
-        "spdx": [
-            "GPL-3.0 Interface Exception"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "gpl-3.0-interface-exception"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "GPL-3.0-interface-exception",
+  "aliases": {
+    "spdx": [
+      "GPL-3.0 Interface Exception"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "gpl-3.0-interface-exception"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

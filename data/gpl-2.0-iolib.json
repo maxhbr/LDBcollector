@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-iolib",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with GNU IO Library exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-iolib",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with GNU IO Library exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

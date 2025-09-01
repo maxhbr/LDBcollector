@@ -1,14 +1,14 @@
 {
-    "canonical": "authorizenet-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "AuthorizeNet SDK License",
-            "AuthorizeNet Software Development Kit (SDK) License Agreement",
-            "LicenseRef-scancode-authorizenet-sdk"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "authorizenet-sdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "AuthorizeNet SDK License",
+      "AuthorizeNet Software Development Kit (SDK) License Agreement",
+      "LicenseRef-scancode-authorizenet-sdk"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

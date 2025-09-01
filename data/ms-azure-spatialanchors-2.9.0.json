@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-azure-spatialanchors-2.9.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Azure Spatial Anchors WinRT 2.9.0",
-            "Microsoft Azure Spatial Anchors WinRT 2.9.0",
-            "LicenseRef-scancode-ms-azure-spatialanchors-2.9.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-azure-spatialanchors-2.9.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS Azure Spatial Anchors WinRT 2.9.0",
+      "Microsoft Azure Spatial Anchors WinRT 2.9.0",
+      "LicenseRef-scancode-ms-azure-spatialanchors-2.9.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

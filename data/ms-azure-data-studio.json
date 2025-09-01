@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-azure-data-studio",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Azure Data Studio License Terms",
-            "MS Azure Data Studio License",
-            "LicenseRef-scancode-ms-azure-data-studio"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-azure-data-studio",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Azure Data Studio License Terms",
+      "MS Azure Data Studio License",
+      "LicenseRef-scancode-ms-azure-data-studio"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,19 +1,19 @@
 {
-    "canonical": "RPSL-1.0",
-    "aliases": {
-        "spdx": [
-            "RealNetworks Public Source License v1.0"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "RealNetworks Public Source License 1.0",
-            "rpsl-1.0"
-        ],
-        "osi": [
-            "RealNetworks Public Source License, Version 1.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "RPSL-1.0",
+  "aliases": {
+    "spdx": [
+      "RealNetworks Public Source License v1.0"
+    ],
+    "custom": [],
+    "osi": [
+      "RealNetworks Public Source License, Version 1.0"
+    ],
+    "scancodeLicensedb": [
+      "RealNetworks Public Source License 1.0",
+      "rpsl-1.0"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,15 +1,15 @@
 {
-    "canonical": "ms-net-framework-4-supplemental-terms",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-ms-net-framework-4-supplemental-terms",
-            "MS Supplemental License - .NET Framework 4",
-            "Microsoft Software Supplemental License - .NET Framework 4",
-            "LicenseRef-scancode-ms-net-framework-4-supp-terms"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-net-framework-4-supplemental-terms",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-ms-net-framework-4-supplemental-terms",
+      "MS Supplemental License - .NET Framework 4",
+      "Microsoft Software Supplemental License - .NET Framework 4",
+      "LicenseRef-scancode-ms-net-framework-4-supp-terms"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

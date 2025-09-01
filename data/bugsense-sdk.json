@@ -1,13 +1,13 @@
 {
-    "canonical": "bugsense-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "BugSense SDK License",
-            "LicenseRef-scancode-bugsense-sdk"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bugsense-sdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BugSense SDK License",
+      "LicenseRef-scancode-bugsense-sdk"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

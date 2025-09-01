@@ -1,13 +1,13 @@
 {
-    "canonical": "qt-company-exception-lgpl-2.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Qt Company Exception to LGPL 2.1",
-            "LicenseRef-scancode-qt-company-exception-lgpl-2.1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "qt-company-exception-lgpl-2.1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Qt Company Exception to LGPL 2.1",
+      "LicenseRef-scancode-qt-company-exception-lgpl-2.1"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

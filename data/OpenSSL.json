@@ -1,16 +1,16 @@
 {
-    "canonical": "OpenSSL",
-    "aliases": {
-        "spdx": [
-            "OpenSSL License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "openssl-ssleay",
-            "OpenSSL/SSLeay License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "OpenSSL",
+  "aliases": {
+    "spdx": [
+      "OpenSSL License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "openssl-ssleay",
+      "OpenSSL/SSLeay License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

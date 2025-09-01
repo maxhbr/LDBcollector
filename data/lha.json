@@ -1,14 +1,14 @@
 {
-    "canonical": "lha",
-    "aliases": {
-        "scancode-licensedb": [
-            "LHA",
-            "lha",
-            "LicenseRef-scancode-lha"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "lha",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LHA",
+      "lha",
+      "LicenseRef-scancode-lha"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

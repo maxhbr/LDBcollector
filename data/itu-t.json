@@ -1,13 +1,13 @@
 {
-    "canonical": "itu-t",
-    "aliases": {
-        "scancode-licensedb": [
-            "ITU-T License",
-            "LicenseRef-scancode-itu-t"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "itu-t",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ITU-T License",
+      "LicenseRef-scancode-itu-t"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

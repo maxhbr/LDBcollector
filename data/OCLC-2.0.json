@@ -1,18 +1,18 @@
 {
-    "canonical": "OCLC-2.0",
-    "aliases": {
-        "spdx": [
-            "OCLC Research Public License 2.0"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "oclc-2.0"
-        ],
-        "osi": [
-            "The OCLC Research Public License, Version 2.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "OCLC-2.0",
+  "aliases": {
+    "spdx": [
+      "OCLC Research Public License 2.0"
+    ],
+    "custom": [],
+    "osi": [
+      "The OCLC Research Public License, Version 2.0"
+    ],
+    "scancodeLicensedb": [
+      "oclc-2.0"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

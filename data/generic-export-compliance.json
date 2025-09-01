@@ -1,13 +1,13 @@
 {
-    "canonical": "generic-export-compliance",
-    "aliases": {
-        "scancode-licensedb": [
-            "Generic Export Compliance Notice",
-            "LicenseRef-scancode-generic-export-compliance"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "generic-export-compliance",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Generic Export Compliance Notice",
+      "LicenseRef-scancode-generic-export-compliance"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

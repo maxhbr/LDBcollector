@@ -1,12 +1,12 @@
 {
-    "canonical": "unbuntu-font-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Obsolete Font License 1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "unbuntu-font-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Obsolete Font License 1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

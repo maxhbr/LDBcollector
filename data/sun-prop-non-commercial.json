@@ -1,13 +1,13 @@
 {
-    "canonical": "sun-prop-non-commercial",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun Proprietary Non-Commercial License",
-            "LicenseRef-scancode-sun-prop-non-commercial"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sun-prop-non-commercial",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sun Proprietary Non-Commercial License",
+      "LicenseRef-scancode-sun-prop-non-commercial"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

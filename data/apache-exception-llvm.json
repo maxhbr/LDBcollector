@@ -1,13 +1,13 @@
 {
-    "canonical": "apache-exception-llvm",
-    "aliases": {
-        "scancode-licensedb": [
-            "Apache Exception LLVM",
-            "Apache-Exception-llvm"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "apache-exception-llvm",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Apache Exception LLVM",
+      "Apache-Exception-llvm"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

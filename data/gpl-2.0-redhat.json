@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-redhat",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with Fedora Red Hat Exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-redhat",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with Fedora Red Hat Exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

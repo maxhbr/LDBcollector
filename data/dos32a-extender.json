@@ -1,14 +1,14 @@
 {
-    "canonical": "dos32a-extender",
-    "aliases": {
-        "scancode-licensedb": [
-            "DOS32 Advanced DOS Extender Software License",
-            "DOS32A Extender License",
-            "LicenseRef-scancode-dos32a-extender"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "dos32a-extender",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "DOS32 Advanced DOS Extender Software License",
+      "DOS32A Extender License",
+      "LicenseRef-scancode-dos32a-extender"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

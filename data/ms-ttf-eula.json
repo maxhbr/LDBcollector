@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-ttf-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS TrueType Fonts EULA",
-            "Microsoft TrueType Fonts EULA",
-            "LicenseRef-scancode-ms-ttf-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-ttf-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS TrueType Fonts EULA",
+      "Microsoft TrueType Fonts EULA",
+      "LicenseRef-scancode-ms-ttf-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

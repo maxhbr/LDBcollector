@@ -1,13 +1,13 @@
 {
-    "canonical": "stu-nicholls",
-    "aliases": {
-        "scancode-licensedb": [
-            "Stu Nicholls License",
-            "LicenseRef-scancode-stu-nicholls"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "stu-nicholls",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Stu Nicholls License",
+      "LicenseRef-scancode-stu-nicholls"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

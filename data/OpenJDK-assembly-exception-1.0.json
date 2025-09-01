@@ -1,17 +1,17 @@
 {
-    "canonical": "OpenJDK-assembly-exception-1.0",
-    "aliases": {
-        "spdx": [
-            "OpenJDK Assembly exception 1.0"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "openjdk-assembly-exception-1.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": [
-        "OpenJDK Assembly exception to GPL 2.0"
+  "canonical": "OpenJDK-assembly-exception-1.0",
+  "aliases": {
+    "spdx": [
+      "OpenJDK Assembly exception 1.0"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "openjdk-assembly-exception-1.0"
     ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": [
+    "OpenJDK Assembly exception to GPL 2.0"
+  ]
 }

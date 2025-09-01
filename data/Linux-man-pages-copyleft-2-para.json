@@ -1,16 +1,16 @@
 {
-    "canonical": "Linux-man-pages-copyleft-2-para",
-    "aliases": {
-        "spdx": [
-            "Linux man-pages Copyleft - 2 paragraphs"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Linux man-pages 2 para",
-            "linux-man-pages-2-para"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Linux-man-pages-copyleft-2-para",
+  "aliases": {
+    "spdx": [
+      "Linux man-pages Copyleft - 2 paragraphs"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "Linux man-pages 2 para",
+      "linux-man-pages-2-para"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

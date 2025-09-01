@@ -1,15 +1,15 @@
 {
-    "canonical": "Newsletr",
-    "aliases": {
-        "spdx": [
-            "Newsletr License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "newsletr"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Newsletr",
+  "aliases": {
+    "spdx": [
+      "Newsletr License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "newsletr"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

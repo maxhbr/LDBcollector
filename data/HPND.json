@@ -1,29 +1,29 @@
 {
-    "canonical": "HPND",
-    "aliases": {
-        "spdx": [
-            "Historical Permission Notice and Disclaimer"
-        ],
-        "custom": [
-            "Historical Permission"
-        ],
-        "scancode-licensedb": [
-            "historical"
-        ],
-        "pypi-classifiers": [
-            "License :: Historical Permission Notice and Disclaimer (HPND)",
-            "OSI Approved :: Historical Permission Notice and Disclaimer (HPND)",
-            "License :: OSI Approved :: Historical Permission Notice and Disclaimer",
-            "License :: Historical Permission Notice and Disclaimer",
-            "OSI Approved :: Historical Permission Notice and Disclaimer",
-            "License :: OSI Approved :: HPND",
-            "License :: HPND",
-            "OSI Approved :: HPND",
-            "License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND)",
-            "Historical Permission Notice and Disclaimer (HPND)"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "HPND",
+  "aliases": {
+    "spdx": [
+      "Historical Permission Notice and Disclaimer"
+    ],
+    "custom": [
+      "Historical Permission"
+    ],
+    "pypiClassifiers": [
+      "License :: Historical Permission Notice and Disclaimer (HPND)",
+      "OSI Approved :: Historical Permission Notice and Disclaimer (HPND)",
+      "License :: OSI Approved :: Historical Permission Notice and Disclaimer",
+      "License :: Historical Permission Notice and Disclaimer",
+      "OSI Approved :: Historical Permission Notice and Disclaimer",
+      "License :: OSI Approved :: HPND",
+      "License :: HPND",
+      "OSI Approved :: HPND",
+      "License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND)",
+      "Historical Permission Notice and Disclaimer (HPND)"
+    ],
+    "scancodeLicensedb": [
+      "historical"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

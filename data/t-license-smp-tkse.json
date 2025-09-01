@@ -1,14 +1,14 @@
 {
-    "canonical": "t-license-smp-tkse",
-    "aliases": {
-        "scancode-licensedb": [
-            "T-License for SMP T-Kernel Standard Extension",
-            "T-License for SMP TKSE",
-            "LicenseRef-scancode-t-license-smp-tkse"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "t-license-smp-tkse",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "T-License for SMP T-Kernel Standard Extension",
+      "T-License for SMP TKSE",
+      "LicenseRef-scancode-t-license-smp-tkse"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

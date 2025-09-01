@@ -1,15 +1,15 @@
 {
-    "canonical": "Dotseqn",
-    "aliases": {
-        "spdx": [
-            "Dotseqn License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "dotseqn"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Dotseqn",
+  "aliases": {
+    "spdx": [
+      "Dotseqn License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "dotseqn"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

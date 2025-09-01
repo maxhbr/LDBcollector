@@ -1,13 +1,13 @@
 {
-    "canonical": "intel-confidential",
-    "aliases": {
-        "scancode-licensedb": [
-            "Intel Confidential",
-            "LicenseRef-scancode-intel-confidential"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "intel-confidential",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Intel Confidential",
+      "LicenseRef-scancode-intel-confidential"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

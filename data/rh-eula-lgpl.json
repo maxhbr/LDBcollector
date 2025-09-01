@@ -1,14 +1,14 @@
 {
-    "canonical": "rh-eula-lgpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "Red Hat LGPL-Based End User License Agreement",
-            "Red Hat LGPL-Based EULA",
-            "LicenseRef-scancode-rh-eula-lgpl"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "rh-eula-lgpl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Red Hat LGPL-Based End User License Agreement",
+      "Red Hat LGPL-Based EULA",
+      "LicenseRef-scancode-rh-eula-lgpl"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "polyform-perimeter-1.0.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "PolyForm Perimeter License 1.0.0",
-            "LicenseRef-scancode-polyform-perimeter-1.0.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "polyform-perimeter-1.0.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "PolyForm Perimeter License 1.0.0",
+      "LicenseRef-scancode-polyform-perimeter-1.0.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

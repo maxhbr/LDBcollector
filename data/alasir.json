@@ -1,14 +1,14 @@
 {
-    "canonical": "alasir",
-    "aliases": {
-        "scancode-licensedb": [
-            "Alasir Licence",
-            "The Alasir Licence",
-            "LicenseRef-scancode-alasir"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "alasir",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Alasir Licence",
+      "The Alasir Licence",
+      "LicenseRef-scancode-alasir"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "gpl-2.0-adaptec",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 plus Adaptec conditions",
-            "LicenseRef-scancode-gpl-2.0-adaptec"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-adaptec",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 plus Adaptec conditions",
+      "LicenseRef-scancode-gpl-2.0-adaptec"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

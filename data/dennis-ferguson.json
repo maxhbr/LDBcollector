@@ -1,13 +1,13 @@
 {
-    "canonical": "dennis-ferguson",
-    "aliases": {
-        "scancode-licensedb": [
-            "Dennis Ferguson License",
-            "LicenseRef-scancode-dennis-ferguson"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "dennis-ferguson",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Dennis Ferguson License",
+      "LicenseRef-scancode-dennis-ferguson"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

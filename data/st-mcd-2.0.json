@@ -1,14 +1,14 @@
 {
-    "canonical": "st-mcd-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-st-mcd-2.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": [
-        "STMicro Liberty License v2"
+  "canonical": "st-mcd-2.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-st-mcd-2.0"
     ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": [
+    "STMicro Liberty License v2"
+  ]
 }

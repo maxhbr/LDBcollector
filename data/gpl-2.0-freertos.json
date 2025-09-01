@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-freertos",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with FreeRTOS exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-freertos",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with FreeRTOS exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

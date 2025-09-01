@@ -1,13 +1,13 @@
 {
-    "canonical": "william-alexander",
-    "aliases": {
-        "scancode-licensedb": [
-            "William Alexander License",
-            "LicenseRef-scancode-william-alexander"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "william-alexander",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "William Alexander License",
+      "LicenseRef-scancode-william-alexander"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

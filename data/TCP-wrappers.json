@@ -1,15 +1,15 @@
 {
-    "canonical": "TCP-wrappers",
-    "aliases": {
-        "spdx": [
-            "TCP Wrappers License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "tcp-wrappers"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "TCP-wrappers",
+  "aliases": {
+    "spdx": [
+      "TCP Wrappers License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "tcp-wrappers"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

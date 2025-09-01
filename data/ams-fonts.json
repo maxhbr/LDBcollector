@@ -1,13 +1,13 @@
 {
-    "canonical": "ams-fonts",
-    "aliases": {
-        "scancode-licensedb": [
-            "AMSFonts license",
-            "LicenseRef-scancode-ams-fonts"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ams-fonts",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "AMSFonts license",
+      "LicenseRef-scancode-ams-fonts"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "sun-no-high-risk-activities",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun No High Risk Activities License",
-            "LicenseRef-scancode-sun-no-high-risk-activities"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sun-no-high-risk-activities",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sun No High Risk Activities License",
+      "LicenseRef-scancode-sun-no-high-risk-activities"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

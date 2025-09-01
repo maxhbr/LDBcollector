@@ -1,13 +1,13 @@
 {
-    "canonical": "free-surfer-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "FreeSurfer Software License Agreement 1.0",
-            "LicenseRef-scancode-free-surfer-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "free-surfer-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "FreeSurfer Software License Agreement 1.0",
+      "LicenseRef-scancode-free-surfer-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

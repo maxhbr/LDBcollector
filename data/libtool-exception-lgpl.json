@@ -1,13 +1,13 @@
 {
-    "canonical": "libtool-exception-lgpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "GNU Libtool exception to LGPL",
-            "LicenseRef-scancode-libtool-exception-lgpl"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "libtool-exception-lgpl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GNU Libtool exception to LGPL",
+      "LicenseRef-scancode-libtool-exception-lgpl"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

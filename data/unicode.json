@@ -1,13 +1,13 @@
 {
-    "canonical": "unicode",
-    "aliases": {
-        "scancode-licensedb": [
-            "Unicode Inc License Agreement",
-            "LicenseRef-scancode-unicode"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "unicode",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Unicode Inc License Agreement",
+      "LicenseRef-scancode-unicode"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

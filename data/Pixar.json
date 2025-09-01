@@ -1,15 +1,15 @@
 {
-    "canonical": "Pixar",
-    "aliases": {
-        "spdx": [
-            "Pixar License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "pixar"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Pixar",
+  "aliases": {
+    "spdx": [
+      "Pixar License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "pixar"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "postman-tos-2024",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-postman-tos-2024",
-            "Postman Terms of Service 2024"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "postman-tos-2024",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-postman-tos-2024",
+      "Postman Terms of Service 2024"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,15 +1,15 @@
 {
-    "canonical": "Knuth-CTAN",
-    "aliases": {
-        "spdx": [
-            "Knuth CTAN License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "knuth-ctan"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Knuth-CTAN",
+  "aliases": {
+    "spdx": [
+      "Knuth CTAN License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "knuth-ctan"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

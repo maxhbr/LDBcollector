@@ -1,12 +1,12 @@
 {
-    "canonical": "broadcom-unpublished-source",
-    "aliases": {
-        "scancode-licensedb": [
-            "Broadcom Unpublished Source License"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "broadcom-unpublished-source",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Broadcom Unpublished Source License"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

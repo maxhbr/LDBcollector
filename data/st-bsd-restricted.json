@@ -1,13 +1,13 @@
 {
-    "canonical": "st-bsd-restricted",
-    "aliases": {
-        "scancode-licensedb": [
-            "STMicro BSD Restricted",
-            "LicenseRef-scancode-st-bsd-restricted"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "st-bsd-restricted",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "STMicro BSD Restricted",
+      "LicenseRef-scancode-st-bsd-restricted"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

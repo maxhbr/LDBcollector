@@ -1,15 +1,15 @@
 {
-    "canonical": "DEC-3-Clause",
-    "aliases": {
-        "spdx": [
-            "DEC 3-Clause License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "dec-3-clause"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "DEC-3-Clause",
+  "aliases": {
+    "spdx": [
+      "DEC 3-Clause License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "dec-3-clause"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

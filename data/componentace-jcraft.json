@@ -1,13 +1,13 @@
 {
-    "canonical": "componentace-jcraft",
-    "aliases": {
-        "scancode-licensedb": [
-            "ComponentAce JCraft License",
-            "LicenseRef-scancode-componentace-jcraft"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "componentace-jcraft",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ComponentAce JCraft License",
+      "LicenseRef-scancode-componentace-jcraft"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

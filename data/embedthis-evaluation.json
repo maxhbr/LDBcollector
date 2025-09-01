@@ -1,13 +1,13 @@
 {
-    "canonical": "embedthis-evaluation",
-    "aliases": {
-        "scancode-licensedb": [
-            "EmbedThis Evaluation License",
-            "LicenseRef-scancode-embedthis-evaluation"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "embedthis-evaluation",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "EmbedThis Evaluation License",
+      "LicenseRef-scancode-embedthis-evaluation"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

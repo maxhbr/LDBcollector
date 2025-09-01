@@ -1,13 +1,13 @@
 {
-    "canonical": "woodruff-2002",
-    "aliases": {
-        "scancode-licensedb": [
-            "Woodruff Restricted MIT 2002",
-            "LicenseRef-scancode-woodruff-2002"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "woodruff-2002",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Woodruff Restricted MIT 2002",
+      "LicenseRef-scancode-woodruff-2002"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

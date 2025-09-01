@@ -1,14 +1,14 @@
 {
-    "canonical": "oracle-openjdk-classpath-exception-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle OpenJDK classpath exception to GPL 2.0",
-            "LicenseRef-scancode-oracle-openjdk-classpath-exception-2.0",
-            "LicenseRef-scancode-oracle-openjdk-exception-2.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oracle-openjdk-classpath-exception-2.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Oracle OpenJDK classpath exception to GPL 2.0",
+      "LicenseRef-scancode-oracle-openjdk-classpath-exception-2.0",
+      "LicenseRef-scancode-oracle-openjdk-exception-2.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

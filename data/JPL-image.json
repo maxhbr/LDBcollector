@@ -1,15 +1,15 @@
 {
-    "canonical": "JPL-image",
-    "aliases": {
-        "spdx": [
-            "JPL Image Use Policy"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "jpl-image"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "JPL-image",
+  "aliases": {
+    "spdx": [
+      "JPL Image Use Policy"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "jpl-image"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

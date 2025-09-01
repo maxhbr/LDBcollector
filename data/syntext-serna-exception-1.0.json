@@ -1,14 +1,14 @@
 {
-    "canonical": "syntext-serna-exception-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-syntext-serna-exception-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": [
-        "Syntext Serna exception to GPL 2.0 or GPL 3.0"
+  "canonical": "syntext-serna-exception-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-syntext-serna-exception-1.0"
     ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": [
+    "Syntext Serna exception to GPL 2.0 or GPL 3.0"
+  ]
 }

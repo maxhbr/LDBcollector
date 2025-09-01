@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-kernel",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with Kernel Exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-kernel",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with Kernel Exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

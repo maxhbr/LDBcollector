@@ -1,15 +1,15 @@
 {
-    "canonical": "Kastrup",
-    "aliases": {
-        "spdx": [
-            "Kastrup License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "kastrup"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Kastrup",
+  "aliases": {
+    "spdx": [
+      "Kastrup License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "kastrup"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "datamekanix-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "DataMekanix License",
-            "LicenseRef-scancode-datamekanix-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "datamekanix-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "DataMekanix License",
+      "LicenseRef-scancode-datamekanix-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

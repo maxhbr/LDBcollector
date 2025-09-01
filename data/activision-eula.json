@@ -1,13 +1,13 @@
 {
-    "canonical": "activision-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "Activision EULA",
-            "LicenseRef-scancode-activision-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "activision-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Activision EULA",
+      "LicenseRef-scancode-activision-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

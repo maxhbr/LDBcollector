@@ -1,15 +1,15 @@
 {
-    "canonical": "corporate-accountability-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-corporate-accountability-1.1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": [
-        "Corporate Accountability Lab Software",
-        "CAL Software"
+  "canonical": "corporate-accountability-1.1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-corporate-accountability-1.1"
     ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": [
+    "Corporate Accountability Lab Software",
+    "CAL Software"
+  ]
 }

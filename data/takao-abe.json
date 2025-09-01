@@ -1,13 +1,13 @@
 {
-    "canonical": "takao-abe",
-    "aliases": {
-        "scancode-licensedb": [
-            "Takao Abe License",
-            "LicenseRef-scancode-takao-abe"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "takao-abe",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Takao Abe License",
+      "LicenseRef-scancode-takao-abe"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

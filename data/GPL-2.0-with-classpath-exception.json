@@ -7,7 +7,7 @@
         "custom": [
             "GNU General Public License, version 2 with the GNU Classpath Exception"
         ],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "gpl-2.0-classpath",
             "GPL 2.0 with classpath exception"
         ]

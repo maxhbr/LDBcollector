@@ -1,12 +1,12 @@
 {
-    "canonical": "cmu-template",
-    "aliases": {
-        "scancode-licensedb": [
-            "Carnegie Mellon Template License"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "cmu-template",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Carnegie Mellon Template License"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "wifi-alliance",
-    "aliases": {
-        "scancode-licensedb": [
-            "Wi-Fi Alliance",
-            "Wi-Fi Alliance License",
-            "LicenseRef-scancode-wifi-alliance"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "wifi-alliance",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Wi-Fi Alliance",
+      "Wi-Fi Alliance License",
+      "LicenseRef-scancode-wifi-alliance"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

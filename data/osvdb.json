@@ -1,14 +1,14 @@
 {
-    "canonical": "osvdb",
-    "aliases": {
-        "scancode-licensedb": [
-            "OSVDB License",
-            "Open Sourced Vulnerability Database (OSVDB) License",
-            "LicenseRef-scancode-osvdb"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "osvdb",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "OSVDB License",
+      "Open Sourced Vulnerability Database (OSVDB) License",
+      "LicenseRef-scancode-osvdb"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

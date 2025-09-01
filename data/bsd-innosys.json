@@ -1,13 +1,13 @@
 {
-    "canonical": "bsd-innosys",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD-InnoSys",
-            "LicenseRef-scancode-bsd-innosys"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bsd-innosys",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BSD-InnoSys",
+      "LicenseRef-scancode-bsd-innosys"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

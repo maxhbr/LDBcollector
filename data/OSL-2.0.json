@@ -1,16 +1,16 @@
 {
-    "canonical": "OSL-2.0",
-    "aliases": {
-        "spdx": [
-            "Open Software License 2.0"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "OSL 2.0",
-            "osl-2.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "OSL-2.0",
+  "aliases": {
+    "spdx": [
+      "Open Software License 2.0"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "OSL 2.0",
+      "osl-2.0"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

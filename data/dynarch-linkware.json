@@ -1,13 +1,13 @@
 {
-    "canonical": "dynarch-linkware",
-    "aliases": {
-        "scancode-licensedb": [
-            "Dynarch Linkware Agreement",
-            "LicenseRef-scancode-dynarch-linkware"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "dynarch-linkware",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Dynarch Linkware Agreement",
+      "LicenseRef-scancode-dynarch-linkware"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,15 +1,15 @@
 {
-    "canonical": "openjdk-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenJDK Exception",
-            "Assembly-exception",
-            "OpenJDK Classpath and Assembly Exception",
-            "LicenseRef-scancode-openjdk-exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "openjdk-exception",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "OpenJDK Exception",
+      "Assembly-exception",
+      "OpenJDK Classpath and Assembly Exception",
+      "LicenseRef-scancode-openjdk-exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

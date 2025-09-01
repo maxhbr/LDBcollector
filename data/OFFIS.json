@@ -1,15 +1,15 @@
 {
-    "canonical": "OFFIS",
-    "aliases": {
-        "spdx": [
-            "OFFIS License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "offis"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "OFFIS",
+  "aliases": {
+    "spdx": [
+      "OFFIS License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "offis"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

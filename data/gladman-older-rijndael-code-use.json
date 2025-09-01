@@ -1,14 +1,14 @@
 {
-    "canonical": "gladman-older-rijndael-code-use",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-gladman-older-rijndael-code-use",
-            "Gladman Older Rigndael Code Use",
-            "LicenseRef-scancode-gladman-older-rijndael-code"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gladman-older-rijndael-code-use",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-gladman-older-rijndael-code-use",
+      "Gladman Older Rigndael Code Use",
+      "LicenseRef-scancode-gladman-older-rijndael-code"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "unicode-data-software",
-    "aliases": {
-        "scancode-licensedb": [
-            "Unicode - Data Files and Software",
-            "Unicode License Agreement - Data Files and Software"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "unicode-data-software",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Unicode - Data Files and Software",
+      "Unicode License Agreement - Data Files and Software"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

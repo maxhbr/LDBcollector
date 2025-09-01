@@ -1,13 +1,13 @@
 {
-    "canonical": "httpget",
-    "aliases": {
-        "scancode-licensedb": [
-            "httpget notice and disclaimer",
-            "LicenseRef-scancode-httpget"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "httpget",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "httpget notice and disclaimer",
+      "LicenseRef-scancode-httpget"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

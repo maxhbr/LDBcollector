@@ -1,39 +1,39 @@
 {
-    "canonical": "ISC",
-    "aliases": {
-        "spdx": [
-            "ISC License"
-        ],
-        "custom": [
-            "Internet Systems Consortium License",
-            "ISC License (Internet Systems Consortium)",
-            "Internet Systems Consortium Open Source License",
-            "ISC Open Source License",
-            "ISC License (Open Source)",
-            "ISC Open License",
-            "ISCL",
-            "isc-license"
-        ],
-        "scancode-licensedb": [
-            "isc"
-        ],
-        "osi": [
-            "ISC License (ISC)"
-        ],
-        "pypi-classifiers": [
-            "License :: ISC License (ISCL)",
-            "OSI Approved :: ISC License (ISCL)",
-            "License :: OSI Approved :: ISC License",
-            "License :: ISC License",
-            "OSI Approved :: ISC License",
-            "License :: OSI Approved :: ISCL",
-            "License :: ISCL",
-            "OSI Approved :: ISCL",
-            "License :: OSI Approved :: ISC License (ISCL)",
-            "ISC License (ISCL)"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "ISC",
+  "aliases": {
+    "spdx": [
+      "ISC License"
+    ],
+    "custom": [
+      "Internet Systems Consortium License",
+      "ISC License (Internet Systems Consortium)",
+      "Internet Systems Consortium Open Source License",
+      "ISC Open Source License",
+      "ISC License (Open Source)",
+      "ISC Open License",
+      "ISCL",
+      "isc-license"
+    ],
+    "osi": [
+      "ISC License (ISC)"
+    ],
+    "pypiClassifiers": [
+      "License :: ISC License (ISCL)",
+      "OSI Approved :: ISC License (ISCL)",
+      "License :: OSI Approved :: ISC License",
+      "License :: ISC License",
+      "OSI Approved :: ISC License",
+      "License :: OSI Approved :: ISCL",
+      "License :: ISCL",
+      "OSI Approved :: ISCL",
+      "License :: OSI Approved :: ISC License (ISCL)",
+      "ISC License (ISCL)"
+    ],
+    "scancodeLicensedb": [
+      "isc"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

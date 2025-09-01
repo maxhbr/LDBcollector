@@ -1,12 +1,12 @@
 {
-    "canonical": "lgpl-3.0-zeromq",
-    "aliases": {
-        "scancode-licensedb": [
-            "LGPL 3.0 with ZeroMQ exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "lgpl-3.0-zeromq",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LGPL 3.0 with ZeroMQ exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

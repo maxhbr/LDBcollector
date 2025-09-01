@@ -1,14 +1,14 @@
 {
-    "canonical": "dl-de-by-nc-1-0-en",
-    "aliases": {
-        "scancode-licensedb": [
-            "dl-de/by-nc-1-0-en",
-            "Data licence Germany - attribution - non-commercial - Version 1.0 - English",
-            "LicenseRef-scancode-dl-de-by-nc-1-0-en"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "dl-de-by-nc-1-0-en",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "dl-de/by-nc-1-0-en",
+      "Data licence Germany - attribution - non-commercial - Version 1.0 - English",
+      "LicenseRef-scancode-dl-de-by-nc-1-0-en"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

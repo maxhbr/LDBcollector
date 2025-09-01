@@ -1,12 +1,12 @@
 {
-    "canonical": "polyform-defensive-1.0.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "PolyForm Defensive License 1.0.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "polyform-defensive-1.0.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "PolyForm Defensive License 1.0.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

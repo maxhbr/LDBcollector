@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-windows-driver-kit",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Windows Driver Kit License",
-            "MS Windows Driver Kit License",
-            "LicenseRef-scancode-ms-windows-driver-kit"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-windows-driver-kit",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Windows Driver Kit License",
+      "MS Windows Driver Kit License",
+      "LicenseRef-scancode-ms-windows-driver-kit"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

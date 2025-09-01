@@ -1,15 +1,15 @@
 {
-    "canonical": "generic-trademark",
-    "aliases": {
-        "scancode-licensedb": [
-            "Generic Trademark and Name Protection Notice",
-            "LicenseRef-scancode-trademark-notice",
-            "Generic Trademark Notice",
-            "LicenseRef-scancode-generic-trademark"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "generic-trademark",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Generic Trademark and Name Protection Notice",
+      "LicenseRef-scancode-trademark-notice",
+      "Generic Trademark Notice",
+      "LicenseRef-scancode-generic-trademark"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

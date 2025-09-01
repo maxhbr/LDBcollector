@@ -1,13 +1,13 @@
 {
-    "canonical": "qti-linux-firmware",
-    "aliases": {
-        "scancode-licensedb": [
-            "QTI Linux Firmware",
-            "LicenseRef-scancode-qti-linux-firmware"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "qti-linux-firmware",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "QTI Linux Firmware",
+      "LicenseRef-scancode-qti-linux-firmware"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

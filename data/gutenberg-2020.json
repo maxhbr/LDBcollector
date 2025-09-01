@@ -1,14 +1,14 @@
 {
-    "canonical": "gutenberg-2020",
-    "aliases": {
-        "scancode-licensedb": [
-            "Project Gutenberg License 2020",
-            "Gutenberg License 2020",
-            "LicenseRef-scancode-gutenberg-2020"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gutenberg-2020",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Project Gutenberg License 2020",
+      "Gutenberg License 2020",
+      "LicenseRef-scancode-gutenberg-2020"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

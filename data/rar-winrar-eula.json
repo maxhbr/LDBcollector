@@ -1,13 +1,13 @@
 {
-    "canonical": "rar-winrar-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "RAR and WinRAR EULA",
-            "LicenseRef-scancode-rar-winrar-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "rar-winrar-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "RAR and WinRAR EULA",
+      "LicenseRef-scancode-rar-winrar-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

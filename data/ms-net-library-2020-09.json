@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-net-library-2020-09",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft .NET Library License 2020-09",
-            "MS .NET Library License 2020-09",
-            "LicenseRef-scancode-ms-net-library-2020-09"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-net-library-2020-09",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft .NET Library License 2020-09",
+      "MS .NET Library License 2020-09",
+      "LicenseRef-scancode-ms-net-library-2020-09"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

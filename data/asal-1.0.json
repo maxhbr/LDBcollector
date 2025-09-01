@@ -1,14 +1,14 @@
 {
-    "canonical": "asal-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Any Source Available License 1.0",
-            "ASAL 1.0",
-            "LicenseRef-scancode-asal-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "asal-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Any Source Available License 1.0",
+      "ASAL 1.0",
+      "LicenseRef-scancode-asal-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

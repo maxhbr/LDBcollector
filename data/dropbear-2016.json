@@ -1,13 +1,13 @@
 {
-    "canonical": "dropbear-2016",
-    "aliases": {
-        "scancode-licensedb": [
-            "Dropbear-2016",
-            "LicenseRef-scancode-dropbear-2016"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "dropbear-2016",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Dropbear-2016",
+      "LicenseRef-scancode-dropbear-2016"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

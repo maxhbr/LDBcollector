@@ -1,13 +1,13 @@
 {
-    "canonical": "jide-sla",
-    "aliases": {
-        "scancode-licensedb": [
-            "JIDE SLA",
-            "LicenseRef-scancode-jide-sla"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "jide-sla",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "JIDE SLA",
+      "LicenseRef-scancode-jide-sla"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

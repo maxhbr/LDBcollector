@@ -1,15 +1,15 @@
 {
-    "canonical": "GPL-3.0-389-ds-base-exception",
-    "aliases": {
-        "spdx": [
-            "GPL-3.0 389 DS Base Exception"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "gpl-3.0-389-ds-base-exception"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "GPL-3.0-389-ds-base-exception",
+  "aliases": {
+    "spdx": [
+      "GPL-3.0 389 DS Base Exception"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "gpl-3.0-389-ds-base-exception"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

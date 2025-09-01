@@ -1,13 +1,13 @@
 {
-    "canonical": "qpopper",
-    "aliases": {
-        "scancode-licensedb": [
-            "Qpopper License",
-            "LicenseRef-scancode-qpopper"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "qpopper",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Qpopper License",
+      "LicenseRef-scancode-qpopper"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

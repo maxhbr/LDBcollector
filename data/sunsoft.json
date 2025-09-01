@@ -1,13 +1,13 @@
 {
-    "canonical": "sunsoft",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sunsoft License",
-            "LicenseRef-scancode-sunsoft"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sunsoft",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sunsoft License",
+      "LicenseRef-scancode-sunsoft"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

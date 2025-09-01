@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-windows-sdk-win10",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Enterprise Windows Driver Kit 2021",
-            "Microsoft Enterprise Windows Driver Kit License 2021",
-            "LicenseRef-scancode-ms-windows-sdk-win10"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-windows-sdk-win10",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS Enterprise Windows Driver Kit 2021",
+      "Microsoft Enterprise Windows Driver Kit License 2021",
+      "LicenseRef-scancode-ms-windows-sdk-win10"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

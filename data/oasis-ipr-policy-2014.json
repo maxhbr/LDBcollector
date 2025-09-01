@@ -1,14 +1,14 @@
 {
-    "canonical": "oasis-ipr-policy-2014",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oasis IPR Policy License 2014-10-15",
-            "Oasis IPR Policy License 2014",
-            "LicenseRef-scancode-oasis-ipr-policy-2014"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oasis-ipr-policy-2014",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Oasis IPR Policy License 2014-10-15",
+      "Oasis IPR Policy License 2014",
+      "LicenseRef-scancode-oasis-ipr-policy-2014"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

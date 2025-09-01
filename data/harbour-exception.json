@@ -1,17 +1,17 @@
 {
-    "canonical": "harbour-exception",
-    "aliases": {
-        "spdx": [
-            "harbour exception"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "GUILE exception to GPL 2.0",
-            "LicenseRef-scancode-guile-exception-2.0",
-            "guile-exception-2.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "harbour-exception",
+  "aliases": {
+    "spdx": [
+      "harbour exception"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "GUILE exception to GPL 2.0",
+      "LicenseRef-scancode-guile-exception-2.0",
+      "guile-exception-2.0"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

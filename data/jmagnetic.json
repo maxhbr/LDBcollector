@@ -1,13 +1,13 @@
 {
-    "canonical": "jmagnetic",
-    "aliases": {
-        "scancode-licensedb": [
-            "JMagnetic License",
-            "LicenseRef-scancode-jmagnetic"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "jmagnetic",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "JMagnetic License",
+      "LicenseRef-scancode-jmagnetic"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

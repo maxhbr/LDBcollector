@@ -1,13 +1,13 @@
 {
-    "canonical": "sencha-commercial-3.17",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sencha Software License Agreement v3.17",
-            "LicenseRef-scancode-sencha-commercial-3.17"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sencha-commercial-3.17",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sencha Software License Agreement v3.17",
+      "LicenseRef-scancode-sencha-commercial-3.17"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

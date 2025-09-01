@@ -1,15 +1,15 @@
 {
-    "canonical": "ms-asp-net-web-optimization-framework",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS ASP.NET Web Optimization Framework",
-            "LicenseRef-scancode-ms-asp-net-web-optimization-framework",
-            "Microsoft ASP.NET Web Optimization Framework",
-            "LicenseRef-scancode-ms-asp-net-web-optimization"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-asp-net-web-optimization-framework",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS ASP.NET Web Optimization Framework",
+      "LicenseRef-scancode-ms-asp-net-web-optimization-framework",
+      "Microsoft ASP.NET Web Optimization Framework",
+      "LicenseRef-scancode-ms-asp-net-web-optimization"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

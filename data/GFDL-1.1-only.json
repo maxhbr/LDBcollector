@@ -1,18 +1,18 @@
 {
-    "canonical": "GFDL-1.1-only",
-    "aliases": {
-        "spdx": [
-            "GFDL-1.1",
-            "GNU Free Documentation License v1.1 only"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "GNU Free Documentation License v1.1",
-            "GFDL 1.1",
-            "gfdl-1.1"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "GFDL-1.1-only",
+  "aliases": {
+    "spdx": [
+      "GFDL-1.1",
+      "GNU Free Documentation License v1.1 only"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "GNU Free Documentation License v1.1",
+      "GFDL 1.1",
+      "gfdl-1.1"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

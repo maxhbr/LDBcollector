@@ -1,15 +1,15 @@
 {
-    "canonical": "magaz",
-    "aliases": {
-        "spdx": [
-            "magaz License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "magaz"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "magaz",
+  "aliases": {
+    "spdx": [
+      "magaz License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "magaz"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

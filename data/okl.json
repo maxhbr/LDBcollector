@@ -1,13 +1,13 @@
 {
-    "canonical": "okl",
-    "aliases": {
-        "scancode-licensedb": [
-            "OKL license",
-            "LicenseRef-scancode-okl"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "okl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "OKL license",
+      "LicenseRef-scancode-okl"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

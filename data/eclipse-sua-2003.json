@@ -1,13 +1,13 @@
 {
-    "canonical": "eclipse-sua-2003",
-    "aliases": {
-        "scancode-licensedb": [
-            "Eclipse Foundation Software User Agreement 2003",
-            "LicenseRef-scancode-eclipse-sua-2003"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "eclipse-sua-2003",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Eclipse Foundation Software User Agreement 2003",
+      "LicenseRef-scancode-eclipse-sua-2003"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

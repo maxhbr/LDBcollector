@@ -1,13 +1,13 @@
 {
-    "canonical": "windriver-commercial",
-    "aliases": {
-        "scancode-licensedb": [
-            "Wind River License",
-            "LicenseRef-scancode-windriver-commercial"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "windriver-commercial",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Wind River License",
+      "LicenseRef-scancode-windriver-commercial"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

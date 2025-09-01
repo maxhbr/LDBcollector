@@ -1,15 +1,15 @@
 {
-    "canonical": "cooperative-non-violent-6.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "CNVPL 6.0",
-            "LicenseRef-scancode-cooperative-non-violent-6.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": [
-        "Cooperative Non-Violent Public License v6"
+  "canonical": "cooperative-non-violent-6.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "CNVPL 6.0",
+      "LicenseRef-scancode-cooperative-non-violent-6.0"
     ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": [
+    "Cooperative Non-Violent Public License v6"
+  ]
 }

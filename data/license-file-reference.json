@@ -1,12 +1,12 @@
 {
-    "canonical": "license-file-reference",
-    "aliases": {
-        "scancode-licensedb": [
-            "license-file-reference"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "license-file-reference",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "license-file-reference"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

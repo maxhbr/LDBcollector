@@ -1,12 +1,12 @@
 {
-    "canonical": "qwt-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Qwt License 1.0 Deprecated"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "qwt-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Qwt License 1.0 Deprecated"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

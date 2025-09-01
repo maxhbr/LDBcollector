@@ -1,13 +1,13 @@
 {
-    "canonical": "alexisisaac-freeware",
-    "aliases": {
-        "scancode-licensedb": [
-            "Alexisisaac Freeware License",
-            "LicenseRef-scancode-alexisisaac-freeware"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "alexisisaac-freeware",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Alexisisaac Freeware License",
+      "LicenseRef-scancode-alexisisaac-freeware"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

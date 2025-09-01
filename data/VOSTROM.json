@@ -1,16 +1,16 @@
 {
-    "canonical": "VOSTROM",
-    "aliases": {
-        "spdx": [
-            "VOSTROM Public License for Open Source"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "VOSTROM Public License",
-            "vostrom"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "VOSTROM",
+  "aliases": {
+    "spdx": [
+      "VOSTROM Public License for Open Source"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "VOSTROM Public License",
+      "vostrom"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

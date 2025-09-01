@@ -1,12 +1,12 @@
 {
-    "canonical": "ttf2pt1",
-    "aliases": {
-        "scancode-licensedb": [
-            "TTF2PT1 Project License"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ttf2pt1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "TTF2PT1 Project License"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

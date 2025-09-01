@@ -1,14 +1,14 @@
 {
-    "canonical": "toppers-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "TOPPERS License",
-            "TOPPERS License Agreement",
-            "LicenseRef-scancode-toppers-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "toppers-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "TOPPERS License",
+      "TOPPERS License Agreement",
+      "LicenseRef-scancode-toppers-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

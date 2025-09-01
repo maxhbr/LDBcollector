@@ -1,13 +1,13 @@
 {
-    "canonical": "cc-sampling-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sampling 1.0",
-            "LicenseRef-scancode-cc-sampling-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "cc-sampling-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sampling 1.0",
+      "LicenseRef-scancode-cc-sampling-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

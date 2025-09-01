@@ -1,13 +1,13 @@
 {
-    "canonical": "compass",
-    "aliases": {
-        "scancode-licensedb": [
-            "Compass License",
-            "LicenseRef-scancode-compass"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "compass",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Compass License",
+      "LicenseRef-scancode-compass"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

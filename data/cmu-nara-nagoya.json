@@ -1,13 +1,13 @@
 {
-    "canonical": "cmu-nara-nagoya",
-    "aliases": {
-        "scancode-licensedb": [
-            "CMU Nara Nagoya License",
-            "LicenseRef-scancode-cmu-nara-nagoya"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "cmu-nara-nagoya",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "CMU Nara Nagoya License",
+      "LicenseRef-scancode-cmu-nara-nagoya"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

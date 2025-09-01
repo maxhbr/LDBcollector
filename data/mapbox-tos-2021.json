@@ -1,14 +1,14 @@
 {
-    "canonical": "mapbox-tos-2021",
-    "aliases": {
-        "scancode-licensedb": [
-            "Mapbox Terms of Service 2021",
-            "Mapbox TOS 2021",
-            "LicenseRef-scancode-mapbox-tos-2021"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "mapbox-tos-2021",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Mapbox Terms of Service 2021",
+      "Mapbox TOS 2021",
+      "LicenseRef-scancode-mapbox-tos-2021"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,15 +1,15 @@
 {
-    "canonical": "mulanpubl-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "MulanPubl-2.0",
-            "LicenseRef-scancode-mulanpubl-2.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": [
-        "Mulan Public License, Version 2 (Mulan PubL v2)"
+  "canonical": "mulanpubl-2.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MulanPubl-2.0",
+      "LicenseRef-scancode-mulanpubl-2.0"
     ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": [
+    "Mulan Public License, Version 2 (Mulan PubL v2)"
+  ]
 }

@@ -1,17 +1,17 @@
 {
-    "canonical": "TOSL",
-    "aliases": {
-        "spdx": [
-            "Trusster Open Source License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "TOSL 1.0a",
-            "tosl",
-            "Trusster Open Source License 1.0a"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "TOSL",
+  "aliases": {
+    "spdx": [
+      "Trusster Open Source License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "TOSL 1.0a",
+      "tosl",
+      "Trusster Open Source License 1.0a"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,37 +1,36 @@
 {
-    "canonical": "GPL-3.0-only",
-    "aliases": {
-        "spdx": [
-            "GNU General Public License v3.0 only",
-            "GPL-3.0"
-        ],
-        "custom": [
-        ],
-        "scancode-licensedb": [
-            "GNU General Public License 3.0",
-            "GPL 3.0",
-            "gpl-3.0",
-            "LicenseRef-gpl-3.0"
-        ],
-        "osi": [
-            "GNU General Public License, Version 3.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": [
-        "GPLv3",
-        "gpl3",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-        "GNU General Public License v3 (GPLv3)",
-        "OSI Approved :: GNU General Public License v3 (GPLv3)",
-        "License :: GNU General Public License v3 (GPLv3)",
-        "License :: OSI Approved :: GNU General Public License v3",
-        "GNU General Public License v3",
-        "OSI Approved :: GNU General Public License v3",
-        "License :: GNU General Public License v3",
-        "License :: OSI Approved :: GPLv3",
-        "OSI Approved :: GPLv3",
-        "License :: GPLv3"
+  "canonical": "GPL-3.0-only",
+  "aliases": {
+    "spdx": [
+      "GNU General Public License v3.0 only",
+      "GPL-3.0"
+    ],
+    "custom": [],
+    "osi": [
+      "GNU General Public License, Version 3.0"
+    ],
+    "scancodeLicensedb": [
+      "GNU General Public License 3.0",
+      "GPL 3.0",
+      "gpl-3.0",
+      "LicenseRef-gpl-3.0"
     ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": [
+    "GPLv3",
+    "gpl3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "GNU General Public License v3 (GPLv3)",
+    "OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "License :: GNU General Public License v3 (GPLv3)",
+    "License :: OSI Approved :: GNU General Public License v3",
+    "GNU General Public License v3",
+    "OSI Approved :: GNU General Public License v3",
+    "License :: GNU General Public License v3",
+    "License :: OSI Approved :: GPLv3",
+    "OSI Approved :: GPLv3",
+    "License :: GPLv3"
+  ]
 }

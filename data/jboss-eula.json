@@ -1,13 +1,13 @@
 {
-    "canonical": "jboss-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "JBoss EULA",
-            "LicenseRef-scancode-jboss-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "jboss-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "JBoss EULA",
+      "LicenseRef-scancode-jboss-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

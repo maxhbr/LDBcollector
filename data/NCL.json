@@ -1,17 +1,17 @@
 {
-    "canonical": "NCL",
-    "aliases": {
-        "spdx": [
-            "NCL Source Code License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-fftpack-2004",
-            "FFTPACK License 2004",
-            "fftpack-2004"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "NCL",
+  "aliases": {
+    "spdx": [
+      "NCL Source Code License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-fftpack-2004",
+      "FFTPACK License 2004",
+      "fftpack-2004"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

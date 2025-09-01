@@ -1,13 +1,13 @@
 {
-    "canonical": "nxlog-public-license-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "NXLOG Public License v1.0",
-            "LicenseRef-scancode-nxlog-public-license-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "nxlog-public-license-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "NXLOG Public License v1.0",
+      "LicenseRef-scancode-nxlog-public-license-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

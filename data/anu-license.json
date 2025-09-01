@@ -1,14 +1,14 @@
 {
-    "canonical": "anu-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "Australian National University License",
-            "ANU License",
-            "LicenseRef-scancode-anu-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "anu-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Australian National University License",
+      "ANU License",
+      "LicenseRef-scancode-anu-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

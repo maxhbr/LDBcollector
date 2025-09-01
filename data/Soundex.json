@@ -1,17 +1,17 @@
 {
-    "canonical": "Soundex",
-    "aliases": {
-        "spdx": [
-            "Soundex License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "soundex",
-            "LicenseRef-scancode-soundex",
-            "Soundex"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Soundex",
+  "aliases": {
+    "spdx": [
+      "Soundex License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "soundex",
+      "LicenseRef-scancode-soundex",
+      "Soundex"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

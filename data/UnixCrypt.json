@@ -1,15 +1,15 @@
 {
-    "canonical": "UnixCrypt",
-    "aliases": {
-        "spdx": [
-            "UnixCrypt License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "unixcrypt"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "UnixCrypt",
+  "aliases": {
+    "spdx": [
+      "UnixCrypt License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "unixcrypt"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

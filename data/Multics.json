@@ -1,15 +1,15 @@
 {
-    "canonical": "Multics",
-    "aliases": {
-        "spdx": [
-            "Multics License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "multics"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Multics",
+  "aliases": {
+    "spdx": [
+      "Multics License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "multics"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

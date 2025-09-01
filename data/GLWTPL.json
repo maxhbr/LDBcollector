@@ -1,16 +1,16 @@
 {
-    "canonical": "GLWTPL",
-    "aliases": {
-        "spdx": [
-            "Good Luck With That Public License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "glwtpl",
-            "GLWTPL"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "GLWTPL",
+  "aliases": {
+    "spdx": [
+      "Good Luck With That Public License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "glwtpl",
+      "GLWTPL"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

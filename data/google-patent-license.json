@@ -1,13 +1,13 @@
 {
-    "canonical": "google-patent-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "Google Patent License",
-            "LicenseRef-scancode-google-patent-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "google-patent-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Google Patent License",
+      "LicenseRef-scancode-google-patent-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

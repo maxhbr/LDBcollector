@@ -1,12 +1,12 @@
 {
-    "canonical": "dual-bsd-gpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "Dual BSD-GPL"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "dual-bsd-gpl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Dual BSD-GPL"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

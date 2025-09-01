@@ -1,13 +1,13 @@
 {
-    "canonical": "philippe-de-muyter",
-    "aliases": {
-        "scancode-licensedb": [
-            "Philippe De Muyter License",
-            "LicenseRef-scancode-philippe-de-muyter"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "philippe-de-muyter",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Philippe De Muyter License",
+      "LicenseRef-scancode-philippe-de-muyter"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

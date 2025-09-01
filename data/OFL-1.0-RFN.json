@@ -1,16 +1,16 @@
 {
-    "canonical": "OFL-1.0-RFN",
-    "aliases": {
-        "spdx": [
-            "SIL Open Font License 1.0 with Reserved Font Name"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "ofl-1.0-rfn",
-            "OFL 1.0 Reserved Font Name"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "OFL-1.0-RFN",
+  "aliases": {
+    "spdx": [
+      "SIL Open Font License 1.0 with Reserved Font Name"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "ofl-1.0-rfn",
+      "OFL 1.0 Reserved Font Name"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

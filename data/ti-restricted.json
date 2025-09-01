@@ -1,14 +1,14 @@
 {
-    "canonical": "ti-restricted",
-    "aliases": {
-        "scancode-licensedb": [
-            "Texas Instruments Restricted Use License",
-            "TI Restricted Use License",
-            "LicenseRef-scancode-ti-restricted"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ti-restricted",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Texas Instruments Restricted Use License",
+      "TI Restricted Use License",
+      "LicenseRef-scancode-ti-restricted"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

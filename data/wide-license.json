@@ -1,13 +1,13 @@
 {
-    "canonical": "wide-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "WIDE License",
-            "LicenseRef-scancode-wide-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "wide-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "WIDE License",
+      "LicenseRef-scancode-wide-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

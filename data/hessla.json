@@ -1,14 +1,14 @@
 {
-    "canonical": "hessla",
-    "aliases": {
-        "scancode-licensedb": [
-            "Hacktivismo Enhanced-Source Software License Agreement",
-            "HESSLA",
-            "LicenseRef-scancode-hessla"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "hessla",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Hacktivismo Enhanced-Source Software License Agreement",
+      "HESSLA",
+      "LicenseRef-scancode-hessla"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

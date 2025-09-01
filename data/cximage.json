@@ -1,13 +1,13 @@
 {
-    "canonical": "cximage",
-    "aliases": {
-        "scancode-licensedb": [
-            "CxImage License",
-            "LicenseRef-scancode-cximage"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "cximage",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "CxImage License",
+      "LicenseRef-scancode-cximage"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

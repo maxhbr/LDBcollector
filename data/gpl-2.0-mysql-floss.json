@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-mysql-floss",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with MySQL FLOSS exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-mysql-floss",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with MySQL FLOSS exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

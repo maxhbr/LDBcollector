@@ -1,13 +1,13 @@
 {
-    "canonical": "cygwin-exception-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Cygwin exception to GPL 2.0",
-            "LicenseRef-scancode-cygwin-exception-2.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "cygwin-exception-2.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Cygwin exception to GPL 2.0",
+      "LicenseRef-scancode-cygwin-exception-2.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

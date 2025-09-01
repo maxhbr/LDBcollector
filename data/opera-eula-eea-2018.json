@@ -1,14 +1,14 @@
 {
-    "canonical": "opera-eula-eea-2018",
-    "aliases": {
-        "scancode-licensedb": [
-            "Opera EULA for European Economic Area 2018",
-            "Opera EULA EEA 2018",
-            "LicenseRef-scancode-opera-eula-eea-2018"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "opera-eula-eea-2018",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Opera EULA for European Economic Area 2018",
+      "Opera EULA EEA 2018",
+      "LicenseRef-scancode-opera-eula-eea-2018"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

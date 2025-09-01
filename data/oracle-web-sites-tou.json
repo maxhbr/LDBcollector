@@ -1,14 +1,14 @@
 {
-    "canonical": "oracle-web-sites-tou",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle Web Sites Terms of Use",
-            "Oracle Web Sites TOU",
-            "LicenseRef-scancode-oracle-web-sites-tou"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oracle-web-sites-tou",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Oracle Web Sites Terms of Use",
+      "Oracle Web Sites TOU",
+      "LicenseRef-scancode-oracle-web-sites-tou"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "freebsd-boot",
-    "aliases": {
-        "scancode-licensedb": [
-            "FreeBSD Boot",
-            "LicenseRef-scancode-freebsd-boot"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "freebsd-boot",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "FreeBSD Boot",
+      "LicenseRef-scancode-freebsd-boot"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

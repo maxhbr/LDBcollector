@@ -1,15 +1,15 @@
 {
-    "canonical": "BSD-3-Clause-No-Nuclear-Warranty",
-    "aliases": {
-        "spdx": [
-            "BSD 3-Clause No Nuclear Warranty"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "bsd-3-clause-no-nuclear-warranty"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "BSD-3-Clause-No-Nuclear-Warranty",
+  "aliases": {
+    "spdx": [
+      "BSD 3-Clause No Nuclear Warranty"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "bsd-3-clause-no-nuclear-warranty"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

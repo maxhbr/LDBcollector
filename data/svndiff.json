@@ -1,13 +1,13 @@
 {
-    "canonical": "svndiff",
-    "aliases": {
-        "scancode-licensedb": [
-            "svndiff License",
-            "LicenseRef-scancode-svndiff"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "svndiff",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "svndiff License",
+      "LicenseRef-scancode-svndiff"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

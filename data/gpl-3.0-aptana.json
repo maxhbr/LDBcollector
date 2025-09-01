@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-3.0-aptana",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 3.0 with Aptana exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-3.0-aptana",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 3.0 with Aptana exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

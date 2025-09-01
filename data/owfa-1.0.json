@@ -1,13 +1,13 @@
 {
-    "canonical": "owfa-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "OWFa 1.0 - Patent and Copyright Grants",
-            "LicenseRef-scancode-owfa-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "owfa-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "OWFa 1.0 - Patent and Copyright Grants",
+      "LicenseRef-scancode-owfa-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

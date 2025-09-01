@@ -1,15 +1,15 @@
 {
-    "canonical": "Crossword",
-    "aliases": {
-        "spdx": [
-            "Crossword License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "crossword"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Crossword",
+  "aliases": {
+    "spdx": [
+      "Crossword License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "crossword"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

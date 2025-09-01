@@ -1,13 +1,13 @@
 {
-    "canonical": "saf",
-    "aliases": {
-        "scancode-licensedb": [
-            "Service Availability Forum License",
-            "LicenseRef-scancode-saf"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "saf",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Service Availability Forum License",
+      "LicenseRef-scancode-saf"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

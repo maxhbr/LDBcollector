@@ -1,13 +1,13 @@
 {
-    "canonical": "unicode-icu-58",
-    "aliases": {
-        "scancode-licensedb": [
-            "ICU License 58 and later",
-            "LicenseRef-scancode-unicode-icu-58"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "unicode-icu-58",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ICU License 58 and later",
+      "LicenseRef-scancode-unicode-icu-58"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

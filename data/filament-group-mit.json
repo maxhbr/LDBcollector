@@ -1,13 +1,13 @@
 {
-    "canonical": "filament-group-mit",
-    "aliases": {
-        "scancode-licensedb": [
-            "Filament Group MIT License",
-            "LicenseRef-scancode-filament-group-mit"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "filament-group-mit",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Filament Group MIT License",
+      "LicenseRef-scancode-filament-group-mit"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

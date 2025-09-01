@@ -1,13 +1,13 @@
 {
-    "canonical": "asmus",
-    "aliases": {
-        "scancode-licensedb": [
-            "ASMUS License",
-            "LicenseRef-scancode-asmus"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "asmus",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ASMUS License",
+      "LicenseRef-scancode-asmus"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

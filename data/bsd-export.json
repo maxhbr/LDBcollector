@@ -1,13 +1,13 @@
 {
-    "canonical": "bsd-export",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD-Export",
-            "LicenseRef-scancode-bsd-export"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bsd-export",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "BSD-Export",
+      "LicenseRef-scancode-bsd-export"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "elib-gpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "GNU Elib General Public License",
-            "GPL-Elib",
-            "LicenseRef-scancode-elib-gpl"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "elib-gpl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GNU Elib General Public License",
+      "GPL-Elib",
+      "LicenseRef-scancode-elib-gpl"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

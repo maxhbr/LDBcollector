@@ -1,15 +1,15 @@
 {
-    "canonical": "TCL",
-    "aliases": {
-        "spdx": [
-            "TCL/TK License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "tcl"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "TCL",
+  "aliases": {
+    "spdx": [
+      "TCL/TK License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "tcl"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

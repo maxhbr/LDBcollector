@@ -1,13 +1,13 @@
 {
-    "canonical": "open-diameter",
-    "aliases": {
-        "scancode-licensedb": [
-            "Open Diameter License",
-            "LicenseRef-scancode-open-diameter"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "open-diameter",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Open Diameter License",
+      "LicenseRef-scancode-open-diameter"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

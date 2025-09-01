@@ -1,14 +1,14 @@
 {
-    "canonical": "zapatec-calendar",
-    "aliases": {
-        "scancode-licensedb": [
-            "Zapatec DHTML Javascript Calendar License Agreement",
-            "Zapatec Calendar License",
-            "LicenseRef-scancode-zapatec-calendar"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "zapatec-calendar",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Zapatec DHTML Javascript Calendar License Agreement",
+      "Zapatec Calendar License",
+      "LicenseRef-scancode-zapatec-calendar"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "owtchart",
-    "aliases": {
-        "scancode-licensedb": [
-            "OWTChart License",
-            "LicenseRef-scancode-owtchart"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "owtchart",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "OWTChart License",
+      "LicenseRef-scancode-owtchart"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

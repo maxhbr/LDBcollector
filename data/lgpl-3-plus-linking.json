@@ -1,12 +1,12 @@
 {
-    "canonical": "lgpl-3-plus-linking",
-    "aliases": {
-        "scancode-licensedb": [
-            "LGPL 3.0 or later with Linking exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "lgpl-3-plus-linking",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LGPL 3.0 or later with Linking exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

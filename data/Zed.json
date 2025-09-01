@@ -1,15 +1,15 @@
 {
-    "canonical": "Zed",
-    "aliases": {
-        "spdx": [
-            "Zed License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "zed"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Zed",
+  "aliases": {
+    "spdx": [
+      "Zed License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "zed"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

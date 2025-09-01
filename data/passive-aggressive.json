@@ -1,13 +1,13 @@
 {
-    "canonical": "passive-aggressive",
-    "aliases": {
-        "scancode-licensedb": [
-            "Passive-Aggressive License",
-            "LicenseRef-scancode-passive-aggressive"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "passive-aggressive",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Passive-Aggressive License",
+      "LicenseRef-scancode-passive-aggressive"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,30 +1,30 @@
 {
-    "canonical": "SISSL",
-    "aliases": {
-        "spdx": [
-            "Sun Industry Standards Source License v1.1"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Sun Industry Standards Source License 1.1",
-            "sun-sissl-1.1"
-        ],
-        "osi": [
-            "Sun Industry Standards Source License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": [
-        "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
-        "OSI Approved :: Sun Industry Standards Source License (SISSL)",
-        "License :: Sun Industry Standards Source License (SISSL)",
-        "Sun Industry Standards Source License (SISSL)",
-        "License :: OSI Approved :: Sun Industry Standards Source License",
-        "OSI Approved :: Sun Industry Standards Source License",
-        "License :: Sun Industry Standards Source License",
-        "License :: OSI Approved :: SISSL",
-        "OSI Approved :: SISSL",
-        "License :: SISSL"
+  "canonical": "SISSL",
+  "aliases": {
+    "spdx": [
+      "Sun Industry Standards Source License v1.1"
+    ],
+    "custom": [],
+    "osi": [
+      "Sun Industry Standards Source License"
+    ],
+    "scancodeLicensedb": [
+      "Sun Industry Standards Source License 1.1",
+      "sun-sissl-1.1"
     ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": [
+    "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
+    "OSI Approved :: Sun Industry Standards Source License (SISSL)",
+    "License :: Sun Industry Standards Source License (SISSL)",
+    "Sun Industry Standards Source License (SISSL)",
+    "License :: OSI Approved :: Sun Industry Standards Source License",
+    "OSI Approved :: Sun Industry Standards Source License",
+    "License :: Sun Industry Standards Source License",
+    "License :: OSI Approved :: SISSL",
+    "OSI Approved :: SISSL",
+    "License :: SISSL"
+  ]
 }

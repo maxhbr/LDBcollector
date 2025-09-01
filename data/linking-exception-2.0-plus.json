@@ -1,13 +1,13 @@
 {
-    "canonical": "linking-exception-2.0-plus",
-    "aliases": {
-        "scancode-licensedb": [
-            "Linking exception to GPL 2.0 or later",
-            "LicenseRef-scancode-linking-exception-2.0-plus"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "linking-exception-2.0-plus",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Linking exception to GPL 2.0 or later",
+      "LicenseRef-scancode-linking-exception-2.0-plus"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "oracle-mysql-foss-exception-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-oracle-mysql-foss-exception-2.0",
-            "Oracle MySQL FOSS exception to GPL 2.0",
-            "LicenseRef-scancode-oracle-mysql-foss-exception2.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oracle-mysql-foss-exception-2.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-oracle-mysql-foss-exception-2.0",
+      "Oracle MySQL FOSS exception to GPL 2.0",
+      "LicenseRef-scancode-oracle-mysql-foss-exception2.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

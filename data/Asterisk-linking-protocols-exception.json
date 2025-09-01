@@ -1,15 +1,15 @@
 {
-    "canonical": "Asterisk-linking-protocols-exception",
-    "aliases": {
-        "spdx": [
-            "Asterisk linking protocols exception"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "asterisk-linking-protocols-exception"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Asterisk-linking-protocols-exception",
+  "aliases": {
+    "spdx": [
+      "Asterisk linking protocols exception"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "asterisk-linking-protocols-exception"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

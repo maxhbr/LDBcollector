@@ -1,13 +1,13 @@
 {
-    "canonical": "chartdirector-6.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "ChartDirector 6.0 License Agreement",
-            "LicenseRef-scancode-chartdirector-6.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "chartdirector-6.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ChartDirector 6.0 License Agreement",
+      "LicenseRef-scancode-chartdirector-6.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

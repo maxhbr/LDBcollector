@@ -1,13 +1,13 @@
 {
-    "canonical": "agpl-generic-additional-terms",
-    "aliases": {
-        "scancode-licensedb": [
-            "AGPL Generic Additional Terms",
-            "LicenseRef-scancode-agpl-generic-additional-terms"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "agpl-generic-additional-terms",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "AGPL Generic Additional Terms",
+      "LicenseRef-scancode-agpl-generic-additional-terms"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "the-stack-tos-2023-07",
-    "aliases": {
-        "scancode-licensedb": [
-            "The Stack TOS 2023-07",
-            "HuggingFace The Stack TOS 2023-07",
-            "LicenseRef-scancode-the-stack-tos-2023-07"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "the-stack-tos-2023-07",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "The Stack TOS 2023-07",
+      "HuggingFace The Stack TOS 2023-07",
+      "LicenseRef-scancode-the-stack-tos-2023-07"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

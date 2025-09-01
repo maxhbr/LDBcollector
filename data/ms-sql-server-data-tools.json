@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-sql-server-data-tools",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft SQL Server Data Tools License",
-            "MS SQL Server Data Tools License",
-            "LicenseRef-scancode-ms-sql-server-data-tools"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-sql-server-data-tools",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft SQL Server Data Tools License",
+      "MS SQL Server Data Tools License",
+      "LicenseRef-scancode-ms-sql-server-data-tools"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

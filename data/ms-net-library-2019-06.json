@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-net-library-2019-06",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft .NET Library License 2019-06",
-            "MS .NET Library License 2019-06",
-            "LicenseRef-scancode-ms-net-library-2019-06"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-net-library-2019-06",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft .NET Library License 2019-06",
+      "MS .NET Library License 2019-06",
+      "LicenseRef-scancode-ms-net-library-2019-06"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

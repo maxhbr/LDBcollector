@@ -1,13 +1,13 @@
 {
-    "canonical": "first-works-appreciative-1.2",
-    "aliases": {
-        "scancode-licensedb": [
-            "First Works Appreciative License 1.2",
-            "LicenseRef-scancode-first-works-appreciative-1.2"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "first-works-appreciative-1.2",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "First Works Appreciative License 1.2",
+      "LicenseRef-scancode-first-works-appreciative-1.2"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

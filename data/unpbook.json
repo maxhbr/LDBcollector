@@ -1,13 +1,13 @@
 {
-    "canonical": "unpbook",
-    "aliases": {
-        "scancode-licensedb": [
-            "UNIX Network Programming Book License",
-            "LicenseRef-scancode-unpbook"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "unpbook",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "UNIX Network Programming Book License",
+      "LicenseRef-scancode-unpbook"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

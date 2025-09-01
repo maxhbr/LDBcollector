@@ -33,7 +33,7 @@ def read_data(data_dir: str) -> dict:
                 continue
             for element in risky_aliases:
                 risky_dict[element] = {"canonical": canonical_name, "src": src}
-    data = {"stable_map": canonical_dict, "risky_map": risky_dict}
+    data = {"stableMap": canonical_dict, "riskMap": risky_dict}
 
     return data
 

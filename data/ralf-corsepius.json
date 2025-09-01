@@ -1,12 +1,12 @@
 {
-    "canonical": "ralf-corsepius",
-    "aliases": {
-        "scancode-licensedb": [
-            "Ralf Corsepius License"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ralf-corsepius",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Ralf Corsepius License"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

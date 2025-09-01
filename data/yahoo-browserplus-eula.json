@@ -1,14 +1,14 @@
 {
-    "canonical": "yahoo-browserplus-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "Yahoo BrowserPlus EULA",
-            "Yahoo BrowserPlus End User License",
-            "LicenseRef-scancode-yahoo-browserplus-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "yahoo-browserplus-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Yahoo BrowserPlus EULA",
+      "Yahoo BrowserPlus End User License",
+      "LicenseRef-scancode-yahoo-browserplus-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

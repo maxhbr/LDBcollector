@@ -1,13 +1,13 @@
 {
-    "canonical": "brad-martinez-vb-32",
-    "aliases": {
-        "scancode-licensedb": [
-            "Brad Martinez VB-32 License",
-            "LicenseRef-scancode-brad-martinez-vb-32"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "brad-martinez-vb-32",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Brad Martinez VB-32 License",
+      "LicenseRef-scancode-brad-martinez-vb-32"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

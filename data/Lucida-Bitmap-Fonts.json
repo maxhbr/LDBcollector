@@ -1,17 +1,17 @@
 {
-    "canonical": "Lucida-Bitmap-Fonts",
-    "aliases": {
-        "spdx": [
-            "Lucida Bitmap Fonts License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-bigelow-holmes",
-            "Bigelow & Holmes Lucida Fonts License",
-            "bigelow-holmes"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Lucida-Bitmap-Fonts",
+  "aliases": {
+    "spdx": [
+      "Lucida Bitmap Fonts License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-bigelow-holmes",
+      "Bigelow & Holmes Lucida Fonts License",
+      "bigelow-holmes"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

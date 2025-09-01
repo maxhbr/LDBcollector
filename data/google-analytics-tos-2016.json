@@ -1,13 +1,13 @@
 {
-    "canonical": "google-analytics-tos-2016",
-    "aliases": {
-        "scancode-licensedb": [
-            "Google Analytics Terms of Service 2016",
-            "LicenseRef-scancode-google-analytics-tos-2016"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "google-analytics-tos-2016",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Google Analytics Terms of Service 2016",
+      "LicenseRef-scancode-google-analytics-tos-2016"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

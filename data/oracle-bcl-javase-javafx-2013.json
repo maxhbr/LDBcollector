@@ -1,14 +1,14 @@
 {
-    "canonical": "oracle-bcl-javase-javafx-2013",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle BCL for Java SE and JavaFX Technologies 2013",
-            "Oracle BCL for Java SE and JavaFX 2013",
-            "LicenseRef-scancode-oracle-bcl-javase-javafx-2013"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oracle-bcl-javase-javafx-2013",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Oracle BCL for Java SE and JavaFX Technologies 2013",
+      "Oracle BCL for Java SE and JavaFX 2013",
+      "LicenseRef-scancode-oracle-bcl-javase-javafx-2013"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

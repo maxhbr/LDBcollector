@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-platform-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Platform SDK License",
-            "Microsoft Platform SDK License",
-            "LicenseRef-scancode-ms-platform-sdk"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-platform-sdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS Platform SDK License",
+      "Microsoft Platform SDK License",
+      "LicenseRef-scancode-ms-platform-sdk"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

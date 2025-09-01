@@ -1,15 +1,15 @@
 {
-    "canonical": "atmosphere-0.4",
-    "aliases": {
-        "scancode-licensedb": [
-            "Atmosphere Software License Version 0.4",
-            "LicenseRef-scancode-atmosphere-0.4"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": [
-        "atmosphere"
+  "canonical": "atmosphere-0.4",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Atmosphere Software License Version 0.4",
+      "LicenseRef-scancode-atmosphere-0.4"
     ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": [
+    "atmosphere"
+  ]
 }

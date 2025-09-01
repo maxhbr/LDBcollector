@@ -1,14 +1,14 @@
 {
-    "canonical": "scilab-fr",
-    "aliases": {
-        "scancode-licensedb": [
-            "Licence SCILAB",
-            "SCILAB FR",
-            "LicenseRef-scancode-scilab-fr"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "scilab-fr",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Licence SCILAB",
+      "SCILAB FR",
+      "LicenseRef-scancode-scilab-fr"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

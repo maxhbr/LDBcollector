@@ -1,15 +1,15 @@
 {
-    "canonical": "Ferguson-Twofish",
-    "aliases": {
-        "spdx": [
-            "Ferguson Twofish License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "ferguson-twofish"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Ferguson-Twofish",
+  "aliases": {
+    "spdx": [
+      "Ferguson Twofish License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "ferguson-twofish"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "x11-hanson",
-    "aliases": {
-        "scancode-licensedb": [
-            "X11-Style (David R. Hanson)",
-            "LicenseRef-scancode-x11-hanson"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "x11-hanson",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "X11-Style (David R. Hanson)",
+      "LicenseRef-scancode-x11-hanson"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

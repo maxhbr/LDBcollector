@@ -1,14 +1,14 @@
 {
-    "canonical": "motorola",
-    "aliases": {
-        "scancode-licensedb": [
-            "Motorola Microprocessor & Memory Technology Group License",
-            "Motorola Microprocessor License",
-            "LicenseRef-scancode-motorola"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "motorola",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Motorola Microprocessor & Memory Technology Group License",
+      "Motorola Microprocessor License",
+      "LicenseRef-scancode-motorola"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

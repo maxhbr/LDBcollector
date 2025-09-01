@@ -1,14 +1,14 @@
 {
-    "canonical": "tanuki-development",
-    "aliases": {
-        "scancode-licensedb": [
-            "Tanuki Development License 1.3",
-            "Tanuki Development Software License Agreement 1.3",
-            "LicenseRef-scancode-tanuki-development"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "tanuki-development",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Tanuki Development License 1.3",
+      "Tanuki Development Software License Agreement 1.3",
+      "LicenseRef-scancode-tanuki-development"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

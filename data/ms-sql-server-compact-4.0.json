@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-sql-server-compact-4.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS SQL Server Compact 4.0 License",
-            "Microsoft SQL Server Compact 4.0 License",
-            "LicenseRef-scancode-ms-sql-server-compact-4.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-sql-server-compact-4.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS SQL Server Compact 4.0 License",
+      "Microsoft SQL Server Compact 4.0 License",
+      "LicenseRef-scancode-ms-sql-server-compact-4.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

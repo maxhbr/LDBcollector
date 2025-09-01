@@ -1,14 +1,14 @@
 {
-    "canonical": "amazon-sl",
-    "aliases": {
-        "scancode-licensedb": [
-            "Amazon Software License",
-            "LicenseRef-scancode-amazon-sl",
-            "LicenseRef-.amazon.com.-AmznSL-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "amazon-sl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Amazon Software License",
+      "LicenseRef-scancode-amazon-sl",
+      "LicenseRef-.amazon.com.-AmznSL-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

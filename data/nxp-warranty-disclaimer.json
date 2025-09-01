@@ -1,13 +1,13 @@
 {
-    "canonical": "nxp-warranty-disclaimer",
-    "aliases": {
-        "scancode-licensedb": [
-            "NXP Warranty Disclaimer",
-            "LicenseRef-scancode-nxp-warranty-disclaimer"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "nxp-warranty-disclaimer",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "NXP Warranty Disclaimer",
+      "LicenseRef-scancode-nxp-warranty-disclaimer"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

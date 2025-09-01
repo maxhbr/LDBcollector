@@ -1,16 +1,16 @@
 {
-    "canonical": "LPPL-1.1",
-    "aliases": {
-        "spdx": [
-            "LaTeX Project Public License v1.1"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "lppl-1.1",
-            "LPPL 1.1"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "LPPL-1.1",
+  "aliases": {
+    "spdx": [
+      "LaTeX Project Public License v1.1"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "lppl-1.1",
+      "LPPL 1.1"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

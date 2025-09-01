@@ -1,12 +1,12 @@
 {
-    "canonical": "apache-due-credit",
-    "aliases": {
-        "scancode-licensedb": [
-            "Apache Due Credit Variant"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "apache-due-credit",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Apache Due Credit Variant"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

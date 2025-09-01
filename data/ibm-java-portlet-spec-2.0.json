@@ -1,14 +1,14 @@
 {
-    "canonical": "ibm-java-portlet-spec-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "IBM Java Portlet Specification 2.0",
-            "IBM Java Portlet Specification 2.0 License",
-            "LicenseRef-scancode-ibm-java-portlet-spec-2.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ibm-java-portlet-spec-2.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "IBM Java Portlet Specification 2.0",
+      "IBM Java Portlet Specification 2.0 License",
+      "LicenseRef-scancode-ibm-java-portlet-spec-2.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

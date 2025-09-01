@@ -1,13 +1,13 @@
 {
-    "canonical": "unstated",
-    "aliases": {
-        "scancode-licensedb": [
-            "Unstated License",
-            "LicenseRef-scancode-unstated"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "unstated",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Unstated License",
+      "LicenseRef-scancode-unstated"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

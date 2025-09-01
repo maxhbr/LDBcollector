@@ -1,14 +1,14 @@
 {
-    "canonical": "ati-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "ATI Software EULA",
-            "ATI Software End User License Agreement",
-            "LicenseRef-scancode-ati-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ati-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ATI Software EULA",
+      "ATI Software End User License Agreement",
+      "LicenseRef-scancode-ati-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

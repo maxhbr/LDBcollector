@@ -1,13 +1,13 @@
 {
-    "canonical": "ws-addressing-spec",
-    "aliases": {
-        "scancode-licensedb": [
-            "WS-Addressing Specification License",
-            "LicenseRef-scancode-ws-addressing-spec"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ws-addressing-spec",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "WS-Addressing Specification License",
+      "LicenseRef-scancode-ws-addressing-spec"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

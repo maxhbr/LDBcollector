@@ -1,13 +1,13 @@
 {
-    "canonical": "bpmn-io",
-    "aliases": {
-        "scancode-licensedb": [
-            "bpmn.io License",
-            "LicenseRef-scancode-bpmn-io"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "bpmn-io",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "bpmn.io License",
+      "LicenseRef-scancode-bpmn-io"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

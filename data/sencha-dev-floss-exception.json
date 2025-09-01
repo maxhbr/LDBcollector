@@ -1,14 +1,14 @@
 {
-    "canonical": "sencha-dev-floss-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sencha Open Source License Exception for Development",
-            "Sencha GPL 3.0 Exception for Development",
-            "LicenseRef-scancode-sencha-dev-floss-exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "sencha-dev-floss-exception",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Sencha Open Source License Exception for Development",
+      "Sencha GPL 3.0 Exception for Development",
+      "LicenseRef-scancode-sencha-dev-floss-exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

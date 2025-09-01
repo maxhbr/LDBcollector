@@ -1,13 +1,13 @@
 {
-    "canonical": "leap-motion-sdk-2019",
-    "aliases": {
-        "scancode-licensedb": [
-            "Leap Motion SDK Agreement 2019",
-            "LicenseRef-scancode-leap-motion-sdk-2019"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "leap-motion-sdk-2019",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Leap Motion SDK Agreement 2019",
+      "LicenseRef-scancode-leap-motion-sdk-2019"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

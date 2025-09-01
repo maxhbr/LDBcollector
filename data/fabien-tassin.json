@@ -1,13 +1,13 @@
 {
-    "canonical": "fabien-tassin",
-    "aliases": {
-        "scancode-licensedb": [
-            "Fabien Tassin License",
-            "LicenseRef-scancode-fabien-tassin"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "fabien-tassin",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Fabien Tassin License",
+      "LicenseRef-scancode-fabien-tassin"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

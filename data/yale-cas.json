@@ -1,13 +1,13 @@
 {
-    "canonical": "yale-cas",
-    "aliases": {
-        "scancode-licensedb": [
-            "Yale CAS License",
-            "LicenseRef-scancode-yale-cas"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "yale-cas",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Yale CAS License",
+      "LicenseRef-scancode-yale-cas"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

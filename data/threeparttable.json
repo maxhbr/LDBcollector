@@ -1,15 +1,15 @@
 {
-    "canonical": "threeparttable",
-    "aliases": {
-        "spdx": [
-            "threeparttable License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "threeparttable"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "threeparttable",
+  "aliases": {
+    "spdx": [
+      "threeparttable License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "threeparttable"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

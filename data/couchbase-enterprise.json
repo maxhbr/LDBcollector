@@ -1,13 +1,13 @@
 {
-    "canonical": "couchbase-enterprise",
-    "aliases": {
-        "scancode-licensedb": [
-            "Couchbase Enterprise Edition License",
-            "LicenseRef-scancode-couchbase-enterprise"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "couchbase-enterprise",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Couchbase Enterprise Edition License",
+      "LicenseRef-scancode-couchbase-enterprise"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

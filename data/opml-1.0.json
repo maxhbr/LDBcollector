@@ -1,14 +1,14 @@
 {
-    "canonical": "opml-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "OPML Specification License 1.0",
-            "OPML 1.0",
-            "LicenseRef-scancode-opml-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "opml-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "OPML Specification License 1.0",
+      "OPML 1.0",
+      "LicenseRef-scancode-opml-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

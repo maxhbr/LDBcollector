@@ -1,14 +1,14 @@
 {
-    "canonical": "redis-source-available-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Redis Source Available License 1.0",
-            "Redis Source Available License Agreement 1.0",
-            "LicenseRef-scancode-redis-source-available-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "redis-source-available-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Redis Source Available License 1.0",
+      "Redis Source Available License Agreement 1.0",
+      "LicenseRef-scancode-redis-source-available-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

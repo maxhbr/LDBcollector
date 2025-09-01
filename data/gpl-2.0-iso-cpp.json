@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-iso-cpp",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with ISO C++ Library exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-iso-cpp",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with ISO C++ Library exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

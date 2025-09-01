@@ -1,13 +1,13 @@
 {
-    "canonical": "yensdesign",
-    "aliases": {
-        "scancode-licensedb": [
-            "Yensdesign License",
-            "LicenseRef-scancode-yensdesign"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "yensdesign",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Yensdesign License",
+      "LicenseRef-scancode-yensdesign"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

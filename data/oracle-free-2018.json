@@ -1,13 +1,13 @@
 {
-    "canonical": "oracle-free-2018",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle Free License 2018",
-            "LicenseRef-scancode-oracle-free-2018"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oracle-free-2018",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Oracle Free License 2018",
+      "LicenseRef-scancode-oracle-free-2018"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

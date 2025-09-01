@@ -1,14 +1,14 @@
 {
-    "canonical": "microsoft-windows-rally-devkit",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Windows Rally Development Kit License",
-            "Microsoft Windows Rally Development Kit License",
-            "LicenseRef-scancode-microsoft-windows-rally-devkit"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "microsoft-windows-rally-devkit",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS Windows Rally Development Kit License",
+      "Microsoft Windows Rally Development Kit License",
+      "LicenseRef-scancode-microsoft-windows-rally-devkit"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

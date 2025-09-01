@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-visual-2015-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Visual Studio 2015 Software Development Kit License",
-            "MS Visual Studio 2015 SDK",
-            "LicenseRef-scancode-ms-visual-2015-sdk"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-visual-2015-sdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Visual Studio 2015 Software Development Kit License",
+      "MS Visual Studio 2015 SDK",
+      "LicenseRef-scancode-ms-visual-2015-sdk"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

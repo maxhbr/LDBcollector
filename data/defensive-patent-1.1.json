@@ -1,13 +1,13 @@
 {
-    "canonical": "defensive-patent-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Defensive Patent License v1.1",
-            "LicenseRef-scancode-defensive-patent-1.1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "defensive-patent-1.1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Defensive Patent License v1.1",
+      "LicenseRef-scancode-defensive-patent-1.1"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

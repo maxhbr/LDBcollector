@@ -1,16 +1,16 @@
 {
-    "canonical": "GPL-2.0-with-autoconf-exception",
-    "aliases": {
-        "spdx": [
-            "GNU General Public License v2.0 w/Autoconf exception"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "GPL 2.0 with Autoconf exception",
-            "gpl-2.0-autoconf"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "GPL-2.0-with-autoconf-exception",
+  "aliases": {
+    "spdx": [
+      "GNU General Public License v2.0 w/Autoconf exception"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with Autoconf exception",
+      "gpl-2.0-autoconf"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

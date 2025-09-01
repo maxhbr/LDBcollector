@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-edge-webview2",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Edge WebView2 Runtime",
-            "Microsoft Edge WebView2 Runtime License",
-            "LicenseRef-scancode-ms-edge-webview2"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-edge-webview2",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MS Edge WebView2 Runtime",
+      "Microsoft Edge WebView2 Runtime License",
+      "LicenseRef-scancode-ms-edge-webview2"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

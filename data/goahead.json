@@ -1,13 +1,13 @@
 {
-    "canonical": "goahead",
-    "aliases": {
-        "scancode-licensedb": [
-            "GoAhead License",
-            "LicenseRef-scancode-goahead"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "goahead",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GoAhead License",
+      "LicenseRef-scancode-goahead"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

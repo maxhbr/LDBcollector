@@ -1,30 +1,30 @@
 {
-    "canonical": "UPL-1.0",
-    "aliases": {
-        "spdx": [
-            "Universal Permissive License v1.0"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Universal Permissive License (UPL) v1.0",
-            "upl-1.0",
-            "UPL 1.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": [
-        "License :: OSI Approved :: Universal Permissive License (UPL)",
-        "OSI Approved :: Universal Permissive License (UPL)",
-        "License :: Universal Permissive License (UPL)",
-        "Universal Permissive License (UPL)",
-        "License :: OSI Approved :: Universal Permissive License",
-        "OSI Approved :: Universal Permissive License",
-        "License :: Universal Permissive License",
-        "Universal Permissive License",
-        "License :: OSI Approved :: UPL",
-        "OSI Approved :: UPL",
-        "License :: UPL",
-        "UPL"
+  "canonical": "UPL-1.0",
+  "aliases": {
+    "spdx": [
+      "Universal Permissive License v1.0"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "Universal Permissive License (UPL) v1.0",
+      "upl-1.0",
+      "UPL 1.0"
     ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": [
+    "License :: OSI Approved :: Universal Permissive License (UPL)",
+    "OSI Approved :: Universal Permissive License (UPL)",
+    "License :: Universal Permissive License (UPL)",
+    "Universal Permissive License (UPL)",
+    "License :: OSI Approved :: Universal Permissive License",
+    "OSI Approved :: Universal Permissive License",
+    "License :: Universal Permissive License",
+    "Universal Permissive License",
+    "License :: OSI Approved :: UPL",
+    "OSI Approved :: UPL",
+    "License :: UPL",
+    "UPL"
+  ]
 }

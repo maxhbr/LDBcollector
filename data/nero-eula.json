@@ -1,13 +1,13 @@
 {
-    "canonical": "nero-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "Nero EULA",
-            "LicenseRef-scancode-nero-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "nero-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Nero EULA",
+      "LicenseRef-scancode-nero-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

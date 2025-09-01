@@ -1,15 +1,15 @@
 {
-    "canonical": "DocBook-Schema",
-    "aliases": {
-        "spdx": [
-            "DocBook Schema License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "docbook-schema"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "DocBook-Schema",
+  "aliases": {
+    "spdx": [
+      "DocBook Schema License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "docbook-schema"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

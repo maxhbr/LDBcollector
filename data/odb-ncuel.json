@@ -1,14 +1,14 @@
 {
-    "canonical": "odb-ncuel",
-    "aliases": {
-        "scancode-licensedb": [
-            "ODB Non-Commercial Use and Evaluation License (NCUEL)",
-            "ODB NCUEL",
-            "LicenseRef-scancode-odb-ncuel"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "odb-ncuel",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ODB Non-Commercial Use and Evaluation License (NCUEL)",
+      "ODB NCUEL",
+      "LicenseRef-scancode-odb-ncuel"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

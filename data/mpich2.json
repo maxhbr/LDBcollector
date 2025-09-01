@@ -1,16 +1,16 @@
 {
-    "canonical": "mpich2",
-    "aliases": {
-        "spdx": [
-            "mpich2 License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "mpich",
-            "MPICH License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "mpich2",
+  "aliases": {
+    "spdx": [
+      "mpich2 License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "mpich",
+      "MPICH License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

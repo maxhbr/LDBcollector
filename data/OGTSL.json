@@ -1,23 +1,23 @@
 {
-    "canonical": "OGTSL",
-    "aliases": {
-        "spdx": [
-            "Open Group Test Suite License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "opengroup"
-        ],
-        "osi": [
-            "The Open Group Test Suite License (OGTSL)"
-        ],
-        "pypi-classifiers": [
-            "License :: Open Group Test Suite License",
-            "OSI Approved :: Open Group Test Suite License",
-            "License :: OSI Approved :: Open Group Test Suite License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "OGTSL",
+  "aliases": {
+    "spdx": [
+      "Open Group Test Suite License"
+    ],
+    "custom": [],
+    "osi": [
+      "The Open Group Test Suite License (OGTSL)"
+    ],
+    "pypiClassifiers": [
+      "License :: Open Group Test Suite License",
+      "OSI Approved :: Open Group Test Suite License",
+      "License :: OSI Approved :: Open Group Test Suite License"
+    ],
+    "scancodeLicensedb": [
+      "opengroup"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

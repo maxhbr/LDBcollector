@@ -1,13 +1,13 @@
 {
-    "canonical": "hp-ux-java",
-    "aliases": {
-        "scancode-licensedb": [
-            "HP-UX 11i Java Technology Software",
-            "LicenseRef-scancode-hp-ux-java"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "hp-ux-java",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "HP-UX 11i Java Technology Software",
+      "LicenseRef-scancode-hp-ux-java"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -14,8 +14,8 @@ export interface LicenseMap {
 }
 
 interface LicenseRepository {
-    stable_map: LicenseMap;
-    risky_map: LicenseMap;
+    stableMap: LicenseMap;
+    riskyMap: LicenseMap;
 }
 
 
@@ -29,10 +29,10 @@ interface LicenseRepository {
 export const map = function (licenseName: string, risky: boolean = false) {
     return new Promise<LicenseObject>((resolve, reject) => {
         const licenses = mergedData as LicenseRepository;
-        let licenseData = licenses.stable_map[licenseName];
+        let licenseData = licenses.stableMap[licenseName];
 
         if (!licenseData && risky) {
-            licenseData = licenses.risky_map[licenseName];
+            licenseData = licenses.riskyMap[licenseName];
         }
 
         if (licenseData) {

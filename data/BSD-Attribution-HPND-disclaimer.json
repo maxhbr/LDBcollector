@@ -1,18 +1,18 @@
 {
-    "canonical": "BSD-Attribution-HPND-disclaimer",
-    "aliases": {
-        "spdx": [
-            "BSD with Attribution and HPND disclaimer"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Carnegie Mellon Computing Services License",
-            "cmu-computing-services",
-            "CMU Computing Services License",
-            "LicenseRef-scancode-cmu-computing-services"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "BSD-Attribution-HPND-disclaimer",
+  "aliases": {
+    "spdx": [
+      "BSD with Attribution and HPND disclaimer"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "Carnegie Mellon Computing Services License",
+      "cmu-computing-services",
+      "CMU Computing Services License",
+      "LicenseRef-scancode-cmu-computing-services"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

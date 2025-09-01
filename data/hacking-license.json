@@ -1,13 +1,13 @@
 {
-    "canonical": "hacking-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "Hacking License",
-            "LicenseRef-scancode-hacking-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "hacking-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Hacking License",
+      "LicenseRef-scancode-hacking-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "otn-dev-dist-2014",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle Technology Network Free Developer License 2014",
-            "OTN License 2014",
-            "LicenseRef-scancode-otn-dev-dist-2014"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "otn-dev-dist-2014",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Oracle Technology Network Free Developer License 2014",
+      "OTN License 2014",
+      "LicenseRef-scancode-otn-dev-dist-2014"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

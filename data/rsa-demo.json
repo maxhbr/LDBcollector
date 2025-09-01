@@ -1,13 +1,13 @@
 {
-    "canonical": "rsa-demo",
-    "aliases": {
-        "scancode-licensedb": [
-            "RSA Demo License",
-            "LicenseRef-scancode-rsa-demo"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "rsa-demo",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "RSA Demo License",
+      "LicenseRef-scancode-rsa-demo"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

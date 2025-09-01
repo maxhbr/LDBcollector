@@ -1,16 +1,16 @@
 {
-    "canonical": "Afmparse",
-    "aliases": {
-        "spdx": [
-            "Afmparse License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "afmparse",
-            "afmparse License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Afmparse",
+  "aliases": {
+    "spdx": [
+      "Afmparse License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "afmparse",
+      "afmparse License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,13 +1,13 @@
 {
-    "canonical": "whosonfirst-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "whosonfirst license",
-            "LicenseRef-scancode-whosonfirst-license"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "whosonfirst-license",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "whosonfirst license",
+      "LicenseRef-scancode-whosonfirst-license"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

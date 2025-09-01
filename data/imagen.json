@@ -1,13 +1,13 @@
 {
-    "canonical": "imagen",
-    "aliases": {
-        "scancode-licensedb": [
-            "IMAGEN License",
-            "LicenseRef-scancode-imagen"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "imagen",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "IMAGEN License",
+      "LicenseRef-scancode-imagen"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

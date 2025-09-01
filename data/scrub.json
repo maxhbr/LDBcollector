@@ -1,13 +1,13 @@
 {
-    "canonical": "scrub",
-    "aliases": {
-        "scancode-licensedb": [
-            "SCRUB License",
-            "LicenseRef-scancode-scrub"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "scrub",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "SCRUB License",
+      "LicenseRef-scancode-scrub"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

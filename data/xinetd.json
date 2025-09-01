@@ -1,15 +1,15 @@
 {
-    "canonical": "xinetd",
-    "aliases": {
-        "spdx": [
-            "xinetd License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "xinetd"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "xinetd",
+  "aliases": {
+    "spdx": [
+      "xinetd License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "xinetd"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

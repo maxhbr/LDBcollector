@@ -1,13 +1,13 @@
 {
-    "canonical": "unicode-mappings",
-    "aliases": {
-        "scancode-licensedb": [
-            "Unicode Mappings License",
-            "LicenseRef-scancode-unicode-mappings"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "unicode-mappings",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Unicode Mappings License",
+      "LicenseRef-scancode-unicode-mappings"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

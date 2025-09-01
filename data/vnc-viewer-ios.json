@@ -1,14 +1,14 @@
 {
-    "canonical": "vnc-viewer-ios",
-    "aliases": {
-        "scancode-licensedb": [
-            "VNCViewer iOS EULA",
-            "VNCViewer for iOS EULA",
-            "LicenseRef-scancode-vnc-viewer-ios"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "vnc-viewer-ios",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "VNCViewer iOS EULA",
+      "VNCViewer for iOS EULA",
+      "LicenseRef-scancode-vnc-viewer-ios"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

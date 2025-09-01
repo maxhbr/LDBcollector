@@ -1,14 +1,14 @@
 {
-    "canonical": "can-ogl-ontario-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Open Government Licence Ontario 1.0",
-            "OGL Ontario 1.0",
-            "LicenseRef-scancode-can-ogl-ontario-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "can-ogl-ontario-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Open Government Licence Ontario 1.0",
+      "OGL Ontario 1.0",
+      "LicenseRef-scancode-can-ogl-ontario-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

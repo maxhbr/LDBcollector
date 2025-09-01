@@ -1,15 +1,15 @@
 {
-    "canonical": "NCGL-UK-2.0",
-    "aliases": {
-        "spdx": [
-            "Non-Commercial Government Licence"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "ncgl-uk-2.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "NCGL-UK-2.0",
+  "aliases": {
+    "spdx": [
+      "Non-Commercial Government Licence"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "ncgl-uk-2.0"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

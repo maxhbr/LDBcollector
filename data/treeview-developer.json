@@ -1,13 +1,13 @@
 {
-    "canonical": "treeview-developer",
-    "aliases": {
-        "scancode-licensedb": [
-            "TreeView Developer License",
-            "LicenseRef-scancode-treeview-developer"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "treeview-developer",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "TreeView Developer License",
+      "LicenseRef-scancode-treeview-developer"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

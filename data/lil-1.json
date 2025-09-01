@@ -1,13 +1,13 @@
 {
-    "canonical": "lil-1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Lil License v1",
-            "LicenseRef-scancode-lil-1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "lil-1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Lil License v1",
+      "LicenseRef-scancode-lil-1"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

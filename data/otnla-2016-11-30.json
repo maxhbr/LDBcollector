@@ -1,14 +1,14 @@
 {
-    "canonical": "otnla-2016-11-30",
-    "aliases": {
-        "scancode-licensedb": [
-            "OTNLA 2016-11-30",
-            "LicenseRef-scancode-otnla-2016-11-30",
-            "Oracle Technology Network License Agreement 2016-11-30"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "otnla-2016-11-30",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "OTNLA 2016-11-30",
+      "LicenseRef-scancode-otnla-2016-11-30",
+      "Oracle Technology Network License Agreement 2016-11-30"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

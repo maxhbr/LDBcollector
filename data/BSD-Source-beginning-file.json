@@ -1,17 +1,17 @@
 {
-    "canonical": "BSD-Source-beginning-file",
-    "aliases": {
-        "spdx": [
-            "BSD Source Code Attribution - beginning of file variant"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "bsd-top",
-            "BSD-Top",
-            "LicenseRef-scancode-bsd-top"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "BSD-Source-beginning-file",
+  "aliases": {
+    "spdx": [
+      "BSD Source Code Attribution - beginning of file variant"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "bsd-top",
+      "BSD-Top",
+      "LicenseRef-scancode-bsd-top"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

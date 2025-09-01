@@ -1,15 +1,15 @@
 {
-    "canonical": "SGP4",
-    "aliases": {
-        "spdx": [
-            "SGP4 Permission Notice"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "sgp4"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "SGP4",
+  "aliases": {
+    "spdx": [
+      "SGP4 Permission Notice"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "sgp4"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

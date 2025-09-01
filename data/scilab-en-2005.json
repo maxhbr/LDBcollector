@@ -1,15 +1,15 @@
 {
-    "canonical": "scilab-en-2005",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-scilba-en",
-            "SCILAB en 2005",
-            "SCILAB License 2005",
-            "LicenseRef-scancode-scilab-en"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "scilab-en-2005",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-scilba-en",
+      "SCILAB en 2005",
+      "SCILAB License 2005",
+      "LicenseRef-scancode-scilab-en"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

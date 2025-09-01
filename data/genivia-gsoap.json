@@ -1,14 +1,14 @@
 {
-    "canonical": "genivia-gsoap",
-    "aliases": {
-        "scancode-licensedb": [
-            "Genivia Proprietary",
-            "Genivia gSOAP Commercial Licensing",
-            "LicenseRef-scancode-genivia-gsoap"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "genivia-gsoap",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Genivia Proprietary",
+      "Genivia gSOAP Commercial Licensing",
+      "LicenseRef-scancode-genivia-gsoap"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

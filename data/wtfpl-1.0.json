@@ -1,13 +1,13 @@
 {
-    "canonical": "wtfpl-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "WTFPL 1.0",
-            "LicenseRef-scancode-wtfpl-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "wtfpl-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "WTFPL 1.0",
+      "LicenseRef-scancode-wtfpl-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

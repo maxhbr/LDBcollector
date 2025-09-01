@@ -1,12 +1,12 @@
 {
-    "canonical": "broadcom-dual",
-    "aliases": {
-        "scancode-licensedb": [
-            "Broadcom Dual GPL-Commercial"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "broadcom-dual",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Broadcom Dual GPL-Commercial"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

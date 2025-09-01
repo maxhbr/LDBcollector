@@ -1,13 +1,13 @@
 {
-    "canonical": "oreilly-notice",
-    "aliases": {
-        "scancode-licensedb": [
-            "O'Reilly Code Sample Notice",
-            "LicenseRef-scancode-oreilly-notice"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "oreilly-notice",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "O'Reilly Code Sample Notice",
+      "LicenseRef-scancode-oreilly-notice"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

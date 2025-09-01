@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-office-system-programs-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Office System Programs Software EULA",
-            "MS Office System Programs Software EULA",
-            "LicenseRef-scancode-ms-office-system-programs-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-office-system-programs-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Office System Programs Software EULA",
+      "MS Office System Programs Software EULA",
+      "LicenseRef-scancode-ms-office-system-programs-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

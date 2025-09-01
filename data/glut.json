@@ -1,14 +1,14 @@
 {
-    "canonical": "glut",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenGL Utility Toolkit (GLUT) License",
-            "GLUT License",
-            "LicenseRef-scancode-glut"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "glut",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "OpenGL Utility Toolkit (GLUT) License",
+      "GLUT License",
+      "LicenseRef-scancode-glut"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,12 +1,12 @@
 {
-    "canonical": "gpl-2.0-rrdtool-floss",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 with RRDtool FLOSS Exception"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gpl-2.0-rrdtool-floss",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GPL 2.0 with RRDtool FLOSS Exception"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

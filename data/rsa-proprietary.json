@@ -1,14 +1,14 @@
 {
-    "canonical": "rsa-proprietary",
-    "aliases": {
-        "scancode-licensedb": [
-            "RSA Proprietary",
-            "RSA Proprietary Shrinkwrap License",
-            "LicenseRef-scancode-rsa-proprietary"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "rsa-proprietary",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "RSA Proprietary",
+      "RSA Proprietary Shrinkwrap License",
+      "LicenseRef-scancode-rsa-proprietary"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

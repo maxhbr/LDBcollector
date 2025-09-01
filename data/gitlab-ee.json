@@ -1,14 +1,14 @@
 {
-    "canonical": "gitlab-ee",
-    "aliases": {
-        "scancode-licensedb": [
-            "GitLab Enterprise Edition (EE) license",
-            "GitLab EE",
-            "LicenseRef-scancode-gitlab-ee"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gitlab-ee",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GitLab Enterprise Edition (EE) license",
+      "GitLab EE",
+      "LicenseRef-scancode-gitlab-ee"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

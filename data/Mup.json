@@ -1,15 +1,15 @@
 {
-    "canonical": "Mup",
-    "aliases": {
-        "spdx": [
-            "Mup License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "mup"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Mup",
+  "aliases": {
+    "spdx": [
+      "Mup License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "mup"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

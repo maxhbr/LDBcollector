@@ -1,17 +1,17 @@
 {
-    "canonical": "SunPro",
-    "aliases": {
-        "spdx": [
-            "SunPro License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "SunPro Attribution License",
-            "LicenseRef-scancode-sunpro",
-            "sunpro"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "SunPro",
+  "aliases": {
+    "spdx": [
+      "SunPro License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "SunPro Attribution License",
+      "LicenseRef-scancode-sunpro",
+      "sunpro"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

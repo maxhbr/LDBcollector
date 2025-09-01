@@ -1,13 +1,13 @@
 {
-    "canonical": "adrian",
-    "aliases": {
-        "scancode-licensedb": [
-            "Andre Adrian DFS license",
-            "LicenseRef-scancode-adrian"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "adrian",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Andre Adrian DFS license",
+      "LicenseRef-scancode-adrian"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

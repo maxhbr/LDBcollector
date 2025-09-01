@@ -1,14 +1,14 @@
 {
-    "canonical": "michigan-disclaimer",
-    "aliases": {
-        "scancode-licensedb": [
-            "University of Michigan Open Source License",
-            "University of Michigan OSL",
-            "LicenseRef-scancode-michigan-disclaimer"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "michigan-disclaimer",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "University of Michigan Open Source License",
+      "University of Michigan OSL",
+      "LicenseRef-scancode-michigan-disclaimer"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

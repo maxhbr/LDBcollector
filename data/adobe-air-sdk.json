@@ -1,13 +1,13 @@
 {
-    "canonical": "adobe-air-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "Adobe AIR SDK EULA - 2008",
-            "LicenseRef-scancode-adobe-air-sdk"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "adobe-air-sdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Adobe AIR SDK EULA - 2008",
+      "LicenseRef-scancode-adobe-air-sdk"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

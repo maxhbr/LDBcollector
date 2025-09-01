@@ -1,16 +1,16 @@
 {
-    "canonical": "HPND-sell-variant",
-    "aliases": {
-        "spdx": [
-            "Historical Permission Notice and Disclaimer - sell variant"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "x11-keith-packard",
-            "X11-Style (Keith Packard)"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "HPND-sell-variant",
+  "aliases": {
+    "spdx": [
+      "Historical Permission Notice and Disclaimer - sell variant"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "x11-keith-packard",
+      "X11-Style (Keith Packard)"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

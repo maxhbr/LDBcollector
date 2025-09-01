@@ -1,13 +1,13 @@
 {
-    "canonical": "isotope-cla",
-    "aliases": {
-        "scancode-licensedb": [
-            "Isotope Commercial License Agreement",
-            "LicenseRef-scancode-isotope-cla"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "isotope-cla",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Isotope Commercial License Agreement",
+      "LicenseRef-scancode-isotope-cla"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

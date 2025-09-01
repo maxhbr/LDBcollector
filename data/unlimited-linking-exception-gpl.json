@@ -1,14 +1,14 @@
 {
-    "canonical": "unlimited-linking-exception-gpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-unlimited-linking-exception-gpl",
-            "Unlimited linking exception to GPL",
-            "LicenseRef-scancode-unlimited-link-exception-gpl"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "unlimited-linking-exception-gpl",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-unlimited-linking-exception-gpl",
+      "Unlimited linking exception to GPL",
+      "LicenseRef-scancode-unlimited-link-exception-gpl"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

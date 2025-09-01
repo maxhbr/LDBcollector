@@ -1,14 +1,14 @@
 {
-    "canonical": "google-tos-2014",
-    "aliases": {
-        "scancode-licensedb": [
-            "Google Terms of Service 2014",
-            "Google TOS 2014",
-            "LicenseRef-scancode-google-tos-2014"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "google-tos-2014",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Google Terms of Service 2014",
+      "Google TOS 2014",
+      "LicenseRef-scancode-google-tos-2014"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "itc-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "ITC End User License Agreement",
-            "ITC EULA",
-            "LicenseRef-scancode-itc-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "itc-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "ITC End User License Agreement",
+      "ITC EULA",
+      "LicenseRef-scancode-itc-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

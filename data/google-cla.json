@@ -1,14 +1,14 @@
 {
-    "canonical": "google-cla",
-    "aliases": {
-        "scancode-licensedb": [
-            "Google Individual Contributor License Agreement",
-            "Google CLA",
-            "LicenseRef-scancode-google-cla"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "google-cla",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Google Individual Contributor License Agreement",
+      "Google CLA",
+      "LicenseRef-scancode-google-cla"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

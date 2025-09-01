@@ -1,13 +1,13 @@
 {
-    "canonical": "pd-programming",
-    "aliases": {
-        "scancode-licensedb": [
-            "PD'Programming License",
-            "LicenseRef-scancode-pd-programming"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "pd-programming",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "PD'Programming License",
+      "LicenseRef-scancode-pd-programming"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

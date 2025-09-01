@@ -1,13 +1,13 @@
 {
-    "canonical": "lumisoft-mail-server",
-    "aliases": {
-        "scancode-licensedb": [
-            "LumiSoft Mail Server License",
-            "LicenseRef-scancode-lumisoft-mail-server"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "lumisoft-mail-server",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LumiSoft Mail Server License",
+      "LicenseRef-scancode-lumisoft-mail-server"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

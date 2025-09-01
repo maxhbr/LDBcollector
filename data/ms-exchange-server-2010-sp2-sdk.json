@@ -1,15 +1,15 @@
 {
-    "canonical": "ms-exchange-server-2010-sp2-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Exchange Server 2010 SP2 Web Services SDK",
-            "MS Exchange Server 2010 SP2 Web Services SDK",
-            "LicenseRef-scancode-ms-exchange-server-2010-sp2-sdk",
-            "LicenseRef-scancode-ms-exchange-srv-2010-sp2-sdk"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-exchange-server-2010-sp2-sdk",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft Exchange Server 2010 SP2 Web Services SDK",
+      "MS Exchange Server 2010 SP2 Web Services SDK",
+      "LicenseRef-scancode-ms-exchange-server-2010-sp2-sdk",
+      "LicenseRef-scancode-ms-exchange-srv-2010-sp2-sdk"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

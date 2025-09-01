@@ -1,13 +1,13 @@
 {
-    "canonical": "gstreamer-exception-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "GStreamer exception to GPL 2.0 or later",
-            "LicenseRef-scancode-gstreamer-exception-2.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "gstreamer-exception-2.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "GStreamer exception to GPL 2.0 or later",
+      "LicenseRef-scancode-gstreamer-exception-2.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

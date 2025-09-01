@@ -1,15 +1,15 @@
 {
-    "canonical": "Qhull",
-    "aliases": {
-        "spdx": [
-            "Qhull License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "qhull"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Qhull",
+  "aliases": {
+    "spdx": [
+      "Qhull License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "qhull"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

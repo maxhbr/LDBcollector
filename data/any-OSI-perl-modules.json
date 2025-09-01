@@ -1,16 +1,16 @@
 {
-    "canonical": "any-OSI-perl-modules",
-    "aliases": {
-        "spdx": [
-            "Any OSI License - Perl Modules"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Any OSI Perl Modules",
-            "any-osi-perl-modules"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "any-OSI-perl-modules",
+  "aliases": {
+    "spdx": [
+      "Any OSI License - Perl Modules"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "Any OSI Perl Modules",
+      "any-osi-perl-modules"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

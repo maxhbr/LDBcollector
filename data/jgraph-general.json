@@ -1,13 +1,13 @@
 {
-    "canonical": "jgraph-general",
-    "aliases": {
-        "scancode-licensedb": [
-            "JGraph General License",
-            "LicenseRef-scancode-jgraph-general"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "jgraph-general",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "JGraph General License",
+      "LicenseRef-scancode-jgraph-general"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

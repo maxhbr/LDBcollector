@@ -1,16 +1,16 @@
 {
-    "canonical": "HP-1986",
-    "aliases": {
-        "spdx": [
-            "Hewlett-Packard 1986 License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "hp-1986",
-            "HP 1986 License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "HP-1986",
+  "aliases": {
+    "spdx": [
+      "Hewlett-Packard 1986 License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "hp-1986",
+      "HP 1986 License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

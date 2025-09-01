@@ -1,13 +1,13 @@
 {
-    "canonical": "hugo",
-    "aliases": {
-        "scancode-licensedb": [
-            "Hugo License",
-            "LicenseRef-scancode-hugo"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "hugo",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Hugo License",
+      "LicenseRef-scancode-hugo"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

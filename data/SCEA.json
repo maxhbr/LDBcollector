@@ -1,16 +1,16 @@
 {
-    "canonical": "SCEA",
-    "aliases": {
-        "spdx": [
-            "SCEA Shared Source License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "SCEA Shared Source License 1.0",
-            "scea-1.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "SCEA",
+  "aliases": {
+    "spdx": [
+      "SCEA Shared Source License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "SCEA Shared Source License 1.0",
+      "scea-1.0"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

@@ -1,17 +1,17 @@
 {
-    "canonical": "Bitstream-Charter",
-    "aliases": {
-        "spdx": [
-            "Bitstream Charter Font License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "x11-bitstream",
-            "X11-Style (Bitstream Charter)",
-            "LicenseRef-scancode-x11-bitstream"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Bitstream-Charter",
+  "aliases": {
+    "spdx": [
+      "Bitstream Charter Font License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "x11-bitstream",
+      "X11-Style (Bitstream Charter)",
+      "LicenseRef-scancode-x11-bitstream"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

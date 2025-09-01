@@ -1,14 +1,14 @@
 {
-    "canonical": "yolo-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-yolo-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": [
-        "YOLO License v1"
+  "canonical": "yolo-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-yolo-1.0"
     ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": [
+    "YOLO License v1"
+  ]
 }

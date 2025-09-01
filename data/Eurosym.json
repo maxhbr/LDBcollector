@@ -1,15 +1,15 @@
 {
-    "canonical": "Eurosym",
-    "aliases": {
-        "spdx": [
-            "Eurosym License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "eurosym"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Eurosym",
+  "aliases": {
+    "spdx": [
+      "Eurosym License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "eurosym"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

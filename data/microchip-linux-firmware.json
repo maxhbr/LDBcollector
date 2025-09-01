@@ -1,13 +1,13 @@
 {
-    "canonical": "microchip-linux-firmware",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microchip Linux Firmware License",
-            "LicenseRef-scancode-microchip-linux-firmware"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "microchip-linux-firmware",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microchip Linux Firmware License",
+      "LicenseRef-scancode-microchip-linux-firmware"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

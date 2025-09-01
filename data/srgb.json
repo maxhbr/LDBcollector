@@ -1,13 +1,13 @@
 {
-    "canonical": "srgb",
-    "aliases": {
-        "scancode-licensedb": [
-            "sRGB Profile Licensing Agreement",
-            "LicenseRef-scancode-srgb"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "srgb",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "sRGB Profile Licensing Agreement",
+      "LicenseRef-scancode-srgb"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

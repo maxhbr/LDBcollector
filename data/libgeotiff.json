@@ -1,13 +1,13 @@
 {
-    "canonical": "libgeotiff",
-    "aliases": {
-        "scancode-licensedb": [
-            "libgeoTiff License",
-            "LicenseRef-scancode-libgeotiff"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "libgeotiff",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "libgeoTiff License",
+      "LicenseRef-scancode-libgeotiff"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

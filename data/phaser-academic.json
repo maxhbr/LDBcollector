@@ -1,14 +1,14 @@
 {
-    "canonical": "phaser-academic",
-    "aliases": {
-        "scancode-licensedb": [
-            "Phaser Academic EULA",
-            "Phaser Academic Non-Commercial EULA",
-            "LicenseRef-scancode-phaser-academic"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "phaser-academic",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Phaser Academic EULA",
+      "Phaser Academic Non-Commercial EULA",
+      "LicenseRef-scancode-phaser-academic"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "baserow-ee-2019",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-baserow-ee-2019",
-            "Baserow EE License 2019",
-            "Baserow Enterprise Edition License (the \"EE License\") 2019"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "baserow-ee-2019",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LicenseRef-scancode-baserow-ee-2019",
+      "Baserow EE License 2019",
+      "Baserow Enterprise Edition License (the \"EE License\") 2019"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

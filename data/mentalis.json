@@ -1,13 +1,13 @@
 {
-    "canonical": "mentalis",
-    "aliases": {
-        "scancode-licensedb": [
-            "Mentalis Source Code License",
-            "Mentalis License"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "mentalis",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Mentalis Source Code License",
+      "Mentalis License"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

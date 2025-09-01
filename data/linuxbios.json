@@ -1,13 +1,13 @@
 {
-    "canonical": "linuxbios",
-    "aliases": {
-        "scancode-licensedb": [
-            "LinuxBIOS License",
-            "LicenseRef-scancode-linuxbios"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "linuxbios",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "LinuxBIOS License",
+      "LicenseRef-scancode-linuxbios"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

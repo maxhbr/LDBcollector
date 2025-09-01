@@ -1,16 +1,16 @@
 {
-    "canonical": "MIT-feh",
-    "aliases": {
-        "spdx": [
-            "feh License"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "mit-ack",
-            "MIT Acknowledgment License"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "MIT-feh",
+  "aliases": {
+    "spdx": [
+      "feh License"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "mit-ack",
+      "MIT Acknowledgment License"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

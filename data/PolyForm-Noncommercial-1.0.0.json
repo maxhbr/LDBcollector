@@ -1,16 +1,16 @@
 {
-    "canonical": "PolyForm-Noncommercial-1.0.0",
-    "aliases": {
-        "spdx": [
-            "PolyForm Noncommercial License 1.0.0"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "polyform-noncommercial-1.0.0",
-            "Polyform Noncommercial License 1.0.0"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "PolyForm-Noncommercial-1.0.0",
+  "aliases": {
+    "spdx": [
+      "PolyForm Noncommercial License 1.0.0"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "polyform-noncommercial-1.0.0",
+      "Polyform Noncommercial License 1.0.0"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

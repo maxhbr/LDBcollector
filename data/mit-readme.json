@@ -1,13 +1,13 @@
 {
-    "canonical": "mit-readme",
-    "aliases": {
-        "scancode-licensedb": [
-            "MIT README License",
-            "LicenseRef-scancode-mit-readme"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "mit-readme",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "MIT README License",
+      "LicenseRef-scancode-mit-readme"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

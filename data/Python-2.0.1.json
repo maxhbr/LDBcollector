@@ -1,16 +1,16 @@
 {
-    "canonical": "Python-2.0.1",
-    "aliases": {
-        "spdx": [
-            "Python License 2.0.1"
-        ],
-        "custom": [],
-        "scancode-licensedb": [
-            "Python Software Foundation License v2.0.1",
-            "python-2.0.1"
-        ]
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": []
+  "canonical": "Python-2.0.1",
+  "aliases": {
+    "spdx": [
+      "Python License 2.0.1"
+    ],
+    "custom": [],
+    "scancodeLicensedb": [
+      "Python Software Foundation License v2.0.1",
+      "python-2.0.1"
+    ]
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": []
 }

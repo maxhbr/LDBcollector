@@ -1,13 +1,13 @@
 {
-    "canonical": "concursive-pl-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Concursive Public License 1.0",
-            "LicenseRef-scancode-concursive-pl-1.0"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "concursive-pl-1.0",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Concursive Public License 1.0",
+      "LicenseRef-scancode-concursive-pl-1.0"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

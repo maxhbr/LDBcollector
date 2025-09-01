@@ -1,13 +1,13 @@
 {
-    "canonical": "mike95",
-    "aliases": {
-        "scancode-licensedb": [
-            "Mike95 License",
-            "LicenseRef-scancode-mike95"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "mike95",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Mike95 License",
+      "LicenseRef-scancode-mike95"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

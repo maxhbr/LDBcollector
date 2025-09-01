@@ -1,13 +1,13 @@
 {
-    "canonical": "rxtx-exception-lgpl-2.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "RXTX exception to LGPL 2.1",
-            "LicenseRef-scancode-rxtx-exception-lgpl-2.1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "rxtx-exception-lgpl-2.1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "RXTX exception to LGPL 2.1",
+      "LicenseRef-scancode-rxtx-exception-lgpl-2.1"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

@@ -1,14 +1,14 @@
 {
-    "canonical": "ms-directx-sdk-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft DirectX SDK EULA",
-            "MS DirectX SDK EULA",
-            "LicenseRef-scancode-ms-directx-sdk-eula"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "ms-directx-sdk-eula",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Microsoft DirectX SDK EULA",
+      "MS DirectX SDK EULA",
+      "LicenseRef-scancode-ms-directx-sdk-eula"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

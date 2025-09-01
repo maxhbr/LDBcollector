@@ -1,13 +1,13 @@
 {
-    "canonical": "day-spec",
-    "aliases": {
-        "scancode-licensedb": [
-            "Day Specification License",
-            "LicenseRef-scancode-day-spec"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "day-spec",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "Day Specification License",
+      "LicenseRef-scancode-day-spec"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

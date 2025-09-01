@@ -1,13 +1,13 @@
 {
-    "canonical": "jdom",
-    "aliases": {
-        "scancode-licensedb": [
-            "JDOM License",
-            "LicenseRef-scancode-jdom"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "jdom",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "JDOM License",
+      "LicenseRef-scancode-jdom"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }

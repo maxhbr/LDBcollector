@@ -1,14 +1,14 @@
 {
-    "canonical": "jprs-oscl-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "JPRS OSCL 1.1",
-            "JPRS Open Source Code License v1.1",
-            "LicenseRef-scancode-jprs-oscl-1.1"
-        ],
-        "custom": []
-    },
-    "src": "scancode-licensedb",
-    "rejected": [],
-    "risky": []
+  "canonical": "jprs-oscl-1.1",
+  "aliases": {
+    "custom": [],
+    "scancodeLicensedb": [
+      "JPRS OSCL 1.1",
+      "JPRS Open Source Code License v1.1",
+      "LicenseRef-scancode-jprs-oscl-1.1"
+    ]
+  },
+  "src": "scancode-licensedb",
+  "rejected": [],
+  "risky": []
 }
