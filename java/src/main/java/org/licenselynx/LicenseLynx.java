@@ -34,7 +34,8 @@ public final class LicenseLynx
         LicenseMapSingleton licenseMapSingleton = LicenseMapSingleton.getInstance();
         LicenseMap licenseMap = licenseMapSingleton.getLicenseMap();
 
-        return licenseMap.getCanonicalLicenseMap().get(pLicenseName);
+        String licenseNameNormalized = QuotesHandler.normalizeQuotes(pLicenseName);
+        return licenseMap.getCanonicalLicenseMap().get(licenseNameNormalized);
     }
 
 
@@ -53,10 +54,11 @@ public final class LicenseLynx
         LicenseMapSingleton licenseMapSingleton = LicenseMapSingleton.getInstance();
         LicenseMap licenseMap = licenseMapSingleton.getLicenseMap();
 
-        LicenseObject licenseObject = licenseMap.getCanonicalLicenseMap().get(pLicenseName);
+        String licenseNameNormalized = QuotesHandler.normalizeQuotes(pLicenseName);
+        LicenseObject licenseObject = licenseMap.getCanonicalLicenseMap().get(licenseNameNormalized);
 
         if (licenseObject == null && pRisky) {
-            licenseObject = licenseMap.getRiskyLicenseMap().get(pLicenseName);
+            licenseObject = licenseMap.getRiskyLicenseMap().get(licenseNameNormalized);
         }
 
         return licenseObject;

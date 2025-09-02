@@ -3,6 +3,10 @@
         "test-license": {
             "canonical": "testCanonical",
             "src": "testSrc"
+        },
+        "'test-license'": {
+            "canonical": "testCanonical",
+            "src": "testSrc"
         }
     },
     "risky_map": {
