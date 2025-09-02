@@ -4,6 +4,7 @@
 import itertools
 import json
 import os
+import re
 import sys
 import requests
 
@@ -83,8 +84,10 @@ class BaseDataUpdate:
         aliases_list = list(itertools.chain.from_iterable(list(existing_aliases.values())))
         aliases_list.append(data.get("canonical"))
 
+        normalized_aliases = self._normalize_alias_list(aliases)
+
         # Add each unique alias to license if alias is not None
-        for alias in aliases:
+        for alias in normalized_aliases:
             if alias in risky_aliases:
                 self._LOGGER.debug(f"For {canonical_id} the alias '{alias}' is already in risky list")
                 continue
@@ -99,6 +102,12 @@ class BaseDataUpdate:
                     existing_aliases[self._src] = list()
                 existing_aliases[self._src].append(alias)
 
+        custom_aliases = self._create_custom_list_for_quotes(normalized_aliases)
+
+        for alias in custom_aliases:
+            if alias not in aliases_list:
+                existing_aliases["custom"].append(alias)
+
         with open(filepath, 'w') as outfile:
             json.dump(data, outfile, indent=4)
 
@@ -110,12 +119,16 @@ class BaseDataUpdate:
             aliases: Dictionary of aliases of the license
         """
         self._LOGGER.debug(f"Creating new data file: {canonical_id}.json")
-        # Determine the aliases for the current license
+
+        normalized_aliases = self._normalize_alias_list(aliases)
+
+        custom_list = self._create_custom_list_for_quotes(normalized_aliases)
+
         output_data = {
             "canonical": canonical_id,
             "aliases": {
-                self._src: aliases,
-                "custom": []
+                self._src: normalized_aliases,
+                "custom": custom_list
             },
             "src": self._src,
             "rejected": [],
@@ -154,3 +167,99 @@ class BaseDataUpdate:
                         file = filename
                         break
         return file
+
+    def _normalize_quotes(self, input_string: str, replacement: str = "'") -> str:
+        """
+        Normalize a string by replacing various Unicode and ASCII quote characters
+        with a single default quote character. By default, all quotes (both single and double)
+        are mapped to the ASCII single quote.
+
+        Args:
+            input_string (str): The input text that potentially contains various quote characters.
+            replacement (str, optional): The quote character replacement to use. Defaults to "'".
+
+        Returns:
+            str: The normalized text with all recognized quote characters replaced.
+        """
+        self._LOGGER.debug(f"Normalizing quotes: {input_string}")
+        # List of quote characters to replace with the default replacement.
+        quote_characters = [
+            # Single quotes
+            "\u2018",  # LEFT SINGLE QUOTATION MARK ‘
+            "\u2019",  # RIGHT SINGLE QUOTATION MARK ’
+            "\u201A",  # SINGLE LOW-9 QUOTATION MARK ‚
+            "\u201B",  # SINGLE HIGH-REVERSED-9 QUOTATION MARK ‛
+            "\u2032",  # PRIME (often used as an apostrophe) ′
+            "\uFF07",  # FULLWIDTH APOSTROPHE ＇
+            # Double quotes
+            "\u201C",  # LEFT DOUBLE QUOTATION MARK “
+            "\u201D",  # RIGHT DOUBLE QUOTATION MARK ”
+            "\u201E",  # DOUBLE LOW-9 QUOTATION MARK „
+            "\u201F",  # DOUBLE HIGH-REVERSED-9 QUOTATION MARK ‟
+            "\u2033",  # DOUBLE PRIME ″
+            "\u00AB",  # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK «
+            "\u00BB",  # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK »
+            "\uFF02",  # FULLWIDTH QUOTATION MARK ＂
+        ]
+
+        # Create a translation mapping from the Unicode code point of each quote character
+        # to the desired replacement.
+        translation_map = {ord(char): replacement for char in quote_characters}
+        normalized_input_string = input_string.translate(translation_map)
+        return normalized_input_string
+
+    def _normalize_alias_list(self, aliases: list[str]) -> list[str]:
+        """
+        Normalize the alias list by replacing various Unicode and ASCII quote characters with a single default quote character.
+
+        Args:
+            aliases (list[str]): The alias list to normalize
+
+        Returns:
+            list[str]: The normalized alias list
+        """
+        normalized_aliases = list()
+
+        for alias in aliases:
+            normalized_alias = self._normalize_quotes(alias)
+            normalized_aliases.append(normalized_alias)
+        normalized_aliases.sort()
+        return normalized_aliases
+
+    def _create_custom_list_for_quotes(self, aliases: list[str]) -> list[str]:
+        """
+        Create custom list for quote characters by calling for each alias in the aliases list the method
+        _create_custom_entry_for_quotes and returning the custom list.
+
+        Args:
+            aliases (list[str]): The alias list to create custom list for quote characters
+
+        Returns:
+            list[str]: The created custom list
+        """
+        custom_aliases: list[str] = list()
+        for alias in aliases:
+            self._create_custom_entry_for_quotes(alias, custom_aliases)
+        custom_aliases.sort()
+        return custom_aliases
+
+    def _create_custom_entry_for_quotes(self, alias: str, aliases: list[str]) -> None:
+        """
+        Create custom entry for an alias with words or phrases surrounded by quotes. When the word or phrase has single
+        quote characters, it will be replaced with a double quote characters and vice versa.
+
+        Args:
+            alias (str): The alias to create custom entry for
+``          aliases (dict[str, list[str]]): The alias dictionary to put the custom entry in
+        """
+        pattern = re.compile(r'(?<!\w)(["\'])(.+?)\1(?!\w)')
+
+        if pattern.search(alias):
+            new_alias = pattern.sub(self._swap_quotes, alias)
+            if new_alias not in aliases:
+                aliases.append(new_alias)
+
+    @staticmethod
+    def _swap_quotes(match):
+        quote, text = match.groups()
+        return f'"{text}"' if quote == "'" else f"'{text}'"
