@@ -6,6 +6,7 @@ import sys
 from typing import Optional
 from licenselynx.license_object import LicenseObject
 from licenselynx.license_map_singleton import _LicenseMapSingleton
+from licenselynx.quotes_handler import _QuotesHandler
 
 
 class LicenseLynx:
@@ -20,7 +21,7 @@ class LicenseLynx:
         or throws an exception if a runtime error occurs
         """
         try:
-
+            license_name = _QuotesHandler().normalize_quotes(license_name)
             instance = _LicenseMapSingleton()
 
             license_object: Optional[LicenseObject] = instance.merged_data.stable_map.get(license_name)
