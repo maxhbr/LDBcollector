@@ -13,5 +13,6 @@
   "rejected": [],
   "risky": [
     "Mulan PSL v1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

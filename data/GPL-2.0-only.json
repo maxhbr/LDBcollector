@@ -50,5 +50,6 @@
     "GPLv2",
     "GNU General Public License v2",
     "GNU General Public License v2 (GPLv2)"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

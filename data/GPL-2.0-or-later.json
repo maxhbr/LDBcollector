@@ -28,5 +28,6 @@
     "License :: OSI Approved :: GPLv2+",
     "OSI Approved :: GPLv2+",
     "License :: GPLv2+"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

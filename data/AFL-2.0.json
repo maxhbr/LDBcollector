@@ -18,5 +18,6 @@
   "risky": [
     "afl-2",
     "afl2"
-  ]
+  ],
+  "isMajorVersionOnly": false
 }

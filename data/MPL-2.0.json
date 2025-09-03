@@ -49,5 +49,6 @@
     "MPLv2",
     "mpl-2",
     "mpl2"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

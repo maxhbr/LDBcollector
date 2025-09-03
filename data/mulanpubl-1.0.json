@@ -11,5 +11,6 @@
   "rejected": [],
   "risky": [
     "Mulan Public License, Version 1 (Mulan PubL v1)"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

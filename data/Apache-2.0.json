@@ -38,5 +38,6 @@
     "APACHEv2",
     "APL2",
     "Apache2"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

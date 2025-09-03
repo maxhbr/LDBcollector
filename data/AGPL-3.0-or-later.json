@@ -29,5 +29,6 @@
     "GNU Affero General Public License v3 or later",
     "GNU Affero General Public License v3 or later (AGPLv3+)",
     "AGPLv3+"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

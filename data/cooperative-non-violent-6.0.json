@@ -11,5 +11,6 @@
   "rejected": [],
   "risky": [
     "Cooperative Non-Violent Public License v6"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

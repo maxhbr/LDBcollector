@@ -13,5 +13,6 @@
   "rejected": [],
   "risky": [
     "Bison 2.2 exception to GPL 2.0 or later"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

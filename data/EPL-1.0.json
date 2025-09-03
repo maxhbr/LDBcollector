@@ -44,5 +44,6 @@
     "EPL License",
     "Eclipse Public License"
   ],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": true
 }

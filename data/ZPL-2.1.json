@@ -29,5 +29,6 @@
     "ZPL (Public License)",
     "zope"
   ],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": false
 }

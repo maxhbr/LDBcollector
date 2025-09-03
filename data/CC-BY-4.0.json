@@ -32,5 +32,6 @@
   "risky": [
     "CC BY v4",
     "CC-BY v4"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

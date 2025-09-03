@@ -46,5 +46,6 @@
     "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
     "GNU Lesser General Public License v2",
     "GNU Lesser General Public License v2 (LGPLv2)"
-  ]
+  ],
+  "isMajorVersionOnly": false
 }

@@ -20,5 +20,6 @@
     "OSI Approved :: GNU Affero General Public License v3",
     "License :: GNU Affero General Public License v3",
     "GNU Affero General Public License v3"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

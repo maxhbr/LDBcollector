@@ -29,5 +29,6 @@
   "risky": [
     "CC BY v3",
     "CC-BY v3"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

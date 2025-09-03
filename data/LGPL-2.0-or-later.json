@@ -16,5 +16,6 @@
   "rejected": [
     "LicenseRef-LGPL"
   ],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": false
 }

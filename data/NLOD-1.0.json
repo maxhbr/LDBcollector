@@ -14,5 +14,6 @@
   "rejected": [],
   "risky": [
     "Norwegian Licence for Open Government Data"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

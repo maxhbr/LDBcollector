@@ -27,5 +27,6 @@
   },
   "src": "spdx",
   "rejected": [],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": false
 }

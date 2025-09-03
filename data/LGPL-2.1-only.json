@@ -35,5 +35,6 @@
   "rejected": [
     "LGPL2"
   ],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": false
 }

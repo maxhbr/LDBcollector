@@ -29,5 +29,6 @@
     "OSI Approved :: MPL",
     "MPL"
   ],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": false
 }

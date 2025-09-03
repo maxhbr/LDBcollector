@@ -1,17 +1,18 @@
 {
-    "canonical": "bzip2-1.0.6",
-    "aliases": {
-        "spdx": [
-            "bzip2 and libbzip2 License v1.0.6"
-        ],
-        "custom": []
-    },
-    "src": "spdx",
-    "rejected": [
-        "bzip2-1.0.5"
+  "canonical": "bzip2-1.0.6",
+  "aliases": {
+    "spdx": [
+      "bzip2 and libbzip2 License v1.0.6"
     ],
-    "risky": [
-        "bzip2-libbzip-2010",
-        "bzip2 License 2010"
-    ]
+    "custom": []
+  },
+  "src": "spdx",
+  "rejected": [
+    "bzip2-1.0.5"
+  ],
+  "risky": [
+    "bzip2-libbzip-2010",
+    "bzip2 License 2010"
+  ],
+  "isMajorVersionOnly": false
 }

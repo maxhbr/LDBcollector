@@ -14,5 +14,6 @@
   "rejected": [
     "tu-berlin"
   ],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": true
 }

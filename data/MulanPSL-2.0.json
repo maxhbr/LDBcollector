@@ -26,5 +26,6 @@
     "License :: OSI Approved :: Mulan Permissive Software License v2",
     "License :: Mulan Permissive Software License v2",
     "OSI Approved :: Mulan Permissive Software License v2"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

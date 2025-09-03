@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "YOLO License v1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

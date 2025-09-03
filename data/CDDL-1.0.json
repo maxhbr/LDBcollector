@@ -44,5 +44,6 @@
     "CDDL License",
     "Common Development and Distribution License"
   ],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": false
 }

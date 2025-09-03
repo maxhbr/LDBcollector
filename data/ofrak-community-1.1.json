@@ -9,5 +9,6 @@
   },
   "src": "scancode-licensedb",
   "rejected": [],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": false
 }
