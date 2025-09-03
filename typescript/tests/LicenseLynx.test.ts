@@ -25,8 +25,17 @@ describe('LicenseLynx tests', () => {
         jest.clearAllMocks();
     });
 
+
     it('should return data when license exists', async () => {
         return map("BSD Zero Clause").then(licenseObject => {
+            expect(licenseObject).not.toBe(null);
+            expect(licenseObject!.canonical).toEqual('0BSD');
+            expect(licenseObject!.src).toEqual('spdx');
+        });
+    });
+
+    it('should return normalized quotes when license exists', async () => {
+        return map("BSD ‚Zero‛ Clause").then(licenseObject => {
             expect(licenseObject).not.toBe(null);
             expect(licenseObject!.canonical).toEqual('0BSD');
             expect(licenseObject!.src).toEqual('spdx');
@@ -44,6 +53,15 @@ describe('LicenseLynx tests', () => {
     it('should return reject error when license not found', async () => {
         await expect(map('licenseNonExisting')).rejects.toEqual(new Error('error: License licenseNonExisting not found'));
         return expect(map('licenseNonExisting', true)).rejects.toEqual(new Error('error: License licenseNonExisting not found'));
+
+    });
+
+    it('should return reject error when input is null', async () => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        const input: string = null
+        await expect(map(input)).rejects.toEqual(new Error('error: License null not found'));
+        return expect(map(input, true)).rejects.toEqual(new Error('error: License null not found'));
 
     });
 });

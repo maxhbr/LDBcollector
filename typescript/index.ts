@@ -29,7 +29,10 @@ interface LicenseRepository {
 export const map = function (licenseName: string, risky: boolean = false) {
     return new Promise<LicenseObject>((resolve, reject) => {
         const licenses = mergedData as LicenseRepository;
-        let licenseData = licenses.stableMap[licenseName];
+
+        const normalizedLicenseName = normalizeQuotes(licenseName);
+
+        let licenseData = licenses.stableMap[normalizedLicenseName];
 
         if (!licenseData && risky) {
             licenseData = licenses.riskyMap[licenseName];
@@ -47,5 +50,52 @@ export const map = function (licenseName: string, risky: boolean = false) {
         reject(new Error('error: License ' + licenseName + ' not found'));
     })
 }
+
+// A readonly array of quote characters to be replaced.
+const QUOTE_CHARACTERS: readonly string[] = [
+    // Single quotes
+    '‘', // LEFT SINGLE QUOTATION MARK
+    '’', // RIGHT SINGLE QUOTATION MARK
+    '‚', // SINGLE LOW-9 QUOTATION MARK
+    '‛', // SINGLE HIGH-REVERSED-9 QUOTATION MARK
+    '′', // PRIME (often used as an apostrophe)
+    '＇', // FULLWIDTH APOSTROPHE
+    // Double quotes
+    '“', // LEFT DOUBLE QUOTATION MARK
+    '”', // RIGHT DOUBLE QUOTATION MARK
+    '„', // DOUBLE LOW-9 QUOTATION MARK
+    '‟', // DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+    '″', // DOUBLE PRIME
+    '«', // LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+    '»', // RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+    '＂'  // FULLWIDTH QUOTATION MARK
+];
+
+/**
+ * Checks if a given character is a recognized quote character.
+ *
+ * @param char - The character to check.
+ * @returns True if the character is a quote character, false otherwise.
+ */
+const isQuoteCharacter = (char: string): boolean => {
+    return QUOTE_CHARACTERS.includes(char);
+};
+
+/**
+ * Normalizes an input string by replacing recognized Unicode quote characters
+ * with a specified replacement string.
+ *
+ * @param input - The input string that may contain various quote characters.
+ * @param replacement - The string to replace the quote characters. Defaults to "'".
+ * @returns The normalized string with replaced quote characters.
+ */
+const normalizeQuotes = (input: string, replacement: string = "'"): string => {
+    if (!input) return input;
+
+    return input
+        .split("")
+        .map(char => isQuoteCharacter(char) ? replacement : char)
+        .join("");
+};
 
 
