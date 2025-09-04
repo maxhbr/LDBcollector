@@ -7,7 +7,7 @@ from src.update.OsiDataUpdate import OsiDataUpdate
 from src.update.ScancodeLicensedbDataUpdate import ScancodeLicensedbDataUpdate
 from src.update.SpdxDataUpdate import SpdxDataUpdate
 import src.validate.data_validation as validation
-
+import src.update.update_major_version_only as update_major_version_only
 
 def main():
     parser = argparse.ArgumentParser()
@@ -27,6 +27,8 @@ def main():
     if args.osi:
         osi = OsiDataUpdate(args.debug)
         osi.process_licenses()
+
+    update_major_version_only.main()
 
     validation.main()
 
