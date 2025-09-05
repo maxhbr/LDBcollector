@@ -35,9 +35,7 @@ def _build_dict_with_base_name_license(licenses_list):
             base_name_dict[base_name] = [(name, int(version.split(".")[0]))]
         else:
             base_name_dict[base_name].append((name, int(version.split(".")[0])))
-    for base_name, versions in base_name_dict.copy().items():
-        if len(versions) <= 1:
-            base_name_dict.pop(base_name)
+
     return base_name_dict
 
 
