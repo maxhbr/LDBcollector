@@ -239,6 +239,70 @@ def compare_versions(aliases_list, canonical_has_version, canonical_tokens, wron
                 wrong_version.append(alias)
 
 
+def check_major_version_flag():
+    """
+    Validates that for each JSON file in DATA_DIR with a canonical name containing a single version token
+    (e.g. "Apache-2.0"), the 'isMajorVersionOnly' flag has been set correctly.
+
+    For each group of licenses (grouped by base name, i.e. canonical with the version removed) that contains more than one file,
+    if a license’s major version occurs only once then its expected 'isMajorVersionOnly' flag is True.
+    Otherwise (if the major version appears for more than one file) the flag should be False.
+
+    Files that do not have a semver in the canonical field or that belong to a group of one are skipped.
+    """
+    group_by_base = {}
+    for filename in os.listdir(DATA_DIR):
+        if filename.endswith(JSON_EXTENSION):
+            filepath = os.path.join(DATA_DIR, filename)
+            try:
+                with open(filepath, 'r') as f:
+                    data = json.load(f)
+            except json.JSONDecodeError:
+                logger.error(f"Invalid JSON in file {filename}")
+                continue
+
+            canonical = data.get("canonical")
+            if not canonical:
+                continue
+
+            canonical_tokens = extract_version_tokens(canonical)
+            # Process only if exactly one version token is found
+            if len(canonical_tokens) != 1:
+                continue
+
+            version = next(iter(canonical_tokens))
+            base_name = canonical.replace(version, '')
+            try:
+                major = int(version.split('.')[0])
+            except ValueError:
+                logger.error(f"Invalid version format in file {filename}: {version}")
+                continue
+
+            file_info = {
+                "filename": filename,
+                "canonical": canonical,
+                "major": major,
+                "flag": data.get("isMajorVersionOnly")
+            }
+            group_by_base.setdefault(base_name, []).append(file_info)
+
+    # Now, for each group with more than one file, perform the check
+    for base, files in group_by_base.items():
+
+        # Determine if a major version number appears more than once for the group
+        major_versions = [info["major"] for info in files]
+        duplicate_majors = {maj for maj in major_versions if major_versions.count(maj) > 1}
+        # Check each file in the group
+        for info in files:
+            # Expected flag is True if its major version number is unique, else False.
+            expected_flag = True if info["major"] not in duplicate_majors else False
+            if info["flag"] != expected_flag:
+                logger.error(
+                    f"File '{info['filename']}' has 'isMajorVersionOnly'={info['flag']} but "
+                    f"expected {expected_flag} based on canonical '{info['canonical']}'"
+                )
+
+
 def main():
     spdx_license_url = "https://raw.githubusercontent.com/spdx/license-list-data/main/json/licenses.json"
     spdx_license_file = "spdx_license_list.json"
@@ -273,6 +337,7 @@ def main():
     check_no_empty_field_except_custom()
 
     check_version_between_canonical_and_alias()
+    check_major_version_flag()
     # Check if error occurred
     if logger.handlers[1].error_occurred:
         exit(1)

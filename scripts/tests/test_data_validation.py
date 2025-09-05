@@ -5,6 +5,8 @@ import os
 import json
 import pytest
 from unittest import mock
+
+from src.validate import data_validation
 from src.validate.data_validation import (
     download_license_list,
     load_ids_from_license_list,
@@ -527,6 +529,63 @@ def test_check_version_between_canonical_and_alias_failure(caplog):
     assert mock_logger.error.call_count == 1
     assert str(mock_logger.method_calls).__contains__(
         "valid.json has wrong versions for aliases: ['invalid_alias_version', 'wrong_version_3.0_1.0']")
+
+
+def test_check_major_version_flag(caplog, monkeypatch):
+    test_dir = "test_data"
+    os.makedirs(test_dir, exist_ok=True)
+
+    # Group 1: "Apache-" group
+    # Expected: major version 1 appears twice so expected flag should be False,
+    # while major version 2 appears once so expected flag should be True.
+    apache_1_0 = {"canonical": "Apache-1.0", "isMajorVersionOnly": False}
+    apache_1_1 = {"canonical": "Apache-1.1", "isMajorVersionOnly": True}
+    apache_2_0 = {"canonical": "Apache-2.0", "isMajorVersionOnly": True}
+
+    with open(os.path.join(test_dir, "Apache-1.0.json"), "w") as f:
+        json.dump(apache_1_0, f)
+    with open(os.path.join(test_dir, "Apache-1.1.json"), "w") as f:
+        json.dump(apache_1_1, f)
+    with open(os.path.join(test_dir, "Apache-2.0.json"), "w") as f:
+        json.dump(apache_2_0, f)
+
+    # Group 2: "GPL-" group (both files expected to have True as they have unique major versions)
+    gpl_2_0 = {"canonical": "GPL-2.0", "isMajorVersionOnly": True}
+    gpl_3_0 = {"canonical": "GPL-3.0", "isMajorVersionOnly": True}
+    with open(os.path.join(test_dir, "GPL-2.0.json"), "w") as f:
+        json.dump(gpl_2_0, f)
+    with open(os.path.join(test_dir, "GPL-3.0.json"), "w") as f:
+        json.dump(gpl_3_0, f)
+
+    # Group 3: File with canonical without a version token (will be skipped)
+    noversion = {"canonical": "LicenseNoVersion"}
+    with open(os.path.join(test_dir, "LicenseNoVersion.json"), "w") as f:
+        json.dump(noversion, f)
+
+    # Group 4: A file that alone makes its own group (skipped because group size is 1)
+    unique = {"canonical": "UniqueLicense-1.0", "isMajorVersionOnly": True}
+    with open(os.path.join(test_dir, "UniqueLicense-1.0.json"), "w") as f:
+        json.dump(unique, f)
+
+    # Group 5: A license file which should have isMajorVersionOnly flag set to true but isn't
+    mit_4_0 = {"canonical": "MIT-4.0", "isMajorVersionOnly": False}  # Incorrect: Expected True.
+
+    with open(os.path.join(test_dir, "MIT-4.0.json"), "w") as f:
+        json.dump(mit_4_0, f)
+
+    monkeypatch.setattr(data_validation, "DATA_DIR", test_dir)
+
+    caplog.clear()
+
+    data_validation.check_major_version_flag()
+
+    error_messages = [record.message for record in caplog.records if record.levelname == "ERROR"]
+
+    assert any("Apache-1.1.json" in msg and "expected False" in msg for msg in error_messages)
+    assert any("MIT-4.0.json" in msg and "expected True" in msg for msg in error_messages)
+
+    for filename in ["GPL-2.0.json", "GPL-3.0.json", "UniqueLicense-1.0.json", "LicenseNoVersion.json"]:
+        assert not any(filename in msg for msg in error_messages)
 
 
 if __name__ == "__main__":
