@@ -13,5 +13,6 @@
   "rejected": [],
   "risky": [
     "Nokia Qt Exception to LGPL 2.1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

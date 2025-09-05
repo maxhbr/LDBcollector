@@ -1,15 +1,16 @@
 {
-    "canonical": "Unicode-3.0",
-    "aliases": {
-        "spdx": [
-            "Unicode License v3"
-        ],
-        "custom": []
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": [
-        "unicode-v3",
-        "LicenseRef-scancode-unicode-v3"
-    ]
+  "canonical": "Unicode-3.0",
+  "aliases": {
+    "spdx": [
+      "Unicode License v3"
+    ],
+    "custom": []
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": [
+    "unicode-v3",
+    "LicenseRef-scancode-unicode-v3"
+  ],
+  "isMajorVersionOnly": true
 }

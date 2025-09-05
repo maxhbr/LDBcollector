@@ -18,5 +18,6 @@
   "rejected": [
     "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 version 1."
   ],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": true
 }

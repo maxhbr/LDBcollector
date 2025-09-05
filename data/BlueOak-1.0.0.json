@@ -25,5 +25,6 @@
     "License :: Blue Oak Model License",
     "OSI Approved :: Blue Oak Model License",
     "Blue Oak Model License"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

@@ -11,5 +11,6 @@
   "rejected": [],
   "risky": [
     "mod_dav License Agreement v1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

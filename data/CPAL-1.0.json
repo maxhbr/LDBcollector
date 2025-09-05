@@ -17,5 +17,6 @@
   "rejected": [],
   "risky": [
     "cpal"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

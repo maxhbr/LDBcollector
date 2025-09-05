@@ -11,5 +11,6 @@
   "risky": [
     "PFTUS-license",
     "Protected Free To Use Software License"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

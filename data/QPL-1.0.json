@@ -29,5 +29,6 @@
     "OSI Approved :: QPL",
     "License :: QPL",
     "QPL"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

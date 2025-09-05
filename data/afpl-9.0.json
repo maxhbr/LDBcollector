@@ -11,5 +11,6 @@
   "risky": [
     "Aladdin Free Public License v9",
     "Aladdin FPL v9"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

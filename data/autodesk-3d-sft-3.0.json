@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "Autodesk 3D Studio File Toolkit for Release 3"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

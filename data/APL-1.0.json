@@ -17,5 +17,6 @@
   "rejected": [],
   "risky": [
     "Adaptive Public License"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

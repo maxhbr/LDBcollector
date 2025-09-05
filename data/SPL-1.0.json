@@ -21,5 +21,6 @@
     "OSI Approved :: Sun Public License",
     "License :: Sun Public License",
     "Sun Public License"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

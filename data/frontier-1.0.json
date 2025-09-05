@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "Frontier Artistic License"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

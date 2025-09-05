@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "Bitwarden License Agreement v1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

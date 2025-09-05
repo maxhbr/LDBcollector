@@ -10,5 +10,6 @@
   },
   "src": "scancode-licensedb",
   "rejected": [],
-  "risky": []
+  "risky": [],
+  "isMajorVersionOnly": true
 }

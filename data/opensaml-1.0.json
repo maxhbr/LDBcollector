@@ -11,5 +11,6 @@
   "risky": [
     "OpenSAML License v1",
     "OpenSAML License Version 1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

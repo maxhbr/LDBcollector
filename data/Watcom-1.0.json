@@ -17,5 +17,6 @@
   "rejected": [],
   "risky": [
     "sybase"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

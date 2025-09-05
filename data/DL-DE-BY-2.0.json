@@ -15,5 +15,6 @@
     "dl-de/by-2-0-de",
     "LicenseRef-scancode-dl-de-by-2-0-de",
     "dl-de-by-2-0-de"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

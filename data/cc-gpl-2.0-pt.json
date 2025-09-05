@@ -11,5 +11,6 @@
   "rejected": [],
   "risky": [
     "Creative Commons Licen\u00e7a P\u00fablica Geral do GNU (GPL) [General Public License]"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

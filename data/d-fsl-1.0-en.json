@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "German Free Software License"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

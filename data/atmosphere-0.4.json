@@ -11,5 +11,6 @@
   "rejected": [],
   "risky": [
     "atmosphere"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

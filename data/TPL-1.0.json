@@ -1,16 +1,17 @@
 {
-    "canonical": "TPL-1.0",
-    "aliases": {
-        "spdx": [
-            "THOR Public License 1.0"
-        ],
-        "custom": []
-    },
-    "src": "spdx",
-    "rejected": [],
-    "risky": [
-        "Thor Public License",
-        "LicenseRef-scancode-thor-pl",
-        "thor-pl"
-    ]
+  "canonical": "TPL-1.0",
+  "aliases": {
+    "spdx": [
+      "THOR Public License 1.0"
+    ],
+    "custom": []
+  },
+  "src": "spdx",
+  "rejected": [],
+  "risky": [
+    "Thor Public License",
+    "LicenseRef-scancode-thor-pl",
+    "thor-pl"
+  ],
+  "isMajorVersionOnly": true
 }

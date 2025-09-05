@@ -13,5 +13,6 @@
   "rejected": [],
   "risky": [
     "open-public"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

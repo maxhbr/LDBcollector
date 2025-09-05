@@ -26,5 +26,6 @@
     "OSI Approved :: UPL",
     "License :: UPL",
     "UPL"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

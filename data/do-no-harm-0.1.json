@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "Do No Harm"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

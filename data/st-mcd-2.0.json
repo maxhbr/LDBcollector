@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "STMicro Liberty License v2"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

@@ -12,5 +12,6 @@
   "risky": [
     "CC + Corporate Accountability Lab",
     "CC+CAL"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

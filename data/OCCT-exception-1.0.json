@@ -13,5 +13,6 @@
   "rejected": [],
   "risky": [
     "Open CASCADE Exception to LGPL 2.1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

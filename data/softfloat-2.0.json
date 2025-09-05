@@ -11,5 +11,6 @@
   "rejected": [],
   "risky": [
     "SoftFloat Legal Notice with Prominent Notice"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

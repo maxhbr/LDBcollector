@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "BIOSL v4"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

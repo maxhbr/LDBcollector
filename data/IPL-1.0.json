@@ -20,5 +20,6 @@
     "License :: IBM Public License",
     "OSI Approved :: IBM Public License",
     "License :: OSI Approved :: IBM Public License"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

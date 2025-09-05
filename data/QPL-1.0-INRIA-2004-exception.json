@@ -14,5 +14,6 @@
   "risky": [
     "LicenseRef-scancode-inria-linking-exception",
     "inria-linking-exception"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

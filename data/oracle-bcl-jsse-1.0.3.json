@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "Oracle BCL for JSSE 1.0.3 for CDC 1.0.2"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

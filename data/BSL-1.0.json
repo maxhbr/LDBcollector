@@ -43,5 +43,6 @@
     "Boost Software License",
     "Boost",
     "bsl"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

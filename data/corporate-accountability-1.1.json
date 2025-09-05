@@ -11,5 +11,6 @@
   "risky": [
     "Corporate Accountability Lab Software",
     "CAL Software"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

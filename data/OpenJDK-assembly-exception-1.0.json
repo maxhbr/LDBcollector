@@ -13,5 +13,6 @@
   "rejected": [],
   "risky": [
     "OpenJDK Assembly exception to GPL 2.0"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

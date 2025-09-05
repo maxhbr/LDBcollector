@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "Froala Open Web Design License"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

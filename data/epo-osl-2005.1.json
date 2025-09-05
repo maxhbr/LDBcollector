@@ -11,5 +11,6 @@
   "risky": [
     "EPO Open Source Licence No. 2005/1",
     "EPO-OSL"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

@@ -14,5 +14,6 @@
   "rejected": [],
   "risky": [
     "PSF2"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

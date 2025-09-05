@@ -11,5 +11,6 @@
   "rejected": [],
   "risky": [
     "Mozilla Open Software Patent License Agreement v1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

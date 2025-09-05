@@ -14,5 +14,6 @@
   "rejected": [],
   "risky": [
     "LicenseRef-scancode-lgpl-3-plus-linking"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

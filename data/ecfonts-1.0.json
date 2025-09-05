@@ -11,5 +11,6 @@
   "risky": [
     "latex-ec-fonts",
     "Copyright notice to the ec fonts"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

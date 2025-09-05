@@ -13,5 +13,6 @@
   "rejected": [],
   "risky": [
     "Qwt exception to LGPL 2.1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

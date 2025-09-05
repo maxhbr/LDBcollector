@@ -14,5 +14,6 @@
   "rejected": [],
   "risky": [
     "Public Domain Dedication & Licence (PDDL)"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

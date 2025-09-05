@@ -23,5 +23,6 @@
   "rejected": [],
   "risky": [
     "Vovida"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

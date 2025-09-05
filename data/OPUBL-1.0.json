@@ -14,5 +14,6 @@
   "risky": [
     "openpub",
     "LicenseRef-scancode-openpub"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

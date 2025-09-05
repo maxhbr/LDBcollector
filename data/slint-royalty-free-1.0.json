@@ -11,5 +11,6 @@
   "risky": [
     "Slint Royalty-free Desktop and Web Applications License, version 1.0.1",
     "Slint Royalty-free License 1.0.1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

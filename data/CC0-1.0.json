@@ -29,5 +29,6 @@
     "CC0 License",
     "CC0 Universal",
     "Creative Commons Zero"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }

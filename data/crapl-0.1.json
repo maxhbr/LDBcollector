@@ -10,5 +10,6 @@
   "rejected": [],
   "risky": [
     "CRAPL v0 BETA 1"
-  ]
+  ],
+  "isMajorVersionOnly": true
 }
