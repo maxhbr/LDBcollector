@@ -71,7 +71,7 @@ proprietäre Software überführen.
 | Curl License | [🇬🇧](https://github.com/curl/curl/blob/master/COPYING) | curl |
 | Do What The Fuck You Want To Public License (v. 1.0) | [🇬🇧](https://commons.wikimedia.org/wiki/Template:WTFPL-1) | - |
 | Do What The Fuck You Want To Public License (v. 2.0) | [🇬🇧](http://www.wtfpl.net/txt/copying/ ) | - |
-| Eclipse Distribution License (v 1.0) | [🇬🇧](https://www.eclipse.org/org/documents/edl-v10.php) |  EPL-1.0 |
+| Eclipse Distribution License (v 1.0) | [🇬🇧](https://www.eclipse.org/org/documents/edl-v10.php) | BSD-3-Clause |
 | Educational Community License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20050326095112/http://www.sakaiproject.org:80/license.html) |  ECL-1.0 |
 | Educational Community License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20100617144451/http://www.osedu.org/licenses/ECL-2.0) |  ECL-2.0 |
 | Eiffel Forum License (v. 1.0) | [🇬🇧](http://www.eiffel-nice.org/license/forum.txt) |  EFL-1.0 |
