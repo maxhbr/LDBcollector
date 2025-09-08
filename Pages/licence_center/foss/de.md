@@ -75,8 +75,8 @@ proprietäre Software überführen.
 | Eclipse Distribution License (v 1.0) | [🇬🇧](https://www.eclipse.org/org/documents/edl-v10.php) | BSD-3-Clause |
 | Educational Community License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20050326095112/http://www.sakaiproject.org:80/license.html) |  ECL-1.0 |
 | Educational Community License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20100617144451/http://www.osedu.org/licenses/ECL-2.0) |  ECL-2.0 |
-| Eiffel Forum License (v. 1.0) | [🇬🇧](http://www.eiffel-nice.org/license/forum.txt) |  EFL-1.0 |
-| Eiffel Forum License (v. 2.0) | [🇬🇧](http://www.eiffel-nice.org/license/eiffel-forum-license-2.html) |  EFL-2.0 |
+| Eiffel Forum License (v. 1.0) | [🇬🇧](http://www.eiffel-nice.org/license/forum.txt) | EFL-1.0 |
+| Eiffel Forum License (v. 2.0) | [🇬🇧](http://www.eiffel-nice.org/license/eiffel-forum-license-2.html) | EFL-2.0 |
 | Entessa Public License (v. 1.0) | [🇬🇧](http://web.archive.org/web/20050419215723/www.openseal.org/epl/) | Entessa |
 | EU DataGrid Software License | [🇬🇧](https://web.archive.org/web/20021229214435/http://eu-datagrid.web.cern.ch:80/eu-datagrid/license.html) | EUDatagrid |
 | Fair License | [🇬🇧](https://web.archive.org/web/20040803105645/http://rhid.com/fair) |  Fair |
@@ -85,13 +85,13 @@ proprietäre Software überführen.
 | FSF Unlimited License | [🇬🇧](https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License) | FSFUL |
 | Galen Open Source License (GOSL) | [🇬🇧](http://www.opengalen.org/gosl.html) | - |
 | GD License | [🇬🇧](https://libgd.github.io/manuals/2.3.0/files/license-txt.html) | GD |
-| Globus Toolkit Public License | [🇬🇧](https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html) | - |
-| Globus Toolkit Public License (GTPL) (v. 2.0) | [🇬🇧](http://www.globus.org/toolkit/license.html) | - |
+| Globus Toolkit Public License (GTPL) | [🇬🇧](https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html) | LicenseRef-scancode-gtpl-v1  |
+| Globus Toolkit Public License (GTPL) (v. 2.0) | [🇬🇧](http://www.globus.org/toolkit/license.html) | LicenseRef-scancode-gtpl-v2  |
 | ICU License | [🇬🇧](https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html) | ICU |
 | ImageMagick Terms and Conditions for Use, Reproduction, and Distribution | [🇬🇧](http://www.imagemagick.org/script/license.php) | ImageMagick |
 | Independent JPEG Group License | [🇬🇧](https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG) |  IJG |
 | ISC License | [🇬🇧](http://mirbsd.org/ISC-Licence) | ISC |
-| JDOM License | [🇬🇧](https://github.com/hunterhacker/jdom/blob/master/LICENSE.txt) |  LicenseRef-scancode-jdom  |
+| JDOM License | [🇬🇧](https://github.com/hunterhacker/jdom/blob/master/LICENSE.txt) | LicenseRef-scancode-jdom  |
 | Historical Permission Notice and Disclaimer (HPND) | [🇬🇧](https://web.archive.org/web/20030923051149/http://www.geocities.com/brucedodson.rm/hist_pnd.htm) | HPND |
 | Horde Apache-like License | [🇬🇧](http://www.horde.org/licenses/asl.php) | - |
 | Horde BSD-like License | [🇬🇧](http://www.horde.org/licenses/bsdl.php) | - |
