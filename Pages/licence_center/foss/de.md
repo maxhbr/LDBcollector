@@ -199,7 +199,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 | Open RTLinux Patent License | [🇬🇧](https://web.archive.org/web/20120222184907/http://rtlinuxfree.com/openpatentlicense.html) | - |
 | RedHat eCos Public License (v. 1.1) | [🇬🇧](https://ecos.sourceware.org/old-license.html) | RHeCos-1.1 |
 | Simple Public License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20080906145432/http://www.law.washington.edu/Casrip/License/SimplePublicLicense.html) | SimPL-2.0 |
-| Sleepycat License | [🇬🇧](https://fedoraproject.org/wiki/Licensing/Sleepycat) | Sleepycat |
+| Sleepycat License (einordnugn unklar) | [🇬🇧](https://fedoraproject.org/wiki/Licensing/Sleepycat) | Sleepycat |
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
 
 | Lizenz | Text | SPDX-tag |
