@@ -52,7 +52,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           </tr>
         </thead>
         <tbody>
-          {% for usage in to_confirm %}
+          {% for usage, conflicting_curations in to_confirm %}
             <tr>
               <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version.component.name }}</a>
                 {% if usage.version.component.homepage_url and usage.version.component.homepage_url != 'NOASSERTION' %}
@@ -64,7 +64,13 @@ SPDX-License-Identifier: AGPL-3.0-only
               <td><a href="{% url "cube:version_update" usage.version.component.id usage.version.id %}?from={{ request.path|urlencode }}">{{ usage.version.version_number }}</a></td>
               <td>{{ usage.scope }}</td>
               <td>{{ usage.version.spdx_valid_license_expr }} </td>
-              <td>{% if perms.cube.add_licensecuration %}
+              <td>{% if conflicting_curations %}
+                {{ conflicting_curations|length }} curations apply. {% if perms.cube.change_licensecuration %}Edit curations
+                  {% for curation in conflicting_curations %}
+                    <a href="{% url "cube:licensecuration_update" curation.pk %}?from={{ request.path|urlencode }}">
+                      {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
+                  {% endfor %}{% endif %}
+              {% elif perms.cube.add_licensecuration %} perms.cube.add_licensecuration %}
                 <a href="{% url 'cube:release_andsvalidation_create' usage.id %}?from={{ request.path|urlencode }}">Confirm / Correct</a>
               {% endif %}</td>
               <td>{% if perms.cube.change_version %}

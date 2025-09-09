@@ -5,7 +5,7 @@
 from rest_framework import serializers
 
 from cube.models import Usage, Version, Component, License
-from cube.serializers.policy import LicenseChoiceSerializer
+from .policy import LicenseCurationSerializer, LicenseChoiceSerializer
 
 
 class UsageFlatSerializer(serializers.ModelSerializer):
@@ -61,6 +61,7 @@ class VersionSerializer(serializers.ModelSerializer):
     """
 
     component = serializers.PrimaryKeyRelatedField(read_only=True, required=False)
+    curations = LicenseCurationSerializer(many=True, read_only=True)
 
     class Meta:
         use_natural_foreign_keys = True
@@ -73,7 +74,15 @@ class VersionSerializer(serializers.ModelSerializer):
             "spdx_valid_license_expr",
             "corrected_license",
             "purl",
+            "curations",
         ]
+
+
+class UsageWithVersionsSerializer(UsageSerializer):
+    version = VersionSerializer(read_only=True)
+
+    class Meta(UsageSerializer.Meta):
+        fields = UsageSerializer.Meta.fields + ["version"]
 
 
 class ComponentSerializer(serializers.ModelSerializer):
