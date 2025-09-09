@@ -161,7 +161,7 @@ proprietäre Software überführen.
 | W3C Software Notice and License 2002-12-31 | [🇬🇧](https://www.w3.org/copyright/software-license-2002/) | W3C |
 | Wide Open License (WOL) | [🇬🇧](http://www.dspguru.com/wol2.htm) |  LicenseRef-scancode-wol |
 | X11 License | [🇬🇧](http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3) | X11 |
-| X Window System License | [🇬🇧](https://web.archive.org/web/20050406051821/%20http://www.x.org/Downloads_terms.html) | - |
+| X Window System License | [🇬🇧](https://web.archive.org/web/20030212204708/http://www.x.org/Downloads_terms.html) | - |
 | X.Net License | [🇬🇧](http://www.xnetinc.com/xiua/copyright.htm) | Xnet |
 | XFree86 Licence (v. 1.1) | [🇬🇧](http://www.xfree86.org/legal/licenses.html) |  XFree86-1.1 |
 | xinetd License | [🇬🇧](https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain) | xinetd |
@@ -206,7 +206,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | Arphic Public License | [🇬🇧](http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE) |  Arphic-1999 |
-| Contrat de License de Logiciel Libre CeCILL (v. 1.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1-US.html) | - |
+| Contrat de License de Logiciel Libre CeCILL (v. 1.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1-US.html) |	CECILL-1.0 |
 | CeCILL Free Software License Agreement (v. 1.1) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html) |  CECILL-1.1 |
 | Contrat de License de Logiciel Libre CeCILL (v. 2.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2-en.html) | CECILL-2.0 |
 | Contrat de License de Logiciel Libre CeCILL (v. 2.1) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html)| CECILL-2.1 |
@@ -281,45 +281,45 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 | Ricoh Source Code Public License | [🇬🇧](http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml) | RSCPL |
 | SNIA Public License Version (v.1.1) | [🇬🇧](https://web.archive.org/web/20050214120435/https://www.snia.org/smi/developers/open_source) | SNIA |
 | SugarCRM Public License (v. 1.1.3) | [🇬🇧](https://web.archive.org/web/20160622020613/http://www.sugarcrm.com/page/sugarcrm-public-license/en) | SugarCRM-1.1.3 |
-| Sun Industry Standards Source License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20000816085057/http://openoffice.org:80/project/www/sissl_license.html) | - |
-| Sun Industry Standards Source License (v. 1.1) | [🇬🇧](http://www.openoffice.org/licenses/sissl_license.html) |  SISSL |
-| Sun Industry Standards Source License (v. 1.2) | [🇬🇧](http://gridscheduler.sourceforge.net/Gridengine_SISSL_license.html) |  SISSL-1.2 |
-| Sun Public License (v. 1.0) | [🇬🇧](http://www.opensource.org/licenses/sunpublic.php) |  SPL-1.0 |
-| Sybase Open Watcom Public License 1.0 (FTP Link) | [🇬🇧](ftp://ftp.openwatcom.org/install/license.txt) |  Watcom-1.0 |
-| Zend License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt) |  Zend-2.0 |
+| Sun Industry Standards Source License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20000816085057/http://openoffice.org:80/project/www/sissl_license.html) | LicenseRef-scancode-sun-sissl-1.0 |
+| Sun Industry Standards Source License (v. 1.1) | [🇬🇧](http://www.openoffice.org/licenses/sissl_license.html) | SISSL |
+| Sun Industry Standards Source License (v. 1.2) | [🇬🇧](http://gridscheduler.sourceforge.net/Gridengine_SISSL_license.html) | SISSL-1.2 |
+| Sun Public License (v. 1.0) | [🇬🇧](http://www.opensource.org/licenses/sunpublic.php) | SPL-1.0 |
+| Sybase Open Watcom Public License 1.0 (FTP Link) | [🇬🇧](ftp://ftp.openwatcom.org/install/license.txt) | Watcom-1.0 |
+| Zend License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt) | Zend-2.0 |
 | Zenplex Public License | [🇬🇧](http://web.archive.org/web/20041010201945/www.zenplex.org/zpl_txt.html) | - |
 | Vtiger Public License (v. 1.2) | [🇬🇧](https://github.com/vtigercrm-jp/vtigercrm-6.0.0-ja/blob/master/LICENSE.txt) [🇩🇪](https://www.vtiger.com/de/open-source-crm/vtiger-public-license/) | - |
 | Zimbra Public License (ZPL) (v. 1.2) | [🇬🇧](https://web.archive.org/web/20080205064641/http://www.zimbra.com/license/zimbra_public_license_1.2.html) | - |
 | Zimbra Publice License (v. 1.3) | [🇬🇧](https://web.archive.org/web/20120617001845/http://www.zimbra.com/license/zimbra-public-license-1-3.html) |  Zimbra-1.3 |
-| Zimbra Publice License (v. 1.4) | [🇬🇧](https://www.zimbra.com/legal/zimbra-public-license-1-4/) |  Zimbra-1.4 |
+| Zimbra Publice License (v. 1.4) | [🇬🇧](https://www.zimbra.com/legal/zimbra-public-license-1-4/) | Zimbra-1.4 |
 
 #### Sonstige Lizenzen mit beschränktem Copyleft-Effekt
 
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | Adaptive Public License (v.1.0) | [🇬🇧](https://web.archive.org/web/20070722115014/http://www.mamook.net/mediawiki/index.php/Adaptive_Public_License) |  APL-1.0 |
-| Apple Public Source License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20060323040828/https://opensource.apple.com/apsl/2.0.txt) |  APSL-2.0 |
-| BitTorrent Open Source License (v. 1.0) | [🇬🇧](https://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?diff_format=s&revision=1.1.1.1&view=markup) |  BitTorrent-1.0 |
+| Apple Public Source License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20060323040828/https://opensource.apple.com/apsl/2.0.txt) | APSL-2.0 |
+| BitTorrent Open Source License (v. 1.0) | [🇬🇧](https://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?diff_format=s&revision=1.1.1.1&view=markup) | BitTorrent-1.0 |
 | Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0) | [🇬🇧](http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf) | - |
 | CeCILL-C Free Software License Agreement | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html) | CECILL-C |
 | CUPS License Agreement | [🇬🇧](https://opensource.apple.com/source/cups/cups-69/LICENSE.html) | LicenseRef-scancode-cups |
 | CUPS Apple OS Exception to GPL and LGPL | [🇬🇧](https://www.cups.org/doc/old-license.html) | LicenseRef-scancode-cups-apple-os-exception |  
-| Contrat de License de Logiciel Libre CeCILL-C | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html) | - |
-| Cougaar Open Source License Agreement (Einordnung unklar) | [🇬🇧](https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html) |  |
+| Contrat de License de Logiciel Libre CeCILL-C | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html) | CECILL-C |
+| Cougaar Open Source License Agreement (Einordnung unklar) | [🇬🇧](https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html) | LicenseRef-scancode-cosl |
 | Eclipse Public License (v. 2.0) | [🇬🇧](https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html) |  EPL-2.0 |
-| GNU General Public License v2.0 w/Bison exception | [🇬🇧](https://github.com/ifrOSS/Lizenzcenter/blob/Neue-Gliederung/Bison-exception-2.2) |  GPL-2.0-with-bison-exception |
-| GNU General Public License v2.0 w/Classpath exception | [🇬🇧](http://www.gnu.org/software/classpath/license.html) |  GPL-2.0-with-classpath-exception |
+| GNU General Public License v2.0 w/Bison exception | [🇬🇧](https://github.com/ifrOSS/Lizenzcenter/blob/Neue-Gliederung/Bison-exception-2.2) | GPL-2.0-with-bison-exception |
+| GNU General Public License v2.0 w/Classpath exception | [🇬🇧](http://www.gnu.org/software/classpath/license.html) | GPL-2.0-with-classpath-exception |
 | GNU General Public License v2.0 w/Font exception | [🇬🇧](http://www.gnu.org/licenses/gpl-faq.html#FontException) | GPL-2.0-with-font-exception |
-| GNU General Public License v2.0 w/GCC Runtime Library exception | [🇬🇧](https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=gcc/libgcc1.c;h=762f5143fc6eed57b6797c82710f3538aa52b40b;hb=cb143a3ce4fb417c68f5fa2691a1b1b1053dfba9) |  GPL-2.0-with-GCC-exception |
-| GNU General Public License v3.0 w/Autoconf exception | [🇬🇧](http://www.gnu.org/licenses/autoconf-exception-3.0.html) |  GPL-3.0-with-autoconf-exception |
-| GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.0) | [🇬🇧](http://www.gnu.org/licenses/gcc-exception-3.0.html) |  GPL-3.0-with-GCC-exception |
+| GNU General Public License v2.0 w/GCC Runtime Library exception | [🇬🇧](https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=gcc/libgcc1.c;h=762f5143fc6eed57b6797c82710f3538aa52b40b;hb=cb143a3ce4fb417c68f5fa2691a1b1b1053dfba9) | GPL-2.0-with-GCC-exception |
+| GNU General Public License v3.0 w/Autoconf exception | [🇬🇧](http://www.gnu.org/licenses/autoconf-exception-3.0.html) | GPL-3.0-with-autoconf-exception |
+| GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.0) | [🇬🇧](http://www.gnu.org/licenses/gcc-exception-3.0.html) | GPL-3.0-with-GCC-exception |
 | GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.1) | [🇬🇧](http://www.gnu.org/licenses/gcc-exception-3.1.html) | - |
-| GNU Library General Public License (LGPL) (v. 2.0) | [🇬🇧](http://www.gnu.org/copyleft/library.html) |  LGPL-2.0 |
+| GNU Library General Public License (LGPL) (v. 2.0) | [🇬🇧](http://www.gnu.org/copyleft/library.html) | LGPL-2.0 |
 | GNU Lesser General Public License (LGPL) (v. 2.1) | [🇬🇧](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) |  LGPL-2.1 |
-| GNU Lesser General Public License (LGPL) (v. 3.0) | [🇬🇧](http://www.gnu.org/licenses/lgpl.html) [🇩🇪](http://www.gnu.de/lgpl-ger.html) |  LGPL-3.0 |
+| GNU Lesser General Public License (LGPL) (v. 3.0) | [🇬🇧](http://www.gnu.org/licenses/lgpl.html) [🇩🇪](http://www.gnu.de/lgpl-ger.html) | LGPL-3.0 |
 | Hi-Potent Open Source License | [🇬🇧](http://web.archive.org/web/20030804175518/www.hi-potent.com/license.html) | - |
 | Jabber Open Source License | [🇬🇧](http://archive.jabber.org/core/JOSL.pdf) | LicenseRef-scancode-josl-1.0  |
-| Microsoft Reciprocal License (Ms-RL) | [🇬🇧](https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx) |  MS-RL |
+| Microsoft Reciprocal License (Ms-RL) | [🇬🇧](https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx) | MS-RL |
 | Motosoto Open Source License (v. 0.9.1) | [🇬🇧](http://opensource.org/licenses/motosoto.php) | Motosoto |
 | Open CASCADE Technology Public License (v. 6.6) | [🇬🇧](https://www.opencascade.com/content/occt-public-license) |  OCCT-PL |
 | wxWindows License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20001121033400/http://www.wxwindows.org:80/licence.htm) | - |
@@ -339,18 +339,18 @@ Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfa
 | Clarified Artistic License | [🇬🇧](http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html) |  ClArtistic |
 | Frameworx Open License (v. 1.0) | [🇬🇧](https://spdx.org/licenses/Frameworx-1.0.html) |  Frameworx-1.0 |
 | Keith Devens' Open Source License | [🇬🇧](https://web.archive.org/web/20100604220226/http://www.keithdevens.com/software/license/) | - |
-| LaTeX Project Public License (LPPL) (v. 1.0) | [🇬🇧](http://www.latex-project.org/lppl/lppl-1-0.html) |  LPPL-1.0 |
-| LaTeX Project Public License (LPPL) (v. 1.1) | [🇬🇧](http://www.latex-project.org/lppl/lppl-1-1.html) |  LPPL-1.1 |
-| LaTeX Project Public License (LPPL) (v. 1.2) | [🇬🇧](http://www.latex-project.org/lppl/lppl-1-2.html) |  LPPL-1.2 |
+| LaTeX Project Public License (LPPL) (v. 1.0) | [🇬🇧](http://www.latex-project.org/lppl/lppl-1-0.html) | LPPL-1.0 |
+| LaTeX Project Public License (LPPL) (v. 1.1) | [🇬🇧](http://www.latex-project.org/lppl/lppl-1-1.html)  | LPPL-1.1 |
+| LaTeX Project Public License (LPPL) (v. 1.2) | [🇬🇧](http://www.latex-project.org/lppl/lppl-1-2.html) | LPPL-1.2 |
 | LaTeX Project Public License (LPPL) (v. 1.3b) | [🇬🇧](https://www.latex-project.org/lppl/lppl-1-3b/) [🇩🇪](http://www.latex-project.org/lppl/lppl-1-3b-de.html) | - |
-| LaTeX Project Public License (LPPL) (v. 1.3c) | [🇬🇧](http://www.latex-project.org/lppl/lppl-1-3c.html) |  LPPL-1.3c |
+| LaTeX Project Public License (LPPL) (v. 1.3c) | [🇬🇧](http://www.latex-project.org/lppl/lppl-1-3c.html) | LPPL-1.3c |
 | Physnet Package License | [🇬🇧](http://web.archive.org/web/20060821203230/http://35.9.69.219/home/modules/license.html) | - |
 | Ruby License | [🇬🇧](http://www.ruby-lang.org/en/about/license.txt) | Ruby |
 | SFL License Agreement | [🇬🇧](https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm) | iMatix |
 | SGI Free Software License B (v. 1.0) (Einordnung unklar) | [🇬🇧](https://web.archive.org/web/20130114073135/http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html) |  SGI-B-1.0 |
 | SGI Free Software License B (v. 1.1) (Einordnung unklar) | [🇬🇧](https://web.archive.org/web/20170414231252/http://oss.sgi.com:80/projects/FreeB/SGIFreeSWLicB.1.1.doc) |  SGI-B-1.1 |
 | Short code license | [🇬🇧](https://www.cl.cam.ac.uk/~mgk25/short-license.html) | - |
-| Sleepycat Software Product License | [🇬🇧](http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html) | - |
+| Sleepycat Software Product License | [🇬🇧](http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html) | Sleepycat |
 | Vim License | [🇬🇧](http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license) | Vim |
 
 ### Lizenzen mit Sonderrechten
