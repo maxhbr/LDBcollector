@@ -61,16 +61,16 @@ proprietäre Software überführen.
 | BSD 2-clause "Simplified" or "FreeBSD" License | [🇬🇧](http://www.freebsd.org/copyright/freebsd-license.html) |  BSD-2-Clause-FreeBSD |
 | BSD 3-clause "New" or "Revised" License | [🇬🇧](https://spdx.org/licenses/BSD-3-Clause) | BSD-3-Clause |
 | BSD 4-clause "Original" or "Old" License | [🇬🇧](https://www.freebsd.org/copyright/license.html) |  	BSD-4-Clause |
-| CeCILL-B Free Software License Agreement | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html) |  CECILL-B |
+| CeCILL-B Free Software License Agreement | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html) | CECILL-B |
 | Christian Software Public License | [🇬🇧](http://pudge.net/jesux/cspl.html) | - |
 | CNRI Python License | [🇬🇧](http://www.handle.net/python_licenses/python1.6_9-5-00.html) |  CNRI-Python |
 | CNRI Jython License | [🇬🇧](https://www.jython.org/jython-old-sites/license.html) |  CNRI-Jython |
 | Condor Public License (v. 1.1) | [🇬🇧](http://www.cs.wisc.edu/condor/license.html#condor) |  Condor-1.1 |
-| Contrat de License de Logiciel Libre CeCILL-B | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html) | - |
-| Cougaar Open Source License | [🇬🇧](https://web.archive.org/web/20100818181228/http://cougaar.org/twiki/bin/view/Main/LicenseText) |  LicenseRef-scancode-cosl  |
+| Contrat de License de Logiciel Libre CeCILL-B | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html) | CECILL-B |
+| Cougaar Open Source License | [🇬🇧](https://web.archive.org/web/20100818181228/http://cougaar.org/twiki/bin/view/Main/LicenseText) | LicenseRef-scancode-cosl |
 | Cryptix General License | [🇬🇧](http://www.cryptix.org/LICENSE.TXT) | - |
 | Curl License | [🇬🇧](https://github.com/curl/curl/blob/master/COPYING) | curl |
-| Do What The Fuck You Want To Public License (v. 1.0) | [🇬🇧](https://commons.wikimedia.org/wiki/Template:WTFPL-1) |  	LicenseRef-scancode-wtfpl-1.0 |
+| Do What The Fuck You Want To Public License (v. 1.0) | [🇬🇧](https://commons.wikimedia.org/wiki/Template:WTFPL-1) |	LicenseRef-scancode-wtfpl-1.0 |
 | Do What The Fuck You Want To Public License (v. 2.0) | [🇬🇧](http://www.wtfpl.net/txt/copying/ ) | WTFPL |
 | Eclipse Distribution License (v 1.0) | [🇬🇧](https://www.eclipse.org/org/documents/edl-v10.php) | BSD-3-Clause |
 | Educational Community License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20050326095112/http://www.sakaiproject.org:80/license.html) |  ECL-1.0 |
@@ -219,7 +219,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 | European Union Public Licence (v. 1.1) | [🇬🇧](https://joinup.ec.europa.eu/page/eupl-text-11-12) | EUPL-1.1 |
 | European Union Public Licence (v. 1.2) | [🇬🇧](https://joinup.ec.europa.eu/page/eupl-text-11-12) | EUPL-1.2 |
 | German Free Software License | [🇬🇧](https://www.hbz-nrw.de/produkte/open-access/lizenzen/dfsl/german-free-software-license) | LicenseRef-scancode-d-fsl-1.0-en |
-| IBM Public License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20020202140635/http://oss.software.ibm.com:80/developerworks/opensource/license10.html) |  IPL-1.0 |
+| IBM Public License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20020202140635/http://oss.software.ibm.com:80/developerworks/opensource/license10.html) | IPL-1.0 |
 | Intel Open Source License | [🇬🇧](https://opensource.org/licenses/intel-open-source-license.php) | Intel |
 | IPA Font License | [🇬🇧](https://ipafont.ipa.go.jp/old/ipafont/download.html#en) | IPA |
 | No Limit Public License | [🇬🇧](http://spdx.org/licenses/NLPL) | NLPL |
