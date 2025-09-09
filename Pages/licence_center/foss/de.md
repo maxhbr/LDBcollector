@@ -70,8 +70,8 @@ proprietäre Software überführen.
 | Cougaar Open Source License | [🇬🇧](https://web.archive.org/web/20100818181228/http://cougaar.org/twiki/bin/view/Main/LicenseText) |  LicenseRef-scancode-cosl  |
 | Cryptix General License | [🇬🇧](http://www.cryptix.org/LICENSE.TXT) | - |
 | Curl License | [🇬🇧](https://github.com/curl/curl/blob/master/COPYING) | curl |
-| Do What The Fuck You Want To Public License (v. 1.0) | [🇬🇧](https://commons.wikimedia.org/wiki/Template:WTFPL-1) | - |
-| Do What The Fuck You Want To Public License (v. 2.0) | [🇬🇧](http://www.wtfpl.net/txt/copying/ ) | - |
+| Do What The Fuck You Want To Public License (v. 1.0) | [🇬🇧](https://commons.wikimedia.org/wiki/Template:WTFPL-1) |  	LicenseRef-scancode-wtfpl-1.0 |
+| Do What The Fuck You Want To Public License (v. 2.0) | [🇬🇧](http://www.wtfpl.net/txt/copying/ ) | WTFPL |
 | Eclipse Distribution License (v 1.0) | [🇬🇧](https://www.eclipse.org/org/documents/edl-v10.php) | BSD-3-Clause |
 | Educational Community License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20050326095112/http://www.sakaiproject.org:80/license.html) |  ECL-1.0 |
 | Educational Community License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20100617144451/http://www.osedu.org/licenses/ECL-2.0) |  ECL-2.0 |
@@ -208,8 +208,8 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 | Arphic Public License | [🇬🇧](http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE) |  Arphic-1999 |
 | Contrat de License de Logiciel Libre CeCILL (v. 1.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1-US.html) | - |
 | CeCILL Free Software License Agreement (v. 1.1) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html) |  CECILL-1.1 |
-| Contrat de License de Logiciel Libre CeCILL (v. 2.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2-en.html) | - |
-| Contrat de License de Logiciel Libre CeCILL (v. 2.1) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html)| - |
+| Contrat de License de Logiciel Libre CeCILL (v. 2.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2-en.html) | CECILL-2.0 |
+| Contrat de License de Logiciel Libre CeCILL (v. 2.1) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html)| CECILL-2.1 |
 | Common Public License (v. 0.5) | [🇬🇧](http://www.eclipse.org/legal/cpl-v05.html) | LicenseRef-scancode-cpl-0.5 |
 | Common Public License (v. 1.0) | [🇬🇧](http://www.eclipse.org/legal/cpl-v10.html) | CPL-1.0 |
 | Cryptographic Autonomy License (v.1.0) | [🇬🇧](https://github.com/holochain/cryptographic-autonomy-license) | CAL-1.0 |
