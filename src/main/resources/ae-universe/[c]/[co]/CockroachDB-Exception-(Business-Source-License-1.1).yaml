@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "CockroachDB Exception (BSL 1.1)"
+canonicalName: "CockroachDB Exception (Business Source License 1.1)"
 category: "CockroachDB Exception"
-shortName: "CockroachDB-Exception-BSL-1.1"
+shortName: "CockroachDB-Exception-Business-Source-1.1"
+
+canonicalNameHistory:
+  - "CockroachDB Exception (BSL 1.1)"
 
 type: "exception"
 

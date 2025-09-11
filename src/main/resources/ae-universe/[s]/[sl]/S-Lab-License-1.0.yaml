@@ -2,11 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Ensure Oxygen EULA"
-category: "Ensure Oxygen EULA"
-shortName: "Ensure-Oxygen-EULA"
+canonicalName: "S-Lab License 1.0"
+category: "S-Lab"
+shortName: "S-Lab-1.0"
 
 alternativeNames:
-  - "Ensure Oxygen EULA"
-  - "Ensure-Oxygen-EULA"
+  - "S Lab License 1.0"
+  - "S-Lab v1.0"
 
+otherIds: 
+  - "scancode:s-lab-1.0"
