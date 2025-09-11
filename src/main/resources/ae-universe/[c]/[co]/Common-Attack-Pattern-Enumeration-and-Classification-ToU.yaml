@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Common Attack Pattern Enumeration and Classification ToU"
-category: "Common Attack Pattern Enumeration and Classification ToU"
-shortName: "capec-tou"
+category: "CAPEC ToU"
+shortName: "CAPEC-ToU"
 
 alternativeNames:
   - "Common Attack Pattern Enumeration and Classification ToU"
