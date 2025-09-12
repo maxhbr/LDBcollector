@@ -98,8 +98,8 @@ Flaggenemojis für die Sprachangabe können [hier](https://emojipedia.org/) entn
 | Urteilssammlung zu FOSS Lizenzen (EN) | https://ifrOSS.github.io/ifrOSS/Pages/oss_cases/en | [/Pages/oss_cases/en.md](/Pages/oss_cases/en.md) | ✅ | - |
 | Lizenzzenter (DE) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/de | [/Pages/licence_center/de.md](/Pages/licence_center/de.md) | ✅ | - |
 | Lizenzzenter (EN) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/en | [/Pages/licence_center/en.md](/Pages/licence_center/en.md) | ✅ | - |
-| Lizenzzenter - Freie Software und Open Source Lizenzen (DE) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/foss/de | [/Pages/licence_center/foss/de.md](/Pages/licence_center/foss/de.md) | ☑️ | SPDX-tags fehlen |
-| Lizenzzenter - Freie Software und Open Source Lizenzen (EN) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/foss/en | [/Pages/licence_center/foss/en.md](/Pages/licence_center/foss/en.md) | ☑️ | SPDX-tags fehlen |
+| Lizenzzenter - Freie Software und Open Source Lizenzen (DE) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/foss/de | [/Pages/licence_center/foss/de.md](/Pages/licence_center/foss/de.md) | ✅ | - |
+| Lizenzzenter - Freie Software und Open Source Lizenzen (EN) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/foss/en | [/Pages/licence_center/foss/en.md](/Pages/licence_center/foss/en.md) | ✅ | - |
 | Lizenzzenter - Open Content Lizenzen (DE) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/opencontent/de | [/Pages/licence_center/opencontent/de.md](/Pages/licence_center/opencontent/de.md) | ☑️ | SPDX-tags fehlen |
 | Lizenzzenter - Open Content Lizenzen (EN) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/opencontent/en | [/Pages/licence_center/opencontent/en.md](/Pages/licence_center/opencontent/en.md) | ☑️ | SPDX-tags fehlen |
 | Lizenzzenter - Open Data Lizenzen (DE) | https://ifrOSS.github.io/ifrOSS/Pages/licence_center/opendata/de | [/Pages/licence_center/opendata/de.md](/Pages/licence_center/opendata/de.md) | ☑️ | SPDX-tags fehlen |
