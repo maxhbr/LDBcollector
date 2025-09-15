@@ -54,43 +54,7 @@ def add_license_data(
     if packages_with_exceptions:
         licensedata[i]["license"]["packages_with_exceptions"] = packages_with_exceptions
 
-    # DEPRECATED part
-    if isinstance(fedora_abbrev, str):
-        fedora_abbrev = [fedora_abbrev, ]
-    for one_fedora_abbrev in fedora_abbrev:
-        if i not in licensedata.keys():
-            licensedata[i]= {}
-        if isinstance(fedora_names, str):
-            licensedata[i].update({
-                "approved": approved,
-                "fedora_abbrev": one_fedora_abbrev,
-                "fedora_name": fedora_names,
-                "spdx_abbrev": spdx_abbrev,
-            })
-            i += 1
-        elif isinstance(fedora_names, list):
-            for n in fedora_names:
-                if n == "":
-                    continue
-                if i not in licensedata.keys():
-                    licensedata[i]= {}
-                licensedata[i].update({
-                    "approved": approved,
-                    "fedora_abbrev": one_fedora_abbrev,
-                    "fedora_name": n,
-                    "spdx_abbrev": spdx_abbrev,
-                })
-                i += 1
-        else:
-            licensedata[i].update({
-                "approved": approved,
-                "fedora_abbrev": one_fedora_abbrev,
-                "fedora_name": "",
-                "spdx_abbrev": spdx_abbrev,
-            })
-            i += 1
-
-    return i
+    return i+1
 
 
 if __name__ == "__main__":
@@ -187,8 +151,6 @@ if __name__ == "__main__":
         else:
             # Handle licenses with only an SPDX legacy-abbreviation, not a Fedora legacy-abbreviation
             licensedata[i] = {
-                "approved": approved,
-                "spdx_abbrev": spdx_abbrev,
                 "license": {
                     "expression": spdx_abbrev,
                     "status": status,

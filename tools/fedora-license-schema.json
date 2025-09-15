@@ -43,22 +43,6 @@
               }
             }
           }
-        },
-        "approved": {
-          "description": "deprecated use license.status",
-          "type": "string"
-        },
-        "fedora_abbrev": {
-          "description": "deprecated use fedora.legacy-abbreviation",
-          "type": "string"
-        },
-        "fedora_name": {
-          "description": "deprecated use fedora.legacy-name",
-          "type": "string"
-        },
-        "spdx_abbrev": {
-          "description": "deprecated use license.expression",
-          "type": "string"
         }
       },
       "required": [ "license", "fedora" ]
