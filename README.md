@@ -1,5 +1,5 @@
 <!-- SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
-SPDX-FileCopyrightText: 2025 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>
+     SPDX-FileCopyrightText: 2025 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>
      SPDX-License-Identifier: GPL-2.0-only
 -->
 # LicenseDb
