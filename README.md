@@ -1,5 +1,5 @@
 <!-- SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
-
+     SPDX-FileCopyrightText: 2025 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>
      SPDX-License-Identifier: GPL-2.0-only
 -->
 # LicenseDb
@@ -143,6 +143,87 @@ Run the following query to create the first user.
 ```sql
 INSERT INTO users (user_name, user_password, user_level, display_name, user_email) VALUES ('<username>', '<password>', 'SUPER_ADMIN', '<display_name>', '<user_email>');
 ```
+## LicenseDB with Docker
+<!-- TODO: Update `<org>` and `<project>` in the link below to actual values. -->
+
+LicenseDB is available as a prebuilt Docker image on [GitHub Container Registry (GHCR)](https://ghcr.io/fossology/licensedb).  
+You can run it either using a simple `docker run` command or with the included `docker-compose.yml` file for a full setup with PostgreSQL.
+
+---
+
+### Option 1: Run with Docker directly
+
+```bash
+# Pull the latest stable release
+docker pull ghcr.io/fossology/licensedb:latest
+
+# Run LicenseDB (requires a PostgreSQL instance)
+docker run \
+  --name licensedb \
+  -p 8080:8080 \
+  -e DB_HOST=<your-postgres-host> \
+  -e DB_PORT=5432 \
+  -e DB_USER=fossy \
+  -e DB_PASSWORD=fossy \
+  -e DB_NAME=licensedb \
+  ghcr.io/fossology/licensedb:latest
+```
+
+> ⚠️ This method requires you to have PostgreSQL running separately.  
+> If you’d like an **all-in-one setup** with PostgreSQL included, use the Docker Compose option below.
+
+---
+
+### Option 2: Run with Docker Compose (recommended)
+
+A `docker-compose.yml` is included in this repository to make it easy to spin up LicenseDB along with PostgreSQL.
+
+```bash
+# Build and start the containers
+docker compose up -d
+```
+
+This will start two services:
+- **licensedb** → The LicenseDB API (exposed at `http://localhost:8080`)
+- **postgres** → PostgreSQL 16 instance with preconfigured credentials
+
+---
+
+## ⚙️ Environment Variables
+
+You can customize LicenseDB behavior via environment variables in the `docker-compose.yml`.
+
+| Variable                          | Default Value           | Description                                    |
+|-----------------------------------|-------------------------|------------------------------------------------|
+| `DB_HOST`                         | `postgres`              | Hostname of the PostgreSQL database            |
+| `DB_PORT`                         | `5432`                  | PostgreSQL port                                |
+| `DB_USER`                         | `fossy`                 | Database username                              |
+| `DB_PASSWORD`                     | `fossy`                 | Database password                              |
+| `DB_NAME`                         | `licensedb`             | Database name                                  |
+| `GIN_MODE`                        | `debug`                 | Gin mode (`debug`, `release`)                  |
+| `DEFAULT_ISSUER`                  | `http://localhost:8080` | Default issuer for authentication tokens       |
+| `SIMILARITY_THRESHOLD`            | `0.9`                   | Similarity threshold for license matching      |
+| `PORT`                            | `8080`                  | Port where LicenseDB runs inside the container |
+| `TOKEN_HOUR_LIFESPAN`             | `24`                    | Token expiration time in hours                 |
+| `READ_API_AUTHENTICATION_ENABLED` | `false`                 | Enable/disable authentication for read APIs    |
+
+---
+
+## 🔍 Verify the Setup
+
+Once containers are running, you can check:
+
+```bash
+# List running containers
+docker ps
+
+# View logs for LicenseDB
+docker logs -f licensedb
+```
+
+Backend should be available at:  
+👉 [http://localhost:8080](http://localhost:8080)
+
 
 ### Generating Swagger Documentation
 1. Install [swag](https://github.com/swaggo/swag) using the following command.
