@@ -14,24 +14,26 @@
       "GPL 3.0",
       "gpl-3.0",
       "LicenseRef-gpl-3.0"
+    ],
+    "pypiClassifiers": [
+      "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+      "GNU General Public License v3 (GPLv3)",
+      "OSI Approved :: GNU General Public License v3 (GPLv3)",
+      "License :: GNU General Public License v3 (GPLv3)",
+      "License :: OSI Approved :: GNU General Public License v3",
+      "GNU General Public License v3",
+      "OSI Approved :: GNU General Public License v3",
+      "License :: GNU General Public License v3",
+      "License :: OSI Approved :: GPLv3",
+      "OSI Approved :: GPLv3",
+      "License :: GPLv3",
+      "GPLv3"
     ]
   },
   "src": "spdx",
   "rejected": [],
   "risky": [
-    "GPLv3",
-    "gpl3",
-    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "GNU General Public License v3 (GPLv3)",
-    "OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "License :: GNU General Public License v3 (GPLv3)",
-    "License :: OSI Approved :: GNU General Public License v3",
-    "GNU General Public License v3",
-    "OSI Approved :: GNU General Public License v3",
-    "License :: GNU General Public License v3",
-    "License :: OSI Approved :: GPLv3",
-    "OSI Approved :: GPLv3",
-    "License :: GPLv3"
+    "gpl3"
   ],
   "isMajorVersionOnly": true
 }

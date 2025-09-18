@@ -16,7 +16,13 @@
       "GPL-2.0 (only)",
       "GPL-2.0-only License",
       "GPL 2.0 License (only)",
-      "GPL v2.0 License (only)"
+      "GPL v2.0 License (only)",
+      "GPLv2-only",
+      "GPLv2 only",
+      "GPLv2 (only)",
+      "GPL v2 only",
+      "GPL-2",
+      "GPL2"
     ],
     "osi": [
       "GNU General Public License, Version 2.0"
@@ -26,30 +32,24 @@
       "GPL 2.0",
       "GNU General Public License 2.0",
       "gpl-2.0"
+    ],
+    "pypiClassifiers": [
+      "License :: GNU General Public License v2 (GPLv2)",
+      "OSI Approved :: GNU General Public License v2 (GPLv2)",
+      "License :: OSI Approved :: GNU General Public License v2",
+      "License :: GNU General Public License v2",
+      "OSI Approved :: GNU General Public License v2",
+      "License :: OSI Approved :: GPLv2",
+      "License :: GPLv2",
+      "OSI Approved :: GPLv2",
+      "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+      "GPLv2",
+      "GNU General Public License v2",
+      "GNU General Public License v2 (GPLv2)"
     ]
   },
   "src": "spdx",
   "rejected": [],
-  "risky": [
-    "GPLv2-only",
-    "GPLv2 only",
-    "GPLv2",
-    "GPLv2 (only)",
-    "GPL v2 only",
-    "GPL-2",
-    "GPL2",
-    "License :: GNU General Public License v2 (GPLv2)",
-    "OSI Approved :: GNU General Public License v2 (GPLv2)",
-    "License :: OSI Approved :: GNU General Public License v2",
-    "License :: GNU General Public License v2",
-    "OSI Approved :: GNU General Public License v2",
-    "License :: OSI Approved :: GPLv2",
-    "License :: GPLv2",
-    "OSI Approved :: GPLv2",
-    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
-    "GPLv2",
-    "GNU General Public License v2",
-    "GNU General Public License v2 (GPLv2)"
-  ],
+  "risky": [],
   "isMajorVersionOnly": true
 }

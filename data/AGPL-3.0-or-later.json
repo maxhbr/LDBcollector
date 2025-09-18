@@ -10,25 +10,26 @@
       "agpl-3.0-plus",
       "AGPL-3.0+",
       "AGPL 3.0 or later"
+    ],
+    "pypiClassifiers": [
+      "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+      "OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+      "License :: GNU Affero General Public License v3 or later (AGPLv3+)",
+      "License :: OSI Approved :: GNU Affero General Public License v3 or later",
+      "OSI Approved :: GNU Affero General Public License v3 or later",
+      "License :: GNU Affero General Public License v3 or later",
+      "License :: OSI Approved :: AGPLv3+",
+      "OSI Approved :: AGPLv3+",
+      "License :: AGPLv3+",
+      "GNU Affero General Public License v3 or later",
+      "GNU Affero General Public License v3 or later (AGPLv3+)",
+      "AGPLv3+"
     ]
   },
   "src": "spdx",
   "rejected": [
     "LicenseRef-AGPL"
   ],
-  "risky": [
-    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
-    "OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
-    "License :: GNU Affero General Public License v3 or later (AGPLv3+)",
-    "License :: OSI Approved :: GNU Affero General Public License v3 or later",
-    "OSI Approved :: GNU Affero General Public License v3 or later",
-    "License :: GNU Affero General Public License v3 or later",
-    "License :: OSI Approved :: AGPLv3+",
-    "OSI Approved :: AGPLv3+",
-    "License :: AGPLv3+",
-    "GNU Affero General Public License v3 or later",
-    "GNU Affero General Public License v3 or later (AGPLv3+)",
-    "AGPLv3+"
-  ],
+  "risky": [],
   "isMajorVersionOnly": true
 }

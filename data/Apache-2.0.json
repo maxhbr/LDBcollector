@@ -13,7 +13,16 @@
       "The Apache Software License, Version 2.0",
       "The Apache Software License, 2.0",
       "APLv2.0",
-      "Apache2.0"
+      "Apache2.0",
+      "Apache 2",
+      "Apache-2",
+      "Apache License 2",
+      "Apache License Version 2",
+      "Apache-2 License",
+      "Apache v2",
+      "APACHEv2",
+      "APL2",
+      "Apache2"
     ],
     "scancodeLicensedb": [
       "LicenseRef-Apache-2.0",
@@ -28,16 +37,6 @@
   "rejected": [
     "LicenseRef-Apache"
   ],
-  "risky": [
-    "Apache 2",
-    "Apache-2",
-    "Apache License 2",
-    "Apache License Version 2",
-    "Apache-2 License",
-    "Apache v2",
-    "APACHEv2",
-    "APL2",
-    "Apache2"
-  ],
+  "risky": [],
   "isMajorVersionOnly": true
 }

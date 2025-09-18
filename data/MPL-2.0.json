@@ -21,7 +21,10 @@
       "MPL 2.0 (Open Source License)",
       "Mozilla Public License v2.0 (MPL)",
       "MPLv2.0",
-      "mpl2.0"
+      "mpl2.0",
+      "MPLv2",
+      "mpl-2",
+      "mpl2"
     ],
     "osi": [
       "Mozilla Public License, Version 2.0"
@@ -45,10 +48,6 @@
   },
   "src": "spdx",
   "rejected": [],
-  "risky": [
-    "MPLv2",
-    "mpl-2",
-    "mpl2"
-  ],
+  "risky": [],
   "isMajorVersionOnly": true
 }

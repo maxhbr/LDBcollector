@@ -11,15 +11,17 @@
       "AGPL-3.0",
       "agpl-3.0",
       "GNU Affero General Public License 3.0"
+    ],
+    "pypiClassifiers": [
+      "License :: OSI Approved :: GNU Affero General Public License v3",
+      "OSI Approved :: GNU Affero General Public License v3",
+      "License :: GNU Affero General Public License v3",
+      "GNU Affero General Public License v3"
     ]
   },
   "src": "spdx",
   "rejected": [],
   "risky": [
-    "License :: OSI Approved :: GNU Affero General Public License v3",
-    "OSI Approved :: GNU Affero General Public License v3",
-    "License :: GNU Affero General Public License v3",
-    "GNU Affero General Public License v3"
   ],
   "isMajorVersionOnly": true
 }
