@@ -76,6 +76,8 @@ def check_json_filename():
                 canonical_name = data.get("canonical")
                 if canonical_name != filename[:-5]:
                     logger.error(f"JSON filename '{filename}' does not match canonical name '{canonical_name}'")
+        else:
+            logger.error(f"File '{filename}' is not a JSON file.")
 
 
 def check_unique_aliases():
@@ -105,16 +107,15 @@ def access_aliases(aliases: dict, all_aliases: dict, filename: str):
 
 def check_src_and_canonical(spdx_license_list: list, spdx_exception_list: list):
     for filename in os.listdir(DATA_DIR):
-        if filename.endswith(JSON_EXTENSION):
-            filepath = os.path.join(DATA_DIR, filename)
-            with (open(filepath, 'r') as f):
-                data = json.load(f)
-                canonical_name = data.get("canonical")
-                if (canonical_name in spdx_license_list or canonical_name in spdx_exception_list) and data["src"] != "spdx":
-                    logger.error(f"If src is SPDX, canonical name '{canonical_name}' must be in SPDX license list")
-                elif (canonical_name not in spdx_license_list and
-                      canonical_name not in spdx_exception_list) and data["src"] == "spdx":
-                    logger.error(f"Canonical name '{canonical_name}' is in SPDX license list but source is not 'spdx'.")
+        filepath = os.path.join(DATA_DIR, filename)
+        with (open(filepath, 'r') as f):
+            data = json.load(f)
+            canonical_name = data.get("canonical")
+            if (canonical_name in spdx_license_list or canonical_name in spdx_exception_list) and data["src"] != "spdx":
+                logger.error(f"If src is SPDX, canonical name '{canonical_name}' must be in SPDX license list")
+            elif (canonical_name not in spdx_license_list and
+                  canonical_name not in spdx_exception_list) and data["src"] == "spdx":
+                logger.error(f"Canonical name '{canonical_name}' is in SPDX license list but source is not 'spdx'.")
 
 
 def check_length_and_characters():
@@ -122,28 +123,27 @@ def check_length_and_characters():
 
     max_length = 100  # Adjust the maximum length limit as needed
     for filename in os.listdir(DATA_DIR):
-        if filename.endswith(JSON_EXTENSION):
-            filepath = os.path.join(DATA_DIR, filename)
-            with open(filepath, 'r') as f:
-                data = json.load(f)
-                canonical_name = data.get("canonical")
-                aliases = data.get("aliases")
-                aliases = flatten_aliases_dict(aliases)
-                src = data.get("src")
+        filepath = os.path.join(DATA_DIR, filename)
+        with open(filepath, 'r') as f:
+            data = json.load(f)
+            canonical_name = data.get("canonical")
+            aliases = data.get("aliases")
+            aliases = flatten_aliases_dict(aliases)
+            src = data.get("src")
 
-                # Max length check
-                if len(canonical_name) > max_length:
-                    logger.error(f"Canonical name '{canonical_name}' "
-                                 f"exceeds maximum length limit of {max_length} characters")
-                if any(len(alias) > max_length for alias in aliases):
-                    logger.error(f"At least one of the aliases exceeds maximum length limit of {max_length} characters "
-                                 f"in the file {filename}")
-                if len(src) > max_length:
-                    logger.error(f"Source {src} exceeds maximum length limit of {max_length} characters")
+            # Max length check
+            if len(canonical_name) > max_length:
+                logger.error(f"Canonical name '{canonical_name}' "
+                             f"exceeds maximum length limit of {max_length} characters")
+            if any(len(alias) > max_length for alias in aliases):
+                logger.error(f"At least one of the aliases exceeds maximum length limit of {max_length} characters "
+                             f"in the file {filename}")
+            if len(src) > max_length:
+                logger.error(f"Source {src} exceeds maximum length limit of {max_length} characters")
 
-                # Forbidden char check
-                if any(char in forbidden_characters_canonical for char in canonical_name):
-                    logger.error(f"Canonical name '{canonical_name}' contains forbidden characters")
+            # Forbidden char check
+            if any(char in forbidden_characters_canonical for char in canonical_name):
+                logger.error(f"Canonical name '{canonical_name}' contains forbidden characters")
 
 
 def check_no_empty_field_except_custom():
@@ -174,16 +174,15 @@ def check_rejected_field_exists():
 
 def check_rejected_not_in_valid_fields():
     for filename in os.listdir(DATA_DIR):
-        if filename.endswith(".json"):
-            filepath = os.path.join(DATA_DIR, filename)
-            with open(filepath, 'r') as f:
-                data = json.load(f)
-                aliases = data.get("aliases", [])
-                aliases_list = flatten_aliases_dict(aliases)
-                rejected = data.get("rejected", [])
-                matched = set(aliases_list) & set(rejected)
-                if matched:
-                    logger.error(f"rejected aliases {matched} in '{filename}' is in aliases list")
+        filepath = os.path.join(DATA_DIR, filename)
+        with open(filepath, 'r') as f:
+            data = json.load(f)
+            aliases = data.get("aliases", [])
+            aliases_list = flatten_aliases_dict(aliases)
+            rejected = data.get("rejected", [])
+            matched = set(aliases_list) & set(rejected)
+            if matched:
+                logger.error(f"rejected aliases {matched} in '{filename}' is in aliases list")
 
 
 def flatten_aliases_dict(aliases_dict):
@@ -206,37 +205,44 @@ def extract_version_tokens(identifier) -> set:
 def check_version_between_canonical_and_alias():
     affected_licenses = {}
     for filename in os.listdir(DATA_DIR):
-        if filename.endswith(".json"):
-            filepath = os.path.join(DATA_DIR, filename)
-            with open(filepath, 'r') as f:
-                data = json.load(f)
-                aliases = data.get("aliases", [])
+        filepath = os.path.join(DATA_DIR, filename)
+        with open(filepath, 'r') as f:
+            data = json.load(f)
+            aliases = data.get("aliases", [])
 
-                custom_aliases = aliases.pop('custom')
-                aliases_list = custom_aliases
-                for alias_src, alias_list in aliases.items():
-                    if alias_src == 'spdx' or alias_src == 'osi':
-                        continue
-                    aliases_list += alias_list
-                canonical = data.get("canonical", [])
+            custom_aliases = aliases.pop('custom')
+            aliases_list = custom_aliases
+            for alias_src, alias_list in aliases.items():
+                if alias_src == 'spdx' or alias_src == 'osi':
+                    continue
+                aliases_list += alias_list
+            canonical = data.get("canonical", [])
 
-                wrong_version = []
+            is_major_version_only = data.get("isMajorVersionOnly")
 
-                canonical_tokens = extract_version_tokens(canonical)
-                canonical_has_version = bool(canonical_tokens)
-                compare_versions(aliases_list, canonical_has_version, canonical_tokens, wrong_version)
-                if wrong_version:
-                    wrong_version.sort()
-                    logger.error(f'{filename} has wrong versions for aliases: {wrong_version}')
-                    affected_licenses[canonical] = wrong_version
+            wrong_version = []
+
+            canonical_tokens = extract_version_tokens(canonical)
+
+            canonical_has_version = bool(canonical_tokens)
+            if canonical_has_version:
+                compare_versions(aliases_list, canonical_tokens, wrong_version, is_major_version_only)
+            if wrong_version:
+                wrong_version.sort()
+                logger.error(f'{filename} has wrong versions for aliases: {wrong_version}')
+                affected_licenses[canonical] = wrong_version
 
 
-def compare_versions(aliases_list, canonical_has_version, canonical_tokens, wrong_version):
-    if canonical_has_version:
-        for alias in aliases_list:
-            alias_tokens = extract_version_tokens(alias)
-            if alias_tokens != canonical_tokens:
-                wrong_version.append(alias)
+def compare_versions(aliases_list, canonical_tokens, wrong_version, is_major_version_only):
+    for alias in aliases_list:
+        alias_tokens = extract_version_tokens(alias)
+        if alias_tokens != canonical_tokens:
+            if len(canonical_tokens) == 1 and is_major_version_only:
+                major_str = list(canonical_tokens).pop().split('.')[0]
+                numbers_found = re.findall(r'\d+', alias)
+                if numbers_found and all(num == major_str for num in numbers_found):
+                    continue
+            wrong_version.append(alias)
 
 
 def check_major_version_flag():
@@ -250,41 +256,7 @@ def check_major_version_flag():
 
     Files that do not have a semver in the canonical field or that belong to a group of one are skipped.
     """
-    group_by_base = {}
-    for filename in os.listdir(DATA_DIR):
-        if filename.endswith(JSON_EXTENSION):
-            filepath = os.path.join(DATA_DIR, filename)
-            try:
-                with open(filepath, 'r') as f:
-                    data = json.load(f)
-            except json.JSONDecodeError:
-                logger.error(f"Invalid JSON in file {filename}")
-                continue
-
-            canonical = data.get("canonical")
-            if not canonical:
-                continue
-
-            canonical_tokens = extract_version_tokens(canonical)
-            # Process only if exactly one version token is found
-            if len(canonical_tokens) != 1:
-                continue
-
-            version = next(iter(canonical_tokens))
-            base_name = canonical.replace(version, '')
-            try:
-                major = int(version.split('.')[0])
-            except ValueError:
-                logger.error(f"Invalid version format in file {filename}: {version}")
-                continue
-
-            file_info = {
-                "filename": filename,
-                "canonical": canonical,
-                "major": major,
-                "flag": data.get("isMajorVersionOnly")
-            }
-            group_by_base.setdefault(base_name, []).append(file_info)
+    group_by_base = group_license_files_by_base_name()
 
     # Now, for each group with more than one file, perform the check
     for base, files in group_by_base.items():
@@ -301,6 +273,44 @@ def check_major_version_flag():
                     f"File '{info['filename']}' has 'isMajorVersionOnly'={info['flag']} but "
                     f"expected {expected_flag} based on canonical '{info['canonical']}'"
                 )
+
+
+def group_license_files_by_base_name():
+    group_by_base = {}
+    for filename in os.listdir(DATA_DIR):
+        filepath = os.path.join(DATA_DIR, filename)
+        try:
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+        except json.JSONDecodeError:
+            logger.error(f"Invalid JSON in file {filename}")
+            continue
+
+        canonical = data.get("canonical")
+        if not canonical:
+            continue
+
+        canonical_tokens = extract_version_tokens(canonical)
+        # Process only if exactly one version token is found
+        if len(canonical_tokens) != 1:
+            continue
+
+        version = next(iter(canonical_tokens))
+        base_name = canonical.replace(version, '')
+        try:
+            major = int(version.split('.')[0])
+        except ValueError:
+            logger.error(f"Invalid version format in file {filename}: {version}")
+            continue
+
+        file_info = {
+            "filename": filename,
+            "canonical": canonical,
+            "major": major,
+            "flag": data.get("isMajorVersionOnly")
+        }
+        group_by_base.setdefault(base_name, []).append(file_info)
+    return group_by_base
 
 
 def main():

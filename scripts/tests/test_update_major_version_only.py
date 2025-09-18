@@ -18,7 +18,7 @@ def test_build_dict_with_base_name_license():
     ]
     result = update_major_version_only._build_dict_with_base_name_license(licenses_list)
 
-    expected = {"abc": [("abc1.0", 1), ("abc2.0", 2)], "def": [("def1.0",1)]}
+    expected = {"abc": [("abc1.0", 1), ("abc2.0", 2)], "def": [("def1.0", 1)]}
     assert result == expected
 
 
@@ -26,7 +26,7 @@ def test_identify_major_only_licenses():
     base_name_dict = {
         "abc": [("abc1.0", 1), ("abc1.0", 1)],
         "def": [("def1.0", 1), ("def2.0", 2)],
-        "ghi": [("ghi1.0", 1), ("ghi1.1.1", 1),("ghi2.0", 2)]
+        "ghi": [("ghi1.0", 1), ("ghi1.1.1", 1), ("ghi2.0", 2)]
     }
     major_only, not_major_only = update_major_version_only._identify_major_only_licenses(base_name_dict)
 

@@ -9,6 +9,7 @@ from src.update.SpdxDataUpdate import SpdxDataUpdate
 import src.validate.data_validation as validation
 import src.update.update_major_version_only as update_major_version_only
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--debug', '-d', action='store_true', help='Enable debug', default=False)

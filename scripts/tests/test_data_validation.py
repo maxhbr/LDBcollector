@@ -531,6 +531,43 @@ def test_check_version_between_canonical_and_alias_failure(caplog):
         "valid.json has wrong versions for aliases: ['invalid_alias_version', 'wrong_version_3.0_1.0']")
 
 
+def test_check_version_between_canonical_and_alias_major_version_only_flag_is_false(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
+                  "aliases": {"custom": ["wrong_version_1"]}, "isMajorVersionOnly": False}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+
+    assert mock_logger.error.call_count == 1
+    assert str(mock_logger.method_calls).__contains__("valid.json has wrong versions for aliases: ['wrong_version_1']")
+
+
+def test_check_version_between_canonical_and_alias_major_version_only_flag_is_true(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
+                  "aliases": {"custom": ["wrong_version_1"]}, "isMajorVersionOnly": True}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+
+    assert mock_logger.error.call_count == 0
+
+
 def test_check_major_version_flag(caplog, monkeypatch):
     test_dir = "test_data"
     os.makedirs(test_dir, exist_ok=True)
