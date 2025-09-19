@@ -70,7 +70,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                     <a href="{% url "cube:licensecuration_update" curation.pk %}?from={{ request.path|urlencode }}">
                       {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
                   {% endfor %}{% endif %}
-              {% elif perms.cube.add_licensecuration %} perms.cube.add_licensecuration %}
+              {% elif perms.cube.add_licensecuration %}
                 <a href="{% url 'cube:release_andsvalidation_create' usage.id %}?from={{ request.path|urlencode }}">Confirm / Correct</a>
               {% endif %}</td>
               <td>{% if perms.cube.change_version %}
