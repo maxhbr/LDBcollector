@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.71
+Version:        1.72
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,9 @@ make check-grammar
 
 
 %changelog
+* Tue Sep 23 2025 Miroslav Suchý <msuchy@redhat.com> 1.72-1
+- rebuild
+
 * Tue Sep 23 2025 Miroslav Suchý <msuchy@redhat.com> 1.71-1
 - add GPL-2.0-or-later WITH LicenseRef-Fedora-Temporary-kvirc-openssl-exception
 - add GPL-3.0-or-later WITH LicenseRef-Fedora-Temporary-cryptsetup-OpenSSL-
