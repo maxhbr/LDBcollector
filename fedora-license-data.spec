@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.70
+Version:        1.71
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,34 @@ make check-grammar
 
 
 %changelog
+* Tue Sep 23 2025 Miroslav Suchý <msuchy@redhat.com> 1.71-1
+- add GPL-2.0-or-later WITH LicenseRef-Fedora-Temporary-kvirc-openssl-exception
+- add GPL-3.0-or-later WITH LicenseRef-Fedora-Temporary-cryptsetup-OpenSSL-
+  exception
+- add LGPL-2.1-or-later WITH LicenseRef-Fedora-Temporary-Simple-Library-
+  exception
+- add AGPL-3.0-or-later WITH LicenseRef-Fedora-Temporary-PS-or-PDF-font-
+  exception-20170817
+- add LGPL-2.0-only WITH LicenseRef-Fedora-Temporary-Classpath-exception-
+  variation
+- add LicenseRef-Fedora-Temporary-IJG
+- add LicenseRef-Fedora-Temporary-BSD-1-Clause-alglib
+- add LicenseRef-Fedora-Temporary-OSSP
+- add LicenseRef-Fedora-Temporary-AZL
+- add LicenseRef-Fedora-Temporary-Python-trace
+- add Advanced-Cryptics-Dictionary license
+- add BSD-Mark-Modifications license
+- Remove deprecated parts from JSON
+- grammar: sort ID alphabetically
+- grammar: do not allow bad license with OR operator
+- add WTFNMFPL license
+- add LicenseRef-HPND-TAES as not-allowed
+- add LGPL-2.0-only WITH Universal-FOSS-exception-1.0
+- OPUBL-1.0: Move packages_with_exceptions into [license]
+- Add public-domain dedication for tinyxml2
+- add WordNet license
+- Extend ISO-8879 exception to dotnet10.0
+
 * Thu Jul 24 2025 Miroslav Suchý <msuchy@redhat.com> 1.70-1
 - add GPL-2.0-only WITH Universal-FOSS-exception-1.0
 - add libpng licenses
