@@ -7,6 +7,7 @@
 package api
 
 import (
+	"fmt"
 	"net/http"
 	"time"
 
@@ -14,6 +15,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 )
 
 // GetAllAudit retrieves a list of all audit records from the database
@@ -90,15 +92,12 @@ func GetAllAudit(c *gin.Context) {
 func GetAudit(c *gin.Context) {
 	var audit models.Audit
 	id := c.Param("audit_id")
-	parsedId, err := utils.ParseIdToInt(c, id, "audit")
+	parsedId, err := uuid.Parse(id)
 	if err != nil {
-		return
-	}
-	if parsedId == 0 {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
-			Message:   "Invalid audit ID",
-			Error:     "audit ID must be greater than 0",
+			Message:   fmt.Sprintf("no license with id '%s' exists", id),
+			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
@@ -151,15 +150,12 @@ func GetAudit(c *gin.Context) {
 func GetChangeLogs(c *gin.Context) {
 	var changelog []models.ChangeLog
 	id := c.Param("audit_id")
-	parsedId, err := utils.ParseIdToInt(c, id, "audit")
+	parsedId, err := uuid.Parse(id)
 	if err != nil {
-		return
-	}
-	if parsedId == 0 {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
-			Message:   "Invalid audit ID",
-			Error:     "audit ID must be greater than 0",
+			Message:   fmt.Sprintf("no license with id '%s' exists", id),
+			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
@@ -221,21 +217,25 @@ func GetChangeLogs(c *gin.Context) {
 func GetChangeLogbyId(c *gin.Context) {
 	var changelog models.ChangeLog
 	auditId := c.Param("audit_id")
-	parsedAuditId, err := utils.ParseIdToInt(c, auditId, "audit")
+	parsedAuditId, err := uuid.Parse(auditId)
 	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no license with id '%s' exists", auditId),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 	changelogId := c.Param("id")
-	parsedChangeLogId, err := utils.ParseIdToInt(c, changelogId, "changelog")
+	parsedChangeLogId, err := uuid.Parse(changelogId)
 	if err != nil {
-		return
-	}
-
-	if parsedChangeLogId == 0 {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
-			Message:   "Invalid changelog ID",
-			Error:     "changelog ID must be greater than 0",
+			Message:   fmt.Sprintf("no license with id '%s' exists", changelogId),
+			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}

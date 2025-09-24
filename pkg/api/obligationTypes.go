@@ -16,6 +16,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
+	"github.com/google/uuid"
 	"gorm.io/gorm"
 )
 
@@ -94,7 +95,7 @@ func GetAllObligationType(c *gin.Context) {
 //	@Router			/obligations/types [post]
 func CreateObligationType(c *gin.Context) {
 	var obType models.ObligationType
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 	if err := c.ShouldBindJSON(&obType); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -180,7 +181,7 @@ func CreateObligationType(c *gin.Context) {
 func DeleteObligationType(c *gin.Context) {
 	var obType models.ObligationType
 	obTypeParam := c.Param("type")
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 	if err := db.DB.Where(models.ObligationType{Type: obTypeParam}).First(&obType).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,

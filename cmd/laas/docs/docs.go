@@ -479,12 +479,6 @@ const docTemplate = `{
                             "$ref": "#/definitions/models.LicenseError"
                         }
                     },
-                    "409": {
-                        "description": "License with same shortname already exists",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    },
                     "500": {
                         "description": "Failed to create license",
                         "schema": {
@@ -603,7 +597,7 @@ const docTemplate = `{
                         "{}": []
                     }
                 ],
-                "description": "Get shortnames of all active licenses from the service",
+                "description": "Get shortnames and ids of all active licenses from the service",
                 "consumes": [
                     "application/json"
                 ],
@@ -613,7 +607,7 @@ const docTemplate = `{
                 "tags": [
                     "Licenses"
                 ],
-                "summary": "Get shortnames of all active licenses",
+                "summary": "Get shortnames and ids of all active licenses",
                 "operationId": "GetAllLicensePreviews",
                 "parameters": [
                     {
@@ -701,7 +695,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/licenses/{shortname}": {
+        "/licenses/{id}": {
             "get": {
                 "security": [
                     {
@@ -709,7 +703,7 @@ const docTemplate = `{
                         "{}": []
                     }
                 ],
-                "description": "Get a single license by its shortname",
+                "description": "Get a single license by its id",
                 "consumes": [
                     "application/json"
                 ],
@@ -719,13 +713,13 @@ const docTemplate = `{
                 "tags": [
                     "Licenses"
                 ],
-                "summary": "Get a license by shortname",
+                "summary": "Get a license by id",
                 "operationId": "GetLicense",
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Shortname of the license",
-                        "name": "shortname",
+                        "description": "Id of the license",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     }
@@ -738,7 +732,7 @@ const docTemplate = `{
                         }
                     },
                     "404": {
-                        "description": "License with shortname not found",
+                        "description": "License with id not found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -766,8 +760,8 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Shortname of the license to be updated",
-                        "name": "shortname",
+                        "description": "Id of the license to be updated",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
@@ -795,13 +789,7 @@ const docTemplate = `{
                         }
                     },
                     "404": {
-                        "description": "License with shortname not found",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    },
-                    "409": {
-                        "description": "License with same shortname already exists",
+                        "description": "License with id not found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -856,7 +844,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/obligation_maps/license/{license}": {
+        "/obligation_maps/license/{id}": {
             "get": {
                 "security": [
                     {
@@ -864,7 +852,7 @@ const docTemplate = `{
                         "{}": []
                     }
                 ],
-                "description": "Get obligation maps for a given license shortname",
+                "description": "Get obligation maps for a given license id",
                 "consumes": [
                     "application/json"
                 ],
@@ -875,11 +863,11 @@ const docTemplate = `{
                     "Obligations"
                 ],
                 "summary": "Get maps for a license",
-                "operationId": "GetObligationMapByLicense",
+                "operationId": "GetObligationMapByLicenseId",
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Shortname of the license",
+                        "description": "id of the license",
                         "name": "license",
                         "in": "path",
                         "required": true
@@ -893,7 +881,7 @@ const docTemplate = `{
                         }
                     },
                     "404": {
-                        "description": "No license with given shortname found or no map for",
+                        "description": "No license with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -901,7 +889,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/obligation_maps/topic/{topic}": {
+        "/obligation_maps/obligation/{id}": {
             "get": {
                 "security": [
                     {
@@ -909,7 +897,7 @@ const docTemplate = `{
                         "{}": []
                     }
                 ],
-                "description": "Get obligation maps for a given obligation topic",
+                "description": "Get obligation maps for a given obligation id",
                 "consumes": [
                     "application/json"
                 ],
@@ -920,12 +908,12 @@ const docTemplate = `{
                     "Obligations"
                 ],
                 "summary": "Get maps for an obligation",
-                "operationId": "GetObligationMapByTopic",
+                "operationId": "GetObligationMapByObligationId",
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation",
-                        "name": "topic",
+                        "description": "Id of the obligation",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     }
@@ -938,7 +926,7 @@ const docTemplate = `{
                         }
                     },
                     "404": {
-                        "description": "No obligation with given topic found or no map for",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -946,14 +934,14 @@ const docTemplate = `{
                 }
             }
         },
-        "/obligation_maps/topic/{topic}/license": {
+        "/obligation_maps/obligations/{id}/license": {
             "put": {
                 "security": [
                     {
                         "ApiKeyAuth": []
                     }
                 ],
-                "description": "Replaces the license list of an obligation topic with the given list in the obligation map.",
+                "description": "Replaces the license list of an obligation id with the given list in the obligation map.",
                 "consumes": [
                     "application/json"
                 ],
@@ -968,18 +956,18 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation",
-                        "name": "topic",
+                        "description": "Id of the obligation",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
                     {
-                        "description": "Shortnames of the licenses to be in map",
-                        "name": "shortnames",
+                        "description": "Ids of the licenses to be in map",
+                        "name": "Ids",
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseShortnamesInput"
+                            "$ref": "#/definitions/models.LicenseListInput"
                         }
                     }
                 ],
@@ -1010,7 +998,7 @@ const docTemplate = `{
                         "ApiKeyAuth": []
                     }
                 ],
-                "description": "Add or remove licenses from obligation map for a given obligation topic",
+                "description": "Add or remove licenses from obligation map for a given obligation id",
                 "consumes": [
                     "application/json"
                 ],
@@ -1025,18 +1013,18 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation",
-                        "name": "topic",
+                        "description": "Id of the obligation",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
                     {
-                        "description": "Shortnames of the licenses with action",
-                        "name": "shortname",
+                        "description": "License ids with action",
+                        "name": "license_maps",
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseMapShortnamesInput"
+                            "$ref": "#/definitions/models.LicenseMapInput"
                         }
                     }
                 ],
@@ -1124,7 +1112,7 @@ const docTemplate = `{
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/models.SwaggerObligationResponse"
+                            "$ref": "#/definitions/models.ObligationResponse"
                         }
                     },
                     "400": {
@@ -1166,7 +1154,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationDTO"
+                            "$ref": "#/definitions/models.ObligationCreateDTO"
                         }
                     }
                 ],
@@ -1174,17 +1162,11 @@ const docTemplate = `{
                     "201": {
                         "description": "Created",
                         "schema": {
-                            "$ref": "#/definitions/models.SwaggerObligationResponse"
+                            "$ref": "#/definitions/models.ObligationResponse"
                         }
                     },
                     "400": {
                         "description": "Bad request body",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    },
-                    "409": {
-                        "description": "Obligation with same body exists",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -1375,7 +1357,7 @@ const docTemplate = `{
                         "schema": {
                             "type": "array",
                             "items": {
-                                "$ref": "#/definitions/models.ObligationDTO"
+                                "$ref": "#/definitions/models.ObligationResponseDTO"
                             }
                         }
                     },
@@ -1701,7 +1683,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/obligations/{topic}": {
+        "/obligations/{id}": {
             "get": {
                 "security": [
                     {
@@ -1709,7 +1691,7 @@ const docTemplate = `{
                         "{}": []
                     }
                 ],
-                "description": "Get an active based on given topic",
+                "description": "Get an active based on given id",
                 "consumes": [
                     "application/json"
                 ],
@@ -1724,8 +1706,8 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation",
-                        "name": "topic",
+                        "description": "Id of the obligation",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     }
@@ -1734,11 +1716,11 @@ const docTemplate = `{
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/models.SwaggerObligationResponse"
+                            "$ref": "#/definitions/models.ObligationResponse"
                         }
                     },
                     "404": {
-                        "description": "No obligation with given topic found",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -1766,8 +1748,8 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation to be updated",
-                        "name": "topic",
+                        "description": "Id of the obligation to be updated",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     }
@@ -1777,7 +1759,7 @@ const docTemplate = `{
                         "description": "No Content"
                     },
                     "404": {
-                        "description": "No obligation with given topic found",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -1805,8 +1787,8 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation to be updated",
-                        "name": "topic",
+                        "description": "Id of the obligation to be updated",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
@@ -1824,7 +1806,7 @@ const docTemplate = `{
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/models.SwaggerObligationResponse"
+                            "$ref": "#/definitions/models.ObligationResponse"
                         }
                     },
                     "400": {
@@ -1834,7 +1816,7 @@ const docTemplate = `{
                         }
                     },
                     "404": {
-                        "description": "No obligation with given topic found",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -1848,7 +1830,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/obligations/{topic}/audits": {
+        "/obligations/{id}/audits": {
             "get": {
                 "security": [
                     {
@@ -1871,8 +1853,8 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation for which audits need to be fetched",
-                        "name": "topic",
+                        "description": "Id of the obligation for which audits need to be fetched",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
@@ -1897,13 +1879,13 @@ const docTemplate = `{
                         }
                     },
                     "404": {
-                        "description": "No obligation with given topic found",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
                     },
                     "500": {
-                        "description": "unable to find audits with such obligation topic",
+                        "description": "unable to find audits with such obligation id",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -2541,8 +2523,8 @@ const docTemplate = `{
                     "type": "object"
                 },
                 "id": {
-                    "type": "integer",
-                    "example": 456
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "timestamp": {
                     "type": "string",
@@ -2558,15 +2540,15 @@ const docTemplate = `{
                     "example": "LICENSE"
                 },
                 "type_id": {
-                    "type": "integer",
-                    "example": 34
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "user": {
                     "$ref": "#/definitions/models.User"
                 },
                 "user_id": {
-                    "type": "integer",
-                    "example": 123
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 }
             }
         },
@@ -2605,16 +2587,16 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "audit_id": {
-                    "type": "integer",
-                    "example": 456
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "field": {
                     "type": "string",
                     "example": "text"
                 },
                 "id": {
-                    "type": "integer",
-                    "example": 789
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "old_value": {
                     "type": "string",
@@ -2739,13 +2721,16 @@ const docTemplate = `{
             ],
             "properties": {
                 "OSIapproved": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": false
                 },
                 "active": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": true
                 },
                 "copyleft": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": false
                 },
                 "external_ref": {
                     "$ref": "#/definitions/models.LicenseDBSchemaExtension"
@@ -2762,7 +2747,11 @@ const docTemplate = `{
                     "type": "array",
                     "items": {
                         "type": "string"
-                    }
+                    },
+                    "example": [
+                        "f81d4fae-7dec-11d0-a765-00a0c91e6bf6",
+                        "f812jfae-7dbc-11d0-a765-00a0hf06bf6"
+                    ]
                 },
                 "risk": {
                     "type": "integer",
@@ -2775,7 +2764,8 @@ const docTemplate = `{
                     "example": "MIT"
                 },
                 "source": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "spdx"
                 },
                 "spdx_id": {
                     "type": "string",
@@ -2786,7 +2776,8 @@ const docTemplate = `{
                     "example": "MIT License Text here"
                 },
                 "text_updatable": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": false
                 },
                 "url": {
                     "type": "string",
@@ -2813,7 +2804,7 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "id": {
-                    "type": "integer"
+                    "type": "string"
                 },
                 "notes": {
                     "type": "string"
@@ -2842,9 +2833,6 @@ const docTemplate = `{
                 "text": {
                     "type": "string"
                 },
-                "textSetBy": {
-                    "type": "integer"
-                },
                 "textUpdatable": {
                     "type": "boolean"
                 },
@@ -2855,8 +2843,7 @@ const docTemplate = `{
                     "$ref": "#/definitions/models.User"
                 },
                 "userId": {
-                    "type": "integer",
-                    "format": "int64"
+                    "type": "string"
                 }
             }
         },
@@ -2891,6 +2878,10 @@ const docTemplate = `{
         "models.LicenseImportStatus": {
             "type": "object",
             "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
                 "shortname": {
                     "type": "string",
                     "example": "MIT"
@@ -2901,42 +2892,62 @@ const docTemplate = `{
                 }
             }
         },
-        "models.LicenseMapShortnamesElement": {
+        "models.LicenseListInput": {
+            "type": "object",
+            "properties": {
+                "ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    }
+                }
+            }
+        },
+        "models.LicenseMapElement": {
             "type": "object",
             "properties": {
                 "add": {
                     "type": "boolean",
                     "example": true
                 },
-                "shortname": {
+                "id": {
                     "type": "string",
-                    "example": "GPL-2.0-only"
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 }
             }
         },
-        "models.LicenseMapShortnamesInput": {
+        "models.LicenseMapInput": {
             "type": "object",
             "properties": {
                 "map": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/models.LicenseMapShortnamesElement"
+                        "$ref": "#/definitions/models.LicenseMapElement"
                     }
+                }
+            }
+        },
+        "models.LicensePreview": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "GPL-2.0-or-later"
                 }
             }
         },
         "models.LicensePreviewResponse": {
             "type": "object",
             "properties": {
-                "shortnames": {
+                "licenses": {
                     "type": "array",
                     "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
+                        "$ref": "#/definitions/models.LicensePreview"
+                    }
                 },
                 "status": {
                     "type": "integer",
@@ -2987,6 +2998,10 @@ const docTemplate = `{
                     "type": "string",
                     "example": "MIT License"
                 },
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
                 "notes": {
                     "type": "string",
                     "example": "This license has been superseded."
@@ -3022,21 +3037,6 @@ const docTemplate = `{
                 "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
-                }
-            }
-        },
-        "models.LicenseShortnamesInput": {
-            "type": "object",
-            "properties": {
-                "shortnames": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
                 }
             }
         },
@@ -3078,6 +3078,10 @@ const docTemplate = `{
                     "maximum": 5,
                     "minimum": 0,
                     "example": 1
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "MIT"
                 },
                 "source": {
                     "type": "string",
@@ -3126,7 +3130,7 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "id": {
-                    "type": "integer"
+                    "type": "string"
                 },
                 "licenses": {
                     "type": "array",
@@ -3134,17 +3138,11 @@ const docTemplate = `{
                         "$ref": "#/definitions/models.LicenseDB"
                     }
                 },
-                "md5": {
+                "obligationClassificationId": {
                     "type": "string"
                 },
-                "modifications": {
-                    "type": "boolean"
-                },
-                "obligationClassificationId": {
-                    "type": "integer"
-                },
                 "obligationTypeId": {
-                    "type": "integer"
+                    "type": "string"
                 },
                 "text": {
                     "type": "string"
@@ -3195,12 +3193,11 @@ const docTemplate = `{
                 }
             }
         },
-        "models.ObligationDTO": {
+        "models.ObligationCreateDTO": {
             "type": "object",
             "required": [
-                "category",
                 "classification",
-                "shortnames",
+                "license_ids",
                 "text",
                 "topic",
                 "type"
@@ -3220,18 +3217,14 @@ const docTemplate = `{
                 "comment": {
                     "type": "string"
                 },
-                "modifications": {
-                    "type": "boolean",
-                    "example": true
-                },
-                "shortnames": {
+                "license_ids": {
                     "type": "array",
                     "items": {
                         "type": "string"
                     },
                     "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
+                        "f81d4fae-7dec-11d0-a765-00a0c91e6bf6",
+                        "f812jfae-7dbc-11d0-a765-00a0hf06bf6"
                     ]
                 },
                 "text": {
@@ -3256,8 +3249,8 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "id": {
-                    "type": "integer",
-                    "example": 31
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "topic": {
                     "type": "string",
@@ -3277,6 +3270,19 @@ const docTemplate = `{
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.ObligationMapLicenseFormat": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "MIT"
                 }
             }
         },
@@ -3301,15 +3307,15 @@ const docTemplate = `{
         "models.ObligationMapUser": {
             "type": "object",
             "properties": {
-                "shortnames": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "licenses": {
                     "type": "array",
                     "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
+                        "$ref": "#/definitions/models.ObligationMapLicenseFormat"
+                    }
                 },
                 "topic": {
                     "type": "string",
@@ -3330,6 +3336,10 @@ const docTemplate = `{
         "models.ObligationPreview": {
             "type": "object",
             "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
                 "topic": {
                     "type": "string",
                     "example": "Provide Copyright Notices"
@@ -3337,10 +3347,10 @@ const docTemplate = `{
                 "type": {
                     "type": "string",
                     "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
+                        "OBLIGATION",
+                        "RESTRICTION",
+                        "RISK",
+                        "RIGHT"
                     ]
                 }
             }
@@ -3357,6 +3367,81 @@ const docTemplate = `{
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.ObligationResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationResponseDTO"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
+        "models.ObligationResponseDTO": {
+            "type": "object",
+            "required": [
+                "category",
+                "classification",
+                "license_ids",
+                "text",
+                "topic",
+                "type"
+            ],
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "category": {
+                    "type": "string",
+                    "example": "DISTRIBUTION"
+                },
+                "classification": {
+                    "type": "string",
+                    "example": "GREEN"
+                },
+                "comment": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "license_ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "f81d4fae-7dec-11d0-a765-00a0c91e6bf6",
+                        "f812jfae-7dbc-11d0-a765-00a0hf06bf6"
+                    ]
+                },
+                "text": {
+                    "type": "string",
+                    "example": "Source code be made available when distributing the software."
+                },
+                "text_updatable": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "copyleft"
+                },
+                "type": {
+                    "type": "string",
+                    "example": "RISK"
                 }
             }
         },
@@ -3392,6 +3477,9 @@ const docTemplate = `{
         },
         "models.ObligationUpdateDTO": {
             "type": "object",
+            "required": [
+                "license_ids"
+            ],
             "properties": {
                 "active": {
                     "type": "boolean"
@@ -3407,9 +3495,15 @@ const docTemplate = `{
                 "comment": {
                     "type": "string"
                 },
-                "modifications": {
-                    "type": "boolean",
-                    "example": true
+                "license_ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "f81d4fae-7dec-11d0-a765-00a0c91e6bf6",
+                        "f812jfae-7dbc-11d0-a765-00a0hf06bf6"
+                    ]
                 },
                 "text": {
                     "type": "string",
@@ -3418,6 +3512,10 @@ const docTemplate = `{
                 "text_updatable": {
                     "type": "boolean",
                     "example": true
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "copyleft"
                 },
                 "type": {
                     "type": "string",
@@ -3436,8 +3534,8 @@ const docTemplate = `{
                     "example": "qwerty"
                 },
                 "id": {
-                    "type": "integer",
-                    "example": 123
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 }
             }
         },
@@ -3553,8 +3651,8 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "id": {
-                    "type": "integer",
-                    "example": 123
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "shortname": {
                     "type": "string",
@@ -3573,8 +3671,8 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "id": {
-                    "type": "integer",
-                    "example": 123
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "similarity": {
                     "type": "number"
@@ -3597,24 +3695,6 @@ const docTemplate = `{
             "properties": {
                 "text": {
                     "type": "string"
-                }
-            }
-        },
-        "models.SwaggerObligationResponse": {
-            "type": "object",
-            "properties": {
-                "data": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.ObligationDTO"
-                    }
-                },
-                "paginationmeta": {
-                    "$ref": "#/definitions/models.PaginationMeta"
-                },
-                "status": {
-                    "type": "integer",
-                    "example": 200
                 }
             }
         },
@@ -3655,8 +3735,8 @@ const docTemplate = `{
                     "example": "fossy"
                 },
                 "id": {
-                    "type": "integer",
-                    "example": 123
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "user_email": {
                     "type": "string",

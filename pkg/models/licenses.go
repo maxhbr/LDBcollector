@@ -1,29 +1,28 @@
+// SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
 // SPDX-FileCopyrightText: 2025 Siemens AG
+// SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
 // SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com>
+// SPDX-FileContributor: 2025 Chayan Das <01chayandas@gmail.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only
 
 package models
 
 import (
-	"fmt"
+	"encoding/json"
+	"errors"
 	"strconv"
 	"time"
 
-	"github.com/fossology/LicenseDb/pkg/db"
+	"github.com/google/uuid"
 	"gorm.io/datatypes"
-)
-
-const (
-	TEXT_SET_VIA_LICENSE_CREATION = iota
-	TEXT_SET_VIA_LICENSE_IMPORT
-	TEXT_SET_VIA_MANUAL_UPDATE
+	"gorm.io/gorm"
 )
 
 // The LicenseDB struct represents a license entity with various attributes and properties
 // associated with it. It provides structured storage for license-related information.
 type LicenseDB struct {
-	Id            int64                                        `gorm:"primary_key;column:rf_id"`
+	Id            uuid.UUID                                    `gorm:"primary_key;type:uuid;column:rf_id;default:uuid_generate_v4()"`
 	Shortname     *string                                      `gorm:"column:rf_shortname"`
 	Fullname      *string                                      `gorm:"column:rf_fullname"`
 	Text          *string                                      `gorm:"column:rf_text"`
@@ -37,20 +36,59 @@ type LicenseDB struct {
 	Source        *string                                      `gorm:"column:rf_source"`
 	SpdxId        *string                                      `gorm:"column:rf_spdx_id"`
 	Risk          *int64                                       `gorm:"column:rf_risk"`
-	TextSetBy     *int64                                       `gorm:"column:rf_flag"`
 	ExternalRef   datatypes.JSONType[LicenseDBSchemaExtension] `gorm:"column:external_ref"`
 	Obligations   []Obligation                                 `gorm:"many2many:obligation_licenses;joinForeignKey:license_db_id;joinReferences:obligation_id"`
 	User          User                                         `gorm:"foreignKey:UserId;references:Id"`
-	UserId        int64
+	UserId        uuid.UUID
 }
 
 func (LicenseDB) TableName() string {
 	return "license_dbs"
 }
 
+func (l *LicenseDB) BeforeCreate(tx *gorm.DB) (err error) {
+	if l.Shortname == nil || (l.Shortname != nil && *l.Shortname == "") {
+		return errors.New("shortname cannot be empty")
+	}
+
+	if l.Fullname == nil || (l.Fullname != nil && *l.Fullname == "") {
+		return errors.New("fullname cannot be empty")
+	}
+
+	if l.Text == nil || (l.Text != nil && *l.Text == "") {
+		return errors.New("text cannot be empty")
+	}
+
+	if l.SpdxId == nil || (l.SpdxId != nil && *l.SpdxId == "") {
+		return errors.New("spdx_id cannot be empty")
+	}
+
+	return nil
+}
+
+func (l *LicenseDB) BeforeUpdate(tx *gorm.DB) (err error) {
+	if l.Shortname != nil && *l.Shortname == "" {
+		return errors.New("shortname cannot be empty")
+	}
+
+	if l.Fullname != nil && *l.Fullname == "" {
+		return errors.New("fullname cannot be empty")
+	}
+
+	if l.Text != nil && *l.Text == "" {
+		return errors.New("text cannot be empty")
+	}
+
+	if l.SpdxId != nil && *l.SpdxId == "" {
+		return errors.New("spdx_id cannot be empty")
+	}
+
+	return nil
+}
+
 func (l *LicenseDB) ConvertToLicenseResponseDTO() LicenseResponseDTO {
 	var response LicenseResponseDTO
-
+	response.Id = l.Id
 	response.Shortname = *l.Shortname
 	response.Active = *l.Active
 	response.AddDate = l.AddDate
@@ -81,54 +119,50 @@ type LicenseCreateDTO struct {
 	Shortname     string                   `json:"shortname" validate:"required" example:"MIT"`
 	Fullname      string                   `json:"fullname" validate:"required" example:"MIT License"`
 	Text          string                   `json:"text" validate:"required" example:"MIT License Text here"`
-	Url           string                   `json:"url" example:"https://opensource.org/licenses/MIT"`
-	Copyleft      bool                     `json:"copyleft"`
-	OSIapproved   bool                     `json:"OSIapproved"`
-	Notes         string                   `json:"notes" example:"This license has been superseded."`
-	TextUpdatable bool                     `json:"text_updatable"`
-	Active        bool                     `json:"active"`
-	Source        string                   `json:"source"`
+	Url           *string                  `json:"url" example:"https://opensource.org/licenses/MIT"`
+	Copyleft      *bool                    `json:"copyleft" example:"false"`
+	OSIapproved   *bool                    `json:"OSIapproved" example:"false"`
+	Notes         *string                  `json:"notes" example:"This license has been superseded."`
+	TextUpdatable *bool                    `json:"text_updatable" example:"false"`
+	Active        *bool                    `json:"active" example:"true"`
+	Source        *string                  `json:"source" example:"spdx"`
 	SpdxId        string                   `json:"spdx_id" validate:"required,spdxId" example:"MIT"`
-	Risk          int64                    `json:"risk" validate:"min=0,max=5" example:"1"`
+	Risk          *int64                   `json:"risk" validate:"min=0,max=5" example:"1"`
 	ExternalRef   LicenseDBSchemaExtension `json:"external_ref"`
-	Obligations   []string                 `json:"obligations"`
+	Obligations   *[]uuid.UUID             `json:"obligations" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
 }
 
-func (dto *LicenseCreateDTO) ConvertToLicenseDB() (LicenseDB, error) {
+func (dto *LicenseCreateDTO) ConvertToLicenseDB() LicenseDB {
 	var l LicenseDB
 
 	l.Shortname = &dto.Shortname
-	l.Active = &dto.Active
-	l.Copyleft = &dto.Copyleft
+	l.Active = dto.Active
+	l.Copyleft = dto.Copyleft
 	l.ExternalRef = datatypes.NewJSONType(dto.ExternalRef)
 	l.Fullname = &dto.Fullname
-	l.Notes = &dto.Notes
-	l.OSIapproved = &dto.OSIapproved
-	l.Risk = &dto.Risk
-	l.Source = &dto.Source
+	l.Notes = dto.Notes
+	l.OSIapproved = dto.OSIapproved
+	l.Risk = dto.Risk
+	l.Source = dto.Source
 	l.SpdxId = &dto.SpdxId
 	l.Text = &dto.Text
-	l.TextUpdatable = &dto.TextUpdatable
-	l.Url = &dto.Url
+	l.TextUpdatable = dto.TextUpdatable
+	l.Url = dto.Url
 
-	flag := int64(TEXT_SET_VIA_LICENSE_CREATION)
-	l.TextSetBy = &flag
-
-	obligations := []Obligation{}
-	for _, topic := range dto.Obligations {
-		o := Obligation{}
-		if err := db.DB.Where(&Obligation{Topic: o.Topic}).First(&o).Error; err != nil {
-			return l, fmt.Errorf("Obligation with topic %s not found", topic)
+	if dto.Obligations != nil {
+		obligations := []Obligation{}
+		for _, id := range *dto.Obligations {
+			obligations = append(obligations, Obligation{Id: id})
 		}
-		obligations = append(obligations, o)
+		l.Obligations = obligations
 	}
-	l.Obligations = obligations
 
-	return l, nil
+	return l
 }
 
 // LicenseResponseDTO struct represents the format for returning a license in an api request.
 type LicenseResponseDTO struct {
+	Id            uuid.UUID                `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
 	Shortname     string                   `json:"shortname" example:"MIT"`
 	Fullname      string                   `json:"fullname" example:"MIT License"`
 	Text          string                   `json:"text" example:"MIT License Text here"`
@@ -149,6 +183,7 @@ type LicenseResponseDTO struct {
 
 // LicenseUpdateDTO struct represents the input format for updating an existing license.
 type LicenseUpdateDTO struct {
+	Shortname     *string                `json:"shortname" example:"MIT"`
 	Fullname      *string                `json:"fullname" example:"MIT License"`
 	Text          *string                `json:"text" example:"MIT License Text here"`
 	Url           *string                `json:"url" example:"https://opensource.org/licenses/MIT"`
@@ -167,7 +202,7 @@ type LicenseUpdateDTO struct {
 func (dto *LicenseUpdateDTO) ConvertToLicenseDB() LicenseDB {
 	var l LicenseDB
 
-	// Handle update of external ref, flag and obligations separately as it's not straightforward
+	l.Shortname = dto.Shortname
 	l.Active = dto.Active
 	l.Copyleft = dto.Copyleft
 	l.Fullname = dto.Fullname
@@ -179,6 +214,53 @@ func (dto *LicenseUpdateDTO) ConvertToLicenseDB() LicenseDB {
 	l.Text = dto.Text
 	l.TextUpdatable = dto.TextUpdatable
 	l.Url = dto.Url
+
+	return l
+}
+
+// LicenseFileDTO struct represents the input format for importing a license.
+type LicenseImportDTO struct {
+	Id            *uuid.UUID             `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
+	Shortname     *string                `json:"shortname" validate:"required" example:"MIT"`
+	Fullname      *string                `json:"fullname" example:"MIT License"`
+	Text          *string                `json:"text" example:"MIT License Text here"`
+	Url           *string                `json:"url" example:"https://opensource.org/licenses/MIT"`
+	Copyleft      *bool                  `json:"copyleft" example:"false"`
+	OSIapproved   *bool                  `json:"OSIapproved" example:"false"`
+	Notes         *string                `json:"notes" example:"This license has been superseded."`
+	TextUpdatable *bool                  `json:"text_updatable" example:"false"`
+	Active        *bool                  `json:"active" example:"true"`
+	Source        *string                `json:"source" example:"Source"`
+	SpdxId        *string                `json:"spdx_id" example:"MIT" validate:"omitempty,spdxId"`
+	Risk          *int64                 `json:"risk" validate:"omitempty,min=0,max=5" example:"1"`
+	ExternalRef   map[string]interface{} `json:"external_ref"`
+	Obligations   *[]Obligation          `json:"obligations"`
+}
+
+func (dto *LicenseImportDTO) ConvertToLicenseDB() LicenseDB {
+	var l LicenseDB
+	l.Shortname = dto.Shortname
+	l.Active = dto.Active
+	l.Copyleft = dto.Copyleft
+	l.Fullname = dto.Fullname
+	l.Notes = dto.Notes
+	l.OSIapproved = dto.OSIapproved
+	l.Risk = dto.Risk
+	l.Source = dto.Source
+	l.SpdxId = dto.SpdxId
+	l.Text = dto.Text
+	l.TextUpdatable = dto.TextUpdatable
+	l.Url = dto.Url
+
+	var ext LicenseDBSchemaExtension
+
+	bytes, _ := json.Marshal(dto.ExternalRef)
+
+	if err := json.Unmarshal(bytes, &ext); err != nil {
+		panic(err)
+	}
+
+	l.ExternalRef = datatypes.NewJSONType(ext)
 
 	return l
 }
@@ -204,7 +286,7 @@ type LicenseJson struct {
 // It performs several field assignments and transformations to create the LicenseDB object,
 // including generating the SpdxId based on the SpdxCompatible field.
 // The resulting LicenseDB object is returned as the output of this function.
-func (input *LicenseJson) Converter() LicenseCreateDTO {
+func (input *LicenseJson) Converter() LicenseImportDTO {
 	spdxCompatible, err := strconv.ParseBool(input.SpdxCompatible)
 	if err != nil {
 		spdxCompatible = false
@@ -236,33 +318,39 @@ func (input *LicenseJson) Converter() LicenseCreateDTO {
 		risk = 0
 	}
 
-	result := LicenseCreateDTO{
-		Shortname:     input.Shortname,
-		Fullname:      input.Fullname,
-		Text:          input.Text,
-		Url:           input.Url,
-		Copyleft:      copyleft,
-		OSIapproved:   osiApproved,
-		Notes:         input.Notes,
-		TextUpdatable: textUpdatable,
-		Active:        active,
-		Source:        input.Source,
-		SpdxId:        input.SpdxCompatible,
-		Risk:          risk,
+	result := LicenseImportDTO{
+		Shortname:     &input.Shortname,
+		Fullname:      &input.Fullname,
+		Text:          &input.Text,
+		Url:           &input.Url,
+		Copyleft:      &copyleft,
+		OSIapproved:   &osiApproved,
+		Notes:         &input.Notes,
+		TextUpdatable: &textUpdatable,
+		Active:        &active,
+		Source:        &input.Source,
+		SpdxId:        &input.SpdxCompatible,
+		Risk:          &risk,
 	}
 	return result
 }
 
+type LicensePreview struct {
+	Id        uuid.UUID `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
+	Shortname string    `json:"shortname" example:"GPL-2.0-or-later"`
+}
+
 // LicensePreviewResponse gets us the list of all license shortnames
 type LicensePreviewResponse struct {
-	Status     int      `json:"status" example:"200"`
-	Shortnames []string `json:"shortnames" example:"GPL-2.0-only,GPL-2.0-or-later"`
+	Status   int              `json:"status" example:"200"`
+	Licenses []LicensePreview `json:"licenses"`
 }
 
 // LicenseImportStatus is the status of license records successfully inserted in the database during import
 type LicenseImportStatus struct {
-	Status    int    `json:"status" example:"200"`
-	Shortname string `json:"shortname" example:"MIT"`
+	Status    int       `json:"status" example:"200"`
+	Shortname string    `json:"shortname" example:"MIT"`
+	Id        uuid.UUID `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
 }
 
 // ImportObligationsResponse is the response structure for import obligation response

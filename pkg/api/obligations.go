@@ -9,9 +9,7 @@
 package api
 
 import (
-	"context"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"net/http"
 	"path/filepath"
@@ -25,6 +23,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )
@@ -41,7 +40,7 @@ import (
 //	@Param			page		query		int		false	"Page number"
 //	@Param			limit		query		int		false	"Number of records per page"
 //	@Param			order_by	query		string	false	"Asc or desc ordering"	Enums(asc, desc)	default(asc)
-//	@Success		200			{object}	models.SwaggerObligationResponse
+//	@Success		200			{object}	models.ObligationResponse
 //	@Failure		400			{object}	models.LicenseError	"Invalid active value"
 //	@Failure		500			{object}	models.LicenseError	"Internal server error"
 //	@Security		ApiKeyAuth || {}
@@ -91,11 +90,18 @@ func GetAllObligation(c *gin.Context) {
 		return
 	}
 
+	var obligationDtos []models.ObligationResponseDTO
+
+	for _, o := range obligations {
+		obDto := o.ConvertToObligationResponseDTO()
+		obligationDtos = append(obligationDtos, obDto)
+	}
+
 	res := models.ObligationResponse{
-		Data:   obligations,
+		Data:   obligationDtos,
 		Status: http.StatusOK,
-		Meta: &models.PaginationMeta{
-			ResourceCount: 0,
+		Meta: models.PaginationMeta{
+			ResourceCount: len(obligations),
 		},
 	}
 
@@ -105,24 +111,37 @@ func GetAllObligation(c *gin.Context) {
 // GetObligation retrieves an active obligation record
 //
 //	@Summary		Get an obligation
-//	@Description	Get an active based on given topic
+//	@Description	Get an active based on given id
 //	@Id				GetObligation
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			topic	path		string	true	"Topic of the obligation"
-//	@Success		200		{object}	models.SwaggerObligationResponse
-//	@Failure		404		{object}	models.LicenseError	"No obligation with given topic found"
+//	@Param			id	path		string	true	"Id of the obligation"
+//	@Success		200	{object}	models.ObligationResponse
+//	@Failure		404	{object}	models.LicenseError	"No obligation with given id found"
 //	@Security		ApiKeyAuth || {}
-//	@Router			/obligations/{topic} [get]
+//	@Router			/obligations/{id} [get]
 func GetObligation(c *gin.Context) {
 	var obligation models.Obligation
 	query := db.DB.Model(&obligation)
-	tp := c.Param("topic")
-	if err := query.Joins("Type").Joins("Classification").Preload("Licenses").Where(models.Obligation{Topic: &tp}).First(&obligation).Error; err != nil {
+
+	obligationId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no obligation with id '%s' exists", obligationId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	if err := query.Joins("Type").Joins("Classification").Preload("Licenses").Where(models.Obligation{Id: obligationId}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
+			Message:   fmt.Sprintf("obligation with id '%s' not found", obligationId.String()),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -130,10 +149,13 @@ func GetObligation(c *gin.Context) {
 		c.JSON(http.StatusNotFound, er)
 		return
 	}
+
+	obDto := obligation.ConvertToObligationResponseDTO()
+
 	res := models.ObligationResponse{
-		Data:   []models.Obligation{obligation},
+		Data:   []models.ObligationResponseDTO{obDto},
 		Status: http.StatusOK,
-		Meta: &models.PaginationMeta{
+		Meta: models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -148,16 +170,15 @@ func GetObligation(c *gin.Context) {
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			obligation	body		models.ObligationDTO	true	"Obligation to create"
-//	@Success		201			{object}	models.SwaggerObligationResponse
+//	@Param			obligation	body		models.ObligationCreateDTO	true	"Obligation to create"
+//	@Success		201			{object}	models.ObligationResponse
 //	@Failure		400			{object}	models.LicenseError	"Bad request body"
-//	@Failure		409			{object}	models.LicenseError	"Obligation with same body exists"
 //	@Failure		500			{object}	models.LicenseError	"Unable to create obligation"
 //	@Security		ApiKeyAuth
 //	@Router			/obligations [post]
 func CreateObligation(c *gin.Context) {
-	var obligation models.Obligation
-	userId := c.MustGet("userId").(int64)
+	var obligation models.ObligationCreateDTO
+	userId := c.MustGet("userId").(uuid.UUID)
 
 	if err := c.ShouldBindJSON(&obligation); err != nil {
 		er := models.LicenseError{
@@ -172,10 +193,8 @@ func CreateObligation(c *gin.Context) {
 	}
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		result := tx.
-			Where(&models.Obligation{Topic: obligation.Topic}).
-			Or(&models.Obligation{Md5: obligation.Md5}).
-			FirstOrCreate(&obligation)
+		ob := obligation.ConvertToObligation()
+		result := tx.Omit("Licenses").Create(&ob)
 
 		if result.Error != nil {
 			er := models.LicenseError{
@@ -189,20 +208,7 @@ func CreateObligation(c *gin.Context) {
 			return result.Error
 		}
 
-		if result.RowsAffected == 0 {
-			er := models.LicenseError{
-				Status:  http.StatusConflict,
-				Message: "can not create obligation with same topic or text",
-				Error: fmt.Sprintf("Error: Obligation with topic '%s' or Text '%s'... already exists",
-					*obligation.Topic, (*obligation.Text)[0:10]),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusConflict, er)
-			return errors.New("can not create obligation with same topic or text")
-		}
-
-		if err := addChangelogsForObligation(tx, userId, &obligation, &models.Obligation{}); err != nil {
+		if err := addChangelogsForObligation(tx, userId, &ob, &models.Obligation{}); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
 				Message:   "Failed to create obligation",
@@ -214,15 +220,39 @@ func CreateObligation(c *gin.Context) {
 			return err
 		}
 
-		res := models.ObligationResponse{
-			Data:   []models.Obligation{obligation},
-			Status: http.StatusCreated,
-			Meta: &models.PaginationMeta{
-				ResourceCount: 1,
-			},
+		var combinedMapErrors string
+		var removeLicenses, insertLicenses []uuid.UUID
+		insertLicenses = obligation.LicenseIds
+		_, errs := utils.PerformObligationMapActions(tx, userId, &ob, removeLicenses, insertLicenses)
+		if len(errs) != 0 {
+			for _, err := range errs {
+				if err != nil {
+					combinedMapErrors += fmt.Sprintf("%s\n", err)
+				}
+			}
 		}
 
-		c.JSON(http.StatusCreated, res)
+		if combinedMapErrors == "" {
+			obdto := ob.ConvertToObligationResponseDTO()
+			res := models.ObligationResponse{
+				Data:   []models.ObligationResponseDTO{obdto},
+				Status: http.StatusOK,
+				Meta: models.PaginationMeta{
+					ResourceCount: 1,
+				},
+			}
+
+			c.JSON(http.StatusCreated, res)
+		} else {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "Obligation created successfully but license association failed",
+				Error:     combinedMapErrors,
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+		}
 
 		return nil
 	})
@@ -236,24 +266,36 @@ func CreateObligation(c *gin.Context) {
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			topic		path		string						true	"Topic of the obligation to be updated"
+//	@Param			id			path		string						true	"Id of the obligation to be updated"
 //	@Param			obligation	body		models.ObligationUpdateDTO	true	"Obligation to be updated"
-//	@Success		200			{object}	models.SwaggerObligationResponse
+//	@Success		200			{object}	models.ObligationResponse
 //	@Failure		400			{object}	models.LicenseError	"Invalid request"
-//	@Failure		404			{object}	models.LicenseError	"No obligation with given topic found"
+//	@Failure		404			{object}	models.LicenseError	"No obligation with given id found"
 //	@Failure		500			{object}	models.LicenseError	"Unable to update obligation"
 //	@Security		ApiKeyAuth
-//	@Router			/obligations/{topic} [patch]
+//	@Router			/obligations/{id} [patch]
 func UpdateObligation(c *gin.Context) {
 	var updates models.ObligationUpdateDTO
 	var oldObligation models.Obligation
-	userId := c.MustGet("userId").(int64)
-	tp := c.Param("topic")
+	userId := c.MustGet("userId").(uuid.UUID)
 
-	if err := db.DB.Joins("Classification").Joins("Type").Preload("Licenses").Where(models.Obligation{Topic: &tp}).First(&oldObligation).Error; err != nil {
+	obligationId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no obligation with id '%s' exists", obligationId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	if err := db.DB.Joins("Classification").Joins("Type").Preload("Licenses").Where(models.Obligation{Id: obligationId}).First(&oldObligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
+			Message:   fmt.Sprintf("obligation with id '%s' not found", obligationId.String()),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -274,13 +316,23 @@ func UpdateObligation(c *gin.Context) {
 		return
 	}
 
-	newObligation := updates.Converter()
+	newObligation := updates.ConvertToObligation()
+	if newObligation.Text != nil && *oldObligation.Text != *newObligation.Text && !*oldObligation.TextUpdatable {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Text is not updatable",
+			Error:     "Field `text_updatable` needs to be true to update the text",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
 	newObligation.Id = oldObligation.Id
+	var combinedMapErrors string
 
 	if err := db.DB.Transaction(func(tx *gorm.DB) error {
-		// https://gorm.io/docs/context.html#Context-in-Hooks-x2F-Callbacks
-		ctx := context.WithValue(context.Background(), models.ContextKey("oldObligation"), &oldObligation)
-		if err := tx.WithContext(ctx).Omit("Licenses", "Topic").Updates(&newObligation).Error; err != nil {
+		if err := tx.Omit("Licenses", "Topic").Updates(&newObligation).Error; err != nil {
 			return err
 		}
 
@@ -288,11 +340,33 @@ func UpdateObligation(c *gin.Context) {
 			return err
 		}
 
-		if err := addChangelogsForObligation(tx, userId, newObligation, &oldObligation); err != nil {
+		if err := addChangelogsForObligation(tx, userId, &newObligation, &oldObligation); err != nil {
 			return err
 		}
 
-		newObligation.Licenses = oldObligation.Licenses
+		if updates.LicenseIds == nil {
+			return nil
+		}
+
+		if err := tx.Where(&models.Obligation{Id: oldObligation.Id}).Preload("Licenses").First(&oldObligation).Error; err != nil {
+			return nil
+		}
+		var licenseIds, removeLicenses, insertLicenses []uuid.UUID
+
+		licenseIds = slices.Compact(*updates.LicenseIds)
+
+		utils.GenerateDiffForReplacingLicenses(&oldObligation, licenseIds, &removeLicenses, &insertLicenses)
+
+		userId := c.MustGet("userId").(uuid.UUID)
+		_, errs := utils.PerformObligationMapActions(tx, userId, &oldObligation, removeLicenses, insertLicenses)
+		if len(errs) != 0 {
+			for _, err := range errs {
+				if err != nil {
+					combinedMapErrors += fmt.Sprintf("%s\n", err)
+				}
+			}
+			return nil
+		}
 
 		return nil
 	}); err != nil {
@@ -307,14 +381,27 @@ func UpdateObligation(c *gin.Context) {
 		return
 	}
 
-	res := models.ObligationResponse{
-		Data:   []models.Obligation{*newObligation},
-		Status: http.StatusOK,
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
+	if combinedMapErrors != "" {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Obligation created successfully but license association failed",
+			Error:     combinedMapErrors,
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+	} else {
+		obDto := newObligation.ConvertToObligationResponseDTO()
+
+		res := models.ObligationResponse{
+			Data:   []models.ObligationResponseDTO{obDto},
+			Status: http.StatusOK,
+			Meta: models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+		c.JSON(http.StatusOK, res)
 	}
-	c.JSON(http.StatusOK, res)
 }
 
 // DeleteObligation marks an existing obligation record as inactive
@@ -325,18 +412,31 @@ func UpdateObligation(c *gin.Context) {
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			topic	path	string	true	"Topic of the obligation to be updated"
+//	@Param			id	path	string	true	"Id of the obligation to be updated"
 //	@Success		204
-//	@Failure		404	{object}	models.LicenseError	"No obligation with given topic found"
+//	@Failure		404	{object}	models.LicenseError	"No obligation with given id found"
 //	@Security		ApiKeyAuth
-//	@Router			/obligations/{topic} [delete]
+//	@Router			/obligations/{id} [delete]
 func DeleteObligation(c *gin.Context) {
 	var obligation models.Obligation
-	tp := c.Param("topic")
-	if err := db.DB.Where(models.Obligation{Topic: &tp}).First(&obligation).Error; err != nil {
+
+	obligationId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no obligation with id '%s' exists", obligationId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	if err := db.DB.Where(models.Obligation{Id: obligationId}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
+			Message:   fmt.Sprintf("obligation with id '%s' not found", obligationId.String()),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -345,7 +445,7 @@ func DeleteObligation(c *gin.Context) {
 		return
 	}
 	*obligation.Active = false
-	if err := db.DB.Session(&gorm.Session{SkipHooks: true}).Updates(&obligation).Error; err != nil {
+	if err := db.DB.Updates(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "failed to delete obligation",
@@ -367,43 +467,38 @@ func DeleteObligation(c *gin.Context) {
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			topic	path		string	true	"Topic of the obligation for which audits need to be fetched"
+//	@Param			id		path		string	true	"Id of the obligation for which audits need to be fetched"
 //	@Param			page	query		int		false	"Page number"
 //	@Param			limit	query		int		false	"Number of records per page"
 //	@Success		200		{object}	models.AuditResponse
-//	@Failure		404		{object}	models.LicenseError	"No obligation with given topic found"
-//	@Failure		500		{object}	models.LicenseError	"unable to find audits with such obligation topic"
-//
+//	@Failure		404		{object}	models.LicenseError	"No obligation with given id found"
+//	@Failure		500		{object}	models.LicenseError	"unable to find audits with such obligation id"
 //	@Security		ApiKeyAuth || {}
-//
-//	@Router			/obligations/{topic}/audits [get]
+//	@Router			/obligations/{id}/audits [get]
 func GetObligationAudits(c *gin.Context) {
-	var obligation models.Obligation
-	topic := c.Param("topic")
-
-	result := db.DB.Where(models.Obligation{Topic: &topic}).Select("id").First(&obligation)
-	if result.Error != nil {
+	obligationId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("obligation with topic '%s' not found", topic),
-			Error:     result.Error.Error(),
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no obligation with id '%s' exists", obligationId.String()),
+			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusNotFound, er)
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
 	var audits []models.Audit
 	query := db.DB.Model(&models.Audit{}).Preload("User")
-	query.Where(models.Audit{TypeId: obligation.Id, Type: "Obligation"}).Order("timestamp desc")
+	query.Where(models.Audit{TypeId: obligationId, Type: "OBLIGATION"}).Order("timestamp desc")
 	_ = utils.PreparePaginateResponse(c, query, &models.AuditResponse{})
 
 	res := query.Find(&audits)
 	if res.Error != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
-			Message:   "unable to find audits with such obligation topic",
+			Message:   fmt.Sprintf("unable to find audits with such obligation id '%s'", obligationId.String()),
 			Error:     res.Error.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -416,7 +511,7 @@ func GetObligationAudits(c *gin.Context) {
 		if err := utils.GetAuditEntity(c, &audits[i]); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
-				Message:   "unable to find audits with such obligation topic",
+				Message:   fmt.Sprintf("unable to find audits with such obligation id '%s'", obligationId.String()),
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
@@ -452,7 +547,7 @@ func GetObligationAudits(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/obligations/import [post]
 func ImportObligations(c *gin.Context) {
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 	file, header, err := c.Request.FormFile("file")
 	if err != nil {
 		er := models.LicenseError{
@@ -479,7 +574,7 @@ func ImportObligations(c *gin.Context) {
 		return
 	}
 
-	var obligations []models.Obligation
+	var obligations []models.ObligationFileDTO
 	decoder := json.NewDecoder(file)
 	if err := decoder.Decode(&obligations); err != nil {
 		er := models.LicenseError{
@@ -498,31 +593,59 @@ func ImportObligations(c *gin.Context) {
 	}
 
 	for _, ob := range obligations {
-		oldObligation := ob
-		newObligation := ob
+		oldObligation := ob.ConvertToObligation()
+		newObligation := oldObligation
 		_ = db.DB.Transaction(func(tx *gorm.DB) error {
-			result := tx.
-				Joins("Type").
-				Joins("Classification").
-				Preload("Licenses").
-				Where(&models.Obligation{Topic: oldObligation.Topic}).
-				Or(&models.Obligation{Md5: oldObligation.Md5}).
-				Omit("Licenses").
-				FirstOrCreate(&oldObligation)
-			if result.Error != nil {
-				res.Data = append(res.Data, models.LicenseError{
-					Status:    http.StatusBadRequest,
-					Message:   fmt.Sprintf("Failed to create/update obligation: %s", result.Error.Error()),
-					Error:     *ob.Topic,
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
+			// If id not present in json object, create a new one.
+			//
+			// If id present in json object, but entry not found in database (can arise in cases when
+			// license/obligation file exported from one LicenseDb instance is imported in another instance)
+			// then create a new one
+			//
+			// If id present in json object and entry found in database, update the database with field values
+			// of the json object
+			if ob.Id == nil {
+				result := tx.Create(&oldObligation)
+				if result.Error != nil {
+					res.Data = append(res.Data, models.LicenseError{
+						Status:    http.StatusBadRequest,
+						Message:   fmt.Sprintf("Failed to create/update obligation: %s", result.Error.Error()),
+						Error:     *ob.Topic,
+						Path:      c.Request.URL.Path,
+						Timestamp: time.Now().Format(time.RFC3339),
+					})
+					return err
+				}
+
+				if err := addChangelogsForObligation(tx, userId, &oldObligation, &models.Obligation{}); err != nil {
+					res.Data = append(res.Data, models.LicenseError{
+						Status:    http.StatusInternalServerError,
+						Message:   "Failed to update license",
+						Error:     err.Error(),
+						Path:      c.Request.URL.Path,
+						Timestamp: time.Now().Format(time.RFC3339),
+					})
+					return err
+				}
+				// case when obligation doesn't exist in database and is inserted
+				res.Data = append(res.Data, models.ObligationImportStatus{
+					Data:    models.ObligationId{Id: oldObligation.Id, Topic: *oldObligation.Topic},
+					Status:  http.StatusCreated,
+					Message: "obligation created successfully",
 				})
-				return err
-			} else if result.RowsAffected == 0 {
-				// case when obligation exists in database and is updated
+			} else {
+				if err := tx.Where(&models.Obligation{Id: oldObligation.Id}).First(&oldObligation).Error; err != nil {
+					res.Data = append(res.Data, models.LicenseError{
+						Status:    http.StatusInternalServerError,
+						Message:   "Error updating license associations",
+						Error:     err.Error(),
+						Path:      c.Request.URL.Path,
+						Timestamp: time.Now().Format(time.RFC3339),
+					})
+					return nil
+				}
 				newObligation.Id = oldObligation.Id
-				ctx := context.WithValue(context.Background(), models.ContextKey("oldObligation"), &oldObligation)
-				if err := tx.WithContext(ctx).Omit("Licenses", "Topic").Clauses(clause.Returning{}).Updates(&newObligation).Error; err != nil {
+				if err := tx.Omit("Licenses", "Topic").Clauses(clause.Returning{}).Updates(&newObligation).Error; err != nil {
 					res.Data = append(res.Data, models.LicenseError{
 						Status:    http.StatusBadRequest,
 						Message:   fmt.Sprintf("Failed to update obligation: %s", err.Error()),
@@ -544,67 +667,52 @@ func ImportObligations(c *gin.Context) {
 				}
 
 				res.Data = append(res.Data, models.ObligationImportStatus{
-					Data:    models.ObligationId{Id: ob.Id, Topic: *ob.Topic},
+					Data:    models.ObligationId{Id: *ob.Id, Topic: *ob.Topic},
 					Status:  http.StatusOK,
 					Message: "obligation updated successfully",
 				})
+			}
 
-			} else {
+			if ob.LicenseIds == nil {
+				return nil
+			}
+			// do not return error so that obligations
+			// are created/updated even if the association fails(license is not found etc)
+			if err := tx.Where(&models.Obligation{Id: oldObligation.Id}).Preload("Licenses").First(&oldObligation).Error; err != nil {
+				return nil
+			}
+			var licenseIds, removeLicenses, insertLicenses []uuid.UUID
 
-				if err := addChangelogsForObligation(tx, userId, &oldObligation, &models.Obligation{}); err != nil {
-					res.Data = append(res.Data, models.LicenseError{
-						Status:    http.StatusInternalServerError,
-						Message:   "Failed to update license",
-						Error:     err.Error(),
-						Path:      c.Request.URL.Path,
-						Timestamp: time.Now().Format(time.RFC3339),
-					})
-					return err
+			licenseIds = slices.Compact(*ob.LicenseIds)
+
+			utils.GenerateDiffForReplacingLicenses(&oldObligation, licenseIds, &removeLicenses, &insertLicenses)
+
+			userId := c.MustGet("userId").(uuid.UUID)
+			_, errs := utils.PerformObligationMapActions(tx, userId, &oldObligation, removeLicenses, insertLicenses)
+			if len(errs) != 0 {
+				var combinedErrors string
+				for _, err := range errs {
+					if err != nil {
+						combinedErrors += fmt.Sprintf("%s\n", err)
+					}
 				}
-				// case when obligation doesn't exist in database and is inserted
+				res.Data = append(res.Data, models.LicenseError{
+					Status:    http.StatusInternalServerError,
+					Message:   "Error updating license associations",
+					Error:     combinedErrors,
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				})
+			} else {
 				res.Data = append(res.Data, models.ObligationImportStatus{
-					Data:    models.ObligationId{Id: oldObligation.Id, Topic: *oldObligation.Topic},
-					Status:  http.StatusCreated,
-					Message: "obligation created successfully",
+					Data:    models.ObligationId{Id: oldObligation.Id, Topic: *ob.Topic},
+					Status:  http.StatusOK,
+					Message: "licenses associated with obligations successfully",
 				})
 			}
 
 			return nil
 		})
-
-		// creating license-obligation associations out of the transaction so that obligations
-		// are created/updated even if the association fails(license is not found etc)
-		var shortnames, removeLicenses, insertLicenses []string
-		for _, lic := range ob.Licenses {
-			shortnames = append(shortnames, *lic.Shortname)
-		}
-		shortnames = slices.Compact(shortnames)
-
-		utils.GenerateDiffForReplacingLicenses(&oldObligation, shortnames, &removeLicenses, &insertLicenses)
-
-		userId := c.MustGet("userId").(int64)
-		_, errs := utils.PerformObligationMapActions(userId, &oldObligation, removeLicenses, insertLicenses)
-		if len(errs) != 0 {
-			var combinedErrors string
-			for _, err := range errs {
-				if err != nil {
-					combinedErrors += fmt.Sprintf("%s\n", err)
-				}
-			}
-			res.Data = append(res.Data, models.LicenseError{
-				Status:    http.StatusInternalServerError,
-				Message:   "Error updating license associations",
-				Error:     combinedErrors,
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			})
-		} else {
-			res.Data = append(res.Data, models.ObligationImportStatus{
-				Data:    models.ObligationId{Id: ob.Id, Topic: *ob.Topic},
-				Status:  http.StatusOK,
-				Message: "licenses associated with obligations successfully",
-			})
-		}
 	}
 
 	c.JSON(http.StatusOK, res)
@@ -617,7 +725,7 @@ func ImportObligations(c *gin.Context) {
 //	@Id				ExportObligations
 //	@Tags			Obligations
 //	@Produce		json
-//	@Success		200	{array}		models.ObligationDTO
+//	@Success		200	{array}		models.ObligationResponseDTO
 //	@Failure		500	{object}	models.LicenseError	"Failed to fetch obligations"
 //	@Security		ApiKeyAuth || {}
 //	@Router			/obligations/export [get]
@@ -636,6 +744,13 @@ func ExportObligations(c *gin.Context) {
 		return
 	}
 
+	var obligationDtos []models.ObligationResponseDTO
+
+	for _, ob := range obligations {
+		obdto := ob.ConvertToObligationResponseDTO()
+		obligationDtos = append(obligationDtos, obdto)
+	}
+
 	fileName := strings.Map(func(r rune) rune {
 		if r == '+' || r == ':' {
 			return '_'
@@ -644,11 +759,11 @@ func ExportObligations(c *gin.Context) {
 	}, fmt.Sprintf("obligations-export-%s.json", time.Now().Format(time.RFC3339)))
 
 	c.Header("Content-Disposition", fmt.Sprintf("attachment; filename=%s", fileName))
-	c.JSON(http.StatusOK, &obligations)
+	c.JSON(http.StatusOK, &obligationDtos)
 }
 
 // addChangelogsForObligation adds changelogs for the updated fields on obligation update
-func addChangelogsForObligation(tx *gorm.DB, userId int64,
+func addChangelogsForObligation(tx *gorm.DB, userId uuid.UUID,
 	newObligation, oldObligation *models.Obligation) error {
 	var changes []models.ChangeLog
 
@@ -674,8 +789,6 @@ func addChangelogsForObligation(tx *gorm.DB, userId int64,
 		newType = &(newObligation.Classification).Classification
 	}
 	utils.AddChangelog("Classification", oldType, newType, &changes)
-
-	utils.AddChangelog("Modifications", oldObligation.Modifications, newObligation.Modifications, &changes)
 
 	utils.AddChangelog("Comment", oldObligation.Comment, newObligation.Comment, &changes)
 
@@ -749,6 +862,7 @@ func GetAllObligationPreviews(c *gin.Context) {
 		obligationPreviews = append(obligationPreviews, models.ObligationPreview{
 			Topic: *ob.Topic,
 			Type:  (*ob.Type).Type,
+			Id:    ob.Id,
 		})
 	}
 

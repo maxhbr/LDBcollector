@@ -313,7 +313,7 @@ func PaginationMiddleware() gin.HandlerFunc {
 			case *models.ObligationResponse:
 				err = json.Unmarshal(originalBody, &obligationRes)
 				isObligationRes = true
-				metaObject = obligationRes.Meta
+				metaObject = &obligationRes.Meta
 			case *models.AuditResponse:
 				err = json.Unmarshal(originalBody, &auditRes)
 				isAuditRes = true

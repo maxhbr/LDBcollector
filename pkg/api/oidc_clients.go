@@ -12,6 +12,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 )
 
 // GetUserOidcClients retrieves a list of all oidc clients added by the user
@@ -28,7 +29,7 @@ import (
 func GetUserOidcClients(c *gin.Context) {
 	var oidcClients []models.OidcClient
 
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 
 	if err := db.DB.Where(&models.OidcClient{UserId: userId}).Find(&oidcClients).Error; err != nil {
 		er := models.LicenseError{
@@ -87,7 +88,7 @@ func AddOidcClient(c *gin.Context) {
 		return
 	}
 
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 
 	oidcClient := models.OidcClient(oidcClientDto)
 	oidcClient.UserId = userId
@@ -156,7 +157,7 @@ func RevokeClient(c *gin.Context) {
 		return
 	}
 
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 
 	oidcClient := models.OidcClient(deleteOidcClientDto)
 	result := db.DB.Where(&models.OidcClient{ClientId: deleteOidcClientDto.ClientId, UserId: userId}).Delete(&oidcClient)

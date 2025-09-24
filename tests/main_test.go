@@ -64,6 +64,12 @@ func TestMain(m *testing.M) {
 	}
 	baseURL = fmt.Sprintf("http://localhost:%s/api/v1", serverPort)
 	exitcode := m.Run()
+
+	if db.DB != nil {
+		sqlDB, _ := db.DB.DB()
+		sqlDB.Close()
+	}
+
 	dropTestDB(user, password, port, dbhost, dbname) // drop the test db
 	os.Exit(exitcode)
 }
@@ -135,7 +141,7 @@ func seedFirstUser() error {
 
 	superadmin := models.User{
 		UserName:     ptr("fossy_superadmin"),
-		DisplayName:  ptr("display_name"),
+		DisplayName:  ptr("fossy_superadmin"),
 		UserEmail:    ptr("test@gmail.com"),
 		UserPassword: ptr(string(hashedPassword)),
 		UserLevel:    ptr("SUPER_ADMIN"),
@@ -143,7 +149,7 @@ func seedFirstUser() error {
 
 	admin := models.User{
 		UserName:     ptr("fossy_admin"),
-		DisplayName:  ptr("display_name"),
+		DisplayName:  ptr("fossy_admin"),
 		UserEmail:    ptr("test2@gmail.com"),
 		UserPassword: ptr(string(hashedPassword)),
 		UserLevel:    ptr("ADMIN"),
