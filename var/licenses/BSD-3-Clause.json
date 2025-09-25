@@ -118,6 +118,9 @@
       "Eclipse Distribution License 1.0 (BSD-3-Clause)",
       "Eclipse Distribution License 1.0",
       "edl-1",
-      "new bsd"
+      "new bsd",
+      "3c-bsd",
+      "BSD-3-clause",
+      "BSD 3-Clause “New” or “Revised”"
     ]
 }
