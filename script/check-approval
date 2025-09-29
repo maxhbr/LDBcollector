@@ -58,7 +58,7 @@ rows << :separator
 eligible = !current && spdx && approved_licenses.include?(license)
 rows << ['Eligible', eligible]
 
-puts Terminal::Table.new title: "License: #{license}", rows: rows
+puts Terminal::Table.new title: "License: #{license}", rows:
 puts
 puts "Code search: https://github.com/search?q=#{license}+filename%3ALICENSE&type=Code"
 
