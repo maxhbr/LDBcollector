@@ -8,6 +8,7 @@ shortName: "rh-ubi-eula-2019"
 
 alternativeNames:
   - "Red Hat Universal Base Image EULA"
+  - "RED HAT UNIVERSAL BASE IMAGE EULA"
 
 otherIds: 
   - "scancode:rh-ubi-eula-2019"

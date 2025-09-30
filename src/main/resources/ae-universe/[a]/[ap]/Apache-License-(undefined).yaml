@@ -9,6 +9,7 @@ shortName: "Apache-?"
 unspecific: true
 
 alternativeNames:
+  - "Apache ASL"
   - "Apache LICENSE"
   - "Apache License"
   - "Apache Software Licenese"
@@ -16,7 +17,6 @@ alternativeNames:
   - "Apache Software Licenses"
   - "Apache license"
   - "Apache Licence"
-  - "ASL"
   - "Apache Software Licensegradlew, Version 2.0"
   - "Apache Public License"
 
