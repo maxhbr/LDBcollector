@@ -22,6 +22,7 @@
         "freetype",
         "Freetype",
       "The FreeType Project LICENSE",
-      "Freetype License"
+      "Freetype License",
+      "ftl"
     ]
 }
