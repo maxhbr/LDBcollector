@@ -4,7 +4,9 @@
         "spdx": [
             "GNU General Public License v2.0 w/Classpath exception"
         ],
-        "custom": [],
+        "custom": [
+            "GNU General Public License, version 2 with the GNU Classpath Exception"
+        ],
         "scancode-licensedb": [
             "gpl-2.0-classpath",
             "GPL 2.0 with classpath exception"
