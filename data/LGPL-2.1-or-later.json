@@ -5,7 +5,9 @@
             "GNU Lesser General Public License v2.1 or later",
             "LGPL-2.1+"
         ],
-        "custom": [],
+        "custom": [
+            "LGPL, version 2.1"
+        ],
         "scancode-licensedb": [
             "GNU Lesser General Public License 2.1 or later",
             "LGPL 2.1 or later",
