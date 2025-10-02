@@ -46,8 +46,15 @@ SPDX-License-Identifier: AGPL-3.0-only
               <td>{{ release.ship_status }}</td>
               <td>{{ release.usage_set.all|length }}</td>
               <td>
-                <progress class="progress is-primary" value="{{ release.valid_step }}" max="5">15%
-                </progress>
+                {% for step in "123456" %}
+                  {% with "cube:release_validation_step_"|add:step as step_url  %}
+                    {% if release.valid_step >= step|add:"0" %}
+                      <a href="{% url step_url release.id %}"><span class="tag is-success">{{step}}</span></a>
+                    {% else %}
+                      <a href="{% url step_url release.id %}"><span class="tag is-dark">{{step}}</span></a>
+                    {% endif %}
+                  {% endwith %}
+                {% endfor %}
               </td>
               <td>
                 <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
