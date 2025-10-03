@@ -92,6 +92,7 @@ class VersionCreateView(
         "declared_license_expr",
         "spdx_valid_license_expr",
         "corrected_license",
+        "copyright_info",
     ]
 
     def get_context_data(self, **kwargs):
@@ -123,6 +124,7 @@ class VersionUpdateView(
         "declared_license_expr",
         "spdx_valid_license_expr",
         "corrected_license",
+        "copyright_info",
     ]
 
     def get_default_success_url(self):

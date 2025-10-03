@@ -212,6 +212,10 @@ class Version(models.Model):
         blank=True,
         help_text="Package URL (https://github.com/package-url/purl-spec)",
     )
+    copyright_info = models.TextField(
+        blank=True,
+        help_text="Information about the copyright holder",
+    )
 
     def save(self, *args, **kwargs):
         if self.pk is None:

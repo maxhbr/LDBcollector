@@ -249,6 +249,7 @@ class ReleaseBomExportView(LoginRequiredMixin, PermissionRequiredMixin, DetailVi
                 "modified",
                 "exploitation",
                 "linking type",
+                "copyright info",
             ]
         )
 
@@ -267,6 +268,7 @@ class ReleaseBomExportView(LoginRequiredMixin, PermissionRequiredMixin, DetailVi
                     usage.component_modified,
                     usage.exploitation,
                     usage.linking,
+                    usage.version.copyright_info,
                 ]
             )
         return response
@@ -283,6 +285,44 @@ class ReleaseBomView(
     template_name = "cube/release_bom.html"
     paginate_by = 50
     permission_required = "cube.view_release"
+
+    def get_queryset(self, *args, **kwargs):
+        queryset = super().get_queryset(*args, **kwargs)
+        release_id = self.kwargs["release_pk"]
+        return queryset.filter(release__id=release_id)
+
+
+class ReleaseNoticeView(
+    LoginRequiredMixin,
+    ReleaseContextMixin,
+    PermissionRequiredMixin,
+    FilterView,
+):
+    model = Usage
+    filterset_class = ReleaseBomFilter
+    template_name = "cube/release_notice.html"
+    paginate_by = 50
+    permission_required = "cube.view_release"
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add in a QuerySet of all the books
+        usages = self.get_queryset()
+        involved_licences = dict()
+        for usage in usages:
+            credit = (
+                usage.version.component.name,
+                usage.version.version_number,
+                usage.version.copyright_info,
+            )
+            involved_licence = usage.license_expression
+            if involved_licence not in involved_licences:
+                involved_licences[involved_licence] = list()
+            involved_licences[involved_licence].append(credit)
+        context["involved_licences"] = involved_licences
+
+        return context
 
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset(*args, **kwargs)

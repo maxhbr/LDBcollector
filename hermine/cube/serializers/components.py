@@ -74,6 +74,7 @@ class VersionSerializer(serializers.ModelSerializer):
             "spdx_valid_license_expr",
             "corrected_license",
             "purl",
+            "copyright_info",
             "curations",
         ]
 
