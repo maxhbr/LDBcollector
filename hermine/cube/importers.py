@@ -105,7 +105,7 @@ def import_ort_evaluated_model_json_file(
         spdx_valid_license = package["declared_licenses_processed"].get(
             "spdx_expression", ""
         )
-        if spdx_valid_license == "NOASSERTON":
+        if spdx_valid_license == "NOASSERTION":
             spdx_valid_license = ""
 
         path_ids = package.get("paths", [])
