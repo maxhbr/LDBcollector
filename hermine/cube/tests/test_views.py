@@ -12,9 +12,10 @@ from rest_framework.views import APIView
 from cube import urls
 from cube.forms.release_validation import (
     CreateLicenseCurationForm,
+    CreateAndsValidationForm,
     CreateLicenseChoiceForm,
 )
-from cube.models import LicenseCuration, LicenseChoice, Exploitation
+from cube.models import LicenseCuration, LicenseChoice, Exploitation, Version
 from .mixins import ForceLoginMixin
 
 
@@ -140,6 +141,109 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(LicenseCuration.objects.all().count(), 1)
         self.assertEqual(LicenseCuration.objects.first().author, self.user)
         self.assertEqual(LicenseChoice.objects.all().count(), 0)
+
+    def test_create_license_curation_version_scope(self):
+        """Test that component_version=VERSION sets version field"""
+        url = reverse("cube:release_licensecuration_create", args=[1])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "MIT",
+                "component_version": CreateLicenseCurationForm.VERSION,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_1", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNotNone(curation.version)
+        self.assertIsNone(curation.component)
+
+    def test_create_license_curation_component_scope(self):
+        """Test that component_version=COMPONENT sets component field"""
+        url = reverse("cube:release_licensecuration_create", args=[1])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "MIT",
+                "component_version": CreateLicenseCurationForm.COMPONENT,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_1", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNone(curation.version)
+        self.assertIsNotNone(curation.component)
+
+    def test_create_license_curation_constraint_scope(self):
+        """Test that component_version=CONSTRAINT sets component field"""
+        url = reverse("cube:release_licensecuration_create", args=[1])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "MIT",
+                "component_version": CreateLicenseCurationForm.CONSTRAINT,
+                "version_constraint": ">=1.0.0",
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_1", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNone(curation.version)
+        self.assertIsNotNone(curation.component)
+        self.assertEqual(str(curation.version_constraint), ">=1.0.0")
+
+    def test_create_ands_validation_version_scope(self):
+        Version.objects.filter(pk=2).update(
+            spdx_valid_license_expr="LicenseRef-FakeLicense AND LicenseRef-FakeLicense-Permissive"
+        )
+        """Test that component_version=VERSION sets version field on ands validation"""
+        url = reverse("cube:release_andsvalidation_create", args=[2])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+                "component_version": CreateAndsValidationForm.VERSION,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_2", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNotNone(curation.version)
+        self.assertIsNone(curation.component)
+
+    def test_create_ands_validation_component_scope(self):
+        Version.objects.filter(pk=2).update(
+            spdx_valid_license_expr="LicenseRef-FakeLicense AND LicenseRef-FakeLicense-Permissive"
+        )
+        """Test that component_version=COMPONENT sets component field on ands validation"""
+        url = reverse("cube:release_andsvalidation_create", args=[2])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+                "component_version": CreateAndsValidationForm.COMPONENT,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_2", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNone(curation.version)
+        self.assertIsNotNone(curation.component)
+
+    def test_create_ands_validation_constraint_scope(self):
+        Version.objects.filter(pk=2).update(
+            spdx_valid_license_expr="LicenseRef-FakeLicense AND LicenseRef-FakeLicense-Permissive"
+        )
+        """Test that component_version=CONSTRAINT sets component field on ands validation"""
+        url = reverse("cube:release_andsvalidation_create", args=[2])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+                "component_version": CreateAndsValidationForm.CONSTRAINT,
+                "version_constraint": ">=1.0.0",
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_2", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNone(curation.version)
+        self.assertIsNotNone(curation.component)
+        self.assertEqual(str(curation.version_constraint), ">=1.0.0")
 
     def test_create_licence_choice_rule(self):
         url = reverse("cube:release_licensechoice_create", args=[1])

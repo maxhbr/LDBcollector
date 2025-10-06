@@ -6,6 +6,7 @@
 from django.contrib import admin
 from django.db import models
 from django.forms import TextInput
+from django.utils.safestring import mark_safe
 
 from .models import Category, Token, Compatibility
 from .models import Component
@@ -204,8 +205,14 @@ class LicenseCurationAdmin(ComponentRuleAdminMixin, admin.ModelAdmin):
         "author",
         "component_summary",
     )
-    list_display = ("__str__", "component_summary")
+    list_display = ("curation_summary", "component_summary", "created", "updated")
     autocomplete_fields = ("component", "version")
+    search_fields = (
+        "expression_in",
+        "expression_out",
+        "component__name",
+        "version__component__name",
+    )
 
     fieldsets = (
         ("", {"fields": ("created", "updated", "author")}),
@@ -231,6 +238,12 @@ class LicenseCurationAdmin(ComponentRuleAdminMixin, admin.ModelAdmin):
         ),
         ("Details", {"fields": ("explanation",)}),
     )
+
+    @admin.display(description="Summary")
+    def curation_summary(self, object: LicenseCuration):
+        return mark_safe(
+            f"{object.expression_in or '<em>empty</em>'} -> {object.expression_out}"
+        )
 
 
 class UsageRuleAdminMixin(ComponentRuleAdminMixin):
