@@ -5,7 +5,7 @@
     "copyleft": "None",
     "url": "https://opensource.org/licenses/BSD-2-Clause",
     "osi_approved": true,
-    "fsf_approved": null,
+    "fsf_approved": true,
     "foss": "Yes",
     "patent_grant": false,
     "ethical_clause": false,
@@ -15,7 +15,7 @@
     "warranty": "Full",
     "law_choice": "",
     "venue_choice": "",
-    "comment": "",
+    "comment": "This license was approved by the FSF under the name “FreeBSD”.",
     "verbatim": "",
     "obligations": [
         {
