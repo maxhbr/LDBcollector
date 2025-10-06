@@ -141,6 +141,9 @@ class LicenseCuration(AbstractComponentRule):
 
     explanation = models.TextField(max_length=500, blank=True, null=True)
 
+    def __str__(self):
+        return f"{self.expression_in} -> {self.expression_out}"
+
     @property
     def is_confirmation(self):
         return self.expression_in == self.expression_out
