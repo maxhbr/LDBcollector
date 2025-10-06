@@ -1,5 +1,5 @@
 [license]
-expression = "LGPL-2.0-only WITH LicenseRef-Fedora-Temporary-Classpath-exception-variation"
+expression = "LGPL-2.0-only WITH AdditionRef-Fedora-Temporary-Classpath-exception-variation"
 
 status = [ "allowed" ]
 

@@ -1,5 +1,5 @@
 [license]
-expression = "GPL-3.0-or-later WITH LicenseRef-Fedora-Temporary-cryptsetup-OpenSSL-exception"
+expression = "GPL-3.0-or-later WITH AdditionRef-Fedora-Temporary-cryptsetup-OpenSSL-exception"
 
 status = [ "allowed" ]
 

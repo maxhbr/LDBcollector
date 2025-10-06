@@ -1,5 +1,5 @@
 [license]
-expression = "GPL-2.0-or-later WITH LicenseRef-Fedora-Temporary-kvirc-openssl-exception"
+expression = "GPL-2.0-or-later WITH AdditionRef-Fedora-Temporary-kvirc-openssl-exception"
 
 status = [ "allowed" ]
 

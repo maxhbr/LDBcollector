@@ -1,5 +1,5 @@
 [license]
-expression = "LGPL-2.1-or-later WITH LicenseRef-Fedora-Temporary-Simple-Library-exception"
+expression = "LGPL-2.1-or-later WITH AdditionRef-Fedora-Temporary-Simple-Library-exception"
 
 status = [ "allowed" ]
 
