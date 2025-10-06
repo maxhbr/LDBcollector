@@ -3,8 +3,8 @@
     "long_name": "BSD 2-Clause FreeBSD License",
     "steward": "",
     "copyleft": "None",
-    "url": "http://www.freebsd.org/copyright/freebsd-license.html",
-    "osi_approved": false,
+    "url": "https://www.freebsd.org/copyright/freebsd-license.html",
+    "osi_approved": true,
     "fsf_approved": true,
     "foss": "Yes-Auto",
     "patent_grant": null,
@@ -15,7 +15,7 @@
     "warranty": "Full",
     "law_choice": "",
     "venue_choice": "",
-    "comment": "Deprecated This licenseID has been deprecated since SPDX license list version 3.10.",
+    "comment": "Deprecated This licenseID has been deprecated since SPDX license list version 3.10. This license was approved by the OSI under the name “BSD-2-Clause”.",
     "verbatim": "",
     "obligations": [
         {
