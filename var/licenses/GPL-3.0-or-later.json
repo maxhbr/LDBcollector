@@ -63,6 +63,7 @@
       "GNU General Public License3+",
       "GNU General Public License-3+",
       "General Public License 3+",
-      "gpl-3+"
+      "gpl-3+",
+      "gpl-3.0-or-later"
     ]
 }
