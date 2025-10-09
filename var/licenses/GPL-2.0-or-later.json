@@ -67,6 +67,8 @@
       "https://spdx.org/licenses/GNU General Public License-2.0+.html",
       "GNU General Public License-2.0+ https://spdx.org/licenses/GNU General Public License-2.0+.html",
       "GNU General Public LicenseV2 +",
-      "GNU General Public License2+"
+      "GNU General Public License2+",
+      "gpl-2+",
+      "gpl-2.0-or-later"
     ]
 }
