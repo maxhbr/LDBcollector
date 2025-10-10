@@ -2,7 +2,7 @@
   curations:
     comment: |
       No public VCS location was found during research.
-    vcs: null
+    source_code_origins: [ARTIFACT]
 - id: "Maven:antlr:antlr:2.7.6"
   curations:
     comment: |
