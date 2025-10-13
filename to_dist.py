@@ -58,6 +58,7 @@ data = {
     "version": "1.0",
     "objects": objects,
 }
-
-file = open("dist/shared.json", "w")
+file_path = "dist/shared.json"
+os.makedirs(os.path.dirname(file_path), exist_ok=True)
+file = open(file_path, "w")
 json.dump(data, file, indent=2)
