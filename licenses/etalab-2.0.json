@@ -26,7 +26,7 @@
                 "Reproduce license and legal mentions in documentation"
             ],
             "name": "Licence and copyright notices in documentation",
-            "verbatim": "Sous r\u00e9serve de :\r\n\r\n    - mentionner la paternit\u00e9 de l'\u00ab Information \u00bb : sa source (au moins le nom du \u00ab Conc\u00e9dant \u00bb) et la date de derni\u00e8re mise \u00e0 jour de l'\u00ab Information \u00bb r\u00e9utilis\u00e9e.\r\n\r\nLe \u00ab R\u00e9utilisateur \u00bb peut notamment s'acquitter de cette condition en renvoyant, par un lien hypertexte, vers la source de \u00ab l'Information \u00bb et assurant une mention effective de sa paternit\u00e9.",
+            "verbatim": "Sous réserve de :\r\n\r\n    - mentionner la paternité de l'« Information » : sa source (au moins le nom du « Concédant ») et la date de dernière mise à jour de l'« Information » réutilisée.\r\n\r\nLe « Réutilisateur » peut notamment s'acquitter de cette condition en renvoyant, par un lien hypertexte, vers la source de « l'Information » et assurant une mention effective de sa paternité.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
