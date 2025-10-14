@@ -25,6 +25,30 @@ text = '''
 text here
 '''
 
+package = linux-firmware
+location = qcom/NOTICE.txt
+text = '''
+COPYRIGHT (C) 1986 Gary S. Brown.  You may use this program, or
+code or tables extracted from it, as desired without restriction.
+'''
+
+package = linux-firmware
+location = qcom/NOTICE.txt
+text = '''
+The AES algorithm Rijndael implemented for block and key sizes of 128,
+192 and 256 bits (16, 24 and 32 bytes) by Brian Gladman.
+
+I retain copyright in this code but I encourage its free use provided
+that I don't carry any responsibility for the results. I am especially
+happy to see it used in free and open source software. If you do use
+it I would appreciate an acknowledgement of its origin in the code or
+the product that results and I would also appreciate knowing a liitle
+about the use to which it is being put. I am grateful to Frank Yellin
+for some ideas that are used in this implementation.
+
+Dr B. R. Gladman <brg@gladman.uk.net> 1st June 2001.
+'''
+
 package = tolua++
 location = tolua++-1.0.93.tar.bz2 
 text = '''
