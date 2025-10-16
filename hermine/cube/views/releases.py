@@ -28,6 +28,7 @@ from cube.forms.importers import ImportBomForm
 from cube.forms.releases import UsageForm, ReleaseForm
 from cube.importers import (
     import_ort_evaluated_model_json_file,
+    import_hkissbom_json_file,
     import_spdx_file,
     import_cyclonedx_file,
     SBOMImportFailure,
@@ -124,6 +125,18 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                 )
             elif form.cleaned_data["bom_type"] == SBOMImport.BOM_CYCLONEDX:
                 import_cyclonedx_file(
+                    self.request.FILES["file"],
+                    self.object.pk,
+                    replace,
+                    component_update_mode=form.cleaned_data.get(
+                        "component_update_mode"
+                    ),
+                    linking=form.cleaned_data.get("linking"),
+                    default_project_name=form.cleaned_data.get("default_project_name"),
+                    default_scope_name=form.cleaned_data.get("default_scope_name"),
+                )
+            elif form.cleaned_data["bom_type"] == SBOMImport.BOM_HKB:
+                import_hkissbom_json_file(
                     self.request.FILES["file"],
                     self.object.pk,
                     replace,

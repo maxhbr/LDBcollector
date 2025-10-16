@@ -22,6 +22,7 @@ router.register(
     r"upload_cyclonedx", api_views.UploadCYCLONEDXViewSet, basename="upload_cyclonedx"
 )
 router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
+router.register(r"upload_hkb", api_views.UploadHKBViewSet, basename="upload_hkb")
 router.register(
     r"add_dependency",
     api_views.CreateSingleDependencyViewSet,
@@ -69,6 +70,9 @@ release_router.register(
 )
 release_router.register(
     r"upload_ort", api_views.UploadORTViewSet, basename="releases-upload_ort"
+)
+release_router.register(
+    r"upload_hkb", api_views.UploadHKBViewSet, basename="releases-upload_hkb"
 )
 release_router.register(
     r"add_dependency",

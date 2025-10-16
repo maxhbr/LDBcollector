@@ -22,6 +22,7 @@ from cube.importers import (
     import_spdx_file,
     import_cyclonedx_file,
     import_ort_evaluated_model_json_file,
+    import_hkissbom_json_file,
     add_dependency,
 )
 from cube.models import Product, Release, Exploitation
@@ -32,6 +33,7 @@ from cube.serializers import (
     UploadSPDXSerializer,
     UploadCycloneDXSerializer,
     UploadORTSerializer,
+    UploadHKBSerializer,
     DependencySerializer,
     CompatibilityValidationSerializer,
 )
@@ -556,6 +558,51 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
         add_import_history_entry(
             ort_file,
             SBOMImport.BOM_ORT,
+            serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
+            serializer.validated_data.get("linking", ""),
+            self.request.user,
+            release_id,
+        )
+        return Response(status=status.HTTP_201_CREATED)
+
+
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: "Created"})
+)
+class UploadHKBViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [UpdateSBOMPermissions]
+    serializer_class = UploadHKBSerializer
+    parser_classes = (MultiPartParser,)
+
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
+
+    @transaction.atomic()
+    def perform_create(self, serializer):
+        hkb_file = serializer.validated_data["hkb_file"]
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
+        import_hkissbom_json_file(
+            hkb_file,
+            release_id,
+            serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
+            linking=serializer.validated_data.get("linking", ""),
+        )
+        add_import_history_entry(
+            hkb_file,
+            SBOMImport.BOM_HKB,
             serializer.validated_data.get("replace", False),
             serializer.validated_data.get(
                 "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
