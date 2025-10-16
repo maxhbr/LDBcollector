@@ -1,33 +1,33 @@
 {
-  "canonical": "ECL-2.0",
-  "aliases": {
-    "spdx": [
-      "Educational Community License v2.0"
-    ],
-    "custom": [],
-    "osi": [
-      "Educational Community License, Version 2.0"
-    ],
-    "pypiClassifiers": [
-      "License :: Educational Community License, Version 2.0 (ECL-2.0)",
-      "OSI Approved :: Educational Community License, Version 2.0 (ECL-2.0)",
-      "License :: OSI Approved :: Educational Community License, Version 2.0",
-      "License :: Educational Community License, Version 2.0",
-      "OSI Approved :: Educational Community License, Version 2.0",
-      "License :: OSI Approved :: ECL-2.0",
-      "License :: ECL-2.0",
-      "OSI Approved :: ECL-2.0",
-      "License :: OSI Approved :: Educational Community License, Version 2.0 (ECL-2.0)",
-      "Educational Community License, Version 2.0 (ECL-2.0)"
-    ],
-    "scancodeLicensedb": [
-      "Educational Community License 2.0",
-      "ecl-2.0",
-      "ECL 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": "ECL-2.0",
+    "aliases": {
+        "spdx": [
+            "Educational Community License v2.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Educational Community License, Version 2.0"
+        ],
+        "scancodeLicensedb": [
+            "Educational Community License 2.0",
+            "ecl-2.0",
+            "ECL 2.0"
+        ],
+        "pypi": [
+            "License :: Educational Community License, Version 2.0 (ECL-2.0)",
+            "OSI Approved :: Educational Community License, Version 2.0 (ECL-2.0)",
+            "License :: OSI Approved :: Educational Community License, Version 2.0",
+            "License :: Educational Community License, Version 2.0",
+            "OSI Approved :: Educational Community License, Version 2.0",
+            "License :: OSI Approved :: ECL-2.0",
+            "License :: ECL-2.0",
+            "OSI Approved :: ECL-2.0",
+            "License :: OSI Approved :: Educational Community License, Version 2.0 (ECL-2.0)",
+            "Educational Community License, Version 2.0 (ECL-2.0)"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

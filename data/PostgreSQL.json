@@ -1,23 +1,23 @@
 {
-  "canonical": "PostgreSQL",
-  "aliases": {
-    "spdx": [
-      "PostgreSQL License"
-    ],
-    "custom": [],
-    "osi": [
-      "The PostgreSQL Licence"
-    ],
-    "pypiClassifiers": [
-      "License :: PostgreSQL License",
-      "OSI Approved :: PostgreSQL License",
-      "License :: OSI Approved :: PostgreSQL License"
-    ],
-    "scancodeLicensedb": [
-      "postgresql"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "PostgreSQL",
+    "aliases": {
+        "spdx": [
+            "PostgreSQL License"
+        ],
+        "custom": [],
+        "osi": [
+            "The PostgreSQL Licence"
+        ],
+        "scancodeLicensedb": [
+            "postgresql"
+        ],
+        "pypi": [
+            "License :: PostgreSQL License",
+            "OSI Approved :: PostgreSQL License",
+            "License :: OSI Approved :: PostgreSQL License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

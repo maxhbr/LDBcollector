@@ -1,32 +1,32 @@
 {
-  "canonical": "EUPL-1.0",
-  "aliases": {
-    "spdx": [
-      "European Union Public License 1.0"
-    ],
-    "custom": [
-      "eupl1.0"
-    ],
-    "pypiClassifiers": [
-      "License :: European Union Public Licence 1.0 (EUPL 1.0)",
-      "OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)",
-      "License :: OSI Approved :: European Union Public Licence 1.0",
-      "License :: European Union Public Licence 1.0",
-      "OSI Approved :: European Union Public Licence 1.0",
-      "License :: OSI Approved :: EUPL 1.0",
-      "License :: EUPL 1.0",
-      "OSI Approved :: EUPL 1.0",
-      "License :: OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)",
-      "European Union Public Licence 1.0 (EUPL 1.0)"
-    ],
-    "scancodeLicensedb": [
-      "EUPL 1.0",
-      "European Union Public Licence 1.0",
-      "eupl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": "EUPL-1.0",
+    "aliases": {
+        "spdx": [
+            "European Union Public License 1.0"
+        ],
+        "custom": [
+            "eupl1.0"
+        ],
+        "scancodeLicensedb": [
+            "EUPL 1.0",
+            "European Union Public Licence 1.0",
+            "eupl-1.0"
+        ],
+        "pypi": [
+            "License :: European Union Public Licence 1.0 (EUPL 1.0)",
+            "OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)",
+            "License :: OSI Approved :: European Union Public Licence 1.0",
+            "License :: European Union Public Licence 1.0",
+            "OSI Approved :: European Union Public Licence 1.0",
+            "License :: OSI Approved :: EUPL 1.0",
+            "License :: EUPL 1.0",
+            "OSI Approved :: EUPL 1.0",
+            "License :: OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)",
+            "European Union Public Licence 1.0 (EUPL 1.0)"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

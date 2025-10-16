@@ -1,43 +1,43 @@
 {
-  "canonical": "EPL-2.0",
-  "aliases": {
-    "spdx": [
-      "Eclipse Public License 2.0"
-    ],
-    "custom": [
-      "Eclipse Public License v2.0",
-      "EPL License 2.0",
-      "EPL v2.0",
-      "Eclipse License 2.0",
-      "Eclipse Public License Version 2.0",
-      "EPL 2.0 License",
-      "EPL-2.0 License",
-      "EPL (2.0)",
-      "Eclipse Public License (2.0)",
-      "EPL Version 2.0",
-      "Eclipse Public License v2.0 (EPL-2.0)",
-      "EPL 2.0 Open Source License",
-      "epl2.0"
-    ],
-    "pypiClassifiers": [
-      "License :: Eclipse Public License 2.0 (EPL-2.0)",
-      "OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)",
-      "License :: OSI Approved :: Eclipse Public License 2.0",
-      "License :: Eclipse Public License 2.0",
-      "OSI Approved :: Eclipse Public License 2.0",
-      "License :: OSI Approved :: EPL-2.0",
-      "License :: EPL-2.0",
-      "OSI Approved :: EPL-2.0",
-      "License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)",
-      "Eclipse Public License 2.0 (EPL-2.0)"
-    ],
-    "scancodeLicensedb": [
-      "epl-2.0",
-      "EPL 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": "EPL-2.0",
+    "aliases": {
+        "spdx": [
+            "Eclipse Public License 2.0"
+        ],
+        "custom": [
+            "Eclipse Public License v2.0",
+            "EPL License 2.0",
+            "EPL v2.0",
+            "Eclipse License 2.0",
+            "Eclipse Public License Version 2.0",
+            "EPL 2.0 License",
+            "EPL-2.0 License",
+            "EPL (2.0)",
+            "Eclipse Public License (2.0)",
+            "EPL Version 2.0",
+            "Eclipse Public License v2.0 (EPL-2.0)",
+            "EPL 2.0 Open Source License",
+            "epl2.0"
+        ],
+        "scancodeLicensedb": [
+            "epl-2.0",
+            "EPL 2.0"
+        ],
+        "pypi": [
+            "License :: Eclipse Public License 2.0 (EPL-2.0)",
+            "OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)",
+            "License :: OSI Approved :: Eclipse Public License 2.0",
+            "License :: Eclipse Public License 2.0",
+            "OSI Approved :: Eclipse Public License 2.0",
+            "License :: OSI Approved :: EPL-2.0",
+            "License :: EPL-2.0",
+            "OSI Approved :: EPL-2.0",
+            "License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)",
+            "Eclipse Public License 2.0 (EPL-2.0)"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

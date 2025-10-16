@@ -1,33 +1,33 @@
 {
-  "canonical": "LGPL-3.0-or-later",
-  "aliases": {
-    "spdx": [
-      "GNU Lesser General Public License v3.0 or later",
-      "LGPL-3.0+"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "GNU Lesser General Public License 3.0 or later",
-      "LGPL 3.0 or later",
-      "lgpl-3.0-plus"
-    ],
-    "pypiClassifiers": [
-      "LGPLv3+",
-      "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
-      "OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
-      "License :: GNU Lesser General Public License v3 or later (LGPLv3+)",
-      "GNU Lesser General Public License v3 or later (LGPLv3+)",
-      "License :: OSI Approved :: GNU Lesser General Public License v3 or later",
-      "OSI Approved :: GNU Lesser General Public License v3 or later",
-      "License :: GNU Lesser General Public License v3 or later",
-      "GNU Lesser General Public License v3 or later",
-      "License :: OSI Approved :: LGPLv3+",
-      "OSI Approved :: LGPLv3+",
-      "License :: LGPLv3+"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": "LGPL-3.0-or-later",
+    "aliases": {
+        "spdx": [
+            "GNU Lesser General Public License v3.0 or later",
+            "LGPL-3.0+"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "GNU Lesser General Public License 3.0 or later",
+            "LGPL 3.0 or later",
+            "lgpl-3.0-plus"
+        ],
+        "pypi": [
+            "LGPLv3+",
+            "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "License :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "License :: OSI Approved :: GNU Lesser General Public License v3 or later",
+            "OSI Approved :: GNU Lesser General Public License v3 or later",
+            "License :: GNU Lesser General Public License v3 or later",
+            "GNU Lesser General Public License v3 or later",
+            "License :: OSI Approved :: LGPLv3+",
+            "OSI Approved :: LGPLv3+",
+            "License :: LGPLv3+"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

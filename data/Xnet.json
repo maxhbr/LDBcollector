@@ -1,24 +1,24 @@
 {
-  "canonical": "Xnet",
-  "aliases": {
-    "spdx": [
-      "X.Net License"
-    ],
-    "custom": [],
-    "osi": [
-      "The X.Net, Inc. License"
-    ],
-    "scancodeLicensedb": [
-      "xnet",
-      "Altera License"
-    ],
-    "pypiClassifier": [
-      "License :: OSI Approved :: X.Net License",
-      "OSI Approved :: X.Net License",
-      "License :: X.Net License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "Xnet",
+    "aliases": {
+        "spdx": [
+            "X.Net License"
+        ],
+        "custom": [],
+        "osi": [
+            "The X.Net, Inc. License"
+        ],
+        "scancodeLicensedb": [
+            "xnet",
+            "Altera License"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: X.Net License",
+            "OSI Approved :: X.Net License",
+            "License :: X.Net License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

@@ -1,24 +1,24 @@
 {
-  "canonical": "Intel",
-  "aliases": {
-    "spdx": [
-      "Intel Open Source License"
-    ],
-    "custom": [],
-    "osi": [
-      "The Intel Open Source License"
-    ],
-    "scancodeLicensedb": [
-      "Intel BSD - Export Control",
-      "intel-bsd-export-control"
-    ],
-    "pypiClassifier": [
-      "License :: OSI Approved :: Intel Open Source License",
-      "OSI Approved :: Intel Open Source License",
-      "License :: Intel Open Source License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "Intel",
+    "aliases": {
+        "spdx": [
+            "Intel Open Source License"
+        ],
+        "custom": [],
+        "osi": [
+            "The Intel Open Source License"
+        ],
+        "scancodeLicensedb": [
+            "Intel BSD - Export Control",
+            "intel-bsd-export-control"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: Intel Open Source License",
+            "OSI Approved :: Intel Open Source License",
+            "License :: Intel Open Source License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

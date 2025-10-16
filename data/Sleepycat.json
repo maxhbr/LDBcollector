@@ -1,24 +1,24 @@
 {
-  "canonical": "Sleepycat",
-  "aliases": {
-    "spdx": [
-      "Sleepycat License"
-    ],
-    "custom": [],
-    "osi": [
-      "The Sleepycat License"
-    ],
-    "pypiClassifiers": [
-      "License :: Sleepycat License",
-      "OSI Approved :: Sleepycat License",
-      "License :: OSI Approved :: Sleepycat License"
-    ],
-    "scancodeLicensedb": [
-      "sleepycat",
-      "Sleepycat License (Berkeley Database License)"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "Sleepycat",
+    "aliases": {
+        "spdx": [
+            "Sleepycat License"
+        ],
+        "custom": [],
+        "osi": [
+            "The Sleepycat License"
+        ],
+        "scancodeLicensedb": [
+            "sleepycat",
+            "Sleepycat License (Berkeley Database License)"
+        ],
+        "pypi": [
+            "License :: Sleepycat License",
+            "OSI Approved :: Sleepycat License",
+            "License :: OSI Approved :: Sleepycat License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

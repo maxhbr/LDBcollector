@@ -1,27 +1,26 @@
 {
-  "canonical": "AGPL-3.0-only",
-  "aliases": {
-    "spdx": [
-      "GNU Affero General Public License v3.0 only"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "AGPL 3.0",
-      "LicenseRef-AGPL-3.0",
-      "AGPL-3.0",
-      "agpl-3.0",
-      "GNU Affero General Public License 3.0"
-    ],
-    "pypiClassifiers": [
-      "License :: OSI Approved :: GNU Affero General Public License v3",
-      "OSI Approved :: GNU Affero General Public License v3",
-      "License :: GNU Affero General Public License v3",
-      "GNU Affero General Public License v3"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-  ],
-  "isMajorVersionOnly": true
+    "canonical": "AGPL-3.0-only",
+    "aliases": {
+        "spdx": [
+            "GNU Affero General Public License v3.0 only"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "AGPL 3.0",
+            "LicenseRef-AGPL-3.0",
+            "AGPL-3.0",
+            "agpl-3.0",
+            "GNU Affero General Public License 3.0"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: GNU Affero General Public License v3",
+            "OSI Approved :: GNU Affero General Public License v3",
+            "License :: GNU Affero General Public License v3",
+            "GNU Affero General Public License v3"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

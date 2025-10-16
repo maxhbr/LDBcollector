@@ -1,49 +1,49 @@
 {
-  "canonical": "EPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Eclipse Public License 1.0"
+    "canonical": "EPL-1.0",
+    "aliases": {
+        "spdx": [
+            "Eclipse Public License 1.0"
+        ],
+        "custom": [
+            "Eclipse Public License v1.0",
+            "EPL License 1.0",
+            "EPL v1.0",
+            "Eclipse License 1.0",
+            "Eclipse Public License Version 1.0",
+            "EPL 1.0 License",
+            "EPL-1.0 License",
+            "EPL (1.0)",
+            "Eclipse Public License (1.0)",
+            "EPL Version 1.0",
+            "Eclipse Public License v1.0 (EPL-1.0)",
+            "EPL 1.0 Open Source License",
+            "epl1.0"
+        ],
+        "osi": [
+            "Eclipse Public License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "EPL 1.0",
+            "epl-1.0"
+        ],
+        "pypi": [
+            "License :: Eclipse Public License 1.0 (EPL-1.0)",
+            "OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
+            "License :: OSI Approved :: Eclipse Public License 1.0",
+            "License :: Eclipse Public License 1.0",
+            "OSI Approved :: Eclipse Public License 1.0",
+            "License :: OSI Approved :: EPL-1.0",
+            "License :: EPL-1.0",
+            "OSI Approved :: EPL-1.0",
+            "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
+            "Eclipse Public License 1.0 (EPL-1.0)"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [
+        "EPL License",
+        "Eclipse Public License"
     ],
-    "custom": [
-      "Eclipse Public License v1.0",
-      "EPL License 1.0",
-      "EPL v1.0",
-      "Eclipse License 1.0",
-      "Eclipse Public License Version 1.0",
-      "EPL 1.0 License",
-      "EPL-1.0 License",
-      "EPL (1.0)",
-      "Eclipse Public License (1.0)",
-      "EPL Version 1.0",
-      "Eclipse Public License v1.0 (EPL-1.0)",
-      "EPL 1.0 Open Source License",
-      "epl1.0"
-    ],
-    "osi": [
-      "Eclipse Public License, Version 1.0"
-    ],
-    "pypiClassifiers": [
-      "License :: Eclipse Public License 1.0 (EPL-1.0)",
-      "OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
-      "License :: OSI Approved :: Eclipse Public License 1.0",
-      "License :: Eclipse Public License 1.0",
-      "OSI Approved :: Eclipse Public License 1.0",
-      "License :: OSI Approved :: EPL-1.0",
-      "License :: EPL-1.0",
-      "OSI Approved :: EPL-1.0",
-      "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
-      "Eclipse Public License 1.0 (EPL-1.0)"
-    ],
-    "scancodeLicensedb": [
-      "EPL 1.0",
-      "epl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [
-    "EPL License",
-    "Eclipse Public License"
-  ],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "risky": [],
+    "isMajorVersionOnly": true
 }

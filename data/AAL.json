@@ -1,21 +1,21 @@
 {
-  "canonical": "AAL",
-  "aliases": {
-    "spdx": [
-      "Attribution Assurance License"
-    ],
-    "custom": [],
-    "pypiClassifiers": [
-      "License :: OSI Approved :: Attribution Assurance License",
-      "OSI Approved :: Attribution Assurance License",
-      "License :: Attribution Assurance License"
-    ],
-    "scancodeLicensedb": [
-      "AAL",
-      "attribution"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "AAL",
+    "aliases": {
+        "spdx": [
+            "Attribution Assurance License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "AAL",
+            "attribution"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: Attribution Assurance License",
+            "OSI Approved :: Attribution Assurance License",
+            "License :: Attribution Assurance License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

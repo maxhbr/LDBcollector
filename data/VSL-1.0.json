@@ -1,28 +1,28 @@
 {
-  "canonical": "VSL-1.0",
-  "aliases": {
-    "spdx": [
-      "Vovida Software License v1.0"
+    "canonical": "VSL-1.0",
+    "aliases": {
+        "spdx": [
+            "Vovida Software License v1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "The Vovida Software License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "Vovida Software License v. 1.0",
+            "vsl-1.0",
+            "Vovida Software License 1.0"
+        ],
+        "pypi": [
+            "License :: Vovida Software License 1.0",
+            "OSI Approved :: Vovida Software License 1.0",
+            "License :: OSI Approved :: Vovida Software License 1.0"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": [
+        "Vovida"
     ],
-    "custom": [],
-    "osi": [
-      "The Vovida Software License, Version 1.0"
-    ],
-    "pypiClassifiers": [
-      "License :: Vovida Software License 1.0",
-      "OSI Approved :: Vovida Software License 1.0",
-      "License :: OSI Approved :: Vovida Software License 1.0"
-    ],
-    "scancodeLicensedb": [
-      "Vovida Software License v. 1.0",
-      "vsl-1.0",
-      "Vovida Software License 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "Vovida"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

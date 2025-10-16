@@ -1,43 +1,43 @@
 {
-  "canonical": "0BSD",
-  "aliases": {
-    "spdx": [
-      "BSD Zero Clause License"
-    ],
-    "custom": [
-      "0BSD License",
-      "BSD Zero Clause",
-      "BSD Zero-Clause",
-      "BSD Zero-Clause License",
-      "BSD-0-Clause",
-      "BSD 0-Clause",
-      "Zero-Clause BSD",
-      "Zero-Clause BSD License",
-      "Zero Clause BSD",
-      "Zero Clause BSD License",
-      "ZeroBSD",
-      "ZeroBSD License",
-      "BSD0",
-      "BSD Zero",
-      "Zero-Clause BSD License (0BSD)"
-    ],
-    "pypiClassifiers": [
-      "License :: Zero-Clause BSD (0BSD)",
-      "OSI Approved :: Zero-Clause BSD (0BSD)",
-      "License :: OSI Approved :: Zero-Clause BSD",
-      "License :: Zero-Clause BSD",
-      "OSI Approved :: Zero-Clause BSD",
-      "License :: OSI Approved :: 0BSD",
-      "License :: 0BSD",
-      "OSI Approved :: 0BSD",
-      "License :: OSI Approved :: Zero-Clause BSD (0BSD)",
-      "Zero-Clause BSD (0BSD)"
-    ],
-    "scancodeLicensedb": [
-      "bsd-zero"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "0BSD",
+    "aliases": {
+        "spdx": [
+            "BSD Zero Clause License"
+        ],
+        "custom": [
+            "0BSD License",
+            "BSD Zero Clause",
+            "BSD Zero-Clause",
+            "BSD Zero-Clause License",
+            "BSD-0-Clause",
+            "BSD 0-Clause",
+            "Zero-Clause BSD",
+            "Zero-Clause BSD License",
+            "Zero Clause BSD",
+            "Zero Clause BSD License",
+            "ZeroBSD",
+            "ZeroBSD License",
+            "BSD0",
+            "BSD Zero",
+            "Zero-Clause BSD License (0BSD)"
+        ],
+        "scancodeLicensedb": [
+            "bsd-zero"
+        ],
+        "pypi": [
+            "License :: Zero-Clause BSD (0BSD)",
+            "OSI Approved :: Zero-Clause BSD (0BSD)",
+            "License :: OSI Approved :: Zero-Clause BSD",
+            "License :: Zero-Clause BSD",
+            "OSI Approved :: Zero-Clause BSD",
+            "License :: OSI Approved :: 0BSD",
+            "License :: 0BSD",
+            "OSI Approved :: 0BSD",
+            "License :: OSI Approved :: Zero-Clause BSD (0BSD)",
+            "Zero-Clause BSD (0BSD)"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

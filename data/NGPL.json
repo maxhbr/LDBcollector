@@ -1,23 +1,23 @@
 {
-  "canonical": "NGPL",
-  "aliases": {
-    "spdx": [
-      "Nethack General Public License"
-    ],
-    "custom": [],
-    "osi": [
-      "The Nethack General Public License"
-    ],
-    "pypiClassifiers": [
-      "License :: Nethack General Public License",
-      "OSI Approved :: Nethack General Public License",
-      "License :: OSI Approved :: Nethack General Public License"
-    ],
-    "scancodeLicensedb": [
-      "ngpl"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "NGPL",
+    "aliases": {
+        "spdx": [
+            "Nethack General Public License"
+        ],
+        "custom": [],
+        "osi": [
+            "The Nethack General Public License"
+        ],
+        "scancodeLicensedb": [
+            "ngpl"
+        ],
+        "pypi": [
+            "License :: Nethack General Public License",
+            "OSI Approved :: Nethack General Public License",
+            "License :: OSI Approved :: Nethack General Public License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

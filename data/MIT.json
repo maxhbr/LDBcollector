@@ -1,40 +1,40 @@
 {
-  "canonical": "MIT",
-  "aliases": {
-    "spdx": [
-      "MIT License"
-    ],
-    "custom": [
-      "MIT License (MIT)",
-      "MIT Open Source License",
-      "MIT License (Open Source)",
-      "MIT Open License",
-      "MIT (Open Source)",
-      "MIT (Open License)",
-      "bouncy-license",
-      "mit-license",
-      "mit-licensed",
-      "MIT-like",
-      "MIT-style"
-    ],
-    "osi": [
-      "MIT/Expat License",
-      "Expat"
-    ],
-    "pypiClassifiers": [
-      "License :: MIT License",
-      "OSI Approved :: MIT License",
-      "License :: OSI Approved :: MIT License"
-    ],
-    "scancodeLicensedb": [
-      "LicenseRef-MIT-Diehl",
-      "LicenseRef-MIT-Discord",
-      "mit",
-      "LicenseRef-MIT-TC",
-      "LicenseRef-MIT-Bootstrap"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "MIT",
+    "aliases": {
+        "spdx": [
+            "MIT License"
+        ],
+        "custom": [
+            "MIT License (MIT)",
+            "MIT Open Source License",
+            "MIT License (Open Source)",
+            "MIT Open License",
+            "MIT (Open Source)",
+            "MIT (Open License)",
+            "bouncy-license",
+            "mit-license",
+            "mit-licensed",
+            "MIT-like",
+            "MIT-style"
+        ],
+        "osi": [
+            "MIT/Expat License",
+            "Expat"
+        ],
+        "scancodeLicensedb": [
+            "LicenseRef-MIT-Diehl",
+            "LicenseRef-MIT-Discord",
+            "mit",
+            "LicenseRef-MIT-TC",
+            "LicenseRef-MIT-Bootstrap"
+        ],
+        "pypi": [
+            "License :: MIT License",
+            "OSI Approved :: MIT License",
+            "License :: OSI Approved :: MIT License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

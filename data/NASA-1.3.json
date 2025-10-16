@@ -1,34 +1,34 @@
 {
-  "canonical": "NASA-1.3",
-  "aliases": {
-    "spdx": [
-      "NASA Open Source Agreement 1.3"
-    ],
-    "custom": [],
-    "osi": [
-      "NASA Open Source Agreement, Version 1.3"
-    ],
-    "pypiClassifiers": [
-      "License :: NASA Open Source Agreement v1.3 (NASA-1.3)",
-      "OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)",
-      "License :: OSI Approved :: NASA Open Source Agreement v1.3",
-      "License :: NASA Open Source Agreement v1.3",
-      "OSI Approved :: NASA Open Source Agreement v1.3",
-      "License :: OSI Approved :: NASA-1.3",
-      "License :: NASA-1.3",
-      "OSI Approved :: NASA-1.3",
-      "License :: OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)",
-      "NASA Open Source Agreement v1.3",
-      "NASA Open Source Agreement v1.3 (NASA-1.3)"
-    ],
-    "scancodeLicensedb": [
-      "nasa-1.3",
-      "NASA 1.3",
-      "NASA Open Source License v1.3"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": "NASA-1.3",
+    "aliases": {
+        "spdx": [
+            "NASA Open Source Agreement 1.3"
+        ],
+        "custom": [],
+        "osi": [
+            "NASA Open Source Agreement, Version 1.3"
+        ],
+        "scancodeLicensedb": [
+            "nasa-1.3",
+            "NASA 1.3",
+            "NASA Open Source License v1.3"
+        ],
+        "pypi": [
+            "License :: NASA Open Source Agreement v1.3 (NASA-1.3)",
+            "OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)",
+            "License :: OSI Approved :: NASA Open Source Agreement v1.3",
+            "License :: NASA Open Source Agreement v1.3",
+            "OSI Approved :: NASA Open Source Agreement v1.3",
+            "License :: OSI Approved :: NASA-1.3",
+            "License :: NASA-1.3",
+            "OSI Approved :: NASA-1.3",
+            "License :: OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)",
+            "NASA Open Source Agreement v1.3",
+            "NASA Open Source Agreement v1.3 (NASA-1.3)"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

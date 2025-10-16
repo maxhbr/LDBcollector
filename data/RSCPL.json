@@ -1,25 +1,25 @@
 {
-  "canonical": "RSCPL",
-  "aliases": {
-    "spdx": [
-      "Ricoh Source Code Public License"
-    ],
-    "custom": [],
-    "osi": [
-      "The Ricoh Source Code Public License"
-    ],
-    "scancodeLicensedb": [
-      "Ricoh Source Code Public License 1.0",
-      "Ricoh Source Code Public License v1.0",
-      "ricoh-1.0"
-    ],
-    "pypiClassifier": [
-      "License :: OSI Approved :: Ricoh Source Code Public License",
-      "OSI Approved :: Ricoh Source Code Public License",
-      "License :: Ricoh Source Code Public License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "RSCPL",
+    "aliases": {
+        "spdx": [
+            "Ricoh Source Code Public License"
+        ],
+        "custom": [],
+        "osi": [
+            "The Ricoh Source Code Public License"
+        ],
+        "scancodeLicensedb": [
+            "Ricoh Source Code Public License 1.0",
+            "Ricoh Source Code Public License v1.0",
+            "ricoh-1.0"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: Ricoh Source Code Public License",
+            "OSI Approved :: Ricoh Source Code Public License",
+            "License :: Ricoh Source Code Public License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

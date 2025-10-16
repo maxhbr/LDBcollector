@@ -1,25 +1,25 @@
 {
-  "canonical": "Motosoto",
-  "aliases": {
-    "spdx": [
-      "Motosoto License"
-    ],
-    "custom": [],
-    "osi": [
-      "Motosoto Open Source License, Version 0.9.1"
-    ],
-    "pypiClassifiers": [
-      "License :: Motosoto License",
-      "OSI Approved :: Motosoto License",
-      "License :: OSI Approved :: Motosoto License"
-    ],
-    "scancodeLicensedb": [
-      "motosoto-0.9.1",
-      "Motosoto 0.9.1",
-      "Motosoto Open Source License v0.9.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": "Motosoto",
+    "aliases": {
+        "spdx": [
+            "Motosoto License"
+        ],
+        "custom": [],
+        "osi": [
+            "Motosoto Open Source License, Version 0.9.1"
+        ],
+        "scancodeLicensedb": [
+            "motosoto-0.9.1",
+            "Motosoto 0.9.1",
+            "Motosoto Open Source License v0.9.1"
+        ],
+        "pypi": [
+            "License :: Motosoto License",
+            "OSI Approved :: Motosoto License",
+            "License :: OSI Approved :: Motosoto License"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [],
+    "risky": []
 }

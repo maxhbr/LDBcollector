@@ -1,34 +1,34 @@
 {
-  "canonical": "MPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Mozilla Public License 1.0"
+    "canonical": "MPL-1.0",
+    "aliases": {
+        "spdx": [
+            "Mozilla Public License 1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Mozilla Public License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "mpl-1.0",
+            "MPL 1.0"
+        ],
+        "pypi": [
+            "License :: Mozilla Public License 1.0 (MPL)",
+            "OSI Approved :: Mozilla Public License 1.0 (MPL)",
+            "License :: OSI Approved :: Mozilla Public License 1.0",
+            "License :: Mozilla Public License 1.0",
+            "OSI Approved :: Mozilla Public License 1.0",
+            "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)",
+            "Mozilla Public License 1.0 (MPL)"
+        ]
+    },
+    "src": "spdx",
+    "rejected": [
+        "License :: OSI Approved :: MPL",
+        "License :: MPL",
+        "OSI Approved :: MPL",
+        "MPL"
     ],
-    "custom": [],
-    "osi": [
-      "Mozilla Public License, Version 1.0"
-    ],
-    "pypiClassifiers": [
-      "License :: Mozilla Public License 1.0 (MPL)",
-      "OSI Approved :: Mozilla Public License 1.0 (MPL)",
-      "License :: OSI Approved :: Mozilla Public License 1.0",
-      "License :: Mozilla Public License 1.0",
-      "OSI Approved :: Mozilla Public License 1.0",
-      "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)",
-      "Mozilla Public License 1.0 (MPL)"
-    ],
-    "scancodeLicensedb": [
-      "mpl-1.0",
-      "MPL 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [
-    "License :: OSI Approved :: MPL",
-    "License :: MPL",
-    "OSI Approved :: MPL",
-    "MPL"
-  ],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "risky": [],
+    "isMajorVersionOnly": false
 }
