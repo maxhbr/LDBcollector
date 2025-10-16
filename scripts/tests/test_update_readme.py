@@ -113,8 +113,8 @@ def test_main_creates_svg_file():
 
     # Mock the load_license_data and save_svg functions
     with patch("src.statistics.update_readme.load_license_data", return_value=sample_license_data), \
-        patch("src.statistics.update_readme.save_svg") as mock_save_svg, \
-        patch("builtins.open", mock_open(read_data=sample_svg_template)):
+         patch("src.statistics.update_readme.save_svg") as mock_save_svg, \
+         patch("builtins.open", mock_open(read_data=sample_svg_template)):
         # Call the main function
         update_readme('mock_path', svg_file_path)
 
