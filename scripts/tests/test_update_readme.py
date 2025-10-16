@@ -16,12 +16,15 @@ from src.statistics.update_readme import (
 
 # Sample JSON data for testing
 sample_license_data = {
-    "1": {"canonical": "MIT"},
-    "2": {"canonical": "Apache 2.0"},
-    "3": {"canonical": "MIT"},
-    "4": {"canonical": "GPL 3.0"},
-    "5": {"canonical": "MIT"},
-    "6": {"canonical": "Apache 2.0"}
+    "stableMap": {
+        "1": {"canonical": "MIT"},
+        "2": {"canonical": "Apache 2.0"},
+        "3": {"canonical": "MIT"},
+        "4": {"canonical": "GPL 3.0"},
+        "5": {"canonical": "MIT"},
+        "6": {"canonical": "Apache 2.0"}
+    },
+    "riskyMap": {}
 }
 
 sample_svg_template = '''
@@ -46,7 +49,9 @@ def test_load_license_data():
 
 
 def test_count_canonical_licenses():
-    counts = count_canonical_licenses(sample_license_data)
+    stable_map = sample_license_data['stableMap']
+    counts = count_canonical_licenses(stable_map)
+
     expected_counts = Counter({"MIT": 3, "Apache 2.0": 2, "GPL 3.0": 1})
     assert counts == expected_counts
 
@@ -108,8 +113,8 @@ def test_main_creates_svg_file():
 
     # Mock the load_license_data and save_svg functions
     with patch("src.statistics.update_readme.load_license_data", return_value=sample_license_data), \
-         patch("src.statistics.update_readme.save_svg") as mock_save_svg, \
-         patch("builtins.open", mock_open(read_data=sample_svg_template)):
+        patch("src.statistics.update_readme.save_svg") as mock_save_svg, \
+        patch("builtins.open", mock_open(read_data=sample_svg_template)):
         # Call the main function
         update_readme('mock_path', svg_file_path)
 
