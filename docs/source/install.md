@@ -256,7 +256,8 @@ On manual install, you should set these parameters in the `config.py` file.
 ### Azure AD Authentication
 
 You can use an Entra server as authentication backend by setting some parameters.
-Use a callback URL like `https://$HOST/oauth/complete/azuread`.
+It's based on the azuread backend of Python Social Auth.
+Note: You'll have to configure on Entra an allowed callback URL like https://<your-hermine-server>/oauth/complete/azuread
 
 For Docker installs, the following environment variables can be set :
 * **AZUREAD_TENANT_ID**: your Microsoft Azure tenant ID
