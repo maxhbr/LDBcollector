@@ -1,5 +1,5 @@
 {
-    "stable_map": {
+    "stableMap": {
         "BSD Zero Clause": {
             "canonical": "0BSD",
             "src": "spdx"
@@ -9,7 +9,7 @@
             "src": "spdx"
         }
     },
-    "risky_map": {
+    "riskyMap": {
         "BSD Zero Clause Risky": {
             "canonical": "0BSD",
             "src": "spdx"
