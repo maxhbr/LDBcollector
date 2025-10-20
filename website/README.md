@@ -43,6 +43,6 @@ echo license w/ slash | sed 's/\//_/g'
 
 ## License
 
-Unless otherwise noted, the contents of the website is licensed under [CC-BY-4.0](LICENSE.md).
+Unless otherwise noted, the contents of the website is licensed under [CC-BY-4.0](LICENSE).
 
 Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED

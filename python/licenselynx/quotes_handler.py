@@ -1,3 +1,7 @@
+#
+# SPDX-FileCopyrightText: Copyright 2025 Siemens AG
+# SPDX-License-Identifier: BSD-3-Clause
+#
 class _QuotesHandler:
     # List of quote characters to replace with the default replacement.
     quote_characters = [

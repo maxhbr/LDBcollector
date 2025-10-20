@@ -76,6 +76,6 @@ Second option is ``--dir/-d``, which is by default ``api/license`` and creates t
 
 ## License
 
-This project is licensed under the [Apache License, Version 2.0](../LICENSE.md).
+This project is licensed under the [BSD 3-Clause "New" or "Revised" License](../LICENSE).
 
 Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED

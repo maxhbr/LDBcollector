@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: Copyright 2025 Siemens AG
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: BSD-3-Clause
  */
 
 plugins {
@@ -329,7 +329,7 @@ publishing {
                 inceptionYear = '2024'
                 licenses {
                     license {
-                        name = 'Apache-2.0'
+                        name = 'BSD-3-Clause'
                         url = 'https://raw.githubusercontent.com/licenselynx/licenselynx/refs/tags/v' +
                             project.version + '/LICENSE'
                     }
