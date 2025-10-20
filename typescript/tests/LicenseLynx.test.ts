@@ -29,7 +29,7 @@ describe('LicenseLynx tests', () => {
     it('should return data when license exists', async () => {
         return map("BSD Zero Clause").then(licenseObject => {
             expect(licenseObject).not.toBe(null);
-            expect(licenseObject!.canonical).toEqual('0BSD');
+            expect(licenseObject!.id).toEqual('0BSD');
             expect(licenseObject!.src).toEqual('spdx');
         });
     });
@@ -37,7 +37,7 @@ describe('LicenseLynx tests', () => {
     it('should return normalized quotes when license exists', async () => {
         return map("BSD ‚Zero‛ Clause").then(licenseObject => {
             expect(licenseObject).not.toBe(null);
-            expect(licenseObject!.canonical).toEqual('0BSD');
+            expect(licenseObject!.id).toEqual('0BSD');
             expect(licenseObject!.src).toEqual('spdx');
         });
     });
@@ -45,7 +45,7 @@ describe('LicenseLynx tests', () => {
     it('should return data when license exists in risky map', async () => {
         return map("BSD Zero Clause Risky", true).then(licenseObject => {
             expect(licenseObject).not.toBe(null);
-            expect(licenseObject!.canonical).toEqual('0BSD');
+            expect(licenseObject!.id).toEqual('0BSD');
             expect(licenseObject!.src).toEqual('spdx');
         });
     });

@@ -7,5 +7,5 @@ from dataclasses import dataclass
 
 @dataclass
 class LicenseObject(object):
-    canonical: str
+    id: str
     src: str

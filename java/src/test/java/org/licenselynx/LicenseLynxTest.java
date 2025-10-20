@@ -57,7 +57,7 @@ class LicenseLynxTest
 
         // Assert
         assert result != null;
-        Assertions.assertEquals("testCanonical", result.getCanonical());
+        Assertions.assertEquals("testCanonical", result.getId());
         Assertions.assertEquals("testSrc", result.getSrc());
     }
 
@@ -72,7 +72,7 @@ class LicenseLynxTest
 
         // Assert
         assert result != null;
-        Assertions.assertEquals("testCanonical", result.getCanonical());
+        Assertions.assertEquals("testCanonical", result.getId());
         Assertions.assertEquals("testSrc", result.getSrc());
     }
 
@@ -88,7 +88,7 @@ class LicenseLynxTest
 
         // Assert
         assert result != null;
-        Assertions.assertEquals("testCanonical", result.getCanonical());
+        Assertions.assertEquals("testCanonical", result.getId());
         Assertions.assertEquals("testSrc", result.getSrc());
     }
 
@@ -123,7 +123,7 @@ class LicenseLynxTest
         LicenseMapSingleton testInstance = new LicenseMapSingleton(licenseMap);
 
         Assertions.assertEquals("TestCanonical",
-            testInstance.getLicenseMap().getCanonicalLicenseMap().get("test").getCanonical());
+            testInstance.getLicenseMap().getCanonicalLicenseMap().get("test").getId());
         Assertions.assertEquals("TestSrc", testInstance.getLicenseMap().getCanonicalLicenseMap().get("test").getSrc());
     }
 

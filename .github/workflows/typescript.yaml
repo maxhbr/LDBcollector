@@ -67,7 +67,7 @@ jobs:
           npx --version
           npm ls --global @licenselynx/licenselynx
           mkdir -p ../../test-project && cd ../../test-project
-          echo "import {map} from '@licenselynx/licenselynx'; map('0BSD').then(value => console.log(value.canonical));" > run.mjs
+          echo "import {map} from '@licenselynx/licenselynx'; map('0BSD').then(value => console.log(value.id));" > run.mjs
           npm link @licenselynx/licenselynx
           result="$(npx ts-node run.mjs)"
           echo $result

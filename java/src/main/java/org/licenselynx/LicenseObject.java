@@ -21,7 +21,7 @@ import java.util.Objects;
 public class LicenseObject
 {
     @JsonProperty
-    private final String canonical;
+    private final String id;
 
     @JsonProperty
     private final String src;
@@ -31,29 +31,29 @@ public class LicenseObject
     /**
      * Constructor for LicenseObject.
      *
-     * @param pCanonical The canonical name of the license.
+     * @param pId The canonical id of the license.
      * @param pSrc The source of the license.
      */
     @JsonCreator
     public LicenseObject(
-        @JsonProperty("canonical") final String pCanonical,
+        @JsonProperty("id") final String pId,
         @JsonProperty("src") final String pSrc)
     {
-        this.canonical = Objects.requireNonNull(pCanonical);
+        this.id = Objects.requireNonNull(pId);
         this.src = Objects.requireNonNull(pSrc);
     }
 
 
 
     /**
-     * Gets the canonical name of the license.
+     * Gets the canonical id of the license.
      *
-     * @return The canonical name.
+     * @return The canonical id.
      */
     @Nonnull
-    public String getCanonical()
+    public String getId()
     {
-        return canonical;
+        return id;
     }
 
 

@@ -17,8 +17,8 @@ def reset_singleton(monkeypatch):
 
 
 def test_license_map_singleton():
-    mock_data = {"stableMap": {"MIT": {"canonical": "MIT License", "src": "spdx"}},
-                 "riskyMap": {"MIT2": {"canonical": "MIT License", "src": "spdx"}}}
+    mock_data = {"stableMap": {"MIT": {"id": "MIT License", "src": "spdx"}},
+                 "riskyMap": {"MIT2": {"id": "MIT License", "src": "spdx"}}}
 
     with patch('importlib.resources.files') as mock_resources_files:
         mock_file = MagicMock()
@@ -30,15 +30,15 @@ def test_license_map_singleton():
         instance2 = _LicenseMapSingleton()
 
         assert instance == instance2
-        assert instance.merged_data.risky_map.get("MIT2").canonical == "MIT License"
+        assert instance.merged_data.risky_map.get("MIT2").id == "MIT License"
         assert instance.merged_data.risky_map.get("MIT2").src == "spdx"
 
-        assert instance.merged_data.stable_map.get("MIT").canonical == "MIT License"
+        assert instance.merged_data.stable_map.get("MIT").id == "MIT License"
         assert instance.merged_data.stable_map.get("MIT").src == "spdx"
 
 
 def test_map_with_existing_license():
-    mock_data = json.dumps({"stableMap": {"MIT": {"canonical": "MIT License", "src": "spdx"}}, "riskyMap": {}})
+    mock_data = json.dumps({"stableMap": {"MIT": {"id": "MIT License", "src": "spdx"}}, "riskyMap": {}})
     mock_file = MagicMock()
     mock_file.__enter__.return_value = mock_open(read_data=mock_data).return_value
 
@@ -47,13 +47,13 @@ def test_map_with_existing_license():
         result = LicenseLynx.map("MIT")
 
         assert isinstance(result, LicenseObject)
-        assert result.canonical == "MIT License"
+        assert result.id == "MIT License"
         assert result.src == "spdx"
 
 
 def test_map_with_existing_risky_license():
-    mock_data = json.dumps({"stableMap": {"MIT2": {"canonical": "MIT License", "src": "spdx"}},
-                            "riskyMap": {"MIT": {"canonical": "MIT License", "src": "spdx"}}})
+    mock_data = json.dumps({"stableMap": {"MIT2": {"id": "MIT License", "src": "spdx"}},
+                            "riskyMap": {"MIT": {"id": "MIT License", "src": "spdx"}}})
     mock_file = MagicMock()
     mock_file.__enter__.return_value = mock_open(read_data=mock_data).return_value
 
@@ -62,13 +62,13 @@ def test_map_with_existing_risky_license():
         result = LicenseLynx.map("MIT", risky=True)
 
         assert isinstance(result, LicenseObject)
-        assert result.canonical == "MIT License"
+        assert result.id == "MIT License"
         assert result.src == "spdx"
 
 
 def test_map_with_quotes_license():
-    mock_data = json.dumps({"stableMap": {"'MIT'": {"canonical": "MIT License", "src": "spdx"}},
-                            "riskyMap": {"MIT": {"canonical": "MIT License", "src": "spdx"}}})
+    mock_data = json.dumps({"stableMap": {"'MIT'": {"id": "MIT License", "src": "spdx"}},
+                            "riskyMap": {"MIT": {"id": "MIT License", "src": "spdx"}}})
     mock_file = MagicMock()
     mock_file.__enter__.return_value = mock_open(read_data=mock_data).return_value
 
@@ -77,12 +77,12 @@ def test_map_with_quotes_license():
         result = LicenseLynx.map("‚MIT‛", risky=True)
 
         assert isinstance(result, LicenseObject)
-        assert result.canonical == "MIT License"
+        assert result.id == "MIT License"
         assert result.src == "spdx"
 
 
 def test_map_with_non_existing_license():
-    mock_data = json.dumps({"stableMap": {"MIT": {"canonical": "MIT License", "src": "spdx"}}, "riskyMap": {}})
+    mock_data = json.dumps({"stableMap": {"MIT": {"id": "MIT License", "src": "spdx"}}, "riskyMap": {}})
     mock_file = MagicMock()
     mock_file.__enter__.return_value = mock_open(read_data=mock_data).return_value
 
@@ -113,7 +113,7 @@ def test_init_with_json_decode_error():
 
 def test_map_with_type_error():
     mock_data = json.dumps(
-        {"stableMap": {"MIT": {"canonical": "MIT License"}}, "riskyMap": {}})  # Missing 'src' key
+        {"stableMap": {"MIT": {"id": "MIT License"}}, "riskyMap": {}})  # Missing 'src' key
     mock_file = MagicMock()
     mock_file.__enter__.return_value = mock_open(read_data=mock_data).return_value
     with pytest.raises(Exception) as exit_code:

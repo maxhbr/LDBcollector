@@ -5,7 +5,7 @@
 import * as mergedData from './resources/merged_data.json';
 
 export interface LicenseObject {
-    readonly canonical: string;
+    readonly id: string;
     readonly src: string;
 }
 
@@ -39,11 +39,11 @@ export const map = function (licenseName: string, risky: boolean = false) {
         }
 
         if (licenseData) {
-            const canonical = licenseData.canonical;
+            const canonical = licenseData.id;
             const src = licenseData.src;
 
             if (canonical && src) {
-                resolve(Object.freeze({canonical, src}));
+                resolve(Object.freeze({id: canonical, src}));
             }
         }
 
