@@ -1,13 +1,15 @@
 {
-  "canonical": "duende-sla-2022",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Duende SLA 2022",
-      "LicenseRef-scancode-duende-sla-2022"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "duende-sla-2022",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Duende SLA 2022",
+            "LicenseRef-scancode-duende-sla-2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

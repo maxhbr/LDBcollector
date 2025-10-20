@@ -1,14 +1,16 @@
 {
-  "canonical": "other-permissive",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-Fedora-UltraPermissive",
-      "Other Permissive Licenses",
-      "LicenseRef-scancode-other-permissive"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "other-permissive",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-Fedora-UltraPermissive",
+            "Other Permissive Licenses",
+            "LicenseRef-scancode-other-permissive"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

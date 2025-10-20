@@ -1,14 +1,16 @@
 {
-  "canonical": "apromore-exception-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Apromore Exception to GPL 2.0 or later",
-      "LicenseRef-scancode-apromore-exception-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "apromore-exception-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Apromore Exception to GPL 2.0 or later",
+            "LicenseRef-scancode-apromore-exception-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

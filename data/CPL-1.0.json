@@ -1,26 +1,28 @@
 {
-  "canonical": "CPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Common Public License 1.0"
+    "canonical": {
+        "id": "CPL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Common Public License 1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Common Public License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "CPL 1.0",
+            "cpl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "CPL",
+        "License :: OSI Approved :: Common Public License",
+        "OSI Approved :: Common Public License",
+        "License :: Common Public License",
+        "Common Public License"
     ],
-    "custom": [],
-    "osi": [
-      "Common Public License, Version 1.0"
-    ],
-    "scancodeLicensedb": [
-      "CPL 1.0",
-      "cpl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "CPL",
-    "License :: OSI Approved :: Common Public License",
-    "OSI Approved :: Common Public License",
-    "License :: Common Public License",
-    "Common Public License"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

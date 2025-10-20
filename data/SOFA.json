@@ -1,12 +1,14 @@
 {
-    "canonical": "SOFA",
+    "canonical": {
+        "id": "SOFA",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "SOFA Software License"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

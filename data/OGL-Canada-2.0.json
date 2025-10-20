@@ -1,18 +1,20 @@
 {
-  "canonical": "OGL-Canada-2.0",
-  "aliases": {
-    "spdx": [
-      "Open Government Licence - Canada"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Open Government Licence Canada 2.0",
-      "can-ogl-2.0-en",
-      "OGL Canada 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "OGL-Canada-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Open Government Licence - Canada"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Open Government Licence Canada 2.0",
+            "can-ogl-2.0-en",
+            "OGL Canada 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

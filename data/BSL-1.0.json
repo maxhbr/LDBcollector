@@ -1,5 +1,8 @@
 {
-    "canonical": "BSL-1.0",
+    "canonical": {
+        "id": "BSL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Boost Software License 1.0"
@@ -36,7 +39,6 @@
             "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [
         "Boost License",

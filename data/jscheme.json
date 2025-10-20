@@ -1,13 +1,15 @@
 {
-  "canonical": "jscheme",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Jscheme License",
-      "LicenseRef-scancode-jscheme"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "jscheme",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Jscheme License",
+            "LicenseRef-scancode-jscheme"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

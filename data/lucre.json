@@ -1,13 +1,15 @@
 {
-  "canonical": "lucre",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Lucre License",
-      "LicenseRef-scancode-lucre"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "lucre",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Lucre License",
+            "LicenseRef-scancode-lucre"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

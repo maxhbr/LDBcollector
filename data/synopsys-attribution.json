@@ -1,13 +1,15 @@
 {
-  "canonical": "synopsys-attribution",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Synopsys Attribution License",
-      "LicenseRef-scancode-synopsys-attribution"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "synopsys-attribution",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Synopsys Attribution License",
+            "LicenseRef-scancode-synopsys-attribution"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

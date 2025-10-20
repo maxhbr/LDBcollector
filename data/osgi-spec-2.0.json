@@ -1,15 +1,17 @@
 {
-  "canonical": "osgi-spec-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OSGi Specification License 2.0",
-      "OSGi Specification License Version 2.0",
-      "LicenseRef-scancode-osgi-spec-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "osgi-spec-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OSGi Specification License 2.0",
+            "OSGi Specification License Version 2.0",
+            "LicenseRef-scancode-osgi-spec-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

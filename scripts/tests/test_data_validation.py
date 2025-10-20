@@ -164,7 +164,7 @@ def test_delete_file_failure():
 
 
 def test_check_json_filename():
-    test_data = {"canonical": "correct_name"}
+    test_data = {"canonical": {"id": "correct_name"}}
     filepath = os.path.join("test_data", "correct_name.json")
     os.makedirs("test_data", exist_ok=True)
 
@@ -180,7 +180,7 @@ def test_check_json_filename():
 
 def test_check_json_filename_failure():
     canonical_name = "correct_name"
-    test_data = {"canonical": canonical_name}
+    test_data = {"canonical": {"id": canonical_name}}
 
     filename = "incorrect_name.json"
     filepath = os.path.join("test_data", filename)
@@ -193,7 +193,7 @@ def test_check_json_filename_failure():
         with mock.patch('src.validate.data_validation.logger', mock_logger):
             check_json_filename()
 
-    mock_logger.error.assert_called_with(f"JSON filename '{filename}' does not match canonical name '{canonical_name}'")
+    mock_logger.error.assert_called_with(f"JSON filename '{filename}' does not match canonical id '{canonical_name}'")
 
 
 def dump_files(filepath1, filepath2, test_data1, test_data2):
@@ -241,7 +241,7 @@ def test_check_unique_aliases_failure():
 
 def test_check_src_and_canonical():
     spdx_licenses = ["MIT", "Apache-2.0"]
-    test_data = {"canonical": "MIT", "src": "spdx"}
+    test_data = {"canonical": {"id": "MIT", "src": "spdx"}}
 
     os.makedirs("test_data", exist_ok=True)
     filepath = os.path.join("test_data", "test_file.json")
@@ -258,7 +258,7 @@ def test_check_src_and_canonical():
 
 def test_check_src_and_canonical_failure_source_not_spdx():
     spdx_licenses = ["MIT", "Apache-2.0"]
-    test_data = {"canonical": "MIT", "src": "Not-SPDX"}
+    test_data = {"canonical": {"id": "MIT", "src": "Not-SPDX"}}
 
     filepath = os.path.join("test_data", "test_file.json")
 
@@ -276,7 +276,7 @@ def test_check_src_and_canonical_failure_source_not_spdx():
 def test_check_src_and_canonical_failure_source_is_spdx():
     spdx_licenses = ["MIT", "Apache-2.0"]
     canonical_name = "NO_SPDX_LICENSE"
-    test_data = {"canonical": canonical_name, "src": "spdx"}
+    test_data = {"canonical": {"id": canonical_name, "src": "spdx"}}
 
     filepath = os.path.join("test_data", "test_file.json")
 
@@ -294,7 +294,7 @@ def test_check_src_and_canonical_failure_source_is_spdx():
 def test_check_length_and_characters():
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"canonical": "valid_name", "src": "valid_src", "aliases": {"spdx": ["valid_alias", "valid_alias2"]}}
+    valid_data = {"canonical": {"id": "valid_name", "src": "valid_src"}, "aliases": {"spdx": ["valid_alias", "valid_alias2"]}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
 
@@ -314,8 +314,8 @@ def test_check_length_and_characters_failure():
     os.makedirs("test_data", exist_ok=True)
 
     src_too_long = "a" * (max_length + 1)
-    long_data = {"canonical": "a" * (max_length + 1), "aliases": {"spdx": ["a" * (max_length + 1)], "custom": []}, "src": src_too_long}
-    forbidden_data = {"canonical": "invalid#name", "aliases": {"spdx": ["alias1"], "custom": []}, "src": "src"}
+    long_data = {"canonical": {"id": "a" * (max_length + 1), "src": src_too_long}, "aliases": {"spdx": ["a" * (max_length + 1)], "custom": []}}
+    forbidden_data = {"canonical": {"id": "invalid#name", "src": "src"}, "aliases": {"spdx": ["alias1"], "custom": []}}
 
     filepath_long = os.path.join("test_data", "long.json")
     filepath_forbidden = os.path.join("test_data", "forbidden.json")
@@ -331,7 +331,7 @@ def test_check_length_and_characters_failure():
             check_length_and_characters()
 
             # Check for long strings
-            mock_logger.error.assert_any_call(f"Canonical name '{long_data['canonical']}' exceeds maximum length "
+            mock_logger.error.assert_any_call(f"Canonical id '{long_data['canonical']['id']}' exceeds maximum length "
                                               f"limit of {max_length} characters")
 
             mock_logger.error.assert_any_call(f"At least one of the aliases exceeds maximum length limit of "
@@ -342,7 +342,7 @@ def test_check_length_and_characters_failure():
 
             # Check for forbidden characters
             mock_logger.error.assert_any_call(
-                f"Canonical name '{forbidden_data['canonical']}' contains forbidden characters")
+                f"Canonical id '{forbidden_data['canonical']['id']}' contains forbidden characters")
 
     os.remove(filepath_long)
     os.remove(filepath_forbidden)
@@ -390,7 +390,7 @@ def test_main_integration_fail():
 def test_check_no_empty_field_except_custom_success():
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"custom": [], "canonical": "valid_name", "src": "valid_src",
+    valid_data = {"custom": [], "canonical": {"id": "valid_name", "src": "valid_src"},
                   "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
@@ -408,7 +408,7 @@ def test_check_no_empty_field_except_custom_success():
 def test_check_no_empty_field_except_custom_failure():
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"custom": [], "canonical": "", "src": "valid_src",
+    valid_data = {"custom": [], "canonical": {"id": "", "src": "valid_src"},
                   "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
@@ -496,7 +496,7 @@ def test_check_rejected_not_in_valid_fields_failure():
 def test_check_version_between_canonical_and_alias_success():
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
                   "aliases": {"spdx": ["The Valid License"], "scancode-licensedb": ["valid_alias_1.0"], "custom": ["vl 1.0"]}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
@@ -514,7 +514,7 @@ def test_check_version_between_canonical_and_alias_success():
 def test_check_version_between_canonical_and_alias_failure(caplog):
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
                   "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["wrong_version_3.0_1.0"]}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
@@ -534,7 +534,7 @@ def test_check_version_between_canonical_and_alias_failure(caplog):
 def test_check_version_between_canonical_and_alias_major_version_only_flag_is_false(caplog):
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
                   "aliases": {"custom": ["wrong_version_1"]}, "isMajorVersionOnly": False}
 
     filepath_valid = os.path.join("test_data", "valid.json")
@@ -553,7 +553,7 @@ def test_check_version_between_canonical_and_alias_major_version_only_flag_is_fa
 def test_check_version_between_canonical_and_alias_major_version_only_flag_is_true(caplog):
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name_1.0", "src": "valid_src",
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
                   "aliases": {"custom": ["wrong_version_1"]}, "isMajorVersionOnly": True}
 
     filepath_valid = os.path.join("test_data", "valid.json")
@@ -575,9 +575,9 @@ def test_check_major_version_flag(caplog, monkeypatch):
     # Group 1: "Apache-" group
     # Expected: major version 1 appears twice so expected flag should be False,
     # while major version 2 appears once so expected flag should be True.
-    apache_1_0 = {"canonical": "Apache-1.0", "isMajorVersionOnly": False}
-    apache_1_1 = {"canonical": "Apache-1.1", "isMajorVersionOnly": True}
-    apache_2_0 = {"canonical": "Apache-2.0", "isMajorVersionOnly": True}
+    apache_1_0 = {"canonical": {"id": "Apache-1.0"}, "isMajorVersionOnly": False}
+    apache_1_1 = {"canonical": {"id": "Apache-1.1"}, "isMajorVersionOnly": True}
+    apache_2_0 = {"canonical": {"id": "Apache-2.0"}, "isMajorVersionOnly": True}
 
     with open(os.path.join(test_dir, "Apache-1.0.json"), "w") as f:
         json.dump(apache_1_0, f)
@@ -587,25 +587,25 @@ def test_check_major_version_flag(caplog, monkeypatch):
         json.dump(apache_2_0, f)
 
     # Group 2: "GPL-" group (both files expected to have True as they have unique major versions)
-    gpl_2_0 = {"canonical": "GPL-2.0", "isMajorVersionOnly": True}
-    gpl_3_0 = {"canonical": "GPL-3.0", "isMajorVersionOnly": True}
+    gpl_2_0 = {"canonical": {"id": "GPL-2.0"}, "isMajorVersionOnly": True}
+    gpl_3_0 = {"canonical": {"id": "GPL-3.0"}, "isMajorVersionOnly": True}
     with open(os.path.join(test_dir, "GPL-2.0.json"), "w") as f:
         json.dump(gpl_2_0, f)
     with open(os.path.join(test_dir, "GPL-3.0.json"), "w") as f:
         json.dump(gpl_3_0, f)
 
     # Group 3: File with canonical without a version token (will be skipped)
-    noversion = {"canonical": "LicenseNoVersion"}
+    noversion = {"canonical": {"id": "LicenseNoVersion"}}
     with open(os.path.join(test_dir, "LicenseNoVersion.json"), "w") as f:
         json.dump(noversion, f)
 
     # Group 4: A file that alone makes its own group (skipped because group size is 1)
-    unique = {"canonical": "UniqueLicense-1.0", "isMajorVersionOnly": True}
+    unique = {"canonical": {"id": "UniqueLicense-1.0"}, "isMajorVersionOnly": True}
     with open(os.path.join(test_dir, "UniqueLicense-1.0.json"), "w") as f:
         json.dump(unique, f)
 
     # Group 5: A license file which should have isMajorVersionOnly flag set to true but isn't
-    mit_4_0 = {"canonical": "MIT-4.0", "isMajorVersionOnly": False}  # Incorrect: Expected True.
+    mit_4_0 = {"canonical": {"id": "MIT-4.0"}, "isMajorVersionOnly": False}  # Incorrect: Expected True.
 
     with open(os.path.join(test_dir, "MIT-4.0.json"), "w") as f:
         json.dump(mit_4_0, f)

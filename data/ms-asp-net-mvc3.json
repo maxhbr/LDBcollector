@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-asp-net-mvc3",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS ASP.NET MVC3",
-      "Microsoft ASP.NET MVC 3 License",
-      "LicenseRef-scancode-ms-asp-net-mvc3"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-asp-net-mvc3",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS ASP.NET MVC3",
+            "Microsoft ASP.NET MVC 3 License",
+            "LicenseRef-scancode-ms-asp-net-mvc3"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

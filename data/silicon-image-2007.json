@@ -1,13 +1,15 @@
 {
-  "canonical": "silicon-image-2007",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Silicon Image Proprietary License 2007",
-      "LicenseRef-scancode-silicon-image-2007"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "silicon-image-2007",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Silicon Image Proprietary License 2007",
+            "LicenseRef-scancode-silicon-image-2007"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

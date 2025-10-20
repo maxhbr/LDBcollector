@@ -1,13 +1,15 @@
 {
-  "canonical": "treeview-distributor",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "TreeView Distributor License",
-      "LicenseRef-scancode-treeview-distributor"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "treeview-distributor",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "TreeView Distributor License",
+            "LicenseRef-scancode-treeview-distributor"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

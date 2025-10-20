@@ -1,13 +1,15 @@
 {
-  "canonical": "cavium-malloc",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Cavium malloc License",
-      "LicenseRef-scancode-cavium-malloc"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cavium-malloc",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Cavium malloc License",
+            "LicenseRef-scancode-cavium-malloc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

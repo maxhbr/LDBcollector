@@ -1,14 +1,16 @@
 {
-  "canonical": "rsalv2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "RSALv2",
-      "Redis Source Available License 2.0 (RSALv2) Agreement",
-      "LicenseRef-scancode-rsalv2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rsalv2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "RSALv2",
+            "Redis Source Available License 2.0 (RSALv2) Agreement",
+            "LicenseRef-scancode-rsalv2"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "APSL-1.2",
-  "aliases": {
-    "spdx": [
-      "Apple Public Source License 1.2"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "APSL 1.2",
-      "apsl-1.2"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "APSL-1.2",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Apple Public Source License 1.2"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "APSL 1.2",
+            "apsl-1.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

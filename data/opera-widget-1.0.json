@@ -1,15 +1,17 @@
 {
-  "canonical": "opera-widget-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Opera Widget License v1.0",
-      "Opera Widget License 1.0",
-      "LicenseRef-scancode-opera-widget-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "opera-widget-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Opera Widget License v1.0",
+            "Opera Widget License 1.0",
+            "LicenseRef-scancode-opera-widget-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

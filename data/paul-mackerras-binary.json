@@ -1,13 +1,15 @@
 {
-  "canonical": "paul-mackerras-binary",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Paul Mackerras Binary License",
-      "LicenseRef-scancode-paul-mackerras-binary"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "paul-mackerras-binary",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Paul Mackerras Binary License",
+            "LicenseRef-scancode-paul-mackerras-binary"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

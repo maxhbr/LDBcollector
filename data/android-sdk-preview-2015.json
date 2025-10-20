@@ -1,14 +1,16 @@
 {
-  "canonical": "android-sdk-preview-2015",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Android SDK Preview License Agreement",
-      "Android SDK Preview License",
-      "LicenseRef-scancode-android-sdk-preview-2015"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "android-sdk-preview-2015",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Android SDK Preview License Agreement",
+            "Android SDK Preview License",
+            "LicenseRef-scancode-android-sdk-preview-2015"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

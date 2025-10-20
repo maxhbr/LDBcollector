@@ -1,15 +1,17 @@
 {
-  "canonical": "APAFML",
-  "aliases": {
-    "spdx": [
-      "Adobe Postscript AFM License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "apafml"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "APAFML",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Adobe Postscript AFM License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "apafml"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

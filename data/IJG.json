@@ -1,16 +1,18 @@
 {
-  "canonical": "IJG",
-  "aliases": {
-    "spdx": [
-      "Independent JPEG Group License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "JPEG License",
-      "ijg"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "IJG",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Independent JPEG Group License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "JPEG License",
+            "ijg"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

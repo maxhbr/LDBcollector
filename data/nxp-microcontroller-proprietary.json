@@ -1,14 +1,16 @@
 {
-  "canonical": "nxp-microcontroller-proprietary",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NXP Microcontroller Proprietary",
-      "LicenseRef-scancode-nxp-microcontroller-proprietary",
-      "LicenseRef-scancode-nxp-microctl-proprietary"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nxp-microcontroller-proprietary",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NXP Microcontroller Proprietary",
+            "LicenseRef-scancode-nxp-microcontroller-proprietary",
+            "LicenseRef-scancode-nxp-microctl-proprietary"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

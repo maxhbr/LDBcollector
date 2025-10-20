@@ -1,14 +1,16 @@
 {
-  "canonical": "jelurida-public-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Jeulurida Public License 1.1",
-      "LicenseRef-scancode-jelurida-public-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "jelurida-public-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Jeulurida Public License 1.1",
+            "LicenseRef-scancode-jelurida-public-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

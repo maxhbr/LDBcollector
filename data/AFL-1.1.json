@@ -1,18 +1,20 @@
 {
-  "canonical": "AFL-1.1",
-  "aliases": {
-    "spdx": [
-      "Academic Free License v1.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Academic Free License 1.1",
-      "afl-1.1",
-      "AFL 1.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "AFL-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Academic Free License v1.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Academic Free License 1.1",
+            "afl-1.1",
+            "AFL 1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

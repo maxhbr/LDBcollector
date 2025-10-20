@@ -1,17 +1,19 @@
 {
-  "canonical": "HPND-INRIA-IMAG",
-  "aliases": {
-    "spdx": [
-      "Historical Permission Notice and Disclaimer    - INRIA-IMAG variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Historical Permission Notice and Disclaimer - INRIA-IMAG variant",
-      "hpnd-inria-imag",
-      "Historical - INRIA-IMAG variant"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HPND-INRIA-IMAG",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer    - INRIA-IMAG variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Historical Permission Notice and Disclaimer - INRIA-IMAG variant",
+            "hpnd-inria-imag",
+            "Historical - INRIA-IMAG variant"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

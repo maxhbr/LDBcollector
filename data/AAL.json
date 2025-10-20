@@ -1,5 +1,8 @@
 {
-    "canonical": "AAL",
+    "canonical": {
+        "id": "AAL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Attribution Assurance License"
@@ -15,7 +18,6 @@
             "License :: Attribution Assurance License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "linking-exception-lgpl-2.0-plus",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Linking exception to LGPL 2.0 or later",
-      "LicenseRef-scancode-linking-exception-lgpl-2.0-plus",
-      "LicenseRef-scancode-linking-exception-lgpl-2.0plus"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "linking-exception-lgpl-2.0-plus",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Linking exception to LGPL 2.0 or later",
+            "LicenseRef-scancode-linking-exception-lgpl-2.0-plus",
+            "LicenseRef-scancode-linking-exception-lgpl-2.0plus"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

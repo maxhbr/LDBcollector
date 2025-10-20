@@ -1,5 +1,8 @@
 {
-    "canonical": "NGPL",
+    "canonical": {
+        "id": "NGPL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Nethack General Public License"
@@ -17,7 +20,6 @@
             "License :: OSI Approved :: Nethack General Public License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

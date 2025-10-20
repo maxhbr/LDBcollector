@@ -1,15 +1,17 @@
 {
-  "canonical": "BSD-3-Clause-Open-MPI",
-  "aliases": {
-    "spdx": [
-      "BSD 3-Clause Open MPI variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bsd-3-clause-open-mpi"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-3-Clause-Open-MPI",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause Open MPI variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bsd-3-clause-open-mpi"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

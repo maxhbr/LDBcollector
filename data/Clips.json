@@ -1,17 +1,19 @@
 {
-  "canonical": "Clips",
-  "aliases": {
-    "spdx": [
-      "Clips License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-clips-2017",
-      "CLIPS License 2017",
-      "clips-2017"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Clips",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Clips License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-clips-2017",
+            "CLIPS License 2017",
+            "clips-2017"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

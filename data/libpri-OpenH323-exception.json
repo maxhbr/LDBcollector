@@ -1,15 +1,17 @@
 {
-  "canonical": "libpri-OpenH323-exception",
-  "aliases": {
-    "spdx": [
-      "libpri OpenH323 exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "libpri-openh323-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "libpri-OpenH323-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "libpri OpenH323 exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "libpri-openh323-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,16 +1,18 @@
 {
-  "canonical": "Qt-GPL-exception-1.0",
-  "aliases": {
-    "spdx": [
-      "Qt GPL exception 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "qt-gpl-exception-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Qt-GPL-exception-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Qt GPL exception 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "qt-gpl-exception-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

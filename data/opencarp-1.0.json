@@ -1,14 +1,16 @@
 {
-  "canonical": "opencarp-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "openCARP v1.0",
-      "LicenseRef-scancode-opencarp-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "opencarp-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "openCARP v1.0",
+            "LicenseRef-scancode-opencarp-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

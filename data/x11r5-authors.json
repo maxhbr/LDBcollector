@@ -1,12 +1,14 @@
 {
-  "canonical": "x11r5-authors",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11-R5 Authors"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11r5-authors",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11-R5 Authors"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

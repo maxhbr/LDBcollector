@@ -1,13 +1,15 @@
 {
-  "canonical": "unrar",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "UnRar License",
-      "LicenseRef-scancode-unrar"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "unrar",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "UnRar License",
+            "LicenseRef-scancode-unrar"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

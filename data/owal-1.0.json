@@ -1,15 +1,17 @@
 {
-  "canonical": "owal-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Opera Web Applications License 1.0",
-      "Opera Web Applications License v1.0",
-      "LicenseRef-scancode-owal-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "owal-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Opera Web Applications License 1.0",
+            "Opera Web Applications License v1.0",
+            "LicenseRef-scancode-owal-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

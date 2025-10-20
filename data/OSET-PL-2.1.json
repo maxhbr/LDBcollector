@@ -1,17 +1,19 @@
 {
-  "canonical": "OSET-PL-2.1",
-  "aliases": {
-    "spdx": [
-      "OSET Public License version 2.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "oset-pl-2.1",
-      "OSET-PL-2.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "OSET-PL-2.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "OSET Public License version 2.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "oset-pl-2.1",
+            "OSET-PL-2.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

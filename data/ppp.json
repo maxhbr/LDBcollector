@@ -1,13 +1,15 @@
 {
-  "canonical": "ppp",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ppp License",
-      "LicenseRef-scancode-ppp"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ppp",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ppp License",
+            "LicenseRef-scancode-ppp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

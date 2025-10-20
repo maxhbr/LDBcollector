@@ -1,13 +1,15 @@
 {
-  "canonical": "nvidia-cuda-supplement-2020",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CUDA Toolkit Supplement to SLA for NVIDIA SDKs",
-      "LicenseRef-scancode-nvidia-cuda-supplement-2020"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nvidia-cuda-supplement-2020",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CUDA Toolkit Supplement to SLA for NVIDIA SDKs",
+            "LicenseRef-scancode-nvidia-cuda-supplement-2020"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

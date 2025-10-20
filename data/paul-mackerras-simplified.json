@@ -1,13 +1,15 @@
 {
-  "canonical": "paul-mackerras-simplified",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Paul Mackerras Simplified License",
-      "LicenseRef-scancode-paul-mackerras-simplified"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "paul-mackerras-simplified",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Paul Mackerras Simplified License",
+            "LicenseRef-scancode-paul-mackerras-simplified"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,20 +1,22 @@
 {
-  "canonical": "Artistic-1.0",
-  "aliases": {
-    "spdx": [
-      "Artistic License 1.0"
-    ],
-    "custom": [],
-    "osi": [
-      "Artistic License, Version 1.0"
-    ],
-    "scancodeLicensedb": [
-      "artistic-1.0",
-      "Artistic 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Artistic-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Artistic License 1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Artistic License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "artistic-1.0",
+            "Artistic 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

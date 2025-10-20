@@ -1,19 +1,21 @@
 {
-  "canonical": "LGPL-3.0-linking-exception",
-  "aliases": {
-    "spdx": [
-      "LGPL-3.0 Linking Exception"
+    "canonical": {
+        "id": "LGPL-3.0-linking-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "LGPL-3.0 Linking Exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "lgpl-3.0-linking-exception",
+            "LicenseRef-scancode-linking-exception-lgpl-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "LicenseRef-scancode-lgpl-3-plus-linking"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "lgpl-3.0-linking-exception",
-      "LicenseRef-scancode-linking-exception-lgpl-3.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "LicenseRef-scancode-lgpl-3-plus-linking"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

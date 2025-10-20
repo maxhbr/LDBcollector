@@ -1,15 +1,17 @@
 {
-  "canonical": "froala-owdl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-froala-owdl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Froala Open Web Design License"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "froala-owdl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-froala-owdl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Froala Open Web Design License"
+    ],
+    "isMajorVersionOnly": true
 }

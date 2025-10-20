@@ -1,14 +1,16 @@
 {
-  "canonical": "dhb-limited-bsd-2015",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "DHB Limited BSD License 2015",
-      "David H. Bailey Limited BSD License 2015",
-      "LicenseRef-scancode-dhb-limited-bsd-2015"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "dhb-limited-bsd-2015",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "DHB Limited BSD License 2015",
+            "David H. Bailey Limited BSD License 2015",
+            "LicenseRef-scancode-dhb-limited-bsd-2015"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

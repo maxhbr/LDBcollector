@@ -1,13 +1,15 @@
 {
-  "canonical": "ssleay",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Original SSLeay License",
-      "LicenseRef-scancode-ssleay"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ssleay",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Original SSLeay License",
+            "LicenseRef-scancode-ssleay"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

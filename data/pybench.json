@@ -1,13 +1,15 @@
 {
-  "canonical": "pybench",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "pybench License",
-      "LicenseRef-scancode-pybench"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "pybench",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "pybench License",
+            "LicenseRef-scancode-pybench"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

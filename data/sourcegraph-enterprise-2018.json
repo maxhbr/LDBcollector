@@ -1,13 +1,15 @@
 {
-  "canonical": "sourcegraph-enterprise-2018",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sourcegraph Enterprise License 2018",
-      "LicenseRef-scancode-sourcegraph-enterprise-2018"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sourcegraph-enterprise-2018",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sourcegraph Enterprise License 2018",
+            "LicenseRef-scancode-sourcegraph-enterprise-2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

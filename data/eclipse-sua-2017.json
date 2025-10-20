@@ -1,13 +1,15 @@
 {
-  "canonical": "eclipse-sua-2017",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Eclipse Foundation Software User Agreement 2017",
-      "LicenseRef-scancode-eclipse-sua-2017"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "eclipse-sua-2017",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Eclipse Foundation Software User Agreement 2017",
+            "LicenseRef-scancode-eclipse-sua-2017"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

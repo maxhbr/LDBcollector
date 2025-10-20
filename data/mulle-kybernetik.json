@@ -1,13 +1,15 @@
 {
-  "canonical": "mulle-kybernetik",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Mulle Kybernetik License",
-      "LicenseRef-scancode-mulle-kybernetik"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mulle-kybernetik",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Mulle Kybernetik License",
+            "LicenseRef-scancode-mulle-kybernetik"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

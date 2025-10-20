@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-adobe-dec",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11-Style (Adobe-DEC)",
-      "LicenseRef-scancode-x11-adobe-dec"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-adobe-dec",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11-Style (Adobe-DEC)",
+            "LicenseRef-scancode-x11-adobe-dec"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

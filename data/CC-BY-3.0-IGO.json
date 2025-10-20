@@ -1,16 +1,18 @@
 {
-  "canonical": "CC-BY-3.0-IGO",
-  "aliases": {
-    "spdx": [
-      "Creative Commons Attribution 3.0 IGO"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "cc-by-3.0-igo"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CC-BY-3.0-IGO",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Creative Commons Attribution 3.0 IGO"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "cc-by-3.0-igo"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

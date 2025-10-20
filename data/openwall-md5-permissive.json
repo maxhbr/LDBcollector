@@ -1,13 +1,15 @@
 {
-  "canonical": "openwall-md5-permissive",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Openwall MD5 Permissive",
-      "LicenseRef-scancode-openwall-md5-permissive"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "openwall-md5-permissive",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Openwall MD5 Permissive",
+            "LicenseRef-scancode-openwall-md5-permissive"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

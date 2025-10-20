@@ -1,12 +1,14 @@
 {
-    "canonical": "generic-xts",
+    "canonical": {
+        "id": "generic-xts",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Generic XTS License"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "skip-2014",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SKIP License 2014",
-      "LicenseRef-scancode-skip-2014"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "skip-2014",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SKIP License 2014",
+            "LicenseRef-scancode-skip-2014"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

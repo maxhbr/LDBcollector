@@ -1,15 +1,17 @@
 {
-  "canonical": "wthpl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "WTHPL 1.0",
-      "DO WHAT THE HELL YOU WANT TO PUBLIC LICENSE 1.0",
-      "LicenseRef-scancode-wthpl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "wthpl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "WTHPL 1.0",
+            "DO WHAT THE HELL YOU WANT TO PUBLIC LICENSE 1.0",
+            "LicenseRef-scancode-wthpl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

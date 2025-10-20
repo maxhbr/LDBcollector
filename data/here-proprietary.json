@@ -1,15 +1,17 @@
 {
-  "canonical": "here-proprietary",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-Proprietary-HERE",
-      "HERE Proprietary License",
-      "HERE Proprietary",
-      "LicenseRef-scancode-here-proprietary"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "here-proprietary",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-Proprietary-HERE",
+            "HERE Proprietary License",
+            "HERE Proprietary",
+            "LicenseRef-scancode-here-proprietary"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

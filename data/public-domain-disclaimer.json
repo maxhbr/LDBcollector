@@ -1,13 +1,15 @@
 {
-  "canonical": "public-domain-disclaimer",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Public Domain Disclaimer",
-      "LicenseRef-scancode-public-domain-disclaimer"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "public-domain-disclaimer",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Public Domain Disclaimer",
+            "LicenseRef-scancode-public-domain-disclaimer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

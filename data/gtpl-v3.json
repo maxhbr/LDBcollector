@@ -1,14 +1,16 @@
 {
-  "canonical": "gtpl-v3",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Globus Toolkit Public License (GTPL) v3",
-      "GTPL-v3",
-      "LicenseRef-scancode-gtpl-v3"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "gtpl-v3",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Globus Toolkit Public License (GTPL) v3",
+            "GTPL-v3",
+            "LicenseRef-scancode-gtpl-v3"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

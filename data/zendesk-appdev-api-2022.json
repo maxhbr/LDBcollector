@@ -1,14 +1,16 @@
 {
-  "canonical": "zendesk-appdev-api-2022",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Zendesk Application Developer and API Agreement 2022",
-      "Zendesk AppDev API Agreement 2022",
-      "LicenseRef-scancode-zendesk-appdev-api-2022"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "zendesk-appdev-api-2022",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Zendesk Application Developer and API Agreement 2022",
+            "Zendesk AppDev API Agreement 2022",
+            "LicenseRef-scancode-zendesk-appdev-api-2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

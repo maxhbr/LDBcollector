@@ -1,13 +1,15 @@
 {
-  "canonical": "com-oreilly-servlet",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "com.oreilly.servlet License",
-      "LicenseRef-scancode-com-oreilly-servlet"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "com-oreilly-servlet",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "com.oreilly.servlet License",
+            "LicenseRef-scancode-com-oreilly-servlet"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

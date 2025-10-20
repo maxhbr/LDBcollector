@@ -1,14 +1,16 @@
 {
-  "canonical": "apple-attribution-1997",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Apple Attribution License 1997",
-      "Apple Attribution 1997",
-      "LicenseRef-scancode-apple-attribution-1997"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "apple-attribution-1997",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Apple Attribution License 1997",
+            "Apple Attribution 1997",
+            "LicenseRef-scancode-apple-attribution-1997"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

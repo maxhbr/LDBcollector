@@ -1,15 +1,17 @@
 {
-  "canonical": "can-ogl-nova-scotia-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OGL Nova Scotia 1.0",
-      "Open Government Licence Nova Scotia 1.0",
-      "LicenseRef-scancode-can-ogl-nova-scotia-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "can-ogl-nova-scotia-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OGL Nova Scotia 1.0",
+            "Open Government Licence Nova Scotia 1.0",
+            "LicenseRef-scancode-can-ogl-nova-scotia-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

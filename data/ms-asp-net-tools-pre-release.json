@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-asp-net-tools-pre-release",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS ASP.NET Tools Pre-Release License",
-      "Microsoft ASP.NET Tools Pre-Release License",
-      "LicenseRef-scancode-ms-asp-net-tools-pre-release"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-asp-net-tools-pre-release",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS ASP.NET Tools Pre-Release License",
+            "Microsoft ASP.NET Tools Pre-Release License",
+            "LicenseRef-scancode-ms-asp-net-tools-pre-release"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

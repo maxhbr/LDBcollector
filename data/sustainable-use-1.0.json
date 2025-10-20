@@ -1,15 +1,17 @@
 {
-  "canonical": "sustainable-use-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sustainable Use 1.0",
-      "Sustainable Use License 1.0",
-      "LicenseRef-scancode-sustainable-use-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "sustainable-use-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sustainable Use 1.0",
+            "Sustainable Use License 1.0",
+            "LicenseRef-scancode-sustainable-use-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

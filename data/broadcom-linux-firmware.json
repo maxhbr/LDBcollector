@@ -1,13 +1,15 @@
 {
-  "canonical": "broadcom-linux-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Broadcom Linux Firmware License",
-      "LicenseRef-scancode-broadcom-linux-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "broadcom-linux-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Broadcom Linux Firmware License",
+            "LicenseRef-scancode-broadcom-linux-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

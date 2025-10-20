@@ -1,15 +1,17 @@
 {
-  "canonical": "python-ldap",
-  "aliases": {
-    "spdx": [
-      "Python ldap License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "python-ldap"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "python-ldap",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Python ldap License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "python-ldap"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

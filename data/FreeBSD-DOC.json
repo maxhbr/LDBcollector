@@ -1,17 +1,19 @@
 {
-  "canonical": "FreeBSD-DOC",
-  "aliases": {
-    "spdx": [
-      "FreeBSD Documentation License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "freebsd-doc",
-      "FreeBSD Doc License",
-      "LicenseRef-scancode-freebsd-doc"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "FreeBSD-DOC",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "FreeBSD Documentation License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "freebsd-doc",
+            "FreeBSD Doc License",
+            "LicenseRef-scancode-freebsd-doc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

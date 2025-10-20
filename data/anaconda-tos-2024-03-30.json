@@ -1,14 +1,16 @@
 {
-  "canonical": "anaconda-tos-2024-03-30",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Anaconda TOS 2024-03-30",
-      "Anaconda Terms of Service 2024-03-30",
-      "LicenseRef-scancode-anaconda-tos-2024-03-30"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "anaconda-tos-2024-03-30",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Anaconda TOS 2024-03-30",
+            "Anaconda Terms of Service 2024-03-30",
+            "LicenseRef-scancode-anaconda-tos-2024-03-30"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

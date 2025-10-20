@@ -1,14 +1,16 @@
 {
-  "canonical": "snapeda-design-exception-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SnapEDA Design Exception 1.0",
-      "LicenseRef-scancode-snapeda-design-exception-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "snapeda-design-exception-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SnapEDA Design Exception 1.0",
+            "LicenseRef-scancode-snapeda-design-exception-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "sun-bcl-java-servlet-imp-2.1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun BCL Java Servlet Implementation Classes 2.1.1",
-      "Sun BCL Java Servlet Implementation 2.1.1",
-      "LicenseRef-scancode-sun-bcl-java-servlet-imp-2.1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "sun-bcl-java-servlet-imp-2.1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun BCL Java Servlet Implementation Classes 2.1.1",
+            "Sun BCL Java Servlet Implementation 2.1.1",
+            "LicenseRef-scancode-sun-bcl-java-servlet-imp-2.1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "flowplayer-gpl-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Flowplayer GPL 3.0",
-      "LicenseRef-scancode-flowplayer-gpl-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "flowplayer-gpl-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Flowplayer GPL 3.0",
+            "LicenseRef-scancode-flowplayer-gpl-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

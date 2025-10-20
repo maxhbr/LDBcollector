@@ -1,14 +1,16 @@
 {
-  "canonical": "apple-ml-ferret-2023",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Apple ML Ferret 2023",
-      "Apple ML Ferret License 2023",
-      "LicenseRef-scancode-apple-ml-ferret-2023"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "apple-ml-ferret-2023",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Apple ML Ferret 2023",
+            "Apple ML Ferret License 2023",
+            "LicenseRef-scancode-apple-ml-ferret-2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

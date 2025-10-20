@@ -1,13 +1,15 @@
 {
-  "canonical": "wingo",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "wingo License",
-      "LicenseRef-scancode-wingo"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "wingo",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "wingo License",
+            "LicenseRef-scancode-wingo"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

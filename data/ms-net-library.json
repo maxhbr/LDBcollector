@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-net-library",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft .NET Library License",
-      "MS .NET Library License",
-      "LicenseRef-scancode-ms-net-library"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-net-library",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft .NET Library License",
+            "MS .NET Library License",
+            "LicenseRef-scancode-ms-net-library"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

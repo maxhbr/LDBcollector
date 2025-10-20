@@ -1,5 +1,8 @@
 {
-    "canonical": "PostgreSQL",
+    "canonical": {
+        "id": "PostgreSQL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "PostgreSQL License"
@@ -17,7 +20,6 @@
             "License :: OSI Approved :: PostgreSQL License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

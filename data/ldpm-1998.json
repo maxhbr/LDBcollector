@@ -1,14 +1,16 @@
 {
-  "canonical": "ldpm-1998",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Linux Documentation Project Manifesto Template License 1998-09-21",
-      "LDPM-1998",
-      "LicenseRef-scancode-ldpm-1998"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ldpm-1998",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Linux Documentation Project Manifesto Template License 1998-09-21",
+            "LDPM-1998",
+            "LicenseRef-scancode-ldpm-1998"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

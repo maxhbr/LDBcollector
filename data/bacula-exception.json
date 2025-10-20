@@ -1,13 +1,15 @@
 {
-  "canonical": "bacula-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Bacula exception to AGPL 3.0",
-      "LicenseRef-scancode-bacula-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bacula-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Bacula exception to AGPL 3.0",
+            "LicenseRef-scancode-bacula-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

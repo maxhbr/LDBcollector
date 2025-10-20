@@ -1,19 +1,21 @@
 {
-  "canonical": "NTP",
-  "aliases": {
-    "spdx": [
-      "NTP License"
-    ],
-    "custom": [],
-    "osi": [
-      "NTP License (NTP)"
-    ],
-    "scancodeLicensedb": [
-      "mit-old-style-no-advert",
-      "MIT Old Style no advertising"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "NTP",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "NTP License"
+        ],
+        "custom": [],
+        "osi": [
+            "NTP License (NTP)"
+        ],
+        "scancodeLicensedb": [
+            "mit-old-style-no-advert",
+            "MIT Old Style no advertising"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

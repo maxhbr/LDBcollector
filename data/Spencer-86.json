@@ -1,17 +1,19 @@
 {
-  "canonical": "Spencer-86",
-  "aliases": {
-    "spdx": [
-      "Spencer License 86"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Regexp License",
-      "LicenseRef-scancode-regexp",
-      "regexp"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Spencer-86",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Spencer License 86"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Regexp License",
+            "LicenseRef-scancode-regexp",
+            "regexp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

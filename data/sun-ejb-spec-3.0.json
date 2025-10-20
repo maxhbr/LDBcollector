@@ -1,14 +1,16 @@
 {
-  "canonical": "sun-ejb-spec-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun EJB Specification 3.0",
-      "LicenseRef-scancode-sun-ejb-spec-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "sun-ejb-spec-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun EJB Specification 3.0",
+            "LicenseRef-scancode-sun-ejb-spec-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

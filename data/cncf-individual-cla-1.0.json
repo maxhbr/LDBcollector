@@ -1,15 +1,17 @@
 {
-  "canonical": "cncf-individual-cla-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CNCF Individual Contributor License Agreement (\"Agreement\") v1.0",
-      "CNCF Individual CLA 1.0",
-      "LicenseRef-scancode-cncf-individual-cla-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "cncf-individual-cla-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CNCF Individual Contributor License Agreement (\"Agreement\") v1.0",
+            "CNCF Individual CLA 1.0",
+            "LicenseRef-scancode-cncf-individual-cla-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

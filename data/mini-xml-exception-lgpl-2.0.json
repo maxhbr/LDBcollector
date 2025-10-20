@@ -1,14 +1,16 @@
 {
-  "canonical": "mini-xml-exception-lgpl-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Mini-XML exception to LGPL 2.0",
-      "LicenseRef-scancode-mini-xml-exception-lgpl-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "mini-xml-exception-lgpl-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Mini-XML exception to LGPL 2.0",
+            "LicenseRef-scancode-mini-xml-exception-lgpl-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

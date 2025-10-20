@@ -1,13 +1,15 @@
 {
-  "canonical": "iso-recorder",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ISO Recorder License",
-      "LicenseRef-scancode-iso-recorder"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "iso-recorder",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ISO Recorder License",
+            "LicenseRef-scancode-iso-recorder"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

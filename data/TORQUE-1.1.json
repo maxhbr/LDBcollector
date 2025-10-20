@@ -1,17 +1,19 @@
 {
-  "canonical": "TORQUE-1.1",
-  "aliases": {
-    "spdx": [
-      "TORQUE v2.5+ Software License v1.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "torque-1.1",
-      "TORQUE 1.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "TORQUE-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "TORQUE v2.5+ Software License v1.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "torque-1.1",
+            "TORQUE 1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

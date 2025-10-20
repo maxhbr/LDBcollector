@@ -1,13 +1,15 @@
 {
-  "canonical": "synthesis-toolkit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Synthesis Toolkit License",
-      "LicenseRef-scancode-synthesis-toolkit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "synthesis-toolkit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Synthesis Toolkit License",
+            "LicenseRef-scancode-synthesis-toolkit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

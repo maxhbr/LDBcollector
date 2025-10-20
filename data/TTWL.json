@@ -1,15 +1,17 @@
 {
-  "canonical": "TTWL",
-  "aliases": {
-    "spdx": [
-      "Text-Tabs+Wrap License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ttwl"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "TTWL",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Text-Tabs+Wrap License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ttwl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

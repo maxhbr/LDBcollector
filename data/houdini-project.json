@@ -1,13 +1,15 @@
 {
-  "canonical": "houdini-project",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Houdini Project License",
-      "LicenseRef-scancode-houdini"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "houdini-project",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Houdini Project License",
+            "LicenseRef-scancode-houdini"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

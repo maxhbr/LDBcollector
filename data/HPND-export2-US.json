@@ -1,17 +1,19 @@
 {
-  "canonical": "HPND-export2-US",
-  "aliases": {
-    "spdx": [
-      "HPND with US Government export control and 2 disclaimers"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-mit-no-advert-export-control",
-      "mit-no-advert-export-control",
-      "MIT no advertising with Export Control"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HPND-export2-US",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "HPND with US Government export control and 2 disclaimers"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mit-no-advert-export-control",
+            "mit-no-advert-export-control",
+            "MIT no advertising with Export Control"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

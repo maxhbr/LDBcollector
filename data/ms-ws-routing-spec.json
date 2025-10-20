@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-ws-routing-spec",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft WS Routing Specifications License",
-      "MS WS Routing Specifications License",
-      "LicenseRef-scancode-ms-ws-routing-spec"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-ws-routing-spec",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft WS Routing Specifications License",
+            "MS WS Routing Specifications License",
+            "LicenseRef-scancode-ms-ws-routing-spec"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

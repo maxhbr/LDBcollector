@@ -1,14 +1,16 @@
 {
-  "canonical": "bsd-no-disclaimer",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BSD-2-Clause no disclaimer",
-      "BSD-2-Clause without Warranty Disclaimer",
-      "LicenseRef-scancode-bsd-no-disclaimer"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bsd-no-disclaimer",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BSD-2-Clause no disclaimer",
+            "BSD-2-Clause without Warranty Disclaimer",
+            "LicenseRef-scancode-bsd-no-disclaimer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

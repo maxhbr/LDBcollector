@@ -1,15 +1,17 @@
 {
-  "canonical": "Rdisc",
-  "aliases": {
-    "spdx": [
-      "Rdisc License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "rdisc"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Rdisc",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Rdisc License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "rdisc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

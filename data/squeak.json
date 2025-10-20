@@ -1,13 +1,15 @@
 {
-  "canonical": "squeak",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Apple Squeak License",
-      "LicenseRef-scancode-squeak"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "squeak",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Apple Squeak License",
+            "LicenseRef-scancode-squeak"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

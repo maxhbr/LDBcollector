@@ -1,17 +1,19 @@
 {
-  "canonical": "Zend-2.0",
-  "aliases": {
-    "spdx": [
-      "Zend License v2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Zend Engine License 2.0",
-      "zend-2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Zend-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Zend License v2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Zend Engine License 2.0",
+            "zend-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

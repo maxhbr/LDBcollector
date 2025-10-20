@@ -1,16 +1,18 @@
 {
-  "canonical": "CECILL-B",
-  "aliases": {
-    "spdx": [
-      "CeCILL-B Free Software License Agreement"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "CeCILL-B License",
-      "cecill-b"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "CECILL-B",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "CeCILL-B Free Software License Agreement"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "CeCILL-B License",
+            "cecill-b"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

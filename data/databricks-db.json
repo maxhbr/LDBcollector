@@ -1,13 +1,15 @@
 {
-  "canonical": "databricks-db",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-databricks-db",
-      "Databricks DB License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "databricks-db",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-databricks-db",
+            "Databricks DB License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

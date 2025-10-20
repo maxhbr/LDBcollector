@@ -1,12 +1,14 @@
 {
-  "canonical": "see-license",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "See License mention"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "see-license",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "See License mention"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

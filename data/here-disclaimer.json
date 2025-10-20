@@ -1,13 +1,15 @@
 {
-  "canonical": "here-disclaimer",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "HERE Disclaimer",
-      "LicenseRef-scancode-here-disclaimer"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "here-disclaimer",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "HERE Disclaimer",
+            "LicenseRef-scancode-here-disclaimer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

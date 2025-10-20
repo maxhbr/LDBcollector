@@ -1,13 +1,15 @@
 {
-  "canonical": "fplot",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "FPLOT LIcense",
-      "LicenseRef-scancode-fplot"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "fplot",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "FPLOT LIcense",
+            "LicenseRef-scancode-fplot"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

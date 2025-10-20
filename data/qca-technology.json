@@ -1,14 +1,16 @@
 {
-  "canonical": "qca-technology",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "QCA Technology License",
-      "Qualcomm Atheros Technology License",
-      "LicenseRef-scancode-qca-technology"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "qca-technology",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "QCA Technology License",
+            "Qualcomm Atheros Technology License",
+            "LicenseRef-scancode-qca-technology"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

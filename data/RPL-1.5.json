@@ -1,20 +1,22 @@
 {
-  "canonical": "RPL-1.5",
-  "aliases": {
-    "spdx": [
-      "Reciprocal Public License 1.5"
-    ],
-    "custom": [],
-    "osi": [
-      "Reciprocal Public License, Version 1.5"
-    ],
-    "scancodeLicensedb": [
-      "RPL 1.5",
-      "rpl-1.5"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "RPL-1.5",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Reciprocal Public License 1.5"
+        ],
+        "custom": [],
+        "osi": [
+            "Reciprocal Public License, Version 1.5"
+        ],
+        "scancodeLicensedb": [
+            "RPL 1.5",
+            "rpl-1.5"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

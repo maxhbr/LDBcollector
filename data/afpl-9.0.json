@@ -1,16 +1,18 @@
 {
-  "canonical": "afpl-9.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-afpl-9.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Aladdin Free Public License v9",
-    "Aladdin FPL v9"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "afpl-9.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-afpl-9.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Aladdin Free Public License v9",
+        "Aladdin FPL v9"
+    ],
+    "isMajorVersionOnly": true
 }

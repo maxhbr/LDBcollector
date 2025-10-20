@@ -1,13 +1,15 @@
 {
-  "canonical": "whitecat",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Whitecat License",
-      "LicenseRef-scancode-whitecat"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "whitecat",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Whitecat License",
+            "LicenseRef-scancode-whitecat"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

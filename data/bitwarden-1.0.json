@@ -1,15 +1,17 @@
 {
-  "canonical": "bitwarden-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-bitwarden-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Bitwarden License Agreement v1"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "bitwarden-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-bitwarden-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Bitwarden License Agreement v1"
+    ],
+    "isMajorVersionOnly": true
 }

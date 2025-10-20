@@ -1,14 +1,16 @@
 {
-  "canonical": "ccg-research-academic",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Cognitive Computation Group Research License",
-      "CogComp Research and Academic Use License",
-      "LicenseRef-scancode-ccg-research-academic"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ccg-research-academic",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Cognitive Computation Group Research License",
+            "CogComp Research and Academic Use License",
+            "LicenseRef-scancode-ccg-research-academic"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

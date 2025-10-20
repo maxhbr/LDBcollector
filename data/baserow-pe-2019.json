@@ -1,14 +1,16 @@
 {
-  "canonical": "baserow-pe-2019",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-baserow-pe-2019",
-      "Baserow PE License 2019",
-      "Baserow Premium Edition License (the \"PE License\") 2019"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "baserow-pe-2019",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-baserow-pe-2019",
+            "Baserow PE License 2019",
+            "Baserow Premium Edition License (the \"PE License\") 2019"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

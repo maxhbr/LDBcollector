@@ -1,18 +1,20 @@
 {
-  "canonical": "eCos-2.0",
-  "aliases": {
-    "spdx": [
-      "eCos license version 2.0"
+    "canonical": {
+        "id": "eCos-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "eCos license version 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 or later with eCos Exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "ecos"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 2.0 or later with eCos Exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "ecos"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

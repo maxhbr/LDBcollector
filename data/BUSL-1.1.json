@@ -1,17 +1,19 @@
 {
-  "canonical": "BUSL-1.1",
-  "aliases": {
-    "spdx": [
-      "Business Source License 1.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bsl-1.1",
-      "LicenseRef-scancode-bsl-1.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "BUSL-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Business Source License 1.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bsl-1.1",
+            "LicenseRef-scancode-bsl-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

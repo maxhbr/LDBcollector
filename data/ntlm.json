@@ -1,13 +1,15 @@
 {
-  "canonical": "ntlm",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NTLM License",
-      "LicenseRef-scancode-ntlm"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ntlm",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NTLM License",
+            "LicenseRef-scancode-ntlm"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

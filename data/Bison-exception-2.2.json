@@ -1,18 +1,20 @@
 {
-  "canonical": "Bison-exception-2.2",
-  "aliases": {
-    "spdx": [
-      "Bison exception 2.2"
+    "canonical": {
+        "id": "Bison-exception-2.2",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Bison exception 2.2"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bison-exception-2.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Bison 2.2 exception to GPL 2.0 or later"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bison-exception-2.2"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "Bison 2.2 exception to GPL 2.0 or later"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

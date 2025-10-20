@@ -1,13 +1,15 @@
 {
-  "canonical": "westhawk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Westhawk License",
-      "LicenseRef-scancode-westhawk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "westhawk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Westhawk License",
+            "LicenseRef-scancode-westhawk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

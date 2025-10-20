@@ -1,15 +1,17 @@
 {
-  "canonical": "divx-open-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "DivX Open License 1.0",
-      "DivX Open License v1.0",
-      "LicenseRef-scancode-divx-open-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "divx-open-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "DivX Open License 1.0",
+            "DivX Open License v1.0",
+            "LicenseRef-scancode-divx-open-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

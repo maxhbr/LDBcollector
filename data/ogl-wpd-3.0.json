@@ -1,15 +1,17 @@
 {
-  "canonical": "ogl-wpd-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OGL-WPD-3.0",
-      "Western Power Distribution Open Data Licence v3.0",
-      "LicenseRef-scancode-ogl-wpd-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ogl-wpd-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OGL-WPD-3.0",
+            "Western Power Distribution Open Data Licence v3.0",
+            "LicenseRef-scancode-ogl-wpd-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

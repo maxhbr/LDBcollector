@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-msn-webgrease",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft MSN WebGrease License",
-      "MS MSN WebGrease License",
-      "LicenseRef-scancode-ms-msn-webgrease"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-msn-webgrease",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft MSN WebGrease License",
+            "MS MSN WebGrease License",
+            "LicenseRef-scancode-ms-msn-webgrease"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

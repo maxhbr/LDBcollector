@@ -1,14 +1,16 @@
 {
-  "canonical": "trendmicro-cl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Trend Micro Community License 1.0",
-      "LicenseRef-scancode-trendmicro-cl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "trendmicro-cl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Trend Micro Community License 1.0",
+            "LicenseRef-scancode-trendmicro-cl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

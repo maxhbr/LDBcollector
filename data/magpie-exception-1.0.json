@@ -1,16 +1,18 @@
 {
-  "canonical": "magpie-exception-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-magpie-exception-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "MAgPIE Exception to AGPL 3.0",
-    "MAgPIE License Exception to AGPL 3.0"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "magpie-exception-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-magpie-exception-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "MAgPIE Exception to AGPL 3.0",
+        "MAgPIE License Exception to AGPL 3.0"
+    ],
+    "isMajorVersionOnly": true
 }

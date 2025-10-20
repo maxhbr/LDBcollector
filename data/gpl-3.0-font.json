@@ -1,13 +1,15 @@
 {
-  "canonical": "gpl-3.0-font",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 3.0 or later with font exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gpl-3.0-font",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 3.0 or later with font exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

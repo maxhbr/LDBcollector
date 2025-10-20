@@ -1,14 +1,16 @@
 {
-  "canonical": "dl-de-by-nc-1-0-de",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Datenlizenz Deutschland - Namensnennung - nicht kommerziell - Version 1.0 - Deutsch",
-      "dl-de/by-nc-1-0-de",
-      "LicenseRef-scancode-dl-de-by-nc-1-0-de"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "dl-de-by-nc-1-0-de",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Datenlizenz Deutschland - Namensnennung - nicht kommerziell - Version 1.0 - Deutsch",
+            "dl-de/by-nc-1-0-de",
+            "LicenseRef-scancode-dl-de-by-nc-1-0-de"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

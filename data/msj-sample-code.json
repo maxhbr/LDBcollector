@@ -1,14 +1,16 @@
 {
-  "canonical": "msj-sample-code",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Systems Journal Sample Code License",
-      "MS Systems Journal Sample Code License",
-      "LicenseRef-scancode-msj-sample-code"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "msj-sample-code",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Systems Journal Sample Code License",
+            "MS Systems Journal Sample Code License",
+            "LicenseRef-scancode-msj-sample-code"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

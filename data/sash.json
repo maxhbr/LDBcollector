@@ -1,13 +1,15 @@
 {
-  "canonical": "sash",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sash Notice",
-      "LicenseRef-scancode-sash"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sash",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sash Notice",
+            "LicenseRef-scancode-sash"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

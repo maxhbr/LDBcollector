@@ -1,15 +1,17 @@
 {
-  "canonical": "ogl-1.0a",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Open Game License v1.0a",
-      "OGL 1.0a",
-      "LicenseRef-scancode-ogl-1.0a"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ogl-1.0a",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Open Game License v1.0a",
+            "OGL 1.0a",
+            "LicenseRef-scancode-ogl-1.0a"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

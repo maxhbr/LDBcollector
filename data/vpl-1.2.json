@@ -1,15 +1,17 @@
 {
-  "canonical": "vpl-1.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "VPL 1.2",
-      "Vtiger Public License 1.2",
-      "LicenseRef-scancode-vpl-1.2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "vpl-1.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "VPL 1.2",
+            "Vtiger Public License 1.2",
+            "LicenseRef-scancode-vpl-1.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

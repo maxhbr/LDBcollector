@@ -12,8 +12,8 @@ from src.load.merge_data import read_data, write_data, main
 @pytest.fixture
 def data_dir(tmpdir):
     data = {
-        "license1.json": {"canonical": "license1", "aliases": {"SPDX": ["lic1"], "custom": ["lic1_custom"]}, "risky": ["lic1_risky"]},
-        "license2.json": {"canonical": "license2", "aliases": {"SPDX": ["lic2", "lic2_alt"]}}
+        "license1.json": {"canonical": {"id": "license1"}, "aliases": {"SPDX": ["lic1"], "custom": ["lic1_custom"]}, "risky": ["lic1_risky"]},
+        "license2.json": {"canonical": {"id": "license2"}, "aliases": {"SPDX": ["lic2", "lic2_alt"]}}
     }
     for filename, content in data.items():
         filepath = tmpdir.join(filename)
@@ -58,21 +58,25 @@ def temp_data_dir():
     with tempfile.TemporaryDirectory() as temp_dir:
         # Create sample JSON files
         license_1 = {
-            "canonical": "MIT",
+            "canonical": {
+                "id": "MIT",
+                "src": "spdx"
+            },
             "aliases": {
                 "source1": ["MIT License", "MIT Open Source License"],
                 "source2": ["MIT"]
             },
-            "src": "spdx"
         }
 
         license_2 = {
-            "canonical": "GPL",
+            "canonical": {
+                "id": "GPL",
+                "src": "spdx",
+            },
             "aliases": {
                 "source1": ["GNU General Public License", "GPL v3"],
                 "source2": ["GPLv3"]
             },
-            "src": "spdx",
             "risky": [
                 "risky_gpl_3"
             ]
@@ -115,37 +119,37 @@ def test_main_integration(temp_data_dir, temp_output_file, monkeypatch):
     expected_output = {
         "stableMap": {
             "MIT": {
-                "canonical": "MIT",
+                "id": "MIT",
                 "src": "spdx"
             },
             "MIT License": {
-                "canonical": "MIT",
+                "id": "MIT",
                 "src": "spdx"
             },
             "MIT Open Source License": {
-                "canonical": "MIT",
+                "id": "MIT",
                 "src": "spdx"
             },
             "GNU General Public License": {
-                "canonical": "GPL",
+                "id": "GPL",
                 "src": "spdx"
             },
             "GPL v3": {
-                "canonical": "GPL",
+                "id": "GPL",
                 "src": "spdx"
             },
             "GPLv3": {
-                "canonical": "GPL",
+                "id": "GPL",
                 "src": "spdx"
             },
             "GPL": {
-                "canonical": "GPL",
+                "id": "GPL",
                 "src": "spdx"
             },
         },
         'riskyMap': {
             "risky_gpl_3": {
-                "canonical": "GPL",
+                "id": "GPL",
                 "src": "spdx"
             }
         }

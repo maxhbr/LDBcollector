@@ -1,13 +1,15 @@
 {
-  "canonical": "onezoom-np-sal-v1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-onezoom-np-sal-v1",
-      "OneZoom Non-Profit Source Available Licence v1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "onezoom-np-sal-v1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-onezoom-np-sal-v1",
+            "OneZoom Non-Profit Source Available Licence v1"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

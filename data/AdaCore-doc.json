@@ -1,15 +1,17 @@
 {
-  "canonical": "AdaCore-doc",
-  "aliases": {
-    "spdx": [
-      "AdaCore Doc License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "adacore-doc"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "AdaCore-doc",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "AdaCore Doc License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "adacore-doc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

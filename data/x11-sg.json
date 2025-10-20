@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-sg",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11-Style (Silicon Graphics)",
-      "LicenseRef-scancode-x11-sg"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-sg",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11-Style (Silicon Graphics)",
+            "LicenseRef-scancode-x11-sg"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

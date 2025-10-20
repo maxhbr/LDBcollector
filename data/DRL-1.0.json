@@ -1,17 +1,19 @@
 {
-  "canonical": "DRL-1.0",
-  "aliases": {
-    "spdx": [
-      "Detection Rule License 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "drl-1.0",
-      "DRL-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "DRL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Detection Rule License 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "drl-1.0",
+            "DRL-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

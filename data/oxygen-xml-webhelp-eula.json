@@ -1,14 +1,16 @@
 {
-  "canonical": "oxygen-xml-webhelp-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Oxygen XML WebHelp EULA",
-      "Oxygen XML WebHelp End-User License Agreement",
-      "LicenseRef-scancode-oxygen-xml-webhelp-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "oxygen-xml-webhelp-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Oxygen XML WebHelp EULA",
+            "Oxygen XML WebHelp End-User License Agreement",
+            "LicenseRef-scancode-oxygen-xml-webhelp-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

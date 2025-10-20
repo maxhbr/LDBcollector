@@ -1,14 +1,16 @@
 {
-  "canonical": "android-sdk-2009",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Android Software Development Kit License Agreement 2009",
-      "Android SDK License 2009",
-      "LicenseRef-scancode-android-sdk-2009"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "android-sdk-2009",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Android Software Development Kit License Agreement 2009",
+            "Android SDK License 2009",
+            "LicenseRef-scancode-android-sdk-2009"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

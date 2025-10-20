@@ -1,15 +1,17 @@
 {
-  "canonical": "mule-source-1.1.4",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Mule Source PL 1.1.4",
-      "Mule Source Public License 1.1.4",
-      "LicenseRef-scancode-mule-source-1.1.4"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "mule-source-1.1.4",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Mule Source PL 1.1.4",
+            "Mule Source Public License 1.1.4",
+            "LicenseRef-scancode-mule-source-1.1.4"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

@@ -1,18 +1,20 @@
 {
-  "canonical": "BSD-3-Clause-flex",
-  "aliases": {
-    "spdx": [
-      "BSD 3-Clause Flex variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-flex-2.5",
-      "flex-2.5",
-      "Flex 2.5",
-      "Flex License v2.5"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-3-Clause-flex",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause Flex variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-flex-2.5",
+            "flex-2.5",
+            "Flex 2.5",
+            "Flex License v2.5"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

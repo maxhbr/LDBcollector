@@ -1,13 +1,15 @@
 {
-  "canonical": "dune-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "DUNE exception to the GPL",
-      "LicenseRef-scancode-dune-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "dune-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "DUNE exception to the GPL",
+            "LicenseRef-scancode-dune-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

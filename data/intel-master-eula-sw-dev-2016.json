@@ -1,14 +1,16 @@
 {
-  "canonical": "intel-master-eula-sw-dev-2016",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Intel Master EULA for SW Dev 2016",
-      "Intel Master EULA for SW Development Products March 2016",
-      "LicenseRef-scancode-intel-master-eula-sw-dev-2016"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "intel-master-eula-sw-dev-2016",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Intel Master EULA for SW Dev 2016",
+            "Intel Master EULA for SW Development Products March 2016",
+            "LicenseRef-scancode-intel-master-eula-sw-dev-2016"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

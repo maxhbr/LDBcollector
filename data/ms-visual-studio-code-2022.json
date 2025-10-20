@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-visual-studio-code-2022",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Visual Studio Code License 2022",
-      "Microsoft Visual Studio Code License 2022",
-      "LicenseRef-scancode-ms-visual-studio-code-2022"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-visual-studio-code-2022",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Visual Studio Code License 2022",
+            "Microsoft Visual Studio Code License 2022",
+            "LicenseRef-scancode-ms-visual-studio-code-2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "jamon",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "JAMon License",
-      "LicenseRef-scancode-jamon"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "jamon",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "JAMon License",
+            "LicenseRef-scancode-jamon"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "adobe-flash-player-eula-21.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adobe Flash Player EULA 21.0",
-      "LicenseRef-scancode-adobe-flash-player-eula-21.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "adobe-flash-player-eula-21.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe Flash Player EULA 21.0",
+            "LicenseRef-scancode-adobe-flash-player-eula-21.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

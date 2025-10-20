@@ -1,14 +1,16 @@
 {
-  "canonical": "t-license-2.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "T-License 2.2",
-      "LicenseRef-scancode-t-license-2.2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "t-license-2.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "T-License 2.2",
+            "LicenseRef-scancode-t-license-2.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

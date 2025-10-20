@@ -1,16 +1,18 @@
 {
-  "canonical": "BSD-2-Clause-first-lines",
-  "aliases": {
-    "spdx": [
-      "BSD 2-Clause - first lines requirement"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "BSD 2-Clause first lines",
-      "bsd-2-clause-first-lines"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-2-Clause-first-lines",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause - first lines requirement"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "BSD 2-Clause first lines",
+            "bsd-2-clause-first-lines"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

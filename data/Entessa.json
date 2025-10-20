@@ -1,19 +1,21 @@
 {
-  "canonical": "Entessa",
-  "aliases": {
-    "spdx": [
-      "Entessa Public License v1.0"
-    ],
-    "custom": [],
-    "osi": [
-      "Entessa Public License"
-    ],
-    "scancodeLicensedb": [
-      "entessa-1.0",
-      "Entessa 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Entessa",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Entessa Public License v1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Entessa Public License"
+        ],
+        "scancodeLicensedb": [
+            "entessa-1.0",
+            "Entessa 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

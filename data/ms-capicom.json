@@ -1,13 +1,15 @@
 {
-  "canonical": "ms-capicom",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft CAPICOM License",
-      "LicenseRef-scancode-ms-capicom"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-capicom",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft CAPICOM License",
+            "LicenseRef-scancode-ms-capicom"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

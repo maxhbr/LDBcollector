@@ -1,17 +1,19 @@
 {
-  "canonical": "GD",
-  "aliases": {
-    "spdx": [
-      "GD License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-libgd-2018",
-      "libgd-2018",
-      "libgd License 2018"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "GD",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GD License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-libgd-2018",
+            "libgd-2018",
+            "libgd License 2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

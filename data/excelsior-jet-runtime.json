@@ -1,13 +1,15 @@
 {
-  "canonical": "excelsior-jet-runtime",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Excelsior JET Runtime License",
-      "LicenseRef-scancode-excelsior-jet-runtime"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "excelsior-jet-runtime",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Excelsior JET Runtime License",
+            "LicenseRef-scancode-excelsior-jet-runtime"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

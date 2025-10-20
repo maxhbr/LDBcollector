@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-eula-win-script-host",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS EULA for Windows Script Host",
-      "Microsoft EULA for Windows Script Host",
-      "LicenseRef-scancode-ms-eula-win-script-host"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-eula-win-script-host",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS EULA for Windows Script Host",
+            "Microsoft EULA for Windows Script Host",
+            "LicenseRef-scancode-ms-eula-win-script-host"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

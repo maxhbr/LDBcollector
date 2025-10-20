@@ -1,5 +1,8 @@
 {
-    "canonical": "Motosoto",
+    "canonical": {
+        "id": "Motosoto",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Motosoto License"
@@ -19,7 +22,6 @@
             "License :: OSI Approved :: Motosoto License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

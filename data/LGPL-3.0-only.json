@@ -1,52 +1,54 @@
 {
-  "canonical": "LGPL-3.0-only",
-  "aliases": {
-    "spdx": [
-      "GNU Lesser General Public License v3.0 only",
-      "LGPL-3.0"
+    "canonical": {
+        "id": "LGPL-3.0-only",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GNU Lesser General Public License v3.0 only",
+            "LGPL-3.0"
+        ],
+        "custom": [
+            "LGPL 3.0 only",
+            "LGPL v3.0 only",
+            "GNU LGPL v3.0 only",
+            "LGPL v3.0",
+            "LGPL 3.0 (only)",
+            "GNU LGPL 3.0 (only)",
+            "LGPL-3.0 (only)",
+            "LGPL-3.0-only License",
+            "LGPL 3.0 License (only)",
+            "LGPL v3.0 License (only)"
+        ],
+        "osi": [
+            "GNU Lesser General Public License, Version 3.0"
+        ],
+        "scancodeLicensedb": [
+            "LGPL 3.0",
+            "GNU Lesser General Public License 3.0",
+            "lgpl-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "LGPLv3-only",
+        "LGPL v3 only",
+        "LGPLv3 only",
+        "LGPLv3",
+        "LGPLv3 (only)",
+        "LGPL-3",
+        "LGPL3",
+        "License :: GNU Lesser General Public License v3 (LGPLv3)",
+        "OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+        "License :: OSI Approved :: GNU Lesser General Public License v3",
+        "License :: GNU Lesser General Public License v3",
+        "OSI Approved :: GNU Lesser General Public License v3",
+        "License :: OSI Approved :: LGPLv3",
+        "License :: LGPLv3",
+        "OSI Approved :: LGPLv3",
+        "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+        "GNU Lesser General Public License v3",
+        "GNU Lesser General Public License v3 (LGPLv3)"
     ],
-    "custom": [
-      "LGPL 3.0 only",
-      "LGPL v3.0 only",
-      "GNU LGPL v3.0 only",
-      "LGPL v3.0",
-      "LGPL 3.0 (only)",
-      "GNU LGPL 3.0 (only)",
-      "LGPL-3.0 (only)",
-      "LGPL-3.0-only License",
-      "LGPL 3.0 License (only)",
-      "LGPL v3.0 License (only)"
-    ],
-    "osi": [
-      "GNU Lesser General Public License, Version 3.0"
-    ],
-    "scancodeLicensedb": [
-      "LGPL 3.0",
-      "GNU Lesser General Public License 3.0",
-      "lgpl-3.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "LGPLv3-only",
-    "LGPL v3 only",
-    "LGPLv3 only",
-    "LGPLv3",
-    "LGPLv3 (only)",
-    "LGPL-3",
-    "LGPL3",
-    "License :: GNU Lesser General Public License v3 (LGPLv3)",
-    "OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
-    "License :: OSI Approved :: GNU Lesser General Public License v3",
-    "License :: GNU Lesser General Public License v3",
-    "OSI Approved :: GNU Lesser General Public License v3",
-    "License :: OSI Approved :: LGPLv3",
-    "License :: LGPLv3",
-    "OSI Approved :: LGPLv3",
-    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
-    "GNU Lesser General Public License v3",
-    "GNU Lesser General Public License v3 (LGPLv3)"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "cmu-flite",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Carnegie Mellon University Flite License",
-      "CMU Flite License",
-      "LicenseRef-scancode-cmu-flite"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cmu-flite",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Carnegie Mellon University Flite License",
+            "CMU Flite License",
+            "LicenseRef-scancode-cmu-flite"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

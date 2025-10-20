@@ -1,15 +1,17 @@
 {
-  "canonical": "canonical-ha-cla-any-i-v1.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Canonical-HA-CLA-ANY-I_v1.2",
-      "Canonical Individual Contributor License Agreement v1.2",
-      "LicenseRef-scancode-canonical-ha-cla-any-i-v1.2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "canonical-ha-cla-any-i-v1.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Canonical-HA-CLA-ANY-I_v1.2",
+            "Canonical Individual Contributor License Agreement v1.2",
+            "LicenseRef-scancode-canonical-ha-cla-any-i-v1.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

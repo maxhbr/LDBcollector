@@ -1,14 +1,16 @@
 {
-  "canonical": "google-playcore-sdk-tos-2020",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Google",
-      "Google Play Core SDK TOS 2020",
-      "LicenseRef-scancode-google-playcore-sdk-tos-2020"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "google-playcore-sdk-tos-2020",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Google",
+            "Google Play Core SDK TOS 2020",
+            "LicenseRef-scancode-google-playcore-sdk-tos-2020"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "telerik-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Telerik EULA",
-      "LicenseRef-scancode-telerik-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "telerik-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Telerik EULA",
+            "LicenseRef-scancode-telerik-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,18 +1,20 @@
 {
-  "canonical": "BitTorrent-1.0",
-  "aliases": {
-    "spdx": [
-      "BitTorrent Open Source License v1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "BitTorrent Open Source License 1.0",
-      "bittorrent-1.0",
-      "BitTorrent 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "BitTorrent-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BitTorrent Open Source License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "BitTorrent Open Source License 1.0",
+            "bittorrent-1.0",
+            "BitTorrent 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "bigscience-open-rail-m",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BigScience Open RAIL-M License",
-      "LicenseRef-scancode-bigscience-open-rail-m"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bigscience-open-rail-m",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BigScience Open RAIL-M License",
+            "LicenseRef-scancode-bigscience-open-rail-m"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

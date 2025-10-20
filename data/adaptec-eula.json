@@ -1,13 +1,15 @@
 {
-  "canonical": "adaptec-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adaptec EULA",
-      "LicenseRef-scancode-adaptec-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adaptec-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adaptec EULA",
+            "LicenseRef-scancode-adaptec-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

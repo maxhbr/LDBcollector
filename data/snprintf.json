@@ -1,16 +1,18 @@
 {
-  "canonical": "snprintf",
-  "aliases": {
-    "spdx": [
-      "snprintf License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "snprintf",
-      "LicenseRef-scancode-snprintf"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "snprintf",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "snprintf License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "snprintf",
+            "LicenseRef-scancode-snprintf"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

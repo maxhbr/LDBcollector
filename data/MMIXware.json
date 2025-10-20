@@ -1,15 +1,17 @@
 {
-  "canonical": "MMIXware",
-  "aliases": {
-    "spdx": [
-      "MMIXware License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "mmixware"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "MMIXware",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "MMIXware License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "mmixware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

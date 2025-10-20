@@ -1,18 +1,20 @@
 {
-  "canonical": "NBPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Net Boolean Public License v1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "nbpl-1.0",
-      "NBPL-1.0",
-      "Net Boolean Public License 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "NBPL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Net Boolean Public License v1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "nbpl-1.0",
+            "NBPL-1.0",
+            "Net Boolean Public License 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

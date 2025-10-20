@@ -1,16 +1,18 @@
 {
-  "canonical": "LLVM-exception",
-  "aliases": {
-    "spdx": [
-      "LLVM Exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LLVM Exception to Apache 2.0",
-      "llvm-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "LLVM-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "LLVM Exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LLVM Exception to Apache 2.0",
+            "llvm-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

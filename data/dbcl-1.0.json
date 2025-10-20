@@ -1,15 +1,17 @@
 {
-  "canonical": "dbcl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "DbCL 1.0",
-      "ODC Database Contents License v1.0",
-      "LicenseRef-scancode-dbcl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "dbcl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "DbCL 1.0",
+            "ODC Database Contents License v1.0",
+            "LicenseRef-scancode-dbcl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

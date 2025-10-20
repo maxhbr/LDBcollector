@@ -1,5 +1,8 @@
 {
-    "canonical": "RSCPL",
+    "canonical": {
+        "id": "RSCPL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Ricoh Source Code Public License"
@@ -19,7 +22,6 @@
             "License :: Ricoh Source Code Public License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

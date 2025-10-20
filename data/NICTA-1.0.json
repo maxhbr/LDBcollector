@@ -1,19 +1,21 @@
 {
-  "canonical": "NICTA-1.0",
-  "aliases": {
-    "spdx": [
-      "NICTA Public Software License, Version 1.0"
+    "canonical": {
+        "id": "NICTA-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "NICTA Public Software License, Version 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "NICTA Public Software Licence 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "LicenseRef-scancode-nicta-psl",
+        "nicta-psl"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "NICTA Public Software Licence 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "LicenseRef-scancode-nicta-psl",
-    "nicta-psl"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

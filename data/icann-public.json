@@ -1,13 +1,15 @@
 {
-  "canonical": "icann-public",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ICANN-Public",
-      "LicenseRef-scancode-icann-public"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "icann-public",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ICANN-Public",
+            "LicenseRef-scancode-icann-public"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

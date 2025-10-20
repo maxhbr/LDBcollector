@@ -1,13 +1,15 @@
 {
-  "canonical": "crcalc",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CRCalc license",
-      "LicenseRef-scancode-crcalc"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "crcalc",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CRCalc license",
+            "LicenseRef-scancode-crcalc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

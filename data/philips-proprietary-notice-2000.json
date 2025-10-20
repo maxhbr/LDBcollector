@@ -1,14 +1,16 @@
 {
-  "canonical": "philips-proprietary-notice-2000",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-philips-proprietary-notice-2000",
-      "Philips Proprietary Notice 2000",
-      "LicenseRef-scancode-philips-proprietary-notice2000"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "philips-proprietary-notice-2000",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-philips-proprietary-notice-2000",
+            "Philips Proprietary Notice 2000",
+            "LicenseRef-scancode-philips-proprietary-notice2000"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

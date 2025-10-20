@@ -1,13 +1,15 @@
 {
-  "canonical": "red-hat-logos",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Red Hat Logos License",
-      "LicenseRef-scancode-red-hat-logos"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "red-hat-logos",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Red Hat Logos License",
+            "LicenseRef-scancode-red-hat-logos"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "phil-bunce",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Phil Bunce License",
-      "LicenseRef-scancode-phil-bunce"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "phil-bunce",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Phil Bunce License",
+            "LicenseRef-scancode-phil-bunce"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

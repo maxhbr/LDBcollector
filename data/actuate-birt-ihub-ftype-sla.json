@@ -1,14 +1,16 @@
 {
-  "canonical": "actuate-birt-ihub-ftype-sla",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BIRT iHub F-Type Software License Agreement",
-      "Actuate Corporation BIRT iHub F-Type Software License Agreement",
-      "LicenseRef-scancode-actuate-birt-ihub-ftype-sla"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "actuate-birt-ihub-ftype-sla",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BIRT iHub F-Type Software License Agreement",
+            "Actuate Corporation BIRT iHub F-Type Software License Agreement",
+            "LicenseRef-scancode-actuate-birt-ihub-ftype-sla"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "zlib-acknowledgement",
-  "aliases": {
-    "spdx": [
-      "zlib/libpng License with Acknowledgement"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Nunit",
-      "ZLIB License with Acknowledgment",
-      "zlib-acknowledgement"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "zlib-acknowledgement",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "zlib/libpng License with Acknowledgement"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Nunit",
+            "ZLIB License with Acknowledgment",
+            "zlib-acknowledgement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

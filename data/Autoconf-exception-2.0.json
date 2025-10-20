@@ -1,17 +1,19 @@
 {
-  "canonical": "Autoconf-exception-2.0",
-  "aliases": {
-    "spdx": [
-      "Autoconf exception 2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "autoconf-exception-2.0",
-      "Autoconf exception to GPL 2.0 or later"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Autoconf-exception-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Autoconf exception 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "autoconf-exception-2.0",
+            "Autoconf exception to GPL 2.0 or later"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

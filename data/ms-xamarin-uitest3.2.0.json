@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-xamarin-uitest3.2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Xamarin.UITest 3.2.0",
-      "Microsoft Xamarin.UITest 3.2.0",
-      "LicenseRef-scancode-ms-xamarin-uitest3.2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-xamarin-uitest3.2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Xamarin.UITest 3.2.0",
+            "Microsoft Xamarin.UITest 3.2.0",
+            "LicenseRef-scancode-ms-xamarin-uitest3.2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

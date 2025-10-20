@@ -1,16 +1,18 @@
 {
-  "canonical": "diffmark",
-  "aliases": {
-    "spdx": [
-      "diffmark license"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "diffmark",
-      "diffmark License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "diffmark",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "diffmark license"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "diffmark",
+            "diffmark License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

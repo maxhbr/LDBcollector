@@ -1,13 +1,15 @@
 {
-  "canonical": "cexcept-2008",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "cexcept License 2008",
-      "LicenseRef-scancode-cexcept-2008"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cexcept-2008",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "cexcept License 2008",
+            "LicenseRef-scancode-cexcept-2008"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

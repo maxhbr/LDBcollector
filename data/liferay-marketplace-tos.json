@@ -1,14 +1,16 @@
 {
-  "canonical": "liferay-marketplace-tos",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Liferay Marketplace Terms of Service Agreement",
-      "Liferay Marketplace TOS",
-      "LicenseRef-scancode-liferay-marketplace-tos"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "liferay-marketplace-tos",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Liferay Marketplace Terms of Service Agreement",
+            "Liferay Marketplace TOS",
+            "LicenseRef-scancode-liferay-marketplace-tos"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

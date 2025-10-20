@@ -1,14 +1,16 @@
 {
-  "canonical": "qskinny-exception-lgpl-2.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "QSkinny Exception to LGPL 2.1",
-      "LicenseRef-scancode-qskinny-exception-lgpl-2.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "qskinny-exception-lgpl-2.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "QSkinny Exception to LGPL 2.1",
+            "LicenseRef-scancode-qskinny-exception-lgpl-2.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

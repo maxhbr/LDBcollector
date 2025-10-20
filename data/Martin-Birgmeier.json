@@ -1,17 +1,19 @@
 {
-  "canonical": "Martin-Birgmeier",
-  "aliases": {
-    "spdx": [
-      "Martin Birgmeier License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "martin-birgmeier",
-      "Martin Bergmeier License",
-      "LicenseRef-scancode-martin-birgmeier"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Martin-Birgmeier",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Martin Birgmeier License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "martin-birgmeier",
+            "Martin Bergmeier License",
+            "LicenseRef-scancode-martin-birgmeier"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "databricks-dbx-2021",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-databricks-dbx-2021",
-      "DataBricks eXtensions aka dbx 2021"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "databricks-dbx-2021",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-databricks-dbx-2021",
+            "DataBricks eXtensions aka dbx 2021"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

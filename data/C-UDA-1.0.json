@@ -1,16 +1,18 @@
 {
-  "canonical": "C-UDA-1.0",
-  "aliases": {
-    "spdx": [
-      "Computational Use of Data Agreement v1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "c-uda-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "C-UDA-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Computational Use of Data Agreement v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "c-uda-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

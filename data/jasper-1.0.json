@@ -1,15 +1,17 @@
 {
-  "canonical": "jasper-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Jasper 1.0",
-      "Jasper Reports License 1.0",
-      "LicenseRef-scancode-jasper-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "jasper-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Jasper 1.0",
+            "Jasper Reports License 1.0",
+            "LicenseRef-scancode-jasper-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

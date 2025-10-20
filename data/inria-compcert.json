@@ -1,14 +1,16 @@
 {
-  "canonical": "inria-compcert",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-inria-compcert",
-      "INRIA NCLA CompCert",
-      "INRIA Non-Commercial License Agreement for the CompCert verified compiler"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "inria-compcert",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-inria-compcert",
+            "INRIA NCLA CompCert",
+            "INRIA Non-Commercial License Agreement for the CompCert verified compiler"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

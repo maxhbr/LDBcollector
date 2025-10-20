@@ -1,15 +1,17 @@
 {
-  "canonical": "NRL",
-  "aliases": {
-    "spdx": [
-      "NRL License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "nrl"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "NRL",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "NRL License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "nrl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

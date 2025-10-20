@@ -1,13 +1,15 @@
 {
-  "canonical": "gpl-2.0-independent-module-linking",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 2.0 with Independent Module Linking exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gpl-2.0-independent-module-linking",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 with Independent Module Linking exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

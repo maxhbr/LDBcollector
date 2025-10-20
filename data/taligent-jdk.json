@@ -1,13 +1,15 @@
 {
-  "canonical": "taligent-jdk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Taligent JDK Proprietary Notice",
-      "LicenseRef-scancode-taligent-jdk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "taligent-jdk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Taligent JDK Proprietary Notice",
+            "LicenseRef-scancode-taligent-jdk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

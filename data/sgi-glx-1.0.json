@@ -1,15 +1,17 @@
 {
-  "canonical": "sgi-glx-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SGI GLX Public License 1.0",
-      "SGI GLX Public License v1.0",
-      "LicenseRef-scancode-sgi-glx-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "sgi-glx-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SGI GLX Public License 1.0",
+            "SGI GLX Public License v1.0",
+            "LicenseRef-scancode-sgi-glx-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

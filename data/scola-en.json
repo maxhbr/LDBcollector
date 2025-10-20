@@ -1,13 +1,15 @@
 {
-  "canonical": "scola-en",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Statistics Canada Open Licence Agreement",
-      "LicenseRef-scancode-scola-en"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "scola-en",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Statistics Canada Open Licence Agreement",
+            "LicenseRef-scancode-scola-en"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "gpl-2.0-libtool",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 2.0 with GNU Libtool exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gpl-2.0-libtool",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 with GNU Libtool exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

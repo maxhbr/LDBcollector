@@ -1,14 +1,16 @@
 {
-  "canonical": "lens-tos-2023",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Lens Terms of Service Agreement 2023",
-      "Lens TOS 2023",
-      "LicenseRef-scancode-lens-tos-2023"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "lens-tos-2023",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Lens Terms of Service Agreement 2023",
+            "Lens TOS 2023",
+            "LicenseRef-scancode-lens-tos-2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

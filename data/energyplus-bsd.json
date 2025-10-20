@@ -1,13 +1,15 @@
 {
-  "canonical": "energyplus-bsd",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "EnergyPlus BSD-Style License",
-      "LicenseRef-scancode-energyplus-bsd"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "energyplus-bsd",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "EnergyPlus BSD-Style License",
+            "LicenseRef-scancode-energyplus-bsd"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

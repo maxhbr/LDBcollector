@@ -1,14 +1,16 @@
 {
-  "canonical": "volla-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Volla Licence 1.0",
-      "LicenseRef-scancode-volla-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "volla-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Volla Licence 1.0",
+            "LicenseRef-scancode-volla-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

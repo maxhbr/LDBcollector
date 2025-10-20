@@ -1,13 +1,15 @@
 {
-  "canonical": "fastbuild-2012-2020",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "FASTBuild License 2012-2020",
-      "LicenseRef-scancode-fastbuild-2012-2020"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "fastbuild-2012-2020",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "FASTBuild License 2012-2020",
+            "LicenseRef-scancode-fastbuild-2012-2020"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "red-hat-trademarks",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Red Hat Trademarks License",
-      "LicenseRef-scancode-red-hat-trademarks"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "red-hat-trademarks",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Red Hat Trademarks License",
+            "LicenseRef-scancode-red-hat-trademarks"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

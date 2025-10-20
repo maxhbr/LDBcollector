@@ -1,15 +1,17 @@
 {
-  "canonical": "Latex2e",
-  "aliases": {
-    "spdx": [
-      "Latex2e License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "latex2e"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Latex2e",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Latex2e License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "latex2e"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

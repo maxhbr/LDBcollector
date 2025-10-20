@@ -1,15 +1,17 @@
 {
-  "canonical": "cc-by-nc-sa-3.0-us",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Creative Commons Attribution Non-Commercial Share Alike License 3.0 US",
-      "CC-BY-NC-SA-3.0-US",
-      "LicenseRef-scancode-cc-by-nc-sa-3.0-us"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "cc-by-nc-sa-3.0-us",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Creative Commons Attribution Non-Commercial Share Alike License 3.0 US",
+            "CC-BY-NC-SA-3.0-US",
+            "LicenseRef-scancode-cc-by-nc-sa-3.0-us"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

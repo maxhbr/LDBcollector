@@ -1,5 +1,8 @@
 {
-    "canonical": "Zlib",
+    "canonical": {
+        "id": "Zlib",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "zlib License"
@@ -36,7 +39,6 @@
             "License :: OSI Approved :: zlib/libpng License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

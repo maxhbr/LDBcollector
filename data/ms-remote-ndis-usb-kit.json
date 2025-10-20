@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-remote-ndis-usb-kit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Remote NDIS USB Kit EULA",
-      "Microsoft Remote NDIS USB Kit EULA",
-      "LicenseRef-scancode-ms-remote-ndis-usb-kit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-remote-ndis-usb-kit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Remote NDIS USB Kit EULA",
+            "Microsoft Remote NDIS USB Kit EULA",
+            "LicenseRef-scancode-ms-remote-ndis-usb-kit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

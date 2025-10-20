@@ -1,13 +1,15 @@
 {
-  "canonical": "stable-diffusion-2022-08-22",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Stable Diffusion License 2022-08-22",
-      "LicenseRef-scancode-stable-diffusion-2022-08-22"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "stable-diffusion-2022-08-22",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Stable Diffusion License 2022-08-22",
+            "LicenseRef-scancode-stable-diffusion-2022-08-22"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

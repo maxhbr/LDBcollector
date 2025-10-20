@@ -1,14 +1,16 @@
 {
-  "canonical": "sencha-commercial",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sencha Commercial License v1.1",
-      "Sencha Commercial License 1.1",
-      "LicenseRef-scancode-sencha-commercial"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sencha-commercial",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sencha Commercial License v1.1",
+            "Sencha Commercial License 1.1",
+            "LicenseRef-scancode-sencha-commercial"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

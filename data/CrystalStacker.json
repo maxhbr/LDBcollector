@@ -1,16 +1,18 @@
 {
-  "canonical": "CrystalStacker",
-  "aliases": {
-    "spdx": [
-      "CrystalStacker License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Crystal Stacker License",
-      "crystal-stacker"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "CrystalStacker",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "CrystalStacker License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Crystal Stacker License",
+            "crystal-stacker"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,14 @@
 {
-    "canonical": "wwl",
+    "canonical": {
+        "id": "wwl",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "WWL License"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

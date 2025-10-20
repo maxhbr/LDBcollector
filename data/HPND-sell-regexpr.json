@@ -1,17 +1,19 @@
 {
-  "canonical": "HPND-sell-regexpr",
-  "aliases": {
-    "spdx": [
-      "Historical Permission Notice and Disclaimer - sell regexpr variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "hpnd-sell-regexpr",
-      "Historical sell regexpr variant",
-      "Historical Permission Notice and Disclaimer sell regexpr variant"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HPND-sell-regexpr",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - sell regexpr variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "hpnd-sell-regexpr",
+            "Historical sell regexpr variant",
+            "Historical Permission Notice and Disclaimer sell regexpr variant"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

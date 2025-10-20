@@ -1,9 +1,11 @@
 {
-    "canonical": "lgpl-2.1-nokia-qt-1.1",
+    "canonical": {
+        "id": "lgpl-2.1-nokia-qt-1.1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
         "custom": []
     },
-    "src": "scancode-licensedb",
     "rejected": [],
     "risky": [
         "Nokia Qt LGPL Exception v1.1",

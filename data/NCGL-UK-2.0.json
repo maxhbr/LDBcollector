@@ -1,16 +1,18 @@
 {
-  "canonical": "NCGL-UK-2.0",
-  "aliases": {
-    "spdx": [
-      "Non-Commercial Government Licence"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ncgl-uk-2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "NCGL-UK-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Non-Commercial Government Licence"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ncgl-uk-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

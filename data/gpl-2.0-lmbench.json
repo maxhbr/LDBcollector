@@ -1,13 +1,15 @@
 {
-  "canonical": "gpl-2.0-lmbench",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 2.0 with LMBench exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gpl-2.0-lmbench",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 with LMBench exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

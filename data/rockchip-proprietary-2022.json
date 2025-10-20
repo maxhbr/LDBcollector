@@ -1,13 +1,15 @@
 {
-  "canonical": "rockchip-proprietary-2022",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Rockchip Proprietary 2022",
-      "LicenseRef-scancode-rockchip-proprietary-2022"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rockchip-proprietary-2022",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Rockchip Proprietary 2022",
+            "LicenseRef-scancode-rockchip-proprietary-2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

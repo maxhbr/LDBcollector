@@ -1,13 +1,15 @@
 {
-  "canonical": "vs10x-code-map",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "VS10x Code Map",
-      "LicenseRef-scancode-vs10x-code-map"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "vs10x-code-map",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "VS10x Code Map",
+            "LicenseRef-scancode-vs10x-code-map"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "kde-accepted-gpl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-KDE-Accepted-GPL",
-      "KDE Accepted GPL",
-      "LicenseRef-scancode-kde-accepted-gpl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "kde-accepted-gpl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-KDE-Accepted-GPL",
+            "KDE Accepted GPL",
+            "LicenseRef-scancode-kde-accepted-gpl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

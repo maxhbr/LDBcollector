@@ -1,14 +1,16 @@
 {
-  "canonical": "otn-standard-2014-09",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OTN License 2014-09",
-      "Oracle Technology Network License Agreement 2014-09",
-      "LicenseRef-scancode-otn-standard-2014-09"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "otn-standard-2014-09",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OTN License 2014-09",
+            "Oracle Technology Network License Agreement 2014-09",
+            "LicenseRef-scancode-otn-standard-2014-09"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

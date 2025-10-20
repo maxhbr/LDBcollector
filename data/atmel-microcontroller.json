@@ -1,13 +1,15 @@
 {
-  "canonical": "atmel-microcontroller",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Atmel Microcontroller License",
-      "LicenseRef-scancode-atmel-microcontroller"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "atmel-microcontroller",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Atmel Microcontroller License",
+            "LicenseRef-scancode-atmel-microcontroller"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

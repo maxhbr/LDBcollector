@@ -1,13 +1,15 @@
 {
-  "canonical": "zveno-research",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Zveno Research License",
-      "LicenseRef-scancode-zveno-research"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "zveno-research",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Zveno Research License",
+            "LicenseRef-scancode-zveno-research"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

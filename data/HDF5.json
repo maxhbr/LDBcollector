@@ -1,17 +1,19 @@
 {
-  "canonical": "HDF5",
-  "aliases": {
-    "custom": [],
-    "spdx": [
-      "HDF5 License"
-    ],
-    "scancodeLicensedb": [
-      "HDF5License",
-      "LicenseRef-scancode-hdf5",
-      "hdf5"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HDF5",
+        "src": "spdx"
+    },
+    "aliases": {
+        "custom": [],
+        "spdx": [
+            "HDF5 License"
+        ],
+        "scancodeLicensedb": [
+            "HDF5License",
+            "LicenseRef-scancode-hdf5",
+            "hdf5"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

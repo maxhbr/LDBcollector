@@ -1,15 +1,17 @@
 {
-  "canonical": "oll-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Open Logistics License Version 1.0",
-      "OLL-1.0",
-      "LicenseRef-scancode-oll-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "oll-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Open Logistics License Version 1.0",
+            "OLL-1.0",
+            "LicenseRef-scancode-oll-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

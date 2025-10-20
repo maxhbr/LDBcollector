@@ -1,13 +1,15 @@
 {
-  "canonical": "rubyencoder-loader",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "RubyEncoder Loader Licence",
-      "LicenseRef-scancode-rubyencoder-loader"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rubyencoder-loader",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "RubyEncoder Loader Licence",
+            "LicenseRef-scancode-rubyencoder-loader"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

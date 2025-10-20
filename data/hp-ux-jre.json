@@ -1,14 +1,16 @@
 {
-  "canonical": "hp-ux-jre",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Hewlett Packard JRE License",
-      "HP JRE License",
-      "LicenseRef-scancode-hp-ux-jre"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "hp-ux-jre",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Hewlett Packard JRE License",
+            "HP JRE License",
+            "LicenseRef-scancode-hp-ux-jre"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "huggingface-tos-20220915",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "HuggingFace Terms of Service 2022-09-15",
-      "HuggingFace TOS 2022-09-15",
-      "LicenseRef-scancode-huggingface-tos-20220915"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "huggingface-tos-20220915",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "HuggingFace Terms of Service 2022-09-15",
+            "HuggingFace TOS 2022-09-15",
+            "LicenseRef-scancode-huggingface-tos-20220915"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

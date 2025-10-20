@@ -1,13 +1,15 @@
 {
-  "canonical": "dante-treglia",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Dante Treglia License",
-      "LicenseRef-scancode-dante-treglia"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "dante-treglia",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Dante Treglia License",
+            "LicenseRef-scancode-dante-treglia"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

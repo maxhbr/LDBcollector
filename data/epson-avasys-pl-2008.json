@@ -1,13 +1,15 @@
 {
-  "canonical": "epson-avasys-pl-2008",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Epson AVASYS Public License 2008",
-      "LicenseRef-scancode-epson-avasys-pl-2008"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "epson-avasys-pl-2008",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Epson AVASYS Public License 2008",
+            "LicenseRef-scancode-epson-avasys-pl-2008"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

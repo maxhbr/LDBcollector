@@ -1,14 +1,16 @@
 {
-  "canonical": "helix",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Helix DNA Technology Binary Research Use License",
-      "Helix DNA License",
-      "LicenseRef-scancode-helix"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "helix",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Helix DNA Technology Binary Research Use License",
+            "Helix DNA License",
+            "LicenseRef-scancode-helix"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

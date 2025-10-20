@@ -1,15 +1,17 @@
 {
-  "canonical": "EUDatagrid",
-  "aliases": {
-    "spdx": [
-      "EU DataGrid Software License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "eu-datagrid"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "EUDatagrid",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "EU DataGrid Software License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "eu-datagrid"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

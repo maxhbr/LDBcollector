@@ -1,13 +1,15 @@
 {
-  "canonical": "mx4j",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MX4J License 1.0",
-      "LicenseRef-scancode-mx4j"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mx4j",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MX4J License 1.0",
+            "LicenseRef-scancode-mx4j"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

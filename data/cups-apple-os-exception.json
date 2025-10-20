@@ -1,13 +1,15 @@
 {
-  "canonical": "cups-apple-os-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CUPS Apple OS Exception to GPL and LGPL",
-      "LicenseRef-scancode-cups-apple-os-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cups-apple-os-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CUPS Apple OS Exception to GPL and LGPL",
+            "LicenseRef-scancode-cups-apple-os-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

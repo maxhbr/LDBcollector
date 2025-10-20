@@ -1,13 +1,15 @@
 {
-  "canonical": "mediatek-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MediaTek Firmware License",
-      "LicenseRef-scancode-mediatek-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mediatek-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MediaTek Firmware License",
+            "LicenseRef-scancode-mediatek-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

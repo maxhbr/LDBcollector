@@ -1,16 +1,18 @@
 {
-  "canonical": "Ubuntu-font-1.0",
-  "aliases": {
-    "spdx": [
-      "Ubuntu Font Licence v1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ubuntu-font-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Ubuntu-font-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Ubuntu Font Licence v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ubuntu-font-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

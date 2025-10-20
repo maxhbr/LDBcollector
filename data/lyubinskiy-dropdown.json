@@ -1,13 +1,15 @@
 {
-  "canonical": "lyubinskiy-dropdown",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Lyubinskiy dropdown License",
-      "LicenseRef-scancode-lyubinskiy-dropdown"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "lyubinskiy-dropdown",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Lyubinskiy dropdown License",
+            "LicenseRef-scancode-lyubinskiy-dropdown"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

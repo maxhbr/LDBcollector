@@ -1,16 +1,18 @@
 {
-  "canonical": "LZMA-SDK-9.22",
-  "aliases": {
-    "spdx": [
-      "LZMA SDK License (versions 9.22 and beyond)"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "lzma-sdk-9.22"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "LZMA-SDK-9.22",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "LZMA SDK License (versions 9.22 and beyond)"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "lzma-sdk-9.22"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

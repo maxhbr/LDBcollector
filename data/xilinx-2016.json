@@ -1,13 +1,15 @@
 {
-  "canonical": "xilinx-2016",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Xilinx License 2016",
-      "LicenseRef-scancode-xilinx-2016"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "xilinx-2016",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Xilinx License 2016",
+            "LicenseRef-scancode-xilinx-2016"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

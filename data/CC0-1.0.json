@@ -1,34 +1,36 @@
 {
-  "canonical": "CC0-1.0",
-  "aliases": {
-    "spdx": [
-      "Creative Commons Zero v1.0 Universal"
+    "canonical": {
+        "id": "CC0-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Creative Commons Zero v1.0 Universal"
+        ],
+        "custom": [
+            "CC0 1.0",
+            "CC Zero 1.0",
+            "CC0 1.0 Universal",
+            "Creative Commons Zero 1.0",
+            "Creative Commons Zero v1.0",
+            "Creative Commons Zero License 1.0",
+            "CC0 v1.0",
+            "CC Zero v1.0",
+            "CC0 Universal 1.0",
+            "CC0-1.0 License",
+            "Creative Commons CC0 1.0"
+        ],
+        "scancodeLicensedb": [
+            "Creative Commons CC0 1.0 Universal",
+            "cc0-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "CC0",
+        "CC0 License",
+        "CC0 Universal",
+        "Creative Commons Zero"
     ],
-    "custom": [
-      "CC0 1.0",
-      "CC Zero 1.0",
-      "CC0 1.0 Universal",
-      "Creative Commons Zero 1.0",
-      "Creative Commons Zero v1.0",
-      "Creative Commons Zero License 1.0",
-      "CC0 v1.0",
-      "CC Zero v1.0",
-      "CC0 Universal 1.0",
-      "CC0-1.0 License",
-      "Creative Commons CC0 1.0"
-    ],
-    "scancodeLicensedb": [
-      "Creative Commons CC0 1.0 Universal",
-      "cc0-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "CC0",
-    "CC0 License",
-    "CC0 Universal",
-    "Creative Commons Zero"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

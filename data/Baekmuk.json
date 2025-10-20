@@ -1,17 +1,19 @@
 {
-  "canonical": "Baekmuk",
-  "aliases": {
-    "spdx": [
-      "Baekmuk License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-baekmuk-fonts",
-      "baekmuk-fonts",
-      "Baekmuk Fonts License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Baekmuk",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Baekmuk License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-baekmuk-fonts",
+            "baekmuk-fonts",
+            "Baekmuk Fonts License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

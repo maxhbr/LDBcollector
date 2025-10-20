@@ -1,13 +1,15 @@
 {
-  "canonical": "numerical-recipes-notice",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Numerical Recipes Notice",
-      "LicenseRef-scancode-numerical-recipes-notice"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "numerical-recipes-notice",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Numerical Recipes Notice",
+            "LicenseRef-scancode-numerical-recipes-notice"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

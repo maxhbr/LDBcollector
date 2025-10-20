@@ -1,13 +1,15 @@
 {
-  "canonical": "punycode",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Punycode License",
-      "LicenseRef-scancode-punycode"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "punycode",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Punycode License",
+            "LicenseRef-scancode-punycode"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

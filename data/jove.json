@@ -1,12 +1,14 @@
 {
-    "canonical": "jove",
+    "canonical": {
+        "id": "jove",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Jove License"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

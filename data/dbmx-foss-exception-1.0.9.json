@@ -1,14 +1,16 @@
 {
-  "canonical": "dbmx-foss-exception-1.0.9",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Kyoto Products FOSS License Exception v1.0.9",
-      "LicenseRef-scancode-dbmx-foss-exception-1.0.9"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "dbmx-foss-exception-1.0.9",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Kyoto Products FOSS License Exception v1.0.9",
+            "LicenseRef-scancode-dbmx-foss-exception-1.0.9"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

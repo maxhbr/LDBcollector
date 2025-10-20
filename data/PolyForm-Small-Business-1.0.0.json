@@ -1,17 +1,19 @@
 {
-  "canonical": "PolyForm-Small-Business-1.0.0",
-  "aliases": {
-    "spdx": [
-      "PolyForm Small Business License 1.0.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "polyform-small-business-1.0.0",
-      "Polyform Small Business License 1.0.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "PolyForm-Small-Business-1.0.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "PolyForm Small Business License 1.0.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "polyform-small-business-1.0.0",
+            "Polyform Small Business License 1.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

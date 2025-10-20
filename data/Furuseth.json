@@ -1,15 +1,17 @@
 {
-  "canonical": "Furuseth",
-  "aliases": {
-    "spdx": [
-      "Furuseth License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "furuseth"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Furuseth",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Furuseth License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "furuseth"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

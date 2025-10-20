@@ -1,15 +1,17 @@
 {
-  "canonical": "arachni-psl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Arachni PSL v1.0",
-      "Arachni Public Source License v1.0",
-      "LicenseRef-scancode-arachni-psl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "arachni-psl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Arachni PSL v1.0",
+            "Arachni Public Source License v1.0",
+            "LicenseRef-scancode-arachni-psl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

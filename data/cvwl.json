@@ -1,13 +1,15 @@
 {
-  "canonical": "cvwl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Collaborative Virtual Workspace License",
-      "LicenseRef-scancode-cvwl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cvwl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Collaborative Virtual Workspace License",
+            "LicenseRef-scancode-cvwl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

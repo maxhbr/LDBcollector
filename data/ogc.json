@@ -1,13 +1,15 @@
 {
-  "canonical": "ogc",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OGC Software Notice",
-      "LicenseRef-scancode-ogc"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ogc",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OGC Software Notice",
+            "LicenseRef-scancode-ogc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

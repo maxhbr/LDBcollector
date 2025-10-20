@@ -1,13 +1,15 @@
 {
-  "canonical": "t-license-amp-t-kernel",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "T-License for AMP T-Kernel",
-      "LicenseRef-scancode-t-license-amp-t-kernel"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "t-license-amp-t-kernel",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "T-License for AMP T-Kernel",
+            "LicenseRef-scancode-t-license-amp-t-kernel"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

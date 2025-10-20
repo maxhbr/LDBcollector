@@ -1,13 +1,15 @@
 {
-  "canonical": "amd-linux-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "AMD Linux Firmware License",
-      "LicenseRef-scancode-amd-linux-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "amd-linux-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "AMD Linux Firmware License",
+            "LicenseRef-scancode-amd-linux-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

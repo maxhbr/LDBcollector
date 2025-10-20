@@ -1,14 +1,16 @@
 {
-  "canonical": "scancode-acknowledgment",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ScanCode acknowledgment",
-      "ScanCode generated data acknowledgment",
-      "LicenseRef-scancode-scancode-acknowledgment"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "scancode-acknowledgment",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ScanCode acknowledgment",
+            "ScanCode generated data acknowledgment",
+            "LicenseRef-scancode-scancode-acknowledgment"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

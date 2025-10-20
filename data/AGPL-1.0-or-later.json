@@ -1,19 +1,21 @@
 {
-  "canonical": "AGPL-1.0-or-later",
-  "aliases": {
-    "spdx": [
-      "Affero General Public License v1.0 or later"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "agpl-1.0-plus",
-      "AGPL-1.0+",
-      "Affero General Public License 1.0 or later",
-      "AGPL 1.0 or later"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "AGPL-1.0-or-later",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Affero General Public License v1.0 or later"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "agpl-1.0-plus",
+            "AGPL-1.0+",
+            "Affero General Public License 1.0 or later",
+            "AGPL 1.0 or later"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

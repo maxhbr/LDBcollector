@@ -1,13 +1,15 @@
 {
-  "canonical": "nvidia",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NVIDIA License",
-      "LicenseRef-scancode-nvidia"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nvidia",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NVIDIA License",
+            "LicenseRef-scancode-nvidia"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

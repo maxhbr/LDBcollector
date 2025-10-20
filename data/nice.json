@@ -1,13 +1,15 @@
 {
-  "canonical": "nice",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Nice License",
-      "LicenseRef-scancode-nice"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nice",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Nice License",
+            "LicenseRef-scancode-nice"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

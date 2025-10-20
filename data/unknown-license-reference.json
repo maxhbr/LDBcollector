@@ -1,14 +1,16 @@
 {
-  "canonical": "unknown-license-reference",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Unknown License reference",
-      "Unknown License file reference",
-      "LicenseRef-scancode-unknown-license-reference"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "unknown-license-reference",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Unknown License reference",
+            "Unknown License file reference",
+            "LicenseRef-scancode-unknown-license-reference"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

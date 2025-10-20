@@ -1,5 +1,8 @@
 {
-    "canonical": "MirOS",
+    "canonical": {
+        "id": "MirOS",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "The MirOS Licence"
@@ -25,7 +28,6 @@
             "MirOS License (MirOS)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

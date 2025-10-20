@@ -1,15 +1,17 @@
 {
-  "canonical": "BSD-Inferno-Nettverk",
-  "aliases": {
-    "spdx": [
-      "BSD-Inferno-Nettverk"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bsd-inferno-nettverk"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-Inferno-Nettverk",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD-Inferno-Nettverk"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bsd-inferno-nettverk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

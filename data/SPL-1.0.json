@@ -1,26 +1,28 @@
 {
-  "canonical": "SPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Sun Public License v1.0"
+    "canonical": {
+        "id": "SPL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Sun Public License v1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Sun Public License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "SPL 1.0",
+            "spl-1.0",
+            "Sun Public License 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "License :: OSI Approved :: Sun Public License",
+        "OSI Approved :: Sun Public License",
+        "License :: Sun Public License",
+        "Sun Public License"
     ],
-    "custom": [],
-    "osi": [
-      "Sun Public License, Version 1.0"
-    ],
-    "scancodeLicensedb": [
-      "SPL 1.0",
-      "spl-1.0",
-      "Sun Public License 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "License :: OSI Approved :: Sun Public License",
-    "OSI Approved :: Sun Public License",
-    "License :: Sun Public License",
-    "Sun Public License"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

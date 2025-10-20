@@ -1,13 +1,15 @@
 {
-  "canonical": "whistle",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Whistle Communications License",
-      "LicenseRef-scancode-whistle"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "whistle",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Whistle Communications License",
+            "LicenseRef-scancode-whistle"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

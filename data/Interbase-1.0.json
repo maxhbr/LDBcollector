@@ -1,17 +1,19 @@
 {
-  "canonical": "Interbase-1.0",
-  "aliases": {
-    "spdx": [
-      "Interbase Public License v1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "interbase-1.0",
-      "Interbase Public License 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Interbase-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Interbase Public License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "interbase-1.0",
+            "Interbase Public License 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

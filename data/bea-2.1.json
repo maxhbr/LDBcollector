@@ -1,15 +1,17 @@
 {
-  "canonical": "bea-2.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BEA Public License 2.1",
-      "BEA 2.1",
-      "LicenseRef-scancode-bea-2.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "bea-2.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BEA Public License 2.1",
+            "BEA 2.1",
+            "LicenseRef-scancode-bea-2.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

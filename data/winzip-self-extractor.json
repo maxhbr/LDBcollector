@@ -1,13 +1,15 @@
 {
-  "canonical": "winzip-self-extractor",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "WinZip Self-Extractor License",
-      "LicenseRef-scancode-winzip-self-extractor"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "winzip-self-extractor",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "WinZip Self-Extractor License",
+            "LicenseRef-scancode-winzip-self-extractor"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

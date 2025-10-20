@@ -1,12 +1,14 @@
 {
-    "canonical": "Nunit",
+    "canonical": {
+        "id": "Nunit",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Nunit License"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

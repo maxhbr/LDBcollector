@@ -1,13 +1,15 @@
 {
-  "canonical": "merit-network-derivative",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Merit Network Derivative Works License",
-      "LicenseRef-scancode-merit-network-derivative"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "merit-network-derivative",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Merit Network Derivative Works License",
+            "LicenseRef-scancode-merit-network-derivative"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

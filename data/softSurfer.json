@@ -1,16 +1,18 @@
 {
-  "canonical": "softSurfer",
-  "aliases": {
-    "spdx": [
-      "softSurfer License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "softsurfer",
-      "LicenseRef-scancode-softsurfer"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "softSurfer",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "softSurfer License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "softsurfer",
+            "LicenseRef-scancode-softsurfer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

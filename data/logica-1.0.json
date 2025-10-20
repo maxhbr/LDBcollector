@@ -1,15 +1,17 @@
 {
-  "canonical": "logica-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Logica OSL 1.0",
-      "Logica Open Source License v1.0",
-      "LicenseRef-scancode-logica-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "logica-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Logica OSL 1.0",
+            "Logica Open Source License v1.0",
+            "LicenseRef-scancode-logica-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

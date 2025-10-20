@@ -1,15 +1,17 @@
 {
-  "canonical": "vhfpl-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "vhfPL 1.1",
-      "vhf Public License V 1.1",
-      "LicenseRef-scancode-vhfpl-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "vhfpl-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "vhfPL 1.1",
+            "vhf Public License V 1.1",
+            "LicenseRef-scancode-vhfpl-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

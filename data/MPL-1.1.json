@@ -1,5 +1,8 @@
 {
-    "canonical": "MPL-1.1",
+    "canonical": {
+        "id": "MPL-1.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Mozilla Public License 1.1"
@@ -41,7 +44,6 @@
             "Mozilla Public License 1.1 (MPL 1.1)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": false

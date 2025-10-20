@@ -1,14 +1,16 @@
 {
-  "canonical": "arm-llvm-sga",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ARM LLVM Grant",
-      "ARM LLVM Software Grant License Agreement",
-      "LicenseRef-scancode-arm-llvm-sga"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "arm-llvm-sga",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ARM LLVM Grant",
+            "ARM LLVM Software Grant License Agreement",
+            "LicenseRef-scancode-arm-llvm-sga"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

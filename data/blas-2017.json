@@ -1,13 +1,15 @@
 {
-  "canonical": "blas-2017",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BLAS License 2017",
-      "LicenseRef-scancode-blas-2017"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "blas-2017",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BLAS License 2017",
+            "LicenseRef-scancode-blas-2017"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

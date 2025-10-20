@@ -1,13 +1,15 @@
 {
-  "canonical": "3com-microcode",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "3Com Microcode",
-      "LicenseRef-scancode-3com-microcode"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "3com-microcode",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "3Com Microcode",
+            "LicenseRef-scancode-3com-microcode"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

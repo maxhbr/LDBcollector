@@ -1,15 +1,17 @@
 {
-  "canonical": "psfrag",
-  "aliases": {
-    "spdx": [
-      "psfrag License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "psfrag"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "psfrag",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "psfrag License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "psfrag"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

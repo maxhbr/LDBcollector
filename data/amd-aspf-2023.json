@@ -1,14 +1,16 @@
 {
-  "canonical": "amd-aspf-2023",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "AMD Secure Encrypted Virtualization (SEV) Firmware License",
-      "AMD-ASPF-2023",
-      "LicenseRef-scancode-amd-aspf-2023"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "amd-aspf-2023",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "AMD Secure Encrypted Virtualization (SEV) Firmware License",
+            "AMD-ASPF-2023",
+            "LicenseRef-scancode-amd-aspf-2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "wol",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Wide Open License",
-      "LicenseRef-scancode-wol"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "wol",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Wide Open License",
+            "LicenseRef-scancode-wol"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

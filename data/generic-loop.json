@@ -1,13 +1,15 @@
 {
-  "canonical": "generic-loop",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Common Lisp Generic LOOP License",
-      "LicenseRef-scancode-generic-loop"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "generic-loop",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Common Lisp Generic LOOP License",
+            "LicenseRef-scancode-generic-loop"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

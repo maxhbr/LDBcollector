@@ -1,14 +1,16 @@
 {
-  "canonical": "rh-eula-gpl2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Red Hat GPLv2-Based EULA",
-      "Red Hat GPLv2-Based End User License Agreement",
-      "LicenseRef-scancode-rh-eula-gpl2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rh-eula-gpl2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Red Hat GPLv2-Based EULA",
+            "Red Hat GPLv2-Based End User License Agreement",
+            "LicenseRef-scancode-rh-eula-gpl2"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

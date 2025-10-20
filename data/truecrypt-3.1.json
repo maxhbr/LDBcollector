@@ -1,14 +1,16 @@
 {
-  "canonical": "truecrypt-3.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "TrueCrypt License 3.1",
-      "LicenseRef-scancode-truecrypt-3.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "truecrypt-3.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "TrueCrypt License 3.1",
+            "LicenseRef-scancode-truecrypt-3.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

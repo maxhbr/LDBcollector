@@ -1,13 +1,15 @@
 {
-  "canonical": "ubc",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "University of British Columbia License",
-      "LicenseRef-scancode-ubc"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ubc",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "University of British Columbia License",
+            "LicenseRef-scancode-ubc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

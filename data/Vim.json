@@ -1,16 +1,18 @@
 {
-  "canonical": "Vim",
-  "aliases": {
-    "spdx": [
-      "Vim License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "vim",
-      "VIM License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Vim",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Vim License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "vim",
+            "VIM License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

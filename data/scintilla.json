@@ -1,13 +1,15 @@
 {
-  "canonical": "scintilla",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Scintilla License",
-      "LicenseRef-scancode-scintilla"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "scintilla",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Scintilla License",
+            "LicenseRef-scancode-scintilla"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

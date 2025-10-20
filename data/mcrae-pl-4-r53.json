@@ -1,14 +1,16 @@
 {
-  "canonical": "mcrae-pl-4-r53",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "McRae General Public License (version 4.r53)",
-      "McRae PL v4.r53",
-      "LicenseRef-scancode-mcrae-pl-4-r53"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mcrae-pl-4-r53",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "McRae General Public License (version 4.r53)",
+            "McRae PL v4.r53",
+            "LicenseRef-scancode-mcrae-pl-4-r53"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

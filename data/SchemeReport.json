@@ -1,15 +1,17 @@
 {
-  "canonical": "SchemeReport",
-  "aliases": {
-    "spdx": [
-      "Scheme Language Report License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "schemereport"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "SchemeReport",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Scheme Language Report License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "schemereport"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

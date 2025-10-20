@@ -1,12 +1,14 @@
 {
-  "canonical": "bsd-intel",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BSD Intel License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bsd-intel",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BSD Intel License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

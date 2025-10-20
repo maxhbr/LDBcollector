@@ -1,15 +1,17 @@
 {
-  "canonical": "jetbrains-toolbox-open-source-3",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-jetbrains-toolbox-open-source-3",
-      "JetBrains Toolbox Open Source License v3",
-      "Toolbox Subscription License Agreement For Open Source Projects Version 3",
-      "LicenseRef-scancode-jetbrains-toolbox-oss-3"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "jetbrains-toolbox-open-source-3",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-jetbrains-toolbox-open-source-3",
+            "JetBrains Toolbox Open Source License v3",
+            "Toolbox Subscription License Agreement For Open Source Projects Version 3",
+            "LicenseRef-scancode-jetbrains-toolbox-oss-3"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

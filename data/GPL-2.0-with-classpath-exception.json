@@ -1,5 +1,8 @@
 {
-    "canonical": "GPL-2.0-with-classpath-exception",
+    "canonical": {
+        "id": "GPL-2.0-with-classpath-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU General Public License v2.0 w/Classpath exception"
@@ -12,7 +15,6 @@
             "GPL 2.0 with classpath exception"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": true

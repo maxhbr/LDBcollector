@@ -1,15 +1,17 @@
 {
-  "canonical": "HIDAPI",
-  "aliases": {
-    "spdx": [
-      "HIDAPI License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "hidapi"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HIDAPI",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "HIDAPI License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "hidapi"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

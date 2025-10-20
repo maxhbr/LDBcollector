@@ -1,13 +1,15 @@
 {
-  "canonical": "font-alias",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "font-alias License",
-      "LicenseRef-scancode-font-alias"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "font-alias",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "font-alias License",
+            "LicenseRef-scancode-font-alias"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

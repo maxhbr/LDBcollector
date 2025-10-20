@@ -1,15 +1,17 @@
 {
-  "canonical": "free-art-1.3",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Free Art License 1.3",
-      "FAL 1.3",
-      "LicenseRef-scancode-free-art-1.3"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "free-art-1.3",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Free Art License 1.3",
+            "FAL 1.3",
+            "LicenseRef-scancode-free-art-1.3"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,16 +1,18 @@
 {
-  "canonical": "GPL-CC-1.0",
-  "aliases": {
-    "spdx": [
-      "GPL Cooperation Commitment 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "gplcc-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "GPL-CC-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GPL Cooperation Commitment 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "gplcc-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "netcat",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Netcat License",
-      "LicenseRef-scancode-netcat"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "netcat",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Netcat License",
+            "LicenseRef-scancode-netcat"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

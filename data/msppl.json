@@ -1,14 +1,16 @@
 {
-  "canonical": "msppl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft patterns & practices License",
-      "MSPPL",
-      "LicenseRef-scancode-msppl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "msppl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft patterns & practices License",
+            "MSPPL",
+            "LicenseRef-scancode-msppl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

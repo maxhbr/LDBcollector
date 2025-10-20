@@ -1,5 +1,8 @@
 {
-    "canonical": "Intel",
+    "canonical": {
+        "id": "Intel",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Intel Open Source License"
@@ -18,7 +21,6 @@
             "License :: Intel Open Source License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "McPhee-slideshow",
-  "aliases": {
-    "spdx": [
-      "McPhee Slideshow License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "mcphee-slideshow"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "McPhee-slideshow",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "McPhee Slideshow License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "mcphee-slideshow"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

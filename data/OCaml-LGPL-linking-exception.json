@@ -1,15 +1,17 @@
 {
-  "canonical": "OCaml-LGPL-linking-exception",
-  "aliases": {
-    "spdx": [
-      "OCaml LGPL Linking Exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ocaml-lgpl-linking-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "OCaml-LGPL-linking-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "OCaml LGPL Linking Exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ocaml-lgpl-linking-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

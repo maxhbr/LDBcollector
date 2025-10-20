@@ -1,15 +1,17 @@
 {
-  "canonical": "BSD-3-Clause-HP",
-  "aliases": {
-    "spdx": [
-      "Hewlett-Packard BSD variant license"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bsd-3-clause-hp"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-3-Clause-HP",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Hewlett-Packard BSD variant license"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bsd-3-clause-hp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

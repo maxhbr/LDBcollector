@@ -1,16 +1,18 @@
 {
-  "canonical": "Libpng",
-  "aliases": {
-    "spdx": [
-      "libpng License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "libpng",
-      "Libpng License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Libpng",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "libpng License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "libpng",
+            "Libpng License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "xceed-community-2021",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Xceed Community License 2021",
-      "LicenseRef-scancode-xceed-community-2021"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "xceed-community-2021",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Xceed Community License 2021",
+            "LicenseRef-scancode-xceed-community-2021"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

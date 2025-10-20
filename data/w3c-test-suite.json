@@ -1,14 +1,16 @@
 {
-  "canonical": "w3c-test-suite",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "W3C Test Suite Licence",
-      "W3C Test Suite",
-      "LicenseRef-scancode-w3c-test-suite"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "w3c-test-suite",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "W3C Test Suite Licence",
+            "W3C Test Suite",
+            "LicenseRef-scancode-w3c-test-suite"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

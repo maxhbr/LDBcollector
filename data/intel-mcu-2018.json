@@ -1,13 +1,15 @@
 {
-  "canonical": "intel-mcu-2018",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Intel MCU path license 2018",
-      "LicenseRef-scancode-intel-mcu-2018"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "intel-mcu-2018",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Intel MCU path license 2018",
+            "LicenseRef-scancode-intel-mcu-2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

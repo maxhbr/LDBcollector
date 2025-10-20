@@ -1,14 +1,16 @@
 {
-  "canonical": "itu-t-gpl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ITU-T Software Tools General Public License",
-      "ITU-T General Public License",
-      "LicenseRef-scancode-itu-t-gpl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "itu-t-gpl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ITU-T Software Tools General Public License",
+            "ITU-T General Public License",
+            "LicenseRef-scancode-itu-t-gpl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

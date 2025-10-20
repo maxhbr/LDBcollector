@@ -1,17 +1,19 @@
 {
-  "canonical": "Bootloader-exception",
-  "aliases": {
-    "spdx": [
-      "Bootloader Distribution Exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bootloader-exception",
-      "Bootloader Distribution Exception to GPL 2.0 or later",
-      "Bootloader Distribution Exception to GPL 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Bootloader-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Bootloader Distribution Exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bootloader-exception",
+            "Bootloader Distribution Exception to GPL 2.0 or later",
+            "Bootloader Distribution Exception to GPL 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

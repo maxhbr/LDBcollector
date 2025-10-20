@@ -1,18 +1,20 @@
 {
-  "canonical": "JasPer-2.0",
-  "aliases": {
-    "spdx": [
-      "JasPer License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "JasPer License 2.0",
-      "jasper-2.0",
-      "JasPer 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "JasPer-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "JasPer License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "JasPer License 2.0",
+            "jasper-2.0",
+            "JasPer 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

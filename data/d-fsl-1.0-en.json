@@ -1,15 +1,17 @@
 {
-  "canonical": "d-fsl-1.0-en",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-d-fsl-1.0-en"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "German Free Software License"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "d-fsl-1.0-en",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-d-fsl-1.0-en"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "German Free Software License"
+    ],
+    "isMajorVersionOnly": true
 }

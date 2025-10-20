@@ -1,16 +1,18 @@
 {
-  "canonical": "Giftware",
-  "aliases": {
-    "spdx": [
-      "Giftware License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "allegro-4",
-      "Allegro 4 License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Giftware",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Giftware License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "allegro-4",
+            "Allegro 4 License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "jsel-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "JSEL 2.0",
-      "JAHIA Sustainable Enterprise License (JSEL) 2.0",
-      "LicenseRef-scancode-jsel-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "jsel-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "JSEL 2.0",
+            "JAHIA Sustainable Enterprise License (JSEL) 2.0",
+            "LicenseRef-scancode-jsel-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

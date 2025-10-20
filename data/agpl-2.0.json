@@ -1,15 +1,17 @@
 {
-  "canonical": "agpl-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "AGPL 2.0",
-      "Affero General Public License 2.0",
-      "LicenseRef-scancode-agpl-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "agpl-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "AGPL 2.0",
+            "Affero General Public License 2.0",
+            "LicenseRef-scancode-agpl-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "facebook-software-license",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Facebook Software License",
-      "LicenseRef-scancode-facebook-software-license"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "facebook-software-license",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Facebook Software License",
+            "LicenseRef-scancode-facebook-software-license"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

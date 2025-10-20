@@ -1,14 +1,16 @@
 {
-  "canonical": "d-zlib",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "D Zlib",
-      "Digital Mars Zlib",
-      "LicenseRef-scancode-d-zlib"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "d-zlib",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "D Zlib",
+            "Digital Mars Zlib",
+            "LicenseRef-scancode-d-zlib"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

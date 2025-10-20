@@ -1,14 +1,16 @@
 {
-  "canonical": "egenix-1.0.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "eGenix Public License 1.0.0",
-      "LicenseRef-scancode-egenix-1.0.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "egenix-1.0.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "eGenix Public License 1.0.0",
+            "LicenseRef-scancode-egenix-1.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

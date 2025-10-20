@@ -1,5 +1,8 @@
 {
-    "canonical": "MIT-0",
+    "canonical": {
+        "id": "MIT-0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MIT No Attribution"
@@ -24,7 +27,6 @@
             "MIT No Attribution License (MIT-0)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

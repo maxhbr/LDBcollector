@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-web-developer-tools-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Web Developer Tools 1.0",
-      "MS Web Developer Tools 1.0",
-      "LicenseRef-scancode-ms-web-developer-tools-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-web-developer-tools-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Web Developer Tools 1.0",
+            "MS Web Developer Tools 1.0",
+            "LicenseRef-scancode-ms-web-developer-tools-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

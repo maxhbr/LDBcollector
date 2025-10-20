@@ -1,13 +1,15 @@
 {
-  "canonical": "netron",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Netron Project License",
-      "LicenseRef-scancode-netron"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "netron",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Netron Project License",
+            "LicenseRef-scancode-netron"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

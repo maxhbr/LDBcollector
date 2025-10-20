@@ -1,18 +1,20 @@
 {
-  "canonical": "etalab-2.0",
-  "aliases": {
-    "spdx": [
-      "Etalab Open License 2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-etalab-2.0",
-      "etalab-2.0",
-      "LicenseRef-scancode-etalab-2.0-fr"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "etalab-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Etalab Open License 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-etalab-2.0",
+            "etalab-2.0",
+            "LicenseRef-scancode-etalab-2.0-fr"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

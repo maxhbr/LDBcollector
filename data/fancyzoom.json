@@ -1,13 +1,15 @@
 {
-  "canonical": "fancyzoom",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "FancyZoom License",
-      "LicenseRef-scancode-fancyzoom"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "fancyzoom",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "FancyZoom License",
+            "LicenseRef-scancode-fancyzoom"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

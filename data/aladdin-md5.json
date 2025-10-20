@@ -1,12 +1,14 @@
 {
-  "canonical": "aladdin-md5",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Aladdin MD5 License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "aladdin-md5",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Aladdin MD5 License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

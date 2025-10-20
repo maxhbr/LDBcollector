@@ -1,15 +1,17 @@
 {
-  "canonical": "checkmk",
-  "aliases": {
-    "spdx": [
-      "Checkmk License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "checkmk"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "checkmk",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Checkmk License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "checkmk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

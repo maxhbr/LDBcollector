@@ -1,18 +1,20 @@
 {
-  "canonical": "ODC-By-1.0",
-  "aliases": {
-    "spdx": [
-      "Open Data Commons Attribution License v1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-odc-1.0",
-      "ODC-By-1.0",
-      "odc-by-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ODC-By-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Open Data Commons Attribution License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-odc-1.0",
+            "ODC-By-1.0",
+            "odc-by-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "esri-devkit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Esri Developer Kit License",
-      "LicenseRef-scancode-esri-devkit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "esri-devkit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Esri Developer Kit License",
+            "LicenseRef-scancode-esri-devkit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

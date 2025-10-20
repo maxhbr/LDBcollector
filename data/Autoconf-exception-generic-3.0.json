@@ -1,17 +1,19 @@
 {
-  "canonical": "Autoconf-exception-generic-3.0",
-  "aliases": {
-    "spdx": [
-      "Autoconf generic exception for GPL-3.0"
+    "canonical": {
+        "id": "Autoconf-exception-generic-3.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Autoconf generic exception for GPL-3.0"
+        ],
+        "custom": []
+    },
+    "rejected": [
+        "Autoconf simple exception",
+        "autoconf-simple-exception",
+        "LicenseRef-scancode-autoconf-simple-exception"
     ],
-    "custom": []
-  },
-  "src": "spdx",
-  "rejected": [
-    "Autoconf simple exception",
-    "autoconf-simple-exception",
-    "LicenseRef-scancode-autoconf-simple-exception"
-  ],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "risky": [],
+    "isMajorVersionOnly": true
 }

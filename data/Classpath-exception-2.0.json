@@ -1,17 +1,19 @@
 {
-  "canonical": "Classpath-exception-2.0",
-  "aliases": {
-    "spdx": [
-      "Classpath exception 2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "classpath-exception-2.0",
-      "Classpath exception to GPL 2.0 or later"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Classpath-exception-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Classpath exception 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "classpath-exception-2.0",
+            "Classpath exception to GPL 2.0 or later"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

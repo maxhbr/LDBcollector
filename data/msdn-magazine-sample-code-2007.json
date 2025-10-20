@@ -1,14 +1,16 @@
 {
-  "canonical": "msdn-magazine-sample-code-2007",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MSDN Magazine Sample Code EULA 2007",
-      "Microsoft MSDN Magazine Sample Code EULA 2007",
-      "LicenseRef-scancode-msdn-magazine-sample-code-2007"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "msdn-magazine-sample-code-2007",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MSDN Magazine Sample Code EULA 2007",
+            "Microsoft MSDN Magazine Sample Code EULA 2007",
+            "LicenseRef-scancode-msdn-magazine-sample-code-2007"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

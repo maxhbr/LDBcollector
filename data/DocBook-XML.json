@@ -1,17 +1,19 @@
 {
-  "canonical": "DocBook-XML",
-  "aliases": {
-    "spdx": [
-      "DocBook XML License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Docbook License",
-      "LicenseRef-scancode-docbook",
-      "docbook"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "DocBook-XML",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "DocBook XML License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Docbook License",
+            "LicenseRef-scancode-docbook",
+            "docbook"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "librato-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Librato Open License Version 1.0",
-      "Librato Open License 1.0",
-      "LicenseRef-scancode-librato-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "librato-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Librato Open License Version 1.0",
+            "Librato Open License 1.0",
+            "LicenseRef-scancode-librato-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "ibm-glextrusion",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "IBM glextrusion License",
-      "LicenseRef-scancode-ibm-glextrusion"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ibm-glextrusion",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "IBM glextrusion License",
+            "LicenseRef-scancode-ibm-glextrusion"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

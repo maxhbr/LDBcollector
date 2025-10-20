@@ -1,14 +1,16 @@
 {
-  "canonical": "qt-commercial-agreement-4.4.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Qt License Agreement v4.4.1",
-      "LicenseRef-scancode-qt-commercial-agreement-4.4.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "qt-commercial-agreement-4.4.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Qt License Agreement v4.4.1",
+            "LicenseRef-scancode-qt-commercial-agreement-4.4.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

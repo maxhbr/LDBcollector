@@ -1,15 +1,17 @@
 {
-  "canonical": "FSFAP-no-warranty-disclaimer",
-  "aliases": {
-    "spdx": [
-      "FSF All Permissive License (without Warranty)"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "fsfap-no-warranty-disclaimer"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "FSFAP-no-warranty-disclaimer",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "FSF All Permissive License (without Warranty)"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "fsfap-no-warranty-disclaimer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

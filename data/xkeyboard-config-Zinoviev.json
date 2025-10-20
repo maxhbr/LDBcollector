@@ -1,15 +1,17 @@
 {
-  "canonical": "xkeyboard-config-Zinoviev",
-  "aliases": {
-    "spdx": [
-      "xkeyboard-config Zinoviev License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "xkeyboard-config-zinoviev"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "xkeyboard-config-Zinoviev",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "xkeyboard-config Zinoviev License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "xkeyboard-config-zinoviev"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

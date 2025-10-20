@@ -1,5 +1,8 @@
 {
-    "canonical": "0BSD",
+    "canonical": {
+        "id": "0BSD",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD Zero Clause License"
@@ -37,7 +40,6 @@
             "Zero-Clause BSD (0BSD)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

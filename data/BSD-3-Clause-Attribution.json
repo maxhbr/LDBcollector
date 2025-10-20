@@ -1,16 +1,18 @@
 {
-  "canonical": "BSD-3-Clause-Attribution",
-  "aliases": {
-    "spdx": [
-      "BSD with attribution"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "BSD Acknowledgment License",
-      "bsd-ack"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-3-Clause-Attribution",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD with attribution"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "BSD Acknowledgment License",
+            "bsd-ack"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

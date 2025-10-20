@@ -1,17 +1,19 @@
 {
-  "canonical": "BSD-2-Clause-NetBSD",
-  "aliases": {
-    "spdx": [
-      "BSD 2-Clause NetBSD License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bsd-2-clause-netbsd",
-      "BSD-2-Clause-NetBSD License",
-      "BSD-2-Clause-NetBSD"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-2-Clause-NetBSD",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause NetBSD License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bsd-2-clause-netbsd",
+            "BSD-2-Clause-NetBSD License",
+            "BSD-2-Clause-NetBSD"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

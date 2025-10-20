@@ -1,15 +1,17 @@
 {
-  "canonical": "slint-commercial-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Slint Commercial License 2.0",
-      "Slint Software License Agreement Version 2.0",
-      "LicenseRef-scancode-slint-commercial-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "slint-commercial-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Slint Commercial License 2.0",
+            "Slint Software License Agreement Version 2.0",
+            "LicenseRef-scancode-slint-commercial-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

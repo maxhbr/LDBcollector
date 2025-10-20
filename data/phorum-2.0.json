@@ -1,14 +1,16 @@
 {
-  "canonical": "phorum-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Phorum License 2.0",
-      "LicenseRef-scancode-phorum-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "phorum-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Phorum License 2.0",
+            "LicenseRef-scancode-phorum-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "vuforia-2013-07-29",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Vuforia SDK License Agreement 2013-07-29",
-      "Vuforia 2013-07-29",
-      "LicenseRef-scancode-vuforia-2013-07-29"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "vuforia-2013-07-29",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Vuforia SDK License Agreement 2013-07-29",
+            "Vuforia 2013-07-29",
+            "LicenseRef-scancode-vuforia-2013-07-29"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

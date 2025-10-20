@@ -1,17 +1,19 @@
 {
-  "canonical": "SugarCRM-1.1.3",
-  "aliases": {
-    "spdx": [
-      "SugarCRM Public License v1.1.3"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "SugarCRM Public License 1.1.3",
-      "sugarcrm-1.1.3"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "SugarCRM-1.1.3",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "SugarCRM Public License v1.1.3"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "SugarCRM Public License 1.1.3",
+            "sugarcrm-1.1.3"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

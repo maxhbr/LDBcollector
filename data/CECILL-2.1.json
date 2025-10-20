@@ -1,5 +1,8 @@
 {
-    "canonical": "CECILL-2.1",
+    "canonical": {
+        "id": "CECILL-2.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CeCILL Free Software License Agreement v2.1"
@@ -23,7 +26,6 @@
             "CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": false

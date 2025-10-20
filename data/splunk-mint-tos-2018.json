@@ -1,14 +1,16 @@
 {
-  "canonical": "splunk-mint-tos-2018",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Splunk MINT Terms of Service 2018",
-      "Splunk MINT TOS 2018",
-      "LicenseRef-scancode-splunk-mint-tos-2018"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "splunk-mint-tos-2018",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Splunk MINT Terms of Service 2018",
+            "Splunk MINT TOS 2018",
+            "LicenseRef-scancode-splunk-mint-tos-2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

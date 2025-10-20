@@ -1,15 +1,17 @@
 {
-  "canonical": "openssl-exception-lgpl-2.0-plus",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-openssl-exception-lgpl-2.0-plus",
-      "OpenSSL exception to LGPL 2.0 or later",
-      "LicenseRef-scancode-openssl-exception-lgpl2.0plus"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "openssl-exception-lgpl-2.0-plus",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openssl-exception-lgpl-2.0-plus",
+            "OpenSSL exception to LGPL 2.0 or later",
+            "LicenseRef-scancode-openssl-exception-lgpl2.0plus"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

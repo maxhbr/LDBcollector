@@ -1,13 +1,15 @@
 {
-  "canonical": "richard-black",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Richard Black License",
-      "LicenseRef-scancode-richard-black"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "richard-black",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Richard Black License",
+            "LicenseRef-scancode-richard-black"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

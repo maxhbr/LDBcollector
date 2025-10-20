@@ -1,18 +1,20 @@
 {
-  "canonical": "MS-LPL",
-  "aliases": {
-    "spdx": [
-      "Microsoft Limited Public License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS-LPL",
-      "ms-lpl",
-      "Microsoft Limited Permissive License (MS-LPL)",
-      "LicenseRef-scancode-ms-lpl"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "MS-LPL",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Microsoft Limited Public License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS-LPL",
+            "ms-lpl",
+            "Microsoft Limited Permissive License (MS-LPL)",
+            "LicenseRef-scancode-ms-lpl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

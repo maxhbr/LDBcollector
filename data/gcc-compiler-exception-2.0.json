@@ -1,15 +1,17 @@
 {
-  "canonical": "gcc-compiler-exception-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GCC Compiler exception to GPL 2.0",
-      "GCC compiler exception to GPL 2.0",
-      "LicenseRef-scancode-gcc-compiler-exception-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gcc-compiler-exception-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GCC Compiler exception to GPL 2.0",
+            "GCC compiler exception to GPL 2.0",
+            "LicenseRef-scancode-gcc-compiler-exception-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

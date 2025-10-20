@@ -1,14 +1,16 @@
 {
-  "canonical": "digia-qt-commercial",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Digia Qt Commercial License Usage",
-      "Digia Qt Commercial",
-      "LicenseRef-scancode-digia-qt-commercial"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "digia-qt-commercial",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Digia Qt Commercial License Usage",
+            "Digia Qt Commercial",
+            "LicenseRef-scancode-digia-qt-commercial"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

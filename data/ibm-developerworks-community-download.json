@@ -1,15 +1,17 @@
 {
-  "canonical": "ibm-developerworks-community-download",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "IBM developerWorks Community Download Agreement",
-      "IBM developerWorks Community Download of Content Agreement",
-      "LicenseRef-scancode-ibm-developerworks-community-download",
-      "LicenseRef-scancode-ibm-developerworks-community"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ibm-developerworks-community-download",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "IBM developerWorks Community Download Agreement",
+            "IBM developerWorks Community Download of Content Agreement",
+            "LicenseRef-scancode-ibm-developerworks-community-download",
+            "LicenseRef-scancode-ibm-developerworks-community"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

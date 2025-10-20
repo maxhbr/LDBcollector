@@ -1,20 +1,22 @@
 {
-  "canonical": "OSL-1.0",
-  "aliases": {
-    "spdx": [
-      "Open Software License 1.0"
-    ],
-    "custom": [],
-    "osi": [
-      "Open Software License, Version 1.0"
-    ],
-    "scancodeLicensedb": [
-      "OSL 1.0",
-      "osl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "OSL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Open Software License 1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Open Software License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "OSL 1.0",
+            "osl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

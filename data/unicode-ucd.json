@@ -1,14 +1,16 @@
 {
-  "canonical": "unicode-ucd",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Unicode Character Database (UCD) Terms of Use",
-      "LicenseRef-scancode-unicode-ucd",
-      "Unicode UCD TOU"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "unicode-ucd",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Unicode Character Database (UCD) Terms of Use",
+            "LicenseRef-scancode-unicode-ucd",
+            "Unicode UCD TOU"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

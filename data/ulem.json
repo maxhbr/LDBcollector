@@ -1,15 +1,17 @@
 {
-  "canonical": "ulem",
-  "aliases": {
-    "spdx": [
-      "ulem License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ulem"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ulem",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "ulem License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ulem"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

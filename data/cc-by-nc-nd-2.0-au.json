@@ -1,15 +1,17 @@
 {
-  "canonical": "cc-by-nc-nd-2.0-au",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CC-BY-NC-ND-2.0-AU",
-      "Creative Commons Attribution Non-Commercial No Derivatives License 2.0 Austrialis",
-      "LicenseRef-scancode-cc-by-nc-nd-2.0-au"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "cc-by-nc-nd-2.0-au",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CC-BY-NC-ND-2.0-AU",
+            "Creative Commons Attribution Non-Commercial No Derivatives License 2.0 Austrialis",
+            "LicenseRef-scancode-cc-by-nc-nd-2.0-au"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

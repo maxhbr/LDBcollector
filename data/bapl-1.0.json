@@ -1,14 +1,16 @@
 {
-  "canonical": "bapl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Booz Allen Public License v1.0",
-      "LicenseRef-scancode-bapl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "bapl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Booz Allen Public License v1.0",
+            "LicenseRef-scancode-bapl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "energyplus",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "EnergyPlus License",
-      "LicenseRef-scancode-energyplus-2023"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "energyplus",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "EnergyPlus License",
+            "LicenseRef-scancode-energyplus-2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "UCL-1.0",
-  "aliases": {
-    "spdx": [
-      "Upstream Compatibility License v1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ucl-1.0",
-      "UCL-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "UCL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Upstream Compatibility License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ucl-1.0",
+            "UCL-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

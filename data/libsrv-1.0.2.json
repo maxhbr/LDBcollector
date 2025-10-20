@@ -1,14 +1,16 @@
 {
-  "canonical": "libsrv-1.0.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "libsrv License v1.0.2",
-      "LicenseRef-scancode-libsrv-1.0.2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "libsrv-1.0.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "libsrv License v1.0.2",
+            "LicenseRef-scancode-libsrv-1.0.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

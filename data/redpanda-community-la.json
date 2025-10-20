@@ -1,13 +1,15 @@
 {
-  "canonical": "redpanda-community-la",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Redpanda Community License Agreement",
-      "LicenseRef-scancode-redpanda-community-la"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "redpanda-community-la",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Redpanda Community License Agreement",
+            "LicenseRef-scancode-redpanda-community-la"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

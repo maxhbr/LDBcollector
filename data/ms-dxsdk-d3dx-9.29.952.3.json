@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-dxsdk-d3dx-9.29.952.3",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS DXSDK.D3DX 9.29.952.3",
-      "Microsoft DXSDK.D3DX 9.29.952.3",
-      "LicenseRef-scancode-ms-dxsdk-d3dx-9.29.952.3"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-dxsdk-d3dx-9.29.952.3",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS DXSDK.D3DX 9.29.952.3",
+            "Microsoft DXSDK.D3DX 9.29.952.3",
+            "LicenseRef-scancode-ms-dxsdk-d3dx-9.29.952.3"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

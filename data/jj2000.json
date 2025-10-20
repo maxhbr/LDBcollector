@@ -1,13 +1,15 @@
 {
-  "canonical": "jj2000",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "JJ2000 License",
-      "LicenseRef-scancode-jj2000"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "jj2000",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "JJ2000 License",
+            "LicenseRef-scancode-jj2000"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

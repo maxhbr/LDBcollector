@@ -1,12 +1,14 @@
 {
-    "canonical": "ICU",
+    "canonical": {
+        "id": "ICU",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "ICU License"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

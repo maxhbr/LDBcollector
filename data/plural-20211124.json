@@ -1,13 +1,15 @@
 {
-  "canonical": "plural-20211124",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Plural Licensing 20211124",
-      "LicenseRef-scancode-plural-20211124"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "plural-20211124",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Plural Licensing 20211124",
+            "LicenseRef-scancode-plural-20211124"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

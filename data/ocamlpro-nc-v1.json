@@ -1,13 +1,15 @@
 {
-  "canonical": "ocamlpro-nc-v1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-ocamlpro-nc-v1",
-      "OCamlPro Non-Commercial Purpose License v1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ocamlpro-nc-v1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ocamlpro-nc-v1",
+            "OCamlPro Non-Commercial Purpose License v1"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,5 +1,8 @@
 {
-    "canonical": "MulanPSL-2.0",
+    "canonical": {
+        "id": "MulanPSL-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Mulan Permissive Software License, Version 2"
@@ -23,7 +26,6 @@
             "OSI Approved :: Mulan Permissive Software License v2"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": true

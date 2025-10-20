@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-asp-net-ajax-supplemental-terms",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Supplemental License - ASP.NET 2.0 AJAX EXT",
-      "LicenseRef-scancode-ms-asp-net-ajax-supplemental-terms",
-      "Microsoft Software Supplemental License - ASP.NET 2.0 AJAX EXTENSIONS",
-      "LicenseRef-scancode-ms-asp-net-ajax-supp-terms"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-asp-net-ajax-supplemental-terms",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Supplemental License - ASP.NET 2.0 AJAX EXT",
+            "LicenseRef-scancode-ms-asp-net-ajax-supplemental-terms",
+            "Microsoft Software Supplemental License - ASP.NET 2.0 AJAX EXTENSIONS",
+            "LicenseRef-scancode-ms-asp-net-ajax-supp-terms"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

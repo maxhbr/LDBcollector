@@ -1,13 +1,15 @@
 {
-  "canonical": "verisign",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "VeriSign License",
-      "LicenseRef-scancode-verisign"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "verisign",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "VeriSign License",
+            "LicenseRef-scancode-verisign"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

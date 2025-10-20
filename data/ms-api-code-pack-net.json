@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-api-code-pack-net",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Windows API Code Pack for Microsoft .NET Framework",
-      "MS Windows API Code Pack for .NET",
-      "LicenseRef-scancode-ms-api-code-pack-net"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-api-code-pack-net",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Windows API Code Pack for Microsoft .NET Framework",
+            "MS Windows API Code Pack for .NET",
+            "LicenseRef-scancode-ms-api-code-pack-net"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

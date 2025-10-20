@@ -1,5 +1,8 @@
 {
-    "canonical": "NCSA",
+    "canonical": {
+        "id": "NCSA",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "University of Illinois/NCSA Open Source License"
@@ -18,7 +21,6 @@
             "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "elixir-trademark-policy",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-elixir-trademark-policy",
-      "Elixir Trademark Policy",
-      "Elixir Team Trademarks Policy",
-      "LicenseRef-elixir-trademark-policy"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "elixir-trademark-policy",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-elixir-trademark-policy",
+            "Elixir Trademark Policy",
+            "Elixir Team Trademarks Policy",
+            "LicenseRef-elixir-trademark-policy"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

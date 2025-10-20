@@ -1,14 +1,16 @@
 {
-  "canonical": "cygwin-exception-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Cygwin exception to GPL 3.0 or later",
-      "LicenseRef-scancode-cygwin-exception-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "cygwin-exception-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Cygwin exception to GPL 3.0 or later",
+            "LicenseRef-scancode-cygwin-exception-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

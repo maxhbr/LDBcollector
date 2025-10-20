@@ -1,5 +1,8 @@
 {
-    "canonical": "Sleepycat",
+    "canonical": {
+        "id": "Sleepycat",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sleepycat License"
@@ -18,7 +21,6 @@
             "License :: OSI Approved :: Sleepycat License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "brankas-open-license-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Brankas Open License 1.0",
-      "LicenseRef-scancode-brankas-open-license-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "brankas-open-license-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Brankas Open License 1.0",
+            "LicenseRef-scancode-brankas-open-license-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

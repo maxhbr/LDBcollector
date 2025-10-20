@@ -1,15 +1,17 @@
 {
-  "canonical": "nysl-0.9982-jp",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NYSL 0.9982 Japanese",
-      "NYSL 0.9982 JP",
-      "LicenseRef-scancode-nysl-0.9982-jp"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "nysl-0.9982-jp",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NYSL 0.9982 Japanese",
+            "NYSL 0.9982 JP",
+            "LicenseRef-scancode-nysl-0.9982-jp"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

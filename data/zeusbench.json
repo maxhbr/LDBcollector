@@ -1,13 +1,15 @@
 {
-  "canonical": "zeusbench",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ZeusBench notice",
-      "LicenseRef-scancode-zeusbench"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "zeusbench",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ZeusBench notice",
+            "LicenseRef-scancode-zeusbench"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,16 +1,18 @@
 {
-  "canonical": "BSD-3-Clause-Clear",
-  "aliases": {
-    "spdx": [
-      "BSD 3-Clause Clear License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Clear BSD License",
-      "clear-bsd"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-3-Clause-Clear",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause Clear License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Clear BSD License",
+            "clear-bsd"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

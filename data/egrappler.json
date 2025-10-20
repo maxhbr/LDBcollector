@@ -1,13 +1,15 @@
 {
-  "canonical": "egrappler",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "eGrappler License",
-      "LicenseRef-scancode-egrappler"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "egrappler",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "eGrappler License",
+            "LicenseRef-scancode-egrappler"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

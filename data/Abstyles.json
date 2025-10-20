@@ -1,15 +1,17 @@
 {
-  "canonical": "Abstyles",
-  "aliases": {
-    "spdx": [
-      "Abstyles License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "abstyles"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Abstyles",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Abstyles License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "abstyles"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

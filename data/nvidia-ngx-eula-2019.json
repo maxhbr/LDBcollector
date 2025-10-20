@@ -1,13 +1,15 @@
 {
-  "canonical": "nvidia-ngx-eula-2019",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NVIDIA NGX EULA 2019",
-      "LicenseRef-scancode-nvidia-ngx-eula-2019"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nvidia-ngx-eula-2019",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NVIDIA NGX EULA 2019",
+            "LicenseRef-scancode-nvidia-ngx-eula-2019"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "matthew-kwan",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Matthew Kwan License",
-      "LicenseRef-scancode-matthew-kwan"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "matthew-kwan",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Matthew Kwan License",
+            "LicenseRef-scancode-matthew-kwan"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

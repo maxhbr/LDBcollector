@@ -1,15 +1,17 @@
 {
-  "canonical": "do-no-harm-0.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-do-no-harm-0.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Do No Harm"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "do-no-harm-0.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-do-no-harm-0.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Do No Harm"
+    ],
+    "isMajorVersionOnly": true
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "ozplb-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Australian Public Licence B Version 1.0",
-      "OZPLB 1.0",
-      "LicenseRef-scancode-ozplb-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "ozplb-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Australian Public Licence B Version 1.0",
+            "OZPLB 1.0",
+            "LicenseRef-scancode-ozplb-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

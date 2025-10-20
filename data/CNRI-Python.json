@@ -1,5 +1,8 @@
 {
-    "canonical": "CNRI-Python",
+    "canonical": {
+        "id": "CNRI-Python",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CNRI Python License"
@@ -27,7 +30,6 @@
             "Python License (CNRI Python License)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

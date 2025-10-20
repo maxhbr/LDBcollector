@@ -1,13 +1,15 @@
 {
-  "canonical": "activestate-community-2012",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ActiveState Community License 2012",
-      "LicenseRef-scancode-activestate-community-2012"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "activestate-community-2012",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ActiveState Community License 2012",
+            "LicenseRef-scancode-activestate-community-2012"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

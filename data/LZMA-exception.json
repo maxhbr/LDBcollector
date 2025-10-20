@@ -1,16 +1,18 @@
 {
-  "canonical": "LZMA-exception",
-  "aliases": {
-    "spdx": [
-      "LZMA exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "lzma-cpl-exception",
-      "LZMA exception to CPL 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "LZMA-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "LZMA exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "lzma-cpl-exception",
+            "LZMA exception to CPL 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

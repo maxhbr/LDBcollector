@@ -1,14 +1,16 @@
 {
-  "canonical": "acroname-bdk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Acroname BDK",
-      "Acroname Brainstem Development Kit license",
-      "LicenseRef-scancode-acroname-bdk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "acroname-bdk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Acroname BDK",
+            "Acroname Brainstem Development Kit license",
+            "LicenseRef-scancode-acroname-bdk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

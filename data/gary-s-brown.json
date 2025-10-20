@@ -1,13 +1,15 @@
 {
-  "canonical": "gary-s-brown",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Gary S. Brown License",
-      "LicenseRef-scancode-gary-s-brown"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "gary-s-brown",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Gary S. Brown License",
+            "LicenseRef-scancode-gary-s-brown"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

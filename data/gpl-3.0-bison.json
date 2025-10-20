@@ -1,13 +1,15 @@
 {
-  "canonical": "gpl-3.0-bison",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 3.0 or later with Bison exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gpl-3.0-bison",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 3.0 or later with Bison exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "RHeCos-1.1",
-  "aliases": {
-    "spdx": [
-      "Red Hat eCos Public License v1.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Red Hat eCos Public License 1.1",
-      "ecosrh-1.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "RHeCos-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Red Hat eCos Public License v1.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Red Hat eCos Public License 1.1",
+            "ecosrh-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,5 +1,8 @@
 {
-    "canonical": "EUPL-1.0",
+    "canonical": {
+        "id": "EUPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "European Union Public License 1.0"
@@ -25,7 +28,6 @@
             "European Union Public Licence 1.0 (EUPL 1.0)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": false

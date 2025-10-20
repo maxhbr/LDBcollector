@@ -1,13 +1,15 @@
 {
-  "canonical": "nxp-linux-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NXP Linux Firmware License",
-      "LicenseRef-scancode-nxp-linux-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nxp-linux-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NXP Linux Firmware License",
+            "LicenseRef-scancode-nxp-linux-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

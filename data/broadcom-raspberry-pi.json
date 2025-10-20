@@ -1,13 +1,15 @@
 {
-  "canonical": "broadcom-raspberry-pi",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Broadcom Raspberry Pi Firmware License",
-      "LicenseRef-scancode-broadcom-raspberry-pi"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "broadcom-raspberry-pi",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Broadcom Raspberry Pi Firmware License",
+            "LicenseRef-scancode-broadcom-raspberry-pi"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,5 +1,8 @@
 {
-    "canonical": "OFL-1.1",
+    "canonical": {
+        "id": "OFL-1.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "SIL Open Font License 1.1"
@@ -42,7 +45,6 @@
             "SIL Open Font License 1.1 (OFL-1.1)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": false

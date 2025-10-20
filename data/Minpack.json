@@ -1,17 +1,19 @@
 {
-  "canonical": "Minpack",
-  "aliases": {
-    "spdx": [
-      "Minpack License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Minpack Copyright Notice",
-      "minpack",
-      "LicenseRef-scancode-minpack"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Minpack",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Minpack License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Minpack Copyright Notice",
+            "minpack",
+            "LicenseRef-scancode-minpack"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

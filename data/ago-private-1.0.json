@@ -1,14 +1,16 @@
 {
-  "canonical": "ago-private-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Ago Private License 1.0",
-      "LicenseRef-scancode-ago-private-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ago-private-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Ago Private License 1.0",
+            "LicenseRef-scancode-ago-private-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

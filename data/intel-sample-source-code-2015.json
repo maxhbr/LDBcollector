@@ -1,14 +1,16 @@
 {
-  "canonical": "intel-sample-source-code-2015",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Intel Sample Source Code 2015",
-      "Intel Sample Source Code License Agreement 2015",
-      "LicenseRef-scancode-intel-sample-source-code-2015"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "intel-sample-source-code-2015",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Intel Sample Source Code 2015",
+            "Intel Sample Source Code License Agreement 2015",
+            "LicenseRef-scancode-intel-sample-source-code-2015"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

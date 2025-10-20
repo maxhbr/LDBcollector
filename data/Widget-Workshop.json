@@ -1,15 +1,17 @@
 {
-  "canonical": "Widget-Workshop",
-  "aliases": {
-    "spdx": [
-      "Widget Workshop License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "widget-workshop"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Widget-Workshop",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Widget Workshop License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "widget-workshop"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

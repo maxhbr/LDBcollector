@@ -1,5 +1,8 @@
 {
-    "canonical": "GPL-2.0-or-later",
+    "canonical": {
+        "id": "GPL-2.0-or-later",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU General Public License v2.0 or later",
@@ -27,7 +30,6 @@
             "License :: GPLv2+"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": true

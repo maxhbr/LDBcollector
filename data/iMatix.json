@@ -1,16 +1,18 @@
 {
-  "canonical": "iMatix",
-  "aliases": {
-    "spdx": [
-      "iMatix Standard Function Library Agreement"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "SFL License Agreement",
-      "sfl-license"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "iMatix",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "iMatix Standard Function Library Agreement"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "SFL License Agreement",
+            "sfl-license"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

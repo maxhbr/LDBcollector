@@ -1,13 +1,15 @@
 {
-  "canonical": "cups",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CUPS License",
-      "LicenseRef-scancode-cups"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cups",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CUPS License",
+            "LicenseRef-scancode-cups"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

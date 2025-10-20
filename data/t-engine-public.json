@@ -1,13 +1,15 @@
 {
-  "canonical": "t-engine-public",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "T-Engine Public License",
-      "LicenseRef-scancode-t-engine-public"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "t-engine-public",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "T-Engine Public License",
+            "LicenseRef-scancode-t-engine-public"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

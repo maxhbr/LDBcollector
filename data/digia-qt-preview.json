@@ -1,14 +1,16 @@
 {
-  "canonical": "digia-qt-preview",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Digia Qt Technology Preview License Agreement 2.4",
-      "Digia Qt Preview Agreement 2.4",
-      "LicenseRef-scancode-digia-qt-preview"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "digia-qt-preview",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Digia Qt Technology Preview License Agreement 2.4",
+            "Digia Qt Preview Agreement 2.4",
+            "LicenseRef-scancode-digia-qt-preview"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,19 +1,21 @@
 {
-  "canonical": "Elastic-2.0",
-  "aliases": {
-    "spdx": [
-      "Elastic License 2.0"
+    "canonical": {
+        "id": "Elastic-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Elastic License 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Elastic License 2.0 (ELv2)"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "LicenseRef-scancode-elastic-license-v2",
+        "elastic-license-v2"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Elastic License 2.0 (ELv2)"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "LicenseRef-scancode-elastic-license-v2",
-    "elastic-license-v2"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

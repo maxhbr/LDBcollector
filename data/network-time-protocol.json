@@ -1,12 +1,14 @@
 {
-  "canonical": "network-time-protocol",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Duplicate Network Time Protocol License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "network-time-protocol",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Duplicate Network Time Protocol License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "oracle-bcl-jsse-1.0.3",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-oracle-bcl-jsse-1.0.3"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Oracle BCL for JSSE 1.0.3 for CDC 1.0.2"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "oracle-bcl-jsse-1.0.3",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oracle-bcl-jsse-1.0.3"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Oracle BCL for JSSE 1.0.3 for CDC 1.0.2"
+    ],
+    "isMajorVersionOnly": true
 }

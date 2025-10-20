@@ -1,14 +1,16 @@
 {
-  "canonical": "pml-2020",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Amazon PML 2020",
-      "Amazon Program Materials License Agreement 2020",
-      "LicenseRef-scancode-pml-2020"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "pml-2020",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Amazon PML 2020",
+            "Amazon Program Materials License Agreement 2020",
+            "LicenseRef-scancode-pml-2020"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

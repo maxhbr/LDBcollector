@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-edge-webview2-fixed",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Edge WebView2 Runtime License (Fixed)",
-      "MS Edge WebView2 Runtime (Fixed)",
-      "LicenseRef-scancode-ms-edge-webview2-fixed"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-edge-webview2-fixed",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Edge WebView2 Runtime License (Fixed)",
+            "MS Edge WebView2 Runtime (Fixed)",
+            "LicenseRef-scancode-ms-edge-webview2-fixed"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

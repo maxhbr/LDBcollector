@@ -1,16 +1,18 @@
 {
-  "canonical": "W3C-19980720",
-  "aliases": {
-    "spdx": [
-      "W3C Software Notice and License (1998-07-20)"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "W3C-SOFTWARE-19980720",
-      "w3c-software-19980720"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "W3C-19980720",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "W3C Software Notice and License (1998-07-20)"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "W3C-SOFTWARE-19980720",
+            "w3c-software-19980720"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "lgpl-2.1-spell-checker",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LGPL 2.1 or later with Spell-Checker exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "lgpl-2.1-spell-checker",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LGPL 2.1 or later with Spell-Checker exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

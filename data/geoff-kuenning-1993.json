@@ -1,13 +1,15 @@
 {
-  "canonical": "geoff-kuenning-1993",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Geoff Kuenning License 1993",
-      "LicenseRef-scancode-geoff-kuenning-1993"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "geoff-kuenning-1993",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Geoff Kuenning License 1993",
+            "LicenseRef-scancode-geoff-kuenning-1993"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

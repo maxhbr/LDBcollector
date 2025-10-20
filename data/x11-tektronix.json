@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-tektronix",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11-Style (Tektronix)",
-      "LicenseRef-scancode-x11-tektronix"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-tektronix",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11-Style (Tektronix)",
+            "LicenseRef-scancode-x11-tektronix"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

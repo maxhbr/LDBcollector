@@ -1,15 +1,17 @@
 {
-  "canonical": "Zeeff",
-  "aliases": {
-    "spdx": [
-      "Zeeff License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "zeeff"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Zeeff",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Zeeff License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "zeeff"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

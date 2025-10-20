@@ -1,14 +1,16 @@
 {
-  "canonical": "ietf",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Internet Engineering Task Force License",
-      "IETF License",
-      "LicenseRef-scancode-ietf"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ietf",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Internet Engineering Task Force License",
+            "IETF License",
+            "LicenseRef-scancode-ietf"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

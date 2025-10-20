@@ -1,14 +1,16 @@
 {
-  "canonical": "java-app-stub",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Java App Stub License",
-      "Java Application Stub Binary Module License",
-      "LicenseRef-scancode-java-app-stub"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "java-app-stub",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Java App Stub License",
+            "Java Application Stub Binary Module License",
+            "LicenseRef-scancode-java-app-stub"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

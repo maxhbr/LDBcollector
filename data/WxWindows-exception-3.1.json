@@ -1,18 +1,20 @@
 {
-  "canonical": "WxWindows-exception-3.1",
-  "aliases": {
-    "spdx": [
-      "WxWindows Library Exception 3.1"
+    "canonical": {
+        "id": "WxWindows-exception-3.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "WxWindows Library Exception 3.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "wxwindows-exception-3.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "WxWindows Library Exception to GNU Licenses"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "wxwindows-exception-3.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "WxWindows Library Exception to GNU Licenses"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

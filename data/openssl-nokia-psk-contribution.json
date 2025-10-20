@@ -1,13 +1,15 @@
 {
-  "canonical": "openssl-nokia-psk-contribution",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Patent Disclaimer for OpenSSL",
-      "LicenseRef-scancode-openssl-nokia-psk-contribution"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "openssl-nokia-psk-contribution",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Patent Disclaimer for OpenSSL",
+            "LicenseRef-scancode-openssl-nokia-psk-contribution"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

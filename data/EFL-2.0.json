@@ -1,21 +1,23 @@
 {
-  "canonical": "EFL-2.0",
-  "aliases": {
-    "spdx": [
-      "Eiffel Forum License v2.0"
-    ],
-    "custom": [],
-    "osi": [
-      "Eiffel Forum License, Version 2"
-    ],
-    "scancodeLicensedb": [
-      "Eiffel Forum License 2.0",
-      "efl-2.0",
-      "EFL 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "EFL-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Eiffel Forum License v2.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Eiffel Forum License, Version 2"
+        ],
+        "scancodeLicensedb": [
+            "Eiffel Forum License 2.0",
+            "efl-2.0",
+            "EFL 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

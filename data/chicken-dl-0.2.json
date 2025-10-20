@@ -1,15 +1,17 @@
 {
-  "canonical": "chicken-dl-0.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Chicken Dance License v0.2",
-      "Chicken Dance v0.2",
-      "LicenseRef-scancode-chicken-dl-0.2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "chicken-dl-0.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Chicken Dance License v0.2",
+            "Chicken Dance v0.2",
+            "LicenseRef-scancode-chicken-dl-0.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-asp-net-mvc4",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft ASP.NET MVC 4 License",
-      "MS ASP.NET MVC4",
-      "LicenseRef-scancode-ms-asp-net-mvc4"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-asp-net-mvc4",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft ASP.NET MVC 4 License",
+            "MS ASP.NET MVC4",
+            "LicenseRef-scancode-ms-asp-net-mvc4"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

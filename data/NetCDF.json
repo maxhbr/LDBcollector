@@ -1,25 +1,27 @@
 {
-  "canonical": "NetCDF",
-  "aliases": {
-    "spdx": [
-      "NetCDF license"
-    ],
-    "custom": [
-      "NetCDF Software License",
-      "NetCDF License (Open Source)",
-      "NetCDF Open Source License",
-      "NetCDF (Open Source)",
-      "NetCDF (Software License)",
-      "NetCDF Open License",
-      "NetCDF Public License",
-      "NetCDF (Public License)"
-    ],
-    "scancodeLicensedb": [
-      "netcdf",
-      "NetCDF License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "NetCDF",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "NetCDF license"
+        ],
+        "custom": [
+            "NetCDF Software License",
+            "NetCDF License (Open Source)",
+            "NetCDF Open Source License",
+            "NetCDF (Open Source)",
+            "NetCDF (Software License)",
+            "NetCDF Open License",
+            "NetCDF Public License",
+            "NetCDF (Public License)"
+        ],
+        "scancodeLicensedb": [
+            "netcdf",
+            "NetCDF License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

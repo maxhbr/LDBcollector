@@ -1,13 +1,15 @@
 {
-  "canonical": "pngsuite",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "PngSuite License",
-      "LicenseRef-scancode-pngsuite"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "pngsuite",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "PngSuite License",
+            "LicenseRef-scancode-pngsuite"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

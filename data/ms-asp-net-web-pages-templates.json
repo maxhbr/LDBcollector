@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-asp-net-web-pages-templates",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS ASP.NET Web Pages Templates License",
-      "Microsoft ASP.NET Web Pages Templates License",
-      "LicenseRef-scancode-ms-asp-net-web-pages-templates"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-asp-net-web-pages-templates",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS ASP.NET Web Pages Templates License",
+            "Microsoft ASP.NET Web Pages Templates License",
+            "LicenseRef-scancode-ms-asp-net-web-pages-templates"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

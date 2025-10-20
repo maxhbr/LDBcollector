@@ -1,5 +1,8 @@
 {
-    "canonical": "OSL-3.0",
+    "canonical": {
+        "id": "OSL-3.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open Software License 3.0"
@@ -25,7 +28,6 @@
             "License :: OSL-3.0"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": true

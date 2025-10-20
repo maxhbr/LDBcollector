@@ -1,13 +1,15 @@
 {
-  "canonical": "salesforcesans-font",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-salesforcesans-font",
-      "SalesforceSans Font License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "salesforcesans-font",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-salesforcesans-font",
+            "SalesforceSans Font License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

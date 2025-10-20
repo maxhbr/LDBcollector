@@ -1,14 +1,16 @@
 {
-  "canonical": "mit-nagy",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MIT Nagy Variant",
-      "MIT Szabolcs Nagy Variant",
-      "LicenseRef-scancode-mit-nagy"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mit-nagy",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MIT Nagy Variant",
+            "MIT Szabolcs Nagy Variant",
+            "LicenseRef-scancode-mit-nagy"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

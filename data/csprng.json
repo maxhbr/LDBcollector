@@ -1,13 +1,15 @@
 {
-  "canonical": "csprng",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CSPRNG",
-      "LicenseRef-scancode-csprng"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "csprng",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CSPRNG",
+            "LicenseRef-scancode-csprng"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

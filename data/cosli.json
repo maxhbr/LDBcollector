@@ -1,14 +1,16 @@
 {
-  "canonical": "cosli",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "COSLi",
-      "Civilian Open Source License",
-      "LicenseRef-scancode-cosli"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cosli",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "COSLi",
+            "Civilian Open Source License",
+            "LicenseRef-scancode-cosli"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

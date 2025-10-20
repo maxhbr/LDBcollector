@@ -1,13 +1,15 @@
 {
-  "canonical": "ldap-sdk-free-use",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "UnboundID LDAP SDK Free Use License",
-      "LicenseRef-scancode-ldap-sdk-free-use"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ldap-sdk-free-use",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "UnboundID LDAP SDK Free Use License",
+            "LicenseRef-scancode-ldap-sdk-free-use"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

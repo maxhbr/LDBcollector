@@ -1,13 +1,15 @@
 {
-  "canonical": "protobuf",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Protobuf License",
-      "LicenseRef-scancode-protobuf"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "protobuf",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Protobuf License",
+            "LicenseRef-scancode-protobuf"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

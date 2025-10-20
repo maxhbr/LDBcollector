@@ -1,17 +1,19 @@
 {
-  "canonical": "SGI-OpenGL",
-  "aliases": {
-    "spdx": [
-      "SGI OpenGL License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "x11-opengl",
-      "LicenseRef-scancode-x11-opengl",
-      "X11-Style (OpenGL)"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "SGI-OpenGL",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "SGI OpenGL License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "x11-opengl",
+            "LicenseRef-scancode-x11-opengl",
+            "X11-Style (OpenGL)"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

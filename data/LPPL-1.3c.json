@@ -1,20 +1,22 @@
 {
-  "canonical": "LPPL-1.3c",
-  "aliases": {
-    "spdx": [
-      "LaTeX Project Public License v1.3c"
-    ],
-    "custom": [],
-    "osi": [
-      "LaTeX Project Public License, Version 1.3c"
-    ],
-    "scancodeLicensedb": [
-      "lppl-1.3c",
-      "LPPL 1.3c"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "LPPL-1.3c",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "LaTeX Project Public License v1.3c"
+        ],
+        "custom": [],
+        "osi": [
+            "LaTeX Project Public License, Version 1.3c"
+        ],
+        "scancodeLicensedb": [
+            "lppl-1.3c",
+            "LPPL 1.3c"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

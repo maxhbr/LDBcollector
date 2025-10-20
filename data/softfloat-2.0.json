@@ -1,16 +1,18 @@
 {
-  "canonical": "softfloat-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SoftFloat Legal Notice 2.0",
-      "LicenseRef-scancode-softfloat-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "SoftFloat Legal Notice with Prominent Notice"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "softfloat-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SoftFloat Legal Notice 2.0",
+            "LicenseRef-scancode-softfloat-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "SoftFloat Legal Notice with Prominent Notice"
+    ],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "cisco-avch264-patent",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "AVC/H.264 Patent Portfolio License",
-      "LicenseRef-scancode-cisco-avch264-patent"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cisco-avch264-patent",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "AVC/H.264 Patent Portfolio License",
+            "LicenseRef-scancode-cisco-avch264-patent"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

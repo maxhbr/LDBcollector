@@ -1,14 +1,16 @@
 {
-  "canonical": "tsl-2020",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Timescale License Agreement 2020",
-      "TSL Agreement 2020",
-      "LicenseRef-scancode-tsl-2020"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "tsl-2020",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Timescale License Agreement 2020",
+            "TSL Agreement 2020",
+            "LicenseRef-scancode-tsl-2020"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

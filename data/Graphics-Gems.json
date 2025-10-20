@@ -1,16 +1,18 @@
 {
-  "canonical": "Graphics-Gems",
-  "aliases": {
-    "spdx": [
-      "Graphics Gems License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-graphics-gems",
-      "graphics-gems"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Graphics-Gems",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Graphics Gems License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-graphics-gems",
+            "graphics-gems"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

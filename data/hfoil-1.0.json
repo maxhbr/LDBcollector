@@ -1,15 +1,17 @@
 {
-  "canonical": "hfoil-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "HFOILv1.0",
-      "Hugging Face Optimized Inference License 1.0",
-      "LicenseRef-scancode-hfoil-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "hfoil-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "HFOILv1.0",
+            "Hugging Face Optimized Inference License 1.0",
+            "LicenseRef-scancode-hfoil-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

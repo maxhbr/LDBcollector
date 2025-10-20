@@ -1,13 +1,15 @@
 {
-  "canonical": "bytemark",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BYTEmark License",
-      "LicenseRef-scancode-bytemark"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bytemark",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BYTEmark License",
+            "LicenseRef-scancode-bytemark"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

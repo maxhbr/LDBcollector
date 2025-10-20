@@ -1,13 +1,15 @@
 {
-  "canonical": "apple-excl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Apple Example Code License",
-      "LicenseRef-scancode-apple-excl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "apple-excl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Apple Example Code License",
+            "LicenseRef-scancode-apple-excl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

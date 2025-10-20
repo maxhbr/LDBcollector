@@ -1,13 +1,15 @@
 {
-  "canonical": "moxa-linux-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Moxa Linux Firmware License",
-      "LicenseRef-scancode-moxa-linux-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "moxa-linux-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Moxa Linux Firmware License",
+            "LicenseRef-scancode-moxa-linux-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

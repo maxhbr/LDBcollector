@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-direct3d-d3d120n7-1.1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Direct3D D3D12On7 1.1.0",
-      "MS Direct3D D3D12On7 1.1.0",
-      "LicenseRef-scancode-ms-direct3d-d3d120n7-1.1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-direct3d-d3d120n7-1.1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Direct3D D3D12On7 1.1.0",
+            "MS Direct3D D3D12On7 1.1.0",
+            "LicenseRef-scancode-ms-direct3d-d3d120n7-1.1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

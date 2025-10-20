@@ -1,13 +1,15 @@
 {
-  "canonical": "snmp4j-smi",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SNMP4J-SMI License",
-      "LicenseRef-scancode-snmp4j-smi"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "snmp4j-smi",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SNMP4J-SMI License",
+            "LicenseRef-scancode-snmp4j-smi"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

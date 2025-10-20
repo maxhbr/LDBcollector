@@ -1,14 +1,16 @@
 {
-  "canonical": "wxwindows-u-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "wxWindows Unrestricted Licence 3.0",
-      "LicenseRef-scancode-wxwindows-u-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "wxwindows-u-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "wxWindows Unrestricted Licence 3.0",
+            "LicenseRef-scancode-wxwindows-u-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

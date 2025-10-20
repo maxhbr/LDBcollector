@@ -1,14 +1,16 @@
 {
-  "canonical": "obsidian-tos-2025",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-obsidian-tos-2025",
-      "Obsidian Terms of Service 2025",
-      "Obsidian TOS 2025"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "obsidian-tos-2025",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-obsidian-tos-2025",
+            "Obsidian Terms of Service 2025",
+            "Obsidian TOS 2025"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

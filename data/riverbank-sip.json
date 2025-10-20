@@ -1,13 +1,15 @@
 {
-  "canonical": "riverbank-sip",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Riverbank SIP License",
-      "LicenseRef-scancode-riverbank-sip"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "riverbank-sip",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Riverbank SIP License",
+            "LicenseRef-scancode-riverbank-sip"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

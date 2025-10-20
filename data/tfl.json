@@ -1,14 +1,16 @@
 {
-  "canonical": "tfl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Truly Free License",
-      "TFL",
-      "LicenseRef-scancode-tfl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "tfl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Truly Free License",
+            "TFL",
+            "LicenseRef-scancode-tfl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

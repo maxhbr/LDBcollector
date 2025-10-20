@@ -1,15 +1,17 @@
 {
-  "canonical": "bcrypt-Solar-Designer",
-  "aliases": {
-    "spdx": [
-      "bcrypt Solar Designer License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bcrypt-solar-designer"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bcrypt-Solar-Designer",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "bcrypt Solar Designer License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bcrypt-solar-designer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

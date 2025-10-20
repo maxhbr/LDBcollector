@@ -1,15 +1,17 @@
 {
-  "canonical": "GL2PS",
-  "aliases": {
-    "spdx": [
-      "GL2PS License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "gl2ps"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "GL2PS",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GL2PS License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "gl2ps"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

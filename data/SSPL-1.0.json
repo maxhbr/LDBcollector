@@ -1,18 +1,20 @@
 {
-  "canonical": "SSPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Server Side Public License, v 1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Server Side Public License (SSPL) 1.0",
-      "SSPL 1.0",
-      "mongodb-sspl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "SSPL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Server Side Public License, v 1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Server Side Public License (SSPL) 1.0",
+            "SSPL 1.0",
+            "mongodb-sspl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

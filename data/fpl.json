@@ -1,13 +1,15 @@
 {
-  "canonical": "fpl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Freeware Public License (FPL)",
-      "LicenseRef-scancode-fpl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "fpl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Freeware Public License (FPL)",
+            "LicenseRef-scancode-fpl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

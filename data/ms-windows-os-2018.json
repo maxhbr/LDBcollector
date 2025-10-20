@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-windows-os-2018",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Windows OS 2018",
-      "Microsoft Windows Operating System License 2019",
-      "LicenseRef-scancode-ms-windows-os-2018"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-windows-os-2018",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Windows OS 2018",
+            "Microsoft Windows Operating System License 2019",
+            "LicenseRef-scancode-ms-windows-os-2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

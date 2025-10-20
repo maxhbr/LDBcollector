@@ -1,16 +1,18 @@
 {
-  "canonical": "KiCad-libraries-exception",
-  "aliases": {
-    "spdx": [
-      "KiCad Libraries Exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "kicad-libraries-exception",
-      "KiCad Libraries Exception to CC-BY-SA-4.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "KiCad-libraries-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "KiCad Libraries Exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "kicad-libraries-exception",
+            "KiCad Libraries Exception to CC-BY-SA-4.0"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

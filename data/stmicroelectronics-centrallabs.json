@@ -1,13 +1,15 @@
 {
-  "canonical": "stmicroelectronics-centrallabs",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "STMicroelectronics CentralLabs License",
-      "LicenseRef-scancode-stmicroelectronics-centrallabs"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "stmicroelectronics-centrallabs",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "STMicroelectronics CentralLabs License",
+            "LicenseRef-scancode-stmicroelectronics-centrallabs"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

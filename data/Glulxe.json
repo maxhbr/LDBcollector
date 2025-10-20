@@ -1,15 +1,17 @@
 {
-  "canonical": "Glulxe",
-  "aliases": {
-    "spdx": [
-      "Glulxe License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "glulxe"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Glulxe",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Glulxe License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "glulxe"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

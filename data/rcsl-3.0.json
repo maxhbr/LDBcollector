@@ -1,15 +1,17 @@
 {
-  "canonical": "rcsl-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "RealNetworks Community Source License v3.0",
-      "RCSL R&D 3.0",
-      "LicenseRef-scancode-rcsl-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "rcsl-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "RealNetworks Community Source License v3.0",
+            "RCSL R&D 3.0",
+            "LicenseRef-scancode-rcsl-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

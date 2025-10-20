@@ -1,14 +1,16 @@
 {
-  "canonical": "opera-eula-2018",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Opera for Computers EULA 2018",
-      "Opera EULA 2018",
-      "LicenseRef-scancode-opera-eula-2018"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "opera-eula-2018",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Opera for Computers EULA 2018",
+            "Opera EULA 2018",
+            "LicenseRef-scancode-opera-eula-2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

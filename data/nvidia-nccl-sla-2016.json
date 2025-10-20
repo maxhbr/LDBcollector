@@ -1,13 +1,15 @@
 {
-  "canonical": "nvidia-nccl-sla-2016",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NVIDIA NCCL SLA 2016",
-      "LicenseRef-scancode-nvidia-nccl-sla-2016"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nvidia-nccl-sla-2016",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NVIDIA NCCL SLA 2016",
+            "LicenseRef-scancode-nvidia-nccl-sla-2016"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

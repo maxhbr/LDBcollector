@@ -1,17 +1,19 @@
 {
-  "canonical": "Artistic-1.0-cl8",
-  "aliases": {
-    "spdx": [
-      "Artistic License 1.0 w/clause 8"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "artistic-1.0-cl8",
-      "Artistic 1.0 w/clause 8"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Artistic-1.0-cl8",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Artistic License 1.0 w/clause 8"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "artistic-1.0-cl8",
+            "Artistic 1.0 w/clause 8"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

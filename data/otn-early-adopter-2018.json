@@ -1,14 +1,16 @@
 {
-  "canonical": "otn-early-adopter-2018",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OTN Early Adopter Development License 2018",
-      "OTN Early Adopter 2018",
-      "LicenseRef-scancode-otn-early-adopter-2018"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "otn-early-adopter-2018",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OTN Early Adopter Development License 2018",
+            "OTN Early Adopter 2018",
+            "LicenseRef-scancode-otn-early-adopter-2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

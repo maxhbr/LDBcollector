@@ -1,13 +1,15 @@
 {
-  "canonical": "historical-ntp",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Historical Notice - NTP",
-      "LicenseRef-scancode-historical-ntp"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "historical-ntp",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Historical Notice - NTP",
+            "LicenseRef-scancode-historical-ntp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

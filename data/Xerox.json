@@ -1,16 +1,18 @@
 {
-  "canonical": "Xerox",
-  "aliases": {
-    "spdx": [
-      "Xerox License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "mit-export-control",
-      "MIT with Export Control"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Xerox",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Xerox License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "mit-export-control",
+            "MIT with Export Control"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

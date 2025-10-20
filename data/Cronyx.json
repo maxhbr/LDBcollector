@@ -1,15 +1,17 @@
 {
-  "canonical": "Cronyx",
-  "aliases": {
-    "spdx": [
-      "Cronyx License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "cronyx"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Cronyx",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Cronyx License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "cronyx"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

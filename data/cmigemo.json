@@ -1,13 +1,15 @@
 {
-  "canonical": "cmigemo",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "C/Migemo License",
-      "LicenseRef-scancode-cmigemo"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cmigemo",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "C/Migemo License",
+            "LicenseRef-scancode-cmigemo"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "cncf-corporate-cla-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Software Grant and Corporate Contributor License Agreement (\"Agreement\") v1.0",
-      "CNCF Corporate CLA 1.0",
-      "LicenseRef-scancode-cncf-corporate-cla-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "cncf-corporate-cla-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Software Grant and Corporate Contributor License Agreement (\"Agreement\") v1.0",
+            "CNCF Corporate CLA 1.0",
+            "LicenseRef-scancode-cncf-corporate-cla-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

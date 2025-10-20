@@ -1,13 +1,15 @@
 {
-  "canonical": "info-zip-2003-05",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Info-Zip License 2003-05",
-      "LicenseRef-scancode-info-zip-2003-05"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "info-zip-2003-05",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Info-Zip License 2003-05",
+            "LicenseRef-scancode-info-zip-2003-05"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

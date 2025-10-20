@@ -1,14 +1,16 @@
 {
-  "canonical": "notre-dame",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "University of Notre Dame License",
-      "Notre Dame License",
-      "LicenseRef-scancode-notre-dame"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "notre-dame",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "University of Notre Dame License",
+            "Notre Dame License",
+            "LicenseRef-scancode-notre-dame"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

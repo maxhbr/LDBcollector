@@ -1,17 +1,19 @@
 {
-  "canonical": "Aladdin",
-  "aliases": {
-    "spdx": [
-      "Aladdin Free Public License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Aladdin Free Public License v8",
-      "afpl-8.0",
-      "Aladdin FPL v8"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Aladdin",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Aladdin Free Public License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Aladdin Free Public License v8",
+            "afpl-8.0",
+            "Aladdin FPL v8"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

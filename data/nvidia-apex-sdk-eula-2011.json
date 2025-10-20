@@ -1,14 +1,16 @@
 {
-  "canonical": "nvidia-apex-sdk-eula-2011",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NVIDIA APEX SDK EULA 2011",
-      "NVIDIA APEX SDK End User License Agreement 2011",
-      "LicenseRef-scancode-nvidia-apex-sdk-eula-2011"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nvidia-apex-sdk-eula-2011",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NVIDIA APEX SDK EULA 2011",
+            "NVIDIA APEX SDK End User License Agreement 2011",
+            "LicenseRef-scancode-nvidia-apex-sdk-eula-2011"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

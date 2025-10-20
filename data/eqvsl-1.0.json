@@ -1,15 +1,17 @@
 {
-  "canonical": "eqvsl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-eqvsl-1.0",
-      "Eclipse QVSL 1.0",
-      "Eclipse Foundation Quality Verification Suite License - V 1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "eqvsl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-eqvsl-1.0",
+            "Eclipse QVSL 1.0",
+            "Eclipse Foundation Quality Verification Suite License - V 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

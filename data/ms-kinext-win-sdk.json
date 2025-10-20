@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-kinext-win-sdk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Kinect for Windows SDK License",
-      "Microsoft Kinect for Windows SDK License",
-      "LicenseRef-scancode-ms-kinext-win-sdk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-kinext-win-sdk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Kinect for Windows SDK License",
+            "Microsoft Kinect for Windows SDK License",
+            "LicenseRef-scancode-ms-kinext-win-sdk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

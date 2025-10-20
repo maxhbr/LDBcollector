@@ -1,15 +1,17 @@
 {
-  "canonical": "fwlw",
-  "aliases": {
-    "spdx": [
-      "fwlw License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "fwlw"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "fwlw",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "fwlw License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "fwlw"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "CNRI-Python-GPL-Compatible",
-  "aliases": {
-    "spdx": [
-      "CNRI Python Open Source GPL Compatible License Agreement"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "CNRI Open Source License Agreement for Python 1.6.1",
-      "cnri-python-1.6.1",
-      "CNRI Python 1.6.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "CNRI-Python-GPL-Compatible",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "CNRI Python Open Source GPL Compatible License Agreement"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "CNRI Open Source License Agreement for Python 1.6.1",
+            "cnri-python-1.6.1",
+            "CNRI Python 1.6.1"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

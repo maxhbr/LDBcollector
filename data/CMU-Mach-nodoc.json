@@ -1,17 +1,19 @@
 {
-  "canonical": "CMU-Mach-nodoc",
-  "aliases": {
-    "spdx": [
-      "CMU    Mach - no notices-in-documentation variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "NRL permission",
-      "LicenseRef-scancode-nrl-permission",
-      "nrl-permission"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "CMU-Mach-nodoc",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "CMU    Mach - no notices-in-documentation variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "NRL permission",
+            "LicenseRef-scancode-nrl-permission",
+            "nrl-permission"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "h2-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "H2 1.0",
-      "H2 License 1.0",
-      "LicenseRef-scancode-h2-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "h2-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "H2 1.0",
+            "H2 License 1.0",
+            "LicenseRef-scancode-h2-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

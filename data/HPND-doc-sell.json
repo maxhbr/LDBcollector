@@ -1,16 +1,18 @@
 {
-  "canonical": "HPND-doc-sell",
-  "aliases": {
-    "spdx": [
-      "Historical Permission Notice and Disclaimer - documentation sell variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "hpnd-doc-sell",
-      "Historical documentation sell variant"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HPND-doc-sell",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - documentation sell variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "hpnd-doc-sell",
+            "Historical documentation sell variant"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "gatling-highcharts",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Gatling-Highcharts License",
-      "LicenseRef-scancode-gatling-highcharts"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "gatling-highcharts",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Gatling-Highcharts License",
+            "LicenseRef-scancode-gatling-highcharts"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "epson-linux-sla-2023",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Epson End User Software License Agreement 2023",
-      "Epson EULA 2023",
-      "LicenseRef-scancode-epson-linux-sla-2023"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "epson-linux-sla-2023",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Epson End User Software License Agreement 2023",
+            "Epson EULA 2023",
+            "LicenseRef-scancode-epson-linux-sla-2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

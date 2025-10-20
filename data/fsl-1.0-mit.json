@@ -1,15 +1,17 @@
 {
-  "canonical": "fsl-1.0-mit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "FSL-1.0-MIT",
-      "Functional Source License, Version 1.0, MIT Change License",
-      "LicenseRef-scancode-fsl-1.0-mit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "fsl-1.0-mit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "FSL-1.0-MIT",
+            "Functional Source License, Version 1.0, MIT Change License",
+            "LicenseRef-scancode-fsl-1.0-mit"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

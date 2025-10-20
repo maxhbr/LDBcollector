@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-visual-2008-runtime",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Visual C++ 2008 Runtime Libraries License",
-      "MS Visual C++ 2008 Runtime Libraries License",
-      "LicenseRef-scancode-ms-visual-2008-runtime"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-visual-2008-runtime",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Visual C++ 2008 Runtime Libraries License",
+            "MS Visual C++ 2008 Runtime Libraries License",
+            "LicenseRef-scancode-ms-visual-2008-runtime"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

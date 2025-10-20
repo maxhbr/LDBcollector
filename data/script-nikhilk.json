@@ -1,13 +1,15 @@
 {
-  "canonical": "script-nikhilk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Script# License",
-      "LicenseRef-scancode-script-nikhilk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "script-nikhilk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Script# License",
+            "LicenseRef-scancode-script-nikhilk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "naughter",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Naughter Software License",
-      "LicenseRef-scancode-naughter"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "naughter",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Naughter Software License",
+            "LicenseRef-scancode-naughter"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

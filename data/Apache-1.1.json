@@ -1,20 +1,22 @@
 {
-  "canonical": "Apache-1.1",
-  "aliases": {
-    "spdx": [
-      "Apache License 1.1"
-    ],
-    "custom": [],
-    "osi": [
-      "Apache Software License, Version 1.1"
-    ],
-    "scancodeLicensedb": [
-      "apache-1.1",
-      "Apache 1.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "Apache-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Apache License 1.1"
+        ],
+        "custom": [],
+        "osi": [
+            "Apache Software License, Version 1.1"
+        ],
+        "scancodeLicensedb": [
+            "apache-1.1",
+            "Apache 1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

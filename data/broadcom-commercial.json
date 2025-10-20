@@ -1,13 +1,15 @@
 {
-  "canonical": "broadcom-commercial",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Broadcom Commercial Notice",
-      "LicenseRef-scancode-broadcom-commercial"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "broadcom-commercial",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Broadcom Commercial Notice",
+            "LicenseRef-scancode-broadcom-commercial"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

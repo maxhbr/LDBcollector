@@ -1,14 +1,16 @@
 {
-  "canonical": "owfa-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OWFa 1.0 - Patent and Copyright Grants",
-      "LicenseRef-scancode-owfa-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "owfa-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OWFa 1.0 - Patent and Copyright Grants",
+            "LicenseRef-scancode-owfa-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

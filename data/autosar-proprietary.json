@@ -1,13 +1,15 @@
 {
-  "canonical": "autosar-proprietary",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "AUTOSAR Proprietary Notice",
-      "LicenseRef-scancode-autosar-proprietary"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "autosar-proprietary",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "AUTOSAR Proprietary Notice",
+            "LicenseRef-scancode-autosar-proprietary"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

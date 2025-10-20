@@ -1,13 +1,15 @@
 {
-  "canonical": "rtools-util",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "RTools.Util License",
-      "LicenseRef-scancode-rtools-util"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rtools-util",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "RTools.Util License",
+            "LicenseRef-scancode-rtools-util"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

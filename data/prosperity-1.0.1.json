@@ -1,15 +1,17 @@
 {
-  "canonical": "prosperity-1.0.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "The Prosperity Public License 1.0.1",
-      "Prosperity Public License 1.0.1",
-      "LicenseRef-scancode-prosperity-1.0.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "prosperity-1.0.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "The Prosperity Public License 1.0.1",
+            "Prosperity Public License 1.0.1",
+            "LicenseRef-scancode-prosperity-1.0.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

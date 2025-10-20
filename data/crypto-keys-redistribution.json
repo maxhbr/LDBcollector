@@ -1,13 +1,15 @@
 {
-  "canonical": "crypto-keys-redistribution",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Cryptographic keys redistribution",
-      "LicenseRef-scancode-crypto-keys-redistribution"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "crypto-keys-redistribution",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Cryptographic keys redistribution",
+            "LicenseRef-scancode-crypto-keys-redistribution"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

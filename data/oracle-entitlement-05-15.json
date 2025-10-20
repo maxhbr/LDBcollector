@@ -1,13 +1,15 @@
 {
-  "canonical": "oracle-entitlement-05-15",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Oracle Entitlement 5 plus 15",
-      "LicenseRef-scancode-oracle-entitlement-05-15"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "oracle-entitlement-05-15",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Oracle Entitlement 5 plus 15",
+            "LicenseRef-scancode-oracle-entitlement-05-15"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "lzma-sdk-original",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LZMA SDK Original",
-      "LicenseRef-scancode-lzma-sdk-original"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "lzma-sdk-original",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LZMA SDK Original",
+            "LicenseRef-scancode-lzma-sdk-original"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

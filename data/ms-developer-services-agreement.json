@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-developer-services-agreement",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Developer Services Agreement",
-      "MS Developer Services Agreement",
-      "LicenseRef-scancode-ms-developer-services-agreement",
-      "LicenseRef-scancode-ms-dev-services-agreement"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-developer-services-agreement",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Developer Services Agreement",
+            "MS Developer Services Agreement",
+            "LicenseRef-scancode-ms-developer-services-agreement",
+            "LicenseRef-scancode-ms-dev-services-agreement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

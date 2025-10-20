@@ -1,17 +1,19 @@
 {
-  "canonical": "pkgconf",
-  "aliases": {
-    "spdx": [
-      "pkgconf License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "mit-taylor-variant",
-      "MIT Taylor Variant",
-      "LicenseRef-scancode-mit-taylor-variant"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "pkgconf",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "pkgconf License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "mit-taylor-variant",
+            "MIT Taylor Variant",
+            "LicenseRef-scancode-mit-taylor-variant"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

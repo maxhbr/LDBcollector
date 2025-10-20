@@ -1,13 +1,15 @@
 {
-  "canonical": "ascender-web-fonts",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Ascender Web Fonts License",
-      "LicenseRef-scancode-ascender-web-fonts"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ascender-web-fonts",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Ascender Web Fonts License",
+            "LicenseRef-scancode-ascender-web-fonts"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

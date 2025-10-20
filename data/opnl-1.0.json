@@ -1,15 +1,17 @@
 {
-  "canonical": "opnl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Open Innovation License version 1.0",
-      "OPNL-1.0",
-      "LicenseRef-scancode-opnl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "opnl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Open Innovation License version 1.0",
+            "OPNL-1.0",
+            "LicenseRef-scancode-opnl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

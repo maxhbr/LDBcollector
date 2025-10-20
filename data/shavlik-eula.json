@@ -1,13 +1,15 @@
 {
-  "canonical": "shavlik-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Shavlik Technologies EULA",
-      "LicenseRef-scancode-shavlik-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "shavlik-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Shavlik Technologies EULA",
+            "LicenseRef-scancode-shavlik-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

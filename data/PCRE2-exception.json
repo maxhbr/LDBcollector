@@ -1,15 +1,17 @@
 {
-  "canonical": "PCRE2-exception",
-  "aliases": {
-    "spdx": [
-      "PCRE2 exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "pcre2-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "PCRE2-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "PCRE2 exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "pcre2-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

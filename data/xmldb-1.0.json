@@ -1,14 +1,16 @@
 {
-  "canonical": "xmldb-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "XML:DB Initiative Software License 1.0",
-      "LicenseRef-scancode-xmldb-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "xmldb-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "XML:DB Initiative Software License 1.0",
+            "LicenseRef-scancode-xmldb-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

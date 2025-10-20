@@ -1,18 +1,20 @@
 {
-  "canonical": "COIL-1.0",
-  "aliases": {
-    "spdx": [
-      "Copyfree Open Innovation License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "COIL-1.0",
-      "Copyfree Open Innovation License 1.0",
-      "coil-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "COIL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Copyfree Open Innovation License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "COIL-1.0",
+            "Copyfree Open Innovation License 1.0",
+            "coil-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

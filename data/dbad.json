@@ -1,14 +1,16 @@
 {
-  "canonical": "dbad",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "dbad",
-      "Dont Be A Dick Public License",
-      "LicenseRef-scancode-dbad"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "dbad",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "dbad",
+            "Dont Be A Dick Public License",
+            "LicenseRef-scancode-dbad"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

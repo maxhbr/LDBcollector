@@ -1,15 +1,17 @@
 {
-  "canonical": "crapl-0.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-crapl-0.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "CRAPL v0 BETA 1"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "crapl-0.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-crapl-0.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "CRAPL v0 BETA 1"
+    ],
+    "isMajorVersionOnly": true
 }

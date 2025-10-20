@@ -1,16 +1,18 @@
 {
-  "canonical": "Parity-6.0.0",
-  "aliases": {
-    "spdx": [
-      "The Parity Public License 6.0.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "parity-6.0.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Parity-6.0.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "The Parity Public License 6.0.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "parity-6.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

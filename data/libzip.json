@@ -1,13 +1,15 @@
 {
-  "canonical": "libzip",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NiH libzip License",
-      "libzip License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "libzip",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NiH libzip License",
+            "libzip License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

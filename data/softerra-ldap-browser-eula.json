@@ -1,13 +1,15 @@
 {
-  "canonical": "softerra-ldap-browser-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Softerra LDAP Browser EULA",
-      "LicenseRef-scancode-softerra-ldap-browser-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "softerra-ldap-browser-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Softerra LDAP Browser EULA",
+            "LicenseRef-scancode-softerra-ldap-browser-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

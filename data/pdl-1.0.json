@@ -1,15 +1,17 @@
 {
-  "canonical": "pdl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "PDL-1.0",
-      "Public Documentation License Version 1.0",
-      "LicenseRef-scancode-pdl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "pdl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "PDL-1.0",
+            "Public Documentation License Version 1.0",
+            "LicenseRef-scancode-pdl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

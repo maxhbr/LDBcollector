@@ -1,14 +1,16 @@
 {
-  "canonical": "hazelcast-community-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Hazelcast Community License 1.0",
-      "LicenseRef-scancode-hazelcast-community-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "hazelcast-community-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Hazelcast Community License 1.0",
+            "LicenseRef-scancode-hazelcast-community-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

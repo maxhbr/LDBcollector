@@ -1,13 +1,15 @@
 {
-  "canonical": "lcs-telegraphics",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LCS-Telegraphics License",
-      "LicenseRef-scancode-lcs-telegraphics"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "lcs-telegraphics",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LCS-Telegraphics License",
+            "LicenseRef-scancode-lcs-telegraphics"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

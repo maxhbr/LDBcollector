@@ -1,13 +1,15 @@
 {
-  "canonical": "nucleusicons-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NucleusIcons EULA",
-      "LicenseRef-scancode-nucleusicons-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nucleusicons-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NucleusIcons EULA",
+            "LicenseRef-scancode-nucleusicons-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

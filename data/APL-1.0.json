@@ -1,22 +1,24 @@
 {
-  "canonical": "APL-1.0",
-  "aliases": {
-    "spdx": [
-      "Adaptive Public License 1.0"
+    "canonical": {
+        "id": "APL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Adaptive Public License 1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Adaptive Public License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "APL 1.0",
+            "adapt-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Adaptive Public License"
     ],
-    "custom": [],
-    "osi": [
-      "Adaptive Public License, Version 1.0"
-    ],
-    "scancodeLicensedb": [
-      "APL 1.0",
-      "adapt-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "Adaptive Public License"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

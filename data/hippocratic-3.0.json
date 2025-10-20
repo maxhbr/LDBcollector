@@ -1,14 +1,16 @@
 {
-  "canonical": "hippocratic-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Hippocratic License v3.0",
-      "LicenseRef-scancode-Hippocratic-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "hippocratic-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Hippocratic License v3.0",
+            "LicenseRef-scancode-Hippocratic-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

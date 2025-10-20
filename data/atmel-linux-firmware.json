@@ -1,13 +1,15 @@
 {
-  "canonical": "atmel-linux-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Atmel Linux Firmware License",
-      "LicenseRef-scancode-atmel-linux-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "atmel-linux-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Atmel Linux Firmware License",
+            "LicenseRef-scancode-atmel-linux-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

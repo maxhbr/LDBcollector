@@ -1,14 +1,16 @@
 {
-  "canonical": "csla",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CSLA License",
-      "CSLA .NET License",
-      "LicenseRef-scancode-csla"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "csla",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CSLA License",
+            "CSLA .NET License",
+            "LicenseRef-scancode-csla"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

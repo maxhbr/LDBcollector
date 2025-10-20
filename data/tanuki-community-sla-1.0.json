@@ -1,15 +1,17 @@
 {
-  "canonical": "tanuki-community-sla-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Tanuki Community Software License Agreement 1.0",
-      "Tanuki Community SLA 1.0",
-      "LicenseRef-scancode-tanuki-community-sla-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "tanuki-community-sla-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Tanuki Community Software License Agreement 1.0",
+            "Tanuki Community SLA 1.0",
+            "LicenseRef-scancode-tanuki-community-sla-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

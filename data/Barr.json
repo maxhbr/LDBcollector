@@ -1,16 +1,18 @@
 {
-  "canonical": "Barr",
-  "aliases": {
-    "spdx": [
-      "Barr License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Barr TeX License",
-      "barr-tex"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Barr",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Barr License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Barr TeX License",
+            "barr-tex"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

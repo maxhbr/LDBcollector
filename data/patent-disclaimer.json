@@ -1,13 +1,15 @@
 {
-  "canonical": "patent-disclaimer",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Generic patent disclaimer",
-      "LicenseRef-scancode-patent-disclaimer"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "patent-disclaimer",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Generic patent disclaimer",
+            "LicenseRef-scancode-patent-disclaimer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

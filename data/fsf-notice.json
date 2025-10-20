@@ -1,13 +1,15 @@
 {
-  "canonical": "fsf-notice",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "FSF Notice",
-      "LicenseRef-scancode-fsf-notice"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "fsf-notice",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "FSF Notice",
+            "LicenseRef-scancode-fsf-notice"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

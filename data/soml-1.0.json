@@ -1,15 +1,17 @@
 {
-  "canonical": "soml-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SOML-1.0",
-      "Software for Open Models License (SOM) 1.0",
-      "LicenseRef-scancode-soml-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "soml-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SOML-1.0",
+            "Software for Open Models License (SOM) 1.0",
+            "LicenseRef-scancode-soml-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

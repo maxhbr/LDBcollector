@@ -1,17 +1,19 @@
 {
-  "canonical": "YPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Yahoo! Public License v1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "YPL 1.0",
-      "ypl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "YPL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Yahoo! Public License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "YPL 1.0",
+            "ypl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

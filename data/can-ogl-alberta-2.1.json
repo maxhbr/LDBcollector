@@ -1,15 +1,17 @@
 {
-  "canonical": "can-ogl-alberta-2.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OGL Alberta 2.1",
-      "Open Government Licence Alberta 2.1",
-      "LicenseRef-scancode-can-ogl-alberta-2.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "can-ogl-alberta-2.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OGL Alberta 2.1",
+            "Open Government Licence Alberta 2.1",
+            "LicenseRef-scancode-can-ogl-alberta-2.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

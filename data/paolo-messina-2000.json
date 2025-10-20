@@ -1,13 +1,15 @@
 {
-  "canonical": "paolo-messina-2000",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Paolo Messina 2000",
-      "LicenseRef-scancode-paolo-messina-2000"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "paolo-messina-2000",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Paolo Messina 2000",
+            "LicenseRef-scancode-paolo-messina-2000"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

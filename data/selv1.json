@@ -1,14 +1,16 @@
 {
-  "canonical": "selv1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-selv1",
-      "SELv1",
-      "Stalwart Enterprise License 1.0 (SELv1) Agreement"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "selv1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-selv1",
+            "SELv1",
+            "Stalwart Enterprise License 1.0 (SELv1) Agreement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

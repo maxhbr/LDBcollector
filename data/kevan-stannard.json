@@ -1,14 +1,16 @@
 {
-  "canonical": "kevan-stannard",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Kevan Stannard Free Software License",
-      "Kevan Stannard License",
-      "LicenseRef-scancode-kevan-stannard"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "kevan-stannard",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Kevan Stannard Free Software License",
+            "Kevan Stannard License",
+            "LicenseRef-scancode-kevan-stannard"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

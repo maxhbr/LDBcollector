@@ -1,13 +1,15 @@
 {
-  "canonical": "kumar-robotics",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Kumar Robotics License",
-      "LicenseRef-scancode-kumar-robotics"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "kumar-robotics",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Kumar Robotics License",
+            "LicenseRef-scancode-kumar-robotics"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

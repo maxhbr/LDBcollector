@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-stanford",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11-Style (Stanford University)",
-      "LicenseRef-scancode-x11-stanford"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-stanford",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11-Style (Stanford University)",
+            "LicenseRef-scancode-x11-stanford"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

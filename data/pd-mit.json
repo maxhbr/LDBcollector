@@ -1,13 +1,15 @@
 {
-  "canonical": "pd-mit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Modified MIT License for Public Domain software",
-      "LicenseRef-scancode-pd-mit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "pd-mit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Modified MIT License for Public Domain software",
+            "LicenseRef-scancode-pd-mit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

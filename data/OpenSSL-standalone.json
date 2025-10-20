@@ -1,12 +1,14 @@
 {
-    "canonical": "OpenSSL-standalone",
+    "canonical": {
+        "id": "OpenSSL-standalone",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "OpenSSL License - standalone"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

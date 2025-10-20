@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-dec1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11-Style (DEC 1)",
-      "LicenseRef-scancode-x11-dec1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-dec1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11-Style (DEC 1)",
+            "LicenseRef-scancode-x11-dec1"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

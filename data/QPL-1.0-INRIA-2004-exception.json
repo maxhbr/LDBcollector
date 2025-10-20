@@ -1,19 +1,21 @@
 {
-  "canonical": "QPL-1.0-INRIA-2004-exception",
-  "aliases": {
-    "spdx": [
-      "INRIA QPL 1.0 2004 variant exception"
+    "canonical": {
+        "id": "QPL-1.0-INRIA-2004-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "INRIA QPL 1.0 2004 variant exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "INRIA Linking Exception to QPL 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "LicenseRef-scancode-inria-linking-exception",
+        "inria-linking-exception"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "INRIA Linking Exception to QPL 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "LicenseRef-scancode-inria-linking-exception",
-    "inria-linking-exception"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

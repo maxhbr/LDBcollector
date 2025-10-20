@@ -1,17 +1,19 @@
 {
-  "canonical": "hdparm",
-  "aliases": {
-    "spdx": [
-      "hdparm License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-hdparm",
-      "HDPARM License",
-      "hdparm"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "hdparm",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "hdparm License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-hdparm",
+            "HDPARM License",
+            "hdparm"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

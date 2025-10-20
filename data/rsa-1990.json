@@ -1,14 +1,16 @@
 {
-  "canonical": "rsa-1990",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "RSA Data Security Notice 1990",
-      "RSA 1990",
-      "LicenseRef-scancode-rsa-1990"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rsa-1990",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "RSA Data Security Notice 1990",
+            "RSA 1990",
+            "LicenseRef-scancode-rsa-1990"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

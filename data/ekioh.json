@@ -1,12 +1,14 @@
 {
-  "canonical": "ekioh",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Ekioh License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ekioh",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Ekioh License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "politepix-pl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Politepix Public License 1.0",
-      "LicenseRef-scancode-politepix-pl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "politepix-pl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Politepix Public License 1.0",
+            "LicenseRef-scancode-politepix-pl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

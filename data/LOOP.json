@@ -1,15 +1,17 @@
 {
-  "canonical": "LOOP",
-  "aliases": {
-    "spdx": [
-      "Common Lisp LOOP License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "loop"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "LOOP",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Common Lisp LOOP License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "loop"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

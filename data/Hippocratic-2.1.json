@@ -1,17 +1,19 @@
 {
-  "canonical": "Hippocratic-2.1",
-  "aliases": {
-    "spdx": [
-      "Hippocratic License 2.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Hippocratic License v2.1",
-      "hippocratic-2.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Hippocratic-2.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Hippocratic License 2.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Hippocratic License v2.1",
+            "hippocratic-2.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-doc",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11 Documentation License",
-      "LicenseRef-scancode-x11-doc"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-doc",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11 Documentation License",
+            "LicenseRef-scancode-x11-doc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

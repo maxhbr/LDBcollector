@@ -1,13 +1,15 @@
 {
-  "canonical": "etalab-2.0-fr",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Etalab Open License 2.0 French"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "etalab-2.0-fr",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Etalab Open License 2.0 French"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

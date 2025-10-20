@@ -1,13 +1,15 @@
 {
-  "canonical": "saas-mit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SaaS MIT License",
-      "LicenseRef-scancode-saas-mit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "saas-mit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SaaS MIT License",
+            "LicenseRef-scancode-saas-mit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

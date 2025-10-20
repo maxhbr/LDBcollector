@@ -1,15 +1,17 @@
 {
-  "canonical": "ssh-keyscan",
-  "aliases": {
-    "spdx": [
-      "ssh-keyscan License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ssh-keyscan"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ssh-keyscan",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "ssh-keyscan License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ssh-keyscan"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

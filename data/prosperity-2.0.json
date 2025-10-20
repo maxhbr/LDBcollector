@@ -1,15 +1,17 @@
 {
-  "canonical": "prosperity-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "The Prosperity Public License 2.0",
-      "Prosperity Public License 2.0",
-      "LicenseRef-scancode-prosperity-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "prosperity-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "The Prosperity Public License 2.0",
+            "Prosperity Public License 2.0",
+            "LicenseRef-scancode-prosperity-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

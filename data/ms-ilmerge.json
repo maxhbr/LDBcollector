@@ -1,13 +1,15 @@
 {
-  "canonical": "ms-ilmerge",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS ILMerge License",
-      "LicenseRef-scancode-ms-ilmerge"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-ilmerge",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS ILMerge License",
+            "LicenseRef-scancode-ms-ilmerge"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

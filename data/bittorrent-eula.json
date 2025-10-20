@@ -1,14 +1,16 @@
 {
-  "canonical": "bittorrent-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BitTorrent EULA",
-      "BitTorrent End User License Agreement (EULA)",
-      "LicenseRef-scancode-bittorrent-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bittorrent-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BitTorrent EULA",
+            "BitTorrent End User License Agreement (EULA)",
+            "LicenseRef-scancode-bittorrent-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "sun-bcl-sdk-1.4.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun BCL SDK 1.4.2",
-      "LicenseRef-scancode-sun-bcl-sdk-1.4.2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "sun-bcl-sdk-1.4.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun BCL SDK 1.4.2",
+            "LicenseRef-scancode-sun-bcl-sdk-1.4.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

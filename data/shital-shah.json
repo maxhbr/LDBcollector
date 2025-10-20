@@ -1,13 +1,15 @@
 {
-  "canonical": "shital-shah",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Shital Shah License",
-      "LicenseRef-scancode-shital-shah"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "shital-shah",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Shital Shah License",
+            "LicenseRef-scancode-shital-shah"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

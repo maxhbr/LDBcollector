@@ -1,16 +1,18 @@
 {
-  "canonical": "Info-ZIP",
-  "aliases": {
-    "spdx": [
-      "Info-ZIP License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "info-zip",
-      "Info-Zip License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Info-ZIP",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Info-ZIP License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "info-zip",
+            "Info-Zip License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

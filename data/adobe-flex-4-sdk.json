@@ -1,14 +1,16 @@
 {
-  "canonical": "adobe-flex-4-sdk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adobe Flex 4 SDK Software License Agreement",
-      "Adobe Flex 4 SDK SLA",
-      "LicenseRef-scancode-adobe-flex-4-sdk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adobe-flex-4-sdk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe Flex 4 SDK Software License Agreement",
+            "Adobe Flex 4 SDK SLA",
+            "LicenseRef-scancode-adobe-flex-4-sdk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

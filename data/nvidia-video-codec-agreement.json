@@ -1,13 +1,15 @@
 {
-  "canonical": "nvidia-video-codec-agreement",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NVIDIA Video Codec SDK Agreement",
-      "LicenseRef-scancode-nvidia-video-codec-agreement"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nvidia-video-codec-agreement",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NVIDIA Video Codec SDK Agreement",
+            "LicenseRef-scancode-nvidia-video-codec-agreement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

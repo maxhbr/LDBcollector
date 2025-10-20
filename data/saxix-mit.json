@@ -1,13 +1,15 @@
 {
-  "canonical": "saxix-mit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Stefano Apostolico MIT License",
-      "LicenseRef-scancode-saxix-mit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "saxix-mit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Stefano Apostolico MIT License",
+            "LicenseRef-scancode-saxix-mit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

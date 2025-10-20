@@ -1,13 +1,15 @@
 {
-  "canonical": "vitesse-prop",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Vitesse Proprietary Notice",
-      "LicenseRef-scancode-vitesse-prop"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "vitesse-prop",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Vitesse Proprietary Notice",
+            "LicenseRef-scancode-vitesse-prop"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

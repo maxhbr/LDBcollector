@@ -1,18 +1,20 @@
 {
-  "canonical": "OGL-UK-3.0",
-  "aliases": {
-    "spdx": [
-      "Open Government Licence v3.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ogl-uk-3.0",
-      "OGL-UK-3.0",
-      "U.K. Open Government License for Public Sector Information v3.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "OGL-UK-3.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Open Government Licence v3.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ogl-uk-3.0",
+            "OGL-UK-3.0",
+            "U.K. Open Government License for Public Sector Information v3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

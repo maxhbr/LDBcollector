@@ -1,15 +1,17 @@
 {
-  "canonical": "metamail",
-  "aliases": {
-    "spdx": [
-      "metamail License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "metamail"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "metamail",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "metamail License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "metamail"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

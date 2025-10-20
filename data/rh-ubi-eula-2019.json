@@ -1,14 +1,16 @@
 {
-  "canonical": "rh-ubi-eula-2019",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Red Hat UBI EULA",
-      "Red Hat Universal Base Image EULA",
-      "LicenseRef-scancode-rh-ubi-eula-2019"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rh-ubi-eula-2019",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Red Hat UBI EULA",
+            "Red Hat Universal Base Image EULA",
+            "LicenseRef-scancode-rh-ubi-eula-2019"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

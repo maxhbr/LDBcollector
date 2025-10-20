@@ -1,16 +1,18 @@
 {
-  "canonical": "non-violent-4.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NVPL 4.0",
-      "LicenseRef-scancode-non-violent-4.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Non-Violent Public License v4"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "non-violent-4.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NVPL 4.0",
+            "LicenseRef-scancode-non-violent-4.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Non-Violent Public License v4"
+    ],
+    "isMajorVersionOnly": true
 }

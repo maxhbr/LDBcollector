@@ -1,5 +1,8 @@
 {
-    "canonical": "EPL-2.0",
+    "canonical": {
+        "id": "EPL-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Eclipse Public License 2.0"
@@ -36,7 +39,6 @@
             "Eclipse Public License 2.0 (EPL-2.0)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": true

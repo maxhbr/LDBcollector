@@ -1,13 +1,15 @@
 {
-  "canonical": "unlimited-binary-use-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Unlimited Binary Use Exception",
-      "LicenseRef-scancode-unlimited-binary-use-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "unlimited-binary-use-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Unlimited Binary Use Exception",
+            "LicenseRef-scancode-unlimited-binary-use-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

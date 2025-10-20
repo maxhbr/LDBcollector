@@ -1,17 +1,19 @@
 {
-  "canonical": "Apache-1.0",
-  "aliases": {
-    "spdx": [
-      "Apache License 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Apache 1.0",
-      "apache-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "Apache-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Apache License 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Apache 1.0",
+            "apache-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "kfgqpc-uthmanic-script-hafs",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Uthmanic Script License",
-      "LicenseRef-scancode-kfgqpc-uthmanic-script-hafs"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "kfgqpc-uthmanic-script-hafs",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Uthmanic Script License",
+            "LicenseRef-scancode-kfgqpc-uthmanic-script-hafs"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

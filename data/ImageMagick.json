@@ -1,15 +1,17 @@
 {
-  "canonical": "ImageMagick",
-  "aliases": {
-    "spdx": [
-      "ImageMagick License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "imagemagick"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ImageMagick",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "ImageMagick License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "imagemagick"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

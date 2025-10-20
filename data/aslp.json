@@ -1,14 +1,16 @@
 {
-  "canonical": "aslp",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Artop Software License for Preparatory Development",
-      "Artop ASLP",
-      "LicenseRef-scancode-aslp"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "aslp",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Artop Software License for Preparatory Development",
+            "Artop ASLP",
+            "LicenseRef-scancode-aslp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,21 +1,23 @@
 {
-  "canonical": "LGPL-2.0-or-later",
-  "aliases": {
-    "spdx": [
-      "GNU Library General Public License v2 or later",
-      "LGPL-2.0+"
+    "canonical": {
+        "id": "LGPL-2.0-or-later",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GNU Library General Public License v2 or later",
+            "LGPL-2.0+"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "GNU Library General Public License 2.0 or later",
+            "LGPL 2.0 or later",
+            "lgpl-2.0-plus"
+        ]
+    },
+    "rejected": [
+        "LicenseRef-LGPL"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "GNU Library General Public License 2.0 or later",
-      "LGPL 2.0 or later",
-      "lgpl-2.0-plus"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [
-    "LicenseRef-LGPL"
-  ],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "risky": [],
+    "isMajorVersionOnly": false
 }

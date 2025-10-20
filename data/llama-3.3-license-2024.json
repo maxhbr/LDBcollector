@@ -1,14 +1,16 @@
 {
-  "canonical": "llama-3.3-license-2024",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-llama-3.3-license-2024",
-      "Llama 3.3 Community License Agreement 2024"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "llama-3.3-license-2024",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-llama-3.3-license-2024",
+            "Llama 3.3 Community License Agreement 2024"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

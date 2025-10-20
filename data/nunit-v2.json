@@ -1,12 +1,14 @@
 {
-  "canonical": "nunit-v2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NUnit v2 License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nunit-v2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NUnit v2 License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

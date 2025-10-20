@@ -1,17 +1,19 @@
 {
-  "canonical": "Qt-LGPL-exception-1.1",
-  "aliases": {
-    "spdx": [
-      "Qt LGPL exception 1.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "qt-lgpl-exception-1.1",
-      "Nokia-Qt-exception-1.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Qt-LGPL-exception-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Qt LGPL exception 1.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "qt-lgpl-exception-1.1",
+            "Nokia-Qt-exception-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

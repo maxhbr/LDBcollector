@@ -1,14 +1,16 @@
 {
-  "canonical": "google-tos-2020",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Google TOS 2020",
-      "Google Terms of Service 2020",
-      "LicenseRef-scancode-google-tos-2020"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "google-tos-2020",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Google TOS 2020",
+            "Google Terms of Service 2020",
+            "LicenseRef-scancode-google-tos-2020"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

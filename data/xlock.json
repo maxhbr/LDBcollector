@@ -1,17 +1,19 @@
 {
-  "canonical": "xlock",
-  "aliases": {
-    "spdx": [
-      "xlock License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "libpbm",
-      "LicenseRef-scancode-libpbm",
-      "PBM Library License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "xlock",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "xlock License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "libpbm",
+            "LicenseRef-scancode-libpbm",
+            "PBM Library License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

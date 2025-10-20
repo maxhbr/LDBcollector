@@ -1,13 +1,15 @@
 {
-  "canonical": "visual-numerics",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Visual Numerics License",
-      "LicenseRef-scancode-visual-numerics"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "visual-numerics",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Visual Numerics License",
+            "LicenseRef-scancode-visual-numerics"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

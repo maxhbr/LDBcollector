@@ -1,13 +1,15 @@
 {
-  "canonical": "cpm-2022",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CP/M License 2022",
-      "LicenseRef-scancode-cpm-2022"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cpm-2022",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CP/M License 2022",
+            "LicenseRef-scancode-cpm-2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

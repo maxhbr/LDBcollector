@@ -1,17 +1,19 @@
 {
-  "canonical": "u-boot-exception-2.0",
-  "aliases": {
-    "spdx": [
-      "U-Boot exception 2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "u-boot-exception-2.0",
-      "U-Boot exception to GPL 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "u-boot-exception-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "U-Boot exception 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "u-boot-exception-2.0",
+            "U-Boot exception to GPL 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

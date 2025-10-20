@@ -1,13 +1,15 @@
 {
-  "canonical": "libwebsockets-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "libwebsockets exception to LGPL 2.1",
-      "LicenseRef-scancode-libwebsockets-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "libwebsockets-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "libwebsockets exception to LGPL 2.1",
+            "LicenseRef-scancode-libwebsockets-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

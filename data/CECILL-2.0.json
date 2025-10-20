@@ -1,17 +1,19 @@
 {
-  "canonical": "CECILL-2.0",
-  "aliases": {
-    "spdx": [
-      "CeCILL Free Software License Agreement v2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "CeCILL 2.0",
-      "cecill-2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "CECILL-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "CeCILL Free Software License Agreement v2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "CeCILL 2.0",
+            "cecill-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

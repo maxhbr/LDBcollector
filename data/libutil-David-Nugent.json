@@ -1,15 +1,17 @@
 {
-  "canonical": "libutil-David-Nugent",
-  "aliases": {
-    "spdx": [
-      "libutil David Nugent License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "libutil-david-nugent"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "libutil-David-Nugent",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "libutil David Nugent License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "libutil-david-nugent"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "GFDL-1.3-invariants-or-later",
-  "aliases": {
-    "spdx": [
-      "GNU Free Documentation License v1.3 or later - invariants"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "gfdl-1.3-invariants-or-later",
-      "GFDL-1.3-invariants-or-later"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "GFDL-1.3-invariants-or-later",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GNU Free Documentation License v1.3 or later - invariants"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "gfdl-1.3-invariants-or-later",
+            "GFDL-1.3-invariants-or-later"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

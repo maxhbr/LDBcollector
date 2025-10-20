@@ -1,15 +1,17 @@
 {
-  "canonical": "ic-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Internet Computer Community Source License 1.0",
-      "IC 1.0",
-      "LicenseRef-scancode-ic-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ic-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Internet Computer Community Source License 1.0",
+            "IC 1.0",
+            "LicenseRef-scancode-ic-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

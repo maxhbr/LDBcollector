@@ -1,15 +1,17 @@
 {
-  "canonical": "monetdb-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MonetDB 1.1",
-      "MonetDB Public License Version 1.1",
-      "LicenseRef-scancode-monetdb-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "monetdb-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MonetDB 1.1",
+            "MonetDB Public License Version 1.1",
+            "LicenseRef-scancode-monetdb-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

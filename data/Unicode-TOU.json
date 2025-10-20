@@ -1,15 +1,17 @@
 {
-  "canonical": "Unicode-TOU",
-  "aliases": {
-    "spdx": [
-      "Unicode Terms of Use"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "unicode-tou"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Unicode-TOU",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Unicode Terms of Use"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "unicode-tou"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

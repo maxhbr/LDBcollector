@@ -1,14 +1,16 @@
 {
-  "canonical": "wince-50-shared-source",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Windows CE 5.0 Shared Source License Agreement",
-      "MS Windows CE 5.0 Shared Source License",
-      "LicenseRef-scancode-wince-50-shared-source"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "wince-50-shared-source",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Windows CE 5.0 Shared Source License Agreement",
+            "MS Windows CE 5.0 Shared Source License",
+            "LicenseRef-scancode-wince-50-shared-source"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

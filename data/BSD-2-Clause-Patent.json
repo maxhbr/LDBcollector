@@ -1,16 +1,18 @@
 {
-  "canonical": "BSD-2-Clause-Patent",
-  "aliases": {
-    "spdx": [
-      "BSD-2-Clause Plus Patent License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "BSD-2-Clause Plus Patent",
-      "bsd-plus-patent"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-2-Clause-Patent",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD-2-Clause Plus Patent License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "BSD-2-Clause Plus Patent",
+            "bsd-plus-patent"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

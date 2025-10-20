@@ -40,7 +40,9 @@ def test_process_unrecognized_license_id_recognized(capsys):
     aliases = ["The MIT License", "MIT License"]
     canonical_id = "mit"
     data = {
-        "canonical": canonical_id,
+        "canonical": {
+            "id": canonical_id
+        },
         "aliases": {
             "osi": [],
             "spdx": ["MIT License"]
@@ -57,7 +59,9 @@ def test_process_unrecognized_license_id_recognized_still_unrecognized(capsys):
     aliases = ["The MIT License", "MIT License"]
     canonical_id = "mit"
     data = {
-        "canonical": "MIT",
+        "canonical": {
+            "id": "MIT"
+        },
         "aliases": {
             "osi": [],
             "spdx": []

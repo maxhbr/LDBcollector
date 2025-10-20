@@ -1,13 +1,15 @@
 {
-  "canonical": "nxp-firmware-patent",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NXP Firmware with Patent License",
-      "LicenseRef-scancode-nxp-firmware-patent"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nxp-firmware-patent",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NXP Firmware with Patent License",
+            "LicenseRef-scancode-nxp-firmware-patent"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

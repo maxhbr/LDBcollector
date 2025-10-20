@@ -1,15 +1,17 @@
 {
-  "canonical": "NIST-PD",
-  "aliases": {
-    "spdx": [
-      "NIST Public Domain Notice"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "nist-pd"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "NIST-PD",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "NIST Public Domain Notice"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "nist-pd"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

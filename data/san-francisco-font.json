@@ -1,14 +1,16 @@
 {
-  "canonical": "san-francisco-font",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "San Francisco Font License",
-      "Apple San Francisco Font License",
-      "LicenseRef-scancode-san-francisco-font"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "san-francisco-font",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "San Francisco Font License",
+            "Apple San Francisco Font License",
+            "LicenseRef-scancode-san-francisco-font"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

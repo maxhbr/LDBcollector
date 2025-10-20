@@ -1,14 +1,16 @@
 {
-  "canonical": "openbd-exception-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OpenBD exception to GPL 3.0",
-      "LicenseRef-scancode-openbd-exception-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "openbd-exception-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OpenBD exception to GPL 3.0",
+            "LicenseRef-scancode-openbd-exception-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

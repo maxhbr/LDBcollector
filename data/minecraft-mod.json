@@ -1,13 +1,15 @@
 {
-  "canonical": "minecraft-mod",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Minecraft Mod License",
-      "LicenseRef-scancode-minecraft-mod"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "minecraft-mod",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Minecraft Mod License",
+            "LicenseRef-scancode-minecraft-mod"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

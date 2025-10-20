@@ -1,13 +1,15 @@
 {
-  "canonical": "nicta-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NICTA Exception to AGPL",
-      "LicenseRef-scancode-nicta-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nicta-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NICTA Exception to AGPL",
+            "LicenseRef-scancode-nicta-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

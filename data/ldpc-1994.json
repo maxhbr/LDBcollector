@@ -1,14 +1,16 @@
 {
-  "canonical": "ldpc-1994",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Linux Documentation Project Copying License 1994-03-30",
-      "LDPC-1994",
-      "LicenseRef-scancode-ldpc-1994"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ldpc-1994",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Linux Documentation Project Copying License 1994-03-30",
+            "LDPC-1994",
+            "LicenseRef-scancode-ldpc-1994"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

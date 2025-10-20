@@ -1,13 +1,15 @@
 {
-  "canonical": "jason-mayes",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Jason Mayes License",
-      "LicenseRef-scancode-jason-mayes"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "jason-mayes",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Jason Mayes License",
+            "LicenseRef-scancode-jason-mayes"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

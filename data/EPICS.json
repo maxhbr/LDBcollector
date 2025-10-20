@@ -1,15 +1,17 @@
 {
-  "canonical": "EPICS",
-  "aliases": {
-    "spdx": [
-      "EPICS Open License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "epics"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "EPICS",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "EPICS Open License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "epics"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

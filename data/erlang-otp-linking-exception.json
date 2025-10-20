@@ -1,12 +1,14 @@
 {
-    "canonical": "erlang-otp-linking-exception",
+    "canonical": {
+        "id": "erlang-otp-linking-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Erlang/OTP Linking Exception"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

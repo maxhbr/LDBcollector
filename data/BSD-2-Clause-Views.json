@@ -1,18 +1,20 @@
 {
-  "canonical": "BSD-2-Clause-Views",
-  "aliases": {
-    "spdx": [
-      "BSD 2-Clause with views sentence"
-    ],
-    "custom": [
-      "FreeBSD"
-    ],
-    "scancodeLicensedb": [
-      "BSD-2-Clause-Views",
-      "bsd-2-clause-views"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-2-Clause-Views",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause with views sentence"
+        ],
+        "custom": [
+            "FreeBSD"
+        ],
+        "scancodeLicensedb": [
+            "BSD-2-Clause-Views",
+            "bsd-2-clause-views"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

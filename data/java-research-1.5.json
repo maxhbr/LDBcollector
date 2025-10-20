@@ -1,15 +1,17 @@
 {
-  "canonical": "java-research-1.5",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Java Research License Version 1.5",
-      "Java Research License 1.5",
-      "LicenseRef-scancode-java-research-1.5"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "java-research-1.5",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Java Research License Version 1.5",
+            "Java Research License 1.5",
+            "LicenseRef-scancode-java-research-1.5"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "X11-swapped",
-  "aliases": {
-    "spdx": [
-      "X11 swapped final paragraphs"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "x11-swapped"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "X11-swapped",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "X11 swapped final paragraphs"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "x11-swapped"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

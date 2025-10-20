@@ -1,17 +1,19 @@
 {
-  "canonical": "MIT-Click",
-  "aliases": {
-    "spdx": [
-      "MIT Click License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "click-license",
-      "Click License",
-      "LicenseRef-scancode-click-license"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "MIT-Click",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "MIT Click License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "click-license",
+            "Click License",
+            "LicenseRef-scancode-click-license"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

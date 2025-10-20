@@ -1,20 +1,22 @@
 {
-  "canonical": "Python-2.0",
-  "aliases": {
-    "spdx": [
-      "Python License 2.0"
+    "canonical": {
+        "id": "Python-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Python License 2.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Python License, Version 2.0"
+        ]
+    },
+    "rejected": [
+        "python"
     ],
-    "custom": [],
-    "osi": [
-      "Python License, Version 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [
-    "python"
-  ],
-  "risky": [
-    "Python Software Foundation License v2"
-  ],
-  "isMajorVersionOnly": false
+    "risky": [
+        "Python Software Foundation License v2"
+    ],
+    "isMajorVersionOnly": false
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "autodesk-3d-sft-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-autodesk-3d-sft-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Autodesk 3D Studio File Toolkit for Release 3"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "autodesk-3d-sft-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-autodesk-3d-sft-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Autodesk 3D Studio File Toolkit for Release 3"
+    ],
+    "isMajorVersionOnly": true
 }

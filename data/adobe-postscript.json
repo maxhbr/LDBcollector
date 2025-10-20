@@ -1,13 +1,15 @@
 {
-  "canonical": "adobe-postscript",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adobe PostScript License",
-      "LicenseRef-scancode-adobe-postscript"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adobe-postscript",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe PostScript License",
+            "LicenseRef-scancode-adobe-postscript"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

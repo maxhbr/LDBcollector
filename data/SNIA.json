@@ -1,15 +1,17 @@
 {
-  "canonical": "SNIA",
-  "aliases": {
-    "spdx": [
-      "SNIA Public License 1.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "snia"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "SNIA",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "SNIA Public License 1.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "snia"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

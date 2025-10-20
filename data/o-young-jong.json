@@ -1,13 +1,15 @@
 {
-  "canonical": "o-young-jong",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "O Young Jong License",
-      "LicenseRef-scancode-o-young-jong"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "o-young-jong",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "O Young Jong License",
+            "LicenseRef-scancode-o-young-jong"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

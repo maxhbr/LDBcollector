@@ -1,15 +1,17 @@
 {
-  "canonical": "opensc-openssl-openpace-exception-gpl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-opensc-openssl-openpace-exception-gpl",
-      "OpenSC and OpenSSL linking exception to GPL in OpenPace",
-      "OpenSC OpenSSL linking exception GPL in OpenPace",
-      "LicenseRef-scancode-openpace-exception-gpl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "opensc-openssl-openpace-exception-gpl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-opensc-openssl-openpace-exception-gpl",
+            "OpenSC and OpenSSL linking exception to GPL in OpenPace",
+            "OpenSC OpenSSL linking exception GPL in OpenPace",
+            "LicenseRef-scancode-openpace-exception-gpl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

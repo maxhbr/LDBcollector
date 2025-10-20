@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-testplatform-17.0.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS TestPlatform 17.0.0",
-      "Microsoft Visual Studio TestPlatform 17.0.0",
-      "LicenseRef-scancode-ms-testplatform-17.0.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-testplatform-17.0.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS TestPlatform 17.0.0",
+            "Microsoft Visual Studio TestPlatform 17.0.0",
+            "LicenseRef-scancode-ms-testplatform-17.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

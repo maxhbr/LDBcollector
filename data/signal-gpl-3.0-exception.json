@@ -1,14 +1,16 @@
 {
-  "canonical": "signal-gpl-3.0-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Signal Exception to GPL 3.0",
-      "LicenseRef-scancode-signal-gpl-3.0-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "signal-gpl-3.0-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Signal Exception to GPL 3.0",
+            "LicenseRef-scancode-signal-gpl-3.0-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

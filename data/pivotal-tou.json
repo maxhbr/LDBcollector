@@ -1,13 +1,15 @@
 {
-  "canonical": "pivotal-tou",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Pivotal Software Terms of Use",
-      "LicenseRef-scancode-pivotal-tou"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "pivotal-tou",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Pivotal Software Terms of Use",
+            "LicenseRef-scancode-pivotal-tou"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

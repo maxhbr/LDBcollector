@@ -1,13 +1,15 @@
 {
-  "canonical": "ecma-no-patent",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Ecma no patent notice",
-      "LicenseRef-scancode-ecma-no-patent"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ecma-no-patent",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Ecma no patent notice",
+            "LicenseRef-scancode-ecma-no-patent"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

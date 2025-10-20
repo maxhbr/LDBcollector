@@ -1,13 +1,15 @@
 {
-  "canonical": "apache-2.0-linking-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Apache 2.0 with Linking Exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "apache-2.0-linking-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Apache 2.0 with Linking Exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "artistic-dist-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Artistic License for dist 1.0",
-      "Artistic dist 1.0",
-      "LicenseRef-scancode-artistic-1988-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "artistic-dist-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Artistic License for dist 1.0",
+            "Artistic dist 1.0",
+            "LicenseRef-scancode-artistic-1988-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

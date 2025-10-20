@@ -1,13 +1,15 @@
 {
-  "canonical": "cypress-linux-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Cypress Linux Firmware License",
-      "LicenseRef-scancode-cypress-linux-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cypress-linux-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Cypress Linux Firmware License",
+            "LicenseRef-scancode-cypress-linux-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-ibm",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "IBM Derivative Works License",
-      "LicenseRef-scancode-x11-ibm"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-ibm",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "IBM Derivative Works License",
+            "LicenseRef-scancode-x11-ibm"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

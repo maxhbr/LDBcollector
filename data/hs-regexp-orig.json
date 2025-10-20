@@ -1,12 +1,14 @@
 {
-  "canonical": "hs-regexp-orig",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Henry Spencer Original Regexp License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "hs-regexp-orig",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Henry Spencer Original Regexp License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

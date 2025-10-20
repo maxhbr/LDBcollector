@@ -40,11 +40,11 @@ class SpdxDataUpdate(BaseDataUpdate):
             data["aliases"].update({"spdx": [license_name]})
 
         # Update old canonical name and source with new SPDX data
-        old_src = data["src"]
-        old_canonical_id = data["canonical"]
+        old_src = data["canonical"]["src"]
+        old_canonical_id = data["canonical"]["id"]
 
-        data["src"] = self._src
-        data["canonical"] = license_id
+        data["canonical"]["src"] = self._src
+        data["canonical"]["id"] = license_id
         if old_canonical_id is not license_id:
             data["aliases"][old_src].append(old_canonical_id)
 
@@ -86,7 +86,7 @@ class SpdxDataUpdate(BaseDataUpdate):
             license_filepath = os.path.join(self._DATA_DIR, f"{license_file_id}.json")
             data = self.load_json_file(license_filepath)
 
-            if data["src"] == "spdx":
+            if data["canonical"]["src"] == "spdx":
                 self.update_license_file(license_file_id, license_name_variations)
             else:
                 self.update_non_spdx_license_file(license_id, data, license_filepath, aliases[0])
@@ -121,7 +121,7 @@ class SpdxDataUpdate(BaseDataUpdate):
             else:
                 license_filepath = os.path.join(self._DATA_DIR, f"{license_id}.json")
                 data = self.load_json_file(license_filepath)
-                if data["src"] == "spdx":
+                if data["canonical"]["src"] == "spdx":
                     self.update_license_file(license_id, [entry["name"]])
                 else:
                     self.update_non_spdx_license_file(license_id, data, license_filepath, entry["name"])

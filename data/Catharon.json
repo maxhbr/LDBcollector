@@ -1,18 +1,20 @@
 {
-  "canonical": "Catharon",
-  "aliases": {
-    "spdx": [
-      "Catharon License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-catharon-osl",
-      "catharon-osl",
-      "Catharon OSL",
-      "Catharon Open Source License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Catharon",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Catharon License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-catharon-osl",
+            "catharon-osl",
+            "Catharon OSL",
+            "Catharon Open Source License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "fair-source-0.9",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Fair Source v0.9",
-      "Fair Source License v0.9",
-      "LicenseRef-scancode-fair-source-0.9"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "fair-source-0.9",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Fair Source v0.9",
+            "Fair Source License v0.9",
+            "LicenseRef-scancode-fair-source-0.9"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

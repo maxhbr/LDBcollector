@@ -1,14 +1,16 @@
 {
-  "canonical": "nant-exception-2.0-plus",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NAnt exception to GPL 2.0 or later",
-      "LicenseRef-scancode-nant-exception-2.0-plus"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "nant-exception-2.0-plus",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NAnt exception to GPL 2.0 or later",
+            "LicenseRef-scancode-nant-exception-2.0-plus"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

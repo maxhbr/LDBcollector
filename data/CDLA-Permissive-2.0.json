@@ -1,17 +1,19 @@
 {
-  "canonical": "CDLA-Permissive-2.0",
-  "aliases": {
-    "spdx": [
-      "Community Data License Agreement Permissive 2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "CDLA Permissive 2.0",
-      "cdla-permissive-2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CDLA-Permissive-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Community Data License Agreement Permissive 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "CDLA Permissive 2.0",
+            "cdla-permissive-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

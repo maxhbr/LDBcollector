@@ -1,13 +1,15 @@
 {
-  "canonical": "bakoma-fonts-1995",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BaKoMa Fonts Licence 1995",
-      "LicenseRef-scancode-bakoma-fonts-1995"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bakoma-fonts-1995",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BaKoMa Fonts Licence 1995",
+            "LicenseRef-scancode-bakoma-fonts-1995"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

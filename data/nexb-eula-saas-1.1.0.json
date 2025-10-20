@@ -1,14 +1,16 @@
 {
-  "canonical": "nexb-eula-saas-1.1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "nexB EULA for SaaS 1.1.0",
-      "LicenseRef-scancode-nexb-eula-saas-1.1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "nexb-eula-saas-1.1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "nexB EULA for SaaS 1.1.0",
+            "LicenseRef-scancode-nexb-eula-saas-1.1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

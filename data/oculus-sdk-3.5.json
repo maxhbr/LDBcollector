@@ -1,15 +1,17 @@
 {
-  "canonical": "oculus-sdk-3.5",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Oculus Software Development Kit License Agreement v3.5",
-      "Oculus SDK License Agreement v3.5",
-      "LicenseRef-scancode-oculus-sdk-3.5"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "oculus-sdk-3.5",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Oculus Software Development Kit License Agreement v3.5",
+            "Oculus SDK License Agreement v3.5",
+            "LicenseRef-scancode-oculus-sdk-3.5"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

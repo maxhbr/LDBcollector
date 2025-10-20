@@ -1,13 +1,15 @@
 {
-  "canonical": "solace-software-eula-2020",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Solace-Software-EULA-2020",
-      "LicenseRef-scancode-solace-software-eula-2020"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "solace-software-eula-2020",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Solace-Software-EULA-2020",
+            "LicenseRef-scancode-solace-software-eula-2020"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

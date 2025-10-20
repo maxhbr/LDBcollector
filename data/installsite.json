@@ -1,13 +1,15 @@
 {
-  "canonical": "installsite",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "InstallSite License Agreement",
-      "LicenseRef-scancode-installsite"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "installsite",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "InstallSite License Agreement",
+            "LicenseRef-scancode-installsite"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

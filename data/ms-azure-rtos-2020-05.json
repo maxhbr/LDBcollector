@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-azure-rtos-2020-05",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-ms-azure-rtos-2020-05",
-      "Microsoft Azure RTOS 2020-05",
-      "MS Azure RTOS 2020-05"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-azure-rtos-2020-05",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-azure-rtos-2020-05",
+            "Microsoft Azure RTOS 2020-05",
+            "MS Azure RTOS 2020-05"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

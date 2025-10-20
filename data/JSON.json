@@ -1,15 +1,17 @@
 {
-  "canonical": "JSON",
-  "aliases": {
-    "spdx": [
-      "JSON License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "json"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "JSON",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "JSON License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "json"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

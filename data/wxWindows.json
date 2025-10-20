@@ -1,16 +1,18 @@
 {
-  "canonical": "wxWindows",
-  "aliases": {
-    "spdx": [
-      "wxWindows Library License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "wxWindows Library Licence 3.1",
-      "wxwindows"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "wxWindows",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "wxWindows Library License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "wxWindows Library Licence 3.1",
+            "wxwindows"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

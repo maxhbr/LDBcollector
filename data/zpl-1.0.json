@@ -1,15 +1,17 @@
 {
-  "canonical": "zpl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ZPL 1.0",
-      "Zope Public License 1.0",
-      "LicenseRef-scancode-zpl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "zpl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ZPL 1.0",
+            "Zope Public License 1.0",
+            "LicenseRef-scancode-zpl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

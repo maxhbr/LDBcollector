@@ -1,13 +1,15 @@
 {
-  "canonical": "nonexclusive",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Nonexclusive License",
-      "LicenseRef-scancode-nonexclusive"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nonexclusive",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Nonexclusive License",
+            "LicenseRef-scancode-nonexclusive"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

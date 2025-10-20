@@ -1,13 +1,15 @@
 {
-  "canonical": "appsflyer-framework",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "AppsFlyer Framework License",
-      "LicenseRef-scancode-appsflyer-framework"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "appsflyer-framework",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "AppsFlyer Framework License",
+            "LicenseRef-scancode-appsflyer-framework"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

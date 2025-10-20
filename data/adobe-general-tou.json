@@ -1,14 +1,16 @@
 {
-  "canonical": "adobe-general-tou",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adobe General TOU",
-      "Adobe General Terms of Use",
-      "LicenseRef-scancode-adobe-general-tou"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adobe-general-tou",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe General TOU",
+            "Adobe General Terms of Use",
+            "LicenseRef-scancode-adobe-general-tou"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

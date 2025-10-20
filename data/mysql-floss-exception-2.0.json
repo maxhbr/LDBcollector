@@ -1,14 +1,16 @@
 {
-  "canonical": "mysql-floss-exception-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MySQL FLOSS exception to GPL 2.0",
-      "LicenseRef-scancode-mysql-floss-exception-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "mysql-floss-exception-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MySQL FLOSS exception to GPL 2.0",
+            "LicenseRef-scancode-mysql-floss-exception-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

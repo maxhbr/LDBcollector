@@ -1,13 +1,15 @@
 {
-  "canonical": "oracle-master-agreement",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Oracle Master Agreement (OMA)",
-      "LicenseRef-scancode-oracle-master-agreement"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "oracle-master-agreement",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Oracle Master Agreement (OMA)",
+            "LicenseRef-scancode-oracle-master-agreement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

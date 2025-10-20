@@ -1,14 +1,16 @@
 {
-  "canonical": "sun-jsr-spec-04-2006",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun JSR Specification License April 2006",
-      "Sun JSR Specification 04-2006",
-      "LicenseRef-scancode-sun-jsr-spec-04-2006"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sun-jsr-spec-04-2006",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun JSR Specification License April 2006",
+            "Sun JSR Specification 04-2006",
+            "LicenseRef-scancode-sun-jsr-spec-04-2006"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

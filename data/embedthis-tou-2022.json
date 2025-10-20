@@ -1,14 +1,16 @@
 {
-  "canonical": "embedthis-tou-2022",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "EmbedThis TOU 2022",
-      "EmbedThis Terms of Use 2022",
-      "LicenseRef-scancode-embedthis-tou-2022"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "embedthis-tou-2022",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "EmbedThis TOU 2022",
+            "EmbedThis Terms of Use 2022",
+            "LicenseRef-scancode-embedthis-tou-2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

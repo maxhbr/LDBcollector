@@ -1,17 +1,19 @@
 {
-  "canonical": "CC-BY-NC-SA-2.0-FR",
-  "aliases": {
-    "spdx": [
-      "Creative Commons Attribution-NonCommercial-ShareAlike 2.0 France"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "cc-by-nc-sa-2.0-fr",
-      "CC-BY-NC-SA-2.0-FR"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CC-BY-NC-SA-2.0-FR",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Creative Commons Attribution-NonCommercial-ShareAlike 2.0 France"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "cc-by-nc-sa-2.0-fr",
+            "CC-BY-NC-SA-2.0-FR"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "GNOME-examples-exception",
-  "aliases": {
-    "spdx": [
-      "GNOME examples exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "gnome-examples-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "GNOME-examples-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GNOME examples exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "gnome-examples-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

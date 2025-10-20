@@ -1,15 +1,17 @@
 {
-  "canonical": "sun-jta-spec-1.0.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun JTA Specification License v1.0.1",
-      "Sun JTA Specification License 1.0.1",
-      "LicenseRef-scancode-sun-jta-spec-1.0.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "sun-jta-spec-1.0.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun JTA Specification License v1.0.1",
+            "Sun JTA Specification License 1.0.1",
+            "LicenseRef-scancode-sun-jta-spec-1.0.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

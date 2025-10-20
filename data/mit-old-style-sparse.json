@@ -1,13 +1,15 @@
 {
-  "canonical": "mit-old-style-sparse",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MIT Old Style Spare",
-      "LicenseRef-scancode-mit-old-style-sparse"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mit-old-style-sparse",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MIT Old Style Spare",
+            "LicenseRef-scancode-mit-old-style-sparse"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

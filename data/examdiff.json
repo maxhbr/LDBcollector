@@ -1,13 +1,15 @@
 {
-  "canonical": "examdiff",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ExamDiff License",
-      "LicenseRef-scancode-examdiff"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "examdiff",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ExamDiff License",
+            "LicenseRef-scancode-examdiff"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

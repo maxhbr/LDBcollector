@@ -1,17 +1,19 @@
 {
-  "canonical": "OPL-UK-3.0",
-  "aliases": {
-    "spdx": [
-      "United    Kingdom Open Parliament Licence v3.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "United Kingdom Open Parliament Licence v3.0",
-      "opl-uk-3.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "OPL-UK-3.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "United    Kingdom Open Parliament Licence v3.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "United Kingdom Open Parliament Licence v3.0",
+            "opl-uk-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

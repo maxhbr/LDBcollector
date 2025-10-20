@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-research-shared-source",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Research Shared Source License",
-      "Microsoft Research Shared Source License",
-      "LicenseRef-scancode-ms-research-shared-source"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-research-shared-source",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Research Shared Source License",
+            "Microsoft Research Shared Source License",
+            "LicenseRef-scancode-ms-research-shared-source"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

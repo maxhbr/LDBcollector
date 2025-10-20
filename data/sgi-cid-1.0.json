@@ -1,15 +1,17 @@
 {
-  "canonical": "sgi-cid-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SGI CID Font Code Public License 1.0",
-      "SGI CID Font Code Public License v1.0",
-      "LicenseRef-scancode-sgi-cid-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "sgi-cid-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SGI CID Font Code Public License 1.0",
+            "SGI CID Font Code Public License v1.0",
+            "LicenseRef-scancode-sgi-cid-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

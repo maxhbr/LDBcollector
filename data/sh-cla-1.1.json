@@ -1,15 +1,17 @@
 {
-  "canonical": "sh-cla-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Software Heritage CLA 1.1",
-      "Software Heritage Contributor License Agreement 1.1",
-      "LicenseRef-scancode-sh-cla-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "sh-cla-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Software Heritage CLA 1.1",
+            "Software Heritage Contributor License Agreement 1.1",
+            "LicenseRef-scancode-sh-cla-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

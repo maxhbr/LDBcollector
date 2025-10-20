@@ -1,16 +1,18 @@
 {
-  "canonical": "Parity-7.0.0",
-  "aliases": {
-    "spdx": [
-      "The Parity Public License 7.0.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "parity-7.0.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Parity-7.0.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "The Parity Public License 7.0.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "parity-7.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

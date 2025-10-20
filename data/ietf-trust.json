@@ -1,13 +1,15 @@
 {
-  "canonical": "ietf-trust",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "IETF Trust License",
-      "LicenseRef-scancode-ietf-trust"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ietf-trust",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "IETF Trust License",
+            "LicenseRef-scancode-ietf-trust"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

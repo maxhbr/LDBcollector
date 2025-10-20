@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-x11r5",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11-R5",
-      "LicenseRef-scancode-x11-x11r5"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-x11r5",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11-R5",
+            "LicenseRef-scancode-x11-x11r5"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

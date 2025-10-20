@@ -1,16 +1,18 @@
 {
-  "canonical": "psutils",
-  "aliases": {
-    "spdx": [
-      "psutils License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "psutils",
-      "PS Utilities License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "psutils",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "psutils License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "psutils",
+            "PS Utilities License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

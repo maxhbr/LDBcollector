@@ -1,13 +1,15 @@
 {
-  "canonical": "gregory-pietsch",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Gregory Pietsch Liberal License",
-      "LicenseRef-scancode-gregory-pietsch"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "gregory-pietsch",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Gregory Pietsch Liberal License",
+            "LicenseRef-scancode-gregory-pietsch"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "helios-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Helios EULA",
-      "Helios",
-      "LicenseRef-scancode-helios-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "helios-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Helios EULA",
+            "Helios",
+            "LicenseRef-scancode-helios-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "olf-ccla-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OLF-CCLA-1.0",
-      "Open Logistics Foundation Corporate Contributor CLA 1.0",
-      "LicenseRef-scancode-olf-ccla-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "olf-ccla-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OLF-CCLA-1.0",
+            "Open Logistics Foundation Corporate Contributor CLA 1.0",
+            "LicenseRef-scancode-olf-ccla-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

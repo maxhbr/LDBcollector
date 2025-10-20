@@ -1,14 +1,16 @@
 {
-  "canonical": "ocb-non-military-2013",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "License for Non-MilitarySoftware Implementations of OCB 2013",
-      "OCB for Non-MilitarySoftware Implementations2013",
-      "LicenseRef-scancode-ocb-non-military-2013"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ocb-non-military-2013",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "License for Non-MilitarySoftware Implementations of OCB 2013",
+            "OCB for Non-MilitarySoftware Implementations2013",
+            "LicenseRef-scancode-ocb-non-military-2013"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

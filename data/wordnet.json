@@ -1,13 +1,15 @@
 {
-  "canonical": "wordnet",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Wordnet License",
-      "LicenseRef-scancode-wordnet"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "wordnet",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Wordnet License",
+            "LicenseRef-scancode-wordnet"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

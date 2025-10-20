@@ -1,12 +1,14 @@
 {
-    "canonical": "Artistic-dist",
+    "canonical": {
+        "id": "Artistic-dist",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Artistic License 1.0 (dist)"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

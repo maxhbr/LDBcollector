@@ -1,13 +1,15 @@
 {
-  "canonical": "max-mojo-community-20240828",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-max-mojo-community-20240828",
-      "MAX & Mojo Community License 20240828"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "max-mojo-community-20240828",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-max-mojo-community-20240828",
+            "MAX & Mojo Community License 20240828"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "statewizard",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "StateWizard License Agreement",
-      "StateWizard License",
-      "LicenseRef-scancode-statewizard"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "statewizard",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "StateWizard License Agreement",
+            "StateWizard License",
+            "LicenseRef-scancode-statewizard"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

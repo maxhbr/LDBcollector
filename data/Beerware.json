@@ -1,16 +1,18 @@
 {
-  "canonical": "Beerware",
-  "aliases": {
-    "spdx": [
-      "Beerware License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Beer-Ware License",
-      "beerware"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Beerware",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Beerware License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Beer-Ware License",
+            "beerware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

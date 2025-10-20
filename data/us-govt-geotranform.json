@@ -1,13 +1,15 @@
 {
-  "canonical": "us-govt-geotranform",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "US Government GeoTransform",
-      "LicenseRef-scancode-us-govt-geotranform"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "us-govt-geotranform",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "US Government GeoTransform",
+            "LicenseRef-scancode-us-govt-geotranform"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

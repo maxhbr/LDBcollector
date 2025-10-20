@@ -1,13 +1,15 @@
 {
-  "canonical": "mediatek-proprietary-2008",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MediaTek Proprietary License 2008",
-      "LicenseRef-scancode-mediatek-proprietary-2008"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mediatek-proprietary-2008",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MediaTek Proprietary License 2008",
+            "LicenseRef-scancode-mediatek-proprietary-2008"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

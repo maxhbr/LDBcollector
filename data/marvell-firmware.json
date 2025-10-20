@@ -1,13 +1,15 @@
 {
-  "canonical": "marvell-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Marvell Firmware License",
-      "LicenseRef-scancode-marvell-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "marvell-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Marvell Firmware License",
+            "LicenseRef-scancode-marvell-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

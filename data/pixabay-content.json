@@ -1,13 +1,15 @@
 {
-  "canonical": "pixabay-content",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Pixabay Content License",
-      "LicenseRef-scancode-pixabay-content"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "pixabay-content",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Pixabay Content License",
+            "LicenseRef-scancode-pixabay-content"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

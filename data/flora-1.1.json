@@ -1,14 +1,16 @@
 {
-  "canonical": "flora-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Flora License v1.1",
-      "LicenseRef-scancode-flora-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "flora-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Flora License v1.1",
+            "LicenseRef-scancode-flora-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

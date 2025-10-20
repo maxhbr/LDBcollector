@@ -1,13 +1,15 @@
 {
-  "canonical": "red-hat-attribution",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Red Hat Attribution License",
-      "LicenseRef-scancode-red-hat-attribution"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "red-hat-attribution",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Red Hat Attribution License",
+            "LicenseRef-scancode-red-hat-attribution"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

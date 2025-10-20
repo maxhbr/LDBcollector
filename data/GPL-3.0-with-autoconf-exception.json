@@ -1,17 +1,19 @@
 {
-  "canonical": "GPL-3.0-with-autoconf-exception",
-  "aliases": {
-    "spdx": [
-      "GNU General Public License v3.0 w/Autoconf exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "gpl-3.0-autoconf",
-      "GPL 3.0 with Autoconf exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "GPL-3.0-with-autoconf-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GNU General Public License v3.0 w/Autoconf exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "gpl-3.0-autoconf",
+            "GPL 3.0 with Autoconf exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,19 +1,21 @@
 {
-  "canonical": "OPUBL-1.0",
-  "aliases": {
-    "spdx": [
-      "Open Publication License v1.0"
+    "canonical": {
+        "id": "OPUBL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Open Publication License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Open Publication License 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "openpub",
+        "LicenseRef-scancode-openpub"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Open Publication License 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "openpub",
-    "LicenseRef-scancode-openpub"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

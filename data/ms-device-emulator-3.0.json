@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-device-emulator-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Device Emulator 3.0",
-      "MS Device Emulator 3.0",
-      "LicenseRef-scancode-ms-device-emulator-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-device-emulator-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Device Emulator 3.0",
+            "MS Device Emulator 3.0",
+            "LicenseRef-scancode-ms-device-emulator-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

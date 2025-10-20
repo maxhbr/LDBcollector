@@ -1,14 +1,16 @@
 {
-  "canonical": "liferay-ee",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Liferay Portal Enterprise Edition License",
-      "Liferay Portal EE License",
-      "LicenseRef-scancode-liferay-ee"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "liferay-ee",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Liferay Portal Enterprise Edition License",
+            "Liferay Portal EE License",
+            "LicenseRef-scancode-liferay-ee"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

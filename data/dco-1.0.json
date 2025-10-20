@@ -1,15 +1,17 @@
 {
-  "canonical": "dco-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Developer Certificate of Origin 1.0",
-      "LicenseRef-scancode-dco-1.0",
-      "DCO 1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "dco-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Developer Certificate of Origin 1.0",
+            "LicenseRef-scancode-dco-1.0",
+            "DCO 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

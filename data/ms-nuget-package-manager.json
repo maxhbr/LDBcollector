@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-nuget-package-manager",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft NuGet-Based Package Manager License",
-      "MS NuGet-Based Package Manager License",
-      "LicenseRef-scancode-ms-nuget-package-manager"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-nuget-package-manager",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft NuGet-Based Package Manager License",
+            "MS NuGet-Based Package Manager License",
+            "LicenseRef-scancode-ms-nuget-package-manager"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

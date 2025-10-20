@@ -1,13 +1,15 @@
 {
-  "canonical": "unsplash",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Unsplash License",
-      "LicenseRef-scancode-unsplash"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "unsplash",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Unsplash License",
+            "LicenseRef-scancode-unsplash"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

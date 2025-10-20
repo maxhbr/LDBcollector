@@ -1,13 +1,15 @@
 {
-  "canonical": "w3c-documentation",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "W3C Documentation License",
-      "LicenseRef-scancode-w3c-documentation"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "w3c-documentation",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "W3C Documentation License",
+            "LicenseRef-scancode-w3c-documentation"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

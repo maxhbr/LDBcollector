@@ -1,13 +1,15 @@
 {
-  "canonical": "jsr-107-jcache-spec-2013",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "JSR-107 JCache Specification 2013 License",
-      "LicenseRef-scancode-jsr-107-jcache-spec-2013"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "jsr-107-jcache-spec-2013",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "JSR-107 JCache Specification 2013 License",
+            "LicenseRef-scancode-jsr-107-jcache-spec-2013"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

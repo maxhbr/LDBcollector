@@ -1,15 +1,17 @@
 {
-  "canonical": "octl-0.21",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-octl-0.21",
-      "Open Compensation Token License v0.21",
-      "Open Compensation Token License Version 0.21"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "octl-0.21",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-octl-0.21",
+            "Open Compensation Token License v0.21",
+            "Open Compensation Token License Version 0.21"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

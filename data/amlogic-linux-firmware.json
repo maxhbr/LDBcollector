@@ -1,13 +1,15 @@
 {
-  "canonical": "amlogic-linux-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Amlogic Linux Firmware License",
-      "LicenseRef-scancode-amlogic-linux-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "amlogic-linux-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Amlogic Linux Firmware License",
+            "LicenseRef-scancode-amlogic-linux-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

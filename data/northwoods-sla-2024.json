@@ -1,13 +1,15 @@
 {
-  "canonical": "northwoods-sla-2024",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Northwoods Software SLA 2024",
-      "LicenseRef-scancode-northwoods-sla-2024"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "northwoods-sla-2024",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Northwoods Software SLA 2024",
+            "LicenseRef-scancode-northwoods-sla-2024"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

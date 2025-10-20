@@ -1,13 +1,15 @@
 {
-  "canonical": "thomas-bandt",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Thomas Bandt License",
-      "LicenseRef-scancode-thomas-bandt"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "thomas-bandt",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Thomas Bandt License",
+            "LicenseRef-scancode-thomas-bandt"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

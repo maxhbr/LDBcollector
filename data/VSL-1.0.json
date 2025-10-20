@@ -1,5 +1,8 @@
 {
-    "canonical": "VSL-1.0",
+    "canonical": {
+        "id": "VSL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Vovida Software License v1.0"
@@ -19,7 +22,6 @@
             "License :: OSI Approved :: Vovida Software License 1.0"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [
         "Vovida"

@@ -1,13 +1,15 @@
 {
-  "canonical": "markus-mummert-permissive",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Markus Mummert Permissive",
-      "LicenseRef-scancode-markus-mummert-permissive"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "markus-mummert-permissive",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Markus Mummert Permissive",
+            "LicenseRef-scancode-markus-mummert-permissive"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -82,7 +82,7 @@ class BaseDataUpdate:
 
         # Get all aliases and canonical id and flat 2D list to 1D list and add canonical ID to prevent duplication
         aliases_list = list(itertools.chain.from_iterable(list(existing_aliases.values())))
-        aliases_list.append(data.get("canonical"))
+        aliases_list.append(data["canonical"]["id"])
 
         normalized_aliases = self._normalize_alias_list(aliases)
 
@@ -125,12 +125,14 @@ class BaseDataUpdate:
         custom_list = self._create_custom_list_for_quotes(normalized_aliases)
 
         output_data = {
-            "canonical": canonical_id,
+            "canonical": {
+                "id": canonical_id,
+                "src": self._src,
+            },
             "aliases": {
                 self._src: normalized_aliases,
                 "custom": custom_list
             },
-            "src": self._src,
             "rejected": [],
             "risky": []
         }

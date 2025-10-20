@@ -1,14 +1,16 @@
 {
-  "canonical": "oracle-gftc-2023-06-12",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Oracle GFTC 2023-06-12",
-      "Oracle GraalVM Free Terms and Conditions (GFTC) 2023-06-12",
-      "LicenseRef-scancode-oracle-gftc-2023-06-12"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "oracle-gftc-2023-06-12",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Oracle GFTC 2023-06-12",
+            "Oracle GraalVM Free Terms and Conditions (GFTC) 2023-06-12",
+            "LicenseRef-scancode-oracle-gftc-2023-06-12"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,5 +1,8 @@
 {
-    "canonical": "LGPL-2.1-or-later",
+    "canonical": {
+        "id": "LGPL-2.1-or-later",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU Lesser General Public License v2.1 or later",
@@ -14,7 +17,6 @@
             "lgpl-2.1-plus"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [],
     "isMajorVersionOnly": false

@@ -1,18 +1,20 @@
 {
-  "canonical": "Fair",
-  "aliases": {
-    "spdx": [
-      "Fair License"
-    ],
-    "custom": [],
-    "osi": [
-      "Fair License (Fair)"
-    ],
-    "scancodeLicensedb": [
-      "fair"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Fair",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Fair License"
+        ],
+        "custom": [],
+        "osi": [
+            "Fair License (Fair)"
+        ],
+        "scancodeLicensedb": [
+            "fair"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

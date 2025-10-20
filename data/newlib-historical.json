@@ -1,13 +1,15 @@
 {
-  "canonical": "newlib-historical",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Newlib Historical License",
-      "LicenseRef-scancode-newlib-historical"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "newlib-historical",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Newlib Historical License",
+            "LicenseRef-scancode-newlib-historical"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

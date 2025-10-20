@@ -1,13 +1,15 @@
 {
-  "canonical": "sun-glassfish",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun GlassFish License",
-      "LicenseRef-scancode-sun-glassfish"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sun-glassfish",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun GlassFish License",
+            "LicenseRef-scancode-sun-glassfish"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "other-copyleft",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Other Copyleft Licenses",
-      "LicenseRef-scancode-other-copyleft"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "other-copyleft",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Other Copyleft Licenses",
+            "LicenseRef-scancode-other-copyleft"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

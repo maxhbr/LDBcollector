@@ -1,14 +1,16 @@
 {
-  "canonical": "zeromq-exception-lgpl-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ZeroMQ exception to LGPL 3.0",
-      "LicenseRef-scancode-zeromq-exception-lgpl-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "zeromq-exception-lgpl-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ZeroMQ exception to LGPL 3.0",
+            "LicenseRef-scancode-zeromq-exception-lgpl-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

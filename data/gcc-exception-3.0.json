@@ -1,15 +1,17 @@
 {
-  "canonical": "gcc-exception-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GCC Runtime Library Exception v3.0",
-      "LicenseRef-scancode-exception-3.0",
-      "LicenseRef-scancode-gcc-exception-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gcc-exception-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GCC Runtime Library Exception v3.0",
+            "LicenseRef-scancode-exception-3.0",
+            "LicenseRef-scancode-gcc-exception-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

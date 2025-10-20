@@ -1,13 +1,15 @@
 {
-  "canonical": "sgmlug",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SGMLUG",
-      "LicenseRef-scancode-sgmlug"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sgmlug",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SGMLUG",
+            "LicenseRef-scancode-sgmlug"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

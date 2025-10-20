@@ -1,13 +1,15 @@
 {
-  "canonical": "freetype-patent",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "FreeType Patent Grant",
-      "LicenseRef-scancode-freetype-patent"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "freetype-patent",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "FreeType Patent Grant",
+            "LicenseRef-scancode-freetype-patent"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

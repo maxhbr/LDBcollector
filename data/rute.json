@@ -1,14 +1,16 @@
 {
-  "canonical": "rute",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Rute Users Tutorial and Exposition License 0.8.0",
-      "Rute Users Tutorial and Exposition License v0.8.0",
-      "LicenseRef-scancode-rute"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rute",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Rute Users Tutorial and Exposition License 0.8.0",
+            "Rute Users Tutorial and Exposition License v0.8.0",
+            "LicenseRef-scancode-rute"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "adi-bsd",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ADI BSD License",
-      "ADI BSD",
-      "LicenseRef-scancode-adi-bsd"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adi-bsd",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ADI BSD License",
+            "ADI BSD",
+            "LicenseRef-scancode-adi-bsd"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

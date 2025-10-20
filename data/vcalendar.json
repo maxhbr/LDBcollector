@@ -1,13 +1,15 @@
 {
-  "canonical": "vcalendar",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "VCalendar License",
-      "LicenseRef-scancode-vcalendar"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "vcalendar",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "VCalendar License",
+            "LicenseRef-scancode-vcalendar"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

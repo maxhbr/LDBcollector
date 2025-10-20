@@ -1,13 +1,15 @@
 {
-  "canonical": "takuya-ooura",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Takuya OOURA License",
-      "LicenseRef-scancode-takuya-ooura"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "takuya-ooura",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Takuya OOURA License",
+            "LicenseRef-scancode-takuya-ooura"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

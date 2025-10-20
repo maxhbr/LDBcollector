@@ -1,13 +1,15 @@
 {
-  "canonical": "rubyencoder-commercial",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "RubyEncoder Commercial Licence",
-      "LicenseRef-scancode-rubyencoder-commercial"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rubyencoder-commercial",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "RubyEncoder Commercial Licence",
+            "LicenseRef-scancode-rubyencoder-commercial"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

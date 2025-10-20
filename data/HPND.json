@@ -1,5 +1,8 @@
 {
-    "canonical": "HPND",
+    "canonical": {
+        "id": "HPND",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Historical Permission Notice and Disclaimer"
@@ -23,7 +26,6 @@
             "Historical Permission Notice and Disclaimer (HPND)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

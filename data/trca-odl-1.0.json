@@ -1,15 +1,17 @@
 {
-  "canonical": "trca-odl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Toronto Region Conservation Authority Open Data Licence 1.0",
-      "TRCA Open Data Licence 1.0",
-      "LicenseRef-scancode-trca-odl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "trca-odl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Toronto Region Conservation Authority Open Data Licence 1.0",
+            "TRCA Open Data Licence 1.0",
+            "LicenseRef-scancode-trca-odl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

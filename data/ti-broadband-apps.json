@@ -1,14 +1,16 @@
 {
-  "canonical": "ti-broadband-apps",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Texas Instruments Broadband Applications License",
-      "TI Broadband Applications License",
-      "LicenseRef-scancode-ti-broadband-apps"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ti-broadband-apps",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Texas Instruments Broadband Applications License",
+            "TI Broadband Applications License",
+            "LicenseRef-scancode-ti-broadband-apps"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

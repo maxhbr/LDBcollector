@@ -1,17 +1,19 @@
 {
-  "canonical": "Net-SNMP",
-  "aliases": {
-    "spdx": [
-      "Net-SNMP License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "net-snmp",
-      "Net SNMP License",
-      "LicenseRef-scancode-net-snmp"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Net-SNMP",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Net-SNMP License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "net-snmp",
+            "Net SNMP License",
+            "LicenseRef-scancode-net-snmp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

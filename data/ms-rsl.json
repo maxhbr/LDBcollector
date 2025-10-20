@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-rsl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Reference Source License",
-      "MS Reference Source License",
-      "LicenseRef-scancode-ms-rsl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-rsl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Reference Source License",
+            "MS Reference Source License",
+            "LicenseRef-scancode-ms-rsl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

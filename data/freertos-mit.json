@@ -1,13 +1,15 @@
 {
-  "canonical": "freertos-mit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "FreeRTOS MIT",
-      "LicenseRef-scancode-freertos-mit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "freertos-mit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "FreeRTOS MIT",
+            "LicenseRef-scancode-freertos-mit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

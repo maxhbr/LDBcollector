@@ -1,18 +1,20 @@
 {
-  "canonical": "Community-Spec-1.0",
-  "aliases": {
-    "spdx": [
-      "Community Specification License 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "csl-1.0",
-      "CSL-1.0",
-      "LicenseRef-scancode-csl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Community-Spec-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Community Specification License 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "csl-1.0",
+            "CSL-1.0",
+            "LicenseRef-scancode-csl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

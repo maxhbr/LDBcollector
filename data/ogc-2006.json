@@ -1,12 +1,14 @@
 {
-  "canonical": "ogc-2006",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OGC Software Notice 2006"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ogc-2006",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OGC Software Notice 2006"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

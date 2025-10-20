@@ -1,15 +1,17 @@
 {
-  "canonical": "ogl-canada-2.0-fr",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OGL Canada 2.0 Francais",
-      "Licence du gouvernement ouvert Canada 2.0",
-      "LicenseRef-scancode-ogl-canada-2.0-fr"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ogl-canada-2.0-fr",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OGL Canada 2.0 Francais",
+            "Licence du gouvernement ouvert Canada 2.0",
+            "LicenseRef-scancode-ogl-canada-2.0-fr"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

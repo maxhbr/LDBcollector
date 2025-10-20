@@ -1,13 +1,15 @@
 {
-  "canonical": "smsc-non-commercial-2012",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SMSC Non-Commercial 2012",
-      "LicenseRef-scancode-smsc-non-commercial-2012"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "smsc-non-commercial-2012",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SMSC Non-Commercial 2012",
+            "LicenseRef-scancode-smsc-non-commercial-2012"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

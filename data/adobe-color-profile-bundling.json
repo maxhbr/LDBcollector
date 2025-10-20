@@ -1,13 +1,15 @@
 {
-  "canonical": "adobe-color-profile-bundling",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adobe Color Profile Bundling agreement",
-      "LicenseRef-scancode-adobe-color-profile-bundling"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adobe-color-profile-bundling",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe Color Profile Bundling agreement",
+            "LicenseRef-scancode-adobe-color-profile-bundling"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

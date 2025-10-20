@@ -1,14 +1,16 @@
 {
-  "canonical": "wtfpl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "WTFPL 1.0",
-      "LicenseRef-scancode-wtfpl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "wtfpl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "WTFPL 1.0",
+            "LicenseRef-scancode-wtfpl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

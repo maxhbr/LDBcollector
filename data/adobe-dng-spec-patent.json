@@ -1,14 +1,16 @@
 {
-  "canonical": "adobe-dng-spec-patent",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adobe DNG Specification patent license",
-      "Adobe Digital Negative (DNG) Specification patent license",
-      "LicenseRef-scancode-adobe-dng-spec-patent"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adobe-dng-spec-patent",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe DNG Specification patent license",
+            "Adobe Digital Negative (DNG) Specification patent license",
+            "LicenseRef-scancode-adobe-dng-spec-patent"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "tso-license",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Theodore Ts'o license",
-      "LicenseRef-scancode-tso-license"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "tso-license",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Theodore Ts'o license",
+            "LicenseRef-scancode-tso-license"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

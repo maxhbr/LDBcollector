@@ -1,13 +1,15 @@
 {
-  "canonical": "lsi-proprietary-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LSI Proprietary EULA",
-      "LicenseRef-scancode-lsi-proprietary-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "lsi-proprietary-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LSI Proprietary EULA",
+            "LicenseRef-scancode-lsi-proprietary-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

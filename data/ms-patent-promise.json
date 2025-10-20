@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-patent-promise",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Patent Promise for .NET Libraries and Runtime Components",
-      "MS Patent Promise for .NET",
-      "LicenseRef-scancode-ms-patent-promise"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-patent-promise",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Patent Promise for .NET Libraries and Runtime Components",
+            "MS Patent Promise for .NET",
+            "LicenseRef-scancode-ms-patent-promise"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

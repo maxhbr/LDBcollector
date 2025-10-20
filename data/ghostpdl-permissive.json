@@ -1,13 +1,15 @@
 {
-  "canonical": "ghostpdl-permissive",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Ghostpdl Permissive",
-      "LicenseRef-scancode-ghostpdl-permissive"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ghostpdl-permissive",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Ghostpdl Permissive",
+            "LicenseRef-scancode-ghostpdl-permissive"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

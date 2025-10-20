@@ -1,14 +1,16 @@
 {
-  "canonical": "maxmind-geolite2-eula-2019",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MaxMind GeoLite2 End User License Agreement 2019",
-      "MaxMind GeoLite2 EULA 2019",
-      "LicenseRef-scancode-maxmind-geolite2-eula-2019"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "maxmind-geolite2-eula-2019",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MaxMind GeoLite2 End User License Agreement 2019",
+            "MaxMind GeoLite2 EULA 2019",
+            "LicenseRef-scancode-maxmind-geolite2-eula-2019"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

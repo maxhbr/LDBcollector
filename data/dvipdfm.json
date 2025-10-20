@@ -1,15 +1,17 @@
 {
-  "canonical": "dvipdfm",
-  "aliases": {
-    "spdx": [
-      "dvipdfm License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "dvipdfm"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "dvipdfm",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "dvipdfm License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "dvipdfm"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

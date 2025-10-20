@@ -1,14 +1,16 @@
 {
-  "canonical": "ekiga-exception-2.0-plus",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Ekiga exception to GPL 2.0 or later",
-      "LicenseRef-scancode-ekiga-exception-2.0-plus"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ekiga-exception-2.0-plus",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Ekiga exception to GPL 2.0 or later",
+            "LicenseRef-scancode-ekiga-exception-2.0-plus"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

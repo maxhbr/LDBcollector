@@ -1,12 +1,14 @@
 {
-    "canonical": "Game-Programming-Gems",
+    "canonical": {
+        "id": "Game-Programming-Gems",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Game Programming Gems License"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

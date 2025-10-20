@@ -1,17 +1,19 @@
 {
-  "canonical": "BSD-2-Clause-Darwin",
-  "aliases": {
-    "spdx": [
-      "BSD 2-Clause - Ian Darwin variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "bsd-simplified-darwin",
-      "BSD Simplified Darwin",
-      "LicenseRef-scancode-bsd-simplified-darwin"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-2-Clause-Darwin",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause - Ian Darwin variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bsd-simplified-darwin",
+            "BSD Simplified Darwin",
+            "LicenseRef-scancode-bsd-simplified-darwin"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,18 +1,20 @@
 {
-  "canonical": "HPND-Intel",
-  "aliases": {
-    "spdx": [
-      "Historical Permission Notice and Disclaimer - Intel variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Intel OSL 1993",
-      "LicenseRef-scancode-intel-osl-1993",
-      "Intel Open Source License 1993",
-      "intel-osl-1993"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HPND-Intel",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - Intel variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Intel OSL 1993",
+            "LicenseRef-scancode-intel-osl-1993",
+            "Intel Open Source License 1993",
+            "intel-osl-1993"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

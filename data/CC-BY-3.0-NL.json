@@ -1,16 +1,18 @@
 {
-  "canonical": "CC-BY-3.0-NL",
-  "aliases": {
-    "spdx": [
-      "Creative Commons Attribution 3.0 Netherlands"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "cc-by-3.0-nl"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CC-BY-3.0-NL",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Creative Commons Attribution 3.0 Netherlands"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "cc-by-3.0-nl"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

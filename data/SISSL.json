@@ -1,5 +1,8 @@
 {
-    "canonical": "SISSL",
+    "canonical": {
+        "id": "SISSL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sun Industry Standards Source License v1.1"
@@ -25,7 +28,6 @@
             "License :: SISSL"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

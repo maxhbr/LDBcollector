@@ -1,5 +1,8 @@
 {
-    "canonical": "ISC",
+    "canonical": {
+        "id": "ISC",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "ISC License"
@@ -33,7 +36,6 @@
             "ISC License (ISCL)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

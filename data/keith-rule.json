@@ -1,13 +1,15 @@
 {
-  "canonical": "keith-rule",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Keith Rule License",
-      "LicenseRef-scancode-keith-rule"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "keith-rule",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Keith Rule License",
+            "LicenseRef-scancode-keith-rule"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

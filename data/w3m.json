@@ -1,15 +1,17 @@
 {
-  "canonical": "w3m",
-  "aliases": {
-    "spdx": [
-      "w3m License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "w3m"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "w3m",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "w3m License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "w3m"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

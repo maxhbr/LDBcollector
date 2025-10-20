@@ -1,18 +1,20 @@
 {
-  "canonical": "Qwt-exception-1.0",
-  "aliases": {
-    "spdx": [
-      "Qwt exception 1.0"
+    "canonical": {
+        "id": "Qwt-exception-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Qwt exception 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "qwt-exception-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Qwt exception to LGPL 2.1"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "qwt-exception-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "Qwt exception to LGPL 2.1"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

@@ -1,18 +1,20 @@
 {
-  "canonical": "RRDtool-FLOSS-exception-2.0",
-  "aliases": {
-    "spdx": [
-      "RRDtool FLOSS exception 2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "rrdtool-floss-exception-2.0",
-      "RRDtool FLOSS Exception to GPL 2.0",
-      "LicenseRef-scancode-rrdtool-floss-exception-2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "RRDtool-FLOSS-exception-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "RRDtool FLOSS exception 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "rrdtool-floss-exception-2.0",
+            "RRDtool FLOSS Exception to GPL 2.0",
+            "LicenseRef-scancode-rrdtool-floss-exception-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

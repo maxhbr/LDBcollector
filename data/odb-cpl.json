@@ -1,14 +1,16 @@
 {
-  "canonical": "odb-cpl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ODB Commercial Proprietary License (CPL)",
-      "ODB CPL",
-      "LicenseRef-scancode-odb-cpl"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "odb-cpl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ODB Commercial Proprietary License (CPL)",
+            "ODB CPL",
+            "LicenseRef-scancode-odb-cpl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

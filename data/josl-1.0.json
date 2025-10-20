@@ -1,15 +1,17 @@
 {
-  "canonical": "josl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Jabber 1.0",
-      "Jabber Open Source License 1.0",
-      "LicenseRef-scancode-josl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "josl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Jabber 1.0",
+            "Jabber Open Source License 1.0",
+            "LicenseRef-scancode-josl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

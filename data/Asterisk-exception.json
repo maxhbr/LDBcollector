@@ -1,15 +1,17 @@
 {
-  "canonical": "Asterisk-exception",
-  "aliases": {
-    "spdx": [
-      "Asterisk exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "asterisk-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Asterisk-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Asterisk exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "asterisk-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

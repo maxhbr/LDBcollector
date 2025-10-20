@@ -1,13 +1,15 @@
 {
-  "canonical": "ws-policy-specification",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "WS-Policy Specification",
-      "LicenseRef-scancode-ws-policy-specification"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ws-policy-specification",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "WS-Policy Specification",
+            "LicenseRef-scancode-ws-policy-specification"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

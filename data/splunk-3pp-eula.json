@@ -1,13 +1,15 @@
 {
-  "canonical": "splunk-3pp-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Splunk EULA for Third-Party Content",
-      "LicenseRef-scancode-splunk-3pp-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "splunk-3pp-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Splunk EULA for Third-Party Content",
+            "LicenseRef-scancode-splunk-3pp-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

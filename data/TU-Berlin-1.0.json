@@ -1,19 +1,21 @@
 {
-  "canonical": "TU-Berlin-1.0",
-  "aliases": {
-    "spdx": [
-      "Technische Universitaet Berlin License 1.0"
+    "canonical": {
+        "id": "TU-Berlin-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Technische Universitaet Berlin License 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "TU Berlin License 1.0",
+            "Technische Universitaet Berlin Attribution License 1.0"
+        ]
+    },
+    "rejected": [
+        "tu-berlin"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "TU Berlin License 1.0",
-      "Technische Universitaet Berlin Attribution License 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [
-    "tu-berlin"
-  ],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "risky": [],
+    "isMajorVersionOnly": true
 }

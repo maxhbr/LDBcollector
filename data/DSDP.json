@@ -1,15 +1,17 @@
 {
-  "canonical": "DSDP",
-  "aliases": {
-    "spdx": [
-      "DSDP License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "dsdp"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "DSDP",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "DSDP License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "dsdp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

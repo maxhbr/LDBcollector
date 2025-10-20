@@ -1,16 +1,18 @@
 {
-  "canonical": "cc-gpl-2.0-pt",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CC-GPL-2.0-PT",
-      "LicenseRef-scancode-cc-gpl-2.0-pt"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Creative Commons Licen\u00e7a P\u00fablica Geral do GNU (GPL) [General Public License]"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "cc-gpl-2.0-pt",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CC-GPL-2.0-PT",
+            "LicenseRef-scancode-cc-gpl-2.0-pt"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Creative Commons Licen\u00e7a P\u00fablica Geral do GNU (GPL) [General Public License]"
+    ],
+    "isMajorVersionOnly": true
 }

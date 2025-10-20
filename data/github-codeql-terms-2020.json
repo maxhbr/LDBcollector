@@ -1,14 +1,16 @@
 {
-  "canonical": "github-codeql-terms-2020",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GitHub CodeQL Terms and Conditions 2020",
-      "GitHub CodeQL Terms 2020",
-      "LicenseRef-scancode-github-codeql-terms-2020"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "github-codeql-terms-2020",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GitHub CodeQL Terms and Conditions 2020",
+            "GitHub CodeQL Terms 2020",
+            "LicenseRef-scancode-github-codeql-terms-2020"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

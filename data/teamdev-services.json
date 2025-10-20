@@ -1,13 +1,15 @@
 {
-  "canonical": "teamdev-services",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "TeamDev Services License",
-      "LicenseRef-scancode-teamdev-services"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "teamdev-services",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "TeamDev Services License",
+            "LicenseRef-scancode-teamdev-services"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

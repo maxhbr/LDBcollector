@@ -1,14 +1,16 @@
 {
-  "canonical": "jrunner",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "JRunner Software License",
-      "JRunner License",
-      "LicenseRef-scancode-jrunner"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "jrunner",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "JRunner Software License",
+            "JRunner License",
+            "LicenseRef-scancode-jrunner"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

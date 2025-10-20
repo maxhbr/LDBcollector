@@ -1,13 +1,15 @@
 {
-  "canonical": "stax",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Stax License",
-      "LicenseRef-scancode-stax"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "stax",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Stax License",
+            "LicenseRef-scancode-stax"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

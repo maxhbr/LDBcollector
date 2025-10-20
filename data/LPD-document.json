@@ -1,17 +1,19 @@
 {
-  "canonical": "LPD-document",
-  "aliases": {
-    "spdx": [
-      "LPD Documentation License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Peter Deutsch Document License",
-      "LicenseRef-scancode-peter-deutsch-document",
-      "peter-deutsch-document"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "LPD-document",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "LPD Documentation License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Peter Deutsch Document License",
+            "LicenseRef-scancode-peter-deutsch-document",
+            "peter-deutsch-document"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

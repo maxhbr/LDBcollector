@@ -1,13 +1,15 @@
 {
-  "canonical": "chris-stoy",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Chris Stoy Attribution License",
-      "LicenseRef-scancode-chris-stoy"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "chris-stoy",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Chris Stoy Attribution License",
+            "LicenseRef-scancode-chris-stoy"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "hp-snmp-pp",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SNMP++ License",
-      "LicenseRef-scancode-hp-snmp-pp"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "hp-snmp-pp",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SNMP++ License",
+            "LicenseRef-scancode-hp-snmp-pp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

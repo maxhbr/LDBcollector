@@ -1,15 +1,17 @@
 {
-  "canonical": "ziplist5-geocode-end-user-enterprise",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ZIPList5 Geocode End-User Enterprise License",
-      "LicenseRef-scancode-ziplist5-geocode-end-user-enterprise",
-      "ZIPList5 Geocode End-User Enterprise License Agreement",
-      "LicenseRef-scancode-ziplist5-geocode-enterprise"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ziplist5-geocode-end-user-enterprise",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ZIPList5 Geocode End-User Enterprise License",
+            "LicenseRef-scancode-ziplist5-geocode-end-user-enterprise",
+            "ZIPList5 Geocode End-User Enterprise License Agreement",
+            "LicenseRef-scancode-ziplist5-geocode-enterprise"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

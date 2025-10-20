@@ -1,13 +1,15 @@
 {
-  "canonical": "adobe-flex-sdk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adobe Flex SDK SLA",
-      "LicenseRef-scancode-adobe-flex-sdk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adobe-flex-sdk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe Flex SDK SLA",
+            "LicenseRef-scancode-adobe-flex-sdk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "inria-zelus",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "INRIA Non-Commercial License Agreement for the Z\u00e9lus compiler",
-      "INRIA NCLA Zelus",
-      "LicenseRef-scancode-inria-zelus"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "inria-zelus",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "INRIA Non-Commercial License Agreement for the Z\u00e9lus compiler",
+            "INRIA NCLA Zelus",
+            "LicenseRef-scancode-inria-zelus"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

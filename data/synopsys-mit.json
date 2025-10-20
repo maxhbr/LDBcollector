@@ -1,13 +1,15 @@
 {
-  "canonical": "synopsys-mit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Synopsys MIT License",
-      "LicenseRef-scancode-synopsys-mit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "synopsys-mit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Synopsys MIT License",
+            "LicenseRef-scancode-synopsys-mit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

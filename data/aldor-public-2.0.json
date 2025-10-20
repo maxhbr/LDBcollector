@@ -1,14 +1,16 @@
 {
-  "canonical": "aldor-public-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Aldor Public License 2.0",
-      "LicenseRef-scancode-aldor-public-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "aldor-public-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Aldor Public License 2.0",
+            "LicenseRef-scancode-aldor-public-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

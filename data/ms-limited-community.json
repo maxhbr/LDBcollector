@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-limited-community",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Limited Community License",
-      "Microsoft Limited Community License",
-      "LicenseRef-scancode-ms-limited-community"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-limited-community",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Limited Community License",
+            "Microsoft Limited Community License",
+            "LicenseRef-scancode-ms-limited-community"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

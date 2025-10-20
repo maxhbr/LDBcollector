@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-programsynthesis-7.22.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft ProgramSynthesis 7.22.0",
-      "MS ProgramSynthesis 7.22.0",
-      "LicenseRef-scancode-ms-programsynthesis-7.22.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-programsynthesis-7.22.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft ProgramSynthesis 7.22.0",
+            "MS ProgramSynthesis 7.22.0",
+            "LicenseRef-scancode-ms-programsynthesis-7.22.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

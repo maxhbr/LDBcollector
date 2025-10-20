@@ -1,14 +1,16 @@
 {
-  "canonical": "rocket-master-terms-2022",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-rocket-master-terms-2022",
-      "Rocket Software Master Terms 2022",
-      "Rocket Software Master Terms and Conditions 2022"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "rocket-master-terms-2022",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-rocket-master-terms-2022",
+            "Rocket Software Master Terms 2022",
+            "Rocket Software Master Terms and Conditions 2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

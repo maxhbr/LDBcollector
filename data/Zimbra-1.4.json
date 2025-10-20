@@ -1,17 +1,19 @@
 {
-  "canonical": "Zimbra-1.4",
-  "aliases": {
-    "spdx": [
-      "Zimbra Public License v1.4"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "zimbra-1.4",
-      "Zimbra PL 1.4"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "Zimbra-1.4",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Zimbra Public License v1.4"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "zimbra-1.4",
+            "Zimbra PL 1.4"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

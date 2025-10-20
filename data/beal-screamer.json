@@ -1,13 +1,15 @@
 {
-  "canonical": "beal-screamer",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Beal Screamer License",
-      "LicenseRef-scancode-beal-screamer"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "beal-screamer",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Beal Screamer License",
+            "LicenseRef-scancode-beal-screamer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

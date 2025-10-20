@@ -1,17 +1,19 @@
 {
-  "canonical": "SISSL-1.2",
-  "aliases": {
-    "spdx": [
-      "Sun Industry Standards Source License v1.2"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun Industry Standards Source License 1.2",
-      "sun-sissl-1.2"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "SISSL-1.2",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Sun Industry Standards Source License v1.2"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun Industry Standards Source License 1.2",
+            "sun-sissl-1.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

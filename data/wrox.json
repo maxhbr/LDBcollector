@@ -1,13 +1,15 @@
 {
-  "canonical": "wrox",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Wrox Press License",
-      "LicenseRef-scancode-wrox"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "wrox",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Wrox Press License",
+            "LicenseRef-scancode-wrox"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

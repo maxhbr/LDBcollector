@@ -1,13 +1,15 @@
 {
-  "canonical": "x11-lucent-variant",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "X11-Style (Lucent-variant)",
-      "LicenseRef-scancode-x11-lucent-variant"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "x11-lucent-variant",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X11-Style (Lucent-variant)",
+            "LicenseRef-scancode-x11-lucent-variant"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

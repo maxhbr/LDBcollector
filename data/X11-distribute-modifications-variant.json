@@ -1,17 +1,19 @@
 {
-  "canonical": "X11-distribute-modifications-variant",
-  "aliases": {
-    "spdx": [
-      "X11 License Distribution Modification Variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-x11-fsf",
-      "x11-fsf",
-      "X11-Style (FSF)"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "X11-distribute-modifications-variant",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "X11 License Distribution Modification Variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-x11-fsf",
+            "x11-fsf",
+            "X11-Style (FSF)"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

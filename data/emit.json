@@ -1,13 +1,15 @@
 {
-  "canonical": "emit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Enhanced MIT License",
-      "LicenseRef-scancode-emit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "emit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Enhanced MIT License",
+            "LicenseRef-scancode-emit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

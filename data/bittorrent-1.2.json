@@ -1,15 +1,17 @@
 {
-  "canonical": "bittorrent-1.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BitTorrent Open Source License 1.2",
-      "BitTorrent 1.2",
-      "LicenseRef-scancode-bittorrent-1.2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "bittorrent-1.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BitTorrent Open Source License 1.2",
+            "BitTorrent 1.2",
+            "LicenseRef-scancode-bittorrent-1.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

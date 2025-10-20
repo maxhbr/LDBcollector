@@ -1,14 +1,16 @@
 {
-  "canonical": "katharos-0.1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Katharos License v0.1.0",
-      "LicenseRef-scancode-katharos-0.1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "katharos-0.1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Katharos License v0.1.0",
+            "LicenseRef-scancode-katharos-0.1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

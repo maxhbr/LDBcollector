@@ -1,18 +1,20 @@
 {
-  "canonical": "OCCT-exception-1.0",
-  "aliases": {
-    "spdx": [
-      "Open CASCADE Exception 1.0"
+    "canonical": {
+        "id": "OCCT-exception-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Open CASCADE Exception 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "occt-exception-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Open CASCADE Exception to LGPL 2.1"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "occt-exception-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "Open CASCADE Exception to LGPL 2.1"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

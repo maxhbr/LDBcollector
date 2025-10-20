@@ -1,13 +1,15 @@
 {
-  "canonical": "new-relic",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "New Relic License",
-      "LicenseRef-scancode-new-relic"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "new-relic",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "New Relic License",
+            "LicenseRef-scancode-new-relic"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

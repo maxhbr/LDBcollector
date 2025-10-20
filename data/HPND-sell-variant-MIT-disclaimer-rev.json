@@ -1,16 +1,18 @@
 {
-  "canonical": "HPND-sell-variant-MIT-disclaimer-rev",
-  "aliases": {
-    "spdx": [
-      "HPND sell variant with MIT disclaimer - reverse"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "hpnd-sell-variant-mit-disclaimer-rev",
-      "HPND sell variant with MIT disclaimer reverse"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HPND-sell-variant-MIT-disclaimer-rev",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "HPND sell variant with MIT disclaimer - reverse"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "hpnd-sell-variant-mit-disclaimer-rev",
+            "HPND sell variant with MIT disclaimer reverse"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

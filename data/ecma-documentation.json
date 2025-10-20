@@ -1,13 +1,15 @@
 {
-  "canonical": "ecma-documentation",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Ecma Documentation License",
-      "LicenseRef-scancode-ecma-documentation"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ecma-documentation",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Ecma Documentation License",
+            "LicenseRef-scancode-ecma-documentation"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

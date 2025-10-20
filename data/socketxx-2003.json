@@ -1,13 +1,15 @@
 {
-  "canonical": "socketxx-2003",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Socketxx License 2003",
-      "LicenseRef-scancode-socketxx-2003"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "socketxx-2003",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Socketxx License 2003",
+            "LicenseRef-scancode-socketxx-2003"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

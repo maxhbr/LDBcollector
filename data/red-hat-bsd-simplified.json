@@ -1,13 +1,15 @@
 {
-  "canonical": "red-hat-bsd-simplified",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Red Hat BSD-Simplified",
-      "LicenseRef-scancode-red-hat-bsd-simplified"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "red-hat-bsd-simplified",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Red Hat BSD-Simplified",
+            "LicenseRef-scancode-red-hat-bsd-simplified"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

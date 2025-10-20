@@ -1,17 +1,19 @@
 {
-  "canonical": "GNAT-exception",
-  "aliases": {
-    "spdx": [
-      "GNAT exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ada-linking-exception",
-      "LicenseRef-scancode-ada-linking-exception",
-      "Ada linking exception to GPL 2.0 or later"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "GNAT-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GNAT exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ada-linking-exception",
+            "LicenseRef-scancode-ada-linking-exception",
+            "Ada linking exception to GPL 2.0 or later"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

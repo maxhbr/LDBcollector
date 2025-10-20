@@ -1,15 +1,17 @@
 {
-  "canonical": "996-icu-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Anti 996 License Version 1.0 (Draft)",
-      "Anti 996 License 1.0",
-      "LicenseRef-scancode-996-icu-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "996-icu-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Anti 996 License Version 1.0 (Draft)",
+            "Anti 996 License 1.0",
+            "LicenseRef-scancode-996-icu-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

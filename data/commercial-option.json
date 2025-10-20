@@ -1,12 +1,14 @@
 {
-  "canonical": "commercial-option",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Commercial Option"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "commercial-option",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Commercial Option"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

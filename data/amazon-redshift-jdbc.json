@@ -1,13 +1,15 @@
 {
-  "canonical": "amazon-redshift-jdbc",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Amazon Redshift JDBC Driver License Agreement",
-      "LicenseRef-scancode-amazon-redshift-jdbc"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "amazon-redshift-jdbc",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Amazon Redshift JDBC Driver License Agreement",
+            "LicenseRef-scancode-amazon-redshift-jdbc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

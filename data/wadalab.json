@@ -1,13 +1,15 @@
 {
-  "canonical": "wadalab",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Wadalab Font License",
-      "LicenseRef-scancode-wadalab"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "wadalab",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Wadalab Font License",
+            "LicenseRef-scancode-wadalab"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "CERN-OHL-S-2.0",
-  "aliases": {
-    "spdx": [
-      "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "cern-ohl-s-2.0",
-      "CERN-OHL-S-2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CERN-OHL-S-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "cern-ohl-s-2.0",
+            "CERN-OHL-S-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

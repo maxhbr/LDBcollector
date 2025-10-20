@@ -1,14 +1,16 @@
 {
-  "canonical": "zrythm-exception-agpl-3.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Zrythm Exception to AGPL 3.0",
-      "LicenseRef-scancode-zrythm-exception-agpl-3.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "zrythm-exception-agpl-3.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Zrythm Exception to AGPL 3.0",
+            "LicenseRef-scancode-zrythm-exception-agpl-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

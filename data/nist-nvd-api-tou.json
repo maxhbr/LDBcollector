@@ -1,14 +1,16 @@
 {
-  "canonical": "nist-nvd-api-tou",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "NIST NVD API TOU",
-      "NIST NVD API Terms of Use",
-      "LicenseRef-scancode-nist-nvd-api-tou"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nist-nvd-api-tou",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "NIST NVD API TOU",
+            "NIST NVD API Terms of Use",
+            "LicenseRef-scancode-nist-nvd-api-tou"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "djangosnippets-tos",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Djangosnippets TOS",
-      "LicenseRef-scancode-djangosnippets-tos",
-      "Djangosnippets Terms of Service"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "djangosnippets-tos",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Djangosnippets TOS",
+            "LicenseRef-scancode-djangosnippets-tos",
+            "Djangosnippets Terms of Service"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "CAL-1.0",
-  "aliases": {
-    "spdx": [
-      "Cryptographic Autonomy License 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "CAL-1.0",
-      "cal-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CAL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Cryptographic Autonomy License 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "CAL-1.0",
+            "cal-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

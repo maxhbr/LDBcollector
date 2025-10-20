@@ -1,5 +1,8 @@
 {
-    "canonical": "AGPL-3.0-or-later",
+    "canonical": {
+        "id": "AGPL-3.0-or-later",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU Affero General Public License v3.0 or later"
@@ -26,7 +29,6 @@
             "AGPLv3+"
         ]
     },
-    "src": "spdx",
     "rejected": [
         "LicenseRef-AGPL"
     ],

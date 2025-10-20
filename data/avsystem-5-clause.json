@@ -1,13 +1,15 @@
 {
-  "canonical": "avsystem-5-clause",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "AVSystem 5-Clause License",
-      "LicenseRef-scancode-avsystem-5-clause"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "avsystem-5-clause",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "AVSystem 5-Clause License",
+            "LicenseRef-scancode-avsystem-5-clause"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

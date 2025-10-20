@@ -1,21 +1,23 @@
 {
-  "canonical": "EFL-1.0",
-  "aliases": {
-    "spdx": [
-      "Eiffel Forum License v1.0"
-    ],
-    "custom": [],
-    "osi": [
-      "The Eiffel Forum License, Version 1"
-    ],
-    "scancodeLicensedb": [
-      "Eiffel Forum License 1.0",
-      "EFL 1.0",
-      "efl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "EFL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Eiffel Forum License v1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "The Eiffel Forum License, Version 1"
+        ],
+        "scancodeLicensedb": [
+            "Eiffel Forum License 1.0",
+            "EFL 1.0",
+            "efl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

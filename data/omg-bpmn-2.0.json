@@ -1,15 +1,17 @@
 {
-  "canonical": "omg-bpmn-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OMG Business Process Model and Notation 2.0",
-      "LicenseRef-scancode-omg-bpmn-2.0",
-      "OMG BPMN 2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "omg-bpmn-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OMG Business Process Model and Notation 2.0",
+            "LicenseRef-scancode-omg-bpmn-2.0",
+            "OMG BPMN 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

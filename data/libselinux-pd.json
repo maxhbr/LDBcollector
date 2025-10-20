@@ -1,13 +1,15 @@
 {
-  "canonical": "libselinux-pd",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "libselinux License",
-      "LicenseRef-scancode-libselinux-pd"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "libselinux-pd",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "libselinux License",
+            "LicenseRef-scancode-libselinux-pd"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

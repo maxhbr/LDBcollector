@@ -1,13 +1,15 @@
 {
-  "canonical": "sun-bcl-javahelp",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun BCL JavaHelp",
-      "LicenseRef-scancode-sun-bcl-javahelp"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sun-bcl-javahelp",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun BCL JavaHelp",
+            "LicenseRef-scancode-sun-bcl-javahelp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

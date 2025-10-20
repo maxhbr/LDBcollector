@@ -1,15 +1,17 @@
 {
-  "canonical": "cc-by-2.0-uk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CC-BY-2.0-UK",
-      "Creative Commons Attribution License 2.0 UK",
-      "LicenseRef-scancode-cc-by-2.0-uk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "cc-by-2.0-uk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CC-BY-2.0-UK",
+            "Creative Commons Attribution License 2.0 UK",
+            "LicenseRef-scancode-cc-by-2.0-uk"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

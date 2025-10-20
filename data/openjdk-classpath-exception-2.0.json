@@ -1,15 +1,17 @@
 {
-  "canonical": "openjdk-classpath-exception-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-openjdk-classpath-exception-2.0",
-      "OpenJDK Classpath exception to GPL 2.0",
-      "LicenseRef-scancode-openjdk-classpath-exception2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "openjdk-classpath-exception-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openjdk-classpath-exception-2.0",
+            "OpenJDK Classpath exception to GPL 2.0",
+            "LicenseRef-scancode-openjdk-classpath-exception2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

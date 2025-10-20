@@ -1,13 +1,15 @@
 {
-  "canonical": "netdata-ncul1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Netdata Cloud UI License v1.0 (NCUL1)",
-      "LicenseRef-scancode-netdata-ncul1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "netdata-ncul1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Netdata Cloud UI License v1.0 (NCUL1)",
+            "LicenseRef-scancode-netdata-ncul1"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,5 +1,8 @@
 {
-    "canonical": "OGTSL",
+    "canonical": {
+        "id": "OGTSL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open Group Test Suite License"
@@ -17,7 +20,6 @@
             "License :: OSI Approved :: Open Group Test Suite License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "toppers-educational",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "TOPPERS Educational",
-      "TOPPERS Educational contents license agreement",
-      "LicenseRef-scancode-toppers-educational"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "toppers-educational",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "TOPPERS Educational",
+            "TOPPERS Educational contents license agreement",
+            "LicenseRef-scancode-toppers-educational"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "unpublished-source",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Unpublished Source License",
-      "LicenseRef-scancode-unpublished-source"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "unpublished-source",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Unpublished Source License",
+            "LicenseRef-scancode-unpublished-source"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

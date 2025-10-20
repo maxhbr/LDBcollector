@@ -1,15 +1,17 @@
 {
-  "canonical": "MIT-Khronos-old",
-  "aliases": {
-    "spdx": [
-      "MIT Khronos - old variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "mit-khronos-old"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "MIT-Khronos-old",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "MIT Khronos - old variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "mit-khronos-old"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

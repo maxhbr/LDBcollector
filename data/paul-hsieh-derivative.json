@@ -1,13 +1,15 @@
 {
-  "canonical": "paul-hsieh-derivative",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Paul Hsieh Derivative License",
-      "LicenseRef-scancode-paul-hsieh-derivative"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "paul-hsieh-derivative",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Paul Hsieh Derivative License",
+            "LicenseRef-scancode-paul-hsieh-derivative"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

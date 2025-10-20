@@ -1,13 +1,15 @@
 {
-  "canonical": "michael-barr",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Michael Barr License",
-      "LicenseRef-scancode-michael-barr"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "michael-barr",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Michael Barr License",
+            "LicenseRef-scancode-michael-barr"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

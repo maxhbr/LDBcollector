@@ -1,13 +1,15 @@
 {
-  "canonical": "netronome-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Netronome Firmware License",
-      "LicenseRef-scancode-netronome-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "netronome-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Netronome Firmware License",
+            "LicenseRef-scancode-netronome-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

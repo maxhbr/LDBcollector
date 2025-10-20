@@ -1,15 +1,17 @@
 {
-  "canonical": "owf-cla-1.0-copyright-patent",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OWF CLA 1.0 - Copyright and Patent",
-      "OWF Contributor License Agreement 1.0 - Copyright and Patent",
-      "LicenseRef-scancode-owf-cla-1.0-copyright-patent"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "owf-cla-1.0-copyright-patent",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OWF CLA 1.0 - Copyright and Patent",
+            "OWF Contributor License Agreement 1.0 - Copyright and Patent",
+            "LicenseRef-scancode-owf-cla-1.0-copyright-patent"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

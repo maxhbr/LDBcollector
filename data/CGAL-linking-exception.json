@@ -1,15 +1,17 @@
 {
-  "canonical": "CGAL-linking-exception",
-  "aliases": {
-    "spdx": [
-      "CGAL Linking Exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "cgal-linking-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "CGAL-linking-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "CGAL Linking Exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "cgal-linking-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,5 +1,8 @@
 {
-    "canonical": "MIT-CMU",
+    "canonical": {
+        "id": "MIT-CMU",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CMU License"
@@ -22,7 +25,6 @@
             "CMU License (MIT-CMU)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

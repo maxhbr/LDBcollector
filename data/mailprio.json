@@ -1,15 +1,17 @@
 {
-  "canonical": "mailprio",
-  "aliases": {
-    "spdx": [
-      "mailprio License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "mailprio"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mailprio",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "mailprio License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "mailprio"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

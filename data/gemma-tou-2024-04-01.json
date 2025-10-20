@@ -1,14 +1,16 @@
 {
-  "canonical": "gemma-tou-2024-04-01",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Gemma ToU 2024-04-01",
-      "Gemma Terms of Use 2024-04-01",
-      "LicenseRef-scancode-gemma-tou-2024-04-01"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "gemma-tou-2024-04-01",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Gemma ToU 2024-04-01",
+            "Gemma Terms of Use 2024-04-01",
+            "LicenseRef-scancode-gemma-tou-2024-04-01"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

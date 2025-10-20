@@ -1,5 +1,8 @@
 {
-    "canonical": "Xnet",
+    "canonical": {
+        "id": "Xnet",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "X.Net License"
@@ -18,7 +21,6 @@
             "License :: X.Net License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

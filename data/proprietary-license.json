@@ -1,15 +1,17 @@
 {
-  "canonical": "proprietary-license",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Proprietary License",
-      "LicenseRef-LICENSE",
-      "LicenseRef-LICENSE.md",
-      "LicenseRef-scancode-proprietary-license"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "proprietary-license",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Proprietary License",
+            "LicenseRef-LICENSE",
+            "LicenseRef-LICENSE.md",
+            "LicenseRef-scancode-proprietary-license"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

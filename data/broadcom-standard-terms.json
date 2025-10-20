@@ -1,13 +1,15 @@
 {
-  "canonical": "broadcom-standard-terms",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Broadcom Standard Terms",
-      "LicenseRef-scancode-broadcom-standard-terms"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "broadcom-standard-terms",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Broadcom Standard Terms",
+            "LicenseRef-scancode-broadcom-standard-terms"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "libpng-2.0",
-  "aliases": {
-    "spdx": [
-      "PNG Reference Library version 2"
+    "canonical": {
+        "id": "libpng-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "PNG Reference Library version 2"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [
+        "libpng-v2",
+        "LIbpng License v2",
+        "PNG Reference Library License version 2"
     ],
-    "custom": []
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "libpng-v2",
-    "LIbpng License v2",
-    "PNG Reference Library License version 2"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

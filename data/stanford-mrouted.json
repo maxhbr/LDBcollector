@@ -1,13 +1,15 @@
 {
-  "canonical": "stanford-mrouted",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Stanford mrouted License",
-      "LicenseRef-scancode-stanford-mrouted"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "stanford-mrouted",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Stanford mrouted License",
+            "LicenseRef-scancode-stanford-mrouted"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

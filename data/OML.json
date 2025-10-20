@@ -1,16 +1,18 @@
 {
-  "canonical": "OML",
-  "aliases": {
-    "spdx": [
-      "Open Market License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "FastCGI DevKit",
-      "fastcgi-devkit"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "OML",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Open Market License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "FastCGI DevKit",
+            "fastcgi-devkit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

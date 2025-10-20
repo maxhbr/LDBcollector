@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-permissive-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS-PL 1.1",
-      "Microsoft Permissive License (MS-PL) v1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-permissive-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS-PL 1.1",
+            "Microsoft Permissive License (MS-PL) v1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

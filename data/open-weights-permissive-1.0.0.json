@@ -1,15 +1,17 @@
 {
-  "canonical": "open-weights-permissive-1.0.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Open Weights Permissive License Version 1.0.0",
-      "Open Weights Permissive License v1.0.0",
-      "LicenseRef-scancode-open-weights-permissive-1.0.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "open-weights-permissive-1.0.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Open Weights Permissive License Version 1.0.0",
+            "Open Weights Permissive License v1.0.0",
+            "LicenseRef-scancode-open-weights-permissive-1.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

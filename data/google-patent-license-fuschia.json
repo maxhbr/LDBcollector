@@ -1,12 +1,14 @@
 {
-  "canonical": "google-patent-license-fuschia",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Google Patent License for Fuschia"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "google-patent-license-fuschia",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Google Patent License for Fuschia"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

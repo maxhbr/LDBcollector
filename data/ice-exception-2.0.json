@@ -1,14 +1,16 @@
 {
-  "canonical": "ice-exception-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Ice exception to GPL 2.0",
-      "LicenseRef-scancode-ice-exception-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ice-exception-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Ice exception to GPL 2.0",
+            "LicenseRef-scancode-ice-exception-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,22 +1,24 @@
 {
-  "canonical": "CPAL-1.0",
-  "aliases": {
-    "spdx": [
-      "Common Public Attribution License 1.0"
+    "canonical": {
+        "id": "CPAL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Common Public Attribution License 1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Common Public Attribution License Version 1.0 (CPAL-1.0)"
+        ],
+        "scancodeLicensedb": [
+            "cpal-1.0",
+            "CPAL 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "cpal"
     ],
-    "custom": [],
-    "osi": [
-      "Common Public Attribution License Version 1.0 (CPAL-1.0)"
-    ],
-    "scancodeLicensedb": [
-      "cpal-1.0",
-      "CPAL 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "cpal"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

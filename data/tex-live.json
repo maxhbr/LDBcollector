@@ -1,13 +1,15 @@
 {
-  "canonical": "tex-live",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "TeX Live License",
-      "LicenseRef-scancode-tex-live"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "tex-live",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "TeX Live License",
+            "LicenseRef-scancode-tex-live"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

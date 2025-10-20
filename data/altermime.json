@@ -1,13 +1,15 @@
 {
-  "canonical": "altermime",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "alterMIME License",
-      "LicenseRef-scancode-altermime"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "altermime",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "alterMIME License",
+            "LicenseRef-scancode-altermime"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "Universal-FOSS-exception-1.0",
-  "aliases": {
-    "spdx": [
-      "Universal FOSS Exception, Version 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "universal-foss-exception-1.0",
-      "Universal FOSS Exception v1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Universal-FOSS-exception-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Universal FOSS Exception, Version 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "universal-foss-exception-1.0",
+            "Universal FOSS Exception v1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

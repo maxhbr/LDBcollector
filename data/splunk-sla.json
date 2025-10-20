@@ -1,14 +1,16 @@
 {
-  "canonical": "splunk-sla",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Splunk SLA",
-      "Splunk Software License Agreement",
-      "LicenseRef-scancode-splunk-sla"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "splunk-sla",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Splunk SLA",
+            "Splunk Software License Agreement",
+            "LicenseRef-scancode-splunk-sla"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

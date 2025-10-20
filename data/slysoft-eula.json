@@ -1,13 +1,15 @@
 {
-  "canonical": "slysoft-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SlySoft EULA",
-      "LicenseRef-scancode-slysoft-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "slysoft-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SlySoft EULA",
+            "LicenseRef-scancode-slysoft-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

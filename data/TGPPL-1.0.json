@@ -1,18 +1,20 @@
 {
-  "canonical": "TGPPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Transitive Grace Period Public Licence 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-tgppl-1.0",
-      "TGGPL 1.0",
-      "tgppl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "TGPPL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Transitive Grace Period Public Licence 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tgppl-1.0",
+            "TGGPL 1.0",
+            "tgppl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

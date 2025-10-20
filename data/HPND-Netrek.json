@@ -1,17 +1,19 @@
 {
-  "canonical": "HPND-Netrek",
-  "aliases": {
-    "spdx": [
-      "Historical Permission Notice and Disclaimer - Netrek variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Historical Permission Notice and Disclaimer Netrek variant",
-      "HPND Netrek variant",
-      "hpnd-netrek"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HPND-Netrek",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - Netrek variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Historical Permission Notice and Disclaimer Netrek variant",
+            "HPND Netrek variant",
+            "hpnd-netrek"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

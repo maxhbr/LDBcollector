@@ -1,15 +1,17 @@
 {
-  "canonical": "quickfix-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "QuickFix 1.0",
-      "The QuickFIX Software License, Version 1.0",
-      "LicenseRef-scancode-quickfix-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "quickfix-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "QuickFix 1.0",
+            "The QuickFIX Software License, Version 1.0",
+            "LicenseRef-scancode-quickfix-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

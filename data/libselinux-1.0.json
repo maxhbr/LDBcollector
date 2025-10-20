@@ -1,16 +1,18 @@
 {
-  "canonical": "libselinux-1.0",
-  "aliases": {
-    "spdx": [
-      "libselinux public domain notice"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "selinux-nsa-declaration-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "libselinux-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "libselinux public domain notice"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "selinux-nsa-declaration-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

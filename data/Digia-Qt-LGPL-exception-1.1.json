@@ -1,13 +1,15 @@
 {
-  "canonical": "Digia-Qt-LGPL-exception-1.1",
-  "aliases": {
-    "spdx": [
-      "Digia Qt LGPL Exception version 1.1"
-    ],
-    "custom": []
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Digia-Qt-LGPL-exception-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Digia Qt LGPL Exception version 1.1"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

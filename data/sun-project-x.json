@@ -1,13 +1,15 @@
 {
-  "canonical": "sun-project-x",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun Project X",
-      "LicenseRef-scancode-sun-project-x"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sun-project-x",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun Project X",
+            "LicenseRef-scancode-sun-project-x"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "Mackerras-3-Clause-acknowledgment",
-  "aliases": {
-    "spdx": [
-      "Mackerras 3-Clause - acknowledgment variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-paul-mackerras",
-      "Paul Mackerras License",
-      "paul-mackerras"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Mackerras-3-Clause-acknowledgment",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Mackerras 3-Clause - acknowledgment variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-paul-mackerras",
+            "Paul Mackerras License",
+            "paul-mackerras"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

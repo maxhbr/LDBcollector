@@ -1,15 +1,17 @@
 {
-  "canonical": "mpi-permissive",
-  "aliases": {
-    "spdx": [
-      "mpi Permissive License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "mpi-permissive"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "mpi-permissive",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "mpi Permissive License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "mpi-permissive"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

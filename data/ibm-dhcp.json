@@ -1,13 +1,15 @@
 {
-  "canonical": "ibm-dhcp",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "IBM DHCP License",
-      "LicenseRef-scancode-ibm-dhcp"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ibm-dhcp",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "IBM DHCP License",
+            "LicenseRef-scancode-ibm-dhcp"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

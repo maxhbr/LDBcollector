@@ -1,15 +1,17 @@
 {
-  "canonical": "ThirdEye",
-  "aliases": {
-    "spdx": [
-      "ThirdEye License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "thirdeye"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ThirdEye",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "ThirdEye License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "thirdeye"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

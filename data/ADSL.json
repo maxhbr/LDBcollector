@@ -1,15 +1,17 @@
 {
-  "canonical": "ADSL",
-  "aliases": {
-    "spdx": [
-      "Amazon Digital Services License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "adsl"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ADSL",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Amazon Digital Services License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "adsl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

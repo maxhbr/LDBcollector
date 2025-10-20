@@ -1,15 +1,17 @@
 {
-  "canonical": "any-OSI",
-  "aliases": {
-    "spdx": [
-      "Any OSI License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "any-osi"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "any-OSI",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Any OSI License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "any-osi"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

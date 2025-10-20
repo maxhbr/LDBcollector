@@ -1,13 +1,15 @@
 {
-  "canonical": "winzip-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "WinZip EULA",
-      "LicenseRef-scancode-winzip-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "winzip-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "WinZip EULA",
+            "LicenseRef-scancode-winzip-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

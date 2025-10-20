@@ -1,14 +1,16 @@
 {
-  "canonical": "alfresco-exception-0.5",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Alfresco FLOSS Exception v0.5",
-      "LicenseRef-scancode-alfresco-exception-0.5"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "alfresco-exception-0.5",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Alfresco FLOSS Exception v0.5",
+            "LicenseRef-scancode-alfresco-exception-0.5"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

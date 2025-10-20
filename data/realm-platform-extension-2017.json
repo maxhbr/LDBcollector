@@ -1,13 +1,15 @@
 {
-  "canonical": "realm-platform-extension-2017",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Realm Platform Extensions License 2017",
-      "LicenseRef-scancode-realm-platform-extension-2017"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "realm-platform-extension-2017",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Realm Platform Extensions License 2017",
+            "LicenseRef-scancode-realm-platform-extension-2017"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

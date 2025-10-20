@@ -1,13 +1,15 @@
 {
-  "canonical": "chelsio-linux-firmware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Chelsio Linux Firmware License",
-      "LicenseRef-scancode-chelsio-linux-firmware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "chelsio-linux-firmware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Chelsio Linux Firmware License",
+            "LicenseRef-scancode-chelsio-linux-firmware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

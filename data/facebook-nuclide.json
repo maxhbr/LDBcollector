@@ -1,14 +1,16 @@
 {
-  "canonical": "facebook-nuclide",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Facebook License Agreement for Nuclide Software",
-      "Facebook Nuclide Software License",
-      "LicenseRef-scancode-facebook-nuclide"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "facebook-nuclide",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Facebook License Agreement for Nuclide Software",
+            "Facebook Nuclide Software License",
+            "LicenseRef-scancode-facebook-nuclide"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

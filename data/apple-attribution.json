@@ -1,13 +1,15 @@
 {
-  "canonical": "apple-attribution",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Apple Attribution License",
-      "LicenseRef-scancode-apple-attribution"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "apple-attribution",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Apple Attribution License",
+            "LicenseRef-scancode-apple-attribution"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

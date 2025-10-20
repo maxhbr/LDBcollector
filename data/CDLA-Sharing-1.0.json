@@ -1,17 +1,19 @@
 {
-  "canonical": "CDLA-Sharing-1.0",
-  "aliases": {
-    "spdx": [
-      "Community Data License Agreement Sharing 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "CDLA Sharing 1.0",
-      "cdla-sharing-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CDLA-Sharing-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Community Data License Agreement Sharing 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "CDLA Sharing 1.0",
+            "cdla-sharing-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "Swift-exception",
-  "aliases": {
-    "spdx": [
-      "Swift Exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Runtime Library Exception to the Apache 2.0 License",
-      "Runtime Library Exception to Apache 2.0",
-      "apple-runtime-library-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Swift-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Swift Exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Runtime Library Exception to the Apache 2.0 License",
+            "Runtime Library Exception to Apache 2.0",
+            "apple-runtime-library-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

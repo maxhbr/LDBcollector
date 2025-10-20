@@ -1,17 +1,19 @@
 {
-  "canonical": "CAL-1.0-Combined-Work-Exception",
-  "aliases": {
-    "spdx": [
-      "Cryptographic Autonomy License 1.0 (Combined Work Exception)"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "CAL-1.0-Combined-Work-Exception",
-      "cal-1.0-combined-work-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CAL-1.0-Combined-Work-Exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Cryptographic Autonomy License 1.0 (Combined Work Exception)"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "CAL-1.0-Combined-Work-Exception",
+            "cal-1.0-combined-work-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

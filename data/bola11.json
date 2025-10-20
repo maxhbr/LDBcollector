@@ -1,13 +1,15 @@
 {
-  "canonical": "bola11",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BOLA - Buena Onda License Agreement (v1.1)",
-      "LicenseRef-scancode-bola11"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "bola11",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BOLA - Buena Onda License Agreement (v1.1)",
+            "LicenseRef-scancode-bola11"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

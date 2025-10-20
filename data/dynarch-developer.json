@@ -1,13 +1,15 @@
 {
-  "canonical": "dynarch-developer",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Dynarch Developer Agreement",
-      "LicenseRef-scancode-dynarch-developer"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "dynarch-developer",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Dynarch Developer Agreement",
+            "LicenseRef-scancode-dynarch-developer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

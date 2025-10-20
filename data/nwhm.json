@@ -1,13 +1,15 @@
 {
-  "canonical": "nwhm",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Non White Heterosexual Male",
-      "LicenseRef-scancode-nwhm"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "nwhm",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Non White Heterosexual Male",
+            "LicenseRef-scancode-nwhm"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

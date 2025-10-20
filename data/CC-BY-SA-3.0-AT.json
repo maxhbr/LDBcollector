@@ -1,18 +1,20 @@
 {
-  "canonical": "CC-BY-SA-3.0-AT",
-  "aliases": {
-    "spdx": [
-      "Creative Commons Attribution Share Alike 3.0 Austria"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "cc-by-sa-3.0-at",
-      "Creative Commons Attribution Share Alike License 3.0 Austria",
-      "CC-BY-SA-3.0-AT"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CC-BY-SA-3.0-AT",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Creative Commons Attribution Share Alike 3.0 Austria"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "cc-by-sa-3.0-at",
+            "Creative Commons Attribution Share Alike License 3.0 Austria",
+            "CC-BY-SA-3.0-AT"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-jdbc-driver-60-sql-server",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft JDBC Driver 6.0 for SQL Server",
-      "MS JDBC Driver 6.0 for SQL Server",
-      "LicenseRef-scancode-ms-jdbc-driver-60-sql-server"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-jdbc-driver-60-sql-server",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft JDBC Driver 6.0 for SQL Server",
+            "MS JDBC Driver 6.0 for SQL Server",
+            "LicenseRef-scancode-ms-jdbc-driver-60-sql-server"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

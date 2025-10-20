@@ -1,14 +1,16 @@
 {
-  "canonical": "microchip-products-2018",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microchip Technology Products 2018",
-      "Microchip Products 2018",
-      "LicenseRef-scancode-microchip-products-2018"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "microchip-products-2018",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microchip Technology Products 2018",
+            "Microchip Products 2018",
+            "LicenseRef-scancode-microchip-products-2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

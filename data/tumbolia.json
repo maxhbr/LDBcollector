@@ -1,13 +1,15 @@
 {
-  "canonical": "tumbolia",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Tumbolia Public License",
-      "LicenseRef-scancode-tumbolia"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "tumbolia",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Tumbolia Public License",
+            "LicenseRef-scancode-tumbolia"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

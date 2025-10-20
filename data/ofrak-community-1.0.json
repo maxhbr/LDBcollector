@@ -1,14 +1,16 @@
 {
-  "canonical": "ofrak-community-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "OFRAK Community License Agreement 1.0",
-      "LicenseRef-scancode-ofrak-community-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "ofrak-community-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OFRAK Community License Agreement 1.0",
+            "LicenseRef-scancode-ofrak-community-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

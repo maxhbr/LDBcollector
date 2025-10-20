@@ -1,13 +1,15 @@
 {
-  "canonical": "info-zip-1997-10",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Info-Zip License 1997-10",
-      "LicenseRef-scancode-info-zip-1997-10"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "info-zip-1997-10",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Info-Zip License 1997-10",
+            "LicenseRef-scancode-info-zip-1997-10"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

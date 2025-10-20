@@ -1,15 +1,17 @@
 {
-  "canonical": "GCR-docs",
-  "aliases": {
-    "spdx": [
-      "Gnome GCR Documentation License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "gcr-docs"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "GCR-docs",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Gnome GCR Documentation License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "gcr-docs"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

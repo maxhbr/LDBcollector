@@ -1,16 +1,18 @@
 {
-  "canonical": "mozilla-ospl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Mozilla Open Software Patent License 1.0",
-      "LicenseRef-scancode-mozilla-ospl-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Mozilla Open Software Patent License Agreement v1"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "mozilla-ospl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Mozilla Open Software Patent License 1.0",
+            "LicenseRef-scancode-mozilla-ospl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Mozilla Open Software Patent License Agreement v1"
+    ],
+    "isMajorVersionOnly": true
 }

@@ -1,5 +1,8 @@
 {
-    "canonical": "MIT",
+    "canonical": {
+        "id": "MIT",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MIT License"
@@ -34,7 +37,6 @@
             "License :: OSI Approved :: MIT License"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

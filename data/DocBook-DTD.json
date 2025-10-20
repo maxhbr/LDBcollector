@@ -1,12 +1,14 @@
 {
-    "canonical": "DocBook-DTD",
+    "canonical": {
+        "id": "DocBook-DTD",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "DocBook DTD License"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

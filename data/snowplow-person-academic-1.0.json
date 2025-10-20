@@ -1,15 +1,17 @@
 {
-  "canonical": "snowplow-person-academic-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Snowplow Personal & Academic License Agreement 1.0",
-      "Snowplow Personal-Academic License 1.0",
-      "LicenseRef-scancode-snowplow-person-academic-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "snowplow-person-academic-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Snowplow Personal & Academic License Agreement 1.0",
+            "Snowplow Personal-Academic License 1.0",
+            "LicenseRef-scancode-snowplow-person-academic-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

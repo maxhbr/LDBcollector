@@ -1,17 +1,19 @@
 {
-  "canonical": "OGC-1.0",
-  "aliases": {
-    "spdx": [
-      "OGC Software License, Version 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ogc-1.0",
-      "OGC 1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "OGC-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "OGC Software License, Version 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ogc-1.0",
+            "OGC 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

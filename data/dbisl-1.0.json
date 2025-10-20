@@ -1,15 +1,17 @@
 {
-  "canonical": "dbisl-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "DB Inner Source License 1.0",
-      "LicenseRef-scancode-dbisl-1.0",
-      "Deutsche Bahn Inner Source License 1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "dbisl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "DB Inner Source License 1.0",
+            "LicenseRef-scancode-dbisl-1.0",
+            "Deutsche Bahn Inner Source License 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

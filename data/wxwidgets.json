@@ -1,13 +1,15 @@
 {
-  "canonical": "wxwidgets",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "wxWidgets Licence",
-      "LicenseRef-scancode-wxwidgets"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "wxwidgets",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "wxWidgets Licence",
+            "LicenseRef-scancode-wxwidgets"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

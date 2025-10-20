@@ -1,16 +1,18 @@
 {
-  "canonical": "libtiff",
-  "aliases": {
-    "spdx": [
-      "libtiff License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "x11-tiff",
-      "X11-Style (Tiff)"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "libtiff",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "libtiff License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "x11-tiff",
+            "X11-Style (Tiff)"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

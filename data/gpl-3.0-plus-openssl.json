@@ -1,13 +1,15 @@
 {
-  "canonical": "gpl-3.0-plus-openssl",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 3.0 or later with OpenSSL exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gpl-3.0-plus-openssl",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 3.0 or later with OpenSSL exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

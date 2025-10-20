@@ -1,13 +1,15 @@
 {
-  "canonical": "spark-jive",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Spark Jive License",
-      "LicenseRef-scancode-spark-jive"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "spark-jive",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Spark Jive License",
+            "LicenseRef-scancode-spark-jive"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

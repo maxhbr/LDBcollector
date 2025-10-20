@@ -1,15 +1,17 @@
 {
-  "canonical": "yolo-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-yolo-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "YOLO License v2"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "yolo-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-yolo-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "YOLO License v2"
+    ],
+    "isMajorVersionOnly": true
 }

@@ -1,18 +1,20 @@
 {
-  "canonical": "SimPL-2.0",
-  "aliases": {
-    "spdx": [
-      "Simple Public License 2.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "SimPL 2.0",
-      "simpl-2.0",
-      "Simple Public License Version 2.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "SimPL-2.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Simple Public License 2.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "SimPL 2.0",
+            "simpl-2.0",
+            "Simple Public License Version 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

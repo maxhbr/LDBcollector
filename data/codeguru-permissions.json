@@ -1,13 +1,15 @@
 {
-  "canonical": "codeguru-permissions",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CodeGuru Permissions",
-      "LicenseRef-scancode-codeguru-permissions"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "codeguru-permissions",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CodeGuru Permissions",
+            "LicenseRef-scancode-codeguru-permissions"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

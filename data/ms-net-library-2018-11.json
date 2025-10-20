@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-net-library-2018-11",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS .NET Library License 2018-11",
-      "Microsoft .NET Library License 2018-11",
-      "LicenseRef-scancode-ms-net-library-2018-11"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-net-library-2018-11",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS .NET Library License 2018-11",
+            "Microsoft .NET Library License 2018-11",
+            "LicenseRef-scancode-ms-net-library-2018-11"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

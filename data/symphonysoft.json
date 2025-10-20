@@ -1,14 +1,16 @@
 {
-  "canonical": "symphonysoft",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Symphonysoft",
-      "Symphonysoft License",
-      "LicenseRef-scancode-symphonysoft"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "symphonysoft",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Symphonysoft",
+            "Symphonysoft License",
+            "LicenseRef-scancode-symphonysoft"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

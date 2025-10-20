@@ -1,17 +1,19 @@
 {
-  "canonical": "BSD-3-Clause-Modification",
-  "aliases": {
-    "spdx": [
-      "BSD 3-Clause Modification"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-repoze",
-      "repoze",
-      "Repoze License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-3-Clause-Modification",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause Modification"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-repoze",
+            "repoze",
+            "Repoze License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "ko-man-page",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Korean Manpage Project License",
-      "LicenseRef-scancode-ko-man-page"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ko-man-page",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Korean Manpage Project License",
+            "LicenseRef-scancode-ko-man-page"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

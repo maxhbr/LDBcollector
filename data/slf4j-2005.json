@@ -1,12 +1,14 @@
 {
-  "canonical": "slf4j-2005",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SLF4J License 2005"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "slf4j-2005",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SLF4J License 2005"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

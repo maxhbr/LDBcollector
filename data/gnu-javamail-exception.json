@@ -1,16 +1,18 @@
 {
-  "canonical": "gnu-javamail-exception",
-  "aliases": {
-    "spdx": [
-      "GNU JavaMail exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "GNU JavaMail exception to GPL 2.0 or later",
-      "gnu-javamail-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "gnu-javamail-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GNU JavaMail exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "GNU JavaMail exception to GPL 2.0 or later",
+            "gnu-javamail-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

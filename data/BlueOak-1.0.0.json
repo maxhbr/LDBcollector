@@ -1,5 +1,8 @@
 {
-    "canonical": "BlueOak-1.0.0",
+    "canonical": {
+        "id": "BlueOak-1.0.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Blue Oak Model License 1.0.0"
@@ -18,7 +21,6 @@
             "Blue Oak Model License (BlueOak-1.0.0)"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": [
         "License :: OSI Approved :: Blue Oak Model License",

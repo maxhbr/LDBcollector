@@ -1,13 +1,15 @@
 {
-  "canonical": "oasis-ws-security-spec",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Oasis WS Security Specification License",
-      "LicenseRef-scancode-oasis-ws-security-spec"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "oasis-ws-security-spec",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Oasis WS Security Specification License",
+            "LicenseRef-scancode-oasis-ws-security-spec"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,17 @@
 {
-  "canonical": "polyform-shield-1.0.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-polyform-defensive-1.0.0",
-      "Polyform Shield License 1.0.0",
-      "LicenseRef-scancode-polyform-shield-1.0.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "polyform-shield-1.0.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-polyform-defensive-1.0.0",
+            "Polyform Shield License 1.0.0",
+            "LicenseRef-scancode-polyform-shield-1.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

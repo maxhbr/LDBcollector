@@ -1,13 +1,15 @@
 {
-  "canonical": "douglas-young",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Douglas Young License",
-      "LicenseRef-scancode-douglas-young"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "douglas-young",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Douglas Young License",
+            "LicenseRef-scancode-douglas-young"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "reportbug",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Debian reportbug License",
-      "LicenseRef-scancode-reportbug"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "reportbug",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Debian reportbug License",
+            "LicenseRef-scancode-reportbug"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

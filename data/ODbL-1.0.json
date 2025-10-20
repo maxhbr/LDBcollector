@@ -1,20 +1,22 @@
 {
-  "canonical": "ODbL-1.0",
-  "aliases": {
-    "spdx": [
-      "Open Data Commons Open Database License v1.0"
+    "canonical": {
+        "id": "ODbL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Open Data Commons Open Database License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ODbL 1.0",
+            "odbl-1.0",
+            "ODC Open Database License v1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "ODBL"
     ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ODbL 1.0",
-      "odbl-1.0",
-      "ODC Open Database License v1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [
-    "ODBL"
-  ],
-  "isMajorVersionOnly": true
+    "isMajorVersionOnly": true
 }

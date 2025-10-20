@@ -1,15 +1,17 @@
 {
-  "canonical": "pftijah-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "PfTijah Public License v1.1",
-      "PfTijah Public License 1.1",
-      "LicenseRef-scancode-pftijah-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "pftijah-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "PfTijah Public License v1.1",
+            "PfTijah Public License 1.1",
+            "LicenseRef-scancode-pftijah-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

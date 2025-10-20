@@ -1,13 +1,15 @@
 {
-  "canonical": "cmr-no",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "CMR License",
-      "Christian Michelsen Research AS License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "cmr-no",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CMR License",
+            "Christian Michelsen Research AS License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

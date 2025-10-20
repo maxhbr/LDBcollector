@@ -1,13 +1,15 @@
 {
-  "canonical": "luxi",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Bigelow & Holmes Luxi fonts license",
-      "LicenseRef-scancode-luxi"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "luxi",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Bigelow & Holmes Luxi fonts license",
+            "LicenseRef-scancode-luxi"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

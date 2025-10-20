@@ -1,5 +1,8 @@
 {
-    "canonical": "CDDL-1.0",
+    "canonical": {
+        "id": "CDDL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Common Development and Distribution License 1.0"
@@ -39,7 +42,6 @@
             "Common Development and Distribution License 1.0 (CDDL-1.0)"
         ]
     },
-    "src": "spdx",
     "rejected": [
         "CDDL License",
         "Common Development and Distribution License"

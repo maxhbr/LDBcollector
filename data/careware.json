@@ -1,14 +1,16 @@
 {
-  "canonical": "careware",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Careware",
-      "Careware License",
-      "LicenseRef-scancode-careware"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "careware",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Careware",
+            "Careware License",
+            "LicenseRef-scancode-careware"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

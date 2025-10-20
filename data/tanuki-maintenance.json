@@ -1,14 +1,16 @@
 {
-  "canonical": "tanuki-maintenance",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Tanuki Maintenance Support Services Addendum 1.3",
-      "Tanuki Maintenance Addendum 1.3",
-      "LicenseRef-scancode-tanuki-maintenance"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "tanuki-maintenance",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Tanuki Maintenance Support Services Addendum 1.3",
+            "Tanuki Maintenance Addendum 1.3",
+            "LicenseRef-scancode-tanuki-maintenance"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

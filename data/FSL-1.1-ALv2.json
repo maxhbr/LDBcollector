@@ -1,13 +1,15 @@
 {
-  "canonical": "FSL-1.1-ALv2",
-  "aliases": {
-    "spdx": [
-      "Functional Source License, Version 1.1, ALv2 Future License"
-    ],
-    "custom": []
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "FSL-1.1-ALv2",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Functional Source License, Version 1.1, ALv2 Future License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,17 +1,19 @@
 {
-  "canonical": "GCC-exception-3.1",
-  "aliases": {
-    "spdx": [
-      "GCC Runtime Library exception 3.1"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "gcc-exception-3.1",
-      "GCC Runtime Library Exception v3.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "GCC-exception-3.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "GCC Runtime Library exception 3.1"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "gcc-exception-3.1",
+            "GCC Runtime Library Exception v3.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

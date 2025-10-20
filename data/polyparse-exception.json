@@ -1,12 +1,14 @@
 {
-    "canonical": "polyparse-exception",
+    "canonical": {
+        "id": "polyparse-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Polyparse Exception"
         ],
         "custom": []
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }

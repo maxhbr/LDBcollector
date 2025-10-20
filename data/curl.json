@@ -1,16 +1,18 @@
 {
-  "canonical": "curl",
-  "aliases": {
-    "spdx": [
-      "curl License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "curl",
-      "cURL License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "curl",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "curl License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "curl",
+            "cURL License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

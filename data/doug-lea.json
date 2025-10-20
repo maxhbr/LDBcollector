@@ -1,12 +1,14 @@
 {
-  "canonical": "doug-lea",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Doug Lea License"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "doug-lea",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Doug Lea License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

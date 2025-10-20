@@ -1,15 +1,17 @@
 {
-  "canonical": "UCAR",
-  "aliases": {
-    "spdx": [
-      "UCAR License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "ucar"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "UCAR",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "UCAR License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ucar"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

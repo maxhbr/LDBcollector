@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-jdbc-driver-41-sql-server",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS JDBC Driver 4.1 for SQL Server",
-      "Microsoft JDBC Driver 4.1 for SQL Server",
-      "LicenseRef-scancode-ms-jdbc-driver-41-sql-server"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-jdbc-driver-41-sql-server",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS JDBC Driver 4.1 for SQL Server",
+            "Microsoft JDBC Driver 4.1 for SQL Server",
+            "LicenseRef-scancode-ms-jdbc-driver-41-sql-server"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

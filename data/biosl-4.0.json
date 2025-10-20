@@ -1,15 +1,17 @@
 {
-  "canonical": "biosl-4.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-biosl-4.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "BIOSL v4"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "biosl-4.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-biosl-4.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "BIOSL v4"
+    ],
+    "isMajorVersionOnly": true
 }

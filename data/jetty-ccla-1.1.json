@@ -1,15 +1,17 @@
 {
-  "canonical": "jetty-ccla-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Jetty Project Corporate Contributor License Agreement V1.1",
-      "Jetty CCLA 1.1",
-      "LicenseRef-scancode-jetty-ccla-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "jetty-ccla-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Jetty Project Corporate Contributor License Agreement V1.1",
+            "Jetty CCLA 1.1",
+            "LicenseRef-scancode-jetty-ccla-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

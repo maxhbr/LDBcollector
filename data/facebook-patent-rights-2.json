@@ -1,14 +1,16 @@
 {
-  "canonical": "facebook-patent-rights-2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Facebook Additional Grant of Patent Rights Version 2",
-      "Facebook Patent Rights 2",
-      "LicenseRef-scancode-facebook-patent-rights-2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "facebook-patent-rights-2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Facebook Additional Grant of Patent Rights Version 2",
+            "Facebook Patent Rights 2",
+            "LicenseRef-scancode-facebook-patent-rights-2"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "lyubinskiy-popup-window",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Lyubinskiy popup-window License",
-      "LicenseRef-scancode-lyubinskiy-popup-window"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "lyubinskiy-popup-window",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Lyubinskiy popup-window License",
+            "LicenseRef-scancode-lyubinskiy-popup-window"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

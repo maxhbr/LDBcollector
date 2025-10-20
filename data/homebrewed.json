@@ -1,14 +1,16 @@
 {
-  "canonical": "homebrewed",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Homebrewed or Craft Beer License",
-      "Homebrewed License",
-      "LicenseRef-scancode-homebrewed"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "homebrewed",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Homebrewed or Craft Beer License",
+            "Homebrewed License",
+            "LicenseRef-scancode-homebrewed"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

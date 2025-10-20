@@ -1,13 +1,15 @@
 {
-  "canonical": "waterfall-feed-parser",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Waterfall Feed Parser License",
-      "LicenseRef-scancode-waterfall-feed-parser"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "waterfall-feed-parser",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Waterfall Feed Parser License",
+            "LicenseRef-scancode-waterfall-feed-parser"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

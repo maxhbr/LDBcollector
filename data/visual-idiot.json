@@ -1,14 +1,16 @@
 {
-  "canonical": "visual-idiot",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Visual Idiot License",
-      "Visual Idiot",
-      "LicenseRef-scancode-visual-idiot"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "visual-idiot",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Visual Idiot License",
+            "Visual Idiot",
+            "LicenseRef-scancode-visual-idiot"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-windows-server-2003-ddk",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Windows Server 2003 DDK License",
-      "Microsoft Windows Server 2003 DDK License",
-      "LicenseRef-scancode-ms-windows-server-2003-ddk"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-windows-server-2003-ddk",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Windows Server 2003 DDK License",
+            "Microsoft Windows Server 2003 DDK License",
+            "LicenseRef-scancode-ms-windows-server-2003-ddk"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

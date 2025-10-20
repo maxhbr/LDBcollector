@@ -1,14 +1,16 @@
 {
-  "canonical": "google-apis-tos-2021",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Google APIs Terms of Service 2021",
-      "Google APIs TOS 2021",
-      "LicenseRef-scancode-google-apis-tos-2021"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "google-apis-tos-2021",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Google APIs Terms of Service 2021",
+            "Google APIs TOS 2021",
+            "LicenseRef-scancode-google-apis-tos-2021"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

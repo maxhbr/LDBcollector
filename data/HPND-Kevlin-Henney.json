@@ -1,17 +1,19 @@
 {
-  "canonical": "HPND-Kevlin-Henney",
-  "aliases": {
-    "spdx": [
-      "Historical Permission Notice and Disclaimer - Kevlin Henney variant"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Kevlin Henney License",
-      "LicenseRef-scancode-kevlin-henney",
-      "kevlin-henney"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "HPND-Kevlin-Henney",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - Kevlin Henney variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Kevlin Henney License",
+            "LicenseRef-scancode-kevlin-henney",
+            "kevlin-henney"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

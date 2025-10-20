@@ -1,19 +1,21 @@
 {
-  "canonical": "CDL-1.0",
-  "aliases": {
-    "spdx": [
-      "Common Documentation License 1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-acdl-1.0",
-      "Apple Common Documentation License v1.0",
-      "ACDL 1.0",
-      "acdl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "CDL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Common Documentation License 1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-acdl-1.0",
+            "Apple Common Documentation License v1.0",
+            "ACDL 1.0",
+            "acdl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

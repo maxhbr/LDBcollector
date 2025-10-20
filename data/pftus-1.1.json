@@ -1,16 +1,18 @@
 {
-  "canonical": "pftus-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-pftus-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "PFTUS-license",
-    "Protected Free To Use Software License"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "pftus-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-pftus-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "PFTUS-license",
+        "Protected Free To Use Software License"
+    ],
+    "isMajorVersionOnly": true
 }

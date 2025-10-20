@@ -1,13 +1,15 @@
 {
-  "canonical": "w3c-software-2023",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "W3C Software License 2023",
-      "LicenseRef-scancode-w3c-software-2023"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "w3c-software-2023",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "W3C Software License 2023",
+            "LicenseRef-scancode-w3c-software-2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

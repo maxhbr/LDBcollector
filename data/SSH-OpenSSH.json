@@ -1,16 +1,18 @@
 {
-  "canonical": "SSH-OpenSSH",
-  "aliases": {
-    "spdx": [
-      "SSH OpenSSH license"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "openssh",
-      "OpenSSH License"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "SSH-OpenSSH",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "SSH OpenSSH license"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "openssh",
+            "OpenSSH License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

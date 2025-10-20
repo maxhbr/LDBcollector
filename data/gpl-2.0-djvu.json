@@ -1,15 +1,17 @@
 {
-  "canonical": "gpl-2.0-djvu",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 2.0 with DjVu Patent Grant",
-      "GNU General Public License 2.0 with DjVu Patent Grant",
-      "LicenseRef-scancode-gpl-2.0-djvu"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "gpl-2.0-djvu",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 with DjVu Patent Grant",
+            "GNU General Public License 2.0 with DjVu Patent Grant",
+            "LicenseRef-scancode-gpl-2.0-djvu"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,14 +1,16 @@
 {
-  "canonical": "sata",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Star And Thank Author License",
-      "SATA License",
-      "LicenseRef-scancode-sata"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sata",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Star And Thank Author License",
+            "SATA License",
+            "LicenseRef-scancode-sata"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

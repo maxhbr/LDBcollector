@@ -1,13 +1,15 @@
 {
-  "canonical": "sun-entitlement-03-15",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun Entitlement 3 plus 15",
-      "LicenseRef-scancode-sun-entitlement-03-15"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sun-entitlement-03-15",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun Entitlement 3 plus 15",
+            "LicenseRef-scancode-sun-entitlement-03-15"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

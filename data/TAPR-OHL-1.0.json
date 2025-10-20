@@ -1,16 +1,18 @@
 {
-  "canonical": "TAPR-OHL-1.0",
-  "aliases": {
-    "spdx": [
-      "TAPR Open Hardware License v1.0"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "tapr-ohl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "TAPR-OHL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "TAPR Open Hardware License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "tapr-ohl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

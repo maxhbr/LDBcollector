@@ -1,14 +1,16 @@
 {
-  "canonical": "ms-azure-rtos-2023-05",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-ms-azure-rtos-2023-05",
-      "Microsoft Azure RTOS 2023-05",
-      "MS Azure RTOS 2023-05"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ms-azure-rtos-2023-05",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-azure-rtos-2023-05",
+            "Microsoft Azure RTOS 2023-05",
+            "MS Azure RTOS 2023-05"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

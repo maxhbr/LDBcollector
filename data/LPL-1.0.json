@@ -1,20 +1,22 @@
 {
-  "canonical": "LPL-1.0",
-  "aliases": {
-    "spdx": [
-      "Lucent Public License Version 1.0"
-    ],
-    "custom": [],
-    "osi": [
-      "Lucent Public License, Plan 9, Version 1.0"
-    ],
-    "scancodeLicensedb": [
-      "Lucent Public License 1.0",
-      "lucent-pl-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "LPL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Lucent Public License Version 1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Lucent Public License, Plan 9, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "Lucent Public License 1.0",
+            "lucent-pl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

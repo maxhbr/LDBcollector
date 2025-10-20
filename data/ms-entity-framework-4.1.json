@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-entity-framework-4.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "MS Entity Framework 4.1 License",
-      "Microsoft Entity Framework 4.1 License",
-      "LicenseRef-scancode-ms-entity-framework-4.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-entity-framework-4.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "MS Entity Framework 4.1 License",
+            "Microsoft Entity Framework 4.1 License",
+            "LicenseRef-scancode-ms-entity-framework-4.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

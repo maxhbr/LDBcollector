@@ -1,15 +1,17 @@
 {
-  "canonical": "sun-java-web-services-dev-pack-1.6",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun Java Web Services Developer Pack 1.6",
-      "LicenseRef-scancode-sun-java-web-services-dev-pack-1.6",
-      "LicenseRef-scancode-sun-java-web-services-dev-1.6"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "sun-java-web-services-dev-pack-1.6",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun Java Web Services Developer Pack 1.6",
+            "LicenseRef-scancode-sun-java-web-services-dev-pack-1.6",
+            "LicenseRef-scancode-sun-java-web-services-dev-1.6"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

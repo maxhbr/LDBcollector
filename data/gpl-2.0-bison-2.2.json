@@ -1,12 +1,14 @@
 {
-  "canonical": "gpl-2.0-bison-2.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "GPL 2.0 or later with Bison 2.2 exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "gpl-2.0-bison-2.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 or later with Bison 2.2 exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

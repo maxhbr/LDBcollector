@@ -1,15 +1,17 @@
 {
-  "canonical": "samba-dc-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-samba-dc-1.0",
-      "Samba Developer's Declaration, Version 1.0",
-      "Samba DC 1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "samba-dc-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-samba-dc-1.0",
+            "Samba Developer's Declaration, Version 1.0",
+            "Samba DC 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

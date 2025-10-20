@@ -1,16 +1,18 @@
 {
-  "canonical": "BSD-3-Clause-No-Nuclear-License-2014",
-  "aliases": {
-    "spdx": [
-      "BSD 3-Clause No Nuclear License 2014"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "Oracle BSD-Style with Nuclear Restrictions",
-      "oracle-bsd-no-nuclear"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "BSD-3-Clause-No-Nuclear-License-2014",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause No Nuclear License 2014"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Oracle BSD-Style with Nuclear Restrictions",
+            "oracle-bsd-no-nuclear"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

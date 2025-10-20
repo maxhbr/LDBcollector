@@ -1,14 +1,16 @@
 {
-  "canonical": "commons-clause",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Commons Clause",
-      "Commons Clause License Condition v1.0",
-      "LicenseRef-scancode-commons-clause"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "commons-clause",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Commons Clause",
+            "Commons Clause License Condition v1.0",
+            "LicenseRef-scancode-commons-clause"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

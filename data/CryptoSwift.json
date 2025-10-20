@@ -1,16 +1,18 @@
 {
-  "canonical": "CryptoSwift",
-  "aliases": {
-    "custom": [],
-    "spdx": [
-      "CryptoSwift License"
-    ],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-cryptoswift",
-      "cryptoswift"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "CryptoSwift",
+        "src": "spdx"
+    },
+    "aliases": {
+        "custom": [],
+        "spdx": [
+            "CryptoSwift License"
+        ],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-cryptoswift",
+            "cryptoswift"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

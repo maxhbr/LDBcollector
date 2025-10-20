@@ -1,15 +1,17 @@
 {
-  "canonical": "XSkat",
-  "aliases": {
-    "spdx": [
-      "XSkat License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "xskat"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "XSkat",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "XSkat License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "xskat"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

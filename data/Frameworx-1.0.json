@@ -1,21 +1,23 @@
 {
-  "canonical": "Frameworx-1.0",
-  "aliases": {
-    "spdx": [
-      "Frameworx Open License 1.0"
-    ],
-    "custom": [],
-    "osi": [
-      "Frameworx License, Version 1.0"
-    ],
-    "scancodeLicensedb": [
-      "Frameworx Open License v1.0",
-      "Frameworx 1.0",
-      "frameworx-1.0"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "Frameworx-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Frameworx Open License 1.0"
+        ],
+        "custom": [],
+        "osi": [
+            "Frameworx License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "Frameworx Open License v1.0",
+            "Frameworx 1.0",
+            "frameworx-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "lzma-sdk-2008",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LZMA SDK 2008",
-      "LicenseRef-scancode-lzma-sdk-2008"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "lzma-sdk-2008",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LZMA SDK 2008",
+            "LicenseRef-scancode-lzma-sdk-2008"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

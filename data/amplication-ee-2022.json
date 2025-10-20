@@ -1,14 +1,16 @@
 {
-  "canonical": "amplication-ee-2022",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Amplication Enterprise Edition license 2022",
-      "Amplication EE License 2022",
-      "LicenseRef-scancode-amplication-ee-2022"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "amplication-ee-2022",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Amplication Enterprise Edition license 2022",
+            "Amplication EE License 2022",
+            "LicenseRef-scancode-amplication-ee-2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

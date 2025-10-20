@@ -1,13 +1,15 @@
 {
-  "canonical": "activestate-komodo-edit",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "ActiveState Komodo Edit EULA",
-      "LicenseRef-scancode-activestate-komodo-edit"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "activestate-komodo-edit",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "ActiveState Komodo Edit EULA",
+            "LicenseRef-scancode-activestate-komodo-edit"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

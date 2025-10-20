@@ -1,15 +1,17 @@
 {
-  "canonical": "CFITSIO",
-  "aliases": {
-    "spdx": [
-      "CFITSIO License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "cfitsio"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "CFITSIO",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "CFITSIO License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "cfitsio"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

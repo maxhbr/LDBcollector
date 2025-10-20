@@ -1,13 +1,15 @@
 {
-  "canonical": "ugui",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "UGUI License",
-      "LicenseRef-scancode-ugui"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "ugui",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "UGUI License",
+            "LicenseRef-scancode-ugui"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,16 +1,18 @@
 {
-  "canonical": "Arphic-1999",
-  "aliases": {
-    "spdx": [
-      "Arphic Public License"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-arphic-public",
-      "arphic-public"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "Arphic-1999",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Arphic Public License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-arphic-public",
+            "arphic-public"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

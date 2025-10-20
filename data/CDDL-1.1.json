@@ -1,31 +1,33 @@
 {
-  "canonical": "CDDL-1.1",
-  "aliases": {
-    "spdx": [
-      "Common Development and Distribution License 1.1"
-    ],
-    "custom": [
-      "Common Development and Distribution License v1.1",
-      "CDDL License 1.1",
-      "CDDL v1.1",
-      "CDDL 1.1 License",
-      "CDDL Version 1.1",
-      "CDDL 1.1 (CDDL-1.1)",
-      "CDDL-1.1 License",
-      "CDDL (1.1)",
-      "Common Development License 1.1",
-      "CDDL 1.1 Open Source License",
-      "CDDL Version 1.1 License",
-      "Common Development and Distribution License Version 1.1",
-      "cddl1.1"
-    ],
-    "scancodeLicensedb": [
-      "CDDL 1.1",
-      "cddl-1.1"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": false
+    "canonical": {
+        "id": "CDDL-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Common Development and Distribution License 1.1"
+        ],
+        "custom": [
+            "Common Development and Distribution License v1.1",
+            "CDDL License 1.1",
+            "CDDL v1.1",
+            "CDDL 1.1 License",
+            "CDDL Version 1.1",
+            "CDDL 1.1 (CDDL-1.1)",
+            "CDDL-1.1 License",
+            "CDDL (1.1)",
+            "Common Development License 1.1",
+            "CDDL 1.1 Open Source License",
+            "CDDL Version 1.1 License",
+            "Common Development and Distribution License Version 1.1",
+            "cddl1.1"
+        ],
+        "scancodeLicensedb": [
+            "CDDL 1.1",
+            "cddl-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

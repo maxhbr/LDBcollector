@@ -1,14 +1,16 @@
 {
-  "canonical": "intel-osl-1989",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Intel Open Source License 1989",
-      "Intel OSL 1989",
-      "LicenseRef-scancode-intel-osl-1989"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "intel-osl-1989",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Intel Open Source License 1989",
+            "Intel OSL 1989",
+            "LicenseRef-scancode-intel-osl-1989"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "adobe-acrobat-reader-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Adobe Acrobat Reader EULA",
-      "LicenseRef-scancode-adobe-acrobat-reader-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "adobe-acrobat-reader-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe Acrobat Reader EULA",
+            "LicenseRef-scancode-adobe-acrobat-reader-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

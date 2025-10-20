@@ -1,15 +1,17 @@
 {
-  "canonical": "ms-control-spy-2.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Microsoft Control Spy 2.0",
-      "MS Control Spy 2.0",
-      "LicenseRef-scancode-ms-control-spy-2.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "ms-control-spy-2.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Microsoft Control Spy 2.0",
+            "MS Control Spy 2.0",
+            "LicenseRef-scancode-ms-control-spy-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

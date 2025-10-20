@@ -1,13 +1,15 @@
 {
-  "canonical": "xenomai-gpl-exception",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Xenomai GPL Exception",
-      "LicenseRef-scancode-xenomai-gpl-exception"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "xenomai-gpl-exception",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Xenomai GPL Exception",
+            "LicenseRef-scancode-xenomai-gpl-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -19,20 +19,20 @@ def read_data(data_dir: str) -> dict:
         filepath = os.path.join(data_dir, filename)
         with open(filepath, 'r') as f:
             license_data = json.load(f)
-            canonical_name = license_data.get("canonical")
-            src = license_data.get("src")
+            canonical_id = license_data["canonical"]["id"]
+            canonical_object = license_data["canonical"]
             aliases = license_data.get("aliases", [])
 
-            canonical_dict[canonical_name] = {"canonical": canonical_name, "src": src}
+            canonical_dict[canonical_id] = canonical_object
             for source in aliases:
                 for alias in aliases[source]:
-                    canonical_dict[alias] = {"canonical": canonical_name, "src": src}
+                    canonical_dict[alias] = canonical_object
 
             risky_aliases = license_data.get("risky")
             if not risky_aliases:
                 continue
             for element in risky_aliases:
-                risky_dict[element] = {"canonical": canonical_name, "src": src}
+                risky_dict[element] = canonical_object
     data = {"stableMap": canonical_dict, "riskyMap": risky_dict}
 
     return data

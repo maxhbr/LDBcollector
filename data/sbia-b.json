@@ -1,14 +1,16 @@
 {
-  "canonical": "sbia-b",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "SBIA Part B",
-      "SBIA Software license - Downloading Agreement",
-      "LicenseRef-scancode-sbia-b"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sbia-b",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "SBIA Part B",
+            "SBIA Software license - Downloading Agreement",
+            "LicenseRef-scancode-sbia-b"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

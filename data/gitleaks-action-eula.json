@@ -1,13 +1,15 @@
 {
-  "canonical": "gitleaks-action-eula",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Gitleaks-Action EULA",
-      "LicenseRef-scancode-gitleaks-action-eula"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "gitleaks-action-eula",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Gitleaks-Action EULA",
+            "LicenseRef-scancode-gitleaks-action-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

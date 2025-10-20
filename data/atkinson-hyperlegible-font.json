@@ -1,13 +1,15 @@
 {
-  "canonical": "atkinson-hyperlegible-font",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Atkinson Hyperlegible Font License",
-      "LicenseRef-scancode-atkinson-hyperlegible-font"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "atkinson-hyperlegible-font",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Atkinson Hyperlegible Font License",
+            "LicenseRef-scancode-atkinson-hyperlegible-font"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

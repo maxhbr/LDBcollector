@@ -1,13 +1,15 @@
 {
-  "canonical": "sandeep",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sandeep License",
-      "LicenseRef-scancode-sandeep"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sandeep",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sandeep License",
+            "LicenseRef-scancode-sandeep"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

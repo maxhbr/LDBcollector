@@ -1,15 +1,17 @@
 {
-  "canonical": "blessing",
-  "aliases": {
-    "spdx": [
-      "SQLite Blessing"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "blessing"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "blessing",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "SQLite Blessing"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "blessing"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

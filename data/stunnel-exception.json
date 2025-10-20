@@ -1,15 +1,17 @@
 {
-  "canonical": "stunnel-exception",
-  "aliases": {
-    "spdx": [
-      "stunnel Exception"
-    ],
-    "custom": [],
-    "scancodeLicensedb": [
-      "stunnel-exception"
-    ]
-  },
-  "src": "spdx",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "stunnel-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "stunnel Exception"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "stunnel-exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

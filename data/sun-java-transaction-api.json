@@ -1,13 +1,15 @@
 {
-  "canonical": "sun-java-transaction-api",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Sun Java Transaction API License",
-      "LicenseRef-scancode-sun-java-transaction-api"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "sun-java-transaction-api",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun Java Transaction API License",
+            "LicenseRef-scancode-sun-java-transaction-api"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

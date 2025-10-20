@@ -1,15 +1,17 @@
 {
-  "canonical": "c-fsl-1.1",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Convertible Free Software License 1.1",
-      "C-FSL 1.1",
-      "LicenseRef-scancode-c-fsl-1.1"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "c-fsl-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Convertible Free Software License 1.1",
+            "C-FSL 1.1",
+            "LicenseRef-scancode-c-fsl-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,15 @@
 {
-  "canonical": "google-patent-license-webrtc",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "Google Patent License for WebRTC",
-      "LicenseRef-scancode-google-patent-license-webrtc"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": []
+    "canonical": {
+        "id": "google-patent-license-webrtc",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Google Patent License for WebRTC",
+            "LicenseRef-scancode-google-patent-license-webrtc"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

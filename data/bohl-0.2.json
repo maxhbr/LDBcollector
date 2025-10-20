@@ -1,15 +1,17 @@
 {
-  "canonical": "bohl-0.2",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "BOHL-0.2",
-      "The Balloon Open Hardware License v0.2",
-      "LicenseRef-scancode-bohl-0.2"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "bohl-0.2",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BOHL-0.2",
+            "The Balloon Open Hardware License v0.2",
+            "LicenseRef-scancode-bohl-0.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

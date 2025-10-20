@@ -1,15 +1,17 @@
 {
-  "canonical": "frontier-1.0",
-  "aliases": {
-    "custom": [],
-    "scancodeLicensedb": [
-      "LicenseRef-scancode-frontier-1.0"
-    ]
-  },
-  "src": "scancode-licensedb",
-  "rejected": [],
-  "risky": [
-    "Frontier Artistic License"
-  ],
-  "isMajorVersionOnly": true
+    "canonical": {
+        "id": "frontier-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-frontier-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Frontier Artistic License"
+    ],
+    "isMajorVersionOnly": true
 }
