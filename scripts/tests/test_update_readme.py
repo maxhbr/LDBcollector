@@ -17,12 +17,12 @@ from src.statistics.update_readme import (
 # Sample JSON data for testing
 sample_license_data = {
     "stableMap": {
-        "1": {"canonical": "MIT"},
-        "2": {"canonical": "Apache 2.0"},
-        "3": {"canonical": "MIT"},
-        "4": {"canonical": "GPL 3.0"},
-        "5": {"canonical": "MIT"},
-        "6": {"canonical": "Apache 2.0"}
+        "1": {"id": "MIT"},
+        "2": {"id": "Apache 2.0"},
+        "3": {"id": "MIT"},
+        "4": {"id": "GPL 3.0"},
+        "5": {"id": "MIT"},
+        "6": {"id": "Apache 2.0"}
     },
     "riskyMap": {}
 }

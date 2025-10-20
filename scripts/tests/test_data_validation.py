@@ -314,7 +314,8 @@ def test_check_length_and_characters_failure():
     os.makedirs("test_data", exist_ok=True)
 
     src_too_long = "a" * (max_length + 1)
-    long_data = {"canonical": {"id": "a" * (max_length + 1), "src": src_too_long}, "aliases": {"spdx": ["a" * (max_length + 1)], "custom": []}}
+    long_data = {"canonical": {"id": "a" * (max_length + 1), "src": src_too_long},
+                 "aliases": {"spdx": ["a" * (max_length + 1)], "custom": []}}
     forbidden_data = {"canonical": {"id": "invalid#name", "src": "src"}, "aliases": {"spdx": ["alias1"], "custom": []}}
 
     filepath_long = os.path.join("test_data", "long.json")

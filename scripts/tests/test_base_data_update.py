@@ -62,10 +62,10 @@ def test_update_license_file(mock_json_dump, mock_open, mock_join, base_data_upd
     base_data_update.update_license_file(canonical_id, aliases)
 
     expected_data = {"canonical": {"id": "test"}, "aliases": {"source": ["alias1"],
-                                                      "test_source": ["'alias' 'alias'", "Don't test one single quote",
-                                                                      "alias with 'some quotes'", 'alias2'],
-                                                      "custom": ['custom alias', '"alias" "alias"',
-                                                                 'alias with "some quotes"']},
+                                                              "test_source": ["'alias' 'alias'", "Don't test one single quote",
+                                                                              "alias with 'some quotes'", 'alias2'],
+                                                              "custom": ['custom alias', '"alias" "alias"',
+                                                                         'alias with "some quotes"']},
                      "rejected": ["rejected_alias"], "risky": ["risky_alias"]}
 
     mock_join.assert_called_once()
@@ -76,7 +76,8 @@ def test_update_license_file(mock_json_dump, mock_open, mock_join, base_data_upd
 
 @patch("os.path.join", return_value="/path/to/license.json")
 @patch("builtins.open", new_callable=mock_open,
-       read_data='{"canonical": {"id": "test"}, "aliases": {"source": ["alias1"]}, "rejected": ["rejected_alias"], "risky": ["risky_alias"]}')
+       read_data='{"canonical": {"id": "test"}, '
+                 '"aliases": {"source": ["alias1"]}, "rejected": ["rejected_alias"], "risky": ["risky_alias"]}')
 @patch("json.dump")
 def test_update_license_file_rejected_and_risky(mock_json_dump, mock_open, mock_join, base_data_update, caplog):
     canonical_id = "test_license"

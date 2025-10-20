@@ -44,14 +44,14 @@ jobs:
           cd scripts
           poetry run data_validation
       - name: Run statistics file
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: github.event.pull_request.base.ref == 'main'
         run: |
           python3 scripts/src/load/merge_data.py -o ./scripts/src/statistics/merged_data.json
           cd scripts/src/statistics
           python3 update_readme.py
           cd ../../../
       - name: Upload statistics file
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: github.event.pull_request.base.ref == 'main'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update statistics in README.md"

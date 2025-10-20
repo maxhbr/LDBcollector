@@ -12,7 +12,8 @@ from src.load.merge_data import read_data, write_data, main
 @pytest.fixture
 def data_dir(tmpdir):
     data = {
-        "license1.json": {"canonical": {"id": "license1"}, "aliases": {"SPDX": ["lic1"], "custom": ["lic1_custom"]}, "risky": ["lic1_risky"]},
+        "license1.json": {"canonical": {"id": "license1"}, "aliases": {"SPDX": ["lic1"], "custom": ["lic1_custom"]},
+                          "risky": ["lic1_risky"]},
         "license2.json": {"canonical": {"id": "license2"}, "aliases": {"SPDX": ["lic2", "lic2_alt"]}}
     }
     for filename, content in data.items():

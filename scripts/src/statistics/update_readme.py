@@ -11,7 +11,7 @@ def load_license_data(file_path: str) -> dict:
 
 
 def count_canonical_licenses(license_data: dict) -> Counter[str]:
-    return Counter(entry['canonical'] for entry in license_data.values())
+    return Counter(entry['id'] for entry in license_data.values())
 
 
 def prepare_top_licenses_text(canonical_counts: Counter[str]) -> list[tuple[str, int]]:
