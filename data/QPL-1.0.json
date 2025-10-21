@@ -15,22 +15,23 @@
             "Q Public License Version 1.0",
             "qpl-1.0",
             "QPL 1.0"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: Qt Public License (QPL)",
+            "OSI Approved :: Qt Public License (QPL)",
+            "License :: Qt Public License (QPL)",
+            "Qt Public License (QPL)",
+            "License :: OSI Approved :: Qt Public License",
+            "OSI Approved :: Qt Public License",
+            "License :: Qt Public License",
+            "Qt Public License",
+            "License :: OSI Approved :: QPL",
+            "OSI Approved :: QPL",
+            "License :: QPL",
+            "QPL"
         ]
     },
     "rejected": [],
-    "risky": [
-        "License :: OSI Approved :: Qt Public License (QPL)",
-        "OSI Approved :: Qt Public License (QPL)",
-        "License :: Qt Public License (QPL)",
-        "Qt Public License (QPL)",
-        "License :: OSI Approved :: Qt Public License",
-        "OSI Approved :: Qt Public License",
-        "License :: Qt Public License",
-        "Qt Public License",
-        "License :: OSI Approved :: QPL",
-        "OSI Approved :: QPL",
-        "License :: QPL",
-        "QPL"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

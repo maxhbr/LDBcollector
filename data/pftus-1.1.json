@@ -6,13 +6,12 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-pftus-1.1"
+            "LicenseRef-scancode-pftus-1.1",
+            "PFTUS-license",
+            "Protected Free To Use Software License"
         ]
     },
     "rejected": [],
-    "risky": [
-        "PFTUS-license",
-        "Protected Free To Use Software License"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

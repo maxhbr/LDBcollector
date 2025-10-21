@@ -6,12 +6,11 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-biosl-4.0"
+            "LicenseRef-scancode-biosl-4.0",
+            "BIOSL v4"
         ]
     },
     "rejected": [],
-    "risky": [
-        "BIOSL v4"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

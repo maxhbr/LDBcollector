@@ -6,13 +6,12 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-ecfonts-1.0"
+            "LicenseRef-scancode-ecfonts-1.0",
+            "latex-ec-fonts",
+            "Copyright notice to the ec fonts"
         ]
     },
     "rejected": [],
-    "risky": [
-        "latex-ec-fonts",
-        "Copyright notice to the ec fonts"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

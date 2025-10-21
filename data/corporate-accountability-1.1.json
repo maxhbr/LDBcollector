@@ -6,13 +6,12 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-corporate-accountability-1.1"
+            "LicenseRef-scancode-corporate-accountability-1.1",
+            "Corporate Accountability Lab Software",
+            "CAL Software"
         ]
     },
     "rejected": [],
-    "risky": [
-        "Corporate Accountability Lab Software",
-        "CAL Software"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

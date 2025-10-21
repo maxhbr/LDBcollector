@@ -15,14 +15,15 @@
             "SPL 1.0",
             "spl-1.0",
             "Sun Public License 1.0"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: Sun Public License",
+            "OSI Approved :: Sun Public License",
+            "License :: Sun Public License",
+            "Sun Public License"
         ]
     },
     "rejected": [],
-    "risky": [
-        "License :: OSI Approved :: Sun Public License",
-        "OSI Approved :: Sun Public License",
-        "License :: Sun Public License",
-        "Sun Public License"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

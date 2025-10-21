@@ -6,12 +6,11 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-froala-owdl-1.0"
+            "LicenseRef-scancode-froala-owdl-1.0",
+            "Froala Open Web Design License"
         ]
     },
     "rejected": [],
-    "risky": [
-        "Froala Open Web Design License"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

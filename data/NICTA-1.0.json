@@ -9,13 +9,12 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "NICTA Public Software Licence 1.0"
+            "NICTA Public Software Licence 1.0",
+            "LicenseRef-scancode-nicta-psl",
+            "nicta-psl"
         ]
     },
     "rejected": [],
-    "risky": [
-        "LicenseRef-scancode-nicta-psl",
-        "nicta-psl"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

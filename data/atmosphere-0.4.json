@@ -7,12 +7,11 @@
         "custom": [],
         "scancodeLicensedb": [
             "Atmosphere Software License Version 0.4",
-            "LicenseRef-scancode-atmosphere-0.4"
+            "LicenseRef-scancode-atmosphere-0.4",
+            "atmosphere"
         ]
     },
     "rejected": [],
-    "risky": [
-        "atmosphere"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

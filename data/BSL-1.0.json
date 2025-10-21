@@ -18,7 +18,11 @@
             "Boost License Version 1.0",
             "Boost-1.0",
             "Boost-1.0 License",
-            "bsl1.0"
+            "bsl1.0",
+            "Boost License",
+            "Boost Software License",
+            "Boost",
+            "bsl"
         ],
         "osi": [
             "Boost Software License 1.0 (BSL-1.0)"
@@ -40,11 +44,6 @@
         ]
     },
     "rejected": [],
-    "risky": [
-        "Boost License",
-        "Boost Software License",
-        "Boost",
-        "bsl"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

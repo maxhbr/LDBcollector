@@ -7,22 +7,24 @@
         "spdx": [
             "Common Public License 1.0"
         ],
-        "custom": [],
+        "custom": [
+            "CPL"
+        ],
         "osi": [
             "Common Public License, Version 1.0"
         ],
         "scancodeLicensedb": [
             "CPL 1.0",
             "cpl-1.0"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: Common Public License",
+            "OSI Approved :: Common Public License",
+            "License :: Common Public License",
+            "Common Public License"
         ]
     },
     "rejected": [],
-    "risky": [
-        "CPL",
-        "License :: OSI Approved :: Common Public License",
-        "OSI Approved :: Common Public License",
-        "License :: Common Public License",
-        "Common Public License"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

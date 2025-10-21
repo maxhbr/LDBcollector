@@ -9,12 +9,11 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "wxwindows-exception-3.1"
+            "wxwindows-exception-3.1",
+            "WxWindows Library Exception to GNU Licenses"
         ]
     },
     "rejected": [],
-    "risky": [
-        "WxWindows Library Exception to GNU Licenses"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

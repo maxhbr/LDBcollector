@@ -9,13 +9,12 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Open Publication License 1.0"
+            "Open Publication License 1.0",
+            "openpub",
+            "LicenseRef-scancode-openpub"
         ]
     },
     "rejected": [],
-    "risky": [
-        "openpub",
-        "LicenseRef-scancode-openpub"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

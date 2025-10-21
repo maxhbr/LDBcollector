@@ -10,12 +10,11 @@
         "custom": [],
         "scancodeLicensedb": [
             "pddl-1.0",
-            "PDDL 1.0"
+            "PDDL 1.0",
+            "Public Domain Dedication & Licence (PDDL)"
         ]
     },
     "rejected": [],
-    "risky": [
-        "Public Domain Dedication & Licence (PDDL)"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

@@ -7,12 +7,11 @@
         "custom": [],
         "scancodeLicensedb": [
             "Mozilla Open Software Patent License 1.0",
-            "LicenseRef-scancode-mozilla-ospl-1.0"
+            "LicenseRef-scancode-mozilla-ospl-1.0",
+            "Mozilla Open Software Patent License Agreement v1"
         ]
     },
     "rejected": [],
-    "risky": [
-        "Mozilla Open Software Patent License Agreement v1"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

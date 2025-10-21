@@ -18,15 +18,14 @@
             "License :: BlueOak-1.0.0",
             "OSI Approved :: BlueOak-1.0.0",
             "License :: OSI Approved :: Blue Oak Model License (BlueOak-1.0.0)",
-            "Blue Oak Model License (BlueOak-1.0.0)"
+            "Blue Oak Model License (BlueOak-1.0.0)",
+            "License :: OSI Approved :: Blue Oak Model License",
+            "License :: Blue Oak Model License",
+            "OSI Approved :: Blue Oak Model License",
+            "Blue Oak Model License"
         ]
     },
     "rejected": [],
-    "risky": [
-        "License :: OSI Approved :: Blue Oak Model License",
-        "License :: Blue Oak Model License",
-        "OSI Approved :: Blue Oak Model License",
-        "Blue Oak Model License"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

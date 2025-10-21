@@ -9,12 +9,11 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Open Public License 1.0"
+            "Open Public License 1.0",
+            "open-public"
         ]
     },
     "rejected": [],
-    "risky": [
-        "open-public"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

@@ -6,13 +6,12 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-epo-osl-2005.1"
+            "LicenseRef-scancode-epo-osl-2005.1",
+            "EPO Open Source Licence No. 2005/1",
+            "EPO-OSL"
         ]
     },
     "rejected": [],
-    "risky": [
-        "EPO Open Source Licence No. 2005/1",
-        "EPO-OSL"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

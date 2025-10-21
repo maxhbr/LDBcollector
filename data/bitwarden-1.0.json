@@ -6,12 +6,11 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-bitwarden-1.0"
+            "LicenseRef-scancode-bitwarden-1.0",
+            "Bitwarden License Agreement v1"
         ]
     },
     "rejected": [],
-    "risky": [
-        "Bitwarden License Agreement v1"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

@@ -6,12 +6,11 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-st-mcd-2.0"
+            "LicenseRef-scancode-st-mcd-2.0",
+            "STMicro Liberty License v2"
         ]
     },
     "rejected": [],
-    "risky": [
-        "STMicro Liberty License v2"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

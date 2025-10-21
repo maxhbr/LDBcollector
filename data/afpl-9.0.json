@@ -6,13 +6,12 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-afpl-9.0"
+            "LicenseRef-scancode-afpl-9.0",
+            "Aladdin Free Public License v9",
+            "Aladdin FPL v9"
         ]
     },
     "rejected": [],
-    "risky": [
-        "Aladdin Free Public License v9",
-        "Aladdin FPL v9"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

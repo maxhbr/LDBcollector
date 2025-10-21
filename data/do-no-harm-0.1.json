@@ -6,12 +6,11 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-do-no-harm-0.1"
+            "LicenseRef-scancode-do-no-harm-0.1",
+            "Do No Harm"
         ]
     },
     "rejected": [],
-    "risky": [
-        "Do No Harm"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

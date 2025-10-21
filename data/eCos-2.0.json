@@ -7,14 +7,9 @@
         "spdx": [
             "eCos license version 2.0"
         ],
-        "custom": [],
-        "scancodeLicensedb": [
-            "GPL 2.0 or later with eCos Exception"
-        ]
+        "custom": []
     },
     "rejected": [],
-    "risky": [
-        "ecos"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }

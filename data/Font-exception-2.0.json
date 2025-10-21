@@ -7,12 +7,13 @@
         "spdx": [
             "Font exception 2.0"
         ],
-        "custom": []
+        "custom": [],
+        "scancodeLicensedb": [
+            "Font exception to GPL",
+            "font-exception-gpl"
+        ]
     },
     "rejected": [],
-    "risky": [
-        "Font exception to GPL",
-        "font-exception-gpl"
-    ],
+    "risky": [],
     "isMajorVersionOnly": true
 }
