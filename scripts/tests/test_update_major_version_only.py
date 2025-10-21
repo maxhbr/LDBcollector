@@ -16,7 +16,7 @@ def test_build_dict_with_base_name_license():
         ("def1.0", ["1.0"]),
         ("ghi1.0", ["2.0", "3.0"])
     ]
-    result = update_major_version_only._build_dict_with_base_name_license(licenses_list)
+    result = update_major_version_only.build_dict_with_base_name_license(licenses_list)
 
     expected = {"abc": [("abc1.0", 1), ("abc2.0", 2)], "def": [("def1.0", 1)]}
     assert result == expected
@@ -32,26 +32,6 @@ def test_identify_major_only_licenses():
 
     assert sorted(major_only) == sorted(["def1.0", "def2.0", "ghi2.0"])
     assert sorted(not_major_only) == sorted(["abc1.0", "abc1.0", "ghi1.0", "ghi1.1.1"])
-
-
-def test_extract_license_list_with_semver(tmp_path, monkeypatch):
-    file_content = {"canonical": "license1.0"}
-    json_file = tmp_path / "test_file.json"
-    json_file.write_text(json.dumps(file_content))
-
-    monkeypatch.setattr(update_major_version_only, "DATA_DIR", str(tmp_path))
-    monkeypatch.setattr(update_major_version_only, "JSON_EXTENSION", ".json")
-
-    monkeypatch.setattr(
-        update_major_version_only,
-        "extract_version_tokens",
-        lambda canonical: ["1.0"] if canonical == "license1.0" else []
-    )
-
-    licenses_list = []
-    update_major_version_only._extract_license_list_with_semver(licenses_list)
-
-    assert licenses_list == [("license1.0", ["1.0"])]
 
 
 def test_write_to_license_file(tmp_path, monkeypatch):

@@ -1,42 +1,12 @@
 import json
 import os
 from collections import Counter
-from src.validate.data_validation import extract_version_tokens, DATA_DIR, JSON_EXTENSION
-
-
-def _extract_license_list_with_semver(licenses_list):
-    for filename in os.listdir(DATA_DIR):
-        if filename.endswith(".json"):
-            filepath = os.path.join(DATA_DIR, filename)
-            with open(filepath, 'r') as f:
-                data = json.load(f)
-                canonical = data.get("canonical", [])
-
-                canonical_tokens = extract_version_tokens(canonical)
-                canonical_has_version = bool(canonical_tokens)
-                if canonical_has_version:
-                    canonical_and_version = (canonical, canonical_tokens)
-                    licenses_list.append(canonical_and_version)
+from src.validate.data_validation import extract_license_list_with_semver, build_dict_with_base_name_license, DATA_DIR, JSON_EXTENSION
 
 
 def _get_non_unique(numbers):
     counts = Counter(numbers)
     return [num for num, count in counts.items() if count > 1]
-
-
-def _build_dict_with_base_name_license(licenses_list):
-    base_name_dict = {}
-    for name, version_set in licenses_list:
-        if len(version_set) > 1:
-            continue
-        (version,) = version_set
-        base_name = name.replace(version, '')
-        if base_name not in base_name_dict:
-            base_name_dict[base_name] = [(name, int(version.split(".")[0]))]
-        else:
-            base_name_dict[base_name].append((name, int(version.split(".")[0])))
-
-    return base_name_dict
 
 
 def _identify_major_only_licenses(base_name_dict):
@@ -73,14 +43,14 @@ def _write_to_license_file(canonical_license_list, is_major_version_only=False):
             json_data = json.load(f)
             json_data['isMajorVersionOnly'] = is_major_version_only
         with open(os.path.join(DATA_DIR, str(license + JSON_EXTENSION)), 'w') as f:
-            json.dump(json_data, f, indent=2)
+            json.dump(json_data, f, indent=4)
 
 
 def main():
     licenses_list = []
-    _extract_license_list_with_semver(licenses_list)
+    extract_license_list_with_semver(licenses_list)
 
-    base_name_dict = _build_dict_with_base_name_license(licenses_list)
+    base_name_dict = build_dict_with_base_name_license(licenses_list)
 
     major_version_only_license_list, not_major_version_only_license_list = _identify_major_only_licenses(base_name_dict)
 

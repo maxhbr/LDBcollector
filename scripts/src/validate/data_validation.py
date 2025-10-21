@@ -23,6 +23,36 @@ class LicenseListType(Enum):
     SCANCODE_LICENSEDB = 3
 
 
+def extract_license_list_with_semver(licenses_list):
+    for filename in os.listdir(DATA_DIR):
+        if filename.endswith(".json"):
+            filepath = os.path.join(DATA_DIR, filename)
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+                canonical = data["canonical"]["id"]
+
+                canonical_tokens = extract_version_tokens(canonical)
+                canonical_has_version = bool(canonical_tokens)
+                if canonical_has_version:
+                    canonical_and_version = (canonical, canonical_tokens)
+                    licenses_list.append(canonical_and_version)
+
+
+def build_dict_with_base_name_license(licenses_list):
+    base_name_dict = {}
+    for name, version_set in licenses_list:
+        if len(version_set) > 1:
+            continue
+        (version,) = version_set
+        base_name = name.replace(version, '')
+        if base_name not in base_name_dict:
+            base_name_dict[base_name] = [(name, int(version.split(".")[0]))]
+        else:
+            base_name_dict[base_name].append((name, int(version.split(".")[0])))
+
+    return base_name_dict
+
+
 def download_license_list(url: str, output_file: str, license_list_name: str):
     response = requests.get(url)
     if response.status_code == 200:
@@ -204,6 +234,10 @@ def extract_version_tokens(identifier) -> set:
 
 def check_version_between_canonical_and_alias():
     affected_licenses = {}
+    licenses_with_version = []
+    extract_license_list_with_semver(licenses_with_version)
+    base_name_license_dict = build_dict_with_base_name_license(licenses_with_version)
+
     for filename in os.listdir(DATA_DIR):
         filepath = os.path.join(DATA_DIR, filename)
         with open(filepath, 'r') as f:
@@ -226,14 +260,22 @@ def check_version_between_canonical_and_alias():
 
             canonical_has_version = bool(canonical_tokens)
             if canonical_has_version:
-                compare_versions(aliases_list, canonical_tokens, wrong_version, is_major_version_only)
+                compare_versions(aliases_list, canonical_tokens, wrong_version, is_major_version_only, canonical_id, base_name_license_dict)
             if wrong_version:
                 wrong_version.sort()
                 logger.error(f'{filename} has wrong versions for aliases: {wrong_version}')
                 affected_licenses[canonical_id] = wrong_version
 
 
-def compare_versions(aliases_list, canonical_tokens, wrong_version, is_major_version_only):
+def get_base_name_number(canonical_id, base_name_license_dict) -> bool:
+    for base_name, licenses in base_name_license_dict.items():
+        if len(licenses) == 1:
+            if canonical_id == licenses[0][0]:
+                return True
+    return False
+
+
+def compare_versions(aliases_list, canonical_tokens, wrong_version, is_major_version_only, canonical_id, base_name_license_dict):
     for alias in aliases_list:
         alias_tokens = extract_version_tokens(alias)
         if alias_tokens != canonical_tokens:
@@ -242,6 +284,10 @@ def compare_versions(aliases_list, canonical_tokens, wrong_version, is_major_ver
                 numbers_found = re.findall(r'\d+', alias)
                 if numbers_found and all(num == major_str for num in numbers_found):
                     continue
+            is_only_base_name = get_base_name_number(canonical_id, base_name_license_dict)
+            if is_only_base_name and is_major_version_only:
+                continue
+
             wrong_version.append(alias)
 
 

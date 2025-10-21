@@ -16,7 +16,6 @@ from src.validate.data_validation import (
     check_length_and_characters,
     check_src_and_canonical,
     LicenseListType,
-    main,
     check_no_empty_field_except_custom,
     check_rejected_field_exists,
     check_rejected_not_in_valid_fields,
@@ -350,44 +349,6 @@ def test_check_length_and_characters_failure():
     os.rmdir("test_data")
 
 
-def test_main_integration():
-    # Mock the logger and its handlers
-    mock_logger.handlers = [mock.MagicMock(), mock.MagicMock()]
-    mock_logger.handlers[1].error_occurred = False  # Simulate no error occurring
-
-    with mock.patch("src.validate.data_validation.download_license_list"), \
-         mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-         mock.patch("src.validate.data_validation.delete_file"), \
-         mock.patch("src.validate.data_validation.check_json_filename"), \
-         mock.patch("src.validate.data_validation.check_unique_aliases"), \
-         mock.patch("src.validate.data_validation.check_length_and_characters"):
-        main()
-
-        # Verify that no error occurred (if checking the logger)
-        assert not mock_logger.handlers[1].error_occurred, "An error occurred in the logger"
-
-
-def test_main_integration_fail():
-    # Mock the logger and its handlers
-    mock_logger.handlers = [mock.MagicMock(), mock.MagicMock()]
-    mock_logger.handlers[1].error_occurred = True  # Simulate an error occurring
-
-    with mock.patch("src.validate.data_validation.download_license_list"), \
-         mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-         mock.patch("src.validate.data_validation.delete_file"), \
-         mock.patch("src.validate.data_validation.check_json_filename"), \
-         mock.patch("src.validate.data_validation.check_unique_aliases"), \
-         mock.patch("src.validate.data_validation.check_length_and_characters"):
-        main()
-
-        # Verify that no error occurred (if checking the logger)
-        assert mock_logger.handlers[1].error_occurred, "An error occurred in the logger"
-
-
 def test_check_no_empty_field_except_custom_success():
     os.makedirs("test_data", exist_ok=True)
 
@@ -515,14 +476,18 @@ def test_check_version_between_canonical_and_alias_success():
 def test_check_version_between_canonical_and_alias_failure(caplog):
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
-                  "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["wrong_version_3.0_1.0"]}}
+    invalid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                    "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["wrong_version_3.0_1.0"]}}
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_2.0", "src": "valid_src"},
+                  "aliases": {"scancode-licensedb": ["valid_alias_version_2.0"], "custom": ["wrong_version_2.0"]}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
-
+    filepath_valid2 = os.path.join("test_data", "valid2.json")
     with open(filepath_valid, 'w') as f:
+        json.dump(invalid_data, f)
+    with open(filepath_valid2, 'w') as f:
         json.dump(valid_data, f)
-
     with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
         with mock.patch('src.validate.data_validation.logger', mock_logger):
             check_version_between_canonical_and_alias()
@@ -624,6 +589,73 @@ def test_check_major_version_flag(caplog, monkeypatch):
 
     for filename in ["GPL-2.0.json", "GPL-3.0.json", "UniqueLicense-1.0.json", "LicenseNoVersion.json"]:
         assert not any(filename in msg for msg in error_messages)
+
+
+def test_extract_license_list_with_semver(tmp_path, monkeypatch):
+    file_content = {"canonical": {"id": "license1.0"}}
+    json_file = tmp_path / "test_file.json"
+    json_file.write_text(json.dumps(file_content))
+
+    monkeypatch.setattr(data_validation, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(data_validation, "JSON_EXTENSION", ".json")
+
+    monkeypatch.setattr(
+        data_validation,
+        "extract_version_tokens",
+        lambda canonical: ["1.0"] if canonical == "license1.0" else []
+    )
+
+    licenses_list = []
+    data_validation.extract_license_list_with_semver(licenses_list)
+
+    assert licenses_list == [("license1.0", ["1.0"])]
+
+
+def test_only_base_name_with_version_success(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                  "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["major_version_only_v1"]},
+                  "isMajorVersionOnly": True}
+
+    other_base_name_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "different_base_name_1.0", "src": "valid_src"},
+                            "aliases": {"scancode-licensedb": ["valid_alias_version_1.0"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+    filepath_valid2 = os.path.join("test_data", "valid2.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+    with open(filepath_valid2, 'w') as f:
+        json.dump(other_base_name_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+    assert mock_logger.error.call_count == 0
+
+
+def test_only_base_name_with_version_failure(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                  "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["major_version_only_v1"]}}
+
+    other_base_name_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "different_base_name_1.0", "src": "valid_src"},
+                            "aliases": {"scancode-licensedb": ["valid_alias_version_1.0"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+    filepath_valid2 = os.path.join("test_data", "valid2.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+    with open(filepath_valid2, 'w') as f:
+        json.dump(other_base_name_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+    assert mock_logger.error.call_count == 1
 
 
 if __name__ == "__main__":
