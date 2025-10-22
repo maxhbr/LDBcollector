@@ -44,6 +44,7 @@ def test_process_unrecognized_license_id_recognized(capsys):
             "id": canonical_id
         },
         "aliases": {
+            "custom": [],
             "osi": [],
             "spdx": ["MIT License"]
         }

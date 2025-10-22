@@ -9,9 +9,9 @@ from src.update.BaseDataUpdate import BaseDataUpdate
 class ScancodeLicensedbDataUpdate(BaseDataUpdate):
     def __init__(self, debug=False):
         if debug:
-            super().__init__(src="scancode-licensedb", log_level=logging.DEBUG)
+            super().__init__(src="scancodeLicensedb", log_level=logging.DEBUG)
         else:
-            super().__init__(src="scancode-licensedb", log_level=logging.INFO)
+            super().__init__(src="scancodeLicensedb", log_level=logging.INFO)
 
         self._base_url = "https://scancode-licensedb.aboutcode.org/"
         self._index_url = f"{self._base_url}index.json"

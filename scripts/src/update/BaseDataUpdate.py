@@ -72,6 +72,7 @@ class BaseDataUpdate:
             canonical_id: Canonical ID for the license
             aliases: List of name variations for the license
         """
+        self._LOGGER.debug(f"Updating license file for {canonical_id} with aliases {aliases} for source {self._src}")
         filepath = os.path.join(self._DATA_DIR, f"{canonical_id}.json")
 
         data = self.load_json_file(filepath)
@@ -87,6 +88,25 @@ class BaseDataUpdate:
         normalized_aliases = self._normalize_alias_list(aliases)
 
         # Add each unique alias to license if alias is not None
+        self.add_alias_list_to_existing_mapping(aliases_list, canonical_id, data, existing_aliases, normalized_aliases, rejected_aliases,
+                                                risky_aliases)
+
+        custom_aliases = self._create_custom_list_for_quotes(normalized_aliases)
+
+        for alias in custom_aliases:
+            if alias not in aliases_list:
+                existing_aliases["custom"].append(alias)
+
+        existing_aliases["custom"].sort(key=lambda y: y.lower())
+        if self._src in data["aliases"]:
+            existing_aliases[self._src].sort(key=lambda y: y.lower())
+
+        with open(filepath, 'w') as outfile:
+            json.dump(data, outfile, indent=4)
+
+    def add_alias_list_to_existing_mapping(self, aliases_list: list[str], canonical_id: str, data: dict,
+                                           existing_aliases: dict[str, list[str]], normalized_aliases: list[str],
+                                           rejected_aliases: list[str], risky_aliases: list[str]) -> None:
         for alias in normalized_aliases:
             if alias in risky_aliases:
                 self._LOGGER.debug(f"For {canonical_id} the alias '{alias}' is already in risky list")
@@ -102,15 +122,6 @@ class BaseDataUpdate:
                     existing_aliases[self._src] = list()
                 existing_aliases[self._src].append(alias)
 
-        custom_aliases = self._create_custom_list_for_quotes(normalized_aliases)
-
-        for alias in custom_aliases:
-            if alias not in aliases_list:
-                existing_aliases["custom"].append(alias)
-
-        with open(filepath, 'w') as outfile:
-            json.dump(data, outfile, indent=4)
-
     def create_license_file(self, canonical_id: str, aliases: list[str]) -> None:
         """
         Creates the license file for the given license ID and name
@@ -121,7 +132,7 @@ class BaseDataUpdate:
         self._LOGGER.debug(f"Creating new data file: {canonical_id}.json")
 
         normalized_aliases = self._normalize_alias_list(aliases)
-
+        normalized_aliases.sort(key=lambda y: y.lower())
         custom_list = self._create_custom_list_for_quotes(normalized_aliases)
 
         output_data = {
@@ -225,7 +236,7 @@ class BaseDataUpdate:
         for alias in aliases:
             normalized_alias = self._normalize_quotes(alias)
             normalized_aliases.append(normalized_alias)
-        normalized_aliases.sort()
+        normalized_aliases.sort(key=lambda y: y.lower())
         return normalized_aliases
 
     def _create_custom_list_for_quotes(self, aliases: list[str]) -> list[str]:
@@ -242,7 +253,7 @@ class BaseDataUpdate:
         custom_aliases: list[str] = list()
         for alias in aliases:
             self._create_custom_entry_for_quotes(alias, custom_aliases)
-        custom_aliases.sort()
+        custom_aliases.sort(key=lambda y: y.lower())
         return custom_aliases
 
     def _create_custom_entry_for_quotes(self, alias: str, aliases: list[str]) -> None:
