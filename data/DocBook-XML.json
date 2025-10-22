@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "docbook",
             "Docbook License",
-            "LicenseRef-scancode-docbook",
-            "docbook"
+            "LicenseRef-scancode-docbook"
         ]
     },
     "rejected": [],

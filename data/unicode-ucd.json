@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Unicode Character Database (UCD) Terms of Use",
             "LicenseRef-scancode-unicode-ucd",
+            "Unicode Character Database (UCD) Terms of Use",
             "Unicode UCD TOU"
         ]
     },

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sash Notice",
-            "LicenseRef-scancode-sash"
+            "LicenseRef-scancode-sash",
+            "Sash Notice"
         ]
     },
     "rejected": [],

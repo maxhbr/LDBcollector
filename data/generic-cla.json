@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Prior Generic Contributor License Agreement",
             "Generic CLA",
-            "LicenseRef-scancode-generic-cla"
+            "LicenseRef-scancode-generic-cla",
+            "Prior Generic Contributor License Agreement"
         ]
     },
     "rejected": [],

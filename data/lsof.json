@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "purdue-bsd",
+            "LicenseRef-scancode-purdue-bsd",
             "Purdue BSD-Style License",
-            "LicenseRef-scancode-purdue-bsd"
+            "purdue-bsd"
         ]
     },
     "rejected": [],

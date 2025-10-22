@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Paul Mackerras Binary License",
-            "LicenseRef-scancode-paul-mackerras-binary"
+            "LicenseRef-scancode-paul-mackerras-binary",
+            "Paul Mackerras Binary License"
         ]
     },
     "rejected": [],

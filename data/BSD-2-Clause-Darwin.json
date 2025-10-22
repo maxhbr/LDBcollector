@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "bsd-simplified-darwin",
             "BSD Simplified Darwin",
+            "bsd-simplified-darwin",
             "LicenseRef-scancode-bsd-simplified-darwin"
         ]
     },

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ODB Non-Commercial Use and Evaluation License (NCUEL)",
+            "LicenseRef-scancode-odb-ncuel",
             "ODB NCUEL",
-            "LicenseRef-scancode-odb-ncuel"
+            "ODB Non-Commercial Use and Evaluation License (NCUEL)"
         ]
     },
     "rejected": [],

@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "FreeTTS License",
             "freetts",
+            "FreeTTS License",
             "LicenseRef-scancode-freetts"
         ]
     },

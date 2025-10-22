@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Runtime Library Exception to the Apache 2.0 License",
+            "apple-runtime-library-exception",
             "Runtime Library Exception to Apache 2.0",
-            "apple-runtime-library-exception"
+            "Runtime Library Exception to the Apache 2.0 License"
         ]
     },
     "rejected": [],

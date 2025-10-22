@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "martin-birgmeier",
+            "LicenseRef-scancode-martin-birgmeier",
             "Martin Bergmeier License",
-            "LicenseRef-scancode-martin-birgmeier"
+            "martin-birgmeier"
         ]
     },
     "rejected": [],

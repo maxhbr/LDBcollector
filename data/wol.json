@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Wide Open License",
-            "LicenseRef-scancode-wol"
+            "LicenseRef-scancode-wol",
+            "Wide Open License"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NetComponents License",
-            "LicenseRef-scancode-netcomponents"
+            "LicenseRef-scancode-netcomponents",
+            "NetComponents License"
         ]
     },
     "rejected": [],

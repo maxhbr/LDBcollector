@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "fsf-free",
             "Free Software Foundation - Free Software License",
-            "FSF Free Software License"
+            "FSF Free Software License",
+            "fsf-free"
         ]
     },
     "rejected": [],

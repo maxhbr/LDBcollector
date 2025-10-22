@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Timestamp Picker License",
-            "LicenseRef-scancode-timestamp-picker"
+            "LicenseRef-scancode-timestamp-picker",
+            "Timestamp Picker License"
         ]
     },
     "rejected": [],

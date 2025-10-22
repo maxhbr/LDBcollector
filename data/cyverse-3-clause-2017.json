@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "cyverse-3-clause-2017",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Cyverse 3-Clause License 2017",
+            "LicenseRef-scancode-cyverse-3-clause-2017"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

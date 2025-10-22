@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS ASP.NET Web Pages Templates License",
+            "LicenseRef-scancode-ms-asp-net-web-pages-templates",
             "Microsoft ASP.NET Web Pages Templates License",
-            "LicenseRef-scancode-ms-asp-net-web-pages-templates"
+            "MS ASP.NET Web Pages Templates License"
         ]
     },
     "rejected": [],

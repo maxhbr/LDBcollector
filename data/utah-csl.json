@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "utah-csl",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-utah-csl",
+            "University of Utah Computer Systems Laboratory License",
+            "Utah CSL License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Softerra LDAP Browser EULA",
-            "LicenseRef-scancode-softerra-ldap-browser-eula"
+            "LicenseRef-scancode-softerra-ldap-browser-eula",
+            "Softerra LDAP Browser EULA"
         ]
     },
     "rejected": [],

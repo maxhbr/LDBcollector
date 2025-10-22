@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "WS-Policy Specification",
-            "LicenseRef-scancode-ws-policy-specification"
+            "LicenseRef-scancode-ws-policy-specification",
+            "WS-Policy Specification"
         ]
     },
     "rejected": [],

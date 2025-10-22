@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "snprintf",
-            "LicenseRef-scancode-snprintf"
+            "LicenseRef-scancode-snprintf",
+            "snprintf"
         ]
     },
     "rejected": [],

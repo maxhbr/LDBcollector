@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "autoconf-exception-2.0",
-            "Autoconf exception to GPL 2.0 or later"
+            "Autoconf exception to GPL 2.0 or later",
+            "autoconf-exception-2.0"
         ]
     },
     "rejected": [],

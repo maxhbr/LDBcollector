@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "T-License for SMP T-Kernel",
-            "LicenseRef-scancode-t-license-smp-t-kernel"
+            "LicenseRef-scancode-t-license-smp-t-kernel",
+            "T-License for SMP T-Kernel"
         ]
     },
     "rejected": [],

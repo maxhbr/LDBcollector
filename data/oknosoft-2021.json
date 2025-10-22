@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "oknosoft-2021",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oknosoft-2021",
+            "Oknosoft License 2021"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

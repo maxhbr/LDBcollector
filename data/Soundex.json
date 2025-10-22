@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "soundex",
             "LicenseRef-scancode-soundex",
-            "Soundex"
+            "Soundex",
+            "soundex"
         ]
     },
     "rejected": [],

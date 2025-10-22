@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-azure-data-studio",
             "Microsoft Azure Data Studio License Terms",
-            "MS Azure Data Studio License",
-            "LicenseRef-scancode-ms-azure-data-studio"
+            "MS Azure Data Studio License"
         ]
     },
     "rejected": [],

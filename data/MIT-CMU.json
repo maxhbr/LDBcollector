@@ -9,20 +9,20 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "cmu-uc",
-            "CMU Style"
+            "CMU Style",
+            "cmu-uc"
         ],
         "pypi": [
-            "License :: CMU License (MIT-CMU)",
-            "OSI Approved :: CMU License (MIT-CMU)",
-            "License :: OSI Approved :: CMU License",
+            "CMU License (MIT-CMU)",
             "License :: CMU License",
-            "OSI Approved :: CMU License",
-            "License :: OSI Approved :: MIT-CMU",
+            "License :: CMU License (MIT-CMU)",
             "License :: MIT-CMU",
-            "OSI Approved :: MIT-CMU",
+            "License :: OSI Approved :: CMU License",
             "License :: OSI Approved :: CMU License (MIT-CMU)",
-            "CMU License (MIT-CMU)"
+            "License :: OSI Approved :: MIT-CMU",
+            "OSI Approved :: CMU License",
+            "OSI Approved :: CMU License (MIT-CMU)",
+            "OSI Approved :: MIT-CMU"
         ]
     },
     "rejected": [],

@@ -9,21 +9,21 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "mulanpsl-2.0",
-            "Mulan PSL v2"
+            "Mulan PSL v2",
+            "mulanpsl-2.0"
         ],
         "pypi": [
-            "License :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
-            "OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
-            "License :: OSI Approved :: MulanPSL-2.0",
-            "License :: MulanPSL-2.0",
-            "OSI Approved :: MulanPSL-2.0",
-            "License :: OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
-            "Mulan Permissive Software License v2 (MulanPSL-2.0)",
-            "Mulan Permissive Software License v2",
-            "License :: OSI Approved :: Mulan Permissive Software License v2",
             "License :: Mulan Permissive Software License v2",
-            "OSI Approved :: Mulan Permissive Software License v2"
+            "License :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
+            "License :: MulanPSL-2.0",
+            "License :: OSI Approved :: Mulan Permissive Software License v2",
+            "License :: OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
+            "License :: OSI Approved :: MulanPSL-2.0",
+            "Mulan Permissive Software License v2",
+            "Mulan Permissive Software License v2 (MulanPSL-2.0)",
+            "OSI Approved :: Mulan Permissive Software License v2",
+            "OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
+            "OSI Approved :: MulanPSL-2.0"
         ]
     },
     "rejected": [],

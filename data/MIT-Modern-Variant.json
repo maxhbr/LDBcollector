@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "mit-modern",
+            "LicenseRef-scancode-mit-modern",
             "MIT Modern Variant",
-            "LicenseRef-scancode-mit-modern"
+            "mit-modern"
         ]
     },
     "rejected": [],

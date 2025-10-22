@@ -8,22 +8,23 @@
             "BSD 3-Clause \"New\" or \"Revised\" License"
         ],
         "custom": [
-            "BSD 3-Clause",
-            "BSD 3-Clause License",
-            "BSD 3-Clause Revised",
-            "BSD-3-Clause Revised",
-            "BSD 3-Clause New",
-            "BSD-3-Clause New",
-            "BSD License 3-Clause",
-            "New BSD License",
-            "Modified BSD License",
             "3-Clause BSD License",
+            "BSD 3-Clause",
+            "BSD 3-Clause 'New' or 'Revised' License",
+            "BSD 3-Clause License",
+            "BSD 3-Clause New",
+            "BSD 3-Clause Revised",
+            "BSD License 3-Clause",
+            "BSD-3-Clause New",
+            "BSD-3-Clause Revised",
             "BSD3",
-            "EDL-1.0"
+            "EDL-1.0",
+            "Modified BSD License",
+            "New BSD License"
         ],
         "osi": [
-            "Revised BSD License",
-            "BSD-3"
+            "BSD-3",
+            "Revised BSD License"
         ],
         "scancodeLicensedb": [
             "bsd-new",

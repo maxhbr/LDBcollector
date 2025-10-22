@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-xml-core-4.0",
             "Microsoft XML Core Services (MSXML) 4.0 EULA",
-            "MSXML 4.0 EULA",
-            "LicenseRef-scancode-ms-xml-core-4.0"
+            "MSXML 4.0 EULA"
         ]
     },
     "rejected": [],

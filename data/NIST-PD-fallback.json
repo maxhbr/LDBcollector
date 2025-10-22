@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "nist-pd-fallback",
-            "NIST Public Domain Notice with fallback"
+            "NIST Public Domain Notice with fallback",
+            "nist-pd-fallback"
         ]
     },
     "rejected": [],

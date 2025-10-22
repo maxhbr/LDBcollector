@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-vpl-1.1",
             "VPL 1.1",
-            "Vtiger Public License 1.1",
-            "LicenseRef-scancode-vpl-1.1"
+            "Vtiger Public License 1.1"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Yale CAS License",
-            "LicenseRef-scancode-yale-cas"
+            "LicenseRef-scancode-yale-cas",
+            "Yale CAS License"
         ]
     },
     "rejected": [],

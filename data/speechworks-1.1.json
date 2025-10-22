@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SpeechWorks Public License v1.1",
+            "LicenseRef-scancode-speechworks-1.1",
             "SpeechWorks Public License 1.1",
-            "LicenseRef-scancode-speechworks-1.1"
+            "SpeechWorks Public License v1.1"
         ]
     },
     "rejected": [],

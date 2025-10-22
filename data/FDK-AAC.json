@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "fraunhofer-fdk-aac-codec",
             "Fraunhofer FDK AAC Codec Library for Android",
+            "fraunhofer-fdk-aac-codec",
             "LicenseRef-scancode-fraunhofer-fdk-aac-codec"
         ]
     },

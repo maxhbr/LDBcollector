@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Australian National University License",
             "ANU License",
+            "Australian National University License",
             "LicenseRef-scancode-anu-license"
         ]
     },

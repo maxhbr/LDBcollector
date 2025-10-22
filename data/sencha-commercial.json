@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sencha Commercial License v1.1",
+            "LicenseRef-scancode-sencha-commercial",
             "Sencha Commercial License 1.1",
-            "LicenseRef-scancode-sencha-commercial"
+            "Sencha Commercial License v1.1"
         ]
     },
     "rejected": [],

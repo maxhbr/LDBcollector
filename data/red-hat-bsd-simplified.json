@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Red Hat BSD-Simplified",
-            "LicenseRef-scancode-red-hat-bsd-simplified"
+            "LicenseRef-scancode-red-hat-bsd-simplified",
+            "Red Hat BSD-Simplified"
         ]
     },
     "rejected": [],

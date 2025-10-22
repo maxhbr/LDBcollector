@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "mstar-2007",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mstar-2007",
+            "MStar Proprietary License 2007"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

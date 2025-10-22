@@ -8,21 +8,21 @@
             "Boost Software License 1.0"
         ],
         "custom": [
+            "Boost",
+            "Boost License",
             "Boost License 1.0",
-            "BSL 1.0",
-            "BSL-1.0",
-            "Boost Software License, Version 1.0",
-            "Boost Software License v1.0",
-            "Boost v1.0",
             "Boost License v1.0",
             "Boost License Version 1.0",
+            "Boost Software License",
+            "Boost Software License v1.0",
+            "Boost Software License, Version 1.0",
+            "Boost v1.0",
             "Boost-1.0",
             "Boost-1.0 License",
-            "bsl1.0",
-            "Boost License",
-            "Boost Software License",
-            "Boost",
-            "bsl"
+            "bsl",
+            "BSL 1.0",
+            "BSL-1.0",
+            "bsl1.0"
         ],
         "osi": [
             "Boost Software License 1.0 (BSL-1.0)"
@@ -32,15 +32,15 @@
             "boost-1.0"
         ],
         "pypi": [
-            "License :: Boost Software License 1.0 (BSL-1.0)",
-            "OSI Approved :: Boost Software License 1.0 (BSL-1.0)",
-            "License :: OSI Approved :: Boost Software License 1.0",
             "License :: Boost Software License 1.0",
-            "OSI Approved :: Boost Software License 1.0",
-            "License :: OSI Approved :: BSL-1.0",
+            "License :: Boost Software License 1.0 (BSL-1.0)",
             "License :: BSL-1.0",
-            "OSI Approved :: BSL-1.0",
-            "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)"
+            "License :: OSI Approved :: Boost Software License 1.0",
+            "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)",
+            "License :: OSI Approved :: BSL-1.0",
+            "OSI Approved :: Boost Software License 1.0",
+            "OSI Approved :: Boost Software License 1.0 (BSL-1.0)",
+            "OSI Approved :: BSL-1.0"
         ]
     },
     "rejected": [],

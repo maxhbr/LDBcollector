@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Qualcomm Turing License",
-            "LicenseRef-scancode-qualcomm-turing"
+            "LicenseRef-scancode-qualcomm-turing",
+            "Qualcomm Turing License"
         ]
     },
     "rejected": [],

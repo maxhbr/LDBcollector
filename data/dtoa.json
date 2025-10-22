@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-x11-lucent",
             "x11-lucent",
-            "X11-Style (Lucent)",
-            "LicenseRef-scancode-x11-lucent"
+            "X11-Style (Lucent)"
         ]
     },
     "rejected": [],

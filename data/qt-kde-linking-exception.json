@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Qt Linking Exception to GPL 2.0 or later",
-            "LicenseRef-scancode-qt-kde-linking-exception"
+            "LicenseRef-scancode-qt-kde-linking-exception",
+            "Qt Linking Exception to GPL 2.0 or later"
         ]
     },
     "rejected": [],

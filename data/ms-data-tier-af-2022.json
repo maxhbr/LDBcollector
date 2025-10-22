@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Data-Tier Application Framework License",
+            "LicenseRef-scancode-ms-data-tier-af-2022",
             "Microsoft Data-Tier Application Framework License Terms",
-            "LicenseRef-scancode-ms-data-tier-af-2022"
+            "MS Data-Tier Application Framework License"
         ]
     },
     "rejected": [],

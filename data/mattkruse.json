@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Matt Kruse License",
-            "LicenseRef-scancode-mattkruse"
+            "LicenseRef-scancode-mattkruse",
+            "Matt Kruse License"
         ]
     },
     "rejected": [],

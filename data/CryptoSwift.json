@@ -9,8 +9,8 @@
             "CryptoSwift License"
         ],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-cryptoswift",
-            "cryptoswift"
+            "cryptoswift",
+            "LicenseRef-scancode-cryptoswift"
         ]
     },
     "rejected": [],

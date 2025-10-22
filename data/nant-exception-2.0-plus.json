@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NAnt exception to GPL 2.0 or later",
-            "LicenseRef-scancode-nant-exception-2.0-plus"
+            "LicenseRef-scancode-nant-exception-2.0-plus",
+            "NAnt exception to GPL 2.0 or later"
         ]
     },
     "rejected": [],

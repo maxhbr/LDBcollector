@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NVPL 7.0",
-            "LicenseRef-scancode-non-violent-7.0"
+            "LicenseRef-scancode-non-violent-7.0",
+            "NVPL 7.0"
         ]
     },
     "rejected": [],

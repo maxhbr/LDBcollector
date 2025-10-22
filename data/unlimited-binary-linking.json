@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Unlimited Binary Linking Exception",
-            "LicenseRef-scancode-unlimited-binary-linking"
+            "LicenseRef-scancode-unlimited-binary-linking",
+            "Unlimited Binary Linking Exception"
         ]
     },
     "rejected": [],

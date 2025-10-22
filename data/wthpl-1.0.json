@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "WTHPL 1.0",
             "DO WHAT THE HELL YOU WANT TO PUBLIC LICENSE 1.0",
-            "LicenseRef-scancode-wthpl-1.0"
+            "LicenseRef-scancode-wthpl-1.0",
+            "WTHPL 1.0"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Scintilla License",
-            "LicenseRef-scancode-scintilla"
+            "LicenseRef-scancode-scintilla",
+            "Scintilla License"
         ]
     },
     "rejected": [],

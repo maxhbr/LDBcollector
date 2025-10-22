@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NVIDIA License with Government Qualifications",
-            "LicenseRef-scancode-nvidia-gov"
+            "LicenseRef-scancode-nvidia-gov",
+            "NVIDIA License with Government Qualifications"
         ]
     },
     "rejected": [],

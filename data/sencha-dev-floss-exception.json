@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sencha Open Source License Exception for Development",
+            "LicenseRef-scancode-sencha-dev-floss-exception",
             "Sencha GPL 3.0 Exception for Development",
-            "LicenseRef-scancode-sencha-dev-floss-exception"
+            "Sencha Open Source License Exception for Development"
         ]
     },
     "rejected": [],

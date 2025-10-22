@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-office-extensible-file",
             "Microsoft Office Extensible File License",
-            "MS Office Extensible File License",
-            "LicenseRef-scancode-ms-office-extensible-file"
+            "MS Office Extensible File License"
         ]
     },
     "rejected": [],

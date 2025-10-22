@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun IIOP License",
-            "LicenseRef-scancode-sun-iiop"
+            "LicenseRef-scancode-sun-iiop",
+            "Sun IIOP License"
         ]
     },
     "rejected": [],

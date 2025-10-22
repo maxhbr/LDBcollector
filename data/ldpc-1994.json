@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Linux Documentation Project Copying License 1994-03-30",
             "LDPC-1994",
-            "LicenseRef-scancode-ldpc-1994"
+            "LicenseRef-scancode-ldpc-1994",
+            "Linux Documentation Project Copying License 1994-03-30"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "WinZip Self-Extractor License",
-            "LicenseRef-scancode-winzip-self-extractor"
+            "LicenseRef-scancode-winzip-self-extractor",
+            "WinZip Self-Extractor License"
         ]
     },
     "rejected": [],

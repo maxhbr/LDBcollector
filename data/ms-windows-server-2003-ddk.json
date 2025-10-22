@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Windows Server 2003 DDK License",
+            "LicenseRef-scancode-ms-windows-server-2003-ddk",
             "Microsoft Windows Server 2003 DDK License",
-            "LicenseRef-scancode-ms-windows-server-2003-ddk"
+            "MS Windows Server 2003 DDK License"
         ]
     },
     "rejected": [],

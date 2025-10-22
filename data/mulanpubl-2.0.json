@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MulanPubl-2.0",
-            "LicenseRef-scancode-mulanpubl-2.0"
+            "LicenseRef-scancode-mulanpubl-2.0",
+            "MulanPubl-2.0"
         ]
     },
     "rejected": [],

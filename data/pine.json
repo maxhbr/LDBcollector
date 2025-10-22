@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Pine License",
-            "LicenseRef-scancode-pine"
+            "LicenseRef-scancode-pine",
+            "Pine License"
         ]
     },
     "rejected": [],

@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "s-lab-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-s-lab-1.0",
+            "S-Lab License 1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

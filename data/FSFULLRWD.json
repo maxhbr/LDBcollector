@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "FSF Unlimited License No Warranty",
             "fsf-unlimited-no-warranty",
-            "LicenseRef-scancode-fsf-unlimited-no-warranty",
-            "FSF Unlimited License No Warranty"
+            "LicenseRef-scancode-fsf-unlimited-no-warranty"
         ]
     },
     "rejected": [],

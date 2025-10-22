@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-rh-ubi-eula-2019",
             "Red Hat UBI EULA",
-            "Red Hat Universal Base Image EULA",
-            "LicenseRef-scancode-rh-ubi-eula-2019"
+            "Red Hat Universal Base Image EULA"
         ]
     },
     "rejected": [],

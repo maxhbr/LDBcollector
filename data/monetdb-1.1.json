@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-monetdb-1.1",
             "MonetDB 1.1",
-            "MonetDB Public License Version 1.1",
-            "LicenseRef-scancode-monetdb-1.1"
+            "MonetDB Public License Version 1.1"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SlySoft EULA",
-            "LicenseRef-scancode-slysoft-eula"
+            "LicenseRef-scancode-slysoft-eula",
+            "SlySoft EULA"
         ]
     },
     "rejected": [],

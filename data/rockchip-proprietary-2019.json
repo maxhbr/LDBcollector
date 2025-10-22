@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "rockchip-proprietary-2019",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-rockchip-proprietary-2019",
+            "Rockchip Proprietary 2019"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

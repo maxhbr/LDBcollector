@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ricebsd",
             "Rice BSD Software License",
-            "RiceBSD",
-            "LicenseRef-scancode-ricebsd"
+            "RiceBSD"
         ]
     },
     "rejected": [],

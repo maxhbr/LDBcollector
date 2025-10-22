@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "freebsd-doc",
             "FreeBSD Doc License",
+            "freebsd-doc",
             "LicenseRef-scancode-freebsd-doc"
         ]
     },

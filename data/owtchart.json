@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OWTChart License",
-            "LicenseRef-scancode-owtchart"
+            "LicenseRef-scancode-owtchart",
+            "OWTChart License"
         ]
     },
     "rejected": [],

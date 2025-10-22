@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sparky License",
-            "LicenseRef-scancode-sparky"
+            "LicenseRef-scancode-sparky",
+            "Sparky License"
         ]
     },
     "rejected": [],

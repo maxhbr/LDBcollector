@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "MIT Veillard Variant",
             "LicenseRef-scancode-mit-veillard-variant",
+            "MIT Veillard Variant",
             "mit-veillard-variant"
         ]
     },

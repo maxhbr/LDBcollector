@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-rh-eula-apache2",
             "Red Hat Apache-Based End User License Agreement",
-            "Red Hat Apache-Based EULA",
-            "LicenseRef-scancode-rh-eula-apache2"
+            "Red Hat Apache-Based EULA"
         ]
     },
     "rejected": [],

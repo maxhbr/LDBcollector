@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Linking exception to GPL 2.0 or later",
-            "LicenseRef-scancode-linking-exception-2.0-plus"
+            "LicenseRef-scancode-linking-exception-2.0-plus",
+            "Linking exception to GPL 2.0 or later"
         ]
     },
     "rejected": [],

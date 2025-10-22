@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-generaluser-gs-2.0",
-            "GeneralUser GS License v2.0"
+            "GeneralUser GS License v2.0",
+            "LicenseRef-scancode-generaluser-gs-2.0"
         ]
     },
     "rejected": [],

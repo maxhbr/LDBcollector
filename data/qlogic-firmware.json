@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "QLogic Firmware License",
-            "LicenseRef-scancode-qlogic-firmware"
+            "LicenseRef-scancode-qlogic-firmware",
+            "QLogic Firmware License"
         ]
     },
     "rejected": [],

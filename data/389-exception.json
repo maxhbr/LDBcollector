@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "389-exception",
-            "389 Directory Server Exception to GPL 2.0"
+            "389 Directory Server Exception to GPL 2.0",
+            "389-exception"
         ]
     },
     "rejected": [],

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SoftFloat Legal Notice",
+            "LicenseRef-scancode-softfloat",
             "SoftFloat",
-            "LicenseRef-scancode-softfloat"
+            "SoftFloat Legal Notice"
         ]
     },
     "rejected": [],

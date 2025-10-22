@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS ASP.NET Web Pages 2 License",
+            "LicenseRef-scancode-ms-asp-net-web-pages-2",
             "Microsoft ASP.NET Web Pages 2 License",
-            "LicenseRef-scancode-ms-asp-net-web-pages-2"
+            "MS ASP.NET Web Pages 2 License"
         ]
     },
     "rejected": [],

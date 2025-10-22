@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "openCARP v1.0",
-            "LicenseRef-scancode-opencarp-1.0"
+            "LicenseRef-scancode-opencarp-1.0",
+            "openCARP v1.0"
         ]
     },
     "rejected": [],

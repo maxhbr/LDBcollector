@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-R7.5",
-            "X.Org Preferred License"
+            "X.Org Preferred License",
+            "X11-R7.5"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oswego Concurrent License",
-            "LicenseRef-scancode-oswego-concurrent"
+            "LicenseRef-scancode-oswego-concurrent",
+            "Oswego Concurrent License"
         ]
     },
     "rejected": [],

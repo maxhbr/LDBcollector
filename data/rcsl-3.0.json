@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "RealNetworks Community Source License v3.0",
+            "LicenseRef-scancode-rcsl-3.0",
             "RCSL R&D 3.0",
-            "LicenseRef-scancode-rcsl-3.0"
+            "RealNetworks Community Source License v3.0"
         ]
     },
     "rejected": [],

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Unknown SPDX license detected but not recognized",
+            "LicenseRef-scancode-unknown-spdx",
             "unknown SPDX",
-            "LicenseRef-scancode-unknown-spdx"
+            "Unknown SPDX license detected but not recognized"
         ]
     },
     "rejected": [],

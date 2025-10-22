@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "Classpath-exception-2.0-short",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Classpath exception 2.0 - short"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

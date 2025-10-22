@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "defold-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Defold License 1.0",
+            "LicenseRef-scancode-defold-1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

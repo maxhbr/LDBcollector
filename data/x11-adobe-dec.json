@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (Adobe-DEC)",
-            "LicenseRef-scancode-x11-adobe-dec"
+            "LicenseRef-scancode-x11-adobe-dec",
+            "X11-Style (Adobe-DEC)"
         ]
     },
     "rejected": [],

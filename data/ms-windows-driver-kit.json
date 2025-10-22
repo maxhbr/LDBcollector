@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-windows-driver-kit",
             "Microsoft Windows Driver Kit License",
-            "MS Windows Driver Kit License",
-            "LicenseRef-scancode-ms-windows-driver-kit"
+            "MS Windows Driver Kit License"
         ]
     },
     "rejected": [],

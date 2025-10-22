@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MakeHuman License",
-            "LicenseRef-scancode-make-human-exception"
+            "LicenseRef-scancode-make-human-exception",
+            "MakeHuman License"
         ]
     },
     "rejected": [],

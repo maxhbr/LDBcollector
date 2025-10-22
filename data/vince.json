@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MIT (SEI)",
-            "LicenseRef-scancode-vince"
+            "LicenseRef-scancode-vince",
+            "MIT (SEI)"
         ]
     },
     "rejected": [],

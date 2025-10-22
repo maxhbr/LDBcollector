@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS JDBC Driver 4.1 for SQL Server",
+            "LicenseRef-scancode-ms-jdbc-driver-41-sql-server",
             "Microsoft JDBC Driver 4.1 for SQL Server",
-            "LicenseRef-scancode-ms-jdbc-driver-41-sql-server"
+            "MS JDBC Driver 4.1 for SQL Server"
         ]
     },
     "rejected": [],

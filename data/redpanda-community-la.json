@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Redpanda Community License Agreement",
-            "LicenseRef-scancode-redpanda-community-la"
+            "LicenseRef-scancode-redpanda-community-la",
+            "Redpanda Community License Agreement"
         ]
     },
     "rejected": [],

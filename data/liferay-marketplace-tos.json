@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-liferay-marketplace-tos",
             "Liferay Marketplace Terms of Service Agreement",
-            "Liferay Marketplace TOS",
-            "LicenseRef-scancode-liferay-marketplace-tos"
+            "Liferay Marketplace TOS"
         ]
     },
     "rejected": [],

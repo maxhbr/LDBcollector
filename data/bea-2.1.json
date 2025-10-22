@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "BEA Public License 2.1",
             "BEA 2.1",
+            "BEA Public License 2.1",
             "LicenseRef-scancode-bea-2.1"
         ]
     },

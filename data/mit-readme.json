@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MIT README License",
-            "LicenseRef-scancode-mit-readme"
+            "LicenseRef-scancode-mit-readme",
+            "MIT README License"
         ]
     },
     "rejected": [],

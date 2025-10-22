@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "QTI Linux Firmware",
-            "LicenseRef-scancode-qti-linux-firmware"
+            "LicenseRef-scancode-qti-linux-firmware",
+            "QTI Linux Firmware"
         ]
     },
     "rejected": [],

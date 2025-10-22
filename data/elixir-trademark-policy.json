@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-elixir-trademark-policy",
-            "Elixir Trademark Policy",
             "Elixir Team Trademarks Policy",
-            "LicenseRef-elixir-trademark-policy"
+            "Elixir Trademark Policy",
+            "LicenseRef-elixir-trademark-policy",
+            "LicenseRef-scancode-elixir-trademark-policy"
         ]
     },
     "rejected": [],

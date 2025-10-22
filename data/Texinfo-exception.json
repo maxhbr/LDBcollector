@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-tex-exception",
             "TeX exception to GPL 3.0",
-            "tex-exception",
-            "LicenseRef-scancode-tex-exception"
+            "tex-exception"
         ]
     },
     "rejected": [],

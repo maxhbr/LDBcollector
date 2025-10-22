@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "mit-taylor-variant",
+            "LicenseRef-scancode-mit-taylor-variant",
             "MIT Taylor Variant",
-            "LicenseRef-scancode-mit-taylor-variant"
+            "mit-taylor-variant"
         ]
     },
     "rejected": [],

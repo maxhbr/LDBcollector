@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (Adobe)",
             "LicenseRef-scancode-x11-adobe",
-            "x11-adobe"
+            "x11-adobe",
+            "X11-Style (Adobe)"
         ]
     },
     "rejected": [],

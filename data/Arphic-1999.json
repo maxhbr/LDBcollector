@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-arphic-public",
-            "arphic-public"
+            "arphic-public",
+            "LicenseRef-scancode-arphic-public"
         ]
     },
     "rejected": [],

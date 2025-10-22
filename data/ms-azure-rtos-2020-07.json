@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Microsoft Azure RTOS 2020-07",
             "LicenseRef-scancode-ms-azure-rtos-2020-07",
+            "Microsoft Azure RTOS 2020-07",
             "MS Azure RTOS 2020-07"
         ]
     },

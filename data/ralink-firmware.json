@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Ralink Firmware License",
-            "LicenseRef-scancode-ralink-firmware"
+            "LicenseRef-scancode-ralink-firmware",
+            "Ralink Firmware License"
         ]
     },
     "rejected": [],

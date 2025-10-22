@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "Djangosnippets Terms of Service",
             "Djangosnippets TOS",
-            "LicenseRef-scancode-djangosnippets-tos",
-            "Djangosnippets Terms of Service"
+            "LicenseRef-scancode-djangosnippets-tos"
         ]
     },
     "rejected": [],

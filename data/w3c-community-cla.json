@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-w3c-community-cla",
             "W3C Community CLA",
-            "W3C Community Contributor License Agreement (CLA)",
-            "LicenseRef-scancode-w3c-community-cla"
+            "W3C Community Contributor License Agreement (CLA)"
         ]
     },
     "rejected": [],

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "T-License for TKSE",
+            "LicenseRef-scancode-t-license-tkse",
             "T-License for T-Kernel Standard Extension",
-            "LicenseRef-scancode-t-license-tkse"
+            "T-License for TKSE"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Psytec Free Software License",
-            "LicenseRef-scancode-psytec-freesoft"
+            "LicenseRef-scancode-psytec-freesoft",
+            "Psytec Free Software License"
         ]
     },
     "rejected": [],

@@ -7,7 +7,9 @@
         "spdx": [
             "BSD 4-Clause \"Original\" or \"Old\" License"
         ],
-        "custom": [],
+        "custom": [
+            "BSD 4-Clause 'Original' or 'Old' License"
+        ],
         "scancodeLicensedb": [
             "BSD-Original",
             "bsd-original"

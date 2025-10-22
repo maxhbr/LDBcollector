@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-windows-identity-foundation",
             "Microsoft Windows Identity Foundation License",
-            "MS Windows Identity Foundation License",
-            "LicenseRef-scancode-ms-windows-identity-foundation"
+            "MS Windows Identity Foundation License"
         ]
     },
     "rejected": [],

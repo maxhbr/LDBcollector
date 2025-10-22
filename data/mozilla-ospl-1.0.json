@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Mozilla Open Software Patent License 1.0",
             "LicenseRef-scancode-mozilla-ospl-1.0",
+            "Mozilla Open Software Patent License 1.0",
             "Mozilla Open Software Patent License Agreement v1"
         ]
     },

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "STLport License 2000",
-            "LicenseRef-scancode-stlport-2000"
+            "LicenseRef-scancode-stlport-2000",
+            "STLport License 2000"
         ]
     },
     "rejected": [],

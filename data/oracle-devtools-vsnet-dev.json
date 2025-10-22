@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oracle DevTools for Visual Studio .NET Development",
+            "LicenseRef-scancode-oracle-devtools-vsnet-dev",
             "Oracle Developer Tools for Visual Studio .NET Development License",
-            "LicenseRef-scancode-oracle-devtools-vsnet-dev"
+            "Oracle DevTools for Visual Studio .NET Development"
         ]
     },
     "rejected": [],

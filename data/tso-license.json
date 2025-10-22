@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Theodore Ts'o license",
-            "LicenseRef-scancode-tso-license"
+            "LicenseRef-scancode-tso-license",
+            "Theodore Ts'o license"
         ]
     },
     "rejected": [],

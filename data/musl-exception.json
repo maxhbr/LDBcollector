@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "musl attribution exception",
-            "LicenseRef-scancode-musl-exception"
+            "LicenseRef-scancode-musl-exception",
+            "musl attribution exception"
         ]
     },
     "rejected": [],

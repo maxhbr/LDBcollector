@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "siesta-academic-individuals",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-siesta-academic-individuals",
+            "Siesta Academic Licence for Individuals"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

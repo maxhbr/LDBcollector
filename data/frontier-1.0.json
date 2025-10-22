@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-frontier-1.0",
-            "Frontier Artistic License"
+            "Frontier Artistic License",
+            "LicenseRef-scancode-frontier-1.0"
         ]
     },
     "rejected": [],

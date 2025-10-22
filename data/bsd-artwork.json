@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "BSD Artwork License",
             "BSD Artwork",
+            "BSD Artwork License",
             "LicenseRef-scancode-bsd-artwork"
         ]
     },

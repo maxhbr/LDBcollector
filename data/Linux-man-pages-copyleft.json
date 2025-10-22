@@ -9,11 +9,11 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "verbatim-manual",
+            "LicenseRef-scancode-verbatim-manual",
             "Verbatim Copies",
             "Verbatim Copies Permission",
             "Verbatim-man-pages",
-            "LicenseRef-scancode-verbatim-manual"
+            "verbatim-manual"
         ]
     },
     "rejected": [],

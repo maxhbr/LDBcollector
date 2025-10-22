@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (Silicon Graphics)",
-            "LicenseRef-scancode-x11-sg"
+            "LicenseRef-scancode-x11-sg",
+            "X11-Style (Silicon Graphics)"
         ]
     },
     "rejected": [],

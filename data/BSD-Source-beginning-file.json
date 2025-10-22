@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "bsd-top",
             "BSD-Top",
+            "bsd-top",
             "LicenseRef-scancode-bsd-top"
         ]
     },

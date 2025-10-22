@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun RPC License",
-            "LicenseRef-scancode-sun-rpc"
+            "LicenseRef-scancode-sun-rpc",
+            "Sun RPC License"
         ]
     },
     "rejected": [],

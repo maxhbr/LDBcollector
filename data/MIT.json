@@ -8,33 +8,33 @@
             "MIT License"
         ],
         "custom": [
+            "bouncy-license",
+            "MIT (Open License)",
+            "MIT (Open Source)",
             "MIT License (MIT)",
-            "MIT Open Source License",
             "MIT License (Open Source)",
             "MIT Open License",
-            "MIT (Open Source)",
-            "MIT (Open License)",
-            "bouncy-license",
+            "MIT Open Source License",
             "mit-license",
             "mit-licensed",
             "MIT-like",
             "MIT-style"
         ],
         "osi": [
-            "MIT/Expat License",
-            "Expat"
+            "Expat",
+            "MIT/Expat License"
         ],
         "scancodeLicensedb": [
+            "LicenseRef-MIT-Bootstrap",
             "LicenseRef-MIT-Diehl",
             "LicenseRef-MIT-Discord",
-            "mit",
             "LicenseRef-MIT-TC",
-            "LicenseRef-MIT-Bootstrap"
+            "mit"
         ],
         "pypi": [
             "License :: MIT License",
-            "OSI Approved :: MIT License",
-            "License :: OSI Approved :: MIT License"
+            "License :: OSI Approved :: MIT License",
+            "OSI Approved :: MIT License"
         ]
     },
     "rejected": [],

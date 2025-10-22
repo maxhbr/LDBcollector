@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-baekmuk-fonts",
+            "Baekmuk Fonts License",
             "baekmuk-fonts",
-            "Baekmuk Fonts License"
+            "LicenseRef-scancode-baekmuk-fonts"
         ]
     },
     "rejected": [],

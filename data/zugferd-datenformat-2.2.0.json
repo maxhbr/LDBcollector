@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "zugferd-datenformat-2.2.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-zugferd-datenformat-2.2.0",
+            "ZUGFeRD Data Format v2.2.0 14.02.2022",
+            "ZUGFeRD Datenformat Version 2.2.0 14.02.2022"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

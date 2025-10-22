@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Qpopper License",
-            "LicenseRef-scancode-qpopper"
+            "LicenseRef-scancode-qpopper",
+            "Qpopper License"
         ]
     },
     "rejected": [],

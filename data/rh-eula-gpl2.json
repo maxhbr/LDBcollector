@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Red Hat GPLv2-Based EULA",
+            "LicenseRef-scancode-rh-eula-gpl2",
             "Red Hat GPLv2-Based End User License Agreement",
-            "LicenseRef-scancode-rh-eula-gpl2"
+            "Red Hat GPLv2-Based EULA"
         ]
     },
     "rejected": [],

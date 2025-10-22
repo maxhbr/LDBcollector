@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ParaView License 1.2",
-            "LicenseRef-scancode-paraview-1.2"
+            "LicenseRef-scancode-paraview-1.2",
+            "ParaView License 1.2"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NiH libzip License",
-            "libzip License"
+            "libzip License",
+            "NiH libzip License"
         ]
     },
     "rejected": [],

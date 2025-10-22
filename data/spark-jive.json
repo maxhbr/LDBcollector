@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Spark Jive License",
-            "LicenseRef-scancode-spark-jive"
+            "LicenseRef-scancode-spark-jive",
+            "Spark Jive License"
         ]
     },
     "rejected": [],

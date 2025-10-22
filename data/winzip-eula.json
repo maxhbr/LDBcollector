@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "WinZip EULA",
-            "LicenseRef-scancode-winzip-eula"
+            "LicenseRef-scancode-winzip-eula",
+            "WinZip EULA"
         ]
     },
     "rejected": [],

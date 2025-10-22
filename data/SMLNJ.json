@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "StandardML-NJ",
             "Standard ML of New Jersey",
-            "standard-ml-nj"
+            "standard-ml-nj",
+            "StandardML-NJ"
         ]
     },
     "rejected": [],

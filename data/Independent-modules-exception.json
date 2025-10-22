@@ -9,10 +9,10 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "independent-module-linking-exception",
             "Independent Module Linking Exception",
-            "LicenseRef-scancode-indie-module-linking-exception",
-            "LicenseRef-scancode-independent-module-linking-exception"
+            "independent-module-linking-exception",
+            "LicenseRef-scancode-independent-module-linking-exception",
+            "LicenseRef-scancode-indie-module-linking-exception"
         ]
     },
     "rejected": [],

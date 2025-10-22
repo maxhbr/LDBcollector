@@ -16,9 +16,9 @@
             "Sleepycat License (Berkeley Database License)"
         ],
         "pypi": [
+            "License :: OSI Approved :: Sleepycat License",
             "License :: Sleepycat License",
-            "OSI Approved :: Sleepycat License",
-            "License :: OSI Approved :: Sleepycat License"
+            "OSI Approved :: Sleepycat License"
         ]
     },
     "rejected": [],

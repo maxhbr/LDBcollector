@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "San Francisco Font License",
             "Apple San Francisco Font License",
-            "LicenseRef-scancode-san-francisco-font"
+            "LicenseRef-scancode-san-francisco-font",
+            "San Francisco Font License"
         ]
     },
     "rejected": [],

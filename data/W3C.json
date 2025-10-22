@@ -15,8 +15,8 @@
         ],
         "pypi-classifer": [
             "License :: OSI Approved :: W3C License",
-            "OSI Approved :: W3C License",
             "License :: W3C License",
+            "OSI Approved :: W3C License",
             "W3C License"
         ],
         "scancodeLicensedb": [

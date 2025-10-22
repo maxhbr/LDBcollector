@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "oxygen-xml-dev-eula-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oxygen-xml-dev-eula-2025",
+            "Oxygen XML Developer End User License Agreement 2025",
+            "Oxygen XML Developer EULA 2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

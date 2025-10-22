@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-invisible-eula-1.0",
             "Microsoft Invisible Computing EULA 1.0",
-            "MS Invisible Computing EULA 1.0",
-            "LicenseRef-scancode-ms-invisible-eula-1.0"
+            "MS Invisible Computing EULA 1.0"
         ]
     },
     "rejected": [],

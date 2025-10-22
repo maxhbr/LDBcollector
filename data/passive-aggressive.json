@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Passive-Aggressive License",
-            "LicenseRef-scancode-passive-aggressive"
+            "LicenseRef-scancode-passive-aggressive",
+            "Passive-Aggressive License"
         ]
     },
     "rejected": [],

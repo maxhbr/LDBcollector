@@ -12,20 +12,20 @@
             "Open Software License, Version 3.0"
         ],
         "scancodeLicensedb": [
-            "osl-3.0",
-            "OSL 3.0"
+            "OSL 3.0",
+            "osl-3.0"
         ],
         "pypi": [
-            "License :: OSI Approved :: Open Software License 3.0 (OSL-3.0)",
-            "OSI Approved :: Open Software License 3.0 (OSL-3.0)",
-            "License :: Open Software License 3.0 (OSL-3.0)",
-            "Open Software License 3.0 (OSL-3.0)",
-            "License :: OSI Approved :: Open Software License 3.0",
-            "OSI Approved :: Open Software License 3.0",
             "License :: Open Software License 3.0",
+            "License :: Open Software License 3.0 (OSL-3.0)",
+            "License :: OSI Approved :: Open Software License 3.0",
+            "License :: OSI Approved :: Open Software License 3.0 (OSL-3.0)",
             "License :: OSI Approved :: OSL-3.0",
-            "OSI Approved :: OSL-3.0",
-            "License :: OSL-3.0"
+            "License :: OSL-3.0",
+            "Open Software License 3.0 (OSL-3.0)",
+            "OSI Approved :: Open Software License 3.0",
+            "OSI Approved :: Open Software License 3.0 (OSL-3.0)",
+            "OSI Approved :: OSL-3.0"
         ]
     },
     "rejected": [],

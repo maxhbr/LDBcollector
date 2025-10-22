@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "HPND-SMC",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - SMC variant"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

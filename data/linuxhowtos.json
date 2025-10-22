@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "linuxhowtos License",
-            "LicenseRef-scancode-linuxhowtos"
+            "LicenseRef-scancode-linuxhowtos",
+            "linuxhowtos License"
         ]
     },
     "rejected": [],

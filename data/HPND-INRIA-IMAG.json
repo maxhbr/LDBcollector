@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "Historical - INRIA-IMAG variant",
             "Historical Permission Notice and Disclaimer - INRIA-IMAG variant",
-            "hpnd-inria-imag",
-            "Historical - INRIA-IMAG variant"
+            "hpnd-inria-imag"
         ]
     },
     "rejected": [],

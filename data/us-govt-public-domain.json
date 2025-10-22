@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-us-govt-public-domain",
             "United States Government Public Domain",
-            "US Government Public Domain",
-            "LicenseRef-scancode-us-govt-public-domain"
+            "US Government Public Domain"
         ]
     },
     "rejected": [],

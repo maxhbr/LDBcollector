@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "freertos-exception-2.0",
-            "FreeRTOS exception to GPL 2.0"
+            "FreeRTOS exception to GPL 2.0",
+            "freertos-exception-2.0"
         ]
     },
     "rejected": [],

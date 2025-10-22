@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-froala-owdl-1.0",
-            "Froala Open Web Design License"
+            "Froala Open Web Design License",
+            "LicenseRef-scancode-froala-owdl-1.0"
         ]
     },
     "rejected": [],

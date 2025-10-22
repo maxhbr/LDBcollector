@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "retype-3.7.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-retype-3.7.0",
+            "Retype Software License Agreement v3.7.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

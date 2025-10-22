@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Visual Numerics License",
-            "LicenseRef-scancode-visual-numerics"
+            "LicenseRef-scancode-visual-numerics",
+            "Visual Numerics License"
         ]
     },
     "rejected": [],

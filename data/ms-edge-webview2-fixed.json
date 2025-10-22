@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-edge-webview2-fixed",
             "Microsoft Edge WebView2 Runtime License (Fixed)",
-            "MS Edge WebView2 Runtime (Fixed)",
-            "LicenseRef-scancode-ms-edge-webview2-fixed"
+            "MS Edge WebView2 Runtime (Fixed)"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "mit-xfig",
             "LicenseRef-scancode-mit-xfig",
-            "MIT Xfig Variant"
+            "MIT Xfig Variant",
+            "mit-xfig"
         ]
     },
     "rejected": [],

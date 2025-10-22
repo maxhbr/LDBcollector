@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Qt License Agreement v4.4.1",
-            "LicenseRef-scancode-qt-commercial-agreement-4.4.1"
+            "LicenseRef-scancode-qt-commercial-agreement-4.4.1",
+            "Qt License Agreement v4.4.1"
         ]
     },
     "rejected": [],

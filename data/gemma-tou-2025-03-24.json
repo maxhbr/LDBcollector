@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "gemma-tou-2025-03-24",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Gemma Terms of Use 2025-03-24",
+            "Gemma ToU 2025-03-24",
+            "LicenseRef-scancode-gemma-tou-2025-03-24"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ADI BSD License",
             "ADI BSD",
+            "ADI BSD License",
             "LicenseRef-scancode-adi-bsd"
         ]
     },

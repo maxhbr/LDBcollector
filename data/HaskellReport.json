@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "haskell-report",
-            "Haskell Report License"
+            "Haskell Report License",
+            "haskell-report"
         ]
     },
     "rejected": [],

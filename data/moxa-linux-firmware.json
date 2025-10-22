@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Moxa Linux Firmware License",
-            "LicenseRef-scancode-moxa-linux-firmware"
+            "LicenseRef-scancode-moxa-linux-firmware",
+            "Moxa Linux Firmware License"
         ]
     },
     "rejected": [],

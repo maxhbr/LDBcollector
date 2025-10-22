@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-otn-dev-dist",
             "Oracle Technology Network Development and Distribution License Terms",
-            "OTN License",
-            "LicenseRef-scancode-otn-dev-dist"
+            "OTN License"
         ]
     },
     "rejected": [],

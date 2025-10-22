@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "The Happy Bunny License",
-            "LicenseRef-scancode-happy-bunny"
+            "LicenseRef-scancode-happy-bunny",
+            "The Happy Bunny License"
         ]
     },
     "rejected": [],

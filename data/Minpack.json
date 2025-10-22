@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Minpack Copyright Notice",
+            "LicenseRef-scancode-minpack",
             "minpack",
-            "LicenseRef-scancode-minpack"
+            "Minpack Copyright Notice"
         ]
     },
     "rejected": [],

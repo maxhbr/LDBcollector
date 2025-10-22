@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "hs-regexp",
-            "Henry Spencer Regexp License"
+            "Henry Spencer Regexp License",
+            "hs-regexp"
         ]
     },
     "rejected": [],

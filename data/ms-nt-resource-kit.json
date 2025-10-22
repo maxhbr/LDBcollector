@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-nt-resource-kit",
             "Microsoft NT Resource Kit License",
-            "MS NT Resource Kit License",
-            "LicenseRef-scancode-ms-nt-resource-kit"
+            "MS NT Resource Kit License"
         ]
     },
     "rejected": [],

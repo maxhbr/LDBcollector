@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Unknown License reference",
+            "LicenseRef-scancode-unknown-license-reference",
             "Unknown License file reference",
-            "LicenseRef-scancode-unknown-license-reference"
+            "Unknown License reference"
         ]
     },
     "rejected": [],

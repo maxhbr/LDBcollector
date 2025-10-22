@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "WTFNMFPL-1.0",
-            "LicenseRef-scancode-wtfnmfpl-1.0"
+            "LicenseRef-scancode-wtfnmfpl-1.0",
+            "WTFNMFPL-1.0"
         ]
     },
     "rejected": [],

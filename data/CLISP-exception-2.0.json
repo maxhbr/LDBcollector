@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "clisp-exception-2.0",
-            "CLISP Exception to GPL 2.0"
+            "CLISP Exception to GPL 2.0",
+            "clisp-exception-2.0"
         ]
     },
     "rejected": [],

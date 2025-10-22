@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-office-system-programs-eula",
             "Microsoft Office System Programs Software EULA",
-            "MS Office System Programs Software EULA",
-            "LicenseRef-scancode-ms-office-system-programs-eula"
+            "MS Office System Programs Software EULA"
         ]
     },
     "rejected": [],

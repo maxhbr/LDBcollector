@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NVIDIA ISAAC EULA v2019.1",
-            "LicenseRef-scancode-nvidia-isaac-eula-2019.1"
+            "LicenseRef-scancode-nvidia-isaac-eula-2019.1",
+            "NVIDIA ISAAC EULA v2019.1"
         ]
     },
     "rejected": [],

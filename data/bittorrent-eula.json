@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "BitTorrent EULA",
             "BitTorrent End User License Agreement (EULA)",
+            "BitTorrent EULA",
             "LicenseRef-scancode-bittorrent-eula"
         ]
     },

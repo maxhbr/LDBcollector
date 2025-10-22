@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "PyCrypto License",
-            "LicenseRef-scancode-pycrypto"
+            "LicenseRef-scancode-pycrypto",
+            "PyCrypto License"
         ]
     },
     "rejected": [],

@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "autoconf-exception-3.0",
-            "Autoconf exception to GPL 3.0"
+            "Autoconf exception to GPL 3.0",
+            "autoconf-exception-3.0"
         ]
     },
     "rejected": [],

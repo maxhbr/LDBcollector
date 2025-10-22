@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Yahoo BrowserPlus EULA",
+            "LicenseRef-scancode-yahoo-browserplus-eula",
             "Yahoo BrowserPlus End User License",
-            "LicenseRef-scancode-yahoo-browserplus-eula"
+            "Yahoo BrowserPlus EULA"
         ]
     },
     "rejected": [],

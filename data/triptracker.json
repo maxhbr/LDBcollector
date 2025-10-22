@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TripTracker Slideshow License",
+            "LicenseRef-scancode-triptracker",
             "TripTracker License",
-            "LicenseRef-scancode-triptracker"
+            "TripTracker Slideshow License"
         ]
     },
     "rejected": [],

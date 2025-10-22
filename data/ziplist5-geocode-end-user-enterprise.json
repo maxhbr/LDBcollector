@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ZIPList5 Geocode End-User Enterprise License",
             "LicenseRef-scancode-ziplist5-geocode-end-user-enterprise",
-            "ZIPList5 Geocode End-User Enterprise License Agreement",
-            "LicenseRef-scancode-ziplist5-geocode-enterprise"
+            "LicenseRef-scancode-ziplist5-geocode-enterprise",
+            "ZIPList5 Geocode End-User Enterprise License",
+            "ZIPList5 Geocode End-User Enterprise License Agreement"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-hdparm",
+            "hdparm",
             "HDPARM License",
-            "hdparm"
+            "LicenseRef-scancode-hdparm"
         ]
     },
     "rejected": [],

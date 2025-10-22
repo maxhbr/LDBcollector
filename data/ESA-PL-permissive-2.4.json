@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "ESA-PL-permissive-2.4",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "European Space Agency Public License \u2013 v2.4 \u2013 Permissive (Type 3)"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

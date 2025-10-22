@@ -7,7 +7,10 @@
         "spdx": [
             "BSD 2-Clause pkgconf disclaimer variant"
         ],
-        "custom": []
+        "custom": [],
+        "scancodeLicensedb": [
+            "bsd-2-clause-pkgconf-disclaimer"
+        ]
     },
     "rejected": [],
     "risky": []

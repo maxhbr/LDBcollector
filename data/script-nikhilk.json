@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Script# License",
-            "LicenseRef-scancode-script-nikhilk"
+            "LicenseRef-scancode-script-nikhilk",
+            "Script# License"
         ]
     },
     "rejected": [],

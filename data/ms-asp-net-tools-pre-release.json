@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS ASP.NET Tools Pre-Release License",
+            "LicenseRef-scancode-ms-asp-net-tools-pre-release",
             "Microsoft ASP.NET Tools Pre-Release License",
-            "LicenseRef-scancode-ms-asp-net-tools-pre-release"
+            "MS ASP.NET Tools Pre-Release License"
         ]
     },
     "rejected": [],

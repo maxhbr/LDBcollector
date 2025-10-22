@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "vhfPL 1.1",
+            "LicenseRef-scancode-vhfpl-1.1",
             "vhf Public License V 1.1",
-            "LicenseRef-scancode-vhfpl-1.1"
+            "vhfPL 1.1"
         ]
     },
     "rejected": [],

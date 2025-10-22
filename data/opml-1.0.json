@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OPML Specification License 1.0",
+            "LicenseRef-scancode-opml-1.0",
             "OPML 1.0",
-            "LicenseRef-scancode-opml-1.0"
+            "OPML Specification License 1.0"
         ]
     },
     "rejected": [],

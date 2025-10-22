@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "COSLi",
             "Civilian Open Source License",
+            "COSLi",
             "LicenseRef-scancode-cosli"
         ]
     },

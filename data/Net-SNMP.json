@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "net-snmp",
+            "LicenseRef-scancode-net-snmp",
             "Net SNMP License",
-            "LicenseRef-scancode-net-snmp"
+            "net-snmp"
         ]
     },
     "rejected": [],

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-opus-patent-2012",
             "Microsoft Opus Patent Terms 2012",
-            "MS Opus Patent Terms 2012",
-            "LicenseRef-scancode-ms-opus-patent-2012"
+            "MS Opus Patent Terms 2012"
         ]
     },
     "rejected": [],

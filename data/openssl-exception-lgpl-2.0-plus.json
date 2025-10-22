@@ -7,8 +7,8 @@
         "custom": [],
         "scancodeLicensedb": [
             "LicenseRef-scancode-openssl-exception-lgpl-2.0-plus",
-            "OpenSSL exception to LGPL 2.0 or later",
-            "LicenseRef-scancode-openssl-exception-lgpl2.0plus"
+            "LicenseRef-scancode-openssl-exception-lgpl2.0plus",
+            "OpenSSL exception to LGPL 2.0 or later"
         ]
     },
     "rejected": [],

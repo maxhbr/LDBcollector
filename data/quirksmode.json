@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Quirksmode Copyright Notice",
-            "LicenseRef-scancode-quirksmode"
+            "LicenseRef-scancode-quirksmode",
+            "Quirksmode Copyright Notice"
         ]
     },
     "rejected": [],

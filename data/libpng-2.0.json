@@ -11,8 +11,8 @@
     },
     "rejected": [],
     "risky": [
-        "libpng-v2",
         "LIbpng License v2",
+        "libpng-v2",
         "PNG Reference Library License version 2"
     ],
     "isMajorVersionOnly": true

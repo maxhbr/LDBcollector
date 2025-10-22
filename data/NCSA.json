@@ -12,13 +12,13 @@
             "The University of Illinois/NCSA Open Source License"
         ],
         "scancodeLicensedb": [
-            "uoi-ncsa",
-            "NCSA Open Source License"
+            "NCSA Open Source License",
+            "uoi-ncsa"
         ],
         "pypi": [
+            "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
             "License :: University of Illinois/NCSA Open Source License",
-            "OSI Approved :: University of Illinois/NCSA Open Source License",
-            "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
+            "OSI Approved :: University of Illinois/NCSA Open Source License"
         ]
     },
     "rejected": [],

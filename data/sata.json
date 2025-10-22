@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Star And Thank Author License",
+            "LicenseRef-scancode-sata",
             "SATA License",
-            "LicenseRef-scancode-sata"
+            "Star And Thank Author License"
         ]
     },
     "rejected": [],

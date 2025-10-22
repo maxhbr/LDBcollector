@@ -10,8 +10,8 @@
         "custom": [],
         "scancodeLicensedb": [
             "Kevlin Henney License",
-            "LicenseRef-scancode-kevlin-henney",
-            "kevlin-henney"
+            "kevlin-henney",
+            "LicenseRef-scancode-kevlin-henney"
         ]
     },
     "rejected": [],

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-x11-xconsortium-veillard",
             "LicenseRef-scancode-x11-xconsortium_veillard",
-            "X11-Style (X Consortium Veillard)",
-            "LicenseRef-scancode-x11-xconsortium-veillard"
+            "X11-Style (X Consortium Veillard)"
         ]
     },
     "rejected": [],

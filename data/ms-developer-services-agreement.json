@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Microsoft Developer Services Agreement",
-            "MS Developer Services Agreement",
+            "LicenseRef-scancode-ms-dev-services-agreement",
             "LicenseRef-scancode-ms-developer-services-agreement",
-            "LicenseRef-scancode-ms-dev-services-agreement"
+            "Microsoft Developer Services Agreement",
+            "MS Developer Services Agreement"
         ]
     },
     "rejected": [],

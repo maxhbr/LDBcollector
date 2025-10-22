@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oracle Master Agreement (OMA)",
-            "LicenseRef-scancode-oracle-master-agreement"
+            "LicenseRef-scancode-oracle-master-agreement",
+            "Oracle Master Agreement (OMA)"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Phaser Commercial EULA (CCP4)",
-            "LicenseRef-scancode-phaser-ccp4"
+            "LicenseRef-scancode-phaser-ccp4",
+            "Phaser Commercial EULA (CCP4)"
         ]
     },
     "rejected": [],

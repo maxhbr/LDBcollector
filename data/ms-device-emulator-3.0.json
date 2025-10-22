@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-device-emulator-3.0",
             "Microsoft Device Emulator 3.0",
-            "MS Device Emulator 3.0",
-            "LicenseRef-scancode-ms-device-emulator-3.0"
+            "MS Device Emulator 3.0"
         ]
     },
     "rejected": [],

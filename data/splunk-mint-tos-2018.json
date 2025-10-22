@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-splunk-mint-tos-2018",
             "Splunk MINT Terms of Service 2018",
-            "Splunk MINT TOS 2018",
-            "LicenseRef-scancode-splunk-mint-tos-2018"
+            "Splunk MINT TOS 2018"
         ]
     },
     "rejected": [],

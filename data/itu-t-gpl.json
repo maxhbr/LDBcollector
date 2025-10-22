@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ITU-T Software Tools General Public License",
             "ITU-T General Public License",
+            "ITU-T Software Tools General Public License",
             "LicenseRef-scancode-itu-t-gpl"
         ]
     },

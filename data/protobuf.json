@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Protobuf License",
-            "LicenseRef-scancode-protobuf"
+            "LicenseRef-scancode-protobuf",
+            "Protobuf License"
         ]
     },
     "rejected": [],

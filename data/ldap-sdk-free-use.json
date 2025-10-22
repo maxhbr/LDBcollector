@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "UnboundID LDAP SDK Free Use License",
-            "LicenseRef-scancode-ldap-sdk-free-use"
+            "LicenseRef-scancode-ldap-sdk-free-use",
+            "UnboundID LDAP SDK Free Use License"
         ]
     },
     "rejected": [],

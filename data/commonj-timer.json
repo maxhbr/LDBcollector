@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "CommonJ Timer License",
             "CommonJ Timer and Work Manager License",
+            "CommonJ Timer License",
             "LicenseRef-scancode-commonj-timer"
         ]
     },

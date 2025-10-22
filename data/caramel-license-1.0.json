@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-caramel-1.0",
             "Caramel License 1.0",
-            "Caramel Software License 1.0"
+            "Caramel Software License 1.0",
+            "LicenseRef-scancode-caramel-1.0"
         ]
     },
     "rejected": [],

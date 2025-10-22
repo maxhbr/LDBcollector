@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Westhawk License",
-            "LicenseRef-scancode-westhawk"
+            "LicenseRef-scancode-westhawk",
+            "Westhawk License"
         ]
     },
     "rejected": [],

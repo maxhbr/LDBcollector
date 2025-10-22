@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS DirectX SDK EULA 2020",
+            "LicenseRef-scancode-ms-directx-sdk-eula-2020",
             "Microsoft DirectX SDK EULA 2020",
-            "LicenseRef-scancode-ms-directx-sdk-eula-2020"
+            "MS DirectX SDK EULA 2020"
         ]
     },
     "rejected": [],

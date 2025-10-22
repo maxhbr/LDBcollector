@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "PCRE License",
-            "LicenseRef-scancode-pcre"
+            "LicenseRef-scancode-pcre",
+            "PCRE License"
         ]
     },
     "rejected": [],

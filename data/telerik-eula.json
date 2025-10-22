@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Telerik EULA",
-            "LicenseRef-scancode-telerik-eula"
+            "LicenseRef-scancode-telerik-eula",
+            "Telerik EULA"
         ]
     },
     "rejected": [],

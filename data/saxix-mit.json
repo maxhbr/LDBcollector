@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Stefano Apostolico MIT License",
-            "LicenseRef-scancode-saxix-mit"
+            "LicenseRef-scancode-saxix-mit",
+            "Stefano Apostolico MIT License"
         ]
     },
     "rejected": [],

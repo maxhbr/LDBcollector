@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "flowcrypt-1.2",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "FlowCrypt License 1.2",
+            "LicenseRef-scancode-flowcrypt-1.2"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
+}

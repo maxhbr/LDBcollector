@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Supervisor License",
-            "LicenseRef-scancode-supervisor"
+            "LicenseRef-scancode-supervisor",
+            "Supervisor License"
         ]
     },
     "rejected": [],

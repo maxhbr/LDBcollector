@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-phaser-academic",
             "Phaser Academic EULA",
-            "Phaser Academic Non-Commercial EULA",
-            "LicenseRef-scancode-phaser-academic"
+            "Phaser Academic Non-Commercial EULA"
         ]
     },
     "rejected": [],

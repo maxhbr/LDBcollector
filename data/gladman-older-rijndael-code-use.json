@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-gladman-older-rijndael-code-use",
             "Gladman Older Rigndael Code Use",
-            "LicenseRef-scancode-gladman-older-rijndael-code"
+            "LicenseRef-scancode-gladman-older-rijndael-code",
+            "LicenseRef-scancode-gladman-older-rijndael-code-use"
         ]
     },
     "rejected": [],

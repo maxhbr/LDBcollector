@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "WS-Addressing Specification License",
-            "LicenseRef-scancode-ws-addressing-spec"
+            "LicenseRef-scancode-ws-addressing-spec",
+            "WS-Addressing Specification License"
         ]
     },
     "rejected": [],

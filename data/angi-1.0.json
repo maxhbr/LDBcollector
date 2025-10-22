@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "angi-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Acki Nacki Gossip Igniter License 1.0",
+            "ANGI 1.0",
+            "LicenseRef-scancode-angi-1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Zipeg License",
-            "LicenseRef-scancode-zipeg"
+            "LicenseRef-scancode-zipeg",
+            "Zipeg License"
         ]
     },
     "rejected": [],

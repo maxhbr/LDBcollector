@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "zsh License",
+            "LicenseRef-scancode-zsh",
             "Z Shell License",
-            "LicenseRef-scancode-zsh"
+            "zsh License"
         ]
     },
     "rejected": [],

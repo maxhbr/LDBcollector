@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "flux-1-nc",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "FLUX.1 [dev] Non-Commercial License",
+            "LicenseRef-scancode-flux-1-nc"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

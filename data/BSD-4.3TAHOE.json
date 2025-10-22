@@ -11,10 +11,10 @@
     },
     "rejected": [],
     "risky": [
-        "bsla",
+        "Berkeley Software License Agreement",
         "BSLA",
-        "LicenseRef-scancode-bsla",
-        "Berkeley Software License Agreement"
+        "bsla",
+        "LicenseRef-scancode-bsla"
     ],
     "isMajorVersionOnly": true
 }

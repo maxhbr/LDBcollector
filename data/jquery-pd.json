@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "jQuery-Tools-PD",
             "jQuery Tools Public Domain License",
+            "jQuery-Tools-PD",
             "LicenseRef-scancode-jquery-pd"
         ]
     },

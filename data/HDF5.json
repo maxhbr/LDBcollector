@@ -9,9 +9,9 @@
             "HDF5 License"
         ],
         "scancodeLicensedb": [
+            "hdf5",
             "HDF5License",
-            "LicenseRef-scancode-hdf5",
-            "hdf5"
+            "LicenseRef-scancode-hdf5"
         ]
     },
     "rejected": [],

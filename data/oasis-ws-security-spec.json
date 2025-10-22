@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oasis WS Security Specification License",
-            "LicenseRef-scancode-oasis-ws-security-spec"
+            "LicenseRef-scancode-oasis-ws-security-spec",
+            "Oasis WS Security Specification License"
         ]
     },
     "rejected": [],

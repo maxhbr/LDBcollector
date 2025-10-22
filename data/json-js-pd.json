@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "JSON-js-PD",
             "JSON-js Public Domain Notice",
+            "JSON-js-PD",
             "LicenseRef-scancode-json-js-pd"
         ]
     },

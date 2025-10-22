@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-do-no-harm-0.1",
-            "Do No Harm"
+            "Do No Harm",
+            "LicenseRef-scancode-do-no-harm-0.1"
         ]
     },
     "rejected": [],

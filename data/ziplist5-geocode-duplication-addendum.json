@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ZIPList5 Geocode Duplication Addendum",
+            "LicenseRef-scancode-ziplist5-geocode-dup-addendum",
             "LicenseRef-scancode-ziplist5-geocode-duplication-addendum",
-            "ZIPList5 Geocode Duplication License Addendum",
-            "LicenseRef-scancode-ziplist5-geocode-dup-addendum"
+            "ZIPList5 Geocode Duplication Addendum",
+            "ZIPList5 Geocode Duplication License Addendum"
         ]
     },
     "rejected": [],

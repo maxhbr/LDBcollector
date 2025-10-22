@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Netron Project License",
-            "LicenseRef-scancode-netron"
+            "LicenseRef-scancode-netron",
+            "Netron Project License"
         ]
     },
     "rejected": [],

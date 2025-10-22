@@ -13,9 +13,9 @@
             "attribution"
         ],
         "pypi": [
+            "License :: Attribution Assurance License",
             "License :: OSI Approved :: Attribution Assurance License",
-            "OSI Approved :: Attribution Assurance License",
-            "License :: Attribution Assurance License"
+            "OSI Approved :: Attribution Assurance License"
         ]
     },
     "rejected": [],

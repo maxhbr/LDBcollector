@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "PD'Programming License",
-            "LicenseRef-scancode-pd-programming"
+            "LicenseRef-scancode-pd-programming",
+            "PD'Programming License"
         ]
     },
     "rejected": [],

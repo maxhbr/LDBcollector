@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (David R. Hanson)",
-            "LicenseRef-scancode-x11-hanson"
+            "LicenseRef-scancode-x11-hanson",
+            "X11-Style (David R. Hanson)"
         ]
     },
     "rejected": [],

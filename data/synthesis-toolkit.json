@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Synthesis Toolkit License",
-            "LicenseRef-scancode-synthesis-toolkit"
+            "LicenseRef-scancode-synthesis-toolkit",
+            "Synthesis Toolkit License"
         ]
     },
     "rejected": [],

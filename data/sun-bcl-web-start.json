@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun BCL Web Start",
-            "LicenseRef-scancode-sun-bcl-web-start"
+            "LicenseRef-scancode-sun-bcl-web-start",
+            "Sun BCL Web Start"
         ]
     },
     "rejected": [],

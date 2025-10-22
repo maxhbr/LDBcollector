@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Rackspace License",
-            "LicenseRef-scancode-rackspace"
+            "LicenseRef-scancode-rackspace",
+            "Rackspace License"
         ]
     },
     "rejected": [],

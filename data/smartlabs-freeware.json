@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SmartLabs Freeware License",
-            "LicenseRef-scancode-smartlabs-freeware"
+            "LicenseRef-scancode-smartlabs-freeware",
+            "SmartLabs Freeware License"
         ]
     },
     "rejected": [],

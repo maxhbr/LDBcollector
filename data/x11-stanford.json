@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (Stanford University)",
-            "LicenseRef-scancode-x11-stanford"
+            "LicenseRef-scancode-x11-stanford",
+            "X11-Style (Stanford University)"
         ]
     },
     "rejected": [],

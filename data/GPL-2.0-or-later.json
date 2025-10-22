@@ -10,24 +10,24 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "gpl-2.0-plus",
             "GNU General Public License 2.0 or later",
+            "GPL 2.0 or later",
             "GPL 2.0+",
-            "GPL 2.0 or later"
+            "gpl-2.0-plus"
         ],
         "pypi": [
-            "GPLv2+",
-            "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
-            "GNU General Public License v2 or later (GPLv2+)",
-            "OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
-            "License :: GNU General Public License v2 or later (GPLv2+)",
-            "License :: OSI Approved :: GNU General Public License v2 or later",
-            "OSI Approved :: GNU General Public License v2 or later",
-            "License :: GNU General Public License v2 or later",
             "GNU General Public License v2 or later",
+            "GNU General Public License v2 or later (GPLv2+)",
+            "GPLv2+",
+            "License :: GNU General Public License v2 or later",
+            "License :: GNU General Public License v2 or later (GPLv2+)",
+            "License :: GPLv2+",
+            "License :: OSI Approved :: GNU General Public License v2 or later",
+            "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
             "License :: OSI Approved :: GPLv2+",
-            "OSI Approved :: GPLv2+",
-            "License :: GPLv2+"
+            "OSI Approved :: GNU General Public License v2 or later",
+            "OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
+            "OSI Approved :: GPLv2+"
         ]
     },
     "rejected": [],

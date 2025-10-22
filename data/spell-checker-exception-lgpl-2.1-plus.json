@@ -7,8 +7,8 @@
         "custom": [],
         "scancodeLicensedb": [
             "LicenseRef-scancode-spell-checker-exception-lgpl-2.1-plus",
-            "Spell-Checker exception to LGPL 2.1 or later",
-            "LicenseRef-scancode-spell-exception-lgpl-2.1-plus"
+            "LicenseRef-scancode-spell-exception-lgpl-2.1-plus",
+            "Spell-Checker exception to LGPL 2.1 or later"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Tumbolia Public License",
-            "LicenseRef-scancode-tumbolia"
+            "LicenseRef-scancode-tumbolia",
+            "Tumbolia Public License"
         ]
     },
     "rejected": [],

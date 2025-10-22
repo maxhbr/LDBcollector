@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "DCO 1.0",
             "Developer Certificate of Origin 1.0",
-            "LicenseRef-scancode-dco-1.0",
-            "DCO 1.0"
+            "LicenseRef-scancode-dco-1.0"
         ]
     },
     "rejected": [],

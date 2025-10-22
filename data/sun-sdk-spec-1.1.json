@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun SDK Specification 1.1",
-            "LicenseRef-scancode-sun-sdk-spec-1.1"
+            "LicenseRef-scancode-sun-sdk-spec-1.1",
+            "Sun SDK Specification 1.1"
         ]
     },
     "rejected": [],

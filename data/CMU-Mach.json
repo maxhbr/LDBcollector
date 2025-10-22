@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "carnegie-mellon-contributors",
             "Carnegie Mellon Contributors",
             "Carnegie Mellon Contributors License",
+            "carnegie-mellon-contributors",
             "LicenseRef-scancode-carnegie-mellon-contributors"
         ]
     },

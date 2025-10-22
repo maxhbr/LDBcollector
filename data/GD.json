@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-libgd-2018",
+            "libgd License 2018",
             "libgd-2018",
-            "libgd License 2018"
+            "LicenseRef-scancode-libgd-2018"
         ]
     },
     "rejected": [],

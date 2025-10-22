@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (Quarterdeck)",
-            "LicenseRef-scancode-x11-quarterdeck"
+            "LicenseRef-scancode-x11-quarterdeck",
+            "X11-Style (Quarterdeck)"
         ]
     },
     "rejected": [],

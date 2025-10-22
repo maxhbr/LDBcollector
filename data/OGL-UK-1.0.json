@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "U.K. Open Government License for Public Sector Information v1.0",
             "OGL-UK-1.0",
-            "ogl-uk-1.0"
+            "ogl-uk-1.0",
+            "U.K. Open Government License for Public Sector Information v1.0"
         ]
     },
     "rejected": [],

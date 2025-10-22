@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Wink License",
-            "LicenseRef-scancode-wink"
+            "LicenseRef-scancode-wink",
+            "Wink License"
         ]
     },
     "rejected": [],

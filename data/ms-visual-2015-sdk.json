@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-visual-2015-sdk",
             "Microsoft Visual Studio 2015 Software Development Kit License",
-            "MS Visual Studio 2015 SDK",
-            "LicenseRef-scancode-ms-visual-2015-sdk"
+            "MS Visual Studio 2015 SDK"
         ]
     },
     "rejected": [],

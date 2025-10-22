@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TPL 2.0",
+            "LicenseRef-scancode-tpl-2.0",
             "Terracotta Public License 2.0",
-            "LicenseRef-scancode-tpl-2.0"
+            "TPL 2.0"
         ]
     },
     "rejected": [],

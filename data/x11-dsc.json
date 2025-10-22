@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (DSC Technologies)",
-            "LicenseRef-scancode-x11-dsc"
+            "LicenseRef-scancode-x11-dsc",
+            "X11-Style (DSC Technologies)"
         ]
     },
     "rejected": [],

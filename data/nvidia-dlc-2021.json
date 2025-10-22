@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NVIDIA Deep Learning Container License 2021",
-            "LicenseRef-scancode-nvidia-dlc-2021"
+            "LicenseRef-scancode-nvidia-dlc-2021",
+            "NVIDIA Deep Learning Container License 2021"
         ]
     },
     "rejected": [],

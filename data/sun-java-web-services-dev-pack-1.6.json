@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun Java Web Services Developer Pack 1.6",
+            "LicenseRef-scancode-sun-java-web-services-dev-1.6",
             "LicenseRef-scancode-sun-java-web-services-dev-pack-1.6",
-            "LicenseRef-scancode-sun-java-web-services-dev-1.6"
+            "Sun Java Web Services Developer Pack 1.6"
         ]
     },
     "rejected": [],

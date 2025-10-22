@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-nuget",
             "Microsoft Nuget License",
-            "MS Nuget",
-            "LicenseRef-scancode-ms-nuget"
+            "MS Nuget"
         ]
     },
     "rejected": [],

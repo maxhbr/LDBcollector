@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-symphonysoft",
             "Symphonysoft",
-            "Symphonysoft License",
-            "LicenseRef-scancode-symphonysoft"
+            "Symphonysoft License"
         ]
     },
     "rejected": [],

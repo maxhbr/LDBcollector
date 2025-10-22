@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-crapl-0.1",
-            "CRAPL v0 BETA 1"
+            "CRAPL v0 BETA 1",
+            "LicenseRef-scancode-crapl-0.1"
         ]
     },
     "rejected": [],

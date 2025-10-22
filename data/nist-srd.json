@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-nist-srd",
             "NIST SRD License",
-            "NIST Standard Reference Data License",
-            "LicenseRef-scancode-nist-srd"
+            "NIST Standard Reference Data License"
         ]
     },
     "rejected": [],

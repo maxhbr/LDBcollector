@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "softsurfer",
-            "LicenseRef-scancode-softsurfer"
+            "LicenseRef-scancode-softsurfer",
+            "softsurfer"
         ]
     },
     "rejected": [],

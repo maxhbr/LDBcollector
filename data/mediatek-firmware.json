@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MediaTek Firmware License",
-            "LicenseRef-scancode-mediatek-firmware"
+            "LicenseRef-scancode-mediatek-firmware",
+            "MediaTek Firmware License"
         ]
     },
     "rejected": [],

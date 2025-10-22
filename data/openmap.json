@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OpenMap Software License Agreement",
-            "LicenseRef-scancode-openmap"
+            "LicenseRef-scancode-openmap",
+            "OpenMap Software License Agreement"
         ]
     },
     "rejected": [],

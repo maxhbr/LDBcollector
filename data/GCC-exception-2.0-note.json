@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "gcc-exception-2.0-note",
-            "GCC Runtime Library exception 2.0 - note variant"
+            "GCC Runtime Library exception 2.0 - note variant",
+            "gcc-exception-2.0-note"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-x11-opengroup",
             "x11-opengroup",
-            "X11-Style (Open Group)",
-            "LicenseRef-scancode-x11-opengroup"
+            "X11-Style (Open Group)"
         ]
     },
     "rejected": [],

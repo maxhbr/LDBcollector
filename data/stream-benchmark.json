@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "STREAM Benchmark License",
-            "LicenseRef-scancode-stream-benchmark"
+            "LicenseRef-scancode-stream-benchmark",
+            "STREAM Benchmark License"
         ]
     },
     "rejected": [],

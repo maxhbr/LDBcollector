@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LLGPL",
-            "Lisp Lesser General Public License (LLPGL)",
             "LicenseRef-scancode-llgpl",
+            "Lisp Lesser General Public License (LLPGL)",
+            "LLGPL",
             "llgpl"
         ]
     },

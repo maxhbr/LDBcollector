@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "kicad-libraries-exception",
-            "KiCad Libraries Exception to CC-BY-SA-4.0"
+            "KiCad Libraries Exception to CC-BY-SA-4.0",
+            "kicad-libraries-exception"
         ]
     },
     "rejected": [],

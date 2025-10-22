@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "W3C 3-Clause BSD License",
-            "LicenseRef-scancode-w3c-03-bsd-license"
+            "LicenseRef-scancode-w3c-03-bsd-license",
+            "W3C 3-Clause BSD License"
         ]
     },
     "rejected": [],

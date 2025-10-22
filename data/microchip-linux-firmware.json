@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Microchip Linux Firmware License",
-            "LicenseRef-scancode-microchip-linux-firmware"
+            "LicenseRef-scancode-microchip-linux-firmware",
+            "Microchip Linux Firmware License"
         ]
     },
     "rejected": [],

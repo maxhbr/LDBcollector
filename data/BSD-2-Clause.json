@@ -9,15 +9,16 @@
         ],
         "custom": [
             "BSD 2-Clause",
+            "BSD 2-Clause 'Simplified' License",
             "BSD 2-Clause License",
             "BSD 2-Clause Simplified",
             "BSD 2-Clause Simplified License",
-            "The BSD 2-Clause License",
-            "BSD2"
+            "BSD2",
+            "The BSD 2-Clause License"
         ],
         "osi": [
-            "Simplified BSD License",
-            "FreeBSD License"
+            "FreeBSD License",
+            "Simplified BSD License"
         ],
         "scancodeLicensedb": [
             "BSD-2",

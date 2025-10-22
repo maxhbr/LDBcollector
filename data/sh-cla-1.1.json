@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-sh-cla-1.1",
             "Software Heritage CLA 1.1",
-            "Software Heritage Contributor License Agreement 1.1",
-            "LicenseRef-scancode-sh-cla-1.1"
+            "Software Heritage Contributor License Agreement 1.1"
         ]
     },
     "rejected": [],

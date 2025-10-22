@@ -18,10 +18,10 @@
             "cpl-1.0"
         ],
         "pypi": [
-            "License :: OSI Approved :: Common Public License",
-            "OSI Approved :: Common Public License",
+            "Common Public License",
             "License :: Common Public License",
-            "Common Public License"
+            "License :: OSI Approved :: Common Public License",
+            "OSI Approved :: Common Public License"
         ]
     },
     "rejected": [],

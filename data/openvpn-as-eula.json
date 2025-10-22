@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-openvpn-as-eula",
             "OpenVPN Access Server EULA",
-            "OpenVPN-AS EULA",
-            "LicenseRef-scancode-openvpn-as-eula"
+            "OpenVPN-AS EULA"
         ]
     },
     "rejected": [],

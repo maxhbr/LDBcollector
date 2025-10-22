@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "UnRar License",
-            "LicenseRef-scancode-unrar"
+            "LicenseRef-scancode-unrar",
+            "UnRar License"
         ]
     },
     "rejected": [],

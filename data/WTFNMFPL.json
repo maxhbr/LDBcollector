@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "WTFNMFPL",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Do What The F*ck You Want To But It's Not My Fault Public License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "RTools.Util License",
-            "LicenseRef-scancode-rtools-util"
+            "LicenseRef-scancode-rtools-util",
+            "RTools.Util License"
         ]
     },
     "rejected": [],

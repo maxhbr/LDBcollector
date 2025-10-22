@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun source code License",
-            "LicenseRef-scancode-sun-source"
+            "LicenseRef-scancode-sun-source",
+            "Sun source code License"
         ]
     },
     "rejected": [],

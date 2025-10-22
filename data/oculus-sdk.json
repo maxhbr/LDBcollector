@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oculus SDK License Agreement",
-            "LicenseRef-scancode-oculus-sdk"
+            "LicenseRef-scancode-oculus-sdk",
+            "Oculus SDK License Agreement"
         ]
     },
     "rejected": [],

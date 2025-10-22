@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-michigan-disclaimer",
             "University of Michigan Open Source License",
-            "University of Michigan OSL",
-            "LicenseRef-scancode-michigan-disclaimer"
+            "University of Michigan OSL"
         ]
     },
     "rejected": [],

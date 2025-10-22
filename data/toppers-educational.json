@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-toppers-educational",
             "TOPPERS Educational",
-            "TOPPERS Educational contents license agreement",
-            "LicenseRef-scancode-toppers-educational"
+            "TOPPERS Educational contents license agreement"
         ]
     },
     "rejected": [],

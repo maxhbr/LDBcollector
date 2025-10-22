@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Nmap NPSL Exception 0.95",
-            "LicenseRef-scancode-npsl-exception-0.95"
+            "LicenseRef-scancode-npsl-exception-0.95",
+            "Nmap NPSL Exception 0.95"
         ]
     },
     "rejected": [],

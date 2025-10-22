@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Original SSLeay License",
-            "LicenseRef-scancode-ssleay"
+            "LicenseRef-scancode-ssleay",
+            "Original SSLeay License"
         ]
     },
     "rejected": [],

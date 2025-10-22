@@ -10,9 +10,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "GNU Free Documentation License v1.1",
             "GFDL 1.1",
-            "gfdl-1.1"
+            "gfdl-1.1",
+            "GNU Free Documentation License v1.1"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-bigelow-holmes",
             "Bigelow & Holmes Lucida Fonts License",
-            "bigelow-holmes"
+            "bigelow-holmes",
+            "LicenseRef-scancode-bigelow-holmes"
         ]
     },
     "rejected": [],

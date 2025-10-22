@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OpenSSL exception to AGPL 3.0 or later",
             "LicenseRef-scancode-openssl-exception-agpl-3.0-plus",
-            "LicenseRef-scancode-openssl-exception-agpl3.0plus"
+            "LicenseRef-scancode-openssl-exception-agpl3.0plus",
+            "OpenSSL exception to AGPL 3.0 or later"
         ]
     },
     "rejected": [],

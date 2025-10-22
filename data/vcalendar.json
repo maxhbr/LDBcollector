@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "VCalendar License",
-            "LicenseRef-scancode-vcalendar"
+            "LicenseRef-scancode-vcalendar",
+            "VCalendar License"
         ]
     },
     "rejected": [],

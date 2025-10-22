@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "llama-4-cla-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-llama-4-cla-2025",
+            "Llama 4 Community License Agreement 2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

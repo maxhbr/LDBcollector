@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "RSA-MD4 License",
+            "LicenseRef-scancode-rsa-md4",
             "RSA Data Security MD4",
-            "LicenseRef-scancode-rsa-md4"
+            "RSA-MD4 License"
         ]
     },
     "rejected": [],

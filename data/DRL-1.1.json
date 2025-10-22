@@ -10,9 +10,9 @@
         "custom": [],
         "scancodeLicensedb": [
             "Detection Rule License (DRL) 1.1",
+            "DRL-1.1",
             "drl-1.1",
-            "LicenseRef-scancode-drl-1.1",
-            "DRL-1.1"
+            "LicenseRef-scancode-drl-1.1"
         ]
     },
     "rejected": [],

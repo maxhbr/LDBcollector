@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "lzma-cpl-exception",
-            "LZMA exception to CPL 1.0"
+            "LZMA exception to CPL 1.0",
+            "lzma-cpl-exception"
         ]
     },
     "rejected": [],

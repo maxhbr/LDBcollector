@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "fsf-unlimited",
             "Free Software Foundation - Unlimited License",
-            "FSF-Unlimited"
+            "FSF-Unlimited",
+            "fsf-unlimited"
         ]
     },
     "rejected": [],

@@ -11,9 +11,9 @@
             "afl2.0"
         ],
         "scancodeLicensedb": [
-            "afl-2.0",
             "Academic Free License 2.0",
-            "AFL 2.0"
+            "AFL 2.0",
+            "afl-2.0"
         ]
     },
     "rejected": [],

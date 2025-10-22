@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OWF Contributor License Agreement 1.0 - Copyright",
+            "LicenseRef-scancode-owf-cla-1.0-copyright",
             "OWF CLA 1.0 - Copyright",
-            "LicenseRef-scancode-owf-cla-1.0-copyright"
+            "OWF Contributor License Agreement 1.0 - Copyright"
         ]
     },
     "rejected": [],

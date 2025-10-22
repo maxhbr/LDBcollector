@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Remote NDIS USB Kit EULA",
+            "LicenseRef-scancode-ms-remote-ndis-usb-kit",
             "Microsoft Remote NDIS USB Kit EULA",
-            "LicenseRef-scancode-ms-remote-ndis-usb-kit"
+            "MS Remote NDIS USB Kit EULA"
         ]
     },
     "rejected": [],

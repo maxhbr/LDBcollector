@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-KDE-Accepted-GPL",
             "KDE Accepted GPL",
+            "LicenseRef-KDE-Accepted-GPL",
             "LicenseRef-scancode-kde-accepted-gpl"
         ]
     },

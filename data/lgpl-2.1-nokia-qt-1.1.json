@@ -8,7 +8,7 @@
     },
     "rejected": [],
     "risky": [
-        "Nokia Qt LGPL Exception v1.1",
-        "Nokia Qt LGPL Exception 1.1"
+        "Nokia Qt LGPL Exception 1.1",
+        "Nokia Qt LGPL Exception v1.1"
     ]
 }

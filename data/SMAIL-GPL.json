@@ -9,8 +9,8 @@
             "SMAIL General Public License"
         ],
         "scancodeLicensedb": [
-            "SMAIL GPL",
             "LicenseRef-scancode-smail-gpl",
+            "SMAIL GPL",
             "smail-gpl"
         ]
     },

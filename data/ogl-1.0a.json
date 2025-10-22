@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Open Game License v1.0a",
+            "LicenseRef-scancode-ogl-1.0a",
             "OGL 1.0a",
-            "LicenseRef-scancode-ogl-1.0a"
+            "Open Game License v1.0a"
         ]
     },
     "rejected": [],

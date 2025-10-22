@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Paint.NET License",
-            "LicenseRef-scancode-paint-net"
+            "LicenseRef-scancode-paint-net",
+            "Paint.NET License"
         ]
     },
     "rejected": [],

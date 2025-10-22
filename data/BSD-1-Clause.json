@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "bsd-1-clause",
-            "BSD-1-Clause"
+            "BSD-1-Clause",
+            "bsd-1-clause"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NXP Warranty Disclaimer",
-            "LicenseRef-scancode-nxp-warranty-disclaimer"
+            "LicenseRef-scancode-nxp-warranty-disclaimer",
+            "NXP Warranty Disclaimer"
         ]
     },
     "rejected": [],

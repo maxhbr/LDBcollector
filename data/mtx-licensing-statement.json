@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MicroType Express (MTX) License",
-            "LicenseRef-scancode-mtx-licensing-statement"
+            "LicenseRef-scancode-mtx-licensing-statement",
+            "MicroType Express (MTX) License"
         ]
     },
     "rejected": [],

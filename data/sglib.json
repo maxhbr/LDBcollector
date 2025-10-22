@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sglib License",
-            "LicenseRef-scancode-sglib"
+            "LicenseRef-scancode-sglib",
+            "Sglib License"
         ]
     },
     "rejected": [],

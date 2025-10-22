@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Unlimited linking exception to LGPL",
+            "LicenseRef-scancode-unlimited-link-exception-lgpl",
             "LicenseRef-scancode-unlimited-linking-exception-lgpl",
-            "LicenseRef-scancode-unlimited-link-exception-lgpl"
+            "Unlimited linking exception to LGPL"
         ]
     },
     "rejected": [],

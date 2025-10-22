@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Red Hat eCos Public License 1.1",
-            "ecosrh-1.1"
+            "ecosrh-1.1",
+            "Red Hat eCos Public License 1.1"
         ]
     },
     "rejected": [],

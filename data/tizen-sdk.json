@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Tizen SDK License",
-            "LicenseRef-scancode-tizen-sdk"
+            "LicenseRef-scancode-tizen-sdk",
+            "Tizen SDK License"
         ]
     },
     "rejected": [],

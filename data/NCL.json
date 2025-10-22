@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-fftpack-2004",
             "FFTPACK License 2004",
-            "fftpack-2004"
+            "fftpack-2004",
+            "LicenseRef-scancode-fftpack-2004"
         ]
     },
     "rejected": [],

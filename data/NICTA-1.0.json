@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "NICTA Public Software Licence 1.0",
             "LicenseRef-scancode-nicta-psl",
+            "NICTA Public Software Licence 1.0",
             "nicta-psl"
         ]
     },

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Melange Public License",
+            "LicenseRef-scancode-melange",
             "Melange Chat Server/Client Public License",
-            "LicenseRef-scancode-melange"
+            "Melange Public License"
         ]
     },
     "rejected": [],

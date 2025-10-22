@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Visual Idiot License",
+            "LicenseRef-scancode-visual-idiot",
             "Visual Idiot",
-            "LicenseRef-scancode-visual-idiot"
+            "Visual Idiot License"
         ]
     },
     "rejected": [],

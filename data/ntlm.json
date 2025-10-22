@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NTLM License",
-            "LicenseRef-scancode-ntlm"
+            "LicenseRef-scancode-ntlm",
+            "NTLM License"
         ]
     },
     "rejected": [],

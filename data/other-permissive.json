@@ -7,8 +7,8 @@
         "custom": [],
         "scancodeLicensedb": [
             "LicenseRef-Fedora-UltraPermissive",
-            "Other Permissive Licenses",
-            "LicenseRef-scancode-other-permissive"
+            "LicenseRef-scancode-other-permissive",
+            "Other Permissive Licenses"
         ]
     },
     "rejected": [],

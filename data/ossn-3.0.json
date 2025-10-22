@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OSSN-3.0",
+            "LicenseRef-scancode-ossn-3.0",
             "Open Source Social Network License v3.0",
-            "LicenseRef-scancode-ossn-3.0"
+            "OSSN-3.0"
         ]
     },
     "rejected": [],

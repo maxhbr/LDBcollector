@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun Proprietary Non-Commercial License",
-            "LicenseRef-scancode-sun-prop-non-commercial"
+            "LicenseRef-scancode-sun-prop-non-commercial",
+            "Sun Proprietary Non-Commercial License"
         ]
     },
     "rejected": [],

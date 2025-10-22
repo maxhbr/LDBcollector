@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MediaTek No Warranty Clause",
-            "LicenseRef-scancode-mediatek-no-warranty"
+            "LicenseRef-scancode-mediatek-no-warranty",
+            "MediaTek No Warranty Clause"
         ]
     },
     "rejected": [],

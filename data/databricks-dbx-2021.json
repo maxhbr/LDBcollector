@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-databricks-dbx-2021",
-            "DataBricks eXtensions aka dbx 2021"
+            "DataBricks eXtensions aka dbx 2021",
+            "LicenseRef-scancode-databricks-dbx-2021"
         ]
     },
     "rejected": [],

@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Proprietary License",
             "LicenseRef-LICENSE",
             "LicenseRef-LICENSE.md",
-            "LicenseRef-scancode-proprietary-license"
+            "LicenseRef-scancode-proprietary-license",
+            "Proprietary License"
         ]
     },
     "rejected": [],

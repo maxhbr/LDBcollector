@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TwistedSNMP License",
-            "LicenseRef-scancode-twisted-snmp"
+            "LicenseRef-scancode-twisted-snmp",
+            "TwistedSNMP License"
         ]
     },
     "rejected": [],

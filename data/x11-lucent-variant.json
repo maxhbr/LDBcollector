@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (Lucent-variant)",
-            "LicenseRef-scancode-x11-lucent-variant"
+            "LicenseRef-scancode-x11-lucent-variant",
+            "X11-Style (Lucent-variant)"
         ]
     },
     "rejected": [],

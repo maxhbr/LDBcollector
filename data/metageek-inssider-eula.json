@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "inSSIDer EULA",
             "inSSIDer End User License Agreement",
+            "inSSIDer EULA",
             "LicenseRef-scancode-metageek-inssider-eula"
         ]
     },

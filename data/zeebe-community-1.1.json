@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Zeebe Community License v1.1",
-            "LicenseRef-scancode-zeebe-community-1.1"
+            "LicenseRef-scancode-zeebe-community-1.1",
+            "Zeebe Community License v1.1"
         ]
     },
     "rejected": [],

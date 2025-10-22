@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-bitwarden-1.0",
-            "Bitwarden License Agreement v1"
+            "Bitwarden License Agreement v1",
+            "LicenseRef-scancode-bitwarden-1.0"
         ]
     },
     "rejected": [],

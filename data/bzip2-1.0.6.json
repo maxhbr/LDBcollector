@@ -13,8 +13,8 @@
         "bzip2-1.0.5"
     ],
     "risky": [
-        "bzip2-libbzip-2010",
-        "bzip2 License 2010"
+        "bzip2 License 2010",
+        "bzip2-libbzip-2010"
     ],
     "isMajorVersionOnly": false
 }

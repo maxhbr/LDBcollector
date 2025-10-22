@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "fawkes-runtime-exception",
-            "Fawkes Runtime Exception to GPL 2.0 or later"
+            "Fawkes Runtime Exception to GPL 2.0 or later",
+            "fawkes-runtime-exception"
         ]
     },
     "rejected": [],

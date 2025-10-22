@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MPEG-7 License",
-            "LicenseRef-scancode-mpeg-7"
+            "LicenseRef-scancode-mpeg-7",
+            "MPEG-7 License"
         ]
     },
     "rejected": [],

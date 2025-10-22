@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "u-boot-exception-2.0",
-            "U-Boot exception to GPL 2.0"
+            "U-Boot exception to GPL 2.0",
+            "u-boot-exception-2.0"
         ]
     },
     "rejected": [],

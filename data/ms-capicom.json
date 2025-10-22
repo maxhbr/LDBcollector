@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Microsoft CAPICOM License",
-            "LicenseRef-scancode-ms-capicom"
+            "LicenseRef-scancode-ms-capicom",
+            "Microsoft CAPICOM License"
         ]
     },
     "rejected": [],

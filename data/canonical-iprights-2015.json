@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "canonical-iprights-2015",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Canonical Intellectual Property Rights Policy 2015",
+            "Canonical IP Rights Policy 2015",
+            "LicenseRef-scancode-canonical-iprights-2015"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

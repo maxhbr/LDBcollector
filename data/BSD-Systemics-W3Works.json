@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Systemics W3Works License",
-            "bsd-systemics-w3works"
+            "bsd-systemics-w3works",
+            "Systemics W3Works License"
         ]
     },
     "rejected": [],

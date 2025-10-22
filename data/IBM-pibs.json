@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "ibm-pibs",
-            "IBM PowerPC Software"
+            "IBM PowerPC Software",
+            "ibm-pibs"
         ]
     },
     "rejected": [],

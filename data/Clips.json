@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-clips-2017",
             "CLIPS License 2017",
-            "clips-2017"
+            "clips-2017",
+            "LicenseRef-scancode-clips-2017"
         ]
     },
     "rejected": [],

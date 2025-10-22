@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "scanlogd License",
-            "LicenseRef-scancode-scanlogd-license"
+            "LicenseRef-scancode-scanlogd-license",
+            "scanlogd License"
         ]
     },
     "rejected": [],

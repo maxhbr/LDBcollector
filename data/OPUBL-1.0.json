@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-openpub",
             "Open Publication License 1.0",
-            "openpub",
-            "LicenseRef-scancode-openpub"
+            "openpub"
         ]
     },
     "rejected": [],

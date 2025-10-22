@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (OAR)",
             "LicenseRef-scancode-x11-oar",
-            "x11-oar"
+            "x11-oar",
+            "X11-Style (OAR)"
         ]
     },
     "rejected": [],

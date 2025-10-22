@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Visual Studio 2017",
+            "LicenseRef-scancode-ms-visual-studio-2017",
             "Microsoft Visual Studio 2017",
-            "LicenseRef-scancode-ms-visual-studio-2017"
+            "MS Visual Studio 2017"
         ]
     },
     "rejected": [],

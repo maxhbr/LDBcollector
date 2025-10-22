@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "QSkinny Exception to LGPL 2.1",
-            "LicenseRef-scancode-qskinny-exception-lgpl-2.1"
+            "LicenseRef-scancode-qskinny-exception-lgpl-2.1",
+            "QSkinny Exception to LGPL 2.1"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NXP MC Firmware License",
-            "LicenseRef-scancode-nxp-mc-firmware"
+            "LicenseRef-scancode-nxp-mc-firmware",
+            "NXP MC Firmware License"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "PngSuite License",
-            "LicenseRef-scancode-pngsuite"
+            "LicenseRef-scancode-pngsuite",
+            "PngSuite License"
         ]
     },
     "rejected": [],

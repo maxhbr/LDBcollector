@@ -16,8 +16,8 @@
         ],
         "pypi": [
             "License :: Nethack General Public License",
-            "OSI Approved :: Nethack General Public License",
-            "License :: OSI Approved :: Nethack General Public License"
+            "License :: OSI Approved :: Nethack General Public License",
+            "OSI Approved :: Nethack General Public License"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "IBM JRE License",
             "IBM Java Runtime Environment License",
+            "IBM JRE License",
             "LicenseRef-scancode-ibm-jre"
         ]
     },

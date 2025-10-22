@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Red Hat Logos License",
-            "LicenseRef-scancode-red-hat-logos"
+            "LicenseRef-scancode-red-hat-logos",
+            "Red Hat Logos License"
         ]
     },
     "rejected": [],

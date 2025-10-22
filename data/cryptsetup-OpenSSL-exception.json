@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "OpenSSL exception to GPL 3.0 or later",
             "LicenseRef-scancode-openssl-exception-gpl-3.0-plus",
+            "OpenSSL exception to GPL 3.0 or later",
             "openssl-exception-gpl-3.0-plus"
         ]
     },

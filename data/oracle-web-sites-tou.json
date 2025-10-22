@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-oracle-web-sites-tou",
             "Oracle Web Sites Terms of Use",
-            "Oracle Web Sites TOU",
-            "LicenseRef-scancode-oracle-web-sites-tou"
+            "Oracle Web Sites TOU"
         ]
     },
     "rejected": [],

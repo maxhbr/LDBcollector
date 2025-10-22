@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Synopsys MIT License",
-            "LicenseRef-scancode-synopsys-mit"
+            "LicenseRef-scancode-synopsys-mit",
+            "Synopsys MIT License"
         ]
     },
     "rejected": [],

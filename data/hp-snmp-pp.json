@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SNMP++ License",
-            "LicenseRef-scancode-hp-snmp-pp"
+            "LicenseRef-scancode-hp-snmp-pp",
+            "SNMP++ License"
         ]
     },
     "rejected": [],

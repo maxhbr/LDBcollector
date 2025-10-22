@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Public Domain Disclaimer",
-            "LicenseRef-scancode-public-domain-disclaimer"
+            "LicenseRef-scancode-public-domain-disclaimer",
+            "Public Domain Disclaimer"
         ]
     },
     "rejected": [],

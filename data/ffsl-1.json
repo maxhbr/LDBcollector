@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Floodgap Free Software License v1",
             "FFSL v1",
+            "Floodgap Free Software License v1",
             "LicenseRef-scancode-ffsl-1"
         ]
     },

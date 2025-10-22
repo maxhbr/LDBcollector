@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "cern-ohl-s-2.0",
-            "CERN-OHL-S-2.0"
+            "CERN-OHL-S-2.0",
+            "cern-ohl-s-2.0"
         ]
     },
     "rejected": [],

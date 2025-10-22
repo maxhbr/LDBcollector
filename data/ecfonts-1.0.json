@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-ecfonts-1.0",
+            "Copyright notice to the ec fonts",
             "latex-ec-fonts",
-            "Copyright notice to the ec fonts"
+            "LicenseRef-scancode-ecfonts-1.0"
         ]
     },
     "rejected": [],

@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-graphics-gems",
-            "graphics-gems"
+            "graphics-gems",
+            "LicenseRef-scancode-graphics-gems"
         ]
     },
     "rejected": [],

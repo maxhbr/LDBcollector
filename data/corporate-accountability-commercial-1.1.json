@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-corporate-accountability-commercial-1.1",
-            "LicenseRef-scancode-accountability-commercial-1.1"
+            "LicenseRef-scancode-accountability-commercial-1.1",
+            "LicenseRef-scancode-corporate-accountability-commercial-1.1"
         ]
     },
     "rejected": [],

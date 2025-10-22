@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Windows OS 2018",
+            "LicenseRef-scancode-ms-windows-os-2018",
             "Microsoft Windows Operating System License 2019",
-            "LicenseRef-scancode-ms-windows-os-2018"
+            "MS Windows OS 2018"
         ]
     },
     "rejected": [],

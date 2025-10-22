@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "mongodb-sspl-1.0",
             "Server Side Public License (SSPL) 1.0",
-            "SSPL 1.0",
-            "mongodb-sspl-1.0"
+            "SSPL 1.0"
         ]
     },
     "rejected": [],

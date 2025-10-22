@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "openldap-2.5",
-            "OpenLDAP Public License 2.5"
+            "OpenLDAP Public License 2.5",
+            "openldap-2.5"
         ]
     },
     "rejected": [],

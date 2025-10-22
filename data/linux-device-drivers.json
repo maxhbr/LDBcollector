@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Linux Device Drivers License",
+            "LicenseRef-scancode-linux-device-drivers",
             "Linux Device Drivers",
-            "LicenseRef-scancode-linux-device-drivers"
+            "Linux Device Drivers License"
         ]
     },
     "rejected": [],

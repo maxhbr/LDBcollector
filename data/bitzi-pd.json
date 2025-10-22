@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Bitzi-PD",
             "Bitzi Public Domain",
+            "Bitzi-PD",
             "LicenseRef-scancode-bitzi-pd"
         ]
     },

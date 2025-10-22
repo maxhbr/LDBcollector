@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Whitecat License",
-            "LicenseRef-scancode-whitecat"
+            "LicenseRef-scancode-whitecat",
+            "Whitecat License"
         ]
     },
     "rejected": [],

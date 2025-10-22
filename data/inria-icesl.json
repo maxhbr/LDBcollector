@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "INRIA IceSL EULA",
             "INRIA End User License Agreement for IceSL Software",
+            "INRIA IceSL EULA",
             "LicenseRef-scancode-inria-icesl"
         ]
     },

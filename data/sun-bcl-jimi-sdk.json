@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun BCL JIMI SDK",
-            "LicenseRef-scancode-sun-bcl-jimi-sdk"
+            "LicenseRef-scancode-sun-bcl-jimi-sdk",
+            "Sun BCL JIMI SDK"
         ]
     },
     "rejected": [],

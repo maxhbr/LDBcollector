@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "wingo License",
-            "LicenseRef-scancode-wingo"
+            "LicenseRef-scancode-wingo",
+            "wingo License"
         ]
     },
     "rejected": [],

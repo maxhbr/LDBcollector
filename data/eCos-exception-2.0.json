@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "ecos-exception-2.0",
-            "eCos Exception to GPL 2.0 or later"
+            "eCos Exception to GPL 2.0 or later",
+            "ecos-exception-2.0"
         ]
     },
     "rejected": [],

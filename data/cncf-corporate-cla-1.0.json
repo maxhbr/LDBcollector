@@ -4,11 +4,13 @@
         "src": "scancode-licensedb"
     },
     "aliases": {
-        "custom": [],
+        "custom": [
+            "Software Grant and Corporate Contributor License Agreement ('Agreement') v1.0"
+        ],
         "scancodeLicensedb": [
-            "Software Grant and Corporate Contributor License Agreement (\"Agreement\") v1.0",
             "CNCF Corporate CLA 1.0",
-            "LicenseRef-scancode-cncf-corporate-cla-1.0"
+            "LicenseRef-scancode-cncf-corporate-cla-1.0",
+            "Software Grant and Corporate Contributor License Agreement (\"Agreement\") v1.0"
         ]
     },
     "rejected": [],

@@ -12,20 +12,20 @@
             "The MirOS Licence (MirOS)"
         ],
         "scancodeLicensedb": [
-            "MirOS License",
-            "mir-os"
+            "mir-os",
+            "MirOS License"
         ],
         "pypi": [
-            "License :: MirOS License (MirOS)",
-            "OSI Approved :: MirOS License (MirOS)",
-            "License :: OSI Approved :: MirOS License",
-            "License :: MirOS License",
-            "OSI Approved :: MirOS License",
-            "License :: OSI Approved :: MirOS",
             "License :: MirOS",
-            "OSI Approved :: MirOS",
+            "License :: MirOS License",
+            "License :: MirOS License (MirOS)",
+            "License :: OSI Approved :: MirOS",
+            "License :: OSI Approved :: MirOS License",
             "License :: OSI Approved :: MirOS License (MirOS)",
-            "MirOS License (MirOS)"
+            "MirOS License (MirOS)",
+            "OSI Approved :: MirOS",
+            "OSI Approved :: MirOS License",
+            "OSI Approved :: MirOS License (MirOS)"
         ]
     },
     "rejected": [],

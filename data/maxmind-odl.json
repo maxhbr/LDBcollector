@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MaxMind Open Data License",
-            "LicenseRef-scancode-maxmind-odl"
+            "LicenseRef-scancode-maxmind-odl",
+            "MaxMind Open Data License"
         ]
     },
     "rejected": [],

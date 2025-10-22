@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Taligent JDK Proprietary Notice",
-            "LicenseRef-scancode-taligent-jdk"
+            "LicenseRef-scancode-taligent-jdk",
+            "Taligent JDK Proprietary Notice"
         ]
     },
     "rejected": [],

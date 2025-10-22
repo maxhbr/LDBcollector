@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "olf-icla-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-olf-icla-1.0",
+            "OLF-ICLA-1.0",
+            "Open Logistics Foundation Individual Contributor ICLA 1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

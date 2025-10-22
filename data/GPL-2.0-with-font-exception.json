@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "gpl-2.0-font",
-            "GPL 2.0 with font exception"
+            "GPL 2.0 with font exception",
+            "gpl-2.0-font"
         ]
     },
     "rejected": [],

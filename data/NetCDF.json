@@ -8,14 +8,14 @@
             "NetCDF license"
         ],
         "custom": [
-            "NetCDF Software License",
-            "NetCDF License (Open Source)",
-            "NetCDF Open Source License",
             "NetCDF (Open Source)",
+            "NetCDF (Public License)",
             "NetCDF (Software License)",
+            "NetCDF License (Open Source)",
             "NetCDF Open License",
+            "NetCDF Open Source License",
             "NetCDF Public License",
-            "NetCDF (Public License)"
+            "NetCDF Software License"
         ],
         "scancodeLicensedb": [
             "netcdf",

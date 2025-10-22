@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "antlr-pd",
-            "ANTLR-PD"
+            "ANTLR-PD",
+            "antlr-pd"
         ]
     },
     "rejected": [],

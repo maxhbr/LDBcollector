@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Visual C++ 2015-2022 Runtime",
+            "LicenseRef-scancode-ms-visual-cpp-2015-runtime",
             "Microsoft Visual C++ 2015-2022 Runtime",
-            "LicenseRef-scancode-ms-visual-cpp-2015-runtime"
+            "MS Visual C++ 2015-2022 Runtime"
         ]
     },
     "rejected": [],

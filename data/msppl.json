@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-msppl",
             "Microsoft patterns & practices License",
-            "MSPPL",
-            "LicenseRef-scancode-msppl"
+            "MSPPL"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-biosl-4.0",
-            "BIOSL v4"
+            "BIOSL v4",
+            "LicenseRef-scancode-biosl-4.0"
         ]
     },
     "rejected": [],

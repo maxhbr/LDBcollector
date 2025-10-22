@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TXL 10.5 License",
-            "LicenseRef-scancode-txl-10.5"
+            "LicenseRef-scancode-txl-10.5",
+            "TXL 10.5 License"
         ]
     },
     "rejected": [],

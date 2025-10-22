@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TekHVC License",
-            "LicenseRef-scancode-tekhvc"
+            "LicenseRef-scancode-tekhvc",
+            "TekHVC License"
         ]
     },
     "rejected": [],

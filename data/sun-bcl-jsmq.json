@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun BCL JSMQ",
-            "LicenseRef-scancode-sun-bcl-jsmq"
+            "LicenseRef-scancode-sun-bcl-jsmq",
+            "Sun BCL JSMQ"
         ]
     },
     "rejected": [],

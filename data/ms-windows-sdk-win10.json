@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Enterprise Windows Driver Kit 2021",
+            "LicenseRef-scancode-ms-windows-sdk-win10",
             "Microsoft Enterprise Windows Driver Kit License 2021",
-            "LicenseRef-scancode-ms-windows-sdk-win10"
+            "MS Enterprise Windows Driver Kit 2021"
         ]
     },
     "rejected": [],

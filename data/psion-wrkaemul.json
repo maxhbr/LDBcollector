@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "psion-wrkaemul",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-psion-wrkaemul",
+            "Psion User LIcence for WrkAEmul"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

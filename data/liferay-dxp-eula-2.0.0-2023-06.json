@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Liferay-DXP-EULA-2.0.0-2023-06",
-            "LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06"
+            "LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06",
+            "Liferay-DXP-EULA-2.0.0-2023-06"
         ]
     },
     "rejected": [],

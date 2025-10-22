@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MSNTP software license",
+            "LicenseRef-scancode-msntp",
             "MSNTP License",
-            "LicenseRef-scancode-msntp"
+            "MSNTP software license"
         ]
     },
     "rejected": [],

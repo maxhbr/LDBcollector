@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NVIDIA Video Codec SDK Agreement",
-            "LicenseRef-scancode-nvidia-video-codec-agreement"
+            "LicenseRef-scancode-nvidia-video-codec-agreement",
+            "NVIDIA Video Codec SDK Agreement"
         ]
     },
     "rejected": [],

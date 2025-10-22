@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "UPX exception to GPL 2.0 or later",
-            "LicenseRef-scancode-upx-exception-2.0-plus"
+            "LicenseRef-scancode-upx-exception-2.0-plus",
+            "UPX exception to GPL 2.0 or later"
         ]
     },
     "rejected": [],

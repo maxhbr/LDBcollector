@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "PFE Proprietary Notice",
-            "LicenseRef-scancode-pfe-proprietary-notice"
+            "LicenseRef-scancode-pfe-proprietary-notice",
+            "PFE Proprietary Notice"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "Academic Free License 1.2",
             "AFL 1.2",
-            "afl-1.2",
-            "Academic Free License 1.2"
+            "afl-1.2"
         ]
     },
     "rejected": [],

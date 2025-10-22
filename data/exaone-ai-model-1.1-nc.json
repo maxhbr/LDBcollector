@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "exaone-ai-model-1.1-nc",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "EXAONE AI Model 1.1 - NC",
+            "EXAONE AI Model License Agreement 1.1 - NC",
+            "LicenseRef-scancode-exaone-ai-model-1.1-nc"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

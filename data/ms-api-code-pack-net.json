@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-api-code-pack-net",
             "Microsoft Windows API Code Pack for Microsoft .NET Framework",
-            "MS Windows API Code Pack for .NET",
-            "LicenseRef-scancode-ms-api-code-pack-net"
+            "MS Windows API Code Pack for .NET"
         ]
     },
     "rejected": [],

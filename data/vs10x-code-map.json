@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "VS10x Code Map",
-            "LicenseRef-scancode-vs10x-code-map"
+            "LicenseRef-scancode-vs10x-code-map",
+            "VS10x Code Map"
         ]
     },
     "rejected": [],

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-asp-net-software",
             "Microsoft ASP.NET Software License",
-            "MS ASP.NET Software License",
-            "LicenseRef-scancode-ms-asp-net-software"
+            "MS ASP.NET Software License"
         ]
     },
     "rejected": [],

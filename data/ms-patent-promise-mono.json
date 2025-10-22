@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Microsoft Patent Promise for Mono",
-            "LicenseRef-scancode-ms-patent-promise-mono"
+            "LicenseRef-scancode-ms-patent-promise-mono",
+            "Microsoft Patent Promise for Mono"
         ]
     },
     "rejected": [],

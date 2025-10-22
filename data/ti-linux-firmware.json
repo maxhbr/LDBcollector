@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TI Linux Firmware License",
-            "LicenseRef-scancode-ti-linux-firmware"
+            "LicenseRef-scancode-ti-linux-firmware",
+            "TI Linux Firmware License"
         ]
     },
     "rejected": [],

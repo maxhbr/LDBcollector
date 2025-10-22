@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ZeusBench notice",
-            "LicenseRef-scancode-zeusbench"
+            "LicenseRef-scancode-zeusbench",
+            "ZeusBench notice"
         ]
     },
     "rejected": [],

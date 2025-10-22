@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TeamDev Services License",
-            "LicenseRef-scancode-teamdev-services"
+            "LicenseRef-scancode-teamdev-services",
+            "TeamDev Services License"
         ]
     },
     "rejected": [],

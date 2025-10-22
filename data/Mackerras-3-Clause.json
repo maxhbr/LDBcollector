@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Paul Mackerras New License",
             "LicenseRef-scancode-paul-mackerras-new",
+            "Paul Mackerras New License",
             "paul-mackerras-new"
         ]
     },

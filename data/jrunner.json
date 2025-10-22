@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "JRunner Software License",
             "JRunner License",
+            "JRunner Software License",
             "LicenseRef-scancode-jrunner"
         ]
     },

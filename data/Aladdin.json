@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Aladdin Free Public License v8",
             "afpl-8.0",
-            "Aladdin FPL v8"
+            "Aladdin FPL v8",
+            "Aladdin Free Public License v8"
         ]
     },
     "rejected": [],

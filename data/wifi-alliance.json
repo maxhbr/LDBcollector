@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-wifi-alliance",
             "Wi-Fi Alliance",
-            "Wi-Fi Alliance License",
-            "LicenseRef-scancode-wifi-alliance"
+            "Wi-Fi Alliance License"
         ]
     },
     "rejected": [],

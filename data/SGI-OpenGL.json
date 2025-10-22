@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "x11-opengl",
             "LicenseRef-scancode-x11-opengl",
+            "x11-opengl",
             "X11-Style (OpenGL)"
         ]
     },

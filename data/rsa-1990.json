@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "RSA Data Security Notice 1990",
+            "LicenseRef-scancode-rsa-1990",
             "RSA 1990",
-            "LicenseRef-scancode-rsa-1990"
+            "RSA Data Security Notice 1990"
         ]
     },
     "rejected": [],

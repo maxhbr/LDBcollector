@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "USRobotics Permissive License",
-            "LicenseRef-scancode-usrobotics-permissive"
+            "LicenseRef-scancode-usrobotics-permissive",
+            "USRobotics Permissive License"
         ]
     },
     "rejected": [],

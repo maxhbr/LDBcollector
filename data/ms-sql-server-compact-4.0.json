@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS SQL Server Compact 4.0 License",
+            "LicenseRef-scancode-ms-sql-server-compact-4.0",
             "Microsoft SQL Server Compact 4.0 License",
-            "LicenseRef-scancode-ms-sql-server-compact-4.0"
+            "MS SQL Server Compact 4.0 License"
         ]
     },
     "rejected": [],

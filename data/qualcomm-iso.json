@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Qualcomm ISO/IEC MPEG-B DASH License",
-            "LicenseRef-scancode-qualcomm-iso"
+            "LicenseRef-scancode-qualcomm-iso",
+            "Qualcomm ISO/IEC MPEG-B DASH License"
         ]
     },
     "rejected": [],

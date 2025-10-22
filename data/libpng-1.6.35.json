@@ -5,9 +5,13 @@
     },
     "aliases": {
         "spdx": [
-            "PNG Reference Library License v1 (for libpng 0.5 through 1.6.35"
+            "PNG Reference Library License v1 (for libpng 0.5 through 1.6.35",
+            "PNG Reference Library License v1 (for libpng 0.5 through 1.6.35)"
         ],
-        "custom": []
+        "custom": [],
+        "scancodeLicensedb": [
+            "PNG Reference Library License v1"
+        ]
     },
     "rejected": [],
     "risky": [],

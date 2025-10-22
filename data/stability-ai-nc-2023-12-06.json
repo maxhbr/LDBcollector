@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "stability-ai-nc-2023-12-06",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-stability-ai-nc-2023-12-06",
+            "Stability AI Non-Commercial Research 2023-12-06",
+            "Stability AI Non-Commercial Research Community License Agreement 2023-12-06"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

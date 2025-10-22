@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NICTA Exception to AGPL",
-            "LicenseRef-scancode-nicta-exception"
+            "LicenseRef-scancode-nicta-exception",
+            "NICTA Exception to AGPL"
         ]
     },
     "rejected": [],

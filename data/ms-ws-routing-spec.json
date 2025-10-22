@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-ws-routing-spec",
             "Microsoft WS Routing Specifications License",
-            "MS WS Routing Specifications License",
-            "LicenseRef-scancode-ms-ws-routing-spec"
+            "MS WS Routing Specifications License"
         ]
     },
     "rejected": [],

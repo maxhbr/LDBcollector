@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "mxparser-dual-2024-05-19",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mxparser-dual-2024-05-19",
+            "MathParser.org-mXparser Dual License Agreement 2024-05-19",
+            "mXParser Dual License 2024-05-19"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

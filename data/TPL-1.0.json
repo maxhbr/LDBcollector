@@ -11,8 +11,8 @@
     },
     "rejected": [],
     "risky": [
-        "Thor Public License",
         "LicenseRef-scancode-thor-pl",
+        "Thor Public License",
         "thor-pl"
     ],
     "isMajorVersionOnly": true

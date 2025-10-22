@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "Brian Gladman License",
             "brian-gladman",
-            "LicenseRef-scancode-brian-gladman",
-            "Brian Gladman License"
+            "LicenseRef-scancode-brian-gladman"
         ]
     },
     "rejected": [],

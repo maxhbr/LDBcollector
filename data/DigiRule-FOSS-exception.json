@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "DigiRule FOSS License Exception to GPL 2.0",
             "DigiRule FOSS Exception to GPL 2.0",
+            "DigiRule FOSS License Exception to GPL 2.0",
             "digirule-foss-exception"
         ]
     },

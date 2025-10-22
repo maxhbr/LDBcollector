@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ppp License",
-            "LicenseRef-scancode-ppp"
+            "LicenseRef-scancode-ppp",
+            "ppp License"
         ]
     },
     "rejected": [],

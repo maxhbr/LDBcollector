@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Truly Free License",
+            "LicenseRef-scancode-tfl",
             "TFL",
-            "LicenseRef-scancode-tfl"
+            "Truly Free License"
         ]
     },
     "rejected": [],

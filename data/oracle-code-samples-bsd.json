@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oracle Code Samples BSD-Style License",
-            "LicenseRef-scancode-oracle-code-samples-bsd"
+            "LicenseRef-scancode-oracle-code-samples-bsd",
+            "Oracle Code Samples BSD-Style License"
         ]
     },
     "rejected": [],

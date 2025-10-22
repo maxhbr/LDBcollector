@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Unicode Inc License Agreement",
-            "LicenseRef-scancode-unicode"
+            "LicenseRef-scancode-unicode",
+            "Unicode Inc License Agreement"
         ]
     },
     "rejected": [],

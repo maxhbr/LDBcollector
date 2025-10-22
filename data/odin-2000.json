@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "odin-2000",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-odin-2000",
+            "Odin Software License 2000"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

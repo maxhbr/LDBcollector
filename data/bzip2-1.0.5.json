@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "bzip2-libbzip-1.0.5",
-            "bzip2-1.0.5"
+            "bzip2-1.0.5",
+            "bzip2-libbzip-1.0.5"
         ]
     },
     "rejected": [],

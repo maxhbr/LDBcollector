@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "PHP License 2.0.2",
-            "LicenseRef-scancode-php-2.0.2"
+            "LicenseRef-scancode-php-2.0.2",
+            "PHP License 2.0.2"
         ]
     },
     "rejected": [],

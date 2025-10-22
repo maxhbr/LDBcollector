@@ -11,9 +11,9 @@
     },
     "rejected": [],
     "risky": [
-        "LicenseRef-scancode-bsd-original-uc-1986",
         "BSD-Original-UC-1986",
-        "bsd-original-uc-1986"
+        "bsd-original-uc-1986",
+        "LicenseRef-scancode-bsd-original-uc-1986"
     ],
     "isMajorVersionOnly": true
 }

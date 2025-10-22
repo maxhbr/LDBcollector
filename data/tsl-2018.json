@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-tsl-2018",
             "Timescale License Agreement",
-            "TSL Agreement",
-            "LicenseRef-scancode-tsl-2018"
+            "TSL Agreement"
         ]
     },
     "rejected": [],

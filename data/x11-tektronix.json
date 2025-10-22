@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (Tektronix)",
-            "LicenseRef-scancode-x11-tektronix"
+            "LicenseRef-scancode-x11-tektronix",
+            "X11-Style (Tektronix)"
         ]
     },
     "rejected": [],

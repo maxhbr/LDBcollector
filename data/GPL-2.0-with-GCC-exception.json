@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "gpl-2.0-gcc",
+            "GPL 2.0 or later with GCC LInking exception",
             "GPL 2.0 or later with GCC Runtime Library exception",
-            "GPL 2.0 or later with GCC LInking exception"
+            "gpl-2.0-gcc"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-bsd-3-clause-no-military",
+            "BSD-3-Clause-No-Military",
             "bsd-3-clause-no-military",
-            "BSD-3-Clause-No-Military"
+            "LicenseRef-scancode-bsd-3-clause-no-military"
         ]
     },
     "rejected": [],

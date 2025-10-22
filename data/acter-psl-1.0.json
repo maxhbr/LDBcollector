@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "acter-psl-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Acter Public Source License 1.0",
+            "LicenseRef-scancode-acter-psl-1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-mpeg-iso",
             "MPEG-2 NBC MPEG-4 Audio ISO",
-            "MPEG-2 NBC MPEG-4 Audio ISO License",
-            "LicenseRef-scancode-mpeg-iso"
+            "MPEG-2 NBC MPEG-4 Audio ISO License"
         ]
     },
     "rejected": [],

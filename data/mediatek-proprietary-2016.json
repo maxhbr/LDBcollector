@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "mediatek-proprietary-2016",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mediatek-proprietary-2016",
+            "Mediatek Proprietary License 2016"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

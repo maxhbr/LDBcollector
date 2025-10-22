@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-autoconf-macro-exception",
-            "autoconf-macro-exception"
+            "autoconf-macro-exception",
+            "LicenseRef-scancode-autoconf-macro-exception"
         ]
     },
     "rejected": [],

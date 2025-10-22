@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-rsa-proprietary",
             "RSA Proprietary",
-            "RSA Proprietary Shrinkwrap License",
-            "LicenseRef-scancode-rsa-proprietary"
+            "RSA Proprietary Shrinkwrap License"
         ]
     },
     "rejected": [],

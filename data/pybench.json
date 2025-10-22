@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "pybench License",
-            "LicenseRef-scancode-pybench"
+            "LicenseRef-scancode-pybench",
+            "pybench License"
         ]
     },
     "rejected": [],

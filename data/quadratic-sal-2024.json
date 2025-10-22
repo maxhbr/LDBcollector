@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "quadratic-sal-2024",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-quadratic-sal-2024",
+            "Quadratic Source Available License 2024"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-sql-server-data-tools",
             "Microsoft SQL Server Data Tools License",
-            "MS SQL Server Data Tools License",
-            "LicenseRef-scancode-ms-sql-server-data-tools"
+            "MS SQL Server Data Tools License"
         ]
     },
     "rejected": [],

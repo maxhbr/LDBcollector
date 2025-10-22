@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OSVDB License",
+            "LicenseRef-scancode-osvdb",
             "Open Sourced Vulnerability Database (OSVDB) License",
-            "LicenseRef-scancode-osvdb"
+            "OSVDB License"
         ]
     },
     "rejected": [],

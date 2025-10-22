@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "University of British Columbia License",
-            "LicenseRef-scancode-ubc"
+            "LicenseRef-scancode-ubc",
+            "University of British Columbia License"
         ]
     },
     "rejected": [],

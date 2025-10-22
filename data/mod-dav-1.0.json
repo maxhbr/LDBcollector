@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "mod_dav License 1.0",
             "LicenseRef-scancode-mod-dav-1.0",
+            "mod_dav License 1.0",
             "mod_dav License Agreement v1"
         ]
     },

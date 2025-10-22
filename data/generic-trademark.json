@@ -7,9 +7,9 @@
         "custom": [],
         "scancodeLicensedb": [
             "Generic Trademark and Name Protection Notice",
-            "LicenseRef-scancode-trademark-notice",
             "Generic Trademark Notice",
-            "LicenseRef-scancode-generic-trademark"
+            "LicenseRef-scancode-generic-trademark",
+            "LicenseRef-scancode-trademark-notice"
         ]
     },
     "rejected": [],

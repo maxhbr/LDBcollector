@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "semaphore-ee-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-semaphore-ee-2025",
+            "Semaphore EE License 2025",
+            "Semaphore Enterprise Edition (EE) License 2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

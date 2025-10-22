@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun BCL SDK 1.4.2",
-            "LicenseRef-scancode-sun-bcl-sdk-1.4.2"
+            "LicenseRef-scancode-sun-bcl-sdk-1.4.2",
+            "Sun BCL SDK 1.4.2"
         ]
     },
     "rejected": [],

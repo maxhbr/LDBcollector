@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-tanuki-community-sla-1.1",
             "Tanuki Community SLA 1.1",
-            "Tanuki Community Software License Agreement 1.1",
-            "LicenseRef-scancode-tanuki-community-sla-1.1"
+            "Tanuki Community Software License Agreement 1.1"
         ]
     },
     "rejected": [],

@@ -7,8 +7,8 @@
         "custom": [],
         "scancodeLicensedb": [
             "LicenseRef-scancode-samba-dc-1.0",
-            "Samba Developer's Declaration, Version 1.0",
-            "Samba DC 1.0"
+            "Samba DC 1.0",
+            "Samba Developer's Declaration, Version 1.0"
         ]
     },
     "rejected": [],

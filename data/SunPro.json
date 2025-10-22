@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "SunPro Attribution License",
             "LicenseRef-scancode-sunpro",
-            "sunpro"
+            "sunpro",
+            "SunPro Attribution License"
         ]
     },
     "rejected": [],

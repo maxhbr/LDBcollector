@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OASIS IPR 2013",
+            "LicenseRef-scancode-oasis-ipr-2013",
             "OASIS Intellectual Property Rights (IPR) Policy 2013",
-            "LicenseRef-scancode-oasis-ipr-2013"
+            "OASIS IPR 2013"
         ]
     },
     "rejected": [],

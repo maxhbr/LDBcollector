@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-corporate-accountability-1.1",
+            "CAL Software",
             "Corporate Accountability Lab Software",
-            "CAL Software"
+            "LicenseRef-scancode-corporate-accountability-1.1"
         ]
     },
     "rejected": [],

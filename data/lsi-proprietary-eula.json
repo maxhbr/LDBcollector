@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LSI Proprietary EULA",
-            "LicenseRef-scancode-lsi-proprietary-eula"
+            "LicenseRef-scancode-lsi-proprietary-eula",
+            "LSI Proprietary EULA"
         ]
     },
     "rejected": [],

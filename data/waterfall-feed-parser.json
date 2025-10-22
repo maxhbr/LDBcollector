@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Waterfall Feed Parser License",
-            "LicenseRef-scancode-waterfall-feed-parser"
+            "LicenseRef-scancode-waterfall-feed-parser",
+            "Waterfall Feed Parser License"
         ]
     },
     "rejected": [],

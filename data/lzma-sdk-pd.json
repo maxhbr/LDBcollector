@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LZMA SDK Public Domain",
-            "LicenseRef-scancode-lzma-sdk-pd"
+            "LicenseRef-scancode-lzma-sdk-pd",
+            "LZMA SDK Public Domain"
         ]
     },
     "rejected": [],

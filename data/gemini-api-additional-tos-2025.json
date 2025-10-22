@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "gemini-api-additional-tos-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Gemini API Additional Terms of Service 2025",
+            "Gemini API Additional TOS 2025",
+            "LicenseRef-scancode-gemini-api-additional-tos-2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

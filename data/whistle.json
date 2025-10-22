@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Whistle Communications License",
-            "LicenseRef-scancode-whistle"
+            "LicenseRef-scancode-whistle",
+            "Whistle Communications License"
         ]
     },
     "rejected": [],

@@ -8,23 +8,23 @@
             "Zope Public License 2.1"
         ],
         "custom": [
-            "Zope Public License v2.1",
-            "ZPL v2.1",
-            "ZPL 2.1 License",
-            "ZPL v2.1 License",
-            "Zope Public License 2.1 (ZPL)",
-            "ZPL (2.1)",
-            "ZPL-2.1 License",
-            "ZPL 2.1 (Zope)",
-            "ZPL 2.1 (Public License)",
             "Zope License 2.1",
-            "ZPL 2.1 Open Source License",
+            "Zope Public License 2.1 (ZPL)",
+            "Zope Public License v2.1",
+            "Zope Public License v2.1 (ZPL)",
+            "ZPL (2.1)",
             "ZPL 2.1 (Open Source)",
-            "Zope Public License v2.1 (ZPL)"
+            "ZPL 2.1 (Public License)",
+            "ZPL 2.1 (Zope)",
+            "ZPL 2.1 License",
+            "ZPL 2.1 Open Source License",
+            "ZPL v2.1",
+            "ZPL v2.1 License",
+            "ZPL-2.1 License"
         ],
         "scancodeLicensedb": [
-            "zpl-2.1",
-            "ZPL 2.1"
+            "ZPL 2.1",
+            "zpl-2.1"
         ]
     },
     "rejected": [

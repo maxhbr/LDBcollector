@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "QCAD Exception to GPL",
-            "LicenseRef-scancode-qcad-exception-gpl"
+            "LicenseRef-scancode-qcad-exception-gpl",
+            "QCAD Exception to GPL"
         ]
     },
     "rejected": [],

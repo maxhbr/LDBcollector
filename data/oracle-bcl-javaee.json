@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oracle BCL for Java EE Technologies",
-            "LicenseRef-scancode-oracle-bcl-javaee"
+            "LicenseRef-scancode-oracle-bcl-javaee",
+            "Oracle BCL for Java EE Technologies"
         ]
     },
     "rejected": [],

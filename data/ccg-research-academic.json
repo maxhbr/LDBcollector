@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Cognitive Computation Group Research License",
             "CogComp Research and Academic Use License",
+            "Cognitive Computation Group Research License",
             "LicenseRef-scancode-ccg-research-academic"
         ]
     },

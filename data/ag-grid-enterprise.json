@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-ag-grid-enterprise",
-            "AG Grid Enterprise License"
+            "AG Grid Enterprise License",
+            "LicenseRef-scancode-ag-grid-enterprise"
         ]
     },
     "rejected": [],

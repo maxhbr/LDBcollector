@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oracle SQL Developer License Terms",
-            "LicenseRef-scancode-oracle-sql-developer"
+            "LicenseRef-scancode-oracle-sql-developer",
+            "Oracle SQL Developer License Terms"
         ]
     },
     "rejected": [],

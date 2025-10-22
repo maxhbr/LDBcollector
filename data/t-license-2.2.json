@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "T-License 2.2",
-            "LicenseRef-scancode-t-license-2.2"
+            "LicenseRef-scancode-t-license-2.2",
+            "T-License 2.2"
         ]
     },
     "rejected": [],

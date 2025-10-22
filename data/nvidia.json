@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NVIDIA License",
-            "LicenseRef-scancode-nvidia"
+            "LicenseRef-scancode-nvidia",
+            "NVIDIA License"
         ]
     },
     "rejected": [],

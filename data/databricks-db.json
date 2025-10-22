@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-databricks-db",
-            "Databricks DB License"
+            "Databricks DB License",
+            "LicenseRef-scancode-databricks-db"
         ]
     },
     "rejected": [],

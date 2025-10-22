@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "ril-2019",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ril-2019",
+            "RIL (Rick's Internet Licence) 3-Clause License 2019",
+            "RIL 2019"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

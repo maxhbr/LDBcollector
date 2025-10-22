@@ -1,0 +1,18 @@
+{
+    "canonical": {
+        "id": "WordNet",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "WordNet License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-wordnet",
+            "Wordnet License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

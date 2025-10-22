@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Tiger Cryptography License",
-            "LicenseRef-scancode-tiger-crypto"
+            "LicenseRef-scancode-tiger-crypto",
+            "Tiger Cryptography License"
         ]
     },
     "rejected": [],

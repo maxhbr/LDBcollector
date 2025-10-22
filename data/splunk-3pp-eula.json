@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Splunk EULA for Third-Party Content",
-            "LicenseRef-scancode-splunk-3pp-eula"
+            "LicenseRef-scancode-splunk-3pp-eula",
+            "Splunk EULA for Third-Party Content"
         ]
     },
     "rejected": [],

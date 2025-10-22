@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "VeriSign License",
-            "LicenseRef-scancode-verisign"
+            "LicenseRef-scancode-verisign",
+            "VeriSign License"
         ]
     },
     "rejected": [],

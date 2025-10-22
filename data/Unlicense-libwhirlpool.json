@@ -7,7 +7,10 @@
         "spdx": [
             "Unlicense - libwhirlpool variant"
         ],
-        "custom": []
+        "custom": [],
+        "scancodeLicensedb": [
+            "unlicense-libwhirlpool"
+        ]
     },
     "rejected": [],
     "risky": []

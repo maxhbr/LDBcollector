@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "StateWizard License Agreement",
+            "LicenseRef-scancode-statewizard",
             "StateWizard License",
-            "LicenseRef-scancode-statewizard"
+            "StateWizard License Agreement"
         ]
     },
     "rejected": [],

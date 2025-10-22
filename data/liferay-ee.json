@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Liferay Portal Enterprise Edition License",
+            "LicenseRef-scancode-liferay-ee",
             "Liferay Portal EE License",
-            "LicenseRef-scancode-liferay-ee"
+            "Liferay Portal Enterprise Edition License"
         ]
     },
     "rejected": [],

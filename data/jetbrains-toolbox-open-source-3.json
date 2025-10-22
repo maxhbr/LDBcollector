@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-jetbrains-toolbox-open-source-3",
             "JetBrains Toolbox Open Source License v3",
-            "Toolbox Subscription License Agreement For Open Source Projects Version 3",
-            "LicenseRef-scancode-jetbrains-toolbox-oss-3"
+            "LicenseRef-scancode-jetbrains-toolbox-open-source-3",
+            "LicenseRef-scancode-jetbrains-toolbox-oss-3",
+            "Toolbox Subscription License Agreement For Open Source Projects Version 3"
         ]
     },
     "rejected": [],

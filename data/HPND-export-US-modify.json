@@ -9,10 +9,10 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-mit-with-modification-obligations",
-            "mit-with-modification-obligations",
             "LicenseRef-scancode-mit-modification-obligations",
-            "MIT With Modification Obligations"
+            "LicenseRef-scancode-mit-with-modification-obligations",
+            "MIT With Modification Obligations",
+            "mit-with-modification-obligations"
         ]
     },
     "rejected": [],

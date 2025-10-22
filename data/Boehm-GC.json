@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "mozilla-gc",
+            "LicenseRef-scancode-mozilla-gc",
             "Mozilla GC License",
-            "LicenseRef-scancode-mozilla-gc"
+            "mozilla-gc"
         ]
     },
     "rejected": [],

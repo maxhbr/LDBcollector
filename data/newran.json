@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Newran License",
-            "LicenseRef-scancode-newran"
+            "LicenseRef-scancode-newran",
+            "Newran License"
         ]
     },
     "rejected": [],

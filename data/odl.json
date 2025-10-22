@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Open Directory License",
-            "LicenseRef-scancode-odl"
+            "LicenseRef-scancode-odl",
+            "Open Directory License"
         ]
     },
     "rejected": [],

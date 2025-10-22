@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Blitz++ Artistic License",
             "Blitz++ Artistic",
+            "Blitz++ Artistic License",
             "LicenseRef-scancode-blitz-artistic"
         ]
     },

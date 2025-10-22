@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NTP Origin License",
-            "LicenseRef-scancode-ntpl-origin"
+            "LicenseRef-scancode-ntpl-origin",
+            "NTP Origin License"
         ]
     },
     "rejected": [],

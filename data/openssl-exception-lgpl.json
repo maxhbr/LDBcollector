@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OpenSSL exception to LGPL",
-            "LicenseRef-scancode-openssl-exception-lgpl"
+            "LicenseRef-scancode-openssl-exception-lgpl",
+            "OpenSSL exception to LGPL"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Google Individual Contributor License Agreement",
             "Google CLA",
+            "Google Individual Contributor License Agreement",
             "LicenseRef-scancode-google-cla"
         ]
     },

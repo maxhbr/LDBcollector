@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "CSLA License",
             "CSLA .NET License",
+            "CSLA License",
             "LicenseRef-scancode-csla"
         ]
     },

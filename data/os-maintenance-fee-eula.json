@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "os-maintenance-fee-eula",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-os-maintenance-fee-eula",
+            "Open Source Maintenance Fee EULA"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

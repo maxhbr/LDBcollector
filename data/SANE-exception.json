@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "sane-exception-2.0-plus",
             "LicenseRef-scancode-sane-exception-2.0-plus",
-            "SANE exception to GPL 2.0 or later"
+            "SANE exception to GPL 2.0 or later",
+            "sane-exception-2.0-plus"
         ]
     },
     "rejected": [],

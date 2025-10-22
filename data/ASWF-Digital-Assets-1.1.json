@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-aswf-digital-assets-1.1",
             "ASWF Digital Assets License v1.1",
-            "aswf-digital-assets-1.1"
+            "aswf-digital-assets-1.1",
+            "LicenseRef-scancode-aswf-digital-assets-1.1"
         ]
     },
     "rejected": [],

@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "lbnl-bsd",
-            "LBNL BSD Variant"
+            "LBNL BSD Variant",
+            "lbnl-bsd"
         ]
     },
     "rejected": [],

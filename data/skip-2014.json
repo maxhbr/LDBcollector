@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SKIP License 2014",
-            "LicenseRef-scancode-skip-2014"
+            "LicenseRef-scancode-skip-2014",
+            "SKIP License 2014"
         ]
     },
     "rejected": [],

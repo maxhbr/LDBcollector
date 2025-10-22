@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Newlib Historical License",
-            "LicenseRef-scancode-newlib-historical"
+            "LicenseRef-scancode-newlib-historical",
+            "Newlib Historical License"
         ]
     },
     "rejected": [],

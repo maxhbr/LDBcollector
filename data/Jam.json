@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-jam",
-            "jam"
+            "jam",
+            "LicenseRef-scancode-jam"
         ]
     },
     "rejected": [],

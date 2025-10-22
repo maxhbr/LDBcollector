@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Planet Source Code License",
-            "LicenseRef-scancode-planet-source-code"
+            "LicenseRef-scancode-planet-source-code",
+            "Planet Source Code License"
         ]
     },
     "rejected": [],

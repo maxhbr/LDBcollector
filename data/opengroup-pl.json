@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Open Group Public License",
-            "LicenseRef-scancode-opengroup-pl"
+            "LicenseRef-scancode-opengroup-pl",
+            "Open Group Public License"
         ]
     },
     "rejected": [],

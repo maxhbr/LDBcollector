@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "wxWindows Free Documentation v3",
             "LicenseRef-scancode-wxwindows-free-doc-3",
-            "wxWindows Free Documentation Licence, Version 3"
+            "wxWindows Free Documentation Licence, Version 3",
+            "wxWindows Free Documentation v3"
         ]
     },
     "rejected": [],

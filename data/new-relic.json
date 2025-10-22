@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "New Relic License",
-            "LicenseRef-scancode-new-relic"
+            "LicenseRef-scancode-new-relic",
+            "New Relic License"
         ]
     },
     "rejected": [],

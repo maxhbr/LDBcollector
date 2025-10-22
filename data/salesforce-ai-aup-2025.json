@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "salesforce-ai-aup-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-salesforce-ai-aup-2025",
+            "Salesforce AI Acceptable Use Policy 2025",
+            "Salesforce Artificial Intelligence Acceptable Use Policy 2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

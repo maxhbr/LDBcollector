@@ -14,14 +14,14 @@
             "The Vovida Software License, Version 1.0"
         ],
         "scancodeLicensedb": [
+            "Vovida Software License 1.0",
             "Vovida Software License v. 1.0",
-            "vsl-1.0",
-            "Vovida Software License 1.0"
+            "vsl-1.0"
         ],
         "pypi": [
+            "License :: OSI Approved :: Vovida Software License 1.0",
             "License :: Vovida Software License 1.0",
-            "OSI Approved :: Vovida Software License 1.0",
-            "License :: OSI Approved :: Vovida Software License 1.0"
+            "OSI Approved :: Vovida Software License 1.0"
         ]
     },
     "rejected": [],

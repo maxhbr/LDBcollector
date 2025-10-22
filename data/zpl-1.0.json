@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ZPL 1.0",
+            "LicenseRef-scancode-zpl-1.0",
             "Zope Public License 1.0",
-            "LicenseRef-scancode-zpl-1.0"
+            "ZPL 1.0"
         ]
     },
     "rejected": [],

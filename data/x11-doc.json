@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11 Documentation License",
-            "LicenseRef-scancode-x11-doc"
+            "LicenseRef-scancode-x11-doc",
+            "X11 Documentation License"
         ]
     },
     "rejected": [],

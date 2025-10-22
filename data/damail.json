@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Don't Ask Me About It License",
             "DAMAIL",
+            "Don't Ask Me About It License",
             "LicenseRef-scancode-damail"
         ]
     },

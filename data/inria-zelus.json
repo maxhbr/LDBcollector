@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "INRIA Non-Commercial License Agreement for the Z\u00e9lus compiler",
             "INRIA NCLA Zelus",
+            "INRIA Non-Commercial License Agreement for the Z\u00e9lus compiler",
             "LicenseRef-scancode-inria-zelus"
         ]
     },

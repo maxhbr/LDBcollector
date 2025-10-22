@@ -9,10 +9,10 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-acdl-1.0",
-            "Apple Common Documentation License v1.0",
             "ACDL 1.0",
-            "acdl-1.0"
+            "acdl-1.0",
+            "Apple Common Documentation License v1.0",
+            "LicenseRef-scancode-acdl-1.0"
         ]
     },
     "rejected": [],

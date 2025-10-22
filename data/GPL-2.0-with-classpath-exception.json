@@ -11,8 +11,8 @@
             "GNU General Public License, version 2 with the GNU Classpath Exception"
         ],
         "scancodeLicensedb": [
-            "gpl-2.0-classpath",
-            "GPL 2.0 with classpath exception"
+            "GPL 2.0 with classpath exception",
+            "gpl-2.0-classpath"
         ]
     },
     "rejected": [],

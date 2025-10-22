@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Unicode Mappings License",
-            "LicenseRef-scancode-unicode-mappings"
+            "LicenseRef-scancode-unicode-mappings",
+            "Unicode Mappings License"
         ]
     },
     "rejected": [],

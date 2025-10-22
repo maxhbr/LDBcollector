@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "treeware-option-1",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-treeware-option-1",
+            "Treeware Option 1"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

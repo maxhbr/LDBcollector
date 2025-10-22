@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "UGUI License",
-            "LicenseRef-scancode-ugui"
+            "LicenseRef-scancode-ugui",
+            "UGUI License"
         ]
     },
     "rejected": [],

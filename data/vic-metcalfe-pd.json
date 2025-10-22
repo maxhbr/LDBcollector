@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Vic Metcalfe Public Domain Notice",
+            "LicenseRef-scancode-vic-metcalfe-pd",
             "Vic Metcalfe Public Domain",
-            "LicenseRef-scancode-vic-metcalfe-pd"
+            "Vic Metcalfe Public Domain Notice"
         ]
     },
     "rejected": [],

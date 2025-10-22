@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-sbia-b",
             "SBIA Part B",
-            "SBIA Software license - Downloading Agreement",
-            "LicenseRef-scancode-sbia-b"
+            "SBIA Software license - Downloading Agreement"
         ]
     },
     "rejected": [],

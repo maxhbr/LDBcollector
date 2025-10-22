@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OpenNETCF Shared Source License",
-            "LicenseRef-scancode-opennetcf-shared-source"
+            "LicenseRef-scancode-opennetcf-shared-source",
+            "OpenNETCF Shared Source License"
         ]
     },
     "rejected": [],

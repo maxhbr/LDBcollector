@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "click-license",
             "Click License",
+            "click-license",
             "LicenseRef-scancode-click-license"
         ]
     },

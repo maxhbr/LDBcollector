@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NIST NVD API TOU",
+            "LicenseRef-scancode-nist-nvd-api-tou",
             "NIST NVD API Terms of Use",
-            "LicenseRef-scancode-nist-nvd-api-tou"
+            "NIST NVD API TOU"
         ]
     },
     "rejected": [],

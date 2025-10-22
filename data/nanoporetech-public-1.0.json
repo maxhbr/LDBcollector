@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "nanoporetech-public-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-nanoporetech-public-1.0",
+            "Nanoporetech Public License 1.0",
+            "Oxford Nanopore Technologies PLC. Public License Version 1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

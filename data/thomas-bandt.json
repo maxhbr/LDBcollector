@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Thomas Bandt License",
-            "LicenseRef-scancode-thomas-bandt"
+            "LicenseRef-scancode-thomas-bandt",
+            "Thomas Bandt License"
         ]
     },
     "rejected": [],

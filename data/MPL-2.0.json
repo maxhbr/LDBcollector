@@ -8,45 +8,45 @@
             "Mozilla Public License 2.0"
         ],
         "custom": [
-            "Mozilla Public License v2.0",
-            "MPL v2.0",
-            "MPL 2.0 License",
-            "MPL v2.0 License",
-            "Mozilla Public License 2.0 (MPL)",
-            "MPL (2.0)",
-            "MPL-2.0 License",
-            "MPL 2.0 (Mozilla)",
-            "MPL 2.0 (Open Source)",
+            "Mozilla License 2.0",
             "Mozilla Public License (2.0)",
             "Mozilla Public License (MPL 2.0)",
-            "Mozilla License 2.0",
-            "MPL 2.0 Open Source License",
-            "MPL 2.0 (Open Source License)",
+            "Mozilla Public License 2.0 (MPL)",
+            "Mozilla Public License v2.0",
             "Mozilla Public License v2.0 (MPL)",
-            "MPLv2.0",
+            "MPL (2.0)",
+            "MPL 2.0 (Mozilla)",
+            "MPL 2.0 (Open Source License)",
+            "MPL 2.0 (Open Source)",
+            "MPL 2.0 License",
+            "MPL 2.0 Open Source License",
+            "MPL v2.0",
+            "MPL v2.0 License",
+            "mpl-2",
+            "MPL-2.0 License",
+            "mpl2",
             "mpl2.0",
             "MPLv2",
-            "mpl-2",
-            "mpl2"
+            "MPLv2.0"
         ],
         "osi": [
             "Mozilla Public License, Version 2.0"
         ],
         "scancodeLicensedb": [
-            "mpl-2.0",
-            "MPL 2.0"
+            "MPL 2.0",
+            "mpl-2.0"
         ],
         "pypi": [
-            "License :: Mozilla Public License 2.0 (MPL 2.0)",
-            "OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
-            "License :: OSI Approved :: Mozilla Public License 2.0",
             "License :: Mozilla Public License 2.0",
-            "OSI Approved :: Mozilla Public License 2.0",
-            "License :: OSI Approved :: MPL 2.0",
+            "License :: Mozilla Public License 2.0 (MPL 2.0)",
             "License :: MPL 2.0",
-            "OSI Approved :: MPL 2.0",
+            "License :: OSI Approved :: Mozilla Public License 2.0",
             "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
-            "Mozilla Public License 2.0 (MPL 2.0)"
+            "License :: OSI Approved :: MPL 2.0",
+            "Mozilla Public License 2.0 (MPL 2.0)",
+            "OSI Approved :: Mozilla Public License 2.0",
+            "OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+            "OSI Approved :: MPL 2.0"
         ]
     },
     "rejected": [],

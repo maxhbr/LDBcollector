@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-sysinternals-sla",
             "Microsoft Sysinternals Software License Terms",
-            "MS Sysinternals SLA",
-            "LicenseRef-scancode-ms-sysinternals-sla"
+            "MS Sysinternals SLA"
         ]
     },
     "rejected": [],

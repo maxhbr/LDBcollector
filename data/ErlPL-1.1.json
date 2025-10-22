@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "erlangpl-1.1",
-            "Erlang Public License 1.1"
+            "Erlang Public License 1.1",
+            "erlangpl-1.1"
         ]
     },
     "rejected": [],

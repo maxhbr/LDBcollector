@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Nortel DASA License",
-            "LicenseRef-scancode-nortel-dasa"
+            "LicenseRef-scancode-nortel-dasa",
+            "Nortel DASA License"
         ]
     },
     "rejected": [],

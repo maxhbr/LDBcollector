@@ -16,9 +16,9 @@
             "intel-bsd-export-control"
         ],
         "pypi": [
+            "License :: Intel Open Source License",
             "License :: OSI Approved :: Intel Open Source License",
-            "OSI Approved :: Intel Open Source License",
-            "License :: Intel Open Source License"
+            "OSI Approved :: Intel Open Source License"
         ]
     },
     "rejected": [],

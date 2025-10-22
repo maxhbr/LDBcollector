@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NucleusIcons EULA",
-            "LicenseRef-scancode-nucleusicons-eula"
+            "LicenseRef-scancode-nucleusicons-eula",
+            "NucleusIcons EULA"
         ]
     },
     "rejected": [],

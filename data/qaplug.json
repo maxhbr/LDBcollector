@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "QAPlug License",
-            "LicenseRef-scancode-qaplug"
+            "LicenseRef-scancode-qaplug",
+            "QAPlug License"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "Regexp License",
             "LicenseRef-scancode-regexp",
-            "regexp"
+            "regexp",
+            "Regexp License"
         ]
     },
     "rejected": [],

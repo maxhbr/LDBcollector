@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Semgrep Registry License",
-            "LicenseRef-scancode-semgrep-registry"
+            "LicenseRef-scancode-semgrep-registry",
+            "Semgrep Registry License"
         ]
     },
     "rejected": [],

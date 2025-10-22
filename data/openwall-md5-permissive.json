@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Openwall MD5 Permissive",
-            "LicenseRef-scancode-openwall-md5-permissive"
+            "LicenseRef-scancode-openwall-md5-permissive",
+            "Openwall MD5 Permissive"
         ]
     },
     "rejected": [],

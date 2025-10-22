@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Mapbox TOS 2024",
             "LicenseRef-scancode-mapbox-tos-2024",
-            "Mapbox Terms of Service 2024"
+            "Mapbox Terms of Service 2024",
+            "Mapbox TOS 2024"
         ]
     },
     "rejected": [],

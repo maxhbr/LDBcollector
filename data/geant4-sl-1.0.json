@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-geant4-sl-1.0",
-            "Geant4 Software License v1.0"
+            "Geant4 Software License v1.0",
+            "LicenseRef-scancode-geant4-sl-1.0"
         ]
     },
     "rejected": [],

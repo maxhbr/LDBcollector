@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "WS-Trust Specification",
-            "LicenseRef-scancode-ws-trust-specification"
+            "LicenseRef-scancode-ws-trust-specification",
+            "WS-Trust Specification"
         ]
     },
     "rejected": [],

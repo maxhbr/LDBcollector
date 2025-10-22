@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "CPL 0.5",
             "Common Public License 0.5",
+            "CPL 0.5",
             "LicenseRef-scancode-cpl-0.5"
         ]
     },

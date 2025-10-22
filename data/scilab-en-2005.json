@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-scilab-en",
             "LicenseRef-scancode-scilba-en",
             "SCILAB en 2005",
-            "SCILAB License 2005",
-            "LicenseRef-scancode-scilab-en"
+            "SCILAB License 2005"
         ]
     },
     "rejected": [],

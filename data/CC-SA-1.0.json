@@ -9,9 +9,9 @@
             "Creative Commons Share Alike 1.0 Generic"
         ],
         "scancodeLicensedb": [
+            "cc-sa-1.0",
             "Creative Commons ShareAlike License 1.0",
-            "LicenseRef-scancode-cc-sa-1.0",
-            "cc-sa-1.0"
+            "LicenseRef-scancode-cc-sa-1.0"
         ]
     },
     "rejected": [],

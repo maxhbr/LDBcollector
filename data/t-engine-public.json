@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "T-Engine Public License",
-            "LicenseRef-scancode-t-engine-public"
+            "LicenseRef-scancode-t-engine-public",
+            "T-Engine Public License"
         ]
     },
     "rejected": [],

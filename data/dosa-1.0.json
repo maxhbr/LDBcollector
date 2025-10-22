@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "dosa-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Delayed Open Source Attribution License 1.0 (DOSA-1.0)",
+            "DOSA-1.0",
+            "LicenseRef-scancode-dosa-1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Modified MIT License for Public Domain software",
-            "LicenseRef-scancode-pd-mit"
+            "LicenseRef-scancode-pd-mit",
+            "Modified MIT License for Public Domain software"
         ]
     },
     "rejected": [],

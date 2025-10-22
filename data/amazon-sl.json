@@ -7,8 +7,8 @@
         "custom": [],
         "scancodeLicensedb": [
             "Amazon Software License",
-            "LicenseRef-scancode-amazon-sl",
-            "LicenseRef-.amazon.com.-AmznSL-1.0"
+            "LicenseRef-.amazon.com.-AmznSL-1.0",
+            "LicenseRef-scancode-amazon-sl"
         ]
     },
     "rejected": [],

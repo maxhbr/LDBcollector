@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TrueCrypt License 3.1",
-            "LicenseRef-scancode-truecrypt-3.1"
+            "LicenseRef-scancode-truecrypt-3.1",
+            "TrueCrypt License 3.1"
         ]
     },
     "rejected": [],

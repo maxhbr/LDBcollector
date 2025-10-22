@@ -8,18 +8,18 @@
             "Eclipse Public License 1.0"
         ],
         "custom": [
+            "Eclipse License 1.0",
+            "Eclipse Public License (1.0)",
             "Eclipse Public License v1.0",
+            "Eclipse Public License v1.0 (EPL-1.0)",
+            "Eclipse Public License Version 1.0",
+            "EPL (1.0)",
+            "EPL 1.0 License",
+            "EPL 1.0 Open Source License",
             "EPL License 1.0",
             "EPL v1.0",
-            "Eclipse License 1.0",
-            "Eclipse Public License Version 1.0",
-            "EPL 1.0 License",
-            "EPL-1.0 License",
-            "EPL (1.0)",
-            "Eclipse Public License (1.0)",
             "EPL Version 1.0",
-            "Eclipse Public License v1.0 (EPL-1.0)",
-            "EPL 1.0 Open Source License",
+            "EPL-1.0 License",
             "epl1.0"
         ],
         "osi": [
@@ -30,16 +30,16 @@
             "epl-1.0"
         ],
         "pypi": [
-            "License :: Eclipse Public License 1.0 (EPL-1.0)",
-            "OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
-            "License :: OSI Approved :: Eclipse Public License 1.0",
+            "Eclipse Public License 1.0 (EPL-1.0)",
             "License :: Eclipse Public License 1.0",
-            "OSI Approved :: Eclipse Public License 1.0",
-            "License :: OSI Approved :: EPL-1.0",
+            "License :: Eclipse Public License 1.0 (EPL-1.0)",
             "License :: EPL-1.0",
-            "OSI Approved :: EPL-1.0",
+            "License :: OSI Approved :: Eclipse Public License 1.0",
             "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
-            "Eclipse Public License 1.0 (EPL-1.0)"
+            "License :: OSI Approved :: EPL-1.0",
+            "OSI Approved :: Eclipse Public License 1.0",
+            "OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
+            "OSI Approved :: EPL-1.0"
         ]
     },
     "rejected": [

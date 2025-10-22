@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-mit-nagy",
             "MIT Nagy Variant",
-            "MIT Szabolcs Nagy Variant",
-            "LicenseRef-scancode-mit-nagy"
+            "MIT Szabolcs Nagy Variant"
         ]
     },
     "rejected": [],

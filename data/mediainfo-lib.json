@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MediaInfo(Lib) License",
-            "LicenseRef-scancode-mediainfo-lib"
+            "LicenseRef-scancode-mediainfo-lib",
+            "MediaInfo(Lib) License"
         ]
     },
     "rejected": [],

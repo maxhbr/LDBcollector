@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "AGPL 2.0",
             "Affero General Public License 2.0",
+            "AGPL 2.0",
             "LicenseRef-scancode-agpl-2.0"
         ]
     },

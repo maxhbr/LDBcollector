@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Internet Computer Community Source License 1.0",
             "IC 1.0",
+            "Internet Computer Community Source License 1.0",
             "LicenseRef-scancode-ic-1.0"
         ]
     },

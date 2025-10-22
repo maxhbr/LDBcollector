@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "unicode-v3",
-            "LicenseRef-scancode-unicode-v3"
+            "LicenseRef-scancode-unicode-v3",
+            "unicode-v3"
         ]
     },
     "rejected": [],

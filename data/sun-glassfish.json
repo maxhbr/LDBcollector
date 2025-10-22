@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun GlassFish License",
-            "LicenseRef-scancode-sun-glassfish"
+            "LicenseRef-scancode-sun-glassfish",
+            "Sun GlassFish License"
         ]
     },
     "rejected": [],

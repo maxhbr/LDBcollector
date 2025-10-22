@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Project Gutenberg License 2020",
             "Gutenberg License 2020",
-            "LicenseRef-scancode-gutenberg-2020"
+            "LicenseRef-scancode-gutenberg-2020",
+            "Project Gutenberg License 2020"
         ]
     },
     "rejected": [],

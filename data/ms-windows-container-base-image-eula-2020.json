@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Windows Container Base Image EULA 2020",
-            "Microsoft Windows Container Base Image EULA 2020",
+            "LicenseRef-scancode-ms-win-container-eula-2020",
             "LicenseRef-scancode-ms-windows-container-base-image-eula-2020",
-            "LicenseRef-scancode-ms-win-container-eula-2020"
+            "Microsoft Windows Container Base Image EULA 2020",
+            "MS Windows Container Base Image EULA 2020"
         ]
     },
     "rejected": [],

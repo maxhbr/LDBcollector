@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "NCSA HTTPd License 1995",
-            "LicenseRef-scancode-ncsa-httpd-1995"
+            "LicenseRef-scancode-ncsa-httpd-1995",
+            "NCSA HTTPd License 1995"
         ]
     },
     "rejected": [],

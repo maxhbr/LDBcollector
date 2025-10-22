@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "sax-pd",
             "SAX Public Domain Notice",
-            "SAX-PD"
+            "SAX-PD",
+            "sax-pd"
         ]
     },
     "rejected": [],

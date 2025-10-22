@@ -9,10 +9,10 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-inner-net-2.0",
-            "inner-net-2.0",
+            "Inner Net 2.0",
             "Inner Net License 2.0",
-            "Inner Net 2.0"
+            "inner-net-2.0",
+            "LicenseRef-scancode-inner-net-2.0"
         ]
     },
     "rejected": [],

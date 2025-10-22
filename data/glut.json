@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OpenGL Utility Toolkit (GLUT) License",
             "GLUT License",
-            "LicenseRef-scancode-glut"
+            "LicenseRef-scancode-glut",
+            "OpenGL Utility Toolkit (GLUT) License"
         ]
     },
     "rejected": [],

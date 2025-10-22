@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Xilinx License 2016",
-            "LicenseRef-scancode-xilinx-2016"
+            "LicenseRef-scancode-xilinx-2016",
+            "Xilinx License 2016"
         ]
     },
     "rejected": [],

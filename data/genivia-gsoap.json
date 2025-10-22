@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Genivia Proprietary",
             "Genivia gSOAP Commercial Licensing",
+            "Genivia Proprietary",
             "LicenseRef-scancode-genivia-gsoap"
         ]
     },

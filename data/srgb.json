@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "sRGB Profile Licensing Agreement",
-            "LicenseRef-scancode-srgb"
+            "LicenseRef-scancode-srgb",
+            "sRGB Profile Licensing Agreement"
         ]
     },
     "rejected": [],

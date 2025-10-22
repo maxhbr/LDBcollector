@@ -10,8 +10,8 @@
         "custom": [],
         "scancodeLicensedb": [
             "BSD 3-Clause Sun",
-            "LicenseRef-scancode-bsd-3-clause-sun",
-            "bsd-3-clause-sun"
+            "bsd-3-clause-sun",
+            "LicenseRef-scancode-bsd-3-clause-sun"
         ]
     },
     "rejected": [],

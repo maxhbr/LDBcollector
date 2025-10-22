@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "US Government GeoTransform",
-            "LicenseRef-scancode-us-govt-geotranform"
+            "LicenseRef-scancode-us-govt-geotranform",
+            "US Government GeoTransform"
         ]
     },
     "rejected": [],

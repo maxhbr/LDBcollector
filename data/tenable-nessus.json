@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-tenable-nessus",
             "Tenable Nessus License",
-            "Tenable Nessus Software License and Subscription Agreement",
-            "LicenseRef-scancode-tenable-nessus"
+            "Tenable Nessus Software License and Subscription Agreement"
         ]
     },
     "rejected": [],

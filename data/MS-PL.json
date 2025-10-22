@@ -8,16 +8,16 @@
             "Microsoft Public License"
         ],
         "custom": [
+            "Microsoft License",
+            "Microsoft Public License (MS-PL)",
             "MS Public License",
             "MS-PL License",
-            "Microsoft License",
             "MSPL",
-            "MSPL License",
-            "Microsoft Public License (MS-PL)"
+            "MSPL License"
         ],
         "scancodeLicensedb": [
-            "ms-pl",
-            "MS-PL"
+            "MS-PL",
+            "ms-pl"
         ]
     },
     "rejected": [],

@@ -6,10 +6,10 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-PublicDomain",
-            "Public Domain",
             "LicenseRef-Fedora-Public-Domain",
-            "LicenseRef-scancode-public-domain"
+            "LicenseRef-PublicDomain",
+            "LicenseRef-scancode-public-domain",
+            "Public Domain"
         ]
     },
     "rejected": [],

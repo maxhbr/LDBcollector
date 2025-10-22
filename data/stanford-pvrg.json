@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Stanford PVRG License",
-            "LicenseRef-scancode-stanford-pvrg"
+            "LicenseRef-scancode-stanford-pvrg",
+            "Stanford PVRG License"
         ]
     },
     "rejected": [],

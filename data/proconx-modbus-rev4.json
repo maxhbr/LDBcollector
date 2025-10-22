@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "proconX Modbus Driver License rev4",
-            "LicenseRef-scancode-proconx-modbus-rev4"
+            "LicenseRef-scancode-proconx-modbus-rev4",
+            "proconX Modbus Driver License rev4"
         ]
     },
     "rejected": [],

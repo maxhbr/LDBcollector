@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Microsoft Container EULA",
-            "LicenseRef-scancode-ms-container-eula"
+            "LicenseRef-scancode-ms-container-eula",
+            "Microsoft Container EULA"
         ]
     },
     "rejected": [],

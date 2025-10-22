@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "mit-addition",
             "LicenseRef-scancode-mit-addition",
-            "MIT Addition License"
+            "MIT Addition License",
+            "mit-addition"
         ]
     },
     "rejected": [],

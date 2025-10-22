@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "cockroachdb-2024-10-01",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "CockroachDB Software License 2024-10-01",
+            "LicenseRef-scancode-cockroachdb-2024-10-01"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

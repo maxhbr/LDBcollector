@@ -9,10 +9,10 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "agpl-1.0-plus",
-            "AGPL-1.0+",
             "Affero General Public License 1.0 or later",
-            "AGPL 1.0 or later"
+            "AGPL 1.0 or later",
+            "AGPL-1.0+",
+            "agpl-1.0-plus"
         ]
     },
     "rejected": [],

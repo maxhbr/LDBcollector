@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "RSA-MD5 License",
             "RSA Data Security MD5",
-            "rsa-md5"
+            "rsa-md5",
+            "RSA-MD5 License"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "bootloader-exception",
+            "Bootloader Distribution Exception to GPL 2.0",
             "Bootloader Distribution Exception to GPL 2.0 or later",
-            "Bootloader Distribution Exception to GPL 2.0"
+            "bootloader-exception"
         ]
     },
     "rejected": [],

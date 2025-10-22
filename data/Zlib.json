@@ -8,35 +8,35 @@
             "zlib License"
         ],
         "custom": [
+            "Zlib (Open License)",
+            "Zlib (Open Source)",
+            "Zlib Compression License",
             "Zlib License",
-            "zlib/libpng License",
+            "zlib License (Open License)",
+            "Zlib License (Open Source Software)",
             "zlib License (Open Source)",
-            "zlib/libpng License (Open Source)",
-            "Zlib/libpng License v1.0",
-            "Zlib v1.0",
+            "Zlib License (Public Domain)",
             "Zlib License v1.0",
-            "zlib/libpng License v1.0",
-            "zlib/libpng v1.0",
             "Zlib Public License",
             "Zlib Public License v1.0",
-            "Zlib License (Public Domain)",
-            "Zlib (Open Source)",
-            "Zlib License (Open Source Software)",
-            "zlib License (Open License)",
-            "Zlib (Open License)",
-            "Zlib Compression License"
+            "Zlib v1.0",
+            "zlib/libpng License",
+            "zlib/libpng License (Open Source)",
+            "Zlib/libpng License v1.0",
+            "zlib/libpng License v1.0",
+            "zlib/libpng v1.0"
         ],
         "osi": [
             "The zlib/libpng License (Zlib)"
         ],
         "scancodeLicensedb": [
-            "ZLIB License",
-            "zlib"
+            "zlib",
+            "ZLIB License"
         ],
         "pypi": [
+            "License :: OSI Approved :: zlib/libpng License",
             "License :: zlib/libpng License",
-            "OSI Approved :: zlib/libpng License",
-            "License :: OSI Approved :: zlib/libpng License"
+            "OSI Approved :: zlib/libpng License"
         ]
     },
     "rejected": [],

@@ -9,10 +9,10 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-catharon-osl",
-            "catharon-osl",
+            "Catharon Open Source License",
             "Catharon OSL",
-            "Catharon Open Source License"
+            "catharon-osl",
+            "LicenseRef-scancode-catharon-osl"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LGPL 2.0 or later with GCC Runtime Library exception",
-            "LGPL 2.0 or later with GCC exception"
+            "LGPL 2.0 or later with GCC exception",
+            "LGPL 2.0 or later with GCC Runtime Library exception"
         ]
     },
     "rejected": [],

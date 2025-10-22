@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Open Motif exception to GPL 2.0 or later",
-            "LicenseRef-scancode-openmotif-exception-2.0-plus"
+            "LicenseRef-scancode-openmotif-exception-2.0-plus",
+            "Open Motif exception to GPL 2.0 or later"
         ]
     },
     "rejected": [],

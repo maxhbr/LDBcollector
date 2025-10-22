@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "mif-exception",
-            "Macros and Inline Functions Exception to GPL 2.0"
+            "Macros and Inline Functions Exception to GPL 2.0",
+            "mif-exception"
         ]
     },
     "rejected": [],

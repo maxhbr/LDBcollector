@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "STMicroelectronics Linux Firmware License",
+            "LicenseRef-scancode-stmicro-linux-firmware",
             "LicenseRef-scancode-stmicroelectronics-linux-firmware",
-            "LicenseRef-scancode-stmicro-linux-firmware"
+            "STMicroelectronics Linux Firmware License"
         ]
     },
     "rejected": [],

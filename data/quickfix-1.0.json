@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-quickfix-1.0",
             "QuickFix 1.0",
-            "The QuickFIX Software License, Version 1.0",
-            "LicenseRef-scancode-quickfix-1.0"
+            "The QuickFIX Software License, Version 1.0"
         ]
     },
     "rejected": [],

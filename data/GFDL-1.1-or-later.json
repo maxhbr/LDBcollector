@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "gfdl-1.1-plus",
+            "GFDL 1.1 or later",
             "GFDL-1.1+",
-            "GFDL 1.1 or later"
+            "gfdl-1.1-plus"
         ]
     },
     "rejected": [],

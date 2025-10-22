@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SNMP4J-SMI License",
-            "LicenseRef-scancode-snmp4j-smi"
+            "LicenseRef-scancode-snmp4j-smi",
+            "SNMP4J-SMI License"
         ]
     },
     "rejected": [],

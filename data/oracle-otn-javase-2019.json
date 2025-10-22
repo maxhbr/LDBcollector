@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OTN for Oracle Java SE 2019",
+            "LicenseRef-scancode-oracle-otn-javase-2019",
             "Oracle Technology Network License Agreement for Oracle Java SE",
-            "LicenseRef-scancode-oracle-otn-javase-2019"
+            "OTN for Oracle Java SE 2019"
         ]
     },
     "rejected": [],

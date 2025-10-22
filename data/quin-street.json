@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "QuinStreet License",
-            "LicenseRef-scancode-quin-street"
+            "LicenseRef-scancode-quin-street",
+            "QuinStreet License"
         ]
     },
     "rejected": [],

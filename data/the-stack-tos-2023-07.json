@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "The Stack TOS 2023-07",
             "HuggingFace The Stack TOS 2023-07",
-            "LicenseRef-scancode-the-stack-tos-2023-07"
+            "LicenseRef-scancode-the-stack-tos-2023-07",
+            "The Stack TOS 2023-07"
         ]
     },
     "rejected": [],

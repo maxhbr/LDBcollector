@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Pivotal Software Terms of Use",
-            "LicenseRef-scancode-pivotal-tou"
+            "LicenseRef-scancode-pivotal-tou",
+            "Pivotal Software Terms of Use"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SafeCopy EULA",
-            "LicenseRef-scancode-safecopy-eula"
+            "LicenseRef-scancode-safecopy-eula",
+            "SafeCopy EULA"
         ]
     },
     "rejected": [],

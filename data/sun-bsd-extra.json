@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun BSD-Style with Additional Restrictions",
-            "LicenseRef-scancode-sun-bsd-extra"
+            "LicenseRef-scancode-sun-bsd-extra",
+            "Sun BSD-Style with Additional Restrictions"
         ]
     },
     "rejected": [],

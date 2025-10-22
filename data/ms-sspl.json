@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-sspl",
             "Microsoft Shared Source Permissive License (SS-PL)",
-            "MS-SS-PL",
-            "LicenseRef-scancode-ms-sspl"
+            "MS-SS-PL"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "RAR and WinRAR EULA",
-            "LicenseRef-scancode-rar-winrar-eula"
+            "LicenseRef-scancode-rar-winrar-eula",
+            "RAR and WinRAR EULA"
         ]
     },
     "rejected": [],

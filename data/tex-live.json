@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TeX Live License",
-            "LicenseRef-scancode-tex-live"
+            "LicenseRef-scancode-tex-live",
+            "TeX Live License"
         ]
     },
     "rejected": [],

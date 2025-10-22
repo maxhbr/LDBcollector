@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Helios EULA",
             "Helios",
+            "Helios EULA",
             "LicenseRef-scancode-helios-eula"
         ]
     },

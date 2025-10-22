@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS .NET Library License 2016-05",
+            "LicenseRef-scancode-ms-net-library-2016-05",
             "Microsoft .NET Library License 2016-05",
-            "LicenseRef-scancode-ms-net-library-2016-05"
+            "MS .NET Library License 2016-05"
         ]
     },
     "rejected": [],

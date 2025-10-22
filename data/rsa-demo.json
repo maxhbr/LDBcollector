@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "RSA Demo License",
-            "LicenseRef-scancode-rsa-demo"
+            "LicenseRef-scancode-rsa-demo",
+            "RSA Demo License"
         ]
     },
     "rejected": [],

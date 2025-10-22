@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Oracle VirtualBox Extension Pack Personal Use and Educational License (PUEL) v12",
             "LicenseRef-scancode-oracle-vb-puel-12",
-            "Oracle VB Extension Pack PUEL v12"
+            "Oracle VB Extension Pack PUEL v12",
+            "Oracle VirtualBox Extension Pack Personal Use and Educational License (PUEL) v12"
         ]
     },
     "rejected": [],

@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "nvidia-2002",
             "LicenseRef-scancode-nvidia-2002",
-            "NVIDIA 2002 License"
+            "NVIDIA 2002 License",
+            "nvidia-2002"
         ]
     },
     "rejected": [],

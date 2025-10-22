@@ -6,7 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-slint-royalty-free-1.0"
+            "LicenseRef-scancode-slint-royalty-free-1.0",
+            "Slint Royalty-free Desktop and Web Applications License, version 1.0.1",
+            "Slint Royalty-free License 1.0.1"
         ]
     },
     "rejected": [],

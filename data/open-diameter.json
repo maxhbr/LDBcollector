@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Open Diameter License",
-            "LicenseRef-scancode-open-diameter"
+            "LicenseRef-scancode-open-diameter",
+            "Open Diameter License"
         ]
     },
     "rejected": [],

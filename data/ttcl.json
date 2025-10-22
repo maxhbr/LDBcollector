@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ttcl",
             "Talis Community License",
-            "The Talis Community License",
-            "LicenseRef-scancode-ttcl"
+            "The Talis Community License"
         ]
     },
     "rejected": [],

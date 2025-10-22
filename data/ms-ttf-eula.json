@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS TrueType Fonts EULA",
+            "LicenseRef-scancode-ms-ttf-eula",
             "Microsoft TrueType Fonts EULA",
-            "LicenseRef-scancode-ms-ttf-eula"
+            "MS TrueType Fonts EULA"
         ]
     },
     "rejected": [],

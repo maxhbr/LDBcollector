@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Vixie Cron License",
-            "LicenseRef-scancode-vixie-cron"
+            "LicenseRef-scancode-vixie-cron",
+            "Vixie Cron License"
         ]
     },
     "rejected": [],

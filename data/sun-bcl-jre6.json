@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun BCL JRE 6",
-            "LicenseRef-scancode-sun-bcl-jre6"
+            "LicenseRef-scancode-sun-bcl-jre6",
+            "Sun BCL JRE 6"
         ]
     },
     "rejected": [],

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS Research Shared Source License",
+            "LicenseRef-scancode-ms-research-shared-source",
             "Microsoft Research Shared Source License",
-            "LicenseRef-scancode-ms-research-shared-source"
+            "MS Research Shared Source License"
         ]
     },
     "rejected": [],

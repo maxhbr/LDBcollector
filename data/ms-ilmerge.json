@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS ILMerge License",
-            "LicenseRef-scancode-ms-ilmerge"
+            "LicenseRef-scancode-ms-ilmerge",
+            "MS ILMerge License"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OWFa 1.0 - Patent and Copyright Grants",
-            "LicenseRef-scancode-owfa-1.0"
+            "LicenseRef-scancode-owfa-1.0",
+            "OWFa 1.0 - Patent and Copyright Grants"
         ]
     },
     "rejected": [],

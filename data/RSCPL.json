@@ -18,8 +18,8 @@
         ],
         "pypi": [
             "License :: OSI Approved :: Ricoh Source Code Public License",
-            "OSI Approved :: Ricoh Source Code Public License",
-            "License :: Ricoh Source Code Public License"
+            "License :: Ricoh Source Code Public License",
+            "OSI Approved :: Ricoh Source Code Public License"
         ]
     },
     "rejected": [],

@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "classpath-exception-2.0",
-            "Classpath exception to GPL 2.0 or later"
+            "Classpath exception to GPL 2.0 or later",
+            "classpath-exception-2.0"
         ]
     },
     "rejected": [],

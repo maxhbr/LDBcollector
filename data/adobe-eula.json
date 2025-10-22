@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Adobe EULA",
             "Adobe End User License Agreement",
+            "Adobe EULA",
             "LicenseRef-scancode-adobe-eula"
         ]
     },

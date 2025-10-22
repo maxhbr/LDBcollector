@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Synopsys Attribution License",
-            "LicenseRef-scancode-synopsys-attribution"
+            "LicenseRef-scancode-synopsys-attribution",
+            "Synopsys Attribution License"
         ]
     },
     "rejected": [],

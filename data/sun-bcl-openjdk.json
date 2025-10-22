@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun BCL OpenJDK",
-            "LicenseRef-scancode-sun-bcl-openjdk"
+            "LicenseRef-scancode-sun-bcl-openjdk",
+            "Sun BCL OpenJDK"
         ]
     },
     "rejected": [],

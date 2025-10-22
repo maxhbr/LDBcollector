@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "strongSwan exception to GPL",
-            "LicenseRef-scancode-strongswan-exception"
+            "LicenseRef-scancode-strongswan-exception",
+            "strongSwan exception to GPL"
         ]
     },
     "rejected": [],

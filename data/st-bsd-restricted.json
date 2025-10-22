@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "STMicro BSD Restricted",
-            "LicenseRef-scancode-st-bsd-restricted"
+            "LicenseRef-scancode-st-bsd-restricted",
+            "STMicro BSD Restricted"
         ]
     },
     "rejected": [],

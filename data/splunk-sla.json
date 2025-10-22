@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-splunk-sla",
             "Splunk SLA",
-            "Splunk Software License Agreement",
-            "LicenseRef-scancode-splunk-sla"
+            "Splunk Software License Agreement"
         ]
     },
     "rejected": [],

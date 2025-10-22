@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS .NET Framework Redistributable EULA",
+            "LicenseRef-scancode-ms-net-framework-deployment",
             "Microsoft .NET Framework Redistributable EULA",
-            "LicenseRef-scancode-ms-net-framework-deployment"
+            "MS .NET Framework Redistributable EULA"
         ]
     },
     "rejected": [],

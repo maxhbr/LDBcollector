@@ -12,13 +12,13 @@
             "The X.Net, Inc. License"
         ],
         "scancodeLicensedb": [
-            "xnet",
-            "Altera License"
+            "Altera License",
+            "xnet"
         ],
         "pypi": [
             "License :: OSI Approved :: X.Net License",
-            "OSI Approved :: X.Net License",
-            "License :: X.Net License"
+            "License :: X.Net License",
+            "OSI Approved :: X.Net License"
         ]
     },
     "rejected": [],

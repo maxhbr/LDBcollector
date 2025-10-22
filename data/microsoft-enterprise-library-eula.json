@@ -7,9 +7,9 @@
         "custom": [],
         "scancodeLicensedb": [
             "LicenseRef-scancode-microsoft-enterprise-library-eula",
-            "MS Enterprise Library EULA",
+            "LicenseRef-scancode-ms-enterprise-library-eula",
             "Microsoft Enterprise Library EULA",
-            "LicenseRef-scancode-ms-enterprise-library-eula"
+            "MS Enterprise Library EULA"
         ]
     },
     "rejected": [],

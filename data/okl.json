@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OKL license",
-            "LicenseRef-scancode-okl"
+            "LicenseRef-scancode-okl",
+            "OKL license"
         ]
     },
     "rejected": [],

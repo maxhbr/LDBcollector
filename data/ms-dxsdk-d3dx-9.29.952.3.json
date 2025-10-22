@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MS DXSDK.D3DX 9.29.952.3",
+            "LicenseRef-scancode-ms-dxsdk-d3dx-9.29.952.3",
             "Microsoft DXSDK.D3DX 9.29.952.3",
-            "LicenseRef-scancode-ms-dxsdk-d3dx-9.29.952.3"
+            "MS DXSDK.D3DX 9.29.952.3"
         ]
     },
     "rejected": [],

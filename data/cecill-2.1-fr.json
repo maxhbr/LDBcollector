@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "CeCILL Free Software License Agreement v2.1 French",
             "CeCILL 2.1 French",
+            "CeCILL Free Software License Agreement v2.1 French",
             "LicenseRef-scancode-cecill-2.1-fr"
         ]
     },

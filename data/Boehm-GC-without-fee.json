@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "STLport License 4.5",
             "LicenseRef-scancode-stlport-4.5",
+            "STLport License 4.5",
             "STLport License v4.5",
             "stlport-4.5"
         ]

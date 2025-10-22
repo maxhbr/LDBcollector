@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "BSD-2-Clause-NetBSD",
             "bsd-2-clause-netbsd",
-            "BSD-2-Clause-NetBSD License",
-            "BSD-2-Clause-NetBSD"
+            "BSD-2-Clause-NetBSD License"
         ]
     },
     "rejected": [],

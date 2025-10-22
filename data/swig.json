@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "SWIG Library License",
-            "LicenseRef-scancode-swig"
+            "LicenseRef-scancode-swig",
+            "SWIG Library License"
         ]
     },
     "rejected": [],

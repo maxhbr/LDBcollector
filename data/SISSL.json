@@ -16,16 +16,16 @@
             "sun-sissl-1.1"
         ],
         "pypi": [
-            "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
-            "OSI Approved :: Sun Industry Standards Source License (SISSL)",
-            "License :: Sun Industry Standards Source License (SISSL)",
-            "Sun Industry Standards Source License (SISSL)",
-            "License :: OSI Approved :: Sun Industry Standards Source License",
-            "OSI Approved :: Sun Industry Standards Source License",
-            "License :: Sun Industry Standards Source License",
             "License :: OSI Approved :: SISSL",
+            "License :: OSI Approved :: Sun Industry Standards Source License",
+            "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
+            "License :: SISSL",
+            "License :: Sun Industry Standards Source License",
+            "License :: Sun Industry Standards Source License (SISSL)",
             "OSI Approved :: SISSL",
-            "License :: SISSL"
+            "OSI Approved :: Sun Industry Standards Source License",
+            "OSI Approved :: Sun Industry Standards Source License (SISSL)",
+            "Sun Industry Standards Source License (SISSL)"
         ]
     },
     "rejected": [],

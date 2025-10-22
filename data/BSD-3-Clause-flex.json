@@ -9,10 +9,10 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-flex-2.5",
-            "flex-2.5",
             "Flex 2.5",
-            "Flex License v2.5"
+            "Flex License v2.5",
+            "flex-2.5",
+            "LicenseRef-scancode-flex-2.5"
         ]
     },
     "rejected": [],

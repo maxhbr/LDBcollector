@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "Intel BSD License",
             "intel-bsd",
-            "LicenseRef-scancode-intel-bsd",
-            "Intel BSD License"
+            "LicenseRef-scancode-intel-bsd"
         ]
     },
     "rejected": [],

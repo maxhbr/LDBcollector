@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-x11-bitstream",
             "x11-bitstream",
-            "X11-Style (Bitstream Charter)",
-            "LicenseRef-scancode-x11-bitstream"
+            "X11-Style (Bitstream Charter)"
         ]
     },
     "rejected": [],

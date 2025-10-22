@@ -12,17 +12,17 @@
             "Mozilla Public License, Version 1.0"
         ],
         "scancodeLicensedb": [
-            "mpl-1.0",
-            "MPL 1.0"
+            "MPL 1.0",
+            "mpl-1.0"
         ],
         "pypi": [
-            "License :: Mozilla Public License 1.0 (MPL)",
-            "OSI Approved :: Mozilla Public License 1.0 (MPL)",
-            "License :: OSI Approved :: Mozilla Public License 1.0",
             "License :: Mozilla Public License 1.0",
-            "OSI Approved :: Mozilla Public License 1.0",
+            "License :: Mozilla Public License 1.0 (MPL)",
+            "License :: OSI Approved :: Mozilla Public License 1.0",
             "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)",
-            "Mozilla Public License 1.0 (MPL)"
+            "Mozilla Public License 1.0 (MPL)",
+            "OSI Approved :: Mozilla Public License 1.0",
+            "OSI Approved :: Mozilla Public License 1.0 (MPL)"
         ]
     },
     "rejected": [

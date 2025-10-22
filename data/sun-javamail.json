@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun JavaMail",
-            "LicenseRef-scancode-sun-javamail"
+            "LicenseRef-scancode-sun-javamail",
+            "Sun JavaMail"
         ]
     },
     "rejected": [],

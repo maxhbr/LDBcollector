@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sun BCL OpenDMK",
-            "LicenseRef-scancode-sun-bcl-opendmk"
+            "LicenseRef-scancode-sun-bcl-opendmk",
+            "Sun BCL OpenDMK"
         ]
     },
     "rejected": [],

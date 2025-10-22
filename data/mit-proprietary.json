@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "mit-proprietary",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mit-proprietary",
+            "MIT Proprietary"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

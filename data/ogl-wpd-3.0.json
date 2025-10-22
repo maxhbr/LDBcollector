@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ogl-wpd-3.0",
             "OGL-WPD-3.0",
-            "Western Power Distribution Open Data Licence v3.0",
-            "LicenseRef-scancode-ogl-wpd-3.0"
+            "Western Power Distribution Open Data Licence v3.0"
         ]
     },
     "rejected": [],

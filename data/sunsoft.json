@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Sunsoft License",
-            "LicenseRef-scancode-sunsoft"
+            "LicenseRef-scancode-sunsoft",
+            "Sunsoft License"
         ]
     },
     "rejected": [],

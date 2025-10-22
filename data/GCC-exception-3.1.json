@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "gcc-exception-3.1",
-            "GCC Runtime Library Exception v3.1"
+            "GCC Runtime Library Exception v3.1",
+            "gcc-exception-3.1"
         ]
     },
     "rejected": [],

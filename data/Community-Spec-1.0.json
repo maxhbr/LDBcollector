@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "csl-1.0",
             "CSL-1.0",
+            "csl-1.0",
             "LicenseRef-scancode-csl-1.0"
         ]
     },

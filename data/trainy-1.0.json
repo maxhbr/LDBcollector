@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "trainy-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-trainy-1.0",
+            "Trainy Software License v1.0",
+            "Trainy Software License Version 1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

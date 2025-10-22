@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Netcat License",
-            "LicenseRef-scancode-netcat"
+            "LicenseRef-scancode-netcat",
+            "Netcat License"
         ]
     },
     "rejected": [],

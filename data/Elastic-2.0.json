@@ -10,8 +10,8 @@
         "custom": [],
         "scancodeLicensedb": [
             "Elastic License 2.0 (ELv2)",
-            "LicenseRef-scancode-elastic-license-v2",
-            "elastic-license-v2"
+            "elastic-license-v2",
+            "LicenseRef-scancode-elastic-license-v2"
         ]
     },
     "rejected": [],

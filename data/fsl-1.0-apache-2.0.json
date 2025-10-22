@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Functional Source License, Version 1.0, Apache 2.0 Change License",
             "FSL-1.0-Apache-2.0",
+            "Functional Source License, Version 1.0, Apache 2.0 Change License",
             "LicenseRef-scancode-fsl-1.0-apache-2.0"
         ]
     },

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Xiph Opus Patent License",
-            "LicenseRef-scancode-xiph-patent"
+            "LicenseRef-scancode-xiph-patent",
+            "Xiph Opus Patent License"
         ]
     },
     "rejected": [],

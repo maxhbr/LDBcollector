@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Solace-Software-EULA-2020",
-            "LicenseRef-scancode-solace-software-eula-2020"
+            "LicenseRef-scancode-solace-software-eula-2020",
+            "Solace-Software-EULA-2020"
         ]
     },
     "rejected": [],

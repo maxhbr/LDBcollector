@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Square Inc. Individual Contributor License Agreement",
+            "LicenseRef-scancode-square-cla",
             "Square CLA",
-            "LicenseRef-scancode-square-cla"
+            "Square Inc. Individual Contributor License Agreement"
         ]
     },
     "rejected": [],

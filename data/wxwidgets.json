@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "wxWidgets Licence",
-            "LicenseRef-scancode-wxwidgets"
+            "LicenseRef-scancode-wxwidgets",
+            "wxWidgets Licence"
         ]
     },
     "rejected": [],

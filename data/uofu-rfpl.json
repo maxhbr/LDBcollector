@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "UURF Public License",
+            "LicenseRef-scancode-uofu-rfpl",
             "University of Utah Research Foundation Public License",
-            "LicenseRef-scancode-uofu-rfpl"
+            "UURF Public License"
         ]
     },
     "rejected": [],

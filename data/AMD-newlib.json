@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-amd-historical",
+            "AMD Historical License",
             "amd-historical",
-            "AMD Historical License"
+            "LicenseRef-scancode-amd-historical"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Silicon Image Proprietary License 2007",
-            "LicenseRef-scancode-silicon-image-2007"
+            "LicenseRef-scancode-silicon-image-2007",
+            "Silicon Image Proprietary License 2007"
         ]
     },
     "rejected": [],

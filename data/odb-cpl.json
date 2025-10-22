@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-odb-cpl",
             "ODB Commercial Proprietary License (CPL)",
-            "ODB CPL",
-            "LicenseRef-scancode-odb-cpl"
+            "ODB CPL"
         ]
     },
     "rejected": [],

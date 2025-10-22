@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "x11-tiff",
-            "X11-Style (Tiff)"
+            "X11-Style (Tiff)",
+            "x11-tiff"
         ]
     },
     "rejected": [],

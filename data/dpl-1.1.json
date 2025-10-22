@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "DSTC Public License (DPL) v1.1",
             "DPL-1.1",
+            "DSTC Public License (DPL) v1.1",
             "LicenseRef-scancode-dpl-1.1"
         ]
     },

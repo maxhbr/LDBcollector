@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Zapatec DHTML Javascript Calendar License Agreement",
+            "LicenseRef-scancode-zapatec-calendar",
             "Zapatec Calendar License",
-            "LicenseRef-scancode-zapatec-calendar"
+            "Zapatec DHTML Javascript Calendar License Agreement"
         ]
     },
     "rejected": [],

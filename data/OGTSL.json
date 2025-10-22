@@ -16,8 +16,8 @@
         ],
         "pypi": [
             "License :: Open Group Test Suite License",
-            "OSI Approved :: Open Group Test Suite License",
-            "License :: OSI Approved :: Open Group Test Suite License"
+            "License :: OSI Approved :: Open Group Test Suite License",
+            "OSI Approved :: Open Group Test Suite License"
         ]
     },
     "rejected": [],

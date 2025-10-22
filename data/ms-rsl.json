@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-rsl",
             "Microsoft Reference Source License",
-            "MS Reference Source License",
-            "LicenseRef-scancode-ms-rsl"
+            "MS Reference Source License"
         ]
     },
     "rejected": [],

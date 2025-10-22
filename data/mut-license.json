@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "muT-License",
-            "LicenseRef-scancode-mut-license"
+            "LicenseRef-scancode-mut-license",
+            "muT-License"
         ]
     },
     "rejected": [],

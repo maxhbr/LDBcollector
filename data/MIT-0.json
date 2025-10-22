@@ -10,21 +10,21 @@
         "custom": [],
         "scancodeLicensedb": [
             "LicenseRef-scancode-ekioh",
-            "MIT-0-Clause",
-            "mit-0"
+            "mit-0",
+            "MIT-0-Clause"
         ],
         "pypi": [
-            "License :: MIT No Attribution License (MIT-0)",
-            "OSI Approved :: MIT No Attribution License (MIT-0)",
-            "License :: OSI Approved :: MIT No Attribution License",
             "License :: MIT No Attribution License",
-            "OSI Approved :: MIT No Attribution License",
-            "License :: OSI Approved :: MIT-0",
+            "License :: MIT No Attribution License (MIT-0)",
             "License :: MIT-0",
-            "OSI Approved :: MIT-0",
+            "License :: OSI Approved :: MIT No Attribution License",
             "License :: OSI Approved :: MIT No Attribution License (MIT-0)",
+            "License :: OSI Approved :: MIT-0",
             "MIT No Attribution License",
-            "MIT No Attribution License (MIT-0)"
+            "MIT No Attribution License (MIT-0)",
+            "OSI Approved :: MIT No Attribution License",
+            "OSI Approved :: MIT No Attribution License (MIT-0)",
+            "OSI Approved :: MIT-0"
         ]
     },
     "rejected": [],

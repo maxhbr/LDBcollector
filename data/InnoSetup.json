@@ -9,8 +9,8 @@
             "Inno Setup License"
         ],
         "scancodeLicensedb": [
-            "LicenseRef-scancode-inno-setup",
-            "inno-setup"
+            "inno-setup",
+            "LicenseRef-scancode-inno-setup"
         ]
     },
     "rejected": [],

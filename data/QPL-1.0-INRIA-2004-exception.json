@@ -14,8 +14,8 @@
     },
     "rejected": [],
     "risky": [
-        "LicenseRef-scancode-inria-linking-exception",
-        "inria-linking-exception"
+        "inria-linking-exception",
+        "LicenseRef-scancode-inria-linking-exception"
     ],
     "isMajorVersionOnly": true
 }

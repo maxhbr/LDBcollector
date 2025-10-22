@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "TreeView Developer License",
-            "LicenseRef-scancode-treeview-developer"
+            "LicenseRef-scancode-treeview-developer",
+            "TreeView Developer License"
         ]
     },
     "rejected": [],

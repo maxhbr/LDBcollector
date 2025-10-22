@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MIT Old Style",
-            "LicenseRef-scancode-mit-old-style"
+            "LicenseRef-scancode-mit-old-style",
+            "MIT Old Style"
         ]
     },
     "rejected": [],

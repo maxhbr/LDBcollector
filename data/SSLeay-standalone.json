@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "ssleay-windows",
             "LicenseRef-scancode-ssleay-windows",
-            "Original SSLeay License with Windows Clause"
+            "Original SSLeay License with Windows Clause",
+            "ssleay-windows"
         ]
     },
     "rejected": [],

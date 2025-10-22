@@ -9,9 +9,9 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "rrdtool-floss-exception-2.0",
+            "LicenseRef-scancode-rrdtool-floss-exception-2.0",
             "RRDtool FLOSS Exception to GPL 2.0",
-            "LicenseRef-scancode-rrdtool-floss-exception-2.0"
+            "rrdtool-floss-exception-2.0"
         ]
     },
     "rejected": [],

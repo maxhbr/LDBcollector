@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-toppers-license",
             "TOPPERS License",
-            "TOPPERS License Agreement",
-            "LicenseRef-scancode-toppers-license"
+            "TOPPERS License Agreement"
         ]
     },
     "rejected": [],

@@ -12,9 +12,9 @@
             "The Sybase Open Source Licence"
         ],
         "scancodeLicensedb": [
-            "Sybase Open Watcom Public License v1.0",
             "Open Watcom 1.0",
-            "sybase"
+            "sybase",
+            "Sybase Open Watcom Public License v1.0"
         ]
     },
     "rejected": [],

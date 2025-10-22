@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "mui-x-eula-2024",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mui-x-eula-2024",
+            "MUI X End User License Agreement 2024"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

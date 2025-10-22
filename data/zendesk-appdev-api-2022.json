@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Zendesk Application Developer and API Agreement 2022",
+            "LicenseRef-scancode-zendesk-appdev-api-2022",
             "Zendesk AppDev API Agreement 2022",
-            "LicenseRef-scancode-zendesk-appdev-api-2022"
+            "Zendesk Application Developer and API Agreement 2022"
         ]
     },
     "rejected": [],

@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "ltxv-owl-2025-04-17",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ltxv-owl-2025-04-17",
+            "LTXV Open Weights License 2025-04-17"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -9,8 +9,8 @@
         ],
         "custom": [],
         "scancodeLicensedb": [
-            "NRL permission",
             "LicenseRef-scancode-nrl-permission",
+            "NRL permission",
             "nrl-permission"
         ]
     },

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Service Availability Forum License",
-            "LicenseRef-scancode-saf"
+            "LicenseRef-scancode-saf",
+            "Service Availability Forum License"
         ]
     },
     "rejected": [],

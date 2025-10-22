@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Tested Software License",
-            "LicenseRef-scancode-tested-software"
+            "LicenseRef-scancode-tested-software",
+            "Tested Software License"
         ]
     },
     "rejected": [],

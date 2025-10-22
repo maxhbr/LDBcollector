@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Lontium Linux Firmware License",
-            "LicenseRef-scancode-lontium-linux-firmware"
+            "LicenseRef-scancode-lontium-linux-firmware",
+            "Lontium Linux Firmware License"
         ]
     },
     "rejected": [],

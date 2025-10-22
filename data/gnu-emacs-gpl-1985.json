@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "gnu-emacs-gpl-1985",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "GNU emacs General Public License 1985",
+            "LicenseRef-scancode-gnu-emacs-gpl-1985"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

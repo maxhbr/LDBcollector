@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "kvirc-openssl-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "kvirc OpenSSL Exception"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

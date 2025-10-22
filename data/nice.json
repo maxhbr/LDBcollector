@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Nice License",
-            "LicenseRef-scancode-nice"
+            "LicenseRef-scancode-nice",
+            "Nice License"
         ]
     },
     "rejected": [],

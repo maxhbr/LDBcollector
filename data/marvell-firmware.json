@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Marvell Firmware License",
-            "LicenseRef-scancode-marvell-firmware"
+            "LicenseRef-scancode-marvell-firmware",
+            "Marvell Firmware License"
         ]
     },
     "rejected": [],

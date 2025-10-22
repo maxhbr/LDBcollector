@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "ecl-gcl-2019",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "ECL graph converter license 2019",
+            "LicenseRef-scancode-ecl-gcl-2019"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

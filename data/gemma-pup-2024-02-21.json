@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "gemma-pup-2024-02-21",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Gemma Prohibited Use Policy 2024-02-21",
+            "LicenseRef-scancode-gemma-pup-2024-02-21"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

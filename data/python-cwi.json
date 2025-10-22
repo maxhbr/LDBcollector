@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-python-cwi",
             "Python CWI License",
-            "Python CWI License Agreement",
-            "LicenseRef-scancode-python-cwi"
+            "Python CWI License Agreement"
         ]
     },
     "rejected": [],

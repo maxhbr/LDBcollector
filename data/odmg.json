@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ODMG License",
-            "LicenseRef-scancode-odmg"
+            "LicenseRef-scancode-odmg",
+            "ODMG License"
         ]
     },
     "rejected": [],

@@ -6,9 +6,9 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
+            "LicenseRef-scancode-rh-eula",
             "Red Hat EULA",
-            "Red Hat EULA for Enterprise Linux and Applications",
-            "LicenseRef-scancode-rh-eula"
+            "Red Hat EULA for Enterprise Linux and Applications"
         ]
     },
     "rejected": [],

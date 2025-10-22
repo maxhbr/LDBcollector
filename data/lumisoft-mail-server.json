@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "LumiSoft Mail Server License",
-            "LicenseRef-scancode-lumisoft-mail-server"
+            "LicenseRef-scancode-lumisoft-mail-server",
+            "LumiSoft Mail Server License"
         ]
     },
     "rejected": [],

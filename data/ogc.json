@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "OGC Software Notice",
-            "LicenseRef-scancode-ogc"
+            "LicenseRef-scancode-ogc",
+            "OGC Software Notice"
         ]
     },
     "rejected": [],

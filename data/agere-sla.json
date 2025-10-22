@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "Agere WindModem EULA",
             "Agere Systems WinModem EULA",
+            "Agere WindModem EULA",
             "LicenseRef-scancode-agere-sla"
         ]
     },

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "ATI Software EULA",
             "ATI Software End User License Agreement",
+            "ATI Software EULA",
             "LicenseRef-scancode-ati-eula"
         ]
     },

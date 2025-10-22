@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "MX4J License 1.0",
-            "LicenseRef-scancode-mx4j"
+            "LicenseRef-scancode-mx4j",
+            "MX4J License 1.0"
         ]
     },
     "rejected": [],

@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-R5",
-            "LicenseRef-scancode-x11-x11r5"
+            "LicenseRef-scancode-x11-x11r5",
+            "X11-R5"
         ]
     },
     "rejected": [],

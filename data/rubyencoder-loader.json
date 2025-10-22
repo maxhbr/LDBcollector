@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "RubyEncoder Loader Licence",
-            "LicenseRef-scancode-rubyencoder-loader"
+            "LicenseRef-scancode-rubyencoder-loader",
+            "RubyEncoder Loader Licence"
         ]
     },
     "rejected": [],

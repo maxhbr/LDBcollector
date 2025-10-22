@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "fair-ai-public-1.0-sd",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Fair AI Public License 1.0-SD",
+            "LicenseRef-scancode-fair-ai-public-1.0-sd"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

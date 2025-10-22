@@ -15,9 +15,9 @@
             "postgresql"
         ],
         "pypi": [
+            "License :: OSI Approved :: PostgreSQL License",
             "License :: PostgreSQL License",
-            "OSI Approved :: PostgreSQL License",
-            "License :: OSI Approved :: PostgreSQL License"
+            "OSI Approved :: PostgreSQL License"
         ]
     },
     "rejected": [],

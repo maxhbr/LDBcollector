@@ -6,8 +6,8 @@
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
-            "X11-Style (Acer)",
-            "LicenseRef-scancode-x11-acer"
+            "LicenseRef-scancode-x11-acer",
+            "X11-Style (Acer)"
         ]
     },
     "rejected": [],
