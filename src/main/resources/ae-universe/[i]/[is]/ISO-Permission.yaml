@@ -10,6 +10,9 @@ openCoDEStatus: "not approved"
 
 alternativeNames:
   - "ISO Permission"
+  - "International Organization for Standardization SGML"
+  - "ISO SGML License"
+  - "ISO-SGML-License"
 
 otherIds: 
   - "scancode:iso-8879"

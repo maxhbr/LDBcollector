@@ -8,3 +8,5 @@ shortName: "ASN1SCC-Exception"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:asn1cc-exception-gpl-2.0"

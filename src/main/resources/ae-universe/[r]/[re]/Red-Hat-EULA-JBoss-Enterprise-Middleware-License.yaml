@@ -4,7 +4,7 @@
 
 canonicalName: "Red Hat EULA JBoss Enterprise Middleware License"
 category: "Red Hat EULA JBoss Enterprise Middleware"
-shortName: "RH-EULA-LGPL"
+shortName: "RH-EULA-JBoss-Enterprise-Middleware"
 
 otherIds: 
   - "scancode:rh-eula-lgpl"

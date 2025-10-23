@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "EMQX Exception (BSL-1.1)"
+category: "EMQX Exception"
+shortName: "EMQX-Exception-BSL-1.1"
+
+canonicalNameHistory:
+  - "EMQX Exception (Business Source License 1.1)"
+
+type: "exception"
+
+alternativeNames:
+  - "EMQX Additional Use Grant for BSL 1.1"
+  - "EMQX additional use grant for BSL"
+

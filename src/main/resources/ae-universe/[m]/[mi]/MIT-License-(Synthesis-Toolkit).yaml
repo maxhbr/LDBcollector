@@ -6,5 +6,11 @@ canonicalName: "MIT License (Synthesis Toolkit)"
 category: "MIT"
 shortName: "MIT-Synthesis-Toolkit"
 
+alternativeNames:
+  - "MIT License (Synthesis Toolkit)"
+  - "MIT Synthesis ToolKit License (STK)"
+  - "The Synthesis ToolKit in C++ (STK)"
+  - "MIT-Synthesis-Toolki"
+
 otherIds: 
   - "scancode:synthesis-toolkit"

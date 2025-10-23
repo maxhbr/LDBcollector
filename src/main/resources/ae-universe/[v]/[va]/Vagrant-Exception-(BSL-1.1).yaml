@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Vagrant Exception (BSL-1.1)"
+category: "Vagrant Exception"
+shortName: "Vagrant-Exception-BSL-1.1"
+
+canonicalNameHistory:
+  - "Vagrant Exception (Business Source License 1.1)"
+
+type: "exception"
+
+alternativeNames:
+  - "Vagrant Additional Use Grant for BSL 1.1"
+  - "Vagrant additional use grant for BSL"
+  - "Hashicorp BSL additional use grant"
+

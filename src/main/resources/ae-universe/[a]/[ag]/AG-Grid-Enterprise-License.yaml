@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "AG Grid Enterprise License"
+category: "AG Grid Enterprise"
+shortName: "AG-Grid-Enterprise-License"
+
+alternativeNames:
+  - "These Terms are framework terms further to which the parties may enter into a Licence Quote in respect of Services to be provided by the Licensor to the Licensee"
+  - "The parties may also, from time to time after the Licence Quote enter into additional quotes (whether in online, electronic or printed form) in respect of: (a) additional Licensee Developers, Production Environment(s) and/or to add on a Single Application Developer Licence, Multiple Applications Developer Licence and/or Deployment Licence Add-On in excess of the terms set out in the Licence Quote (together referred to as 'Additional Usage'); or (b) a renewed period of Support Services, (each an 'Additional Quote')"
+  - "Each such Licence Quote and Additional Quote (each a 'Quote' and together referred to as a 'Quotes'), once agreed in accordance with clause 2.3, shall constitute a separate contract for the provision of the Services specified in such Quote, incorporating these Terms"
+  - "The Licensor will only provide Services to the Licensee further to a Quote. No Quote shall be binding on either party unless and until agreed by both parties"
+  - "All Quotes entered into with the Licensee will be subject to the terms set out in these Terms"
+  - "No terms or conditions endorsed upon, delivered with or contained in any quotation, estimate, correspondence, acknowledgement or acceptance of order or any similar document issued by the Licensee shall form part of any contract between the Licensor and the Licensee"
+  - "The purchase of Additional Usage will entitle the Licensee to the provision of extended Support Services for a period of 1 year from the relevant Quote Effective Date (or such other period as expressly set out in any Quote)"
+  - "In the event of any conflict or inconsistency between the terms of these Terms and the terms of any Quote, the terms of the relevant Quote shall prevail only to the extent of any such conflict or inconsistency"
+
+otherIds: 
+  - "scancode:ag-grid-enterprise"

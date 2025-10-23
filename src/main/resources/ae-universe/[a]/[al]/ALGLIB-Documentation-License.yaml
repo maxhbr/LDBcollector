@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "ALGLIB Documentation License"
-category: "ALGLIB Documentation License"
-shortName: "ALGLIB-Documentation-License"
+category: "ALGLIB Documentation"
+shortName: "ALGLIB-Documentation"
 
 alternativeNames:
   - "ALGLIB Documentation License"
