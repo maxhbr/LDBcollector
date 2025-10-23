@@ -19,7 +19,7 @@ from licenselynx.licenselynx import LicenseLynx
 # Map the license name
 license_object = LicenseLynx.map("licenseName")
 
-print(license_object.canonical)
+print(license_object.id)
 print(license_object.src)
 
 # Map the license name with risky mappings enabled
