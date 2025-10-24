@@ -1,0 +1,3 @@
+[license]
+expression = "GPL-2.0-or-later WITH kvirc-openssl-exception"
+status = [ "allowed" ]
