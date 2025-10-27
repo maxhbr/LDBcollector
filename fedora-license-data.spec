@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.72
+Version:        1.73
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,19 @@ make check-grammar
 
 
 %changelog
+* Mon Oct 27 2025 Miroslav Suchý <msuchy@redhat.com> 1.73-1
+- add dedications from linux-firmware from qcom/NOTICE.txt
+- add LGPL-2.0-only WITH Classpath-exception-2.0-short
+- add OSSP license
+- add GPL-3.0-or-later WITH GCC-exception-2.0
+- add hyphen-bulgarian license
+- add GPL-2.0-or-later WITH kvirc-openssl-exception
+- add LICENCE.siano from linux-firmware to firmware.txt
+- add HPND-SMC
+- removed LicenseRef-Fedora-Temporary-IJG
+- add LicenseRef-Fedora-Wadalab
+- rename LicenseRef-Fedora-Temporary-* to AdditionRef-Fedora-Temporary-*
+
 * Tue Sep 23 2025 Miroslav Suchý <msuchy@redhat.com> 1.72-1
 - rebuild
 
