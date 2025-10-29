@@ -12,6 +12,8 @@
         "BSD-4-Clause-UC",
         "scancode://bsd-original-uc",
         "BSD-Original-UC",
-        "bsd-original-uc"
+      "bsd-original-uc",
+      "bsd-4-clause-uc",
+      "bsd-4-clause-ucb"
     ]
 }

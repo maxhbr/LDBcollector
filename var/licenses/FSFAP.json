@@ -1,19 +1,20 @@
 {
-    "meta": {
-        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
-    },
-    "name": "FSF All Permissive License",
-    "scancode_key": "fsf-ap",
-    "spdxid": "FSFAP",
-    "aliases": [
-        "FSFAP",
-        "FSF All Permissive license",
-        "FSF All Permissive License",
-        "scancode://fsf-ap",
-        "FSF All Permissive",
-        "FSF all permissive",
-        "scancode:fsf-ap",
-        "fsf-ap"
-    ]
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "FSF All Permissive License",
+  "scancode_key": "fsf-ap",
+  "spdxid": "FSFAP",
+  "aliases": [
+   "FSF All Permissive license",
+   "FSF All Permissive License",
+   "FSFAP",
+   "scancode://fsf-ap",
+   "FSF all permissive",
+   "FSF All Permissive",
+    "scancode:fsf-ap",
+    "fsf-ap",
+    "fsfap"
+  ]
 }

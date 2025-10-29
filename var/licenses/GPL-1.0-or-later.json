@@ -30,6 +30,7 @@
     "gpl-1.0-plus",
     "GPL 1+",
     "GNU General Public License-1+",
-    "gpl-1+"
+    "gpl-1+",
+    "gpl-1.0-or-later"
   ]
 }

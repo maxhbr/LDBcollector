@@ -10,7 +10,7 @@
 # 
 
 SCRIPT_DIR=$(dirname ${BASH_SOURCE[0]})/../
-cat $1 | while read LICENSE
+cat $1 | grep -v "^#" | while read LICENSE
 do
     COMMENT=$(echo $LICENSE | grep -c "^#")
     if [ $COMMENT -ne 0 ]

@@ -12,6 +12,7 @@
    "LicenseRef-scancode-cmu-template",
    "MIT-CMU",
    "scancode://cmu-template",
-   "scancode://cmu-uc"
+   "scancode://cmu-uc",
+    "mit-cmu"
   ]
 }

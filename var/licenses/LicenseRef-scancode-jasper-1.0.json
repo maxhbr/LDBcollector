@@ -3,12 +3,9 @@
     "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
     "comment": ""
   },
-  "name": "ICU License",
-  "scancode_key": "x11", 
-  "spdxid": "ICU",
+  "name": "Jasper Reports License 1.0",
+  "scancode_key": "jasper-1.0",
+  "spdxid": "LicenseRef-scancode-jasper-1.0",
   "aliases": [
-      "ICU License",
-    "ICU Licens",
-    "icu"
   ]
 }

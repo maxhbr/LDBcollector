@@ -1,0 +1,22 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "JasPer License 2.0",
+  "scancode_key": "jasper-2.0",
+  "spdxid": "JasPer-2.0",
+  "aliases": [
+   "JasPer 2.0",
+   "JasPer-2.0",
+   "JasPer License",
+   "JasPer License 2.0",
+   "JasPer License Version 2.0",
+   "scancode://jasper-2.0",
+   "JasPer",
+   "JasPer License, 2.0",
+   "JasPer License v2.0",
+   "JasPer, Version 2.0",
+   "scancode:jasper-2.0"
+  ]
+}
