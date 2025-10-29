@@ -56,8 +56,8 @@ Current support:
 
 |Type            | Number |
 |----------------|--------|
-|Licenses        | 210    |
-|Aliases         | 2934   |
+|Licenses        | 212    |
+|Aliases         | 3003   |
 |Compatibilities | 22     |
 |Operators       | 14     |
 |Ambiguities     | 171    |
