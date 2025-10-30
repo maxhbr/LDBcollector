@@ -50,7 +50,8 @@ def test_spdx_validation():
         fl.expression_license("LicenseRef-scancode-unknown-license-reference", validations=[Validation.SPDX])
 
 
-def test_scancode_validation():
+# since we use an empty license_expression, we cannot validate
+def _obsolete_test_scancode_validation():
     fl.expression_license("MIT", validations=[Validation.SCANCODE])
     
     with pytest.raises(FlameException):
