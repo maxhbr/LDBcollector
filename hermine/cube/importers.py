@@ -190,32 +190,36 @@ def import_hkissbom_json_file(
 
     if replace:
         Usage.objects.filter(release=release_id).delete()
-
-    for package in data:
-        purl = PackageURL.from_string(package.get("purl"))
-        comp_name = f"{purl.namespace}/{purl.name}" if purl.namespace else purl.name
-        version_number = f"{purl.version}"
-        declared_licenses = package.get("license")
-        spdx_valid_license = declared_licenses if is_valid(declared_licenses) else ""
-        project_name = package.get("subproject") or default_project_name
-        scope_name = package.get("scope") or default_scope_name
-        add_dependency(
-            release_id,
-            purl.type,
-            comp_name,
-            {
-                "description": package.get("description", ""),
-                "homepage_url": package.get("homepage_url", ""),
-            },
-            version_number,
-            declared_licenses,
-            spdx_valid_license,
-            linking,
-            component_update_mode,
-            package.get("purl"),
-            project_name,
-            scope_name,
-        )
+    try:
+        for package in data:
+            purl = PackageURL.from_string(package.get("purl"))
+            comp_name = f"{purl.namespace}/{purl.name}" if purl.namespace else purl.name
+            version_number = f"{purl.version}"
+            declared_licenses = package.get("license")
+            spdx_valid_license = (
+                declared_licenses if is_valid(declared_licenses) else ""
+            )
+            project_name = package.get("subproject") or default_project_name
+            scope_name = package.get("scope") or default_scope_name
+            add_dependency(
+                release_id,
+                purl.type,
+                comp_name,
+                {
+                    "description": package.get("description", ""),
+                    "homepage_url": package.get("homepage_url", ""),
+                },
+                version_number,
+                declared_licenses,
+                spdx_valid_license,
+                linking,
+                component_update_mode,
+                package.get("purl"),
+                project_name,
+                scope_name,
+            )
+    except Exception:
+        raise SBOMImportFailure("This is not a valid JSON file.")
 
 
 @transaction.atomic()

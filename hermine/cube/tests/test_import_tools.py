@@ -9,7 +9,12 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
 
-from cube.importers import import_spdx_file, import_cyclonedx_file, SBOMImportFailure
+from cube.importers import (
+    import_spdx_file,
+    import_cyclonedx_file,
+    import_hkissbom_json_file,
+    SBOMImportFailure,
+)
 from cube.models import (
     Generic,
     Usage,
@@ -294,3 +299,18 @@ class ImportCycloneDXTestCase(TestCase):
         with open("cube/fixtures/proton-bridge-v1.8.0.cyclonedx-bom.json") as f:
             import_cyclonedx_file(f, 1)
         self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 203)
+
+
+class ImportHKissbomTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_invalid_hkissbom(self):
+        # not an hkissbom file
+        with open("cube/fixtures/fake_sbom.json") as f:
+            with self.assertRaises(SBOMImportFailure):
+                import_hkissbom_json_file(f, 1)
+
+    def test_valid_hkissbom(self):
+        with open("cube/fixtures/hermine.poetry.kissbom.json") as f:
+            import_hkissbom_json_file(f, 1)
+        self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 123)
