@@ -78,7 +78,7 @@
                 "Strong Copyleft"
             ],
             "name": "Copyleft with mere aggregation exception",
-            "verbatim": "\u2022\tIII.SCOPE OF LICENSE \r\nThe following license terms apply to all Open Publication works, unless otherwise explicitly stated in the document.\r\nMere aggregation of Open Publication works or a portion of an Open Publication work with other works or programs on the same media shall not cause this license to apply to those other works.  The aggregate work shall contain a notice specifying the inclusion of the Open Publication material and appropriate copyright notice.",
+            "verbatim": "•\tIII.SCOPE OF LICENSE \r\nThe following license terms apply to all Open Publication works, unless otherwise explicitly stated in the document.\r\nMere aggregation of Open Publication works or a portion of an Open Publication work with other works or programs on the same media shall not cause this license to apply to those other works.  The aggregate work shall contain a notice specifying the inclusion of the Open Publication material and appropriate copyright notice.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"

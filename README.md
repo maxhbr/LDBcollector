@@ -15,5 +15,4 @@ If you want to get the data in an importable form even if they have not been rel
 ```shell
 python to_dist.py
 ```
-
 This will generate a `shared.json` in the `dist` folder, that you can use like the one you would get from the link above.
