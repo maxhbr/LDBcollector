@@ -195,7 +195,7 @@ def import_hkissbom_json_file(
             purl = PackageURL.from_string(package.get("purl"))
             comp_name = f"{purl.namespace}/{purl.name}" if purl.namespace else purl.name
             version_number = f"{purl.version}"
-            declared_licenses = package.get("license")
+            declared_licenses = package.get("license") or ""
             spdx_valid_license = (
                 declared_licenses if is_valid(declared_licenses) else ""
             )
@@ -218,8 +218,9 @@ def import_hkissbom_json_file(
                 project_name,
                 scope_name,
             )
-    except Exception:
-        raise SBOMImportFailure("This is not a valid JSON file.")
+    except Exception as e:
+        logger.error(e)
+        raise SBOMImportFailure("This is not a valid Hermine Kissbom file.")
 
 
 @transaction.atomic()
