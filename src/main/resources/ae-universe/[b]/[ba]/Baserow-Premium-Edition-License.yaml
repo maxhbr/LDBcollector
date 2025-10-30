@@ -9,3 +9,5 @@ shortName: "Baserow-Premium-Edition"
 alternativeNames:
   - "The Baserow Premium Edition license (the \"PE License\")"
 
+otherIds: 
+  - "scancode:baserow-pe-2019"

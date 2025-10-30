@@ -9,3 +9,5 @@ shortName: "Baserow-Enterprise-Edition"
 alternativeNames:
   - "Baserow Enterprise Edition License (the \"EE License\")"
 
+otherIds: 
+  - "scancode:baserow-ee-2019"

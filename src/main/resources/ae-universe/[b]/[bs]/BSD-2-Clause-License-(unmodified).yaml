@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "BSD 2-Clause License (unmodified)"
+category: "BSD"
+shortName: "BSD-2-Clause-unmodified"
+
+alternativeNames:
+  - "BSD Simplified with unmodified requirement"
+  - "BSD unmodified"
+
+otherIds: 
+  - "scancode:bsd-unmodified"

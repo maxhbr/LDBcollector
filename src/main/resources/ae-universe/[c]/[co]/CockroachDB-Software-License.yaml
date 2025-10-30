@@ -6,3 +6,5 @@ canonicalName: "CockroachDB Software License"
 category: "CockroachDB License"
 shortName: "CockroachDB-Software"
 
+otherIds: 
+  - "scancode:cockroachdb-2024-10-01"

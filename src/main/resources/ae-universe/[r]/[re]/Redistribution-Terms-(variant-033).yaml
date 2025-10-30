@@ -10,3 +10,5 @@ canonicalNameHistory:
   - "BSD 3-Clause License Var018"
   - "BSD 3-Clause License (variant 018)"
 
+otherIds: 
+  - "scancode:bsd-endorsement-allowed"

@@ -6,3 +6,5 @@ canonicalName: "BSD 2-Clause License (variant 016)"
 category: "BSD"
 shortName: "BSD-2-Clause-016"
 
+otherIds: 
+  - "scancode:bsd-2-clause-pkgconf-disclaimer"
