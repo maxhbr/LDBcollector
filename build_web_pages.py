@@ -89,9 +89,38 @@ def create_comp_action_page(data, map_comp_actions_licenses):
 def create_licence_page(data):
     comp_action_list = list()
     html_output = f"""<h2>{data["long_name"]}</h2>
-    <p>Copyleft :{data["copyleft"]} </p>
-    <p>Actual FOSS licence : {data["foss"]}</p>
+    <table class= " table is-bordered">
+      <tbody>
+      <tr>
+      <th class="is-light">SPDX ID</th><td><a href="https://spdx.org/licenses/{data["spdx_id"]}.html">{data["spdx_id"]}</td>
+      <th class="is-light">Steward</th><td>{data["steward"]}</td>
+      </tr>
+      <tr>
+      <th class="is-light">Copyleft</th><td>{data["copyleft"]}</td>
+            <th class="is-light">Actually <abbr title="Free Open Source Software">FOSS</abbr></th><td>{data["foss"]}</td>
+            </tr>
+            <tr>
+            <th class="is-light">Approved by the <abbr title="Free Software Foundation">FSF</abbr></th><td>{data["fsf_approved"]}</td>
+            <th class="is-light">Approved by the <abbr title="Open Source Initiative">OSI</abbr></th><td>{data["osi_approved"]}</td>
+            </tr>
+            <tr>
+            <th class="is-light">Explicitely grants patents rights</th><td>{data["patent_grant"]}</td>
+            <th class="is-light">Explicitely prevents tivoïzation </th><td>{data["non_tivoisation"]}</td>
+            </tr>
+            <tr>
+            <th class="is-light">Restricted to non-commercial use</th><td>{data["non_commercial"]}</td>
+            <th class="is-light">Restricted to ethical use</th><td>{data["ethical_clause"]}</td>
+            </tr>
+
+            <tr>
+            <th class="is-light">Choice of law</th><td>{data["law_choice"]}</td>
+            <th class="is-light">Choice of venue</th><td>{data["venue_choice"]}</td>
+      </tr>
+      </tbody>
+    </table>
     """
+
+
     if data.get("obligations") and len(data["obligations"]) > 0:
         html_output += f"""
         <h3> Obligations attached to this license</h3>"""
@@ -102,7 +131,7 @@ def create_licence_page(data):
                 html_output += f"""
             <p> Related to generic compliance action : <a href="../compliance_actions/{normalize(obligation["generic"][0])}.html">{obligation["generic"][0]}</a></p>
 
-            <p>{obligation["verbatim"]}</p>
+            <blockquote>{obligation["verbatim"]}</blockquote>
             """
 
     else:
