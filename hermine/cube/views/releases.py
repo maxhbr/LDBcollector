@@ -351,7 +351,7 @@ class ScopeUsagesDeleteView(
     template_name = "cube/scope_usages_delete.html"
 
     def get_success_url(self):
-        return reverse("cube:release_summary", kwargs={"release_pk": self.release.pk})
+        return reverse("cube:release_summary", args=[self.release.id])
 
     def get_queryset(self):
         qs = Usage.objects.filter(release=self.kwargs["release_pk"])
