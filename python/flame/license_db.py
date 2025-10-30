@@ -501,14 +501,12 @@ class FossLicenses:
             except boolean.boolean.ParseError as e:
                 update_problem = f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}'
                 updated_license = updates_object['license_expression']
-                print("2")
         else:
             try:
                 updated_license = str(self.license_expression.parse(ret['license_expression']))
             except boolean.boolean.ParseError as e:
                 update_problem = f'Could not parse "ret["license_expression"]". Exception: {e}'
                 updated_license = ret['license_expression']
-                print("3")
 
         license_parsed = updated_license
 
@@ -881,8 +879,9 @@ class FossLicenses:
     def __validate_license_scancode(self, expr):
         """
         """
+        return
+        # since we use an empty license_expression, we cannot validate
         expr_info = self.license_expression.validate(expr)
-
         if expr_info.errors:
             raise FlameException(f'License validation of "{expr}" failed. Errors: "{", ".join(expr_info.errors)}"')
 
