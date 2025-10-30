@@ -1,9 +1,9 @@
 # Hermine-data
 
-This repo is meant to host shared data (licences and compliance actions) related to the Hermine project.
+This repo hosts the shared data (licences and compliance actions) related to the Hermine project.
 It is still very much a work in progress.
 
-Default licence for this repo is  ODbL-1.0.
+Default licence for this repo is [CC-BY-SA-4.0](https://www.creativecommons.org/licenses/by-sa/4.0/deed.fr).
 
 Download the latest [shared.json](https://gitlab.com/hermine-project/community-data/-/releases/permalink/latest/downloads/shared.json) file and refer to [Hermine's documentation](https://docs.hermine-foss.org/reference_data.html) to import them in your Hermine instance.
 
