@@ -184,6 +184,18 @@ class UploadORTSerializer(serializers.Serializer):
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
 
 
+class UploadHKBSerializer(serializers.Serializer):
+    hkb_file = serializers.FileField(validators=[validate_file_size])
+    release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
+    replace = serializers.BooleanField(default=False, required=False)
+    linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
+
+
 class DependencySerializer(serializers.Serializer):
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     purl_type = serializers.CharField(max_length=200, required=True)

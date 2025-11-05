@@ -1,0 +1,981 @@
+[
+    {
+        "purl": "pkg:pypi/alabaster@0.7.16",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A light, configurable Sphinx theme",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/arrow@1.3.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Better dates & times for Python",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "ASGI specs, helper code, and adapters",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/attrs@25.3.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Classes Without Boilerplate",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/babel@2.17.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Internationalization utilities",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/beartype@0.21.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Unbearably fast near-real-time hybrid runtime-static type-checking in pure Python.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/binaryornot@0.4.4",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Ultra-lightweight pure Python package to check if a file is binary or text.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/black@23.12.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "The uncompromising code formatter.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/boolean-py@5.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Define boolean algebras, create and parse boolean expressions and create custom boolean DSL.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/boolean-py@5.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Define boolean algebras, create and parse boolean expressions and create custom boolean DSL.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/cachecontrol@0.14.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "httplib2 caching for requests",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/certifi@2025.8.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python package for providing Mozilla's CA Bundle.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/certifi@2025.8.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python package for providing Mozilla's CA Bundle.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/cffi@2.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Foreign Function Interface for Python calling C code.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/chardet@5.2.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Universal encoding detector for Python 3",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/charset-normalizer@3.4.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/charset-normalizer@3.4.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/click@8.3.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Composable command line interface toolkit",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/click@8.3.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Composable command line interface toolkit",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/colorama@0.4.6",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Cross-platform colored terminal text.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/colorama@0.4.6",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Cross-platform colored terminal text.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/coverage@7.10.6",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Code coverage measurement for Python",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/cryptography@46.0.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "cryptography is a package which provides cryptographic recipes and primitives to Python developers.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/cyclonedx-python-lib@10.5.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python library for CycloneDX",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/cyclonedx-python-lib@10.5.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python library for CycloneDX",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/dco-check@0.4.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Simple DCO check script to be used in any CI.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/defusedxml@0.7.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "XML bomb protection for Python stdlib modules",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/defusedxml@0.7.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "XML bomb protection for Python stdlib modules",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/django@5.2.6",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/django-filter@24.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Django-filter is a reusable Django application for allowing users to filter querysets dynamically.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/django-silk@5.4.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Silky smooth profiling for the Django Framework",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/djangorestframework@3.16.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Web APIs for Django, made easy.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/djhtml@3.0.9",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Django/Jinja template indenter",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/docutils@0.18.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Docutils -- Python Documentation Utilities",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/drf-nested-routers@0.94.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Nested resources for the Django Rest Framework",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/drf-yasg@1.21.10",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Automated generation of real Swagger/OpenAPI 2.0 schemas from Django Rest Framework code.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/filelock@3.19.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A platform independent file lock.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/flake8@7.3.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "the modular source code checker: pep8 pyflakes and co",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/flake8-black@0.3.7",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "flake8 plugin to call black as a code style validator",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/fqdn@1.5.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Validates fully-qualified domain names against RFC 1123, so that they are acceptable to modern bowsers",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/gprof2dot@2025.4.14",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Generate a dot graph from the output of several profilers.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/graphviz@0.20.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Simple Python interface for Graphviz",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/html5lib@1.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "HTML parser based on the WHATWG HTML specification",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/idna@3.10",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Internationalized Domain Names in Applications (IDNA)",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/idna@3.10",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Internationalized Domain Names in Applications (IDNA)",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/imagesize@1.4.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Getting image size from png/jpeg/jpeg2000/gif file",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/inflection@0.5.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A port of Ruby on Rails inflector to Python",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/isoduration@20.11.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Operations with ISO 8601 durations",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/jinja2@3.1.6",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A very fast and expressive template engine.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/jsonpointer@3.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Identify specific nodes in a JSON document (RFC 6901)",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/jsonschema@4.25.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "An implementation of JSON Schema validation for Python",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/jsonschema-specifications@2025.9.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "The JSON Schema meta-schemas and vocabularies, exposed as a Registry",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/junit-xml@1.9",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Creates JUnit XML test result documents that can be read by tools such as Jenkins",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/lark@1.2.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "a modern parsing library",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/license-expression@30.4.4",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "license-expression is a comprehensive utility library to parse, compare, simplify and normalize license expressions (such as SPDX license expressions) using boolean logic.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/license-expression@30.4.4",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "license-expression is a comprehensive utility library to parse, compare, simplify and normalize license expressions (such as SPDX license expressions) using boolean logic.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/markdown-it-py@2.2.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python port of markdown-it. Markdown parsing, done right!",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/markupsafe@3.0.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Safely add untrusted strings to HTML/XML markup.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/mccabe@0.7.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "McCabe checker, plugin for flake8",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/mdit-py-plugins@0.3.5",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Collection of plugins for markdown-it-py",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/mdurl@0.1.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Markdown URL utilities",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/msgpack@1.1.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "MessagePack serializer",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/mypy-extensions@1.1.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Type system extensions for programs checked with the mypy type checker.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/myst-parser@1.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "An extended [CommonMark](https://spec.commonmark.org/) compliant parser,",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/oauthlib@3.3.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/odfpy@1.4.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python API and tools to manipulate OpenDocument files",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/packageurl-python@0.11.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A purl aka. Package URL parser and builder",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/packageurl-python@0.11.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A purl aka. Package URL parser and builder",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/packaging@25.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Core utilities for Python packages",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/packaging@25.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Core utilities for Python packages",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pathspec@0.12.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Utility library for gitignore style pattern matching of file paths.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pip@25.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "The PyPA recommended tool for installing Python packages.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pip-api@0.0.34",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "An unofficial, importable pip API",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pip-audit@2.5.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A tool for scanning Python environments for known vulnerabilities",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pip-requirements-parser@32.0.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "pip requirements parser - a mostly correct pip requirements parsing library because it uses pip's own code.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/platformdirs@4.4.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/ply@3.11",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python Lex & Yacc",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/psycopg2-binary@2.9.10",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "psycopg2 - Python-PostgreSQL Database Adapter",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/py-serializable@2.1.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Library for serializing and deserializing Python Objects to and from JSON and XML.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/py-serializable@2.1.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Library for serializing and deserializing Python Objects to and from JSON and XML.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pycodestyle@2.14.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python style guide checker",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pycparser@2.23",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "C parser in Python",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/pydot@1.4.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python interface to Graphviz's Dot",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pyflakes@3.4.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "passive checker of Python programs",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pygments@2.19.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Pygments is a syntax highlighting package written in Python.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pyjwt@2.10.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "JSON Web Token implementation in Python",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/pyparsing@3.2.4",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "pyparsing - Classes and methods to define and execute parsing grammars",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pyparsing@3.2.4",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "pyparsing - Classes and methods to define and execute parsing grammars",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Extensions to the standard Python datetime module",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/python-debian@0.1.49",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Debian package related modules",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/python3-openid@3.2.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "OpenID support for modern servers and consumers.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/pytz@2025.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "World timezone definitions, modern and historical",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/pyyaml@6.0.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "YAML parser and emitter for Python",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/pyyaml@6.0.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "YAML parser and emitter for Python",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/rdflib@7.2.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/referencing@0.36.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "JSON Referencing + Python",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/requests@2.32.5",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python HTTP for Humans.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/requests@2.32.5",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python HTTP for Humans.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/requests-oauthlib@2.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "OAuthlib authentication support for Requests.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/reuse@1.1.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "reuse is a tool for compliance with the REUSE recommendations.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/rfc3339-validator@0.1.4",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A pure python RFC3339 validator",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/rfc3986-validator@0.1.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Pure python rfc3986 validator",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/rfc3987-syntax@1.1.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Helper functions to syntactically validate strings according to RFC 3987.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/rich@14.1.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/rpds-py@0.27.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python bindings to Rust's persistent data structures (rpds)",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/ruff@0.6.9",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "An extremely fast Python linter and code formatter, written in Rust.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/semantic-version@2.10.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A library implementing the 'SemVer' scheme.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/setuptools@74.1.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Easily download, build, install, upgrade, and uninstall Python packages",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/setuptools@74.1.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Easily download, build, install, upgrade, and uninstall Python packages",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/six@1.17.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python 2 and 3 compatibility utilities",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/six@1.17.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python 2 and 3 compatibility utilities",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/snowballstemmer@3.0.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "This package provides 32 stemmers for 30 languages generated from Snowball algorithms.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/social-auth-app-django@5.5.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python Social Authentication, Django integration.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/social-auth-core@4.7.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python social authentication made simple.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/sortedcontainers@2.4.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sortedcontainers@2.4.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/spdx-tools@0.8.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "SPDX parser and tools.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/sphinx@6.2.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python documentation generator",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sphinx-rtd-theme@1.3.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Read the Docs theme for Sphinx",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "sphinxcontrib-applehelp is a Sphinx extension which outputs Apple help books",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "sphinxcontrib-devhelp is a sphinx extension which outputs Devhelp documents",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sphinxcontrib-jquery@4.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Extension to include jQuery on newer Sphinx releases",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A sphinx extension which renders display math in HTML via JavaScript",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "sphinxcontrib-qthelp is a sphinx extension which outputs QtHelp documents",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "sphinxcontrib-serializinghtml is a sphinx extension which outputs \"serialized\" HTML files (json and pickle)",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/sqlparse@0.5.3",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A non-validating SQL parser.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/toml@0.10.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Python Library for Tom's Obvious, Minimal Language",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/tqdm@4.67.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Fast, Extensible Progress Meter",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/types-python-dateutil@2.9.0.20250822",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Typing stubs for python-dateutil",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/tzdata@2025.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Provider of IANA time zone data",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/uri-template@1.3.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "RFC 6570 URI Template Processor",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/uritemplate@4.2.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Implementation of RFC 6570 URI Templates",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/uritools@5.0.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "URI parsing, classification and composition",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/urllib3@2.5.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "HTTP library with thread-safe connection pooling, file post, and more.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/urllib3@2.5.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "HTTP library with thread-safe connection pooling, file post, and more.",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/webcolors@24.11.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "A library for working with the color formats defined by HTML and CSS.",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/webencodings@0.5.1",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Character encoding aliases for legacy web content",
+        "license": "NOASSERTION",
+        "scope": "dev"
+    },
+    {
+        "purl": "pkg:pypi/whitenoise@6.11.0",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Radically simplified static file serving for WSGI applications",
+        "license": "NOASSERTION",
+        "scope": "main"
+    },
+    {
+        "purl": "pkg:pypi/xmltodict@1.0.2",
+        "subproject": "Poetry:hermine-project-0.5.1",
+        "description": "Makes working with XML feel like you are working with JSON",
+        "license": "NOASSERTION",
+        "scope": "main"
+    }
+]

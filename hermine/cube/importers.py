@@ -154,6 +154,76 @@ def import_ort_evaluated_model_json_file(
 
 
 @transaction.atomic()
+def import_hkissbom_json_file(
+    json_file: File | TextIO,
+    release_id: int,
+    replace=False,
+    component_update_mode=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+    linking: str = "",
+    default_project_name: str = "",
+    default_scope_name: str = "",
+):
+    """Import a KISSBOM inspired format
+    {
+         "purl": "pkg:npm/%40ampproject/remapping@2.2.0",
+         "license": "Apache-2.0",
+         "description": "Remap sequential sourcemaps through transformations to point at the original source code",
+         "homepage_url": "https://github.com/ampproject/remappingreadme",
+         "funding": "None",
+         "copyright_info":"Justin Ridgewell <jridgewell@google.com>",
+         "scope": "devDependencies",
+         "subproject": "NPM::itpweb-app:2.9.11",
+         "linking": "Dynamic",
+         "component_modified": "Unmodified"
+       }"""
+
+    try:
+        data = json.load(json_file)
+    except ValueError:
+        raise SBOMImportFailure("This is not a valid JSON file.")
+
+    # TODO : Add sanity checks
+    # try:
+    #     paths = data["paths"]
+    # except KeyError:
+    #     raise SBOMImportFailure("paths key not found in the file.")
+
+    if replace:
+        Usage.objects.filter(release=release_id).delete()
+    try:
+        for package in data:
+            purl = PackageURL.from_string(package.get("purl"))
+            comp_name = f"{purl.namespace}/{purl.name}" if purl.namespace else purl.name
+            version_number = f"{purl.version}"
+            declared_licenses = package.get("license") or ""
+            spdx_valid_license = (
+                declared_licenses if is_valid(declared_licenses) else ""
+            )
+            project_name = package.get("subproject") or default_project_name
+            scope_name = package.get("scope") or default_scope_name
+            add_dependency(
+                release_id,
+                purl.type,
+                comp_name,
+                {
+                    "description": package.get("description", ""),
+                    "homepage_url": package.get("homepage_url", ""),
+                },
+                version_number,
+                declared_licenses,
+                spdx_valid_license,
+                linking,
+                component_update_mode,
+                package.get("purl"),
+                project_name,
+                scope_name,
+            )
+    except Exception as e:
+        logger.error(e)
+        raise SBOMImportFailure("This is not a valid Hermine Kissbom file.")
+
+
+@transaction.atomic()
 def import_spdx_file(
     spdx_file: File | TextIO,
     release_id: int,
