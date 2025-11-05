@@ -107,6 +107,17 @@ class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
     model = License
     template_name = "cube/license_detail.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # A license can be deleted only if it is not used by any component version (Usage.licenses_chosen)
+        obj: License = self.object
+        # Use m2m reverse relation 'usage_set' manager for ORM lookups
+        deletable = not obj.usage_set.exists()
+        context["can_delete"] = deletable and self.request.user.has_perm(
+            "cube.delete_license"
+        )
+        return context
+
 
 class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = "cube.change_license"
@@ -196,6 +207,18 @@ class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
         "verbatim",
     ]
     template_name = "cube/license_create.html"
+
+
+class LicenseDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    permission_required = "cube.delete_license"
+    model = License
+    template_name = "cube/license_confirm_delete.html"
+    success_url = reverse_lazy("cube:license_list")
+
+    def get_queryset(self):
+        # Only allow deletion of licenses that are not used by any component version (Usage.licenses_chosen)
+        qs = super().get_queryset()
+        return qs.filter(usage__isnull=True)
 
 
 class LicenseDiffView(

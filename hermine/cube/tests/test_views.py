@@ -4,7 +4,7 @@
 from urllib.parse import quote
 
 from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Permission
 from django.test import TestCase
 from django.urls import reverse
 from rest_framework.views import APIView
@@ -15,7 +15,14 @@ from cube.forms.release_validation import (
     CreateAndsValidationForm,
     CreateLicenseChoiceForm,
 )
-from cube.models import LicenseCuration, LicenseChoice, Exploitation, Version
+from cube.models import (
+    LicenseCuration,
+    LicenseChoice,
+    Exploitation,
+    Version,
+    Usage,
+    License,
+)
 from .mixins import ForceLoginMixin
 
 
@@ -272,3 +279,106 @@ class ExportSBOMTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "name,version")
         self.assertContains(res, "LicenseRef-FakeLicense OR AND")
+
+
+class LicenseDeleteButtonVisibilityTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def setUp(self):
+        super().setUp()
+        # Ensure we start with a clean unused license for visibility tests
+        self.license = License.objects.get(pk=1)
+        # Sanity: the license should not be linked to any usage by default
+        # (fixtures don't link licenses via Usage.licenses_chosen)
+        self.assertFalse(self.license.usage_set.exists())
+
+    def test_delete_button_visible_when_unused_and_user_has_permission(self):
+        url = reverse("cube:license_detail", kwargs={"pk": self.license.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        # Button should be visible as admin has delete permission and license is unused
+        self.assertContains(
+            res,
+            reverse("cube:license_delete", kwargs={"pk": self.license.pk}),
+        )
+
+    def test_delete_button_hidden_when_license_is_used(self):
+        # Mark the license as used by adding it to an existing Usage
+        usage = Usage.objects.get(pk=1)
+        usage.licenses_chosen.add(self.license)
+
+        url = reverse("cube:license_detail", kwargs={"pk": self.license.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        # Delete button should not be present when license is used
+        self.assertNotContains(
+            res,
+            reverse("cube:license_delete", kwargs={"pk": self.license.pk}),
+        )
+
+
+class LicenseDeleteViewBehaviorTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_get_delete_for_used_license_returns_404(self):
+        lic = License.objects.get(pk=1)
+        usage = Usage.objects.get(pk=1)
+        usage.licenses_chosen.add(lic)
+
+        url = reverse("cube:license_delete", kwargs={"pk": lic.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 404)
+
+    def test_get_and_post_delete_for_unused_license(self):
+        # Create a brand new unused license
+        lic = License.objects.create(
+            spdx_id="LicenseRef-Temp-DeleteTest",
+            long_name="Temporary License For Delete Test",
+        )
+        # Sanity: no usage should point to it
+        self.assertFalse(lic.usage_set.exists())
+
+        # GET should render the confirmation page
+        url = reverse("cube:license_delete", kwargs={"pk": lic.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        self.assertContains(res, "Delete license")
+
+        # POST should delete and redirect to the list
+        res = self.client.post(url, follow=False)
+        self.assertEqual(res.status_code, 302)
+        self.assertEqual(res.url, reverse("cube:license_list"))
+        # Object is deleted
+        self.assertFalse(License.objects.filter(pk=lic.pk).exists())
+
+
+class LicenseDeletePermissionTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def setUp(self):
+        # Create a regular user without delete permissions
+        self.user = User.objects.create_user(
+            username="regular_user", email="u@example.com", password="pass"
+        )
+        self.client.force_login(self.user)
+        # Create an unused license
+        self.lic = License.objects.create(
+            spdx_id="LicenseRef-NoPerm-DeleteTest", long_name="NoPerm License"
+        )
+
+    def test_user_without_permission_cannot_access_delete_view(self):
+        url = reverse("cube:license_delete", kwargs={"pk": self.lic.pk})
+        res = self.client.get(url)
+        # Depending on settings, PermissionRequiredMixin will either redirect to login (302)
+        # or respond with 403. Accept either to keep test robust across configs.
+        self.assertIn(res.status_code, (302, 403))
+
+        # If redirected, ensure it's towards login
+        if res.status_code == 302:
+            self.assertIn(reverse("login"), res.url)
+
+        # Grant permission and try again → should be 200 on GET
+        perm = Permission.objects.get(codename="delete_license")
+        self.user.user_permissions.add(perm)
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)

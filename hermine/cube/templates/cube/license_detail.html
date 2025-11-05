@@ -33,6 +33,14 @@ SPDX-License-Identifier: AGPL-3.0-only
       <span>Edit policy</span>
     </a>
   {% endif %}
+  {% if can_delete %}
+    <a class="button is-danger" href="{% url "cube:license_delete" license.id %}">
+      <span class="icon">
+        <i class="fas fa-trash"></i>
+      </span>
+      <span>Delete</span>
+    </a>
+  {% endif %}
 
   <div class="dropdown is-hoverable is-right">
     <div class="dropdown-trigger">
