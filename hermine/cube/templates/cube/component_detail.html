@@ -103,7 +103,11 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% if version.license_is_ambiguous %}
         <br>❌ License expression is ambiguous, corrected license needs to be specified
       {% endif %}
-      <strong>PURL : </strong> {{version.purl}}</p>
+      <strong>PURL : </strong> {{version.purl}}
+      {% if version.copyright_info %}
+        <strong>Copyright info : </strong> {{version.copyright_info}}
+      {% endif %}
+    </p>
     <p>This version is used in the following releases of your products:</p>
     <ul>
       {% for usage in version.usage_set.all %}
