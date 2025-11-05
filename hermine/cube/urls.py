@@ -123,6 +123,11 @@ urlpatterns = [
         "licenses/<int:pk>/", views.LicenseDetailView.as_view(), name="license_detail"
     ),
     path(
+        "licenses/<int:pk>/delete/",
+        views.LicenseDeleteView.as_view(),
+        name="license_delete",
+    ),
+    path(
         "licenses/<int:pk>/edit/",
         views.LicenseDataUpdateView.as_view(),
         name="license_update",
