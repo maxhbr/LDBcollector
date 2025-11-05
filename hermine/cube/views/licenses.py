@@ -113,8 +113,8 @@ class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
         obj: License = self.object
         # Use m2m reverse relation 'usage_set' manager for ORM lookups
         deletable = not obj.usage_set.exists()
-        context["can_delete"] = (
-            deletable and self.request.user.has_perm("cube.delete_license")
+        context["can_delete"] = deletable and self.request.user.has_perm(
+            "cube.delete_license"
         )
         return context
 
