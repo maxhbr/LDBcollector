@@ -51,7 +51,7 @@ tests:
     - poetry run ruff check .
     - poetry run djhtml cube/templates/ --check
     - poetry run python manage.py collectstatic --noinput
-    - poetry run python manage.py makemigrations | grep "No changes detected" || echo "Migrations are not up to date"
+    - poetry run python manage.py makemigrations | grep "No changes detected" || (echo "Migrations are not up to date" && exit 1)
     - poetry run python manage.py test
 
 pages:
