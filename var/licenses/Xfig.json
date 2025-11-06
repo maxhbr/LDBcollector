@@ -8,6 +8,8 @@
     "compatibility_as": "MIT",
     "spdxid": "Xfig",
     "aliases": [
-        "mit-xfig"
+      "mit-xfig",
+      "xfig",
+      "XFIG"
     ]
 }
