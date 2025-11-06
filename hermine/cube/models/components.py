@@ -16,7 +16,7 @@ class Usage(models.Model):
     DEFAULT_SCOPE = "Default scope"
 
     MAX_LENGTH_DEFAULT_PROJECT_NAME = 750
-    MAX_LENGTH_DEFAULT_SCOPE_NAME = 50
+    MAX_LENGTH_DEFAULT_SCOPE_NAME = 250
 
     STATUS_AUTO = "Auto"
     STATUS_UNKNOWN = "Unknown"
