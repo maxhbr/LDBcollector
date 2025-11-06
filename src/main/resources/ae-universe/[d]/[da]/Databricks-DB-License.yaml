@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Databricks DB License"
+category: "Databricks DB"
+shortName: "Databricks-DB"
+
+alternativeNames:
+  - "Databricks DB License"
+  - "databricks-db"
+  - "Databricks-DB"
+
+otherIds: 
+  - "scancode:databricks-db"
