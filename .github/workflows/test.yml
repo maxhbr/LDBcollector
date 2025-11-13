@@ -49,5 +49,10 @@ jobs:
     - name: Install dependencies
       run: go mod download
 
+    - name: Fetch latest licenseRef.json from Fossology
+      run: |
+        wget https://raw.githubusercontent.com/fossology/fossology/master/install/db/licenseRef.json -O licenseRef.json
+        echo "Fetched latest licenses into licenseRef.json"
+
     - name: Run tests
       run: go test ./pkg/api -v
