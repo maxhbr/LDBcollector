@@ -1,0 +1,6 @@
+- id: "Pod::logicwind-react-native-matomo-tracker:"
+  curations:
+    comment: |
+      Wrong URL to private repository in original metadata.
+    vcs:
+      url: "https://github.com/logicwind/react-native-matomo-tracker.git"
