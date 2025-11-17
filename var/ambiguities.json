@@ -9,7 +9,8 @@
                 "License :: OSI Approved :: Academic Free License (AFL)",
                 "AFLv2",
                 "AFL",
-                "License :: OSI Approved :: Academic Free License"
+              "License :: OSI Approved :: Academic Free License",
+              "ACADEMIC FREE LICENSE _AFL_"
             ],
             "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -40,7 +41,9 @@
               "apache",
               "OSI-Approved-::-Apache-Software-License",
               "LICENSE-APACHE",
-              "Apache other"
+              "Apache other",
+              "APACHE",
+              "APACHE SOFTWARE LICENSE"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
