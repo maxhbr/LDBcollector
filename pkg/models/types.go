@@ -83,6 +83,15 @@ func (User) TableName() string {
 	return "users"
 }
 
+// UserClaim struct represents the claims present in the JWT token.
+type UserClaim struct {
+	Id          int64   `json:"id"`
+	UserName    *string `json:"user_name"`
+	DisplayName *string `json:"display_name"`
+	UserEmail   *string `json:"user_email"`
+	UserLevel   *string `json:"user_level"`
+}
+
 func (u *User) BeforeCreate(tx *gorm.DB) (err error) {
 	if u.UserName != nil && *u.UserName == "" {
 		return errors.New("username cannot be an empty string")
@@ -695,3 +704,18 @@ type ApiResponse[T any] struct {
 	Data   T   `json:"data,omitempty"`
 	Meta   any `json:"meta,omitempty"`
 }
+
+type Tokens struct {
+	AccessToken          string `json:"access_token" example:"your_access_token_here"`
+	RefreshToken         string `json:"refresh_token,omitempty" example:"your_refresh_token_here"`
+	AccessTokenExpiresIn int64  `json:"expires_in" example:"3600"`
+}
+
+type RefreshToken struct {
+	RefreshToken string `json:"refresh_token" example:"your_refresh_token_here"`
+}
+
+// TokenResonse represents the response structure for token generation API.
+type TokenResonse ApiResponse[Tokens]
+
+// can add all other response structures in similar manner
