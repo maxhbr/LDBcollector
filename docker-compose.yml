@@ -16,7 +16,8 @@ services:
       DEFAULT_ISSUER: http://localhost:8080
       SIMILARITY_THRESHOLD: 0.9
       PORT: 8080
-      TOKEN_HOUR_LIFESPAN: 24
+      TOKEN_HOUR_LIFESPAN: 1
+      REFRESH_TOKEN_HOUR_LIFESPAN: 720
       READ_API_AUTHENTICATION_ENABLED: false
     ports:
       - "8080:8080"

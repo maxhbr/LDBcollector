@@ -117,14 +117,18 @@ func loginAs(t *testing.T, userType string) {
 	}
 
 	var resp map[string]interface{}
-	err := json.Unmarshal(w.Body.Bytes(), &resp)
-	if err != nil {
-		t.Fatalf("Failed to parse login response for %s: %v", userType, err)
+	if err := json.Unmarshal(w.Body.Bytes(), &resp); err != nil {
+		t.Fatalf("Failed to parse login response: %v", err)
 	}
 
-	token, ok := resp["token"].(string)
+	data, ok := resp["data"].(map[string]interface{})
+	if !ok {
+		t.Fatalf("Response 'data' field missing or invalid. Got: %v", resp)
+	}
+
+	token, ok := data["access_token"].(string)
 	if !ok || token == "" {
-		t.Fatalf("[%s] token not found in login response. Got: %v", userType, resp)
+		t.Fatalf("access_token not found in response. Got: %v", data)
 	}
 
 	AuthToken = token

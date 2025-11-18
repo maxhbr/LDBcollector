@@ -24,6 +24,7 @@ import (
 	"github.com/lestrrat-go/jwx/v3/jwk"
 	"github.com/lestrrat-go/jwx/v3/jws"
 	"github.com/lestrrat-go/jwx/v3/jwt"
+	"go.uber.org/zap"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
@@ -31,6 +32,7 @@ import (
 	"github.com/gin-gonic/gin"
 
 	"github.com/fossology/LicenseDb/pkg/db"
+	logger "github.com/fossology/LicenseDb/pkg/log"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/fossology/LicenseDb/pkg/validations"
@@ -806,9 +808,9 @@ func GetUser(c *gin.Context) {
 //	@Tags			Users
 //	@Accept			json
 //	@Produce		json
-//	@Param			user	body		models.UserLogin		true	"Login credentials"
-//	@Success		200		{object}	object{token=string}	"JWT token"
-//	@Failure		401		{object}	models.LicenseError		"Incorrect username or password"
+//	@Param			user	body		models.UserLogin	true	"Login credentials"
+//	@Success		200		{object}	models.TokenResonse	"JWT token"
+//	@Failure		401		{object}	models.LicenseError	"Incorrect username or password"
 //	@Router			/login [post]
 func Login(c *gin.Context) {
 	var input models.UserLogin
@@ -896,7 +898,12 @@ func Login(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, er)
 		return
 	}
-	c.JSON(http.StatusOK, gin.H{"token": token})
+	res := models.TokenResonse{
+		Status: http.StatusOK,
+		Data:   *token,
+	}
+
+	c.JSON(http.StatusOK, res)
 }
 
 // GetUserProfile retrieves the user's own profile.
@@ -940,6 +947,107 @@ func GetUserProfile(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// VerifyRefreshToken verifies a refresh token and issues a new access token
+//
+//	@Summary		Verify refresh token
+//	@Description	verify refresh token and get new access token
+//	@Id				RefreshToken
+//	@Tags			Users
+//	@Accept			json
+//	@Produce		json
+//	@Param			user	body		models.RefreshToken	true	"Refresh token payload"
+//	@Success		200		{object}	models.TokenResonse	" JWT token"
+//	@Failure		401		{object}	models.LicenseError	"Invalid or expired refresh token"
+//	@Router			/refresh-token [post]
+func VerifyRefreshToken(c *gin.Context) {
+	logger.LogInfo("VerifyRefreshToken called")
+
+	var input models.RefreshToken
+	if err := c.ShouldBindJSON(&input); err != nil {
+		logger.LogWarn("Invalid JSON body", zap.Error(err))
+		c.JSON(http.StatusBadRequest, models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "invalid json body",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		})
+		return
+	}
+
+	refreshToken := input.RefreshToken
+
+	unverifiedToken, err := jwt.Parse(
+		[]byte(refreshToken),
+		jwt.WithVerify(false),
+		jwt.WithValidate(true),
+	)
+	if err != nil {
+		logger.LogError("Token parsing failed", zap.Error(err))
+		unauthorized(c, "token parsing failed")
+		return
+	}
+
+	iss, ok := unverifiedToken.Issuer()
+	if !ok || iss != os.Getenv("DEFAULT_ISSUER") {
+		logger.LogWarn("Invalid token issuer", zap.String("issuer", iss))
+		unauthorized(c, "invalid issuer")
+		return
+	}
+
+	if _, err := jws.Verify(
+		[]byte(refreshToken),
+		jws.WithKey(jwa.HS256(), []byte(os.Getenv("REFRESH_TOKEN_SECRET"))),
+	); err != nil {
+		logger.LogError("Token signature verification failed", zap.Error(err))
+		unauthorized(c, "token verification failed")
+		return
+	}
+
+	var typeStr string
+	if err := unverifiedToken.Get("type", &typeStr); err != nil || typeStr != "refresh" {
+		logger.LogWarn("Invalid token type", zap.String("type", typeStr))
+		unauthorized(c, "invalid token type (expected 'refresh')")
+		return
+	}
+
+	var sub string
+	if err := unverifiedToken.Get("sub", &sub); err != nil {
+		logger.LogError("Missing subject claim", zap.Error(err))
+		unauthorized(c, "missing subject claim")
+		return
+	}
+
+	userID, err := strconv.ParseInt(sub, 10, 64)
+	if err != nil {
+		logger.LogError("Invalid user ID in token", zap.Error(err), zap.String("sub", sub))
+		unauthorized(c, "invalid user ID in token")
+		return
+	}
+
+	active := true
+	var user models.User
+	if err := db.DB.Where(models.User{Id: userID, Active: &active}).First(&user).Error; err != nil {
+		logger.LogWarn("User not found or inactive", zap.Int64("userID", userID))
+		unauthorized(c, "user not found")
+		return
+	}
+
+	tokens, err := generateToken(user)
+	if err != nil {
+		logger.LogError("Failed to generate access token", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "could not generate access token"})
+		return
+	}
+
+	logger.LogInfo("VerifyRefreshToken completed successfully", zap.Int64("userID", userID))
+
+	c.JSON(http.StatusOK, models.TokenResonse{
+		Status: http.StatusOK,
+		Data:   *tokens,
+	})
+}
+
 // EncryptUserPassword checks if the password is already encrypted or not. If
 // not, it encrypts the password.
 func EncryptUserPassword(user *models.User) error {
@@ -960,30 +1068,89 @@ func EncryptUserPassword(user *models.User) error {
 	return nil
 }
 
-// generateToken generates a JWT token for the user.
-func generateToken(user models.User) (string, error) {
-	tokenLifespan, err := strconv.Atoi(os.Getenv("TOKEN_HOUR_LIFESPAN"))
+func generateToken(user models.User) (*models.Tokens, error) {
+	logger.LogInfo("generateToken called",
+		zap.Int64("userID", user.Id),
+		zap.String("username", *user.UserName),
+	)
+
+	accessTokenLifespan, err := strconv.Atoi(os.Getenv("TOKEN_HOUR_LIFESPAN"))
 	if err != nil {
-		return "", err
+		logger.LogError("Invalid access token lifespan", zap.Error(err))
+		return nil, fmt.Errorf("invalid access token lifespan: %w", err)
+	}
+	refreshTokenLifespan, err := strconv.Atoi(os.Getenv("REFRESH_TOKEN_HOUR_LIFESPAN"))
+	if err != nil {
+		logger.LogError("Invalid refresh token lifespan", zap.Error(err))
+		return nil, fmt.Errorf("invalid refresh token lifespan: %w", err)
 	}
 
-	tok, err := jwt.NewBuilder().
-		Issuer(os.Getenv("DEFAULT_ISSUER")).
-		IssuedAt(time.Now()).
-		NotBefore(time.Now()).
-		Expiration(time.Now().Add(time.Hour*time.Duration(tokenLifespan))).
-		Claim("user", user).
+	issuer := os.Getenv("DEFAULT_ISSUER")
+	accessSecret := []byte(os.Getenv("API_SECRET"))
+	refreshSecret := []byte(os.Getenv("REFRESH_TOKEN_SECRET"))
+	now := time.Now().UTC()
+	safeClaim := models.UserClaim{
+		Id:          user.Id,
+		UserName:    user.UserName,
+		DisplayName: user.DisplayName,
+		UserEmail:   user.UserEmail,
+		UserLevel:   user.UserLevel,
+	}
+	// Build Access Token
+	accessToken, err := jwt.NewBuilder().
+		Issuer(issuer).
+		IssuedAt(now).
+		NotBefore(now).
+		Expiration(now.Add(time.Hour*time.Duration(accessTokenLifespan))).
+		Claim("user", safeClaim).
 		Build()
 	if err != nil {
-		fmt.Printf("failed to build token: %s\n", err)
-		return "", err
+		logger.LogError("Failed to build access token", zap.Error(err))
+		return nil, fmt.Errorf("failed to build access token: %w", err)
 	}
 
-	signed, err := jwt.Sign(tok, jwt.WithKey(jwa.HS256(), []byte(os.Getenv("API_SECRET"))))
+	signedAccessToken, err := jwt.Sign(accessToken, jwt.WithKey(jwa.HS256(), accessSecret))
 	if err != nil {
-		fmt.Printf("failed to sign token: %s\n", err)
-		return "", err
+		logger.LogError("Failed to sign access token", zap.Error(err))
+		return nil, fmt.Errorf("failed to sign access token: %w", err)
+	}
+	// build refresh token
+	refreshToken, err := jwt.NewBuilder().
+		Issuer(issuer).
+		IssuedAt(now).
+		NotBefore(now).
+		Expiration(now.Add(time.Hour*time.Duration(refreshTokenLifespan))).
+		Claim("sub", fmt.Sprintf("%d", user.Id)).
+		Claim("type", "refresh").
+		Claim("user", safeClaim).
+		Build()
+	if err != nil {
+		logger.LogError("Failed to build refresh token", zap.Error(err))
+		return nil, fmt.Errorf("failed to build refresh token: %w", err)
 	}
 
-	return string(signed), nil
+	signedRefreshToken, err := jwt.Sign(refreshToken, jwt.WithKey(jwa.HS256(), refreshSecret))
+	if err != nil {
+		logger.LogError("Failed to sign refresh token", zap.Error(err))
+		return nil, fmt.Errorf("failed to sign refresh token: %w", err)
+	}
+
+	tokens := &models.Tokens{
+		AccessToken:          string(signedAccessToken),
+		RefreshToken:         string(signedRefreshToken),
+		AccessTokenExpiresIn: int64(accessTokenLifespan * 3600), // in seconds
+	}
+	logger.LogInfo("generateToken completed successfully", zap.Int64("userID", user.Id))
+	return tokens, nil
+}
+
+func unauthorized(c *gin.Context, msg string) {
+	c.JSON(http.StatusUnauthorized, models.LicenseError{
+		Status:    http.StatusUnauthorized,
+		Message:   "Please check your credentials and try again",
+		Error:     msg,
+		Path:      c.Request.URL.Path,
+		Timestamp: time.Now().Format(time.RFC3339),
+	})
+	c.Abort()
 }

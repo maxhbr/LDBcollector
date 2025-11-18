@@ -694,6 +694,12 @@ definitions:
       user_password:
         type: string
     type: object
+  models.RefreshToken:
+    properties:
+      refresh_token:
+        example: your_refresh_token_here
+        type: string
+    type: object
   models.RiskLicenseCount:
     properties:
       count:
@@ -766,6 +772,26 @@ definitions:
       status:
         example: 200
         type: integer
+    type: object
+  models.TokenResonse:
+    properties:
+      data:
+        $ref: '#/definitions/models.Tokens'
+      meta: {}
+      status:
+        type: integer
+    type: object
+  models.Tokens:
+    properties:
+      access_token:
+        example: your_access_token_here
+        type: string
+      expires_in:
+        example: 3600
+        type: integer
+      refresh_token:
+        example: your_refresh_token_here
+        type: string
     type: object
   models.User:
     properties:
@@ -1400,10 +1426,7 @@ paths:
         "200":
           description: JWT token
           schema:
-            properties:
-              token:
-                type: string
-            type: object
+            $ref: '#/definitions/models.TokenResonse'
         "401":
           description: Incorrect username or password
           schema:
@@ -2177,6 +2200,33 @@ paths:
       summary: Adds a new oidc client
       tags:
       - OIDC Clients
+  /refresh-token:
+    post:
+      consumes:
+      - application/json
+      description: verify refresh token and get new access token
+      operationId: RefreshToken
+      parameters:
+      - description: Refresh token payload
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.RefreshToken'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ' JWT token'
+          schema:
+            $ref: '#/definitions/models.TokenResonse'
+        "401":
+          description: Invalid or expired refresh token
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Verify refresh token
+      tags:
+      - Users
   /search:
     post:
       consumes:
