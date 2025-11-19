@@ -580,7 +580,8 @@ func SetSimilarityThreshold() {
 
 // GetAuditEntity is an utility function to fetch obligation or license associated with an audit
 func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
-	if audit.Type == "LICENSE" {
+	switch audit.Type {
+	case "LICENSE":
 		audit.Entity = &models.LicenseDB{}
 		if err := db.DB.Where(&models.LicenseDB{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
 			er := models.LicenseError{
@@ -593,7 +594,7 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
-	} else if audit.Type == "OBLIGATION" {
+	case "OBLIGATION":
 		audit.Entity = &models.Obligation{}
 		if err := db.DB.Joins("Type").Joins("Classification").Where(&models.Obligation{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
 			er := models.LicenseError{
@@ -606,7 +607,7 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
-	} else if audit.Type == "TYPE" {
+	case "TYPE":
 		audit.Entity = &models.ObligationType{}
 		if err := db.DB.Where(&models.ObligationType{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
 			er := models.LicenseError{
@@ -619,7 +620,7 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
-	} else if audit.Type == "CLASSIFICATION" {
+	case "CLASSIFICATION":
 		audit.Entity = &models.ObligationClassification{}
 		if err := db.DB.Where(&models.ObligationClassification{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
 			er := models.LicenseError{
@@ -632,6 +633,21 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
+	case "USER":
+		audit.Entity = &models.User{}
+		if err := db.DB.Where(&models.User{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "user corresponding with this audit does not exist",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return err
+		}
+	default:
+		// no action
 	}
 	return nil
 }
