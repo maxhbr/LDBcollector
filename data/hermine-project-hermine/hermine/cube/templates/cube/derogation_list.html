@@ -24,10 +24,11 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
-  <div id="content-main">
-    <p>Derogations allow the use of a restricted licence in the context of a specific product or release.
-      New derogations can only be created from the context of a release validation, but you can keep track of them here.</p>
-    <table class="table is-striped is-hoverable">
+  {% include "cube/includes/list_nav.html" %}
+  <p>Derogations allow the use of a restricted license in the context of a specific product or release.
+    New derogations can only be created from the context of a release validation, but you can keep track of them here.</p>
+  <div class="table-container">
+    <table class="table is-striped is-hoverable ">
       <thead>
         <tr>
           <th>License</th>
@@ -48,7 +49,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td> <a href="{% url 'cube:license_detail' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
               {{ derogation.license.spdx_id }}
             </span></a></td>
-            <td>{{ derogation.release|default:derogation.product }}</td>
+            <td>{% if derogation.product %}<a href="{% url 'cube:product_detail' derogation.product.id %}">{{ derogation.product }}</a>{% endif %}{% if derogation.release %} <a href="{% url 'cube:release_summary' derogation.release.id %}">{{ derogation.release }}</a>{% endif %}</td>
             <td>{{ derogation.version|default:derogation.component|default:"<em>Any</em>" }}</td>
             <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
             <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
@@ -61,14 +62,12 @@ SPDX-License-Identifier: AGPL-3.0-only
                 <a href="{% url "admin:cube_derogation_change" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
               {% endif %}{% if perms.cube.change_derogation and perms.cube.delete_derogation %} | {% endif %}
               {% if perms.cube.delete_derogation %}
-                <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                <a href="{% url "cube:derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
               {% endif %}
             </td>
         {% endfor %}
       </tbody>
     </table>
   </div>
+  {% include "cube/includes/list_nav.html" %}
 {% endblock %}
-
-
-

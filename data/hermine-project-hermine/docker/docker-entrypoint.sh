@@ -6,7 +6,6 @@ f_log() {
 
 f_log "Entrypoint start on $DJANGO_PORT"
 python ./manage.py migrate
-python ./manage.py collectstatic --noinput --clear
 
 if [ -f /opt/hermine/shared.json ]
 then

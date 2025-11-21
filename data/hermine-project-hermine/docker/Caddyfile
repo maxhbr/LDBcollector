@@ -2,9 +2,5 @@
 
 root * /var/www/
 
-@notStatic {
-    not path /static/*
-}
-reverse_proxy @notStatic django:{$DJANGO_PORT}
+reverse_proxy django-behind-caddy:{$DJANGO_PORT}
 
-file_server /static/*

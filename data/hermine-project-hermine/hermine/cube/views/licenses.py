@@ -11,8 +11,8 @@ from django.core.exceptions import ValidationError, SuspiciousOperation
 from django.db.models import Count
 from django.db.models.functions import Lower
 from django.forms import modelform_factory
-from django.http import HttpResponse
-from django.shortcuts import redirect
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import (
@@ -24,11 +24,15 @@ from django.views.generic import (
     DeleteView,
     TemplateView,
 )
+from django.views.generic.edit import BaseFormView
+from django_filters.views import FilterView
 from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
+from cube.filters import LicenseFilter
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
+from cube.forms.licenses import ObligationForm, CompatibilityForm
 from cube.forms.licenses import (
     ObligationGenericDiffForm,
     CopyReferenceLicensesForm,
@@ -36,29 +40,29 @@ from cube.forms.licenses import (
     CopyReferenceObligationForm,
     SyncEverythingFromReferenceForm,
 )
-from cube.models import License, Generic, Obligation
+from cube.models import License, LicensePolicy, Generic, Obligation, Compatibility
 from cube.utils.reference import (
     LICENSE_SHARED_FIELDS,
     OBLIGATION_SHARED_FIELDS,
     join_obligations,
     GENERIC_SHARED_FIELDS,
 )
-from cube.views.mixins import SearchMixin, LicenseRelatedMixin, SharedDataRequiredMixin
+from cube.views.mixins import CreateLicenseRelatedMixin, SharedDataRequiredMixin
 
 
-class FormErrorsToMessagesMixin:
+class ImportFormMixin:
     def form_invalid(self, form):
         for field, errs in form.errors.items():
             for err in errs:
                 messages.add_message(self.request, messages.ERROR, err)
-        return super().form_invalid(form)
+        return HttpResponseRedirect(self.get_success_url())
 
     def form_valid(self, form):
         try:
             form.save()
         except ValidationError as e:
             messages.add_message(self.request, messages.ERROR, e.message)
-            return super().form_invalid(form)
+            return self.form_invalid(form)
         messages.add_message(self.request, messages.SUCCESS, "File imported.")
         return super().form_valid(form)
 
@@ -66,19 +70,14 @@ class FormErrorsToMessagesMixin:
 class LicensesListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
-    SearchMixin,
-    FormErrorsToMessagesMixin,
-    ListView,
-    FormView,
+    FilterView,
 ):
     permission_required = "cube.view_license"
     model = License
+    filterset_class = LicenseFilter
     context_object_name = "licenses"
     paginate_by = 50
     ordering = [Lower("spdx_id")]
-    form_class = ImportLicensesForm
-    success_url = reverse_lazy("cube:license_list")
-    search_fields = ("long_name", "spdx_id")
     template_name = "cube/license_list.html"
 
     def get_queryset(self):
@@ -88,18 +87,36 @@ class LicensesListView(
         )
         return qs
 
-    @method_decorator(
-        permission_required_decorator("cube.import_license", raise_exception=True)
-    )
-    def post(self, *args, **kwargs):
-        self.object_list = self.get_queryset()
-        return super().post(*args, **kwargs)
+
+class LicenseImportAllAsSingleFileView(
+    LoginRequiredMixin, PermissionRequiredMixin, ImportFormMixin, BaseFormView
+):
+    """
+    Support direct importing of licenses from a shared.json file
+    from hermine-data repository as well as importing
+    licenses from licenses.json files exported from Hermine UI.
+    """
+
+    permission_required = "cube.import_license"
+    form_class = ImportLicensesForm
+    success_url = reverse_lazy("cube:license_list")
 
 
 class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     permission_required = "cube.view_license"
     model = License
     template_name = "cube/license_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # A license can be deleted only if it is not used by any component version (Usage.licenses_chosen)
+        obj: License = self.object
+        # Use m2m reverse relation 'usage_set' manager for ORM lookups
+        deletable = not obj.usage_set.exists()
+        context["can_delete"] = deletable and self.request.user.has_perm(
+            "cube.delete_license"
+        )
+        return context
 
 
 class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
@@ -137,10 +154,35 @@ class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
 
 
 class LicensePolicyUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
-    permission_required = "cube.change_license"
-    model = License
-    form_class = modelform_factory(License, exclude=LICENSE_SHARED_FIELDS)
+    permission_required = "cube.change_licensepolicy"
+    model = LicensePolicy
+    fields = ("status", "categories", "allowed", "allowed_explanation")
     template_name = "cube/license_update_policy.html"
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(LicensePolicy, license=self.kwargs["pk"])
+
+    def get_success_url(self):
+        return reverse("cube:license_detail", args=[self.kwargs["pk"]])
+
+
+class CompatibilityCreateView(
+    LoginRequiredMixin, PermissionRequiredMixin, CreateLicenseRelatedMixin, CreateView
+):
+    permission_required = "cube.change_license"
+    related_field_name = "from_license"
+    model = Compatibility
+    form_class = CompatibilityForm
+    template_name = "cube/compatibility_create.html"
+
+
+class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    permission_required = "cube.change_license"
+    model = Compatibility
+    template_name = "cube/compatibility_confirm_delete.html"
+
+    def get_success_url(self):
+        return reverse("cube:license_detail", args=[self.object.from_license.pk])
 
 
 class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
@@ -153,10 +195,9 @@ class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
         "copyleft",
         "law_choice",
         "venue_choice",
-        "status",
-        "allowed",
-        "allowed_explanation",
         "patent_grant",
+        "osi_approved",
+        "fsf_approved",
         "foss",
         "non_commercial",
         "ethical_clause",
@@ -167,16 +208,17 @@ class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
     ]
     template_name = "cube/license_create.html"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["shared_fields"] = []
-        context["policy_fields"] = []
-        for field in context["form"]:
-            if field.name in LICENSE_SHARED_FIELDS:
-                context["shared_fields"].append(field)
-            else:
-                context["policy_fields"].append(field)
-        return context
+
+class LicenseDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    permission_required = "cube.delete_license"
+    model = License
+    template_name = "cube/license_confirm_delete.html"
+    success_url = reverse_lazy("cube:license_list")
+
+    def get_queryset(self):
+        # Only allow deletion of licenses that are not used by any component version (Usage.licenses_chosen)
+        qs = super().get_queryset()
+        return qs.filter(usage__isnull=True)
 
 
 class LicenseDiffView(
@@ -357,13 +399,13 @@ class LicensePrintView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
         textdoc.text.addElement(h)
 
         p = P(text="Validation Color: ")
-        v = Span(stylename=boldstyle, text=self.object.allowed)
+        v = Span(stylename=boldstyle, text=self.object.policy.allowed)
         p.addElement(v)
         textdoc.text.addElement(p)
 
-        if self.object.allowed_explanation is not None:
+        if self.object.policy.allowed_explanation is not None:
             p = P(text="Explanation: ")
-            v = Span(stylename=boldstyle, text=self.object.allowed_explanation)
+            v = Span(stylename=boldstyle, text=self.object.policy.allowed_explanation)
             p.addElement(v)
             textdoc.text.addElement(p)
 
@@ -447,21 +489,18 @@ class LicensePrintView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
 
 
 class ObligationCreateView(
-    LoginRequiredMixin, PermissionRequiredMixin, LicenseRelatedMixin, CreateView
+    LoginRequiredMixin, PermissionRequiredMixin, CreateLicenseRelatedMixin, CreateView
 ):
     permission_required = "cube.add_obligation"
     model = Obligation
-    fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
     license = None
-
-    def get_success_url(self):
-        return reverse("cube:license_detail", args=[self.object.license.id])
+    form_class = ObligationForm
 
 
 class ObligationUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = "cube.change_obligation"
     model = Obligation
-    fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
+    form_class = ObligationForm
 
     def get_success_url(self):
         return reverse("cube:license_detail", args=[self.object.license.id])
@@ -503,7 +542,7 @@ class ObligationsListView(LoginRequiredMixin, PermissionRequiredMixin, ListView)
 class GenericListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
-    FormErrorsToMessagesMixin,
+    ImportFormMixin,
     ListView,
     FormView,
 ):
@@ -619,14 +658,9 @@ class SharedReferenceView(
         licenses = list(License.objects.all())
         context["licenses"] = {
             "total": len(licenses),
-            "diff": len([lic for lic in licenses if lic.reference_diff]),
-            "only_local": License.objects.exclude(
-                spdx_id__in=list(
-                    License.objects.using("shared")
-                    .all()
-                    .values_list("spdx_id", flat=True)
-                )
-            ).count(),
+            "identical": len([lic for lic in licenses if lic.reference_diff == 0]),
+            "diff": len([lic for lic in licenses if lic.reference_diff > 0]),
+            "only_local": len([lic for lic in licenses if lic.reference_diff < 0]),
             "only_shared": License.objects.using("shared")
             .exclude(spdx_id__in=(lic.spdx_id for lic in licenses))
             .count(),
@@ -635,12 +669,9 @@ class SharedReferenceView(
         generics = list(Generic.objects.all())
         context["generics"] = {
             "total": len(generics),
-            "diff": len([gen for gen in generics if gen.reference_diff]),
-            "only_local": Generic.objects.exclude(
-                name__in=list(
-                    Generic.objects.using("shared").all().values_list("name", flat=True)
-                )
-            ).count(),
+            "identical": len([gen for gen in generics if gen.reference_diff == 0]),
+            "diff": len([gen for gen in generics if gen.reference_diff > 0]),
+            "only_local": len([gen for gen in generics if gen.reference_diff < 0]),
             "only_shared": Generic.objects.using("shared")
             .exclude(name__in=(gen.name for gen in generics))
             .count(),

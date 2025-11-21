@@ -15,6 +15,9 @@ class Usage(models.Model):
     DEFAULT_PROJECT = "Default project"
     DEFAULT_SCOPE = "Default scope"
 
+    MAX_LENGTH_DEFAULT_PROJECT_NAME = 750
+    MAX_LENGTH_DEFAULT_SCOPE_NAME = 250
+
     STATUS_AUTO = "Auto"
     STATUS_UNKNOWN = "Unknown"
     STATUS_VALIDATED = "Validated"
@@ -97,8 +100,12 @@ class Usage(models.Model):
     )
     description = models.TextField(max_length=500, blank=True)
     licenses_chosen = models.ManyToManyField("License", blank=True)
-    scope = models.CharField(max_length=50, default=DEFAULT_SCOPE)
-    project = models.CharField(max_length=750, default=DEFAULT_PROJECT)
+    scope = models.CharField(
+        max_length=MAX_LENGTH_DEFAULT_SCOPE_NAME, default=DEFAULT_SCOPE
+    )
+    project = models.CharField(
+        max_length=MAX_LENGTH_DEFAULT_PROJECT_NAME, default=DEFAULT_PROJECT
+    )
     license_expression = models.CharField(
         max_length=500,
         blank=True,
@@ -117,6 +124,7 @@ class Usage(models.Model):
     class Meta:
         verbose_name = "Component usage"
         verbose_name_plural = "Component usages"
+        ordering = ["id"]
 
 
 class Component(models.Model):
@@ -136,7 +144,7 @@ class Component(models.Model):
     purl_type = models.CharField("purl package type", max_length=200, blank=True)
     description = models.TextField(max_length=500, blank=True)
     programming_language = models.CharField(max_length=200, blank=True)
-    spdx_expression = models.CharField(max_length=200, blank=True)
+    spdx_expression = models.CharField(max_length=500, blank=True)
     homepage_url = models.URLField(max_length=200, blank=True)
     export_control_status = models.CharField(
         max_length=20, choices=EXPORT_CHOICES, blank=True
@@ -184,18 +192,18 @@ class Version(models.Model):
     )
     version_number = models.CharField(max_length=200)
     declared_license_expr = models.CharField(
-        max_length=200,
+        max_length=500,
         blank=True,
         help_text="Declared license expression (may not be SPDX valid)",
     )
     spdx_valid_license_expr = models.CharField(
-        max_length=200,
+        max_length=500,
         blank=True,
         help_text="License expression concluded by analyzing tool (e.g. ORT)",
         validators=[validate_spdx_expression],
     )
     corrected_license = models.CharField(
-        max_length=200,
+        max_length=500,
         blank=True,
         help_text="Final license expression used in legal evaluation (required when validated expression is ambiguous or empty)",
     )
@@ -203,6 +211,10 @@ class Version(models.Model):
         max_length=250,
         blank=True,
         help_text="Package URL (https://github.com/package-url/purl-spec)",
+    )
+    copyright_info = models.TextField(
+        blank=True,
+        help_text="Information about the copyright holder",
     )
 
     def save(self, *args, **kwargs):

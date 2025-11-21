@@ -2,27 +2,34 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+
 from django.contrib import admin
+from django.db import models
+from django.forms import TextInput
+from django.utils.safestring import mark_safe
 
-# Register your models here.
-
-from .models import Product
-from .models import Category
-from .models import Release
+from .models import Category, Token, Compatibility
 from .models import Component
-from .models import Funding
-from .models import Version
-from .models import Usage
-from .models import License
-from .models import Generic
-from .models import Obligation
 from .models import Derogation
-from .models import LicenseChoice
 from .models import Exploitation
-from .models import Team
+from .models import Funding
+from .models import Generic
+from .models import License
+from .models import LicenseChoice
 from .models import LicenseCuration
+from .models import LicensePolicy
+from .models import Obligation
+from .models import Product
+from .models import Release
+from .models import SBOMImport
+from .models import Team
+from .models import Usage
+from .models import Version
 from .models.policy import AbstractUsageRule
 from .utils.spdx import is_ambiguous
+
+
+# Register your models here.
 
 
 class ObligationInline(admin.StackedInline):
@@ -38,6 +45,7 @@ class ObligationInlineTab(admin.TabularInline):
 
 class ObligationAdmin(admin.ModelAdmin):
     search_fields = ["name", "license__spdx_id"]
+    autocomplete_fields = ("generic",)
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -62,8 +70,8 @@ class UsageInlineTab(admin.TabularInline):
 
 class LicenseAdmin(admin.ModelAdmin):
     inlines = [ObligationInline]
-    list_display = ("spdx_id", "allowed", "status")
-    list_filter = ["status"]
+    list_display = ("spdx_id", "long_name", "copyleft")
+    list_filter = ["copyleft", "liability", "warranty"]
     search_fields = ["spdx_id"]
     fieldsets = (
         (
@@ -83,30 +91,14 @@ class LicenseAdmin(admin.ModelAdmin):
             },
         ),
         (
-            "Optional informations",
+            "Optional information",
             {
                 "classes": ("collapse",),
                 "fields": (
-                    "license_version",
-                    "radical",
-                    "autoupgrade",
-                    "inspiration_spdx",
-                    "inspiration",
                     "foss",
                     "osi_approved",
                     "fsf_approved",
                 ),
-            },
-        ),
-        (
-            "Policy",
-            {
-                "fields": (
-                    "status",
-                    "allowed",
-                    "allowed_explanation",
-                    "comment",
-                )
             },
         ),
         (
@@ -116,11 +108,27 @@ class LicenseAdmin(admin.ModelAdmin):
     )
 
 
+class LicensePolicyAdmin(admin.ModelAdmin):
+    list_display = ("license__spdx_id", "allowed", "status")
+    list_filter = ["status", "allowed"]
+    search_fields = ["spdx_id"]
+    fields = ("status", "allowed", "allowed_explanation", "categories")
+
+
+class CompatibilityAdmin(admin.ModelAdmin):
+    list_display = ("__str__",)
+    list_filter = ["direction"]
+    search_fields = ["spdx_id"]
+
+
 class GenericAdmin(admin.ModelAdmin):
     inlines = [ObligationInlineTab]
     list_display = ("name", "in_core", "metacategory", "team")
+    search_fields = [
+        "name",
+    ]
     list_filter = ["in_core"]
-    ordering = ["in_core"]
+    ordering = ["-in_core", "name"]
 
 
 class ComponentAdmin(admin.ModelAdmin):
@@ -197,8 +205,14 @@ class LicenseCurationAdmin(ComponentRuleAdminMixin, admin.ModelAdmin):
         "author",
         "component_summary",
     )
-    list_display = ("__str__", "component_summary")
+    list_display = ("curation_summary", "component_summary", "created", "updated")
     autocomplete_fields = ("component", "version")
+    search_fields = (
+        "expression_in",
+        "expression_out",
+        "component__name",
+        "version__component__name",
+    )
 
     fieldsets = (
         ("", {"fields": ("created", "updated", "author")}),
@@ -224,6 +238,12 @@ class LicenseCurationAdmin(ComponentRuleAdminMixin, admin.ModelAdmin):
         ),
         ("Details", {"fields": ("explanation",)}),
     )
+
+    @admin.display(description="Summary")
+    def curation_summary(self, object: LicenseCuration):
+        return mark_safe(
+            f"{object.expression_in or '<em>empty</em>'} -> {object.expression_out}"
+        )
 
 
 class UsageRuleAdminMixin(ComponentRuleAdminMixin):
@@ -303,7 +323,48 @@ class DerogationAdmin(UsageRuleAdminMixin, admin.ModelAdmin):
     )
 
 
+class SBOMImportAdmin(admin.ModelAdmin):
+    list_display = (
+        "file_name",
+        "file_type",
+        "mode",
+        "linking",
+        "date",
+        "user",
+        "release",
+    )
+    fields = ("file_name", "file_type", "mode", "linking", "date", "user", "release")
+    readonly_fields = fields
+
+
+class TokenAdmin(admin.ModelAdmin):
+    list_display = ("description", "user", "created", "expires", "description")
+    fields = ["description", "user", "ttl", "created", "expires"]
+    readonly_fields = ("created", "key", "created", "expires")
+    search_fields = ["user__username"]
+
+    formfield_overrides = {
+        models.TextField: {"widget": TextInput()},
+    }
+
+    @admin.display(description="Expiration")
+    def expires(self, obj):
+        return obj.created + obj.ttl if obj.ttl is not None else "Never"
+
+    def get_fields(self, request, obj=None):
+        fields = super().get_fields(request, obj)
+        if obj is None:
+            fields = ("key", *fields)
+
+        return fields
+
+    def get_changeform_initial_data(self, request):
+        return {"user": request.user}
+
+
 admin.site.register(License, LicenseAdmin)
+admin.site.register(LicensePolicy, LicensePolicyAdmin)
+admin.site.register(Compatibility, CompatibilityAdmin)
 admin.site.register(Obligation, ObligationAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
@@ -318,3 +379,5 @@ admin.site.register(LicenseChoice, LicenseChoiceAdmin)
 admin.site.register(Derogation, DerogationAdmin)
 admin.site.register(Exploitation)
 admin.site.register(Team)
+admin.site.register(SBOMImport, SBOMImportAdmin)
+admin.site.register(Token, TokenAdmin)

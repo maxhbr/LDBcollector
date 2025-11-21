@@ -5,11 +5,9 @@
 #
 # For details on the different profiles, see the Install section in the doc.
 
-version: '3.9'
-
 services:
   db:
-    image: postgres
+    image: postgres:16
     volumes:
       - db_volume:/var/lib/postgresql/data
     environment:
@@ -18,17 +16,14 @@ services:
       - POSTGRES_PASSWORD=postgres
     networks:
       hermine_net:
-  django:
+
+  django-common: &django
     build:
       context: .
-    volumes:
-      - static_volume:/opt/hermine/static
-      - $PWD/docker/shared.json:/opt/hermine/shared.json
     environment:
       # hard-coded defaults for docker-compose
       - SUPERUSER=admin
       - PASSWORD=admin
-      - STATIC_ROOT=/opt/hermine/static
       - DJANGO_PORT=8080
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
@@ -41,33 +36,34 @@ services:
       # can be overridden in .env
       - PRODUCTION=${HERMINE_PRODUCTION:-True}
       - DJANGO_THREADS=${HERMINE_DJANGO_THREADS:-${THREADS}} # Defaults to number of cores
-      - CSRF_TRUSTED_ORIGINS=${HERMINE_CSRF_TRUSTED_ORIGINS:-${CSRF_TRUSTED_ORIGINS}}
+      - CSRF_TRUSTED_ORIGINS=${HERMINE_CSRF_TRUSTED_ORIGINS:-${CSRF_TRUSTED_ORIGINS}} # List of (protocol)domains separated by commas
       - ENABLE_PROFILING=${HERMINE_ENABLE_PROFILING:-${HERMINE_PROFILING:-False}}
       - MAX_UPLOAD_SIZE=${HERMINE_MAX_UPLOAD_SIZE}
       - TRUST_PROXY_HEADERS=${HERMINE_TRUST_PROXY_HEADERS:-True}
+      - EMAIL_HOST=${HERMINE_EMAIL_HOST}
+      - EMAIL_HOST_PASSWORD=${HERMINE_EMAIL_HOST_PASSWORD}
+      - EMAIL_HOST_USER=${HERMINE_EMAIL_HOST_USER}
+      - EMAIL_PORT=${HERMINE_EMAIL_PORT}
+      - EMAIL_USE_TLS=${HERMINE_EMAIL_USE_TLS:-False} # activate for TLS connections (usually on port 465)
+      - EMAIL_USE_SSL=${HERMINE_EMAIL_USE_SSL:-True} # activate for connections using STARTSSL (usually on port 587)
+      - DEFAULT_FROM_EMAIL=${HERMINE_FROM_EMAIL}
+      - FORCE_SCRIPT_NAME=${HERMINE_FORCE_SCRIPT_NAME}
+      - AUTH_TOKEN_HASH=${HERMINE_AUTH_TOKEN_HASH} # default is sha256
     links:
       - db
     networks:
       hermine_net:
+    profiles: ["never_this_is_just_a_template"]
 
-
-  local_caddy:
-    image: caddy
-    volumes:
-      - caddy_data:/data
-      - caddy_config:/config
-      - $PWD/docker/Caddyfile.localhost:/etc/caddy/Caddyfile
-      - static_volume:/var/www/static
-    environment:
-      - PORT=${PORT:-8000}
-    links:
-      - django
-    networks:
-      hermine_net:
+  django-localhost:
+    <<: *django
     ports:
-      - "${PORT:-8000}:${PORT:-8000}"
-    profiles: ["localhost"]
+      - "${PORT:-9000}:8080"
+    profiles: [""]
 
+  django-behind-caddy:
+    <<: *django
+    profiles: ["https"]
 
   web_https:
     image: caddy
@@ -75,12 +71,11 @@ services:
       - caddy_data:/data
       - caddy_config:/config
       - $PWD/docker/Caddyfile:/etc/caddy/Caddyfile
-      - static_volume:/var/www/static
     environment:
       - HOST=${HERMINE_HOST:-localhost}
       - DJANGO_PORT=8080
     links:
-      - django
+      - django-behind-caddy
     networks:
       hermine_net:
     ports:
@@ -92,6 +87,5 @@ networks:
   hermine_net:
 volumes:
   db_volume:
-  static_volume:
   caddy_data:
   caddy_config:

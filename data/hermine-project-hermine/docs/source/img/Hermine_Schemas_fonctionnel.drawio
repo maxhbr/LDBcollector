@@ -144,13 +144,13 @@
         <mxCell id="RaAgievXMx-820h7E_Ox-6" value="Obligation 4" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
           <mxGeometry x="730" y="460" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="RaAgievXMx-820h7E_Ox-11" value="Generic obligation A" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
+        <mxCell id="RaAgievXMx-820h7E_Ox-11" value="Compliance action A" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
           <mxGeometry x="930" y="337" width="120" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="RaAgievXMx-820h7E_Ox-13" value="Generic obligation B" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
+        <mxCell id="RaAgievXMx-820h7E_Ox-13" value="Compliance action B" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
           <mxGeometry x="930" y="377" width="120" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="RaAgievXMx-820h7E_Ox-14" value="Generic obligation C" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
+        <mxCell id="RaAgievXMx-820h7E_Ox-14" value="Compliance action C" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
           <mxGeometry x="930" y="416.5" width="120" height="36" as="geometry" />
         </mxCell>
         <mxCell id="Wzy9yNOAurDndINpXCb6-0" value="&lt;p style=&quot;line-height: 130%; font-size: 18px;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center; font-size: 18px;&quot;&gt;Usage of an Open Source component&lt;/div&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Ubuntu;verticalAlign=middle;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">

@@ -3,8 +3,9 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import os
 
-from django.urls import reverse
 from django.conf import settings
+from django.urls import reverse
+
 from cube.models import (
     Usage,
     LicenseCuration,
@@ -12,14 +13,16 @@ from cube.models import (
     Exploitation,
     Derogation,
     License,
+    LicensePolicy,
 )
-from cube.utils.licenses import handle_licenses_json
+from cube.utils.licenses import handle_licenses_json_or_shared_json
 from cube.utils.release_validation import (
     STEP_CURATION,
     STEP_CONFIRM_AND,
     STEP_EXPLOITATIONS,
     STEP_CHOICES,
     STEP_POLICY,
+    STEP_COMPATIBILITY,
 )
 from .mixins import BaseHermineAPITestCase
 
@@ -28,7 +31,7 @@ def import_licenses():
     with open(
         os.path.join(settings.BASE_DIR, "cube/fixtures/fake_licenses_export.json")
     ) as licenses_file:
-        handle_licenses_json(licenses_file.read())
+        handle_licenses_json_or_shared_json(licenses_file.read())
 
 
 class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
@@ -36,12 +39,13 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         with open(
             os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")
         ) as sbom_file:
-            url = reverse("cube:upload_spdx-list")
+            url = reverse(
+                "cube:api:releases-upload_spdx-list", kwargs={"release_id": 1}
+            )
             res = self.client.post(
                 url,
                 {
                     "spdx_file": sbom_file,
-                    "release": 1,
                     "replace": False,
                     "linking": Usage.LINKING_DYNAMIC,
                 },
@@ -52,7 +56,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
     def test_generic_sbom_endpoint(self):
         import_licenses()
         res = self.client.post(
-            reverse("cube:generics-sbom"),
+            reverse("cube:api:generics-sbom"),
             data={
                 "packages": [
                     {
@@ -72,13 +76,17 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(len(res.data), 2)
 
     def test_validation_view(self):
+        # TODO: this is a UI test, not API
+        #   it should not live in tests/api/ folder
+        #   but it currently depends on provisionning methods
         self.create_product()
         self.create_release()
         import_licenses()
-        License.objects.create(
+        lic = License.objects.create(
             spdx_id="LicenseRef-fakeLicense-NotAnalyzed-1.0",
-            allowed=License.ALLOWED_ALWAYS,
         )
+        lic.policy.allowed = LicensePolicy.ALLOWED_ALWAYS
+        lic.policy.save()
 
         self.create_curations()
         self.create_ands_corrections()
@@ -87,8 +95,11 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.create_derogations()
         self.import_sbom()
 
-        res = self.client.get(reverse("cube:release_validation", kwargs={"pk": 1}))
-        self.assertEqual(res.status_code, 200)
+        for step in range(1, 6):
+            res = self.client.get(
+                reverse(f"cube:release_validation_step_{step}", kwargs={"pk": 1})
+            )
+            self.assertEqual(res.status_code, 200)
         self.assertEqual(res.context["object"].valid_step, STEP_POLICY)
         self.assertEqual(len(res.context["derogations"]), 1)
 
@@ -98,12 +109,14 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.import_sbom()
 
         res = self.client.post(
-            reverse("cube:releases-update-validation", kwargs={"id": 1})
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], 0)
 
         # Step 1
-        res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-1", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["invalid_expressions"]), 2)
         self.assertEqual(
@@ -115,7 +128,9 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
 
         self.create_curations()
         # Is everything right ?
-        res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-1", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], True)
         self.assertTrue(
             License.objects.filter(
@@ -124,44 +139,56 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         )
 
         res = self.client.post(
-            reverse("cube:releases-update-validation", kwargs={"id": 1})
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_CURATION)
 
         # Step 2
         import_licenses()
-        res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-2", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], False)
 
         self.create_ands_corrections()
-        res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-2", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], True)
         res = self.client.post(
-            reverse("cube:releases-update-validation", kwargs={"id": 1})
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_CONFIRM_AND)
 
         # Step 3
-        res = self.client.get(reverse("cube:releases-validation-3", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-3", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["unset_scopes"]), 1)
 
         self.create_exploitations()
-        res = self.client.get(reverse("cube:releases-validation-3", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-3", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], True)
 
         res = self.client.post(
-            reverse("cube:releases-update-validation", kwargs={"id": 1})
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_EXPLOITATIONS)
 
         # Step 4
-        res = self.client.get(reverse("cube:releases-validation-4", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-4", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["to_resolve"]), 2)
 
         self.create_choices()
-        res = self.client.get(reverse("cube:releases-validation-4", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-4", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], True)
         self.assertEqual(
             len(res.data["resolved"]), 2
@@ -183,13 +210,17 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         )
 
         res = self.client.post(
-            reverse("cube:releases-update-validation", kwargs={"id": 1})
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_CHOICES)
 
         # Step 5
-        self.client.post(reverse("cube:releases-update-validation", kwargs={"id": 1}))
-        res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
+        self.client.post(
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
+        )
+        res = self.client.get(
+            reverse("cube:api:releases-validation-5", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(
             len(res.data["usages_lic_unknown"]), 1
@@ -199,15 +230,41 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         )  # spdx-valid-dependency
 
         self.create_derogations()
-        res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-5", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], True)
         self.assertEqual(len(res.data["derogations"]), 1)
 
-        ## Finished
         res = self.client.post(
-            reverse("cube:releases-update-validation", kwargs={"id": 1})
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_POLICY)
+
+        # Step 6
+        self.client.post(
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
+        )
+        res = self.client.get(
+            reverse("cube:api:releases-validation-6", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["valid"], False)
+        self.assertEqual(len(res.data["incompatible_usages"]), 1)
+        self.assertEqual(len(res.data["incompatible_licenses"]), 1)
+        self.add_outbound_license()
+        self.client.post(
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
+        )
+        res = self.client.get(
+            reverse("cube:api:releases-validation-6", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["valid"], True)
+
+        ## Finished
+        res = self.client.post(
+            reverse("cube:api:releases-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["validation_step"], STEP_COMPATIBILITY)
 
     def test_multiple_curations(self):
         self.create_product()
@@ -224,7 +281,9 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
             expression_out="LicenseRef-fakeLicense-Allowed-2.0",
         )
 
-        res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
+        res = self.client.get(
+            reverse("cube:api:releases-validation-1", kwargs={"id": 1})
+        )
         self.assertEqual(res.data["valid"], False)
 
     def create_curations(self):
@@ -259,13 +318,13 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         Exploitation.objects.create(
             release_id=1,
             scope=Usage.DEFAULT_SCOPE,
-            project=Usage.DEFAULT_PROJECT,
-            exploitation=Usage.EXPLOITATION_INTERNAL,
+            project="",
+            exploitation=Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE,
         )
 
     def create_choices(self):
         self.client.post(
-            reverse("cube:choices-list"),
+            reverse("cube:api:choices-list"),
             data={
                 "expression_in": "LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
                 "expression_out": "LicenseRef-fakeLicense-Allowed-1.0",
@@ -282,5 +341,6 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         allowed_license = License.objects.get(
             spdx_id="LicenseRef-fakeLicense-NotAnalyzed-1.0"
         )
-        allowed_license.allowed = License.ALLOWED_ALWAYS
+        allowed_license.policy.allowed = LicensePolicy.ALLOWED_ALWAYS
+        allowed_license.policy.save()
         allowed_license.save()

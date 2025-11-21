@@ -14,12 +14,18 @@ from django.conf import settings
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "your-django-secret-key"
+# AUTH_TOKEN_HASH = "sha256" # any hash algorithm supported by hashlib
 
 HOST = "example.com"
 # Reverse proxy configuration
 # USE_X_FORWARDED_HOST = True
 # SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 # CSRF_TRUSTED_ORIGINS = ["https://" + HOST]
+
+# If you want to serve Hermine under a subpath,
+# setting SCRIPT_NAME in the WSGI server is the recommended way.
+# You can use the following line to force the script name in Django
+# FORCE_SCRIPT_NAME = "/hermine"
 
 # Static files location, defaults to static/ in the Hermine root dir
 # In production, static files should be served by a web server like nginx
@@ -49,6 +55,13 @@ DATABASES = {
 
 # The maximum possible size for a SBOM to import, in bytes
 MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10MB, you have to set it in bytes
+
+###############################
+## Third party authentication #
+###############################
+
+# # For authentication through a header set by a reverse proxy
+# REMOTE_USER_HEADER = "HTTP_X_REMOTE_USER"
 
 # # For configuring OAuthn the following parameters are required :
 # OAUTH_DOMAIN =

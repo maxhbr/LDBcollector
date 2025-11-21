@@ -7,6 +7,8 @@ import logging
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.db import transaction
+from django.forms import Form
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
@@ -17,26 +19,27 @@ from django.views.generic import (
     UpdateView,
     DetailView,
     TemplateView,
+    DeleteView,
 )
+from django_filters.views import FilterView
 
+from cube.filters import ReleaseBomFilter
 from cube.forms.importers import ImportBomForm
-from cube.forms.releases import UsageForm
+from cube.forms.releases import UsageForm, ReleaseForm
 from cube.importers import (
     import_ort_evaluated_model_json_file,
+    import_hkissbom_json_file,
     import_spdx_file,
+    import_cyclonedx_file,
     SBOMImportFailure,
+    add_import_history_entry,
 )
-from cube.models import (
-    Release,
-    Usage,
-    Generic,
-)
+from cube.models import Release, Usage, Generic, SBOMImport
 from cube.utils.licenses import (
     get_usages_obligations,
     get_generic_usages,
 )
 from cube.views.mixins import (
-    SearchMixin,
     ReleaseContextMixin,
     ReleaseExploitationFormMixin,
     QuerySuccessUrlMixin,
@@ -49,16 +52,19 @@ class ReleaseSummaryView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
     ReleaseExploitationFormMixin,
-    ReleaseContextMixin,
-    TemplateView,
+    DetailView,
 ):
-    def get(self, *args, **kwargs):
+    model = Release
+    context_object_name = "release"
+
+    def render_to_response(self, context, **response_kwargs):
         from cube.models.meta import ReleaseConsultation
 
         ReleaseConsultation.objects.update_or_create(
-            user=self.request.user, release=self.release
+            user=self.request.user, release=self.object
         )
-        return super().get(*args, **kwargs)
+
+        return super().render_to_response(context, **response_kwargs)
 
     template_name = "cube/release_summary.html"
     permission_required = "cube.view_release"
@@ -68,9 +74,17 @@ class ReleaseUpdateView(
     LoginRequiredMixin, PermissionRequiredMixin, QuerySuccessUrlMixin, UpdateView
 ):
     model = Release
-    fields = ["product", "release_number", "commit", "ship_status"]
+    form_class = ReleaseForm
     permission_required = "cube.change_release"
     template_name = "cube/release_update.html"
+
+
+class ReleaseDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    model = Release
+    permission_required = "cube.delete_release"
+
+    def get_success_url(self):
+        return reverse("cube:product_detail", kwargs={"pk": self.object.product_id})
 
 
 class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
@@ -83,23 +97,65 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     def get_success_url(self):
         return reverse("cube:release_import", kwargs={"pk": self.object.pk})
 
+    @transaction.atomic()
     def form_valid(self, form):
-        replace = form.cleaned_data["import_mode"] == ImportBomForm.IMPORT_MODE_REPLACE
+        replace = form.cleaned_data["import_mode"] == SBOMImport.IMPORT_MODE_REPLACE
         try:
-            if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
+            if form.cleaned_data["bom_type"] == SBOMImport.BOM_ORT:
                 import_ort_evaluated_model_json_file(
                     self.request.FILES["file"],
                     self.object.pk,
                     replace,
+                    component_update_mode=form.cleaned_data.get(
+                        "component_update_mode"
+                    ),
                     linking=form.cleaned_data.get("linking"),
                 )
-            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_SPDX:
+            elif form.cleaned_data["bom_type"] == SBOMImport.BOM_SPDX:
                 import_spdx_file(
                     self.request.FILES["file"],
                     self.object.pk,
                     replace,
+                    component_update_mode=form.cleaned_data.get(
+                        "component_update_mode"
+                    ),
                     linking=form.cleaned_data.get("linking"),
+                    default_project_name=form.cleaned_data.get("default_project_name"),
+                    default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
+            elif form.cleaned_data["bom_type"] == SBOMImport.BOM_CYCLONEDX:
+                import_cyclonedx_file(
+                    self.request.FILES["file"],
+                    self.object.pk,
+                    replace,
+                    component_update_mode=form.cleaned_data.get(
+                        "component_update_mode"
+                    ),
+                    linking=form.cleaned_data.get("linking"),
+                    default_project_name=form.cleaned_data.get("default_project_name"),
+                    default_scope_name=form.cleaned_data.get("default_scope_name"),
+                )
+            elif form.cleaned_data["bom_type"] == SBOMImport.BOM_HKB:
+                import_hkissbom_json_file(
+                    self.request.FILES["file"],
+                    self.object.pk,
+                    replace,
+                    component_update_mode=form.cleaned_data.get(
+                        "component_update_mode"
+                    ),
+                    linking=form.cleaned_data.get("linking"),
+                    default_project_name=form.cleaned_data.get("default_project_name"),
+                    default_scope_name=form.cleaned_data.get("default_scope_name"),
+                )
+            add_import_history_entry(
+                self.request.FILES["file"],
+                form.cleaned_data["bom_type"],
+                form.cleaned_data.get("import_mode"),
+                form.cleaned_data.get("component_update_mode"),
+                form.cleaned_data.get("linking"),
+                self.request.user,
+                self.object.id,
+            )
         except SBOMImportFailure as e:
             form.add_error("file", e)
             return super().form_invalid(form)
@@ -112,7 +168,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                 You successfully uploaded your file.
                 You can add components from another source or check the
                 validation steps you need to achieve in the <b><a
-                href="{reverse("cube:release_validation",
+                href="{reverse("cube:release_validation_step_1",
                 kwargs={"pk": self.object.id})}"> Validation tab</a></b>.
                 """
             ),
@@ -193,6 +249,7 @@ class ReleaseBomExportView(LoginRequiredMixin, PermissionRequiredMixin, DetailVi
                 "modified",
                 "exploitation",
                 "linking type",
+                "copyright info",
             ]
         )
 
@@ -211,6 +268,7 @@ class ReleaseBomExportView(LoginRequiredMixin, PermissionRequiredMixin, DetailVi
                     usage.component_modified,
                     usage.exploitation,
                     usage.linking,
+                    usage.version.copyright_info,
                 ]
             )
         return response
@@ -218,24 +276,58 @@ class ReleaseBomExportView(LoginRequiredMixin, PermissionRequiredMixin, DetailVi
 
 class ReleaseBomView(
     LoginRequiredMixin,
-    SearchMixin,
     ReleaseContextMixin,
     PermissionRequiredMixin,
-    generic.ListView,
+    FilterView,
 ):
     model = Usage
+    filterset_class = ReleaseBomFilter
     template_name = "cube/release_bom.html"
     paginate_by = 50
-    search_fields = ("version__purl",)
     permission_required = "cube.view_release"
 
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset(*args, **kwargs)
         release_id = self.kwargs["release_pk"]
-        queryset = queryset.filter(release=release_id).order_by(
-            "project", "scope", "exploitation", "license_expression"
-        )
-        return queryset
+        return queryset.filter(release__id=release_id)
+
+
+class ReleaseNoticeView(
+    LoginRequiredMixin,
+    ReleaseContextMixin,
+    PermissionRequiredMixin,
+    FilterView,
+):
+    model = Usage
+    filterset_class = ReleaseBomFilter
+    template_name = "cube/release_notice.html"
+    paginate_by = 50
+    permission_required = "cube.view_release"
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add in a QuerySet of all the books
+        usages = self.get_queryset()
+        involved_licences = dict()
+        for usage in usages:
+            credit = (
+                usage.version.component.name,
+                usage.version.version_number,
+                usage.version.copyright_info,
+            )
+            involved_licence = usage.license_expression
+            if involved_licence not in involved_licences:
+                involved_licences[involved_licence] = list()
+            involved_licences[involved_licence].append(credit)
+        context["involved_licences"] = involved_licences
+
+        return context
+
+    def get_queryset(self, *args, **kwargs):
+        queryset = super().get_queryset(*args, **kwargs)
+        release_id = self.kwargs["release_pk"]
+        return queryset.filter(release__id=release_id)
 
 
 class UsageCreateView(
@@ -284,3 +376,32 @@ class UsageDeleteView(
         return reverse(
             "cube:release_bom", kwargs={"release_pk": self.object.release.pk}
         )
+
+
+class ScopeUsagesDeleteView(
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    ReleaseContextMixin,
+    generic.FormView,
+    generic.ListView,
+):
+    permission_required = "cube.delete_usage"
+    model = Usage
+    form_class = Form
+    template_name = "cube/scope_usages_delete.html"
+
+    def get_success_url(self):
+        return reverse("cube:release_summary", args=[self.release.id])
+
+    def get_queryset(self):
+        qs = Usage.objects.filter(release=self.kwargs["release_pk"])
+        if "scope" in self.request.GET and self.request.GET["scope"]:
+            qs = qs.filter(scope=self.request.GET["scope"])
+        if "project" in self.request.GET and self.request.GET["project"]:
+            qs = qs.filter(project=self.request.GET["project"])
+
+        return qs
+
+    def form_valid(self, form):
+        self.get_queryset().delete()
+        return super().form_valid(form)

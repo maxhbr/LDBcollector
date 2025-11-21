@@ -172,9 +172,11 @@ def hermine_to_ort(curation: LicenseCuration):
         type=fix_type_case(component.purl_type),
         namespace=component.namespace or "",
         name=name,
-        version=curation.version.version_number
-        if curation.version is not None
-        else curation.version_constraint,
+        version=(
+            curation.version.version_number
+            if curation.version is not None
+            else curation.version_constraint
+        ),
     )
 
 

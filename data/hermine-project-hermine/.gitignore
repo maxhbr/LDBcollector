@@ -7,6 +7,10 @@ __pycache__
 .vscode/
 .coverage
 .idea
+.ropeproject/
+poetry.toml
+pyrightconfig.json
+.venv/
 # Hermine specific
 /static/
 /vrac/

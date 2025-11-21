@@ -11,7 +11,7 @@
 
 # Build vite modules on a separate image so we do not
 # install node on the runtime image
-FROM node:20 as build
+FROM node:23 AS build
 
 ARG BUILD_PATH=/opt/hermine
 
@@ -23,10 +23,11 @@ RUN npm ci
 COPY . $BUILD_PATH
 RUN npm run build
 
-FROM python:3.12-slim-bullseye as runtime
+FROM python:3.13-slim AS runtime
 
 ARG INSTALL_PATH=/opt/hermine
-ARG POETRY_VERSION=1.6.1
+ARG POETRY_VERSION=2.1.3
+ARG GUNICORN_VERSION=23.0.0
 
 ENV \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -37,28 +38,34 @@ ENV \
     POETRY_HOME="/opt/poetry" \
     POETRY_VIRTUALENVS_IN_PROJECT=true \
     POETRY_NO_INTERACTION=1
+ENV \
+    GUNICORN_VERSION=$GUNICORN_VERSION
+
 
 WORKDIR $INSTALL_PATH
 
 # debug
-RUN apt update && apt install -y postgresql-client net-tools
+RUN apt-get update && apt-get install -y postgresql-client net-tools && rm -rf /var/lib/apt/lists/*
 
 # install poetry and dependencies
 ARG OPTIONAL_PIP_INSTALL=""
-RUN pip install "poetry==$POETRY_VERSION" gunicorn $OPTIONAL_PIP_INSTALL
+RUN pip install --no-cache-dir "poetry==$POETRY_VERSION" "gunicorn==$GUNICORN_VERSION" $OPTIONAL_PIP_INSTALL
 COPY pyproject.toml poetry.lock $INSTALL_PATH/
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi --without dev
 
 COPY hermine $INSTALL_PATH/hermine
-# copy node modules
+# copy vite built modules, run files and collect static files
 COPY --from=build $INSTALL_PATH/hermine/vite_modules/dist $INSTALL_PATH/hermine/vite_modules/dist
-
 COPY docker/docker-entrypoint.sh $INSTALL_PATH/
 COPY docker/config.py $INSTALL_PATH/hermine/hermine/config.py
+RUN poetry run python $INSTALL_PATH/hermine/manage.py collectstatic --noinput --clear
 
 EXPOSE $DJANGO_PORT
 
+# Copy optional shared.json if it exists
+COPY docker/*shared.json $INSTALL_PATH/
+
 # run entrypoint.sh
 WORKDIR $INSTALL_PATH/hermine
-ENTRYPOINT /opt/hermine/docker-entrypoint.sh
+ENTRYPOINT ["/opt/hermine/docker-entrypoint.sh"]

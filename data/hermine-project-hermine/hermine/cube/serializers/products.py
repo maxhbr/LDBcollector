@@ -4,14 +4,14 @@
 
 from rest_framework import serializers
 
-from cube.models import Product, Release, Usage, Exploitation
+from cube.models import Product, Release, Usage, Exploitation, License, SBOMImport
 from cube.serializers import (
     UsageSerializer,
     LicenseSerializer,
-    VersionSerializer,
     DerogationSerializer,
     GenericSerializer,
     ObligationSerializer,
+    UsageWithVersionsSerializer,
 )
 from cube.utils.validators import validate_file_size
 
@@ -19,7 +19,7 @@ from cube.utils.validators import validate_file_size
 class ExploitationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exploitation
-        fields = ["scope", "project", "exploitation"]
+        fields = ["id", "scope", "project", "exploitation"]
 
 
 class ReleaseSerializer(serializers.ModelSerializer):
@@ -27,6 +27,9 @@ class ReleaseSerializer(serializers.ModelSerializer):
 
     validation_step = serializers.IntegerField(source="valid_step", read_only=True)
     exploitations = ExploitationSerializer(many=True, read_only=True)
+    outbound_licenses = serializers.SlugRelatedField(
+        many=True, slug_field="spdx_id", queryset=License.objects.all(), required=False
+    )
 
     class Meta:
         use_natural_foreign_keys = True
@@ -40,6 +43,7 @@ class ReleaseSerializer(serializers.ModelSerializer):
             "validation_step",
             "commit",
             "exploitations",
+            "outbound_licenses",
         ]
 
 
@@ -74,50 +78,24 @@ class ProductSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of Products on the following fields :"""
 
     releases = ReleaseSerializer(
-        read_only=False, many=True, allow_null=True, required=False
+        read_only=True, many=True, allow_null=True, required=False
+    )
+    outbound_licenses = serializers.SlugRelatedField(
+        many=True, slug_field="spdx_id", queryset=License.objects.all(), required=False
     )
 
     class Meta:
         use_natural_foreign_keys = True
         model = Product
-        fields = ["id", "name", "description", "owner", "releases"]
+        fields = [
+            "id",
+            "name",
+            "description",
+            "owner",
+            "releases",
+            "outbound_licenses",
+        ]
         read_only_field = "name"
-
-    def create(self, validated_data):
-        releases_data = validated_data.pop("releases", [])
-        product = Product.objects.create(**validated_data)
-        for release_data in releases_data:
-            try:
-                Release.objects.create(product=product, **release_data)
-            except Exception:
-                print("Could not create release ", release_data, " of ", product)
-        return product
-
-    def update(self, instance, validated_data):
-        """Updates a product overwriting existing data. You should explicitely give
-        every data you want to keep in the 'validated data parameter.
-
-        :param instance: The instance of product you want to update.
-        :type instance: Product
-        :param validated_data: A dict matching product serialization. Releases are
-            nested in 'releases'.
-        :type validated_data: [type]
-        :return: [description]
-        :rtype: [type]
-        """
-
-        Release.objects.filter(product=instance).delete()
-        releases_data = validated_data.pop("releases")
-        for release_data in releases_data:
-            updated_release = Release.objects.create(**release_data, product=instance)
-            try:
-                instance.releases.add(updated_release)
-            except Exception:
-                print("Could not create releases of", instance)
-        for field, value in validated_data.items():
-            setattr(instance, field, value)
-        instance.save()
-        return instance
 
 
 ## Validation step serializers
@@ -129,12 +107,12 @@ class BaseValidationStepSerializer(serializers.Serializer):
 
 
 class ExpressionValidationSerializer(BaseValidationStepSerializer):
-    invalid_expressions = VersionSerializer(read_only=True, many=True)
-    fixed_expressions = VersionSerializer(read_only=True, many=True)
+    invalid_expressions = UsageWithVersionsSerializer(read_only=True, many=True)
+    fixed_expressions = UsageWithVersionsSerializer(read_only=True, many=True)
 
 
 class AndsValidationSerializer(BaseValidationStepSerializer):
-    to_confirm = UsageSerializer(read_only=True, many=True)
+    to_confirm = UsageWithVersionsSerializer(read_only=True, many=True)
 
 
 class ExploitationsValidationSerializer(BaseValidationStepSerializer):
@@ -157,15 +135,82 @@ class PolicyValidationSerializer(BaseValidationStepSerializer):
     derogations = DerogationSerializer(read_only=True, many=True)
 
 
+class CompatibilityValidationSerializer(BaseValidationStepSerializer):
+    incompatible_usages = UsageSerializer(read_only=True, many=True)
+    incompatible_licenses = LicenseSerializer(read_only=True, many=True)
+
+
 class UploadSPDXSerializer(serializers.Serializer):
     spdx_file = serializers.FileField(validators=[validate_file_size])
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
+    default_project_name = serializers.CharField(
+        max_length=Usage.MAX_LENGTH_DEFAULT_PROJECT_NAME, required=False
+    )
+    default_scope_name = serializers.CharField(
+        max_length=Usage.MAX_LENGTH_DEFAULT_SCOPE_NAME, required=False
+    )
+
+
+class UploadCycloneDXSerializer(serializers.Serializer):
+    cyclonedx_file = serializers.FileField(validators=[validate_file_size])
+    release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
+    replace = serializers.BooleanField(default=False, required=False)
+    linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
+    default_project_name = serializers.CharField(max_length=750, required=False)
+    default_scope_name = serializers.CharField(max_length=50, required=False)
 
 
 class UploadORTSerializer(serializers.Serializer):
     ort_file = serializers.FileField(validators=[validate_file_size])
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+
+
+class UploadHKBSerializer(serializers.Serializer):
+    hkb_file = serializers.FileField(validators=[validate_file_size])
+    release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
+    replace = serializers.BooleanField(default=False, required=False)
+    linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
+
+
+class DependencySerializer(serializers.Serializer):
+    release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
+    purl_type = serializers.CharField(max_length=200, required=True)
+    name = serializers.CharField(max_length=200, required=True)
+    version_number = serializers.CharField(max_length=200, required=True)
+    declared_license_expr = serializers.CharField(max_length=500, required=False)
+    spdx_valid_license_expr = serializers.CharField(max_length=500, required=False)
+    linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+    component_update_mode = serializers.ChoiceField(
+        choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
+        default=SBOMImport.COMPONENT_UPDATE_DEFAULT,
+        required=False,
+    )
+    purl = serializers.CharField(max_length=250, required=False)
+    default_project_name = serializers.CharField(max_length=750, required=False)
+    default_scope_name = serializers.CharField(max_length=50, required=False)
+    homepage_url = serializers.CharField(max_length=500, required=False)
+    description = serializers.CharField(max_length=500, required=False)

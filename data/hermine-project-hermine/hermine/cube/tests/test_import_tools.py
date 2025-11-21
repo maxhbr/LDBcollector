@@ -2,17 +2,35 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
+import os
 
+from django.conf import settings
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
 
-from cube.importers import import_spdx_file
-from cube.models import Generic, Usage, License, Team, Obligation, Release, Component
+from cube.importers import (
+    import_spdx_file,
+    import_cyclonedx_file,
+    import_hkissbom_json_file,
+    SBOMImportFailure,
+)
+from cube.models import (
+    Generic,
+    Usage,
+    License,
+    LicensePolicy,
+    Team,
+    Obligation,
+    Release,
+    Component,
+    SBOMImport,
+    Version,
+)
 from cube.utils.generics import export_generics, handle_generics_json
 from cube.utils.licenses import (
     export_licenses,
-    handle_licenses_json,
+    handle_licenses_json_or_shared_json,
 )
 from .mixins import ForceLoginMixin
 
@@ -27,8 +45,9 @@ class ImportTestCase(ForceLoginMixin, TestCase):
         }
         export = export_licenses(indent=True)
         License.objects.all().delete()
+        LicensePolicy.objects.all().delete()
         Obligation.objects.all().delete()
-        handle_licenses_json(export)
+        handle_licenses_json_or_shared_json(export)
         self.assertEqual(License.objects.all().count(), count)
         for lic in License.objects.all():
             self.assertEqual(
@@ -36,11 +55,11 @@ class ImportTestCase(ForceLoginMixin, TestCase):
             )
 
     def test_export_import_licenses_pages(self):
-        res = self.client.get(reverse("cube:license_export"))
+        res = self.client.get(reverse("cube:license_export_all_json"))
         self.assertEqual(res.status_code, 200)
         License.objects.all().delete()
         res = self.client.post(
-            reverse("cube:license_list"),
+            reverse("cube:license_import_all_json"),
             data={
                 "file": SimpleUploadedFile(
                     "lincenses.json", res.content, "application/json"
@@ -57,7 +76,6 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "fields": {
                     "spdx_id": "lorem license",
                     "long_name": "Lorem License",
-                    "allowed": "always",
                     "foss": "Yes",
                     "comment": "Open Source",
                 },
@@ -67,7 +85,6 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "fields": {
                     "spdx_id": "lorem-license-2",
                     "long_name": "Lorem License 2",
-                    "allowed": "always",
                     "foss": "Yes",
                     "comment": "Open Source",
                 },
@@ -76,7 +93,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "model": "cube.obligation",
                 "fields": {
                     "license": ["lorem license"],
-                    "generic": ["Generic Obligation 1"],
+                    "generic": ["Compliance Action 1"],
                     "name": "License 1 obligation 1",
                     "verbatim": "Long text.",
                     "passivity": "Active",
@@ -88,7 +105,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "model": "cube.obligation",
                 "fields": {
                     "license": ["lorem license"],
-                    "generic": ["Generic Obligation 2"],
+                    "generic": ["Compliance Action 2"],
                     "name": "License 1 obligation 2",
                     "verbatim": "Long text.",
                     "passivity": "Active",
@@ -100,7 +117,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "model": "cube.obligation",
                 "fields": {
                     "license": ["lorem-license-2"],
-                    "generic": ["Generic Obligation 1"],
+                    "generic": ["Compliance Action 1"],
                     "name": "License 2 obligation 1",
                     "verbatim": "Long text.",
                     "passivity": "Active",
@@ -110,7 +127,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
             },
         ]
 
-        handle_licenses_json(json.dumps(data))
+        handle_licenses_json_or_shared_json(json.dumps(data))
         self.assertEqual(Generic.objects.all().count(), 3)
 
     def test_export_import_generics(self):
@@ -142,24 +159,13 @@ class ImportTestCase(ForceLoginMixin, TestCase):
         )
         self.assertRedirects(res, reverse("cube:generic_list"))
 
-    def test_import_examples(self):
-        self.assertEqual(License.objects.all().count(), 2)
-        self.assertEqual(Obligation.objects.all().count(), 14)
-        with open("../examples/data/Example_generic_obligations.json") as f:
-            handle_generics_json(f)
-        with open("../examples/data/Example_licences.json") as f:
-            handle_licenses_json(f)
-        self.assertEqual(Generic.objects.all().count(), 18)
-        self.assertEqual(License.objects.all().count(), 9)
-        self.assertEqual(Obligation.objects.all().count(), 58)
-
 
 class ImportSBOMTestCase(TestCase):
     fixtures = ["test_data.json"]
 
     def test_import_sbom_linking_and_replace(self):
         self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 2)
-        with open("cube/fixtures/fake_sbom.json") as f:
+        with open(os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")) as f:
             import_spdx_file(f, 1, linking=Usage.LINKING_DYNAMIC)
         usage = Usage.objects.get(
             version__component__name="spdx-valid-dependency",
@@ -174,7 +180,7 @@ class ImportSBOMTestCase(TestCase):
         self.assertEqual(Component.objects.count(), 7)
         self.assertEqual(usage.linking, Usage.LINKING_DYNAMIC)
 
-        with open("cube/fixtures/fake_sbom.json") as f:
+        with open(os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")) as f:
             import_spdx_file(f, 1, replace=False)
         new_usage = Usage.objects.get(
             version__component__name="spdx-valid-dependency",
@@ -185,7 +191,7 @@ class ImportSBOMTestCase(TestCase):
             new_usage.pk,
         )
 
-        with open("cube/fixtures/fake_sbom.json") as f:
+        with open(os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")) as f:
             import_spdx_file(f, 1, replace=True)
         new_usage = Usage.objects.get(
             version__component__name="spdx-valid-dependency",
@@ -195,3 +201,116 @@ class ImportSBOMTestCase(TestCase):
             usage.pk,
             new_usage.pk,
         )
+
+    def test_override_components(self):
+        self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 2)
+        with open(os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")) as f:
+            import_spdx_file(f, 1, linking=Usage.LINKING_DYNAMIC)
+        no_assertion_version = Version.objects.get(
+            version_number="v1", component__name="no-assertion-dependency"
+        )
+        valid_version = Version.objects.get(
+            version_number="v1", component__name="spdx-valid-dependency"
+        )
+        self.assertEqual(no_assertion_version.declared_license_expr, "NOASSERTION")
+        self.assertEqual(no_assertion_version.spdx_valid_license_expr, "")
+        self.assertEqual(
+            valid_version.declared_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+
+        with open(
+            os.path.join(
+                settings.BASE_DIR, "cube/fixtures/fake_sbom_updated_components.json"
+            )
+        ) as f:
+            import_spdx_file(
+                f, 1, component_update_mode=SBOMImport.COMPONENT_UPDATE_DEFAULT
+            )
+        no_assertion_version = Version.objects.get(
+            version_number="v1", component__name="no-assertion-dependency"
+        )
+        valid_version = Version.objects.get(
+            version_number="v1", component__name="spdx-valid-dependency"
+        )
+        self.assertEqual(
+            no_assertion_version.declared_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            no_assertion_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.declared_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+
+        with open(
+            os.path.join(
+                settings.BASE_DIR, "cube/fixtures/fake_sbom_updated_components.json"
+            )
+        ) as f:
+            import_spdx_file(
+                f, 1, component_update_mode=SBOMImport.COMPONENT_UPDATE_OVERRIDE
+            )
+        no_assertion_version = Version.objects.get(
+            version_number="v1", component__name="no-assertion-dependency"
+        )
+        valid_version = Version.objects.get(
+            version_number="v1", component__name="spdx-valid-dependency"
+        )
+        self.assertEqual(
+            no_assertion_version.declared_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            no_assertion_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.declared_license_expr,
+            "LicenseRef-fakeLicense-Allowed-1.0",
+        )
+        self.assertEqual(
+            valid_version.spdx_valid_license_expr,
+            "LicenseRef-fakeLicense-Allowed-1.0",
+        )
+
+
+class ImportCycloneDXTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_invalid_cyclonedx(self):
+        # not a cyclonedx file
+        with open("cube/fixtures/fake_sbom.json") as f:
+            with self.assertRaises(SBOMImportFailure):
+                import_cyclonedx_file(f, 1)
+
+    def test_valid_cyclonedx(self):
+        with open("cube/fixtures/proton-bridge-v1.8.0.cyclonedx-bom.json") as f:
+            import_cyclonedx_file(f, 1)
+        self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 203)
+
+
+class ImportHKissbomTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_invalid_hkissbom(self):
+        # not an hkissbom file
+        with open("cube/fixtures/fake_sbom.json") as f:
+            with self.assertRaises(SBOMImportFailure):
+                import_hkissbom_json_file(f, 1)
+
+    def test_valid_hkissbom(self):
+        with open("cube/fixtures/hermine.poetry.kissbom.json") as f:
+            import_hkissbom_json_file(f, 1)
+        self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 123)

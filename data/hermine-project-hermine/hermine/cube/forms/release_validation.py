@@ -56,9 +56,9 @@ class BaseComponentDecisionForm(forms.ModelForm):
         ):
             self.add_error("version_constraint", "Leave this field empty")
 
-        if self.cleaned_data["component_version"] in [self.COMPONENT, self.CONSTRAINT]:
+        if cleaned_data["component_version"] in [self.COMPONENT, self.CONSTRAINT]:
             self.instance.component = self.usage.version.component
-        elif self.cleaned_data["component_version"] == self.VERSION:
+        elif cleaned_data["component_version"] == self.VERSION:
             self.instance.version = self.usage.version
 
         return cleaned_data
@@ -79,10 +79,10 @@ class CreateLicenseCurationForm(BaseComponentDecisionForm):
         "or <em>LicenseRef-[ref]</em> to refer other licenses.",
     )
 
-    def save(self, **kwargs):
+    def clean(self):
         if self.usage:
             self.instance.expression_in = self.usage.version.declared_license_expr
-        return super().save(**kwargs)
+        return super().clean()
 
     class Meta(BaseComponentDecisionForm.Meta):
         model = LicenseCuration
@@ -102,18 +102,17 @@ class CreateAndsValidationForm(BaseComponentDecisionForm):
         )
 
     def clean(self):
+        cleaned_data = super().clean()
         if explode_spdx_to_units(
-            self.cleaned_data["expression_out"]
-        ) == explode_spdx_to_units(self.usage.version.spdx_valid_license_expr):
-            return
+            cleaned_data["expression_out"]
+        ) != explode_spdx_to_units(self.usage.version.spdx_valid_license_expr):
+            self.add_error(
+                "expression_out",
+                "Expressions must use the same list of SPDX identifiers",
+            )
 
-        self.add_error(
-            "expression_out", "Expressions must use the same list of SPDX identifiers"
-        )
-
-    def save(self, **kwargs):
         self.instance.expression_in = self.usage.version.spdx_valid_license_expr
-        return super().save(**kwargs)
+        return cleaned_data
 
     class Meta(BaseComponentDecisionForm.Meta):
         model = LicenseCuration
@@ -174,21 +173,24 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
                 (self.ANY, "Any exploitation"),
             )
 
-    def save(self, **kwargs):
-        if self.cleaned_data["product_release"] == self.PRODUCT:
-            self.instance.product = self.usage.release.product
-        elif self.cleaned_data["product_release"] == self.RELEASE:
-            self.instance.release = self.usage.release
-        elif self.cleaned_data["product_release"] != self.ANY:
-            self.instance.category = Category.objects.get(
-                pk=self.cleaned_data["product_release"]
-            )
-        if self.cleaned_data["exploitation_choice"] == self.USAGE:
+    def clean(self):
+        cleaned_data = super().clean()
+        if "product_release" in cleaned_data and cleaned_data["product_release"]:
+            if cleaned_data["product_release"] == self.PRODUCT:
+                self.instance.product = self.usage.release.product
+            elif cleaned_data["product_release"] == self.RELEASE:
+                self.instance.release = self.usage.release
+            elif cleaned_data["product_release"] != self.ANY:
+                self.instance.category = Category.objects.get(
+                    pk=cleaned_data["product_release"]
+                )
+
+        if cleaned_data["exploitation_choice"] == self.USAGE:
             self.instance.exploitation = self.usage.exploitation
-        if self.cleaned_data["scope_choice"] == self.USAGE:
+        if cleaned_data["scope_choice"] == self.USAGE:
             self.instance.scope = self.usage.scope
 
-        return super().save(**kwargs)
+        return cleaned_data
 
 
 class CreateLicenseChoiceForm(BaseUsageConditionForm):
@@ -235,15 +237,19 @@ class CreateDerogationForm(BaseUsageConditionForm):
                 (self.ANY, "Any modification"),
             )
 
-        del self.fields["product_release"]
+        self.fields["product_release"].choices = (
+            (self.RELEASE, f"Only {self.usage.release}"),
+            (self.PRODUCT, f"All {self.usage.release.product} releases"),
+        )
 
-    def save(self, **kwargs):
-        if self.cleaned_data["linking_choice"] == self.USAGE:
+    def clean(self, **kwargs):
+        cleaned_data = super().cleaned_data
+        if cleaned_data["linking_choice"] == self.USAGE:
             self.instance.linking = self.usage.linking
-        if self.cleaned_data["modification_choice"] == self.USAGE:
+        if cleaned_data["modification_choice"] == self.USAGE:
             self.instance.modification = self.usage.component_modified
 
-        return super().save(**kwargs)
+        return cleaned_data
 
     class Meta:
         model = Derogation

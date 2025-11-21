@@ -4,7 +4,7 @@
 from urllib.parse import quote
 
 from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Permission
 from django.test import TestCase
 from django.urls import reverse
 from rest_framework.views import APIView
@@ -12,9 +12,17 @@ from rest_framework.views import APIView
 from cube import urls
 from cube.forms.release_validation import (
     CreateLicenseCurationForm,
+    CreateAndsValidationForm,
     CreateLicenseChoiceForm,
 )
-from cube.models import LicenseCuration, LicenseChoice, Exploitation
+from cube.models import (
+    LicenseCuration,
+    LicenseChoice,
+    Exploitation,
+    Version,
+    Usage,
+    License,
+)
 from .mixins import ForceLoginMixin
 
 
@@ -26,8 +34,11 @@ class UnauthenticatedTestCase(TestCase):
         reverse("cube:product_detail", kwargs={"pk": 1}),
         reverse("cube:component_list"),
         reverse("cube:component_detail", kwargs={"pk": 2}),
-        reverse("cube:release_validation", kwargs={"pk": 1}),
-        reverse("cube:release_summary", kwargs={"release_pk": 1}),
+        *[
+            reverse(f"cube:release_validation_step_{step}", kwargs={"pk": 1})
+            for step in range(1, 7)
+        ],
+        reverse("cube:release_summary", kwargs={"pk": 1}),
         reverse("cube:release_bom", kwargs={"release_pk": 1}),
         reverse("cube:release_bom_export", kwargs={"pk": 1}),
         reverse("cube:license_list"),
@@ -104,15 +115,14 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_release_summary_with_multiple_exploitation_choice(self):
-        url = reverse("cube:release_summary", kwargs={"release_pk": 1})
+        url = reverse("cube:release_summary", kwargs={"pk": 1})
         Exploitation.objects.create(release_id=1, scope="back")
         Exploitation.objects.create(release_id=1, scope="front")
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
-        self.assertContains(res, "Exploitation decisions")
 
     def test_release_validation_view(self):
-        url = reverse("cube:release_validation", kwargs={"pk": 1})
+        url = reverse("cube:release_validation_step_1", kwargs={"pk": 1})
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "Release: 1.0")  # release number
@@ -134,10 +144,113 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
                 "component_version": CreateLicenseCurationForm.ANY,
             },
         )
-        self.assertRedirects(res, reverse("cube:release_validation", args=[1]))
+        self.assertRedirects(res, reverse("cube:release_validation_step_1", args=[1]))
         self.assertEqual(LicenseCuration.objects.all().count(), 1)
         self.assertEqual(LicenseCuration.objects.first().author, self.user)
         self.assertEqual(LicenseChoice.objects.all().count(), 0)
+
+    def test_create_license_curation_version_scope(self):
+        """Test that component_version=VERSION sets version field"""
+        url = reverse("cube:release_licensecuration_create", args=[1])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "MIT",
+                "component_version": CreateLicenseCurationForm.VERSION,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_1", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNotNone(curation.version)
+        self.assertIsNone(curation.component)
+
+    def test_create_license_curation_component_scope(self):
+        """Test that component_version=COMPONENT sets component field"""
+        url = reverse("cube:release_licensecuration_create", args=[1])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "MIT",
+                "component_version": CreateLicenseCurationForm.COMPONENT,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_1", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNone(curation.version)
+        self.assertIsNotNone(curation.component)
+
+    def test_create_license_curation_constraint_scope(self):
+        """Test that component_version=CONSTRAINT sets component field"""
+        url = reverse("cube:release_licensecuration_create", args=[1])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "MIT",
+                "component_version": CreateLicenseCurationForm.CONSTRAINT,
+                "version_constraint": ">=1.0.0",
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_1", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNone(curation.version)
+        self.assertIsNotNone(curation.component)
+        self.assertEqual(str(curation.version_constraint), ">=1.0.0")
+
+    def test_create_ands_validation_version_scope(self):
+        Version.objects.filter(pk=2).update(
+            spdx_valid_license_expr="LicenseRef-FakeLicense AND LicenseRef-FakeLicense-Permissive"
+        )
+        """Test that component_version=VERSION sets version field on ands validation"""
+        url = reverse("cube:release_andsvalidation_create", args=[2])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+                "component_version": CreateAndsValidationForm.VERSION,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_2", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNotNone(curation.version)
+        self.assertIsNone(curation.component)
+
+    def test_create_ands_validation_component_scope(self):
+        Version.objects.filter(pk=2).update(
+            spdx_valid_license_expr="LicenseRef-FakeLicense AND LicenseRef-FakeLicense-Permissive"
+        )
+        """Test that component_version=COMPONENT sets component field on ands validation"""
+        url = reverse("cube:release_andsvalidation_create", args=[2])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+                "component_version": CreateAndsValidationForm.COMPONENT,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_2", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNone(curation.version)
+        self.assertIsNotNone(curation.component)
+
+    def test_create_ands_validation_constraint_scope(self):
+        Version.objects.filter(pk=2).update(
+            spdx_valid_license_expr="LicenseRef-FakeLicense AND LicenseRef-FakeLicense-Permissive"
+        )
+        """Test that component_version=CONSTRAINT sets component field on ands validation"""
+        url = reverse("cube:release_andsvalidation_create", args=[2])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+                "component_version": CreateAndsValidationForm.CONSTRAINT,
+                "version_constraint": ">=1.0.0",
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation_step_2", args=[1]))
+        curation = LicenseCuration.objects.first()
+        self.assertIsNone(curation.version)
+        self.assertIsNotNone(curation.component)
+        self.assertEqual(str(curation.version_constraint), ">=1.0.0")
 
     def test_create_licence_choice_rule(self):
         url = reverse("cube:release_licensechoice_create", args=[1])
@@ -166,3 +279,106 @@ class ExportSBOMTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "name,version")
         self.assertContains(res, "LicenseRef-FakeLicense OR AND")
+
+
+class LicenseDeleteButtonVisibilityTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def setUp(self):
+        super().setUp()
+        # Ensure we start with a clean unused license for visibility tests
+        self.license = License.objects.get(pk=1)
+        # Sanity: the license should not be linked to any usage by default
+        # (fixtures don't link licenses via Usage.licenses_chosen)
+        self.assertFalse(self.license.usage_set.exists())
+
+    def test_delete_button_visible_when_unused_and_user_has_permission(self):
+        url = reverse("cube:license_detail", kwargs={"pk": self.license.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        # Button should be visible as admin has delete permission and license is unused
+        self.assertContains(
+            res,
+            reverse("cube:license_delete", kwargs={"pk": self.license.pk}),
+        )
+
+    def test_delete_button_hidden_when_license_is_used(self):
+        # Mark the license as used by adding it to an existing Usage
+        usage = Usage.objects.get(pk=1)
+        usage.licenses_chosen.add(self.license)
+
+        url = reverse("cube:license_detail", kwargs={"pk": self.license.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        # Delete button should not be present when license is used
+        self.assertNotContains(
+            res,
+            reverse("cube:license_delete", kwargs={"pk": self.license.pk}),
+        )
+
+
+class LicenseDeleteViewBehaviorTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_get_delete_for_used_license_returns_404(self):
+        lic = License.objects.get(pk=1)
+        usage = Usage.objects.get(pk=1)
+        usage.licenses_chosen.add(lic)
+
+        url = reverse("cube:license_delete", kwargs={"pk": lic.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 404)
+
+    def test_get_and_post_delete_for_unused_license(self):
+        # Create a brand new unused license
+        lic = License.objects.create(
+            spdx_id="LicenseRef-Temp-DeleteTest",
+            long_name="Temporary License For Delete Test",
+        )
+        # Sanity: no usage should point to it
+        self.assertFalse(lic.usage_set.exists())
+
+        # GET should render the confirmation page
+        url = reverse("cube:license_delete", kwargs={"pk": lic.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        self.assertContains(res, "Delete license")
+
+        # POST should delete and redirect to the list
+        res = self.client.post(url, follow=False)
+        self.assertEqual(res.status_code, 302)
+        self.assertEqual(res.url, reverse("cube:license_list"))
+        # Object is deleted
+        self.assertFalse(License.objects.filter(pk=lic.pk).exists())
+
+
+class LicenseDeletePermissionTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def setUp(self):
+        # Create a regular user without delete permissions
+        self.user = User.objects.create_user(
+            username="regular_user", email="u@example.com", password="pass"
+        )
+        self.client.force_login(self.user)
+        # Create an unused license
+        self.lic = License.objects.create(
+            spdx_id="LicenseRef-NoPerm-DeleteTest", long_name="NoPerm License"
+        )
+
+    def test_user_without_permission_cannot_access_delete_view(self):
+        url = reverse("cube:license_delete", kwargs={"pk": self.lic.pk})
+        res = self.client.get(url)
+        # Depending on settings, PermissionRequiredMixin will either redirect to login (302)
+        # or respond with 403. Accept either to keep test robust across configs.
+        self.assertIn(res.status_code, (302, 403))
+
+        # If redirected, ensure it's towards login
+        if res.status_code == 302:
+            self.assertIn(reverse("login"), res.url)
+
+        # Grant permission and try again → should be 200 on GET
+        perm = Permission.objects.get(codename="delete_license")
+        self.user.user_permissions.add(perm)
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)

@@ -4,7 +4,7 @@
 
 from rest_framework import serializers
 
-from cube.models import License, Obligation, Generic, Team
+from cube.models import License, LicensePolicy, Obligation, Generic, Team
 
 
 class GenericNameField(serializers.CharField):
@@ -39,7 +39,7 @@ class ObligationSerializer(serializers.ModelSerializer):
 
     @classmethod
     def create(cls, validated_data):
-        # When creating new obligation, we link it to a generic obligation if one with
+        # When creating new obligation, we link it to a compliance action if one with
         # the same **name** exists in base.
         generic_name = validated_data.pop("generic_name", None)
         if generic_name is not None:
@@ -81,14 +81,8 @@ class LicenseSerializer(serializers.ModelSerializer):
             "id",
             "spdx_id",
             "long_name",
-            "license_version",
-            "radical",
-            "autoupgrade",
             "steward",
-            "inspiration_spdx",
             "copyleft",
-            "allowed",
-            "allowed_explanation",
             "url",
             "osi_approved",
             "fsf_approved",
@@ -123,6 +117,20 @@ class LicenseSerializer(serializers.ModelSerializer):
             setattr(instance, field, value)
         instance.save()
         return instance
+
+
+class LicensePolicySerializer(serializers.ModelSerializer):
+    license = serializers.SlugRelatedField(slug_field="spdx_id", read_only=True)
+
+    class Meta:
+        model = LicensePolicy
+        fields = [
+            "license",
+            "allowed",
+            "allowed_explanation",
+            "categories",
+            "status",
+        ]
 
 
 class GenericSerializer(serializers.ModelSerializer):
@@ -192,10 +200,10 @@ class GenericsAndObligationsSerializer(serializers.Serializer):
     generics = TriggeredGenericSerializer(
         many=True,
         read_only=True,
-        help_text="Generic obligations triggered by the components.",
+        help_text="Compliance actions triggered by the components.",
     )
     obligations = TriggeredObligationSerializer(
         many=True,
         read_only=True,
-        help_text="Specific obligations not linked to a generic obligation.",
+        help_text="Specific obligations not linked to a compliance action.",
     )

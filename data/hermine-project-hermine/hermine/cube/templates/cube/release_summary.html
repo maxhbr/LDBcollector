@@ -20,6 +20,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block actions %}
+  {% if perms.cube.delete_release %}
+    <a class="button" href="{% url "cube:release_delete" release.id %}">
+      <span class="icon">
+        <i class="fas fa-trash"></i>
+      </span>
+      <span>Delete this release</span>
+    </a>
+  {% endif %}
   {% if perms.cube.change_release %}
     <a class="button" href="{% url "cube:release_update" release.id %}">
       <span class="icon">
@@ -90,16 +98,14 @@ SPDX-License-Identifier: AGPL-3.0-only
         <header class="card-header">
           <p class="card-header-title">
             <span class="icon"><i class="fas fa-sitemap"></i></span>
-            Exploitation decisions for the different scopes of the release
+            Dependencies scopes ({{exploitation_scopes|length }}) and exploitation modes
           </p>
         </header>
         <div class="card-content">
-
-          <h4>Release scopes exploitations ({{exploitation_scopes|length }})</h4>
           <table>
             <thead>
               <tr>
-                <th>Sub project</th>
+                <th>Sub-project</th>
                 <th>Scope</th>
                 <th>Components</th>
                 <th>Exploitation</th>
@@ -109,8 +115,8 @@ SPDX-License-Identifier: AGPL-3.0-only
             <tbody>
               {% for scope in exploitation_scopes %}
                 <tr>
-                  <td>{{ scope.project }}</td>
-                  <td>{{ scope.scope }}</td>
+                  <td>{{ scope.project|default:"<em>Any</em>" }}</td>
+                  <td>{{ scope.scope |default:"<em>Any</em>"}}</td>
                   <td>{{ scope.count }}</td>
                   <td>
                     {% if scope.exploitation %}
@@ -118,14 +124,21 @@ SPDX-License-Identifier: AGPL-3.0-only
                     {% else %}
                       <span class="tag is-warning">No exploitation has been defined for this scope</span>
                     {% endif%}
-                  </td>
-                  <td>
                     {% if scope.exploitation %}
-                      <a href="{% url 'cube:release_exploitation_update' release.id scope.exploitation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-                      <a href="{% url 'cube:release_delete_exploitation' release.id scope.exploitation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                      <a href="{% url 'cube:release_exploitation_update' release.id scope.exploitation.id %}" title="Edit exploitation choice">
+                        <span class="icon"><i class="fas fa-edit"></i></span>
+                      </a> |
+                      <a href="{% url 'cube:release_delete_exploitation' release.id scope.exploitation.id %}" title="Delete exploitation choice">
+                        <span class="icon"><i class="fas fa-trash"></i></span>
+                      </a>
                     {% else %}
                       <a href="{% url 'cube:release_exploitation_create' release.id %}?project={{scope.project}}&scope={{scope.scope}}"><span class="icon"><i class="fas fa-plus-circle"></i></span></a>
                     {% endif%}
+                  </td>
+                  <td>
+                    <a href="{% url 'cube:scope_usages_delete' release.id %}?project={{ scope.project|urlencode }}&scope={{ scope.scope|urlencode }}">
+                      <span class="icon has-text-danger"><i class="fas fa-trash"></i></span>
+                    </a>
                   </td>
                 </tr>
               {% endfor %}
@@ -134,19 +147,19 @@ SPDX-License-Identifier: AGPL-3.0-only
           <p>
             <a href="{% url 'cube:release_exploitation_create' release.id %}" class="button is-primary">Create a new exploitation decision</a>
           </p>
-          {% if custom_scopes %}
+          {% if adhoc_exploitations %}
             <h4>Component level custom exploitations</h4>
             <table>
               <thead>
                 <tr>
-                  <th>Sub project</th>
+                  <th>Sub-project</th>
                   <th>Scope</th>
                   <th>Component</th>
                   <th>Exploitation</th>
                 </tr>
               </thead>
               <tbody>
-                {% for usage in custom_scopes %}
+                {% for usage in adhoc_exploitations %}
                   <tr>
                     <td>{{ usage.project }}</td>
                     <td>{{ usage.scope }}</td>
@@ -163,5 +176,44 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </div>
   </div>
+  <div class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon"><i class="fas fa-history"></i></span>
+        Import history
+      </p>
+    </header>
+    <div class="card-content">
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>File name</th>
+            <th>Format</th>
+            <th>Mode</th>
+            <th>Component update</th>
+            <th>Component linking</th>
+            <th>Date</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for import in release.import_history.all %}
+            <tr>
+              <td>{{ import.file_name }}</td>
+              <td>{{ import.file_type }}</td>
+              <td>{{ import.get_mode_display }}</td>
+              <td>{{ import.get_component_update_mode_display }}</td>
+              <td>{{ import.get_linking_display }}</td>
+              <td>{{ import.date }}</td>
+              <td>{{ import.user }}</td>
+            </tr>
+          {% empty %}
+            <tr>
+              <td colspan="5"><em>No import history</em></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
 {% endblock %}
-

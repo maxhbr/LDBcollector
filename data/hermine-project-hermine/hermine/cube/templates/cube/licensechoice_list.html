@@ -33,32 +33,34 @@ SPDX-License-Identifier: AGPL-3.0-only -->
   {% include "cube/includes/list_nav.html" %}
   <p>This is the list of <em>global</em> license choices, which apply on all components, products, scope or exploitation.
     See <a href="{% url 'admin:cube_licensechoice_changelist' %}"> all license choices</a>.</p>
-  <table class="table is-striped is-hoverable is-fullwidth">
-    <thead>
-      <tr>
-        <th>License expression</th>
-        <th>Choice</th>
-        <th>Explanation</th>
-        <th>Updated</th>
-        <th>Edit rule</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for rule in object_list %}
+  <div class="table-container">
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead>
         <tr>
-          <td>{{ rule.expression_in }}</td>
-          <td>{{ rule.expression_out }}</td>
-          <td>{{ rule.explanation|truncatechars:50 }}</td>
-          <td>{{ rule.updated }} ({{ rule.author|default:"<em>author unknown</em>" }})</td>
-          <td>
-            {% if perms.cube.change_licensechoice %}
-              <a href="{%url 'cube:licensechoice_update' rule.id %}"><i class="far fa-edit"></i></a>
-            {% endif %}
-          </td>
+          <th>License expression</th>
+          <th>Choice</th>
+          <th>Explanation</th>
+          <th>Updated</th>
+          <th>Edit rule</th>
         </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {% for rule in object_list %}
+          <tr>
+            <td>{{ rule.expression_in }}</td>
+            <td>{{ rule.expression_out }}</td>
+            <td>{{ rule.explanation|truncatechars:50 }}</td>
+            <td>{{ rule.updated }} ({{ rule.author|default:"<em>author unknown</em>" }})</td>
+            <td>
+              {% if perms.cube.change_licensechoice %}
+                <a href="{%url 'cube:licensechoice_update' rule.id %}"><i class="far fa-edit"></i></a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
   {% include "cube/includes/list_nav.html" %}
 
 {% endblock %}

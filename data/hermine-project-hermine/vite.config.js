@@ -7,8 +7,13 @@
 /** @type {import('vite').UserConfig} */
 export default {
   root: 'hermine/vite_modules/src/hermine',
-  base: '/static/',
+  base: './',
   build: {
-    outDir: '../../dist/hermine'
+    lib: {
+      entry: ['main.js'],
+      fileName: 'modules',
+      formats: ['cjs']
+    },
+    outDir: '../../dist/hermine/',
   },
 }

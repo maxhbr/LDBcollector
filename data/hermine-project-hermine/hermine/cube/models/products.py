@@ -18,6 +18,13 @@ class Product(models.Model):
     categories = models.ManyToManyField(
         "Category", db_table="cube_category_products", blank=True
     )
+    outbound_licenses = models.ManyToManyField(
+        "cube.License",
+        blank=True,
+        related_name="outbound_products",
+        verbose_name="Exploitation licenses",
+        help_text="Exploitation licenses that will apply for all releases of this product",
+    )
 
     def get_absolute_url(self):
         return reverse_lazy("cube:product_detail", args=[self.id])
@@ -40,6 +47,14 @@ class Category(models.Model):
     description = models.TextField(max_length=500, blank=True)
     owner = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 
+    outbound_licenses = models.ManyToManyField(
+        "cube.License",
+        blank=True,
+        related_name="outbound_categories",
+        verbose_name="Exploitation licenses",
+        help_text="Exploitation licenses that will apply to all products of this category",
+    )
+
     def get_absolute_url(self):
         return reverse_lazy("cube:category_detail", args=[self.id])
 
@@ -58,7 +73,7 @@ class Release(models.Model):
 
     SHIPPING_CHOICES = [
         ("Archived", "Archived"),
-        ("Active", "In developpement"),
+        ("Active", "In development"),
         ("Published", "Published"),
     ]
     product = models.ForeignKey(
@@ -72,6 +87,12 @@ class Release(models.Model):
     # Last completed step, 0 when none is validated
     valid_step = models.IntegerField("Validation Step", default=0)
     commit = models.CharField("Commit hash or ref", max_length=255, blank=True)
+    outbound_licenses = models.ManyToManyField(
+        "cube.License",
+        blank=True,
+        related_name="releases",
+        verbose_name="Exploitation licenses",
+    )
 
     def get_absolute_url(self):
         return reverse_lazy("cube:release_summary", args=[self.id])
@@ -100,10 +121,14 @@ class Exploitation(models.Model):
         Release, on_delete=models.CASCADE, related_name="exploitations"
     )
     scope = models.CharField(
-        max_length=50, blank=True, help_text="Leave blank to apply for any scope"
+        max_length=Usage.MAX_LENGTH_DEFAULT_SCOPE_NAME,
+        blank=True,
+        help_text="Leave blank to apply for any scope",
     )
     project = models.CharField(
-        max_length=750, blank=True, help_text="Leave blank to apply for any project"
+        max_length=Usage.MAX_LENGTH_DEFAULT_PROJECT_NAME,
+        blank=True,
+        help_text="Leave blank to apply for any project",
     )
     exploitation = models.CharField(
         max_length=50,

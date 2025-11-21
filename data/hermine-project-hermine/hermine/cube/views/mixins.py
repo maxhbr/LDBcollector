@@ -9,6 +9,7 @@ from django.db.models.functions import Coalesce
 from django.forms import Form, CharField
 from django.http import Http404
 from django.shortcuts import get_object_or_404
+from django.urls import reverse
 
 from cube.models import License, Release
 from cube.utils.reference import is_shared_reference_loaded
@@ -56,14 +57,14 @@ class SearchMixin:
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-
-        if self.query:
-            context.update({"query": self.query})
+        context.update({"search_form": SearchForm(self.request.GET)})
 
         return context
 
 
-class LicenseRelatedMixin:
+class CreateLicenseRelatedMixin:
+    related_field_name = "license"
+
     def dispatch(self, request, *args, **kwargs):
         self.license = get_object_or_404(License, id=kwargs["license_pk"])
         return super().dispatch(request, *args, **kwargs)
@@ -74,8 +75,14 @@ class LicenseRelatedMixin:
         return context
 
     def form_valid(self, form):
-        form.instance.license = self.license
+        setattr(form.instance, self.related_field_name, self.license)
         return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse(
+            "cube:license_detail",
+            args=[getattr(self.object, self.related_field_name).id],
+        )
 
 
 class SaveAuthorMixin:
@@ -121,9 +128,9 @@ class ReleaseExploitationFormMixin:
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        # Existing scopes
+        # List existing scopes
         scopes = list(
-            self.release.usage_set.values("project", "scope")
+            self.object.usage_set.values("project", "scope")
             .annotate(count=Count("*"))
             .values("project", "scope", "count")
             .order_by("project", "scope")
@@ -131,12 +138,12 @@ class ReleaseExploitationFormMixin:
 
         # Attach existing exploitations to scopes
         for scope in scopes:
-            scope["exploitation"] = self.release.exploitations.filter(
+            scope["exploitation"] = self.object.exploitations.filter(
                 project=scope["project"], scope=scope["scope"]
             ).first()
 
         # Add exploitations with no usages
-        for exploitation in self.release.exploitations.filter(
+        for exploitation in self.object.exploitations.filter(
             *[(~Q(project=scope["project"], scope=scope["scope"])) for scope in scopes]
         ):
             scopes.append(
@@ -148,12 +155,12 @@ class ReleaseExploitationFormMixin:
                 }
             )
 
-        # Usages with custom scopes
-        exploitation_rules_subquery = self.release.exploitations.filter(
+        # Usages with ad-hoc exploitation
+        exploitation_rules_subquery = self.object.exploitations.filter(
             project=OuterRef("project"), scope=OuterRef("scope")
         ).values("exploitation")[:1]
-        custom_scopes = (
-            self.release.usage_set.annotate(
+        adhoc_exploitations = (
+            self.object.usage_set.annotate(
                 registered_exploitation=Coalesce(
                     Subquery(exploitation_rules_subquery), Value("")
                 )
@@ -163,7 +170,7 @@ class ReleaseExploitationFormMixin:
         )
 
         context["exploitation_scopes"] = scopes
-        context["custom_scopes"] = custom_scopes
+        context["adhoc_exploitations"] = adhoc_exploitations
 
         return context
 

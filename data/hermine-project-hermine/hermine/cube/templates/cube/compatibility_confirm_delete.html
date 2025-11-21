@@ -1,0 +1,33 @@
+<!--
+SPDX-FileCopyrightText: 2025 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}{{ object.license }} - Delete obligation{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url "cube:license_list" %}">Licenses</a></li>
+    <li><a href="{% url 'cube:license_detail' object.from_license.id %}">{{ object.from_license }}</a></li>
+    <li>Compatibility with <em>{{ object.to_license }}</em></li>
+    <li>Delete</li>
+  </ul>
+{% endblock %}
+{% block herozone %}
+  <h1 class="title">Delete compatibility from <em>{{ object.from_license }}</em> to <em>
+    {{ object.to_license }}
+  </em></h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <p>
+      Are you sure you want to delete compatibility from <em>{{ object.from_license }}</em> to <em>{{ object.to_license }}</em>?
+    </p>
+    {{ form }}
+    <input type="submit" class="button is-primary" value="Confirm">
+  </form>
+{% endblock %}

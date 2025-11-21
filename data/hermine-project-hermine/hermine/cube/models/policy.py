@@ -51,7 +51,7 @@ class AbstractComponentRule(models.Model):
         elif self.component:
             return f"{self.component} (any version)"
         else:
-            return "any"
+            return "any component"
 
     def clean(self):
         """Model validation
@@ -140,6 +140,9 @@ class LicenseCuration(AbstractComponentRule):
     )
 
     explanation = models.TextField(max_length=500, blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.expression_in} -> {self.expression_out}"
 
     @property
     def is_confirmation(self):
@@ -317,7 +320,7 @@ class DerogationManager(AbstractUsageRuleManager):
         return (
             super()
             .for_usage(usage)
-            .filter(license__in=usage.version.licenses.all())
+            .filter(license__in=usage.licenses_chosen.all())
             .filter(
                 Q(linking=usage.linking) | Q(linking=""),
                 Q(modification=usage.component_modified) | Q(modification=""),

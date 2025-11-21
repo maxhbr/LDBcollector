@@ -3,8 +3,10 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.urls import reverse, reverse_lazy
-from django.views.generic import CreateView, UpdateView, ListView
+from django.views.generic import CreateView, UpdateView, DeleteView
+from django_filters.views import FilterView
 
+from cube.filters import DerogationFilter, LicenseChoiceFilter
 from cube.forms.policy import (
     LicenseChoiceCreateForm,
     LicenseChoiceUpdateForm,
@@ -14,14 +16,22 @@ from cube.models import (
     Derogation,
     LicenseChoice,
 )
-from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin, QuerySuccessUrlMixin
+from cube.views.mixins import (
+    CreateLicenseRelatedMixin,
+    SaveAuthorMixin,
+    QuerySuccessUrlMixin,
+)
 
 
-class AuthorizedContextListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+class AuthorizedContextListView(
+    LoginRequiredMixin, PermissionRequiredMixin, FilterView
+):
     queryset = Derogation.objects.filter(product=None, release=None)
     permission_required = "cube.view_derogation"
     template_name = "cube/authorizedcontext_list.html"
+    filterset_class = DerogationFilter
     context_object_name = "authorized_contexts"
+    paginate_by = 30
 
 
 class AuthorizedContextUpdateView(
@@ -34,6 +44,7 @@ class AuthorizedContextUpdateView(
     permission_required = "cube.change_derogation"
     template_name = "cube/derogation_form.html"
     form_class = AuthorizedContextForm
+    model = Derogation
     success_url = reverse_lazy("cube:authorizedcontext_list")
 
     def get_context_data(self, **kwargs):
@@ -44,37 +55,55 @@ class AuthorizedContextCreateView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
     SaveAuthorMixin,
-    LicenseRelatedMixin,
+    CreateLicenseRelatedMixin,
     CreateView,
 ):
     permission_required = "cube.add_derogation"
     template_name = "cube/derogation_form.html"
     form_class = AuthorizedContextForm
 
-    def get_success_url(self):
-        return reverse("cube:license_detail", args=[self.object.license.id])
 
-
-class DerogationListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+class DerogationListView(LoginRequiredMixin, PermissionRequiredMixin, FilterView):
     permission_required = "cube.view_derogation"
     model = Derogation
     context_object_name = "derogations"
+    template_name = "cube/derogation_list.html"
+    filterset_class = DerogationFilter
     queryset = Derogation.objects.exclude(
         product=None,
         release=None,
     )
+    paginate_by = 30
 
 
-class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+class DerogationDeleteView(
+    LoginRequiredMixin, PermissionRequiredMixin, QuerySuccessUrlMixin, DeleteView
+):
+    permission_required = "cube.delete_derogation"
+    model = Derogation
+    context_object_name = "derogation"
+    success_url = reverse_lazy("cube:derogation_list")
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["is_context_auth"] = bool(
+            not self.object.product and not self.object.release
+        )
+        return context
+
+
+class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, FilterView):
     permission_required = "cube.view_licensechoice"
     model = LicenseChoice
     template_name = "cube/licensechoice_list.html"
     paginate_by = 50
+    filterset_class = LicenseChoiceFilter
     queryset = LicenseChoice.objects.filter(
         product__isnull=True,
         release__isnull=True,
         component__isnull=True,
         version__isnull=True,
+        category__isnull=True,
         scope="",
         exploitation="",
     )

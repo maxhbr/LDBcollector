@@ -8,7 +8,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <ul>
     <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url 'cube:licensecuration_list' %}">Curations</a></li>
-    <li>{% if object %}{{object.version|default:object.component}}{% else %}Add{% endif %}</li>
+    <li>{% if object %}{{ object.condition_display }}{% else %}Add{% endif %}</li>
   </ul>
 {% endblock %}
 
@@ -16,7 +16,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <h1 class="title">
     <span class="icon is-medium"><i class="fas fa-band-aid"></i></span>
     {% if object %}
-      Edit license curation for {% if object.version %} {{ object.version }} {% else %} {{ object.component }} (any version) {% endif %}
+      Edit license curation <em>{{ object.condition_display }}</em>
     {% else %}
       Add license curation
     {% endif %}

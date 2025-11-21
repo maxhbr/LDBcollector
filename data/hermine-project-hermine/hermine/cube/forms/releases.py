@@ -2,10 +2,29 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 
-from django.forms import ModelForm
+from django.forms import ModelForm, DateTimeInput
 
 from cube.forms.mixins import AutocompleteFormMixin
-from cube.models import Usage
+from cube.models import Usage, Release
+
+
+class ReleaseForm(AutocompleteFormMixin, ModelForm):
+    class Meta:
+        model = Release
+        fields = [
+            "product",
+            "release_number",
+            "commit",
+            "ship_status",
+            "pub_date",
+            "outbound_licenses",
+        ]
+        autocomplete_fields = ["outbound_licenses"]
+        widgets = {
+            "pub_date": DateTimeInput(
+                attrs={"type": "datetime-local", "style": "max-width: 220px;"}
+            ),
+        }
 
 
 class UsageForm(AutocompleteFormMixin, ModelForm):

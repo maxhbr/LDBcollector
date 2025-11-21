@@ -1,10 +1,10 @@
 # SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#  SPDX-FileCopyrightText: 2024 Jules Jouvin <gitlab.com/julesJVN>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.urls import path, include
-from rest_framework.authtoken import views as authviews
-from rest_framework_nested import routers
+from django.views.generic import RedirectView
 
 from . import views, api_views
 
@@ -12,6 +12,15 @@ app_name = "cube"
 urlpatterns = [
     path("", views.DashboardView.as_view(), name="dashboard"),
     path("about/", views.AboutView.as_view(), name="about"),
+    path("profile/", views.ProfileView.as_view(), name="profile"),
+    path(
+        "api-token/<int:pk>/delete/",
+        views.APITokenDeleteView.as_view(),
+        name="api_token_delete",
+    ),
+    path(
+        "api-token/create/", views.APITokenCreateView.as_view(), name="api_token_create"
+    ),
     # Product views
     path("products/", views.ProductListView.as_view(), name="product_list"),
     path(
@@ -49,9 +58,9 @@ urlpatterns = [
     # Components views
     path("components/", views.ComponentListView.as_view(), name="component_list"),
     path(
-        "components/popular/",
-        views.ComponentPopularListView.as_view(),
-        name="component_populars",
+        "components/create/",
+        views.ComponentCreateView.as_view(),
+        name="component_create",
     ),
     path(
         "components/<int:pk>/",
@@ -62,6 +71,16 @@ urlpatterns = [
         "components/<int:pk>/edit/",
         views.ComponentUpdateView.as_view(),
         name="component_update",
+    ),
+    path(
+        "components/<int:pk>/create_version/",
+        views.VersionCreateView.as_view(),
+        name="version_create",
+    ),
+    path(
+        "components/<int:component_id>/versions/<int:pk>/",
+        views.VersionUpdateView.as_view(),
+        name="version_update",
     ),
     path(
         "components/<int:component_id>/update_funding/",
@@ -79,9 +98,14 @@ urlpatterns = [
         name="licensecuration_create",
     ),
     path(
-        "curations/edit/<int:pk>/",
+        "curations/<int:pk>/edit/",
         views.LicenseCurationUpdateView.as_view(),
         name="licensecuration_update",
+    ),
+    path(
+        "curations/<int:pk>/delete/",
+        views.LicenseCurationDeleteView.as_view(),
+        name="licensecuration_delete",
     ),
     path(
         "curations/export/",
@@ -99,6 +123,11 @@ urlpatterns = [
         "licenses/<int:pk>/", views.LicenseDetailView.as_view(), name="license_detail"
     ),
     path(
+        "licenses/<int:pk>/delete/",
+        views.LicenseDeleteView.as_view(),
+        name="license_delete",
+    ),
+    path(
         "licenses/<int:pk>/edit/",
         views.LicenseDataUpdateView.as_view(),
         name="license_update",
@@ -107,6 +136,16 @@ urlpatterns = [
         "licenses/<int:pk>/edit_policy/",
         views.LicensePolicyUpdateView.as_view(),
         name="license_update_policy",
+    ),
+    path(
+        "licenses/<int:license_pk>/add_compatibility/",
+        views.CompatibilityCreateView.as_view(),
+        name="compatibility_create",
+    ),
+    path(
+        "licenses/<int:license_pk>/delete_compatibility/<int:pk>/",
+        views.CompatibilityDeleteView.as_view(),
+        name="compatibility_delete",
     ),
     path("licenses/new/", views.LicenseCreateView.as_view(), name="license_create"),
     path(
@@ -117,7 +156,21 @@ urlpatterns = [
         views.LicenseDiffUpdateView.as_view(),
         name="license_diff_update",
     ),
-    path("licenses/export/", views.LicenseExportView.as_view(), name="license_export"),
+    path(
+        "licenses/export/single-file/",
+        views.LicenseExportAllAsSingleFileView.as_view(),
+        name="license_export_all_json",
+    ),
+    path(
+        "licenses/export/archive/",
+        views.LicenseExportAllAsArchiveView.as_view(),
+        name="license_export_all_archive",
+    ),
+    path(
+        "licenses/import/single-file/",
+        views.LicenseImportAllAsSingleFileView.as_view(),
+        name="license_import_all_json",
+    ),
     path(
         "licenses/<int:license_id>/export/",
         views.LicenseSingleExportView.as_view(),
@@ -194,6 +247,11 @@ urlpatterns = [
         name="derogation_list",
     ),
     path(
+        "derogations/<int:pk>/delete/",
+        views.DerogationDeleteView.as_view(),
+        name="derogation_delete",
+    ),
+    path(
         "licensechoices/",
         views.LicenseChoiceListView.as_view(),
         name="licensechoice_list",
@@ -236,9 +294,14 @@ urlpatterns = [
         name="release_update",
     ),
     path(
-        "releases/<int:release_pk>/",
+        "releases/<int:pk>/",
         views.ReleaseSummaryView.as_view(),
         name="release_summary",
+    ),
+    path(
+        "releases/<int:pk>/delete/",
+        views.ReleaseDeleteView.as_view(),
+        name="release_delete",
     ),
     path(
         "releases/<int:pk>/import/",
@@ -265,6 +328,16 @@ urlpatterns = [
         views.ReleaseGenericView.as_view(),
         name="release_generic",
     ),
+    path(
+        "releases/<int:release_pk>/delete_usages/",
+        views.ScopeUsagesDeleteView.as_view(),
+        name="scope_usages_delete",
+    ),
+    path(
+        "releases/<int:release_pk>/notice/",
+        views.ReleaseNoticeView.as_view(),
+        name="release_notice",
+    ),
     # Usage views
     path(
         "releases/<int:release_pk>/new_usage/",
@@ -284,8 +357,38 @@ urlpatterns = [
     # Release validation related views
     path(
         "releases/<int:pk>/validation/",
-        views.ReleaseValidationView.as_view(),
+        RedirectView.as_view(pattern_name="release_validation_step_1", permanent=True),
         name="release_validation",
+    ),
+    path(
+        "releases/<int:pk>/validation/step_1",
+        views.ReleaseValidationStep1View.as_view(),
+        name="release_validation_step_1",
+    ),
+    path(
+        "releases/<int:pk>/validation/step_2",
+        views.ReleaseValidationStep2View.as_view(),
+        name="release_validation_step_2",
+    ),
+    path(
+        "releases/<int:pk>/validation/step_3",
+        views.ReleaseValidationStep3View.as_view(),
+        name="release_validation_step_3",
+    ),
+    path(
+        "releases/<int:pk>/validation/step_4",
+        views.ReleaseValidationStep4View.as_view(),
+        name="release_validation_step_4",
+    ),
+    path(
+        "releases/<int:pk>/validation/step_5",
+        views.ReleaseValidationStep5View.as_view(),
+        name="release_validation_step_5",
+    ),
+    path(
+        "releases/<int:pk>/validation/step_6",
+        views.ReleaseValidationStep6View.as_view(),
+        name="release_validation_step_6",
     ),
     ## Step 1
     path(
@@ -363,67 +466,5 @@ urlpatterns = [
         api_views.UsageFlatList.as_view(),
         name="api_usagesflat",
     ),
-    path("api/token-auth/", authviews.obtain_auth_token),
+    path("api/", include("cube.urls_api")),
 ]
-
-# API urls
-
-
-class Router(routers.DefaultRouter):
-    APIRootView = api_views.RootView
-
-
-router = Router()
-
-# Validation pipeline endpoints
-router.register(r"upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
-router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
-router.register(r"releases", api_views.ReleaseViewSet, basename="releases")
-
-# Generic obligations
-router.register(r"generics", api_views.GenericViewSet, basename="generics")
-
-# Models CRUD viewsets
-router.register(r"obligations", api_views.ObligationViewSet, basename="obligations")
-router.register(r"components", api_views.ComponentViewSet, basename="components")
-router.register(r"usages", api_views.UsageViewSet, basename="usages")
-router.register(r"products", api_views.ProductViewSet, basename="products")
-router.register(r"licenses", api_views.LicenseViewSet, basename="licenses")
-router.register(r"curations", api_views.LicenseCurationViewSet, basename="curations")
-router.register(r"choices", api_views.LicenseChoiceViewSet, basename="choices")
-router.register(r"derogations", api_views.DerogationViewSet, basename="derogations")
-
-obligation_router = routers.NestedSimpleRouter(router, r"licenses")
-obligation_router.register(
-    r"obligations",
-    api_views.ObligationViewSet,
-    basename="license-obligations",
-)
-
-product_router = routers.NestedSimpleRouter(router, r"products")
-product_router.register(
-    r"releases", api_views.ReleaseViewSet, basename="product-releases"
-)
-
-release_router = routers.NestedSimpleRouter(router, r"releases", lookup="release")
-release_router.register(
-    r"exploitations", api_views.ExploitationViewSet, basename="releases-exploitations"
-)
-
-component_router = routers.NestedSimpleRouter(router, r"components", lookup="component")
-component_router.register(
-    r"versions", api_views.VersionViewSet, basename="component-versions"
-)
-
-urlpatterns.append(
-    path(
-        "api/",
-        include(
-            router.urls
-            + obligation_router.urls
-            + product_router.urls
-            + release_router.urls
-            + component_router.urls,
-        ),
-    ),
-)

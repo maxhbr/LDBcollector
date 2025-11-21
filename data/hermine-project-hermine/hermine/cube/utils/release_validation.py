@@ -2,6 +2,8 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
+from itertools import groupby
+from typing import TypedDict, Tuple
 
 from django.db.models import (
     Count,
@@ -16,10 +18,13 @@ from django.db.models import (
 from cube.models import (
     Release,
     License,
+    LicensePolicy,
     LicenseChoice,
     LicenseCuration,
     Exploitation,
     Derogation,
+    Usage,
+    Version,
 )
 from cube.utils.spdx import has_ors, is_ambiguous, simplified
 
@@ -31,12 +36,54 @@ STEP_CONFIRM_AND = 2
 STEP_EXPLOITATIONS = 3
 STEP_CHOICES = 4
 STEP_POLICY = 5
+STEP_COMPATIBILITY = 6
 
 
-# Functions with side effect to update releases according to curations and choices
-def apply_curations(release):
+class Step1Info(TypedDict):
+    invalid_expressions: list[Usage]
+    fixed_expressions: list[Usage]
+    nb_validated_components: int
+    conflicting_curations: dict[int, list[LicenseCuration]]
+
+
+class Step2Info(TypedDict):
+    to_confirm: list[Usage]
+    confirmed: list[Version]
+    corrected: list[Version]
+    conflicting_curations: dict[int, list[LicenseCuration]]
+
+
+class Step3Info(TypedDict):
+    exploitations: list[Exploitation]
+    unset_scopes: set[Tuple[str, str, int]]
+
+
+class Step4Info(TypedDict):
+    to_resolve: list[Usage]
+    resolved: set[Usage]
+    conflicting_choices: dict[int, list[LicenseChoice]]
+
+
+class Step5Info(TypedDict):
+    usages_lic_never_allowed: set[Usage]
+    usages_lic_context_allowed: set[Usage]
+    usages_lic_unknown: set[Usage]
+    involved_lic: set[License]
+    derogations: set[Derogation]
+
+
+class Step6Info(TypedDict):
+    incompatible_usages: set[Usage]
+    incompatible_licenses: set[License]
+
+
+def _apply_curations(release) -> dict[Usage, list[LicenseCuration]]:
+    """
+    Apply curations to the release's usages, should be called before validating step 1 and 2.
+    """
     usages = (
-        release.usage_set.filter(version__corrected_license="").annotate(
+        release.usage_set.filter(version__corrected_license="")
+        .annotate(
             imported_license=Case(
                 When(
                     version__spdx_valid_license_expr="",
@@ -56,36 +103,45 @@ def apply_curations(release):
                 ).values("expression_out")[:1]
             )  # includes curations with semantic versioning
         )
+        .select_related("version")
     )
+
+    conflicting_curations = dict()
 
     for usage in usages:
         if usage.curation is not None:
             # Check there are no conflicting curations (subquery returns only first row)
             try:
-                curation = LicenseCuration.objects.for_version(usage.version).get()
-                usage.version.corrected_license = curation.expression_out
+                usage.version.corrected_license = (
+                    LicenseCuration.objects.for_version(usage.version)
+                    .values_list("expression_out", flat=True)
+                    .distinct()
+                    .get()
+                )
                 usage.version.save()
-            except (
-                LicenseCuration.DoesNotExist,
-                LicenseCuration.MultipleObjectsReturned,
-            ):
-                logger.warning("Multiple curations for %s", usage.version.component)
+            except LicenseCuration.DoesNotExist:
+                pass
+            except LicenseCuration.MultipleObjectsReturned:
+                curations = LicenseCuration.objects.for_version(usage.version)
+                conflicting_curations[usage.id] = list(curations)
+
+    return conflicting_curations
 
 
-def propagate_choices(release: Release):
+def _propagate_choices(release: Release) -> dict[Usage, list[LicenseChoice]]:
     """
     Transfer license information from component to usage.
     Set usage.license_expression if there is no ambiguity.
+    Should be called before validating step 4.
 
     :param release: Release to update
     :return: dict with two keys: to_resolve and resolved containing the corresponding usages
     """
-    to_resolve = set()
 
     usages = (
-        release.usage_set.filter(license_expression="")
-        .select_related("version", "version__component", "release", "release__product")
-        .prefetch_related("licenses_chosen")
+        release.usage_set.filter(license_expression="").select_related(
+            "version", "version__component"
+        )
         # includes choices with semantic versioning which may not match
         # but still a big performance boost to skip usage with no derogation later
         .annotate(
@@ -104,11 +160,15 @@ def propagate_choices(release: Release):
         )
     )
 
+    conflicting_choices = dict()
+
     for usage in usages:
         if usage.version.license_is_ambiguous:
             continue
 
-        if not has_ors(usage.version.effective_license):
+        if usage.version.effective_license and not has_ors(
+            usage.version.effective_license
+        ):
             try:
                 usage.license_expression = usage.version.effective_license
                 usage.save()
@@ -121,35 +181,33 @@ def propagate_choices(release: Release):
 
         if not usage.license_expression:  # do not override already made choices
             if usage.licensechoice is None:
-                to_resolve.add(usage)
                 continue
 
             try:
                 expression_out = (
                     LicenseChoice.objects.for_usage(usage)
                     .values_list("expression_out", flat=True)
+                    .distinct()
                     .get()
                 )
-            except (LicenseChoice.DoesNotExist, LicenseChoice.MultipleObjectsReturned):
-                to_resolve.add(usage)
+            except LicenseChoice.DoesNotExist:
+                pass
+            except LicenseChoice.MultipleObjectsReturned:
+                conflicting_choices[usage.id] = list(
+                    LicenseChoice.objects.for_usage(usage)
+                )
             else:
                 usage.license_expression = expression_out
                 usage.save()
 
-    resolved = (
-        usage
-        for usage in release.usage_set.all()
-        .select_related("version")
-        .exclude(license_expression="")
-        if has_ors(
-            usage.version.effective_license
-        )  # we want to list only usages for which a choice was actually necessary
-    )
-
-    return {"to_resolve": to_resolve, "resolved": resolved}
+    return conflicting_choices
 
 
-def check_licenses_against_policy(release: Release):
+def _check_licenses_against_policy(release: Release):
+    """
+    Check that the licenses are compatible with the policy.
+    Does not mutate anything, just check derogation on the fly.
+    """
     usages_lic_never_allowed = set()
     usages_lic_context_allowed = set()
     usages_lic_unknown = set()
@@ -158,8 +216,8 @@ def check_licenses_against_policy(release: Release):
 
     usages = (
         release.usage_set.exclude(licenses_chosen=None)
-        .select_related("version", "version__component", "release", "release__product")
-        .prefetch_related("licenses_chosen")
+        .select_related("version", "version__component")
+        .prefetch_related("licenses_chosen", "licenses_chosen__policy")
         # includes derogations with semantic versioning which may not match
         # but still a big performance boost to skip usage with no derogation later
         .annotate(
@@ -179,17 +237,21 @@ def check_licenses_against_policy(release: Release):
                 ).values("pk")[:1]
             )
         )
-        .all()
     )
 
-    for usage in usages:
+    # Because of the way sql JOIN query operates, usages are duplicated
+    # for each license_chosen or categories. They are all identical objets,
+    # except some have a derogation and some don't.
+    for pk, usages in groupby(usages, key=lambda u: u.id):
+        usages = list(usages)
+        usage = usages[0]
         for license in usage.licenses_chosen.all():
             involved_lic.add(license)
 
-            if license.allowed == License.ALLOWED_ALWAYS:
+            if license.policy.allowed == LicensePolicy.ALLOWED_ALWAYS:
                 continue
 
-            if usage.derogation is not None:
+            if any(u.derogation is not None for u in usages):
                 license_derogations = list(
                     Derogation.objects.for_usage(usage).filter(license=license)
                 )
@@ -198,11 +260,11 @@ def check_licenses_against_policy(release: Release):
                         derogations.add(derogation)
                     continue
 
-            if license.allowed == License.ALLOWED_NEVER:
+            if license.policy.allowed == LicensePolicy.ALLOWED_NEVER:
                 usages_lic_never_allowed.add(usage)
-            elif license.allowed == License.ALLOWED_CONTEXT:
+            elif license.policy.allowed == LicensePolicy.ALLOWED_CONTEXT:
                 usages_lic_context_allowed.add(usage)
-            elif not license.allowed:
+            elif not license.policy.allowed:
                 usages_lic_unknown.add(usage)
 
     return {
@@ -214,15 +276,15 @@ def check_licenses_against_policy(release: Release):
     }
 
 
-# Validations step methods
-def validate_expressions(release):
+def _validate_expressions(release):
     """
-    Check for components versions that do not have valid SPDX license expressions.
+    Check for component versions that do not have valid SPDX license expressions.
+    Does not mutate anything. Run `apply_curations` before calling this method.
     """
     context = dict()
     invalid_expressions = release.usage_set.filter(
         version__spdx_valid_license_expr="", version__corrected_license=""
-    )
+    ).select_related("version", "version__component")
     context["invalid_expressions"] = invalid_expressions
 
     context["fixed_expressions"] = release.usage_set.filter(
@@ -236,16 +298,17 @@ def validate_expressions(release):
     return len(invalid_expressions) == 0, context
 
 
-def validate_ands(release: Release):
+def _validate_ands(release: Release):
     """
     Confirm that ANDs operators in SPDX expressions are not poorly registered ORs.
+    Does not mutate anything. Run `apply_curations` before calling this method.
     """
     context = dict()
     ambiguous_spdx = [
         usage
         for usage in release.usage_set.exclude(
             version__spdx_valid_license_expr=""
-        ).select_related("version")
+        ).select_related("version", "version__component")
         if is_ambiguous(usage.version.spdx_valid_license_expr)
     ]
 
@@ -269,9 +332,9 @@ def validate_ands(release: Release):
     return (len(context["to_confirm"]) == 0), context
 
 
-def validate_exploitations(release: Release):
+def _validate_exploitations(release: Release):
     """
-    Check all scopes have a defined exploitation
+    Check all scopes have a defined exploitation.
     """
     context = dict()
     unset_scopes = set()
@@ -284,34 +347,60 @@ def validate_exploitations(release: Release):
 
     for project, scope, count in scopes:
         try:
-            release.exploitations.get(scope=scope, project=project)
+            release.exploitations.get(
+                (Q(scope=scope) | Q(scope="")) & (Q(project=project) | Q(project=""))
+            ).save()
         except Exploitation.DoesNotExist:
+            unset_scopes.add((project, scope, count))
+        except Exploitation.MultipleObjectsReturned:
+            logger.warning("Multiple exploitations for %s %s", project, scope)
             unset_scopes.add((project, scope, count))
 
     context["exploitations"] = release.exploitations.all()
     context["unset_scopes"] = unset_scopes
 
-    return len(unset_scopes) == 0, context
+    valid = len(unset_scopes) == 0
+
+    # We better crash than give wrong results
+    if valid:
+        assert not release.usage_set.filter(exploitation="").exists()
+
+    return valid, context
 
 
-def validate_choices(release):
+def _validate_choices(release):
     """
     Check all licenses choices are done.
+    Does not mutate anything. Run `propagate_choices` before calling this method.
     """
     context = dict()
-    response = propagate_choices(release)
-    context["to_resolve"] = response["to_resolve"]
-    context["resolved"] = response["resolved"]
+    context["to_resolve"] = [
+        u
+        for u in release.usage_set.filter(
+            Q(license_expression="")
+            & ~Q(version__spdx_valid_license_expr="", version__corrected_license="")
+        ).select_related("version", "version__component", "release", "release__product")
+        if not u.version.license_is_ambiguous
+    ]
+    context["resolved"] = {
+        usage
+        for usage in release.usage_set.all()
+        .select_related("version")
+        .exclude(license_expression="")
+        if has_ors(
+            usage.version.effective_license
+        )  # we want to list only usages for which a choice was actually necessary
+    }
 
-    return len(response["to_resolve"]) == 0, context
+    return len(context["to_resolve"]) == 0, context
 
 
-def validate_policy(release):
+def _validate_policy(release):
     """
-    Check that the licenses are compatible with policy.
+    Check that the licenses are compatible with the policy.
     """
     context = dict()
-    r = check_licenses_against_policy(release)
+    r = _check_licenses_against_policy(release)
 
     step_5_valid = (
         len(r["usages_lic_never_allowed"]) == 0
@@ -328,39 +417,205 @@ def validate_policy(release):
     return step_5_valid, context
 
 
-# Apply all rules and check validation steps
-def update_validation_step(release: Release):
-    info = dict()
+def _validate_compatibility(release):
+    """
+    Check that the licenses are compatible with the exploitation license.
+    """
+    context = dict()
+
+    usages = release.usage_set.exclude(linking="").exclude(exploitation="")
+    incompatible_usages = set()
+    incompatible_licenses = set()
+
+    outbound_licenses = License.objects.filter(
+        Q(releases=release)
+        | Q(outbound_products=release.product)
+        | Q(outbound_categories__product=release.product)
+    )
+    for outbound_license in outbound_licenses if outbound_licenses.count() else (None,):
+        for usage in usages:
+            for dependency_license in usage.licenses_chosen.exclude(copyleft="").all():
+                if not dependency_license.is_compatible_with(
+                    outbound_license, usage.linking, usage.exploitation
+                ):
+                    incompatible_usages.add(usage)
+                    incompatible_licenses.add(dependency_license)
+
+    context["incompatible_usages"] = incompatible_usages
+    context["incompatible_licenses"] = incompatible_licenses
+
+    return len(incompatible_usages) == 0 and len(incompatible_licenses) == 0, context
+
+
+def get_validation_step(release: Release):
+    """
+    Return the biggest valid step.
+    Does not mutate anything. Run `apply_curations` and `propagate_choices` before calling this method.
+    """
     validation_step = 0
+    info = dict()
 
-    apply_curations(release)
-
-    step1, context = validate_expressions(release)
+    step1, context = _validate_expressions(release)
     info.update(context)
     if step1:
         validation_step = 1
 
-    step2, context = validate_ands(release)
+    step2, context = _validate_ands(release)
     info.update(context)
     if step2 and validation_step == 1:
         validation_step = 2
 
-    step3, context = validate_exploitations(release)
+    step3, context = _validate_exploitations(release)
     info.update(context)
     if step3 and validation_step == 2:
         validation_step = 3
 
-    step4, context = validate_choices(release)
+    step4, context = _validate_choices(release)
     info.update(context)
     if step4 and validation_step == 3:
         validation_step = 4
 
-    step5, context = validate_policy(release)
+    step5, context = _validate_policy(release)
     info.update(context)
     if step5 and validation_step == 4:
         validation_step = 5
 
+    step6, context = _validate_compatibility(release)
+    info.update(context)
+    if step6 and validation_step == 5:
+        validation_step = 6
+
+    return validation_step, info
+
+
+def update_all_steps(release: Release):
+    """
+    Update the release validation step for all steps.
+    Does not mutate anything. Run `apply_curations` and `propagate_choices` before calling this method.
+    """
+    _apply_curations(release)
+    _propagate_choices(release)
+    step, info = get_validation_step(release)
+    release.valid_step = step
+    release.save()
+    return step, info
+
+
+def update_validation_step_1(release: Release) -> Step1Info:
+    """
+    Apply curations and check for invalid SPDX license expressions,
+    update the release validation step accordingly.
+    """
+    info = dict()
+    validation_step = release.valid_step + 0
+    conflicting_curations = _apply_curations(release)
+    step1, context = _validate_expressions(release)
+
+    info.update(context)
+    info["conflicting_curations"] = conflicting_curations
+
+    if step1:
+        validation_step = max(validation_step, 1)
+    else:
+        validation_step = 0
+
+    release.valid_step = validation_step + 0
+    release.save()
+
+    return info
+
+
+def update_validation_step_2(release: Release) -> Step2Info:
+    """
+    Apply curations and confirm that ANDs operators in SPDX expressions are not poorly registered ORs,
+    and update the release validation step accordingly.
+    """
+    info: Step2Info = dict()
+    validation_step = release.valid_step
+    conflicting_curations = _apply_curations(release)
+    step2, context = _validate_ands(release)
+
+    info.update(context)
+    info["conflicting_curations"] = conflicting_curations
+
+    if step2 and validation_step >= 1:
+        validation_step = max(validation_step, 2)
+    else:
+        validation_step = min(validation_step, 1)
     release.valid_step = validation_step
     release.save()
 
     return info
+
+
+def update_validation_step_3(release: Release) -> Step3Info:
+    """
+    Check all usages have a defined exploitation, and update the release validation step accordingly.
+    """
+    validation_step = release.valid_step
+    step3, context = _validate_exploitations(release)
+    if step3 and validation_step >= 2:
+        validation_step = max(validation_step, 3)
+    else:
+        validation_step = min(validation_step, 2)
+    release.valid_step = validation_step
+    release.save()
+
+    return context
+
+
+def update_validation_step_4(release: Release) -> Step4Info:
+    """
+    Propagate license choices to usages and check for unresolved licenses,
+    and update the release validation step accordingly.
+    """
+    info = dict()
+    validation_step = release.valid_step
+    conflicting_choices = _propagate_choices(release)
+    step4, context = _validate_choices(release)
+
+    info.update(context)
+    info["conflicting_choices"] = conflicting_choices
+
+    if step4 and validation_step >= 3:
+        validation_step = max(validation_step, 4)
+    else:
+        validation_step = min(validation_step, 3)
+    release.valid_step = validation_step
+    release.save()
+
+    return info
+
+
+def update_validation_step_5(release: Release) -> Step5Info:
+    """
+    Check for licenses that are not allowed in the context of the product,
+    and update the release validation step accordingly.
+    """
+    validation_step = release.valid_step
+    step5, context = _validate_policy(release)
+    if step5 and validation_step >= 4:
+        validation_step = max(validation_step, 5)
+    else:
+        validation_step = min(validation_step, 4)
+    release.valid_step = validation_step
+    release.save()
+
+    return context
+
+
+def update_validation_step_6(release: Release) -> Step6Info:
+    """
+    Check that the licenses are compatible with the exploitation license,
+    and update the release validation step accordingly.
+    """
+    validation_step = release.valid_step
+    step6, context = _validate_compatibility(release)
+    if step6 and validation_step >= 5:
+        validation_step = max(validation_step, 6)
+    else:
+        validation_step = min(validation_step, 5)
+    release.valid_step = validation_step
+    release.save()
+
+    return context

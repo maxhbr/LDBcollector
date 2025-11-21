@@ -78,7 +78,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     You don't have the permission to view products.
   {% endif %}
 
-  <h2 class="title is-2">Licences with authorized contexts specific to this category</h2>
+  <h2 class="title is-2">Licenses with authorized contexts specific to this category</h2>
   {% if perms.cube.view_license %}
     <table class="table is-striped is-hoverable is-fullwidth">
       <thead>
@@ -92,6 +92,27 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td><a href="{% url 'cube:license_detail' context.license.id %}">{{context.license}}</a></td>
             <td>{{context.justification|truncatechars:30}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    You don't have the permission to view licenses.
+  {% endif %}
+  <h2 class="title is-2">Licenses choices specific to this category</h2>
+  {% if perms.cube.view_license %}
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead>
+        <tr>
+          <th>Rule</th>
+          <th>Explanations</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for context in object.licensechoice_set.all %}
+          <tr>
+            <td><a href="{% url 'cube:licensechoice_update' context.id %}">For <strong>{{context.expression_in}}</strong> choose <strong>{{context.expression_out}}</strong></a></td>
+            <td>{{context.explanation}}</td>
           </tr>
         {% endfor %}
       </tbody>

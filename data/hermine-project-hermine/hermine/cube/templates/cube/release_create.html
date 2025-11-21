@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <ul>
     <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url 'cube:product_list' %}">Products</a></li>
-    <li>{{ product }}</li>
+    <li><a href="{% url 'cube:product_detail' product.id %}">{{ product }}</a></li>
     <li>Add release</li>
   </ul>
 {% endblock %}
@@ -33,6 +33,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block content %}
   {% include "cube/includes/default_form.html" %}
 {% endblock %}
+
 
 
 

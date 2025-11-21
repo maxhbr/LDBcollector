@@ -1,0 +1,41 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load rest_framework %}
+
+{% block title %}{{ release.product.name }} {{release.release_number}}{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
+    <li> {{ release.release_number }}</li>
+    <li>Remove scope dependencies</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">Release: {{release.release_number}}</p>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <p>
+    This will remove all dependencies usages for
+    scope <b>{{ object_list.0.scope }}</b> and project <b>{{ object_list.0.project }}</b>.
+  </p>
+  <p>
+    Are you sure you want to remove {{ object_list|length }} dependencie{{ object_list|pluralize }} from this release?
+  </p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="button is-danger">Remove dependencies</button>
+  </form>
+{% endblock %}
+

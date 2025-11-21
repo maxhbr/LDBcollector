@@ -1,6 +1,7 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
+from typing import Self, Optional
 
 from django.db import models
 from django.db.models import Q, F
@@ -8,7 +9,12 @@ from django.urls import reverse_lazy
 from django.utils.functional import cached_property
 
 from cube.models import Usage
-from cube.utils.reference import license_reference_diff, generic_reference_diff
+from cube.utils.licenses import is_compatible
+from cube.utils.reference import (
+    license_reference_diff,
+    generic_reference_diff,
+)
+from cube.utils.validators import validate_spdx_id
 
 
 class LicenseManager(models.Manager):
@@ -19,8 +25,6 @@ class LicenseManager(models.Manager):
 class License(models.Model):
     """
     A license identified by its SPDX id.
-
-
     """
 
     COPYLEFT_NONE = "None"
@@ -35,17 +39,7 @@ class License(models.Model):
         (COPYLEFT_NETWORK, "Strong network copyleft"),
         (COPYLEFT_NETWORK_WEAK, "Weak network copyleft"),
     ]
-    ALLOWED_ALWAYS = "always"
-    ALLOWED_NEVER = "never"
-    ALLOWED_CONTEXT = "context"
-    ALLOWED_NOTFOSS = "notfoss"
-    ALLOWED_CHOICES = [
-        (ALLOWED_ALWAYS, "Always allowed"),
-        (ALLOWED_NEVER, "Never allowed"),
-        (ALLOWED_CONTEXT, "Allowed depending on context"),
-        (ALLOWED_NOTFOSS, "Out of FOSS Policy"),
-        ("", "Not reviewed yet"),
-    ]
+
     FOSS_YES = "Yes"
     FOSS_YES_AUTO = "Yes-Auto"
     FOSS_NO = "No"
@@ -56,16 +50,7 @@ class License(models.Model):
         (FOSS_NO, "We consider it is NOT FOSS"),
         (FOSS_NO_AUTO, "NOT FOSS - deduced"),
     ]
-    STATUS_CHECKED = "Checked"
-    STATUS_PENDING = "Pending"
-    STATUS_TO_DISCUSS = "To_Discuss"
-    STATUS_TO_CHECK = "To_Check"
-    STATUS_CHOICES = [
-        (STATUS_CHECKED, "Checked"),
-        (STATUS_PENDING, "Pending"),
-        (STATUS_TO_DISCUSS, "To discuss"),
-        (STATUS_TO_CHECK, "To check"),
-    ]
+
     LIABILITY_FULL = "Full"
     LIABILITY_PARTIAL = "Partial"
     LIABILITY_ABSENT = "Absent"
@@ -84,39 +69,12 @@ class License(models.Model):
     ]
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated = models.DateTimeField(auto_now=True, null=True, blank=True)
-    spdx_id = models.CharField("SPDX Identifier", max_length=200, unique=True)
-    status = models.CharField(
-        "Review status",
-        max_length=20,
-        choices=STATUS_CHOICES,
-        default="To check",
+    spdx_id = models.CharField(
+        "SPDX Identifier", max_length=200, unique=True, validators=[validate_spdx_id]
     )
     long_name = models.CharField("Name", max_length=200, blank=True)
-    categories = models.CharField(max_length=200, blank=True)
-    license_version = models.CharField(max_length=200, blank=True)
-    radical = models.CharField(max_length=200, blank=True)
-    autoupgrade = models.BooleanField(null=True)
     steward = models.CharField(max_length=200, blank=True)
-    inspiration_spdx = models.CharField(
-        max_length=200,
-        blank=True,
-        help_text="SPDX Identifier of another license which inspired this one",
-    )
-    inspiration = models.ForeignKey(
-        "self",
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-        help_text="A Licence which inspired this one",
-    )
-
     copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
-    allowed = models.CharField(
-        "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True
-    )
-    allowed_explanation = models.TextField(
-        "OSS Policy explanation", max_length=1500, blank=True
-    )
     url = models.URLField(max_length=200, blank=True)
     osi_approved = models.BooleanField(null=True, verbose_name="OSI Approved")
     fsf_approved = models.BooleanField(null=True, verbose_name="FSF Approved")
@@ -153,6 +111,14 @@ class License(models.Model):
 
     def natural_key(self):
         return (self.spdx_id,)
+
+    def is_compatible_with(
+        self,
+        outbound: Optional[Self],
+        linking: str,
+        exploitation: str,
+    ):
+        return is_compatible(self, outbound, linking, exploitation)
 
     @property
     def is_core_covered(self):
@@ -195,6 +161,69 @@ class License(models.Model):
         )
 
 
+class LicensePolicyManager(models.Manager):
+    def get_by_natural_key(self, license_spdx_id):
+        return self.get(license__spdx_id=license_spdx_id)
+
+
+class LicensePolicy(models.Model):
+    """
+    A policy associated with a license.
+    """
+
+    STATUS_CHECKED = "Checked"
+    STATUS_PENDING = "Pending"
+    STATUS_TO_DISCUSS = "To_Discuss"
+    STATUS_TO_CHECK = "To_Check"
+    STATUS_CHOICES = [
+        (STATUS_CHECKED, "Checked"),
+        (STATUS_PENDING, "Pending"),
+        (STATUS_TO_DISCUSS, "To discuss"),
+        (STATUS_TO_CHECK, "To check"),
+    ]
+
+    ALLOWED_ALWAYS = "always"
+    ALLOWED_NEVER = "never"
+    ALLOWED_CONTEXT = "context"
+    ALLOWED_NOTFOSS = "notfoss"
+    ALLOWED_CHOICES = [
+        (ALLOWED_ALWAYS, "Always allowed"),
+        (ALLOWED_NEVER, "Never allowed"),
+        (ALLOWED_CONTEXT, "Allowed depending on context"),
+        (ALLOWED_NOTFOSS, "Out of FOSS Policy"),
+        ("", "Not reviewed yet"),
+    ]
+
+    objects = LicensePolicyManager()
+
+    license = models.OneToOneField(
+        License, on_delete=models.CASCADE, related_name="policy"
+    )
+    status = models.CharField(
+        "Review status",
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default="To check",
+    )
+    categories = models.CharField(max_length=200, blank=True)
+    allowed = models.CharField(
+        "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True
+    )
+    allowed_explanation = models.TextField(
+        "OSS Policy explanation", max_length=1500, blank=True
+    )
+
+    def __str__(self):
+        return f"Policy for {self.license.spdx_id}"
+
+    def natural_key(self):
+        return self.license.natural_key()
+
+    class Meta:
+        verbose_name = "License policy"
+        verbose_name_plural = "License policies"
+
+
 class TeamManager(models.Manager):
     def get_by_natural_key(self, name):
         return self.get(name=name)
@@ -223,8 +252,7 @@ class GenericManager(models.Manager):
 
 
 class Generic(models.Model):
-    """A Generic obligation which is the simplification of the instances of several
-    similar :class `Obligation`."""
+    """A Compliance action linked to several :class `Obligation`."""
 
     objects = GenericManager()
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
@@ -242,28 +270,28 @@ class Generic(models.Model):
     name = models.CharField(
         max_length=200,
         unique=True,
-        help_text="Short description of the Generic obligation. Unique.",
+        help_text="Short description of the compliance action. Unique.",
     )
     description = models.TextField(
         max_length=500, blank=True, help_text="Longer description, optional."
     )
     in_core = models.BooleanField(
         default=False,
-        help_text="If True, means this Generic obligation is assumed to systematically fit to the enterprise policy. "
+        help_text="If True, means this compliance action is assumed to systematically fit to the enterprise policy. "
         "Otherwise, means it has to be manually checked.",
     )
     metacategory = models.CharField(
         max_length=40,
         choices=METAGATEGORY_CHOICES,
         blank=True,
-        help_text="A category of Generic obligation.",
+        help_text="A category of compliance action.",
     )
     team = models.ForeignKey(Team, on_delete=models.SET_NULL, null=True, blank=True)
     passivity = models.CharField(
         max_length=20,
         choices=PASSIVITY_CHOICES,
         blank=True,
-        help_text="A Generic obligation needs to conduct some kind of action"
+        help_text="A compliance action needs to conduct some kind of action"
         "(Active) or NOT to do specific things (Passive)",
     )
 
@@ -278,11 +306,11 @@ class Generic(models.Model):
         return ("[Core]" if self.in_core else "") + self.name
 
     class Meta:
-        verbose_name = "Generic obligation"
-        verbose_name_plural = "Generic obligations"
+        verbose_name = "Compliance action"
+        verbose_name_plural = "Compliance actions"
         permissions = (
-            ("export_generic", "Can export generic obligations"),
-            ("import_generic", "Can import generic obligations"),
+            ("export_generic", "Can export compliance actions"),
+            ("import_generic", "Can import compliance actions"),
         )
 
 
@@ -361,7 +389,7 @@ class Obligation(models.Model):
         choices=TRIGGER_MDF_CHOICES,
         default=Usage.MODIFICATION_ANY,
         verbose_name="Triggering modifications",
-        help_text="Status of modication necessary to trigger this obligation",
+        help_text="Status of modification necessary to trigger this obligation",
     )
 
     def natural_key(self):
@@ -373,3 +401,43 @@ class Obligation(models.Model):
 
     def __str__(self):
         return self.license.__str__() + " -" + self.name
+
+
+class Compatibility(models.Model):
+    from_license = models.ForeignKey(
+        "License",
+        on_delete=models.CASCADE,
+        related_name="compatibility_from",
+        verbose_name="From license",
+    )
+    to_license = models.ForeignKey(
+        "License",
+        on_delete=models.CASCADE,
+        related_name="compatibility_to",
+        verbose_name="To license",
+    )
+    DIRECTION_ASCENDING = "A"
+    DIRECTION_DESCENDING = "D"
+    DIRECTION_CHOICES = [
+        (DIRECTION_ASCENDING, "Ascending"),
+        (DIRECTION_DESCENDING, "Descending"),
+    ]
+    direction = models.CharField(
+        max_length=1,
+        choices=DIRECTION_CHOICES,
+        default="A",
+        help_text="Ascending means the license explicitly allows re-licensing under the other one. Descending means the license explicitly allows inclusion of"
+        " works under the other one inside a combination or derivative work..",
+    )
+    verbatim = models.TextField(
+        "Exact text of the compatibility",
+        blank=True,
+    )
+
+    def __str__(self):
+        return f"{self.from_license} {'->' if self.direction == self.DIRECTION_ASCENDING else '<-'} {self.to_license}"
+
+    class Meta:
+        unique_together = ["from_license", "to_license"]
+        verbose_name = "Compatibility"
+        verbose_name_plural = "Compatibilities"

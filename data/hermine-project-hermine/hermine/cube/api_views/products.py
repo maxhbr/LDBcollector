@@ -3,23 +3,41 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from itertools import groupby, chain
 
+from django.db import transaction
 from django.http import HttpResponse
 from django.urls import reverse
+from django.utils.decorators import method_decorator
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from junit_xml import TestCase, TestSuite, to_xml_report_string
-from rest_framework import viewsets
+from rest_framework import serializers
+from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.mixins import CreateModelMixin
+from rest_framework.parsers import MultiPartParser
 from rest_framework.response import Response
 
-from cube.importers import import_spdx_file, import_ort_evaluated_model_json_file
+from cube.importers import (
+    add_import_history_entry,
+    import_spdx_file,
+    import_cyclonedx_file,
+    import_ort_evaluated_model_json_file,
+    import_hkissbom_json_file,
+    add_dependency,
+)
 from cube.models import Product, Release, Exploitation
+from cube.models import SBOMImport
+from cube.permissions import UpdateSBOMPermissions
 from cube.serializers import (
     ReleaseSerializer,
     UploadSPDXSerializer,
+    UploadCycloneDXSerializer,
     UploadORTSerializer,
+    UploadHKBSerializer,
+    DependencySerializer,
+    CompatibilityValidationSerializer,
 )
+from cube.serializers.components import UsageSerializer
 from cube.serializers.products import (
     ProductSerializer,
     ExpressionValidationSerializer,
@@ -33,13 +51,13 @@ from cube.serializers.products import (
 )
 from cube.utils.licenses import get_usages_obligations
 from cube.utils.release_validation import (
-    update_validation_step,
-    validate_expressions,
-    validate_ands,
-    validate_exploitations,
-    validate_choices,
-    validate_policy,
-    apply_curations,
+    update_validation_step_6,
+    update_validation_step_5,
+    update_validation_step_4,
+    update_validation_step_3,
+    update_validation_step_2,
+    update_validation_step_1,
+    update_all_steps,
 )
 
 
@@ -47,6 +65,13 @@ class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = "id"
+
+    def get_queryset(self):
+        queryset = self.queryset
+        name = self.request.query_params.get("name")
+        if name is not None:
+            queryset = self.queryset.filter(name=name)
+        return queryset
 
 
 class ReleaseViewSet(viewsets.ModelViewSet):
@@ -77,7 +102,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         Recalculate validation step of the release
         """
         release = self.get_object()
-        update_validation_step(release)
+        update_all_steps(release)
 
         return Response(self.get_serializer_class()(release).data)
 
@@ -92,17 +117,13 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         """
         response = {}
         release = self.get_object()
-        apply_curations(release)
 
-        response["valid"], context = validate_expressions(release)
-        response["invalid_expressions"] = [
-            usage.version for usage in context["invalid_expressions"]
-        ]
-        response["fixed_expressions"] = [
-            usage.version for usage in context["fixed_expressions"]
-        ]
+        context = update_validation_step_1(release)
+        response["valid"] = release.valid_step >= 1
+        response["invalid_expressions"] = context["invalid_expressions"]
+        response["fixed_expressions"] = context["fixed_expressions"]
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_1", kwargs={"pk": release.pk}
         )
 
         return Response(ExpressionValidationSerializer(response).data)
@@ -117,12 +138,12 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         """
         response = {}
         release = self.get_object()
-        apply_curations(release)
 
-        response["valid"], context = validate_ands(release)
+        context = update_validation_step_2(release)
+        response["valid"] = release.valid_step >= 2
         response["to_confirm"] = context["to_confirm"]
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_2", kwargs={"pk": release.pk}
         )
 
         return Response(AndsValidationSerializer(response).data)
@@ -138,11 +159,11 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_exploitations(release)
-        response["exploitations"] = context["exploitations"]
-        response["unset_scopes"] = context["unset_scopes"]
+        context = update_validation_step_3(release)
+        response["valid"] = release.valid_step >= 3
+        response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_3", kwargs={"pk": release.pk}
         )
 
         return Response(ExploitationsValidationSerializer(response).data)
@@ -158,10 +179,11 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_choices(release)
+        context = update_validation_step_4(release)
+        response["valid"] = release.valid_step >= 4
         response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_4", kwargs={"pk": release.pk}
         )
 
         return Response(ChoicesValidationSerializer(response).data)
@@ -177,13 +199,34 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_policy(release)
+        context = update_validation_step_5(release)
+        response["valid"] = release.valid_step >= 5
         response.update(context)
         response["details"] = reverse(
-            "cube:release_validation", kwargs={"pk": release.pk}
+            "cube:release_validation_step_5", kwargs={"pk": release.pk}
         )
 
         return Response(PolicyValidationSerializer(response).data)
+
+    @swagger_auto_schema(
+        responses={200: CompatibilityValidationSerializer()},
+    )
+    @action(detail=True, methods=["get"])
+    def validation_6(self, request, **kwargs):
+        """
+        Check that the licenses are compatible with policy.
+        """
+        response = {}
+        release = self.get_object()
+
+        context = update_validation_step_6(release)
+        response["valid"] = release.valid_step >= 6
+        response.update(context)
+        response["details"] = reverse(
+            "cube:release_validation_step_6", kwargs={"pk": release.pk}
+        )
+
+        return Response(CompatibilityValidationSerializer(response).data)
 
     @swagger_auto_schema(
         responses={
@@ -217,41 +260,36 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         Returns a JUnit report for the validation steps of the release.
         """
         release = self.get_object()
-        apply_curations(release)
+        step, context = update_all_steps(release)
 
         expressions_step = TestCase(
             "Licenses curation",
         )
-        valid, context = validate_expressions(release)
-        if not valid:
+        if not step >= 1:
             expressions_step.add_failure_info(
                 message=f"{len(context['invalid_expressions'])} components license information are not valid SPDX expressions"
             )
 
         ands_step = TestCase("ANDs confirmation")
-        valid, context = validate_ands(release)
-        if not valid:
+        if not step >= 2:
             ands_step.add_failure_info(
                 f"{len(context['to_confirm'])} expressions are ambiguous"
             )
 
         exploitation_step = TestCase("Scope exploitations")
-        valid, context = validate_exploitations(release)
-        if not valid:
+        if not step >= 3:
             exploitation_step.add_failure_info(
                 f"{len(context['unset_scopes'])} scopes have no exploitation defined"
             )
 
         choices_step = TestCase("License choices")
-        valid, context = validate_choices(release)
-        if not valid:
+        if not step >= 4:
             choices_step.add_failure_info(
                 f"{len(context['to_resolve'])} licenses choices to resolve"
             )
 
         policy_step = TestCase("Policy compatibility")
-        valid, context = validate_policy(release)
-        if not valid:
+        if not step >= 5:
             count = (
                 len(context["usages_lic_never_allowed"])
                 + len(context["usages_lic_context_allowed"])
@@ -259,9 +297,23 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             )
             policy_step.add_failure_info(f"{count} invalid component usages")
 
+        compatibility_step = TestCase("Compatibility compatibility")
+        if not step >= 6:
+            count = len(context["incompatible_usages"])
+            compatibility_step.add_failure_info(
+                f"{count} usages with incompatible licenses"
+            )
+
         ts = TestSuite(
             f"{release} Hermine validation steps",
-            [expressions_step, ands_step, exploitation_step, choices_step, policy_step],
+            [
+                expressions_step,
+                ands_step,
+                exploitation_step,
+                choices_step,
+                policy_step,
+                compatibility_step,
+            ],
         )
 
         return HttpResponse(
@@ -365,47 +417,250 @@ class ExploitationViewSet(viewsets.ModelViewSet):
     lookup_field = "id"
 
     def get_queryset(self):
+        if "release_id" not in self.kwargs:
+            # Ony used by yasg when it tries to check permissions on the viexw
+            return Exploitation.objects.all()
         return Exploitation.objects.filter(release=self.kwargs["release_id"])
 
     def perform_create(self, serializer):
         serializer.save(release_id=self.kwargs["release_id"])
 
 
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: "Created"})
+)
 class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [UpdateSBOMPermissions]
     serializer_class = UploadSPDXSerializer
+    parser_classes = (MultiPartParser,)
 
-    @swagger_auto_schema(responses={201: "Created"})
-    def create(self, request, *args, **kwargs):
-        """Upload an SPDX file to Hermine."""
-        return super().create(request, *args, **kwargs)
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
 
+    @transaction.atomic()
     def perform_create(self, serializer):
         spdx_file = serializer.validated_data["spdx_file"]
-        release = serializer.validated_data["release"]
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
         import_spdx_file(
             spdx_file,
-            release.pk,
+            release_id,
             serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
             linking=serializer.validated_data.get("linking", ""),
+            default_project_name=serializer.validated_data.get(
+                "default_project_name", ""
+            ),
+            default_scope_name=serializer.validated_data.get("default_scope_name", ""),
         )
-        return Response()
+        add_import_history_entry(
+            spdx_file,
+            SBOMImport.BOM_SPDX,
+            serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
+            serializer.validated_data.get("linking", ""),
+            self.request.user,
+            release_id,
+        )
+        return Response(status=status.HTTP_201_CREATED)
 
 
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: "Created"})
+)
+class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [UpdateSBOMPermissions]
+    serializer_class = UploadCycloneDXSerializer
+    parser_classes = (MultiPartParser,)
+
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
+
+    @transaction.atomic()
+    def perform_create(self, serializer):
+        cyclonedx_file = serializer.validated_data["cyclonedx_file"]
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
+        import_cyclonedx_file(
+            cyclonedx_file,
+            release_id,
+            serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
+            linking=serializer.validated_data.get("linking", ""),
+            default_project_name=serializer.validated_data.get(
+                "default_project_name", ""
+            ),
+            default_scope_name=serializer.validated_data.get("default_scope_name", ""),
+        )
+        add_import_history_entry(
+            cyclonedx_file,
+            SBOMImport.BOM_CYCLONEDX,
+            serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
+            serializer.validated_data.get("linking", ""),
+            self.request.user,
+            release_id,
+        )
+        return Response(status=status.HTTP_201_CREATED)
+
+
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: "Created"})
+)
 class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [UpdateSBOMPermissions]
     serializer_class = UploadORTSerializer
+    parser_classes = (MultiPartParser,)
 
-    @swagger_auto_schema(responses={201: "Created"})
-    def create(self, request, *args, **kwargs):
-        """Upload an ORT Evaluated model file to Hermine."""
-        return super().create(request, *args, **kwargs)
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
 
+    @transaction.atomic()
     def perform_create(self, serializer):
         ort_file = serializer.validated_data["ort_file"]
-        release = serializer.validated_data["release"]
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
         import_ort_evaluated_model_json_file(
             ort_file,
-            release.id,
+            release_id,
             serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
             linking=serializer.validated_data.get("linking", ""),
         )
-        return Response()
+        add_import_history_entry(
+            ort_file,
+            SBOMImport.BOM_ORT,
+            serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
+            serializer.validated_data.get("linking", ""),
+            self.request.user,
+            release_id,
+        )
+        return Response(status=status.HTTP_201_CREATED)
+
+
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: "Created"})
+)
+class UploadHKBViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [UpdateSBOMPermissions]
+    serializer_class = UploadHKBSerializer
+    parser_classes = (MultiPartParser,)
+
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
+
+    @transaction.atomic()
+    def perform_create(self, serializer):
+        hkb_file = serializer.validated_data["hkb_file"]
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
+        import_hkissbom_json_file(
+            hkb_file,
+            release_id,
+            serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
+            linking=serializer.validated_data.get("linking", ""),
+        )
+        add_import_history_entry(
+            hkb_file,
+            SBOMImport.BOM_HKB,
+            serializer.validated_data.get("replace", False),
+            serializer.validated_data.get(
+                "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+            ),
+            serializer.validated_data.get("linking", ""),
+            self.request.user,
+            release_id,
+        )
+        return Response(status=status.HTTP_201_CREATED)
+
+
+@method_decorator(
+    name="create", decorator=swagger_auto_schema(responses={201: UsageSerializer()})
+)
+class CreateSingleDependencyViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [UpdateSBOMPermissions]
+    serializer_class = DependencySerializer
+
+    # Necessary for deprecated endpoints
+    def get_serializer(self, *args, **kwargs):
+        serializer = super().get_serializer(*args, **kwargs)
+        if "release_id" in self.kwargs:
+            del serializer.fields["release"]
+        return serializer
+
+    def perform_create(self, serializer):
+        if "release_id" in self.kwargs:
+            release_id = self.kwargs["release_id"]
+        else:
+            release_id = serializer.validated_data["release"].id
+        purl_type = serializer.validated_data["purl_type"]
+        name = serializer.validated_data["name"]
+        try:
+            usage, _ = add_dependency(
+                release_id,
+                purl_type,
+                name,
+                version_number=serializer.validated_data.get(
+                    "version_number", "Current"
+                ),
+                concluded_license=serializer.validated_data.get(
+                    "spdx_valid_license_expr", ""
+                ),
+                declared_license=serializer.validated_data.get(
+                    "declared_license_expr", ""
+                ),
+                component_update_mode=serializer.validated_data.get(
+                    "component_update_mode", SBOMImport.COMPONENT_UPDATE_DEFAULT
+                ),
+                purl=serializer.validated_data.get("purl", ""),
+                scope=serializer.validated_data.get("default_scope_name", ""),
+                linking=serializer.validated_data.get("linking", ""),
+                project=serializer.validated_data.get("default_project_name", ""),
+                component_defaults={
+                    "homepage_url": serializer.validated_data.get("homepage_url", ""),
+                    "description": serializer.validated_data.get("description", ""),
+                },
+            )
+            return Response(UsageSerializer(usage).data)
+        except ValueError as e:
+            raise serializers.ValidationError(e)
