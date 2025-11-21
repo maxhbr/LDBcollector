@@ -17,6 +17,7 @@ update_json() (
 
   # Activate venv and install dependencies
   source "$VENV_DIR/bin/activate"
+  set -x
   pip install -q --upgrade pip
   pip install -q -r data/OpenSourceOrg-licenses/requirements.txt
 
@@ -24,6 +25,7 @@ update_json() (
   cd data/OpenSourceOrg-licenses
   python compile.py ./licenses ../OpenSourceOrg-licenses.json
   cd ../..
+  git add data/OpenSourceOrg-licenses.json
 
   # Deactivate venv
   deactivate
