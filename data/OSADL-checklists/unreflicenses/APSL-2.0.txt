@@ -1,56 +1,48 @@
 USE CASE Source code delivery
-	YOU MUST Provide Copyright notices
-		ATTRIBUTE Highlighted
-		ATTRIBUTE Appropriately
-	YOU MUST Provide Warranty disclaimer (Warranty disclaimer)
-		ATTRIBUTE Highlighted
-		ATTRIBUTE Appropriately
-	YOU MUST NOT Modify License notices
-	YOU MUST NOT Modify Warranty disclaimer (Warranty disclaimer)
+	YOU MUST Forward Copyright notice
 	YOU MUST Provide License text
+	IF Documentation
+		YOU MUST Provide License text
+	YOU MUST Forward Legal notices
+	YOU MUST Forward Warranty disclaimer of Apple
+	YOU MUST NOT Modify License notices
 	IF Software modification
+		YOU MUST Provide Standard license notice (Exhibit A)
 		YOU MUST Grant License
 			ATTRIBUTE Original license
 		YOU MUST Provide Modification notice
 		YOU MUST Provide Modification date
-		IF Interactive
-			YOU MUST Display License announcement
-			YOU MUST Display Copyright notices
-			YOU MUST Display Warranty disclaimer
-			YOU MUST Reference License text
-	YOU MUST NOT Restrict Granted rights
+	YOU MUST NOT Restrict Granted rights For Source code
+	IF Service offerings
+		YOU MUST Indemnify Other contributors
 USE CASE Binary delivery
-	YOU MUST Provide Copyright notices
+	YOU MUST Include License Notice
 		ATTRIBUTE Highlighted
-		ATTRIBUTE Appropriately
-	YOU MUST Provide Warranty disclaimer (Warranty disclaimer)
+		ATTRIBUTE Included In Binary delivery AND Documentation
+	YOU MUST Reference Source code
 		ATTRIBUTE Highlighted
-		ATTRIBUTE Appropriately
-	YOU MUST NOT Modify License notices
-	YOU MUST NOT Modify Warranty disclaimer (Warranty disclaimer)
+		ATTRIBUTE Included In Binary delivery AND Documentation
 	YOU MUST Provide License text
-	EITHER
-		YOU MUST Provide Source code
-			ATTRIBUTE Machine-readable
-	OR
-		YOU MUST Provide Written offer (Written offer)
-			ATTRIBUTE Duration 3 years
-			ATTRIBUTE To Any third party
-			ATTRIBUTE No profit
-			ATTRIBUTE Delayed source code delivery
-				ATTRIBUTE Machine-readable
+	IF Documentation
+		YOU MUST Provide License text
+	YOU MUST Provide Copyright notice
+	YOU MUST Provide Legal notices
+	YOU MUST Provide Warranty disclaimer of Apple
+	YOU MUST NOT Modify License notices
 	IF Software modification
+		YOU MUST Provide Standard license notice (Exhibit A)
+		YOU MUST Provide Source code
+			ATTRIBUTE Duration At least 12 months
+			ATTRIBUTE Duration As long as Binary delivery
 		YOU MUST Grant License
 			ATTRIBUTE Original license
 		YOU MUST Provide Modification notice
 		YOU MUST Provide Modification date
-		IF Interactive
-			YOU MUST Display License announcement
-			YOU MUST Display Copyright notices
-			YOU MUST Display Warranty disclaimer
-			YOU MUST Reference License text
-	YOU MUST NOT Restrict Granted rights
+	YOU MUST NOT Restrict Granted rights For Source code
+	IF Service offerings
+		YOU MUST Indemnify Other contributors
 COMPATIBILITY 0BSD
+COMPATIBILITY Apache-2.0
 COMPATIBILITY Artistic-2.0
 COMPATIBILITY blessing
 COMPATIBILITY BlueOak-1.0.0
@@ -79,7 +71,6 @@ COMPATIBILITY Libpng
 COMPATIBILITY libpng-2.0
 COMPATIBILITY libtiff
 COMPATIBILITY LicenseRef-scancode-info-zip-2003-05
-COMPATIBILITY LicenseRef-scancode-ppp
 COMPATIBILITY MirOS
 COMPATIBILITY MIT
 COMPATIBILITY MIT-0
@@ -106,18 +97,8 @@ COMPATIBILITY W3C-20150513
 COMPATIBILITY WTFPL
 COMPATIBILITY X11
 COMPATIBILITY Zlib
-COMPATIBILITY ZPL-2.0
-DEPENDING COMPATIBILITY EUPL-1.1
-DEPENDING COMPATIBILITY AGPL-3.0-only
-DEPENDING COMPATIBILITY AGPL-3.0-or-later
-DEPENDING COMPATIBILITY LGPL-2.0-only
-DEPENDING COMPATIBILITY LGPL-2.0-or-later
-DEPENDING COMPATIBILITY LGPL-2.1-only
-DEPENDING COMPATIBILITY LGPL-2.1-or-later
-DEPENDING COMPATIBILITY MPL-2.0
 INCOMPATIBILITY Apache-1.0
 INCOMPATIBILITY Apache-1.1
-INCOMPATIBILITY Apache-2.0
 INCOMPATIBILITY BSD-4-Clause
 INCOMPATIBILITY BSD-4-Clause-UC
 INCOMPATIBILITY BSD-4.3TAHOE
@@ -132,4 +113,5 @@ INCOMPATIBILITY PSF-2.0
 INCOMPATIBILITY Python-2.0
 INCOMPATIBILITY zlib-acknowledgement
 INCOMPATIBILITY XFree86-1.1
+PATENT HINTS Yes
 COPYLEFT CLAUSE Yes

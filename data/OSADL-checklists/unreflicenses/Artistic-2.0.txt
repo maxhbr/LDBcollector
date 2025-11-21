@@ -43,11 +43,22 @@ USE CASE Binary delivery
 				YOU MUST Use Original license
 			OR
 				YOU MUST Use Strong copyleft license
-	IF Linked work
-		EITHER
-			YOU MUST NOT Provide Interface To Work
-		OR
-			YOU MUST Provide Modification report
+	YOU MUST NOT Require License fee
+USE CASE Binary delivery Of Linked work
+	EITHER
+		YOU MUST NOT Provide Interface To Work
+	OR
+		YOU MUST Provide Pointer To Source code
+			IF Pointer Expires
+				EITHER
+					YOU MUST Provide Pointer On Request
+						ATTRIBUTE Within 30 days
+				OR
+					YOU MUST End Binary delivery
+						ATTRIBUTE Within 30 days
+		IF Software modification
+			EXCEPT IF Provided By Copyright holder
+				YOU MUST Provide Modification report
 			EITHER
 				YOU MUST Provide Source code Of Modified work
 					ATTRIBUTE To Copyright holder Of Original work
@@ -61,5 +72,5 @@ USE CASE Binary delivery
 					YOU MUST Use Original license
 				OR
 					YOU MUST Use Strong copyleft license
-	YOU MUST NOT Require License fee
+		YOU MUST NOT Require License fee
 PATENT HINTS Yes

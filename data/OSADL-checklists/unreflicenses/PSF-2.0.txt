@@ -1,0 +1,5 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide License text
+	YOU MUST Provide Copyright notices
+	IF Software modification
+		YOU MUST Provide Modification report

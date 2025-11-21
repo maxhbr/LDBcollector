@@ -4,6 +4,7 @@ https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.1.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-3.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/AGPL-3.0-only.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/AGPL-3.0-or-later.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/APSL-2.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-2.0.txt
@@ -84,6 +85,7 @@ https://www.osadl.org/fileadmin/checklists/unreflicenses/OLDAP-2.8.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/OSL-3.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/OpenSSL.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/PHP-3.01.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/PSF-2.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/PostgreSQL.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Python-2.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt
@@ -98,6 +100,7 @@ https://www.osadl.org/fileadmin/checklists/unreflicenses/Spencer-86.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/SunPro.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Ubuntu-font-1.0.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-3.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2015.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2016.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Unlicense.txt

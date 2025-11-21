@@ -23,6 +23,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Copyright%20notice.txt
 https://www.osadl.org/fileadmin/checklists/terms/Customary%20medium.txt
 https://www.osadl.org/fileadmin/checklists/terms/Customary%20method.txt
 https://www.osadl.org/fileadmin/checklists/terms/Database%20delivery.txt
+https://www.osadl.org/fileadmin/checklists/terms/Database.txt
 https://www.osadl.org/fileadmin/checklists/terms/Debugging.txt
 https://www.osadl.org/fileadmin/checklists/terms/Delayed%20delivery.txt
 https://www.osadl.org/fileadmin/checklists/terms/Delayed%20source%20code%20delivery.txt
@@ -44,6 +45,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Functionality.txt
 https://www.osadl.org/fileadmin/checklists/terms/Granted%20rights.txt
 https://www.osadl.org/fileadmin/checklists/terms/Header%20file.txt
 https://www.osadl.org/fileadmin/checklists/terms/Human-readable.txt
+https://www.osadl.org/fileadmin/checklists/terms/Hyperlink.txt
 https://www.osadl.org/fileadmin/checklists/terms/Identical.txt
 https://www.osadl.org/fileadmin/checklists/terms/Image%20delivery.txt
 https://www.osadl.org/fileadmin/checklists/terms/Including.txt
@@ -101,6 +103,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Patent%20notice.txt
 https://www.osadl.org/fileadmin/checklists/terms/Pointer.txt
 https://www.osadl.org/fileadmin/checklists/terms/Preexisting.txt
 https://www.osadl.org/fileadmin/checklists/terms/Prejudicial.txt
+https://www.osadl.org/fileadmin/checklists/terms/Produced%20work%20publication.txt
 https://www.osadl.org/fileadmin/checklists/terms/Product%20name.txt
 https://www.osadl.org/fileadmin/checklists/terms/Product.txt
 https://www.osadl.org/fileadmin/checklists/terms/Protocol%20incompatible.txt
