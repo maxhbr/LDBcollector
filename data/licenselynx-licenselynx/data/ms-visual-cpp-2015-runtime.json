@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-visual-cpp-2015-runtime",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Visual C++ 2015-2022 Runtime",
-            "Microsoft Visual C++ 2015-2022 Runtime",
-            "LicenseRef-scancode-ms-visual-cpp-2015-runtime"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-visual-cpp-2015-runtime",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-visual-cpp-2015-runtime",
+            "Microsoft Visual C++ 2015-2022 Runtime",
+            "MS Visual C++ 2015-2022 Runtime"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

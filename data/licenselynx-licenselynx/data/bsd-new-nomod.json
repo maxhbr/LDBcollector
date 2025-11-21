@@ -1,11 +1,15 @@
 {
-    "canonical": "bsd-new-nomod",
+    "canonical": {
+        "id": "bsd-new-nomod",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BSD-3-Clause without notice modification",
             "LicenseRef-scancode-bsd-new-nomod"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

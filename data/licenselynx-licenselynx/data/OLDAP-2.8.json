@@ -1,14 +1,19 @@
 {
-    "canonical": "OLDAP-2.8",
+    "canonical": {
+        "id": "OLDAP-2.8",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open LDAP Public License v2.8"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "OpenLDAP Public License 2.8",
             "openldap-2.8"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "BSD-Mark-Modifications",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD Mark Modifications License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

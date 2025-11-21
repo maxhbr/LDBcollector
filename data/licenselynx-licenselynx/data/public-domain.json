@@ -1,13 +1,17 @@
 {
-    "canonical": "public-domain",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-PublicDomain",
-            "Public Domain",
-            "LicenseRef-Fedora-Public-Domain",
-            "LicenseRef-scancode-public-domain"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "public-domain",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-Fedora-Public-Domain",
+            "LicenseRef-PublicDomain",
+            "LicenseRef-scancode-public-domain",
+            "Public Domain"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

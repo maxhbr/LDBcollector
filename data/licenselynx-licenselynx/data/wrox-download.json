@@ -1,11 +1,15 @@
 {
-    "canonical": "wrox-download",
-    "aliases": {
-        "scancode-licensedb": [
-            "Wrox Download Terms and Conditions",
-            "LicenseRef-scancode-wrox-download"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "wrox-download",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-wrox-download",
+            "Wrox Download Terms and Conditions"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

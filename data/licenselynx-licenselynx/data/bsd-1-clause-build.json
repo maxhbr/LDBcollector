@@ -1,12 +1,16 @@
 {
-    "canonical": "bsd-1-clause-build",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD-1-Clause Build system",
-            "BSD-1-Clause Build",
-            "LicenseRef-scancode-bsd-1-clause-build"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "bsd-1-clause-build",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BSD-1-Clause Build",
+            "BSD-1-Clause Build system",
+            "LicenseRef-scancode-bsd-1-clause-build"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

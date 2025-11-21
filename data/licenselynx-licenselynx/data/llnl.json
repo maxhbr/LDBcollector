@@ -1,11 +1,15 @@
 {
-    "canonical": "llnl",
-    "aliases": {
-        "scancode-licensedb": [
-            "LLNL",
-            "LicenseRef-scancode-llnl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "llnl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-llnl",
+            "LLNL"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "trendmicro-cl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-trendmicro-cl-1.0",
+            "Trend Micro Community License 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -1,14 +1,18 @@
 {
-    "canonical": "Plexus",
+    "canonical": {
+        "id": "Plexus",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Plexus Classworlds License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "Dom4j License",
-            "dom4j"
+        "scancodeLicensedb": [
+            "dom4j",
+            "Dom4j License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "tim-janik-2003",
-    "aliases": {
-        "scancode-licensedb": [
-            "Tim Janik License 2003",
-            "LicenseRef-scancode-tim-janik-2003"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "tim-janik-2003",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tim-janik-2003",
+            "Tim Janik License 2003"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

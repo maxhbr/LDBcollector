@@ -1,12 +1,16 @@
 {
-    "canonical": "intel-bcl",
-    "aliases": {
-        "scancode-licensedb": [
-            "Intel Binary Code License",
-            "Intel BCL",
-            "LicenseRef-scancode-intel-bcl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "intel-bcl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Intel BCL",
+            "Intel Binary Code License",
+            "LicenseRef-scancode-intel-bcl"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

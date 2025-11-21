@@ -1,11 +1,15 @@
 {
-    "canonical": "openmarket-fastcgi",
+    "canonical": {
+        "id": "openmarket-fastcgi",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "FastCGI License for Spec Implementation",
             "LicenseRef-scancode-openmarket-fastcgi"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

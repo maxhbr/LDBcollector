@@ -1,12 +1,16 @@
 {
-    "canonical": "x11-xconsortium-veillard",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-x11-xconsortium_veillard",
-            "X11-Style (X Consortium Veillard)",
-            "LicenseRef-scancode-x11-xconsortium-veillard"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "x11-xconsortium-veillard",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-x11-xconsortium-veillard",
+            "LicenseRef-scancode-x11-xconsortium_veillard",
+            "X11-Style (X Consortium Veillard)"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

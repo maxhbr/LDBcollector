@@ -1,11 +1,15 @@
 {
-    "canonical": "oracle-java-ee-sdk-2010",
-    "aliases": {
-        "scancode-licensedb": [
-            "OTN Developer License for JAVA EE SDK",
-            "LicenseRef-scancode-oracle-java-ee-sdk-2010"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "oracle-java-ee-sdk-2010",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oracle-java-ee-sdk-2010",
+            "OTN Developer License for JAVA EE SDK"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

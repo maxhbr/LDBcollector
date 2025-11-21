@@ -1,11 +1,15 @@
 {
-    "canonical": "sun-entitlement-jaf",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun Entitlement JAF",
-            "LicenseRef-scancode-sun-entitlement-jaf"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-entitlement-jaf",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-entitlement-jaf",
+            "Sun Entitlement JAF"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

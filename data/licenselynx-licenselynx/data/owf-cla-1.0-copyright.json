@@ -1,12 +1,17 @@
 {
-    "canonical": "owf-cla-1.0-copyright",
-    "aliases": {
-        "scancode-licensedb": [
-            "OWF Contributor License Agreement 1.0 - Copyright",
-            "OWF CLA 1.0 - Copyright",
-            "LicenseRef-scancode-owf-cla-1.0-copyright"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "owf-cla-1.0-copyright",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-owf-cla-1.0-copyright",
+            "OWF CLA 1.0 - Copyright",
+            "OWF Contributor License Agreement 1.0 - Copyright"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

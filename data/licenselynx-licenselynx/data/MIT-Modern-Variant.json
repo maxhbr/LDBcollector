@@ -1,15 +1,19 @@
 {
-    "canonical": "MIT-Modern-Variant",
+    "canonical": {
+        "id": "MIT-Modern-Variant",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MIT License Modern Variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "mit-modern",
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mit-modern",
             "MIT Modern Variant",
-            "LicenseRef-scancode-mit-modern"
+            "mit-modern"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,18 @@
 {
-    "canonical": "HPND-Fenneberg-Livingston",
+    "canonical": {
+        "id": "HPND-Fenneberg-Livingston",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Historical Permission Notice and Disclaimer - Fenneberg-Livingston variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "hpnd-fenneberg-livingston",
-            "Historical Fenneberg-Livingston variant"
+        "scancodeLicensedb": [
+            "Historical Fenneberg-Livingston variant",
+            "hpnd-fenneberg-livingston"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "stmicroelectronics-linux-firmware",
-    "aliases": {
-        "scancode-licensedb": [
-            "STMicroelectronics Linux Firmware License",
-            "LicenseRef-scancode-stmicroelectronics-linux-firmware",
-            "LicenseRef-scancode-stmicro-linux-firmware"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "stmicroelectronics-linux-firmware",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-stmicro-linux-firmware",
+            "LicenseRef-scancode-stmicroelectronics-linux-firmware",
+            "STMicroelectronics Linux Firmware License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

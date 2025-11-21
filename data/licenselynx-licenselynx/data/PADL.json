@@ -1,13 +1,17 @@
 {
-    "canonical": "PADL",
+    "canonical": {
+        "id": "PADL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "PADL License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "padl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

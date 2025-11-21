@@ -1,11 +1,15 @@
 {
-    "canonical": "hauppauge-firmware-oem",
+    "canonical": {
+        "id": "hauppauge-firmware-oem",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Hauppauge Firmware OEM License",
             "LicenseRef-scancode-hauppauge-firmware-oem"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

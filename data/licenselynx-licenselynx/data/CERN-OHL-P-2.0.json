@@ -1,14 +1,19 @@
 {
-    "canonical": "CERN-OHL-P-2.0",
+    "canonical": {
+        "id": "CERN-OHL-P-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CERN Open Hardware Licence Version 2 - Permissive"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "CERN-OHL-P-2.0",
             "cern-ohl-p-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

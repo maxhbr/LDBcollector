@@ -1,11 +1,16 @@
 {
-    "canonical": "osetpl-2.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "OSET Public License v2.1",
-            "OSET 2.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "osetpl-2.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "OSET 2.1",
+            "OSET Public License v2.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

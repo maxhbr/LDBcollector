@@ -1,0 +1,21 @@
+{
+    "canonical": {
+        "id": "SUL-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Sustainable Use License v1.0"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sustainable-use-1.0",
+            "Sustainable Use 1.0",
+            "Sustainable Use License 1.0",
+            "sustainable-use-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

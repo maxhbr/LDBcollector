@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-office-extensible-file",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Office Extensible File License",
-            "MS Office Extensible File License",
-            "LicenseRef-scancode-ms-office-extensible-file"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-office-extensible-file",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-office-extensible-file",
+            "Microsoft Office Extensible File License",
+            "MS Office Extensible File License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

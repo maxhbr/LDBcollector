@@ -1,11 +1,16 @@
 {
-    "canonical": "gsoap-1.3a",
+    "canonical": {
+        "id": "gsoap-1.3a",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "gSOAP Public License v1.3a",
             "LicenseRef-scancode-gsoap-1.3a"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

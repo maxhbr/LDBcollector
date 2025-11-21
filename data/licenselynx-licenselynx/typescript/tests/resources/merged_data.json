@@ -1,6 +1,18 @@
 {
-    "BSD Zero Clause": {
-        "canonical": "0BSD",
-        "src": "spdx"
+    "stableMap": {
+        "BSD Zero Clause": {
+            "id": "0BSD",
+            "src": "spdx"
+        },
+        "BSD 'Zero' Clause": {
+            "id": "0BSD",
+            "src": "spdx"
+        }
+    },
+    "riskyMap": {
+        "BSD Zero Clause Risky": {
+            "id": "0BSD",
+            "src": "spdx"
+        }
     }
 }

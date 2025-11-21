@@ -1,16 +1,21 @@
 {
-    "canonical": "GFDL-1.1-only",
+    "canonical": {
+        "id": "GFDL-1.1-only",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GFDL-1.1",
             "GNU Free Documentation License v1.1 only"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "GNU Free Documentation License v1.1",
+        "scancodeLicensedb": [
             "GFDL 1.1",
-            "gfdl-1.1"
+            "gfdl-1.1",
+            "GNU Free Documentation License v1.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

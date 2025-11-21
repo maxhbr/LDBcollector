@@ -1,11 +1,15 @@
 {
-    "canonical": "qcad-exception-gpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "QCAD Exception to GPL",
-            "LicenseRef-scancode-qcad-exception-gpl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "qcad-exception-gpl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-qcad-exception-gpl",
+            "QCAD Exception to GPL"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

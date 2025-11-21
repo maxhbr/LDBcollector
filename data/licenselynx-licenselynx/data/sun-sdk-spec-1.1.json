@@ -1,11 +1,16 @@
 {
-    "canonical": "sun-sdk-spec-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun SDK Specification 1.1",
-            "LicenseRef-scancode-sun-sdk-spec-1.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-sdk-spec-1.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-sdk-spec-1.1",
+            "Sun SDK Specification 1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

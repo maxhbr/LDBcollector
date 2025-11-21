@@ -1,18 +1,29 @@
 {
-    "canonical": "SPL-1.0",
+    "canonical": {
+        "id": "SPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sun Public License v1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "osi": [
+            "Sun Public License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
             "SPL 1.0",
             "spl-1.0",
             "Sun Public License 1.0"
         ],
-        "osi": [
-            "Sun Public License, Version 1.0"
+        "pypi": [
+            "License :: OSI Approved :: Sun Public License",
+            "License :: Sun Public License",
+            "OSI Approved :: Sun Public License",
+            "Sun Public License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

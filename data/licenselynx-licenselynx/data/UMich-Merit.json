@@ -1,13 +1,17 @@
 {
-    "canonical": "UMich-Merit",
+    "canonical": {
+        "id": "UMich-Merit",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Michigan/Merit Networks License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "umich-merit"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

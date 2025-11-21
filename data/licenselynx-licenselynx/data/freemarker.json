@@ -1,11 +1,15 @@
 {
-    "canonical": "freemarker",
+    "canonical": {
+        "id": "freemarker",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "FreeMarker License",
             "LicenseRef-scancode-freemarker"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

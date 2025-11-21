@@ -1,18 +1,23 @@
 {
-    "canonical": "Frameworx-1.0",
+    "canonical": {
+        "id": "Frameworx-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Frameworx Open License 1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "Frameworx Open License v1.0",
-            "Frameworx 1.0",
-            "frameworx-1.0"
-        ],
         "osi": [
             "Frameworx License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "Frameworx 1.0",
+            "Frameworx Open License v1.0",
+            "frameworx-1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

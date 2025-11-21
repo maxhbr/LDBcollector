@@ -1,17 +1,26 @@
 {
-    "canonical": "Xnet",
+    "canonical": {
+        "id": "Xnet",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "X.Net License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "xnet",
-            "Altera License"
-        ],
         "osi": [
             "The X.Net, Inc. License"
+        ],
+        "scancodeLicensedb": [
+            "Altera License",
+            "xnet"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: X.Net License",
+            "License :: X.Net License",
+            "OSI Approved :: X.Net License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

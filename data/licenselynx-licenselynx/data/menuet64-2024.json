@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "menuet64-2024",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-menuet64-2024",
+            "Menuet64 License 2024"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

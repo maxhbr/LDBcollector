@@ -1,11 +1,15 @@
 {
-    "canonical": "kerberos",
+    "canonical": {
+        "id": "kerberos",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Kerberos License",
             "LicenseRef-scancode-kerberos"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

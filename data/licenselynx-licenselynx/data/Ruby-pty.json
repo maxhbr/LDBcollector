@@ -1,13 +1,17 @@
 {
-    "canonical": "Ruby-pty",
+    "canonical": {
+        "id": "Ruby-pty",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Ruby pty extension license"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "ruby-pty"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

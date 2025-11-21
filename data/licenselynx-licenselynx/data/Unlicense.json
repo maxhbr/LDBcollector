@@ -1,14 +1,33 @@
 {
-    "canonical": "Unlicense",
+    "canonical": {
+        "id": "Unlicense",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "The Unlicense"
         ],
-        "custom": [],
-        "scancode-licensedb": [
+        "custom": [
+            "Unlicence",
+            "UNLICENSED"
+        ],
+        "scancodeLicensedb": [
             "Unlicense",
             "unlicense"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: The Unlicense",
+            "License :: OSI Approved :: The Unlicense (Unlicense)",
+            "License :: OSI Approved :: Unlicense",
+            "License :: The Unlicense",
+            "License :: The Unlicense (Unlicense)",
+            "License :: Unlicense",
+            "OSI Approved :: The Unlicense",
+            "OSI Approved :: The Unlicense (Unlicense)",
+            "OSI Approved :: Unlicense",
+            "The Unlicense (Unlicense)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

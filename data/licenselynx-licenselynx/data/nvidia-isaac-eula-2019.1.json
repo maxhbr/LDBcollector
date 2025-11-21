@@ -1,11 +1,16 @@
 {
-    "canonical": "nvidia-isaac-eula-2019.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "NVIDIA ISAAC EULA v2019.1",
-            "LicenseRef-scancode-nvidia-isaac-eula-2019.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "nvidia-isaac-eula-2019.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-nvidia-isaac-eula-2019.1",
+            "NVIDIA ISAAC EULA v2019.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

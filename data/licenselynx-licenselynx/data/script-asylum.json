@@ -1,11 +1,15 @@
 {
-    "canonical": "script-asylum",
-    "aliases": {
-        "scancode-licensedb": [
-            "Script Asylum License",
-            "LicenseRef-scancode-script-asylum"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "script-asylum",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-script-asylum",
+            "Script Asylum License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

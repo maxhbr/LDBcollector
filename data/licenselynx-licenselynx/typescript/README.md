@@ -18,12 +18,15 @@ import {map} from "@licenselynx/licenselynx";
 
 // Map the license name
 const licenseObject = map('license1');
-console.log(licenseObject.canonical);
+console.log(licenseObject.id);
 console.log(licenseObject.src);
+
+// Map the license name with risky mappings enabled
+const licenseObject = map('license1', true);
 ```
 
 ## License
 
-This project is licensed under the [Apache License, Version 2.0](../LICENSE.md) (SPDX-License-Identifier: Apache-2.0).
+This project is licensed under the [BSD 3-Clause "New" or "Revised" License](../LICENSE) (SPDX-License-Identifier: BSD-3-Clause).
 
 Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED

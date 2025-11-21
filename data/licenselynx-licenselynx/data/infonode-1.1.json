@@ -1,12 +1,17 @@
 {
-    "canonical": "infonode-1.1",
+    "canonical": {
+        "id": "infonode-1.1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "InfoNode Software License 1.1",
             "InfoNode Software License Version 1.1",
             "LicenseRef-scancode-infonode-1.1"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

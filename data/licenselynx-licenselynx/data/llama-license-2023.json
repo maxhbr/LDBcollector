@@ -1,11 +1,15 @@
 {
-    "canonical": "llama-license-2023",
-    "aliases": {
-        "scancode-licensedb": [
-            "LLaMA License Agreement 2023",
-            "LicenseRef-scancode-llama-license-2023"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "llama-license-2023",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-llama-license-2023",
+            "LLaMA License Agreement 2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

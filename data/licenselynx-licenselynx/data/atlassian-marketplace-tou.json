@@ -1,11 +1,15 @@
 {
-    "canonical": "atlassian-marketplace-tou",
+    "canonical": {
+        "id": "atlassian-marketplace-tou",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Atlassian Marketplace Terms of Use",
             "LicenseRef-scancode-atlassian-marketplace-tou"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

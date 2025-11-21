@@ -1,14 +1,19 @@
 {
-    "canonical": "PHP-3.01",
+    "canonical": {
+        "id": "PHP-3.01",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "PHP License v3.01"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "PHP License 3.01",
             "php-3.01"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

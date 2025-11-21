@@ -1,12 +1,16 @@
 {
-    "canonical": "dhb-lbnl-bsd-2007",
+    "canonical": {
+        "id": "dhb-lbnl-bsd-2007",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "David H. Bailey LBNL BSD License 2007",
             "DHB LBNL BSD License 2007",
             "LicenseRef-scancode-dhb-lbnl-bsd-2007"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

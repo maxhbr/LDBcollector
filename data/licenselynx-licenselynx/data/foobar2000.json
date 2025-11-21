@@ -1,11 +1,15 @@
 {
-    "canonical": "foobar2000",
+    "canonical": {
+        "id": "foobar2000",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "foobar2000 License",
             "LicenseRef-scancode-foobar2000"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

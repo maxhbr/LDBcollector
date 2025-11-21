@@ -1,11 +1,15 @@
 {
-    "canonical": "eclipse-sua-2014-11",
+    "canonical": {
+        "id": "eclipse-sua-2014-11",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Eclipse Foundation Software User Agreement 2014-11",
             "LicenseRef-scancode-eclipse-sua-2014-11"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

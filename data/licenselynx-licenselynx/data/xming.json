@@ -1,11 +1,15 @@
 {
-    "canonical": "xming",
-    "aliases": {
-        "scancode-licensedb": [
-            "Xming License",
-            "LicenseRef-scancode-xming"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "xming",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-xming",
+            "Xming License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

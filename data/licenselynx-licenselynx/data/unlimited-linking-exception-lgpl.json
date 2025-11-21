@@ -1,12 +1,16 @@
 {
-    "canonical": "unlimited-linking-exception-lgpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "Unlimited linking exception to LGPL",
-            "LicenseRef-scancode-unlimited-linking-exception-lgpl",
-            "LicenseRef-scancode-unlimited-link-exception-lgpl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "unlimited-linking-exception-lgpl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-unlimited-link-exception-lgpl",
+            "LicenseRef-scancode-unlimited-linking-exception-lgpl",
+            "Unlimited linking exception to LGPL"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

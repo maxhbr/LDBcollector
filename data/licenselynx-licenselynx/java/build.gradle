@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: Copyright 2025 Siemens AG
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: BSD-3-Clause
  */
 
 plugins {
@@ -188,17 +188,17 @@ tasks.named('check').configure { t ->
  */
 tasks.named('jar').configure {
     into('META-INF') {
-        from '../LICENSE.md'
+        from '../LICENSE'
     }
     manifest {
         attributes = [
             'Manifest-Version'           : '1.0',
             'Specification-Title'        : project.name,
-            'Specification-Vendor'       : 'The LicenseLynx OSS Projec',
+            'Specification-Vendor'       : 'The LicenseLynx OSS Project',
             'Specification-Vendor-Id'    : 'org.licenselynx',
             'Specification-Version'      : project.version,
             'Implementation-Title'       : project.name,
-            'Implementation-Vendor'      : 'The LicenseLynx OSS Projec',
+            'Implementation-Vendor'      : 'The LicenseLynx OSS Project',
             'Implementation-Vendor-Id'   : 'org.licenselynx',
             'Implementation-Version'     : project.version,
             'Implementation-SCM-Revision': project.ext.gitHash,
@@ -219,7 +219,7 @@ tasks.named('jar').configure {
 
 sourcesJar {
     into('META-INF') {
-        from '../LICENSE.md'
+        from '../LICENSE'
     }
     afterEvaluate {
         manifest.getAttributes().putAll(tasks.jar.manifest.attributes.findAll { it.key != 'Automatic-Module-Name' })
@@ -232,7 +232,7 @@ tasks.sourcesJar.dependsOn tasks.createVersionFile
 
 javadocJar {
     into('META-INF') {
-        from '../LICENSE.md'
+        from '../LICENSE'
     }
     afterEvaluate {
         manifest.getAttributes().putAll(tasks.jar.manifest.attributes.findAll { it.key != 'Automatic-Module-Name' })
@@ -329,7 +329,7 @@ publishing {
                 inceptionYear = '2024'
                 licenses {
                     license {
-                        name = 'Apache-2.0'
+                        name = 'BSD-3-Clause'
                         url = 'https://raw.githubusercontent.com/licenselynx/licenselynx/refs/tags/v' +
                             project.version + '/LICENSE'
                     }

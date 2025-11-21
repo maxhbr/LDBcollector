@@ -1,14 +1,18 @@
 {
-    "canonical": "SMPPL",
+    "canonical": {
+        "id": "SMPPL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Secure Messaging Protocol Public License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "smppl",
-            "SMPPL"
+        "scancodeLicensedb": [
+            "SMPPL",
+            "smppl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

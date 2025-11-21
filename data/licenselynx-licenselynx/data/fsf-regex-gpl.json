@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "fsf-regex-gpl",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "FSF Regex GPL",
+            "LicenseRef-scancode-fsf-regex-gpl"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

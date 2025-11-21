@@ -1,12 +1,17 @@
 {
-    "canonical": "aes-128-3.0",
+    "canonical": {
+        "id": "aes-128-3.0",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "AES-128 3.0 License",
             "AES-128 v3.0 License",
             "LicenseRef-scancode-aes-128-3.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

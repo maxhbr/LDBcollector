@@ -1,11 +1,15 @@
 {
-    "canonical": "ecma-patent-coc-1",
+    "canonical": {
+        "id": "ecma-patent-coc-1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Ecma Code of Conduct in Patent Matters v1",
             "LicenseRef-scancode-ecma-patent-coc-1"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

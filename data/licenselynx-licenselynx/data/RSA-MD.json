@@ -1,15 +1,19 @@
 {
-    "canonical": "RSA-MD",
+    "canonical": {
+        "id": "RSA-MD",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "RSA Message-Digest License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "RSA-MD5 License",
+        "scancodeLicensedb": [
             "RSA Data Security MD5",
-            "rsa-md5"
+            "rsa-md5",
+            "RSA-MD5 License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

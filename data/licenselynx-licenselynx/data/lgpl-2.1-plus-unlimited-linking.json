@@ -1,10 +1,15 @@
 {
-    "canonical": "lgpl-2.1-plus-unlimited-linking",
-    "aliases": {
-        "scancode-licensedb": [
-            "LGPL 2.1 or later with Unlimited linking exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "lgpl-2.1-plus-unlimited-linking",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LGPL 2.1 or later with Unlimited linking exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "ibm-jre",
-    "aliases": {
-        "scancode-licensedb": [
-            "IBM JRE License",
-            "IBM Java Runtime Environment License",
-            "LicenseRef-scancode-ibm-jre"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ibm-jre",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "IBM Java Runtime Environment License",
+            "IBM JRE License",
+            "LicenseRef-scancode-ibm-jre"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "fcl-1.0-apache-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-fcl-1.0-apache-2.0",
-            "FCL-1.0-Apache-2.0",
-            "Fair Core License, Version 1.0, Apache 2.0 Future License"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "fcl-1.0-apache-2.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Fair Core License, Version 1.0, Apache 2.0 Future License",
+            "FCL-1.0-Apache-2.0",
+            "LicenseRef-scancode-fcl-1.0-apache-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

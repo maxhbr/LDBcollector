@@ -1,12 +1,16 @@
 {
-    "canonical": "dynamic-drive-tou",
-    "aliases": {
-        "scancode-licensedb": [
-            "Dynamic Drive TOU",
-            "Dynamic Drive Terms of Use",
-            "LicenseRef-scancode-dynamic-drive-tou"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "dynamic-drive-tou",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Dynamic Drive Terms of Use",
+            "Dynamic Drive TOU",
+            "LicenseRef-scancode-dynamic-drive-tou"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "ms-research-license-terms",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-research-license-terms",
+            "Microsoft Research License Terms",
+            "MS Research License Terms"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

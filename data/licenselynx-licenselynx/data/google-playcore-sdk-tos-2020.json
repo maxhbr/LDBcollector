@@ -1,12 +1,17 @@
 {
-    "canonical": "google-playcore-sdk-tos-2020",
+    "canonical": {
+        "id": "google-playcore-sdk-tos-2020",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Google",
             "Google Play Core SDK TOS 2020",
+            "Google Play Core Software Development Kit Terms of Service",
             "LicenseRef-scancode-google-playcore-sdk-tos-2020"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "bloomberg-blpapi",
+    "canonical": {
+        "id": "bloomberg-blpapi",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Bloomberg BLPAPI License",
             "LicenseRef-scancode-bloomberg-blpapi"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "quicktime",
+    "canonical": {
+        "id": "quicktime",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Apple Quicktime License",
             "LicenseRef-scancode-quicktime"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

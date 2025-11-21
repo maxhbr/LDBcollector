@@ -1,11 +1,15 @@
 {
-    "canonical": "ms-entity-framework-5",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Entity Framework 5 License",
-            "LicenseRef-scancode-ms-entity-framework-5"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-entity-framework-5",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-entity-framework-5",
+            "MS Entity Framework 5 License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

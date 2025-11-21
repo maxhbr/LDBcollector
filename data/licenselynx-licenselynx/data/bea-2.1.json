@@ -1,12 +1,17 @@
 {
-    "canonical": "bea-2.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "BEA Public License 2.1",
-            "BEA 2.1",
-            "LicenseRef-scancode-bea-2.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "bea-2.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BEA 2.1",
+            "BEA Public License 2.1",
+            "LicenseRef-scancode-bea-2.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

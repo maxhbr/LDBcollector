@@ -1,12 +1,17 @@
 {
-    "canonical": "cpol-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "CPOL 1.0",
-            "Code Project Open License (CPOL) 1.0",
-            "LicenseRef-scancode-cpol-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "cpol-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Code Project Open License (CPOL) 1.0",
+            "CPOL 1.0",
+            "LicenseRef-scancode-cpol-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

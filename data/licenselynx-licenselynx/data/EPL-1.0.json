@@ -1,32 +1,51 @@
 {
-    "canonical": "EPL-1.0",
+    "canonical": {
+        "id": "EPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Eclipse Public License 1.0"
         ],
         "custom": [
+            "Eclipse License 1.0",
+            "Eclipse Public License (1.0)",
             "Eclipse Public License v1.0",
+            "Eclipse Public License v1.0 (EPL-1.0)",
+            "Eclipse Public License Version 1.0",
+            "EPL (1.0)",
+            "EPL 1.0 License",
+            "EPL 1.0 Open Source License",
             "EPL License 1.0",
             "EPL v1.0",
-            "EPL License",
-            "Eclipse License 1.0",
-            "Eclipse Public License",
-            "Eclipse Public License Version 1.0",
-            "EPL 1.0 License",
-            "EPL-1.0 License",
-            "EPL (1.0)",
-            "Eclipse Public License (1.0)",
             "EPL Version 1.0",
-            "Eclipse Public License v1.0 (EPL-1.0)",
-            "EPL 1.0 Open Source License"
-        ],
-        "scancode-licensedb": [
-            "EPL 1.0",
-            "epl-1.0"
+            "EPL-1.0 License",
+            "epl1.0"
         ],
         "osi": [
             "Eclipse Public License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "EPL 1.0",
+            "epl-1.0"
+        ],
+        "pypi": [
+            "Eclipse Public License 1.0 (EPL-1.0)",
+            "License :: Eclipse Public License 1.0",
+            "License :: Eclipse Public License 1.0 (EPL-1.0)",
+            "License :: EPL-1.0",
+            "License :: OSI Approved :: Eclipse Public License 1.0",
+            "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
+            "License :: OSI Approved :: EPL-1.0",
+            "OSI Approved :: Eclipse Public License 1.0",
+            "OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
+            "OSI Approved :: EPL-1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [
+        "EPL License",
+        "Eclipse Public License"
+    ],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

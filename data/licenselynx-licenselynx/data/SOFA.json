@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "SOFA",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "SOFA Software License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "sofa"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

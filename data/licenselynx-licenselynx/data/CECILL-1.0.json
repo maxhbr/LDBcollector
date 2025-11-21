@@ -1,14 +1,19 @@
 {
-    "canonical": "CECILL-1.0",
+    "canonical": {
+        "id": "CECILL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CeCILL Free Software License Agreement v1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "cecill-1.0",
-            "CeCILL 1.0"
+        "scancodeLicensedb": [
+            "CeCILL 1.0",
+            "cecill-1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

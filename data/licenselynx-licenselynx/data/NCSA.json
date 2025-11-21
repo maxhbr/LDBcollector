@@ -1,17 +1,26 @@
 {
-    "canonical": "NCSA",
+    "canonical": {
+        "id": "NCSA",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "University of Illinois/NCSA Open Source License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "uoi-ncsa",
-            "NCSA Open Source License"
-        ],
         "osi": [
             "The University of Illinois/NCSA Open Source License"
+        ],
+        "scancodeLicensedb": [
+            "NCSA Open Source License",
+            "uoi-ncsa"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
+            "License :: University of Illinois/NCSA Open Source License",
+            "OSI Approved :: University of Illinois/NCSA Open Source License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "bsd-3-clause-devine",
+    "canonical": {
+        "id": "bsd-3-clause-devine",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BSD 3-Clause Devine",
             "LicenseRef-scancode-bsd-3-clause-devine"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

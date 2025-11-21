@@ -1,14 +1,19 @@
 {
-    "canonical": "CERN-OHL-1.1",
+    "canonical": {
+        "id": "CERN-OHL-1.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CERN Open Hardware Licence v1.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "CERN Open Hardware License v1.1",
             "cern-ohl-1.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

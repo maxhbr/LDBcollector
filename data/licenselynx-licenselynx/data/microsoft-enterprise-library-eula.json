@@ -1,13 +1,17 @@
 {
-    "canonical": "microsoft-enterprise-library-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-microsoft-enterprise-library-eula",
-            "MS Enterprise Library EULA",
-            "Microsoft Enterprise Library EULA",
-            "LicenseRef-scancode-ms-enterprise-library-eula"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "microsoft-enterprise-library-eula",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-microsoft-enterprise-library-eula",
+            "LicenseRef-scancode-ms-enterprise-library-eula",
+            "Microsoft Enterprise Library EULA",
+            "MS Enterprise Library EULA"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,18 @@
 {
-    "canonical": "HTMLTIDY",
+    "canonical": {
+        "id": "HTMLTIDY",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "HTML Tidy License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "Tidy License",
-            "tidy"
+        "scancodeLicensedb": [
+            "tidy",
+            "Tidy License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

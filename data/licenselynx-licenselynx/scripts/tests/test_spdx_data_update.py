@@ -19,20 +19,22 @@ def spdx_data_update():
 def test_update_non_spdx_license_file(mock_json_dump, mock_open, mock_rename, spdx_data_update):
     license_id = "SPDX-License"
     data = {
-        "canonical": "old-license",
+        "canonical": {
+            "id": "old-license",
+            "src": "other-source"
+        },
         "aliases": {
             "custom": ["Some Alias"],
             "other-source": ["SPDX-License", "old-license-alias"]
         },
-        "src": "other-source"
     }
     old_license_filepath = "old-path/old-license.json"
     license_name = "SPDX License Name"
 
     spdx_data_update.update_non_spdx_license_file(license_id, data, old_license_filepath, license_name)
 
-    assert data["canonical"] == license_id
-    assert data["src"] == "spdx"
+    assert data["canonical"]["id"] == license_id
+    assert data["canonical"]["src"] == "spdx"
     assert data["aliases"]["other-source"] == ["old-license-alias", "old-license"]
     assert data["aliases"]["spdx"] == [license_name]
 
@@ -66,7 +68,7 @@ def test_process_unrecognized_license_id_file_not_found(mock_get_file, spdx_data
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.get_file_for_unrecognized_id", return_value="test.json")
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.update_license_file")
 @patch("src.update.SpdxDataUpdate.SpdxDataUpdate.update_non_spdx_license_file")
-@patch("builtins.open", new_callable=mock_open, read_data='{"src": "other-source"}')
+@patch("builtins.open", new_callable=mock_open, read_data='{"canonical": {"src": "other-source"}}')
 def test_process_unrecognized_license_id_found_non_spdx(mock_open, mock_update_non_spdx, mock_update_license,
                                                         mock_get_file, spdx_data_update):
     aliases = ["alias1"]
@@ -97,8 +99,8 @@ def test_process_licenses(mock_update_non_spdx_license_file, mock_create_license
                       {"licenseId": "id2", "name": "name2"},
                       {"licenseId": "id3", "name": "name3"}]},
         # Second call: return the content of the id1.json file
-        {"src": "spdx"},
-        {"src": "non-spdx"}
+        {"canonical": {"src": "spdx"}},
+        {"canonical": {"src": "non-spdx"}}
     ]
 
     spdx_data_update._process_licenses("dummy_url", "licenseId", "licenses")
@@ -114,4 +116,4 @@ def test_process_licenses(mock_update_non_spdx_license_file, mock_create_license
     mock_get_file_for_unrecognized_id.assert_called_once_with(['name2', 'id2'])
 
     filepath = os.path.join(spdx_data_update._DATA_DIR, "id3.json")
-    mock_update_non_spdx_license_file.assert_called_once_with("id3", {"src": "non-spdx"}, filepath, "name3")
+    mock_update_non_spdx_license_file.assert_called_once_with("id3", {"canonical": {"src": "non-spdx"}}, filepath, "name3")

@@ -1,13 +1,17 @@
 {
-    "canonical": "Sun-PPP",
+    "canonical": {
+        "id": "Sun-PPP",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sun PPP License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "sun-ppp"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

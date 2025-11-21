@@ -1,11 +1,15 @@
 {
-    "canonical": "ti-linux-firmware",
-    "aliases": {
-        "scancode-licensedb": [
-            "TI Linux Firmware License",
-            "LicenseRef-scancode-ti-linux-firmware"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ti-linux-firmware",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ti-linux-firmware",
+            "TI Linux Firmware License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

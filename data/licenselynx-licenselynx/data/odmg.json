@@ -1,11 +1,15 @@
 {
-    "canonical": "odmg",
-    "aliases": {
-        "scancode-licensedb": [
-            "ODMG License",
-            "LicenseRef-scancode-odmg"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "odmg",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-odmg",
+            "ODMG License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

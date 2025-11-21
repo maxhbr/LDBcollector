@@ -1,17 +1,22 @@
 {
-    "canonical": "NPOSL-3.0",
+    "canonical": {
+        "id": "NPOSL-3.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Non-Profit Open Software License 3.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "nosl-3.0",
-            "Non-Profit OSL 3.0"
-        ],
         "osi": [
             "The Non-Profit Open Software License, Version 3.0"
+        ],
+        "scancodeLicensedb": [
+            "Non-Profit OSL 3.0",
+            "nosl-3.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "moderne-sala-2024",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-moderne-sala-2024",
+            "Moderne Source Available License 2024",
+            "Moderne Source Available License Agreement 2024"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

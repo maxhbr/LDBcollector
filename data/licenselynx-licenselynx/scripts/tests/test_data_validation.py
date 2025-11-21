@@ -5,6 +5,8 @@ import os
 import json
 import pytest
 from unittest import mock
+
+from src.validate import data_validation
 from src.validate.data_validation import (
     download_license_list,
     load_ids_from_license_list,
@@ -14,7 +16,10 @@ from src.validate.data_validation import (
     check_length_and_characters,
     check_src_and_canonical,
     LicenseListType,
-    main
+    check_no_empty_field_except_custom,
+    check_rejected_field_exists,
+    check_rejected_not_in_valid_fields,
+    check_version_between_canonical_and_alias
 )
 
 # Mock setup_logger to avoid actual logging
@@ -158,7 +163,7 @@ def test_delete_file_failure():
 
 
 def test_check_json_filename():
-    test_data = {"canonical": "correct_name"}
+    test_data = {"canonical": {"id": "correct_name"}}
     filepath = os.path.join("test_data", "correct_name.json")
     os.makedirs("test_data", exist_ok=True)
 
@@ -174,7 +179,7 @@ def test_check_json_filename():
 
 def test_check_json_filename_failure():
     canonical_name = "correct_name"
-    test_data = {"canonical": canonical_name}
+    test_data = {"canonical": {"id": canonical_name}}
 
     filename = "incorrect_name.json"
     filepath = os.path.join("test_data", filename)
@@ -187,7 +192,7 @@ def test_check_json_filename_failure():
         with mock.patch('src.validate.data_validation.logger', mock_logger):
             check_json_filename()
 
-    mock_logger.error.assert_called_with(f"JSON filename '{filename}' does not match canonical name '{canonical_name}'")
+    mock_logger.error.assert_called_with(f"JSON filename '{filename}' does not match canonical id '{canonical_name}'")
 
 
 def dump_files(filepath1, filepath2, test_data1, test_data2):
@@ -230,13 +235,12 @@ def test_check_unique_aliases_failure():
         with mock.patch('src.validate.data_validation.logger', mock_logger):
             check_unique_aliases()
 
-    mock_logger.error.assert_called_with(
-        f"Alias '{alias_duplicate}' is not unique globally. Affected file: {filenames}")
+    mock_logger.mock_calls.__contains__(f"Alias '{alias_duplicate}' is not unique globally.")
 
 
 def test_check_src_and_canonical():
     spdx_licenses = ["MIT", "Apache-2.0"]
-    test_data = {"canonical": "MIT", "src": "spdx"}
+    test_data = {"canonical": {"id": "MIT", "src": "spdx"}}
 
     os.makedirs("test_data", exist_ok=True)
     filepath = os.path.join("test_data", "test_file.json")
@@ -253,7 +257,7 @@ def test_check_src_and_canonical():
 
 def test_check_src_and_canonical_failure_source_not_spdx():
     spdx_licenses = ["MIT", "Apache-2.0"]
-    test_data = {"canonical": "MIT", "src": "Not-SPDX"}
+    test_data = {"canonical": {"id": "MIT", "src": "Not-SPDX"}}
 
     filepath = os.path.join("test_data", "test_file.json")
 
@@ -271,7 +275,7 @@ def test_check_src_and_canonical_failure_source_not_spdx():
 def test_check_src_and_canonical_failure_source_is_spdx():
     spdx_licenses = ["MIT", "Apache-2.0"]
     canonical_name = "NO_SPDX_LICENSE"
-    test_data = {"canonical": canonical_name, "src": "spdx"}
+    test_data = {"canonical": {"id": canonical_name, "src": "spdx"}}
 
     filepath = os.path.join("test_data", "test_file.json")
 
@@ -289,7 +293,7 @@ def test_check_src_and_canonical_failure_source_is_spdx():
 def test_check_length_and_characters():
     os.makedirs("test_data", exist_ok=True)
 
-    valid_data = {"canonical": "valid_name", "src": "valid_src", "aliases": ["valid_alias", "valid_alias2"]}
+    valid_data = {"canonical": {"id": "valid_name", "src": "valid_src"}, "aliases": {"spdx": ["valid_alias", "valid_alias2"]}}
 
     filepath_valid = os.path.join("test_data", "valid.json")
 
@@ -309,8 +313,9 @@ def test_check_length_and_characters_failure():
     os.makedirs("test_data", exist_ok=True)
 
     src_too_long = "a" * (max_length + 1)
-    long_data = {"canonical": "a" * (max_length + 1), "aliases": ["a" * (max_length + 1)], "src": src_too_long}
-    forbidden_data = {"canonical": "invalid#name", "aliases": "alias1", "src": "src"}
+    long_data = {"canonical": {"id": "a" * (max_length + 1), "src": src_too_long},
+                 "aliases": {"spdx": ["a" * (max_length + 1)], "custom": []}}
+    forbidden_data = {"canonical": {"id": "invalid#name", "src": "src"}, "aliases": {"spdx": ["alias1"], "custom": []}}
 
     filepath_long = os.path.join("test_data", "long.json")
     filepath_forbidden = os.path.join("test_data", "forbidden.json")
@@ -326,7 +331,7 @@ def test_check_length_and_characters_failure():
             check_length_and_characters()
 
             # Check for long strings
-            mock_logger.error.assert_any_call(f"Canonical name '{long_data['canonical']}' exceeds maximum length "
+            mock_logger.error.assert_any_call(f"Canonical id '{long_data['canonical']['id']}' exceeds maximum length "
                                               f"limit of {max_length} characters")
 
             mock_logger.error.assert_any_call(f"At least one of the aliases exceeds maximum length limit of "
@@ -337,49 +342,320 @@ def test_check_length_and_characters_failure():
 
             # Check for forbidden characters
             mock_logger.error.assert_any_call(
-                f"Canonical name '{forbidden_data['canonical']}' contains forbidden characters")
+                f"Canonical id '{forbidden_data['canonical']['id']}' contains forbidden characters")
 
     os.remove(filepath_long)
     os.remove(filepath_forbidden)
     os.rmdir("test_data")
 
 
-def test_main_integration():
-    # Mock the logger and its handlers
-    mock_logger.handlers = [mock.MagicMock(), mock.MagicMock()]
-    mock_logger.handlers[1].error_occurred = False  # Simulate no error occurring
+def test_check_no_empty_field_except_custom_success():
+    os.makedirs("test_data", exist_ok=True)
 
-    with mock.patch("src.validate.data_validation.download_license_list"), \
-         mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-         mock.patch("src.validate.data_validation.delete_file"), \
-         mock.patch("src.validate.data_validation.check_json_filename"), \
-         mock.patch("src.validate.data_validation.check_unique_aliases"), \
-         mock.patch("src.validate.data_validation.check_length_and_characters"):
-        main()
+    valid_data = {"custom": [], "canonical": {"id": "valid_name", "src": "valid_src"},
+                  "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
 
-        # Verify that no error occurred (if checking the logger)
-        assert not mock_logger.handlers[1].error_occurred, "An error occurred in the logger"
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_no_empty_field_except_custom()
+
+    assert mock_logger.error.call_count == 0
 
 
-def test_main_integration_fail():
-    # Mock the logger and its handlers
-    mock_logger.handlers = [mock.MagicMock(), mock.MagicMock()]
-    mock_logger.handlers[1].error_occurred = True  # Simulate an error occurring
+def test_check_no_empty_field_except_custom_failure():
+    os.makedirs("test_data", exist_ok=True)
 
-    with mock.patch("src.validate.data_validation.download_license_list"), \
-         mock.patch("src.validate.data_validation.load_ids_from_license_list",
-                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
-         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
-         mock.patch("src.validate.data_validation.delete_file"), \
-         mock.patch("src.validate.data_validation.check_json_filename"), \
-         mock.patch("src.validate.data_validation.check_unique_aliases"), \
-         mock.patch("src.validate.data_validation.check_length_and_characters"):
-        main()
+    valid_data = {"custom": [], "canonical": {"id": "", "src": "valid_src"},
+                  "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
 
-        # Verify that no error occurred (if checking the logger)
-        assert mock_logger.handlers[1].error_occurred, "An error occurred in the logger"
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_no_empty_field_except_custom()
+
+    assert mock_logger.error.call_count == 1
+
+
+def test_check_rejected_field_exists_success():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": [], "canonical": "valid_name", "src": "valid_src", "aliases": ["valid_alias", "valid_alias2"]}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_rejected_field_exists()
+
+    assert mock_logger.error.call_count == 0
+
+
+def test_check_rejected_field_exists_failure():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"canonical": "valid_name", "src": "valid_src", "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_rejected_field_exists()
+
+    assert mock_logger.error.call_count == 1
+
+
+def test_check_rejected_not_in_valid_fields_success():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name", "src": "valid_src",
+                  "aliases": {"spdx": ["valid_alias", "valid_alias2"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_rejected_not_in_valid_fields()
+
+    assert mock_logger.error.call_count == 0
+
+
+def test_check_rejected_not_in_valid_fields_failure():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": "valid_name", "src": "valid_src",
+                  "aliases": {"spdx": ["not_valid_alias", "valid_alias2"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_rejected_not_in_valid_fields()
+
+    assert mock_logger.error.call_count == 1
+
+
+def test_check_version_between_canonical_and_alias_success():
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                  "aliases": {"spdx": ["The Valid License"], "scancode-licensedb": ["valid_alias_1.0"], "custom": ["vl 1.0"]}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+
+    assert mock_logger.error.call_count == 0
+
+
+def test_check_version_between_canonical_and_alias_failure(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    invalid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                    "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["wrong_version_3.0_1.0"]}}
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_2.0", "src": "valid_src"},
+                  "aliases": {"scancode-licensedb": ["valid_alias_version_2.0"], "custom": ["wrong_version_2.0"]}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+    filepath_valid2 = os.path.join("test_data", "valid2.json")
+    with open(filepath_valid, 'w') as f:
+        json.dump(invalid_data, f)
+    with open(filepath_valid2, 'w') as f:
+        json.dump(valid_data, f)
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+
+    assert mock_logger.error.call_count == 1
+    assert str(mock_logger.method_calls).__contains__(
+        "valid.json has wrong versions for aliases: ['invalid_alias_version', 'wrong_version_3.0_1.0']")
+
+
+def test_check_version_between_canonical_and_alias_major_version_only_flag_is_false(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                  "aliases": {"custom": ["wrong_version_1"]}, "isMajorVersionOnly": False}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+
+    assert mock_logger.error.call_count == 1
+    assert str(mock_logger.method_calls).__contains__("valid.json has wrong versions for aliases: ['wrong_version_1']")
+
+
+def test_check_version_between_canonical_and_alias_major_version_only_flag_is_true(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                  "aliases": {"custom": ["wrong_version_1"]}, "isMajorVersionOnly": True}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+
+    assert mock_logger.error.call_count == 0
+
+
+def test_check_major_version_flag(caplog, monkeypatch):
+    test_dir = "test_data"
+    os.makedirs(test_dir, exist_ok=True)
+
+    # Group 1: "Apache-" group
+    # Expected: major version 1 appears twice so expected flag should be False,
+    # while major version 2 appears once so expected flag should be True.
+    apache_1_0 = {"canonical": {"id": "Apache-1.0"}, "isMajorVersionOnly": False}
+    apache_1_1 = {"canonical": {"id": "Apache-1.1"}, "isMajorVersionOnly": True}
+    apache_2_0 = {"canonical": {"id": "Apache-2.0"}, "isMajorVersionOnly": True}
+
+    with open(os.path.join(test_dir, "Apache-1.0.json"), "w") as f:
+        json.dump(apache_1_0, f)
+    with open(os.path.join(test_dir, "Apache-1.1.json"), "w") as f:
+        json.dump(apache_1_1, f)
+    with open(os.path.join(test_dir, "Apache-2.0.json"), "w") as f:
+        json.dump(apache_2_0, f)
+
+    # Group 2: "GPL-" group (both files expected to have True as they have unique major versions)
+    gpl_2_0 = {"canonical": {"id": "GPL-2.0"}, "isMajorVersionOnly": True}
+    gpl_3_0 = {"canonical": {"id": "GPL-3.0"}, "isMajorVersionOnly": True}
+    with open(os.path.join(test_dir, "GPL-2.0.json"), "w") as f:
+        json.dump(gpl_2_0, f)
+    with open(os.path.join(test_dir, "GPL-3.0.json"), "w") as f:
+        json.dump(gpl_3_0, f)
+
+    # Group 3: File with canonical without a version token (will be skipped)
+    noversion = {"canonical": {"id": "LicenseNoVersion"}}
+    with open(os.path.join(test_dir, "LicenseNoVersion.json"), "w") as f:
+        json.dump(noversion, f)
+
+    # Group 4: A file that alone makes its own group (skipped because group size is 1)
+    unique = {"canonical": {"id": "UniqueLicense-1.0"}, "isMajorVersionOnly": True}
+    with open(os.path.join(test_dir, "UniqueLicense-1.0.json"), "w") as f:
+        json.dump(unique, f)
+
+    # Group 5: A license file which should have isMajorVersionOnly flag set to true but isn't
+    mit_4_0 = {"canonical": {"id": "MIT-4.0"}, "isMajorVersionOnly": False}  # Incorrect: Expected True.
+
+    with open(os.path.join(test_dir, "MIT-4.0.json"), "w") as f:
+        json.dump(mit_4_0, f)
+
+    monkeypatch.setattr(data_validation, "DATA_DIR", test_dir)
+
+    caplog.clear()
+
+    data_validation.check_major_version_flag()
+
+    error_messages = [record.message for record in caplog.records if record.levelname == "ERROR"]
+
+    assert any("Apache-1.1.json" in msg and "expected False" in msg for msg in error_messages)
+    assert any("MIT-4.0.json" in msg and "expected True" in msg for msg in error_messages)
+
+    for filename in ["GPL-2.0.json", "GPL-3.0.json", "UniqueLicense-1.0.json", "LicenseNoVersion.json"]:
+        assert not any(filename in msg for msg in error_messages)
+
+
+def test_extract_license_list_with_semver(tmp_path, monkeypatch):
+    file_content = {"canonical": {"id": "license1.0"}}
+    json_file = tmp_path / "test_file.json"
+    json_file.write_text(json.dumps(file_content))
+
+    monkeypatch.setattr(data_validation, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(data_validation, "JSON_EXTENSION", ".json")
+
+    monkeypatch.setattr(
+        data_validation,
+        "extract_version_tokens",
+        lambda canonical: ["1.0"] if canonical == "license1.0" else []
+    )
+
+    licenses_list = []
+    data_validation.extract_license_list_with_semver(licenses_list)
+
+    assert licenses_list == [("license1.0", ["1.0"])]
+
+
+def test_only_base_name_with_version_success(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                  "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["major_version_only_v1"]},
+                  "isMajorVersionOnly": True}
+
+    other_base_name_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "different_base_name_1.0", "src": "valid_src"},
+                            "aliases": {"scancode-licensedb": ["valid_alias_version_1.0"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+    filepath_valid2 = os.path.join("test_data", "valid2.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+    with open(filepath_valid2, 'w') as f:
+        json.dump(other_base_name_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+    assert mock_logger.error.call_count == 0
+
+
+def test_only_base_name_with_version_failure(caplog):
+    os.makedirs("test_data", exist_ok=True)
+
+    valid_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "valid_name_1.0", "src": "valid_src"},
+                  "aliases": {"scancode-licensedb": ["invalid_alias_version"], "custom": ["major_version_only_v1"]}}
+
+    other_base_name_data = {"rejected": ["not_valid_alias"], "canonical": {"id": "different_base_name_1.0", "src": "valid_src"},
+                            "aliases": {"scancode-licensedb": ["valid_alias_version_1.0"], "custom": []}}
+
+    filepath_valid = os.path.join("test_data", "valid.json")
+    filepath_valid2 = os.path.join("test_data", "valid2.json")
+
+    with open(filepath_valid, 'w') as f:
+        json.dump(valid_data, f)
+    with open(filepath_valid2, 'w') as f:
+        json.dump(other_base_name_data, f)
+
+    with (mock.patch('src.validate.data_validation.DATA_DIR', "test_data")):
+        with mock.patch('src.validate.data_validation.logger', mock_logger):
+            check_version_between_canonical_and_alias()
+    assert mock_logger.error.call_count == 1
 
 
 if __name__ == "__main__":

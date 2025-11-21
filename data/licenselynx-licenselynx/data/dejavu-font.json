@@ -1,11 +1,15 @@
 {
-    "canonical": "dejavu-font",
+    "canonical": {
+        "id": "dejavu-font",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "DejaVu Font License",
             "LicenseRef-scancode-dejavu-font"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

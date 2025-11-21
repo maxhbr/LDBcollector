@@ -1,14 +1,19 @@
 {
-    "canonical": "Unicode-3.0",
+    "canonical": {
+        "id": "Unicode-3.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Unicode License v3"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "unicode-v3",
-            "LicenseRef-scancode-unicode-v3"
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-unicode-v3",
+            "unicode-v3"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

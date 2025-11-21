@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "man2html",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "man2html License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -1,13 +1,17 @@
 {
-    "canonical": "IJG-short",
+    "canonical": {
+        "id": "IJG-short",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Independent JPEG Group License - short"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "ijg-short"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

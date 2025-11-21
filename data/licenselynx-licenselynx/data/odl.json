@@ -1,11 +1,15 @@
 {
-    "canonical": "odl",
-    "aliases": {
-        "scancode-licensedb": [
-            "Open Directory License",
-            "LicenseRef-scancode-odl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "odl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-odl",
+            "Open Directory License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

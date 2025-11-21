@@ -1,15 +1,19 @@
 {
-    "canonical": "FreeBSD-DOC",
+    "canonical": {
+        "id": "FreeBSD-DOC",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "FreeBSD Documentation License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "freebsd-doc",
+        "scancodeLicensedb": [
             "FreeBSD Doc License",
+            "freebsd-doc",
             "LicenseRef-scancode-freebsd-doc"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

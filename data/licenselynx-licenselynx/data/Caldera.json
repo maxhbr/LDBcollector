@@ -1,13 +1,17 @@
 {
-    "canonical": "Caldera",
+    "canonical": {
+        "id": "Caldera",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Caldera License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "caldera"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "futo-sfl-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "FUTO Source First License 1.0",
+            "LicenseRef-scancode-futo-sfl-1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

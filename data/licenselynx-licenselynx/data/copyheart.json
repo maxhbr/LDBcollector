@@ -1,11 +1,15 @@
 {
-    "canonical": "copyheart",
+    "canonical": {
+        "id": "copyheart",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Copyheart",
             "LicenseRef-scancode-copyheart"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

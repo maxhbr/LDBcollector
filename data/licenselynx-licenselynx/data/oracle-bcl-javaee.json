@@ -1,11 +1,15 @@
 {
-    "canonical": "oracle-bcl-javaee",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle BCL for Java EE Technologies",
-            "LicenseRef-scancode-oracle-bcl-javaee"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "oracle-bcl-javaee",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oracle-bcl-javaee",
+            "Oracle BCL for Java EE Technologies"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

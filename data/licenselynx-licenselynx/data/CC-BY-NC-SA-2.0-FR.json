@@ -1,14 +1,19 @@
 {
-    "canonical": "CC-BY-NC-SA-2.0-FR",
+    "canonical": {
+        "id": "CC-BY-NC-SA-2.0-FR",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Creative Commons Attribution-NonCommercial-ShareAlike 2.0 France"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "cc-by-nc-sa-2.0-fr",
-            "CC-BY-NC-SA-2.0-FR"
+        "scancodeLicensedb": [
+            "CC-BY-NC-SA-2.0-FR",
+            "cc-by-nc-sa-2.0-fr"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

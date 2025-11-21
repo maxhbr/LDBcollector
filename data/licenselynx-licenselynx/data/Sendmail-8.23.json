@@ -1,13 +1,18 @@
 {
-    "canonical": "Sendmail-8.23",
+    "canonical": {
+        "id": "Sendmail-8.23",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sendmail License 8.23"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "sendmail-8.23"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

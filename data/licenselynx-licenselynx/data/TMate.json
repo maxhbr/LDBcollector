@@ -1,13 +1,17 @@
 {
-    "canonical": "TMate",
+    "canonical": {
+        "id": "TMate",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "TMate Open Source License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "tmate"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

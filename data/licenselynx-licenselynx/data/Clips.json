@@ -1,15 +1,19 @@
 {
-    "canonical": "Clips",
+    "canonical": {
+        "id": "Clips",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Clips License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-clips-2017",
+        "scancodeLicensedb": [
             "CLIPS License 2017",
-            "clips-2017"
+            "clips-2017",
+            "LicenseRef-scancode-clips-2017"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "hp-enterprise-eula",
+    "canonical": {
+        "id": "hp-enterprise-eula",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "HP Enterprise EULA",
             "LicenseRef-scancode-hp-enterprise-eula"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

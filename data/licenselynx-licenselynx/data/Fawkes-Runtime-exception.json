@@ -1,14 +1,18 @@
 {
-    "canonical": "Fawkes-Runtime-exception",
+    "canonical": {
+        "id": "Fawkes-Runtime-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Fawkes Runtime Exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "fawkes-runtime-exception",
-            "Fawkes Runtime Exception to GPL 2.0 or later"
+        "scancodeLicensedb": [
+            "Fawkes Runtime Exception to GPL 2.0 or later",
+            "fawkes-runtime-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

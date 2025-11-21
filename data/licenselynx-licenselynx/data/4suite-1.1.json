@@ -1,12 +1,17 @@
 {
-    "canonical": "4suite-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "4Suite License v1.1",
-            "4Suite 1.1",
-            "LicenseRef-scancode-4suite-1.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "4suite-1.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "4Suite 1.1",
+            "4Suite License v1.1",
+            "LicenseRef-scancode-4suite-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

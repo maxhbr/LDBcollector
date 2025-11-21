@@ -1,13 +1,17 @@
 {
-    "canonical": "App-s2p",
+    "canonical": {
+        "id": "App-s2p",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "App::s2p License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "app-s2p"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

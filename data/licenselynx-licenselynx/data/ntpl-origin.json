@@ -1,11 +1,15 @@
 {
-    "canonical": "ntpl-origin",
-    "aliases": {
-        "scancode-licensedb": [
-            "NTP Origin License",
-            "LicenseRef-scancode-ntpl-origin"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ntpl-origin",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ntpl-origin",
+            "NTP Origin License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

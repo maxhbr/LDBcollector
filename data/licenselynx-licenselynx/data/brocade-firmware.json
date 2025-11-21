@@ -1,11 +1,15 @@
 {
-    "canonical": "brocade-firmware",
+    "canonical": {
+        "id": "brocade-firmware",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Brocade Firmware License",
             "LicenseRef-scancode-brocade-firmware"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,30 @@
 {
-    "canonical": "CPL-1.0",
+    "canonical": {
+        "id": "CPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Common Public License 1.0"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "CPL 1.0",
-            "cpl-1.0"
+        "custom": [
+            "CPL"
         ],
         "osi": [
             "Common Public License, Version 1.0"
+        ],
+        "scancodeLicensedb": [
+            "CPL 1.0",
+            "cpl-1.0"
+        ],
+        "pypi": [
+            "Common Public License",
+            "License :: Common Public License",
+            "License :: OSI Approved :: Common Public License",
+            "OSI Approved :: Common Public License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

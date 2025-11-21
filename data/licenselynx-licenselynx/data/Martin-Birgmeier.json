@@ -1,15 +1,19 @@
 {
-    "canonical": "Martin-Birgmeier",
+    "canonical": {
+        "id": "Martin-Birgmeier",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Martin Birgmeier License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "martin-birgmeier",
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-martin-birgmeier",
             "Martin Bergmeier License",
-            "LicenseRef-scancode-martin-birgmeier"
+            "martin-birgmeier"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

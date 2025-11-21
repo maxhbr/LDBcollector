@@ -1,11 +1,15 @@
 {
-    "canonical": "intel-microcode",
+    "canonical": {
+        "id": "intel-microcode",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Intel Microcode License",
             "LicenseRef-scancode-intel-microcode"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

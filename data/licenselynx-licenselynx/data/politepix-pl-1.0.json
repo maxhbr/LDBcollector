@@ -1,11 +1,16 @@
 {
-    "canonical": "politepix-pl-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Politepix Public License 1.0",
-            "LicenseRef-scancode-politepix-pl-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "politepix-pl-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-politepix-pl-1.0",
+            "Politepix Public License 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

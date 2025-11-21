@@ -1,14 +1,18 @@
 {
-    "canonical": "Intel-ACPI",
+    "canonical": {
+        "id": "Intel-ACPI",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Intel ACPI Software License Agreement"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Intel ACPI SLA",
             "intel-acpi"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

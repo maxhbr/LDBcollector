@@ -1,12 +1,16 @@
 {
-    "canonical": "dhtmlab-public",
+    "canonical": {
+        "id": "dhtmlab-public",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "dhtmlab Public License",
             "Dynamic HTML Lab Public License",
             "LicenseRef-scancode-dhtmlab-public"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

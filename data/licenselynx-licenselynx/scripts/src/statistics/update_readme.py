@@ -11,7 +11,7 @@ def load_license_data(file_path: str) -> dict:
 
 
 def count_canonical_licenses(license_data: dict) -> Counter[str]:
-    return Counter(entry['canonical'] for entry in license_data.values())
+    return Counter(entry['id'] for entry in license_data.values())
 
 
 def prepare_top_licenses_text(canonical_counts: Counter[str]) -> list[tuple[str, int]]:
@@ -59,9 +59,11 @@ def update_readme(license_data_file_path: str, svg_file_path: str):
     license_data = load_license_data(license_data_file_path)
 
     # Count mappings and prepare SVG update
-    total_mappings = len(license_data)
+    risky_mappings = license_data['riskyMap']
+    canonical_mappings = license_data['stableMap']
+    total_mappings = len(risky_mappings) + len(canonical_mappings)
 
-    canonical_counts = count_canonical_licenses(license_data)
+    canonical_counts = count_canonical_licenses(risky_mappings) + count_canonical_licenses(canonical_mappings)
     top_licenses = prepare_top_licenses_text(canonical_counts)
 
     total_number_licenses = len(canonical_counts)

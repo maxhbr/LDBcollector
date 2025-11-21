@@ -1,12 +1,17 @@
 {
-    "canonical": "can-ogl-toronto-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "OGL Toronto 1.0",
-            "Open Government Licence Toronto 1.0",
-            "LicenseRef-scancode-can-ogl-toronto-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "can-ogl-toronto-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-can-ogl-toronto-1.0",
+            "OGL Toronto 1.0",
+            "Open Government Licence Toronto 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

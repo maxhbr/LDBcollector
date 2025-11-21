@@ -1,12 +1,16 @@
 {
-    "canonical": "utopia",
-    "aliases": {
-        "scancode-licensedb": [
-            "License to TeX Users Group for the Utopia Typeface",
-            "Utopia Typeface License",
-            "LicenseRef-scancode-utopia"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "utopia",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "License to TeX Users Group for the Utopia Typeface",
+            "LicenseRef-scancode-utopia",
+            "Utopia Typeface License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

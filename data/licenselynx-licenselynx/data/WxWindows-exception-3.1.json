@@ -1,14 +1,19 @@
 {
-    "canonical": "WxWindows-exception-3.1",
+    "canonical": {
+        "id": "WxWindows-exception-3.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "WxWindows Library Exception 3.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "wxwindows-exception-3.1",
-            "WxWindows Library Exception to GNU Licenses"
+        "scancodeLicensedb": [
+            "WxWindows Library Exception to GNU Licenses",
+            "wxwindows-exception-3.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

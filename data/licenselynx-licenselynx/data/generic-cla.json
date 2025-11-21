@@ -1,12 +1,16 @@
 {
-    "canonical": "generic-cla",
-    "aliases": {
-        "scancode-licensedb": [
-            "Prior Generic Contributor License Agreement",
-            "Generic CLA",
-            "LicenseRef-scancode-generic-cla"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "generic-cla",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Generic CLA",
+            "LicenseRef-scancode-generic-cla",
+            "Prior Generic Contributor License Agreement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

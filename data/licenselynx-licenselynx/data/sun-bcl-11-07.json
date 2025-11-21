@@ -1,11 +1,15 @@
 {
-    "canonical": "sun-bcl-11-07",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun BCL 11 plus 7",
-            "LicenseRef-scancode-sun-bcl-11-07"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-bcl-11-07",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-bcl-11-07",
+            "Sun BCL 11 plus 7"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

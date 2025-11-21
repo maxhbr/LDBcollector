@@ -1,15 +1,19 @@
 {
-    "canonical": "Brian-Gladman-2-Clause",
+    "canonical": {
+        "id": "Brian-Gladman-2-Clause",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Brian Gladman 2-Clause License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
+            "Brian Gladman License",
             "brian-gladman",
-            "LicenseRef-scancode-brian-gladman",
-            "Brian Gladman License"
+            "LicenseRef-scancode-brian-gladman"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

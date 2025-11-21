@@ -1,12 +1,17 @@
 {
-    "canonical": "pygres-2.2",
-    "aliases": {
-        "scancode-licensedb": [
-            "PyGres License v2.2",
-            "PyGres License 2.2",
-            "LicenseRef-scancode-pygres-2.2"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "pygres-2.2",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-pygres-2.2",
+            "PyGres License 2.2",
+            "PyGres License v2.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

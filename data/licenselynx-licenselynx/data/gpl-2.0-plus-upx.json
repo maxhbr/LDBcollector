@@ -1,10 +1,15 @@
 {
-    "canonical": "gpl-2.0-plus-upx",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 or later with UPX exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "gpl-2.0-plus-upx",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 or later with UPX exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

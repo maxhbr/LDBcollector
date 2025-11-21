@@ -1,11 +1,15 @@
 {
-    "canonical": "warranty-disclaimer",
+    "canonical": {
+        "id": "warranty-disclaimer",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Generic Bare Warranty Disclaimer",
             "LicenseRef-scancode-warranty-disclaimer"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "sonar-sal-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sonar-sal-1.0",
+            "Sonar Source-Available License v1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -1,12 +1,16 @@
 {
-    "canonical": "oasis-ipr-2013",
-    "aliases": {
-        "scancode-licensedb": [
-            "OASIS IPR 2013",
-            "OASIS Intellectual Property Rights (IPR) Policy 2013",
-            "LicenseRef-scancode-oasis-ipr-2013"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "oasis-ipr-2013",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oasis-ipr-2013",
+            "OASIS Intellectual Property Rights (IPR) Policy 2013",
+            "OASIS IPR 2013"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "quirksmode",
-    "aliases": {
-        "scancode-licensedb": [
-            "Quirksmode Copyright Notice",
-            "LicenseRef-scancode-quirksmode"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "quirksmode",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-quirksmode",
+            "Quirksmode Copyright Notice"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

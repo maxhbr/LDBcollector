@@ -1,12 +1,16 @@
 {
-    "canonical": "melange",
-    "aliases": {
-        "scancode-licensedb": [
-            "Melange Public License",
-            "Melange Chat Server/Client Public License",
-            "LicenseRef-scancode-melange"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "melange",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-melange",
+            "Melange Chat Server/Client Public License",
+            "Melange Public License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

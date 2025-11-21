@@ -1,11 +1,15 @@
 {
-    "canonical": "x11-quarterdeck",
-    "aliases": {
-        "scancode-licensedb": [
-            "X11-Style (Quarterdeck)",
-            "LicenseRef-scancode-x11-quarterdeck"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "x11-quarterdeck",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-x11-quarterdeck",
+            "X11-Style (Quarterdeck)"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

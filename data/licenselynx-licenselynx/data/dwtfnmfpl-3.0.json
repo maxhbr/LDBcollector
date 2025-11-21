@@ -1,11 +1,16 @@
 {
-    "canonical": "dwtfnmfpl-3.0",
+    "canonical": {
+        "id": "dwtfnmfpl-3.0",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "DWTFNMFPL-3.0",
             "LicenseRef-scancode-dwtfnmfpl-3.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

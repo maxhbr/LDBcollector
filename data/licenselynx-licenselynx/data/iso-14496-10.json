@@ -1,11 +1,15 @@
 {
-    "canonical": "iso-14496-10",
+    "canonical": {
+        "id": "iso-14496-10",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "ISO 14496-10",
             "LicenseRef-scancode-iso-14496-10"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,16 @@
 {
-    "canonical": "odc-1.0",
+    "canonical": {
+        "id": "odc-1.0",
+        "src": "scancodeLicensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
-            "Open Data Commons Attribution License",
-            "ODC-By"
+        "scancodeLicensedb": [
+            "ODC-By",
+            "Open Data Commons Attribution License"
         ],
         "custom": []
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

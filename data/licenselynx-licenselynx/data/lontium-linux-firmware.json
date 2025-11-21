@@ -1,11 +1,15 @@
 {
-    "canonical": "lontium-linux-firmware",
-    "aliases": {
-        "scancode-licensedb": [
-            "Lontium Linux Firmware License",
-            "LicenseRef-scancode-lontium-linux-firmware"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "lontium-linux-firmware",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-lontium-linux-firmware",
+            "Lontium Linux Firmware License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

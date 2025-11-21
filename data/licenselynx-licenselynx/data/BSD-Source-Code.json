@@ -1,13 +1,17 @@
 {
-    "canonical": "BSD-Source-Code",
+    "canonical": {
+        "id": "BSD-Source-Code",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD Source Code Attribution"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "bsd-source-code"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

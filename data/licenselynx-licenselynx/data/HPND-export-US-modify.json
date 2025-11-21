@@ -1,16 +1,20 @@
 {
-    "canonical": "HPND-export-US-modify",
+    "canonical": {
+        "id": "HPND-export-US-modify",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "HPND with US Government export control warning and modification rqmt"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-mit-with-modification-obligations",
-            "mit-with-modification-obligations",
+        "scancodeLicensedb": [
             "LicenseRef-scancode-mit-modification-obligations",
-            "MIT With Modification Obligations"
+            "LicenseRef-scancode-mit-with-modification-obligations",
+            "MIT With Modification Obligations",
+            "mit-with-modification-obligations"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

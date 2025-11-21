@@ -1,11 +1,15 @@
 {
-    "canonical": "bsd-top-gpl-addition",
+    "canonical": {
+        "id": "bsd-top-gpl-addition",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BSD 3-Clause with GPL reference",
             "LicenseRef-scancode-bsd-top-gpl-addition"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

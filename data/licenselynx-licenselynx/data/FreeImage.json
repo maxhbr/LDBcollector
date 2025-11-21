@@ -1,15 +1,19 @@
 {
-    "canonical": "FreeImage",
+    "canonical": {
+        "id": "FreeImage",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "FreeImage Public License v1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "FreeImage Public License 1.0",
-            "freeimage-1.0",
-            "FreeImage Public License Version 1.0"
+            "FreeImage Public License Version 1.0",
+            "freeimage-1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

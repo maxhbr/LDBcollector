@@ -1,13 +1,17 @@
 {
-    "canonical": "DocBook-Schema",
+    "canonical": {
+        "id": "DocBook-Schema",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "DocBook Schema License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "docbook-schema"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "make-human-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "MakeHuman License",
-            "LicenseRef-scancode-make-human-exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "make-human-exception",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-make-human-exception",
+            "MakeHuman License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "otn-early-adopter-development",
-    "aliases": {
-        "scancode-licensedb": [
-            "OTN Early Adopter Development License",
-            "OTN Early Adopter Development License Agreement",
-            "LicenseRef-scancode-otn-early-adopter-development"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "otn-early-adopter-development",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-otn-early-adopter-development",
+            "OTN Early Adopter Development License",
+            "OTN Early Adopter Development License Agreement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "bsd-unmodified",
+    "canonical": {
+        "id": "bsd-unmodified",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BSD Simplified with Unmodified requirement",
             "BSD Unmodified",
             "LicenseRef-scancode-bsd-unmodified"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,17 @@
 {
-    "canonical": "Caldera-no-preamble",
+    "canonical": {
+        "id": "Caldera-no-preamble",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Caldera License (without preamble)"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "caldera-no-preamble"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

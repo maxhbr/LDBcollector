@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "libticables2-exception-gpl-2.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "libticables2 exception to GPL 2.0",
+            "LicenseRef-scancode-libticables2-exception-gpl-2.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -1,12 +1,17 @@
 {
-    "canonical": "ocsl-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "OCSL 1.0",
-            "Oracle Community Source License v1.0",
-            "LicenseRef-scancode-ocsl-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ocsl-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ocsl-1.0",
+            "OCSL 1.0",
+            "Oracle Community Source License v1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

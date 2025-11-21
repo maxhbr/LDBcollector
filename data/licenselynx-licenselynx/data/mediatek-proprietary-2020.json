@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "mediatek-proprietary-2020",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mediatek-proprietary-2020",
+            "Mediatek Proprietary License 2020"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

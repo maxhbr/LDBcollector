@@ -1,15 +1,19 @@
 {
-    "canonical": "MIT-Wu",
+    "canonical": {
+        "id": "MIT-Wu",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MIT Tom Wu Variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "mit-addition",
+        "scancodeLicensedb": [
             "LicenseRef-scancode-mit-addition",
-            "MIT Addition License"
+            "MIT Addition License",
+            "mit-addition"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

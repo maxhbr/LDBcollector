@@ -1,11 +1,15 @@
 {
-    "canonical": "xxd",
-    "aliases": {
-        "scancode-licensedb": [
-            "xxd License",
-            "LicenseRef-scancode-xxd"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "xxd",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-xxd",
+            "xxd License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "broadcom-proprietary",
+    "canonical": {
+        "id": "broadcom-proprietary",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Broadcom Proprietary",
             "Broadcom Proprietary License",
             "LicenseRef-scancode-broadcom-proprietary"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

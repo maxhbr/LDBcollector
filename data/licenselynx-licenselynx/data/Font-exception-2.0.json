@@ -1,14 +1,19 @@
 {
-    "canonical": "Font-exception-2.0",
+    "canonical": {
+        "id": "Font-exception-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Font exception 2.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Font exception to GPL",
             "font-exception-gpl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

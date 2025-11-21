@@ -1,12 +1,17 @@
 {
-    "canonical": "nexb-ssla-1.1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "nexB SSLA 1.1.0",
-            "nexB Software Subscription License Agreement 1.1.0",
-            "LicenseRef-scancode-nexb-ssla-1.1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "nexb-ssla-1.1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-nexb-ssla-1.1.0",
+            "nexB Software Subscription License Agreement 1.1.0",
+            "nexB SSLA 1.1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

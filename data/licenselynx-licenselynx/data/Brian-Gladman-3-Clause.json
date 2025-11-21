@@ -1,15 +1,19 @@
 {
-    "canonical": "Brian-Gladman-3-Clause",
+    "canonical": {
+        "id": "Brian-Gladman-3-Clause",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Brian Gladman 3-Clause License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Brian Gladman Dual BSD-GPL",
             "brian-gladman-dual",
             "LicenseRef-scancode-brian-gladman-dual"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

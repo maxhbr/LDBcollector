@@ -1,14 +1,19 @@
 {
-    "canonical": "OPL-1.0",
+    "canonical": {
+        "id": "OPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open Public License v1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "open-public",
-            "Open Public License 1.0"
+        "scancodeLicensedb": [
+            "Open Public License 1.0",
+            "open-public"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

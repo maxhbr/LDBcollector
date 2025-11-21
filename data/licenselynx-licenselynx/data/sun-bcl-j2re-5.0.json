@@ -1,11 +1,16 @@
 {
-    "canonical": "sun-bcl-j2re-5.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun BCL J2RE 5.0",
-            "LicenseRef-scancode-sun-bcl-j2re-5.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-bcl-j2re-5.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-bcl-j2re-5.0",
+            "Sun BCL J2RE 5.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

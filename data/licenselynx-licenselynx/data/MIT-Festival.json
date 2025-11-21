@@ -1,15 +1,19 @@
 {
-    "canonical": "MIT-Festival",
+    "canonical": {
+        "id": "MIT-Festival",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MIT Festival Variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "FreeTTS License",
+        "scancodeLicensedb": [
             "freetts",
+            "FreeTTS License",
             "LicenseRef-scancode-freetts"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,17 @@
 {
-    "canonical": "TrustedQSL",
+    "canonical": {
+        "id": "TrustedQSL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "TrustedQSL License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "trustedqsl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

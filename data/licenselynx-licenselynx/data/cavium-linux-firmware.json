@@ -1,11 +1,15 @@
 {
-    "canonical": "cavium-linux-firmware",
+    "canonical": {
+        "id": "cavium-linux-firmware",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Cavium Linux Firmware License",
             "LicenseRef-scancode-cavium-linux-firmware"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

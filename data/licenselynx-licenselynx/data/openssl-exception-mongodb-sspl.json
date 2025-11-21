@@ -1,12 +1,16 @@
 {
-    "canonical": "openssl-exception-mongodb-sspl",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenSSL exception to the Server Side Public License",
-            "OpenSSL exception to SSPL",
-            "LicenseRef-scancode-openssl-exception-mongodb-sspl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "openssl-exception-mongodb-sspl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openssl-exception-mongodb-sspl",
+            "OpenSSL exception to SSPL",
+            "OpenSSL exception to the Server Side Public License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,16 +1,25 @@
 {
-    "canonical": "NGPL",
+    "canonical": {
+        "id": "NGPL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Nethack General Public License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "ngpl"
-        ],
         "osi": [
             "The Nethack General Public License"
+        ],
+        "scancodeLicensedb": [
+            "ngpl"
+        ],
+        "pypi": [
+            "License :: Nethack General Public License",
+            "License :: OSI Approved :: Nethack General Public License",
+            "OSI Approved :: Nethack General Public License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

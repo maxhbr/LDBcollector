@@ -1,11 +1,15 @@
 {
-    "canonical": "vince",
-    "aliases": {
-        "scancode-licensedb": [
-            "MIT (SEI)",
-            "LicenseRef-scancode-vince"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "vince",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-vince",
+            "MIT (SEI)"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

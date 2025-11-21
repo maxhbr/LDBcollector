@@ -1,13 +1,17 @@
 {
-    "canonical": "Cube",
+    "canonical": {
+        "id": "Cube",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Cube License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "cube"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

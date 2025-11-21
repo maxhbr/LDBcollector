@@ -1,11 +1,15 @@
 {
-    "canonical": "fraunhofer-iso-14496-10",
+    "canonical": {
+        "id": "fraunhofer-iso-14496-10",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Fraunhofer ISO 14496-10 License",
             "LicenseRef-scancode-fraunhofer-iso-14496-10"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

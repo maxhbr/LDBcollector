@@ -1,13 +1,17 @@
 {
-    "canonical": "gnuplot",
+    "canonical": {
+        "id": "gnuplot",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "gnuplot License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "gnuplot"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

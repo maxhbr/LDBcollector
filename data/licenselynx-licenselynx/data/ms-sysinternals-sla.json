@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-sysinternals-sla",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Sysinternals Software License Terms",
-            "MS Sysinternals SLA",
-            "LicenseRef-scancode-ms-sysinternals-sla"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-sysinternals-sla",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-sysinternals-sla",
+            "Microsoft Sysinternals Software License Terms",
+            "MS Sysinternals SLA"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

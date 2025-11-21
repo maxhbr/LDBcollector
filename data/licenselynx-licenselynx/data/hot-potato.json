@@ -1,12 +1,16 @@
 {
-    "canonical": "hot-potato",
+    "canonical": {
+        "id": "hot-potato",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Hot Potato",
             "Hot Potato License",
             "LicenseRef-scancode-hot-potato"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

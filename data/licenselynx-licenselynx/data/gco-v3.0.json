@@ -1,11 +1,16 @@
 {
-    "canonical": "gco-v3.0",
+    "canonical": {
+        "id": "gco-v3.0",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "GCO-v3.0",
             "LicenseRef-scancode-gco-v3.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,13 +1,17 @@
 {
-    "canonical": "Imlib2",
+    "canonical": {
+        "id": "Imlib2",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Imlib2 License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "imlib2"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

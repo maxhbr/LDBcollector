@@ -1,11 +1,16 @@
 {
-    "canonical": "cc-devnations-2.0",
+    "canonical": {
+        "id": "cc-devnations-2.0",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Developing Nations 2.0",
             "LicenseRef-scancode-cc-devnations-2.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

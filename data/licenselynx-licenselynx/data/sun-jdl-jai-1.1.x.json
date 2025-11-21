@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "sun-jdl-jai-1.1.x",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-jdl-jai-1.1.x",
+            "Sun Java Advanced Imaging Distribution License v1.1.X",
+            "Sun JDL-JAI 1.1.X"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

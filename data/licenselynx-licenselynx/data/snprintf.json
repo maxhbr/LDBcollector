@@ -1,14 +1,18 @@
 {
-    "canonical": "snprintf",
+    "canonical": {
+        "id": "snprintf",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "snprintf License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "snprintf",
-            "LicenseRef-scancode-snprintf"
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-snprintf",
+            "snprintf"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

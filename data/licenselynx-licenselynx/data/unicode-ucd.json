@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "unicode-ucd",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-unicode-ucd",
+            "Unicode Character Database (UCD) Terms of Use",
+            "Unicode UCD TOU"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

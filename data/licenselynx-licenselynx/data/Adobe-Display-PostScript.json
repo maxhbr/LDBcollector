@@ -1,15 +1,19 @@
 {
-    "canonical": "Adobe-Display-PostScript",
+    "canonical": {
+        "id": "Adobe-Display-PostScript",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Adobe Display PostScript License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "X11-Style (Adobe)",
+        "scancodeLicensedb": [
             "LicenseRef-scancode-x11-adobe",
-            "x11-adobe"
+            "x11-adobe",
+            "X11-Style (Adobe)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

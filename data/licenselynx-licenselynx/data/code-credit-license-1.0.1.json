@@ -1,11 +1,16 @@
 {
-    "canonical": "code-credit-license-1.0.1",
+    "canonical": {
+        "id": "code-credit-license-1.0.1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Code Credit License v1.0.1",
             "LicenseRef-scancode-code-credit-license-1.0.1"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

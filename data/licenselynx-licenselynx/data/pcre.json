@@ -1,11 +1,15 @@
 {
-    "canonical": "pcre",
-    "aliases": {
-        "scancode-licensedb": [
-            "PCRE License",
-            "LicenseRef-scancode-pcre"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "pcre",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-pcre",
+            "PCRE License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

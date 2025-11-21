@@ -1,11 +1,15 @@
 {
-    "canonical": "far-manager-exception",
+    "canonical": {
+        "id": "far-manager-exception",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Far Manager exception to BSD-3-Clause",
             "LicenseRef-scancode-far-manager-exception"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

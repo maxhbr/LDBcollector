@@ -1,14 +1,18 @@
 {
-    "canonical": "AMDPLPA",
+    "canonical": {
+        "id": "AMDPLPA",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "AMD's plpa_map.c License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "amdplpa",
-            "AMD PLPA License"
+        "scancodeLicensedb": [
+            "AMD PLPA License",
+            "amdplpa"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

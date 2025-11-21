@@ -1,12 +1,16 @@
 {
-    "canonical": "kde-accepted-lgpl",
+    "canonical": {
+        "id": "kde-accepted-lgpl",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "KDE Accepted LGPL",
             "LicenseRef-KDE-Accepted-LGPL",
             "LicenseRef-scancode-kde-accepted-lgpl"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

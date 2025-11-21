@@ -1,11 +1,15 @@
 {
-    "canonical": "ftpbean",
+    "canonical": {
+        "id": "ftpbean",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "FtpBean License",
             "LicenseRef-scancode-ftpbean"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

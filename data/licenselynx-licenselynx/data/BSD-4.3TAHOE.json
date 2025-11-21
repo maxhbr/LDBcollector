@@ -1,16 +1,20 @@
 {
-    "canonical": "BSD-4.3TAHOE",
+    "canonical": {
+        "id": "BSD-4.3TAHOE",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD 4.3 TAHOE License"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "bsla",
-            "BSLA",
-            "LicenseRef-scancode-bsla",
-            "Berkeley Software License Agreement"
-        ]
+        "custom": []
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [
+        "Berkeley Software License Agreement",
+        "BSLA",
+        "bsla",
+        "LicenseRef-scancode-bsla"
+    ],
+    "isMajorVersionOnly": true
 }

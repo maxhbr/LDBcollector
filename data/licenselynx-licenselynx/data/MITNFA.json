@@ -1,15 +1,19 @@
 {
-    "canonical": "MITNFA",
+    "canonical": {
+        "id": "MITNFA",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MIT +no-false-attribs license"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "mit-no-false-attribs",
+        "scancodeLicensedb": [
+            "MIT no false attribution License",
             "MIT with no false attribution License",
-            "MIT no false attribution License"
+            "mit-no-false-attribs"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

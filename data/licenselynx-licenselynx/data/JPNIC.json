@@ -1,14 +1,18 @@
 {
-    "canonical": "JPNIC",
+    "canonical": {
+        "id": "JPNIC",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Japan Network Information Center License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "JPNIC idnkit License",
             "jpnic-idnkit"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

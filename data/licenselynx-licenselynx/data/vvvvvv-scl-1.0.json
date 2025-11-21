@@ -1,11 +1,16 @@
 {
-    "canonical": "vvvvvv-scl-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "VVVVVV Source Code License v1.0",
-            "LicenseRef-scancode-vvvvvv-scl-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "vvvvvv-scl-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-vvvvvv-scl-1.0",
+            "VVVVVV Source Code License v1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

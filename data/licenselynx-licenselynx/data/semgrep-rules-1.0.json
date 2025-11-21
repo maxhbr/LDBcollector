@@ -1,11 +1,16 @@
 {
-    "canonical": "semgrep-rules-1.0",
+    "canonical": {
+        "id": "semgrep-rules-1.0",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "LicenseRef-scancode-semgrep-rules-1.0",
             "Semgrep Rules License v.1.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "ibm-sample",
+    "canonical": {
+        "id": "ibm-sample",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "IBM Sample License",
             "IBM Sample Program License",
             "LicenseRef-scancode-ibm-sample"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

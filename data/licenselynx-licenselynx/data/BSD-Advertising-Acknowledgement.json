@@ -1,13 +1,17 @@
 {
-    "canonical": "BSD-Advertising-Acknowledgement",
+    "canonical": {
+        "id": "BSD-Advertising-Acknowledgement",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD Advertising Acknowledgement License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "bsd-advertising-acknowledgement"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

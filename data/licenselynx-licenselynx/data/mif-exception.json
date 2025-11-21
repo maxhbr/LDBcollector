@@ -1,14 +1,18 @@
 {
-    "canonical": "mif-exception",
+    "canonical": {
+        "id": "mif-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Macros and Inline Functions Exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "mif-exception",
-            "Macros and Inline Functions Exception to GPL 2.0"
+        "scancodeLicensedb": [
+            "Macros and Inline Functions Exception to GPL 2.0",
+            "mif-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

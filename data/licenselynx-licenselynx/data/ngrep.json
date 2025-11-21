@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "ngrep",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "ngrep License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

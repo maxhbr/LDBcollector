@@ -1,11 +1,15 @@
 {
-    "canonical": "gdcl",
+    "canonical": {
+        "id": "gdcl",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "GDCL License",
             "LicenseRef-scancode-gdcl"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

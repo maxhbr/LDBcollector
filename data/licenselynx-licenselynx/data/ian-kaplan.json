@@ -1,11 +1,15 @@
 {
-    "canonical": "ian-kaplan",
+    "canonical": {
+        "id": "ian-kaplan",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Ian Kaplan License",
             "LicenseRef-scancode-ian-kaplan"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

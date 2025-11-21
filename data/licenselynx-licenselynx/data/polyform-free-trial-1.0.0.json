@@ -1,11 +1,16 @@
 {
-    "canonical": "polyform-free-trial-1.0.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Polyform Free Trial License 1.0.0",
-            "LicenseRef-scancode-polyform-free-trial-1.0.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "polyform-free-trial-1.0.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-polyform-free-trial-1.0.0",
+            "Polyform Free Trial License 1.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,14 +1,18 @@
 {
-    "canonical": "ANTLR-PD",
+    "canonical": {
+        "id": "ANTLR-PD",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "ANTLR Software Rights Notice"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "antlr-pd",
-            "ANTLR-PD"
+        "scancodeLicensedb": [
+            "ANTLR-PD",
+            "antlr-pd"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

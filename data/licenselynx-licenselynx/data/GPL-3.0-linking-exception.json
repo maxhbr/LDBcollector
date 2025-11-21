@@ -1,13 +1,18 @@
 {
-    "canonical": "GPL-3.0-linking-exception",
+    "canonical": {
+        "id": "GPL-3.0-linking-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GPL-3.0 Linking Exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "gpl-3.0-linking-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

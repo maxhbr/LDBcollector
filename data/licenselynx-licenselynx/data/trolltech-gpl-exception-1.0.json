@@ -1,12 +1,17 @@
 {
-    "canonical": "trolltech-gpl-exception-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Trolltech GPL Exception 1.0",
-            "Trolltech GPL Exception version v1.0",
-            "LicenseRef-scancode-trolltech-gpl-exception-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "trolltech-gpl-exception-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-trolltech-gpl-exception-1.0",
+            "Trolltech GPL Exception 1.0",
+            "Trolltech GPL Exception version v1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

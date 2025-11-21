@@ -1,13 +1,17 @@
 {
-    "canonical": "Gutmann",
+    "canonical": {
+        "id": "Gutmann",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Gutmann License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "gutmann"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

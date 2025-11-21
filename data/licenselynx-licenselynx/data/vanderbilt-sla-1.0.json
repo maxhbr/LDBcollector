@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "vanderbilt-sla-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-vanderbilt-sla-1.0",
+            "Vanderbilt Contribution and Software License Agreement v1.0",
+            "Vanderbilt SLA v1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

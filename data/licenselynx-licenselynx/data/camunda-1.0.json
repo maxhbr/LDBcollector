@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "camunda-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Camunda License 1.0",
+            "LicenseRef-scancode-camunda-1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

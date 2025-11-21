@@ -1,11 +1,15 @@
 {
-    "canonical": "maxmind-odl",
-    "aliases": {
-        "scancode-licensedb": [
-            "MaxMind Open Data License",
-            "LicenseRef-scancode-maxmind-odl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "maxmind-odl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-maxmind-odl",
+            "MaxMind Open Data License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

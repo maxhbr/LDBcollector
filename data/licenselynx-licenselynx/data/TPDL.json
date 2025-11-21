@@ -1,13 +1,17 @@
 {
-    "canonical": "TPDL",
+    "canonical": {
+        "id": "TPDL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Time::ParseDate License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "tpdl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,18 @@
 {
-    "canonical": "non-violent-7.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "NVPL 7.0",
-            "Non-Violent Public License v7",
-            "LicenseRef-scancode-non-violent-7.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "non-violent-7.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-non-violent-7.0",
+            "NVPL 7.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Non-Violent Public License v7"
+    ],
+    "isMajorVersionOnly": true
 }

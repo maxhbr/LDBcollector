@@ -1,12 +1,17 @@
 {
-    "canonical": "dpl-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "DSTC Public License (DPL) v1.1",
-            "DPL-1.1",
-            "LicenseRef-scancode-dpl-1.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "dpl-1.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "DPL-1.1",
+            "DSTC Public License (DPL) v1.1",
+            "LicenseRef-scancode-dpl-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

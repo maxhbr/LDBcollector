@@ -1,11 +1,15 @@
 {
-    "canonical": "mame",
-    "aliases": {
-        "scancode-licensedb": [
-            "MAME license",
-            "LicenseRef-scancode-mame"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mame",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mame",
+            "MAME license"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

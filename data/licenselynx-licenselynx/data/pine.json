@@ -1,11 +1,15 @@
 {
-    "canonical": "pine",
-    "aliases": {
-        "scancode-licensedb": [
-            "Pine License",
-            "LicenseRef-scancode-pine"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "pine",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-pine",
+            "Pine License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

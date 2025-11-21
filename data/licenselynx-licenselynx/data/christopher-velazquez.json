@@ -1,11 +1,15 @@
 {
-    "canonical": "christopher-velazquez",
+    "canonical": {
+        "id": "christopher-velazquez",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Christopher Velazquez License",
             "LicenseRef-scancode-christopher-velazquez"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

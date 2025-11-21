@@ -1,11 +1,15 @@
 {
-    "canonical": "generic-amiwm",
+    "canonical": {
+        "id": "generic-amiwm",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Generic-amiwm",
             "LicenseRef-scancode-generic-amiwm"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

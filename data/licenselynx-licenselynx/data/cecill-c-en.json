@@ -1,12 +1,16 @@
 {
-    "canonical": "cecill-c-en",
+    "canonical": {
+        "id": "cecill-c-en",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "CeCILL-C Free Software License Agreement English",
             "CeCILL-C License English",
             "LicenseRef-scancode-cecill-c-en"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

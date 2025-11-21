@@ -1,14 +1,18 @@
 {
-    "canonical": "TTYP0",
+    "canonical": {
+        "id": "TTYP0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "TTYP0 License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "ttyp0",
-            "LicenseRef-scancode-ttyp0"
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ttyp0",
+            "ttyp0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

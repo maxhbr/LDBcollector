@@ -1,12 +1,16 @@
 {
-    "canonical": "sun-jsr-spec-04-2006",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun JSR Specification License April 2006",
-            "Sun JSR Specification 04-2006",
-            "LicenseRef-scancode-sun-jsr-spec-04-2006"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-jsr-spec-04-2006",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-jsr-spec-04-2006",
+            "Sun JSR Specification 04-2006",
+            "Sun JSR Specification License April 2006"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

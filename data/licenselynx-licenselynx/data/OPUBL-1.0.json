@@ -1,15 +1,20 @@
 {
-    "canonical": "OPUBL-1.0",
+    "canonical": {
+        "id": "OPUBL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open Publication License v1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openpub",
             "Open Publication License 1.0",
-            "openpub",
-            "LicenseRef-scancode-openpub"
+            "openpub"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

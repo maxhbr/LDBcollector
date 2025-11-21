@@ -1,13 +1,18 @@
 {
-    "canonical": "kreative-relay-fonts-free-use-1.2f",
+    "canonical": {
+        "id": "kreative-relay-fonts-free-use-1.2f",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-kreative-relay-fonts-free-use-1.2f",
+        "custom": [],
+        "scancodeLicensedb": [
             "Kreative Software Relay Fonts Free Use 1.2f",
             "Kreative Software Relay Fonts Free Use License 1.2f",
-            "LicenseRef-scancode-kreative-relay-fonts-free-1.2f"
-        ],
-        "custom": []
+            "LicenseRef-scancode-kreative-relay-fonts-free-1.2f",
+            "LicenseRef-scancode-kreative-relay-fonts-free-use-1.2f"
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

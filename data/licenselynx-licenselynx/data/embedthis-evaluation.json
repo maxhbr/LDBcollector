@@ -1,11 +1,15 @@
 {
-    "canonical": "embedthis-evaluation",
+    "canonical": {
+        "id": "embedthis-evaluation",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "EmbedThis Evaluation License",
             "LicenseRef-scancode-embedthis-evaluation"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

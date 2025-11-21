@@ -1,11 +1,15 @@
 {
-    "canonical": "oracle-code-samples-bsd",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle Code Samples BSD-Style License",
-            "LicenseRef-scancode-oracle-code-samples-bsd"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "oracle-code-samples-bsd",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oracle-code-samples-bsd",
+            "Oracle Code Samples BSD-Style License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

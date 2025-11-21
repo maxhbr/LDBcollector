@@ -1,11 +1,16 @@
 {
-    "canonical": "mvt-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "MVT License 1.1",
-            "LicenseRef-scancode-mvt-1.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mvt-1.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mvt-1.1",
+            "MVT License 1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "qualcomm-turing",
-    "aliases": {
-        "scancode-licensedb": [
-            "Qualcomm Turing License",
-            "LicenseRef-scancode-qualcomm-turing"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "qualcomm-turing",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-qualcomm-turing",
+            "Qualcomm Turing License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

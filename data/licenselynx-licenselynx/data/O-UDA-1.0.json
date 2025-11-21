@@ -1,14 +1,19 @@
 {
-    "canonical": "O-UDA-1.0",
+    "canonical": {
+        "id": "O-UDA-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open Use of Data Agreement v1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "o-uda-1.0",
-            "O-UDA-1.0"
+        "scancodeLicensedb": [
+            "O-UDA-1.0",
+            "o-uda-1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "la-opt-nxp-v51-2023",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LA_OPT_NXP_Software_License v51 November 2023",
+            "LicenseRef-scancode-la-opt-nxp-v51-2023"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

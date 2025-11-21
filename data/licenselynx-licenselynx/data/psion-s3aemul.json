@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "psion-s3aemul",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-psion-s3aemul",
+            "Psion User LIcence for S3AEMUL"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

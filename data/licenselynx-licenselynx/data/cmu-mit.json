@@ -1,12 +1,16 @@
 {
-    "canonical": "cmu-mit",
+    "canonical": {
+        "id": "cmu-mit",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Carnegie Mellon UC Regents MIT-style License",
             "CMU MIT-style",
             "LicenseRef-scancode-cmu-mit"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

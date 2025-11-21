@@ -1,14 +1,18 @@
 {
-    "canonical": "ANTLR-PD-fallback",
+    "canonical": {
+        "id": "ANTLR-PD-fallback",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "ANTLR Software Rights Notice with license fallback"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "ANTLR-PD with fallback",
             "antlr-pd-fallback"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "google-apis-tos-2021",
+    "canonical": {
+        "id": "google-apis-tos-2021",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Google APIs Terms of Service 2021",
             "Google APIs TOS 2021",
             "LicenseRef-scancode-google-apis-tos-2021"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

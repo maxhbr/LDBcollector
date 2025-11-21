@@ -1,0 +1,18 @@
+{
+    "canonical": {
+        "id": "CryptoSwift",
+        "src": "spdx"
+    },
+    "aliases": {
+        "custom": [],
+        "spdx": [
+            "CryptoSwift License"
+        ],
+        "scancodeLicensedb": [
+            "cryptoswift",
+            "LicenseRef-scancode-cryptoswift"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

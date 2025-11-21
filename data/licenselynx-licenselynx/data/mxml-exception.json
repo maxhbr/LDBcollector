@@ -1,18 +1,22 @@
 {
-    "canonical": "mxml-exception",
+    "canonical": {
+        "id": "mxml-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "mxml Exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
+            "Apache Patent Provision Exception Deprecated",
             "Apache Patent Provision Exception Terms",
             "apache-patent-exception",
-            "LicenseRef-scancode-apache-patent-exception",
             "apache-patent-provision-exception",
-            "Apache Patent Provision Exception Deprecated",
+            "LicenseRef-scancode-apache-patent-exception",
             "LicenseRef-scancode-apache-patent-provision-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

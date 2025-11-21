@@ -1,11 +1,15 @@
 {
-    "canonical": "jpegxr",
+    "canonical": {
+        "id": "jpegxr",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "JPEG XR License",
             "LicenseRef-scancode-jpegxr"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

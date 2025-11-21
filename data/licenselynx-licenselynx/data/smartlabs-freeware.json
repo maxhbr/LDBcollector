@@ -1,11 +1,15 @@
 {
-    "canonical": "smartlabs-freeware",
-    "aliases": {
-        "scancode-licensedb": [
-            "SmartLabs Freeware License",
-            "LicenseRef-scancode-smartlabs-freeware"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "smartlabs-freeware",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-smartlabs-freeware",
+            "SmartLabs Freeware License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

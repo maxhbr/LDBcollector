@@ -1,15 +1,19 @@
 {
-    "canonical": "IEC-Code-Components-EULA",
+    "canonical": {
+        "id": "IEC-Code-Components-EULA",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "IEC    Code Components End-user licence agreement"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "IEC CC EULA",
-            "iec-code-components-eula",
-            "IEC Code Components End-user licence agreement"
+            "IEC Code Components End-user licence agreement",
+            "iec-code-components-eula"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

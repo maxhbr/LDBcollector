@@ -1,12 +1,17 @@
 {
-    "canonical": "apple-academic-lisa-os-3.1",
+    "canonical": {
+        "id": "apple-academic-lisa-os-3.1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Apple Academic License Agreement Lisa OS v3.1",
             "Apple Academic Lisa OS v3.1",
             "LicenseRef-scancode-apple-academic-lisa-os-3.1"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "joinbase-cela-2022",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "JoinBase Community Edition License 2022",
+            "JoinBase Community Edition License Agreement 2022",
+            "LicenseRef-scancode-joinbase-cela-2022"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

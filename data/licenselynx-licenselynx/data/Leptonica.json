@@ -1,13 +1,17 @@
 {
-    "canonical": "Leptonica",
+    "canonical": {
+        "id": "Leptonica",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Leptonica License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "leptonica"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

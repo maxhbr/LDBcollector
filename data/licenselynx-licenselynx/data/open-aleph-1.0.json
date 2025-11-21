@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "open-aleph-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-open-aleph-1.0",
+            "Open Aleph License 1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

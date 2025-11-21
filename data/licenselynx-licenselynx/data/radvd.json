@@ -1,14 +1,18 @@
 {
-    "canonical": "radvd",
+    "canonical": {
+        "id": "radvd",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "radvd License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "LicenseRef-scancode-radvd",
             "radvd"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

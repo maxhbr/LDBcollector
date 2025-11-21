@@ -1,16 +1,25 @@
 {
-    "canonical": "PostgreSQL",
+    "canonical": {
+        "id": "PostgreSQL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "PostgreSQL License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "postgresql"
-        ],
         "osi": [
             "The PostgreSQL Licence"
+        ],
+        "scancodeLicensedb": [
+            "postgresql"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: PostgreSQL License",
+            "License :: PostgreSQL License",
+            "OSI Approved :: PostgreSQL License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

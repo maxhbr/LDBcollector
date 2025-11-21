@@ -1,12 +1,17 @@
 {
-    "canonical": "tpl-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "TPL 2.0",
-            "Terracotta Public License 2.0",
-            "LicenseRef-scancode-tpl-2.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "tpl-2.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tpl-2.0",
+            "Terracotta Public License 2.0",
+            "TPL 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

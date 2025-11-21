@@ -1,12 +1,18 @@
 {
-    "canonical": "mulanpsl-1.0-en",
-    "aliases": {
-        "scancode-licensedb": [
-            "Mulan PSL v1.0 (En)",
-            "Mulan Permissive Software License, Version 1 (English)",
-            "LicenseRef-scancode-mulanpsl-1.0-en"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mulanpsl-1.0-en",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mulanpsl-1.0-en",
+            "Mulan PSL v1.0 (En)"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "Mulan Permissive Software License, Version 1 (English)"
+    ],
+    "isMajorVersionOnly": true
 }

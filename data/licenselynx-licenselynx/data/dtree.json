@@ -1,11 +1,15 @@
 {
-    "canonical": "dtree",
+    "canonical": {
+        "id": "dtree",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Dtree License",
             "LicenseRef-scancode-dtree"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

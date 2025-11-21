@@ -1,12 +1,17 @@
 {
-    "canonical": "ossn-3.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "OSSN-3.0",
-            "Open Source Social Network License v3.0",
-            "LicenseRef-scancode-ossn-3.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ossn-3.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ossn-3.0",
+            "Open Source Social Network License v3.0",
+            "OSSN-3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

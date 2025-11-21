@@ -1,15 +1,20 @@
 {
-    "canonical": "NICTA-1.0",
+    "canonical": {
+        "id": "NICTA-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "NICTA Public Software License, Version 1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "LicenseRef-scancode-nicta-psl",
-            "nicta-psl",
-            "NICTA Public Software Licence 1.0"
+            "NICTA Public Software Licence 1.0",
+            "nicta-psl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

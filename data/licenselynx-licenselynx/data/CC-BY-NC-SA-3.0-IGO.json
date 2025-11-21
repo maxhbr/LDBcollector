@@ -1,14 +1,19 @@
 {
-    "canonical": "CC-BY-NC-SA-3.0-IGO",
+    "canonical": {
+        "id": "CC-BY-NC-SA-3.0-IGO",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Creative Commons Attribution Non Commercial Share Alike 3.0 IGO"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "cc-by-nc-sa-3.0-igo",
-            "CC-BY-NC-SA-3.0-IGO"
+        "scancodeLicensedb": [
+            "CC-BY-NC-SA-3.0-IGO",
+            "cc-by-nc-sa-3.0-igo"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

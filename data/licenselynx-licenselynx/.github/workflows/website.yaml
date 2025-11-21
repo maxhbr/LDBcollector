@@ -5,11 +5,13 @@ on:
       - main
     paths:
       - website/**
+      - '!website/badges/**'
   pull_request:
     branches:
       - main
     paths:
       - website/**
+      - '!website/badges/**'
 permissions:
   contents: read
   pages: write
@@ -30,7 +32,6 @@ jobs:
           python3 scripts/src/load/merge_data.py -o ./website/merged_data.json
           cd website
           mkdocs build -d public
-          python3 ../scripts/src/web_api/generate_api_files.py -i ./merged_data.json --dir ./public/api/license
           mkdir -p ./public/json/latest/
           mv ./merged_data.json ./public/json/latest/mapping.json
 
@@ -38,7 +39,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./website/public
-          
+
 
   deploy:
     environment:
@@ -46,6 +47,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

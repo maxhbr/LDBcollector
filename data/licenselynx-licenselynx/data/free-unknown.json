@@ -1,12 +1,16 @@
 {
-    "canonical": "free-unknown",
-    "aliases": {
-        "scancode-licensedb": [
-            "Free unknown license detected but not recognized",
-            "Free unknown",
-            "LicenseRef-scancode-free-unknown"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "free-unknown",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Free unknown",
+            "Free unknown license detected but not recognized",
+            "LicenseRef-scancode-free-unknown"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

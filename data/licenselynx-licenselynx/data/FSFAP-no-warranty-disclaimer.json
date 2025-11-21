@@ -1,13 +1,17 @@
 {
-    "canonical": "FSFAP-no-warranty-disclaimer",
+    "canonical": {
+        "id": "FSFAP-no-warranty-disclaimer",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "FSF All Permissive License (without Warranty)"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "fsfap-no-warranty-disclaimer"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

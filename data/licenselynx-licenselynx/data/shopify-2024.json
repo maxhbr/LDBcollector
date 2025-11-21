@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "shopify-2024",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-shopify-2024",
+            "Shopify License 2024"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -1,12 +1,17 @@
 {
-    "canonical": "sun-ssscfr-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun Solaris Source Code (Foundation Release) License 1.1",
-            "Sun Solaris Source Code License 1.1",
-            "LicenseRef-scancode-sun-ssscfr-1.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-ssscfr-1.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-ssscfr-1.1",
+            "Sun Solaris Source Code (Foundation Release) License 1.1",
+            "Sun Solaris Source Code License 1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

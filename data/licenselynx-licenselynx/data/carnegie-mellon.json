@@ -1,11 +1,15 @@
 {
-    "canonical": "carnegie-mellon",
+    "canonical": {
+        "id": "carnegie-mellon",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Carnegie Mellon License",
             "LicenseRef-scancode-carnegie-mellon"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

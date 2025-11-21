@@ -1,12 +1,16 @@
 {
-    "canonical": "us-govt-unlimited-rights",
-    "aliases": {
-        "scancode-licensedb": [
-            "US Government Grant of Unlimited Rights",
-            "US Government Unlimited Rights",
-            "LicenseRef-scancode-us-govt-unlimited-rights"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "us-govt-unlimited-rights",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-us-govt-unlimited-rights",
+            "US Government Grant of Unlimited Rights",
+            "US Government Unlimited Rights"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,19 @@
 {
-    "canonical": "MIT-advertising",
+    "canonical": {
+        "id": "MIT-advertising",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Enlightenment License (e16)"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "enlightenment",
+        "scancodeLicensedb": [
             "EFL MIT-Style License",
+            "enlightenment",
             "Enlightenment (EFL) MIT-Style License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

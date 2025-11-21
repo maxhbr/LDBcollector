@@ -1,17 +1,22 @@
 {
-    "canonical": "Artistic-2.0",
+    "canonical": {
+        "id": "Artistic-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Artistic License 2.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "artistic-2.0",
-            "Artistic 2.0"
-        ],
         "osi": [
             "Artistic License, Version 2.0"
+        ],
+        "scancodeLicensedb": [
+            "Artistic 2.0",
+            "artistic-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

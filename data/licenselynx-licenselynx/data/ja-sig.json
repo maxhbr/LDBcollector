@@ -1,11 +1,15 @@
 {
-    "canonical": "ja-sig",
+    "canonical": {
+        "id": "ja-sig",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "JA-SiG License",
             "LicenseRef-scancode-ja-sig"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

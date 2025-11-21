@@ -1,13 +1,18 @@
 {
-    "canonical": "copyleft-next-0.3.1",
+    "canonical": {
+        "id": "copyleft-next-0.3.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "copyleft-next 0.3.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "copyleft-next-0.3.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

@@ -1,18 +1,23 @@
 {
-    "canonical": "AFL-3.0",
+    "canonical": {
+        "id": "AFL-3.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Academic Free License v3.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "Academic Free License 3.0",
-            "afl-3.0",
-            "AFL 3.0"
-        ],
         "osi": [
             "Academic Free License, Version 3.0"
+        ],
+        "scancodeLicensedb": [
+            "Academic Free License 3.0",
+            "AFL 3.0",
+            "afl-3.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

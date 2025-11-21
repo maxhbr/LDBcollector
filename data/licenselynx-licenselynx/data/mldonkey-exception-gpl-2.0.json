@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "mldonkey-exception-gpl-2.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mldonkey-exception-gpl-2.0",
+            "MLDonkey Exception to GPL 2.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

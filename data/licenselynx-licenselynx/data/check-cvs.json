@@ -1,13 +1,17 @@
 {
-    "canonical": "check-cvs",
+    "canonical": {
+        "id": "check-cvs",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "check-cvs License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "check-cvs"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

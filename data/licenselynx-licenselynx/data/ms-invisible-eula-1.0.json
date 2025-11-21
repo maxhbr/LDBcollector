@@ -1,12 +1,17 @@
 {
-    "canonical": "ms-invisible-eula-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Invisible Computing EULA 1.0",
-            "MS Invisible Computing EULA 1.0",
-            "LicenseRef-scancode-ms-invisible-eula-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-invisible-eula-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-invisible-eula-1.0",
+            "Microsoft Invisible Computing EULA 1.0",
+            "MS Invisible Computing EULA 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

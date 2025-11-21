@@ -1,17 +1,26 @@
 {
-    "canonical": "Sleepycat",
+    "canonical": {
+        "id": "Sleepycat",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sleepycat License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "osi": [
+            "The Sleepycat License"
+        ],
+        "scancodeLicensedb": [
             "sleepycat",
             "Sleepycat License (Berkeley Database License)"
         ],
-        "osi": [
-            "The Sleepycat License"
+        "pypi": [
+            "License :: OSI Approved :: Sleepycat License",
+            "License :: Sleepycat License",
+            "OSI Approved :: Sleepycat License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

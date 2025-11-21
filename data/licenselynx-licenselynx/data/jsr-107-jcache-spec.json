@@ -1,11 +1,15 @@
 {
-    "canonical": "jsr-107-jcache-spec",
+    "canonical": {
+        "id": "jsr-107-jcache-spec",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "JSR-107 JCache Specification License",
             "LicenseRef-scancode-jsr-107-jcache-spec"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

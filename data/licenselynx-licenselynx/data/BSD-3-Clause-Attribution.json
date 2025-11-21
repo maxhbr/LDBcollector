@@ -1,14 +1,18 @@
 {
-    "canonical": "BSD-3-Clause-Attribution",
+    "canonical": {
+        "id": "BSD-3-Clause-Attribution",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD with attribution"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "BSD Acknowledgment License",
             "bsd-ack"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

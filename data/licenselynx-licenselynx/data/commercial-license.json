@@ -1,12 +1,16 @@
 {
-    "canonical": "commercial-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-Commercial",
-            "Commercial License",
-            "LicenseRef-scancode-commercial-license"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "commercial-license",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Commercial License",
+            "LicenseRef-Commercial",
+            "LicenseRef-scancode-commercial-license"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

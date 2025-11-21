@@ -1,14 +1,19 @@
 {
-    "canonical": "CC-BY-3.0-AT",
+    "canonical": {
+        "id": "CC-BY-3.0-AT",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Creative Commons Attribution 3.0 Austria"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "cc-by-3.0-at",
-            "CC-BY-3.0-AT"
+        "scancodeLicensedb": [
+            "CC-BY-3.0-AT",
+            "cc-by-3.0-at"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

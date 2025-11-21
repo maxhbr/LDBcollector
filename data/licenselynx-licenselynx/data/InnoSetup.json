@@ -1,14 +1,18 @@
 {
-    "canonical": "InnoSetup",
+    "canonical": {
+        "id": "InnoSetup",
+        "src": "spdx"
+    },
     "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-inno-setup",
-            "inno-setup"
-        ],
         "custom": [],
         "spdx": [
             "Inno Setup License"
+        ],
+        "scancodeLicensedb": [
+            "inno-setup",
+            "LicenseRef-scancode-inno-setup"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

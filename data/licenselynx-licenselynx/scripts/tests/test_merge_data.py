@@ -12,8 +12,9 @@ from src.load.merge_data import read_data, write_data, main
 @pytest.fixture
 def data_dir(tmpdir):
     data = {
-        "license1.json": {"canonical": "license1", "aliases": {"SPDX": ["lic1"], "custom": ["lic1_custom"]}},
-        "license2.json": {"canonical": "license2", "aliases": {"SPDX": ["lic2", "lic2_alt"]}}
+        "license1.json": {"canonical": {"id": "license1"}, "aliases": {"SPDX": ["lic1"], "custom": ["lic1_custom"]},
+                          "risky": ["lic1_risky"]},
+        "license2.json": {"canonical": {"id": "license2"}, "aliases": {"SPDX": ["lic2", "lic2_alt"]}}
     }
     for filename, content in data.items():
         filepath = tmpdir.join(filename)
@@ -25,14 +26,21 @@ def data_dir(tmpdir):
 def test_read_data(data_dir):
     data = read_data(str(data_dir))
     print(data)
-    assert len(data) == 6
-    assert "license1" in data
-    assert "lic1" in data
-    assert "lic1_custom" in data
+    assert len(data) == 2
+    stable_map = "stableMap"
+    assert len(data[stable_map]) == 6
+    risky_map = "riskyMap"
+    assert len(data[risky_map]) == 1
 
-    assert "license2" in data
-    assert "lic2" in data
-    assert "lic2_alt" in data
+    assert "license1" in data[stable_map]
+    assert "lic1" in data[stable_map]
+    assert "lic1_custom" in data[stable_map]
+
+    assert "license2" in data[stable_map]
+    assert "lic2" in data[stable_map]
+    assert "lic2_alt" in data[stable_map]
+
+    assert "lic1_risky" in data[risky_map]
 
 
 def test_write_data(tmpdir):
@@ -51,21 +59,28 @@ def temp_data_dir():
     with tempfile.TemporaryDirectory() as temp_dir:
         # Create sample JSON files
         license_1 = {
-            "canonical": "MIT",
+            "canonical": {
+                "id": "MIT",
+                "src": "spdx"
+            },
             "aliases": {
                 "source1": ["MIT License", "MIT Open Source License"],
                 "source2": ["MIT"]
             },
-            "src": "spdx"
         }
 
         license_2 = {
-            "canonical": "GPL",
+            "canonical": {
+                "id": "GPL",
+                "src": "spdx",
+            },
             "aliases": {
                 "source1": ["GNU General Public License", "GPL v3"],
                 "source2": ["GPLv3"]
             },
-            "src": "spdx"
+            "risky": [
+                "risky_gpl_3"
+            ]
         }
 
         # Write the JSON data to file in the temp directory
@@ -103,34 +118,42 @@ def test_main_integration(temp_data_dir, temp_output_file, monkeypatch):
 
     # Expected alias mappings
     expected_output = {
-        "MIT": {
-            "canonical": "MIT",
-            "src": "spdx"
+        "stableMap": {
+            "MIT": {
+                "id": "MIT",
+                "src": "spdx"
+            },
+            "MIT License": {
+                "id": "MIT",
+                "src": "spdx"
+            },
+            "MIT Open Source License": {
+                "id": "MIT",
+                "src": "spdx"
+            },
+            "GNU General Public License": {
+                "id": "GPL",
+                "src": "spdx"
+            },
+            "GPL v3": {
+                "id": "GPL",
+                "src": "spdx"
+            },
+            "GPLv3": {
+                "id": "GPL",
+                "src": "spdx"
+            },
+            "GPL": {
+                "id": "GPL",
+                "src": "spdx"
+            },
         },
-        "MIT License": {
-            "canonical": "MIT",
-            "src": "spdx"
-        },
-        "MIT Open Source License": {
-            "canonical": "MIT",
-            "src": "spdx"
-        },
-        "GNU General Public License": {
-            "canonical": "GPL",
-            "src": "spdx"
-        },
-        "GPL v3": {
-            "canonical": "GPL",
-            "src": "spdx"
-        },
-        "GPLv3": {
-            "canonical": "GPL",
-            "src": "spdx"
-        },
-        "GPL": {
-            "canonical": "GPL",
-            "src": "spdx"
-        },
+        'riskyMap': {
+            "risky_gpl_3": {
+                "id": "GPL",
+                "src": "spdx"
+            }
+        }
     }
 
     assert output_data == expected_output

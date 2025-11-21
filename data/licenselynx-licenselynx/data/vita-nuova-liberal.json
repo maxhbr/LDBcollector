@@ -1,11 +1,15 @@
 {
-    "canonical": "vita-nuova-liberal",
-    "aliases": {
-        "scancode-licensedb": [
-            "Vita Nuova Liberal Source License",
-            "LicenseRef-scancode-vita-nuova-liberal"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "vita-nuova-liberal",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-vita-nuova-liberal",
+            "Vita Nuova Liberal Source License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

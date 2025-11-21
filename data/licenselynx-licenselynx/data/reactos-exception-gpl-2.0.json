@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "reactos-exception-gpl-2.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-reactos-exception-gpl-2.0",
+            "ReactOS Exception to GPL 2.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

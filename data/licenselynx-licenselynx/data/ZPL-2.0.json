@@ -1,17 +1,22 @@
 {
-    "canonical": "ZPL-2.0",
+    "canonical": {
+        "id": "ZPL-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Zope Public License 2.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "zpl-2.0",
-            "ZPL 2.0"
-        ],
         "osi": [
             "The Zope Public License, Version 2.0"
+        ],
+        "scancodeLicensedb": [
+            "ZPL 2.0",
+            "zpl-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

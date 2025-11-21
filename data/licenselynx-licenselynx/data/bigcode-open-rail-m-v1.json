@@ -1,11 +1,15 @@
 {
-    "canonical": "bigcode-open-rail-m-v1",
+    "canonical": {
+        "id": "bigcode-open-rail-m-v1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BigCode Open RAIL-M v1 License Agreement",
             "LicenseRef-scancode-bigcode-open-rail-m-v1"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

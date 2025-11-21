@@ -1,15 +1,19 @@
 {
-    "canonical": "AMD-newlib",
+    "canonical": {
+        "id": "AMD-newlib",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "AMD newlib License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-amd-historical",
+        "scancodeLicensedb": [
+            "AMD Historical License",
             "amd-historical",
-            "AMD Historical License"
+            "LicenseRef-scancode-amd-historical"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

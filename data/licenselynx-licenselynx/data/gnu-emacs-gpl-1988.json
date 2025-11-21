@@ -1,11 +1,15 @@
 {
-    "canonical": "gnu-emacs-gpl-1988",
+    "canonical": {
+        "id": "gnu-emacs-gpl-1988",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "GNU emacs General Public License 1988",
             "LicenseRef-scancode-gnu-emacs-gpl-1988"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

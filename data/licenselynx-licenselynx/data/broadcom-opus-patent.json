@@ -1,11 +1,15 @@
 {
-    "canonical": "broadcom-opus-patent",
+    "canonical": {
+        "id": "broadcom-opus-patent",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Broadcom Opus Patent License",
             "LicenseRef-scancode-broadcom-opus-patent"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

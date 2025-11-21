@@ -1,12 +1,17 @@
 {
-    "canonical": "ms-vs-addons-ext-17.2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS VS Add-Ons and Extensions 17.2.0",
-            "Microsoft Visual Studio Add-Ons and Extensions 17.2.0",
-            "LicenseRef-scancode-ms-vs-addons-ext-17.2.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-vs-addons-ext-17.2.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-vs-addons-ext-17.2.0",
+            "Microsoft Visual Studio Add-Ons and Extensions 17.2.0",
+            "MS VS Add-Ons and Extensions 17.2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,10 +1,15 @@
 {
-    "canonical": "gpl-2.0-plus-sane",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 or later with SANE exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "gpl-2.0-plus-sane",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 or later with SANE exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

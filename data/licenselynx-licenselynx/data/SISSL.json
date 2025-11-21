@@ -1,17 +1,33 @@
 {
-    "canonical": "SISSL",
+    "canonical": {
+        "id": "SISSL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sun Industry Standards Source License v1.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "osi": [
+            "Sun Industry Standards Source License"
+        ],
+        "scancodeLicensedb": [
             "Sun Industry Standards Source License 1.1",
             "sun-sissl-1.1"
         ],
-        "osi": [
-            "Sun Industry Standards Source License"
+        "pypi": [
+            "License :: OSI Approved :: SISSL",
+            "License :: OSI Approved :: Sun Industry Standards Source License",
+            "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
+            "License :: SISSL",
+            "License :: Sun Industry Standards Source License",
+            "License :: Sun Industry Standards Source License (SISSL)",
+            "OSI Approved :: SISSL",
+            "OSI Approved :: Sun Industry Standards Source License",
+            "OSI Approved :: Sun Industry Standards Source License (SISSL)",
+            "Sun Industry Standards Source License (SISSL)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "dmalloc",
+    "canonical": {
+        "id": "dmalloc",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "dmalloc License",
             "LicenseRef-scancode-dmalloc"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

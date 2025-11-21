@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "charmpp-2019",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Charm++ Software License 2019",
+            "LicenseRef-scancode-charmpp-2019"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

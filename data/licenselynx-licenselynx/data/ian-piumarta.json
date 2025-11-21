@@ -1,11 +1,15 @@
 {
-    "canonical": "ian-piumarta",
+    "canonical": {
+        "id": "ian-piumarta",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Ian Piumarta License",
             "LicenseRef-scancode-ian-piumarta"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

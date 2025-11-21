@@ -1,14 +1,19 @@
 {
-    "canonical": "SHL-0.5",
+    "canonical": {
+        "id": "SHL-0.5",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Solderpad Hardware License v0.5"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "SolderPad Hardware License v0.5",
-            "shl-0.5"
+        "scancodeLicensedb": [
+            "shl-0.5",
+            "SolderPad Hardware License v0.5"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

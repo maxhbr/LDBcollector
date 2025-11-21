@@ -1,11 +1,15 @@
 {
-    "canonical": "ghostscript-1988",
+    "canonical": {
+        "id": "ghostscript-1988",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Ghostscript General Public License 1988",
             "LicenseRef-scancode-ghostscript-1988"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

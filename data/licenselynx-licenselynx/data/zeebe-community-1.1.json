@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "zeebe-community-1.1",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-zeebe-community-1.1",
+            "Zeebe Community License v1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
+}

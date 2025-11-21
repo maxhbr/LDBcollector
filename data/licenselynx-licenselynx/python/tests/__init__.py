@@ -1,2 +1,2 @@
 # SPDX-FileCopyrightText: Copyright 2025 Siemens AG
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: BSD-3-Clause

@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "BSD-3-Clause-Tso",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause Tso variant"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

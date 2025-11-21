@@ -1,11 +1,15 @@
 {
-    "canonical": "broadleaf-fair-use",
+    "canonical": {
+        "id": "broadleaf-fair-use",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Broadleaf Fair Use License Agreement v1.0",
             "LicenseRef-scancode-broadleaf-fair-use"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

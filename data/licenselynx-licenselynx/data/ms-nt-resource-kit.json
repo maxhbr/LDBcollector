@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-nt-resource-kit",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft NT Resource Kit License",
-            "MS NT Resource Kit License",
-            "LicenseRef-scancode-ms-nt-resource-kit"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-nt-resource-kit",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-nt-resource-kit",
+            "Microsoft NT Resource Kit License",
+            "MS NT Resource Kit License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

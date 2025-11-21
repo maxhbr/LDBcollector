@@ -1,11 +1,16 @@
 {
-    "canonical": "xfree86-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "XFree86 License 1.0",
-            "LicenseRef-scancode-xfree86-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "xfree86-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-xfree86-1.0",
+            "XFree86 License 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

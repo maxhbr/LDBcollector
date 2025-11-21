@@ -1,11 +1,15 @@
 {
-    "canonical": "keypirinha",
+    "canonical": {
+        "id": "keypirinha",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Keypirinha License",
             "LicenseRef-scancode-keypirinha"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

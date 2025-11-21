@@ -1,11 +1,16 @@
 {
-    "canonical": "do-no-harm-0.1",
+    "canonical": {
+        "id": "do-no-harm-0.1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Do No Harm",
             "LicenseRef-scancode-do-no-harm-0.1"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

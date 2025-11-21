@@ -1,11 +1,15 @@
 {
-    "canonical": "ellis-lab",
+    "canonical": {
+        "id": "ellis-lab",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "EllisLab License",
             "LicenseRef-scancode-ellis-lab"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

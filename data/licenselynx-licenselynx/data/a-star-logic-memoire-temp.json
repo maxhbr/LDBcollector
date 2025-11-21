@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "a-star-logic-memoire-temp",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "A-Star-Logic Memoire temporary License",
+            "LicenseRef-scancode-a-star-logic-memoire-temp"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

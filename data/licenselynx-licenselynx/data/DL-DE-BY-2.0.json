@@ -1,16 +1,23 @@
 {
-    "canonical": "DL-DE-BY-2.0",
+    "canonical": {
+        "id": "DL-DE-BY-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
-            "Data licence Germany \u00e2\u20ac\u201c attribution \u00e2\u20ac\u201c version 2.0"
+            "Data licence Germany \u00e2\u20ac\u201c attribution \u00e2\u20ac\u201c version 2.0",
+            "Data licence Germany \u2013 attribution \u2013 version 2.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "Datenlizenz Deutschland - Namensnennung - Version 2.0 - Deutsch",
-            "dl-de/by-2-0-de",
-            "LicenseRef-scancode-dl-de-by-2-0-de",
-            "dl-de-by-2-0-de"
+        "scancodeLicensedb": [
+            "Datenlizenz Deutschland - Namensnennung - Version 2.0 - Deutsch"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [
+        "dl-de-by-2-0-de",
+        "dl-de/by-2-0-de",
+        "LicenseRef-scancode-dl-de-by-2-0-de"
+    ],
+    "isMajorVersionOnly": true
 }

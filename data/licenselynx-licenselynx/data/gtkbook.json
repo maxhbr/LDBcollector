@@ -1,13 +1,17 @@
 {
-    "canonical": "gtkbook",
+    "canonical": {
+        "id": "gtkbook",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "gtkbook License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "gtkbook"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

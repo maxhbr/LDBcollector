@@ -1,12 +1,16 @@
 {
-    "canonical": "ricebsd",
-    "aliases": {
-        "scancode-licensedb": [
-            "Rice BSD Software License",
-            "RiceBSD",
-            "LicenseRef-scancode-ricebsd"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ricebsd",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ricebsd",
+            "Rice BSD Software License",
+            "RiceBSD"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

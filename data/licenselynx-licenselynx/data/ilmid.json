@@ -1,11 +1,15 @@
 {
-    "canonical": "ilmid",
+    "canonical": {
+        "id": "ilmid",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "ilmid License",
             "LicenseRef-scancode-ilmid"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

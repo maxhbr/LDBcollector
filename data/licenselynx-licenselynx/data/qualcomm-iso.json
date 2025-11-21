@@ -1,11 +1,15 @@
 {
-    "canonical": "qualcomm-iso",
-    "aliases": {
-        "scancode-licensedb": [
-            "Qualcomm ISO/IEC MPEG-B DASH License",
-            "LicenseRef-scancode-qualcomm-iso"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "qualcomm-iso",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-qualcomm-iso",
+            "Qualcomm ISO/IEC MPEG-B DASH License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "cern-attribution-1995",
+    "canonical": {
+        "id": "cern-attribution-1995",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "CERN Attribution 1995",
             "LicenseRef-scancode-cern-attribution-1995"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

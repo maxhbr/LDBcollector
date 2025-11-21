@@ -1,13 +1,17 @@
 {
-    "canonical": "vsftpd-openssl-exception",
+    "canonical": {
+        "id": "vsftpd-openssl-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "vsftpd OpenSSL exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "vsftpd-openssl-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

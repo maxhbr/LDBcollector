@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "falcon-2-11b-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Falcon 2 11B TII License 1.0",
+            "Falcon 2 11B TII License Version 1.0",
+            "LicenseRef-scancode-falcon-2-11b-1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

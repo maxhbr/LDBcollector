@@ -1,11 +1,15 @@
 {
-    "canonical": "ooura-2001",
-    "aliases": {
-        "scancode-licensedb": [
-            "OOURA License 2001",
-            "LicenseRef-scancode-ooura-2001"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ooura-2001",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ooura-2001",
+            "OOURA License 2001"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

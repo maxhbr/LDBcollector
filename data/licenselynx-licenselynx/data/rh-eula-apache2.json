@@ -1,12 +1,16 @@
 {
-    "canonical": "rh-eula-apache2",
-    "aliases": {
-        "scancode-licensedb": [
-            "Red Hat Apache-Based End User License Agreement",
-            "Red Hat Apache-Based EULA",
-            "LicenseRef-scancode-rh-eula-apache2"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "rh-eula-apache2",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-rh-eula-apache2",
+            "Red Hat Apache-Based End User License Agreement",
+            "Red Hat Apache-Based EULA"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

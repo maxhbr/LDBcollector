@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "BSD-2-Clause-pkgconf-disclaimer",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause pkgconf disclaimer variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "bsd-2-clause-pkgconf-disclaimer"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

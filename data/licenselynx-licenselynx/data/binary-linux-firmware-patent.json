@@ -1,11 +1,15 @@
 {
-    "canonical": "binary-linux-firmware-patent",
+    "canonical": {
+        "id": "binary-linux-firmware-patent",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Binary-Only Linux Firmware Patent License",
             "LicenseRef-scancode-binary-linux-firmware-patent"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "zsh",
-    "aliases": {
-        "scancode-licensedb": [
-            "zsh License",
-            "Z Shell License",
-            "LicenseRef-scancode-zsh"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "zsh",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-zsh",
+            "Z Shell License",
+            "zsh License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

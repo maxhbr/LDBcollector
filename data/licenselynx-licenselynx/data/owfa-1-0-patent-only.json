@@ -1,11 +1,15 @@
 {
-    "canonical": "owfa-1-0-patent-only",
-    "aliases": {
-        "scancode-licensedb": [
-            "OWFa 1.0 - Patent Only",
-            "LicenseRef-scancode-owfa-1.0-patent-only"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "owfa-1-0-patent-only",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-owfa-1.0-patent-only",
+            "OWFa 1.0 - Patent Only"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

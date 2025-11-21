@@ -1,11 +1,15 @@
 {
-    "canonical": "compuphase-linking-exception",
+    "canonical": {
+        "id": "compuphase-linking-exception",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "compuphase Linking Exception to Apache 2.0",
             "LicenseRef-scancode-compuphase-linking-exception"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

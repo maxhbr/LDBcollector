@@ -1,16 +1,35 @@
 {
-    "canonical": "LGPL-3.0-or-later",
+    "canonical": {
+        "id": "LGPL-3.0-or-later",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU Lesser General Public License v3.0 or later",
             "LGPL-3.0+"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "GNU Lesser General Public License 3.0 or later",
             "LGPL 3.0 or later",
             "lgpl-3.0-plus"
+        ],
+        "pypi": [
+            "GNU Lesser General Public License v3 or later",
+            "GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "LGPLv3+",
+            "License :: GNU Lesser General Public License v3 or later",
+            "License :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "License :: LGPLv3+",
+            "License :: OSI Approved :: GNU Lesser General Public License v3 or later",
+            "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "License :: OSI Approved :: LGPLv3+",
+            "OSI Approved :: GNU Lesser General Public License v3 or later",
+            "OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "OSI Approved :: LGPLv3+"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

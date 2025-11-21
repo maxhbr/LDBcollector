@@ -1,11 +1,15 @@
 {
-    "canonical": "sun-communications-api",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun Communications API",
-            "LicenseRef-scancode-sun-communications-api"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-communications-api",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-communications-api",
+            "Sun Communications API"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

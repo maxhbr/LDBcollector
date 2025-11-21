@@ -1,12 +1,16 @@
 {
-    "canonical": "hp-proliant-essentials",
+    "canonical": {
+        "id": "hp-proliant-essentials",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "hp-proliant-essentials",
             "hp-proliant-essentials EULA",
             "LicenseRef-scancode-hp-proliant-essentials"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

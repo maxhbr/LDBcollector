@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "tongyi-qianwen-2023",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tongyi-qianwen-2023",
+            "Tongyi Qianwen License Agreement 2023"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

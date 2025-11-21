@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "plastimatch-1.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-plastimatch-1.0",
+            "Plastimatch 1.0",
+            "Plastimatch Software License Version 1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -1,11 +1,15 @@
 {
-    "canonical": "vixie-cron",
-    "aliases": {
-        "scancode-licensedb": [
-            "Vixie Cron License",
-            "LicenseRef-scancode-vixie-cron"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "vixie-cron",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-vixie-cron",
+            "Vixie Cron License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

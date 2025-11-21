@@ -1,14 +1,19 @@
 {
-    "canonical": "APSL-1.0",
+    "canonical": {
+        "id": "APSL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Apple Public Source License 1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "apsl-1.0",
-            "APSL 1.0"
+        "scancodeLicensedb": [
+            "APSL 1.0",
+            "apsl-1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

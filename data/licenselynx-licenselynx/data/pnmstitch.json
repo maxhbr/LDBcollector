@@ -1,13 +1,17 @@
 {
-    "canonical": "pnmstitch",
+    "canonical": {
+        "id": "pnmstitch",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "pnmstitch License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "pnmstitch"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

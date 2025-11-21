@@ -1,11 +1,16 @@
 {
-    "canonical": "jdbm-1.00",
+    "canonical": {
+        "id": "jdbm-1.00",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "JDBM License v1.00",
             "LicenseRef-scancode-jdbm-1.00"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

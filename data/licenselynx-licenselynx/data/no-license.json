@@ -1,11 +1,15 @@
 {
-    "canonical": "no-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "No License Stated",
-            "LicenseRef-scancode-no-license"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "no-license",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-no-license",
+            "No License Stated"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

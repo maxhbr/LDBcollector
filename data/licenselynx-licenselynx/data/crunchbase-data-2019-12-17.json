@@ -1,11 +1,15 @@
 {
-    "canonical": "crunchbase-data-2019-12-17",
+    "canonical": {
+        "id": "crunchbase-data-2019-12-17",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Crunchbase Data Access Terms 2019-12-17",
             "LicenseRef-scancode-crunchbase-data-2019-12-17"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

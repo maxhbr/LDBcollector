@@ -1,12 +1,16 @@
 {
-    "canonical": "biopython",
+    "canonical": {
+        "id": "biopython",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Biopython License",
             "Biopython License Agreement",
             "LicenseRef-scancode-biopython"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

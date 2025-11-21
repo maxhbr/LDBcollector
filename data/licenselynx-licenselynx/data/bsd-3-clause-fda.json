@@ -1,11 +1,15 @@
 {
-    "canonical": "bsd-3-clause-fda",
+    "canonical": {
+        "id": "bsd-3-clause-fda",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BSD 3-Clause FDA",
             "LicenseRef-scancode-bsd-3-clause-fda"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

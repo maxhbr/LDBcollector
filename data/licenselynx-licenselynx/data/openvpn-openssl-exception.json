@@ -1,14 +1,18 @@
 {
-    "canonical": "openvpn-openssl-exception",
+    "canonical": {
+        "id": "openvpn-openssl-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "OpenVPN OpenSSL Exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "OpenVPN OpenSSL Exception to GPL",
             "openvpn-openssl-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

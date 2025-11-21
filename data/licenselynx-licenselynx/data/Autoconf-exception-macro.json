@@ -1,14 +1,18 @@
 {
-    "canonical": "Autoconf-exception-macro",
+    "canonical": {
+        "id": "Autoconf-exception-macro",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Autoconf macro exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-autoconf-macro-exception",
-            "autoconf-macro-exception"
+        "scancodeLicensedb": [
+            "autoconf-macro-exception",
+            "LicenseRef-scancode-autoconf-macro-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

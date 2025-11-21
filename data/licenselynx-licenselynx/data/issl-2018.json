@@ -1,12 +1,16 @@
 {
-    "canonical": "issl-2018",
+    "canonical": {
+        "id": "issl-2018",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Intel Simplified Software License (Version April 2018)",
             "ISSL 2018",
             "LicenseRef-scancode-issl-2018"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

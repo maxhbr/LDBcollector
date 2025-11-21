@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "rtems-exception-2.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-rtems-exception-2.0",
+            "RTEMS exception to GPL 2.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

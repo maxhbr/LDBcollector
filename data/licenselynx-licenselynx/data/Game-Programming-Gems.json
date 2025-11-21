@@ -1,0 +1,19 @@
+{
+    "canonical": {
+        "id": "Game-Programming-Gems",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Game Programming Gems License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Dante Treglia License",
+            "dante-treglia",
+            "LicenseRef-scancode-dante-treglia"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

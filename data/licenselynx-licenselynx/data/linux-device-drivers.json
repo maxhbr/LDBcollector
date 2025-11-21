@@ -1,12 +1,16 @@
 {
-    "canonical": "linux-device-drivers",
-    "aliases": {
-        "scancode-licensedb": [
-            "Linux Device Drivers License",
-            "Linux Device Drivers",
-            "LicenseRef-scancode-linux-device-drivers"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "linux-device-drivers",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-linux-device-drivers",
+            "Linux Device Drivers",
+            "Linux Device Drivers License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

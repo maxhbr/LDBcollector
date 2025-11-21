@@ -29,14 +29,15 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-  logo: assets/LicenseLynx_Icon.png
-  favicon: assets/LicenseLynx_Icon.png
+  logo: assets/LicenseLynx-favicon.ico
+  favicon: assets/LicenseLynx-favicon.ico
   features:
     - navigation.footer
 
 nav:
   - Introduction: index.md
   - FAQ: faq.md
+  - Data Quality: data-quality.md
   - How LicenseLynx works: licenselynxworks.md
   - Installation: installation.md
   - Usage: usage.md

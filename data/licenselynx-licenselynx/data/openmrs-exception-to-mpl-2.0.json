@@ -1,11 +1,16 @@
 {
-    "canonical": "openmrs-exception-to-mpl-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenMRS Exception to MPL-2.0",
-            "LicenseRef-scancode-openmrs-exception-to-mpl-2.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "openmrs-exception-to-mpl-2.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openmrs-exception-to-mpl-2.0",
+            "OpenMRS Exception to MPL-2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

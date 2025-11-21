@@ -1,11 +1,16 @@
 {
-    "canonical": "deepseek-la-1.0",
+    "canonical": {
+        "id": "deepseek-la-1.0",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "DeepSeek License Agreement v1.0",
             "LicenseRef-scancode-deepseek-la-1.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

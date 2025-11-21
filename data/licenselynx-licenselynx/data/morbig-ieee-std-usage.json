@@ -1,11 +1,15 @@
 {
-    "canonical": "morbig-ieee-std-usage",
+    "canonical": {
+        "id": "morbig-ieee-std-usage",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "IEEE Std 1003.1 Text Usage",
             "LicenseRef-scancode-morbig-ieee-std-usage"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

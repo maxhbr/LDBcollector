@@ -1,11 +1,15 @@
 {
-    "canonical": "broadcom-confidential",
+    "canonical": {
+        "id": "broadcom-confidential",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Broadcom Confidential",
             "LicenseRef-scancode-broadcom-confidential"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,17 @@
 {
-    "canonical": "FBM",
+    "canonical": {
+        "id": "FBM",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Fuzzy Bitmap License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "fbm"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

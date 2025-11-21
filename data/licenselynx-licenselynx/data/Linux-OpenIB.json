@@ -1,14 +1,18 @@
 {
-    "canonical": "Linux-OpenIB",
+    "canonical": {
+        "id": "Linux-OpenIB",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Linux Kernel Variant of OpenIB.org license"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "linux-openib",
-            "Linux-OpenIB"
+        "scancodeLicensedb": [
+            "Linux-OpenIB",
+            "linux-openib"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

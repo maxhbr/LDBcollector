@@ -1,12 +1,17 @@
 {
-    "canonical": "enhydra-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Enhydra Public License 1.1",
-            "Enhydra 1.1",
-            "LicenseRef-scancode-enhydra-1.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "enhydra-1.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Enhydra 1.1",
+            "Enhydra Public License 1.1",
+            "LicenseRef-scancode-enhydra-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

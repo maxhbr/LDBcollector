@@ -1,12 +1,16 @@
 {
-    "canonical": "bsd-no-disclaimer",
+    "canonical": {
+        "id": "bsd-no-disclaimer",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BSD-2-Clause no disclaimer",
             "BSD-2-Clause without Warranty Disclaimer",
             "LicenseRef-scancode-bsd-no-disclaimer"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

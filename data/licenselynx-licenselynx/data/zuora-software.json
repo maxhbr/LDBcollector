@@ -1,11 +1,15 @@
 {
-    "canonical": "zuora-software",
-    "aliases": {
-        "scancode-licensedb": [
-            "Zuora Software License",
-            "LicenseRef-scancode-zuora-software"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "zuora-software",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-zuora-software",
+            "Zuora Software License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "cclrc",
+    "canonical": {
+        "id": "cclrc",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "CCLRC License",
             "LicenseRef-scancode-cclrc"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

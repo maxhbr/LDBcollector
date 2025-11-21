@@ -1,12 +1,17 @@
 {
-    "canonical": "metrolink-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Metro Link Public License 1.0",
-            "Metrolink 1.0",
-            "LicenseRef-scancode-metrolink-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "metrolink-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-metrolink-1.0",
+            "Metro Link Public License 1.0",
+            "Metrolink 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

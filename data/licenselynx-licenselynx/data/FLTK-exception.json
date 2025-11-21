@@ -1,14 +1,18 @@
 {
-    "canonical": "FLTK-exception",
+    "canonical": {
+        "id": "FLTK-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "FLTK exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "FLTK exception to LGPL 2.0",
             "fltk-exception-lgpl-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

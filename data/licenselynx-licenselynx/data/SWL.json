@@ -1,14 +1,18 @@
 {
-    "canonical": "SWL",
+    "canonical": {
+        "id": "SWL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Scheme Widget Library (SWL) Software License Agreement"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Scheme Widget Library (SWL) Software License",
             "swl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

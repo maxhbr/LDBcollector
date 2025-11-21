@@ -1,20 +1,57 @@
 {
-    "canonical": "GPL-2.0-only",
+    "canonical": {
+        "id": "GPL-2.0-only",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU General Public License v2.0 only",
             "GPL-2.0"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-GPL-2.0",
-            "GPL 2.0",
-            "GNU General Public License 2.0",
-            "gpl-2.0"
+        "custom": [
+            "GNU GPL 2.0 (only)",
+            "GNU GPL v2.0 only",
+            "GPL 2.0 (only)",
+            "GPL 2.0 License (only)",
+            "GPL 2.0 only",
+            "GPL v2 only",
+            "GPL v2.0",
+            "GPL v2.0 License (only)",
+            "GPL v2.0 only",
+            "GPL-2",
+            "GPL-2.0 (only)",
+            "GPL-2.0-only",
+            "GPL-2.0-only License",
+            "GPL2",
+            "GPLv2 (only)",
+            "GPLv2 only",
+            "GPLv2-only"
         ],
         "osi": [
             "GNU General Public License, Version 2.0"
+        ],
+        "scancodeLicensedb": [
+            "GNU General Public License 2.0",
+            "GPL 2.0",
+            "gpl-2.0",
+            "LicenseRef-GPL-2.0"
+        ],
+        "pypi": [
+            "GNU General Public License v2",
+            "GNU General Public License v2 (GPLv2)",
+            "GPLv2",
+            "License :: GNU General Public License v2",
+            "License :: GNU General Public License v2 (GPLv2)",
+            "License :: GPLv2",
+            "License :: OSI Approved :: GNU General Public License v2",
+            "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+            "License :: OSI Approved :: GPLv2",
+            "OSI Approved :: GNU General Public License v2",
+            "OSI Approved :: GNU General Public License v2 (GPLv2)",
+            "OSI Approved :: GPLv2"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

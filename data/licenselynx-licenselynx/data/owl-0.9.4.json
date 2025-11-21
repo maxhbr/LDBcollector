@@ -1,12 +1,17 @@
 {
-    "canonical": "owl-0.9.4",
-    "aliases": {
-        "scancode-licensedb": [
-            "Open Works License v0.9.4",
-            "OWL-0.9.4",
-            "LicenseRef-scancode-owl-0.9.4"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "owl-0.9.4",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-owl-0.9.4",
+            "Open Works License v0.9.4",
+            "OWL-0.9.4"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,17 +1,24 @@
 {
-    "canonical": "GPL-1.0-or-later",
+    "canonical": {
+        "id": "GPL-1.0-or-later",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU General Public License v1.0 or later",
             "GPL-1.0+"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "GNU General Public License 1.0 or later",
             "GPL 1.0 or later",
-            "gpl-1.0-plus",
-            "LicenseRef-GPL"
+            "gpl-1.0-plus"
         ]
     },
-    "src": "spdx"
+    "rejected": [
+        "GPL",
+        "LicenseRef-GPL"
+    ],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

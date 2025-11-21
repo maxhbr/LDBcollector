@@ -1,12 +1,16 @@
 {
-    "canonical": "lha",
+    "canonical": {
+        "id": "lha",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "LHA",
             "lha",
             "LicenseRef-scancode-lha"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

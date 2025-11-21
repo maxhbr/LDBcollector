@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "rockchip-proprietary-2023",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-rockchip-proprietary-2023",
+            "Rockchip Proprietary 2023"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -1,36 +1,53 @@
 {
-    "canonical": "LGPL-2.0-only",
+    "canonical": {
+        "id": "LGPL-2.0-only",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU Library General Public License v2 only",
             "LGPL-2.0"
         ],
         "custom": [
-            "LGPL 2.0 only",
-            "LGPL v2.0 only",
-            "GNU Lesser General Public License v2.0 only",
-            "GNU LGPL v2.0 only",
-            "LGPL v2.0",
             "GNU Lesser General Public License 2.0",
-            "LGPLv2-only",
-            "LGPL v2 only",
-            "LGPL 2.0 (only)",
+            "GNU Lesser General Public License v2.0 only",
             "GNU LGPL 2.0 (only)",
-            "LGPL-2.0 (only)",
-            "LGPLv2 only",
-            "LGPLv2",
-            "LGPL-2.0-only License",
+            "GNU LGPL v2.0 only",
+            "LGPL 2.0 (only)",
             "LGPL 2.0 License (only)",
+            "LGPL 2.0 only",
+            "LGPL v2.0",
             "LGPL v2.0 License (only)",
-            "LGPLv2 (only)"
+            "LGPL v2.0 only",
+            "LGPL-2.0 (only)",
+            "LGPL-2.0-only License"
         ],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "GNU Library General Public License 2.0",
-            "LicenseRef-LGPL-2",
             "LGPL 2.0",
-            "LicenseRef-LGPL-2.0",
-            "lgpl-2.0"
+            "lgpl-2.0",
+            "LicenseRef-LGPL-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [
+        "GNU Lesser General Public License v2",
+        "GNU Lesser General Public License v2 (LGPLv2)",
+        "LGPL v2 only",
+        "LGPLv2",
+        "LGPLv2 (only)",
+        "LGPLv2 only",
+        "LGPLv2-only",
+        "License :: GNU Lesser General Public License v2",
+        "License :: GNU Lesser General Public License v2 (LGPLv2)",
+        "License :: LGPLv2",
+        "License :: OSI Approved :: GNU Lesser General Public License v2",
+        "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+        "License :: OSI Approved :: LGPLv2",
+        "LicenseRef-LGPL-2",
+        "OSI Approved :: GNU Lesser General Public License v2",
+        "OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+        "OSI Approved :: LGPLv2"
+    ],
+    "isMajorVersionOnly": false
 }

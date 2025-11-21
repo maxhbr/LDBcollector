@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-visual-studio-code-2018",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Visual Studio Code License 2018",
-            "MS Visual Studio Code License 2018",
-            "LicenseRef-scancode-ms-visual-studio-code-2018"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-visual-studio-code-2018",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-visual-studio-code-2018",
+            "Microsoft Visual Studio Code License 2018",
+            "MS Visual Studio Code License 2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

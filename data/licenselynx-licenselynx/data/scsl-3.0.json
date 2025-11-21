@@ -1,11 +1,16 @@
 {
-    "canonical": "scsl-3.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun Community Source License 3.0",
-            "LicenseRef-scancode-scsl-3.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "scsl-3.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-scsl-3.0",
+            "Sun Community Source License 3.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

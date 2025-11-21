@@ -1,11 +1,15 @@
 {
-    "canonical": "cavium-targeted-hardware",
+    "canonical": {
+        "id": "cavium-targeted-hardware",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Cavium Targeted Hardware License",
             "LicenseRef-scancode-cavium-targeted-hardware"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

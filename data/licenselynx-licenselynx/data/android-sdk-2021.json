@@ -1,12 +1,16 @@
 {
-    "canonical": "android-sdk-2021",
-    "aliases": {
-        "scancode-licensedb": [
-            "Android Software Development Kit License Agreement 2021",
-            "Android SDK License 2021",
-            "LicenseRef-scancode-android-sdk-2021"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "android-sdk-2021",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Android SDK License 2021",
+            "Android Software Development Kit License Agreement 2021",
+            "LicenseRef-scancode-android-sdk-2021"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

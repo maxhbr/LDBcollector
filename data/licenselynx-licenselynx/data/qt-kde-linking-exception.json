@@ -1,11 +1,15 @@
 {
-    "canonical": "qt-kde-linking-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "Qt Linking Exception to GPL 2.0 or later",
-            "LicenseRef-scancode-qt-kde-linking-exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "qt-kde-linking-exception",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-qt-kde-linking-exception",
+            "Qt Linking Exception to GPL 2.0 or later"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

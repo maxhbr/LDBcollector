@@ -1,10 +1,19 @@
 {
-    "canonical": "bzip2-1.0.5",
+    "canonical": {
+        "id": "bzip2-1.0.5",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "bzip2 and libbzip2 License v1.0.5"
         ],
-        "custom": []
+        "custom": [],
+        "scancodeLicensedb": [
+            "bzip2-1.0.5",
+            "bzip2-libbzip-1.0.5"
+        ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

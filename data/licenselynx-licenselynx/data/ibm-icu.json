@@ -1,11 +1,15 @@
 {
-    "canonical": "ibm-icu",
+    "canonical": {
+        "id": "ibm-icu",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "ICU Composite License",
             "LicenseRef-scancode-ibm-icu"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

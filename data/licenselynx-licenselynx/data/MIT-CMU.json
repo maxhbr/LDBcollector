@@ -1,14 +1,30 @@
 {
-    "canonical": "MIT-CMU",
+    "canonical": {
+        "id": "MIT-CMU",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CMU License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "cmu-uc",
-            "CMU Style"
+        "scancodeLicensedb": [
+            "CMU Style",
+            "cmu-uc"
+        ],
+        "pypi": [
+            "CMU License (MIT-CMU)",
+            "License :: CMU License",
+            "License :: CMU License (MIT-CMU)",
+            "License :: MIT-CMU",
+            "License :: OSI Approved :: CMU License",
+            "License :: OSI Approved :: CMU License (MIT-CMU)",
+            "License :: OSI Approved :: MIT-CMU",
+            "OSI Approved :: CMU License",
+            "OSI Approved :: CMU License (MIT-CMU)",
+            "OSI Approved :: MIT-CMU"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

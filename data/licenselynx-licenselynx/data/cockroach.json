@@ -1,12 +1,16 @@
 {
-    "canonical": "cockroach",
-    "aliases": {
-        "scancode-licensedb": [
-            "Cockroach Community License",
-            "CCL",
-            "LicenseRef-scancode-cockroach"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "cockroach",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CCL",
+            "Cockroach Community License",
+            "LicenseRef-scancode-cockroach"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

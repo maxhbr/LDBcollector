@@ -1,11 +1,15 @@
 {
-    "canonical": "dynarch-linkware",
+    "canonical": {
+        "id": "dynarch-linkware",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Dynarch Linkware Agreement",
             "LicenseRef-scancode-dynarch-linkware"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

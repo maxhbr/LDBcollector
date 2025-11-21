@@ -1,11 +1,15 @@
 {
-    "canonical": "initial-developer-public",
+    "canonical": {
+        "id": "initial-developer-public",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Initial Developer Public License",
             "LicenseRef-scancode-initial-developer-public"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

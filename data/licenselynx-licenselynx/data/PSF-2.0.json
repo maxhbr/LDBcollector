@@ -1,14 +1,21 @@
 {
-    "canonical": "PSF-2.0",
+    "canonical": {
+        "id": "PSF-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Python Software Foundation License 2.0"
         ],
-        "custom": [],
-        "scancode-licensedb": [
+        "custom": [
+            "PSF2"
+        ],
+        "scancodeLicensedb": [
             "PSF-2.0",
             "psf-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

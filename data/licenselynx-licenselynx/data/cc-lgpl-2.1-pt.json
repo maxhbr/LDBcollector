@@ -1,12 +1,18 @@
 {
-    "canonical": "cc-lgpl-2.1-pt",
+    "canonical": {
+        "id": "cc-lgpl-2.1-pt",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
-            "Creative Commons Licen\u00e7a P\u00fablica Geral Menor do GNU",
+        "custom": [],
+        "scancodeLicensedb": [
             "CC-LGPL-2.1-PT",
             "LicenseRef-scancode-cc-lgpl-2.1-pt"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [
+        "Creative Commons Licen\u00e7a P\u00fablica Geral Menor do GNU"
+    ],
+    "isMajorVersionOnly": true
 }

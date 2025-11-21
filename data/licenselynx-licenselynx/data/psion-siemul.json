@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "psion-siemul",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-psion-siemul",
+            "Psion User LIcence for SiEMUL"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

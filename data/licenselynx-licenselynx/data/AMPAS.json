@@ -1,15 +1,19 @@
 {
-    "canonical": "AMPAS",
+    "canonical": {
+        "id": "AMPAS",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Academy of Motion Picture Arts and Sciences BSD"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
+            "Academy of Motion Picture Arts and Sciences BSD-Style",
             "ampas",
-            "AMPAS BSD-Style License",
-            "Academy of Motion Picture Arts and Sciences BSD-Style"
+            "AMPAS BSD-Style License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,18 @@
 {
-    "canonical": "LGPLLR",
+    "canonical": {
+        "id": "LGPLLR",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Lesser General Public License For Linguistic Resources"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "lgpllr",
-            "LGPLLR"
+        "scancodeLicensedb": [
+            "LGPLLR",
+            "lgpllr"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

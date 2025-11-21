@@ -1,12 +1,16 @@
 {
-    "canonical": "vic-metcalfe-pd",
-    "aliases": {
-        "scancode-licensedb": [
-            "Vic Metcalfe Public Domain Notice",
-            "Vic Metcalfe Public Domain",
-            "LicenseRef-scancode-vic-metcalfe-pd"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "vic-metcalfe-pd",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-vic-metcalfe-pd",
+            "Vic Metcalfe Public Domain",
+            "Vic Metcalfe Public Domain Notice"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

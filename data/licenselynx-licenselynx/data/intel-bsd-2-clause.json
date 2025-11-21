@@ -1,11 +1,15 @@
 {
-    "canonical": "intel-bsd-2-clause",
+    "canonical": {
+        "id": "intel-bsd-2-clause",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Intel BSD 2 Clause License",
             "LicenseRef-scancode-intel-bsd-2-clause"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

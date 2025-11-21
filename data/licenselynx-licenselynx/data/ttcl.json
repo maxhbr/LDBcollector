@@ -1,12 +1,16 @@
 {
-    "canonical": "ttcl",
-    "aliases": {
-        "scancode-licensedb": [
-            "Talis Community License",
-            "The Talis Community License",
-            "LicenseRef-scancode-ttcl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ttcl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ttcl",
+            "Talis Community License",
+            "The Talis Community License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

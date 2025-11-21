@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "siesta-computer-centres",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-siesta-computer-centres",
+            "Siesta Licence for Computer Centres"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

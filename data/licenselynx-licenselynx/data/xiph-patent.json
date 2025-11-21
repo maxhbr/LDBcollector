@@ -1,11 +1,15 @@
 {
-    "canonical": "xiph-patent",
-    "aliases": {
-        "scancode-licensedb": [
-            "Xiph Opus Patent License",
-            "LicenseRef-scancode-xiph-patent"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "xiph-patent",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-xiph-patent",
+            "Xiph Opus Patent License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

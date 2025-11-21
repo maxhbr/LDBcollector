@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "xmos-commercial-2017",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-xmos-commercial-2017",
+            "XMOS Commercial 2017"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

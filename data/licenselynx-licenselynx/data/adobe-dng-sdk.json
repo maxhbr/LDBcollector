@@ -1,11 +1,15 @@
 {
-    "canonical": "adobe-dng-sdk",
+    "canonical": {
+        "id": "adobe-dng-sdk",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Adobe DNG SDK License Agreement",
             "LicenseRef-scancode-adobe-dng-sdk"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

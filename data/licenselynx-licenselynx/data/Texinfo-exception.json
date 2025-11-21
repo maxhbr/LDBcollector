@@ -1,15 +1,19 @@
 {
-    "canonical": "Texinfo-exception",
+    "canonical": {
+        "id": "Texinfo-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Texinfo exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tex-exception",
             "TeX exception to GPL 3.0",
-            "tex-exception",
-            "LicenseRef-scancode-tex-exception"
+            "tex-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

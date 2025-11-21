@@ -1,11 +1,15 @@
 {
-    "canonical": "pycrypto",
-    "aliases": {
-        "scancode-licensedb": [
-            "PyCrypto License",
-            "LicenseRef-scancode-pycrypto"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "pycrypto",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-pycrypto",
+            "PyCrypto License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

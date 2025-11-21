@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-sspl",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Shared Source Permissive License (SS-PL)",
-            "MS-SS-PL",
-            "LicenseRef-scancode-ms-sspl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-sspl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-sspl",
+            "Microsoft Shared Source Permissive License (SS-PL)",
+            "MS-SS-PL"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

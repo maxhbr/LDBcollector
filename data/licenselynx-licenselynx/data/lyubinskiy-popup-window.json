@@ -1,11 +1,15 @@
 {
-    "canonical": "lyubinskiy-popup-window",
-    "aliases": {
-        "scancode-licensedb": [
-            "Lyubinskiy popup-window License",
-            "LicenseRef-scancode-lyubinskiy-popup-window"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "lyubinskiy-popup-window",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-lyubinskiy-popup-window",
+            "Lyubinskiy popup-window License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

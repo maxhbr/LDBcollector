@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "retentioneering-2023",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-retentioneering-2023",
+            "Maxim Godzi Retentioneering Tools Software Non-Exclusive License 2023",
+            "Retentioneering License 2023"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -1,15 +1,23 @@
 {
-    "canonical": "AFL-2.1",
+    "canonical": {
+        "id": "AFL-2.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Academic Free License v2.1"
         ],
-        "custom": [],
-        "scancode-licensedb": [
+        "custom": [
+            "afl2.1",
+            "AFLv2.1"
+        ],
+        "scancodeLicensedb": [
             "Academic Free License 2.1",
             "AFL 2.1",
             "afl-2.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

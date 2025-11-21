@@ -1,14 +1,19 @@
 {
-    "canonical": "NLOD-2.0",
+    "canonical": {
+        "id": "NLOD-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Norwegian Licence for Open Government Data (NLOD) 2.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "NLOD-2.0",
             "nlod-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

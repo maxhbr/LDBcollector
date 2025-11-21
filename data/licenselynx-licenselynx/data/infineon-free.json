@@ -1,11 +1,15 @@
 {
-    "canonical": "infineon-free",
+    "canonical": {
+        "id": "infineon-free",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Infineon Free Software License",
             "LicenseRef-scancode-infineon-free"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

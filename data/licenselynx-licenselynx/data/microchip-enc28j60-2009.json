@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "microchip-enc28j60-2009",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-microchip-enc28j60-2009",
+            "Microchip ENC28J60 License 2009"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

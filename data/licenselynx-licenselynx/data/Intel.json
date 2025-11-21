@@ -1,17 +1,26 @@
 {
-    "canonical": "Intel",
+    "canonical": {
+        "id": "Intel",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Intel Open Source License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "osi": [
+            "The Intel Open Source License"
+        ],
+        "scancodeLicensedb": [
             "Intel BSD - Export Control",
             "intel-bsd-export-control"
         ],
-        "osi": [
-            "The Intel Open Source License"
+        "pypi": [
+            "License :: Intel Open Source License",
+            "License :: OSI Approved :: Intel Open Source License",
+            "OSI Approved :: Intel Open Source License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

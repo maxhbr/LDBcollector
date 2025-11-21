@@ -1,11 +1,16 @@
 {
-    "canonical": "cognitive-web-osl-1.1",
+    "canonical": {
+        "id": "cognitive-web-osl-1.1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "CognitiveWeb Open Source License 1.1",
             "LicenseRef-scancode-cognitive-web-osl-1.1"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

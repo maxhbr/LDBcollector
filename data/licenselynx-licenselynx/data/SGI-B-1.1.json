@@ -1,14 +1,19 @@
 {
-    "canonical": "SGI-B-1.1",
+    "canonical": {
+        "id": "SGI-B-1.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "SGI Free Software License B v1.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "sgi-freeb-1.1",
-            "SGI Free Software License B 1.1"
+        "scancodeLicensedb": [
+            "SGI Free Software License B 1.1",
+            "sgi-freeb-1.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

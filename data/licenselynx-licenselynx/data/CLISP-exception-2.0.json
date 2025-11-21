@@ -1,14 +1,19 @@
 {
-    "canonical": "CLISP-exception-2.0",
+    "canonical": {
+        "id": "CLISP-exception-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CLISP exception 2.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "clisp-exception-2.0",
-            "CLISP Exception to GPL 2.0"
+        "scancodeLicensedb": [
+            "CLISP Exception to GPL 2.0",
+            "clisp-exception-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

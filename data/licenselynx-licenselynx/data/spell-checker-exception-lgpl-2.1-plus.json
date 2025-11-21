@@ -1,12 +1,17 @@
 {
-    "canonical": "spell-checker-exception-lgpl-2.1-plus",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-spell-checker-exception-lgpl-2.1-plus",
-            "Spell-Checker exception to LGPL 2.1 or later",
-            "LicenseRef-scancode-spell-exception-lgpl-2.1-plus"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "spell-checker-exception-lgpl-2.1-plus",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-spell-checker-exception-lgpl-2.1-plus",
+            "LicenseRef-scancode-spell-exception-lgpl-2.1-plus",
+            "Spell-Checker exception to LGPL 2.1 or later"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

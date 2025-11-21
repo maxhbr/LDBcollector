@@ -1,15 +1,19 @@
 {
-    "canonical": "DigiRule-FOSS-exception",
+    "canonical": {
+        "id": "DigiRule-FOSS-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "DigiRule FOSS License Exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "DigiRule FOSS License Exception to GPL 2.0",
+        "scancodeLicensedb": [
             "DigiRule FOSS Exception to GPL 2.0",
+            "DigiRule FOSS License Exception to GPL 2.0",
             "digirule-foss-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

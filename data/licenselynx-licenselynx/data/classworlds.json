@@ -1,10 +1,14 @@
 {
-    "canonical": "classworlds",
-    "aliases": {
-        "scancode-licensedb": [
-            "Classworlds License"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "classworlds",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Classworlds License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

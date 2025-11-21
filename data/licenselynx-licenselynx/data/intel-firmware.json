@@ -1,11 +1,15 @@
 {
-    "canonical": "intel-firmware",
+    "canonical": {
+        "id": "intel-firmware",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Intel Firmware License",
             "LicenseRef-scancode-intel-firmware"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "oracle-vb-puel-12",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle VirtualBox Extension Pack Personal Use and Educational License (PUEL) v12",
-            "LicenseRef-scancode-oracle-vb-puel-12",
-            "Oracle VB Extension Pack PUEL v12"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "oracle-vb-puel-12",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oracle-vb-puel-12",
+            "Oracle VB Extension Pack PUEL v12",
+            "Oracle VirtualBox Extension Pack Personal Use and Educational License (PUEL) v12"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,19 @@
 {
-    "canonical": "GCC-exception-3.1",
+    "canonical": {
+        "id": "GCC-exception-3.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GCC Runtime Library exception 3.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "gcc-exception-3.1",
-            "GCC Runtime Library Exception v3.1"
+        "scancodeLicensedb": [
+            "GCC Runtime Library Exception v3.1",
+            "gcc-exception-3.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,14 +1,18 @@
 {
-    "canonical": "Linux-syscall-note",
+    "canonical": {
+        "id": "Linux-syscall-note",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Linux Syscall Note"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Linux Syscall Exception to GPL",
             "linux-syscall-exception-gpl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "ryszard-szopa",
-    "aliases": {
-        "scancode-licensedb": [
-            "Ryszard Szopa License",
-            "LicenseRef-scancode-ryszard-szopa"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ryszard-szopa",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ryszard-szopa",
+            "Ryszard Szopa License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

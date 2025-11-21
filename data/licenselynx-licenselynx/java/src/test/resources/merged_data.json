@@ -1,6 +1,18 @@
 {
-    "test-license": {
-        "canonical": "testCanonical",
-        "src": "testSrc"
+    "stableMap": {
+        "test-license": {
+            "id": "testCanonical",
+            "src": "testSrc"
+        },
+        "'test-license'": {
+            "id": "testCanonical",
+            "src": "testSrc"
+        }
+    },
+    "riskyMap": {
+        "test-risky-license": {
+            "id": "testCanonical",
+            "src": "testSrc"
+        }
     }
 }

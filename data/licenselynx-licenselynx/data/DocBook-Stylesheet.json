@@ -1,13 +1,17 @@
 {
-    "canonical": "DocBook-Stylesheet",
+    "canonical": {
+        "id": "DocBook-Stylesheet",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "DocBook Stylesheet License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "docbook-stylesheet"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

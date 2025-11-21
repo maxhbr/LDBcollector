@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "microchip-pk2cmd-2009",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-microchip-pk2cmd-2009",
+            "Microchip pk2cmd License 2009"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

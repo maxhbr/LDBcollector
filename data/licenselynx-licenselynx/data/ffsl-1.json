@@ -1,12 +1,16 @@
 {
-    "canonical": "ffsl-1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Floodgap Free Software License v1",
-            "FFSL v1",
-            "LicenseRef-scancode-ffsl-1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ffsl-1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "FFSL v1",
+            "Floodgap Free Software License v1",
+            "LicenseRef-scancode-ffsl-1"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

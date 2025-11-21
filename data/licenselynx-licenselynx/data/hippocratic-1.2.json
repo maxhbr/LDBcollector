@@ -1,11 +1,16 @@
 {
-    "canonical": "hippocratic-1.2",
+    "canonical": {
+        "id": "hippocratic-1.2",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Hippocratic License v1.2",
             "LicenseRef-scancode-hippocratic-1.2"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

@@ -1,11 +1,16 @@
 {
-    "canonical": "responsible-ai-source-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Reponsible AI Source Code License v1.0",
-            "LicenseRef-scancode-responsible-ai-source-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "responsible-ai-source-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-responsible-ai-source-1.0",
+            "Reponsible AI Source Code License v1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

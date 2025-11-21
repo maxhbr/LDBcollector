@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "inria-compcert",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "INRIA NCLA CompCert",
+            "INRIA Non-Commercial License Agreement for the CompCert verified compiler",
+            "LicenseRef-scancode-inria-compcert"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

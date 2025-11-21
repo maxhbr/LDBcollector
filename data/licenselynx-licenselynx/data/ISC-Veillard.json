@@ -1,15 +1,19 @@
 {
-    "canonical": "ISC-Veillard",
+    "canonical": {
+        "id": "ISC-Veillard",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "ISC Veillard variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "MIT Veillard Variant",
+        "scancodeLicensedb": [
             "LicenseRef-scancode-mit-veillard-variant",
+            "MIT Veillard Variant",
             "mit-veillard-variant"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "musl-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "musl attribution exception",
-            "LicenseRef-scancode-musl-exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "musl-exception",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-musl-exception",
+            "musl attribution exception"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

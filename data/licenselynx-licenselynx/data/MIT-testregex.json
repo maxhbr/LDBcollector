@@ -1,13 +1,17 @@
 {
-    "canonical": "MIT-testregex",
+    "canonical": {
+        "id": "MIT-testregex",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MIT testregex Variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "mit-testregex"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

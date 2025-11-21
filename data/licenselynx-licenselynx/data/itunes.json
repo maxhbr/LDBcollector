@@ -1,11 +1,15 @@
 {
-    "canonical": "itunes",
+    "canonical": {
+        "id": "itunes",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Apple iTunes License",
             "LicenseRef-scancode-itunes"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,16 @@
 {
-    "canonical": "php-2.0.2",
-    "aliases": {
-        "scancode-licensedb": [
-            "PHP License 2.0.2",
-            "LicenseRef-scancode-php-2.0.2"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "php-2.0.2",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-php-2.0.2",
+            "PHP License 2.0.2"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

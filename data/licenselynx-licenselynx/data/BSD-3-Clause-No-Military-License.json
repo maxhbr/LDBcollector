@@ -1,15 +1,19 @@
 {
-    "canonical": "BSD-3-Clause-No-Military-License",
+    "canonical": {
+        "id": "BSD-3-Clause-No-Military-License",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD 3-Clause No Military License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-bsd-3-clause-no-military",
+        "scancodeLicensedb": [
+            "BSD-3-Clause-No-Military",
             "bsd-3-clause-no-military",
-            "BSD-3-Clause-No-Military"
+            "LicenseRef-scancode-bsd-3-clause-no-military"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

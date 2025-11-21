@@ -1,6 +1,3 @@
-#
-# Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
-#
 import os
 import logging
 
@@ -33,24 +30,23 @@ def setup_logger(logger_name: str, log_file: str = os.path.join(parent_dir, 'lic
     logger = logging.getLogger(logger_name)
     logger.setLevel(log_level)
 
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    logger.propagate = True
 
-    # Create a console handler
-    ch = logging.StreamHandler()
-    ch.setFormatter(formatter)
-    logger.addHandler(ch)
+    if not logger.handlers:
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 
-    # Custom error tracking handler
-    error_tracking_handler = ErrorTrackingHandler()
-    logger.addHandler(error_tracking_handler)
+        ch = logging.StreamHandler()
+        ch.setFormatter(formatter)
+        logger.addHandler(ch)
 
-    try:
-        # Add a file handler
-        fh = logging.FileHandler(log_file)
-        fh.setFormatter(formatter)
-        logger.addHandler(fh)
-    except Exception as e:
-        # Handle any errors in setting up the file handler
-        logger.error("Failed to set up file handler: %s", e)
+        error_tracking_handler = ErrorTrackingHandler()
+        logger.addHandler(error_tracking_handler)
+
+        try:
+            fh = logging.FileHandler(log_file)
+            fh.setFormatter(formatter)
+            logger.addHandler(fh)
+        except Exception as e:
+            logger.error("Failed to set up file handler: %s", e)
 
     return logger

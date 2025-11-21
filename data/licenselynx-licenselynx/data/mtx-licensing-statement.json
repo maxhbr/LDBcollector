@@ -1,11 +1,15 @@
 {
-    "canonical": "mtx-licensing-statement",
-    "aliases": {
-        "scancode-licensedb": [
-            "MicroType Express (MTX) License",
-            "LicenseRef-scancode-mtx-licensing-statement"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mtx-licensing-statement",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mtx-licensing-statement",
+            "MicroType Express (MTX) License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,19 @@
 {
-    "canonical": "Artistic-1.0-cl8",
+    "canonical": {
+        "id": "Artistic-1.0-cl8",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Artistic License 1.0 w/clause 8"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "artistic-1.0-cl8",
-            "Artistic 1.0 w/clause 8"
+        "scancodeLicensedb": [
+            "Artistic 1.0 w/clause 8",
+            "artistic-1.0-cl8"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

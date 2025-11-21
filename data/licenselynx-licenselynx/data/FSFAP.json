@@ -1,13 +1,17 @@
 {
-    "canonical": "FSFAP",
+    "canonical": {
+        "id": "FSFAP",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "FSF All Permissive License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "fsf-ap"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

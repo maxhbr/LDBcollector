@@ -1,11 +1,16 @@
 {
-    "canonical": "npsl-exception-0.92",
-    "aliases": {
-        "scancode-licensedb": [
-            "Nmap NPSL Exception 0.92",
-            "LicenseRef-scancode-npsl-exception-0.92"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "npsl-exception-0.92",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-npsl-exception-0.92",
+            "Nmap NPSL Exception 0.92"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

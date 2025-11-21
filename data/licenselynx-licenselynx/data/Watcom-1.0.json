@@ -1,18 +1,23 @@
 {
-    "canonical": "Watcom-1.0",
+    "canonical": {
+        "id": "Watcom-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sybase Open Watcom Public License 1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "Sybase Open Watcom Public License v1.0",
-            "sybase",
-            "Open Watcom 1.0"
-        ],
         "osi": [
             "The Sybase Open Source Licence"
+        ],
+        "scancodeLicensedb": [
+            "Open Watcom 1.0",
+            "sybase",
+            "Sybase Open Watcom Public License v1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

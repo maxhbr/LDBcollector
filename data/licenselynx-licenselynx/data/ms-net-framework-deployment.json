@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-net-framework-deployment",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS .NET Framework Redistributable EULA",
-            "Microsoft .NET Framework Redistributable EULA",
-            "LicenseRef-scancode-ms-net-framework-deployment"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-net-framework-deployment",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-net-framework-deployment",
+            "Microsoft .NET Framework Redistributable EULA",
+            "MS .NET Framework Redistributable EULA"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,17 @@
 {
-    "canonical": "mod-dav-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "mod_dav License Agreement v1",
-            "mod_dav License 1.0",
-            "LicenseRef-scancode-mod-dav-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mod-dav-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mod-dav-1.0",
+            "mod_dav License 1.0",
+            "mod_dav License Agreement v1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

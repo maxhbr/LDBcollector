@@ -1,14 +1,18 @@
 {
-    "canonical": "Kazlib",
+    "canonical": {
+        "id": "Kazlib",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Kazlib License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "kazlib",
-            "Kazlib"
+        "scancodeLicensedb": [
+            "Kazlib",
+            "kazlib"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

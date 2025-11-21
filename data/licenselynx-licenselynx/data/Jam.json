@@ -1,14 +1,18 @@
 {
-    "canonical": "Jam",
+    "canonical": {
+        "id": "Jam",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Jam License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-jam",
-            "jam"
+        "scancodeLicensedb": [
+            "jam",
+            "LicenseRef-scancode-jam"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "newton-king-cla",
-    "aliases": {
-        "scancode-licensedb": [
-            "James Newton-King CLA",
-            "Newton-King CLA",
-            "LicenseRef-scancode-newton-king-cla"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "newton-king-cla",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "James Newton-King CLA",
+            "LicenseRef-scancode-newton-king-cla",
+            "Newton-King CLA"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

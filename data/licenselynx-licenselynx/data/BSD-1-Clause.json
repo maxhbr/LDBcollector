@@ -1,14 +1,18 @@
 {
-    "canonical": "BSD-1-Clause",
+    "canonical": {
+        "id": "BSD-1-Clause",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD 1-Clause License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "bsd-1-clause",
-            "BSD-1-Clause"
+        "scancodeLicensedb": [
+            "BSD-1-Clause",
+            "bsd-1-clause"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

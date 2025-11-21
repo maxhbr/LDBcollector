@@ -1,13 +1,17 @@
 {
-    "canonical": "Ruby",
+    "canonical": {
+        "id": "Ruby",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Ruby License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "ruby"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

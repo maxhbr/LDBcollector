@@ -1,17 +1,32 @@
 {
-    "canonical": "CECILL-2.1",
+    "canonical": {
+        "id": "CECILL-2.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CeCILL Free Software License Agreement v2.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "osi": [
+            "Cea Cnrs Inria Logiciel Libre License, Version 2.1"
+        ],
+        "scancodeLicensedb": [
             "CeCILL 2.1",
             "cecill-2.1"
         ],
-        "osi": [
-            "Cea Cnrs Inria Logiciel Libre License, Version 2.1"
+        "pypi": [
+            "CEA CNRS Inria Logiciel Libre License, version 2.1",
+            "CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
+            "License :: CEA CNRS Inria Logiciel Libre License, version 2.1",
+            "License :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
+            "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1",
+            "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
+            "OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1",
+            "OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

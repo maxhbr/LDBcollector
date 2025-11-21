@@ -1,14 +1,18 @@
 {
-    "canonical": "Naumen",
+    "canonical": {
+        "id": "Naumen",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Naumen Public License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "NAUMEN Public License",
-            "naumen"
+        "scancodeLicensedb": [
+            "naumen",
+            "NAUMEN Public License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,16 @@
 {
-    "canonical": "sun-bcl-sdk-6.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun BCL SDK 6.0",
-            "LicenseRef-scancode-sun-bcl-sdk-6.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-bcl-sdk-6.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-bcl-sdk-6.0",
+            "Sun BCL SDK 6.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

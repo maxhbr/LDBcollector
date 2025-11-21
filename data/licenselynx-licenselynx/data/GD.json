@@ -1,15 +1,19 @@
 {
-    "canonical": "GD",
+    "canonical": {
+        "id": "GD",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GD License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-libgd-2018",
+        "scancodeLicensedb": [
+            "libgd License 2018",
             "libgd-2018",
-            "libgd License 2018"
+            "LicenseRef-scancode-libgd-2018"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-specification",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Specification License",
-            "MS Specification License",
-            "LicenseRef-scancode-ms-specification"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-specification",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-specification",
+            "Microsoft Specification License",
+            "MS Specification License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "codelite-exception-to-gpl",
+    "canonical": {
+        "id": "codelite-exception-to-gpl",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "CodeLite Exception to GPL",
             "LicenseRef-scancode-codelite-exception-to-gpl"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,19 @@
 {
-    "canonical": "GPL-3.0-linking-source-exception",
+    "canonical": {
+        "id": "GPL-3.0-linking-source-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GPL-3.0 Linking Exception (with Corresponding Source)"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "GPL-3.0 Linking Source Exception",
             "gpl-3.0-linking-source-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

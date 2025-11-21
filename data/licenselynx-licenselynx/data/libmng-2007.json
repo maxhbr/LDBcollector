@@ -1,11 +1,15 @@
 {
-    "canonical": "libmng-2007",
+    "canonical": {
+        "id": "libmng-2007",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "libmng License 2007",
             "LicenseRef-scancode-libmng-2007"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

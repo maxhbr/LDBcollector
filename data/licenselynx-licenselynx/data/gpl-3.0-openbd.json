@@ -1,10 +1,15 @@
 {
-    "canonical": "gpl-3.0-openbd",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 3.0h with OpenBD exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "gpl-3.0-openbd",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 3.0h with OpenBD exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "openssl-exception-lgpl",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenSSL exception to LGPL",
-            "LicenseRef-scancode-openssl-exception-lgpl"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "openssl-exception-lgpl",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openssl-exception-lgpl",
+            "OpenSSL exception to LGPL"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

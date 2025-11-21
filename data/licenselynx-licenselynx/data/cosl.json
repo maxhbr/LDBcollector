@@ -1,11 +1,15 @@
 {
-    "canonical": "cosl",
+    "canonical": {
+        "id": "cosl",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Cougaar Open Source License",
             "LicenseRef-scancode-cosl"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

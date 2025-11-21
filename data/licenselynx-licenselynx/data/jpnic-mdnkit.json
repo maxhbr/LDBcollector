@@ -1,11 +1,15 @@
 {
-    "canonical": "jpnic-mdnkit",
+    "canonical": {
+        "id": "jpnic-mdnkit",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "JPNIC mdnkit License",
             "LicenseRef-scancode-jpnic-mdnkit"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "openmap",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenMap Software License Agreement",
-            "LicenseRef-scancode-openmap"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "openmap",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openmap",
+            "OpenMap Software License Agreement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

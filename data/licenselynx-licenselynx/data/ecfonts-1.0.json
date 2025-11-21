@@ -1,12 +1,17 @@
 {
-    "canonical": "ecfonts-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "latex-ec-fonts",
-            "Copyright notice to the ec fonts",
-            "LicenseRef-scancode-ecfonts-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ecfonts-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Copyright notice to the ec fonts",
+            "latex-ec-fonts",
+            "LicenseRef-scancode-ecfonts-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

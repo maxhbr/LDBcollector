@@ -1,23 +1,41 @@
 {
-    "canonical": "ISC",
+    "canonical": {
+        "id": "ISC",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "ISC License"
         ],
         "custom": [
             "Internet Systems Consortium License",
-            "ISC License (Internet Systems Consortium)",
             "Internet Systems Consortium Open Source License",
-            "ISC Open Source License",
+            "ISC License (Internet Systems Consortium)",
             "ISC License (Open Source)",
-            "ISC Open License"
-        ],
-        "scancode-licensedb": [
-            "isc"
+            "ISC Open License",
+            "ISC Open Source License",
+            "isc-license",
+            "ISCL"
         ],
         "osi": [
             "ISC License (ISC)"
+        ],
+        "scancodeLicensedb": [
+            "isc"
+        ],
+        "pypi": [
+            "ISC License (ISCL)",
+            "License :: ISC License",
+            "License :: ISC License (ISCL)",
+            "License :: ISCL",
+            "License :: OSI Approved :: ISC License",
+            "License :: OSI Approved :: ISC License (ISCL)",
+            "License :: OSI Approved :: ISCL",
+            "OSI Approved :: ISC License",
+            "OSI Approved :: ISC License (ISCL)",
+            "OSI Approved :: ISCL"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

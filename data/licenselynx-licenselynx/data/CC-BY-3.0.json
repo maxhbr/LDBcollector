@@ -1,30 +1,36 @@
 {
-    "canonical": "CC-BY-3.0",
+    "canonical": {
+        "id": "CC-BY-3.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Creative Commons Attribution 3.0 Unported"
         ],
         "custom": [
-            "CC BY 3.0",
-            "Creative Commons Attribution 3.0",
-            "Creative Commons BY 3.0",
-            "CC-BY v3.0",
-            "CC BY v3.0",
-            "CC-BY License 3.0",
+            "CC 3.0 BY",
             "CC Attribution 3.0",
             "CC Attribution License 3.0",
+            "CC BY 3.0",
             "CC BY License 3.0",
+            "CC BY v3.0",
+            "CC-BY License 3.0",
+            "CC-BY v3.0",
             "CC-BY Version 3.0",
-            "Creative Commons License Version 3.0",
-            "CC BY v3",
-            "CC-BY v3",
+            "Creative Commons Attribution 3.0",
             "Creative Commons Attribution Version 3.0",
-            "CC 3.0 BY"
+            "Creative Commons BY 3.0",
+            "Creative Commons License Version 3.0"
         ],
-        "scancode-licensedb": [
-            "Creative Commons Attribution License 3.0",
-            "cc-by-3.0"
+        "scancodeLicensedb": [
+            "cc-by-3.0",
+            "Creative Commons Attribution License 3.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [
+        "CC BY v3",
+        "CC-BY v3"
+    ],
+    "isMajorVersionOnly": true
 }

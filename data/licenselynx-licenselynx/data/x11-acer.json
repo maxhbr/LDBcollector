@@ -1,11 +1,15 @@
 {
-    "canonical": "x11-acer",
-    "aliases": {
-        "scancode-licensedb": [
-            "X11-Style (Acer)",
-            "LicenseRef-scancode-x11-acer"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "x11-acer",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-x11-acer",
+            "X11-Style (Acer)"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

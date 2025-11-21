@@ -1,14 +1,19 @@
 {
-    "canonical": "GFDL-1.1-no-invariants-only",
+    "canonical": {
+        "id": "GFDL-1.1-no-invariants-only",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU Free Documentation License v1.1 only - no invariants"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "gfdl-1.1-no-invariants-only",
-            "GFDL-1.1-no-invariants-only"
+        "scancodeLicensedb": [
+            "GFDL-1.1-no-invariants-only",
+            "gfdl-1.1-no-invariants-only"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

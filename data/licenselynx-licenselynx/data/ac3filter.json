@@ -1,11 +1,15 @@
 {
-    "canonical": "ac3filter",
+    "canonical": {
+        "id": "ac3filter",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "AC3Filter License",
             "LicenseRef-scancode-ac3filter"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

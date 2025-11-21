@@ -1,11 +1,15 @@
 {
-    "canonical": "crashlytics-agreement-2018",
+    "canonical": {
+        "id": "crashlytics-agreement-2018",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Crashlytics Agreement 2018",
             "LicenseRef-scancode-crashlytics-agreement-2018"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

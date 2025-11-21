@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "berryai-2024",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "BerriAI Enterprise license 2024",
+            "LicenseRef-scancode-berryai-2024"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

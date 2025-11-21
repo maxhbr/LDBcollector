@@ -1,11 +1,15 @@
 {
-    "canonical": "adobe-color-profile-license",
+    "canonical": {
+        "id": "adobe-color-profile-license",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Adobe Color Profile License agreement",
             "LicenseRef-scancode-adobe-color-profile-license"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

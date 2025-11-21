@@ -1,10 +1,14 @@
 {
-    "canonical": "sun-proprietary-jdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun proprietary notice for Java sources"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-proprietary-jdk",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Sun proprietary notice for Java sources"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

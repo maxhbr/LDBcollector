@@ -1,11 +1,15 @@
 {
-    "canonical": "boutell-libgd-2021",
+    "canonical": {
+        "id": "boutell-libgd-2021",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Boutell libgd declarations 2021",
             "LicenseRef-scancode-boutell-libgd-2021"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

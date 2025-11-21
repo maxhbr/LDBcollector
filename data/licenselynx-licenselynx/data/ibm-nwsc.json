@@ -1,12 +1,16 @@
 {
-    "canonical": "ibm-nwsc",
+    "canonical": {
+        "id": "ibm-nwsc",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "IBM International License Agreement for Non-Warranted Sample Code",
             "IBM Non-Warranted Sample Code License",
             "LicenseRef-scancode-ibm-nwsc"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

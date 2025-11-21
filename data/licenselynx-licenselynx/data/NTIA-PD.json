@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "NTIA-PD",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "NTIA Public Domain Notice"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "ntia-pd"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

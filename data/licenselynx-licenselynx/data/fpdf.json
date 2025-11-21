@@ -1,11 +1,15 @@
 {
-    "canonical": "fpdf",
+    "canonical": {
+        "id": "fpdf",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "FPDF License",
             "LicenseRef-scancode-fpdf"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

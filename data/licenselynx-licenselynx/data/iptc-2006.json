@@ -1,12 +1,16 @@
 {
-    "canonical": "iptc-2006",
+    "canonical": {
+        "id": "iptc-2006",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "IPTC License Agreement 2006",
             "License Agreement for International Press Telecommunications Council 2006",
             "LicenseRef-scancode-iptc-2006"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

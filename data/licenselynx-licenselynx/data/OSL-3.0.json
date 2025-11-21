@@ -1,17 +1,34 @@
 {
-    "canonical": "OSL-3.0",
+    "canonical": {
+        "id": "OSL-3.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open Software License 3.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "osl-3.0",
-            "OSL 3.0"
-        ],
         "osi": [
             "Open Software License, Version 3.0"
+        ],
+        "scancodeLicensedb": [
+            "OSL 3.0",
+            "osl-3.0"
+        ],
+        "pypi": [
+            "License :: Open Software License 3.0",
+            "License :: Open Software License 3.0 (OSL-3.0)",
+            "License :: OSI Approved :: Open Software License 3.0",
+            "License :: OSI Approved :: Open Software License 3.0 (OSL-3.0)",
+            "License :: OSI Approved :: OSL-3.0",
+            "License :: OSL-3.0",
+            "Open Software License 3.0 (OSL-3.0)",
+            "OSI Approved :: Open Software License 3.0",
+            "OSI Approved :: Open Software License 3.0 (OSL-3.0)",
+            "OSI Approved :: OSL-3.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

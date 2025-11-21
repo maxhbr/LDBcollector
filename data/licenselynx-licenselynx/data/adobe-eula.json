@@ -1,12 +1,16 @@
 {
-    "canonical": "adobe-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "Adobe EULA",
-            "Adobe End User License Agreement",
-            "LicenseRef-scancode-adobe-eula"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "adobe-eula",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Adobe End User License Agreement",
+            "Adobe EULA",
+            "LicenseRef-scancode-adobe-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

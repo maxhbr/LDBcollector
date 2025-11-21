@@ -1,11 +1,15 @@
 {
-    "canonical": "x11-r75",
-    "aliases": {
-        "scancode-licensedb": [
-            "X11-R7.5",
-            "X.Org Preferred License"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "x11-r75",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "X.Org Preferred License",
+            "X11-R7.5"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

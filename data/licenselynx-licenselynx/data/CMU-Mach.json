@@ -1,16 +1,20 @@
 {
-    "canonical": "CMU-Mach",
+    "canonical": {
+        "id": "CMU-Mach",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "CMU Mach License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "carnegie-mellon-contributors",
+        "scancodeLicensedb": [
             "Carnegie Mellon Contributors",
             "Carnegie Mellon Contributors License",
+            "carnegie-mellon-contributors",
             "LicenseRef-scancode-carnegie-mellon-contributors"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

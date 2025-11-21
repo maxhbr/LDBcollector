@@ -1,11 +1,15 @@
 {
-    "canonical": "hdf4",
+    "canonical": {
+        "id": "hdf4",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "HDF4 License",
             "LicenseRef-scancode-hdf4"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

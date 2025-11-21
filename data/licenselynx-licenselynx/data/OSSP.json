@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "OSSP",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "OSSP License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -1,11 +1,15 @@
 {
-    "canonical": "eric-glass",
+    "canonical": {
+        "id": "eric-glass",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Eric Glass License",
             "LicenseRef-scancode-eric-glass"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

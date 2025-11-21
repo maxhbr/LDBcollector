@@ -1,11 +1,15 @@
 {
-    "canonical": "bsd-plus-mod-notice",
+    "canonical": {
+        "id": "bsd-plus-mod-notice",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BSD plus modification notice",
             "LicenseRef-scancode-bsd-plus-mod-notice"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

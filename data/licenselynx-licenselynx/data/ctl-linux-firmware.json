@@ -1,11 +1,15 @@
 {
-    "canonical": "ctl-linux-firmware",
+    "canonical": {
+        "id": "ctl-linux-firmware",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Creative Technology Linux Firmware License",
             "LicenseRef-scancode-ctl-linux-firmware"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

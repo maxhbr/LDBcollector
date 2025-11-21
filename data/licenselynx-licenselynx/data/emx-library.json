@@ -1,11 +1,15 @@
 {
-    "canonical": "emx-library",
+    "canonical": {
+        "id": "emx-library",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "EMX Library License",
             "LicenseRef-scancode-emx-library"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

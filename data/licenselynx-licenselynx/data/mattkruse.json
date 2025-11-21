@@ -1,11 +1,15 @@
 {
-    "canonical": "mattkruse",
-    "aliases": {
-        "scancode-licensedb": [
-            "Matt Kruse License",
-            "LicenseRef-scancode-mattkruse"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mattkruse",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mattkruse",
+            "Matt Kruse License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

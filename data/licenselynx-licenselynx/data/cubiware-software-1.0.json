@@ -1,12 +1,17 @@
 {
-    "canonical": "cubiware-software-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Cubiware Sp. z o.o. Software License Version 1.0",
-            "Cubiware Software License 1.0",
-            "LicenseRef-scancode-cubiware-software-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "cubiware-software-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Cubiware Software License 1.0",
+            "Cubiware Sp. z o.o. Software License Version 1.0",
+            "LicenseRef-scancode-cubiware-software-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

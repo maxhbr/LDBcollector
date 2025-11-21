@@ -1,14 +1,19 @@
 {
-    "canonical": "OLDAP-2.0.1",
+    "canonical": {
+        "id": "OLDAP-2.0.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open LDAP Public License v2.0.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "openldap-2.0.1",
-            "OpenLDAP Public License 2.0.1"
+        "scancodeLicensedb": [
+            "OpenLDAP Public License 2.0.1",
+            "openldap-2.0.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

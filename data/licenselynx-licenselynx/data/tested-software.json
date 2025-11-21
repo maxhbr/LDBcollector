@@ -1,11 +1,15 @@
 {
-    "canonical": "tested-software",
-    "aliases": {
-        "scancode-licensedb": [
-            "Tested Software License",
-            "LicenseRef-scancode-tested-software"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "tested-software",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tested-software",
+            "Tested Software License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

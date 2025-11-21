@@ -1,15 +1,20 @@
 {
-    "canonical": "ASWF-Digital-Assets-1.1",
+    "canonical": {
+        "id": "ASWF-Digital-Assets-1.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "ASWF Digital Assets License 1.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-aswf-digital-assets-1.1",
+        "scancodeLicensedb": [
             "ASWF Digital Assets License v1.1",
-            "aswf-digital-assets-1.1"
+            "aswf-digital-assets-1.1",
+            "LicenseRef-scancode-aswf-digital-assets-1.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

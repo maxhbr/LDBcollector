@@ -1,12 +1,16 @@
 {
-    "canonical": "wxwindows-free-doc-3",
-    "aliases": {
-        "scancode-licensedb": [
-            "wxWindows Free Documentation v3",
-            "LicenseRef-scancode-wxwindows-free-doc-3",
-            "wxWindows Free Documentation Licence, Version 3"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "wxwindows-free-doc-3",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-wxwindows-free-doc-3",
+            "wxWindows Free Documentation Licence, Version 3",
+            "wxWindows Free Documentation v3"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

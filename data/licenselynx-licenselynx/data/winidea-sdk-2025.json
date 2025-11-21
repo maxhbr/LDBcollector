@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "winidea-sdk-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-winidea-sdk-2025",
+            "winIDEA SDK 2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

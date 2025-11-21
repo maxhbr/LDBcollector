@@ -1,11 +1,15 @@
 {
-    "canonical": "bruno-podetti",
+    "canonical": {
+        "id": "bruno-podetti",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Bruno Podetti License",
             "LicenseRef-scancode-bruno-podetti"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

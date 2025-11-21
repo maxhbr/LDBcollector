@@ -1,14 +1,19 @@
 {
-    "canonical": "OPL-UK-3.0",
+    "canonical": {
+        "id": "OPL-UK-3.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "United    Kingdom Open Parliament Licence v3.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "United Kingdom Open Parliament Licence v3.0",
-            "opl-uk-3.0"
+        "scancodeLicensedb": [
+            "opl-uk-3.0",
+            "United Kingdom Open Parliament Licence v3.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,12 +1,17 @@
 {
-    "canonical": "can-ogl-british-columbia-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Open Government Licence British Columbia 2.0",
-            "OGL British Columbia 2.0",
-            "LicenseRef-scancode-can-ogl-british-columbia-2.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "can-ogl-british-columbia-2.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-can-ogl-british-columbia-2.0",
+            "OGL British Columbia 2.0",
+            "Open Government Licence British Columbia 2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

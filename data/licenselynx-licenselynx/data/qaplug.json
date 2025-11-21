@@ -1,11 +1,15 @@
 {
-    "canonical": "qaplug",
-    "aliases": {
-        "scancode-licensedb": [
-            "QAPlug License",
-            "LicenseRef-scancode-qaplug"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "qaplug",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-qaplug",
+            "QAPlug License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

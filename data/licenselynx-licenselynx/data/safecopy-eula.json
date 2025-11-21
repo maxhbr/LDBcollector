@@ -1,11 +1,15 @@
 {
-    "canonical": "safecopy-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "SafeCopy EULA",
-            "LicenseRef-scancode-safecopy-eula"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "safecopy-eula",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-safecopy-eula",
+            "SafeCopy EULA"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

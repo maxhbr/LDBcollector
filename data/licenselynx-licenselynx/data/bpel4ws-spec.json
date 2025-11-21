@@ -1,11 +1,15 @@
 {
-    "canonical": "bpel4ws-spec",
+    "canonical": {
+        "id": "bpel4ws-spec",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BPEL4WS Specification license",
             "LicenseRef-scancode-bpel4ws-spec"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

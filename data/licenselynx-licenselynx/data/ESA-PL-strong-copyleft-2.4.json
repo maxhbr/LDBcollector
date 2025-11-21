@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "ESA-PL-strong-copyleft-2.4",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "European Space Agency Public License (ESA-PL) - V2.4 - Strong Copyleft (Type 1)"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -1,12 +1,17 @@
 {
-    "canonical": "cc-nc-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Creative Commons NonCommercial License 1.0",
-            "CC-NC-1.0",
-            "LicenseRef-scancode-cc-nc-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "cc-nc-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "CC-NC-1.0",
+            "Creative Commons NonCommercial License 1.0",
+            "LicenseRef-scancode-cc-nc-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

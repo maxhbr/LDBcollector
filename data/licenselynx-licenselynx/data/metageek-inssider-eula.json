@@ -1,12 +1,16 @@
 {
-    "canonical": "metageek-inssider-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "inSSIDer EULA",
-            "inSSIDer End User License Agreement",
-            "LicenseRef-scancode-metageek-inssider-eula"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "metageek-inssider-eula",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "inSSIDer End User License Agreement",
+            "inSSIDer EULA",
+            "LicenseRef-scancode-metageek-inssider-eula"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

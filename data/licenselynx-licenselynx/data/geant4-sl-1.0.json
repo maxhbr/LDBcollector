@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "geant4-sl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Geant4 Software License v1.0",
+            "LicenseRef-scancode-geant4-sl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

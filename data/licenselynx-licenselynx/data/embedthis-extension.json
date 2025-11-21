@@ -1,11 +1,15 @@
 {
-    "canonical": "embedthis-extension",
+    "canonical": {
+        "id": "embedthis-extension",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Embedthis Extension License",
             "LicenseRef-scancode-embedthis-extension"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

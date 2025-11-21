@@ -1,17 +1,22 @@
 {
-    "canonical": "OSL-2.1",
+    "canonical": {
+        "id": "OSL-2.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open Software License 2.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "osl-2.1",
-            "OSL 2.1"
-        ],
         "osi": [
             "Open Software License, Version 2.1"
+        ],
+        "scancodeLicensedb": [
+            "OSL 2.1",
+            "osl-2.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

@@ -1,10 +1,14 @@
 {
-    "canonical": "bsd-axis",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD-Axis"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "bsd-axis",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BSD-Axis"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

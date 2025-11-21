@@ -1,14 +1,19 @@
 {
-    "canonical": "ErlPL-1.1",
+    "canonical": {
+        "id": "ErlPL-1.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Erlang Public License v1.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "erlangpl-1.1",
-            "Erlang Public License 1.1"
+        "scancodeLicensedb": [
+            "Erlang Public License 1.1",
+            "erlangpl-1.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

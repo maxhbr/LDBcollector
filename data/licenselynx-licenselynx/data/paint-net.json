@@ -1,11 +1,15 @@
 {
-    "canonical": "paint-net",
-    "aliases": {
-        "scancode-licensedb": [
-            "Paint.NET License",
-            "LicenseRef-scancode-paint-net"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "paint-net",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-paint-net",
+            "Paint.NET License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

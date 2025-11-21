@@ -1,15 +1,19 @@
 {
-    "canonical": "HPND-DEC",
+    "canonical": {
+        "id": "HPND-DEC",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Historical Permission Notice and Disclaimer - DEC variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "LicenseRef-scancode-x11-dec2",
             "x11-dec2",
             "X11-Style (DEC 2)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

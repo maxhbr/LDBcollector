@@ -1,12 +1,17 @@
 {
-    "canonical": "ldpl-2.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Linux Documentation Project License (LDPL) v2.0",
-            "LDPL-2.0",
-            "LicenseRef-scancode-ldpl-2.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ldpl-2.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LDPL-2.0",
+            "LicenseRef-scancode-ldpl-2.0",
+            "Linux Documentation Project License (LDPL) v2.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

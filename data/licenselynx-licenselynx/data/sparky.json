@@ -1,11 +1,15 @@
 {
-    "canonical": "sparky",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sparky License",
-            "LicenseRef-scancode-sparky"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sparky",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sparky",
+            "Sparky License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

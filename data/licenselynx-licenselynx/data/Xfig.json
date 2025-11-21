@@ -1,15 +1,19 @@
 {
-    "canonical": "Xfig",
+    "canonical": {
+        "id": "Xfig",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Xfig License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "mit-xfig",
+        "scancodeLicensedb": [
             "LicenseRef-scancode-mit-xfig",
-            "MIT Xfig Variant"
+            "MIT Xfig Variant",
+            "mit-xfig"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "jam-stapl",
+    "canonical": {
+        "id": "jam-stapl",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Jam STAPL Software License",
             "LicenseRef-scancode-jam-stapl"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,16 @@
 {
-    "canonical": "gpl-2.0-koterov",
+    "canonical": {
+        "id": "gpl-2.0-koterov",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "GPL 2.0 with Dmitry Koterov additions",
             "LicenseRef-scancode-gpl-2.0-koterov"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

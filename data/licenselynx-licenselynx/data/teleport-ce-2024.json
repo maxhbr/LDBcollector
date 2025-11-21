@@ -1,11 +1,15 @@
 {
-    "canonical": "teleport-ce-2024",
+    "canonical": {
+        "id": "teleport-ce-2024",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "LicenseRef-scancode-teleport-ce-2024",
             "Teleport Community Edition License 2024"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

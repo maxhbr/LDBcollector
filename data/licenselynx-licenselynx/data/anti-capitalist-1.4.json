@@ -1,12 +1,17 @@
 {
-    "canonical": "anti-capitalist-1.4",
+    "canonical": {
+        "id": "anti-capitalist-1.4",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "ACSL v. 1.4",
             "Anti-Capitalist Software License (v 1.4)",
             "LicenseRef-scancode-anti-capitalist-1.4"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

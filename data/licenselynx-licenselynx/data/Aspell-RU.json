@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "Aspell-RU",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Aspell Russian License"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "aspell-ru"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

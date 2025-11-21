@@ -1,11 +1,15 @@
 {
-    "canonical": "bsd-3-clause-no-trademark",
+    "canonical": {
+        "id": "bsd-3-clause-no-trademark",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "BSD 3-Clause no trademark",
             "LicenseRef-scancode-bsd-3-clause-no-trademark"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

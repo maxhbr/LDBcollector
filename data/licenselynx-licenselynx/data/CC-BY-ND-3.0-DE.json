@@ -1,14 +1,19 @@
 {
-    "canonical": "CC-BY-ND-3.0-DE",
+    "canonical": {
+        "id": "CC-BY-ND-3.0-DE",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Creative Commons Attribution No Derivatives 3.0 Germany"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "cc-by-nd-3.0-de",
-            "CC-BY-ND-3.0-DE"
+        "scancodeLicensedb": [
+            "CC-BY-ND-3.0-DE",
+            "cc-by-nd-3.0-de"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

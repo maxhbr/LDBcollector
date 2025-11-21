@@ -1,12 +1,17 @@
 {
-    "canonical": "ic-shared-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Internet Computer Shared Community Source License 1.0",
-            "IC Shared 1.0",
-            "LicenseRef-scancode-ic-shared-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ic-shared-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "IC Shared 1.0",
+            "Internet Computer Shared Community Source License 1.0",
+            "LicenseRef-scancode-ic-shared-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

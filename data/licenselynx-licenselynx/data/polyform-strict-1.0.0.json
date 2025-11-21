@@ -1,11 +1,16 @@
 {
-    "canonical": "polyform-strict-1.0.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "Polyform Strict License 1.0.0",
-            "LicenseRef-scancode-polyform-strict-1.0.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "polyform-strict-1.0.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-polyform-strict-1.0.0",
+            "Polyform Strict License 1.0.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "gradle-tou-2022-01-13",
+    "canonical": {
+        "id": "gradle-tou-2022-01-13",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Gradle Terms of Use 2022-01-13",
             "LicenseRef-scancode-gradle-tou-2022-01-13"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

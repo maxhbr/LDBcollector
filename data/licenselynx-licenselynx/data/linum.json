@@ -1,10 +1,14 @@
 {
-    "canonical": "linum",
-    "aliases": {
-        "scancode-licensedb": [
-            "Linum Software License"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "linum",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Linum Software License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

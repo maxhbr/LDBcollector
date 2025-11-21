@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "fido-metadata-ut-3.00",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "FIDO Alliance Metadata Usage Terms 3.00",
+            "FIDO Alliance Metadata UT-3.00",
+            "LicenseRef-scancode-fido-metadata-ut-3.00"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

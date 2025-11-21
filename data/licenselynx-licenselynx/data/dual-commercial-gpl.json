@@ -1,11 +1,15 @@
 {
-    "canonical": "dual-commercial-gpl",
+    "canonical": {
+        "id": "dual-commercial-gpl",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Dual Commercial-GPL",
             "LicenseRef-scancode-dual-commercial-gpl"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

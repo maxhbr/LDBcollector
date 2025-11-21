@@ -1,11 +1,15 @@
 {
-    "canonical": "apple-mfi-license",
+    "canonical": {
+        "id": "apple-mfi-license",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Apple MFi License",
             "LicenseRef-scancode-apple-mfi-license"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

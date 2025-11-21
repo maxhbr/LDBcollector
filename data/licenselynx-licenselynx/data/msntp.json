@@ -1,12 +1,16 @@
 {
-    "canonical": "msntp",
-    "aliases": {
-        "scancode-licensedb": [
-            "MSNTP software license",
-            "MSNTP License",
-            "LicenseRef-scancode-msntp"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "msntp",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-msntp",
+            "MSNTP License",
+            "MSNTP software license"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

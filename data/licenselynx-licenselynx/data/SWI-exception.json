@@ -1,14 +1,18 @@
 {
-    "canonical": "SWI-exception",
+    "canonical": {
+        "id": "SWI-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "SWI exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "SWI exception to GPL 2.0 or later",
             "swi-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,18 @@
 {
-    "canonical": "NIST-PD-fallback",
+    "canonical": {
+        "id": "NIST-PD-fallback",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "NIST Public Domain Notice with license fallback"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "nist-pd-fallback",
-            "NIST Public Domain Notice with fallback"
+        "scancodeLicensedb": [
+            "NIST Public Domain Notice with fallback",
+            "nist-pd-fallback"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

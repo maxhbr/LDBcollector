@@ -1,11 +1,15 @@
 {
-    "canonical": "mysql-linking-exception-2018",
-    "aliases": {
-        "scancode-licensedb": [
-            "MySQL linking exception 2018",
-            "LicenseRef-scancode-mysql-linking-exception-2018"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mysql-linking-exception-2018",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mysql-linking-exception-2018",
+            "MySQL linking exception 2018"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

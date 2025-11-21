@@ -1,11 +1,15 @@
 {
-    "canonical": "esri",
+    "canonical": {
+        "id": "esri",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Esri License",
             "LicenseRef-scancode-esri"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

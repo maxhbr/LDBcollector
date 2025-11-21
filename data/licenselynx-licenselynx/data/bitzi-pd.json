@@ -1,12 +1,16 @@
 {
-    "canonical": "bitzi-pd",
-    "aliases": {
-        "scancode-licensedb": [
-            "Bitzi-PD",
-            "Bitzi Public Domain",
-            "LicenseRef-scancode-bitzi-pd"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "bitzi-pd",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Bitzi Public Domain",
+            "Bitzi-PD",
+            "LicenseRef-scancode-bitzi-pd"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,19 @@
 {
-    "canonical": "Universal-FOSS-exception-1.0",
+    "canonical": {
+        "id": "Universal-FOSS-exception-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Universal FOSS Exception, Version 1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "universal-foss-exception-1.0",
-            "Universal FOSS Exception v1.0"
+        "scancodeLicensedb": [
+            "Universal FOSS Exception v1.0",
+            "universal-foss-exception-1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

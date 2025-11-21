@@ -1,13 +1,18 @@
 {
-    "canonical": "SAX-PD-2.0",
+    "canonical": {
+        "id": "SAX-PD-2.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sax Public Domain Notice 2.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "sax-pd-2.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "strongswan-exception",
-    "aliases": {
-        "scancode-licensedb": [
-            "strongSwan exception to GPL",
-            "LicenseRef-scancode-strongswan-exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "strongswan-exception",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-strongswan-exception",
+            "strongSwan exception to GPL"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,20 @@
 {
-    "canonical": "SSPL-1.0",
+    "canonical": {
+        "id": "SSPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Server Side Public License, v 1"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
+            "mongodb-sspl-1.0",
             "Server Side Public License (SSPL) 1.0",
-            "SSPL 1.0",
-            "mongodb-sspl-1.0"
+            "SSPL 1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

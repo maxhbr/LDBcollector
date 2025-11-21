@@ -1,12 +1,16 @@
 {
-    "canonical": "bsd-artwork",
-    "aliases": {
-        "scancode-licensedb": [
-            "BSD Artwork License",
-            "BSD Artwork",
-            "LicenseRef-scancode-bsd-artwork"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "bsd-artwork",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BSD Artwork",
+            "BSD Artwork License",
+            "LicenseRef-scancode-bsd-artwork"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

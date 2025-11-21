@@ -1,15 +1,19 @@
 {
-    "canonical": "AML-glslang",
+    "canonical": {
+        "id": "AML-glslang",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "AML glslang variant License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "nvidia-2002",
+        "scancodeLicensedb": [
             "LicenseRef-scancode-nvidia-2002",
-            "NVIDIA 2002 License"
+            "NVIDIA 2002 License",
+            "nvidia-2002"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

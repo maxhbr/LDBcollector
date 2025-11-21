@@ -1,10 +1,15 @@
 {
-    "canonical": "GPL-2.0-with-bison-exception",
+    "canonical": {
+        "id": "GPL-2.0-with-bison-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU General Public License v2.0 w/Bison exception"
         ],
         "custom": []
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

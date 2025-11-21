@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "root-cert-3.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-root-cert-3.0",
+            "Root Certificate License Agreement v3.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

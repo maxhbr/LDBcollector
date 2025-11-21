@@ -1,12 +1,17 @@
 {
-    "canonical": "aptana-1.0",
+    "canonical": {
+        "id": "aptana-1.0",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Aptana 1.0",
             "Aptana Public License 1.0",
             "LicenseRef-scancode-aptana-1.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

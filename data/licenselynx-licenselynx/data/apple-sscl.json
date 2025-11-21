@@ -1,11 +1,15 @@
 {
-    "canonical": "apple-sscl",
+    "canonical": {
+        "id": "apple-sscl",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Apple Sample Source Code License",
             "LicenseRef-scancode-apple-sscl"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

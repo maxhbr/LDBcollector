@@ -1,11 +1,15 @@
 {
-    "canonical": "bash-exception-gpl",
+    "canonical": {
+        "id": "bash-exception-gpl",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Bash exception to GPL",
             "LicenseRef-scancode-bash-exception-gpl-2.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

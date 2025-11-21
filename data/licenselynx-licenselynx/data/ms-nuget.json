@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-nuget",
-    "aliases": {
-        "scancode-licensedb": [
-            "Microsoft Nuget License",
-            "MS Nuget",
-            "LicenseRef-scancode-ms-nuget"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-nuget",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-nuget",
+            "Microsoft Nuget License",
+            "MS Nuget"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

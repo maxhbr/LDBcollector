@@ -1,11 +1,15 @@
 {
-    "canonical": "zipeg",
-    "aliases": {
-        "scancode-licensedb": [
-            "Zipeg License",
-            "LicenseRef-scancode-zipeg"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "zipeg",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-zipeg",
+            "Zipeg License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

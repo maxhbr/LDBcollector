@@ -1,14 +1,18 @@
 {
-    "canonical": "NTP-0",
+    "canonical": {
+        "id": "NTP-0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "NTP No Attribution"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "NTP-0",
             "ntp-0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

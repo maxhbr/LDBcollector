@@ -1,14 +1,18 @@
 {
-    "canonical": "Linux-man-pages-copyleft-var",
+    "canonical": {
+        "id": "Linux-man-pages-copyleft-var",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Linux man-pages Copyleft Variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Linux man-pages Variant",
             "linux-man-pages-copyleft-var"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

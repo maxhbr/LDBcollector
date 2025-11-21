@@ -1,11 +1,15 @@
 {
-    "canonical": "linuxhowtos",
-    "aliases": {
-        "scancode-licensedb": [
-            "linuxhowtos License",
-            "LicenseRef-scancode-linuxhowtos"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "linuxhowtos",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-linuxhowtos",
+            "linuxhowtos License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

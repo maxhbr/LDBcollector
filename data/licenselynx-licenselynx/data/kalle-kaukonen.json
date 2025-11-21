@@ -1,11 +1,15 @@
 {
-    "canonical": "kalle-kaukonen",
+    "canonical": {
+        "id": "kalle-kaukonen",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Kalle Kaukonen License",
             "LicenseRef-scancode-kalle-kaukonen"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

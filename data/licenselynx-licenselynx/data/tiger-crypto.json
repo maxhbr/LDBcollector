@@ -1,11 +1,15 @@
 {
-    "canonical": "tiger-crypto",
-    "aliases": {
-        "scancode-licensedb": [
-            "Tiger Cryptography License",
-            "LicenseRef-scancode-tiger-crypto"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "tiger-crypto",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tiger-crypto",
+            "Tiger Cryptography License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

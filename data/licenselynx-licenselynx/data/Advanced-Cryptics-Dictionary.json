@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "Advanced-Cryptics-Dictionary",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Advanced Cryptics Dictionary License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

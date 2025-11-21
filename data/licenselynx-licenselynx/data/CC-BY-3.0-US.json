@@ -1,14 +1,19 @@
 {
-    "canonical": "CC-BY-3.0-US",
+    "canonical": {
+        "id": "CC-BY-3.0-US",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Creative Commons Attribution 3.0 United States"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "cc-by-3.0-us",
-            "CC-BY-3.0-US"
+        "scancodeLicensedb": [
+            "CC-BY-3.0-US",
+            "cc-by-3.0-us"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

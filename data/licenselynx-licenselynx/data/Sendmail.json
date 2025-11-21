@@ -1,13 +1,17 @@
 {
-    "canonical": "Sendmail",
+    "canonical": {
+        "id": "Sendmail",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Sendmail License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "sendmail"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

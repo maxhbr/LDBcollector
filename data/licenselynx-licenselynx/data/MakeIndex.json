@@ -1,14 +1,18 @@
 {
-    "canonical": "MakeIndex",
+    "canonical": {
+        "id": "MakeIndex",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MakeIndex License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "makeindex",
             "MakeIndex Distribution Notice"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

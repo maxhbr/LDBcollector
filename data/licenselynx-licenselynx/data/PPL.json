@@ -1,13 +1,17 @@
 {
-    "canonical": "PPL",
+    "canonical": {
+        "id": "PPL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Peer Production License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "ppl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

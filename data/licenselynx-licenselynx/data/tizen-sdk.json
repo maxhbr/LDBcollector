@@ -1,11 +1,15 @@
 {
-    "canonical": "tizen-sdk",
-    "aliases": {
-        "scancode-licensedb": [
-            "Tizen SDK License",
-            "LicenseRef-scancode-tizen-sdk"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "tizen-sdk",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tizen-sdk",
+            "Tizen SDK License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

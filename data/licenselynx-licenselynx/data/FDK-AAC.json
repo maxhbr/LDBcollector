@@ -1,15 +1,19 @@
 {
-    "canonical": "FDK-AAC",
+    "canonical": {
+        "id": "FDK-AAC",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Fraunhofer FDK AAC Codec Library"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "fraunhofer-fdk-aac-codec",
+        "scancodeLicensedb": [
             "Fraunhofer FDK AAC Codec Library for Android",
+            "fraunhofer-fdk-aac-codec",
             "LicenseRef-scancode-fraunhofer-fdk-aac-codec"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "matthew-welch-font-license",
-    "aliases": {
-        "scancode-licensedb": [
-            "Matthew Welch Font License",
-            "LicenseRef-scancode-matthew-welch-font-license"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "matthew-welch-font-license",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-matthew-welch-font-license",
+            "Matthew Welch Font License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

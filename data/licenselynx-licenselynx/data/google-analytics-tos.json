@@ -1,11 +1,15 @@
 {
-    "canonical": "google-analytics-tos",
+    "canonical": {
+        "id": "google-analytics-tos",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Google Analytics Terms of Service",
             "LicenseRef-scancode-google-analytics-tos"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "charmpp-converse-2017",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Charm++/Converse License 2017",
+            "LicenseRef-scancode-charmpp-converse-2017"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

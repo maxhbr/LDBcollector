@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "os4d-1.1-apache-2.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "Bitcaster Source License, Version 1.1, Apache 2.0 Future License",
+            "LicenseRef-scancode-os4d-1.1-apache-2.0",
+            "OS4D-1.1-Apache-2.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

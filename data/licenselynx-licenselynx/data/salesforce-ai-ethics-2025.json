@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "salesforce-ai-ethics-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-salesforce-ai-ethics-2025",
+            "Salesforce AI Ethics Disclaimer 2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

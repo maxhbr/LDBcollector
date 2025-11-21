@@ -1,11 +1,15 @@
 {
-    "canonical": "mediainfo-lib",
-    "aliases": {
-        "scancode-licensedb": [
-            "MediaInfo(Lib) License",
-            "LicenseRef-scancode-mediainfo-lib"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mediainfo-lib",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mediainfo-lib",
+            "MediaInfo(Lib) License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

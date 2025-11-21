@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "SGMLUG-PM",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "SGMLUG Parser Materials License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

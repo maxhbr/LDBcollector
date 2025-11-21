@@ -1,14 +1,20 @@
 {
-    "canonical": "MulanPSL-1.0",
+    "canonical": {
+        "id": "MulanPSL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Mulan Permissive Software License, Version 1"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "mulanpsl-1.0",
-            "Mulan PSL v1"
+        "scancodeLicensedb": [
+            "mulanpsl-1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [
+        "Mulan PSL v1"
+    ],
+    "isMajorVersionOnly": true
 }

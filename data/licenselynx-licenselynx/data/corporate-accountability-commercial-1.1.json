@@ -1,13 +1,19 @@
 {
-    "canonical": "corporate-accountability-commercial-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "CC+CAL",
-            "LicenseRef-scancode-corporate-accountability-commercial-1.1",
-            "CC + Corporate Accountability Lab",
-            "LicenseRef-scancode-accountability-commercial-1.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "corporate-accountability-commercial-1.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-accountability-commercial-1.1",
+            "LicenseRef-scancode-corporate-accountability-commercial-1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [
+        "CC + Corporate Accountability Lab",
+        "CC+CAL"
+    ],
+    "isMajorVersionOnly": true
 }

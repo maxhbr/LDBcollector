@@ -1,11 +1,15 @@
 {
-    "canonical": "clear-bsd-1-clause",
+    "canonical": {
+        "id": "clear-bsd-1-clause",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Clear BSD 1-Clause License",
             "LicenseRef-scancode-clear-bsd-1-clause"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "eqvsl-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Eclipse Foundation Quality Verification Suite License - V 1.0",
+            "Eclipse QVSL 1.0",
+            "LicenseRef-scancode-eqvsl-1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

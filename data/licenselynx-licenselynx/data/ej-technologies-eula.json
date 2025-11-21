@@ -1,11 +1,15 @@
 {
-    "canonical": "ej-technologies-eula",
+    "canonical": {
+        "id": "ej-technologies-eula",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "ej-technologies EULA",
             "LicenseRef-scancode-ej-technologies-eula"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

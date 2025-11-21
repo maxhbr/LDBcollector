@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "xmos-public-1",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-xmos-public-1",
+            "XMOS Public Licence v1"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

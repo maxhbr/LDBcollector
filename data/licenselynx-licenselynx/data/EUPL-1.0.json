@@ -1,15 +1,34 @@
 {
-    "canonical": "EUPL-1.0",
+    "canonical": {
+        "id": "EUPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "European Union Public License 1.0"
         ],
-        "custom": [],
-        "scancode-licensedb": [
+        "custom": [
+            "eupl1.0"
+        ],
+        "scancodeLicensedb": [
             "EUPL 1.0",
-            "European Union Public Licence 1.0",
-            "eupl-1.0"
+            "eupl-1.0",
+            "European Union Public Licence 1.0"
+        ],
+        "pypi": [
+            "European Union Public Licence 1.0 (EUPL 1.0)",
+            "License :: EUPL 1.0",
+            "License :: European Union Public Licence 1.0",
+            "License :: European Union Public Licence 1.0 (EUPL 1.0)",
+            "License :: OSI Approved :: EUPL 1.0",
+            "License :: OSI Approved :: European Union Public Licence 1.0",
+            "License :: OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)",
+            "OSI Approved :: EUPL 1.0",
+            "OSI Approved :: European Union Public Licence 1.0",
+            "OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

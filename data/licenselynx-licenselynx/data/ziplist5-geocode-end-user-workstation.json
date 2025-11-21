@@ -1,13 +1,17 @@
 {
-    "canonical": "ziplist5-geocode-end-user-workstation",
-    "aliases": {
-        "scancode-licensedb": [
-            "ZIPList5 Geocode End-User Workstation (Single-User) License Agreement",
-            "ZIPList5 Geocode End-User Workstation License",
-            "LicenseRef-scancode-ziplist5-geocode-end-user-workstation",
-            "LicenseRef-scancode-ziplist5-geocode-workstation"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ziplist5-geocode-end-user-workstation",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ziplist5-geocode-end-user-workstation",
+            "LicenseRef-scancode-ziplist5-geocode-workstation",
+            "ZIPList5 Geocode End-User Workstation (Single-User) License Agreement",
+            "ZIPList5 Geocode End-User Workstation License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

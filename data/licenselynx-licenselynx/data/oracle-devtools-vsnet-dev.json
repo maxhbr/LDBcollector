@@ -1,12 +1,16 @@
 {
-    "canonical": "oracle-devtools-vsnet-dev",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle DevTools for Visual Studio .NET Development",
-            "Oracle Developer Tools for Visual Studio .NET Development License",
-            "LicenseRef-scancode-oracle-devtools-vsnet-dev"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "oracle-devtools-vsnet-dev",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oracle-devtools-vsnet-dev",
+            "Oracle Developer Tools for Visual Studio .NET Development License",
+            "Oracle DevTools for Visual Studio .NET Development"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

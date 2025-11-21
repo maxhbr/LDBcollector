@@ -1,11 +1,15 @@
 {
-    "canonical": "ibm-data-server-2011",
+    "canonical": {
+        "id": "ibm-data-server-2011",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "IBM Data Server License 2011",
             "LicenseRef-scancode-ibm-data-server-2011"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

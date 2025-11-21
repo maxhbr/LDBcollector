@@ -1,11 +1,15 @@
 {
-    "canonical": "accellera-systemc",
-    "aliases": {
-        "scancode-licensedb": [
-            "SystemC Open Source License Agreement",
-            "LicenseRef-scancode-accellera-systemc"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "accellera-systemc",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-accellera-systemc",
+            "SystemC Open Source License Agreement"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

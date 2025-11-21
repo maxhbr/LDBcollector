@@ -1,11 +1,15 @@
 {
-    "canonical": "jython",
+    "canonical": {
+        "id": "jython",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Jython License",
             "LicenseRef-scancode-jython"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

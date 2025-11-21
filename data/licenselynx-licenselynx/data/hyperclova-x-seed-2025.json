@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "hyperclova-x-seed-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "HyperCLOVA X SEED Model 2025",
+            "HyperCLOVA X SEED Model License Agreement 2025",
+            "LicenseRef-scancode-hyperclova-x-seed-2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

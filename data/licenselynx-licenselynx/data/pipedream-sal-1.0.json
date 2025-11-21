@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "pipedream-sal-1.0",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-pipedream-sal-1.0",
+            "Pipedream Source Available License 1.0",
+            "Pipedream Source Available License Version 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

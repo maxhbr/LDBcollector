@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-data-tier-af-2022",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Data-Tier Application Framework License",
-            "Microsoft Data-Tier Application Framework License Terms",
-            "LicenseRef-scancode-ms-data-tier-af-2022"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-data-tier-af-2022",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-data-tier-af-2022",
+            "Microsoft Data-Tier Application Framework License Terms",
+            "MS Data-Tier Application Framework License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

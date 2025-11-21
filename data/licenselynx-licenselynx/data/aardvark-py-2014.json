@@ -1,12 +1,16 @@
 {
-    "canonical": "aardvark-py-2014",
+    "canonical": {
+        "id": "aardvark-py-2014",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Aardvark I2C/SPI 2014",
             "Aardvark I2C/SPI Software and Firmware License 2014",
             "LicenseRef-scancode-aardvark-py-2014"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

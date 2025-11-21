@@ -1,11 +1,15 @@
 {
-    "canonical": "delorie-historical",
+    "canonical": {
+        "id": "delorie-historical",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Delorie Historical License",
             "LicenseRef-scancode-delorie-historical"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

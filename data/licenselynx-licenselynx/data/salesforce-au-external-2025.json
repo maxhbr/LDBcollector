@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "salesforce-au-external-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-salesforce-au-external-2025",
+            "Salesforce Acceptable Use and External-Facing Services Policy 2025",
+            "Salesforce AU External-Facing Services Policy 2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

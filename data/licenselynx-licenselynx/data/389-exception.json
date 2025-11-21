@@ -1,14 +1,18 @@
 {
-    "canonical": "389-exception",
+    "canonical": {
+        "id": "389-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "389 Directory Server Exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "389-exception",
-            "389 Directory Server Exception to GPL 2.0"
+        "scancodeLicensedb": [
+            "389 Directory Server Exception to GPL 2.0",
+            "389-exception"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "boost-original",
+    "canonical": {
+        "id": "boost-original",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Boost Original",
             "LicenseRef-scancode-boost-original"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

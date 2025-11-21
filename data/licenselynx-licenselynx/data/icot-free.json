@@ -1,11 +1,15 @@
 {
-    "canonical": "icot-free",
+    "canonical": {
+        "id": "icot-free",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "ICOT Free Software",
             "LicenseRef-scancode-icot-free"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

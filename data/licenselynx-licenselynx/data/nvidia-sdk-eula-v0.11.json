@@ -1,12 +1,17 @@
 {
-    "canonical": "nvidia-sdk-eula-v0.11",
-    "aliases": {
-        "scancode-licensedb": [
-            "NVIDIA SDK EULA v0.11",
-            "License Agreement for NVIDIA Software Development Kits v0.11",
-            "LicenseRef-scancode-nvidia-sdk-eula-v0.11"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "nvidia-sdk-eula-v0.11",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "License Agreement for NVIDIA Software Development Kits v0.11",
+            "LicenseRef-scancode-nvidia-sdk-eula-v0.11",
+            "NVIDIA SDK EULA v0.11"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

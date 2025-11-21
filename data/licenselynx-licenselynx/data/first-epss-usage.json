@@ -1,11 +1,15 @@
 {
-    "canonical": "first-epss-usage",
+    "canonical": {
+        "id": "first-epss-usage",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "FIRST EPSS Usage Agreement",
             "LicenseRef-scancode-first-epss-usage"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

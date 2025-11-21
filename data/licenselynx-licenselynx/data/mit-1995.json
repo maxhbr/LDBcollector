@@ -1,12 +1,16 @@
 {
-    "canonical": "mit-1995",
-    "aliases": {
-        "scancode-licensedb": [
-            "MIT INRIA W3C 1995",
-            "MIT 1995",
-            "LicenseRef-scancode-mit-1995"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "mit-1995",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-mit-1995",
+            "MIT 1995",
+            "MIT INRIA W3C 1995"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,14 +1,18 @@
 {
-    "canonical": "OCCT-PL",
+    "canonical": {
+        "id": "OCCT-PL",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open CASCADE Technology Public License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "OCCT-PL",
             "occt-pl"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

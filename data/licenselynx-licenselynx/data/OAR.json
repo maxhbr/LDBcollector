@@ -1,15 +1,19 @@
 {
-    "canonical": "OAR",
+    "canonical": {
+        "id": "OAR",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "OAR License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "X11-Style (OAR)",
+        "scancodeLicensedb": [
             "LicenseRef-scancode-x11-oar",
-            "x11-oar"
+            "x11-oar",
+            "X11-Style (OAR)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

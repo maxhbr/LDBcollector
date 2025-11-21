@@ -1,0 +1,17 @@
+{
+    "canonical": {
+        "id": "snort-subscriber-rules-3.1",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-snort-subscriber-rules-3.1",
+            "SNORT Subscriber Rules License Agreement v3.1",
+            "SNORT Subscriber Rules v3.1"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

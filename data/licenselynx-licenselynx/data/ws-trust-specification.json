@@ -1,11 +1,15 @@
 {
-    "canonical": "ws-trust-specification",
-    "aliases": {
-        "scancode-licensedb": [
-            "WS-Trust Specification",
-            "LicenseRef-scancode-ws-trust-specification"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ws-trust-specification",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ws-trust-specification",
+            "WS-Trust Specification"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,12 +1,17 @@
 {
-    "canonical": "jpython-1.1",
+    "canonical": {
+        "id": "jpython-1.1",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "JPython 1.1",
             "JPython License 1.1",
             "LicenseRef-scancode-jpython-1.1"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

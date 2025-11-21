@@ -19,12 +19,16 @@ from licenselynx.licenselynx import LicenseLynx
 # Map the license name
 license_object = LicenseLynx.map("licenseName")
 
-print(license_object.canonical)
+print(license_object.id)
 print(license_object.src)
+
+# Map the license name with risky mappings enabled
+license_object = LicenseLynx.map("licenseName", risky=True)
+
 ```
 
 ## License
 
-This project is licensed under the [Apache License, Version 2.0](../LICENSE.md) (SPDX-License-Identifier: Apache-2.0).
+This project is licensed under the [BSD 3-Clause "New" or "Revised" License](../LICENSE) (SPDX-License-Identifier: BSD-3-Clause).
 
 Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED

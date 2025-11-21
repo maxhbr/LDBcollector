@@ -1,24 +1,30 @@
 {
-    "canonical": "BSD-2-Clause",
+    "canonical": {
+        "id": "BSD-2-Clause",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD 2-Clause \"Simplified\" License"
         ],
         "custom": [
             "BSD 2-Clause",
+            "BSD 2-Clause 'Simplified' License",
             "BSD 2-Clause License",
             "BSD 2-Clause Simplified",
             "BSD 2-Clause Simplified License",
+            "BSD2",
             "The BSD 2-Clause License"
         ],
-        "scancode-licensedb": [
+        "osi": [
+            "FreeBSD License",
+            "Simplified BSD License"
+        ],
+        "scancodeLicensedb": [
             "BSD-2",
             "bsd-simplified"
-        ],
-        "osi": [
-            "Simplified BSD License",
-            "FreeBSD License"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

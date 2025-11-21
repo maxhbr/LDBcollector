@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "tremaru",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tremaru",
+            "Trema.ru License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

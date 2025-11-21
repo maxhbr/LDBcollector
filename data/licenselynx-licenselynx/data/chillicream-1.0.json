@@ -1,11 +1,16 @@
 {
-    "canonical": "chillicream-1.0",
+    "canonical": {
+        "id": "chillicream-1.0",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "ChilliCream License 1.0",
             "LicenseRef-scancode-chillicream-1.0"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

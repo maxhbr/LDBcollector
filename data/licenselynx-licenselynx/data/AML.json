@@ -1,14 +1,18 @@
 {
-    "canonical": "AML",
+    "canonical": {
+        "id": "AML",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Apple MIT License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "aml",
             "Apple Sample Code License 2006"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

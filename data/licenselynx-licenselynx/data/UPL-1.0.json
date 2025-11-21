@@ -1,15 +1,34 @@
 {
-    "canonical": "UPL-1.0",
+    "canonical": {
+        "id": "UPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Universal Permissive License v1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Universal Permissive License (UPL) v1.0",
-            "upl-1.0",
-            "UPL 1.0"
+            "UPL 1.0",
+            "upl-1.0"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: Universal Permissive License",
+            "License :: OSI Approved :: Universal Permissive License (UPL)",
+            "License :: OSI Approved :: UPL",
+            "License :: Universal Permissive License",
+            "License :: Universal Permissive License (UPL)",
+            "License :: UPL",
+            "OSI Approved :: Universal Permissive License",
+            "OSI Approved :: Universal Permissive License (UPL)",
+            "OSI Approved :: UPL",
+            "Universal Permissive License",
+            "Universal Permissive License (UPL)",
+            "UPL"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

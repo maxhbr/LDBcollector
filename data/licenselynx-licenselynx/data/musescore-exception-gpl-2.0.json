@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "musescore-exception-gpl-2.0",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-musescore-exception-gpl-2.0",
+            "MuseScore Exception to GPL 2.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

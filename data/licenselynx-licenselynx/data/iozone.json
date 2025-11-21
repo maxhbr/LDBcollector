@@ -1,11 +1,15 @@
 {
-    "canonical": "iozone",
+    "canonical": {
+        "id": "iozone",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "IOzone License",
             "LicenseRef-scancode-iozone"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

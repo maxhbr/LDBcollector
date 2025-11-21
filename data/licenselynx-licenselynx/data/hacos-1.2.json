@@ -1,12 +1,17 @@
 {
-    "canonical": "hacos-1.2",
+    "canonical": {
+        "id": "hacos-1.2",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "HACOS 1.2",
             "Health Administration Corporation Open Source License 1.2",
             "LicenseRef-scancode-hacos-1.2"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

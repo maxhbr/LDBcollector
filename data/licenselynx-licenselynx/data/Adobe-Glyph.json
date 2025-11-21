@@ -1,14 +1,18 @@
 {
-    "canonical": "Adobe-Glyph",
+    "canonical": {
+        "id": "Adobe-Glyph",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Adobe Glyph List License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Adobe Glyph License",
             "adobe-glyph"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

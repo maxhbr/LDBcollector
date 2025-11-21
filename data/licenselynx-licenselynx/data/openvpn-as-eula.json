@@ -1,12 +1,16 @@
 {
-    "canonical": "openvpn-as-eula",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenVPN Access Server EULA",
-            "OpenVPN-AS EULA",
-            "LicenseRef-scancode-openvpn-as-eula"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "openvpn-as-eula",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openvpn-as-eula",
+            "OpenVPN Access Server EULA",
+            "OpenVPN-AS EULA"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

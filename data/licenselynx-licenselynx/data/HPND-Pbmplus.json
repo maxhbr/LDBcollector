@@ -1,15 +1,19 @@
 {
-    "canonical": "HPND-Pbmplus",
+    "canonical": {
+        "id": "HPND-Pbmplus",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Historical Permission Notice and Disclaimer - Pbmplus variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "Historical Pbmplus variant",
             "Historical Permission Notice and Disclaimer Pbmplus variant",
             "hpnd-pbmplus"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

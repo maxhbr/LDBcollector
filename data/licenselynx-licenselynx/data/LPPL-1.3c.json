@@ -1,17 +1,22 @@
 {
-    "canonical": "LPPL-1.3c",
+    "canonical": {
+        "id": "LPPL-1.3c",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "LaTeX Project Public License v1.3c"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "lppl-1.3c",
-            "LPPL 1.3c"
-        ],
         "osi": [
             "LaTeX Project Public License, Version 1.3c"
+        ],
+        "scancodeLicensedb": [
+            "LPPL 1.3c",
+            "lppl-1.3c"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

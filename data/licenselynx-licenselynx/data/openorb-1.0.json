@@ -1,12 +1,17 @@
 {
-    "canonical": "openorb-1.0",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenORB Community Software License Version 1.0",
-            "OpenORB Community License 1.0",
-            "LicenseRef-scancode-openorb-1.0"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "openorb-1.0",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openorb-1.0",
+            "OpenORB Community License 1.0",
+            "OpenORB Community Software License Version 1.0"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

@@ -1,15 +1,19 @@
 {
-    "canonical": "CC-PDDC",
+    "canonical": {
+        "id": "CC-PDDC",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Creative Commons Public Domain Dedication and Certification"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "CC-PD",
-            "Creative Commons Public Domain Certification",
-            "cc-pd"
+            "cc-pd",
+            "Creative Commons Public Domain Certification"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

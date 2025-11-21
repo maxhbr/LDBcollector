@@ -1,12 +1,16 @@
 {
-    "canonical": "ipca",
+    "canonical": {
+        "id": "ipca",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "IPCA",
             "IPFire Project Contributor Agreement",
             "LicenseRef-scancode-ipca"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

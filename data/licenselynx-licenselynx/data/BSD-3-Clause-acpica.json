@@ -1,15 +1,19 @@
 {
-    "canonical": "BSD-3-Clause-acpica",
+    "canonical": {
+        "id": "BSD-3-Clause-acpica",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD 3-Clause acpica variant"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
+            "Intel BSD License",
             "intel-bsd",
-            "LicenseRef-scancode-intel-bsd",
-            "Intel BSD License"
+            "LicenseRef-scancode-intel-bsd"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

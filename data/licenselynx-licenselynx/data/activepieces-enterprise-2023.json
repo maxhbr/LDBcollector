@@ -1,11 +1,15 @@
 {
-    "canonical": "activepieces-enterprise-2023",
-    "aliases": {
-        "scancode-licensedb": [
-            "LicenseRef-scancode-activepieces-enterprise-2023",
-            "Activepieces Enterprise License 2023"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "activepieces-enterprise-2023",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Activepieces Enterprise License 2023",
+            "LicenseRef-scancode-activepieces-enterprise-2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

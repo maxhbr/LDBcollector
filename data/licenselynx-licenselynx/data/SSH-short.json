@@ -1,14 +1,18 @@
 {
-    "canonical": "SSH-short",
+    "canonical": {
+        "id": "SSH-short",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "SSH short notice"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "tatu-ylonen",
-            "Tatu Ylonen License"
+        "scancodeLicensedb": [
+            "Tatu Ylonen License",
+            "tatu-ylonen"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

@@ -1,15 +1,20 @@
 {
-    "canonical": "GPL-2.0-with-GCC-exception",
+    "canonical": {
+        "id": "GPL-2.0-with-GCC-exception",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "GNU General Public License v2.0 w/GCC Runtime Library exception"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "gpl-2.0-gcc",
+        "scancodeLicensedb": [
+            "GPL 2.0 or later with GCC LInking exception",
             "GPL 2.0 or later with GCC Runtime Library exception",
-            "GPL 2.0 or later with GCC LInking exception"
+            "gpl-2.0-gcc"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

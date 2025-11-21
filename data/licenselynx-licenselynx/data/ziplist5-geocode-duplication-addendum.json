@@ -1,13 +1,17 @@
 {
-    "canonical": "ziplist5-geocode-duplication-addendum",
-    "aliases": {
-        "scancode-licensedb": [
-            "ZIPList5 Geocode Duplication Addendum",
-            "LicenseRef-scancode-ziplist5-geocode-duplication-addendum",
-            "ZIPList5 Geocode Duplication License Addendum",
-            "LicenseRef-scancode-ziplist5-geocode-dup-addendum"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ziplist5-geocode-duplication-addendum",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ziplist5-geocode-dup-addendum",
+            "LicenseRef-scancode-ziplist5-geocode-duplication-addendum",
+            "ZIPList5 Geocode Duplication Addendum",
+            "ZIPList5 Geocode Duplication License Addendum"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

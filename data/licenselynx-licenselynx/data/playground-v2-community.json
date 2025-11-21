@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "playground-v2-community",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-playground-v2-community",
+            "Playground v2 Community License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

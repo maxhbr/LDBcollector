@@ -1,11 +1,15 @@
 {
-    "canonical": "g10-permissive",
+    "canonical": {
+        "id": "g10-permissive",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "g10-permissive",
             "LicenseRef-scancode-g10-permissive"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "zhorn-stickies",
-    "aliases": {
-        "scancode-licensedb": [
-            "Zhorn Stickies License",
-            "LicenseRef-scancode-zhorn-stickies"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "zhorn-stickies",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-zhorn-stickies",
+            "Zhorn Stickies License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

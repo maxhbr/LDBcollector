@@ -1,11 +1,15 @@
 {
-    "canonical": "quin-street",
-    "aliases": {
-        "scancode-licensedb": [
-            "QuinStreet License",
-            "LicenseRef-scancode-quin-street"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "quin-street",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-quin-street",
+            "QuinStreet License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

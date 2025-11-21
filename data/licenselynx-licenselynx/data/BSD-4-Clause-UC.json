@@ -1,14 +1,18 @@
 {
-    "canonical": "BSD-4-Clause-UC",
+    "canonical": {
+        "id": "BSD-4-Clause-UC",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD-4-Clause (University of California-Specific)"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "BSD-Original-UC",
             "bsd-original-uc"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

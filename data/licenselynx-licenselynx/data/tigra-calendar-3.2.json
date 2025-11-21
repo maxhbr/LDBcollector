@@ -1,12 +1,17 @@
 {
-    "canonical": "tigra-calendar-3.2",
-    "aliases": {
-        "scancode-licensedb": [
-            "Tigra Calendar v3.2 License",
-            "Tigra Calendar 3.2 License",
-            "LicenseRef-scancode-tigra-calendar-3.2"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "tigra-calendar-3.2",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tigra-calendar-3.2",
+            "Tigra Calendar 3.2 License",
+            "Tigra Calendar v3.2 License"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

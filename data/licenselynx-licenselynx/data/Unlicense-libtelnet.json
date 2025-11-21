@@ -1,0 +1,18 @@
+{
+    "canonical": {
+        "id": "Unlicense-libtelnet",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Unlicense - libtelnet variant"
+        ],
+        "custom": [],
+        "scancodeLicensedb": [
+            "Unlicense libtelnet variant",
+            "unlicense-libtelnet"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

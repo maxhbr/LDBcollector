@@ -1,6 +1,7 @@
 #
 # Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
 #
+import logging
 import pytest
 from unittest.mock import patch, mock_open, MagicMock
 from src.update.BaseDataUpdate import BaseDataUpdate
@@ -8,7 +9,7 @@ from src.update.BaseDataUpdate import BaseDataUpdate
 
 @pytest.fixture
 def base_data_update():
-    return BaseDataUpdate(src="test_source", log_level=10)
+    return BaseDataUpdate(src="test_source", log_level=logging.DEBUG)
 
 
 @patch("requests.get")
@@ -51,17 +52,47 @@ def test_delete_file(mock_exists, mock_remove, base_data_update):
 
 
 @patch("os.path.join", return_value="/path/to/license.json")
-@patch("builtins.open", new_callable=mock_open, read_data='{"canonical": "test", "aliases": {"source": ["alias1"]}}')
+@patch("builtins.open", new_callable=mock_open,
+       read_data='{"canonical": {"id": "test"}, "aliases": {"source": ["alias1"], "custom": ["custom alias"]}, '
+                 '"rejected": ["rejected_alias"], "risky": ["risky_alias"]}')
 @patch("json.dump")
 def test_update_license_file(mock_json_dump, mock_open, mock_join, base_data_update):
     canonical_id = "test_license"
-    aliases = ["alias2"]
+    aliases = ["alias2", "alias with 'some quotes'", "Don't test one single quote", "“alias” ‘alias’"]
 
     base_data_update.update_license_file(canonical_id, aliases)
+
+    expected_data = {"canonical": {"id": "test"},
+                     "aliases": {'source': ['alias1'], 'custom': ['"alias" "alias"', 'alias with "some quotes"', 'custom alias'],
+                                 'test_source': ["'alias' 'alias'", "alias with 'some quotes'", 'alias2', "Don't test one single quote"]},
+                     "rejected": ["rejected_alias"], "risky": ["risky_alias"]}
 
     mock_join.assert_called_once()
     mock_open.assert_called_with("/path/to/license.json", "w")
     mock_json_dump.assert_called_once()
+    mock_json_dump.assert_called_once_with(expected_data, mock_open(), indent=4)
+
+
+@patch("os.path.join", return_value="/path/to/license.json")
+@patch("builtins.open", new_callable=mock_open,
+       read_data='{"canonical": {"id": "test"}, '
+                 '"aliases": {"test_source": ["alias1"], "custom": []}, "rejected": ["rejected_alias"], "risky": ["risky_alias"]}')
+@patch("json.dump")
+def test_update_license_file_rejected_and_risky(mock_json_dump, mock_open, mock_join, base_data_update, caplog):
+    canonical_id = "test_license"
+    aliases = ["risky_alias", "rejected_alias"]
+
+    base_data_update.update_license_file(canonical_id, aliases)
+
+    expected_data = {"canonical": {"id": "test"}, "aliases": {"test_source": ["alias1"], "custom": []}, "rejected": ["rejected_alias"],
+                     "risky": ["risky_alias"]}
+
+    mock_join.assert_called_once()
+    mock_open.assert_called_with("/path/to/license.json", "w")
+    mock_json_dump.assert_called_once()
+    assert caplog.text.__contains__("For test_license the alias 'risky_alias' is already in risky list")
+    assert caplog.text.__contains__("For test_license the alias 'rejected_alias' is already in rejected list")
+    mock_json_dump.assert_called_once_with(expected_data, mock_open(), indent=4)
 
 
 @patch("os.path.join", return_value="/path/to/data/license.json")
@@ -69,7 +100,7 @@ def test_update_license_file(mock_json_dump, mock_open, mock_join, base_data_upd
 @patch("json.dump")
 def test_create_license_file(mock_json_dump, mock_open, mock_join, base_data_update):
     canonical_id = "test_license"
-    aliases = ["alias1", "alias2"]
+    aliases = ["alias1", "alias2", "alias with 'some quotes'", "Don't test one single quote", "“alias” ‘alias’"]
 
     base_data_update.create_license_file(canonical_id, aliases)
 
@@ -77,11 +108,32 @@ def test_create_license_file(mock_json_dump, mock_open, mock_join, base_data_upd
     mock_open.assert_called_once_with("/path/to/data/license.json", "w")
     mock_json_dump.assert_called_once()
     expected_data = {
-        "canonical": canonical_id,
-        "aliases": {
-            "test_source": aliases,
-            "custom": []
+        "canonical": {
+            "id": canonical_id,
+            "src": "test_source",
         },
-        "src": "test_source"
+        "aliases": {
+            "test_source": ["'alias' 'alias'", "alias with 'some quotes'", 'alias1', 'alias2', "Don't test one single quote"],
+            "custom": ['"alias" "alias"', 'alias with "some quotes"']
+        },
+        "rejected": [],
+        "risky": []
+
     }
     mock_json_dump.assert_called_once_with(expected_data, mock_open(), indent=4)
+
+
+def test_normalize_quotes(base_data_update):
+    sample_alias = "“test” ‘test’ \"test\""
+    result = base_data_update._normalize_quotes(sample_alias)
+    assert result == "'test' 'test' \"test\""
+
+
+def test_create_custom_entry_for_quotes(base_data_update):
+    sample_alias = "'test' don't"
+    aliases = ["existing 'alias'"]
+    base_data_update._create_custom_entry_for_quotes(sample_alias, aliases)
+
+    assert len(aliases) == 2
+    assert '"test" don\'t' in aliases
+    assert "existing 'alias'" in aliases

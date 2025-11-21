@@ -1,12 +1,16 @@
 {
-    "canonical": "gcel-2022",
-    "aliases": {
-        "scancode-licensedb": [
-            "GridGain Community Edition License 2022",
-            "GCEL 2022",
-            "LicenseRef-scancode-gcel-2022"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "gcel-2022",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GCEL 2022",
+            "GridGain Community Edition License 2022",
+            "LicenseRef-scancode-gcel-2022"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

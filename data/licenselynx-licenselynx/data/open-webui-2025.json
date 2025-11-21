@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "open-webui-2025",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-open-webui-2025",
+            "Open WebUI License 2025"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

@@ -1,12 +1,16 @@
 {
-    "canonical": "dl-de-by-nc-1-0-de",
+    "canonical": {
+        "id": "dl-de-by-nc-1-0-de",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Datenlizenz Deutschland - Namensnennung - nicht kommerziell - Version 1.0 - Deutsch",
             "dl-de/by-nc-1-0-de",
             "LicenseRef-scancode-dl-de-by-nc-1-0-de"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

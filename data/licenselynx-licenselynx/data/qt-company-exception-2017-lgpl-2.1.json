@@ -1,10 +1,15 @@
 {
-    "canonical": "qt-company-exception-2017-lgpl-2.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "Qt Company Exception to LGPL 2.1 2017"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "qt-company-exception-2017-lgpl-2.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Qt Company Exception to LGPL 2.1 2017"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

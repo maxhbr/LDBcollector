@@ -1,12 +1,16 @@
 {
-    "canonical": "broadcom-wiced",
+    "canonical": {
+        "id": "broadcom-wiced",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Broadcom WICED Development Kit License Agreement",
             "Broadcom WICED SDK License",
             "LicenseRef-scancode-broadcom-wiced"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

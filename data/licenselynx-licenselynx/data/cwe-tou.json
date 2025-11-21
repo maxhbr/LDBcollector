@@ -1,12 +1,16 @@
 {
-    "canonical": "cwe-tou",
-    "aliases": {
-        "scancode-licensedb": [
-            "CWE ToU",
-            "Common Weaness Enumeration ToU License",
-            "LicenseRef-scancode-cwe-tou"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "cwe-tou",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "Common Weaness Enumeration ToU License",
+            "CWE ToU",
+            "LicenseRef-scancode-cwe-tou"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

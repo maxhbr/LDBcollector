@@ -1,15 +1,19 @@
 {
-    "canonical": "Baekmuk",
+    "canonical": {
+        "id": "Baekmuk",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Baekmuk License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "LicenseRef-scancode-baekmuk-fonts",
+        "scancodeLicensedb": [
+            "Baekmuk Fonts License",
             "baekmuk-fonts",
-            "Baekmuk Fonts License"
+            "LicenseRef-scancode-baekmuk-fonts"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

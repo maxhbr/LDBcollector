@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "bsd-gnu-efi",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "BSD GNU EFI License 2000",
+            "LicenseRef-scancode-bsd-gnu-efi"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

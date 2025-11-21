@@ -1,11 +1,15 @@
 {
-    "canonical": "generic-export-compliance",
+    "canonical": {
+        "id": "generic-export-compliance",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Generic Export Compliance Notice",
             "LicenseRef-scancode-generic-export-compliance"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

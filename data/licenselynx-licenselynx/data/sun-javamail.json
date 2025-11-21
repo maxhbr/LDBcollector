@@ -1,11 +1,15 @@
 {
-    "canonical": "sun-javamail",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun JavaMail",
-            "LicenseRef-scancode-sun-javamail"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-javamail",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-javamail",
+            "Sun JavaMail"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

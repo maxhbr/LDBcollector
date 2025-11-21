@@ -1,12 +1,16 @@
 {
-    "canonical": "ms-pre-release-sla-2023",
-    "aliases": {
-        "scancode-licensedb": [
-            "MS Pre-Release SLA 2023",
-            "Microsoft Pre-Release Software License Terms 2023",
-            "LicenseRef-scancode-ms-pre-release-sla-2023"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "ms-pre-release-sla-2023",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-ms-pre-release-sla-2023",
+            "Microsoft Pre-Release Software License Terms 2023",
+            "MS Pre-Release SLA 2023"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

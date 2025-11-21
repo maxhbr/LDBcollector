@@ -1,13 +1,17 @@
 {
-    "canonical": "BSD-Protection",
+    "canonical": {
+        "id": "BSD-Protection",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "BSD Protection License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "bsd-protection"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

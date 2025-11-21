@@ -1,11 +1,15 @@
 {
-    "canonical": "broadcom-linux-timer",
+    "canonical": {
+        "id": "broadcom-linux-timer",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Broadcom Warranty Disclaimer",
             "LicenseRef-scancode-broadcom-linux-timer"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

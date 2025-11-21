@@ -1,11 +1,15 @@
 {
-    "canonical": "cpp-core-guidelines",
+    "canonical": {
+        "id": "cpp-core-guidelines",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "CppCoreGuidelines License",
             "LicenseRef-scancode-cpp-core-guidelines"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

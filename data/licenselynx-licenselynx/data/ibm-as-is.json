@@ -1,11 +1,15 @@
 {
-    "canonical": "ibm-as-is",
+    "canonical": {
+        "id": "ibm-as-is",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "IBM AS-IS License",
             "LicenseRef-scancode-ibm-as-is"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

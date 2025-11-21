@@ -1,12 +1,16 @@
 {
-    "canonical": "json-pd",
+    "canonical": {
+        "id": "json-pd",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "JSON Public Domain Notice",
             "JSON-PD",
             "LicenseRef-scancode-json-pd"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

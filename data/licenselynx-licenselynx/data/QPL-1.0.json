@@ -1,18 +1,37 @@
 {
-    "canonical": "QPL-1.0",
+    "canonical": {
+        "id": "QPL-1.0",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Q Public License 1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "Q Public License Version 1.0",
-            "qpl-1.0",
-            "QPL 1.0"
-        ],
         "osi": [
             "The Q Public License Version (QPL-1.0)"
+        ],
+        "scancodeLicensedb": [
+            "Q Public License Version 1.0",
+            "QPL 1.0",
+            "qpl-1.0"
+        ],
+        "pypi": [
+            "License :: OSI Approved :: QPL",
+            "License :: OSI Approved :: Qt Public License",
+            "License :: OSI Approved :: Qt Public License (QPL)",
+            "License :: QPL",
+            "License :: Qt Public License",
+            "License :: Qt Public License (QPL)",
+            "OSI Approved :: QPL",
+            "OSI Approved :: Qt Public License",
+            "OSI Approved :: Qt Public License (QPL)",
+            "QPL",
+            "Qt Public License",
+            "Qt Public License (QPL)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

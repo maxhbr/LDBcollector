@@ -1,11 +1,15 @@
 {
-    "canonical": "rsa-cryptoki",
-    "aliases": {
-        "scancode-licensedb": [
-            "RSA Cryptoki License",
-            "LicenseRef-scancode-rsa-cryptoki"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "rsa-cryptoki",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-rsa-cryptoki",
+            "RSA Cryptoki License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

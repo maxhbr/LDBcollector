@@ -1,14 +1,18 @@
 {
-    "canonical": "NCBI-PD",
+    "canonical": {
+        "id": "NCBI-PD",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "NCBI Public Domain Notice"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "LicenseRef-scancode-ncbi",
             "ncbi"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

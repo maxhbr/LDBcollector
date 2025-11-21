@@ -1,11 +1,15 @@
 {
-    "canonical": "timestamp-picker",
-    "aliases": {
-        "scancode-licensedb": [
-            "Timestamp Picker License",
-            "LicenseRef-scancode-timestamp-picker"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "timestamp-picker",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-timestamp-picker",
+            "Timestamp Picker License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

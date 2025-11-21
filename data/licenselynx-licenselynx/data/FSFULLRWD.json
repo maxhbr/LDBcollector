@@ -1,15 +1,19 @@
 {
-    "canonical": "FSFULLRWD",
+    "canonical": {
+        "id": "FSFULLRWD",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "FSF Unlimited License (With License Retention and Warranty Disclaimer)"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
+            "FSF Unlimited License No Warranty",
             "fsf-unlimited-no-warranty",
-            "LicenseRef-scancode-fsf-unlimited-no-warranty",
-            "FSF Unlimited License No Warranty"
+            "LicenseRef-scancode-fsf-unlimited-no-warranty"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

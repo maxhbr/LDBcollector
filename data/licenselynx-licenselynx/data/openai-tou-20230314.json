@@ -1,11 +1,15 @@
 {
-    "canonical": "openai-tou-20230314",
-    "aliases": {
-        "scancode-licensedb": [
-            "OpenAI Terms of Use 20230314",
-            "LicenseRef-scancode-openai-tou-20230314"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "openai-tou-20230314",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-openai-tou-20230314",
+            "OpenAI Terms of Use 20230314"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

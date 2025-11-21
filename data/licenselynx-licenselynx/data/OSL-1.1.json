@@ -1,14 +1,19 @@
 {
-    "canonical": "OSL-1.1",
+    "canonical": {
+        "id": "OSL-1.1",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Open Software License 1.1"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "OSL 1.1",
             "osl-1.1"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

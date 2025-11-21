@@ -1,11 +1,15 @@
 {
-    "canonical": "avisynth-linking-exception",
+    "canonical": {
+        "id": "avisynth-linking-exception",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Avisynth Linking Exception",
             "LicenseRef-scancode-avisynth-linking-exception"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

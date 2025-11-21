@@ -1,12 +1,16 @@
 {
-    "canonical": "tgc-spec-license-v2",
-    "aliases": {
-        "scancode-licensedb": [
-            "TCG Spec License v2",
-            "Trusted Computing Group Spec License v2",
-            "LicenseRef-scancode-tcg-spec-license-v2"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "tgc-spec-license-v2",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tcg-spec-license-v2",
+            "TCG Spec License v2",
+            "Trusted Computing Group Spec License v2"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,13 +1,17 @@
 {
-    "canonical": "xzoom",
+    "canonical": {
+        "id": "xzoom",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "xzoom License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "xzoom"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

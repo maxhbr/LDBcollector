@@ -1,13 +1,17 @@
 {
-    "canonical": "MIPS",
+    "canonical": {
+        "id": "MIPS",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "MIPS License"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "mips"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

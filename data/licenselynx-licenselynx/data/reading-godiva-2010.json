@@ -1,11 +1,15 @@
 {
-    "canonical": "reading-godiva-2010",
-    "aliases": {
-        "scancode-licensedb": [
-            "Reading Godiva License 2010",
-            "LicenseRef-scancode-reading-godiva-2010"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "reading-godiva-2010",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-reading-godiva-2010",
+            "Reading Godiva License 2010"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

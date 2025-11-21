@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "beegfs-eula-2024",
+        "src": "scancode-licensedb"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "BeeGFS End User License Agreement 2024",
+            "BeeGFS EULA 2024",
+            "LicenseRef-scancode-beegfs-eula-2024"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

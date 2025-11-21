@@ -1,11 +1,15 @@
 {
-    "canonical": "gpl-generic-additional-terms",
+    "canonical": {
+        "id": "gpl-generic-additional-terms",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "GPL Generic Additional Terms",
             "LicenseRef-scancode-gpl-generic-additional-terms"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

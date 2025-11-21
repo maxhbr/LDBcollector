@@ -1,17 +1,33 @@
 {
-    "canonical": "MirOS",
+    "canonical": {
+        "id": "MirOS",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "The MirOS Licence"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "MirOS License",
-            "mir-os"
-        ],
         "osi": [
             "The MirOS Licence (MirOS)"
+        ],
+        "scancodeLicensedb": [
+            "mir-os",
+            "MirOS License"
+        ],
+        "pypi": [
+            "License :: MirOS",
+            "License :: MirOS License",
+            "License :: MirOS License (MirOS)",
+            "License :: OSI Approved :: MirOS",
+            "License :: OSI Approved :: MirOS License",
+            "License :: OSI Approved :: MirOS License (MirOS)",
+            "MirOS License (MirOS)",
+            "OSI Approved :: MirOS",
+            "OSI Approved :: MirOS License",
+            "OSI Approved :: MirOS License (MirOS)"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

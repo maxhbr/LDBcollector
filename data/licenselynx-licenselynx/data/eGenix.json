@@ -1,14 +1,18 @@
 {
-    "canonical": "eGenix",
+    "canonical": {
+        "id": "eGenix",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "eGenix.com Public License 1.1.0"
         ],
         "custom": [],
-        "scancode-licensedb": [
+        "scancodeLicensedb": [
             "eGenix Public License 1.1.0",
             "egenix-1.1.0"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

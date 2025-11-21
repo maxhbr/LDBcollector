@@ -1,10 +1,15 @@
 {
-    "canonical": "gpl-2.0-plus-nant",
-    "aliases": {
-        "scancode-licensedb": [
-            "GPL 2.0 or later with NAnt exception"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "gpl-2.0-plus-nant",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "GPL 2.0 or later with NAnt exception"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

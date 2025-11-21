@@ -1,12 +1,17 @@
 {
-    "canonical": "speechworks-1.1",
-    "aliases": {
-        "scancode-licensedb": [
-            "SpeechWorks Public License v1.1",
-            "SpeechWorks Public License 1.1",
-            "LicenseRef-scancode-speechworks-1.1"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "speechworks-1.1",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-speechworks-1.1",
+            "SpeechWorks Public License 1.1",
+            "SpeechWorks Public License v1.1"
+        ]
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
 }

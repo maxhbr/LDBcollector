@@ -1,11 +1,15 @@
 {
-    "canonical": "allen-institute-software-2018",
+    "canonical": {
+        "id": "allen-institute-software-2018",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Allen Institute Software License 2018",
             "LicenseRef-scancode-allen-institute-software-2018"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

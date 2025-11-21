@@ -1,0 +1,16 @@
+{
+    "canonical": {
+        "id": "tencent-hunyuan-3d-2.0-cla",
+        "src": "scancodeLicensedb"
+    },
+    "aliases": {
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-tencent-hunyuan-3d-2.0-cla",
+            "Tencent Hunyuan 3D 2.0 Community License Agreement"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

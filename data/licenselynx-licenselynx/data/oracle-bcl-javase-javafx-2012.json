@@ -1,12 +1,16 @@
 {
-    "canonical": "oracle-bcl-javase-javafx-2012",
-    "aliases": {
-        "scancode-licensedb": [
-            "Oracle BCL for Java SE Platform Products and JavaFX 2012",
-            "Oracle BCL for JavaSE and JavaFX 2012",
-            "LicenseRef-scancode-oracle-bcl-javase-javafx-2012"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "oracle-bcl-javase-javafx-2012",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-oracle-bcl-javase-javafx-2012",
+            "Oracle BCL for Java SE Platform Products and JavaFX 2012",
+            "Oracle BCL for JavaSE and JavaFX 2012"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,17 +1,22 @@
 {
-    "canonical": "RPL-1.5",
+    "canonical": {
+        "id": "RPL-1.5",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Reciprocal Public License 1.5"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "RPL 1.5",
-            "rpl-1.5"
-        ],
         "osi": [
             "Reciprocal Public License, Version 1.5"
+        ],
+        "scancodeLicensedb": [
+            "RPL 1.5",
+            "rpl-1.5"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": false
 }

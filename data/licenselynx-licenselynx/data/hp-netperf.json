@@ -1,11 +1,15 @@
 {
-    "canonical": "hp-netperf",
+    "canonical": {
+        "id": "hp-netperf",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "HP Netperf License",
             "LicenseRef-scancode-hp-netperf"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

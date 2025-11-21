@@ -1,11 +1,15 @@
 {
-    "canonical": "paulo-soares",
-    "aliases": {
-        "scancode-licensedb": [
-            "Paulo Soares License",
-            "LicenseRef-scancode-paulo-soares"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "paulo-soares",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-paulo-soares",
+            "Paulo Soares License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

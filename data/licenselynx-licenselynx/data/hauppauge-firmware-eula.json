@@ -1,11 +1,15 @@
 {
-    "canonical": "hauppauge-firmware-eula",
+    "canonical": {
+        "id": "hauppauge-firmware-eula",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Hauppauge Firmware EULA",
             "LicenseRef-scancode-hauppauge-firmware-eula"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

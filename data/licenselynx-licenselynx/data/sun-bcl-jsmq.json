@@ -1,11 +1,15 @@
 {
-    "canonical": "sun-bcl-jsmq",
-    "aliases": {
-        "scancode-licensedb": [
-            "Sun BCL JSMQ",
-            "LicenseRef-scancode-sun-bcl-jsmq"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "sun-bcl-jsmq",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-sun-bcl-jsmq",
+            "Sun BCL JSMQ"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

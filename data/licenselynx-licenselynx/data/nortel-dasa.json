@@ -1,11 +1,15 @@
 {
-    "canonical": "nortel-dasa",
-    "aliases": {
-        "scancode-licensedb": [
-            "Nortel DASA License",
-            "LicenseRef-scancode-nortel-dasa"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "nortel-dasa",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-nortel-dasa",
+            "Nortel DASA License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

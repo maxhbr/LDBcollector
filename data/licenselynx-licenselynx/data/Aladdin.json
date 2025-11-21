@@ -1,15 +1,19 @@
 {
-    "canonical": "Aladdin",
+    "canonical": {
+        "id": "Aladdin",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
             "Aladdin Free Public License"
         ],
         "custom": [],
-        "scancode-licensedb": [
-            "Aladdin Free Public License v8",
+        "scancodeLicensedb": [
             "afpl-8.0",
-            "Aladdin FPL v8"
+            "Aladdin FPL v8",
+            "Aladdin Free Public License v8"
         ]
     },
-    "src": "spdx"
+    "rejected": [],
+    "risky": []
 }

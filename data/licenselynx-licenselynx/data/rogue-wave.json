@@ -1,11 +1,15 @@
 {
-    "canonical": "rogue-wave",
-    "aliases": {
-        "scancode-licensedb": [
-            "Rogue Wave Software License",
-            "LicenseRef-scancode-rogue-wave"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "rogue-wave",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-rogue-wave",
+            "Rogue Wave Software License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }

@@ -1,11 +1,15 @@
 {
-    "canonical": "altova-eula",
+    "canonical": {
+        "id": "altova-eula",
+        "src": "scancode-licensedb"
+    },
     "aliases": {
-        "scancode-licensedb": [
+        "custom": [],
+        "scancodeLicensedb": [
             "Altova EULA",
             "LicenseRef-scancode-altova-eula"
-        ],
-        "custom": []
+        ]
     },
-    "src": "scancode-licensedb"
+    "rejected": [],
+    "risky": []
 }

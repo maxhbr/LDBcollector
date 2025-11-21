@@ -1,11 +1,15 @@
 {
-    "canonical": "vicomsoft-software",
-    "aliases": {
-        "scancode-licensedb": [
-            "Vicomsoft Software License",
-            "LicenseRef-scancode-vicomsoft-software"
-        ],
-        "custom": []
+    "canonical": {
+        "id": "vicomsoft-software",
+        "src": "scancode-licensedb"
     },
-    "src": "scancode-licensedb"
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-vicomsoft-software",
+            "Vicomsoft Software License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
 }
