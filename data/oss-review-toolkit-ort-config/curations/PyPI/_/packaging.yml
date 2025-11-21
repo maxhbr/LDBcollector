@@ -1,7 +1,7 @@
-- id: "PyPI::packaging:(,23.2]"
+- id: "PyPI::packaging:(,24.1]"
   curations:
     comment: |
       The library is licensed under BSD-2-Clause, see:
-      https://github.com/pypa/packaging/blob/main/LICENSE.BSD
+      https://github.com/pypa/packaging/blob/209de2db1f62a672d2190e47a80612895380cdbc/LICENSE.BSD
     declared_license_mapping:
       "BSD License": "BSD-2-Clause"

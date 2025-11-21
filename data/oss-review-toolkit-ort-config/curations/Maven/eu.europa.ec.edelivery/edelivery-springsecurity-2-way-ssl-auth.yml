@@ -1,4 +1,4 @@
-- id: "Maven:eu.europa.ec.edelivery:edelivery-springsecurity-2-way-ssl-auth"
+- id: "Maven:eu.europa.ec.edelivery:edelivery-springsecurity-2-way-ssl-auth:"
   curations:
     comment: |-
       No SCM tag specified in the POM: https://ec.europa.eu/digital-building-blocks/code/projects/EDELIVERY/repos/springsecurity-2-way-ssl-auth/browse/pom.xml?at=refs%2Ftags%2F1.13

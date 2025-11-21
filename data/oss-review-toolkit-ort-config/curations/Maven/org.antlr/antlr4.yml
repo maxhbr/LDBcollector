@@ -4,4 +4,4 @@
       The library is licensed under BSD-3-Clause, see:
       https://github.com/antlr/antlr4/blob/4.0/LICENSE.txt
     declared_license_mapping:
-        "The BSD License": "BSD-3-Clause"
+      "The BSD License": "BSD-3-Clause"

@@ -1,0 +1,7 @@
+- id: "Pod::RNVectorIcons:10.3.0"
+  curations:
+    comment: |
+      Release tag missing in Git. Revision was found from `gitHead` of corresponging NPM package at
+      https://registry.npmjs.org/react-native-vector-icons.
+    vcs:
+      revision: "8ce12d0a999a2d259bc0a67f2d8fc8b8ce163240"

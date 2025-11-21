@@ -1,0 +1,19 @@
+- id: "Maven:org.sonatype.plexus:plexus-cipher:(,1.5]"
+  curations:
+    comment: |-
+      The SCM tag in the POM only specifies the old SVN host: https://repo1.maven.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+    vcs:
+      type: "Git"
+      url: "https://github.com/sonatype/plexus-cipher.git"
+- id: "Maven:org.sonatype.plexus:plexus-cipher:1.4"
+  curations:
+    comment: |-
+      No tag in Git repository for this version. Revision found by blaming version tag in pom.xml.
+    vcs:
+      revision: "ed6294a7a8a6bb2533b51f5cdb411f3b9dff1654"
+- id: "Maven:org.sonatype.plexus:plexus-cipher:1.5"
+  curations:
+    comment: |-
+      No tag in Git repository for this version. Revision found by blaming version tag in pom.xml.
+    vcs:
+      revision: "6df2b6567b73f4b1df64470bc832d2d50abd61a0"

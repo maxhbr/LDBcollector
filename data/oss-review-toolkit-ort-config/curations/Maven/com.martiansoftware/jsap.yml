@@ -1,4 +1,4 @@
-- id: "Maven:com.martiansoftware:jsap"
+- id: "Maven:com.martiansoftware:jsap:"
   curations:
     comment: |-
       The SCM tag in the POM only specifies the old CVS host: https://repo1.maven.org/maven2/com/martiansoftware/jsap/2.1/jsap-2.1.pom

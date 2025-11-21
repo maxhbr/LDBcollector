@@ -1,4 +1,4 @@
-- id: "Maven:org.codehaus.woodstox:stax2-api"
+- id: "Maven:org.codehaus.woodstox:stax2-api:"
   curations:
     comment: |-
       The POM links to http://www.opensource.org/licenses/bsd-license.php which forwards to
@@ -6,4 +6,4 @@
       https://github.com/FasterXML/stax2-api/blob/stax2-api-4.2.2/pom.xml#L30), and a LICENSE file was added recently
       (see https://github.com/FasterXML/stax2-api/commit/67d598842d99266a43d7ecf839c2b1f0f70f2bdc).
     declared_license_mapping:
-        "The BSD License": "BSD-2-Clause"
+      "The BSD License": "BSD-2-Clause"

@@ -1,0 +1,5 @@
+- id: "PyPI::tensorflow-estimator:"
+  curations:
+    comment: The correct VCS URL was found via https://pypi.org/project/tensorflow-estimator/.
+    vcs:
+      url: "https://github.com/tensorflow/estimator.git"

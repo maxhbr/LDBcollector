@@ -1,4 +1,4 @@
-- id: "Maven:com.vladsch.flexmark:flexmark-util"
+- id: "Maven:com.vladsch.flexmark:flexmark-util:"
   curations:
     comment: |
       Repository found via Internet search.

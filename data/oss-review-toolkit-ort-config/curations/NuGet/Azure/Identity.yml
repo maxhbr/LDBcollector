@@ -1,5 +1,5 @@
 - id: "NuGet:Azure:Identity:"
   curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
+    comment: "The project resides in its own directory."
     vcs:
       path: "sdk/identity/Azure.Identity"

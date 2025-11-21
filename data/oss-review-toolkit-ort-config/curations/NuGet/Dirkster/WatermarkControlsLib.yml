@@ -1,0 +1,6 @@
+- id: "NuGet:Dirkster:WatermarkControlsLib:1.1.0"
+  curations:
+    comment: |
+      Set the VCS revision because the tag does not exactly match the version.
+    vcs:
+      revision: "v1.1"

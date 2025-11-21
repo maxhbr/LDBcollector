@@ -121,36 +121,36 @@ val orgOssProjectsApprovedLicenses = listOf(
 /**
  * Variables used to generate MarkDown text of howToFixDefault()
  */
-var doNotWorryText = "_Note_: Do not worry about creating a perfect curation or exclude. Reviewers will provide feedback."
+val doNotWorryText = "_Note_: Do not worry about creating a perfect curation or exclude. Reviewers will provide feedback."
 val globTutorialMdLink = "[reference documentation](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob)"
 val ortConfigContributingMdLink = "[CONTRIBUTING.md](https://github.com/oss-review-toolkit/ort-config/blob/main/CONTRIBUTING.md)"
 val ortConfigVcsMdLink = "[ort-config repository](https://github.com/oss-review-toolkit/ort-config)"
-val ortCurationsYmlFileConcludedLicenseMdLink = "[concluded license curation](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-curations-yml.md)"
-val ortCurationsYmlFileDeclaredLicenseMdLink = "[declared license curation](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-curations-yml.md)"
-val ortCurationsYmlVcsPathMdLink = "[VCS path curation](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-curations-yml.md)"
-val ortCurationsYmlVcsUrlMdLink = "[VCS URL curation](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-curations-yml.md)"
+val ortCurationsYmlFileConcludedLicenseMdLink = "[concluded license curation](https://oss-review-toolkit.org/ort/docs/configuration/ort-yml#curations)"
+val ortCurationsYmlFileDeclaredLicenseMdLink = "[declared license curation](https://oss-review-toolkit.org/ort/docs/configuration/ort-yml#curations)"
+val ortCurationsYmlVcsPathMdLink = "[VCS path curation](https://oss-review-toolkit.org/ort/docs/configuration/ort-yml#curations)"
+val ortCurationsYmlVcsUrlMdLink = "[VCS URL curation](https://oss-review-toolkit.org/ort/docs/configuration/ort-yml#curations)"
 var ortLicenseFindingCurationReasonMdLink = "[LicenseFindingCurationReason.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/LicenseFindingCurationReason.kt)"
-val ortPackageConfigurationFileMdLink = "[package configuration](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-package-configuration-yml.md)"
+val ortPackageConfigurationFileMdLink = "[package configuration](https://oss-review-toolkit.org/ort/docs/configuration/package-configurations)"
 var ortPathExcludeReasonMdLink = "[PathExcludeReason.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/PathExcludeReason.kt)"
-val ortResolutionsYmlRuleViolationMdLink = "[rule violation resolution](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-resolutions-yml.md#resolving-policy-rule-violations)"
+val ortResolutionsYmlRuleViolationMdLink = "[rule violation resolution](https://oss-review-toolkit.org/ort/docs/configuration/resolutions#resolving-policy-rule-violations)"
 val ortScopeExcludeReasonMdLink = "[ScopeExcludeReason.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/ScopeExcludeReason.kt)"
-val ortYmlFileMdLink = "[.ort.yml file](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-ort-yml.md)"
-val ortYmlFilePathExcludeMdLink = "[path exclude](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-ort-yml.md#excluding-paths)"
-val ortYmlFileScopeExcludeMdLink = "[scope exclude](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-ort-yml.md#excluding-scopes)"
-val ortYmlFileLicenseFindingCurationMdLink = "[license finding curation](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-ort-yml.md#curations)"
-val ortYmlFileRuleViolationResolutionMdLink = "[rule violation resolution](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-ort-yml.md#resolutions)"
+val ortYmlFileMdLink = "[.ort.yml file](https://oss-review-toolkit.org/ort/docs/configuration/ort-yml)"
+val ortYmlFilePathExcludeMdLink = "[path exclude](https://oss-review-toolkit.org/ort/docs/configuration/package-configurations#defining-path-excludes-and-license-finding-curations)"
+val ortYmlFileScopeExcludeMdLink = "[scope exclude](https://oss-review-toolkit.org/ort/docs/configuration/ort-yml#excluding-scopes)"
+val ortYmlFileLicenseFindingCurationMdLink = "[license finding curation](https://oss-review-toolkit.org/ort/docs/configuration/ort-yml#curations)"
+val ortYmlFileRuleViolationResolutionMdLink = "[rule violation resolution](https://oss-review-toolkit.org/ort/docs/configuration/ort-yml#resolutions)"
 val relatesToIssueText = "Relates-to: [Insert related issue number]".takeIf { ortResult.labels["jira"].isNullOrEmpty() } ?: "Relates-to: ${ortResult.labels["jira"]}"
 
-enum class PolicyRules() {
+enum class PolicyRules {
     OSS_PROJECT,
     PROPRIETARY_PROJECT
 }
 
 fun getArtifactOrUrlName(url: String): String =
-    "name of the artifact".takeIf { url.isNullOrBlank() } ?: "${url.substringAfterLast("/")}"
+    "name of the artifact".takeIf { url.isBlank() } ?: url.substringAfterLast("/")
 
 fun getArtifactMavenSourcesMdLink(pkg: Package): String {
-    if (pkg.binaryArtifact.url.isNullOrEmpty()) return "URL of the binary"
+    if (pkg.binaryArtifact.url.isEmpty()) return "URL of the binary"
 
     val binaryUrl = pkg.binaryArtifact.url
     val binaryName = binaryUrl.substringAfterLast("/").substringBeforeLast(".")
@@ -161,7 +161,7 @@ fun getArtifactMavenSourcesMdLink(pkg: Package): String {
 }
 
 fun getArtifactMdLink(url: String): String =
-    "URL of the artifact".takeIf { url.isNullOrBlank() } ?: "[${url.substringAfterLast("/")}]($url)"
+    "URL of the artifact".takeIf { url.isBlank() } ?: "[${url.substringAfterLast("/")}]($url)"
 
 /**
  * Return set of policy rules based on project label passed to ORT.
@@ -244,7 +244,7 @@ fun getPackageCurationsFilePath(id: Identifier): String =
  * Return a MarkDown link to the code repository for package [pkg].
  */
 fun getVcsMdLink(pkg: Package) : String {
-    if (pkg.vcsProcessed.url.isNullOrEmpty()) {
+    if (pkg.vcsProcessed.url.isEmpty()) {
         return "URL of the source code repository"
     }
 
@@ -295,7 +295,7 @@ fun PackageRule.howToFixLicenseViolationDefault(
         // Violation is flagged for the project scanned.
         if (licenseSource == LicenseSource.DETECTED) {
             // License is detected by the scanner in the source code of the project.
-            return "${resolveViolationInSourceCodeText(pkg.metadata, license)}".trimMargin()
+            return resolveViolationInSourceCodeText(pkg.metadata, license).trimMargin()
         }
 
         // License is declared in project's package manifest file (pom, package.json, etc.).
@@ -305,11 +305,11 @@ fun PackageRule.howToFixLicenseViolationDefault(
     // Violation is thrown for one of the project's dependencies.
     if (licenseSource == LicenseSource.DETECTED) {
         // Violation thrown for license detected by the scanner in the source code of the dependency.
-        return "${resolveViolationInDependencySourceCodeText(pkg.metadata, license)}".trimMargin()
+        return resolveViolationInDependencySourceCodeText(pkg.metadata, license).trimMargin()
     }
 
     // Violation thrown for declared license in dependency's package manifest file (pom, package.json, etc.).
-    return "${resolveViolationInDependencyDeclaredLicenseText(pkg.metadata)}".trimMargin()
+    return resolveViolationInDependencyDeclaredLicenseText(pkg.metadata).trimMargin()
 }
 
 fun PackageRule.howToFixUnhandledLicense(
@@ -391,6 +391,7 @@ fun PackageRule.howToFixUnmappedDeclaredLicense(license: String): String {
             |     Use the the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   - id: "${pkg.metadata.id.toCoordinatesWithoutVersion()}"
             |     curations:
             |       comment: "Mapping declared license based on \
@@ -398,15 +399,18 @@ fun PackageRule.howToFixUnmappedDeclaredLicense(license: String): String {
             |         [https://url-to-repository/tag-or-revision-for-version-${pkg.metadata.id.version}/package-metadata-file]."
             |       declared_license_mapping:
             |         "$license": "[SPDX license expression for the declared license.]"
+            |
             |   ```
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   curations: Map declared license for ${pkg.metadata.id.toCoordinatesWithoutVersion()}
+            |
+            |   feat(curations): Map declared license for ${pkg.metadata.id.toCoordinatesWithoutVersion()}
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortCurationsYmlFileDeclaredLicenseMdLink is merged, re-scan to see if the violation has been resolved.
@@ -438,7 +442,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |Try to resolve this violation by following the advice below:
             |
             |1. Exclude the package scope if the package is not part of the released artifacts:
-            |   - Check _Paths_ > _Scope_ for ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            |   - Check _Paths_ > _Scope_ for '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - If _Scope_ indicates the package is used for building or testing your code (e.g. 'compile' or 'test'),
             |     exclude it by adding a $ortYmlFileScopeExcludeMdLink to your $ortYmlFileMdLink.
             |
@@ -447,11 +451,12 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Find the licenses applicable to $binaryUrlMdLink by comparing its contents with the scan results for $sourcesUrlMdLink.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $binaryUrlMdLink.)
-            |   - For each license that applies, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
+            |   - For each license that applies, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   - id: "${pkg.id.toCoordinates()}"
             |     curations:
             |       comment: "[The artifact declares as licensed under '${pkg.declaredLicensesProcessed.spdxExpression}', see \
@@ -463,15 +468,18 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |       # However, as we do not have a mechanism to record a license choice yet, misuse the concluded
             |       # license to perform the choice until we have a proper mechanism implemented:
             |       concluded_license: "[Chosen licenses for $binaryName as a SPDX license expression.]"
+            |
             |   ```
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Note that reviewers are set automatically.
             |
             |   ```
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortCurationsYmlFileConcludedLicenseMdLink is merged, re-scan to see if the violation has been resolved.
@@ -487,7 +495,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |Try to resolve this violation by following the advice below:
             |
             |1. Exclude the package scope if the package is not part of the released artifacts:
-            |   - Check _Paths_ > _Scope_ for ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            |   - Check _Paths_ > _Scope_ for '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - If _Scope_ indicates the package is used for building or testing your code (e.g. 'compile' or 'test'),
             |     exclude it by adding a $ortYmlFileScopeExcludeMdLink to your $ortYmlFileMdLink.
             |
@@ -496,11 +504,12 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Find the licenses applicable to $binaryUrlMdLink by comparing its contents with the scan results for $sourcesUrlMdLink.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $binaryUrlMdLink.)
-            |   - For each license that applies, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
+            |   - For each license that applies, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   - id: "${pkg.id.toCoordinates()}"
             |     curations:
             |       comment: "[The artifact declares as licensed under '${pkg.declaredLicensesProcessed.spdxExpression}', see \
@@ -512,15 +521,18 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |       # However, as we do not have a mechanism to record a license choice yet (see OSS-1163), misuse the concluded
             |       # license to perform the choice until we have a proper mechanism implemented:
             |       concluded_license: "[Chosen licenses for $binaryName as a SPDX license expression.]"
+            |
             |   ```
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Note that reviewers are set automatically.
             |
             |   ```
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortCurationsYmlFileConcludedLicenseMdLink is merged, re-scan to see if the violation has been resolved.
@@ -532,7 +544,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |It may be possible to resolve this violation as follows:
             |
             |1. Try to exclude the scope of the package if it is not part of the released artifacts:
-            |   - Check the _Paths_ section for ${pkg.id.toCoordinates()} in the Web App scan report for the scopes where the package was found.
+            |   - Check the _Paths_ section for '${pkg.id.toCoordinates()}' in the Web App scan report for the scopes where the package was found.
             |   - If a scope is only for packages used for building or testing your code,
             |     exclude it by adding a $ortYmlFileScopeExcludeMdLink to your $ortYmlFileMdLink.
             |
@@ -541,11 +553,12 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Find the licenses applicable to $vcsUrlMdLink which are included in your release artifacts.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $vcsUrlMdLink).
-            |   - For each license that is not compiled in your release artifacts, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting `concluded_license`
+            |   - For each license that is not compiled in your release artifacts, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   - id: "${pkg.id.toCoordinates()}"
             |     curations:
             |       comment: "[The artifact declares as licensed under '${pkg.declaredLicensesProcessed.spdxExpression}', see \
@@ -557,15 +570,18 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |       # However, as we do not have a mechanism to record a license choice yet (see OSS-1163), misuse the concluded
             |       # license to perform the choice until we have a proper mechanism implemented:
             |       concluded_license: "[Chosen licenses for $vcsName repository as a SPDX license expression.]"
+            |
             |   ```
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Note that reviewers are set automatically.
             |
             |   ```
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortCurationsYmlFileConcludedLicenseMdLink is merged, re-scan to see if the violation has been resolved.
@@ -592,7 +608,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   - $binaryUrlMdLink
             |   - $sourcesUrlMdLink
             |4. Find the lines which triggered this violation:
-            |   - Expand the _Scan Results_ section under ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            |   - Expand the _Scan Results_ section under '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - Filter the _Value_ column, selecting only the license to which the violation refers
             |5. If there are license file findings for this package in directories in (extracted) $sourcesUrlMdLink but not $binaryUrlMdLink:
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `source-artifact.yml`.
@@ -602,23 +618,27 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   ---
             ${getPackageConfigurationMatcherText(pkg.id)}
             |   path_excludes:
             |   - pattern: "[A glob pattern matching files or paths.]"
             |     reason: "[One of PathExcludeReason e.g. BUILD_TOOL_OF, DOCUMENTATION_OF, EXAMPLE_OF or TEST_OF.]"
+            |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   packages: Add excludes for ${pkg.id.toCoordinates()}
+            |
+            |   packages: Add excludes for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortYmlFilePathExcludeMdLink is merged, re-scan to see if the violation has been resolved.
@@ -632,40 +652,45 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   ---
             ${getPackageConfigurationMatcherText(pkg.id)}
             |   license_finding_curations:
             |   - path: "[A glob pattern matching files or paths.]"
             |     start_lines: "[String with comma-separated list of starting line integers.]"
             |     line_count: [Integer for number of lines to match.]
-            |     detected_license: "${license}"
+            |     detected_license: "$license"
             |     concluded_license: "[SPDX license expression for the correct license or use NONE to remove the detected license.]"
             |     reason: "INCORRECT"
             |     comment: "[A comment explaining why the scanner is incorrect.]"
+            |
             |   ```
             |
-            |     For information on how to write a glob pattern, visit $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |   For information on how to write a glob pattern, visit $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Note that reviewers are set automatically.
             |
             |   ```
-            |   packages: Add curations for ${pkg.id.toCoordinates()}
+            |
+            |   packages: Add curations for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |   - Once your $ortYmlFileLicenseFindingCurationMdLink is merged, re-scan to see if the violation has been resolved.
             |            |
-            |7. If ${pkg.id.toCoordinates()} includes license choices or a large number of findings to be excluded or curated:
+            |7. If '${pkg.id.toCoordinates()}' includes license choices or a large number of findings to be excluded or curated:
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Determine the applicable licenses for $binaryUrlMdLink by comparing its contents with the scan result findings.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $binaryUrlMdLink).
-            |   - For each license that applies to $binaryUrlMdLink, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
+            |   - For each license that applies to $binaryUrlMdLink, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   - id: "${pkg.id.toCoordinates()}"
             |     curations:
             |       comment: "[The artifact declares as licensed under '${pkg.declaredLicensesProcessed.spdxExpression}', see \
@@ -673,15 +698,18 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |         https://url-to-repository/tag-or-revision-for-version-${pkg.id.version}/package-metadata-file \.
             |         Additionally the scanner detects ...]"
             |       concluded_license: "[Applicable licenses for $binaryName as a SPDX license expression.]"
+            |
             |   ```
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Note that reviewers are set automatically.
             |
             |   ```
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortCurationsYmlFileConcludedLicenseMdLink is merged, re-scan to see if the violation has been resolved.
@@ -699,39 +727,43 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |1. Clone $ortConfigVcsMdLink using Git.
             |2. Download and extract $binaryUrlMdLink.
             |3. Find the lines which triggered this violation:
-            !   - Expand the _Scan Results_ section  under ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            !   - Expand the _Scan Results_ section  under '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - Filter the _Value_ column, selecting only the licenses to which the violation refers
             |4. Open the $vcsUrlMdLink in a web browser and find the source code for version `${pkg.id.version}`.
             |5. If the extracted $binaryUrlMdLink contains fewer files or directories than shown under 
-            |   the _Scan Results_ for ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`, you may need to
+            |   the _Scan Results_ for '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`, you may need to
             |   limit the number of files/directories the scanner scans. For example, if the repository contains other
-            |   packages and not just ${pkg.id.toCoordinates()}:
+            |   packages and not just '${pkg.id.toCoordinates()}':
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
-            |   - Add an entry for `${pkg.id.toCoordinates()}` setting the `path` under `vcs`
+            |   - Add an entry for '${pkg.id.toCoordinates()}' setting the `path` under `vcs`
             |     to the repository directory that contains the source code for the $binaryUrlMdLink.
             |     (To find the correct directory, search the names of files in the extracted $binaryUrlMdLink within $vcsUrlMdLink.)
             |     Use the following template, replacing the `path` field as appropriate.
             |
             |   ```
+            |
             |   - id: "${pkg.id.toCoordinatesWithoutVersion()}"
             |     curations:
             |       comment: "Package resides in its own directory within repo."
             |       vcs:
             |         path: "[File path to package e.g. ${pkg.id.name}.]"
+            |
             |   ```
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   curations: Set VCS path for ${pkg.id.toCoordinatesWithoutVersion()}
+            |
+            |   feat(curations): Set VCS path for `${pkg.id.toCoordinatesWithoutVersion()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortCurationsYmlVcsUrlMdLink is merged, re-scan to see if the violation has been resolved.
             |
-            |6. If there are license file findings for ${pkg.id.toCoordinates()} in directories in $vcsUrlMdLink but not in the extracted $binaryUrlMdLink:
+            |6. If there are license file findings for '${pkg.id.toCoordinates()}' in directories in $vcsUrlMdLink but not in the extracted $binaryUrlMdLink:
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `vcs.yml`.
             |   - Open `vcs.yml` in a text editor.
             |   - For each _directory_ found in the $vcsUrlMdLink but not in extracted $binaryUrlMdLink, add a $ortPackageConfigurationFileMdLink entry 
@@ -740,23 +772,27 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   ---
             ${getPackageConfigurationMatcherText(pkg.id)}
             |   path_excludes:
             |   - pattern: "[A glob pattern matching files or paths.]"
             |     reason: "[One of PathExcludeReason e.g. BUILD_TOOL_OF, DOCUMENTATION_OF, EXAMPLE_OF or TEST_OF.]"
+            |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   packages: Add excludes for ${pkg.id.toCoordinates()}
+            |
+            |   packages: Add excludes for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortYmlFilePathExcludeMdLink is merged, re-scan to see if the violation has been resolved.
@@ -770,41 +806,46 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   ---
             ${getPackageConfigurationMatcherText(pkg.id)}
             |   license_finding_curations:
             |   - path: "[A glob pattern matching files or paths.]"
             |     start_lines: "[String with comma-separated list of starting line integers.]"
             |     line_count: [Integer for number of lines to match.]
-            |     detected_license: "${license}"
+            |     detected_license: "$license"
             |     concluded_license: "[SPDX license expression for the correct license or use NONE to remove the detected license.]"
             |     reason: "INCORRECT"
             |     comment: "[A comment explaining why the scanner is incorrect.]"
+            |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   packages: Add curations for ${pkg.id.toCoordinates()}
+            |
+            |   packages: Add curations for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortYmlFileLicenseFindingCurationMdLink is merged, re-scan to see if the violation has been resolved.
             |
-            |8. If ${pkg.id.toCoordinates()} includes license choices or a large number of findings to be excluded or curated:
+            |8. If '${pkg.id.toCoordinates()}' includes license choices or a large number of findings to be excluded or curated:
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Determine the applicable licenses for $binaryUrlMdLink by comparing its contents with the scan result findings.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $binaryUrlMdLink).
-            |   - For each license that applies to $binaryUrlMdLink, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
+            |   - For each license that applies to $binaryUrlMdLink, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   - id: "${pkg.id.toCoordinates()}"
             |     curations:
             |       comment: "[The artifact declares as licensed under '${pkg.declaredLicensesProcessed.spdxExpression}', see \
@@ -812,15 +853,18 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |         https://url-to-repository/tag-or-revision-for-version-${pkg.id.version}/package-metadata-file \.
             |         Additionally the scanner detects ...]"
             |       concluded_license: "[Applicable licenses for $binaryName as a SPDX license expression.]"
+            |
             |   ```
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortCurationsYmlFileConcludedLicenseMdLink is merged, re-scan to see if the violation has been resolved.
@@ -832,35 +876,39 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |1. Clone $ortConfigVcsMdLink using Git.
             |2. Find the lines which triggered this violation:
-            |   - Expand the _Scan Results_ section under ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            |   - Expand the _Scan Results_ section under '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - Filter the _Value_ column, selecting only the licenses to which the violation refers
             |3. Open the $vcsUrlMdLink in a web browser and find the code for version `${pkg.id.version}`.
-            |4. If this package is in a repository containing other packages beside ${pkg.id.toCoordinates()}:
+            |4. If this package is in a repository containing other packages beside '${pkg.id.toCoordinates()}':
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
-            |   - Add an entry for `${pkg.id.toCoordinates()}` setting the `path` under `vcs`
+            |   - Add an entry for '${pkg.id.toCoordinates()}' setting the `path` under `vcs`
             |     to the repository directory that contains the source code for the package.
             |     Use the following template, changing the value of `path` as appropriate.
             |
             |   ```
+            |
             |   - id: "${pkg.id.toCoordinatesWithoutVersion()}"
             |     curations:
             |       comment: "Package resides in its own directory within repo."
             |       vcs:
             |         path: "[File path to package e.g. ${pkg.id.name}.]"
+            |
             |   ```
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   curations: Set VCS path for ${pkg.id.toCoordinatesWithoutVersion()}
+            |
+            |   feat(curations): Set VCS path for `${pkg.id.toCoordinatesWithoutVersion()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortCurationsYmlVcsUrlMdLink is merged, re-scan to see if the violation has been resolved.
             |
-            |5. If there are license findings for ${pkg.id.toCoordinates()} in directories in $vcsUrlMdLink used only for building or testing the code:
+            |5. If there are license findings for '${pkg.id.toCoordinates()}' in directories in $vcsUrlMdLink used only for building or testing the code:
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `vcs.yml`.
             |   - Open `vcs.yml` in a text editor.
             |   - For each _directory_ found in the $vcsUrlMdLink, but not in extracted $binaryUrlMdLink, add a 
@@ -868,23 +916,27 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   ---
             ${getPackageConfigurationMatcherText(pkg.id)}
             |   path_excludes:
             |   - pattern: "[A glob pattern matching files or paths.]"
             |     reason: "[One of PathExcludeReason e.g. BUILD_TOOL_OF, DOCUMENTATION_OF, EXAMPLE_OF or TEST_OF.]"
+            |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   packages: Add excludes for ${pkg.id.toCoordinates()}
+            |
+            |   packages: Add excludes for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortYmlFilePathExcludeMdLink is merged, re-scan to see if the violation has been resolved.
@@ -897,28 +949,32 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
+            |
             |   ---
             ${getPackageConfigurationMatcherText(pkg.id)}
             |   license_finding_curations:
             |   - path: "[A glob pattern matching files or paths.]"
             |     start_lines: "[String with comma-separated list of starting line integers.]"
             |     line_count: [Integer for number of lines to match.]
-            |     detected_license: "${license}"
+            |     detected_license: "$license"
             |     concluded_license: "[SPDX license expression for the correct license or use NONE to remove the detected license.]"
             |     reason: "INCORRECT"
             |     comment: "[A comment explaining why the scanner is incorrect.]"
+            |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
             |
             |   ```
-            |   packages: Add curations for ${pkg.id.toCoordinates()}
+            |
+            |   packages: Add curations for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
+            |
             |   ```
             |
             |   - Once your $ortYmlFileLicenseFindingCurationMdLink is merged, re-scan to see if the violation has been resolved.
@@ -932,7 +988,7 @@ fun resolveViolationInSourceCodeText(pkg: Package, license: String) : String {
         |Try to resolve this violation by following the advice below:
         |
         |1. Find the lines which triggered this violation:
-        |   - expand the _Scan Results_ section under ${pkg.id.toCoordinates()} in `*-web-app.html`
+        |   - expand the _Scan Results_ section under '${pkg.id.toCoordinates()}' in `*-web-app.html`
         |   - filter the _Value_ column, selecting only the license to which the violation refers.
         |2. Try to exclude the files or directories to which the violation refers but which are not part of the release artifacts
         |   of your project by adding a $ortYmlFilePathExcludeMdLink to your $ortYmlFileMdLink.
@@ -945,16 +1001,18 @@ fun resolveViolationInSourceCodeText(pkg: Package, license: String) : String {
         |     Use the following template, changing the text surrounded by square brackets (`[...]`) as appropriate.
         |
         |   ```
+        |
         |   ---
         |   curations:
         |     license_findings:
         |     - path: "[A glob pattern matching files or paths.]"
         |       start_lines: "[String with comma-separated list of starting line integers.]"
         |       line_count: [Integer for number of lines to match.]
-        |       detected_license: "${license}"
+        |       detected_license: "$license"
         |       concluded_license: "[SPDX license expression for the correct license or use NONE to remove the detected license.]"
         |       reason: "INCORRECT"
         |       comment: "[A comment explaining why the scanner is incorrect.]"
+        |
         |   ```
         |
         |   - Once your $ortYmlFileLicenseFindingCurationMdLink is merged, re-scan to see if the violation has been resolved.
@@ -977,9 +1035,7 @@ fun PackageRule.hasDefinitionFileName(vararg definitionFileNames: String) =
         override val description = "hasDefinitionFileName(${matchingNames.joinToString()})"
 
         override fun matches(): Boolean {
-            val project = ortResult.getProject(pkg.metadata.id)
-            if (project == null) return false
-
+            val project = ortResult.getProject(pkg.metadata.id) ?: return false
             return project.definitionFilePath.substringAfterLast('/') in matchingNames
         }
     }
@@ -1165,7 +1221,7 @@ fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
 
         error(
             "The ScanCode 'copyleft' categorized license $license was ${licenseSource.name.lowercase()} in project " +
-                    "${pkg.metadata.id.toCoordinates()}.",
+                    "'${pkg.metadata.id.toCoordinates()}'.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
@@ -1185,7 +1241,7 @@ fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOU
 
         error(
             "The ScanCode 'copyleft-limited' categorized license $license was ${licenseSource.name.lowercase()} in " +
-                    "project ${pkg.metadata.id.toCoordinates()}.",
+                    "project '${pkg.metadata.id.toCoordinates()}'.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
@@ -1484,20 +1540,20 @@ fun RuleSet.vulnerabilityInDependencyRule() = packageRule("VULNERABILITY_IN_DEPE
 }
 
 fun RuleSet.vulnerabilityWithHighSeverityInDependencyRule() = packageRule("HIGH_SEVERITY_VULNERABILITY_IN_DEPENDENCY") {
-    val maxAcceptedSeverity = "5.0"
-    val scoringSystem = "CVSS2"
+    val scoreThreshold = 5.0f
 
     require {
         -isProject()
         -isExcluded()
-        +hasVulnerability(maxAcceptedSeverity, scoringSystem) { value, threshold ->
-            value.toFloat() >= threshold.toFloat()
-        }
+        +AnyOf(
+            hasVulnerability(scoreThreshold, "CVSS2"),
+            hasVulnerability(scoreThreshold, "CVSS3")
+        )
     }
 
     error(
-        "The package '${pkg.metadata.id.toCoordinates()}' has a vulnerability with $scoringSystem severity > " +
-                "$maxAcceptedSeverity.",
+        "The package '${pkg.metadata.id.toCoordinates()}' has a vulnerability score greater than or equal to " +
+            "$scoreThreshold.",
         howToFixDefault()
     )
 }
@@ -1536,7 +1592,7 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
         error(
             "The license $license is currently not covered by policy rules. " +
                     "The license was ${licenseSource.name.lowercase()} in package " +
-                    "${pkg.metadata.id.toCoordinates()}",
+                    "'${pkg.metadata.id.toCoordinates()}'.",
             howToFixUnhandledLicense(license.toString(), licenseSource)
         )
     }
@@ -1545,12 +1601,13 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
 fun RuleSet.unmappedDeclaredLicenseRule() = packageRule("UNMAPPED_DECLARED_LICENSE") {
     require {
         -isExcluded()
+        -hasConcludedLicense()
     }
 
     resolvedLicenseInfo.licenseInfo.declaredLicenseInfo.processed.unmapped.forEach { unmappedLicense ->
         warning(
             "The declared license '$unmappedLicense' could not be mapped to a valid license or parsed as an SPDX " +
-                    "expression. The license was found in package ${pkg.metadata.id.toCoordinates()}.",
+                    "expression. The license was found in package '${pkg.metadata.id.toCoordinates()}'.",
             howToFixUnmappedDeclaredLicense(unmappedLicense)
         )
     }

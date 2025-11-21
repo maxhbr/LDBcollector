@@ -7,8 +7,8 @@ import org.gradle.api.tasks.TaskAction
 import org.ossreviewtoolkit.model.PackageCuration
 import org.ossreviewtoolkit.model.mapper
 import org.ossreviewtoolkit.utils.spdx.SpdxExpression
-import org.semver4j.RangesList
-import org.semver4j.RangesListFactory
+import org.semver4j.range.RangeList
+import org.semver4j.range.RangeListFactory
 
 open class VerifyPackageCurationsTask : DefaultTask() {
     init {
@@ -42,7 +42,7 @@ open class VerifyPackageCurationsTask : DefaultTask() {
                 curations.forEach { curation ->
                     val version = curation.id.version
                     if (version.isNotBlank() && version.hasVersionRangeIndicators()) {
-                        val range = RangesListFactory.create(version)
+                        val range = RangeListFactory.create(version)
                         if (range.get().size == 0) {
                             issues += "The version of package '${curation.id.toCoordinates()}' in file " +
                                     "'$relativePath' contains version range indicators, but cannot be parsed to a " +

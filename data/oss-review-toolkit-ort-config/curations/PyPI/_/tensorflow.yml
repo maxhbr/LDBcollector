@@ -1,0 +1,5 @@
+- id: "PyPI::tensorflow:"
+  curations:
+    comment: The correct VCS URL was found via https://pypi.org/project/tensorflow/.
+    vcs:
+      url: "https://github.com/tensorflow/tensorflow.git"

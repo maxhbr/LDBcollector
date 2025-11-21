@@ -1,7 +1,11 @@
 dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+
     versionCatalogs {
-        create("libs") {
-            from(files("../gradle/libs.versions.toml"))
+        create("ortLibs") {
+            from("org.ossreviewtoolkit:version-catalog:71.5.0")
         }
     }
 }

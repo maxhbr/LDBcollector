@@ -1,0 +1,6 @@
+- id: "NPM::http-signature:(,1.4.0["
+  curations:
+    comment: |
+      Prior to version 1.4.0, the submodules in the VCS contain authenticated SSH URLs so cloning fails, see e.g.
+      https://github.com/TritonDataCenter/node-http-signature/blob/v1.2.0/.gitmodules
+    source_code_origins: [ARTIFACT]

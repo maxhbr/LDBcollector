@@ -1,0 +1,7 @@
+- id: "Pod::RNFastImage:[8.6.11,)"
+  curations:
+    comment: |
+      Original at https://github.com/DylanVann/react-native-fast-image has been abandoned in favor of fork at
+      https://github.com/ds-horizon/react-native-fast-image which still uses the original's homepage / source.
+    vcs:
+      url: "https://github.com/ds-horizon/react-native-fast-image.git"

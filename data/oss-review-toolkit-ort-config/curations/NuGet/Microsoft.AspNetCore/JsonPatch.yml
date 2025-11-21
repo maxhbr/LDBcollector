@@ -1,5 +1,10 @@
-- id: "NuGet:Microsoft.AspNetCore:JsonPatch:[2.1.7,)"
+- id: "NuGet:Microsoft.AspNetCore:JsonPatch:[3.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:
       path: "src/Features/JsonPatch/src"
+- id: "NuGet:Microsoft.AspNetCore:JsonPatch:(,3.0.0["
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.JsonPatch"

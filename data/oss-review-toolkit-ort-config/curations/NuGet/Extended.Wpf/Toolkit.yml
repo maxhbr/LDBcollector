@@ -1,0 +1,7 @@
+- id: "NuGet:Extended.Wpf:Toolkit:3.2.0"
+  curations:
+    comment: |
+      Tag missing in Git, revision found by browsing release date history, see
+      https://github.com/xceedsoftware/wpftoolkit/commit/0a24d9db0fdefbcf084de9ef1148fbcc4a944f1b.
+    vcs:
+      revision: "0a24d9db0fdefbcf084de9ef1148fbcc4a944f1b"

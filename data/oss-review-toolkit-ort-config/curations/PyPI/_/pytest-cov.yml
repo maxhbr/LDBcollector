@@ -1,0 +1,8 @@
+- id: "PyPI::pytest-cov:(,2.12.0["
+  curations:
+    comment: |
+      The LICENSE file always contained only the 'MIT' license text, while the project metadata accidentally
+      declared it to be licensed under 'BSD License' for all version prior to 2.12.0, see also
+      https://github.com/pytest-dev/pytest-cov/pull/467.
+    declared_license_mapping:
+      "BSD License": "MIT"

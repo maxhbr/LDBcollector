@@ -1,0 +1,5 @@
+- id: "PyPI::tensorflow-intel:"
+  curations:
+    comment: No VCS information contained in metadata. The correct VCS URL was found via Internet search.
+    vcs:
+      url: "https://github.com/Intel-tensorflow/tensorflow.git"

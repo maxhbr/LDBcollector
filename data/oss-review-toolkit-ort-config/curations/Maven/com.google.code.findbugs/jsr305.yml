@@ -1,4 +1,4 @@
-- id: "Maven:com.google.code.findbugs:jsr305"
+- id: "Maven:com.google.code.findbugs:jsr305:"
   curations:
     comment: |
       The Subversion repository at https://findbugs.googlecode.com/svn/trunk/ has been moved to GitHub.
@@ -15,4 +15,4 @@
       url: "https://github.com/findbugsproject/findbugs/raw/2.0.1/findbugs/lib/jsr305.jar"
       hash:
         value: "516c03b21d50a644d538de0f0369c620989cd8f0"
-        algorithm: "SHA1"
+        algorithm: "SHA-1"

@@ -1,0 +1,5 @@
+- id: "PyPI::tensorboard-plugin-wit:"
+  curations:
+    comment: The correct VCS URL was found via https://pypi.org/project/tensorboard-plugin-wit/.
+    vcs:
+      url: "https://github.com/pair-code/what-if-tool.git"

@@ -1,4 +1,4 @@
-- id: "Maven:eu.europa.ec.bdmsl:bdmsl-api"
+- id: "Maven:eu.europa.ec.bdmsl:bdmsl-api:"
   curations:
     comment: |-
       No SCM tag specified in the POM: https://ec.europa.eu/digital-building-blocks/code/projects/EDELIVERY/repos/bdmsl/browse/pom.xml?at=refs%2Ftags%2FSML_4.1.1

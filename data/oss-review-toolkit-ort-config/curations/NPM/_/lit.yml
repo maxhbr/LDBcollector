@@ -1,0 +1,5 @@
+- id: "NPM::lit:"
+  curations:
+    comment: "The repository contains the source code of multiple lit-related packages."
+    vcs:
+      path: "packages/lit"

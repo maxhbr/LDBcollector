@@ -1,5 +1,21 @@
-- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:[2.1.7,)"
+- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:(,2.1.21["
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.Http.Extensions"
+- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:2.1.21"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:
       path: "src/Http/Http.Extensions/src"
+- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:(2.1.21,3.0.0["
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.Http.Extensions"
+- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:[3.0.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Http/Http.Extensions/src"
+

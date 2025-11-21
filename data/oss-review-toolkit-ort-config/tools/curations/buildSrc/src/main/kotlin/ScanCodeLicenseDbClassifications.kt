@@ -6,7 +6,7 @@ import com.fasterxml.jackson.module.kotlin.KotlinFeature
 import com.fasterxml.jackson.module.kotlin.KotlinModule
 import com.fasterxml.jackson.module.kotlin.readValue
 
-import java.net.URL
+import java.net.URI
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.ConcurrentLinkedQueue
 
@@ -98,6 +98,7 @@ private data class LicenseDetails(
     val minimumCoverage: Int? = null,
     val standardNotice: String? = null,
     val isDeprecated: Boolean = false,
+    val replacedBy: List<String> = emptyList(),
     val isException: Boolean = false,
     val isGeneric: Boolean = false,
     val isUnknown: Boolean = false,
@@ -116,12 +117,17 @@ private data class LicenseDetails(
 )
 
 private fun downloadLicenseIndex(): List<License> =
-    JSON_MAPPER.readValue<List<License>>(URL(INDEX_JSON_URL))
+    JSON_MAPPER.readValue<List<License>>(URI.create(INDEX_JSON_URL).toURL())
 
 private fun downloadLicenseDetails(license: License): LicenseDetails {
     val url = INDEX_JSON_URL.substringBeforeLast("/") + "/${license.json}"
     LOGGER.info("GET $url.")
-    return JSON_MAPPER.readValue<LicenseDetails>(URL(url))
+
+    return runCatching {
+        JSON_MAPPER.readValue<LicenseDetails>(URI.create(url).toURL())
+    }.onFailure { e ->
+        LOGGER.warn("Could not get license details from $url: ${e.message}.")
+    }.getOrThrow()
 }
 
 @OptIn(kotlin.time.ExperimentalTime::class)

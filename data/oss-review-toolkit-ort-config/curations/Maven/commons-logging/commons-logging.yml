@@ -1,0 +1,7 @@
+- id: "Maven:commons-logging:commons-logging:[1.0,1.2]"
+  curations:
+    comment: |-
+      The SCM tag in the POM only specifies the old SVN host: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+    vcs:
+      type: "Git"
+      url: "https://github.com/apache/commons-logging.git"

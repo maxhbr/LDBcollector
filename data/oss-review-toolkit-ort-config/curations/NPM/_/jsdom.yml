@@ -1,0 +1,6 @@
+- id: "NPM::jsdom:(,11.12.0["
+  curations:
+    comment: |
+      Prior to version 11.12.0, the submodules in the VCS refer to other VCS that in turn have broken submodule URLs, see e.g.
+      https://github.com/jsdom/jsdom/blob/9.5.0/.gitmodules
+    source_code_origins: [ARTIFACT]

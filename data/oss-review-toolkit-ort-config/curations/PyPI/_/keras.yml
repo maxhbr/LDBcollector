@@ -1,0 +1,5 @@
+- id: "PyPI::keras:"
+  curations:
+    comment: The correct VCS URL was found via https://pypi.org/project/keras/.
+    vcs:
+      url: "https://github.com/keras-team/keras.git"

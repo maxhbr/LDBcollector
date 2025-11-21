@@ -1,4 +1,4 @@
-- id: "Maven:org.eclipse.sw360:client"
+- id: "Maven:org.eclipse.sw360:client:"
   curations:
     comment: |
       No SCM tag is in the POM, and no sources artifact is published.
@@ -6,7 +6,6 @@
       type: "Git"
       url: "https://github.com/eclipse/sw360.git"
       path: "clients/client"
-
 - id: "Maven:org.eclipse.sw360:client:13.2.0-28"
   curations:
     comment: |
