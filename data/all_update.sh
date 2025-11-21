@@ -10,6 +10,11 @@ while IFS= read -r script; do
     if ! "$script"; then
         failed_scripts+=("$script")
     fi
+    
+    if git diff --quiet; then
+        echo "Working tree has modifications. Please commit or stash your changes before running this script."
+        exit 1
+    fi
 done < <(find "$(dirname "$0")" \
     -mindepth 1 \
     -maxdepth 1 \
