@@ -31,17 +31,86 @@ $cavil_test->mojo_fixtures($t->app);
 # Modify fixtures so there are packages with different names to search for
 my $pkgs = $t->app->packages;
 $pkgs->update(
-  {id => 1, state => 'correct', result => 'Perfect', checksum => 'Artistic-2.0-3:Hsyo', review_timestamp => 1});
+  {
+    id               => 1,
+    state            => 'acceptable_by_lawyer',
+    result           => 'Perfect',
+    checksum         => 'Artistic-2.0-3:Hsyo',
+    review_timestamp => 1
+  }
+);
 $pkgs->update(
-  {id => 2, state => 'correct', result => 'The best', checksum => 'Artistic-1.0-3:PeRl', review_timestamp => 1});
+  {
+    id               => 2,
+    state            => 'acceptable_by_lawyer',
+    result           => 'The best',
+    checksum         => 'Artistic-1.0-3:PeRl',
+    review_timestamp => 1
+  }
+);
 $t->app->pg->db->update('bot_packages', {name => 'perl'}, {id => 2});
+my $file_id = $t->app->pg->db->insert(
+  'matched_files',
+  {package   => 2, filename => 'foo.txt', mimetype => 'text/plain'},
+  {returning => 'id'}
+)->array->[0];
+$t->app->pg->db->insert('pattern_matches', {package => 2, pattern => 2, file => $file_id, sline => 1, eline => 2});
 
 subtest 'Basic search with suggestion' => sub {
   $t->get_ok('/')->status_is(200)->element_exists('form[action=/search] input[name=q]');
-  $t->get_ok('/search?q=perl')->status_is('200')->element_exists('form[action=/search] input[name=q][value=perl]')
-    ->element_exists('#review-search')->text_like('#suggestions td a', qr/perl-Mojolicious/);
-  $t->get_ok('/search?q=perl-Mojolicious')->status_is('200')->element_exists('#review-search')
+  $t->get_ok('/search?q=perl')
+    ->status_is('200')
+    ->element_exists('form[action=/search] input[name=q][value=perl]')
+    ->element_exists('#review-search')
+    ->text_like('#suggestions td a', qr/perl-Mojolicious/);
+  $t->get_ok('/search?q=perl-Mojolicious')
+    ->status_is('200')
+    ->element_exists('#review-search')
     ->element_exists_not('#suggestions');
+
+  $t->get_ok('/pagination/search/perl')
+    ->status_is(200)
+    ->json_is('/total'           => 1)
+    ->json_is('/start'           => 1)
+    ->json_is('/end'             => 1)
+    ->json_is('/page/0/checksum' => 'Artistic-1.0-3:PeRl')
+    ->json_is('/page/0/package'  => 'perl')
+    ->json_is('/page/0/comment'  => 'The best')
+    ->json_is('/page/0/state'    => 'acceptable_by_lawyer')
+    ->json_hasnt('/page/1');
+};
+
+subtest 'Pattern search' => sub {
+  $t->get_ok('/pagination/search/?pattern=1')->status_is(200)->json_is('/total' => 0);
+  $t->get_ok('/pagination/search/?pattern=2')
+    ->status_is(200)
+    ->json_is('/total'           => 1)
+    ->json_is('/start'           => 1)
+    ->json_is('/end'             => 1)
+    ->json_is('/page/0/checksum' => 'Artistic-1.0-3:PeRl')
+    ->json_is('/page/0/package'  => 'perl')
+    ->json_is('/page/0/comment'  => 'The best')
+    ->json_is('/page/0/state'    => 'acceptable_by_lawyer')
+    ->json_hasnt('/page/1');
+  $t->get_ok('/pagination/search/?pattern=3')->status_is(200)->json_is('/total' => 0);
+};
+
+subtest 'Ignore pattern search' => sub {
+  $t->get_ok('/pagination/search/?ignore=1')->status_is(200)->json_is('/total' => 0);
+
+  $t->app->pg->db->insert('ignored_lines',
+    {hash => 'abe8204ddebdc31a4d0e77aa647f42cd', packname => 'perl-Mojolicious'});
+  is $t->app->pg->db->update('pattern_matches', {ignored => 1, ignored_line => 1}, {id => 1})->rows, 1,
+    'one row updated';
+  $t->get_ok('/pagination/search/?ignore=1')
+    ->status_is(200)
+    ->json_is('/total'           => 1)
+    ->json_is('/start'           => 1)
+    ->json_is('/end'             => 1)
+    ->json_is('/page/0/checksum' => 'Artistic-1.0-3:PeRl')
+    ->json_is('/page/0/package'  => 'perl');
+
+  $t->get_ok('/pagination/search/?ignore=2')->status_is(200)->json_is('/total' => 0);
 };
 
 done_testing();

@@ -16,9 +16,10 @@
 use Mojo::Base -strict;
 
 use Test::More;
-use Mojo::File  qw(curfile tempfile);
-use Mojo::JSON  qw(decode_json);
-use Cavil::Util qw(buckets lines_context obs_ssh_auth parse_exclude_file ssh_sign);
+use Mojo::File qw(path curfile tempfile);
+use Mojo::JSON qw(decode_json);
+use Cavil::Util (qw(buckets lines_context obs_ssh_auth parse_exclude_file parse_service_file pattern_matches),
+  qw(request_id_from_external_link run_cmd ssh_sign));
 
 my $PRIVATE_KEY = tempfile->spew(<<'EOF');
 -----BEGIN OPENSSH PRIVATE KEY-----
@@ -55,6 +56,91 @@ subtest 'parse_exclude_file' => sub {
   is_deeply parse_exclude_file('t/exclude-files/cavil.exclude', 'gcc1'),    ['another.tar.gz',  'specific.zip'];
   is_deeply parse_exclude_file('t/exclude-files/cavil.exclude', 'gcc9'),    ['another.tar.gz',  'specific.zip'];
   is_deeply parse_exclude_file('t/exclude-files/empty.exclude', 'whatever'), [];
+};
+
+subtest 'parse_service_file' => sub {
+  is_deeply parse_service_file(''),                      [], 'empty service file';
+  is_deeply parse_service_file(" \n \n "),               [], 'empty service file';
+  is_deeply parse_service_file('<services></services>'), [], 'empty service file';
+  is_deeply parse_service_file('<services>'),            [], 'empty service file';
+  is_deeply parse_service_file('services'),              [], 'empty service file';
+
+  my $services1 = [
+    {name => 'download_files',    mode => 'trylocal', safe => 0},
+    {name => 'verify_file',       mode => 'Default',  safe => 0},
+    {name => 'product_converter', mode => 'Default',  safe => 1}
+  ];
+  is_deeply parse_service_file(<<EOF), $services1, 'unsafe services';
+<services>
+  <service name="download_files" mode="trylocal" />
+  <service name="verify_file">
+    <param name="file">krabber-1.0.tar.gz</param>
+    <param name="verifier">sha256</param>
+    <param name="checksum">7f535a96a834b31ba2201a90c4d365990785dead92be02d4cf846713be938b78</param>
+  </service>
+  <service name="product_converter">
+</services>
+EOF
+
+  my $services2 = [
+    {name => 'one',   mode => 'Default',    safe => 0},
+    {name => 'two',   mode => 'trylocal',   safe => 0},
+    {name => 'three', mode => 'localonly',  safe => 1},
+    {name => 'four',  mode => 'serveronly', safe => 0},
+    {name => 'five',  mode => 'buildtime',  safe => 1},
+    {name => 'six',   mode => 'manual',     safe => 1},
+    {name => 'seven', mode => 'disabled',   safe => 1}
+  ];
+  is_deeply parse_service_file(<<EOF), $services2, 'all modes';
+<services>
+  <service name="one" />
+  <service name="two" mode="trylocal" />
+  <service name="three" mode="localonly" />
+  <service name="four" mode="serveronly" />
+  <service name="five" mode="buildtime" />
+  <service name="six" mode="manual" />
+  <service name="seven" mode="disabled" />
+</services>
+EOF
+};
+
+subtest 'pattern_matches' => sub {
+  ok pattern_matches('bar',             'bar'),                     'match';
+  ok pattern_matches('bär',             'bär'),                     'match';
+  ok pattern_matches('bar',             'foo bar baz'),             'match';
+  ok pattern_matches('bar',             'bar baz'),                 'match';
+  ok pattern_matches('bar',             "foo bar"),                 'match';
+  ok pattern_matches('foo bar',         "foo\nbar"),                'match';
+  ok !pattern_matches('foo',            'bar baz'),                 'no match';
+  ok !pattern_matches('foo',            'bar'),                     'no match';
+  ok !pattern_matches('foo',            'fooo'),                    'no match';
+  ok pattern_matches('# foo',           '## foo bar baz'),          'match';
+  ok pattern_matches('# foo',           'foo'),                     'match';
+  ok pattern_matches('234',             '1 234 56'),                'match';
+  ok pattern_matches('123',             '123'),                     'match';
+  ok pattern_matches('foo $SKIP19 bar', 'foo yada bar baz'),        'match';
+  ok pattern_matches('foo $SKIP1 bar',  'foo yada bar baz'),        'match';
+  ok !pattern_matches('foo $SKIP1 bar', 'foo ya da bar'),           'no match';
+  ok pattern_matches('foo $SKIP2 bar',  'foo ya da bar'),           'match';
+  ok pattern_matches('foo $SKIP3 bar',  'foo ya da bar'),           'match';
+  ok !pattern_matches('foo $SKIP3 bar', 'foo ya da ya da bar'),     'no match';
+  ok !pattern_matches('foo $SKIP3 bar', 'foo ya da ya da bar foo'), 'no match';
+};
+
+subtest 'request_id_from_external_link' => sub {
+  is request_id_from_external_link('obs#1234'),     1234,  'right id';
+  is request_id_from_external_link('ibs#4321'),     4321,  'right id';
+  is request_id_from_external_link('unknown#4321'), undef, 'no id';
+  is request_id_from_external_link(''),             undef, 'no id';
+};
+
+subtest 'run_cmd' => sub {
+  my $cwd    = path;
+  my $result = run_cmd($cwd, ['echo', 'foo']);
+  is $result->{status},    !!1,     'right status';
+  is $result->{exit_code}, 0,       'right exit code';
+  is $result->{stderr},    '',      'right stderr';
+  is $result->{stdout},    "foo\n", 'right stdout';
 };
 
 subtest 'ssh_sign' => sub {

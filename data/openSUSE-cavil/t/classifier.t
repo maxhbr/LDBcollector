@@ -27,18 +27,25 @@ plan skip_all => 'set TEST_ONLINE to enable this test' unless $ENV{TEST_ONLINE};
 
 my $cavil_test = Cavil::Test->new(online => $ENV{TEST_ONLINE}, schema => 'classifier_test');
 my $config     = $cavil_test->default_config;
-$config->{classifier} = 'http://127.0.0.1:5000';
+$config->{classifier} = {url => 'http://127.0.0.1:5000', token => 'TEST:TOKEN:12345'};
 my $t = Test::Mojo->new(Cavil => $config);
 $cavil_test->mojo_fixtures($t->app);
 
 app->log->level('error');
 
+my $TOKEN = 'MISSING TOKEN';
+
 post '/' => sub {
   my $c = shift;
+
+  $TOKEN = $1 if ($c->req->headers->authorization // '') =~ /Token\s+(\S+)$/;
 
   my $text = $c->req->body;
   if ($text =~ /Fixed copyright notice/) {
     return $c->render(json => {license => \1, confidence => '98.123'});
+  }
+  elsif ($text =~ /This one is broken/) {
+    return $c->render(json => {error => 'Classifier is broken'}, status => 400);
   }
   else {
     $c->render(json => {license => \0, confidence => '55.321'});
@@ -49,12 +56,26 @@ get '/*whatever' => {whatever => ''} => {text => '', status => 404};
 
 # Connect mock server
 my $classifier = $t->app->classifier;
-is $classifier->url, 'http://127.0.0.1:5000', 'URL has been configured';
+is $classifier->url,   'http://127.0.0.1:5000', 'URL has been configured';
+is $classifier->token, 'TEST:TOKEN:12345',      'token has been configured';
 my $url = 'http://127.0.0.1:' . $classifier->ua->server->app(app)->url->port;
 $classifier->url($url);
 
 # Unpack and index
 $t->app->minion->enqueue(unpack => [1]);
+$t->app->minion->perform_jobs;
+$t->app->pg->db->update('bot_packages', {embargoed => 1}, {id => 2});
+my $embargoed_id = $t->app->pg->db->insert(
+  'snippets',
+  {hash      => 'manual:12345678890abcdef', text => 'Embargoed license text', package => 2},
+  {returning => 'id'}
+)->hash->{id};
+my $broken_id = $t->app->pg->db->insert(
+  'snippets',
+  {hash      => 'manual:12345678890abcde1', text => 'This one is broken', package => 1},
+  {returning => 'id'}
+)->hash->{id};
+$t->app->minion->enqueue(unpack => [2]);
 $t->app->minion->perform_jobs;
 
 subtest 'Not yet classified' => sub {
@@ -70,13 +91,38 @@ subtest 'Not yet classified' => sub {
   is $snippet->{license},    0, 'not a license';
   is $snippet->{confidence}, 0, 'not confidence';
   like $snippet->{text}, qr/This license establishes/, 'right text';
+  $snippet = $t->app->pg->db->select('snippets', '*', {id => $embargoed_id})->hash;
+  is $snippet->{id},         $embargoed_id, 'right id';
+  is $snippet->{classified}, 0,             'not classified';
+  is $snippet->{license},    0,             'not a license';
+  is $snippet->{confidence}, 0,             'not confidence';
+  like $snippet->{text}, qr/Embargoed license text/, 'right text';
 };
 
-# Classify
-my $classify_id = $t->app->minion->enqueue('classify');
-$t->app->minion->perform_jobs;
+subtest 'Classify' => sub {
+  my $classify_id = $t->app->minion->enqueue('classify');
 
-subtest 'Classified' => sub {
+  subtest 'Broken classifier' => sub {
+    $t->app->minion->perform_jobs;
+    is $t->app->minion->job($classify_id)->info->{state}, 'failed', 'job is failed';
+    like $t->app->minion->job($classify_id)->info->{result}, qr/Classifier is broken/, 'right error message';
+    $t->app->pg->db->delete('snippets', {id => $broken_id});
+    $t->app->minion->job($classify_id)->retry;
+  };
+
+  subtest 'Working classifier' => sub {
+    $t->app->minion->perform_jobs;
+    is $t->app->minion->job($classify_id)->info->{state}, 'finished', 'job is finished';
+  };
+};
+
+subtest 'Token authentication' => sub {
+  is_deeply $t->app->classifier->classify('Fixed copyright notice'), {confidence => '98.123', license => 1},
+    'is legal text';
+  is $TOKEN, 'TEST:TOKEN:12345', 'right token';
+};
+
+subtest 'Classified (if unembargoed)' => sub {
   my $snippet = $t->app->pg->db->select('snippets', '*', {id => 1})->hash;
   is $snippet->{id},         1,  'right id';
   is $snippet->{classified}, 1,  'classified';
@@ -89,6 +135,12 @@ subtest 'Classified' => sub {
   is $snippet->{license},    0,  'not a license';
   is $snippet->{confidence}, 55, 'confidence';
   like $snippet->{text}, qr/This license establishes/, 'right text';
+  $snippet = $t->app->pg->db->select('snippets', '*', {id => $embargoed_id})->hash;
+  is $snippet->{id},         $embargoed_id, 'right id';
+  is $snippet->{classified}, 0,             'not classified';
+  is $snippet->{license},    0,             'not a license';
+  is $snippet->{confidence}, 0,             'not confidence';
+  like $snippet->{text}, qr/Embargoed license text/, 'right text';
 };
 
 subtest 'Classified manually' => sub {
@@ -101,9 +153,13 @@ subtest 'Classified manually' => sub {
   is $snippet->{id},         2, 'right id';
   is $snippet->{classified}, 0, 'classified';
   is $snippet->{license},    0, 'license';
+  $snippet = $t->app->pg->db->select('snippets', '*', {id => $embargoed_id})->hash;
+  is $snippet->{id},         $embargoed_id, 'right id';
+  is $snippet->{classified}, 0,             'classified';
+  is $snippet->{license},    0,             'license';
 
   $t->get_ok('/login')->status_is(302);
-  $t->post_ok('/snippet/decision/2?mark-non-license=1')->status_is(200);
+  $t->post_ok('/snippet/decision/2?mark-non-license=1&hash=3c376fca10ff8a41d0d51c9d46a3bdae')->status_is(200);
 
   $snippet = $t->app->pg->db->select('snippets', '*', {id => 1})->hash;
   is $snippet->{id},         1, 'right id';
@@ -114,11 +170,17 @@ subtest 'Classified manually' => sub {
   is $snippet->{classified}, 1, 'classified';
   is $snippet->{license},    0, 'license';
 
-  $t->post_ok('/snippet/decision/1?mark-non-license=1')->status_is(200);
+  $t->post_ok('/snippet/decision/1?mark-non-license=1&hash=81efb065de14988c4bd808697de1df51')->status_is(200);
   $snippet = $t->app->pg->db->select('snippets', '*', {id => 1})->hash;
   is $snippet->{id},         1, 'right id';
   is $snippet->{classified}, 1, 'classified';
   is $snippet->{license},    0, 'license';
+
+  $t->post_ok("/snippet/decision/$embargoed_id?mark-non-license=1&hash=manual:12345678890abcdef")->status_is(200);
+  $snippet = $t->app->pg->db->select('snippets', '*', {id => $embargoed_id})->hash;
+  is $snippet->{id},         $embargoed_id, 'right id';
+  is $snippet->{classified}, 1,             'classified';
+  is $snippet->{license},    0,             'license';
 };
 
 done_testing;

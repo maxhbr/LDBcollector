@@ -307,3 +307,19 @@ body {
   border-top: 1px solid rgb(208, 215, 222);
   padding-top: 1em;
 }
+
+.hover-table tr:hover td {
+  background-color: #e9ecef;
+}
+
+.breakable-column {
+  word-break: break-all;
+}
+
+.static-column {
+  white-space: nowrap;
+}
+
+.file-with-matches {
+  color: #d7252a;
+}

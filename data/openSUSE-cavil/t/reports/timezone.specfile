@@ -1,6 +1,7 @@
 {
-  "errors" => ["Invalid SPDX license: SUSE-Public-Domain"],
-  "main"   => {
+  "errors"              => ["Invalid SPDX license: SUSE-Public-Domain"],
+  "incomplete_checkout" => 0,
+  "main"                => {
     "%doc"     => [],
     "%license" => [],
     "file"     => "timezone.spec",

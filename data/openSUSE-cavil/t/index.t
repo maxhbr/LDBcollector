@@ -21,6 +21,8 @@ use lib "$FindBin::Bin/lib";
 use Test::More;
 use Test::Mojo;
 use Cavil::Test;
+use Cavil::ReportUtil qw(report_checksum);
+use Mojo::File        qw(path);
 
 plan skip_all => 'set TEST_ONLINE to enable this test' unless $ENV{TEST_ONLINE};
 
@@ -30,7 +32,7 @@ my $t          = Test::Mojo->new(Cavil => $config);
 $cavil_test->mojo_fixtures($t->app);
 
 # Changes entry about 6.57 fixing copyright notices
-$t->app->packages->ignore_line('perl-Mojolicious', '81efb065de14988c4bd808697de1df51');
+$t->app->packages->ignore_line({package => 'perl-Mojolicious', hash => '81efb065de14988c4bd808697de1df51'});
 
 subtest 'Cannot analyze before indexing' => sub {
   my $analyze_id = $t->app->minion->enqueue(analyze => [1]);
@@ -112,7 +114,7 @@ ok $db->select('bot_packages', ['unpacked'], {id => 1})->hash->{unpacked}, 'unpa
 # Verify report checksum
 my $specfile = $t->app->reports->specfile_report(1);
 my $dig      = $t->app->reports->dig_report(1);
-is $t->app->checksum($specfile, $dig), 'b9cd69e1482c6adf4f4dbd6807fc4fc0', 'right checksum';
+is report_checksum($specfile, $dig), '42af80e97542a008844a74245b19a147', 'right checksum';
 
 # Check matches
 my $res = $db->select(
@@ -133,6 +135,15 @@ $res = $db->select(
 )->arrays;
 is_deeply $res, [[751, 2], [1103, 5]], 'Perl correctly tagged Artistic';
 
+subtest 'Make sure there are no leftover .processed files' => sub {
+  my $dir = path($t->app->config->{checkout_dir}, 'perl-Mojolicious', 'c7cfdab0e71b0bebfdf8b2dc3badfecd', '.unpacked');
+  ok -e $dir->child('perl-Mojolicious.spec'),                                'main file exists';
+  ok -e $dir->child('perl-Mojolicious.processed.spec'),                      'processed file exists';
+  ok -e $dir->child('Mojolicious-7.25', 'lib', 'Mojolicious.pm'),            'main file exists';
+  ok !-e $dir->child('Mojolicious-7.25', 'lib', 'Mojolicious.processed.pm'), 'processed file does not exist';
+};
+
+
 # Raise acceptable risk
 $config->{acceptable_risk} = 5;
 $t = Test::Mojo->new(Cavil => $config);
@@ -143,32 +154,45 @@ $t->get_ok('/login')->status_is(302)->header_is(Location => '/');
 $t->get_ok('/licenses/edit_pattern/1')->status_is(200)->content_like(qr/License/);
 
 subtest 'Pattern change' => sub {
-  $t->get_ok('/licenses/edit_pattern/1')->status_is(200)->element_exists('input[name=license][value=Apache-2.0]')
+  $t->get_ok('/licenses/edit_pattern/1')
+    ->status_is(200)
+    ->element_exists('input[name=license][value=Apache-2.0]')
     ->text_is('textarea[name=pattern]' => 'You may obtain a copy of the License at')
     ->element_exists_not('input:checked');
   $t->post_ok('/licenses/update_pattern/1' => form => {license => 'Apache-2.0', pattern => 'real-time web framework'})
-    ->status_is(302)->header_is(Location => '/licenses/edit_pattern/1');
-  $t->get_ok('/licenses/Apache-2.0')->status_is(200)->element_exists('div div a[href=/licenses/edit_pattern/1]')
+    ->status_is(302)
+    ->header_is(Location => '/licenses/edit_pattern/1');
+  $t->get_ok('/licenses/Apache-2.0')
+    ->status_is(200)
+    ->element_exists('div div a[href=/licenses/edit_pattern/1]')
     ->text_is('div pre' => 'real-time web framework')
     ->text_like('.alert-success' => qr/Pattern has been updated, reindexing all affected packages/);
 
-  $t->post_ok('/licenses/update_patterns' => form => {license => 'Apache-2.0', spdx => 'Apache-2'})->status_is(302)
+  $t->post_ok('/licenses/update_patterns' => form => {license => 'Apache-2.0', spdx => 'Apache-2'})
+    ->status_is(302)
     ->header_is(Location => '/licenses/Apache-2.0');
-  $t->get_ok('/licenses/Apache-2.0')->status_is(200)->element_exists('div div a[href=/licenses/edit_pattern/1]')
-    ->text_is('div pre' => 'real-time web framework')->text_like('.alert-danger' => qr/not a valid SPDX expression/);
+  $t->get_ok('/licenses/Apache-2.0')
+    ->status_is(200)
+    ->element_exists('div div a[href=/licenses/edit_pattern/1]')
+    ->text_is('div pre' => 'real-time web framework')
+    ->text_like('.alert-danger' => qr/not a valid SPDX expression/);
 
-  $t->post_ok('/licenses/update_patterns' => form => {license => 'Apache-2.0', spdx => 'Apache-2.0'})->status_is(302)
+  $t->post_ok('/licenses/update_patterns' => form => {license => 'Apache-2.0', spdx => 'Apache-2.0'})
+    ->status_is(302)
     ->header_is(Location => '/licenses/Apache-2.0');
-  $t->get_ok('/licenses/Apache-2.0')->status_is(200)->element_exists('div div a[href=/licenses/edit_pattern/1]')
-    ->text_is('div pre' => 'real-time web framework')->text_like('.alert-success' => qr/2 patterns have been updated/);
+  $t->get_ok('/licenses/Apache-2.0')
+    ->status_is(200)
+    ->element_exists('div div a[href=/licenses/edit_pattern/1]')
+    ->text_is('div pre' => 'real-time web framework')
+    ->text_like('.alert-success' => qr/2 patterns have been updated/);
 };
 
 # Automatic reindexing
 my $list = $t->app->minion->backend->list_jobs(0, 10, {states => ['inactive']});
 is $list->{total},         2,                       'two inactives job';
-is $list->{jobs}[0]{task}, 'pattern_stats',         'right task';
-is $list->{jobs}[1]{task}, 'reindex_matched_later', 'right task';
-is_deeply $list->{jobs}[1]{args}, [1], 'right arguments';
+is $list->{jobs}[0]{task}, 'reindex_matched_later', 'right task';
+is $list->{jobs}[1]{task}, 'pattern_stats',         'right task';
+is_deeply $list->{jobs}[0]{args}, [1], 'right arguments';
 my $reindex_id = $list->{jobs}[0]{id};
 $t->app->minion->perform_jobs;
 is $t->app->minion->job($reindex_id)->info->{state}, 'finished', 'job is finished';
@@ -194,7 +218,7 @@ $t->app->pg->db->query("update license_patterns set pattern = 'powerful' where i
 $t->app->patterns->expire_cache;
 $list = $t->app->minion->backend->list_jobs(0, 10, {tasks => ['index_later']});
 is $list->{total}, 1, 'one index_later jobs';
-$reindex_id = $t->app->minion->enqueue('reindex_all');
+$t->app->minion->enqueue('reindex_all');
 $t->app->minion->perform_jobs;
 $list = $t->app->minion->backend->list_jobs(0, 10, {tasks => ['index_later']});
 is $list->{total},          3,          'three index_later jobs';
@@ -221,13 +245,35 @@ is $pkg->{state}, 'new', 'still snippets left';
 
 # now 'classify'
 $db->update('snippets', {classified => 1, license => 0});
-$reindex_id = $t->app->minion->enqueue('reindex_all');
-$t->app->minion->perform_jobs;
 
-# Accepted because of low risk
-$pkg = $t->app->packages->find(1);
-is $pkg->{state},  'acceptable',                       'automatically accepted';
-is $pkg->{result}, 'Accepted because of low risk (5)', 'because of low risk';
+subtest 'Accepted because of low risk (with human review)' => sub {
+  $t->app->minion->enqueue('reindex_all');
+  $t->app->minion->perform_jobs;
+
+  my $pkg = $t->app->packages->find(1);
+  is $pkg->{state}, 'new', 'not previously reviewed by a human';
+
+  my $acceptable_id = $t->app->packages->add(
+    name            => 'perl-Mojolicious',
+    checkout_dir    => 'c7cfdab0e71b0bebfdf8b2dc3badfecd',
+    api_url         => 'https://api.opensuse.org',
+    requesting_user => 1,
+    project         => 'devel:languages:perl',
+    package         => 'perl-Mojolicious',
+    srcmd5          => 'bd91c36647a5d3dd883d490da2140401',
+    priority        => 5
+  );
+  $t->app->packages->imported($acceptable_id);
+  $t->app->packages->unpacked($acceptable_id);
+  $t->app->packages->indexed($acceptable_id);
+  $t->app->packages->update({id => $acceptable_id, state => 'acceptable', reviewing_user => 2, obsolete => 1});
+  $t->app->minion->enqueue('reindex_all');
+  $t->app->minion->perform_jobs;
+
+  $pkg = $t->app->packages->find(1);
+  is $pkg->{state},  'acceptable',                       'automatically accepted';
+  is $pkg->{result}, 'Accepted because of low risk (5)', 'because of low risk';
+};
 
 subtest 'Accept package because of its name' => sub {
   $db->update('bot_packages', {state => 'new'}, {id => 1});

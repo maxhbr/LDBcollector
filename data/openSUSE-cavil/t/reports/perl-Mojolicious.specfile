@@ -1,6 +1,7 @@
 {
-  "errors" => [],
-  "main"   => {
+  "errors"              => [],
+  "incomplete_checkout" => 0,
+  "main"                => {
     "%doc"     => ["Changes examples README.md"],
     "%license" => ["LICENSE"],
     "file"     => "perl-Mojolicious.spec",

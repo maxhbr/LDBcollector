@@ -1,3 +1,4 @@
+% my $stats = proposal_stats();
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,30 +53,89 @@
             <li class="nav-item">
               %= link_to 'Licenses' => '/licenses', class => current_route('licenses') ? 'nav-link active' : 'nav-link'
             </li>
-            % if (current_user_has_role 'admin') {
-              <li class="nav-item">
-                %= link_to 'Upload' => '/upload', class => current_route('upload') ? 'nav-link active' : 'nav-link'
-              </li>
-            % }
           </ul>
           <form action="<%= url_for 'search' %>" class="d-flex">
             <%= text_field 'q', class => 'form-control me-2',
               placeholder => 'Package Search' %>
           </form>
           <ul class="navbar-nav">
-            % if (current_user_has_role 'admin') {
-              <li class="nav-item">
-                %= link_to 'Minion' => '/minion', class => 'nav-link'
+            % if (my $user = current_user) {
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Logged in as <%= $user %>
+                  % if ($stats->{missing} > 0) {
+                    <span class="badge bg-danger"><%= $stats->{missing} + $stats->{proposals} %></span>
+                  % }
+                  % elsif ($stats->{proposals} > 0) {
+                    <span class="badge bg-secondary"><%= $stats->{proposals} %></span>
+                  % }
+                </a>
+                <ul class="dropdown-menu">
+                  % if (my @roles = @{current_user_roles()}) {
+                    <h3 class="dropdown-header">Roles</h3>
+                    <li>
+                      <span class="dropdown-item-text">
+                      % for my $role (sort @roles) {
+                        <div class="badge text-bg-secondary"><%= $role %></div>
+                      % }
+                      </span>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                  % }
+                  <h3 class="dropdown-header">User Menu</h3>
+                  <li>
+                    <a href="<%= url_for('missing_licenses') %>" class="dropdown-item">
+                      Missing Licenses
+                      % if ($stats->{missing} > 0) {
+                        <span class="badge bg-danger"><%= $stats->{missing} %></span>
+                      % }
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<%= url_for('proposed_patterns') %>" class="dropdown-item">
+                      Change Proposals
+                      % if ($stats->{proposals} > 0) {
+                        <span class="badge bg-secondary"><%= $stats->{proposals} %></span>
+                      % }
+                    </a>
+                  </li>
+                  <li>
+                    %= link_to 'Pattern Performance' => 'recent_patterns', class => 'dropdown-item'
+                  </li>
+                  <li>
+                    %= link_to 'Statistics' => 'stats', class => 'dropdown-item'
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  % if (current_user_has_role 'admin') {
+                    <h3 class="dropdown-header">Administrator Menu</h3>
+                    <li>
+                      %= link_to 'Upload Tarball' => '/upload', class => 'dropdown-item'
+                    </li>
+                    <li>
+                      %= link_to 'Ignored Matches' => '/ignored-matches', class => 'dropdown-item'
+                    </li>
+                    <li>
+                      %= link_to 'Ignored Files' => '/ignored-files', class => 'dropdown-item'
+                    </li>
+                    <li>
+                      %= link_to 'Minion Dashboard' => '/minion', class => 'dropdown-item'
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                  % }
+                  <li>
+                    <%= link_to 'Documentation' => 'https://github.com/openSUSE/cavil/blob/master/docs/README.md', class => 'dropdown-item' %>
+                  </li>
+                  <li>
+                    %= link_to 'Logout' => 'logout', class => 'dropdown-item'
+                  </li>
+                </ul>
               </li>
             % }
-            <li class="nav-item">
-              % if (my $user = current_user) {
-                %= link_to "Log out $user" => 'logout', class => 'nav-link'
-              % }
-              % else {
+            % else {
+              <li class="nav-item">
                 %= link_to Login => '/login', class => 'nav-link'
-              % }
-            </li>
+              </li>
+            % }
           </ul>
         </div>
       </div>

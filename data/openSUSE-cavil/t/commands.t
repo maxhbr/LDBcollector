@@ -17,13 +17,6 @@ use Mojo::Base -strict;
 
 use Test::More;
 
-subtest 'check' => sub {
-  require Cavil::Command::check;
-  my $cmd = Cavil::Command::check->new;
-  ok $cmd->description, 'has a description';
-  like $cmd->usage, qr/check/, 'has usage information';
-};
-
 subtest 'classify' => sub {
   require Cavil::Command::classify;
   my $cmd = Cavil::Command::classify->new;
@@ -36,6 +29,13 @@ subtest 'cleanup' => sub {
   my $cmd = Cavil::Command::cleanup->new;
   ok $cmd->description, 'has a description';
   like $cmd->usage, qr/cleanup/, 'has usage information';
+};
+
+subtest 'git' => sub {
+  require Cavil::Command::git;
+  my $cmd = Cavil::Command::git->new;
+  ok $cmd->description, 'has a description';
+  like $cmd->usage, qr/git/, 'has usage information';
 };
 
 subtest 'migrate' => sub {
@@ -66,13 +66,6 @@ subtest 'rindex' => sub {
   like $cmd->usage, qr/rindex/, 'has usage information';
 };
 
-subtest 'simplifypatterns' => sub {
-  require Cavil::Command::simplifypatterns;
-  my $cmd = Cavil::Command::simplifypatterns->new;
-  ok $cmd->description, 'has a description';
-  like $cmd->usage, qr/simplifypatterns/, 'has usage information';
-};
-
 subtest 'sync' => sub {
   require Cavil::Command::sync;
   my $cmd = Cavil::Command::sync->new;
@@ -80,11 +73,11 @@ subtest 'sync' => sub {
   like $cmd->usage, qr/sync/, 'has usage information';
 };
 
-subtest 'updatespooky' => sub {
-  require Cavil::Command::updatespooky;
-  my $cmd = Cavil::Command::updatespooky->new;
+subtest 'unpack' => sub {
+  require Cavil::Command::unpack;
+  my $cmd = Cavil::Command::unpack->new;
   ok $cmd->description, 'has a description';
-  like $cmd->usage, qr/updatespooky/, 'has usage information';
+  like $cmd->usage, qr/unpack/, 'has usage information';
 };
 
 subtest 'user' => sub {

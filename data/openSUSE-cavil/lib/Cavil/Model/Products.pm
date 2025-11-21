@@ -47,10 +47,10 @@ sub paginate_known_products ($self, $options) {
 
   my $results = $db->query(
     qq{
-      SELECT *, COUNT(*) OVER() AS total
+      SELECT id, name, EXTRACT(EPOCH FROM updated) as updated_epoch, COUNT(*) OVER() AS total
       FROM bot_products
       $search
-      ORDER BY id DESC
+      ORDER BY updated DESC, id DESC
       LIMIT ? OFFSET ?
     }, $options->{limit}, $options->{offset}
   )->hashes->to_array;
@@ -60,7 +60,7 @@ sub paginate_known_products ($self, $options) {
       q{
       SELECT COUNT(*) FILTER (WHERE state = 'new') AS new_packages,
         COUNT(*) FILTER (WHERE state = 'unacceptable') AS unacceptable_packages,
-        COUNT(*) FILTER (WHERE state = 'acceptable' OR state = 'correct') AS reviewed_packages
+        COUNT(*) FILTER (WHERE state = 'acceptable' OR state = 'acceptable_by_lawyer') AS reviewed_packages
       FROM bot_package_products JOIN bot_packages ON (bot_packages.id = bot_package_products.package)
       WHERE bot_package_products.product = ?}, $result->{id}
     )->hash;
@@ -72,8 +72,18 @@ sub paginate_known_products ($self, $options) {
   return paginate($results, $options);
 }
 
+sub remove ($self, $name) {
+  return $self->pg->db->query('DELETE FROM bot_products WHERE name = ?', $name)->rows;
+}
+
 sub update ($self, $product, $packages) {
   my $db = $self->pg->db;
+
+  my $updated
+    = $db->query('SELECT created FROM bot_packages WHERE id = ANY(?) ORDER BY created DESC LIMIT 1', $packages)
+    ->hash->{created};
+  $db->query('UPDATE bot_products SET updated = ? WHERE id = ?', $updated, $product);
+
   $db->delete('bot_package_products', {product => $product});
   $db->query(
     'insert into bot_package_products (product, package) values (?, ?)

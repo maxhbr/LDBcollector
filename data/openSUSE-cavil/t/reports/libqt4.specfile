@@ -1,6 +1,7 @@
 {
-  "errors" => ["Invalid SPDX license: SUSE-LGPL-2.1-with-digia-exception-1.1"],
-  "main"   => {
+  "errors"              => ["Invalid SPDX license: SUSE-LGPL-2.1-with-digia-exception-1.1"],
+  "incomplete_checkout" => 0,
+  "main"                => {
     "%doc"     => ["*.txt LICENSE.GPL3 LICENSE.LGPL", "changes-*"],
     "%license" => [],
     "file"     => "libqt4.spec",

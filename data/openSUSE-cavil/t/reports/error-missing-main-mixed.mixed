@@ -1,9 +1,10 @@
 {
   "errors" => [
-    "Main package file missing: expected error-missing-main-mixed.spec, error-missing-main-mixed.kiwi, error-missing-main-mixed.Dockerfile, Dockerfile, or Chart.yaml"
+    "Main package file missing: expected error-missing-main-mixed.spec, debian/control, error-missing-main-mixed.kiwi, error-missing-main-mixed.Dockerfile, Dockerfile, or Chart.yaml"
   ],
-  "main" => {},
-  "sub"  => [
+  "incomplete_checkout" => 0,
+  "main"                => {},
+  "sub"                 => [
     {
       "%doc"     => [],
       "%license" => [],

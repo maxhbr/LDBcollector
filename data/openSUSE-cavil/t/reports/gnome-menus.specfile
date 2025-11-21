@@ -1,6 +1,7 @@
 {
-  "errors" => [],
-  "main"   => {
+  "errors"              => [],
+  "incomplete_checkout" => 0,
+  "main"                => {
     "%doc"     => ["AUTHORS COPYING COPYING.LIB ChangeLog NEWS README"],
     "%license" => [],
     "file"     => "gnome-menus.spec",

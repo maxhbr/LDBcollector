@@ -15,6 +15,26 @@
 
 % my $url = url_for($match->{id} ? 'update_pattern' : 'create_pattern');
 
+% if (defined $match->{matches}) {
+  <div class="row">
+    % if ($match->{matches} == 0) {
+      <div class="col mb-3">
+        This pattern has no matches.
+      </div>
+    % }
+    % else {
+      <div class="col mb-3">
+        % my $matches = $match->{matches};
+        % my $packages = $match->{packages};
+        This pattern has <b><%= $matches %></b> <%= $matches == 1 ? 'match' : 'matches' %>
+        in <b><%= $packages %></b>
+        <a href="<%= url_for('search')->query(pattern => stash('id')) %>">
+          <%= $packages == 1 ? 'package' : 'packages' %>
+        </a>.
+      </div>
+    % }
+  </div>
+% }
 <div class="row">
   %= form_for $url => (method => 'POST') => begin
     <div class="col mb-3">
@@ -36,7 +56,7 @@
         <div class="col-lg-2 mb-3">
           <div class="form-floating">
             % my @risks;
-            % for my $r (0..6) {
+            % for my $r (0..9) {
                 % if ($r == $match->{risk}) { push(@risks, [ $r => $r, selected => 'selected' ]) } else { push(@risks, $r); }
             % }
             %= select_field risk => \@risks, class => 'form-control'

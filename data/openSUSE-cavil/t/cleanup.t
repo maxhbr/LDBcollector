@@ -91,11 +91,16 @@ $t->app->patterns->create(pattern => 'The Artistic License 2.0', license => "Art
 $t->app->minion->enqueue(unpack => [$_]) for ($one_id, $two_id, $three_id);
 $t->app->minion->perform_jobs;
 
+is $t->app->packages->find($one_id)->{state}, 'new', 'not previously reviewed by a human';
+$t->app->packages->update({id => $one_id, state => 'acceptable', reviewing_user => 1, result => 'Human review ok'});
+$t->app->minion->enqueue('reindex_all');
+$t->app->minion->perform_jobs;
+
 # First package
 # fake import date
 $t->app->pg->db->query('update bot_packages set imported = ? where id=?', '2017-12-24', $one_id);
-is $t->app->packages->find($one_id)->{state},  'acceptable',                       'right state';
-is $t->app->packages->find($one_id)->{result}, 'Accepted because of low risk (2)', 'right result';
+is $t->app->packages->find($one_id)->{state},  'acceptable',      'right state';
+is $t->app->packages->find($one_id)->{result}, 'Human review ok', 'right result';
 ok !$t->app->packages->find($one_id)->{obsolete},                                               'not obsolete';
 ok -e $dir->child(@one),                                                                        'checkout exists';
 ok $t->app->pg->db->select('bot_reports', [\'count(*)'], {package => $one_id})->array->[0],     'has reports';
@@ -128,16 +133,18 @@ ok -e $dir->child(@three),                                                      
 ok $t->app->pg->db->select('emails', [\'count(*)'], {package => $three_id})->array->[0], 'has emails';
 ok $t->app->pg->db->select('urls', [\'count(*)'], {package => $three_id})->array->[0],   'has URLs';
 
-# Upgrade from acceptable to correct by reindexing
-$t->app->packages->update({id => $two_id, state => 'correct'});
+# Upgrade from acceptable to acceptable_by_lawyer by reindexing
+$t->app->packages->update({id => $two_id, state => 'acceptable_by_lawyer', reviewing_user => 1});
 $t->app->minion->enqueue(analyzed => [$one_id]);
 $t->app->minion->perform_jobs;
-is $t->app->packages->find($one_id)->{state},  'correct',                                             'right state';
-is $t->app->packages->find($one_id)->{result}, 'Correct because reviewed under the same license (2)', 'right result';
+is $t->app->packages->find($one_id)->{state}, 'acceptable_by_lawyer', 'right state';
+is $t->app->packages->find($one_id)->{result}, 'Accepted because reviewed by lawyer under the same license (2)',
+  'right result';
 $t->app->minion->enqueue(analyzed => [$three_id]);
 $t->app->minion->perform_jobs;
-is $t->app->packages->find($three_id)->{state},  'correct',                                             'right state';
-is $t->app->packages->find($three_id)->{result}, 'Correct because reviewed under the same license (2)', 'right result';
+is $t->app->packages->find($three_id)->{state}, 'acceptable_by_lawyer', 'right state';
+is $t->app->packages->find($three_id)->{result}, 'Accepted because reviewed by lawyer under the same license (2)',
+  'right result';
 
 # Clean up old packages
 my $obsolete_id = $t->app->minion->enqueue('obsolete');
@@ -145,10 +152,12 @@ $t->app->minion->perform_jobs;
 
 # First package (still valid)
 my $obsolete = $t->app->minion->job($obsolete_id);
-is $obsolete->info->{state},                   'finished',                                            'right state';
-is $t->app->packages->find($one_id)->{state},  'correct',                                             'right state';
-is $t->app->packages->find($one_id)->{result}, 'Correct because reviewed under the same license (2)', 'right result';
+is $obsolete->info->{state},                  'finished',             'right state';
+is $t->app->packages->find($one_id)->{state}, 'acceptable_by_lawyer', 'right state';
+is $t->app->packages->find($one_id)->{result}, 'Accepted because reviewed by lawyer under the same license (2)',
+  'right result';
 ok $t->app->packages->find($one_id)->{obsolete},                                        'obsolete';
+ok $t->app->packages->find($one_id)->{cleaned},                                         'cleanup done';
 ok !-e $dir->child(@one),                                                               'checkout does not exist';
 ok !$t->app->pg->db->select('emails', [\'count(*)'], {package => $one_id})->array->[0], 'no emails';
 ok !$t->app->pg->db->select('urls', [\'count(*)'], {package => $one_id})->array->[0],   'no URLs';
@@ -157,15 +166,18 @@ ok !$t->app->pg->db->select('pattern_matches', [\'count(*)'], {package => $one_i
 ok !$t->app->pg->db->select('file_snippets', [\'count(*)'], {package => $one_id})->array->[0],   'no file snippets';
 
 # Second package (obsolete)
-is $t->app->packages->find($two_id)->{state}, 'correct', 'right state';
+is $t->app->packages->find($two_id)->{state}, 'acceptable_by_lawyer', 'right state';
 is $t->app->packages->find($two_id)->{result}, 'Accepted because previously reviewed under the same license (1)',
   'right result';
-ok !$t->app->packages->find($two_id)->{obsolete}, 'obsolete';
+ok !$t->app->packages->find($two_id)->{obsolete}, 'not obsolete';
+ok !$t->app->packages->find($two_id)->{cleaned},  'no cleanup done';
 
 # Third package (obsolete)
-is $t->app->packages->find($three_id)->{state},  'correct',                                             'right state';
-is $t->app->packages->find($three_id)->{result}, 'Correct because reviewed under the same license (2)', 'right result';
+is $t->app->packages->find($three_id)->{state}, 'acceptable_by_lawyer', 'right state';
+is $t->app->packages->find($three_id)->{result}, 'Accepted because reviewed by lawyer under the same license (2)',
+  'right result';
 ok !$t->app->packages->find($three_id)->{obsolete},                                               'not obsolete';
+ok !$t->app->packages->find($three_id)->{cleaned},                                                'no clanup done';
 ok -e $dir->child(@three),                                                                        'checkout exists';
 ok $t->app->pg->db->select('bot_reports', [\'count(*)'], {package => $three_id})->array->[0],     'has reports';
 ok $t->app->pg->db->select('emails', [\'count(*)'], {package => $three_id})->array->[0],          'has emails';

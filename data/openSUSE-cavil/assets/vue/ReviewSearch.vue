@@ -45,12 +45,13 @@
                 <th class="state">State</th>
                 <th class="comment">Comment</th>
                 <th class="user">Reviewing User</th>
+                <th class="created">Package</th>
                 <th class="report">Report</th>
               </tr>
             </thead>
             <tbody v-if="reviews === null">
               <tr>
-                <td id="all-done" colspan="5"><i class="fas fa-sync fa-spin"></i> Loading reviews...</td>
+                <td id="all-done" colspan="6"><i class="fas fa-sync fa-spin"></i> Loading reviews...</td>
               </tr>
             </tbody>
             <tbody v-else-if="reviews.length > 0">
@@ -59,12 +60,13 @@
                 <td v-html="review.state"></td>
                 <td v-html="review.comment"></td>
                 <td v-html="review.user"></td>
+                <td v-html="review.package"></td>
                 <td v-html="review.report"></td>
               </tr>
             </tbody>
             <tbody v-else>
               <tr>
-                <td id="all-done" colspan="5">No reviews found.</td>
+                <td id="all-done" colspan="6">No reviews found.</td>
               </tr>
             </tbody>
           </table>
@@ -92,7 +94,7 @@
 <script>
 import PaginationLinks from './components/PaginationLinks.vue';
 import ShownEntries from './components/ShownEntries.vue';
-import {reportLink} from './helpers/links.js';
+import {reportLink, setupPopoverDelayed} from './helpers/links.js';
 import {genParamWatchers, getParams, setParam} from './helpers/params.js';
 import Refresh from './mixins/refresh.js';
 import moment from 'moment';
@@ -145,12 +147,14 @@ export default {
         reviews.push({
           comment: review.comment,
           created: moment(review.created_epoch * 1000).fromNow(),
+          package: review.package,
           report: reportLink(review),
           state: review.state,
           user: review.user
         });
       }
       this.reviews = reviews;
+      setupPopoverDelayed();
     },
     filterNow() {
       this.cancelApiRefresh();

@@ -33,7 +33,7 @@ sub _cleanup ($job) {
   $db->query(
     q{
       UPDATE bot_packages
-      SET obsolete = true, state = 'obsolete', result = 'Obsoleted by newer package with same name and external_link'
+      SET obsolete = true, state = 'obsolete'
       WHERE id IN (
         SELECT a.id FROM (
           SELECT id, ROW_NUMBER() OVER (PARTITION BY external_link, name ORDER BY id DESC) row_no
@@ -45,7 +45,8 @@ sub _cleanup ($job) {
     }
   );
 
-  my $ids     = $db->query('select id from bot_packages where obsolete is true order by id')->arrays->flatten->to_array;
+  my $ids = $db->query('SELECT id FROM bot_packages WHERE obsolete IS TRUE AND cleaned IS NULL ORDER BY ID')
+    ->arrays->flatten->to_array;
   my $buckets = Cavil::Util::buckets($ids, $app->config->{cleanup_bucket_average});
 
   my $minion = $app->minion;

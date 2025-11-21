@@ -3,9 +3,11 @@
   <div v-else>
     <div class="float-end format">
       <i class="fab fa-suse" v-if="pkgType === 'spec'"></i>
+      <i class="fab fa-ubuntu" v-else-if="pkgType === 'debian'"></i>
       <i class="fas fa-kiwi-bird" v-else-if="pkgType === 'kiwi'"></i>
       <i class="fab fa-docker" v-else-if="pkgType === 'docker'"></i>
       <i class="fas fa-dharmachakra" v-else-if="pkgType === 'helm'"></i>
+      <i class="fas fa-industry" v-else-if="pkgType === 'obsprj'"></i>
       <i class="far fa-question-circle" v-else></i>
     </div>
     <h2 v-if="pkgName !== null">
@@ -20,12 +22,12 @@
           <th class="fit text-start noleftpad" scope="row">State:</th>
           <td id="pkg-state">
             <div v-if="state === 'new'" class="badge text-bg-secondary">{{ state }}</div>
-            <div v-else-if="state === 'correct'" class="badge text-bg-success">{{ state }}</div>
+            <div v-else-if="state === 'acceptable_by_lawyer'" class="badge text-bg-success">{{ state }}</div>
             <div v-else-if="state === 'acceptable'" class="badge text-bg-warning">{{ state }}</div>
             <div v-else class="badge text-bg-danger">{{ state }}</div>
           </td>
         </tr>
-        <tr v-if="pkgLicense !== null">
+        <tr v-if="pkgLicense !== null && pkgLicense.name !== null">
           <th class="fit text-start noleftpad" scope="row">
             <i class="fas fa-box"></i>
           </th>
@@ -34,6 +36,14 @@
             {{ pkgLicense.name }}
             <small v-if="pkgLicense.spdx === false">(not SPDX)</small>
           </td>
+        </tr>
+        <tr>
+          <th class="fit text-start noleftpad" scope="row">
+            <i class="fas fa-lock"></i>
+          </th>
+          <th class="fit text-start noleftpad" scope="row">Embargoed:</th>
+          <td v-if="pkgEmbargoed === true" id="pkg-embargoed">Yes</td>
+          <td v-else id="pkg-embargoed">No</td>
         </tr>
         <tr v-if="pkgFiles.length > 0">
           <th class="fit text-start noleftpad" scope="row">
@@ -144,6 +154,14 @@
             <a :href="checkoutUrl" target="_blank">{{ pkgChecksum }}</a>
           </td>
         </tr>
+        <tr v-if="unpackedFiles > 0">
+          <th class="fit text-start noleftpad" scope="row">
+            <i class="fas fa-sitemap"></i>
+          </th>
+          <th class="fit text-start noleftpad" scope="row">Unpacked:</th>
+          <td v-if="unpackedFiles == 1" id="unpacked-files">1 file ({{ unpackedSize }})</td>
+          <td v-else id="unpacked-files">{{ unpackedFilesWithSeparator }} files ({{ unpackedSize }})</td>
+        </tr>
         <tr v-if="pkgPriority !== null">
           <th class="fit text-start noleftpad" scope="row">
             <i class="far fa-star"></i>
@@ -215,37 +233,39 @@
             <tr v-for="file in pkgFiles" :key="file.file">
               <td class="noleftpad">
                 <table class="table borderless transparent-table">
-                  <tr>
-                    <th class="fit text-start noleftpad" colspan="2">
-                      <i class="fas fa-file-alt"></i> {{ file.file }}
-                    </th>
-                  </tr>
-                  <tr v-if="file.licenses !== null">
-                    <th class="fit text-start align-top noleftpad">Licenses:</th>
-                    <td>{{ file.licenses }}</td>
-                  </tr>
-                  <tr v-if="file.version !== null">
-                    <th class="fit text-start align-top noleftpad">Version:</th>
-                    <td>{{ file.version }}</td>
-                  </tr>
-                  <tr v-if="file.summary !== null">
-                    <th class="fit text-start align-top noleftpad">Summary:</th>
-                    <td>{{ file.summary }}</td>
-                  </tr>
-                  <tr v-if="file.group !== null">
-                    <th class="fit text-start align-top noleftpad">Group:</th>
-                    <td>{{ file.group }}</td>
-                  </tr>
-                  <tr v-if="file.url !== null">
-                    <th class="fit text-start align-top noleftpad">URL:</th>
-                    <td class="text-start">
-                      <a :href="file.url" class="p-0" target="_blank">{{ file.url }}</a>
-                    </td>
-                  </tr>
-                  <tr v-if="file.sources !== null">
-                    <th class="fit text-start align-top noleftpad">Sources:</th>
-                    <td>{{ file.sources }}</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th class="fit text-start noleftpad" colspan="2">
+                        <i class="fas fa-file-alt"></i> {{ file.file }}
+                      </th>
+                    </tr>
+                    <tr v-if="file.licenses !== null">
+                      <th class="fit text-start align-top noleftpad">Licenses:</th>
+                      <td>{{ file.licenses }}</td>
+                    </tr>
+                    <tr v-if="file.version !== null">
+                      <th class="fit text-start align-top noleftpad">Version:</th>
+                      <td>{{ file.version }}</td>
+                    </tr>
+                    <tr v-if="file.summary !== null">
+                      <th class="fit text-start align-top noleftpad">Summary:</th>
+                      <td>{{ file.summary }}</td>
+                    </tr>
+                    <tr v-if="file.group !== null">
+                      <th class="fit text-start align-top noleftpad">Group:</th>
+                      <td>{{ file.group }}</td>
+                    </tr>
+                    <tr v-if="file.url !== null">
+                      <th class="fit text-start align-top noleftpad">URL:</th>
+                      <td class="text-start">
+                        <a :href="file.url" class="p-0" target="_blank">{{ file.url }}</a>
+                      </td>
+                    </tr>
+                    <tr v-if="file.sources !== null">
+                      <th class="fit text-start align-top noleftpad">Sources:</th>
+                      <td>{{ file.sources }}</td>
+                    </tr>
+                  </tbody>
                 </table>
               </td>
             </tr>
@@ -265,15 +285,30 @@
         <li v-for="warning in warnings" :key="warning">{{ warning }}</li>
       </ul>
     </div>
+    <div v-if="notice !== null" class="row">
+      <div class="col mb-3">
+        <div class="alert alert-info">
+          <pre>{{ notice }}</pre>
+        </div>
+      </div>
+    </div>
     <div v-if="hasAdminRole === true" class="row">
       <form :action="reviewUrl" method="POST" class="container" id="pkg-review">
         <div class="col mb-3">
           <label class="form-label" for="comment">Comment</label>
-          <textarea v-model="result" name="comment" rows="10" class="form-control"></textarea>
+          <textarea v-model="result" name="comment" placeholder="Reviewed ok" rows="10" class="form-control"></textarea>
         </div>
         <div class="col mb-3">
-          <input class="btn btn-success" id="correct" name="correct" type="submit" value="Checked" />&nbsp;
-          <input class="btn btn-warning" id="acceptable" name="acceptable" type="submit" value="Good Enough" />&nbsp;
+          <input
+            class="btn btn-success"
+            id="acceptable_by_lawyer"
+            name="acceptable_by_lawyer"
+            type="submit"
+            value="Acceptable by Lawyer"
+          />&nbsp;
+          <span v-if="hasLawyerRole === false">
+            <input class="btn btn-warning" id="acceptable" name="acceptable" type="submit" value="Acceptable" />&nbsp;
+          </span>
           <input class="btn btn-danger" id="unacceptable" name="unacceptable" type="submit" value="Unacceptable" />
         </div>
       </form>
@@ -282,10 +317,10 @@
       <form :action="fasttrackUrl" method="POST" class="container" id="pkg-review">
         <div class="col mb-3">
           <label class="form-label" for="comment">Comment</label>
-          <textarea v-model="result" name="comment" rows="10" class="form-control"></textarea>
+          <textarea v-model="result" name="comment" placeholder="Reviewed ok" rows="10" class="form-control"></textarea>
         </div>
         <div class="col mb-3">
-          <input class="btn btn-warning" id="acceptable" name="acceptable" type="submit" value="Good Enough" />
+          <input class="btn btn-warning" id="acceptable" name="acceptable" type="submit" value="Acceptable" />
         </div>
       </form>
     </div>
@@ -331,7 +366,9 @@ export default {
       fasttrackUrl: `/reviews/fasttrack_package/${this.pkgId}`,
       hasSpdxReport: false,
       history: [],
+      notice: null,
       pkgChecksum: null,
+      pkgEmbargoed: false,
       pkgFiles: [],
       pkgLicense: null,
       pkgName: null,
@@ -345,15 +382,22 @@ export default {
       refreshDelay: 30000,
       refreshUrl: `/reviews/meta/${this.pkgId}`,
       requestsHtml: null,
-      result: 'Reviewed ok',
+      result: '',
       reviewed: null,
       reviewingUser: null,
       reviewUrl: `/reviews/review_package/${this.pkgId}`,
       searchUrl: null,
       spdxUrl: `/spdx/${this.pkgId}`,
       state: null,
+      unpackedFiles: 0,
+      unpackedSize: 'n/a',
       warnings: []
     };
+  },
+  computed: {
+    unpackedFilesWithSeparator() {
+      return this.unpackedFiles.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    }
   },
   methods: {
     refreshData(data) {
@@ -394,6 +438,7 @@ export default {
       this.pkgType = data.package_type;
       this.pkgUrl = data.package_url;
       this.pkgVersion = data.package_version;
+      this.pkgEmbargoed = data.embargoed;
 
       this.pkgChecksum = data.package_checksum;
       this.checkoutUrl = `/reviews/file_view/${this.pkgId}`;
@@ -410,9 +455,15 @@ export default {
       this.searchUrl = `/search?q=${this.pkgName}`;
 
       // Make sure not to reset the comment field in the middle of a review (unless someone else changed the state)
-      const defaultResult = this.hasManagerRole === true || this.hasAdminRole === true ? 'Reviewed ok' : '';
-      if (data.state !== this.state) this.result = data.result ?? defaultResult;
+      if (data.state !== this.state) this.result = data.result ?? '';
+      this.notice = data.notice;
       this.state = data.state;
+
+      if (data.unpacked_files !== null) {
+        this.unpackedFiles = data.unpacked_files;
+        this.unpackedSize = data.unpacked_size;
+      }
+
       this.warnings = data.warnings;
     }
   }

@@ -32,8 +32,18 @@ sub find_or_create ($self, %args) {
   return $self->pg->db->insert('bot_users', \%args, {returning => '*'})->hash;
 }
 
-sub has_role ($self, $user, $role) {
-  return !!$self->pg->db->query('select id from bot_users where login = ? and ? = any (roles)', $user, $role)->rows;
+sub has_role ($self, $user, @roles) {
+  return 1 if !@roles;
+  return undef unless my $result = $self->pg->db->query('select roles from bot_users where login = ?', $user)->hash;
+  for my $role (@roles) {
+    return 1 if grep { $_ eq $role } @{$result->{roles}};
+  }
+  return 0;
+}
+
+sub id_for_login ($self, $login) {
+  return undef unless my $hash = $self->pg->db->query('select id from bot_users where login = ?', $login)->hash;
+  return $hash->{id};
 }
 
 sub licensedigger ($self) {
@@ -44,6 +54,10 @@ sub list ($self) { $self->pg->db->select('bot_users')->hashes->to_array }
 
 sub remove_role ($self, $id, $role) {
   $self->pg->db->query('update bot_users set roles = array_remove(roles, ?) where id = ?', $role, $id);
+}
+
+sub roles ($self, $user) {
+  return $self->pg->db->query('select roles from bot_users where login = ?', $user)->arrays->flatten->to_array;
 }
 
 1;

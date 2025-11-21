@@ -1,6 +1,7 @@
 {
-  "errors" => ["Invalid license expression: (Artistic-1.0"],
-  "main"   => {
+  "errors"              => ["Invalid license expression: (Artistic-1.0"],
+  "incomplete_checkout" => 0,
+  "main"                => {
     "%doc"     => [],
     "%license" => [],
     "file"     => "error-invalid-license.spec",

@@ -17,6 +17,7 @@ package Cavil::Controller::Reviewer;
 use Mojo::Base 'Mojolicious::Controller', -signatures;
 
 use Mojo::File      qw(path);
+use Mojo::Util      qw(humanize_bytes);
 use Cavil::Licenses qw(lic);
 use List::Util      qw(first uniq);
 
@@ -27,31 +28,6 @@ my $SMALL_REPORT_RE = qr/
     \/(?:copying|copyright|legal|license|readme)(?:\.\w+)?
   )$
 /xi;
-
-sub add_ignore ($self) {
-  my $validation = $self->validation;
-  $validation->required('hash')->like(qr/^[a-f0-9]{32}$/i);
-  $validation->required('package');
-  return $self->reply->json_validation_error if $validation->has_error;
-
-  my $hash    = lc $validation->param('hash');
-  my $package = $validation->param('package');
-  $self->packages->ignore_line($package, $hash);
-
-  return $self->render(json => 'ok');
-}
-
-sub add_glob ($self) {
-  my $validation = $self->validation;
-  $validation->required('glob');
-  $validation->required('package');
-  return $self->reply->json_validation_error if $validation->has_error;
-
-  $self->pg->db->insert('ignored_files',
-    {glob => $validation->param('glob'), owner => $self->users->find(login => $self->current_user)->{id}});
-  $self->packages->analyze($validation->param('package'));
-  return $self->render(json => 'ok');
-}
 
 sub details ($self) {
   my $id   = $self->stash('id');
@@ -139,10 +115,12 @@ sub meta ($self) {
       actions           => $actions,
       copied_files      => {'%doc' => [sort keys %docs], '%license' => [sort keys %lics]},
       created           => $pkg->{created_epoch},
+      embargoed         => \!!$pkg->{embargoed},
       errors            => $spec->{errors} // [],
       external_link     => $pkg->{external_link},
       has_spdx_report   => \!!$has_spdx_report,
       history           => $history,
+      notice            => $pkg->{notice},
       package_checksum  => $pkg->{checkout_dir},
       package_files     => \@package_files,
       package_group     => $group,
@@ -160,6 +138,8 @@ sub meta ($self) {
       reviewed          => $pkg->{reviewed_epoch},
       reviewing_user    => $pkg->{login},
       state             => $pkg->{state},
+      unpacked_files    => $pkg->{unpacked_files},
+      unpacked_size     => humanize_bytes($pkg->{unpacked_size} // 0),
       warnings          => $spec->{warnings} // []
     }
   );
@@ -176,7 +156,7 @@ sub fasttrack_package ($self) {
   return $self->reply->not_found unless $pkg;
 
   $pkg->{reviewing_user}   = $self->users->find(login => $user)->{id};
-  $pkg->{result}           = $validation->param('comment');
+  $pkg->{result}           = $validation->param('comment') || 'Reviewed ok';
   $pkg->{state}            = 'acceptable';
   $pkg->{review_timestamp} = 1;
   $self->packages->update($pkg);
@@ -195,7 +175,8 @@ sub file_view ($self) {
   $filename =~ s,/$,,;
   $self->stash('filename', $filename);
 
-  my $package = $self->packages->find($self->stash('id'));
+  my $pkgs    = $self->packages;
+  my $package = $pkgs->find($self->stash('id'));
   return $self->reply->not_found unless $package;
   $self->stash('package', $package);
 
@@ -208,13 +189,20 @@ sub file_view ($self) {
   return $self->reply->not_found unless -e $file;
 
   if (-d $file) {
+    my %matched_files = map { $_ => 1 } @{$pkgs->matched_files($package->{id})};
     my (@files, @dirs, @processed);
     for my $entry (path($file)->list({dir => 1})->each) {
       if    (-d $entry)                          { push @dirs,      $entry }
       elsif ($entry =~ /\.processed(?:\.\w+|$)/) { push @processed, $entry }
       else                                       { push @files,     $entry }
     }
-    return $self->render('reviewer/directory_view', dirs => \@dirs, files => \@files, processed => \@processed);
+    return $self->render(
+      'reviewer/directory_view',
+      dirs          => \@dirs,
+      files         => \@files,
+      processed     => \@processed,
+      matched_files => \%matched_files
+    );
   }
 
   $self->stash('file', $file);
@@ -238,7 +226,7 @@ sub review_package ($self) {
   $validation->optional('comment');
   $validation->optional('unacceptable');
   $validation->optional('acceptable');
-  $validation->optional('correct');
+  $validation->optional('acceptable_by_lawyer');
   return $self->reply->json_validation_error if $validation->has_error;
 
   my $user = $self->session('user');
@@ -248,7 +236,7 @@ sub review_package ($self) {
   return $self->reply->not_found unless $pkg;
 
   $pkg->{reviewing_user} = $self->users->find(login => $user)->{id};
-  my $result = $pkg->{result} = $validation->param('comment');
+  my $result = $pkg->{result} = $validation->param('comment') || 'Reviewed ok';
 
   if ($validation->param('unacceptable')) {
     $pkg->{state} = 'unacceptable';
@@ -256,8 +244,8 @@ sub review_package ($self) {
   elsif ($validation->param('acceptable')) {
     $pkg->{state} = 'acceptable';
   }
-  elsif ($validation->param('correct')) {
-    $pkg->{state} = 'correct';
+  elsif ($validation->param('acceptable_by_lawyer')) {
+    $pkg->{state} = 'acceptable_by_lawyer';
   }
   else {
     die "Unknown state";

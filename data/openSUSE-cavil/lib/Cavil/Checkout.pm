@@ -17,11 +17,12 @@ package Cavil::Checkout;
 use Mojo::Base -base, -signatures;
 
 use File::Unpack2;
+use File::Spec::Functions qw(catfile);
 use Mojo::DOM;
 use Mojo::File 'path';
 use Mojo::JSON qw(decode_json encode_json);
 use Mojo::Util 'dumper';
-use Cavil::Util qw(buckets slurp_and_decode);
+use Cavil::Util qw(buckets parse_service_file slurp_and_decode);
 use Cavil::Licenses 'lic';
 use Cavil::PostProcess;
 use YAML::XS qw(Load);
@@ -75,6 +76,8 @@ my $URL_RE = qr!
 
 my $LICENSE_COMMENT_RE = qr/^\s*#\s*SPDX-License-Identifier\s*:\s*(.+)\s*$/;
 
+sub is_unpacked ($self) { -d path($self->dir)->child('.unpacked') }
+
 sub keyword_report ($self, $matcher, $meta, $file) {
   my $dir  = path($self->dir);
   my $base = $dir->child('.unpacked');
@@ -92,23 +95,29 @@ sub new ($class, $dir) { $class->SUPER::new(dir => $dir) }
 sub specfile_report ($self) {
   my $dir      = path($self->dir);
   my $basename = $dir->dirname->basename;
+  my $unpacked = $dir->child('.unpacked');
 
-  my $info = {main => undef, sub => [], errors => [], warnings => []};
+  my $info = {main => undef, sub => [], errors => [], warnings => [], incomplete_checkout => 0};
 
-  my $upload_file = $dir->child('.cavil.json');
+  my $upload_file  = $dir->child('.cavil.json');
+  my $service_file = $unpacked->child('_service');
 
   my $specfile_name = $basename . '.spec';
-  my $main_specfile = $dir->child($specfile_name);
+  my $main_specfile = $unpacked->child($specfile_name);
+
+  my $debian_control_file = $unpacked->child('debian/control');
 
   my $kiwifile_name = $basename . '.kiwi';
-  my $main_kiwifile = $dir->child($kiwifile_name);
+  my $main_kiwifile = $unpacked->child($kiwifile_name);
 
   my $dockerfile_name  = $basename . '.Dockerfile';
-  my $main_dockerfile  = $dir->child('Dockerfile');
-  my $named_dockerfile = $dir->child($dockerfile_name);
+  my $main_dockerfile  = $unpacked->child('Dockerfile');
+  my $named_dockerfile = $unpacked->child($dockerfile_name);
 
   my $helmchart_name = 'Chart.yaml';
-  my $main_helmchart = $dir->child($helmchart_name);
+  my $main_helmchart = $unpacked->child($helmchart_name);
+
+  my $is_obsprj = _is_obsprj($unpacked);
 
   # Tarball upload
   if (-f $upload_file) {
@@ -125,12 +134,38 @@ sub specfile_report ($self) {
 
   else {
 
+    # Service file
+    if (-f $service_file) {
+      my $services = parse_service_file($service_file->slurp);
+      for my $service (@$services) {
+        next if $service->{safe};
+        $info->{incomplete_checkout} = 1;
+        push @{$info->{errors}},
+          "Checkout might be incomplete, remote service in _service file: $service->{name} (mode: $service->{mode})";
+      }
+    }
+
+    # ObsPrj
+    if ($is_obsprj) {
+      push @{$info->{sub}},      $info->{main} = {file => 'workflow.config', type => 'obsprj', licenses => []};
+      push @{$info->{warnings}}, 'Checkout is a product in ObsPrj format and might contain packages in subdirectories';
+    }
+
     # Main .spec file
-    if (-f $main_specfile) {
+    elsif (-f $main_specfile) {
       my $specfile = $info->{main} = _specfile($main_specfile);
       if (@{$specfile->{licenses}}) { $specfile->{license} = $specfile->{licenses}[0] }
       else {
         push @{$info->{errors}}, qq{Main specfile contains no license: $specfile_name (expected "License: ..." entry)};
+      }
+    }
+
+    # Debian files
+    elsif (-f $debian_control_file) {
+      my $debian_files = $info->{main} = _debian_files($debian_control_file);
+      if (@{$debian_files->{licenses}}) { $debian_files->{license} = $debian_files->{licenses}[0] }
+      else {
+        push @{$info->{errors}}, qq{Package contains no license: debian/copyright (expected "License: ..." entry)};
       }
     }
 
@@ -177,12 +212,15 @@ sub specfile_report ($self) {
 
     # No main files
     else {
-      push @{$info->{errors}},
-        "Main package file missing: expected $specfile_name, $kiwifile_name, $dockerfile_name, Dockerfile, or Chart.yaml";
+      push @{$info->{errors}}, "Main package file missing: expected $specfile_name, debian/control, $kiwifile_name,"
+        . " $dockerfile_name, Dockerfile, or Chart.yaml";
     }
 
+    # Debian files
+    push @{$info->{sub}}, _debian_files($debian_control_file) if -f $debian_control_file;
+
     # All .spec files
-    my $files = $dir->list;
+    my $files = $unpacked->list->grep(sub { $_ !~ /\.processed\./ });
     push @{$info->{sub}}, _specfile($_) for $files->grep(qr/\.spec$/)->each;
 
     # All .kiwi files
@@ -217,10 +255,10 @@ sub unpack ($self, $options = {}) {
   my $u = File::Unpack2->new(
     verbose => 0,
 
-    # chromium's tar is 5.4GB (uncompressed, as file::unpack2
+    # chromium's tar is 23GB (uncompressed, as file::unpack2
     # first xz -cd before extracting tar, we need to need that
     # much. And reserve some space for future growth)
-    maxfilesize          => '7G',
+    maxfilesize          => '30G',
     one_shot             => 0,
     no_op                => 0,
     world_readable       => 1,
@@ -257,12 +295,27 @@ sub unpack ($self, $options = {}) {
   $dir->child('.postprocessed.json')->spew(encode_json($processor->hash));
 }
 
+sub unpacked_file_stats ($self) {
+  my $dir      = scalar $self->dir;
+  my $unpacked = decode_json(path($self->dir)->child('.postprocessed.json')->slurp)->{unpacked};
+
+  my $stats = {files => scalar keys %$unpacked, size => 0};
+  for my $file (keys %{$unpacked}) {
+    $stats->{size} += (-s catfile($dir, '.unpacked', $file)) // 0;
+  }
+
+  return $stats;
+}
+
 sub unpacked_files ($self, $bucket_size = undef) {
   my $dir      = path($self->dir);
   my $unpacked = decode_json($dir->child('.postprocessed.json')->slurp)->{unpacked};
 
   my @files;
   for my $file (sort keys %{$unpacked}) {
+
+    # Reports might still be present if checkouts get unpacked more than once
+    next if $file =~ /\.report(?:\.processed)?\.spdx$/;
 
     my $mime = $unpacked->{$file}{mime};
     next if $mime =~ $BLACKLIST_MIME_RE;
@@ -304,6 +357,24 @@ sub _check ($info) {
   }
 }
 
+sub _debian_files ($file) {
+  my $info = {file => 'debian', type => 'debian', licenses => []};
+
+  for my $line (split "\n", $file->slurp) {
+    if    ($line =~ /^Homepage:\s*(.+)\s*$/)          { $info->{url} = $1 }
+    elsif ($line =~ /^Standards-Version:\s*(.+)\s*$/) { $info->{version} ||= $1 }
+  }
+
+  my $copyright_file = $file->sibling('copyright');
+  if (-f $copyright_file) {
+    for my $line (split "\n", $copyright_file->slurp) {
+      if ($line =~ /^License:\s*(.+)\s*$/) { push @{$info->{licenses}}, $1 }
+    }
+  }
+
+  return $info;
+}
+
 sub _dockerfile ($file) {
   my $info = {file => $file->basename, type => 'dockerfile', licenses => []};
   for my $line (split "\n", $file->slurp) {
@@ -329,6 +400,14 @@ sub _helmchart ($file) {
   }
 
   return $info;
+}
+
+sub _is_obsprj ($unpacked) {
+  my $config = $unpacked->child('workflow.config');
+  return 0 unless -f $config;
+  return 0 unless my $data = eval { decode_json($config->slurp) };
+  return 0 unless ref $data eq 'HASH' && exists $data->{Workflows} && exists $data->{GitProjectName};
+  return 1;
 }
 
 sub _kiwifile ($file) {

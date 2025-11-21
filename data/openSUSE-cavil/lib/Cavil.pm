@@ -18,6 +18,8 @@ use Mojo::Base 'Mojolicious', -signatures;
 
 use Mojo::Pg;
 use Cavil::Classifier;
+use Cavil::Git;
+use Cavil::Model::IgnoredFiles;
 use Cavil::Model::Packages;
 use Cavil::Model::Patterns;
 use Cavil::Model::Products;
@@ -32,6 +34,7 @@ use Scalar::Util 'weaken';
 use Mojo::File qw(path);
 
 has classifier => sub { Cavil::Classifier->new };
+has git        => sub { Cavil::Git->new };
 has obs        => sub { Cavil::OBS->new };
 has spdx       => sub ($self) {
   my $spdx = Cavil::SPDX->new(app => $self);
@@ -44,7 +47,7 @@ has sync => sub ($self) {
   return $sync;
 };
 
-our $VERSION = '1.006';
+our $VERSION = '1.019';
 
 sub startup ($self) {
 
@@ -52,17 +55,17 @@ sub startup ($self) {
   my $config = $self->plugin(Config => {file => $file});
   $self->secrets($config->{secrets});
 
-  $self->classifier->url($config->{classifier});
+  if (my $classifier = $config->{classifier}) {
+    $self->classifier->url($classifier->{url})->token($classifier->{token});
+  }
 
   # Avoid huge temp files in "/tmp"
   $ENV{MOJO_TMPDIR} = $config->{tmp_dir} if $config->{tmp_dir};
   $self->max_request_size(262144000);
 
-  # Optional OBS credentials
-  if (my $obs = $config->{obs}) {
-    $self->obs->user($obs->{user})       if $obs->{user};
-    $self->obs->ssh_key($obs->{ssh_key}) if $obs->{ssh_key};
-  }
+  # OBS/git configuration
+  if (my $obs = $config->{obs}) { $self->obs->config($obs) }
+  if (my $git = $config->{git}) { $self->git->config($git) }
 
   # Short logs for systemd
   $self->log->short(1) if $self->mode eq 'production';
@@ -128,6 +131,8 @@ sub startup ($self) {
   );
   $self->helper(requests => sub ($c) { state $reqs  = Cavil::Model::Requests->new(pg => $c->pg) });
   $self->helper(users    => sub ($c) { state $users = Cavil::Model::Users->new(pg => $c->pg) });
+  $self->helper(
+    ignored_files => sub ($c) { state $pkgs = Cavil::Model::IgnoredFiles->new(pg => $c->pg, log => $self->log) });
 
   my $cache = path($config->{cache_dir})->make_path;
   $self->helper(
@@ -146,11 +151,14 @@ sub startup ($self) {
   $self->pg->migrations->name('legalqueue_api')->from_file($path);
 
   # Authentication
-  my $public     = $self->routes;
-  my $bot        = $public->under('/')->to('Auth::Token#check');
-  my $manager    = $public->under('/' => {role => 'manager'})->to('Auth#check');
-  my $admin      = $public->under('/' => {role => 'admin'})->to('Auth#check');
-  my $classifier = $public->under('/' => {role => 'classifier'})->to('Auth#check');
+  my $public               = $self->routes;
+  my $bot                  = $public->under('/')->to('Auth::Token#check');
+  my $logged_in            = $public->under('/' => {roles => []})->to('Auth#check');
+  my $manager              = $public->under('/' => {roles => ['manager']})->to('Auth#check');
+  my $admin                = $public->under('/' => {roles => ['admin']})->to('Auth#check');
+  my $admin_or_contributor = $public->under('/' => {roles => ['admin', 'contributor']})->to('Auth#check');
+  my $classifier           = $public->under('/' => {roles => ['classifier']})->to('Auth#check');
+
   if (my $openid = $config->{openid}) {
     $self->plugin(
       OAuth2 => {
@@ -179,44 +187,64 @@ sub startup ($self) {
   $bot->post('/packages')->to('Queue#create_package');
   $bot->post('/packages/import/<id:num>')->to('Queue#import_package');
   $bot->patch('/products/*name')->to('Queue#update_product');
+  $bot->delete('/products')->to('Queue#remove_product');
   $bot->post('/requests')->to('Queue#create_request');
   $bot->get('/requests')->to('Queue#list_requests');
   $bot->delete('/requests')->to('Queue#remove_request');
+  $bot->get('/package/<id:num>/report' => [format => ['json', 'txt']])->to('Report#report', format => 'json');
 
   # API for lawyer tools
-  $bot->get('/package/<id:num>/report')->to('Report#calc', format => 'json');
   $bot->get('/source/<id:num>')->to('Report#source', format => 'json');
 
   # Public API
   $public->get('/api/package/:name' => sub ($c) { $c->redirect_to('package_api') });
+  $public->get('/api/1.0/identify/:name/:checksum')->to('API#identify')->name('identify_api');
   $public->get('/api/1.0/package/:name')->to('API#status')->name('package_api');
   $public->get('/api/1.0/source')->to('API#source')->name('source_api');
 
   # Review UI
   $public->get('/')->to('Reviewer#list_reviews')->name('dashboard');
   $public->get('/search')->to('Search#search')->name('search');
-  $public->get('/pagination/search/*name')->to('Pagination#review_search')->name('pagination_review_search');
+  $public->get('/pagination/search/*name' => {name => ''})
+    ->to('Pagination#review_search')
+    ->name('pagination_review_search');
   $public->get('/reviews/recent')->to('Reviewer#list_recent')->name('reviews_recent');
-  $manager->get('/reviews/file_view/<id:num>/*file' => {file => ''})->to('Reviewer#file_view')->name('file_view');
-  $public->get('/reviews/details/<id:num>')->to('Reviewer#details')->name('package_details');
-  $public->get('/reviews/meta/<id:num>')->to('Reviewer#meta')->name('package_meta');
-  $public->get('/reviews/calc_report/<id:num>' => [format => ['json', 'html']])->to('Report#calc', format => 'html')
-    ->name('calc_report');
-  $public->get('/reviews/fetch_source/<id:num>' => [format => ['json', 'html']])->to('Report#source', format => 'html');
+  $logged_in->get('/reviews/file_view/<id:num>/*file' => {file => ''})->to('Reviewer#file_view')->name('file_view');
+  $logged_in->get('/reviews/details/<id:num>')->to('Reviewer#details')->name('package_details');
+  $logged_in->get('/reviews/meta/<id:num>')->to('Reviewer#meta')->name('package_meta');
+  $logged_in->get('/reviews/report/<id:num>' => [format => ['json', 'txt', 'html']])
+    ->to('Report#report', format => 'html')
+    ->name('report');
+  $logged_in->get('/reviews/fetch_source/<id:num>' => [format => ['json', 'html']])
+    ->to('Report#source', format => 'html');
   $admin->post('/reviews/review_package/<id:num>')->to('Reviewer#review_package')->name('review_package');
   $manager->post('/reviews/fasttrack_package/<id:num>')->to('Reviewer#fasttrack_package')->name('fasttrack_package');
-  $admin->post('/reviews/add_ignore')->to('Reviewer#add_ignore');
-  $admin->post('/reviews/add_glob')->to('Reviewer#add_glob')->name('add_glob');
   $admin->post('/reviews/reindex/<id:num>')->to('Reviewer#reindex_package')->name('reindex_package');
   $public->get('/pagination/reviews/open')->to('Pagination#open_reviews')->name('pagination_open_reviews');
   $public->get('/pagination/reviews/recent')->to('Pagination#recent_reviews')->name('pagination_recent_reviews');
-  $public->get('/spdx/<id:num>')->to('Report#spdx')->name('spdx_report');
+  $logged_in->get('/spdx/<id:num>')->to('Report#spdx')->name('spdx_report');
 
   $public->get('/licenses')->to('License#list')->name('licenses');
   $public->get('/pagination/licenses/known')->to('Pagination#known_licenses')->name('pagination_known_licenses');
   $admin->get('/licenses/new_pattern')->to('License#new_pattern')->name('new_pattern');
-  $admin->post('/licenses/new_pattern')->to('License#new_pattern');
   $admin->post('/licenses/create_pattern')->to('License#create_pattern')->name('create_pattern');
+  $logged_in->get('/licenses/proposed')->to('License#proposed')->name('proposed_patterns');
+  $logged_in->get('/licenses/missing')->to('License#missing')->name('missing_licenses');
+  $logged_in->get('/licenses/proposed/meta')->to('License#proposed_meta')->name('proposed_patterns_meta');
+  $logged_in->get('/licenses/recent')->to('License#recent')->name('recent_patterns');
+  $logged_in->get('/licenses/recent/meta')->to('License#recent_meta')->name('recent_patterns_meta');
+
+  $admin->get('/ignored-matches')->to('Ignore#list_matches')->name('list_ignored_matches');
+  $admin->delete('/ignored-matches/<id:num>')->to('Ignore#remove_match')->name('remove_ignored_match');
+  $admin->get('/pagination/matches/ignored')->to('Pagination#ignored_matches')->name('pagination_ignored_matches');
+
+  $admin->get('/ignored-files')->to('Ignore#list_globs')->name('list_globs');
+  $admin->post('/ignored-files')->to('Ignore#add_glob')->name('add_ignore');
+  $admin->delete('/ignored-files/<id:num>')->to('Ignore#remove_glob')->name('remove_ignored_file');
+  $admin->get('/pagination/files/ignored')->to('Pagination#ignored_files')->name('pagination_ignored_files');
+
+  # Public because of fine grained access controls (owner of proposal may remove it again)
+  $public->post('/licenses/proposed/remove/:checksum')->to('License#remove_proposal')->name('proposed_remove');
 
   $admin->get('/licenses/edit_pattern/<id:num>')->to('License#edit_pattern')->name('edit_pattern');
   $admin->post('/licenses/update_pattern/<id:num>')->to('License#update_pattern')->name('update_pattern');
@@ -229,15 +257,19 @@ sub startup ($self) {
   $public->get('/products/*name')->to('Product#show')->name('product_show');
   $public->get('/pagination/products/*name')->to('Pagination#product_reviews')->name('pagination_product_reviews');
 
-  $public->get('/snippets')->to('Snippet#list')->name('snippets');
-  $public->get('/snippets/meta')->to('Snippet#list_meta')->name('snippets_meta');
+  $logged_in->get('/snippets')->to('Snippet#list')->name('snippets');
+  $logged_in->get('/snippets/meta')->to('Snippet#list_meta')->name('snippets_meta');
   $classifier->post('/snippets/<id:num>')->to('Snippet#approve')->name('approve_snippets');
-  $public->get('/snippet/edit/<id:num>')->to('Snippet#edit')->name('edit_snippet');
-  $public->get('/snippet/meta/<id:num>')->to('Snippet#meta')->name('snippet_meta');
+  $logged_in->get('/snippet/edit/<id:num>')->to('Snippet#edit')->name('edit_snippet');
+  $logged_in->get('/snippet/meta/<id:num>')->to('Snippet#meta')->name('snippet_meta');
   $public->post('/snippet/closest')->to('Snippet#closest')->name('snippet_closest');
-  $public->get('/snippets/from_file/:file/<start:num>/<end:num>')->to('Snippet#from_file')->name('new_snippet');
-  $admin->post('/snippet/decision/<id:num>')->to('Snippet#decision')->name('snippet_decision');
-  $public->get('/snippets/top')->to('Snippet#top')->name('top_snippets');
+  $admin_or_contributor->get('/snippets/from_file/:file/<start:num>/<end:num>')
+    ->to('Snippet#from_file')
+    ->name('new_snippet');
+  $admin_or_contributor->post('/snippet/decision/<id:num>')->to('Snippet#decision')->name('snippet_decision');
+
+  $logged_in->get('/stats')->to('Stats#index')->name('stats');
+  $logged_in->get('/stats/meta')->to('Stats#meta')->name('stats_meta');
 
   # Upload (experimental)
   $admin->get('/upload')->to('Upload#index')->name('upload');

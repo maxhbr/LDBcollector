@@ -18,20 +18,31 @@ use Mojo::Base -strict, -signatures;
 
 use Carp 'croak';
 use Exporter 'import';
-use Encode qw(from_to decode);
+use Encode   qw(from_to decode);
+use IPC::Run ();
 use Mojo::Util;
+use Mojo::DOM;
 use Mojo::File qw(path tempfile);
 use POSIX 'ceil';
 use Spooky::Patterns::XS;
 use Text::Glob 'glob_to_regex';
+use Try::Tiny;
+
 $Text::Glob::strict_wildcard_slash = 0;
 
 our @EXPORT_OK = (
-  qw(buckets slurp_and_decode load_ignored_files lines_context obs_ssh_auth paginate parse_exclude_file),
-  qw(read_lines ssh_sign)
+  qw(buckets file_and_checksum slurp_and_decode load_ignored_files lines_context obs_ssh_auth paginate),
+  qw(parse_exclude_file parse_service_file pattern_checksum pattern_matches read_lines request_id_from_external_link),
+  qw(run_cmd snippet_checksum ssh_sign)
 );
 
 my $MAX_FILE_SIZE = 30000;
+
+# Service modes that guarantee checkouts are complete and not amended by the OBS server
+my $SAFE_OBS_SRVICE_MODES = {buildtime => 1, localonly => 1, manual => 1, disabled => 1};
+
+# According to Adrian, this is the only exception currently
+my $SAFE_OBS_SRVICE_NAMES = {product_converter => 1};
 
 sub buckets ($things, $size) {
 
@@ -45,6 +56,69 @@ sub buckets ($things, $size) {
   }
 
   return \@buckets;
+}
+
+sub file_and_checksum ($path, $first_line, $last_line) {
+  my %lines;
+  for (my $line = $first_line; $line <= $last_line; $line += 1) {
+    $lines{$line} = 1;
+  }
+
+  my $ctx = Spooky::Patterns::XS::init_hash(0, 0);
+
+  my $text = '';
+  for my $row (@{Spooky::Patterns::XS::read_lines($path, \%lines)}) {
+    my $line = $row->[2] . "\n";
+    $text .= $line;
+    $ctx->add($line);
+  }
+
+  # note that the hash is accounting with the newline included
+  chop $text;
+
+  my $hash = $ctx->hex;
+
+  return ($text, $hash);
+}
+
+sub pattern_checksum ($text) {
+  Spooky::Patterns::XS::init_matcher();
+  my $a   = Spooky::Patterns::XS::parse_tokens($text);
+  my $ctx = Spooky::Patterns::XS::init_hash(0, 0);
+  for my $n (@$a) {
+
+    # map the skips to each other
+    $n = 99 if $n < 99;
+    my $s = pack('q', $n);
+    $ctx->add($s);
+  }
+
+  return $ctx->hex;
+}
+
+sub run_cmd ($dir, $cmd) {
+  my $cwd = path;
+  chdir $dir;
+  my $guard = Mojo::Util::scope_guard sub { chdir $cwd };
+
+  try {
+    my ($stdin, $stdout, $stderr) = ('', '', '');
+    my $success = IPC::Run::run($cmd, \$stdin, \$stdout, \$stderr);
+    my $status  = $?;
+    return {status => $success, exit_code => $status >> 8, stdout => $stdout, stderr => $stderr};
+  }
+  catch {
+    return {status => 0, exit_code => undef, stdout => '', stderr => $_ // 'Unknown error'};
+  }
+  finally {
+    undef $guard;
+  };
+}
+
+sub snippet_checksum ($text) {
+  my $ctx = Spooky::Patterns::XS::init_hash(0, 0);
+  $ctx->add($text);
+  return $ctx->hex;
 }
 
 sub slurp_and_decode ($path) {
@@ -102,7 +176,7 @@ sub lines_context ($lines) {
 }
 
 sub load_ignored_files ($db) {
-  my %ignored_file_res = map { glob_to_regex($_->[0]) => $_->[0] } @{$db->select('ignored_files', 'glob')->arrays};
+  my %ignored_file_res = map { $_->[0] => glob_to_regex($_->[0]) } @{$db->select('ignored_files', 'glob')->arrays};
   return \%ignored_file_res;
 }
 
@@ -138,6 +212,32 @@ sub parse_exclude_file ($path, $name) {
   return $exclude;
 }
 
+sub parse_service_file ($file) {
+  my $dom = Mojo::DOM->new($file);
+
+  my $services = [];
+  for my $node ($dom->find('services service[name]')->each) {
+    my $name = $node->attr('name');
+    my $mode = $node->attr('mode') // 'Default';
+    my $safe = $SAFE_OBS_SRVICE_MODES->{$mode} || $SAFE_OBS_SRVICE_NAMES->{$name} ? 1 : 0;
+    push @$services, {name => $name, mode => $mode, safe => $safe};
+  }
+
+  return $services;
+}
+
+sub pattern_matches ($pattern, $text) {
+  my $matcher = Spooky::Patterns::XS::init_matcher();
+  my $parsed  = Spooky::Patterns::XS::parse_tokens($pattern);
+  $matcher->add_pattern(1, $parsed);
+
+  my $file    = tempfile->spew("ABC\n$text\nABC\n", 'UTF-8');
+  my $matches = !!@{$matcher->find_matches($file)};
+  undef $file;
+
+  return $matches;
+}
+
 sub read_lines ($path, $start_line, $end_line) {
   my %needed_lines;
   for (my $line = $start_line; $line <= $end_line; $line += 1) {
@@ -157,6 +257,11 @@ sub read_lines ($path, $start_line, $end_line) {
     $text .= "$line\n";
   }
   return $text;
+}
+
+sub request_id_from_external_link ($link) {
+  return $1 if $link =~ /^(?:obs|ibs)#(\d+)$/;
+  return undef;
 }
 
 # Based on https://www.suse.com/c/multi-factor-authentication-on-suses-build-service/

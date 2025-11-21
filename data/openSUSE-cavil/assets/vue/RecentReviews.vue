@@ -25,6 +25,16 @@
               />
               <label class="form-check-label" for="cavil-pkg-by-user">Reviewed By User</label>
             </div>
+            <div class="form-check">
+              <input
+                v-model="params.unresolvedMatches"
+                @change="gotoPage(1)"
+                type="checkbox"
+                class="form-check-input"
+                id="cavil-pkg-unresolved-matches"
+              />
+              <label class="form-check-label" for="cavil-pkg-unresolved-matches">Unresolved Matches</label>
+            </div>
           </div>
           <div id="cavil-pkg-filter" class="col-lg-3">
             <form @submit.prevent="filterNow">
@@ -101,7 +111,7 @@
 import PaginationLinks from './components/PaginationLinks.vue';
 import PriorityBadge from './components/PriorityBadge.vue';
 import ShownEntries from './components/ShownEntries.vue';
-import {externalLink, packageLink, reportLink} from './helpers/links.js';
+import {externalLink, packageLink, reportLink, setupPopoverDelayed} from './helpers/links.js';
 import {genParamWatchers, getParams, setParam} from './helpers/params.js';
 import Refresh from './mixins/refresh.js';
 import moment from 'moment';
@@ -164,6 +174,7 @@ export default {
         });
       }
       this.reviews = reviews;
+      setupPopoverDelayed();
     },
     filterNow() {
       this.cancelApiRefresh();
@@ -172,7 +183,7 @@ export default {
     }
   },
   watch: {
-    ...genParamWatchers('limit', 'offset', 'byUser'),
+    ...genParamWatchers('limit', 'offset', 'byUser', 'unresolvedMatches'),
     filter: function (val) {
       this.params.filter = val;
       this.params.offset = 0;

@@ -183,6 +183,16 @@ subtest 'Check unused patterns' => sub {
     like $@, qr/Pattern 8 is still in use and cannot be removed/, 'patterns still in use cannot be removed';
   };
 
+  subtest 'Three licenses with unused patterns remaining' => sub {
+    my $buffer = '';
+    {
+      open my $handle, '>', \$buffer;
+      local *STDOUT = $handle;
+      $app->start('patterns', '--check-unused');
+    }
+    like $buffer, qr/Apache.*Artistic.*NotALicense/s, 'three licenses';
+  };
+
   subtest 'Remove used patterns' => sub {
     my $before = $app->minion->jobs({task => 'index'})->total;
     my $buffer = '';
@@ -259,6 +269,56 @@ subtest 'Check SPDX' => sub {
       $app->start('patterns', '--check-spdx');
     }
     like $buffer, qr/Apache-2.0: Apache-2.0, LicenseRef-Apache-2.0/, 'multiple SPDX expressions detected';
+  };
+};
+
+subtest 'Check unused ignore patterns' => sub {
+  subtest 'No unused ignore patterns' => sub {
+    my $buffer = '';
+    {
+      open my $handle, '>', \$buffer;
+      local *STDOUT = $handle;
+      $app->start('patterns', '--check-unused-ignore');
+    }
+    like $buffer, qr/Found 0 unused ignore patterns \(0 total\)/s, 'no patterns';
+
+    $buffer = '';
+    {
+      open my $handle, '>', \$buffer;
+      local *STDOUT = $handle;
+      $app->start('patterns', '--remove-unused-ignore');
+    }
+    like $buffer, qr/No unused ignore patterns found/s, 'no patterns removed';
+  };
+
+  subtest 'Two unused ignore patterns' => sub {
+    $app->packages->ignore_line({package => 'perl-Moose',  hash => '9be8204dd8bdc31a4d0877aa647f42c8'});
+    $app->packages->ignore_line({package => 'perl-Minion', hash => 'ebe8204dd8bdc31a4d0877aa647f42cf'});
+    $app->packages->ignore_line({package => 'perl-Minion', hash => 'fbe8204dd8bdc31a4d0877aa647f42c0'});
+    my $id = $app->pg->db->query('SELECT id FROM ignored_lines WHERE hash = ?', 'fbe8204dd8bdc31a4d0877aa647f42c0')
+      ->hash->{id};
+    $app->pg->db->update('pattern_matches', {ignored => 1, ignored_line => $id}, {id => 2});
+
+    subtest 'Check' => sub {
+      my $buffer = '';
+      {
+        open my $handle, '>', \$buffer;
+        local *STDOUT = $handle;
+        $app->start('patterns', '--check-unused-ignore');
+
+      }
+      like $buffer, qr/Found 2 unused ignore patterns \(3 total\)/s, 'two patterns';
+    };
+
+    subtest 'Remove' => sub {
+      my $buffer = '';
+      {
+        open my $handle, '>', \$buffer;
+        local *STDOUT = $handle;
+        $app->start('patterns', '--remove-unused-ignore');
+      }
+      like $buffer, qr/Removed 2 unused ignore patterns/s, 'two patterns removed';
+    };
   };
 };
 

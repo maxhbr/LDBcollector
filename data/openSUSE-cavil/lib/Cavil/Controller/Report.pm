@@ -20,7 +20,7 @@ use Mojo::Asset::File;
 use Mojo::JSON 'from_json';
 use Cavil::Util 'lines_context';
 
-sub calc ($self) {
+sub report ($self) {
   my $id = $self->stash('id');
   return $self->render(text => 'unknown package', status => 408) unless my $pkg = $self->packages->find($id);
 
@@ -36,7 +36,8 @@ sub calc ($self) {
   $self->_sanitize_report($report);
 
   $self->respond_to(
-    json => sub { $self->render(json => {report => $report, package => $pkg}) },
+    json => sub { $self->render(json                      => {report => $report, package => $pkg}) },
+    txt  => sub { $self->render('reviewer/report', report => $report, package => $pkg) },
     html => sub {
       my $min = $self->app->config('min_files_short_report');
       $self->render('reviewer/report', report => $report, package => $pkg, max_number_of_files => $min);
@@ -62,11 +63,12 @@ sub source ($self) {
 
       return $self->render(
         'reviewer/file_source',
-        file     => $id,
-        filename => $source->{filename},
-        lines    => lines_context($source->{lines}),
-        hidden   => 0,
-        packname => $source->{name}
+        file                    => $id,
+        filename                => $source->{filename},
+        lines                   => lines_context($source->{lines}),
+        hidden                  => 0,
+        packname                => $source->{name},
+        is_admin_or_contributor => $self->current_user_has_role('admin', 'contributor')
       );
     }
   );
@@ -101,31 +103,25 @@ sub _sanitize_report ($self, $report) {
   my $lines    = $report->{lines};
   my $snippets = $report->{missed_snippets};
 
-  # old report
-  if (!defined $report->{missed_files}) {
-    $report->{missed_files} = [{id => 0, name => "PLEASE REINDEX!", max_risk => 9, license => '', match => 0}];
+  my @missed;
+  for my $file (keys %$snippets) {
+    $expanded->{$file} = 1;
+    my ($max_risk, $match, $license) = @{$report->{missed_files}{$file}};
+    $license = 'Keyword' unless $license;
+    push(
+      @missed,
+      {
+        id       => $file,
+        name     => $files->{$file},
+        max_risk => $max_risk,
+        license  => $license,
+        match    => int($match * 1000 + 0.5) / 10.
+      }
+    );
   }
-  else {
-    my @missed;
-    for my $file (keys %$snippets) {
-      $expanded->{$file} = 1;
-      my ($max_risk, $match, $license) = @{$report->{missed_files}{$file}};
-      $license = 'Snippet' unless $license;
-      push(
-        @missed,
-        {
-          id       => $file,
-          name     => $files->{$file},
-          max_risk => $max_risk,
-          license  => $license,
-          match    => int($match * 1000 + 0.5) / 10.
-        }
-      );
-    }
-    delete $report->{missed_files};
-    delete $report->{missed_snippets};
-    $report->{missed_files} = [sort { $b->{max_risk} cmp $a->{max_risk} || $a->{name} cmp $b->{name} } @missed];
-  }
+  delete $report->{missed_files};
+  delete $report->{missed_snippets};
+  $report->{missed_files} = [sort { $b->{max_risk} cmp $a->{max_risk} || $a->{name} cmp $b->{name} } @missed];
 
   $report->{files} = [];
   for my $file (sort { $files->{$a} cmp $files->{$b} } keys %$files) {

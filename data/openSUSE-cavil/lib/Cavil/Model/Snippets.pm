@@ -16,39 +16,62 @@
 package Cavil::Model::Snippets;
 use Mojo::Base -base, -signatures;
 
-use Mojo::File 'path';
-use Cavil::Util qw(read_lines);
+use Mojo::File  qw(path);
+use Cavil::Util qw(file_and_checksum read_lines snippet_checksum);
+use Spooky::Patterns::XS;
 
 has [qw(checkout_dir pg)];
+
+sub approve ($self, $id, $license) {
+  my $db = $self->pg->db;
+  $db->update('snippets', {license => $license eq 'true' ? 1 : 0, approved => 1, classified => 1}, {id => $id});
+}
 
 sub find ($self, $id) {
   return $self->pg->db->select('snippets', '*', {id => $id})->hash;
 }
 
-sub find_or_create ($self, $hash, $text) {
+sub find_or_create ($self, $new) {
+  $new->{prefix} //= '';
   my $db = $self->pg->db;
 
-  my $snip = $db->select('snippets', 'id', {hash => $hash})->hash;
-  return $snip->{id} if $snip;
+  my $old = $db->query(
+    'SELECT s.id, bp.embargoed FROM snippets s LEFT JOIN bot_packages bp ON (bp.id = s.package)
+     WHERE hash = ?', $new->{hash}
+  )->hash;
 
-  $db->query(
-    'insert into snippets (hash, text) values (?, ?)
-   on conflict do nothing', $hash, $text
-  );
+  # Inherit embargo status until there is no embargo anymore (the value will tell us which package lifted the embargo)
+  if ($old) {
+    $db->query('UPDATE snippets SET package = ? WHERE id = ?', $new->{package}, $old->{id}) if $old->{embargoed};
+    return $old->{id};
+  }
+
+  my $hash = "$new->{prefix}$new->{hash}";
+  $db->query('INSERT INTO snippets (hash, text, package) VALUES (?, ?, ?) ON CONFLICT DO NOTHING',
+    $hash, $new->{text}, $new->{package});
   return $db->select('snippets', 'id', {hash => $hash})->hash->{id};
 }
 
-sub random ($self, $limit) {
-  return $self->pg->db->query(
-    'select id, text, classified,
-    license, confidence from snippets where approved=FALSE
-    order by hash limit ?', $limit
-  )->hashes;
+sub from_file ($self, $file_id, $first_line, $last_line) {
+  my $db   = $self->pg->db;
+  my $file = $db->select('matched_files', '*', {id => $file_id})->hash;
+  return undef unless $file;
+
+  my $package = $db->select('bot_packages', '*', {id => $file->{package}})->hash;
+  my $path    = path($self->checkout_dir, $package->{name}, $package->{checkout_dir}, '.unpacked', $file->{filename});
+
+  my ($text, $hash) = file_and_checksum($path, $first_line, $last_line);
+  my $snippet_id
+    = $self->find_or_create({hash => $hash, text => $text, package => $package->{id}, prefix => 'manual:'});
+  $db->insert('file_snippets',
+    {package => $package->{id}, snippet => $snippet_id, sline => $first_line, eline => $last_line, file => $file_id});
+
+  return $snippet_id;
 }
 
-sub approve ($self, $id, $license) {
-  my $db = $self->pg->db;
-  $db->update('snippets', {license => $license eq 'true' ? 1 : 0, approved => 1, classified => 1}, {id => $id});
+sub id_for_checksum ($self, $checksum) {
+  return undef unless my $hash = $self->pg->db->select('snippets', 'id', {hash => $checksum})->hash;
+  return $hash->{id};
 }
 
 sub unclassified ($self, $options) {
@@ -57,7 +80,7 @@ sub unclassified ($self, $options) {
   my $before = '';
   if ($options->{before} > 0) {
     my $quoted = $db->dbh->quote($options->{before});
-    $before = "AND id < $quoted";
+    $before = "AND s.id < $quoted";
   }
 
   my $confidence = '';
@@ -68,7 +91,7 @@ sub unclassified ($self, $options) {
   my $timeframe = '';
   if ($options->{timeframe} ne 'any') {
     my $interval = "1 $options->{timeframe}";
-    $timeframe = "AND created > NOW() - INTERVAL '$interval'";
+    $timeframe = "AND s.created > NOW() - INTERVAL '$interval'";
   }
 
   my $is_approved   = 'approved = ' . uc($options->{is_approved});
@@ -83,8 +106,9 @@ sub unclassified ($self, $options) {
   }
 
   my $snippets = $db->query(
-    "SELECT *, COUNT(*) OVER() AS total FROM snippets
-     WHERE $is_approved AND $is_classified $before $legal $confidence $timeframe ORDER BY id DESC LIMIT 10"
+    "SELECT s.*, bp.embargoed, COUNT(*) OVER() AS total
+     FROM snippets s LEFT JOIN bot_packages bp ON (bp.id = s.package)
+     WHERE $is_approved AND $is_classified $before $legal $confidence $timeframe ORDER BY s.id DESC LIMIT 10"
   )->hashes;
 
   my $total = 0;
@@ -92,13 +116,13 @@ sub unclassified ($self, $options) {
     $total = delete $snippet->{total};
     $snippet->{likelyness} = int($snippet->{likelyness} * 100);
     my $files = $db->query(
-      'SELECT fs.sline, mf.filename, mf.package
+      'SELECT fs.sline, mf.filename, mf.package AS filepackage
        FROM file_snippets fs JOIN matched_files mf ON (fs.file = mf.id)
        WHERE fs.snippet = ? ORDER BY fs.id DESC LIMIT 1', $snippet->{id}
     )->hashes;
     $snippet->{files} = $files->size;
     my $file = $files->[0] || {};
-    $snippet->{$_} = $file->{$_} for qw(filename sline package);
+    $snippet->{$_} = $file->{$_} for qw(filename sline filepackage);
 
     my $license = $db->query('SELECT license, risk FROM license_patterns WHERE id = ? AND license != ?',
       $snippet->{like_pattern} // 0, '')->hash // {};
@@ -113,15 +137,21 @@ sub mark_non_license ($self, $id) {
   $self->pg->db->update('snippets', {license => 0, approved => 1, classified => 1}, {id => $id});
 }
 
+sub packages_for_snippet ($self, $id) {
+  return $self->pg->db->query('SELECT DISTINCT(package) FROM file_snippets WHERE snippet = ?', $id)
+    ->arrays->flatten->to_array;
+}
+
 sub with_context ($self, $id) {
-  my $db = $self->pg->db;
-  return undef unless my $snippet = $db->select('snippets', '*', {id => $id})->hash;
+  return undef unless my $snippet = $self->find($id);
 
   my $text     = $snippet->{text};
   my $sline    = 1;
   my $package  = undef;
+  my $matches  = {};
   my $keywords = {};
 
+  my $db      = $self->pg->db;
   my $example = $db->query(
     'SELECT fs.package, p.name, sline, eline, file, filename, p.checkout_dir
      FROM file_snippets fs JOIN matched_files m ON (m.id = fs.file)
@@ -131,7 +161,7 @@ sub with_context ($self, $id) {
 
   if ($example) {
     $sline   = $example->{sline};
-    $package = {id => $example->{package}, name => $example->{name}};
+    $package = {id => $example->{package}, name => $example->{name}, filename => $example->{filename}};
 
     my $file = path($self->checkout_dir, $package->{name}, $example->{checkout_dir}, '.unpacked', $example->{filename});
     $text = read_lines($file, $example->{sline}, $example->{eline});
@@ -142,14 +172,14 @@ sub with_context ($self, $id) {
       $example->{eline}
     )->hashes;
     for my $pattern (@$patterns) {
-      next if $pattern->{license};
+      my $map = $pattern->{license} ? $matches : $keywords;
       for (my $line = $pattern->{sline}; $line <= $pattern->{eline}; $line += 1) {
-        $keywords->{$line - $example->{sline}} = $pattern->{id};
+        $map->{$line - $example->{sline}} = $pattern->{id};
       }
     }
   }
 
-  return {package => $package, keywords => $keywords, sline => $sline, text => $text};
+  return {package => $package, matches => $matches, keywords => $keywords, sline => $sline, text => $text};
 }
 
 1;

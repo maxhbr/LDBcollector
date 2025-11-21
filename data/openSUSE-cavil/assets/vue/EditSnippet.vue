@@ -1,13 +1,28 @@
 <template>
   <div v-if="patternText === null"><i class="fas fa-sync fa-spin"></i> Loading snippet...</div>
   <div v-else>
+    <div v-if="hasContributorRole === false && hasAdminRole === false" class="alert alert-info">
+      There is no license pattern for this snippet yet. You do not have the necessary permissions to propose new license
+      patterns. To change this contact an administrator and request the "contributor" role.
+    </div>
+    <div v-else-if="hasAdminRole === false" class="alert alert-info">
+      There is no license pattern for this snippet yet, you are welcome to submit a proposal. An administrator will
+      review it and decide if it should be added. However, you may only use existing licenses and risk assessments.
+    </div>
     <div v-if="this.package !== null" class="row">
       <div class="col mb-3">
-        The example shown here is from <a :href="this.package.packageUrl">{{ this.package.name }}</a
+        The example shown here is from the file <a :href="this.package.fileUrl">{{ this.package.file }}</a> in the
+        package <a :href="this.package.packageUrl">{{ this.package.name }}</a
         >.
       </div>
     </div>
     <form :action="this.decisionUrl" method="POST">
+      <input type="hidden" name="package" :value="this.package.id" v-if="this.package !== null" />
+      <input type="hidden" name="highlighted-keywords" :value="this.highlightedKeywords" />
+      <input type="hidden" name="highlighted-licenses" :value="this.highlightedLicenses" />
+      <input type="hidden" name="edited" :value="this.edited" />
+      <input type="hidden" name="hash" :value="this.hash" />
+      <input type="hidden" name="from" :value="this.from" />
       <div class="row">
         <div class="col mb-3">
           <label class="form-label" for="pattern">Snippet</label>
@@ -20,8 +35,13 @@
             rows="20"
           ></textarea>
           <div id="patternHelp" class="form-text">
-            Keyword patterns within the snippet are highlighted and you can reach them by clicking on the line number.
-            Use expressions like <code>$SKIP19</code> to skip up to a certain number of character in your pattern.
+            Keyword matches are <span class="keyword-line">red</span> and should be included in the license pattern.
+            Overlapping matches of exisitng license patterns are <span class="license-line">green</span> and safe to
+            ignore. Use expressions like <code>$SKIP5</code> to skip up to a certain number of words.
+            <code>$SKIP19</code> represents the upper limit of the matching engine (which will be higher than 19), and
+            simply skips as many words as possible.<span v-if="hasAdminRole === true">
+              Click on line numbers to see patterns.</span
+            >
           </div>
         </div>
       </div>
@@ -123,11 +143,33 @@
       </div>
       <div class="row">
         <div class="col mb-3">
-          <button name="create-pattern" type="submit" value="1" class="btn btn-primary mb-2">Create Pattern</button
-          >&nbsp;
-          <button name="mark-non-license" type="submit" value="1" class="btn btn-danger mb-2">
-            Mark as Non-License
+          <span v-if="hasAdminRole === true">
+            <button name="create-pattern" type="submit" value="1" class="btn btn-success mb-2">Create Pattern</button>
+            &nbsp;
+            <span v-if="this.hash !== null && this.from !== null">
+              <button name="create-ignore" type="submit" value="1" class="btn btn-danger mb-2">Ignore Pattern</button>
+              &nbsp;
+              <button name="mark-non-license" type="submit" value="1" class="btn btn-primary mb-2">
+                No Legal Text
+              </button>
+              &nbsp; &nbsp; &nbsp;
+            </span>
+          </span>
+          <button
+            v-if="hasContributorRole === true"
+            name="propose-pattern"
+            type="submit"
+            value="1"
+            class="btn btn-success mb-2"
+          >
+            Propose Pattern
           </button>
+          <span v-if="hasContributorRole === true && this.hash !== null && this.from !== null">
+            &nbsp;
+            <button name="propose-ignore" type="submit" value="1" class="btn btn-danger mb-2">Propose Ignore</button>
+            &nbsp;
+            <button name="propose-missing" type="submit" value="1" class="btn btn-primary mb-2">Missing License</button>
+          </span>
         </div>
       </div>
       <div v-if="closest !== null" class="row closest-container">
@@ -152,18 +194,27 @@
 </template>
 
 <script>
+import {setupPopoverDelayed} from './helpers/links.js';
+import {getParams} from './helpers/params.js';
 import UserAgent from '@mojojs/user-agent';
-import {Popover} from 'bootstrap';
 import CodeMirror from 'codemirror';
 
 export default {
   name: 'EditSnippet',
   data() {
+    const params = getParams();
+    console.log(params);
+
     return {
       closest: null,
       closestUrl: '/snippet/closest',
       decisionUrl: `/snippet/decision/${this.currentSnippet}`,
+      edited: '0',
       editor: null,
+      from: params.from === '' ? null : (params.from ?? null),
+      hash: params.hash === '' ? null : (params.hash ?? null),
+      highlightedKeywords: '',
+      highlightedLicenses: '',
       keywords: {},
       license: '',
       licenseFocused: false,
@@ -174,6 +225,7 @@ export default {
         risk: 1,
         trademark: false
       },
+      matches: {},
       package: null,
       patternText: '',
       results: [],
@@ -207,7 +259,12 @@ export default {
       if (license === '') {
         this.results = this.suggestions;
       } else {
-        this.results = this.suggestions.filter(name => name.toLowerCase().includes(license.toLowerCase()));
+        const words = license.split(' ');
+        let results = this.suggestions;
+        for (const word of words) {
+          results = results.filter(name => name.toLowerCase().includes(word.toLowerCase()));
+        }
+        this.results = results;
       }
     },
     fillLicense(result) {
@@ -230,15 +287,34 @@ export default {
 
       const snippet = data.snippet;
       this.package = snippet.package;
-      if (this.package !== null) this.package.packageUrl = `/reviews/details/${this.package.id}`;
+      if (this.package !== null) {
+        this.package.packageUrl = `/reviews/details/${this.package.id}`;
+        this.package.fileUrl = `/reviews/file_view/${this.package.id}/${this.package.filename}`;
+        this.package.file = this.package.filename.split('/').pop();
+      }
       this.patternText = snippet.text;
       this.startLine = snippet.sline;
+      this.matches = snippet.matches;
       this.keywords = snippet.keywords;
       this.licenses = data.licenses;
       this.suggestions = Object.keys(this.licenses);
       this.results = this.suggestions;
 
       if (data.closest !== null) this.fillLicense(data.closest);
+    },
+    getHighlightedLines() {
+      const cm = this.editor;
+      const count = cm.lineCount();
+      const keywordLines = [];
+      const licenseLines = [];
+      for (let i = 0; i < count; i++) {
+        const line = cm.getLineHandle(i);
+        const bgClass = line.bgClass ?? '';
+        if (bgClass.match('keyword-line')) keywordLines.push(i);
+        if (bgClass.match('license-line')) licenseLines.push(i);
+      }
+      this.highlightedKeywords = keywordLines.join(',');
+      this.highlightedLicenses = licenseLines.join(',');
     },
     setupCodeMirror() {
       const cm = CodeMirror.fromTextArea(this.$refs.patternText, {
@@ -247,8 +323,12 @@ export default {
         theme: 'neo'
       });
 
+      cm.on('change', () => {
+        this.edited = '1';
+      });
       cm.on('blur', () => {
         this.getClosest();
+        this.getHighlightedLines();
       });
       cm.on('gutterClick', (cm, n) => {
         const info = cm.lineInfo(n);
@@ -259,16 +339,19 @@ export default {
         }
       });
 
-      const keywords = this.keywords;
-      for (const [line, pattern] of Object.entries(keywords)) {
-        cm.addLineClass(parseInt(line), 'background', `found-pattern pattern-${pattern}`);
+      for (const [line, pattern] of Object.entries(this.matches)) {
+        cm.addLineClass(parseInt(line), 'background', `license-line found-pattern pattern-${pattern}`);
+      }
+
+      for (const [line, pattern] of Object.entries(this.keywords)) {
+        cm.addLineClass(parseInt(line), 'background', `keyword-line found-pattern pattern-${pattern}`);
       }
 
       this.editor = cm;
+      this.getHighlightedLines();
     },
     setupPopover() {
-      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-      [...popoverTriggerList].map(popoverTriggerEl => new Popover(popoverTriggerEl));
+      setupPopoverDelayed();
     }
   }
 };
@@ -300,8 +383,15 @@ export default {
 .autocomplete-item:hover {
   background-color: rgba(13, 110, 253, 0.25);
 }
-.found-pattern {
+.license-line {
+  background-color: #dfd !important;
+}
+.keyword-line {
   background-color: #fdd !important;
+}
+span.keyword-line,
+span.license-line {
+  padding: 0.25em;
 }
 
 .closest-container {

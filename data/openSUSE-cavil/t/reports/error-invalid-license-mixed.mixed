@@ -1,6 +1,7 @@
 {
-  "errors" => ["Invalid SPDX license: Whatever", "Invalid SPDX license: BSD"],
-  "main"   => {
+  "errors"              => ["Invalid SPDX license: Whatever", "Invalid SPDX license: BSD"],
+  "incomplete_checkout" => 0,
+  "main"                => {
     "%doc"     => [],
     "%license" => [],
     "file"     => "error-invalid-license-mixed.spec",

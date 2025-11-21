@@ -14,13 +14,15 @@
 # with this program; if not, see <http://www.gnu.org/licenses/>.
 
 package Cavil::Model::Reports;
-use Mojo::Base -base;
+use Mojo::Base -base, -signatures;
 
 use Encode qw(from_to decode);
 use Mojo::File 'path';
 use Mojo::JSON qw(from_json to_json);
 use Spooky::Patterns::XS;
 use Cavil::Checkout;
+use Cavil::Licenses   qw(lic);
+use Cavil::ReportUtil qw(estimated_risk);
 
 has [qw(acceptable_packages acceptable_risk checkout_dir max_expanded_files pg)];
 
@@ -29,7 +31,8 @@ use constant PATTERN_DELTA => 10000000000;
 
 sub cached_dig_report {
   my ($self, $id) = @_;
-  return $self->pg->db->select('bot_reports', 'ldig_report', {package => $id})->hash->{ldig_report};
+  return undef unless my $hash = $self->pg->db->select('bot_reports', 'ldig_report', {package => $id})->hash;
+  return $hash->{ldig_report};
 }
 
 sub dig_report {
@@ -52,6 +55,25 @@ sub risk_is_acceptable {
   return undef unless $shortname =~ /^(.+)-(\d):[^:]+$/;
   return undef if $2 > $self->acceptable_risk;
   return $2;
+}
+
+sub shortname ($self, $chksum) {
+  my $db     = $self->pg->db;
+  my $lentry = $db->select('report_checksums', 'shortname', {checksum => $chksum})->hash;
+  if ($lentry) {
+    return $lentry->{shortname};
+  }
+
+  # try to find a unique name for the checksum
+  my $chars = ['a' .. 'z', 'A' .. 'Z', '0' .. '9'];
+  while (1) {
+    my $shortname = join('', map { $chars->[rand @$chars] } 1 .. 6);
+    $db->query(
+      'insert into report_checksums (checksum, shortname)
+       values (?,?) on conflict do nothing', $chksum, $shortname
+    );
+    return $shortname if $db->select('report_checksums', 'id', {shortname => $shortname, checksum => $chksum})->hash;
+  }
 }
 
 sub source_for {
@@ -104,6 +126,7 @@ sub specfile_report {
 
     my $dir      = path($self->checkout_dir, $pkg->{name}, $pkg->{checkout_dir});
     my $checkout = Cavil::Checkout->new($dir);
+    return {} unless $checkout->is_unpacked;
     my $specfile = $checkout->specfile_report;
 
     my $report = {package => $id, specfile_report => to_json($specfile)};
@@ -111,6 +134,44 @@ sub specfile_report {
   }
 
   return from_json($hash->{specfile_report});
+}
+
+sub summary ($self, $id) {
+  my %summary  = (id => $id);
+  my $specfile = $self->specfile_report($id);
+  $summary{specfile} = lic($specfile->{main}{license})->canonicalize->to_string || 'Unknown';
+  my $report = $self->cached_dig_report || $self->dig_report($id);
+
+  my $min_risklevel = 1;
+
+  # it's a bit random but the risk levels are defined a little random too
+  $min_risklevel = 2 if $report->{risks}{3};
+  $summary{licenses} = {};
+  for my $license (sort { $a cmp $b } keys %{$report->{licenses}}) {
+    next if $report->{licenses}{$license}{risk} < $min_risklevel;
+    my $text = "$license";
+    for my $flag (@{$report->{licenses}{$license}{flags}}) {
+      $text .= ":$flag";
+    }
+    $summary{licenses}{$text} = $report->{licenses}{$license}{risk};
+  }
+
+  my $db    = $self->pg->db;
+  my $files = {};
+  for my $id (keys %{$report->{snippets}}) {
+    my $snippets = $db->query(
+      'SELECT mf.filename, s.hash
+       FROM file_snippets fs JOIN matched_files mf ON (fs.file = mf.id) JOIN snippets s ON (fs.snippet = s.id)
+       WHERE mf.id = ?', $id
+    )->hashes;
+    for my $snippet (@$snippets) {
+      my $list = $files->{$snippet->{filename}} ||= [];
+      push @$list, $snippet->{hash};
+    }
+  }
+  $summary{missed_snippets} = $files;
+
+  return \%summary;
 }
 
 sub _check_ignores {
@@ -196,9 +257,9 @@ sub _dig_report {
 
   while (my $file = $files->hash) {
     my $ignored;
-    for my $ifre (keys %$ignored_file_res) {
-      next unless $file->{filename} =~ $ifre;
-      $globs_matched{$ignored_file_res->{$ifre}} = 1;
+    for my $ifname (keys %$ignored_file_res) {
+      next unless $file->{filename} =~ $ignored_file_res->{$ifname};
+      $globs_matched{$ifname} = 1;
       $ignored = 1;
       last;
     }
@@ -219,10 +280,10 @@ sub _dig_report {
     $filenames = $db->query($query_string, $pkg->{id});
   }
 
-  while (my $file = $filenames->hash) {
-    for my $ifre (keys %$ignored_file_res) {
-      next unless $file->{filename} =~ $ifre;
-      $globs_matched{$ignored_file_res->{$ifre}} = 1;
+  for my $file ($filenames->hashes->each) {
+    for my $ifname (keys %$ignored_file_res) {
+      next unless $file->{filename} =~ $ignored_file_res->{$ifname};
+      $globs_matched{$ifname} = 1;
       last;
     }
   }
@@ -236,7 +297,7 @@ sub _dig_report {
   }
   my $matches = $db->select('pattern_matches', [qw(id file pattern sline eline)], $query);
 
-  $query = {package => $pkg->{id}};
+  $query = {'file_snippets.package' => $pkg->{id}};
   if ($limit_to_file) {
     $query->{file} = $limit_to_file;
   }
@@ -254,7 +315,7 @@ sub _dig_report {
   my %file_snippets_to_show;
   my %snippets_shown;
 
-  for my $snip_row (@{$snippets->hashes}) {
+  for my $snip_row ($snippets->hashes->each) {
     if ( !defined $report->{files}{$snip_row->{file}}
       || $snippets_shown{$snip_row->{id}}
       || (!$snip_row->{license} && $snip_row->{classified}))
@@ -294,7 +355,7 @@ sub _dig_report {
     }
   }
 
-  while (my $match = $matches->hash) {
+  for my $match ($matches->hashes->each) {
     my $pid = $match->{pattern};
 
     if (!defined $report->{files}{$match->{file}}) {
@@ -395,19 +456,19 @@ sub _dig_report {
     for my $snip_row (@{$report->{missed_snippets}{$file}}) {
       my ($dummy1, $dummy2, $dummy3, $dummy4, $match, $pattern) = @$snip_row;
       my $pinfo     = $self->_info_for_pattern($db, $pid_info, $pattern);
-      my $stat_risk = $pinfo->{risk} * $match + 9 * (1 - $match);
-      if ($max_risk < $stat_risk) {
+      my $stat_risk = estimated_risk($pinfo->{risk}, $match);
+      if ($max_risk < $stat_risk || (($max_risk == $stat_risk) && $match_of_max < $match)) {
         $max_risk       = $stat_risk;
         $match_of_max   = $match;
         $license_of_max = $pinfo->{name};
       }
     }
-    $missed_files{$file} = [int($max_risk + 0.5), $match_of_max, $license_of_max];
+    $missed_files{$file} = [$max_risk, $match_of_max, $license_of_max];
   }
   $report->{missed_files} = \%missed_files;
 
   my $emails = $db->select('emails', '*', {package => $pkg->{id}});
-  while (my $email = $emails->hash) {
+  for my $email ($emails->hashes->each) {
     my $key = $email->{email};
     if ($email->{name}) {
       $key = "$email->{name} <$email->{email}>";
@@ -415,7 +476,7 @@ sub _dig_report {
     $report->{emails}{$key} = $email->{hits};
   }
   my $urls = $db->select('urls', '*', {package => $pkg->{id}});
-  while (my $url = $urls->hash) {
+  for my $url ($urls->hashes->each) {
     $report->{urls}{$url->{url}} = $url->{hits};
   }
 
