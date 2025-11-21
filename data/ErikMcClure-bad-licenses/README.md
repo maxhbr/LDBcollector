@@ -121,7 +121,7 @@ UNOFFICIAL LEGAL ADVICE: Don't use these. Like, ever.
 
 * **[The You Only Live Once so do What The Fuck you want Public License with Specified EXceptions](YOLO-WTFPL-SEX)**
 
-  A WTFPL derivation license which combines aspects of WTFPL, YOLO, THE STRONGEST PUBLIC LICENSE, and a clause saying one guy the author really hates is not allowed to use the software at all. [Source](https://github.com/SantX27/yu-topy/blob/master/LICENSE)
+  A WTFPL derivation license which combines aspects of WTFPL, YOLO, THE STRONGEST PUBLIC LICENSE, and a clause saying two guys the author really hates are not allowed to use the software at all. [Source](https://github.com/SantX27/yu-topy/blob/master/LICENSE)
 
 * **[For Good Eyes Only Licence v0.2](for-good-eyes-only-licence-0.2.md)**
 
@@ -147,6 +147,59 @@ UNOFFICIAL LEGAL ADVICE: Don't use these. Like, ever.
 
   A possibly MIT-like license for software that is neither a place of honor, nor in commemoration of a highly esteemed deed, etc. [Source](https://gist.github.com/DavidBuchanan314/35cb9f8a2f754b9a03a74bed19575661)
 
+* **[Opinionated Queer License](opinionated-queer-license.md)**
+
+  Another license with vague requirements for not allowing anyone to use it for racist or bigoted purposes (who is deciding what counts as racist for the purpose of this license?), but gets bonus points for prohibiting any sale of the software or derivative works unless "substantial changes to the Work" are made, which explicitly violates the OSI open-source license standard.
+
 * **[OTTer license](OTTer-license)**
   
   A license used for the XKCD inspired sandcastle builder game. [Source](https://github.com/eternaldensity/Sandcastle-Builder/blob/gh-pages/LICENSE)
+
+* **[Winamp Collaborative License](winamp.md)**
+
+  A "source-available" license that says you can't fork the project, which means it is illegal to click the fork button on GitHub (which is [a violation of the GitHub ToS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license)) and also makes it impossible to create any pull requests without push access to the original repo. [Source](https://github.com/WinampDesktop/winamp/blob/community/LICENSE.md)
+
+* **[Monkey License](monkey-license)**
+
+  Nobody has permission to use this tool for any purpose. Don't use it. [Source](https://github.com/bouk/monkey/blob/master/LICENSE.md)
+
+* **[The Curse of Knowledge License](curse-of-knowledge)**
+
+  You are allowed to use the licensed material so long as you don't know that you are allowed to use the licensed material.
+
+* **[GREENWARE License](GREENWARE-license)**
+
+  A strange psuedo-license that doesn't specify any terms other than "make an everyday effort to help out with the environment". Being from 1996, it doesn't follow any modern license conventions, and is noted here mostly for historical significance. [Source](https://github.com/justdanpo/c--sphinx/blob/784d8f6b8c6bb90997c779e4b5edf5bb8d5d7243/cmm_cellik_1996/readme.doc#L108)
+
+* **[Gumroad Community License 1.0](gumroad-license.md)**
+
+  A "source-available" license that doesn't let you use the software if you make too much money with it. Because the patent protection clause is *also* terminated when you make too much money, you can suddenly become liable for violating patents at any time, and gumroad can now extort you into agreeing to "alternative license terms". [Source](https://github.com/antiwork/gumroad/blob/main/LICENSE.md)
+
+- **[Psi License](psi_license.md)**
+
+  A "reasonably open" license that isn't actually open-source due to a non-commercial distribution restriction and a restriction on modifying parts of the API, but at the same time the license requires any modified versions to be released under an open-source license, which by definition would have to be a different license that's actually open-source! [Source](https://psi.vazkii.net/license.php)
+
+- **[BATL License](BATL-license)**
+
+    A "vibe-driven" license that essentially says "do what you want, but good luck." If you encounter issues or digital gremlins, the primary recourse is to "better ask the LLM." Offers no warranties and a hearty "who knows?" on intellectual property and secret family recipes.
+
+- **[GO FUCK YOURSELF PRIVATE LICENSE](GFYPL)**
+
+    Basically just ARR but requiring you to say "Go fuck yourself" to the licensee within 3 meters. You are also not allowed to look at the license, and if you do, refer back to the first part of this description.
+
+- **[Don't Be A Jerk License](dbaj-license.md)**
+
+    An "open-source" license that doesn't let you redistribute the code or "distribute code which contains 50% or more Functionally Equivalent Statements* from this repository." Originally used by some legacy minecraft mods, it's not clear if it's actually possible to legally use this code at all.
+
+- **[Big Bill Hell's License](BIG-BILL-HELLS-LICENSE)** [Source](https://snoot.tube/@lifning/109866791802246937)
+
+   A license written as a parody of the [Big Bill Hell's Cars meme](https://knowyourmeme.com/memes/big-bill-hells), complete with it's own audio recording you can find at the source. In the spirit of the original, this is not an open-source license, and in fact says that if you do fork, distribute, sell, or really anything at all, they'll rip your bits off.
+
+- **[Baba Yaga License](baba-yaga)**
+
+  A license written in prose akin to writing one might expect from the folklore legend Baba Yaga. [Source](https://smallandnearlysilent.com/baba-yaga/LICENSE.txt)
+
+- **["i'm so tired" software license 1.0](im-so-tired-software-license)**
+
+  Aside from the funny name, this license includes an arbitrary and unlimited ethics clause that doesn't let you use the software for "ill-intentioned reasons". The reasons listed are vague enough, but the authors are also given carte blanche to determine any use they want to be ill-intentioned. [Source](https://olmewe.com/notes/istsl/)
+
