@@ -1,6 +1,6 @@
 {
 "meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
     "comment": ""
   },
   "name": "FreeType Project License",
@@ -18,6 +18,11 @@
         "http://www.freetype.org/license.html",
         "https://spdx.org/licenses/ftl",
         "FreeType License",
-        "scancode:freetype"
-  ]
+        "scancode:freetype",
+        "freetype",
+        "Freetype",
+      "The FreeType Project LICENSE",
+      "Freetype License",
+      "ftl"
+    ]
 }

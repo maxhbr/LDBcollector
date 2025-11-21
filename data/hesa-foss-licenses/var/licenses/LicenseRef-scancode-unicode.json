@@ -1,0 +1,12 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+},
+  "name": "Unicode Inc License Agreement",
+  "scancode_key": "unicode",
+  "spdxid": "LicenseRef-scancode-unicode",
+  "aliases": [
+    "unicode"
+  ]
+}

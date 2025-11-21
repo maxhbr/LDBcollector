@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Repoze License",
+    "scancode_key": "repoze",
+    "spdxid": "BSD-3-Clause-Modification",
+    "aliases": [
+        "BSD 3-Clause License Modification",
+        "BSD 3-Clause Modification",
+        "BSD-3-Clause-Modification",
+        "Repoze License",
+        "scancode://repoze",
+        "License :: Repoze Public License"
+    ]
+}

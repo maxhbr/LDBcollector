@@ -1,9 +1,8 @@
-# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-
-check: license python clean check-reuse build
+check: license python clean check-reuse build status
 	@echo "\n\n\n   Yay.... check succeeded :)\n\n\n"
 
 check_license_files:
@@ -37,6 +36,10 @@ check_license_files:
 	@echo -m "Sanity check the licenses: " ; \
 		./tests/shell/sanity-check.sh || exit 1; echo "OK"
 
+# Check disclaimers
+	@echo -m "Check the disclaimers: " ; \
+		./tests/shell/check-disclaimer.sh || exit 1; echo "OK"
+
 # check JSON file not being licenses
 	@for lf in `find var/  -maxdepth 1  -name "*.json" `; \
 		do \
@@ -52,11 +55,19 @@ check_license_schema:
 		   	PYTHONPATH=python python/flame/__main__.py --check license mpl-2.0  > /dev/null || exit 1 ; \
 			echo "OK" ; 
 
+check_schema:
+# check the license schema
+	@echo -n "Make sure schema is in valid JSON: " 
+	@jq . var/license_schema.json > /dev/null 
+	@echo "OK" ; 
+
 
 check-reuse: clean
 	reuse --suppress-deprecation lint
 
-license: check_license_files 
+lint: check-reuse py-lint
+
+license: check_schema check_license_files check-py-cli check_license_schema
 
 .PHONY: python check-py-cli
 python: py-test py-sort py-lint check-py-cli py-doctest py-doc
@@ -75,7 +86,7 @@ py-lint:
 	cd python && PYTHONPATH=. flake8 flame
 
 py-doc:
-	#cd python/docs && PYTHONPATH=. make html
+#cd python/docs && PYTHONPATH=. make html
 	cd python && rm -fr docs/build && PYTHONPATH=. sphinx-build -E docs/source/ docs/build/html
 
 
@@ -105,6 +116,23 @@ py-release: check clean build
 	@echo
 	@echo "To upload: "
 	@echo "twine upload --repository foss-flame --verbose  dist/*"
+
+stats:
+	@echo ""
+	@echo "|Type            | Number |"
+	@echo "|----------------|--------|"
+	@echo "|Licenses        | `./devel/flame licenses    | wc -l`    |"
+	@echo "|Aliases         | `./devel/flame aliases     | wc -l`   |"
+	@echo "|Compatibilities | `./devel/flame compats     | wc -l`     |"
+	@echo "|Operators       | `./devel/flame operators   | wc -l`     |"
+	@echo "|Ambiguities     | `./devel/flame ambiguities | wc -l`    |"
+	@echo "|Compounds       | `./devel/flame compounds   | wc -l`     |"
+
+stats-file:
+	@make --silent stats > STATUS.md
+
+status: stats-file
+	cat templates/README.tmpl | perl  -p -e "s/__STATUS__/`cat STATUS.md`/g"  > README.md
 
 clean:
 	find . -name "*~"    | xargs rm -fr

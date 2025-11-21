@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "MIT Xfig Variant",
+    "scancode_key": "mit-xfig",
+    "compatibility_as": "MIT",
+    "spdxid": "Xfig",
+    "aliases": [
+        "mit-xfig"
+    ]
+}

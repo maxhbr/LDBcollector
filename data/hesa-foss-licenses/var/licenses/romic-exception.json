@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Linking exception to AGPL 3.0",
+  "scancode_key": "linking-exception-agpl-3.0",
+  "spdxid": "romic-exception",
+  "aliases": [
+  ]
+}

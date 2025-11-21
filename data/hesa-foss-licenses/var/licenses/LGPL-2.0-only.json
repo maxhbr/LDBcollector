@@ -1,16 +1,37 @@
 {
 "meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
     "comment": ""
   },
   "name": "GNU Library General Public License 2.0",
   "scancode_key": "lgpl-2.0",
   "spdxid": "LGPL-2.0-only",
-  "compatibility_as": "LGPL-2.1-only",
   "aliases": [
-      "LGPL-2.0-only",
-      "scancode://lgpl-2.0",
-      "LGPL 2.0",
-      "LGPLv2.0"
+    "LGPL-2.0-only",
+    "scancode://lgpl-2.0",
+    "LGPL 2.0",
+    "LGPLv2.0",
+    "LGPL-2",
+    "lgpl-2.0",
+    "GNU Library General Public License v2 only",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+    "GNU Lesser General Public License v2 (LGPLv2)",
+    "LGPLv2",
+    "LGPL2",
+    "GNU Library General Public License version 2",
+    "License :: OSI Approved :: GNU Lesser General Public License v2",
+    "GNU Lesser General Public v2",
+    "LGPL v2",
+    "GPL LGPL-2",
+    "LGPLGNU LIBRARY GENERAL PUBLIC LICENSE Version 2",
+    "GNU LGPLv2",
+    "GNU Lesser General Public License2",
+    "LGPL2.0",
+    "GNU Library General Public License Version 2",
+    "GNU Lesser General Public License-2.0-only",
+    "GNU Lesser General Public License-2",
+    "GNU Lesser General Public Licensev2.0",
+    "GNU Lesser General Public Licensev2",
+    "lgpl-2.0-only"
   ]
 }

@@ -1,17 +1,23 @@
 {
-"meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
-    "comment": ""
-  },
-  "name": "Unlicense",
-  "scancode_key": "unlicense",
-  "spdxid": "Unlicense",
-  "aliases": [
-   "The Unlicense",
-   "unlicense",
-   "scancode://unlicense",
-   "Unlicense 1",
-   "scancode:unlicense",
-   "The Unlicense (Unlicense)"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Unlicense",
+    "scancode_key": "unlicense",
+    "spdxid": "Unlicense",
+    "aliases": [
+        "The Unlicense",
+        "unlicense",
+        "scancode://unlicense",
+        "Unlicense 1",
+        "scancode:unlicense",
+        "The Unlicense (Unlicense)",
+        "The Unlincence",
+        "UNLICENSED",
+        "License :: OSI Approved :: The Unlicense",
+        "License :: OSI Approved :: The Unlicense (Unlicense)",
+      "public domain (\"Unlicense\")",
+      "the unlicense"
+    ]
 }

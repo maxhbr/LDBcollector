@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Independent JPEG Group License - short",
+    "scancode_key": "ijg-short",
+    "spdxid": "IJG-short",
+    "aliases": [
+        "ijg-short"
+    ]
+}

@@ -1,20 +1,23 @@
 {
-"meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
-    "comment": ""
-  },
-  "name": "PostgreSQL License",
-  "scancode_key": "postgresql",
-  "spdxid": "PostgreSQL",
-  "aliases": [
-   "PostgreSQL",
-   "PostgreSQL License",
-   "postgresql",
-   "The PostgreSQL Licence",
-   "scancode://postgresql",
-   "License: PostgreSQL",
-   "POSTGRESQL License",
-   "scancode:postgresql",
-   "osi:PostgreSQL"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "PostgreSQL License",
+    "scancode_key": "postgresql",
+    "spdxid": "PostgreSQL",
+    "aliases": [
+        "postgresql",
+        "PostgreSQL",
+        "PostgreSQL License",
+        "scancode://postgresql",
+        "The PostgreSQL Licence",
+        "License: PostgreSQL",
+        "osi:PostgreSQL",
+        "POSTGRESQL License",
+        "scancode:postgresql",
+        "License :: OSI Approved :: PostgreSQL License",
+        "PostgreSQL Global Development Group",
+        "The PostgreSQL License"
+    ]
 }

@@ -1,0 +1,27 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Nokia Open Source License 1.0a",
+    "scancode_key": "nokos-1.0a",
+    "spdxid": "Nokia",
+    "aliases": [
+        "License :: OSI Approved :: Nokia Open Source License",
+        "License :: Nokia Open Source License",
+        "Nokia",
+        "Nokia Open Source License, Version 1.0a",
+        "NOKOS License 1.0a",
+        "scancode://nokos-1.0a",
+        "Nokia License",
+        "NOKIA License",
+        "NOKIA LICENSE",
+        "Nokia Open Source License",
+        "NOKIA Open Source License",
+        "NOKOS License",
+        "NOKOS",
+        "osi:nokia",
+        "scancode:nokos-1.0a",
+        "License :: Nokia Open Source License (NOKOS)"
+    ]
+}

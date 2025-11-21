@@ -7,7 +7,7 @@ import logging
 import os
 import flame.exception
 
-SW_VERSION = '0.19.13'
+SW_VERSION = '0.21.3'
 
 PYTHON_DIR = os.path.dirname(os.path.realpath(__file__))
 VAR_DIR = os.path.join(PYTHON_DIR, 'var')
@@ -15,7 +15,7 @@ LICENSE_DIR = os.path.join(VAR_DIR, 'licenses')
 
 LICENSE_SCHEMA_FILE = os.path.join(VAR_DIR, 'license_schema.json')
 LICENSE_OPERATORS_FILE = os.path.join(VAR_DIR, 'operators.json')
-LICENSE_COMPUNDS_FILE = os.path.join(VAR_DIR, 'compounds.json')
+LICENSE_COMPOUNDS_FILE = os.path.join(VAR_DIR, 'compounds.json')
 LICENSE_AMBIG_FILE = os.path.join(VAR_DIR, 'ambiguities.json')
 LICENSE_DUALS_FILE = os.path.join(VAR_DIR, 'duals.json')
 
@@ -44,7 +44,7 @@ REPORTING BUGS
   File a ticket at https://github.com/hesa/flame/issues
 
 COPYRIGHT
-  Copyright (c) 2023 Henrik Sandklef<hesa@sandklef.com>.
+  Copyright (c) 2024 Henrik Sandklef<hesa@sandklef.com>.
   License GPL-3.0-or-later
 
 ATTRIBUTION

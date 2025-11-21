@@ -1,0 +1,25 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Artistic License (Perl) 1.0",
+  "scancode_key": "artistic-perl-1.0",
+  "spdxid": "Artistic-1.0-Perl",
+  "aliases": [
+    "scancode:artistic-perl-1.0",
+   "Artistic 1.0 License Perl",
+   "Artistic 1.0 License, Version Perl",
+   "Artistic 1.0, Perl",
+   "Artistic 1.0, Version Perl",
+   "Artistic License 1.0 (Perl)",
+   "Artistic Perl License",
+   "Artistic-1.0 License, Perl",
+   "Artistic-1.0 License, Version Perl",
+   "Artistic-1.0 Perl",
+   "Artistic-1.0, Version Perl",
+   "Artistic-1.0-Perl",
+   "Artistic-Perl-1.0",
+   "scancode://artistic-perl-1.0"
+  ]
+}

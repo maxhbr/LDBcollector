@@ -1,0 +1,14 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Indiana University Extreme! Lab Software License Version 1.1.1",
+    "scancode_key": "indiana-extreme",
+    "spdxid": "LicenseRef-scancode-indiana-extreme",
+    "compatibility_as": "BSD-4-Clause",
+    "aliases": [
+        "indiana-extreme",
+        "indiana-extreme-1.1"
+    ]
+}

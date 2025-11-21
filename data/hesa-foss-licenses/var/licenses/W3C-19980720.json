@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "W3C Software Notice and License (1998-07-20)",
+    "scancode_key": "w3c-software-19980720",
+    "spdxid": "W3C-19980720",
+    "aliases": [
+        "W3C-19980720",
+        "W3C Software Notice and License (1998-07-20)",
+        "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)",
+        "scancode://w3c-software-19980720",
+        "W3C-SOFTWARE-19980720",
+        "http://www.w3.org/Consortium/Legal/copyright-software-19980720",
+        "scancode:w3c-software-19980720",
+        "w3c-software-19980720"
+    ]
+}

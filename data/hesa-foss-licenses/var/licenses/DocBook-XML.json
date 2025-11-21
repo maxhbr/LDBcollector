@@ -1,0 +1,14 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Docbook License",
+  "scancode_key": "docbook",
+  "spdxid": "DocBook-XML",
+  "aliases": [
+      "dmit",
+      "DMIT",
+      "docbook"
+  ]
+}

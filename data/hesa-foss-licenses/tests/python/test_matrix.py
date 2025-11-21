@@ -9,14 +9,14 @@ from flame.license_db import FossLicenses, Validation
 import logging
 
 fl_default = FossLicenses(config={
-    'duals_file': 'tests/licenses-additional/duals.json',
-    'compunds_file': 'tests/licenses-additional/compounds.json',
+    'duals_file': 'tests/var/duals.json',
+    'compounds_file': 'tests/var/compounds.json',
     'check': True,
     'license-dir': 'tests/licenses',
     'level': 'logging.INFO'})
 fl_matrix = FossLicenses(config={
-    'duals_file': 'tests/licenses-additional/duals.json',
-    'compunds_file': 'tests/licenses-additional/compounds.json',
+    'duals_file': 'tests/var/duals.json',
+    'compounds_file': 'tests/var/compounds.json',
     'check': True,
     'license-dir': 'tests/licenses',
     'level': 'logging.INFO',
@@ -24,7 +24,7 @@ fl_matrix = FossLicenses(config={
 
 def test_licenses():
     licenses = fl_default.licenses()
-    assert len(licenses) == 6
+    assert len(licenses) == 7
 
 def test_compat_default():
     compat = fl_default.expression_compatibility_as("MIT")

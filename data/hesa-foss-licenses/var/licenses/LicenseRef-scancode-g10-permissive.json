@@ -1,0 +1,14 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "g10-permissive",
+    "scancode_key": "g10-permissive",
+    "spdxid": "LicenseRef-scancode-g10-permissive",
+    "compatibility_as": "MIT",
+    "aliases": [
+      "g10-permissive",
+      "g10-Permissive"
+    ]
+}

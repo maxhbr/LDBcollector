@@ -1,0 +1,22 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Eiffel Forum License 2.0",
+    "scancode_key": "efl-2.0",
+    "spdxid": "EFL-2.0",
+    "aliases": [
+        "EFL-2.0",
+        "Eiffel Forum License v2.0",
+        "Eiffel Forum License 2.0",
+        "Eiffel Forum License, Version 2",
+        "scancode://efl-2.0",
+        "EFL 2.0",
+        "EFL, Version 2.0",
+        "Eiffel Forum License, version 2",
+        "scancode:efl-2.0",
+        "osi:EFL-2.0",
+        "efl-2.0"
+    ]
+}

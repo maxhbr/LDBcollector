@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Clear BSD License",
+    "scancode_key": "clear-bsd",
+    "spdxid": "BSD-3-Clause-Clear",
+    "compatibility_as": "BSD-3-Clause",
+    "aliases": [
+        "BSD-3-Clause-Clear",
+        "BSD 3-Clause Clear License",
+        "bsd-3-clause-clear",
+        "Clear BSD",
+        "scancode://clear-bsd",
+        "Clear BSD License",
+        "Clear BSD license",
+        "scancode:clear-bsd",
+        "clear-bsd"
+    ]
+}

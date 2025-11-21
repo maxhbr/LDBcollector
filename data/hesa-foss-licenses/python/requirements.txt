@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -6,4 +6,4 @@ jsonschema
 PyYAML
 license_expression
 osadl_matrix
-
+spdx_license_list

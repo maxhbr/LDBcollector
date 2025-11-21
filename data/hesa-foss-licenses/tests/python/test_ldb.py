@@ -9,20 +9,20 @@ from flame.exception import FlameException
 import logging
 
 fl = FossLicenses(config={
-    'duals_file': 'tests/licenses-additional/duals.json',
-    'compunds_file': 'tests/licenses-additional/compounds.json',
+    'duals_file': 'tests/var/duals.json',
+    'compounds_file': 'tests/var/compounds.json',
     'check': True,
     'license-dir': 'tests/licenses',
     'level': 'logging.INFO'})
 
 def test_supported():
     licenses = fl.licenses()
-    assert len(licenses) == 6
+    assert len(licenses) == 7
 
 def test_alias_list():
     # list of all aliases
     aliases = fl.alias_list()
-    assert len(aliases) == 10
+    assert len(aliases) == 12
 
 def test_alias_list_gpl():
     # list of all aliases with license with GPL
@@ -140,3 +140,4 @@ def _do_nada_test_compat_as_bad_input():
 
     with pytest.raises(FlameException):
         fl.expression_compatibility_as("Not existing")
+

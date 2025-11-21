@@ -1,6 +1,6 @@
 {
 "meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
     "comment": ""
   },
   "name": "Public Domain",
@@ -12,7 +12,13 @@
       "Public domain",
       "LicenseRef-Fedora-Public-Domain",
       "Public Domain Dedication and License",
-      "Public-Domain"
+      "Public-Domain",
+      "public-domain",
+      "Public-domain",
+      "PUBLIC-DOMAIN",
+      "PublicDomain",
+      "License :: Public Domain",
+      "Public Domain Dedication"
   ],
   "compatibility_as": "CC0-1.0"
 }

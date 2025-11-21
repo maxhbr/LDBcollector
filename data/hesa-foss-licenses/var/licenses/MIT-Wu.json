@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "MIT Addition License",
+    "scancode_key": "mit-addition",
+    "compatibility_as": "MIT",
+    "spdxid": "MIT-Wu",
+    "aliases": [
+        "mit-addition"
+    ]
+}

@@ -9,7 +9,6 @@ import argparse
 import logging
 import sys
 import traceback
-import re
 
 from flame.license_db import FossLicenses
 from flame.license_db import Validation
@@ -17,6 +16,7 @@ import flame.config
 from flame.format import OUTPUT_FORMATS
 from flame.format import OutputFormatterFactory
 from flame.exception import FlameException
+from flame.flame_shell import FlameShell
 
 def get_parser():
 
@@ -84,6 +84,7 @@ def get_parser():
 
     subparsers = parser.add_subparsers(help='Sub commands')
     parser.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
+    parser.add_argument('--validate-scancode', action='store_true', dest='validate_scancode', help='Validate that the resulting license expression is valid according to SPDX syntax and identifier exists in the Scancode license list', default=False)
     parser.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
     parser.add_argument('--validate-osadl', action='store_true', dest='validate_osadl', help='Validate that the resulting licenses are supported by OSADL\'s compatibility matrix.', default=False)
 
@@ -117,20 +118,40 @@ def get_parser():
     parser_a.set_defaults(which='aliases', func=aliases)
     parser_a.add_argument('--include-license', '-il', type=str, dest='include_license', help='List only the aliases for licenses containing the given string (case insensitive)', default=None)
 
+    # ambiguities
+    parser_os = subparsers.add_parser(
+        'ambiguities', help='Display all ambiguities')
+    parser_os.set_defaults(which='ambiguities', func=ambiguities)
+
     # compatbilities
     parser_cs = subparsers.add_parser(
         'compats', help='Display all compatibilities')
     parser_cs.set_defaults(which='compats', func=compats)
+
+    # compounds
+    parser_cs = subparsers.add_parser(
+        'compounds', help='Display all compounds')
+    parser_cs.set_defaults(which='compounds', func=compounds)
+
+    # licenses
+    parser_cs = subparsers.add_parser(
+        'licenses', help='show all licenses')
+    parser_cs.set_defaults(which='licenses', func=licenses)
 
     # operators
     parser_os = subparsers.add_parser(
         'operators', help='Display all operators')
     parser_os.set_defaults(which='operators', func=operators)
 
-    # licenses
-    parser_cs = subparsers.add_parser(
-        'licenses', help='show all licenses')
-    parser_cs.set_defaults(which='licenses', func=licenses)
+    # shell
+    parser_sh = subparsers.add_parser(
+        'shell',
+        help='Start interactive shell')
+    parser_sh.add_argument('-s', '--silent',
+                           action='store_true',
+                           help='minimize output',
+                           default=False)
+    parser_sh.set_defaults(which='shell', func=interactive_shell)
 
     # unknown
     parser_u = subparsers.add_parser(
@@ -140,9 +161,17 @@ def get_parser():
 
     return parser
 
+def interactive_shell(fl, formatter, args):
+    FlameShell(not args.silent).cmdloop()
+    return "", None
+
 def parse():
 
     return get_parser().parse_args()
+
+def ambiguities(fl, formatter, args):
+    all_ambiguities = fl.ambiguities_list()
+    return formatter.format_ambiguities(all_ambiguities)
 
 def operators(fl, formatter, args):
     all_op = fl.operators()
@@ -158,31 +187,28 @@ def licenses(fl, formatter, args):
 
 def unknown(fl, formatter, args):
     validations = __validations(args)
-    compat_license_expression = fl.expression_license(' '.join(args.license), validations=validations, update_dual=(not args.no_dual_update))
-    compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', compat_license_expression['identified_license'])]
-    compat_licenses = [x for x in compat_licenses if x]
-    unknown_symbols = set()
-    for compat_license in compat_licenses:
-        if compat_license not in fl.known_symbols():
-            unknown_symbols.add(compat_license)
-    if len(unknown_symbols) != 0:
-        raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)))
-    return 'OK', None
+    return fl.unknown_symbols(args.license, validations)
 
 def simplify(fl, formatter, args):
-    simplified = fl.simplify(args.license_expression)
-    return str(simplified) # formatter.format_licenses(all_licenses, args.verbose)
+    validations = __validations(args)
+    expression = fl.expression_license(' '.join(args.license_expression), validations=validations, update_dual=(not args.no_dual_update))
+    simplified = fl.simplify([expression['identified_license']])
+    return formatter.format_licenses([str(simplified)], args.verbose)
 
 def compats(fl, formatter, args):
     all_compats = fl.compatibility_as_list()
     return formatter.format_compat_list(all_compats, args.verbose)
+
+def compounds(fl, formatter, args):
+    compounds = fl.compound_list()
+    return formatter.format_compounds(compounds, args.verbose)
 
 def version_info(fl, formatter, args):
     return flame.config.SW_VERSION, None
 
 def compatibility(fl, formatter, args):
     validations = __validations(args)
-    compatibilities = fl.expression_compatibility_as(' '.join(args.license), validations)
+    compatibilities = fl.expression_compatibility_as(' '.join(args.license), validations, update_dual=(not args.no_dual_update))
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
 def show_license(fl, formatter, args):
@@ -207,6 +233,8 @@ def __validations(args):
         validations.append(Validation.RELAXED)
     if args.validate_osadl:
         validations.append(Validation.OSADL)
+    if args.validate_scancode:
+        validations.append(Validation.SCANCODE)
 
     return validations
 
@@ -246,7 +274,7 @@ def main():
             print(formatted)
         except Exception as e:
             if args.verbose:
-                print(traceback.format_exc())
+                print(traceback.format_exc(), file=sys.stderr)
 
             formatted, warnings = formatter.format_error(e, args.verbose)
             print(formatted)

@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "Educational Community License 1.0",
@@ -16,6 +16,7 @@
         "ECL, Version 1.0",
         "Educational Community License version 1.0",
         "scancode:ecl-1.0",
-        "osi:ECL-1.0"
+        "osi:ECL-1.0",
+        "ecl-1.0"
     ]
 }

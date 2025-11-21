@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Indiana University Extreme! Lab Software License Version 1.2",
+    "scancode_key": "indiana-extreme-1.2",
+    "spdxid": "xpp",
+    "compatibility_as": "BSD-4-Clause",
+    "aliases": [
+        "xpp",
+        "XPP License",
+        "scancode://indiana-extreme-1.2",
+        "Indiana Extreme License 1.2",
+        "xpp License",
+        "XPP LICENSE",
+        "under XPP",
+        "scancode:indiana-extreme-1.2",
+        "indiana-extreme-1.2"
+  ]
+}

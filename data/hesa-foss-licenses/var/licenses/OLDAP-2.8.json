@@ -1,0 +1,26 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "OpenLDAP Public License 2.8",
+  "scancode_key": "openldap-2.8",
+  "spdxid": "OLDAP-2.8",
+  "aliases": [
+   "OLDAP-2.8",
+   "OpenLDAP Public License 2.8",
+   "Open LDAP Public License v2.8",
+   "scancode://openldap-2.8",
+   "http://www.OpenLDAP.org/license.html",
+   "OLDAP 2.8",
+   "OLDAP License 2.8",
+   "OLDAP License, Version 2.8",
+   "OLDAP, Version 2.8",
+   "OpenLDAP Public License Version 2.8, 17 August 2003",
+    "scancode:openldap-2.8",
+    "openldap-2.8",
+    "OpenLDAP-2.8",
+    "OpenLDAP Public License Version 2.8"
+
+  ]
+}

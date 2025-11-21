@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Microsoft Public License",
+  "scancode_key": "ms-pl",
+  "spdxid": "MS-PL",
+  "aliases": [
+    "Microsoft Public License (MS-PL)",
+    "ms-pl",
+    "Ms-PL",
+    "scancode://ms-pl",
+    "Microsoft Public License",
+    "osi:MS-PL",
+    "scancode:ms-pl"
+  ]
+}

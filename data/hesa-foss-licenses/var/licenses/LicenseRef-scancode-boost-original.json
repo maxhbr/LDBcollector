@@ -1,13 +1,14 @@
 {
-"meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
-    "comment": ""
-  },
-  "name": "Boost Original",
-  "scancode_key": "boost-original",
-  "spdxid": "LicenseRef-scancode-boost-original",
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Boost Original",
+    "scancode_key": "boost-original",
+    "spdxid": "LicenseRef-scancode-boost-original",
     "aliases": [
         "Boost Original",
-        "Original Boost"
-  ]
+        "Original Boost",
+        "boost-original"
+    ]
 }

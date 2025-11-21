@@ -2,8 +2,10 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+setuptools
+
 bump2version ~= 1.0
-flake8 ~= 7.0
+flake8 ~= 7.1
 reuse
 twine
 pytest

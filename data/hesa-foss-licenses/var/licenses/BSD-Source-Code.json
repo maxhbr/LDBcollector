@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "BSD Source Code Attribution",
@@ -14,6 +14,7 @@
         "BSD Source Code",
         "BSD SOURCE CODE",
         "BSD-SOURCE-CODE",
-        "scancode:bsd-source-code"
+        "scancode:bsd-source-code",
+        "bsd-source-code"
     ]
 }

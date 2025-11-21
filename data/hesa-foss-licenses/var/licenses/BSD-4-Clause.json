@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
 	"comment": "",
 	"date": "2023-08-29"
     },
@@ -18,6 +18,15 @@
         "BSD-Original",
         "BSD with advertising",
         "BSD 4-Clause",
-        "scancode:bsd-original"
+        "scancode:bsd-original",
+        "Original BSD license",
+        "bsd-original",
+        "BSD-4-Clause-License",
+      "BSD4.4 clause",
+      "BSD 4 Clause",
+      "BSD4_CLAUSE",
+      "4-clause BSD",
+      "BSD 4-clause \"Original\" or \"Old\" License",
+      "text://BSD-4-clause"
     ]
 }

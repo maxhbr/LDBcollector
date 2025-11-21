@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+    "name": "Standard ML of New Jersey",
+    "scancode_key": "standard-ml-nj",
+    "spdxid": "SMLNJ",
+    "aliases": [
+        "scancode://standard-ml-nj",
+        "SMLNJ",
+        "SMLNJ License",
+        "Standard ML of New Jersey",
+        "Standard ML of New Jersey License",
+        "scancode:standard-ml-nj",
+        "SMLNJ LICENSE",
+        "STANDARD ML OF NEW JERSEY COPYRIGHT NOTICE, LICENSE AND DISCLAIMER"
+  ]
+}

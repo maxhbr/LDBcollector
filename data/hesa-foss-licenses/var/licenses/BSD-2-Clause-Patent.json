@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "BSD-2-Clause Plus Patent",
@@ -12,6 +12,8 @@
         "BSD-2-Clause Plus Patent",
         "BSD-2-Clause Plus Patent License",
         "scancode:bsd-plus-patent",
-        "osi:BSDplusPatent"
+        "osi:BSDplusPatent",
+        "bsd-plus-patent",
+        "BSD+Patent"
   ]
 }

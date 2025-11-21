@@ -1,19 +1,22 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
 	"comment": "Operators (and mappings to SPDX) allowed"
     },
     "operators": {
-        "OR": "OR",
-        "or": "OR",
-        "|": "OR",
-        "||": "OR",
-        "AND": "AND",
-        "and": "AND",
-        "&": "AND",
-        "&&": "AND",
-        "with": "WITH",
+        " OR ": "OR",
+        "<OR>": " OR ",
+        " or ": " OR ",
+        "|": " OR ",
+        "||": " OR ",
+        " AND ": " AND ",
+        "<AND>": " AND ",
+        " and ": " AND ",
+        "&": " AND ",
+        "&&": " AND ",
+        " with ": "WITH",
         "w/": "WITH",
-        "WITH": "WITH"
+        " WITH ": "WITH",
+        "_or_": "OR"
     }
 }   

@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "UnixCrypt License",
+    "scancode_key": "unixcrypt",
+    "compatibility_as": "MIT",
+    "spdxid": "UnixCrypt",
+    "aliases": [
+        "unixcrypt"
+    ]
+}

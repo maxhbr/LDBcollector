@@ -1,10 +1,10 @@
 {
     "meta": {
-        "disclaimer": "bla bla ",
+        "disclaimer": "This is TEST data. DO NOT USE",
 	"comment": "Update meta information. Add alias (3-BSD)"
     },
     "spdxid": "BSD-3-Clause",
-    "aliases": [ "BSD3", "3-BSD"],
+    "aliases": [ "BSD3", "3-BSD", "bsd-new" ],
     "scancode_key": "bsd-new",
     "name": "The 3-Clause BSD License"
 }

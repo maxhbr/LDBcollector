@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "Bitstream Vera Font License",
@@ -8,6 +8,15 @@
     "spdxid": "Bitstream-Vera",
     "aliases": [
         "Bitstream vera",
-        "Bitstream Vera"
+        "Bitstream Vera",
+        "bitstream",
+      "Bitstream",
+      "Bitstream Vera Font",
+      "Bitstream Vera Fonts Copyright",
+      "Bitstream Vera Font License",
+      "Bitstream Vera License 1.0",
+      "Bitstream Vera License v1.00",
+      "Bitstream Vera License",
+      "bitstream-vera"
     ]
 }

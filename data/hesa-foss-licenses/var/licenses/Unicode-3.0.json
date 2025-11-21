@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Unicode License v3",
+  "scancode_key": "unicode-v3",
+  "spdxid": "Unicode-3.0",
+  "aliases": [
+    "unicode-v3",
+    "UNICODE LICENSE V3",
+    "Unicode License v3"
+  ]
+}

@@ -1,6 +1,6 @@
 {
 "meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
     "comment": ""
   },
   "name": "MIT with no false attribution License",
@@ -13,6 +13,7 @@
    "MIT +no-false-attribs License",
    "scancode://mit-no-false-attribs",
    "MIT no false attribution License",
-   "scancode:mit-no-false-attribs"
+   "scancode:mit-no-false-attribs",
+   "mit-no-false-attribs"
   ]
 }

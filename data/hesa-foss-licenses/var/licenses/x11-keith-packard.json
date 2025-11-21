@@ -1,17 +1,19 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
 	"comment": ""
     },
     "comment": "This license can be found in misc freedesktop/X11 related projects.",
     "name": "X11-Style (Keith Packard)",
     "scancode_key": "x11-keith-packard",
-    "spdxid": "LicenseRef-flame-x11-keith-packard",
+    "spdxid": "HPND-sell-variant",
     "aliases": [
         "X11-Style (Keith Packard)",
         "scancode://x11-keith-packard",
         "x11-keith-packard",
-        "Keith Packard License"
+        "Keith Packard License",
+      "HPND-sell-variant",
+      "LicenseRef-flame-x11-keith-packard"
     ],
     "compatibility_as": "HPND"
 }

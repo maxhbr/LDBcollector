@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Eiffel Forum License 1.0",
+    "scancode_key": "efl-1.0",
+    "compatibility_as": "EFL-2.0",
+    "spdxid": "EFL-1.0",
+    "aliases": [
+        "EFL-1.0",
+        "EFL-1",
+        "Eiffel Forum License v1.0",
+        "Eiffel Forum License 1.0",
+        "The Eiffel Forum License, Version 1",
+        "scancode://efl-1.0",
+        "EFL 1.0",
+        "EFL, Version 1.0",
+        "Eiffel Forum License, version 1",
+        "scancode:efl-1.0",
+        "osi:EFL-1.0",
+        "efl-1.0"
+    ]
+}

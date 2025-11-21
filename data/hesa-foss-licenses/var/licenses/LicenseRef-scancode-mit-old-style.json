@@ -1,0 +1,12 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "MIT Old Style",
+  "scancode_key": "mit-old-style",
+  "spdxid": "LicenseRef-scancode-mit-old-style",
+  "aliases": [
+    "MIT-old"
+  ]
+}

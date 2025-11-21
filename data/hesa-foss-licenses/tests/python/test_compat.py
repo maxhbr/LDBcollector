@@ -12,8 +12,8 @@ import logging
 fl = FossLicenses(config={
     'license-dir': 'tests/licenses',
     'level': 'INFO',
-    'duals_file': 'tests/licenses-additional/duals.json',
-    'compunds_file': 'tests/licenses-additional/compounds.json'
+    'duals_file': 'tests/var/duals.json',
+    'compounds_file': 'tests/var/compounds.json'
 })
 
 def test_compat_misc_blanks():
@@ -31,7 +31,7 @@ def compat_misc_paranthesises_sub(lic1, op, lic2, expected):
                 for l in range(1, 3):
                     for m in range(1, 3):
                         c = fl.expression_compatibility_as(f'{" "*i}({" "*j}{lic1}{" "*k}{op}{" "*l}{lic2}{" "*m})', update_dual=False)
-                        logging.debug("c: " + str(c))
+                        logging.debug(f'c: {c} => c["compat_license"] ?==? {expected}')
                         assert c['compat_license'] == expected
 
 def test_compat_misc_paranthesises():

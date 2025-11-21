@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "BSD 2-Clause with views sentence",
+    "scancode_key": "bsd-2-clause-views",
+    "spdxid": "BSD-2-Clause-Views",
+    "compatibility_as": "BSD-2-Clause",
+    "aliases": [
+        "BSD-2-Clause-Views",
+        "BSD 2-Clause with Views Sentence",
+        "BSD 2-Clause with views sentence",
+        "scancode://bsd-2-clause-views",
+        "bsd-2-clause-views"
+    ]
+}

@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -214,7 +214,7 @@ class OutputFormatter():
         :type all_aliases: list
         :param verbose: provide additional information
         :type verbose: boolean
-        :raise FlameException: if all_compats is not valid
+        :raise FlameException: if compats is not valid
         :return: formatted string
         :rtype: str
 
@@ -237,7 +237,7 @@ class OutputFormatter():
         :type operators: list
         :param verbose: provide additional information
         :type verbose: boolean
-        :raise FlameException: if all_compats is not valid
+        :raise FlameException: if operators is not valid
         :return: formatted string
         :rtype: str
 
@@ -248,6 +248,52 @@ class OutputFormatter():
         >>> operators = fl.operators()
         >>> formatter = OutputFormatterFactory.formatter("TEXT")
         >>> formatted = formatter.format_operators(operators)
+
+        """
+        return None, None
+
+    def format_ambiguities(self, ambiguities, verbose=False):
+        """
+        Return a formatted string of the existing ambiguities
+
+        :param ambiguities: A list of ambiguites.
+        :type ambiguities: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if ambiguites is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> ambiguities = fl.ambiguities_list()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_ambiguities(ambiguities)
+
+        """
+        return None, None
+
+    def format_compounds(self, compounds, verbose=False):
+        """
+        Return a formatted string of the existing compounds
+
+        :param compounds: A list of ambiguites.
+        :type compounds: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if compounds is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> compounds = fl.compound_list()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_compounds(compounds)
 
         """
         return None, None
@@ -285,6 +331,12 @@ class JsonOutputFormatter(OutputFormatter):
     def format_operators(self, operators, verbose=False):
         return json.dumps(operators), None
 
+    def format_ambiguities(self, ambiguities, verbose=False):
+        return json.dumps(ambiguities), None
+
+    def format_compounds(self, compounds, verbose=False):
+        return json.dumps(compounds), None
+
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
@@ -314,6 +366,12 @@ class YamlOutputFormatter(OutputFormatter):
     def format_operators(self, operators, verbose=False):
         return yaml.safe_dump(operators), None
 
+    def format_ambiguities(self, ambiguities, verbose=False):
+        return yaml.safe_dump(ambiguities), None
+
+    def format_compounds(self, compounds, verbose=False):
+        return yaml.safe_dump(compounds), None
+
 class TextOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
@@ -337,7 +395,8 @@ class TextOutputFormatter(OutputFormatter):
                 ret.append(f' * "{compat["queried_name"]}" -> "{compat["name"]}" via "{compat["identified_via"]}"')
 
         if compats['ambiguities']:
-            warnings = f'Warnings: {", ".join(compats["ambiguities"])}'
+            descr = [x['description'] for x in compats['ambiguities']]
+            warnings = f'Warnings: {", ".join(descr)}'
         else:
             warnings = None
 
@@ -360,9 +419,10 @@ class TextOutputFormatter(OutputFormatter):
         ret.append(f'{id_lic}')
         if verbose:
             for identification in expression['identifications']:
-                ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]} via "{identification["identified_via"]}"')
+                ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]}" via "{identification["identified_via"]}"')
         if expression['ambiguities']:
-            warnings = f'Warnings: {", ".join(expression["ambiguities"])}'
+            descr = [x['description'] for x in expression['ambiguities']]
+            warnings = f'Warnings: {", ".join(descr)}'
         else:
             warnings = None
         return '\n'.join(ret), warnings
@@ -376,6 +436,18 @@ class TextOutputFormatter(OutputFormatter):
 
     def format_operators(self, operators, verbose=False):
         return '\n'.join([f'{k} -> {v}' for k, v in operators.items()]), None
+
+    def format_ambiguities(self, ambiguities, verbose=False):
+        ret = []
+        for k, v in ambiguities.items():
+            ret += [f'{a} -> {k}' for a in v['aliases']]
+        return '\n'.join(ret), None
+
+    def format_compounds(self, compounds, verbose=False):
+        ret = []
+        for compound in compounds:
+            ret += [f'{a} -> {compound["spdxid"]}' for a in compound['aliases']]
+        return '\n'.join(ret), None
 
     def format_error(self, error, verbose=False):
         return f'Error: {error}', None

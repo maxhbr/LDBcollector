@@ -1,6 +1,6 @@
 {
 "meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
     "comment": ""
 },
     "name": "Creative Commons Public Domain Certification",
@@ -12,6 +12,7 @@
         "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification",
         "scancode://cc-pd",
         "CC-PD",
-        "scancode:cc-pd"
+        "scancode:cc-pd",
+        "cc-pd"
     ]
 }

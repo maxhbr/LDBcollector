@@ -1,6 +1,6 @@
 {
 "meta": {
-    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
     "comment": ""
   },
   "name": "GNU General Public License 1.0",
@@ -23,6 +23,10 @@
    "GNU GENERAL PUBLIC LICENSE Version 1",
    "scancode:gpl-1.0",
    "GPLv1.0",
-   "GPL-1"
+   "GPL-1",
+    "gpl-1.0",
+    "GNU General Public License-1.0-only",
+    "GNU General Public License v1.0",
+    "gpl-1.0-only"
   ]
 }

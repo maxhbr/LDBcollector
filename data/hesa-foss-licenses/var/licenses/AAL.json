@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Attribution Assurance License",
+  "scancode_key": "attribution",
+  "spdxid": "AAL",
+  "aliases": [
+   "AAL",
+   "Attribution Assurance License",
+   "Attribution Assurance Licenses",
+   "License :: OSI Approved :: Attribution Assurance License",
+   "scancode://attribution",
+   "osi:attribution",
+   "scancode:attribution"
+  ]
+}

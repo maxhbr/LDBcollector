@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "SunPro Attribution License",
+    "scancode_key": "sunpro",
+    "spdxid": "SunPro",
+    "aliases": [
+        "sunpro"
+    ]
+}

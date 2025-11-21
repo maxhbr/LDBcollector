@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Jabber Open Source License 1.0",
+    "scancode_key": "josl-1.0",
+    "spdxid": "LicenseRef-scancode-josl-1.0",
+    "aliases": [
+        "License :: OSI Approved :: Jabber Open Source License",
+        "LicenseRef-scancode-josl-1.0",
+        "josl-1.0",
+        "Jabber Open Source License"
+    ]
+}

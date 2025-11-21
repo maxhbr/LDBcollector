@@ -1,0 +1,14 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "X11-Style (Lucent)",
+    "scancode_key": "x11-lucent",
+    "compatibility_as": "X11",
+    "spdxid": "dtoa",
+    "aliases": [
+      "x11-lucent",
+      "MIT-Lucent"
+    ]
+}
