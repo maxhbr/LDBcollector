@@ -1,24 +1,17 @@
 ;
 ; Copyright © 2023 Peter Monks
 ;
-; Licensed under the Apache License, Version 2.0 (the "License");
-; you may not use this file except in compliance with the License.
-; You may obtain a copy of the License at
+; This Source Code Form is subject to the terms of the Mozilla Public
+; License, v. 2.0. If a copy of the MPL was not distributed with this
+; file, You can obtain one at https://mozilla.org/MPL/2.0/.
 ;
-;     http://www.apache.org/licenses/LICENSE-2.0
-;
-; Unless required by applicable law or agreed to in writing, software
-; distributed under the License is distributed on an "AS IS" BASIS,
-; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-; See the License for the specific language governing permissions and
-; limitations under the License.
-;
-; SPDX-License-Identifier: Apache-2.0
+; SPDX-License-Identifier: MPL-2.0
 ;
 
-(ns lice-comb.impl.regex-matching
-  "Helper functionality focused on regex matching. Note: this namespace is not
-  part of the public API of lice-comb and may change without notice."
+(ns lice-comb.impl.id-detection
+  "Helper functionality focused on detecting SPDX id(s) from a (short) string.
+  Note: this namespace is not part of the public API of lice-comb and may change
+  without notice."
   (:require [clojure.string       :as s]
             [clojure.set          :as set]
             [medley.core          :as med]
@@ -29,8 +22,9 @@
 
 (defn- get-rencgs
   "Get a value for an re-ncg, potentially looking at multiple ncgs in order
-  until a non-blank value is found. Also trims and lower-cases the value, and
-  replaces all whitespace with a single space."
+  until a non-blank value is found. Returns `default` when no non-blank value is
+  found (and which defaults to `nil` if not provided). Trims and lower-cases the
+  value, and replaces all whitespace with a single space."
   ([m names] (get-rencgs m names nil))
   ([m names default]
     (loop [f (first names)
@@ -123,8 +117,8 @@
                                     "netbsd"                                              "NetBSD"
                                     "modification"                                        "Modification"
                                     ("no military license" "no military licence")         "No-Military-License"
-                                    ("no nuclear license" "no nuclear licence")           "No-Nuclear-License"
                                     ("no nuclear license 2014" "no nuclear licence 2014") "No-Nuclear-License-2014"
+                                    ("no nuclear license" "no nuclear licence")           "No-Nuclear-License"
                                     "no nuclear warranty"                                 "No-Nuclear-Warranty"
                                     "open mpi"                                            "Open-MPI"
                                     "shortened"                                           "Shortened"
@@ -186,27 +180,27 @@
 (defn- gpl-id-constructor
   "An SPDX id constructor specific to the GNU family of licenses."
   [m]
-  (let [variant    (cond (contains? m "agpl") "AGPL"
-                         (contains? m "lgpl") "LGPL"
-                         (contains? m "gpl")  "GPL")
-        version    (get-rencgs m ["version"] "")
-        version    (s/replace version #"\p{Punct}+" ".")
+  (let [variant            (cond (contains? m "agpl") "AGPL"
+                                 (contains? m "lgpl") "LGPL"
+                                 (contains? m "gpl")  "GPL")
+        version-present?   (boolean (get-rencgs m ["version"] false))
+        version            (get-rencgs m ["version"] (if (= variant "LGPL") "2.0" "1.0"))
+        version            (s/replace version #"\p{Punct}+" ".")
         [confidence confidence-explanations]
-                   (if (s/blank? version)
-                     [:low #{:missing-version}]
-                     (if (s/includes? version ".")
-                       [:high]
-                       [:medium #{:partial-version}]))
-        version    (if (s/blank? version)
-                     (:latest-ver m)
-                     version)
-        version    (if (s/includes? version ".")
-                     version
-                     (str version ".0"))
-        suffix     (if (contains? m "orLater")
-                     "or-later"
-                     "only")  ; Note: we (conservatively) default to "only" when we don't have an explicit suffix
-        id         (str variant "-" version  "-" suffix)]
+                           (if version-present?
+                             (if (s/includes? version ".")
+                               [:high]
+                               [:medium #{:partial-version}])
+                             [:low #{:missing-version}])
+        version            (if (s/includes? version ".")
+                             version
+                             (str version ".0"))
+        [suffix confidence-explanations]
+                           (cond (contains? m "orLater") ["or-later" confidence-explanations]
+                                 (contains? m "only")    ["only"     confidence-explanations]
+                                 :else                   [(if version-present? "only" "or-later")  ; Note: on the advice of SPDX technical team, default to "or later" variant if version not present
+                                                          (set/union #{:missing-version-suffix} confidence-explanations)])
+        id                 (str variant "-" version  "-" suffix)]
     [(assert-listed-id id) confidence confidence-explanations]))
 
 (defn- simple-regex-match
@@ -221,9 +215,9 @@
 
 
 ; The regex for the GNU family is a nightmare, so we build it up (and test it) in pieces
-(def agpl-re          #"(?<agpl>AGPL|Affero)(\s+GNU)?(\s+General)?(\s+Public)?(\s+Licen[cs]e)?(\s+\(?AGPL\)?)?")
-(def lgpl-re          #"(?<lgpl>L\s?GPL|GNU\s+(Library|Lesser)|(Library|Lesser)\s+(L?GPL|General\s+Public\s+Licen[cs]e))(\s+or\s+Lesser)?(\s+General)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?LGPL\)?)?")
-(def gpl-re           #"(?<!(Affero|Lesser|Library)\s+)(?<gpl>GNU(?!\s+Classpath)|(?<!(L|A)\s*)GPL|General\s+Public\s+Licen[cs]e)(?!\s+(Affero|Library|Lesser|General\s+Lesser|General\s+Library|LGPL|AGPL))((\s+General)?(?!\s+(Affero|Lesser|Library))\s+Public\s+Licen[cs]e)?(\s+\(?GPL\)?)?")
+(def agpl-re          #"(?<agpl>AGPL|Affero)(\s+GNU)?(\s+Genere?al)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?AGPL\)?)?")
+(def lgpl-re          #"(?<lgpl>(GNU\s+(Genere?al\s+)?(Library\s+or\s+Lesser|Lesser\s+or\s+Library|Library|Lesser))|((Library\s+or\s+Lesser|Lesser\s+or\s+Library|Library|Lesser)\s+(GNU|GPL|Genere?al)|(L(esser\s)?\s*GPL)))(\s+Genere?al)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?L\s*GPL\)?)?")
+(def gpl-re           #"(?<!(Affero|Lesser|Library)\s+)(?<gpl>GNU(?!\s+Classpath)|(?<!(L|A)\s*)GPL|Genere?al\s+Pub?lic\s+Licen[cs]e)(?!\s+(Affero|Library|Lesser|Genere?al\s+Lesser|Genere?al\s+Library|LGPL|AGPL))((\s+General)?(?!\s+(Affero|Lesser|Library))\s+Pub?lic\s+Licen[cs]e)?(\s+\(?GPL\)?)?")
 (def version-re       #"[\s,-]*(_?V(ersion)?)?[\s\._]*(?<version>\d+([\._]\d+)?)?")
 (def only-or-later-re #"[\s,-]*((?<only>\(?only\)?)|(\(?or(\s+\(?at\s+your\s+(option|discretion)\)?)?(\s+any)?)?([\s-]*(?<orLater>lat[eo]r|newer|greater|\+)))?")
 (def gnu-re           (lciu/re-concat "(?x)(?i)\\b(\n# Alternative 1: AGPL\n"
@@ -369,7 +363,7 @@
        :fn         (constantly ["Zlib" :high])}
       ])))
 
-(defn- match
+(defn- detect-id
   "If a match occured for the given regex element when tested against string s,
   returns a map containing the following keys:
   * :id         The SPDX license or exception identifier that was determined
@@ -393,7 +387,7 @@
               :start      (:start match)}
              (when (seq confidence-explanations) {:confidence-explanations confidence-explanations})))))
 
-(defn matches
+(defn detect-ids
   "Returns a sequence (NOT A SET!) of maps where each key is a SPDX license or
   exception identifier (a String) that was found in s, and the value is a
   sequence containing a single map describing how the identifier was determined.
@@ -409,7 +403,7 @@
   Results are in the order in which they appear in the string, and the function
   returns nil if there were no matches."
   [s]
-  (when-let [matches (seq (filter identity (e/pmap* (partial match s) @license-name-matching-d)))]
+  (when-let [matches (seq (filter identity (e/pmap* (partial detect-id s) @license-name-matching-d)))]
     (some->> matches
              (med/distinct-by :id)    ;####TODO: THINK ABOUT MERGING INSTEAD OF DROPPING
              (sort-by :start)

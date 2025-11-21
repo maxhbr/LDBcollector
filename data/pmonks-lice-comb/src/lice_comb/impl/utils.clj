@@ -1,19 +1,11 @@
 ;
 ; Copyright © 2021 Peter Monks
 ;
-; Licensed under the Apache License, Version 2.0 (the "License");
-; you may not use this file except in compliance with the License.
-; You may obtain a copy of the License at
+; This Source Code Form is subject to the terms of the Mozilla Public
+; License, v. 2.0. If a copy of the MPL was not distributed with this
+; file, You can obtain one at https://mozilla.org/MPL/2.0/.
 ;
-;     http://www.apache.org/licenses/LICENSE-2.0
-;
-; Unless required by applicable law or agreed to in writing, software
-; distributed under the License is distributed on an "AS IS" BASIS,
-; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-; See the License for the specific language governing permissions and
-; limitations under the License.
-;
-; SPDX-License-Identifier: Apache-2.0
+; SPDX-License-Identifier: MPL-2.0
 ;
 
 (ns lice-comb.impl.utils
@@ -102,18 +94,40 @@
   [& res]
   (re-pattern (s/join res)))
 
+(defn retained-split
+  "As for `clojure.string/split`, but retains whatever `re` matched as distinct
+  elements in the result."
+  [s re]
+  (let [m             (re-matcher re s)
+        split-indices (loop [result []
+                             f      (.find m)]
+                        (if f
+                          (recur (concat result [(.start m) (.end m)]) (.find m))
+                          (when-not (empty? result)
+                            (dedupe (concat [0] result [(count s)])))))]
+    (if (empty? split-indices)
+      [s]
+      (mapv #(subs s (first %) (second %)) (partition 2 1 split-indices)))))
+
+(def ^java.nio.charset.Charset utf8-charset java.nio.charset.StandardCharsets/UTF_8)
+
+(defn utf8-bytes
+  "The UTF-8 encoded bytes of `s` (a `String`), as a Java `byte[]`."
+  [^String s]
+  (.getBytes s utf8-charset))
+
 (defn base62-encode
   "Encodes the given string to Base62/UTF-8."
   [^String s]
   (when s
-    (base62/encode (.getBytes s java.nio.charset.StandardCharsets/UTF_8))))
+    (base62/encode (utf8-bytes s))))
 
 (defn base62-decode
   "Decodes the given Base62/UTF-8 string."
   [^String s]
   (when s
     (if (re-matches #"\p{Alnum}*" s)
-      (java.lang.String. ^bytes (base62/decode s) java.nio.charset.StandardCharsets/UTF_8)
+      (java.lang.String. ^bytes (base62/decode s) utf8-charset)
       (throw (ex-info (str "Invalid BASE62 value provided: " s) {})))))   ; Because clj-base62 has crappy error messages
 
 (defn html->text
