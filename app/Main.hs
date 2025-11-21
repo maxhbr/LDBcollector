@@ -13,6 +13,7 @@ import Ldbcollector.Server
 import Ldbcollector.Sink.GraphViz
 import Ldbcollector.Sink.JSON
 import Ldbcollector.Sink.Metrics
+import Ldbcollector.Sink.NameClustersCSV
 import Ldbcollector.Source
 import System.Environment (getArgs)
 import Prelude hiding (div, head, id)
@@ -62,8 +63,8 @@ writeSvgByNS outDir selectedNS = do
       else V.mapM_ (writeFilesByName outDir) filteredLicenses
 
 curation :: Vector CurationItem
-curation =
-  V.fromList $
+curation = let
+  alternativeLNsCuration = V.fromList $
     map
       (\(main, alternatives) -> CurationItem (LN main `AlternativeLNs` map LN alternatives) [])
       [ ("GPL-1.0-only", ["GPL-1.0", "GPL1.0", "GPL1", "GNU General Public License Version 1"]),
@@ -100,6 +101,36 @@ curation =
         ("LiLiQ-R-1.1", ["LiLiQ-R"]),
         ("LiLiQ-Rplus-1.1", ["LiLiQ-R+"])
       ]
+    
+  in alternativeLNsCuration 
+
+main'' :: [String] -> LicenseGraphM ()
+main'' args = do
+    case args of
+      ["--default"] -> do
+        main'' ["--generate", "--writeNS", "spdx"]
+      "--generate" : oArgs -> do
+        writeNameClustersCsv ("_generatedV2" </> "license-name-clusters.csv")
+        writeJSON ("_generatedV2" </> "yacp.json")
+        when (not (null oArgs)) $ do
+          main'' oArgs
+      "--write" : names -> mapM_ (writeFilesByName "_generatedV2" . fromString) names
+      "--writeNS": ns: oArgs -> do
+        writeSvgByNS "_generatedV2" (fromString ns)
+        when (not (null oArgs)) $ do
+          main'' oArgs
+      ["--serve"] -> serve
+      _ -> serve
+  
+main' :: [String] -> IO ()
+main' args = do
+  (_, licenseGraph) <- runLicenseGraphM $ do
+    timedLGM "warmup" $ do
+      timedLGM "applySources" $
+        applySources curation
+      writeMetrics
+    main'' args
+  return ()
 
 main :: IO ()
 main = withUtf8 $ do
@@ -107,13 +138,4 @@ main = withUtf8 $ do
   putStrLn $ "cwd: " ++ cwd
   args <- getArgs
   setupLogger True
-  (_, licenseGraph) <- runLicenseGraphM $ do
-    timedLGM "warmup" $ do
-      timedLGM "applySources" $
-        applySources curation
-      writeMetrics
-    case args of
-      "write" : names -> mapM_ (writeFilesByName "generatedV2" . fromString) names
-      ["writeNS", ns] -> writeSvgByNS "generatedV2" (fromString ns)
-      _ -> serve
-  return ()
+  main' args

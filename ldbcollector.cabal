@@ -35,6 +35,7 @@ library
       Ldbcollector.Sink.GraphViz
       Ldbcollector.Sink.JSON
       Ldbcollector.Sink.Metrics
+      Ldbcollector.Sink.NameClustersCSV
       Ldbcollector.Source
       Ldbcollector.Source.BlueOak
       Ldbcollector.Source.Cavil
