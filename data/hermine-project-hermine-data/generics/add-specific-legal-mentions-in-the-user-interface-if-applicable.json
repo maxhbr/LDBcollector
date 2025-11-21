@@ -1,6 +1,6 @@
 {
-  "name": "Add specific legal mentions in the user interface (if applicable)",
-  "description": "Include specific mentions/attributions/ statements or warnings in the interactive display. For instance: \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\"",
-  "metacategory": "Mentions",
-  "passivity": "Active"
+    "name": "Add specific legal mentions in the user interface (if applicable)",
+    "description": "Include specific mentions/attributions/ statements or warnings in the interactive display. For instance: \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\"",
+    "metacategory": "Mentions",
+    "passivity": "Active"
 }

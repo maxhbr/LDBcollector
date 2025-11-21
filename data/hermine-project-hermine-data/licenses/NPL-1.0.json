@@ -1,0 +1,204 @@
+{
+    "spdx_id": "NPL-1.0",
+    "long_name": "Netscape Public License v1.0",
+    "steward": "Netscape Communications Corporation",
+    "copyleft": "Weak",
+    "url": "http://www.mozilla.org/MPL/NPL/1.0/",
+    "osi_approved": false,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": true,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "California law",
+    "venue_choice": "Santa Clara venue",
+    "comment": "This License shall be governed by California law provisions (except to the extent applicable law, if any, provides otherwise), excluding its conflict-of-law provisions. With respect to disputes in which at least one party is a citizen of, or an entity chartered or registered to do business in, the United States of America: (a) unless otherwise agreed in writing, all disputes relating to this License (excepting any dispute relating to intellectual property rights) shall be subject to final and binding arbitration, with the losing party paying all costs of arbitration; (b) any arbitration relating to this Agreement shall be held in Santa Clara County, California, under the auspices of JAMS/EndDispute; and (c) any litigation relating to this Agreement shall be subject to the jurisdiction of the Federal Courts of the Northern District of California, with venue lying in Santa Clara County, California, with the losing party responsible for costs, including without limitation, court costs and reasonable attorneys fees and expenses.",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user",
+            "verbatim": "3.2. Availability of Source Code.\r\nAny Modification which You create or to which You contribute must be made available in Source Code form under the terms of this License either on the same media as an Executable version or via an accepted Electronic Distribution Mechanism to anyone to whom you made an Executable version available; and if made available via Electronic Distribution Mechanism, must remain available for at least twelve (12) months after the date it initially became available, or at least six (6) months after a subsequent version of that particular Modification has been made available to such recipients. You are responsible for ensuring that the Source Code version remains available even if the Electronic Distribution Mechanism is maintained by a third party.[...]\r\n3.6. Distribution of Executable Versions.\r\nYou may distribute Covered Code in Executable form only if the requirements of Section 3.1-3.5 have been met for that Covered Code,",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Add specific legal mentions in the documentation"
+            ],
+            "name": "Include location of source code in documentation",
+            "verbatim": "3.6. Distribution of Executable Versions.\r\n[...] You include a notice stating that the Source Code version of the Covered Code is available under the terms of this License, including a description of how and where You have fulfilled the obligations of Section 3.2. The notice must be conspicuously included in any notice in an Executable version, related documentation or collateral in which You describe recipients' rights relating to the Covered Code.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Add specific mentions in the source code"
+            ],
+            "name": "IP notice in each file",
+            "verbatim": "3.5. Required Notices.\r\nYou must duplicate the notice in Exhibit A in each file of the Source Code,[...]. If You created one or more Modification(s), You may add your name as a Contributor to the notice described in Exhibit A. If it is not possible to put such notice in a particular Source Code file due to its structure, then you must include such notice in a location (such as a relevant directory file) where a user would be likely to look for such a notice.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and Notices in documentation",
+            "verbatim": "3.3. Description of Modifications.\r\nYou must include a prominent statement that the Modification is derived, directly or indirectly, from Original Code provided by the Initial Developer and including the name of the Initial Developer [...]in any notice in [...]  related documentation in which You describe the origin or ownership of the Covered Code.\r\n\r\n3.5. Required Notices.\r\nYou must duplicate [...] this License in any documentation for the Source Code, where You describe recipients' rights relating to Covered Code.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Providing a copy of the license in source code",
+            "verbatim": "3.1 [...]  You must include a copy of this License with every copy of the Source Code You distribute.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Display legal mentions in the user interface (if applicable)"
+            ],
+            "name": "Display licence and copyright notices in Program",
+            "verbatim": "3.3. Description of Modifications.\r\n\r\n    You must cause all Covered Code to which you contribute to contain a file documenting the changes You made to create that Covered Code and the date of any change. You must include a prominent statement that the Modification is derived, directly or indirectly, from Original Code provided by the Initial Developer and including the name of the Initial Developer [...] in any notice in an Executable version [...] in which You describe the origin or ownership of the Covered Code.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Description of Modifications in source code",
+            "verbatim": "3.3. Description of Modifications.\r\nYou must cause all Covered Code to which you contribute to contain a file documenting the changes You made to create that Covered Code and the date of any change. You must include a prominent statement that the Modification is derived, directly or indirectly, from Original Code provided by the Initial Developer and including the name of the Initial Developer in (a) the Source Code, and (b) in any notice in an Executable version or related documentation in which You describe the origin or ownership of the Covered Code.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Indemnify contributors against claims"
+            ],
+            "name": "Indemnification of contributors",
+            "verbatim": "3.6 [...]You hereby agree to indemnify the Initial Developer and every Contributor for any liability incurred by the Initial Developer or such Contributor as a result of any such terms You offer.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Do not restrict the rights of the license"
+            ],
+            "name": "Don't limit rights from upstream",
+            "verbatim": "3.6. Distribution of Executable Versions. \r\n[...] You may distribute the Executable version of Covered Code under a license of Your choice, which may contain terms different from this License, provided that You are in compliance with the terms of this License and that the license for the Executable version does not attempt to limit or alter the recipient's rights in the Source Code version from the rights set forth in this License.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "License Agreement must exclude other contributors for additionnal terms"
+            ],
+            "name": "Exemption of other contributors from your specific licencing terms",
+            "verbatim": "3.6 [...]If You distribute the Executable version under a different license You must make it absolutely clear that any terms which differ from this License are offered by You alone, not by the Initial Developer or any Contributor.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Inform about potential additionnal IP rights"
+            ],
+            "name": "Information about your API patents",
+            "verbatim": "3.4 (b) Contributor APIs.\r\nIf Your Modification is an application programming interface and You own or control patents which are reasonably necessary to implement that API, you must also include this information in the LEGAL file.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Inform about potential additionnal IP rights"
+            ],
+            "name": "Information about required 3rd party IP rights",
+            "verbatim": "3.4. (a) Third Party Claims.\r\nIf You have knowledge that a party claims an intellectual property right in particular functionality or code (or its utilization under this License), you must include a text file with the source code distribution titled ``LEGAL'' which describes the claim and the party making the claim in sufficient detail that a recipient will know whom to contact. If you obtain such knowledge after You make Your Modification available as described in Section 3.2, You shall promptly modify the LEGAL file in all copies You make available thereafter and shall take other steps (such as notifying appropriate mailing lists or newsgroups) reasonably calculated to inform those who received the Covered Code that new knowledge has been obtained.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Inability to Comply Due to Statute or Regulation"
+            ],
+            "name": "Explain Inability to Comply Due to Statute or Regulation.",
+            "verbatim": "4. Inability to Comply Due to Statute or Regulation.\r\nIf it is impossible for You to comply with any of the terms of this License with respect to some or all of the Covered Code due to statute or regulation then You must: (a) comply with the terms of this License to the maximum extent possible; and (b) describe the limitations and the code they affect. Such description must be included in the LEGAL file described in Section 3.4 and must be included with all distributions of the Source Code. Except to the extent prohibited by statute or regulation, such description must be sufficiently detailed for a recipient of ordinary skill to be able to understand it.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NPL-1.0"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak copyleft file based",
+            "verbatim": "3.1. Application of License.\r\nThe Modifications which You create or to which You contribute are governed by the terms of this License, including without limitation Section 2.2. The Source Code version of Covered Code may be distributed only under the terms of this License or a future version of this License released under Section 6.1, and You must include a copy of this License with every copy of the Source Code You distribute. You may not offer or impose any terms on any Source Code version that alters or restricts the applicable version of this License or the recipients' rights hereunder. However, You may include an additional document offering the additional rights described in Section 3.5.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

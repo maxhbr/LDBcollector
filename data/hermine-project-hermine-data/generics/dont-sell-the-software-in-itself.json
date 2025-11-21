@@ -1,6 +1,6 @@
 {
-  "name": "Don't sell the software in itself",
-  "description": "You can't ask for a fee for the right to use the software, but it is possible to charge for access to the software a reasonable amount or to sell a larger work that includes the software, but not the software in itself.",
-  "metacategory": "LicenseAgreement",
-  "passivity": "Passive"
+    "name": "Don't sell the software in itself",
+    "description": "You can't ask for a fee for the right to use the software, but it is possible to charge for access to the software a reasonable amount or to sell a larger work that includes the software, but not the software in itself.",
+    "metacategory": "LicenseAgreement",
+    "passivity": "Passive"
 }

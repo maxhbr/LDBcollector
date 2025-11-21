@@ -1,6 +1,6 @@
 {
-  "name": "Add specific mentions in the source code",
-  "description": "Include specific mentions in the source code. For instance : \"You must duplicate the notice contained in EXHIBIT A (the \"Notice\") in each file of the Source Code .\"",
-  "metacategory": "Mentions",
-  "passivity": "Active"
+    "name": "Add specific mentions in the source code",
+    "description": "Include specific mentions in the source code. For instance : \"You must duplicate the notice contained in EXHIBIT A (the \"Notice\") in each file of the Source Code .\"",
+    "metacategory": "Mentions",
+    "passivity": "Active"
 }

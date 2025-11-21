@@ -1,0 +1,87 @@
+{
+    "spdx_id": "IJG",
+    "long_name": "Independent JPEG Group License",
+    "steward": "",
+    "copyleft": "None",
+    "url": "http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2",
+    "osi_approved": false,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "None",
+    "venue_choice": "None",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "IJG"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "(1) If any part of the source code for this software is distributed, then this README file must be included, with this copyright and no-warranty notice unaltered;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "IJG"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce license and legal mentions in documentation",
+            "verbatim": "(1) If any part of the source code for this software is distributed, then this README file must be included, with this copyright and no-warranty notice unaltered; and any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "IJG"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Indicate modifications",
+            "verbatim": "any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "IJG"
+            ],
+            "generic": [
+                "Add specific legal mentions in the documentation"
+            ],
+            "name": "Add specific legal mentions in the documentation",
+            "verbatim": "(2) If only executable code is distributed, then the accompanying documentation must state that \"this software is based in part on the work of the Independent JPEG Group\".",
+            "passivity": "Active",
+            "trigger_expl": "DistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "IJG"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "Do not use project or contributor names for endorsement or promotion.",
+            "verbatim": "Permission is NOT granted for the use of any IJG author's name or company name in advertising or publicity relating to this software or products derived from it. This software may be referred to only as \"the Independent JPEG Group's software\".",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

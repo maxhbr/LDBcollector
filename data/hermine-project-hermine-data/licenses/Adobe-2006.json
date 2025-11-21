@@ -1,0 +1,48 @@
+{
+    "spdx_id": "Adobe-2006",
+    "long_name": "Adobe Systems Incorporated Source Code License Agreement",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/AdobeLicense",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Adobe-2006"
+            ],
+            "generic": [
+                "Indemnify contributors against claims"
+            ],
+            "name": "Indemnification of contributors",
+            "verbatim": "You agree to indemnify, hold harmless and defend Adobe Systems Incorporated from and against any loss, damage, claims or lawsuits, including attorney's fees that arise or result from your use or distribution of the source code.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Adobe-2006"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of Adobe's name for endorsement",
+            "verbatim": "The name \"Adobe Systems Incorporated\" must not be used to endorse or promote products derived from the source code without prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

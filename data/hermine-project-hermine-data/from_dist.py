@@ -45,12 +45,12 @@ for obligation in obligations:
     licenses[spdx_id]["obligations"].append(obligation)
 
 for spdx_id, license_fields in licenses.items():
-    file = open("./licenses/" + spdx_id + ".json", "w")
-    json.dump(license_fields, file, indent=4)
+    file = open("./licenses/" + spdx_id + ".json", "w", encoding="utf8")
+    json.dump(license_fields, file, indent=4, ensure_ascii=False)
 
 for generic in generics:
     filename = unicodedata.normalize("NFKD", generic["name"])
     filename = re.sub(r"[^\w\s-]", "", filename).strip().lower()
     filename = re.sub(r"[-\s]+", "-", filename)
-    file = open("./generics/" + filename + ".json", "w")
-    json.dump(generic, file, indent=2)
+    file = open("./generics/" + filename + ".json", "w", encoding="utf8")
+    json.dump(generic, file, indent=4, ensure_ascii=False)

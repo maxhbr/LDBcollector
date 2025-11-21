@@ -1,0 +1,61 @@
+{
+    "spdx_id": "BSD-3-Clause-Open-MPI",
+    "long_name": "BSD 3-Clause Open MPI variant",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://www.open-mpi.org/community/license.php",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "BSD-3-Clause-Open-MPI"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-3-Clause-Open-MPI"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce license and legal mentions in documentation",
+            "verbatim": "- Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer listed in this license in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-3-Clause-Open-MPI"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "Do not use project or contributor names for endorsement or promotion.",
+            "verbatim": "- Neither the name of the copyright holders nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

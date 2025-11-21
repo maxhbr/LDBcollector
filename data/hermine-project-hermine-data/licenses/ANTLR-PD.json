@@ -1,0 +1,48 @@
+{
+    "spdx_id": "ANTLR-PD",
+    "long_name": "ANTLR Software Rights Notice",
+    "steward": "",
+    "copyleft": "None",
+    "url": "http://www.antlr2.org/license.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Absent",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "ANTLR-PD"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Keep headers intact in source code",
+            "verbatim": "In addition, we ask that the headers remain intact in our source code.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "ANTLR-PD"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Acknowledgment in the product documentation",
+            "verbatim": "However, we do ask that credit is given to us for developing ANTLR. By \"credit\", we mean that if you use ANTLR or incorporate any source code into one of your programs (commercial product, research project, or otherwise) that you acknowledge this fact somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice tool with the output, please mention that you developed it using ANTLR.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

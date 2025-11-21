@@ -1,0 +1,100 @@
+{
+    "spdx_id": "GFDL-1.3-or-later",
+    "long_name": "GNU Free Documentation License v1.3 or later",
+    "steward": "",
+    "copyleft": "Strong",
+    "url": "https://www.gnu.org/licenses/fdl-1.3.txt",
+    "osi_approved": false,
+    "fsf_approved": true,
+    "foss": "No",
+    "patent_grant": null,
+    "ethical_clause": null,
+    "non_commercial": null,
+    "non_tivoisation": null,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "[Content license]",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "GFDL-1.3-or-later"
+            ],
+            "generic": [
+                "Non Tivoization"
+            ],
+            "name": "Non Tivoization",
+            "verbatim": "You may not use technical measures to obstruct or control the reading or further copying of the copies you make or distribute.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "GFDL-1.3-or-later"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "You may copy and distribute the Document in any medium, either commercially or noncommercially, provided that this License, the copyright notices, and the license notice saying this License applies to the Document are reproduced in all copies, and that you add no other conditions whatsoever to those of this License",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "GFDL-1.3-or-later"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce license and legal mentions in documentation",
+            "verbatim": "You may copy and distribute the Document in any medium, either commercially or noncommercially, provided that this License, the copyright notices, and the license notice saying this License applies to the Document are reproduced in all copies, and that you add no other conditions whatsoever to those of this License",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "GFDL-1.3-or-later"
+            ],
+            "generic": [
+                "Do not restrict the rights of the license"
+            ],
+            "name": "Do not restrict the rights of the license",
+            "verbatim": "You may copy and distribute the Document in any medium, either commercially or noncommercially, provided that this License, the copyright notices, and the license notice saying this License applies to the Document are reproduced in all copies, and that you add no other conditions whatsoever to those of this License.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "GFDL-1.3-or-later"
+            ],
+            "generic": [
+                "Strong Copyleft"
+            ],
+            "name": "Strong copyleft",
+            "verbatim": "4. MODIFICATIONS  You may copy and distribute a Modified Version of the Document under the conditions of sections 2 and 3 above, provided that you release the Modified Version under precisely this License, with the Modified Version filling the role of the Document, thus licensing distribution and modification of the Modified Version to whoever possesses a copy of it. In addition, you must do these things in the Modified Version:",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "GFDL-1.3-or-later"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of name for endorsement",
+            "verbatim": "The author(s) and publisher(s) of the Document do not by this License give permission to use their names for publicity for or to assert or imply endorsement of any Modified Version.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

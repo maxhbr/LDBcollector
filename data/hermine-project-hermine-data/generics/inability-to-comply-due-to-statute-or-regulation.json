@@ -1,6 +1,6 @@
 {
-  "name": "Inability to Comply Due to Statute or Regulation",
-  "description": "If you can't comply to all of the obligations of the license due to statute, judicial order, or regulation, you must describe the reasons for this impossibility and how you dealt with it.",
-  "metacategory": "IPManagement",
-  "passivity": "Active"
+    "name": "Inability to Comply Due to Statute or Regulation",
+    "description": "If you can't comply to all of the obligations of the license due to statute, judicial order, or regulation, you must describe the reasons for this impossibility and how you dealt with it.",
+    "metacategory": "IPManagement",
+    "passivity": "Active"
 }

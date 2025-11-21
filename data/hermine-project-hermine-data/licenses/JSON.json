@@ -1,0 +1,59 @@
+{
+    "spdx_id": "JSON",
+    "long_name": "JSON License",
+    "steward": "",
+    "copyleft": "None",
+    "url": "http://www.json.org/license.html",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "No",
+    "patent_grant": false,
+    "ethical_clause": true,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "JSON"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "JSON"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Licence dans la documentation",
+            "verbatim": "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "JSON"
+            ],
+            "generic": null,
+            "name": "Don't be evil",
+            "verbatim": "The Software shall be used for Good, not Evil.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

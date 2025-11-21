@@ -1,11 +1,7 @@
 {
     "spdx_id": "LGPL-3.0-or-later",
     "long_name": "GNU Lesser General Public License v3.0 or later",
-    "license_version": "3.0",
-    "radical": "LGPL",
-    "autoupgrade": true,
     "steward": "Free Software Foundation, Inc.",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "https://www.gnu.org/licenses/lgpl-3.0-standalone.html",
     "osi_approved": true,
@@ -15,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": true,
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [
@@ -28,6 +27,19 @@
             ],
             "name": "Providing CSC to end user",
             "verbatim": "[GPL] 6. Conveying Non-Source Forms.\r\n\r\nYou may convey a covered work in object code form under the terms of sections 4 and 5, provided that you also convey the machine-readable Corresponding Source under the terms of this License, in one of these ways:\r\n\r\n    a) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by the Corresponding Source fixed on a durable physical medium customarily used for software interchange.\r\n    b) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by a written offer, valid for at least three years and valid for as long as you offer spare parts or customer support for that product model, to give anyone who possesses the object code either (1) a copy of the Corresponding Source for all the software in the product that is covered by this License, on a durable physical medium customarily used for software interchange, for a price no more than your reasonable cost of physically performing this conveying of source, or (2) access to copy the Corresponding Source from a network server at no charge.\r\n    c) Convey individual copies of the object code with a copy of the written offer to provide the Corresponding Source. This alternative is allowed only occasionally and noncommercially, and only if you received the object code with such an offer, in accord with subsection 6b.\r\n    d) Convey the object code by offering access from a designated place (gratis or for a charge), and offer equivalent access to the Corresponding Source in the same way through the same place at no further charge. You need not require recipients to copy the Corresponding Source along with the object code. If the place to copy the object code is a network server, the Corresponding Source may be on a different server (operated by you or a third party) that supports equivalent copying facilities, provided you maintain clear directions next to the object code saying where to find the Corresponding Source. Regardless of what server hosts the Corresponding Source, you remain obligated to ensure that it is available for as long as needed to satisfy these requirements.\r\n    e) Convey the object code using peer-to-peer transmission, provided you inform other peers where the object code and Corresponding Source of the work are being offered to the general public at no charge under subsection 6d.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Licence and acknowledgement in documentation",
+            "verbatim": "[LGPL] 3. Object Code Incorporating Material from Library Header Files.\r\n\r\nThe object code form of an Application may incorporate material from a header file that is part of the Library. You may convey such object code under terms of your choice, provided that, if the incorporated material is not limited to numerical parameters, data structure layouts and accessors, or small macros, inline functions and templates (ten or fewer lines in length), you do both of the following:\r\n\r\n    a) Give prominent notice with each copy of the object code that the Library is used in it and that the Library and its use are covered by this License.\r\n    b) Accompany the object code with a copy of the GNU GPL and this license document.\r\n[LGPL] 4. Combined Works.\r\n[...]\r\na) Give prominent notice with each copy of the Combined Work that the Library is used in it and that the Library and its use are covered by this License.\r\nb) Accompany the Combined Work with a copy of the GNU GPL and this license document.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
@@ -50,19 +62,6 @@
                 "LGPL-3.0-or-later"
             ],
             "generic": [
-                "Reproduce license and legal mentions in documentation"
-            ],
-            "name": "Licence and acknowledgement in documentation",
-            "verbatim": "[LGPL] 3. Object Code Incorporating Material from Library Header Files.\r\n\r\nThe object code form of an Application may incorporate material from a header file that is part of the Library. You may convey such object code under terms of your choice, provided that, if the incorporated material is not limited to numerical parameters, data structure layouts and accessors, or small macros, inline functions and templates (ten or fewer lines in length), you do both of the following:\r\n\r\n    a) Give prominent notice with each copy of the object code that the Library is used in it and that the Library and its use are covered by this License.\r\n    b) Accompany the object code with a copy of the GNU GPL and this license document.\r\n[LGPL] 4. Combined Works.\r\n[...]\r\na) Give prominent notice with each copy of the Combined Work that the Library is used in it and that the Library and its use are covered by this License.\r\nb) Accompany the Combined Work with a copy of the GNU GPL and this license document.",
-            "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
-        },
-        {
-            "license": [
-                "LGPL-3.0-or-later"
-            ],
-            "generic": [
                 "Preserve legal mentions in source code"
             ],
             "name": "License and notices in source code",
@@ -79,7 +78,7 @@
                 "Track and mention modifications in the source code"
             ],
             "name": "Marking modifications",
-            "verbatim": "[GPL]5. a) The work must carry prominent notices stating that you modified it, and giving a relevant date.\r\nb) The work must carry prominent notices stating that it is released under this License and any conditions added under section 7. This requirement modifies the requirement in section 4 to \u201ckeep intact all notices\u201d.",
+            "verbatim": "[GPL]5. a) The work must carry prominent notices stating that you modified it, and giving a relevant date.\r\nb) The work must carry prominent notices stating that it is released under this License and any conditions added under section 7. This requirement modifies the requirement in section 4 to “keep intact all notices”.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "Altered"
@@ -92,7 +91,7 @@
                 "Weak Copyleft"
             ],
             "name": "Weak copyleft - compatible with (A)GPL-3.0",
-            "verbatim": "[GPL]5. c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.\r\n[...] A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an \u201caggregate\u201d if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation's users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.\r\n[GPL]13. Use with the GNU Affero General Public License.\r\n\r\nNotwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.\r\n\r\n\r\n[LGPL] \r\n4. d) Do one of the following:\r\n\r\n    0) Convey the Minimal Corresponding Source under the terms of this License, and the Corresponding Application Code in a form suitable for, and under terms that permit, the user to recombine or relink the Application with a modified version of the Linked Version to produce a modified Combined Work, in the manner specified by section 6 of the GNU GPL for conveying Corresponding Source.\r\n    1) Use a suitable shared library mechanism for linking with the Library. A suitable mechanism is one that (a) uses at run time a copy of the Library already present on the user's computer system, and (b) will operate properly with a modified version of the Library that is interface-compatible with the Linked Version.\r\n\r\ne) Provide Installation Information, but only if you would otherwise be required to provide such information under section 6 of the GNU GPL, and only to the extent that such information is necessary to install and execute a modified version of the Combined Work produced by recombining or relinking the Application with a modified version of the Linked Version. (If you use option 4d0, the Installation Information must accompany the Minimal Corresponding Source and Corresponding Application Code. If you use option 4d1, you must provide the Installation Information in the manner specified by section 6 of the GNU GPL for conveying Corresponding Source.)\r\n[LGPL] 5. Combined Libraries.\r\n\r\nYou may place library facilities that are a work based on the Library side by side in a single library together with other library facilities that are not Applications and are not covered by this License, and convey such a combined library under terms of your choice, if you do both of the following:\r\n\r\n    a) Accompany the combined library with a copy of the same work based on the Library, uncombined with any other library facilities, conveyed under the terms of this License.\r\n    b) Give prominent notice with the combined library that part of it is a work based on the Library, and explaining where to find the accompanying uncombined form of the same work.",
+            "verbatim": "[GPL]5. c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.\r\n[...] A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an “aggregate” if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation's users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.\r\n[GPL]13. Use with the GNU Affero General Public License.\r\n\r\nNotwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.\r\n\r\n\r\n[LGPL] \r\n4. d) Do one of the following:\r\n\r\n    0) Convey the Minimal Corresponding Source under the terms of this License, and the Corresponding Application Code in a form suitable for, and under terms that permit, the user to recombine or relink the Application with a modified version of the Linked Version to produce a modified Combined Work, in the manner specified by section 6 of the GNU GPL for conveying Corresponding Source.\r\n    1) Use a suitable shared library mechanism for linking with the Library. A suitable mechanism is one that (a) uses at run time a copy of the Library already present on the user's computer system, and (b) will operate properly with a modified version of the Library that is interface-compatible with the Linked Version.\r\n\r\ne) Provide Installation Information, but only if you would otherwise be required to provide such information under section 6 of the GNU GPL, and only to the extent that such information is necessary to install and execute a modified version of the Combined Work produced by recombining or relinking the Application with a modified version of the Linked Version. (If you use option 4d0, the Installation Information must accompany the Minimal Corresponding Source and Corresponding Application Code. If you use option 4d1, you must provide the Installation Information in the manner specified by section 6 of the GNU GPL for conveying Corresponding Source.)\r\n[LGPL] 5. Combined Libraries.\r\n\r\nYou may place library facilities that are a work based on the Library side by side in a single library together with other library facilities that are not Applications and are not covered by this License, and convey such a combined library under terms of your choice, if you do both of the following:\r\n\r\n    a) Accompany the combined library with a copy of the same work based on the Library, uncombined with any other library facilities, conveyed under the terms of this License.\r\n    b) Give prominent notice with the combined library that part of it is a work based on the Library, and explaining where to find the accompanying uncombined form of the same work.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"

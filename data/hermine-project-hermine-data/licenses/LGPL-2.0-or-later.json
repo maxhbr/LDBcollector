@@ -1,11 +1,7 @@
 {
     "spdx_id": "LGPL-2.0-or-later",
     "long_name": "GNU Library General Public License v2 or later",
-    "license_version": "2.0-or-later",
-    "radical": "LGPL",
-    "autoupgrade": true,
     "steward": "Free Software Foundation, Inc.",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html",
     "osi_approved": true,
@@ -15,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [

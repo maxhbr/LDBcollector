@@ -1,0 +1,48 @@
+{
+    "spdx_id": "TCP-wrappers",
+    "long_name": "TCP Wrappers License",
+    "steward": "",
+    "copyleft": "None",
+    "url": "http://rc.quest.com/topics/openssh/license.php#tcpwrappers",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "TCP-wrappers"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "Redistribution and use in source and binary forms, with or without modification, are permitted provided that this entire copyright notice is duplicated in all such copies.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "TCP-wrappers"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce license and legal mentions in documentation",
+            "verbatim": "Redistribution and use in source and binary forms, with or without modification, are permitted provided that this entire copyright notice is duplicated in all such copies.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

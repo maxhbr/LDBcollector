@@ -1,6 +1,6 @@
 {
-  "name": "License Agreement must exclude other contributors for additionnal terms",
-  "description": "State in the licence agreement that other contributors are not bound by the extra service offered.",
-  "metacategory": "LicenseAgreement",
-  "passivity": "Active"
+    "name": "License Agreement must exclude other contributors for additionnal terms",
+    "description": "State in the licence agreement that other contributors are not bound by the extra service offered.",
+    "metacategory": "LicenseAgreement",
+    "passivity": "Active"
 }

@@ -1,0 +1,87 @@
+{
+    "spdx_id": "Artistic-2.0",
+    "long_name": "Artistic License 2.0",
+    "steward": "",
+    "copyleft": "Weak",
+    "url": "http://www.perlfoundation.org/artistic_license_2_0",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": true,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Artistic-2.0"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user or specific actions",
+            "verbatim": "Distribution of Compiled Forms of the Standard Version or Modified Versions without the Source\r\n\r\n    (5) You may Distribute Compiled forms of the Standard Version without the Source, provided that you include complete instructions on how to get the Source of the Standard Version. Such instructions must be valid at the time of your distribution. If these instructions, at any time while you are carrying out such distribution, become invalid, you must provide new instructions on demand or cease further distribution. If you provide valid instructions or cease distribution within thirty days after you become aware that the instructions are invalid, then you do not forfeit any of your rights under this license.\r\n    (6) You may Distribute a Modified Version in Compiled form without the Source, provided that you comply with Section 4 with respect to the Source of the Modified Version.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Artistic-2.0"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "(2) You may Distribute verbatim copies of the Source form of the Standard Version of this Package in any medium without restriction, either gratis or for a Distributor Fee, provided that you duplicate all of the original copyright notices and associated disclaimers.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Artistic-2.0"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Marking modifications in source code",
+            "verbatim": "(4) You may Distribute your Modified Version as Source (either gratis or for a Distributor Fee, and with or without a Compiled form of the Modified Version) provided that you clearly document how it differs from the Standard Version, including, but not limited to, documenting any non-standard features, executables, or modules,",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "Artistic-2.0"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak Copyleft or renaming",
+            "verbatim": "provided that you do at least ONE of the following:\r\n\r\n    (a) make the Modified Version available to the Copyright Holder of the Standard Version, under the Original License, so that the Copyright Holder may include your modifications in the Standard Version.\r\n    (b) ensure that installation of your Modified Version does not prevent the user installing or running the Standard Version. In addition, the Modified Version must bear a name that is different from the name of the Standard Version.\r\n    (c) allow anyone who receives a copy of the Modified Version to make the Source form of the Modified Version available to others under\r\n        (i) the Original License or\r\n        (ii) a license that permits the licensee to freely copy, modify and redistribute the Modified Version using the same licensing terms that apply to the copy that the licensee received, and requires that the Source form of the Modified Version, and of any works derived from it, be made freely available in that license fees are prohibited but Distributor Fees are allowed.\r\n\r\n[...]\r\nAggregating or Linking the Package\r\n\r\n    (7) You may aggregate the Package (either the Standard Version or Modified Version) with other packages and Distribute the resulting aggregation provided that you do not charge a licensing fee for the Package. Distributor Fees are permitted, and licensing fees for other components in the aggregation are permitted. The terms of this license apply to the use and Distribution of the Standard or Modified Versions as included in the aggregation.\r\n    (8) You are permitted to link Modified and Standard Versions with other works, to embed the Package in a larger work of your own, or to build stand-alone binary or bytecode versions of applications that include the Package, and Distribute the result without restriction, provided the result does not expose a direct interface to the Package.\r\n\r\nItems That are Not Considered Part of a Modified Version\r\n\r\n    (9) Works (including, but not limited to, modules and scripts) that merely extend or make use of the Package, do not, by themselves, cause the Package to be a Modified Version. In addition, such works are not considered parts of the Package itself, and are not subject to the terms of this license.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "Artistic-2.0"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "Respect trademarks",
+            "verbatim": "(12) This license does not grant you the right to use any trademark, service mark, tradename, or logo of the Copyright Holder.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

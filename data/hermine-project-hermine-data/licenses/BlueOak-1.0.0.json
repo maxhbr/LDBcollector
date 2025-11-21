@@ -1,0 +1,44 @@
+{
+    "spdx_id": "BlueOak-1.0.0",
+    "long_name": "Blue Oak Model License 1.0.0",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://blueoakcouncil.org/license/1.0.0",
+    "osi_approved": true,
+    "fsf_approved": null,
+    "foss": "Yes-Auto",
+    "patent_grant": true,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "None",
+    "venue_choice": "None",
+    "comment": "",
+    "verbatim": "# Blue Oak Model License\r\n\r\nVersion 1.0.0\r\n\r\n## Purpose\r\n\r\nThis license gives everyone as much permission to work with this software as possible, while protecting contributors from liability.\r\n\r\n## Acceptance\r\n\r\nIn order to receive this license, you must agree to its rules. The rules of this license are both obligations under that agreement and conditions to your license. You must not do anything with this software that triggers a rule that you cannot or will not follow.\r\n\r\n## Copyright\r\n\r\nEach contributor licenses you to do everything with this software that would otherwise infringe that contributor's copyright in it.\r\n\r\n## Notices\r\n\r\nYou must ensure that everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license or a link to <https://blueoakcouncil.org/license/1.0.0>.\r\n\r\n## Excuse\r\n\r\nIf anyone notifies you in writing that you have not complied with [Notices](#notices), you can keep your license by taking all practical steps to comply within 30 days after the notice. If you do not do so, your license ends immediately.\r\n\r\n## Patent\r\n\r\nEach contributor licenses you to do everything with this software that would otherwise infringe any patent claims they can license or become able to license.\r\n\r\n## Reliability\r\n\r\nNo contributor can revoke this license.\r\n\r\n## No Liability\r\n\r\n***As far as the law allows, this software comes as is, without any warranty or condition, and no contributor will be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***",
+    "obligations": [
+        {
+            "license": [
+                "BlueOak-1.0.0"
+            ],
+            "generic": null,
+            "name": "Reproduce license",
+            "verbatim": "## Notices\r\n\r\nYou must ensure that everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license or a link to <https://blueoakcouncil.org/license/1.0.0>.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BlueOak-1.0.0"
+            ],
+            "generic": null,
+            "name": "Patent Peace",
+            "verbatim": "## Patent\r\nEach contributor licenses you to do everything with this software that would otherwise infringe any patent claims they can license or become able to license.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

@@ -1,11 +1,7 @@
 {
     "spdx_id": "LGPL-2.1-only",
     "long_name": "GNU Lesser General Public License v2.1 only",
-    "license_version": "2.1",
-    "radical": "LGPL",
-    "autoupgrade": false,
     "steward": "Free Software Foundation, Inc.",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html",
     "osi_approved": true,
@@ -15,8 +11,11 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
-    "comment": "Traiter la question du patent grant implicite",
+    "venue_choice": "",
+    "comment": "implicit patent grant",
     "verbatim": "",
     "obligations": [
         {

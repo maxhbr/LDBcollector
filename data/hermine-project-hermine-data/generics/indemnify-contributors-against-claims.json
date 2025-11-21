@@ -1,6 +1,6 @@
 {
-  "name": "Indemnify contributors against claims",
-  "description": "In case of a claim against a contributor as a result of the use or distribution of the product,  you agree to defended and indemnify this contributor.",
-  "metacategory": "LicenseAgreement",
-  "passivity": "Active"
+    "name": "Indemnify contributors against claims",
+    "description": "In case of a claim against a contributor as a result of the use or distribution of the product,  you agree to defended and indemnify this contributor.",
+    "metacategory": "LicenseAgreement",
+    "passivity": "Active"
 }

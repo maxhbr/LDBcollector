@@ -1,11 +1,7 @@
 {
     "spdx_id": "Zlib",
     "long_name": "zlib License",
-    "license_version": "",
-    "radical": "Zlib",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://www.zlib.net/zlib_license.html",
     "osi_approved": true,
@@ -15,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [

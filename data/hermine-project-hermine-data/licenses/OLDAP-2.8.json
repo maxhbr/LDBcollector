@@ -1,11 +1,7 @@
 {
     "spdx_id": "OLDAP-2.8",
     "long_name": "Open LDAP Public License v2.8",
-    "license_version": "2.8",
-    "radical": "OLDAP",
-    "autoupgrade": true,
     "steward": "The OpenLDAP Foundation",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://www.openldap.org/software/release/license.html",
     "osi_approved": false,
@@ -15,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [

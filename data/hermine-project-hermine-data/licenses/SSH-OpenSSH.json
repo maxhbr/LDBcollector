@@ -1,0 +1,48 @@
+{
+    "spdx_id": "SSH-OpenSSH",
+    "long_name": "SSH OpenSSH license",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/LICENCE#L10",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "SSH-OpenSSH"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Track and mention modifications in the source code",
+            "verbatim": "Any derived versions of this software must be clearly marked as such,",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "SSH-OpenSSH"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "Respect trademarks",
+            "verbatim": "and if the derived work is incompatible with the protocol description in the RFC file, it must be called by a name other than \"ssh\" or \"Secure Shell\".",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "spdx_id": "BSD-2-Clause-Views",
+    "long_name": "BSD 2-Clause with views sentence",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://spdx.org/licenses/BSD-2-Clause-Views.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "Copyright (c) <year> <owner> All rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n\r\n    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\r\n    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+    "obligations": [
+        {
+            "license": [
+                "BSD-2-Clause-Views"
+            ],
+            "generic": null,
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-2-Clause-Views"
+            ],
+            "generic": null,
+            "name": "Reproduce license and legal mentions in documentation",
+            "verbatim": "2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

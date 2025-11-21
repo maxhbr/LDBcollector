@@ -1,11 +1,7 @@
 {
     "spdx_id": "MPL-2.0",
     "long_name": "Mozilla Public License 2.0",
-    "license_version": "2.0",
-    "radical": "MPL",
-    "autoupgrade": true,
     "steward": "Mozilla Foundation",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "http://www.mozilla.org/MPL/2.0/",
     "osi_approved": true,
@@ -15,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "in the courts of a jurisdiction where the defendant maintains its principal place of business and such litigation shall be governed by laws of that jurisdiction",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [
@@ -67,7 +66,7 @@
             ],
             "name": "Don't limit rights from upstream",
             "verbatim": "3.2. Distribution of Executable Form \r\n(b) You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients' rights in the Source Code Form under this License.",
-            "passivity": "Active",
+            "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
@@ -92,7 +91,7 @@
                 "Weak Copyleft"
             ],
             "name": "Weak Copyleft",
-            "verbatim": "3.1. Distribution of Source Form\r\n\r\nAll distribution of Covered Software in Source Code Form, including any Modifications that You create or to which You contribute, must be under the terms of this License. [...] You may not attempt to alter or restrict the recipients\u2019 rights in the Source Code Form.\r\n\r\n3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\n[...]\r\n    You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients\u2019 rights in the Source Code Form under this License.",
+            "verbatim": "3.1. Distribution of Source Form\r\n\r\nAll distribution of Covered Software in Source Code Form, including any Modifications that You create or to which You contribute, must be under the terms of this License. [...] You may not attempt to alter or restrict the recipients’ rights in the Source Code Form.\r\n\r\n3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\n[...]\r\n    You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients’ rights in the Source Code Form under this License.",
             "passivity": "",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"

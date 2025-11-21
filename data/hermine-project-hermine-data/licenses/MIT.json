@@ -1,11 +1,7 @@
 {
     "spdx_id": "MIT",
     "long_name": "MIT License",
-    "license_version": "",
-    "radical": "MIT",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://opensource.org/licenses/MIT",
     "osi_approved": true,
@@ -15,7 +11,10 @@
     "ethical_clause": false,
     "non_commercial": false,
     "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
     "law_choice": "",
+    "venue_choice": "",
     "comment": "",
     "verbatim": "",
     "obligations": [

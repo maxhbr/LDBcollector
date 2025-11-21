@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hermine Data - Licences & compliance actions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="hero is-dark is-small is-bold">
+      <div class="hero-head">
+        <nav
+          class="navbar is-primary is-spaced"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="../index.html">
+                <img
+                  src="../img/logo_hermine_white.png"
+                  alt="Logo Hermine"
+                  width="80"
+                  height="20"
+                />
+              </a>
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarTopMain"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="navbar-menu" id="navbarTopMain">
+              <div class="navbar-end">
+                <a href="../index.html" class="navbar-item has-text-weight-semibold">
+                  <span>Licenses</span>
+                </a>
+                <a
+                  href="../comp_actions.html"
+                  class="navbar-item has-text-weight-semibold"
+                  >Compliance actions</a
+                >
+                <a
+                  href="https://gitlab.com/hermine-project/hermine-data/"
+                  class="navbar-item has-text-weight-semibold"
+                  >Git repo of the data</a
+                >
+                <a
+                  href="https://docs.hermine-foss.org/reference_data.html"
+                  class="navbar-item has-text-weight-semibold"
+                  >Hermine documentation</a
+                >
+                <div class="navbar-item">
+                  <a
+                    href="https://hermine-foss.org/"
+                    class="navbar-item has-text-weight-semibold"
+                    >About Hermine</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Hermine Data</h1>
+          <h2 class="subtitle">
+            Licences analyzed and decomposed in standard compliance actions by the Hermine
+            community
+          </h2>
+        </div>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container">
+        <div class="content">###HTMLCONTENT###</div>
+      </div>
+    </section>
+    <footer class="hero is-small is-dark">
+      <div class="hero-body has-text-grey-light">
+        <div class="container has-text-centered">
+          Made with jQuery &bullet; jQuery fancyTable &bullet; Bulma CSS – See
+          <a href="../about.html" class="has-text-grey-light">Legal notices</a>.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0,
+    );
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    }
+  });
+</script>
