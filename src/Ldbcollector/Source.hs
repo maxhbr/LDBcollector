@@ -26,6 +26,7 @@ import Ldbcollector.Source.ORT
 import Ldbcollector.Source.OSADL
 import Ldbcollector.Source.OSI
 import Ldbcollector.Source.OSLC
+import Ldbcollector.Source.OpenSourceOrg
 import Ldbcollector.Source.SPDX
 import Ldbcollector.Source.Scancode
 import Ldbcollector.Source.TLDR
@@ -37,6 +38,7 @@ applySources curation = do
   let sources =
         [ applySource (SPDXData "./data/spdx-license-list-data/json/details/"),
           applySource OSI,
+          applySource (OpenSourceOrgLicenses "./data/OpenSourceOrg-licenses.json"),
           applySource (GoogleLicensePolicy "./data/google-licensecheck.license_type.go.json"),
           applySource (FedoraLicenseData "./data/fedora-legal-fedora-license-data.jsons"),
           applySource (BlueOakCouncilLicenseList "./data/blueoakcouncil/blue-oak-council-license-list.json"),

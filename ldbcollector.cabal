@@ -57,6 +57,7 @@ library
       Ldbcollector.Source.ORT
       Ldbcollector.Source.OSADL
       Ldbcollector.Source.OSI
+      Ldbcollector.Source.OpenSourceOrg
       Ldbcollector.Source.OSLC
       Ldbcollector.Source.Scancode
       Ldbcollector.Source.SPDX
