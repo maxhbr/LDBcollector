@@ -3,11 +3,12 @@
         {
             "@id": "http://spdx.org/licenses/URT-RLE",
             "rdfs:seeAlso": [
-                "https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/other/rletopnm.c",
-                "https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/other/pnmtorle.c"
+                "https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/other/pnmtorle.c",
+                "https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/other/rletopnm.c"
             ],
             "spdx:standardLicenseTemplate": "This software is copyrighted as noted below. It may be freely copied, modified, and redistributed, provided that the copyright notice is preserved on all copies.\n\nThere is no warranty or other guarantee of fitness for this software, it is provided solely \"as is\". Bug reports or fixes may be sent to the author, who may or may not act on them as he desires.\n\nYou may not include this software in a program or other software product without supplying the source, or without informing the end-user that the source is available for no extra charge.\n\nIf you modify this software, you should include a notice giving the name of the person performing the modification, the date of modification, and the reason for such modification.\n\n",
             "@type": "spdx:ListedLicense",
+            "spdx:licenseText": " * This software is copyrighted as noted below.  It may be freely copied,\n * modified, and redistributed, provided that the copyright notice is\n * preserved on all copies.\n *\n * There is no warranty or other guarantee of fitness for this software,\n * it is provided solely \"as is\".  Bug reports or fixes may be sent\n * to the author, who may or may not act on them as he desires.\n *\n * You may not include this software in a program or other software product\n * without supplying the source, or without informing the end-user that the\n * source is available for no extra charge.\n *\n * If you modify this software, you should include a notice giving the\n * name of the person performing the modification, the date of modification,\n * and the reason for such modification.\n",
             "spdx:crossRef": [
                 {
                     "@id": "_:b0"
@@ -21,23 +22,14 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:licenseText": " * This software is copyrighted as noted below.  It may be freely copied,\n * modified, and redistributed, provided that the copyright notice is\n * preserved on all copies.\n *\n * There is no warranty or other guarantee of fitness for this software,\n * it is provided solely \"as is\".  Bug reports or fixes may be sent\n * to the author, who may or may not act on them as he desires.\n *\n * You may not include this software in a program or other software product\n * without supplying the source, or without informing the end-user that the\n * source is available for no extra charge.\n *\n * If you modify this software, you should include a notice giving the\n * name of the person performing the modification, the date of modification,\n * and the reason for such modification.\n",
-            "spdx:name": "Utah Raster Toolkit Run Length Encoded License",
-            "spdx:licenseId": "URT-RLE",
             "spdx:isOsiApproved": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            }
+            },
+            "spdx:name": "Utah Raster Toolkit Run Length Encoded License"
         },
         {
             "@id": "_:b0",
-            "spdx:timestamp": "2024-04-17T05:13:56Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:url": "https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/other/pnmtorle.c",
-            "spdx:match": "false",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -47,20 +39,20 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:isLive": {
-                "@value": "true",
+                "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:b1",
-            "spdx:timestamp": "2024-04-17T05:13:55Z",
+            "spdx:url": "https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/other/rletopnm.c",
+            "spdx:timestamp": "2025-11-19T21:03:34Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
-            "spdx:url": "https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/other/rletopnm.c",
-            "spdx:match": "false",
+            "spdx:match": "N/A",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:b1",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -70,9 +62,16 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:isLive": {
-                "@value": "true",
+                "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
+            "spdx:url": "https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/other/pnmtorle.c",
+            "spdx:timestamp": "2025-11-19T21:03:34Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
             "@type": "spdx:CrossRef"
         }
     ],

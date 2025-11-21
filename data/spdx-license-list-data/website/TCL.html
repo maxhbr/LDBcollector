@@ -142,12 +142,12 @@
           <div style="margin-left: 20px;">
             <ul>
              <li>
-               <a href="http://www.tcl.tk/software/tcltk/license.html" rel="rdfs:seeAlso" isValid=true isLive=true isWayBackLink=false match=false timestamp=2024-04-17T05:05:50Z>http://www.tcl.tk/software/tcltk/license.html</a>
-               <!--Tentative way of displaying information <p>isValid: true, isLive: true, isWayBackLink: false, match: false, timestamp: 2024-04-17T05:05:50Z</p> -->
+               <a href="http://www.tcl.tk/software/tcltk/license.html" rel="rdfs:seeAlso" isValid=true isLive=true isWayBackLink=false match=true timestamp=2025-11-19T21:02:57Z>http://www.tcl.tk/software/tcltk/license.html</a>
+               <!--Tentative way of displaying information <p>isValid: true, isLive: true, isWayBackLink: false, match: true, timestamp: 2025-11-19T21:02:57Z</p> -->
              </li>
              <li>
-               <a href="https://fedoraproject.org/wiki/Licensing/TCL" rel="rdfs:seeAlso" isValid=true isLive=true isWayBackLink=false match=false timestamp=2024-04-17T05:05:49Z>https://fedoraproject.org/wiki/Licensing/TCL</a>
-               <!--Tentative way of displaying information <p>isValid: true, isLive: true, isWayBackLink: false, match: false, timestamp: 2024-04-17T05:05:49Z</p> -->
+               <a href="https://fedoraproject.org/wiki/Licensing/TCL" rel="rdfs:seeAlso" isValid=true isLive=true isWayBackLink=false match=true timestamp=2025-11-19T21:02:57Z>https://fedoraproject.org/wiki/Licensing/TCL</a>
+               <!--Tentative way of displaying information <p>isValid: true, isLive: true, isWayBackLink: false, match: true, timestamp: 2025-11-19T21:02:57Z</p> -->
              </li>
            </ul>
           </div>
@@ -158,14 +158,26 @@
           <p style="margin-left: 20px;">None</p>
 
       <h2 id="licenseText">Text</h2>
+      
+      <blockquote cite="https://spdx.github.io/spdx-spec/v2.3/license-matching-guidelines-and-templates/">
+          <div style="border: 2px solid grey; padding: 8px">
+		      Text in italicized blue is omittable (see <a href="https://spdx.github.io/spdx-spec/v2.3/license-matching-guidelines-and-templates/#b35-guideline-omittable-text">Matching Guidelines B.3.5</a>).
+		      License or exception text will match to the text for the specified identifier if it either includes or excludes this omittable text.
+			  <br/>
+			  <br/>
+			  Text in red is replaceable (see <a href="https://spdx.github.io/spdx-spec/v2.3/license-matching-guidelines-and-templates/#b34-guideline-replaceable-text">Matching Guidelines B.3.4</a>).
+			  License or exception text will match to the text for the specified identifier if it includes a permitted variant of this replaceable text.
+			  The permitted variants can be found in the corresponding regular expression as shown in title text visible by hovering over the red text.
+	      </div>
+	  </blockquote>
 
       <div property="spdx:licenseText" class="license-text">
       
 	  <p>
-         <var class="replaceable-license-text"> 
+         <var class="replaceable-license-text"><span title="can be replaced with the pattern .{0,5000}"> 
             This software is copyrighted by the Regents of the University of California, Sun Microsystems, Inc.,
             Scriptics Corporation, ActiveState Corporation and other parties. 
-	     </var>  
+	     </span></var>  
 		The following terms apply to all
         files associated with the software unless explicitly disclaimed in individual files. 
       </p>
@@ -204,7 +216,7 @@
         
       </div>
       <div property="spdx:standardLicenseTemplate" style="display: none;">
-      &lt;&lt;var;name=&quot;copyright&quot;;original=&quot;This software is copyrighted by the Regents of the University of California, Sun Microsystems, Inc., Scriptics Corporation, ActiveState Corporation and other parties.&quot;;match=&quot;.{0,5000}&quot;&gt;&gt; The following terms apply to all files associated with the software unless explicitly disclaimed in individual files.&#10;&#10;The authors hereby grant permission to use, copy, modify, distribute, and license this software and its documentation for any purpose, provided that existing copyright notices are retained in all copies and that this notice is included verbatim in any distributions. No written agreement, license, or royalty fee is required for any of the authorized uses. Modifications to this software may be copyrighted by their authors and need not follow the licensing terms described here, provided that the new terms are clearly indicated on the first page of each file where they apply.&#10;&#10;IN NO EVENT SHALL THE AUTHORS OR DISTRIBUTORS BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF THIS SOFTWARE, ITS DOCUMENTATION, OR ANY DERIVATIVES THEREOF, EVEN IF THE AUTHORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#10;&#10;THE AUTHORS AND DISTRIBUTORS SPECIFICALLY DISCLAIM ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, AND THE AUTHORS AND DISTRIBUTORS HAVE NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.&#10;&#10;GOVERNMENT USE: If you are acquiring this software on behalf of the U.S. government, the Government shall have only &quot;Restricted Rights&quot; in the software and related documentation as defined in the Federal Acquisition Regulations (FARs) in Clause 52.227.19 (c) (2). If you are acquiring the software on behalf of the Department of Defense, the software shall be classified as &quot;Commercial Computer Software&quot; and the Government shall have only &quot;Restricted Rights&quot; as defined in Clause 252.227-7013 (c) (1) of DFARs. Notwithstanding the foregoing, the authors grant the U.S. Government and others acting in its behalf permission to use and distribute the software in accordance with the terms specified in this license.&#10;&#10;
+      &lt;&lt;var;name&#61;&quot;copyright&quot;;original&#61;&quot;This software is copyrighted by the Regents of the University of California, Sun Microsystems, Inc., Scriptics Corporation, ActiveState Corporation and other parties.&quot;;match&#61;&quot;.{0,5000}&quot;&gt;&gt; The following terms apply to all files associated with the software unless explicitly disclaimed in individual files.&#10;&#10;The authors hereby grant permission to use, copy, modify, distribute, and license this software and its documentation for any purpose, provided that existing copyright notices are retained in all copies and that this notice is included verbatim in any distributions. No written agreement, license, or royalty fee is required for any of the authorized uses. Modifications to this software may be copyrighted by their authors and need not follow the licensing terms described here, provided that the new terms are clearly indicated on the first page of each file where they apply.&#10;&#10;IN NO EVENT SHALL THE AUTHORS OR DISTRIBUTORS BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF THIS SOFTWARE, ITS DOCUMENTATION, OR ANY DERIVATIVES THEREOF, EVEN IF THE AUTHORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#10;&#10;THE AUTHORS AND DISTRIBUTORS SPECIFICALLY DISCLAIM ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, AND THE AUTHORS AND DISTRIBUTORS HAVE NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.&#10;&#10;GOVERNMENT USE: If you are acquiring this software on behalf of the U.S. government, the Government shall have only &quot;Restricted Rights&quot; in the software and related documentation as defined in the Federal Acquisition Regulations (FARs) in Clause 52.227.19 (c) (2). If you are acquiring the software on behalf of the Department of Defense, the software shall be classified as &quot;Commercial Computer Software&quot; and the Government shall have only &quot;Restricted Rights&quot; as defined in Clause 252.227-7013 (c) (1) of DFARs. Notwithstanding the foregoing, the authors grant the U.S. Government and others acting in its behalf permission to use and distribute the software in accordance with the terms specified in this license.&#10;&#10;
       </div>
 
     </div> <!-- /page -->

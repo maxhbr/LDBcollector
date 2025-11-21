@@ -5,32 +5,37 @@
     xmlns:ptr="http://www.w3.org/2009/pointers#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
   <spdx:ListedLicense rdf:about="http://spdx.org/licenses/Knuth-CTAN">
-    <rdfs:seeAlso>https://ctan.org/license/knuth</rdfs:seeAlso>
-    <spdx:isDeprecatedLicenseId rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</spdx:isDeprecatedLicenseId>
-    <spdx:licenseId>Knuth-CTAN</spdx:licenseId>
-    <spdx:name>Knuth CTAN License</spdx:name>
     <spdx:crossRef>
       <spdx:CrossRef>
-        <spdx:timestamp>2024-04-17T05:07:11Z</spdx:timestamp>
-        <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >0</spdx:order>
-        <spdx:url>https://ctan.org/license/knuth</spdx:url>
-        <spdx:match>false</spdx:match>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >false</spdx:isWayBackLink>
         <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
+        <spdx:url>https://ctan.org/license/knuth</spdx:url>
+        <spdx:timestamp>2025-11-19T21:06:14Z</spdx:timestamp>
+        <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >0</spdx:order>
+        <spdx:match>true</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
-    <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</spdx:isOsiApproved>
-    <rdfs:comment>This license is very similar to Wsuipa.</rdfs:comment>
     <spdx:standardLicenseTemplate>This software is copyrighted. Unlimited copying and redistribution of this package and/or its individual files are permitted as long as there are no modifications. Modifications, and redistribution of modifications, are also permitted, but only if the resulting package and/or files are renamed.
 
 </spdx:standardLicenseTemplate>
+    <spdx:name>Knuth CTAN License</spdx:name>
+    <spdx:licenseText>This software is copyrighted. Unlimited copying and redistribution
+of this package and/or its individual files are permitted
+as long as there are no modifications. Modifications, and
+redistribution of modifications, are also permitted, but
+only if the resulting package and/or files are renamed.
+</spdx:licenseText>
+    <spdx:isDeprecatedLicenseId rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</spdx:isDeprecatedLicenseId>
+    <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</spdx:isOsiApproved>
+    <rdfs:seeAlso>https://ctan.org/license/knuth</rdfs:seeAlso>
+    <rdfs:comment>This license is very similar to Wsuipa.</rdfs:comment>
     <spdx:licenseTextHtml>
          &lt;p&gt;
             This software is copyrighted. Unlimited copying and redistribution
@@ -41,11 +46,5 @@
          &lt;/p&gt;
 
       </spdx:licenseTextHtml>
-    <spdx:licenseText>This software is copyrighted. Unlimited copying and redistribution
-of this package and/or its individual files are permitted
-as long as there are no modifications. Modifications, and
-redistribution of modifications, are also permitted, but
-only if the resulting package and/or files are renamed.
-</spdx:licenseText>
   </spdx:ListedLicense>
 </rdf:RDF>

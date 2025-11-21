@@ -1,5 +1,4 @@
 <<var;name="copyright";original="Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.  ";match=".{0,5000}">>
-
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
 Redistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.

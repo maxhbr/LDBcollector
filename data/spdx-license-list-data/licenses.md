@@ -1,11 +1,12 @@
 # License List
-The following licenses have been generated from the license list version 2730e34
+The following licenses have been generated from the license list version 2ffd3ae
 
-## Licenses with Short Idenifiers
+## Licenses with Short Identifiers
 
 | Full Name of License                                                                      | Short Identifier                         | OSI? | FSFLibre? |
 |-------------------------------------------------------------------------------------------|------------------------------------------|------|-----------|
 | BSD Zero Clause License                                                                   | [0BSD][]                                 | Y    |           |
+| 3D Slicer License v1.0                                                                    | [3D-Slicer-1.0][]                        |      |           |
 | Attribution Assurance License                                                             | [AAL][]                                  | Y    |           |
 | Abstyles License                                                                          | [Abstyles][]                             |      |           |
 | AdaCore Doc License                                                                       | [AdaCore-doc][]                          |      |           |
@@ -14,6 +15,7 @@ The following licenses have been generated from the license list version 2730e34
 | Adobe Glyph List License                                                                  | [Adobe-Glyph][]                          |      |           |
 | Adobe Utopia Font License                                                                 | [Adobe-Utopia][]                         |      |           |
 | Amazon Digital Services License                                                           | [ADSL][]                                 |      |           |
+| Advanced Cryptics Dictionary License                                                      | [Advanced-Cryptics-Dictionary][]         |      |           |
 | Academic Free License v1.1                                                                | [AFL-1.1][]                              | Y    | Y         |
 | Academic Free License v1.2                                                                | [AFL-1.2][]                              | Y    | Y         |
 | Academic Free License v2.0                                                                | [AFL-2.0][]                              | Y    | Y         |
@@ -32,6 +34,8 @@ The following licenses have been generated from the license list version 2730e34
 | Academy of Motion Picture Arts and Sciences BSD                                           | [AMPAS][]                                |      |           |
 | ANTLR Software Rights Notice                                                              | [ANTLR-PD][]                             |      |           |
 | ANTLR Software Rights Notice with license fallback                                        | [ANTLR-PD-fallback][]                    |      |           |
+| Any OSI License                                                                           | [any-OSI][]                              |      |           |
+| Any OSI License - Perl Modules                                                            | [any-OSI-perl-modules][]                 |      |           |
 | Apache License 1.0                                                                        | [Apache-1.0][]                           |      | Y         |
 | Apache License 1.1                                                                        | [Apache-1.1][]                           | Y    | Y         |
 | Apache License 2.0                                                                        | [Apache-2.0][]                           | Y    | Y         |
@@ -47,6 +51,8 @@ The following licenses have been generated from the license list version 2730e34
 | Artistic License 1.0 w/clause 8                                                           | [Artistic-1.0-cl8][]                     | Y    |           |
 | Artistic License 1.0 (Perl)                                                               | [Artistic-1.0-Perl][]                    | Y    |           |
 | Artistic License 2.0                                                                      | [Artistic-2.0][]                         | Y    | Y         |
+| Artistic License 1.0 (dist)                                                               | [Artistic-dist][]                        |      |           |
+| Aspell Russian License                                                                    | [Aspell-RU][]                            |      |           |
 | ASWF Digital Assets License version 1.0                                                   | [ASWF-Digital-Assets-1.0][]              |      |           |
 | ASWF Digital Assets License 1.1                                                           | [ASWF-Digital-Assets-1.1][]              |      |           |
 | Baekmuk License                                                                           | [Baekmuk][]                              |      |           |
@@ -61,14 +67,16 @@ The following licenses have been generated from the license list version 2730e34
 | SQLite Blessing                                                                           | [blessing][]                             |      |           |
 | Blue Oak Model License 1.0.0                                                              | [BlueOak-1.0.0][]                        | Y    |           |
 | Boehm-Demers-Weiser GC License                                                            | [Boehm-GC][]                             |      |           |
+| Boehm-Demers-Weiser GC License (without fee)                                              | [Boehm-GC-without-fee][]                 |      |           |
 | Borceux license                                                                           | [Borceux][]                              |      |           |
 | Brian Gladman 2-Clause License                                                            | [Brian-Gladman-2-Clause][]               |      |           |
 | Brian Gladman 3-Clause License                                                            | [Brian-Gladman-3-Clause][]               |      |           |
 | BSD 1-Clause License                                                                      | [BSD-1-Clause][]                         | Y    |           |
 | BSD 2-Clause "Simplified" License                                                         | [BSD-2-Clause][]                         | Y    | Y         |
 | BSD 2-Clause - Ian Darwin variant                                                         | [BSD-2-Clause-Darwin][]                  |      |           |
-| BSD 2-Clause - first lines requirement                                                    | [BSD-2-clause-first-lines][]             |      |           |
+| BSD 2-Clause - first lines requirement                                                    | [BSD-2-Clause-first-lines][]             |      |           |
 | BSD-2-Clause Plus Patent License                                                          | [BSD-2-Clause-Patent][]                  | Y    |           |
+| BSD 2-Clause pkgconf disclaimer variant                                                   | [BSD-2-Clause-pkgconf-disclaimer][]      |      |           |
 | BSD 2-Clause with views sentence                                                          | [BSD-2-Clause-Views][]                   |      |           |
 | BSD 3-Clause "New" or "Revised" License                                                   | [BSD-3-Clause][]                         | Y    | Y         |
 | BSD 3-Clause acpica variant                                                               | [BSD-3-Clause-acpica][]                  |      |           |
@@ -82,8 +90,9 @@ The following licenses have been generated from the license list version 2730e34
 | BSD 3-Clause No Nuclear License                                                           | [BSD-3-Clause-No-Nuclear-License][]      |      |           |
 | BSD 3-Clause No Nuclear License 2014                                                      | [BSD-3-Clause-No-Nuclear-License-2014][] |      |           |
 | BSD 3-Clause No Nuclear Warranty                                                          | [BSD-3-Clause-No-Nuclear-Warranty][]     |      |           |
-| BSD 3-Clause Open MPI variant                                                             | [BSD-3-Clause-Open-MPI][]                |      |           |
+| BSD 3-Clause Open MPI variant                                                             | [BSD-3-Clause-Open-MPI][]                | Y    |           |
 | BSD 3-Clause Sun Microsystems                                                             | [BSD-3-Clause-Sun][]                     |      |           |
+| BSD 3-Clause Tso variant                                                                  | [BSD-3-Clause-Tso][]                     |      |           |
 | BSD 4-Clause "Original" or "Old" License                                                  | [BSD-4-Clause][]                         |      | Y         |
 | BSD 4 Clause Shortened                                                                    | [BSD-4-Clause-Shortened][]               |      |           |
 | BSD-4-Clause (University of California-Specific)                                          | [BSD-4-Clause-UC][]                      |      |           |
@@ -92,12 +101,14 @@ The following licenses have been generated from the license list version 2730e34
 | BSD Advertising Acknowledgement License                                                   | [BSD-Advertising-Acknowledgement][]      |      |           |
 | BSD with Attribution and HPND disclaimer                                                  | [BSD-Attribution-HPND-disclaimer][]      |      |           |
 | BSD-Inferno-Nettverk                                                                      | [BSD-Inferno-Nettverk][]                 |      |           |
+| BSD Mark Modifications License                                                            | [BSD-Mark-Modifications][]               |      |           |
 | BSD Protection License                                                                    | [BSD-Protection][]                       |      |           |
 | BSD Source Code Attribution - beginning of file variant                                   | [BSD-Source-beginning-file][]            |      |           |
 | BSD Source Code Attribution                                                               | [BSD-Source-Code][]                      |      |           |
 | Systemics BSD variant license                                                             | [BSD-Systemics][]                        |      |           |
 | Systemics W3Works BSD variant license                                                     | [BSD-Systemics-W3Works][]                |      |           |
 | Boost Software License 1.0                                                                | [BSL-1.0][]                              | Y    | Y         |
+| Buddy License                                                                             | [Buddy][]                                |      |           |
 | Business Source License 1.1                                                               | [BUSL-1.1][]                             |      |           |
 | bzip2 and libbzip2 License v1.0.6                                                         | [bzip2-1.0.6][]                          |      |           |
 | Computational Use of Data Agreement v1.0                                                  | [C-UDA-1.0][]                            |      |           |
@@ -105,6 +116,7 @@ The following licenses have been generated from the license list version 2730e34
 | Cryptographic Autonomy License 1.0 (Combined Work Exception)                              | [CAL-1.0-Combined-Work-Exception][]      | Y    |           |
 | Caldera License                                                                           | [Caldera][]                              |      |           |
 | Caldera License (without preamble)                                                        | [Caldera-no-preamble][]                  |      |           |
+| Catharon License                                                                          | [Catharon][]                             |      |           |
 | Computer Associates Trusted Open Source License 1.1                                       | [CATOSL-1.1][]                           | Y    |           |
 | Creative Commons Attribution 1.0 Generic                                                  | [CC-BY-1.0][]                            |      |           |
 | Creative Commons Attribution 2.0 Generic                                                  | [CC-BY-2.0][]                            |      |           |
@@ -158,6 +170,8 @@ The following licenses have been generated from the license list version 2730e34
 | Creative Commons Attribution-ShareAlike 3.0 IGO                                           | [CC-BY-SA-3.0-IGO][]                     |      |           |
 | Creative Commons Attribution Share Alike 4.0 International                                | [CC-BY-SA-4.0][]                         |      | Y         |
 | Creative Commons Public Domain Dedication and Certification                               | [CC-PDDC][]                              |      |           |
+| Creative    Commons Public Domain Mark 1.0 Universal                                      | [CC-PDM-1.0][]                           |      |           |
+| Creative Commons Share Alike 1.0 Generic                                                  | [CC-SA-1.0][]                            |      |           |
 | Creative Commons Zero v1.0 Universal                                                      | [CC0-1.0][]                              |      | Y         |
 | Common Development and Distribution License 1.0                                           | [CDDL-1.0][]                             | Y    | Y         |
 | Common Development and Distribution License 1.1                                           | [CDDL-1.1][]                             |      |           |
@@ -197,16 +211,22 @@ The following licenses have been generated from the license list version 2730e34
 | Code Project Open License 1.02                                                            | [CPOL-1.02][]                            |      |           |
 | Cronyx License                                                                            | [Cronyx][]                               |      |           |
 | Crossword License                                                                         | [Crossword][]                            |      |           |
+| CryptoSwift License                                                                       | [CryptoSwift][]                          |      |           |
 | CrystalStacker License                                                                    | [CrystalStacker][]                       |      |           |
 | CUA Office Public License v1.0                                                            | [CUA-OPL-1.0][]                          | Y    |           |
 | Cube License                                                                              | [Cube][]                                 |      |           |
 | curl License                                                                              | [curl][]                                 |      |           |
+| Common Vulnerability Enumeration ToU License                                              | [cve-tou][]                              |      |           |
 | Deutsche Freie Software Lizenz                                                            | [D-FSL-1.0][]                            |      |           |
 | DEC 3-Clause License                                                                      | [DEC-3-Clause][]                         |      |           |
 | diffmark license                                                                          | [diffmark][]                             |      |           |
 | Data licence Germany – attribution – version 2.0                                          | [DL-DE-BY-2.0][]                         |      |           |
 | Data licence Germany – zero – version 2.0                                                 | [DL-DE-ZERO-2.0][]                       |      |           |
 | DOC License                                                                               | [DOC][]                                  |      |           |
+| DocBook DTD License                                                                       | [DocBook-DTD][]                          |      |           |
+| DocBook Schema License                                                                    | [DocBook-Schema][]                       |      |           |
+| DocBook Stylesheet License                                                                | [DocBook-Stylesheet][]                   |      |           |
+| DocBook XML License                                                                       | [DocBook-XML][]                          |      |           |
 | Dotseqn License                                                                           | [Dotseqn][]                              |      |           |
 | Detection Rule License 1.0                                                                | [DRL-1.0][]                              |      |           |
 | Detection Rule License 1.1                                                                | [DRL-1.1][]                              |      |           |
@@ -224,6 +244,9 @@ The following licenses have been generated from the license list version 2730e34
 | Eclipse Public License 1.0                                                                | [EPL-1.0][]                              | Y    | Y         |
 | Eclipse Public License 2.0                                                                | [EPL-2.0][]                              | Y    | Y         |
 | Erlang Public License v1.1                                                                | [ErlPL-1.1][]                            |      |           |
+| European Space Agency Public License – v2.4 – Permissive (Type 3)                         | [ESA-PL-permissive-2.4][]                |      |           |
+| European Space Agency Public License (ESA-PL) - V2.4 - Strong Copyleft (Type 1)           | [ESA-PL-strong-copyleft-2.4][]           |      |           |
+| European Space Agency Public License – v2.4 – Weak Copyleft (Type 2)                      | [ESA-PL-weak-copyleft-2.4][]             |      |           |
 | Etalab Open License 2.0                                                                   | [etalab-2.0][]                           |      |           |
 | EU DataGrid Software License                                                              | [EUDatagrid][]                           | Y    | Y         |
 | European Union Public License 1.0                                                         | [EUPL-1.0][]                             |      |           |
@@ -241,12 +264,17 @@ The following licenses have been generated from the license list version 2730e34
 | FSF All Permissive License (without Warranty)                                             | [FSFAP-no-warranty-disclaimer][]         |      |           |
 | FSF Unlimited License                                                                     | [FSFUL][]                                |      |           |
 | FSF Unlimited License (with License Retention)                                            | [FSFULLR][]                              |      |           |
+| FSF Unlimited License (with License Retention and Short Disclaimer)                       | [FSFULLRSD][]                            |      |           |
 | FSF Unlimited License (With License Retention and Warranty Disclaimer)                    | [FSFULLRWD][]                            |      |           |
+| Functional Source License, Version 1.1, ALv2 Future License                               | [FSL-1.1-ALv2][]                         |      |           |
+| Functional Source License, Version 1.1, MIT Future License                                | [FSL-1.1-MIT][]                          |      |           |
 | Freetype Project License                                                                  | [FTL][]                                  |      | Y         |
 | Furuseth License                                                                          | [Furuseth][]                             |      |           |
 | fwlw License                                                                              | [fwlw][]                                 |      |           |
+| Game Programming Gems License                                                             | [Game-Programming-Gems][]                |      |           |
 | Gnome GCR Documentation License                                                           | [GCR-docs][]                             |      |           |
 | GD License                                                                                | [GD][]                                   |      |           |
+| Generic XTS License                                                                       | [generic-xts][]                          |      |           |
 | GNU Free Documentation License v1.1 only - invariants                                     | [GFDL-1.1-invariants-only][]             |      |           |
 | GNU Free Documentation License v1.1 or later - invariants                                 | [GFDL-1.1-invariants-or-later][]         |      |           |
 | GNU Free Documentation License v1.1 only - no invariants                                  | [GFDL-1.1-no-invariants-only][]          |      |           |
@@ -280,8 +308,11 @@ The following licenses have been generated from the license list version 2730e34
 | Graphics Gems License                                                                     | [Graphics-Gems][]                        |      |           |
 | gSOAP Public License v1.3b                                                                | [gSOAP-1.3b][]                           |      |           |
 | gtkbook License                                                                           | [gtkbook][]                              |      |           |
+| Gutmann License                                                                           | [Gutmann][]                              |      |           |
 | Haskell Language Report License                                                           | [HaskellReport][]                        |      |           |
+| HDF5 License                                                                              | [HDF5][]                                 |      |           |
 | hdparm License                                                                            | [hdparm][]                               |      |           |
+| HIDAPI License                                                                            | [HIDAPI][]                               |      |           |
 | Hippocratic License 2.1                                                                   | [Hippocratic-2.1][]                      |      |           |
 | Hewlett-Packard 1986 License                                                              | [HP-1986][]                              |      |           |
 | Hewlett-Packard 1989 License                                                              | [HP-1989][]                              |      |           |
@@ -290,20 +321,28 @@ The following licenses have been generated from the license list version 2730e34
 | Historical Permission Notice and Disclaimer - documentation variant                       | [HPND-doc][]                             |      |           |
 | Historical Permission Notice and Disclaimer - documentation sell variant                  | [HPND-doc-sell][]                        |      |           |
 | HPND with US Government export control warning                                            | [HPND-export-US][]                       |      |           |
+| HPND with US Government export control warning and acknowledgment                         | [HPND-export-US-acknowledgement][]       |      |           |
 | HPND with US Government export control warning and modification rqmt                      | [HPND-export-US-modify][]                |      |           |
+| HPND with US Government export control and 2 disclaimers                                  | [HPND-export2-US][]                      |      |           |
 | Historical Permission Notice and Disclaimer - Fenneberg-Livingston variant                | [HPND-Fenneberg-Livingston][]            |      |           |
 | Historical Permission Notice and Disclaimer    - INRIA-IMAG variant                       | [HPND-INRIA-IMAG][]                      |      |           |
+| Historical Permission Notice and Disclaimer - Intel variant                               | [HPND-Intel][]                           |      |           |
 | Historical Permission Notice and Disclaimer - Kevlin Henney variant                       | [HPND-Kevlin-Henney][]                   |      |           |
 | Historical Permission Notice and Disclaimer - Markus Kuhn variant                         | [HPND-Markus-Kuhn][]                     |      |           |
+| Historical Permission Notice and Disclaimer - merchantability variant                     | [HPND-merchantability-variant][]         |      |           |
 | Historical Permission Notice and Disclaimer with MIT disclaimer                           | [HPND-MIT-disclaimer][]                  |      |           |
+| Historical Permission Notice and Disclaimer - Netrek variant                              | [HPND-Netrek][]                          |      |           |
 | Historical Permission Notice and Disclaimer - Pbmplus variant                             | [HPND-Pbmplus][]                         |      |           |
 | Historical Permission Notice and Disclaimer - sell xserver variant with MIT disclaimer    | [HPND-sell-MIT-disclaimer-xserver][]     |      |           |
 | Historical Permission Notice and Disclaimer - sell regexpr variant                        | [HPND-sell-regexpr][]                    |      |           |
 | Historical Permission Notice and Disclaimer - sell variant                                | [HPND-sell-variant][]                    |      |           |
 | HPND sell variant with MIT disclaimer                                                     | [HPND-sell-variant-MIT-disclaimer][]     |      |           |
+| HPND sell variant with MIT disclaimer - reverse                                           | [HPND-sell-variant-MIT-disclaimer-rev][] |      |           |
+| Historical Permission Notice and Disclaimer - SMC variant                                 | [HPND-SMC][]                             |      |           |
 | Historical Permission Notice and Disclaimer - University of California variant            | [HPND-UC][]                              |      |           |
 | Historical Permission Notice and Disclaimer - University of California, US export warning | [HPND-UC-export-US][]                    |      |           |
 | HTML Tidy License                                                                         | [HTMLTIDY][]                             |      |           |
+| hyphen-bulgarian License                                                                  | [hyphen-bulgarian][]                     |      |           |
 | IBM PowerPC Initialization and Boot Software                                              | [IBM-pibs][]                             |      |           |
 | ICU License                                                                               | [ICU][]                                  | Y    |           |
 | IEC    Code Components End-user licence agreement                                         | [IEC-Code-Components-EULA][]             |      |           |
@@ -314,6 +353,7 @@ The following licenses have been generated from the license list version 2730e34
 | Imlib2 License                                                                            | [Imlib2][]                               |      | Y         |
 | Info-ZIP License                                                                          | [Info-ZIP][]                             |      |           |
 | Inner Net License v2.0                                                                    | [Inner-Net-2.0][]                        |      |           |
+| Inno Setup License                                                                        | [InnoSetup][]                            |      |           |
 | Intel Open Source License                                                                 | [Intel][]                                | Y    | Y         |
 | Intel ACPI Software License Agreement                                                     | [Intel-ACPI][]                           |      |           |
 | Interbase Public License v1.0                                                             | [Interbase-1.0][]                        |      |           |
@@ -323,6 +363,7 @@ The following licenses have been generated from the license list version 2730e34
 | ISC Veillard variant                                                                      | [ISC-Veillard][]                         |      |           |
 | Jam License                                                                               | [Jam][]                                  | Y    |           |
 | JasPer License                                                                            | [JasPer-2.0][]                           |      |           |
+| Jove License                                                                              | [jove][]                                 |      |           |
 | JPL Image Use Policy                                                                      | [JPL-image][]                            |      |           |
 | Japan Network Information Center License                                                  | [JPNIC][]                                |      |           |
 | JSON License                                                                              | [JSON][]                                 |      |           |
@@ -342,6 +383,7 @@ The following licenses have been generated from the license list version 2730e34
 | GNU Lesser General Public License v3.0 or later                                           | [LGPL-3.0-or-later][]                    | Y    | Y         |
 | Lesser General Public License For Linguistic Resources                                    | [LGPLLR][]                               |      |           |
 | libpng License                                                                            | [Libpng][]                               |      |           |
+| PNG Reference Library License v1 (for libpng 0.5 through 1.6.35)                          | [libpng-1.6.35][]                        |      |           |
 | PNG Reference Library version 2                                                           | [libpng-2.0][]                           |      |           |
 | libselinux public domain notice                                                           | [libselinux-1.0][]                       |      |           |
 | libtiff License                                                                           | [libtiff][]                              |      |           |
@@ -372,14 +414,17 @@ The following licenses have been generated from the license list version 2730e34
 | magaz License                                                                             | [magaz][]                                |      |           |
 | mailprio License                                                                          | [mailprio][]                             |      |           |
 | MakeIndex License                                                                         | [MakeIndex][]                            |      |           |
+| man2html License                                                                          | [man2html][]                             |      |           |
 | Martin Birgmeier License                                                                  | [Martin-Birgmeier][]                     |      |           |
 | McPhee Slideshow License                                                                  | [McPhee-slideshow][]                     |      |           |
 | metamail License                                                                          | [metamail][]                             |      |           |
 | Minpack License                                                                           | [Minpack][]                              |      |           |
+| MIPS License                                                                              | [MIPS][]                                 |      |           |
 | The MirOS Licence                                                                         | [MirOS][]                                | Y    |           |
 | MIT License                                                                               | [MIT][]                                  | Y    | Y         |
 | MIT No Attribution                                                                        | [MIT-0][]                                | Y    |           |
 | Enlightenment License (e16)                                                               | [MIT-advertising][]                      |      |           |
+| MIT Click License                                                                         | [MIT-Click][]                            |      |           |
 | CMU License                                                                               | [MIT-CMU][]                              |      |           |
 | enna License                                                                              | [MIT-enna][]                             |      |           |
 | feh License                                                                               | [MIT-feh][]                              |      |           |
@@ -387,6 +432,7 @@ The following licenses have been generated from the license list version 2730e34
 | MIT Khronos - old variant                                                                 | [MIT-Khronos-old][]                      |      |           |
 | MIT License Modern Variant                                                                | [MIT-Modern-Variant][]                   | Y    |           |
 | MIT Open Group variant                                                                    | [MIT-open-group][]                       |      |           |
+| MIT-STK License                                                                           | [MIT-STK][]                              |      |           |
 | MIT testregex Variant                                                                     | [MIT-testregex][]                        |      |           |
 | MIT Tom Wu Variant                                                                        | [MIT-Wu][]                               |      |           |
 | MIT +no-false-attribs license                                                             | [MITNFA][]                               |      |           |
@@ -412,16 +458,18 @@ The following licenses have been generated from the license list version 2730e34
 | NASA Open Source Agreement 1.3                                                            | [NASA-1.3][]                             | Y    |           |
 | Naumen Public License                                                                     | [Naumen][]                               | Y    |           |
 | Net Boolean Public License v1                                                             | [NBPL-1.0][]                             |      |           |
+| NCBI Public Domain Notice                                                                 | [NCBI-PD][]                              |      |           |
 | Non-Commercial Government Licence                                                         | [NCGL-UK-2.0][]                          |      |           |
 | NCL Source Code License                                                                   | [NCL][]                                  |      |           |
 | University of Illinois/NCSA Open Source License                                           | [NCSA][]                                 | Y    | Y         |
-| Net-SNMP License                                                                          | [Net-SNMP][]                             |      |           |
 | NetCDF license                                                                            | [NetCDF][]                               |      |           |
 | Newsletr License                                                                          | [Newsletr][]                             |      |           |
 | Nethack General Public License                                                            | [NGPL][]                                 | Y    |           |
+| ngrep License                                                                             | [ngrep][]                                |      |           |
 | NICTA Public Software License, Version 1.0                                                | [NICTA-1.0][]                            |      |           |
 | NIST Public Domain Notice                                                                 | [NIST-PD][]                              |      |           |
 | NIST Public Domain Notice with license fallback                                           | [NIST-PD-fallback][]                     |      |           |
+| NIST    Public Domain Notice TNT variant                                                  | [NIST-PD-TNT][]                          |      |           |
 | NIST Software License                                                                     | [NIST-Software][]                        |      |           |
 | Norwegian Licence for Open Government Data (NLOD) 1.0                                     | [NLOD-1.0][]                             |      |           |
 | Norwegian Licence for Open Government Data (NLOD) 2.0                                     | [NLOD-2.0][]                             |      |           |
@@ -433,6 +481,7 @@ The following licenses have been generated from the license list version 2730e34
 | Netscape Public License v1.1                                                              | [NPL-1.1][]                              |      | Y         |
 | Non-Profit Open Software License 3.0                                                      | [NPOSL-3.0][]                            | Y    |           |
 | NRL License                                                                               | [NRL][]                                  |      |           |
+| NTIA Public Domain Notice                                                                 | [NTIA-PD][]                              |      |           |
 | NTP License                                                                               | [NTP][]                                  | Y    |           |
 | NTP No Attribution                                                                        | [NTP-0][]                                |      |           |
 | Open Use of Data Agreement v1.0                                                           | [O-UDA-1.0][]                            |      |           |
@@ -486,6 +535,7 @@ The following licenses have been generated from the license list version 2730e34
 | Open Software License 2.0                                                                 | [OSL-2.0][]                              | Y    | Y         |
 | Open Software License 2.1                                                                 | [OSL-2.1][]                              | Y    | Y         |
 | Open Software License 3.0                                                                 | [OSL-3.0][]                              | Y    | Y         |
+| OSSP License                                                                              | [OSSP][]                                 |      |           |
 | PADL License                                                                              | [PADL][]                                 |      |           |
 | The Parity Public License 6.0.0                                                           | [Parity-6.0.0][]                         |      |           |
 | The Parity Public License 7.0.0                                                           | [Parity-7.0.0][]                         |      |           |
@@ -499,6 +549,7 @@ The following licenses have been generated from the license list version 2730e34
 | PolyForm Noncommercial License 1.0.0                                                      | [PolyForm-Noncommercial-1.0.0][]         |      |           |
 | PolyForm Small Business License 1.0.0                                                     | [PolyForm-Small-Business-1.0.0][]        |      |           |
 | PostgreSQL License                                                                        | [PostgreSQL][]                           | Y    |           |
+| Peer Production License                                                                   | [PPL][]                                  |      |           |
 | Python Software Foundation License 2.0                                                    | [PSF-2.0][]                              |      |           |
 | psfrag License                                                                            | [psfrag][]                               |      |           |
 | psutils License                                                                           | [psutils][]                              |      |           |
@@ -517,6 +568,7 @@ The following licenses have been generated from the license list version 2730e34
 | RSA Message-Digest License                                                                | [RSA-MD][]                               |      |           |
 | Ricoh Source Code Public License                                                          | [RSCPL][]                                | Y    |           |
 | Ruby License                                                                              | [Ruby][]                                 |      | Y         |
+| Ruby pty extension license                                                                | [Ruby-pty][]                             |      |           |
 | Sax Public Domain Notice                                                                  | [SAX-PD][]                               |      |           |
 | Sax Public Domain Notice 2.0                                                              | [SAX-PD-2.0][]                           |      |           |
 | Saxpath License                                                                           | [Saxpath][]                              |      |           |
@@ -524,10 +576,12 @@ The following licenses have been generated from the license list version 2730e34
 | Scheme Language Report License                                                            | [SchemeReport][]                         |      |           |
 | Sendmail License                                                                          | [Sendmail][]                             |      |           |
 | Sendmail License 8.23                                                                     | [Sendmail-8.23][]                        |      |           |
+| Sendmail Open Source License v1.1                                                         | [Sendmail-Open-Source-1.1][]             |      |           |
 | SGI Free Software License B v1.0                                                          | [SGI-B-1.0][]                            |      |           |
 | SGI Free Software License B v1.1                                                          | [SGI-B-1.1][]                            |      |           |
 | SGI Free Software License B v2.0                                                          | [SGI-B-2.0][]                            |      | Y         |
 | SGI OpenGL License                                                                        | [SGI-OpenGL][]                           |      |           |
+| SGMLUG Parser Materials License                                                           | [SGMLUG-PM][]                            |      |           |
 | SGP4 Permission Notice                                                                    | [SGP4][]                                 |      |           |
 | Solderpad Hardware License v0.5                                                           | [SHL-0.5][]                              |      |           |
 | Solderpad Hardware License, Version 0.51                                                  | [SHL-0.51][]                             |      |           |
@@ -536,10 +590,12 @@ The following licenses have been generated from the license list version 2730e34
 | Sun Industry Standards Source License v1.2                                                | [SISSL-1.2][]                            |      |           |
 | SL License                                                                                | [SL][]                                   |      |           |
 | Sleepycat License                                                                         | [Sleepycat][]                            | Y    | Y         |
+| SMAIL General Public License                                                              | [SMAIL-GPL][]                            |      |           |
 | Standard ML of New Jersey License                                                         | [SMLNJ][]                                |      | Y         |
 | Secure Messaging Protocol Public License                                                  | [SMPPL][]                                |      |           |
 | SNIA Public License 1.1                                                                   | [SNIA][]                                 |      |           |
 | snprintf License                                                                          | [snprintf][]                             |      |           |
+| SOFA Software License                                                                     | [SOFA][]                                 |      |           |
 | softSurfer License                                                                        | [softSurfer][]                           |      |           |
 | Soundex License                                                                           | [Soundex][]                              |      |           |
 | Spencer License 86                                                                        | [Spencer-86][]                           |      |           |
@@ -552,6 +608,7 @@ The following licenses have been generated from the license list version 2730e34
 | SSLeay License - standalone                                                               | [SSLeay-standalone][]                    |      |           |
 | Server Side Public License, v 1                                                           | [SSPL-1.0][]                             |      |           |
 | SugarCRM Public License v1.1.3                                                            | [SugarCRM-1.1.3][]                       |      |           |
+| Sustainable Use License v1.0                                                              | [SUL-1.0][]                              |      |           |
 | Sun PPP License                                                                           | [Sun-PPP][]                              |      |           |
 | Sun PPP License (2000)                                                                    | [Sun-PPP-2000][]                         |      |           |
 | SunPro License                                                                            | [SunPro][]                               |      |           |
@@ -563,16 +620,19 @@ The following licenses have been generated from the license list version 2730e34
 | TCP Wrappers License                                                                      | [TCP-wrappers][]                         |      |           |
 | TermReadKey License                                                                       | [TermReadKey][]                          |      |           |
 | Transitive Grace Period Public Licence 1.0                                                | [TGPPL-1.0][]                            |      |           |
+| ThirdEye License                                                                          | [ThirdEye][]                             |      |           |
 | threeparttable License                                                                    | [threeparttable][]                       |      |           |
 | TMate Open Source License                                                                 | [TMate][]                                |      |           |
 | TORQUE v2.5+ Software License v1.1                                                        | [TORQUE-1.1][]                           |      |           |
 | Trusster Open Source License                                                              | [TOSL][]                                 |      |           |
 | Time::ParseDate License                                                                   | [TPDL][]                                 |      |           |
 | THOR Public License 1.0                                                                   | [TPL-1.0][]                              |      |           |
+| TrustedQSL License                                                                        | [TrustedQSL][]                           |      |           |
 | Text-Tabs+Wrap License                                                                    | [TTWL][]                                 |      |           |
 | TTYP0 License                                                                             | [TTYP0][]                                |      |           |
 | Technische Universitaet Berlin License 1.0                                                | [TU-Berlin-1.0][]                        |      |           |
 | Technische Universitaet Berlin License 2.0                                                | [TU-Berlin-2.0][]                        |      |           |
+| Ubuntu Font Licence v1.0                                                                  | [Ubuntu-font-1.0][]                      |      |           |
 | UCAR License                                                                              | [UCAR][]                                 |      |           |
 | Upstream Compatibility License v1.0                                                       | [UCL-1.0][]                              | Y    |           |
 | ulem License                                                                              | [ulem][]                                 |      |           |
@@ -583,6 +643,8 @@ The following licenses have been generated from the license list version 2730e34
 | Unicode Terms of Use                                                                      | [Unicode-TOU][]                          |      |           |
 | UnixCrypt License                                                                         | [UnixCrypt][]                            |      |           |
 | The Unlicense                                                                             | [Unlicense][]                            | Y    | Y         |
+| Unlicense - libtelnet variant                                                             | [Unlicense-libtelnet][]                  |      |           |
+| Unlicense - libwhirlpool variant                                                          | [Unlicense-libwhirlpool][]               |      |           |
 | Universal Permissive License v1.0                                                         | [UPL-1.0][]                              | Y    | Y         |
 | Utah Raster Toolkit Run Length Encoded License                                            | [URT-RLE][]                              |      |           |
 | Vim License                                                                               | [Vim][]                                  |      | Y         |
@@ -590,14 +652,19 @@ The following licenses have been generated from the license list version 2730e34
 | Vovida Software License v1.0                                                              | [VSL-1.0][]                              | Y    |           |
 | W3C Software Notice and License (2002-12-31)                                              | [W3C][]                                  | Y    | Y         |
 | W3C Software Notice and License (1998-07-20)                                              | [W3C-19980720][]                         |      |           |
-| W3C Software Notice and Document License (2015-05-13)                                     | [W3C-20150513][]                         |      |           |
+| W3C Software Notice and Document License (2015-05-13)                                     | [W3C-20150513][]                         | Y    |           |
 | w3m License                                                                               | [w3m][]                                  |      |           |
 | Sybase Open Watcom Public License 1.0                                                     | [Watcom-1.0][]                           | Y    |           |
 | Widget Workshop License                                                                   | [Widget-Workshop][]                      |      |           |
+| WordNet License                                                                           | [WordNet][]                              | Y    |           |
 | Wsuipa License                                                                            | [Wsuipa][]                               |      |           |
+| Do What The F*ck You Want To But It's Not My Fault Public License                         | [WTFNMFPL][]                             |      |           |
 | Do What The F*ck You Want To Public License                                               | [WTFPL][]                                |      | Y         |
+| WWL License                                                                               | [wwl][]                                  |      |           |
 | X11 License                                                                               | [X11][]                                  |      | Y         |
 | X11 License Distribution Modification Variant                                             | [X11-distribute-modifications-variant][] |      |           |
+| X11 no permit persons clause                                                              | [X11-no-permit-persons][]                |      |           |
+| X11 swapped final paragraphs                                                              | [X11-swapped][]                          |      |           |
 | Xdebug License v 1.03                                                                     | [Xdebug-1.03][]                          |      |           |
 | Xerox License                                                                             | [Xerox][]                                |      |           |
 | Xfig License                                                                              | [Xfig][]                                 |      |           |
@@ -628,6 +695,7 @@ The following licenses have been generated from the license list version 2730e34
 |-------------------------------------------------------|------------------------------------------|
 | 389 Directory Server Exception                        | [389-exception][]                        |
 | Asterisk exception                                    | [Asterisk-exception][]                   |
+| Asterisk linking protocols exception                  | [Asterisk-linking-protocols-exception][] |
 | Autoconf exception 2.0                                | [Autoconf-exception-2.0][]               |
 | Autoconf exception 3.0                                | [Autoconf-exception-3.0][]               |
 | Autoconf generic exception                            | [Autoconf-exception-generic][]           |
@@ -636,11 +704,15 @@ The following licenses have been generated from the license list version 2730e34
 | Bison exception 1.24                                  | [Bison-exception-1.24][]                 |
 | Bison exception 2.2                                   | [Bison-exception-2.2][]                  |
 | Bootloader Distribution Exception                     | [Bootloader-exception][]                 |
+| CGAL Linking Exception                                | [CGAL-linking-exception][]               |
 | Classpath exception 2.0                               | [Classpath-exception-2.0][]              |
+| Classpath exception 2.0 - short                       | [Classpath-exception-2.0-short][]        |
 | CLISP exception 2.0                                   | [CLISP-exception-2.0][]                  |
 | cryptsetup OpenSSL exception                          | [cryptsetup-OpenSSL-exception][]         |
+| Digia Qt LGPL Exception version 1.1                   | [Digia-Qt-LGPL-exception-1.1][]          |
 | DigiRule FOSS License Exception                       | [DigiRule-FOSS-exception][]              |
 | eCos exception 2.0                                    | [eCos-exception-2.0][]                   |
+| Erlang/OTP Linking Exception                          | [erlang-otp-linking-exception][]         |
 | Fawkes Runtime Exception                              | [Fawkes-Runtime-exception][]             |
 | FLTK exception                                        | [FLTK-exception][]                       |
 | fmt exception                                         | [fmt-exception][]                        |
@@ -649,19 +721,23 @@ The following licenses have been generated from the license list version 2730e34
 | GCC Runtime Library exception 2.0                     | [GCC-exception-2.0][]                    |
 | GCC    Runtime Library exception 2.0 - note variant   | [GCC-exception-2.0-note][]               |
 | GCC Runtime Library exception 3.1                     | [GCC-exception-3.1][]                    |
-| Gmsh exception>                                       | [Gmsh-exception][]                       |
+| Gmsh exception                                        | [Gmsh-exception][]                       |
 | GNAT exception                                        | [GNAT-exception][]                       |
 | GNOME examples exception                              | [GNOME-examples-exception][]             |
 | GNU Compiler Exception                                | [GNU-compiler-exception][]               |
 | GNU JavaMail exception                                | [gnu-javamail-exception][]               |
+| GPL-3.0 389 DS Base Exception                         | [GPL-3.0-389-ds-base-exception][]        |
 | GPL-3.0 Interface Exception                           | [GPL-3.0-interface-exception][]          |
 | GPL-3.0 Linking Exception                             | [GPL-3.0-linking-exception][]            |
 | GPL-3.0 Linking Exception (with Corresponding Source) | [GPL-3.0-linking-source-exception][]     |
 | GPL Cooperation Commitment 1.0                        | [GPL-CC-1.0][]                           |
 | GStreamer Exception (2005)                            | [GStreamer-exception-2005][]             |
 | GStreamer Exception (2008)                            | [GStreamer-exception-2008][]             |
+| harbour exception                                     | [harbour-exception][]                    |
 | i2p GPL+Java Exception                                | [i2p-gpl-java-exception][]               |
+| Independent Module Linking exception                  | [Independent-modules-exception][]        |
 | KiCad Libraries Exception                             | [KiCad-libraries-exception][]            |
+| kvirc OpenSSL Exception                               | [kvirc-openssl-exception][]              |
 | LGPL-3.0 Linking Exception                            | [LGPL-3.0-linking-exception][]           |
 | libpri OpenH323 exception                             | [libpri-OpenH323-exception][]            |
 | Libtool Exception                                     | [Libtool-exception][]                    |
@@ -670,18 +746,24 @@ The following licenses have been generated from the license list version 2730e34
 | LLVM Exception                                        | [LLVM-exception][]                       |
 | LZMA exception                                        | [LZMA-exception][]                       |
 | Macros and Inline Functions Exception                 | [mif-exception][]                        |
+| mxml Exception                                        | [mxml-exception][]                       |
 | OCaml LGPL Linking Exception                          | [OCaml-LGPL-linking-exception][]         |
 | Open CASCADE Exception 1.0                            | [OCCT-exception-1.0][]                   |
 | OpenJDK Assembly exception 1.0                        | [OpenJDK-assembly-exception-1.0][]       |
 | OpenVPN OpenSSL Exception                             | [openvpn-openssl-exception][]            |
+| PCRE2 exception                                       | [PCRE2-exception][]                      |
+| Polyparse Exception                                   | [polyparse-exception][]                  |
 | PS/PDF font exception (2017-08-17)                    | [PS-or-PDF-font-exception-20170817][]    |
 | INRIA QPL 1.0 2004 variant exception                  | [QPL-1.0-INRIA-2004-exception][]         |
 | Qt GPL exception 1.0                                  | [Qt-GPL-exception-1.0][]                 |
 | Qt LGPL exception 1.1                                 | [Qt-LGPL-exception-1.1][]                |
 | Qwt exception 1.0                                     | [Qwt-exception-1.0][]                    |
+| Romic Exception                                       | [romic-exception][]                      |
+| RRDtool FLOSS exception 2.0                           | [RRDtool-FLOSS-exception-2.0][]          |
 | SANE Exception                                        | [SANE-exception][]                       |
 | Solderpad Hardware License v2.0                       | [SHL-2.0][]                              |
 | Solderpad Hardware License v2.1                       | [SHL-2.1][]                              |
+| Simple Library Usage Exception                        | [Simple-Library-Usage-exception][]       |
 | stunnel Exception                                     | [stunnel-exception][]                    |
 | SWI exception                                         | [SWI-exception][]                        |
 | Swift Exception                                       | [Swift-exception][]                      |
@@ -725,11 +807,13 @@ The following licenses have been generated from the license list version 2730e34
 | GNU Lesser General Public License v2.1 or later                                           | [LGPL-2.1+][]                            
 | GNU Lesser General Public License v3.0 only                                               | [LGPL-3.0][]                             
 | GNU Lesser General Public License v3.0 or later                                           | [LGPL-3.0+][]                            
+| Net-SNMP License                                                                          | [Net-SNMP][]                             
 | Nunit License                                                                             | [Nunit][]                                
 | Standard ML of New Jersey License                                                         | [StandardML-NJ][]                        
 | wxWindows Library License                                                                 | [wxWindows][]                            
 
 [0BSD]: text/0BSD.txt
+[3D-Slicer-1.0]: text/3D-Slicer-1.0.txt
 [AAL]: text/AAL.txt
 [Abstyles]: text/Abstyles.txt
 [AdaCore-doc]: text/AdaCore-doc.txt
@@ -738,6 +822,7 @@ The following licenses have been generated from the license list version 2730e34
 [Adobe-Glyph]: text/Adobe-Glyph.txt
 [Adobe-Utopia]: text/Adobe-Utopia.txt
 [ADSL]: text/ADSL.txt
+[Advanced-Cryptics-Dictionary]: text/Advanced-Cryptics-Dictionary.txt
 [AFL-1.1]: text/AFL-1.1.txt
 [AFL-1.2]: text/AFL-1.2.txt
 [AFL-2.0]: text/AFL-2.0.txt
@@ -758,6 +843,8 @@ The following licenses have been generated from the license list version 2730e34
 [AMPAS]: text/AMPAS.txt
 [ANTLR-PD]: text/ANTLR-PD.txt
 [ANTLR-PD-fallback]: text/ANTLR-PD-fallback.txt
+[any-OSI]: text/any-OSI.txt
+[any-OSI-perl-modules]: text/any-OSI-perl-modules.txt
 [Apache-1.0]: text/Apache-1.0.txt
 [Apache-1.1]: text/Apache-1.1.txt
 [Apache-2.0]: text/Apache-2.0.txt
@@ -773,6 +860,8 @@ The following licenses have been generated from the license list version 2730e34
 [Artistic-1.0-cl8]: text/Artistic-1.0-cl8.txt
 [Artistic-1.0-Perl]: text/Artistic-1.0-Perl.txt
 [Artistic-2.0]: text/Artistic-2.0.txt
+[Artistic-dist]: text/Artistic-dist.txt
+[Aspell-RU]: text/Aspell-RU.txt
 [ASWF-Digital-Assets-1.0]: text/ASWF-Digital-Assets-1.0.txt
 [ASWF-Digital-Assets-1.1]: text/ASWF-Digital-Assets-1.1.txt
 [Baekmuk]: text/Baekmuk.txt
@@ -787,16 +876,18 @@ The following licenses have been generated from the license list version 2730e34
 [blessing]: text/blessing.txt
 [BlueOak-1.0.0]: text/BlueOak-1.0.0.txt
 [Boehm-GC]: text/Boehm-GC.txt
+[Boehm-GC-without-fee]: text/Boehm-GC-without-fee.txt
 [Borceux]: text/Borceux.txt
 [Brian-Gladman-2-Clause]: text/Brian-Gladman-2-Clause.txt
 [Brian-Gladman-3-Clause]: text/Brian-Gladman-3-Clause.txt
 [BSD-1-Clause]: text/BSD-1-Clause.txt
 [BSD-2-Clause]: text/BSD-2-Clause.txt
 [BSD-2-Clause-Darwin]: text/BSD-2-Clause-Darwin.txt
-[BSD-2-clause-first-lines]: text/BSD-2-clause-first-lines.txt
+[BSD-2-Clause-first-lines]: text/BSD-2-Clause-first-lines.txt
 [BSD-2-Clause-FreeBSD]: text/BSD-2-Clause-FreeBSD.txt
 [BSD-2-Clause-NetBSD]: text/BSD-2-Clause-NetBSD.txt
 [BSD-2-Clause-Patent]: text/BSD-2-Clause-Patent.txt
+[BSD-2-Clause-pkgconf-disclaimer]: text/BSD-2-Clause-pkgconf-disclaimer.txt
 [BSD-2-Clause-Views]: text/BSD-2-Clause-Views.txt
 [BSD-3-Clause]: text/BSD-3-Clause.txt
 [BSD-3-Clause-acpica]: text/BSD-3-Clause-acpica.txt
@@ -812,6 +903,7 @@ The following licenses have been generated from the license list version 2730e34
 [BSD-3-Clause-No-Nuclear-Warranty]: text/BSD-3-Clause-No-Nuclear-Warranty.txt
 [BSD-3-Clause-Open-MPI]: text/BSD-3-Clause-Open-MPI.txt
 [BSD-3-Clause-Sun]: text/BSD-3-Clause-Sun.txt
+[BSD-3-Clause-Tso]: text/BSD-3-Clause-Tso.txt
 [BSD-4-Clause]: text/BSD-4-Clause.txt
 [BSD-4-Clause-Shortened]: text/BSD-4-Clause-Shortened.txt
 [BSD-4-Clause-UC]: text/BSD-4-Clause-UC.txt
@@ -820,12 +912,14 @@ The following licenses have been generated from the license list version 2730e34
 [BSD-Advertising-Acknowledgement]: text/BSD-Advertising-Acknowledgement.txt
 [BSD-Attribution-HPND-disclaimer]: text/BSD-Attribution-HPND-disclaimer.txt
 [BSD-Inferno-Nettverk]: text/BSD-Inferno-Nettverk.txt
+[BSD-Mark-Modifications]: text/BSD-Mark-Modifications.txt
 [BSD-Protection]: text/BSD-Protection.txt
 [BSD-Source-beginning-file]: text/BSD-Source-beginning-file.txt
 [BSD-Source-Code]: text/BSD-Source-Code.txt
 [BSD-Systemics]: text/BSD-Systemics.txt
 [BSD-Systemics-W3Works]: text/BSD-Systemics-W3Works.txt
 [BSL-1.0]: text/BSL-1.0.txt
+[Buddy]: text/Buddy.txt
 [BUSL-1.1]: text/BUSL-1.1.txt
 [bzip2-1.0.5]: text/bzip2-1.0.5.txt
 [bzip2-1.0.6]: text/bzip2-1.0.6.txt
@@ -834,6 +928,7 @@ The following licenses have been generated from the license list version 2730e34
 [CAL-1.0-Combined-Work-Exception]: text/CAL-1.0-Combined-Work-Exception.txt
 [Caldera]: text/Caldera.txt
 [Caldera-no-preamble]: text/Caldera-no-preamble.txt
+[Catharon]: text/Catharon.txt
 [CATOSL-1.1]: text/CATOSL-1.1.txt
 [CC-BY-1.0]: text/CC-BY-1.0.txt
 [CC-BY-2.0]: text/CC-BY-2.0.txt
@@ -887,6 +982,8 @@ The following licenses have been generated from the license list version 2730e34
 [CC-BY-SA-3.0-IGO]: text/CC-BY-SA-3.0-IGO.txt
 [CC-BY-SA-4.0]: text/CC-BY-SA-4.0.txt
 [CC-PDDC]: text/CC-PDDC.txt
+[CC-PDM-1.0]: text/CC-PDM-1.0.txt
+[CC-SA-1.0]: text/CC-SA-1.0.txt
 [CC0-1.0]: text/CC0-1.0.txt
 [CDDL-1.0]: text/CDDL-1.0.txt
 [CDDL-1.1]: text/CDDL-1.1.txt
@@ -926,16 +1023,22 @@ The following licenses have been generated from the license list version 2730e34
 [CPOL-1.02]: text/CPOL-1.02.txt
 [Cronyx]: text/Cronyx.txt
 [Crossword]: text/Crossword.txt
+[CryptoSwift]: text/CryptoSwift.txt
 [CrystalStacker]: text/CrystalStacker.txt
 [CUA-OPL-1.0]: text/CUA-OPL-1.0.txt
 [Cube]: text/Cube.txt
 [curl]: text/curl.txt
+[cve-tou]: text/cve-tou.txt
 [D-FSL-1.0]: text/D-FSL-1.0.txt
 [DEC-3-Clause]: text/DEC-3-Clause.txt
 [diffmark]: text/diffmark.txt
 [DL-DE-BY-2.0]: text/DL-DE-BY-2.0.txt
 [DL-DE-ZERO-2.0]: text/DL-DE-ZERO-2.0.txt
 [DOC]: text/DOC.txt
+[DocBook-DTD]: text/DocBook-DTD.txt
+[DocBook-Schema]: text/DocBook-Schema.txt
+[DocBook-Stylesheet]: text/DocBook-Stylesheet.txt
+[DocBook-XML]: text/DocBook-XML.txt
 [Dotseqn]: text/Dotseqn.txt
 [DRL-1.0]: text/DRL-1.0.txt
 [DRL-1.1]: text/DRL-1.1.txt
@@ -954,6 +1057,9 @@ The following licenses have been generated from the license list version 2730e34
 [EPL-1.0]: text/EPL-1.0.txt
 [EPL-2.0]: text/EPL-2.0.txt
 [ErlPL-1.1]: text/ErlPL-1.1.txt
+[ESA-PL-permissive-2.4]: text/ESA-PL-permissive-2.4.txt
+[ESA-PL-strong-copyleft-2.4]: text/ESA-PL-strong-copyleft-2.4.txt
+[ESA-PL-weak-copyleft-2.4]: text/ESA-PL-weak-copyleft-2.4.txt
 [etalab-2.0]: text/etalab-2.0.txt
 [EUDatagrid]: text/EUDatagrid.txt
 [EUPL-1.0]: text/EUPL-1.0.txt
@@ -971,12 +1077,17 @@ The following licenses have been generated from the license list version 2730e34
 [FSFAP-no-warranty-disclaimer]: text/FSFAP-no-warranty-disclaimer.txt
 [FSFUL]: text/FSFUL.txt
 [FSFULLR]: text/FSFULLR.txt
+[FSFULLRSD]: text/FSFULLRSD.txt
 [FSFULLRWD]: text/FSFULLRWD.txt
+[FSL-1.1-ALv2]: text/FSL-1.1-ALv2.txt
+[FSL-1.1-MIT]: text/FSL-1.1-MIT.txt
 [FTL]: text/FTL.txt
 [Furuseth]: text/Furuseth.txt
 [fwlw]: text/fwlw.txt
+[Game-Programming-Gems]: text/Game-Programming-Gems.txt
 [GCR-docs]: text/GCR-docs.txt
 [GD]: text/GD.txt
+[generic-xts]: text/generic-xts.txt
 [GFDL-1.1]: text/GFDL-1.1.txt
 [GFDL-1.1-invariants-only]: text/GFDL-1.1-invariants-only.txt
 [GFDL-1.1-invariants-or-later]: text/GFDL-1.1-invariants-or-later.txt
@@ -1026,8 +1137,11 @@ The following licenses have been generated from the license list version 2730e34
 [Graphics-Gems]: text/Graphics-Gems.txt
 [gSOAP-1.3b]: text/gSOAP-1.3b.txt
 [gtkbook]: text/gtkbook.txt
+[Gutmann]: text/Gutmann.txt
 [HaskellReport]: text/HaskellReport.txt
+[HDF5]: text/HDF5.txt
 [hdparm]: text/hdparm.txt
+[HIDAPI]: text/HIDAPI.txt
 [Hippocratic-2.1]: text/Hippocratic-2.1.txt
 [HP-1986]: text/HP-1986.txt
 [HP-1989]: text/HP-1989.txt
@@ -1036,20 +1150,28 @@ The following licenses have been generated from the license list version 2730e34
 [HPND-doc]: text/HPND-doc.txt
 [HPND-doc-sell]: text/HPND-doc-sell.txt
 [HPND-export-US]: text/HPND-export-US.txt
+[HPND-export-US-acknowledgement]: text/HPND-export-US-acknowledgement.txt
 [HPND-export-US-modify]: text/HPND-export-US-modify.txt
+[HPND-export2-US]: text/HPND-export2-US.txt
 [HPND-Fenneberg-Livingston]: text/HPND-Fenneberg-Livingston.txt
 [HPND-INRIA-IMAG]: text/HPND-INRIA-IMAG.txt
+[HPND-Intel]: text/HPND-Intel.txt
 [HPND-Kevlin-Henney]: text/HPND-Kevlin-Henney.txt
 [HPND-Markus-Kuhn]: text/HPND-Markus-Kuhn.txt
+[HPND-merchantability-variant]: text/HPND-merchantability-variant.txt
 [HPND-MIT-disclaimer]: text/HPND-MIT-disclaimer.txt
+[HPND-Netrek]: text/HPND-Netrek.txt
 [HPND-Pbmplus]: text/HPND-Pbmplus.txt
 [HPND-sell-MIT-disclaimer-xserver]: text/HPND-sell-MIT-disclaimer-xserver.txt
 [HPND-sell-regexpr]: text/HPND-sell-regexpr.txt
 [HPND-sell-variant]: text/HPND-sell-variant.txt
 [HPND-sell-variant-MIT-disclaimer]: text/HPND-sell-variant-MIT-disclaimer.txt
+[HPND-sell-variant-MIT-disclaimer-rev]: text/HPND-sell-variant-MIT-disclaimer-rev.txt
+[HPND-SMC]: text/HPND-SMC.txt
 [HPND-UC]: text/HPND-UC.txt
 [HPND-UC-export-US]: text/HPND-UC-export-US.txt
 [HTMLTIDY]: text/HTMLTIDY.txt
+[hyphen-bulgarian]: text/hyphen-bulgarian.txt
 [IBM-pibs]: text/IBM-pibs.txt
 [ICU]: text/ICU.txt
 [IEC-Code-Components-EULA]: text/IEC-Code-Components-EULA.txt
@@ -1060,6 +1182,7 @@ The following licenses have been generated from the license list version 2730e34
 [Imlib2]: text/Imlib2.txt
 [Info-ZIP]: text/Info-ZIP.txt
 [Inner-Net-2.0]: text/Inner-Net-2.0.txt
+[InnoSetup]: text/InnoSetup.txt
 [Intel]: text/Intel.txt
 [Intel-ACPI]: text/Intel-ACPI.txt
 [Interbase-1.0]: text/Interbase-1.0.txt
@@ -1069,6 +1192,7 @@ The following licenses have been generated from the license list version 2730e34
 [ISC-Veillard]: text/ISC-Veillard.txt
 [Jam]: text/Jam.txt
 [JasPer-2.0]: text/JasPer-2.0.txt
+[jove]: text/jove.txt
 [JPL-image]: text/JPL-image.txt
 [JPNIC]: text/JPNIC.txt
 [JSON]: text/JSON.txt
@@ -1094,6 +1218,7 @@ The following licenses have been generated from the license list version 2730e34
 [LGPL-3.0-or-later]: text/LGPL-3.0-or-later.txt
 [LGPLLR]: text/LGPLLR.txt
 [Libpng]: text/Libpng.txt
+[libpng-1.6.35]: text/libpng-1.6.35.txt
 [libpng-2.0]: text/libpng-2.0.txt
 [libselinux-1.0]: text/libselinux-1.0.txt
 [libtiff]: text/libtiff.txt
@@ -1124,14 +1249,17 @@ The following licenses have been generated from the license list version 2730e34
 [magaz]: text/magaz.txt
 [mailprio]: text/mailprio.txt
 [MakeIndex]: text/MakeIndex.txt
+[man2html]: text/man2html.txt
 [Martin-Birgmeier]: text/Martin-Birgmeier.txt
 [McPhee-slideshow]: text/McPhee-slideshow.txt
 [metamail]: text/metamail.txt
 [Minpack]: text/Minpack.txt
+[MIPS]: text/MIPS.txt
 [MirOS]: text/MirOS.txt
 [MIT]: text/MIT.txt
 [MIT-0]: text/MIT-0.txt
 [MIT-advertising]: text/MIT-advertising.txt
+[MIT-Click]: text/MIT-Click.txt
 [MIT-CMU]: text/MIT-CMU.txt
 [MIT-enna]: text/MIT-enna.txt
 [MIT-feh]: text/MIT-feh.txt
@@ -1139,6 +1267,7 @@ The following licenses have been generated from the license list version 2730e34
 [MIT-Khronos-old]: text/MIT-Khronos-old.txt
 [MIT-Modern-Variant]: text/MIT-Modern-Variant.txt
 [MIT-open-group]: text/MIT-open-group.txt
+[MIT-STK]: text/MIT-STK.txt
 [MIT-testregex]: text/MIT-testregex.txt
 [MIT-Wu]: text/MIT-Wu.txt
 [MITNFA]: text/MITNFA.txt
@@ -1164,6 +1293,7 @@ The following licenses have been generated from the license list version 2730e34
 [NASA-1.3]: text/NASA-1.3.txt
 [Naumen]: text/Naumen.txt
 [NBPL-1.0]: text/NBPL-1.0.txt
+[NCBI-PD]: text/NCBI-PD.txt
 [NCGL-UK-2.0]: text/NCGL-UK-2.0.txt
 [NCL]: text/NCL.txt
 [NCSA]: text/NCSA.txt
@@ -1171,9 +1301,11 @@ The following licenses have been generated from the license list version 2730e34
 [NetCDF]: text/NetCDF.txt
 [Newsletr]: text/Newsletr.txt
 [NGPL]: text/NGPL.txt
+[ngrep]: text/ngrep.txt
 [NICTA-1.0]: text/NICTA-1.0.txt
 [NIST-PD]: text/NIST-PD.txt
 [NIST-PD-fallback]: text/NIST-PD-fallback.txt
+[NIST-PD-TNT]: text/NIST-PD-TNT.txt
 [NIST-Software]: text/NIST-Software.txt
 [NLOD-1.0]: text/NLOD-1.0.txt
 [NLOD-2.0]: text/NLOD-2.0.txt
@@ -1185,6 +1317,7 @@ The following licenses have been generated from the license list version 2730e34
 [NPL-1.1]: text/NPL-1.1.txt
 [NPOSL-3.0]: text/NPOSL-3.0.txt
 [NRL]: text/NRL.txt
+[NTIA-PD]: text/NTIA-PD.txt
 [NTP]: text/NTP.txt
 [NTP-0]: text/NTP-0.txt
 [Nunit]: text/Nunit.txt
@@ -1239,6 +1372,7 @@ The following licenses have been generated from the license list version 2730e34
 [OSL-2.0]: text/OSL-2.0.txt
 [OSL-2.1]: text/OSL-2.1.txt
 [OSL-3.0]: text/OSL-3.0.txt
+[OSSP]: text/OSSP.txt
 [PADL]: text/PADL.txt
 [Parity-6.0.0]: text/Parity-6.0.0.txt
 [Parity-7.0.0]: text/Parity-7.0.0.txt
@@ -1252,6 +1386,7 @@ The following licenses have been generated from the license list version 2730e34
 [PolyForm-Noncommercial-1.0.0]: text/PolyForm-Noncommercial-1.0.0.txt
 [PolyForm-Small-Business-1.0.0]: text/PolyForm-Small-Business-1.0.0.txt
 [PostgreSQL]: text/PostgreSQL.txt
+[PPL]: text/PPL.txt
 [PSF-2.0]: text/PSF-2.0.txt
 [psfrag]: text/psfrag.txt
 [psutils]: text/psutils.txt
@@ -1270,6 +1405,7 @@ The following licenses have been generated from the license list version 2730e34
 [RSA-MD]: text/RSA-MD.txt
 [RSCPL]: text/RSCPL.txt
 [Ruby]: text/Ruby.txt
+[Ruby-pty]: text/Ruby-pty.txt
 [SAX-PD]: text/SAX-PD.txt
 [SAX-PD-2.0]: text/SAX-PD-2.0.txt
 [Saxpath]: text/Saxpath.txt
@@ -1277,10 +1413,12 @@ The following licenses have been generated from the license list version 2730e34
 [SchemeReport]: text/SchemeReport.txt
 [Sendmail]: text/Sendmail.txt
 [Sendmail-8.23]: text/Sendmail-8.23.txt
+[Sendmail-Open-Source-1.1]: text/Sendmail-Open-Source-1.1.txt
 [SGI-B-1.0]: text/SGI-B-1.0.txt
 [SGI-B-1.1]: text/SGI-B-1.1.txt
 [SGI-B-2.0]: text/SGI-B-2.0.txt
 [SGI-OpenGL]: text/SGI-OpenGL.txt
+[SGMLUG-PM]: text/SGMLUG-PM.txt
 [SGP4]: text/SGP4.txt
 [SHL-0.5]: text/SHL-0.5.txt
 [SHL-0.51]: text/SHL-0.51.txt
@@ -1289,10 +1427,12 @@ The following licenses have been generated from the license list version 2730e34
 [SISSL-1.2]: text/SISSL-1.2.txt
 [SL]: text/SL.txt
 [Sleepycat]: text/Sleepycat.txt
+[SMAIL-GPL]: text/SMAIL-GPL.txt
 [SMLNJ]: text/SMLNJ.txt
 [SMPPL]: text/SMPPL.txt
 [SNIA]: text/SNIA.txt
 [snprintf]: text/snprintf.txt
+[SOFA]: text/SOFA.txt
 [softSurfer]: text/softSurfer.txt
 [Soundex]: text/Soundex.txt
 [Spencer-86]: text/Spencer-86.txt
@@ -1306,6 +1446,7 @@ The following licenses have been generated from the license list version 2730e34
 [SSPL-1.0]: text/SSPL-1.0.txt
 [StandardML-NJ]: text/StandardML-NJ.txt
 [SugarCRM-1.1.3]: text/SugarCRM-1.1.3.txt
+[SUL-1.0]: text/SUL-1.0.txt
 [Sun-PPP]: text/Sun-PPP.txt
 [Sun-PPP-2000]: text/Sun-PPP-2000.txt
 [SunPro]: text/SunPro.txt
@@ -1317,16 +1458,19 @@ The following licenses have been generated from the license list version 2730e34
 [TCP-wrappers]: text/TCP-wrappers.txt
 [TermReadKey]: text/TermReadKey.txt
 [TGPPL-1.0]: text/TGPPL-1.0.txt
+[ThirdEye]: text/ThirdEye.txt
 [threeparttable]: text/threeparttable.txt
 [TMate]: text/TMate.txt
 [TORQUE-1.1]: text/TORQUE-1.1.txt
 [TOSL]: text/TOSL.txt
 [TPDL]: text/TPDL.txt
 [TPL-1.0]: text/TPL-1.0.txt
+[TrustedQSL]: text/TrustedQSL.txt
 [TTWL]: text/TTWL.txt
 [TTYP0]: text/TTYP0.txt
 [TU-Berlin-1.0]: text/TU-Berlin-1.0.txt
 [TU-Berlin-2.0]: text/TU-Berlin-2.0.txt
+[Ubuntu-font-1.0]: text/Ubuntu-font-1.0.txt
 [UCAR]: text/UCAR.txt
 [UCL-1.0]: text/UCL-1.0.txt
 [ulem]: text/ulem.txt
@@ -1337,6 +1481,8 @@ The following licenses have been generated from the license list version 2730e34
 [Unicode-TOU]: text/Unicode-TOU.txt
 [UnixCrypt]: text/UnixCrypt.txt
 [Unlicense]: text/Unlicense.txt
+[Unlicense-libtelnet]: text/Unlicense-libtelnet.txt
+[Unlicense-libwhirlpool]: text/Unlicense-libwhirlpool.txt
 [UPL-1.0]: text/UPL-1.0.txt
 [URT-RLE]: text/URT-RLE.txt
 [Vim]: text/Vim.txt
@@ -1348,11 +1494,16 @@ The following licenses have been generated from the license list version 2730e34
 [w3m]: text/w3m.txt
 [Watcom-1.0]: text/Watcom-1.0.txt
 [Widget-Workshop]: text/Widget-Workshop.txt
+[WordNet]: text/WordNet.txt
 [Wsuipa]: text/Wsuipa.txt
+[WTFNMFPL]: text/WTFNMFPL.txt
 [WTFPL]: text/WTFPL.txt
+[wwl]: text/wwl.txt
 [wxWindows]: text/wxWindows.txt
 [X11]: text/X11.txt
 [X11-distribute-modifications-variant]: text/X11-distribute-modifications-variant.txt
+[X11-no-permit-persons]: text/X11-no-permit-persons.txt
+[X11-swapped]: text/X11-swapped.txt
 [Xdebug-1.03]: text/Xdebug-1.03.txt
 [Xerox]: text/Xerox.txt
 [Xfig]: text/Xfig.txt
@@ -1378,6 +1529,7 @@ The following licenses have been generated from the license list version 2730e34
 [ZPL-2.1]: text/ZPL-2.1.txt
 [389-exception]: text/389-exception.txt
 [Asterisk-exception]: text/Asterisk-exception.txt
+[Asterisk-linking-protocols-exception]: text/Asterisk-linking-protocols-exception.txt
 [Autoconf-exception-2.0]: text/Autoconf-exception-2.0.txt
 [Autoconf-exception-3.0]: text/Autoconf-exception-3.0.txt
 [Autoconf-exception-generic]: text/Autoconf-exception-generic.txt
@@ -1386,11 +1538,15 @@ The following licenses have been generated from the license list version 2730e34
 [Bison-exception-1.24]: text/Bison-exception-1.24.txt
 [Bison-exception-2.2]: text/Bison-exception-2.2.txt
 [Bootloader-exception]: text/Bootloader-exception.txt
+[CGAL-linking-exception]: text/CGAL-linking-exception.txt
 [Classpath-exception-2.0]: text/Classpath-exception-2.0.txt
+[Classpath-exception-2.0-short]: text/Classpath-exception-2.0-short.txt
 [CLISP-exception-2.0]: text/CLISP-exception-2.0.txt
 [cryptsetup-OpenSSL-exception]: text/cryptsetup-OpenSSL-exception.txt
+[Digia-Qt-LGPL-exception-1.1]: text/Digia-Qt-LGPL-exception-1.1.txt
 [DigiRule-FOSS-exception]: text/DigiRule-FOSS-exception.txt
 [eCos-exception-2.0]: text/eCos-exception-2.0.txt
+[erlang-otp-linking-exception]: text/erlang-otp-linking-exception.txt
 [Fawkes-Runtime-exception]: text/Fawkes-Runtime-exception.txt
 [FLTK-exception]: text/FLTK-exception.txt
 [fmt-exception]: text/fmt-exception.txt
@@ -1404,14 +1560,18 @@ The following licenses have been generated from the license list version 2730e34
 [GNOME-examples-exception]: text/GNOME-examples-exception.txt
 [GNU-compiler-exception]: text/GNU-compiler-exception.txt
 [gnu-javamail-exception]: text/gnu-javamail-exception.txt
+[GPL-3.0-389-ds-base-exception]: text/GPL-3.0-389-ds-base-exception.txt
 [GPL-3.0-interface-exception]: text/GPL-3.0-interface-exception.txt
 [GPL-3.0-linking-exception]: text/GPL-3.0-linking-exception.txt
 [GPL-3.0-linking-source-exception]: text/GPL-3.0-linking-source-exception.txt
 [GPL-CC-1.0]: text/GPL-CC-1.0.txt
 [GStreamer-exception-2005]: text/GStreamer-exception-2005.txt
 [GStreamer-exception-2008]: text/GStreamer-exception-2008.txt
+[harbour-exception]: text/harbour-exception.txt
 [i2p-gpl-java-exception]: text/i2p-gpl-java-exception.txt
+[Independent-modules-exception]: text/Independent-modules-exception.txt
 [KiCad-libraries-exception]: text/KiCad-libraries-exception.txt
+[kvirc-openssl-exception]: text/kvirc-openssl-exception.txt
 [LGPL-3.0-linking-exception]: text/LGPL-3.0-linking-exception.txt
 [libpri-OpenH323-exception]: text/libpri-OpenH323-exception.txt
 [Libtool-exception]: text/Libtool-exception.txt
@@ -1420,19 +1580,25 @@ The following licenses have been generated from the license list version 2730e34
 [LLVM-exception]: text/LLVM-exception.txt
 [LZMA-exception]: text/LZMA-exception.txt
 [mif-exception]: text/mif-exception.txt
+[mxml-exception]: text/mxml-exception.txt
 [Nokia-Qt-exception-1.1]: text/Nokia-Qt-exception-1.1.txt
 [OCaml-LGPL-linking-exception]: text/OCaml-LGPL-linking-exception.txt
 [OCCT-exception-1.0]: text/OCCT-exception-1.0.txt
 [OpenJDK-assembly-exception-1.0]: text/OpenJDK-assembly-exception-1.0.txt
 [openvpn-openssl-exception]: text/openvpn-openssl-exception.txt
+[PCRE2-exception]: text/PCRE2-exception.txt
+[polyparse-exception]: text/polyparse-exception.txt
 [PS-or-PDF-font-exception-20170817]: text/PS-or-PDF-font-exception-20170817.txt
 [QPL-1.0-INRIA-2004-exception]: text/QPL-1.0-INRIA-2004-exception.txt
 [Qt-GPL-exception-1.0]: text/Qt-GPL-exception-1.0.txt
 [Qt-LGPL-exception-1.1]: text/Qt-LGPL-exception-1.1.txt
 [Qwt-exception-1.0]: text/Qwt-exception-1.0.txt
+[romic-exception]: text/romic-exception.txt
+[RRDtool-FLOSS-exception-2.0]: text/RRDtool-FLOSS-exception-2.0.txt
 [SANE-exception]: text/SANE-exception.txt
 [SHL-2.0]: text/SHL-2.0.txt
 [SHL-2.1]: text/SHL-2.1.txt
+[Simple-Library-Usage-exception]: text/Simple-Library-Usage-exception.txt
 [stunnel-exception]: text/stunnel-exception.txt
 [SWI-exception]: text/SWI-exception.txt
 [Swift-exception]: text/Swift-exception.txt

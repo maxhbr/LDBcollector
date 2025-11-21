@@ -5,8 +5,34 @@
     xmlns:ptr="http://www.w3.org/2009/pointers#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
   <spdx:ListedLicense rdf:about="http://spdx.org/licenses/GPL-1.0-only">
+    <spdx:crossRef>
+      <spdx:CrossRef>
+        <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</spdx:isWayBackLink>
+        <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</spdx:isValid>
+        <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</spdx:isLive>
+        <spdx:url>https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html</spdx:url>
+        <spdx:timestamp>2025-11-19T21:05:37Z</spdx:timestamp>
+        <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >0</spdx:order>
+        <spdx:match>N/A</spdx:match>
+      </spdx:CrossRef>
+    </spdx:crossRef>
+    <spdx:standardLicenseHeaderTemplate>Copyright (C) &lt;&lt;var;name="copyright";original="19xx name of author";match=".+"&gt;&gt;
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; version 1.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+</spdx:standardLicenseHeaderTemplate>
+    <rdfs:comment>This license was released: February 1989. This license identifier refers to the choice to use the code under GPL-1.0-only, as distinguished from the use of code under GPL-1.0-or-later (i.e., GPL-1.0 or some later version). The license notice (as seen in the Standard License Header field below) states which of these applies to the code in the file. The example in the How to Apply These Terms appendix of the license shows the "or later" approach.</rdfs:comment>
+    <spdx:isDeprecatedLicenseId rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</spdx:isDeprecatedLicenseId>
     <spdx:standardLicenseHeaderHtml>
-      Copyright (C) &lt;var class="replaceable-license-text"&gt; 19xx name of author&lt;/var&gt;
+      Copyright (C) &lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .+"&gt; 19xx name of author&lt;/span&gt;&lt;/var&gt;
       &lt;p&gt;
         This program is free software; you can redistribute it and/or
         modify it under the terms of the GNU General Public License
@@ -27,13 +53,19 @@
       &lt;/p&gt;
 
     </spdx:standardLicenseHeaderHtml>
-    <rdfs:comment>This license was released: February 1989. This license identifier refers to the choice to use the code under GPL-1.0-only, as distinguished from the use of code under GPL-1.0-or-later (i.e., GPL-1.0 or some later version). The license notice (as seen in the Standard License Header field below) states which of these applies to the code in the file. The example in the How to Apply These Terms appendix of the license shows the "or later" approach.</rdfs:comment>
-    <spdx:standardLicenseTemplate>&lt;&lt;beginOptional&gt;&gt;GNU GENERAL PUBLIC LICENSE
+    <spdx:name>GNU General Public License v1.0 only</spdx:name>
+    <spdx:standardLicenseHeader>Copyright (C) 19xx name of author
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; version 1.
 
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+</spdx:standardLicenseHeader>
+    <spdx:standardLicenseTemplate>&lt;&lt;beginOptional&gt;&gt;GNU GENERAL PUBLIC LICENSE
 Version 1, February 1989
 
 &lt;&lt;endOptional&gt;&gt;
-
 Copyright (C) 1989 Free Software Foundation, Inc. 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
@@ -63,23 +95,16 @@ GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MO
    &lt;&lt;var;name="bullet";original="2.";match=".{0,20}"&gt;&gt; You may modify your copy or copies of the Program or any portion of it, and copy and distribute such modifications under the terms of Paragraph 1 above, provided that you also do the following:
 
       &lt;&lt;var;name="bullet";original="a)";match=".{0,20}"&gt;&gt; cause the modified files to carry prominent notices stating that you changed the files and the date of any change; and
-
       &lt;&lt;var;name="bullet";original="b)";match=".{0,20}"&gt;&gt; cause the whole of any work that you distribute or publish, that in whole or in part contains the Program or any part thereof, either with or without modifications, to be licensed at no charge to all third parties under the terms of this General Public License (except that you may choose to grant warranty protection to some or all third parties, at your option).
-
       &lt;&lt;var;name="bullet";original="c)";match=".{0,20}"&gt;&gt; If the modified program normally reads commands interactively when run, you must cause it, when started running for such interactive use in the simplest and most usual way, to print or display an announcement including an appropriate copyright notice and a notice that there is no warranty (or else, saying that you provide a warranty) and that users may redistribute the program under these conditions, and telling the user how to view a copy of this General Public License.
-
       &lt;&lt;var;name="bullet";original="d)";match=".{0,20}"&gt;&gt; You may charge a fee for the physical act of transferring a copy, and you may at your option offer warranty protection in exchange for a fee.
-
    Mere aggregation of another independent work with the Program (or its derivative) on a volume of a storage or distribution medium does not bring the other work under the scope of these terms.
 
    &lt;&lt;var;name="bullet";original="3.";match=".{0,20}"&gt;&gt; You may copy and distribute the Program (or a portion or derivative of it, under Paragraph 2) in object code or executable form under the terms of Paragraphs 1 and 2 above provided that you also do one of the following:
 
       &lt;&lt;var;name="bullet";original="a)";match=".{0,20}"&gt;&gt; accompany it with the complete corresponding machine-readable source code, which must be distributed under the terms of Paragraphs 1 and 2 above; or,
-
       &lt;&lt;var;name="bullet";original="b)";match=".{0,20}"&gt;&gt; accompany it with a written offer, valid for at least three years, to give any third party free (except for a nominal charge for the cost of distribution) a complete machine-readable copy of the corresponding source code, to be distributed under the terms of Paragraphs 1 and 2 above; or,
-
       &lt;&lt;var;name="bullet";original="c)";match=".{0,20}"&gt;&gt; accompany it with the information you received as to where the corresponding source code may be obtained. (This alternative is allowed only for noncommercial distribution and only if you received the program in object code or executable form alone.)
-
    Source code for a work means the preferred form of the work for making modifications to it. For an executable file, complete source code means all the source code for all modules it contains; but, as a special exception, it need not include source code for modules which are standard libraries that accompany the operating system on which the executable file runs, or for standard header files or definitions files that accompany that operating system.
 
    &lt;&lt;var;name="bullet";original="4.";match=".{0,20}"&gt;&gt; You may not copy, modify, sublicense, distribute or transfer the Program except as expressly provided under this General Public License. Any attempt otherwise to copy, modify, sublicense, distribute or transfer the Program is void, and will automatically terminate your rights to use the Program under this License. However, parties who have received copies, or rights to use copies, from you under this General Public License will not have their licenses terminated so long as such parties remain in full compliance.
@@ -99,7 +124,7 @@ GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MO
    &lt;&lt;var;name="bullet";original="9.";match=".{0,20}"&gt;&gt; BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 
    &lt;&lt;var;name="bullet";original="10.";match=".{0,20}"&gt;&gt; IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-
+   
    &lt;&lt;beginOptional&gt;&gt;END OF TERMS AND CONDITIONS
 
 Appendix: How to Apply These Terms to Your New Programs
@@ -133,6 +158,7 @@ Yoyodyne, Inc., hereby disclaims all copyright interest in the program `Gnomovis
 That's all there is to it!
 
 &lt;&lt;endOptional&gt;&gt;</spdx:standardLicenseTemplate>
+    <rdfs:seeAlso>https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html</rdfs:seeAlso>
     <spdx:licenseText>GNU GENERAL PUBLIC LICENSE
 Version 1, February 1989
 
@@ -234,32 +260,6 @@ You should also get your employer (if you work as a programmer) or your school, 
 
 That's all there is to it!
 </spdx:licenseText>
-    <spdx:standardLicenseHeaderTemplate>Copyright (C) &lt;&lt;var;name="copyright";original="19xx name of author";match=".+"&gt;&gt;
-
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; version 1.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
-</spdx:standardLicenseHeaderTemplate>
-    <spdx:name>GNU General Public License v1.0 only</spdx:name>
-    <spdx:crossRef>
-      <spdx:CrossRef>
-        <spdx:timestamp>2024-04-17T05:00:39Z</spdx:timestamp>
-        <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >0</spdx:order>
-        <spdx:url>https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html</spdx:url>
-        <spdx:match>false</spdx:match>
-        <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isWayBackLink>
-        <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</spdx:isValid>
-        <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</spdx:isLive>
-      </spdx:CrossRef>
-    </spdx:crossRef>
-    <spdx:licenseId>GPL-1.0-only</spdx:licenseId>
     <spdx:licenseTextHtml>
     &lt;div class="optional-license-text"&gt; 
       &lt;p&gt;
@@ -344,7 +344,7 @@ You should have received a copy of the GNU General Public License along with thi
 &lt;ul style="list-style:none"&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 0.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 0.&lt;/span&gt;&lt;/var&gt;
         This License Agreement applies to any program or other work which
         contains a notice placed by the copyright holder saying it may
         be distributed under the terms of this General Public License.
@@ -356,7 +356,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 1.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 1.&lt;/span&gt;&lt;/var&gt;
         You may copy and distribute verbatim copies of the Program&amp;apos;s
         source code as you receive it, in any medium, provided that you
         conspicuously and appropriately publish on each copy an appropriate
@@ -369,7 +369,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 2.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 2.&lt;/span&gt;&lt;/var&gt;
         You may modify your copy or copies of the Program or any portion
         of it, and copy and distribute such modifications under the terms
           of Paragraph 1 above, provided that you also do the following:&lt;/p&gt;
@@ -377,13 +377,13 @@ You should have received a copy of the GNU General Public License along with thi
 &lt;ul style="list-style:none"&gt;
           
 &lt;li&gt;
-            &lt;var class="replaceable-license-text"&gt; a)&lt;/var&gt;
+            &lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; a)&lt;/span&gt;&lt;/var&gt;
             cause the modified files to carry prominent notices stating
             that you changed the files and the date of any change; and
           &lt;/li&gt;
           
 &lt;li&gt;
-            &lt;var class="replaceable-license-text"&gt; b)&lt;/var&gt;
+            &lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; b)&lt;/span&gt;&lt;/var&gt;
             cause the whole of any work that you distribute or publish, that
             in whole or in part contains the Program or any part thereof,
             either with or without modifications, to be licensed at no
@@ -393,7 +393,7 @@ You should have received a copy of the GNU General Public License along with thi
           &lt;/li&gt;
           
 &lt;li&gt;
-            &lt;var class="replaceable-license-text"&gt; c)&lt;/var&gt;
+            &lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; c)&lt;/span&gt;&lt;/var&gt;
             If the modified program normally reads commands interactively
             when run, you must cause it, when started running for such
             interactive use in the simplest and most usual way, to
@@ -405,7 +405,7 @@ You should have received a copy of the GNU General Public License along with thi
           &lt;/li&gt;
           
 &lt;li&gt;
-            &lt;var class="replaceable-license-text"&gt; d)&lt;/var&gt;
+            &lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; d)&lt;/span&gt;&lt;/var&gt;
             You may charge a fee for the physical act of
             transferring a copy, and you may at your option
             offer warranty protection in exchange for a fee.
@@ -421,7 +421,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 3.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 3.&lt;/span&gt;&lt;/var&gt;
         You may copy and distribute the Program (or a portion
         or derivative of it, under Paragraph 2) in object code
         or executable form under the terms of Paragraphs 1 and
@@ -430,14 +430,14 @@ You should have received a copy of the GNU General Public License along with thi
 &lt;ul style="list-style:none"&gt;
           
 &lt;li&gt;
-            &lt;var class="replaceable-license-text"&gt; a)&lt;/var&gt;
+            &lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; a)&lt;/span&gt;&lt;/var&gt;
             accompany it with the complete corresponding
             machine-readable source code, which must be distributed
             under the terms of Paragraphs 1 and 2 above; or,
           &lt;/li&gt;
           
 &lt;li&gt;
-            &lt;var class="replaceable-license-text"&gt; b)&lt;/var&gt;
+            &lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; b)&lt;/span&gt;&lt;/var&gt;
             accompany it with a written offer, valid for at least
             three years, to give any third party free (except for a
             nominal charge for the cost of distribution) a complete
@@ -446,7 +446,7 @@ You should have received a copy of the GNU General Public License along with thi
           &lt;/li&gt;
           
 &lt;li&gt;
-            &lt;var class="replaceable-license-text"&gt; c)&lt;/var&gt;
+            &lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; c)&lt;/span&gt;&lt;/var&gt;
             accompany it with the information you received as to where the
             corresponding source code may be obtained. (This alternative
             is allowed only for noncommercial distribution and only if you
@@ -467,7 +467,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 4.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 4.&lt;/span&gt;&lt;/var&gt;
         You may not copy, modify, sublicense, distribute or transfer the
         Program except as expressly provided under this General Public
         License. Any attempt otherwise to copy, modify, sublicense,
@@ -480,7 +480,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 5.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 5.&lt;/span&gt;&lt;/var&gt;
         By copying, distributing or modifying the Program (or any
         work based on the Program) you indicate your acceptance of
           this license to do so, and all its terms and conditions.&lt;/p&gt;
@@ -488,7 +488,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 6.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 6.&lt;/span&gt;&lt;/var&gt;
         Each time you redistribute the Program (or any work based on the
         Program), the recipient automatically receives a license from the
         original licensor to copy, distribute or modify the Program subject
@@ -498,7 +498,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 7.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 7.&lt;/span&gt;&lt;/var&gt;
         The Free Software Foundation may publish revised and/or new
         versions of the General Public License from time to time. Such
         new versions will be similar in spirit to the present version,
@@ -517,7 +517,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 8.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 8.&lt;/span&gt;&lt;/var&gt;
         If you wish to incorporate parts of the Program into other free
         programs whose distribution conditions are different, write to the
         author to ask for permission. For software which is copyrighted by the
@@ -533,7 +533,7 @@ You should have received a copy of the GNU General Public License along with thi
           NO WARRANTY
         &lt;/p&gt;
 
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 9.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 9.&lt;/span&gt;&lt;/var&gt;
           BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
           FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT
           WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER
@@ -548,7 +548,7 @@ You should have received a copy of the GNU General Public License along with thi
       &lt;/li&gt;
       
 &lt;li&gt;
-        &lt;p&gt;&lt;var class="replaceable-license-text"&gt; 10.&lt;/var&gt;
+        &lt;p&gt;&lt;var class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,20}"&gt; 10.&lt;/span&gt;&lt;/var&gt;
         IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
         WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
         REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR
@@ -655,18 +655,6 @@ You should have received a copy of the GNU General Public License along with thi
 
     &lt;/div&gt;
     </spdx:licenseTextHtml>
-    <rdfs:seeAlso>https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html</rdfs:seeAlso>
-    <spdx:standardLicenseHeader>Copyright (C) 19xx name of author
-
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; version 1.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
-</spdx:standardLicenseHeader>
-    <spdx:isDeprecatedLicenseId rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</spdx:isDeprecatedLicenseId>
     <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</spdx:isOsiApproved>
   </spdx:ListedLicense>

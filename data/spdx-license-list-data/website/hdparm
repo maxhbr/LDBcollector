@@ -142,8 +142,8 @@
           <div style="margin-left: 20px;">
             <ul>
              <li>
-               <a href="https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT" rel="rdfs:seeAlso" isValid=true isLive=true isWayBackLink=false match=false timestamp=2024-04-17T05:03:36Z>https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT</a>
-               <!--Tentative way of displaying information <p>isValid: true, isLive: true, isWayBackLink: false, match: false, timestamp: 2024-04-17T05:03:36Z</p> -->
+               <a href="https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT" rel="rdfs:seeAlso" isValid=true isLive=true isWayBackLink=false match=false timestamp=2025-11-19T21:04:29Z>https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT</a>
+               <!--Tentative way of displaying information <p>isValid: true, isLive: true, isWayBackLink: false, match: false, timestamp: 2025-11-19T21:04:29Z</p> -->
              </li>
            </ul>
           </div>
@@ -154,6 +154,18 @@
           <p style="margin-left: 20px;">None</p>
 
       <h2 id="licenseText">Text</h2>
+      
+      <blockquote cite="https://spdx.github.io/spdx-spec/v2.3/license-matching-guidelines-and-templates/">
+          <div style="border: 2px solid grey; padding: 8px">
+		      Text in italicized blue is omittable (see <a href="https://spdx.github.io/spdx-spec/v2.3/license-matching-guidelines-and-templates/#b35-guideline-omittable-text">Matching Guidelines B.3.5</a>).
+		      License or exception text will match to the text for the specified identifier if it either includes or excludes this omittable text.
+			  <br/>
+			  <br/>
+			  Text in red is replaceable (see <a href="https://spdx.github.io/spdx-spec/v2.3/license-matching-guidelines-and-templates/#b34-guideline-replaceable-text">Matching Guidelines B.3.4</a>).
+			  License or exception text will match to the text for the specified identifier if it includes a permitted variant of this replaceable text.
+			  The permitted variants can be found in the corresponding regular expression as shown in title text visible by hovering over the red text.
+	      </div>
+	  </blockquote>
 
       <div property="spdx:licenseText" class="license-text">
       
@@ -171,12 +183,12 @@
             notice remain in the source code as-is.
          </p>
 
-         <div class="replaceable-license-text"> 
+         <div class="replaceable-license-text"><span title="can be replaced with the pattern .{0,5000}"> 
          <p>
             Mark Lord (mlord@pobox.com)
          </p>
 
-         </div>
+         </span></div>
       
       </div>
 
@@ -186,7 +198,7 @@
         
       </div>
       <div property="spdx:standardLicenseTemplate" style="display: none;">
-      BSD-Style Open Source License:&#10;&#10;You may freely use, modify, and redistribute the hdparm program, as either binary or source, or both.&#10;&#10;The only condition is that my name and copyright notice remain in the source code as-is.&#10;&#10;&lt;&lt;var;name=&quot;copyright&quot;;original=&quot;Mark Lord (mlord@pobox.com)  &quot;;match=&quot;.{0,5000}&quot;&gt;&gt;
+      BSD-Style Open Source License:&#10;&#10;You may freely use, modify, and redistribute the hdparm program, as either binary or source, or both.&#10;&#10;The only condition is that my name and copyright notice remain in the source code as-is.&#10;&#10;&lt;&lt;var;name&#61;&quot;copyright&quot;;original&#61;&quot;Mark Lord (mlord@pobox.com)  &quot;;match&#61;&quot;.{0,5000}&quot;&gt;&gt;
       </div>
 
     </div> <!-- /page -->
