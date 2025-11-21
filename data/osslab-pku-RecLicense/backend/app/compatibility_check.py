@@ -90,13 +90,15 @@ def get_dependencies_licenses(file_path):
             mongo_uri = "mongodb://localhost:27017/"
             dr = Z3DependencyResolver(mongo_uri, file_path.split("/")[-1])
             dep_tree = dr.resolve(require_dist)
-            for i in dep_tree:
-                pkg = mongo_pypi.find_one({"name": i, "version": dep_tree[i]})
-                if pkg:
-                    if i in direct_dep:
-                        dep_license[f"direct_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
-                    else:
-                        dep_license[f"indirect_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
+            if dep_tree:
+                
+                for i in dep_tree:
+                    pkg = mongo_pypi.find_one({"name": i, "version": dep_tree[i]})
+                    if pkg:
+                        if i in direct_dep:
+                            dep_license[f"direct_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
+                        else:
+                            dep_license[f"indirect_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
 
     return dep_license , dep_tree, require_dist
 
@@ -204,7 +206,7 @@ def conflict_dection_compliance(res):
     confilct_copyleft_set = set()
     confilct_depend_dict = []
     if root_license not in check_license_list:
-        return [f"The license ({root_license}) of this project is not within our knowledge scope. Please manually check for compliance."],[]
+        return [f"The license ({root_license}) of this project is not within our knowledge scope. Please manually check for compliance."],[],[]
 
     for file in res:
         if file == "LICENSE": 
@@ -287,7 +289,7 @@ def conflict_dection(file_license_results,dependencies):
     return list(confilct_copyleft_set),confilct_depend_dict
 
 if __name__ == "__main__":
-    licenses_in_files, dep_tree,require_dist=license_detection_files("/home/wwxu/RecLicense/backend/temp_files/2024-08-12 12:16:49.123700/test_project","/home/wwxu/RecLicense/backend/temp_files/2024-08-12 12:16:49.123700/test_project.json")
+    licenses_in_files, dep_tree,require_dist=license_detection_files("/data/wwxu/RecLicense/backend/temp_files/2024-10-31 16:00:27.040584/osslab-pku_gfi-bot","/data/wwxu/RecLicense/backend/temp_files/2024-10-31 16:00:27.040584/osslab-pku_gfi-bot.json")
     # depends=depend_detection("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie/temp.json")
     # print(res)
     # print(conflict_dection_compliance(res))

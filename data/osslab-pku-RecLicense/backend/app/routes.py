@@ -19,7 +19,7 @@ logging.basicConfig(
     filename=f"./app/logging/backend.log",
     filemode='a',
     format="%(asctime)s [%(levelname)s] %(message)s",
-    level=logging.INFO
+    level=logging.DEBUG
 )
 job = {}
 lock = threading.Lock()
@@ -38,7 +38,11 @@ def git_check(unzip_path):
     "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
     "compatible_combine_list":compatible_combine_list}
     lock.release()
-def git_check_c(unzip_path):
+def git_check_c(unzip_path: str):
+    """
+    Check the license of the project in the given path.
+    param: unzip_path: str: The path of the unzipped project.
+    """
     licenses_in_files, dep_tree,require_dist=license_detection_files(unzip_path, unzip_path+".json")
     #dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
     if "LICENSE" not in licenses_in_files or not licenses_in_files["LICENSE"]:
@@ -50,7 +54,9 @@ def git_check_c(unzip_path):
     confilct_copyleft_list,confilct_depend_dict,dep_incompatible=conflict_dection_compliance(licenses_in_files)
     rem_lst = []
     if dep_tree is not None and dep_incompatible:
+        logging.info("start remediation")
         rem = get_remediation(mongo_uri = "mongodb://localhost:27017/",package='test_project',version="0.0.1",requires_dist=require_dist,dep_tree=dep_tree,license= licenses_in_files["LICENSE"][0])
+        logging.info("remediation done")
         for i in rem["changes"]:
             rem_lst.append("; ".join(i)) 
     compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
@@ -61,6 +67,7 @@ def git_check_c(unzip_path):
     "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
     "compatible_combine_list":compatible_combine_list,"remediation":rem_lst}
     lock.release()
+    return job[unzip_path]
 
 def get_client_ip():
     if request.headers.getlist("X-Forwarded-For"):

@@ -18,7 +18,7 @@
                   <span style="font-size: 20px;color:white">License Compatibility Check</span>
                 </div>
                 <div class="file-url" v-loading="loading"
-                  element-loading-text="Please be patient. It may take a while...">
+                  element-loading-text="It may take a while... A Project like Pytorch needs about 11 minutes to be resolved completely. Please be patient and do not close the page. ">
                   <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository
                     url. </p>
                   <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
@@ -77,32 +77,6 @@
             </div>
           </div>
         </el-col>
-        <!-- <el-col :span="8">
-            <div class="list"> -->
-        <!-- <el-card style="height: 600px">
-                <div slot="header" class="clearfix">
-                  <span style="font-size: 20px;color:white">Recommendation List</span>
-                </div>
-                <div class="dropdown">
-                  <el-select v-model="cur_option" placeholder="Please choose" @change="sort_license($event)">
-                    <el-option v-for="item in sort_options" :key="item.value" :label="item.label" :value="item.value">
-                    </el-option>
-                  </el-select>
-                </div> -->
-
-        <!-- Reconmmend List -->
-        <!-- <el-table :data="table_data" style="overflow-y: scroll; height: 460px;" :row-class-name="tabel_row_class" empty-text="No data">
-                  <el-table-column label="Compatibility" width="110" align="center">
-                    <template slot-scope="scope">
-                      <div class="circle"></div>
-                    </template>
-                  </el-table-column>
-                  <el-table-column prop="name" label="Name" width="200"></el-table-column>
-                </el-table> -->
-
-        <!-- </el-card> -->
-        <!-- </div>
-          </el-col> -->
       </el-row>
 
       <el-row>
@@ -117,10 +91,6 @@
               <i class="el-icon-warning"></i><span>: Do not support checking the compatibility of this license, please
                 check
                 manually.</span>
-              <!-- <i class="circle" style="border-color: #1230da"></i><span>: Both secondarily compatible and combinatively
-                compatible.</span>
-              <i class="circle" style="border-color: #28d811"></i><span>: Secondarily compatible.</span>
-              <i class="circle" style="border-color: #c7db11"></i><span>: Combinatively compatible.</span> -->
             </div>
             <div id="term-icons">
               <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp:The term is explicitly
@@ -137,20 +107,29 @@
 
       <el-row :gutter="20" style="margin-top: 20px">
         <el-col :span="24">
-
           <span id="upload-span"><b-button id="upload-button" variant="success" @click="upload_file_or_url">Start
               checking</b-button></span>
-          <!-- <span id="back-span"><b-button id="back-button"  @click="back_upload">Previous Step</b-button></span>
-            <span id="question-span"><b-button id="question-button"  @click="enter_questions(false)">Next step</b-button></span>
-            <span id="skip-span"><b-button id="skip-button"  @click="skip_upload">Skip this step</b-button></span> -->
           <span id="reupload-span"><b-button variant="success" @click="reupload">Reupload</b-button></span>
+
+          <!-- 新增：下载报告按钮（初始隐藏，分析完成后显示并启用） -->
+          <span id="download-span">
+            <b-button
+              id="download-button"
+              variant="primary"
+              :disabled="!report_ready"
+              @click="download_report"
+            >
+              Download report (JSON)
+            </b-button>
+          </span>
         </el-col>
       </el-row>
+
       <el-row>
         <el-col :span="24">
           <div style="margin-top: 20px; background: azure; text-align: left;" id="copyleft-area">
             <p>File License Incompatibilities and Project License Conflicts with Dependencies:</p>
-            <div v-for="conflict in check_res.confilct_copyleft_list">
+            <div v-for="conflict in check_res.confilct_copyleft_list" :key="conflict">
               <i class="el-icon-error" style="color: red"></i>
               <span>{{ conflict }}</span>
             </div>
@@ -162,7 +141,7 @@
         <el-col :span="24">
           <div style="margin-top: 20px; background: azure; text-align: left;" id="remediation">
             <p>Remediation suggestions for incompatible dependencies:</p>
-            <div v-for="conflict in check_res.remediation">
+            <div v-for="conflict in check_res.remediation" :key="conflict">
               <i class="el-icon-success" style="color: #28d811"></i>
               <span>{{ conflict }}</span>
             </div>
@@ -172,7 +151,6 @@
 
     </div>
   </div>
-
 </template>
 
 <script>
@@ -191,7 +169,6 @@ export default {
       span_arr: [],
       support_list: [],
       step_active: 0,
-      // licenses: [["MIT"], [ "GPL-2.0-only", "LGPL-2.1-or-later", "BSL-1.0", "Apache-2.0", "GPL-2.0-or-later"], ["LicenseRef-scancode-wordnet", "LicenseRef-scancode-public-domain", "LicenseRef-scancode-other-permissive", "LicenseRef-scancode-mit-old-style"]],
       table_data: [
         { compatibility: 0, name: 'MIT', readability: 59.57333333, usage: 59986 },
         { compatibility: 0, name: 'Apache-2.0', readability: 481.73, usage: 14537 },
@@ -217,23 +194,17 @@ export default {
       static_table: [],
       cur_option: '',
       sort_options: [
-        {
-          label: "Sort By Popularity",
-          value: 0
-        },
-        {
-          label: "Sort By Readability",
-          value: 1
-        },
+        { label: "Sort By Popularity", value: 0 },
+        { label: "Sort By Readability", value: 1 },
       ],
       file: '',
-      loading: false,
       upload_disabled: false,
       git_disabled: false,
       git_address: {
         username: '',
         reponame: ''
       },
+      report_ready: false, // 新增：报告是否可下载
       check_res: {
         compatible_both_list: [],
         compatible_combine_list: [],
@@ -263,6 +234,7 @@ export default {
     $("#compare").hide()
     $("#copyleft-area").hide()
     $("#remediation").hide()
+    $("#download-span").hide() // 新增：初始隐藏“下载报告”按钮
     this.static_table = this.table_data;
     this.axios.post('/api/support_list')
       .then(res => {
@@ -295,7 +267,6 @@ export default {
     //     console.log(res);
     //   }) 
     // },
-
 
     handleAvatarSuccess(res, file) {
       this.imageUrl = URL.createObjectURL(file.raw);
@@ -351,14 +322,11 @@ export default {
 
     // 对推荐列表进行排序
     sort_license(val) {
-      // 流行度
-      // console.log(val);
       if (val == 0) {
         this.table_data.sort((first, second) => {
           return second.usage - first.usage;
         })
       }
-      // 可读性
       if (val == 1) {
         this.table_data.sort((first, second) => {
           return second.readability - first.readability;
@@ -399,15 +367,15 @@ export default {
           if (res.status == 200 && res.data != "URL ERROR") {
             var unzip_path = res.data;
             var timer = window.setInterval(() => {
-              if (this.progress < 50) this.progress += 8; // 每次增加8%
-              if (this.progress > 50 && this.progress < 80) this.progress += 5; // 最多到90%，留10%给最终处理
+              if (this.progress < 50) this.progress += 8;
+              if (this.progress > 50 && this.progress < 80) this.progress += 5;
               if (this.progress >= 80 && this.progress < 90) this.progress += 1;
               if (this.progress >= 90) this.progress = 90;
               config.headers['Content-Type'] = 'application/json'
               this.axios.post('/api/poll', { path: unzip_path }, config)
                 .then(res => {
                   if (res.data != 'doing') {
-                    this.progress = 100; // 完成时设为100%
+                    this.progress = 100;
                     window.clearInterval(timer);
                     this.check_res = res.data;
                     this.upload_done();
@@ -415,13 +383,12 @@ export default {
                 });
             }, 2000)
 
-          } else if (res.data == "URL ERROR") { // git url is wrong
+          } else if (res.data == "URL ERROR") {
             this.$message.error("Make sure the git url is correct!")
           }
           console.log(res);
         })
     },
-
 
     upload_done() {
       if (this.check_res.error) {
@@ -451,6 +418,11 @@ export default {
       if (this.check_res.remediation.length > 0) {
         $("#remediation").show()
       }
+
+      // 新增：分析完成 -> 启用并显示下载按钮
+      this.report_ready = true;
+      $("#download-span").show();
+
       this.loading = false;
     },
 
@@ -471,18 +443,6 @@ export default {
       } else {
         this.$message.error("Make sure there are no conflicts in files until you proceed to next step!")
       }
-
-      // console.log('enter');
-      // $(".file-url").hide()
-      // $("#description").hide()
-      // $("#skip-span").hide()
-      // console.log('tag1');
-      // $("#upload-span").hide()
-      // $("#question-span").hide()
-      // $("#questions").show()
-      // $("#back-span").show()
-
-      // this.step_active = 1
     },
 
     skip_upload() {
@@ -503,14 +463,20 @@ export default {
       $("#copyleft-area").hide()
       $("#remediation").hide()
 
+      // 新增：返回时禁用并隐藏下载按钮
+      this.report_ready = false;
+      $("#download-span").hide();
+
       this.table_data = this.static_table;
-      // this.check_res = {}
       this.check_res.confilct_copyleft_list = [],
-        this.check_res.compatible_both_list = [],
-        this.step_active = 0
+      this.check_res.compatible_both_list = [],
+      this.step_active = 0
     },
 
     reupload() {
+      // 新增：重新上传前，禁用并隐藏下载按钮
+      this.report_ready = false;
+      $("#download-span").hide();
       this.$router.go(0)
     },
 
@@ -608,6 +574,37 @@ export default {
       }
     },
 
+    // 新增：下载报告
+    download_report() {
+  try {
+    // 兼容老环境：不用 ??
+    const raw = (this.check_res !== undefined && this.check_res !== null) ? this.check_res : {};
+    const json = JSON.stringify(raw, null, 2);
+    const blob = new Blob([json], { type: 'application/json;charset=utf-8' });
+
+    const ts = new Date().toISOString().replace(/[:.]/g, '-');
+    let base = 'compat_report';
+
+    // 兼容老环境：不用 ?.
+    if (this.git_address && this.git_address.username && this.git_address.reponame) {
+      base = `${this.git_address.username}-${this.git_address.reponame}-compat_report`;
+    }
+    const filename = `${base}-${ts}.json`;
+
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch (e) {
+    console.error(e);
+    this.$message.error('Failed to download report.');
+  }
+},
+
 
   }
 }
@@ -672,9 +669,6 @@ export default {
   background: #456BD9;
   border: 7px solid #0F1C3F;
   border-radius: 50%;
-  /* width: 15px; */
-  /* margin-left: 10px; */
-  /* font-family: element-icons!important; */
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -749,7 +743,6 @@ export default {
 .icon-success>.temp,
 .icon-wrong>.temp {
   position: relative;
-  /* font-size: 1; */
   height: 20px;
   width: auto;
   margin-left: 15px;

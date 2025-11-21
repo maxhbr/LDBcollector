@@ -3,10 +3,11 @@ import os
 import re
 import json
 from struct import pack
-from xml.etree import ElementTree
+
 import pandas as pd
 from packaging.requirements import Requirement, InvalidRequirement
 import logging
+from lxml import etree
 P2I_FILE = './app/knowledgebase/p2i.csv'
 p2idf = pd.read_csv(P2I_FILE)
 p2idf['import_lower'] = p2idf['import'].str.lower()
@@ -110,7 +111,12 @@ def is_package_json_file(path):
         return False
 
 def parse_pyfile(filename,sondir):
-    content = open(filename, 'r').read()
+    try:
+        with open(filename, 'r') as f:
+            content = f.read()
+    except Exception as e:
+        return set()
+   
     return parse_python_content(content,sondir)
 
 def get_packages(import_name: str) -> set:
@@ -166,37 +172,34 @@ def parse_package_json(package_json):
 
 
 
+from lxml.etree import QName
+
 def parse_pom_content(pom_xml):
     if pom_xml is None:
-        return {}
+        return set()
     result = set()
-
     namespaces = {'xmlns': 'http://maven.apache.org/POM/4.0.0'}
-    root = ElementTree.parse(pom_xml)
+    parser = etree.XMLParser(resolve_entities=False, recover=True)
+    tree = etree.parse(pom_xml, parser)
+    root = tree.getroot()
     properties = {}
     properties_node = root.find(".//xmlns:properties", namespaces=namespaces)
     if properties_node is not None:
         for prop in properties_node:
-            tag = prop.tag
-            i = tag.find('}')
-            if i >= 0:
-                tag = tag[i + 1:]
-            properties[tag] = prop.text
-
+            tag_name = str(prop.tag)
+            if tag_name.startswith('{'):
+                tag_name = tag_name.split('}', 1)[1]
+            properties[tag_name] = prop.text
     deps = root.findall(".//xmlns:dependency", namespaces=namespaces)
     for d in deps:
         group_id = d.find("xmlns:groupId", namespaces=namespaces)
         artifact_id = d.find("xmlns:artifactId", namespaces=namespaces)
-        version = d.find("xmlns:version", namespaces=namespaces)
         group_id_text = ""
         artifact_id_text = ""
-        #version_text = ""
         if group_id is not None and group_id.text is not None:
             group_id_text = replace_variables_in_pom(group_id.text, properties)
         if artifact_id is not None and artifact_id.text is not None:
             artifact_id_text = replace_variables_in_pom(artifact_id.text, properties)
-        # if version is not None and version.text is not None:
-        #     version_text = replace_variables_in_pom(version.text, properties)
         result.add(group_id_text + ":" + artifact_id_text)
     return result
 
