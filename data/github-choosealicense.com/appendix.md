@@ -11,7 +11,7 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
 
 <table border style="font-size: xx-small; position: relative">
 {% assign types = "permissions|conditions|limitations" | split: "|" %}
-<tr style="position: sticky; top: 0">
+<tr style="position: sticky; top: 0; z-index: 1000001; background: color-mix(in srgb, var(--backgroundColor) 70%, transparent);">
   <th scope="col" style="text-align: center">License</th>
   {% assign seen_tags = '' %}
   {% for type in types %}
@@ -72,25 +72,24 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
 
 <p>Most open source licenses also have <span class="license-limitations"><span class="license-sprite"></span></span> <b>limitations</b> that usually disclaim warranty and liability, and sometimes expressly exclude patents or trademarks from licenses' grants.</p>
 
-<dl>
-{% assign seen_tags = '' %}
 {% for type in types %}
+### {% if type == "permissions" %}Permissions{% elsif type == "conditions" %}Conditions{% else %}Limitations{% endif %}
+  <dl>
   {% assign rules = site.data.rules[type] | sort: "label" %}
   {% for rule_obj in rules %}
     {% assign req = rule_obj.tag %}
-    {% if seen_tags contains req %}
-      {% continue %}
-    {% endif %}
     <dt id="{{ req }}">{{ rule_obj.label }}</dt>
-    {% capture seen_tags %}{{ seen_tags | append:req }}{% endcapture %}
-    {% for t in types %}
-      {% assign rs = site.data.rules[t] | sort: "label" %}
-      {% for r in rs %}
-        {% if r.tag == req %}
-          <dd class="license-{{t}}"><span class="license-sprite"></span> {{ r.description }}</dd>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
+    <dd class="license-{{ type }}">
+      {% if req contains "--" %}
+        {% assign lite = " lite" %}
+      {% else %}
+        {% assign lite = "" %}
+      {% endif %}
+      <span class="{{ req | append: lite }}">
+        <span class="license-sprite {{ req }}"></span>
+      </span>
+      {{ rule_obj.description }}
+    </dd>
   {% endfor %}
+  </dl>
 {% endfor %}
-</dl>

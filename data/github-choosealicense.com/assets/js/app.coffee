@@ -40,14 +40,15 @@ class Choosealicense
     # Dynamically add annotations as title attribute to rule list items
     for ruletype, rules of window.annotations
       for rule in rules
-        licenseLiElement = $(".license-#{ruletype} .#{rule["tag"]}")
+        # Exclude license elements in the legend
+        licenseLiElement = $(".license-#{ruletype} .#{rule["tag"]}").not("dd.license-#{ruletype} .#{rule["tag"]}")
         tooltipAttr = @tooltipAttributesMapperByRuleType[ruletype]
-        licenseLiElement.attr "aria-label", "#{tooltipAttr.heading}: #{rule.description}"
+        licenseLiElement.attr "aria-label", "#{rule.label} #{tooltipAttr.heading.toLowerCase()}: #{rule.description}"
         licenseLiElement.addClass("hint--bottom
                                    hint--large
                                    hint--no-animate
                                    #{tooltipAttr.color}
-                                   orverride-hint-inline")
+                                   override-hint-inline")
 
   # Initializes Clipboard.js
   initClipboard: ->
@@ -111,14 +112,9 @@ class LicenseSuggestion
 
   # Try to extract the repository full name from the user input
   parseUserInput: (userInput) ->
-    repository = /https?:\/\/github\.com\/(.*?)\/(.+)(\.git)?$/.exec userInput
+    repository = /https?:\/\/github\.com\/([^\/]+)\/([^\/\?#]+)/.exec userInput
     [_, username, project] = repository
-    project = project
-      .split /\/|\.git/
-      .filter (str) -> str
-      .slice 0, 1
-      .join ""
-    return username + '/' + project
+    return username + '/' + project.replace /(\.git)$/, ''
 
   # Displays an indicator and tooltips to the user about the current status
   setStatus: (status="", message="") =>
@@ -143,9 +139,9 @@ class LicenseSuggestion
       callback null, info
     .fail (e) ->
       if e.status == 404
-        callback new Error "Repository <b>#{repositoryFullName}</b> not found."
+        callback new Error "Repository #{repositoryFullName} not found."
       else
-        callback new Error "Network error when trying to get information about <b>#{repositoryFullName}</b>."
+        callback new Error "Network error when trying to get information about #{repositoryFullName}."
 
   # Generates a message showing that a repository is already licensed
   repositoryLicense: (repositoryFullName, license) ->

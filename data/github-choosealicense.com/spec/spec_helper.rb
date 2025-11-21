@@ -27,7 +27,7 @@ end
 def config
   SpecHelper.config ||= begin
     config = Jekyll::Configuration.new.read_config_file config_file
-    config = Jekyll::Utils.deep_merge_hashes(config, source: source)
+    config = Jekyll::Utils.deep_merge_hashes(config, source:)
     Jekyll::Utils.deep_merge_hashes(Jekyll::Configuration::DEFAULTS, config)
   end
 end

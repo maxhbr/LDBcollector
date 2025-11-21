@@ -6,6 +6,7 @@
 
 body {
   background: #fafafa;
+  --backgroundColor: #fafafa;
   color: #5c5855;
   font: 0.875rem/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -13,6 +14,7 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background: #212121;
+    --backgroundColor: #212121;
     color: #d0c8c1;
   }
 
@@ -462,7 +464,7 @@ strong {
 
 
 /* Hint.css Overide */
-.orverride-hint-inline {
+.override-hint-inline {
   display: block;
 }
 
@@ -488,7 +490,7 @@ strong {
 
 .tooltip--permissions:after{
   background-color: #d8f4d7;
-  color: #298625;
+  color: #1a5818;
   border-color: #3dc637;
 }
 
