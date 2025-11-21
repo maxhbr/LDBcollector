@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Realm Platform Extensions License"
 category: "Realm Platform Extensions License"
 shortName: "Realm-Platform-Extensions-2017"
+
+canonicalNameHistory:
+  - "Realm Platform Extensions License 2017"
 
 alternativeNames:
   - "Realm Platform Extensions License 2017"

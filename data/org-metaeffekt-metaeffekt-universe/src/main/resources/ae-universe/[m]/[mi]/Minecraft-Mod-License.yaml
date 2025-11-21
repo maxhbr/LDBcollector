@@ -1,12 +1,15 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Minecraft Mod License"
 category: "Minecraft Mod License"
 shortName: "Minecraft-Mod"
 
 alternativeNames:
+  - "Minecraft Mod Public License Version 1.0.1"
+  - "Minecraft Mod License"
+  - "Minecraft-Mod"
   - "minecraft-mod"
 
 otherIds: 

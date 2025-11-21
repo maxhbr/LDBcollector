@@ -1,11 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Qt Company Exception 1.0 (GPL)"
 category: "GPL Qt Exception"
 shortName: "Qt-Exception-1.0-GPL"
 spdxIdentifier: "Qt-GPL-exception-1.0"
+
+canonicalNameHistory:
+  - "Qt GPL Exception 1.0"
 
 type: "exception"
 

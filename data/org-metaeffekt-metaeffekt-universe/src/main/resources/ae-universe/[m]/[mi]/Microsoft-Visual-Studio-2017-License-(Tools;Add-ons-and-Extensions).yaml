@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft Visual Studio 2017 License (Tools; Add-ons and Extensions)"
+category: "Microsoft Visual Studio"
+shortName: "MS-Visual-Studio-2017-Tools-Add-ons-Extensions"
+
+canonicalNameHistory:
+  - "Microsoft Software License (Visual Studio 2017 Tools)"
+
+alternativeNames:
+  - "MICROSOFT VISUAL STUDIO 2017 TOOLS, ADD-ONs and EXTENSIONS"
+
+otherIds: 
+  - "scancode:ms-visual-studio-2017-tools"

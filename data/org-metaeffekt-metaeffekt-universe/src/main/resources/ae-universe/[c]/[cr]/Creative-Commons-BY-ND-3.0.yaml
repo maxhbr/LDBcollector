@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Creative Commons BY-ND 3.0"
 category: "CC-BY-ND"
 spdxIdentifier: "CC-BY-ND-3.0"
+
+canonicalNameHistory:
+  - "Creative Commons Attribution No Derivatives 3.0 Unported"
+  - "Creative Commons BY-ND 3.0 (unported)"
 
 openCoDEStatus: "not approved"
 
@@ -13,8 +17,11 @@ osiStatus: "ineligible"
 alternativeNames:
   - "Creative Commons Attribution No Derivatives 3.0 Unported"
   - "CC-BY-ND-3.0"
-  - "Creative Commons Attribution-NoDerivs 3.0 Unported"
+  - "CC BY-ND 3.0"
   - "Creative Commons BY-ND 3.0 (unported)"
+  - "Attribution-NoDerivs 3.0 Unported"
+  - "http://creativecommons.org/licenses/by-nd/3.0"
+  - "https://creativecommons.org/licenses/by-nd/3.0"
 
 otherIds: 
   - "scancode:cc-by-nd-3.0"

@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Docbook DTD License"
+category: "Docbook DTD"
+shortName: "Docbook-DTD"
+
+canonicalNameHistory:
+  - "Docbook Simple License"
+
+alternativeNames:
+  - "Docbook Simple License"
+  - "http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip"
+  - "DocBook DTD License"
+
+otherIds: 
+  - "scancode:docbook-dtd"

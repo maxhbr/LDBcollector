@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Permission Terms (Digital Equipment Corporation)"
+category: "Permission"
+shortName: "PT-DEC"
+
+alternativeNames:
+  - "X11-Style (DEC 1)"
+
+otherIds: 
+  - "scancode:x11-dec1"

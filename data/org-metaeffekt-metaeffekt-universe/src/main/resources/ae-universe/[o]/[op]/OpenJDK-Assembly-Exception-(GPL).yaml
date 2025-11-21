@@ -1,11 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "OpenJDK Assembly Exception (GPL)"
 category: "GPL OpenJDK Assembly Exception"
 shortName: "OpenJDK-Assembly-Exception-GPL"
 spdxIdentifier: "OpenJDK-assembly-exception-1.0"
+
+canonicalNameHistory:
+  - "OpenJDK Assembly Exception 1.0"
 
 type: "exception"
 

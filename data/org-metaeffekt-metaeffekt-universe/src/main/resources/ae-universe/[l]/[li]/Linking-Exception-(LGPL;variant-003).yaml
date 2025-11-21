@@ -1,13 +1,19 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Linking Exception (LGPL; variant 003)"
 category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL-003"
 spdxIdentifier: "OCaml-LGPL-linking-exception"
 
+canonicalNameHistory:
+  - "OCaml LGPL Linking Exception"
+
 type: "exception"
+
+alternativeNames:
+  - "OCaml-LGPL-linking-exception"
 
 otherIds: 
   - "scancode:ocaml-lgpl-linking-exception"

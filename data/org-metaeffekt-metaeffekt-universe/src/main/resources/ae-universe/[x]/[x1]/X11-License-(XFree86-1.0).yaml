@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "X11 License (XFree86 1.0)"
+category: "X11"
+shortName: "X11-XFree86-1.0"
+
+canonicalNameHistory:
+  - "XFree86 Permission"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "XFree86 1.0 license."
+  - "XFree86 License 1.0"
+  - "XFree86 Permission"
+
+otherIds: 
+  - "scancode:xfree86-1.0"

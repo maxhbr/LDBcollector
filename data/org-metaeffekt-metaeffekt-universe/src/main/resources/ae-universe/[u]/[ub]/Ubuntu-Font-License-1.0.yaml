@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Ubuntu Font License 1.0"
 category: "Ubuntu Font License"
-shortName: "Ubuntu-Font-1.0"
+spdxIdentifier: "Ubuntu-font-1.0"
+
+canonicalNameHistory:
+  - "Ubuntu Font Licence 1.0"
 
 openCoDEStatus: "approved"
 

@@ -1,8 +1,15 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (Sun Microsystems)"
 category: "Permission"
-shortName: "PT-Sun"
+spdxIdentifier: "Sun-PPP-2000"
 
+alternativeNames:
+  - "Permission Terms (Sun Microsystems)"
+  - "Sun PPP License (2000)"
+  - "Sun-PPP-2000"
+
+otherIds: 
+  - "scancode:sun-ppp-2000"

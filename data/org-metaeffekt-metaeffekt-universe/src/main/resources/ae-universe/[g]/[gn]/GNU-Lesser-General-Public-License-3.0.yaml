@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "GNU Lesser General Public License 3.0"
 category: "LGPL"
@@ -72,7 +72,7 @@ alternativeNames:
   - "Lesser GPL 3.0"
   - "The GNU Lesser General Public License, Versions 2.1 and 3"
   - "LGPL-3"
-  - "https://www.gnu.org/licenses/lgpl-3.0.txt"
+  - "https://www.gnu.org/licenses/lgpl-3.0"
 
 otherIds: 
   - "scancode:lgpl-3.0"

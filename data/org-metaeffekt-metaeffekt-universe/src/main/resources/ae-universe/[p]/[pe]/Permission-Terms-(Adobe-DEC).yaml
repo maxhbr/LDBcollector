@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Permission Terms (Adobe-DEC)"
+category: "Permission"
+shortName: "PT-Adobe-DEC"
+
+canonicalNameHistory:
+  - "X11-Style (Adobe-DEC)"
+
+alternativeNames:
+  - "X11-Style (Adobe-DEC)"
+
+otherIds: 
+  - "scancode:x11-adobe-dec"

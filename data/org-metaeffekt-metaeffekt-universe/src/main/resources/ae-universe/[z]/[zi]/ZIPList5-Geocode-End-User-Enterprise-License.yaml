@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "ZIPList5 Geocode End-User Enterprise License"
 category: "ZIPList5 Geocode End-User Enterprise License Agreement"
 shortName: "ZIPList5-Geocode-EULA-enterprise"
+
+canonicalNameHistory:
+  - "ZIPList5 Geocode End-User Enterprise License Agreement"
 
 alternativeNames:
   - "ZIPList5 Geocode End-User Enterprise License Agreement"

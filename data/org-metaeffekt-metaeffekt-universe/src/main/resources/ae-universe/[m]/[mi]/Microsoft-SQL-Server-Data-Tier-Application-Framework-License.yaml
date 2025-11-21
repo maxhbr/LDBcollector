@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft SQL Server Data-Tier Application Framework License"
+category: "Microsoft SQL Server Data-Tier"
+shortName: "MS-SQL-Server-Data-Tier-AF-2022"
+
+canonicalNameHistory:
+  - "Microsoft Software License (Data-Tier Application Framework)"
+
+otherIds: 
+  - "scancode:ms-data-tier-af-2022"

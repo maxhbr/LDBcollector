@@ -1,13 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "NCBI Public Domain Notice"
-category: "NCBI Public Domain Notice"
-shortName: "ncbi"
+category: "NCBI PD"
+spdxIdentifier: "NCBI-PD"
 
 alternativeNames:
   - "NCBI Public Domain Notice"
+  - "NCBI-PD"
 
 otherIds: 
   - "scancode:ncbi"

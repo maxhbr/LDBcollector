@@ -1,8 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BSD 2-Clause License (copyright holder variant; retain first lines)"
 category: "BSD"
-shortName: "BSD-2-Clause-copyright-retain-first-lines"
+spdxIdentifier: "BSD-2-Clause-first-lines"
 
+canonicalNameHistory:
+  - "BSD 2-Clause License (copyright holder variant; variant 001)"
+
+otherIds: 
+  - "scancode:bsd-2-clause-first-lines"

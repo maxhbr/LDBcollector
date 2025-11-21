@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Unicode License 3.0"
 category: "Unicode License"
 spdxIdentifier: "Unicode-3.0"
+
+canonicalNameHistory:
+  - "Unicode License v3"
 
 alternativeNames:
   - "Unicode-3.0"
@@ -12,3 +15,5 @@ alternativeNames:
   - "Unicode License 3.0"
   - "UNICODE LICENSE V3"
 
+otherIds: 
+  - "scancode:unicode-v3"

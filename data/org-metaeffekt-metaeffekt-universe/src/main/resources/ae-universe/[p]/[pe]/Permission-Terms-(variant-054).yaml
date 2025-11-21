@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (variant 054)"
 category: "Permission"
 shortName: "PT-Var054"
+
+canonicalNameHistory:
+  - "Permission Terms Var054"
+  - "OSF 1990 License"
 
 otherIds: 
   - "scancode:osf-1990"

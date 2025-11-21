@@ -1,12 +1,12 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BSD 4-Clause License (without endorsement clause; variant 001)"
 category: "BSD"
 shortName: "BSD-4-Clause-without-endorsement-001"
 
-openCoDEStatus: "approved"
+canonicalNameHistory:
+  - "BSD 2-Clause License (with advertizing clause) var-001"
+  - "BSD 2-Clause License (with advertizing clause; variant 001)"
 
-otherIds: 
-  - "scancode:bsd-2-clause-plus-advertizing"

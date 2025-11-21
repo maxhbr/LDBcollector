@@ -1,17 +1,15 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Broadcom CFE License"
 category: "Broadcom CFE License"
-spdxIdentifier: "DEC-3-Clause"
+shortName: "broadcom-cfe-license"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "broadcom-cfe"
-  - "DEC-3-Clause"
-  - "DEC 3-Clause License"
 
 otherIds: 
   - "scancode:broadcom-cfe"

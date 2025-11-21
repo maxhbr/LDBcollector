@@ -1,0 +1,25 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "MIT License (modern)"
+category: "MIT"
+shortName: "MIT-modern"
+spdxIdentifier: "MIT-Modern-Variant"
+
+canonicalNameHistory:
+  - "MIT License Modern Variant"
+  - "MIT Old Style License (variant 002)"
+  - "MIT Old Style License (002)"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "MIT-Modern-Variant"
+  - "MIT License Modern Variant"
+  - "https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants"
+  - "https://ptolemy.berkeley.edu/copyright.htm"
+  - "https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html"
+
+otherIds: 
+  - "scancode:mit-modern"

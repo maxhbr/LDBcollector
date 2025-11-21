@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "GNU Compile Exception"
 category: "GNU Compile Exception"
 spdxIdentifier: "GNU-compiler-exception"
+
+canonicalNameHistory:
+  - "GNU IO Library Exception 2.0"
 
 type: "exception"
 

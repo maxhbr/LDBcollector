@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft .NET Library License"
+category: "Microsoft .NET Library"
+shortName: "MS-NET-Library"
+
+canonicalNameHistory:
+  - "Microsoft Software License (.NET Library)"
+
+alternativeNames:
+  - "Microsoft .NET Library License"
+  - "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm"
+  - "https://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm"
+  - "http://go.microsoft.com/fwlink/?LinkID=320539"
+
+otherIds: 
+  - "scancode:ms-net-library"

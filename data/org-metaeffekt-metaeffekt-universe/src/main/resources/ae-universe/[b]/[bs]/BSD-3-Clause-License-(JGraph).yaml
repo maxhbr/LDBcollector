@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BSD 3-Clause License (JGraph)"
-category: "BSD-3-Clause-JGraph"
+category: "BSD"
 shortName: "BSD-3-Clause-JGraph"
+
+canonicalNameHistory:
+  - "BSD 3-Clause (JGraph)"
 
 alternativeNames:
   - "JGraph License"

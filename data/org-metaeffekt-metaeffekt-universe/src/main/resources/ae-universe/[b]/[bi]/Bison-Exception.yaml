@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Bison Exception"
 category: "Bison Exception"
 spdxIdentifier: "Bison-exception-1.24"
+
+canonicalNameHistory:
+  - "Bison Exception 2.0"
 
 type: "exception"
 

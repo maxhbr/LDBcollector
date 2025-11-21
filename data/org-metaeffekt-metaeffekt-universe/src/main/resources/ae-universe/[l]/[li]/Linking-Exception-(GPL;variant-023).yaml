@@ -1,11 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Linking Exception (GPL; variant 023)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-023"
 spdxIdentifier: "openvpn-openssl-exception"
+
+canonicalNameHistory:
+  - "OpenVPN OpenSSL Exception"
 
 type: "exception"
 

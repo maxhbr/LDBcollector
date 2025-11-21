@@ -1,12 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "MIT License (variant 003)"
 category: "MIT"
 shortName: "MIT-Var003"
 
-openCoDEStatus: "approved"
+canonicalNameHistory:
+  - "Permission Terms Var021"
+  - "Permission Terms (variant 021)"
 
 otherIds: 
   - "scancode:x11-fsf"

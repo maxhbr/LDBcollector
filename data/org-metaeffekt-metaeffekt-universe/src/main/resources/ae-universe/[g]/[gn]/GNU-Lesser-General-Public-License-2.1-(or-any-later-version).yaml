@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "GNU Lesser General Public License 2.1 (or any later version)"
 category: "LGPL"
@@ -64,6 +64,7 @@ alternativeNames:
   - "GNU Lesser general Public License as published by the Free Software Foundation ; either version 2 . 1 of the License or ( at your option ) any later version"
   - "GNU Lesser General Public License ; as published by the Free Software Foundation ; either version 2 . 1 of ; the License or ( at your option ) any later version"
   - "GNU Lesser General License as published by the Free Software Foundation; either version 2.1 of the License or (at your option) any later version"
+  - "GNU Lesser General Public License 2.1 or later"
 
 otherIds: 
   - "scancode:lgpl-2.1-plus"

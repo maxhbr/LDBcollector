@@ -1,11 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Classpath Exception"
 category: "Classpath Exception"
 shortName: "Classpath-Exception"
 spdxIdentifier: "Classpath-exception-2.0"
+
+canonicalNameHistory:
+  - "Classpath Exception 2.0"
 
 type: "exception"
 

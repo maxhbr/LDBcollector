@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "MUSL Permission"
 category: "MUSL Permission"
 shortName: "MUSL-Permission"
+
+canonicalNameHistory:
+  - "MUSL Attribution Exception"
+  - "Linking Exception (MUSL)"
 
 type: "modifier"
 

@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Permission Terms (Quarterdeck)"
+category: "Permission"
+shortName: "PT-Quarterdeck"
+
+canonicalNameHistory:
+  - "X11-Style (Quarterdeck)"
+
+alternativeNames:
+  - "X11-Style (Quarterdeck)"
+
+otherIds: 
+  - "scancode:x11-quarterdeck"

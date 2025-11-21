@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Sax Public Domain Notice 2.0"
 category: "SAX-PD-2.0"
@@ -10,3 +10,5 @@ alternativeNames:
   - "SAX-PD-2.0"
   - "Sax Public Domain Notice 2.0"
 
+otherIds: 
+  - "scancode:sax-pd-2.0"

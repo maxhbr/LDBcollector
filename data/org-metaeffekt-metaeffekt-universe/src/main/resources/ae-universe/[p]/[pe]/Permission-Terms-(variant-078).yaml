@@ -1,8 +1,12 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (variant 078)"
 category: "Permission"
 shortName: "PT-Var078"
+
+canonicalNameHistory:
+  - "Permission Terms Var078"
+  - "Permission Terms (variant 064)"
 

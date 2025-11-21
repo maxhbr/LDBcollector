@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BSD 4-Clause License (variant 004)"
 category: "BSD"
 shortName: "BSD-4-Clause-004"
+
+canonicalNameHistory:
+  - "BSD 5-Clause License (Geoff Kuenning)"
+  - "BSD 4-Clause License Var004"
 
 openCoDEStatus: "approved"
 

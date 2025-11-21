@@ -1,17 +1,24 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Autoconf Exception (GPL; variant 005)"
 category: "GPL Autoconf Exception"
 shortName: "Autoconf-Exception-GPL-005"
+spdxIdentifier: "Autoconf-exception-macro"
+
+canonicalNameHistory:
+  - "Autoconf Macro Exception"
 
 type: "exception"
 
 alternativeNames:
+  - "Autoconf Exception (GPL; variant 005)"
   - "Autoconf Macro Exception"
   - "Autoconf-Macro-Exception"
   - "autoconf-macro-exception"
+  - "Autoconf-exception-macro"
+  - "Autoconf macro exception"
 
 otherIds: 
   - "scancode:autoconf-macro-exception"

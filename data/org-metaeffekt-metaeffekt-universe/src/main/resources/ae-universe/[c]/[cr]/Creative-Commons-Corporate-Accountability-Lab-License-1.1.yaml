@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Creative Commons Corporate Accountability Lab License 1.1"
 category: "Creative Commons Corporate Accountability Lab"
 shortName: "Corporate-Accountability-Commercial-1.1"
+
+canonicalNameHistory:
+  - "CC + Corporate Accountability Lab"
 
 alternativeNames:
   - "CC + Corporate Accountability Lab"

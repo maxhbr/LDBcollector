@@ -1,13 +1,16 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Creative Commons NC Sampling Plus 1.0"
 category: "CC-NC-Sampling"
 shortName: "CC-NC-Sampling-Plus-1.0"
 
 alternativeNames:
-  - "Creative Commons NonCommercial Sampling Plus 1.0"
+  - "CC NC-SAMPLING+ 1.0"
+  - "NonCommercial Sampling Plus 1.0"
+  - "http://creativecommons.org/licenses/nc-sampling+/1.0"
+  - "https://creativecommons.org/licenses/nc-sampling+/1.0"
 
 otherIds: 
   - "scancode:cc-nc-sampling-plus-1.0"

@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "OpenSSL Linking Exception (AGPL; variant 001)"
+category: "OpenSSL Linking Exception"
+shortName: "OpenSSL-Linking-Exception-AGPL-001"
+
+canonicalNameHistory:
+  - "OpenSSL Exception (agpl)"
+  - "Linking Exception (AGPL; variant 001)"
+
+type: "exception"
+
+alternativeNames:
+  - "AGPL 3.0 with OpenSSL exception"
+  - "GNU Affero General Public License 3.0 (with OpenSSL exception)"
+
+otherIds: 
+  - "scancode:openssl-exception-agpl-3.0"

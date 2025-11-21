@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Open Weights Permissive License 1.0.0"
 category: "Open Weights Permissive"
 shortName: "open-weights-permissive-1.0.0"
+
+canonicalNameHistory:
+  - "Open Weights Permissive License Version 1.0.0"
 
 alternativeNames:
   - "Open Weights Permissive License Version 1.0.0"

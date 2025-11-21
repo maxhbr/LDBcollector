@@ -1,13 +1,19 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Historical Permission Notice and Disclaimer (with MIT disclaimer)"
-category: "HPND-MIT-disclaimer"
+canonicalName: "Historical Permission Notice and Disclaimer (with MIT Disclaimer)"
+category: "HPND-MIT-Disclaimer"
 spdxIdentifier: "HPND-MIT-disclaimer"
+
+canonicalNameHistory:
+  - "Historical Permission Notice and Disclaimer with MIT disclaimer"
+  - "Historical Permission Notice and Disclaimer (with MIT disclaimer)"
 
 alternativeNames:
   - "HPND-MIT-disclaimer"
   - "Historical Permission Notice and Disclaimer with MIT disclaimer"
   - "Historical Permission Notice and Disclaimer (with MIT disclaimer)"
 
+otherIds: 
+  - "scancode:hpnd-mit-disclaimer"

@@ -1,15 +1,19 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Linking Exception (variant 002)"
 category: "Linking Exception"
 shortName: "Linking-Exception-002"
 
+canonicalNameHistory:
+  - "Unlimited Binary Linking Exception"
+
 type: "exception"
 
 alternativeNames:
   - "Unlimited Binary Linking Exception"
+  - "Linking Exception (variant 002)"
 
 otherIds: 
-  - "scancode:unlimited-binary-linking"
+  - "scancode:unlimited-binary-use-exception"

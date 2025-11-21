@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "X11 License (Stanford University)"
+category: "X11"
+shortName: "X11-Stanford"
+
+canonicalNameHistory:
+  - "X11-Style (Stanford University)"
+
+alternativeNames:
+  - "X11-Style (Stanford University)"
+
+otherIds: 
+  - "scancode:x11-stanford"

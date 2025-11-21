@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Creative Commons BY 3.0 (AU)"
+category: "CC-BY"
+spdxIdentifier: "CC-BY-3.0-AU"
+
+alternativeNames:
+  - "Creative Commons BY 3.0 Australia"
+  - "CC-BY-3.0-AU"
+  - "CC BY 3.0 AU"
+  - "Attribution 3.0 Australia"
+  - "http://creativecommons.org/licenses/by/3.0/au"
+  - "https://creativecommons.org/licenses/by/3.0/au"
+
+otherIds: 
+  - "scancode:cc-by-3.0-au"

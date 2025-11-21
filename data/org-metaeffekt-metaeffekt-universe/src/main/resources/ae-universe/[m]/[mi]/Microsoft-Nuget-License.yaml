@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Microsoft Nuget License"
-category: "Microsoft Nuget License"
+canonicalName: "Microsoft NuGet License"
+category: "Microsoft NuGet"
 shortName: "MS-Nuget"
+
+canonicalNameHistory:
+  - "Microsoft Nuget License"
 
 alternativeNames:
   - "http://www.microsoft.com/web/webpi/eula/nuget_release_eula.htm"

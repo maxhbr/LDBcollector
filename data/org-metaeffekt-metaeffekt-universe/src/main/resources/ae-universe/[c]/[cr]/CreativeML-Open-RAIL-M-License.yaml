@@ -1,13 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "CreativeML Open RAIL-M License"
-category: "CreativeML Open RAIL-M License"
+category: "CreativeML Open RAIL-M"
 shortName: "CreativeML-Open-RAIL-M"
 
-alternativeNames:
-  - "CreativeML Open RAIL-M"
+canonicalNameHistory:
+  - "Stable Diffusion License 2022-08-22"
 
 otherIds: 
-  - "scancode:bigscience-open-rail-m"
+  - "scancode:stable-diffusion-2022-08-22"

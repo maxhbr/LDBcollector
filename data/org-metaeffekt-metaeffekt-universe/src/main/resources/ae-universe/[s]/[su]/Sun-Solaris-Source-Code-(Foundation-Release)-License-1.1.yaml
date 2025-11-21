@@ -1,10 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Sun Solaris Source Code (Foundation Release) License 1.1"
-category: "Sun Solaris Source Code (Foundation Release) License"
-shortName: "Sun-SSSCFR-1.1"
+category: "Sun Solaris Source Code"
+shortName: "Sun-SSC-FR-1.1"
 
 alternativeNames:
   - "http://www.mibsoftware.com/librock/librock/license/ssscfr.txt"

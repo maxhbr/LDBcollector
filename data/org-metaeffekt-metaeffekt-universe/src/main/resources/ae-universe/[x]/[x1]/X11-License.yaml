@@ -1,21 +1,25 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "X11 License"
 category: "X11"
 spdxIdentifier: "X11"
 
+canonicalNameHistory:
+  - "X11-Style (X Consortium)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "X License"
-  - "MIT/X Consortium"
   - "X/MIT License"
   - "X11 License"
   - "MIT/X11"
   - "X11 LICENSE"
   - "Expat~X with X exception"
+  - "X11-Style (X Consortium)"
 
 otherIds: 
-  - "scancode:x11-xconsortium"
+  - "scancode:x11"
+  - "scancode:x11-xconsortium-veillard"

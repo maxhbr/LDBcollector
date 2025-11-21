@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Permission Terms (dtoa)"
+category: "Permission"
+spdxIdentifier: "dtoa"
+
+canonicalNameHistory:
+  - "Permission Terms Var019"
+  - "Permission Terms (variant 019)"
+  - "X11-Style (Lucent)"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "David M. Gay dtoa License"
+  - "Permission Terms (dtoa)"
+
+otherIds: 
+  - "scancode:x11-lucent"

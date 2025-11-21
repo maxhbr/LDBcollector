@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "X11 License (swapped)"
+category: "X11"
+spdxIdentifier: "X11-swapped"
+
+canonicalNameHistory:
+  - "X11 swapped final paragraphs"
+  - "X11-Style (swapped)"
+
+alternativeNames:
+  - "X11-swapped"
+  - "X11 swapped final paragraphs"
+  - "X11 License (swapped)"
+
+otherIds: 
+  - "scancode:x11-swapped"

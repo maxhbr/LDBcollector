@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Creative Commons Zero 1.0"
 category: "CC0"
 spdxIdentifier: "CC0-1.0"
+
+canonicalNameHistory:
+  - "CC0 Universal 1.0"
 
 openCoDEStatus: "approved"
 
@@ -15,6 +18,7 @@ alternativeNames:
   - "CC0 1.0"
   - "http://creativecommons.org/publicdomain/zero/1.0/"
   - "Creative Commons Zero v1.0 Universal"
+  - "http://wiki.creativecommons.org/CC0_FAQ"
 
 otherIds: 
   - "scancode:cc0-1.0"

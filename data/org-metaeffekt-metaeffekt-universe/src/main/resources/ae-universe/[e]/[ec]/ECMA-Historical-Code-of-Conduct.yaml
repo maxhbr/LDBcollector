@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "ECMA Historical Code of Conduct"
 category: "ECMA Historical Code of Conduct"
 shortName: "ECMA-Patent-CoC"
+
+canonicalNameHistory:
+  - "ECMA Historical Code of Conduct in Patent Matters"
+  - "Ecma Historical Code of Conduct in Patent Matters"
 
 alternativeNames:
   - "ecma-patent-coc-0"

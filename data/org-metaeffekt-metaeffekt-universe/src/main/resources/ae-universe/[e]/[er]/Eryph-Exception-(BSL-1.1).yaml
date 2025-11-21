@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Eryph Exception (BSL-1.1)"
+category: "Eryph Exception"
+shortName: "Eryph-Exception-BSL-1.1"
+
+canonicalNameHistory:
+  - "Eryph Exception (Business Source License 1.1)"
+
+type: "exception"
+
+alternativeNames:
+  - "Eryph Additional Use Grant for BSL 1.1"
+  - "Eryph additional use grant for BSL"
+

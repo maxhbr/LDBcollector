@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Xerox License"
 category: "Xerox"
 spdxIdentifier: "Xerox"
+
+canonicalNameHistory:
+  - "MIT (export control)"
+  - "MIT with Export Control"
 
 openCoDEStatus: "approved"
 
@@ -13,4 +17,7 @@ alternativeNames:
   - "Xerox License"
   - "XEROX LICENSE"
   - "XEROX License"
+  - "mit-export-control"
 
+otherIds: 
+  - "scancode:mit-export-control"

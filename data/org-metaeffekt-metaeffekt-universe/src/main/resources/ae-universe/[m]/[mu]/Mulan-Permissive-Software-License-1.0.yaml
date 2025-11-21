@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Mulan Permissive Software License 1.0"
 category: "Mulan Permissive"
 spdxIdentifier: "MulanPSL-1.0"
+
+canonicalNameHistory:
+  - "Mulan Permissive Software License 1"
 
 alternativeNames:
   - "木兰宽松许可证, 第1版 木兰宽松许可证， 第1版"

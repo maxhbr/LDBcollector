@@ -1,0 +1,22 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "OpenSSL Linking Exception (GPL; variant 001)"
+category: "OpenSSL Linking Exception"
+shortName: "OpenSSL-Linking-Exception-GPL-001"
+spdxIdentifier: "cryptsetup-OpenSSL-exception"
+
+canonicalNameHistory:
+  - "cryptsetup OpenSSL exception"
+  - "Linking Exception (GPL; variant 022)"
+
+type: "exception"
+
+alternativeNames:
+  - "cryptsetup-OpenSSL-exception"
+  - "cryptsetup OpenSSL exception"
+
+otherIds: 
+  - "scancode:openssl-exception-gpl-2.0"
+  - "scancode:openssl-exception-gpl-3.0-plus"

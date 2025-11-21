@@ -1,15 +1,18 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "STLport License 4.5"
 category: "STLport License"
 shortName: "STLport-4.5"
+spdxIdentifier: "Boehm-GC-without-fee"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "STLport License v4.5"
+  - "STLport License 4.5"
+  - "STLport-4.5"
 
 otherIds: 
   - "scancode:stlport-4.5"

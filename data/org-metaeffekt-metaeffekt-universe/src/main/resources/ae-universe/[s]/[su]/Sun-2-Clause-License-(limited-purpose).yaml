@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Sun 2-Clause License (limited purpose)"
+category: "Sun 2-Clause"
+shortName: "Sun-2-Clause-limited-purpose"
+
+canonicalNameHistory:
+  - "Sun BSD-Style with Additional Restrictions"
+  - "Sun BSD-Style (additional restrictions)"
+
+alternativeNames:
+  - "Sun Open Source License"
+
+otherIds: 
+  - "scancode:sun-bsd-extra"

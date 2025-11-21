@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Permission Terms (OAR)"
+category: "Permission"
+shortName: "PT-OAR"
+spdxIdentifier: "OAR"
+
+canonicalNameHistory:
+  - "X11-Style (OAR)"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "X11-Style (OAR)"
+  - "OAR License"
+
+otherIds: 
+  - "scancode:x11-oar"

@@ -1,12 +1,18 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (HPND; sell)"
 category: "Permission"
 shortName: "PT-Var035"
 spdxIdentifier: "HPND-sell-variant"
 
+canonicalNameHistory:
+  - "Permission Terms Var035"
+  - "Permission Terms (variant 079)"
+  - "Permission Terms (HPND sell)"
+  - "Historical Permission Notice and Disclaimer - sell variant"
+  - "Permission Terms (variant 035)"
+
 otherIds: 
-  - "scancode:historical-sell-variant"
   - "scancode:x11-keith-packard"

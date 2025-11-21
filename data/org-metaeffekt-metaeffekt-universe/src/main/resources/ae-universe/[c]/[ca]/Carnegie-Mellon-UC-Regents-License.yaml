@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Carnegie Mellon UC Regents License"
 category: "Carnegie Mellon UC Regents"
 shortName: "Carnegie-Mellon-UC-Regents"
+
+canonicalNameHistory:
+  - "Carnegie Mellon UC Regents MIT-style License"
 
 alternativeNames:
   - "cmu-mit"

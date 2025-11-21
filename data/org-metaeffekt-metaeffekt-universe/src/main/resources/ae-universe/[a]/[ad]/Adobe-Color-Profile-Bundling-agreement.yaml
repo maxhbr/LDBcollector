@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Adobe Color Profile Bundling agreement"
-category: "Adobe Color Profile Bundling agreement"
-shortName: "adobe-color-profile-bundling"
+canonicalName: "Adobe Color Profile Bundling Agreement"
+category: "Adobe Color Profile"
+shortName: "Adobe-Color-Profile-Bundling"
+
+canonicalNameHistory:
+  - "Adobe Color Profile Bundling agreement"
 
 otherIds: 
   - "scancode:adobe-color-profile-bundling"

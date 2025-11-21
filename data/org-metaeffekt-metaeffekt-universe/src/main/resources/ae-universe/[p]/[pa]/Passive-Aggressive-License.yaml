@@ -1,13 +1,16 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Passive-Aggressive License"
 category: "Passive-Aggressive License"
 shortName: "Passive-Aggressive"
 
 alternativeNames:
-  - "passive-aggressive"
+  - "passive-aggressive license"
+  - "passive-aggressive License"
+  - "passive-aggressive licence"
+  - "passive-aggressive Licence"
 
 otherIds: 
   - "scancode:passive-aggressive"

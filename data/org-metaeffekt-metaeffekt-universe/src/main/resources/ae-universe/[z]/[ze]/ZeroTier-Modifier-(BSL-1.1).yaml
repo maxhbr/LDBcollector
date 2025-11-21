@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "ZeroTier Modifier (BSL-1.1)"
+category: "ZeroTier Modifier"
+shortName: "ZeroTier-Modifier-BSL-1.1"
+
+canonicalNameHistory:
+  - "ZeroTier Modifier (Business Source License 1.1)"
+
+type: "modifier"
+
+alternativeNames:
+  - "ZeroTier additional use grant for BSL"
+  - "zerotier additional use grant for BSL"
+  - "ZeroTier NetworkVirtualization Engine additional use grant"
+

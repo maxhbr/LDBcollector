@@ -1,13 +1,18 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Apple Example Code License"
 category: "Apple Example Code License"
 shortName: "Apple-ExCL"
 
 alternativeNames:
+  - "Apple Example Code License"
   - "apple-excl"
+  - "Apple-ExCL"
+  - "Apple OpenEML License"
+  - "Apple-Open-EML License"
+  - "apple-sample-code-license"
 
 otherIds: 
   - "scancode:apple-excl"

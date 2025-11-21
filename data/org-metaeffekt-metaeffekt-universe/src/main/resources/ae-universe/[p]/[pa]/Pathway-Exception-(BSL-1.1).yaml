@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Pathway Exception (BSL-1.1)"
+category: "Pathway Exception"
+shortName: "Pathway-Exception-BSL-1.1"
+
+canonicalNameHistory:
+  - "Pathway Exception (Business Source License 1.1)"
+
+type: "exception"
+
+alternativeNames:
+  - "Pathway Additional Use Grant for BSL 1.1"
+  - "Pathway additional use grant for BSL"
+

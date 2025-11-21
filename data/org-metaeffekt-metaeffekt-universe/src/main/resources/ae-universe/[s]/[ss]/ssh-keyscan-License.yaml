@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "ssh-keyscan License"
 category: "ssh-keyscan"
@@ -11,3 +11,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "ssh-keyscan"
 
+otherIds: 
+  - "scancode:ssh-keyscan"

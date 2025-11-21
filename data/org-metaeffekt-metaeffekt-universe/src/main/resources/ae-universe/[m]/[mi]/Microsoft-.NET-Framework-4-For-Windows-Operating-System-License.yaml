@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft .NET Framework 4 For Windows Operating System License"
+category: "Microsoft .NET Framework"
+shortName: "MS-Net-Framework-4-Win-Operating-Sys"
+
+canonicalNameHistory:
+  - "Microsoft Software Supplemental License .NET Framework 4"
+
+alternativeNames:
+  - "Microsoft Software Supplemental License - .NET Framework 4"
+  - "MICROSOFT .NET FRAMEWORK 4 FOR MICROSOFT WINDOWS OPERATING SYSTEM"
+
+otherIds: 
+  - "scancode:ms-net-framework-4-supplemental-terms"

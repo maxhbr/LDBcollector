@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "SSH Notice (short)"
 category: "SSH"
 spdxIdentifier: "SSH-short"
+
+canonicalNameHistory:
+  - "SSH short notice"
 
 alternativeNames:
   - "SSH short notice"

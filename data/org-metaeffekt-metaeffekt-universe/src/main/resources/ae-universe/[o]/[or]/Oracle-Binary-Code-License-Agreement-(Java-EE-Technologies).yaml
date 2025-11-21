@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Oracle Binary Code License Agreement (Java EE Technologies)"
 category: "Oracle BCLA"
@@ -8,6 +8,8 @@ shortName: "Oracle-BCLA-Java-EE"
 
 alternativeNames:
   - "Oracle Binary Code License Agreement for Java EE Technologies"
+  - "Oracle Binary Code License Agreement (Java EE Technologies)"
+  - "Oracle-BCLA-Java-EE"
 
 otherIds: 
   - "scancode:oracle-bcl-javaee"

@@ -1,10 +1,17 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (Nice License)"
 category: "Permission"
 shortName: "PT-Nice"
+
+canonicalNameHistory:
+  - "Nice License 1.0.0"
+
+alternativeNames:
+  - "Permission Terms (Nice License)"
+  - "Nice License 1.0.0"
 
 otherIds: 
   - "scancode:nice"

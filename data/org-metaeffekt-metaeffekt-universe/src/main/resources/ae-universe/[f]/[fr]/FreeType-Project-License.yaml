@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "FreeType Project License"
 category: "FreeType"
@@ -17,7 +17,7 @@ alternativeNames:
   - "http://www.freetype.org/FTL.TXT"
   - "http://www.freetype.org/license.html"
   - "https://spdx.org/licenses/ftl"
-  - "FreeType License"
+  - "The FreeType License"
 
 otherIds: 
   - "scancode:freetype"

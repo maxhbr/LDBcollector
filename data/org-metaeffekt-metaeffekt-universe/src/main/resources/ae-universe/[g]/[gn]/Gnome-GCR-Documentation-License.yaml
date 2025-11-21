@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Gnome GCR Documentation License"
 category: "GCR-docs"
@@ -10,3 +10,5 @@ alternativeNames:
   - "GCR-docs"
   - "Gnome GCR Documentation License"
 
+otherIds: 
+  - "scancode:gcr-docs"

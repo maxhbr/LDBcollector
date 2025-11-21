@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Ruby PTY Extension License"
+category: "Ruby-PTY"
+spdxIdentifier: "Ruby-pty"
+
+canonicalNameHistory:
+  - "Ruby pty extension license"
+
+alternativeNames:
+  - "Ruby-pty"
+  - "Ruby pty extension license"
+  - "Ruby PTY Extension License"
+
+otherIds: 
+  - "scancode:ruby-pty"

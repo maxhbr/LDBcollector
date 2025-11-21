@@ -1,11 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "GNU Free Documentation License 1.2 (invariants)"
 category: "GFDL"
 shortName: "GFDL-1.2-invariants"
 spdxIdentifier: "GFDL-1.2-invariants-only"
+
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "GFDL-1.2-invariants-only"

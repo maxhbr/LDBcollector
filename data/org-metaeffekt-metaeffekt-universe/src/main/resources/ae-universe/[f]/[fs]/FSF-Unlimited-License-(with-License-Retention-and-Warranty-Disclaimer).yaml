@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "FSF Unlimited License (with License Retention and Warranty Disclaimer)"
 category: "FSF Unlimited"
 spdxIdentifier: "FSFULLRWD"
+
+canonicalNameHistory:
+  - "FSF Unlimited License (With License Retention and Warranty Disclaimer)"
 
 openCoDEStatus: "approved"
 
@@ -13,3 +16,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:fsf-unlimited-no-warranty"
+  - "scancode:g10-permissive"

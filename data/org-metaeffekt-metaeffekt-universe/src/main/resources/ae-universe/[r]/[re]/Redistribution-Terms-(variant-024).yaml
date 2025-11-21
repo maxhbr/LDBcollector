@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Redistribution Terms (variant 024)"
 category: "RT"
 shortName: "RT-Var024"
+
+canonicalNameHistory:
+  - "BSD-Original-UC-1986 License"
 
 alternativeNames:
   - "bsd-original-uc-1986"

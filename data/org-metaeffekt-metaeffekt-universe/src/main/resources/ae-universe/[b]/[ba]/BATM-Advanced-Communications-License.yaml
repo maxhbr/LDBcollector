@@ -1,8 +1,11 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BATM Advanced Communications License"
 category: "BATM"
 shortName: "BATM-Advanced-Communication"
+
+canonicalNameHistory:
+  - "BSD 3-Clause License (BATM advanced communications)"
 

@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "GNU General Public License 3.0"
 category: "GPL"
@@ -66,6 +66,7 @@ alternativeNames:
   - "GNU General Public License\" .SS \"Version 3"
   - "GNU General Public License as published by the Free Software Foundation; version 3"
   - "version 3 of the GNU General Public License"
+  - "appendix.gpl-3.0"
 
 otherIds: 
   - "scancode:gpl-3.0"

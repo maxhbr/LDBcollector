@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Q Public License 1.0"
 category: "QPL"
 spdxIdentifier: "QPL-1.0"
+
+canonicalNameHistory:
+  - "QPL 1.0"
 
 openCoDEStatus: "approved"
 

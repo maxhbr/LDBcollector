@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (sRGB)"
 category: "Permission"
 shortName: "PT-no-advertising-no-warranty-no-representation"
+
+canonicalNameHistory:
+  - "Permission Terms (sRGB; no advertising; no warranty; no representation)"
 
 otherIds: 
   - "scancode:srgb"

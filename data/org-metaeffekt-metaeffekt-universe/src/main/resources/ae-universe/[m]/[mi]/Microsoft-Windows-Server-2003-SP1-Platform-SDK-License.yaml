@@ -1,10 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft Windows Server 2003 SP1 Platform SDK License"
-category: "Microsoft Windows Server 2003 SP1 Platform SDK License"
-shortName: "MS-Windows-Server-2003-SDK"
+category: "Microsoft Windows Server 2003 SP1 Platform SDK"
+shortName: "MS-Win-Server-2003-SP1-SDK"
 
 alternativeNames:
   - "Microsoft Windows Server 2003 SP1 Platform SDK License"

@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Sentry Exception (BSL-1.1)"
+category: "Sentry Exception"
+shortName: "Sentry-Exception-BSL-1.1"
+
+canonicalNameHistory:
+  - "Sentry Exception (Business Source License 1.1)"
+
+type: "exception"
+

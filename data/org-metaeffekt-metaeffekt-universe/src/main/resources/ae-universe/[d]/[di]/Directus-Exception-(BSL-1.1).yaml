@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Directus Exception (BSL-1.1)"
+category: "Directus Exception"
+shortName: "Directus-Exception-BSL-1.1"
+
+canonicalNameHistory:
+  - "Directus Modifier (Business Source License 1.1)"
+  - "Directus Exception (Business Source License 1.1)"
+
+type: "exception"
+
+alternativeNames:
+  - "directus additional use grant for BSL"
+  - "Directus Exception"
+  - "Directus additional use grant"
+

@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Permission Terms (David R. Hanson)"
+category: "Permission"
+shortName: "PT-Hanson"
+
+canonicalNameHistory:
+  - "X11-Style (David R. Hanson)"
+
+alternativeNames:
+  - "X11-Style (David R. Hanson)"
+
+otherIds: 
+  - "scancode:x11-hanson"

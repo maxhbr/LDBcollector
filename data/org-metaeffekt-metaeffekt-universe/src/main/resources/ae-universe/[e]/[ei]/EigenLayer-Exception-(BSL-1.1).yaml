@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "EigenLayer Exception (BSL-1.1)"
+category: "EigenLayer Exception"
+shortName: "EigenLayer-Exception-BSL-1.1"
+
+canonicalNameHistory:
+  - "EigenLayer Exception (Business Source License 1.1)"
+
+type: "exception"
+
+alternativeNames:
+  - "EigenLayer Additional Use Grant for BSL 1.1"
+  - "EigenLayer additional use grant for BSL"
+

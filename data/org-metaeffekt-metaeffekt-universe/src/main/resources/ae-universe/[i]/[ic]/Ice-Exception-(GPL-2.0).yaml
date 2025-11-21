@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Ice Exception (GPL 2.0)"
 category: "Ice Exception"
 shortName: "Ice-Exception-GPL-2.0"
+
+canonicalNameHistory:
+  - "Ice Exception to GPL 2.0"
 
 type: "exception"
 

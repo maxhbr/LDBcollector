@@ -1,11 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "JavaMail Exception (GPL)"
 category: "GPL JavaMail Exception"
 shortName: "JavaMail-Exception-GPL"
 spdxIdentifier: "gnu-javamail-exception"
+
+canonicalNameHistory:
+  - "GNU JavaMail Exception"
 
 type: "exception"
 

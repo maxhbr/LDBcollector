@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "MySQL Connector ODBC Exception"
 category: "MySQL Connector ODBC Exception"
 shortName: "MySQL-Connector-ODBC-Exception"
+
+canonicalNameHistory:
+  - "MySQL Connector ODBC Exception 2.0"
 
 type: "exception"
 

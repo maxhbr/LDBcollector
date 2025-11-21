@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft SQL Server Compact 4.0 License"
+category: "Microsoft SQL Server Compact"
+shortName: "MS-SQL-Server-Compact-4.0"
+
+canonicalNameHistory:
+  - "Microsoft SQL Server Compact License 4.0"
+
+alternativeNames:
+  - "Microsoft SQL Server Compact 4.0 License"
+
+otherIds: 
+  - "scancode:ms-sql-server-compact-4.0"

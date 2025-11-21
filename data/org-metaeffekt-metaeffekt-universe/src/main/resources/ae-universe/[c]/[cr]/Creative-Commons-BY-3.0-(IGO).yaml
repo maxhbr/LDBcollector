@@ -1,13 +1,16 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Creative Commons BY 3.0 (IGO)"
 category: "CC-BY"
 spdxIdentifier: "CC-BY-3.0-IGO"
 
 alternativeNames:
-  - "Creative Commons Attribution 3.0 IGO"
+  - "CC BY 3.0 IGO"
+  - "Attribution 3.0 IGO"
+  - "http://creativecommons.org/licenses/by/3.0/igo"
+  - "https://creativecommons.org/licenses/by/3.0/igo"
 
 otherIds: 
   - "scancode:cc-by-3.0-igo"

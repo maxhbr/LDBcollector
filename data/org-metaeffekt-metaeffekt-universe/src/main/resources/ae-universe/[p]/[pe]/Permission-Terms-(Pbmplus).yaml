@@ -1,10 +1,15 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (Pbmplus)"
 category: "Permission"
 spdxIdentifier: "HPND-Pbmplus"
+
+canonicalNameHistory:
+  - "Permission Terms Var032"
+  - "Open Group Permissions"
+  - "Permission Terms (variant 032)"
 
 alternativeNames:
   - "Open Group Permissions"

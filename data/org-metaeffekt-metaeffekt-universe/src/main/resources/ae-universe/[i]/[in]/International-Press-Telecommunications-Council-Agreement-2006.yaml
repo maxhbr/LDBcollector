@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "International Press Telecommunications Council Agreement 2006"
 category: "IPTC"
 shortName: "IPTC-2006"
+
+canonicalNameHistory:
+  - "Non-Exclusive License Agreement for International Press Telecommunications Council Specifications and Related Documentation and Software 2006"
 
 alternativeNames:
   - "iptc-2006"

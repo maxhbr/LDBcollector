@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Linking Exception (independent module)"
 category: "Independent Linking Exception"
 shortName: "Linking-Exception-Independent"
+
+canonicalNameHistory:
+  - "Independent Module Linking Exception"
 
 type: "exception"
 

@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "GNU General Public License 2.0"
 category: "GPL"
@@ -37,12 +37,12 @@ alternativeNames:
   - "GNU GPL License, Version 2.0"
   - "GPLv2 "
   - "GPL 2 "
-  - "GPL, Version 2.0"
+  - "GPL, v2"
   - "GPL-v2"
   - "GPL License v.2"
   - "GPL V2 License"
+  - "GPL Version 2.0"
   - "GPL license, Version 2.0"
-  - "GPL v2"
   - "General Public License 2.0"
   - "GPL-2"
   - "GPL2"
@@ -62,6 +62,11 @@ alternativeNames:
   - "GPL ver.2"
   - "GNU General Public License (2.0)"
   - "General Public License as published by the Free Software Foundation, version 2"
+  - "GNU General Public License (Version 2)"
+  - "GNU General Public License (version 2)"
+  - "GNU General Public License (2)"
+  - "GNU General Public License (v2)"
+  - "GNU 通用公共许可证 v.2"
 
 otherIds: 
   - "scancode:gpl-2.0"

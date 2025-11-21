@@ -1,13 +1,16 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "PCRE BSD License Exception"
 category: "PCRE BSD Exception"
 shortName: "PCRE-BSD-Exception"
+spdxIdentifier: "PCRE2-exception"
 
 type: "exception"
 
 alternativeNames:
   - "PCRE BSD License Exception"
 
+otherIds: 
+  - "scancode:pcre2-exception"

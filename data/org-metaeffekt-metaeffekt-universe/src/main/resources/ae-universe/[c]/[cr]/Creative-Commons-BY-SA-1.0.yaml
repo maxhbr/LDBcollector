@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Creative Commons BY-SA 1.0"
 category: "CC-BY-SA"
 spdxIdentifier: "CC-BY-SA-1.0"
+
+canonicalNameHistory:
+  - "Creative Commons Attribution Share Alike 1.0 Generic"
 
 openCoDEStatus: "approved"
 
@@ -13,7 +16,11 @@ osiStatus: "pending"
 alternativeNames:
   - "Creative Commons Attribution Share Alike 1.0"
   - "CC-BY-SA-1.0"
+  - "CC BY-SA 1.0"
   - "Creative Commons Attribution-ShareAlike 1.0"
+  - "Attribution-ShareAlike 1.0 Generic"
+  - "http://creativecommons.org/licenses/by-sa/1.0"
+  - "https://creativecommons.org/licenses/by-sa/1.0"
 
 otherIds: 
   - "scancode:cc-by-sa-1.0"

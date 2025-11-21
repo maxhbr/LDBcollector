@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Restricted Artificial Intelligence License 1.0"
 category: "RAIL"
 shortName: "RAIL-1.0"
+
+canonicalNameHistory:
+  - "Restricted Artificial Intelligence License (RAIL) (version; 1.0)"
 
 osiStatus: "rejected"
 osiCategory: "uncategorized"

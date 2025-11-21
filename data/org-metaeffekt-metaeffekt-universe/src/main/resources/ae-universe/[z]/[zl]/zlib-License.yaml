@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "zlib License"
 category: "zlib"
@@ -13,6 +13,7 @@ osiCategory: "other/miscellaneous"
 
 alternativeNames:
   - "zlib licence"
+  - "zlib license"
   - "http://www.opensource.org/licenses/zlib-license.php"
   - "zlib/libpng license"
   - "The zlib/libpng License"

@@ -1,12 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BSD 3-Clause License (Flex)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-flex"
 
-openCoDEStatus: "approved"
+canonicalNameHistory:
+  - "BSD 3-Clause Flex variant"
+  - "BSD 3-Clause (Flex)"
 
 alternativeNames:
   - "BSD-3-Clause-flex"

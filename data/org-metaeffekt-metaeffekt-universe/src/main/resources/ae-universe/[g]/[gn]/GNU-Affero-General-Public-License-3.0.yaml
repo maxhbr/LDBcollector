@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "GNU Affero General Public License 3.0"
 category: "AGPL"
@@ -36,6 +36,9 @@ alternativeNames:
   - "General Affero Public License version 3"
   - "Affero GNU Public License Version 3"
   - "AGPL-3"
+  - "http://www.gnu.org/licenses/agpl-3.0.txt"
+  - "https://www.gnu.org/licenses/agpl-3.0.txt"
+  - "https://www.gnu.org/licenses/agpl-3.0.html"
 
 otherIds: 
   - "scancode:agpl-3.0"

@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Historical Permission Notice and Disclaimer (with USA export Notice)"
+category: "HPND USA Export"
+shortName: "HPND-USA-Export-Notice"
+spdxIdentifier: "HPND-export-US"
+
+canonicalNameHistory:
+  - "HPND with US Government export control warning"
+  - "HPND (US government export control warning)"
+
+alternativeNames:
+  - "HPND-export-US"
+  - "HPND with US Government export control warning"
+
+otherIds: 
+  - "scancode:hpnd-export-us"

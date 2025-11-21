@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Autoconf Exception (GPL; variant 001)"
 category: "GPL Autoconf Exception"
 shortName: "Autoconf-Exception-GPL-001"
+
+canonicalNameHistory:
+  - "Autoconf Exception 2.0 Var001"
+  - "Autoconf Exception 2.0 (variant 001)"
 
 type: "exception"
 

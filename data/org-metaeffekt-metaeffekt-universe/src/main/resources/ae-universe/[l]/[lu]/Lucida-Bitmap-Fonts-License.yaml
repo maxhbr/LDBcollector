@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Lucida Bitmap Fonts License"
 category: "Lucida-Bitmap-Fonts"
 spdxIdentifier: "Lucida-Bitmap-Fonts"
+
+canonicalNameHistory:
+  - "Lucida Legal Notice"
 
 alternativeNames:
   - "Lucida-Bitmap-Fonts"

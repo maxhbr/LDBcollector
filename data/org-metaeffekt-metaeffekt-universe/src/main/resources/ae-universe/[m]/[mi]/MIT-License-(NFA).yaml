@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "MIT License (NFA)"
-category: "MITNFA"
+category: "MIT"
+shortName: "MIT-NFA"
 spdxIdentifier: "MITNFA"
+
+canonicalNameHistory:
+  - "MIT (NFA) License"
 
 openCoDEStatus: "approved"
 

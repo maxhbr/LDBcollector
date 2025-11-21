@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "NCL Source Code License"
+category: "NCL Source Code"
+spdxIdentifier: "NCL"
+
+canonicalNameHistory:
+  - "Spherepack License"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "Spherepack License"
+  - "NCL Source Code License"
+
+otherIds: 
+  - "scancode:fftpack-2004"

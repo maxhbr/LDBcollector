@@ -1,12 +1,17 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BSD 2-Clause License (Simplified Darwin)"
-category: "BSD 2-Clause Simplified Darwin"
-shortName: "BSD-2-Clause-Simplified-Darwin"
+category: "BSD"
+spdxIdentifier: "BSD-2-Clause-Darwin"
 
 openCoDEStatus: "approved"
+
+alternativeNames:
+  - "BSD 2-Clause License (Simplified Darwin)"
+  - "BSD-2-Clause-Darwin"
+  - "BSD 2-Clause - Ian Darwin variant"
 
 otherIds: 
   - "scancode:bsd-simplified-darwin"

@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Linux Kernel License (OpenIB.org)"
 category: "Linux OpenIB"
 spdxIdentifier: "Linux-OpenIB"
+
+canonicalNameHistory:
+  - "Linux Kernel Variant of OpenIB.org License"
 
 alternativeNames:
   - "Linux Kernel Variant of OpenIB.org license"

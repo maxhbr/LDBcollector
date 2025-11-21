@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Permission Terms (DSC Technologies)"
+category: "Permission"
+shortName: "PT-DSC"
+
+canonicalNameHistory:
+  - "X11-Style (DSC Technologies)"
+
+alternativeNames:
+  - "X11-Style (DSC Technologies)"
+
+otherIds: 
+  - "scancode:x11-dsc"

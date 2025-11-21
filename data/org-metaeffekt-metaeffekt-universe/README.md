@@ -1,14 +1,17 @@
 # {metæffekt}-universe
+
 Project providing insights on the {metæffekt} license database covering
 
-* 2416 modeled license terms,
-* 167 exceptions,
-* 3 modifiers
-* 3 restrictions
-* 232 specific and commonly used license expressions, and
-* 48 consolidated markers.
+* 2849 modeled license terms,
+* 207 exceptions,
+* 14 modifiers
+* 2 restrictions
+* 306 specific and commonly used license expressions, and
+* 60 consolidated markers
 
-as of 10th April 2024.
+as of 06th November 2025.
+
+A total of 3056 terms and exceptions!
 
 The following links provide letter-specific overviews on the license information:
 
@@ -81,6 +84,12 @@ The internal representation (and therefore the content shown here) is based on S
 All company names, organization names, license names, and product names mentioned in this documentation
 are used for identification purposes only.
 
+Please note that this database of license terms yields to be a complete reference of public terms and conditions.
+Yet this also means that licenses are part of the universe that may be insulting, sexist, racist, discriminating or 
+simply unethical. {metaæffekt} does neither promote these licenses nor adopt the language or statements. 
+In order to reduce the visibility of such terms we apply - in contrary to our usual policy - abbreviations in case
+the license name is problematic.
+
 ## Licensing
 
 - [SPDX](https://spdx.org/licenses/) - The license list is used under 
@@ -100,7 +109,7 @@ are used for identification purposes only.
 
 The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 
-Copyright © metaeffekt GmbH 2021-2024. All rights reserved.
+Copyright © metaeffekt GmbH 2021-2025. All rights reserved.
 
 ## Contribution
 As this repository is largely showing converted data. A direct contribution in the form of patches is
@@ -111,7 +120,7 @@ internal dataset to produce the corrected outputs.
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 32.0.8 is used. The version has not been fully processed, yet. Updates pending.
+Currently, ScanCode version 32.3.3 is used as reference version.
 
 Non-approved OSI status information is not yet complete; more details is added incrementally.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected

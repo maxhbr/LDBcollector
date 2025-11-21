@@ -1,0 +1,27 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "BSD 5-Clause License (Entessa)"
+category: "BSD"
+shortName: "BSD-5-Clause-Entessa"
+spdxIdentifier: "Entessa"
+
+canonicalNameHistory:
+  - "Entessa License"
+
+osiStatus: "approved"
+osiCategory: "non-reusable"
+
+alternativeNames:
+  - "Entessa License"
+  - "ENTESSA LICENSE"
+  - "ENTESSA License"
+  - "Entessa Public License"
+  - "ENTESSA Public License"
+  - "BSD 5-Clause License (Entessa)"
+  - "BSD-5-Clause-Entessa"
+
+otherIds: 
+  - "scancode:entessa-1.0"
+  - "osi:Entessa"

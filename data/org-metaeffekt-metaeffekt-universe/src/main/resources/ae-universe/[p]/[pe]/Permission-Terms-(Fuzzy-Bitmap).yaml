@@ -1,11 +1,16 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Permission Terms (Fuzzy Bitmap)"
 category: "Permission"
 spdxIdentifier: "FBM"
 
+canonicalNameHistory:
+  - "Permission Terms (variant 126)"
+
 alternativeNames:
   - "Fuzzy Bitmap License"
 
+otherIds: 
+  - "scancode:fbm"

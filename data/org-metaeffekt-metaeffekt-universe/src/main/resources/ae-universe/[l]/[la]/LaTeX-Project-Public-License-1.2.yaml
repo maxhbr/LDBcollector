@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "LaTeX Project Public License 1.2"
 category: "LPPL"
@@ -13,6 +13,7 @@ alternativeNames:
   - "LPPL 1.2"
   - "LPPL-1.2"
   - "LaTeX Project Public License 1.2"
+  - "LaTeX Project Public License v1.2"
 
 otherIds: 
   - "scancode:lppl-1.2"

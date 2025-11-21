@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "OpenLDAP Public License (undefined)"
 category: "OLDAP"
@@ -9,7 +9,7 @@ shortName: "OLDAP-?"
 unspecific: true
 
 alternativeNames:
-  - "Redistribution and use in source and binary forms, with or without modification, are permitted only as authorized by the OpenLDAP Public License."
+  - "Redistribution and use in source and binary forms, with or without modification, are permitted only as authorized by the OpenLDAP Public License"
   - "Redistribution and use in source and binary forms are permitted only as authorized by the OpenLDAP Public License"
   - "OPENLDAP PUBLIC LICENSE"
 

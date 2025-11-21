@@ -1,10 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Xdebug License 1.03"
 category: "Xdebug"
 spdxIdentifier: "Xdebug-1.03"
+
+canonicalNameHistory:
+  - "Xdebug License v 1.03"
+  - "Xdebug License (Version; 1.03)"
 
 alternativeNames:
   - "Xdebug-1.03"

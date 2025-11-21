@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Data Licence Germany BY 1.0"
 category: "Data Licence BY"
 shortName: "DL-DE-BY-1.0"
+
+canonicalNameHistory:
+  - "Data Licence BY 1.0"
 
 alternativeNames:
   - "Data licence Germany – attribution – Version 1.0"

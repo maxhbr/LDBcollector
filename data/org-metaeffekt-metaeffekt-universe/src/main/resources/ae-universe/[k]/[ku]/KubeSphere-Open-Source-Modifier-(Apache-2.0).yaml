@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "KubeSphere Open Source Modifier (Apache-2.0)"
+category: "KubeSphere Open Source Modifier"
+shortName: "KubeSphere-OS-Modifier-Apache-2.0"
+
+canonicalNameHistory:
+  - "KubeSphere Open Source Modifier (Apache 2.0)"
+
+type: "modifier"
+
+otherIds: 
+  - "scancode:kubesphere-osl-2024"

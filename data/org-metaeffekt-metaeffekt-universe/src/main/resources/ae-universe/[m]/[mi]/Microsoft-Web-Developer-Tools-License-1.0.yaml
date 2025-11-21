@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Microsoft Web Developer Tools License 1.0"
 category: "Microsoft Web Developer Tools"
 shortName: "MS-Web-Developer-Tools-1.0"
+
+canonicalNameHistory:
+  - "Microsoft Web Developer Tools 1.0"
 
 alternativeNames:
   - "Microsoft Web Developer Tools 1.0"

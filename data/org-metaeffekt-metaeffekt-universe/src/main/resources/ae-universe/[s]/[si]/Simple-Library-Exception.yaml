@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Simple Library Exception"
+category: "Simple Exception"
+shortName: "Simple-library-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Simple Library Exception"
+  - "Simple-library-Exception"
+

@@ -1,11 +1,14 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Asterisk Exception"
 category: "Asterisk Exception"
 shortName: "Asterisk-Exception"
 spdxIdentifier: "Asterisk-exception"
+
+canonicalNameHistory:
+  - "Asterisk exception"
 
 type: "exception"
 

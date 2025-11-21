@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Creative Commons BY 2.0 (UK)"
 category: "CC-BY"
@@ -9,7 +9,10 @@ shortName: "CC-BY-2.0-UK"
 osiStatus: "pending"
 
 alternativeNames:
-  - "http://creativecommons.org/licenses/by/2.0/uk/"
+  - "CC BY 2.0 UK"
+  - "Attribution 2.0 UK: England & Wales"
+  - "http://creativecommons.org/licenses/by/2.0/uk"
+  - "https://creativecommons.org/licenses/by/2.0/uk"
   - "http://www.legislation.gov.uk/ukpga/1988/48"
 
 otherIds: 

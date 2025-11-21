@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "SIL Open Font License 1.0"
 category: "OFL"
@@ -15,6 +15,7 @@ alternativeNames:
   - "SIL OPEN FONT LICENSE Version 1.0"
   - "SIL Open Font License, v1.0"
   - "SIL Open Font License, V1.0"
+  - "SIL Open Font License 1.0"
 
 otherIds: 
   - "scancode:ofl-1.0"

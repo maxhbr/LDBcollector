@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "OpenSSH License"
 category: "OpenSSH License"
@@ -10,6 +10,9 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "SSH OpenSSH license"
+  - "SSH-OpenSSH License"
+  - "https://spdx.org/licenses/SSH-OpenSSH"
+  - "licenses.nuget.org/SSH-OpenSSH"
 
 otherIds: 
   - "scancode:openssh"

@@ -1,13 +1,19 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "CodeSourcery 2004"
 category: "CodeSourcery"
 shortName: "CodeSourcery-2004"
+spdxIdentifier: "HPND-merchantability-variant"
+
+canonicalNameHistory:
+  - "Historical Permission Notice and Disclaimer - merchantability variant"
 
 alternativeNames:
   - "CodeSourcery 2004"
+  - "HPND-merchantability-variant"
+  - "Historical Permission Notice and Disclaimer - merchantability variant"
 
 otherIds: 
   - "scancode:codesourcery-2004"

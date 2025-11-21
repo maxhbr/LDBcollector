@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "McRae General Public License 4.r53"
 category: "McRae General Public License"
 shortName: "McRae-GPL-4r53"
+
+canonicalNameHistory:
+  - "McRae General Public License  4.r53"
 
 alternativeNames:
   - "McRae General Public License  4.r53"

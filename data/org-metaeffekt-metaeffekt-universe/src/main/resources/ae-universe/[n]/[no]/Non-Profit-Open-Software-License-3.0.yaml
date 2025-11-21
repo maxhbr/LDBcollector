@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Non-Profit Open Software License 3.0"
 category: "NPOSL"
 spdxIdentifier: "NPOSL-3.0"
+
+canonicalNameHistory:
+  - "NPOSL 3.0"
 
 osiStatus: "approved"
 osiCategory: "uncategorized"

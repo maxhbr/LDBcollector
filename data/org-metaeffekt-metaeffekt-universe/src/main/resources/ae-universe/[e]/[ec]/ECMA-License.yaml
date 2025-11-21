@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "ECMA License"
 category: "ECMA"
@@ -10,6 +10,9 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "ECMA License"
+  - "Ecma-262 Edition 5.1"
+  - "The ECMAScript Language Specification 5.1"
+  - "The ECMAScript Language Specification 262"
 
 otherIds: 
   - "scancode:ecma-documentation"

@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "BSD 3-Clause License (with source modification clause)"
 category: "BSD"
 shortName: "BSD-3-Clause-mark-modification"
+
+canonicalNameHistory:
+  - "BSD 3-Clause License (mark modification)"
 
 openCoDEStatus: "approved"
 

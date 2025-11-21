@@ -1,10 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "T-License (SMP T-Kernel Standard Extension)"
 category: "T-License"
 shortName: "T-License-SMP-T-Kernel-SE"
+
+canonicalNameHistory:
+  - "T-License for SMP T-Kernel Standard Extension"
 
 otherIds: 
   - "scancode:t-license-smp-tkse"

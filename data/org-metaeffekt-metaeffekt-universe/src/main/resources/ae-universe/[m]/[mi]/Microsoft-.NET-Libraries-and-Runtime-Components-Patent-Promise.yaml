@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft .NET Libraries and Runtime Components Patent Promise"
+category: "Microsoft .NET Libraries Runtime Components"
+shortName: "MS-NET-Libraries-Runtime-Components"
+
+canonicalNameHistory:
+  - "Microsoft Patent Promise for .NET Libraries and Runtime Components"
+  - "Microsoft Patent Promise (.NET Libraries and Runtime Components)"
+
+alternativeNames:
+  - "Microsoft Patent Promise for .NET Libraries and Runtime Components"
+
+otherIds: 
+  - "scancode:ms-patent-promise"

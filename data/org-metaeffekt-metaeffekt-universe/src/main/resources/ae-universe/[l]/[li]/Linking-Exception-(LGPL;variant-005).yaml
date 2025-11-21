@@ -1,15 +1,19 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "Linking Exception (LGPL; variant 005)"
 category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL-005"
 spdxIdentifier: "GCC-exception-2.0"
 
+canonicalNameHistory:
+  - "GCC Runtime Library Exception 2.0"
+
 type: "exception"
 
 alternativeNames:
+  - "Linking Exception (LGPL; variant 005)"
   - "GCC exception, Version 2.0"
   - "GCC exception 2.0"
   - "GCC-exception, Version 2.0"

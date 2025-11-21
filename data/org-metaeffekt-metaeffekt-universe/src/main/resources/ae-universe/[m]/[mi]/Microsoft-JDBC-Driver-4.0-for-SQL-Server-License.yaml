@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Microsoft JDBC Driver 4.0 for SQL Server License"
+category: "Microsoft JDBC Driver"
+shortName: "MS-JDBC-Driver-4.0-SQL-Server"
+
+canonicalNameHistory:
+  - "Microsoft Software License (JDBC Driver 4.0 for SQL Server)"
+
+alternativeNames:
+  - "MICROSOFT JDBC DRIVER 4.0 FOR SQL SERVER"
+
+otherIds: 
+  - "scancode:ms-jdbc-driver-40-sql-server"
