@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "X11-Style (Bitstream Charter)",
+  "scancode_key": "x11-bitstream",
+  "spdxid": "Bitstream-Charter",
+  "aliases": [
+  ]
+}

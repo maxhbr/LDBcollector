@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Historical Permission Notice and Disclaimer - documentation variant",
+  "scancode_key": "hpnd-doc",
+  "spdxid": "HPND-doc",
+  "aliases": [
+  ]
+}

@@ -9,7 +9,8 @@
                 "License :: OSI Approved :: Academic Free License (AFL)",
                 "AFLv2",
                 "AFL",
-                "License :: OSI Approved :: Academic Free License"
+              "License :: OSI Approved :: Academic Free License",
+              "ACADEMIC FREE LICENSE _AFL_"
             ],
             "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -40,7 +41,9 @@
               "apache",
               "OSI-Approved-::-Apache-Software-License",
               "LICENSE-APACHE",
-              "Apache other"
+              "Apache other",
+              "APACHE",
+              "APACHE SOFTWARE LICENSE"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -101,7 +104,8 @@
               "BSD-LIKE",
               "bsd",
               "BSD-clause",
-              "bsd license"
+              "bsd license",
+              "BSD"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -203,7 +207,8 @@
                 "License :: OSI Approved :: GNU General Public License (GPL)",
               "GNU General Public License (GPL)",
               "GNU-GPL",
-              "GPL license"
+              "GPL license",
+              "GNU General Public License (GPL)"
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -226,7 +231,9 @@
             "LGPL license",
             "GNU Lesser Public License",
             "lesser general public license",
-            "Lesser GPL"
+            "Lesser GPL",
+            "GNU Lesser General Public",
+            "GNU/GNU Lesser"
           ],
           "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -318,7 +325,11 @@
               "PSF LICENSE",
               "Python Open Source GPL Compatible License Agreement",
               "Software Foundation License",
-              "PSF LICENSE AGREEMENT FOR PYTHON"
+              "PSF LICENSE AGREEMENT FOR PYTHON",
+              "python",
+              "Python license",
+              "PYTHON SOFTWARE FOUNDATION LICENSE",
+              "python software licence"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },

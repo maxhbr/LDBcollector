@@ -29,6 +29,7 @@
         "MIT/X11 (BSD like)",
         "X/MIT",
       "MIT License (X11 License variant)",
-      "X-11"
+      "X-11",
+      "x11"
     ]
 }
