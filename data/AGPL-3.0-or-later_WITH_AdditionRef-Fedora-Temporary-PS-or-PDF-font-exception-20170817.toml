@@ -1,9 +1,0 @@
-[license]
-expression = "AGPL-3.0-or-later WITH AdditionRef-Fedora-Temporary-PS-or-PDF-font-exception-20170817"
-
-status = [ "allowed" ]
-
-usage = '''
-Temporary ID until SPDX assigns final ID.
-See https://gitlab.com/fedora/legal/fedora-license-data/-/issues/554
-'''
