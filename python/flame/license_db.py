@@ -14,7 +14,7 @@ import spdx_license_list
 from enum import Enum
 
 from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, read_config
-from flame.config import LICENSE_OPERATORS_FILE, LICENSE_COMPOUNDS_FILE, LICENSE_AMBIG_FILE, LICENSE_DUALS_FILE
+from flame.config import LICENSE_OPERATORS_FILE, LICENSE_COMPOUNDS_FILE, LICENSE_AMBIG_FILE, LICENSE_DUALS_FILE, LICENSE_NO_VERSION_FILE
 
 from flame.exception import FlameException
 from jsonschema import validate
@@ -41,6 +41,7 @@ AMBIG_TAG = 'ambiguties'
 DUAL_LICENSES_TAG = 'dual-licenses'
 DUAL_NEWER_TAG = 'newer-versions'
 COMPOUNDS_TAG = 'compounds'
+NO_VERSION_TAG = 'no_version'
 
 LICENSE_OPERATORS_TAG = 'license_operators'
 
@@ -145,6 +146,7 @@ class FossLicenses:
         logging.debug(f'reading from: {self.license_dir}')
         license_dirs = [self.license_dir]
         self.ambiguities = {'ambiguities': [], 'aliases': {}}
+        self.no_versions = {'no_versions': [], 'aliases': {}}
 
         if self.additional_license_dir:
             license_dirs.append(self.additional_license_dir)
@@ -155,6 +157,8 @@ class FossLicenses:
                 if "compounds" in license_file:
                     continue
                 if "ambig" in license_file:
+                    continue
+                if "version" in license_file:
                     continue
                 logging.debug(f'license_file: {license_file}')
                 data = self.__read_license_file(license_file, check)
@@ -172,6 +176,20 @@ class FossLicenses:
                 if COMPATIBILITY_AS_TAG in data:
                     compats[data['spdxid']] = data[COMPATIBILITY_AS_TAG]
 
+        # Licenses without version (and with a section stating which license to chose from)
+        no_version_file = self.config.get('no_version_file', LICENSE_NO_VERSION_FILE)
+        data = self.__read_json(no_version_file)
+        self.license_db[NO_VERSION_TAG] = data['no_versions']
+        for no_version_name in data['no_versions']:
+            # ?? licenses[compound['spdxid']] = compound
+            for alias in data['no_versions'][no_version_name][FLAME_ALIASES_TAG]:
+                if alias in aliases:
+                    raise FlameException(f'Alias "{alias}" -> {no_version_name} already defined as "{aliases[alias]}".')
+
+                aliases[alias] = no_version_name
+        self.no_versions = data
+
+        
         # Ambiguous licenses
         ambig_file = self.config.get('ambiguity_file', LICENSE_AMBIG_FILE)
         logging.debug(f' * ambiguities file: {ambig_file}')
@@ -224,11 +242,13 @@ class FossLicenses:
         self.license_expression = license_expression.Licensing([])
         self.license_db[DUALS_TAG] = duals
         self.license_db[AMBIG_TAG] = self.ambiguities
+        self.license_db[NO_VERSION_TAG] = self.no_versions
         self.license_db[LICENSES_TAG] = licenses
         self.license_db[COMPATS_TAG] = compats
         self.license_db[FLAME_ALIASES_TAG] = aliases
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[LICENSE_OPERATORS_TAG] = self.__read_json(LICENSE_OPERATORS_FILE)['operators']
+        
 
     def __identify_license(self, name):
         if name in self.license_db[LICENSES_TAG]:
@@ -265,6 +285,7 @@ class FossLicenses:
 
     def __update_license_expression_helper(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
+
         self.__init_needles(needles, needle_tag, license_expression, allow_letter)
         for c_needle in self.needles_map[needle_tag]:
             regexp = c_needle[0]
@@ -280,10 +301,11 @@ class FossLicenses:
                 license_expression = regexp.sub(f'\\1{extra_add}{replacement}{extra_add}\\2', license_expression)
 
         fixed = re.sub(r'\s\s*', ' ', license_expression).strip()
-        return {
+        ret = {
             'license_expression': fixed,
             'identifications': replacements,
         }
+        return ret
 
     def __update_license_expression_helper_orig(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
@@ -368,6 +390,10 @@ class FossLicenses:
         ---> | alias | \
              +-------+
 
+             +------------+
+        ---> | no_version | \
+             +------------+
+
              +-------+
         ---> | ambig | \
              +-------+
@@ -385,6 +411,8 @@ class FossLicenses:
         Describing the steps/pipes:
 
         alias: normalizes license names like "BSD3" to SPDX identifiers like "BSD-3-Clause"
+
+        no_version: GNU Lesser General Public License states "If the Library as you received it does not specify a version number ...  you may choose any version of the GNU Lesser General Public License ever published ....". no_versions identifies and translate such cases
 
         ambig: identifies and stores ambiguities like "GNU", which is a project and not a license
 
@@ -455,6 +483,23 @@ class FossLicenses:
                                                       license_expression)
         replacements += ret['identifications']
 
+        # no version
+        try:
+            no_version_licenses = self.license_db[NO_VERSION_TAG]['no_versions'][ret['license_expression']]['licenses']
+            ret = {
+                'license_expression': ' OR '.join(no_version_licenses),
+                'identifications': {
+                    'queried_name': ret['license_expression'],
+                    'name': ' OR '.join(no_version_licenses),
+                    'identified_via': 'no_versions',                    
+                }
+            }
+        except Exception as e:
+            logging.debug(f'No no_versions found for {ret["license_expression"]}')
+            
+
+        replacements += ret['identifications']
+
         # manage ambiguities
         ambiguities = []
         aliases = self.license_db[AMBIG_TAG]['aliases']
@@ -490,6 +535,7 @@ class FossLicenses:
                                                       allow_letter=True)
         replacements += ret['identifications']
 
+        # dual
         update_problem = None
         updates = []
         if update_dual:
