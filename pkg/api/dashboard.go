@@ -6,13 +6,14 @@
 package api
 
 import (
-	"log"
 	"net/http"
 	"time"
 
 	"github.com/fossology/LicenseDb/pkg/db"
+	logger "github.com/fossology/LicenseDb/pkg/log"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
 )
 
 // GetDashboardData fetches data to be displayed on the dashboard
@@ -28,13 +29,14 @@ import (
 //	@Security		ApiKeyAuth || {}
 //	@Router			/dashboard [get]
 func GetDashboardData(c *gin.Context) {
+
 	var licensesCount, obligationsCount, usersCount, licenseChangesSinceLastMonth int64
 	var licenseFrequency []models.RiskLicenseCount
 	var categoryFrequency []models.CategoryObligationCount
 
 	var active = true
 	if err := db.DB.Model(&models.LicenseDB{}).Where(&models.LicenseDB{Active: &active}).Count(&licensesCount).Error; err != nil {
-		log.Printf("\033[31mError: error fetching licenses count: %s\033[0m", err.Error())
+		logger.LogError("error fetching Licenses count", zap.Error(err))
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "something went wrong",
@@ -47,7 +49,7 @@ func GetDashboardData(c *gin.Context) {
 	}
 
 	if err := db.DB.Model(&models.Obligation{}).Where(&models.Obligation{Active: &active}).Count(&obligationsCount).Error; err != nil {
-		log.Printf("\033[31mError: error fetching obligations count: %s\033[0m", err.Error())
+		logger.LogError("error fetching obligations count", zap.Error(err))
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "something went wrong",
@@ -60,7 +62,7 @@ func GetDashboardData(c *gin.Context) {
 	}
 
 	if err := db.DB.Model(&models.User{}).Where(&models.User{Active: &active}).Count(&usersCount).Error; err != nil {
-		log.Printf("\033[31mError: error fetching users count: %s\033[0m", err.Error())
+		logger.LogError("error fetching users count", zap.Error(err))
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "something went wrong",
@@ -76,7 +78,7 @@ func GetDashboardData(c *gin.Context) {
 	startOfMonth := time.Date(now.Year(), now.Month(), 1, 0, 0, 0, 0, time.UTC)
 	iso8601StartOfMonth := startOfMonth.Format(time.RFC3339)
 	if err := db.DB.Model(&models.Audit{}).Where("timestamp > ? AND type='license'", iso8601StartOfMonth).Count(&licenseChangesSinceLastMonth).Error; err != nil {
-		log.Printf("\033[31mError: error fetching audits count: %s\033[0m", err.Error())
+		logger.LogError("error fetching audits count", zap.Error(err))
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "something went wrong",
@@ -88,8 +90,11 @@ func GetDashboardData(c *gin.Context) {
 		return
 	}
 
-	if err := db.DB.Model(&models.LicenseDB{}).Select("rf_risk as risk, count(*) as count").Group("rf_risk").Scan(&licenseFrequency).Error; err != nil {
-		log.Printf("\033[31mError: error fetching risk license frequencies: %s\033[0m", err.Error())
+	if err := db.DB.Model(&models.LicenseDB{}).
+		Select("rf_risk as risk, count(*) as count").
+		Group("rf_risk").
+		Scan(&licenseFrequency).Error; err != nil {
+		logger.LogError("error fetching risk license frequencies", zap.Error(err))
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "something went wrong",
@@ -101,8 +106,11 @@ func GetDashboardData(c *gin.Context) {
 		return
 	}
 
-	if err := db.DB.Model(&models.Obligation{}).Select("category, count(*) as count").Group("category").Scan(&categoryFrequency).Error; err != nil {
-		log.Printf("\033[31mError: error fetching category obligation frequencies: %s\033[0m", err.Error())
+	if err := db.DB.Model(&models.Obligation{}).
+		Select("category, count(*) as count").
+		Group("category").
+		Scan(&categoryFrequency).Error; err != nil {
+		logger.LogError("error fetching category obligation frequencies", zap.Error(err))
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "something went wrong",
