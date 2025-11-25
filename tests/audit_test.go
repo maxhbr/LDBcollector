@@ -37,6 +37,16 @@ func TestGetAudit(t *testing.T) {
 		assert.NoError(t, err)
 		assert.Equal(t, http.StatusOK, resp.Status)
 		assert.Equal(t, int64(1), resp.Data[0].Id)
+		assert.NotNil(t, resp.Data[0].Entity)
+		entityMap, ok := resp.Data[0].Entity.(map[string]interface{})
+		if !ok {
+			t.Fatalf("entity is not a JSON object: %T", resp.Data[0].Entity)
+		}
+		idValue, ok := entityMap["Id"].(float64)
+		if !ok {
+			t.Fatalf("entity does not contain numeric Id field")
+		}
+		assert.Equal(t, float64(resp.Data[0].TypeId), idValue)
 	})
 
 	t.Run("invalidID", func(t *testing.T) {
