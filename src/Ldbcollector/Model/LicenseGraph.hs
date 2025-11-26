@@ -85,7 +85,7 @@ class (HasOriginalData a) => Source a where
           then timedLGM (show source) $ do
                   lift $ infoM rootLoggerName ("# get " ++ show source)
                   factsResult <- lift $ try $ do
-                    facts <- MTL.lift (getFacts a)
+                    facts <- getFacts a
                     evaluate (force facts)
                   case factsResult of
                     Left (err :: SomeException) ->
