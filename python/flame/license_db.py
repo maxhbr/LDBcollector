@@ -190,7 +190,7 @@ class FossLicenses:
         self.no_versions = data
 
         
-        # Ambiguous licenses
+        # Ambiguos licenses
         ambig_file = self.config.get('ambiguity_file', LICENSE_AMBIG_FILE)
         logging.debug(f' * ambiguities file: {ambig_file}')
         data = self.__read_json(ambig_file)
@@ -294,13 +294,17 @@ class FossLicenses:
                 extra_add = ' '
             else:
                 extra_add = ''
-
+            #print("#: " + needle)
             if regexp.search(license_expression):
                 replacement = needles[needle]
                 extra_add = " "
-                license_expression = regexp.sub(f'\\1{extra_add}{replacement}{extra_add}\\2', license_expression)
+                le = license_expression
+                # Use ¤¤< and >¤¤ to mark start and end of already replaced part of the string
+                license_expression = regexp.sub(f'\\1{extra_add}¤¤<{replacement}>¤¤{extra_add}\\2', license_expression)
+                
 
-        fixed = re.sub(r'\s\s*', ' ', license_expression).strip()
+        # Remove ¤¤< and >¤¤ that mark start and end of already replaced part of the string
+        fixed = re.sub(r'\s\s*', ' ', license_expression).strip().replace('¤¤<','').replace('>¤¤','')
         ret = {
             'license_expression': fixed,
             'identifications': replacements,
@@ -324,7 +328,7 @@ class FossLicenses:
                     'name': replacement,
                     'identified_via': needle_tag,
                 })
-                license_expression = re.sub(reg_exp, f'\\1 {replacement}{extra_add}\\2', license_expression)
+                license_expression = re.sub(reg_exp, f'\\1{replacement}{extra_add}\\2', license_expression)
         return {
             'license_expression': re.sub(r'\s\s*', ' ', license_expression).strip(),
             'identifications': replacements,
@@ -488,11 +492,11 @@ class FossLicenses:
             no_version_licenses = self.license_db[NO_VERSION_TAG]['no_versions'][ret['license_expression']]['licenses']
             ret = {
                 'license_expression': ' OR '.join(no_version_licenses),
-                'identifications': {
+                'identifications': [{
                     'queried_name': ret['license_expression'],
                     'name': ' OR '.join(no_version_licenses),
                     'identified_via': 'no_versions',                    
-                }
+                }]
             }
         except Exception as e:
             logging.debug(f'No no_versions found for {ret["license_expression"]}')
