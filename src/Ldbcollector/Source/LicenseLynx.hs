@@ -3,48 +3,60 @@
 module Ldbcollector.Source.LicenseLynx where
 
 import Data.Aeson
-import Data.Aeson.Types (Object, Parser, withArray, withObject)
+import Data.Aeson.Types (Object, Parser, withObject)
+import Data.Aeson.Key (Key)
 import Data.Aeson.KeyMap qualified as KM
 import Data.Aeson.Key qualified as K
-import Data.ByteString.Lazy (ByteString)
 import Data.Text (Text)
-import Data.Text.IO qualified as T
 import Data.Vector qualified as V
 import Ldbcollector.Model
 
 
 data LicenseLynx = LicenseLynx {
     licenseLynxCanonical :: LicenseName,
-    licenseLynxAliases :: [LicenseName],
-    licenseLynxSrc :: Text
+    licenseLynxAliases :: [LicenseName]
 } deriving (Show, Eq, Generic)
 
 instance ToJSON LicenseLynx where
     toJSON = genericToJSON defaultOptions { fieldLabelModifier = camelTo2 '_' }
 
+parseCanonical :: Value -> Parser LicenseName
+parseCanonical = withObject "canonical" $ \o -> do
+    cid <- o .: "id"
+    msrc <- o .:? "src"
+    case msrc of
+        Just src -> return (parseOne (K.fromText src, cid))
+        _ -> return (newNLN "LicenseLynx" cid)
+
+parseOne :: (Key,Text) -> LicenseName
+parseOne (aliasScope, alias) = do
+    let knownAliasScopes = [ ("scancode-licensedb", "scancode")
+                           , ("scancodeLicensedb", "scancode") 
+                           , ("osi", "osi")
+                           , ("spdx", "spdx")
+                           , ("pypi", "pypi")
+                           , ("pypi-classifer", "pypi")
+                           ]
+    case lookup aliasScope knownAliasScopes of
+        Just knwonScope -> newNLN knwonScope alias
+        Nothing -> newNLN (K.toText aliasScope) alias
+
 parsePair :: (Key, Value) -> Parser [LicenseName]
 parsePair ("custom", aliases) = 
     (fmap (map newLN) . parseJSON) aliases
     -- withArray "aliases" $ fmap (map (newNLN "custom")) . mapM parseJSON
-parsePair (aliasScope, aliases) = do
-    let knownAliasScopes = [ ("scancode-licensedb", "scancode")
-                           , ("osi", "osi")
-                           , ("spdx", "spdx")
-                           ]
-    case lookup aliasScope knownAliasScopes of
-        Just knwonScope ->map (newNLN knwonScope) <$> parseJSON aliases
-        Nothing -> map (newNLN (K.toText aliasScope)) <$> parseJSON aliases
+parsePair (aliasScope, aliases) = map (\alias -> parseOne (aliasScope, alias))  <$> parseJSON aliases
 
 parseAliases :: Value -> Parser [LicenseName]
 parseAliases = withObject "aliases" $ \v -> concat <$> mapM parsePair (KM.toList v)
 
 instance FromJSON LicenseLynx where
     parseJSON = withObject "LicenseLynx" $ \o -> do
-        licenseLynxCanonical <- setNS "LicenseLynx" <$> o .: "canonical"
+        canonical <- o .: "canonical"
+        licenseLynxCanonical <- parseCanonical canonical
         aliases <- o .: "aliases"
         licenseLynxAliases <- parseAliases aliases
-        licenseLynxSrc <- o .: "src"
-        return LicenseLynx { licenseLynxCanonical, licenseLynxAliases, licenseLynxSrc }
+        return LicenseLynx { licenseLynxCanonical, licenseLynxAliases }
 
 
 instance LicenseFactC LicenseLynx where

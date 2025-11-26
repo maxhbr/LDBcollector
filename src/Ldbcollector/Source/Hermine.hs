@@ -296,7 +296,7 @@ data HermineLicense
     = HermineLicense
     { hl_spdx_id :: !String,
       hl_long_name :: !String,
-      hl_license_version :: !String,
+      hl_license_version :: !(Maybe String),
       hl_radical :: !(Maybe String), -- TODO: Just "" -> Nothing
       hl_autoupgrade :: Maybe Bool,
       hl_steward :: !String,

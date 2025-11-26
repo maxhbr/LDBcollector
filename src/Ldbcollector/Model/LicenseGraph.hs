@@ -4,6 +4,7 @@
 
 module Ldbcollector.Model.LicenseGraph where
 
+import Control.Exception (SomeException, displayException, evaluate, try)
 import Control.Monad.Reader qualified as MTL
 import Control.Monad.State qualified as MTL
 import Data.Graph.Inductive.Graph qualified as G
@@ -83,15 +84,21 @@ class (HasOriginalData a) => Source a where
         if passed
           then timedLGM (show source) $ do
                   lift $ infoM rootLoggerName ("# get " ++ show source)
-                  facts <- force <$> MTL.lift (getFacts a)
-                  if not (null facts)
-                    then do
-                      MTL.modify (\lg -> lg {_sources = Map.insert source (WrappedSource a) (_sources lg)})
-                      lift $ infoM rootLoggerName (show (V.length facts) ++ " entries")
-                      V.mapM_ (\fact -> withFact (source, fact) applyFact) facts
-                      debugOrderAndSize
-                    else do
-                      lift $ errorM rootLoggerName ("# " ++ show source ++ " returned no facts")
+                  factsResult <- lift $ try $ do
+                    facts <- MTL.lift (getFacts a)
+                    evaluate (force facts)
+                  case factsResult of
+                    Left (err :: SomeException) ->
+                      lift $ errorM rootLoggerName ("# " ++ show source ++ " failed during getFacts: " ++ displayException err)
+                    Right facts ->
+                      if not (null facts)
+                        then do
+                          MTL.modify (\lg -> lg {_sources = Map.insert source (WrappedSource a) (_sources lg)})
+                          lift $ infoM rootLoggerName (show (V.length facts) ++ " entries")
+                          V.mapM_ (\fact -> withFact (source, fact) applyFact) facts
+                          debugOrderAndSize
+                        else do
+                          lift $ errorM rootLoggerName ("# " ++ show source ++ " returned no facts")
           else lift $ errorM rootLoggerName ("# did not apply " ++ show source ++ " as guard was not satisfied")
 
 data WrappedSource where
