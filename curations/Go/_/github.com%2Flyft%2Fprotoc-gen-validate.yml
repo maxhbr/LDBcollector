@@ -1,0 +1,7 @@
+- id: "Go::github.com/lyft/protoc-gen-validate:"
+  curations:
+    comment: |
+      The Lyft repository is not available anymore as it was moved the Buf organization, see
+      https://buf.build/blog/protovalidate-v1#toc-history
+    vcs:
+      url: "https://github.com/bufbuild/protoc-gen-validate.git"
