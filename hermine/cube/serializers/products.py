@@ -201,8 +201,8 @@ class DependencySerializer(serializers.Serializer):
     purl_type = serializers.CharField(max_length=200, required=True)
     name = serializers.CharField(max_length=200, required=True)
     version_number = serializers.CharField(max_length=200, required=True)
-    declared_license_expr = serializers.CharField(max_length=500, required=False)
-    spdx_valid_license_expr = serializers.CharField(max_length=500, required=False)
+    declared_license_expr = serializers.CharField(max_length=2500, required=False)
+    spdx_valid_license_expr = serializers.CharField(max_length=2500, required=False)
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
     component_update_mode = serializers.ChoiceField(
         choices=SBOMImport.COMPONENT_UPDATE_CHOICES,
@@ -213,4 +213,4 @@ class DependencySerializer(serializers.Serializer):
     default_project_name = serializers.CharField(max_length=750, required=False)
     default_scope_name = serializers.CharField(max_length=50, required=False)
     homepage_url = serializers.CharField(max_length=500, required=False)
-    description = serializers.CharField(max_length=500, required=False)
+    description = serializers.CharField(max_length=2500, required=False)

@@ -13,7 +13,7 @@ class Product(models.Model):
     """
 
     name = models.CharField(max_length=200, unique=True)
-    description = models.TextField(max_length=500, blank=True)
+    description = models.TextField(max_length=2500, blank=True)
     owner = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     categories = models.ManyToManyField(
         "Category", db_table="cube_category_products", blank=True
@@ -44,7 +44,7 @@ class Category(models.Model):
     """
 
     name = models.CharField(max_length=200, unique=True)
-    description = models.TextField(max_length=500, blank=True)
+    description = models.TextField(max_length=2500, blank=True)
     owner = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 
     outbound_licenses = models.ManyToManyField(
