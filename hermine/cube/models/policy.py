@@ -123,23 +123,23 @@ class LicenseCuration(AbstractComponentRule):
     )
 
     declared_expression = models.CharField(
-        max_length=500,
+        max_length=2500,
         blank=True,
         help_text="The declared expression before any curation (used only for curation exports)",
     )
 
     expression_in = models.CharField(
-        max_length=500,
+        max_length=2500,
         blank=True,
         help_text="The exact expression which must be changed",
     )
     expression_out = models.CharField(
-        max_length=500,
+        max_length=2500,
         help_text="The expression which will replace `expression_in`",
         validators=[validate_spdx_expression],
     )
 
-    explanation = models.TextField(max_length=500, blank=True, null=True)
+    explanation = models.TextField(max_length=2500, blank=True, null=True)
 
     def __str__(self):
         return f"{self.expression_in} -> {self.expression_out}"
@@ -291,18 +291,18 @@ class LicenseChoice(AbstractUsageRule, models.Model):
     objects = LicenseChoiceManager()
 
     expression_in = models.CharField(
-        max_length=500,
+        max_length=2500,
         help_text="The exact expression which must be changed",
     )
     expression_out = models.CharField(
-        max_length=500,
+        max_length=2500,
         verbose_name="Final SPDX expression",
         help_text="The final license expression chosen. Can still contains ANDs, and even ORs if"
         " you want to comply with all licenses and let the end user choose.",
         validators=[validate_spdx_expression],
     )
 
-    explanation = models.TextField(max_length=500, blank=True, null=True)
+    explanation = models.TextField(max_length=2500, blank=True, null=True)
 
     def __str__(self):
         return self.expression_in + " → " + self.expression_out
@@ -342,7 +342,7 @@ class Derogation(AbstractUsageRule, models.Model):
     modification = models.CharField(
         max_length=20, choices=Usage.MODIFICATION_CHOICES, blank=True
     )
-    justification = models.TextField(max_length=500, blank=True)
+    justification = models.TextField(max_length=2500, blank=True)
 
     @property
     def condition_display(self):

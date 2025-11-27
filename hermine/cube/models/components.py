@@ -98,7 +98,7 @@ class Usage(models.Model):
         blank=True,
         help_text="The way this component is distributed/exploited",
     )
-    description = models.TextField(max_length=500, blank=True)
+    description = models.TextField(max_length=2500, blank=True)
     licenses_chosen = models.ManyToManyField("License", blank=True)
     scope = models.CharField(
         max_length=MAX_LENGTH_DEFAULT_SCOPE_NAME, default=DEFAULT_SCOPE
@@ -107,7 +107,7 @@ class Usage(models.Model):
         max_length=MAX_LENGTH_DEFAULT_PROJECT_NAME, default=DEFAULT_PROJECT
     )
     license_expression = models.CharField(
-        max_length=500,
+        max_length=2500,
         blank=True,
         validators=[validate_spdx_expression],
     )
@@ -142,9 +142,9 @@ class Component(models.Model):
         max_length=200, help_text="Unique name of the FOSS component."
     )
     purl_type = models.CharField("purl package type", max_length=200, blank=True)
-    description = models.TextField(max_length=500, blank=True)
+    description = models.TextField(max_length=2500, blank=True)
     programming_language = models.CharField(max_length=200, blank=True)
-    spdx_expression = models.CharField(max_length=500, blank=True)
+    spdx_expression = models.CharField(max_length=2500, blank=True)
     homepage_url = models.URLField(max_length=200, blank=True)
     export_control_status = models.CharField(
         max_length=20, choices=EXPORT_CHOICES, blank=True
@@ -192,18 +192,18 @@ class Version(models.Model):
     )
     version_number = models.CharField(max_length=200)
     declared_license_expr = models.CharField(
-        max_length=500,
+        max_length=2500,
         blank=True,
         help_text="Declared license expression (may not be SPDX valid)",
     )
     spdx_valid_license_expr = models.CharField(
-        max_length=500,
+        max_length=2500,
         blank=True,
         help_text="License expression concluded by analyzing tool (e.g. ORT)",
         validators=[validate_spdx_expression],
     )
     corrected_license = models.CharField(
-        max_length=500,
+        max_length=2500,
         blank=True,
         help_text="Final license expression used in legal evaluation (required when validated expression is ambiguous or empty)",
     )
