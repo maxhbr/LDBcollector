@@ -146,7 +146,6 @@ class FossLicenses:
         logging.debug(f'reading from: {self.license_dir}')
         license_dirs = [self.license_dir]
         self.ambiguities = {'ambiguities': [], 'aliases': {}}
-        self.no_versions = {'no_versions': [], 'aliases': {}}
 
         if self.additional_license_dir:
             license_dirs.append(self.additional_license_dir)
@@ -181,16 +180,16 @@ class FossLicenses:
         data = self.__read_json(no_version_file)
         self.license_db[NO_VERSION_TAG] = data['no_versions']
         for no_version_name in data['no_versions']:
+            nv_object = data['no_versions'][no_version_name]
+            relicense_to = f' ( {" OR ".join(nv_object["licenses"])} ) '
             # ?? licenses[compound['spdxid']] = compound
-            for alias in data['no_versions'][no_version_name][FLAME_ALIASES_TAG]:
+            for alias in nv_object[FLAME_ALIASES_TAG]:
                 if alias in aliases:
                     raise FlameException(f'Alias "{alias}" -> {no_version_name} already defined as "{aliases[alias]}".')
 
-                aliases[alias] = no_version_name
-        self.no_versions = data
-
+                aliases[alias] = relicense_to
         
-        # Ambiguos licenses
+        # Ambiguous licenses
         ambig_file = self.config.get('ambiguity_file', LICENSE_AMBIG_FILE)
         logging.debug(f' * ambiguities file: {ambig_file}')
         data = self.__read_json(ambig_file)
@@ -242,7 +241,6 @@ class FossLicenses:
         self.license_expression = license_expression.Licensing([])
         self.license_db[DUALS_TAG] = duals
         self.license_db[AMBIG_TAG] = self.ambiguities
-        self.license_db[NO_VERSION_TAG] = self.no_versions
         self.license_db[LICENSES_TAG] = licenses
         self.license_db[COMPATS_TAG] = compats
         self.license_db[FLAME_ALIASES_TAG] = aliases
@@ -285,7 +283,6 @@ class FossLicenses:
 
     def __update_license_expression_helper(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
-
         self.__init_needles(needles, needle_tag, license_expression, allow_letter)
         for c_needle in self.needles_map[needle_tag]:
             regexp = c_needle[0]
@@ -294,7 +291,6 @@ class FossLicenses:
                 extra_add = ' '
             else:
                 extra_add = ''
-            #print("#: " + needle)
             if regexp.search(license_expression):
                 replacement = needles[needle]
                 extra_add = " "
@@ -304,7 +300,8 @@ class FossLicenses:
                 
 
         # Remove ¤¤< and >¤¤ that mark start and end of already replaced part of the string
-        fixed = re.sub(r'\s\s*', ' ', license_expression).strip().replace('¤¤<','').replace('>¤¤','')
+#        fixed = re.sub(r'\s\s*', ' ', license_expression).strip().replace('¤¤<','').replace('>¤¤','')
+        fixed = re.sub(r'\s\s*', ' ', license_expression).strip()
         ret = {
             'license_expression': fixed,
             'identifications': replacements,
@@ -482,35 +479,20 @@ class FossLicenses:
 
         replacements = []
 
+        # aliases
         ret = self.__update_license_expression_helper(self.license_db[FLAME_ALIASES_TAG],
                                                       'alias',
                                                       license_expression)
         replacements += ret['identifications']
 
-        # no version
-        try:
-            no_version_licenses = self.license_db[NO_VERSION_TAG]['no_versions'][ret['license_expression']]['licenses']
-            ret = {
-                'license_expression': ' OR '.join(no_version_licenses),
-                'identifications': [{
-                    'queried_name': ret['license_expression'],
-                    'name': ' OR '.join(no_version_licenses),
-                    'identified_via': 'no_versions',                    
-                }]
-            }
-        except Exception as e:
-            logging.debug(f'No no_versions found for {ret["license_expression"]}')
-            
 
         replacements += ret['identifications']
-
         # manage ambiguities
         ambiguities = []
         aliases = self.license_db[AMBIG_TAG]['aliases']
 
         tmp_license_expression = ret['license_expression']
         for alias in reversed(collections.OrderedDict(sorted(aliases.items(), key=lambda x: len(x[0])))):
-
             needle = r'(?:\s+|^)%s(?:\s+|$)' % re.escape(alias)
             needle_tmp = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
                                                                  "operator",
@@ -539,6 +521,9 @@ class FossLicenses:
                                                       allow_letter=True)
         replacements += ret['identifications']
 
+        # Remove the updated markers
+        ret['license_expression'] = ret['license_expression'].replace('¤¤<','').replace('>¤¤','')
+        
         # dual
         update_problem = None
         updates = []
@@ -575,7 +560,7 @@ class FossLicenses:
 
         ret = {
             'queried_license': license_expression,
-            FLAME_IDENTIFIED_LICENSE_TAG: license_parsed,
+            FLAME_IDENTIFIED_LICENSE_TAG: self.simplify([license_parsed]),
             'identifications': replacements,
             'ambiguities': ambiguities,
             'updated_license': updated_license,
@@ -751,7 +736,7 @@ class FossLicenses:
             if compat_license not in self.known_symbols():
                 unknown_symbols.add(compat_license)
         if len(unknown_symbols) != 0:
-            raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)))
+            raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)), unknown_symbols)
         return 'OK', None
 
     def known_symbols(self):
