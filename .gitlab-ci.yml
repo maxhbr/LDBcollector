@@ -44,6 +44,8 @@ tests:
     - poetry install
     - cp hermine/hermine/config.default.py hermine/hermine/config.py
     - mkdir -p hermine/vite_modules/dist
+    - npm install
+    - npm install
     - npm ci
     - npm run build
     - cd hermine
