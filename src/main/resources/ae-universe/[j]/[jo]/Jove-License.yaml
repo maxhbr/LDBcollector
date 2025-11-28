@@ -9,3 +9,5 @@ shortName: "jove"
 alternativeNames:
   - "Jove License"
 
+otherIds: 
+  - "scancode:jove"

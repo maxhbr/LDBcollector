@@ -11,7 +11,6 @@ canonicalNameHistory:
 
 alternativeNames:
   - "https://www.oracle.com/downloads/licenses/binary-code-license.html"
-  - "http://java.com/license"
 
 otherIds: 
   - "scancode:oracle-bcl-javase-platform-javafx-2017"

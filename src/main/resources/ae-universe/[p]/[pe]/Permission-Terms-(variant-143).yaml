@@ -2,7 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Open Aleph License"
-category: "Open Aleph License"
-shortName: "OAL"
+canonicalName: "Permission Terms (variant 143)"
+category: "Permission"
+shortName: "PT-Var143"
 
+otherIds: 
+  - "scancode:mit-proprietary"

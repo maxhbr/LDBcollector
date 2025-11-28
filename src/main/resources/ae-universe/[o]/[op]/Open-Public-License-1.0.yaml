@@ -10,6 +10,12 @@ alternativeNames:
   - "OPL, Version 1.0"
   - "OPL 1.0"
   - "OPEN PUBLIC LICENSE Version 1.0"
+  - "http://ksoap.objectweb.org/software/license/opl.html"
+  - "https://fedoraproject.org/wiki/Licensing/Open_Public_License"
+  - "licenses.nuget.org/OPL-1.0"
+  - "{{OPL-1.0}} https://spdx.org/licenses/OPL-1.0"
+  - "Open Public License v1.0"
+  - "https://spdx.org/licenses/opl-1.0"
 
 otherIds: 
   - "scancode:open-public"

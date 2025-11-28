@@ -6,5 +6,13 @@ canonicalName: "Libjpeg License"
 category: "Libjpeg"
 shortName: "Libjpeg"
 
+canonicalNameHistory:
+  - "Independent JPEG Group License (short; with acknowledge disclaimer)"
+
+alternativeNames:
+  - "Independent JPEG Group License (short; with acknowledge disclaimer)"
+  - "Independent JPEG Group License - short (with acknowledge disclaimer)"
+  - "IJG-short-acknowledge"
+
 otherIds: 
   - "scancode:ijg-2020"

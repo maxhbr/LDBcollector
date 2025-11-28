@@ -6,3 +6,8 @@ canonicalName: "Microchip License"
 category: "Microchip"
 shortName: "Microchip"
 
+alternativeNames:
+  - "Microchip ENC28J60 License 2009"
+
+otherIds: 
+  - "scancode:microchip-enc28j60-2009"

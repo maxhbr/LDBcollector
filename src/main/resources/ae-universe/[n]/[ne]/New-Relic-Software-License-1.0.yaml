@@ -9,3 +9,5 @@ shortName: "New-Relic-Software-1.0"
 alternativeNames:
   - "New Relic Software License v1.0"
 
+otherIds: 
+  - "scancode:new-relic-1.0"

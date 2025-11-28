@@ -13,3 +13,5 @@ alternativeNames:
   - "libticables2 Linking Exception"
   - "Libticables2 Exception"
 
+otherIds: 
+  - "scancode:libticables2-exception-gpl-2.0"

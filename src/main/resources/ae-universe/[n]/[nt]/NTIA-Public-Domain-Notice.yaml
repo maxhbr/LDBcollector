@@ -11,3 +11,5 @@ alternativeNames:
   - "https://raw.githubusercontent.com/NTIA/itm/refs/heads/master/LICENSE.md"
   - "https://raw.githubusercontent.com/NTIA/scos-sensor/refs/heads/master/LICENSE.md"
 
+otherIds: 
+  - "scancode:ntia-pd"

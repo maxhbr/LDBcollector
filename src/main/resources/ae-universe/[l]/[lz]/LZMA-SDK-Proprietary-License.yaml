@@ -6,11 +6,6 @@ canonicalName: "LZMA SDK Proprietary License"
 category: "LZMA SDK License"
 shortName: "LZMA-SDK-Proprietary"
 
-canonicalNameHistory:
-  - "LZMA SDK Original"
-
 alternativeNames:
   - "LZMA SDK Original"
 
-otherIds: 
-  - "scancode:lzma-sdk-original"

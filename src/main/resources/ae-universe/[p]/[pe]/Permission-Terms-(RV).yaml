@@ -9,3 +9,5 @@ shortName: "PT-RV"
 alternativeNames:
   - "RV License"
 
+otherIds: 
+  - "scancode:man2html"

@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "INRIA Non-Commercial License Agreement (CompCert)"
+category: "INRIA Non-Commercial License Agreement"
+shortName: "INRIA-NC-CompCert"
+
+alternativeNames:
+  - "INRIA Non-Commercial License Agreement for the CompCert verified compiler"
+  - "INRIA Non-Commercial License Agreement (CompCert verified compiler)"
+
+otherIds: 
+  - "scancode:inria-compcert"

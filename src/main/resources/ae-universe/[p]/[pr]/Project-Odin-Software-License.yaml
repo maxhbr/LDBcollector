@@ -6,3 +6,5 @@ canonicalName: "Project Odin Software License"
 category: "Project Odin"
 shortName: "Project-Odin-Software"
 
+otherIds: 
+  - "scancode:odin-2000"

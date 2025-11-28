@@ -6,3 +6,8 @@ canonicalName: "Gaussian-Splatting License"
 category: "Gaussian-Splatting"
 shortName: "Gaussian-Splatting-License"
 
+alternativeNames:
+  - "Gaussian-Splatting License 2024"
+
+otherIds: 
+  - "scancode:gaussian-splatting-2024"

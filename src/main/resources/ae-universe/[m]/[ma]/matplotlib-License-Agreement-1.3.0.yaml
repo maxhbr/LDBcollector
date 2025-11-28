@@ -13,3 +13,5 @@ alternativeNames:
   - "Matplotlib License Agreement 1.3.0"
   - "matplotlib versions 1.3.0 and later"
 
+otherIds: 
+  - "scancode:matplotlib-1.3.0"

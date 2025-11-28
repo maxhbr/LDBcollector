@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+
+canonicalName: "Eclipse Foundation Specification License 2.0"
+category: "Eclipse Foundation Specification"
+shortName: "EFSL-2.0"
+
+alternativeNames:
+  - "https://www.eclipse.org/legal/efsl/"
+  - "Eclipse Foundation Specification License - v2.0"
+  - "Eclipse Foundation Specification License 2.0"
+
+otherIds: 
+  - "scancode:efsl-2.0"

@@ -8,3 +8,5 @@ shortName: "MuseScore-Exception-GPL"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:musescore-exception-gpl-2.0"
