@@ -127,6 +127,7 @@ stats:
 	@echo "|Operators       | `./devel/flame operators   | wc -l`     |"
 	@echo "|Ambiguities     | `./devel/flame ambiguities | wc -l`    |"
 	@echo "|Compounds       | `./devel/flame compounds   | wc -l`     |"
+	@echo "|No versions     | `./devel/flame no-versions   | wc -l`     |"
 
 stats-file:
 	@make --silent stats > STATUS.md
