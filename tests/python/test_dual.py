@@ -21,11 +21,11 @@ def test_dual_implicit():
 
 def test_dual_complex():
     lic = fl.expression_license("GPL-2.0-or-later OR MIT")
-    assert lic['identified_license'] == "(GPL-2.0-only OR GPL-3.0-only) OR MIT"
+    assert lic['identified_license'] == "GPL-2.0-only OR GPL-3.0-only OR MIT"
 
     lic = fl.expression_license("GPL-2.0-or-later AND MIT")
-    assert lic['identified_license'] == "(GPL-2.0-only OR GPL-3.0-only) AND MIT"
+    assert lic['identified_license'] == "MIT AND (GPL-2.0-only OR GPL-3.0-only)"
 
 def test_dual_complexer():
     lic = fl.expression_license("X11 OR GPL-2.0-or-later AND MIT")
-    assert lic['identified_license'] == "X11 OR ((GPL-2.0-only OR GPL-3.0-only) AND MIT)"
+    assert lic['identified_license'] == "X11 OR (MIT AND (GPL-2.0-only OR GPL-3.0-only))"
