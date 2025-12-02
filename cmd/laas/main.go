@@ -11,7 +11,6 @@ package main
 import (
 	"context"
 	"flag"
-	"log"
 	"os"
 
 	"github.com/joho/godotenv"
@@ -29,40 +28,37 @@ import (
 	"github.com/fossology/LicenseDb/pkg/validations"
 )
 
-// declare flags to input the basic requirement of database connection and the path of the data file
 var (
-	datafile = flag.String("datafile", "licenseRef.json", "datafile path")
-	// auto-update the database
+	datafile   = flag.String("datafile", "licenseRef.json", "datafile path")
 	populatedb = flag.Bool("populatedb", false, "boolean variable to update database")
 )
 
 func main() {
-	err := godotenv.Load(".env")
-
-	if err != nil {
-		log.Fatalf("Error loading .env file")
+	if err := godotenv.Load(".env"); err != nil {
+		logger.LogFatal("Error loading .env file", zap.Error(err))
 	}
 
 	flag.Parse()
 
-	if os.Getenv("TOKEN_HOUR_LIFESPAN") == "" || os.Getenv("API_SECRET") == "" || os.Getenv("DEFAULT_ISSUER") == "" ||
-		os.Getenv("REFRESH_TOKEN_HOUR_LIFESPAN") == "" || os.Getenv("REFRESH_TOKEN_SECRET") == "" {
+	if os.Getenv("TOKEN_HOUR_LIFESPAN") == "" ||
+		os.Getenv("API_SECRET") == "" ||
+		os.Getenv("DEFAULT_ISSUER") == "" ||
+		os.Getenv("REFRESH_TOKEN_HOUR_LIFESPAN") == "" ||
+		os.Getenv("REFRESH_TOKEN_SECRET") == "" {
 		logger.LogFatal("Mandatory environment variables not configured")
 	}
 
 	if os.Getenv("JWKS_URI") != "" {
 		cache, err := jwk.NewCache(context.Background(), httprc.NewClient())
 		if err != nil {
-			logger.LogFatal("Failed to create a jwk.Cache from the oidc provider's URL:", zap.Error(err))
+			logger.LogFatal("Failed to create jwk.Cache", zap.Error(err))
 		}
-
 		if err := cache.Register(context.Background(), os.Getenv("JWKS_URI")); err != nil {
-			logger.LogFatal("Failed to create a jwk.Cache from the oidc provider's URL:", zap.Error(err))
+			logger.LogFatal("Failed to register JWKS URI", zap.Error(err))
 		}
-
 		auth.Jwks = cache
 	}
-	// database infoget from the .env
+
 	dbhost := os.Getenv("DB_HOST")
 	port := os.Getenv("DB_PORT")
 	user := os.Getenv("DB_USER")
@@ -72,7 +68,7 @@ func main() {
 	db.Connect(&dbhost, &port, &user, &dbname, &password)
 
 	if err := validations.RegisterValidations(); err != nil {
-		log.Fatalf("Failed to set up validations: %s", err)
+		logger.LogFatal("Failed to set up validations", zap.Error(err))
 	}
 
 	if *populatedb {
@@ -80,8 +76,7 @@ func main() {
 	}
 
 	r := api.Router()
-
 	if err := r.Run(); err != nil {
-		logger.LogFatal("Error while running the server:", zap.Error(err))
+		logger.LogFatal("Error while running the server", zap.Error(err))
 	}
 }
