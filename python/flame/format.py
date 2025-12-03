@@ -298,6 +298,29 @@ class OutputFormatter():
         """
         return None, None
 
+    def format_no_versions(self, no_versions, verbose=False):
+        """
+        Return a formatted string of the existing no_versions
+
+        :param no_versions: A list of ambiguites.
+        :type no_versions: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if no_versions is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> no_versions = fl.no_version_list()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_no_versions(no_versions)
+
+        """
+        return None, None
+
 class JsonOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
@@ -337,6 +360,9 @@ class JsonOutputFormatter(OutputFormatter):
     def format_compounds(self, compounds, verbose=False):
         return json.dumps(compounds), None
 
+    def format_no_versions(self, no_versions, verbose=False):
+        return json.dumps(no_versions), None
+
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
@@ -371,6 +397,9 @@ class YamlOutputFormatter(OutputFormatter):
 
     def format_compounds(self, compounds, verbose=False):
         return yaml.safe_dump(compounds), None
+
+    def format_no_versions(self, no_versions, verbose=False):
+        return yaml.safe_dump(no_versions), None
 
 class TextOutputFormatter(OutputFormatter):
 
@@ -447,6 +476,12 @@ class TextOutputFormatter(OutputFormatter):
         ret = []
         for compound in compounds:
             ret += [f'{a} -> {compound["spdxid"]}' for a in compound['aliases']]
+        return '\n'.join(ret), None
+
+    def format_no_versions(self, no_versions, verbose=False):
+        ret = []
+        for no_version in no_versions:
+            ret += [f'{a} -> {no_version}' for a in no_versions[no_version]['aliases']]
         return '\n'.join(ret), None
 
     def format_error(self, error, verbose=False):
