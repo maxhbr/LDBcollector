@@ -194,55 +194,18 @@
             ],
             "problem": "This license has different version (1.1, 1.2 and 1.3). Without a version number it is not possible to determine which of the versions is meant."
         },
-        "GNU General Public License": {
-            "aliases": [
-                "GPL",
-                "GNU GPL",
-                "GPL+",
-                "GNU General Public License.",
-                "GPL-unspecified",
-                "GPL License",
-                "GNU GENERAL PUBLIC LICENSE",
-                "License :: OSI Approved :: GNU General Public License",
-                "License :: OSI Approved :: GNU General Public License (GPL)",
-              "GNU General Public License (GPL)",
-              "GNU-GPL",
-              "GPL license",
-              "GNU General Public License (GPL)"
-            ],
-            "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
-        },
-        "GNU Lesser General Public License": {
-          "aliases": [
-            "LGPL",
-            "GNU LGPL",
-            "GNU Library General Public License",
-            "LGPL+",
-            "lgpl",
-            "GNU LESSER GENERAL PUBLIC LICENSE",
-            "Lesser General Public License",
-            "License :: OSI Approved :: GNU Library or...",
-            "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
-            "GNU Library/LGPL",
-            "GNU Library",
-            "gnu library",
-            "GNU Library or GNU Lesser General Public License",
-            "GNU Lesser General Public License v1.0",
-            "LGPL license",
-            "GNU Lesser Public License",
-            "lesser general public license",
-            "Lesser GPL",
-            "GNU Lesser General Public",
-            "GNU/GNU Lesser"
-          ],
-          "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
-        },
-        "Indiana University Extreme! Lab Software License": {
-          "aliases": [],
-          "problem": "This license has different versions (1.1 and 1.2 / xpp). Without a version number it is not possible to determine which of the versions is meant."
-        },
-        "MIT Style": {
-            "aliases": [
+      "Indiana University Extreme! Lab Software License": {
+        "aliases": [],
+        "problem": "This license has different versions (1.1 and 1.2 / xpp). Without a version number it is not possible to determine which of the versions is meant."
+      },
+      "GNU Lesser General Public License with incorrect version": {
+        "aliases": [
+          "GNU Lesser General Public License v1.0"
+        ],
+        "problem": "kkad"
+      },
+      "MIT Style": {
+        "aliases": [
                 "MIT-style License",
                 "MIT-style",
                 "MIT style",
@@ -265,7 +228,9 @@
               "mpl",
               "MPL License",
               "Mozilla-permissive",
-              "Mozilla"
+              "Mozilla",
+              "Mozilla Public License (MPL)",
+              "Mozilla Public License"
             ],
             "problem": "This license has different version (1.0, 1.1 and 2.0). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
