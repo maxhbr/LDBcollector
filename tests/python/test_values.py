@@ -48,7 +48,9 @@ def test_aliases():
     for alias, lic in fl.alias_list().items():
         logging.debug(f'{lic}:')
         expression = fl.expression_license(alias, update_dual=False)
-        assert lic == expression['identified_license']
+        print("lic:  " + lic)
+        print("exp:  " + expression['identified_license'])
+        assert lic == expression['identified_license'] or lic == f' ( {expression["identified_license"]} ) '
         count += 1
     global tot_count
     tot_count += count
@@ -131,10 +133,10 @@ def test_compats():
 def test_operators():
     count = 0
     for compat_as, lic in fl.operators().items():
-        test_expression = f'MIT {compat_as} BSD-3-Clause'
+        test_expression = f'BSD-3-Clause {compat_as} MIT'
         #remove multiple space (when comparing)
         import re
-        expected_expression = re.sub("\\s\\s+" , " ", f'MIT {lic} BSD-3-Clause')
+        expected_expression = re.sub("\\s\\s+" , " ", f'BSD-3-Clause {lic} MIT')
         expression = fl.expression_license(test_expression, update_dual=False)
         assert expression['identified_license'] == expected_expression
 

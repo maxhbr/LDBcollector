@@ -36,21 +36,21 @@ def test_174_NOReilly():
 
 def test_174_ANDy():
     for op in ['WITH', 'with', 'w/', 'OR', 'AND']:
-        lic = f'MIT {op} ANDy'
+        lic = f'ANDy {op} MIT'
         exp_lic = lic.replace('with','WITH').replace('w/', 'WITH')
         c = fl.expression_compatibility_as(lic, update_dual=False)
         assert c['compat_license'] == exp_lic
 
 def test_174_MAND():
     for op in ['WITH', 'with', 'w/', 'OR', 'AND']:
-        lic = f'MIT {op} MAND'
+        lic = f'MAND {op} MIT'
         exp_lic = lic.replace('with','WITH').replace('w/', 'WITH')
         c = fl.expression_compatibility_as(lic, update_dual=False)
         assert c['compat_license'] == exp_lic
 
 def test_174_MANDy():
     for op in ['WITH', 'with', 'w/', 'OR', 'AND']:
-        lic = f'MIT {op} MANDy'
+        lic = f'MANDy {op} MIT'
         exp_lic = lic.replace('with','WITH').replace('w/', 'WITH')
         c = fl.expression_compatibility_as(lic, update_dual=False)
         assert c['compat_license'] == exp_lic
@@ -61,7 +61,7 @@ def test_204_and():
     exp_lic = 'MIT AND (GPL-2.0-only OR GPL-3.0-only)'
     c = fl.expression_compatibility_as(lic)
 
-    exp_lic = 'MIT AND GPL-2.0-or-later'
+    exp_lic = 'GPL-2.0-or-later AND MIT'
     c = fl.expression_compatibility_as(lic, update_dual=False)
     assert c['compat_license'] == exp_lic
     
@@ -72,7 +72,7 @@ def test_204_and_noupdate():
     c = fl.expression_compatibility_as(lic)
     assert c['compat_license'] == exp_lic
 
-    exp_lic = 'MIT AND GPL-2.0-or-later'
+    exp_lic = 'GPL-2.0-or-later AND MIT'
     c = fl.expression_compatibility_as(lic, update_dual=False)
     assert c['compat_license'] == exp_lic
     
@@ -83,7 +83,7 @@ def test_204_AND():
     c = fl.expression_compatibility_as(lic)
     assert c['compat_license'] == exp_lic
 
-    exp_lic = 'MIT AND GPL-2.0-or-later'
+    exp_lic = 'GPL-2.0-or-later AND MIT'
     c = fl.expression_compatibility_as(lic, update_dual=False)
     assert c['compat_license'] == exp_lic
     
@@ -94,7 +94,7 @@ def test_204_AMP():
     c = fl.expression_compatibility_as(lic)
     assert c['compat_license'] == exp_lic
 
-    exp_lic = 'MIT AND GPL-2.0-or-later'
+    exp_lic = 'GPL-2.0-or-later AND MIT'
     c = fl.expression_compatibility_as(lic, update_dual=False)
     assert c['compat_license'] == exp_lic
     
@@ -105,7 +105,7 @@ def test_204_AMPAMP():
     c = fl.expression_compatibility_as(lic)
     assert c['compat_license'] == exp_lic
 
-    exp_lic = 'MIT AND GPL-2.0-or-later'
+    exp_lic = 'GPL-2.0-or-later AND MIT'
     c = fl.expression_compatibility_as(lic, update_dual=False)
     assert c['compat_license'] == exp_lic
     

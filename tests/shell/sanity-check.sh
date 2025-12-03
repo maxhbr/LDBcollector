@@ -185,6 +185,7 @@ check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e
 check_presence LicenseRef-scancode-ssleay " -i -e leay "        " -e openssl"  
 
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
+check_presence Bitstream-Charter " -i -e bitstream" " -i -e vera"
 check_presence BSD-1-Clause " -i BSD" " -e 2 -e 3 -e 4 "
 check_presence BSD-2-Clause "$BSD2_PRESENT" " -e 3 "
 check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
@@ -257,6 +258,7 @@ check_presence GPL-2.0-or-later " -e 2 -e later" " -e '1 ' -e 3 $GPL_COMMON_EXCL
 check_presence GPL-3.0-or-later " -e 3 -e later" " -e '1 ' -e 2 $GPL_COMMON_EXCL "
 
 check_presence HPND " -i -e hpnd -e historic" ""
+check_presence HPND-doc-sell " -i -e doc" ""
 
 check_presence ICU " -i -e icu " ""
 check_presence IJG " -i -e ijg -e independent -e jpeg " " -e short"
@@ -265,6 +267,7 @@ check_presence IPL-1.0 " -i -e ipl -e ibm   " ""
 check_presence Intel " -i -e intel " " -e 0 -e 1 -e 2 -e 3 -e 4 "
 check_presence ISC " -i -e isc  " ""
 
+check_presence JasPer-2.0 " -i -e jasper" ""
 check_presence JSON " -i -e JSON  " ""
 
 check_presence Latex2e " -i -e latex2  " ""
@@ -284,7 +287,9 @@ check_presence LicenseRef-scancode-cvwl " -i -e cvwl -e MITRE " ""
 check_presence LicenseRef-scancode-g10-permissive " -i -e  g10 " ""
 check_presence LicenseRef-scancode-indiana-extreme " -i -e indiana " " -e 1.2"
 check_presence LicenseRef-scancode-iso-8879 " -i 8879 " ""
+check_presence LicenseRef-scancode-jasper-1.0 " -i -e jasper" ""
 check_presence LicenseRef-scancode-josl-1.0 " -i josl-1 -e jabber " ""
+check_presence LicenseRef-scancode-cmu-mit " -i -e cmu"
 check_presence LicenseRef-scancode-mit-old-style " -i -e old -e mit" " -i -e ^mit$"
 check_presence LicenseRef-scancode-public-domain " -i -e domain -e public " ""
 check_presence LicenseRef-scancode-wtfpl-1.0 " -i -e wtfpl " ""
@@ -365,6 +370,7 @@ check_presence TU-Berlin-1.0 " -e 1 -e berlin" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
 check_presence Unicode-3.0 " -i -e 'unicode-[v]3' -e 'unicode license v3' " ""
+check_presence Unicode-DFS-2016 " -e 2016 -e UNICODE " ""
 check_presence UnixCrypt " -i -e unixcrypt" ""
 check_presence Unlicense " -i -e unlicense  -e unli[n]cence " ""
 check_presence UPL-1.0 " -i -e upl -e universal" ""
@@ -388,6 +394,7 @@ check_presence LicenseRef-scancode-xfree86-1.0 " -i -e 1.0 " " -e  X/MIT -e 1.1 
 check_presence XFree86-1.1 " -i -e 1.1 " " -e  X/MIT -e 1.0 " 
 
 check_presence Zlib " -i -e libz -e zlib -e z-lib" " -i bsd "
+check_presence zlib-acknowledgement "-i -e zlib -e ack" ""
 check_presence ZPL-1.1 " -e 1.1" " -e 2"
 check_presence ZPL-2.0 " -e 2.0" " -e 1 -e 2.1"
 check_presence ZPL-2.1 " -e 2.1" " -e 1.1 -e 2.0"

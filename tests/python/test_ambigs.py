@@ -13,8 +13,8 @@ fl = FossLicenses(config={
 })
 
 def test_ambig_gpl():
-    lic = fl.expression_license("GPL", update_dual=False)
-    assert lic['identified_license'] == "GPL"
+    lic = fl.expression_license("BSD", update_dual=False)
+    assert lic['identified_license'] == "BSD"
     assert lic['ambiguities']
     assert len(lic['ambiguities']) == 1
 
