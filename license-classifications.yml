@@ -4133,6 +4133,14 @@ categorizations:
       - "include-in-notice-file"
       - "property:distribute-source-code"
 
+  # https://spdx.org/licenses/Ubuntu-font-1.0.html
+  - id: "Ubuntu-font-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:modification-related-obligations"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   # https://spdx.org/licenses/UPL-1.0.html
   - id: "UPL-1.0"
     categories:
