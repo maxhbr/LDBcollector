@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: CC0-1.0
 
 @file:CompilerOptions("-jvm-target", "21")
+@file:DependsOn("org.apache.logging.log4j:log4j-to-slf4j:2.25.2")
 @file:DependsOn("org.ossreviewtoolkit:model:72.1.0")
 
 import kotlin.system.exitProcess
