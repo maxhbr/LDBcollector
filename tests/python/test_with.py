@@ -17,8 +17,8 @@ def test_with_dual():
 
 def test_with_dual_complex():
     lic = fl.expression_license("MIT OR GPL-2.0-or-later WITH Classpath-exception-2.0")
-    assert lic['identified_license'] == "MIT OR (GPL-2.0-only WITH Classpath-exception-2.0 OR GPL-3.0-only WITH Classpath-exception-2.0)"
+    assert lic['identified_license'] == "GPL-2.0-only WITH Classpath-exception-2.0 OR GPL-3.0-only WITH Classpath-exception-2.0 OR MIT"
 
 def test_with_dual_complexer():
     lic = fl.expression_license("MIT OR GPL-2.0-or-later WITH Classpath-exception-2.0 AND BSD-3-Clause")
-    assert lic['identified_license'] == "MIT OR ((GPL-2.0-only WITH Classpath-exception-2.0 OR GPL-3.0-only WITH Classpath-exception-2.0) AND BSD-3-Clause)"
+    assert lic['identified_license'] == "MIT OR (BSD-3-Clause AND (GPL-2.0-only WITH Classpath-exception-2.0 OR GPL-3.0-only WITH Classpath-exception-2.0))"

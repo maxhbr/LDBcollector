@@ -14,7 +14,7 @@ import spdx_license_list
 from enum import Enum
 
 from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, read_config
-from flame.config import LICENSE_OPERATORS_FILE, LICENSE_COMPOUNDS_FILE, LICENSE_AMBIG_FILE, LICENSE_DUALS_FILE
+from flame.config import LICENSE_OPERATORS_FILE, LICENSE_COMPOUNDS_FILE, LICENSE_AMBIG_FILE, LICENSE_DUALS_FILE, LICENSE_NO_VERSION_FILE
 
 from flame.exception import FlameException
 from jsonschema import validate
@@ -41,6 +41,7 @@ AMBIG_TAG = 'ambiguties'
 DUAL_LICENSES_TAG = 'dual-licenses'
 DUAL_NEWER_TAG = 'newer-versions'
 COMPOUNDS_TAG = 'compounds'
+NO_VERSION_TAG = 'no_version'
 
 LICENSE_OPERATORS_TAG = 'license_operators'
 
@@ -57,6 +58,10 @@ class Validation(Enum):
     SPDX = 2
     OSADL = 3
     SCANCODE = 4
+
+
+TRANSLATED_STRING_START = '<¤¤'
+TRANSLATED_STRING_END = '¤¤>'
 
 class FossLicenses:
     """
@@ -88,7 +93,6 @@ class FossLicenses:
         check = config.get('check', False)
         logging_level = self.__str_to_loggin_info(config)
         logging.basicConfig(level=logging_level)
-
         self.config = config
         self.license_dir = config.get('license-dir', LICENSE_DIR)
         self.license_matrix_file = config.get('license-matrix-file', None)
@@ -145,16 +149,19 @@ class FossLicenses:
         logging.debug(f'reading from: {self.license_dir}')
         license_dirs = [self.license_dir]
         self.ambiguities = {'ambiguities': [], 'aliases': {}}
-
+        self.license_files = []
         if self.additional_license_dir:
             license_dirs.append(self.additional_license_dir)
         for license_dir in license_dirs:
             for license_file in glob.glob(f'{license_dir}/*.json'):
+                self.license_files.append(license_file)
                 if "duals" in license_file:
                     continue
                 if "compounds" in license_file:
                     continue
                 if "ambig" in license_file:
+                    continue
+                if "version" in license_file:
                     continue
                 logging.debug(f'license_file: {license_file}')
                 data = self.__read_license_file(license_file, check)
@@ -171,6 +178,21 @@ class FossLicenses:
                     scancode_keys[data[SCANCODE_KEY_TAG]] = data['spdxid']
                 if COMPATIBILITY_AS_TAG in data:
                     compats[data['spdxid']] = data[COMPATIBILITY_AS_TAG]
+
+        # Licenses without version (and with a section stating which license to chose from)
+        no_version_file = self.config.get('no_version_file', LICENSE_NO_VERSION_FILE)
+        data = self.__read_json(no_version_file)
+        self.license_db[NO_VERSION_TAG] = data['no_versions']
+        self.no_version_file = no_version_file
+        for no_version_name in data['no_versions']:
+            nv_object = data['no_versions'][no_version_name]
+            relicense_to = f' ( {" OR ".join(nv_object["licenses"])} ) '
+            # ?? licenses[compound['spdxid']] = compound
+            for alias in nv_object[FLAME_ALIASES_TAG]:
+                if alias in aliases:
+                    raise FlameException(f'Alias "{alias}" -> {no_version_name} already defined as "{aliases[alias]}".')
+
+                aliases[alias] = relicense_to
 
         # Ambiguous licenses
         ambig_file = self.config.get('ambiguity_file', LICENSE_AMBIG_FILE)
@@ -277,17 +299,18 @@ class FossLicenses:
             if regexp.search(license_expression):
                 replacement = needles[needle]
                 extra_add = " "
-                license_expression = regexp.sub(f'\\1{extra_add}{replacement}{extra_add}\\2', license_expression)
+                # use markers to mark start and end of already replaced part of the string
+                license_expression = regexp.sub(f'\\1{extra_add}{TRANSLATED_STRING_START}{replacement}{TRANSLATED_STRING_END}{extra_add}\\2', license_expression)
 
         fixed = re.sub(r'\s\s*', ' ', license_expression).strip()
-        return {
+        ret = {
             'license_expression': fixed,
             'identifications': replacements,
         }
+        return ret
 
     def __update_license_expression_helper_orig(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
-
         for needle in reversed(collections.OrderedDict(sorted(needles.items(), key=lambda x: len(x[0])))):
             if allow_letter:
                 reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
@@ -302,7 +325,7 @@ class FossLicenses:
                     'name': replacement,
                     'identified_via': needle_tag,
                 })
-                license_expression = re.sub(reg_exp, f'\\1 {replacement}{extra_add}\\2', license_expression)
+                license_expression = re.sub(reg_exp, f'\\1{replacement}{extra_add}\\2', license_expression)
         return {
             'license_expression': re.sub(r'\s\s*', ' ', license_expression).strip(),
             'identifications': replacements,
@@ -368,6 +391,10 @@ class FossLicenses:
         ---> | alias | \
              +-------+
 
+             +------------+
+        ---> | no_version | \
+             +------------+
+
              +-------+
         ---> | ambig | \
              +-------+
@@ -385,6 +412,8 @@ class FossLicenses:
         Describing the steps/pipes:
 
         alias: normalizes license names like "BSD3" to SPDX identifiers like "BSD-3-Clause"
+
+        no_version: GNU Lesser General Public License states "If the Library as you received it does not specify a version number ...  you may choose any version of the GNU Lesser General Public License ever published ....". no_versions identifies and translate such cases
 
         ambig: identifies and stores ambiguities like "GNU", which is a project and not a license
 
@@ -450,6 +479,7 @@ class FossLicenses:
 
         replacements = []
 
+        # aliases
         ret = self.__update_license_expression_helper(self.license_db[FLAME_ALIASES_TAG],
                                                       'alias',
                                                       license_expression)
@@ -461,7 +491,6 @@ class FossLicenses:
 
         tmp_license_expression = ret['license_expression']
         for alias in reversed(collections.OrderedDict(sorted(aliases.items(), key=lambda x: len(x[0])))):
-
             needle = r'(?:\s+|^)%s(?:\s+|$)' % re.escape(alias)
             needle_tmp = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
                                                                  "operator",
@@ -490,6 +519,10 @@ class FossLicenses:
                                                       allow_letter=True)
         replacements += ret['identifications']
 
+        # Remove the updated markers
+        ret['license_expression'] = ret['license_expression'].replace(TRANSLATED_STRING_START, '').replace(TRANSLATED_STRING_END, '')
+
+        # dual
         update_problem = None
         updates = []
         if update_dual:
@@ -522,10 +555,9 @@ class FossLicenses:
                 parse_text = f'Parsing failed: {update_problem}.'
 
             raise FlameException(f'Could not parse the license "{license_expression}". {amb_text} {parse_text}')
-
         ret = {
             'queried_license': license_expression,
-            FLAME_IDENTIFIED_LICENSE_TAG: license_parsed,
+            FLAME_IDENTIFIED_LICENSE_TAG: str(self.simplify([license_parsed])),
             'identifications': replacements,
             'ambiguities': ambiguities,
             'updated_license': updated_license,
@@ -637,6 +669,18 @@ class FossLicenses:
         # List all compounds
         return self.license_db[COMPOUNDS_TAG]
 
+    def no_version_list(self) -> [str]:
+        """Return a list of all the licenses where no version has a special meaning
+
+        :Example:
+
+        >>> fl = FossLicenses()
+        >>> compats = fl.no_version_list()
+
+        """
+        # List all compounds
+        return self.license_db[NO_VERSION_TAG]
+
     def alias_list(self, alias_license: str = None) -> [str]:
         """Returns a list of all the aliases. Supplying alias_license
         will return a list of aliases beginning with alias_license
@@ -677,7 +721,6 @@ class FossLicenses:
 
         """
         license_expression = ' '.join(_license_expression)
-
         try:
             compat_license_expression = self.expression_license(license_expression, validations=validations, update_dual=False)
             fixed_license_expression = compat_license_expression['identified_license']
@@ -694,14 +737,15 @@ class FossLicenses:
                     fixed_license_expression = re.sub(re.escape(alias), ambig_aliases[alias], fixed_license_expression)
                     break
 
-        compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE_CLEAN, fixed_license_expression)]
+        compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE_CLEAN, str(fixed_license_expression))]
         compat_licenses = [x for x in compat_licenses if x]
         unknown_symbols = set()
+
         for compat_license in compat_licenses:
             if compat_license not in self.known_symbols():
                 unknown_symbols.add(compat_license)
         if len(unknown_symbols) != 0:
-            raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)))
+            raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)), unknown_symbols)
         return 'OK', None
 
     def known_symbols(self):
@@ -794,7 +838,6 @@ class FossLicenses:
         HPND
 
         """
-
         cache_key = f'{license_expression}__{validations}__{update_dual}'
         if cache_key in self.compat_cache:
             return self.compat_cache.get(cache_key)
@@ -803,7 +846,8 @@ class FossLicenses:
         compats = []
         ret = self.__update_license_expression_helper(self.license_db[COMPATS_TAG],
                                                       'compat',
-                                                      expression_full[FLAME_IDENTIFIED_LICENSE_TAG])
+                                                      str(expression_full[FLAME_IDENTIFIED_LICENSE_TAG]))
+        ret['license_expression'] = ret['license_expression'].replace(TRANSLATED_STRING_START, '').replace(TRANSLATED_STRING_END, '')
         ret['license_expression'] = re.sub(r'\s\s*', ' ', ret['license_expression']).strip()
         compats = ret['identifications']
         compat_license_expression = ret['license_expression']
@@ -819,8 +863,8 @@ class FossLicenses:
             'compatibilities': compats,
             'queried_license': license_expression,
             'identification': expression_full,
-            FLAME_IDENTIFIED_LICENSE_TAG: expression_full[FLAME_IDENTIFIED_LICENSE_TAG],
-            FLAME_COMPATIBLE_LICENSE_TAG: compat_license_expression,
+            FLAME_IDENTIFIED_LICENSE_TAG: str(expression_full[FLAME_IDENTIFIED_LICENSE_TAG]),
+            FLAME_COMPATIBLE_LICENSE_TAG: str(compat_license_expression),
             'compat_support': compat_support,
         }
         self.compat_cache[cache_key] = ret

@@ -18,6 +18,7 @@ LICENSE_OPERATORS_FILE = os.path.join(VAR_DIR, 'operators.json')
 LICENSE_COMPOUNDS_FILE = os.path.join(VAR_DIR, 'compounds.json')
 LICENSE_AMBIG_FILE = os.path.join(VAR_DIR, 'ambiguities.json')
 LICENSE_DUALS_FILE = os.path.join(VAR_DIR, 'duals.json')
+LICENSE_NO_VERSION_FILE = os.path.join(VAR_DIR, 'no_version.json')
 
 DESCRIPTION = """
 NAME

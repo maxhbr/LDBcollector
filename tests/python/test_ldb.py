@@ -12,6 +12,7 @@ fl = FossLicenses(config={
     'duals_file': 'tests/var/duals.json',
     'compounds_file': 'tests/var/compounds.json',
     'check': True,
+    'no_version_file': 'tests/var/no_version.json',
     'license-dir': 'tests/licenses',
     'level': 'logging.INFO'})
 
@@ -51,7 +52,7 @@ def test_expression_license():
     assert lic['identified_license'] == "GPL-2.0-or-later"
 
     lic = fl.expression_license("BSD-3-Clause and BSD3", update_dual=False)
-    assert lic['identified_license'] == "BSD-3-Clause AND BSD-3-Clause"
+    assert lic['identified_license'] == "BSD-3-Clause"
 
 def test_with_license_1():
     lic = fl.expression_license("BSD-3-Clause WITH SomeException", update_dual=False)
@@ -101,26 +102,26 @@ def test_compat_as_aliased():
     assert c['compat_license'] == "GPL-2.0-or-later"
 
     c = fl.expression_compatibility_as("GPLv2+ | BSD3", update_dual=False)
-    assert c['compat_license'] == "GPL-2.0-or-later OR BSD-3-Clause"
+    assert c['compat_license'] == "BSD-3-Clause OR GPL-2.0-or-later"
 
     c = fl.expression_compatibility_as("GPLv2+ || BSD3", update_dual=False)
-    assert c['compat_license'] == "GPL-2.0-or-later OR BSD-3-Clause"
+    assert c['compat_license'] == "BSD-3-Clause OR GPL-2.0-or-later"
 
     c = fl.expression_compatibility_as("GPLv2+ & BSD3", update_dual=False)
-    assert c['compat_license'] == "GPL-2.0-or-later AND BSD-3-Clause"
+    assert c['compat_license'] == "BSD-3-Clause AND GPL-2.0-or-later"
 
     c = fl.expression_compatibility_as("GPLv2+ && BSD3", update_dual=False)
-    assert c['compat_license'] == "GPL-2.0-or-later AND BSD-3-Clause"
+    assert c['compat_license'] == "BSD-3-Clause AND GPL-2.0-or-later"
 
 def test_operator_op():
     for op in ["|", "||", "or", "OR"]:
         c = fl.expression_compatibility_as(f'GPLv2+ {op} BSD3', update_dual=False)
-        assert c['compat_license'] == "GPL-2.0-or-later OR BSD-3-Clause"
+        assert c['compat_license'] == "BSD-3-Clause OR GPL-2.0-or-later"
 
 def test_operator_and():
     for op in ["&", "&&", "and", "AND"]:
         c = fl.expression_compatibility_as(f'GPLv2+ {op} BSD3', update_dual=False)
-        assert c['compat_license'] == "GPL-2.0-or-later AND BSD-3-Clause"
+        assert c['compat_license'] == "BSD-3-Clause AND GPL-2.0-or-later"
 
 def test_operator_with():
     for op in ["WITH", "with", "w/"]:
