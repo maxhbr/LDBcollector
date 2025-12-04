@@ -2,12 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Open WebUI License"
-category: "Open WebUI"
-shortName: "Open-WebUI"
+canonicalName: "ZUGFeRD Data Format 2.2.0 License"
+category: "ZUGFeRD Data Format"
+shortName: "ZUGFeRD-Data-Format-2.2.0"
 
 alternativeNames:
-  - "Open WebUI License 2025"
+  - "ZUGFeRD Data Format 2.2.0 14.02.2022"
 
-otherIds: 
-  - "scancode:open-webui-2025"

@@ -6,3 +6,5 @@ canonicalName: "winIDEA SDK License"
 category: "winIDEA SDK"
 shortName: "winIDEA-SDK"
 
+otherIds: 
+  - "scancode:winidea-sdk-2025"

@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "UCD Terms of Use"
-category: "UCD"
-shortName: "UCD-TOU"
+canonicalName: "Public Network TOS"
+category: "Public Network"
+shortName: "Public-Network-TOS"
 
 alternativeNames:
-  - "UCD Terms of Use"
+  - "Public Network Terms of Service"
 

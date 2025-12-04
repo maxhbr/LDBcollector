@@ -8,4 +8,7 @@ shortName: "Root-Certificate-3.0"
 
 alternativeNames:
   - "Root Certificate License Agreement v3.0"
+  - "https://docs.broadcom.com/doc/root-certificate-license-agreement-en"
 
+otherIds: 
+  - "scancode:root-cert-3.0"

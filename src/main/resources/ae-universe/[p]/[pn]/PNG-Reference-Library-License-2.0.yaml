@@ -3,7 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
 canonicalName: "PNG Reference Library License 2.0"
-category: "Libpng"
+category: "PNG Reference Library"
+shortName: "PNG-Reference-Library-2.0"
 spdxIdentifier: "libpng-2.0"
 
 openCoDEStatus: "approved"

@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
 
-canonicalName: "Microchip License"
-category: "Microchip"
-shortName: "Microchip"
+canonicalName: "Permission Terms (Sudo)"
+category: "Permission"
+shortName: "PT-Sudo"
 
 alternativeNames:
-  - "Microchip ENC28J60 License 2009"
+  - "Sudo License"
 
 otherIds: 
-  - "scancode:microchip-enc28j60-2009"
+  - "scancode:sudo"
