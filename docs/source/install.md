@@ -165,17 +165,6 @@ virtual environment and install the dependencies with:
 poetry install
 ```
 
-### Install and build front modules
-
-```bash
-npm install
-npm run build
-```
-
-
-```bash
-poetry run hermine/manage.py collectstatic
-```
 
 ### Configure your instance
 
@@ -206,6 +195,16 @@ poetry run hermine/manage.py migrate
 poetry run hermine/manage.py createsuperuser
 ```
 
+### Install and build front modules
+
+```bash
+npm install
+npm run build
+```
+
+```bash
+poetry run hermine/manage.py collectstatic
+```
 
 ### Run the server
 
