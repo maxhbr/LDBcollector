@@ -37,6 +37,17 @@ jobs:
       - name: Lint YAML files
         run: yamllint license-classifications.yml
 
+  Sort:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v4
+      - name: Sort YAML files
+        run: |
+          ./sort-licenses.sh
+          git diff --quiet
+
   REUSE:
     runs-on: ubuntu-latest
 
