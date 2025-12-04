@@ -35,9 +35,7 @@ jobs:
       - name: Clone the repository
         uses: actions/checkout@v4
       - name: Lint YAML files
-        uses: ibiqlik/action-yamllint@v3
-        with:
-          file_or_dir: license-classifications.yml
+        run: yamllint license-classifications.yml
 
   REUSE:
     runs-on: ubuntu-latest
