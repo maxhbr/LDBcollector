@@ -1,3 +1,5 @@
+#!/bin/env python3
+
 # SPDX-FileCopyrightText: 2023 Double Open Oy <support@doubleopen.org>
 # SPDX-License-Identifier: CC0-1.0
 
