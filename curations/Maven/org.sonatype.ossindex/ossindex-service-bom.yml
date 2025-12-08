@@ -1,0 +1,8 @@
+- id: "Maven:org.sonatype.ossindex:ossindex-service-bom:"
+  curations:
+    comment: |
+      The library is licensed under Apache-2.0, see:
+      https://github.com/sonatype/ossindex-public/blob/main/LICENSE
+    declared_license_mapping:
+      "ASL2": "Apache-2.0"
+    is_metadata_only: true
