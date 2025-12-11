@@ -48,7 +48,7 @@ ext {
 }
 
 group = 'org.licenselynx'
-description = 'Unified License Mapper'
+description = 'Deterministically map license strings to its canonical identifier'
 version = project.ext.gitVersion
 
 project.gradle.taskGraph.whenReady { taskGraph ->
