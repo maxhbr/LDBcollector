@@ -4,8 +4,8 @@
 #
 [project]
 name = "licenselynx"
-version = "2.0.1"
-description = "Unified License Mapper"
+version = "2.0.2"
+description = "Deterministically map license strings to its canonical identifier"
 authors = [
     { name = "Leo Reinmann", email = "leo.reinmann@siemens.com" }
 ]
