@@ -40,7 +40,10 @@ The structure of a stored license looks like this:
 
 ```json
 {
-    "canonical": "LGPL-2.0-only",
+    "canonical": {
+        "id": "LGPL-2.0-only",
+        "src": "spdx",
+    }
     "aliases": {
         "spdx": [
             "GNU Library General Public License v2 only",
@@ -55,7 +58,6 @@ The structure of a stored license looks like this:
             "lgpl-2.0"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }
@@ -64,9 +66,8 @@ The structure of a stored license looks like this:
 
 | ID        | Description                                                                                          |
 |-----------|------------------------------------------------------------------------------------------------------|
-| canonical | Canonical name for license                                                                           |
+| canonical | JSON Object for canonical identifer `id` and the source `src` where this informations comes from     |
 | aliases   | Dictionary of sources, where each source is list of aliases of license (e.g. "spdx", "custom", etc.) |
-| src       | Source for canonical license name                                                                    |
 | rejected  | List of rejected aliases                                                                             |
 | risky     | List of risky aliases                                                                                |
 
