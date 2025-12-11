@@ -1,13 +1,28 @@
-<h1 align="center"><img src="assets/background.jpg" alt="LicenseLynx Hero Banner"></h1>
-
 # LicenseLynx
 
+<div align="center"><img src="assets/background.jpg" alt="LicenseLynx Hero Banner"></div>
+
+<div align="center"><img src="assets/licenselynx-simple-explanation-light.png#only-light" alt="LicenseLynx Workflow Explanation"></div>
+<div align="center"><img src="assets/licenselynx-simple-explanation-dark.png#only-dark" alt="LicenseLynx Workflow Explanation"></div>
+
+
+How can we map a license string found in the wild automatically and deterministically?
+[**LicenseLynx**](https://github.com/licenselynx/licenselynx) is the answer to that!
+
+
+We collect and match license strings found from SPDX, ScanCode LicenseDB, and OSI License List to its canonical identifier.
+But this is just the starting point.
+The most valuable data comes from the community with custom aliases for license identifiers which are not present in the license databases or license lists.
+
+
+
+<!--
 In today's software development landscape, managing licenses across various projects can be a daunting task.
 Different projects often refer to the same license in multiple ways, leading to confusion and potential legal risks.  
 LicenseLynx aims to solve this problem by bridging the gap between unknown or ambiguous license names and their canonical license names.
 Additionally, we offer libraries for Python, Java, and TypeScript to streamline the process of mapping licenses to their canonical names,  
 typically represented by SPDX IDs.
-
+-->
 ## Getting started
 
 For more information, head to the [FAQ](faq.md) and [How LicenseLynx works](licenselynxworks.md).  
@@ -15,6 +30,7 @@ Follow the page [Installation](installation.md) to install LicenseLynx and follo
 
 ## Key Features
 
+- **Community-driven approach**: Custom mappings from the community enhance LicenseLynx to map more license aliases to its canonical identifiers
 - **Aggregated data**: Collects license information and aliases from the license list of SPDX, ScanCode LicenseDB, and OSI into a single repository
 - **SPDX Compliance**: Maps licenses to their canonical names using SPDX IDs if possible
 - **Multi-Language Support**: Offers libraries in Python, Java, and TypeScript to use it with your projects
