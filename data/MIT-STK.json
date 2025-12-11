@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "MIT-STK",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "MIT-STK License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

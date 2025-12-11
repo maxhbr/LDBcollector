@@ -8,6 +8,14 @@
             "Mozilla Public License 1.1"
         ],
         "custom": [
+            "Mozilla License 1.1",
+            "Mozilla Public License (1.1)",
+            "Mozilla Public License (MPL 1.1)",
+            "Mozilla Public License 1.1 (MPL)",
+            "Mozilla Public License v1.1",
+            "Mozilla Public License v1.1 (MPL)",
+            "Mozilla Public License Version 1.1",
+            "Mozilla Public License version 1.1",
             "MPL (1.1)",
             "MPL 1.1 (Mozilla)",
             "MPL 1.1 (Open Source License)",
@@ -16,15 +24,7 @@
             "MPL 1.1 Open Source License",
             "MPL v1.1",
             "MPL v1.1 License",
-            "MPL-1.1 License",
-            "Mozilla License 1.1",
-            "Mozilla Public License (1.1)",
-            "Mozilla Public License (MPL 1.1)",
-            "Mozilla Public License 1.1 (MPL)",
-            "Mozilla Public License Version 1.1",
-            "Mozilla Public License v1.1",
-            "Mozilla Public License v1.1 (MPL)",
-            "Mozilla Public License version 1.1"
+            "MPL-1.1 License"
         ],
         "osi": [
             "Mozilla Public License, Version 1.1"

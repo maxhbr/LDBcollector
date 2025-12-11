@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "ISO-permission",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "ISO permission notice"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

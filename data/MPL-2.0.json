@@ -8,6 +8,14 @@
             "Mozilla Public License 2.0"
         ],
         "custom": [
+            "Mozilla License 2.0",
+            "Mozilla Public License (2.0)",
+            "Mozilla Public License (MPL 2.0)",
+            "Mozilla Public License 2.0 (MPL)",
+            "Mozilla Public License v2.0",
+            "Mozilla Public License v2.0 (MPL)",
+            "Mozilla Public License Version 2.0",
+            "Mozilla Public License version 2.0",
             "MPL (2.0)",
             "MPL 2.0 (Mozilla)",
             "MPL 2.0 (Open Source License)",
@@ -16,20 +24,12 @@
             "MPL 2.0 Open Source License",
             "MPL v2.0",
             "MPL v2.0 License",
-            "MPL-2.0 License",
-            "MPLv2",
-            "MPLv2.0",
-            "Mozilla License 2.0",
-            "Mozilla Public License (2.0)",
-            "Mozilla Public License (MPL 2.0)",
-            "Mozilla Public License 2.0 (MPL)",
-            "Mozilla Public License Version 2.0",
-            "Mozilla Public License v2.0",
-            "Mozilla Public License v2.0 (MPL)",
-            "Mozilla Public License version 2.0",
             "mpl-2",
+            "MPL-2.0 License",
             "mpl2",
-            "mpl2.0"
+            "mpl2.0",
+            "MPLv2",
+            "MPLv2.0"
         ],
         "osi": [
             "Mozilla Public License, Version 2.0"

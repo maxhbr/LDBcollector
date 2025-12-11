@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "Simple-Library-Usage-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Simple Library Usage Exception"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

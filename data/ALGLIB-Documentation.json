@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "ALGLIB-Documentation",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "ALGLIB Documentation License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

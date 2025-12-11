@@ -15,6 +15,7 @@
             "X Window System License v1.0",
             "X.Org License",
             "X.Org Public License",
+            "x11",
             "X11 License (MIT)",
             "X11 License (Open Source)",
             "X11 License (X Window System)",
@@ -23,8 +24,7 @@
             "X11 Open License",
             "X11 Open Source License",
             "X11/MIT",
-            "X11/MIT License",
-            "x11"
+            "X11/MIT License"
         ],
         "scancodeLicensedb": [
             "X11-Style (X Consortium)",
