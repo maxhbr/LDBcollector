@@ -11,9 +11,13 @@
         "custom": [
             "GNU GPL 2.0 (only)",
             "GNU GPL v2.0 only",
+            "GNU General Public License Version 2",
+            "GNU General Public License version 2 (GPLv2)",
+            "GNU General Public License, version 2",
             "GPL 2.0 (only)",
             "GPL 2.0 License (only)",
             "GPL 2.0 only",
+            "GPL v2",
             "GPL v2 only",
             "GPL v2.0",
             "GPL v2.0 License (only)",
@@ -25,7 +29,8 @@
             "GPL2",
             "GPLv2 (only)",
             "GPLv2 only",
-            "GPLv2-only"
+            "GPLv2-only",
+            "The GNU General Public License, Version 2"
         ],
         "osi": [
             "GNU General Public License, Version 2.0"

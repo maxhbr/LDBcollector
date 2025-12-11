@@ -16,6 +16,8 @@
         ]
     },
     "rejected": [
+        "LGPL",
+        "LGPLv2+",
         "LicenseRef-LGPL"
     ],
     "risky": [],

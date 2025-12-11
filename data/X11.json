@@ -23,7 +23,8 @@
             "X11 Open License",
             "X11 Open Source License",
             "X11/MIT",
-            "X11/MIT License"
+            "X11/MIT License",
+            "x11"
         ],
         "scancodeLicensedb": [
             "X11-Style (X Consortium)",

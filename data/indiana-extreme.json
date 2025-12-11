@@ -4,13 +4,18 @@
         "src": "scancode-licensedb"
     },
     "aliases": {
-        "custom": [],
+        "custom": [
+            "Indiana University Extreme! Lab Software License 1.1.1",
+            "Indiana University Extreme! Lab Software License, vesion 1.1.1"
+        ],
         "scancodeLicensedb": [
             "Indiana Extreme License 1.1.1",
             "Indiana University Extreme! Lab Software License Version 1.1.1",
             "LicenseRef-scancode-indiana-extreme"
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "Indiana University Extreme! Lab Software License"
+    ],
     "risky": []
 }

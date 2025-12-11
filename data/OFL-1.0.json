@@ -13,7 +13,9 @@
             "ofl-1.0"
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "SIL"
+    ],
     "risky": [],
     "isMajorVersionOnly": false
 }

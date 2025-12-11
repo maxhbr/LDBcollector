@@ -9,6 +9,7 @@
             "LGPL-2.1+"
         ],
         "custom": [
+            "LGPL 2.1+",
             "LGPL, version 2.1"
         ],
         "scancodeLicensedb": [

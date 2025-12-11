@@ -13,7 +13,12 @@
             "apache-1.0"
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "Apache",
+        "Apache License",
+        "Apache Software License",
+        "Apache Software Licenses"
+    ],
     "risky": [],
     "isMajorVersionOnly": false
 }

@@ -8,14 +8,15 @@
             "ISC License"
         ],
         "custom": [
-            "Internet Systems Consortium License",
-            "Internet Systems Consortium Open Source License",
             "ISC License (Internet Systems Consortium)",
             "ISC License (Open Source)",
             "ISC Open License",
             "ISC Open Source License",
-            "isc-license",
-            "ISCL"
+            "ISC license",
+            "ISCL",
+            "Internet Systems Consortium License",
+            "Internet Systems Consortium Open Source License",
+            "isc-license"
         ],
         "osi": [
             "ISC License (ISC)"

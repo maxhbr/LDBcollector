@@ -8,7 +8,11 @@
             "Python Software Foundation License 2.0"
         ],
         "custom": [
-            "PSF2"
+            "PSF",
+            "PSF License",
+            "PSF2",
+            "PSFL",
+            "Python Software Foundation License"
         ],
         "scancodeLicensedb": [
             "PSF-2.0",

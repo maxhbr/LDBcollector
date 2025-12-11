@@ -11,6 +11,8 @@
             "LicenseRef-scancode-issl-2018"
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "Intel Simplified Software License"
+    ],
     "risky": []
 }
