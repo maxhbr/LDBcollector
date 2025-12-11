@@ -4,6 +4,7 @@
 
 # --- ROOT ---
 venv
+.venv
 .idea
 *.log
 
