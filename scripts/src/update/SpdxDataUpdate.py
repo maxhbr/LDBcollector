@@ -41,6 +41,10 @@ class SpdxDataUpdate(BaseDataUpdate):
 
         # Update old canonical name and source with new SPDX data
         old_src = data["canonical"]["src"]
+
+        if old_src == 'scancode-licensedb':
+            old_src = 'scancodeLicensedb'
+
         old_canonical_id = data["canonical"]["id"]
 
         data["canonical"]["src"] = self._src
