@@ -640,9 +640,11 @@ func UpdateProfile(c *gin.Context) {
 func DeleteUser(c *gin.Context) {
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var olduser models.User
+		username := c.Param("username")
 		userId := c.MustGet("userId").(uuid.UUID)
+
 		active := true
-		if err := tx.Where(models.User{Id: userId, Active: &active}).First(&olduser).Error; err != nil {
+		if err := tx.Where(models.User{UserName: &username, Active: &active}).First(&olduser).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   "no user with such username exists",

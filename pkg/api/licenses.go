@@ -19,6 +19,8 @@ import (
 	"time"
 
 	"github.com/fossology/LicenseDb/pkg/db"
+	"github.com/fossology/LicenseDb/pkg/email"
+	logger "github.com/fossology/LicenseDb/pkg/log"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/fossology/LicenseDb/pkg/validations"
@@ -292,6 +294,12 @@ func CreateLicense(c *gin.Context) {
 			c.JSON(http.StatusInternalServerError, er)
 			return err
 		}
+		// Send notification email about license creation
+		if email.Email != nil {
+			email.NotifyLicenseCreated(*lic.User.UserEmail, *lic.User.UserName, *lic.Shortname)
+		} else {
+			logger.LogInfo("Email service is not enabled; skipping notification email sending")
+		}
 
 		res := models.LicenseResponse{
 			Data:   []models.LicenseResponseDTO{lic.ConvertToLicenseResponseDTO()},
@@ -438,6 +446,12 @@ func UpdateLicense(c *gin.Context) {
 			}
 			c.JSON(http.StatusInternalServerError, er)
 			return err
+		}
+		// Send notification email about license update
+		if email.Email != nil {
+			email.NotifyLicenseUpdated(*newLicense.User.UserEmail, *newLicense.User.UserName, *newLicense.Shortname)
+		} else {
+			logger.LogInfo("Email service is not enabled; skipping notification email sending")
 		}
 
 		res := models.LicenseResponse{
