@@ -6,7 +6,6 @@ package test
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
 	"testing"
 
@@ -59,7 +58,7 @@ func TestGetAllObligationClassification(t *testing.T) {
 	t.Run("successWithActiveTrue", func(t *testing.T) {
 		w := makeRequest("GET", "/obligations/classifications?active=true", nil, true)
 		assert.Equal(t, http.StatusOK, w.Code)
-		log.Printf("%v", w.Body)
+
 		var res models.ObligationClassificationResponse
 		err := json.Unmarshal(w.Body.Bytes(), &res)
 		assert.NoError(t, err)
