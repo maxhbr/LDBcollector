@@ -97,7 +97,7 @@ class LicenseSuggestion {
     this.inputEl = inputEl;
     this.licenseId = licenseId;
     this.statusIndicator = statusIndicator;
-    this.inputWraper = $('.input-wrapper');
+    this.inputWrapper = $('.input-wrapper');
     this.tooltipErrorClasses = 'hint--bottom tooltip--error hint--always';
 
     this.bindEventHandlers();
@@ -157,8 +157,8 @@ class LicenseSuggestion {
   setStatus(status = '', message = '') {
     const statusClass = status.toLowerCase();
     const displayTooltip = (s, m) => {
-      this.inputWraper.attr('aria-label', `${s}: ${m}`);
-      this.inputWraper.addClass(this.tooltipErrorClasses);
+      this.inputWrapper.attr('aria-label', `${s}: ${m}`);
+      this.inputWrapper.addClass(this.tooltipErrorClasses);
     };
 
     switch (status) {
@@ -171,7 +171,7 @@ class LicenseSuggestion {
         break;
       default:
         this.statusIndicator.removeClass('fetching error');
-        this.inputWraper.removeClass(this.tooltipErrorClasses);
+        this.inputWrapper.removeClass(this.tooltipErrorClasses);
         break;
     }
   }
