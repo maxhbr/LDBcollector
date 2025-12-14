@@ -111,6 +111,7 @@ class Choosealicense {
       textarea.style.left = '-9999px';
       document.body.appendChild(textarea);
 
+      textarea.focus();
       textarea.select();
       textarea.setSelectionRange(0, textarea.value.length);
 
