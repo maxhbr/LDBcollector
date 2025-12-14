@@ -61,32 +61,72 @@ class Choosealicense {
     });
   }
 
-  // Initializes Clipboard.js
+  // Initializes copy-to-clipboard behavior
   initClipboard() {
     const buttons = document.querySelectorAll('.js-clipboard-button');
     buttons.forEach((button) => {
       button.dataset.clipboardPrompt = button.textContent;
+      button.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const targetSelector = button.getAttribute('data-clipboard-target');
+        if (!targetSelector) return;
+
+        const targetElement = document.querySelector(targetSelector);
+        if (!targetElement) return;
+
+        this.selectText(targetElement);
+
+        const textToCopy = targetElement.textContent || '';
+        if (!textToCopy) return;
+
+        this.copyText(textToCopy)
+          .then(() => {
+            button.textContent = 'Copied!';
+          })
+          .catch(() => {
+            // If copying fails, leave the prompt unchanged.
+          });
+      });
+
+      const restorePrompt = () => {
+        button.textContent = button.dataset.clipboardPrompt || '';
+      };
+
+      button.addEventListener('mouseleave', restorePrompt);
+      button.addEventListener('blur', restorePrompt);
     });
-
-    const clip = new Clipboard('.js-clipboard-button');
-    clip.on('mouseout', (event) => this.clipboardMouseout(event));
-    clip.on('complete', (event) => this.clipboardComplete(event));
   }
 
-  // Callback to restore the clipboard button's original text
-  clipboardMouseout(event) {
-    const trigger = event && event.trigger;
-    if (trigger) {
-      trigger.textContent = trigger.dataset.clipboardPrompt || '';
+  copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
     }
-  }
 
-  // Post-copy user feedback callback
-  clipboardComplete(event) {
-    const trigger = event && event.trigger;
-    if (trigger) {
-      trigger.textContent = 'Copied!';
-    }
+    return new Promise((resolve, reject) => {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'absolute';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+
+      textarea.focus();
+      textarea.select();
+      textarea.setSelectionRange(0, textarea.value.length);
+
+      try {
+        const successful = document.execCommand('copy');
+        if (!successful) {
+          throw new Error('Copy command was unsuccessful');
+        }
+        resolve();
+      } catch (error) {
+        reject(error);
+      } finally {
+        document.body.removeChild(textarea);
+      }
+    });
   }
 
   // Initializes the repository suggestion feature
