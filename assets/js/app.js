@@ -1,20 +1,21 @@
+const TOOLTIP_CLASSES = ['hint--bottom', 'hint--large', 'hint--no-animate', 'override-hint-inline'];
+const TOOLTIP_ATTRIBUTES_BY_RULE = {
+  permissions: {
+    heading: 'Permission',
+    color: 'tooltip--permissions'
+  },
+  conditions: {
+    heading: 'Condition',
+    color: 'tooltip--conditions'
+  },
+  limitations: {
+    heading: 'Limitation',
+    color: 'tooltip--limitations'
+  }
+};
+
 class Choosealicense {
   constructor() {
-    this.tooltipAttributesMapperByRuleType = {
-      permissions: {
-        heading: 'Permission',
-        color: 'tooltip--permissions'
-      },
-      conditions: {
-        heading: 'Condition',
-        color: 'tooltip--conditions'
-      },
-      limitations: {
-        heading: 'Limitation',
-        color: 'tooltip--limitations'
-      }
-    };
-
     this.initTooltips();
     this.initClipboard();
     this.initLicenseSuggestion();
@@ -42,52 +43,59 @@ class Choosealicense {
 
     Object.entries(annotations).forEach(([ruletype, rules]) => {
       rules.forEach((rule) => {
-        const licenseLiElement = $(`.license-${ruletype} .${rule.tag}`).not(
-          `dd.license-${ruletype} .${rule.tag}`
-        );
-        const tooltipAttr = this.tooltipAttributesMapperByRuleType[ruletype];
+        const tooltipAttr = TOOLTIP_ATTRIBUTES_BY_RULE[ruletype];
         if (!tooltipAttr) return;
 
-        licenseLiElement.attr(
-          'aria-label',
-          `${rule.label} ${tooltipAttr.heading.toLowerCase()}: ${rule.description}`
-        );
-        licenseLiElement.addClass(
-          `hint--bottom
-                                   hint--large
-                                   hint--no-animate
-                                   ${tooltipAttr.color}
-                                   override-hint-inline`
-        );
+        const elements = Array.from(
+          document.querySelectorAll(`.license-${ruletype} .${rule.tag}`)
+        ).filter((el) => !el.closest(`dd.license-${ruletype}`));
+
+        elements.forEach((el) => {
+          el.setAttribute(
+            'aria-label',
+            `${rule.label} ${tooltipAttr.heading.toLowerCase()}: ${rule.description}`
+          );
+          el.classList.add(...TOOLTIP_CLASSES, tooltipAttr.color);
+        });
       });
     });
   }
 
   // Initializes Clipboard.js
   initClipboard() {
-    const clipboardPrompt = $('.js-clipboard-button').text();
-    $('.js-clipboard-button').data('clipboard-prompt', clipboardPrompt);
+    const buttons = document.querySelectorAll('.js-clipboard-button');
+    buttons.forEach((button) => {
+      button.dataset.clipboardPrompt = button.textContent;
+    });
 
     const clip = new Clipboard('.js-clipboard-button');
-    clip.on('mouseout', this.clipboardMouseout);
-    clip.on('complete', this.clipboardComplete);
+    clip.on('mouseout', (event) => this.clipboardMouseout(event));
+    clip.on('complete', (event) => this.clipboardComplete(event));
   }
 
   // Callback to restore the clipboard button's original text
-  clipboardMouseout(client, args) {
-    this.textContent = $(this).data('clipboard-prompt');
+  clipboardMouseout(event) {
+    const trigger = event && event.trigger;
+    if (trigger) {
+      trigger.textContent = trigger.dataset.clipboardPrompt || '';
+    }
   }
 
   // Post-copy user feedback callback
-  clipboardComplete(client, args) {
-    this.textContent = 'Copied!';
+  clipboardComplete(event) {
+    const trigger = event && event.trigger;
+    if (trigger) {
+      trigger.textContent = 'Copied!';
+    }
   }
 
   // Initializes the repository suggestion feature
   initLicenseSuggestion() {
-    const inputEl = $('#repository-url');
-    const licenseId = inputEl.attr('data-license-id');
-    const statusIndicator = $('.status-indicator');
+    const inputEl = document.querySelector('#repository-url');
+    const statusIndicator = document.querySelector('.status-indicator');
+    if (!inputEl || !statusIndicator) return;
+
+    const licenseId = inputEl.getAttribute('data-license-id');
     new LicenseSuggestion(inputEl, licenseId, statusIndicator);
   }
 }
@@ -97,51 +105,48 @@ class LicenseSuggestion {
     this.inputEl = inputEl;
     this.licenseId = licenseId;
     this.statusIndicator = statusIndicator;
-    this.inputWrapper = $('.input-wrapper');
-    this.tooltipErrorClasses = 'hint--bottom tooltip--error hint--always';
+    this.inputWrapper = document.querySelector('.input-wrapper');
+    this.tooltipErrorClasses = ['hint--bottom', 'tooltip--error', 'hint--always'];
 
     this.bindEventHandlers();
   }
 
   // Main event handlers for user input
   bindEventHandlers() {
-    this.inputEl
-      .on('input', () => {
-        this.setStatus('');
-      })
-      .on('keyup', (event) => {
-        if (event.keyCode === 13 && event.target.value) {
-          let repositoryFullName;
-          try {
-            repositoryFullName = this.parseUserInput(event.target.value);
-          } catch (error) {
-            this.setStatus('Error', 'Invalid URL.');
-            return;
-          }
+    this.inputEl.addEventListener('input', () => {
+      this.setStatus('');
+    });
 
-          this.setStatus('Fetching');
-          this.fetchInfoFromGithubAPI(
-            repositoryFullName,
-            (err, repositoryInfo = null) => {
-              if (err) {
-                this.setStatus('Error', err.message);
-                return;
-              }
-              if (repositoryInfo.license) {
-                const license = repositoryInfo.license;
-                this.setStatus('Error', this.repositoryLicense(repositoryFullName, license));
-              } else {
-                const licenseUrl = encodeURIComponent(
-                  `https://github.com/${repositoryFullName}/community/license/new?template=${this.licenseId}`
-                );
-                window.location.href = `https://github.com/login?return_to=${licenseUrl}`;
-                this.setStatus('');
-                this.inputEl.val('');
-              }
-            }
+    this.inputEl.addEventListener('keyup', (event) => {
+      if (event.key !== 'Enter' || !event.target.value) return;
+
+      let repositoryFullName;
+      try {
+        repositoryFullName = this.parseUserInput(event.target.value);
+      } catch (error) {
+        this.setStatus('Error', 'Invalid URL.');
+        return;
+      }
+
+      this.setStatus('Fetching');
+      this.fetchInfoFromGithubAPI(repositoryFullName, (err, repositoryInfo = null) => {
+        if (err) {
+          this.setStatus('Error', err.message);
+          return;
+        }
+        if (repositoryInfo.license) {
+          const license = repositoryInfo.license;
+          this.setStatus('Error', this.repositoryLicense(repositoryFullName, license));
+        } else {
+          const licenseUrl = encodeURIComponent(
+            `https://github.com/${repositoryFullName}/community/license/new?template=${this.licenseId}`
           );
+          window.location.href = `https://github.com/login?return_to=${licenseUrl}`;
+          this.setStatus('');
+          this.inputEl.value = '';
         }
       });
+    });
   }
 
   // Try to extract the repository full name from the user input
@@ -157,36 +162,44 @@ class LicenseSuggestion {
   setStatus(status = '', message = '') {
     const statusClass = status.toLowerCase();
     const displayTooltip = (s, m) => {
-      this.inputWrapper.attr('aria-label', `${s}: ${m}`);
-      this.inputWrapper.addClass(this.tooltipErrorClasses);
+      if (!this.inputWrapper) return;
+      this.inputWrapper.setAttribute('aria-label', `${s}: ${m}`);
+      this.inputWrapper.classList.add(...this.tooltipErrorClasses);
     };
 
     switch (status) {
       case 'Fetching':
-        this.statusIndicator.removeClass(`error ${this.tooltipErrorClasses}`).addClass(statusClass);
+        this.statusIndicator.classList.remove('error', ...this.tooltipErrorClasses);
+        this.statusIndicator.classList.add(statusClass);
         break;
       case 'Error':
-        this.statusIndicator.removeClass('fetching').addClass(statusClass);
+        this.statusIndicator.classList.remove('fetching');
+        this.statusIndicator.classList.add(statusClass);
         displayTooltip(status, message);
         break;
       default:
-        this.statusIndicator.removeClass('fetching error');
-        this.inputWrapper.removeClass(this.tooltipErrorClasses);
+        this.statusIndicator.classList.remove('fetching', 'error');
+        if (this.inputWrapper) {
+          this.inputWrapper.classList.remove(...this.tooltipErrorClasses);
+        }
         break;
     }
   }
 
   // Fetches information about a repository from the Github API
   fetchInfoFromGithubAPI(repositoryFullName, callback) {
-    $.getJSON(`https://api.github.com/repos/${repositoryFullName}`, (info) => {
-      callback(null, info);
-    }).fail((e) => {
-      if (e.status === 404) {
-        callback(new Error(`Repository ${repositoryFullName} not found.`));
-      } else {
-        callback(new Error(`Network error when trying to get information about ${repositoryFullName}.`));
-      }
-    });
+    fetch(`https://api.github.com/repos/${repositoryFullName}`)
+      .then((response) => {
+        if (!response.ok) {
+          if (response.status === 404) {
+            throw new Error(`Repository ${repositoryFullName} not found.`);
+          }
+          throw new Error(`Network error when trying to get information about ${repositoryFullName}.`);
+        }
+        return response.json();
+      })
+      .then((info) => callback(null, info))
+      .catch((error) => callback(error));
   }
 
   // Generates a message showing that a repository is already licensed
@@ -199,6 +212,6 @@ class LicenseSuggestion {
   }
 }
 
-$(() => {
+document.addEventListener('DOMContentLoaded', () => {
   new Choosealicense();
 });
