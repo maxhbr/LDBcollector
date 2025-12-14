@@ -1,7 +1,28 @@
 ---
 ---
 
-@import "../vendor/normalize-css/normalize.css";
+/* Minimal base reset to replace normalize.css */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+}
+
+img {
+  border: 0;
+}
+
 @import "../vendor/hint.css/hint.min.css";
 
 body {
