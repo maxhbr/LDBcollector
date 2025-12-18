@@ -5,8 +5,9 @@ package db
 
 import (
 	"fmt"
-	"log"
 
+	logger "github.com/fossology/LicenseDb/pkg/log"
+	"go.uber.org/zap"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -21,7 +22,7 @@ func Connect(dbhost, port, user, dbname, password *string) {
 	gormConfig := &gorm.Config{TranslateError: true}
 	database, err := gorm.Open(postgres.Open(dburi), gormConfig)
 	if err != nil {
-		log.Fatalf("Failed to connect to database: %v", err)
+		logger.LogFatal("Failed to connect to database", zap.Error(err))
 	}
 
 	DB = database
