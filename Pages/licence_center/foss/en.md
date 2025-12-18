@@ -214,6 +214,7 @@ The licenses listed here contain the different GPL versions and derived license 
 | IBM Public License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20020202140635/http://oss.software.ibm.com:80/developerworks/opensource/license10.html) |  IPL-1.0 |
 | Intel Open Source License | [🇬🇧](https://opensource.org/licenses/intel-open-source-license.php) | Intel |
 | IPA Font License | [🇬🇧](https://ipafont.ipa.go.jp/old/ipafont/download.html#en) | IPA |
+| Latex2e License | [🇬🇧](https://fedoraproject.org/wiki/Licensing/Latex2e) | latex2e |
 | No Limit Public License | [🇬🇧](http://spdx.org/licenses/NLPL) | NLPL |
 | Non-Profit Open Software License 3.0 | [🇬🇧](https://spdx.org/licenses/NPOSL-3.0.html) |  NPOSL-3.0 |
 | Open Group Public License | [🇬🇧](http://www.opengroup.org/openmotif/license) | LicenseRef-scancode-opengroup-pl |
