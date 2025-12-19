@@ -76,6 +76,7 @@ The licenses listed below seek to apply the basic idea underlying Free Software 
 | GNU Free Documentation License (FDL) (v. 1.3) | [🇬🇧](http://www.gnu.org/copyleft/fdl.html) | - |
 | Guy Hoffman's license | [🇬🇧](http://www.ram.org/ramblings/philosophy/fmp/hoffman_license.html) | - |
 | ifrOSS Freie Lizenz für Texte und Textdatenbanken (IFL Text) | [🇬🇧](https://github.com/ifrOSS/Lizenzcenter/blob/Neue-Gliederung/IFL) | - |
+| Latex2e License | [🇬🇧](https://fedoraproject.org/wiki/Licensing/Latex2e) | latex2e |
 | Linux Documentation Project Copying License | [🇬🇧](http://tldp.org/LDP-COPYRIGHT.html) | - |
 | LinuxTag Green Open Music Licence | [🇬🇧](http://openmusic.linuxtag.org/modules/freecontent/content/openmusic/green.html) | - |
 | LinuxTag Yellow Open Music License | [🇬🇧](http://openmusic.linuxtag.org/modules/freecontent/content/openmusic/yellow.html) | - |
