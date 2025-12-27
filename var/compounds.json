@@ -23,7 +23,12 @@
               "Apache 2.0 w/LLVM Exception",
               "Apache License-2.0-with-LLVM-exception",
               "Apache-2.0 WITH llvm exception",
-              "apache-2-llvm-exceptions"
+              "apache-2-llvm-exceptions",
+              "Apache-with-LLVM-Exception",
+              "Apache-with-Runtime-Exception",
+              "Apache-2.0 WITH LLVM-exception exception",
+              "Apache-2.0 WITH LLVM Exceptions"
+
             ],
             "compatibility_as": "0BSD"            
         },
