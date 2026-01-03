@@ -2,16 +2,16 @@
 
 Project providing insights on the {metæffekt} license database covering
 
-* 2893 modeled license terms,
-* 208 exceptions,
+* 2920 modeled license terms,
+* 209 exceptions,
 * 14 modifiers
 * 2 restrictions
 * 307 specific and commonly used license expressions, and
-* 60 consolidated markers
+* 61 consolidated markers
 
-as of 04th December 2025.
+as of 03th December 2026.
 
-A total of 3101 differentiated terms and exceptions!
+A total of 3129 differentiated terms and exceptions!
 
 The following links provide letter-specific overviews on the license information:
 
@@ -109,7 +109,7 @@ the license name is problematic.
 
 The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 
-Copyright © metaeffekt GmbH 2021-2025. All rights reserved.
+Copyright © metaeffekt GmbH 2021-2026. All rights reserved.
 
 ## Contribution
 As this repository is largely showing converted data. A direct contribution in the form of patches is
