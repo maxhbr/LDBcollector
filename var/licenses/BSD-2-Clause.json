@@ -70,6 +70,10 @@
       "BSD 2-C",
       "BSD-2-Clause",
       "BSD2-Clause",
-      "freebsd"
+      "freebsd",
+      "FREEBSD",
+      "bsd-2-clause-freebsd",
+      "bsd-2-clause-netbsd",
+      "BSD-2-clause-NetBSD"
     ]
 }

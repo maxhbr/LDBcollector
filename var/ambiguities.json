@@ -61,7 +61,8 @@
                 "Artistic License",
                 "Artistic",
               "Artistic License (Perl)",
-              "Artistc"
+              "Artistc",
+              "ARTISTIC LICENSE"
             ],
             "problem": "This license has different version (1.0, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -117,6 +118,11 @@
           "problem": "BSL or BSL-1 might refer to the Boost License(s) Original Boost and BSL-1.0. BSL can also refer to Business Source License or BUSL."
         },
       "Business Source License": {
+        "aliases": [
+        ],
+        "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+      },
+      "": {
         "aliases": [
         ],
         "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
