@@ -114,11 +114,11 @@ func Router() *gin.Engine {
 			licenses := authorizedv1.Group("/licenses")
 			{
 				licenses.GET("", FilterLicense)
-				licenses.GET(":shortname", GetLicense)
+				licenses.GET(":id", GetLicense)
 				licenses.GET("export", ExportLicenses)
 				licenses.GET("/preview", GetAllLicensePreviews)
 				licenses.POST("", CreateLicense)
-				licenses.PATCH(":shortname", UpdateLicense)
+				licenses.PATCH(":id", UpdateLicense)
 				licenses.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), ImportLicenses)
 				licenses.POST("/similarity", getSimilarLicenses)
 
@@ -141,13 +141,13 @@ func Router() *gin.Engine {
 			{
 				obligations.GET("", GetAllObligation)
 				obligations.GET("/preview", GetAllObligationPreviews)
-				obligations.GET(":topic", GetObligation)
-				obligations.GET(":topic/audits", GetObligationAudits)
+				obligations.GET(":id", GetObligation)
+				obligations.GET(":id/audits", GetObligationAudits)
 				obligations.GET("export", ExportObligations)
 				obligations.POST("", CreateObligation)
 				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), ImportObligations)
-				obligations.PATCH(":topic", UpdateObligation)
-				obligations.DELETE(":topic", DeleteObligation)
+				obligations.PATCH(":id", UpdateObligation)
+				obligations.DELETE(":id", DeleteObligation)
 				obligations.GET("/types", GetAllObligationType)
 				obligations.POST("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationType)
 				obligations.DELETE("/types/:type", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationType)
@@ -158,10 +158,10 @@ func Router() *gin.Engine {
 			}
 			obMap := authorizedv1.Group("/obligation_maps")
 			{
-				obMap.GET("topic/:topic", GetObligationMapByTopic)
-				obMap.GET("license/:license", GetObligationMapByLicense)
-				obMap.PATCH("topic/:topic/license", PatchObligationMap)
-				obMap.PUT("topic/:topic/license", UpdateLicenseInObligationMap)
+				obMap.GET("obligation/:id", GetObligationMapByObligationId)
+				obMap.GET("license/:id", GetObligationMapByLicenseId)
+				obMap.PATCH("obligation/:id/license", PatchObligationMap)
+				obMap.PUT("obligation/:id/license", UpdateLicenseInObligationMap)
 			}
 			audit := authorizedv1.Group("/audits")
 			{
@@ -187,7 +187,7 @@ func Router() *gin.Engine {
 			licenses := unAuthorizedv1.Group("/licenses")
 			{
 				licenses.GET("", FilterLicense)
-				licenses.GET(":shortname", GetLicense)
+				licenses.GET(":id", GetLicense)
 				licenses.GET("export", ExportLicenses)
 				licenses.GET("/preview", GetAllLicensePreviews)
 			}
@@ -199,16 +199,16 @@ func Router() *gin.Engine {
 			{
 				obligations.GET("", GetAllObligation)
 				obligations.GET("/preview", GetAllObligationPreviews)
-				obligations.GET(":topic", GetObligation)
-				obligations.GET(":topic/audits", GetObligationAudits)
+				obligations.GET(":id", GetObligation)
+				obligations.GET(":id/audits", GetObligationAudits)
 				obligations.GET("export", ExportObligations)
 				obligations.GET("/types", GetAllObligationType)
 				obligations.GET("/classifications", GetAllObligationClassification)
 			}
 			obMap := unAuthorizedv1.Group("/obligation_maps")
 			{
-				obMap.GET("topic/:topic", GetObligationMapByTopic)
-				obMap.GET("license/:license", GetObligationMapByLicense)
+				obMap.GET("obligation/:id", GetObligationMapByObligationId)
+				obMap.GET("license/:id", GetObligationMapByLicenseId)
 			}
 			audit := unAuthorizedv1.Group("/audits")
 			{
@@ -249,7 +249,7 @@ func Router() *gin.Engine {
 			licenses := authorizedv1.Group("/licenses")
 			{
 				licenses.POST("", CreateLicense)
-				licenses.PATCH(":shortname", UpdateLicense)
+				licenses.PATCH(":id", UpdateLicense)
 				licenses.POST("import", ImportLicenses)
 				licenses.POST("/similarity", getSimilarLicenses)
 
@@ -268,8 +268,8 @@ func Router() *gin.Engine {
 			{
 				obligations.POST("", CreateObligation)
 				obligations.POST("import", middleware.RoleBasedAccessMiddleware([]string{"ADMIN", "SUPER_ADMIN"}), ImportObligations)
-				obligations.PATCH(":topic", UpdateObligation)
-				obligations.DELETE(":topic", DeleteObligation)
+				obligations.PATCH(":id", UpdateObligation)
+				obligations.DELETE(":id", DeleteObligation)
 				obligations.POST("/types", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationType)
 				obligations.DELETE("/types/:type", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationType)
 				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
@@ -278,8 +278,8 @@ func Router() *gin.Engine {
 			}
 			obMap := authorizedv1.Group("/obligation_maps")
 			{
-				obMap.PATCH("topic/:topic/license", PatchObligationMap)
-				obMap.PUT("topic/:topic/license", UpdateLicenseInObligationMap)
+				obMap.PATCH("obligation/:id/license", PatchObligationMap)
+				obMap.PUT("obligation/:id/license", UpdateLicenseInObligationMap)
 			}
 			oidcClient := authorizedv1.Group("/oidcClients")
 			{

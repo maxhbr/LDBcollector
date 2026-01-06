@@ -12,7 +12,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"io"
 	"net/http"
 	"path/filepath"
 	"strconv"
@@ -25,6 +24,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/validations"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
+	"github.com/google/uuid"
 
 	"gorm.io/gorm"
 )
@@ -154,32 +154,40 @@ func FilterLicense(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// GetLicense to get a single license by its shortname
+// GetLicense to get a single license by its id
 //
-//	@Summary		Get a license by shortname
-//	@Description	Get a single license by its shortname
+//	@Summary		Get a license by id
+//	@Description	Get a single license by its id
 //	@Id				GetLicense
 //	@Tags			Licenses
 //	@Accept			json
 //	@Produce		json
-//	@Param			shortname	path		string	true	"Shortname of the license"
-//	@Success		200			{object}	models.LicenseResponse
-//	@Failure		404			{object}	models.LicenseError	"License with shortname not found"
+//	@Param			id	path		string	true	"Id of the license"
+//	@Success		200	{object}	models.LicenseResponse
+//	@Failure		404	{object}	models.LicenseError	"License with id not found"
 //	@Security		ApiKeyAuth || {}
-//	@Router			/licenses/{shortname} [get]
+//	@Router			/licenses/{id} [get]
 func GetLicense(c *gin.Context) {
 	var license models.LicenseDB
 
-	queryParam := c.Param("shortname")
-	if queryParam == "" {
+	licenseId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no license with id '%s' exists", licenseId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
-	err := db.DB.Where(models.LicenseDB{Shortname: &queryParam}).Preload("User").First(&license).Error
+	err = db.DB.Where(models.LicenseDB{Id: licenseId}).Preload("User").First(&license).Error
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("no license with shortname '%s' exists", queryParam),
+			Message:   fmt.Sprintf("no license with id '%s' exists", licenseId.String()),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -210,14 +218,13 @@ func GetLicense(c *gin.Context) {
 //	@Param			license	body		models.LicenseCreateDTO	true	"New license to be created"
 //	@Success		201		{object}	models.LicenseResponse	"New license created successfully"
 //	@Failure		400		{object}	models.LicenseError		"Invalid request body"
-//	@Failure		409		{object}	models.LicenseError		"License with same shortname already exists"
 //	@Failure		500		{object}	models.LicenseError		"Failed to create license"
 //	@Security		ApiKeyAuth
 //	@Router			/licenses [post]
 func CreateLicense(c *gin.Context) {
 	var input models.LicenseCreateDTO
 
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 
 	if err := c.ShouldBindJSON(&input); err != nil {
 		er := models.LicenseError{
@@ -243,24 +250,12 @@ func CreateLicense(c *gin.Context) {
 		return
 	}
 
-	lic, err := input.ConvertToLicenseDB()
-	if err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "invalid json body",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
+	lic := input.ConvertToLicenseDB()
+
 	lic.UserId = userId
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		result := tx.
-			Where(&models.LicenseDB{Shortname: lic.Shortname}).
-			FirstOrCreate(&lic)
+		result := tx.Create(&lic)
 
 		if result.Error != nil {
 			er := models.LicenseError{
@@ -272,17 +267,6 @@ func CreateLicense(c *gin.Context) {
 			}
 			c.JSON(http.StatusInternalServerError, er)
 			return result.Error
-		}
-		if result.RowsAffected == 0 {
-			er := models.LicenseError{
-				Status:    http.StatusConflict,
-				Message:   "can not create license with same shortname",
-				Error:     fmt.Sprintf("Error: License with shortname '%s' already exists", *lic.Shortname),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusConflict, er)
-			return errors.New("can not create license with same shortname")
 		}
 
 		if err := tx.Preload("User").First(&lic).Error; err != nil {
@@ -300,7 +284,7 @@ func CreateLicense(c *gin.Context) {
 		if err := utils.AddChangelogsForLicense(tx, userId, &lic, &models.LicenseDB{}); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
-				Message:   "Failed to update license",
+				Message:   "Failed to create license",
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
@@ -323,7 +307,7 @@ func CreateLicense(c *gin.Context) {
 	})
 }
 
-// UpdateLicense Update license with given shortname and create audit and changelog entries.
+// UpdateLicense Update license with given id and create audit and changelog entries.
 //
 //	@Summary		Update a license
 //	@Description	Update a license in the service
@@ -331,27 +315,37 @@ func CreateLicense(c *gin.Context) {
 //	@Tags			Licenses
 //	@Accept			json
 //	@Produce		json
-//	@Param			shortname	path		string					true	"Shortname of the license to be updated"
-//	@Param			license		body		models.LicenseUpdateDTO	true	"Update license body (requires only the fields to be updated)"
-//	@Success		200			{object}	models.LicenseResponse	"License updated successfully"
-//	@Failure		400			{object}	models.LicenseError		"Invalid license body"
-//	@Failure		404			{object}	models.LicenseError		"License with shortname not found"
-//	@Failure		409			{object}	models.LicenseError		"License with same shortname already exists"
-//	@Failure		500			{object}	models.LicenseError		"Failed to update license"
+//	@Param			id		path		string					true	"Id of the license to be updated"
+//	@Param			license	body		models.LicenseUpdateDTO	true	"Update license body (requires only the fields to be updated)"
+//	@Success		200		{object}	models.LicenseResponse	"License updated successfully"
+//	@Failure		400		{object}	models.LicenseError		"Invalid license body"
+//	@Failure		404		{object}	models.LicenseError		"License with id not found"
+//	@Failure		500		{object}	models.LicenseError		"Failed to update license"
 //	@Security		ApiKeyAuth
-//	@Router			/licenses/{shortname} [patch]
+//	@Router			/licenses/{id} [patch]
 func UpdateLicense(c *gin.Context) {
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var updates models.LicenseUpdateDTO
 		var oldLicense models.LicenseDB
 
-		userId := c.MustGet("userId").(int64)
+		userId := c.MustGet("userId").(uuid.UUID)
 
-		shortname := c.Param("shortname")
-		if err := tx.Where(models.LicenseDB{Shortname: &shortname}).First(&oldLicense).Error; err != nil {
+		licenseId, err := uuid.Parse(c.Param("id"))
+		if err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   fmt.Sprintf("no license with id '%s' exists", licenseId.String()),
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return err
+		}
+		if err := tx.Where(models.LicenseDB{Id: licenseId}).First(&oldLicense).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
-				Message:   fmt.Sprintf("license with shortname '%s' not found", shortname),
+				Message:   fmt.Sprintf("license with id '%s' not found", licenseId.String()),
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
@@ -385,22 +379,16 @@ func UpdateLicense(c *gin.Context) {
 		}
 
 		newLicense := updates.ConvertToLicenseDB()
-		if newLicense.Text != nil && *oldLicense.Text != *newLicense.Text {
-			if !*oldLicense.TextUpdatable {
-				er := models.LicenseError{
-					Status:    http.StatusBadRequest,
-					Message:   "Text is not updatable",
-					Error:     "Field `text_updatable` needs to be true to update the text",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusBadRequest, er)
-				return errors.New("field `text_updatable` needs to be true to update the text")
+		if newLicense.Text != nil && *oldLicense.Text != *newLicense.Text && !*oldLicense.TextUpdatable {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "Text is not updatable",
+				Error:     "Field `text_updatable` needs to be true to update the text",
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
 			}
-
-			// Update flag to indicate the license text was updated.
-			textSetBy := int64(models.TEXT_SET_VIA_MANUAL_UPDATE)
-			newLicense.TextSetBy = &textSetBy
+			c.JSON(http.StatusBadRequest, er)
+			return errors.New("field `text_updatable` needs to be true to update the text")
 		}
 
 		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
@@ -416,7 +404,7 @@ func UpdateLicense(c *gin.Context) {
 			return err
 		}
 
-		if err := tx.Omit("ExternalRef", "Obligations", "User", "Shortname").Where(models.LicenseDB{Id: oldLicense.Id}).Updates(&newLicense).Error; err != nil {
+		if err := tx.Omit("ExternalRef", "Obligations", "User").Where(models.LicenseDB{Id: oldLicense.Id}).Updates(&newLicense).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
@@ -572,7 +560,7 @@ func SearchInLicense(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/licenses/import [post]
 func ImportLicenses(c *gin.Context) {
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 	file, header, err := c.Request.FormFile("file")
 	if err != nil {
 		er := models.LicenseError{
@@ -601,32 +589,8 @@ func ImportLicenses(c *gin.Context) {
 
 	decoder := json.NewDecoder(file)
 
-	var licenses []models.LicenseCreateDTO
+	var licenses []models.LicenseImportDTO
 	if err := decoder.Decode(&licenses); err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "invalid json",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
-
-	if _, err = file.Seek(0, io.SeekStart); err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "error parsing json",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
-	var externalRefs []models.UpdateExternalRefsJSONPayload
-	if err := decoder.Decode(&externalRefs); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "invalid json",
@@ -643,45 +607,34 @@ func ImportLicenses(c *gin.Context) {
 	}
 
 	for i := range licenses {
-		lic, err := licenses[i].ConvertToLicenseDB()
-		if err != nil {
-			res.Data = append(res.Data, models.LicenseError{
-				Status:    http.StatusInternalServerError,
-				Message:   err.Error(),
-				Error:     licenses[i].Shortname,
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			})
-		}
-		errMessage, importStatus := utils.InsertOrUpdateLicenseOnImport(&lic, &externalRefs[i], userId)
+		errMessage, importStatus := utils.InsertOrUpdateLicenseOnImport(&licenses[i], userId)
 
 		if importStatus == utils.IMPORT_FAILED {
+			erroredElem := ""
+			if licenses[i].Id != nil {
+				erroredElem = (*licenses[i].Id).String()
+			} else if licenses[i].Shortname != nil {
+				erroredElem = *licenses[i].Shortname
+			}
 			res.Data = append(res.Data, models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   errMessage,
-				Error:     licenses[i].Shortname,
+				Error:     erroredElem,
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			})
 		} else if importStatus == utils.IMPORT_LICENSE_CREATED {
 			res.Data = append(res.Data, models.LicenseImportStatus{
-				Shortname: licenses[i].Shortname,
+				Shortname: *licenses[i].Shortname,
 				Status:    http.StatusCreated,
+				Id:        *licenses[i].Id,
 			})
 		} else if importStatus == utils.IMPORT_LICENSE_UPDATED {
 			res.Data = append(res.Data, models.LicenseImportStatus{
-				Shortname: licenses[i].Shortname,
+				Shortname: *licenses[i].Shortname,
 				Status:    http.StatusOK,
+				Id:        *licenses[i].Id,
 			})
-		} else if importStatus == utils.IMPORT_LICENSE_UPDATED_EXCEPT_TEXT {
-			res.Data = append(res.Data, models.LicenseError{
-				Status:    http.StatusConflict,
-				Message:   errMessage,
-				Error:     licenses[i].Shortname,
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			})
-			// error is not returned here as it will rollback the transaction
 		}
 	}
 
@@ -732,10 +685,10 @@ func ExportLicenses(c *gin.Context) {
 	c.JSON(http.StatusOK, &licensedtos)
 }
 
-// GetAllLicensePreviews retrieves a list of shortnames of all licenses
+// GetAllLicensePreviews retrieves a list of shortnames and ids of all licenses
 //
-//	@Summary		Get shortnames of all active licenses
-//	@Description	Get shortnames of all active licenses from the service
+//	@Summary		Get shortnames and ids of all active licenses
+//	@Description	Get shortnames and ids of all active licenses from the service
 //	@Id				GetAllLicensePreviews
 //	@Tags			Licenses
 //	@Accept			json
@@ -782,7 +735,7 @@ func GetAllLicensePreviews(c *gin.Context) {
 
 	var res models.LicensePreviewResponse
 	for _, lic := range licenses {
-		res.Shortnames = append(res.Shortnames, *lic.Shortname)
+		res.Licenses = append(res.Licenses, models.LicensePreview{Id: lic.Id, Shortname: *lic.Shortname})
 	}
 
 	res.Status = http.StatusOK

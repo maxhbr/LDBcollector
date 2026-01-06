@@ -55,4 +55,4 @@ jobs:
         echo "Fetched latest licenses into licenseRef.json"
 
     - name: Run tests
-      run: go test ./pkg/api -v
+      run: go test ./tests -v

@@ -16,12 +16,10 @@ import (
 func TestLoginUser(t *testing.T) {
 	t.Run("login as superadmin", func(t *testing.T) {
 		loginAs(t, "superadmin")
-		assert.NotEmpty(t, AuthToken, "Auth token should not be empty")
 	})
 
 	t.Run("login as admin", func(t *testing.T) {
 		loginAs(t, "admin")
-		assert.NotEmpty(t, AuthToken, "Auth token should not be empty")
 	})
 
 	t.Run("wrong password", func(t *testing.T) {
@@ -38,11 +36,11 @@ func TestLoginUser(t *testing.T) {
 func TestCreateUser(t *testing.T) {
 	t.Run("Success", func(t *testing.T) {
 		user := models.UserCreate{
-			UserName:     ptr("fossy1"),
+			UserName:     ptr("fossy-test"),
 			UserPassword: ptr("abc123"),
 			UserLevel:    ptr("ADMIN"),
-			DisplayName:  ptr("fossy1"),
-			UserEmail:    ptr("fossy1@gmail.com"),
+			DisplayName:  ptr("fossy-test"),
+			UserEmail:    ptr("fossy-test@gmail.com"),
 		}
 		w := makeRequest("POST", "/users", user, true)
 		assert.Equal(t, http.StatusCreated, w.Code)
@@ -130,6 +128,8 @@ func loginAs(t *testing.T, userType string) {
 	if !ok || token == "" {
 		t.Fatalf("access_token not found in response. Got: %v", data)
 	}
+
+	assert.NotEmpty(t, token, "Auth token should not be empty")
 
 	AuthToken = token
 }

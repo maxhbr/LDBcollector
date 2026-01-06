@@ -5,13 +5,17 @@
 
 package models
 
-import "time"
+import (
+	"time"
+
+	"github.com/google/uuid"
+)
 
 // OidcClient struct for Database Layer.
 type OidcClient struct {
-	Id       int64  `gorm:"primary_key;column:id"`
-	ClientId string `gorm:"column:client_id"`
-	UserId   int64
+	Id       uuid.UUID `gorm:"primary_key;type:uuid;column:id;default:uuid_generate_v4()"`
+	ClientId string    `gorm:"column:client_id"`
+	UserId   uuid.UUID
 	User     User      `gorm:"foreignKey:UserId;references:Id"`
 	AddDate  time.Time `json:"add_date" gorm:"column:add_date;default:CURRENT_TIMESTAMP" example:"2023-12-01T18:10:25.00+05:30"`
 }
@@ -22,18 +26,18 @@ func (OidcClient) TableName() string {
 
 // OidcClient struct for Api Layer(POST, DELETE).
 type CreateDeleteOidcClientDTO struct {
-	Id       int64     `json:"-"`
+	Id       uuid.UUID `json:"-"`
 	ClientId string    `validate:"required" example:"qwerty"`
-	UserId   int64     `json:"-"`
+	UserId   uuid.UUID `json:"-"`
 	User     User      `json:"-"`
 	AddDate  time.Time `json:"-"`
 }
 
 // OidcClient struct for Api Layer(GET).
 type OidcClientDTO struct {
-	Id       int64     `json:"id" example:"123"`
+	Id       uuid.UUID `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
 	ClientId string    `json:"client_id" example:"qwerty"`
-	UserId   int64     `json:"-"`
+	UserId   uuid.UUID `json:"-"`
 	User     User      `json:"-"`
 	AddDate  time.Time `json:"add_date"`
 }

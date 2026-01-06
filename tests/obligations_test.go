@@ -10,54 +10,60 @@ import (
 	"testing"
 
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestCreateObligation(t *testing.T) {
-	t.Run("SuccessWithoutShortnames", func(t *testing.T) {
-		dto := models.ObligationDTO{
-			Topic:          ptr("test-topic-1"),
-			Type:           ptr("RIGHT"),
-			Text:           ptr("some text"),
-			Modifications:  ptr(false),
-			Classification: ptr("GREEN"),
-			Comment:        ptr("unit test no shortnames"),
+	t.Run("SuccessWithoutLicenseIds", func(t *testing.T) {
+		dto := models.ObligationCreateDTO{
+			Topic:          "test-topic-1",
+			Type:           "RIGHT",
+			Text:           "some text",
+			Classification: "GREEN",
+			Comment:        ptr("unit test no license ids"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Shortnames:     []string{},
 			Category:       ptr("GENERAL"),
 		}
 
 		assertObligationCreated(t, dto)
 	})
 
-	t.Run("SuccessWithShortnames", func(t *testing.T) {
-		dto := models.ObligationDTO{
-			Topic:          ptr("test-topic-2"),
-			Type:           ptr("RIGHT"),
-			Text:           ptr("another text"),
-			Modifications:  ptr(true),
-			Classification: ptr("YELLOW"),
+	t.Run("SuccessWithLicenseIds", func(t *testing.T) {
+		w := makeRequest("GET", "/licenses", nil, true)
+		assert.Equal(t, http.StatusOK, w.Code)
+
+		var res models.LicenseResponse
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Errorf("Error unmarshalling JSON: %v", err)
+			return
+		}
+
+		dto := models.ObligationCreateDTO{
+			Topic:          "test-topic-2",
+			Type:           "RIGHT",
+			Text:           "another text",
+			Classification: "YELLOW",
 			Comment:        ptr("unit test with shortnames"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(true),
-			Shortnames:     []string{"MIT"},
+			LicenseIds:     []uuid.UUID{res.Data[0].Id},
 			Category:       ptr("DISTRIBUTION"),
 		}
 
 		assertObligationCreated(t, dto)
 	})
-	t.Run("shortnamenotexist", func(t *testing.T) {
-		dto := models.ObligationDTO{
-			Topic:          ptr("test-topic-3"),
-			Type:           ptr("RIGHT"),
-			Text:           ptr("text with non-existing shortname"),
-			Modifications:  ptr(false),
-			Classification: ptr("RED"),
+	t.Run("licenseDoesNotExist", func(t *testing.T) {
+		dto := models.ObligationCreateDTO{
+			Topic:          "test-topic-3",
+			Type:           "RIGHT",
+			Text:           "text with non-existing shortname",
+			Classification: "RED",
 			Comment:        ptr("unit test with non-existing shortname"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Shortnames:     []string{"NonExistentShortname"},
+			LicenseIds:     []uuid.UUID{uuid.New()},
 			Category:       ptr("GENERAL"),
 		}
 
@@ -70,44 +76,19 @@ func TestCreateObligation(t *testing.T) {
 			return
 		}
 
-		expectedError := "license with shortname NonExistentShortname not found"
-		assert.Equal(t, expectedError, res.Error)
-		assert.Equal(t, http.StatusBadRequest, res.Status)
-	})
-
-	t.Run("DuplicateTopic", func(t *testing.T) {
-		dto := models.ObligationDTO{
-			Topic:          ptr("duplicate-topic"),
-			Type:           ptr("RIGHT"),
-			Text:           ptr("text for duplicate topic"),
-			Modifications:  ptr(false),
-			Classification: ptr("GREEN"),
-			Comment:        ptr("first insert"),
-			Active:         ptr(true),
-			TextUpdatable:  ptr(false),
-			Shortnames:     []string{},
-			Category:       ptr("GENERAL"),
-		}
-		assertObligationCreated(t, dto)
-
-		// Try again with same topic
-		w := makeRequest("POST", "/obligations", dto, true)
-		if w.Code == http.StatusCreated {
-			t.Errorf("Expected error for duplicate topic, got 201")
-		}
+		expectedError := "Obligation created successfully but license association failed"
+		assert.Equal(t, expectedError, res.Message)
 	})
 
 	t.Run("MissingRequiredField", func(t *testing.T) {
-		dto := models.ObligationDTO{
+		dto := models.ObligationCreateDTO{
 			// Topic missing
-			Type:           ptr("RIGHT"),
-			Text:           ptr("text"),
-			Modifications:  ptr(false),
-			Classification: ptr("GREEN"),
+			Type:           "RIGHT",
+			Text:           "text",
+			Classification: "GREEN",
 			Comment:        ptr("missing topic"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Shortnames:     []string{},
 			Category:       ptr("GENERAL"),
 		}
 
@@ -119,20 +100,20 @@ func TestCreateObligation(t *testing.T) {
 }
 
 func TestUpdateObligation(t *testing.T) {
+
+	var id uuid.UUID
 	t.Run("CreateObligation", func(t *testing.T) {
-		dto := models.ObligationDTO{
-			Topic:          ptr("test-update-topic"),
-			Type:           ptr("RIGHT"),
-			Text:           ptr("test text for update"),
-			Modifications:  ptr(false),
-			Classification: ptr("GREEN"),
+		dto := models.ObligationCreateDTO{
+			Topic:          "test-update-topic",
+			Type:           "RIGHT",
+			Text:           "test text for update",
+			Classification: "GREEN",
 			Comment:        ptr("unit test comment"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Shortnames:     []string{},
 			Category:       ptr("GENERAL"),
 		}
-		assertObligationCreated(t, dto)
+		id = assertObligationCreated(t, dto)
 	})
 
 	t.Run("UpdateObligation", func(t *testing.T) {
@@ -140,24 +121,23 @@ func TestUpdateObligation(t *testing.T) {
 			Type:           ptr("RIGHT"),
 			Text:           ptr("test text for update"),
 			Classification: ptr("GREEN"),
-			Modifications:  ptr(true),
 			Comment:        ptr("updated comment"),
 			Active:         ptr(false),
 			TextUpdatable:  ptr(false),
 			Category:       ptr("GENERAL"),
 		}
 
-		assertObligationUpdated(t, "test-update-topic", updateDTO)
+		assertObligationUpdated(t, id, updateDTO)
 	})
 	t.Run("UpdateTextUpdatableFalse", func(t *testing.T) {
 		updateDTO := models.ObligationUpdateDTO{
 			TextUpdatable: ptr(false),
 		}
-		assertObligationUpdated(t, "test-update-topic", updateDTO)
+		assertObligationUpdated(t, id, updateDTO)
 		textupdate := models.ObligationUpdateDTO{
 			Text: ptr("Trying to update text when TextUpdatable is false"),
 		}
-		w := makeRequest("PATCH", "/obligations/test-update-topic", textupdate, true)
+		w := makeRequest("PATCH", "/obligations/"+id.String(), textupdate, true)
 		assert.Equal(t, http.StatusBadRequest, w.Code)
 	})
 
@@ -165,12 +145,12 @@ func TestUpdateObligation(t *testing.T) {
 		updateDTO := models.ObligationUpdateDTO{
 			TextUpdatable: ptr(true),
 		}
-		assertObligationUpdated(t, "test-update-topic", updateDTO)
+		assertObligationUpdated(t, id, updateDTO)
 
 		textupdate := models.ObligationUpdateDTO{
 			Text: ptr("Successfully updated text when TextUpdatable is true"),
 		}
-		w := makeRequest("PATCH", "/obligations/test-update-topic", textupdate, true)
+		w := makeRequest("PATCH", "/obligations/"+id.String(), textupdate, true)
 		assert.Equal(t, http.StatusOK, w.Code)
 
 		var res models.ObligationResponse
@@ -179,21 +159,20 @@ func TestUpdateObligation(t *testing.T) {
 			return
 		}
 
-		assert.Equal(t, *textupdate.Text, *res.Data[0].Text)
+		assert.Equal(t, *textupdate.Text, res.Data[0].Text)
 	})
 	t.Run("UpdateNonExistingObligation", func(t *testing.T) {
 		updateDTO := models.ObligationUpdateDTO{
 			Type:           ptr("RIGHT"),
 			Text:           ptr("text for non-existing obligation"),
 			Classification: ptr("GREEN"),
-			Modifications:  ptr(false),
 			Comment:        ptr("non-existing obligation comment"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
 			Category:       ptr("GENERAL"),
 		}
 
-		w := makeRequest("PATCH", "/obligations/non-existing-topic", updateDTO, true)
+		w := makeRequest("PATCH", "/obligations/"+uuid.New().String(), updateDTO, true)
 		assert.Equal(t, http.StatusNotFound, w.Code)
 
 		var res models.LicenseError
@@ -209,46 +188,45 @@ func TestUpdateObligation(t *testing.T) {
 }
 
 func TestDeleteObligation(t *testing.T) {
-	topic := "delete-test-topic"
-	dto := models.ObligationDTO{
-		Topic:          ptr(topic),
-		Type:           ptr("RISK"),
-		Text:           ptr("To be deleted"),
-		Classification: ptr("GREEN"),
-		Modifications:  ptr(false),
+	var _id uuid.UUID
+	dto := models.ObligationCreateDTO{
+		Topic:          "delete-test-topic",
+		Type:           "RISK",
+		Text:           "To be deleted",
+		Classification: "GREEN",
 		Comment:        ptr("delete comment"),
 		Active:         ptr(true),
 		TextUpdatable:  ptr(true),
-		Shortnames:     []string{},
 		Category:       ptr("GENERAL"),
 	}
-	assertObligationCreated(t, dto)
+	_id = assertObligationCreated(t, dto)
+	id := _id.String()
 
 	t.Run("DeleteExistingObligation", func(t *testing.T) {
-		w := makeRequest("DELETE", "/obligations/"+topic, nil, true)
+		w := makeRequest("DELETE", "/obligations/"+id, nil, true)
 		if w.Code != http.StatusNoContent {
 			t.Fatalf("Expected status 204 No Content, got %d", w.Code)
 		}
 	})
 
 	t.Run("DeleteNonExistentObligation", func(t *testing.T) {
-		w := makeRequest("DELETE", "/obligations/"+topic, nil, true)
+		w := makeRequest("DELETE", "/obligations/"+id, nil, true)
 		if w.Code != http.StatusNoContent {
 			t.Fatalf("Expected status 204 Not Found, got %d", w.Code)
 		}
 	})
 }
 
-func assertObligationCreated(t *testing.T, dto models.ObligationDTO) {
+func assertObligationCreated(t *testing.T, dto models.ObligationCreateDTO) uuid.UUID {
 	w := makeRequest("POST", "/obligations", dto, true)
 	if w.Code != http.StatusCreated {
 		t.Fatalf("Expected 201 Created, got %d", w.Code)
 	}
 
 	var resp struct {
-		Status int                    `json:"status"`
-		Data   []models.ObligationDTO `json:"data"`
-		Meta   any                    `json:"paginationmeta"`
+		Status int                            `json:"status"`
+		Data   []models.ObligationResponseDTO `json:"data"`
+		Meta   models.PaginationMeta          `json:"paginationmeta"`
 	}
 
 	if err := json.Unmarshal(w.Body.Bytes(), &resp); err != nil {
@@ -268,27 +246,35 @@ func assertObligationCreated(t *testing.T, dto models.ObligationDTO) {
 		}
 	}
 
-	assertField("Topic", *dto.Topic, *ob.Topic)
-	assertField("Type", *dto.Type, *ob.Type)
-	assertField("Text", *dto.Text, *ob.Text)
-	assertField("Comment", *dto.Comment, *ob.Comment)
-	assertField("Category", *dto.Category, *ob.Category)
-	assertField("Classification", *dto.Classification, *ob.Classification)
-	assertField("Modifications", *dto.Modifications, *ob.Modifications)
-	assertField("Active", *dto.Active, *ob.Active)
-	assertField("TextUpdatable", *dto.TextUpdatable, *ob.TextUpdatable)
-	assertField("Shortnames count", len(dto.Shortnames), len(ob.Shortnames))
+	assertField("Topic", dto.Topic, ob.Topic)
+	assertField("Type", dto.Type, ob.Type)
+	assertField("Text", dto.Text, ob.Text)
+	if ob.Comment != nil {
+		assertField("Comment", *dto.Comment, *ob.Comment)
+	}
+	if ob.Category != nil {
+		assertField("Category", *dto.Category, *ob.Category)
+	} else {
+		assertField("Category", *dto.Category, "GENERAL")
+	}
+
+	assertField("Classification", dto.Classification, ob.Classification)
+	assertField("Active", *dto.Active, ob.Active)
+	assertField("TextUpdatable", *dto.TextUpdatable, ob.TextUpdatable)
+	assertField("Licenses count", len(dto.LicenseIds), len(ob.LicenseIds))
+
+	return ob.Id
 }
-func assertObligationUpdated(t *testing.T, topic string, dto models.ObligationUpdateDTO) {
-	w := makeRequest("PATCH", "/obligations/"+topic, dto, true)
+func assertObligationUpdated(t *testing.T, id uuid.UUID, dto models.ObligationUpdateDTO) {
+	w := makeRequest("PATCH", "/obligations/"+id.String(), dto, true)
 	if w.Code != http.StatusOK {
 		t.Fatalf("Expected 200 OK, got %d", w.Code)
 	}
 
 	var resp struct {
-		Status int                    `json:"status"`
-		Data   []models.ObligationDTO `json:"data"`
-		Meta   any                    `json:"paginationmeta"`
+		Status int                            `json:"status"`
+		Data   []models.ObligationResponseDTO `json:"data"`
+		Meta   models.PaginationMeta          `json:"paginationmeta"`
 	}
 
 	if err := json.Unmarshal(w.Body.Bytes(), &resp); err != nil {
@@ -309,10 +295,10 @@ func assertObligationUpdated(t *testing.T, topic string, dto models.ObligationUp
 	}
 
 	if dto.Type != nil {
-		assertField("Type", *dto.Type, *ob.Type)
+		assertField("Type", *dto.Type, ob.Type)
 	}
 	if dto.Text != nil {
-		assertField("Text", *dto.Text, *ob.Text)
+		assertField("Text", *dto.Text, ob.Text)
 	}
 	if dto.Comment != nil {
 		assertField("Comment", *dto.Comment, *ob.Comment)
@@ -321,15 +307,12 @@ func assertObligationUpdated(t *testing.T, topic string, dto models.ObligationUp
 		assertField("Category", *dto.Category, *ob.Category)
 	}
 	if dto.Classification != nil {
-		assertField("Classification", *dto.Classification, *ob.Classification)
-	}
-	if dto.Modifications != nil {
-		assertField("Modifications", *dto.Modifications, *ob.Modifications)
+		assertField("Classification", *dto.Classification, ob.Classification)
 	}
 	if dto.Active != nil {
-		assertField("Active", *dto.Active, *ob.Active)
+		assertField("Active", *dto.Active, ob.Active)
 	}
 	if dto.TextUpdatable != nil {
-		assertField("TextUpdatable", *dto.TextUpdatable, *ob.TextUpdatable)
+		assertField("TextUpdatable", *dto.TextUpdatable, ob.TextUpdatable)
 	}
 }

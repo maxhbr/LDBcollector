@@ -16,6 +16,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
+	"github.com/google/uuid"
 	"gorm.io/gorm"
 )
 
@@ -94,7 +95,7 @@ func GetAllObligationClassification(c *gin.Context) {
 //	@Router			/obligations/classifications [post]
 func CreateObligationClassification(c *gin.Context) {
 	var obClassification models.ObligationClassification
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 	if err := c.ShouldBindJSON(&obClassification); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -180,7 +181,7 @@ func CreateObligationClassification(c *gin.Context) {
 func DeleteObligationClassification(c *gin.Context) {
 	var obClassification models.ObligationClassification
 	obClassificationParam := c.Param("classification")
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 	if err := db.DB.Where(models.ObligationClassification{Classification: obClassificationParam}).First(&obClassification).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,

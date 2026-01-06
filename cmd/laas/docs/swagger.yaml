@@ -22,8 +22,8 @@ definitions:
       entity:
         type: object
       id:
-        example: 456
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       timestamp:
         example: "2023-12-01T18:10:25.00+05:30"
         type: string
@@ -35,13 +35,13 @@ definitions:
         example: LICENSE
         type: string
       type_id:
-        example: 34
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       user:
         $ref: '#/definitions/models.User'
       user_id:
-        example: 123
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
     type: object
   models.AuditResponse:
     properties:
@@ -67,14 +67,14 @@ definitions:
   models.ChangeLog:
     properties:
       audit_id:
-        example: 456
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       field:
         example: text
         type: string
       id:
-        example: 789
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       old_value:
         example: Old license text
         type: string
@@ -156,10 +156,13 @@ definitions:
   models.LicenseCreateDTO:
     properties:
       OSIapproved:
+        example: false
         type: boolean
       active:
+        example: true
         type: boolean
       copyleft:
+        example: false
         type: boolean
       external_ref:
         $ref: '#/definitions/models.LicenseDBSchemaExtension'
@@ -170,6 +173,9 @@ definitions:
         example: This license has been superseded.
         type: string
       obligations:
+        example:
+        - f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        - f812jfae-7dbc-11d0-a765-00a0hf06bf6
         items:
           type: string
         type: array
@@ -182,6 +188,7 @@ definitions:
         example: MIT
         type: string
       source:
+        example: spdx
         type: string
       spdx_id:
         example: MIT
@@ -190,6 +197,7 @@ definitions:
         example: MIT License Text here
         type: string
       text_updatable:
+        example: false
         type: boolean
       url:
         example: https://opensource.org/licenses/MIT
@@ -213,7 +221,7 @@ definitions:
       fullname:
         type: string
       id:
-        type: integer
+        type: string
       notes:
         type: string
       obligations:
@@ -232,8 +240,6 @@ definitions:
         type: string
       text:
         type: string
-      textSetBy:
-        type: integer
       textUpdatable:
         type: boolean
       url:
@@ -241,8 +247,7 @@ definitions:
       user:
         $ref: '#/definitions/models.User'
       userId:
-        format: int64
-        type: integer
+        type: string
     type: object
   models.LicenseDBSchemaExtension:
     type: object
@@ -266,6 +271,9 @@ definitions:
     type: object
   models.LicenseImportStatus:
     properties:
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       shortname:
         example: MIT
         type: string
@@ -273,30 +281,43 @@ definitions:
         example: 200
         type: integer
     type: object
-  models.LicenseMapShortnamesElement:
+  models.LicenseListInput:
+    properties:
+      ids:
+        items:
+          type: object
+        type: array
+    type: object
+  models.LicenseMapElement:
     properties:
       add:
         example: true
         type: boolean
-      shortname:
-        example: GPL-2.0-only
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
         type: string
     type: object
-  models.LicenseMapShortnamesInput:
+  models.LicenseMapInput:
     properties:
       map:
         items:
-          $ref: '#/definitions/models.LicenseMapShortnamesElement'
+          $ref: '#/definitions/models.LicenseMapElement'
         type: array
+    type: object
+  models.LicensePreview:
+    properties:
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
+      shortname:
+        example: GPL-2.0-or-later
+        type: string
     type: object
   models.LicensePreviewResponse:
     properties:
-      shortnames:
-        example:
-        - GPL-2.0-only
-        - GPL-2.0-or-later
+      licenses:
         items:
-          type: string
+          $ref: '#/definitions/models.LicensePreview'
         type: array
       status:
         example: 200
@@ -331,6 +352,9 @@ definitions:
       fullname:
         example: MIT License
         type: string
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       notes:
         example: This license has been superseded.
         type: string
@@ -357,16 +381,6 @@ definitions:
       url:
         example: https://opensource.org/licenses/MIT
         type: string
-    type: object
-  models.LicenseShortnamesInput:
-    properties:
-      shortnames:
-        example:
-        - GPL-2.0-only
-        - GPL-2.0-or-later
-        items:
-          type: string
-        type: array
     type: object
   models.LicenseUpdateDTO:
     properties:
@@ -397,6 +411,9 @@ definitions:
         maximum: 5
         minimum: 0
         type: integer
+      shortname:
+        example: MIT
+        type: string
       source:
         example: Source
         type: string
@@ -432,19 +449,15 @@ definitions:
       comment:
         type: string
       id:
-        type: integer
+        type: string
       licenses:
         items:
           $ref: '#/definitions/models.LicenseDB'
         type: array
-      md5:
-        type: string
-      modifications:
-        type: boolean
       obligationClassificationId:
-        type: integer
+        type: string
       obligationTypeId:
-        type: integer
+        type: string
       text:
         type: string
       textUpdatable:
@@ -478,7 +491,7 @@ definitions:
         example: 200
         type: integer
     type: object
-  models.ObligationDTO:
+  models.ObligationCreateDTO:
     properties:
       active:
         type: boolean
@@ -490,13 +503,150 @@ definitions:
         type: string
       comment:
         type: string
-      modifications:
+      license_ids:
+        example:
+        - f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        - f812jfae-7dbc-11d0-a765-00a0hf06bf6
+        items:
+          type: string
+        type: array
+      text:
+        example: Source code be made available when distributing the software.
+        type: string
+      text_updatable:
         example: true
         type: boolean
-      shortnames:
+      topic:
+        example: copyleft
+        type: string
+      type:
+        example: RISK
+        type: string
+    required:
+    - classification
+    - license_ids
+    - text
+    - topic
+    - type
+    type: object
+  models.ObligationId:
+    properties:
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
+      topic:
+        example: copyleft
+        type: string
+    type: object
+  models.ObligationImportStatus:
+    properties:
+      data:
+        $ref: '#/definitions/models.ObligationId'
+      message:
+        type: string
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.ObligationMapLicenseFormat:
+    properties:
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
+      shortname:
+        example: MIT
+        type: string
+    type: object
+  models.ObligationMapResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.ObligationMapUser'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.ObligationMapUser:
+    properties:
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
+      licenses:
+        items:
+          $ref: '#/definitions/models.ObligationMapLicenseFormat'
+        type: array
+      topic:
+        example: copyleft
+        type: string
+      type:
+        enum:
+        - obligation
+        - restriction
+        - risk
+        - right
+        example: obligation
+        type: string
+    type: object
+  models.ObligationPreview:
+    properties:
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
+      topic:
+        example: Provide Copyright Notices
+        type: string
+      type:
+        enum:
+        - OBLIGATION
+        - RESTRICTION
+        - RISK
+        - RIGHT
+        type: string
+    type: object
+  models.ObligationPreviewResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.ObligationPreview'
+        type: array
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.ObligationResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.ObligationResponseDTO'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.ObligationResponseDTO:
+    properties:
+      active:
+        type: boolean
+      category:
+        example: DISTRIBUTION
+        type: string
+      classification:
+        example: GREEN
+        type: string
+      comment:
+        type: string
+      id:
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
+      license_ids:
         example:
-        - GPL-2.0-only
-        - GPL-2.0-or-later
+        - f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        - f812jfae-7dbc-11d0-a765-00a0hf06bf6
         items:
           type: string
         type: array
@@ -515,85 +665,10 @@ definitions:
     required:
     - category
     - classification
-    - shortnames
+    - license_ids
     - text
     - topic
     - type
-    type: object
-  models.ObligationId:
-    properties:
-      id:
-        example: 31
-        type: integer
-      topic:
-        example: copyleft
-        type: string
-    type: object
-  models.ObligationImportStatus:
-    properties:
-      data:
-        $ref: '#/definitions/models.ObligationId'
-      message:
-        type: string
-      status:
-        example: 200
-        type: integer
-    type: object
-  models.ObligationMapResponse:
-    properties:
-      data:
-        items:
-          $ref: '#/definitions/models.ObligationMapUser'
-        type: array
-      paginationmeta:
-        $ref: '#/definitions/models.PaginationMeta'
-      status:
-        example: 200
-        type: integer
-    type: object
-  models.ObligationMapUser:
-    properties:
-      shortnames:
-        example:
-        - GPL-2.0-only
-        - GPL-2.0-or-later
-        items:
-          type: string
-        type: array
-      topic:
-        example: copyleft
-        type: string
-      type:
-        enum:
-        - obligation
-        - restriction
-        - risk
-        - right
-        example: obligation
-        type: string
-    type: object
-  models.ObligationPreview:
-    properties:
-      topic:
-        example: Provide Copyright Notices
-        type: string
-      type:
-        enum:
-        - obligation
-        - restriction
-        - risk
-        - right
-        type: string
-    type: object
-  models.ObligationPreviewResponse:
-    properties:
-      data:
-        items:
-          $ref: '#/definitions/models.ObligationPreview'
-        type: array
-      status:
-        example: 200
-        type: integer
     type: object
   models.ObligationType:
     properties:
@@ -627,18 +702,27 @@ definitions:
         type: string
       comment:
         type: string
-      modifications:
-        example: true
-        type: boolean
+      license_ids:
+        example:
+        - f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        - f812jfae-7dbc-11d0-a765-00a0hf06bf6
+        items:
+          type: string
+        type: array
       text:
         example: Source code be made available when distributing the software.
         type: string
       text_updatable:
         example: true
         type: boolean
+      topic:
+        example: copyleft
+        type: string
       type:
         example: RISK
         type: string
+    required:
+    - license_ids
     type: object
   models.OidcClientDTO:
     properties:
@@ -648,8 +732,8 @@ definitions:
         example: qwerty
         type: string
       id:
-        example: 123
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
     type: object
   models.OidcClientsResponse:
     properties:
@@ -729,8 +813,8 @@ definitions:
   models.SimilarLicense:
     properties:
       id:
-        example: 123
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       shortname:
         example: MIT
         type: string
@@ -743,8 +827,8 @@ definitions:
   models.SimilarObligation:
     properties:
       id:
-        example: 123
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       similarity:
         type: number
       text:
@@ -760,18 +844,6 @@ definitions:
         type: string
     required:
     - text
-    type: object
-  models.SwaggerObligationResponse:
-    properties:
-      data:
-        items:
-          $ref: '#/definitions/models.ObligationDTO'
-        type: array
-      paginationmeta:
-        $ref: '#/definitions/models.PaginationMeta'
-      status:
-        example: 200
-        type: integer
     type: object
   models.TokenResonse:
     properties:
@@ -799,8 +871,8 @@ definitions:
         example: fossy
         type: string
       id:
-        example: 123
-        type: integer
+        example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
+        type: string
       user_email:
         example: fossy@org.com
         type: string
@@ -1190,10 +1262,6 @@ paths:
           description: Invalid request body
           schema:
             $ref: '#/definitions/models.LicenseError'
-        "409":
-          description: License with same shortname already exists
-          schema:
-            $ref: '#/definitions/models.LicenseError'
         "500":
           description: Failed to create license
           schema:
@@ -1203,16 +1271,16 @@ paths:
       summary: Create a new license
       tags:
       - Licenses
-  /licenses/{shortname}:
+  /licenses/{id}:
     get:
       consumes:
       - application/json
-      description: Get a single license by its shortname
+      description: Get a single license by its id
       operationId: GetLicense
       parameters:
-      - description: Shortname of the license
+      - description: Id of the license
         in: path
-        name: shortname
+        name: id
         required: true
         type: string
       produces:
@@ -1223,13 +1291,13 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseResponse'
         "404":
-          description: License with shortname not found
+          description: License with id not found
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
       - '{}': []
         ApiKeyAuth: []
-      summary: Get a license by shortname
+      summary: Get a license by id
       tags:
       - Licenses
     patch:
@@ -1238,9 +1306,9 @@ paths:
       description: Update a license in the service
       operationId: UpdateLicense
       parameters:
-      - description: Shortname of the license to be updated
+      - description: Id of the license to be updated
         in: path
-        name: shortname
+        name: id
         required: true
         type: string
       - description: Update license body (requires only the fields to be updated)
@@ -1261,11 +1329,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
         "404":
-          description: License with shortname not found
-          schema:
-            $ref: '#/definitions/models.LicenseError'
-        "409":
-          description: License with same shortname already exists
+          description: License with id not found
           schema:
             $ref: '#/definitions/models.LicenseError'
         "500":
@@ -1343,7 +1407,7 @@ paths:
     get:
       consumes:
       - application/json
-      description: Get shortnames of all active licenses from the service
+      description: Get shortnames and ids of all active licenses from the service
       operationId: GetAllLicensePreviews
       parameters:
       - description: Active license only
@@ -1369,7 +1433,7 @@ paths:
       security:
       - '{}': []
         ApiKeyAuth: []
-      summary: Get shortnames of all active licenses
+      summary: Get shortnames and ids of all active licenses
       tags:
       - Licenses
   /licenses/similarity:
@@ -1434,14 +1498,14 @@ paths:
       summary: Login
       tags:
       - Users
-  /obligation_maps/license/{license}:
+  /obligation_maps/license/{id}:
     get:
       consumes:
       - application/json
-      description: Get obligation maps for a given license shortname
-      operationId: GetObligationMapByLicense
+      description: Get obligation maps for a given license id
+      operationId: GetObligationMapByLicenseId
       parameters:
-      - description: Shortname of the license
+      - description: id of the license
         in: path
         name: license
         required: true
@@ -1454,7 +1518,7 @@ paths:
           schema:
             $ref: '#/definitions/models.ObligationMapResponse'
         "404":
-          description: No license with given shortname found or no map for
+          description: No license with given id found
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
@@ -1463,16 +1527,16 @@ paths:
       summary: Get maps for a license
       tags:
       - Obligations
-  /obligation_maps/topic/{topic}:
+  /obligation_maps/obligation/{id}:
     get:
       consumes:
       - application/json
-      description: Get obligation maps for a given obligation topic
-      operationId: GetObligationMapByTopic
+      description: Get obligation maps for a given obligation id
+      operationId: GetObligationMapByObligationId
       parameters:
-      - description: Topic of the obligation
+      - description: Id of the obligation
         in: path
-        name: topic
+        name: id
         required: true
         type: string
       produces:
@@ -1483,7 +1547,7 @@ paths:
           schema:
             $ref: '#/definitions/models.ObligationMapResponse'
         "404":
-          description: No obligation with given topic found or no map for
+          description: No obligation with given id found
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
@@ -1492,25 +1556,25 @@ paths:
       summary: Get maps for an obligation
       tags:
       - Obligations
-  /obligation_maps/topic/{topic}/license:
+  /obligation_maps/obligations/{id}/license:
     patch:
       consumes:
       - application/json
       description: Add or remove licenses from obligation map for a given obligation
-        topic
+        id
       operationId: PatchObligationMap
       parameters:
-      - description: Topic of the obligation
+      - description: Id of the obligation
         in: path
-        name: topic
+        name: id
         required: true
         type: string
-      - description: Shortnames of the licenses with action
+      - description: License ids with action
         in: body
-        name: shortname
+        name: license_maps
         required: true
         schema:
-          $ref: '#/definitions/models.LicenseMapShortnamesInput'
+          $ref: '#/definitions/models.LicenseMapInput'
       produces:
       - application/json
       responses:
@@ -1538,21 +1602,21 @@ paths:
     put:
       consumes:
       - application/json
-      description: Replaces the license list of an obligation topic with the given
-        list in the obligation map.
+      description: Replaces the license list of an obligation id with the given list
+        in the obligation map.
       operationId: UpdateLicenseInObligationMap
       parameters:
-      - description: Topic of the obligation
+      - description: Id of the obligation
         in: path
-        name: topic
+        name: id
         required: true
         type: string
-      - description: Shortnames of the licenses to be in map
+      - description: Ids of the licenses to be in map
         in: body
-        name: shortnames
+        name: Ids
         required: true
         schema:
-          $ref: '#/definitions/models.LicenseShortnamesInput'
+          $ref: '#/definitions/models.LicenseListInput'
       produces:
       - application/json
       responses:
@@ -1607,7 +1671,7 @@ paths:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/models.SwaggerObligationResponse'
+            $ref: '#/definitions/models.ObligationResponse'
         "400":
           description: Invalid active value
           schema:
@@ -1633,20 +1697,16 @@ paths:
         name: obligation
         required: true
         schema:
-          $ref: '#/definitions/models.ObligationDTO'
+          $ref: '#/definitions/models.ObligationCreateDTO'
       produces:
       - application/json
       responses:
         "201":
           description: Created
           schema:
-            $ref: '#/definitions/models.SwaggerObligationResponse'
+            $ref: '#/definitions/models.ObligationResponse'
         "400":
           description: Bad request body
-          schema:
-            $ref: '#/definitions/models.LicenseError'
-        "409":
-          description: Obligation with same body exists
           schema:
             $ref: '#/definitions/models.LicenseError'
         "500":
@@ -1658,16 +1718,16 @@ paths:
       summary: Create an obligation
       tags:
       - Obligations
-  /obligations/{topic}:
+  /obligations/{id}:
     delete:
       consumes:
       - application/json
       description: Deactivate an obligation
       operationId: DeleteObligation
       parameters:
-      - description: Topic of the obligation to be updated
+      - description: Id of the obligation to be updated
         in: path
-        name: topic
+        name: id
         required: true
         type: string
       produces:
@@ -1676,7 +1736,7 @@ paths:
         "204":
           description: No Content
         "404":
-          description: No obligation with given topic found
+          description: No obligation with given id found
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
@@ -1687,12 +1747,12 @@ paths:
     get:
       consumes:
       - application/json
-      description: Get an active based on given topic
+      description: Get an active based on given id
       operationId: GetObligation
       parameters:
-      - description: Topic of the obligation
+      - description: Id of the obligation
         in: path
-        name: topic
+        name: id
         required: true
         type: string
       produces:
@@ -1701,9 +1761,9 @@ paths:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/models.SwaggerObligationResponse'
+            $ref: '#/definitions/models.ObligationResponse'
         "404":
-          description: No obligation with given topic found
+          description: No obligation with given id found
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
@@ -1718,9 +1778,9 @@ paths:
       description: Update an existing obligation record
       operationId: UpdateObligation
       parameters:
-      - description: Topic of the obligation to be updated
+      - description: Id of the obligation to be updated
         in: path
-        name: topic
+        name: id
         required: true
         type: string
       - description: Obligation to be updated
@@ -1735,13 +1795,13 @@ paths:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/models.SwaggerObligationResponse'
+            $ref: '#/definitions/models.ObligationResponse'
         "400":
           description: Invalid request
           schema:
             $ref: '#/definitions/models.LicenseError'
         "404":
-          description: No obligation with given topic found
+          description: No obligation with given id found
           schema:
             $ref: '#/definitions/models.LicenseError'
         "500":
@@ -1753,16 +1813,16 @@ paths:
       summary: Update obligation
       tags:
       - Obligations
-  /obligations/{topic}/audits:
+  /obligations/{id}/audits:
     get:
       consumes:
       - application/json
       description: Fetches audits corresponding to an obligation
       operationId: GetObligationAudits
       parameters:
-      - description: Topic of the obligation for which audits need to be fetched
+      - description: Id of the obligation for which audits need to be fetched
         in: path
-        name: topic
+        name: id
         required: true
         type: string
       - description: Page number
@@ -1781,11 +1841,11 @@ paths:
           schema:
             $ref: '#/definitions/models.AuditResponse'
         "404":
-          description: No obligation with given topic found
+          description: No obligation with given id found
           schema:
             $ref: '#/definitions/models.LicenseError'
         "500":
-          description: unable to find audits with such obligation topic
+          description: unable to find audits with such obligation id
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
@@ -1905,7 +1965,7 @@ paths:
           description: OK
           schema:
             items:
-              $ref: '#/definitions/models.ObligationDTO'
+              $ref: '#/definitions/models.ObligationResponseDTO'
             type: array
         "500":
           description: Failed to fetch obligations

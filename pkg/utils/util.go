@@ -27,6 +27,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
+	"github.com/google/uuid"
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
@@ -113,36 +114,30 @@ const (
 	IMPORT_FAILED LicenseImportStatusCode = iota + 1
 	IMPORT_LICENSE_CREATED
 	IMPORT_LICENSE_UPDATED
-	IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
 )
 
-func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *models.UpdateExternalRefsJSONPayload, userId int64) (string, LicenseImportStatusCode) {
+func InsertOrUpdateLicenseOnImport(lic *models.LicenseImportDTO, userId uuid.UUID) (string, LicenseImportStatusCode) {
 	var message string
 	var importStatus LicenseImportStatusCode
-	var newLicense, oldLicense models.LicenseDB
 
-	if err := validations.Validate.Struct(license); err != nil {
+	if err := validations.Validate.Struct(lic); err != nil {
 		message = fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag())
 		importStatus = IMPORT_FAILED
 		return message, importStatus
 	}
 
-	license.UserId = userId
-	textSetBy := int64(models.TEXT_SET_VIA_LICENSE_IMPORT)
-	license.TextSetBy = &textSetBy
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		result := tx.
-			Where(&models.LicenseDB{Shortname: license.Shortname}).
-			Attrs(license).
-			FirstOrCreate(&oldLicense)
-		if result.Error != nil {
-			message = fmt.Sprintf("failed to import license: %s", result.Error.Error())
-			importStatus = IMPORT_FAILED
-			return errors.New(message)
-		} else if result.RowsAffected == 0 {
-			// case when license exists in database and is updated
+		license := lic.ConvertToLicenseDB()
+		license.UserId = userId
 
-			newLicense = *license
+		if lic.Id != nil {
+			var newLicense, oldLicense models.LicenseDB
+			if err := tx.Where(models.LicenseDB{Id: *lic.Id}).First(&oldLicense).Error; err != nil {
+				message = fmt.Sprintf("cannot find license: %s", err.Error())
+				importStatus = IMPORT_FAILED
+				return errors.New(message)
+			}
+			newLicense = license
 
 			if *oldLicense.Text != *newLicense.Text {
 				if !*oldLicense.TextUpdatable {
@@ -153,19 +148,14 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 			}
 
 			// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
-			if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", &externalRefs.ExternalRef)).Error; err != nil {
+			if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", &lic.ExternalRef)).Error; err != nil {
 				message = fmt.Sprintf("failed to update license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
 			}
 
 			// Update all other fields except external_ref and rf_shortname
-			query := tx.Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("ExternalRef", "Obligations", "User", "Shortname")
-
-			// Do not update text in import if it was modified manually
-			if *oldLicense.TextSetBy == models.TEXT_SET_VIA_MANUAL_UPDATE {
-				query = query.Omit("rf_text")
-			}
+			query := tx.Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("ExternalRef", "Obligations", "User")
 
 			if err := query.Clauses(clause.Returning{}).Updates(&newLicense).Scan(&newLicense).Error; err != nil {
 				message = fmt.Sprintf("failed to update license: %s", err.Error())
@@ -173,23 +163,30 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 				return errors.New(message)
 			}
 
+			// for setting api response
+			lic.Id = &newLicense.Id
+			lic.Shortname = newLicense.Shortname
+
 			if err := AddChangelogsForLicense(tx, userId, &newLicense, &oldLicense); err != nil {
 				message = fmt.Sprintf("failed to update license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
 			}
 
-			if *newLicense.TextSetBy == models.TEXT_SET_VIA_MANUAL_UPDATE {
-				message = "all fields except text were updated. text was updated manually and cannot be overwritten in an import."
-				importStatus = IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
-				// error is not returned here as it will rollback the transaction
-			} else {
-				importStatus = IMPORT_LICENSE_UPDATED
-			}
+			importStatus = IMPORT_LICENSE_UPDATED
 		} else {
 			// case when license doesn't exist in database and is inserted
+			if err := tx.Create(&license).Error; err != nil {
+				message = fmt.Sprintf("failed to import license: %s", err.Error())
+				importStatus = IMPORT_FAILED
+				return errors.New(message)
+			}
 
-			if err := AddChangelogsForLicense(tx, userId, &oldLicense, &models.LicenseDB{}); err != nil {
+			// for setting api response
+			lic.Id = &license.Id
+			lic.Shortname = license.Shortname
+
+			if err := AddChangelogsForLicense(tx, userId, &license, &models.LicenseDB{}); err != nil {
 				message = fmt.Sprintf("failed to create license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
@@ -202,45 +199,51 @@ func InsertOrUpdateLicenseOnImport(license *models.LicenseDB, externalRefs *mode
 	})
 
 	if importStatus == IMPORT_FAILED {
+		erroredElem := ""
+		if lic.Id != nil {
+			erroredElem = (*lic.Id).String()
+		} else if lic.Shortname != nil {
+			erroredElem = *lic.Shortname
+		}
 		red := "\033[31m"
 		reset := "\033[0m"
-		log.Printf("%s%s: %s%s", red, *license.Shortname, message, reset)
+		log.Printf("%s%s: %s%s", red, erroredElem, message, reset)
 	} else {
 		green := "\033[32m"
 		reset := "\033[0m"
-		log.Printf("%sImport for license '%s' successful%s", green, *license.Shortname, reset)
+		log.Printf("%sImport for license '%s' successful%s", green, (*lic.Id).String(), reset)
 	}
 	return message, importStatus
 }
 
 // GenerateDiffForReplacingLicenses creates list of license associations to be created and deleted such that the list of currently associated
 // licenses to a obligation is overwritten by the list provided in the param newLicenseAssociations
-func GenerateDiffForReplacingLicenses(obligation *models.Obligation, newLicenseAssociations []string, removeLicenses, insertLicenses *[]string) {
+func GenerateDiffForReplacingLicenses(obligation *models.Obligation, newLicenseAssociations []uuid.UUID, removeLicenses, insertLicenses *[]uuid.UUID) {
 	// if license in currently associated with the obligation but isn't in newLicenseAssociations, remove it
 	for _, lic := range obligation.Licenses {
 		found := false
-		for _, shortname := range newLicenseAssociations {
-			if shortname == *lic.Shortname {
+		for _, id := range newLicenseAssociations {
+			if id == lic.Id {
 				found = true
 				break
 			}
 		}
 		if !found {
-			*removeLicenses = append(*removeLicenses, *lic.Shortname)
+			*removeLicenses = append(*removeLicenses, lic.Id)
 		}
 	}
 
 	// if license in newLicenseAssociations but not currently associated with the obligation, insert it
-	for _, shortname := range newLicenseAssociations {
+	for _, id := range newLicenseAssociations {
 		found := false
 		for _, lic := range obligation.Licenses {
-			if shortname == *lic.Shortname {
+			if id == lic.Id {
 				found = true
 				break
 			}
 		}
 		if !found {
-			*insertLicenses = append(*insertLicenses, shortname)
+			*insertLicenses = append(*insertLicenses, id)
 		}
 	}
 }
@@ -248,53 +251,57 @@ func GenerateDiffForReplacingLicenses(obligation *models.Obligation, newLicenseA
 // PerformObligationMapActions created associations for licenses in insertLicenses and deletes
 // associations for licenses in removeLicenses. It also calculates changelog for the changes.
 // It returns the final list of associated licenses.
-func PerformObligationMapActions(userId int64, obligation *models.Obligation,
-	removeLicenses, insertLicenses []string) ([]string, []error) {
+func PerformObligationMapActions(tx *gorm.DB, userId uuid.UUID, obligation *models.Obligation,
+	removeLicenses, insertLicenses []uuid.UUID) ([]models.ObligationMapLicenseFormat, []error) {
 	createLicenseAssociations := []models.LicenseDB{}
 	deleteLicenseAssociations := []models.LicenseDB{}
-	var oldLicenseAssociations, newLicenseAssociations []string
+	var oldLicenseAssociations, newLicenseAssociations []models.ObligationMapLicenseFormat
 	var errs []error
 
 	for _, lic := range obligation.Licenses {
-		oldLicenseAssociations = append(oldLicenseAssociations, *lic.Shortname)
+		oldLicenseAssociations = append(oldLicenseAssociations, models.ObligationMapLicenseFormat{Id: lic.Id, Shortname: *lic.Shortname})
 	}
 
-	for _, lic := range insertLicenses {
+	for _, licId := range insertLicenses {
 		var license models.LicenseDB
-		if err := db.DB.Where(models.LicenseDB{Shortname: &lic}).First(&license).Error; err != nil {
-			errs = append(errs, fmt.Errorf("unable to associate license '%s' to obligation '%s': %s", lic, *obligation.Topic, err.Error()))
+		if err := tx.Where(models.LicenseDB{Id: licId}).First(&license).Error; err != nil {
+			errs = append(errs, fmt.Errorf("unable to associate license '%s' to obligation '%s': %s", licId, obligation.Id, err.Error()))
 		} else {
 			createLicenseAssociations = append(createLicenseAssociations, license)
 		}
 	}
 
-	for _, lic := range removeLicenses {
+	for _, licId := range removeLicenses {
 		var license models.LicenseDB
-		if err := db.DB.Where(models.LicenseDB{Shortname: &lic}).First(&license).Error; err != nil {
-			errs = append(errs, fmt.Errorf("unable to remove license '%s' from obligation '%s': %s", lic, *obligation.Topic, err.Error()))
+		if err := tx.Where(models.LicenseDB{Id: licId}).First(&license).Error; err != nil {
+			errs = append(errs, fmt.Errorf("unable to remove license '%s' from obligation '%s': %s", licId, obligation.Id, err.Error()))
 		} else {
 			deleteLicenseAssociations = append(deleteLicenseAssociations, license)
 		}
 	}
 
-	if err := db.DB.Transaction(func(tx *gorm.DB) error {
+	if err := tx.Transaction(func(tx1 *gorm.DB) error {
 
-		if len(createLicenseAssociations) == 0 && len(deleteLicenseAssociations) == 0 {
-			for _, lic := range obligation.Licenses {
-				newLicenseAssociations = append(newLicenseAssociations, *lic.Shortname)
+		if len(createLicenseAssociations) != 0 || len(deleteLicenseAssociations) != 0 {
+			if err := tx1.Model(obligation).Association("Licenses").Append(createLicenseAssociations); err != nil {
+				return err
 			}
-			return nil
+			if err := tx1.Model(obligation).Association("Licenses").Delete(deleteLicenseAssociations); err != nil {
+				return err
+			}
 		}
 
-		if err := tx.Session(&gorm.Session{SkipHooks: true}).Model(obligation).Association("Licenses").Append(createLicenseAssociations); err != nil {
-			return err
-		}
-		if err := tx.Session(&gorm.Session{SkipHooks: true}).Model(obligation).Association("Licenses").Delete(deleteLicenseAssociations); err != nil {
+		if err := tx.
+			Preload("Licenses").
+			Joins("Type").
+			Joins("Classification").
+			Where(&models.Obligation{Id: obligation.Id}).
+			First(&obligation).Error; err != nil {
 			return err
 		}
 
 		for _, lic := range obligation.Licenses {
-			newLicenseAssociations = append(newLicenseAssociations, *lic.Shortname)
+			newLicenseAssociations = append(newLicenseAssociations, models.ObligationMapLicenseFormat{Id: lic.Id, Shortname: *lic.Shortname})
 		}
 
 		return createObligationMapChangelog(tx, userId, newLicenseAssociations, oldLicenseAssociations, obligation)
@@ -305,10 +312,25 @@ func PerformObligationMapActions(userId int64, obligation *models.Obligation,
 }
 
 // createObligationMapChangelog creates the changelog for the obligation map changes.
-func createObligationMapChangelog(tx *gorm.DB, userId int64,
-	newLicenseAssociations, oldLicenseAssociations []string, obligation *models.Obligation) error {
-	oldVal := strings.Join(oldLicenseAssociations, ", ")
-	newVal := strings.Join(newLicenseAssociations, ", ")
+func createObligationMapChangelog(
+	tx *gorm.DB,
+	userId uuid.UUID,
+	newLicenseAssociations, oldLicenseAssociations []models.ObligationMapLicenseFormat,
+	obligation *models.Obligation,
+) error {
+	uuidsToStr := func(ids []models.ObligationMapLicenseFormat) string {
+		if len(ids) == 0 {
+			return ""
+		}
+		s := make([]string, 0, len(ids))
+		for _, lic := range ids {
+			s = append(s, lic.Id.String())
+		}
+		return strings.Join(s, ", ")
+	}
+
+	oldVal := uuidsToStr(oldLicenseAssociations)
+	newVal := uuidsToStr(newLicenseAssociations)
 
 	var changes []models.ChangeLog
 	AddChangelog("Licenses", &oldVal, &newVal, &changes)
@@ -328,7 +350,7 @@ func createObligationMapChangelog(tx *gorm.DB, userId int64,
 	return nil
 }
 
-func AddChangelogForObligationType(tx *gorm.DB, userId int64, oldObType, newObType *models.ObligationType) error {
+func AddChangelogForObligationType(tx *gorm.DB, userId uuid.UUID, oldObType, newObType *models.ObligationType) error {
 	var changes []models.ChangeLog
 	AddChangelog("Active", oldObType.Active, newObType.Active, &changes)
 	AddChangelog("Type", &oldObType.Type, &newObType.Type, &changes)
@@ -350,7 +372,7 @@ func AddChangelogForObligationType(tx *gorm.DB, userId int64, oldObType, newObTy
 	return nil
 }
 
-func ToggleObligationTypeActiveStatus(userId int64, tx *gorm.DB, obType *models.ObligationType) error {
+func ToggleObligationTypeActiveStatus(userId uuid.UUID, tx *gorm.DB, obType *models.ObligationType) error {
 	newObType := *obType
 	newActive := !*obType.Active
 	newObType.Active = &newActive
@@ -361,7 +383,7 @@ func ToggleObligationTypeActiveStatus(userId int64, tx *gorm.DB, obType *models.
 	return AddChangelogForObligationType(tx, userId, obType, &newObType)
 }
 
-func AddChangelogForObligationClassification(tx *gorm.DB, userId int64, oldObClassification, newObClassification *models.ObligationClassification) error {
+func AddChangelogForObligationClassification(tx *gorm.DB, userId uuid.UUID, oldObClassification, newObClassification *models.ObligationClassification) error {
 	var changes []models.ChangeLog
 	AddChangelog("Active", oldObClassification.Active, newObClassification.Active, &changes)
 	AddChangelog("Classification", &oldObClassification.Classification, &newObClassification.Classification, &changes)
@@ -383,7 +405,7 @@ func AddChangelogForObligationClassification(tx *gorm.DB, userId int64, oldObCla
 	return nil
 }
 
-func ToggleObligationClassificationActiveStatus(userId int64, tx *gorm.DB, obClassification *models.ObligationClassification) error {
+func ToggleObligationClassificationActiveStatus(userId uuid.UUID, tx *gorm.DB, obClassification *models.ObligationClassification) error {
 	newObClassification := *obClassification
 	newActive := !*obClassification.Active
 	newObClassification.Active = &newActive
@@ -406,7 +428,7 @@ const (
 	CREATED
 )
 
-func CreateObType(obType *models.ObligationType, userId int64) (error, ObligationFieldCreateStatusCode) {
+func CreateObType(obType *models.ObligationType, userId uuid.UUID) (error, ObligationFieldCreateStatusCode) {
 	if err := validations.Validate.Struct(obType); err != nil {
 		return err, VALIDATION_FAILED
 	}
@@ -441,7 +463,7 @@ func CreateObType(obType *models.ObligationType, userId int64) (error, Obligatio
 	return err, status
 }
 
-func CreateObClassification(obClassification *models.ObligationClassification, userId int64) (error, ObligationFieldCreateStatusCode) {
+func CreateObClassification(obClassification *models.ObligationClassification, userId uuid.UUID) (error, ObligationFieldCreateStatusCode) {
 	if err := validations.Validate.Struct(obClassification); err != nil {
 		return err, VALIDATION_FAILED
 	}
@@ -500,17 +522,10 @@ func Populatedb(datafile string) {
 		if err := validations.Validate.Struct(&result); err != nil {
 			red := "\033[31m"
 			reset := "\033[0m"
-			log.Printf("%s%s: %s%s", red, result.Shortname, fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()), reset)
+			log.Printf("%s%s: %s%s", red, *result.Shortname, fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()), reset)
 			continue
 		}
-		lic, err := result.ConvertToLicenseDB()
-		if err != nil {
-			red := "\033[31m"
-			reset := "\033[0m"
-			log.Printf("%s%s: %s%s", red, *lic.Shortname, err.Error(), reset)
-			continue
-		}
-		_, _ = InsertOrUpdateLicenseOnImport(&lic, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})}, user.Id)
+		_, _ = InsertOrUpdateLicenseOnImport(&result, user.Id)
 	}
 
 	DEFAULT_OBLIGATION_TYPES := []*models.ObligationType{
@@ -582,8 +597,8 @@ func SetSimilarityThreshold() {
 func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 	switch audit.Type {
 	case "LICENSE":
-		audit.Entity = &models.LicenseDB{}
-		if err := db.DB.Where(&models.LicenseDB{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+		var lic models.LicenseDB
+		if err := db.DB.Where(&models.LicenseDB{Id: audit.TypeId}).First(&lic).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   "license corresponding with this audit does not exist",
@@ -594,9 +609,10 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
+		audit.Entity = lic.ConvertToLicenseResponseDTO()
 	case "OBLIGATION":
-		audit.Entity = &models.Obligation{}
-		if err := db.DB.Joins("Type").Joins("Classification").Where(&models.Obligation{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+		var ob models.Obligation
+		if err := db.DB.Joins("Type").Joins("Classification").Where(&models.Obligation{Id: audit.TypeId}).First(&ob).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   "obligation corresponding with this audit does not exist",
@@ -607,6 +623,7 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			c.JSON(http.StatusNotFound, er)
 			return err
 		}
+		audit.Entity = ob.ConvertToObligationResponseDTO()
 	case "TYPE":
 		audit.Entity = &models.ObligationType{}
 		if err := db.DB.Where(&models.ObligationType{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
@@ -693,7 +710,7 @@ func AddChangelog[T any](fieldName string, oldValue, newValue *T, changes *[]mod
 }
 
 // AddChangelogsForLicense adds changelogs for the updated fields on license update
-func AddChangelogsForLicense(tx *gorm.DB, userId int64,
+func AddChangelogsForLicense(tx *gorm.DB, userId uuid.UUID,
 	newLicense, oldLicense *models.LicenseDB) error {
 	var changes []models.ChangeLog
 
@@ -743,7 +760,7 @@ func AddChangelogsForLicense(tx *gorm.DB, userId int64,
 
 		audit := models.Audit{
 			UserId:     user.Id,
-			TypeId:     int64(newLicense.Id),
+			TypeId:     newLicense.Id,
 			Timestamp:  time.Now(),
 			Type:       "LICENSE",
 			ChangeLogs: changes,
@@ -758,7 +775,7 @@ func AddChangelogsForLicense(tx *gorm.DB, userId int64,
 }
 
 // AddChangelogsForUser adds changelogs for the updated fields on user update
-func AddChangelogsForUser(tx *gorm.DB, userId int64,
+func AddChangelogsForUser(tx *gorm.DB, userId uuid.UUID,
 	newUser, oldUser *models.User) error {
 	var changes []models.ChangeLog
 
@@ -788,5 +805,4 @@ func AddChangelogsForUser(tx *gorm.DB, userId int64,
 	}
 
 	return nil
-
 }

@@ -20,6 +20,7 @@ import (
 	"time"
 
 	"github.com/go-playground/validator/v10"
+	"github.com/google/uuid"
 	"github.com/lestrrat-go/jwx/v3/jwa"
 	"github.com/lestrrat-go/jwx/v3/jwk"
 	"github.com/lestrrat-go/jwx/v3/jws"
@@ -82,7 +83,7 @@ func CreateUser(c *gin.Context) {
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 
-		userId := c.MustGet("userId").(int64)
+		userId := c.MustGet("userId").(uuid.UUID)
 		user := models.User(input)
 		*user.UserName = html.EscapeString(strings.TrimSpace(*user.UserName))
 		*user.DisplayName = html.EscapeString(strings.TrimSpace(*user.DisplayName))
@@ -101,25 +102,14 @@ func CreateUser(c *gin.Context) {
 
 		result := tx.Where(models.User{UserName: user.UserName}).FirstOrCreate(&user)
 		if result.Error != nil {
-			if errors.Is(result.Error, gorm.ErrDuplicatedKey) {
-				er := models.LicenseError{
-					Status:    http.StatusConflict,
-					Message:   "Failed to create the new user",
-					Error:     "User with this email id already exists",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusConflict, er)
-			} else {
-				er := models.LicenseError{
-					Status:    http.StatusInternalServerError,
-					Message:   "Failed to create the new user",
-					Error:     result.Error.Error(),
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusInternalServerError, er)
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to create the new user",
+				Error:     result.Error.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
 			}
+			c.JSON(http.StatusInternalServerError, er)
 			return nil
 		} else if result.RowsAffected == 0 {
 			errMessage := fmt.Sprintf("Error: User with username '%s' already exists", *user.UserName)
@@ -161,7 +151,6 @@ func CreateUser(c *gin.Context) {
 
 		return nil
 	})
-
 }
 
 // CreateOidcUser creates a new user via oidc id token
@@ -280,7 +269,6 @@ func CreateOidcUser(c *gin.Context) {
 
 	parsedToken, err := jwt.Parse([]byte(tokenString), jwt.WithValidate(true), jwt.WithVerify(false))
 	if err != nil {
-		fmt.Println(err.Error())
 		er := models.LicenseError{
 			Status:    http.StatusUnauthorized,
 			Message:   "Please check your credentials and try again",
@@ -408,7 +396,7 @@ func CreateOidcUser(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/users/{username} [patch]
 func UpdateUser(c *gin.Context) {
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var olduser models.User
 		var updates models.UserUpdate
@@ -541,7 +529,7 @@ func UpdateProfile(c *gin.Context) {
 		var olduser models.User
 		var changes models.ProfileUpdate
 
-		userId := c.MustGet("userId").(int64)
+		userId := c.MustGet("userId").(uuid.UUID)
 
 		if err := tx.Where(models.User{Id: userId}).First(&olduser).Error; err != nil {
 			er := models.LicenseError{
@@ -634,7 +622,6 @@ func UpdateProfile(c *gin.Context) {
 
 		return nil
 	})
-
 }
 
 // DeleteUser marks an existing user record as inactive
@@ -653,7 +640,7 @@ func UpdateProfile(c *gin.Context) {
 func DeleteUser(c *gin.Context) {
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var olduser models.User
-		userId := c.MustGet("userId").(int64)
+		userId := c.MustGet("userId").(uuid.UUID)
 		active := true
 		if err := tx.Where(models.User{Id: userId, Active: &active}).First(&olduser).Error; err != nil {
 			er := models.LicenseError{
@@ -921,7 +908,7 @@ func Login(c *gin.Context) {
 //	@Router			/users/profile [get]
 func GetUserProfile(c *gin.Context) {
 	var user models.User
-	userId := c.MustGet("userId").(int64)
+	userId := c.MustGet("userId").(uuid.UUID)
 
 	active := true
 	if err := db.DB.Where(models.User{Id: userId, Active: &active}).First(&user).Error; err != nil {
@@ -1018,7 +1005,7 @@ func VerifyRefreshToken(c *gin.Context) {
 		return
 	}
 
-	userID, err := strconv.ParseInt(sub, 10, 64)
+	userID, err := uuid.Parse(sub)
 	if err != nil {
 		logger.LogError("Invalid user ID in token", zap.Error(err), zap.String("sub", sub))
 		unauthorized(c, "invalid user ID in token")
@@ -1028,7 +1015,7 @@ func VerifyRefreshToken(c *gin.Context) {
 	active := true
 	var user models.User
 	if err := db.DB.Where(models.User{Id: userID, Active: &active}).First(&user).Error; err != nil {
-		logger.LogWarn("User not found or inactive", zap.Int64("userID", userID))
+		logger.LogWarn("User not found or inactive", zap.String("userID", userID.String()))
 		unauthorized(c, "user not found")
 		return
 	}
@@ -1040,7 +1027,7 @@ func VerifyRefreshToken(c *gin.Context) {
 		return
 	}
 
-	logger.LogInfo("VerifyRefreshToken completed successfully", zap.Int64("userID", userID))
+	logger.LogInfo("VerifyRefreshToken completed successfully", zap.String("userID", userID.String()))
 
 	c.JSON(http.StatusOK, models.TokenResonse{
 		Status: http.StatusOK,
@@ -1070,7 +1057,7 @@ func EncryptUserPassword(user *models.User) error {
 
 func generateToken(user models.User) (*models.Tokens, error) {
 	logger.LogInfo("generateToken called",
-		zap.Int64("userID", user.Id),
+		zap.String("userID", user.Id.String()),
 		zap.String("username", *user.UserName),
 	)
 
@@ -1140,7 +1127,7 @@ func generateToken(user models.User) (*models.Tokens, error) {
 		RefreshToken:         string(signedRefreshToken),
 		AccessTokenExpiresIn: int64(accessTokenLifespan * 3600), // in seconds
 	}
-	logger.LogInfo("generateToken completed successfully", zap.Int64("userID", user.Id))
+	logger.LogInfo("generateToken completed successfully", zap.String("userID", user.Id.String()))
 	return tokens, nil
 }
 
