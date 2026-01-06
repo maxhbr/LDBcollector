@@ -12,7 +12,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"log"
 	"math"
 	"net/http"
 	"os"
@@ -22,12 +21,14 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/auth"
 	"github.com/fossology/LicenseDb/pkg/db"
+	logger "github.com/fossology/LicenseDb/pkg/log"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/lestrrat-go/jwx/v3/jwa"
 	"github.com/lestrrat-go/jwx/v3/jws"
 	"github.com/lestrrat-go/jwx/v3/jwt"
+	"go.uber.org/zap"
 )
 
 // AuthenticationMiddleware is a middleware function for user authentication.
@@ -54,21 +55,21 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 		if iss == os.Getenv("DEFAULT_ISSUER") {
 			_, err := jws.Verify([]byte(tokenString), jws.WithKey(jwa.HS256(), []byte(os.Getenv("API_SECRET"))))
 			if err != nil {
-				log.Printf("\033[31mError: %s\033[0m", err.Error())
+				logger.LogError("error verifying token", zap.Error(err))
 				unauthorized(c, "token verification failed")
 				return
 			}
 
 			var userData map[string]interface{}
 			if err = unverfiedParsedToken.Get("user", &userData); err != nil {
-				log.Printf("\033[31mError: %s\033[0m", err.Error())
+				logger.LogError("error parsing token user data", zap.Error(err))
 				unauthorized(c, "incompatible token format")
 				return
 			}
 
 			userDataBytes, err := json.Marshal(userData)
 			if err != nil {
-				log.Printf("\033[31mError: %s\033[0m", err.Error())
+				logger.LogError("error marshalling user data", zap.Error(err))
 				unauthorized(c, "failed to marshal user data")
 				return
 			}
@@ -77,15 +78,15 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			var user models.User
 			err = json.Unmarshal(userDataBytes, &user)
 			if err != nil {
-				log.Printf("\033[31mError: %s\033[0m", err.Error())
+				logger.LogError("error unmarshalling user data", zap.Error(err))
 				unauthorized(c, "incompatible token format")
 				return
 			}
 
 			active := true
 			if err := db.DB.Where(models.User{Id: user.Id, Active: &active}).First(&user).Error; err != nil {
-				log.Printf("\033[31mError: %s\033[0m", err.Error())
-				unauthorized(c, "User not found. Please check your credentials.")
+				logger.LogError("error finding user in db", zap.Error(err))
+				unauthorized(c, "user not found. please check your credentials.")
 				return
 			}
 			c.Set("userId", user.Id)
@@ -93,34 +94,16 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 		} else if iss == os.Getenv("OIDC_ISSUER") {
 
 			if auth.Jwks == nil {
-				log.Print("\033[31mError: OIDC environment variables not configured properly\033[0m")
-				er := models.LicenseError{
-					Status:    http.StatusInternalServerError,
-					Message:   "Something went wrong",
-					Error:     "internal server error",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusInternalServerError, er)
-				c.Abort()
+				logger.LogError("oidc environment variables not configured properly")
+				internalServerError(c)
 				return
 			}
-
 			keyset, err := auth.Jwks.Lookup(context.Background(), os.Getenv("JWKS_URI"))
 			if err != nil {
-				log.Print("\033[31mError: Failed jwk.Cache lookup from the oidc provider's URL\033[0m")
-				er := models.LicenseError{
-					Status:    http.StatusInternalServerError,
-					Message:   "Something went wrong",
-					Error:     "internal server error",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusInternalServerError, er)
-				c.Abort()
+				logger.LogError("failed jwk cache lookup from oidc provider", zap.Error(err))
+				internalServerError(c)
 				return
 			}
-
 			keyOptions := jws.WithKeySet(keyset)
 			keyError := true
 			if kid, err := utils.GetKid(tokenString); err == nil {
@@ -136,75 +119,59 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 					}
 				}
 			}
-
 			if keyError {
-				log.Printf("\033[31mError: Token verification failed due to invalid alg header key field \033[0m")
+				logger.LogError("token verification failed due to invalid alg header key field")
 				unauthorized(c, "token verification failed")
-				c.Abort()
 				return
 			}
 
 			if _, err = jws.Verify([]byte(tokenString), keyOptions); err != nil {
-				log.Printf("\033[31mError: Token verification failed \033[0m")
+				logger.LogError("token verification failed", zap.Error(err))
 				unauthorized(c, "token verification failed")
-				c.Abort()
 				return
 			}
 
 			isClientCredentialsFlow := false
-
-			var oidcClienToUserMapper string
+			var oidcClientToUserMapper string
 			if os.Getenv("OIDC_CLIENT_TO_USER_MAPPER_CLAIM") != "" {
-				if err := unverfiedParsedToken.Get(os.Getenv("OIDC_CLIENT_TO_USER_MAPPER_CLAIM"), &oidcClienToUserMapper); err == nil {
+				if err := unverfiedParsedToken.Get(os.Getenv("OIDC_CLIENT_TO_USER_MAPPER_CLAIM"), &oidcClientToUserMapper); err == nil {
 					isClientCredentialsFlow = true
 				}
 			}
 
 			var user models.User
-
 			if isClientCredentialsFlow {
 				var oidcClient models.OidcClient
-				if err := db.DB.Preload("User").Where(&models.OidcClient{ClientId: oidcClienToUserMapper}).First(&oidcClient).Error; err != nil {
-					log.Printf("\033[31mError: %s\033[0m", err.Error())
+				if err := db.DB.Preload("User").Where(&models.OidcClient{ClientId: oidcClientToUserMapper}).First(&oidcClient).Error; err != nil {
+					logger.LogError("error fetching oidc client", zap.Error(err))
 					unauthorized(c, "oidc client not set up")
 					return
 				}
-
 				user = oidcClient.User
 			} else {
 				if os.Getenv("OIDC_USERNAME_KEY") == "" {
-					log.Print("\033[31mError: OIDC environment variables not configured properly\033[0m")
-					er := models.LicenseError{
-						Status:    http.StatusInternalServerError,
-						Message:   "Something went wrong",
-						Error:     "internal server error",
-						Path:      c.Request.URL.Path,
-						Timestamp: time.Now().Format(time.RFC3339),
-					}
-					c.JSON(http.StatusInternalServerError, er)
-					c.Abort()
+					logger.LogError("oidc environment variables not configured properly")
+					internalServerError(c)
 					return
 				}
-
 				var username string
 				if err = unverfiedParsedToken.Get(os.Getenv("OIDC_USERNAME_KEY"), &username); err != nil {
-					log.Printf("\033[31mError: %s\033[0m", err.Error())
+					logger.LogError("error parsing oidc username", zap.Error(err))
 					unauthorized(c, "incompatible token format")
 					return
 				}
 
 				if err := db.DB.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
-					log.Printf("\033[31mError: %s\033[0m", err.Error())
+					logger.LogError("error finding user", zap.Error(err))
 					unauthorized(c, "User not found")
 					return
 				}
 			}
-
 			c.Set("userId", user.Id)
 			c.Set("role", *user.UserLevel)
 		} else {
-			log.Printf("\033[31mError: Issuer '%s' not supported or not configured in .env\033[0m", iss)
-			unauthorized(c, "internal server error")
+			logger.LogError("issuer not supported", zap.String("issuer", iss))
+			unauthorized(c, "issuer not supported")
 			return
 		}
 		c.Next()
@@ -223,15 +190,14 @@ func RoleBasedAccessMiddleware(roles []string) gin.HandlerFunc {
 			}
 		}
 		if !found {
-			log.Print("\033[31mError: access denied due to insufficient role permissions\033[0m")
-			er := models.LicenseError{
+			logger.LogError("access denied due to insufficient role permissions")
+			c.JSON(http.StatusForbidden, models.LicenseError{
 				Status:    http.StatusForbidden,
 				Message:   "You do not have the necessary permissions to access this resource",
 				Error:     "access denied due to insufficient role permissions",
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusForbidden, er)
+			})
 			c.Abort()
 			return
 		}
@@ -326,7 +292,9 @@ func PaginationMiddleware() gin.HandlerFunc {
 				err = fmt.Errorf("unknown response model type")
 			}
 			if err != nil {
-				log.Fatalf("Error marshalling new body: %s", err)
+				logger.LogError("error processing response model", zap.Error(err))
+				internalServerError(c)
+				return
 			}
 
 			paginationMeta := metaValue.(models.PaginationMeta)
@@ -338,24 +306,23 @@ func PaginationMiddleware() gin.HandlerFunc {
 			metaObject.Limit = page.Limit
 			metaObject.ResourceCount = paginationMeta.ResourceCount
 			metaObject.TotalPages = int64(math.Ceil(float64(paginationMeta.ResourceCount) / float64(page.Limit)))
+
 			// Can go next
 			if metaObject.Page < metaObject.TotalPages {
 				params.Set("page", strconv.FormatInt(int64(metaObject.Page+1), 10))
 				c.Request.URL.RawQuery = params.Encode()
-
 				metaObject.Next = c.Request.URL.String()
 			}
+
 			// Can go previous
 			if metaObject.Page > 1 {
 				params.Set("page", strconv.FormatInt(int64(metaObject.Page-1), 10))
 				c.Request.URL.RawQuery = params.Encode()
-
 				metaObject.Previous = c.Request.URL.String()
 			}
 
 			// Marshal the new body
 			var newBody []byte
-			var err error
 			if isLicenseRes {
 				newBody, err = json.Marshal(licenseRes)
 			} else if isObligationRes {
@@ -366,17 +333,24 @@ func PaginationMiddleware() gin.HandlerFunc {
 				newBody, err = json.Marshal(userRes)
 			}
 			if err != nil {
-				log.Fatalf("Error marshalling new body: %s", err.Error())
+				logger.LogError("error marshalling response body", zap.Error(err))
+				internalServerError(c)
+				return
 			}
 			_, err = c.Writer.WriteString(string(newBody))
 			if err != nil {
-				log.Fatalf("Error writing new body: %s", err.Error())
+				logger.LogError("error writing response body", zap.Error(err))
+				internalServerError(c)
+				return
 			}
+
 		} else {
 			// Write the original body for non-paginated responses
 			_, err := c.Writer.WriteString(writer.body.String())
 			if err != nil {
-				log.Fatalf("Error writing new body: %s", err.Error())
+				logger.LogError("error writing response body", zap.Error(err))
+				internalServerError(c)
+				return
 			}
 		}
 	}
@@ -398,6 +372,17 @@ func unauthorized(c *gin.Context, msg string) {
 		Status:    http.StatusUnauthorized,
 		Message:   "Please check your credentials and try again",
 		Error:     msg,
+		Path:      c.Request.URL.Path,
+		Timestamp: time.Now().Format(time.RFC3339),
+	})
+	c.Abort()
+}
+
+func internalServerError(c *gin.Context) {
+	c.JSON(http.StatusInternalServerError, models.LicenseError{
+		Status:    http.StatusInternalServerError,
+		Message:   "Something went wrong",
+		Error:     "internal server error",
 		Path:      c.Request.URL.Path,
 		Timestamp: time.Now().Format(time.RFC3339),
 	})
