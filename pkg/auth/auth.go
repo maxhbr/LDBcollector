@@ -1109,7 +1109,7 @@ func generateToken(user models.User) (*models.Tokens, error) {
 		IssuedAt(now).
 		NotBefore(now).
 		Expiration(now.Add(time.Hour*time.Duration(refreshTokenLifespan))).
-		Claim("sub", fmt.Sprintf("%d", user.Id)).
+		Claim("sub", user.Id.String()).
 		Claim("type", "refresh").
 		Claim("user", safeClaim).
 		Build()
