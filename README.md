@@ -9,7 +9,7 @@ Project providing insights on the {metæffekt} license database covering
 * 307 specific and commonly used license expressions, and
 * 61 consolidated markers
 
-as of 03th December 2026.
+as of 03th January 2026.
 
 A total of 3129 differentiated terms and exceptions!
 
