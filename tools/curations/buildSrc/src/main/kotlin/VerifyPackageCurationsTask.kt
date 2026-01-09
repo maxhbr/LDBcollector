@@ -95,7 +95,3 @@ open class VerifyPackageCurationsTask : DefaultTask() {
         }
     }
 }
-
-private fun String.hasVersionRangeIndicators() = versionRangeIndicators.any { contains(it, ignoreCase = true) }
-
-private val versionRangeIndicators = listOf(",", "~", "*", "+", ">", "<", "=", " - ", "^", ".x", "||")

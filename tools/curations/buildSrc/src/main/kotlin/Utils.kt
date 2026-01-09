@@ -68,4 +68,8 @@ fun PackageConfiguration.expectedPath() =
     "${id.type.encodeOr("_")}/${id.namespace.encodeOr("_")}/${id.name.encodeOr("_")}/" +
             "${id.version.encodeOr("_")}/${if (vcs != null) "vcs" else "source-artifact"}.yml"
 
+fun String.hasVersionRangeIndicators() = versionRangeIndicators.any { contains(it, ignoreCase = true) }
+
 fun String.isVersion() = matches(versionRegex)
+
+private val versionRangeIndicators = listOf(",", "~", "*", "+", ">", "<", "=", " - ", "^", ".x", "||")
