@@ -6,6 +6,8 @@ import org.gradle.api.GradleException
 import org.gradle.api.tasks.TaskAction
 import org.ossreviewtoolkit.model.config.PackageConfiguration
 import org.ossreviewtoolkit.model.mapper
+import org.semver4j.range.RangeList
+import org.semver4j.range.RangeListFactory
 
 open class VerifyPackageConfigurationsTask : DefaultTask() {
     init {
@@ -39,6 +41,16 @@ open class VerifyPackageConfigurationsTask : DefaultTask() {
                     issues += "Only package configurations for specific versions are allowed, but the configuration " +
                             "for package '${config.id.toCoordinates()}' in file '$relativePath' does not have a " +
                             "version."
+                }
+
+                val version = config.id.version
+                if (version.isNotBlank() && version.hasVersionRangeIndicators()) {
+                    val range = RangeListFactory.create(version)
+                    if (range.get().size == 0) {
+                        issues += "The version of package '${config.id.toCoordinates()}' in file " +
+                                "'$relativePath' contains version range indicators, but cannot be parsed to a " +
+                                "valid version range."
+                    }
                 }
 
                 config.sourceArtifactUrl?.run {
