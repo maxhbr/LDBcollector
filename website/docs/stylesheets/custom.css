@@ -37,8 +37,8 @@
 
 [data-md-color-scheme="slate"] .grid.cards > ul > li:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px var(--md-primary-fg-color);
-    border-color: var(--md-primary-fg-color);
+    box-shadow: 0 8px 16px var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
 }
 
 /* Text color adjustments for better contrast */
@@ -65,5 +65,141 @@
     .grid.cards > ul {
         grid-template-columns: 1fr !important;
         grid-template-rows: repeat(6, 1fr) !important;
+    }
+}
+
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* Background image container that maintains aspect ratio */
+.hero-section .hero-background {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay container for hero content positioned over the image */
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+    max-width: 33%;
+}
+
+/* Hero title styling */
+.hero-section h1 {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.05em;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+/* Hero button styling */
+.hero-button {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 1.25rem;
+    background-color: var(--md-primary-fg-color);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* GitHub icon inside hero button */
+.hero-button svg {
+    width: 0.9rem;
+    height: 0.9rem;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.hero-button:hover {
+    background-color: var(--md-accent-fg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.hero-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Light mode adjustments */
+[data-md-color-scheme="default"] .hero-button {
+    background-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .hero-button:hover {
+    background-color: var(--md-accent-fg-color);
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .hero-button {
+    background-color: var(--md-primary-fg-color);
+    border-color: var(--md-primary-fg-color--light);
+}
+
+[data-md-color-scheme="slate"] .hero-button:hover {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+}
+
+/* Responsive adjustments for hero section */
+@media screen and (max-width: 76.1875em) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content {
+        padding-left: 3rem;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    .hero-section h1 {
+        font-size: 1.25rem;
+    }
+    
+    .hero-content {
+        padding-left: 0;
+        max-width: 80%;
+    }
+    
+    .hero-button {
+        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+    }
+    
+    .hero-button svg {
+        width: 0.75rem;
+        height: 0.75rem;
     }
 }
