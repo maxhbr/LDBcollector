@@ -34,6 +34,9 @@ theme:
   features:
     - navigation.footer
 
+extra_css:
+  - stylesheets/custom.css
+
 nav:
   - Introduction: index.md
   - FAQ: faq.md

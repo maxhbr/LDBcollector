@@ -6,6 +6,33 @@
 <div align="center"><img src="assets/licenselynx-simple-explanation-dark.png#only-dark" alt="LicenseLynx Workflow Explanation"></div>
 
 
+<div class="grid cards" markdown>
+
+- __Deterministic__
+
+    Same input → same ID
+
+- __10,000+ mappings__
+  
+    Aliases + variants
+
+- __SDKs__
+  
+    Python • Java • TypeScript
+
+- __Open data__
+  
+    GitHub, versioned
+
+- __Including SPDX & ScanCode__
+  
+    With frequent updates
+
+- __Free and Open-Source__
+  
+    Licensed under BSD-3-Clause
+</div>
+
 How can we map a license string found in the wild automatically and deterministically?
 [**LicenseLynx**](https://github.com/licenselynx/licenselynx) is the answer to that!
 
