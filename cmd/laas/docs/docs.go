@@ -3593,6 +3593,10 @@ const docTemplate = `{
                     "type": "string",
                     "example": "fossy"
                 },
+                "subscribed": {
+                    "type": "boolean",
+                    "example": false
+                },
                 "user_email": {
                     "type": "string"
                 },
@@ -3737,6 +3741,9 @@ const docTemplate = `{
                 "id": {
                     "type": "string",
                     "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "subscribed": {
+                    "type": "boolean"
                 },
                 "user_email": {
                     "type": "string",

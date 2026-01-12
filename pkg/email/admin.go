@@ -12,9 +12,10 @@ func FetchAdminEmails() ([]string, error) {
 	var emails []string
 	admin := "ADMIN"
 	active := true
+	subscribed := true
 	err := db.DB.
 		Model(&models.User{}).
-		Where(&models.User{UserLevel: &admin, Active: &active}). // can add super_admin too
+		Where(&models.User{UserLevel: &admin, Active: &active, Subscribed: &subscribed}). // can add super_admin too
 		Pluck("user_email", &emails).Error
 	if err != nil {
 		return nil, err
