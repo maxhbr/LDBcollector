@@ -25,6 +25,7 @@
 
 package = linux-firmware
 location = LICENCE.IntcSST2
+           LICENSE.i915
 text = '''
 Copyright (c) 2014, Intel Corporation.
 All rights reserved.
