@@ -7,6 +7,15 @@ url = '''
 https://fedoraproject.org/wiki/Licensing/Tolua
 '''
 
+text = '''
+/* This code is free software; you can redistribute it and/or modify it.
+ ** The software provided hereunder is on an "as is" basis, and
+ ** the author has no obligation to provide maintenance, support, updates,
+ ** enhancements, or modifications.
+ */
+'''
+
+
 [fedora]
 
 legacy-name = [
@@ -17,3 +26,6 @@ legacy-abbreviation = [
     "Tolua"
 ]
 
+notes = '''
+The tolua license was found in tolua, it is a minimal permissive license similar to MIT. It is Free and GPL-Compatible. 
+'''

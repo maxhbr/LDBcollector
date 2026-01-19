@@ -7,6 +7,16 @@ url = '''
 https://fedoraproject.org/wiki/Licensing/softSurfer
 '''
 
+text = '''
+// Copyright 2001 softSurfer, 2012-13 Dan Sunday
+// This code may be freely used, distributed and modified for any
+// purpose providing that this copyright notice is included with it.
+// SoftSurfer makes no warranty for this code, and cannot be held
+// liable for any real or imagined damage resulting from its use.
+// Users of this code must verify correctness for their application. 
+'''
+
+
 [fedora]
 
 legacy-name = [
@@ -17,3 +27,8 @@ legacy-abbreviation = [
     "softSurfer"
 ]
 
+notes = '''
+This is a minimal permissive license found in softSurfer.
+Originally, it was missing permission to distribute, but that was corrected by
+upstream in 2013. It is Free and GPL-compatible. 
+'''
