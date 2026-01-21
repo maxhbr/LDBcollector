@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "OSC License 1.0"
-category: "OSC License"
-shortName: "OSC-License-1.0"
+category: "OSC"
+shortName: "OSC-1.0"
 
 osiStatus: "approved"
 osiCategory: "international"
@@ -14,3 +14,5 @@ alternativeNames:
   - "OSC-License-1.0"
   - "https://opensource.org/license/osc-license-1-0"
 
+otherIds: 
+  - "osi:osc-license-1-0"
