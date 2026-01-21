@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "LlaMa 3.2 Community License Agreement 2024"
-category: "LlaMa Community License Agreement"
-shortName: "LlaMa-3.2-License-2024"
+canonicalName: "Llama 3.2 Community License Agreement"
+category: "Llama Community"
+shortName: "Llama-3.2-Community"
 
 canonicalNameHistory:
   - "LlaMa 3.2 Community License Agreement (2024)"
+  - "LlaMa 3.2 Community License Agreement 2024"
 
 alternativeNames:
   - "Llama 3.2 Community License Agreement 2024"

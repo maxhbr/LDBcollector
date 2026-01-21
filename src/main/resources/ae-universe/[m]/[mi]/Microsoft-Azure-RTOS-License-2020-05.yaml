@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "Microsoft Azure RTOS 2020-05"
+canonicalName: "Microsoft Azure RTOS License 2020-05"
 category: "Microsoft Azure RTOS"
 shortName: "MS-Azure-RTOS-2020-05"
+
+canonicalNameHistory:
+  - "Microsoft Azure RTOS 2020-05"
 
 alternativeNames:
   - "Microsoft Azure RTOS 2020-05"

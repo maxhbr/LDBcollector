@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "Open Government Licence 2.0"
-category: "OGL"
+canonicalName: "Open Government License United Kingdom 2.0"
+category: "OGL United Kingdom"
 spdxIdentifier: "OGL-UK-2.0"
+
+canonicalNameHistory:
+  - "Open Government Licence 2.0"
 
 alternativeNames:
   - "Open Government Licence v2.0"

@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "LlaMa 4 Acceptable Use Policy 2025"
-category: "LlaMa 4 Acceptable Use Policy"
-shortName: "LlaMa-4-License-2025"
+canonicalName: "Llama 4 Acceptable Use Policy"
+category: "Llama 4 Acceptable Use Policy"
+shortName: "Llama-4-AUP"
+
+canonicalNameHistory:
+  - "LlaMa 4 Acceptable Use Policy 2025"
 
 alternativeNames:
   - "Llama 4 Acceptable Use Policy 2025"

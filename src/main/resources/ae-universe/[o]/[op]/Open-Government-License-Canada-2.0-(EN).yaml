@@ -3,7 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Open Government License Canada 2.0 (EN)"
-category: "OGL"
+category: "OGL Canada"
+shortName: "OGL-Canada-2.0-EN"
 spdxIdentifier: "OGL-Canada-2.0"
 
 canonicalNameHistory:
