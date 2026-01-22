@@ -1,4 +1,6 @@
-# LicenseLynx ![total mappings](website/badges/total-mappings.svg)
+![total mappings](website/badges/total-mappings.svg)
+[![GitHub Tag](https://img.shields.io/github/v/tag/licenselynx/licenselynx)](https://github.com/licenselynx/licenselynx/releases/latest)
+[![license](https://img.shields.io/github/license/licenselynx/licenselynx)](LICENSE)
 
 ![python coverage](website/badges/coverage-python.svg)
 ![java coverage](website/badges/coverage-java.svg)
@@ -11,9 +13,7 @@
 [![scripts pipeline](https://github.com/licenselynx/licenselynx/actions/workflows/scripts.yaml/badge.svg)](https://github.com/licenselynx/licenselynx/actions/workflows/scripts.yaml)
 [![data pipeline](https://github.com/licenselynx/licenselynx/actions/workflows/data.yaml/badge.svg)](https://github.com/licenselynx/licenselynx/actions/workflows/data.yaml)
 
-[![GitHub Tag](https://img.shields.io/github/v/tag/licenselynx/licenselynx)](https://github.com/licenselynx/licenselynx/releases/latest)
-
-[![license](https://img.shields.io/github/license/licenselynx/licenselynx)](LICENSE)
+# LicenseLynx 
 
 ## Overview
 
