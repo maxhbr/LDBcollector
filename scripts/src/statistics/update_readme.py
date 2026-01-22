@@ -2,7 +2,6 @@
 # Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
 #
 import json
-from collections import Counter
 
 
 def load_license_data(file_path: str) -> dict:
@@ -10,73 +9,35 @@ def load_license_data(file_path: str) -> dict:
         return json.load(f)
 
 
-def count_canonical_licenses(license_data: dict) -> Counter[str]:
-    return Counter(entry['id'] for entry in license_data.values())
+def format_number(num: int) -> str:
+    """Format a number with 'k' suffix for thousands.
+
+    Args:
+        num: The number to format
+    Returns:
+        Formatted string (e.g., 10000 -> "10k", 1500 -> "1.5k", 500 -> "500")
+    """
+    if num >= 1000:
+        formatted = num / 1000
+        # Round to 1 decimal place and remove trailing ".0"
+        result = f"{formatted:.1f}k"
+        if result.endswith(".0k"):
+            result = result[:-3] + "k"
+        return result
+    return str(num)
 
 
-def prepare_top_licenses_text(canonical_counts: Counter[str]) -> list[tuple[str, int]]:
-    return canonical_counts.most_common(5)
+def main() -> None:
+    license_data = load_license_data("merged_data.json")
 
-
-def generate_svg(total_mappings: int, total_number_licenses: int, top_licenses: list[tuple[str, int]], is_dark_mode=False):
-    # Define colors for light and dark modes
-    if is_dark_mode:
-        background_color = "#1e1e1e"  # Dark background
-        text_color = "#ffffff"  # White text
-        accent_color = "#4caf50"  # Bright green for top licenses
-    else:
-        background_color = "#ffffff"  # Light background
-        text_color = "#333333"  # Dark grey text
-        accent_color = "#007bff"  # Soft blue for top licenses
-
-    # Generate the top licenses section
-    license_text = "".join(
-        f'<text x="30" y="{180 + i * 30}" font-family="Arial, sans-serif" '
-        f'font-size="18" fill="{accent_color}">{name}: <tspan font-weight="bold">{count}</tspan></text>'
-        for i, (name, count) in enumerate(top_licenses)
-    )
-
-    # Read SVG template and format it
-    with open("resources/template.svg") as f:
-        svg_template = f.read().format(
-            background_color=background_color,
-            text_color=text_color,
-            total_mappings=total_mappings,
-            total_number_licenses=total_number_licenses,
-            license_text=license_text
-        )
-
-    return svg_template
-
-
-def save_svg(svg_content: str, file_path: str):
-    with open(file_path, 'w') as f:
-        f.write(svg_content)
-
-
-def update_readme(license_data_file_path: str, svg_file_path: str):
-    # Load license data
-    license_data = load_license_data(license_data_file_path)
-
-    # Count mappings and prepare SVG update
+    # Calculate total mappings
     risky_mappings = license_data['riskyMap']
     canonical_mappings = license_data['stableMap']
     total_mappings = len(risky_mappings) + len(canonical_mappings)
 
-    canonical_counts = count_canonical_licenses(risky_mappings) + count_canonical_licenses(canonical_mappings)
-    top_licenses = prepare_top_licenses_text(canonical_counts)
-
-    total_number_licenses = len(canonical_counts)
-
-    # Generate and save SVG
-    svg_content = generate_svg(total_mappings, total_number_licenses, top_licenses, is_dark_mode=True)
-    save_svg(svg_content, svg_file_path)
-
-    print("SVG updated successfully.")
-
-
-def main():
-    update_readme("merged_data.json", "../../../stats.svg")
+    # Format and print the result
+    formatted_number = format_number(total_mappings)
+    print(formatted_number)
 
 
 if __name__ == '__main__':

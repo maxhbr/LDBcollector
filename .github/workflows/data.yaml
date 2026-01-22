@@ -46,14 +46,17 @@ jobs:
       - name: Run statistics file
         if: github.event.pull_request.base.ref == 'main'
         run: |
+          pip install anybadge
           python3 scripts/src/load/merge_data.py -o ./scripts/src/statistics/merged_data.json
           cd scripts/src/statistics
-          python3 update_readme.py
+          TOTAL_MAPPINGS=$(python3 update_readme.py)
           cd ../../../
+          echo "Creating badge with total mappings: ${TOTAL_MAPPINGS}"
+          anybadge --label "total mappings" --value "${TOTAL_MAPPINGS}" --file website/badges/total-mappings.svg --overwrite
       - name: Upload statistics file
         if: github.event.pull_request.base.ref == 'main'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update statistics in README.md"
+          commit_message: "chore: update total mappings badge"
           branch: main
           commit_user_name: "CI/CD Push Token"
