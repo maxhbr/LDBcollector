@@ -525,6 +525,18 @@ text = '''
 Public Domain Software -- Free to Use as You Like
 '''
 
+package = gstreamer1-plugins-bad-free
+location = gst/freeverb/gstfreeverb.c
+text = '''
+This code is public domain
+'''
+
+package = gstreamer1-plugins-bad-free
+location = gst/librfb/d3des.c
+text = '''
+A portable, public domain, version of the Data Encryption Standard.
+'''
+
 package = jhead
 location = https://www.sentex.ca/~mwandel/jhead/
 text = ''' 
