@@ -4,7 +4,7 @@
 
 canonicalName: "ESA Public License 2.4 (permissive; Type 3)"
 category: "ESA Public License"
-shortName: "ESA-PL-Permissive-2.4"
+spdxIdentifier: "ESA-PL-permissive-2.4"
 
 canonicalNameHistory:
   - "European Space Agency Public License 2.4 (permissive; Type 3)"

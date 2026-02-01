@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "Docbook License"
-category: "Docbook License"
-shortName: "Docbook"
+canonicalName: "DocBook License"
+category: "DocBook License"
+shortName: "DocBook"
+
+canonicalNameHistory:
+  - "Docbook License"
 
 otherIds: 
   - "scancode:docbook"

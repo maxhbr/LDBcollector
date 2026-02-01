@@ -5,6 +5,7 @@
 canonicalName: "ISO Permission"
 category: "ISO Permission"
 shortName: "ISO-Permission"
+spdxIdentifier: "ISO-permission"
 
 openCoDEStatus: "not approved"
 

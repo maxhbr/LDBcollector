@@ -4,7 +4,7 @@
 
 canonicalName: "SGMLUG PM License"
 category: "SGMLUG PM"
-shortName: "SGMLUG-PM-License"
+spdxIdentifier: "SGMLUG-PM"
 
 alternativeNames:
   - "Standard Generalized Markup Language Users' Group Parser Materials"
@@ -12,3 +12,5 @@ alternativeNames:
   - "SGMLUG-PM-License"
   - "SGML Parser Materials"
 
+otherIds: 
+  - "scancode:sgmlug"

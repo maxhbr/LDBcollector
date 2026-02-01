@@ -5,6 +5,7 @@
 canonicalName: "OpenSSL Linking Exception (GPL; with source provision obligation)"
 category: "OpenSSL Linking Exception"
 shortName: "OpenSSL-Linking-Exception-GPL-source"
+spdxIdentifier: "GPL-3.0-389-ds-base-exception"
 
 canonicalNameHistory:
   - "OpenSSL Linking Exception (GPL; variant 005)"

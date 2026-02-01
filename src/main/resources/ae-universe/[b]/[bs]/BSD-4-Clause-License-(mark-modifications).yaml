@@ -5,6 +5,7 @@
 canonicalName: "BSD 4-Clause License (mark modifications)"
 category: "BSD"
 shortName: "BSD-4-Clause-mark-modifications"
+spdxIdentifier: "BSD-Mark-Modifications"
 
 alternativeNames:
   - "BSD 4-Clause License (Modification Advertized)"

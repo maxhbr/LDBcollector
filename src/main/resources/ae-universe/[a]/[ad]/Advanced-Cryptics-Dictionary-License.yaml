@@ -4,7 +4,7 @@
 
 canonicalName: "Advanced Cryptics Dictionary License"
 category: "Advanced Cryptics Dictionary"
-shortName: "Advanced-Cryptics-Dictionary"
+spdxIdentifier: "Advanced-Cryptics-Dictionary"
 
 alternativeNames:
   - "Advanced Cryptics Dictionary License"

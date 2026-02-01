@@ -5,6 +5,7 @@
 canonicalName: "Anton Zinoviev License"
 category: "Anton Zinoviev License"
 shortName: "AZL"
+spdxIdentifier: "hyphen-bulgarian"
 
 alternativeNames:
   - "Anton Zinoviev License"

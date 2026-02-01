@@ -5,6 +5,7 @@
 canonicalName: "Permission Terms (variant 144)"
 category: "Permission"
 shortName: "PT-Var144"
+spdxIdentifier: "Buddy"
 
 canonicalNameHistory:
   - "MIT License (Buddy)"

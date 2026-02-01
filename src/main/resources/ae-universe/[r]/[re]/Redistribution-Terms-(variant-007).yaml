@@ -5,12 +5,17 @@
 canonicalName: "Redistribution Terms (variant 007)"
 category: "RT"
 shortName: "RT-Var7"
+spdxIdentifier: "BSD-4.3TAHOE"
 
 canonicalNameHistory:
   - "Redistribution Terms Var7"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "BSD-4.3TAHOE"
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "BSD-4.3TAHOE"
+  - "BSD 4.3 TAHOE License"
+  - "BSD-Original-UC-1990"
 
 otherIds: 
   - "scancode:bsla"

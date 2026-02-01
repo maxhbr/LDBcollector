@@ -5,6 +5,7 @@
 canonicalName: "Permission Terms (variant 003)"
 category: "Permission"
 shortName: "PT-Var003"
+spdxIdentifier: "HPND-SMC"
 
 canonicalNameHistory:
   - "Permission Terms (Var003)"

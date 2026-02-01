@@ -4,7 +4,7 @@
 
 canonicalName: "SMAIL General Public License"
 category: "SMAIL General Public License"
-shortName: "SMAIL-GPL"
+spdxIdentifier: "SMAIL-GPL"
 
 openCoDEStatus: "approved"
 

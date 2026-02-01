@@ -4,7 +4,7 @@
 
 canonicalName: "ESA Public License 2.4 (weak copyleft; Type 2)"
 category: "ESA Public License"
-shortName: "ESA-PL-Weak-Copyleft-2.4"
+spdxIdentifier: "ESA-PL-weak-copyleft-2.4"
 
 canonicalNameHistory:
   - "European Space Agency Public License 2.4 (weak copyleft; Type 2)"

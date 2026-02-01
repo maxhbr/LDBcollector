@@ -5,7 +5,6 @@
 canonicalName: "Linking Exception (LGPL; variant 005)"
 category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL-005"
-spdxIdentifier: "GCC-exception-2.0"
 
 canonicalNameHistory:
   - "GCC Runtime Library Exception 2.0"

@@ -6,6 +6,9 @@ canonicalName: "DocBook Schema License"
 category: "DocBook Schema"
 spdxIdentifier: "DocBook-Schema"
 
+canonicalNameHistory:
+  - "Docbook Schema License"
+
 alternativeNames:
   - "DocBook Schema License"
 

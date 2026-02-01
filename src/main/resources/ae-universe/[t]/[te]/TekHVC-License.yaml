@@ -4,7 +4,7 @@
 
 canonicalName: "TekHVC License"
 category: "TekHVC License"
-shortName: "TekHVC"
+spdxIdentifier: "TekHVC"
 
 openCoDEStatus: "approved"
 

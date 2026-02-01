@@ -5,6 +5,7 @@
 canonicalName: "Linking Exception (Harbour)"
 category: "Linking Exception"
 shortName: "Linking-Exception-Harbour"
+spdxIdentifier: "harbour-exception"
 
 type: "exception"
 

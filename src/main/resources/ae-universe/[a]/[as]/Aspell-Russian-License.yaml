@@ -4,7 +4,7 @@
 
 canonicalName: "Aspell Russian License"
 category: "Aspell Russian License"
-shortName: "Aspell-RU"
+spdxIdentifier: "Aspell-RU"
 
 alternativeNames:
   - "Aspell Russian License"

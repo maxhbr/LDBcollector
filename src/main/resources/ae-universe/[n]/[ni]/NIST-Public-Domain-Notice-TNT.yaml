@@ -4,7 +4,7 @@
 
 canonicalName: "NIST Public Domain Notice TNT"
 category: "NIST PD"
-shortName: "NIST-PD-TNT"
+spdxIdentifier: "NIST-PD-TNT"
 
 alternativeNames:
   - "NIST Public Domain Notice TNT"

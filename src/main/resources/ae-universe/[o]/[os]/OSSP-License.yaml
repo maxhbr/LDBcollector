@@ -4,7 +4,7 @@
 
 canonicalName: "OSSP License"
 category: "OSSP License"
-shortName: "OSSP"
+spdxIdentifier: "OSSP"
 
 alternativeNames:
   - "OSSP License"

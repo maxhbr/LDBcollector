@@ -5,6 +5,7 @@
 canonicalName: "Inno Setup License"
 category: "Inno Setup License"
 shortName: "Inno-Setup"
+spdxIdentifier: "InnoSetup"
 
 alternativeNames:
   - "Inno Setup License"

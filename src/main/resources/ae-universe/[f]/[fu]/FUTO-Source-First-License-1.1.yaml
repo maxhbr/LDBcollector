@@ -10,6 +10,7 @@ canonicalNameHistory:
   - "Source First License 1.1"
 
 alternativeNames:
-  - "Source First License 1.1"
   - "http://tools.spdx.org/app/license_requests/433"
 
+otherIds: 
+  - "scancode:futo-sfl-1.1"

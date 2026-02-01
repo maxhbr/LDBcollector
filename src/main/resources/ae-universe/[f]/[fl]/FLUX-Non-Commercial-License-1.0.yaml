@@ -3,15 +3,18 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "FLUX Non-Commercial License 1.0"
-category: "FLUX Non-Commercial License"
+category: "FLUX Non-Commercial"
 shortName: "FLUX-1-NC"
 
 canonicalNameHistory:
   - "FLUX.1 [dev] Non-Commercial License"
 
 alternativeNames:
-  - "FLUX.1 [dev] Non-Commercial License"
-  - "FLUX Non-Commercial License 1.0"
+  - "Black Forest Labs FLUX 1.0"
+  - "FLUX.1 [dev] Non-Commercial License v1.0"
+  - "FLUX.1 NonCommercial License v1.0"
+  - "FLUX.1 Non-Commercial License v1.0"
+  - "FLUX.1 Non-Commercial v1.0"
 
 otherIds: 
   - "scancode:flux-1-nc"

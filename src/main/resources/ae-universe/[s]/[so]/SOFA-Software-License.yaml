@@ -4,7 +4,7 @@
 
 canonicalName: "SOFA Software License"
 category: "SOFA Software License"
-shortName: "SOFA"
+spdxIdentifier: "SOFA"
 
 alternativeNames:
   - "SOFA Software License"

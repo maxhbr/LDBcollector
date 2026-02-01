@@ -6,6 +6,9 @@ canonicalName: "DocBook Stylesheet License"
 category: "DocBook Stylesheet"
 spdxIdentifier: "DocBook-Stylesheet"
 
+canonicalNameHistory:
+  - "Docbook Stylesheet License"
+
 alternativeNames:
   - "DocBook Stylesheet License"
 

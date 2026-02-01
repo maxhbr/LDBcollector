@@ -5,6 +5,7 @@
 canonicalName: "Permission Terms (variant 061)"
 category: "Permission"
 shortName: "PT-Var061"
+spdxIdentifier: "HPND-sell-variant-critical-systems"
 
 canonicalNameHistory:
   - "Permission Terms Var061"

@@ -5,6 +5,7 @@
 canonicalName: "WWL License"
 category: "WWL License"
 shortName: "WWL"
+spdxIdentifier: "wwl"
 
 alternativeNames:
   - "WWL License"

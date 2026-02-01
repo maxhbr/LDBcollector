@@ -4,7 +4,8 @@
 
 canonicalName: "Generic XTS License"
 category: "Generic XTS License"
-shortName: "generic-xts-license"
+shortName: "Generic-XTS"
+spdxIdentifier: "generic-xts"
 
 alternativeNames:
   - "Generic XTS License"

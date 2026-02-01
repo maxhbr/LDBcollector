@@ -5,6 +5,7 @@
 canonicalName: "Apache Patent Provision Exception"
 category: "Apache Patent Provision Exception"
 shortName: "Apache-Patent-Exception"
+spdxIdentifier: "mxml-exception"
 
 type: "exception"
 

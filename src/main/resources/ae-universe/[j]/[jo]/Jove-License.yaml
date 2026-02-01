@@ -2,9 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "Jove License"
-category: "Jove License"
-shortName: "jove"
+canonicalName: "JOVE License"
+category: "JOVE License"
+shortName: "JOVE"
+spdxIdentifier: "jove"
+
+canonicalNameHistory:
+  - "Jove License"
 
 alternativeNames:
   - "Jove License"

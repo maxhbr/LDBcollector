@@ -4,7 +4,7 @@
 
 canonicalName: "UnRAR License"
 category: "UnRAR License"
-shortName: "UnRAR"
+spdxIdentifier: "UnRAR"
 
 canonicalNameHistory:
   - "UnRar License"

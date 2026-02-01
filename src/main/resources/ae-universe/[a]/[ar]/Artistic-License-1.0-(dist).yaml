@@ -5,6 +5,7 @@
 canonicalName: "Artistic License 1.0 (dist)"
 category: "Artistic dist License"
 shortName: "artistic-dist-1.0"
+spdxIdentifier: "Artistic-dist"
 
 alternativeNames:
   - "Artistic License 1.0 (dist)"
