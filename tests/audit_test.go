@@ -14,6 +14,7 @@ import (
 )
 
 func TestGetAuditsAndChangelog(t *testing.T) {
+	loginAs(t, "admin")
 	// make sure we have atleast one changelog
 	license := models.LicenseCreateDTO{
 		Shortname: "MIT3",
@@ -45,7 +46,7 @@ func TestGetAuditsAndChangelog(t *testing.T) {
 	})
 
 	t.Run("getSingleAudit", func(t *testing.T) {
-		w := makeRequest("GET", "/audits/"+audit.Id.String(), nil, false)
+		w := makeRequest("GET", "/audits/"+audit.Id.String(), nil, true)
 		assert.Equal(t, http.StatusOK, w.Code)
 		var resp models.AuditResponse
 		err := json.Unmarshal(w.Body.Bytes(), &resp)
@@ -56,12 +57,12 @@ func TestGetAuditsAndChangelog(t *testing.T) {
 	})
 
 	t.Run("getSingleAuditInvalidID", func(t *testing.T) {
-		w := makeRequest("GET", "/audits/8484848", nil, false)
+		w := makeRequest("GET", "/audits/8484848", nil, true)
 		assert.Equal(t, http.StatusBadRequest, w.Code)
 	})
 
 	t.Run("getSingleAuditNotFound", func(t *testing.T) {
-		w := makeRequest("GET", "/audits/"+uuid.New().String(), nil, false)
+		w := makeRequest("GET", "/audits/"+uuid.New().String(), nil, true)
 		assert.Equal(t, http.StatusNotFound, w.Code)
 	})
 

@@ -71,6 +71,7 @@ type User struct {
 	UserLevel    *string   `json:"user_level" gorm:"column:user_level" example:"USER"`
 	UserPassword *string   `json:"-" gorm:"column:user_password"`
 	Active       *bool     `json:"-" gorm:"column:active;default:true"`
+	Subscribed   *bool     `json:"subscribed" gorm:"column:subscribed;default:false"`
 }
 
 func (User) TableName() string {
@@ -129,6 +130,7 @@ type UserCreate struct {
 	UserLevel    *string   `json:"user_level" validate:"required,oneof=USER ADMIN" example:"ADMIN"`
 	UserPassword *string   `json:"user_password" example:"fossy"`
 	Active       *bool     `json:"-"`
+	Subscribed   *bool     `json:"-"`
 }
 
 type UserUpdate struct {
@@ -139,6 +141,7 @@ type UserUpdate struct {
 	UserLevel    *string   `json:"user_level" validate:"omitempty,oneof=USER ADMIN" example:"ADMIN"`
 	UserPassword *string   `json:"user_password"`
 	Active       *bool     `json:"active"`
+	Subscribed   *bool     `json:"-"`
 }
 
 type ProfileUpdate struct {
@@ -149,6 +152,7 @@ type ProfileUpdate struct {
 	UserLevel    *string   `json:"-"`
 	UserPassword *string   `json:"user_password"`
 	Active       *bool     `json:"-"`
+	Subscribed   *bool     `json:"subscribed" example:"false"`
 }
 
 type UserLogin struct {

@@ -90,6 +90,111 @@ func TestCreateUser(t *testing.T) {
 	})
 }
 
+// TestProfileUpdate tests updating user profile fields.
+func TestProfileUpdate(t *testing.T) {
+	loginAs(t, "admin")
+	t.Run("Success", func(t *testing.T) {
+		update := models.ProfileUpdate{
+			DisplayName:  ptr("new-display"),
+			UserEmail:    ptr("new-email@example.com"),
+			UserPassword: ptr("new-password-123"),
+		}
+
+		w := makeRequest("PATCH", "/users", update, true)
+		assert.Equal(t, http.StatusOK, w.Code)
+		loginPayload := models.UserLogin{
+			Username:     "fossy_admin",
+			Userpassword: "new-password-123",
+		}
+		w2 := makeRequest("POST", "/login", loginPayload, false)
+		if w2.Code != http.StatusOK {
+			t.Fatalf("Login with new password failed: status %d, body: %s", w2.Code, w2.Body.String())
+		}
+		// revert password to original
+		revert := models.ProfileUpdate{
+			UserPassword: ptr("fossy"),
+		}
+		w3 := makeRequest("PATCH", "/users", revert, true)
+		assert.Equal(t, http.StatusOK, w3.Code)
+	})
+	t.Run("invalidEmailFormat", func(t *testing.T) {
+		update := models.ProfileUpdate{
+			UserEmail: ptr("invalid-email"),
+		}
+		w := makeRequest("PATCH", "/users", update, true)
+		assert.Equal(t, http.StatusBadRequest, w.Code)
+	})
+	t.Run("emptyBody", func(t *testing.T) {
+		update := models.ProfileUpdate{}
+		w := makeRequest("PATCH", "/users", update, true)
+		assert.Equal(t, http.StatusOK, w.Code)
+	})
+
+	t.Run("unauthorized", func(t *testing.T) {
+		update := models.ProfileUpdate{
+			DisplayName: ptr("hacker"),
+		}
+		w := makeRequest("PATCH", "/users", update, false)
+		assert.Equal(t, http.StatusUnauthorized, w.Code)
+	})
+
+	t.Run("malformedJSON", func(t *testing.T) {
+		body := `{"display_name": "abc"`
+		w := makeRequest("PATCH", "/users", body, true)
+		assert.Equal(t, http.StatusBadRequest, w.Code)
+	})
+
+	t.Run("toggleSubscribed", func(t *testing.T) {
+
+		updateSub := models.ProfileUpdate{
+			Subscribed: ptr(true),
+		}
+
+		w := makeRequest("PATCH", "/users", updateSub, true)
+
+		assert.Equal(t, http.StatusOK, w.Code)
+
+		var res models.UserResponse
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Fatalf("Error unmarshalling JSON: %v", err)
+		}
+		assert.True(t, *res.Data[0].Subscribed)
+
+		updateUnsub := models.ProfileUpdate{
+			Subscribed: ptr(false),
+		}
+
+		w2 := makeRequest("PATCH", "/users", updateUnsub, true)
+		assert.Equal(t, http.StatusOK, w2.Code)
+
+		var res2 models.UserResponse
+		if err := json.Unmarshal(w2.Body.Bytes(), &res2); err != nil {
+			t.Fatalf("Error unmarshalling JSON: %v", err)
+		}
+		assert.False(t, *res2.Data[0].Subscribed)
+	})
+	t.Run("toggleSubscribedIsIdempotent", func(t *testing.T) {
+		update := models.ProfileUpdate{
+			Subscribed: ptr(true),
+		}
+		// First update
+		_ = makeRequest("PATCH", "/users", update, true)
+
+		// Second update
+		w := makeRequest("PATCH", "/users", update, true)
+		assert.Equal(t, http.StatusOK, w.Code)
+
+		var res models.UserResponse
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Fatalf("Error unmarshalling JSON: %v", err)
+		}
+		// Verify that the value in the response matches the value in the payload
+		assert.Equal(t, *update.Subscribed, *res.Data[0].Subscribed)
+	})
+}
+
+// Auth Utility Functions
+
 // loginAs logs in as the given user type ("superadmin" or "admin") and sets AuthToken.
 func loginAs(t *testing.T, userType string) {
 	var username string
