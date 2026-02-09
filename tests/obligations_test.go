@@ -6,7 +6,9 @@ package test
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
+	"reflect"
 	"testing"
 
 	"github.com/fossology/LicenseDb/pkg/models"
@@ -25,6 +27,9 @@ func TestCreateObligation(t *testing.T) {
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
 			Category:       ptr("GENERAL"),
+			ExternalRef: models.ObligationSchemaExtension{
+				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
+			},
 		}
 
 		assertObligationCreated(t, dto)
@@ -50,6 +55,9 @@ func TestCreateObligation(t *testing.T) {
 			TextUpdatable:  ptr(true),
 			LicenseIds:     []uuid.UUID{res.Data[0].Id},
 			Category:       ptr("DISTRIBUTION"),
+			ExternalRef: models.ObligationSchemaExtension{
+				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
+			},
 		}
 
 		assertObligationCreated(t, dto)
@@ -112,6 +120,9 @@ func TestUpdateObligation(t *testing.T) {
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
 			Category:       ptr("GENERAL"),
+			ExternalRef: models.ObligationSchemaExtension{
+				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
+			},
 		}
 		id = assertObligationCreated(t, dto)
 	})
@@ -125,6 +136,9 @@ func TestUpdateObligation(t *testing.T) {
 			Active:         ptr(false),
 			TextUpdatable:  ptr(false),
 			Category:       ptr("GENERAL"),
+			ExternalRef: map[string]interface{}{
+				"obligation_explanation": ptr("over-written: this is a test explaination to test the external ref functionality"),
+			},
 		}
 
 		assertObligationUpdated(t, id, updateDTO)
@@ -263,6 +277,33 @@ func assertObligationCreated(t *testing.T, dto models.ObligationCreateDTO) uuid.
 	assertField("TextUpdatable", *dto.TextUpdatable, ob.TextUpdatable)
 	assertField("Licenses count", len(dto.LicenseIds), len(ob.LicenseIds))
 
+	dtoExternalRefVal := reflect.ValueOf(dto.ExternalRef)
+	typesOf := dtoExternalRefVal.Type()
+	obExternalRefVal := reflect.ValueOf(ob.ExternalRef)
+	for i := 0; i < dtoExternalRefVal.NumField(); i++ {
+		fieldName := typesOf.Field(i).Name
+		switch typesOf.Field(i).Type.String() {
+		case "*boolean":
+			dtoFieldPtr, _ := dtoExternalRefVal.Field(i).Interface().(*bool)
+			obFieldPtr, _ := obExternalRefVal.Field(i).Interface().(*bool)
+			if dtoFieldPtr != nil {
+				assertField(fmt.Sprintf("ExternalRef.%s", fieldName), *dtoFieldPtr, *obFieldPtr)
+			}
+		case "*string":
+			dtoFieldPtr, _ := dtoExternalRefVal.Field(i).Interface().(*string)
+			obFieldPtr, _ := obExternalRefVal.Field(i).Interface().(*string)
+			if dtoFieldPtr != nil {
+				assertField(fmt.Sprintf("ExternalRef.%s", fieldName), *dtoFieldPtr, *obFieldPtr)
+			}
+		case "*int":
+			dtoFieldPtr, _ := dtoExternalRefVal.Field(i).Interface().(*int)
+			obFieldPtr, _ := obExternalRefVal.Field(i).Interface().(*int)
+			if dtoFieldPtr != nil {
+				assertField(fmt.Sprintf("ExternalRef.%s", fieldName), *dtoFieldPtr, *obFieldPtr)
+			}
+		}
+	}
+
 	return ob.Id
 }
 func assertObligationUpdated(t *testing.T, id uuid.UUID, dto models.ObligationUpdateDTO) {
@@ -314,5 +355,47 @@ func assertObligationUpdated(t *testing.T, id uuid.UUID, dto models.ObligationUp
 	}
 	if dto.TextUpdatable != nil {
 		assertField("TextUpdatable", *dto.TextUpdatable, ob.TextUpdatable)
+	}
+
+	mapValue := reflect.ValueOf(dto.ExternalRef)
+	keys := mapValue.MapKeys()
+
+	obExternalRefVal := reflect.ValueOf(ob.ExternalRef)
+	typesOf := obExternalRefVal.Type()
+
+	for _, key := range keys {
+		for i := 0; i < obExternalRefVal.NumField(); i++ {
+			fieldName := typesOf.Field(i).Name
+			jsonTag := typesOf.Field(i).Tag.Get("json")
+			if jsonTag != key.Interface().(string) {
+				continue
+			}
+			switch typesOf.Field(i).Type.String() {
+			case "*boolean":
+				obFieldPtr, _ := obExternalRefVal.Field(i).Interface().(*bool)
+				value := mapValue.MapIndex(key).Interface().(*bool)
+				if value == nil {
+					assertField(fmt.Sprintf("ExternalRef.%s", fieldName), nil, obFieldPtr)
+				} else {
+					assertField(fmt.Sprintf("ExternalRef.%s", fieldName), *value, *obFieldPtr)
+				}
+			case "*string":
+				obFieldPtr, _ := obExternalRefVal.Field(i).Interface().(*string)
+				value := mapValue.MapIndex(key).Interface().(*string)
+				if value == nil {
+					assertField(fmt.Sprintf("ExternalRef.%s", fieldName), nil, obFieldPtr)
+				} else {
+					assertField(fmt.Sprintf("ExternalRef.%s", fieldName), *value, *obFieldPtr)
+				}
+			case "*int":
+				obFieldPtr, _ := obExternalRefVal.Field(i).Interface().(*int)
+				value := mapValue.MapIndex(key).Interface().(*int)
+				if value == nil {
+					assertField(fmt.Sprintf("ExternalRef.%s", fieldName), nil, obFieldPtr)
+				} else {
+					assertField(fmt.Sprintf("ExternalRef.%s", fieldName), *value, *obFieldPtr)
+				}
+			}
+		}
 	}
 }

@@ -36,15 +36,20 @@ type ExternalRefFields struct {
 	Fields []ExternalRefFieldMetaData `yaml:"fields"`
 }
 
+type ExternalRefYAML struct {
+	License    ExternalRefFields `yaml:"license"`
+	Obligation ExternalRefFields `yaml:"obligation"`
+}
+
 func main() {
-	externalRefFields := ExternalRefFields{}
+	externalRefYAML := ExternalRefYAML{}
 
 	fieldsMetadata, err := os.ReadFile(PATH_EXTERNAL_REF_CONFIG_FILE)
 	if err != nil {
 		log.Fatalf("Failed to instantiate json schema for external ref in license: %v", err)
 	}
 
-	err = yaml.Unmarshal(fieldsMetadata, &externalRefFields)
+	err = yaml.Unmarshal(fieldsMetadata, &externalRefYAML)
 	if err != nil {
 		log.Fatalf("Failed to instantiate json schema for external ref in license: %v", err)
 	}
@@ -56,9 +61,9 @@ func main() {
 
 	// REUSE-IgnoreStart
 
-	var fields []jen.Code
+	var licenseFields, obligationFields []jen.Code
 
-	for _, f := range externalRefFields.Fields {
+	for _, f := range externalRefYAML.License.Fields {
 		field := jen.Id(f.StructFieldName).Op("*")
 		if f.StructFieldName == "" {
 			err = errors.New("field struct_field_name is missing in external_ref_fields.yaml")
@@ -77,11 +82,35 @@ func main() {
 			log.Fatalf("Failed to instantiate json schema for external ref in license: %v", err)
 			return
 		}
-		field = field.Tag(map[string]string{"json": fmt.Sprintf("%s,omitempty", f.Name), "swaggerignore": "true"})
-		fields = append(fields, field)
+		field = field.Tag(map[string]string{"json": fmt.Sprintf("%s,omitempty", f.Name)})
+		licenseFields = append(licenseFields, field)
 	}
 
-	f.Type().Id("LicenseDBSchemaExtension").Struct(fields...)
-	f.Save(PATH_EXTERNAL_REF_STRUCT_FILE)
+	f.Type().Id("LicenseDBSchemaExtension").Struct(licenseFields...)
 
+	for _, f := range externalRefYAML.Obligation.Fields {
+		field := jen.Id(f.StructFieldName).Op("*")
+		if f.StructFieldName == "" {
+			err = errors.New("field struct_field_name is missing in external_ref_fields.yaml")
+		}
+		switch f.Type {
+		case "boolean":
+			field = field.Bool()
+		case "string":
+			field = field.String()
+		case "int":
+			field = field.Int64()
+		default:
+			err = fmt.Errorf("type %s in external_ref_fields.yaml is not supported", f.Type)
+		}
+		if err != nil {
+			log.Fatalf("Failed to instantiate json schema for external ref in license: %v", err)
+			return
+		}
+		field = field.Tag(map[string]string{"json": fmt.Sprintf("%s,omitempty", f.Name)})
+		obligationFields = append(obligationFields, field)
+	}
+
+	f.Type().Id("ObligationSchemaExtension").Struct(obligationFields...)
+	f.Save(PATH_EXTERNAL_REF_STRUCT_FILE)
 }

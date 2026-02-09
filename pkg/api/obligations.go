@@ -13,6 +13,7 @@ import (
 	"fmt"
 	"net/http"
 	"path/filepath"
+	"reflect"
 	"strconv"
 	"strings"
 	"time"
@@ -332,7 +333,12 @@ func UpdateObligation(c *gin.Context) {
 	var combinedMapErrors string
 
 	if err := db.DB.Transaction(func(tx *gorm.DB) error {
-		if err := tx.Omit("Licenses", "Topic").Updates(&newObligation).Error; err != nil {
+		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
+		if err := tx.Model(&models.Obligation{}).Where(models.Obligation{Id: oldObligation.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", updates.ExternalRef)).Error; err != nil {
+			return err
+		}
+
+		if err := tx.Omit("ExternalRef", "Licenses", "Topic").Updates(&newObligation).Error; err != nil {
 			return err
 		}
 
@@ -795,6 +801,32 @@ func addChangelogsForObligation(tx *gorm.DB, userId uuid.UUID,
 	utils.AddChangelog("Active", oldObligation.Active, newObligation.Active, &changes)
 
 	utils.AddChangelog("Text Updatable", oldObligation.TextUpdatable, newObligation.TextUpdatable, &changes)
+
+	oldObligationExternalRef := oldObligation.ExternalRef.Data()
+	oldExternalRefVal := reflect.ValueOf(oldObligationExternalRef)
+	typesOf := oldExternalRefVal.Type()
+
+	newObligationExternalRef := newObligation.ExternalRef.Data()
+	newExternalRefVal := reflect.ValueOf(newObligationExternalRef)
+
+	for i := 0; i < oldExternalRefVal.NumField(); i++ {
+		fieldName := typesOf.Field(i).Name
+
+		switch typesOf.Field(i).Type.String() {
+		case "*boolean":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*bool)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*bool)
+			utils.AddChangelog(fmt.Sprintf("External Reference %s", fieldName), oldFieldPtr, newFieldPtr, &changes)
+		case "*string":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*string)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*string)
+			utils.AddChangelog(fmt.Sprintf("External Reference %s", fieldName), oldFieldPtr, newFieldPtr, &changes)
+		case "*int":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*int)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*int)
+			utils.AddChangelog(fmt.Sprintf("External Reference %s", fieldName), oldFieldPtr, newFieldPtr, &changes)
+		}
+	}
 
 	if len(changes) != 0 {
 		audit := models.Audit{

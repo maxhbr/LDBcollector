@@ -368,7 +368,3 @@ type LicenseResponse struct {
 	Data   []LicenseResponseDTO `json:"data"`
 	Meta   *PaginationMeta      `json:"paginationmeta"`
 }
-
-type UpdateExternalRefsJSONPayload struct {
-	ExternalRef map[string]interface{} `json:"external_ref"`
-}

@@ -2493,6 +2493,9 @@ const docTemplate = `{
         "datatypes.JSONType-models_LicenseDBSchemaExtension": {
             "type": "object"
         },
+        "datatypes.JSONType-models_ObligationSchemaExtension": {
+            "type": "object"
+        },
         "models.APICollection": {
             "type": "object",
             "properties": {
@@ -2848,7 +2851,15 @@ const docTemplate = `{
             }
         },
         "models.LicenseDBSchemaExtension": {
-            "type": "object"
+            "type": "object",
+            "properties": {
+                "license_explanation": {
+                    "type": "string"
+                },
+                "license_suffix": {
+                    "type": "string"
+                }
+            }
         },
         "models.LicenseError": {
             "type": "object",
@@ -3129,6 +3140,9 @@ const docTemplate = `{
                 "comment": {
                     "type": "string"
                 },
+                "externalRef": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_ObligationSchemaExtension"
+                },
                 "id": {
                     "type": "string"
                 },
@@ -3216,6 +3230,9 @@ const docTemplate = `{
                 },
                 "comment": {
                     "type": "string"
+                },
+                "external_ref": {
+                    "$ref": "#/definitions/models.ObligationSchemaExtension"
                 },
                 "license_ids": {
                     "type": "array",
@@ -3413,6 +3430,9 @@ const docTemplate = `{
                 "comment": {
                     "type": "string"
                 },
+                "external_ref": {
+                    "$ref": "#/definitions/models.ObligationSchemaExtension"
+                },
                 "id": {
                     "type": "string",
                     "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
@@ -3442,6 +3462,17 @@ const docTemplate = `{
                 "type": {
                     "type": "string",
                     "example": "RISK"
+                }
+            }
+        },
+        "models.ObligationSchemaExtension": {
+            "type": "object",
+            "properties": {
+                "obligation_explanation": {
+                    "type": "string"
+                },
+                "obligation_suffix": {
+                    "type": "string"
                 }
             }
         },
@@ -3494,6 +3525,10 @@ const docTemplate = `{
                 },
                 "comment": {
                     "type": "string"
+                },
+                "external_ref": {
+                    "type": "object",
+                    "additionalProperties": true
                 },
                 "license_ids": {
                     "type": "array",
