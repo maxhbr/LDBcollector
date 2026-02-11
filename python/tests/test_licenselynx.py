@@ -8,6 +8,7 @@ from unittest.mock import mock_open, patch, MagicMock
 from licenselynx.licenselynx import LicenseLynx
 from licenselynx.license_object import LicenseObject
 from licenselynx.license_map_singleton import _LicenseMapSingleton
+from licenselynx.license_source import LicenseSource
 
 LICENSE_STRING_STABLE = "MIT License"
 LICENSE_STRING_RISKY = "GPL License"
@@ -17,8 +18,6 @@ LICENSE_STRING_SCANCODE = "Some License"
 CANONICAL_ID_SCANCODE = "SOME"
 CANONICAL_ID_STABLE = "MIT"
 CANONICAL_ID_RISKY = "GPL"
-SPDX_SRC = "spdx"
-SCANCODE_SRC = "scancode-licensedb"
 
 
 @pytest.fixture(autouse=True)
@@ -30,12 +29,12 @@ def reset_singleton(monkeypatch):
 @pytest.fixture(autouse=True)
 def mock_data():
     """Mocks the merged_data.json file for testing."""
-    mock_data = {"stableMap": {LICENSE_STRING_STABLE: {"id": CANONICAL_ID_STABLE, "src": SPDX_SRC},
+    mock_data = {"stableMap": {LICENSE_STRING_STABLE: {"id": CANONICAL_ID_STABLE, "src": LicenseSource.SPDX.value},
                                LICENSE_STRING_WITH_NORMALIZED_QUOTES: {"id": CANONICAL_ID_STABLE,
-                                                                       "src": SPDX_SRC},
-                               LICENSE_STRING_SCANCODE: {"id": CANONICAL_ID_STABLE, "src": SCANCODE_SRC},
+                                                                       "src": LicenseSource.SPDX.value},
+                               LICENSE_STRING_SCANCODE: {"id": CANONICAL_ID_STABLE, "src": LicenseSource.SCANCODE_LICENSEDB.value},
                                },
-                 "riskyMap": {LICENSE_STRING_RISKY: {"id": CANONICAL_ID_RISKY, "src": SPDX_SRC}}}
+                 "riskyMap": {LICENSE_STRING_RISKY: {"id": CANONICAL_ID_RISKY, "src": LicenseSource.CUSTOM.value}}}
     mock_file = MagicMock()
     mock_file.__enter__.return_value = mock_open(read_data=json.dumps(mock_data)).return_value
 
@@ -51,10 +50,10 @@ def test_license_map_singleton(mock_data):
 
     assert instance == instance2
     assert instance.merged_data.risky_map.get(LICENSE_STRING_RISKY).id == CANONICAL_ID_RISKY
-    assert instance.merged_data.risky_map.get(LICENSE_STRING_RISKY).src == SPDX_SRC
+    assert instance.merged_data.risky_map.get(LICENSE_STRING_RISKY).src == LicenseSource.CUSTOM
 
     assert instance.merged_data.stable_map.get(LICENSE_STRING_STABLE).id == CANONICAL_ID_STABLE
-    assert instance.merged_data.stable_map.get(LICENSE_STRING_STABLE).src == SPDX_SRC
+    assert instance.merged_data.stable_map.get(LICENSE_STRING_STABLE).src == LicenseSource.SPDX
 
 
 def test_map_with_existing_license(mock_data):
@@ -62,7 +61,7 @@ def test_map_with_existing_license(mock_data):
 
     assert isinstance(result, LicenseObject)
     assert result.id == CANONICAL_ID_STABLE
-    assert result.src == SPDX_SRC
+    assert result.src == LicenseSource.SPDX
 
 
 def test_map_with_existing_risky_license(mock_data):
@@ -70,7 +69,7 @@ def test_map_with_existing_risky_license(mock_data):
 
     assert isinstance(result, LicenseObject)
     assert result.id == CANONICAL_ID_RISKY
-    assert result.src == SPDX_SRC
+    assert result.src == LicenseSource.CUSTOM
 
 
 def test_map_with_quotes_license(mock_data):
@@ -78,7 +77,7 @@ def test_map_with_quotes_license(mock_data):
 
     assert isinstance(result, LicenseObject)
     assert result.id == CANONICAL_ID_STABLE
-    assert result.src == SPDX_SRC
+    assert result.src == LicenseSource.SPDX
 
 
 def test_map_with_non_existing_license(mock_data):
@@ -93,10 +92,18 @@ def test_is_spdx_identifier(mock_data):
 
     assert result.is_spdx_identifier() is True
 
+
 def test_is_scancode_licensedb_identifier(mock_data):
     result = LicenseLynx.map(LICENSE_STRING_SCANCODE)
 
     assert result.is_scancode_licensedb_identifier() is True
+
+
+def test_is_custom_identifier(mock_data):
+    result = LicenseLynx.map(LICENSE_STRING_RISKY, risky=True)
+
+    assert result.is_custom_identifier() is True
+
 
 def test_map_with_file_not_found_error():
     with patch('importlib.resources.files', side_effect=FileNotFoundError):
