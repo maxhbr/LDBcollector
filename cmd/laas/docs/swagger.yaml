@@ -1584,7 +1584,7 @@ paths:
       summary: Get maps for an obligation
       tags:
       - Obligations
-  /obligation_maps/obligations/{id}/license:
+  /obligation_maps/obligation/{id}/license:
     patch:
       consumes:
       - application/json
