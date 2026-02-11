@@ -9,28 +9,31 @@
 package models
 
 import (
+	"encoding/json"
 	"errors"
 	"fmt"
 	"strings"
 
 	"github.com/google/uuid"
+	"gorm.io/datatypes"
 	"gorm.io/gorm"
 )
 
 // Obligation represents an obligation record in the database.
 type Obligation struct {
-	Id                         uuid.UUID                 `gorm:"type:uuid;primary_key;column:id;default:uuid_generate_v4()"`
-	Topic                      *string                   `gorm:"column:topic"`
-	Text                       *string                   `gorm:"column:text"`
-	Comment                    *string                   `gorm:"column:comment;default:''"`
-	Active                     *bool                     `gorm:"column:active;default:true"`
-	TextUpdatable              *bool                     `gorm:"column:text_updatable;default:false"`
-	ObligationClassificationId uuid.UUID                 `gorm:"type:uuid;column:obligation_classification_id"`
-	ObligationTypeId           uuid.UUID                 `gorm:"type:uuid;column:obligation_type_id"`
-	Licenses                   []LicenseDB               `gorm:"many2many:obligation_licenses; joinForeignKey:obligation_id;joinReferences:license_db_id"`
-	Type                       *ObligationType           `gorm:"foreignKey:ObligationTypeId;references:Id"`
-	Classification             *ObligationClassification `gorm:"foreignKey:ObligationClassificationId;references:Id"`
-	Category                   *string                   `json:"category" gorm:"default:GENERAL" enums:"DISTRIBUTION,PATENT,INTERNAL,CONTRACTUAL,EXPORT_CONTROL,GENERAL" example:"DISTRIBUTION"`
+	Id                         uuid.UUID                                     `gorm:"type:uuid;primary_key;column:id;default:uuid_generate_v4()"`
+	Topic                      *string                                       `gorm:"column:topic"`
+	Text                       *string                                       `gorm:"column:text"`
+	Comment                    *string                                       `gorm:"column:comment;default:''"`
+	Active                     *bool                                         `gorm:"column:active;default:true"`
+	TextUpdatable              *bool                                         `gorm:"column:text_updatable;default:false"`
+	ObligationClassificationId uuid.UUID                                     `gorm:"type:uuid;column:obligation_classification_id"`
+	ObligationTypeId           uuid.UUID                                     `gorm:"type:uuid;column:obligation_type_id"`
+	Licenses                   []LicenseDB                                   `gorm:"many2many:obligation_licenses; joinForeignKey:obligation_id;joinReferences:license_db_id"`
+	Type                       *ObligationType                               `gorm:"foreignKey:ObligationTypeId;references:Id"`
+	Classification             *ObligationClassification                     `gorm:"foreignKey:ObligationClassificationId;references:Id"`
+	Category                   *string                                       `json:"category" gorm:"default:GENERAL" enums:"DISTRIBUTION,PATENT,INTERNAL,CONTRACTUAL,EXPORT_CONTROL,GENERAL" example:"DISTRIBUTION"`
+	ExternalRef                datatypes.JSONType[ObligationSchemaExtension] `gorm:"column:external_ref"`
 }
 
 func (Obligation) TableName() string {
@@ -183,6 +186,7 @@ func (o *Obligation) ConvertToObligationResponseDTO() ObligationResponseDTO {
 		Type:           o.Type.Type,
 		Classification: o.Classification.Classification,
 		Comment:        o.Comment,
+		ExternalRef:    o.ExternalRef.Data(),
 	}
 
 	if o.Category != nil && *o.Category != "" {
@@ -201,29 +205,31 @@ func (o *Obligation) ConvertToObligationResponseDTO() ObligationResponseDTO {
 
 // ObligationResponseDTO represents an obligation json object.
 type ObligationResponseDTO struct {
-	Id             uuid.UUID   `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
-	Topic          string      `json:"topic" example:"copyleft" validate:"required"`
-	Type           string      `json:"type" example:"RISK" validate:"required"`
-	Text           string      `json:"text" example:"Source code be made available when distributing the software." validate:"required"`
-	Classification string      `json:"classification" example:"GREEN" validate:"required"`
-	Comment        *string     `json:"comment"`
-	Active         bool        `json:"active"`
-	TextUpdatable  bool        `json:"text_updatable" example:"true"`
-	LicenseIds     []uuid.UUID `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
-	Category       *string     `json:"category" example:"DISTRIBUTION" validate:"required"`
+	Id             uuid.UUID                 `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
+	Topic          string                    `json:"topic" example:"copyleft" validate:"required"`
+	Type           string                    `json:"type" example:"RISK" validate:"required"`
+	Text           string                    `json:"text" example:"Source code be made available when distributing the software." validate:"required"`
+	Classification string                    `json:"classification" example:"GREEN" validate:"required"`
+	Comment        *string                   `json:"comment"`
+	Active         bool                      `json:"active"`
+	TextUpdatable  bool                      `json:"text_updatable" example:"true"`
+	LicenseIds     []uuid.UUID               `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
+	Category       *string                   `json:"category" example:"DISTRIBUTION" validate:"required"`
+	ExternalRef    ObligationSchemaExtension `json:"external_ref"`
 }
 
 // ObligationUpdateDTO represents an obligation json object.
 type ObligationUpdateDTO struct {
-	Topic          *string      `json:"topic" example:"copyleft"`
-	Type           *string      `json:"type" example:"RISK"`
-	Text           *string      `json:"text" example:"Source code be made available when distributing the software."`
-	Classification *string      `json:"classification" example:"GREEN"`
-	Comment        *string      `json:"comment"`
-	Active         *bool        `json:"active"`
-	LicenseIds     *[]uuid.UUID `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
-	TextUpdatable  *bool        `json:"text_updatable" example:"true"`
-	Category       *string      `json:"category" example:"DISTRIBUTION"`
+	Topic          *string                `json:"topic" example:"copyleft"`
+	Type           *string                `json:"type" example:"RISK"`
+	Text           *string                `json:"text" example:"Source code be made available when distributing the software."`
+	Classification *string                `json:"classification" example:"GREEN"`
+	Comment        *string                `json:"comment"`
+	Active         *bool                  `json:"active"`
+	LicenseIds     *[]uuid.UUID           `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
+	TextUpdatable  *bool                  `json:"text_updatable" example:"true"`
+	Category       *string                `json:"category" example:"DISTRIBUTION"`
+	ExternalRef    map[string]interface{} `json:"external_ref"`
 }
 
 func (obDto *ObligationUpdateDTO) ConvertToObligation() Obligation {
@@ -247,15 +253,16 @@ func (obDto *ObligationUpdateDTO) ConvertToObligation() Obligation {
 
 // ObligationCreateDTO represents an obligation json object.
 type ObligationCreateDTO struct {
-	Topic          string      `json:"topic" example:"copyleft" validate:"required"`
-	Type           string      `json:"type" example:"RISK" validate:"required"`
-	Text           string      `json:"text" example:"Source code be made available when distributing the software." validate:"required"`
-	Classification string      `json:"classification" example:"GREEN" validate:"required"`
-	Comment        *string     `json:"comment"`
-	Active         *bool       `json:"active"`
-	TextUpdatable  *bool       `json:"text_updatable" example:"true"`
-	LicenseIds     []uuid.UUID `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
-	Category       *string     `json:"category" example:"DISTRIBUTION"`
+	Topic          string                    `json:"topic" example:"copyleft" validate:"required"`
+	Type           string                    `json:"type" example:"RISK" validate:"required"`
+	Text           string                    `json:"text" example:"Source code be made available when distributing the software." validate:"required"`
+	Classification string                    `json:"classification" example:"GREEN" validate:"required"`
+	Comment        *string                   `json:"comment"`
+	Active         *bool                     `json:"active"`
+	TextUpdatable  *bool                     `json:"text_updatable" example:"true"`
+	LicenseIds     []uuid.UUID               `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
+	Category       *string                   `json:"category" example:"DISTRIBUTION"`
+	ExternalRef    ObligationSchemaExtension `json:"external_ref"`
 }
 
 func (dto *ObligationCreateDTO) ConvertToObligation() Obligation {
@@ -276,21 +283,24 @@ func (dto *ObligationCreateDTO) ConvertToObligation() Obligation {
 		Classification: dto.Classification,
 	}
 
+	o.ExternalRef = datatypes.NewJSONType(dto.ExternalRef)
+
 	return o
 }
 
 // ObligationFileDTO represents an obligation json object.
 type ObligationFileDTO struct {
-	Id             *uuid.UUID   `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
-	Topic          *string      `json:"topic" example:"copyleft"`
-	Type           *string      `json:"type" example:"RISK"`
-	Text           *string      `json:"text" example:"Source code be made available when distributing the software."`
-	Classification *string      `json:"classification" example:"GREEN"`
-	Comment        *string      `json:"comment"`
-	Active         *bool        `json:"active"`
-	LicenseIds     *[]uuid.UUID `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
-	TextUpdatable  *bool        `json:"text_updatable" example:"true"`
-	Category       *string      `json:"category" example:"DISTRIBUTION"`
+	Id             *uuid.UUID             `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
+	Topic          *string                `json:"topic" example:"copyleft"`
+	Type           *string                `json:"type" example:"RISK"`
+	Text           *string                `json:"text" example:"Source code be made available when distributing the software."`
+	Classification *string                `json:"classification" example:"GREEN"`
+	Comment        *string                `json:"comment"`
+	Active         *bool                  `json:"active"`
+	LicenseIds     *[]uuid.UUID           `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
+	TextUpdatable  *bool                  `json:"text_updatable" example:"true"`
+	Category       *string                `json:"category" example:"DISTRIBUTION"`
+	ExternalRef    map[string]interface{} `json:"external_ref"`
 }
 
 func (obDto *ObligationFileDTO) ConvertToObligation() Obligation {
@@ -308,6 +318,16 @@ func (obDto *ObligationFileDTO) ConvertToObligation() Obligation {
 	o.Active = obDto.Active
 	o.TextUpdatable = obDto.TextUpdatable
 	o.Category = obDto.Category
+
+	var ext ObligationSchemaExtension
+
+	bytes, _ := json.Marshal(obDto.ExternalRef)
+
+	if err := json.Unmarshal(bytes, &ext); err != nil {
+		panic(err)
+	}
+
+	o.ExternalRef = datatypes.NewJSONType(ext)
 
 	return o
 }

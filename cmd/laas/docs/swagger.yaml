@@ -2,6 +2,8 @@ basePath: /api/v1
 definitions:
   datatypes.JSONType-models_LicenseDBSchemaExtension:
     type: object
+  datatypes.JSONType-models_ObligationSchemaExtension:
+    type: object
   models.APICollection:
     properties:
       authenticated:
@@ -250,6 +252,11 @@ definitions:
         type: string
     type: object
   models.LicenseDBSchemaExtension:
+    properties:
+      license_explanation:
+        type: string
+      license_suffix:
+        type: string
     type: object
   models.LicenseError:
     properties:
@@ -448,6 +455,8 @@ definitions:
         $ref: '#/definitions/models.ObligationClassification'
       comment:
         type: string
+      externalRef:
+        $ref: '#/definitions/datatypes.JSONType-models_ObligationSchemaExtension'
       id:
         type: string
       licenses:
@@ -503,6 +512,8 @@ definitions:
         type: string
       comment:
         type: string
+      external_ref:
+        $ref: '#/definitions/models.ObligationSchemaExtension'
       license_ids:
         example:
         - f81d4fae-7dec-11d0-a765-00a0c91e6bf6
@@ -640,6 +651,8 @@ definitions:
         type: string
       comment:
         type: string
+      external_ref:
+        $ref: '#/definitions/models.ObligationSchemaExtension'
       id:
         example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
         type: string
@@ -669,6 +682,13 @@ definitions:
     - text
     - topic
     - type
+    type: object
+  models.ObligationSchemaExtension:
+    properties:
+      obligation_explanation:
+        type: string
+      obligation_suffix:
+        type: string
     type: object
   models.ObligationType:
     properties:
@@ -702,6 +722,9 @@ definitions:
         type: string
       comment:
         type: string
+      external_ref:
+        additionalProperties: true
+        type: object
       license_ids:
         example:
         - f81d4fae-7dec-11d0-a765-00a0c91e6bf6
