@@ -24,6 +24,8 @@ import java.util.Map;
 @ExtendWith(MockitoExtension.class)
 class LicenseLynxTest
 {
+    private final String CANONICAL_ID_SPDX = "testCanonicalSpdx";
+    private final String CANONICAL_ID_SCANCODE = "testCanonicalScanCode";
 
     /**
      * Tests mapping of a non-existing license name.
@@ -47,18 +49,34 @@ class LicenseLynxTest
     }
 
     @Test
+    @SuppressWarnings("deprecation")
     void testMapCanonicalLicense()
     {
         // Arrange
-        String licenseName = "test-license";
+        String licenseNameSpdx = "test-license";
+        String licenseNameScancode = "test-risky-license";
 
         // Act
-        LicenseObject result = LicenseLynx.map(licenseName);
+        LicenseObject result_spdx = LicenseLynx.map(licenseNameSpdx);
+        LicenseObject result_scancode = LicenseLynx.map(licenseNameScancode, true);
 
         // Assert
-        assert result != null;
-        Assertions.assertEquals("testCanonical", result.getId());
-        Assertions.assertEquals("testSrc", result.getSrc());
+        assert result_spdx != null;
+        assert result_scancode != null;
+        Assertions.assertEquals(CANONICAL_ID_SPDX, result_spdx.getId());
+        Assertions.assertEquals(CANONICAL_ID_SCANCODE, result_scancode.getId());
+
+        Assertions.assertEquals(LicenseSource.Spdx, result_spdx.getLicenseSource());
+        Assertions.assertEquals(LicenseSource.ScancodeLicensedb, result_scancode.getLicenseSource());
+
+        Assertions.assertTrue(result_spdx.isSpdxIdentifier());
+        Assertions.assertFalse(result_spdx.isScanCodeLicenseDbIdentifier());
+
+        Assertions.assertTrue(result_scancode.isScanCodeLicenseDbIdentifier());
+        Assertions.assertFalse(result_scancode.isSpdxIdentifier());
+
+        Assertions.assertEquals(LicenseSource.Spdx.getValue(), result_spdx.getSrc());
+
     }
 
     @Test
@@ -72,8 +90,8 @@ class LicenseLynxTest
 
         // Assert
         assert result != null;
-        Assertions.assertEquals("testCanonical", result.getId());
-        Assertions.assertEquals("testSrc", result.getSrc());
+        Assertions.assertEquals(CANONICAL_ID_SPDX, result.getId());
+        Assertions.assertEquals(LicenseSource.Spdx, result.getLicenseSource());
     }
 
 
@@ -88,8 +106,8 @@ class LicenseLynxTest
 
         // Assert
         assert result != null;
-        Assertions.assertEquals("testCanonical", result.getId());
-        Assertions.assertEquals("testSrc", result.getSrc());
+        Assertions.assertEquals(CANONICAL_ID_SCANCODE, result.getId());
+        Assertions.assertEquals(LicenseSource.ScancodeLicensedb, result.getLicenseSource());
     }
 
 
@@ -116,15 +134,21 @@ class LicenseLynxTest
         Map<String, LicenseObject> testMap = new HashMap<>();
         Map<String, LicenseObject> testRiskyMap = new HashMap<>();
 
-        testMap.put("test", new LicenseObject("TestCanonical", "TestSrc"));
-        testRiskyMap.put("testRisky", new LicenseObject("TestCanonicalRisky", "TestSrcRisky"));
+        testMap.put("test", new LicenseObject(CANONICAL_ID_SPDX, "spdx"));
+        String testCanonicalRisky = "TestCanonicalRisky";
+        testRiskyMap.put("testRisky", new LicenseObject(testCanonicalRisky, LicenseSource.Custom));
 
         LicenseMap licenseMap = new LicenseMap(testMap, testRiskyMap);
         LicenseMapSingleton testInstance = new LicenseMapSingleton(licenseMap);
 
-        Assertions.assertEquals("TestCanonical",
+        Assertions.assertEquals(CANONICAL_ID_SPDX,
             testInstance.getLicenseMap().getCanonicalLicenseMap().get("test").getId());
-        Assertions.assertEquals("TestSrc", testInstance.getLicenseMap().getCanonicalLicenseMap().get("test").getSrc());
+        Assertions.assertEquals(LicenseSource.Spdx,
+                testInstance.getLicenseMap().getCanonicalLicenseMap().get("test").getLicenseSource());
+
+        Assertions.assertEquals(LicenseSource.Custom,
+                testInstance.getLicenseMap().getRiskyLicenseMap().get("testRisky").getLicenseSource());
+        Assertions.assertTrue(testInstance.getLicenseMap().getRiskyLicenseMap().get("testRisky").isCustomSource());
     }
 
 
@@ -187,5 +211,12 @@ class LicenseLynxTest
 
         // Act && Assert
         Assertions.assertThrows(UncheckedIOException.class, loader::loadLicenses);
+    }
+
+    @Test
+    void testIllegalArgument()
+    {
+        // Act && Assert
+        Assertions.assertThrows(IllegalArgumentException.class, () -> LicenseSource.fromValue("non-specified-source"));
     }
 }

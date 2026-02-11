@@ -1,18 +1,18 @@
 {
     "stableMap": {
         "test-license": {
-            "id": "testCanonical",
-            "src": "testSrc"
+            "id": "testCanonicalSpdx",
+            "src": "spdx"
         },
         "'test-license'": {
-            "id": "testCanonical",
-            "src": "testSrc"
+            "id": "testCanonicalSpdx",
+            "src": "spdx"
         }
     },
     "riskyMap": {
         "test-risky-license": {
-            "id": "testCanonical",
-            "src": "testSrc"
+            "id": "testCanonicalScanCode",
+            "src": "scancode-licensedb"
         }
     }
 }

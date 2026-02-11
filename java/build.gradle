@@ -48,7 +48,7 @@ ext {
 }
 
 group = 'org.licenselynx'
-description = 'Deterministically map license strings to its canonical identifier'
+description = 'Deterministically map a license string to its canonical identifier'
 version = project.ext.gitVersion
 
 project.gradle.taskGraph.whenReady { taskGraph ->
@@ -70,8 +70,8 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.16'
 
-    implementation 'org.slf4j:slf4j-api:2.0.16'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.1'
+    implementation 'org.slf4j:slf4j-api:2.0.17'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.21.0'
 
     compileOnly group: 'net.jcip', name: 'jcip-annotations', version: '1.0'
     compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
