@@ -861,9 +861,9 @@ definitions:
       access_token:
         example: your_access_token_here
         type: string
-      expires_in:
-        example: 3600
-        type: integer
+      expires_at:
+        example: "2026-02-10T15:11:14Z"
+        type: string
       refresh_token:
         example: your_refresh_token_here
         type: string
