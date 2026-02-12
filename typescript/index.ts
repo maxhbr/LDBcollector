@@ -6,11 +6,17 @@ import * as mergedData from './resources/merged_data.json';
 
 export interface LicenseObject {
     readonly id: string;
-    readonly src: string;
+    readonly src: LicenseSource;
 }
 
 export interface LicenseMap {
     [licenseName: string]: LicenseObject;
+}
+
+export enum LicenseSource {
+    Spdx = 'spdx',
+    ScancodeLicensedb = 'scancode-licensedb',
+    Custom = 'custom',
 }
 
 interface LicenseRepository {
@@ -47,9 +53,22 @@ export const map = function (licenseName: string, risky: boolean = false) {
             }
         }
 
-        reject(new Error('error: License ' + licenseName + ' not found'));
+        reject(new Error('License ' + licenseName + ' not found.'));
     })
 }
+
+export const isSpdxIdentifier= function (licenseObject: LicenseObject): boolean {
+    return licenseObject.src === LicenseSource.Spdx;
+}
+
+export const isScancodeLicensedbIdentifier= function (licenseObject: LicenseObject): boolean {
+    return licenseObject.src === LicenseSource.ScancodeLicensedb;
+}
+
+export const isCustomIdentifier= function (licenseObject: LicenseObject): boolean {
+    return licenseObject.src === LicenseSource.Custom;
+}
+
 
 // A readonly array of quote characters to be replaced.
 const QUOTE_CHARACTERS: readonly string[] = [

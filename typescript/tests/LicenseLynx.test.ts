@@ -2,7 +2,7 @@
  * SPDX-FileCopyrightText: Copyright 2025 Siemens AG
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {map} from "../index";
+import {isScancodeLicensedbIdentifier, isSpdxIdentifier, isCustomIdentifier, LicenseSource, map} from "../index";
 
 jest.mock('../resources/merged_data.json', () => {
     return require('./resources/merged_data.json');
@@ -31,8 +31,35 @@ describe('LicenseLynx tests', () => {
             expect(licenseObject).not.toBe(null);
             expect(licenseObject!.id).toEqual('0BSD');
             expect(licenseObject!.src).toEqual('spdx');
+            expect(licenseObject!.src).toEqual(LicenseSource.Spdx)
+            expect(isSpdxIdentifier(licenseObject)).toBe(true);
+            expect(isScancodeLicensedbIdentifier(licenseObject)).toBe(false);
         });
     });
+
+    it('should return Scancode LicenseDB data when license exists', async () => {
+        return map("License only in scancode").then(licenseObject => {
+            expect(licenseObject).not.toBe(null);
+            expect(licenseObject!.id).toEqual('only-scancode');
+            expect(licenseObject!.src).toEqual('scancode-licensedb');
+            expect(licenseObject!.src).toEqual(LicenseSource.ScancodeLicensedb)
+            expect(isSpdxIdentifier(licenseObject)).toBe(false);
+            expect(isScancodeLicensedbIdentifier(licenseObject)).toBe(true);
+        });
+    });
+
+    it('should return custom source when license exists', async () => {
+        return map("Custom License").then(licenseObject => {
+            expect(licenseObject).not.toBe(null);
+            expect(licenseObject!.id).toEqual('custom-license');
+            expect(licenseObject!.src).toEqual('custom');
+            expect(licenseObject!.src).toEqual(LicenseSource.Custom)
+            expect(isSpdxIdentifier(licenseObject)).toBe(false);
+            expect(isScancodeLicensedbIdentifier(licenseObject)).toBe(false);
+            expect(isCustomIdentifier(licenseObject)).toBe(true);
+        });
+    });
+
 
     it('should return normalized quotes when license exists', async () => {
         return map("BSD ‚Zero‛ Clause").then(licenseObject => {
@@ -51,8 +78,8 @@ describe('LicenseLynx tests', () => {
     });
 
     it('should return reject error when license not found', async () => {
-        await expect(map('licenseNonExisting')).rejects.toEqual(new Error('error: License licenseNonExisting not found'));
-        return expect(map('licenseNonExisting', true)).rejects.toEqual(new Error('error: License licenseNonExisting not found'));
+        await expect(map('licenseNonExisting')).rejects.toEqual(new Error('License licenseNonExisting not found.'));
+        return expect(map('licenseNonExisting', true)).rejects.toEqual(new Error('License licenseNonExisting not found.'));
 
     });
 
@@ -60,8 +87,8 @@ describe('LicenseLynx tests', () => {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         const input: string = null
-        await expect(map(input)).rejects.toEqual(new Error('error: License null not found'));
-        return expect(map(input, true)).rejects.toEqual(new Error('error: License null not found'));
+        await expect(map(input)).rejects.toEqual(new Error('License null not found.'));
+        return expect(map(input, true)).rejects.toEqual(new Error('License null not found.'));
 
     });
 });
