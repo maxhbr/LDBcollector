@@ -6,15 +6,15 @@ import logging
 import os
 
 from src.update.BaseDataUpdate import BaseDataUpdate
+from src.update.canonical_source import CanonicalSource
 
 
 class SpdxDataUpdate(BaseDataUpdate):
-    def __init__(self, debug=False):
-        super().__init__(src="spdx", log_level=logging.DEBUG)
+    def __init__(self, src: CanonicalSource = CanonicalSource.SPDX, debug=False):
         if debug:
-            super().__init__(src="spdx", log_level=logging.DEBUG)
+            super().__init__(src=src, log_level=logging.DEBUG)
         else:
-            super().__init__(src="spdx", log_level=logging.INFO)
+            super().__init__(src=src, log_level=logging.INFO)
 
     def update_non_spdx_license_file(self, license_id: str, data: dict, old_license_filepath: str, license_name: str) -> None:
         """

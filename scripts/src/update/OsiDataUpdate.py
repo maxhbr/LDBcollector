@@ -4,14 +4,15 @@
 import logging
 import os
 from src.update.BaseDataUpdate import BaseDataUpdate
+from src.update.canonical_source import CanonicalSource
 
 
 class OsiDataUpdate(BaseDataUpdate):
-    def __init__(self, debug=False):
+    def __init__(self, src: CanonicalSource = CanonicalSource.OSI, debug=False):
         if debug:
-            super().__init__(src="osi", log_level=logging.DEBUG)
+            super().__init__(src=src, log_level=logging.DEBUG)
         else:
-            super().__init__(src="osi", log_level=logging.INFO)
+            super().__init__(src=src, log_level=logging.INFO)
 
     @staticmethod
     def get_aliases(entry: dict) -> list[str]:

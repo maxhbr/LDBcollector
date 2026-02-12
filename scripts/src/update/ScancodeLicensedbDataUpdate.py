@@ -4,21 +4,22 @@
 import logging
 import os
 from src.update.BaseDataUpdate import BaseDataUpdate
+from src.update.canonical_source import CanonicalSource
 
 
 class ScancodeLicensedbDataUpdate(BaseDataUpdate):
-    def __init__(self, debug=False):
+    def __init__(self, src: CanonicalSource = CanonicalSource.SCANCODE_LICENSEDB, debug=False):
         if debug:
-            super().__init__(src="scancodeLicensedb", log_level=logging.DEBUG)
+            super().__init__(src=src, log_level=logging.DEBUG)
         else:
-            super().__init__(src="scancodeLicensedb", log_level=logging.INFO)
+            super().__init__(src=src, log_level=logging.INFO)
 
         self._base_url = "https://scancode-licensedb.aboutcode.org/"
         self._index_url = f"{self._base_url}index.json"
 
         exceptions = self.load_json_file("resources/exceptions.json")
 
-        self._EXCEPTION_SCANCODE_LICENSEDB = exceptions.get("scancode-licensedb")
+        self._EXCEPTION_SCANCODE_LICENSEDB = exceptions.get("scancode-licensedb", [])
 
     @staticmethod
     def get_aliases(license_data: dict, is_spdx=True) -> list[str]:

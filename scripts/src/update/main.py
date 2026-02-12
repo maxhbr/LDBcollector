@@ -20,13 +20,13 @@ def main():
     args = parser.parse_args()
 
     if args.spdx:
-        spdx = SpdxDataUpdate(args.debug)
+        spdx = SpdxDataUpdate(debug=args.debug)
         spdx.process_licenses()
     if args.scancode:
-        scancode = ScancodeLicensedbDataUpdate(args.debug)
+        scancode = ScancodeLicensedbDataUpdate(debug=args.debug)
         scancode.process_licenses()
     if args.osi:
-        osi = OsiDataUpdate(args.debug)
+        osi = OsiDataUpdate(debug=args.debug)
         osi.process_licenses()
 
     update_major_version_only.main()
