@@ -26,13 +26,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
           cache: poetry
           cache-dependency-path: scripts/poetry.lock
       - name: Set Poetry environment
         run: |
           cd scripts
-          poetry env use 3.10
+          poetry env use 3.11
       - name: Install dependencies
         run: |
           cd scripts
@@ -70,13 +70,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
           cache: poetry
           cache-dependency-path: scripts/poetry.lock
       - name: Set Poetry environment
         run: |
           cd scripts
-          poetry env use 3.10
+          poetry env use 3.11
       - name: Install dependencies
         run: |
           cd scripts
