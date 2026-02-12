@@ -340,11 +340,11 @@ publishing {
                         email = 'leo.reinmann@siemens.com'
                     }
                 }
-                final String ga = 'git@github.com:licenselynx/licenselynx.git'
+                final String ga = 'licenselynx/licenselynx.git'
                 scm {
-                    connection = 'scm:git:' + ga
-                    developerConnection = 'scm:git:' + ga
-                    url = ga
+                    connection = 'scm:git:git@github.com:' + ga
+                    developerConnection = 'scm:git:git@github.com:' + ga
+                    url = 'https://github.com/' +ga
                 }
             }
         }
