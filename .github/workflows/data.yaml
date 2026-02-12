@@ -58,5 +58,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update total mappings badge"
-          branch: main
           commit_user_name: "CI/CD Push Token"
