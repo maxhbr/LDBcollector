@@ -934,7 +934,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/obligation_maps/obligations/{id}/license": {
+        "/obligation_maps/obligation/{id}/license": {
             "put": {
                 "security": [
                     {
