@@ -382,7 +382,7 @@ type ApiResponse[T any] struct {
 type Tokens struct {
 	AccessToken          string `json:"access_token" example:"your_access_token_here"`
 	RefreshToken         string `json:"refresh_token,omitempty" example:"your_refresh_token_here"`
-	AccessTokenExpiresIn int64  `json:"expires_in" example:"3600"`
+	AccessTokenExpiresAt string `json:"expires_at" example:"2026-02-10T15:11:14Z"`
 }
 
 type RefreshToken struct {

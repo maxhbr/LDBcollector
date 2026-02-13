@@ -7,9 +7,13 @@ package test
 import (
 	"encoding/json"
 	"net/http"
+	"os"
+	"strconv"
 	"testing"
+	"time"
 
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/lestrrat-go/jwx/v3/jwt"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -190,6 +194,130 @@ func TestProfileUpdate(t *testing.T) {
 		}
 		// Verify that the value in the response matches the value in the payload
 		assert.Equal(t, *update.Subscribed, *res.Data[0].Subscribed)
+	})
+}
+
+func TestLoginAndRefreshTokenExpiry(t *testing.T) {
+	var refreshToken string
+	t.Run("login", func(t *testing.T) {
+		loginPayload := models.UserLogin{
+			Username:     "fossy_admin",
+			Userpassword: "fossy",
+		}
+
+		w := makeRequest("POST", "/login", loginPayload, false)
+		assert.Equal(t, http.StatusOK, w.Code)
+
+		var res models.TokenResonse
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Fatalf("failed to unmarshal login response: %v", err)
+		}
+
+		refreshToken = res.Data.RefreshToken
+		assert.NotEmpty(t, refreshToken)
+
+		accessToken := res.Data.AccessToken
+		assert.NotEmpty(t, accessToken)
+
+		expiresAtStr := res.Data.AccessTokenExpiresAt
+		assert.NotEmpty(t, expiresAtStr)
+
+		expiresAt, err := time.Parse(time.RFC3339, expiresAtStr)
+		if err != nil {
+			t.Fatalf("invalid expires_at format: %v", err)
+		}
+
+		// Parse the access token to get iat claim
+		parsedToken, err := jwt.Parse([]byte(accessToken), jwt.WithVerify(false))
+		if err != nil {
+			t.Fatalf("failed to parse access token: %v", err)
+		}
+
+		iat, ok := parsedToken.IssuedAt()
+		if !ok {
+			t.Fatalf("failed to get iat claim from token")
+		}
+
+		// Get TOKEN_HOUR_LIFESPAN from environment
+		tokenLifespanStr := os.Getenv("TOKEN_HOUR_LIFESPAN")
+		if tokenLifespanStr == "" {
+			tokenLifespanStr = "1" // default
+		}
+		tokenLifespan, err := strconv.ParseInt(tokenLifespanStr, 10, 64)
+		if err != nil {
+			t.Fatalf("failed to parse TOKEN_HOUR_LIFESPAN: %v", err)
+		}
+
+		// Calculate expected expiry: iat + lifespan
+		expectedExpiry := iat.Add(time.Hour * time.Duration(tokenLifespan))
+
+		// Allow 1 second tolerance for clock skew
+		assert.True(
+			t,
+			expiresAt.Sub(expectedExpiry) < time.Second,
+			"expires_at %v does not match expected expiry %v (iat + lifespan)",
+			expiresAt, expectedExpiry,
+		)
+	})
+	t.Run("refresh_token", func(t *testing.T) {
+		if refreshToken == "" {
+			t.Fatal("refresh token not set from login step")
+		}
+
+		refreshPayload := models.RefreshToken{
+			RefreshToken: refreshToken,
+		}
+
+		w := makeRequest("POST", "/refresh-token", refreshPayload, false)
+		assert.Equal(t, http.StatusOK, w.Code)
+
+		var res models.TokenResonse
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Fatalf("failed to unmarshal refresh response: %v", err)
+		}
+
+		accessToken := res.Data.AccessToken
+		assert.NotEmpty(t, accessToken)
+
+		expiresAtStr := res.Data.AccessTokenExpiresAt
+		assert.NotEmpty(t, expiresAtStr)
+
+		expiresAt, err := time.Parse(time.RFC3339, expiresAtStr)
+		if err != nil {
+			t.Fatalf("invalid expires_at format: %v", err)
+		}
+
+		// Parse the access token to get iat claim
+		parsedToken, err := jwt.Parse([]byte(accessToken), jwt.WithVerify(false))
+		if err != nil {
+			t.Fatalf("failed to parse access token: %v", err)
+		}
+
+		iat, ok := parsedToken.IssuedAt()
+		if !ok {
+			t.Fatalf("failed to get iat claim from token")
+		}
+
+		// Get TOKEN_HOUR_LIFESPAN from environment
+		tokenLifespanStr := os.Getenv("TOKEN_HOUR_LIFESPAN")
+		if tokenLifespanStr == "" {
+			tokenLifespanStr = "1" // default
+		}
+		tokenLifespan, err := strconv.ParseInt(tokenLifespanStr, 10, 64)
+		if err != nil {
+			t.Fatalf("failed to parse TOKEN_HOUR_LIFESPAN: %v", err)
+		}
+
+		// Calculate expected expiry: iat + lifespan
+		expectedExpiry := iat.Add(time.Hour * time.Duration(tokenLifespan))
+
+		// Allow 1 second tolerance for clock skew
+		assert.True(
+			t,
+			expiresAt.Sub(expectedExpiry) < time.Second,
+			"expires_at %v does not match expected expiry %v (iat + lifespan)",
+			expiresAt, expectedExpiry,
+		)
 	})
 }
 

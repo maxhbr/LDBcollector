@@ -1085,12 +1085,14 @@ func generateToken(user models.User) (*models.Tokens, error) {
 		UserEmail:   user.UserEmail,
 		UserLevel:   user.UserLevel,
 	}
+
+	AccessTokenExpiresAt := now.Add(time.Hour * time.Duration(accessTokenLifespan))
 	// Build Access Token
 	accessToken, err := jwt.NewBuilder().
 		Issuer(issuer).
 		IssuedAt(now).
 		NotBefore(now).
-		Expiration(now.Add(time.Hour*time.Duration(accessTokenLifespan))).
+		Expiration(AccessTokenExpiresAt).
 		Claim("user", safeClaim).
 		Build()
 	if err != nil {
@@ -1127,7 +1129,7 @@ func generateToken(user models.User) (*models.Tokens, error) {
 	tokens := &models.Tokens{
 		AccessToken:          string(signedAccessToken),
 		RefreshToken:         string(signedRefreshToken),
-		AccessTokenExpiresIn: int64(accessTokenLifespan * 3600), // in seconds
+		AccessTokenExpiresAt: AccessTokenExpiresAt.Format(time.RFC3339),
 	}
 	logger.LogInfo("generateToken completed successfully", zap.String("userID", user.Id.String()))
 	return tokens, nil

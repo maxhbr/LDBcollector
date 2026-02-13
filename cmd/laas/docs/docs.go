@@ -3756,9 +3756,9 @@ const docTemplate = `{
                     "type": "string",
                     "example": "your_access_token_here"
                 },
-                "expires_in": {
-                    "type": "integer",
-                    "example": 3600
+                "expires_at": {
+                    "type": "string",
+                    "example": "2026-02-10T15:11:14Z"
                 },
                 "refresh_token": {
                     "type": "string",
