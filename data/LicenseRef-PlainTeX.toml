@@ -7,6 +7,22 @@ url = '''
 https://fedoraproject.org/wiki/Licensing/PlainTeX
 '''
 
+text = '''
+% The Plain TeX hyphenation tables [NOT TO BE CHANGED IN ANY WAY!]
+% Unlimited copying and redistribution of this file are permitted as long
+% as this file is not modified. Modifications are permitted, but only if
+% the resulting file is not named hyphen.tex.
+
+or
+
+%%%   license   = "Unlimited copying and redistribution of this file
+%%%                are permitted as long as this file is not
+%%%                modified.  Modifications, and distribution of
+%%%                modified versions, are permitted, but only if
+%%%                the resulting file is renamed.",
+'''
+
+
 [fedora]
 
 legacy-name = [
@@ -17,3 +33,22 @@ legacy-abbreviation = [
     "PlainTeX"
 ]
 
+notes = '''
+This license was found in texlive-texmf, in texmf/tex/generic/hyphen/hyphen.tex.
+
+The FSF's rationale regarding the LaTeX Project Public License 1.2 applies to this specific scenario: http://www.fsf.org/licensing/licenses/index_html#GPLIncompatibleLicenses
+
+ This license contains complex and annoying restrictions on how to
+ publish a modified version, including one requirement that falls
+ just barely on the good side of the line of what is acceptable: that
+ any modified file must have a new name.
+
+ The reason this requirement is acceptable for LaTeX is that TeX has
+ a facility to allow you to map file names, to specify “use file bar
+ when file foo is requested”. With this facility, the requirement is
+ merely annoying; without the facility, the same requirement would be
+ a serious obstacle, and we would have to conclude it makes the
+ program non-free.
+
+Thus, this license is free but GPL incompatible, but only on TeX files. If this license were applied to unrelated code, it would almost certainly be non-free due to the renaming restriction. 
+'''
