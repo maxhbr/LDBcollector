@@ -29,6 +29,27 @@ text = '''
 text here
 '''
 
+package = rb_libtorrent
+location = include/libtorrent/sha1.hpp
+text = '''
+100% Public Domain
+'''
+
+package = rb_libtorrent
+location = include/libtorrent/sha256.hpp
+text = '''
+Adapted from LibTomCrypt. This code is Public Domain
+'''
+
+
+package = rb_libtorrent
+location = src/pe_crypto.cpp
+text = '''
+// All this code is based on libTomCrypt (http://www.libtomcrypt.com/)
+// this library is public domain and has been specially
+// tailored for libtorrent by Arvid Norberg
+'''
+
 package = tinyxml2
 location = resources/dream.xml
 text = '''
