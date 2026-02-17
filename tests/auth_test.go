@@ -12,6 +12,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/lestrrat-go/jwx/v3/jwt"
 	"github.com/stretchr/testify/assert"
@@ -38,7 +39,12 @@ func TestLoginUser(t *testing.T) {
 }
 
 func TestCreateUser(t *testing.T) {
+	loginAs(t, "admin")
+
 	t.Run("Success", func(t *testing.T) {
+		// Cleanup before test
+		db.DB.Unscoped().Where("user_name = ?", "fossy-test").Delete(&models.User{})
+
 		user := models.UserCreate{
 			UserName:     ptr("fossy-test"),
 			UserPassword: ptr("abc123"),
@@ -54,8 +60,16 @@ func TestCreateUser(t *testing.T) {
 			t.Errorf("Error unmarshalling JSON: %v", err)
 			return
 		}
+
+		if len(res.Data) == 0 {
+			t.Fatalf("Expected created user data, but got none. Status: %d", w.Code)
+		}
+
 		assert.Equal(t, *user.UserName, *res.Data[0].UserName)
 		assert.Equal(t, *user.UserLevel, *res.Data[0].UserLevel)
+
+		// Cleanup after test
+		db.DB.Unscoped().Where("user_name = ?", "fossy-test").Delete(&models.User{})
 	})
 
 	t.Run("MissingFields", func(t *testing.T) {
@@ -64,6 +78,9 @@ func TestCreateUser(t *testing.T) {
 		assert.Equal(t, http.StatusBadRequest, w.Code)
 	})
 	t.Run("DuplicateUser", func(t *testing.T) {
+		// Cleanup before test
+		db.DB.Unscoped().Where("user_name = ?", "fossy2").Delete(&models.User{})
+
 		user := models.UserCreate{
 			UserName:     ptr("fossy2"),
 			UserPassword: ptr("abc123"),
@@ -79,6 +96,9 @@ func TestCreateUser(t *testing.T) {
 		// Second request with same user should fail
 		w2 := makeRequest("POST", "/users", user, true)
 		assert.Equal(t, http.StatusConflict, w2.Code)
+
+		// Cleanup after test
+		db.DB.Unscoped().Where("user_name = ?", "fossy2").Delete(&models.User{})
 	})
 
 	t.Run("Unauthorized", func(t *testing.T) {

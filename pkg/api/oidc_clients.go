@@ -176,7 +176,7 @@ func RevokeClient(c *gin.Context) {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "Unable to delete oidc client",
-			Error:     result.Error.Error(),
+			Error:     "Oidc client not found",
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}

@@ -77,7 +77,12 @@ func TestMain(m *testing.M) {
 
 // makeRequest is a utility function for creating and sending HTTP requests during testing.
 func makeRequest(method, path string, body interface{}, isAuthenticated bool) *httptest.ResponseRecorder {
-	reqBody, _ := json.Marshal(body)
+	var reqBody []byte
+	if b, ok := body.([]byte); ok {
+		reqBody = b
+	} else {
+		reqBody, _ = json.Marshal(body)
+	}
 	fullPath := baseURL + path
 	req := httptest.NewRequest(method, fullPath, bytes.NewBuffer(reqBody))
 	req.Header.Set("Content-Type", "application/json")
