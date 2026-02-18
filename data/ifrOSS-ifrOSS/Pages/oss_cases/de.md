@@ -35,6 +35,13 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Lizenz** | - |
 | **Links** | [🇩🇪](https://www.netfilter.org/files/2022-01-24-Beschluss_und_Vergleich.pdf) [🇬🇧](https://www.netfilter.org/files/2022-01-24-Translation_Court_Order_and_Settlement.pdf) |
 
+| **Bezeichnung** | OLG Hamburg, Urteil v. 02.12.2021, Az. 	5 U 225/17 |
+|:---:|:---:|
+| **Parteien** | McHardy v. FANTEC |
+| **Thema** | Abweisung Klage auf Vertragsstrafe mangels Zulässigkeit |
+| **Lizenz** | GPL-2.0 |
+| **Links** | [🇩🇪](https://www.landesrecht-hamburg.de/bsha/document/NJRE001587867) |
+
 | **Bezeichnung** | OLG Karlsruhe, Urteil v. 13.11.2020, Az. 6 U 60/20 |
 |:---:|:---:|
 | **Parteien** | - |
