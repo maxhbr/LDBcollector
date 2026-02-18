@@ -273,7 +273,7 @@ class Generic(models.Model):
         help_text="Short description of the compliance action. Unique.",
     )
     description = models.TextField(
-        max_length=500, blank=True, help_text="Longer description, optional."
+        max_length=2500, blank=True, help_text="Longer description, optional."
     )
     in_core = models.BooleanField(
         default=False,

@@ -1,5 +1,38 @@
 # Changelog
 
+## 0.6.0
+
+FEATURES:
+
+* Add Azure AD Auth support [627](https://gitlab.com/hermine-project/hermine/-/merge_requests/627)
+* Add Keykloak authentication [636](https://gitlab.com/hermine-project/hermine/-/merge_requests/636)
+* Split validation page per validation step [572](https://gitlab.com/hermine-project/hermine/-/merge_requests/572)
+* Add filter for licenses on SBOM [642](https://gitlab.com/hermine-project/hermine/-/merge_requests/642)
+* Provide feedback on conflicting curation/choice (breaking) [643](https://gitlab.com/hermine-project/hermine/-/merge_requests/643)
+* API : Add non-staff autocomplete endpoint [644](https://gitlab.com/hermine-project/hermine/-/merge_requests/644)
+* Add Hermine Kissbom import [658](https://gitlab.com/hermine-project/hermine/-/merge_requests/658)
+* Basic copyright info handling [655](https://gitlab.com/hermine-project/hermine/-/merge_requests/655)
+* Unused licenses can be deleted [661](https://gitlab.com/hermine-project/hermine/-/merge_requests/661)
+
+BUGFIXES:
+
+* Fail tests when migrations files are not up to date with models [660](https://gitlab.com/hermine-project/hermine/-/merge_requests/660)
+* Fix error on sqlite + other SQL optimization [638](https://gitlab.com/hermine-project/hermine/-/merge_requests/638)
+* Don't create links to spdx.org when LicenceRef in exception [633](https://gitlab.com/hermine-project/hermine/-/merge_requests/633)
+* Fix errors on search by component on curations and derogations [645](https://gitlab.com/hermine-project/hermine/-/merge_requests/645)   
+* *GPL-3.0-or-later present no actual choice [!640](https://gitlab.com/hermine-project/hermine/-/merge_requests/640)
+* remove link to admin to list derogations for a licence  [629](https://gitlab.com/hermine-project/hermine/-/merge_requests/629)
+* Set proper fields for derogation filter [!630](https://gitlab.com/hermine-project/hermine/-/merge_requests/630) 
+* Add ability to edit the Publication Date [!623](https://gitlab.com/hermine-project/hermine/-/merge_requests/623)
+* Fix CycloneDX import [!622](https://gitlab.com/hermine-project/hermine/-/merge_requests/622)
+
+DOCS:
+
+* Add example of Azure callback URL [657](https://gitlab.com/hermine-project/hermine/-/merge_requests/657)
+* Update glossary [650](https://gitlab.com/hermine-project/hermine/-/merge_requests/650)
+* Add info about exporting reference data [641](https://gitlab.com/hermine-project/hermine/-/merge_requests/641)
+
+
 ## 0.5.1
 
 BUGFIXES:
