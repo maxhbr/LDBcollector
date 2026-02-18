@@ -14,3 +14,4 @@ wget -O matrix.json https://www.osadl.org/fileadmin/checklists/matrix.json
 wget -O matrixseq.json https://www.osadl.org/fileadmin/checklists/matrixseq.json
 wget -O matrixseqexpl.json https://www.osadl.org/fileadmin/checklists/matrixseqexpl.json
 curl https://www.osadl.org/fileadmin/checklists/checklists-rawdata.tgz | tar -xz
+git add .

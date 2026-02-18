@@ -98,6 +98,8 @@ https://www.osadl.org/fileadmin/checklists/unreflicenses/Saxpath.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Sleepycat.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Spencer-86.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/SunPro.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/TCL.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/TCP-wrappers.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Ubuntu-font-1.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-3.0.txt

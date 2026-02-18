@@ -12,6 +12,7 @@ while IFS= read -r script; do
     fi
     
     if git diff --quiet; then
+        pwd
         echo "Working tree has modifications. Please commit or stash your changes before running this script."
         exit 1
     fi
