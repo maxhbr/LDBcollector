@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "TCP Wrappers License",
+  "scancode_key": "tcp-wrappers",
+  "spdxid": "TCP-wrappers",
+  "aliases": [
+   "scancode://tcp-wrappers",
+   "TCP-wrappers",
+   "TCP Wrappers License",
+   "scancode:tcp-wrappers",
+   "TCP wrappers License",
+   "TCP-wrappers License",
+   "TCP WRAPPERS License",
+   "TCP-WRAPPERS License",
+   "TCP WRAPPERS LICENSE",
+   "TCP-WRAPPERS LICENSE"
+  ]
+}

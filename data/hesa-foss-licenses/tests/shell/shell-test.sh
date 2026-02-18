@@ -41,7 +41,7 @@ test_shell_silent()
 
 # test command: license
 test_shell_silent "license\nmit" "MIT"
-test_shell_silent "license\nmit and mit" "MIT AND MIT"
+test_shell_silent "license\nmit and mit" "MIT"
 
 # test command: simplify
 test_shell_silent "simplify\nmit and mit" "MIT"

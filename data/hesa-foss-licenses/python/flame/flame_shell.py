@@ -22,6 +22,7 @@ class FlameShell(cmd.Cmd):
 
     def __init__(self, verbose=False):
         cmd.Cmd.__init__(self)
+        self.verbose = verbose
         if verbose:
             self.do_verbose(None)
             self.output('Welcome to the Flame shell. Type help or ? to list commands.\n')

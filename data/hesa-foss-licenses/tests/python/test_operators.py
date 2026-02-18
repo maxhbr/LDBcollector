@@ -33,16 +33,16 @@ def test_and_mit_gpl2():
     # For some operators we require separators, for other not
     # This is reflected in the array/list below
     for op in [' AND ', '<AND>', ' & ', ' && ']:
-        __test_impl('mit', op, 'GPLv2', 'MIT AND GPL-2.0-only', ['', ' '])
+        __test_impl('mit', op, 'GPLv2', 'GPL-2.0-only AND MIT', ['', ' '])
 
 
 def _test_or_mit0_gpl2_1():
-    __test_impl("mit-0 or GPLv2", 'MIT-0 OR GPL-2.0-only')
-    __test_impl("mit-0 || GPLv2", 'MIT-0 OR GPL-2.0-only')
-    __test_impl("mit-0 | GPLv2", 'MIT-0 OR GPL-2.0-only')
-    __test_impl("mit-0 OR GPLv2", 'MIT-0 OR GPL-2.0-only')
+    __test_impl("mit-0 or GPLv2", 'GPL-2.0-only OR MIT-0')
+    __test_impl("mit-0 || GPLv2", 'GPL-2.0-only OR MIT-0')
+    __test_impl("mit-0 | GPLv2", 'GPL-2.0-only OR MIT-0')
+    __test_impl("mit-0 OR GPLv2", 'GPL-2.0-only OR MIT-0')
 def _test_or_mit0_gpl2_2():
-    __test_impl("mit-0 <OR> GPLv2", 'MIT-0 OR GPL-2.0-only')
-    __test_impl("mit-0<OR> GPLv2", 'MIT-0 OR GPL-2.0-only')
+    __test_impl("mit-0 <OR> GPLv2", 'GPL-2.0-only OR MIT-0')
+    __test_impl("mit-0<OR> GPLv2", 'GPL-2.0-only OR MIT-0')
 
 

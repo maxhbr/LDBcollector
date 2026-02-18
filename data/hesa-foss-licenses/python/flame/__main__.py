@@ -124,19 +124,24 @@ def get_parser():
     parser_os.set_defaults(which='ambiguities', func=ambiguities)
 
     # compatbilities
-    parser_cs = subparsers.add_parser(
+    parser_compats = subparsers.add_parser(
         'compats', help='Display all compatibilities')
-    parser_cs.set_defaults(which='compats', func=compats)
+    parser_compats.set_defaults(which='compats', func=compats)
 
     # compounds
-    parser_cs = subparsers.add_parser(
+    parser_compounds = subparsers.add_parser(
         'compounds', help='Display all compounds')
-    parser_cs.set_defaults(which='compounds', func=compounds)
+    parser_compounds.set_defaults(which='compounds', func=compounds)
+
+    # no-version
+    parser_ns = subparsers.add_parser(
+        'no-versions', help='Display all no-version licenses')
+    parser_ns.set_defaults(which='no_versions', func=no_versions)
 
     # licenses
-    parser_cs = subparsers.add_parser(
+    parser_ls = subparsers.add_parser(
         'licenses', help='show all licenses')
-    parser_cs.set_defaults(which='licenses', func=licenses)
+    parser_ls.set_defaults(which='licenses', func=licenses)
 
     # operators
     parser_os = subparsers.add_parser(
@@ -202,6 +207,10 @@ def compats(fl, formatter, args):
 def compounds(fl, formatter, args):
     compounds = fl.compound_list()
     return formatter.format_compounds(compounds, args.verbose)
+
+def no_versions(fl, formatter, args):
+    no_versions = fl.no_version_list()
+    return formatter.format_no_versions(no_versions, args.verbose)
 
 def version_info(fl, formatter, args):
     return flame.config.SW_VERSION, None

@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Carnegie Mellon UC Regents MIT-style License",
+  "scancode_key": "cmu-mit",
+  "spdxid": "LicenseRef-scancode-cmu-mit",
+  "aliases": [
+  ]
+}

@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "no_versions": {
+      "GNU Lesser General Public License": {
+        "aliases": [
+          "LGPL",
+          "GNU Lesser General Public License",
+          "GNU LGPL",
+          "GNU Library General Public License",
+          "LGPL+",
+          "lgpl",
+          "GNU LESSER GENERAL PUBLIC LICENSE",
+          "Lesser General Public License",
+          "License :: OSI Approved :: GNU Library or...",
+          "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+          "GNU Library/LGPL",
+          "GNU Library",
+          "gnu library",
+          "GNU Library or GNU Lesser General Public License",
+          "LGPL license",
+          "GNU Lesser Public License",
+          "lesser general public license",
+          "Lesser GPL",
+          "GNU Lesser General Public",
+          "GNU/GNU Lesser"
+        ],
+        "licenses": ["LGPL-2.0-only", "LGPL-2.1-only", "LGPL-3.0-only"]
+      },
+      "GNU General Public License": {
+        "aliases": [
+          "GPL",
+          "GNU GPL",
+          "GPL+",
+          "GNU General Public License",
+          "GPL-unspecified",
+          "GPL License",
+          "GNU GENERAL PUBLIC LICENSE",
+          "License :: OSI Approved :: GNU General Public License",
+          "License :: OSI Approved :: GNU General Public License (GPL)",
+          "GNU-GPL",
+          "GPL license",
+          "GNU General Public License (GPL)"
+        ],
+        "licenses": ["GPL-1.0-only", "GPL-2.0-only", "GPL-3.0-only"]
+      }
+    }
+}

@@ -29,6 +29,7 @@ def test_mylicense_compat():
     but not in standard
     """
     c = fl.expression_compatibility_as('LicenseRef-mycompany-mylicense')
+    print(" apa " + str(c))
     assert c['compat_license'] == 'MIT'
 
     c = fl_std.expression_compatibility_as('LicenseRef-mycompany-mylicense')

@@ -22,7 +22,7 @@ def test_compat_misc_blanks():
         for j in range(1, 10):
             for k in range(1, 10):
                 c = fl.expression_compatibility_as(f'{" "*i}GPLv2+{" "*j}&& BSD3{" "*k}', update_dual=False)
-                assert c['compat_license'] == "GPL-2.0-or-later AND BSD-3-Clause"
+                assert c['compat_license'] == "BSD-3-Clause AND GPL-2.0-or-later"
 
 def compat_misc_paranthesises_sub(lic1, op, lic2, expected):
     for i in range(1, 3):
@@ -36,10 +36,10 @@ def compat_misc_paranthesises_sub(lic1, op, lic2, expected):
 
 def test_compat_misc_paranthesises():
     for op in ['&', '&&', 'and', 'AND']:
-        compat_misc_paranthesises_sub('GPLv2+', op, 'bsd-new', 'GPL-2.0-or-later AND BSD-3-Clause')
+        compat_misc_paranthesises_sub('GPLv2+', op, 'bsd-new', 'BSD-3-Clause AND GPL-2.0-or-later')
 
     for op in ['|', '||', 'or', 'OR']:
-        compat_misc_paranthesises_sub('GPLv2+', op, 'bsd-new', 'GPL-2.0-or-later OR BSD-3-Clause')
+        compat_misc_paranthesises_sub('GPLv2+', op, 'bsd-new', 'BSD-3-Clause OR GPL-2.0-or-later')
 
 def test_compat_validations():
 

@@ -7,7 +7,7 @@ import logging
 import os
 import flame.exception
 
-SW_VERSION = '0.21.3'
+SW_VERSION = '0.21.5'
 
 PYTHON_DIR = os.path.dirname(os.path.realpath(__file__))
 VAR_DIR = os.path.join(PYTHON_DIR, 'var')
@@ -18,6 +18,7 @@ LICENSE_OPERATORS_FILE = os.path.join(VAR_DIR, 'operators.json')
 LICENSE_COMPOUNDS_FILE = os.path.join(VAR_DIR, 'compounds.json')
 LICENSE_AMBIG_FILE = os.path.join(VAR_DIR, 'ambiguities.json')
 LICENSE_DUALS_FILE = os.path.join(VAR_DIR, 'duals.json')
+LICENSE_NO_VERSION_FILE = os.path.join(VAR_DIR, 'no_version.json')
 
 DESCRIPTION = """
 NAME

@@ -1,0 +1,17 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "ZLIB License with Acknowledgment",
+  "scancode_key": "zlib-acknowledgement",
+  "spdxid": "zlib-acknowledgement",
+  "aliases": [
+   "scancode://zlib-acknowledgement",
+   "zlib/libpng License with Acknowledgement",
+   "ZLIB License with Acknowledgment",
+   "scancode:zlib-acknowledgement",
+   "zlib-acknowledgement",
+   "zlib with acknowledgement"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Intel BSD License",
+  "scancode_key": "intel-bsd",
+  "spdxid": "BSD-3-Clause-acpica",
+  "aliases": [
+    "bsd-3-clause-intel",
+    "BSD-3-clause-intel"
+  ]
+}

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2025 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 exec_flame()
 {
     ./devel/flame $*
@@ -31,4 +35,4 @@ echo "Testing issues"
 echo "=============="
 echo " https://github.com/hesa/foss-licenses/issues/214"
 echo "---------------------------------------------------"
-test_flame license "GPL" "GPL"
+test_flame license "GPL" "GPL-1.0-only OR GPL-2.0-only OR GPL-3.0-only"

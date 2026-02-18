@@ -48,6 +48,7 @@
         "AGPLv3.0+",
         "AGPL-3+",
       "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
-      "agpl-3+"
+      "agpl-3+",
+      "GNU AGPL-3.0-or-later"
     ]
 }

@@ -14,6 +14,8 @@
         "BSD-Original-UC",
       "bsd-original-uc",
       "bsd-4-clause-uc",
-      "bsd-4-clause-ucb"
+      "bsd-4-clause-ucb",
+      "bsd-4-clause-california",
+      "BSD-4-clause-California"
     ]
 }
