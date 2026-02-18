@@ -7,6 +7,11 @@ url = '''
 https://fedoraproject.org/wiki/Licensing/Rsfs
 '''
 
+text = '''
+  You are welcome to use and distribute these files; if you modify them,
+  please change the name but give credit to the original author!
+'''
+
 [fedora]
 
 legacy-name = [
@@ -17,3 +22,6 @@ legacy-abbreviation = [
     "Rsfs"
 ]
 
+notes = '''
+This license was identified in the "rsfs" component of texlive 2010. It is Free and GPL-compatible.
+'''

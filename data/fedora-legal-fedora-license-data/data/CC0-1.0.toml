@@ -27,7 +27,11 @@ https://gitlab.com/fedora/legal/fedora-license-data/-/issues/158 .
 '''
 
 packages_with_exceptions = [
-    "argon2"
+    "argon2",
+    "ruby",
+    "ruby-libs",
+    "ocserv",
+    "sbsigntools"
 ]
 
 [fedora]

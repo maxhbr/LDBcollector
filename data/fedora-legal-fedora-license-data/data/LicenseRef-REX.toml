@@ -7,6 +7,13 @@ url = '''
 https://fedoraproject.org/wiki/Licensing/REX
 '''
 
+text = '''
+ # The following code may be freely used and distributed provided that
+ # this copyright and citation notice remains intact and that modifications
+ # or additions are clearly identified.
+'''
+
+
 [fedora]
 
 legacy-name = [
@@ -17,3 +24,6 @@ legacy-abbreviation = [
     "REX"
 ]
 
+notes = '''
+This simple, permissive license is poorly worded, contains no disclaimer of liability, and is not generally recommended for use. However, because it strongly implies permission to modify (and has explicit permission to use and distribute without restriction), it is considered Free and GPL compatible. 
+'''

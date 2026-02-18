@@ -2,7 +2,7 @@ default:
     image: fedora:latest
 
     before_script:
-        - dnf install -y make git python3-pip '(python3-tomli if python3 < 3.11)' python3-tomli-w python3-jinja2
+        - dnf install -y make git python3-pip scancode-toolkit '(python3-tomli if python3 < 3.11)' python3-tomli-w python3-jinja2
         - pip3 install toml-validator
 
 stages:
@@ -51,3 +51,13 @@ legal-doc:
             - all-allowed.adoc
     script:
         - make legal-doc
+
+scancode:
+    stage: deploy
+    rules:
+        - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_REF_NAME == "main"'
+    artifacts:
+        paths:
+            - scancode-license-policy.yaml
+    script:
+        - make scancode

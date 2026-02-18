@@ -1,0 +1,37 @@
+[license]
+expression = "LicenseRef-Remix-icon"
+status = [ "not-allowed" ]
+
+url = '''
+https://remixicon.com/license
+'''
+
+text = '''
+License Agreement
+
+RemixIcon is licensed based on the Apache License and all rights of products are reserved for RemixIcon.
+Permissions
+
+    All our icons can be downloaded and used for free
+    Commercial and non-commercial purposes
+    Distribution with attribution or credit
+
+Prohibitions
+
+    Trademark use
+
+    Contact us if needed
+
+    Re-selling the icons in any form
+
+    Including but not limited to icon-pack, paid library including on our icons
+
+    Using our icons to replicate a similar or competing icons library, without significant modification
+
+    Such as color, size, corner-radius, border-size...
+'''
+
+[fedora]
+notes = '''
+While this claims to be Apache-2.0, the additional wording prohibits resale.
+'''

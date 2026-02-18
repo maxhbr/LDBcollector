@@ -6,8 +6,7 @@
 # This file is for collecting the text of such public domain dedications.
 #
 # Please search this file first to see if the public domain text you've found 
-# is the same as text already recorded here. If so, simply add  
-# your package name and location to the existing part of this file that contains that text.
+# is the same as text already recorded here. 
 #
 # Include the following information:
 # 
@@ -29,6 +28,708 @@ location =
 text = '''
 text here
 '''
+
+package = rb_libtorrent
+location = include/libtorrent/sha1.hpp
+text = '''
+100% Public Domain
+'''
+
+package = rb_libtorrent
+location = include/libtorrent/sha256.hpp
+text = '''
+Adapted from LibTomCrypt. This code is Public Domain
+'''
+
+
+package = rb_libtorrent
+location = src/pe_crypto.cpp
+text = '''
+// All this code is based on libTomCrypt (http://www.libtomcrypt.com/)
+// this library is public domain and has been specially
+// tailored for libtorrent by Arvid Norberg
+'''
+
+package = tinyxml2
+location = resources/dream.xml
+text = '''
+<P>Text placed in the public domain by Moby Lexical Tools, 1992.</P>
+<P>SGML markup by Jon Bosak, 1992-1994.</P>
+<P>XML version by Jon Bosak, 1996-1998.</P>
+<P>This work may be freely copied and distributed worldwide.</P>
+'''
+
+package = dcm2niix
+location = console/nifti1_io_core.cpp
+text = '''
+/*****     Sample functions to deal with NIFTI-1 and ANALYZE files       *****/
+/*****...................................................................*****/
+/*****            This code is released to the public domain.            *****/
+/*****...................................................................*****/
+/*****  Author: Robert W Cox, SSCC/DIRP/NIMH/NIH/DHHS/USA/EARTH          *****/
+/*****  Date:   August 2003                                              *****/
+/*****...................................................................*****/
+/*****  Neither the National Institutes of Health (NIH), nor any of its  *****/
+/*****  employees imply any warranty of usefulness of this software for  *****/
+/*****  any purpose, and do not assume any liability for damages,        *****/
+/*****  incidental or otherwise, caused by any use of this document.     *****/
+'''
+
+package = jemalloc
+location = include/jemalloc/internal/hash.h
+text = '''
+The following hash function is based on MurmurHash3, placed into the public
+domain by Austin Appleby.  See https://github.com/aappleby/smhasher for
+details.
+'''
+
+package = rust-tikv-jemalloc-sys
+location = jemalloc/include/jemalloc/internal/hash.h
+text = '''
+The following hash function is based on MurmurHash3, placed into the public
+domain by Austin Appleby.  See https://github.com/aappleby/smhasher for
+details.
+'''
+
+package = llvm-test-suite
+location = https://github.com/llvm/llvm-test-suite/blob/main/SingleSource/Benchmarks/CoyoteBench/LICENSE.txt
+text = '''
+    Written by Scott Robert Ladd.
+    No rights reserved. This is public domain software, for use by anyone.
+'''
+
+package = stb
+location = https://github.com/nothings/stb/blob/5c205738c191bcb0abc65c4febfa9bd25ff35234/tests/caveview/stb_gl.h#L1-L2
+text = '''
+Originally written by Jeff Roberts at RAD Game Tools - 2015/10/20.
+Hereby placed in public domain.
+'''
+
+package = stb
+location = https://github.com/nothings/stb/blob/5c205738c191bcb0abc65c4febfa9bd25ff35234/tests/caveview/stb_gl.h#L1
+text = '''
+stbgl - v0.04 - Sean Barrett 2008 - public domain
+'''
+
+package = stb
+location = https://github.com/nothings/stb/blob/5c205738c191bcb0abc65c4febfa9bd25ff35234/tests/caveview/win32/SDL_windows_main.c#L2
+text = '''
+SDL_windows_main.c, placed in the public domain by Sam Lantinga  4/13/98
+'''
+
+package = libtelnet
+location = https://github.com/seanmiddleditch/libtelnet/blob/develop/COPYING
+text = '''
+The author or authors of this code dedicate any and all copyright
+interest in this code to the public domain. We make this dedication
+for the benefit of the public at large and to the detriment of our
+heirs and successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+code under copyright law.
+'''
+
+package = desktop-backgrounds
+location = README.space
+text = '''
+The images in this directory are courtesy of NASA and NSSDC.  They are
+distributed in the public domain and may be used for any purpose.
+However, NASA and NSSDC requests that you acknowledge them as the
+supplier of the data.  In addition, where the source of the image (by
+project or as a specific person) is credited in the text, you should
+also acknowledge that, too.
+'''
+
+package = python-zmq
+location = examples/device/device.py
+text = '''
+This example is placed in the Public Domain
+It may also be used under the Creative Commons CC-0 License, (C) PyZMQ Developers
+'''
+
+package = python-zmq
+location = examples/win32-interrupt/display.py
+text = '''
+This file has been placed in the public domain.
+'''
+
+package = mg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2328778
+location = https://github.com/hboetes/mg/blob/master/autoexec.c
+           https://github.com/hboetes/mg/blob/master/basic.c
+           https://github.com/hboetes/mg/blob/master/bell.c
+           https://github.com/hboetes/mg/blob/master/buffer.c
+           https://github.com/hboetes/mg/blob/master/chrdef.h
+           https://github.com/hboetes/mg/blob/master/cinfo.c
+           https://github.com/hboetes/mg/blob/master/cmode.c
+           https://github.com/hboetes/mg/blob/master/cscope.c
+           https://github.com/hboetes/mg/blob/master/def.h
+           https://github.com/hboetes/mg/blob/master/dir.c
+           https://github.com/hboetes/mg/blob/master/dired.c
+           https://github.com/hboetes/mg/blob/master/display.c
+           https://github.com/hboetes/mg/blob/master/echo.c
+           https://github.com/hboetes/mg/blob/master/extend.c
+           https://github.com/hboetes/mg/blob/master/file.c
+           https://github.com/hboetes/mg/blob/master/fileio.c
+           https://github.com/hboetes/mg/blob/master/funmap.c
+           https://github.com/hboetes/mg/blob/master/funmap.h
+           https://github.com/hboetes/mg/blob/master/grep.c
+           https://github.com/hboetes/mg/blob/master/help.c
+           https://github.com/hboetes/mg/blob/master/interpreter.c
+           https://github.com/hboetes/mg/blob/master/kbd.c
+           https://github.com/hboetes/mg/blob/master/kbd.h
+           https://github.com/hboetes/mg/blob/master/key.h
+           https://github.com/hboetes/mg/blob/master/keymap.c
+           https://github.com/hboetes/mg/blob/master/line.c
+           https://github.com/hboetes/mg/blob/master/log.c
+           https://github.com/hboetes/mg/blob/master/log.h
+           https://github.com/hboetes/mg/blob/master/macro.c
+           https://github.com/hboetes/mg/blob/master/macro.h
+           https://github.com/hboetes/mg/blob/master/main.c
+           https://github.com/hboetes/mg/blob/master/match.c
+           https://github.com/hboetes/mg/blob/master/mg.1
+           https://github.com/hboetes/mg/blob/master/modes.c
+           https://github.com/hboetes/mg/blob/master/paragraph.c
+           https://github.com/hboetes/mg/blob/master/pathnames.h
+           https://github.com/hboetes/mg/blob/master/region.c
+           https://github.com/hboetes/mg/blob/master/re_search.c
+           https://github.com/hboetes/mg/blob/master/search.c
+           https://github.com/hboetes/mg/blob/master/spawn.c
+           https://github.com/hboetes/mg/blob/master/tags.c
+           https://github.com/hboetes/mg/blob/master/tty.c
+           https://github.com/hboetes/mg/blob/master/ttyio.c
+           https://github.com/hboetes/mg/blob/master/ttykbd.c
+           https://github.com/hboetes/mg/blob/master/undo.c
+           https://github.com/hboetes/mg/blob/master/util.c
+           https://github.com/hboetes/mg/blob/master/version.c
+           https://github.com/hboetes/mg/blob/master/window.c
+           https://github.com/hboetes/mg/blob/master/word.c
+           https://github.com/hboetes/mg/blob/master/yank.c
+text = '''
+This file is in the public domain.
+'''
+
+package = mg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2328778
+location = https://github.com/hboetes/mg/blob/master/GNUmakefile
+           https://github.com/hboetes/mg/blob/master/mg-static/generate-mg-static
+text = '''
+This Makefile has been written by Han Boetes
+<hboetes@gmail.com> and is released in Public Domain.
+'''
+
+package = mg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2328778
+location = https://github.com/hboetes/mg/blob/master/meson.build
+text = '''
+This file has been written by Han Boetes <hboetes@gmail.com> and is
+released in Public Domain.
+'''
+
+package = mg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2328778
+location = https://github.com/hboetes/mg/blob/master/tutorial#L353-L356
+text = '''
+This document is in the public domain.
+```
+
+package = heimdal
+location = https://github.com/heimdal/heimdal/blob/a6cf94577c0d1e5bca5304342e4ddffb18255afe/lib/hcrypto/des.c#L900
+text = '''
+A portable, public domain, version of the Data Encryption Standard.
+'''
+
+package = allegro
+location = docs/src/addons._tx
+text = '''
+License: public domain
+'''
+
+package = nacl
+# crypto_scalarmult/curve25519/donna_c64/smult.c
+location = http://hyperelliptic.org/nacl/nacl-20110221.tar.bz2
+text = '''
+Code released into the public domain.
+
+curve25519-donna: Curve25519 elliptic curve, public key function
+
+http://code.google.com/p/curve25519-donna/
+
+Adam Langley <agl@imperialviolet.org>
+
+Derived from public domain C code by Daniel J. Bernstein <djb@cr.yp.to>
+
+More information about curve25519 can be found here
+  http://cr.yp.to/ecdh.html
+'''
+
+package = nacl
+# crypto_scalarmult/curve25519/ref/base.c
+# crypto_scalarmult/curve25519/ref/smult.c
+location = http://hyperelliptic.org/nacl/nacl-20110221.tar.bz2
+text = '''
+Public domain.
+Derived from public domain code by D. J. Bernstein.
+'''
+
+package = golang-github-xi2-xz
+location = https://github.com/xi2/xz/blob/master/LICENSE
+text = '''
+All the files in this package have been written by Michael Cross,
+Lasse Collin and/or Igor PavLov. All these files have been put
+into the public domain. You can do whatever you want with these
+files.
+
+This software is provided "as is", without any warranty.
+'''
+
+package = perl-Math-Expression-Evaluator
+location = https://metacpan.org/pod/Math::Expression::Evaluator::Lexer
+text = '''
+However all code examples are to be public domain, so you can use it in any way you want to.
+'''
+
+package = python-nine
+location = https://github.com/nandoflorestan/nine/blob/master/LICENSE.rst
+text = '''
+I, the copyright holder of this work, hereby release it into the public domain. This applies worldwide.
+
+In case this is not legally possible, I grant any entity the right to use, modify and redistribute this work for any purpose, without any conditions.
+'''
+
+package = sdl-telnet
+location = https://github.com/SDL-Hercules-390/telnet/blob/master/README.md?plain=1#L31
+text = '''
+The author or authors of this code dedicate any and all copyright interest in
+this code to the public domain. We make this dedication for the benefit of the
+public at large and to the detriment of our heirs and successors. We intend
+this dedication to be an overt act of relinquishment in perpetuity of all
+present and future rights to this code under copyright law.
+'''
+
+package = libmodplug
+location = http://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.0.tar.gz
+# in the file COPYING
+text = '''
+ModPlug-XMMS and libmodplug are now in the public domain.
+'''
+
+package = gimpfx-foundry
+location = http://downloads.sourceforge.net/gimpfx-foundry/gimpfx-foundry-2.6-1.tar.gz
+# actual locations: bates-*.scm
+text = '''
+This script is released into the public domain.
+You may redistribute and/or modify this script or extract segments without prior consent.
+
+This script is distributed in the hope of being useful
+but without warranty, explicit or otherwise.
+'''
+
+package = perl-Devel-Trace
+location = https://metacpan.org/pod/Devel::Trace
+text = '''
+Devel::Trace 0.11 and its source code are hereby placed in the public domain.
+'''
+
+package = openmpi
+location = oshmem/mca/memheap/ptmalloc/malloc.c
+text = '''
+This is a version (aka dlmalloc) of malloc/free/realloc written by
+Doug Lea and released to the public domain, as explained at                                                                                                                                
+http://creativecommons.org/licenses/publicdomain.  Send questions,
+comments, complaints, performance data, etc to dl@cs.oswego.edu
+'''
+
+package = surfraw
+location = https://gitlab.com/surfraw/Surfraw/-/blob/master/COPYING
+text = '''
+The copyright holders listed above assert no rights on this release
+of the software ``surfraw'' and thereby explicity place this release into
+the public domain. Do what you will.
+'''
+
+package = klt
+location = http://cecas.clemson.edu/~stb/klt/index.html
+text = '''
+The source code is in the public domain, available for both commercial and non-commerical use.
+'''
+
+package = libgenht
+# file LICENSE
+location = http://www.repo.hu/projects/genht/releases/genht-1.1.3.tar.gz
+text = '''
+Public Domain.
+
+genht was written by Szabolcs Nagy in 2010.
+
+The whole project, including all source files are placed in the
+Public Domain by the author. There is absolutely no restriction
+on use or distribution of these files.
+'''
+
+package = cproto
+# See LICENSE in sources tarball
+location = https://invisible-island.net/cproto/cproto.html
+text = '''
+cproto is in the public domain; changes made to it by the current                                                                                                                                                  
+maintainer are likewise unrestricted.  That applies to most of the files.
+'''
+
+package = gnome-valgrind-session
+location = http://hp.cl.no/proj/gnome-valgrind-session/src/gnome-valgrind-session-1.1.tar.bz2
+# in file LICENSE
+text = '''
+This package is in the Public Domain.
+'''
+
+package = oflb-goudy-bookletter-1911-fonts
+# only in lookaside cache of Fedora
+# in file GoudyBookletter1911.otf
+location = chemoelectric_-_Goudy_Bookletter_1.zip
+text = '''
+This font has been released into the public domain by its author, Barry Schwartz. This applies worldwide.
+
+In some countries this may not be legally possible; if so:
+
+Barry Schwartz grants anyone the right to use this work for any purpose, without any conditions, unless such conditions are required by law.
+'''
+
+package = gnome-valgrind-session
+location = http://hp.cl.no/proj/gnome-valgrind-session/src/gnome-valgrind-session-1.1.tar.bz2
+# in almost every other file
+text = '''
+This file is in the Public Domain.
+'''
+
+package = icon
+location = https://www2.cs.arizona.edu/icon/ftp/README
+text = '''
+All material here is in the public domain.
+'''
+
+package = cockatrice
+location = https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gs.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/icons/lock.svg?plain=1
+text = '''
+<cc:license rdf:resource="http://web.resource.org/cc/PublicDomain">
+'''
+
+package = cockatrice
+location = https://github.com/Cockatrice/Cockatrice/blob/master/webclient/public/reset.css
+text = '''
+License: none (public domain)
+'''
+
+package = cockatrice
+location = https://github.com/Cockatrice/Cockatrice/blob/master/oracle/src/lzma/decompress.cpp
+text = '''
+This file has been put into the public domain.
+You can do whatever you want with this file.
+'''
+
+package = cockatrice
+location = https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/az.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/ba.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/be.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/bj.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/bn.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/de.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/ee.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/fi.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/fo.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/ga.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gb.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gl.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gm.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gn.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gr.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/im.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/jm.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/jo.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/lv.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/mg.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/nl.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/np.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/nz.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/pr.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/ro.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/sc.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/sm.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/tz.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/um.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/us.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/za.svg?plain=1
+text = '''
+Creative Commons Public Domain
+'''
+
+package = cockatrice
+location = https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/ae.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/bo.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/bw.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/ci.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/lu.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/ml.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/mu.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/pe.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/sl.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/td.svg?plain=1
+
+text = '''
+On October 30, 2003, Brett Roper dedicated to the public domain the
+works "SVG graphic of Chad Flag.", "SVG graphic of El Salvador Flag.",
+"SVG graphic of Sierra Leone Flag.", "SVG graphic of Peru Flag." Before
+making the dedication, Brett Roper represented that Brett Roper owned all copyrights in the
+work. By making the dedication, Brett Roper made an overt act
+of relinquishment in perpetuity of all present and future rights under
+copyright law, whether vested or contingent, in "SVG graphic of Chad
+Flag.", "SVG graphic of El Salvador Flag.", "SVG graphic of Sierra Leone
+Flag.", "SVG graphic of Peru Flag."
+
+Brett Roper understands that such relinquishment of all rights
+includes the relinquishment of all rights to enforce (by lawsuit or
+otherwise) those copyrights in the Work.
+
+Brett Roper recognizes that, once placed in the public domain,
+"SVG graphic of Chad Flag.", "SVG graphic of El Salvador Flag.", "SVG
+graphic of Sierra Leone Flag.", "SVG graphic of Peru Flag." may be
+freely reproduced, distributed, transmitted, used,
+modified, built upon, or otherwise exploited by anyone for any
+purpose, commercial or non-commercial, and in any way, including by
+methods that have not yet been invented or conceived.
+'''
+
+package = cockatrice
+location = https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/af.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/bm.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/eh.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/er.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gu.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/kg.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/km.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/mh.svg?plain=1
+           https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/vg.svg?plain=1
+text = '''
+<License rdf:about="http://web.resource.org/cc/PublicDomain">
+'''
+
+package = clc
+location = https://github.com/elanthis/clc/blob/master/README#L3
+text = '''
+THIS CODE IS PUBLIC DOMAIN
+'''
+
+package = BareBonesBrowserLaunch
+# inside tarball of 3.1 version of the package
+location = com/centerkey/utils/BareBonesBrowserLaunch.java
+text = '''
+Public Domain Software -- Free to Use as You Like
+'''
+
+package = gstreamer1-plugins-bad-free
+location = gst/freeverb/gstfreeverb.c
+text = '''
+This code is public domain
+'''
+
+package = gstreamer1-plugins-bad-free
+location = gst/librfb/d3des.c
+text = '''
+A portable, public domain, version of the Data Encryption Standard.
+'''
+
+package = jhead
+location = https://www.sentex.ca/~mwandel/jhead/
+text = ''' 
+The software is public domain. A program this small is not worth bothering
+restricting anybody with, and I'm too lazy to look into the ramifications of
+GPL or BSD licenses. Besides, I hope more people integrate this sort of
+functionality into their programs, free or not free.
+'''
+
+package = ants
+# the upstream is dead, this reference file in the package
+location = license-info
+text = '''
+Ants Is free, public domain -- do with it what you want (it would be
+nice if you gave me credit for the original game).
+'''
+
+package = ogre
+location = https://github.com/OGRECave/ogre/blob/e90817bd1cb73d709843d2ebe32fae31161617ea/Components/Volume/src/OgreVolumeIsoSurfaceTablesMC.h#L34
+text = '''
+Marching Cubes tables from the public domain code found on
+http://local.wasp.uwa.edu.au/~pbourke/geometry/polygonise/
+in
+http://paulbourke.net/geometry/polygonise/marchingsource.cpp
+Thanks!
+'''
+
+package = ogre
+location = https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreCylinderEmitter.h#L28
+           https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreEllipsoidEmitter.h
+           https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreRingEmitter.h#L28
+           https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreHollowEllipsoidEmitter.h#L28
+           https://github.com/OGRECave/ogre/blob/master/PlugIns/ParticleFX/include/OgreEllipsoidEmitter.h#L28
+text = '''
+Original author: Tels <http://bloodgate.com>, released as public domain
+'''
+
+package = ogre
+location = Tools/MaterialEditor/wxscintilla_1.69.2/src/scintilla/src/LexGen.py
+text = '''
+Released to the public domain.
+'''
+
+package = ogre
+          perl-MaxMind-DB-Reader-XS
+location = Tools/MaterialEditor/wxscintilla_1.69.2/src/scintilla/src/RESearch.h
+           Tools/MaterialEditor/wxscintilla_1.69.2/src/scintilla/src/StyleContext.cxx
+           https://github.com/maxmind/MaxMind-DB-Reader-XS/blob/main/c/perl_math_int128.c#L2
+           https://github.com/maxmind/MaxMind-DB-Reader-XS/blob/main/c/perl_math_int64.c#L2
+text = '''
+This file is in the public domain.
+'''
+
+package = ogre
+location = OgreMain/src/nedmalloc/malloc.c.h
+text = '''
+This is a version (aka dlmalloc) of malloc/free/realloc written by
+Doug Lea and released to the public domain, as explained at
+http://creativecommons.org/licenses/publicdomain.  Send questions,
+comments, complaints, performance data, etc to dl@cs.oswego.edu
+'''
+
+package = filedrop
+location = https://iharder.sourceforge.net/current/java/filedrop/
+text = '''
+I have released this software into the Public Domain. That means you can do whatever you want with it. Really. You don't have to match it up with any other open source license &em; just use it. You can rename the files, move the Java packages, whatever you want. If your lawyers say you have to have a license, contact me, and I'll make a special release to you under whatever reasonable license you desire: MIT, BSD, GPL, whatever.
+'''
+
+package = filedrop
+# in the FileDrop.java
+location = https://iharder.sourceforge.net/current/java/filedrop/
+text = '''
+I'm releasing this code into the Public Domain. Enjoy.
+'''
+
+package = calf
+location = https://github.com/calf-studio-gear/calf/blob/master/src/calf/lv2_external_ui.h#L4
+           https://github.com/calf-studio-gear/calf/blob/master/src/calf/lv2_progress.h#L4
+text = '''
+This work is in public domain.
+
+This file is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
+package = btop
+# used in https://github.com/aristocratos/btop/blob/main/include/widechar_width.hpp
+location = https://github.com/ridiculousfish/widecharwidth/
+text = '''
+widecharwidth and its output files are released into the public domain. They
+may be used for any purpose without requiring attribution, or under the CC0
+license if public domain is not available. See included LICENSE.
+'''
+
+package = bsh
+location = https://github.com/beanshell/beanshell/blob/master/bsh-bsf-engine/src/main/java/bsh/util/BeanShellBSFEngine.java#L7 
+text = '''
+This file is hereby placed into the public domain...  You may copy,
+modify, and redistribute it without restriction.
+'''
+
+package = perl-Coro-Multicore
+location = https://metacpan.org/release/MLEHMANN/Coro-Multicore-1.07/source/perlmulticore.h#L156
+text = '''
+The perlmulticore.h header file is put into the public domain. Where
+this is legally not possible, or at your option, it can be licensed
+under creativecommons CC0 license:
+<https://creativecommons.org/publicdomain/zero/1.0/>.
+'''
+
+package = python-pysdl2
+location = https://github.com/py-sdl/py-sdl2/blob/0.9.16/doc/copying.rst
+text = '''
+This software is distributed under the Public Domain. Since it is
+not enough anymore to tell people: 'hey, just do with it whatever
+you like to do', you can consider this software being distributed
+under the CC0 Public Domain Dedication
+(http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt).
+
+In cases, where the law prohibits the recognition of Public Domain
+software, this software can be licensed under the zlib license as
+stated below:
+
+Copyright (C) 2012-2020 Marcus von Appen <marcus@sysfault.org>
+
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgement in the product documentation would be
+   appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/converter/pbm/g3topbm.c
+text = '''
+contributed it to the public domain
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/converter/pbm/g3topbm.c
+text = '''
+  Others have modified the program since Bryan's initial work, each
+  contributing their work to the public domain.
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/converter/ppm/411toppm.c
+text = '''
+Bryan's contribution is public domain.
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/converter/other/exif.c
+text = '''
+contributed to the public domain
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/analyzer/pamsharpmap.c
+text = '''
+Bryan placed his modifications in the public domain.
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/editor/pamhue.c
+text = '''
+contributes his work to the public domain
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/generator/pbmmake.c
+text = '''
+contributed his work to the public domain
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/generator/pbmtextps.c
+text = '''
+contributed to public domain by author
+'''
+
+
 
 package = glibc
 location = https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=stdlib/tst-random.c
@@ -296,7 +997,9 @@ This is in the public domain
 '''
 
 package = automake
+          mb2md
 location = https://git.savannah.gnu.org/cgit/automake.git/tree/lib/mkinstalldirs?h=v1.16#n8
+           http://batleth.sapienti-sat.org/projects/mb2md/mb2md-3.20.pl.gz
 text = '''
 Public domain.
 '''
@@ -911,7 +1614,22 @@ risk.
 '''
 
 package = dnsmasq
+          xz
 location = https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob_plain;f=po/es.po;hb=HEAD
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/ca.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/cs.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/da.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/fi.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/fr.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/it.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/pt.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/pt_BR.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/sr.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/tr.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/zh_CN.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/zh_TW.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po4a/fr.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po4a/pt_BR.po#L3
 text = '''
 This file is put in the public domain.
 '''
@@ -1010,6 +1728,17 @@ text = '''
 All of the remaining software is provided as-is, with no warranty.
 I, Matt Mahoney, release this software into
 the public domain. This applies worldwide.
+In some countries this may not be legally possible; if so:
+I grant anyone the right to use this software for any purpose,
+without any conditions, unless such conditions are required by law.
+'''
+
+package = zpaqfranz
+location = https://github.com/fcorbelli/zpaqfranz/archive/61.1/zpaqfranz-61.1.tar.gz
+text = '''
+This software is provided as-is, with no warranty.
+I, Matt Mahoney, release this software into
+the public domain.   This applies worldwide.
 In some countries this may not be legally possible; if so:
 I grant anyone the right to use this software for any purpose,
 without any conditions, unless such conditions are required by law.
@@ -1116,6 +1845,18 @@ location = https://github.com/sass/libsass/blob/master/src/cencode.c#L4
 text = '''
 This is part of the libb64 project, and has been placed in the public domain.
 For details, see http://sourceforge.net/projects/libb64
+'''
+
+package = libb64
+location = https://libb64.sourceforge.net/
+text = '''
+This work is released into the Public Domain.
+
+It basically boils down to this: I put this work in the public domain, and you
+can take it and do whatever you want with it. An example of this "license" is
+the Creative Commons Public Domain License, a copy of which can be found in the
+LICENSE file in the distribution, and also on-line at
+http://creativecommons.org/licenses/publicdomain/
 '''
 
 package = memcached
@@ -1460,6 +2201,8 @@ it what you wish.
 '''
 
 package = irssi
+          python-django-pdb
+          python-hexdump
 location = https://github.com/irssi/irssi/blob/master/scripts/autoop.pl#L13
            https://github.com/irssi/irssi/blob/master/scripts/buf.pl#L16
            https://github.com/irssi/irssi/blob/master/scripts/dns.pl#L21
@@ -1470,6 +2213,8 @@ location = https://github.com/irssi/irssi/blob/master/scripts/autoop.pl#L13
            https://github.com/irssi/irssi/blob/master/scripts/examples/command.pl#L14
            https://github.com/irssi/irssi/blob/master/scripts/examples/msg-event.pl#L14
            https://github.com/irssi/irssi/blob/master/scripts/examples/redirect.pl#L15
+           https://github.com/HassenPy/django-pdb/blob/master/setup.py#L47
+           https://pypi.org/project/hexdump/
 text = '''
 Public Domain
 '''
@@ -1589,4 +2334,1112 @@ package = OpenCTM
 location = https://github.com/Danny02/OpenCTM/raw/e2e588db50a1d2a6b63f668f703bf899e0daf8ee/lib/liblzma/readme.txt
 text = '''
 Public Domain
+'''
+
+package = loguru
+location = https://github.com/emilk/loguru/blob/4adaa185883e3c04da25913579c451d3c32cfac1/README.md?plain=1#L13
+text = '''
+This software is in the public domain. Where that dedication is not recognized, you are granted a perpetual, irrevocable license to copy, modify and distribute it as you see fit.
+'''
+
+package = sdl-crypto
+location = https://github.com/SDL-Hercules-390/crypto/blob/a5096e5dd79f46b568806240c0824cd8cb2fcda2/crypto.LICENSE.txt#L51-L63
+text = '''
+ * SHA-1 in C
+ * By Steve Reid <steve@edmweb.com>
+ * 100% Public Domain
+ *
+ * Test Vectors (from FIPS PUB 180-1)
+ * "abc"
+ *   A9993E36 4706816A BA3E2571 7850C26C 9CD0D89D
+ * "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq"
+ *   84983E44 1C3BD26E BAAE4AA1 F95129E5 E54670F1
+ * A million repetitions of "a"
+ *   34AA973C D4C4DAA4 F61EEB2B DBAD2731 6534016F
+'''
+
+package = xz
+location = https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/doc/lzma-file-format.txt#L38
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/doc/xz-file-format.txt#L78
+text = '''
+This document has been put into the public domain.
+'''
+
+package = sdl-crypto
+location = https://github.com/SDL-Hercules-390/crypto/blob/a5096e5dd79f46b568806240c0824cd8cb2fcda2/crypto.LICENSE.txt#L7-L19
+text = '''
+ * This code is hereby placed in the public domain.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHORS ''AS IS'' AND ANY EXPRESS
+ * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+'''
+
+package = aws
+          httpd
+location = https://github.com/AdaCore/aws/tree/5bf233b8e3a8c9fad7f4b6180d14326f6a45da96/web_elements/icons (in several GIF files)
+           https://svn.apache.org/viewvc/httpd/httpd/tags/2.4.62/docs/icons/ (in several GIF and PNG files)
+text = '''
+This art is in the public domain. Kevin Hughes, kevinh@eit.com, September 1995
+'''
+
+package = httpd
+location = https://svn.apache.org/viewvc/httpd/httpd/tags/2.4.62/docs/icons/tar.gif?view=co&revision=1919316
+           https://svn.apache.org/viewvc/httpd/httpd/tags/2.4.62/docs/icons/tar.png?view=co&revision=1919316
+text = '''
+This icon is in the public domain. 1995 Kevin Hughes, kevinh@eit.com
+'''
+
+package = mailcap
+location = https://pagure.io/mailcap/blob/ffd61c5c86d00b58a52751fe21e692b58e97a4b8/f/COPYING
+text = '''
+Red Hat disclaims any copyright on the "mailcap" and "mime-types" files and places them in the public domain. You are
+free to do whatever you wish with these files.
+'''
+
+package = upx
+location =  https://github.com/upx/upx/blob/devel/src/stub/src/arch/arm/v4a/lzma_d-arm.S#L2
+            https://github.com/upx/upx/blob/devel/src/stub/src/arch/arm64/v8/lzma_d-arm.S#L2
+text = '''
+LZMA SDK is written and placed in the public domain by Igor Pavlov.
+'''
+
+package = upx
+location =  https://github.com/upx/upx/blob/devel/src/compress/compress_lzma.cpp#L51
+text = '''
+INFO: LZMA SDK is placed in the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute the original LZMA SDK code, either in source code form
+or as a compiled binary, for any purpose, commercial or non-commercial,
+and by any means.
+'''
+
+package = wgrib
+location =  git@gitlab.com:opoplawski/fedora-license-data.git
+text = '''
+The following files are placed into the public domain.  While
+you could legally do anything you want with the code, telling
+the world that you wrote it would be uncool.  Selling it would
+be really uncool.  The code was written for NMC/NCAR Reanalysis
+and may not work GRIB files from other sources.  The code,
+as usual, is not warranteed to be fit for any purpose what so ever.
+Use at your own risk.
+```
+
+package = zork
+location = https://github.com/devshane/zork/blob/master/README.md?plain=1#L10
+text = '''
+Public Domain source code to the original DUNGEON game (Zork I). Released to the PD by Infocom. Includes 
+source files, headers, and information.
+'''
+
+package = ddate
+location = https://github.com/bo0ts/ddate/blob/master/ddate.c#L15
+text = '''
+This program is in the public domain.  Distribute freely.  Or not.
+'''
+
+package = ddate
+location = https://github.com/bo0ts/ddate/blob/master/ddate.1#L1
+text = '''
+All Rites Reversed. This file is in the PUBLIC DOMAIN.
+'''
+
+package = astronomy-menus
+# upstream is dead, this reference file in a package
+location = README
+text = '''
+Icon file (dome.svg) was created by Nicu Buculei and licensed for use in
+Public Domain. Rest of files was created by Lubomir Rintel <lkundrak@v3.sk>
+and licensed for use in Public Domain.
+'''
+
+package = biblesync
+location = https://github.com/karlkleinpaste/biblesync/blob/master/COPYING
+text = '''
+All files related to implementation of BibleSync, including program
+source, READMEs, manual pages, and related similar documents, are in
+the public domain.  As a matter of simple decency, your social
+obligations are to credit the source and to coordinate any changes you
+make back to the origin repository.  These obligations are non-
+binding for public domain software, but they are to be seriously
+handled nonetheless.
+'''
+
+package = emacs-slime
+location = https://github.com/slime/slime?tab=readme-ov-file#license
+text = '''
+SLIME is free software. All files, unless explicitly stated otherwise, are public domain. 
+'''
+
+package = mingw-pdcurses
+# current upstream version
+location = https://github.com/wmcbrine/PDCurses/blob/master/README.md
+text = '''
+The core package and most ports are in the public domain, but a few files in the demos and X11 directories are subject to copyright under licenses described there.
+
+This software is provided AS IS with NO WARRANTY whatsoever.
+'''
+
+package = nec2c
+location = https://github.com/KJ7LNW/nec2c/blob/master/README#L205
+text = '''
+nec2c is Public Domain, same as the original FORTRAN source.
+Please keep any software you write incorporating nec2c in Public
+Domain or at least use an open license like GPL or BSD.
+'''
+
+package = re2c
+location = https://re2c.org/
+text = '''
+re2c is in the public domain. The data structures and algorithms used in re2c are all either taken from documents available to the general public or are inventions of the author. Programs generated by re2c may be distributed freely. re2c itself may be distributed freely, in source or binary, unchanged or modified. Distributors may charge whatever fees they can obtain for re2c. If you do make use of re2c, or incorporate it into a larger project an acknowledgment somewhere (documentation, research report, etc.) would be appreciated. re2c is distributed with no warranty whatsoever. The code is certain to contain errors. Neither the author nor any contributor takes responsibility for any consequences of its use.
+'''
+
+package = mingw-pdcurses
+# current version in rawhide
+location = https://github.com/wmcbrine/PDCurses/archive/refs/tags/3.8.tar.gz
+text = '''
+The core package is in the public domain, but small portions of PDCurses
+are subject to copyright under various licenses.  Each directory
+contains a README.md file, with a section titled "Distribution Status"
+which describes the status of the files in that directory.
+
+If you use PDCurses in an application, an acknowledgement would be
+appreciated, but is not mandatory. If you make corrections or
+enhancements to PDCurses, please forward them to the current maintainer
+for the benefit of other users.
+
+This software is provided AS IS with NO WARRANTY whatsoever.
+'''
+
+package = sqlite2
+location =  https://www.sqlite.org/src/file?name=tool/lemon.c&ci=trunk
+text = '''
+The author of this program disclaims copyright.
+'''
+
+package = perl-DateTime-Precise
+location = https://bugzilla.redhat.com/show_bug.cgi?id=426827#c4
+text = '''
+As far as I'm concerned, the code Blair extended into DateTime::Precise
+is public domain.
+'''
+
+package = sc
+location = http://www.ibiblio.org/pub/Linux/apps/financial/spreadsheet/sc-7.16.lsm
+text = '''
+Copying-policy:	Public domain
+'''
+
+package = sc
+location = http://www.ibiblio.org/pub/Linux/apps/financial/spreadsheet/sc-7.16.tar.gz
+# file sc.doc
+text = '''
+This is a much modified version of a public domain spread sheet                                                                                                                                                    
+originally authored by James Gosling,
+and subsequently modified and posted to USENET by
+Mark Weiser under the name vc.
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/arm64/7zAsm.S
+text = '''
+// 2021-04-25 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/arm64/LzmaDecOpt.S
+text = '''
+// 2021-04-25 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/7zAsm.asm
+text = '''
+; 2023-12-08 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/7zCrcOpt.asm
+text = '''
+; 2023-12-08 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/AesOpt.asm
+text = '''
+; 2021-12-25 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/LzFindOpt.asm
+text = '''
+2024-06-18: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/LzmaDecOpt.asm
+text = '''
+2024-06-18: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/Sha1Opt.asm
+text = '''
+2024-06-16 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/Sha256Opt.asm
+text = '''
+2024-06-16 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/Asm/x86/XzCrc64Opt.asm
+text = '''
+2023-12-08 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7z.h
+text = '''
+/* 7z.h -- 7z interface
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zAlloc.c
+text = '''
+2023-03-04 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zAlloc.h
+text = '''
+2023-03-04 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zArcIn.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zBuf.c
+text = '''
+2017-04-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zBuf.h
+text = '''
+2023-03-04 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zBuf2.c
+text = '''
+2017-04-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zCrc.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zCrc.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zCrcOpt.c
+text = '''
+2023-12-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zDec.c
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zFile.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zFile.h
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zStream.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zTypes.h
+text = '''
+2024-01-24 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zVersion.h
+text = '''
+#define MY_AUTHOR_NAME "Igor Pavlov"
+#define MY_COPYRIGHT_CR "Copyright (c) 1999-2024 Igor Pavlov"
+#define MY_COPYRIGHT MY_COPYRIGHT_CR
+#define MY_COPYRIGHT MY_COPYRIGHT_PD
+#define MY_COPYRIGHT_PD "Igor Pavlov : Public domain"
+#define MY_DATE "2024-11-29"
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/7zWindows.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Aes.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Aes.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/AesOpt.c
+text = '''
+Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Alloc.c
+text = '''
+2024-02-18 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Alloc.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bcj2.c
+text = '''
+2023-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bcj2.h
+text = '''
+2023-03-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bcj2Enc.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Blake2.h
+text = '''
+2024-01-17 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Blake2s.c
+text = '''
+2015-2019 : Samuel Neves : original code : CC0 1.0 Universal (CC0 1.0). */
+2024-05-18 : Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bra.c
+text = '''
+2024-01-20 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bra.h
+text = '''
+2024-01-20 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Bra86.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/BraIA64.c
+text = '''
+2023-02-20 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/BwtSort.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/BwtSort.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Compiler.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/CpuArch.c
+text = '''
+Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/CpuArch.h
+text = '''
+Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Delta.c
+text = '''
+2021-02-09 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Delta.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/DllSecur.c
+text = '''
+2023-12-03 : Igor Pavlov : Public domain *
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/DllSecur.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/HuffEnc.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/HuffEnc.h
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFind.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFind.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFindMt.c
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFindMt.h
+text = '''
+2024-01-22 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzFindOpt.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzHash.h
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2Dec.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2Dec.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2DecMt.c
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2DecMt.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2Enc.c
+text = '''
+2023-04-13 : Igor Pavlov : Public domain *
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma2Enc.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma86.h
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma86Dec.c
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Lzma86Enc.c
+text = '''
+2023-03-03 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaDec.c
+text = '''
+2023-04-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaDec.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaEnc.c
+text = '''
+Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaEnc.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaLib.c
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/LzmaLib.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Md5.c
+text = '''
+: Igor Pavlov : Public domain
+This code is based on Colin Plumb's public domain md5.c code */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Md5.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/MtCoder.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/MtCoder.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/MtDec.c
+text = '''
+2024-02-20 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/MtDec.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd.h
+text = '''
+PPMd var.I (2002): Dmitry Shkarin : Public domain
+This code is based on PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+This code is based on PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain
+PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7Dec.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7Enc.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+PPMd var.H (2001): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd7aDec.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.H (2001): Dmitry Shkarin : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd8.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+This code is based on PPMd var.I (2002): Dmitry Shkarin : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd8.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.I (2002): Dmitry Shkarin : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd8Dec.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.I (2002): Dmitry Shkarin : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Ppmd8Enc.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.I (2002): Dmitry Shkarin : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Precomp.h
+text = '''
+2024-01-25 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/RotateDefs.h
+text = '''
+2023-06-18 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha1.c
+text = '''
+: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha1.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha1Opt.c
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha256.c
+text = '''
+: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha256.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha256Opt.c
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha3.c
+text = '''
+: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha3.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha512.c
+text = '''
+: Igor Pavlov : Public domain
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha512.h
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sha512Opt.c
+text = '''
+: Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sort.c
+text = '''
+2014-04-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Sort.h
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/SwapBytes.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/SwapBytes.h
+text = '''
+2023-04-02 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Threads.c
+text = '''
+2024-03-28 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Threads.h
+text = '''
+2024-03-28 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7z/7zMain.c
+text = '''
+2024-02-28 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7z/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7z/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipInstall/7zipInstall.c
+text = '''
+2024-04-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipInstall/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipInstall/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipUninstall/7zipUninstall.c
+text = '''
+2024-03-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipUninstall/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/7zipUninstall/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/Lzma/LzmaUtil.c
+text = '''
+2023-03-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/Lzma/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/LzmaLib/LzmaLibExports.c
+text = '''
+2023-03-05 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/LzmaLib/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/LzmaLib/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/SfxSetup/Precomp.c
+text = '''
+2013-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/SfxSetup/Precomp.h
+text = '''
+2024-01-23 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Util/SfxSetup/SfxSetup.c
+text = '''
+
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Xxh64.h
+text = '''
+2024-01-24 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Xz.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/Xz.h
+text = '''
+2024-01-26 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzCrc64.c
+text = '''
+2023-12-08 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzCrc64.h
+text = '''
+2023-12-08 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzCrc64Opt.c
+text = '''
+2023-12-08 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzDec.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzEnc.c
+text = '''
+2024-03-01 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzEnc.h
+text = '''
+2023-04-13 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/XzIn.c
+text = '''
+2023-09-07 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/C/ZstdDec.h
+text = '''
+2024-01-21 : Igor Pavlov : Public domain */
+'''
+
+package = 7zip
+location = https://github.com/ip7z/7zip/blob/main/CPP/7zip/Archive/PpmdHandler.cpp
+text = '''
+2020 : Igor Pavlov : Public domain
+Carryless rangecoder (1999): Dmitry Subbotin : Public domain */
+PPMd var.H (2001) / var.I (2002): Dmitry Shkarin : Public domain
+'''
+
+package = libtommath
+location = https://github.com/libtom/libtommath/blob/0.41/LICENSE
+text = '''
+LibTomMath is hereby released into the Public Domain.  
+
+-- Tom St Denis
+'''
+
+package = linux-firmware
+location = qcom/NOTICE.txt
+text = '''
+Please do not copyright this code.  This code is in the public domain.
+
+LANDON CURT NOLL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO
+EVENT SHALL LANDON CURT NOLL BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+'''
+
+
+package = linux-firmware
+location = qcom/NOTICE.txt
+text = '''
+Originally witten by Steve Reid <steve@edmweb.com>
+
+Modified by Aaron D. Gifford <agifford@infowest.com>
+
+NO COPYRIGHT - THIS IS 100% IN THE PUBLIC DOMAIN
+
+The original unmodified version is available at:
+   ftp://ftp.funet.fi/pub/crypt/hash/sha/sha1.c
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR(S) AND CONTRIBUTORS ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR(S) OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
 '''

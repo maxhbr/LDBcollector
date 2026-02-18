@@ -4,9 +4,14 @@
 %else
 %bcond_with     rpmlint
 %endif
+%if 0%{?fedora} > 39
+%bcond_without  scancode
+%else
+%bcond_with     scancode
+%endif
 
 Name:           fedora-license-data
-Version:        1.45
+Version:        1.73
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -19,6 +24,9 @@ BuildArch:      noarch
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  make
+%if 0%{?fedora} > 39
+BuildRequires:  scancode-toolkit
+%endif
 BuildRequires:  python3-devel
 %if 0%{?fedora} || 0%{?rhel} >= 8
 BuildRequires:  (python%{python3_pkgversion}-tomli if python%{python3_pkgversion} < 3.11)
@@ -51,16 +59,34 @@ The Fedora Legal team is responsible for this project.
 
 %if %{with rpmlint}
 %package -n rpmlint-%{name}
-Summary:        Rpmlint configuration with valid license expressions
+Summary:        Rpmlint configuration with valid SPDX license identifiers
 # this package does not need to depend on the main one
 Requires:       rpmlint >= 2
 Supplements:    rpmlint >= 2
 
+# Require the legacy subpackage for backwards compatibility
+%if 0%{?fedora} && 0%{?fedora} < 41
+Requires:       rpmlint-%{name}-legacy = %{version}-%{release}
+%endif
+
 %description -n rpmlint-%{name}
 This package contains information about licenses used in the Fedora
 Linux project. The licenses are stored in a way that makes rpmlint read it.
-Both the SPDX license expressions and the legacy (callaway) expressions are
-allowed.
+Only the SPDX license identifiers are listed in this package.
+The legacy (callaway) identifiers are listed in rpmlint-%{name}-legacy.
+
+The Fedora Legal team is responsible for the content.
+
+
+%package -n rpmlint-%{name}-legacy
+Summary:        Rpmlint configuration with legacy (callaway) license identifiers
+Requires:       rpmlint >= 2
+
+%description -n rpmlint-%{name}-legacy
+This package contains information about licenses used in the Fedora
+Linux project. The licenses are stored in a way that makes rpmlint read it.
+Only the legacy (callaway) identifiers are listed in this package.
+The SPDX identifiers are listed in rpmlint-%{name}.
 
 The Fedora Legal team is responsible for the content.
 %endif
@@ -71,10 +97,10 @@ The Fedora Legal team is responsible for the content.
 
 
 %build
-%make_build spec-validate json grammar %{?with_rpmlint:rpmlint}
+%make_build spec-validate json grammar %{?with_scancode:scancode} %{?with_rpmlint:rpmlint}
 
 %install
-make DESTDIR=%{buildroot} install-json install-grammar %{?with_rpmlint:install-rpmlint}
+make DESTDIR=%{buildroot} install-json install-grammar %{?with_scancode:install-scancode} %{?with_rpmlint:install-rpmlint}
 
 %check
 %if 0%{?fedora} || 0%{?rhel} > 8
@@ -92,11 +118,324 @@ make check-grammar
 %files -n rpmlint-%{name}
 %license LICENSES/CC0-1.0.txt
 %doc AUTHORS README.md
-%config(noreplace) %{_sysconfdir}/xdg/rpmlint/*.toml
+%config(noreplace) %{_sysconfdir}/xdg/rpmlint/fedora-spdx-licenses.toml
+
+%files -n rpmlint-%{name}-legacy
+%license LICENSES/CC0-1.0.txt
+%doc AUTHORS README.md
+%config(noreplace) %{_sysconfdir}/xdg/rpmlint/fedora-legacy-licenses.toml
 %endif
 
 
 %changelog
+* Mon Oct 27 2025 Miroslav Suchý <msuchy@redhat.com> 1.73-1
+- add dedications from linux-firmware from qcom/NOTICE.txt
+- add LGPL-2.0-only WITH Classpath-exception-2.0-short
+- add OSSP license
+- add GPL-3.0-or-later WITH GCC-exception-2.0
+- add hyphen-bulgarian license
+- add GPL-2.0-or-later WITH kvirc-openssl-exception
+- add LICENCE.siano from linux-firmware to firmware.txt
+- add HPND-SMC
+- removed LicenseRef-Fedora-Temporary-IJG
+- add LicenseRef-Fedora-Wadalab
+- rename LicenseRef-Fedora-Temporary-* to AdditionRef-Fedora-Temporary-*
+
+* Tue Sep 23 2025 Miroslav Suchý <msuchy@redhat.com> 1.72-1
+- rebuild
+
+* Tue Sep 23 2025 Miroslav Suchý <msuchy@redhat.com> 1.71-1
+- add GPL-2.0-or-later WITH LicenseRef-Fedora-Temporary-kvirc-openssl-exception
+- add GPL-3.0-or-later WITH LicenseRef-Fedora-Temporary-cryptsetup-OpenSSL-
+  exception
+- add LGPL-2.1-or-later WITH LicenseRef-Fedora-Temporary-Simple-Library-
+  exception
+- add AGPL-3.0-or-later WITH LicenseRef-Fedora-Temporary-PS-or-PDF-font-
+  exception-20170817
+- add LGPL-2.0-only WITH LicenseRef-Fedora-Temporary-Classpath-exception-
+  variation
+- add LicenseRef-Fedora-Temporary-IJG
+- add LicenseRef-Fedora-Temporary-BSD-1-Clause-alglib
+- add LicenseRef-Fedora-Temporary-OSSP
+- add LicenseRef-Fedora-Temporary-AZL
+- add LicenseRef-Fedora-Temporary-Python-trace
+- add Advanced-Cryptics-Dictionary license
+- add BSD-Mark-Modifications license
+- Remove deprecated parts from JSON
+- grammar: sort ID alphabetically
+- grammar: do not allow bad license with OR operator
+- add WTFNMFPL license
+- add LicenseRef-HPND-TAES as not-allowed
+- add LGPL-2.0-only WITH Universal-FOSS-exception-1.0
+- OPUBL-1.0: Move packages_with_exceptions into [license]
+- Add public-domain dedication for tinyxml2
+- add WordNet license
+- Extend ISO-8879 exception to dotnet10.0
+
+* Thu Jul 24 2025 Miroslav Suchý <msuchy@redhat.com> 1.70-1
+- add GPL-2.0-only WITH Universal-FOSS-exception-1.0
+- add libpng licenses
+- add UltraPermissive dedication of tolua++
+- add note and link that APSL-1.x can be used as APSL-2.0
+- add LicenseRef-Remix-icon as not-allowed
+- describe how to use LicenseRef-IUPAC-InChI-Trust
+- Add public-domain dedication for dcm2niix
+- add LicenseRef-Aalok-Everfree as not-allowed
+- add public domain dedication of libtommath
+- add public domain dedication of heimdal
+
+* Tue Jul 01 2025 Miroslav Suchý <msuchy@redhat.com> 1.69-1
+- add BSD-3-Clause-No-Nuclear-License as not allowed
+
+* Tue Jun 03 2025 Miroslav Suchý <msuchy@redhat.com> 1.68-1
+- add CC-SA-1.0 as allowed-content
+- allow golang-x-perf to use CC-BY-4.0 for code as an exception
+- add GPL-3.0-or-later WITH Libtool-exception
+- UltraPermissive: Add a text found in libisds
+- add LicenseRef-Geotrans as not-allowed
+- Add public-domain dedication for jemalloc/rust-tikv-jemalloc-sys
+- add Aspell-RU
+- add ngrep
+- add Unlicense-libwhirlpool
+- add Unlicense-libtelnet
+- add CDLA-Permissive-2.0
+- add BSD-3-Clause WITH AdditionRef-Dart
+- add UltraPermissive dedication of autossh
+
+* Fri May 02 2025 Miroslav Suchý <msuchy@redhat.com> 1.67-1
+- add autossh man page ultra permissive dedication
+- add LGPL-2.1-only WITH Digia-Qt-LGPL-exception-1.1
+- add jove license
+- add man2html license
+- add DocBook-DTD license
+- add BSD-2-Clause-pkgconf-disclaimer
+- correct expression of PHP-3.0
+- Add SpacemiT esos.elf license as allowed-firmware
+- Add 7zip public domain headers
+- add Game-Programming-Gems license
+- add LGPL-2.1-or-later WITH polyparse-exception
+- add GPL-3.0-or-later WITH GPL-3.0-linking-source-exception
+- enhance BSD-3-Clause-Clear usage text
+- document known exception for kernel for BSD-3-Clause-Clear
+- add LicenseRef-Hauppauge-firmware-eula as not allowed
+- add LicenseRef-Hauppauge as not allowed
+
+* Thu Mar 27 2025 Miroslav Suchý <msuchy@redhat.com> 1.66-1
+- Mark LicenseRef-CRC32 as deprecated
+- allow packages that includes or bundle ccan as an exception
+- add LicenseRef-Julius-dictation-kit as not allowed
+- add Seiko-Epson license to firmware
+- add public domain findings for sc
+- add ultra permissive dedication of perl-Math-FFT
+- add aastr ultra permissive dedication
+- add GPL-2.0-or-later WITH mif-exception
+- add public domain dedication for libtelnet
+- Add PHP-3.0
+- LicenseRef-Fedora-Public-Domain: Add zpaqfranz
+
+* Thu Feb 20 2025 Miroslav Suchý <msuchy@redhat.com> 1.65-1
+- Add BSD-3-Clause WITH AdditionRef-WebM-patent license
+- add public domain dedication in desktop-backgrouds
+- mark OFL-1.1-RFN and OFL-1.1-no-RFN as equal
+- ultrapermissive dedication of broda from crosswords package
+
+* Thu Jan 09 2025 Miroslav Suchý <msuchy@redhat.com> 1.64-1
+- add copyleft-next-0.3.1 license
+- Add public-domain text for llvm-test-suite
+- document usage exception for fedora-remix-logos
+- add MIPS and ThirdEye licenses
+- add libcsv UltraPermissive dedication
+- Add public-domain text for stb
+
+* Fri Dec 06 2024 Miroslav Suchý <msuchy@redhat.com> 1.63-1
+- add LICENSE.Sigma from sigrok-firmware
+- Add public-domain text for python-zmq
+- add public domain for mg
+
+* Fri Nov 22 2024 Miroslav Suchý <msuchy@redhat.com> 1.62-1
+- add Avasys public license as allowed-firmware
+- add public domain dedication for python-hexdump
+- add public domain dedication for allegro (loadpng addon)
+- add LicenseRef-soundfont as not-allowed
+- add broadcom firmware license
+- Reclassify LicenseRef-qmail as allowed (deprecated)
+- add GPL-2.0-only WITH CGAL-linking-exception
+- add firmware licensing terms for atmel-firmware
+- add wwl license
+- add generic-xts license
+- add LicenseRef-Mod-Archive as not-allowed
+- add public domain dedication for perl-Math-Expression-Evaluator
+- add public domain dedication for perl-MaxMind-DB-Reader-XS
+- add public domain dedication for python-django-pdb
+- add UltraPermissive dedication of package python-utmp
+- add public domain dedication for re2c
+- add public domain dedication for python-nine
+- add public domain dedication for perl-Devel-Trace
+- add LGPL-3.0-or-later WITH LGPL-3.0-linking-exception
+
+* Thu Nov 07 2024 Miroslav Suchý <msuchy@redhat.com> 1.61-1
+- Revert "add LicenseRef-BSD-3-Clause-firmware"
+
+* Thu Nov 07 2024 Miroslav Suchý <msuchy@redhat.com> 1.60-1
+- add LicenseRef-Intel-firmware
+- add public domain dedication for oflb-goudy-bookletter-1911-fonts
+- add public domain dedication for nacl
+- add Apache-2.0 WITH mxml-exception
+- add public domain dedication for nec2c
+- add any-OSI-perl-modules
+- add public domain dedication for ogre
+- add text of Unsplash license
+- add LicenseRef-Intel-firmware
+- add SGI-B-1.1 as not-allowed
+- add public domain dedication for libgenht
+- add ultra permissive findings for lyx
+- add public domain findings for golang-github-xi2-xz
+- add UltraPermissive dedication of package samcoupe-rom
+- add UltraPermissive dedication of package radial
+- add LicenseRef-MIT-CRL-Xim license as not-allowed
+- add public domain findings for icon
+- add public domain findings for jhead
+- add public domain findings for mingw-pdcurses
+- add LicenseRef-BASS (beneath a steel sky) as not-allowed
+- add public domain and ultra permissive findings for rubygem-ruby-shadow
+
+* Thu Oct 24 2024 Miroslav Suchý <msuchy@redhat.com> 1.59-1
+- add public domain findings for sdl-telnet
+- add public domain findings for libmodplug
+- add public domain findings for mb2md
+- add public domain findings for perl-DateTime-Precise
+- add public domain findings for gimpfx-foundry
+- add public domain findings for gnome-valgrind-session
+- add public domain findings for sqlite2
+- Blessing.toml -> blessing.toml
+- add public domain findings for surfraw
+- add GPL-3.0-or-later WITH GPL-3.0-389-ds-base-exception
+- add public domain findings for klt
+- add public domain findings for libb64
+- add public domain dedication of emacs-slime
+- add public domain dedication of cproto
+- add public domain dedication for cockatrice
+- add LGPL-2.1-or-later WITH Independent-modules-exception
+
+* Thu Oct 10 2024 Miroslav Suchý <msuchy@redhat.com> 1.58-1
+- add Ultra permissive dedication of docbook5-schemas
+- add public domain dedication for clc
+- add Sendmail-Open-Source-1.1 license
+- add public domain dedication for biblesync
+- add public domain dedication for BareBonesBrowserLaunch
+- add public domain dedication for astronomy-menus
+- add LGPL-2.1-only WITH OCCT-exception-1.0
+- add CERN-OHL-P-2.0
+- add Jam license
+- add public domain dedication for ants
+
+* Fri Sep 27 2024 Miroslav Suchý <msuchy@redhat.com> 1.57-1
+- add filedrop public domain dedication
+- add ddate public domain dedication
+- Add wgrib license text
+- add zork public domain dedication
+- add AGPL-3.0-or-later WITH GPL-3.0-linking-source-exception
+- allow CC-BY-SA 3.0 for fonts
+- add Boehm-GC-without-fee license
+- add LicenseRef-Julius as not allowed
+
+* Fri Sep 13 2024 Miroslav Suchý <msuchy@redhat.com> 1.56-1
+- add public domain dedication in package calf
+- add public domain dedication for btop
+- add public domain dedication for upx
+- add DocBook-Stylesheet
+- add LGPL-2.1-only WITH WxWindows-exception-3.1
+- add public domain dedication for bsh
+- Add vim into OPUBL-1.0 exceptions
+- add GPL-1.0-or-later WITH Autoconf-exception-generic
+- LicenseRef-Fedora-Public-Domain: Add perlmulticore.h
+- add MIT-Click
+
+* Fri Aug 30 2024 Miroslav Suchý <msuchy@redhat.com> 1.55-1
+- Split rpmlint-fedora-license-data-legacy from rpmlint-fedora-license-
+  data
+- add LicenseRef-IUPAC-InChI-Trust as not allowed
+- add TrustedQSL
+- add TU-Berlin-1.0 license
+- add DocBook-XML license
+- add DocBook-Schema license
+- add AGPL-3.0-or-later WITH PS-or-PDF-font-exception-20170817
+- Extend ISO-8879 exception to dotnet9.0
+
+* Fri Aug 16 2024 Miroslav Suchý <msuchy@redhat.com> 1.54-1
+- public domain dedication found in mailcap
+- public domain dedications found in web server icons
+- replaced obsolescent command with modern equivalent
+- add LicenseRef-compface
+- Add rijndael from sdl-crypto to public domain
+- add public domain dedication for xz
+- Add sha1 from sdl-crypto to public domain
+- correct location of HPND-Netrek.toml
+
+* Wed Jul 31 2024 Miroslav Suchý <msuchy@redhat.com> 1.53-1
+- add HPND-Netrek license
+- Add license text for py-sdl2 Public Domain license
+- remove LicenseRef-framed as ulem license was extended to allow LicenseRef-
+  framed variation
+- add HIDAPI license
+- add Ruby-pty license
+- add LicenseRef-OASIS-spec
+
+* Fri Jul 19 2024 Miroslav Suchý <msuchy@redhat.com> 1.52-1
+- Add LicenseRef-Frontier-Artistic-1.0 as not-allowed
+- Add LicenseRef-JasPer-1.0 as not-allowed
+- Create missing TOML for Callaway Nmap but reclassify as not-allowed, with
+  usage exception
+- Add LicenseRef-NPSL-0.92 as not-allowed, corresponding to Callaway-era NPSL
+- Add LicenseRef-NPSL-0.93 as not-allowed to cover NPSL 0.93 and 0.94
+- Correct TOML files for LicenseRef-NPSL-0.94 and LicenseRef-NPSL-0.95
+- Add LicenseRef-NPSL-0.95 as not-allowed
+
+* Wed Jul 03 2024 Miroslav Suchý <msuchy@redhat.com> 1.51-1
+- add conditions when to use scancode
+
+* Wed Jul 03 2024 Miroslav Suchý <msuchy@redhat.com> 1.50-1
+- include scancode-license-policy.yaml in rpm
+- add BSD-3-Clause-No-Nuclear-Warranty license
+- add unicode-mappiing license as not-allowed
+- add LicenseRef-W3C-Document-2023
+- add W3C-20150513 license
+- add 'make scancode' that produces scancode license policy file
+- Add LicenseRef-framed as allowed
+
+* Fri Jun 21 2024 Miroslav Suchý <msuchy@redhat.com> 1.49-1
+- add AMD-newlib
+
+* Mon Jun 10 2024 Miroslav Suchý <msuchy@redhat.com> 1.48-1
+- Add GPL-2.0-only WITH vsftpd-openssl-exception
+
+* Thu May 23 2024 Miroslav Suchý <msuchy@redhat.com> 1.47-1
+- add GPL-2.0-or-later WITH RRDtool-FLOSS-exception-2.0
+- add text of ultrapermissive dedication from sublimehq
+- add HPND-export2-US license
+- add Gutmann license
+- add HPND-merchantability-variant license
+- fix case in license id of BSD-2-Clause-first-lines
+- add HPND-export-US-acknowledgement license
+- add HPND-Intel license
+- add loguru public domain dedication
+- add BSD-3-Clause WITH AdditionRef-OpenEXR-Additional-IP-Rights-Grant
+- add HPND-sell-variant-MIT-disclaimer-rev license
+- add GD license
+- Add crc32 license found in libsurvive to UltraPermissive
+- allow lower case variant
+- add any-OSI license
+- document dotnet* packages as exception for LicenseRef-ISO-8879
+
+* Fri Apr 26 2024 Miroslav Suchý <msuchy@redhat.com> 1.46-1
+- rename LicenseRef-Catharon to Catharon
+- add NCL license
+- add HPND-UC-export-US license
+- Add GPL-2.0-only_WITH_cryptsetup-OpenSSL-exception
+- add Sun-PPP-2000 license
+- add BSD-2-clause-first-lines license
+- add pkgconf license
+
 * Fri Apr 12 2024 Miroslav Suchý <msuchy@redhat.com> 1.45-1
 - Update public-domain-text.txt for OpenCTM
 - lark-parser was renamed to lark, allow both

@@ -17,6 +17,500 @@
 # The actual text found that allow redistribution..
 #
 # Copy template below and add yours to top of list, adding a space between entries.
+#
+# package = 
+# location = 
+# text = '''
+# '''
+
+package = linux-firmware
+location = LICENSE.QualcommAtheros_ar3k
+           LICENSE.QualcommAtheros_ath10k
+text = '''
+Copyright (c) 2015, Qualcomm Atheros, Inc.
+All rights reserved.
+
+Redistribution. Reproduction and redistribution in binary form, without
+modification, for use solely in conjunction with a Qualcomm Atheros, Inc.
+chipset, is permitted provided that the following conditions are met:
+
+  • Redistributions must reproduce the above copyright notice and the following
+    disclaimer in the documentation and/or other materials provided with the
+    distribution.
+
+  • Neither the name of Qualcomm Atheros, Inc. nor the names of its suppliers
+    may be used to endorse or promote products derived from this Software
+    without specific prior written permission.
+
+  • No reverse engineering, decompilation, or disassembly of this Software is
+    permitted.
+
+Limited patent license. Qualcomm Atheros, Inc. (“Licensor”) grants you
+(“Licensee”) a limited, worldwide, royalty-free, non-exclusive license under
+the Patents to make, have made, use, import, offer to sell and sell the
+Software. No hardware per se is licensed hereunder.
+The term “Patents” as used in this agreement means only those patents or patent
+applications owned solely and exclusively by Licensor as of the date of
+Licensor’s submission of the Software and any patents deriving priority (i.e.,
+having a first effective filing date) therefrom. The term “Software” as used in
+this agreement means the firmware image submitted by Licensor, under the terms
+of this license, to git://git.kernel.org/pub/scm/linux/kernel/git/firmware/
+linux-firmware.git.
+Notwithstanding anything to the contrary herein, Licensor does not grant and
+Licensee does not receive, by virtue of this agreement or the Licensor’s
+submission of any Software, any license or other rights under any patent or
+patent application owned by any affiliate of Licensor or any other entity
+(other than Licensor), whether expressly, impliedly, by virtue of estoppel or
+exhaustion, or otherwise.
+
+DISCLAIMER. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+'''
+
+package = linux-firmware
+location = LICENCE.IntcSST2
+           LICENSE.i915
+text = '''
+Copyright (c) 2014, Intel Corporation.
+All rights reserved.
+
+Redistribution.  Redistribution and use in binary form, without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions must reproduce the above copyright notice and the
+  following disclaimer in the documentation and/or other materials
+  provided with the distribution.
+* Neither the name of Intel Corporation nor the names of its suppliers
+  may be used to endorse or promote products derived from this software
+  without specific prior written permission.
+* No reverse engineering, decompilation, or disassembly of this software
+  is permitted.
+
+Limited patent license.  Intel Corporation grants a world-wide,
+royalty-free, non-exclusive license under patents it now or hereafter
+owns or controls to make, have made, use, import, offer to sell and
+sell ("Utilize") this software, but solely to the extent that any
+such patent is necessary to Utilize the software alone, or in
+combination with an operating system licensed under an approved Open
+Source license as listed by the Open Source Initiative at
+http://opensource.org/licenses.  The patent license shall not apply to
+any other combinations which include this software.  No hardware per
+se is licensed hereunder.
+
+DISCLAIMER.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+'''
+
+package = linux-firmware
+location = LICENSE.amdnpu
+text = '''
+Copyright (C) 2023-2024 Advanced Micro Devices, Inc. All Rights Reserved. 
+
+Redistribution and use of this Software in unmodified binary form only are permitted provided that the following conditions are met:
+
+1) Redistributions must reproduce the above copyright notice and this license in the documentation and/or other materials provided with the distribution.
+
+2) No reverse engineering, decompilation, or disassembly of this software is permitted (unless to the extent explicitly permitted by law).
+
+3) Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+'''
+
+package = linux-firmware
+location = LICENCE.Marvell
+text = '''
+Copyright © 2019.  Marvell International Ltd.  All rights reserved.
+
+Redistribution and use in binary form is permitted provided that the following
+conditions are met:
+
+1. Redistributions must reproduce the above copyright notice, this list of
+conditions and the following disclaimer in the documentation and/or other
+materials provided with the distribution.
+
+2. Redistribution and use shall be used only with Marvell silicon products.
+Any other use, reproduction, modification, translation, or compilation of the
+Software is prohibited.
+
+3. No reverse engineering, decompilation, or disassembly is permitted.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THIS SOFTWARE IS PROVIDED
+“AS IS” WITHOUT WARRANTY OF ANY KIND, INCLUDING, WITHOUT LIMITATION, ANY EXPRESS
+OR IMPLIED WARRANTIES OF MERCHANTABILITY, ACCURACY, FITNESS OR SUFFICIENCY FOR A
+PARTICULAR PURPOSE, SATISFACTORY QUALITY, CORRESPONDENCE WITH DESCRIPTION, QUIET
+ENJOYMENT OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.
+MARVELL, ITS AFFILIATES AND THEIR SUPPLIERS DISCLAIM ANY WARRANTY THAT THE
+DELIVERABLES WILL OPERATE WITHOUT INTERRUPTION OR BE ERROR-FREE.
+'''
+
+package = linux-firmware
+location = LICENCE.OLPC
+text = '''
+Copyright (c) 2006, One Laptop per Child and Marvell Corporation.
+All rights reserved.
+
+Redistribution.  Redistribution and use in binary form, without 
+modification, are permitted provided that the following conditions are 
+met:
+
+* Redistributions must reproduce the above copyright notice and the 
+  following disclaimer in the documentation and/or other materials 
+  provided with the distribution.
+* Neither the name of Marvell Corporation nor the names of its suppliers 
+  may be used to endorse or promote products derived from this software 
+  without specific prior written permission.
+* No reverse engineering, decompilation, or disassembly of this software 
+  is permitted.
+* You may not use or attempt to use this software in conjunction with
+  any product that is offered by a third party as a replacement,
+  substitute or alternative to a Marvell Product where a Marvell Product
+  is defined as a proprietary wireless LAN embedded client solution of
+  Marvell or a Marvell Affiliate.
+
+DISCLAIMER.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND 
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
+COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS 
+OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND 
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR 
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE 
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
+DAMAGE.
+'''
+
+package = linux-firmware
+location = LICENCE.ti-connectivity
+text = '''
+Copyright (c) 2016-2024 Texas Instruments Incorporated
+
+All rights reserved not granted herein.
+
+Limited License.
+
+Texas Instruments Incorporated grants a world-wide, royalty-free, non-exclusive
+license under copyrights and patents it now or hereafter owns or controls to
+make, have made, use, import, offer to sell and sell ("Utilize") this software
+subject to the terms herein. With respect to the foregoing patent license, such
+license is granted solely to the extent that any such patent is necessary to
+Utilize the software alone. The patent license shall not apply to any
+combinations which include this software, other than combinations with devices
+manufactured by or for TI (“TI Devices”). No hardware patent is licensed
+hereunder.
+
+Redistributions must preserve existing copyright notices and reproduce this
+license (including the above copyright notice and the disclaimer and
+(if applicable) source code license limitations below) in the documentation
+and/or other materials provided with the distribution
+
+Redistribution and use in binary form, without modification, are permitted
+provided that the following conditions are met:
+
+	* No reverse engineering, decompilation, or disassembly of this
+	  software is permitted with respect to any software provided in binary
+	  form.
+
+	* any redistribution and use are licensed by TI for use only with TI
+	  Devices.
+
+	* Nothing shall obligate TI to provide you with source code for the
+	  software licensed and provided to you in object code.
+
+If software source code is provided to you, modification and redistribution of
+the source code are permitted provided that the following conditions are met:
+
+	* any redistribution and use of the source code, including any
+	  resulting derivative works, are licensed by TI for use only with TI
+	  Devices.
+
+	* any redistribution and use of any object code compiled from the
+	  source code and any resulting derivative works, are licensed by TI
+	  for use only with TI Devices.
+
+Neither the name of Texas Instruments Incorporated nor the names of its
+suppliers may be used to endorse or promote products derived from this
+software without specific prior written permission.
+
+DISCLAIMER.
+
+THIS SOFTWARE IS PROVIDED BY TI AND TI’S LICENSORS "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL TI AND TI’S LICENSORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+'''
+
+package = linux-firmware
+location = LICENCE.xc4000
+text = '''
+// Copyright (c) 2009, Xceive Corporation <info@xceive.com>
+//
+// Permission to use, copy, modify, and/or distribute this software, only
+// for use with Xceive ICs, for any purpose with or without fee is hereby
+// granted, provided that the above copyright notice and this permission
+// notice appear in all source code copies.
+//
+// THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+// WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+// MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+// ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+// WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+// ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+// OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+'''
+
+package = linux-firmware
+location = LICENCE.adsp_sst
+text = '''
+Copyright (c) 2014-15 Intel Corporation.
+All rights reserved.
+
+Redistribution.
+
+Redistribution and use in binary form, without modification, are permitted
+provided that the following conditions are met:
+*    Redistributions must reproduce the above copyright notice and the
+     following disclaimer in the documentation and/or other materials provided
+     with the distribution.
+*    Neither the name of Intel Corporation nor the names of its suppliers may
+     be used to endorse or promote products derived from this software without
+     specific prior written permission.
+*    No reverse engineering, decompilation, or disassembly of this software is
+     permitted.
+
+
+Limited patent license.
+
+Intel Corporation grants a world-wide, royalty-free, non-exclusive license
+under patents it now or hereafter owns or controls to make, have made, use,
+import, offer to sell and sell ("Utilize") this software, but solely to the
+extent that any such patent is necessary to Utilize the software alone. The
+patent license shall not apply to any combinations which include this software.
+No hardware per se is licensed hereunder.
+
+
+DISCLAIMER.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+'''
+
+package = linux-firmware
+location = LICENCE.mediatek
+text = '''
+MediaTek Inc. grants permission to use and redistribute aforementioned firmware
+files for the use with devices containing MediaTek chipsets, but not as part of
+the Linux kernel or in any other form which would require these files themselves
+to be covered by the terms of the GNU General Public License or the GNU Lesser
+General Public License.
+
+These firmware files are distributed in the hope that they will be useful, but
+are provided WITHOUT ANY WARRANTY, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTY
+OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
+package = iscan-firmware
+location = LICENSE.EPSON.en.txt
+text = '''
+SEIKO EPSON CORPORATION
+SOFTWARE LICENSE AGREEMENT
+
+IMPORTANT! READ THIS SOFTWARE LICENSE AGREEMENT CAREFULLY.  The
+computer software product, fontware, typefaces and/or data, including
+any accompanying explanatory written materials (the "Software") should
+only be installed or used by the Licensee ("you") on the condition you
+agree with SEIKO EPSON CORPORATION ("EPSON") to the terms and
+conditions set forth in this Agreement.  By installing or using the
+Software, you are representing to agree all the terms and conditions
+set forth in this Agreement.  You should read this Agreement carefully
+before installing or using the Software.  If you do not agree with the
+terms and conditions of this Agreement, you are not permitted to
+install or use the Software.
+
+1. License.  EPSON and its suppliers grant you a personal,
+   nonexclusive, royalty-free limited license to install, copy, use
+   and redistribute the Software, provided that the copyright notice
+   is reproduced in its entirety on the copy.  The term "Software"
+   shall include the software components, media, all copies made by
+   you and any upgrades, modified versions, updates, additions and
+   copies of the Software licensed to you by EPSON or its suppliers.
+   EPSON and its suppliers reserve all rights not granted herein.
+
+2. Other Rights and Limitations.  You agree not to modify, adapt or
+   translate the Software.  You also agree not to attempt to reverse
+   engineer, decompile, disassemble or otherwise attempt to discover
+   the source code of the Software.  You may not rent, lease, encumber
+   or lend the Software.  You may, however, transfer all your rights
+   to use the Software to another person or legal entity provided that
+   you transfer this Agreement, the Software, including all copies,
+   updates and prior versions, to such person or entity, and that you
+   retain no copies, including copies stored on a computer. Some
+   states or jurisdictions, however, do not allow the restriction or
+   limitation on transfer of the Software, so the above limitations
+   may not apply to you.
+
+3. Ownership.  Title, ownership rights, and intellectual property
+   rights in and to the Software and any copies thereof shall remain
+   with EPSON or its suppliers.  There is no transfer to you of any
+   title to or ownership of the Software and this License shall not be
+   construed as a sale of any rights in the Software.  The Software is
+   protected by Japanese Copyright Law and international copyright
+   treaties, as well as other intellectual property laws and treaties.
+   You also agree not to remove or alter any copyright and other
+   proprietary notices on any copies of the Software.
+
+4. Protection and Security.  You agree to use your best efforts and
+   take all reasonable steps to safeguard the Software to ensure that
+   no unauthorized person has access to them and that no unauthorized
+   copy, publication, disclosure or distribution of any of the
+   Software is made.  You acknowledge that the Software contains
+   valuable, confidential information and trade secrets, that
+   unauthorized use and copying are harmful to EPSON and its
+   suppliers, and that you have a confidentiality obligation as to
+   such valuable information and trade secrets.
+
+5. Limited Warranty.  You acknowledge and agree that the use of the
+   Software is at your sole risk.  THE SOFTWARE IS PROVIDED "AS IS"
+   AND WITHOUT ANY WARRANTY OF ANY KIND.  EPSON AND ITS SUPPLIERS DO
+   NOT AND CANNOT WARRANT THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY
+   USING THE SOFTWARE.  THE FOREGOING STATES THE SOLE AND EXCLUSIVE
+   REMEDIES FOR EPSON'S AND ITS SUPPLIERS' BREACH OF WARRANTY.  EXCEPT
+   FOR THE FOREGOING LIMITED WARRANTY, EPSON AND ITS SUPPLIERS MAKE NO
+   WARRANTIES, EXPRESS OR IMPLIED, AS TO NON-INFRINGEMENT,
+   MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE.  Some states
+   or jurisdictions do not allow the exclusion of implied warranties
+   or limitations on how long an implied warranty may last, so the
+   above limitations may not apply to you.  This warranty gives you
+   specific legal rights.  You may have other rights which vary from
+   state to state or jurisdiction to jurisdiction.
+
+   IN NO EVENT WILL EPSON OR ITS SUPPLIERS BE LIABLE TO YOU, WHETHER
+   ARISING UNDER CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT
+   LIABILITY, BREACH OR WARRANTY, MISREPRESENTATION OR OTHERWISE, FOR
+   ANY DIRECT, CONSEQUENTIAL, INCIDENTAL OR SPECIAL DAMAGES, INCLUDING
+   ANY LOST PROFITS OR LOST SAVINGS, EVEN IF EPSON, ITS SUPPLIERS OR
+   ANY REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+   DAMAGES, OR FOR ANY CLAIM BY ANY THIRD PARTY.  IN NO EVENT SHALL
+   EPSON'S OR ITS SUPPLIERS' LIABILITY UNDER THIS AGREEMENT EXCEED
+   THE AMOUNT THAT EPSON RECEIVED FROM YOU UNDER THIS AGREEMENT.  Some
+   states or jurisdictions, however, do not allow the exclusion or
+   limitation of incidental, consequential or special damages, so the
+   above limitations may not apply to you.
+
+6. Termination.  Without prejudice to any other rights EPSON has, this
+   Agreement shall automatically terminate upon failure by you to
+   comply with its terms.  You may also terminate this Agreement at
+   any time by uninstalling and destroying the Software and all copies
+   thereof.
+
+7. Governing Law and General Provisions.  This Agreement shall be
+   governed and construed under by the laws of Japan without regard to
+   its conflicts of law rules.  This Agreement is the entire agreement
+   between the parties with respect to the Software, and supersedes
+   any purchase order, communication, advertisement, or representation
+   concerning the Software.  This Agreement shall be binding upon, and
+   inure to the benefit of, the parties hereto and their respective
+   successors, assigns and legal representatives.  If any provision
+   herein is found void or unenforceable, it will not affect the
+   validity of the balance of the Agreement, which shall remain valid
+   and enforceable according to its terms.  This Agreement may only be
+   modified in writing signed by an authorized officer of EPSON.
+
+8. U.S. Government End Users.  If you are acquiring the Software on
+   behalf of any unit or agency of the United States Government, the
+   following provisions apply.  The Government agrees: (i) if the
+   Software is supplied to the Department of Defense (DoD), the
+   Software is classified as "Commercial Computer Software" and the
+   Government is acquiring only "restricted rights" in the Software
+   and its documentation as that term is defined in Clause
+   252.227-7013(c)(1) of the DFARS; and (ii) if the Software is
+   supplied to any unit or agency of the United States Government
+   other than DoD, the Government's rights in the Software and its
+   documentation will be as defined in Clause 52.227-19(c)(2) of the
+   FAR or, in the case of NASA, in Clause 18-52.227-86(d) of the NASA
+   Supplement to the FAR.
+
+
+EPSON EULA 07/01/2001
+'''
+
+package = atmel-firmware
+location = http://www.thekelleys.org.uk/atmel/atmel-firmware-1.3.tar.gz
+text = '''
+Copyright 2004 Atmel Corporation. All Rights Reserved. Redistribution                                                                                               
+and use of the microcode software ("Firmware") is permitted provided
+that the following conditions are met:
+
+    1. Firmware is redistributed in object code only.
+
+    2. Any reproduction of Firmware must contain the above copyright
+       notice, this list of conditions and the below disclaimer in the
+       documentation and/or other materials provided with the
+       distribution; and
+
+    3. The name of Atmel Corporation may not be used to endorse or
+       promote products derived from this Firmware without specific
+       prior written consent.
+
+DISCLAIMER: ATMEL PROVIDES THIS FIRMWARE "AS IS" WITH NO WARRANTIES OR
+INDEMNITIES WHATSOEVER. ATMEL EXPRESSLY DISCLAIMS ANY EXPRESS, STATUTORY
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NON-INFRINGEMENT. IN NO EVENT SHALL ATMEL BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ANY WAY OUT OF THE USE OF THIS FIRMWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+USER ACKNOWLEDGES AND AGREES THAT THE PURCHASE OR USE OF THE FIRMWARE
+WILL NOT CREATE OR GIVE GROUNDS FOR A LICENSE BY IMPLICATION, ESTOPPEL,
+OR OTHERWISE IN ANY INTELLECTUAL PROPERTY RIGHTS (PATENT, COPYRIGHT,
+TRADE SECRET, MASK WORK, OR OTHER PROPRIETARY RIGHT) EMBODIED IN ANY
+OTHER ATMEL HARDWARE OR FIRMWARE EITHER SOLELY OR IN COMBINATION WITH
+THE FIRMWARE.
+'''
 
 package = microcode_ctl
 location = https://raw.githubusercontent.com/intel/Intel-Linux-Processor-Microcode-Data-Files/main/license
@@ -60,6 +554,210 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 '''
 
+package = bcm283x-firmware
+location = https://github.com/raspberrypi/firmware/blob/master/boot/LICENCE.broadcom
+text = '''
+Copyright (c) 2006, Broadcom Corporation.
+Copyright (c) 2015, Raspberry Pi (Trading) Ltd
+All rights reserved.
+
+Redistribution.  Redistribution and use in binary form, without
+modification, are permitted provided that the following conditions are
+met:
+
+* This software may only be used for the purposes of developing for, 
+  running or using a Raspberry Pi device, or authorised derivative
+  device manufactured via the element14 Raspberry Pi Customization Service
+* Redistributions must reproduce the above copyright notice and the
+  following disclaimer in the documentation and/or other materials
+  provided with the distribution.
+* Neither the name of Broadcom Corporation nor the names of its suppliers
+  may be used to endorse or promote products derived from this software
+  without specific prior written permission.
+
+DISCLAIMER.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+'''
+
+package = linux-firmware
+location = LICENCE.siano
+text = ''' 
+FIRMWARE LICENSE TERMS
+
+Copyright (c) 2005-2014 Siano Mobile Silicon Ltd.
+All rights reserved.
+
+Redistribution. Redistribution and use in binary form, without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions must reproduce the above copyright notice and the
+following disclaimer in the documentation and/or other materials
+provided with the distribution.
+
+* Neither the name of Siano Mobile Silicon Ltd. nor the names of its
+suppliers may be used to endorse or promote products derived from this
+software without specific prior written permission.
+
+* No reverse engineering, decompilation, or disassembly of this software
+is permitted.
+
+DISCLAIMER. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+'''
+
+package = iscan-firmware
+# see spec of iscan-firmware on how to retrieve it
+location = iscan-plugin-gt-1500-2.2.0-1.x86_64.rpm
+text = '''
+                         AVASYS PUBLIC LICENSE
+                              2008-04-01
+
+  This License applies to any program or other work identified as such
+  at the point of distribution and/or in a suitable location in the
+  sources for a work including it, for example in a README file.  Such
+  sources should include a verbatim copy of this License.
+
+  The "Program", below, refers to any program or work covered by this
+  License; each "Licensee" is addressed as "you".
+
+  You may use, reproduce, modify and distribute the Program subject to
+  the terms and conditions below.
+
+
+    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  1. Copyright of the Program is reserved by AVASYS CORPORATION and
+     its Licensor(s).
+
+  2. You may freely reproduce and distribute verbatim copies of the
+     Program in any medium, provided that recipients of such copies
+     are given a copy of this License.  Verbatim copies are covered
+     by the terms of this License.
+
+  3. You may modify the Program and freely distribute your modified
+     version(s), provided that you distribute it under the terms of
+     this License.  Recipients of any modified version(s) should be
+     provided with a copy of this License.
+
+  4. You shall treat those parts of the Program that were provided
+     to you in executable or object code only as the proprietary
+     and confidential information of AVASYS CORPORATION and its
+     Licensor(s).
+
+  5. You may neither reverse engineer, reverse compile, reverse
+     assemble nor otherwise attempt to analyse those parts of the
+     Program that were provided to you in executable or object code
+     only.  However, as a special exception AVASYS CORPORATION and
+     its Licensor(s) give permission to reverse engineer the
+     Program in those cases, and only those cases, where this is
+     required by the terms stipulated in the GNU Library General
+     Public License or GNU Lesser General Public License, both as
+     published by the Free Software Foundation; either version 2 of
+     the former license, version 2.1 of the latter license, or (at
+     your option) any later version.
+
+  6. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO
+     WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE
+     LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING, THE COPYRIGHT
+     HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT
+     WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT
+     NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+     FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS TO THE
+     QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+     PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY
+     SERVICING, REPAIR OR CORRECTION.
+
+  7. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+     WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY
+     MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE
+     LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL,
+     INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR
+     INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS
+     OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+     YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH
+     ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN
+     ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+                     END OF TERMS AND CONDITIONS
+'''
+
+package = sigrok-firmware
+location = https://github.com/sigrokproject/sigrok-firmware/blob/master/asix-sigma/LICENSE.Sigma
+text = '''
+Copyright (c) 2006-2016, ASIX s.r.o.
+All rights reserved.
+
+Redistribution. Redistribution and use in hex coded form, without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions must reproduce the above copyright notice and the
+   following disclaimer in the documentation and/or other materials
+   provided with the distribution.
+
+* Redistributions must retain the same format. It is not allowed to
+   include or distribute documentation about the format itself in any
+   other form than source files.
+
+* Neither the name of ASIX s.r.o. nor the names of
+   its suppliers may be used to endorse or promote products derived
+   from this software without specific prior written permission.
+
+* No reverse engineering, decompilation, or disassembly of this
+   software is permitted.
+
+* Modifications and/or source files may be requested from ASIX s.r.o.
+   in well-founded cases.
+
+THIS SOFTWARE IS PROVIDED BY ASIX S.R.O. ''AS IS'' AND ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL ASIX S.R.O. BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+'''
+
+package = spacemit-firmware
+location = https://gitee.com/bianbu-linux/buildroot-ext/raw/k1-bl-v2.2.y/board/spacemit/k1/target_overlay/lib/firmware/LICENSE.spacemit_esos
+text = '''
+The following license only applies to "esos.elf"
+================================================================
+
+SPACEMIT (Hangzhou) Technology Co., Ltd. grants permission to use and redistribute
+aforementioned firmware files for the use with devices containing Spacemit chipsets,
+but not as part of the Linux kernel or in any other form which would require
+these files themselves to be covered by the terms of the GNU General Public License
+or the GNU Lesser General Public License.
+
+These firmware files are distributed in the hope that they will be useful, but
+are provided WITHOUT ANY WARRANTY, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTY
+OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+'''
 
 package =
 location =

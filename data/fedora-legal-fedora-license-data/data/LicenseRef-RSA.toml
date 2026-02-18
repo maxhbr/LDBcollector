@@ -7,6 +7,24 @@ url = '''
 https://fedoraproject.org/wiki/Licensing/RSA
 '''
 
+text = '''
+/* License to copy and use this software is granted provided that it is
+ * identified as "RSA Security Inc. PKCS #11 Cryptographic Token Interface
+ * (Cryptoki)" in all material mentioning or referencing this software.
+
+ * License is also granted to make and use derivative works provided that
+ * such works are identified as "derived from the RSA Security Inc. PKCS #11
+ * Cryptographic Token Interface (Cryptoki)" in all material mentioning or
+ * referencing the derived work.
+
+ * RSA Security Inc. makes no representations concerning either the
+ * merchantability of this software or the suitability of this software for
+ * any particular purpose. It is provided "as is" without express or implied
+ * warranty of any kind.
+ */
+'''
+
+
 [fedora]
 
 legacy-name = [
@@ -17,3 +35,10 @@ legacy-abbreviation = [
     "RSA"
 ]
 
+notes = '''
+This is a Free permissive license, likely derived from the MIT license (https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Old_Style_.28no_advertising_without_permission.29). It is sometimes misdetected by the licensecheck as "NTP", but that is a different MIT variant license.
+
+It is not clear if this license is GPL-compatible or not, due to the second section of the license.
+
+A copy of this license was taken from http://hg.openjdk.java.net/jdk/jdk/file/cf09f0b56efd/src/jdk.crypto.cryptoki/share/native/libj2pkcs11/pkcs11.h on 2018-06-28.
+'''

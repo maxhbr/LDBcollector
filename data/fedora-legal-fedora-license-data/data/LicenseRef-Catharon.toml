@@ -1,7 +1,0 @@
-[license]
-expression = "LicenseRef-Catharon"
-status = [ "allowed" ]
-
-usage = '''
-Temporary ID until SPDX assigns ID. See https://gitlab.com/fedora/legal/fedora-license-data/-/issues/479
-'''

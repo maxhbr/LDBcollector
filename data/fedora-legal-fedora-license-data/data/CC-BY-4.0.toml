@@ -3,6 +3,15 @@
 expression = "CC-BY-4.0"
 status = [ "allowed-content", "allowed-documentation" ]
 
+# This package uses the license for code as well
+packages_with_exceptions = [
+    "golang-x-perf"
+]
+
+usage = '''
+This can be used for code for packages listed in packages_with_exceptions.
+'''
+
 [fedora]
 
 legacy-name = [

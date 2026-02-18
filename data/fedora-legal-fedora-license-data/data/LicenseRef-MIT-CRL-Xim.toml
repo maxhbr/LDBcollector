@@ -1,0 +1,40 @@
+[license]
+expression = "LicenseRef-MIT-CRL-Xim"
+status = [ "not-allowed" ]
+
+url = '''
+https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/converter/ppm/ximtoppm.c#l269
+'''
+
+usage = '''
+This is allowed in netpbm package.
+'''
+
+text = '''
+Copyright (c) 1988  Philip R. Thompson
+              Computer Resource Laboratory (CRL)
+              Dept. of Architecture and Planning
+              M.I.T., Rm 9-526
+              Cambridge, MA  02139
+ This  software and its documentation may be used, copied, modified,
+ and distributed for any purpose without fee, provided:
+     --  The above copyright notice appears in all copies.
+     --  This disclaimer appears in all source code copies.
+     --  The names of M.I.T. and the CRL are not used in advertising
+         or publicity pertaining to distribution of the software
+         without prior specific written permission from me or CRL.
+ I provide this software freely as a public service.  It is NOT a
+ commercial product, and therefore is not subject to an an implied
+ warranty of merchantability or fitness for a particular purpose.  I
+ provide it as is, without warranty.
+ This software is furnished  only on the basis that any party who
+ receives it indemnifies and holds harmless the parties who furnish
+ it against any claims, demands, or liabilities connected with using
+ it, furnishing it to others, or providing it to a third party.
+
+ Philip R. Thompson (phils@athena.mit.edu)
+'''
+
+packages_with_exceptions = [
+    "netpbm",
+]

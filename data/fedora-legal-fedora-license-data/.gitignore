@@ -1,3 +1,4 @@
 fedora-licenses.json
 grammar/full-grammar.lark
 grammar/fedora-spdx.txt
+scancode-license-policy.yaml

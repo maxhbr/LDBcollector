@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-qmail"
-status = [ "not-allowed" ]
+status = [ "allowed" ]
 
 url = '''
 http://cr.yp.to/qmail/dist.html
@@ -14,5 +14,5 @@ legacy-name = [
 ]
 
 notes = '''
-deprecated, qmail is now public domain
+deprecated, use LicenseRef-Fedora-Public-Domain
 '''
