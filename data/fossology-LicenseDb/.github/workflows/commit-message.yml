@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: 2026 Vishesh Gupta <vishesh15th@gmail.com>
+# SPDX-License-Identifier: GPL-2.0-only
+
+name: Commit Message & DCO Check
+
+on:
+  pull_request:
+
+jobs:
+  lint-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Ensure Commit-Lint Config Exists
+        run: |
+          if [ ! -f "commitlint.config.mjs" ]; then
+            echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > commitlint.config.mjs
+          fi
+
+      - name: Run Commit Lint
+        uses: wagoid/commitlint-github-action@v6
+        with:
+          configFile: ./commitlint.config.mjs
+
+      - name: DCO Check
+        uses: christophebedard/dco-check@0.5.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: --exclude-pattern '.*dependabot\[bot\]@users\.noreply\.github\.com'

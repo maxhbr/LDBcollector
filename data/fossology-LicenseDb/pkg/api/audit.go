@@ -7,6 +7,7 @@
 package api
 
 import (
+	"fmt"
 	"net/http"
 	"time"
 
@@ -14,6 +15,7 @@ import (
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 )
 
 // GetAllAudit retrieves a list of all audit records from the database
@@ -28,15 +30,16 @@ import (
 //	@Param			limit	query		int						false	"Number of records per page"
 //	@Success		200		{object}	models.AuditResponse	"Audit records"
 //	@Failure		404		{object}	models.LicenseError		"Not changelogs in DB"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/audits [get]
 func GetAllAudit(c *gin.Context) {
-	var audit []models.Audit
-	query := db.DB.Model(&models.Audit{})
+	var audits []models.Audit
+
+	query := db.DB.Model(&models.Audit{}).Preload("User")
 
 	_ = utils.PreparePaginateResponse(c, query, &models.AuditResponse{})
 
-	if err := query.Order("timestamp desc").Find(&audit).Error; err != nil {
+	if err := query.Order("timestamp desc").Find(&audits).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "unable to fetch audits",
@@ -47,11 +50,25 @@ func GetAllAudit(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, er)
 		return
 	}
+
+	for i := 0; i < len(audits); i++ {
+		if err := utils.GetAuditEntity(c, &audits[i]); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "unable to find audits",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return
+		}
+	}
 	res := models.AuditResponse{
-		Data:   audit,
+		Data:   audits,
 		Status: http.StatusOK,
 		Meta: &models.PaginationMeta{
-			ResourceCount: len(audit),
+			ResourceCount: len(audits),
 		},
 	}
 
@@ -70,17 +87,25 @@ func GetAllAudit(c *gin.Context) {
 //	@Success		200			{object}	models.AuditResponse
 //	@Failure		400			{object}	models.LicenseError	"Invalid audit ID"
 //	@Failure		404			{object}	models.LicenseError	"No audit entry with given ID"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/audits/{audit_id} [get]
 func GetAudit(c *gin.Context) {
 	var audit models.Audit
 	id := c.Param("audit_id")
-	parsedId, err := utils.ParseIdToInt(c, id, "audit")
+	parsedId, err := uuid.Parse(id)
 	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no license with id '%s' exists", id),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
-	if err := db.DB.Where(models.Audit{Id: parsedId}).First(&audit).Error; err != nil {
+	if err := db.DB.Preload("User").Where(&models.Audit{Id: parsedId}).First(&audit).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "no audit with such id exists",
@@ -91,6 +116,11 @@ func GetAudit(c *gin.Context) {
 		c.JSON(http.StatusNotFound, er)
 		return
 	}
+
+	if err := utils.GetAuditEntity(c, &audit); err != nil {
+		return
+	}
+
 	res := models.AuditResponse{
 		Data:   []models.Audit{audit},
 		Status: http.StatusOK,
@@ -115,13 +145,21 @@ func GetAudit(c *gin.Context) {
 //	@Failure		400			{object}	models.LicenseError	"Invalid audit ID"
 //	@Failure		404			{object}	models.LicenseError	"No audit entry with given ID"
 //	@Failure		500			{object}	models.LicenseError	"unable to find changes"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/audits/{audit_id}/changes [get]
 func GetChangeLogs(c *gin.Context) {
 	var changelog []models.ChangeLog
 	id := c.Param("audit_id")
-	parsedId, err := utils.ParseIdToInt(c, id, "audit")
+	parsedId, err := uuid.Parse(id)
 	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no license with id '%s' exists", id),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 
@@ -174,18 +212,34 @@ func GetChangeLogs(c *gin.Context) {
 //	@Success		200			{object}	models.ChangeLogResponse
 //	@Failure		400			{object}	models.LicenseError	"Invalid ID"
 //	@Failure		404			{object}	models.LicenseError	"No changelog with given ID found"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/audits/{audit_id}/changes/{id} [get]
 func GetChangeLogbyId(c *gin.Context) {
 	var changelog models.ChangeLog
 	auditId := c.Param("audit_id")
-	parsedAuditId, err := utils.ParseIdToInt(c, auditId, "audit")
+	parsedAuditId, err := uuid.Parse(auditId)
 	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no license with id '%s' exists", auditId),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 	changelogId := c.Param("id")
-	parsedChangeLogId, err := utils.ParseIdToInt(c, changelogId, "changelog")
+	parsedChangeLogId, err := uuid.Parse(changelogId)
 	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no license with id '%s' exists", changelogId),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
 

@@ -1,5 +1,6 @@
 // SPDX-FileCopyrightText: 2023 Siemens AG
 // SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+// SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only
 
@@ -8,8 +9,6 @@ package api
 import (
 	"fmt"
 	"net/http"
-	"strconv"
-	"strings"
 	"time"
 
 	"golang.org/x/exp/slices"
@@ -17,35 +16,46 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 )
 
-// GetObligationMapByTopic retrieves obligation maps for a given obligation topic
+// GetObligationMapByObligationId retrieves obligation maps for a given obligation id
 //
 //	@Summary		Get maps for an obligation
-//	@Description	Get obligation maps for a given obligation topic
-//	@Id				GetObligationMapByTopic
+//	@Description	Get obligation maps for a given obligation id
+//	@Id				GetObligationMapByObligationId
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			topic	path		string	true	"Topic of the obligation"
-//	@Success		200		{object}	models.ObligationMapResponse
-//	@Failure		404		{object}	models.LicenseError	"No obligation with given topic found or no map for
-//	obligation exists"
-//	@Router			/obligation_maps/topic/{topic} [get]
-func GetObligationMapByTopic(c *gin.Context) {
+//	@Param			id	path		string	true	"Id of the obligation"
+//	@Success		200	{object}	models.ObligationMapResponse
+//	@Failure		404	{object}	models.LicenseError	"No obligation with given id found"
+//	@Security		ApiKeyAuth || {}
+//	@Router			/obligation_maps/obligation/{id} [get]
+func GetObligationMapByObligationId(c *gin.Context) {
 	var obligation models.Obligation
-	var obMap []models.ObligationMap
 	var resObMap models.ObligationMapUser
-	var shortnameList []string
+	var list []models.ObligationMapLicenseFormat
 
-	topic := c.Param("topic")
-	query := db.DB.Model(&obligation)
+	obligationId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no obligation with id '%s' exists", obligationId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
 
-	if err := query.Where(models.Obligation{Topic: topic}).First(&obligation).Error; err != nil {
+	if err := db.DB.Joins("Classification").Joins("Type").Preload("Licenses").Where(models.Obligation{Id: obligationId}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("obligation with topic '%s' not found", topic),
+			Message:   fmt.Sprintf("obligation with id '%s' not found", obligationId.String()),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -54,28 +64,18 @@ func GetObligationMapByTopic(c *gin.Context) {
 		return
 	}
 
-	if err := getObligationMapsForObligation(obligation.Id, &obMap).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("Obligation map not found for topic '%s'", topic),
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusNotFound, er)
-		return
-	}
-
-	for i := 0; i < len(obMap); i++ {
-		var license models.LicenseDB
-		licenseQuery := db.DB.Model(&license)
-		licenseQuery.Where(models.LicenseDB{Id: obMap[i].RfPk}).First(&license)
-		shortnameList = append(shortnameList, license.Shortname)
+	for _, lic := range obligation.Licenses {
+		list = append(list, models.ObligationMapLicenseFormat{
+			Id:        lic.Id,
+			Shortname: *lic.Shortname,
+		})
 	}
 
 	resObMap = models.ObligationMapUser{
-		Topic:      topic,
-		Shortnames: shortnameList,
+		Id:       obligation.Id,
+		Topic:    *obligation.Topic,
+		Type:     (*obligation.Type).Type,
+		Licenses: list,
 	}
 
 	res := models.ObligationMapResponse{
@@ -88,35 +88,40 @@ func GetObligationMapByTopic(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-func getObligationMapsForObligation(obligationId int64, obMap *[]models.ObligationMap) *gorm.DB {
-	return db.DB.Model(&obMap).Where(models.ObligationMap{ObligationPk: obligationId}).Find(&obMap)
-}
-
-// GetObligationMapByLicense retrieves obligation maps for given license shortname
+// GetObligationMapByLicenseId retrieves obligation maps for given license id
 //
 //	@Summary		Get maps for a license
-//	@Description	Get obligation maps for a given license shortname
-//	@Id				GetObligationMapByLicense
+//	@Description	Get obligation maps for a given license id
+//	@Id				GetObligationMapByLicenseId
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			license	path		string	true	"Shortname of the license"
+//	@Param			license	path		string	true	"id of the license"
 //	@Success		200		{object}	models.ObligationMapResponse
-//	@Failure		404		{object}	models.LicenseError	"No license with given shortname found or no map for
-//	license exists"
-//	@Router			/obligation_maps/license/{license} [get]
-func GetObligationMapByLicense(c *gin.Context) {
+//	@Failure		404		{object}	models.LicenseError	"No license with given id found"
+//	@Security		ApiKeyAuth || {}
+//	@Router			/obligation_maps/license/{id} [get]
+func GetObligationMapByLicenseId(c *gin.Context) {
 	var license models.LicenseDB
-	var obMap []models.ObligationMap
 	var resObMapList []models.ObligationMapUser
 
-	licenseShortName := c.Param("license")
-	query := db.DB.Model(&license)
+	licenseId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no license with id '%s' exists", licenseId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
 
-	if err := query.Where(models.LicenseDB{Shortname: licenseShortName}).First(&license).Error; err != nil {
+	if err := db.DB.Preload("Obligations").Preload("Obligations.Type").Preload("Obligations.Classification").Where(models.LicenseDB{Id: licenseId}).First(&license).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("license with shortname '%s' not found", licenseShortName),
+			Message:   fmt.Sprintf("no license with id '%s' exists", licenseId.String()),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -125,27 +130,17 @@ func GetObligationMapByLicense(c *gin.Context) {
 		return
 	}
 
-	query = db.DB.Model(&obMap)
-
-	if err := query.Where(models.ObligationMap{RfPk: license.Id}).Find(&obMap).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("Obligation map not found for license '%s'", licenseShortName),
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusNotFound, er)
-		return
-	}
-
-	for i := 0; i < len(obMap); i++ {
-		var obligation models.Obligation
-		obligationQuery := db.DB.Model(&obligation)
-		obligationQuery.Where(models.Obligation{Id: obMap[i].ObligationPk}).First(&obligation)
+	for _, ob := range license.Obligations {
 		resObMapList = append(resObMapList, models.ObligationMapUser{
-			Topic:      obligation.Topic,
-			Shortnames: []string{licenseShortName},
+			Id:    ob.Id,
+			Type:  (*ob.Type).Type,
+			Topic: *ob.Topic,
+			Licenses: []models.ObligationMapLicenseFormat{
+				{
+					Id:        license.Id,
+					Shortname: *license.Shortname,
+				},
+			},
 		})
 	}
 
@@ -159,29 +154,39 @@ func GetObligationMapByLicense(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// PatchObligationMap Add or remove licenses from obligation map for a given obligation topic
+// PatchObligationMap Add or remove licenses from obligation map for a given obligation id
 //
 //	@Summary		Add or remove licenses from obligation map
-//	@Description	Add or remove licenses from obligation map for a given obligation topic
+//	@Description	Add or remove licenses from obligation map for a given obligation id
 //	@Id				PatchObligationMap
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			topic		path		string								true	"Topic of the obligation"
-//	@Param			shortname	body		models.LicenseMapShortnamesInput	true	"Shortnames of the licenses with action"
-//	@Success		200			{object}	models.ObligationMapResponse
-//	@Failure		400			{object}	models.LicenseError	"Invalid json body"
-//	@Failure		404			{object}	models.LicenseError	"No license or obligation found."
-//	@Failure		500			{object}	models.LicenseError	"Failure to insert new maps"
+//	@Param			id				path		string					true	"Id of the obligation"
+//	@Param			license_maps	body		models.LicenseMapInput	true	"License ids with action"
+//	@Success		200				{object}	models.ObligationMapResponse
+//	@Failure		400				{object}	models.LicenseError	"Invalid json body"
+//	@Failure		404				{object}	models.LicenseError	"No license or obligation found."
+//	@Failure		500				{object}	models.LicenseError	"Failure to insert new maps"
 //	@Security		ApiKeyAuth
-//	@Router			/obligation_maps/topic/{topic}/license [patch]
+//	@Router			/obligation_maps/obligation/{id}/license [patch]
 func PatchObligationMap(c *gin.Context) {
 	var obligation models.Obligation
-	var obMapInput models.LicenseMapShortnamesInput
-	var removeLicenseIds []int64
-	var insertLicenseIds []int64
+	var obMapInput models.LicenseMapInput
+	var removeLicenses, insertLicenses []uuid.UUID
 
-	topic := c.Param("topic")
+	obligationId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no obligation with id '%s' exists", obligationId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
 
 	if err := c.ShouldBindJSON(&obMapInput); err != nil {
 		er := models.LicenseError{
@@ -195,12 +200,10 @@ func PatchObligationMap(c *gin.Context) {
 		return
 	}
 
-	query := db.DB.Model(&obligation)
-
-	if err := query.Where(models.Obligation{Topic: topic}).First(&obligation).Error; err != nil {
+	if err := db.DB.Preload("Licenses").Joins("Type").Where(models.Obligation{Id: obligationId}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("obligation with topic '%s' not found", topic),
+			Message:   fmt.Sprintf("obligation with id '%s' not found", obligationId.String()),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -209,68 +212,83 @@ func PatchObligationMap(c *gin.Context) {
 		return
 	}
 
-	for i := 0; i < len(obMapInput.MapInput); i++ {
-		var license models.LicenseDB
-		var obligationMap models.ObligationMap
-		err := db.DB.Model(&license).Where(&models.LicenseDB{Shortname: obMapInput.MapInput[i].Shortname}).First(
-			&license).Error
-		if err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusNotFound,
-				Message:   fmt.Sprintf("license with shortname '%s' not found", obMapInput.MapInput[i].Shortname),
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
+	for _, lic := range obMapInput.MapInput {
+		if lic.Add {
+			found := false
+			for _, l := range obligation.Licenses {
+				if lic.Id == l.Id {
+					found = true
+					break
+				}
 			}
-			c.JSON(http.StatusNotFound, er)
-			return
-		}
-		if err := db.DB.Model(&obligationMap).Where(&models.ObligationMap{ObligationPk: obligation.Id,
-			RfPk: license.Id}).First(&obligationMap).Error; err != nil {
-			// License not in map
-			if obMapInput.MapInput[i].Add {
-				// Add to insert slice
-				insertLicenseIds = append(insertLicenseIds, license.Id)
+			if !found {
+				insertLicenses = append(insertLicenses, lic.Id)
 			}
 		} else {
-			// License in map
-			if !obMapInput.MapInput[i].Add {
-				// Add to remove slice
-				removeLicenseIds = append(removeLicenseIds, license.Id)
-			}
+			removeLicenses = append(removeLicenses, lic.Id)
 		}
 	}
 
-	username := c.GetString("username")
+	userId := c.MustGet("userId").(uuid.UUID)
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
+		newLicenseAssociations, errs := utils.PerformObligationMapActions(tx, userId, &obligation, removeLicenses, insertLicenses)
+		if len(errs) != 0 {
+			var combinedErrors string
+			for _, err := range errs {
+				if err != nil {
+					combinedErrors += fmt.Sprintf("%s\n", err)
+				}
+			}
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Unable to add/remove some of the licenses",
+				Error:     combinedErrors,
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return nil
+		}
 
-	res := performObligationMapActions(username, obligation, removeLicenseIds, insertLicenseIds)
+		obMap := &models.ObligationMapUser{
+			Topic:    *obligation.Topic,
+			Type:     (*obligation.Type).Type,
+			Licenses: newLicenseAssociations,
+		}
 
-	c.JSON(http.StatusOK, res)
+		res := models.ObligationMapResponse{
+			Data:   []models.ObligationMapUser{*obMap},
+			Status: http.StatusOK,
+			Meta: models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+
+		c.JSON(http.StatusOK, res)
+
+		return nil
+	})
 }
 
 // UpdateLicenseInObligationMap Update license list of an obligation map
 //
 //	@Summary		Change license list
-//	@Description	Replaces the license list of an obligation topic with the given list in the obligation map.
+//	@Description	Replaces the license list of an obligation id with the given list in the obligation map.
 //	@Id				UpdateLicenseInObligationMap
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			topic		path		string							true	"Topic of the obligation"
-//	@Param			shortnames	body		models.LicenseShortnamesInput	true	"Shortnames of the licenses to be in map"
-//	@Success		200			{object}	models.ObligationMapResponse
-//	@Failure		400			{object}	models.LicenseError	"Invalid json body"
-//	@Failure		404			{object}	models.LicenseError	"No license or obligation found."
+//	@Param			id	path		string					true	"Id of the obligation"
+//	@Param			Ids	body		models.LicenseListInput	true	"Ids of the licenses to be in map"
+//	@Success		200	{object}	models.ObligationMapResponse
+//	@Failure		400	{object}	models.LicenseError	"Invalid json body"
+//	@Failure		404	{object}	models.LicenseError	"No license or obligation found."
 //	@Security		ApiKeyAuth
-//	@Router			/obligation_maps/topic/{topic}/license [put]
+//	@Router			/obligation_maps/obligation/{id}/license [put]
 func UpdateLicenseInObligationMap(c *gin.Context) {
 	var obligation models.Obligation
-	var obMapInput models.LicenseShortnamesInput
-	var oldObMaps []models.ObligationMap
-	var removeLicenseIds []int64
-	var insertLicenseIds []int64
-
-	topic := c.Param("topic")
+	var obMapInput models.LicenseListInput
+	var removeLicenses, insertLicenses []uuid.UUID
 
 	if err := c.ShouldBindJSON(&obMapInput); err != nil {
 		er := models.LicenseError{
@@ -284,14 +302,23 @@ func UpdateLicenseInObligationMap(c *gin.Context) {
 		return
 	}
 
-	obMapInput.Shortnames = slices.Compact(obMapInput.Shortnames)
+	obligationId, err := uuid.Parse(c.Param("id"))
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("no obligation with id '%s' exists", obligationId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
 
-	query := db.DB.Model(&obligation)
-
-	if err := query.Where(models.Obligation{Topic: topic}).First(&obligation).Error; err != nil {
+	if err := db.DB.Preload("Licenses").Joins("Type").Where(models.Obligation{Id: obligationId}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("obligation with topic '%s' not found", topic),
+			Message:   fmt.Sprintf("obligation with id '%s' not found", obligationId.String()),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -300,149 +327,48 @@ func UpdateLicenseInObligationMap(c *gin.Context) {
 		return
 	}
 
-	getObligationMapsForObligation(obligation.Id, &oldObMaps)
+	obMapInput.LicenseIds = slices.Compact(obMapInput.LicenseIds)
 
-	for i := 0; i < len(oldObMaps); i++ {
-		removeLicenseIds = append(removeLicenseIds, oldObMaps[i].RfPk)
-	}
+	utils.GenerateDiffForReplacingLicenses(&obligation, obMapInput.LicenseIds, &removeLicenses, &insertLicenses)
 
-	for i := 0; i < len(obMapInput.Shortnames); i++ {
-		var license models.LicenseDB
-		var obligationMap models.ObligationMap
-		err := db.DB.Model(&license).Where(&models.LicenseDB{Shortname: obMapInput.Shortnames[i]}).First(&license).Error
-		if err != nil {
+	userId := c.MustGet("userId").(uuid.UUID)
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
+		newLicenseAssociations, errs := utils.PerformObligationMapActions(tx, userId, &obligation, removeLicenses, insertLicenses)
+		if len(errs) != 0 {
+			var combinedErrors string
+			for _, err := range errs {
+				if err != nil {
+					combinedErrors += fmt.Sprintf("%s\n", err)
+				}
+			}
 			er := models.LicenseError{
-				Status:    http.StatusNotFound,
-				Message:   fmt.Sprintf("license with shortname '%s' not found", obMapInput.Shortnames[i]),
-				Error:     err.Error(),
+				Status:    http.StatusInternalServerError,
+				Message:   "Unable to add/remove some of the licenses",
+				Error:     combinedErrors,
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
-			c.JSON(http.StatusNotFound, er)
-			return
+			c.JSON(http.StatusInternalServerError, er)
+			return nil
 		}
-		if err := db.DB.Model(&obligationMap).Where(&models.ObligationMap{ObligationPk: obligation.Id,
-			RfPk: license.Id}).First(&obligationMap).Error; err != nil {
-			// License not in map, add to insert slice
-			insertLicenseIds = append(insertLicenseIds, license.Id)
+
+		obMap := &models.ObligationMapUser{
+			Id:       obligation.Id,
+			Topic:    *obligation.Topic,
+			Type:     (*obligation.Type).Type,
+			Licenses: newLicenseAssociations,
 		}
-		// License in request, remove from removal slice
-		removeLicenseIds = removeFromSlice(removeLicenseIds, license.Id)
-	}
 
-	username := c.GetString("username")
-
-	res := performObligationMapActions(username, obligation, removeLicenseIds, insertLicenseIds)
-
-	c.JSON(http.StatusOK, res)
-}
-
-// performObligationMapActions performs the actions for ObligationMap endpoint PATCH and PUT calls.
-// It takes the input of obligation which is being modified, list of licenses to be removed and added,
-// and the user making the changes. The function computes the changelog and returns the response.
-func performObligationMapActions(username string, obligation models.Obligation, removeLicenseIds []int64,
-	insertLicenseIds []int64) models.ObligationMapResponse {
-	var oldObMaps []models.ObligationMap
-	var newObMaps []models.ObligationMap
-	var removeObMaps []models.ObligationMap
-	var insertObMaps []models.ObligationMap
-
-	getObligationMapsForObligation(obligation.Id, &oldObMaps)
-
-	for i := 0; i < len(removeLicenseIds); i++ {
-		deleteItem := models.ObligationMap{
-			ObligationPk: obligation.Id,
-			RfPk:         removeLicenseIds[i],
+		res := models.ObligationMapResponse{
+			Data:   []models.ObligationMapUser{*obMap},
+			Status: http.StatusOK,
+			Meta: models.PaginationMeta{
+				ResourceCount: 1,
+			},
 		}
-		// Find the primary key to make delete faster
-		db.DB.Where(&deleteItem).First(&deleteItem)
-		removeObMaps = append(removeObMaps, deleteItem)
-	}
-	for i := 0; i < len(insertLicenseIds); i++ {
-		insertObMaps = append(insertObMaps, models.ObligationMap{
-			ObligationPk: obligation.Id,
-			RfPk:         insertLicenseIds[i],
-		})
-	}
 
-	if len(removeObMaps) > 0 {
-		// Bulk delete removeObMaps from DB
-		db.DB.Delete(&removeObMaps)
-	}
-	if len(insertObMaps) > 0 {
-		// Bulk create insertObMaps in DB
-		db.DB.Create(&insertObMaps)
-	}
+		c.JSON(http.StatusOK, res)
 
-	getObligationMapsForObligation(obligation.Id, &newObMaps)
-
-	res := models.ObligationMapResponse{
-		Data:   []models.ObligationMapUser{createObligationMapUser(obligation, newObMaps)},
-		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
-			ResourceCount: 1,
-		},
-	}
-
-	var user models.User
-	db.DB.Where(models.User{Username: username}).First(&user)
-	audit := models.Audit{
-		UserId:    user.Id,
-		TypeId:    obligation.Id,
-		Timestamp: time.Now(),
-		Type:      "obligation_map",
-	}
-
-	db.DB.Create(&audit)
-
-	change := createObligationMapChangelog(oldObMaps, newObMaps, audit)
-	db.DB.Create(&change)
-	return res
-}
-
-// createObligationMapChangelog creates the changelog for the obligation map changes.
-func createObligationMapChangelog(oldObMaps []models.ObligationMap, newObMaps []models.ObligationMap,
-	audit models.Audit) models.ChangeLog {
-	var oldLicenses []string
-	var newLicenses []string
-
-	for i := 0; i < len(oldObMaps); i++ {
-		oldLicenses = append(oldLicenses, strconv.FormatInt(oldObMaps[i].RfPk, 10))
-	}
-	for i := 0; i < len(newObMaps); i++ {
-		newLicenses = append(newLicenses, strconv.FormatInt(newObMaps[i].RfPk, 10))
-	}
-
-	oldVal := strings.Join(oldLicenses, ",")
-	newVal := strings.Join(newLicenses, ",")
-	change := models.ChangeLog{
-		AuditId:      audit.Id,
-		Field:        "RfPk",
-		OldValue:     &oldVal,
-		UpdatedValue: &newVal,
-	}
-	return change
-}
-
-// removeFromSlice removes the item from the slice if it exists.
-func removeFromSlice[E string | int64](slice []E, item E) []E {
-	if slices.Contains(slice, item) {
-		return append(slice[:slices.Index(slice, item)], slice[slices.Index(slice, item)+1:]...)
-	}
-	return slice
-}
-
-// createObligationMapUser creates the response data for the obligation map endpoint.
-func createObligationMapUser(obligation models.Obligation, obMaps []models.ObligationMap) models.ObligationMapUser {
-	var shortnameList []string
-	for i := 0; i < len(obMaps); i++ {
-		var license models.LicenseDB
-		licenseQuery := db.DB.Model(&license)
-		licenseQuery.Where(models.LicenseDB{Id: obMaps[i].RfPk}).First(&license)
-		shortnameList = append(shortnameList, license.Shortname)
-	}
-	return models.ObligationMapUser{
-		Topic:      obligation.Topic,
-		Shortnames: shortnameList,
-	}
+		return nil
+	})
 }

@@ -16,11 +16,42 @@
     },
     "basePath": "/api/v1",
     "paths": {
+        "/apiCollection": {
+            "get": {
+                "description": "Returns the apis which require authentication and which do not",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "API Collection"
+                ],
+                "summary": "Returns the apis which require authentication and which do not",
+                "operationId": "getAPICollection",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.APICollectionResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Unable to parse swagger docs",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/audits": {
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get all audit records from the server",
@@ -69,7 +100,8 @@
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get a specific audit records by ID",
@@ -119,7 +151,8 @@
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get changelogs of an audit record",
@@ -175,7 +208,8 @@
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get a specific changelog of an audit record by its ID",
@@ -228,6 +262,42 @@
                 }
             }
         },
+        "/dashboard": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Fetches data to be displayed on the dashboard",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Fetches data to be displayed on the dashboard",
+                "operationId": "GetDashboardData",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.DashboardResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Something went wrong",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/health": {
             "get": {
                 "description": "Check health of the service",
@@ -260,6 +330,12 @@
         },
         "/licenses": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Filter licenses based on different parameters",
                 "consumes": [
                     "application/json"
@@ -280,30 +356,6 @@
                         "in": "query"
                     },
                     {
-                        "type": "integer",
-                        "description": "License detector type",
-                        "name": "detector_type",
-                        "in": "query"
-                    },
-                    {
-                        "type": "boolean",
-                        "description": "GPLv2 compatibility flag status of license",
-                        "name": "gplv2compatible",
-                        "in": "query"
-                    },
-                    {
-                        "type": "boolean",
-                        "description": "GPLv3 compatibility flag status of license",
-                        "name": "gplv3compatible",
-                        "in": "query"
-                    },
-                    {
-                        "type": "boolean",
-                        "description": "Mary done flag status of license",
-                        "name": "marydone",
-                        "in": "query"
-                    },
-                    {
                         "type": "boolean",
                         "description": "Active license only",
                         "name": "active",
@@ -313,12 +365,6 @@
                         "type": "boolean",
                         "description": "OSI Approved flag status of license",
                         "name": "osiapproved",
-                        "in": "query"
-                    },
-                    {
-                        "type": "boolean",
-                        "description": "FSF Free flag status of license",
-                        "name": "fsffree",
                         "in": "query"
                     },
                     {
@@ -343,6 +389,29 @@
                         "type": "string",
                         "description": "External reference parameters",
                         "name": "externalRef",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "spdx_id",
+                            "shortname",
+                            "fullname"
+                        ],
+                        "type": "string",
+                        "default": "shortname",
+                        "description": "Sort by field",
+                        "name": "sort_by",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "asc",
+                            "desc"
+                        ],
+                        "type": "string",
+                        "default": "asc",
+                        "description": "Asc or desc ordering",
+                        "name": "order_by",
                         "in": "query"
                     }
                 ],
@@ -386,7 +455,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseInput"
+                            "$ref": "#/definitions/models.LicenseCreateDTO"
                         }
                     }
                 ],
@@ -403,12 +472,6 @@
                             "$ref": "#/definitions/models.LicenseError"
                         }
                     },
-                    "409": {
-                        "description": "License with same shortname already exists",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    },
                     "500": {
                         "description": "Failed to create license",
                         "schema": {
@@ -418,9 +481,116 @@
                 }
             }
         },
-        "/licenses/{shortname}": {
+        "/licenses/export": {
             "get": {
-                "description": "Get a single license by its shortname",
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Export all licenses as a json file",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Export all licenses as a json file",
+                "operationId": "ExportLicenses",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.LicenseResponseDTO"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Failed to fetch Licenses",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/licenses/import": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Import licenses by uploading a json file",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Import licenses by uploading a json file",
+                "operationId": "ImportLicenses",
+                "parameters": [
+                    {
+                        "type": "file",
+                        "description": "licenses json file list",
+                        "name": "file",
+                        "in": "formData",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/models.ImportLicensesResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/models.LicenseImportStatus"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "input file must be present",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/licenses/preview": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get shortnames and ids of all active licenses from the service",
                 "consumes": [
                     "application/json"
                 ],
@@ -430,13 +600,119 @@
                 "tags": [
                     "Licenses"
                 ],
-                "summary": "Get a license by shortname",
+                "summary": "Get shortnames and ids of all active licenses",
+                "operationId": "GetAllLicensePreviews",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active license only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicensePreviewResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid active value",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Unable to fetch licenses",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/licenses/similarity": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Compares input license text with existing ones using pg_trgm similarity",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Find similar license texts",
+                "operationId": "getSimilarLicense",
+                "parameters": [
+                    {
+                        "description": "Input license text to compare",
+                        "name": "license",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.SimilarityRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of similar licenses",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.SimilarLicense"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid request or query failed",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/licenses/{id}": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get a single license by its id",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Get a license by id",
                 "operationId": "GetLicense",
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Shortname of the license",
-                        "name": "shortname",
+                        "description": "Id of the license",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     }
@@ -449,7 +725,7 @@
                         }
                     },
                     "404": {
-                        "description": "License with shortname not found",
+                        "description": "License with id not found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -477,8 +753,8 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Shortname of the license to be updated",
-                        "name": "shortname",
+                        "description": "Id of the license to be updated",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
@@ -488,7 +764,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseUpdate"
+                            "$ref": "#/definitions/models.LicenseUpdateDTO"
                         }
                     }
                 ],
@@ -506,13 +782,7 @@
                         }
                     },
                     "404": {
-                        "description": "License with shortname not found",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    },
-                    "409": {
-                        "description": "License with same shortname already exists",
+                        "description": "License with id not found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -555,20 +825,27 @@
                     "200": {
                         "description": "JWT token",
                         "schema": {
-                            "type": "object",
-                            "properties": {
-                                "token": {
-                                    "type": "string"
-                                }
-                            }
+                            "$ref": "#/definitions/models.TokenResonse"
+                        }
+                    },
+                    "401": {
+                        "description": "Incorrect username or password",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
                         }
                     }
                 }
             }
         },
-        "/obligation_maps/license/{license}": {
+        "/obligation_maps/license/{id}": {
             "get": {
-                "description": "Get obligation maps for a given license shortname",
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get obligation maps for a given license id",
                 "consumes": [
                     "application/json"
                 ],
@@ -579,11 +856,11 @@
                     "Obligations"
                 ],
                 "summary": "Get maps for a license",
-                "operationId": "GetObligationMapByLicense",
+                "operationId": "GetObligationMapByLicenseId",
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Shortname of the license",
+                        "description": "id of the license",
                         "name": "license",
                         "in": "path",
                         "required": true
@@ -597,7 +874,7 @@
                         }
                     },
                     "404": {
-                        "description": "No license with given shortname found or no map for",
+                        "description": "No license with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -605,9 +882,15 @@
                 }
             }
         },
-        "/obligation_maps/topic/{topic}": {
+        "/obligation_maps/obligation/{id}": {
             "get": {
-                "description": "Get obligation maps for a given obligation topic",
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get obligation maps for a given obligation id",
                 "consumes": [
                     "application/json"
                 ],
@@ -618,12 +901,12 @@
                     "Obligations"
                 ],
                 "summary": "Get maps for an obligation",
-                "operationId": "GetObligationMapByTopic",
+                "operationId": "GetObligationMapByObligationId",
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation",
-                        "name": "topic",
+                        "description": "Id of the obligation",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     }
@@ -636,7 +919,7 @@
                         }
                     },
                     "404": {
-                        "description": "No obligation with given topic found or no map for",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -644,14 +927,14 @@
                 }
             }
         },
-        "/obligation_maps/topic/{topic}/license": {
+        "/obligation_maps/obligation/{id}/license": {
             "put": {
                 "security": [
                     {
                         "ApiKeyAuth": []
                     }
                 ],
-                "description": "Replaces the license list of an obligation topic with the given list in the obligation map.",
+                "description": "Replaces the license list of an obligation id with the given list in the obligation map.",
                 "consumes": [
                     "application/json"
                 ],
@@ -666,18 +949,18 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation",
-                        "name": "topic",
+                        "description": "Id of the obligation",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
                     {
-                        "description": "Shortnames of the licenses to be in map",
-                        "name": "shortnames",
+                        "description": "Ids of the licenses to be in map",
+                        "name": "Ids",
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseShortnamesInput"
+                            "$ref": "#/definitions/models.LicenseListInput"
                         }
                     }
                 ],
@@ -708,7 +991,7 @@
                         "ApiKeyAuth": []
                     }
                 ],
-                "description": "Add or remove licenses from obligation map for a given obligation topic",
+                "description": "Add or remove licenses from obligation map for a given obligation id",
                 "consumes": [
                     "application/json"
                 ],
@@ -723,18 +1006,18 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation",
-                        "name": "topic",
+                        "description": "Id of the obligation",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
                     {
-                        "description": "Shortnames of the licenses with action",
-                        "name": "shortname",
+                        "description": "License ids with action",
+                        "name": "license_maps",
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseMapShortnamesInput"
+                            "$ref": "#/definitions/models.LicenseMapInput"
                         }
                     }
                 ],
@@ -768,6 +1051,12 @@
         },
         "/obligations": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Get all active obligations from the service",
                 "consumes": [
                     "application/json"
@@ -799,6 +1088,17 @@
                         "description": "Number of records per page",
                         "name": "limit",
                         "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "asc",
+                            "desc"
+                        ],
+                        "type": "string",
+                        "default": "asc",
+                        "description": "Asc or desc ordering",
+                        "name": "order_by",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -808,8 +1108,14 @@
                             "$ref": "#/definitions/models.ObligationResponse"
                         }
                     },
-                    "404": {
-                        "description": "No obligations in DB",
+                    "400": {
+                        "description": "Invalid active value",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -841,7 +1147,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationPOSTRequestJSONSchema"
+                            "$ref": "#/definitions/models.ObligationCreateDTO"
                         }
                     }
                 ],
@@ -858,14 +1164,198 @@
                             "$ref": "#/definitions/models.LicenseError"
                         }
                     },
+                    "500": {
+                        "description": "Unable to create obligation",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/classifications": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get all active obligation classifications from the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get all active obligation classifications",
+                "operationId": "GetAllObligationClassification",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active obligation classification only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationClassificationResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No obligation classifications in DB",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Create an obligation classification",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Create an obligation classification",
+                "operationId": "CreateObligationClassification",
+                "parameters": [
+                    {
+                        "description": "Obligation classification to create",
+                        "name": "obligation_classification",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationClassification"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationClassificationResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
                     "409": {
-                        "description": "Obligation with same body exists",
+                        "description": "obligation classification already exists",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
                     },
                     "500": {
-                        "description": "Unable to create obligation",
+                        "description": "something went wrong while creating new obligation classification",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/classifications/{classification}": {
+            "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Deactivate an obligation classification",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Deactivate obligation classification",
+                "operationId": "DeleteObligationClassification",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Obligation Classification",
+                        "name": "classification",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "cannot delete obligation classification 'GREEN' as it's still referenced by some obligations",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "obligation classification 'GREEN' not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while deleting obligation classification",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/export": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Export all obligations as a json file",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Export all obligations as a json file",
+                "operationId": "ExportObligations",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.ObligationResponseDTO"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Failed to fetch obligations",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -938,9 +1428,263 @@
                 }
             }
         },
-        "/obligations/{topic}": {
+        "/obligations/preview": {
             "get": {
-                "description": "Get an active based on given topic",
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get topic and type of all active obligations from the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get topic and types of all active obligations",
+                "operationId": "GetAllObligationPreviews",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active obligation only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationPreviewResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/similarity": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Returns the top 5 obligations with text similar to the input using pg_trgm",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Find similar obligations",
+                "operationId": "getSimilarObligation",
+                "parameters": [
+                    {
+                        "description": "Text to compare against stored obligations",
+                        "name": "obligation",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.SimilarityRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Similar obligations found",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.SimilarObligation"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input or database query failure",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Unexpected server error",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/types": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get all active obligation types from the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get all active obligation types",
+                "operationId": "GetAllObligationType",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active obligation type only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationTypeResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No obligation types in DB",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Create an obligation type",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Create an obligation type",
+                "operationId": "CreateObligationType",
+                "parameters": [
+                    {
+                        "description": "Obligation type to create",
+                        "name": "obligation_type",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationType"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationTypeResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "409": {
+                        "description": "obligation type already exists",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while creating new obligation type",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/types/{type}": {
+            "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Deactivate an obligation type",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Deactivate obligation type",
+                "operationId": "DeleteObligationType",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Obligation Type",
+                        "name": "type",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "cannot delete obligation type 'RISK' as it's still referenced by some obligations",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "obligation type 'RISK' not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while deleting obligation type",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/{id}": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get an active based on given id",
                 "consumes": [
                     "application/json"
                 ],
@@ -955,8 +1699,8 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation",
-                        "name": "topic",
+                        "description": "Id of the obligation",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     }
@@ -969,7 +1713,7 @@
                         }
                     },
                     "404": {
-                        "description": "No obligation with given topic found",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -997,8 +1741,8 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation to be updated",
-                        "name": "topic",
+                        "description": "Id of the obligation to be updated",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     }
@@ -1008,7 +1752,7 @@
                         "description": "No Content"
                     },
                     "404": {
-                        "description": "No obligation with given topic found",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -1036,8 +1780,8 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation to be updated",
-                        "name": "topic",
+                        "description": "Id of the obligation to be updated",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
@@ -1047,7 +1791,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationPATCHRequestJSONSchema"
+                            "$ref": "#/definitions/models.ObligationUpdateDTO"
                         }
                     }
                 ],
@@ -1065,7 +1809,7 @@
                         }
                     },
                     "404": {
-                        "description": "No obligation with given topic found",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -1079,11 +1823,12 @@
                 }
             }
         },
-        "/obligations/{topic}/audits": {
+        "/obligations/{id}/audits": {
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Fetches audits corresponding to an obligation",
@@ -1101,8 +1846,8 @@
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Topic of the obligation for which audits need to be fetched",
-                        "name": "topic",
+                        "description": "Id of the obligation for which audits need to be fetched",
+                        "name": "id",
                         "in": "path",
                         "required": true
                     },
@@ -1127,13 +1872,183 @@
                         }
                     },
                     "404": {
-                        "description": "No obligation with given topic found",
+                        "description": "No obligation with given id found",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
                     },
                     "500": {
-                        "description": "unable to find audits with such obligation topic",
+                        "description": "unable to find audits with such obligation id",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/oidcClients": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Get all oidc clients added by the user for initiating M2M flow with fossology",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "OIDC Clients"
+                ],
+                "summary": "Get all oidc clients added by the user",
+                "operationId": "GetUserOidcClients",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.OidcClientsResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Something went wrong",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Add a new client for initiating M2M flow with fossology",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "OIDC Clients"
+                ],
+                "summary": "Adds a new oidc client",
+                "operationId": "CreateOidcClient",
+                "parameters": [
+                    {
+                        "description": "Oidc client to add",
+                        "name": "oidc_client",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.CreateDeleteOidcClientDTO"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.OidcClientsResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "409": {
+                        "description": "oidc client already exists",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while adding new oidc client",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Remove an oidc client if it gets expired or is compromised",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "OIDC Clients"
+                ],
+                "summary": "Remove an oidc client",
+                "operationId": "RevokeClient",
+                "parameters": [
+                    {
+                        "description": "Oidc client to add",
+                        "name": "oidc_client",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.CreateDeleteOidcClientDTO"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "404": {
+                        "description": "Oidc Client not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/refresh-token": {
+            "post": {
+                "description": "verify refresh token and get new access token",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Verify refresh token",
+                "operationId": "RefreshToken",
+                "parameters": [
+                    {
+                        "description": "Refresh token payload",
+                        "name": "user",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.RefreshToken"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": " JWT token",
+                        "schema": {
+                            "$ref": "#/definitions/models.TokenResonse"
+                        }
+                    },
+                    "401": {
+                        "description": "Invalid or expired refresh token",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -1143,6 +2058,12 @@
         },
         "/search": {
             "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Search licenses on different filters and algorithms",
                 "consumes": [
                     "application/json"
@@ -1207,6 +2128,26 @@
                 ],
                 "summary": "Get users",
                 "operationId": "GetAllUsers",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active user only",
+                        "name": "active",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Page number",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Number of records per page",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -1247,7 +2188,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.UserInput"
+                            "$ref": "#/definitions/models.UserCreate"
                         }
                     }
                 ],
@@ -1271,16 +2212,137 @@
                         }
                     }
                 }
+            },
+            "patch": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Users can update their profile using this endpoint",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Users can update their profile using this endpoint",
+                "operationId": "UpdateProfile",
+                "parameters": [
+                    {
+                        "description": "Profile fields to update",
+                        "name": "user",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.ProfileUpdate"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.UserResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
             }
         },
-        "/users/{id}": {
+        "/users/oidc": {
+            "post": {
+                "description": "Create a new service user via oidc id token",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Create new user via oidc id token",
+                "operationId": "CreateOidcUser",
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.UserResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "409": {
+                        "description": "User already exists",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/users/profile": {
             "get": {
                 "security": [
                     {
                         "ApiKeyAuth": []
                     }
                 ],
-                "description": "Get a single user by ID",
+                "description": "Get user's own profile",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Get user's own profile",
+                "operationId": "GetUserProfile",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.UserResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid user",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "User not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/users/{username}": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Get a single user by username",
                 "consumes": [
                     "application/json"
                 ],
@@ -1294,9 +2356,9 @@
                 "operationId": "GetUser",
                 "parameters": [
                     {
-                        "type": "integer",
-                        "description": "User ID",
-                        "name": "id",
+                        "type": "string",
+                        "description": "Username",
+                        "name": "username",
                         "in": "path",
                         "required": true
                     }
@@ -1321,6 +2383,102 @@
                         }
                     }
                 }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Deactivate an user",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Deactivate user",
+                "operationId": "DeleteUser",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Username of the user to be marked as inactive",
+                        "name": "username",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "404": {
+                        "description": "No user with given username found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Update a service user, requires admin rights",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Update user, requires admin rights",
+                "operationId": "UpdateUser",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "username of the user to be updated",
+                        "name": "username",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "User to update",
+                        "name": "user",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.UserUpdate"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.UserResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "403": {
+                        "description": "This resource requires elevated access rights",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
             }
         }
     },
@@ -1328,12 +2486,41 @@
         "datatypes.JSONType-models_LicenseDBSchemaExtension": {
             "type": "object"
         },
+        "datatypes.JSONType-models_ObligationSchemaExtension": {
+            "type": "object"
+        },
+        "models.APICollection": {
+            "type": "object",
+            "properties": {
+                "authenticated": {
+                    "type": "object"
+                },
+                "unAuthenticated": {
+                    "type": "object"
+                }
+            }
+        },
+        "models.APICollectionResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/models.APICollection"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
         "models.Audit": {
             "type": "object",
             "properties": {
+                "entity": {
+                    "type": "object"
+                },
                 "id": {
-                    "type": "integer",
-                    "example": 456
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "timestamp": {
                     "type": "string",
@@ -1341,15 +2528,23 @@
                 },
                 "type": {
                     "type": "string",
-                    "example": "license"
+                    "enum": [
+                        "OBLIGATION",
+                        "LICENSE",
+                        "USER"
+                    ],
+                    "example": "LICENSE"
                 },
                 "type_id": {
-                    "type": "integer",
-                    "example": 34
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "user": {
+                    "$ref": "#/definitions/models.User"
                 },
                 "user_id": {
-                    "type": "integer",
-                    "example": 123
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 }
             }
         },
@@ -1371,20 +2566,33 @@
                 }
             }
         },
+        "models.CategoryObligationCount": {
+            "type": "object",
+            "properties": {
+                "category": {
+                    "type": "string",
+                    "example": "GENERAL"
+                },
+                "count": {
+                    "type": "integer",
+                    "example": 6
+                }
+            }
+        },
         "models.ChangeLog": {
             "type": "object",
             "properties": {
                 "audit_id": {
-                    "type": "integer",
-                    "example": 456
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "field": {
                     "type": "string",
-                    "example": "rf_text"
+                    "example": "text"
                 },
                 "id": {
-                    "type": "integer",
-                    "example": 789
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "old_value": {
                     "type": "string",
@@ -1414,6 +2622,77 @@
                 }
             }
         },
+        "models.CreateDeleteOidcClientDTO": {
+            "type": "object",
+            "required": [
+                "clientId"
+            ],
+            "properties": {
+                "clientId": {
+                    "type": "string",
+                    "example": "qwerty"
+                }
+            }
+        },
+        "models.Dashboard": {
+            "type": "object",
+            "properties": {
+                "category_obligation_frequency": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.CategoryObligationCount"
+                    }
+                },
+                "licenses_count": {
+                    "type": "integer",
+                    "example": 2
+                },
+                "monthly_license_changes_count": {
+                    "type": "integer",
+                    "example": 6
+                },
+                "obligations_count": {
+                    "type": "integer",
+                    "example": 7
+                },
+                "risk_license_frequency": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.RiskLicenseCount"
+                    }
+                },
+                "users_count": {
+                    "type": "integer",
+                    "example": 5
+                }
+            }
+        },
+        "models.DashboardResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/models.Dashboard"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
+        "models.ImportLicensesResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "description": "can be of type models.LicenseError or models.LicenseImportStatus",
+                    "type": "array",
+                    "items": {}
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
         "models.ImportObligationsResponse": {
             "type": "object",
             "properties": {
@@ -1428,87 +2707,150 @@
                 }
             }
         },
-        "models.LicenseDB": {
+        "models.LicenseCreateDTO": {
             "type": "object",
             "required": [
-                "rf_shortname"
+                "fullname",
+                "shortname",
+                "spdx_id",
+                "text"
             ],
             "properties": {
+                "OSIapproved": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "active": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "copyleft": {
+                    "type": "boolean",
+                    "example": false
+                },
                 "external_ref": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
+                    "$ref": "#/definitions/models.LicenseDBSchemaExtension"
                 },
-                "marydone": {
-                    "type": "boolean"
-                },
-                "rf_FSFfree": {
-                    "type": "boolean"
-                },
-                "rf_Fedora": {
-                    "type": "string"
-                },
-                "rf_GPLv2compatible": {
-                    "type": "boolean"
-                },
-                "rf_GPLv3compatible": {
-                    "type": "boolean"
-                },
-                "rf_OSIapproved": {
-                    "type": "boolean"
-                },
-                "rf_active": {
-                    "type": "boolean"
-                },
-                "rf_add_date": {
-                    "type": "string",
-                    "example": "2023-12-01T18:10:25.00+05:30"
-                },
-                "rf_copyleft": {
-                    "type": "boolean"
-                },
-                "rf_detector_type": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_flag": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_fullname": {
+                "fullname": {
                     "type": "string",
                     "example": "MIT License"
                 },
-                "rf_id": {
-                    "type": "integer",
-                    "example": 123
-                },
-                "rf_notes": {
+                "notes": {
                     "type": "string",
                     "example": "This license has been superseded."
                 },
-                "rf_risk": {
-                    "type": "integer"
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "f81d4fae-7dec-11d0-a765-00a0c91e6bf6",
+                        "f812jfae-7dbc-11d0-a765-00a0hf06bf6"
+                    ]
                 },
-                "rf_shortname": {
+                "risk": {
+                    "type": "integer",
+                    "maximum": 5,
+                    "minimum": 0,
+                    "example": 1
+                },
+                "shortname": {
                     "type": "string",
                     "example": "MIT"
                 },
-                "rf_source": {
-                    "type": "string"
+                "source": {
+                    "type": "string",
+                    "example": "spdx"
                 },
-                "rf_spdx_id": {
+                "spdx_id": {
                     "type": "string",
                     "example": "MIT"
                 },
-                "rf_text": {
+                "text": {
                     "type": "string",
                     "example": "MIT License Text here"
                 },
-                "rf_text_updatable": {
-                    "type": "boolean"
+                "text_updatable": {
+                    "type": "boolean",
+                    "example": false
                 },
-                "rf_url": {
+                "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
+                }
+            }
+        },
+        "models.LicenseDB": {
+            "type": "object",
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "addDate": {
+                    "type": "string"
+                },
+                "copyleft": {
+                    "type": "boolean"
+                },
+                "externalRef": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
+                },
+                "fullname": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Obligation"
+                    }
+                },
+                "osiapproved": {
+                    "type": "boolean"
+                },
+                "risk": {
+                    "type": "integer"
+                },
+                "shortname": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "spdxId": {
+                    "type": "string"
+                },
+                "text": {
+                    "type": "string"
+                },
+                "textUpdatable": {
+                    "type": "boolean"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "user": {
+                    "$ref": "#/definitions/models.User"
+                },
+                "userId": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.LicenseDBSchemaExtension": {
+            "type": "object",
+            "properties": {
+                "license_explanation": {
+                    "type": "string"
+                },
+                "license_suffix": {
+                    "type": "string"
                 }
             }
         },
@@ -1537,104 +2879,83 @@
                 }
             }
         },
-        "models.LicenseInput": {
+        "models.LicenseImportStatus": {
             "type": "object",
             "properties": {
-                "external_ref": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
-                },
-                "marydone": {
-                    "type": "boolean"
-                },
-                "rf_FSFfree": {
-                    "type": "boolean"
-                },
-                "rf_Fedora": {
-                    "type": "string"
-                },
-                "rf_GPLv2compatible": {
-                    "type": "boolean"
-                },
-                "rf_GPLv3compatible": {
-                    "type": "boolean"
-                },
-                "rf_OSIapproved": {
-                    "type": "boolean"
-                },
-                "rf_active": {
-                    "type": "boolean"
-                },
-                "rf_add_date": {
+                "id": {
                     "type": "string",
-                    "example": "2023-12-01T18:10:25.00+05:30"
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
-                "rf_copyleft": {
-                    "type": "boolean"
-                },
-                "rf_detector_type": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_flag": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_fullname": {
-                    "type": "string",
-                    "example": "MIT License"
-                },
-                "rf_notes": {
-                    "type": "string",
-                    "example": "This license has been superseded."
-                },
-                "rf_risk": {
-                    "type": "integer"
-                },
-                "rf_shortname": {
+                "shortname": {
                     "type": "string",
                     "example": "MIT"
                 },
-                "rf_source": {
-                    "type": "string"
-                },
-                "rf_spdx_id": {
-                    "type": "string",
-                    "example": "MIT"
-                },
-                "rf_text": {
-                    "type": "string",
-                    "example": "MIT License Text here"
-                },
-                "rf_text_updatable": {
-                    "type": "boolean"
-                },
-                "rf_url": {
-                    "type": "string",
-                    "example": "https://opensource.org/licenses/MIT"
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },
-        "models.LicenseMapShortnamesElement": {
+        "models.LicenseListInput": {
+            "type": "object",
+            "properties": {
+                "ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    }
+                }
+            }
+        },
+        "models.LicenseMapElement": {
             "type": "object",
             "properties": {
                 "add": {
                     "type": "boolean",
                     "example": true
                 },
-                "shortname": {
+                "id": {
                     "type": "string",
-                    "example": "GPL-2.0-only"
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 }
             }
         },
-        "models.LicenseMapShortnamesInput": {
+        "models.LicenseMapInput": {
             "type": "object",
             "properties": {
                 "map": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/models.LicenseMapShortnamesElement"
+                        "$ref": "#/definitions/models.LicenseMapElement"
                     }
+                }
+            }
+        },
+        "models.LicensePreview": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "GPL-2.0-or-later"
+                }
+            }
+        },
+        "models.LicensePreviewResponse": {
+            "type": "object",
+            "properties": {
+                "licenses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.LicensePreview"
+                    }
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },
@@ -1644,7 +2965,7 @@
                 "data": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/models.LicenseDB"
+                        "$ref": "#/definitions/models.LicenseResponseDTO"
                     }
                 },
                 "paginationmeta": {
@@ -1656,86 +2977,133 @@
                 }
             }
         },
-        "models.LicenseShortnamesInput": {
+        "models.LicenseResponseDTO": {
             "type": "object",
             "properties": {
-                "shortnames": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
-                }
-            }
-        },
-        "models.LicenseUpdate": {
-            "type": "object",
-            "properties": {
-                "marydone": {
+                "OSIapproved": {
                     "type": "boolean"
                 },
-                "rf_FSFfree": {
+                "active": {
                     "type": "boolean"
                 },
-                "rf_Fedora": {
+                "add_date": {
                     "type": "string"
                 },
-                "rf_GPLv2compatible": {
+                "copyleft": {
                     "type": "boolean"
                 },
-                "rf_GPLv3compatible": {
-                    "type": "boolean"
+                "created_by": {
+                    "$ref": "#/definitions/models.User"
                 },
-                "rf_OSIapproved": {
-                    "type": "boolean"
+                "external_ref": {
+                    "$ref": "#/definitions/models.LicenseDBSchemaExtension"
                 },
-                "rf_active": {
-                    "type": "boolean"
-                },
-                "rf_add_date": {
-                    "type": "string",
-                    "example": "2023-12-01T18:10:25.00+05:30"
-                },
-                "rf_copyleft": {
-                    "type": "boolean"
-                },
-                "rf_detector_type": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_flag": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_fullname": {
+                "fullname": {
                     "type": "string",
                     "example": "MIT License"
                 },
-                "rf_notes": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "notes": {
                     "type": "string",
                     "example": "This license has been superseded."
                 },
-                "rf_risk": {
-                    "type": "integer"
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
-                "rf_source": {
-                    "type": "string"
+                "risk": {
+                    "type": "integer",
+                    "example": 1
                 },
-                "rf_spdx_id": {
+                "shortname": {
                     "type": "string",
                     "example": "MIT"
                 },
-                "rf_text": {
+                "source": {
+                    "type": "string"
+                },
+                "spdx_id": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "text": {
                     "type": "string",
                     "example": "MIT License Text here"
                 },
-                "rf_text_updatable": {
+                "text_updatable": {
                     "type": "boolean"
                 },
-                "rf_url": {
+                "url": {
+                    "type": "string",
+                    "example": "https://opensource.org/licenses/MIT"
+                }
+            }
+        },
+        "models.LicenseUpdateDTO": {
+            "type": "object",
+            "properties": {
+                "OSIapproved": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "active": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "copyleft": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "external_ref": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "fullname": {
+                    "type": "string",
+                    "example": "MIT License"
+                },
+                "notes": {
+                    "type": "string",
+                    "example": "This license has been superseded."
+                },
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Obligation"
+                    }
+                },
+                "risk": {
+                    "type": "integer",
+                    "maximum": 5,
+                    "minimum": 0,
+                    "example": 1
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "source": {
+                    "type": "string",
+                    "example": "Source"
+                },
+                "spdx_id": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                },
+                "text_updatable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
                 }
@@ -1747,26 +3115,127 @@
                 "active": {
                     "type": "boolean"
                 },
-                "classification": {
+                "category": {
                     "type": "string",
                     "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
+                        "DISTRIBUTION",
+                        "PATENT",
+                        "INTERNAL",
+                        "CONTRACTUAL",
+                        "EXPORT_CONTROL",
+                        "GENERAL"
                     ],
-                    "example": "green"
+                    "example": "DISTRIBUTION"
+                },
+                "classification": {
+                    "$ref": "#/definitions/models.ObligationClassification"
                 },
                 "comment": {
                     "type": "string"
                 },
-                "id": {
-                    "type": "integer",
-                    "example": 147
+                "externalRef": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_ObligationSchemaExtension"
                 },
-                "modifications": {
-                    "type": "boolean",
-                    "example": true
+                "id": {
+                    "type": "string"
+                },
+                "licenses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.LicenseDB"
+                    }
+                },
+                "obligationClassificationId": {
+                    "type": "string"
+                },
+                "obligationTypeId": {
+                    "type": "string"
+                },
+                "text": {
+                    "type": "string"
+                },
+                "textUpdatable": {
+                    "type": "boolean"
+                },
+                "topic": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/models.ObligationType"
+                }
+            }
+        },
+        "models.ObligationClassification": {
+            "type": "object",
+            "required": [
+                "classification",
+                "color"
+            ],
+            "properties": {
+                "classification": {
+                    "type": "string",
+                    "example": "GREEN"
+                },
+                "color": {
+                    "type": "string",
+                    "example": "#00FF00"
+                }
+            }
+        },
+        "models.ObligationClassificationResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationClassification"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
+        "models.ObligationCreateDTO": {
+            "type": "object",
+            "required": [
+                "classification",
+                "license_ids",
+                "text",
+                "topic",
+                "type"
+            ],
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "category": {
+                    "type": "string",
+                    "example": "DISTRIBUTION"
+                },
+                "classification": {
+                    "type": "string",
+                    "example": "GREEN"
+                },
+                "comment": {
+                    "type": "string"
+                },
+                "external_ref": {
+                    "$ref": "#/definitions/models.ObligationSchemaExtension"
+                },
+                "license_ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "f81d4fae-7dec-11d0-a765-00a0c91e6bf6",
+                        "f812jfae-7dbc-11d0-a765-00a0hf06bf6"
+                    ]
                 },
                 "text": {
                     "type": "string",
@@ -1782,13 +3251,7 @@
                 },
                 "type": {
                     "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ],
-                    "example": "risk"
+                    "example": "RISK"
                 }
             }
         },
@@ -1796,8 +3259,8 @@
             "type": "object",
             "properties": {
                 "id": {
-                    "type": "integer",
-                    "example": 31
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
                 "topic": {
                     "type": "string",
@@ -1811,9 +3274,25 @@
                 "data": {
                     "$ref": "#/definitions/models.ObligationId"
                 },
+                "message": {
+                    "type": "string"
+                },
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.ObligationMapLicenseFormat": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "MIT"
                 }
             }
         },
@@ -1838,108 +3317,15 @@
         "models.ObligationMapUser": {
             "type": "object",
             "properties": {
-                "shortnames": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "licenses": {
                     "type": "array",
                     "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
-                },
-                "topic": {
-                    "type": "string",
-                    "example": "copyleft"
-                }
-            }
-        },
-        "models.ObligationPATCHRequestJSONSchema": {
-            "type": "object",
-            "properties": {
-                "active": {
-                    "type": "boolean",
-                    "example": true
-                },
-                "classification": {
-                    "type": "string",
-                    "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
-                    ]
-                },
-                "comment": {
-                    "type": "string",
-                    "example": "This is a comment."
-                },
-                "modifications": {
-                    "type": "boolean"
-                },
-                "text": {
-                    "type": "string",
-                    "example": "Source code be made available when distributing the software."
-                },
-                "text_updatable": {
-                    "type": "boolean"
-                },
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ]
-                }
-            }
-        },
-        "models.ObligationPOSTRequestJSONSchema": {
-            "type": "object",
-            "required": [
-                "active",
-                "classification",
-                "comment",
-                "modifications",
-                "shortnames",
-                "text",
-                "topic",
-                "type"
-            ],
-            "properties": {
-                "active": {
-                    "type": "boolean",
-                    "example": true
-                },
-                "classification": {
-                    "type": "string",
-                    "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
-                    ]
-                },
-                "comment": {
-                    "type": "string"
-                },
-                "modifications": {
-                    "type": "boolean"
-                },
-                "shortnames": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
-                },
-                "text": {
-                    "type": "string",
-                    "example": "Source code be made available when distributing the software."
+                        "$ref": "#/definitions/models.ObligationMapLicenseFormat"
+                    }
                 },
                 "topic": {
                     "type": "string",
@@ -1952,7 +3338,45 @@
                         "restriction",
                         "risk",
                         "right"
+                    ],
+                    "example": "obligation"
+                }
+            }
+        },
+        "models.ObligationPreview": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "Provide Copyright Notices"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OBLIGATION",
+                        "RESTRICTION",
+                        "RISK",
+                        "RIGHT"
                     ]
+                }
+            }
+        },
+        "models.ObligationPreviewResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationPreview"
+                    }
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },
@@ -1962,7 +3386,194 @@
                 "data": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/models.Obligation"
+                        "$ref": "#/definitions/models.ObligationResponseDTO"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
+        "models.ObligationResponseDTO": {
+            "type": "object",
+            "required": [
+                "category",
+                "classification",
+                "license_ids",
+                "text",
+                "topic",
+                "type"
+            ],
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "category": {
+                    "type": "string",
+                    "example": "DISTRIBUTION"
+                },
+                "classification": {
+                    "type": "string",
+                    "example": "GREEN"
+                },
+                "comment": {
+                    "type": "string"
+                },
+                "external_ref": {
+                    "$ref": "#/definitions/models.ObligationSchemaExtension"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "license_ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "f81d4fae-7dec-11d0-a765-00a0c91e6bf6",
+                        "f812jfae-7dbc-11d0-a765-00a0hf06bf6"
+                    ]
+                },
+                "text": {
+                    "type": "string",
+                    "example": "Source code be made available when distributing the software."
+                },
+                "text_updatable": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "copyleft"
+                },
+                "type": {
+                    "type": "string",
+                    "example": "RISK"
+                }
+            }
+        },
+        "models.ObligationSchemaExtension": {
+            "type": "object",
+            "properties": {
+                "obligation_explanation": {
+                    "type": "string"
+                },
+                "obligation_suffix": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.ObligationType": {
+            "type": "object",
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "example": "PERMISSION"
+                }
+            }
+        },
+        "models.ObligationTypeResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationType"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
+        "models.ObligationUpdateDTO": {
+            "type": "object",
+            "required": [
+                "license_ids"
+            ],
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "category": {
+                    "type": "string",
+                    "example": "DISTRIBUTION"
+                },
+                "classification": {
+                    "type": "string",
+                    "example": "GREEN"
+                },
+                "comment": {
+                    "type": "string"
+                },
+                "external_ref": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "license_ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "f81d4fae-7dec-11d0-a765-00a0c91e6bf6",
+                        "f812jfae-7dbc-11d0-a765-00a0hf06bf6"
+                    ]
+                },
+                "text": {
+                    "type": "string",
+                    "example": "Source code be made available when distributing the software."
+                },
+                "text_updatable": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "copyleft"
+                },
+                "type": {
+                    "type": "string",
+                    "example": "RISK"
+                }
+            }
+        },
+        "models.OidcClientDTO": {
+            "type": "object",
+            "properties": {
+                "add_date": {
+                    "type": "string"
+                },
+                "client_id": {
+                    "type": "string",
+                    "example": "qwerty"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                }
+            }
+        },
+        "models.OidcClientsResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.OidcClientDTO"
                     }
                 },
                 "paginationmeta": {
@@ -2003,6 +3614,47 @@
                 }
             }
         },
+        "models.ProfileUpdate": {
+            "type": "object",
+            "properties": {
+                "display_name": {
+                    "type": "string",
+                    "example": "fossy"
+                },
+                "subscribed": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "user_email": {
+                    "type": "string"
+                },
+                "user_password": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.RefreshToken": {
+            "type": "object",
+            "properties": {
+                "refresh_token": {
+                    "type": "string",
+                    "example": "your_refresh_token_here"
+                }
+            }
+        },
+        "models.RiskLicenseCount": {
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "integer",
+                    "example": 6
+                },
+                "risk": {
+                    "type": "integer",
+                    "example": 2
+                }
+            }
+        },
         "models.SearchLicense": {
             "type": "object",
             "required": [
@@ -2012,7 +3664,7 @@
             "properties": {
                 "field": {
                     "type": "string",
-                    "example": "rf_text"
+                    "example": "text"
                 },
                 "search": {
                     "type": "string",
@@ -2027,47 +3679,144 @@
                 }
             }
         },
-        "models.User": {
+        "models.SimilarLicense": {
             "type": "object",
-            "required": [
-                "password",
-                "userlevel",
-                "username"
-            ],
             "properties": {
                 "id": {
-                    "type": "integer",
-                    "example": 123
-                },
-                "password": {
-                    "type": "string"
-                },
-                "userlevel": {
                     "type": "string",
-                    "example": "admin"
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
                 },
-                "username": {
+                "shortname": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "similarity": {
+                    "type": "number"
+                },
+                "text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                }
+            }
+        },
+        "models.SimilarObligation": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "similarity": {
+                    "type": "number"
+                },
+                "text": {
+                    "type": "string",
+                    "example": "obligation text here"
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "MIT license"
+                }
+            }
+        },
+        "models.SimilarityRequest": {
+            "type": "object",
+            "required": [
+                "text"
+            ],
+            "properties": {
+                "text": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.TokenResonse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/models.Tokens"
+                },
+                "meta": {},
+                "status": {
+                    "type": "integer"
+                }
+            }
+        },
+        "models.Tokens": {
+            "type": "object",
+            "properties": {
+                "access_token": {
+                    "type": "string",
+                    "example": "your_access_token_here"
+                },
+                "expires_at": {
+                    "type": "string",
+                    "example": "2026-02-10T15:11:14Z"
+                },
+                "refresh_token": {
+                    "type": "string",
+                    "example": "your_refresh_token_here"
+                }
+            }
+        },
+        "models.User": {
+            "type": "object",
+            "properties": {
+                "display_name": {
+                    "type": "string",
+                    "example": "fossy"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                },
+                "subscribed": {
+                    "type": "boolean"
+                },
+                "user_email": {
+                    "type": "string",
+                    "example": "fossy@org.com"
+                },
+                "user_level": {
+                    "type": "string",
+                    "example": "USER"
+                },
+                "user_name": {
                     "type": "string",
                     "example": "fossy"
                 }
             }
         },
-        "models.UserInput": {
+        "models.UserCreate": {
             "type": "object",
             "required": [
-                "password",
-                "userlevel",
-                "username"
+                "display_name",
+                "user_email",
+                "user_level",
+                "user_name"
             ],
             "properties": {
-                "password": {
-                    "type": "string"
-                },
-                "userlevel": {
+                "display_name": {
                     "type": "string",
-                    "example": "admin"
+                    "example": "fossy"
                 },
-                "username": {
+                "user_email": {
+                    "type": "string",
+                    "example": "fossy@org.com"
+                },
+                "user_level": {
+                    "type": "string",
+                    "enum": [
+                        "USER",
+                        "ADMIN"
+                    ],
+                    "example": "ADMIN"
+                },
+                "user_name": {
+                    "type": "string",
+                    "example": "fossy"
+                },
+                "user_password": {
                     "type": "string",
                     "example": "fossy"
                 }
@@ -2081,7 +3830,8 @@
             ],
             "properties": {
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "fossy"
                 },
                 "username": {
                     "type": "string",
@@ -2106,11 +3856,41 @@
                     "example": 200
                 }
             }
+        },
+        "models.UserUpdate": {
+            "type": "object",
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "display_name": {
+                    "type": "string",
+                    "example": "fossy"
+                },
+                "user_email": {
+                    "type": "string"
+                },
+                "user_level": {
+                    "type": "string",
+                    "enum": [
+                        "USER",
+                        "ADMIN"
+                    ],
+                    "example": "ADMIN"
+                },
+                "user_name": {
+                    "type": "string",
+                    "example": "fossy"
+                },
+                "user_password": {
+                    "type": "string"
+                }
+            }
         }
     },
     "securityDefinitions": {
         "ApiKeyAuth": {
-            "description": "Token from /login endpoint",
+            "description": "Token from /login endpoint. Enter the token with the `Bearer ` prefix, e.g. \\\"Bearer eyJhbGciOiJ.....\\\"",
             "type": "apiKey",
             "name": "Authorization",
             "in": "header"

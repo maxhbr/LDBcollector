@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
 // SPDX-FileCopyrightText: 2024 Siemens AG
 // SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+// SPDX-FileCopyrightText: 2025 Chayan Das <01chayandas@gmail.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only
 
@@ -8,96 +9,198 @@ package middleware
 
 import (
 	"bytes"
+	"context"
 	"encoding/json"
 	"fmt"
-	"log"
 	"math"
 	"net/http"
 	"os"
 	"strconv"
+	"strings"
 	"time"
 
+	"github.com/fossology/LicenseDb/pkg/auth"
 	"github.com/fossology/LicenseDb/pkg/db"
+	logger "github.com/fossology/LicenseDb/pkg/log"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
-	"github.com/golang-jwt/jwt/v4"
+	"github.com/lestrrat-go/jwx/v3/jwa"
+	"github.com/lestrrat-go/jwx/v3/jws"
+	"github.com/lestrrat-go/jwx/v3/jwt"
+	"go.uber.org/zap"
 )
 
 // AuthenticationMiddleware is a middleware function for user authentication.
 func AuthenticationMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		tokenString := c.GetHeader("Authorization")
-
-		if tokenString == "" {
-			er := models.LicenseError{
-				Status:    http.StatusUnauthorized,
-				Message:   "Please check your credentials and try again",
-				Error:     "no credentials were passed",
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-
-			c.JSON(http.StatusUnauthorized, er)
-			c.Abort()
+		authHeader := c.GetHeader("Authorization")
+		if authHeader == "" {
+			unauthorized(c, "no credentials were passed")
 			return
 		}
-
-		token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
-			if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
-				return nil, fmt.Errorf("unexpected signing method: %v", token.Header["alg"])
-			}
-			return []byte(os.Getenv("API_SECRET")), nil
-		})
-
+		parts := strings.Split(authHeader, " ")
+		if len(parts) != 2 {
+			unauthorized(c, "no credentials were passed")
+			return
+		}
+		tokenString := parts[1]
+		unverfiedParsedToken, err := jwt.Parse([]byte(tokenString), jwt.WithVerify(false), jwt.WithValidate(true))
 		if err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusUnauthorized,
-				Message:   "Please check your credentials and try again",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-
-			c.JSON(http.StatusUnauthorized, er)
-			c.Abort()
+			unauthorized(c, "token parsing failed")
 			return
 		}
 
-		claims, ok := token.Claims.(jwt.MapClaims)
-		if !ok || !token.Valid {
-			er := models.LicenseError{
-				Status:    http.StatusUnauthorized,
-				Message:   "Invalid token",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
+		iss, _ := unverfiedParsedToken.Issuer()
+		if iss == os.Getenv("DEFAULT_ISSUER") {
+			_, err := jws.Verify([]byte(tokenString), jws.WithKey(jwa.HS256(), []byte(os.Getenv("API_SECRET"))))
+			if err != nil {
+				logger.LogError("error verifying token", zap.Error(err))
+				unauthorized(c, "token verification failed")
+				return
 			}
 
-			c.JSON(http.StatusUnauthorized, er)
+			var userData map[string]interface{}
+			if err = unverfiedParsedToken.Get("user", &userData); err != nil {
+				logger.LogError("error parsing token user data", zap.Error(err))
+				unauthorized(c, "incompatible token format")
+				return
+			}
+
+			userDataBytes, err := json.Marshal(userData)
+			if err != nil {
+				logger.LogError("error marshalling user data", zap.Error(err))
+				unauthorized(c, "failed to marshal user data")
+				return
+			}
+
+			// Unmarshal the JSON bytes into the models.User struct
+			var user models.User
+			err = json.Unmarshal(userDataBytes, &user)
+			if err != nil {
+				logger.LogError("error unmarshalling user data", zap.Error(err))
+				unauthorized(c, "incompatible token format")
+				return
+			}
+
+			active := true
+			if err := db.DB.Where(models.User{Id: user.Id, Active: &active}).First(&user).Error; err != nil {
+				logger.LogError("error finding user in db", zap.Error(err))
+				unauthorized(c, "user not found. please check your credentials.")
+				return
+			}
+			c.Set("userId", user.Id)
+			c.Set("role", *user.UserLevel)
+		} else if iss == os.Getenv("OIDC_ISSUER") {
+
+			if auth.Jwks == nil {
+				logger.LogError("oidc environment variables not configured properly")
+				internalServerError(c)
+				return
+			}
+			keyset, err := auth.Jwks.Lookup(context.Background(), os.Getenv("JWKS_URI"))
+			if err != nil {
+				logger.LogError("failed jwk cache lookup from oidc provider", zap.Error(err))
+				internalServerError(c)
+				return
+			}
+			keyOptions := jws.WithKeySet(keyset)
+			keyError := true
+			if kid, err := utils.GetKid(tokenString); err == nil {
+				if key, ok := keyset.LookupKeyID(kid); ok {
+					if os.Getenv("OIDC_SIGNING_ALG") != "" {
+						if alg, ok := jwa.LookupSignatureAlgorithm(os.Getenv("OIDC_SIGNING_ALG")); ok {
+							if err = key.Set("alg", alg); err == nil {
+								keyError = false
+							}
+						}
+					} else if _, ok := key.Algorithm(); ok {
+						keyError = false
+					}
+				}
+			}
+			if keyError {
+				logger.LogError("token verification failed due to invalid alg header key field")
+				unauthorized(c, "token verification failed")
+				return
+			}
+
+			if _, err = jws.Verify([]byte(tokenString), keyOptions); err != nil {
+				logger.LogError("token verification failed", zap.Error(err))
+				unauthorized(c, "token verification failed")
+				return
+			}
+
+			isClientCredentialsFlow := false
+			var oidcClientToUserMapper string
+			if os.Getenv("OIDC_CLIENT_TO_USER_MAPPER_CLAIM") != "" {
+				if err := unverfiedParsedToken.Get(os.Getenv("OIDC_CLIENT_TO_USER_MAPPER_CLAIM"), &oidcClientToUserMapper); err == nil {
+					isClientCredentialsFlow = true
+				}
+			}
+
+			var user models.User
+			if isClientCredentialsFlow {
+				var oidcClient models.OidcClient
+				if err := db.DB.Preload("User").Where(&models.OidcClient{ClientId: oidcClientToUserMapper}).First(&oidcClient).Error; err != nil {
+					logger.LogError("error fetching oidc client", zap.Error(err))
+					unauthorized(c, "oidc client not set up")
+					return
+				}
+				user = oidcClient.User
+			} else {
+				if os.Getenv("OIDC_USERNAME_KEY") == "" {
+					logger.LogError("oidc environment variables not configured properly")
+					internalServerError(c)
+					return
+				}
+				var username string
+				if err = unverfiedParsedToken.Get(os.Getenv("OIDC_USERNAME_KEY"), &username); err != nil {
+					logger.LogError("error parsing oidc username", zap.Error(err))
+					unauthorized(c, "incompatible token format")
+					return
+				}
+
+				if err := db.DB.Where(models.User{UserName: &username}).First(&user).Error; err != nil {
+					logger.LogError("error finding user", zap.Error(err))
+					unauthorized(c, "User not found")
+					return
+				}
+			}
+			c.Set("userId", user.Id)
+			c.Set("role", *user.UserLevel)
+		} else {
+			logger.LogError("issuer not supported", zap.String("issuer", iss))
+			unauthorized(c, "issuer not supported")
+			return
+		}
+		c.Next()
+	}
+}
+
+// RoleBasedAccessMiddleware is a middleware function for giving role based access to apis.
+func RoleBasedAccessMiddleware(roles []string) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		role := c.GetString("role")
+		found := false
+		for _, r := range roles {
+			if role == r {
+				found = true
+				break
+			}
+		}
+		if !found {
+			logger.LogError("access denied due to insufficient role permissions")
+			c.JSON(http.StatusForbidden, models.LicenseError{
+				Status:    http.StatusForbidden,
+				Message:   "You do not have the necessary permissions to access this resource",
+				Error:     "access denied due to insufficient role permissions",
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			})
 			c.Abort()
 			return
 		}
-
-		userId := int64(claims["id"].(float64))
-
-		var user models.User
-		result := db.DB.Where(models.User{Id: userId}).First(&user)
-		if result.Error != nil {
-			er := models.LicenseError{
-				Status:    http.StatusUnauthorized,
-				Message:   "User not found",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-
-			c.JSON(http.StatusUnauthorized, er)
-			c.Abort()
-			return
-		}
-
-		c.Set("username", user.Username)
 		c.Next()
 	}
 }
@@ -108,6 +211,7 @@ func CORSMiddleware() gin.HandlerFunc {
 		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 		c.Writer.Header().Set("Access-Control-Allow-Credentials", "true")
 		c.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With")
+		c.Writer.Header().Set("Access-Control-Expose-Headers", "Content-Disposition")
 		c.Writer.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS, GET, PUT, PATCH, DELETE")
 
 		if c.Request.Method == "OPTIONS" {
@@ -125,11 +229,11 @@ func PaginationMiddleware() gin.HandlerFunc {
 		var page models.PaginationInput
 		parsedPage, err := strconv.ParseInt(c.Query("page"), 10, 64)
 		if err == nil {
-			page.Page = int(parsedPage)
+			page.Page = parsedPage
 		}
 		parsedLimit, err := strconv.ParseInt(c.Query("limit"), 10, 64)
 		if err == nil {
-			page.Limit = int(parsedLimit)
+			page.Limit = parsedLimit
 		}
 
 		if page.Page == 0 {
@@ -161,9 +265,11 @@ func PaginationMiddleware() gin.HandlerFunc {
 			var licenseRes models.LicenseResponse
 			var obligationRes models.ObligationResponse
 			var auditRes models.AuditResponse
+			var userRes models.UserResponse
 			isLicenseRes := false
 			isObligationRes := false
 			isAuditRes := false
+			isUserRes := false
 			responseModel, _ := c.Get("responseModel")
 			switch responseModel.(type) {
 			case *models.LicenseResponse:
@@ -173,16 +279,22 @@ func PaginationMiddleware() gin.HandlerFunc {
 			case *models.ObligationResponse:
 				err = json.Unmarshal(originalBody, &obligationRes)
 				isObligationRes = true
-				metaObject = obligationRes.Meta
+				metaObject = &obligationRes.Meta
 			case *models.AuditResponse:
 				err = json.Unmarshal(originalBody, &auditRes)
 				isAuditRes = true
 				metaObject = auditRes.Meta
+			case *models.UserResponse:
+				err = json.Unmarshal(originalBody, &userRes)
+				isUserRes = true
+				metaObject = userRes.Meta
 			default:
 				err = fmt.Errorf("unknown response model type")
 			}
 			if err != nil {
-				log.Fatalf("Error marshalling new body: %s", err)
+				logger.LogError("error processing response model", zap.Error(err))
+				internalServerError(c)
+				return
 			}
 
 			paginationMeta := metaValue.(models.PaginationMeta)
@@ -193,44 +305,52 @@ func PaginationMiddleware() gin.HandlerFunc {
 			metaObject.Page = page.Page
 			metaObject.Limit = page.Limit
 			metaObject.ResourceCount = paginationMeta.ResourceCount
-			metaObject.TotalPages = int(math.Ceil(float64(paginationMeta.ResourceCount) / float64(page.Limit)))
+			metaObject.TotalPages = int64(math.Ceil(float64(paginationMeta.ResourceCount) / float64(page.Limit)))
+
 			// Can go next
 			if metaObject.Page < metaObject.TotalPages {
 				params.Set("page", strconv.FormatInt(int64(metaObject.Page+1), 10))
 				c.Request.URL.RawQuery = params.Encode()
-
 				metaObject.Next = c.Request.URL.String()
 			}
+
 			// Can go previous
 			if metaObject.Page > 1 {
 				params.Set("page", strconv.FormatInt(int64(metaObject.Page-1), 10))
 				c.Request.URL.RawQuery = params.Encode()
-
 				metaObject.Previous = c.Request.URL.String()
 			}
 
 			// Marshal the new body
 			var newBody []byte
-			var err error
 			if isLicenseRes {
 				newBody, err = json.Marshal(licenseRes)
 			} else if isObligationRes {
 				newBody, err = json.Marshal(obligationRes)
 			} else if isAuditRes {
 				newBody, err = json.Marshal(auditRes)
+			} else if isUserRes {
+				newBody, err = json.Marshal(userRes)
 			}
 			if err != nil {
-				log.Fatalf("Error marshalling new body: %s", err.Error())
+				logger.LogError("error marshalling response body", zap.Error(err))
+				internalServerError(c)
+				return
 			}
 			_, err = c.Writer.WriteString(string(newBody))
 			if err != nil {
-				log.Fatalf("Error writing new body: %s", err.Error())
+				logger.LogError("error writing response body", zap.Error(err))
+				internalServerError(c)
+				return
 			}
+
 		} else {
 			// Write the original body for non-paginated responses
 			_, err := c.Writer.WriteString(writer.body.String())
 			if err != nil {
-				log.Fatalf("Error writing new body: %s", err.Error())
+				logger.LogError("error writing response body", zap.Error(err))
+				internalServerError(c)
+				return
 			}
 		}
 	}
@@ -245,4 +365,26 @@ type bodyWriter struct {
 // Write is a custom write function to capture and process response body.
 func (w bodyWriter) Write(b []byte) (int, error) {
 	return w.body.Write(b)
+}
+
+func unauthorized(c *gin.Context, msg string) {
+	c.JSON(http.StatusUnauthorized, models.LicenseError{
+		Status:    http.StatusUnauthorized,
+		Message:   "Please check your credentials and try again",
+		Error:     msg,
+		Path:      c.Request.URL.Path,
+		Timestamp: time.Now().Format(time.RFC3339),
+	})
+	c.Abort()
+}
+
+func internalServerError(c *gin.Context) {
+	c.JSON(http.StatusInternalServerError, models.LicenseError{
+		Status:    http.StatusInternalServerError,
+		Message:   "Something went wrong",
+		Error:     "internal server error",
+		Path:      c.Request.URL.Path,
+		Timestamp: time.Now().Format(time.RFC3339),
+	})
+	c.Abort()
 }
