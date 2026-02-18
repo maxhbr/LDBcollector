@@ -29,7 +29,15 @@
             "LicenseRef-LGPL-2.0"
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "GNU LESSER GENERAL PUBLIC LICENSE",
+        "GNU LGPL",
+        "GNU Lesser General Public Licence",
+        "GNU Lesser General Public License",
+        "GNU Lesser General Public License (LGPL)",
+        "GNU Lesser Public License",
+        "Lesser General Public License (LGPL)"
+    ],
     "risky": [
         "GNU Lesser General Public License v2",
         "GNU Lesser General Public License v2 (LGPLv2)",

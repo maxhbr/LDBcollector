@@ -4,7 +4,9 @@
         "src": "scancode-licensedb"
     },
     "aliases": {
-        "custom": [],
+        "custom": [
+            "Public domain"
+        ],
         "scancodeLicensedb": [
             "LicenseRef-Fedora-Public-Domain",
             "LicenseRef-PublicDomain",

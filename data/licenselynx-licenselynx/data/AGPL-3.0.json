@@ -7,7 +7,9 @@
         "spdx": [
             "GNU Affero General Public License v3.0"
         ],
-        "custom": [],
+        "custom": [
+            "GNU AFFERO GPL 3.0"
+        ],
         "osi": [
             "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)"
         ]

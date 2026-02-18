@@ -7,7 +7,9 @@
         "spdx": [
             "OpenSSL License"
         ],
-        "custom": [],
+        "custom": [
+            "openssl"
+        ],
         "scancodeLicensedb": [
             "openssl-ssleay",
             "OpenSSL/SSLeay License"

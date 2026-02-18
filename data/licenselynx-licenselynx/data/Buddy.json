@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "Buddy",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Buddy License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

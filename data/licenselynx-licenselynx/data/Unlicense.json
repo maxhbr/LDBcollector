@@ -9,7 +9,8 @@
         ],
         "custom": [
             "Unlicence",
-            "UNLICENSED"
+            "UNLICENSED",
+            "unlicensed"
         ],
         "scancodeLicensedb": [
             "Unlicense",

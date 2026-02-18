@@ -15,6 +15,14 @@
             "bsd-original"
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "BSD",
+        "BSD License",
+        "BSD licence",
+        "BSD license",
+        "BSD style",
+        "BSD*",
+        "BSD-Style License"
+    ],
     "risky": []
 }

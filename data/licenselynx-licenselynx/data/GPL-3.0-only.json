@@ -8,7 +8,11 @@
             "GNU General Public License v3.0 only",
             "GPL-3.0"
         ],
-        "custom": [],
+        "custom": [
+            "GENERAL PUBLIC LICENSE, version 3 (GPL-3.0)",
+            "GPL v3",
+            "GPL3"
+        ],
         "osi": [
             "GNU General Public License, Version 3.0"
         ],

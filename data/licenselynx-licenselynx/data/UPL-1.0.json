@@ -7,7 +7,9 @@
         "spdx": [
             "Universal Permissive License v1.0"
         ],
-        "custom": [],
+        "custom": [
+            "Universal Permissive License, Version 1.0"
+        ],
         "scancodeLicensedb": [
             "Universal Permissive License (UPL) v1.0",
             "UPL 1.0",

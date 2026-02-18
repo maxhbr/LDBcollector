@@ -7,7 +7,9 @@
         "spdx": [
             "MIT No Attribution"
         ],
-        "custom": [],
+        "custom": [
+            "MIT no attribution"
+        ],
         "scancodeLicensedb": [
             "LicenseRef-scancode-ekioh",
             "mit-0",

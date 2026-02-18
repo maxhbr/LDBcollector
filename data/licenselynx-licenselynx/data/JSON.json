@@ -7,7 +7,9 @@
         "spdx": [
             "JSON License"
         ],
-        "custom": [],
+        "custom": [
+            "The JSON License"
+        ],
         "scancodeLicensedb": [
             "json"
         ]

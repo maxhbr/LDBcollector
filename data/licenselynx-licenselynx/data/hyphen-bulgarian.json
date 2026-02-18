@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "hyphen-bulgarian",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "hyphen-bulgarian License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

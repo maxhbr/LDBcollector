@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "X11-no-permit-persons",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "X11 no permit persons clause"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

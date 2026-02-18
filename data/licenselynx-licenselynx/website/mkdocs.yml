@@ -29,10 +29,13 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-  logo: assets/LicenseLynx-favicon.ico
-  favicon: assets/LicenseLynx-favicon.ico
+  logo: assets/LicenseLynx-favicon-no-bg.ico
+  favicon: assets/LicenseLynx-favicon-no-bg.ico
   features:
     - navigation.footer
+
+extra_css:
+  - stylesheets/custom.css
 
 nav:
   - Introduction: index.md
@@ -63,3 +66,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true

@@ -7,6 +7,14 @@
         "BSD 'Zero' Clause": {
             "id": "0BSD",
             "src": "spdx"
+        },
+        "License only in scancode": {
+            "id": "only-scancode",
+            "src": "scancode-licensedb"
+        },
+        "Custom License": {
+            "id": "custom-license",
+            "src": "custom"
         }
     },
     "riskyMap": {

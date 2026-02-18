@@ -16,7 +16,9 @@
             "artistic-1.0"
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "Artistic License"
+    ],
     "risky": [],
     "isMajorVersionOnly": true
 }

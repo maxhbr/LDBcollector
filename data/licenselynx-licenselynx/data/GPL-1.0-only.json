@@ -15,7 +15,10 @@
             "gpl-1.0"
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "GNU General Public License (GPL)",
+        "GPL"
+    ],
     "risky": [],
     "isMajorVersionOnly": true
 }

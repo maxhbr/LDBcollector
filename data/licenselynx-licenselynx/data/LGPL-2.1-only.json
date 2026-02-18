@@ -9,7 +9,16 @@
             "LGPL-2.1"
         ],
         "custom": [
+            "GNU Lesser General Public License (LGPL), Version 2.1",
+            "GNU Lesser General Public License Version 2.1",
+            "GNU Lesser General Public License version 2.1",
+            "GNU Lesser General Public License version 2.1 (LGPLv2.1)",
+            "GNU Lesser General Public License, 2.1",
+            "GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1",
+            "GNU Lesser General Public License, version 2.1",
+            "GNU Lesser GPL 2.1",
             "GNU LGPL 2.1 (only)",
+            "GNU LGPL v2.1",
             "GNU LGPL v2.1 only",
             "LGPL 2.1 (only)",
             "LGPL 2.1 License (only)",
@@ -17,12 +26,14 @@
             "LGPL v2.1",
             "LGPL v2.1 License (only)",
             "LGPL v2.1 only",
+            "LGPL version 2.1",
             "LGPL-2.1 (only)",
             "LGPL-2.1-only License",
             "LGPLv2.1",
             "LGPLv2.1 (only)",
             "LGPLv2.1 only",
-            "LGPLv2.1-only"
+            "LGPLv2.1-only",
+            "The GNU Lesser General Public License, Version 2.1"
         ],
         "osi": [
             "GNU Lesser General Public License, Version 2.1"

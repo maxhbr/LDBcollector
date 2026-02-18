@@ -4,6 +4,7 @@
 
 # --- ROOT ---
 venv
+.venv
 .idea
 *.log
 
@@ -67,9 +68,14 @@ venv
 /**/*.json
 /**/*.tgz
 
+# --- Website ---
+
+/website/site
+
 # Exceptions
 !typescript/resources/*
 !typescript/tests/resources/*
 !typescript/package-lock.json
 !data/*
 
+.DS_Store

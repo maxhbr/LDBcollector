@@ -1,12 +1,15 @@
 {
     "canonical": {
-        "id": "tekhvc",
-        "src": "scancode-licensedb"
+        "id": "TekHVC",
+        "src": "spdx"
     },
     "aliases": {
         "custom": [],
         "scancodeLicensedb": [
             "LicenseRef-scancode-tekhvc",
+            "tekhvc"
+        ],
+        "spdx": [
             "TekHVC License"
         ]
     },

@@ -9,16 +9,23 @@
             "LGPL-3.0"
         ],
         "custom": [
+            "GNU Lesser General Public License (LGPL), Version 3",
+            "GNU Lesser General Public License v3.0",
+            "GNU LESSER GENERAL PUBLIC LICENSE, version 3 (LGPL-3.0)",
+            "GNU LGPL 3",
             "GNU LGPL 3.0 (only)",
             "GNU LGPL v3.0 only",
+            "LGPL 3",
             "LGPL 3.0 (only)",
             "LGPL 3.0 License (only)",
             "LGPL 3.0 only",
+            "LGPL v3",
             "LGPL v3.0",
             "LGPL v3.0 License (only)",
             "LGPL v3.0 only",
             "LGPL-3.0 (only)",
-            "LGPL-3.0-only License"
+            "LGPL-3.0-only License",
+            "LGPLv3 License"
         ],
         "osi": [
             "GNU Lesser General Public License, Version 3.0"

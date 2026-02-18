@@ -1,4 +1,6 @@
-# LicenseLynx
+![total mappings](website/badges/total-mappings.svg)
+[![GitHub Tag](https://img.shields.io/github/v/tag/licenselynx/licenselynx)](https://github.com/licenselynx/licenselynx/releases/latest)
+[![license](https://img.shields.io/github/license/licenselynx/licenselynx)](LICENSE)
 
 ![python coverage](website/badges/coverage-python.svg)
 ![java coverage](website/badges/coverage-java.svg)
@@ -11,20 +13,12 @@
 [![scripts pipeline](https://github.com/licenselynx/licenselynx/actions/workflows/scripts.yaml/badge.svg)](https://github.com/licenselynx/licenselynx/actions/workflows/scripts.yaml)
 [![data pipeline](https://github.com/licenselynx/licenselynx/actions/workflows/data.yaml/badge.svg)](https://github.com/licenselynx/licenselynx/actions/workflows/data.yaml)
 
-[![GitHub Tag](https://img.shields.io/github/v/tag/licenselynx/licenselynx)](https://github.com/licenselynx/licenselynx/releases/latest)
-
-[![license](https://img.shields.io/github/license/licenselynx/licenselynx)](LICENSE)
-
-## License Mapping Statistics
-
-[![stats.svg](stats.svg)](#License-Mapping-Statistics)
+# LicenseLynx 
 
 ## Overview
 
-LicenseLynx is a comprehensive project
-focused on bridging the gap between unknown or ambiguous license names and their canonical license names.
-Additionally, we offer libraries for Python, Java,
-and TypeScript to streamline the process of mapping licenses to their canonical names,
+LicenseLynx is a project focused on deterministically map unknown or ambiguous license names and their canonical license names.
+Additionally, we offer libraries for Python, Java, and TypeScript to streamline the process of mapping licenses to their canonical names,
 typically represented by SPDX IDs.
 
 ## Folder Structure
@@ -35,27 +29,36 @@ In the folder **website** we host a static website to introduce the community to
 
 ## Data structure
 
-In folder **data** all licenses are stored in single json-files.
+In folder **data** all licenses are stored in their own json-files.
 The structure of a stored license looks like this:
 
 ```json
 {
-    "canonical": "LGPL-2.0-only",
+    "canonical": {
+        "id": "BSD-3-Clause",
+        "src": "spdx"
+    },
     "aliases": {
         "spdx": [
-            "GNU Library General Public License v2 only",
-            "LGPL-2.0"
+            "BSD 3-Clause \"New\" or \"Revised\" License"
         ],
-        "custom": [],
-        "scancode-licensedb": [
-            "GNU Library General Public License 2.0",
-            "LicenseRef-LGPL-2",
-            "LGPL 2.0",
-            "LicenseRef-LGPL-2.0",
-            "lgpl-2.0"
+        "custom": [
+            "3-Clause BSD",
+            "3-Clause BSD License",
+            "EDL 1.0",
+            "Modified BSD License",
+            "new BSD",
+            "BSD 3-Clause Revised"
+        ],
+        "osi": [
+            "BSD-3",
+            "Revised BSD License"
+        ],
+        "scancodeLicensedb": [
+            "bsd-new",
+            "LicenseRef-scancode-libzip"
         ]
     },
-    "src": "spdx",
     "rejected": [],
     "risky": []
 }
@@ -64,9 +67,8 @@ The structure of a stored license looks like this:
 
 | ID        | Description                                                                                          |
 |-----------|------------------------------------------------------------------------------------------------------|
-| canonical | Canonical name for license                                                                           |
+| canonical | JSON Object for canonical identifier `id` and the source `src` where this information comes from     |
 | aliases   | Dictionary of sources, where each source is list of aliases of license (e.g. "spdx", "custom", etc.) |
-| src       | Source for canonical license name                                                                    |
 | rejected  | List of rejected aliases                                                                             |
 | risky     | List of risky aliases                                                                                |
 

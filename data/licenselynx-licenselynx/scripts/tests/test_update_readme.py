@@ -2,16 +2,13 @@
 # Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED
 #
 import json
-import os
-from collections import Counter
 from unittest.mock import patch, mock_open
 import pytest
 
 from src.statistics.update_readme import (
     load_license_data,
-    count_canonical_licenses,
-    generate_svg,
-    update_readme,
+    format_number,
+    main,
 )
 
 # Sample JSON data for testing
@@ -27,19 +24,6 @@ sample_license_data = {
     "riskyMap": {}
 }
 
-sample_svg_template = '''
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300">
-    <rect width="100%" height="100%" fill="{background_color}"/>
-    <text x="30" y="60" font-family="Arial, sans-serif" font-size="24" fill="{text_color}">
-        Total Mappings: <tspan font-weight="bold">{total_mappings}</tspan>
-    </text>
-    <text x="30" y="100" font-family="Arial, sans-serif" font-size="20" fill="{text_color}">
-        Top Licenses:
-    </text>
-    {license_text}
-</svg>
-'''
-
 
 def test_load_license_data():
     # Mock opening a file and loading JSON
@@ -48,89 +32,34 @@ def test_load_license_data():
         assert data == sample_license_data
 
 
-def test_count_canonical_licenses():
-    stable_map = sample_license_data['stableMap']
-    counts = count_canonical_licenses(stable_map)
+def test_format_number():
+    # Test whole thousands (should not have decimal point)
+    assert format_number(1000) == "1k"
+    assert format_number(10000) == "10k"
+    assert format_number(5000) == "5k"
 
-    expected_counts = Counter({"MIT": 3, "Apache 2.0": 2, "GPL 3.0": 1})
-    assert counts == expected_counts
+    # Test non-whole thousands (should have 1 decimal place)
+    assert format_number(1500) == "1.5k"
+    assert format_number(2500) == "2.5k"
+    assert format_number(1100) == "1.1k"
+    # 1999 rounds to 2.0k, but trailing .0 is removed
+    assert format_number(1999) == "2k"
 
-
-def test_generate_svg_light_mode():
-    with patch("builtins.open", mock_open(read_data=sample_svg_template)):
-        svg_content = generate_svg(
-            total_mappings=6,
-            top_licenses=[("MIT", 3), ("Apache 2.0", 2), ("GPL 3.0", 1)],
-            total_number_licenses=10,
-            is_dark_mode=False
-        )
-        expected_svg_content = sample_svg_template.format(
-            background_color="#ffffff",
-            text_color="#333333",
-            total_mappings=6,
-            total_number_licenses=10,
-            license_text=(
-                '<text x="30" y="180" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
-                'MIT: <tspan font-weight="bold">3</tspan></text>'
-                '<text x="30" y="210" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
-                'Apache 2.0: <tspan font-weight="bold">2</tspan></text>'
-                '<text x="30" y="240" font-family="Arial, sans-serif" font-size="18" fill="#007bff">'
-                'GPL 3.0: <tspan font-weight="bold">1</tspan></text>'
-            )
-        )
-        # Stripping whitespace for a fair comparison
-        assert svg_content.strip() == expected_svg_content.strip()
+    # Test numbers less than 1000 (should stay as-is)
+    assert format_number(500) == "500"
+    assert format_number(999) == "999"
+    assert format_number(1) == "1"
+    assert format_number(0) == "0"
 
 
-def test_generate_svg_dark_mode():
-    with patch("builtins.open", mock_open(read_data=sample_svg_template)):
-        svg_content = generate_svg(
-            total_mappings=6,
-            top_licenses=[("MIT", 3), ("Apache 2.0", 2), ("GPL 3.0", 1)],
-            is_dark_mode=True,
-            total_number_licenses=10,
-        )
-        expected_svg_content = sample_svg_template.format(
-            background_color="#1e1e1e",
-            text_color="#ffffff",
-            total_mappings=6,
-            total_number_licenses=10,
-            license_text=(
-                '<text x="30" y="180" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
-                'MIT: <tspan font-weight="bold">3</tspan></text>'
-                '<text x="30" y="210" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
-                'Apache 2.0: <tspan font-weight="bold">2</tspan></text>'
-                '<text x="30" y="240" font-family="Arial, sans-serif" font-size="18" fill="#4caf50">'
-                'GPL 3.0: <tspan font-weight="bold">1</tspan></text>'
-            )
-        )
-        # Stripping whitespace for a fair comparison
-        assert svg_content.strip() == expected_svg_content.strip()
-
-
-def test_main_creates_svg_file():
-    svg_file_path = 'mock_output.svg'
-
-    # Mock the load_license_data and save_svg functions
+def test_main_prints_formatted_number():
+    # Mock load_license_data to return sample data
     with patch("src.statistics.update_readme.load_license_data", return_value=sample_license_data), \
-         patch("src.statistics.update_readme.save_svg") as mock_save_svg, \
-         patch("builtins.open", mock_open(read_data=sample_svg_template)):
-        # Call the main function
-        update_readme('mock_path', svg_file_path)
-
-        # Check if save_svg was called with the correct arguments
-        mock_save_svg.assert_called_once()
-
-        # Get the argument passed to save_svg (svg content)
-        svg_content = mock_save_svg.call_args[0][0]
-
-        # Verify that the content includes expected values
-        assert 'Total Mappings: <tspan font-weight="bold">6</tspan>' in svg_content
-        assert 'MIT: <tspan font-weight="bold">3</tspan>' in svg_content
-
-    # Clean up the file after the test if it was created
-    if os.path.exists(svg_file_path):
-        os.remove(svg_file_path)
+         patch("builtins.print") as mock_print:
+        main()
+        # Check that print was called with the formatted number
+        # sample_license_data has 6 stableMap entries and 0 riskyMap entries = 6 total
+        mock_print.assert_called_once_with("6")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "NIST-PD-TNT",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "NIST    Public Domain Notice TNT variant"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}
