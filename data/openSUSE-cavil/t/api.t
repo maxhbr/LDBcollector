@@ -71,7 +71,7 @@ $routes->get('/source/:project/perl-Mojolicious' => [project => ['devel:language
     size="675142" mtime="1496988144" />
   <entry name="perl-Mojolicious.changes" md5="46c99c12bdce7adad475de28916975ef"
     size="81924" mtime="1496988145" />
-  <entry name="perl-Mojolicious.spec" md5="4d480d6329a7ea52f7bb3a479d72b8fe"
+  <entry name="perl-Mojolicious.spec" md5="efab031c960c314a31f39a4a5e68ca50"
     size="2420" mtime="1496988145" />
 </directory>
 EOF
@@ -460,6 +460,12 @@ subtest 'Pagination' => sub {
       ->json_is('/total',     1)
       ->json_is('/page/0/id', 4)
       ->json_hasnt('/page/1');
+    $t->get_ok('/pagination/reviews/open?notEmbargoed=true')
+      ->json_is('/start',     1)
+      ->json_is('/end',       3)
+      ->json_is('/total',     3)
+      ->json_is('/page/0/id', 2)
+      ->json_hasnt('/page/3');
   };
 };
 

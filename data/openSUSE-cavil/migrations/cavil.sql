@@ -260,3 +260,21 @@ ALTER TABLE bot_packages ADD COLUMN unpacked_size bigint;
 --31 up
 ALTER TABLE bot_products ADD COLUMN updated timestamp with time zone DEFAULT now() NOT NULL;
 CREATE INDEX ON bot_products (updated);
+
+-- 32 up
+CREATE TABLE api_keys (
+    id          bigserial PRIMARY KEY,
+    owner       int REFERENCES bot_users(id) NOT NULL,
+    api_key     uuid DEFAULT gen_random_uuid() NOT NULL CONSTRAINT api_key_unique UNIQUE,
+    description TEXT,
+    created     timestamp with time zone DEFAULT now() NOT NULL,
+    expires     timestamp with time zone NOT NULL
+);
+
+-- 32 down
+DROP TABLE IF EXISTS api_keys CASCADE;
+
+-- 33 up
+ALTER TABLE bot_packages ADD COLUMN ai_assisted boolean DEFAULT false NOT NULL;
+ALTER TABLE api_keys ADD COLUMN write_access boolean DEFAULT false NOT NULL;
+CREATE INDEX ON bot_packages (ai_assisted);

@@ -148,7 +148,7 @@ sub has_file_stats ($self, $id) {
   return defined($self->pg->db->select('bot_packages', 'unpacked_files', {id => $id})->hash->{unpacked_files});
 }
 
-sub has_human_review ($self, $name) {
+sub has_manual_review ($self, $name) {
   return !!$self->pg->db->query('SELECT COUNT(*) FROM bot_packages WHERE name = ? AND reviewing_user IS NOT NULL',
     $name)->array->[0];
 }
@@ -238,14 +238,19 @@ sub paginate_open_reviews ($self, $options) {
     $progress = 'AND (unpacked IS NULL OR indexed IS NULL)';
   }
 
+  my $embargoed = '';
+  if ($options->{not_embargoed} eq 'true') {
+    $embargoed = 'AND embargoed = false';
+  }
+
   my $results = $db->query(
     qq{
       SELECT id, name, EXTRACT(EPOCH FROM created) as created_epoch, EXTRACT(EPOCH FROM imported) as imported_epoch,
         EXTRACT(EPOCH FROM unpacked) as unpacked_epoch, EXTRACT(EPOCH FROM indexed) as indexed_epoch, external_link,
         priority, state, checksum, unresolved_matches, COUNT(*) OVER() AS total
       FROM bot_packages
-      WHERE state = 'new' AND obsolete = FALSE $priority $search $progress
-      ORDER BY priority DESC, external_link, created DESC, name
+      WHERE state = 'new' AND obsolete = FALSE $priority $search $progress $embargoed
+      ORDER BY priority DESC, external_link, unresolved_matches, name
       LIMIT ? OFFSET ?
     }, $options->{limit}, $options->{offset}
   )->hashes->to_array;
@@ -325,6 +330,11 @@ sub paginate_recent_reviews ($self, $options) {
     $user = 'AND p.reviewing_user IS NOT NULL';
   }
 
+  my $ai_assisted = '';
+  if ($options->{ai_assisted} eq 'true') {
+    $ai_assisted = 'AND p.ai_assisted = true';
+  }
+
   my $unresolved = '';
   if ($options->{unresolved_matches} eq 'true') {
     $unresolved = "AND unresolved_matches > 0";
@@ -332,13 +342,13 @@ sub paginate_recent_reviews ($self, $options) {
 
   my $results = $db->query(
     qq{
-      SELECT p.id, p.name, u.login, p.result,  EXTRACT(EPOCH FROM p.created) AS created_epoch,
+      SELECT p.id, p.name, u.login, p.result, p.ai_assisted, EXTRACT(EPOCH FROM p.created) AS created_epoch,
         EXTRACT(EPOCH FROM p.reviewed) AS reviewed_epoch, EXTRACT(EPOCH FROM p.imported) as imported_epoch,
         EXTRACT(EPOCH FROM p.unpacked) as unpacked_epoch, EXTRACT(EPOCH FROM p.indexed) as indexed_epoch,
         external_link, priority, state, checksum, unresolved_matches, COUNT(*) OVER() AS total
        FROM bot_packages p
          LEFT JOIN bot_users u ON p.reviewing_user = u.id
-       WHERE reviewed IS NOT NULL AND reviewed > NOW() - INTERVAL '90 DAYS' $search $user $unresolved
+       WHERE reviewed IS NOT NULL AND reviewed > NOW() - INTERVAL '90 DAYS' $search $user $ai_assisted $unresolved
        ORDER BY reviewed DESC
        LIMIT ? OFFSET ?
     }, $options->{limit}, $options->{offset}
@@ -397,6 +407,11 @@ sub mark_matched_for_reindex ($self, $pid, $priority = 0) {
   $self->minion->enqueue(reindex_matched_later => [$pid] => {priority => $priority});
 }
 
+sub need_cleanup ($self) {
+  return $self->pg->db->query('SELECT id FROM bot_packages WHERE obsolete IS TRUE AND cleaned IS NULL ORDER BY ID')
+    ->arrays->flatten->to_array;
+}
+
 sub name_suggestions ($self, $partial) {
   my $like = '%' . $partial . '%';
   return $self->pg->db->select(
@@ -426,6 +441,26 @@ sub obs_import ($self, $id, $data, $priority = 5) {
   );
 }
 
+sub obsolete_duplicate_new ($self) {
+  my $db = $self->pg->db;
+
+  # Mark all duplicate new packages as obsolete (same external_link and name)
+  $db->query(
+    q{
+      UPDATE bot_packages
+      SET obsolete = true, state = 'obsolete'
+      WHERE id IN (
+        SELECT a.id FROM (
+          SELECT id, ROW_NUMBER() OVER (PARTITION BY external_link, name ORDER BY id DESC) row_no
+          FROM bot_packages
+          WHERE state = 'new' AND external_link IS NOT NULL
+        ) AS a
+        WHERE row_no > 1
+      );
+    }
+  );
+}
+
 sub obsolete_if_not_in_product ($self, $id) {
   my $db = $self->pg->db;
   return undef if $db->query('select 1 from bot_package_products where package = ? limit 1', $id)->array;
@@ -434,6 +469,36 @@ sub obsolete_if_not_in_product ($self, $id) {
     $id);
 
   return 1;
+}
+
+sub obsolete_old_packages ($self, $days_to_keep_orphaned, $days_to_keep_orphaned_duplicates) {
+  my $db = $self->pg->db;
+
+  # Mark duplicate old packages not in products as obsolete
+  $db->query(
+    "UPDATE bot_packages SET obsolete = true WHERE id IN (
+       SELECT id FROM (
+         SELECT id, imported FROM (
+           SELECT id, imported, ROW_NUMBER() OVER (PARTITION BY name ORDER BY id DESC) AS row_no
+           FROM bot_packages LEFT JOIN bot_package_products ON bot_package_products.package = bot_packages.id
+           WHERE state != 'new' AND checksum IS NOT NULL AND obsolete = false AND bot_package_products.product IS NULL
+         ) AS a
+         WHERE row_no > 1
+       ) AS b
+       WHERE imported < NOW() - (INTERVAL '1 days' * ?)
+     )", $days_to_keep_orphaned_duplicates
+  );
+
+  # Mark all old packages not in products as obsolete
+  $db->query(
+    "UPDATE bot_packages SET obsolete = true WHERE id IN (
+       SELECT id
+       FROM bot_packages LEFT JOIN bot_package_products ON bot_package_products.package = bot_packages.id
+       WHERE state != 'new' AND obsolete != true AND checksum IS NOT NULL AND obsolete = false
+         AND imported < NOW() - (INTERVAL '1 days' * ?)
+         AND bot_package_products.product IS NULL
+     )", $days_to_keep_orphaned
+  );
 }
 
 sub reindex ($self, $id, @args) {
@@ -522,8 +587,10 @@ sub unpacked ($self, $id) {
 }
 
 sub update ($self, $pkg) {
-  my %updates = map { exists $pkg->{$_} ? ($_ => $pkg->{$_}) : () }
-    (qw(created checksum priority state obsolete result notice reviewed reviewing_user external_link embargoed));
+  my %updates = map { exists $pkg->{$_} ? ($_ => $pkg->{$_}) : () } (
+    qw(created checksum priority state obsolete result notice reviewed reviewing_user external_link),
+    qw(embargoed ai_assisted)
+  );
   $updates{reviewed} = \'now()' if $pkg->{review_timestamp};
   return $self->pg->db->update('bot_packages', \%updates, {id => $pkg->{id}});
 }

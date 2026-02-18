@@ -188,7 +188,10 @@
             <i class="fas fa-user"></i>
           </th>
           <th class="fit text-start noleftpad" scope="row">Reviewing User:</th>
-          <td>{{ reviewingUser }}</td>
+          <td>
+            {{ reviewingUser }}
+            <span v-if="pkgAiAssisted" class="ai-assisted-badge">(with AI Assistant <i class="fas fa-robot"></i>)</span>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -285,6 +288,12 @@
         <li v-for="warning in warnings" :key="warning">{{ warning }}</li>
       </ul>
     </div>
+    <div v-if="legalReviewNotices.length > 0" id="spec-legal-review-notices" class="alert alert-success">
+      <p>Legal review notices from packagers:</p>
+      <ul>
+        <li v-for="notice in legalReviewNotices" :key="notice">{{ notice }}</li>
+      </ul>
+    </div>
     <div v-if="notice !== null" class="row">
       <div class="col mb-3">
         <div class="alert alert-info">
@@ -366,7 +375,9 @@ export default {
       fasttrackUrl: `/reviews/fasttrack_package/${this.pkgId}`,
       hasSpdxReport: false,
       history: [],
+      legalReviewNotices: [],
       notice: null,
+      pkgAiAssisted: false,
       pkgChecksum: null,
       pkgEmbargoed: false,
       pkgFiles: [],
@@ -409,6 +420,7 @@ export default {
       this.errors = data.errors;
       this.externalLink = externalLink({external_link: data.external_link});
       this.hasSpdxReport = data.has_spdx_report;
+      this.legalReviewNotices = data.legal_review_notices;
 
       this.actions = data.actions;
       for (const action of this.actions) {
@@ -439,6 +451,7 @@ export default {
       this.pkgUrl = data.package_url;
       this.pkgVersion = data.package_version;
       this.pkgEmbargoed = data.embargoed;
+      this.pkgAiAssisted = data.ai_assisted;
 
       this.pkgChecksum = data.package_checksum;
       this.checkoutUrl = `/reviews/file_view/${this.pkgId}`;

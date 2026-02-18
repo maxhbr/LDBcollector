@@ -107,11 +107,12 @@ subtest 'Details after indexing' => sub {
     ->status_is(200)
     ->json_like('/package_license/name', qr!Artistic-2.0!)
     ->json_is('/package_license/spdx', 1)
-    ->json_like('/package_version', qr!7\.25!)
-    ->json_like('/package_summary', qr!Real-time web framework!)
-    ->json_like('/package_group',   qr!Development/Libraries/Perl!)
-    ->json_like('/package_url',     qr!http://search\.cpan\.org/dist/Mojolicious/!)
-    ->json_like('/state',           qr!new!)
+    ->json_like('/package_version',        qr!7\.25!)
+    ->json_like('/package_summary',        qr!Real-time web framework!)
+    ->json_like('/package_group',          qr!Development/Libraries/Perl!)
+    ->json_like('/package_url',            qr!http://search\.cpan\.org/dist/Mojolicious/!)
+    ->json_like('/state',                  qr!new!)
+    ->json_like('/legal_review_notices/0', qr!Upstream project maintained by SUSE employee!)
     ->json_is('/unpacked_files', 339)
     ->json_is('/unpacked_size',  '2.5MiB');
 
@@ -306,20 +307,20 @@ subtest 'Details after reindexing' => sub {
     ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(1) a', qr!Mojolicious-7.25/lib/Mojolicious.pm!)
     ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(2) b', qr![0-9.]+%!)
     ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(2)',   qr!similarity to!)
-    ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(2) b:nth-of-type(2)', qr!Apache-2.0!)
-    ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(3) .estimated-risk',  qr!Risk 7!)
-    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(1) a',                qr!Mojolicious-7.25/Changes!)
-    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(2) b',                qr!100%!)
-    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(2)',                  qr!similarity to!)
-    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(2) b:nth-of-type(2)', qr!Keyword!)
-    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(3) .estimated-risk',  qr!Risk 5!)
-    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(1) a',                qr!perl-Mojolicious.changes!)
-    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(2) b',                qr!100%!)
-    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(2)',                  qr!similarity to!)
-    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(2) b:nth-of-type(2)', qr!Keyword!)
-    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(3) .estimated-risk',  qr!Risk 5!)
+    ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(2) b:nth-of-type(2) a', qr!Apache-2.0!)
+    ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(3) .estimated-risk',    qr!Risk 7!)
+    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(1) a',                  qr!Mojolicious-7.25/Changes!)
+    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(2) b',                  qr!100%!)
+    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(2)',                    qr!similarity to!)
+    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(2) b:nth-of-type(2)',   qr!Keyword!)
+    ->text_like('#unmatched-files tr:nth-of-type(3) td:nth-of-type(3) .estimated-risk',    qr!Risk 5!)
+    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(1) a',                  qr!perl-Mojolicious.changes!)
+    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(2) b',                  qr!100%!)
+    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(2)',                    qr!similarity to!)
+    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(2) b:nth-of-type(2)',   qr!Keyword!)
+    ->text_like('#unmatched-files tr:nth-of-type(4) td:nth-of-type(3) .estimated-risk',    qr!Risk 5!)
     ->element_exists('#risk-5')
-    ->text_like('#risk-5 li',                        qr!Apache-2.0!)
+    ->text_like('#risk-5 li a',                      qr!Apache-2.0!)
     ->text_like('#risk-5 li ul li:nth-of-type(1) a', qr!Mojolicious-7.25/lib/Mojolicious.pm!)
     ->text_like('#risk-5 li ul li:nth-of-type(2) a', qr!Mojolicious-7.25/lib/Mojolicious/resources/public/!);
   $t->element_exists('#emails')
@@ -358,8 +359,8 @@ subtest 'Manual review' => sub {
     ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(1) a', qr!Mojolicious-7.25/lib/Mojolicious.pm!)
     ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(2) b', qr![0-9.]+%!)
     ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(2)',   qr!similarity to!)
-    ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(2) b:nth-of-type(2)', qr!Apache-2.0!)
-    ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(3) .estimated-risk',  qr!Risk 7!)
+    ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(2) b:nth-of-type(2) a', qr!Apache-2.0!)
+    ->text_like('#unmatched-files tr:nth-of-type(2) td:nth-of-type(3) .estimated-risk',    qr!Risk 7!)
     ->element_exists('#risk-5');
   $t->element_exists('#emails')
     ->text_like('#emails tr td', qr!coolo\@suse\.com!)
@@ -443,6 +444,7 @@ subtest 'Final JSON report' => sub {
   ok my $licenses = $report->{licenses},       'licenses';
   ok my $apache   = $licenses->{'Apache-2.0'}, 'Apache';
   is $apache->{name}, 'Apache-2.0', 'name';
+  is $apache->{spdx}, 'Apache-2.0', 'spdx';
   is $apache->{risk}, 5,            'risk';
 
   $t->get_ok('/logout')->status_is(302)->header_is(Location => '/');

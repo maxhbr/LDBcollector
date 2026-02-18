@@ -16,7 +16,8 @@
 use Mojo::Base -strict;
 
 use Test::More;
-use Cavil::ReportUtil qw(estimated_risk report_checksum report_shortname summary_delta summary_delta_score);
+use Cavil::ReportUtil
+  qw(estimated_risk incompatible_licenses report_checksum report_shortname summary_delta summary_delta_score);
 
 subtest 'estimated_risk' => sub {
   subtest 'Risk 0' => sub {
@@ -127,6 +128,70 @@ subtest 'estimated_risk' => sub {
   };
 };
 
+subtest 'incompatible_licenses' => sub {
+  subtest 'No incompatible licenses' => sub {
+    is_deeply incompatible_licenses({},               []), [], 'no incompatible licenses found';
+    is_deeply incompatible_licenses({licenses => {}}, []), [], 'no incompatible licenses found';
+
+    my $rules = [{licenses => ['GPL-2.0-only', 'Apache-2.0']}];
+    is_deeply incompatible_licenses({},               $rules), [], 'no incompatible licenses found';
+    is_deeply incompatible_licenses({licenses => {}}, $rules), [], 'no incompatible licenses found';
+
+    my $report
+      = {licenses =>
+        {'MIT' => {risk => 1}, 'Apache-2.0' => {risk => 2, spdx => 'Apache-2.0'}, 'BSD-3-Clause' => {risk => 1}}
+      };
+    is_deeply incompatible_licenses($report, $rules), [], 'no incompatible licenses found';
+
+    $report = {
+      licenses => {
+        'GPL-2.0-only' => {risk => 1, spdx => 'GPL-2.0-only'},
+        'BSD-3-Clause' => {risk => 1},
+        'Apache-2.0'   => {risk => 2, spdx => 'Apache-2.0'}
+      }
+    };
+    $rules = [{licenses => ['GPL-2.0-only', 'Apache-2.0', 'MIT']}];
+    is_deeply incompatible_licenses($report, $rules), [], 'no incompatible licenses found';
+  };
+
+  subtest 'Incompatible licenses' => sub {
+    subtest 'Main licenses' => sub {
+      my $report = {
+        licenses => {
+          'MIT AND GPL-2.0+' => {risk => 1, spdx => 'MIT AND GPL-2.0-only'},
+          'BSD-3-Clause'     => {risk => 1},
+          'Apache-2.0'       => {risk => 2, spdx => 'Apache-2.0'}
+        }
+      };
+      my $rules = [{licenses => ['GPL-2.0-only', 'Apache-2.0', 'MIT']}];
+      is_deeply incompatible_licenses($report, $rules), [{licenses => ['GPL-2.0-only', 'Apache-2.0', 'MIT']}],
+        'incompatible licenses found';
+    };
+
+    subtest 'Keyword matches' => sub {
+      my $report = {
+        licenses     => {'BSD-3-Clause' => {risk => 1}, 'Apache-2.0' => {risk => 2, spdx => 'Apache-2.0'}},
+        missed_files => {14 => [5, 1, "", ""], 8 => [5, 1, "", ""], 9 => [7, '0.5902', 'GPL-2.0', 'GPL-2.0-only']},
+      };
+      my $rules = [{licenses => ['GPL-2.0-only', 'Apache-2.0']}];
+      is_deeply incompatible_licenses($report, $rules), [{licenses => ['GPL-2.0-only', 'Apache-2.0']}],
+        'incompatible licenses found';
+    };
+  };
+
+  subtest 'Defaults' => sub {
+    my $report = {
+      licenses => {
+        'MIT AND GPL-2.0-only' => {risk => 1, spdx => 'MIT AND GPL-2.0-only'},
+        'BSD-3-Clause'         => {risk => 1},
+        'Apache-2.0'           => {risk => 2, spdx => 'Apache-2.0'}
+      }
+    };
+    is_deeply incompatible_licenses($report), [{licenses => ['GPL-2.0-only', 'Apache-2.0']}],
+      'incompatible licenses found';
+  };
+};
+
 subtest 'report_checksum' => sub {
   subtest 'Specfile license' => sub {
     is report_checksum({}, {}), '1709a28fde41022c01762131a1711875', 'empty report';
@@ -187,6 +252,36 @@ subtest 'report_checksum' => sub {
       ),
       '7351d8ac9fd4bbdb1cdda1293984c58d', 'exclude duplicate snippets';
   };
+
+  subtest 'License incompatibility' => sub {
+    is report_checksum(
+      {main => {license => 'MIT'}},
+      {
+        licenses =>
+          {'Apache-2.0' => {risk => 2, spdx => 'Apache-2.0'}, 'GPL-2.0-only' => {risk => 1, spdx => 'GPL-2.0-only'}},
+        incompatible_licenses => []
+      }
+      ),
+      '331540e1872a52991c64674c4faf3720', 'no incompatible licenses';
+    is report_checksum(
+      {main => {license => 'MIT'}},
+      {
+        licenses =>
+          {'Apache-2.0' => {risk => 2, spdx => 'Apache-2.0'}, 'GPL-2.0-only' => {risk => 1, spdx => 'GPL-2.0-only'}},
+        incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}]
+      }
+      ),
+      '8f0cae03ec2acb4147e89311232dd454', 'include incompatible licenses';
+    is report_checksum(
+      {main => {license => 'MIT'}},
+      {
+        licenses =>
+          {'Apache-2.0' => {risk => 2, spdx => 'Apache-2.0'}, 'GPL-2.0-only' => {risk => 1, spdx => 'GPL-2.0-only'}},
+        incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}, {licenses => ['MIT', 'GPL-2.0-only']}]
+      }
+      ),
+      'bd544f815c9eaf725a820f3db2f21c48', 'multiple incompatible licenses';
+  };
 };
 
 subtest 'summary_delta_score' => sub {
@@ -201,6 +296,42 @@ subtest 'summary_delta_score' => sub {
       {id => 2, specfile => 'GPL-2.0+', missed_snippets => {}, licenses => {}}
       ),
       1000, 'different specfile';
+  };
+
+  subtest 'Incompatible licenses' => sub {
+    is summary_delta_score(
+      {id => 1, specfile => 'MIT', missed_snippets => {}, licenses => {}, incompatible_licenses => []},
+      {id => 2, specfile => 'MIT', missed_snippets => {}, licenses => {}, incompatible_licenses => []}
+      ),
+      0, 'no new incompatible licenses';
+    is summary_delta_score(
+      {
+        id                    => 1,
+        specfile              => 'MIT',
+        missed_snippets       => {},
+        licenses              => {},
+        incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}]
+      },
+      {
+        id                    => 2,
+        specfile              => 'MIT',
+        missed_snippets       => {},
+        licenses              => {},
+        incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}]
+      }
+      ),
+      0, 'no new incompatible licenses';
+    is summary_delta_score(
+      {id => 1, specfile => 'MIT', missed_snippets => {}, licenses => {}, incompatible_licenses => []},
+      {
+        id                    => 2,
+        specfile              => 'MIT',
+        missed_snippets       => {},
+        licenses              => {},
+        incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}]
+      }
+      ),
+      1000, 'new incompatible licenses';
   };
 
   subtest 'Snippets' => sub {
@@ -265,27 +396,6 @@ subtest 'summary_delta_score' => sub {
         }
         ),
         0, 'removed file';
-    };
-
-    subtest 'Noteworthy' => sub {
-      is summary_delta_score(
-        {
-          id              => 1,
-          specfile        => 'MIT',
-          missed_snippets => {'Mojolicious-7.25/lib/Mojolicious.pm' => ['541e8cc6ac467ffcbb5b2c27088def98']},
-          licenses        => {}
-        },
-        {
-          id              => 2,
-          specfile        => 'MIT',
-          missed_snippets => {
-            'Mojolicious-7.25/lib/Mojolicious.pm' => ['541e8cc6ac467ffcbb5b2c27088def98'],
-            'Mojolicious-7.25/LICENSE'            => ['641e8cc6ac467ffcbb5b2c27088def99']
-          },
-          licenses => {}
-        }
-        ),
-        250, 'new file with snippets';
       is summary_delta_score(
         {
           id              => 1,
@@ -306,7 +416,47 @@ subtest 'summary_delta_score' => sub {
           licenses => {}
         }
         ),
-        150, 'different file with snippets';
+        0, 'different file with same snippets';
+    };
+
+    subtest 'Noteworthy' => sub {
+      is summary_delta_score(
+        {
+          id              => 1,
+          specfile        => 'MIT',
+          missed_snippets => {'Mojolicious-7.25/lib/Mojolicious.pm' => ['541e8cc6ac467ffcbb5b2c27088def98']},
+          licenses        => {}
+        },
+        {
+          id              => 2,
+          specfile        => 'MIT',
+          missed_snippets => {
+            'Mojolicious-7.25/lib/Mojolicious.pm' => ['541e8cc6ac467ffcbb5b2c27088def98'],
+            'Mojolicious-7.25/LICENSE'            => ['641e8cc6ac467ffcbb5b2c27088def99']
+          },
+          licenses => {}
+        }
+        ),
+        10, 'new file with snippets';
+      is summary_delta_score(
+        {
+          id              => 1,
+          specfile        => 'MIT',
+          missed_snippets => {'Mojolicious-7.25/lib/Mojolicious.pm' => ['541e8cc6ac467ffcbb5b2c27088def98']},
+          licenses        => {}
+        },
+        {
+          id              => 2,
+          specfile        => 'MIT',
+          missed_snippets => {
+            'Mojolicious-7.25/lib/Mojolicious.pm' => ['541e8cc6ac467ffcbb5b2c27088def98'],
+            'Mojolicious-7.25/LICENSE'            => ['641e8cc6ac467ffcbb5b2c27088def99'],
+            'Mojolicious-7.25/README'             => ['441e8cc6ac467ffcbb5b2c27088def9a']
+          },
+          licenses => {}
+        }
+        ),
+        20, 'new file with snippets';
       is summary_delta_score(
         {
           id              => 1,
@@ -327,7 +477,7 @@ subtest 'summary_delta_score' => sub {
           licenses => {}
         }
         ),
-        20, 'different snippets in same files';
+        10, 'different snippets in same files';
       is summary_delta_score(
         {
           id              => 1,
@@ -351,7 +501,7 @@ subtest 'summary_delta_score' => sub {
           licenses => {}
         }
         ),
-        40, 'additional snippets in same files';
+        20, 'additional snippets in same files';
     };
   };
 
@@ -411,6 +561,44 @@ subtest 'summary_delta' => sub {
       {id => 2, specfile => 'GPL-2.0+', missed_snippets => {}, licenses => {}}
       ),
       "Diff to closest match 1:\n\n  Different spec file license: MIT\n\n", 'different specfile';
+  };
+
+  subtest 'Incompatible licenses' => sub {
+    is summary_delta(
+      {id => 1, specfile => 'MIT', missed_snippets => {}, licenses => {}, incompatible_licenses => []},
+      {id => 2, specfile => 'MIT', missed_snippets => {}, licenses => {}, incompatible_licenses => []}
+      ),
+      '', 'no new incompatible licenses';
+    is summary_delta(
+      {
+        id                    => 1,
+        specfile              => 'MIT',
+        missed_snippets       => {},
+        licenses              => {},
+        incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}]
+      },
+      {
+        id                    => 2,
+        specfile              => 'MIT',
+        missed_snippets       => {},
+        licenses              => {},
+        incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}]
+      }
+      ),
+      '', 'no new incompatible licenses';
+    is summary_delta(
+      {id => 1, specfile => 'MIT', missed_snippets => {}, licenses => {'Apache-2.0' => 2}},
+      {
+        id                    => 2,
+        specfile              => 'MIT',
+        missed_snippets       => {},
+        licenses              => {'Apache-2.0' => 2, 'GPL-2.0-only' => 1},
+        incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}]
+      }
+      ),
+      "Diff to closest match 1:\n\n  Found new license GPL-2.0-only (risk 1) not present in old report\n\n"
+      . "  Found new possible license incompatibility involving: GPL-2.0-only, Apache-2.0\n\n",
+      'new incompatible licenses';
   };
 
   subtest 'Snippets' => sub {
@@ -495,7 +683,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  New unresolved matches in Mojolicious-7.25/LICENSE\n\n",
+        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/LICENSE\n\n",
         'new file with snippets';
       is summary_delta(
         {
@@ -512,12 +700,12 @@ subtest 'summary_delta' => sub {
           specfile        => 'MIT',
           missed_snippets => {
             'Mojolicious-7.25/lib/Mojolicious.pm' => ['541e8cc6ac467ffcbb5b2c27088def98'],
-            'Mojolicious-7.25/COPYING'            => ['641e8cc6ac467ffcbb5b2c27088def99']
+            'Mojolicious-7.25/COPYING'            => ['641e8cc6ac467ffcbb5b2c27088def9a']
           },
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  New unresolved matches in Mojolicious-7.25/COPYING\n\n",
+        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/COPYING\n\n",
         'different file with snippets';
       is summary_delta(
         {
@@ -539,7 +727,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  New unresolved matches in Mojolicious-7.25/README\n\n",
+        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/README\n\n",
         'different snippets in same files';
       is summary_delta(
         {
@@ -564,7 +752,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  New unresolved matches in Mojolicious-7.25/LEGAL\n\n",
+        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/LEGAL\n\n",
         'additional snippets in same files';
       is summary_delta(
         {
@@ -585,7 +773,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  New unresolved matches in Mojolicious-7.25/COPYING and 1 file more\n\n",
+        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/COPYING and 1 other file\n\n",
         'two new files';
       is summary_delta(
         {
@@ -601,13 +789,14 @@ subtest 'summary_delta' => sub {
             'Mojolicious-7.25/lib/Mojolicious.pm' => ['541e8cc6ac467ffcbb5b2c27088def98'],
             'Mojolicious-7.25/LICENSE'            => ['641e8cc6ac467ffcbb5b2c27088def99'],
             'Mojolicious-7.25/COPYING'            => ['741e8cc6ac467ffcbb5b2c27088def9a'],
-            'Mojolicious-7.25/README'             => ['741e8cc6ac467ffcbb5b2c27088def9a']
+            'Mojolicious-7.25/README'             => ['741e8cc6ac467ffcbb5b2c27088def9a'],
+            'Mojolicious-7.25/README.txt'         => ['741e8cc6ac467ffcbb5b2c27088def9e']
 
           },
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  New unresolved matches in Mojolicious-7.25/COPYING and 2 files more\n\n",
+        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/COPYING and 2 other files\n\n",
         'three new files';
     };
   };
@@ -679,6 +868,15 @@ subtest 'report_shortname' => sub {
     }
     ),
     'BSD-2-Clause-9:jemn5u', 'snippet risk';
+  is report_shortname(
+    'jemn5u',
+    {main => {license => 'MIT OR BSD-2-Clause'}},
+    {
+      risks => {3 => {'Apache-2.0' => {1 => [13, 13], 2 => [12, 13, 13]}, 'GPL-2.0' => {3 => [10, 11]}}},
+      incompatible_licenses => [{licenses => ['GPL-2.0', 'Apache-2.0']}]
+    }
+    ),
+    'BSD-2-Clause-9:jemn5u', 'incompatible license risk';
 };
 
 done_testing;

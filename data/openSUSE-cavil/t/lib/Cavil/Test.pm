@@ -40,20 +40,22 @@ sub checkout_dir ($self) { $self->{checkout_dir} }
 
 sub default_config ($self) {
   return {
-    secrets                      => ['just_a_test'],
-    checkout_dir                 => $self->checkout_dir,
-    cache_dir                    => $self->cache_dir,
-    tokens                       => ['test_token'],
-    pg                           => $self->postgres_url,
-    acceptable_risk              => 3,
-    index_bucket_average         => 100,
-    cleanup_bucket_average       => 50,
-    min_files_short_report       => 20,
-    max_email_url_size           => 26,
-    max_task_memory              => 5_000_000_000,
-    max_worker_rss               => 100000,
-    max_expanded_files           => 100,
-    always_generate_spdx_reports => 0
+    secrets                                  => ['just_a_test'],
+    checkout_dir                             => $self->checkout_dir,
+    cache_dir                                => $self->cache_dir,
+    tokens                                   => ['test_token'],
+    pg                                       => $self->postgres_url,
+    acceptable_risk                          => 3,
+    index_bucket_average                     => 100,
+    cleanup_bucket_average                   => 50,
+    days_to_keep_orphaned_packages           => 7,
+    days_to_keep_orphaned_duplicate_packages => 1,
+    min_files_short_report                   => 20,
+    max_email_url_size                       => 26,
+    max_task_memory                          => 5_000_000_000,
+    max_worker_rss                           => 100000,
+    max_expanded_files                       => 100,
+    always_generate_spdx_reports             => 0
   };
 }
 
@@ -148,6 +150,8 @@ sub mojo_fixtures ($self, $app) {
   );
   $patterns->create(pattern => 'the terms',        unique_id => '413430b9-8f04-49d8-93ef-953b68835d54');
   $patterns->create(pattern => 'copyright notice', unique_id => '413430b9-8f04-49d8-93ef-953b68835d55');
+
+  $app->pg->db->query('UPDATE license_patterns SET spdx = $1 WHERE license = $1', $_) for qw(Apache-2.0 Artistic-2.0);
 }
 
 sub no_fixtures ($self, $app) {

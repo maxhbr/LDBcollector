@@ -16,6 +16,8 @@
 package Cavil::Controller::API;
 use Mojo::Base 'Mojolicious::Controller', -signatures;
 
+use Mojo::JSON qw(true false);
+
 sub identify ($self) {
   my $name     = $self->stash('name');
   my $checksum = $self->stash('checksum');
@@ -59,6 +61,19 @@ sub source ($self) {
 sub status ($self) {
   my $name = $self->stash('name');
   $self->render(json => {package => $name, requests => $self->packages->states($name)});
+}
+
+sub whoami ($self) {
+  my $user = $self->current_user;
+  my $id   = $self->users->id_for_login($user);
+  $self->render(
+    json => {
+      id           => $id,
+      user         => $user,
+      roles        => $self->current_user_roles,
+      write_access => $self->current_user_has_write_access ? true : false
+    }
+  );
 }
 
 1;

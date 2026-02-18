@@ -18,15 +18,53 @@ package Cavil::ReportUtil;
 use Mojo::Base -strict, -signatures;
 
 use Exporter 'import';
-use List::Util 'uniq';
+use List::Util qw(uniq);
 use Mojo::Util;
 use Cavil::Licenses 'lic';
 
-our @EXPORT_OK = (qw(estimated_risk report_checksum report_shortname summary_delta summary_delta_score));
+our @EXPORT_OK
+  = (qw(estimated_risk incompatible_licenses report_checksum report_shortname summary_delta summary_delta_score));
+
+# For now we only watch out for GPL-2.0-only and Apache-2.0
+my $INCOMPATIBLE_LICENSE_RULES = [{licenses => ['GPL-2.0-only', 'Apache-2.0']}];
 
 sub estimated_risk ($risk, $match) {
   my $estimated = int(($risk * $match + 9 * (1 - $match)) + 0.5);
   return $match < 0.9 && $estimated <= 3 ? 4 : $estimated;
+}
+
+sub incompatible_licenses ($dig_report, $rules = $INCOMPATIBLE_LICENSE_RULES) {
+  return [] unless @$rules;
+
+  my @spdx;
+  push @spdx, map { $_->{spdx} } grep { $_->{spdx} } values %{$dig_report->{licenses}  || {}};
+  push @spdx, map { $_->[3] } grep    { $_->[3] } values %{$dig_report->{missed_files} || {}};
+
+  my @regexes;
+  for my $rule (@$rules) {
+    push @regexes, [qr/\Q$_\E/i, $_] for @{$rule->{licenses}};
+  }
+
+  my %matches;
+  for my $spdx (uniq @spdx) {
+    for my $pair (@regexes) {
+      next unless $spdx =~ $pair->[0];
+      $matches{$pair->[1]}++;
+    }
+  }
+
+  my @results;
+  for my $rule (@$rules) {
+    my $licenses = $rule->{licenses};
+    my $found    = 0;
+    for my $license (@$licenses) {
+      last unless $matches{$license};
+      $found++;
+    }
+    push @results, {licenses => [@$licenses]} if $found == @$licenses;
+  }
+
+  return \@results;
 }
 
 sub report_checksum ($specfile_report, $dig_report) {
@@ -56,6 +94,13 @@ sub report_checksum ($specfile_report, $dig_report) {
     $text .= "SNIPPET:$_\n" for uniq @all;
   }
 
+  # License incompatibilities
+  if (my $incompat = $dig_report->{incompatible_licenses}) {
+    for my $rule (@$incompat) {
+      $text .= "INCOMPAT:" . join(':', sort @{$rule->{licenses}}) . "\n";
+    }
+  }
+
   return Mojo::Util::md5_sum $text;
 }
 
@@ -68,6 +113,7 @@ sub report_shortname ($chksum, $specfile_report, $dig_report) {
     my $risk = $dig_report->{missed_files}{$file}[0];
     $max_risk = $risk if $risk > $max_risk;
   }
+  $max_risk = 9 if $dig_report->{incompatible_licenses} && @{$dig_report->{incompatible_licenses}};
 
   my $l = lic($specfile_report->{main}{license})->example;
   $l ||= 'Unknown';
@@ -83,80 +129,93 @@ sub summary_delta ($old, $new) {
     $text .= "  Different spec file license: $old->{specfile}\n\n";
   }
 
-  # Files with new missed snippets
-  my @files_with_new_snippets;
-  my $new_snippets = $new->{missed_snippets};
-  for my $file (sort keys %$new_snippets) {
-    my %old_snippets = map { $_ => 1 } @{$old->{missed_snippets}{$file} || []};
-    for my $snippet (@{$new_snippets->{$file}}) {
-      next if $old_snippets{$snippet};
-      push @files_with_new_snippets, $file;
-      last;
+  # New snippet matches
+  my $new_snippets = _new_snippets($old, $new);
+  if (my @files = sort values %$new_snippets) {
+    my $file = $files[0];
+    my $num  = uniq(@files) - 1;
+    if ($num == 0) {
+      $text .= "  Found new unresolved matches in $file\n\n";
     }
-  }
-  if (@files_with_new_snippets) {
-    $text .= "  New unresolved matches in " . (shift @files_with_new_snippets);
-    if (@files_with_new_snippets) {
-      my $num = scalar @files_with_new_snippets;
-      $text .= " and $num " . ($num > 1 ? 'files' : 'file') . ' more';
+    elsif ($num == 1) {
+      $text .= "  Found new unresolved matches in $file and 1 other file\n\n";
     }
-    $text .= "\n\n";
+    else {
+      $text .= "  Found new unresolved matches in $file and $num other files\n\n";
+    }
   }
 
   # New licenses
-  my %lics = %{$new->{licenses}};
-  delete $lics{$_} for keys %{$old->{licenses}};
-  if (keys %lics) {
-    my @lines;
-    for my $lic (sort keys %lics) {
-      push @lines, "  Found new license $lic (risk $lics{$lic}) not present in old report";
-    }
-    $text .= join("\n", @lines) . "\n\n";
+  my $new_licenses = _new_licenses($old, $new);
+  my @lines;
+  for my $lic (sort keys %$new_licenses) {
+    push @lines, "  Found new license $lic (risk $new_licenses->{$lic}) not present in old report";
+  }
+  $text .= join("\n", @lines) . "\n\n" if @lines;
+
+  # License incompatibilities
+  if (my @licenses = _new_incompatibilities($old, $new)) {
+    my $licenses = join(', ', @licenses);
+    $text .= "  Found new possible license incompatibility involving: $licenses\n\n";
   }
 
   return length $text ? "Diff to closest match $old->{id}:\n\n$text" : '';
 }
 
 sub summary_delta_score ($old, $new) {
-
-  # Specfile license change
-  if ($new->{specfile} ne $old->{specfile}) {
-    return 1000;
-  }
-
   my $score = 0;
 
-  # New files with missed snippets (count)
-  if (keys %{$new->{missed_snippets}} > keys %{$old->{missed_snippets}}) {
-    $score += 250;
-  }
+  # Specfile license change
+  $score += 1000 if $new->{specfile} ne $old->{specfile};
 
-  # Check each file
-  else {
-    my $new_snippets = $new->{missed_snippets};
-    for my $file (sort keys %$new_snippets) {
-      if (my $old_snippets = $old->{missed_snippets}{$file}) {
-        my %old_snippets = map { $_ => 1 } @$old_snippets;
-        for my $snippet (@{$new_snippets->{$file}}) {
-          $score += 20 unless $old_snippets{$snippet};
-        }
-      }
-
-      # New file with missed snippets (filename)
-      else {
-        $score += 150;
-      }
-    }
-  }
+  # New snippet matches
+  my $new_snippets = _new_snippets($old, $new);
+  $score += 10 * keys %$new_snippets;
 
   # New licenses
-  my %lics = %{$new->{licenses}};
-  delete $lics{$_} for keys %{$old->{licenses}};
-  for my $risk (values %lics) {
-    $score += $risk * 10;
-  }
+  my $new_licenses = _new_licenses($old, $new);
+  $score += 10 * $new_licenses->{$_} for keys %$new_licenses;
+
+  # License incompatibilities
+  $score += 500 for _new_incompatibilities($old, $new);
 
   return $score;
+}
+
+sub _new_incompatibilities ($old, $new) {
+  my @old_incompat = map { @{$_->{licenses}} } @{$old->{incompatible_licenses} || []};
+  my @new_incompat = uniq(map { @{$_->{licenses}} } @{$new->{incompatible_licenses} || []});
+  my %old          = map { $_ => 1 } @old_incompat;
+
+  my @new;
+  for my $lic (@new_incompat) {
+    push @new, $lic unless $old{$lic};
+  }
+
+  return @new;
+}
+
+sub _new_licenses ($old, $new) {
+  my %old_licenses = map { $_ => 1 } keys %{$old->{licenses} || {}};
+
+  my %new_licenses;
+  for my $lic (keys %{$new->{licenses}}) {
+    $new_licenses{$lic} ||= $new->{licenses}{$lic} unless $old_licenses{$lic};
+  }
+  return \%new_licenses;
+}
+
+sub _new_snippets ($old, $new) {
+  my $new_snippets = $new->{missed_snippets};
+  my %old_snippets = map { $_ => 1 } map { @{$_} } values %{$old->{missed_snippets} || {}};
+
+  my %files_with_new_snippets;
+  for my $file (sort keys %$new_snippets) {
+    for my $snippet (@{$new_snippets->{$file}}) {
+      $files_with_new_snippets{$snippet} ||= $file unless $old_snippets{$snippet};
+    }
+  }
+  return \%files_with_new_snippets;
 }
 
 1;
