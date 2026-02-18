@@ -1,5 +1,5 @@
 ---
-# SPDX-FileCopyrightText: 2023 Double Open Oy <support@doubleopen.org>
+# SPDX-FileCopyrightText: 2024 Double Open Oy <support@doubleopen.org>
 # SPDX-FileCopyrightText: 2022-2023 HH Partners, Attorneys-at-law Ltd <doubleopen@hhpartners.fi>
 # SPDX-FileCopyrightText: 2021 The Linux Foundation® <legal@linuxfoundation.org>
 # SPDX-FileCopyrightText: 2015-2021 nexB, Inc. <info@nexb.com>
@@ -140,7 +140,9 @@ categories:
 
   - name: "property:nuclear-restriction"
     description: >-
-      This property denies the use of the software in a nuclear facility.
+      This property denies the use of the software in a nuclear facility. A mere warranty clause
+      that does not deny use in a nuclear facility, is not considered a restriction under this
+      property.
 
   - name: "property:patent-clause"
     description: >-
@@ -444,6 +446,13 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://spdx.org/licenses/BSD-2-Clause-Darwin.html
+  - id: "BSD-2-Clause-Darwin"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   - id: "BSD-2-Clause-Views"
     categories:
       - "permissive"
@@ -496,7 +505,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
-      - "property:nuclear-restriction"
 
   - id: "BSD-3-Clause-Open-MPI"
     categories:
@@ -848,6 +856,14 @@ categorizations:
       - "include-in-notice-file"
       - "property:creativecommons"
 
+  # https://spdx.org/licenses/CC-BY-NC-SA-2.0-UK.html
+  - id: "CC-BY-SA-2.0-UK"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
   - id: "CC-BY-SA-2.5"
     categories:
       - "copyleft-strong"
@@ -920,6 +936,16 @@ categorizations:
       - "include-in-notice-file"
       - "property:distribute-source-code"
       - "property:patent-clause"
+
+  # https://spdx.org/licenses/CPOL-1.02.html
+  - id: "CPOL-1.02"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:mark-modifications"
+      - "property:modification-related-obligations"
 
   # https://spdx.org/licenses/CUA-OPL-1.0.html
   - id: "CUA-OPL-1.0"
@@ -995,6 +1021,13 @@ categorizations:
 
   # https://spdx.org/licenses/FSFAP.html
   - id: "FSFAP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/FSFAP-no-warranty-disclaimer.html
+  - id: "FSFAP-no-warranty-disclaimer"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -1360,6 +1393,18 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-generic-3.0.html
+  - id: "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
   # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-3.0-or-later WITH Bison-exception-2.2"
     categories:
@@ -1456,6 +1501,14 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+
+  # https://spdx.org/licenses/HTMLTIDY.html
+  - id: "HTMLTIDY"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:mark-modifications"
 
   # https://spdx.org/licenses/IBM-pibs.html
   - id: "IBM-pibs"
@@ -1578,6 +1631,16 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
       - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LGPL-2.1-only.html
+  # https://scancode-licensedb.aboutcode.org/qt-company-exception-lgpl-2.1.html
+  - id: "LGPL-2.1-only WITH LicenseRef-scancode-qt-company-exception-lgpl-2.1"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/LGPL-2.1-only.html
   # https://spdx.org/licenses/OCaml-LGPL-linking-exception.html
@@ -2426,6 +2489,14 @@ categorizations:
       - "property:no-modifications"
       - "property:patent-clause"
 
+  # https://schemas.xmlsoap.org/wsdl/http/wsdl-http.xsd
+  - id: "LicenseRef-doubleopen-wsdl-schema"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+
   - id: "LicenseRef-eCos-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -2550,6 +2621,14 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # https://scancode-licensedb.aboutcode.org/adobe-postscript.html
+  - id: "LicenseRef-scancode-adobe-postscript"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+
   - id: "LicenseRef-scancode-afpl-9.0"
     categories:
       - "free-restricted"
@@ -2567,6 +2646,13 @@ categorizations:
   - id: "LicenseRef-scancode-apple-sscl"
     categories:
       - "permissive"
+
+  # https://scancode-licensedb.aboutcode.org/arm-cortex-mx.html
+  - id: "LicenseRef-scancode-arm-cortex-mx"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
 
   - id: "LicenseRef-scancode-arm-llvm-sga"
     categories:
@@ -2895,6 +2981,14 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
+  # https://scancode-licensedb.aboutcode.org/hazelcast-community-1.0.html
+  - id: "LicenseRef-scancode-hazelcast-community-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:mark-modifications"
+
   - id: "LicenseRef-scancode-html5"
     categories:
       - "permissive"
@@ -2979,6 +3073,15 @@ categorizations:
     categories:
       - "public-domain"
 
+  # https://scancode-licensedb.aboutcode.org/jsr-107-jcache-spec.html
+  - id: "LicenseRef-scancode-jsr-107-jcache-spec"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:specification-license"
+      - "property:patent-clause"
+      - "property:no-modifications"
   - id: "LicenseRef-scancode-jsr-107-jcache-spec-2013"
     categories:
       - "proprietary-free"
@@ -2999,12 +3102,14 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/ldap-sdk-free-use.html
   - id: "LicenseRef-scancode-ldap-sdk-free-use"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:modification-related-obligations"
 
   - id: "LicenseRef-scancode-ldpgpl-1a"
     categories:
@@ -3230,6 +3335,15 @@ categorizations:
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
 
+  # https://scancode-licensedb.aboutcode.org/openssl-nokia-psk-contribution.html
+  - id: "LicenseRef-scancode-openssl-nokia-psk-contribution"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
   # https://scancode-licensedb.aboutcode.org/oracle-openjdk-classpath-exception-2.0.html
   - id: "LicenseRef-scancode-oracle-openjdk-classpath-exception-2.0"
     categories:
@@ -3254,6 +3368,11 @@ categorizations:
 
   # https://scancode-licensedb.aboutcode.org/other-permissive.html
   - id: "LicenseRef-scancode-other-permissive"
+    categories:
+      - "permissive"
+
+  # https://scancode-licensedb.aboutcode.org/paulo-soares.html
+  - id: "LicenseRef-scancode-paulo-soares"
     categories:
       - "permissive"
 
@@ -3655,6 +3774,13 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://spdx.org/licenses/MIT-Wu.html
+  - id: "MIT-Wu"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   # https://spdx.org/licenses/MIT-feh.html
   - id: "MIT-feh"
     categories:
@@ -3897,6 +4023,14 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://spdx.org/licenses/OpenSSL-standalone.html
+  - id: "OpenSSL-standalone"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   - id: "PSF-2.0"
     categories:
       - "permissive"
@@ -3995,6 +4129,14 @@ categorizations:
     categories:
       - "permissive"
 
+  # https://spdx.org/licenses/SSLeay-standalone.html
+  - id: "SSLeay-standalone"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   - id: "Saxpath"
     categories:
       - "permissive"
@@ -4040,10 +4182,18 @@ categorizations:
       - "include-in-notice-file"
       - "property:distribute-source-code"
 
-# https://spdx.org/licenses/UPL-1.0.html
+  # https://spdx.org/licenses/UPL-1.0.html
   - id: "UPL-1.0"
     categories:
       - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Ubuntu-font-1.0.html
+  - id: "Ubuntu-font-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:modification-related-obligations"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
@@ -4064,6 +4214,13 @@ categorizations:
   - id: "Unicode-TOU"
     categories:
       - "proprietary-free"
+
+  # https://spdx.org/licenses/UnixCrypt.html
+  - id: "UnixCrypt"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
 
   # https://spdx.org/licenses/Unlicense.html
   - id: "Unlicense"
@@ -4240,7 +4397,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
-      - "property:advertising-clause"
 
   # https://spdx.org/licenses/zlib-acknowledgement.html
   - id: "zlib-acknowledgement"
@@ -4249,42 +4405,3 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
-  # https://scancode-licensedb.aboutcode.org/hazelcast-community-1.0.html
-  - id: "LicenseRef-scancode-hazelcast-community-1.0"
-    categories:
-      - "free-restricted"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-      - "property:mark-modifications"
-
-  # https://schemas.xmlsoap.org/wsdl/http/wsdl-http.xsd
-  - id: "LicenseRef-doubleopen-wsdl-schema"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-      - "property:no-modifications"
-
-  # https://scancode-licensedb.aboutcode.org/arm-cortex-mx.html
-  - id: "LicenseRef-scancode-arm-cortex-mx"
-    categories:
-      - "proprietary-free"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
-  # https://spdx.org/licenses/BSD-2-Clause-Darwin.html
-  - id: "BSD-2-Clause-Darwin"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
-  # https://scancode-licensedb.aboutcode.org/jsr-107-jcache-spec.html
-  - id: "LicenseRef-scancode-jsr-107-jcache-spec"
-    categories:
-      - "proprietary-free"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-      - "property:specification-license"
-      - "property:patent-clause"
-      - "property:no-modifications"
