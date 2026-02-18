@@ -10,9 +10,9 @@ PREFIX spdx: <http://spdx.org/rdf/terms#>
                                         spdx:isLive         true;
                                         spdx:isValid        true;
                                         spdx:isWayBackLink  false;
-                                        spdx:match          "true";
+                                        spdx:match          "false";
                                         spdx:order          "0"^^<http://www.w3.org/2001/XMLSchema#int>;
-                                        spdx:timestamp      "2025-11-19T21:05:35Z";
+                                        spdx:timestamp      "2026-01-30T09:03:58Z";
                                         spdx:url            "http://www.info-zip.org/license.html"
                                       ];
         spdx:isDeprecatedLicenseId    false;

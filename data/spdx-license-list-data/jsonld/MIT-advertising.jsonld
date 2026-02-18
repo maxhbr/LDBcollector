@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:b0",
+            "@id": "_:97991683-3050-4aa7-af53-ea7af09d1552",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising",
-            "spdx:timestamp": "2025-11-19T21:06:16Z",
+            "spdx:timestamp": "2026-01-30T09:04:28Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -41,7 +41,7 @@
             "rdfs:seeAlso": "https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising",
             "rdfs:comment": "This license is a modified version of the common MIT license, with an additional advertising clause",
             "spdx:crossRef": {
-                "@id": "_:b0"
+                "@id": "_:97991683-3050-4aa7-af53-ea7af09d1552"
             }
         }
     ],

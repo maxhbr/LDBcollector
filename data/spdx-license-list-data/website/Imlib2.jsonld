@@ -6,10 +6,10 @@
             "spdx:name": "Imlib2 License",
             "spdx:crossRef": [
                 {
-                    "@id": "_:b0"
+                    "@id": "_:7971929e-1288-47b4-851b-fbce58cead8c"
                 },
                 {
-                    "@id": "_:b1"
+                    "@id": "_:6a3bc504-3592-4a47-a4df-db7e87795d5b"
                 }
             ],
             "rdfs:seeAlso": [
@@ -33,7 +33,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:b0",
+            "@id": "_:7971929e-1288-47b4-851b-fbce58cead8c",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -47,7 +47,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING",
-            "spdx:timestamp": "2025-11-19T21:07:22Z",
+            "spdx:timestamp": "2026-01-30T09:05:57Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -56,7 +56,7 @@
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:b1",
+            "@id": "_:6a3bc504-3592-4a47-a4df-db7e87795d5b",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -70,7 +70,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://trac.enlightenment.org/e/browser/trunk/imlib2/COPYING",
-            "spdx:timestamp": "2025-11-19T21:07:21Z",
+            "spdx:timestamp": "2026-01-30T09:05:58Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

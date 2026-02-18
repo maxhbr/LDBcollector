@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:b0"
+                "@id": "_:56d2b8b6-8c2c-4688-8312-5918090719c1"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:b0",
+            "@id": "_:56d2b8b6-8c2c-4688-8312-5918090719c1",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://coil.apotheon.org/plaintext/01.0.txt",
-            "spdx:timestamp": "2025-11-19T21:06:14Z",
+            "spdx:timestamp": "2026-01-30T09:04:24Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

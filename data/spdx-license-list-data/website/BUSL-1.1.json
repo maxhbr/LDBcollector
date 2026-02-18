@@ -10,11 +10,11 @@
   "standardLicenseHeader": "Copyright (C) yyyy name of author\nUse of this software is govered by the Business Source License included in the LICENSE.TXT file and at www.mariadb.com/bsl11.\n\nChange Date:\n\nOn the date above, in accordance with the Business Source License, use of this software will be governed by the open source license specified in the LICENSE.TXT file.\n\n",
   "crossRef": [
     {
-      "match": "false",
+      "match": "N/A",
       "url": "https://mariadb.com/bsl11/",
       "isValid": true,
-      "isLive": true,
-      "timestamp": "2025-11-19T21:05:35Z",
+      "isLive": false,
+      "timestamp": "2026-01-30T09:03:58Z",
       "isWayBackLink": false,
       "order": 0
     }

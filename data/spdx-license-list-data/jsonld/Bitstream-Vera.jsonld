@@ -4,10 +4,10 @@
             "@id": "http://spdx.org/licenses/Bitstream-Vera",
             "spdx:crossRef": [
                 {
-                    "@id": "_:b0"
+                    "@id": "_:853f39c5-b2a8-42ba-a112-f69944de6a86"
                 },
                 {
-                    "@id": "_:b1"
+                    "@id": "_:c3d5de3c-d582-4c27-a3e5-bc7126e317ce"
                 }
             ],
             "rdfs:seeAlso": [
@@ -29,30 +29,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:b0",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://web.archive.org/web/20080207013128/http://www.gnome.org/fonts/",
-            "spdx:timestamp": "2025-11-19T21:07:53Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "N/A",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:b1",
+            "@id": "_:853f39c5-b2a8-42ba-a112-f69944de6a86",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -66,12 +43,35 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://docubrain.com/sites/default/files/licenses/bitstream-vera.html",
-            "spdx:timestamp": "2025-11-19T21:07:53Z",
+            "spdx:timestamp": "2026-01-30T09:06:00Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "true",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:c3d5de3c-d582-4c27-a3e5-bc7126e317ce",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://web.archive.org/web/20080207013128/http://www.gnome.org/fonts/",
+            "spdx:timestamp": "2026-01-30T09:06:00Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
             "@type": "spdx:CrossRef"
         }
     ],

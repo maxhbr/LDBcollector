@@ -1,5 +1,5 @@
 # License List
-The following licenses have been generated from the license list version 2ffd3ae
+The following licenses have been generated from the license list version 297da51
 
 ## Licenses with Short Identifiers
 
@@ -27,6 +27,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | GNU Affero General Public License v3.0 only                                               | [AGPL-3.0-only][]                        | Y    | Y         |
 | GNU Affero General Public License v3.0 or later                                           | [AGPL-3.0-or-later][]                    | Y    | Y         |
 | Aladdin Free Public License                                                               | [Aladdin][]                              |      |           |
+| ALGLIB Documentation License                                                              | [ALGLIB-Documentation][]                 | Y    |           |
 | AMD newlib License                                                                        | [AMD-newlib][]                           |      |           |
 | AMD's plpa_map.c License                                                                  | [AMDPLPA][]                              |      |           |
 | Apple MIT License                                                                         | [AML][]                                  |      |           |
@@ -116,6 +117,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | Cryptographic Autonomy License 1.0 (Combined Work Exception)                              | [CAL-1.0-Combined-Work-Exception][]      | Y    |           |
 | Caldera License                                                                           | [Caldera][]                              |      |           |
 | Caldera License (without preamble)                                                        | [Caldera-no-preamble][]                  |      |           |
+| Common Attack    Pattern Enumeration and Classification License                           | [CAPEC-tou][]                            |      |           |
 | Catharon License                                                                          | [Catharon][]                             |      |           |
 | Computer Associates Trusted Open Source License 1.1                                       | [CATOSL-1.1][]                           | Y    |           |
 | Creative Commons Attribution 1.0 Generic                                                  | [CC-BY-1.0][]                            |      |           |
@@ -336,6 +338,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | Historical Permission Notice and Disclaimer - sell xserver variant with MIT disclaimer    | [HPND-sell-MIT-disclaimer-xserver][]     |      |           |
 | Historical Permission Notice and Disclaimer - sell regexpr variant                        | [HPND-sell-regexpr][]                    |      |           |
 | Historical Permission Notice and Disclaimer - sell variant                                | [HPND-sell-variant][]                    |      |           |
+| HPND - sell variant with safety critical systems clause                                   | [HPND-sell-variant-critical-systems][]   |      |           |
 | HPND sell variant with MIT disclaimer                                                     | [HPND-sell-variant-MIT-disclaimer][]     |      |           |
 | HPND sell variant with MIT disclaimer - reverse                                           | [HPND-sell-variant-MIT-disclaimer-rev][] |      |           |
 | Historical Permission Notice and Disclaimer - SMC variant                                 | [HPND-SMC][]                             |      |           |
@@ -361,6 +364,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | IBM Public License v1.0                                                                   | [IPL-1.0][]                              | Y    | Y         |
 | ISC License                                                                               | [ISC][]                                  | Y    | Y         |
 | ISC Veillard variant                                                                      | [ISC-Veillard][]                         |      |           |
+| ISO permission notice                                                                     | [ISO-permission][]                       |      |           |
 | Jam License                                                                               | [Jam][]                                  | Y    |           |
 | JasPer License                                                                            | [JasPer-2.0][]                           |      |           |
 | Jove License                                                                              | [jove][]                                 |      |           |
@@ -437,6 +441,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | MIT Tom Wu Variant                                                                        | [MIT-Wu][]                               |      |           |
 | MIT +no-false-attribs license                                                             | [MITNFA][]                               |      |           |
 | MMIXware License                                                                          | [MMIXware][]                             |      |           |
+| Minecraft Mod Public License v1.0.1                                                       | [MMPL-1.0.1][]                           |      |           |
 | Motosoto License                                                                          | [Motosoto][]                             | Y    |           |
 | MPEG Software Simulation                                                                  | [MPEG-SSG][]                             |      |           |
 | mpi Permissive License                                                                    | [mpi-permissive][]                       |      |           |
@@ -522,6 +527,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | Open LDAP Public License v2.8                                                             | [OLDAP-2.8][]                            | Y    |           |
 | Open Logistics Foundation License Version 1.3                                             | [OLFL-1.3][]                             | Y    |           |
 | Open Market License                                                                       | [OML][]                                  |      |           |
+| OpenMDW License Agreement v1.0                                                            | [OpenMDW-1.0][]                          |      |           |
 | OpenPBS v2.3 Software License                                                             | [OpenPBS-2.3][]                          |      |           |
 | OpenSSL License                                                                           | [OpenSSL][]                              |      | Y         |
 | OpenSSL License - standalone                                                              | [OpenSSL-standalone][]                   |      |           |
@@ -537,6 +543,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | Open Software License 3.0                                                                 | [OSL-3.0][]                              | Y    | Y         |
 | OSSP License                                                                              | [OSSP][]                                 |      |           |
 | PADL License                                                                              | [PADL][]                                 |      |           |
+| ParaType Free Font Licensing Agreement v1.3                                               | [ParaType-Free-Font-1.3][]               |      |           |
 | The Parity Public License 6.0.0                                                           | [Parity-6.0.0][]                         |      |           |
 | The Parity Public License 7.0.0                                                           | [Parity-7.0.0][]                         |      |           |
 | Open Data Commons Public Domain Dedication & License 1.0                                  | [PDDL-1.0][]                             |      |           |
@@ -618,6 +625,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | TAPR Open Hardware License v1.0                                                           | [TAPR-OHL-1.0][]                         |      |           |
 | TCL/TK License                                                                            | [TCL][]                                  |      |           |
 | TCP Wrappers License                                                                      | [TCP-wrappers][]                         |      |           |
+| TekHVC License                                                                            | [TekHVC][]                               |      |           |
 | TermReadKey License                                                                       | [TermReadKey][]                          |      |           |
 | Transitive Grace Period Public Licence 1.0                                                | [TGPPL-1.0][]                            |      |           |
 | ThirdEye License                                                                          | [ThirdEye][]                             |      |           |
@@ -645,9 +653,11 @@ The following licenses have been generated from the license list version 2ffd3ae
 | The Unlicense                                                                             | [Unlicense][]                            | Y    | Y         |
 | Unlicense - libtelnet variant                                                             | [Unlicense-libtelnet][]                  |      |           |
 | Unlicense - libwhirlpool variant                                                          | [Unlicense-libwhirlpool][]               |      |           |
+| UnRAR License                                                                             | [UnRAR][]                                |      |           |
 | Universal Permissive License v1.0                                                         | [UPL-1.0][]                              | Y    | Y         |
 | Utah Raster Toolkit Run Length Encoded License                                            | [URT-RLE][]                              |      |           |
 | Vim License                                                                               | [Vim][]                                  |      | Y         |
+| Vixie Cron License                                                                        | [Vixie-Cron][]                           |      |           |
 | VOSTROM Public License for Open Source                                                    | [VOSTROM][]                              |      |           |
 | Vovida Software License v1.0                                                              | [VSL-1.0][]                              | Y    |           |
 | W3C Software Notice and License (2002-12-31)                                              | [W3C][]                                  | Y    | Y         |
@@ -760,6 +770,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 | Qwt exception 1.0                                     | [Qwt-exception-1.0][]                    |
 | Romic Exception                                       | [romic-exception][]                      |
 | RRDtool FLOSS exception 2.0                           | [RRDtool-FLOSS-exception-2.0][]          |
+| rsync Linking Exception                               | [rsync-linking-exception][]              |
 | SANE Exception                                        | [SANE-exception][]                       |
 | Solderpad Hardware License v2.0                       | [SHL-2.0][]                              |
 | Solderpad Hardware License v2.1                       | [SHL-2.1][]                              |
@@ -836,6 +847,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [AGPL-3.0-only]: text/AGPL-3.0-only.txt
 [AGPL-3.0-or-later]: text/AGPL-3.0-or-later.txt
 [Aladdin]: text/Aladdin.txt
+[ALGLIB-Documentation]: text/ALGLIB-Documentation.txt
 [AMD-newlib]: text/AMD-newlib.txt
 [AMDPLPA]: text/AMDPLPA.txt
 [AML]: text/AML.txt
@@ -928,6 +940,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [CAL-1.0-Combined-Work-Exception]: text/CAL-1.0-Combined-Work-Exception.txt
 [Caldera]: text/Caldera.txt
 [Caldera-no-preamble]: text/Caldera-no-preamble.txt
+[CAPEC-tou]: text/CAPEC-tou.txt
 [Catharon]: text/Catharon.txt
 [CATOSL-1.1]: text/CATOSL-1.1.txt
 [CC-BY-1.0]: text/CC-BY-1.0.txt
@@ -1165,6 +1178,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [HPND-sell-MIT-disclaimer-xserver]: text/HPND-sell-MIT-disclaimer-xserver.txt
 [HPND-sell-regexpr]: text/HPND-sell-regexpr.txt
 [HPND-sell-variant]: text/HPND-sell-variant.txt
+[HPND-sell-variant-critical-systems]: text/HPND-sell-variant-critical-systems.txt
 [HPND-sell-variant-MIT-disclaimer]: text/HPND-sell-variant-MIT-disclaimer.txt
 [HPND-sell-variant-MIT-disclaimer-rev]: text/HPND-sell-variant-MIT-disclaimer-rev.txt
 [HPND-SMC]: text/HPND-SMC.txt
@@ -1190,6 +1204,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [IPL-1.0]: text/IPL-1.0.txt
 [ISC]: text/ISC.txt
 [ISC-Veillard]: text/ISC-Veillard.txt
+[ISO-permission]: text/ISO-permission.txt
 [Jam]: text/Jam.txt
 [JasPer-2.0]: text/JasPer-2.0.txt
 [jove]: text/jove.txt
@@ -1272,6 +1287,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [MIT-Wu]: text/MIT-Wu.txt
 [MITNFA]: text/MITNFA.txt
 [MMIXware]: text/MMIXware.txt
+[MMPL-1.0.1]: text/MMPL-1.0.1.txt
 [Motosoto]: text/Motosoto.txt
 [MPEG-SSG]: text/MPEG-SSG.txt
 [mpi-permissive]: text/mpi-permissive.txt
@@ -1359,6 +1375,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [OLDAP-2.8]: text/OLDAP-2.8.txt
 [OLFL-1.3]: text/OLFL-1.3.txt
 [OML]: text/OML.txt
+[OpenMDW-1.0]: text/OpenMDW-1.0.txt
 [OpenPBS-2.3]: text/OpenPBS-2.3.txt
 [OpenSSL]: text/OpenSSL.txt
 [OpenSSL-standalone]: text/OpenSSL-standalone.txt
@@ -1374,6 +1391,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [OSL-3.0]: text/OSL-3.0.txt
 [OSSP]: text/OSSP.txt
 [PADL]: text/PADL.txt
+[ParaType-Free-Font-1.3]: text/ParaType-Free-Font-1.3.txt
 [Parity-6.0.0]: text/Parity-6.0.0.txt
 [Parity-7.0.0]: text/Parity-7.0.0.txt
 [PDDL-1.0]: text/PDDL-1.0.txt
@@ -1456,6 +1474,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [TAPR-OHL-1.0]: text/TAPR-OHL-1.0.txt
 [TCL]: text/TCL.txt
 [TCP-wrappers]: text/TCP-wrappers.txt
+[TekHVC]: text/TekHVC.txt
 [TermReadKey]: text/TermReadKey.txt
 [TGPPL-1.0]: text/TGPPL-1.0.txt
 [ThirdEye]: text/ThirdEye.txt
@@ -1483,9 +1502,11 @@ The following licenses have been generated from the license list version 2ffd3ae
 [Unlicense]: text/Unlicense.txt
 [Unlicense-libtelnet]: text/Unlicense-libtelnet.txt
 [Unlicense-libwhirlpool]: text/Unlicense-libwhirlpool.txt
+[UnRAR]: text/UnRAR.txt
 [UPL-1.0]: text/UPL-1.0.txt
 [URT-RLE]: text/URT-RLE.txt
 [Vim]: text/Vim.txt
+[Vixie-Cron]: text/Vixie-Cron.txt
 [VOSTROM]: text/VOSTROM.txt
 [VSL-1.0]: text/VSL-1.0.txt
 [W3C]: text/W3C.txt
@@ -1595,6 +1616,7 @@ The following licenses have been generated from the license list version 2ffd3ae
 [Qwt-exception-1.0]: text/Qwt-exception-1.0.txt
 [romic-exception]: text/romic-exception.txt
 [RRDtool-FLOSS-exception-2.0]: text/RRDtool-FLOSS-exception-2.0.txt
+[rsync-linking-exception]: text/rsync-linking-exception.txt
 [SANE-exception]: text/SANE-exception.txt
 [SHL-2.0]: text/SHL-2.0.txt
 [SHL-2.1]: text/SHL-2.1.txt

@@ -6,11 +6,11 @@
   "licenseId": "Info-ZIP",
   "crossRef": [
     {
-      "match": "true",
+      "match": "false",
       "url": "http://www.info-zip.org/license.html",
       "isValid": true,
       "isLive": true,
-      "timestamp": "2025-11-19T21:05:35Z",
+      "timestamp": "2026-01-30T09:03:58Z",
       "isWayBackLink": false,
       "order": 0
     }

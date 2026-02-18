@@ -18,11 +18,11 @@
             },
             "@type": "spdx:ListedLicense",
             "spdx:crossRef": {
-                "@id": "_:b0"
+                "@id": "_:51de7ca2-fac7-401f-a1dd-5885f0f981e8"
             }
         },
         {
-            "@id": "_:b0",
+            "@id": "_:51de7ca2-fac7-401f-a1dd-5885f0f981e8",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -36,7 +36,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://data.gov.tw/license",
-            "spdx:timestamp": "2025-11-19T21:07:18Z",
+            "spdx:timestamp": "2026-01-30T09:05:56Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

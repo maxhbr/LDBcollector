@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:b0",
+            "@id": "_:ec459930-a74b-469a-bf2f-02c384d261dd",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/FDK-AAC",
-            "spdx:timestamp": "2025-11-19T21:07:43Z",
+            "spdx:timestamp": "2026-01-30T09:05:25Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -24,7 +24,7 @@
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:b1",
+            "@id": "_:8792b37f-829e-48b5-b043-1050fa14a1bd",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -38,7 +38,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://directory.fsf.org/wiki/License:Fdk",
-            "spdx:timestamp": "2025-11-19T21:07:43Z",
+            "spdx:timestamp": "2026-01-30T09:05:55Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -62,10 +62,10 @@
             },
             "spdx:crossRef": [
                 {
-                    "@id": "_:b1"
+                    "@id": "_:ec459930-a74b-469a-bf2f-02c384d261dd"
                 },
                 {
-                    "@id": "_:b0"
+                    "@id": "_:8792b37f-829e-48b5-b043-1050fa14a1bd"
                 }
             ],
             "spdx:isDeprecatedLicenseId": {

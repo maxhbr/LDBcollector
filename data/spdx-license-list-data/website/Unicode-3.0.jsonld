@@ -10,7 +10,7 @@
             "@type": "spdx:ListedLicense",
             "spdx:licenseTextHtml": "\n         <div class=\"optional-license-text\"> \n            UNICODE LICENSE V3\n            <p>\n               COPYRIGHT AND PERMISSION NOTICE\n            </p>\n\n         </div>\n         <var class=\"replaceable-license-text\"><span title=\"can be replaced with the pattern .{0,5000}\"> \n            Copyright © 1991-2023 Unicode, Inc.\n         </span></var>\n         <p>\n            NOTICE TO USER: Carefully read the following legal agreement.\n            BY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING\n            DATA FILES, AND/OR SOFTWARE, YOU UNEQUIVOCALLY ACCEPT,\n            AND AGREE TO BE BOUND BY, ALL OF THE TERMS AND CONDITIONS\n            OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT DOWNLOAD,\n            INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.\n         </p>\n\n         <p>\n            Permission is hereby granted, free of charge, to any person\n            obtaining a copy of data files and any associated documentation\n            (the &quot;Data Files&quot;) or software and any associated documentation\n            (the &quot;Software&quot;) to deal in the Data Files or Software without\n            restriction, including without limitation the rights to use,\n            copy, modify, merge, publish, distribute, and/or sell copies of\n            the Data Files or Software, and to permit persons to whom the\n            Data Files or Software are furnished to do so, provided that\n            either (a) this copyright and permission notice appear with\n            all copies of the Data Files or Software, or (b) this copyright\n            and permission notice appear in associated Documentation.\n         </p>\n\n         <p>\n            THE DATA FILES AND SOFTWARE ARE PROVIDED &quot;AS IS&quot;, WITHOUT\n            WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT\n            LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\n            PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.\n         </p>\n\n         <p>\n            IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN\n            THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR\n            CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM\n            LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\n            NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION\n            WITH THE USE OR PERFORMANCE OF THE DATA FILES OR SOFTWARE.\n         </p>\n\n         <p>\n            Except as contained in this notice, the name of a copyright\n            holder shall not be used in advertising or otherwise to promote\n            the sale, use or other dealings in these Data Files or Software\n            without prior written authorization of the copyright holder.\n         </p>\n\n      ",
             "spdx:crossRef": {
-                "@id": "_:b0"
+                "@id": "_:71ca0ebc-c4cd-4825-bb31-5b3a097e5ca9"
             },
             "spdx:isOsiApproved": {
                 "@value": "true",
@@ -22,7 +22,7 @@
             }
         },
         {
-            "@id": "_:b0",
+            "@id": "_:71ca0ebc-c4cd-4825-bb31-5b3a097e5ca9",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -36,7 +36,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://www.unicode.org/license.txt",
-            "spdx:timestamp": "2025-11-19T21:02:58Z",
+            "spdx:timestamp": "2026-01-30T09:02:57Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

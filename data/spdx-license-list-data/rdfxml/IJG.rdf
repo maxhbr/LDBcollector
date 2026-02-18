@@ -5,6 +5,7 @@
     xmlns:ptr="http://www.w3.org/2009/pointers#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
   <spdx:ListedLicense rdf:about="http://spdx.org/licenses/IJG">
+    <rdfs:seeAlso>https://github.com/vstroebel/jpeg-encoder/blob/main/src/fdct.rs#L1-L72</rdfs:seeAlso>
     <spdx:crossRef>
       <spdx:CrossRef>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -13,14 +14,13 @@
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
-        <spdx:url>https://github.com/libjpeg-turbo/libjpeg-turbo/blob/main/README.ijg#L117-L161</spdx:url>
-        <spdx:timestamp>2025-11-19T21:03:30Z</spdx:timestamp>
+        <spdx:url>http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2</spdx:url>
+        <spdx:timestamp>2026-01-30T09:03:02Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >2</spdx:order>
-        <spdx:match>false</spdx:match>
+        >0</spdx:order>
+        <spdx:match>true</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
-    <rdfs:seeAlso>https://github.com/vstroebel/jpeg-encoder/blob/main/src/fdct.rs#L1-L72</rdfs:seeAlso>
     <spdx:name>Independent JPEG Group License</spdx:name>
     <spdx:standardLicenseTemplate>&lt;&lt;beginOptional&gt;&gt;Independent JPEG Group License
 
@@ -61,8 +61,6 @@ We are required to state that
 "The Graphics Interchange Format(c) is the Copyright property of CompuServe Incorporated. GIF(sm) is a Service Mark property of CompuServe Incorporated."
 
 </spdx:standardLicenseTemplate>
-    <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</spdx:isOsiApproved>
     <spdx:crossRef>
       <spdx:CrossRef>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -71,13 +69,15 @@ We are required to state that
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
-        <spdx:url>http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2</spdx:url>
-        <spdx:timestamp>2025-11-19T21:03:30Z</spdx:timestamp>
+        <spdx:url>https://github.com/vstroebel/jpeg-encoder/blob/main/src/fdct.rs#L1-L72</spdx:url>
+        <spdx:timestamp>2026-01-30T09:03:02Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >0</spdx:order>
-        <spdx:match>true</spdx:match>
+        >1</spdx:order>
+        <spdx:match>false</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
+    <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</spdx:isOsiApproved>
     <rdfs:seeAlso>http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2</rdfs:seeAlso>
     <spdx:isDeprecatedLicenseId rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</spdx:isDeprecatedLicenseId>
@@ -120,7 +120,6 @@ The IJG distribution formerly included code to read and write GIF files. To avoi
 We are required to state that
      "The Graphics Interchange Format(c) is the Copyright property of CompuServe Incorporated. GIF(sm) is a Service Mark property of CompuServe Incorporated."
 </spdx:licenseText>
-    <rdfs:seeAlso>https://github.com/libjpeg-turbo/libjpeg-turbo/blob/main/README.ijg#L117-L161</rdfs:seeAlso>
     <spdx:crossRef>
       <spdx:CrossRef>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -129,13 +128,14 @@ We are required to state that
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
-        <spdx:url>https://github.com/vstroebel/jpeg-encoder/blob/main/src/fdct.rs#L1-L72</spdx:url>
-        <spdx:timestamp>2025-11-19T21:03:30Z</spdx:timestamp>
+        <spdx:url>https://github.com/libjpeg-turbo/libjpeg-turbo/blob/main/README.ijg#L117-L161</spdx:url>
+        <spdx:timestamp>2026-01-30T09:03:01Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</spdx:order>
+        >2</spdx:order>
         <spdx:match>false</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
+    <rdfs:seeAlso>https://github.com/libjpeg-turbo/libjpeg-turbo/blob/main/README.ijg#L117-L161</rdfs:seeAlso>
     <spdx:isFsfLibre rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</spdx:isFsfLibre>
     <spdx:licenseTextHtml>

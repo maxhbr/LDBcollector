@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:b0",
+            "@id": "_:9b1d1f21-f198-4d39-b0d7-e79d64d88f60",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://opensource.org/licenses/Artistic-1.0",
-            "spdx:timestamp": "2025-11-19T21:06:14Z",
+            "spdx:timestamp": "2026-01-30T09:04:24Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -43,10 +43,10 @@
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
+            "spdx:name": "Artistic License 1.0",
             "spdx:crossRef": {
-                "@id": "_:b0"
-            },
-            "spdx:name": "Artistic License 1.0"
+                "@id": "_:9b1d1f21-f198-4d39-b0d7-e79d64d88f60"
+            }
         }
     ],
     "@context": {

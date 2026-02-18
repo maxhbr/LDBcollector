@@ -6,29 +6,29 @@
   "licenseId": "IEC-Code-Components-EULA",
   "crossRef": [
     {
-      "match": "N/A",
+      "match": "false",
       "url": "https://www.iec.ch/CCv1",
       "isValid": true,
-      "isLive": false,
-      "timestamp": "2025-11-19T21:03:41Z",
+      "isLive": true,
+      "timestamp": "2026-01-30T09:03:12Z",
       "isWayBackLink": false,
       "order": 1
     },
     {
-      "match": "N/A",
+      "match": "false",
       "url": "https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf",
       "isValid": true,
-      "isLive": false,
-      "timestamp": "2025-11-19T21:03:41Z",
+      "isLive": true,
+      "timestamp": "2026-01-30T09:03:13Z",
       "isWayBackLink": false,
       "order": 0
     },
     {
-      "match": "N/A",
+      "match": "false",
       "url": "https://www.iec.ch/copyright",
       "isValid": true,
-      "isLive": false,
-      "timestamp": "2025-11-19T21:03:41Z",
+      "isLive": true,
+      "timestamp": "2026-01-30T09:03:15Z",
       "isWayBackLink": false,
       "order": 2
     }

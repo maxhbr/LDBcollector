@@ -18,22 +18,9 @@ Permission is granted to anyone to use this software for any purpose on any comp
 
 4. This notice may not be removed or altered.
 </spdx:licenseText>
-    <spdx:crossRef>
-      <spdx:CrossRef>
-        <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isWayBackLink>
-        <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</spdx:isValid>
-        <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isLive>
-        <spdx:url>https://metacpan.org/release/KNOK/File-MMagic-1.30/source/COPYING#L28</spdx:url>
-        <spdx:timestamp>2025-11-19T21:07:16Z</spdx:timestamp>
-        <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</spdx:order>
-        <spdx:match>N/A</spdx:match>
-      </spdx:CrossRef>
-    </spdx:crossRef>
     <spdx:name>Spencer License 94</spdx:name>
+    <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</spdx:isOsiApproved>
     <spdx:crossRef>
       <spdx:CrossRef>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -42,15 +29,13 @@ Permission is granted to anyone to use this software for any purpose on any comp
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
-        <spdx:url>https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License</spdx:url>
-        <spdx:timestamp>2025-11-19T21:07:16Z</spdx:timestamp>
+        <spdx:url>https://metacpan.org/release/KNOK/File-MMagic-1.30/source/COPYING#L28</spdx:url>
+        <spdx:timestamp>2026-01-30T09:05:27Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >0</spdx:order>
-        <spdx:match>true</spdx:match>
+        >1</spdx:order>
+        <spdx:match>false</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
-    <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</spdx:isOsiApproved>
     <spdx:standardLicenseTemplate>&lt;&lt;var;name="copyright";original="Copyright YEAR NAME. All rights reserved. Written by NAME  ";match=".{0,5000}"&gt;&gt;
 This software is not subject to any license of the American Telephone and Telegraph Company or of the Regents of the University of California.
 Permission is granted to anyone to use this software for any purpose on any computer system, and to alter it and redistribute it&lt;&lt;beginOptional&gt;&gt; freely&lt;&lt;endOptional&gt;&gt; , subject to the following restrictions:
@@ -104,5 +89,20 @@ Permission is granted to anyone to use this software for any purpose on any comp
     <spdx:isDeprecatedLicenseId rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</spdx:isDeprecatedLicenseId>
     <rdfs:seeAlso>https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License</rdfs:seeAlso>
+    <spdx:crossRef>
+      <spdx:CrossRef>
+        <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</spdx:isWayBackLink>
+        <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</spdx:isValid>
+        <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</spdx:isLive>
+        <spdx:url>https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License</spdx:url>
+        <spdx:timestamp>2026-01-30T09:05:27Z</spdx:timestamp>
+        <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >0</spdx:order>
+        <spdx:match>true</spdx:match>
+      </spdx:CrossRef>
+    </spdx:crossRef>
   </spdx:ListedLicense>
 </rdf:RDF>

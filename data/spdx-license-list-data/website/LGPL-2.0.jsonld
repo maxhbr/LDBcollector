@@ -1,29 +1,6 @@
 {
     "@graph": [
         {
-            "@id": "_:b0",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html",
-            "spdx:timestamp": "2025-11-19T21:05:38Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "N/A",
-            "@type": "spdx:CrossRef"
-        },
-        {
             "@id": "http://spdx.org/licenses/LGPL-2.0",
             "spdx:name": "GNU Library General Public License v2 only",
             "spdx:isOsiApproved": {
@@ -40,12 +17,35 @@
             "spdx:standardLicenseHeaderHtml": "\n      Copyright (C) <var class=\"replaceable-license-text\"><span title=\"can be replaced with the pattern .+\"> year name of author</span></var>\n      This library is free software; you can redistribute it and/or modify it\n      under the terms of the GNU Library General Public License as published\n      by the Free Software Foundation; version 2. This library is distributed\n      in the hope that it will be useful, but WITHOUT ANY WARRANTY; without\n      even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR\n      PURPOSE. See the GNU Library General Public License for more details.\n      You should have received a copy of the GNU Library General Public\n      License along with this library; if not, write to the Free Software\n      Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.\n    ",
             "spdx:standardLicenseHeaderTemplate": "Copyright (C) <<var;name=\"copyright\";original=\"year name of author\";match=\".+\">> This library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public License as published by the Free Software Foundation; version 2. This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library General Public License for more details. You should have received a copy of the GNU Library General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.",
             "spdx:crossRef": {
-                "@id": "_:b0"
+                "@id": "_:dfdcdcff-d7ed-4185-906b-963bce6f14eb"
             },
             "spdx:isDeprecatedLicenseId": {
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             }
+        },
+        {
+            "@id": "_:dfdcdcff-d7ed-4185-906b-963bce6f14eb",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html",
+            "spdx:timestamp": "2026-01-30T09:03:59Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
+            "@type": "spdx:CrossRef"
         }
     ],
     "@context": {

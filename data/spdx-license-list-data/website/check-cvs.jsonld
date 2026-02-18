@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:b0",
+            "@id": "_:cac21403-5b6b-4600-a225-3547351e38cf",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -11,23 +11,23 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:isLive": {
-                "@value": "true",
+                "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://cvs.savannah.gnu.org/viewvc/cvs/ccvs/contrib/check_cvs.in?revision=1.1.4.3&view=markup&pathrev=cvs1-11-23#l2",
-            "spdx:timestamp": "2025-11-19T21:03:28Z",
+            "spdx:timestamp": "2026-01-30T09:02:59Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
-            "spdx:match": "false",
+            "spdx:match": "N/A",
             "@type": "spdx:CrossRef"
         },
         {
             "@id": "http://spdx.org/licenses/check-cvs",
             "@type": "spdx:ListedLicense",
             "spdx:crossRef": {
-                "@id": "_:b0"
+                "@id": "_:cac21403-5b6b-4600-a225-3547351e38cf"
             },
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
