@@ -203,3 +203,6 @@ UNOFFICIAL LEGAL ADVICE: Don't use these. Like, ever.
 
   Aside from the funny name, this license includes an arbitrary and unlimited ethics clause that doesn't let you use the software for "ill-intentioned reasons". The reasons listed are vague enough, but the authors are also given carte blanche to determine any use they want to be ill-intentioned. [Source](https://olmewe.com/notes/istsl/)
 
+- **[D&R (Death and Repudiation) License](DEATH.md)**
+
+  Only dead people can use the software. If you are found to be not dead, you will be punished to the fullest extent of the law. If you escape such punishments, you will be severely punished to the fullest extent of a new revised law that encompasses infinite punishments.
