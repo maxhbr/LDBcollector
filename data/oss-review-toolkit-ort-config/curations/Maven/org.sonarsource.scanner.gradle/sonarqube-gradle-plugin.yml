@@ -1,0 +1,7 @@
+- id: "Maven:org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:"
+  curations:
+    comment: |
+      The library is licensed under LGPL-3.0-only, see:
+      https://github.com/SonarSource/sonar-scanner-gradle/blob/master/LICENSE.txt
+    declared_license_mapping:
+      "GNU LPGL 3": "LGPL-3.0-only"

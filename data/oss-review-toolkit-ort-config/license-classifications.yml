@@ -1828,6 +1828,10 @@ categorizations:
   categories:
   - "public-domain"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-affine-ee-2023"
+  categories:
+  - "commercial"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-afl-1.1"
   categories:
   - "permissive"
@@ -2259,6 +2263,11 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-atl-1.0"
+  categories:
+  - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "LicenseRef-scancode-atlassian-marketplace-tou"
   categories:
   - "proprietary-free"
@@ -2351,6 +2360,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-bear-blog-2.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-beegfs-eula-2024"
   categories:
   - "source-available"
@@ -2388,6 +2401,10 @@ categorizations:
   - "proprietary-free"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-bigscience-rail-1.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-bilibili-model-ula-2025-09-09"
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
@@ -3928,6 +3945,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-diffgram-dlv2"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-diffmark"
   categories:
   - "public-domain"
@@ -4707,6 +4728,14 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-futo-sfl-1.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-futo-sfl-1.1"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-futo-sfl-1.1-kb"
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
@@ -6467,6 +6496,11 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-lppl-1.3b"
+  categories:
+  - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "LicenseRef-scancode-lppl-1.3c"
   categories:
   - "copyleft"
@@ -8044,6 +8078,14 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-odoo-eel-1.0"
+  categories:
+  - "commercial"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-odoo-pl-1.0"
+  categories:
+  - "commercial"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-offis"
   categories:
   - "permissive"
@@ -8202,6 +8244,10 @@ categorizations:
 - id: "LicenseRef-scancode-openai-tou-20241211"
   categories:
   - "commercial"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-openatom-model-1.0"
+  categories:
+  - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-opencarp-1.0"
   categories:
@@ -8593,6 +8639,10 @@ categorizations:
   - "patent-license"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-owfa-1.0"
+  categories:
+  - "patent-license"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-owfa-1.0-2023-05"
   categories:
   - "patent-license"
   - "include-in-notice-file"
@@ -9468,6 +9518,11 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-scsl-2.8"
+  categories:
+  - "copyleft-limited"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "LicenseRef-scancode-scsl-3.0"
   categories:
   - "copyleft-limited"
@@ -9831,6 +9886,10 @@ categorizations:
 - id: "LicenseRef-scancode-stanford-pvrg"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-statamic-2022"
+  categories:
+  - "proprietary-free"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-statewizard"
   categories:

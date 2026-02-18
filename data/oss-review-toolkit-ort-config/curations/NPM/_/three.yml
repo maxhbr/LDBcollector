@@ -3,3 +3,8 @@
     comment: "Commit of release 0.178.0 is tagged r178."
     vcs:
       revision: "3b1ff7661884f26e6d9af1d94c293129aaba885c"
+- id: "NPM::three:0.181.2"
+  curations:
+    comment: "Commit of release 0.181.2 is not tagged. Using the commit that changes the version to 0.181.2. Same day and after a commit tagged r181."
+    vcs:
+      revision: "7a4f6b6637fbf10f1f36c9bb1f34b32452e516c6"

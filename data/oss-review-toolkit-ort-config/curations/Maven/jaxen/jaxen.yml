@@ -1,0 +1,8 @@
+- id: "Maven:jaxen:jaxen:1.1.4"
+  curations:
+    comment: |
+      Map the dead URL in license tag in POM to "BSD-3-Clause". This is confirmed in 
+      the project's GitHub repo and the source file headers 
+      (https://github.com/doncorley/jaxen/blob/jaxen-1.1.4-final/LICENSE.txt)
+    declared_license_mapping:
+      "http://jaxen.codehaus.org/license.html": "BSD-3-Clause"
