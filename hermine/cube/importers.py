@@ -303,6 +303,41 @@ def import_spdx_file(
     logger.info("SPDX import done", datetime.now())
 
 
+def _strip_invalid_purls(parsed_json):
+    """Remove invalid PURLs from CycloneDX JSON before deserialization.
+
+    The CycloneDX library raises CycloneDxDeserializationException on invalid
+    PURLs, blocking the entire import. This pre-processes the JSON to strip
+    invalid PURLs so the rest of the file can still be imported.
+
+    Returns a dict mapping bom-ref to the original invalid PURL string.
+    """
+    raw_purls = {}
+
+    entries = list(parsed_json.get("components", []))
+    metadata_component = parsed_json.get("metadata", {}).get("component")
+    if metadata_component:
+        entries.append(metadata_component)
+
+    for entry in entries:
+        purl = entry.get("purl")
+        if not purl:
+            continue
+        try:
+            PackageURL.from_string(purl)
+        except ValueError:
+            bom_ref = entry.get("bom-ref", "")
+            logger.warning(
+                "Stripped invalid PURL '%s' from component '%s'",
+                purl,
+                bom_ref,
+            )
+            raw_purls[bom_ref] = purl
+            del entry["purl"]
+
+    return raw_purls
+
+
 @transaction.atomic()
 def import_cyclonedx_file(
     cyclonedx_file: File | TextIO,
@@ -315,11 +350,14 @@ def import_cyclonedx_file(
 ):
     json_validator = JsonStrictValidator(SchemaVersion.V1_6)
     cyclonedx_file_content = cyclonedx_file.read()
-    validation_errors = json_validator.validate_str(cyclonedx_file_content)
+    parsed_json = json.loads(cyclonedx_file_content)
+    raw_purls = _strip_invalid_purls(parsed_json)
+    cleaned_content = json.dumps(parsed_json)
+    validation_errors = json_validator.validate_str(cleaned_content)
     if validation_errors:
         raise SBOMImportFailure(f"Invalid CycloneDX file: {repr(validation_errors)}")
     try:
-        bom = CDXBom.from_json(json.loads(cyclonedx_file_content))
+        bom = CDXBom.from_json(parsed_json)
     except CycloneDxDeserializationException as e:
         raise SBOMImportFailure(f"Could not parse CycloneDX file. {e}")
 
@@ -353,6 +391,12 @@ def import_cyclonedx_file(
         else:
             declared_license = ""
 
+        purl = (
+            str(component.purl)
+            if component.purl
+            else raw_purls.get(str(component.bom_ref), "")
+        )
+
         add_dependency(
             release_id,
             "",
@@ -365,7 +409,7 @@ def import_cyclonedx_file(
             "",
             linking,
             component_update_mode,
-            str(component.purl),
+            purl,
             default_project_name,
             default_scope_name,
         )
@@ -394,15 +438,18 @@ def add_dependency(
         concluded_license = declared_license
 
     if purl:
-        purl_obj = PackageURL.from_string(purl)
-        # Prefer the purl name over the explicit component name
-        component_name = (
-            f"{purl_obj.namespace}/{purl_obj.name}"
-            if purl_obj.namespace
-            else purl_obj.name
-        ) or component_name
-        # Prefer explicit type over the purl type
-        component_purl_type = component_purl_type or purl_obj.type
+        try:
+            purl_obj = PackageURL.from_string(purl)
+            # Prefer the purl name over the explicit component name
+            component_name = (
+                f"{purl_obj.namespace}/{purl_obj.name}"
+                if purl_obj.namespace
+                else purl_obj.name
+            ) or component_name
+            # Prefer explicit type over the purl type
+            component_purl_type = component_purl_type or purl_obj.type
+        except ValueError:
+            logger.warning("Invalid PURL '%s', skipping PURL parsing", purl)
 
     component, component_log = _add_component(
         component_update_mode, component_purl_type, component_name, component_defaults

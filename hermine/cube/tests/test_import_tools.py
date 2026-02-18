@@ -300,6 +300,25 @@ class ImportCycloneDXTestCase(TestCase):
             import_cyclonedx_file(f, 1)
         self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 203)
 
+    def test_cyclonedx_with_invalid_purl(self):
+        with open("cube/fixtures/cyclonedx_invalid_purl.json") as f:
+            import_cyclonedx_file(f, 1)
+
+        # Both components are imported
+        self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 4)
+
+        # Valid component is imported normally
+        valid_version = Version.objects.get(
+            component__name="valid-lib", version_number="1.0.0"
+        )
+        self.assertEqual(valid_version.purl, "pkg:npm/valid-lib@1.0.0")
+
+        # Component with invalid PURL is imported with raw PURL preserved
+        invalid_version = Version.objects.get(
+            component__name="docker-image", version_number="latest"
+        )
+        self.assertEqual(invalid_version.purl, "pkg:npm/invalid-purl:sha256@f080f91")
+
 
 class ImportHKissbomTestCase(TestCase):
     fixtures = ["test_data.json"]
