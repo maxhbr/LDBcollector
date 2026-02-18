@@ -1,10 +1,11 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "WTFNMF Public License 1.0"
 category: "WTFNMF"
-shortName: "WTFNMF-1.0"
+shortName: "WTFNMFPL-1.0"
+spdxIdentifier: "WTFNMFPL"
 
 alternativeNames:
   - "DO WHAT THE FUCK YOU WANT TO BUT IT'S NOT MY FAULT PUBLIC LICENSE"

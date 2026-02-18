@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Open Data Commons Database Contents License 1.0"
+category: "ODC Database"
+shortName: "ODC-DCL-1.0"
+
+canonicalNameHistory:
+  - "ODC Database Contents License 1.0"
+
+alternativeNames:
+  - "https://opendatacommons.org/licenses/dbcl/1.0/"
+  - "http://opendatacommons.org/licenses/dbcl/1.0/"
+  - "dbcl-1.0"
+  - "ODC Database Contents License 1.0"
+
+otherIds: 
+  - "scancode:dbcl-1.0"

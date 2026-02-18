@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Unicode Character Database Terms of Use"
+category: "UCD"
+shortName: "UCD-TOU"
+
+canonicalNameHistory:
+  - "UCD Terms of Use"
+
+alternativeNames:
+  - "UCD Terms of Use"
+  - "Unicode Character Database (UCD) Terms of Use"
+  - "Unicode Character Database (UCD) ToU"
+  - "Unicode Character Database Terms of Use"
+  - "Unicode Character Database ToU"
+
+otherIds: 
+  - "scancode:unicode-ucd"

@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Oxford Nanopore Technologies Public License 1.0"
 category: "Odxford Nanopore Technologies"
@@ -8,4 +8,8 @@ shortName: "Oxford-Nanopore-PL-1.0"
 
 alternativeNames:
   - "Oxford Nanopore Technologies PLC. Public License Version 1.0"
+  - "Oxford Nanopore Technologies Public License 1.0"
+  - "Nanoporetech Public License 1.0"
 
+otherIds: 
+  - "scancode:nanoporetech-public-1.0"

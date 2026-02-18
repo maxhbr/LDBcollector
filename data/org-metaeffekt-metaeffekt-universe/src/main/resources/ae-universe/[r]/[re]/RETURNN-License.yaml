@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "RETURNN License"
 category: "RETURNN"
@@ -10,3 +10,5 @@ alternativeNames:
   - "The RWTH Extensible Training framework for Universal Recurrent Neural Networks (RETURNN) License"
   - "RWTH Extensible Training framework for Universal Recurrent Neural Networks License"
 
+otherIds: 
+  - "scancode:rwth-returnn-2024"

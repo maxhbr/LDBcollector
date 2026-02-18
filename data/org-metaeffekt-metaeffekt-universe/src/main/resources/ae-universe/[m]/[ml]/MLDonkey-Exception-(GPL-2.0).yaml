@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "MLDonkey Exception (GPL 2.0)"
+category: "MLDonkey Exception"
+shortName: "MLDonkey-Exception-GPL-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "MLDonkey Exception (GPL 2.0)"
+  - "MLDonkey Exception to GPL 2.0"
+  - "mldonkey-exception-gpl-2.0"
+  - "MLDonkey-Exception-GPL-2.0"
+
+otherIds: 
+  - "scancode:mldonkey-exception-gpl-2.0"

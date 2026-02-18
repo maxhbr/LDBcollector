@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "MuseScore Exception (GPL)"
 category: "MuseScore Exception"
@@ -8,3 +8,5 @@ shortName: "MuseScore-Exception-GPL"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:musescore-exception-gpl-2.0"

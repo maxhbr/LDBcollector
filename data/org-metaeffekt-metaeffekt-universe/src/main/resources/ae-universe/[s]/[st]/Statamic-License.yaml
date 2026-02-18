@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Statamic License"
 category: "Statamic"
@@ -10,3 +10,5 @@ alternativeNames:
   - "Statamic CMS License"
   - "statamic cms"
 
+otherIds: 
+  - "scancode:statamic-2022"

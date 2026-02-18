@@ -2,16 +2,16 @@
 
 Project providing insights on the {metæffekt} license database covering
 
-* 2849 modeled license terms,
-* 207 exceptions,
-* 14 modifiers
+* 2972 modeled license terms,
+* 213 exceptions,
+* 15 modifiers
 * 2 restrictions
-* 306 specific and commonly used license expressions, and
-* 60 consolidated markers
+* 309 specific and commonly used license expressions, and
+* 61 consolidated markers
 
-as of 06th November 2025.
+as of February 1st 2026.
 
-A total of 3056 terms and exceptions!
+A total of 3202 differentiated terms, modifiers, restrictions and exceptions!
 
 The following links provide letter-specific overviews on the license information:
 
@@ -109,7 +109,7 @@ the license name is problematic.
 
 The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 
-Copyright © metaeffekt GmbH 2021-2025. All rights reserved.
+Copyright © metaeffekt GmbH 2021-2026. All rights reserved.
 
 ## Contribution
 As this repository is largely showing converted data. A direct contribution in the form of patches is
@@ -120,7 +120,7 @@ internal dataset to produce the corrected outputs.
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 32.3.3 is used as reference version.
+Currently, ScanCode version 32.4.1 is used as reference version.
 
 Non-approved OSI status information is not yet complete; more details is added incrementally.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected

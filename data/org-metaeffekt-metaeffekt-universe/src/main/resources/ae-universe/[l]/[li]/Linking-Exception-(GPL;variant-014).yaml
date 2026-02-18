@@ -1,10 +1,11 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Linking Exception (GPL; variant 014)"
 category: "GPL Linking Exception"
 shortName: "Linkin-Exception-GPL-014"
+spdxIdentifier: "GCC-exception-2.0"
 
 canonicalNameHistory:
   - "GCC Runtime Library Exception 2.1"

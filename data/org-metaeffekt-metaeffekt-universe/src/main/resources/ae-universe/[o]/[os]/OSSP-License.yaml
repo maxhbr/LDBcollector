@@ -1,10 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "OSSP License"
 category: "OSSP License"
-shortName: "OSSP"
+spdxIdentifier: "OSSP"
 
 alternativeNames:
   - "OSSP License"

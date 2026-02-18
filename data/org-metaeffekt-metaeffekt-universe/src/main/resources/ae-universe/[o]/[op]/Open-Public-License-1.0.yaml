@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Open Public License 1.0"
 category: "OPL"
@@ -10,6 +10,12 @@ alternativeNames:
   - "OPL, Version 1.0"
   - "OPL 1.0"
   - "OPEN PUBLIC LICENSE Version 1.0"
+  - "http://ksoap.objectweb.org/software/license/opl.html"
+  - "https://fedoraproject.org/wiki/Licensing/Open_Public_License"
+  - "licenses.nuget.org/OPL-1.0"
+  - "{{OPL-1.0}} https://spdx.org/licenses/OPL-1.0"
+  - "Open Public License v1.0"
+  - "https://spdx.org/licenses/opl-1.0"
 
 otherIds: 
   - "scancode:open-public"

@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "matplotlib License Agreement 1.3.0"
 category: "matplotlib"
@@ -13,3 +13,5 @@ alternativeNames:
   - "Matplotlib License Agreement 1.3.0"
   - "matplotlib versions 1.3.0 and later"
 
+otherIds: 
+  - "scancode:matplotlib-1.3.0"

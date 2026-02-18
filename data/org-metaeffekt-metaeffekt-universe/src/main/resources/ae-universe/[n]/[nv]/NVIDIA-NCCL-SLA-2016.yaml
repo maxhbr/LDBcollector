@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "NVIDIA NCCL SLA 2016"
+category: "NVIDIA NCCL SLA"
+shortName: "NVIDIA-NCCL-SLA-2016"
+
+alternativeNames:
+  - "NVIDIA NCCL SLA 2016"
+  - "NVIDIA-NCCL-SLA-2016"
+  - "nvidia-nccl-sla-2016"
+  - "NVIDIA SOFTWARE LICENSE AGREEMENT"
+  - "Software License Agreement (SLA) for NVIDIA NCCL"
+
+otherIds: 
+  - "scancode:nvidia-nccl-sla-2016"

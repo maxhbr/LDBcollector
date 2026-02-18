@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Microchip ENC28J60 License"
+category: "Microchip"
+shortName: "Microchip"
+
+canonicalNameHistory:
+  - "Microchip License"
+
+alternativeNames:
+  - "Microchip ENC28J60 License 2009"
+
+otherIds: 
+  - "scancode:microchip-enc28j60-2009"

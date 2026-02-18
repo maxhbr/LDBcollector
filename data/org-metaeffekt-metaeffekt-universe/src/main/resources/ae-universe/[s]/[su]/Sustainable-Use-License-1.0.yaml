@@ -1,10 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Sustainable Use License 1.0"
 category: "Sustainable Use License"
-shortName: "Sustainable-Use-1.0"
+spdxIdentifier: "SUL-1.0"
 
 alternativeNames:
   - "Sustainable Use License 1.0"

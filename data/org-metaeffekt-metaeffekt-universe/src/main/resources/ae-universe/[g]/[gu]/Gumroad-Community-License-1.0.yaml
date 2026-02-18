@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Gumroad Community License 1.0"
 category: "Gumroad Community"
@@ -11,3 +11,5 @@ alternativeNames:
   - "Gumroad-Community-License-1.0"
   - "https://github.com/antiwork/gumroad/blob/main/LICENSE.md"
 
+otherIds: 
+  - "scancode:gumroad-cl-1.0"

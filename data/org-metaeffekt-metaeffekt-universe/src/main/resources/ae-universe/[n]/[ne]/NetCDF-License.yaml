@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "NetCDF License"
 category: "NetCDF"
@@ -14,5 +14,4 @@ alternativeNames:
   - "NETCDF License"
 
 otherIds: 
-  - "scancode:naumen"
   - "scancode:netcdf"

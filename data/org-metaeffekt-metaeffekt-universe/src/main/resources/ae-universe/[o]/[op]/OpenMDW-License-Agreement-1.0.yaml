@@ -1,6 +1,6 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "OpenMDW License Agreement 1.0"
 category: "OpenMDW License Agreement"
@@ -10,3 +10,5 @@ alternativeNames:
   - "OpenMDW License Agreement 1.0"
   - "OpenMDW License Agreement, version 1.0"
 
+otherIds: 
+  - "scancode:openmdw-1.0"

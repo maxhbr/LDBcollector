@@ -1,8 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Retentioneering Tools Software License (non-exclusive)"
 category: "Retentioneering Tools Software"
 shortName: "Retentioneering-Tools-License"
 
+alternativeNames:
+  - "Maxim Godzi Retentioneering Tools Software Non-Exclusive License 2023"
+
+otherIds: 
+  - "scancode:retentioneering-2023"

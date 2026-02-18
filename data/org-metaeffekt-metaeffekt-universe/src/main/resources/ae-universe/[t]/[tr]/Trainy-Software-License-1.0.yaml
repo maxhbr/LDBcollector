@@ -1,8 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
-# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2025. All rights reserved.
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Trainy Software License 1.0"
 category: "Trainy Software License"
 shortName: "Trainy-Software-License-1.0"
 
+otherIds: 
+  - "scancode:trainy-1.0"
