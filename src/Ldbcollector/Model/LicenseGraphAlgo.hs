@@ -14,6 +14,7 @@ import Data.Graph.Inductive.Graph qualified as G
 import Data.Graph.Inductive.PatriciaTree qualified as G
 import Data.Graph.Inductive.Query.DFS qualified as G
 import Data.Map qualified as Map
+import Data.Set qualified as Set
 import Data.Vector qualified as V
 import Ldbcollector.Model.LicenseFact
 import Ldbcollector.Model.LicenseGraph
@@ -47,22 +48,21 @@ filterSources sources = do
     )
 
 focusSequentially :: [G.Node] -> LicenseGraph -> (LicenseGraph, ([G.Node], [G.Node], [G.Node]))
-focusSequentially needles (LicenseGraph gr node_map node_map_rev facts _) =
+focusSequentially needles (LicenseGraph gr node_map node_map_rev facts sources) =
   let backed = Map.elems facts
-      backedNodes = mconcat $ map fst backed
-      backedEdges = mconcat $ map snd backed
+      backedNodesSet = mconcat $ map fst backed
+      backedEdgesSet = mconcat $ map snd backed
 
       onlyBackedFiltermapfun :: G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseGraphNode LicenseGraphEdge
       onlyBackedFiltermapfun (incoming, node, label, outgoing) =
         let edgeFilterFun :: G.Node -> G.Node -> LicenseGraphEdge -> Bool
             edgeFilterFun a b edgeLabel =
-              let potentialE = (fmap G.toEdge . find (== (a, b, edgeLabel)) . G.labEdges) gr
-               in case potentialE of
-                    Just e -> e `elem` backedEdges
-                    Nothing -> False
-         in if node `elem` backedNodes
+              let edge = G.toEdge (a, b, edgeLabel)
+               in edge `Set.member` backedEdgesSet
+         in if node `Set.member` backedNodesSet
               then Just (filter (\(edgeLabel, a) -> edgeFilterFun a node edgeLabel) incoming, node, label, filter (\(edgeLabel, b) -> edgeFilterFun node b edgeLabel) outgoing)
               else Nothing
+
       onlyPredicateFiltermapfun :: (LicenseGraphEdge -> Bool) -> G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseGraphNode LicenseGraphEdge
       onlyPredicateFiltermapfun predicate (incoming, node, a, outgoing) =
         let isFlippable (LGNameRelation Same, _) = True
@@ -71,23 +71,19 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts _) =
             outgoing' = nub $ filter (\(l, _) -> predicate l) outgoing
          in Just (incoming' <> filter isFlippable outgoing', node, a, outgoing' <> filter isFlippable incoming')
 
+      backedSubgraph = G.gfiltermap onlyBackedFiltermapfun gr
+
       reachableInSubgraph predicate needles' =
-        let subGraph =
-              G.gfiltermap
-                ( \ctx -> case onlyBackedFiltermapfun ctx of
-                    Just ctx' -> onlyPredicateFiltermapfun predicate ctx'
-                    Nothing -> Nothing
-                )
-                gr
-            reachableForNeedle needle = G.reachable needle subGraph ++ G.reachable needle (G.grev subGraph)
-         in nub $ concatMap reachableForNeedle needles'
+        let subGraph = G.gfiltermap (onlyPredicateFiltermapfun predicate) backedSubgraph
+            reachableForNeedle needle = Set.fromList (G.reachable needle subGraph ++ G.reachable needle (G.grev subGraph))
+         in Set.unions $ map reachableForNeedle needles'
       isLicenseExpandingRelation = (== LGNameRelation Same)
       isFactAndStatementRelation = (`elem` [LGAppliesTo]) -- , LGImpliedBy])
       isOtherRelation r = not (isLicenseExpandingRelation r || isFactAndStatementRelation r)
 
-      reachableViaLicenseExpandingRelation = reachableInSubgraph isLicenseExpandingRelation needles
-      reachableViaFactAndStatementRelation = reachableInSubgraph isFactAndStatementRelation reachableViaLicenseExpandingRelation
-      reachableOtherRelation = reachableInSubgraph isOtherRelation reachableViaLicenseExpandingRelation
+      reachableViaLicenseExpandingRelation = Set.toList $ reachableInSubgraph isLicenseExpandingRelation needles
+      reachableViaFactAndStatementRelation = Set.toList $ reachableInSubgraph isFactAndStatementRelation (reachableViaLicenseExpandingRelation)
+      reachableOtherRelation = Set.toList $ reachableInSubgraph isOtherRelation (reachableViaLicenseExpandingRelation)
       reachable = nub $ reachableViaFactAndStatementRelation <> reachableOtherRelation
 
       -- -- reachableViaIsLicenseExpandingRelation = reachableInSubgraph isLicenseExpandingRelation needles
@@ -98,12 +94,14 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts _) =
       --                     , reachableViaIsOtherRelation
       --                     ]
 
-      isReachable n = n `elem` reachable
+      reachableSet = Set.fromList reachable
+      isReachable n = n `Set.member` reachableSet
    in ( LicenseGraph
           { _gr = G.nfilter isReachable gr,
             _node_map = Map.filter isReachable node_map,
             _node_map_rev = Map.filterWithKey (\k _ -> isReachable k) node_map_rev,
-            _facts = facts
+            _facts = facts,
+            _sources = sources
           },
         ( reachableViaLicenseExpandingRelation,
           filter (not . (`elem` reachableViaLicenseExpandingRelation)) reachableOtherRelation,
