@@ -2,11 +2,13 @@
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
 
-module Ldbcollector.Model.LicenseGraphAlgo where
-
---   ( focus
---   , getFocused
---   ) where
+module Ldbcollector.Model.LicenseGraphAlgo
+  ( focus,
+    getFocused,
+    getLicenseNameClusterM,
+    getClusters,
+  )
+where
 
 import Control.Monad.State qualified as MTL
 import Data.Graph.Inductive.Basic qualified as G
