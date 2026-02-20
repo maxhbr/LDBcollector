@@ -18,9 +18,18 @@ import Ldbcollector.Sink.Metrics
 import Ldbcollector.Sink.NameClustersCSV
 import Ldbcollector.Source
 import Main.Utf8 (withUtf8)
-import System.Directory (getCurrentDirectory, getDirectoryContents)
+import Options.Applicative
+import System.Directory (getCurrentDirectory)
 import System.Environment (getArgs)
 import Prelude hiding (div, head, id)
+
+data Command
+  = Serve
+  | Generate Text
+  | Default Text
+  | Write [String] Text
+  | WriteNS String Text
+  deriving (Show)
 
 writeFilesByName :: FilePath -> LicenseName -> LicenseGraphM ()
 writeFilesByName outDir lic = do
@@ -50,12 +59,6 @@ writeSvgByNS outDir filteredLicenses selectedNS = do
     lift $ withTaskGroup (max 1 (numCaps - 3)) $ \group -> do
       _ <- mapConcurrently group (runLicenseGraphM' graph . writeFilesByName outDir) (V.toList filteredLicenses)
       return ()
-
--- writeLicensesCsv :: FilePath -> Vector LicenseName -> String -> LicenseGraphM ()
--- writeLicensesCsv outDir filteredLicenses selectedNS = do
---   let csv = outDir </> selectedNS <.> "csv"
---   timedLGM ("writing " ++ show (V.length filteredLicenses) ++ " licenses to " ++ csv) $ do
---     undefined
 
 curation :: Vector CurationItem
 curation =
@@ -91,7 +94,6 @@ curation =
               ("Artistic-1.0", ["Artistic 1.0 (original)"]),
               ("ClArtistic", ["Artistic (clarified)"]),
               ("Artistic-2.0", ["Artistic 2.0", "Artistic License (v. 2.0)"]),
-              -- link to missing versions in OpenChainPolicyTemplate
               ("UPL-1.0", ["UPL"]),
               ("LiLiQ-P-1.1", ["LiLiQ-P"]),
               ("LiLiQ-R-1.1", ["LiLiQ-R"]),
@@ -99,49 +101,89 @@ curation =
             ]
    in alternativeLNsCuration
 
-main'' :: [String] -> LicenseGraphM ()
-main'' args = do
-  case args of
-    ["--help"] -> lift $ putStrLn "Usage: ldbcollector [OPTION]\n\nOptions:\n  --help        Show this help message\n  --default     Generate and write SPDX licenses\n  --generate     Generate name clusters and JSON\n  --write NAME   Write files for specific license names\n  --writeNS NS   Write files for licenses in namespace\n  --serve        Start the web server"
-    ["--default"] -> do
-      main'' ["--generate", "--writeNS", "spdx"]
-    "--generate" : oArgs -> do
-      writeNameClustersCsv ("_generatedV2" </> "license-name-clusters.csv")
-      writeJSON ("_generatedV2" </> "yacp.json")
-      when (not (null oArgs)) $ do
-        main'' oArgs
-    "--write" : names -> mapM_ (writeFilesByName "_generatedV2" . fromString) names
-    "--writeNS" : ns : oArgs -> do
-      allLicenseNames <- MTL.gets getLicenseGraphLicenseNames
-      let filteredLicenses =
-            V.filter
-              ( \case
-                  LicenseName (Just licNS) name -> licNS == fromString ns && not ("LicenseRef-" `isInfixOf` T.unpack name)
-                  _ -> False
-              )
-              allLicenseNames
-      writeSvgByNS "_generatedV2" filteredLicenses (fromString ns)
-      writeOutputLicensesJSON "_generatedV2" (fromString ns)
-      --   writeLicensesCsv "_generatedV2" filteredLicenses ns
-      when (not (null oArgs)) $ do
-        main'' oArgs
-    ["--serve"] -> serve
-    _ -> serve
+executeCommand :: Command -> LicenseGraphM ()
+executeCommand = \case
+  Serve -> serve
+  Generate outDir -> do
+    writeNameClustersCsv (T.unpack outDir </> "license-name-clusters.csv")
+    writeJSON (T.unpack outDir </> "yacp.json")
+  Default outDir -> do
+    executeCommand (Generate outDir)
+    executeCommand (WriteNS "spdx" outDir)
+  Write names outDir -> mapM_ (writeFilesByName (T.unpack outDir) . fromString) names
+  WriteNS ns outDir -> do
+    allLicenseNames <- MTL.gets getLicenseGraphLicenseNames
+    let filteredLicenses =
+          V.filter
+            ( \case
+                LicenseName (Just licNS) name -> licNS == fromString ns && not ("LicenseRef-" `isInfixOf` T.unpack name)
+                _ -> False
+            )
+            allLicenseNames
+    writeSvgByNS (T.unpack outDir) filteredLicenses (fromString ns)
+    writeOutputLicensesJSON (T.unpack outDir) (fromString ns)
 
-main' :: [String] -> IO ()
-main' args = do
+optDir :: Parser Text
+optDir = strOption $ long "output-dir" <> short 'o' <> metavar "DIR" <> value "_generatedV2" <> help "Output directory for generated files"
+
+serveParser :: Parser Command
+serveParser = pure Serve
+
+generateParser :: Parser Command
+generateParser = Generate <$> optDir
+
+defaultParser :: Parser Command
+defaultParser = Default <$> optDir
+
+writeParser :: Parser Command
+writeParser =
+  fmap (\(names, mOutDir) -> Write names (fromMaybe "_generatedV2" mOutDir)) $
+    (,) <$> many (argument str (metavar "NAME")) <*> optional optDir
+
+writeNSParser :: Parser Command
+writeNSParser =
+  fmap (\(ns, mOutDir) -> WriteNS ns (fromMaybe "_generatedV2" mOutDir)) $
+    (,) <$> argument str (metavar "NAMESPACE") <*> optional optDir
+
+cmdParser :: Parser Command
+cmdParser =
+  subparser
+    ( command "serve" (info serveParser (progDesc "Start the web server"))
+        <> command "generate" (info generateParser (progDesc "Generate name clusters and JSON"))
+        <> command "default" (info defaultParser (progDesc "Generate and write SPDX licenses"))
+        <> command "write" (info writeParser (progDesc "Write files for specific license names"))
+        <> command "writeNS" (info writeNSParser (progDesc "Write files for licenses in namespace"))
+    )
+
+mainParser :: ParserInfo Command
+mainParser =
+  info
+    (versionOption <*> helper <*> cmdParser)
+    ( fullDesc
+        <> progDesc "License database collector and generator"
+        <> header "ldbcollector - Collect and generate license information"
+    )
+  where
+    versionOption :: Parser (a -> a)
+    versionOption =
+      infoOption
+        "ldbcollector 0.1.0.0"
+        (long "version" <> short 'v' <> help "Show version")
+
+main' :: Command -> IO ()
+main' cmd = do
   (_, licenseGraph) <- runLicenseGraphM $ do
     timedLGM "warmup" $ do
       timedLGM "applySources" $
         applySources curation
       writeMetrics
-    main'' args
+    executeCommand cmd
   return ()
 
 main :: IO ()
 main = withUtf8 $ do
   cwd <- getCurrentDirectory
   putStrLn $ "cwd: " ++ cwd
-  args <- getArgs
+  cmd <- execParser mainParser
   setupLogger True
-  main' args
+  main' cmd
