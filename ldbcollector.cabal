@@ -146,6 +146,7 @@ executable ldbcollector-exe
     , mtl
     , network-uri
     , opensource
+    , optparse-applicative
     , pretty-terminal
     , scotty
     , split
