@@ -1,0 +1,4 @@
+{
+  "name": "choosealicense.com",
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
+}
