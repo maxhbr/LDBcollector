@@ -121,7 +121,8 @@ main'' args = do
               )
               allLicenseNames
       writeSvgByNS "_generatedV2" filteredLicenses (fromString ns)
-    --   writeLicensesCsv "_generatedV2" filteredLicenses ns
+      writeOutputLicensesJSON "_generatedV2" (fromString ns)
+      --   writeLicensesCsv "_generatedV2" filteredLicenses ns
       when (not (null oArgs)) $ do
         main'' oArgs
     ["--serve"] -> serve
