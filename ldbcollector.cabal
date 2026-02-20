@@ -31,6 +31,7 @@ library
       Ldbcollector.Model.LicenseGraphAlgo
       Ldbcollector.Model.LicenseName
       Ldbcollector.Model.LicenseStatement
+      Ldbcollector.Model.OutputLicense
       Ldbcollector.Server
       Ldbcollector.Sink.GraphViz
       Ldbcollector.Sink.JSON

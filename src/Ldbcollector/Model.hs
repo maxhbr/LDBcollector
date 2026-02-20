@@ -10,4 +10,5 @@ import Ldbcollector.Model.LicenseGraph as X
 import Ldbcollector.Model.LicenseGraphAlgo as X
 import Ldbcollector.Model.LicenseName as X
 import Ldbcollector.Model.LicenseStatement as X
+import Ldbcollector.Model.OutputLicense as X
 import MyPrelude as X

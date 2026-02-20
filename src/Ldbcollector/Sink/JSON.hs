@@ -4,6 +4,7 @@
 
 module Ldbcollector.Sink.JSON
   ( writeJSON,
+    writeOutputLicensesJSON,
   )
 where
 
@@ -11,12 +12,11 @@ import Control.Monad.State qualified as MTL
 import Data.Aeson (ToJSON)
 import Data.Aeson.Text (encodeToLazyText)
 import Data.Graph.Inductive.Graph qualified as G
-import Data.Graph.Inductive.Monad qualified as G
-import Data.Graph.Inductive.PatriciaTree qualified as G
-import Data.Graph.Inductive.Query.DFS qualified as G
-import Data.Text.Lazy (Text)
-import Data.Text.Lazy.IO as I
+import Data.Text qualified as T
+import Data.Text.Lazy.IO qualified as I
+import Data.Vector qualified as V
 import Ldbcollector.Model
+import MyPrelude ((</>))
 
 writeJSON :: FilePath -> LicenseGraphM ()
 writeJSON json = do
@@ -33,3 +33,10 @@ writeJSON json = do
           . _gr
       )
   lift $ I.writeFile json (encodeToLazyText facts)
+
+writeOutputLicensesJSON :: FilePath -> Text -> LicenseGraphM ()
+writeOutputLicensesJSON outdir ns = do
+  let json= outdir </> (T.unpack ns) <.> "json"
+  infoLog $ "generate concise " ++ json
+  outputLicenses <- getOutputLicensesByNamespace ns
+  lift $ I.writeFile json (encodeToLazyText outputLicenses)
