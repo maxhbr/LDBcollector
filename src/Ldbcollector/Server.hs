@@ -206,6 +206,7 @@ htmlHeader licenseGraph typeColoringLookup paramMap = do
     H.div H.! A.class_ "tab" $ do
       H.button H.! A.class_ "tablinks active" H.! A.onclick "openTab(event, 'content-graph')" $ "Graph"
       H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-summary')" $ "Summary"
+      H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-output')" $ "Output"
       H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-policy')" $ "Policy"
     H.form H.! A.action "" $ do
       H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
@@ -303,6 +304,13 @@ summaryContent licenseGraph subgraph cluster = do
         )
         facts
 
+outputContent :: LicenseGraph -> LicenseGraphType -> LicenseNameCluster -> H.Markup
+outputContent licenseGraph subgraph cluster = do 
+    let outputLicense = toOutputLicense subgraph cluster
+    H.details $ do
+        H.summary "JSON:"
+        H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty outputLicense))))
+
 mainPage :: ParamMap -> LicenseGraph -> (LicenseGraphType, LicenseNameGraphType, (Digraph, SourceRef -> GV.Color), LicenseNameCluster) -> IO H.Html
 mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLookup), cluster) = do
   let licRaw = getLicRaw paramMap
@@ -313,6 +321,7 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
       H.div H.! A.class_ "content active" H.! A.id "content-graph" H.! A.style "display: block;" $ do
         dotSvgMarkup digraph
       H.div H.! A.class_ "content" H.! A.id "content-summary" $ summaryContent licenseGraph subgraph cluster
+      H.div H.! A.class_ "content" H.! A.id "content-output" $ outputContent licenseGraph subgraph cluster
       H.div H.! A.class_ "content" H.! A.id "content-policy" $ do
         "tbd."
       H.script H.! A.type_ "text/javascript" H.! A.src "/script.js" $
