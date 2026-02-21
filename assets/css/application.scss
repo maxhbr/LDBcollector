@@ -300,6 +300,8 @@ strong {
 }
 
 .license-rules li {
+  position: relative;
+  padding-left: 18px;
   margin-right: 15px;
   margin-bottom: 5px;
 }
@@ -308,17 +310,39 @@ strong {
   color: #444;
 }
 
-.license-sprite {
-  background-image: url(../img/license-sprite.png);
-  background-repeat: no-repeat;
+.source-marker {
   display: inline-block;
+  width: 16px;
+  text-align: center;
+  margin-right: 4px;
+  font-size: 0.875rem;
+  line-height: 1;
 }
 
-.sidebar .source span   { background-position: 0 0;     width: 16px; height: 12px; }
-.license-limitations span { background-position: -16px 0; width: 12px; height: 12px; }
-.license-permissions span { background-position: -28px 0; width: 12px; height: 12px; }
-.license-conditions span  { background-position: -40px 0; width: 12px; height: 12px; }
-.lite span { opacity: 0.5; }
+.license-marker {
+  display: inline-block;
+  width: 12px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.license-rules li .license-marker {
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+}
+.license-types td .license-marker { display: block; margin: 0 auto; }
+.license-types td .license-marker,
+.license-types dd .license-marker { font-size: 0.8125rem; }
+
+.license-permissions .license-marker { color: #298625; }
+.license-conditions .license-marker { color: #0d648a; }
+.license-limitations .license-marker { color: #812a28; }
+
+.license-permissions .lite .license-marker { color: rgba(41, 134, 37, 0.5); }
+.license-conditions .lite .license-marker { color: rgba(13, 100, 138, 0.5); }
+.license-limitations .lite .license-marker { color: rgba(129, 42, 40, 0.5); }
 
 .license-rules-sidebar li {
   float: none;
@@ -492,6 +516,7 @@ strong {
 // Selecting all the tooltip bodies to increase their font-size
 [class*="hint--"][aria-label]:after {
   font-size: 0.80rem;
+  font-weight: 400;
   text-shadow: none;
 }
 
@@ -552,13 +577,6 @@ strong {
     -webkit-background-size: 72px 182px;
     -moz-background-size: 72px 182px;
     background-size: 72px 182px;
-  }
-
-  .license-sprite {
-    background-image: url(../img/license-sprite@2x.png);
-    -webkit-background-size: 52px 12px;
-    -moz-background-size: 52px 12px;
-    background-size: 52px 12px;
   }
 
 }
