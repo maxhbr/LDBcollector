@@ -43,11 +43,11 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
           {% if r contains req %}
             <td class="license-{{ t }}" style="text-align:center">
               {% if r contains "--" %}
-                {% assign lite = " lite" %}
+                {% assign lite = "lite" %}
               {% else %}
                 {% assign lite = "" %}
               {% endif %}
-              <span class="{{ lite | strip }}" style="margin: auto;">
+              <span class="{{ lite }}" style="margin: auto;">
                 <span class="license-marker {{ r }}">{% if t == "permissions" %}✓{% elsif t == "conditions" %}ⓘ{% else %}✕{% endif %}</span>
               </span>
             </td>
