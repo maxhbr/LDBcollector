@@ -47,8 +47,8 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
               {% else %}
                 {% assign lite = "" %}
               {% endif %}
-              <span class="{{ r | append: lite }}" style="margin: auto;">
-                <span class="license-sprite {{ r }}"></span>
+              <span class="{{ lite | strip }}" style="margin: auto;">
+                <span class="license-marker {{ r }}">{% if t == "permissions" %}✓{% elsif t == "conditions" %}ⓘ{% else %}✕{% endif %}</span>
               </span>
             </td>
             {% assign seen_req = true %}
@@ -66,11 +66,11 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
 
 ## Legend
 
-<p>Open source licenses grant to the public <span class="license-permissions"><span class="license-sprite"></span></span> <b>permissions</b> to do things with licensed works which copyright or other "intellectual property" laws might otherwise disallow.</p>
+<p>Open source licenses grant to the public <span class="license-permissions"><span class="license-marker">✓</span></span> <b>permissions</b> to do things with licensed works which copyright or other "intellectual property" laws might otherwise disallow.</p>
 
-<p>Most open source licenses' grants of permissions are subject to compliance with <span class="license-conditions"><span class="license-sprite"></span></span> <b>conditions</b>.</p>
+<p>Most open source licenses' grants of permissions are subject to compliance with <span class="license-conditions"><span class="license-marker">ⓘ</span></span> <b>conditions</b>.</p>
 
-<p>Most open source licenses also have <span class="license-limitations"><span class="license-sprite"></span></span> <b>limitations</b> that usually disclaim warranty and liability, and sometimes expressly exclude patents or trademarks from licenses' grants.</p>
+<p>Most open source licenses also have <span class="license-limitations"><span class="license-marker">✕</span></span> <b>limitations</b> that usually disclaim warranty and liability, and sometimes expressly exclude patents or trademarks from licenses' grants.</p>
 
 {% for type in types %}
 ### {% if type == "permissions" %}Permissions{% elsif type == "conditions" %}Conditions{% else %}Limitations{% endif %}
@@ -85,8 +85,8 @@ If you're here to choose a license, **[start from the home page](/)** to see a f
       {% else %}
         {% assign lite = "" %}
       {% endif %}
-      <span class="{{ req | append: lite }}">
-        <span class="license-sprite {{ req }}"></span>
+      <span class="{{ lite | strip }}">
+        <span class="license-marker {{ req }}">{% if type == "permissions" %}✓{% elsif type == "conditions" %}ⓘ{% else %}✕{% endif %}</span>
       </span>
       {{ rule_obj.description }}
     </dd>

@@ -33,7 +33,7 @@
                   {% assign req = rule_obj.tag %}
                   {% if license[type] contains req %}
                     <li class="{{ req }}">
-                      <span class="license-sprite"></span>
+                      <span class="license-marker">{% if type == "permissions" %}✓{% elsif type == "conditions" %}ⓘ{% else %}✕{% endif %}</span>
                       {{ rule_obj.label }}
                     </li>
                   {% endif %}
