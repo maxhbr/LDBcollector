@@ -1,60 +1,97 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! command -v curl >/dev/null 2>&1; then
-  echo "curl is required to fetch GitHub Pages versions metadata"
-  exit 1
+for cmd in curl git sed; do
+  if ! command -v "${cmd}" >/dev/null 2>&1; then
+    echo "${cmd} is required for .devcontainer/post-create.sh"
+    exit 1
+  fi
+done
+
+if command -v apt-get >/dev/null 2>&1; then
+  packages=(
+    build-essential
+    cmake
+    pkg-config
+    libffi-dev
+    libyaml-dev
+    libssl-dev
+    zlib1g-dev
+    libreadline-dev
+    libgdbm-dev
+    libncurses-dev
+    libssh2-1-dev
+  )
+
+  missing_packages=()
+  for package in "${packages[@]}"; do
+    if ! dpkg-query -W -f='${Status}' "${package}" 2>/dev/null | grep -q 'install ok installed'; then
+      missing_packages+=("${package}")
+    fi
+  done
+
+  if [[ ${#missing_packages[@]} -gt 0 ]]; then
+    echo "Installing Ruby build dependencies: ${missing_packages[*]}"
+    if command -v sudo >/dev/null 2>&1; then
+      sudo apt-get update
+      sudo apt-get install -y "${missing_packages[@]}"
+    else
+      apt-get update
+      apt-get install -y "${missing_packages[@]}"
+    fi
+  fi
 fi
 
-if ! command -v ruby >/dev/null 2>&1; then
-  echo "ruby is required to parse GitHub Pages versions metadata"
-  exit 1
-fi
+echo "Initializing/updating git submodules"
+git submodule update --init --recursive
 
-pages_ruby_version="$({
-  curl -fsSL https://pages.github.com/versions.json
-} | ruby -rjson -e 'print JSON.parse(STDIN.read).fetch("ruby")')"
+versions_json="$(curl -fsSL https://pages.github.com/versions.json)" || {
+  echo "Failed to fetch https://pages.github.com/versions.json"
+  exit 1
+}
+
+pages_ruby_version="$(
+  printf '%s' "${versions_json}" |
+    sed -n 's/.*"ruby"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' |
+    head -n 1
+)"
+
+echo "GitHub Pages Ruby version: ${pages_ruby_version}"
 
 if [[ -z "${pages_ruby_version}" ]]; then
   echo "Could not determine Ruby version from https://pages.github.com/versions.json"
   exit 1
 fi
 
-echo "GitHub Pages Ruby version: ${pages_ruby_version}"
-
-if ! command -v git >/dev/null 2>&1; then
-  echo "git is required to initialize submodules"
-  exit 1
+if [[ ! -d "$HOME/.rbenv" ]]; then
+  git clone --depth 1 https://github.com/rbenv/rbenv.git "$HOME/.rbenv"
 fi
 
-echo "Initializing/updating git submodules"
-git submodule update --init --recursive
-
-# RVM scripts can reference internal variables before they are initialized,
-# which fails under `set -u` (for example: `_system_name: unbound variable`).
-# Temporarily disable nounset while sourcing and invoking RVM.
-nounset_was_set=0
-if [[ $- == *u* ]]; then
-  nounset_was_set=1
-  set +u
+if [[ ! -d "$HOME/.rbenv/plugins/ruby-build" ]]; then
+  mkdir -p "$HOME/.rbenv/plugins"
+  git clone --depth 1 https://github.com/rbenv/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
 fi
 
-if [[ -s /usr/local/rvm/scripts/rvm ]]; then
-  source /usr/local/rvm/scripts/rvm
-elif [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
-  source "$HOME/.rvm/scripts/rvm"
-else
-  echo "RVM was not found; unable to auto-install Ruby ${pages_ruby_version}"
-  exit 1
-fi
+export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+eval "$(rbenv init - bash)"
 
-rvm install "${pages_ruby_version}" --quiet-curl
-rvm use "${pages_ruby_version}"
-rvm alias create default "${pages_ruby_version}"
+rbenv install -s "${pages_ruby_version}"
+rbenv global "${pages_ruby_version}"
+rbenv rehash
 
-if [[ "${nounset_was_set}" -eq 1 ]]; then
-  set -u
-fi
+for profile in "$HOME/.bashrc" "$HOME/.zshrc"; do
+  if [[ -f "$profile" ]] && ! grep -q 'rbenv init - bash' "$profile"; then
+    {
+      echo
+      echo '# Load rbenv'
+      echo 'export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"'
+      echo 'eval "$(rbenv init - bash)"'
+    } >> "$profile"
+  fi
+done
 
 gem install bundler --no-document
+rbenv rehash
+mkdir -p "$HOME/.local/bin"
+ln -sf "$HOME/.rbenv/shims/bundle" "$HOME/.local/bin/bundle"
 bundle install
