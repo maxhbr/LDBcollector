@@ -105,11 +105,11 @@ func (l *LicenseDB) ConvertToLicenseResponseDTO() LicenseResponseDTO {
 	response.Url = *l.Url
 	response.User = l.User
 
-	obligations := []string{}
+	obligations := []uuid.UUID{}
 	for _, o := range l.Obligations {
-		obligations = append(obligations, *o.Topic)
+		obligations = append(obligations, o.Id)
 	}
-	response.Obligations = obligations
+	response.ObligationIds = obligations
 
 	return response
 }
@@ -129,7 +129,7 @@ type LicenseCreateDTO struct {
 	SpdxId        string                   `json:"spdx_id" validate:"required,spdxId" example:"MIT"`
 	Risk          *int64                   `json:"risk" validate:"min=0,max=5" example:"1"`
 	ExternalRef   LicenseDBSchemaExtension `json:"external_ref"`
-	Obligations   *[]uuid.UUID             `json:"obligations" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
+	ObligationIds []uuid.UUID              `json:"obligation_ids" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
 }
 
 func (dto *LicenseCreateDTO) ConvertToLicenseDB() LicenseDB {
@@ -148,14 +148,6 @@ func (dto *LicenseCreateDTO) ConvertToLicenseDB() LicenseDB {
 	l.Text = &dto.Text
 	l.TextUpdatable = dto.TextUpdatable
 	l.Url = dto.Url
-
-	if dto.Obligations != nil {
-		obligations := []Obligation{}
-		for _, id := range *dto.Obligations {
-			obligations = append(obligations, Obligation{Id: id})
-		}
-		l.Obligations = obligations
-	}
 
 	return l
 }
@@ -176,7 +168,7 @@ type LicenseResponseDTO struct {
 	SpdxId        string                   `json:"spdx_id" example:"MIT"`
 	Risk          int64                    `json:"risk" example:"1"`
 	ExternalRef   LicenseDBSchemaExtension `json:"external_ref"`
-	Obligations   []string                 `json:"obligations"`
+	ObligationIds []uuid.UUID              `json:"obligation_ids"`
 	User          User                     `json:"created_by"`
 	AddDate       time.Time                `json:"add_date"`
 }
@@ -196,7 +188,7 @@ type LicenseUpdateDTO struct {
 	SpdxId        *string                `json:"spdx_id" example:"MIT" validate:"omitempty,spdxId"`
 	Risk          *int64                 `json:"risk" validate:"omitempty,min=0,max=5" example:"1"`
 	ExternalRef   map[string]interface{} `json:"external_ref"`
-	Obligations   *[]Obligation          `json:"obligations"`
+	ObligationIds *[]uuid.UUID           `json:"obligation_ids"`
 }
 
 func (dto *LicenseUpdateDTO) ConvertToLicenseDB() LicenseDB {
@@ -234,11 +226,14 @@ type LicenseImportDTO struct {
 	SpdxId        *string                `json:"spdx_id" example:"MIT" validate:"omitempty,spdxId"`
 	Risk          *int64                 `json:"risk" validate:"omitempty,min=0,max=5" example:"1"`
 	ExternalRef   map[string]interface{} `json:"external_ref"`
-	Obligations   *[]Obligation          `json:"obligations"`
+	ObligationIds *[]uuid.UUID           `json:"obligation_ids"`
 }
 
 func (dto *LicenseImportDTO) ConvertToLicenseDB() LicenseDB {
 	var l LicenseDB
+	if dto.Id != nil {
+		l.Id = *dto.Id
+	}
 	l.Shortname = dto.Shortname
 	l.Active = dto.Active
 	l.Copyleft = dto.Copyleft
@@ -367,4 +362,10 @@ type LicenseResponse struct {
 	Status int                  `json:"status" example:"200"`
 	Data   []LicenseResponseDTO `json:"data"`
 	Meta   *PaginationMeta      `json:"paginationmeta"`
+}
+
+type LicenseMapObligationFormat struct {
+	Id    uuid.UUID `json:"id"`
+	Topic string    `json:"topic"`
+	Type  string    `json:"type"`
 }
