@@ -37,6 +37,7 @@ class ParamMapC a where
   getLicRaw :: a -> T.Text
   getLic :: a -> LicenseName
   getIsExcludeStmts :: a -> Bool
+  getIsExcludeHints :: a -> Bool
   getEnabledSources :: a -> [SourceRef]
   isSourceEnabled :: a -> SourceRef -> Bool
 
@@ -48,10 +49,14 @@ newtype ParamMap = ParamMap
 excludeStmts :: T.Text
 excludeStmts = "excludeStmts"
 
+excludeHints :: T.Text
+excludeHints = "excludeHints"
+
 instance ParamMapC ParamMap where
   getLicRaw = Map.findWithDefault "BSD-3-Clause" "license" . unParamMap
   getLic = fromText . T.toStrict . getLicRaw
-  getIsExcludeStmts = ("on" ==) . Map.findWithDefault "off" excludeStmts . unParamMap
+  getIsExcludeStmts = ("on" ==) . Map.findWithDefault "on" excludeStmts . unParamMap
+  getIsExcludeHints = ("on" ==) . Map.findWithDefault "off" excludeHints . unParamMap
   getEnabledSources = map (Source . T.unpack . fst) . filter (\(_, value) -> value == "on") . Map.assocs . unParamMap
   isSourceEnabled pm s =
     let enabledSources = getEnabledSources pm
@@ -149,35 +154,36 @@ printFacts factId licenseGraph = do
         facts
 
 extractSubgraph :: Bool -> ([G.Node], [G.Node], [G.Node]) -> LicenseGraphM (LicenseGraphType, LicenseNameGraphType, (Digraph, SourceRef -> GV.Color), LicenseNameCluster)
-extractSubgraph isExcludeStmts (needleNames, sameNames, otherNames) =
-    MTL.gets ((,,,) . _gr)
-      <*> getLicenseNameGraph
-      <*> ( do
-              when isExcludeStmts $
-                MTL.modify
-                  ( \lg@LicenseGraph {_gr = gr} ->
-                      lg
-                        { _gr =
-                            G.labfilter
-                              ( \case
-                                  LGName _ -> True
-                                  LGFact _ -> True
-                                  _ -> False
-                              )
-                              gr
-                        }
-                  )
-              getDigraph needleNames sameNames otherNames
-          )
-      <*> getLicenseNameClusterM (needleNames, sameNames, otherNames)
+extractSubgraph isExcludeHints (needleNames, sameNames, otherNames) =
+  MTL.gets ((,,,) . _gr)
+    <*> getLicenseNameGraph
+    <*> ( do
+            when isExcludeHints $
+              MTL.modify
+                ( \lg@LicenseGraph {_gr = gr} ->
+                    lg
+                      { _gr =
+                          G.gfiltermap
+                            ( \(incoming, node, label, outgoing) ->
+                                let notBetter (LGNameRelation Better, _) = False
+                                    notBetter _ = True
+                                 in Just (filter notBetter incoming, node, label, filter notBetter outgoing)
+                            )
+                            gr
+                      }
+                )
+            getDigraph needleNames sameNames otherNames
+        )
+    <*> getLicenseNameClusterM (needleNames, sameNames, otherNames)
 
 computeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, (Digraph, SourceRef -> GV.Color), LicenseNameCluster)
 computeSubgraph licenseGraph paramMap = do
   let licLN = LGName (getLic paramMap)
   let isExcludeStmts = getIsExcludeStmts paramMap
+  let isExcludeHints = getIsExcludeHints paramMap
   fmap fst . runLicenseGraphM' licenseGraph $ do
-    focus (getEnabledSources paramMap) (V.singleton licLN) $
-      \(needleNames, sameNames, otherNames, _statements) -> extractSubgraph isExcludeStmts (needleNames, sameNames, otherNames)
+    focus isExcludeStmts (getEnabledSources paramMap) (V.singleton licLN) $
+      \(needleNames, sameNames, otherNames, _statements) -> extractSubgraph isExcludeHints (needleNames, sameNames, otherNames)
 
 htmlHead' :: Bool -> T.Text -> H.Markup
 htmlHead' embedStyles title = do
@@ -186,8 +192,8 @@ htmlHead' embedStyles title = do
     H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
     H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     if embedStyles
-        then H.style $ H.toMarkup (bsToText stylesheet)
-        else H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
+      then H.style $ H.toMarkup (bsToText stylesheet)
+      else H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
     -- H.script H.! A.src "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" $ pure ()
     H.script H.! A.type_ "text/javascript" H.! A.src "https://d3js.org/d3.v7.min.js" $ pure ()
     H.script H.! A.type_ "text/javascript" H.! A.src "https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js" $ pure ()
@@ -248,6 +254,16 @@ htmlHeader licenseGraph typeColoringLookup paramMap = do
                     else mempty
                 )
           H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
+        H.li $ do
+          H.input
+            H.! A.type_ "checkbox"
+            H.! A.name (H.toValue excludeHints)
+            H.! A.value "on"
+            H.! ( if getIsExcludeHints paramMap
+                    then A.checked "checked"
+                    else mempty
+                )
+          H.label H.! A.for (H.toValue excludeHints) $ H.toMarkup excludeHints
       H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
 
       H.h3 "Other Links"
@@ -270,46 +286,46 @@ dotSvgMarkup digraph =
           "    .renderDot(document.getElementById('graph.dot').textContent);"
 
 summaryContent :: LicenseGraph -> LicenseGraphType -> LicenseNameCluster -> H.Markup
-summaryContent licenseGraph subgraph cluster = do 
-    let facts =
-          ( mapMaybe
-              ( \case
-                  LGFact f -> Just f
-                  _ -> Nothing
-                  . snd
-              )
-              . G.labNodes
-          )
-            subgraph
-    H.h1 "Summary"
-    licenseFactsImplicationsToMarkup facts cluster
-    H.h1 "by Source"
-    H.ul $
-      mapM_
-        ( \fact -> H.li $ do
-            let factId = getFactId fact
-            H.h3 $ do
-              case getSourceOfFact licenseGraph factId of
-                Just source -> do
-                  H.a H.! A.href (H.toValue $ "/source" </> show source) $ H.toMarkup (show source)
-                  ": "
-                Nothing -> pure ()
-              licenseFactUrl fact $ H.toMarkup factId
-              " for "
-              lnToA Nothing (getMainLicenseName fact)
-            toMarkup fact
-            H.details $ do
-              H.summary "JSON:"
-              H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty fact))))
+summaryContent licenseGraph subgraph cluster = do
+  let facts =
+        ( mapMaybe
+            ( \case
+                LGFact f -> Just f
+                _ -> Nothing
+                . snd
+            )
+            . G.labNodes
         )
-        facts
+          subgraph
+  H.h1 "Summary"
+  licenseFactsImplicationsToMarkup facts cluster
+  H.h1 "by Source"
+  H.ul $
+    mapM_
+      ( \fact -> H.li $ do
+          let factId = getFactId fact
+          H.h3 $ do
+            case getSourceOfFact licenseGraph factId of
+              Just source -> do
+                H.a H.! A.href (H.toValue $ "/source" </> show source) $ H.toMarkup (show source)
+                ": "
+              Nothing -> pure ()
+            licenseFactUrl fact $ H.toMarkup factId
+            " for "
+            lnToA Nothing (getMainLicenseName fact)
+          toMarkup fact
+          H.details $ do
+            H.summary "JSON:"
+            H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty fact))))
+      )
+      facts
 
 outputContent :: LicenseGraph -> LicenseGraphType -> LicenseNameCluster -> H.Markup
-outputContent licenseGraph subgraph cluster = do 
-    let outputLicense = toOutputLicense subgraph cluster
-    H.details $ do
-        H.summary "JSON:"
-        H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty outputLicense))))
+outputContent licenseGraph subgraph cluster = do
+  let outputLicense = toOutputLicense subgraph cluster
+  H.details $ do
+    H.summary "JSON:"
+    H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty outputLicense))))
 
 mainPage :: ParamMap -> LicenseGraph -> (LicenseGraphType, LicenseNameGraphType, (Digraph, SourceRef -> GV.Color), LicenseNameCluster) -> IO H.Html
 mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLookup), cluster) = do
@@ -327,7 +343,7 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
       H.script H.! A.type_ "text/javascript" H.! A.src "/script.js" $
         pure ()
 
-singleHtml :: T.Text ->  LicenseGraph -> LicenseGraphType -> LicenseNameCluster -> H.Html
+singleHtml :: T.Text -> LicenseGraph -> LicenseGraphType -> LicenseNameCluster -> H.Html
 singleHtml licRaw licenseGraph subgraph cluster =
   H.html $ do
     htmlHead' True ("ldbcollector: " <> licRaw)
@@ -342,9 +358,9 @@ writeSingleHtmlIO html licRaw licenseGraph subgraph cluster = do
 
 writeSingleHtml :: FilePath -> T.Text -> ([G.Node], [G.Node], [G.Node]) -> LicenseGraphM ()
 writeSingleHtml html licRaw (needleNames, sameNames, otherNames) = do
-    licenseGraph <- MTL.get
-    (subgraph, lnsubgraph, (digraph, typeColoringLookup), cluster) <- extractSubgraph False (needleNames, sameNames, otherNames)
-    lift $ writeSingleHtmlIO html licRaw licenseGraph subgraph cluster
+  licenseGraph <- MTL.get
+  (subgraph, lnsubgraph, (digraph, typeColoringLookup), cluster) <- extractSubgraph False (needleNames, sameNames, otherNames)
+  lift $ writeSingleHtmlIO html licRaw licenseGraph subgraph cluster
 
 getMyOptions :: IO S.Options
 getMyOptions = do

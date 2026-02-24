@@ -35,9 +35,10 @@ instance ToJSON OutputLicense where
         "otherLicenseNames" .= olns,
         "otherLicenseNameHints" .= olnhs,
         "licenseType" .= show lt,
-        "complex" .= object [
-          "licenseType" .= lt
-        ]
+        "complex"
+          .= object
+            [ "licenseType" .= lt
+            ]
       ]
 
 toOutputLicense :: LicenseGraphType -> LicenseNameCluster -> OutputLicense
@@ -81,7 +82,7 @@ getAllOutputLicenses = do
       result <-
         lift . try . fmap fst $
           runLicenseGraphM' frozen $
-            focus mempty (V.singleton (LGName lic)) $
+            focus False mempty (V.singleton (LGName lic)) $
               \(needleNames, sameNames, otherNames, _statements) -> do
                 Just <$> getOutputLicense (needleNames, sameNames, otherNames)
       case result of
@@ -106,7 +107,7 @@ getOutputLicensesByNamespace ns = do
       result <-
         lift . try . fmap fst $
           runLicenseGraphM' frozen $
-            focus mempty (V.singleton (LGName lic)) $
+            focus False mempty (V.singleton (LGName lic)) $
               \(needleNames, sameNames, otherNames, _statements) -> do
                 Just <$> getOutputLicense (needleNames, sameNames, otherNames)
       case result of

@@ -46,7 +46,7 @@ writeFilesByName outDir lic = do
       html = dot -<.> "html"
   lift $ createDirectoryIfMissing True (dropFileName dot)
   infoLog $ "generate " ++ dot ++ " ..."
-  focus mempty (V.singleton (LGName lic)) $
+  focus False mempty (V.singleton (LGName lic)) $
     \(needleNames, sameNames, otherNames, _statements) -> do
       writeJSON json
       writeGraphViz needleNames sameNames otherNames dot
