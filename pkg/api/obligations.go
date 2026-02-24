@@ -10,15 +10,15 @@ package api
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"net/http"
 	"path/filepath"
 	"reflect"
+	"slices"
 	"strconv"
 	"strings"
 	"time"
-
-	"golang.org/x/exp/slices"
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
@@ -26,7 +26,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
 )
 
 // GetAllObligation retrieves a list of all obligation records
@@ -195,25 +194,11 @@ func CreateObligation(c *gin.Context) {
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		ob := obligation.ConvertToObligation()
-		result := tx.Omit("Licenses").Create(&ob)
-
-		if result.Error != nil {
+		if err := tx.Omit("Licenses").Create(&ob).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
 				Message:   "Failed to create obligation",
-				Error:     result.Error.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusBadRequest, er)
-			return result.Error
-		}
-
-		if err := addChangelogsForObligation(tx, userId, &ob, &models.Obligation{}); err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusBadRequest,
-				Message:   "Failed to create obligation",
-				Error:     result.Error.Error(),
+				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
@@ -221,39 +206,60 @@ func CreateObligation(c *gin.Context) {
 			return err
 		}
 
-		var combinedMapErrors string
-		var removeLicenses, insertLicenses []uuid.UUID
-		insertLicenses = obligation.LicenseIds
-		_, errs := utils.PerformObligationMapActions(tx, userId, &ob, removeLicenses, insertLicenses)
+		insertLicenses := obligation.LicenseIds
+		errs := utils.PerformObligationMapActions(tx, userId, &ob, insertLicenses)
 		if len(errs) != 0 {
+			var combinedMapErrors strings.Builder
 			for _, err := range errs {
 				if err != nil {
-					combinedMapErrors += fmt.Sprintf("%s\n", err)
+					fmt.Fprintf(&combinedMapErrors, "%s\n", err)
 				}
 			}
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "Failed to create obligation",
+				Error:     combinedMapErrors.String(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return errors.New(combinedMapErrors.String())
 		}
 
-		if combinedMapErrors == "" {
-			obdto := ob.ConvertToObligationResponseDTO()
-			res := models.ObligationResponse{
-				Data:   []models.ObligationResponseDTO{obdto},
-				Status: http.StatusOK,
-				Meta: models.PaginationMeta{
-					ResourceCount: 1,
-				},
+		if err := tx.Joins("Classification").Joins("Type").Preload("Licenses").First(&ob, ob.Id).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to create obligation",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
 			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
+		}
 
-			c.JSON(http.StatusCreated, res)
-		} else {
+		if err := addChangelogsForObligation(tx, userId, &ob, &models.Obligation{}); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
-				Message:   "Obligation created successfully but license association failed",
-				Error:     combinedMapErrors,
+				Message:   "Failed to create obligation",
+				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 			c.JSON(http.StatusBadRequest, er)
+			return err
 		}
+
+		obdto := ob.ConvertToObligationResponseDTO()
+		res := models.ObligationResponse{
+			Data:   []models.ObligationResponseDTO{obdto},
+			Status: http.StatusOK,
+			Meta: models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+
+		c.JSON(http.StatusCreated, res)
 
 		return nil
 	})
@@ -278,13 +284,24 @@ func CreateObligation(c *gin.Context) {
 func UpdateObligation(c *gin.Context) {
 	var updates models.ObligationUpdateDTO
 	var oldObligation models.Obligation
-	userId := c.MustGet("userId").(uuid.UUID)
 
 	obligationId, err := uuid.Parse(c.Param("id"))
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   fmt.Sprintf("no obligation with id '%s' exists", obligationId.String()),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	if err := c.ShouldBindJSON(&updates); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "invalid json body",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -305,18 +322,6 @@ func UpdateObligation(c *gin.Context) {
 		return
 	}
 
-	if err := c.ShouldBindJSON(&updates); err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "invalid json body",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
-
 	newObligation := updates.ConvertToObligation()
 	if newObligation.Text != nil && *oldObligation.Text != *newObligation.Text && !*oldObligation.TextUpdatable {
 		er := models.LicenseError{
@@ -330,7 +335,6 @@ func UpdateObligation(c *gin.Context) {
 		return
 	}
 	newObligation.Id = oldObligation.Id
-	var combinedMapErrors string
 
 	if err := db.DB.Transaction(func(tx *gorm.DB) error {
 		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
@@ -342,36 +346,26 @@ func UpdateObligation(c *gin.Context) {
 			return err
 		}
 
-		if err := tx.Joins("Type").Joins("Classification").First(&newObligation).Error; err != nil {
+		userId := c.MustGet("userId").(uuid.UUID)
+		if updates.LicenseIds != nil {
+			errs := utils.PerformObligationMapActions(tx, userId, &oldObligation, *updates.LicenseIds)
+			if len(errs) != 0 {
+				var combinedMapErrors strings.Builder
+				for _, err := range errs {
+					if err != nil {
+						fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+					}
+				}
+				return errors.New(combinedMapErrors.String())
+			}
+		}
+
+		if err := tx.Joins("Type").Joins("Classification").Preload("Licenses").First(&newObligation).Error; err != nil {
 			return err
 		}
 
 		if err := addChangelogsForObligation(tx, userId, &newObligation, &oldObligation); err != nil {
 			return err
-		}
-
-		if updates.LicenseIds == nil {
-			return nil
-		}
-
-		if err := tx.Where(&models.Obligation{Id: oldObligation.Id}).Preload("Licenses").First(&oldObligation).Error; err != nil {
-			return nil
-		}
-		var licenseIds, removeLicenses, insertLicenses []uuid.UUID
-
-		licenseIds = slices.Compact(*updates.LicenseIds)
-
-		utils.GenerateDiffForReplacingLicenses(&oldObligation, licenseIds, &removeLicenses, &insertLicenses)
-
-		userId := c.MustGet("userId").(uuid.UUID)
-		_, errs := utils.PerformObligationMapActions(tx, userId, &oldObligation, removeLicenses, insertLicenses)
-		if len(errs) != 0 {
-			for _, err := range errs {
-				if err != nil {
-					combinedMapErrors += fmt.Sprintf("%s\n", err)
-				}
-			}
-			return nil
 		}
 
 		return nil
@@ -386,28 +380,16 @@ func UpdateObligation(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
+	obDto := newObligation.ConvertToObligationResponseDTO()
 
-	if combinedMapErrors != "" {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "Obligation created successfully but license association failed",
-			Error:     combinedMapErrors,
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-	} else {
-		obDto := newObligation.ConvertToObligationResponseDTO()
-
-		res := models.ObligationResponse{
-			Data:   []models.ObligationResponseDTO{obDto},
-			Status: http.StatusOK,
-			Meta: models.PaginationMeta{
-				ResourceCount: 1,
-			},
-		}
-		c.JSON(http.StatusOK, res)
+	res := models.ObligationResponse{
+		Data:   []models.ObligationResponseDTO{obDto},
+		Status: http.StatusOK,
+		Meta: models.PaginationMeta{
+			ResourceCount: 1,
+		},
 	}
+	c.JSON(http.StatusOK, res)
 }
 
 // DeleteObligation marks an existing obligation record as inactive
@@ -602,16 +584,17 @@ func ImportObligations(c *gin.Context) {
 		oldObligation := ob.ConvertToObligation()
 		newObligation := oldObligation
 		_ = db.DB.Transaction(func(tx *gorm.DB) error {
-			// If id not present in json object, create a new one.
+			// (a) If id not present in json object, create a new one.
 			//
-			// If id present in json object, but entry not found in database (can arise in cases when
+			// (b) If id present in json object, but entry not found in database (can arise in cases when
 			// license/obligation file exported from one LicenseDb instance is imported in another instance)
 			// then create a new one
 			//
-			// If id present in json object and entry found in database, update the database with field values
+			// (c) If id present in json object and entry found in database, update the database with field values
 			// of the json object
 			if ob.Id == nil {
-				result := tx.Create(&oldObligation)
+				// Case (a)
+				result := tx.Omit("Licenses").Create(&oldObligation)
 				if result.Error != nil {
 					res.Data = append(res.Data, models.LicenseError{
 						Status:    http.StatusBadRequest,
@@ -620,6 +603,33 @@ func ImportObligations(c *gin.Context) {
 						Path:      c.Request.URL.Path,
 						Timestamp: time.Now().Format(time.RFC3339),
 					})
+					return err
+				}
+
+				var message string
+				if ob.LicenseIds != nil {
+					userId := c.MustGet("userId").(uuid.UUID)
+					errs := utils.PerformObligationMapActions(tx, userId, &oldObligation, *ob.LicenseIds)
+					if len(errs) != 0 {
+						var combinedMapErrors strings.Builder
+						for _, err := range errs {
+							if err != nil {
+								fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+							}
+						}
+						message = fmt.Sprintf("Obligation created successfully but there was en error creating license associations: %s", combinedMapErrors.String())
+					}
+				}
+
+				if err := tx.Joins("Classification").Joins("Type").Preload("Licenses").First(&oldObligation, oldObligation.Id).Error; err != nil {
+					er := models.LicenseError{
+						Status:    http.StatusInternalServerError,
+						Message:   "Failed to create obligation",
+						Error:     err.Error(),
+						Path:      c.Request.URL.Path,
+						Timestamp: time.Now().Format(time.RFC3339),
+					}
+					c.JSON(http.StatusInternalServerError, er)
 					return err
 				}
 
@@ -633,88 +643,162 @@ func ImportObligations(c *gin.Context) {
 					})
 					return err
 				}
-				// case when obligation doesn't exist in database and is inserted
+				if message == "" {
+					message = "obligation created successfully"
+				}
 				res.Data = append(res.Data, models.ObligationImportStatus{
 					Data:    models.ObligationId{Id: oldObligation.Id, Topic: *oldObligation.Topic},
 					Status:  http.StatusCreated,
-					Message: "obligation created successfully",
+					Message: message,
 				})
 			} else {
 				if err := tx.Where(&models.Obligation{Id: oldObligation.Id}).First(&oldObligation).Error; err != nil {
-					res.Data = append(res.Data, models.LicenseError{
-						Status:    http.StatusInternalServerError,
-						Message:   "Error updating license associations",
-						Error:     err.Error(),
-						Path:      c.Request.URL.Path,
-						Timestamp: time.Now().Format(time.RFC3339),
-					})
-					return nil
-				}
-				newObligation.Id = oldObligation.Id
-				if err := tx.Omit("Licenses", "Topic").Clauses(clause.Returning{}).Updates(&newObligation).Error; err != nil {
-					res.Data = append(res.Data, models.LicenseError{
-						Status:    http.StatusBadRequest,
-						Message:   fmt.Sprintf("Failed to update obligation: %s", err.Error()),
-						Error:     *ob.Topic,
-						Path:      c.Request.URL.Path,
-						Timestamp: time.Now().Format(time.RFC3339),
-					})
-					return err
-				}
-				if err := addChangelogsForObligation(tx, userId, &newObligation, &oldObligation); err != nil {
-					res.Data = append(res.Data, models.LicenseError{
-						Status:    http.StatusInternalServerError,
-						Message:   "Failed to update license",
-						Error:     err.Error(),
-						Path:      c.Request.URL.Path,
-						Timestamp: time.Now().Format(time.RFC3339),
-					})
-					return err
-				}
+					if errors.Is(err, gorm.ErrRecordNotFound) {
+						result := tx.Omit("Licenses").Create(&oldObligation)
+						if result.Error != nil {
+							res.Data = append(res.Data, models.LicenseError{
+								Status:    http.StatusBadRequest,
+								Message:   fmt.Sprintf("Failed to create/update obligation: %s", result.Error.Error()),
+								Error:     *ob.Topic,
+								Path:      c.Request.URL.Path,
+								Timestamp: time.Now().Format(time.RFC3339),
+							})
+							return err
+						}
 
-				res.Data = append(res.Data, models.ObligationImportStatus{
-					Data:    models.ObligationId{Id: *ob.Id, Topic: *ob.Topic},
-					Status:  http.StatusOK,
-					Message: "obligation updated successfully",
-				})
-			}
+						var message string
+						if ob.LicenseIds != nil {
+							userId := c.MustGet("userId").(uuid.UUID)
+							errs := utils.PerformObligationMapActions(tx, userId, &oldObligation, *ob.LicenseIds)
+							if len(errs) != 0 {
+								var combinedMapErrors strings.Builder
+								for _, err := range errs {
+									if err != nil {
+										fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+									}
+								}
+								message = fmt.Sprintf("Obligation created successfully but there was en error creating license associations: %s", combinedMapErrors.String())
+							}
+						}
 
-			if ob.LicenseIds == nil {
-				return nil
-			}
-			// do not return error so that obligations
-			// are created/updated even if the association fails(license is not found etc)
-			if err := tx.Where(&models.Obligation{Id: oldObligation.Id}).Preload("Licenses").First(&oldObligation).Error; err != nil {
-				return nil
-			}
-			var licenseIds, removeLicenses, insertLicenses []uuid.UUID
+						if err := tx.Joins("Classification").Joins("Type").Preload("Licenses").First(&oldObligation, oldObligation.Id).Error; err != nil {
+							res.Data = append(res.Data, models.LicenseError{
+								Status:    http.StatusInternalServerError,
+								Message:   "Failed to update license",
+								Error:     err.Error(),
+								Path:      c.Request.URL.Path,
+								Timestamp: time.Now().Format(time.RFC3339),
+							})
+							return err
+						}
 
-			licenseIds = slices.Compact(*ob.LicenseIds)
-
-			utils.GenerateDiffForReplacingLicenses(&oldObligation, licenseIds, &removeLicenses, &insertLicenses)
-
-			userId := c.MustGet("userId").(uuid.UUID)
-			_, errs := utils.PerformObligationMapActions(tx, userId, &oldObligation, removeLicenses, insertLicenses)
-			if len(errs) != 0 {
-				var combinedErrors string
-				for _, err := range errs {
-					if err != nil {
-						combinedErrors += fmt.Sprintf("%s\n", err)
+						if err := addChangelogsForObligation(tx, userId, &oldObligation, &models.Obligation{}); err != nil {
+							res.Data = append(res.Data, models.LicenseError{
+								Status:    http.StatusInternalServerError,
+								Message:   "Failed to update license",
+								Error:     err.Error(),
+								Path:      c.Request.URL.Path,
+								Timestamp: time.Now().Format(time.RFC3339),
+							})
+							return err
+						}
+						if message == "" {
+							message = "obligation created successfully"
+						}
+						res.Data = append(res.Data, models.ObligationImportStatus{
+							Data:    models.ObligationId{Id: oldObligation.Id, Topic: *oldObligation.Topic},
+							Status:  http.StatusCreated,
+							Message: message,
+						})
+					} else {
+						res.Data = append(res.Data, models.LicenseError{
+							Status:    http.StatusInternalServerError,
+							Message:   "Error updating license associations",
+							Error:     err.Error(),
+							Path:      c.Request.URL.Path,
+							Timestamp: time.Now().Format(time.RFC3339),
+						})
+						return nil
 					}
+				} else {
+					if newObligation.Text != nil && *oldObligation.Text != *newObligation.Text && !*oldObligation.TextUpdatable {
+						res.Data = append(res.Data, models.LicenseError{
+							Status:    http.StatusBadRequest,
+							Message:   "Text is not updatable",
+							Error:     "Field `text_updatable` needs to be true to update the text",
+							Path:      c.Request.URL.Path,
+							Timestamp: time.Now().Format(time.RFC3339),
+						})
+						return errors.New("field `text_updatable` needs to be true to update the text")
+					}
+					if err := tx.Model(&models.Obligation{}).Where(models.Obligation{Id: oldObligation.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", ob.ExternalRef)).Error; err != nil {
+						res.Data = append(res.Data, models.LicenseError{
+							Status:    http.StatusInternalServerError,
+							Message:   "Failed to update license",
+							Error:     err.Error(),
+							Path:      c.Request.URL.Path,
+							Timestamp: time.Now().Format(time.RFC3339),
+						})
+						return err
+					}
+
+					if err := tx.Omit("ExternalRef", "Licenses", "Topic").Updates(&newObligation).Error; err != nil {
+						res.Data = append(res.Data, models.LicenseError{
+							Status:    http.StatusInternalServerError,
+							Message:   "Failed to update license",
+							Error:     err.Error(),
+							Path:      c.Request.URL.Path,
+							Timestamp: time.Now().Format(time.RFC3339),
+						})
+						return err
+					}
+
+					var message string
+					if ob.LicenseIds != nil {
+						userId := c.MustGet("userId").(uuid.UUID)
+						errs := utils.PerformObligationMapActions(tx, userId, &oldObligation, *ob.LicenseIds)
+						if len(errs) != 0 {
+							var combinedMapErrors strings.Builder
+							for _, err := range errs {
+								if err != nil {
+									fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+								}
+							}
+							message = fmt.Sprintf("Obligation updated successfully but there was en error updating license associations: %s", combinedMapErrors.String())
+						}
+					}
+
+					if err := tx.Joins("Type").Joins("Classification").Preload("Licenses").First(&newObligation).Error; err != nil {
+						res.Data = append(res.Data, models.LicenseError{
+							Status:    http.StatusInternalServerError,
+							Message:   "Failed to update license",
+							Error:     err.Error(),
+							Path:      c.Request.URL.Path,
+							Timestamp: time.Now().Format(time.RFC3339),
+						})
+						return err
+					}
+
+					if err := addChangelogsForObligation(tx, userId, &newObligation, &oldObligation); err != nil {
+						res.Data = append(res.Data, models.LicenseError{
+							Status:    http.StatusInternalServerError,
+							Message:   "Failed to update license",
+							Error:     err.Error(),
+							Path:      c.Request.URL.Path,
+							Timestamp: time.Now().Format(time.RFC3339),
+						})
+						return err
+					}
+
+					if message == "" {
+						message = "obligation updated successfully"
+					}
+					res.Data = append(res.Data, models.ObligationImportStatus{
+						Data:    models.ObligationId{Id: *ob.Id, Topic: *ob.Topic},
+						Status:  http.StatusOK,
+						Message: message,
+					})
 				}
-				res.Data = append(res.Data, models.LicenseError{
-					Status:    http.StatusInternalServerError,
-					Message:   "Error updating license associations",
-					Error:     combinedErrors,
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				})
-			} else {
-				res.Data = append(res.Data, models.ObligationImportStatus{
-					Data:    models.ObligationId{Id: oldObligation.Id, Topic: *ob.Topic},
-					Status:  http.StatusOK,
-					Message: "licenses associated with obligations successfully",
-				})
 			}
 
 			return nil
@@ -771,6 +855,17 @@ func ExportObligations(c *gin.Context) {
 // addChangelogsForObligation adds changelogs for the updated fields on obligation update
 func addChangelogsForObligation(tx *gorm.DB, userId uuid.UUID,
 	newObligation, oldObligation *models.Obligation) error {
+	uuidsToStr := func(ids []models.LicenseDB) string {
+		if len(ids) == 0 {
+			return ""
+		}
+		s := make([]string, 0, len(ids))
+		for _, lic := range ids {
+			s = append(s, lic.Id.String())
+		}
+		slices.Sort(s)
+		return strings.Join(s, ", ")
+	}
 	var changes []models.ChangeLog
 
 	var oldType, newType *string
@@ -827,6 +922,11 @@ func addChangelogsForObligation(tx *gorm.DB, userId uuid.UUID,
 			utils.AddChangelog(fmt.Sprintf("External Reference %s", fieldName), oldFieldPtr, newFieldPtr, &changes)
 		}
 	}
+
+	oldVal := uuidsToStr(oldObligation.Licenses)
+	newVal := uuidsToStr(newObligation.Licenses)
+
+	utils.AddChangelog("Licenses", &oldVal, &newVal, &changes)
 
 	if len(changes) != 0 {
 		audit := models.Audit{

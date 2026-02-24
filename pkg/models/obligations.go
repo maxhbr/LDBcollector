@@ -305,7 +305,9 @@ type ObligationFileDTO struct {
 
 func (obDto *ObligationFileDTO) ConvertToObligation() Obligation {
 	var o Obligation
-
+	if obDto.Id != nil {
+		o.Id = *obDto.Id
+	}
 	o.Topic = obDto.Topic
 	if obDto.Type != nil {
 		o.Type = &ObligationType{Type: *obDto.Type}

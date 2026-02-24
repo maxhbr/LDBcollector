@@ -76,7 +76,7 @@ func TestCreateObligation(t *testing.T) {
 		}
 
 		w := makeRequest("POST", "/obligations", dto, true)
-		assert.Equal(t, http.StatusBadRequest, w.Code)
+		assert.Equal(t, http.StatusNotFound, w.Code)
 
 		var res models.LicenseError
 		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
@@ -84,7 +84,7 @@ func TestCreateObligation(t *testing.T) {
 			return
 		}
 
-		expectedError := "Obligation created successfully but license association failed"
+		expectedError := "Failed to create obligation"
 		assert.Equal(t, expectedError, res.Message)
 	})
 
@@ -199,6 +199,50 @@ func TestUpdateObligation(t *testing.T) {
 		assert.Equal(t, http.StatusNotFound, res.Status)
 	})
 
+	t.Run("UpdateLicenseAssociations", func(t *testing.T) {
+		w := makeRequest("GET", "/licenses", nil, true)
+		assert.Equal(t, http.StatusOK, w.Code)
+
+		var res models.LicenseResponse
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Errorf("Error unmarshalling JSON: %v", err)
+			return
+		}
+
+		updateDTO := models.ObligationUpdateDTO{
+			LicenseIds: ptr([]uuid.UUID{res.Data[0].Id, res.Data[1].Id}),
+		}
+
+		assertObligationUpdated(t, id, updateDTO)
+
+		updateDTO = models.ObligationUpdateDTO{
+			LicenseIds: ptr([]uuid.UUID{res.Data[2].Id}),
+		}
+
+		assertObligationUpdated(t, id, updateDTO)
+
+		updateDTO = models.ObligationUpdateDTO{
+			LicenseIds: ptr([]uuid.UUID{}),
+		}
+
+		assertObligationUpdated(t, id, updateDTO)
+	})
+
+	t.Run("UpdateLicenseAssociationsWithNonExistentLicense", func(t *testing.T) {
+		updateDTO := models.ObligationUpdateDTO{
+			LicenseIds: ptr([]uuid.UUID{uuid.New()}),
+		}
+
+		w := makeRequest("PATCH", "/obligations/"+id.String(), updateDTO, true)
+
+		var res models.LicenseError
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Errorf("Error unmarshalling JSON: %v", err)
+			return
+		}
+
+		assert.Equal(t, http.StatusBadRequest, res.Status)
+	})
 }
 
 func TestDeleteObligation(t *testing.T) {
