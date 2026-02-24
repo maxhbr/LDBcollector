@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Semgrep Rules License 1.0"
+category: "Semgrep Rules License"
+shortName: "Semgrep-Rules-1.0"
+
+alternativeNames:
+  - "Semgrep Rules License v.1.0"
+  - "Semgrep Rules License 1.0"
+  - "semgrep-rules-1.0"
+  - "Semgrep-Rules-1.0"
+
+otherIds: 
+  - "scancode:semgrep-rules-1.0"

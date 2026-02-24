@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Samba Developer's Declaration 1.0"
+category: "Samba Developer's Declaration"
+shortName: "Samba-DC-1.0"
+
+alternativeNames:
+  - "\"Samba Developer's Declaration, Version 1.0\""
+  - "Samba Developer's Declaration 1.0"
+  - "Samba Developer's Declaration v1.0"
+  - "samba-dc-1.0"
+  - "Samba-DC-1.0"
+  - "http://www.gnu.org/licenses/gpl-3.0.html"
+  - "http://www.gnu.org/licenses/lgpl-3.0.html"
+
+otherIds: 
+  - "scancode:samba-dc-1.0"

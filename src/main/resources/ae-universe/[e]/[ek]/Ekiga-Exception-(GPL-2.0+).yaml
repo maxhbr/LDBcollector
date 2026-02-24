@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Ekiga Exception (GPL-2.0+)"
+category: "Ekiga"
+shortName: "Ekiga-Exception-GPL-2.0+"
+
+canonicalNameHistory:
+  - "Ekiga exception to GPL 2.0 or later"
+  - "Ekiga Exception (GPL 2.0 or later)"
+
+type: "exception"
+
+alternativeNames:
+  - "Ekiga exception to GPL 2.0 or later"
+
+otherIds: 
+  - "scancode:ekiga-exception-2.0-plus"

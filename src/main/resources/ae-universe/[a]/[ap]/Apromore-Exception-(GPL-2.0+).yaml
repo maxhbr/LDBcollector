@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Apromore Exception (GPL-2.0+)"
+category: "Apromore Exception"
+shortName: "Apromore-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "Apromore Exception to GPL 2.0 or later"
+  - "Apromore Exception (GPL; or later)"
+  - "Apromore License Exception"
+
+otherIds: 
+  - "scancode:apromore-exception-2.0"

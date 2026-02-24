@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "CLISP Exception (GPL-2.0)"
+category: "CLISP Exception"
+shortName: "CLISP-Exception-GPL-2.0"
+spdxIdentifier: "CLISP-exception-2.0"
+
+canonicalNameHistory:
+  - "CLISP Exception 2.0"
+  - "CLISP Exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:clisp-exception-2.0"

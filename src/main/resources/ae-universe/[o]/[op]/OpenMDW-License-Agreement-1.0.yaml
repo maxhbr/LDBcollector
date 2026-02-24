@@ -4,7 +4,7 @@
 
 canonicalName: "OpenMDW License Agreement 1.0"
 category: "OpenMDW License Agreement"
-shortName: "OpenMDW-1.0"
+spdxIdentifier: "OpenMDW-1.0"
 
 alternativeNames:
   - "OpenMDW License Agreement 1.0"

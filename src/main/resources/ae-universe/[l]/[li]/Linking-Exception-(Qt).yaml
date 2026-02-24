@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Linking Exception (Qt)"
-category: "Linking Exception-Qt"
+category: "Linking Exception"
 shortName: "Linking-Exception-Qt"
 
 canonicalNameHistory:

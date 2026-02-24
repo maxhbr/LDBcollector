@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Avisynth C Interface Exception (GPL)"
+category: "Avisynth C Interface Exception"
+shortName: "Avisynth-C-Interface-Exception-GPL"
+
+canonicalNameHistory:
+  - "Avisynth C Interface Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Avisynth C Interface Exception"
+
+otherIds: 
+  - "scancode:avisynth-c-interface-exception"

@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Syntext Serna Exception 1.0 (GPL)"
+category: "Syntext Exception"
+shortName: "Syntext-Serna-Exception-1.0-GPL"
+
+canonicalNameHistory:
+  - "Syntext Serna Exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:syntext-serna-exception-1.0"

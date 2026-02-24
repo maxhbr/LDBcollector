@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Linking Exception (Rsync)"
+category: "Linking Exception"
+shortName: "Linking Exception-Rsync"
+spdxIdentifier: "rsync-linking-exception"
+
+canonicalNameHistory:
+  - "Rsync OpenSSL and xxHash Linking Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Rsync OpenSSL and xxHash Linking Exception"
+  - "Rsync OpenSSL xxHash Linking Exception"
+  - "Rsync-OpenSSL-xxHash-Linking-Exception"
+  - "rsync-openssl-xxhash-exception"
+

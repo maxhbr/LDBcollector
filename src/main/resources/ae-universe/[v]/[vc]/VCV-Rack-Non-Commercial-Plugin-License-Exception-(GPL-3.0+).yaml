@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "VCV Rack Non-Commercial Plugin License Exception (GPL 3.0+)"
+canonicalName: "VCV Rack Non-Commercial Plugin License Exception (GPL-3.0+)"
 category: "VCV Rack Non-Commercial Plugin License Exception"
 shortName: "VCV-Rack-Exception-GPL-3.0+"
+
+canonicalNameHistory:
+  - "VCV Rack Non-Commercial Plugin License Exception (GPL 3.0+)"
 
 type: "exception"
 

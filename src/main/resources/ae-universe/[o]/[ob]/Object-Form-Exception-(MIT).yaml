@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Object Form Exception (MIT)"
+category: "Object Form Exception"
+shortName: "Object-Form-Exception-MIT"
+spdxIdentifier: "fmt-exception"
+
+canonicalNameHistory:
+  - "Object Form MIT Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Object Form MIT Exception"
+  - "fmt-exception"
+  - "fmt exception"
+
+otherIds: 
+  - "scancode:object-form-exception-to-mit"

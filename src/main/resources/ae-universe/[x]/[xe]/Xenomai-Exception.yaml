@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Xenomai Exception"
+category: "Xenomai Exception"
+shortName: "Xenomai-Exception"
+
+canonicalNameHistory:
+  - "Xenomai GPL Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Xenomai GPL Exception"
+
+otherIds: 
+  - "scancode:xenomai-gpl-exception"

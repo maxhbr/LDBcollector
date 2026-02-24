@@ -2,13 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "Cygwin Exception (GPL 2.0)"
+canonicalName: "Cygwin Exception (GPL-2.0)"
 category: "Cygwin Exception"
-shortName: "Cygwin-Exception-2.0"
+shortName: "Cygwin-Exception-GPL-2.0"
 
 canonicalNameHistory:
   - "Cygwin exception to GPL 2.0"
   - "Cygwin Exception (GPL)"
+  - "Cygwin Exception (GPL 2.0)"
 
 type: "exception"
 

@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "Genode Exception (AGPL 3.0)"
+canonicalName: "Genode Exception (AGPL-3.0)"
 category: "Genode Exception"
 shortName: "Genode-Exception-AGPL-3.0"
+
+canonicalNameHistory:
+  - "Genode Exception (AGPL 3.0)"
 
 type: "exception"
 

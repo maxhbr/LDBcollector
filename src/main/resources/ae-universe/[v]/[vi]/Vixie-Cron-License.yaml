@@ -4,7 +4,7 @@
 
 canonicalName: "Vixie Cron License"
 category: "Vixie Cron License"
-shortName: "Vixie-Cron"
+spdxIdentifier: "Vixie-Cron"
 
 alternativeNames:
   - "Vixie Cron License"

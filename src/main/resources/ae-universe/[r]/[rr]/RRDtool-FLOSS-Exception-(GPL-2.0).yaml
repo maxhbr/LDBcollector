@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "RRDtool FLOSS Exception (GPL-2.0)"
+category: "RRDtool FLOSS Exception"
+shortName: "RRDtool-FLOSS-Exception-GPL-2.0"
+spdxIdentifier: "RRDtool-FLOSS-exception-2.0"
+
+canonicalNameHistory:
+  - "RRDtool FLOSS Exception (GPL)"
+
+type: "exception"
+
+alternativeNames:
+  - "RRDtool-FLOSS-exception-2.0"
+  - "RRDtool FLOSS exception 2.0"
+
+otherIds: 
+  - "scancode:rrdtool-floss-exception-2.0"

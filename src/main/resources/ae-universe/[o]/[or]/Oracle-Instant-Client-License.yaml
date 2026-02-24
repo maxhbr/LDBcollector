@@ -3,10 +3,10 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Oracle Instant Client License"
-category: "Oracle Instance Client"
-shortName: "Oracle-Instance-Client"
+category: "Oracle Instant Client"
+shortName: "Oracle-Instant-Client"
 
 alternativeNames:
-  - "Oracle Instance Client License"
+  - "Oracle Instant Client License"
   - "Oracle Instant Client software license terms"
 

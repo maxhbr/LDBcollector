@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Linking Exception (GPL; variant 031)"
+category: "GPL Linking Exception"
+shortName: "Linking-Exception-GPL-031"
+spdxIdentifier: "x11vnc-openssl-exception"
+
+canonicalNameHistory:
+  - "x11vnc OpenSSL Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "x11vnc OpenSSL Exception"
+  - "https://github.com/LibVNC/x11vnc/blob/master/src/8to24.c#L22"
+

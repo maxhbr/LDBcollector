@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Interface Exception (GPL-3.0)"
+category: "Interface Exception"
+shortName: "Interface-Exception-GPL-3.0"
+spdxIdentifier: "GPL-3.0-interface-exception"
+
+canonicalNameHistory:
+  - "Interface Exception (GPL)"
+
+type: "exception"
+
+alternativeNames:
+  - "GPL-3.0 Interface Exception"
+
+otherIds: 
+  - "scancode:gpl-3.0-interface-exception"

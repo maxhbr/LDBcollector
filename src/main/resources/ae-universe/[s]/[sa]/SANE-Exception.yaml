@@ -4,6 +4,7 @@
 
 canonicalName: "SANE Exception"
 category: "SANE Exception"
+shortName: "SANE-Exception"
 spdxIdentifier: "SANE-exception"
 
 type: "exception"

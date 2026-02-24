@@ -4,7 +4,7 @@
 
 canonicalName: "Buena Onda License Agreement 1.1"
 category: "Buena Onda License Agreement"
-shortName: "BOLA-1.1"
+spdxIdentifier: "BOLA-1.1"
 
 alternativeNames:
   - "Buena Onda License Agreement 1.1"

@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Oracle OpenJDK Classpath Exception (GPL)"
+category: "Oracle OpenJDK Classpath Exception"
+shortName: "Oracle-OpenJDK-Classpath-Exception-GPL"
+
+canonicalNameHistory:
+  - "Oracle OpenJDK classpath Exception"
+  - "Oracle OpenJDK Classpath Exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:oracle-openjdk-classpath-exception-2.0"
