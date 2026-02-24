@@ -6,6 +6,8 @@ canonicalName: "OSC License 1.0"
 category: "OSC"
 spdxIdentifier: "OSC-1.0"
 
+openCoDEStatus: "approved"
+
 osiStatus: "approved"
 osiCategory: "international"
 
@@ -16,3 +18,4 @@ alternativeNames:
 
 otherIds: 
   - "osi:osc-license-1-0"
+  - "OpenCoDE:OSC-1.0"

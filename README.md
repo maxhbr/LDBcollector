@@ -103,9 +103,9 @@ the license name is problematic.
   Copyright (c) nexB Inc. and others. All rights reserved.
   ScanCode is a trademark of nexB Inc.
 
-- [Open CoDE License Compliance](https://wikijs.opencode.de/de/Hilfestellungen_und_Richtlinien/Lizenzcompliance) 
-  approval information is Open CoDE Public Domain. The status information shown reflects version 1.4 from
-  January 2024.
+- [openCode License Compliance](https://wikijs.opencode.de/de/Hilfestellungen_und_Richtlinien/Lizenzcompliance) 
+  approval information is openCode Public Domain. The status information shown reflects version 1.7 from
+  23.02.2026.
 
 The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 
