@@ -36,7 +36,7 @@ import Web.Scotty as S
 class ParamMapC a where
   getLicRaw :: a -> T.Text
   getLic :: a -> LicenseName
-  getIsExcludeStmts :: a -> Bool
+  getIsIncludeStmts :: a -> Bool
   getIsExcludeHints :: a -> Bool
   getEnabledSources :: a -> [SourceRef]
   isSourceEnabled :: a -> SourceRef -> Bool
@@ -46,8 +46,8 @@ newtype ParamMap = ParamMap
   }
   deriving (Eq, Hashable)
 
-excludeStmts :: T.Text
-excludeStmts = "excludeStmts"
+includeStmts :: T.Text
+includeStmts = "includeStmts"
 
 excludeHints :: T.Text
 excludeHints = "excludeHints"
@@ -55,7 +55,7 @@ excludeHints = "excludeHints"
 instance ParamMapC ParamMap where
   getLicRaw = Map.findWithDefault "BSD-3-Clause" "license" . unParamMap
   getLic = fromText . T.toStrict . getLicRaw
-  getIsExcludeStmts = ("on" ==) . Map.findWithDefault "on" excludeStmts . unParamMap
+  getIsIncludeStmts = ("on" ==) . Map.findWithDefault "off" includeStmts . unParamMap
   getIsExcludeHints = ("on" ==) . Map.findWithDefault "off" excludeHints . unParamMap
   getEnabledSources = map (Source . T.unpack . fst) . filter (\(_, value) -> value == "on") . Map.assocs . unParamMap
   isSourceEnabled pm s =
@@ -179,10 +179,10 @@ extractSubgraph isExcludeHints (needleNames, sameNames, otherNames) =
 computeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, (Digraph, SourceRef -> GV.Color), LicenseNameCluster)
 computeSubgraph licenseGraph paramMap = do
   let licLN = LGName (getLic paramMap)
-  let isExcludeStmts = getIsExcludeStmts paramMap
+  let isIncludeStmts = getIsIncludeStmts paramMap
   let isExcludeHints = getIsExcludeHints paramMap
   fmap fst . runLicenseGraphM' licenseGraph $ do
-    focus isExcludeStmts (getEnabledSources paramMap) (V.singleton licLN) $
+    focus (not isIncludeStmts) (getEnabledSources paramMap) (V.singleton licLN) $
       \(needleNames, sameNames, otherNames, _statements) -> extractSubgraph isExcludeHints (needleNames, sameNames, otherNames)
 
 htmlHead' :: Bool -> T.Text -> H.Markup
@@ -247,13 +247,13 @@ htmlHeader licenseGraph typeColoringLookup paramMap = do
         H.li $ do
           H.input
             H.! A.type_ "checkbox"
-            H.! A.name (H.toValue excludeStmts)
+            H.! A.name (H.toValue includeStmts)
             H.! A.value "on"
-            H.! ( if getIsExcludeStmts paramMap
+            H.! ( if getIsIncludeStmts paramMap
                     then A.checked "checked"
                     else mempty
                 )
-          H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
+          H.label H.! A.for (H.toValue includeStmts) $ H.toMarkup includeStmts
         H.li $ do
           H.input
             H.! A.type_ "checkbox"
