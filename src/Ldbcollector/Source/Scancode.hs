@@ -49,9 +49,11 @@ instance LicenseFactC ScancodeData where
   getType _ = "ScancodeData"
   getApplicableLNs scd =
     (LN . newNLN "scancode" . pack . _key) scd
-      `AlternativeLNs` [ (LN . newLN . pack . _shortName) scd,
-                         (LN . newLN . pack . _name) scd
-                       ]
+      `AlternativeLNs` ( [ (LN . newLN . pack . _shortName) scd,
+                           (LN . newLN . pack . _name) scd
+                         ]
+                           ++ map (LN . newNLN "spdx" . pack) (maybeToList (_spdxId scd))
+                       )
   getImpliedStmts scd =
     case _category scd of
       Just category -> [typeStmt category]
