@@ -50,7 +50,7 @@
         tag = "latest";
 
         config = {
-            Cmd = [ "${self.packages.${system}.ldbcollector-untested}/bin/ldbcollector-exe" ];
+            Entrypoint = [ "${self.packages.${system}.ldbcollector-untested}/bin/ldbcollector-exe" ];
             WorkingDir = "/ldbcollector";
             Env = [
                 "LC_ALL=en_US.UTF-8"

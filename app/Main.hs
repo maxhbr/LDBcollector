@@ -6,6 +6,8 @@ module Main where
 import Control.Concurrent (getNumCapabilities)
 import Control.Concurrent.Async.Pool (mapConcurrently, withTaskGroup)
 import Control.Monad.State qualified as MTL
+import Data.Functor ((<&>))
+import Data.Maybe (fromMaybe)
 import Data.Monoid (mconcat)
 import Data.Text qualified as T
 import Data.Text.Lazy qualified as TL
@@ -155,10 +157,10 @@ cmdParser =
         <> command "writeNS" (info writeNSParser (progDesc "Write files for licenses in namespace"))
     )
 
-mainParser :: ParserInfo Command
+mainParser :: ParserInfo (Maybe Command)
 mainParser =
   info
-    (versionOption <*> helper <*> cmdParser)
+    (versionOption <*> helper <*> optional cmdParser)
     ( fullDesc
         <> progDesc "License database collector and generator"
         <> header "ldbcollector - Collect and generate license information"
@@ -184,6 +186,6 @@ main :: IO ()
 main = withUtf8 $ do
   cwd <- getCurrentDirectory
   putStrLn $ "cwd: " ++ cwd
-  cmd <- execParser mainParser
+  cmd <- execParser mainParser <&> fromMaybe Serve
   setupLogger True
   main' cmd
