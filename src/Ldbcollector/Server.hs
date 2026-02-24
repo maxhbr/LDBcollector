@@ -9,6 +9,7 @@ module Ldbcollector.Server
   )
 where
 
+import Control.Concurrent (forkIO)
 import Control.Monad.State qualified as MTL
 import Data.ByteString qualified
 import Data.ByteString.Lazy qualified as BL
@@ -23,6 +24,7 @@ import Data.Map qualified as Map
 import Data.Text.Lazy qualified as T
 import Data.Text.Lazy.IO qualified as I
 import Data.Vector qualified as V
+import Ldbcollector.MCPServer (serveMCPHttp)
 import Ldbcollector.Model
 import Ldbcollector.Sink.GraphViz
 import Network.Wai.Handler.Warp qualified as Warp
@@ -358,6 +360,9 @@ serve = do
   clusters <- getClusters
 
   lift $ do
+    -- Start MCP server in a background thread
+    _ <- forkIO $ serveMCPHttp licenseGraph
+
     cache <- C.newCache Nothing
     let init params = do
           paramMap <- evaluateParams params
