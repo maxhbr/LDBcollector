@@ -1,0 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{{ errors }}
+{% for title, group_fields, collapsible_sections in fieldset_groups %}
+  {% include "django/forms/fieldset_card.html" %}
+{% endfor %}
+{% for field in hidden_fields %}{{ field }}{% endfor %}
