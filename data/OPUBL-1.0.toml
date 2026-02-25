@@ -9,6 +9,7 @@ usage =''' Allowed-for documentation if the copyright holder does not exercise a
 # discussed here:
 # https://lists.fedoraproject.org/archives/list/legal@lists.fedoraproject.org/thread/CI2FTJ33S4ZVKX4SZK6MGLG3ATOR5VYX/#4UTW5GFDELGMG6K3NQ7NBU42LC2FJOB5
 packages_with_exceptions = [
+    "gstreamer1-doc",
     "vim"
 ]
 
