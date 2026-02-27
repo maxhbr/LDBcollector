@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.73
+Version:        1.74
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,34 @@ make check-grammar
 
 
 %changelog
+* Fri Feb 27 2026 Miroslav Suchý <msuchy@redhat.com> 1.74-1
+- remove LicenseRef-Romio as it equals to SPDX ID mpich2
+- add public domain dedication from gstreamer1-plugins-bad-free
+- add public domain dedication from openmpi
+- add LICENSE.QualcommAtheros_ar3k from linux-firmware to firmware.txt
+- add text to LicenseRef-* licenses
+- add public domain dedication from rb_libtorrent
+- add LicenseRef-BSD-TPM as not-allowed
+- add LicenseRef-Hippocratic-3.0 as not-allowed
+- add LICENSE.i915 from linux-firmware to firmware.txt
+- add LICENCE.IntcSST2 from linux-firmware to firmware.txt
+- add LicenseRef-ECMA-spec license
+- add NPL-1.1 license
+- rename LGPL-2.1-or-later_WITH_AdditionRef-Fedora-Temporary-Simple-Library-
+  exception to final LGPL-2.1-or-later_WITH_Simple-Library-Usage-exception
+- rename LicenseRef-Fedora-Temporary-BSD-1-Clause-alglib to ALGLIB-
+  Documentation
+- rename AGPL-3.0-or-later_WITH_AdditionRef-Fedora-Temporary-PS-or-PDF-font-
+  exception-20170817 to AGPL-3.0-or-later_WITH_PS-or-PDF-font-
+  exception-20170817
+- add firmware license from linux-firmware - LICENSE.amdnpu
+- add firmware license from linux-firmware - LICENCE.Marvell
+- add firmware license from linux-firmware - LICENCE.OLPC
+- add firmware license from linux-firmware - LICENCE.ti-connectivity
+- add firmware license from linux-firmware - LICENCE.xc4000
+- add firmware license from linux-firmware - LICENCE.adsp_sst
+- add LICENCE.mediatek from linux-firmware to firmware.txt
+
 * Mon Oct 27 2025 Miroslav Suchý <msuchy@redhat.com> 1.73-1
 - add dedications from linux-firmware from qcom/NOTICE.txt
 - add LGPL-2.0-only WITH Classpath-exception-2.0-short
