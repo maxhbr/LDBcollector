@@ -30,6 +30,10 @@
         "X/MIT",
       "MIT License (X11 License variant)",
       "X-11",
+      "mit/x11",
+      "x/mit",
+        "MIT/X",
+        "MIT license / X11 license",
       "x11"
     ]
 }
