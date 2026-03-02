@@ -146,28 +146,14 @@ writeNSParser =
     (,) <$> argument str (metavar "NAMESPACE") <*> optional optDir
 
 -- | Build a parser for source filtering flags.
---   Supports --disable-all, --disable-<NAME>, and --enable-<NAME>.
+--   Supports --disable-all, --disable SOURCE, and --enable SOURCE.
+--   Available source names: SPDX, OSI, OpenSourceOrg, etc.
 sourceFilterParser :: Parser SourceFilter
 sourceFilterParser =
   SourceFilter
-    <$> switch (long "disable-all" <> help "Disable all sources (use with --enable-<NAME> to selectively re-enable)")
-    <*> ( fmap (Set.fromList . concat) $
-            traverse mkEnableFlag sourceEntries
-        )
-    <*> ( fmap (Set.fromList . concat) $
-            traverse mkDisableFlag sourceEntries
-        )
-  where
-    mkEnableFlag :: SourceEntry -> Parser [String]
-    mkEnableFlag entry =
-      flag [] [seName entry] $
-        long ("enable-" ++ seName entry)
-          <> help ("Enable the " ++ seName entry ++ " source (use with --disable-all)")
-    mkDisableFlag :: SourceEntry -> Parser [String]
-    mkDisableFlag entry =
-      flag [] [seName entry] $
-        long ("disable-" ++ seName entry)
-          <> help ("Disable the " ++ seName entry ++ " source")
+    <$> switch (long "disable-all" <> help "Disable all sources (use with --enable SOURCE to selectively re-enable)")
+    <*> fmap Set.fromList (many (strOption (long "enable" <> metavar "SOURCE" <> help "Enable a source (repeatable, use with --disable-all)")))
+    <*> fmap Set.fromList (many (strOption (long "disable" <> metavar "SOURCE" <> help "Disable a source (repeatable)")))
 
 cmdParser :: Parser Command
 cmdParser =
