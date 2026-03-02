@@ -6,9 +6,8 @@ module Main where
 import Control.Concurrent (getNumCapabilities)
 import Control.Concurrent.Async.Pool (mapConcurrently, withTaskGroup)
 import Control.Monad.State qualified as MTL
-import Data.Functor ((<&>))
 import Data.Maybe (fromMaybe)
-import Data.Monoid (mconcat)
+import Data.Set qualified as Set
 import Data.Text qualified as T
 import Data.Text.Lazy qualified as TL
 import Data.Vector qualified as V
@@ -22,7 +21,6 @@ import Ldbcollector.Source
 import Main.Utf8 (withUtf8)
 import Options.Applicative
 import System.Directory (getCurrentDirectory)
-import System.Environment (getArgs)
 import Prelude hiding (div, head, id)
 
 data Command
@@ -147,6 +145,19 @@ writeNSParser =
   fmap (\(ns, mOutDir) -> WriteNS ns (fromMaybe "_generatedV2" mOutDir)) $
     (,) <$> argument str (metavar "NAMESPACE") <*> optional optDir
 
+-- | Build a parser for --disable-<NAME> flags from 'sourceEntries'.
+--   Each flag, when present, adds the source name to the disabled set.
+disabledSourcesParser :: Parser (Set.Set String)
+disabledSourcesParser =
+  fmap (Set.fromList . concat) $
+    traverse mkFlag sourceEntries
+  where
+    mkFlag :: SourceEntry -> Parser [String]
+    mkFlag entry =
+      flag [] [seName entry] $
+        long ("disable-" ++ seName entry)
+          <> help ("Disable the " ++ seName entry ++ " source")
+
 cmdParser :: Parser Command
 cmdParser =
   subparser
@@ -157,10 +168,10 @@ cmdParser =
         <> command "writeNS" (info writeNSParser (progDesc "Write files for licenses in namespace"))
     )
 
-mainParser :: ParserInfo (Maybe Command)
+mainParser :: ParserInfo (Set.Set String, Maybe Command)
 mainParser =
   info
-    (versionOption <*> helper <*> optional cmdParser)
+    (versionOption <*> helper <*> ((,) <$> disabledSourcesParser <*> optional cmdParser))
     ( fullDesc
         <> progDesc "License database collector and generator"
         <> header "ldbcollector - Collect and generate license information"
@@ -172,12 +183,12 @@ mainParser =
         "ldbcollector 0.1.0.0"
         (long "version" <> short 'v' <> help "Show version")
 
-main' :: Command -> IO ()
-main' cmd = do
+main' :: Set.Set String -> Command -> IO ()
+main' disabledSources cmd = do
   (_, licenseGraph) <- runLicenseGraphM $ do
     timedLGM "warmup" $ do
       timedLGM "applySources" $
-        applySources curation
+        applySources disabledSources curation
       writeMetrics
     executeCommand cmd
   return ()
@@ -186,6 +197,7 @@ main :: IO ()
 main = withUtf8 $ do
   cwd <- getCurrentDirectory
   putStrLn $ "cwd: " ++ cwd
-  cmd <- execParser mainParser <&> fromMaybe Serve
+  (disabledSources, mCmd) <- execParser mainParser
+  let cmd = fromMaybe Serve mCmd
   setupLogger True
-  main' cmd
+  main' disabledSources cmd
