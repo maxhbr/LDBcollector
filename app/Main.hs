@@ -145,15 +145,26 @@ writeNSParser =
   fmap (\(ns, mOutDir) -> WriteNS ns (fromMaybe "_generatedV2" mOutDir)) $
     (,) <$> argument str (metavar "NAMESPACE") <*> optional optDir
 
--- | Build a parser for --disable-<NAME> flags from 'sourceEntries'.
---   Each flag, when present, adds the source name to the disabled set.
-disabledSourcesParser :: Parser (Set.Set String)
-disabledSourcesParser =
-  fmap (Set.fromList . concat) $
-    traverse mkFlag sourceEntries
+-- | Build a parser for source filtering flags.
+--   Supports --disable-all, --disable-<NAME>, and --enable-<NAME>.
+sourceFilterParser :: Parser SourceFilter
+sourceFilterParser =
+  SourceFilter
+    <$> switch (long "disable-all" <> help "Disable all sources (use with --enable-<NAME> to selectively re-enable)")
+    <*> ( fmap (Set.fromList . concat) $
+            traverse mkEnableFlag sourceEntries
+        )
+    <*> ( fmap (Set.fromList . concat) $
+            traverse mkDisableFlag sourceEntries
+        )
   where
-    mkFlag :: SourceEntry -> Parser [String]
-    mkFlag entry =
+    mkEnableFlag :: SourceEntry -> Parser [String]
+    mkEnableFlag entry =
+      flag [] [seName entry] $
+        long ("enable-" ++ seName entry)
+          <> help ("Enable the " ++ seName entry ++ " source (use with --disable-all)")
+    mkDisableFlag :: SourceEntry -> Parser [String]
+    mkDisableFlag entry =
       flag [] [seName entry] $
         long ("disable-" ++ seName entry)
           <> help ("Disable the " ++ seName entry ++ " source")
@@ -168,10 +179,10 @@ cmdParser =
         <> command "writeNS" (info writeNSParser (progDesc "Write files for licenses in namespace"))
     )
 
-mainParser :: ParserInfo (Set.Set String, Maybe Command)
+mainParser :: ParserInfo (SourceFilter, Maybe Command)
 mainParser =
   info
-    (versionOption <*> helper <*> ((,) <$> disabledSourcesParser <*> optional cmdParser))
+    (versionOption <*> helper <*> ((,) <$> sourceFilterParser <*> optional cmdParser))
     ( fullDesc
         <> progDesc "License database collector and generator"
         <> header "ldbcollector - Collect and generate license information"
@@ -183,12 +194,12 @@ mainParser =
         "ldbcollector 0.1.0.0"
         (long "version" <> short 'v' <> help "Show version")
 
-main' :: Set.Set String -> Command -> IO ()
-main' disabledSources cmd = do
+main' :: SourceFilter -> Command -> IO ()
+main' sourceFilter cmd = do
   (_, licenseGraph) <- runLicenseGraphM $ do
     timedLGM "warmup" $ do
       timedLGM "applySources" $
-        applySources disabledSources curation
+        applySources sourceFilter curation
       writeMetrics
     executeCommand cmd
   return ()
@@ -197,7 +208,7 @@ main :: IO ()
 main = withUtf8 $ do
   cwd <- getCurrentDirectory
   putStrLn $ "cwd: " ++ cwd
-  (disabledSources, mCmd) <- execParser mainParser
+  (sourceFilter, mCmd) <- execParser mainParser
   let cmd = fromMaybe Serve mCmd
   setupLogger True
-  main' disabledSources cmd
+  main' sourceFilter cmd

@@ -2,6 +2,9 @@ module Ldbcollector.Source
   ( module X,
     SourceEntry (..),
     sourceEntries,
+    SourceFilter (..),
+    defaultSourceFilter,
+    resolveEnabledSources,
     applySources,
   )
 where
@@ -73,14 +76,46 @@ sourceEntries =
     SourceEntry "TLDR" $ applySource (TLDRLicenseNamings "data/tldrlegal/tldrLicenses.csv")
   ]
 
-applySources :: Set.Set String -> Vector CurationItem -> LicenseGraphM ()
-applySources disabledSources curation = do
+-- | Configuration for which sources to enable/disable.
+--
+--   Resolution logic:
+--   * If 'sfDisableAll' is True, start with nothing enabled, then add back
+--     anything in 'sfEnabled'.
+--   * Otherwise, start with everything enabled, then remove anything in
+--     'sfDisabled'.
+data SourceFilter = SourceFilter
+  { sfDisableAll :: Bool,
+    sfEnabled :: Set.Set String,
+    sfDisabled :: Set.Set String
+  }
+  deriving (Show)
+
+defaultSourceFilter :: SourceFilter
+defaultSourceFilter = SourceFilter False Set.empty Set.empty
+
+-- | Resolve which source entries are enabled given a 'SourceFilter'.
+resolveEnabledSources :: SourceFilter -> [SourceEntry]
+resolveEnabledSources sf
+  | sfDisableAll sf =
+      filter (\e -> Set.member (seName e) (sfEnabled sf)) sourceEntries
+  | otherwise =
+      filter (\e -> not $ Set.member (seName e) (sfDisabled sf)) sourceEntries
+
+applySources :: SourceFilter -> Vector CurationItem -> LicenseGraphM ()
+applySources sf curation = do
   lift $ infoM rootLoggerName "# get sources ..."
-  let enabledEntries = filter (\e -> not $ Set.member (seName e) disabledSources) sourceEntries
-  unless (Set.null disabledSources) $
+  let enabledEntries = resolveEnabledSources sf
+      allNames = Set.fromList $ map seName sourceEntries
+      enabledNames = Set.fromList $ map seName enabledEntries
+      disabledNames = Set.difference allNames enabledNames
+  unless (Set.null disabledNames) $
     lift $
       infoM rootLoggerName $
-        "# disabled sources: " ++ show (Set.toList disabledSources)
+        "# disabled sources: " ++ show (Set.toList disabledNames)
+  unless (Set.null enabledNames) $
+    lift $
+      infoM rootLoggerName $
+        "# enabled sources: " ++ show (Set.toList enabledNames)
   mapM_ seAction enabledEntries
   applySource (Curation curation)
   lift $ infoM rootLoggerName "# ... got sources"
