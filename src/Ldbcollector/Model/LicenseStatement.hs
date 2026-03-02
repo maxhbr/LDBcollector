@@ -39,7 +39,43 @@ data LicenseType
   | Proprietary
   | ProprietaryFree
   | Unlicensed
-  deriving (Eq, Show, Ord, Generic)
+  deriving (Eq, Ord, Generic)
+
+instance Show LicenseType where
+  show PublicDomain = "Public Domain"
+  show Permissive = "Permissive"
+  show Copyleft = "Copyleft"
+  show WeaklyProtective = "Weakly Protective"
+  show StronglyProtective = "Strongly Protective"
+  show NetworkProtective = "Network Protective"
+  show (UnknownLicenseType Nothing) = "Unknown"
+  show (UnknownLicenseType (Just s)) = s
+  show Proprietary = "Proprietary"
+  show ProprietaryFree = "Proprietary Free"
+  show Unlicensed = "Unlicensed"
+
+instance Read LicenseType where
+  readsPrec _ s =
+    let knownTypes =
+          [ ("public domain", PublicDomain),
+            ("permissive", Permissive),
+            ("copyleft", Copyleft),
+            ("weakly protective", WeaklyProtective),
+            ("strongly protective", StronglyProtective),
+            ("network protective", NetworkProtective),
+            ("unknown", UnknownLicenseType Nothing),
+            ("proprietary free", ProprietaryFree),
+            ("proprietary", Proprietary),
+            ("unlicensed", Unlicensed)
+          ]
+        lowerS = map toLower s
+        tryMatch [] = [(UnknownLicenseType (Just s), "")]
+        tryMatch ((name, val) : rest) =
+          let len = length name
+           in if take len lowerS == name
+                then [(val, drop len s)]
+                else tryMatch rest
+     in tryMatch knownTypes
 
 instance H.ToMarkup LicenseType where
   toMarkup = H.toMarkup . show
