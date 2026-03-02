@@ -16,6 +16,7 @@ import (
 	"net/http"
 	"os"
 	"reflect"
+	"slices"
 	"strconv"
 	"strings"
 	"time"
@@ -114,6 +115,8 @@ const (
 	IMPORT_FAILED LicenseImportStatusCode = iota + 1
 	IMPORT_LICENSE_CREATED
 	IMPORT_LICENSE_UPDATED
+	IMPORT_LICENSE_CREATE_OBLIGATION_ASSOCIATION_FAILED
+	IMPORT_LICENSE_UPDATE_OBLIGATION_ASSOCIATION_FAILED
 )
 
 func InsertOrUpdateLicenseOnImport(lic *models.LicenseImportDTO, userId uuid.UUID) (string, LicenseImportStatusCode) {
@@ -128,56 +131,154 @@ func InsertOrUpdateLicenseOnImport(lic *models.LicenseImportDTO, userId uuid.UUI
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		license := lic.ConvertToLicenseDB()
-		license.UserId = userId
-
+		/*
+			We can have the following situations here:
+			1. The license import object has an id, and,
+				(a) There is a license corresponding to that id in the database: Update the license with the new entries
+				(b) There is no license corresponding to that id in the database: License is being imported to a new server,
+					add it in database with the same id
+			2. The license import object does not have an id: A new license is being created, we add it to the database.
+		*/
 		if lic.Id != nil {
 			var newLicense, oldLicense models.LicenseDB
-			if err := tx.Where(models.LicenseDB{Id: *lic.Id}).First(&oldLicense).Error; err != nil {
-				message = fmt.Sprintf("cannot find license: %s", err.Error())
+			if err := tx.Where(models.LicenseDB{Id: *lic.Id}).Preload("User").Preload("Obligations").First(&oldLicense).Error; err != nil {
+				if errors.Is(err, gorm.ErrRecordNotFound) {
+					// case 1(b)
+					license.UserId = userId
+					if err := tx.Omit("Obligations").Create(&license).Error; err != nil {
+						message = fmt.Sprintf("failed to import license: %s", err.Error())
+						importStatus = IMPORT_FAILED
+						return errors.New(message)
+					}
+
+					if lic.ObligationIds != nil {
+						errs := PerformLicenseMapActions(tx, userId, &license, *lic.ObligationIds)
+						if len(errs) != 0 {
+							var combinedMapErrors strings.Builder
+							for _, err := range errs {
+								if err != nil {
+									fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+								}
+							}
+							importStatus = IMPORT_LICENSE_CREATE_OBLIGATION_ASSOCIATION_FAILED
+							message = fmt.Sprintf("successfully created license with id %s, failed to associate obligations: %s", license.Id, combinedMapErrors.String())
+						}
+					}
+
+					if err := tx.Preload("User").Preload("Obligations").First(&license).Error; err != nil {
+						message = fmt.Sprintf("failed to create license: %s", err.Error())
+						importStatus = IMPORT_FAILED
+						return errors.New(message)
+					}
+
+					if err := AddChangelogsForLicense(tx, userId, &license, &models.LicenseDB{}); err != nil {
+						message = fmt.Sprintf("failed to create license: %s", err.Error())
+						importStatus = IMPORT_FAILED
+						return errors.New(message)
+					}
+
+					// for setting api response
+					lic.Id = &license.Id
+					lic.Shortname = license.Shortname
+
+					if importStatus == 0 {
+						importStatus = IMPORT_LICENSE_CREATED
+					}
+				} else {
+					message = fmt.Sprintf("cannot find license: %s", err.Error())
+					importStatus = IMPORT_FAILED
+					return errors.New(message)
+				}
+			} else {
+				// Case 1(a)
+				newLicense = license
+
+				if *oldLicense.Text != *newLicense.Text {
+					if !*oldLicense.TextUpdatable {
+						message = "Field `text_updatable` needs to be true to update the text"
+						importStatus = IMPORT_FAILED
+						return errors.New("Field `text_updatable` needs to be true to update the text")
+					}
+				}
+
+				// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
+				if err := tx.Model(models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", lic.ExternalRef)).Error; err != nil {
+					message = fmt.Sprintf("failed to update license: %s", err.Error())
+					importStatus = IMPORT_FAILED
+					return errors.New(message)
+				}
+
+				if err := tx.Omit("ExternalRef", "Obligations", "User").Where(models.LicenseDB{Id: oldLicense.Id}).Updates(&newLicense).Error; err != nil {
+					message = fmt.Sprintf("failed to update license: %s", err.Error())
+					importStatus = IMPORT_FAILED
+					return errors.New(message)
+				}
+
+				if lic.ObligationIds != nil {
+					errs := PerformLicenseMapActions(tx, userId, &oldLicense, *lic.ObligationIds)
+					if len(errs) != 0 {
+						var combinedMapErrors strings.Builder
+						for _, err := range errs {
+							if err != nil {
+								fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+							}
+						}
+						importStatus = IMPORT_LICENSE_UPDATE_OBLIGATION_ASSOCIATION_FAILED
+						message = fmt.Sprintf("successfully updated license with id %s, failed to associate obligations: %s", license.Id, combinedMapErrors.String())
+					}
+				}
+
+				if err := tx.Preload("User").Preload("Obligations").Where(models.LicenseDB{Id: oldLicense.Id}).First(&newLicense).Error; err != nil {
+					message = fmt.Sprintf("failed to update license: %s", err.Error())
+					importStatus = IMPORT_FAILED
+					return errors.New(message)
+				}
+
+				if err := AddChangelogsForLicense(tx, userId, &newLicense, &oldLicense); err != nil {
+					message = fmt.Sprintf("failed to update license: %s", err.Error())
+					importStatus = IMPORT_FAILED
+					return errors.New(message)
+				}
+
+				// for setting api response
+				lic.Id = &newLicense.Id
+				lic.Shortname = newLicense.Shortname
+
+				if importStatus == 0 {
+					importStatus = IMPORT_LICENSE_UPDATED
+				}
+			}
+		} else {
+			// Case 2
+			license.UserId = userId
+			if err := tx.Omit("Obligations").Create(&license).Error; err != nil {
+				message = fmt.Sprintf("failed to import license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
 			}
-			newLicense = license
 
-			if *oldLicense.Text != *newLicense.Text {
-				if !*oldLicense.TextUpdatable {
-					message = "Field `text_updatable` needs to be true to update the text"
-					importStatus = IMPORT_FAILED
-					return errors.New("Field `text_updatable` needs to be true to update the text")
+			if lic.ObligationIds != nil {
+				errs := PerformLicenseMapActions(tx, userId, &license, *lic.ObligationIds)
+				if len(errs) != 0 {
+					var combinedMapErrors strings.Builder
+					for _, err := range errs {
+						if err != nil {
+							fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+						}
+					}
+					importStatus = IMPORT_LICENSE_CREATE_OBLIGATION_ASSOCIATION_FAILED
+					message = fmt.Sprintf("successfully created license with id %s, failed to associate obligations: %s", license.Id, combinedMapErrors.String())
 				}
 			}
 
-			// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
-			if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", &lic.ExternalRef)).Error; err != nil {
-				message = fmt.Sprintf("failed to update license: %s", err.Error())
+			if err := tx.Preload("User").Preload("Obligations").First(&license).Error; err != nil {
+				message = fmt.Sprintf("failed to create license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
 			}
 
-			// Update all other fields except external_ref and rf_shortname
-			query := tx.Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("ExternalRef", "Obligations", "User")
-
-			if err := query.Clauses(clause.Returning{}).Updates(&newLicense).Scan(&newLicense).Error; err != nil {
-				message = fmt.Sprintf("failed to update license: %s", err.Error())
-				importStatus = IMPORT_FAILED
-				return errors.New(message)
-			}
-
-			// for setting api response
-			lic.Id = &newLicense.Id
-			lic.Shortname = newLicense.Shortname
-
-			if err := AddChangelogsForLicense(tx, userId, &newLicense, &oldLicense); err != nil {
-				message = fmt.Sprintf("failed to update license: %s", err.Error())
-				importStatus = IMPORT_FAILED
-				return errors.New(message)
-			}
-
-			importStatus = IMPORT_LICENSE_UPDATED
-		} else {
-			// case when license doesn't exist in database and is inserted
-			if err := tx.Create(&license).Error; err != nil {
-				message = fmt.Sprintf("failed to import license: %s", err.Error())
+			if err := AddChangelogsForLicense(tx, userId, &license, &models.LicenseDB{}); err != nil {
+				message = fmt.Sprintf("failed to create license: %s", err.Error())
 				importStatus = IMPORT_FAILED
 				return errors.New(message)
 			}
@@ -186,15 +287,10 @@ func InsertOrUpdateLicenseOnImport(lic *models.LicenseImportDTO, userId uuid.UUI
 			lic.Id = &license.Id
 			lic.Shortname = license.Shortname
 
-			if err := AddChangelogsForLicense(tx, userId, &license, &models.LicenseDB{}); err != nil {
-				message = fmt.Sprintf("failed to create license: %s", err.Error())
-				importStatus = IMPORT_FAILED
-				return errors.New(message)
+			if importStatus == 0 {
+				importStatus = IMPORT_LICENSE_CREATED
 			}
-
-			importStatus = IMPORT_LICENSE_CREATED
 		}
-
 		return nil
 	})
 
@@ -348,6 +444,28 @@ func createObligationMapChangelog(
 	}
 
 	return nil
+}
+
+// PerformLicenseMapActions replaces current associated obligations with the list of obligations whose ids are provided in the newObligationIds
+func PerformLicenseMapActions(tx *gorm.DB, userId uuid.UUID, license *models.LicenseDB, newObligationIds []uuid.UUID) []error {
+	newObligationAssociations := []models.Obligation{}
+	var errs []error
+
+	for _, obId := range newObligationIds {
+		var ob models.Obligation
+		activeStatus := true
+		if err := tx.Where(models.Obligation{Id: obId, Active: &activeStatus}).Preload("Classification").Preload("Type").First(&ob).Error; err != nil {
+			errs = append(errs, fmt.Errorf("unable to associate obligation '%s': %s", obId, err.Error()))
+		} else {
+			newObligationAssociations = append(newObligationAssociations, ob)
+		}
+	}
+
+	if err := tx.Debug().Model(license).Association("Obligations").Replace(newObligationAssociations); err != nil {
+		errs = append(errs, err)
+	}
+
+	return errs
 }
 
 func AddChangelogForObligationType(tx *gorm.DB, userId uuid.UUID, oldObType, newObType *models.ObligationType) error {
@@ -712,6 +830,17 @@ func AddChangelog[T any](fieldName string, oldValue, newValue *T, changes *[]mod
 // AddChangelogsForLicense adds changelogs for the updated fields on license update
 func AddChangelogsForLicense(tx *gorm.DB, userId uuid.UUID,
 	newLicense, oldLicense *models.LicenseDB) error {
+	uuidsToStr := func(ids []models.Obligation) string {
+		if len(ids) == 0 {
+			return ""
+		}
+		s := make([]string, 0, len(ids))
+		for _, lic := range ids {
+			s = append(s, lic.Id.String())
+		}
+		slices.Sort(s)
+		return strings.Join(s, ", ")
+	}
 	var changes []models.ChangeLog
 
 	AddChangelog("Fullname", oldLicense.Fullname, newLicense.Fullname, &changes)
@@ -725,6 +854,11 @@ func AddChangelogsForLicense(tx *gorm.DB, userId uuid.UUID,
 	AddChangelog("Source", oldLicense.Source, newLicense.Source, &changes)
 	AddChangelog("Spdx Id", oldLicense.SpdxId, newLicense.SpdxId, &changes)
 	AddChangelog("Risk", oldLicense.Risk, newLicense.Risk, &changes)
+
+	oldVal := uuidsToStr(oldLicense.Obligations)
+	newVal := uuidsToStr(newLicense.Obligations)
+
+	AddChangelog("Obligation Ids", &oldVal, &newVal, &changes)
 
 	oldLicenseExternalRef := oldLicense.ExternalRef.Data()
 	oldExternalRefVal := reflect.ValueOf(oldLicenseExternalRef)

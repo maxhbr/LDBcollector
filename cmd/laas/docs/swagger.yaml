@@ -1,9 +1,5 @@
 basePath: /api/v1
 definitions:
-  datatypes.JSONType-models_LicenseDBSchemaExtension:
-    type: object
-  datatypes.JSONType-models_ObligationSchemaExtension:
-    type: object
   models.APICollection:
     properties:
       authenticated:
@@ -174,7 +170,7 @@ definitions:
       notes:
         example: This license has been superseded.
         type: string
-      obligations:
+      obligation_ids:
         example:
         - f81d4fae-7dec-11d0-a765-00a0c91e6bf6
         - f812jfae-7dbc-11d0-a765-00a0hf06bf6
@@ -209,47 +205,6 @@ definitions:
     - shortname
     - spdx_id
     - text
-    type: object
-  models.LicenseDB:
-    properties:
-      active:
-        type: boolean
-      addDate:
-        type: string
-      copyleft:
-        type: boolean
-      externalRef:
-        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
-      fullname:
-        type: string
-      id:
-        type: string
-      notes:
-        type: string
-      obligations:
-        items:
-          $ref: '#/definitions/models.Obligation'
-        type: array
-      osiapproved:
-        type: boolean
-      risk:
-        type: integer
-      shortname:
-        type: string
-      source:
-        type: string
-      spdxId:
-        type: string
-      text:
-        type: string
-      textUpdatable:
-        type: boolean
-      url:
-        type: string
-      user:
-        $ref: '#/definitions/models.User'
-      userId:
-        type: string
     type: object
   models.LicenseDBSchemaExtension:
     properties:
@@ -365,7 +320,7 @@ definitions:
       notes:
         example: This license has been superseded.
         type: string
-      obligations:
+      obligation_ids:
         items:
           type: string
         type: array
@@ -409,9 +364,9 @@ definitions:
       notes:
         example: This license has been superseded.
         type: string
-      obligations:
+      obligation_ids:
         items:
-          $ref: '#/definitions/models.Obligation'
+          type: string
         type: array
       risk:
         example: 1
@@ -436,45 +391,6 @@ definitions:
       url:
         example: https://opensource.org/licenses/MIT
         type: string
-    type: object
-  models.Obligation:
-    properties:
-      active:
-        type: boolean
-      category:
-        enum:
-        - DISTRIBUTION
-        - PATENT
-        - INTERNAL
-        - CONTRACTUAL
-        - EXPORT_CONTROL
-        - GENERAL
-        example: DISTRIBUTION
-        type: string
-      classification:
-        $ref: '#/definitions/models.ObligationClassification'
-      comment:
-        type: string
-      externalRef:
-        $ref: '#/definitions/datatypes.JSONType-models_ObligationSchemaExtension'
-      id:
-        type: string
-      licenses:
-        items:
-          $ref: '#/definitions/models.LicenseDB'
-        type: array
-      obligationClassificationId:
-        type: string
-      obligationTypeId:
-        type: string
-      text:
-        type: string
-      textUpdatable:
-        type: boolean
-      topic:
-        type: string
-      type:
-        $ref: '#/definitions/models.ObligationType'
     type: object
   models.ObligationClassification:
     properties:

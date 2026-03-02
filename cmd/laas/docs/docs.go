@@ -2490,12 +2490,6 @@ const docTemplate = `{
         }
     },
     "definitions": {
-        "datatypes.JSONType-models_LicenseDBSchemaExtension": {
-            "type": "object"
-        },
-        "datatypes.JSONType-models_ObligationSchemaExtension": {
-            "type": "object"
-        },
         "models.APICollection": {
             "type": "object",
             "properties": {
@@ -2746,7 +2740,7 @@ const docTemplate = `{
                     "type": "string",
                     "example": "This license has been superseded."
                 },
-                "obligations": {
+                "obligation_ids": {
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -2785,68 +2779,6 @@ const docTemplate = `{
                 "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
-                }
-            }
-        },
-        "models.LicenseDB": {
-            "type": "object",
-            "properties": {
-                "active": {
-                    "type": "boolean"
-                },
-                "addDate": {
-                    "type": "string"
-                },
-                "copyleft": {
-                    "type": "boolean"
-                },
-                "externalRef": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
-                },
-                "fullname": {
-                    "type": "string"
-                },
-                "id": {
-                    "type": "string"
-                },
-                "notes": {
-                    "type": "string"
-                },
-                "obligations": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.Obligation"
-                    }
-                },
-                "osiapproved": {
-                    "type": "boolean"
-                },
-                "risk": {
-                    "type": "integer"
-                },
-                "shortname": {
-                    "type": "string"
-                },
-                "source": {
-                    "type": "string"
-                },
-                "spdxId": {
-                    "type": "string"
-                },
-                "text": {
-                    "type": "string"
-                },
-                "textUpdatable": {
-                    "type": "boolean"
-                },
-                "url": {
-                    "type": "string"
-                },
-                "user": {
-                    "$ref": "#/definitions/models.User"
-                },
-                "userId": {
-                    "type": "string"
                 }
             }
         },
@@ -3017,7 +2949,7 @@ const docTemplate = `{
                     "type": "string",
                     "example": "This license has been superseded."
                 },
-                "obligations": {
+                "obligation_ids": {
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -3078,10 +3010,10 @@ const docTemplate = `{
                     "type": "string",
                     "example": "This license has been superseded."
                 },
-                "obligations": {
+                "obligation_ids": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/models.Obligation"
+                        "type": "string"
                     }
                 },
                 "risk": {
@@ -3113,62 +3045,6 @@ const docTemplate = `{
                 "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
-                }
-            }
-        },
-        "models.Obligation": {
-            "type": "object",
-            "properties": {
-                "active": {
-                    "type": "boolean"
-                },
-                "category": {
-                    "type": "string",
-                    "enum": [
-                        "DISTRIBUTION",
-                        "PATENT",
-                        "INTERNAL",
-                        "CONTRACTUAL",
-                        "EXPORT_CONTROL",
-                        "GENERAL"
-                    ],
-                    "example": "DISTRIBUTION"
-                },
-                "classification": {
-                    "$ref": "#/definitions/models.ObligationClassification"
-                },
-                "comment": {
-                    "type": "string"
-                },
-                "externalRef": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_ObligationSchemaExtension"
-                },
-                "id": {
-                    "type": "string"
-                },
-                "licenses": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.LicenseDB"
-                    }
-                },
-                "obligationClassificationId": {
-                    "type": "string"
-                },
-                "obligationTypeId": {
-                    "type": "string"
-                },
-                "text": {
-                    "type": "string"
-                },
-                "textUpdatable": {
-                    "type": "boolean"
-                },
-                "topic": {
-                    "type": "string"
-                },
-                "type": {
-                    "$ref": "#/definitions/models.ObligationType"
                 }
             }
         },

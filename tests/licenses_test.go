@@ -68,6 +68,75 @@ func TestCreateLicense(t *testing.T) {
 		w := makeRequest("POST", "/licenses", license, false)
 		assert.Equal(t, http.StatusUnauthorized, w.Code)
 	})
+
+	t.Run("error_with_wrong_obligations", func(t *testing.T) {
+		licenseWithObligation := models.LicenseCreateDTO{
+			Shortname:     "MIT-W",
+			Fullname:      "MIT-WithObligations",
+			Text:          `MIT1 License copyright (c) <year> <copyright holders> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`,
+			Url:           ptr("https://opensource.org/licenses/MIT"),
+			Notes:         ptr("This license is OSI approved."),
+			Source:        ptr("spdx"),
+			SpdxId:        "LicenseRef-MIT-W",
+			Risk:          ptr(int64(2)),
+			ObligationIds: []uuid.UUID{uuid.New()},
+		}
+		wLicense := makeRequest("POST", "/licenses", licenseWithObligation, true)
+		assert.Equal(t, http.StatusNotFound, wLicense.Code, "Failed to throw error on license creation with wrong obligations")
+	})
+
+	t.Run("success_with_obligations", func(t *testing.T) {
+		// Create a dummy obligation first
+		dto := models.ObligationCreateDTO{
+			Topic:          "test-topic-license",
+			Type:           "RIGHT",
+			Text:           "some text",
+			Classification: "GREEN",
+			Comment:        ptr("try to link obligations to a license in POST request"),
+			Active:         ptr(true),
+			TextUpdatable:  ptr(false),
+			Category:       ptr("GENERAL"),
+			ExternalRef: models.ObligationSchemaExtension{
+				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
+			},
+		}
+		wObligation := makeRequest("POST", "/obligations", dto, true)
+		assert.Equal(t, http.StatusCreated, wObligation.Code, "Failed to create test obligation")
+
+		var obligationRes models.ObligationResponse
+		err := json.Unmarshal(wObligation.Body.Bytes(), &obligationRes)
+		assert.NoError(t, err, "Failed to unmarshal obligation response")
+		assert.NotEmpty(t, obligationRes, "Obligation response data is empty")
+		createdObligationID := obligationRes.Data[0].Id
+
+		licenseWithObligation := models.LicenseCreateDTO{
+			Shortname:     "MIT-W",
+			Fullname:      "MIT-WithObligations",
+			Text:          `MIT1 License copyright (c) <year> <copyright holders> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`,
+			Url:           ptr("https://opensource.org/licenses/MIT"),
+			Notes:         ptr("This license is OSI approved."),
+			Source:        ptr("spdx"),
+			SpdxId:        "LicenseRef-MIT-W",
+			Risk:          ptr(int64(2)),
+			ObligationIds: []uuid.UUID{createdObligationID},
+		}
+		// Create the license
+		wLicense := makeRequest("POST", "/licenses", licenseWithObligation, true)
+		assert.Equal(t, http.StatusCreated, wLicense.Code, "Failed to create license with obligations")
+
+		var res models.LicenseResponse
+		if err := json.Unmarshal(wLicense.Body.Bytes(), &res); err != nil {
+			t.Errorf("Error unmarshalling license response: %v", err)
+			return
+		}
+		if len(res.Data) == 0 {
+			t.Fatal("License response data is empty, cannot validate fields")
+		}
+
+		assert.NotEmpty(t, res.Data[0].ObligationIds, "Expected obligations to be attached to the license")
+		assert.Len(t, res.Data[0].ObligationIds, 1, "Expected exactly one obligation attached")
+		assert.Equal(t, createdObligationID, res.Data[0].ObligationIds[0], "Attached obligation ID does not match created obligation ID")
+	})
 }
 
 func TestGetLicense(t *testing.T) {
@@ -187,7 +256,7 @@ func TestUpdateLicense(t *testing.T) {
 			Url:           ptr("https://licenses.org/nonexistent"),
 			TextUpdatable: ptr(false),
 			Active:        ptr(true),
-			SpdxId:        ptr("NONEXISTENT"),
+			SpdxId:        ptr("LicenseRef-NONEXISTENT"),
 		}
 		w := makeRequest("PATCH", "/licenses/"+uuid.New().String(), nonExistingLicense, true)
 		assert.Equal(t, http.StatusNotFound, w.Code)
@@ -202,4 +271,72 @@ func TestUpdateLicense(t *testing.T) {
 		assert.Equal(t, http.StatusNotFound, res.Status)
 	})
 
+	t.Run("UpdateLicenseErrorWithWrongObligations", func(t *testing.T) {
+		licenseWithObligation := models.LicenseUpdateDTO{
+			ObligationIds: ptr([]uuid.UUID{uuid.New()}),
+		}
+		wLicense := makeRequest("PATCH", "/licenses"+id, licenseWithObligation, true)
+		assert.Equal(t, http.StatusNotFound, wLicense.Code, "Failed to throw error on license creation with wrong obligations")
+	})
+
+	t.Run("UpdateLicenseSuccessWithObligations", func(t *testing.T) {
+		// Create a dummy obligation first
+		dto := models.ObligationCreateDTO{
+			Topic:          "test-topic-license-update",
+			Type:           "RIGHT",
+			Text:           "some text",
+			Classification: "GREEN",
+			Comment:        ptr("try to link obligations to a license in POST request"),
+			Active:         ptr(true),
+			TextUpdatable:  ptr(false),
+			Category:       ptr("GENERAL"),
+			ExternalRef: models.ObligationSchemaExtension{
+				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
+			},
+		}
+		wObligation := makeRequest("POST", "/obligations", dto, true)
+		assert.Equal(t, http.StatusCreated, wObligation.Code, "Failed to create test obligation")
+
+		var obligationRes models.ObligationResponse
+		err := json.Unmarshal(wObligation.Body.Bytes(), &obligationRes)
+		assert.NoError(t, err, "Failed to unmarshal obligation response")
+		assert.NotEmpty(t, obligationRes, "Obligation response data is empty")
+		createdObligationID := obligationRes.Data[0].Id
+
+		licenseWithObligation := models.LicenseUpdateDTO{
+			ObligationIds: ptr([]uuid.UUID{createdObligationID}),
+		}
+		// Update the license to link obligation
+		wLicense := makeRequest("PATCH", "/licenses/"+id, licenseWithObligation, true)
+		assert.Equal(t, http.StatusOK, wLicense.Code, "Failed to update license with obligations")
+
+		var res models.LicenseResponse
+		if err := json.Unmarshal(wLicense.Body.Bytes(), &res); err != nil {
+			t.Errorf("Error unmarshalling license response: %v", err)
+			return
+		}
+		if len(res.Data) == 0 {
+			t.Fatal("License response data is empty, cannot validate fields")
+		}
+
+		assert.NotEmpty(t, res.Data[0].ObligationIds, "Expected obligations to be attached to the license")
+		assert.Len(t, res.Data[0].ObligationIds, 1, "Expected exactly one obligation attached")
+		assert.Equal(t, createdObligationID, res.Data[0].ObligationIds[0], "Attached obligation ID does not match created obligation ID")
+
+		// Update the license to unlink obligation
+		licenseWithObligation = models.LicenseUpdateDTO{
+			ObligationIds: ptr([]uuid.UUID{}),
+		}
+		// Update the license to link obligation
+		wLicense = makeRequest("PATCH", "/licenses/"+id, licenseWithObligation, true)
+		assert.Equal(t, http.StatusOK, wLicense.Code, "Failed to update license with obligations")
+
+		if err := json.Unmarshal(wLicense.Body.Bytes(), &res); err != nil {
+			t.Errorf("Error unmarshalling license response: %v", err)
+			return
+		}
+		if len(res.Data) == 0 {
+			t.Fatal("License response data is empty, cannot validate fields")
+		}
+	})
 }

@@ -185,7 +185,7 @@ func GetLicense(c *gin.Context) {
 		return
 	}
 
-	err = db.DB.Where(models.LicenseDB{Id: licenseId}).Preload("User").First(&license).Error
+	err = db.DB.Where(models.LicenseDB{Id: licenseId}).Preload("User").Preload("Obligations").First(&license).Error
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
@@ -257,30 +257,48 @@ func CreateLicense(c *gin.Context) {
 	lic.UserId = userId
 
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		result := tx.Create(&lic)
-
-		if result.Error != nil {
+		if err := tx.Omit("Obligations").Create(&lic).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to create license",
-				Error:     result.Error.Error(),
+				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 			c.JSON(http.StatusInternalServerError, er)
-			return result.Error
+			return err
 		}
 
-		if err := tx.Preload("User").First(&lic).Error; err != nil {
+		insertObligations := input.ObligationIds
+		errs := utils.PerformLicenseMapActions(tx, userId, &lic, insertObligations)
+		if len(errs) != 0 {
+			var combinedMapErrors strings.Builder
+			for _, err := range errs {
+				if err != nil {
+					fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+				}
+			}
 			er := models.LicenseError{
-				Status:    http.StatusInternalServerError,
+				Status:    http.StatusNotFound,
 				Message:   "Failed to create license",
-				Error:     result.Error.Error(),
+				Error:     combinedMapErrors.String(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return errors.New(combinedMapErrors.String())
+		}
+
+		if err := tx.Preload("User").Preload("Obligations").First(&lic).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "Failed to create license",
+				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 			c.JSON(http.StatusInternalServerError, er)
-			return result.Error
+			return err
 		}
 
 		if err := utils.AddChangelogsForLicense(tx, userId, &lic, &models.LicenseDB{}); err != nil {
@@ -332,10 +350,34 @@ func CreateLicense(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/licenses/{id} [patch]
 func UpdateLicense(c *gin.Context) {
-	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		var updates models.LicenseUpdateDTO
-		var oldLicense models.LicenseDB
+	var updates models.LicenseUpdateDTO
 
+	if err := c.ShouldBindJSON(&updates); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "invalid json body",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	if err := validations.Validate.Struct(&updates); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "can not update license with these field values",
+			Error:     fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
+		var oldLicense models.LicenseDB
 		userId := c.MustGet("userId").(uuid.UUID)
 
 		licenseId, err := uuid.Parse(c.Param("id"))
@@ -350,7 +392,7 @@ func UpdateLicense(c *gin.Context) {
 			c.JSON(http.StatusBadRequest, er)
 			return err
 		}
-		if err := tx.Where(models.LicenseDB{Id: licenseId}).First(&oldLicense).Error; err != nil {
+		if err := tx.Preload("User").Preload("Obligations").First(&oldLicense, licenseId).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   fmt.Sprintf("license with id '%s' not found", licenseId.String()),
@@ -359,30 +401,6 @@ func UpdateLicense(c *gin.Context) {
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 			c.JSON(http.StatusNotFound, er)
-			return err
-		}
-
-		if err := c.ShouldBindJSON(&updates); err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusBadRequest,
-				Message:   "invalid json body",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusBadRequest, er)
-			return err
-		}
-
-		if err := validations.Validate.Struct(&updates); err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusBadRequest,
-				Message:   "can not update license with these field values",
-				Error:     fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusBadRequest, er)
 			return err
 		}
 
@@ -400,7 +418,7 @@ func UpdateLicense(c *gin.Context) {
 		}
 
 		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
-		if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", updates.ExternalRef)).Error; err != nil {
+		if err := tx.Model(models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", updates.ExternalRef)).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
@@ -422,6 +440,27 @@ func UpdateLicense(c *gin.Context) {
 			}
 			c.JSON(http.StatusInternalServerError, er)
 			return err
+		}
+
+		if updates.ObligationIds != nil {
+			errs := utils.PerformLicenseMapActions(tx, userId, &oldLicense, *updates.ObligationIds)
+			if len(errs) != 0 {
+				var combinedMapErrors strings.Builder
+				for _, err := range errs {
+					if err != nil {
+						fmt.Fprintf(&combinedMapErrors, "%s\n", err)
+					}
+				}
+				er := models.LicenseError{
+					Status:    http.StatusNotFound,
+					Message:   "Failed to update license",
+					Error:     combinedMapErrors.String(),
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				}
+				c.JSON(http.StatusNotFound, er)
+				return errors.New(combinedMapErrors.String())
+			}
 		}
 
 		if err := tx.Preload("User").Preload("Obligations").Where(models.LicenseDB{Id: oldLicense.Id}).First(&newLicense).Error; err != nil {
@@ -623,7 +662,8 @@ func ImportLicenses(c *gin.Context) {
 	for i := range licenses {
 		errMessage, importStatus := utils.InsertOrUpdateLicenseOnImport(&licenses[i], userId)
 
-		if importStatus == utils.IMPORT_FAILED {
+		switch importStatus {
+		case utils.IMPORT_FAILED:
 			erroredElem := ""
 			if licenses[i].Id != nil {
 				erroredElem = (*licenses[i].Id).String()
@@ -637,17 +677,45 @@ func ImportLicenses(c *gin.Context) {
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			})
-		} else if importStatus == utils.IMPORT_LICENSE_CREATED {
+		case utils.IMPORT_LICENSE_CREATED:
 			res.Data = append(res.Data, models.LicenseImportStatus{
 				Shortname: *licenses[i].Shortname,
 				Status:    http.StatusCreated,
 				Id:        *licenses[i].Id,
 			})
-		} else if importStatus == utils.IMPORT_LICENSE_UPDATED {
+		case utils.IMPORT_LICENSE_UPDATED:
 			res.Data = append(res.Data, models.LicenseImportStatus{
 				Shortname: *licenses[i].Shortname,
 				Status:    http.StatusOK,
 				Id:        *licenses[i].Id,
+			})
+		case utils.IMPORT_LICENSE_CREATE_OBLIGATION_ASSOCIATION_FAILED:
+			erroredElem := ""
+			if licenses[i].Id != nil {
+				erroredElem = (*licenses[i].Id).String()
+			} else if licenses[i].Shortname != nil {
+				erroredElem = *licenses[i].Shortname
+			}
+			res.Data = append(res.Data, models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   errMessage,
+				Error:     erroredElem,
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			})
+		case utils.IMPORT_LICENSE_UPDATE_OBLIGATION_ASSOCIATION_FAILED:
+			erroredElem := ""
+			if licenses[i].Id != nil {
+				erroredElem = (*licenses[i].Id).String()
+			} else if licenses[i].Shortname != nil {
+				erroredElem = *licenses[i].Shortname
+			}
+			res.Data = append(res.Data, models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   errMessage,
+				Error:     erroredElem,
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
 			})
 		}
 	}
