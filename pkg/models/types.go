@@ -261,37 +261,6 @@ type ObligationMapLicenseFormat struct {
 	Shortname string    `json:"shortname" example:"MIT"`
 }
 
-// ObligationMapUser Structure with obligation topic and license shortname list, a simple representation for user.
-type ObligationMapUser struct {
-	Id       uuid.UUID                    `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
-	Topic    string                       `json:"topic" example:"copyleft"`
-	Type     string                       `json:"type" example:"obligation" enums:"obligation,restriction,risk,right"`
-	Licenses []ObligationMapLicenseFormat `json:"licenses"`
-}
-
-// LicenseShortnamesInput represents the input format for adding/removing licenses from obligation map.
-type LicenseListInput struct {
-	LicenseIds []uuid.UUID `json:"ids" swaggertype:"array,object"`
-}
-
-// LicenseMapElement Element to hold license
-type LicenseMapElement struct {
-	Id  uuid.UUID `json:"id" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6" swaggertype:"string"`
-	Add bool      `json:"add" example:"true"`
-}
-
-// LicenseMapInput List of elements to be read as input by API
-type LicenseMapInput struct {
-	MapInput []LicenseMapElement `json:"map"`
-}
-
-// ObligationMapResponse response format for obligation map data.
-type ObligationMapResponse struct {
-	Status int                 `json:"status" example:"200"`
-	Data   []ObligationMapUser `json:"data"`
-	Meta   PaginationMeta      `json:"paginationmeta"`
-}
-
 // ObligationImportRequest represents the request body structure for import obligation
 type ObligationImportRequest struct {
 	ObligationFile string `form:"file"`

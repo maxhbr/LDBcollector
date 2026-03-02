@@ -156,13 +156,6 @@ func Router() *gin.Engine {
 				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
 				obligations.POST("/similarity", getSimilarObligations)
 			}
-			obMap := authorizedv1.Group("/obligation_maps")
-			{
-				obMap.GET("obligation/:id", GetObligationMapByObligationId)
-				obMap.GET("license/:id", GetObligationMapByLicenseId)
-				obMap.PATCH("obligation/:id/license", PatchObligationMap)
-				obMap.PUT("obligation/:id/license", UpdateLicenseInObligationMap)
-			}
 			audit := authorizedv1.Group("/audits")
 			{
 				audit.GET("", GetAllAudit)
@@ -204,11 +197,6 @@ func Router() *gin.Engine {
 				obligations.GET("export", ExportObligations)
 				obligations.GET("/types", GetAllObligationType)
 				obligations.GET("/classifications", GetAllObligationClassification)
-			}
-			obMap := unAuthorizedv1.Group("/obligation_maps")
-			{
-				obMap.GET("obligation/:id", GetObligationMapByObligationId)
-				obMap.GET("license/:id", GetObligationMapByLicenseId)
 			}
 			audit := unAuthorizedv1.Group("/audits")
 			{
@@ -275,11 +263,6 @@ func Router() *gin.Engine {
 				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
 				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
 				obligations.POST("/similarity", getSimilarObligations)
-			}
-			obMap := authorizedv1.Group("/obligation_maps")
-			{
-				obMap.PATCH("obligation/:id/license", PatchObligationMap)
-				obMap.PUT("obligation/:id/license", UpdateLicenseInObligationMap)
 			}
 			oidcClient := authorizedv1.Group("/oidcClients")
 			{
