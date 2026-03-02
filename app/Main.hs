@@ -146,14 +146,14 @@ writeNSParser =
     (,) <$> argument str (metavar "NAMESPACE") <*> optional optDir
 
 -- | Build a parser for source filtering flags.
---   Supports --disable-all, --disable SOURCE, and --enable SOURCE.
---   Available source names: SPDX, OSI, OpenSourceOrg, etc.
+--   Supports --enable SOURCE and --disable SOURCE.
+--   If any --enable flags are given, only those sources run (whitelist mode).
+--   Otherwise all sources run except --disable'd ones (blacklist mode).
 sourceFilterParser :: Parser SourceFilter
 sourceFilterParser =
   SourceFilter
-    <$> switch (long "disable-all" <> help "Disable all sources (use with --enable SOURCE to selectively re-enable)")
-    <*> fmap Set.fromList (many (strOption (long "enable" <> metavar "SOURCE" <> help "Enable a source (repeatable, use with --disable-all)")))
-    <*> fmap Set.fromList (many (strOption (long "disable" <> metavar "SOURCE" <> help "Disable a source (repeatable)")))
+    <$> fmap Set.fromList (many (strOption (long "enable" <> metavar "SOURCE" <> help "Run only the listed sources (repeatable, whitelist mode)")))
+    <*> fmap Set.fromList (many (strOption (long "disable" <> metavar "SOURCE" <> help "Disable a source (repeatable, blacklist mode)")))
 
 cmdParser :: Parser Command
 cmdParser =

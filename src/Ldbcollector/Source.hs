@@ -79,24 +79,23 @@ sourceEntries =
 -- | Configuration for which sources to enable/disable.
 --
 --   Resolution logic:
---   * If 'sfDisableAll' is True, start with nothing enabled, then add back
---     anything in 'sfEnabled'.
---   * Otherwise, start with everything enabled, then remove anything in
---     'sfDisabled'.
+--   * If any 'sfEnabled' sources are specified, only those are run
+--     (whitelist mode).
+--   * Otherwise, all sources are run except those in 'sfDisabled'
+--     (blacklist mode).
 data SourceFilter = SourceFilter
-  { sfDisableAll :: Bool,
-    sfEnabled :: Set.Set String,
+  { sfEnabled :: Set.Set String,
     sfDisabled :: Set.Set String
   }
   deriving (Show)
 
 defaultSourceFilter :: SourceFilter
-defaultSourceFilter = SourceFilter False Set.empty Set.empty
+defaultSourceFilter = SourceFilter Set.empty Set.empty
 
 -- | Resolve which source entries are enabled given a 'SourceFilter'.
 resolveEnabledSources :: SourceFilter -> [SourceEntry]
 resolveEnabledSources sf
-  | sfDisableAll sf =
+  | not (Set.null (sfEnabled sf)) =
       filter (\e -> Set.member (seName e) (sfEnabled sf)) sourceEntries
   | otherwise =
       filter (\e -> not $ Set.member (seName e) (sfDisabled sf)) sourceEntries
