@@ -844,218 +844,6 @@ const docTemplate = `{
                 }
             }
         },
-        "/obligation_maps/license/{id}": {
-            "get": {
-                "security": [
-                    {
-                        "ApiKeyAuth": [],
-                        "{}": []
-                    }
-                ],
-                "description": "Get obligation maps for a given license id",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "Obligations"
-                ],
-                "summary": "Get maps for a license",
-                "operationId": "GetObligationMapByLicenseId",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "id of the license",
-                        "name": "license",
-                        "in": "path",
-                        "required": true
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "schema": {
-                            "$ref": "#/definitions/models.ObligationMapResponse"
-                        }
-                    },
-                    "404": {
-                        "description": "No license with given id found",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    }
-                }
-            }
-        },
-        "/obligation_maps/obligation/{id}": {
-            "get": {
-                "security": [
-                    {
-                        "ApiKeyAuth": [],
-                        "{}": []
-                    }
-                ],
-                "description": "Get obligation maps for a given obligation id",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "Obligations"
-                ],
-                "summary": "Get maps for an obligation",
-                "operationId": "GetObligationMapByObligationId",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "Id of the obligation",
-                        "name": "id",
-                        "in": "path",
-                        "required": true
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "schema": {
-                            "$ref": "#/definitions/models.ObligationMapResponse"
-                        }
-                    },
-                    "404": {
-                        "description": "No obligation with given id found",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    }
-                }
-            }
-        },
-        "/obligation_maps/obligation/{id}/license": {
-            "put": {
-                "security": [
-                    {
-                        "ApiKeyAuth": []
-                    }
-                ],
-                "description": "Replaces the license list of an obligation id with the given list in the obligation map.",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "Obligations"
-                ],
-                "summary": "Change license list",
-                "operationId": "UpdateLicenseInObligationMap",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "Id of the obligation",
-                        "name": "id",
-                        "in": "path",
-                        "required": true
-                    },
-                    {
-                        "description": "Ids of the licenses to be in map",
-                        "name": "Ids",
-                        "in": "body",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseListInput"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "schema": {
-                            "$ref": "#/definitions/models.ObligationMapResponse"
-                        }
-                    },
-                    "400": {
-                        "description": "Invalid json body",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    },
-                    "404": {
-                        "description": "No license or obligation found.",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    }
-                }
-            },
-            "patch": {
-                "security": [
-                    {
-                        "ApiKeyAuth": []
-                    }
-                ],
-                "description": "Add or remove licenses from obligation map for a given obligation id",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "Obligations"
-                ],
-                "summary": "Add or remove licenses from obligation map",
-                "operationId": "PatchObligationMap",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "Id of the obligation",
-                        "name": "id",
-                        "in": "path",
-                        "required": true
-                    },
-                    {
-                        "description": "License ids with action",
-                        "name": "license_maps",
-                        "in": "body",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseMapInput"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "schema": {
-                            "$ref": "#/definitions/models.ObligationMapResponse"
-                        }
-                    },
-                    "400": {
-                        "description": "Invalid json body",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    },
-                    "404": {
-                        "description": "No license or obligation found.",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    },
-                    "500": {
-                        "description": "Failure to insert new maps",
-                        "schema": {
-                            "$ref": "#/definitions/models.LicenseError"
-                        }
-                    }
-                }
-            }
-        },
         "/obligations": {
             "get": {
                 "security": [
@@ -2490,12 +2278,6 @@ const docTemplate = `{
         }
     },
     "definitions": {
-        "datatypes.JSONType-models_LicenseDBSchemaExtension": {
-            "type": "object"
-        },
-        "datatypes.JSONType-models_ObligationSchemaExtension": {
-            "type": "object"
-        },
         "models.APICollection": {
             "type": "object",
             "properties": {
@@ -2746,7 +2528,7 @@ const docTemplate = `{
                     "type": "string",
                     "example": "This license has been superseded."
                 },
-                "obligations": {
+                "obligation_ids": {
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -2785,68 +2567,6 @@ const docTemplate = `{
                 "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
-                }
-            }
-        },
-        "models.LicenseDB": {
-            "type": "object",
-            "properties": {
-                "active": {
-                    "type": "boolean"
-                },
-                "addDate": {
-                    "type": "string"
-                },
-                "copyleft": {
-                    "type": "boolean"
-                },
-                "externalRef": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
-                },
-                "fullname": {
-                    "type": "string"
-                },
-                "id": {
-                    "type": "string"
-                },
-                "notes": {
-                    "type": "string"
-                },
-                "obligations": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.Obligation"
-                    }
-                },
-                "osiapproved": {
-                    "type": "boolean"
-                },
-                "risk": {
-                    "type": "integer"
-                },
-                "shortname": {
-                    "type": "string"
-                },
-                "source": {
-                    "type": "string"
-                },
-                "spdxId": {
-                    "type": "string"
-                },
-                "text": {
-                    "type": "string"
-                },
-                "textUpdatable": {
-                    "type": "boolean"
-                },
-                "url": {
-                    "type": "string"
-                },
-                "user": {
-                    "$ref": "#/definitions/models.User"
-                },
-                "userId": {
-                    "type": "string"
                 }
             }
         },
@@ -2900,41 +2620,6 @@ const docTemplate = `{
                 "status": {
                     "type": "integer",
                     "example": 200
-                }
-            }
-        },
-        "models.LicenseListInput": {
-            "type": "object",
-            "properties": {
-                "ids": {
-                    "type": "array",
-                    "items": {
-                        "type": "object"
-                    }
-                }
-            }
-        },
-        "models.LicenseMapElement": {
-            "type": "object",
-            "properties": {
-                "add": {
-                    "type": "boolean",
-                    "example": true
-                },
-                "id": {
-                    "type": "string",
-                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-                }
-            }
-        },
-        "models.LicenseMapInput": {
-            "type": "object",
-            "properties": {
-                "map": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.LicenseMapElement"
-                    }
                 }
             }
         },
@@ -3017,7 +2702,7 @@ const docTemplate = `{
                     "type": "string",
                     "example": "This license has been superseded."
                 },
-                "obligations": {
+                "obligation_ids": {
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -3078,10 +2763,10 @@ const docTemplate = `{
                     "type": "string",
                     "example": "This license has been superseded."
                 },
-                "obligations": {
+                "obligation_ids": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/models.Obligation"
+                        "type": "string"
                     }
                 },
                 "risk": {
@@ -3113,62 +2798,6 @@ const docTemplate = `{
                 "url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
-                }
-            }
-        },
-        "models.Obligation": {
-            "type": "object",
-            "properties": {
-                "active": {
-                    "type": "boolean"
-                },
-                "category": {
-                    "type": "string",
-                    "enum": [
-                        "DISTRIBUTION",
-                        "PATENT",
-                        "INTERNAL",
-                        "CONTRACTUAL",
-                        "EXPORT_CONTROL",
-                        "GENERAL"
-                    ],
-                    "example": "DISTRIBUTION"
-                },
-                "classification": {
-                    "$ref": "#/definitions/models.ObligationClassification"
-                },
-                "comment": {
-                    "type": "string"
-                },
-                "externalRef": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_ObligationSchemaExtension"
-                },
-                "id": {
-                    "type": "string"
-                },
-                "licenses": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.LicenseDB"
-                    }
-                },
-                "obligationClassificationId": {
-                    "type": "string"
-                },
-                "obligationTypeId": {
-                    "type": "string"
-                },
-                "text": {
-                    "type": "string"
-                },
-                "textUpdatable": {
-                    "type": "boolean"
-                },
-                "topic": {
-                    "type": "string"
-                },
-                "type": {
-                    "$ref": "#/definitions/models.ObligationType"
                 }
             }
         },
@@ -3287,66 +2916,6 @@ const docTemplate = `{
                 "status": {
                     "type": "integer",
                     "example": 200
-                }
-            }
-        },
-        "models.ObligationMapLicenseFormat": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "string",
-                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-                },
-                "shortname": {
-                    "type": "string",
-                    "example": "MIT"
-                }
-            }
-        },
-        "models.ObligationMapResponse": {
-            "type": "object",
-            "properties": {
-                "data": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.ObligationMapUser"
-                    }
-                },
-                "paginationmeta": {
-                    "$ref": "#/definitions/models.PaginationMeta"
-                },
-                "status": {
-                    "type": "integer",
-                    "example": 200
-                }
-            }
-        },
-        "models.ObligationMapUser": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "string",
-                    "example": "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-                },
-                "licenses": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.ObligationMapLicenseFormat"
-                    }
-                },
-                "topic": {
-                    "type": "string",
-                    "example": "copyleft"
-                },
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ],
-                    "example": "obligation"
                 }
             }
         },

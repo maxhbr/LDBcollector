@@ -293,6 +293,140 @@ func TestImportObligations(t *testing.T) {
 
 		assert.Equal(t, http.StatusBadRequest, w.Code)
 	})
+
+	t.Run("importSuccessUpdateExistingLicense", func(t *testing.T) {
+		licenseW := makeRequest("GET", "/licenses", nil, true)
+		assert.Equal(t, http.StatusOK, licenseW.Code)
+
+		var licenseRes models.LicenseResponse
+		if err := json.Unmarshal(licenseW.Body.Bytes(), &licenseRes); err != nil {
+			t.Fatalf("Failed to parse license response: %v", err)
+		}
+
+		var licenseId *uuid.UUID
+		if len(licenseRes.Data) > 0 {
+			licenseId = &licenseRes.Data[0].Id
+		}
+
+		obligations := []models.ObligationFileDTO{
+			{
+				Id:             ptr(uuid.New()),
+				Topic:          ptr("IMPORT-OBLIGATION-1"),
+				Type:           ptr("RIGHT"),
+				Text:           ptr("Test obligation text for import"),
+				Classification: ptr("GREEN"),
+				Comment:        ptr("Test comment"),
+				Active:         ptr(true),
+				TextUpdatable:  ptr(false),
+				Category:       ptr("GENERAL"),
+			},
+		}
+
+		if licenseId != nil {
+			obligations[0].LicenseIds = &[]uuid.UUID{*licenseId}
+		}
+
+		jsonData, err := json.Marshal(obligations)
+		assert.NoError(t, err)
+
+		body := &bytes.Buffer{}
+		writer := multipart.NewWriter(body)
+		part, err := writer.CreateFormFile("file", "obligations.json")
+		assert.NoError(t, err)
+		_, err = part.Write(jsonData)
+		assert.NoError(t, err)
+		writer.Close()
+
+		fullPath := baseURL + "/obligations/import"
+		req := httptest.NewRequest("POST", fullPath, body)
+		req.Header.Set("Content-Type", writer.FormDataContentType())
+		req.Header.Set("Authorization", "Bearer "+AuthToken)
+		w := httptest.NewRecorder()
+		api.Router().ServeHTTP(w, req)
+
+		assert.Equal(t, http.StatusOK, w.Code)
+
+		var res models.ImportObligationsResponse
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Errorf("Error unmarshalling JSON: %v", err)
+			return
+		}
+		assert.Equal(t, http.StatusOK, res.Status)
+	})
+
+	t.Run("importSuccessUpdateExistingObligation", func(t *testing.T) {
+		licenseW := makeRequest("GET", "/licenses", nil, true)
+		assert.Equal(t, http.StatusOK, licenseW.Code)
+
+		var licenseRes models.LicenseResponse
+		if err := json.Unmarshal(licenseW.Body.Bytes(), &licenseRes); err != nil {
+			t.Fatalf("Failed to parse license response: %v", err)
+		}
+
+		var licenseId *uuid.UUID
+		if len(licenseRes.Data) > 0 {
+			licenseId = &licenseRes.Data[0].Id
+		}
+
+		dto := models.ObligationCreateDTO{
+			Topic:          "test-import-topic",
+			Type:           "RIGHT",
+			Text:           "test text for import",
+			Classification: "GREEN",
+			Comment:        ptr("unit test comment"),
+			Active:         ptr(true),
+			TextUpdatable:  ptr(false),
+			Category:       ptr("GENERAL"),
+			ExternalRef: models.ObligationSchemaExtension{
+				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
+			},
+			LicenseIds: []uuid.UUID{*licenseId},
+		}
+		id := assertObligationCreated(t, dto)
+
+		licenseId = &licenseRes.Data[1].Id
+		obligations := []models.ObligationFileDTO{
+			{
+				Id:             ptr(id),
+				Topic:          ptr("IMPORT-OBLIGATION-UPDATE"),
+				Type:           ptr("RIGHT"),
+				Text:           ptr("Test obligation text for import"),
+				Classification: ptr("GREEN"),
+				Comment:        ptr("Test comment"),
+				Active:         ptr(true),
+				TextUpdatable:  ptr(false),
+				Category:       ptr("GENERAL"),
+				LicenseIds:     &[]uuid.UUID{*licenseId},
+			},
+		}
+
+		jsonData, err := json.Marshal(obligations)
+		assert.NoError(t, err)
+
+		body := &bytes.Buffer{}
+		writer := multipart.NewWriter(body)
+		part, err := writer.CreateFormFile("file", "obligations.json")
+		assert.NoError(t, err)
+		_, err = part.Write(jsonData)
+		assert.NoError(t, err)
+		writer.Close()
+
+		fullPath := baseURL + "/obligations/import"
+		req := httptest.NewRequest("POST", fullPath, body)
+		req.Header.Set("Content-Type", writer.FormDataContentType())
+		req.Header.Set("Authorization", "Bearer "+AuthToken)
+		w := httptest.NewRecorder()
+		api.Router().ServeHTTP(w, req)
+
+		assert.Equal(t, http.StatusOK, w.Code)
+
+		var res models.ImportObligationsResponse
+		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+			t.Errorf("Error unmarshalling JSON: %v", err)
+			return
+		}
+		assert.Equal(t, http.StatusOK, res.Status)
+	})
 }
 
 func TestGetSimilarObligations(t *testing.T) {
