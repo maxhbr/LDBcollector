@@ -29,6 +29,14 @@ text = '''
 text here
 '''
 
+package = fcitx5-mozc
+location = LICENSE
+text = '''
+Public Domain Dataです。使用・変更・配布に関しては一切の制限をつけません。
+商品などに組み込むことも自由に行なってください。すでにいくつかの辞書には沖縄辞書が採用されています。
+勝手ながら、沖縄辞書に寄贈された辞書も in the Public Domain' 扱いとさせていただきます。
+'''
+
 package = rb_libtorrent
 location = include/libtorrent/sha1.hpp
 text = '''
@@ -998,8 +1006,10 @@ This is in the public domain
 
 package = automake
           mb2md
+          bsd-games
 location = https://git.savannah.gnu.org/cgit/automake.git/tree/lib/mkinstalldirs?h=v1.16#n8
            http://batleth.sapienti-sat.org/projects/mb2md/mb2md-3.20.pl.gz
+           wtf-20230906/wtf
 text = '''
 Public domain.
 '''
