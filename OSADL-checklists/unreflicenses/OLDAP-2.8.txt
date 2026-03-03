@@ -1,0 +1,10 @@
+USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Provide License text
+	YOU MUST NOT Promote
+USE CASE Binary delivery
+	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+	YOU MUST Provide License text
+	YOU MUST Provide License text In Documentation OR Distribution material
+	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+	YOU MUST NOT Promote

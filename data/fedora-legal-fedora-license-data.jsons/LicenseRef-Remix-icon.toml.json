@@ -1,0 +1,13 @@
+{
+  "license": {
+    "expression": "LicenseRef-Remix-icon",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://remixicon.com/license\n",
+    "text": "License Agreement\n\nRemixIcon is licensed based on the Apache License and all rights of products are reserved for RemixIcon.\nPermissions\n\n    All our icons can be downloaded and used for free\n    Commercial and non-commercial purposes\n    Distribution with attribution or credit\n\nProhibitions\n\n    Trademark use\n\n    Contact us if needed\n\n    Re-selling the icons in any form\n\n    Including but not limited to icon-pack, paid library including on our icons\n\n    Using our icons to replicate a similar or competing icons library, without significant modification\n\n    Such as color, size, corner-radius, border-size...\n"
+  },
+  "fedora": {
+    "notes": "While this claims to be Apache-2.0, the additional wording prohibits resale.\n"
+  }
+}

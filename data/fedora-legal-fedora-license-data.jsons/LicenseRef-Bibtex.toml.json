@@ -4,7 +4,8 @@
     "status": [
       "allowed"
     ],
-    "url": "https://fedoraproject.org/wiki/Licensing/Bibtex\n"
+    "url": "https://fedoraproject.org/wiki/Licensing/Bibtex\n",
+    "text": "        % Copyright (C) 1985, all rights reserved.\n        % Copying of this file is authorized only if either\n        % (1) you make absolutely no changes to your copy, including name, or\n        % (2) if you do make changes, you name it something other than\n        % btxbst.doc, plain.bst, unsrt.bst, alpha.bst, and abbrv.bst.\n        % This restriction helps ensure that all standard styles are identical.\n        % The file btxbst.doc has the documentation for this style.\n\nor \n\n%%%     license         = \"Unlimited copying and redistribution of this\n%%%                        file are permitted as long as this file is\n%%%                        not modified. Modifications are permitted,\n%%%                        but only if the resulting file is not named\n%%%                        path.sty regardless of case\",\n\n\nor\n\n%% This file may be modified for individual use.\n%%\n%% A modified version of this file may not be\n%% distributed under its original name.\n"
   },
   "fedora": {
     "legacy-name": [
@@ -12,6 +13,7 @@
     ],
     "legacy-abbreviation": [
       "Bibtex"
-    ]
+    ],
+    "notes": "This license is found in several components in TeXLive, mostly in components originating from BibTeX.\n\nThe FSF's rationale regarding the LaTeX Project Public License 1.2 applies to this specific scenario: http://www.fsf.org/licensing/licenses/index_html#GPLIncompatibleLicenses\n\n This license contains complex and annoying restrictions on how to\n publish a modified version, including one requirement that falls\n just barely on the good side of the line of what is acceptable: that\n any modified file must have a new name.\n\n The reason this requirement is acceptable for LaTeX is that TeX has\n a facility to allow you to map file names, to specify “use file bar\n when file foo is requested”. With this facility, the requirement is\n merely annoying; without the facility, the same requirement would be\n a serious obstacle, and we would have to conclude it makes the\n program non-free.\n\nThus, this license (and its variants) are free but GPL incompatible, but only on TeX files. If this license were applied to unrelated code, it would almost certainly be non-free due to the renaming restriction. \n"
   }
 }

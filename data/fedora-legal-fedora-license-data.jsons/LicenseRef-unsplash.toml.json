@@ -4,7 +4,8 @@
     "status": [
       "not-allowed"
     ],
-    "url": "https://unsplash.com/license\n"
+    "url": "https://unsplash.com/license\n",
+    "text": "Unsplash grants you an irrevocable, nonexclusive, worldwide\ncopyright license to download, copy, modify, distribute, perform, and use\nimages from Unsplash for free, including for commercial purposes, without\npermission from or attributing the photographer or Unsplash. This license does\nnot include the right to compile images from Unsplash to replicate a similar or\ncompeting service.\n"
   },
   "fedora": {
     "legacy-name": [

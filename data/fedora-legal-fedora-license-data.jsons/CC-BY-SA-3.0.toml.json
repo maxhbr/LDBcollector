@@ -3,7 +3,8 @@
     "expression": "CC-BY-SA-3.0",
     "status": [
       "allowed-content",
-      "allowed-documentation"
+      "allowed-documentation",
+      "allowed-fonts"
     ]
   },
   "fedora": {

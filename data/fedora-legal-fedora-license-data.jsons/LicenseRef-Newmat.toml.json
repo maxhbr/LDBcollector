@@ -4,7 +4,8 @@
     "status": [
       "allowed"
     ],
-    "url": "https://fedoraproject.org/wiki/Licensing/Newmat_License\n"
+    "url": "https://fedoraproject.org/wiki/Licensing/Newmat_License\n",
+    "text": "Conditions of use\n\nI place no restrictions on the use of newmat except that I take no liability\nfor any problems that may arise from its use, distribution or other dealings\nwith it. You can use it in your commercial projects (as well as your \nnon-commercial projects). You can make and distribute modified or merged \nversions. You can include parts of it in your own software. If you \ndistribute modified or merged versions, please make it clear which parts\nare mine and which parts are modified.\n"
   },
   "fedora": {
     "legacy-name": [

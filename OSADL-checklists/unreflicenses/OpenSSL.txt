@@ -1,0 +1,82 @@
+USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward License text
+	YOU MUST Forward Warranty disclaimer
+	YOU MUST Credit Verbatim "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+	IF Advertisement
+		YOU MUST Credit Verbatim "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)" In Advertisement
+		YOU MUST Credit Verbatim "This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)" In Advertisement
+	IF Including Windows code
+		YOU MUST Credit Verbatim "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
+	IF Software modification
+		YOU MUST NOT Promote Using "OpenSSL Toolkit" or "OpenSSL Project"
+		YOU MUST NOT Use "OpenSSL" In Product name
+	YOU MUST NOT Modify License
+USE CASE Binary delivery
+	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+	YOU MUST Provide License text In Documentation OR Distribution material
+	YOU MUST Provide Warranty disclaimer
+	YOU MUST Credit Verbatim "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+	IF Advertisement
+		YOU MUST Credit Verbatim "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)" In Advertisement
+		YOU MUST Credit Verbatim "This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)" In Advertisement
+	IF Including Windows code
+		YOU MUST Credit Verbatim "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
+	IF Software modification
+		YOU MUST NOT Promote Using "OpenSSL Toolkit" or "OpenSSL Project"
+		YOU MUST NOT Use "OpenSSL" In Product name
+	YOU MUST NOT Modify License
+COMPATIBILITY 0BSD
+COMPATIBILITY blessing
+COMPATIBILITY BlueOak-1.0.0
+COMPATIBILITY BSD-1-Clause
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSD-3-Clause-Open-MPI
+COMPATIBILITY BSD-Source-Code
+COMPATIBILITY BSD-4-Clause
+COMPATIBILITY BSD-4-Clause-UC
+COMPATIBILITY BSD-4.3TAHOE
+COMPATIBILITY BSL-1.0
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFUL
+COMPATIBILITY FSFULLR
+COMPATIBILITY FSFULLRWD
+COMPATIBILITY HPND
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY JasPer-2.0
+COMPATIBILITY Libpng
+COMPATIBILITY libpng-2.0
+COMPATIBILITY libtiff
+COMPATIBILITY LicenseRef-scancode-bsla-no-advert
+COMPATIBILITY LicenseRef-scancode-ppp
+COMPATIBILITY MirOS
+COMPATIBILITY MIT
+COMPATIBILITY MIT-0
+COMPATIBILITY MIT-CMU
+COMPATIBILITY NCSA
+COMPATIBILITY NTP
+COMPATIBILITY OLDAP-2.8
+COMPATIBILITY Saxpath
+COMPATIBILITY SGI-B-2.0
+COMPATIBILITY SMLNJ
+COMPATIBILITY SSH-OpenSSH
+COMPATIBILITY SSH-short
+COMPATIBILITY SunPro
+COMPATIBILITY TCL
+COMPATIBILITY TCP-wrappers
+COMPATIBILITY Unicode-3.0
+COMPATIBILITY Unicode-DFS-2016
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+COPYLEFT CLAUSE Questionable

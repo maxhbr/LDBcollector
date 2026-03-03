@@ -1,0 +1,62 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide OR Reference License text
+	YOU MUST Forward License notice
+	YOU MUST Forward Pointer To Warranty disclaimer
+	YOU MUST NOT Restrict Granted rights
+	YOU MUST NOT Use Technological measures
+		ATTRIBUTE To Restrict Exercise Of Granted rights
+	YOU MUST Forward Copyright notices
+	YOU MUST Provide Attribution notice
+		ATTRIBUTE Reasonable
+	IF Third-party attribution notice In Copyright notices OR Terms of service OR By Reasonable means
+		YOU MUST Provide Third-party attribution notice
+			ATTRIBUTE Reasonable
+	IF Title
+		YOU MUST Provide Title Of Work
+			ATTRIBUTE Reasonable
+	IF Pointer To Copyright notices OR License
+		YOU MUST Provide Pointer
+			ATTRIBUTE Reasonable
+	IF Software modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Reasonable
+			ATTRIBUTE As Highlighted As Attribution notice For Authorship Of Modification
+		IF Notice From Copyright holder
+			YOU MUST Delete Copyright notices
+				ATTRIBUTE As far as Feasible
+			YOU MUST Delete Attribution notice
+				ATTRIBUTE As far as Feasible
+			YOU MUST Delete Third-party attribution notice
+				ATTRIBUTE As far as Feasible
+	YOU MUST NOT Sublicense
+USE CASE Image delivery OR Font delivery
+	YOU MUST Provide OR Reference License text
+	YOU MUST Forward License notice
+	YOU MUST Forward Pointer To Warranty disclaimer
+	YOU MUST NOT Restrict Granted rights
+	YOU MUST NOT Use Technological measures
+		ATTRIBUTE To Restrict Exercise Of Granted rights
+	YOU MUST Forward Copyright notices
+	YOU MUST Provide Attribution notice
+		ATTRIBUTE Reasonable
+	IF Third-party attribution notice In Copyright notices OR Terms of service OR By Reasonable means
+		YOU MUST Provide Third-party attribution notice
+			ATTRIBUTE Reasonable
+	IF Title
+		YOU MUST Provide Title Of Work
+			ATTRIBUTE Reasonable
+	IF Pointer To Copyright notices OR License
+		YOU MUST Provide Pointer
+			ATTRIBUTE Reasonable
+	IF Modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Reasonable
+			ATTRIBUTE As Highlighted As Attribution notice For Authorship Of Modification
+		IF Notice From Copyright holder
+			YOU MUST Delete Copyright notices
+				ATTRIBUTE As far as Feasible
+			YOU MUST Delete Attribution notice
+				ATTRIBUTE As far as Feasible
+			YOU MUST Delete Third-party attribution notice
+				ATTRIBUTE As far as Feasible
+	YOU MUST NOT Sublicense

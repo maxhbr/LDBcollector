@@ -4,7 +4,8 @@
     "status": [
       "allowed"
     ],
-    "url": "https://fedoraproject.org/wiki/Licensing/Rice_BSD_License\n"
+    "url": "https://fedoraproject.org/wiki/Licensing/Rice_BSD_License\n",
+    "text": "Rice BSD Software License\nPermits source and binary redistribution of the software ARPACK and P_ARPACK \nfor both non-commercial and commercial use.\n\nCopyright (©) 2001, Rice University\nDeveloped by D.C. Sorensen, R.B. Lehoucq, C. Yang, and K. Maschhoff.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list \nof conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this \nlist of conditions and the following disclaimer in the documentation and/or other \nmaterials provided with the distribution.\nIf you modify the source for these routines we ask that you change the name of the \nroutine and comment the changes made to the original.\nWritten notification is provided to the developers of  intent to use this software.  \nAlso, we ask that use of ARPACK is properly cited in any resulting publications or \nsoftware documentation. \nNeither the name of Rice University (RICE) nor the names of its contributors may \nbe used to endorse or promote products derived from this software without specific \nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY RICE AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR \nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT \nSHALL RICE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, \nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF \nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS \nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, \nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY \nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
   },
   "fedora": {
     "legacy-name": [
@@ -12,6 +13,7 @@
     ],
     "legacy-abbreviation": [
       "RiceBSD"
-    ]
+    ],
+    "notes": "This license is free but GPL-incompatible. It was originally found at: http://www.caam.rice.edu/software/ARPACK/RiceBSD.doc but that URL is gone. A copy of the latest available version at archive.org has been preserved here for reference. It has been converted from its original format in Microsoft Office .DOC to plaintext. \n"
   }
 }

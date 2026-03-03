@@ -1,0 +1,25 @@
+USE CASE Font delivery
+	YOU MUST Provide Copyright notices
+		EITHER
+			ATTRIBUTE Separate Text file
+		OR
+			ATTRIBUTE Human-readable Headers
+		OR
+			ATTRIBUTE Machine-readable Metadata fields
+			ATTRIBUTE Easily Viewable
+	YOU MUST Provide License text
+		EITHER
+			ATTRIBUTE Separate Text file
+		OR
+			ATTRIBUTE Human-readable Headers
+		OR
+			ATTRIBUTE Machine-readable Metadata fields
+			ATTRIBUTE Easily Viewable
+	IF Font Modification
+		YOU MUST NOT Use Primary reserved font name
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		YOU MUST NOT Promote
+	YOU MUST NOT Sell Font
+		ATTRIBUTE Stand-alone
+COPYLEFT CLAUSE Yes

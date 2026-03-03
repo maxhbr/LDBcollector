@@ -1,0 +1,6 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Provide License text
+		ATTRIBUTE Verbatim
+	YOU MUST Provide Warranty disclaimer
+		ATTRIBUTE Verbatim

@@ -1,0 +1,9 @@
+{
+  "license": {
+    "expression": "LicenseRef-BASS",
+    "status": [
+      "not-allowed"
+    ],
+    "text": "The Legal Stuff:\n\nPreamble:\n  Basically, give this game away, share it with your friends. Don't remove this\nReadme, or pretend you wrote it. You can include it in a software collection,\nlike a linux distribution or coverdisk (which may be sold), but using it in\nthings like commercial adventure game collections without asking is just playing\ndirty. This preamble is not legally binding, but is to clarify the intent of the\nfollowing license.\n\nLicense:\n 1) You may distribute this game for free on any medium, provided this readme\nand all associated copyright notices and disclaimers are left intact.\n\n 2) You may charge a reasonable copying fee for this archive, and may distribute\nit in aggregate as part of a larger & possibly commercial software distribution\n(such as a Linux distribution or magazine coverdisk). You must provide proper\nattribution and ensure this readme and all associated copyright notices, and\ndisclaimers are left intact.\n\n 3) You may not charge a fee for the game itself. This includes reselling the\ngame as an individual item.\n\n 4) You may modify the game as you wish.  You may also distribute modified\nversions under the terms set forth in this license, but with the additional\nrequirement that the work is marked with a prominent notice which states that\nit is a modified version.\n\n 5) All game content is (C) Revolution Software Ltd. The ScummVM engine is (C)\nThe ScummVM Team (www.scummvm.org)\n\n 6) THE GAMEDATA IN THIS ARCHIVE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING AND NOT LIMITED TO ANY IMPLIED WARRANTIES OF\nMERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n"
+  }
+}

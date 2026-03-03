@@ -1,0 +1,5 @@
+USE CASE Source code delivery OR Binary delivery
+	IF Software modification
+		YOU MUST Provide Modification notice
+		IF Modified work Is Protocol incompatible
+			YOU MUST NOT Use "ssh" OR "Secure Shell" In Name

@@ -1,0 +1,9 @@
+USE CASE Source code delivery
+	YOU MUST NOT Misrepresent Authorship
+	YOU MUST Forward License text
+	IF Software modification
+		YOU MUST Provide Modification notice
+		YOU MUST NOT Misrepresent Modified work
+	YOU MUST NOT Modify Copyright notice
+USE CASE Binary delivery
+	YOU MUST NOT Misrepresent Authorship

@@ -4,7 +4,8 @@
     "status": [
       "allowed"
     ],
-    "url": "https://fedoraproject.org/wiki/Licensing/Lhcyr\n"
+    "url": "https://fedoraproject.org/wiki/Licensing/Lhcyr\n",
+    "text": "    LHCYR 1.0 (c) 1998 V.V.Zhytnikov (vvzhy@td.lpi.ac.ru)\n    The LaTeX 2e styles for Russian typesetting in bilingual environment\n    Available at CTAN:/tex-archive/macros/latex/contrib/supported/lhcyr\n    Main CTAN sites:  ctan.tug.org,  ftp.dante.de,  ftp.tex.ac.uk\n  \n    This package is free. You may modify and use it for whatever\n    purpose you want. But you are not allowed to redistribute modified\n    version under the same name.\n"
   },
   "fedora": {
     "legacy-name": [

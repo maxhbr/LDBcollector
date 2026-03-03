@@ -1,0 +1,12 @@
+USE CASE Source code delivery
+	YOU MUST Forward License text
+	YOU MUST NOT Misrepresent Authorship
+	IF Software modification
+		YOU MUST Provide Modification notice
+		YOU MUST NOT Misrepresent Modified work
+	IF Use in Product
+		YOU MUST Credit Verbatim "Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig"
+USE CASE Binary delivery
+	YOU MUST NOT Misrepresent Authorship
+	IF Use in Product
+		YOU MUST Credit Verbatim "Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig"

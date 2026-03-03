@@ -4,7 +4,10 @@
     "status": [
       "not-allowed"
     ],
-    "usage": " Allowed-for documentation if the copyright holder does not exercise any of the “LICENSE OPTIONS” listed in Section VI\n"
+    "usage": " Allowed-for documentation if the copyright holder does not exercise any of the “LICENSE OPTIONS” listed in Section VI\n",
+    "packages_with_exceptions": [
+      "vim"
+    ]
   },
   "fedora": {
     "legacy-name": [

@@ -1,0 +1,10 @@
+{
+  "license": {
+    "expression": "BSD-3-Clause WITH AdditionRef-Dart",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://raw.githubusercontent.com/dart-lang/sdk/refs/heads/main/PATENT_GRANT\n",
+    "text": "Additional IP Rights Grant (Patents)\n\n\"This implementation\" means the copyrightable works distributed by\nGoogle as part of the Dart Project.\n\nGoogle hereby grants to you a perpetual, worldwide, non-exclusive,\nno-charge, royalty-free, irrevocable (except as stated in this\nsection) patent license to make, have made, use, offer to sell, sell,\nimport, transfer, and otherwise run, modify and propagate the contents\nof this implementation of Dart, where such license applies only to\nthose patent claims, both currently owned by Google and acquired in\nthe future, licensable by Google that are necessarily infringed by\nthis implementation of Dart. This grant does not include claims that\nwould be infringed only as a consequence of further modification of\nthis implementation. If you or your agent or exclusive licensee\ninstitute or order or agree to the institution of patent litigation\nagainst any entity (including a cross-claim or counterclaim in a\nlawsuit) alleging that this implementation of Dart or any code\nincorporated within this implementation of Dart constitutes direct or\ncontributory patent infringement, or inducement of patent\ninfringement, then any patent rights granted to you under this License\nfor this implementation of Dart shall terminate as of the date such\nlitigation is filed.\n"
+  }
+}

@@ -4,7 +4,8 @@
     "status": [
       "allowed"
     ],
-    "url": "https://fedoraproject.org/wiki/Licensing/SCRIP\n"
+    "url": "https://fedoraproject.org/wiki/Licensing/SCRIP\n",
+    "text": "SCRIP Copyright\n\nCOPYRIGHT NOTICE\n\nCopyright (c) 1997, 1998 the Regents of the University of California.\n\nThis software and ancillary information (herein called SOFTWARE) called\nSCRIP is made available under the terms described here.  The SOFTWARE\nhas been approved for release with associated LA-CC Number 98-45.\n\nUnless otherwise indicated, this SOFTWARE has been authored by an\nemployee or employees of the University of California, operator\nof Los Alamos National Laboratory under Contract No. W-7405-ENG-36\nwith the United States Department of Energy.  The United States\nGovernment has rights to use, reproduce, and distribute this\nSOFTWARE.  The public may copy, distribute, prepare derivative\nworks and publicly display this SOFTWARE without charge, provided\nthat this Notice and any statement of authorship are reproduced\non all copies.  Neither the Government nor the University makes\nany warranty, express or implied, or assumes any liability or\nresponsibility for the use of this SOFTWARE.\n\nIf SOFTWARE is modified to produce derivative works, such modified\nSOFTWARE should be clearly marked, so as not to confuse it with the\nversion available from Los Alamos National Laboratory.\n"
   },
   "fedora": {
     "legacy-name": [

@@ -1,0 +1,10 @@
+{
+  "license": {
+    "expression": "LicenseRef-OASIS-spec",
+    "status": [
+      "allowed-content"
+    ],
+    "url": "https://invent.kde.org/libraries/kdsoap-ws-discovery-client/-/blob/master/LICENSES/LicenseRef-OASIS.txt?ref_type=heads\n",
+    "text": "This document and translations of it may be copied\nand furnished to others, and derivative works that comment\non or otherwise explain it or assist in its implementation\nmay be prepared, copied, published and distributed,\nin whole or in part, without restriction of any kind,\nprovided that the above copyright notice and this paragraph\nare included on all such copies and derivative works.\nHowever, this document itself may not be modified in\nany way, such as by removing the copyright notice or\nreferences to OASIS, except as needed for the purpose\nof developing OASIS specifications, in which case the\nprocedures for copyrights defined in the OASIS Intellectual\nProperty Rights document must be followed, or as required\nto translate it into languages other than English. \n\nThe limited permissions granted above are perpetual\nand will not be revoked by OASIS or its successors or\nassigns.\n\nThis document and the information contained herein\nis provided on an \"AS IS\" basis and OASIS DISCLAIMS\nALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT\nLIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION\nHEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES\nOF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n"
+  }
+}

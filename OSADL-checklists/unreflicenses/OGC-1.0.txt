@@ -1,0 +1,10 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide License text
+		ATTRIBUTE Viewable
+	YOU MUST Provide Legal notices
+	IF NOT Legal notices
+		YOU MUST Provide Copyright notice "Copyright © [$date-of-document] Open Geospatial Consortium, Inc. All Rights Reserved. https://www.ogc.org/about-ogc/policies/copyright-notice-and-disclaimers/"
+	IF Software modification
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+	YOU MUST NOT Promote

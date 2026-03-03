@@ -4,7 +4,8 @@
     "status": [
       "allowed"
     ],
-    "url": "https://fedoraproject.org/wiki/Licensing/midnight\n"
+    "url": "https://fedoraproject.org/wiki/Licensing/midnight\n",
+    "text": "% copyright (c) 1991 Marcel R. van der Goot\n%\tYou can use these macros to typeset documents. You may\n%\tdistribute this file freely, provided that you also distribute\n%\tthe accompanying documentation.\n%\t    You may make changes to this file, or extract portions\n%\tof it for inclusion in other files, provided that\n%\t    (1) you change the name of the file;\n%\t    (2) you give proper credit and include copyright\n%\t\tinformation where applicable;\n%\t    (3) explain how an unchanged version can be obtained; and\n%\t    (4) document the usage of your macros/changes (if usage\n%\t\tof your macros is not worth documenting, they must not\n%\t\tbe worth using).\n%\tYou are not allowed to use the name ``Midnight Macros'' for\n%\tany changed files.\n%\t    The above rules for making changes do not apply where it\n%\tis explicitly noted in this file that something can be changed\n%\tto conform to your local installation.\n"
   },
   "fedora": {
     "legacy-name": [

@@ -4,6 +4,9 @@
     "status": [
       "not-allowed"
     ],
-    "usage": "This license does not meet Fedora's current standards because of its patent language."
+    "usage": "This license does not meet Fedora's current standards because of its patent language.\n\nThere is kernel usage exception to cover certain kernel space uses.\nFedora cannot grant any exceptions to the prohibition on BSD-3-Clause-Clear for userspace packages.\n\nExisting uses of BSD-3-Clause-Clear in the ath11k and ath12k wireless\ndrivers in the Fedora kernel package (and minor modifications to those uses in\nthose drivers) are acceptable despite not being open source and, in principle,\nconflicting with GPL version 2.\n",
+    "packages_with_exceptions": [
+      "kernel"
+    ]
   }
 }

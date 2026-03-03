@@ -1,0 +1,18 @@
+USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward License text
+	YOU MUST Forward Warranty disclaimer
+	YOU MUST Credit Verbatim "This product includes PHP software, freely available from &lt;http://www.php.net/software/&gt;"
+	IF Software modification
+		YOU MUST NOT Promote Using "PHP"
+		YOU MUST NOT Use "PHP" In Product name
+		YOU MUST NOT Prepend "PHP" To Product name
+USE CASE Binary delivery
+	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+	YOU MUST Provide License text In Documentation OR Distribution material
+	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+	YOU MUST Credit Verbatim "This product includes PHP software, freely available from &lt;http://www.php.net/software/&gt;"
+	IF Software modification
+		YOU MUST NOT Promote Using "PHP"
+		YOU MUST NOT Use "PHP" In Product name
+		YOU MUST NOT Prepend "PHP" To Product name

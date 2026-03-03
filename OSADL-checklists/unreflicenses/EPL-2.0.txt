@@ -1,0 +1,103 @@
+USE CASE Source code delivery
+	YOU MUST Provide License text
+	YOU MUST NOT Modify Copyright notices
+	YOU MUST NOT Modify Patent notices
+	YOU MUST NOT Modify Trademark notices
+	YOU MUST NOT Modify Attribution notices
+	YOU MUST NOT Modify Warranty disclaimers
+	YOU MUST NOT Modify Liability disclaimers
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+	IF License change
+		YOU MUST Use Warranty disclaimer On behalf of Other contributors
+			ATTRIBUTE Effective
+		YOU MUST Use Liability disclaimer On behalf of Other contributors
+			ATTRIBUTE Effective
+		YOU MUST NOT Restrict Granted rights
+		YOU MUST Use Identical License obligations
+	IF Commercial distribution
+		YOU MUST Indemnify Other contributors
+USE CASE Binary delivery
+	YOU MUST Notify License
+	EITHER
+		YOU MUST Include Source code
+	OR
+		YOU MUST Provide Delayed source code delivery
+		YOU MUST Provide Written offer
+			ATTRIBUTE Reasonable
+			EITHER
+				ATTRIBUTE Customary medium
+			OR
+				ATTRIBUTE Via Internet
+	YOU MUST NOT Modify Copyright notices
+	YOU MUST NOT Modify Patent notices
+	YOU MUST NOT Modify Trademark notices
+	YOU MUST NOT Modify Attribution notices
+	YOU MUST NOT Modify Warranty disclaimers
+	YOU MUST NOT Modify Liability disclaimers
+	IF License change
+		YOU MUST Use Warranty disclaimer On behalf of Other contributors
+			ATTRIBUTE Effective
+		YOU MUST Use Liability disclaimer On behalf of Other contributors
+			ATTRIBUTE Effective
+		YOU MUST NOT Restrict Granted rights
+		YOU MUST Use Identical License obligations
+	IF Commercial distribution
+		YOU MUST Indemnify Other contributors
+COMPATIBILITY 0BSD
+COMPATIBILITY Apache-2.0
+COMPATIBILITY Artistic-2.0
+COMPATIBILITY blessing
+COMPATIBILITY BlueOak-1.0.0
+COMPATIBILITY BSD-1-Clause
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSD-3-Clause-Open-MPI
+COMPATIBILITY BSD-Source-Code
+COMPATIBILITY BSL-1.0
+COMPATIBILITY CC0-1.0
+COMPATIBILITY CPL-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY EPL-1.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFUL
+COMPATIBILITY FSFULLR
+COMPATIBILITY FSFULLRWD
+COMPATIBILITY HPND
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY JasPer-2.0
+COMPATIBILITY Libpng
+COMPATIBILITY libpng-2.0
+COMPATIBILITY libtiff
+COMPATIBILITY LicenseRef-scancode-ppp
+COMPATIBILITY MirOS
+COMPATIBILITY MIT
+COMPATIBILITY MIT-0
+COMPATIBILITY MIT-CMU
+COMPATIBILITY NCSA
+COMPATIBILITY NTP
+COMPATIBILITY OLDAP-2.8
+COMPATIBILITY Saxpath
+COMPATIBILITY SGI-B-2.0
+COMPATIBILITY SMLNJ
+COMPATIBILITY Spencer-86
+COMPATIBILITY SSH-OpenSSH
+COMPATIBILITY SSH-short
+COMPATIBILITY SunPro
+COMPATIBILITY TCL
+COMPATIBILITY TCP-wrappers
+COMPATIBILITY Unicode-3.0
+COMPATIBILITY Unicode-DFS-2016
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+PATENT HINTS Yes
+COPYLEFT CLAUSE Yes

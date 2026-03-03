@@ -4,7 +4,8 @@
     "status": [
       "allowed"
     ],
-    "url": "https://fedoraproject.org/wiki/Licensing/Par\n"
+    "url": "https://fedoraproject.org/wiki/Licensing/Par\n",
+    "text": "Copyright:\n\n    The files listed in the Files List section above are each Copyright\n    2000 by Adam M. Costello (henceforth \"I\", \"me\").\n\n    I grant everyone (\"you\") permission to do whatever you like with\n    these files, provided that if you modify them you take reasonable\n    steps to avoid confusing or misleading people about who wrote the\n    modified files (both you and I) or what version they are.  All\n    official versions of Par will have version numbers consisting of\n    only digits and periods.\n\n    I encourage you to send me copies of your modifications in case I\n    wish to incorporate them into future versions of Par.  See the Bugs\n    section for my address.\n\n    Though I have tried to make sure that Par is free of bugs, I make no\n    guarantees about its soundness.  Therefore, I am not responsible for\n    any damage resulting from the use of these files.\n"
   },
   "fedora": {
     "legacy-name": [

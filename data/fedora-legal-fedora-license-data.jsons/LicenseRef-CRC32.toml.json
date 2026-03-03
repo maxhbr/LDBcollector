@@ -12,6 +12,7 @@
     ],
     "legacy-abbreviation": [
       "CRC32"
-    ]
+    ],
+    "notes": "deprecated, use LicenseRef-Fedora-UltraPermissive instead.\n"
   }
 }

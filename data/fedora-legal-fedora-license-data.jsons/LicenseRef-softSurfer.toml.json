@@ -4,7 +4,8 @@
     "status": [
       "allowed"
     ],
-    "url": "https://fedoraproject.org/wiki/Licensing/softSurfer\n"
+    "url": "https://fedoraproject.org/wiki/Licensing/softSurfer\n",
+    "text": "// Copyright 2001 softSurfer, 2012-13 Dan Sunday\n// This code may be freely used, distributed and modified for any\n// purpose providing that this copyright notice is included with it.\n// SoftSurfer makes no warranty for this code, and cannot be held\n// liable for any real or imagined damage resulting from its use.\n// Users of this code must verify correctness for their application. \n"
   },
   "fedora": {
     "legacy-name": [
@@ -12,6 +13,7 @@
     ],
     "legacy-abbreviation": [
       "softSurfer"
-    ]
+    ],
+    "notes": "This is a minimal permissive license found in softSurfer.\nOriginally, it was missing permission to distribute, but that was corrected by\nupstream in 2013. It is Free and GPL-compatible. \n"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "Boehm-GC-without-fee",
+    "status": [
+      "allowed"
+    ]
+  }
+}

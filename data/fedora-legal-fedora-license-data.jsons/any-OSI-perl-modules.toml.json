@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "any-OSI-perl-modules",
+    "status": [
+      "allowed"
+    ]
+  }
+}

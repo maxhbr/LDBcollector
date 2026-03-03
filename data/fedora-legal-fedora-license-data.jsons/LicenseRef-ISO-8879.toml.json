@@ -5,6 +5,12 @@
       "not-allowed"
     ],
     "usage": "Fedora packages can include files with character entity declaration sets purportedly covered by this license text.\n",
+    "packages_with_exceptions": [
+      "dotnet7.0",
+      "dotnet8.0",
+      "dotnet9.0",
+      "dotnet10.0"
+    ],
     "text": "     Permission to copy in any form is granted for use with\n     conforming SGML systems and applications as defined in\n     ISO 8879, provided this notice is included in all copies.\n"
   }
 }

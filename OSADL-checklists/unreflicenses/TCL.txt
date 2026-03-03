@@ -1,0 +1,9 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Provide License text
+		ATTRIBUTE Verbatim
+	IF Software modification
+		IF License change
+			YOU MUST Include License notice
+				ATTRIBUTE Highlighted
+				ATTRIBUTE On Top Of Source code file

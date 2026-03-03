@@ -10,6 +10,6 @@
     "legacy-name": [
       "Apple Public Source License 1.0"
     ],
-    "notes": "This license is non-free. At one point, it could be found at\nhttp://www.opensource.apple.com/apsl/1.0.txt, but that link now\nredirects to APSL 2.0. A copy of the license text has been taken from\narchive.org's October 01, 2007 revision.\n"
+    "notes": "This license is non-free. At one point, it could be found at\nhttp://www.opensource.apple.com/apsl/1.0.txt, but that link now\nredirects to APSL 2.0. A copy of the license text has been taken from\narchive.org's October 01, 2007 revision.\n\nYou are allowed to treat this license as APSL-2.0.\nSee https://docs.fedoraproject.org/en-US/legal/license-field/#_apsl_1_x_licenses\n"
   }
 }

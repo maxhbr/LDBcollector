@@ -4,7 +4,11 @@
     "status": [
       "allowed-content",
       "allowed-documentation"
-    ]
+    ],
+    "packages_with_exceptions": [
+      "golang-x-perf"
+    ],
+    "usage": "This can be used for code for packages listed in packages_with_exceptions.\n"
   },
   "fedora": {
     "legacy-name": [
