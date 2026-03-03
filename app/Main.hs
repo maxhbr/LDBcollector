@@ -156,7 +156,7 @@ executeCommand = \case
   Serve -> serve
   Generate outDir -> do
     writeNameClustersCsv (T.unpack outDir </> "license-name-clusters.csv")
-    writeJSON (T.unpack outDir </> "ldb.json")
+    writeJSONAndGzip (T.unpack outDir </> "ldb.json")
   Default outDir -> do
     executeCommand (Generate outDir)
     executeCommand (WriteSource "SPDX" outDir)
