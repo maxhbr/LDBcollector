@@ -26,7 +26,7 @@
 
   </head>
   <body class="d-flex flex-column h-100">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
       <div class="container">
         %= link_to '/' => (class => 'navbar-brand') => begin
           <img src="<%= url_for '/images/legal-hammer-symbol.svg' %>" width="20" height="20" alt="Legal Icon">
@@ -45,10 +45,10 @@
                 class => current_route('reviews_recent') ? 'nav-link active' : 'nav-link' %>
             </li>
             <li class="nav-item">
-              %= link_to 'Snippets' => '/snippets', class => current_route('snippets') ? 'nav-link active' : 'nav-link'
+              %= link_to 'Products' => '/products', class => current_route('products') ? 'nav-link active' : 'nav-link'
             </li>
             <li class="nav-item">
-              %= link_to 'Products' => '/products', class => current_route('products') ? 'nav-link active' : 'nav-link'
+              %= link_to 'Snippets' => '/snippets', class => current_route('snippets') ? 'nav-link active' : 'nav-link'
             </li>
             <li class="nav-item">
               %= link_to 'Licenses' => '/licenses', class => current_route('licenses') ? 'nav-link active' : 'nav-link'
@@ -156,7 +156,7 @@
             <div class="col-sm align-self-center text-center cavil-copy">
               <b>Cavil</b> is maintained by
               <a href="https://github.com/openSUSE/cavil/issues"><b>Sebastian Riedel</b></a>.
-              <small><i class="far fa-copyright"></i> SUSE LLC.</small>
+              <small><i class="fa-regular fa-copyright"></i> SUSE LLC.</small>
             </div>
             <!--
               Logo made by Freepik (http://www.freepik.com) from flaticon.com,

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row">
+    <div class="row mt-3">
       <div class="col-12 alert alert-primary" role="alert">
         These are snippets with possibly missing licenses or license combinations that have been flagged by contributors
         for risk assessment.
@@ -20,7 +20,7 @@
               </span>
             </span>
             <span v-if="currentUser === change.login" class="float-end">
-              <a @click="dismissProposal(change)" href="#"><i class="fas fa-times"></i></a>
+              <a @click="dismissProposal(change)" href="#"><i class="fa-solid fa-xmark"></i></a>
             </span>
           </div>
           <div class="change-source">
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div v-else-if="change.state === 'updating'" class="col-12">
-          <div class="change-confirmation"><i class="fas fa-sync fa-spin"></i> Updating proposal</div>
+          <div class="change-confirmation"><i class="fa-solid fa-rotate fa-spin"></i> Updating proposal</div>
         </div>
         <div v-else-if="change.state === 'accepted'" class="col-12">
           <div class="change-confirmation">
@@ -72,10 +72,10 @@
         title="Click to return to the top"
         data-bs-toggle="tooltip"
         data-placement="left"
-        ><i class="fas fa-angle-up"></i
+        ><i class="fa-solid fa-angle-up"></i
       ></a>
     </div>
-    <div v-else-if="changes === null"><i class="fas fa-sync fa-spin"></i> Loading missing licenses</div>
+    <div v-else-if="changes === null"><i class="fa-solid fa-rotate fa-spin"></i> Loading missing licenses</div>
     <div v-else>There are currently no missing licenses.</div>
   </div>
 </template>

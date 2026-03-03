@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-3">
     <div>
       <form>
         <div class="row g-4">
@@ -65,7 +65,7 @@
             </thead>
             <tbody v-if="reviews === null">
               <tr>
-                <td id="all-done" colspan="5"><i class="fas fa-sync fa-spin"></i> Loading reviews...</td>
+                <td id="all-done" colspan="5"><i class="fa-solid fa-rotate fa-spin"></i> Loading reviews...</td>
               </tr>
             </tbody>
             <tbody v-else-if="reviews.length > 0">

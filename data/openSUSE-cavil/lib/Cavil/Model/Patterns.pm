@@ -16,7 +16,7 @@
 package Cavil::Model::Patterns;
 use Mojo::Base -base, -signatures;
 
-use Cavil::Util qw(paginate pattern_checksum);
+use Cavil::Util qw(paginate pattern_checksum spdx_link);
 use Mojo::File 'path';
 use Mojo::JSON qw(true false);
 use Spooky::Patterns::XS;
@@ -240,15 +240,17 @@ sub paginate_known_licenses ($self, $options) {
 
   my $results = $db->query(
     qq{
-      SELECT license, spdx, COUNT(*) OVER() AS total
+      SELECT license, spdx, ARRAY_AGG(DISTINCT(risk)) AS risks, COUNT(*) OVER() AS total
       FROM (
-        SELECT DISTINCT(license), spdx FROM license_patterns
+        SELECT DISTINCT(license), spdx, risk FROM license_patterns
         $search
       ) AS licenses
+      GROUP BY license, spdx
       ORDER BY license
       LIMIT ? OFFSET ?
     }, $options->{limit}, $options->{offset}
   )->hashes->to_array;
+  $_->{spdx_html} = spdx_link($_->{spdx}) for @$results;
 
   return paginate($results, $options);
 }
@@ -331,6 +333,8 @@ sub propose_ignore ($self, %args) {
           highlighted_licenses => $args{highlighted_licenses},
           edited               => $args{edited} // '0',
           package              => $args{package},
+          ai_assisted          => $args{ai_assisted} // '0',
+          reason               => $args{reason}      // ''
         }
       },
       owner        => $args{owner},

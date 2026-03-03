@@ -1,5 +1,12 @@
 <template>
-  <div>
+  <div class="mt-3">
+    <div class="row">
+      <div class="alert alert-primary" role="alert">
+        These patterns are used to identify relevant legal text in source code. This may be license text, copyright
+        statements, EULAs, CLAs, or other legal text. Patterns without license identifiers (keyword patterns) are used
+        to locate potential new license patterns.
+      </div>
+    </div>
     <div>
       <form>
         <div class="row g-4">
@@ -32,17 +39,23 @@
               <tr>
                 <th class="link" style="width: 50%">License</th>
                 <th>SPDX</th>
+                <th>Risks</th>
               </tr>
             </thead>
             <tbody v-if="licenses === null">
               <tr>
-                <td id="all-done" colspan="4"><i class="fas fa-sync fa-spin"></i> Loading licenses...</td>
+                <td id="all-done" colspan="4"><i class="fa-solid fa-rotate fa-spin"></i> Loading licenses...</td>
               </tr>
             </tbody>
             <tbody v-else-if="licenses.length > 0">
               <tr v-for="license in licenses" :key="license.link">
                 <td v-html="license.link"></td>
-                <td v-html="license.spdx"></td>
+                <td v-html="license.spdxHtml"></td>
+                <td>
+                  <span v-for="risk in license.risks" :key="risk" class="badge me-1" :class="badgeClass(risk)">{{
+                    risk
+                  }}</span>
+                </td>
               </tr>
             </tbody>
             <tbody v-else>
@@ -109,6 +122,12 @@ export default {
     }
   },
   methods: {
+    badgeClass(risk) {
+      if (risk === 1 || risk === 2 || risk === 3) return 'text-bg-success';
+      if (risk === 4) return 'text-bg-warning';
+      if (risk === 5 || risk === 6) return 'text-bg-danger';
+      return 'text-bg-dark';
+    },
     gotoPage(num) {
       this.cancelApiRefresh();
       const limit = this.params.limit;
@@ -125,7 +144,9 @@ export default {
       for (const license of data.page) {
         licenses.push({
           link: licenseLink(license),
-          spdx: license.spdx
+          spdx: license.spdx,
+          spdxHtml: license.spdx_html,
+          risks: license.risks
         });
       }
       this.licenses = licenses;

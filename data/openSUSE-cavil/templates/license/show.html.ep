@@ -1,7 +1,7 @@
 % layout 'default';
 % title "License details of $license";
 
-<div class="row g-4">
+<div class="row g-4 mt-3">
   % if (current_user_has_role 'admin') {
     %= form_for 'update_patterns' => begin
       <div class="col mb-3">
@@ -55,7 +55,7 @@
           % }
           % if (current_user_has_role 'admin') {
             <a href="<%= url_for('edit_pattern', id => $match->{id}) %>" title="Edit" class="float-end">
-              <i class="fas fa-edit"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
             </a>
           % }
         </div>

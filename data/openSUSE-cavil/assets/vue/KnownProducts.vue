@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-3">
     <div>
       <form>
         <div class="row g-4">
@@ -37,7 +37,7 @@
             </thead>
             <tbody v-if="products === null">
               <tr>
-                <td id="all-done" colspan="2"><i class="fas fa-sync fa-spin"></i> Loading products...</td>
+                <td id="all-done" colspan="4"><i class="fa-solid fa-rotate fa-spin"></i> Loading products...</td>
               </tr>
             </tbody>
             <tbody v-else-if="products.length > 0">

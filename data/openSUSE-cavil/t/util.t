@@ -150,6 +150,45 @@ subtest 'spdx_link' => sub {
     '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/Apache-2.0.html">Apache-2.0</a>',
     'known license';
   is spdx_link('Unknown-License'), 'Unknown-License', 'unknown license';
+
+  subtest 'Expression with AND' => sub {
+    is spdx_link('Apache-2.0 AND MIT'),
+      '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/Apache-2.0.html">Apache-2.0</a>' . ' AND '
+      . '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/MIT.html">MIT</a>';
+  };
+
+  subtest 'Expression with OR' => sub {
+    is spdx_link('MIT OR GPL-2.0-only'),
+      '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/MIT.html">MIT</a>' . ' OR '
+      . '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/GPL-2.0-only.html">GPL-2.0-only</a>';
+  };
+
+  subtest 'Expression with parentheses and AND/OR' => sub {
+    is spdx_link('(MIT OR Apache-2.0) AND GPL-2.0-only'),
+        '('
+      . '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/MIT.html">MIT</a>' . ' OR '
+      . '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/Apache-2.0.html">Apache-2.0</a>'
+      . ') AND '
+      . '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/GPL-2.0-only.html">GPL-2.0-only</a>';
+  };
+
+  subtest 'Expression with exception' => sub {
+    is spdx_link('Classpath-exception-2.0'),
+      '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/Classpath-exception-2.0.html">Classpath-exception-2.0</a>',
+      'SPDX exception only';
+
+    is spdx_link('GPL-2.0-only WITH Classpath-exception-2.0'),
+        '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/GPL-2.0-only.html">GPL-2.0-only</a>'
+      . ' WITH '
+      . '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/Classpath-exception-2.0.html">'
+      . 'Classpath-exception-2.0</a>', 'SPDX license WITH exception';
+
+    is spdx_link('MIT WITH Autoconf-exception-3.0'),
+        '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/MIT.html">MIT</a>'
+      . ' WITH '
+      . '<a class="spdx-link" target="_blank" href="https://spdx.org/licenses/Autoconf-exception-3.0.html">'
+      . 'Autoconf-exception-3.0</a>', 'MIT WITH Autoconf-exception-3.0';
+  };
 };
 
 subtest 'ssh_sign' => sub {
