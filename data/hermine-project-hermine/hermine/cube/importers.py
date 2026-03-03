@@ -7,6 +7,7 @@ import logging
 from datetime import datetime
 from typing import TextIO
 
+from cyclonedx.exception.serialization import CycloneDxDeserializationException
 from cyclonedx.model.bom import (
     Bom as CDXBom,
     Dependency as CDXDependency,
@@ -317,7 +318,10 @@ def import_cyclonedx_file(
     validation_errors = json_validator.validate_str(cyclonedx_file_content)
     if validation_errors:
         raise SBOMImportFailure(f"Invalid CycloneDX file: {repr(validation_errors)}")
-    bom = CDXBom.from_json(json.loads(cyclonedx_file_content))
+    try:
+        bom = CDXBom.from_json(json.loads(cyclonedx_file_content))
+    except CycloneDxDeserializationException as e:
+        raise SBOMImportFailure(f"Could not parse CycloneDX file. {e}")
 
     if replace:
         Usage.objects.filter(release=release_id).delete()

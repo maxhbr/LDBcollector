@@ -243,7 +243,7 @@ class CreateDerogationForm(BaseUsageConditionForm):
         )
 
     def clean(self, **kwargs):
-        cleaned_data = super().cleaned_data
+        cleaned_data = super().clean()
         if cleaned_data["linking_choice"] == self.USAGE:
             self.instance.linking = self.usage.linking
         if cleaned_data["modification_choice"] == self.USAGE:
