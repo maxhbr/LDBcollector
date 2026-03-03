@@ -1,17 +1,16 @@
 {
-    "meta": {
-        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
-    },
-    "name": "MIT Modern Variant",
-    "scancode_key": "mit-modern",
-    "spdxid": "MIT-Modern-Variant",
-    "compatibility_as": "MIT",
-    "aliases": [
-        "MIT-Modern-Variant",
-        "scancode://mit-modern",
-        "MIT Modern Variant",
-        "MIT License Modern Variant",
-        "mit-modern"
-    ]
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "MIT Modern Variant",
+  "scancode_key": "mit-modern",
+  "spdxid": "MIT-Modern-Variant",
+  "aliases": [
+   "MIT License Modern Variant",
+   "MIT Modern Variant",
+   "MIT-Modern-Variant",
+   "scancode://mit-modern",
+    "mit-modern-variant"
+  ]
 }

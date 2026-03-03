@@ -22,6 +22,7 @@
    "mozilla1.1",
    "osi:MPL-1.1",
    "scancode://mpl-1.1",
-    "scancode:dpl-1.1"
+    "scancode:dpl-1.1",
+    "MPL-1.1 Public License"
   ]
 }

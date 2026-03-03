@@ -14,6 +14,7 @@
         "scancode://libpng",
         "PNG Reference Library License 1",
         "PNG Reference Library License version 1",
-        "libpng"
+      "libpng",
+      "LIBPNG"
     ]
 }

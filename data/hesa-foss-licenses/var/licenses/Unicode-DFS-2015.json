@@ -1,0 +1,25 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Unicode License Agreement - Data Files and Software (2015)",
+  "scancode_key": "unicode-dfs-2015",
+  "spdxid": "Unicode-DFS-2015",
+  "aliases": [
+    "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)",
+    "Unicode DFS 2015",
+    "Unicode DFS License 2015",
+    "Unicode DFS License, Version 2015",
+    "Unicode DFS, Version 2015",
+    "Unicode License Agreement - Data Files and Software (2015)",
+    "Unicode-DFS License, 2015",
+    "Unicode-DFS License, Version 2015",
+    "Unicode-DFS, 2015",
+    "Unicode-DFS, Version 2015",
+    "Unicode-DFS-2015",
+    "scancode:unicode-dfs-2015",
+    "unicode-dfs-2015",
+    "scancode://unicode-dfs-2015"
+  ]
+}

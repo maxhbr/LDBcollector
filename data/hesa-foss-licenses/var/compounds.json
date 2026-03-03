@@ -11,7 +11,7 @@
           "AGPL 3.0 WITH romic-exception"
         ]
       },
-        {
+      {
             "spdxid": "Apache-2.0 WITH LLVM-exception",
             "aliases": [
                 "Apache-2.0-WITH-LLVM-exception",
@@ -27,8 +27,8 @@
               "Apache-with-LLVM-Exception",
               "Apache-with-Runtime-Exception",
               "Apache-2.0 WITH LLVM-exception exception",
-              "Apache-2.0 WITH LLVM Exceptions"
-
+              "Apache-2.0 WITH LLVM Exceptions",
+              "Apache-2.0 WITH LLVM Exceptions."
             ],
             "compatibility_as": "0BSD"            
         },
@@ -75,7 +75,10 @@
               "GPL-2.0-only WITH Linux-syscall-note-exception",
               "GPL-2 with Linux-syscall-note exception",
               "GPL-2.0-only WITH Linux Syscall Note",
-              "gpl-2.0-with-linux-syscall-note"
+              "gpl-2.0-with-linux-syscall-note",
+              "GPL-2.0-only WITH linux-syscall-note",
+              "GPL-2.0-only WITH linux-syscall-note exception",
+              "GPL-2withLinux-syscall-noteexception"
             ],
             "compatibility_as": "GPL-2.0-only WITH Classpath-exception-2.0"
         },
@@ -111,7 +114,13 @@
                 "GPL-3--libtool-exception"
             ]
         },
-        {
+      {
+        "spdxid": "GPL-2.0-or-later WITH GCC-exception-2.0",
+        "aliases": [
+          "GPL-2.0-or-later WITH gnu-compiler-exception"
+        ]
+      },
+      {
             "spdxid": "GPL-3.0-only WITH GCC-exception-3.1",
             "aliases": [
                 "GPL-3.0-with-GCC-exception",
@@ -127,7 +136,9 @@
               "GPL-2.0-only WITH GCC exception",
               "GPL-2.0-only WITH GCC Runtime Library exception",
               "GNU General Public License 3 plus GCC RUNTIME LIBRARY EXCEPTION",
-              "GNU General Public Licensev3 w/Runtime exception V3.1"
+              "GNU General Public Licensev3 w/Runtime exception V3.1",
+              "GPL-3.0-only plus GCC RUNTIME LIBRARY EXCEPTION",
+              "GPL-3.0-only WITH RLE"
             ],
             "compatibility_as": "0BSD"
         },

@@ -36,6 +36,7 @@
       "ZLIB_LICENSE",
       "zlib-libpng-like-permissive",
       "Zlib License",
-      "ZLIB"
+      "ZLIB",
+      "https://zlib.net/zlib_license.html"
     ]
 }

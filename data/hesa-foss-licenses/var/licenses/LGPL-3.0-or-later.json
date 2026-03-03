@@ -100,6 +100,8 @@
       "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
       "lgpl-3+",
       "GNU Lesser General Public License-3+",
-      "GNU Lesser General Public License-3.0-or-later"
+      "GNU Lesser General Public License-3.0-or-later",
+      "GNU Lesser General Public License-3.0+",
+      "GNU LGPL-3.0-or-later"
     ]
 }

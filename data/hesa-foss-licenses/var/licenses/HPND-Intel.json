@@ -1,0 +1,12 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Intel Open Source License 1993",
+  "scancode_key": "intel-osl-1993",
+  "spdxid": "HPND-Intel",
+  "aliases": [
+    "hpnd-intel"
+  ]
+}

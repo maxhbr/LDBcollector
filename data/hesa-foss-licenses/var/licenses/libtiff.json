@@ -11,6 +11,7 @@
         "libtiff License",
         "scancode://x11-tiff",
         "X11-Style (Tiff)",
-        "x11-tiff"
+      "x11-tiff",
+      "LIBTIFF"
     ]
 }

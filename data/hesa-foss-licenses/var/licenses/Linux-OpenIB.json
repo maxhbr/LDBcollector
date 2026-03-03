@@ -1,0 +1,17 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Linux-OpenIB",
+  "scancode_key": "linux-openib",
+  "spdxid": "Linux-OpenIB",
+  "aliases": [
+   "Linux Kernel Variant of OpenIB.org license",
+   "Linux Kernel Variant of OpenIB.org License",
+   "Linux-OpenIB",
+   "scancode://linux-openib",
+   "scancode:linux-openib",
+    "linux-openib"
+  ]
+}
