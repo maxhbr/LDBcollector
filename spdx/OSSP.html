@@ -1,0 +1,514 @@
+<html><head><title>ldbcollector: spdx:OSSP</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:OSSP</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OSSP</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">OSSP</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>OSSP</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OSSP</span></li><li><span class="licensename">OSSP License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>OSSP License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OSSP License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OSSP-License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:09575c88da748cd3eb0617a83e874418">[<a href="/fact/SPDXLicense/09575c88da748cd3eb0617a83e874418">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:12e44c38ca62d535833dde40afe3ae91">[<a href="/fact/FedoraEntry/12e44c38ca62d535833dde40afe3ae91">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.sr.ht/~nabijaczleweli/ossp-var" target="_blank">https://git.sr.ht/~nabijaczleweli/ossp-var</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT AND LICENSE
+
+  Copyright (c) 2001-2005 Ralf S. Engelschall &lt;rse@engelschall.com&gt;
+  Copyright (c) 2001-2005 The OSSP Project &lt;http://www.ossp.org/&gt;
+  Copyright (c) 2001-2005 Cable &amp; Wireless &lt;http://www.cw.com/&gt;
+
+  This file is part of OSSP var, a variable expansion
+  library which can be found at http://www.ossp.org/pkg/lib/var/.
+
+  Permission to use, copy, modify, and distribute this software for
+  any purpose with or without fee is hereby granted, provided that
+  the above copyright notice and this permission notice appear in all
+  copies.
+
+  THIS SOFTWARE IS PROVIDED ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED
+  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS AND THEIR
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+  USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+  OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            COPYRIGHT AND LICENSE
+         &lt;/var&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            &lt;p&gt;
+               Copyright (c) 2001-2005 Ralf S. Engelschall
+               &amp;lt;rse@engelschall.com&amp;gt; Copyright (c) 2001-2005 The
+               OSSP Project &amp;lt;http://www.ossp.org/&amp;gt; Copyright (c)
+               2001-2005 Cable &amp;amp; Wireless &amp;lt;http://www.cw.com/&amp;gt;
+            &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;
+               This file is part of OSSP var, a variable expansion library
+               which can be found at http://www.ossp.org/pkg/lib/var/.
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify, and distribute this
+            software for any purpose with or without fee is hereby
+            granted, provided that the above copyright notice
+            and this permission notice appear in all copies.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            THIS SOFTWARE IS PROVIDED ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR IMPLIED
+            WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+            DISCLAIMED. IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS
+            AND THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+            INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+            (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+            GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+            INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+            WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/09575c88da748cd3eb0617a83e874418">SPDXLicense:09575c88da748cd3eb0617a83e874418</a> for <a href="/?license=spdx:OSSP"><span class="licensename"><span class="namespace">spdx:</span>OSSP</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OSSP</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OSSP License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:09575c88da748cd3eb0617a83e874418">[<a href="/fact/SPDXLicense/09575c88da748cd3eb0617a83e874418">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.sr.ht/~nabijaczleweli/ossp-var" target="_blank">https://git.sr.ht/~nabijaczleweli/ossp-var</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT AND LICENSE
+
+  Copyright (c) 2001-2005 Ralf S. Engelschall &lt;rse@engelschall.com&gt;
+  Copyright (c) 2001-2005 The OSSP Project &lt;http://www.ossp.org/&gt;
+  Copyright (c) 2001-2005 Cable &amp; Wireless &lt;http://www.cw.com/&gt;
+
+  This file is part of OSSP var, a variable expansion
+  library which can be found at http://www.ossp.org/pkg/lib/var/.
+
+  Permission to use, copy, modify, and distribute this software for
+  any purpose with or without fee is hereby granted, provided that
+  the above copyright notice and this permission notice appear in all
+  copies.
+
+  THIS SOFTWARE IS PROVIDED ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED
+  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS AND THEIR
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+  USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+  OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            COPYRIGHT AND LICENSE
+         &lt;/var&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            &lt;p&gt;
+               Copyright (c) 2001-2005 Ralf S. Engelschall
+               &amp;lt;rse@engelschall.com&amp;gt; Copyright (c) 2001-2005 The
+               OSSP Project &amp;lt;http://www.ossp.org/&amp;gt; Copyright (c)
+               2001-2005 Cable &amp;amp; Wireless &amp;lt;http://www.cw.com/&amp;gt;
+            &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;
+               This file is part of OSSP var, a variable expansion library
+               which can be found at http://www.ossp.org/pkg/lib/var/.
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify, and distribute this
+            software for any purpose with or without fee is hereby
+            granted, provided that the above copyright notice
+            and this permission notice appear in all copies.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            THIS SOFTWARE IS PROVIDED ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR IMPLIED
+            WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+            DISCLAIMED. IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS
+            AND THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+            INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+            (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+            GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+            INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+            WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OSSP&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OSSP License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;09575c88da748cd3eb0617a83e874418&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;COPYRIGHT AND LICENSE\n\n  Copyright (c) 2001-2005 Ralf S. Engelschall &lt;rse@engelschall.com&gt;\n  Copyright (c) 2001-2005 The OSSP Project &lt;http://www.ossp.org/&gt;\n  Copyright (c) 2001-2005 Cable &amp; Wireless &lt;http://www.cw.com/&gt;\n\n  This file is part of OSSP var, a variable expansion\n  library which can be found at http://www.ossp.org/pkg/lib/var/.\n\n  Permission to use, copy, modify, and distribute this software for\n  any purpose with or without fee is hereby granted, provided that\n  the above copyright notice and this permission notice appear in all\n  copies.\n\n  THIS SOFTWARE IS PROVIDED ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED\n  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\n  IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS AND THEIR\n  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\n  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\n  USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\n  OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n  SUCH DAMAGE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            COPYRIGHT AND LICENSE\n         &lt;/var&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            &lt;p&gt;\n               Copyright (c) 2001-2005 Ralf S. Engelschall\n               &amp;lt;rse@engelschall.com&amp;gt; Copyright (c) 2001-2005 The\n               OSSP Project &amp;lt;http://www.ossp.org/&amp;gt; Copyright (c)\n               2001-2005 Cable &amp;amp; Wireless &amp;lt;http://www.cw.com/&amp;gt;\n            &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;\n               This file is part of OSSP var, a variable expansion library\n               which can be found at http://www.ossp.org/pkg/lib/var/.\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify, and distribute this\n            software for any purpose with or without fee is hereby\n            granted, provided that the above copyright notice\n            and this permission notice appear in all copies.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            THIS SOFTWARE IS PROVIDED ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR IMPLIED\n            WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n            DISCLAIMED. IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS\n            AND THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\n            INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n            (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\n            GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n            INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n            WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.sr.ht/~nabijaczleweli/ossp-var&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.sr.ht/~nabijaczleweli/ossp-var&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:56:43Z&quot;,
+                &quot;url&quot;: &quot;https://git.sr.ht/~nabijaczleweli/ossp-var&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:OSSP&quot;,
+        &quot;licenseText&quot;: &quot;COPYRIGHT AND LICENSE\n\n  Copyright (c) 2001-2005 Ralf S. Engelschall &lt;rse@engelschall.com&gt;\n  Copyright (c) 2001-2005 The OSSP Project &lt;http://www.ossp.org/&gt;\n  Copyright (c) 2001-2005 Cable &amp; Wireless &lt;http://www.cw.com/&gt;\n\n  This file is part of OSSP var, a variable expansion\n  library which can be found at http://www.ossp.org/pkg/lib/var/.\n\n  Permission to use, copy, modify, and distribute this software for\n  any purpose with or without fee is hereby granted, provided that\n  the above copyright notice and this permission notice appear in all\n  copies.\n\n  THIS SOFTWARE IS PROVIDED ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED\n  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\n  IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS AND THEIR\n  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\n  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\n  USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\n  OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n  SUCH DAMAGE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            COPYRIGHT AND LICENSE\n         &lt;/var&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            &lt;p&gt;\n               Copyright (c) 2001-2005 Ralf S. Engelschall\n               &amp;lt;rse@engelschall.com&amp;gt; Copyright (c) 2001-2005 The\n               OSSP Project &amp;lt;http://www.ossp.org/&amp;gt; Copyright (c)\n               2001-2005 Cable &amp;amp; Wireless &amp;lt;http://www.cw.com/&amp;gt;\n            &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;\n               This file is part of OSSP var, a variable expansion library\n               which can be found at http://www.ossp.org/pkg/lib/var/.\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify, and distribute this\n            software for any purpose with or without fee is hereby\n            granted, provided that the above copyright notice\n            and this permission notice appear in all copies.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            THIS SOFTWARE IS PROVIDED ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR IMPLIED\n            WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n            DISCLAIMED. IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS\n            AND THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\n            INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n            (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\n            GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n            INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n            WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;OSSP License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://git.sr.ht/~nabijaczleweli/ossp-var&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;COPYRIGHT AND LICENSE&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2001-2005 Ralf S. Engelschall &lt;rse@engelschall.com&gt; Copyright (c) 2001-2005 The OSSP Project &lt;http://www.ossp.org/&gt; Copyright (c) 2001-2005 Cable &amp; Wireless &lt;http://www.cw.com/&gt;  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; This file is part of OSSP var, a variable expansion library which can be found at http://www.ossp.org/pkg/lib/var/.\n\n&lt;&lt;endOptional&gt;&gt;\nPermission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS AND COPYRIGHT HOLDERS AND THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/12e44c38ca62d535833dde40afe3ae91">FedoraEntry:12e44c38ca62d535833dde40afe3ae91</a> for <a href="/?license=Fedora:OSSP"><span class="licensename"><span class="namespace">Fedora:</span>OSSP</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>OSSP</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OSSP</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:12e44c38ca62d535833dde40afe3ae91">[<a href="/fact/FedoraEntry/12e44c38ca62d535833dde40afe3ae91">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:OSSP&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:OSSP&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;12e44c38ca62d535833dde40afe3ae91&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;OSSP&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:OSSP&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/3698e742e3da8e4e28c6755f27bd087a">MetaeffektLicense:3698e742e3da8e4e28c6755f27bd087a</a> for <a href="/?license=metaeffekt:OSSP License"><span class="licensename"><span class="namespace">metaeffekt:</span>OSSP License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>OSSP License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OSSP</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">OSSP License</span></li><li><span class="licensename">OSSP License</span></li><li><span class="licensename">OSSP-License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:OSSP License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:OSSP&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OSSP License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OSSP License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OSSP-License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;3698e742e3da8e4e28c6755f27bd087a&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;OSSP License&quot;,
+            &quot;OSSP-License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:OSSP License&quot;,
+        &quot;_category&quot;: &quot;OSSP License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:OSSP&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/f88f576e76eedccb0a9b7252be8a674f">LicenseLynx:f88f576e76eedccb0a9b7252be8a674f</a> for <a href="/?license=spdx:OSSP"><span class="licensename"><span class="namespace">spdx:</span>OSSP</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OSSP</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OSSP License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OSSP&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:OSSP License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;f88f576e76eedccb0a9b7252be8a674f&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;spdx:OSSP License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:OSSP&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

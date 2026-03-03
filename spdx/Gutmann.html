@@ -1,0 +1,756 @@
+<html><head><title>ldbcollector: spdx:Gutmann</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:Gutmann</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></li></ul></li><li><b>other LicenseNames (17):</b><ul class="capsulUl clearfix"><li><span class="licensename">ASN.1 Object Dumping Code License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>ASN.1 Object Dumping Code License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ASN.1 Object Dumping Code License</span></li><li><span class="licensename">asn1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>asn1</span></li><li><span class="licensename">ASN1-object-dumping-code</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>ASN1-object-dumping-code</span></li><li><span class="licensename">Gutmann</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Gutmann</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Gutmann</span></li><li><span class="licensename"><span class="namespace">scancode:</span>gutmann</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></li><li><span class="licensename">Gutmann License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann License</span></li><li><span class="licensename">LicenseRef-scancode-asn1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-asn1</span></li><li><span class="licensename"><span class="namespace">spdx:</span>LicenseRef-scancode-asn1</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">ASN.1 object dumping code</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:18735612a33c5451c41fd70b17ce1d47">[<a href="/fact/ScancodeData/18735612a33c5451c41fd70b17ce1d47">ScancodeData</a>]</span><span title="ScancodeData:446da26056d2859c963e05c8dacbca3f">[<a href="/fact/ScancodeData/446da26056d2859c963e05c8dacbca3f">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:601840104f42bcaea86bdfcb2f0cb4a7">[<a href="/fact/SPDXLicense/601840104f42bcaea86bdfcb2f0cb4a7">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:689a10149033f77acb1bddb320407923">[<a href="/fact/FedoraEntry/689a10149033f77acb1bddb320407923">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a6fbcbfbbe96420d9fc2d64d37b1648c">[<a href="/fact/OrtLicenseCategorization/a6fbcbfbbe96420d9fc2d64d37b1648c">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:ee4fdf2985904c77a893b5f9c7866a12">[<a href="/fact/OrtLicenseCategorization/ee4fdf2985904c77a893b5f9c7866a12">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a6fbcbfbbe96420d9fc2d64d37b1648c">[<a href="/fact/OrtLicenseCategorization/a6fbcbfbbe96420d9fc2d64d37b1648c">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:ee4fdf2985904c77a893b5f9c7866a12">[<a href="/fact/OrtLicenseCategorization/ee4fdf2985904c77a893b5f9c7866a12">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX license list 3.24
+This was previously the license rule: other-permissive_bsdish_1.RULE
+<span class="provided-by">(provided by: <span title="ScancodeData:446da26056d2859c963e05c8dacbca3f">[<a href="/fact/ScancodeData/446da26056d2859c963e05c8dacbca3f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c" target="_blank">https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>You can use this code in whatever way you want, as long as you don&#39;t try
+to claim you wrote it.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            You can use this code in whatever way you want,
+            as long as you don&amp;apos;t try to claim you wrote it.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>ASN.1 Object Dumping Code License
+
+ASN.1 object dumping code, copyright Peter Gutmann &lt;pgut001@cs.auckland.ac.nz&gt;, based on ASN.1 dump program by David Kemp &lt;dpkemp@missi.ncsc.mil&gt;, with contributions from various people including Matthew Hamrick &lt;hamrick@rsa.com&gt;, Bruno Couillard &lt;bcouillard@chrysalis-its.com&gt;, Hallvard Furuseth &lt;h.b.furuseth@usit.uio.no&gt;, Geoff Thorpe &lt;geoff@raas.co.nz&gt;, David Boyce &lt;d.boyce@isode.com&gt;, John Hughes &lt;john.hughes@entegrity.com&gt;, Life is hard, and then you die &lt;ronald@trustpoint.com&gt;, Hans-Olof Hermansson &lt;hans-olof.hermansson@postnet.se&gt;, Tor Rustad &lt;Tor.Rustad@bbs.no&gt;, Kjetil Barvik &lt;kjetil.barvik@bbs.no&gt;, James Sweeny &lt;jsweeny@us.ibm.com&gt;, Chris Ridd &lt;chris.ridd@isode.com&gt;, and several other people whose names I&#39;ve misplaced (a number of those email addresses probably no longer work, since this code has been around for awhile).
+
+Available from http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c Last updated 7 January 2009 (version 20090107, if you prefer it that way). To build under Windows, use &#39;cl /MD dumpasn1.c&#39;. To build on OS390 or z/OS, use &#39;/bin/c89 -D OS390 -o dumpasn1 dumpasn1.c&#39;.
+
+This code grew slowly over time without much design or planning, and with extra features being tacked on as required. It&#39;s not representative of my normal coding style.
+
+This version of dumpasn1 requires a config file dumpasn1.cfg to be present in the same location as the program itself or in a standard directory where binaries live (it will run without it but will display a warning message, you can configure the path either by hardcoding it in or using an environment variable as explained further down). The config file is available from http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.cfg
+
+This code assumes that the input data is binary, having come from a MIME-aware mailer or been piped through a decoding utility if the original format used base64 encoding. If you need to decode it, it&#39;s recommended that you use a utility like uudeview, which will strip virtually any kind of encoding (MIME, PEM, PGP, whatever) to recover the binary original.
+
+You can use this code in whatever way you want, as long as you don&#39;t try to claim you wrote it.
+
+Editing notes: Tabs to 4, phasers to stun (and in case anyone wants to complain about that, see &quot;Program Indentation and Comprehensiblity&quot;, Richard Miara, Joyce Musselman, Juan Navarro, and Ben Shneiderman, Communications of the ACM, Vol.26, No.11 (November 1983), p.861)</pre></details></li><li><details><summary>Text:</summary><pre>You can use this code in whatever way you want, as long as you don&#39;t try
+to claim you wrote it.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/601840104f42bcaea86bdfcb2f0cb4a7">SPDXLicense:601840104f42bcaea86bdfcb2f0cb4a7</a> for <a href="/?license=spdx:Gutmann"><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Gutmann License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:601840104f42bcaea86bdfcb2f0cb4a7">[<a href="/fact/SPDXLicense/601840104f42bcaea86bdfcb2f0cb4a7">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c" target="_blank">https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>You can use this code in whatever way you want, as long as you don&#39;t try
+to claim you wrote it.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            You can use this code in whatever way you want,
+            as long as you don&amp;apos;t try to claim you wrote it.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Gutmann&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Gutmann License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;601840104f42bcaea86bdfcb2f0cb4a7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;You can use this code in whatever way you want, as long as you don&#39;t try\nto claim you wrote it.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            You can use this code in whatever way you want,\n            as long as you don&amp;apos;t try to claim you wrote it.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:03:35Z&quot;,
+                &quot;url&quot;: &quot;https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Gutmann&quot;,
+        &quot;licenseText&quot;: &quot;You can use this code in whatever way you want, as long as you don&#39;t try\nto claim you wrote it.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            You can use this code in whatever way you want,\n            as long as you don&amp;apos;t try to claim you wrote it.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Gutmann License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;You can use this code in whatever way you want, as long as you don&#39;t try to claim you wrote it.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/689a10149033f77acb1bddb320407923">FedoraEntry:689a10149033f77acb1bddb320407923</a> for <a href="/?license=Fedora:Gutmann"><span class="licensename"><span class="namespace">Fedora:</span>Gutmann</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Gutmann</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:689a10149033f77acb1bddb320407923">[<a href="/fact/FedoraEntry/689a10149033f77acb1bddb320407923">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Gutmann&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Gutmann&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;689a10149033f77acb1bddb320407923&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Gutmann&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Gutmann&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/18735612a33c5451c41fd70b17ce1d47">ScancodeData:18735612a33c5451c41fd70b17ce1d47</a> for <a href="/?license=scancode:asn1"><span class="licensename"><span class="namespace">scancode:</span>asn1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>asn1</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">ASN.1 Object Dumping Code License</span></li><li><span class="licensename">ASN.1 Object Dumping Code License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>LicenseRef-scancode-asn1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:18735612a33c5451c41fd70b17ce1d47">[<a href="/fact/ScancodeData/18735612a33c5451c41fd70b17ce1d47">ScancodeData</a>]</span>)</span></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>ASN.1 Object Dumping Code License
+
+ASN.1 object dumping code, copyright Peter Gutmann &lt;pgut001@cs.auckland.ac.nz&gt;, based on ASN.1 dump program by David Kemp &lt;dpkemp@missi.ncsc.mil&gt;, with contributions from various people including Matthew Hamrick &lt;hamrick@rsa.com&gt;, Bruno Couillard &lt;bcouillard@chrysalis-its.com&gt;, Hallvard Furuseth &lt;h.b.furuseth@usit.uio.no&gt;, Geoff Thorpe &lt;geoff@raas.co.nz&gt;, David Boyce &lt;d.boyce@isode.com&gt;, John Hughes &lt;john.hughes@entegrity.com&gt;, Life is hard, and then you die &lt;ronald@trustpoint.com&gt;, Hans-Olof Hermansson &lt;hans-olof.hermansson@postnet.se&gt;, Tor Rustad &lt;Tor.Rustad@bbs.no&gt;, Kjetil Barvik &lt;kjetil.barvik@bbs.no&gt;, James Sweeny &lt;jsweeny@us.ibm.com&gt;, Chris Ridd &lt;chris.ridd@isode.com&gt;, and several other people whose names I&#39;ve misplaced (a number of those email addresses probably no longer work, since this code has been around for awhile).
+
+Available from http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c Last updated 7 January 2009 (version 20090107, if you prefer it that way). To build under Windows, use &#39;cl /MD dumpasn1.c&#39;. To build on OS390 or z/OS, use &#39;/bin/c89 -D OS390 -o dumpasn1 dumpasn1.c&#39;.
+
+This code grew slowly over time without much design or planning, and with extra features being tacked on as required. It&#39;s not representative of my normal coding style.
+
+This version of dumpasn1 requires a config file dumpasn1.cfg to be present in the same location as the program itself or in a standard directory where binaries live (it will run without it but will display a warning message, you can configure the path either by hardcoding it in or using an environment variable as explained further down). The config file is available from http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.cfg
+
+This code assumes that the input data is binary, having come from a MIME-aware mailer or been piped through a decoding utility if the original format used base64 encoding. If you need to decode it, it&#39;s recommended that you use a utility like uudeview, which will strip virtually any kind of encoding (MIME, PEM, PGP, whatever) to recover the binary original.
+
+You can use this code in whatever way you want, as long as you don&#39;t try to claim you wrote it.
+
+Editing notes: Tabs to 4, phasers to stun (and in case anyone wants to complain about that, see &quot;Program Indentation and Comprehensiblity&quot;, Richard Miara, Joyce Musselman, Juan Navarro, and Ben Shneiderman, Communications of the ACM, Vol.26, No.11 (November 1983), p.861)</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:asn1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;ASN.1 Object Dumping Code License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ASN.1 Object Dumping Code License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:LicenseRef-scancode-asn1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;18735612a33c5451c41fd70b17ce1d47&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;ASN.1 Object Dumping Code License\n\nASN.1 object dumping code, copyright Peter Gutmann &lt;pgut001@cs.auckland.ac.nz&gt;, based on ASN.1 dump program by David Kemp &lt;dpkemp@missi.ncsc.mil&gt;, with contributions from various people including Matthew Hamrick &lt;hamrick@rsa.com&gt;, Bruno Couillard &lt;bcouillard@chrysalis-its.com&gt;, Hallvard Furuseth &lt;h.b.furuseth@usit.uio.no&gt;, Geoff Thorpe &lt;geoff@raas.co.nz&gt;, David Boyce &lt;d.boyce@isode.com&gt;, John Hughes &lt;john.hughes@entegrity.com&gt;, Life is hard, and then you die &lt;ronald@trustpoint.com&gt;, Hans-Olof Hermansson &lt;hans-olof.hermansson@postnet.se&gt;, Tor Rustad &lt;Tor.Rustad@bbs.no&gt;, Kjetil Barvik &lt;kjetil.barvik@bbs.no&gt;, James Sweeny &lt;jsweeny@us.ibm.com&gt;, Chris Ridd &lt;chris.ridd@isode.com&gt;, and several other people whose names I&#39;ve misplaced (a number of those email addresses probably no longer work, since this code has been around for awhile).\n\nAvailable from http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c Last updated 7 January 2009 (version 20090107, if you prefer it that way). To build under Windows, use &#39;cl /MD dumpasn1.c&#39;. To build on OS390 or z/OS, use &#39;/bin/c89 -D OS390 -o dumpasn1 dumpasn1.c&#39;.\n\nThis code grew slowly over time without much design or planning, and with extra features being tacked on as required. It&#39;s not representative of my normal coding style.\n\nThis version of dumpasn1 requires a config file dumpasn1.cfg to be present in the same location as the program itself or in a standard directory where binaries live (it will run without it but will display a warning message, you can configure the path either by hardcoding it in or using an environment variable as explained further down). The config file is available from http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.cfg\n\nThis code assumes that the input data is binary, having come from a MIME-aware mailer or been piped through a decoding utility if the original format used base64 encoding. If you need to decode it, it&#39;s recommended that you use a utility like uudeview, which will strip virtually any kind of encoding (MIME, PEM, PGP, whatever) to recover the binary original.\n\nYou can use this code in whatever way you want, as long as you don&#39;t try to claim you wrote it.\n\nEditing notes: Tabs to 4, phasers to stun (and in case anyone wants to complain about that, see \&quot;Program Indentation and Comprehensiblity\&quot;, Richard Miara, Joyce Musselman, Juan Navarro, and Ben Shneiderman, Communications of the ACM, Vol.26, No.11 (November 1983), p.861)&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;asn1&quot;,
+        &quot;_name&quot;: &quot;ASN.1 Object Dumping Code License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;ASN.1 Project&quot;,
+        &quot;_shortName&quot;: &quot;ASN.1 Object Dumping Code License&quot;,
+        &quot;_spdxId&quot;: &quot;LicenseRef-scancode-asn1&quot;,
+        &quot;_text&quot;: &quot;ASN.1 Object Dumping Code License\n\nASN.1 object dumping code, copyright Peter Gutmann &lt;pgut001@cs.auckland.ac.nz&gt;, based on ASN.1 dump program by David Kemp &lt;dpkemp@missi.ncsc.mil&gt;, with contributions from various people including Matthew Hamrick &lt;hamrick@rsa.com&gt;, Bruno Couillard &lt;bcouillard@chrysalis-its.com&gt;, Hallvard Furuseth &lt;h.b.furuseth@usit.uio.no&gt;, Geoff Thorpe &lt;geoff@raas.co.nz&gt;, David Boyce &lt;d.boyce@isode.com&gt;, John Hughes &lt;john.hughes@entegrity.com&gt;, Life is hard, and then you die &lt;ronald@trustpoint.com&gt;, Hans-Olof Hermansson &lt;hans-olof.hermansson@postnet.se&gt;, Tor Rustad &lt;Tor.Rustad@bbs.no&gt;, Kjetil Barvik &lt;kjetil.barvik@bbs.no&gt;, James Sweeny &lt;jsweeny@us.ibm.com&gt;, Chris Ridd &lt;chris.ridd@isode.com&gt;, and several other people whose names I&#39;ve misplaced (a number of those email addresses probably no longer work, since this code has been around for awhile).\n\nAvailable from http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c Last updated 7 January 2009 (version 20090107, if you prefer it that way). To build under Windows, use &#39;cl /MD dumpasn1.c&#39;. To build on OS390 or z/OS, use &#39;/bin/c89 -D OS390 -o dumpasn1 dumpasn1.c&#39;.\n\nThis code grew slowly over time without much design or planning, and with extra features being tacked on as required. It&#39;s not representative of my normal coding style.\n\nThis version of dumpasn1 requires a config file dumpasn1.cfg to be present in the same location as the program itself or in a standard directory where binaries live (it will run without it but will display a warning message, you can configure the path either by hardcoding it in or using an environment variable as explained further down). The config file is available from http://www.cs.auckland.ac.nz/~pgut001/dumpasn1.cfg\n\nThis code assumes that the input data is binary, having come from a MIME-aware mailer or been piped through a decoding utility if the original format used base64 encoding. If you need to decode it, it&#39;s recommended that you use a utility like uudeview, which will strip virtually any kind of encoding (MIME, PEM, PGP, whatever) to recover the binary original.\n\nYou can use this code in whatever way you want, as long as you don&#39;t try to claim you wrote it.\n\nEditing notes: Tabs to 4, phasers to stun (and in case anyone wants to complain about that, see \&quot;Program Indentation and Comprehensiblity\&quot;, Richard Miara, Joyce Musselman, Juan Navarro, and Ben Shneiderman, Communications of the ACM, Vol.26, No.11 (November 1983), p.861)&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/446da26056d2859c963e05c8dacbca3f">ScancodeData:446da26056d2859c963e05c8dacbca3f</a> for <a href="/?license=scancode:gutmann"><span class="licensename"><span class="namespace">scancode:</span>gutmann</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>gutmann</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></li><li><span class="licensename">Gutmann License</span></li><li><span class="licensename">Gutmann License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:446da26056d2859c963e05c8dacbca3f">[<a href="/fact/ScancodeData/446da26056d2859c963e05c8dacbca3f">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX license list 3.24
+This was previously the license rule: other-permissive_bsdish_1.RULE
+<span class="provided-by">(provided by: <span title="ScancodeData:446da26056d2859c963e05c8dacbca3f">[<a href="/fact/ScancodeData/446da26056d2859c963e05c8dacbca3f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c" target="_blank">https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>You can use this code in whatever way you want, as long as you don&#39;t try
+to claim you wrote it.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:gutmann&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Gutmann License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Gutmann License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Gutmann&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;446da26056d2859c963e05c8dacbca3f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Added in SPDX license list 3.24\nThis was previously the license rule: other-permissive_bsdish_1.RULE\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;You can use this code in whatever way you want, as long as you don&#39;t try\nto claim you wrote it.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;gutmann&quot;,
+        &quot;_name&quot;: &quot;Gutmann License&quot;,
+        &quot;_notes&quot;: &quot;Added in SPDX license list 3.24\nThis was previously the license rule: other-permissive_bsdish_1.RULE\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://www.cs.auckland.ac.nz/~pgut001/dumpasn1.c&quot;
+        ],
+        &quot;_owner&quot;: &quot;Peter Gutmann&quot;,
+        &quot;_shortName&quot;: &quot;Gutmann License&quot;,
+        &quot;_spdxId&quot;: &quot;Gutmann&quot;,
+        &quot;_text&quot;: &quot;You can use this code in whatever way you want, as long as you don&#39;t try\nto claim you wrote it.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/a6fbcbfbbe96420d9fc2d64d37b1648c">OrtLicenseCategorization:a6fbcbfbbe96420d9fc2d64d37b1648c</a> for <a href="/?license=SPDX:Gutmann"><span class="licensename"><span class="namespace">SPDX:</span>Gutmann</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Gutmann</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a6fbcbfbbe96420d9fc2d64d37b1648c">[<a href="/fact/OrtLicenseCategorization/a6fbcbfbbe96420d9fc2d64d37b1648c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a6fbcbfbbe96420d9fc2d64d37b1648c">[<a href="/fact/OrtLicenseCategorization/a6fbcbfbbe96420d9fc2d64d37b1648c">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Gutmann&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;a6fbcbfbbe96420d9fc2d64d37b1648c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Gutmann&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/ee4fdf2985904c77a893b5f9c7866a12">OrtLicenseCategorization:ee4fdf2985904c77a893b5f9c7866a12</a> for <a href="/?license=SPDX:LicenseRef-scancode-asn1"><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-asn1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-asn1</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ee4fdf2985904c77a893b5f9c7866a12">[<a href="/fact/OrtLicenseCategorization/ee4fdf2985904c77a893b5f9c7866a12">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ee4fdf2985904c77a893b5f9c7866a12">[<a href="/fact/OrtLicenseCategorization/ee4fdf2985904c77a893b5f9c7866a12">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LicenseRef-scancode-asn1&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;ee4fdf2985904c77a893b5f9c7866a12&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LicenseRef-scancode-asn1&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/f48692456ca0e8cc9eba99d1f4016c92">CavilLicenseChange:f48692456ca0e8cc9eba99d1f4016c92</a> for <a href="/?license=cavil:Gutmann"><span class="licensename"><span class="namespace">cavil:</span>Gutmann</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Gutmann</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Gutmann</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Gutmann&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Gutmann&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;f48692456ca0e8cc9eba99d1f4016c92&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Gutmann&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Gutmann&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/02076f6e711c42e78b5a7271295312da">MetaeffektLicense:02076f6e711c42e78b5a7271295312da</a> for <a href="/?license=metaeffekt:ASN1-object-dumping-code"><span class="licensename"><span class="namespace">metaeffekt:</span>ASN1-object-dumping-code</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>ASN1-object-dumping-code</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>ASN.1 Object Dumping Code License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">ASN.1 object dumping code</span></li><li><span class="licensename">ASN.1 Object Dumping Code License</span></li><li><span class="licensename">ASN.1 Object Dumping Code License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>asn1</span></li><li><span class="licensename">Gutmann License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:ASN1-object-dumping-code&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:ASN.1 Object Dumping Code License&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:Gutmann&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;ASN.1 Object Dumping Code License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ASN.1 Object Dumping Code License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ASN.1 object dumping code&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Gutmann License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:asn1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;02076f6e711c42e78b5a7271295312da&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;ASN.1 Object Dumping Code License&quot;,
+            &quot;ASN.1 object dumping code&quot;,
+            &quot;Gutmann License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:ASN.1 Object Dumping Code License&quot;,
+        &quot;_category&quot;: &quot;ASN.1 Object Dumping Code License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:asn1&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:ASN1-object-dumping-code&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Gutmann&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/f5a90b5942db264f974250595f6b1ffa">LicenseLynx:f5a90b5942db264f974250595f6b1ffa</a> for <a href="/?license=spdx:Gutmann"><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>gutmann</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Gutmann License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Gutmann&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:gutmann&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Gutmann License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;f5a90b5942db264f974250595f6b1ffa&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:gutmann&quot;,
+            &quot;spdx:Gutmann License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:Gutmann&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/53360e43038cddc17fe811bb620c9186">LicenseLynx:53360e43038cddc17fe811bb620c9186</a> for <a href="/?license=scancode:asn1"><span class="licensename"><span class="namespace">scancode:</span>asn1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>asn1</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ASN.1 Object Dumping Code License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-asn1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:asn1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:ASN.1 Object Dumping Code License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:LicenseRef-scancode-asn1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;53360e43038cddc17fe811bb620c9186&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:ASN.1 Object Dumping Code License&quot;,
+            &quot;scancode:LicenseRef-scancode-asn1&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;scancode:asn1&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

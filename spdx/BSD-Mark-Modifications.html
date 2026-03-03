@@ -1,0 +1,601 @@
+<html><head><title>ldbcollector: spdx:BSD-Mark-Modifications</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-Mark-Modifications</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Mark-Modifications</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 4-Clause License (mark modifications)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 4-Clause License (mark modifications)</span></li><li><span class="licensename">BSD Mark Modifications License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD Mark Modifications License</span></li><li><span class="licensename">BSD-4-Clause-mark-modifications</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD-4-Clause-mark-modifications</span></li><li><span class="licensename">BSD-Mark-Modifications</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Mark-Modifications</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Mark-Modifications</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename">BSD 4-Clause License (Modification Advertized)</span></li><li><span class="licensename">BSD 4-Clause Modification Advertized</span></li><li><span class="licensename">BSD-4-Clause-Modification-Advertized</span></li><li><span class="licensename"><span class="namespace">cavil:</span>SUSE-BSD-Mark-Modifications</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:ad4a7360287bd85977ea11dc5ff5dcf6">[<a href="/fact/SPDXLicense/ad4a7360287bd85977ea11dc5ff5dcf6">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b86532987427de4077eef3efc5cc3a17">[<a href="/fact/FedoraEntry/b86532987427de4077eef3efc5cc3a17">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2" target="_blank">https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>License text:  Copyright 1993, Geoff Kuenning, Granada Hills, CA
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+3. All modifications to the source code must be clearly marked as
+such.  Binary redistributions based on modified source code
+must be clearly marked as modified versions in the documentation
+and/or other materials provided with the distribution.
+(clause 4 removed with permission from Geoff Kuenning)
+
+4. The name of Geoff Kuenning may not be used to endorse or promote
+products derived from this software without specific prior
+written permission.
+
+THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL GEOFF KUENNING OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;
+            License text: Copyright 1993, Geoff Kuenning, Granada
+            Hills, CA All rights reserved.
+         &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+                Redistribution and use in source and binary forms, with or
+                without modification, are permitted provided that the following
+                conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+           
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+                Redistributions of source code must retain the above
+                copyright
+                notice, this list of conditions and the following disclaimer.
+           &lt;/li&gt;
+           
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+                Redistributions in binary form must reproduce the above
+                copyright
+                notice, this list of conditions and the following disclaimer in
+                the
+                documentation and/or other materials provided with the
+                distribution.
+           &lt;/li&gt;
+           
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+                All modifications to the source code must be clearly marked
+                as
+                such.  Binary redistributions based on modified source code
+                must be clearly marked as modified versions in the documentation
+                and/or other materials provided with the distribution.
+                (clause 4 removed with permission from Geoff Kuenning)
+           &lt;/li&gt;
+           
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+                The name of Geoff Kuenning may not be used to endorse or
+                promote
+                products derived from this software without specific prior
+                written permission.
+           &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+                THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS
+                ``AS IS&amp;apos;&amp;apos; AND
+                ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+                TO, THE
+                IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                PARTICULAR PURPOSE
+                ARE DISCLAIMED. IN NO EVENT SHALL GEOFF KUENNING OR
+                CONTRIBUTORS BE LIABLE
+                FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+                CONSEQUENTIAL
+                DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+                SUBSTITUTE GOODS
+                OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+                INTERRUPTION)
+                HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+                CONTRACT, STRICT
+                LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+                IN ANY WAY
+                OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+                POSSIBILITY OF
+                SUCH DAMAGE.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/ad4a7360287bd85977ea11dc5ff5dcf6">SPDXLicense:ad4a7360287bd85977ea11dc5ff5dcf6</a> for <a href="/?license=spdx:BSD-Mark-Modifications"><span class="licensename"><span class="namespace">spdx:</span>BSD-Mark-Modifications</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Mark-Modifications</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Mark Modifications License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:ad4a7360287bd85977ea11dc5ff5dcf6">[<a href="/fact/SPDXLicense/ad4a7360287bd85977ea11dc5ff5dcf6">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2" target="_blank">https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>License text:  Copyright 1993, Geoff Kuenning, Granada Hills, CA
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+3. All modifications to the source code must be clearly marked as
+such.  Binary redistributions based on modified source code
+must be clearly marked as modified versions in the documentation
+and/or other materials provided with the distribution.
+(clause 4 removed with permission from Geoff Kuenning)
+
+4. The name of Geoff Kuenning may not be used to endorse or promote
+products derived from this software without specific prior
+written permission.
+
+THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL GEOFF KUENNING OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;
+            License text: Copyright 1993, Geoff Kuenning, Granada
+            Hills, CA All rights reserved.
+         &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+                Redistribution and use in source and binary forms, with or
+                without modification, are permitted provided that the following
+                conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+           
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+                Redistributions of source code must retain the above
+                copyright
+                notice, this list of conditions and the following disclaimer.
+           &lt;/li&gt;
+           
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+                Redistributions in binary form must reproduce the above
+                copyright
+                notice, this list of conditions and the following disclaimer in
+                the
+                documentation and/or other materials provided with the
+                distribution.
+           &lt;/li&gt;
+           
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+                All modifications to the source code must be clearly marked
+                as
+                such.  Binary redistributions based on modified source code
+                must be clearly marked as modified versions in the documentation
+                and/or other materials provided with the distribution.
+                (clause 4 removed with permission from Geoff Kuenning)
+           &lt;/li&gt;
+           
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+                The name of Geoff Kuenning may not be used to endorse or
+                promote
+                products derived from this software without specific prior
+                written permission.
+           &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+                THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS
+                ``AS IS&amp;apos;&amp;apos; AND
+                ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+                TO, THE
+                IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                PARTICULAR PURPOSE
+                ARE DISCLAIMED. IN NO EVENT SHALL GEOFF KUENNING OR
+                CONTRIBUTORS BE LIABLE
+                FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+                CONSEQUENTIAL
+                DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+                SUBSTITUTE GOODS
+                OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+                INTERRUPTION)
+                HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+                CONTRACT, STRICT
+                LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+                IN ANY WAY
+                OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+                POSSIBILITY OF
+                SUCH DAMAGE.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-Mark-Modifications&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD Mark Modifications License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;ad4a7360287bd85977ea11dc5ff5dcf6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;License text:  Copyright 1993, Geoff Kuenning, Granada Hills, CA\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\n3. All modifications to the source code must be clearly marked as\nsuch.  Binary redistributions based on modified source code\nmust be clearly marked as modified versions in the documentation\nand/or other materials provided with the distribution.\n(clause 4 removed with permission from Geoff Kuenning)\n\n4. The name of Geoff Kuenning may not be used to endorse or promote\nproducts derived from this software without specific prior\nwritten permission.\n\nTHIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL GEOFF KUENNING OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;\n            License text: Copyright 1993, Geoff Kuenning, Granada\n            Hills, CA All rights reserved.\n         &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n                Redistribution and use in source and binary forms, with or\n                without modification, are permitted provided that the following\n                conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n           \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n                Redistributions of source code must retain the above\n                copyright\n                notice, this list of conditions and the following disclaimer.\n           &lt;/li&gt;\n           \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n                Redistributions in binary form must reproduce the above\n                copyright\n                notice, this list of conditions and the following disclaimer in\n                the\n                documentation and/or other materials provided with the\n                distribution.\n           &lt;/li&gt;\n           \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n                All modifications to the source code must be clearly marked\n                as\n                such.  Binary redistributions based on modified source code\n                must be clearly marked as modified versions in the documentation\n                and/or other materials provided with the distribution.\n                (clause 4 removed with permission from Geoff Kuenning)\n           &lt;/li&gt;\n           \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n                The name of Geoff Kuenning may not be used to endorse or\n                promote\n                products derived from this software without specific prior\n                written permission.\n           &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n                THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS\n                ``AS IS&amp;apos;&amp;apos; AND\n                ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED\n                TO, THE\n                IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n                PARTICULAR PURPOSE\n                ARE DISCLAIMED. IN NO EVENT SHALL GEOFF KUENNING OR\n                CONTRIBUTORS BE LIABLE\n                FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n                CONSEQUENTIAL\n                DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n                SUBSTITUTE GOODS\n                OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n                INTERRUPTION)\n                HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n                CONTRACT, STRICT\n                LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\n                IN ANY WAY\n                OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\n                POSSIBILITY OF\n                SUCH DAMAGE.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:54:27Z&quot;,
+                &quot;url&quot;: &quot;https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:BSD-Mark-Modifications&quot;,
+        &quot;licenseText&quot;: &quot;License text:  Copyright 1993, Geoff Kuenning, Granada Hills, CA\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\n3. All modifications to the source code must be clearly marked as\nsuch.  Binary redistributions based on modified source code\nmust be clearly marked as modified versions in the documentation\nand/or other materials provided with the distribution.\n(clause 4 removed with permission from Geoff Kuenning)\n\n4. The name of Geoff Kuenning may not be used to endorse or promote\nproducts derived from this software without specific prior\nwritten permission.\n\nTHIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL GEOFF KUENNING OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;\n            License text: Copyright 1993, Geoff Kuenning, Granada\n            Hills, CA All rights reserved.\n         &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n                Redistribution and use in source and binary forms, with or\n                without modification, are permitted provided that the following\n                conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n           \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n                Redistributions of source code must retain the above\n                copyright\n                notice, this list of conditions and the following disclaimer.\n           &lt;/li&gt;\n           \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n                Redistributions in binary form must reproduce the above\n                copyright\n                notice, this list of conditions and the following disclaimer in\n                the\n                documentation and/or other materials provided with the\n                distribution.\n           &lt;/li&gt;\n           \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n                All modifications to the source code must be clearly marked\n                as\n                such.  Binary redistributions based on modified source code\n                must be clearly marked as modified versions in the documentation\n                and/or other materials provided with the distribution.\n                (clause 4 removed with permission from Geoff Kuenning)\n           &lt;/li&gt;\n           \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n                The name of Geoff Kuenning may not be used to endorse or\n                promote\n                products derived from this software without specific prior\n                written permission.\n           &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n                THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS\n                ``AS IS&amp;apos;&amp;apos; AND\n                ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED\n                TO, THE\n                IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n                PARTICULAR PURPOSE\n                ARE DISCLAIMED. IN NO EVENT SHALL GEOFF KUENNING OR\n                CONTRIBUTORS BE LIABLE\n                FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n                CONSEQUENTIAL\n                DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n                SUBSTITUTE GOODS\n                OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n                INTERRUPTION)\n                HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n                CONTRACT, STRICT\n                LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\n                IN ANY WAY\n                OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\n                POSSIBILITY OF\n                SUCH DAMAGE.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;BSD Mark Modifications License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;License text: Copyright 1993, Geoff Kuenning, Granada Hills, CA All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All modifications to the source code must be clearly marked as such. Binary redistributions based on modified source code must be clearly marked as modified versions in the documentation and/or other materials provided with the distribution. (clause 4 removed with permission from Geoff Kuenning)\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The name of Geoff Kuenning may not be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL GEOFF KUENNING OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/b86532987427de4077eef3efc5cc3a17">FedoraEntry:b86532987427de4077eef3efc5cc3a17</a> for <a href="/?license=Fedora:BSD-Mark-Modifications"><span class="licensename"><span class="namespace">Fedora:</span>BSD-Mark-Modifications</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Mark-Modifications</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Mark-Modifications</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b86532987427de4077eef3efc5cc3a17">[<a href="/fact/FedoraEntry/b86532987427de4077eef3efc5cc3a17">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:BSD-Mark-Modifications&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Mark-Modifications&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;b86532987427de4077eef3efc5cc3a17&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;BSD-Mark-Modifications&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:BSD-Mark-Modifications&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/a322be13664d0d69290b8cc7e1eefeda">MetaeffektLicense:a322be13664d0d69290b8cc7e1eefeda</a> for <a href="/?license=metaeffekt:BSD-4-Clause-mark-modifications"><span class="licensename"><span class="namespace">metaeffekt:</span>BSD-4-Clause-mark-modifications</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD-4-Clause-mark-modifications</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 4-Clause License (mark modifications)</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Mark-Modifications</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename">BSD 4-Clause License (Modification Advertized)</span></li><li><span class="licensename">BSD 4-Clause Modification Advertized</span></li><li><span class="licensename">BSD-4-Clause-Modification-Advertized</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:BSD-4-Clause-mark-modifications&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:BSD 4-Clause License (mark modifications)&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Mark-Modifications&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD 4-Clause License (Modification Advertized)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD 4-Clause Modification Advertized&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD-4-Clause-Modification-Advertized&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;a322be13664d0d69290b8cc7e1eefeda&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;BSD 4-Clause License (Modification Advertized)&quot;,
+            &quot;BSD 4-Clause Modification Advertized&quot;,
+            &quot;BSD-4-Clause-Modification-Advertized&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:BSD 4-Clause License (mark modifications)&quot;,
+        &quot;_category&quot;: &quot;BSD&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: &quot;metaeffekt:BSD-4-Clause-mark-modifications&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:BSD-Mark-Modifications&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/43a43308cca65bf5270092c7fbe977d8">LicenseLynx:43a43308cca65bf5270092c7fbe977d8</a> for <a href="/?license=spdx:BSD-Mark-Modifications"><span class="licensename"><span class="namespace">spdx:</span>BSD-Mark-Modifications</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Mark-Modifications</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD Mark Modifications License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-Mark-Modifications&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:BSD Mark Modifications License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;43a43308cca65bf5270092c7fbe977d8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;spdx:BSD Mark Modifications License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:BSD-Mark-Modifications&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

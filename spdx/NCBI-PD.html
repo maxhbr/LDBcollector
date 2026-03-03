@@ -1,0 +1,843 @@
+<html><head><title>ldbcollector: spdx:NCBI-PD</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:NCBI-PD</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NCBI-PD</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">LicenseRef-scancode-ncbi</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-ncbi</span></li><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-ncbi</span></li><li><span class="licensename">ncbi</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ncbi</span></li><li><span class="licensename">NCBI Public Domain Notice</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>NCBI Public Domain Notice</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NCBI Public Domain Notice</span></li><li><span class="licensename">NCBI-PD</span></li><li><span class="licensename"><span class="namespace">cavil:</span>NCBI-PD</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NCBI-PD</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NCBI PD</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Public Domain<span class="provided-by">(provided by: <span title="ScancodeData:a910c60369cf2e9b72a35db9a456fa1f">[<a href="/fact/ScancodeData/a910c60369cf2e9b72a35db9a456fa1f">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:91b1633d8f7079a148686b0746b07d8a">[<a href="/fact/SPDXLicense/91b1633d8f7079a148686b0746b07d8a">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:46886b6a7c07f798f09f601cc37c9964">[<a href="/fact/OrtLicenseCategorization/46886b6a7c07f798f09f601cc37c9964">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:dd7d691e46150dc39a245c4b910db5b0">[<a href="/fact/OrtLicenseCategorization/dd7d691e46150dc39a245c4b910db5b0">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:46886b6a7c07f798f09f601cc37c9964">[<a href="/fact/OrtLicenseCategorization/46886b6a7c07f798f09f601cc37c9964">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:dd7d691e46150dc39a245c4b910db5b0">[<a href="/fact/OrtLicenseCategorization/dd7d691e46150dc39a245c4b910db5b0">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX license list 3.24
+This was before the us-govt-public-domain_25.RULE
+Earlier text is now a rule
+<span class="provided-by">(provided by: <span title="ScancodeData:a910c60369cf2e9b72a35db9a456fa1f">[<a href="/fact/ScancodeData/a910c60369cf2e9b72a35db9a456fa1f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/ncbi/datasets/blob/master/LICENSE.md" target="_blank">https://github.com/ncbi/datasets/blob/master/LICENSE.md</a></li><li><a href="https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE" target="_blank">https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE</a></li><li><a href="https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md" target="_blank">https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md</a></li><li><a href="https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE" target="_blank">https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE</a></li><li><a href="https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE" target="_blank">https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE</a></li><li><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi" target="_blank">https://blast.ncbi.nlm.nih.gov/Blast.cgi</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/ncbi/ngs/blob/master/LICENSE#L8</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>PUBLIC DOMAIN NOTICE
+National Center for Biotechnology Information
+
+This software is a &quot;United States Government Work&quot; under the terms of the
+United States Copyright Act.  It was written as part of the authors&#39;
+official duties as United States Government employees and thus cannot
+be copyrighted.  This software is freely available to the public for
+use. The National Library of Medicine and the U.S. Government have not
+placed any restriction on its use or reproduction.
+
+Although all reasonable efforts have been taken to ensure the accuracy
+and reliability of the software and data, the NLM and the U.S.
+Government do not and cannot warrant the performance or results that
+may be obtained by using this software or data. The NLM and the U.S.
+Government disclaim all warranties, express or implied, including
+warranties of performance, merchantability or fitness for any
+particular purpose.
+
+Please cite the author in any work or product based on this material.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;PUBLIC DOMAIN NOTICE&lt;br /&gt;
+National Center for Biotechnology Information&lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; With the exception of certain third-party files summarized below, &lt;/var&gt;
+            this software&lt;var class=&quot;optional-license-text&quot;&gt; /database&lt;/var&gt; is a &amp;quot;United States Government Work&amp;quot; under 
+            the terms of the United States Copyright Act.  It was written as part of the 
+            &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern authors&#39;|author&#39;s&quot;&gt; author&amp;apos;s&lt;/span&gt;&lt;/var&gt; official duties as &lt;var class=&quot;optional-license-text&quot;&gt; a&lt;/var&gt;
+            United States Government &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern employees|employee&quot;&gt; employees&lt;/span&gt;&lt;/var&gt; and 
+            thus cannot be copyrighted.  
+            This software&lt;var class=&quot;optional-license-text&quot;&gt; /database&lt;/var&gt; is freely available to the public for use. 
+            The &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern NLM|National Library of Medicine|National Library of Medicine \(NLM\)&quot;&gt; NLM&lt;/span&gt;&lt;/var&gt; 
+            and the U.S. Government have not placed any restriction on its use or reproduction.&lt;/p&gt;
+
+         &lt;p&gt;Although all reasonable efforts have been taken to ensure the accuracy and reliability 
+            of the software and data, the NLM and the U.S. Government do not and cannot warrant 
+            the performance or results that may be obtained by using this software or data. 
+           The NLM and the U.S. Government disclaim all warranties, express or implied, including 
+            warranties of performance, merchantability or fitness for any particular purpose.&lt;/p&gt;
+
+         &lt;p&gt;Please cite &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern the author|the authors|NCBI&quot;&gt; the author&lt;/span&gt;&lt;/var&gt; in 
+            any work or product based on this material.&lt;/p&gt;
+
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;EXCEPTIONS (in all cases excluding NCBI-written makefiles):&lt;/p&gt;
+
+            &lt;p&gt;&amp;lt;list of exceptions&amp;gt;&lt;/p&gt;
+
+            &lt;p&gt;Copyright F.A.Q.&lt;/p&gt;
+
+            &lt;p&gt;Q. Our product makes use of the NCBI source code, and we made changes and additions to that version of the NCBI code to better fit it to our needs. Can we copyright the code, and how?&lt;/p&gt;
+
+            &lt;p&gt;A. You can copyright only the *changes* or the *additions* you made to the NCBI source code. You should identify unambiguously those sections of the code that were modified, e.g. by commenting any changes you made in the code you distribute. Therefore, your license has to make clear to users that your product is a combination of code that is public domain within the U.S. (but may be subject to copyright by the U.S. in foreign countries) and code that has been created or modified by you.&lt;/p&gt;
+
+            &lt;p&gt;Q. Can we (re)license all or part of the NCBI source code?&lt;/p&gt;
+
+            &lt;p&gt;A. No, you cannot license or relicense the source code written by NCBI since you cannot claim any copyright in the software that was developed at NCBI as a &amp;apos;government work&amp;apos; and consequently is in the public domain within the U.S.&lt;/p&gt;
+
+            &lt;p&gt;Q. What if these copyright guidelines are not clear enough or are not applicable to my particular case?&lt;/p&gt;
+
+            &lt;p&gt;A. Contact us. Send your questions to &amp;apos;&amp;lt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .+&quot;&gt; email address&lt;/span&gt;&lt;/var&gt;&amp;gt;&amp;apos;.&lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li><li><details><summary>Text:</summary><pre>PUBLIC DOMAIN NOTICE
+National Center for Biotechnology Information
+
+With the exception of certain third-party files summarized below, this
+software is a &quot;United States Government Work&quot; under the terms of the
+United States Copyright Act.  It was written as part of the authors&#39;
+official duties as United States Government employees and thus cannot
+be copyrighted.  This software is freely available to the public for
+use. The National Library of Medicine and the U.S. Government have not
+placed any restriction on its use or reproduction.
+
+Although all reasonable efforts have been taken to ensure the accuracy
+and reliability of the software and data, the NLM and the U.S.
+Government do not and cannot warrant the performance or results that
+may be obtained by using this software or data. The NLM and the U.S.
+Government disclaim all warranties, express or implied, including
+warranties of performance, merchantability or fitness for any
+particular purpose.
+
+Please cite the authors in any work or product based on this material.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/91b1633d8f7079a148686b0746b07d8a">SPDXLicense:91b1633d8f7079a148686b0746b07d8a</a> for <a href="/?license=spdx:NCBI-PD"><span class="licensename"><span class="namespace">spdx:</span>NCBI-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NCBI-PD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NCBI Public Domain Notice</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:91b1633d8f7079a148686b0746b07d8a">[<a href="/fact/SPDXLicense/91b1633d8f7079a148686b0746b07d8a">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/ncbi/datasets/blob/master/LICENSE.md" target="_blank">https://github.com/ncbi/datasets/blob/master/LICENSE.md</a></li><li><a href="https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE" target="_blank">https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE</a></li><li><a href="https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md" target="_blank">https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md</a></li><li><a href="https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE" target="_blank">https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE</a></li><li><a href="https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE" target="_blank">https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>PUBLIC DOMAIN NOTICE
+National Center for Biotechnology Information
+
+This software is a &quot;United States Government Work&quot; under the terms of the
+United States Copyright Act.  It was written as part of the authors&#39;
+official duties as United States Government employees and thus cannot
+be copyrighted.  This software is freely available to the public for
+use. The National Library of Medicine and the U.S. Government have not
+placed any restriction on its use or reproduction.
+
+Although all reasonable efforts have been taken to ensure the accuracy
+and reliability of the software and data, the NLM and the U.S.
+Government do not and cannot warrant the performance or results that
+may be obtained by using this software or data. The NLM and the U.S.
+Government disclaim all warranties, express or implied, including
+warranties of performance, merchantability or fitness for any
+particular purpose.
+
+Please cite the author in any work or product based on this material.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;PUBLIC DOMAIN NOTICE&lt;br /&gt;
+National Center for Biotechnology Information&lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; With the exception of certain third-party files summarized below, &lt;/var&gt;
+            this software&lt;var class=&quot;optional-license-text&quot;&gt; /database&lt;/var&gt; is a &amp;quot;United States Government Work&amp;quot; under 
+            the terms of the United States Copyright Act.  It was written as part of the 
+            &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern authors&#39;|author&#39;s&quot;&gt; author&amp;apos;s&lt;/span&gt;&lt;/var&gt; official duties as &lt;var class=&quot;optional-license-text&quot;&gt; a&lt;/var&gt;
+            United States Government &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern employees|employee&quot;&gt; employees&lt;/span&gt;&lt;/var&gt; and 
+            thus cannot be copyrighted.  
+            This software&lt;var class=&quot;optional-license-text&quot;&gt; /database&lt;/var&gt; is freely available to the public for use. 
+            The &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern NLM|National Library of Medicine|National Library of Medicine \(NLM\)&quot;&gt; NLM&lt;/span&gt;&lt;/var&gt; 
+            and the U.S. Government have not placed any restriction on its use or reproduction.&lt;/p&gt;
+
+         &lt;p&gt;Although all reasonable efforts have been taken to ensure the accuracy and reliability 
+            of the software and data, the NLM and the U.S. Government do not and cannot warrant 
+            the performance or results that may be obtained by using this software or data. 
+           The NLM and the U.S. Government disclaim all warranties, express or implied, including 
+            warranties of performance, merchantability or fitness for any particular purpose.&lt;/p&gt;
+
+         &lt;p&gt;Please cite &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern the author|the authors|NCBI&quot;&gt; the author&lt;/span&gt;&lt;/var&gt; in 
+            any work or product based on this material.&lt;/p&gt;
+
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;EXCEPTIONS (in all cases excluding NCBI-written makefiles):&lt;/p&gt;
+
+            &lt;p&gt;&amp;lt;list of exceptions&amp;gt;&lt;/p&gt;
+
+            &lt;p&gt;Copyright F.A.Q.&lt;/p&gt;
+
+            &lt;p&gt;Q. Our product makes use of the NCBI source code, and we made changes and additions to that version of the NCBI code to better fit it to our needs. Can we copyright the code, and how?&lt;/p&gt;
+
+            &lt;p&gt;A. You can copyright only the *changes* or the *additions* you made to the NCBI source code. You should identify unambiguously those sections of the code that were modified, e.g. by commenting any changes you made in the code you distribute. Therefore, your license has to make clear to users that your product is a combination of code that is public domain within the U.S. (but may be subject to copyright by the U.S. in foreign countries) and code that has been created or modified by you.&lt;/p&gt;
+
+            &lt;p&gt;Q. Can we (re)license all or part of the NCBI source code?&lt;/p&gt;
+
+            &lt;p&gt;A. No, you cannot license or relicense the source code written by NCBI since you cannot claim any copyright in the software that was developed at NCBI as a &amp;apos;government work&amp;apos; and consequently is in the public domain within the U.S.&lt;/p&gt;
+
+            &lt;p&gt;Q. What if these copyright guidelines are not clear enough or are not applicable to my particular case?&lt;/p&gt;
+
+            &lt;p&gt;A. Contact us. Send your questions to &amp;apos;&amp;lt;&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .+&quot;&gt; email address&lt;/span&gt;&lt;/var&gt;&amp;gt;&amp;apos;.&lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NCBI-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NCBI Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;91b1633d8f7079a148686b0746b07d8a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;PUBLIC DOMAIN NOTICE\nNational Center for Biotechnology Information\n\nThis software is a \&quot;United States Government Work\&quot; under the terms of the\nUnited States Copyright Act.  It was written as part of the authors&#39;\nofficial duties as United States Government employees and thus cannot\nbe copyrighted.  This software is freely available to the public for\nuse. The National Library of Medicine and the U.S. Government have not\nplaced any restriction on its use or reproduction.\n\nAlthough all reasonable efforts have been taken to ensure the accuracy\nand reliability of the software and data, the NLM and the U.S.\nGovernment do not and cannot warrant the performance or results that\nmay be obtained by using this software or data. The NLM and the U.S.\nGovernment disclaim all warranties, express or implied, including\nwarranties of performance, merchantability or fitness for any\nparticular purpose.\n\nPlease cite the author in any work or product based on this material.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;PUBLIC DOMAIN NOTICE&lt;br /&gt;\nNational Center for Biotechnology Information&lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; With the exception of certain third-party files summarized below, &lt;/var&gt;\n            this software&lt;var class=\&quot;optional-license-text\&quot;&gt; /database&lt;/var&gt; is a &amp;quot;United States Government Work&amp;quot; under \n            the terms of the United States Copyright Act.  It was written as part of the \n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern authors&#39;|author&#39;s\&quot;&gt; author&amp;apos;s&lt;/span&gt;&lt;/var&gt; official duties as &lt;var class=\&quot;optional-license-text\&quot;&gt; a&lt;/var&gt;\n            United States Government &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern employees|employee\&quot;&gt; employees&lt;/span&gt;&lt;/var&gt; and \n            thus cannot be copyrighted.  \n            This software&lt;var class=\&quot;optional-license-text\&quot;&gt; /database&lt;/var&gt; is freely available to the public for use. \n            The &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern NLM|National Library of Medicine|National Library of Medicine \\(NLM\\)\&quot;&gt; NLM&lt;/span&gt;&lt;/var&gt; \n            and the U.S. Government have not placed any restriction on its use or reproduction.&lt;/p&gt;\n\n         &lt;p&gt;Although all reasonable efforts have been taken to ensure the accuracy and reliability \n            of the software and data, the NLM and the U.S. Government do not and cannot warrant \n            the performance or results that may be obtained by using this software or data. \n           The NLM and the U.S. Government disclaim all warranties, express or implied, including \n            warranties of performance, merchantability or fitness for any particular purpose.&lt;/p&gt;\n\n         &lt;p&gt;Please cite &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern the author|the authors|NCBI\&quot;&gt; the author&lt;/span&gt;&lt;/var&gt; in \n            any work or product based on this material.&lt;/p&gt;\n\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;EXCEPTIONS (in all cases excluding NCBI-written makefiles):&lt;/p&gt;\n\n            &lt;p&gt;&amp;lt;list of exceptions&amp;gt;&lt;/p&gt;\n\n            &lt;p&gt;Copyright F.A.Q.&lt;/p&gt;\n\n            &lt;p&gt;Q. Our product makes use of the NCBI source code, and we made changes and additions to that version of the NCBI code to better fit it to our needs. Can we copyright the code, and how?&lt;/p&gt;\n\n            &lt;p&gt;A. You can copyright only the *changes* or the *additions* you made to the NCBI source code. You should identify unambiguously those sections of the code that were modified, e.g. by commenting any changes you made in the code you distribute. Therefore, your license has to make clear to users that your product is a combination of code that is public domain within the U.S. (but may be subject to copyright by the U.S. in foreign countries) and code that has been created or modified by you.&lt;/p&gt;\n\n            &lt;p&gt;Q. Can we (re)license all or part of the NCBI source code?&lt;/p&gt;\n\n            &lt;p&gt;A. No, you cannot license or relicense the source code written by NCBI since you cannot claim any copyright in the software that was developed at NCBI as a &amp;apos;government work&amp;apos; and consequently is in the public domain within the U.S.&lt;/p&gt;\n\n            &lt;p&gt;Q. What if these copyright guidelines are not clear enough or are not applicable to my particular case?&lt;/p&gt;\n\n            &lt;p&gt;A. Contact us. Send your questions to &amp;apos;&amp;lt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .+\&quot;&gt; email address&lt;/span&gt;&lt;/var&gt;&amp;gt;&amp;apos;.&lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/datasets/blob/master/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/datasets/blob/master/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 4,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:02:28Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/ncbi/datasets/blob/master/LICENSE.md&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 3,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:02:29Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:02:29Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:02:29Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:02:30Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:NCBI-PD&quot;,
+        &quot;licenseText&quot;: &quot;PUBLIC DOMAIN NOTICE\nNational Center for Biotechnology Information\n\nThis software is a \&quot;United States Government Work\&quot; under the terms of the\nUnited States Copyright Act.  It was written as part of the authors&#39;\nofficial duties as United States Government employees and thus cannot\nbe copyrighted.  This software is freely available to the public for\nuse. The National Library of Medicine and the U.S. Government have not\nplaced any restriction on its use or reproduction.\n\nAlthough all reasonable efforts have been taken to ensure the accuracy\nand reliability of the software and data, the NLM and the U.S.\nGovernment do not and cannot warrant the performance or results that\nmay be obtained by using this software or data. The NLM and the U.S.\nGovernment disclaim all warranties, express or implied, including\nwarranties of performance, merchantability or fitness for any\nparticular purpose.\n\nPlease cite the author in any work or product based on this material.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;PUBLIC DOMAIN NOTICE&lt;br /&gt;\nNational Center for Biotechnology Information&lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; With the exception of certain third-party files summarized below, &lt;/var&gt;\n            this software&lt;var class=\&quot;optional-license-text\&quot;&gt; /database&lt;/var&gt; is a &amp;quot;United States Government Work&amp;quot; under \n            the terms of the United States Copyright Act.  It was written as part of the \n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern authors&#39;|author&#39;s\&quot;&gt; author&amp;apos;s&lt;/span&gt;&lt;/var&gt; official duties as &lt;var class=\&quot;optional-license-text\&quot;&gt; a&lt;/var&gt;\n            United States Government &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern employees|employee\&quot;&gt; employees&lt;/span&gt;&lt;/var&gt; and \n            thus cannot be copyrighted.  \n            This software&lt;var class=\&quot;optional-license-text\&quot;&gt; /database&lt;/var&gt; is freely available to the public for use. \n            The &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern NLM|National Library of Medicine|National Library of Medicine \\(NLM\\)\&quot;&gt; NLM&lt;/span&gt;&lt;/var&gt; \n            and the U.S. Government have not placed any restriction on its use or reproduction.&lt;/p&gt;\n\n         &lt;p&gt;Although all reasonable efforts have been taken to ensure the accuracy and reliability \n            of the software and data, the NLM and the U.S. Government do not and cannot warrant \n            the performance or results that may be obtained by using this software or data. \n           The NLM and the U.S. Government disclaim all warranties, express or implied, including \n            warranties of performance, merchantability or fitness for any particular purpose.&lt;/p&gt;\n\n         &lt;p&gt;Please cite &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern the author|the authors|NCBI\&quot;&gt; the author&lt;/span&gt;&lt;/var&gt; in \n            any work or product based on this material.&lt;/p&gt;\n\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;EXCEPTIONS (in all cases excluding NCBI-written makefiles):&lt;/p&gt;\n\n            &lt;p&gt;&amp;lt;list of exceptions&amp;gt;&lt;/p&gt;\n\n            &lt;p&gt;Copyright F.A.Q.&lt;/p&gt;\n\n            &lt;p&gt;Q. Our product makes use of the NCBI source code, and we made changes and additions to that version of the NCBI code to better fit it to our needs. Can we copyright the code, and how?&lt;/p&gt;\n\n            &lt;p&gt;A. You can copyright only the *changes* or the *additions* you made to the NCBI source code. You should identify unambiguously those sections of the code that were modified, e.g. by commenting any changes you made in the code you distribute. Therefore, your license has to make clear to users that your product is a combination of code that is public domain within the U.S. (but may be subject to copyright by the U.S. in foreign countries) and code that has been created or modified by you.&lt;/p&gt;\n\n            &lt;p&gt;Q. Can we (re)license all or part of the NCBI source code?&lt;/p&gt;\n\n            &lt;p&gt;A. No, you cannot license or relicense the source code written by NCBI since you cannot claim any copyright in the software that was developed at NCBI as a &amp;apos;government work&amp;apos; and consequently is in the public domain within the U.S.&lt;/p&gt;\n\n            &lt;p&gt;Q. What if these copyright guidelines are not clear enough or are not applicable to my particular case?&lt;/p&gt;\n\n            &lt;p&gt;A. Contact us. Send your questions to &amp;apos;&amp;lt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .+\&quot;&gt; email address&lt;/span&gt;&lt;/var&gt;&amp;gt;&amp;apos;.&lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+        &quot;name&quot;: &quot;NCBI Public Domain Notice&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE&quot;,
+            &quot;https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md&quot;,
+            &quot;https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE&quot;,
+            &quot;https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE&quot;,
+            &quot;https://github.com/ncbi/datasets/blob/master/LICENSE.md&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;PUBLIC DOMAIN NOTICE\nNational Center for Biotechnology Information\n\n&lt;&lt;endOptional&gt;&gt;\n&lt;&lt;beginOptional&gt;&gt;With the exception of certain third-party files summarized below,&lt;&lt;endOptional&gt;&gt; this software&lt;&lt;beginOptional&gt;&gt; /database&lt;&lt;endOptional&gt;&gt; is a \&quot;United States Government Work\&quot; under the terms of the United States Copyright Act. It was written as part of the &lt;&lt;var;name=\&quot;author1\&quot;;original=\&quot;author&#39;s\&quot;;match=\&quot;authors&#39;|author&#39;s\&quot;&gt;&gt; official duties as&lt;&lt;beginOptional&gt;&gt; a&lt;&lt;endOptional&gt;&gt; United States Government &lt;&lt;var;name=\&quot;employee\&quot;;original=\&quot;employees\&quot;;match=\&quot;employees|employee\&quot;&gt;&gt; and thus cannot be copyrighted. This software&lt;&lt;beginOptional&gt;&gt; /database&lt;&lt;endOptional&gt;&gt; is freely available to the public for use. The &lt;&lt;var;name=\&quot;nlm\&quot;;original=\&quot;NLM\&quot;;match=\&quot;NLM|National Library of Medicine|National Library of Medicine \\(NLM\\)\&quot;&gt;&gt; and the U.S. Government have not placed any restriction on its use or reproduction.\n\nAlthough all reasonable efforts have been taken to ensure the accuracy and reliability of the software and data, the NLM and the U.S. Government do not and cannot warrant the performance or results that may be obtained by using this software or data. The NLM and the U.S. Government disclaim all warranties, express or implied, including warranties of performance, merchantability or fitness for any particular purpose.\n\nPlease cite &lt;&lt;var;name=\&quot;authors1\&quot;;original=\&quot;the author\&quot;;match=\&quot;the author|the authors|NCBI\&quot;&gt;&gt; in any work or product based on this material.\n\n&lt;&lt;beginOptional&gt;&gt;EXCEPTIONS (in all cases excluding NCBI-written makefiles):\n\n&lt;list of exceptions&gt;\n\nCopyright F.A.Q.\n\nQ. Our product makes use of the NCBI source code, and we made changes and additions to that version of the NCBI code to better fit it to our needs. Can we copyright the code, and how?\n\nA. You can copyright only the *changes* or the *additions* you made to the NCBI source code. You should identify unambiguously those sections of the code that were modified, e.g. by commenting any changes you made in the code you distribute. Therefore, your license has to make clear to users that your product is a combination of code that is public domain within the U.S. (but may be subject to copyright by the U.S. in foreign countries) and code that has been created or modified by you.\n\nQ. Can we (re)license all or part of the NCBI source code?\n\nA. No, you cannot license or relicense the source code written by NCBI since you cannot claim any copyright in the software that was developed at NCBI as a &#39;government work&#39; and consequently is in the public domain within the U.S.\n\nQ. What if these copyright guidelines are not clear enough or are not applicable to my particular case?\n\nA. Contact us. Send your questions to &#39;&lt; &lt;&lt;var;name=\&quot;email\&quot;;original=\&quot;email address\&quot;;match=\&quot;.+\&quot;&gt;&gt; &gt;&#39;.\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/a910c60369cf2e9b72a35db9a456fa1f">ScancodeData:a910c60369cf2e9b72a35db9a456fa1f</a> for <a href="/?license=scancode:ncbi"><span class="licensename"><span class="namespace">scancode:</span>ncbi</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ncbi</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">NCBI Public Domain Notice</span></li><li><span class="licensename">NCBI Public Domain Notice</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NCBI-PD</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Public Domain<span class="provided-by">(provided by: <span title="ScancodeData:a910c60369cf2e9b72a35db9a456fa1f">[<a href="/fact/ScancodeData/a910c60369cf2e9b72a35db9a456fa1f">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX license list 3.24
+This was before the us-govt-public-domain_25.RULE
+Earlier text is now a rule
+<span class="provided-by">(provided by: <span title="ScancodeData:a910c60369cf2e9b72a35db9a456fa1f">[<a href="/fact/ScancodeData/a910c60369cf2e9b72a35db9a456fa1f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi" target="_blank">https://blast.ncbi.nlm.nih.gov/Blast.cgi</a></li><li><a href="https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE" target="_blank">https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE</a></li><li><a href="https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md" target="_blank">https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md</a></li><li><a href="https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE" target="_blank">https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE</a></li><li><a href="https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE" target="_blank">https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE</a></li><li><a href="https://github.com/ncbi/datasets/blob/master/LICENSE.md" target="_blank">https://github.com/ncbi/datasets/blob/master/LICENSE.md</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/ncbi/ngs/blob/master/LICENSE#L8</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>PUBLIC DOMAIN NOTICE
+National Center for Biotechnology Information
+
+With the exception of certain third-party files summarized below, this
+software is a &quot;United States Government Work&quot; under the terms of the
+United States Copyright Act.  It was written as part of the authors&#39;
+official duties as United States Government employees and thus cannot
+be copyrighted.  This software is freely available to the public for
+use. The National Library of Medicine and the U.S. Government have not
+placed any restriction on its use or reproduction.
+
+Although all reasonable efforts have been taken to ensure the accuracy
+and reliability of the software and data, the NLM and the U.S.
+Government do not and cannot warrant the performance or results that
+may be obtained by using this software or data. The NLM and the U.S.
+Government disclaim all warranties, express or implied, including
+warranties of performance, merchantability or fitness for any
+particular purpose.
+
+Please cite the authors in any work or product based on this material.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:ncbi&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NCBI Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NCBI Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:NCBI-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;a910c60369cf2e9b72a35db9a456fa1f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/ncbi/ngs/blob/master/LICENSE#L8&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Added in SPDX license list 3.24\nThis was before the us-govt-public-domain_25.RULE\nEarlier text is now a rule\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://blast.ncbi.nlm.nih.gov/Blast.cgi&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ncbi/datasets/blob/master/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;PUBLIC DOMAIN NOTICE\nNational Center for Biotechnology Information\n\nWith the exception of certain third-party files summarized below, this\nsoftware is a \&quot;United States Government Work\&quot; under the terms of the\nUnited States Copyright Act.  It was written as part of the authors&#39;\nofficial duties as United States Government employees and thus cannot\nbe copyrighted.  This software is freely available to the public for\nuse. The National Library of Medicine and the U.S. Government have not\nplaced any restriction on its use or reproduction.\n\nAlthough all reasonable efforts have been taken to ensure the accuracy\nand reliability of the software and data, the NLM and the U.S.\nGovernment do not and cannot warrant the performance or results that\nmay be obtained by using this software or data. The NLM and the U.S.\nGovernment disclaim all warranties, express or implied, including\nwarranties of performance, merchantability or fitness for any\nparticular purpose.\n\nPlease cite the authors in any work or product based on this material.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/ncbi/ngs/blob/master/LICENSE#L8&quot;,
+        &quot;_key&quot;: &quot;ncbi&quot;,
+        &quot;_name&quot;: &quot;NCBI Public Domain Notice&quot;,
+        &quot;_notes&quot;: &quot;Added in SPDX license list 3.24\nThis was before the us-govt-public-domain_25.RULE\nEarlier text is now a rule\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://blast.ncbi.nlm.nih.gov/Blast.cgi&quot;,
+            &quot;https://github.com/ncbi/sra-tools/blob/e8e5b6af4edc460156ad9ce5902d0779cffbf685/LICENSE&quot;,
+            &quot;https://github.com/ncbi/datasets/blob/0ea4cd16b61e5b799d9cc55aecfa016d6c9bd2bf/LICENSE.md&quot;,
+            &quot;https://github.com/ncbi/gprobe/blob/de64d30fee8b4c4013094d7d3139ea89b5dd1ace/LICENSE&quot;,
+            &quot;https://github.com/ncbi/egapx/blob/08930b9dec0c69b2d1a05e5153c7b95ef0a3eb0f/LICENSE&quot;,
+            &quot;https://github.com/ncbi/datasets/blob/master/LICENSE.md&quot;
+        ],
+        &quot;_owner&quot;: &quot;NCBI&quot;,
+        &quot;_shortName&quot;: &quot;NCBI Public Domain Notice&quot;,
+        &quot;_spdxId&quot;: &quot;NCBI-PD&quot;,
+        &quot;_text&quot;: &quot;PUBLIC DOMAIN NOTICE\nNational Center for Biotechnology Information\n\nWith the exception of certain third-party files summarized below, this\nsoftware is a \&quot;United States Government Work\&quot; under the terms of the\nUnited States Copyright Act.  It was written as part of the authors&#39;\nofficial duties as United States Government employees and thus cannot\nbe copyrighted.  This software is freely available to the public for\nuse. The National Library of Medicine and the U.S. Government have not\nplaced any restriction on its use or reproduction.\n\nAlthough all reasonable efforts have been taken to ensure the accuracy\nand reliability of the software and data, the NLM and the U.S.\nGovernment do not and cannot warrant the performance or results that\nmay be obtained by using this software or data. The NLM and the U.S.\nGovernment disclaim all warranties, express or implied, including\nwarranties of performance, merchantability or fitness for any\nparticular purpose.\n\nPlease cite the authors in any work or product based on this material.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/46886b6a7c07f798f09f601cc37c9964">OrtLicenseCategorization:46886b6a7c07f798f09f601cc37c9964</a> for <a href="/?license=SPDX:LicenseRef-scancode-ncbi"><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-ncbi</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-ncbi</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:46886b6a7c07f798f09f601cc37c9964">[<a href="/fact/OrtLicenseCategorization/46886b6a7c07f798f09f601cc37c9964">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:46886b6a7c07f798f09f601cc37c9964">[<a href="/fact/OrtLicenseCategorization/46886b6a7c07f798f09f601cc37c9964">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LicenseRef-scancode-ncbi&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;46886b6a7c07f798f09f601cc37c9964&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LicenseRef-scancode-ncbi&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/dd7d691e46150dc39a245c4b910db5b0">OrtLicenseCategorization:dd7d691e46150dc39a245c4b910db5b0</a> for <a href="/?license=SPDX:NCBI-PD"><span class="licensename"><span class="namespace">SPDX:</span>NCBI-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>NCBI-PD</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dd7d691e46150dc39a245c4b910db5b0">[<a href="/fact/OrtLicenseCategorization/dd7d691e46150dc39a245c4b910db5b0">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dd7d691e46150dc39a245c4b910db5b0">[<a href="/fact/OrtLicenseCategorization/dd7d691e46150dc39a245c4b910db5b0">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:NCBI-PD&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;dd7d691e46150dc39a245c4b910db5b0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:NCBI-PD&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/d2af692d9179cd528b17ce6e2f942d1c">CavilLicenseChange:d2af692d9179cd528b17ce6e2f942d1c</a> for <a href="/?license=cavil:NCBI-PD"><span class="licensename"><span class="namespace">cavil:</span>NCBI-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>NCBI-PD</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NCBI-PD</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:NCBI-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NCBI-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;d2af692d9179cd528b17ce6e2f942d1c&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;NCBI-PD&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:NCBI-PD&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/11e2330afea97120d07fabe054950455">MetaeffektLicense:11e2330afea97120d07fabe054950455</a> for <a href="/?license=metaeffekt:NCBI Public Domain Notice"><span class="licensename"><span class="namespace">metaeffekt:</span>NCBI Public Domain Notice</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>NCBI Public Domain Notice</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NCBI-PD</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ncbi</span></li><li><span class="licensename">NCBI PD</span></li><li><span class="licensename">NCBI Public Domain Notice</span></li><li><span class="licensename">NCBI-PD</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:NCBI Public Domain Notice&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NCBI-PD&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NCBI PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NCBI Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NCBI-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ncbi&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;11e2330afea97120d07fabe054950455&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;NCBI Public Domain Notice&quot;,
+            &quot;NCBI-PD&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:NCBI Public Domain Notice&quot;,
+        &quot;_category&quot;: &quot;NCBI PD&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:ncbi&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:NCBI-PD&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/0c0d2377237b8ee93edd8be1fb3061c7">LicenseLynx:0c0d2377237b8ee93edd8be1fb3061c7</a> for <a href="/?license=spdx:NCBI-PD"><span class="licensename"><span class="namespace">spdx:</span>NCBI-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NCBI-PD</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-ncbi</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ncbi</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NCBI Public Domain Notice</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NCBI-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:LicenseRef-scancode-ncbi&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ncbi&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:NCBI Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;0c0d2377237b8ee93edd8be1fb3061c7&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:LicenseRef-scancode-ncbi&quot;,
+            &quot;scancode:ncbi&quot;,
+            &quot;spdx:NCBI Public Domain Notice&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:NCBI-PD&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

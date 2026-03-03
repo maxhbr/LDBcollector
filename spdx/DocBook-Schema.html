@@ -1,0 +1,668 @@
+<html><head><title>ldbcollector: spdx:DocBook-Schema</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:DocBook-Schema</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook Schema License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>DocBook Schema License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>DocBook Schema License</span></li><li><span class="licensename">DocBook-Schema</span></li><li><span class="licensename"><span class="namespace">cavil:</span>DocBook-Schema</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>DocBook-Schema</span></li><li><span class="licensename"><span class="namespace">scancode:</span>docbook-schema</span></li><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook Schema</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:f85f7fa1566b33d7a5b1e0c7a1638a11">[<a href="/fact/ScancodeData/f85f7fa1566b33d7a5b1e0c7a1638a11">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c50e8bb1be007e8e3e818f2d6a4f1670">[<a href="/fact/SPDXLicense/c50e8bb1be007e8e3e818f2d6a4f1670">SPDXLicense</a>]</span>)</span></li><li><span title="">Fedora: <b style="">allowed-content</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:57f08e72c7ede28d4f8951212ad9e91a">[<a href="/fact/FedoraEntry/57f08e72c7ede28d4f8951212ad9e91a">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:308875252314cf025624a039ea07132a">[<a href="/fact/OrtLicenseCategorization/308875252314cf025624a039ea07132a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:308875252314cf025624a039ea07132a">[<a href="/fact/OrtLicenseCategorization/308875252314cf025624a039ea07132a">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc" target="_blank">https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-content&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1992-2011 HaL Computer Systems, Inc.,
+O&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software
+Corporation, Norman Walsh, Sun Microsystems, Inc., and the
+Organization for the Advancement of Structured Information
+Standards (OASIS).
+ 
+Permission to use, copy, modify and distribute the DocBook schema
+and its accompanying documentation for any purpose and without fee
+is hereby granted in perpetuity, provided that the above copyright
+notice and this paragraph appear in all copies. The copyright
+holders make no representation about the suitability of the schema
+for any purpose. It is provided &quot;as is&quot; without expressed or implied
+warranty.
+ 
+If you modify the DocBook schema in any way, label your schema as a
+variant of DocBook. See the reference documentation
+(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)
+for more information.
+ 
+Please direct all questions, bug reports, or suggestions for changes
+to the docbook@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            Copyright 1992-2011 HaL Computer Systems, Inc., O&amp;apos;Reilly &amp;amp;
+            Associates, Inc., ArborText, Inc., Fujitsu Software Corporation,
+            Norman Walsh, Sun Microsystems, Inc., and the Organization for
+            the Advancement of Structured Information Standards (OASIS).
+         &lt;/span&gt;&lt;/var&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify and distribute the DocBook
+            schema and its accompanying documentation for any purpose
+            and without fee is hereby granted in perpetuity, provided
+            that the above copyright notice and this paragraph appear
+            in all copies. The copyright holders make no representation
+            about the suitability of the schema for any purpose. It
+            is provided &amp;quot;as is&amp;quot; without expressed or implied warranty.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            If you modify the DocBook schema in any way, label your schema
+            as a variant of DocBook. See the reference documentation
+            (http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)
+            for more information.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Please direct all questions, bug reports, or suggestions for
+            changes to the docbook@lists.oasis-open.org mailing list.
+            For more information, see http://www.oasis-open.org/docbook/.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify and distribute the DocBook schema
+and its accompanying documentation for any purpose and without fee
+is hereby granted in perpetuity, provided that the above copyright
+notice and this paragraph appear in all copies. The copyright
+holders make no representation about the suitability of the schema
+for any purpose. It is provided &quot;as is&quot; without expressed or implied
+warranty.
+ 
+If you modify the DocBook schema in any way, label your schema as a
+variant of DocBook. See the reference documentation
+(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)
+for more information.
+ 
+Please direct all questions, bug reports, or suggestions for changes
+to the docbook@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/c50e8bb1be007e8e3e818f2d6a4f1670">SPDXLicense:c50e8bb1be007e8e3e818f2d6a4f1670</a> for <a href="/?license=spdx:DocBook-Schema"><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook Schema License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c50e8bb1be007e8e3e818f2d6a4f1670">[<a href="/fact/SPDXLicense/c50e8bb1be007e8e3e818f2d6a4f1670">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc" target="_blank">https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1992-2011 HaL Computer Systems, Inc.,
+O&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software
+Corporation, Norman Walsh, Sun Microsystems, Inc., and the
+Organization for the Advancement of Structured Information
+Standards (OASIS).
+ 
+Permission to use, copy, modify and distribute the DocBook schema
+and its accompanying documentation for any purpose and without fee
+is hereby granted in perpetuity, provided that the above copyright
+notice and this paragraph appear in all copies. The copyright
+holders make no representation about the suitability of the schema
+for any purpose. It is provided &quot;as is&quot; without expressed or implied
+warranty.
+ 
+If you modify the DocBook schema in any way, label your schema as a
+variant of DocBook. See the reference documentation
+(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)
+for more information.
+ 
+Please direct all questions, bug reports, or suggestions for changes
+to the docbook@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            Copyright 1992-2011 HaL Computer Systems, Inc., O&amp;apos;Reilly &amp;amp;
+            Associates, Inc., ArborText, Inc., Fujitsu Software Corporation,
+            Norman Walsh, Sun Microsystems, Inc., and the Organization for
+            the Advancement of Structured Information Standards (OASIS).
+         &lt;/span&gt;&lt;/var&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify and distribute the DocBook
+            schema and its accompanying documentation for any purpose
+            and without fee is hereby granted in perpetuity, provided
+            that the above copyright notice and this paragraph appear
+            in all copies. The copyright holders make no representation
+            about the suitability of the schema for any purpose. It
+            is provided &amp;quot;as is&amp;quot; without expressed or implied warranty.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            If you modify the DocBook schema in any way, label your schema
+            as a variant of DocBook. See the reference documentation
+            (http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)
+            for more information.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Please direct all questions, bug reports, or suggestions for
+            changes to the docbook@lists.oasis-open.org mailing list.
+            For more information, see http://www.oasis-open.org/docbook/.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:DocBook-Schema&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DocBook Schema License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;c50e8bb1be007e8e3e818f2d6a4f1670&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 1992-2011 HaL Computer Systems, Inc.,\nO&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software\nCorporation, Norman Walsh, Sun Microsystems, Inc., and the\nOrganization for the Advancement of Structured Information\nStandards (OASIS).\n \nPermission to use, copy, modify and distribute the DocBook schema\nand its accompanying documentation for any purpose and without fee\nis hereby granted in perpetuity, provided that the above copyright\nnotice and this paragraph appear in all copies. The copyright\nholders make no representation about the suitability of the schema\nfor any purpose. It is provided \&quot;as is\&quot; without expressed or implied\nwarranty.\n \nIf you modify the DocBook schema in any way, label your schema as a\nvariant of DocBook. See the reference documentation\n(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)\nfor more information.\n \nPlease direct all questions, bug reports, or suggestions for changes\nto the docbook@lists.oasis-open.org mailing list. For more\ninformation, see http://www.oasis-open.org/docbook/.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            Copyright 1992-2011 HaL Computer Systems, Inc., O&amp;apos;Reilly &amp;amp;\n            Associates, Inc., ArborText, Inc., Fujitsu Software Corporation,\n            Norman Walsh, Sun Microsystems, Inc., and the Organization for\n            the Advancement of Structured Information Standards (OASIS).\n         &lt;/span&gt;&lt;/var&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify and distribute the DocBook\n            schema and its accompanying documentation for any purpose\n            and without fee is hereby granted in perpetuity, provided\n            that the above copyright notice and this paragraph appear\n            in all copies. The copyright holders make no representation\n            about the suitability of the schema for any purpose. It\n            is provided &amp;quot;as is&amp;quot; without expressed or implied warranty.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            If you modify the DocBook schema in any way, label your schema\n            as a variant of DocBook. See the reference documentation\n            (http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)\n            for more information.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Please direct all questions, bug reports, or suggestions for\n            changes to the docbook@lists.oasis-open.org mailing list.\n            For more information, see http://www.oasis-open.org/docbook/.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:05:06Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:DocBook-Schema&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 1992-2011 HaL Computer Systems, Inc.,\nO&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software\nCorporation, Norman Walsh, Sun Microsystems, Inc., and the\nOrganization for the Advancement of Structured Information\nStandards (OASIS).\n \nPermission to use, copy, modify and distribute the DocBook schema\nand its accompanying documentation for any purpose and without fee\nis hereby granted in perpetuity, provided that the above copyright\nnotice and this paragraph appear in all copies. The copyright\nholders make no representation about the suitability of the schema\nfor any purpose. It is provided \&quot;as is\&quot; without expressed or implied\nwarranty.\n \nIf you modify the DocBook schema in any way, label your schema as a\nvariant of DocBook. See the reference documentation\n(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)\nfor more information.\n \nPlease direct all questions, bug reports, or suggestions for changes\nto the docbook@lists.oasis-open.org mailing list. For more\ninformation, see http://www.oasis-open.org/docbook/.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            Copyright 1992-2011 HaL Computer Systems, Inc., O&amp;apos;Reilly &amp;amp;\n            Associates, Inc., ArborText, Inc., Fujitsu Software Corporation,\n            Norman Walsh, Sun Microsystems, Inc., and the Organization for\n            the Advancement of Structured Information Standards (OASIS).\n         &lt;/span&gt;&lt;/var&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify and distribute the DocBook\n            schema and its accompanying documentation for any purpose\n            and without fee is hereby granted in perpetuity, provided\n            that the above copyright notice and this paragraph appear\n            in all copies. The copyright holders make no representation\n            about the suitability of the schema for any purpose. It\n            is provided &amp;quot;as is&amp;quot; without expressed or implied warranty.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            If you modify the DocBook schema in any way, label your schema\n            as a variant of DocBook. See the reference documentation\n            (http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)\n            for more information.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Please direct all questions, bug reports, or suggestions for\n            changes to the docbook@lists.oasis-open.org mailing list.\n            For more information, see http://www.oasis-open.org/docbook/.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;DocBook Schema License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 1992-2011 HaL Computer Systems, Inc., O&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software Corporation, Norman Walsh, Sun Microsystems, Inc., and the Organization for the Advancement of Structured Information Standards (OASIS).\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nPermission to use, copy, modify and distribute the DocBook schema and its accompanying documentation for any purpose and without fee is hereby granted in perpetuity, provided that the above copyright notice and this paragraph appear in all copies. The copyright holders make no representation about the suitability of the schema for any purpose. It is provided \&quot;as is\&quot; without expressed or implied warranty.\n\nIf you modify the DocBook schema in any way, label your schema as a variant of DocBook. See the reference documentation (http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook) for more information.\n\nPlease direct all questions, bug reports, or suggestions for changes to the docbook@lists.oasis-open.org mailing list. For more information, see http://www.oasis-open.org/docbook/.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/57f08e72c7ede28d4f8951212ad9e91a">FedoraEntry:57f08e72c7ede28d4f8951212ad9e91a</a> for <a href="/?license=Fedora:DocBook-Schema"><span class="licensename"><span class="namespace">Fedora:</span>DocBook-Schema</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>DocBook-Schema</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">Fedora: <b style="">allowed-content</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:57f08e72c7ede28d4f8951212ad9e91a">[<a href="/fact/FedoraEntry/57f08e72c7ede28d4f8951212ad9e91a">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-content&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:DocBook-Schema&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:DocBook-Schema&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;57f08e72c7ede28d4f8951212ad9e91a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed-content\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed-content&quot;,
+                                    {
+                                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;DocBook-Schema&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:DocBook-Schema&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed-content&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/f85f7fa1566b33d7a5b1e0c7a1638a11">ScancodeData:f85f7fa1566b33d7a5b1e0c7a1638a11</a> for <a href="/?license=scancode:docbook-schema"><span class="licensename"><span class="namespace">scancode:</span>docbook-schema</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>docbook-schema</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook Schema License</span></li><li><span class="licensename">DocBook Schema License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:f85f7fa1566b33d7a5b1e0c7a1638a11">[<a href="/fact/ScancodeData/f85f7fa1566b33d7a5b1e0c7a1638a11">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc" target="_blank">https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify and distribute the DocBook schema
+and its accompanying documentation for any purpose and without fee
+is hereby granted in perpetuity, provided that the above copyright
+notice and this paragraph appear in all copies. The copyright
+holders make no representation about the suitability of the schema
+for any purpose. It is provided &quot;as is&quot; without expressed or implied
+warranty.
+ 
+If you modify the DocBook schema in any way, label your schema as a
+variant of DocBook. See the reference documentation
+(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)
+for more information.
+ 
+Please direct all questions, bug reports, or suggestions for changes
+to the docbook@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:docbook-schema&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DocBook Schema License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DocBook Schema License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:DocBook-Schema&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;f85f7fa1566b33d7a5b1e0c7a1638a11&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify and distribute the DocBook schema\nand its accompanying documentation for any purpose and without fee\nis hereby granted in perpetuity, provided that the above copyright\nnotice and this paragraph appear in all copies. The copyright\nholders make no representation about the suitability of the schema\nfor any purpose. It is provided \&quot;as is\&quot; without expressed or implied\nwarranty.\n \nIf you modify the DocBook schema in any way, label your schema as a\nvariant of DocBook. See the reference documentation\n(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)\nfor more information.\n \nPlease direct all questions, bug reports, or suggestions for changes\nto the docbook@lists.oasis-open.org mailing list. For more\ninformation, see http://www.oasis-open.org/docbook/.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;docbook-schema&quot;,
+        &quot;_name&quot;: &quot;DocBook Schema License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/docbook/xslt10-stylesheets/blob/efd62655c11cc8773708df7a843613fa1e932bf8/xsl/assembly/schema/docbook51b7.rnc&quot;
+        ],
+        &quot;_owner&quot;: &quot;OASIS&quot;,
+        &quot;_shortName&quot;: &quot;DocBook Schema License&quot;,
+        &quot;_spdxId&quot;: &quot;DocBook-Schema&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify and distribute the DocBook schema\nand its accompanying documentation for any purpose and without fee\nis hereby granted in perpetuity, provided that the above copyright\nnotice and this paragraph appear in all copies. The copyright\nholders make no representation about the suitability of the schema\nfor any purpose. It is provided \&quot;as is\&quot; without expressed or implied\nwarranty.\n \nIf you modify the DocBook schema in any way, label your schema as a\nvariant of DocBook. See the reference documentation\n(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)\nfor more information.\n \nPlease direct all questions, bug reports, or suggestions for changes\nto the docbook@lists.oasis-open.org mailing list. For more\ninformation, see http://www.oasis-open.org/docbook/.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/308875252314cf025624a039ea07132a">OrtLicenseCategorization:308875252314cf025624a039ea07132a</a> for <a href="/?license=SPDX:DocBook-Schema"><span class="licensename"><span class="namespace">SPDX:</span>DocBook-Schema</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>DocBook-Schema</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:308875252314cf025624a039ea07132a">[<a href="/fact/OrtLicenseCategorization/308875252314cf025624a039ea07132a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:308875252314cf025624a039ea07132a">[<a href="/fact/OrtLicenseCategorization/308875252314cf025624a039ea07132a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:DocBook-Schema&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;308875252314cf025624a039ea07132a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:DocBook-Schema&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/92ffede8fc639d9020a7c93d2f969e0b">CavilLicenseChange:92ffede8fc639d9020a7c93d2f969e0b</a> for <a href="/?license=cavil:DocBook-Schema"><span class="licensename"><span class="namespace">cavil:</span>DocBook-Schema</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>DocBook-Schema</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook-Schema</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:DocBook-Schema&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DocBook-Schema&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;92ffede8fc639d9020a7c93d2f969e0b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;DocBook-Schema&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:DocBook-Schema&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/6f073560d7b2d3d1bc298a377408d7c7">MetaeffektLicense:6f073560d7b2d3d1bc298a377408d7c7</a> for <a href="/?license=metaeffekt:DocBook Schema License"><span class="licensename"><span class="namespace">metaeffekt:</span>DocBook Schema License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>DocBook Schema License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook Schema</span></li><li><span class="licensename">DocBook Schema License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>docbook-schema</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:DocBook Schema License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:DocBook-Schema&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DocBook Schema&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DocBook Schema License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:docbook-schema&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;6f073560d7b2d3d1bc298a377408d7c7&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;DocBook Schema License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:DocBook Schema License&quot;,
+        &quot;_category&quot;: &quot;DocBook Schema&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:docbook-schema&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:DocBook-Schema&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/e23c7d77411b9f78fab4e5a7a7b2feb3">LicenseLynx:e23c7d77411b9f78fab4e5a7a7b2feb3</a> for <a href="/?license=spdx:DocBook-Schema"><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-Schema</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook Schema License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>docbook-schema</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:DocBook-Schema&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:docbook-schema&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:DocBook Schema License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;e23c7d77411b9f78fab4e5a7a7b2feb3&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:docbook-schema&quot;,
+            &quot;spdx:DocBook Schema License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:DocBook-Schema&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

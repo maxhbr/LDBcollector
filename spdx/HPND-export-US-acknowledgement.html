@@ -1,0 +1,685 @@
+<html><head><title>ldbcollector: spdx:HPND-export-US-acknowledgement</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:HPND-export-US-acknowledgement</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US-acknowledgement</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND US export acknowledgment</span></li><li><span class="licensename"><span class="namespace">scancode:</span>HPND US export acknowledgment</span></li><li><span class="licensename">HPND with US Government export control warning and acknowledgment</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND with US Government export control warning and acknowledgment</span></li><li><span class="licensename">HPND-export-US-acknowledgement</span></li><li><span class="licensename"><span class="namespace">cavil:</span>HPND-export-US-acknowledgement</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-export-US-acknowledgement</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-export-us-acknowledgement</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US-acknowledgement</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Free Restricted<span class="provided-by">(provided by: <span title="ScancodeData:6a1986c7b1885b842721a65ebe49a407">[<a href="/fact/ScancodeData/6a1986c7b1885b842721a65ebe49a407">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:53a68e3d30d62817dcdf26bff95bd51f">[<a href="/fact/SPDXLicense/53a68e3d30d62817dcdf26bff95bd51f">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8e8cfadd81d7067c1e3d46096fec39eb">[<a href="/fact/FedoraEntry/8e8cfadd81d7067c1e3d46096fec39eb">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>free-restricted</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b70266327bd6184e7c23f01f2ed62166">[<a href="/fact/OrtLicenseCategorization/b70266327bd6184e7c23f01f2ed62166">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b70266327bd6184e7c23f01f2ed62166">[<a href="/fact/OrtLicenseCategorization/b70266327bd6184e7c23f01f2ed62166">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is similar to HPND-export-US, but has a different obligation relating to notice and different disclaimer.<span class="provided-by">(provided by: <span title="SPDXLicense:53a68e3d30d62817dcdf26bff95bd51f">[<a href="/fact/SPDXLicense/53a68e3d30d62817dcdf26bff95bd51f">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>Added in SPDX license list 3.24
+This was previously mit-no-advert-export-control_and_proprietary-license_1.RULE
+<span class="provided-by">(provided by: <span title="ScancodeData:6a1986c7b1885b842721a65ebe49a407">[<a href="/fact/ScancodeData/6a1986c7b1885b842721a65ebe49a407">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852" target="_blank">https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852</a></li><li><a href="https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html" target="_blank">https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1994 by the University of Southern California
+
+   EXPORT OF THIS SOFTWARE from the United States of America may
+   require a specific license from the United States Government. It
+   is the responsibility of any person or organization
+   contemplating export to obtain such a license before exporting.
+
+WITHIN THAT CONSTRAINT, permission to copy, modify, and distribute
+this software and its documentation in source and binary forms is
+hereby granted, provided that any documentation or other materials
+related to such distribution or use acknowledge that the software
+was developed by the University of Southern California.
+
+DISCLAIMER OF WARRANTY.  THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;.  The
+University of Southern California MAKES NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED.  By way of example, but not
+limitation, the University of Southern California MAKES NO
+REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY
+PARTICULAR PURPOSE. The University of Southern California shall not
+be held liable for any liability nor for any direct, indirect, or
+consequential damages with respect to any claim by the user or
+distributor of the ksu software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            Copyright (C) 1994 by the University of Southern California
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            EXPORT OF THIS SOFTWARE from the United States of America may
+            require a specific license from the United States Government.
+            It is the responsibility of any person or organization
+            contemplating export to obtain such a license before exporting.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            WITHIN THAT CONSTRAINT, permission to copy, modify, and distribute
+            this software and its documentation in source and binary forms
+            is hereby granted, provided that any documentation or other
+            materials related to such distribution or use acknowledge that the
+            software was developed by the University of Southern California.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            DISCLAIMER OF WARRANTY. THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;.
+            The University of Southern California MAKES NO REPRESENTATIONS
+            OR WARRANTIES, EXPRESS OR IMPLIED. By way of example, but not
+            limitation, the University of Southern California MAKES NO
+            REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS
+            FOR ANY PARTICULAR PURPOSE. The University of Southern
+            California shall not be held liable for any liability nor for
+            any direct, indirect, or consequential damages with respect
+            to any claim by the user or distributor of the ksu software.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>EXPORT OF THIS SOFTWARE from the United States of America may
+require a specific license from the United States Government. It
+is the responsibility of any person or organization
+contemplating export to obtain such a license before exporting.
+
+WITHIN THAT CONSTRAINT, permission to copy, modify, and distribute
+this software and its documentation in source and binary forms is
+hereby granted, provided that any documentation or other materials
+related to such distribution or use acknowledge that the software
+was developed by the University of Southern California.
+
+DISCLAIMER OF WARRANTY.  THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;.  The
+University of Southern California MAKES NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED.  By way of example, but not
+limitation, the University of Southern California MAKES NO
+REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY
+PARTICULAR PURPOSE. The University of Southern California shall not
+be held liable for any liability nor for any direct, indirect, or
+consequential damages with respect to any claim by the user or
+distributor of the ksu software.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/53a68e3d30d62817dcdf26bff95bd51f">SPDXLicense:53a68e3d30d62817dcdf26bff95bd51f</a> for <a href="/?license=spdx:HPND-export-US-acknowledgement"><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US-acknowledgement</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US-acknowledgement</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND with US Government export control warning and acknowledgment</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:53a68e3d30d62817dcdf26bff95bd51f">[<a href="/fact/SPDXLicense/53a68e3d30d62817dcdf26bff95bd51f">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is similar to HPND-export-US, but has a different obligation relating to notice and different disclaimer.<span class="provided-by">(provided by: <span title="SPDXLicense:53a68e3d30d62817dcdf26bff95bd51f">[<a href="/fact/SPDXLicense/53a68e3d30d62817dcdf26bff95bd51f">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852" target="_blank">https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852</a></li><li><a href="https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html" target="_blank">https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1994 by the University of Southern California
+
+   EXPORT OF THIS SOFTWARE from the United States of America may
+   require a specific license from the United States Government. It
+   is the responsibility of any person or organization
+   contemplating export to obtain such a license before exporting.
+
+WITHIN THAT CONSTRAINT, permission to copy, modify, and distribute
+this software and its documentation in source and binary forms is
+hereby granted, provided that any documentation or other materials
+related to such distribution or use acknowledge that the software
+was developed by the University of Southern California.
+
+DISCLAIMER OF WARRANTY.  THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;.  The
+University of Southern California MAKES NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED.  By way of example, but not
+limitation, the University of Southern California MAKES NO
+REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY
+PARTICULAR PURPOSE. The University of Southern California shall not
+be held liable for any liability nor for any direct, indirect, or
+consequential damages with respect to any claim by the user or
+distributor of the ksu software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            Copyright (C) 1994 by the University of Southern California
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            EXPORT OF THIS SOFTWARE from the United States of America may
+            require a specific license from the United States Government.
+            It is the responsibility of any person or organization
+            contemplating export to obtain such a license before exporting.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            WITHIN THAT CONSTRAINT, permission to copy, modify, and distribute
+            this software and its documentation in source and binary forms
+            is hereby granted, provided that any documentation or other
+            materials related to such distribution or use acknowledge that the
+            software was developed by the University of Southern California.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            DISCLAIMER OF WARRANTY. THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;.
+            The University of Southern California MAKES NO REPRESENTATIONS
+            OR WARRANTIES, EXPRESS OR IMPLIED. By way of example, but not
+            limitation, the University of Southern California MAKES NO
+            REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS
+            FOR ANY PARTICULAR PURPOSE. The University of Southern
+            California shall not be held liable for any liability nor for
+            any direct, indirect, or consequential damages with respect
+            to any claim by the user or distributor of the ksu software.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-export-US-acknowledgement&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND with US Government export control warning and acknowledgment&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;53a68e3d30d62817dcdf26bff95bd51f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is similar to HPND-export-US, but has a different obligation relating to notice and different disclaimer.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (C) 1994 by the University of Southern California\n\n   EXPORT OF THIS SOFTWARE from the United States of America may\n   require a specific license from the United States Government. It\n   is the responsibility of any person or organization\n   contemplating export to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to copy, modify, and distribute\nthis software and its documentation in source and binary forms is\nhereby granted, provided that any documentation or other materials\nrelated to such distribution or use acknowledge that the software\nwas developed by the University of Southern California.\n\nDISCLAIMER OF WARRANTY.  THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot;.  The\nUniversity of Southern California MAKES NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED.  By way of example, but not\nlimitation, the University of Southern California MAKES NO\nREPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY\nPARTICULAR PURPOSE. The University of Southern California shall not\nbe held liable for any liability nor for any direct, indirect, or\nconsequential damages with respect to any claim by the user or\ndistributor of the ksu software.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            Copyright (C) 1994 by the University of Southern California\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            EXPORT OF THIS SOFTWARE from the United States of America may\n            require a specific license from the United States Government.\n            It is the responsibility of any person or organization\n            contemplating export to obtain such a license before exporting.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            WITHIN THAT CONSTRAINT, permission to copy, modify, and distribute\n            this software and its documentation in source and binary forms\n            is hereby granted, provided that any documentation or other\n            materials related to such distribution or use acknowledge that the\n            software was developed by the University of Southern California.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            DISCLAIMER OF WARRANTY. THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;.\n            The University of Southern California MAKES NO REPRESENTATIONS\n            OR WARRANTIES, EXPRESS OR IMPLIED. By way of example, but not\n            limitation, the University of Southern California MAKES NO\n            REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS\n            FOR ANY PARTICULAR PURPOSE. The University of Southern\n            California shall not be held liable for any liability nor for\n            any direct, indirect, or consequential damages with respect\n            to any claim by the user or distributor of the ksu software.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:01:26Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:01:26Z&quot;,
+                &quot;url&quot;: &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is similar to HPND-export-US, but has a different obligation relating to notice and different disclaimer.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:HPND-export-US-acknowledgement&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (C) 1994 by the University of Southern California\n\n   EXPORT OF THIS SOFTWARE from the United States of America may\n   require a specific license from the United States Government. It\n   is the responsibility of any person or organization\n   contemplating export to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to copy, modify, and distribute\nthis software and its documentation in source and binary forms is\nhereby granted, provided that any documentation or other materials\nrelated to such distribution or use acknowledge that the software\nwas developed by the University of Southern California.\n\nDISCLAIMER OF WARRANTY.  THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot;.  The\nUniversity of Southern California MAKES NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED.  By way of example, but not\nlimitation, the University of Southern California MAKES NO\nREPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY\nPARTICULAR PURPOSE. The University of Southern California shall not\nbe held liable for any liability nor for any direct, indirect, or\nconsequential damages with respect to any claim by the user or\ndistributor of the ksu software.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            Copyright (C) 1994 by the University of Southern California\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            EXPORT OF THIS SOFTWARE from the United States of America may\n            require a specific license from the United States Government.\n            It is the responsibility of any person or organization\n            contemplating export to obtain such a license before exporting.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            WITHIN THAT CONSTRAINT, permission to copy, modify, and distribute\n            this software and its documentation in source and binary forms\n            is hereby granted, provided that any documentation or other\n            materials related to such distribution or use acknowledge that the\n            software was developed by the University of Southern California.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            DISCLAIMER OF WARRANTY. THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;.\n            The University of Southern California MAKES NO REPRESENTATIONS\n            OR WARRANTIES, EXPRESS OR IMPLIED. By way of example, but not\n            limitation, the University of Southern California MAKES NO\n            REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS\n            FOR ANY PARTICULAR PURPOSE. The University of Southern\n            California shall not be held liable for any liability nor for\n            any direct, indirect, or consequential damages with respect\n            to any claim by the user or distributor of the ksu software.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;HPND with US Government export control warning and acknowledgment&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852&quot;,
+            &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Copyright (C) 1994 by the University of Southern California\n\nEXPORT OF THIS SOFTWARE from the United States of America may require a specific license from the United States Government. It is the responsibility of any person or organization contemplating export to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to copy, modify, and distribute this software and its documentation in source and binary forms is hereby granted, provided that any documentation or other materials related to such distribution or use acknowledge that the software was developed by the University of Southern California.\n\nDISCLAIMER OF WARRANTY. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot;. The University of Southern California MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. By way of example, but not limitation, the University of Southern California MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE. The University of Southern California shall not be held liable for any liability nor for any direct, indirect, or consequential damages with respect to any claim by the user or distributor of the ksu software.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/8e8cfadd81d7067c1e3d46096fec39eb">FedoraEntry:8e8cfadd81d7067c1e3d46096fec39eb</a> for <a href="/?license=Fedora:HPND-export-US-acknowledgement"><span class="licensename"><span class="namespace">Fedora:</span>HPND-export-US-acknowledgement</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-export-US-acknowledgement</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US-acknowledgement</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8e8cfadd81d7067c1e3d46096fec39eb">[<a href="/fact/FedoraEntry/8e8cfadd81d7067c1e3d46096fec39eb">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:HPND-export-US-acknowledgement&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-export-US-acknowledgement&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;8e8cfadd81d7067c1e3d46096fec39eb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;HPND-export-US-acknowledgement&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:HPND-export-US-acknowledgement&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/6a1986c7b1885b842721a65ebe49a407">ScancodeData:6a1986c7b1885b842721a65ebe49a407</a> for <a href="/?license=scancode:hpnd-export-us-acknowledgement"><span class="licensename"><span class="namespace">scancode:</span>hpnd-export-us-acknowledgement</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-export-us-acknowledgement</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND US export acknowledgment</span></li><li><span class="licensename">HPND with US Government export control warning and acknowledgment</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US-acknowledgement</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Free Restricted<span class="provided-by">(provided by: <span title="ScancodeData:6a1986c7b1885b842721a65ebe49a407">[<a href="/fact/ScancodeData/6a1986c7b1885b842721a65ebe49a407">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX license list 3.24
+This was previously mit-no-advert-export-control_and_proprietary-license_1.RULE
+<span class="provided-by">(provided by: <span title="ScancodeData:6a1986c7b1885b842721a65ebe49a407">[<a href="/fact/ScancodeData/6a1986c7b1885b842721a65ebe49a407">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852" target="_blank">https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852</a></li><li><a href="https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html" target="_blank">https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>EXPORT OF THIS SOFTWARE from the United States of America may
+require a specific license from the United States Government. It
+is the responsibility of any person or organization
+contemplating export to obtain such a license before exporting.
+
+WITHIN THAT CONSTRAINT, permission to copy, modify, and distribute
+this software and its documentation in source and binary forms is
+hereby granted, provided that any documentation or other materials
+related to such distribution or use acknowledge that the software
+was developed by the University of Southern California.
+
+DISCLAIMER OF WARRANTY.  THIS SOFTWARE IS PROVIDED &quot;AS IS&quot;.  The
+University of Southern California MAKES NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED.  By way of example, but not
+limitation, the University of Southern California MAKES NO
+REPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY
+PARTICULAR PURPOSE. The University of Southern California shall not
+be held liable for any liability nor for any direct, indirect, or
+consequential damages with respect to any claim by the user or
+distributor of the ksu software.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:hpnd-export-us-acknowledgement&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND US export acknowledgment&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND with US Government export control warning and acknowledgment&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:HPND-export-US-acknowledgement&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;6a1986c7b1885b842721a65ebe49a407&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Free Restricted&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Added in SPDX license list 3.24\nThis was previously mit-no-advert-export-control_and_proprietary-license_1.RULE\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;EXPORT OF THIS SOFTWARE from the United States of America may\nrequire a specific license from the United States Government. It\nis the responsibility of any person or organization\ncontemplating export to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to copy, modify, and distribute\nthis software and its documentation in source and binary forms is\nhereby granted, provided that any documentation or other materials\nrelated to such distribution or use acknowledge that the software\nwas developed by the University of Southern California.\n\nDISCLAIMER OF WARRANTY.  THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot;.  The\nUniversity of Southern California MAKES NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED.  By way of example, but not\nlimitation, the University of Southern California MAKES NO\nREPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY\nPARTICULAR PURPOSE. The University of Southern California shall not\nbe held liable for any liability nor for any direct, indirect, or\nconsequential damages with respect to any claim by the user or\ndistributor of the ksu software.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Free Restricted&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;hpnd-export-us-acknowledgement&quot;,
+        &quot;_name&quot;: &quot;HPND with US Government export control warning and acknowledgment&quot;,
+        &quot;_notes&quot;: &quot;Added in SPDX license list 3.24\nThis was previously mit-no-advert-export-control_and_proprietary-license_1.RULE\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L831-L852&quot;,
+            &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+        ],
+        &quot;_owner&quot;: &quot;Regents of the University of California&quot;,
+        &quot;_shortName&quot;: &quot;HPND US export acknowledgment&quot;,
+        &quot;_spdxId&quot;: &quot;HPND-export-US-acknowledgement&quot;,
+        &quot;_text&quot;: &quot;EXPORT OF THIS SOFTWARE from the United States of America may\nrequire a specific license from the United States Government. It\nis the responsibility of any person or organization\ncontemplating export to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to copy, modify, and distribute\nthis software and its documentation in source and binary forms is\nhereby granted, provided that any documentation or other materials\nrelated to such distribution or use acknowledge that the software\nwas developed by the University of Southern California.\n\nDISCLAIMER OF WARRANTY.  THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot;.  The\nUniversity of Southern California MAKES NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED.  By way of example, but not\nlimitation, the University of Southern California MAKES NO\nREPRESENTATIONS OR WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY\nPARTICULAR PURPOSE. The University of Southern California shall not\nbe held liable for any liability nor for any direct, indirect, or\nconsequential damages with respect to any claim by the user or\ndistributor of the ksu software.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/b70266327bd6184e7c23f01f2ed62166">OrtLicenseCategorization:b70266327bd6184e7c23f01f2ed62166</a> for <a href="/?license=SPDX:HPND-export-US-acknowledgement"><span class="licensename"><span class="namespace">SPDX:</span>HPND-export-US-acknowledgement</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HPND-export-US-acknowledgement</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>free-restricted</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b70266327bd6184e7c23f01f2ed62166">[<a href="/fact/OrtLicenseCategorization/b70266327bd6184e7c23f01f2ed62166">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b70266327bd6184e7c23f01f2ed62166">[<a href="/fact/OrtLicenseCategorization/b70266327bd6184e7c23f01f2ed62166">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HPND-export-US-acknowledgement&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;b70266327bd6184e7c23f01f2ed62166&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;free-restricted&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;free-restricted&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HPND-export-US-acknowledgement&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/773e40902afe709f296ad87aad49575e">CavilLicenseChange:773e40902afe709f296ad87aad49575e</a> for <a href="/?license=cavil:HPND-export-US-acknowledgement"><span class="licensename"><span class="namespace">cavil:</span>HPND-export-US-acknowledgement</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>HPND-export-US-acknowledgement</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND-export-US-acknowledgement</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:HPND-export-US-acknowledgement&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND-export-US-acknowledgement&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;773e40902afe709f296ad87aad49575e&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;HPND-export-US-acknowledgement&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:HPND-export-US-acknowledgement&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/cc6577c28e0386eb9f58aab4b1b72427">LicenseLynx:cc6577c28e0386eb9f58aab4b1b72427</a> for <a href="/?license=spdx:HPND-export-US-acknowledgement"><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US-acknowledgement</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US-acknowledgement</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>HPND US export acknowledgment</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND with US Government export control warning and acknowledgment</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-export-us-acknowledgement</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-export-US-acknowledgement&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:HPND US export acknowledgment&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:hpnd-export-us-acknowledgement&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:HPND with US Government export control warning and acknowledgment&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;cc6577c28e0386eb9f58aab4b1b72427&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:HPND US export acknowledgment&quot;,
+            &quot;scancode:hpnd-export-us-acknowledgement&quot;,
+            &quot;spdx:HPND with US Government export control warning and acknowledgment&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:HPND-export-US-acknowledgement&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

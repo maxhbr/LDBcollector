@@ -1,0 +1,1093 @@
+<html><head><title>ldbcollector: spdx:SOFA</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:SOFA</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SOFA</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">SOFA</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sofa</span></li><li><span class="licensename"><span class="namespace">spdx:</span>SOFA</span></li><li><span class="licensename">SOFA Software License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>SOFA Software License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>SOFA Software License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.iausofa.org/tandc.html</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Proprietary Free<span class="provided-by">(provided by: <span title="ScancodeData:e1c9b1622c8b36445d0a8e43bc9aee1d">[<a href="/fact/ScancodeData/e1c9b1622c8b36445d0a8e43bc9aee1d">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:37903ccb4372ef19f723d14dadf25d24">[<a href="/fact/SPDXLicense/37903ccb4372ef19f723d14dadf25d24">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>proprietary-free</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:22e86384ad1a6923338ba59f43013a9e">[<a href="/fact/OrtLicenseCategorization/22e86384ad1a6923338ba59f43013a9e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:22e86384ad1a6923338ba59f43013a9e">[<a href="/fact/OrtLicenseCategorization/22e86384ad1a6923338ba59f43013a9e">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX License List 3.27
+This was previously the proprietary-license_972.RULE
+<span class="provided-by">(provided by: <span title="ScancodeData:e1c9b1622c8b36445d0a8e43bc9aee1d">[<a href="/fact/ScancodeData/e1c9b1622c8b36445d0a8e43bc9aee1d">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.iausofa.org/tandc.html" target="_blank">http://www.iausofa.org/tandc.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 2023
+Standards of Fundamental Astronomy Board
+of the International Astronomical Union.
+
+=====================
+SOFA Software License
+=====================
+
+NOTICE TO USER:
+
+BY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND
+CONDITIONS WHICH APPLY TO ITS USE.
+
+1. The Software is owned by the IAU SOFA Board (&quot;SOFA&quot;).
+
+2. Permission is granted to anyone to use the SOFA software for any
+purpose, including commercial applications, free of charge and
+without payment of royalties, subject to the conditions and
+restrictions listed below.
+
+3. You (the user) may copy and distribute SOFA source code to others,
+and use and adapt its code and algorithms in your own software,
+on a world-wide, royalty-free basis.  That portion of your
+distribution that does not consist of intact and unchanged copies
+of SOFA source code files is a &quot;derived work&quot; that must comply
+with the following requirements:
+
+     a) Your work shall be marked or carry a statement that it
+        (i) uses routines and computations derived by you from
+        software provided by SOFA under license to you; and
+        (ii) does not itself constitute software provided by and/or
+        endorsed by SOFA.
+
+     b) The source code of your derived work must contain descriptions
+        of how the derived work is based upon, contains and/or differs
+        from the original SOFA software.
+
+     c) The names of all routines in your derived work shall not
+        include the prefix &quot;iau&quot; or &quot;sofa&quot; or trivial modifications
+        thereof such as changes of case.
+
+     d) The origin of the SOFA components of your derived work must
+        not be misrepresented;  you must not claim that you wrote the
+        original software, nor file a patent application for SOFA
+        software or algorithms embedded in the SOFA software.
+
+     e) These requirements must be reproduced intact in any source
+        distribution and shall apply to anyone to whom you have
+        granted a further right to modify the source code of your
+        derived work.
+
+     Note that, as originally distributed, the SOFA software is
+     intended to be a definitive implementation of the IAU standards,
+     and consequently third-party modifications are discouraged.  All
+     variations, no matter how minor, must be explicitly marked as
+     such, as explained above.
+
+  4. You shall not cause the SOFA software to be brought into
+     disrepute, either by misuse, or use for inappropriate tasks, or
+     by inappropriate modification.
+
+  5. The SOFA software is provided &quot;as is&quot; and SOFA makes no warranty
+     as to its use or performance.   SOFA does not and cannot warrant
+     the performance or results which the user may obtain by using the
+     SOFA software.  SOFA makes no warranties, express or implied, as
+     to non-infringement of third party rights, merchantability, or
+     fitness for any particular purpose.  In no event will SOFA be
+     liable to the user for any consequential, incidental, or special
+     damages, including any lost profits or lost savings, even if a
+     SOFA representative has been advised of such damages, or for any
+     claim by any third party.
+
+  6. The provision of any version of the SOFA software under the terms
+     and conditions specified herein does not imply that future
+     versions will also be made available under the same terms and
+     conditions.
+
+  In any published work or commercial product which uses the SOFA
+  software directly, acknowledgement (see www.iausofa.org) is
+  appreciated.
+
+  Correspondence concerning SOFA software should be addressed as
+  follows:
+      By email:  sofa@ukho.gov.uk
+      By post:   IAU SOFA Center
+                 HM Nautical Almanac Office
+                 UK Hydrographic Office
+                 Admiralty Way, Taunton
+                 Somerset, TA1 2DN
+                 United Kingdom
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            Copyright (C) 2023 Standards of Fundamental Astronomy
+            Board of the International Astronomical Union.
+         &lt;/span&gt;&lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            SOFA Software License
+         &lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            NOTICE TO USER:
+         &lt;/var&gt;
+         &lt;p&gt;
+            BY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING
+            SIX TERMS AND CONDITIONS WHICH APPLY TO ITS USE.
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               The Software is owned by the IAU SOFA Board (&amp;quot;SOFA&amp;quot;).
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               Permission is granted to anyone to use the SOFA software
+               for any purpose, including commercial applications,
+               free of charge and without payment of royalties,
+               subject to the conditions and restrictions listed below.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               You (the user) may copy and distribute SOFA source code to
+               others, and use and adapt its code and algorithms in your
+               own software, on a world-wide, royalty-free basis. That
+               portion of your distribution that does not consist of intact
+               and unchanged copies of SOFA source code files is a &amp;quot;derived
+               work&amp;quot; that must comply with the following requirements:
+               
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; a)&lt;/span&gt;&lt;/var&gt;
+                     Your work shall be marked or carry a statement that
+                     it (i) uses routines and computations derived by
+                     you from software provided by SOFA under license
+                     to you; and (ii) does not itself constitute
+                     software provided by and/or endorsed by SOFA.
+                  &lt;/li&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; b)&lt;/span&gt;&lt;/var&gt;
+                     The source code of your derived work must contain
+                     descriptions of how the derived work is based upon,
+                     contains and/or differs from the original SOFA software.
+                  &lt;/li&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; c)&lt;/span&gt;&lt;/var&gt;
+                     The names of all routines in your derived work shall
+                     not include the prefix &amp;quot;iau&amp;quot; or &amp;quot;sofa&amp;quot; or trivial
+                     modifications thereof such as changes of case.
+                  &lt;/li&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; d)&lt;/span&gt;&lt;/var&gt;
+                     The origin of the SOFA components of your derived work must
+                     not be misrepresented; you must not claim that you wrote
+                     the original software, nor file a patent application for
+                     SOFA software or algorithms embedded in the SOFA software.
+                  &lt;/li&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; e)&lt;/span&gt;&lt;/var&gt;
+                     These requirements must be reproduced intact
+                     in any source distribution and shall apply to
+                     anyone to whom you have granted a further right
+                     to modify the source code of your derived work.
+                  &lt;/li&gt;
+               
+&lt;/ul&gt;
+               &lt;p&gt;
+                  Note that, as originally distributed, the SOFA software
+                  is intended to be a definitive implementation of the IAU
+                  standards, and consequently third-party modifications
+                  are discouraged. All variations, no matter how minor,
+                  must be explicitly marked as such, as explained above.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               You shall not cause the SOFA software to be brought
+               into disrepute, either by misuse, or use for
+               inappropriate tasks, or by inappropriate modification.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;
+               The SOFA software is provided &amp;quot;as is&amp;quot; and SOFA makes no
+               warranty as to its use or performance. SOFA does not and cannot
+               warrant the performance or results which the user may obtain
+               by using the SOFA software. SOFA makes no warranties, express
+               or implied, as to non-infringement of third party rights,
+               merchantability, or fitness for any particular purpose. In no
+               event will SOFA be liable to the user for any consequential,
+               incidental, or special damages, including any lost profits
+               or lost savings, even if a SOFA representative has been
+               advised of such damages, or for any claim by any third party.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;
+               The provision of any version of the SOFA software
+               under the terms and conditions specified herein
+               does not imply that future versions will also be
+               made available under the same terms and conditions.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+&lt;p&gt;In any published work or commercial product which uses the SOFA
+  software directly, acknowledgement (see www.iausofa.org) is
+  appreciated.&lt;/p&gt;
+
+&lt;p&gt;  Correspondence concerning SOFA software should be addressed as
+  follows:&lt;/p&gt;
+
+     &lt;p&gt; By email:  sofa@ukho.gov.uk
+    &lt;br /&gt;
+  By post:   IAU SOFA Center
+     &lt;br /&gt;
+            HM Nautical Almanac Office
+     &lt;br /&gt;
+            UK Hydrographic Office
+     &lt;br /&gt;
+            Admiralty Way, Taunton
+     &lt;br /&gt;
+            Somerset, TA1 2DN
+      &lt;br /&gt;
+           United Kingdom&lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li><li><details><summary>Text:</summary><pre>=====================
+SOFA Software License
+=====================
+
+NOTICE TO USER:
+
+BY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND
+CONDITIONS WHICH APPLY TO ITS USE.
+
+1. The Software is owned by the IAU SOFA Board (&quot;SOFA&quot;).
+
+2. Permission is granted to anyone to use the SOFA software for any
+purpose, including commercial applications, free of charge and
+without payment of royalties, subject to the conditions and
+restrictions listed below.
+
+3. You (the user) may copy and distribute SOFA source code to others,
+and use and adapt its code and algorithms in your own software,
+on a world-wide, royalty-free basis.  That portion of your
+distribution that does not consist of intact and unchanged copies
+of SOFA source code files is a &quot;derived work&quot; that must comply
+with the following requirements:
+
+     a) Your work shall be marked or carry a statement that it
+        (i) uses routines and computations derived by you from
+        software provided by SOFA under license to you; and
+        (ii) does not itself constitute software provided by and/or
+        endorsed by SOFA.
+
+     b) The source code of your derived work must contain descriptions
+        of how the derived work is based upon, contains and/or differs
+        from the original SOFA software.
+
+     c) The names of all routines in your derived work shall not
+        include the prefix &quot;iau&quot; or &quot;sofa&quot; or trivial modifications
+        thereof such as changes of case.
+
+     d) The origin of the SOFA components of your derived work must
+        not be misrepresented;  you must not claim that you wrote the
+        original software, nor file a patent application for SOFA
+        software or algorithms embedded in the SOFA software.
+
+     e) These requirements must be reproduced intact in any source
+        distribution and shall apply to anyone to whom you have
+        granted a further right to modify the source code of your
+        derived work.
+
+     Note that, as originally distributed, the SOFA software is
+     intended to be a definitive implementation of the IAU standards,
+     and consequently third-party modifications are discouraged.  All
+     variations, no matter how minor, must be explicitly marked as
+     such, as explained above.
+
+  4. You shall not cause the SOFA software to be brought into
+     disrepute, either by misuse, or use for inappropriate tasks, or
+     by inappropriate modification.
+
+  5. The SOFA software is provided &quot;as is&quot; and SOFA makes no warranty
+     as to its use or performance.   SOFA does not and cannot warrant
+     the performance or results which the user may obtain by using the
+     SOFA software.  SOFA makes no warranties, express or implied, as
+     to non-infringement of third party rights, merchantability, or
+     fitness for any particular purpose.  In no event will SOFA be
+     liable to the user for any consequential, incidental, or special
+     damages, including any lost profits or lost savings, even if a
+     SOFA representative has been advised of such damages, or for any
+     claim by any third party.
+
+  6. The provision of any version of the SOFA software under the terms
+     and conditions specified herein does not imply that future
+     versions will also be made available under the same terms and
+     conditions.
+
+  In any published work or commercial product which uses the SOFA
+  software directly, acknowledgement (see www.iausofa.org) is
+  appreciated.
+
+  Correspondence concerning SOFA software should be addressed as
+  follows:
+      By email:  sofa@ukho.gov.uk
+      By post:   IAU SOFA Center
+                 HM Nautical Almanac Office
+                 UK Hydrographic Office
+                 Admiralty Way, Taunton
+                 Somerset, TA1 2DN
+                 United Kingdom</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/37903ccb4372ef19f723d14dadf25d24">SPDXLicense:37903ccb4372ef19f723d14dadf25d24</a> for <a href="/?license=spdx:SOFA"><span class="licensename"><span class="namespace">spdx:</span>SOFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SOFA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SOFA Software License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:37903ccb4372ef19f723d14dadf25d24">[<a href="/fact/SPDXLicense/37903ccb4372ef19f723d14dadf25d24">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.iausofa.org/tandc.html" target="_blank">http://www.iausofa.org/tandc.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 2023
+Standards of Fundamental Astronomy Board
+of the International Astronomical Union.
+
+=====================
+SOFA Software License
+=====================
+
+NOTICE TO USER:
+
+BY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND
+CONDITIONS WHICH APPLY TO ITS USE.
+
+1. The Software is owned by the IAU SOFA Board (&quot;SOFA&quot;).
+
+2. Permission is granted to anyone to use the SOFA software for any
+purpose, including commercial applications, free of charge and
+without payment of royalties, subject to the conditions and
+restrictions listed below.
+
+3. You (the user) may copy and distribute SOFA source code to others,
+and use and adapt its code and algorithms in your own software,
+on a world-wide, royalty-free basis.  That portion of your
+distribution that does not consist of intact and unchanged copies
+of SOFA source code files is a &quot;derived work&quot; that must comply
+with the following requirements:
+
+     a) Your work shall be marked or carry a statement that it
+        (i) uses routines and computations derived by you from
+        software provided by SOFA under license to you; and
+        (ii) does not itself constitute software provided by and/or
+        endorsed by SOFA.
+
+     b) The source code of your derived work must contain descriptions
+        of how the derived work is based upon, contains and/or differs
+        from the original SOFA software.
+
+     c) The names of all routines in your derived work shall not
+        include the prefix &quot;iau&quot; or &quot;sofa&quot; or trivial modifications
+        thereof such as changes of case.
+
+     d) The origin of the SOFA components of your derived work must
+        not be misrepresented;  you must not claim that you wrote the
+        original software, nor file a patent application for SOFA
+        software or algorithms embedded in the SOFA software.
+
+     e) These requirements must be reproduced intact in any source
+        distribution and shall apply to anyone to whom you have
+        granted a further right to modify the source code of your
+        derived work.
+
+     Note that, as originally distributed, the SOFA software is
+     intended to be a definitive implementation of the IAU standards,
+     and consequently third-party modifications are discouraged.  All
+     variations, no matter how minor, must be explicitly marked as
+     such, as explained above.
+
+  4. You shall not cause the SOFA software to be brought into
+     disrepute, either by misuse, or use for inappropriate tasks, or
+     by inappropriate modification.
+
+  5. The SOFA software is provided &quot;as is&quot; and SOFA makes no warranty
+     as to its use or performance.   SOFA does not and cannot warrant
+     the performance or results which the user may obtain by using the
+     SOFA software.  SOFA makes no warranties, express or implied, as
+     to non-infringement of third party rights, merchantability, or
+     fitness for any particular purpose.  In no event will SOFA be
+     liable to the user for any consequential, incidental, or special
+     damages, including any lost profits or lost savings, even if a
+     SOFA representative has been advised of such damages, or for any
+     claim by any third party.
+
+  6. The provision of any version of the SOFA software under the terms
+     and conditions specified herein does not imply that future
+     versions will also be made available under the same terms and
+     conditions.
+
+  In any published work or commercial product which uses the SOFA
+  software directly, acknowledgement (see www.iausofa.org) is
+  appreciated.
+
+  Correspondence concerning SOFA software should be addressed as
+  follows:
+      By email:  sofa@ukho.gov.uk
+      By post:   IAU SOFA Center
+                 HM Nautical Almanac Office
+                 UK Hydrographic Office
+                 Admiralty Way, Taunton
+                 Somerset, TA1 2DN
+                 United Kingdom
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            Copyright (C) 2023 Standards of Fundamental Astronomy
+            Board of the International Astronomical Union.
+         &lt;/span&gt;&lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            SOFA Software License
+         &lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            NOTICE TO USER:
+         &lt;/var&gt;
+         &lt;p&gt;
+            BY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING
+            SIX TERMS AND CONDITIONS WHICH APPLY TO ITS USE.
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               The Software is owned by the IAU SOFA Board (&amp;quot;SOFA&amp;quot;).
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               Permission is granted to anyone to use the SOFA software
+               for any purpose, including commercial applications,
+               free of charge and without payment of royalties,
+               subject to the conditions and restrictions listed below.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               You (the user) may copy and distribute SOFA source code to
+               others, and use and adapt its code and algorithms in your
+               own software, on a world-wide, royalty-free basis. That
+               portion of your distribution that does not consist of intact
+               and unchanged copies of SOFA source code files is a &amp;quot;derived
+               work&amp;quot; that must comply with the following requirements:
+               
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; a)&lt;/span&gt;&lt;/var&gt;
+                     Your work shall be marked or carry a statement that
+                     it (i) uses routines and computations derived by
+                     you from software provided by SOFA under license
+                     to you; and (ii) does not itself constitute
+                     software provided by and/or endorsed by SOFA.
+                  &lt;/li&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; b)&lt;/span&gt;&lt;/var&gt;
+                     The source code of your derived work must contain
+                     descriptions of how the derived work is based upon,
+                     contains and/or differs from the original SOFA software.
+                  &lt;/li&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; c)&lt;/span&gt;&lt;/var&gt;
+                     The names of all routines in your derived work shall
+                     not include the prefix &amp;quot;iau&amp;quot; or &amp;quot;sofa&amp;quot; or trivial
+                     modifications thereof such as changes of case.
+                  &lt;/li&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; d)&lt;/span&gt;&lt;/var&gt;
+                     The origin of the SOFA components of your derived work must
+                     not be misrepresented; you must not claim that you wrote
+                     the original software, nor file a patent application for
+                     SOFA software or algorithms embedded in the SOFA software.
+                  &lt;/li&gt;
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; e)&lt;/span&gt;&lt;/var&gt;
+                     These requirements must be reproduced intact
+                     in any source distribution and shall apply to
+                     anyone to whom you have granted a further right
+                     to modify the source code of your derived work.
+                  &lt;/li&gt;
+               
+&lt;/ul&gt;
+               &lt;p&gt;
+                  Note that, as originally distributed, the SOFA software
+                  is intended to be a definitive implementation of the IAU
+                  standards, and consequently third-party modifications
+                  are discouraged. All variations, no matter how minor,
+                  must be explicitly marked as such, as explained above.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               You shall not cause the SOFA software to be brought
+               into disrepute, either by misuse, or use for
+               inappropriate tasks, or by inappropriate modification.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;
+               The SOFA software is provided &amp;quot;as is&amp;quot; and SOFA makes no
+               warranty as to its use or performance. SOFA does not and cannot
+               warrant the performance or results which the user may obtain
+               by using the SOFA software. SOFA makes no warranties, express
+               or implied, as to non-infringement of third party rights,
+               merchantability, or fitness for any particular purpose. In no
+               event will SOFA be liable to the user for any consequential,
+               incidental, or special damages, including any lost profits
+               or lost savings, even if a SOFA representative has been
+               advised of such damages, or for any claim by any third party.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;
+               The provision of any version of the SOFA software
+               under the terms and conditions specified herein
+               does not imply that future versions will also be
+               made available under the same terms and conditions.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+&lt;p&gt;In any published work or commercial product which uses the SOFA
+  software directly, acknowledgement (see www.iausofa.org) is
+  appreciated.&lt;/p&gt;
+
+&lt;p&gt;  Correspondence concerning SOFA software should be addressed as
+  follows:&lt;/p&gt;
+
+     &lt;p&gt; By email:  sofa@ukho.gov.uk
+    &lt;br /&gt;
+  By post:   IAU SOFA Center
+     &lt;br /&gt;
+            HM Nautical Almanac Office
+     &lt;br /&gt;
+            UK Hydrographic Office
+     &lt;br /&gt;
+            Admiralty Way, Taunton
+     &lt;br /&gt;
+            Somerset, TA1 2DN
+      &lt;br /&gt;
+           United Kingdom&lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:SOFA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SOFA Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;37903ccb4372ef19f723d14dadf25d24&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (C) 2023\nStandards of Fundamental Astronomy Board\nof the International Astronomical Union.\n\n=====================\nSOFA Software License\n=====================\n\nNOTICE TO USER:\n\nBY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND\nCONDITIONS WHICH APPLY TO ITS USE.\n\n1. The Software is owned by the IAU SOFA Board (\&quot;SOFA\&quot;).\n\n2. Permission is granted to anyone to use the SOFA software for any\npurpose, including commercial applications, free of charge and\nwithout payment of royalties, subject to the conditions and\nrestrictions listed below.\n\n3. You (the user) may copy and distribute SOFA source code to others,\nand use and adapt its code and algorithms in your own software,\non a world-wide, royalty-free basis.  That portion of your\ndistribution that does not consist of intact and unchanged copies\nof SOFA source code files is a \&quot;derived work\&quot; that must comply\nwith the following requirements:\n\n     a) Your work shall be marked or carry a statement that it\n        (i) uses routines and computations derived by you from\n        software provided by SOFA under license to you; and\n        (ii) does not itself constitute software provided by and/or\n        endorsed by SOFA.\n\n     b) The source code of your derived work must contain descriptions\n        of how the derived work is based upon, contains and/or differs\n        from the original SOFA software.\n\n     c) The names of all routines in your derived work shall not\n        include the prefix \&quot;iau\&quot; or \&quot;sofa\&quot; or trivial modifications\n        thereof such as changes of case.\n\n     d) The origin of the SOFA components of your derived work must\n        not be misrepresented;  you must not claim that you wrote the\n        original software, nor file a patent application for SOFA\n        software or algorithms embedded in the SOFA software.\n\n     e) These requirements must be reproduced intact in any source\n        distribution and shall apply to anyone to whom you have\n        granted a further right to modify the source code of your\n        derived work.\n\n     Note that, as originally distributed, the SOFA software is\n     intended to be a definitive implementation of the IAU standards,\n     and consequently third-party modifications are discouraged.  All\n     variations, no matter how minor, must be explicitly marked as\n     such, as explained above.\n\n  4. You shall not cause the SOFA software to be brought into\n     disrepute, either by misuse, or use for inappropriate tasks, or\n     by inappropriate modification.\n\n  5. The SOFA software is provided \&quot;as is\&quot; and SOFA makes no warranty\n     as to its use or performance.   SOFA does not and cannot warrant\n     the performance or results which the user may obtain by using the\n     SOFA software.  SOFA makes no warranties, express or implied, as\n     to non-infringement of third party rights, merchantability, or\n     fitness for any particular purpose.  In no event will SOFA be\n     liable to the user for any consequential, incidental, or special\n     damages, including any lost profits or lost savings, even if a\n     SOFA representative has been advised of such damages, or for any\n     claim by any third party.\n\n  6. The provision of any version of the SOFA software under the terms\n     and conditions specified herein does not imply that future\n     versions will also be made available under the same terms and\n     conditions.\n\n  In any published work or commercial product which uses the SOFA\n  software directly, acknowledgement (see www.iausofa.org) is\n  appreciated.\n\n  Correspondence concerning SOFA software should be addressed as\n  follows:\n      By email:  sofa@ukho.gov.uk\n      By post:   IAU SOFA Center\n                 HM Nautical Almanac Office\n                 UK Hydrographic Office\n                 Admiralty Way, Taunton\n                 Somerset, TA1 2DN\n                 United Kingdom\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            Copyright (C) 2023 Standards of Fundamental Astronomy\n            Board of the International Astronomical Union.\n         &lt;/span&gt;&lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            SOFA Software License\n         &lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            NOTICE TO USER:\n         &lt;/var&gt;\n         &lt;p&gt;\n            BY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING\n            SIX TERMS AND CONDITIONS WHICH APPLY TO ITS USE.\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               The Software is owned by the IAU SOFA Board (&amp;quot;SOFA&amp;quot;).\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               Permission is granted to anyone to use the SOFA software\n               for any purpose, including commercial applications,\n               free of charge and without payment of royalties,\n               subject to the conditions and restrictions listed below.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               You (the user) may copy and distribute SOFA source code to\n               others, and use and adapt its code and algorithms in your\n               own software, on a world-wide, royalty-free basis. That\n               portion of your distribution that does not consist of intact\n               and unchanged copies of SOFA source code files is a &amp;quot;derived\n               work&amp;quot; that must comply with the following requirements:\n               \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; a)&lt;/span&gt;&lt;/var&gt;\n                     Your work shall be marked or carry a statement that\n                     it (i) uses routines and computations derived by\n                     you from software provided by SOFA under license\n                     to you; and (ii) does not itself constitute\n                     software provided by and/or endorsed by SOFA.\n                  &lt;/li&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; b)&lt;/span&gt;&lt;/var&gt;\n                     The source code of your derived work must contain\n                     descriptions of how the derived work is based upon,\n                     contains and/or differs from the original SOFA software.\n                  &lt;/li&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; c)&lt;/span&gt;&lt;/var&gt;\n                     The names of all routines in your derived work shall\n                     not include the prefix &amp;quot;iau&amp;quot; or &amp;quot;sofa&amp;quot; or trivial\n                     modifications thereof such as changes of case.\n                  &lt;/li&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; d)&lt;/span&gt;&lt;/var&gt;\n                     The origin of the SOFA components of your derived work must\n                     not be misrepresented; you must not claim that you wrote\n                     the original software, nor file a patent application for\n                     SOFA software or algorithms embedded in the SOFA software.\n                  &lt;/li&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; e)&lt;/span&gt;&lt;/var&gt;\n                     These requirements must be reproduced intact\n                     in any source distribution and shall apply to\n                     anyone to whom you have granted a further right\n                     to modify the source code of your derived work.\n                  &lt;/li&gt;\n               \n&lt;/ul&gt;\n               &lt;p&gt;\n                  Note that, as originally distributed, the SOFA software\n                  is intended to be a definitive implementation of the IAU\n                  standards, and consequently third-party modifications\n                  are discouraged. All variations, no matter how minor,\n                  must be explicitly marked as such, as explained above.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               You shall not cause the SOFA software to be brought\n               into disrepute, either by misuse, or use for\n               inappropriate tasks, or by inappropriate modification.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;\n               The SOFA software is provided &amp;quot;as is&amp;quot; and SOFA makes no\n               warranty as to its use or performance. SOFA does not and cannot\n               warrant the performance or results which the user may obtain\n               by using the SOFA software. SOFA makes no warranties, express\n               or implied, as to non-infringement of third party rights,\n               merchantability, or fitness for any particular purpose. In no\n               event will SOFA be liable to the user for any consequential,\n               incidental, or special damages, including any lost profits\n               or lost savings, even if a SOFA representative has been\n               advised of such damages, or for any claim by any third party.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;\n               The provision of any version of the SOFA software\n               under the terms and conditions specified herein\n               does not imply that future versions will also be\n               made available under the same terms and conditions.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n&lt;p&gt;In any published work or commercial product which uses the SOFA\n  software directly, acknowledgement (see www.iausofa.org) is\n  appreciated.&lt;/p&gt;\n\n&lt;p&gt;  Correspondence concerning SOFA software should be addressed as\n  follows:&lt;/p&gt;\n\n     &lt;p&gt; By email:  sofa@ukho.gov.uk\n    &lt;br /&gt;\n  By post:   IAU SOFA Center\n     &lt;br /&gt;\n            HM Nautical Almanac Office\n     &lt;br /&gt;\n            UK Hydrographic Office\n     &lt;br /&gt;\n            Admiralty Way, Taunton\n     &lt;br /&gt;\n            Somerset, TA1 2DN\n      &lt;br /&gt;\n           United Kingdom&lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.iausofa.org/tandc.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.iausofa.org/tandc.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:03:33Z&quot;,
+                &quot;url&quot;: &quot;http://www.iausofa.org/tandc.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:SOFA&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (C) 2023\nStandards of Fundamental Astronomy Board\nof the International Astronomical Union.\n\n=====================\nSOFA Software License\n=====================\n\nNOTICE TO USER:\n\nBY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND\nCONDITIONS WHICH APPLY TO ITS USE.\n\n1. The Software is owned by the IAU SOFA Board (\&quot;SOFA\&quot;).\n\n2. Permission is granted to anyone to use the SOFA software for any\npurpose, including commercial applications, free of charge and\nwithout payment of royalties, subject to the conditions and\nrestrictions listed below.\n\n3. You (the user) may copy and distribute SOFA source code to others,\nand use and adapt its code and algorithms in your own software,\non a world-wide, royalty-free basis.  That portion of your\ndistribution that does not consist of intact and unchanged copies\nof SOFA source code files is a \&quot;derived work\&quot; that must comply\nwith the following requirements:\n\n     a) Your work shall be marked or carry a statement that it\n        (i) uses routines and computations derived by you from\n        software provided by SOFA under license to you; and\n        (ii) does not itself constitute software provided by and/or\n        endorsed by SOFA.\n\n     b) The source code of your derived work must contain descriptions\n        of how the derived work is based upon, contains and/or differs\n        from the original SOFA software.\n\n     c) The names of all routines in your derived work shall not\n        include the prefix \&quot;iau\&quot; or \&quot;sofa\&quot; or trivial modifications\n        thereof such as changes of case.\n\n     d) The origin of the SOFA components of your derived work must\n        not be misrepresented;  you must not claim that you wrote the\n        original software, nor file a patent application for SOFA\n        software or algorithms embedded in the SOFA software.\n\n     e) These requirements must be reproduced intact in any source\n        distribution and shall apply to anyone to whom you have\n        granted a further right to modify the source code of your\n        derived work.\n\n     Note that, as originally distributed, the SOFA software is\n     intended to be a definitive implementation of the IAU standards,\n     and consequently third-party modifications are discouraged.  All\n     variations, no matter how minor, must be explicitly marked as\n     such, as explained above.\n\n  4. You shall not cause the SOFA software to be brought into\n     disrepute, either by misuse, or use for inappropriate tasks, or\n     by inappropriate modification.\n\n  5. The SOFA software is provided \&quot;as is\&quot; and SOFA makes no warranty\n     as to its use or performance.   SOFA does not and cannot warrant\n     the performance or results which the user may obtain by using the\n     SOFA software.  SOFA makes no warranties, express or implied, as\n     to non-infringement of third party rights, merchantability, or\n     fitness for any particular purpose.  In no event will SOFA be\n     liable to the user for any consequential, incidental, or special\n     damages, including any lost profits or lost savings, even if a\n     SOFA representative has been advised of such damages, or for any\n     claim by any third party.\n\n  6. The provision of any version of the SOFA software under the terms\n     and conditions specified herein does not imply that future\n     versions will also be made available under the same terms and\n     conditions.\n\n  In any published work or commercial product which uses the SOFA\n  software directly, acknowledgement (see www.iausofa.org) is\n  appreciated.\n\n  Correspondence concerning SOFA software should be addressed as\n  follows:\n      By email:  sofa@ukho.gov.uk\n      By post:   IAU SOFA Center\n                 HM Nautical Almanac Office\n                 UK Hydrographic Office\n                 Admiralty Way, Taunton\n                 Somerset, TA1 2DN\n                 United Kingdom\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            Copyright (C) 2023 Standards of Fundamental Astronomy\n            Board of the International Astronomical Union.\n         &lt;/span&gt;&lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            SOFA Software License\n         &lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            NOTICE TO USER:\n         &lt;/var&gt;\n         &lt;p&gt;\n            BY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING\n            SIX TERMS AND CONDITIONS WHICH APPLY TO ITS USE.\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               The Software is owned by the IAU SOFA Board (&amp;quot;SOFA&amp;quot;).\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               Permission is granted to anyone to use the SOFA software\n               for any purpose, including commercial applications,\n               free of charge and without payment of royalties,\n               subject to the conditions and restrictions listed below.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               You (the user) may copy and distribute SOFA source code to\n               others, and use and adapt its code and algorithms in your\n               own software, on a world-wide, royalty-free basis. That\n               portion of your distribution that does not consist of intact\n               and unchanged copies of SOFA source code files is a &amp;quot;derived\n               work&amp;quot; that must comply with the following requirements:\n               \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; a)&lt;/span&gt;&lt;/var&gt;\n                     Your work shall be marked or carry a statement that\n                     it (i) uses routines and computations derived by\n                     you from software provided by SOFA under license\n                     to you; and (ii) does not itself constitute\n                     software provided by and/or endorsed by SOFA.\n                  &lt;/li&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; b)&lt;/span&gt;&lt;/var&gt;\n                     The source code of your derived work must contain\n                     descriptions of how the derived work is based upon,\n                     contains and/or differs from the original SOFA software.\n                  &lt;/li&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; c)&lt;/span&gt;&lt;/var&gt;\n                     The names of all routines in your derived work shall\n                     not include the prefix &amp;quot;iau&amp;quot; or &amp;quot;sofa&amp;quot; or trivial\n                     modifications thereof such as changes of case.\n                  &lt;/li&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; d)&lt;/span&gt;&lt;/var&gt;\n                     The origin of the SOFA components of your derived work must\n                     not be misrepresented; you must not claim that you wrote\n                     the original software, nor file a patent application for\n                     SOFA software or algorithms embedded in the SOFA software.\n                  &lt;/li&gt;\n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; e)&lt;/span&gt;&lt;/var&gt;\n                     These requirements must be reproduced intact\n                     in any source distribution and shall apply to\n                     anyone to whom you have granted a further right\n                     to modify the source code of your derived work.\n                  &lt;/li&gt;\n               \n&lt;/ul&gt;\n               &lt;p&gt;\n                  Note that, as originally distributed, the SOFA software\n                  is intended to be a definitive implementation of the IAU\n                  standards, and consequently third-party modifications\n                  are discouraged. All variations, no matter how minor,\n                  must be explicitly marked as such, as explained above.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               You shall not cause the SOFA software to be brought\n               into disrepute, either by misuse, or use for\n               inappropriate tasks, or by inappropriate modification.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;\n               The SOFA software is provided &amp;quot;as is&amp;quot; and SOFA makes no\n               warranty as to its use or performance. SOFA does not and cannot\n               warrant the performance or results which the user may obtain\n               by using the SOFA software. SOFA makes no warranties, express\n               or implied, as to non-infringement of third party rights,\n               merchantability, or fitness for any particular purpose. In no\n               event will SOFA be liable to the user for any consequential,\n               incidental, or special damages, including any lost profits\n               or lost savings, even if a SOFA representative has been\n               advised of such damages, or for any claim by any third party.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;\n               The provision of any version of the SOFA software\n               under the terms and conditions specified herein\n               does not imply that future versions will also be\n               made available under the same terms and conditions.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n&lt;p&gt;In any published work or commercial product which uses the SOFA\n  software directly, acknowledgement (see www.iausofa.org) is\n  appreciated.&lt;/p&gt;\n\n&lt;p&gt;  Correspondence concerning SOFA software should be addressed as\n  follows:&lt;/p&gt;\n\n     &lt;p&gt; By email:  sofa@ukho.gov.uk\n    &lt;br /&gt;\n  By post:   IAU SOFA Center\n     &lt;br /&gt;\n            HM Nautical Almanac Office\n     &lt;br /&gt;\n            UK Hydrographic Office\n     &lt;br /&gt;\n            Admiralty Way, Taunton\n     &lt;br /&gt;\n            Somerset, TA1 2DN\n      &lt;br /&gt;\n           United Kingdom&lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+        &quot;name&quot;: &quot;SOFA Software License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.iausofa.org/tandc.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 2023 Standards of Fundamental Astronomy Board of the International Astronomical Union.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; SOFA Software License&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; NOTICE TO USER:&lt;&lt;endOptional&gt;&gt;\nBY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND CONDITIONS WHICH APPLY TO ITS USE.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The Software is owned by the IAU SOFA Board (\&quot;SOFA\&quot;).\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Permission is granted to anyone to use the SOFA software for any purpose, including commercial applications, free of charge and without payment of royalties, subject to the conditions and restrictions listed below.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You (the user) may copy and distribute SOFA source code to others, and use and adapt its code and algorithms in your own software, on a world-wide, royalty-free basis. That portion of your distribution that does not consist of intact and unchanged copies of SOFA source code files is a \&quot;derived work\&quot; that must comply with the following requirements:\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Your work shall be marked or carry a statement that it (i) uses routines and computations derived by you from software provided by SOFA under license to you; and (ii) does not itself constitute software provided by and/or endorsed by SOFA.\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The source code of your derived work must contain descriptions of how the derived work is based upon, contains and/or differs from the original SOFA software.\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The names of all routines in your derived work shall not include the prefix \&quot;iau\&quot; or \&quot;sofa\&quot; or trivial modifications thereof such as changes of case.\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;d)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The origin of the SOFA components of your derived work must not be misrepresented; you must not claim that you wrote the original software, nor file a patent application for SOFA software or algorithms embedded in the SOFA software.\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;e)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; These requirements must be reproduced intact in any source distribution and shall apply to anyone to whom you have granted a further right to modify the source code of your derived work.\n   Note that, as originally distributed, the SOFA software is intended to be a definitive implementation of the IAU standards, and consequently third-party modifications are discouraged. All variations, no matter how minor, must be explicitly marked as such, as explained above.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You shall not cause the SOFA software to be brought into disrepute, either by misuse, or use for inappropriate tasks, or by inappropriate modification.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The SOFA software is provided \&quot;as is\&quot; and SOFA makes no warranty as to its use or performance. SOFA does not and cannot warrant the performance or results which the user may obtain by using the SOFA software. SOFA makes no warranties, express or implied, as to non-infringement of third party rights, merchantability, or fitness for any particular purpose. In no event will SOFA be liable to the user for any consequential, incidental, or special damages, including any lost profits or lost savings, even if a SOFA representative has been advised of such damages, or for any claim by any third party.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The provision of any version of the SOFA software under the terms and conditions specified herein does not imply that future versions will also be made available under the same terms and conditions.&lt;&lt;beginOptional&gt;&gt; In any published work or commercial product which uses the SOFA software directly, acknowledgement (see www.iausofa.org) is appreciated.\n\nCorrespondence concerning SOFA software should be addressed as follows:\n\nBy email: sofa@ukho.gov.uk\nBy post: IAU SOFA Center\nHM Nautical Almanac Office\nUK Hydrographic Office\nAdmiralty Way, Taunton\nSomerset, TA1 2DN\nUnited Kingdom\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/e1c9b1622c8b36445d0a8e43bc9aee1d">ScancodeData:e1c9b1622c8b36445d0a8e43bc9aee1d</a> for <a href="/?license=scancode:sofa"><span class="licensename"><span class="namespace">scancode:</span>sofa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>sofa</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SOFA</span></li><li><span class="licensename">SOFA Software License</span></li><li><span class="licensename">SOFA Software License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Proprietary Free<span class="provided-by">(provided by: <span title="ScancodeData:e1c9b1622c8b36445d0a8e43bc9aee1d">[<a href="/fact/ScancodeData/e1c9b1622c8b36445d0a8e43bc9aee1d">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX License List 3.27
+This was previously the proprietary-license_972.RULE
+<span class="provided-by">(provided by: <span title="ScancodeData:e1c9b1622c8b36445d0a8e43bc9aee1d">[<a href="/fact/ScancodeData/e1c9b1622c8b36445d0a8e43bc9aee1d">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.iausofa.org/tandc.html" target="_blank">http://www.iausofa.org/tandc.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>=====================
+SOFA Software License
+=====================
+
+NOTICE TO USER:
+
+BY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND
+CONDITIONS WHICH APPLY TO ITS USE.
+
+1. The Software is owned by the IAU SOFA Board (&quot;SOFA&quot;).
+
+2. Permission is granted to anyone to use the SOFA software for any
+purpose, including commercial applications, free of charge and
+without payment of royalties, subject to the conditions and
+restrictions listed below.
+
+3. You (the user) may copy and distribute SOFA source code to others,
+and use and adapt its code and algorithms in your own software,
+on a world-wide, royalty-free basis.  That portion of your
+distribution that does not consist of intact and unchanged copies
+of SOFA source code files is a &quot;derived work&quot; that must comply
+with the following requirements:
+
+     a) Your work shall be marked or carry a statement that it
+        (i) uses routines and computations derived by you from
+        software provided by SOFA under license to you; and
+        (ii) does not itself constitute software provided by and/or
+        endorsed by SOFA.
+
+     b) The source code of your derived work must contain descriptions
+        of how the derived work is based upon, contains and/or differs
+        from the original SOFA software.
+
+     c) The names of all routines in your derived work shall not
+        include the prefix &quot;iau&quot; or &quot;sofa&quot; or trivial modifications
+        thereof such as changes of case.
+
+     d) The origin of the SOFA components of your derived work must
+        not be misrepresented;  you must not claim that you wrote the
+        original software, nor file a patent application for SOFA
+        software or algorithms embedded in the SOFA software.
+
+     e) These requirements must be reproduced intact in any source
+        distribution and shall apply to anyone to whom you have
+        granted a further right to modify the source code of your
+        derived work.
+
+     Note that, as originally distributed, the SOFA software is
+     intended to be a definitive implementation of the IAU standards,
+     and consequently third-party modifications are discouraged.  All
+     variations, no matter how minor, must be explicitly marked as
+     such, as explained above.
+
+  4. You shall not cause the SOFA software to be brought into
+     disrepute, either by misuse, or use for inappropriate tasks, or
+     by inappropriate modification.
+
+  5. The SOFA software is provided &quot;as is&quot; and SOFA makes no warranty
+     as to its use or performance.   SOFA does not and cannot warrant
+     the performance or results which the user may obtain by using the
+     SOFA software.  SOFA makes no warranties, express or implied, as
+     to non-infringement of third party rights, merchantability, or
+     fitness for any particular purpose.  In no event will SOFA be
+     liable to the user for any consequential, incidental, or special
+     damages, including any lost profits or lost savings, even if a
+     SOFA representative has been advised of such damages, or for any
+     claim by any third party.
+
+  6. The provision of any version of the SOFA software under the terms
+     and conditions specified herein does not imply that future
+     versions will also be made available under the same terms and
+     conditions.
+
+  In any published work or commercial product which uses the SOFA
+  software directly, acknowledgement (see www.iausofa.org) is
+  appreciated.
+
+  Correspondence concerning SOFA software should be addressed as
+  follows:
+      By email:  sofa@ukho.gov.uk
+      By post:   IAU SOFA Center
+                 HM Nautical Almanac Office
+                 UK Hydrographic Office
+                 Admiralty Way, Taunton
+                 Somerset, TA1 2DN
+                 United Kingdom</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:sofa&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SOFA Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SOFA Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:SOFA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;e1c9b1622c8b36445d0a8e43bc9aee1d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Proprietary Free&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Added in SPDX License List 3.27\nThis was previously the proprietary-license_972.RULE\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.iausofa.org/tandc.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;=====================\nSOFA Software License\n=====================\n\nNOTICE TO USER:\n\nBY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND\nCONDITIONS WHICH APPLY TO ITS USE.\n\n1. The Software is owned by the IAU SOFA Board (\&quot;SOFA\&quot;).\n\n2. Permission is granted to anyone to use the SOFA software for any\npurpose, including commercial applications, free of charge and\nwithout payment of royalties, subject to the conditions and\nrestrictions listed below.\n\n3. You (the user) may copy and distribute SOFA source code to others,\nand use and adapt its code and algorithms in your own software,\non a world-wide, royalty-free basis.  That portion of your\ndistribution that does not consist of intact and unchanged copies\nof SOFA source code files is a \&quot;derived work\&quot; that must comply\nwith the following requirements:\n\n     a) Your work shall be marked or carry a statement that it\n        (i) uses routines and computations derived by you from\n        software provided by SOFA under license to you; and\n        (ii) does not itself constitute software provided by and/or\n        endorsed by SOFA.\n\n     b) The source code of your derived work must contain descriptions\n        of how the derived work is based upon, contains and/or differs\n        from the original SOFA software.\n\n     c) The names of all routines in your derived work shall not\n        include the prefix \&quot;iau\&quot; or \&quot;sofa\&quot; or trivial modifications\n        thereof such as changes of case.\n\n     d) The origin of the SOFA components of your derived work must\n        not be misrepresented;  you must not claim that you wrote the\n        original software, nor file a patent application for SOFA\n        software or algorithms embedded in the SOFA software.\n\n     e) These requirements must be reproduced intact in any source\n        distribution and shall apply to anyone to whom you have\n        granted a further right to modify the source code of your\n        derived work.\n\n     Note that, as originally distributed, the SOFA software is\n     intended to be a definitive implementation of the IAU standards,\n     and consequently third-party modifications are discouraged.  All\n     variations, no matter how minor, must be explicitly marked as\n     such, as explained above.\n\n  4. You shall not cause the SOFA software to be brought into\n     disrepute, either by misuse, or use for inappropriate tasks, or\n     by inappropriate modification.\n\n  5. The SOFA software is provided \&quot;as is\&quot; and SOFA makes no warranty\n     as to its use or performance.   SOFA does not and cannot warrant\n     the performance or results which the user may obtain by using the\n     SOFA software.  SOFA makes no warranties, express or implied, as\n     to non-infringement of third party rights, merchantability, or\n     fitness for any particular purpose.  In no event will SOFA be\n     liable to the user for any consequential, incidental, or special\n     damages, including any lost profits or lost savings, even if a\n     SOFA representative has been advised of such damages, or for any\n     claim by any third party.\n\n  6. The provision of any version of the SOFA software under the terms\n     and conditions specified herein does not imply that future\n     versions will also be made available under the same terms and\n     conditions.\n\n  In any published work or commercial product which uses the SOFA\n  software directly, acknowledgement (see www.iausofa.org) is\n  appreciated.\n\n  Correspondence concerning SOFA software should be addressed as\n  follows:\n      By email:  sofa@ukho.gov.uk\n      By post:   IAU SOFA Center\n                 HM Nautical Almanac Office\n                 UK Hydrographic Office\n                 Admiralty Way, Taunton\n                 Somerset, TA1 2DN\n                 United Kingdom&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Proprietary Free&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;sofa&quot;,
+        &quot;_name&quot;: &quot;SOFA Software License&quot;,
+        &quot;_notes&quot;: &quot;Added in SPDX License List 3.27\nThis was previously the proprietary-license_972.RULE\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.iausofa.org/tandc.html&quot;
+        ],
+        &quot;_owner&quot;: &quot;SOFA&quot;,
+        &quot;_shortName&quot;: &quot;SOFA Software License&quot;,
+        &quot;_spdxId&quot;: &quot;SOFA&quot;,
+        &quot;_text&quot;: &quot;=====================\nSOFA Software License\n=====================\n\nNOTICE TO USER:\n\nBY USING THIS SOFTWARE YOU ACCEPT THE FOLLOWING SIX TERMS AND\nCONDITIONS WHICH APPLY TO ITS USE.\n\n1. The Software is owned by the IAU SOFA Board (\&quot;SOFA\&quot;).\n\n2. Permission is granted to anyone to use the SOFA software for any\npurpose, including commercial applications, free of charge and\nwithout payment of royalties, subject to the conditions and\nrestrictions listed below.\n\n3. You (the user) may copy and distribute SOFA source code to others,\nand use and adapt its code and algorithms in your own software,\non a world-wide, royalty-free basis.  That portion of your\ndistribution that does not consist of intact and unchanged copies\nof SOFA source code files is a \&quot;derived work\&quot; that must comply\nwith the following requirements:\n\n     a) Your work shall be marked or carry a statement that it\n        (i) uses routines and computations derived by you from\n        software provided by SOFA under license to you; and\n        (ii) does not itself constitute software provided by and/or\n        endorsed by SOFA.\n\n     b) The source code of your derived work must contain descriptions\n        of how the derived work is based upon, contains and/or differs\n        from the original SOFA software.\n\n     c) The names of all routines in your derived work shall not\n        include the prefix \&quot;iau\&quot; or \&quot;sofa\&quot; or trivial modifications\n        thereof such as changes of case.\n\n     d) The origin of the SOFA components of your derived work must\n        not be misrepresented;  you must not claim that you wrote the\n        original software, nor file a patent application for SOFA\n        software or algorithms embedded in the SOFA software.\n\n     e) These requirements must be reproduced intact in any source\n        distribution and shall apply to anyone to whom you have\n        granted a further right to modify the source code of your\n        derived work.\n\n     Note that, as originally distributed, the SOFA software is\n     intended to be a definitive implementation of the IAU standards,\n     and consequently third-party modifications are discouraged.  All\n     variations, no matter how minor, must be explicitly marked as\n     such, as explained above.\n\n  4. You shall not cause the SOFA software to be brought into\n     disrepute, either by misuse, or use for inappropriate tasks, or\n     by inappropriate modification.\n\n  5. The SOFA software is provided \&quot;as is\&quot; and SOFA makes no warranty\n     as to its use or performance.   SOFA does not and cannot warrant\n     the performance or results which the user may obtain by using the\n     SOFA software.  SOFA makes no warranties, express or implied, as\n     to non-infringement of third party rights, merchantability, or\n     fitness for any particular purpose.  In no event will SOFA be\n     liable to the user for any consequential, incidental, or special\n     damages, including any lost profits or lost savings, even if a\n     SOFA representative has been advised of such damages, or for any\n     claim by any third party.\n\n  6. The provision of any version of the SOFA software under the terms\n     and conditions specified herein does not imply that future\n     versions will also be made available under the same terms and\n     conditions.\n\n  In any published work or commercial product which uses the SOFA\n  software directly, acknowledgement (see www.iausofa.org) is\n  appreciated.\n\n  Correspondence concerning SOFA software should be addressed as\n  follows:\n      By email:  sofa@ukho.gov.uk\n      By post:   IAU SOFA Center\n                 HM Nautical Almanac Office\n                 UK Hydrographic Office\n                 Admiralty Way, Taunton\n                 Somerset, TA1 2DN\n                 United Kingdom&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/22e86384ad1a6923338ba59f43013a9e">OrtLicenseCategorization:22e86384ad1a6923338ba59f43013a9e</a> for <a href="/?license=SPDX:SOFA"><span class="licensename"><span class="namespace">SPDX:</span>SOFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>SOFA</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>proprietary-free</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:22e86384ad1a6923338ba59f43013a9e">[<a href="/fact/OrtLicenseCategorization/22e86384ad1a6923338ba59f43013a9e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:22e86384ad1a6923338ba59f43013a9e">[<a href="/fact/OrtLicenseCategorization/22e86384ad1a6923338ba59f43013a9e">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:SOFA&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;22e86384ad1a6923338ba59f43013a9e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;proprietary-free&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;proprietary-free&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:SOFA&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/e8a9a334a3ac67d507cbeced8aadac3d">MetaeffektLicense:e8a9a334a3ac67d507cbeced8aadac3d</a> for <a href="/?license=metaeffekt:SOFA Software License"><span class="licensename"><span class="namespace">metaeffekt:</span>SOFA Software License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>SOFA Software License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SOFA</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.iausofa.org/tandc.html</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sofa</span></li><li><span class="licensename">SOFA Software License</span></li><li><span class="licensename">SOFA Software License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:SOFA Software License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:SOFA&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SOFA Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SOFA Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.iausofa.org/tandc.html&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:sofa&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;e8a9a334a3ac67d507cbeced8aadac3d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;SOFA Software License&quot;,
+            &quot;http://www.iausofa.org/tandc.html&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:SOFA Software License&quot;,
+        &quot;_category&quot;: &quot;SOFA Software License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:sofa&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:SOFA&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/095f4f63a84e9585eb0a281071442deb">LicenseLynx:095f4f63a84e9585eb0a281071442deb</a> for <a href="/?license=spdx:SOFA"><span class="licensename"><span class="namespace">spdx:</span>SOFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SOFA</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>sofa</span></li><li><span class="licensename"><span class="namespace">spdx:</span>SOFA Software License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:SOFA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:sofa&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:SOFA Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;095f4f63a84e9585eb0a281071442deb&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:sofa&quot;,
+            &quot;spdx:SOFA Software License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:SOFA&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

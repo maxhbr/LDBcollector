@@ -1,0 +1,839 @@
+<html><head><title>ldbcollector: spdx:UnRAR</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:UnRAR</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UnRAR</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">LicenseRef-scancode-unrar</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-unrar</span></li><li><span class="licensename"><span class="namespace">spdx:</span>LicenseRef-scancode-unrar</span></li><li><span class="licensename">UnRAR</span></li><li><span class="licensename"><span class="namespace">scancode:</span>unrar</span></li><li><span class="licensename"><span class="namespace">spdx:</span>UnRAR</span></li><li><span class="licensename">UnRAR License</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>UnRAR License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>UnRAR License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>UnRar License</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>LicenseRef-unrar</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>UnRAR-3.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Source-available<span class="provided-by">(provided by: <span title="ScancodeData:0e7d107bd24cbb5d5d5f5cfc5feaf729">[<a href="/fact/ScancodeData/0e7d107bd24cbb5d5d5f5cfc5feaf729">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:ac56358e44fbdb1f40d3f321d10c884f">[<a href="/fact/SPDXLicense/ac56358e44fbdb1f40d3f321d10c884f">SPDXLicense</a>]</span>)</span></li><li><span title="">CoDEStatus: <b style="">not approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:80f347efb1994d99e537b751b3acb182">[<a href="/fact/MetaeffektLicense/80f347efb1994d99e537b751b3acb182">MetaeffektLicense</a>]</span>)</span></li><li><span title="Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten.">ifrOSS Classification: <b style="color: red;">Sonstige (non-free) Software Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:0cdd9f0e4db0146f0ea661095b482419">[<a href="/fact/ifrOSS License/0cdd9f0e4db0146f0ea661095b482419">ifrOSS License</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>source-available</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ea8f4dfbe78d5941da16d7f5d072389a">[<a href="/fact/OrtLicenseCategorization/ea8f4dfbe78d5941da16d7f5d072389a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ea8f4dfbe78d5941da16d7f5d072389a">[<a href="/fact/OrtLicenseCategorization/ea8f4dfbe78d5941da16d7f5d072389a">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/LICENSES/unRAR.txt" target="_blank">https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/LICENSES/unRAR.txt</a></li><li>OSI: <a href="http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz" target="_blank">http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz</a></li><li><a href="https://github.com/junrar/junrar/blob/master/LICENSE" target="_blank">https://github.com/junrar/junrar/blob/master/LICENSE</a></li></ul><h3>Other Statements</h3><ul><li>http://sharpnews.weebly.com/uploads/1/2/7/9/1279604/license.txt</li><li>http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>******    *****   ******   UnRAR - free utility for RAR archives
+ **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ******   *******  ******    License for use and distribution of
+ **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ **   **  **   **  **   **         FREE portable version
+                                   ~~~~~~~~~~~~~~~~~~~~~
+
+      The source code of UnRAR utility is freeware. This means:
+
+   1. All copyrights to RAR and the utility UnRAR are exclusively
+      owned by the author - Alexander Roshal.
+
+   2. UnRAR source code may be used in any software to handle
+      RAR archives without limitations free of charge, but cannot be
+      used to develop RAR (WinRAR) compatible archiver and to
+      re-create RAR compression algorithm, which is proprietary.
+      Distribution of modified UnRAR source code in separate form
+      or as a part of other software is permitted, provided that
+      full text of this paragraph, starting from &quot;UnRAR source code&quot;
+      words, is included in license, or in documentation if license
+      is not available, and in source code comments of resulting package.
+
+   3. The UnRAR utility may be freely distributed. It is allowed
+      to distribute UnRAR inside of other software packages.
+
+   4. THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED &quot;AS IS&quot;.
+      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT 
+      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, 
+      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING
+      OR MISUSING THIS SOFTWARE.
+
+   5. Installing and using the UnRAR utility signifies acceptance of
+      these terms and conditions of the license.
+
+   6. If you don&#39;t agree with terms of the license you must remove
+      UnRAR files from your storage devices and cease to use the
+      utility.
+
+      Thank you for your interest in RAR and UnRAR.
+
+                                            Alexander L. Roshal
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            ****** ***** ****** UnRAR - free utility for RAR archives
+            &lt;br /&gt;
+
+            ** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            &lt;br /&gt;
+
+            ****** ******* ****** License for use and distribution of
+            &lt;br /&gt;
+
+            ** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **
+            &lt;br /&gt;
+
+            ** ** ** ** ** FREE portable version ~~~~~~~~~~~~~~~~~~~~~
+         &lt;/var&gt;
+         &lt;p&gt;
+            The source code of UnRAR utility is freeware. This means:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               All copyrights to RAR and the utility UnRAR are
+               exclusively owned by the author - Alexander Roshal.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               UnRAR source code may be used in any software to handle RAR
+               archives without limitations free of charge, but cannot be used
+               to develop RAR (WinRAR) compatible archiver and to re-create
+               RAR compression algorithm, which is proprietary. Distribution
+               of modified UnRAR source code in separate form or as a part
+               of other software is permitted, provided that full text of
+               this paragraph, starting from &amp;quot;UnRAR source code&amp;quot; words, is
+               included in license, or in documentation if license is not
+               available, and in source code comments of resulting package.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               The UnRAR utility may be freely distributed. It is allowed
+               to distribute UnRAR inside of other software packages.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED
+               &amp;quot;AS IS&amp;quot;. NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.
+               YOU USE AT YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE
+               FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER
+               KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;
+               Installing and using the UnRAR utility signifies
+               acceptance of these terms and conditions of the license.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;
+               If you don&amp;apos;t agree with terms of the license
+               you must remove UnRAR files from your
+               storage devices and cease to use the utility.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            Thank you for your interest in RAR and UnRAR.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Alexander L. Roshal
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>******    *****   ******   UnRAR - free utility for RAR archives
+ **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ******   *******  ******    License for use and distribution of
+ **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ **   **  **   **  **   **         FREE portable version
+                                   ~~~~~~~~~~~~~~~~~~~~~
+
+      The source code of UnRAR utility is freeware. This means:
+
+   1. All copyrights to RAR and the utility UnRAR are exclusively
+      owned by the author - Alexander Roshal.
+
+   2. UnRAR source code may be used in any software to handle
+      RAR archives without limitations free of charge, but cannot be
+      used to develop RAR (WinRAR) compatible archiver and to
+      re-create RAR compression algorithm, which is proprietary.
+      Distribution of modified UnRAR source code in separate form
+      or as a part of other software is permitted, provided that
+      full text of this paragraph, starting from &quot;UnRAR source code&quot;
+      words, is included in license, or in documentation if license
+      is not available, and in source code comments of resulting package.
+
+   3. The UnRAR utility may be freely distributed. It is allowed
+      to distribute UnRAR inside of other software packages.
+
+   4. THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED &quot;AS IS&quot;.
+      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT 
+      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, 
+      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING
+      OR MISUSING THIS SOFTWARE.
+
+   5. Installing and using the UnRAR utility signifies acceptance of
+      these terms and conditions of the license.
+
+   6. If you don&#39;t agree with terms of the license you must remove
+      UnRAR files from your storage devices and cease to use the
+      utility.
+
+      Thank you for your interest in RAR and UnRAR.
+     Alexander L. Roshal</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/ac56358e44fbdb1f40d3f321d10c884f">SPDXLicense:ac56358e44fbdb1f40d3f321d10c884f</a> for <a href="/?license=spdx:UnRAR"><span class="licensename"><span class="namespace">spdx:</span>UnRAR</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UnRAR</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">UnRAR License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:ac56358e44fbdb1f40d3f321d10c884f">[<a href="/fact/SPDXLicense/ac56358e44fbdb1f40d3f321d10c884f">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/LICENSES/unRAR.txt" target="_blank">https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/LICENSES/unRAR.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>******    *****   ******   UnRAR - free utility for RAR archives
+ **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ******   *******  ******    License for use and distribution of
+ **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ **   **  **   **  **   **         FREE portable version
+                                   ~~~~~~~~~~~~~~~~~~~~~
+
+      The source code of UnRAR utility is freeware. This means:
+
+   1. All copyrights to RAR and the utility UnRAR are exclusively
+      owned by the author - Alexander Roshal.
+
+   2. UnRAR source code may be used in any software to handle
+      RAR archives without limitations free of charge, but cannot be
+      used to develop RAR (WinRAR) compatible archiver and to
+      re-create RAR compression algorithm, which is proprietary.
+      Distribution of modified UnRAR source code in separate form
+      or as a part of other software is permitted, provided that
+      full text of this paragraph, starting from &quot;UnRAR source code&quot;
+      words, is included in license, or in documentation if license
+      is not available, and in source code comments of resulting package.
+
+   3. The UnRAR utility may be freely distributed. It is allowed
+      to distribute UnRAR inside of other software packages.
+
+   4. THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED &quot;AS IS&quot;.
+      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT 
+      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, 
+      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING
+      OR MISUSING THIS SOFTWARE.
+
+   5. Installing and using the UnRAR utility signifies acceptance of
+      these terms and conditions of the license.
+
+   6. If you don&#39;t agree with terms of the license you must remove
+      UnRAR files from your storage devices and cease to use the
+      utility.
+
+      Thank you for your interest in RAR and UnRAR.
+
+                                            Alexander L. Roshal
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            ****** ***** ****** UnRAR - free utility for RAR archives
+            &lt;br /&gt;
+
+            ** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            &lt;br /&gt;
+
+            ****** ******* ****** License for use and distribution of
+            &lt;br /&gt;
+
+            ** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **
+            &lt;br /&gt;
+
+            ** ** ** ** ** FREE portable version ~~~~~~~~~~~~~~~~~~~~~
+         &lt;/var&gt;
+         &lt;p&gt;
+            The source code of UnRAR utility is freeware. This means:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               All copyrights to RAR and the utility UnRAR are
+               exclusively owned by the author - Alexander Roshal.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               UnRAR source code may be used in any software to handle RAR
+               archives without limitations free of charge, but cannot be used
+               to develop RAR (WinRAR) compatible archiver and to re-create
+               RAR compression algorithm, which is proprietary. Distribution
+               of modified UnRAR source code in separate form or as a part
+               of other software is permitted, provided that full text of
+               this paragraph, starting from &amp;quot;UnRAR source code&amp;quot; words, is
+               included in license, or in documentation if license is not
+               available, and in source code comments of resulting package.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               The UnRAR utility may be freely distributed. It is allowed
+               to distribute UnRAR inside of other software packages.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED
+               &amp;quot;AS IS&amp;quot;. NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.
+               YOU USE AT YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE
+               FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER
+               KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;
+               Installing and using the UnRAR utility signifies
+               acceptance of these terms and conditions of the license.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;
+               If you don&amp;apos;t agree with terms of the license
+               you must remove UnRAR files from your
+               storage devices and cease to use the utility.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            Thank you for your interest in RAR and UnRAR.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Alexander L. Roshal
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:UnRAR&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UnRAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;ac56358e44fbdb1f40d3f321d10c884f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;******    *****   ******   UnRAR - free utility for RAR archives\n **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n ******   *******  ******    License for use and distribution of\n **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n **   **  **   **  **   **         FREE portable version\n                                   ~~~~~~~~~~~~~~~~~~~~~\n\n      The source code of UnRAR utility is freeware. This means:\n\n   1. All copyrights to RAR and the utility UnRAR are exclusively\n      owned by the author - Alexander Roshal.\n\n   2. UnRAR source code may be used in any software to handle\n      RAR archives without limitations free of charge, but cannot be\n      used to develop RAR (WinRAR) compatible archiver and to\n      re-create RAR compression algorithm, which is proprietary.\n      Distribution of modified UnRAR source code in separate form\n      or as a part of other software is permitted, provided that\n      full text of this paragraph, starting from \&quot;UnRAR source code\&quot;\n      words, is included in license, or in documentation if license\n      is not available, and in source code comments of resulting package.\n\n   3. The UnRAR utility may be freely distributed. It is allowed\n      to distribute UnRAR inside of other software packages.\n\n   4. THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED \&quot;AS IS\&quot;.\n      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT \n      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, \n      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING\n      OR MISUSING THIS SOFTWARE.\n\n   5. Installing and using the UnRAR utility signifies acceptance of\n      these terms and conditions of the license.\n\n   6. If you don&#39;t agree with terms of the license you must remove\n      UnRAR files from your storage devices and cease to use the\n      utility.\n\n      Thank you for your interest in RAR and UnRAR.\n\n                                            Alexander L. Roshal\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            ****** ***** ****** UnRAR - free utility for RAR archives\n            &lt;br /&gt;\n\n            ** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n            &lt;br /&gt;\n\n            ****** ******* ****** License for use and distribution of\n            &lt;br /&gt;\n\n            ** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **\n            &lt;br /&gt;\n\n            ** ** ** ** ** FREE portable version ~~~~~~~~~~~~~~~~~~~~~\n         &lt;/var&gt;\n         &lt;p&gt;\n            The source code of UnRAR utility is freeware. This means:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               All copyrights to RAR and the utility UnRAR are\n               exclusively owned by the author - Alexander Roshal.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               UnRAR source code may be used in any software to handle RAR\n               archives without limitations free of charge, but cannot be used\n               to develop RAR (WinRAR) compatible archiver and to re-create\n               RAR compression algorithm, which is proprietary. Distribution\n               of modified UnRAR source code in separate form or as a part\n               of other software is permitted, provided that full text of\n               this paragraph, starting from &amp;quot;UnRAR source code&amp;quot; words, is\n               included in license, or in documentation if license is not\n               available, and in source code comments of resulting package.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               The UnRAR utility may be freely distributed. It is allowed\n               to distribute UnRAR inside of other software packages.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED\n               &amp;quot;AS IS&amp;quot;. NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.\n               YOU USE AT YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE\n               FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER\n               KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;\n               Installing and using the UnRAR utility signifies\n               acceptance of these terms and conditions of the license.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;\n               If you don&amp;apos;t agree with terms of the license\n               you must remove UnRAR files from your\n               storage devices and cease to use the utility.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            Thank you for your interest in RAR and UnRAR.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Alexander L. Roshal\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/LICENSES/unRAR.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/LICENSES/unRAR.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:56:45Z&quot;,
+                &quot;url&quot;: &quot;https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/LICENSES/unRAR.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:UnRAR&quot;,
+        &quot;licenseText&quot;: &quot;******    *****   ******   UnRAR - free utility for RAR archives\n **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n ******   *******  ******    License for use and distribution of\n **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n **   **  **   **  **   **         FREE portable version\n                                   ~~~~~~~~~~~~~~~~~~~~~\n\n      The source code of UnRAR utility is freeware. This means:\n\n   1. All copyrights to RAR and the utility UnRAR are exclusively\n      owned by the author - Alexander Roshal.\n\n   2. UnRAR source code may be used in any software to handle\n      RAR archives without limitations free of charge, but cannot be\n      used to develop RAR (WinRAR) compatible archiver and to\n      re-create RAR compression algorithm, which is proprietary.\n      Distribution of modified UnRAR source code in separate form\n      or as a part of other software is permitted, provided that\n      full text of this paragraph, starting from \&quot;UnRAR source code\&quot;\n      words, is included in license, or in documentation if license\n      is not available, and in source code comments of resulting package.\n\n   3. The UnRAR utility may be freely distributed. It is allowed\n      to distribute UnRAR inside of other software packages.\n\n   4. THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED \&quot;AS IS\&quot;.\n      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT \n      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, \n      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING\n      OR MISUSING THIS SOFTWARE.\n\n   5. Installing and using the UnRAR utility signifies acceptance of\n      these terms and conditions of the license.\n\n   6. If you don&#39;t agree with terms of the license you must remove\n      UnRAR files from your storage devices and cease to use the\n      utility.\n\n      Thank you for your interest in RAR and UnRAR.\n\n                                            Alexander L. Roshal\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            ****** ***** ****** UnRAR - free utility for RAR archives\n            &lt;br /&gt;\n\n            ** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n            &lt;br /&gt;\n\n            ****** ******* ****** License for use and distribution of\n            &lt;br /&gt;\n\n            ** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **\n            &lt;br /&gt;\n\n            ** ** ** ** ** FREE portable version ~~~~~~~~~~~~~~~~~~~~~\n         &lt;/var&gt;\n         &lt;p&gt;\n            The source code of UnRAR utility is freeware. This means:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               All copyrights to RAR and the utility UnRAR are\n               exclusively owned by the author - Alexander Roshal.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               UnRAR source code may be used in any software to handle RAR\n               archives without limitations free of charge, but cannot be used\n               to develop RAR (WinRAR) compatible archiver and to re-create\n               RAR compression algorithm, which is proprietary. Distribution\n               of modified UnRAR source code in separate form or as a part\n               of other software is permitted, provided that full text of\n               this paragraph, starting from &amp;quot;UnRAR source code&amp;quot; words, is\n               included in license, or in documentation if license is not\n               available, and in source code comments of resulting package.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               The UnRAR utility may be freely distributed. It is allowed\n               to distribute UnRAR inside of other software packages.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED\n               &amp;quot;AS IS&amp;quot;. NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.\n               YOU USE AT YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE\n               FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER\n               KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;\n               Installing and using the UnRAR utility signifies\n               acceptance of these terms and conditions of the license.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;\n               If you don&amp;apos;t agree with terms of the license\n               you must remove UnRAR files from your\n               storage devices and cease to use the utility.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            Thank you for your interest in RAR and UnRAR.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Alexander L. Roshal\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;UnRAR License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/LICENSES/unRAR.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;****** ***** ****** UnRAR - free utility for RAR archives\n** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n****** ******* ****** License for use and distribution of\n** ** ** ** ** ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **\n** ** ** ** ** FREE portable version ~~~~~~~~~~~~~~~~~~~~~&lt;&lt;endOptional&gt;&gt;\nThe source code of UnRAR utility is freeware. This means:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All copyrights to RAR and the utility UnRAR are exclusively owned by the author - Alexander Roshal.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; UnRAR source code may be used in any software to handle RAR archives without limitations free of charge, but cannot be used to develop RAR (WinRAR) compatible archiver and to re-create RAR compression algorithm, which is proprietary. Distribution of modified UnRAR source code in separate form or as a part of other software is permitted, provided that full text of this paragraph, starting from \&quot;UnRAR source code\&quot; words, is included in license, or in documentation if license is not available, and in source code comments of resulting package.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The UnRAR utility may be freely distributed. It is allowed to distribute UnRAR inside of other software packages.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED \&quot;AS IS\&quot;. NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED. YOU USE AT YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Installing and using the UnRAR utility signifies acceptance of these terms and conditions of the license.\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If you don&#39;t agree with terms of the license you must remove UnRAR files from your storage devices and cease to use the utility.\nThank you for your interest in RAR and UnRAR.\n\nAlexander L. Roshal\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/0e7d107bd24cbb5d5d5f5cfc5feaf729">ScancodeData:0e7d107bd24cbb5d5d5f5cfc5feaf729</a> for <a href="/?license=scancode:unrar"><span class="licensename"><span class="namespace">scancode:</span>unrar</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>unrar</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LicenseRef-scancode-unrar</span></li><li><span class="licensename">UnRar License</span></li><li><span class="licensename">UnRar License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Source-available<span class="provided-by">(provided by: <span title="ScancodeData:0e7d107bd24cbb5d5d5f5cfc5feaf729">[<a href="/fact/ScancodeData/0e7d107bd24cbb5d5d5f5cfc5feaf729">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li>OSI: <a href="http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz" target="_blank">http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz</a></li></ul><h3>Other Statements</h3><ul><li>http://sharpnews.weebly.com/uploads/1/2/7/9/1279604/license.txt</li><li>http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>******    *****   ******   UnRAR - free utility for RAR archives
+ **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ******   *******  ******    License for use and distribution of
+ **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ **   **  **   **  **   **         FREE portable version
+                                   ~~~~~~~~~~~~~~~~~~~~~
+
+      The source code of UnRAR utility is freeware. This means:
+
+   1. All copyrights to RAR and the utility UnRAR are exclusively
+      owned by the author - Alexander Roshal.
+
+   2. UnRAR source code may be used in any software to handle
+      RAR archives without limitations free of charge, but cannot be
+      used to develop RAR (WinRAR) compatible archiver and to
+      re-create RAR compression algorithm, which is proprietary.
+      Distribution of modified UnRAR source code in separate form
+      or as a part of other software is permitted, provided that
+      full text of this paragraph, starting from &quot;UnRAR source code&quot;
+      words, is included in license, or in documentation if license
+      is not available, and in source code comments of resulting package.
+
+   3. The UnRAR utility may be freely distributed. It is allowed
+      to distribute UnRAR inside of other software packages.
+
+   4. THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED &quot;AS IS&quot;.
+      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT 
+      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, 
+      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING
+      OR MISUSING THIS SOFTWARE.
+
+   5. Installing and using the UnRAR utility signifies acceptance of
+      these terms and conditions of the license.
+
+   6. If you don&#39;t agree with terms of the license you must remove
+      UnRAR files from your storage devices and cease to use the
+      utility.
+
+      Thank you for your interest in RAR and UnRAR.
+     Alexander L. Roshal</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:unrar&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UnRar License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;UnRar License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:LicenseRef-scancode-unrar&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;0e7d107bd24cbb5d5d5f5cfc5feaf729&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Source-available&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://sharpnews.weebly.com/uploads/1/2/7/9/1279604/license.txt&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                &quot;OSI&quot;,
+                &quot;http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;******    *****   ******   UnRAR - free utility for RAR archives\n **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n ******   *******  ******    License for use and distribution of\n **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n **   **  **   **  **   **         FREE portable version\n                                   ~~~~~~~~~~~~~~~~~~~~~\n\n      The source code of UnRAR utility is freeware. This means:\n\n   1. All copyrights to RAR and the utility UnRAR are exclusively\n      owned by the author - Alexander Roshal.\n\n   2. UnRAR source code may be used in any software to handle\n      RAR archives without limitations free of charge, but cannot be\n      used to develop RAR (WinRAR) compatible archiver and to\n      re-create RAR compression algorithm, which is proprietary.\n      Distribution of modified UnRAR source code in separate form\n      or as a part of other software is permitted, provided that\n      full text of this paragraph, starting from \&quot;UnRAR source code\&quot;\n      words, is included in license, or in documentation if license\n      is not available, and in source code comments of resulting package.\n\n   3. The UnRAR utility may be freely distributed. It is allowed\n      to distribute UnRAR inside of other software packages.\n\n   4. THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED \&quot;AS IS\&quot;.\n      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT \n      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, \n      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING\n      OR MISUSING THIS SOFTWARE.\n\n   5. Installing and using the UnRAR utility signifies acceptance of\n      these terms and conditions of the license.\n\n   6. If you don&#39;t agree with terms of the license you must remove\n      UnRAR files from your storage devices and cease to use the\n      utility.\n\n      Thank you for your interest in RAR and UnRAR.\n     Alexander L. Roshal&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Source-available&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://sharpnews.weebly.com/uploads/1/2/7/9/1279604/license.txt&quot;,
+        &quot;_key&quot;: &quot;unrar&quot;,
+        &quot;_name&quot;: &quot;UnRar License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: &quot;http://www.rarlab.com/rar/unrarsrc-5.2.7.tar.gz&quot;,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;RAR&quot;,
+        &quot;_shortName&quot;: &quot;UnRar License&quot;,
+        &quot;_spdxId&quot;: &quot;LicenseRef-scancode-unrar&quot;,
+        &quot;_text&quot;: &quot;******    *****   ******   UnRAR - free utility for RAR archives\n **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n ******   *******  ******    License for use and distribution of\n **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n **   **  **   **  **   **         FREE portable version\n                                   ~~~~~~~~~~~~~~~~~~~~~\n\n      The source code of UnRAR utility is freeware. This means:\n\n   1. All copyrights to RAR and the utility UnRAR are exclusively\n      owned by the author - Alexander Roshal.\n\n   2. UnRAR source code may be used in any software to handle\n      RAR archives without limitations free of charge, but cannot be\n      used to develop RAR (WinRAR) compatible archiver and to\n      re-create RAR compression algorithm, which is proprietary.\n      Distribution of modified UnRAR source code in separate form\n      or as a part of other software is permitted, provided that\n      full text of this paragraph, starting from \&quot;UnRAR source code\&quot;\n      words, is included in license, or in documentation if license\n      is not available, and in source code comments of resulting package.\n\n   3. The UnRAR utility may be freely distributed. It is allowed\n      to distribute UnRAR inside of other software packages.\n\n   4. THE RAR ARCHIVER AND THE UnRAR UTILITY ARE DISTRIBUTED \&quot;AS IS\&quot;.\n      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT \n      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, \n      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING\n      OR MISUSING THIS SOFTWARE.\n\n   5. Installing and using the UnRAR utility signifies acceptance of\n      these terms and conditions of the license.\n\n   6. If you don&#39;t agree with terms of the license you must remove\n      UnRAR files from your storage devices and cease to use the\n      utility.\n\n      Thank you for your interest in RAR and UnRAR.\n     Alexander L. Roshal&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/ea8f4dfbe78d5941da16d7f5d072389a">OrtLicenseCategorization:ea8f4dfbe78d5941da16d7f5d072389a</a> for <a href="/?license=SPDX:LicenseRef-scancode-unrar"><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-unrar</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-unrar</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>source-available</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ea8f4dfbe78d5941da16d7f5d072389a">[<a href="/fact/OrtLicenseCategorization/ea8f4dfbe78d5941da16d7f5d072389a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ea8f4dfbe78d5941da16d7f5d072389a">[<a href="/fact/OrtLicenseCategorization/ea8f4dfbe78d5941da16d7f5d072389a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LicenseRef-scancode-unrar&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;ea8f4dfbe78d5941da16d7f5d072389a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;source-available&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;source-available&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LicenseRef-scancode-unrar&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/80f347efb1994d99e537b751b3acb182">MetaeffektLicense:80f347efb1994d99e537b751b3acb182</a> for <a href="/?license=metaeffekt:UnRAR License"><span class="licensename"><span class="namespace">metaeffekt:</span>UnRAR License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>UnRAR License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UnRAR</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>unrar</span></li><li><span class="licensename">UnRAR License</span></li><li><span class="licensename">UnRar License</span></li><li><span class="licensename">UnRAR License</span></li><li><span class="licensename">unRAR license</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">CoDEStatus: <b style="">not approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:80f347efb1994d99e537b751b3acb182">[<a href="/fact/MetaeffektLicense/80f347efb1994d99e537b751b3acb182">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:UnRAR License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:UnRAR&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UnRAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;UnRar License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;UnRAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;unRAR license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:unrar&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;80f347efb1994d99e537b751b3acb182&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;not approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;UnRar License&quot;,
+            &quot;UnRAR License&quot;,
+            &quot;unRAR license&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:UnRAR License&quot;,
+        &quot;_category&quot;: &quot;UnRAR License&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;not approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:unrar&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:UnRAR&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/0cdd9f0e4db0146f0ea661095b482419">ifrOSS License:0cdd9f0e4db0146f0ea661095b482419</a> for <a href="/?license=ifrOSS:UnRAR License"><span class="licensename"><span class="namespace">ifrOSS:</span>UnRAR License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>UnRAR License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">UnRAR License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten.">ifrOSS Classification: <b style="color: red;">Sonstige (non-free) Software Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:0cdd9f0e4db0146f0ea661095b482419">[<a href="/fact/ifrOSS License/0cdd9f0e4db0146f0ea661095b482419">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/junrar/junrar/blob/master/LICENSE" target="_blank">https://github.com/junrar/junrar/blob/master/LICENSE</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:UnRAR License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UnRAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;0cdd9f0e4db0146f0ea661095b482419&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/junrar/junrar/blob/master/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;ifrOSS Classification&quot;,
+                        &quot;Sonstige (non-free) Software Lizenzen&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Sonstige (non-free) Software Lizenzen&quot;,
+                &quot;Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten.&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:UnRAR License&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;UnRAR License&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;https://github.com/junrar/junrar/blob/master/LICENSE&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/bb52f49545ce6bdc1970c7684a25790b">LicenseLynx:bb52f49545ce6bdc1970c7684a25790b</a> for <a href="/?license=scancode:unrar"><span class="licensename"><span class="namespace">scancode:</span>unrar</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>unrar</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-unrar</span></li><li><span class="licensename"><span class="namespace">scancode:</span>UnRar License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:unrar&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:LicenseRef-scancode-unrar&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:UnRar License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;bb52f49545ce6bdc1970c7684a25790b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:LicenseRef-scancode-unrar&quot;,
+            &quot;scancode:UnRar License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;scancode:unrar&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

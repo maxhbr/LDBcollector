@@ -1,0 +1,647 @@
+<html><head><title>ldbcollector: spdx:X11-swapped</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:X11-swapped</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>X11-swapped</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">X11 License (swapped)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>X11 License (swapped)</span></li><li><span class="licensename">X11 swapped final paragraphs</span></li><li><span class="licensename"><span class="namespace">spdx:</span>X11 swapped final paragraphs</span></li><li><span class="licensename">X11-swapped</span></li><li><span class="licensename"><span class="namespace">cavil:</span>X11-swapped</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-swapped</span></li><li><span class="licensename"><span class="namespace">spdx:</span>X11-swapped</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">X11</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:d6d666e5cc427371dcd7629cbc71ebe9">[<a href="/fact/ScancodeData/d6d666e5cc427371dcd7629cbc71ebe9">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:13f864c0ec73cddb21a4a129cf59731c">[<a href="/fact/SPDXLicense/13f864c0ec73cddb21a4a129cf59731c">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c754824695cbe715ec8452410a0e87ed">[<a href="/fact/OrtLicenseCategorization/c754824695cbe715ec8452410a0e87ed">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c754824695cbe715ec8452410a0e87ed">[<a href="/fact/OrtLicenseCategorization/c754824695cbe715ec8452410a0e87ed">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is same as X11, but the order of the last two paragraphs is swapped.<span class="provided-by">(provided by: <span title="SPDXLicense:13f864c0ec73cddb21a4a129cf59731c">[<a href="/fact/SPDXLicense/13f864c0ec73cddb21a4a129cf59731c">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>Added in SPDX license list 3.25
+This was previously the license rule: x11-xconsortium_37.RULE
+The no advert paragraph has its position switched with the warranty disclaimer in this variant.
+The texts are otherwise essentially the same See https://github.com/achillean/shodan-python/blob/90491308971a7ba6e358d6152d7b02307964c6fe/LICENSE
+<span class="provided-by">(provided by: <span title="ScancodeData:d6d666e5cc427371dcd7629cbc71ebe9">[<a href="/fact/ScancodeData/d6d666e5cc427371dcd7629cbc71ebe9">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE" target="_blank">https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2008-2010 Derick Eddington.  All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the &quot;Software&quot;),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Except as contained in this notice, the name(s) of the above copyright
+holders shall not be used in advertising or otherwise to promote the sale,
+use or other dealings in this Software without prior written authorization.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;X11 License&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;Copyright (c) &amp;lt;year&amp;gt; &amp;lt;copyright holders&amp;gt;&lt;/p&gt;
+
+      &lt;/span&gt;&lt;/div&gt;
+
+      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a
+         copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;),
+         to deal in the Software without restriction, including without limitation
+         the rights to use, copy, modify, merge, publish, distribute, sublicense,
+         and/or sell copies of the Software, and to permit persons to whom the
+         Software is furnished to do so, subject to the following conditions:&lt;/p&gt;
+
+      &lt;p&gt;The above copyright notice and this permission notice shall be included in
+         all copies or substantial portions of the Software.&lt;/p&gt;
+
+      &lt;p&gt;Except as contained in this notice, the name(s) of &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .+&quot;&gt; the above copyright
+         holders&lt;/span&gt;&lt;/var&gt; shall not be used in advertising or otherwise to promote the sale,
+         use or other dealings in this Software without prior written authorization &lt;var class=&quot;optional-license-text&quot;&gt;  from &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .+&quot;&gt; the above copyright
+         holders&lt;/span&gt;&lt;/var&gt;&lt;/var&gt;.&lt;/p&gt;
+
+      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .+&quot;&gt; THE AUTHORS OR COPYRIGHT HOLDERS&lt;/span&gt;&lt;/var&gt; BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+         FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+         DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the &quot;Software&quot;),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Except as contained in this notice, the name(s) of the above copyright
+holders shall not be used in advertising or otherwise to promote the sale,
+use or other dealings in this Software without prior written authorization.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/13f864c0ec73cddb21a4a129cf59731c">SPDXLicense:13f864c0ec73cddb21a4a129cf59731c</a> for <a href="/?license=spdx:X11-swapped"><span class="licensename"><span class="namespace">spdx:</span>X11-swapped</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>X11-swapped</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">X11 swapped final paragraphs</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:13f864c0ec73cddb21a4a129cf59731c">[<a href="/fact/SPDXLicense/13f864c0ec73cddb21a4a129cf59731c">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is same as X11, but the order of the last two paragraphs is swapped.<span class="provided-by">(provided by: <span title="SPDXLicense:13f864c0ec73cddb21a4a129cf59731c">[<a href="/fact/SPDXLicense/13f864c0ec73cddb21a4a129cf59731c">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE" target="_blank">https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2008-2010 Derick Eddington.  All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the &quot;Software&quot;),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Except as contained in this notice, the name(s) of the above copyright
+holders shall not be used in advertising or otherwise to promote the sale,
+use or other dealings in this Software without prior written authorization.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;X11 License&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;Copyright (c) &amp;lt;year&amp;gt; &amp;lt;copyright holders&amp;gt;&lt;/p&gt;
+
+      &lt;/span&gt;&lt;/div&gt;
+
+      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a
+         copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;),
+         to deal in the Software without restriction, including without limitation
+         the rights to use, copy, modify, merge, publish, distribute, sublicense,
+         and/or sell copies of the Software, and to permit persons to whom the
+         Software is furnished to do so, subject to the following conditions:&lt;/p&gt;
+
+      &lt;p&gt;The above copyright notice and this permission notice shall be included in
+         all copies or substantial portions of the Software.&lt;/p&gt;
+
+      &lt;p&gt;Except as contained in this notice, the name(s) of &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .+&quot;&gt; the above copyright
+         holders&lt;/span&gt;&lt;/var&gt; shall not be used in advertising or otherwise to promote the sale,
+         use or other dealings in this Software without prior written authorization &lt;var class=&quot;optional-license-text&quot;&gt;  from &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .+&quot;&gt; the above copyright
+         holders&lt;/span&gt;&lt;/var&gt;&lt;/var&gt;.&lt;/p&gt;
+
+      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .+&quot;&gt; THE AUTHORS OR COPYRIGHT HOLDERS&lt;/span&gt;&lt;/var&gt; BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+         FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+         DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:X11-swapped&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;X11 swapped final paragraphs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;13f864c0ec73cddb21a4a129cf59731c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This is same as X11, but the order of the last two paragraphs is swapped.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 2008-2010 Derick Eddington.  All rights reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the \&quot;Software\&quot;),\nto deal in the Software without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nExcept as contained in this notice, the name(s) of the above copyright\nholders shall not be used in advertising or otherwise to promote the sale,\nuse or other dealings in this Software without prior written authorization.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL\nTHE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;X11 License&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;Copyright (c) &amp;lt;year&amp;gt; &amp;lt;copyright holders&amp;gt;&lt;/p&gt;\n\n      &lt;/span&gt;&lt;/div&gt;\n\n      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a\n         copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;),\n         to deal in the Software without restriction, including without limitation\n         the rights to use, copy, modify, merge, publish, distribute, sublicense,\n         and/or sell copies of the Software, and to permit persons to whom the\n         Software is furnished to do so, subject to the following conditions:&lt;/p&gt;\n\n      &lt;p&gt;The above copyright notice and this permission notice shall be included in\n         all copies or substantial portions of the Software.&lt;/p&gt;\n\n      &lt;p&gt;Except as contained in this notice, the name(s) of &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .+\&quot;&gt; the above copyright\n         holders&lt;/span&gt;&lt;/var&gt; shall not be used in advertising or otherwise to promote the sale,\n         use or other dealings in this Software without prior written authorization &lt;var class=\&quot;optional-license-text\&quot;&gt;  from &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .+\&quot;&gt; the above copyright\n         holders&lt;/span&gt;&lt;/var&gt;&lt;/var&gt;.&lt;/p&gt;\n\n      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .+\&quot;&gt; THE AUTHORS OR COPYRIGHT HOLDERS&lt;/span&gt;&lt;/var&gt; BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\n         FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\n         DEALINGS IN THE SOFTWARE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:03:00Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This is same as X11, but the order of the last two paragraphs is swapped.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:X11-swapped&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 2008-2010 Derick Eddington.  All rights reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the \&quot;Software\&quot;),\nto deal in the Software without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nExcept as contained in this notice, the name(s) of the above copyright\nholders shall not be used in advertising or otherwise to promote the sale,\nuse or other dealings in this Software without prior written authorization.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL\nTHE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;X11 License&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;Copyright (c) &amp;lt;year&amp;gt; &amp;lt;copyright holders&amp;gt;&lt;/p&gt;\n\n      &lt;/span&gt;&lt;/div&gt;\n\n      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a\n         copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;),\n         to deal in the Software without restriction, including without limitation\n         the rights to use, copy, modify, merge, publish, distribute, sublicense,\n         and/or sell copies of the Software, and to permit persons to whom the\n         Software is furnished to do so, subject to the following conditions:&lt;/p&gt;\n\n      &lt;p&gt;The above copyright notice and this permission notice shall be included in\n         all copies or substantial portions of the Software.&lt;/p&gt;\n\n      &lt;p&gt;Except as contained in this notice, the name(s) of &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .+\&quot;&gt; the above copyright\n         holders&lt;/span&gt;&lt;/var&gt; shall not be used in advertising or otherwise to promote the sale,\n         use or other dealings in this Software without prior written authorization &lt;var class=\&quot;optional-license-text\&quot;&gt;  from &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .+\&quot;&gt; the above copyright\n         holders&lt;/span&gt;&lt;/var&gt;&lt;/var&gt;.&lt;/p&gt;\n\n      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .+\&quot;&gt; THE AUTHORS OR COPYRIGHT HOLDERS&lt;/span&gt;&lt;/var&gt; BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\n         FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\n         DEALINGS IN THE SOFTWARE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;X11 swapped final paragraphs&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;X11 License\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) &lt;year&gt; &lt;copyright holders&gt;  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nExcept as contained in this notice, the name(s) of &lt;&lt;var;name=\&quot;nameDisclaimer\&quot;;original=\&quot;the above copyright holders\&quot;;match=\&quot;.+\&quot;&gt;&gt; shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization&lt;&lt;beginOptional&gt;&gt; from &lt;&lt;var;name=\&quot;name2Disclaimer\&quot;;original=\&quot;the above copyright holders\&quot;;match=\&quot;.+\&quot;&gt;&gt;&lt;&lt;endOptional&gt;&gt; .\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL &lt;&lt;var;name=\&quot;name3Disclaimer\&quot;;original=\&quot;THE AUTHORS OR COPYRIGHT HOLDERS\&quot;;match=\&quot;.+\&quot;&gt;&gt; BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/d6d666e5cc427371dcd7629cbc71ebe9">ScancodeData:d6d666e5cc427371dcd7629cbc71ebe9</a> for <a href="/?license=scancode:x11-swapped"><span class="licensename"><span class="namespace">scancode:</span>x11-swapped</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>x11-swapped</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">X11 swapped final paragraphs</span></li><li><span class="licensename">X11 swapped final paragraphs</span></li><li><span class="licensename"><span class="namespace">spdx:</span>X11-swapped</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:d6d666e5cc427371dcd7629cbc71ebe9">[<a href="/fact/ScancodeData/d6d666e5cc427371dcd7629cbc71ebe9">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX license list 3.25
+This was previously the license rule: x11-xconsortium_37.RULE
+The no advert paragraph has its position switched with the warranty disclaimer in this variant.
+The texts are otherwise essentially the same See https://github.com/achillean/shodan-python/blob/90491308971a7ba6e358d6152d7b02307964c6fe/LICENSE
+<span class="provided-by">(provided by: <span title="ScancodeData:d6d666e5cc427371dcd7629cbc71ebe9">[<a href="/fact/ScancodeData/d6d666e5cc427371dcd7629cbc71ebe9">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE" target="_blank">https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the &quot;Software&quot;),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Except as contained in this notice, the name(s) of the above copyright
+holders shall not be used in advertising or otherwise to promote the sale,
+use or other dealings in this Software without prior written authorization.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:x11-swapped&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;X11 swapped final paragraphs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;X11 swapped final paragraphs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:X11-swapped&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;d6d666e5cc427371dcd7629cbc71ebe9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Added in SPDX license list 3.25\nThis was previously the license rule: x11-xconsortium_37.RULE\nThe no advert paragraph has its position switched with the warranty disclaimer in this variant.\nThe texts are otherwise essentially the same See https://github.com/achillean/shodan-python/blob/90491308971a7ba6e358d6152d7b02307964c6fe/LICENSE\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the \&quot;Software\&quot;),\nto deal in the Software without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nExcept as contained in this notice, the name(s) of the above copyright\nholders shall not be used in advertising or otherwise to promote the sale,\nuse or other dealings in this Software without prior written authorization.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL\nTHE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;x11-swapped&quot;,
+        &quot;_name&quot;: &quot;X11 swapped final paragraphs&quot;,
+        &quot;_notes&quot;: &quot;Added in SPDX license list 3.25\nThis was previously the license rule: x11-xconsortium_37.RULE\nThe no advert paragraph has its position switched with the warranty disclaimer in this variant.\nThe texts are otherwise essentially the same See https://github.com/achillean/shodan-python/blob/90491308971a7ba6e358d6152d7b02307964c6fe/LICENSE\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/fedeinthemix/chez-srfi/blob/master/srfi/LICENSE&quot;
+        ],
+        &quot;_owner&quot;: &quot;Derick Eddington&quot;,
+        &quot;_shortName&quot;: &quot;X11 swapped final paragraphs&quot;,
+        &quot;_spdxId&quot;: &quot;X11-swapped&quot;,
+        &quot;_text&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the \&quot;Software\&quot;),\nto deal in the Software without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nExcept as contained in this notice, the name(s) of the above copyright\nholders shall not be used in advertising or otherwise to promote the sale,\nuse or other dealings in this Software without prior written authorization.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL\nTHE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c754824695cbe715ec8452410a0e87ed">OrtLicenseCategorization:c754824695cbe715ec8452410a0e87ed</a> for <a href="/?license=SPDX:X11-swapped"><span class="licensename"><span class="namespace">SPDX:</span>X11-swapped</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>X11-swapped</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c754824695cbe715ec8452410a0e87ed">[<a href="/fact/OrtLicenseCategorization/c754824695cbe715ec8452410a0e87ed">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c754824695cbe715ec8452410a0e87ed">[<a href="/fact/OrtLicenseCategorization/c754824695cbe715ec8452410a0e87ed">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:X11-swapped&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c754824695cbe715ec8452410a0e87ed&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:X11-swapped&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/5226d137a14924ac3285d219261ecb6a">CavilLicenseChange:5226d137a14924ac3285d219261ecb6a</a> for <a href="/?license=cavil:X11-swapped"><span class="licensename"><span class="namespace">cavil:</span>X11-swapped</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>X11-swapped</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">X11-swapped</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:X11-swapped&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;X11-swapped&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;5226d137a14924ac3285d219261ecb6a&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;X11-swapped&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:X11-swapped&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/3b85bea66c94df68b74d035c70ec252e">MetaeffektLicense:3b85bea66c94df68b74d035c70ec252e</a> for <a href="/?license=metaeffekt:X11 License (swapped)"><span class="licensename"><span class="namespace">metaeffekt:</span>X11 License (swapped)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>X11 License (swapped)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>X11-swapped</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">X11</span></li><li><span class="licensename">X11 License (swapped)</span></li><li><span class="licensename">X11 swapped final paragraphs</span></li><li><span class="licensename">X11-swapped</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-swapped</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:X11 License (swapped)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:X11-swapped&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;X11&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;X11-swapped&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;X11 swapped final paragraphs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;X11 License (swapped)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:x11-swapped&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;3b85bea66c94df68b74d035c70ec252e&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;X11-swapped&quot;,
+            &quot;X11 swapped final paragraphs&quot;,
+            &quot;X11 License (swapped)&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:X11 License (swapped)&quot;,
+        &quot;_category&quot;: &quot;X11&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:x11-swapped&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:X11-swapped&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/ce51b11f77edda0e3bf1e4cce48ef2ef">LicenseLynx:ce51b11f77edda0e3bf1e4cce48ef2ef</a> for <a href="/?license=spdx:X11-swapped"><span class="licensename"><span class="namespace">spdx:</span>X11-swapped</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>X11-swapped</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>X11 swapped final paragraphs</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-swapped</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:X11-swapped&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:x11-swapped&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:X11 swapped final paragraphs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;ce51b11f77edda0e3bf1e4cce48ef2ef&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:x11-swapped&quot;,
+            &quot;spdx:X11 swapped final paragraphs&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:X11-swapped&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

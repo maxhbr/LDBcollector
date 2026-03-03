@@ -1,0 +1,775 @@
+<html><head><title>ldbcollector: spdx:CC-PDM-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:CC-PDM-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDM-1.0</span></li></ul></li><li><b>other LicenseNames (14):</b><ul class="capsulUl clearfix"><li><span class="licensename">CC-PD Mark 1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>CC-PD Mark 1.0</span></li><li><span class="licensename">CC-PDM-1.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>CC-PDM-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cc-pdm-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDM-1.0</span></li><li><span class="licensename">Creative    Commons Public Domain Mark 1.0 Universal</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Creative    Commons Public Domain Mark 1.0 Universal</span></li><li><span class="licensename">Creative Commons Public Domain Mark 1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Creative Commons Public Domain Mark 1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Creative Commons Public Domain Mark 1.0</span></li><li><span class="licensename">LicenseRef-scancode-cc-pdm-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-cc-pdm-1.0</span></li><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-cc-pdm-1.0</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//creativecommons.org/publicdomain/mark/1.0/</span></li><li><span class="licensename"><span class="namespace">https:</span>//creativecommons.org/publicdomain/mark/1.0/</span></li><li><span class="licensename">CC-PDM</span></li><li><span class="licensename">PDM 1.0</span></li><li><span class="licensename">Public Domain Mark 1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Public Domain<span class="provided-by">(provided by: <span title="ScancodeData:ac29e5a6d9caabac7bbff443368dee52">[<a href="/fact/ScancodeData/ac29e5a6d9caabac7bbff443368dee52">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:fbe6314094e0ab3df0babdeecfb13fb1">[<a href="/fact/SPDXLicense/fbe6314094e0ab3df0babdeecfb13fb1">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7ba18ea92600ba0b24d2743a3bdd1556">[<a href="/fact/OrtLicenseCategorization/7ba18ea92600ba0b24d2743a3bdd1556">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:6d4527b71b622845041243919cdd2903">[<a href="/fact/OrtLicenseCategorization/6d4527b71b622845041243919cdd2903">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7ba18ea92600ba0b24d2743a3bdd1556">[<a href="/fact/OrtLicenseCategorization/7ba18ea92600ba0b24d2743a3bdd1556">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:6d4527b71b622845041243919cdd2903">[<a href="/fact/OrtLicenseCategorization/6d4527b71b622845041243919cdd2903">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>As per Creative Commons, this is intended to provide a standard way to mark works that are no longer restricted by copyright to be marked as such in a standard and simple way. See https://creativecommons.org/public-domain/pdm/ for more information.<span class="provided-by">(provided by: <span title="SPDXLicense:fbe6314094e0ab3df0babdeecfb13fb1">[<a href="/fact/SPDXLicense/fbe6314094e0ab3df0babdeecfb13fb1">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://creativecommons.org/share-your-work/cclicenses/" target="_blank">https://creativecommons.org/share-your-work/cclicenses/</a></li><li><a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank">https://creativecommons.org/publicdomain/mark/1.0/</a></li></ul><h3>Other Statements</h3><ul><li>https://creativecommons.org/publicdomain/mark/1.0/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>No Copyright
+
+This work has been identified as being free of known restrictions under
+copyright law, including all related and neighboring rights.
+
+
+You can copy, modify, distribute and perform the work, even for commercial
+purposes, all without asking permission. See Other Information below.
+
+Other Information
+
+The work may not be free of known copyright restrictions in all jurisdictions .
+
+Persons may have other rights in or related to the work, such as patent or
+trademark rights, and others may have rights in how the work is used, such as
+publicity or privacy rights.
+
+In some jurisdictions moral rights of the author may persist beyond the term of
+copyright. These rights may include the right to be identified as the author
+and the right to object to derogatory treatments.
+
+Unless expressly stated otherwise, the person who identified the work makes no
+warranties about the work, and disclaims liability for all uses of the work, to
+the fullest extent permitted by applicable law.
+
+When using or citing the work, you should not imply endorsement by the author
+or the person who identified the work.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            No Copyright
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This work has been identified as being free of known restrictions
+            under copyright law, including all related and neighboring rights.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            You can copy, modify, distribute and perform the
+            work, even for commercial purposes, all without
+            asking permission. See Other Information below.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Other Information
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The work may not be free of known copyright
+            restrictions in all jurisdictions.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Persons may have other rights in or related to the work, such
+            as patent or trademark rights, and others may have rights in
+            how the work is used, such as publicity or privacy rights.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            In some jurisdictions moral rights of the author may
+            persist beyond the term of copyright. These rights
+            may include the right to be identified as the author
+            and the right to object to derogatory treatments.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Unless expressly stated otherwise, the person who
+            identified the work makes no warranties about the
+            work, and disclaims liability for all uses of the work,
+            to the fullest extent permitted by applicable law.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            When using or citing the work, you should not imply endorsement
+            by the author or the person who identified the work.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Public Domain Mark 1.0
+No Copyright
+
+    This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.
+
+
+    You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.
+
+
+Other Information
+
+    The work may not be free of known copyright restrictions in all jurisdictions.
+
+    Persons may have other rights in or related to the work, such as patent or trademark rights, and others may have rights in how the work is used, such as publicity or privacy rights.
+
+    In some jurisdictions moral rights of the author may persist beyond the term of copyright. These rights may include the right to be identified as the author and the right to object to derogatory treatments.
+
+    Unless expressly stated otherwise, the person who identified the work makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.
+
+    When using or citing the work, you should not imply endorsement by the author or the person who identified the work.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/fbe6314094e0ab3df0babdeecfb13fb1">SPDXLicense:fbe6314094e0ab3df0babdeecfb13fb1</a> for <a href="/?license=spdx:CC-PDM-1.0"><span class="licensename"><span class="namespace">spdx:</span>CC-PDM-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDM-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Creative    Commons Public Domain Mark 1.0 Universal</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:fbe6314094e0ab3df0babdeecfb13fb1">[<a href="/fact/SPDXLicense/fbe6314094e0ab3df0babdeecfb13fb1">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>As per Creative Commons, this is intended to provide a standard way to mark works that are no longer restricted by copyright to be marked as such in a standard and simple way. See https://creativecommons.org/public-domain/pdm/ for more information.<span class="provided-by">(provided by: <span title="SPDXLicense:fbe6314094e0ab3df0babdeecfb13fb1">[<a href="/fact/SPDXLicense/fbe6314094e0ab3df0babdeecfb13fb1">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://creativecommons.org/share-your-work/cclicenses/" target="_blank">https://creativecommons.org/share-your-work/cclicenses/</a></li><li><a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank">https://creativecommons.org/publicdomain/mark/1.0/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>No Copyright
+
+This work has been identified as being free of known restrictions under
+copyright law, including all related and neighboring rights.
+
+
+You can copy, modify, distribute and perform the work, even for commercial
+purposes, all without asking permission. See Other Information below.
+
+Other Information
+
+The work may not be free of known copyright restrictions in all jurisdictions .
+
+Persons may have other rights in or related to the work, such as patent or
+trademark rights, and others may have rights in how the work is used, such as
+publicity or privacy rights.
+
+In some jurisdictions moral rights of the author may persist beyond the term of
+copyright. These rights may include the right to be identified as the author
+and the right to object to derogatory treatments.
+
+Unless expressly stated otherwise, the person who identified the work makes no
+warranties about the work, and disclaims liability for all uses of the work, to
+the fullest extent permitted by applicable law.
+
+When using or citing the work, you should not imply endorsement by the author
+or the person who identified the work.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            No Copyright
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This work has been identified as being free of known restrictions
+            under copyright law, including all related and neighboring rights.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            You can copy, modify, distribute and perform the
+            work, even for commercial purposes, all without
+            asking permission. See Other Information below.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Other Information
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The work may not be free of known copyright
+            restrictions in all jurisdictions.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Persons may have other rights in or related to the work, such
+            as patent or trademark rights, and others may have rights in
+            how the work is used, such as publicity or privacy rights.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            In some jurisdictions moral rights of the author may
+            persist beyond the term of copyright. These rights
+            may include the right to be identified as the author
+            and the right to object to derogatory treatments.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Unless expressly stated otherwise, the person who
+            identified the work makes no warranties about the
+            work, and disclaims liability for all uses of the work,
+            to the fullest extent permitted by applicable law.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            When using or citing the work, you should not imply endorsement
+            by the author or the person who identified the work.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:CC-PDM-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Creative    Commons Public Domain Mark 1.0 Universal&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;fbe6314094e0ab3df0babdeecfb13fb1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;As per Creative Commons, this is intended to provide a standard way to mark works that are no longer restricted by copyright to be marked as such in a standard and simple way. See https://creativecommons.org/public-domain/pdm/ for more information.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;No Copyright\n\nThis work has been identified as being free of known restrictions under\ncopyright law, including all related and neighboring rights.\n\n\nYou can copy, modify, distribute and perform the work, even for commercial\npurposes, all without asking permission. See Other Information below.\n\nOther Information\n\nThe work may not be free of known copyright restrictions in all jurisdictions .\n\nPersons may have other rights in or related to the work, such as patent or\ntrademark rights, and others may have rights in how the work is used, such as\npublicity or privacy rights.\n\nIn some jurisdictions moral rights of the author may persist beyond the term of\ncopyright. These rights may include the right to be identified as the author\nand the right to object to derogatory treatments.\n\nUnless expressly stated otherwise, the person who identified the work makes no\nwarranties about the work, and disclaims liability for all uses of the work, to\nthe fullest extent permitted by applicable law.\n\nWhen using or citing the work, you should not imply endorsement by the author\nor the person who identified the work.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            No Copyright\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This work has been identified as being free of known restrictions\n            under copyright law, including all related and neighboring rights.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            You can copy, modify, distribute and perform the\n            work, even for commercial purposes, all without\n            asking permission. See Other Information below.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Other Information\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The work may not be free of known copyright\n            restrictions in all jurisdictions.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Persons may have other rights in or related to the work, such\n            as patent or trademark rights, and others may have rights in\n            how the work is used, such as publicity or privacy rights.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            In some jurisdictions moral rights of the author may\n            persist beyond the term of copyright. These rights\n            may include the right to be identified as the author\n            and the right to object to derogatory treatments.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Unless expressly stated otherwise, the person who\n            identified the work makes no warranties about the\n            work, and disclaims liability for all uses of the work,\n            to the fullest extent permitted by applicable law.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            When using or citing the work, you should not imply endorsement\n            by the author or the person who identified the work.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/share-your-work/cclicenses/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/share-your-work/cclicenses/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:53:21Z&quot;,
+                &quot;url&quot;: &quot;https://creativecommons.org/share-your-work/cclicenses/&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:53:21Z&quot;,
+                &quot;url&quot;: &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;As per Creative Commons, this is intended to provide a standard way to mark works that are no longer restricted by copyright to be marked as such in a standard and simple way. See https://creativecommons.org/public-domain/pdm/ for more information.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:CC-PDM-1.0&quot;,
+        &quot;licenseText&quot;: &quot;No Copyright\n\nThis work has been identified as being free of known restrictions under\ncopyright law, including all related and neighboring rights.\n\n\nYou can copy, modify, distribute and perform the work, even for commercial\npurposes, all without asking permission. See Other Information below.\n\nOther Information\n\nThe work may not be free of known copyright restrictions in all jurisdictions .\n\nPersons may have other rights in or related to the work, such as patent or\ntrademark rights, and others may have rights in how the work is used, such as\npublicity or privacy rights.\n\nIn some jurisdictions moral rights of the author may persist beyond the term of\ncopyright. These rights may include the right to be identified as the author\nand the right to object to derogatory treatments.\n\nUnless expressly stated otherwise, the person who identified the work makes no\nwarranties about the work, and disclaims liability for all uses of the work, to\nthe fullest extent permitted by applicable law.\n\nWhen using or citing the work, you should not imply endorsement by the author\nor the person who identified the work.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            No Copyright\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This work has been identified as being free of known restrictions\n            under copyright law, including all related and neighboring rights.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            You can copy, modify, distribute and perform the\n            work, even for commercial purposes, all without\n            asking permission. See Other Information below.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Other Information\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The work may not be free of known copyright\n            restrictions in all jurisdictions.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Persons may have other rights in or related to the work, such\n            as patent or trademark rights, and others may have rights in\n            how the work is used, such as publicity or privacy rights.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            In some jurisdictions moral rights of the author may\n            persist beyond the term of copyright. These rights\n            may include the right to be identified as the author\n            and the right to object to derogatory treatments.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Unless expressly stated otherwise, the person who\n            identified the work makes no warranties about the\n            work, and disclaims liability for all uses of the work,\n            to the fullest extent permitted by applicable law.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            When using or citing the work, you should not imply endorsement\n            by the author or the person who identified the work.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Creative    Commons Public Domain Mark 1.0 Universal&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;,
+            &quot;https://creativecommons.org/share-your-work/cclicenses/&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;No Copyright\n\nThis work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.\n\nYou can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.\n\nOther Information\n\nThe work may not be free of known copyright restrictions in all jurisdictions.\n\nPersons may have other rights in or related to the work, such as patent or trademark rights, and others may have rights in how the work is used, such as publicity or privacy rights.\n\nIn some jurisdictions moral rights of the author may persist beyond the term of copyright. These rights may include the right to be identified as the author and the right to object to derogatory treatments.\n\nUnless expressly stated otherwise, the person who identified the work makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.\n\nWhen using or citing the work, you should not imply endorsement by the author or the person who identified the work.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/ac29e5a6d9caabac7bbff443368dee52">ScancodeData:ac29e5a6d9caabac7bbff443368dee52</a> for <a href="/?license=scancode:cc-pdm-1.0"><span class="licensename"><span class="namespace">scancode:</span>cc-pdm-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>cc-pdm-1.0</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">CC-PD Mark 1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDM-1.0</span></li><li><span class="licensename">Creative Commons Public Domain Mark 1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Public Domain<span class="provided-by">(provided by: <span title="ScancodeData:ac29e5a6d9caabac7bbff443368dee52">[<a href="/fact/ScancodeData/ac29e5a6d9caabac7bbff443368dee52">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://creativecommons.org/share-your-work/cclicenses/" target="_blank">https://creativecommons.org/share-your-work/cclicenses/</a></li><li><a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank">https://creativecommons.org/publicdomain/mark/1.0/</a></li></ul><h3>Other Statements</h3><ul><li>https://creativecommons.org/publicdomain/mark/1.0/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Public Domain Mark 1.0
+No Copyright
+
+    This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.
+
+
+    You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.
+
+
+Other Information
+
+    The work may not be free of known copyright restrictions in all jurisdictions.
+
+    Persons may have other rights in or related to the work, such as patent or trademark rights, and others may have rights in how the work is used, such as publicity or privacy rights.
+
+    In some jurisdictions moral rights of the author may persist beyond the term of copyright. These rights may include the right to be identified as the author and the right to object to derogatory treatments.
+
+    Unless expressly stated otherwise, the person who identified the work makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.
+
+    When using or citing the work, you should not imply endorsement by the author or the person who identified the work.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:cc-pdm-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CC-PD Mark 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Creative Commons Public Domain Mark 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:CC-PDM-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;ac29e5a6d9caabac7bbff443368dee52&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/share-your-work/cclicenses/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Public Domain Mark 1.0\nNo Copyright\n\n    This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.\n\n\n    You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.\n\n\nOther Information\n\n    The work may not be free of known copyright restrictions in all jurisdictions.\n\n    Persons may have other rights in or related to the work, such as patent or trademark rights, and others may have rights in how the work is used, such as publicity or privacy rights.\n\n    In some jurisdictions moral rights of the author may persist beyond the term of copyright. These rights may include the right to be identified as the author and the right to object to derogatory treatments.\n\n    Unless expressly stated otherwise, the person who identified the work makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.\n\n    When using or citing the work, you should not imply endorsement by the author or the person who identified the work.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;,
+        &quot;_key&quot;: &quot;cc-pdm-1.0&quot;,
+        &quot;_name&quot;: &quot;Creative Commons Public Domain Mark 1.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://creativecommons.org/share-your-work/cclicenses/&quot;,
+            &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;
+        ],
+        &quot;_owner&quot;: &quot;Creative Commons&quot;,
+        &quot;_shortName&quot;: &quot;CC-PD Mark 1.0&quot;,
+        &quot;_spdxId&quot;: &quot;CC-PDM-1.0&quot;,
+        &quot;_text&quot;: &quot;Public Domain Mark 1.0\nNo Copyright\n\n    This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.\n\n\n    You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.\n\n\nOther Information\n\n    The work may not be free of known copyright restrictions in all jurisdictions.\n\n    Persons may have other rights in or related to the work, such as patent or trademark rights, and others may have rights in how the work is used, such as publicity or privacy rights.\n\n    In some jurisdictions moral rights of the author may persist beyond the term of copyright. These rights may include the right to be identified as the author and the right to object to derogatory treatments.\n\n    Unless expressly stated otherwise, the person who identified the work makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.\n\n    When using or citing the work, you should not imply endorsement by the author or the person who identified the work.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/7ba18ea92600ba0b24d2743a3bdd1556">OrtLicenseCategorization:7ba18ea92600ba0b24d2743a3bdd1556</a> for <a href="/?license=SPDX:CC-PDM-1.0"><span class="licensename"><span class="namespace">SPDX:</span>CC-PDM-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>CC-PDM-1.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7ba18ea92600ba0b24d2743a3bdd1556">[<a href="/fact/OrtLicenseCategorization/7ba18ea92600ba0b24d2743a3bdd1556">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7ba18ea92600ba0b24d2743a3bdd1556">[<a href="/fact/OrtLicenseCategorization/7ba18ea92600ba0b24d2743a3bdd1556">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:CC-PDM-1.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;7ba18ea92600ba0b24d2743a3bdd1556&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:CC-PDM-1.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/6d4527b71b622845041243919cdd2903">OrtLicenseCategorization:6d4527b71b622845041243919cdd2903</a> for <a href="/?license=SPDX:LicenseRef-scancode-cc-pdm-1.0"><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-cc-pdm-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-cc-pdm-1.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:6d4527b71b622845041243919cdd2903">[<a href="/fact/OrtLicenseCategorization/6d4527b71b622845041243919cdd2903">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:6d4527b71b622845041243919cdd2903">[<a href="/fact/OrtLicenseCategorization/6d4527b71b622845041243919cdd2903">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LicenseRef-scancode-cc-pdm-1.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;6d4527b71b622845041243919cdd2903&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LicenseRef-scancode-cc-pdm-1.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/0ee6b725cf33522ce88acd2e7e87b2c5">CavilLicenseChange:0ee6b725cf33522ce88acd2e7e87b2c5</a> for <a href="/?license=cavil:CC-PDM-1.0"><span class="licensename"><span class="namespace">cavil:</span>CC-PDM-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>CC-PDM-1.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CC-PDM-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:CC-PDM-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CC-PDM-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;0ee6b725cf33522ce88acd2e7e87b2c5&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;CC-PDM-1.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:CC-PDM-1.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/26ae5d60a476e0e32095e10ea83548a9">MetaeffektLicense:26ae5d60a476e0e32095e10ea83548a9</a> for <a href="/?license=metaeffekt:Creative Commons Public Domain Mark 1.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Creative Commons Public Domain Mark 1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Creative Commons Public Domain Mark 1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDM-1.0</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//creativecommons.org/publicdomain/mark/1.0/</span></li><li><span class="licensename"><span class="namespace">https:</span>//creativecommons.org/publicdomain/mark/1.0/</span></li><li><span class="licensename">CC-PDM</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cc-pdm-1.0</span></li><li><span class="licensename">PDM 1.0</span></li><li><span class="licensename">Public Domain Mark 1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Creative Commons Public Domain Mark 1.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:CC-PDM-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CC-PDM&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Public Domain Mark 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://creativecommons.org/publicdomain/mark/1.0/&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;PDM 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:cc-pdm-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;26ae5d60a476e0e32095e10ea83548a9&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Public Domain Mark 1.0&quot;,
+            &quot;http://creativecommons.org/publicdomain/mark/1.0/&quot;,
+            &quot;https://creativecommons.org/publicdomain/mark/1.0/&quot;,
+            &quot;PDM 1.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Creative Commons Public Domain Mark 1.0&quot;,
+        &quot;_category&quot;: &quot;CC-PDM&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:cc-pdm-1.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:CC-PDM-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/92f9d3ce7646cf9b2f57ccfae0f266da">LicenseLynx:92f9d3ce7646cf9b2f57ccfae0f266da</a> for <a href="/?license=spdx:CC-PDM-1.0"><span class="licensename"><span class="namespace">spdx:</span>CC-PDM-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDM-1.0</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>CC-PD Mark 1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cc-pdm-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Creative    Commons Public Domain Mark 1.0 Universal</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Creative Commons Public Domain Mark 1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-cc-pdm-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:CC-PDM-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:CC-PD Mark 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:cc-pdm-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:Creative Commons Public Domain Mark 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:LicenseRef-scancode-cc-pdm-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Creative    Commons Public Domain Mark 1.0 Universal&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;92f9d3ce7646cf9b2f57ccfae0f266da&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:CC-PD Mark 1.0&quot;,
+            &quot;scancode:cc-pdm-1.0&quot;,
+            &quot;scancode:Creative Commons Public Domain Mark 1.0&quot;,
+            &quot;scancode:LicenseRef-scancode-cc-pdm-1.0&quot;,
+            &quot;spdx:Creative    Commons Public Domain Mark 1.0 Universal&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:CC-PDM-1.0&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

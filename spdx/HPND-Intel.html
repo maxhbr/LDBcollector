@@ -1,0 +1,804 @@
+<html><head><title>ldbcollector: spdx:HPND-Intel</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:HPND-Intel</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></li></ul></li><li><b>other LicenseNames (18):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - Intel variant</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Historical Permission Notice and Disclaimer - Intel variant</span></li><li><span class="licensename">HPND-Intel</span></li><li><span class="licensename"><span class="namespace">cavil:</span>HPND-Intel</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-Intel</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></li><li><span class="licensename">Intel Open Source License 1993</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>Intel Open Source License 1993</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Intel Open Source License 1993</span></li><li><span class="licensename">Intel OSL 1993</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Intel OSL 1993</span></li><li><span class="licensename">intel-osl-1993</span></li><li><span class="licensename"><span class="namespace">scancode:</span>intel-osl-1993</span></li><li><span class="licensename">LicenseRef-scancode-intel-osl-1993</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-intel-osl-1993</span></li><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-intel-osl-1993</span></li><li><span class="licensename">Permission Terms (Intel Corporation)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (Intel Corporation)</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Permission</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:3d2fdb163c2f4ee17f36cf376583f26f">[<a href="/fact/ScancodeData/3d2fdb163c2f4ee17f36cf376583f26f">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:b57105dba259a1022edd1d9d4bcdb428">[<a href="/fact/SPDXLicense/b57105dba259a1022edd1d9d4bcdb428">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:05c2b8c41974c6f51552bbdbff743c96">[<a href="/fact/FedoraEntry/05c2b8c41974c6f51552bbdbff743c96">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dfaf1245c8290835ec8d1f68783365d4">[<a href="/fact/OrtLicenseCategorization/dfaf1245c8290835ec8d1f68783365d4">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:2df8bbc375d24c637d7a36762a7b38eb">[<a href="/fact/OrtLicenseCategorization/2df8bbc375d24c637d7a36762a7b38eb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dfaf1245c8290835ec8d1f68783365d4">[<a href="/fact/OrtLicenseCategorization/dfaf1245c8290835ec8d1f68783365d4">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:2df8bbc375d24c637d7a36762a7b38eb">[<a href="/fact/OrtLicenseCategorization/2df8bbc375d24c637d7a36762a7b38eb">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>Similar to HPND with some changes, in particular with a &quot;prominent mark&quot; requirement for modifications and additional disclaimers.<span class="provided-by">(provided by: <span title="SPDXLicense:b57105dba259a1022edd1d9d4bcdb428">[<a href="/fact/SPDXLicense/b57105dba259a1022edd1d9d4bcdb428">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD" target="_blank">https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1993 Intel Corporation
+
+Intel hereby grants you permission to copy, modify, and distribute this
+software and its documentation.  Intel grants this permission provided
+that the above copyright notice appears in all copies and that both the
+copyright notice and this permission notice appear in supporting
+documentation.  In addition, Intel grants this permission provided that
+you prominently mark as &quot;not part of the original&quot; any modifications
+made to this software or documentation, and that the name of Intel
+Corporation not be used in advertising or publicity pertaining to
+distribution of the software or the documentation without specific,
+written prior permission.
+
+Intel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR
+IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY
+OR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or
+representations regarding the use of, or the results of the use of,
+the software and documentation in terms of correctness, accuracy,
+reliability, currentness, or otherwise; and you rely on the software,
+documentation and results solely at your own risk.
+
+IN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,
+LOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES
+OF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM
+PAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+		&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; Copyright (c) 1993 Intel Corporation&lt;/span&gt;&lt;/var&gt;
+
+		&lt;p&gt;Intel hereby grants you permission to copy, modify, and distribute this
+		software and its documentation.  Intel grants this permission provided
+		that the above copyright notice appears in all copies and that both the
+		copyright notice and this permission notice appear in supporting
+		documentation.  In addition, Intel grants this permission provided that
+		you prominently mark as &amp;quot;not part of the original&amp;quot; any modifications
+		made to this software or documentation, and that the name of Intel
+		Corporation not be used in advertising or publicity pertaining to
+		distribution of the software or the documentation without specific,
+		written prior permission.&lt;/p&gt;
+
+		&lt;p&gt;Intel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR
+		IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY
+		OR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or
+		representations regarding the use of, or the results of the use of,
+		the software and documentation in terms of correctness, accuracy,
+		reliability, currentness, or otherwise; and you rely on the software,
+		documentation and results solely at your own risk.&lt;/p&gt;
+
+		&lt;p&gt;IN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,
+		LOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES
+		OF ANY KIND.  IN NO EVENT SHALL INTEL&amp;apos;S TOTAL LIABILITY EXCEED THE SUM
+		PAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.&lt;/p&gt;
+
+	</pre></details></li><li><details><summary>Text:</summary><pre>Intel hereby grants you permission to copy, modify, and distribute this
+software and its documentation.  Intel grants this permission provided
+that the above copyright notice appears in all copies and that both the
+copyright notice and this permission notice appear in supporting
+documentation.  In addition, Intel grants this permission provided that
+you prominently mark as &quot;not part of the original&quot; any modifications
+made to this software or documentation, and that the name of Intel
+Corporation not be used in advertising or publicity pertaining to
+distribution of the software or the documentation without specific,
+written prior permission.
+
+Intel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR
+IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY
+OR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or
+representations regarding the use of, or the results of the use of,
+the software and documentation in terms of correctness, accuracy,
+reliability, currentness, or otherwise; and you rely on the software,
+documentation and results solely at your own risk.
+
+IN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,
+LOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES
+OF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM
+PAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/b57105dba259a1022edd1d9d4bcdb428">SPDXLicense:b57105dba259a1022edd1d9d4bcdb428</a> for <a href="/?license=spdx:HPND-Intel"><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - Intel variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:b57105dba259a1022edd1d9d4bcdb428">[<a href="/fact/SPDXLicense/b57105dba259a1022edd1d9d4bcdb428">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>Similar to HPND with some changes, in particular with a &quot;prominent mark&quot; requirement for modifications and additional disclaimers.<span class="provided-by">(provided by: <span title="SPDXLicense:b57105dba259a1022edd1d9d4bcdb428">[<a href="/fact/SPDXLicense/b57105dba259a1022edd1d9d4bcdb428">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD" target="_blank">https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1993 Intel Corporation
+
+Intel hereby grants you permission to copy, modify, and distribute this
+software and its documentation.  Intel grants this permission provided
+that the above copyright notice appears in all copies and that both the
+copyright notice and this permission notice appear in supporting
+documentation.  In addition, Intel grants this permission provided that
+you prominently mark as &quot;not part of the original&quot; any modifications
+made to this software or documentation, and that the name of Intel
+Corporation not be used in advertising or publicity pertaining to
+distribution of the software or the documentation without specific,
+written prior permission.
+
+Intel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR
+IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY
+OR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or
+representations regarding the use of, or the results of the use of,
+the software and documentation in terms of correctness, accuracy,
+reliability, currentness, or otherwise; and you rely on the software,
+documentation and results solely at your own risk.
+
+IN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,
+LOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES
+OF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM
+PAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+		&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; Copyright (c) 1993 Intel Corporation&lt;/span&gt;&lt;/var&gt;
+
+		&lt;p&gt;Intel hereby grants you permission to copy, modify, and distribute this
+		software and its documentation.  Intel grants this permission provided
+		that the above copyright notice appears in all copies and that both the
+		copyright notice and this permission notice appear in supporting
+		documentation.  In addition, Intel grants this permission provided that
+		you prominently mark as &amp;quot;not part of the original&amp;quot; any modifications
+		made to this software or documentation, and that the name of Intel
+		Corporation not be used in advertising or publicity pertaining to
+		distribution of the software or the documentation without specific,
+		written prior permission.&lt;/p&gt;
+
+		&lt;p&gt;Intel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR
+		IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY
+		OR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or
+		representations regarding the use of, or the results of the use of,
+		the software and documentation in terms of correctness, accuracy,
+		reliability, currentness, or otherwise; and you rely on the software,
+		documentation and results solely at your own risk.&lt;/p&gt;
+
+		&lt;p&gt;IN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,
+		LOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES
+		OF ANY KIND.  IN NO EVENT SHALL INTEL&amp;apos;S TOTAL LIABILITY EXCEED THE SUM
+		PAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.&lt;/p&gt;
+
+	</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-Intel&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - Intel variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;b57105dba259a1022edd1d9d4bcdb428&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;Similar to HPND with some changes, in particular with a \&quot;prominent mark\&quot; requirement for modifications and additional disclaimers.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 1993 Intel Corporation\n\nIntel hereby grants you permission to copy, modify, and distribute this\nsoftware and its documentation.  Intel grants this permission provided\nthat the above copyright notice appears in all copies and that both the\ncopyright notice and this permission notice appear in supporting\ndocumentation.  In addition, Intel grants this permission provided that\nyou prominently mark as \&quot;not part of the original\&quot; any modifications\nmade to this software or documentation, and that the name of Intel\nCorporation not be used in advertising or publicity pertaining to\ndistribution of the software or the documentation without specific,\nwritten prior permission.\n\nIntel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR\nIMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY\nOR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or\nrepresentations regarding the use of, or the results of the use of,\nthe software and documentation in terms of correctness, accuracy,\nreliability, currentness, or otherwise; and you rely on the software,\ndocumentation and results solely at your own risk.\n\nIN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,\nLOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES\nOF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM\nPAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; Copyright (c) 1993 Intel Corporation&lt;/span&gt;&lt;/var&gt;\n\n\t\t&lt;p&gt;Intel hereby grants you permission to copy, modify, and distribute this\n\t\tsoftware and its documentation.  Intel grants this permission provided\n\t\tthat the above copyright notice appears in all copies and that both the\n\t\tcopyright notice and this permission notice appear in supporting\n\t\tdocumentation.  In addition, Intel grants this permission provided that\n\t\tyou prominently mark as &amp;quot;not part of the original&amp;quot; any modifications\n\t\tmade to this software or documentation, and that the name of Intel\n\t\tCorporation not be used in advertising or publicity pertaining to\n\t\tdistribution of the software or the documentation without specific,\n\t\twritten prior permission.&lt;/p&gt;\n\n\t\t&lt;p&gt;Intel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR\n\t\tIMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY\n\t\tOR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or\n\t\trepresentations regarding the use of, or the results of the use of,\n\t\tthe software and documentation in terms of correctness, accuracy,\n\t\treliability, currentness, or otherwise; and you rely on the software,\n\t\tdocumentation and results solely at your own risk.&lt;/p&gt;\n\n\t\t&lt;p&gt;IN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,\n\t\tLOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES\n\t\tOF ANY KIND.  IN NO EVENT SHALL INTEL&amp;apos;S TOTAL LIABILITY EXCEED THE SUM\n\t\tPAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.&lt;/p&gt;\n\n\t&quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:00:25Z&quot;,
+                &quot;url&quot;: &quot;https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;Similar to HPND with some changes, in particular with a \&quot;prominent mark\&quot; requirement for modifications and additional disclaimers.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:HPND-Intel&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 1993 Intel Corporation\n\nIntel hereby grants you permission to copy, modify, and distribute this\nsoftware and its documentation.  Intel grants this permission provided\nthat the above copyright notice appears in all copies and that both the\ncopyright notice and this permission notice appear in supporting\ndocumentation.  In addition, Intel grants this permission provided that\nyou prominently mark as \&quot;not part of the original\&quot; any modifications\nmade to this software or documentation, and that the name of Intel\nCorporation not be used in advertising or publicity pertaining to\ndistribution of the software or the documentation without specific,\nwritten prior permission.\n\nIntel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR\nIMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY\nOR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or\nrepresentations regarding the use of, or the results of the use of,\nthe software and documentation in terms of correctness, accuracy,\nreliability, currentness, or otherwise; and you rely on the software,\ndocumentation and results solely at your own risk.\n\nIN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,\nLOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES\nOF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM\nPAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; Copyright (c) 1993 Intel Corporation&lt;/span&gt;&lt;/var&gt;\n\n\t\t&lt;p&gt;Intel hereby grants you permission to copy, modify, and distribute this\n\t\tsoftware and its documentation.  Intel grants this permission provided\n\t\tthat the above copyright notice appears in all copies and that both the\n\t\tcopyright notice and this permission notice appear in supporting\n\t\tdocumentation.  In addition, Intel grants this permission provided that\n\t\tyou prominently mark as &amp;quot;not part of the original&amp;quot; any modifications\n\t\tmade to this software or documentation, and that the name of Intel\n\t\tCorporation not be used in advertising or publicity pertaining to\n\t\tdistribution of the software or the documentation without specific,\n\t\twritten prior permission.&lt;/p&gt;\n\n\t\t&lt;p&gt;Intel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR\n\t\tIMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY\n\t\tOR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or\n\t\trepresentations regarding the use of, or the results of the use of,\n\t\tthe software and documentation in terms of correctness, accuracy,\n\t\treliability, currentness, or otherwise; and you rely on the software,\n\t\tdocumentation and results solely at your own risk.&lt;/p&gt;\n\n\t\t&lt;p&gt;IN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,\n\t\tLOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES\n\t\tOF ANY KIND.  IN NO EVENT SHALL INTEL&amp;apos;S TOTAL LIABILITY EXCEED THE SUM\n\t\tPAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.&lt;/p&gt;\n\n\t&quot;,
+        &quot;name&quot;: &quot;Historical Permission Notice and Disclaimer - Intel variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1993 Intel Corporation\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nIntel hereby grants you permission to copy, modify, and distribute this software and its documentation. Intel grants this permission provided that the above copyright notice appears in all copies and that both the copyright notice and this permission notice appear in supporting documentation. In addition, Intel grants this permission provided that you prominently mark as \&quot;not part of the original\&quot; any modifications made to this software or documentation, and that the name of Intel Corporation not be used in advertising or publicity pertaining to distribution of the software or the documentation without specific, written prior permission.\n\nIntel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Intel makes no guarantee or representations regarding the use of, or the results of the use of, the software and documentation in terms of correctness, accuracy, reliability, currentness, or otherwise; and you rely on the software, documentation and results solely at your own risk.\n\nIN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS, LOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES OF ANY KIND. IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM PAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/05c2b8c41974c6f51552bbdbff743c96">FedoraEntry:05c2b8c41974c6f51552bbdbff743c96</a> for <a href="/?license=Fedora:HPND-Intel"><span class="licensename"><span class="namespace">Fedora:</span>HPND-Intel</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-Intel</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:05c2b8c41974c6f51552bbdbff743c96">[<a href="/fact/FedoraEntry/05c2b8c41974c6f51552bbdbff743c96">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:HPND-Intel&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-Intel&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;05c2b8c41974c6f51552bbdbff743c96&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;HPND-Intel&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:HPND-Intel&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/3d2fdb163c2f4ee17f36cf376583f26f">ScancodeData:3d2fdb163c2f4ee17f36cf376583f26f</a> for <a href="/?license=scancode:intel-osl-1993"><span class="licensename"><span class="namespace">scancode:</span>intel-osl-1993</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>intel-osl-1993</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></li><li><span class="licensename">Intel Open Source License 1993</span></li><li><span class="licensename">Intel OSL 1993</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:3d2fdb163c2f4ee17f36cf376583f26f">[<a href="/fact/ScancodeData/3d2fdb163c2f4ee17f36cf376583f26f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD" target="_blank">https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Intel hereby grants you permission to copy, modify, and distribute this
+software and its documentation.  Intel grants this permission provided
+that the above copyright notice appears in all copies and that both the
+copyright notice and this permission notice appear in supporting
+documentation.  In addition, Intel grants this permission provided that
+you prominently mark as &quot;not part of the original&quot; any modifications
+made to this software or documentation, and that the name of Intel
+Corporation not be used in advertising or publicity pertaining to
+distribution of the software or the documentation without specific,
+written prior permission.
+
+Intel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR
+IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY
+OR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or
+representations regarding the use of, or the results of the use of,
+the software and documentation in terms of correctness, accuracy,
+reliability, currentness, or otherwise; and you rely on the software,
+documentation and results solely at your own risk.
+
+IN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,
+LOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES
+OF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM
+PAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:intel-osl-1993&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Intel OSL 1993&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Intel Open Source License 1993&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:HPND-Intel&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;3d2fdb163c2f4ee17f36cf376583f26f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Intel hereby grants you permission to copy, modify, and distribute this\nsoftware and its documentation.  Intel grants this permission provided\nthat the above copyright notice appears in all copies and that both the\ncopyright notice and this permission notice appear in supporting\ndocumentation.  In addition, Intel grants this permission provided that\nyou prominently mark as \&quot;not part of the original\&quot; any modifications\nmade to this software or documentation, and that the name of Intel\nCorporation not be used in advertising or publicity pertaining to\ndistribution of the software or the documentation without specific,\nwritten prior permission.\n\nIntel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR\nIMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY\nOR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or\nrepresentations regarding the use of, or the results of the use of,\nthe software and documentation in terms of correctness, accuracy,\nreliability, currentness, or otherwise; and you rely on the software,\ndocumentation and results solely at your own risk.\n\nIN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,\nLOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES\nOF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM\nPAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;intel-osl-1993&quot;,
+        &quot;_name&quot;: &quot;Intel Open Source License 1993&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://sourceware.org/git/?p=newlib-cygwin.git;a=blob;f=newlib/libc/machine/i960/memcpy.S;hb=HEAD&quot;
+        ],
+        &quot;_owner&quot;: &quot;Intel Corporation&quot;,
+        &quot;_shortName&quot;: &quot;Intel OSL 1993&quot;,
+        &quot;_spdxId&quot;: &quot;HPND-Intel&quot;,
+        &quot;_text&quot;: &quot;Intel hereby grants you permission to copy, modify, and distribute this\nsoftware and its documentation.  Intel grants this permission provided\nthat the above copyright notice appears in all copies and that both the\ncopyright notice and this permission notice appear in supporting\ndocumentation.  In addition, Intel grants this permission provided that\nyou prominently mark as \&quot;not part of the original\&quot; any modifications\nmade to this software or documentation, and that the name of Intel\nCorporation not be used in advertising or publicity pertaining to\ndistribution of the software or the documentation without specific,\nwritten prior permission.\n\nIntel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR\nIMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY\nOR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or\nrepresentations regarding the use of, or the results of the use of,\nthe software and documentation in terms of correctness, accuracy,\nreliability, currentness, or otherwise; and you rely on the software,\ndocumentation and results solely at your own risk.\n\nIN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,\nLOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES\nOF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM\nPAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/dfaf1245c8290835ec8d1f68783365d4">OrtLicenseCategorization:dfaf1245c8290835ec8d1f68783365d4</a> for <a href="/?license=SPDX:HPND-Intel"><span class="licensename"><span class="namespace">SPDX:</span>HPND-Intel</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HPND-Intel</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dfaf1245c8290835ec8d1f68783365d4">[<a href="/fact/OrtLicenseCategorization/dfaf1245c8290835ec8d1f68783365d4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dfaf1245c8290835ec8d1f68783365d4">[<a href="/fact/OrtLicenseCategorization/dfaf1245c8290835ec8d1f68783365d4">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HPND-Intel&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;dfaf1245c8290835ec8d1f68783365d4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HPND-Intel&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/2df8bbc375d24c637d7a36762a7b38eb">OrtLicenseCategorization:2df8bbc375d24c637d7a36762a7b38eb</a> for <a href="/?license=SPDX:LicenseRef-scancode-intel-osl-1993"><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-intel-osl-1993</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-intel-osl-1993</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2df8bbc375d24c637d7a36762a7b38eb">[<a href="/fact/OrtLicenseCategorization/2df8bbc375d24c637d7a36762a7b38eb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2df8bbc375d24c637d7a36762a7b38eb">[<a href="/fact/OrtLicenseCategorization/2df8bbc375d24c637d7a36762a7b38eb">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LicenseRef-scancode-intel-osl-1993&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;2df8bbc375d24c637d7a36762a7b38eb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LicenseRef-scancode-intel-osl-1993&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/4afb76916ea74bb4bfebbfa217810981">CavilLicenseChange:4afb76916ea74bb4bfebbfa217810981</a> for <a href="/?license=cavil:HPND-Intel"><span class="licensename"><span class="namespace">cavil:</span>HPND-Intel</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>HPND-Intel</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND-Intel</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:HPND-Intel&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND-Intel&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;4afb76916ea74bb4bfebbfa217810981&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;HPND-Intel&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:HPND-Intel&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/a5f1d8d1734a1a3df48f964a07136bc8">MetaeffektLicense:a5f1d8d1734a1a3df48f964a07136bc8</a> for <a href="/?license=metaeffekt:Permission Terms (Intel Corporation)"><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (Intel Corporation)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (Intel Corporation)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - Intel variant</span></li><li><span class="licensename">HPND-Intel</span></li><li><span class="licensename"><span class="namespace">scancode:</span>intel-osl-1993</span></li><li><span class="licensename">Permission</span></li><li><span class="licensename">Permission Terms (Intel Corporation)</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Permission Terms (Intel Corporation)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-Intel&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Permission&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Permission Terms (Intel Corporation)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND-Intel&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - Intel variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:intel-osl-1993&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;a5f1d8d1734a1a3df48f964a07136bc8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Permission Terms (Intel Corporation)&quot;,
+            &quot;HPND-Intel&quot;,
+            &quot;Historical Permission Notice and Disclaimer - Intel variant&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Permission Terms (Intel Corporation)&quot;,
+        &quot;_category&quot;: &quot;Permission&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:intel-osl-1993&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:HPND-Intel&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/a4354cc74badc8b30aa9f3b082de8525">FossLicense:a4354cc74badc8b30aa9f3b082de8525</a> for <a href="/?license=foss-license:Intel Open Source License 1993"><span class="licensename"><span class="namespace">foss-license:</span>Intel Open Source License 1993</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>Intel Open Source License 1993</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">hpnd-intel</span></li><li><span class="licensename"><span class="namespace">scancode:</span>intel-osl-1993</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:Intel Open Source License 1993&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:intel-osl-1993&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;hpnd-intel&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;a4354cc74badc8b30aa9f3b082de8525&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;hpnd-intel&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md&quot;
+        },
+        &quot;name&quot;: &quot;Intel Open Source License 1993&quot;,
+        &quot;scancode_key&quot;: &quot;intel-osl-1993&quot;,
+        &quot;spdxid&quot;: &quot;HPND-Intel&quot;,
+        &quot;text&quot;: &quot;Intel hereby grants you permission to copy, modify, and distribute this\nsoftware and its documentation.  Intel grants this permission provided\nthat the above copyright notice appears in all copies and that both the\ncopyright notice and this permission notice appear in supporting\ndocumentation.  In addition, Intel grants this permission provided that\nyou prominently mark as \&quot;not part of the original\&quot; any modifications\nmade to this software or documentation, and that the name of Intel\nCorporation not be used in advertising or publicity pertaining to\ndistribution of the software or the documentation without specific,\nwritten prior permission.\n\nIntel Corporation provides this AS IS, WITHOUT ANY WARRANTY, EXPRESS OR\nIMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY\nOR FITNESS FOR A PARTICULAR PURPOSE.  Intel makes no guarantee or\nrepresentations regarding the use of, or the results of the use of,\nthe software and documentation in terms of correctness, accuracy,\nreliability, currentness, or otherwise; and you rely on the software,\ndocumentation and results solely at your own risk.\n\nIN NO EVENT SHALL INTEL BE LIABLE FOR ANY LOSS OF USE, LOSS OF BUSINESS,\nLOSS OF PROFITS, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES\nOF ANY KIND.  IN NO EVENT SHALL INTEL&#39;S TOTAL LIABILITY EXCEED THE SUM\nPAID TO INTEL FOR THE PRODUCT LICENSED HEREUNDER.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/b5a779ac0a1133f6765a8af1dfa3176f">LicenseLynx:b5a779ac0a1133f6765a8af1dfa3176f</a> for <a href="/?license=spdx:HPND-Intel"><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Intel</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Historical Permission Notice and Disclaimer - Intel variant</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Intel Open Source License 1993</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Intel OSL 1993</span></li><li><span class="licensename"><span class="namespace">scancode:</span>intel-osl-1993</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-intel-osl-1993</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-Intel&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:Intel Open Source License 1993&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:Intel OSL 1993&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:intel-osl-1993&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:LicenseRef-scancode-intel-osl-1993&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Historical Permission Notice and Disclaimer - Intel variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;b5a779ac0a1133f6765a8af1dfa3176f&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:Intel Open Source License 1993&quot;,
+            &quot;scancode:Intel OSL 1993&quot;,
+            &quot;scancode:intel-osl-1993&quot;,
+            &quot;scancode:LicenseRef-scancode-intel-osl-1993&quot;,
+            &quot;spdx:Historical Permission Notice and Disclaimer - Intel variant&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:HPND-Intel&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

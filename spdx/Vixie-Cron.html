@@ -1,0 +1,490 @@
+<html><head><title>ldbcollector: spdx:Vixie-Cron</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:Vixie-Cron</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Vixie-Cron</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">LicenseRef-scancode-vixie-cron</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-vixie-cron</span></li><li><span class="licensename"><span class="namespace">spdx:</span>LicenseRef-scancode-vixie-cron</span></li><li><span class="licensename">Vixie Cron License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Vixie Cron License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Vixie Cron License</span></li><li><span class="licensename">Vixie-Cron</span></li><li><span class="licensename"><span class="namespace">scancode:</span>vixie-cron</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Vixie-Cron</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:706421bab8dc2a60edfb13493be9f17a">[<a href="/fact/ScancodeData/706421bab8dc2a60edfb13493be9f17a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7b8d495bbb90b4a609f5ff7fc6275cbc">[<a href="/fact/SPDXLicense/7b8d495bbb90b4a609f5ff7fc6275cbc">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ce1d1eb07d28a894c429e1f065e0c5d1">[<a href="/fact/OrtLicenseCategorization/ce1d1eb07d28a894c429e1f065e0c5d1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ce1d1eb07d28a894c429e1f065e0c5d1">[<a href="/fact/OrtLicenseCategorization/ce1d1eb07d28a894c429e1f065e0c5d1">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/vixie/cron/tree/545b3f5246824a9cda5905eeb7cf019c95e66995" target="_blank">https://github.com/vixie/cron/tree/545b3f5246824a9cda5905eeb7cf019c95e66995</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1988,1990,1993 by Paul Vixie
+All rights reserved
+
+Distribute freely, except: don&#39;t remove my name from the source or documentation (don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your possible bugs), don&#39;t alter or remove this notice. May be sold if buildable source is provided to buyer. No warrantee of any kind, express or implied, is included with this software; use at your own risk, responsibility for damages (if any) to anyone resulting from the use of this software rests entirely with the user.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+	&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; Copyright 1988,1990,1993 by Paul Vixie&lt;br /&gt;
+
+	All rights reserved&lt;/span&gt;&lt;/var&gt;
+
+	&lt;p&gt;Distribute freely, except: don&amp;apos;t remove my name from the source or
+	documentation (don&amp;apos;t take credit for my work), mark your changes (don&amp;apos;t
+	get me blamed for your possible bugs), don&amp;apos;t alter or remove this
+	notice.  May be sold if buildable source is provided to buyer.  No
+	warrantee of any kind, express or implied, is included with this
+	software; use at your own risk, responsibility for damages (if any) to
+	anyone resulting from the use of this software rests entirely with the
+	user.&lt;/p&gt;
+
+	</pre></details></li><li><details><summary>Text:</summary><pre>Distribute freely, except: don&#39;t remove my name from the source or documentation
+(don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your
+possible bugs), don&#39;t alter or remove this notice. May be sold if buildable
+source is provided to buyer. No warrantee of any kind, express or implied, is
+included with this software; use at your own risk, responsibility for damages
+(if any) to anyone resulting from the use of this software rests entirely with
+the user.
+
+Send bug reports, bug fixes, enhancements, requests, flames, etc., and I&#39;ll try
+to keep a version up to date. I can be reached as follows: 
+
+Paul Vixie
+&lt;paul@vix.com&gt;
+uunet!decwrl!vixie!paul
+
+Vixie Cron V3.0 December 27, 1993</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/7b8d495bbb90b4a609f5ff7fc6275cbc">SPDXLicense:7b8d495bbb90b4a609f5ff7fc6275cbc</a> for <a href="/?license=spdx:Vixie-Cron"><span class="licensename"><span class="namespace">spdx:</span>Vixie-Cron</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Vixie-Cron</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Vixie Cron License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7b8d495bbb90b4a609f5ff7fc6275cbc">[<a href="/fact/SPDXLicense/7b8d495bbb90b4a609f5ff7fc6275cbc">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/vixie/cron/tree/545b3f5246824a9cda5905eeb7cf019c95e66995" target="_blank">https://github.com/vixie/cron/tree/545b3f5246824a9cda5905eeb7cf019c95e66995</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1988,1990,1993 by Paul Vixie
+All rights reserved
+
+Distribute freely, except: don&#39;t remove my name from the source or documentation (don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your possible bugs), don&#39;t alter or remove this notice. May be sold if buildable source is provided to buyer. No warrantee of any kind, express or implied, is included with this software; use at your own risk, responsibility for damages (if any) to anyone resulting from the use of this software rests entirely with the user.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+	&lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; Copyright 1988,1990,1993 by Paul Vixie&lt;br /&gt;
+
+	All rights reserved&lt;/span&gt;&lt;/var&gt;
+
+	&lt;p&gt;Distribute freely, except: don&amp;apos;t remove my name from the source or
+	documentation (don&amp;apos;t take credit for my work), mark your changes (don&amp;apos;t
+	get me blamed for your possible bugs), don&amp;apos;t alter or remove this
+	notice.  May be sold if buildable source is provided to buyer.  No
+	warrantee of any kind, express or implied, is included with this
+	software; use at your own risk, responsibility for damages (if any) to
+	anyone resulting from the use of this software rests entirely with the
+	user.&lt;/p&gt;
+
+	</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Vixie-Cron&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Vixie Cron License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;7b8d495bbb90b4a609f5ff7fc6275cbc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 1988,1990,1993 by Paul Vixie\nAll rights reserved\n\nDistribute freely, except: don&#39;t remove my name from the source or documentation (don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your possible bugs), don&#39;t alter or remove this notice. May be sold if buildable source is provided to buyer. No warrantee of any kind, express or implied, is included with this software; use at your own risk, responsibility for damages (if any) to anyone resulting from the use of this software rests entirely with the user.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; Copyright 1988,1990,1993 by Paul Vixie&lt;br /&gt;\n\n\tAll rights reserved&lt;/span&gt;&lt;/var&gt;\n\n\t&lt;p&gt;Distribute freely, except: don&amp;apos;t remove my name from the source or\n\tdocumentation (don&amp;apos;t take credit for my work), mark your changes (don&amp;apos;t\n\tget me blamed for your possible bugs), don&amp;apos;t alter or remove this\n\tnotice.  May be sold if buildable source is provided to buyer.  No\n\twarrantee of any kind, express or implied, is included with this\n\tsoftware; use at your own risk, responsibility for damages (if any) to\n\tanyone resulting from the use of this software rests entirely with the\n\tuser.&lt;/p&gt;\n\n\t&quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/vixie/cron/tree/545b3f5246824a9cda5905eeb7cf019c95e66995&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/vixie/cron/tree/545b3f5246824a9cda5905eeb7cf019c95e66995&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:01:56Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/vixie/cron/tree/545b3f5246824a9cda5905eeb7cf019c95e66995&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Vixie-Cron&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 1988,1990,1993 by Paul Vixie\nAll rights reserved\n\nDistribute freely, except: don&#39;t remove my name from the source or documentation (don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your possible bugs), don&#39;t alter or remove this notice. May be sold if buildable source is provided to buyer. No warrantee of any kind, express or implied, is included with this software; use at your own risk, responsibility for damages (if any) to anyone resulting from the use of this software rests entirely with the user.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; Copyright 1988,1990,1993 by Paul Vixie&lt;br /&gt;\n\n\tAll rights reserved&lt;/span&gt;&lt;/var&gt;\n\n\t&lt;p&gt;Distribute freely, except: don&amp;apos;t remove my name from the source or\n\tdocumentation (don&amp;apos;t take credit for my work), mark your changes (don&amp;apos;t\n\tget me blamed for your possible bugs), don&amp;apos;t alter or remove this\n\tnotice.  May be sold if buildable source is provided to buyer.  No\n\twarrantee of any kind, express or implied, is included with this\n\tsoftware; use at your own risk, responsibility for damages (if any) to\n\tanyone resulting from the use of this software rests entirely with the\n\tuser.&lt;/p&gt;\n\n\t&quot;,
+        &quot;name&quot;: &quot;Vixie Cron License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/vixie/cron/tree/545b3f5246824a9cda5905eeb7cf019c95e66995&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 1988,1990,1993 by Paul Vixie All rights reserved\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nDistribute freely, except: don&#39;t remove my name from the source or documentation (don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your possible bugs), don&#39;t alter or remove this notice. May be sold if buildable source is provided to buyer. No warrantee of any kind, express or implied, is included with this software; use at your own risk, responsibility for damages (if any) to anyone resulting from the use of this software rests entirely with the user.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/706421bab8dc2a60edfb13493be9f17a">ScancodeData:706421bab8dc2a60edfb13493be9f17a</a> for <a href="/?license=scancode:vixie-cron"><span class="licensename"><span class="namespace">scancode:</span>vixie-cron</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>vixie-cron</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LicenseRef-scancode-vixie-cron</span></li><li><span class="licensename">Vixie Cron License</span></li><li><span class="licensename">Vixie Cron License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:706421bab8dc2a60edfb13493be9f17a">[<a href="/fact/ScancodeData/706421bab8dc2a60edfb13493be9f17a">ScancodeData</a>]</span>)</span></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Distribute freely, except: don&#39;t remove my name from the source or documentation
+(don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your
+possible bugs), don&#39;t alter or remove this notice. May be sold if buildable
+source is provided to buyer. No warrantee of any kind, express or implied, is
+included with this software; use at your own risk, responsibility for damages
+(if any) to anyone resulting from the use of this software rests entirely with
+the user.
+
+Send bug reports, bug fixes, enhancements, requests, flames, etc., and I&#39;ll try
+to keep a version up to date. I can be reached as follows: 
+
+Paul Vixie
+&lt;paul@vix.com&gt;
+uunet!decwrl!vixie!paul
+
+Vixie Cron V3.0 December 27, 1993</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:vixie-cron&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Vixie Cron License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Vixie Cron License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:LicenseRef-scancode-vixie-cron&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;706421bab8dc2a60edfb13493be9f17a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Distribute freely, except: don&#39;t remove my name from the source or documentation\n(don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your\npossible bugs), don&#39;t alter or remove this notice. May be sold if buildable\nsource is provided to buyer. No warrantee of any kind, express or implied, is\nincluded with this software; use at your own risk, responsibility for damages\n(if any) to anyone resulting from the use of this software rests entirely with\nthe user.\n\nSend bug reports, bug fixes, enhancements, requests, flames, etc., and I&#39;ll try\nto keep a version up to date. I can be reached as follows: \n\nPaul Vixie\n&lt;paul@vix.com&gt;\nuunet!decwrl!vixie!paul\n\nVixie Cron V3.0 December 27, 1993&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;vixie-cron&quot;,
+        &quot;_name&quot;: &quot;Vixie Cron License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Unspecified&quot;,
+        &quot;_shortName&quot;: &quot;Vixie Cron License&quot;,
+        &quot;_spdxId&quot;: &quot;LicenseRef-scancode-vixie-cron&quot;,
+        &quot;_text&quot;: &quot;Distribute freely, except: don&#39;t remove my name from the source or documentation\n(don&#39;t take credit for my work), mark your changes (don&#39;t get me blamed for your\npossible bugs), don&#39;t alter or remove this notice. May be sold if buildable\nsource is provided to buyer. No warrantee of any kind, express or implied, is\nincluded with this software; use at your own risk, responsibility for damages\n(if any) to anyone resulting from the use of this software rests entirely with\nthe user.\n\nSend bug reports, bug fixes, enhancements, requests, flames, etc., and I&#39;ll try\nto keep a version up to date. I can be reached as follows: \n\nPaul Vixie\n&lt;paul@vix.com&gt;\nuunet!decwrl!vixie!paul\n\nVixie Cron V3.0 December 27, 1993&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/ce1d1eb07d28a894c429e1f065e0c5d1">OrtLicenseCategorization:ce1d1eb07d28a894c429e1f065e0c5d1</a> for <a href="/?license=SPDX:LicenseRef-scancode-vixie-cron"><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-vixie-cron</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-vixie-cron</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ce1d1eb07d28a894c429e1f065e0c5d1">[<a href="/fact/OrtLicenseCategorization/ce1d1eb07d28a894c429e1f065e0c5d1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ce1d1eb07d28a894c429e1f065e0c5d1">[<a href="/fact/OrtLicenseCategorization/ce1d1eb07d28a894c429e1f065e0c5d1">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LicenseRef-scancode-vixie-cron&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;ce1d1eb07d28a894c429e1f065e0c5d1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LicenseRef-scancode-vixie-cron&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/215b268726299a2cb121d17d5df8d8f0">MetaeffektLicense:215b268726299a2cb121d17d5df8d8f0</a> for <a href="/?license=metaeffekt:Vixie Cron License"><span class="licensename"><span class="namespace">metaeffekt:</span>Vixie Cron License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Vixie Cron License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Vixie-Cron</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Vixie Cron License</span></li><li><span class="licensename">Vixie Cron License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>vixie-cron</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Vixie Cron License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Vixie-Cron&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Vixie Cron License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Vixie Cron License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:vixie-cron&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;215b268726299a2cb121d17d5df8d8f0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Vixie Cron License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Vixie Cron License&quot;,
+        &quot;_category&quot;: &quot;Vixie Cron License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:vixie-cron&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Vixie-Cron&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/030cb90f70478e565d01148fab7fd8c0">LicenseLynx:030cb90f70478e565d01148fab7fd8c0</a> for <a href="/?license=scancode:vixie-cron"><span class="licensename"><span class="namespace">scancode:</span>vixie-cron</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>vixie-cron</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-vixie-cron</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Vixie Cron License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:vixie-cron&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:LicenseRef-scancode-vixie-cron&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:Vixie Cron License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;030cb90f70478e565d01148fab7fd8c0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:LicenseRef-scancode-vixie-cron&quot;,
+            &quot;scancode:Vixie Cron License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;scancode:vixie-cron&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

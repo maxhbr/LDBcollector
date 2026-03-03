@@ -1,0 +1,691 @@
+<html><head><title>ldbcollector: spdx:Ruby-pty</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:Ruby-pty</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby pty extension license</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Ruby PTY Extension License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Ruby pty extension license</span></li><li><span class="licensename">Ruby-pty</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Ruby-pty</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Ruby-pty</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ruby-pty</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:2fd53e17e4ac99e679214caefa19e154">[<a href="/fact/ScancodeData/2fd53e17e4ac99e679214caefa19e154">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a5e6ad076dcea564cec2ffc4ef220589">[<a href="/fact/SPDXLicense/a5e6ad076dcea564cec2ffc4ef220589">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:c748f7e0b7d14bfc69565b31d5555edb">[<a href="/fact/FedoraEntry/c748f7e0b7d14bfc69565b31d5555edb">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b483c9a40a73605c183941344a8c4447">[<a href="/fact/OrtLicenseCategorization/b483c9a40a73605c183941344a8c4447">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b483c9a40a73605c183941344a8c4447">[<a href="/fact/OrtLicenseCategorization/b483c9a40a73605c183941344a8c4447">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>There is a Japanese translation of this license included with some instances of use.<span class="provided-by">(provided by: <span title="SPDXLicense:a5e6ad076dcea564cec2ffc4ef220589">[<a href="/fact/SPDXLicense/a5e6ad076dcea564cec2ffc4ef220589">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786" target="_blank">https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786</a></li><li><a href="https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0" target="_blank">https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0</a></li><li><a href="https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204" target="_blank">https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>(c) Copyright 1998 by Akinori Ito.
+
+This software may be redistributed freely for this purpose, in full
+or in part, provided that this entire copyright notice is included
+on any copies of this software and applications and derivations thereof.
+
+This software is provided on an &quot;as is&quot; basis, without warranty of any
+kind, either expressed or implied, as to any matter including, but not
+limited to warranty of fitness of purpose, or merchantability, or
+results obtained from use of this software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+                &lt;p&gt;
+                        (c) Copyright 1998 by Akinori Ito.
+                &lt;/p&gt;
+
+        &lt;/span&gt;&lt;/div&gt;
+        &lt;p&gt;
+                This software may be redistributed freely for this
+                purpose, in full or in part, provided that this entire
+                copyright notice is included on any copies of this
+                software and applications and derivations thereof.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                This software is provided on an &amp;quot;as is&amp;quot; basis, without warranty
+                of any kind, either expressed or implied, as to any matter
+                including, but not limited to warranty of fitness of purpose, or
+                merchantability, or results obtained from use of this software.
+        &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>This software may be redistributed freely for this purpose, in full
+or in part, provided that this entire copyright notice is included
+on any copies of this software and applications and derivations thereof.
+
+This software is provided on an &quot;as is&quot; basis, without warranty of any
+kind, either expressed or implied, as to any matter including, but not
+limited to warranty of fitness of purpose, or merchantability, or
+results obtained from use of this software.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/a5e6ad076dcea564cec2ffc4ef220589">SPDXLicense:a5e6ad076dcea564cec2ffc4ef220589</a> for <a href="/?license=spdx:Ruby-pty"><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby pty extension license</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a5e6ad076dcea564cec2ffc4ef220589">[<a href="/fact/SPDXLicense/a5e6ad076dcea564cec2ffc4ef220589">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>There is a Japanese translation of this license included with some instances of use.<span class="provided-by">(provided by: <span title="SPDXLicense:a5e6ad076dcea564cec2ffc4ef220589">[<a href="/fact/SPDXLicense/a5e6ad076dcea564cec2ffc4ef220589">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786" target="_blank">https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786</a></li><li><a href="https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0" target="_blank">https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0</a></li><li><a href="https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204" target="_blank">https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>(c) Copyright 1998 by Akinori Ito.
+
+This software may be redistributed freely for this purpose, in full
+or in part, provided that this entire copyright notice is included
+on any copies of this software and applications and derivations thereof.
+
+This software is provided on an &quot;as is&quot; basis, without warranty of any
+kind, either expressed or implied, as to any matter including, but not
+limited to warranty of fitness of purpose, or merchantability, or
+results obtained from use of this software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+                &lt;p&gt;
+                        (c) Copyright 1998 by Akinori Ito.
+                &lt;/p&gt;
+
+        &lt;/span&gt;&lt;/div&gt;
+        &lt;p&gt;
+                This software may be redistributed freely for this
+                purpose, in full or in part, provided that this entire
+                copyright notice is included on any copies of this
+                software and applications and derivations thereof.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                This software is provided on an &amp;quot;as is&amp;quot; basis, without warranty
+                of any kind, either expressed or implied, as to any matter
+                including, but not limited to warranty of fitness of purpose, or
+                merchantability, or results obtained from use of this software.
+        &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Ruby-pty&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby pty extension license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;a5e6ad076dcea564cec2ffc4ef220589&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;There is a Japanese translation of this license included with some instances of use.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;(c) Copyright 1998 by Akinori Ito.\n\nThis software may be redistributed freely for this purpose, in full\nor in part, provided that this entire copyright notice is included\non any copies of this software and applications and derivations thereof.\n\nThis software is provided on an \&quot;as is\&quot; basis, without warranty of any\nkind, either expressed or implied, as to any matter including, but not\nlimited to warranty of fitness of purpose, or merchantability, or\nresults obtained from use of this software.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n        &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n                &lt;p&gt;\n                        (c) Copyright 1998 by Akinori Ito.\n                &lt;/p&gt;\n\n        &lt;/span&gt;&lt;/div&gt;\n        &lt;p&gt;\n                This software may be redistributed freely for this\n                purpose, in full or in part, provided that this entire\n                copyright notice is included on any copies of this\n                software and applications and derivations thereof.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                This software is provided on an &amp;quot;as is&amp;quot; basis, without warranty\n                of any kind, either expressed or implied, as to any matter\n                including, but not limited to warranty of fitness of purpose, or\n                merchantability, or results obtained from use of this software.\n        &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:04:35Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:04:36Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:04:36Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;There is a Japanese translation of this license included with some instances of use.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:Ruby-pty&quot;,
+        &quot;licenseText&quot;: &quot;(c) Copyright 1998 by Akinori Ito.\n\nThis software may be redistributed freely for this purpose, in full\nor in part, provided that this entire copyright notice is included\non any copies of this software and applications and derivations thereof.\n\nThis software is provided on an \&quot;as is\&quot; basis, without warranty of any\nkind, either expressed or implied, as to any matter including, but not\nlimited to warranty of fitness of purpose, or merchantability, or\nresults obtained from use of this software.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n        &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n                &lt;p&gt;\n                        (c) Copyright 1998 by Akinori Ito.\n                &lt;/p&gt;\n\n        &lt;/span&gt;&lt;/div&gt;\n        &lt;p&gt;\n                This software may be redistributed freely for this\n                purpose, in full or in part, provided that this entire\n                copyright notice is included on any copies of this\n                software and applications and derivations thereof.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                This software is provided on an &amp;quot;as is&amp;quot; basis, without warranty\n                of any kind, either expressed or implied, as to any matter\n                including, but not limited to warranty of fitness of purpose, or\n                merchantability, or results obtained from use of this software.\n        &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Ruby pty extension license&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786&quot;,
+            &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204&quot;,
+            &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;(c) Copyright 1998 by Akinori Ito.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nThis software may be redistributed freely for this purpose, in full or in part, provided that this entire copyright notice is included on any copies of this software and applications and derivations thereof.\n\nThis software is provided on an \&quot;as is\&quot; basis, without warranty of any kind, either expressed or implied, as to any matter including, but not limited to warranty of fitness of purpose, or merchantability, or results obtained from use of this software.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/c748f7e0b7d14bfc69565b31d5555edb">FedoraEntry:c748f7e0b7d14bfc69565b31d5555edb</a> for <a href="/?license=Fedora:Ruby-pty"><span class="licensename"><span class="namespace">Fedora:</span>Ruby-pty</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Ruby-pty</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:c748f7e0b7d14bfc69565b31d5555edb">[<a href="/fact/FedoraEntry/c748f7e0b7d14bfc69565b31d5555edb">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Ruby-pty&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Ruby-pty&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;c748f7e0b7d14bfc69565b31d5555edb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Ruby-pty&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Ruby-pty&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/2fd53e17e4ac99e679214caefa19e154">ScancodeData:2fd53e17e4ac99e679214caefa19e154</a> for <a href="/?license=scancode:ruby-pty"><span class="licensename"><span class="namespace">scancode:</span>ruby-pty</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ruby-pty</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby pty extension license</span></li><li><span class="licensename">Ruby pty extension license</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:2fd53e17e4ac99e679214caefa19e154">[<a href="/fact/ScancodeData/2fd53e17e4ac99e679214caefa19e154">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786" target="_blank">https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786</a></li><li><a href="https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204" target="_blank">https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204</a></li><li><a href="https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0" target="_blank">https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software may be redistributed freely for this purpose, in full
+or in part, provided that this entire copyright notice is included
+on any copies of this software and applications and derivations thereof.
+
+This software is provided on an &quot;as is&quot; basis, without warranty of any
+kind, either expressed or implied, as to any matter including, but not
+limited to warranty of fitness of purpose, or merchantability, or
+results obtained from use of this software.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:ruby-pty&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby pty extension license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Ruby pty extension license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Ruby-pty&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;2fd53e17e4ac99e679214caefa19e154&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This software may be redistributed freely for this purpose, in full\nor in part, provided that this entire copyright notice is included\non any copies of this software and applications and derivations thereof.\n\nThis software is provided on an \&quot;as is\&quot; basis, without warranty of any\nkind, either expressed or implied, as to any matter including, but not\nlimited to warranty of fitness of purpose, or merchantability, or\nresults obtained from use of this software.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;ruby-pty&quot;,
+        &quot;_name&quot;: &quot;Ruby pty extension license&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/ruby/ruby/blob/9f6deaa6888a423720b4b127b5314f0ad26cc2e6/ext/pty/pty.c#L775-L786&quot;,
+            &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-ef5fa30838d6d0cecad9e675cc50b24628cfe2cb277c346053fafcc36c91c204&quot;,
+            &quot;https://github.com/ruby/ruby/commit/0a64817fb80016030c03518fb9459f63c11605ea#diff-fedf217c1ce44bda01f0a678d3ff8b198bed478754d699c527a698ad933979a0&quot;
+        ],
+        &quot;_owner&quot;: &quot;Ruby&quot;,
+        &quot;_shortName&quot;: &quot;Ruby pty extension license&quot;,
+        &quot;_spdxId&quot;: &quot;Ruby-pty&quot;,
+        &quot;_text&quot;: &quot;This software may be redistributed freely for this purpose, in full\nor in part, provided that this entire copyright notice is included\non any copies of this software and applications and derivations thereof.\n\nThis software is provided on an \&quot;as is\&quot; basis, without warranty of any\nkind, either expressed or implied, as to any matter including, but not\nlimited to warranty of fitness of purpose, or merchantability, or\nresults obtained from use of this software.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/b483c9a40a73605c183941344a8c4447">OrtLicenseCategorization:b483c9a40a73605c183941344a8c4447</a> for <a href="/?license=SPDX:Ruby-pty"><span class="licensename"><span class="namespace">SPDX:</span>Ruby-pty</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Ruby-pty</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b483c9a40a73605c183941344a8c4447">[<a href="/fact/OrtLicenseCategorization/b483c9a40a73605c183941344a8c4447">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b483c9a40a73605c183941344a8c4447">[<a href="/fact/OrtLicenseCategorization/b483c9a40a73605c183941344a8c4447">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Ruby-pty&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;b483c9a40a73605c183941344a8c4447&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Ruby-pty&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/d48cdbbc0d432f97666b47d02658274d">CavilLicenseChange:d48cdbbc0d432f97666b47d02658274d</a> for <a href="/?license=cavil:Ruby-pty"><span class="licensename"><span class="namespace">cavil:</span>Ruby-pty</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Ruby-pty</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby-pty</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Ruby-pty&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby-pty&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;d48cdbbc0d432f97666b47d02658274d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Ruby-pty&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Ruby-pty&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/1c795412e7ad1807ac1291cee09e6112">MetaeffektLicense:1c795412e7ad1807ac1291cee09e6112</a> for <a href="/?license=metaeffekt:Ruby PTY Extension License"><span class="licensename"><span class="namespace">metaeffekt:</span>Ruby PTY Extension License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Ruby PTY Extension License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby pty extension license</span></li><li><span class="licensename">Ruby PTY Extension License</span></li><li><span class="licensename">Ruby-PTY</span></li><li><span class="licensename">Ruby-pty</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ruby-pty</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Ruby PTY Extension License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Ruby-pty&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby-PTY&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Ruby-pty&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Ruby pty extension license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Ruby PTY Extension License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ruby-pty&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;1c795412e7ad1807ac1291cee09e6112&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Ruby-pty&quot;,
+            &quot;Ruby pty extension license&quot;,
+            &quot;Ruby PTY Extension License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Ruby PTY Extension License&quot;,
+        &quot;_category&quot;: &quot;Ruby-PTY&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:ruby-pty&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Ruby-pty&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/5d7fef2a276ccd30c1a725f1e13e71ce">LicenseLynx:5d7fef2a276ccd30c1a725f1e13e71ce</a> for <a href="/?license=spdx:Ruby-pty"><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby-pty</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby pty extension license</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ruby-pty</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Ruby-pty&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:ruby-pty&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Ruby pty extension license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;5d7fef2a276ccd30c1a725f1e13e71ce&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:ruby-pty&quot;,
+            &quot;spdx:Ruby pty extension license&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:Ruby-pty&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

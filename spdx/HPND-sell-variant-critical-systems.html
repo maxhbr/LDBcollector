@@ -1,0 +1,347 @@
+<html><head><title>ldbcollector: spdx:HPND-sell-variant-critical-systems</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:HPND-sell-variant-critical-systems</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-critical-systems</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND - sell variant with safety critical systems clause</span></li><li><span class="licensename">HPND-sell-variant-critical-systems</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-critical-systems</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4ab9d173ed996f784511825c00b719ba">[<a href="/fact/SPDXLicense/4ab9d173ed996f784511825c00b719ba">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is a variant of HPND-sell-variant (https://spdx.org/licenses/HPND-sell-variant.html). It includes an informational tail about the use of the software in safety critical systems.<span class="provided-by">(provided by: <span title="SPDXLicense:4ab9d173ed996f784511825c00b719ba">[<a href="/fact/SPDXLicense/4ab9d173ed996f784511825c00b719ba">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo/-/blob/68a5b6d98ae34749cca889f4373b4043d00bfe6a/src/voodoo_dga.c#L12-33" target="_blank">https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo/-/blob/68a5b6d98ae34749cca889f4373b4043d00bfe6a/src/voodoo_dga.c#L12-33</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Alan Cox &lt;alan@redhat.com&gt;
+Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided that
+the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation, and that the names of Red Hat, Alan Cox and Henrik Harmsen
+not be used in advertising or publicity pertaining to distribution of the
+software without specific, written prior permission.  Th authors make no
+representations about the suitability of this software for any purpose.
+It is provided &quot;as is&quot; without express or implied warranty.
+THE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+EVENT SHALL RICHARD HECKER BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+THIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF
+ANY KIND OR FORM.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;&amp;lt;copyright notice&amp;gt;&lt;/p&gt;
+
+      &lt;/span&gt;&lt;/div&gt;
+
+      &lt;p&gt;
+         Permission to use, copy, modify, distribute, and sell this software
+         and its documentation for any purpose is hereby granted without fee,
+         provided that the above copyright notice  appear in all copies and
+         that both that copyright notice and this permission notice appear in
+         supporting documentation, and that the
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern name|names&quot;&gt; name&lt;/span&gt;&lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; of&lt;/var&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .*&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/span&gt;&lt;/var&gt;
+         not be used in advertising or publicity pertaining to distribution of
+         the software without specific, written prior permission.
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern The|Th&quot;&gt; The&lt;/span&gt;&lt;/var&gt;
+         authors make no representations about the suitability of this software
+         for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied
+         warranty.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+         THE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+         INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+         EVENT SHALL
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .*&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/span&gt;&lt;/var&gt;
+         BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY
+         DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+         IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+         THIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF ANY
+         KIND OR FORM.
+      &lt;/p&gt;
+
+   </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/4ab9d173ed996f784511825c00b719ba">SPDXLicense:4ab9d173ed996f784511825c00b719ba</a> for <a href="/?license=spdx:HPND-sell-variant-critical-systems"><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-critical-systems</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-critical-systems</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND - sell variant with safety critical systems clause</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4ab9d173ed996f784511825c00b719ba">[<a href="/fact/SPDXLicense/4ab9d173ed996f784511825c00b719ba">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is a variant of HPND-sell-variant (https://spdx.org/licenses/HPND-sell-variant.html). It includes an informational tail about the use of the software in safety critical systems.<span class="provided-by">(provided by: <span title="SPDXLicense:4ab9d173ed996f784511825c00b719ba">[<a href="/fact/SPDXLicense/4ab9d173ed996f784511825c00b719ba">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo/-/blob/68a5b6d98ae34749cca889f4373b4043d00bfe6a/src/voodoo_dga.c#L12-33" target="_blank">https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo/-/blob/68a5b6d98ae34749cca889f4373b4043d00bfe6a/src/voodoo_dga.c#L12-33</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Alan Cox &lt;alan@redhat.com&gt;
+Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided that
+the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation, and that the names of Red Hat, Alan Cox and Henrik Harmsen
+not be used in advertising or publicity pertaining to distribution of the
+software without specific, written prior permission.  Th authors make no
+representations about the suitability of this software for any purpose.
+It is provided &quot;as is&quot; without express or implied warranty.
+THE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+EVENT SHALL RICHARD HECKER BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+THIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF
+ANY KIND OR FORM.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;&amp;lt;copyright notice&amp;gt;&lt;/p&gt;
+
+      &lt;/span&gt;&lt;/div&gt;
+
+      &lt;p&gt;
+         Permission to use, copy, modify, distribute, and sell this software
+         and its documentation for any purpose is hereby granted without fee,
+         provided that the above copyright notice  appear in all copies and
+         that both that copyright notice and this permission notice appear in
+         supporting documentation, and that the
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern name|names&quot;&gt; name&lt;/span&gt;&lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; of&lt;/var&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .*&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/span&gt;&lt;/var&gt;
+         not be used in advertising or publicity pertaining to distribution of
+         the software without specific, written prior permission.
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern The|Th&quot;&gt; The&lt;/span&gt;&lt;/var&gt;
+         authors make no representations about the suitability of this software
+         for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied
+         warranty.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+         THE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+         INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+         EVENT SHALL
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .*&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/span&gt;&lt;/var&gt;
+         BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY
+         DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+         IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+         THIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF ANY
+         KIND OR FORM.
+      &lt;/p&gt;
+
+   </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-sell-variant-critical-systems&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND - sell variant with safety critical systems clause&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;4ab9d173ed996f784511825c00b719ba&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is a variant of HPND-sell-variant (https://spdx.org/licenses/HPND-sell-variant.html). It includes an informational tail about the use of the software in safety critical systems.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Alan Cox &lt;alan@redhat.com&gt;\nPermission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation, and that the names of Red Hat, Alan Cox and Henrik Harmsen\nnot be used in advertising or publicity pertaining to distribution of the\nsoftware without specific, written prior permission.  Th authors make no\nrepresentations about the suitability of this software for any purpose.\nIt is provided \&quot;as is\&quot; without express or implied warranty.\nTHE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO\nEVENT SHALL RICHARD HECKER BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\nPERFORMANCE OF THIS SOFTWARE.\n\nTHIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF\nANY KIND OR FORM.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;&amp;lt;copyright notice&amp;gt;&lt;/p&gt;\n\n      &lt;/span&gt;&lt;/div&gt;\n\n      &lt;p&gt;\n         Permission to use, copy, modify, distribute, and sell this software\n         and its documentation for any purpose is hereby granted without fee,\n         provided that the above copyright notice  appear in all copies and\n         that both that copyright notice and this permission notice appear in\n         supporting documentation, and that the\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern name|names\&quot;&gt; name&lt;/span&gt;&lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; of&lt;/var&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .*\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/span&gt;&lt;/var&gt;\n         not be used in advertising or publicity pertaining to distribution of\n         the software without specific, written prior permission.\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern The|Th\&quot;&gt; The&lt;/span&gt;&lt;/var&gt;\n         authors make no representations about the suitability of this software\n         for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied\n         warranty.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n         THE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\n         INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO\n         EVENT SHALL\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .*\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/span&gt;&lt;/var&gt;\n         BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY\n         DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER\n         IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING\n         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n         THIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF ANY\n         KIND OR FORM.\n      &lt;/p&gt;\n\n   &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo/-/blob/68a5b6d98ae34749cca889f4373b4043d00bfe6a/src/voodoo_dga.c#L12-33&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo/-/blob/68a5b6d98ae34749cca889f4373b4043d00bfe6a/src/voodoo_dga.c#L12-33&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:04:36Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo/-/blob/68a5b6d98ae34749cca889f4373b4043d00bfe6a/src/voodoo_dga.c#L12-33&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is a variant of HPND-sell-variant (https://spdx.org/licenses/HPND-sell-variant.html). It includes an informational tail about the use of the software in safety critical systems.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:HPND-sell-variant-critical-systems&quot;,
+        &quot;licenseText&quot;: &quot;Alan Cox &lt;alan@redhat.com&gt;\nPermission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that\nthe above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation, and that the names of Red Hat, Alan Cox and Henrik Harmsen\nnot be used in advertising or publicity pertaining to distribution of the\nsoftware without specific, written prior permission.  Th authors make no\nrepresentations about the suitability of this software for any purpose.\nIt is provided \&quot;as is\&quot; without express or implied warranty.\nTHE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO\nEVENT SHALL RICHARD HECKER BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\nPERFORMANCE OF THIS SOFTWARE.\n\nTHIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF\nANY KIND OR FORM.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;&amp;lt;copyright notice&amp;gt;&lt;/p&gt;\n\n      &lt;/span&gt;&lt;/div&gt;\n\n      &lt;p&gt;\n         Permission to use, copy, modify, distribute, and sell this software\n         and its documentation for any purpose is hereby granted without fee,\n         provided that the above copyright notice  appear in all copies and\n         that both that copyright notice and this permission notice appear in\n         supporting documentation, and that the\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern name|names\&quot;&gt; name&lt;/span&gt;&lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; of&lt;/var&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .*\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/span&gt;&lt;/var&gt;\n         not be used in advertising or publicity pertaining to distribution of\n         the software without specific, written prior permission.\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern The|Th\&quot;&gt; The&lt;/span&gt;&lt;/var&gt;\n         authors make no representations about the suitability of this software\n         for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied\n         warranty.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n         THE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\n         INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO\n         EVENT SHALL\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .*\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/span&gt;&lt;/var&gt;\n         BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY\n         DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER\n         IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING\n         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n         THIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF ANY\n         KIND OR FORM.\n      &lt;/p&gt;\n\n   &quot;,
+        &quot;name&quot;: &quot;HPND - sell variant with safety critical systems clause&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo/-/blob/68a5b6d98ae34749cca889f4373b4043d00bfe6a/src/voodoo_dga.c#L12-33&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;&lt;copyright notice&gt;  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation, and that the &lt;&lt;var;name=\&quot;name\&quot;;original=\&quot;name\&quot;;match=\&quot;name|names\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; of&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyrightHolder0\&quot;;original=\&quot;&lt;copyright holder&gt;\&quot;;match=\&quot;.*\&quot;&gt;&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. &lt;&lt;var;name=\&quot;canonicalTypo0\&quot;;original=\&quot;The\&quot;;match=\&quot;The|Th\&quot;&gt;&gt; authors make no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n\nTHE AUTHORS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL &lt;&lt;var;name=\&quot;copyrightHolder3\&quot;;original=\&quot;&lt;copyright holder&gt;\&quot;;match=\&quot;.*\&quot;&gt;&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n\nTHIS SOFTWARE IS NOT DESIGNED FOR USE IN SAFETY CRITICAL SYSTEMS OF ANY KIND OR FORM.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li></ul></body></html>

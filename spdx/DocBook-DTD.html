@@ -1,0 +1,681 @@
+<html><head><title>ldbcollector: spdx:DocBook-DTD</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:DocBook-DTD</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook DTD License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>DocBook DTD License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>DocBook DTD License</span></li><li><span class="licensename">DocBook-DTD</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>DocBook-DTD</span></li><li><span class="licensename"><span class="namespace">scancode:</span>docbook-dtd</span></li><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip</span></li><li><span class="licensename">DocBook DTD</span></li><li><span class="licensename">Docbook Simple License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:0ff84aa06495ec4fb0946abfa7f78afc">[<a href="/fact/ScancodeData/0ff84aa06495ec4fb0946abfa7f78afc">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:126b21664699a2c40640407f590f947e">[<a href="/fact/SPDXLicense/126b21664699a2c40640407f590f947e">SPDXLicense</a>]</span>)</span></li><li><span title="">Fedora: <b style="">allowed-content</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:6fdb284167e8cdb53152852080549cde">[<a href="/fact/FedoraEntry/6fdb284167e8cdb53152852080549cde">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e2df2a5bdb26fdcacaa974e7bb0d4a85">[<a href="/fact/OrtLicenseCategorization/e2df2a5bdb26fdcacaa974e7bb0d4a85">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e2df2a5bdb26fdcacaa974e7bb0d4a85">[<a href="/fact/OrtLicenseCategorization/e2df2a5bdb26fdcacaa974e7bb0d4a85">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is very similar to DocBook-Schema, but includes some exceptions to the different labeling of a modified version.<span class="provided-by">(provided by: <span title="SPDXLicense:126b21664699a2c40640407f590f947e">[<a href="/fact/SPDXLicense/126b21664699a2c40640407f590f947e">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip" target="_blank">http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-content&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1992-2002 HaL Computer Systems, Inc.,
+O&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software
+Corporation, Norman Walsh, Sun Microsystems, Inc., and the
+Organization for the Advancement of Structured Information
+Standards (OASIS).
+
+$Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $
+
+Permission to use, copy, modify and distribute the DocBook XML DTD
+and its accompanying documentation for any purpose and without fee
+is hereby granted in perpetuity, provided that the above copyright
+notice and this paragraph appear in all copies.  The copyright
+holders make no representation about the suitability of the DTD for
+any purpose.  It is provided &quot;as is&quot; without expressed or implied
+warranty.
+
+If you modify the Simplified DocBook DTD in any way, except for
+declaring and referencing additional sets of general entities and
+declaring additional notations, label your DTD as a variant of
+DocBook.  See the maintenance documentation for more information.
+
+Please direct all questions, bug reports, or suggestions for
+changes to the docbook@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;
+            Copyright 1992-2002 HaL Computer Systems, Inc., O&amp;apos;Reilly &amp;amp;
+            Associates, Inc., ArborText, Inc., Fujitsu Software Corporation,
+            Norman Walsh, Sun Microsystems, Inc., and the Organization for
+            the Advancement of Structured Information Standards (OASIS).
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            $Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $
+         &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify and distribute the DocBook
+            XML DTD and its accompanying documentation for any purpose
+            and without fee is hereby granted in perpetuity, provided
+            that the above copyright notice and this paragraph appear
+            in all copies. The copyright holders make no representation
+            about the suitability of the DTD for any purpose. It is
+            provided &amp;quot;as is&amp;quot; without expressed or implied warranty.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            If you modify the Simplified DocBook DTD in any
+            way, except for declaring and referencing additional
+            sets of general entities and declaring additional
+            notations, label your DTD as a variant of DocBook. See
+            the maintenance documentation for more information.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Please direct all questions, bug reports, or suggestions for
+            changes to the docbook@lists.oasis-open.org mailing list.
+            For more information, see http://www.oasis-open.org/docbook/.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify and distribute the DocBook XML DTD
+and its accompanying documentation for any purpose and without fee
+is hereby granted in perpetuity, provided that the above copyright
+notice and this paragraph appear in all copies.  The copyright
+holders make no representation about the suitability of the DTD for
+any purpose.  It is provided &quot;as is&quot; without expressed or implied
+warranty.
+
+If you modify the Simplified DocBook DTD in any way, except for
+declaring and referencing additional sets of general entities and
+declaring additional notations, label your DTD as a variant of
+DocBook.  See the maintenance documentation for more information.
+
+Please direct all questions, bug reports, or suggestions for
+changes to the docbook@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/126b21664699a2c40640407f590f947e">SPDXLicense:126b21664699a2c40640407f590f947e</a> for <a href="/?license=spdx:DocBook-DTD"><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook DTD License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:126b21664699a2c40640407f590f947e">[<a href="/fact/SPDXLicense/126b21664699a2c40640407f590f947e">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is very similar to DocBook-Schema, but includes some exceptions to the different labeling of a modified version.<span class="provided-by">(provided by: <span title="SPDXLicense:126b21664699a2c40640407f590f947e">[<a href="/fact/SPDXLicense/126b21664699a2c40640407f590f947e">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip" target="_blank">http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1992-2002 HaL Computer Systems, Inc.,
+O&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software
+Corporation, Norman Walsh, Sun Microsystems, Inc., and the
+Organization for the Advancement of Structured Information
+Standards (OASIS).
+
+$Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $
+
+Permission to use, copy, modify and distribute the DocBook XML DTD
+and its accompanying documentation for any purpose and without fee
+is hereby granted in perpetuity, provided that the above copyright
+notice and this paragraph appear in all copies.  The copyright
+holders make no representation about the suitability of the DTD for
+any purpose.  It is provided &quot;as is&quot; without expressed or implied
+warranty.
+
+If you modify the Simplified DocBook DTD in any way, except for
+declaring and referencing additional sets of general entities and
+declaring additional notations, label your DTD as a variant of
+DocBook.  See the maintenance documentation for more information.
+
+Please direct all questions, bug reports, or suggestions for
+changes to the docbook@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;
+            Copyright 1992-2002 HaL Computer Systems, Inc., O&amp;apos;Reilly &amp;amp;
+            Associates, Inc., ArborText, Inc., Fujitsu Software Corporation,
+            Norman Walsh, Sun Microsystems, Inc., and the Organization for
+            the Advancement of Structured Information Standards (OASIS).
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            $Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $
+         &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify and distribute the DocBook
+            XML DTD and its accompanying documentation for any purpose
+            and without fee is hereby granted in perpetuity, provided
+            that the above copyright notice and this paragraph appear
+            in all copies. The copyright holders make no representation
+            about the suitability of the DTD for any purpose. It is
+            provided &amp;quot;as is&amp;quot; without expressed or implied warranty.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            If you modify the Simplified DocBook DTD in any
+            way, except for declaring and referencing additional
+            sets of general entities and declaring additional
+            notations, label your DTD as a variant of DocBook. See
+            the maintenance documentation for more information.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Please direct all questions, bug reports, or suggestions for
+            changes to the docbook@lists.oasis-open.org mailing list.
+            For more information, see http://www.oasis-open.org/docbook/.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:DocBook-DTD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DocBook DTD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;126b21664699a2c40640407f590f947e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is very similar to DocBook-Schema, but includes some exceptions to the different labeling of a modified version.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 1992-2002 HaL Computer Systems, Inc.,\nO&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software\nCorporation, Norman Walsh, Sun Microsystems, Inc., and the\nOrganization for the Advancement of Structured Information\nStandards (OASIS).\n\n$Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $\n\nPermission to use, copy, modify and distribute the DocBook XML DTD\nand its accompanying documentation for any purpose and without fee\nis hereby granted in perpetuity, provided that the above copyright\nnotice and this paragraph appear in all copies.  The copyright\nholders make no representation about the suitability of the DTD for\nany purpose.  It is provided \&quot;as is\&quot; without expressed or implied\nwarranty.\n\nIf you modify the Simplified DocBook DTD in any way, except for\ndeclaring and referencing additional sets of general entities and\ndeclaring additional notations, label your DTD as a variant of\nDocBook.  See the maintenance documentation for more information.\n\nPlease direct all questions, bug reports, or suggestions for\nchanges to the docbook@lists.oasis-open.org mailing list. For more\ninformation, see http://www.oasis-open.org/docbook/.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;\n            Copyright 1992-2002 HaL Computer Systems, Inc., O&amp;apos;Reilly &amp;amp;\n            Associates, Inc., ArborText, Inc., Fujitsu Software Corporation,\n            Norman Walsh, Sun Microsystems, Inc., and the Organization for\n            the Advancement of Structured Information Standards (OASIS).\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            $Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $\n         &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify and distribute the DocBook\n            XML DTD and its accompanying documentation for any purpose\n            and without fee is hereby granted in perpetuity, provided\n            that the above copyright notice and this paragraph appear\n            in all copies. The copyright holders make no representation\n            about the suitability of the DTD for any purpose. It is\n            provided &amp;quot;as is&amp;quot; without expressed or implied warranty.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            If you modify the Simplified DocBook DTD in any\n            way, except for declaring and referencing additional\n            sets of general entities and declaring additional\n            notations, label your DTD as a variant of DocBook. See\n            the maintenance documentation for more information.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Please direct all questions, bug reports, or suggestions for\n            changes to the docbook@lists.oasis-open.org mailing list.\n            For more information, see http://www.oasis-open.org/docbook/.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:53:27Z&quot;,
+                &quot;url&quot;: &quot;http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is very similar to DocBook-Schema, but includes some exceptions to the different labeling of a modified version.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:DocBook-DTD&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 1992-2002 HaL Computer Systems, Inc.,\nO&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software\nCorporation, Norman Walsh, Sun Microsystems, Inc., and the\nOrganization for the Advancement of Structured Information\nStandards (OASIS).\n\n$Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $\n\nPermission to use, copy, modify and distribute the DocBook XML DTD\nand its accompanying documentation for any purpose and without fee\nis hereby granted in perpetuity, provided that the above copyright\nnotice and this paragraph appear in all copies.  The copyright\nholders make no representation about the suitability of the DTD for\nany purpose.  It is provided \&quot;as is\&quot; without expressed or implied\nwarranty.\n\nIf you modify the Simplified DocBook DTD in any way, except for\ndeclaring and referencing additional sets of general entities and\ndeclaring additional notations, label your DTD as a variant of\nDocBook.  See the maintenance documentation for more information.\n\nPlease direct all questions, bug reports, or suggestions for\nchanges to the docbook@lists.oasis-open.org mailing list. For more\ninformation, see http://www.oasis-open.org/docbook/.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;\n            Copyright 1992-2002 HaL Computer Systems, Inc., O&amp;apos;Reilly &amp;amp;\n            Associates, Inc., ArborText, Inc., Fujitsu Software Corporation,\n            Norman Walsh, Sun Microsystems, Inc., and the Organization for\n            the Advancement of Structured Information Standards (OASIS).\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            $Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $\n         &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify and distribute the DocBook\n            XML DTD and its accompanying documentation for any purpose\n            and without fee is hereby granted in perpetuity, provided\n            that the above copyright notice and this paragraph appear\n            in all copies. The copyright holders make no representation\n            about the suitability of the DTD for any purpose. It is\n            provided &amp;quot;as is&amp;quot; without expressed or implied warranty.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            If you modify the Simplified DocBook DTD in any\n            way, except for declaring and referencing additional\n            sets of general entities and declaring additional\n            notations, label your DTD as a variant of DocBook. See\n            the maintenance documentation for more information.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Please direct all questions, bug reports, or suggestions for\n            changes to the docbook@lists.oasis-open.org mailing list.\n            For more information, see http://www.oasis-open.org/docbook/.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;DocBook DTD License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 1992-2002 HaL Computer Systems, Inc., O&#39;Reilly &amp; Associates, Inc., ArborText, Inc., Fujitsu Software Corporation, Norman Walsh, Sun Microsystems, Inc., and the Organization for the Advancement of Structured Information Standards (OASIS).   $Id: sdbcent.mod,v 1.13 2005/04/01 21:02:17 nwalsh Exp $  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nPermission to use, copy, modify and distribute the DocBook XML DTD and its accompanying documentation for any purpose and without fee is hereby granted in perpetuity, provided that the above copyright notice and this paragraph appear in all copies. The copyright holders make no representation about the suitability of the DTD for any purpose. It is provided \&quot;as is\&quot; without expressed or implied warranty.\n\nIf you modify the Simplified DocBook DTD in any way, except for declaring and referencing additional sets of general entities and declaring additional notations, label your DTD as a variant of DocBook. See the maintenance documentation for more information.\n\nPlease direct all questions, bug reports, or suggestions for changes to the docbook@lists.oasis-open.org mailing list. For more information, see http://www.oasis-open.org/docbook/.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/6fdb284167e8cdb53152852080549cde">FedoraEntry:6fdb284167e8cdb53152852080549cde</a> for <a href="/?license=Fedora:DocBook-DTD"><span class="licensename"><span class="namespace">Fedora:</span>DocBook-DTD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>DocBook-DTD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">Fedora: <b style="">allowed-content</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:6fdb284167e8cdb53152852080549cde">[<a href="/fact/FedoraEntry/6fdb284167e8cdb53152852080549cde">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-content&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:DocBook-DTD&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:DocBook-DTD&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;6fdb284167e8cdb53152852080549cde&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed-content\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed-content&quot;,
+                                    {
+                                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;DocBook-DTD&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:DocBook-DTD&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed-content&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/0ff84aa06495ec4fb0946abfa7f78afc">ScancodeData:0ff84aa06495ec4fb0946abfa7f78afc</a> for <a href="/?license=scancode:docbook-dtd"><span class="licensename"><span class="namespace">scancode:</span>docbook-dtd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>docbook-dtd</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">DocBook DTD License</span></li><li><span class="licensename">DocBook DTD License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:0ff84aa06495ec4fb0946abfa7f78afc">[<a href="/fact/ScancodeData/0ff84aa06495ec4fb0946abfa7f78afc">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip" target="_blank">http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify and distribute the DocBook XML DTD
+and its accompanying documentation for any purpose and without fee
+is hereby granted in perpetuity, provided that the above copyright
+notice and this paragraph appear in all copies.  The copyright
+holders make no representation about the suitability of the DTD for
+any purpose.  It is provided &quot;as is&quot; without expressed or implied
+warranty.
+
+If you modify the Simplified DocBook DTD in any way, except for
+declaring and referencing additional sets of general entities and
+declaring additional notations, label your DTD as a variant of
+DocBook.  See the maintenance documentation for more information.
+
+Please direct all questions, bug reports, or suggestions for
+changes to the docbook@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:docbook-dtd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DocBook DTD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DocBook DTD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:DocBook-DTD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;0ff84aa06495ec4fb0946abfa7f78afc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify and distribute the DocBook XML DTD\nand its accompanying documentation for any purpose and without fee\nis hereby granted in perpetuity, provided that the above copyright\nnotice and this paragraph appear in all copies.  The copyright\nholders make no representation about the suitability of the DTD for\nany purpose.  It is provided \&quot;as is\&quot; without expressed or implied\nwarranty.\n\nIf you modify the Simplified DocBook DTD in any way, except for\ndeclaring and referencing additional sets of general entities and\ndeclaring additional notations, label your DTD as a variant of\nDocBook.  See the maintenance documentation for more information.\n\nPlease direct all questions, bug reports, or suggestions for\nchanges to the docbook@lists.oasis-open.org mailing list. For more\ninformation, see http://www.oasis-open.org/docbook/.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;docbook-dtd&quot;,
+        &quot;_name&quot;: &quot;DocBook DTD License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip&quot;
+        ],
+        &quot;_owner&quot;: &quot;OASIS&quot;,
+        &quot;_shortName&quot;: &quot;DocBook DTD License&quot;,
+        &quot;_spdxId&quot;: &quot;DocBook-DTD&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify and distribute the DocBook XML DTD\nand its accompanying documentation for any purpose and without fee\nis hereby granted in perpetuity, provided that the above copyright\nnotice and this paragraph appear in all copies.  The copyright\nholders make no representation about the suitability of the DTD for\nany purpose.  It is provided \&quot;as is\&quot; without expressed or implied\nwarranty.\n\nIf you modify the Simplified DocBook DTD in any way, except for\ndeclaring and referencing additional sets of general entities and\ndeclaring additional notations, label your DTD as a variant of\nDocBook.  See the maintenance documentation for more information.\n\nPlease direct all questions, bug reports, or suggestions for\nchanges to the docbook@lists.oasis-open.org mailing list. For more\ninformation, see http://www.oasis-open.org/docbook/.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/e2df2a5bdb26fdcacaa974e7bb0d4a85">OrtLicenseCategorization:e2df2a5bdb26fdcacaa974e7bb0d4a85</a> for <a href="/?license=SPDX:DocBook-DTD"><span class="licensename"><span class="namespace">SPDX:</span>DocBook-DTD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>DocBook-DTD</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e2df2a5bdb26fdcacaa974e7bb0d4a85">[<a href="/fact/OrtLicenseCategorization/e2df2a5bdb26fdcacaa974e7bb0d4a85">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e2df2a5bdb26fdcacaa974e7bb0d4a85">[<a href="/fact/OrtLicenseCategorization/e2df2a5bdb26fdcacaa974e7bb0d4a85">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:DocBook-DTD&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;e2df2a5bdb26fdcacaa974e7bb0d4a85&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:DocBook-DTD&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/3ce5b4cb93f5b49c60b20810f20c8c10">MetaeffektLicense:3ce5b4cb93f5b49c60b20810f20c8c10</a> for <a href="/?license=metaeffekt:DocBook DTD License"><span class="licensename"><span class="namespace">metaeffekt:</span>DocBook DTD License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>DocBook DTD License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip</span></li><li><span class="licensename">DocBook DTD</span></li><li><span class="licensename">Docbook DTD License</span></li><li><span class="licensename">DocBook DTD License</span></li><li><span class="licensename">Docbook Simple License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>docbook-dtd</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:DocBook DTD License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:DocBook-DTD&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DocBook DTD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Docbook Simple License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Docbook DTD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DocBook DTD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:docbook-dtd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;3ce5b4cb93f5b49c60b20810f20c8c10&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Docbook Simple License&quot;,
+            &quot;Docbook DTD License&quot;,
+            &quot;http://www.docbook.org/xml/simple/1.1/docbook-simple-1.1.zip&quot;,
+            &quot;DocBook DTD License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:DocBook DTD License&quot;,
+        &quot;_category&quot;: &quot;DocBook DTD&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:docbook-dtd&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:DocBook-DTD&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/b7bc0fdbe3e5bef014fa3396eb7d1ac5">LicenseLynx:b7bc0fdbe3e5bef014fa3396eb7d1ac5</a> for <a href="/?license=spdx:DocBook-DTD"><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook-DTD</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DocBook DTD License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>docbook-dtd</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:DocBook-DTD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:docbook-dtd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:DocBook DTD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;b7bc0fdbe3e5bef014fa3396eb7d1ac5&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:docbook-dtd&quot;,
+            &quot;spdx:DocBook DTD License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:DocBook-DTD&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

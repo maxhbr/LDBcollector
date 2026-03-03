@@ -1,0 +1,355 @@
+<html><head><title>ldbcollector: spdx:NIST-PD-TNT</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:NIST-PD-TNT</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD-TNT</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST    Public Domain Notice TNT variant</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NIST    Public Domain Notice TNT variant</span></li><li><span class="licensename">NIST Public Domain Notice TNT</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Public Domain Notice TNT</span></li><li><span class="licensename">NIST-PD-TNT</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD-TNT</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//math.nist.gov/tnt/download.html</span></li><li><span class="licensename">NIST PD</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:b95005863ee6e63f5bf3fe8e93648dbc">[<a href="/fact/SPDXLicense/b95005863ee6e63f5bf3fe8e93648dbc">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is similar in spirit to NIST-PD, but has some different disclaimer or warranties and omits the last sentence in the first paragraph of NIST-PD<span class="provided-by">(provided by: <span title="SPDXLicense:b95005863ee6e63f5bf3fe8e93648dbc">[<a href="/fact/SPDXLicense/b95005863ee6e63f5bf3fe8e93648dbc">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://math.nist.gov/tnt/download.html" target="_blank">https://math.nist.gov/tnt/download.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software was developed at the National Institute of Standards and Technology (NIST) by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. NIST assumes no responsibility whatsoever for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic.
+
+We would appreciate acknowledgement if the software is incorporated in redistributable libraries or applications.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            This software was developed at the National Institute of
+            Standards and Technology (NIST) by employees of the Federal
+            Government in the course of their official duties. Pursuant to
+            title 17 Section 105 of the United States Code this software
+            is not subject to copyright protection and is in the public
+            domain. NIST assumes no responsibility whatsoever for its use
+            by other parties, and makes no guarantees, expressed or implied,
+            about its quality, reliability, or any other characteristic.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            We would appreciate acknowledgement if the software is
+            incorporated in redistributable libraries or applications.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/b95005863ee6e63f5bf3fe8e93648dbc">SPDXLicense:b95005863ee6e63f5bf3fe8e93648dbc</a> for <a href="/?license=spdx:NIST-PD-TNT"><span class="licensename"><span class="namespace">spdx:</span>NIST-PD-TNT</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD-TNT</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST    Public Domain Notice TNT variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:b95005863ee6e63f5bf3fe8e93648dbc">[<a href="/fact/SPDXLicense/b95005863ee6e63f5bf3fe8e93648dbc">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is similar in spirit to NIST-PD, but has some different disclaimer or warranties and omits the last sentence in the first paragraph of NIST-PD<span class="provided-by">(provided by: <span title="SPDXLicense:b95005863ee6e63f5bf3fe8e93648dbc">[<a href="/fact/SPDXLicense/b95005863ee6e63f5bf3fe8e93648dbc">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://math.nist.gov/tnt/download.html" target="_blank">https://math.nist.gov/tnt/download.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software was developed at the National Institute of Standards and Technology (NIST) by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. NIST assumes no responsibility whatsoever for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic.
+
+We would appreciate acknowledgement if the software is incorporated in redistributable libraries or applications.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            This software was developed at the National Institute of
+            Standards and Technology (NIST) by employees of the Federal
+            Government in the course of their official duties. Pursuant to
+            title 17 Section 105 of the United States Code this software
+            is not subject to copyright protection and is in the public
+            domain. NIST assumes no responsibility whatsoever for its use
+            by other parties, and makes no guarantees, expressed or implied,
+            about its quality, reliability, or any other characteristic.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            We would appreciate acknowledgement if the software is
+            incorporated in redistributable libraries or applications.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NIST-PD-TNT&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST    Public Domain Notice TNT variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;b95005863ee6e63f5bf3fe8e93648dbc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This is similar in spirit to NIST-PD, but has some different disclaimer or warranties and omits the last sentence in the first paragraph of NIST-PD&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;This software was developed at the National Institute of Standards and Technology (NIST) by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. NIST assumes no responsibility whatsoever for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic.\n\nWe would appreciate acknowledgement if the software is incorporated in redistributable libraries or applications.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            This software was developed at the National Institute of\n            Standards and Technology (NIST) by employees of the Federal\n            Government in the course of their official duties. Pursuant to\n            title 17 Section 105 of the United States Code this software\n            is not subject to copyright protection and is in the public\n            domain. NIST assumes no responsibility whatsoever for its use\n            by other parties, and makes no guarantees, expressed or implied,\n            about its quality, reliability, or any other characteristic.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            We would appreciate acknowledgement if the software is\n            incorporated in redistributable libraries or applications.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://math.nist.gov/tnt/download.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://math.nist.gov/tnt/download.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:54:26Z&quot;,
+                &quot;url&quot;: &quot;https://math.nist.gov/tnt/download.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This is similar in spirit to NIST-PD, but has some different disclaimer or warranties and omits the last sentence in the first paragraph of NIST-PD&quot;,
+        &quot;licenseId&quot;: &quot;spdx:NIST-PD-TNT&quot;,
+        &quot;licenseText&quot;: &quot;This software was developed at the National Institute of Standards and Technology (NIST) by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. NIST assumes no responsibility whatsoever for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic.\n\nWe would appreciate acknowledgement if the software is incorporated in redistributable libraries or applications.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            This software was developed at the National Institute of\n            Standards and Technology (NIST) by employees of the Federal\n            Government in the course of their official duties. Pursuant to\n            title 17 Section 105 of the United States Code this software\n            is not subject to copyright protection and is in the public\n            domain. NIST assumes no responsibility whatsoever for its use\n            by other parties, and makes no guarantees, expressed or implied,\n            about its quality, reliability, or any other characteristic.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            We would appreciate acknowledgement if the software is\n            incorporated in redistributable libraries or applications.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;NIST    Public Domain Notice TNT variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://math.nist.gov/tnt/download.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;This software was developed at the National Institute of Standards and Technology (NIST) by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. NIST assumes no responsibility whatsoever for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic.\n\nWe would appreciate acknowledgement if the software is incorporated in redistributable libraries or applications.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/5bc4e3c2b7aaa7213d891d34cb3fa982">MetaeffektLicense:5bc4e3c2b7aaa7213d891d34cb3fa982</a> for <a href="/?license=metaeffekt:NIST Public Domain Notice TNT"><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Public Domain Notice TNT</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Public Domain Notice TNT</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD-TNT</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//math.nist.gov/tnt/download.html</span></li><li><span class="licensename">NIST PD</span></li><li><span class="licensename">NIST Public Domain Notice TNT</span></li><li><span class="licensename">NIST-PD-TNT</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:NIST Public Domain Notice TNT&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NIST-PD-TNT&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NIST Public Domain Notice TNT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://math.nist.gov/tnt/download.html&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NIST-PD-TNT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;5bc4e3c2b7aaa7213d891d34cb3fa982&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;NIST Public Domain Notice TNT&quot;,
+            &quot;https://math.nist.gov/tnt/download.html&quot;,
+            &quot;NIST-PD-TNT&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:NIST Public Domain Notice TNT&quot;,
+        &quot;_category&quot;: &quot;NIST PD&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:NIST-PD-TNT&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/1bd2fbb22d9d7ef8e6160e1a3fc19be0">LicenseLynx:1bd2fbb22d9d7ef8e6160e1a3fc19be0</a> for <a href="/?license=spdx:NIST-PD-TNT"><span class="licensename"><span class="namespace">spdx:</span>NIST-PD-TNT</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD-TNT</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST    Public Domain Notice TNT variant</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NIST-PD-TNT&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:NIST    Public Domain Notice TNT variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;1bd2fbb22d9d7ef8e6160e1a3fc19be0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;spdx:NIST    Public Domain Notice TNT variant&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:NIST-PD-TNT&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

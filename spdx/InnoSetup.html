@@ -1,0 +1,1145 @@
+<html><head><title>ldbcollector: spdx:InnoSetup</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:InnoSetup</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>InnoSetup</span></li></ul></li><li><b>other LicenseNames (13):</b><ul class="capsulUl clearfix"><li><span class="licensename">Inno Setup License</span></li><li><span class="licensename"><span class="namespace">hitachi:</span>Inno Setup License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Inno Setup License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Inno Setup License</span></li><li><span class="licensename">inno-setup</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Inno-Setup</span></li><li><span class="licensename"><span class="namespace">scancode:</span>inno-setup</span></li><li><span class="licensename">InnoSetup</span></li><li><span class="licensename"><span class="namespace">cavil:</span>InnoSetup</span></li><li><span class="licensename"><span class="namespace">spdx:</span>InnoSetup</span></li><li><span class="licensename">LicenseRef-scancode-inno-setup</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-inno-setup</span></li><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-inno-setup</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.jrsoftware.org/files/is/license.txt</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:a5f8989944a293bc173f75066ed703f8">[<a href="/fact/ScancodeData/a5f8989944a293bc173f75066ed703f8">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8ffa1335a77e49c5ed7851ca9d0f59b8">[<a href="/fact/SPDXLicense/8ffa1335a77e49c5ed7851ca9d0f59b8">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cb36946cf8f86d1868a4194bbb0803dc">[<a href="/fact/OrtLicenseCategorization/cb36946cf8f86d1868a4194bbb0803dc">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:b4b5450e40b1c68723cd85db8908c7aa">[<a href="/fact/OrtLicenseCategorization/b4b5450e40b1c68723cd85db8908c7aa">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cb36946cf8f86d1868a4194bbb0803dc">[<a href="/fact/OrtLicenseCategorization/cb36946cf8f86d1868a4194bbb0803dc">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:b4b5450e40b1c68723cd85db8908c7aa">[<a href="/fact/OrtLicenseCategorization/b4b5450e40b1c68723cd85db8908c7aa">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/jrsoftware/issrc/blob/HEAD/license.txt" target="_blank">https://github.com/jrsoftware/issrc/blob/HEAD/license.txt</a></li><li><a href="http://www.jrsoftware.org/files/is/license.txt" target="_blank">http://www.jrsoftware.org/files/is/license.txt</a></li></ul><h3>Other Statements</h3><ul><li>http://www.jrsoftware.org/files/is/license.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Inno Setup License
+==================
+
+Except where otherwise noted, all of the documentation and software included in the Inno Setup
+package is copyrighted by Jordan Russell.
+
+Copyright (C) 1997-2024 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.
+
+This software is provided &quot;as-is,&quot; without any express or implied warranty. In no event shall the
+author be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial
+applications, and to alter and redistribute it, provided that the following conditions are met:
+
+1. All redistributions of source code files must retain all copyright notices that are currently in
+   place, and this list of conditions without modification.
+
+2. All redistributions in binary form must retain all occurrences of the above copyright notice and
+   web site addresses that are currently in place (for example, in the About boxes).
+
+3. The origin of this software must not be misrepresented; you must not claim that you wrote the
+   original software. If you use this software to distribute a product, an acknowledgment in the
+   product documentation would be appreciated but is not required.
+
+4. Modified versions in source or binary form must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            Inno Setup License&lt;br /&gt;
+
+            ==================
+         &lt;/var&gt;
+         &lt;p&gt;
+            Except where otherwise noted, all of the documentation and software
+            included in the Inno Setup package is copyrighted by Jordan Russell.
+         &lt;/p&gt;
+
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            &lt;p&gt;
+               Copyright (C) 1997-2024 Jordan Russell. All rights reserved.
+               Portions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.
+            &lt;/p&gt;
+
+            &lt;p&gt;
+               This software is provided &amp;quot;as-is,&amp;quot; without any express
+               or implied warranty. In no event shall the author be held
+               liable for any damages arising from the use of this software.
+            &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+            Permission is granted to anyone to use this software for any
+            purpose, including commercial applications, and to alter and
+            redistribute it, provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  All redistributions of source code files must retain
+                  all copyright notices that are currently in place,
+                  and this list of conditions without modification.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  All redistributions in binary form must retain all occurrences
+                  of the above copyright notice and web site addresses that
+                  are currently in place (for example, in the About boxes).
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  The origin of this software must not be misrepresented;
+                  you must not claim that you wrote the original
+                  software. If you use this software to distribute
+                  a product, an acknowledgment in the product
+                  documentation would be appreciated but is not required.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Modified versions in source or binary form
+                  must be plainly marked as such, and must not be
+                  misrepresented as being the original software.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+      </pre></details></li><li><details><summary>Text:</summary><pre>Inno Setup License
+==================
+
+Except where otherwise noted, all of the documentation and software included
+in the Inno Setup package is copyrighted by Jordan Russell.
+
+Copyright (C) 1997-2010 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2010 Martijn Laan. All rights reserved.
+
+This software is provided &quot;as-is,&quot; without any express or implied warranty.
+In no event shall the author be held liable for any damages arising from the
+use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter and redistribute it,
+provided that the following conditions are met:
+
+1. All redistributions of source code files must retain all copyright
+   notices that are currently in place, and this list of conditions without
+   modification.
+
+2. All redistributions in binary form must retain all occurrences of the
+   above copyright notice and web site addresses that are currently in
+   place (for example, in the About boxes).
+
+3. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software to
+   distribute a product, an acknowledgment in the product documentation
+   would be appreciated but is not required.
+
+4. Modified versions in source or binary form must be plainly marked as
+   such, and must not be misrepresented as being the original software.
+
+
+Jordan Russell
+jr-2010 AT jrsoftware.org
+http://www.jrsoftware.org/</pre></details></li><li><details><summary>Text:</summary><pre>Inno Setup License
+==================
+
+Except where otherwise noted, all of the documentation and software included
+in the Inno Setup package is copyrighted by Jordan Russell.
+
+Copyright (C) 1997-&lt;year&gt; Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-&lt;year&gt; Martijn Laan. All rights reserved.
+
+This software is provided &quot;as-is,&quot; without any express or implied warranty.
+In no event shall the author be held liable for any damages arising from the
+use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter and redistribute it,
+provided that the following conditions are met:
+
+1. All redistributions of source code files must retain all copyright
+   notices that are currently in place, and this list of conditions without
+   modification.
+
+2. All redistributions in binary form must retain all occurrences of the
+   above copyright notice and web site addresses that are currently in
+   place (for example, in the About boxes).
+
+3. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software to
+   distribute a product, an acknowledgment in the product documentation
+   would be appreciated but is not required.
+
+4. Modified versions in source or binary form must be plainly marked as
+   such, and must not be misrepresented as being the original software.
+
+
+Jordan Russell
+jr-2010 AT jrsoftware.org
+http://www.jrsoftware.org/</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/8ffa1335a77e49c5ed7851ca9d0f59b8">SPDXLicense:8ffa1335a77e49c5ed7851ca9d0f59b8</a> for <a href="/?license=spdx:InnoSetup"><span class="licensename"><span class="namespace">spdx:</span>InnoSetup</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>InnoSetup</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Inno Setup License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8ffa1335a77e49c5ed7851ca9d0f59b8">[<a href="/fact/SPDXLicense/8ffa1335a77e49c5ed7851ca9d0f59b8">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/jrsoftware/issrc/blob/HEAD/license.txt" target="_blank">https://github.com/jrsoftware/issrc/blob/HEAD/license.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Inno Setup License
+==================
+
+Except where otherwise noted, all of the documentation and software included in the Inno Setup
+package is copyrighted by Jordan Russell.
+
+Copyright (C) 1997-2024 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.
+
+This software is provided &quot;as-is,&quot; without any express or implied warranty. In no event shall the
+author be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial
+applications, and to alter and redistribute it, provided that the following conditions are met:
+
+1. All redistributions of source code files must retain all copyright notices that are currently in
+   place, and this list of conditions without modification.
+
+2. All redistributions in binary form must retain all occurrences of the above copyright notice and
+   web site addresses that are currently in place (for example, in the About boxes).
+
+3. The origin of this software must not be misrepresented; you must not claim that you wrote the
+   original software. If you use this software to distribute a product, an acknowledgment in the
+   product documentation would be appreciated but is not required.
+
+4. Modified versions in source or binary form must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            Inno Setup License&lt;br /&gt;
+
+            ==================
+         &lt;/var&gt;
+         &lt;p&gt;
+            Except where otherwise noted, all of the documentation and software
+            included in the Inno Setup package is copyrighted by Jordan Russell.
+         &lt;/p&gt;
+
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            &lt;p&gt;
+               Copyright (C) 1997-2024 Jordan Russell. All rights reserved.
+               Portions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.
+            &lt;/p&gt;
+
+            &lt;p&gt;
+               This software is provided &amp;quot;as-is,&amp;quot; without any express
+               or implied warranty. In no event shall the author be held
+               liable for any damages arising from the use of this software.
+            &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+            Permission is granted to anyone to use this software for any
+            purpose, including commercial applications, and to alter and
+            redistribute it, provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  All redistributions of source code files must retain
+                  all copyright notices that are currently in place,
+                  and this list of conditions without modification.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  All redistributions in binary form must retain all occurrences
+                  of the above copyright notice and web site addresses that
+                  are currently in place (for example, in the About boxes).
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  The origin of this software must not be misrepresented;
+                  you must not claim that you wrote the original
+                  software. If you use this software to distribute
+                  a product, an acknowledgment in the product
+                  documentation would be appreciated but is not required.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Modified versions in source or binary form
+                  must be plainly marked as such, and must not be
+                  misrepresented as being the original software.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:InnoSetup&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Inno Setup License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;8ffa1335a77e49c5ed7851ca9d0f59b8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Inno Setup License\n==================\n\nExcept where otherwise noted, all of the documentation and software included in the Inno Setup\npackage is copyrighted by Jordan Russell.\n\nCopyright (C) 1997-2024 Jordan Russell. All rights reserved.\nPortions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.\n\nThis software is provided \&quot;as-is,\&quot; without any express or implied warranty. In no event shall the\nauthor be held liable for any damages arising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose, including commercial\napplications, and to alter and redistribute it, provided that the following conditions are met:\n\n1. All redistributions of source code files must retain all copyright notices that are currently in\n   place, and this list of conditions without modification.\n\n2. All redistributions in binary form must retain all occurrences of the above copyright notice and\n   web site addresses that are currently in place (for example, in the About boxes).\n\n3. The origin of this software must not be misrepresented; you must not claim that you wrote the\n   original software. If you use this software to distribute a product, an acknowledgment in the\n   product documentation would be appreciated but is not required.\n\n4. Modified versions in source or binary form must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            Inno Setup License&lt;br /&gt;\n\n            ==================\n         &lt;/var&gt;\n         &lt;p&gt;\n            Except where otherwise noted, all of the documentation and software\n            included in the Inno Setup package is copyrighted by Jordan Russell.\n         &lt;/p&gt;\n\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            &lt;p&gt;\n               Copyright (C) 1997-2024 Jordan Russell. All rights reserved.\n               Portions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.\n            &lt;/p&gt;\n\n            &lt;p&gt;\n               This software is provided &amp;quot;as-is,&amp;quot; without any express\n               or implied warranty. In no event shall the author be held\n               liable for any damages arising from the use of this software.\n            &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n            Permission is granted to anyone to use this software for any\n            purpose, including commercial applications, and to alter and\n            redistribute it, provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  All redistributions of source code files must retain\n                  all copyright notices that are currently in place,\n                  and this list of conditions without modification.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  All redistributions in binary form must retain all occurrences\n                  of the above copyright notice and web site addresses that\n                  are currently in place (for example, in the About boxes).\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  The origin of this software must not be misrepresented;\n                  you must not claim that you wrote the original\n                  software. If you use this software to distribute\n                  a product, an acknowledgment in the product\n                  documentation would be appreciated but is not required.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Modified versions in source or binary form\n                  must be plainly marked as such, and must not be\n                  misrepresented as being the original software.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/jrsoftware/issrc/blob/HEAD/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/jrsoftware/issrc/blob/HEAD/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:52:51Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/jrsoftware/issrc/blob/HEAD/license.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:InnoSetup&quot;,
+        &quot;licenseText&quot;: &quot;Inno Setup License\n==================\n\nExcept where otherwise noted, all of the documentation and software included in the Inno Setup\npackage is copyrighted by Jordan Russell.\n\nCopyright (C) 1997-2024 Jordan Russell. All rights reserved.\nPortions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.\n\nThis software is provided \&quot;as-is,\&quot; without any express or implied warranty. In no event shall the\nauthor be held liable for any damages arising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose, including commercial\napplications, and to alter and redistribute it, provided that the following conditions are met:\n\n1. All redistributions of source code files must retain all copyright notices that are currently in\n   place, and this list of conditions without modification.\n\n2. All redistributions in binary form must retain all occurrences of the above copyright notice and\n   web site addresses that are currently in place (for example, in the About boxes).\n\n3. The origin of this software must not be misrepresented; you must not claim that you wrote the\n   original software. If you use this software to distribute a product, an acknowledgment in the\n   product documentation would be appreciated but is not required.\n\n4. Modified versions in source or binary form must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            Inno Setup License&lt;br /&gt;\n\n            ==================\n         &lt;/var&gt;\n         &lt;p&gt;\n            Except where otherwise noted, all of the documentation and software\n            included in the Inno Setup package is copyrighted by Jordan Russell.\n         &lt;/p&gt;\n\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            &lt;p&gt;\n               Copyright (C) 1997-2024 Jordan Russell. All rights reserved.\n               Portions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.\n            &lt;/p&gt;\n\n            &lt;p&gt;\n               This software is provided &amp;quot;as-is,&amp;quot; without any express\n               or implied warranty. In no event shall the author be held\n               liable for any damages arising from the use of this software.\n            &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n            Permission is granted to anyone to use this software for any\n            purpose, including commercial applications, and to alter and\n            redistribute it, provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  All redistributions of source code files must retain\n                  all copyright notices that are currently in place,\n                  and this list of conditions without modification.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  All redistributions in binary form must retain all occurrences\n                  of the above copyright notice and web site addresses that\n                  are currently in place (for example, in the About boxes).\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  The origin of this software must not be misrepresented;\n                  you must not claim that you wrote the original\n                  software. If you use this software to distribute\n                  a product, an acknowledgment in the product\n                  documentation would be appreciated but is not required.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Modified versions in source or binary form\n                  must be plainly marked as such, and must not be\n                  misrepresented as being the original software.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n      &quot;,
+        &quot;name&quot;: &quot;Inno Setup License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/jrsoftware/issrc/blob/HEAD/license.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Inno Setup License\n==================&lt;&lt;endOptional&gt;&gt;\nExcept where otherwise noted, all of the documentation and software included in the Inno Setup package is copyrighted by Jordan Russell.\n\n&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 1997-2024 Jordan Russell. All rights reserved. Portions Copyright (C) 2000-2024 Martijn Laan. All rights reserved.   This software is provided \&quot;as-is,\&quot; without any express or implied warranty. In no event shall the author be held liable for any damages arising from the use of this software.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter and redistribute it, provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   All redistributions of source code files must retain all copyright notices that are currently in place, and this list of conditions without modification.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   All redistributions in binary form must retain all occurrences of the above copyright notice and web site addresses that are currently in place (for example, in the About boxes).\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software to distribute a product, an acknowledgment in the product documentation would be appreciated but is not required.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Modified versions in source or binary form must be plainly marked as such, and must not be misrepresented as being the original software.\n   \n   &quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/a5f8989944a293bc173f75066ed703f8">ScancodeData:a5f8989944a293bc173f75066ed703f8</a> for <a href="/?license=scancode:inno-setup"><span class="licensename"><span class="namespace">scancode:</span>inno-setup</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>inno-setup</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Inno Setup License</span></li><li><span class="licensename">Inno Setup License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>InnoSetup</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:a5f8989944a293bc173f75066ed703f8">[<a href="/fact/ScancodeData/a5f8989944a293bc173f75066ed703f8">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.jrsoftware.org/files/is/license.txt" target="_blank">http://www.jrsoftware.org/files/is/license.txt</a></li></ul><h3>Other Statements</h3><ul><li>http://www.jrsoftware.org/files/is/license.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Inno Setup License
+==================
+
+Except where otherwise noted, all of the documentation and software included
+in the Inno Setup package is copyrighted by Jordan Russell.
+
+Copyright (C) 1997-2010 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2010 Martijn Laan. All rights reserved.
+
+This software is provided &quot;as-is,&quot; without any express or implied warranty.
+In no event shall the author be held liable for any damages arising from the
+use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter and redistribute it,
+provided that the following conditions are met:
+
+1. All redistributions of source code files must retain all copyright
+   notices that are currently in place, and this list of conditions without
+   modification.
+
+2. All redistributions in binary form must retain all occurrences of the
+   above copyright notice and web site addresses that are currently in
+   place (for example, in the About boxes).
+
+3. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software to
+   distribute a product, an acknowledgment in the product documentation
+   would be appreciated but is not required.
+
+4. Modified versions in source or binary form must be plainly marked as
+   such, and must not be misrepresented as being the original software.
+
+
+Jordan Russell
+jr-2010 AT jrsoftware.org
+http://www.jrsoftware.org/</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:inno-setup&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Inno Setup License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Inno Setup License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:InnoSetup&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;a5f8989944a293bc173f75066ed703f8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.jrsoftware.org/files/is/license.txt&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.jrsoftware.org/files/is/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Inno Setup License\n==================\n\nExcept where otherwise noted, all of the documentation and software included\nin the Inno Setup package is copyrighted by Jordan Russell.\n\nCopyright (C) 1997-2010 Jordan Russell. All rights reserved.\nPortions Copyright (C) 2000-2010 Martijn Laan. All rights reserved.\n\nThis software is provided \&quot;as-is,\&quot; without any express or implied warranty.\nIn no event shall the author be held liable for any damages arising from the\nuse of this software.\n\nPermission is granted to anyone to use this software for any purpose,\nincluding commercial applications, and to alter and redistribute it,\nprovided that the following conditions are met:\n\n1. All redistributions of source code files must retain all copyright\n   notices that are currently in place, and this list of conditions without\n   modification.\n\n2. All redistributions in binary form must retain all occurrences of the\n   above copyright notice and web site addresses that are currently in\n   place (for example, in the About boxes).\n\n3. The origin of this software must not be misrepresented; you must not\n   claim that you wrote the original software. If you use this software to\n   distribute a product, an acknowledgment in the product documentation\n   would be appreciated but is not required.\n\n4. Modified versions in source or binary form must be plainly marked as\n   such, and must not be misrepresented as being the original software.\n\n\nJordan Russell\njr-2010 AT jrsoftware.org\nhttp://www.jrsoftware.org/&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.jrsoftware.org/files/is/license.txt&quot;,
+        &quot;_key&quot;: &quot;inno-setup&quot;,
+        &quot;_name&quot;: &quot;Inno Setup License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;jrsoftware.org&quot;,
+        &quot;_shortName&quot;: &quot;Inno Setup License&quot;,
+        &quot;_spdxId&quot;: &quot;InnoSetup&quot;,
+        &quot;_text&quot;: &quot;Inno Setup License\n==================\n\nExcept where otherwise noted, all of the documentation and software included\nin the Inno Setup package is copyrighted by Jordan Russell.\n\nCopyright (C) 1997-2010 Jordan Russell. All rights reserved.\nPortions Copyright (C) 2000-2010 Martijn Laan. All rights reserved.\n\nThis software is provided \&quot;as-is,\&quot; without any express or implied warranty.\nIn no event shall the author be held liable for any damages arising from the\nuse of this software.\n\nPermission is granted to anyone to use this software for any purpose,\nincluding commercial applications, and to alter and redistribute it,\nprovided that the following conditions are met:\n\n1. All redistributions of source code files must retain all copyright\n   notices that are currently in place, and this list of conditions without\n   modification.\n\n2. All redistributions in binary form must retain all occurrences of the\n   above copyright notice and web site addresses that are currently in\n   place (for example, in the About boxes).\n\n3. The origin of this software must not be misrepresented; you must not\n   claim that you wrote the original software. If you use this software to\n   distribute a product, an acknowledgment in the product documentation\n   would be appreciated but is not required.\n\n4. Modified versions in source or binary form must be plainly marked as\n   such, and must not be misrepresented as being the original software.\n\n\nJordan Russell\njr-2010 AT jrsoftware.org\nhttp://www.jrsoftware.org/&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.jrsoftware.org/files/is/license.txt&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/cb36946cf8f86d1868a4194bbb0803dc">OrtLicenseCategorization:cb36946cf8f86d1868a4194bbb0803dc</a> for <a href="/?license=SPDX:InnoSetup"><span class="licensename"><span class="namespace">SPDX:</span>InnoSetup</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>InnoSetup</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cb36946cf8f86d1868a4194bbb0803dc">[<a href="/fact/OrtLicenseCategorization/cb36946cf8f86d1868a4194bbb0803dc">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cb36946cf8f86d1868a4194bbb0803dc">[<a href="/fact/OrtLicenseCategorization/cb36946cf8f86d1868a4194bbb0803dc">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:InnoSetup&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;cb36946cf8f86d1868a4194bbb0803dc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:InnoSetup&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/b4b5450e40b1c68723cd85db8908c7aa">OrtLicenseCategorization:b4b5450e40b1c68723cd85db8908c7aa</a> for <a href="/?license=SPDX:LicenseRef-scancode-inno-setup"><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-inno-setup</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-inno-setup</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b4b5450e40b1c68723cd85db8908c7aa">[<a href="/fact/OrtLicenseCategorization/b4b5450e40b1c68723cd85db8908c7aa">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b4b5450e40b1c68723cd85db8908c7aa">[<a href="/fact/OrtLicenseCategorization/b4b5450e40b1c68723cd85db8908c7aa">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LicenseRef-scancode-inno-setup&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;b4b5450e40b1c68723cd85db8908c7aa&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LicenseRef-scancode-inno-setup&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/515e3f3487d83f1d7009a63f95538d18">CavilLicenseChange:515e3f3487d83f1d7009a63f95538d18</a> for <a href="/?license=cavil:InnoSetup"><span class="licensename"><span class="namespace">cavil:</span>InnoSetup</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>InnoSetup</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">InnoSetup</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:InnoSetup&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;InnoSetup&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;515e3f3487d83f1d7009a63f95538d18&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;InnoSetup&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:InnoSetup&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/e73912cd796932333c29664927323799">MetaeffektLicense:e73912cd796932333c29664927323799</a> for <a href="/?license=metaeffekt:Inno-Setup"><span class="licensename"><span class="namespace">metaeffekt:</span>Inno-Setup</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Inno-Setup</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Inno Setup License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>InnoSetup</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.jrsoftware.org/files/is/license.txt</span></li><li><span class="licensename">Inno Setup License</span></li><li><span class="licensename">Inno Setup License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>inno-setup</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Inno-Setup&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:Inno Setup License&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:InnoSetup&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Inno Setup License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Inno Setup License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.jrsoftware.org/files/is/license.txt&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:inno-setup&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;e73912cd796932333c29664927323799&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Inno Setup License&quot;,
+            &quot;http://www.jrsoftware.org/files/is/license.txt&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Inno Setup License&quot;,
+        &quot;_category&quot;: &quot;Inno Setup License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:inno-setup&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:Inno-Setup&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:InnoSetup&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HitachiOpenLicense">HitachiOpenLicense</a>: <a href="/fact/HitachiOpenLicense/679168f29be377bde3ad31823328330d">HitachiOpenLicense:679168f29be377bde3ad31823328330d</a> for <a href="/?license=hitachi:Inno Setup License"><span class="licensename"><span class="namespace">hitachi:</span>Inno Setup License</span></a></h3><h4>Permissions:</h4><ul><li><h5>Actions:</h5><ul><li><b>Use the obtained source code without modification</b>: <br><span>Use the fetched code as it is.</span></li><li><b>Using Modified Source Code</b>: <br><span></span></li><li><b>Use the retrieved binaries</b>: <br><span>Use the fetched binary as it is.</span></li><li><b>Use binaries generated from modified source code</b>: <br><span></span></li></ul><h5>Conditions:</h5><span>None</span></li><li><h5>Description:</h5><span>If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.</span><h5>Actions:</h5><ul><li><b>Distribute the obtained source code without modification</b>: <br><span>Redistribute the code as it was obtained</span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Include the copyright notice contained in the software<br></li><li><b>OBLIGATION</b>: Include a list of terms included in the license<br></li><li><b>OBLIGATION</b>: Correctly indicate the origin of the software in question<br></li></ul></li><li><h5>Description:</h5><span>The copyright notice and website address should appear as it is in the About box or wherever it is currently displayed. Acknowledgement of the product documentation is desirable but not required for use in the product.</span><h5>Actions:</h5><ul><li><b>Distribute the fetched binaries</b>: <br><span>Redistribute the fetched binaries as they are</span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Include a copyright notice in the license<br></li><li><b>OBLIGATION</b>: Include the address of the website that is included in the software<br></li><li><b>OBLIGATION</b>: Correctly indicate the origin of the software in question<br></li></ul></li><li><h5>Actions:</h5><ul><li><b>Modify the obtained source code.</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Correctly indicate the origin of the software in question<br></li><li><b>OBLIGATION</b>: Indicate that you have made the change yourself.<br></li></ul></li><li><h5>Description:</h5><span>If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.</span><h5>Actions:</h5><ul><li><b>Distribution of Modified Source Code</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Include the copyright notice contained in the software<br></li><li><b>OBLIGATION</b>: Include a list of terms included in the license<br></li><li><b>OBLIGATION</b>: Correctly indicate the origin of the software in question<br></li><li><b>OBLIGATION</b>: Indicate that you have made the change yourself.<br></li></ul></li><li><h5>Description:</h5><span>The copyright notice and website address should appear as it is in the About box or wherever it is currently displayed. Acknowledgement of the product documentation is desirable but not required for use in the product.</span><h5>Actions:</h5><ul><li><b>Distribute the generated binaries from modified source code</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Include a copyright notice in the license<br></li><li><b>OBLIGATION</b>: Include the address of the website that is included in the software<br></li><li><b>OBLIGATION</b>: Correctly indicate the origin of the software in question<br></li><li><b>OBLIGATION</b>: Indicate that you have made the change yourself.<br></li></ul></li></ul><h4>Notices:</h4><ul><li><h5>Description:</h5><span>There is no guarantee.</span><h5>Content:</h5><span>the software is provided &quot;as-is&quot; and without warranty of any kind, either express or implied.</span></li><li><h5>Content:</h5><span>The author shall not be liable for any damage caused by the use of such software.</span></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">hitachi:</span>Inno Setup License</span></li></ul></li></ul></div><div></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Inno Setup License
+==================
+
+Except where otherwise noted, all of the documentation and software included
+in the Inno Setup package is copyrighted by Jordan Russell.
+
+Copyright (C) 1997-&lt;year&gt; Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-&lt;year&gt; Martijn Laan. All rights reserved.
+
+This software is provided &quot;as-is,&quot; without any express or implied warranty.
+In no event shall the author be held liable for any damages arising from the
+use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter and redistribute it,
+provided that the following conditions are met:
+
+1. All redistributions of source code files must retain all copyright
+   notices that are currently in place, and this list of conditions without
+   modification.
+
+2. All redistributions in binary form must retain all occurrences of the
+   above copyright notice and web site addresses that are currently in
+   place (for example, in the About boxes).
+
+3. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software to
+   distribute a product, an acknowledgment in the product documentation
+   would be appreciated but is not required.
+
+4. Modified versions in source or binary form must be plainly marked as
+   such, and must not be misrepresented as being the original software.
+
+
+Jordan Russell
+jr-2010 AT jrsoftware.org
+http://www.jrsoftware.org/</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;hitachi:Inno Setup License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HitachiOpenLicense&quot;,
+        &quot;679168f29be377bde3ad31823328330d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;Inno Setup License\n==================\n\nExcept where otherwise noted, all of the documentation and software included\nin the Inno Setup package is copyrighted by Jordan Russell.\n\nCopyright (C) 1997-&lt;year&gt; Jordan Russell. All rights reserved.\nPortions Copyright (C) 2000-&lt;year&gt; Martijn Laan. All rights reserved.\n\nThis software is provided \&quot;as-is,\&quot; without any express or implied warranty.\nIn no event shall the author be held liable for any damages arising from the\nuse of this software.\n\nPermission is granted to anyone to use this software for any purpose,\nincluding commercial applications, and to alter and redistribute it,\nprovided that the following conditions are met:\n\n1. All redistributions of source code files must retain all copyright\n   notices that are currently in place, and this list of conditions without\n   modification.\n\n2. All redistributions in binary form must retain all occurrences of the\n   above copyright notice and web site addresses that are currently in\n   place (for example, in the About boxes).\n\n3. The origin of this software must not be misrepresented; you must not\n   claim that you wrote the original software. If you use this software to\n   distribute a product, an acknowledgment in the product documentation\n   would be appreciated but is not required.\n\n4. Modified versions in source or binary form must be plainly marked as\n   such, and must not be misrepresented as being the original software.\n\n\nJordan Russell\njr-2010 AT jrsoftware.org\nhttp://www.jrsoftware.org/&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;content&quot;: &quot;Inno Setup License\n==================\n\nExcept where otherwise noted, all of the documentation and software included\nin the Inno Setup package is copyrighted by Jordan Russell.\n\nCopyright (C) 1997-&lt;year&gt; Jordan Russell. All rights reserved.\nPortions Copyright (C) 2000-&lt;year&gt; Martijn Laan. All rights reserved.\n\nThis software is provided \&quot;as-is,\&quot; without any express or implied warranty.\nIn no event shall the author be held liable for any damages arising from the\nuse of this software.\n\nPermission is granted to anyone to use this software for any purpose,\nincluding commercial applications, and to alter and redistribute it,\nprovided that the following conditions are met:\n\n1. All redistributions of source code files must retain all copyright\n   notices that are currently in place, and this list of conditions without\n   modification.\n\n2. All redistributions in binary form must retain all occurrences of the\n   above copyright notice and web site addresses that are currently in\n   place (for example, in the About boxes).\n\n3. The origin of this software must not be misrepresented; you must not\n   claim that you wrote the original software. If you use this software to\n   distribute a product, an acknowledgment in the product documentation\n   would be appreciated but is not required.\n\n4. Modified versions in source or binary form must be plainly marked as\n   such, and must not be misrepresented as being the original software.\n\n\nJordan Russell\njr-2010 AT jrsoftware.org\nhttp://www.jrsoftware.org/&quot;,
+        &quot;name&quot;: &quot;hitachi:Inno Setup License&quot;,
+        &quot;notices&quot;: [
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;the software is provided \&quot;as-is\&quot; and without warranty of any kind, either express or implied.&quot;,
+                    &quot;description&quot;: &quot;There is no guarantee.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            },
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;The author shall not be liable for any damage caused by the use of such software.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            }
+        ],
+        &quot;permissions&quot;: [
+            {
+                &quot;_str&quot;: &quot;Actions:\n- Ol Use the obtained source code without modification (Use the fetched code as it is.)\n- Ol Using Modified Source Code\n- Ol Use the retrieved binaries (Use the fetched binary as it is.)\n- Ol Use binaries generated from modified source code\n\nConditions: None\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Using Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched binary as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the retrieved binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Use binaries generated from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: null
+            },
+            {
+                &quot;_str&quot;: &quot;Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Ol Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  Ol OBLIGATION: Include the copyright notice contained in the software\n  Ol OBLIGATION: Include a list of terms included in the license\n  Ol OBLIGATION: Correctly indicate the origin of the software in question\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;name&quot;: &quot;Distribute the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the copyright notice contained in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a list of terms included in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: The copyright notice and website address should appear as it is in the About box or wherever it is currently displayed. Acknowledgement of the product documentation is desirable but not required for use in the product.\nActions:\n- Ol Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n\nConditions:\nAND\n  Ol OBLIGATION: Include a copyright notice in the license\n  Ol OBLIGATION: Include the address of the website that is included in the software\n  Ol OBLIGATION: Correctly indicate the origin of the software in question\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the fetched binaries as they are&quot;,
+                            &quot;name&quot;: &quot;Distribute the fetched binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a copyright notice in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the address of the website that is included in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;The copyright notice and website address should appear as it is in the About box or wherever it is currently displayed. Acknowledgement of the product documentation is desirable but not required for use in the product.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Actions:\n- Ol Modify the obtained source code.\n\nConditions:\nAND\n  Ol OBLIGATION: Correctly indicate the origin of the software in question\n  Ol OBLIGATION: Indicate that you have made the change yourself.\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Modify the obtained source code.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Indicate that you have made the change yourself.&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                }
+            },
+            {
+                &quot;_str&quot;: &quot;Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Ol Distribution of Modified Source Code\n\nConditions:\nAND\n  Ol OBLIGATION: Include the copyright notice contained in the software\n  Ol OBLIGATION: Include a list of terms included in the license\n  Ol OBLIGATION: Correctly indicate the origin of the software in question\n  Ol OBLIGATION: Indicate that you have made the change yourself.\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribution of Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the copyright notice contained in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a list of terms included in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Indicate that you have made the change yourself.&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: The copyright notice and website address should appear as it is in the About box or wherever it is currently displayed. Acknowledgement of the product documentation is desirable but not required for use in the product.\nActions:\n- Ol Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  Ol OBLIGATION: Include a copyright notice in the license\n  Ol OBLIGATION: Include the address of the website that is included in the software\n  Ol OBLIGATION: Correctly indicate the origin of the software in question\n  Ol OBLIGATION: Indicate that you have made the change yourself.\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribute the generated binaries from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a copyright notice in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the address of the website that is included in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Indicate that you have made the change yourself.&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;The copyright notice and website address should appear as it is in the About box or wherever it is currently displayed. Acknowledgement of the product documentation is desirable but not required for use in the product.&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;HitachiOpenLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/12196a2d995b99bbd4548120bbf05190">LicenseLynx:12196a2d995b99bbd4548120bbf05190</a> for <a href="/?license=spdx:InnoSetup"><span class="licensename"><span class="namespace">spdx:</span>InnoSetup</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>InnoSetup</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Inno Setup License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>inno-setup</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-inno-setup</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:InnoSetup&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:inno-setup&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:LicenseRef-scancode-inno-setup&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Inno Setup License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;12196a2d995b99bbd4548120bbf05190&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:inno-setup&quot;,
+            &quot;scancode:LicenseRef-scancode-inno-setup&quot;,
+            &quot;spdx:Inno Setup License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:InnoSetup&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

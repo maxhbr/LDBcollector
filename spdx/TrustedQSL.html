@@ -1,0 +1,971 @@
+<html><head><title>ldbcollector: spdx:TrustedQSL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:TrustedQSL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">TrustedQSL</span></li><li><span class="licensename"><span class="namespace">cavil:</span>TrustedQSL</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>TrustedQSL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>trustedqsl</span></li><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></li><li><span class="licensename">TrustedQSL License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>TrustedQSL License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:f878e91125d0085f0a3a8ca14a09431e">[<a href="/fact/ScancodeData/f878e91125d0085f0a3a8ca14a09431e">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:70822460dedbf18ed3b307214a58574c">[<a href="/fact/SPDXLicense/70822460dedbf18ed3b307214a58574c">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:98e5cff6c78023d580d01d9c4cd1760d">[<a href="/fact/FedoraEntry/98e5cff6c78023d580d01d9c4cd1760d">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c00e8212e51b066f0a6a7c21030e8547">[<a href="/fact/OrtLicenseCategorization/c00e8212e51b066f0a6a7c21030e8547">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c00e8212e51b066f0a6a7c21030e8547">[<a href="/fact/OrtLicenseCategorization/c00e8212e51b066f0a6a7c21030e8547">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt" target="_blank">https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 2001-2015 American Radio Relay League, Inc. All rights
+reserved.
+
+Portions (C) 2003-2023 The TrustedQSL Developers. Please see the AUTHORS.txt
+file for contributors.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Any redistribution of source code must retain the above copyright
+notice, this list of conditions and the disclaimer shown in
+Paragraph 5 (below).
+
+2. Redistribution in binary form must reproduce the above copyright
+notice, this list of conditions and the disclaimer shown in
+Paragraph 5 (below) in the documentation and/or other materials
+provided with the distribution.
+
+3. Products derived from or including this software may not use
+&quot;Logbook of the World&quot; or &quot;LoTW&quot; or any other American Radio Relay
+League, Incorporated trademarks or servicemarks in their names
+without prior written permission of the ARRL. See Paragraph 6
+(below) for contact information.
+
+4. Use of this software does not imply endorsement by ARRL of
+products derived from or including this software and vendors may not
+claim such endorsement. 
+
+5. Disclaimer: This software is provided &quot;as-is&quot; without
+representation, guarantee or warranty of any kind, either express or
+implied, including but not limited to the implied warranties of
+merchantability or of fitness for a particular purpose. The entire
+risk as to the quality and performance of the software is solely
+with you. Should the software prove defective, you (and not the
+American Radio Relay League, its officers, directors, employees or
+agents) assume the entire cost of all necessary servicing, repair or
+correction. In no event will ARRL be liable to you or to any third
+party for any damages, whether direct or indirect, including lost
+profits, lost savings, or other incidental or consequential damages
+arising out of the use or inability to use such software, regardless
+of whether ARRL has been advised of the possibility of such damages.
+
+6. Contact information:
+
+American Radio Relay League, Inc.
+Attn: Logbook of the World Manager
+225 Main St
+Newington, CT 06111
+voice: 860-594-0200
+fax: 860-594-0259
+email: logbook@arrl.org
+Worldwide Web: www.arrl.org
+
+This software consists of voluntary contributions made by many
+individuals on behalf of the ARRL. More information on the &quot;Logbook
+of The World&quot; project and the ARRL is available from the ARRL Web
+site at www.arrl.org.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+	 &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+           &lt;p&gt;
+              Copyright (C) 2001-2015 American Radio
+              Relay League, Inc. All rights reserved.
+           &lt;/p&gt;
+
+           &lt;p&gt;
+              Portions (C) 2003-2023 The TrustedQSL Developers.
+              Please see the AUTHORS.txt file for contributors.
+           &lt;/p&gt;
+
+	 &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+            Redistribution and use in source and binary
+            forms, with or without modification, are permitted
+            provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Any redistribution of source code must retain the
+                  above copyright notice, this list of conditions
+                  and the disclaimer shown in Paragraph 5 (below).
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistribution in binary form must reproduce the above
+                  copyright notice, this list of conditions and the
+                  disclaimer shown in Paragraph 5 (below) in the documentation
+                  and/or other materials provided with the distribution.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Products derived from or including this software may not
+                  use &amp;quot;Logbook of the World&amp;quot; or &amp;quot;LoTW&amp;quot; or any other American
+                  Radio Relay League, Incorporated trademarks or servicemarks
+                  in their names without prior written permission of the
+                  ARRL. See Paragraph 6 (below) for contact information.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Use of this software does not imply endorsement
+                  by ARRL of products derived from or including this
+                  software and vendors may not claim such endorsement.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Disclaimer: This software is provided &amp;quot;as-is&amp;quot; without
+                  representation, guarantee or warranty of any kind, either
+                  express or implied, including but not limited to the
+                  implied warranties of merchantability or of fitness for
+                  a particular purpose. The entire risk as to the quality
+                  and performance of the software is solely with you. Should
+                  the software prove defective, you (and not the American
+                  Radio Relay League, its officers, directors, employees or
+                  agents) assume the entire cost of all necessary servicing,
+                  repair or correction. In no event will ARRL be liable to
+                  you or to any third party for any damages, whether direct
+                  or indirect, including lost profits, lost savings, or other
+                  incidental or consequential damages arising out of the use
+                  or inability to use such software, regardless of whether
+                  ARRL has been advised of the possibility of such damages.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Contact information:
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  American Radio Relay League, Inc. Attn: Logbook
+                  of the World Manager 225 Main St Newington, CT
+                  06111 voice: 860-594-0200 fax: 860-594-0259 email:
+                  logbook@arrl.org Worldwide Web: www.arrl.org
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            This software consists of voluntary contributions made by
+            many individuals on behalf of the ARRL. More information
+            on the &amp;quot;Logbook of The World&amp;quot; project and the ARRL
+            is available from the ARRL Web site at www.arrl.org.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Any redistribution of source code must retain the above copyright
+notice, this list of conditions and the disclaimer shown in
+Paragraph 5 (below).
+
+2. Redistribution in binary form must reproduce the above copyright
+notice, this list of conditions and the disclaimer shown in
+Paragraph 5 (below) in the documentation and/or other materials
+provided with the distribution.
+
+3. Products derived from or including this software may not use
+&quot;Logbook of the World&quot; or &quot;LoTW&quot; or any other American Radio Relay
+League, Incorporated trademarks or servicemarks in their names
+without prior written permission of the ARRL. See Paragraph 6
+(below) for contact information.
+
+4. Use of this software does not imply endorsement by ARRL of
+products derived from or including this software and vendors may not
+claim such endorsement. 
+
+5. Disclaimer: This software is provided &quot;as-is&quot; without
+representation, guarantee or warranty of any kind, either express or
+implied, including but not limited to the implied warranties of
+merchantability or of fitness for a particular purpose. The entire
+risk as to the quality and performance of the software is solely
+with you. Should the software prove defective, you (and not the
+American Radio Relay League, its officers, directors, employees or
+agents) assume the entire cost of all necessary servicing, repair or
+correction. In no event will ARRL be liable to you or to any third
+party for any damages, whether direct or indirect, including lost
+profits, lost savings, or other incidental or consequential damages
+arising out of the use or inability to use such software, regardless
+of whether ARRL has been advised of the possibility of such damages.
+
+6. Contact information:
+
+American Radio Relay League, Inc.
+Attn: Logbook of the World Manager
+225 Main St
+Newington, CT 06111
+voice: 860-594-0200
+fax: 860-594-0259
+email: logbook@arrl.org
+Worldwide Web: www.arrl.org
+
+This software consists of voluntary contributions made by many
+individuals on behalf of the ARRL. More information on the &quot;Logbook
+of The World&quot; project and the ARRL is available from the ARRL Web
+site at www.arrl.org.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/70822460dedbf18ed3b307214a58574c">SPDXLicense:70822460dedbf18ed3b307214a58574c</a> for <a href="/?license=spdx:TrustedQSL"><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TrustedQSL License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:70822460dedbf18ed3b307214a58574c">[<a href="/fact/SPDXLicense/70822460dedbf18ed3b307214a58574c">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt" target="_blank">https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 2001-2015 American Radio Relay League, Inc. All rights
+reserved.
+
+Portions (C) 2003-2023 The TrustedQSL Developers. Please see the AUTHORS.txt
+file for contributors.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Any redistribution of source code must retain the above copyright
+notice, this list of conditions and the disclaimer shown in
+Paragraph 5 (below).
+
+2. Redistribution in binary form must reproduce the above copyright
+notice, this list of conditions and the disclaimer shown in
+Paragraph 5 (below) in the documentation and/or other materials
+provided with the distribution.
+
+3. Products derived from or including this software may not use
+&quot;Logbook of the World&quot; or &quot;LoTW&quot; or any other American Radio Relay
+League, Incorporated trademarks or servicemarks in their names
+without prior written permission of the ARRL. See Paragraph 6
+(below) for contact information.
+
+4. Use of this software does not imply endorsement by ARRL of
+products derived from or including this software and vendors may not
+claim such endorsement. 
+
+5. Disclaimer: This software is provided &quot;as-is&quot; without
+representation, guarantee or warranty of any kind, either express or
+implied, including but not limited to the implied warranties of
+merchantability or of fitness for a particular purpose. The entire
+risk as to the quality and performance of the software is solely
+with you. Should the software prove defective, you (and not the
+American Radio Relay League, its officers, directors, employees or
+agents) assume the entire cost of all necessary servicing, repair or
+correction. In no event will ARRL be liable to you or to any third
+party for any damages, whether direct or indirect, including lost
+profits, lost savings, or other incidental or consequential damages
+arising out of the use or inability to use such software, regardless
+of whether ARRL has been advised of the possibility of such damages.
+
+6. Contact information:
+
+American Radio Relay League, Inc.
+Attn: Logbook of the World Manager
+225 Main St
+Newington, CT 06111
+voice: 860-594-0200
+fax: 860-594-0259
+email: logbook@arrl.org
+Worldwide Web: www.arrl.org
+
+This software consists of voluntary contributions made by many
+individuals on behalf of the ARRL. More information on the &quot;Logbook
+of The World&quot; project and the ARRL is available from the ARRL Web
+site at www.arrl.org.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+	 &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+           &lt;p&gt;
+              Copyright (C) 2001-2015 American Radio
+              Relay League, Inc. All rights reserved.
+           &lt;/p&gt;
+
+           &lt;p&gt;
+              Portions (C) 2003-2023 The TrustedQSL Developers.
+              Please see the AUTHORS.txt file for contributors.
+           &lt;/p&gt;
+
+	 &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+            Redistribution and use in source and binary
+            forms, with or without modification, are permitted
+            provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Any redistribution of source code must retain the
+                  above copyright notice, this list of conditions
+                  and the disclaimer shown in Paragraph 5 (below).
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistribution in binary form must reproduce the above
+                  copyright notice, this list of conditions and the
+                  disclaimer shown in Paragraph 5 (below) in the documentation
+                  and/or other materials provided with the distribution.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Products derived from or including this software may not
+                  use &amp;quot;Logbook of the World&amp;quot; or &amp;quot;LoTW&amp;quot; or any other American
+                  Radio Relay League, Incorporated trademarks or servicemarks
+                  in their names without prior written permission of the
+                  ARRL. See Paragraph 6 (below) for contact information.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Use of this software does not imply endorsement
+                  by ARRL of products derived from or including this
+                  software and vendors may not claim such endorsement.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Disclaimer: This software is provided &amp;quot;as-is&amp;quot; without
+                  representation, guarantee or warranty of any kind, either
+                  express or implied, including but not limited to the
+                  implied warranties of merchantability or of fitness for
+                  a particular purpose. The entire risk as to the quality
+                  and performance of the software is solely with you. Should
+                  the software prove defective, you (and not the American
+                  Radio Relay League, its officers, directors, employees or
+                  agents) assume the entire cost of all necessary servicing,
+                  repair or correction. In no event will ARRL be liable to
+                  you or to any third party for any damages, whether direct
+                  or indirect, including lost profits, lost savings, or other
+                  incidental or consequential damages arising out of the use
+                  or inability to use such software, regardless of whether
+                  ARRL has been advised of the possibility of such damages.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Contact information:
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  American Radio Relay League, Inc. Attn: Logbook
+                  of the World Manager 225 Main St Newington, CT
+                  06111 voice: 860-594-0200 fax: 860-594-0259 email:
+                  logbook@arrl.org Worldwide Web: www.arrl.org
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            This software consists of voluntary contributions made by
+            many individuals on behalf of the ARRL. More information
+            on the &amp;quot;Logbook of The World&amp;quot; project and the ARRL
+            is available from the ARRL Web site at www.arrl.org.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:TrustedQSL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TrustedQSL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;70822460dedbf18ed3b307214a58574c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (C) 2001-2015 American Radio Relay League, Inc. All rights\nreserved.\n\nPortions (C) 2003-2023 The TrustedQSL Developers. Please see the AUTHORS.txt\nfile for contributors.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Any redistribution of source code must retain the above copyright\nnotice, this list of conditions and the disclaimer shown in\nParagraph 5 (below).\n\n2. Redistribution in binary form must reproduce the above copyright\nnotice, this list of conditions and the disclaimer shown in\nParagraph 5 (below) in the documentation and/or other materials\nprovided with the distribution.\n\n3. Products derived from or including this software may not use\n\&quot;Logbook of the World\&quot; or \&quot;LoTW\&quot; or any other American Radio Relay\nLeague, Incorporated trademarks or servicemarks in their names\nwithout prior written permission of the ARRL. See Paragraph 6\n(below) for contact information.\n\n4. Use of this software does not imply endorsement by ARRL of\nproducts derived from or including this software and vendors may not\nclaim such endorsement. \n\n5. Disclaimer: This software is provided \&quot;as-is\&quot; without\nrepresentation, guarantee or warranty of any kind, either express or\nimplied, including but not limited to the implied warranties of\nmerchantability or of fitness for a particular purpose. The entire\nrisk as to the quality and performance of the software is solely\nwith you. Should the software prove defective, you (and not the\nAmerican Radio Relay League, its officers, directors, employees or\nagents) assume the entire cost of all necessary servicing, repair or\ncorrection. In no event will ARRL be liable to you or to any third\nparty for any damages, whether direct or indirect, including lost\nprofits, lost savings, or other incidental or consequential damages\narising out of the use or inability to use such software, regardless\nof whether ARRL has been advised of the possibility of such damages.\n\n6. Contact information:\n\nAmerican Radio Relay League, Inc.\nAttn: Logbook of the World Manager\n225 Main St\nNewington, CT 06111\nvoice: 860-594-0200\nfax: 860-594-0259\nemail: logbook@arrl.org\nWorldwide Web: www.arrl.org\n\nThis software consists of voluntary contributions made by many\nindividuals on behalf of the ARRL. More information on the \&quot;Logbook\nof The World\&quot; project and the ARRL is available from the ARRL Web\nsite at www.arrl.org.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n\t &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n           &lt;p&gt;\n              Copyright (C) 2001-2015 American Radio\n              Relay League, Inc. All rights reserved.\n           &lt;/p&gt;\n\n           &lt;p&gt;\n              Portions (C) 2003-2023 The TrustedQSL Developers.\n              Please see the AUTHORS.txt file for contributors.\n           &lt;/p&gt;\n\n\t &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n            Redistribution and use in source and binary\n            forms, with or without modification, are permitted\n            provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Any redistribution of source code must retain the\n                  above copyright notice, this list of conditions\n                  and the disclaimer shown in Paragraph 5 (below).\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistribution in binary form must reproduce the above\n                  copyright notice, this list of conditions and the\n                  disclaimer shown in Paragraph 5 (below) in the documentation\n                  and/or other materials provided with the distribution.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Products derived from or including this software may not\n                  use &amp;quot;Logbook of the World&amp;quot; or &amp;quot;LoTW&amp;quot; or any other American\n                  Radio Relay League, Incorporated trademarks or servicemarks\n                  in their names without prior written permission of the\n                  ARRL. See Paragraph 6 (below) for contact information.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Use of this software does not imply endorsement\n                  by ARRL of products derived from or including this\n                  software and vendors may not claim such endorsement.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Disclaimer: This software is provided &amp;quot;as-is&amp;quot; without\n                  representation, guarantee or warranty of any kind, either\n                  express or implied, including but not limited to the\n                  implied warranties of merchantability or of fitness for\n                  a particular purpose. The entire risk as to the quality\n                  and performance of the software is solely with you. Should\n                  the software prove defective, you (and not the American\n                  Radio Relay League, its officers, directors, employees or\n                  agents) assume the entire cost of all necessary servicing,\n                  repair or correction. In no event will ARRL be liable to\n                  you or to any third party for any damages, whether direct\n                  or indirect, including lost profits, lost savings, or other\n                  incidental or consequential damages arising out of the use\n                  or inability to use such software, regardless of whether\n                  ARRL has been advised of the possibility of such damages.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Contact information:\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  American Radio Relay League, Inc. Attn: Logbook\n                  of the World Manager 225 Main St Newington, CT\n                  06111 voice: 860-594-0200 fax: 860-594-0259 email:\n                  logbook@arrl.org Worldwide Web: www.arrl.org\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            This software consists of voluntary contributions made by\n            many individuals on behalf of the ARRL. More information\n            on the &amp;quot;Logbook of The World&amp;quot; project and the ARRL\n            is available from the ARRL Web site at www.arrl.org.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:04:05Z&quot;,
+                &quot;url&quot;: &quot;https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:TrustedQSL&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (C) 2001-2015 American Radio Relay League, Inc. All rights\nreserved.\n\nPortions (C) 2003-2023 The TrustedQSL Developers. Please see the AUTHORS.txt\nfile for contributors.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Any redistribution of source code must retain the above copyright\nnotice, this list of conditions and the disclaimer shown in\nParagraph 5 (below).\n\n2. Redistribution in binary form must reproduce the above copyright\nnotice, this list of conditions and the disclaimer shown in\nParagraph 5 (below) in the documentation and/or other materials\nprovided with the distribution.\n\n3. Products derived from or including this software may not use\n\&quot;Logbook of the World\&quot; or \&quot;LoTW\&quot; or any other American Radio Relay\nLeague, Incorporated trademarks or servicemarks in their names\nwithout prior written permission of the ARRL. See Paragraph 6\n(below) for contact information.\n\n4. Use of this software does not imply endorsement by ARRL of\nproducts derived from or including this software and vendors may not\nclaim such endorsement. \n\n5. Disclaimer: This software is provided \&quot;as-is\&quot; without\nrepresentation, guarantee or warranty of any kind, either express or\nimplied, including but not limited to the implied warranties of\nmerchantability or of fitness for a particular purpose. The entire\nrisk as to the quality and performance of the software is solely\nwith you. Should the software prove defective, you (and not the\nAmerican Radio Relay League, its officers, directors, employees or\nagents) assume the entire cost of all necessary servicing, repair or\ncorrection. In no event will ARRL be liable to you or to any third\nparty for any damages, whether direct or indirect, including lost\nprofits, lost savings, or other incidental or consequential damages\narising out of the use or inability to use such software, regardless\nof whether ARRL has been advised of the possibility of such damages.\n\n6. Contact information:\n\nAmerican Radio Relay League, Inc.\nAttn: Logbook of the World Manager\n225 Main St\nNewington, CT 06111\nvoice: 860-594-0200\nfax: 860-594-0259\nemail: logbook@arrl.org\nWorldwide Web: www.arrl.org\n\nThis software consists of voluntary contributions made by many\nindividuals on behalf of the ARRL. More information on the \&quot;Logbook\nof The World\&quot; project and the ARRL is available from the ARRL Web\nsite at www.arrl.org.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n\t &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n           &lt;p&gt;\n              Copyright (C) 2001-2015 American Radio\n              Relay League, Inc. All rights reserved.\n           &lt;/p&gt;\n\n           &lt;p&gt;\n              Portions (C) 2003-2023 The TrustedQSL Developers.\n              Please see the AUTHORS.txt file for contributors.\n           &lt;/p&gt;\n\n\t &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n            Redistribution and use in source and binary\n            forms, with or without modification, are permitted\n            provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Any redistribution of source code must retain the\n                  above copyright notice, this list of conditions\n                  and the disclaimer shown in Paragraph 5 (below).\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistribution in binary form must reproduce the above\n                  copyright notice, this list of conditions and the\n                  disclaimer shown in Paragraph 5 (below) in the documentation\n                  and/or other materials provided with the distribution.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Products derived from or including this software may not\n                  use &amp;quot;Logbook of the World&amp;quot; or &amp;quot;LoTW&amp;quot; or any other American\n                  Radio Relay League, Incorporated trademarks or servicemarks\n                  in their names without prior written permission of the\n                  ARRL. See Paragraph 6 (below) for contact information.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Use of this software does not imply endorsement\n                  by ARRL of products derived from or including this\n                  software and vendors may not claim such endorsement.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Disclaimer: This software is provided &amp;quot;as-is&amp;quot; without\n                  representation, guarantee or warranty of any kind, either\n                  express or implied, including but not limited to the\n                  implied warranties of merchantability or of fitness for\n                  a particular purpose. The entire risk as to the quality\n                  and performance of the software is solely with you. Should\n                  the software prove defective, you (and not the American\n                  Radio Relay League, its officers, directors, employees or\n                  agents) assume the entire cost of all necessary servicing,\n                  repair or correction. In no event will ARRL be liable to\n                  you or to any third party for any damages, whether direct\n                  or indirect, including lost profits, lost savings, or other\n                  incidental or consequential damages arising out of the use\n                  or inability to use such software, regardless of whether\n                  ARRL has been advised of the possibility of such damages.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Contact information:\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  American Radio Relay League, Inc. Attn: Logbook\n                  of the World Manager 225 Main St Newington, CT\n                  06111 voice: 860-594-0200 fax: 860-594-0259 email:\n                  logbook@arrl.org Worldwide Web: www.arrl.org\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            This software consists of voluntary contributions made by\n            many individuals on behalf of the ARRL. More information\n            on the &amp;quot;Logbook of The World&amp;quot; project and the ARRL\n            is available from the ARRL Web site at www.arrl.org.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;TrustedQSL License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 2001-2015 American Radio Relay League, Inc. All rights reserved.   Portions (C) 2003-2023 The TrustedQSL Developers. Please see the AUTHORS.txt file for contributors.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Any redistribution of source code must retain the above copyright notice, this list of conditions and the disclaimer shown in Paragraph 5 (below).\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Redistribution in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer shown in Paragraph 5 (below) in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Products derived from or including this software may not use \&quot;Logbook of the World\&quot; or \&quot;LoTW\&quot; or any other American Radio Relay League, Incorporated trademarks or servicemarks in their names without prior written permission of the ARRL. See Paragraph 6 (below) for contact information.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Use of this software does not imply endorsement by ARRL of products derived from or including this software and vendors may not claim such endorsement.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Disclaimer: This software is provided \&quot;as-is\&quot; without representation, guarantee or warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability or of fitness for a particular purpose. The entire risk as to the quality and performance of the software is solely with you. Should the software prove defective, you (and not the American Radio Relay League, its officers, directors, employees or agents) assume the entire cost of all necessary servicing, repair or correction. In no event will ARRL be liable to you or to any third party for any damages, whether direct or indirect, including lost profits, lost savings, or other incidental or consequential damages arising out of the use or inability to use such software, regardless of whether ARRL has been advised of the possibility of such damages.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Contact information:\n\n   American Radio Relay League, Inc. Attn: Logbook of the World Manager 225 Main St Newington, CT 06111 voice: 860-594-0200 fax: 860-594-0259 email: logbook@arrl.org Worldwide Web: www.arrl.org\n\nThis software consists of voluntary contributions made by many individuals on behalf of the ARRL. More information on the \&quot;Logbook of The World\&quot; project and the ARRL is available from the ARRL Web site at www.arrl.org.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/98e5cff6c78023d580d01d9c4cd1760d">FedoraEntry:98e5cff6c78023d580d01d9c4cd1760d</a> for <a href="/?license=Fedora:TrustedQSL"><span class="licensename"><span class="namespace">Fedora:</span>TrustedQSL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>TrustedQSL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:98e5cff6c78023d580d01d9c4cd1760d">[<a href="/fact/FedoraEntry/98e5cff6c78023d580d01d9c4cd1760d">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:TrustedQSL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:TrustedQSL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;98e5cff6c78023d580d01d9c4cd1760d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;TrustedQSL&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:TrustedQSL&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/f878e91125d0085f0a3a8ca14a09431e">ScancodeData:f878e91125d0085f0a3a8ca14a09431e</a> for <a href="/?license=scancode:trustedqsl"><span class="licensename"><span class="namespace">scancode:</span>trustedqsl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>trustedqsl</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></li><li><span class="licensename">TrustedQSL License</span></li><li><span class="licensename">TrustedQSL License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:f878e91125d0085f0a3a8ca14a09431e">[<a href="/fact/ScancodeData/f878e91125d0085f0a3a8ca14a09431e">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt" target="_blank">https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Any redistribution of source code must retain the above copyright
+notice, this list of conditions and the disclaimer shown in
+Paragraph 5 (below).
+
+2. Redistribution in binary form must reproduce the above copyright
+notice, this list of conditions and the disclaimer shown in
+Paragraph 5 (below) in the documentation and/or other materials
+provided with the distribution.
+
+3. Products derived from or including this software may not use
+&quot;Logbook of the World&quot; or &quot;LoTW&quot; or any other American Radio Relay
+League, Incorporated trademarks or servicemarks in their names
+without prior written permission of the ARRL. See Paragraph 6
+(below) for contact information.
+
+4. Use of this software does not imply endorsement by ARRL of
+products derived from or including this software and vendors may not
+claim such endorsement. 
+
+5. Disclaimer: This software is provided &quot;as-is&quot; without
+representation, guarantee or warranty of any kind, either express or
+implied, including but not limited to the implied warranties of
+merchantability or of fitness for a particular purpose. The entire
+risk as to the quality and performance of the software is solely
+with you. Should the software prove defective, you (and not the
+American Radio Relay League, its officers, directors, employees or
+agents) assume the entire cost of all necessary servicing, repair or
+correction. In no event will ARRL be liable to you or to any third
+party for any damages, whether direct or indirect, including lost
+profits, lost savings, or other incidental or consequential damages
+arising out of the use or inability to use such software, regardless
+of whether ARRL has been advised of the possibility of such damages.
+
+6. Contact information:
+
+American Radio Relay League, Inc.
+Attn: Logbook of the World Manager
+225 Main St
+Newington, CT 06111
+voice: 860-594-0200
+fax: 860-594-0259
+email: logbook@arrl.org
+Worldwide Web: www.arrl.org
+
+This software consists of voluntary contributions made by many
+individuals on behalf of the ARRL. More information on the &quot;Logbook
+of The World&quot; project and the ARRL is available from the ARRL Web
+site at www.arrl.org.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:trustedqsl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TrustedQSL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TrustedQSL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:TrustedQSL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;f878e91125d0085f0a3a8ca14a09431e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Any redistribution of source code must retain the above copyright\nnotice, this list of conditions and the disclaimer shown in\nParagraph 5 (below).\n\n2. Redistribution in binary form must reproduce the above copyright\nnotice, this list of conditions and the disclaimer shown in\nParagraph 5 (below) in the documentation and/or other materials\nprovided with the distribution.\n\n3. Products derived from or including this software may not use\n\&quot;Logbook of the World\&quot; or \&quot;LoTW\&quot; or any other American Radio Relay\nLeague, Incorporated trademarks or servicemarks in their names\nwithout prior written permission of the ARRL. See Paragraph 6\n(below) for contact information.\n\n4. Use of this software does not imply endorsement by ARRL of\nproducts derived from or including this software and vendors may not\nclaim such endorsement. \n\n5. Disclaimer: This software is provided \&quot;as-is\&quot; without\nrepresentation, guarantee or warranty of any kind, either express or\nimplied, including but not limited to the implied warranties of\nmerchantability or of fitness for a particular purpose. The entire\nrisk as to the quality and performance of the software is solely\nwith you. Should the software prove defective, you (and not the\nAmerican Radio Relay League, its officers, directors, employees or\nagents) assume the entire cost of all necessary servicing, repair or\ncorrection. In no event will ARRL be liable to you or to any third\nparty for any damages, whether direct or indirect, including lost\nprofits, lost savings, or other incidental or consequential damages\narising out of the use or inability to use such software, regardless\nof whether ARRL has been advised of the possibility of such damages.\n\n6. Contact information:\n\nAmerican Radio Relay League, Inc.\nAttn: Logbook of the World Manager\n225 Main St\nNewington, CT 06111\nvoice: 860-594-0200\nfax: 860-594-0259\nemail: logbook@arrl.org\nWorldwide Web: www.arrl.org\n\nThis software consists of voluntary contributions made by many\nindividuals on behalf of the ARRL. More information on the \&quot;Logbook\nof The World\&quot; project and the ARRL is available from the ARRL Web\nsite at www.arrl.org.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;trustedqsl&quot;,
+        &quot;_name&quot;: &quot;TrustedQSL License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://sourceforge.net/p/trustedqsl/tqsl/ci/master/tree/LICENSE.txt&quot;
+        ],
+        &quot;_owner&quot;: &quot;TrustedQSL Developers&quot;,
+        &quot;_shortName&quot;: &quot;TrustedQSL License&quot;,
+        &quot;_spdxId&quot;: &quot;TrustedQSL&quot;,
+        &quot;_text&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Any redistribution of source code must retain the above copyright\nnotice, this list of conditions and the disclaimer shown in\nParagraph 5 (below).\n\n2. Redistribution in binary form must reproduce the above copyright\nnotice, this list of conditions and the disclaimer shown in\nParagraph 5 (below) in the documentation and/or other materials\nprovided with the distribution.\n\n3. Products derived from or including this software may not use\n\&quot;Logbook of the World\&quot; or \&quot;LoTW\&quot; or any other American Radio Relay\nLeague, Incorporated trademarks or servicemarks in their names\nwithout prior written permission of the ARRL. See Paragraph 6\n(below) for contact information.\n\n4. Use of this software does not imply endorsement by ARRL of\nproducts derived from or including this software and vendors may not\nclaim such endorsement. \n\n5. Disclaimer: This software is provided \&quot;as-is\&quot; without\nrepresentation, guarantee or warranty of any kind, either express or\nimplied, including but not limited to the implied warranties of\nmerchantability or of fitness for a particular purpose. The entire\nrisk as to the quality and performance of the software is solely\nwith you. Should the software prove defective, you (and not the\nAmerican Radio Relay League, its officers, directors, employees or\nagents) assume the entire cost of all necessary servicing, repair or\ncorrection. In no event will ARRL be liable to you or to any third\nparty for any damages, whether direct or indirect, including lost\nprofits, lost savings, or other incidental or consequential damages\narising out of the use or inability to use such software, regardless\nof whether ARRL has been advised of the possibility of such damages.\n\n6. Contact information:\n\nAmerican Radio Relay League, Inc.\nAttn: Logbook of the World Manager\n225 Main St\nNewington, CT 06111\nvoice: 860-594-0200\nfax: 860-594-0259\nemail: logbook@arrl.org\nWorldwide Web: www.arrl.org\n\nThis software consists of voluntary contributions made by many\nindividuals on behalf of the ARRL. More information on the \&quot;Logbook\nof The World\&quot; project and the ARRL is available from the ARRL Web\nsite at www.arrl.org.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c00e8212e51b066f0a6a7c21030e8547">OrtLicenseCategorization:c00e8212e51b066f0a6a7c21030e8547</a> for <a href="/?license=SPDX:TrustedQSL"><span class="licensename"><span class="namespace">SPDX:</span>TrustedQSL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>TrustedQSL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c00e8212e51b066f0a6a7c21030e8547">[<a href="/fact/OrtLicenseCategorization/c00e8212e51b066f0a6a7c21030e8547">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c00e8212e51b066f0a6a7c21030e8547">[<a href="/fact/OrtLicenseCategorization/c00e8212e51b066f0a6a7c21030e8547">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:TrustedQSL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c00e8212e51b066f0a6a7c21030e8547&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:TrustedQSL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/c9ad50f6ebd37251ce855660e591dbaa">CavilLicenseChange:c9ad50f6ebd37251ce855660e591dbaa</a> for <a href="/?license=cavil:TrustedQSL"><span class="licensename"><span class="namespace">cavil:</span>TrustedQSL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>TrustedQSL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TrustedQSL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:TrustedQSL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TrustedQSL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;c9ad50f6ebd37251ce855660e591dbaa&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;TrustedQSL&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:TrustedQSL&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/10719200c5c09fd7cf22c3280931fb63">MetaeffektLicense:10719200c5c09fd7cf22c3280931fb63</a> for <a href="/?license=metaeffekt:TrustedQSL License"><span class="licensename"><span class="namespace">metaeffekt:</span>TrustedQSL License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>TrustedQSL License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">TrustedQSL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>trustedqsl</span></li><li><span class="licensename">TrustedQSL License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:TrustedQSL License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:TrustedQSL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TrustedQSL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TrustedQSL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:trustedqsl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;10719200c5c09fd7cf22c3280931fb63&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;TrustedQSL License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:TrustedQSL License&quot;,
+        &quot;_category&quot;: &quot;TrustedQSL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:trustedqsl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:TrustedQSL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/3d0e88d2b3a69cc2463f0cc7c35cc779">LicenseLynx:3d0e88d2b3a69cc2463f0cc7c35cc779</a> for <a href="/?license=spdx:TrustedQSL"><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>trustedqsl</span></li><li><span class="licensename"><span class="namespace">spdx:</span>TrustedQSL License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:TrustedQSL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:trustedqsl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:TrustedQSL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;3d0e88d2b3a69cc2463f0cc7c35cc779&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:trustedqsl&quot;,
+            &quot;spdx:TrustedQSL License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:TrustedQSL&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

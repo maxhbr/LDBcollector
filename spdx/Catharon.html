@@ -1,0 +1,2182 @@
+<html><head><title>ldbcollector: spdx:Catharon</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:Catharon</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></li></ul></li><li><b>other LicenseNames (17):</b><ul class="capsulUl clearfix"><li><span class="licensename">Catharon</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Catharon</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Catharon</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></li><li><span class="licensename">Catharon License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Catharon License</span></li><li><span class="licensename">Catharon Open Source License</span></li><li><span class="licensename"><span class="namespace">hitachi:</span>Catharon Open Source LICENSE</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Catharon Open Source License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Catharon Open Source License</span></li><li><span class="licensename">Catharon OSL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Catharon OSL</span></li><li><span class="licensename">catharon-osl</span></li><li><span class="licensename"><span class="namespace">scancode:</span>catharon-osl</span></li><li><span class="licensename">LicenseRef-scancode-catharon-osl</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-catharon-osl</span></li><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-catharon-osl</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:daa09b8ec151162e48464cbd14439cc2">[<a href="/fact/ScancodeData/daa09b8ec151162e48464cbd14439cc2">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:58e5b111fced9523ea570b59bbe13b9e">[<a href="/fact/SPDXLicense/58e5b111fced9523ea570b59bbe13b9e">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:91d3ea456c504abfb84e120ebf672d7e">[<a href="/fact/FedoraEntry/91d3ea456c504abfb84e120ebf672d7e">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:082719d2082f536bcba06f11927507b9">[<a href="/fact/OrtLicenseCategorization/082719d2082f536bcba06f11927507b9">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:f3a41b3c2fa86ff2fb2306818552de28">[<a href="/fact/OrtLicenseCategorization/f3a41b3c2fa86ff2fb2306818552de28">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:082719d2082f536bcba06f11927507b9">[<a href="/fact/OrtLicenseCategorization/082719d2082f536bcba06f11927507b9">OrtLicenseCategorization</a>]</span><span title="OrtLicenseCategorization:f3a41b3c2fa86ff2fb2306818552de28">[<a href="/fact/OrtLicenseCategorization/f3a41b3c2fa86ff2fb2306818552de28">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HitachiOpenLicense: </b>The &quot;Catharon Package&quot;, &quot;package&quot;, and &quot;Catharon Code&quot; are all original source code, binaries, and related documentation distributed by Catharon Productions, Inc. Sublicensing means that the person who has granted this license re-grants the license granted to you to a third party.<span class="provided-by">(provided by: <span title="HitachiOpenLicense:42a3d7d568c5be4b9cd6cd716bd27848">[<a href="/fact/HitachiOpenLicense/42a3d7d568c5be4b9cd6cd716bd27848">HitachiOpenLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/scummvm/scummvm/blob/v2.8.0/LICENSES/CatharonLicense.txt" target="_blank">https://github.com/scummvm/scummvm/blob/v2.8.0/LICENSES/CatharonLicense.txt</a></li><li><a href="https://github.com/scummvm/scummvm/tree/master/engines/ags/lib/freetype-2.1.3/autohint" target="_blank">https://github.com/scummvm/scummvm/tree/master/engines/ags/lib/freetype-2.1.3/autohint</a></li><li><a href="https://www.copperspice.com/docs/cs_overview/legal-3rdparty.html" target="_blank">https://www.copperspice.com/docs/cs_overview/legal-3rdparty.html</a></li><li><a href="https://github.com/search?q=%22The+Catharon+Open+Source+LICENSE%22&amp;type=code" target="_blank">https://github.com/search?q=%22The+Catharon+Open+Source+LICENSE%22&amp;type=code</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://github.com/scummvm/scummvm/blob/master/LICENSES/CatharonLicense.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>                  The Catharon Open Source LICENSE
+                    ----------------------------
+
+                            2000-Jul-04
+
+          Copyright (C) 2000 by Catharon Productions, Inc.
+
+
+
+Introduction
+============
+
+  This  license  applies to  source  files  distributed by  Catharon
+  Productions,  Inc.  in  several  archive packages.   This  license
+  applies  to all files  found in  such packages  which do  not fall
+  under their own explicit license.
+
+  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG
+  (Independent JPEG  Group) licenses, which  all encourage inclusion
+  and  use of  free  software in  commercial  and freeware  products
+  alike.  As a consequence, its main points are that:
+
+    o We  don&#39;t promise that  this software works.  However,  we are
+      interested in any kind of bug reports. (`as is&#39; distribution)
+
+    o You can  use this software for whatever you  want, in parts or
+      full form, without having to pay us. (`royalty-free&#39; usage)
+
+    o You may not pretend that  you wrote this software.  If you use
+      it, or  only parts of it,  in a program,  you must acknowledge
+      somewhere  in  your  documentation  that  you  have  used  the
+      Catharon Code. (`credits&#39;)
+
+  We  specifically  permit  and  encourage  the  inclusion  of  this
+  software, with  or without modifications,  in commercial products.
+  We disclaim  all warranties  covering the packages  distributed by
+  Catharon  Productions, Inc.  and  assume no  liability related  to
+  their use.
+
+
+Legal Terms
+===========
+
+0. Definitions
+--------------
+
+  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,
+  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally
+  distributed by Catharon Productions, Inc.
+
+  `You&#39; refers to  the licensee, or person using  the project, where
+  `using&#39; is a generic term including compiling the project&#39;s source
+  code as  well as linking it  to form a  `program&#39; or `executable&#39;.
+  This  program  is referred  to  as `a  program  using  one of  the
+  Catharon Packages&#39;.
+
+  This  license applies  to all  files distributed  in  the original
+  Catharon  Package(s),  including  all  source code,  binaries  and
+  documentation,  unless  otherwise  stated   in  the  file  in  its
+  original, unmodified form as  distributed in the original archive.
+  If you are  unsure whether or not a particular  file is covered by
+  this license, you must contact us to verify this.
+
+  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon
+  Productions, Inc.  All rights reserved except as specified below.
+
+1. No Warranty
+--------------
+
+  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY
+  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,
+  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR
+  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO
+  USE THE CATHARON PACKAGE.
+
+2. Redistribution
+-----------------
+
+  This  license  grants  a  worldwide, royalty-free,  perpetual  and
+  irrevocable right  and license to use,  execute, perform, compile,
+  display,  copy,   create  derivative  works   of,  distribute  and
+  sublicense the  Catharon Packages (in both source  and object code
+  forms)  and  derivative works  thereof  for  any  purpose; and  to
+  authorize others  to exercise  some or all  of the  rights granted
+  herein, subject to the following conditions:
+
+    o Redistribution  of source code  must retain this  license file
+      (`license.txt&#39;) unaltered; any additions, deletions or changes
+      to   the  original   files  must   be  clearly   indicated  in
+      accompanying  documentation.   The  copyright notices  of  the
+      unaltered, original  files must be preserved in  all copies of
+      source files.
+
+    o Redistribution  in binary form must provide  a disclaimer that
+      states  that the  software is  based in  part on  the  work of
+      Catharon Productions, Inc. in the distribution documentation.
+
+  These conditions  apply to any  software derived from or  based on
+  the Catharon Packages, not just  the unmodified files.  If you use
+  our work, you  must acknowledge us.  However, no  fee need be paid
+  to us.
+
+3. Advertising
+--------------
+
+  Neither Catharon Productions, Inc.  and contributors nor you shall
+  use  the  name  of  the  other  for  commercial,  advertising,  or
+  promotional purposes without specific prior written permission.
+
+  We suggest, but do not  require, that you use the following phrase
+  to refer to this software in your documentation: &#39;this software is
+  based in part on the Catharon Typography Project&#39;.
+
+  As  you have  not signed  this license,  you are  not  required to
+  accept  it.  However,  as  the Catharon  Packages are  copyrighted
+  material, only  this license, or  another one contracted  with the
+  authors, grants you  the right to use, distribute,  and modify it.
+  Therefore,  by  using,  distributing,  or modifying  the  Catharon
+  Packages,  you indicate  that you  understand and  accept  all the
+  terms of this license.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;
+            The Catharon Open Source LICENSE
+            &lt;br /&gt;
+----------------------------
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;
+            2000-Jul-04
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Copyright (C) 2000 by Catharon Productions, Inc.
+         &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Introduction
+            &lt;br /&gt;
+============
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This license applies to source files distributed by
+            Catharon Productions, Inc. in several archive packages.
+            This license applies to all files found in such packages
+            which do not fall under their own explicit license.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This license was inspired by the BSD, Artistic, and IJG
+            (Independent JPEG Group) licenses, which all encourage
+            inclusion and use of free software in commercial and freeware
+            products alike. As a consequence, its main points are that:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  We don&amp;apos;t promise that this software works. However, we are
+                  interested in any kind of bug reports. (`as is&amp;apos; distribution)
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  You can use this software for whatever you want, in parts
+                  or full form, without having to pay us. (`royalty-free&amp;apos; usage)
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  You may not pretend that you wrote this software. If you use it,
+                  or only parts of it, in a program, you must acknowledge somewhere in
+                  your documentation that you have used the Catharon Code. (`credits&amp;apos;)
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+        
+&lt;/ul&gt;
+         &lt;p&gt;
+            We specifically permit and encourage the inclusion of this software,
+            with or without modifications, in commercial products. We disclaim
+            all warranties covering the packages distributed by Catharon
+            Productions, Inc. and assume no liability related to their use.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Legal Terms
+            &lt;br /&gt;
+===========
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 0.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Definitions
+                  &lt;br /&gt;
+   --------------
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  Throughout this license, the terms `Catharon Package&amp;apos;,
+                  `package&amp;apos;, and `Catharon Code&amp;apos; refer to the set of files
+                  originally distributed by Catharon Productions, Inc.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  `You&amp;apos; refers to the licensee, or person using the project,
+                  where `using&amp;apos; is a generic term including compiling
+                  the project&amp;apos;s source code as well as linking it to form
+                  a `program&amp;apos; or `executable&amp;apos;. This program is referred
+                  to as `a program using one of the Catharon Packages&amp;apos;.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  This license applies to all files distributed in the original
+                  Catharon Package(s), including all source code, binaries
+                  and documentation, unless otherwise stated in the file in
+                  its original, unmodified form as distributed in the original
+                  archive. If you are unsure whether or not a particular file is
+                  covered by this license, you must contact us to verify this.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  The Catharon Packages are copyright (C) 2000 by Catharon
+                  Productions, Inc. All rights reserved except as specified below.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  No Warranty
+                  &lt;br /&gt;
+   --------------
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  THE CATHARON PACKAGES ARE PROVIDED `AS IS&amp;apos; WITHOUT WARRANTY
+                  OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT
+                  LIMITED TO, WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+                  A PARTICULAR PURPOSE. IN NO EVENT WILL ANY OF THE AUTHORS
+                  OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES CAUSED BY
+                  THE USE OF OR THE INABILITY TO USE THE CATHARON PACKAGE.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistribution
+                  &lt;br /&gt;
+   -----------------
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  This license grants a worldwide, royalty-free, perpetual
+                  and irrevocable right and license to use, execute,
+                  perform, compile, display, copy, create derivative
+                  works of, distribute and sublicense the Catharon
+                  Packages (in both source and object code forms) and
+                  derivative works thereof for any purpose; and to
+                  authorize others to exercise some or all of the rights
+                  granted herein, subject to the following conditions:
+               &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;   
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+                     &lt;p&gt;
+                        Redistribution of source code must retain this license file
+                        (`license.txt&amp;apos;) unaltered; any additions, deletions or changes
+                        to the original files must be clearly indicated in accompanying
+                        documentation. The copyright notices of the unaltered,
+                        original files must be preserved in all copies of source files.
+                     &lt;/p&gt;
+
+                   &lt;/li&gt;
+                   
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+                     &lt;p&gt;
+                        Redistribution in binary form must provide a disclaimer
+                        that states that the software is based in part on the work of
+                        Catharon Productions, Inc. in the distribution documentation.
+                     &lt;/p&gt;
+
+                  &lt;/li&gt;
+               
+&lt;/ul&gt;
+            &lt;p&gt;
+               These conditions apply to any software derived from
+               or based on the Catharon Packages, not just the
+               unmodified files. If you use our work, you must
+               acknowledge us. However, no fee need be paid to us.
+            &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Advertising
+                  &lt;br /&gt;
+   --------------
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  Neither Catharon Productions, Inc. and contributors
+                  nor you shall use the name of the other for
+                  commercial, advertising, or promotional purposes
+                  without specific prior written permission.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  We suggest, but do not require, that you use the following
+                  phrase to refer to this software in your documentation: &amp;apos;this
+                  software is based in part on the Catharon Typography Project&amp;apos;.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  As you have not signed this license, you are not required
+                  to accept it. However, as the Catharon Packages are
+                  copyrighted material, only this license, or another one
+                  contracted with the authors, grants you the right to use,
+                  distribute, and modify it. Therefore, by using, distributing,
+                  or modifying the Catharon Packages, you indicate that
+                  you understand and accept all the terms of this license.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+      </pre></details></li><li><details><summary>Text:</summary><pre>The Catharon Open Source LICENSE
+
+2000-Jul-04
+
+Introduction
+============
+
+  This  license  applies to  source  files  distributed by  Catharon
+  Productions,  Inc.  in  several  archive packages.   This  license
+  applies  to all files  found in  such packages  which do  not fall
+  under their own explicit license.
+
+  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG
+  (Independent JPEG  Group) licenses, which  all encourage inclusion
+  and  use of  free  software in  commercial  and freeware  products
+  alike.  As a consequence, its main points are that:
+
+    o We  don&#39;t promise that  this software works.  However,  we are
+      interested in any kind of bug reports. (`as is&#39; distribution)
+
+    o You can  use this software for whatever you  want, in parts or
+      full form, without having to pay us. (`royalty-free&#39; usage)
+
+    o You may not pretend that  you wrote this software.  If you use
+      it, or  only parts of it,  in a program,  you must acknowledge
+      somewhere  in  your  documentation  that  you  have  used  the
+      Catharon Code. (`credits&#39;)
+
+  We  specifically  permit  and  encourage  the  inclusion  of  this
+  software, with  or without modifications,  in commercial products.
+  We disclaim  all warranties  covering the packages  distributed by
+  Catharon  Productions, Inc.  and  assume no  liability related  to
+  their use.
+
+
+Legal Terms
+===========
+
+0. Definitions
+--------------
+
+  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,
+  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally
+  distributed by Catharon Productions, Inc.
+
+  `You&#39; refers to  the licensee, or person using  the project, where
+  `using&#39; is a generic term including compiling the project&#39;s source
+  code as  well as linking it  to form a  `program&#39; or `executable&#39;.
+  This  program  is referred  to  as `a  program  using  one of  the
+  Catharon Packages&#39;.
+
+  This  license applies  to all  files distributed  in  the original
+  Catharon  Package(s),  including  all  source code,  binaries  and
+  documentation,  unless  otherwise  stated   in  the  file  in  its
+  original, unmodified form as  distributed in the original archive.
+  If you are  unsure whether or not a particular  file is covered by
+  this license, you must contact us to verify this.
+
+  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon
+  Productions, Inc.  All rights reserved except as specified below.
+
+1. No Warranty
+--------------
+
+  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY
+  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,
+  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR
+  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO
+  USE THE CATHARON PACKAGE.
+
+2. Redistribution
+-----------------
+
+  This  license  grants  a  worldwide, royalty-free,  perpetual  and
+  irrevocable right  and license to use,  execute, perform, compile,
+  display,  copy,   create  derivative  works   of,  distribute  and
+  sublicense the  Catharon Packages (in both source  and object code
+  forms)  and  derivative works  thereof  for  any  purpose; and  to
+  authorize others  to exercise  some or all  of the  rights granted
+  herein, subject to the following conditions:
+
+    o Redistribution  of source code  must retain this  license file
+      (`license.txt&#39;) unaltered; any additions, deletions or changes
+      to   the  original   files  must   be  clearly   indicated  in
+      accompanying  documentation.   The  copyright notices  of  the
+      unaltered, original  files must be preserved in  all copies of
+      source files.
+
+    o Redistribution  in binary form must provide  a disclaimer that
+      states  that the  software is  based in  part on  the  work of
+      Catharon Productions, Inc. in the distribution documentation.
+
+  These conditions  apply to any  software derived from or  based on
+  the Catharon Packages, not just  the unmodified files.  If you use
+  our work, you  must acknowledge us.  However, no  fee need be paid
+  to us.
+
+3. Advertising
+--------------
+
+  Neither Catharon Productions, Inc.  and contributors nor you shall
+  use  the  name  of  the  other  for  commercial,  advertising,  or
+  promotional purposes without specific prior written permission.
+
+  We suggest, but do not  require, that you use the following phrase
+  to refer to this software in your documentation: &#39;this software is
+  based in part on the Catharon Typography Project&#39;.
+
+  As  you have  not signed  this license,  you are  not  required to
+  accept  it.  However,  as  the Catharon  Packages are  copyrighted
+  material, only  this license, or  another one contracted  with the
+  authors, grants you  the right to use, distribute,  and modify it.
+  Therefore,  by  using,  distributing,  or modifying  the  Catharon
+  Packages,  you indicate  that you  understand and  accept  all the
+  terms of this license.</pre></details></li><li><details><summary>Text:</summary><pre>                  The Catharon Open Source LICENSE
+                    ----------------------------
+
+                            2000-Jul-04
+
+          Copyright (C) 2000 by Catharon Productions, Inc.
+
+
+
+Introduction
+============
+
+  This  license  applies to  source  files  distributed by  Catharon
+  Productions,  Inc.  in  several  archive packages.   This  license
+  applies  to all files  found in  such packages  which do  not fall
+  under their own explicit license.
+
+  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG
+  (Independent JPEG  Group) licenses, which  all encourage inclusion
+  and  use of  free  software in  commercial  and freeware  products
+  alike.  As a consequence, its main points are that:
+
+    o We  don&#39;t promise that  this software works.  However,  we are
+      interested in any kind of bug reports. (`as is&#39; distribution)
+
+    o You can  use this software for whatever you  want, in parts or
+      full form, without having to pay us. (`royalty-free&#39; usage)
+
+    o You may not pretend that  you wrote this software.  If you use
+      it, or  only parts of it,  in a program,  you must acknowledge
+      somewhere  in  your  documentation  that  you  have  used  the
+      Catharon Code. (`credits&#39;)
+
+  We  specifically  permit  and  encourage  the  inclusion  of  this
+  software, with  or without modifications,  in commercial products.
+  We disclaim  all warranties  covering the packages  distributed by
+  Catharon  Productions, Inc.  and  assume no  liability related  to
+  their use.
+
+
+Legal Terms
+===========
+
+0. Definitions
+--------------
+
+  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,
+  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally
+  distributed by Catharon Productions, Inc.
+
+  `You&#39; refers to  the licensee, or person using  the project, where
+  `using&#39; is a generic term including compiling the project&#39;s source
+  code as  well as linking it  to form a  `program&#39; or `executable&#39;.
+  This  program  is referred  to  as `a  program  using  one of  the
+  Catharon Packages&#39;.
+
+  This  license applies  to all  files distributed  in  the original
+  Catharon  Package(s),  including  all  source code,  binaries  and
+  documentation,  unless  otherwise  stated   in  the  file  in  its
+  original, unmodified form as  distributed in the original archive.
+  If you are  unsure whether or not a particular  file is covered by
+  this license, you must contact us to verify this.
+
+  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon
+  Productions, Inc.  All rights reserved except as specified below.
+
+1. No Warranty
+--------------
+
+  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY
+  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,
+  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR
+  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO
+  USE THE CATHARON PACKAGE.
+
+2. Redistribution
+-----------------
+
+  This  license  grants  a  worldwide, royalty-free,  perpetual  and
+  irrevocable right  and license to use,  execute, perform, compile,
+  display,  copy,   create  derivative  works   of,  distribute  and
+  sublicense the  Catharon Packages (in both source  and object code
+  forms)  and  derivative works  thereof  for  any  purpose; and  to
+  authorize others  to exercise  some or all  of the  rights granted
+  herein, subject to the following conditions:
+
+    o Redistribution  of source code  must retain this  license file
+      (`license.txt&#39;) unaltered; any additions, deletions or changes
+      to   the  original   files  must   be  clearly   indicated  in
+      accompanying  documentation.   The  copyright notices  of  the
+      unaltered, original  files must be preserved in  all copies of
+      source files.
+
+    o Redistribution  in binary form must provide  a disclaimer that
+      states  that the  software is  based in  part on  the  work of
+      Catharon Productions, Inc. in the distribution documentation.
+
+  These conditions  apply to any  software derived from or  based on
+  the Catharon Packages, not just  the unmodified files.  If you use
+  our work, you  must acknowledge us.  However, no  fee need be paid
+  to us.
+
+3. Advertising
+--------------
+
+  Neither Catharon Productions, Inc.  and contributors nor you shall
+  use  the  name  of  the  other  for  commercial,  advertising,  or
+  promotional purposes without specific prior written permission.
+
+  We suggest, but do not  require, that you use the following phrase
+  to refer to this software in your documentation: &#39;this software is
+  based in part on the Catharon Typography Project&#39;.
+
+  As  you have  not signed  this license,  you are  not  required to
+  accept  it.  However,  as  the Catharon  Packages are  copyrighted
+  material, only  this license, or  another one contracted  with the
+  authors, grants you  the right to use, distribute,  and modify it.
+  Therefore,  by  using,  distributing,  or modifying  the  Catharon
+  Packages,  you indicate  that you  understand and  accept  all the
+  terms of this license.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/58e5b111fced9523ea570b59bbe13b9e">SPDXLicense:58e5b111fced9523ea570b59bbe13b9e</a> for <a href="/?license=spdx:Catharon"><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Catharon License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:58e5b111fced9523ea570b59bbe13b9e">[<a href="/fact/SPDXLicense/58e5b111fced9523ea570b59bbe13b9e">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/scummvm/scummvm/blob/v2.8.0/LICENSES/CatharonLicense.txt" target="_blank">https://github.com/scummvm/scummvm/blob/v2.8.0/LICENSES/CatharonLicense.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>                  The Catharon Open Source LICENSE
+                    ----------------------------
+
+                            2000-Jul-04
+
+          Copyright (C) 2000 by Catharon Productions, Inc.
+
+
+
+Introduction
+============
+
+  This  license  applies to  source  files  distributed by  Catharon
+  Productions,  Inc.  in  several  archive packages.   This  license
+  applies  to all files  found in  such packages  which do  not fall
+  under their own explicit license.
+
+  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG
+  (Independent JPEG  Group) licenses, which  all encourage inclusion
+  and  use of  free  software in  commercial  and freeware  products
+  alike.  As a consequence, its main points are that:
+
+    o We  don&#39;t promise that  this software works.  However,  we are
+      interested in any kind of bug reports. (`as is&#39; distribution)
+
+    o You can  use this software for whatever you  want, in parts or
+      full form, without having to pay us. (`royalty-free&#39; usage)
+
+    o You may not pretend that  you wrote this software.  If you use
+      it, or  only parts of it,  in a program,  you must acknowledge
+      somewhere  in  your  documentation  that  you  have  used  the
+      Catharon Code. (`credits&#39;)
+
+  We  specifically  permit  and  encourage  the  inclusion  of  this
+  software, with  or without modifications,  in commercial products.
+  We disclaim  all warranties  covering the packages  distributed by
+  Catharon  Productions, Inc.  and  assume no  liability related  to
+  their use.
+
+
+Legal Terms
+===========
+
+0. Definitions
+--------------
+
+  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,
+  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally
+  distributed by Catharon Productions, Inc.
+
+  `You&#39; refers to  the licensee, or person using  the project, where
+  `using&#39; is a generic term including compiling the project&#39;s source
+  code as  well as linking it  to form a  `program&#39; or `executable&#39;.
+  This  program  is referred  to  as `a  program  using  one of  the
+  Catharon Packages&#39;.
+
+  This  license applies  to all  files distributed  in  the original
+  Catharon  Package(s),  including  all  source code,  binaries  and
+  documentation,  unless  otherwise  stated   in  the  file  in  its
+  original, unmodified form as  distributed in the original archive.
+  If you are  unsure whether or not a particular  file is covered by
+  this license, you must contact us to verify this.
+
+  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon
+  Productions, Inc.  All rights reserved except as specified below.
+
+1. No Warranty
+--------------
+
+  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY
+  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,
+  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR
+  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO
+  USE THE CATHARON PACKAGE.
+
+2. Redistribution
+-----------------
+
+  This  license  grants  a  worldwide, royalty-free,  perpetual  and
+  irrevocable right  and license to use,  execute, perform, compile,
+  display,  copy,   create  derivative  works   of,  distribute  and
+  sublicense the  Catharon Packages (in both source  and object code
+  forms)  and  derivative works  thereof  for  any  purpose; and  to
+  authorize others  to exercise  some or all  of the  rights granted
+  herein, subject to the following conditions:
+
+    o Redistribution  of source code  must retain this  license file
+      (`license.txt&#39;) unaltered; any additions, deletions or changes
+      to   the  original   files  must   be  clearly   indicated  in
+      accompanying  documentation.   The  copyright notices  of  the
+      unaltered, original  files must be preserved in  all copies of
+      source files.
+
+    o Redistribution  in binary form must provide  a disclaimer that
+      states  that the  software is  based in  part on  the  work of
+      Catharon Productions, Inc. in the distribution documentation.
+
+  These conditions  apply to any  software derived from or  based on
+  the Catharon Packages, not just  the unmodified files.  If you use
+  our work, you  must acknowledge us.  However, no  fee need be paid
+  to us.
+
+3. Advertising
+--------------
+
+  Neither Catharon Productions, Inc.  and contributors nor you shall
+  use  the  name  of  the  other  for  commercial,  advertising,  or
+  promotional purposes without specific prior written permission.
+
+  We suggest, but do not  require, that you use the following phrase
+  to refer to this software in your documentation: &#39;this software is
+  based in part on the Catharon Typography Project&#39;.
+
+  As  you have  not signed  this license,  you are  not  required to
+  accept  it.  However,  as  the Catharon  Packages are  copyrighted
+  material, only  this license, or  another one contracted  with the
+  authors, grants you  the right to use, distribute,  and modify it.
+  Therefore,  by  using,  distributing,  or modifying  the  Catharon
+  Packages,  you indicate  that you  understand and  accept  all the
+  terms of this license.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;
+            The Catharon Open Source LICENSE
+            &lt;br /&gt;
+----------------------------
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+         &lt;p&gt;
+            2000-Jul-04
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Copyright (C) 2000 by Catharon Productions, Inc.
+         &lt;/p&gt;
+
+         &lt;/span&gt;&lt;/div&gt;
+         &lt;p&gt;
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Introduction
+            &lt;br /&gt;
+============
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This license applies to source files distributed by
+            Catharon Productions, Inc. in several archive packages.
+            This license applies to all files found in such packages
+            which do not fall under their own explicit license.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This license was inspired by the BSD, Artistic, and IJG
+            (Independent JPEG Group) licenses, which all encourage
+            inclusion and use of free software in commercial and freeware
+            products alike. As a consequence, its main points are that:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  We don&amp;apos;t promise that this software works. However, we are
+                  interested in any kind of bug reports. (`as is&amp;apos; distribution)
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  You can use this software for whatever you want, in parts
+                  or full form, without having to pay us. (`royalty-free&amp;apos; usage)
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  You may not pretend that you wrote this software. If you use it,
+                  or only parts of it, in a program, you must acknowledge somewhere in
+                  your documentation that you have used the Catharon Code. (`credits&amp;apos;)
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+        
+&lt;/ul&gt;
+         &lt;p&gt;
+            We specifically permit and encourage the inclusion of this software,
+            with or without modifications, in commercial products. We disclaim
+            all warranties covering the packages distributed by Catharon
+            Productions, Inc. and assume no liability related to their use.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Legal Terms
+            &lt;br /&gt;
+===========
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 0.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Definitions
+                  &lt;br /&gt;
+   --------------
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  Throughout this license, the terms `Catharon Package&amp;apos;,
+                  `package&amp;apos;, and `Catharon Code&amp;apos; refer to the set of files
+                  originally distributed by Catharon Productions, Inc.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  `You&amp;apos; refers to the licensee, or person using the project,
+                  where `using&amp;apos; is a generic term including compiling
+                  the project&amp;apos;s source code as well as linking it to form
+                  a `program&amp;apos; or `executable&amp;apos;. This program is referred
+                  to as `a program using one of the Catharon Packages&amp;apos;.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  This license applies to all files distributed in the original
+                  Catharon Package(s), including all source code, binaries
+                  and documentation, unless otherwise stated in the file in
+                  its original, unmodified form as distributed in the original
+                  archive. If you are unsure whether or not a particular file is
+                  covered by this license, you must contact us to verify this.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  The Catharon Packages are copyright (C) 2000 by Catharon
+                  Productions, Inc. All rights reserved except as specified below.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  No Warranty
+                  &lt;br /&gt;
+   --------------
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  THE CATHARON PACKAGES ARE PROVIDED `AS IS&amp;apos; WITHOUT WARRANTY
+                  OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT
+                  LIMITED TO, WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+                  A PARTICULAR PURPOSE. IN NO EVENT WILL ANY OF THE AUTHORS
+                  OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES CAUSED BY
+                  THE USE OF OR THE INABILITY TO USE THE CATHARON PACKAGE.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistribution
+                  &lt;br /&gt;
+   -----------------
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  This license grants a worldwide, royalty-free, perpetual
+                  and irrevocable right and license to use, execute,
+                  perform, compile, display, copy, create derivative
+                  works of, distribute and sublicense the Catharon
+                  Packages (in both source and object code forms) and
+                  derivative works thereof for any purpose; and to
+                  authorize others to exercise some or all of the rights
+                  granted herein, subject to the following conditions:
+               &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;   
+                  
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+                     &lt;p&gt;
+                        Redistribution of source code must retain this license file
+                        (`license.txt&amp;apos;) unaltered; any additions, deletions or changes
+                        to the original files must be clearly indicated in accompanying
+                        documentation. The copyright notices of the unaltered,
+                        original files must be preserved in all copies of source files.
+                     &lt;/p&gt;
+
+                   &lt;/li&gt;
+                   
+&lt;li&gt;
+                     &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; o&lt;/span&gt;&lt;/var&gt;
+                     &lt;p&gt;
+                        Redistribution in binary form must provide a disclaimer
+                        that states that the software is based in part on the work of
+                        Catharon Productions, Inc. in the distribution documentation.
+                     &lt;/p&gt;
+
+                  &lt;/li&gt;
+               
+&lt;/ul&gt;
+            &lt;p&gt;
+               These conditions apply to any software derived from
+               or based on the Catharon Packages, not just the
+               unmodified files. If you use our work, you must
+               acknowledge us. However, no fee need be paid to us.
+            &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Advertising
+                  &lt;br /&gt;
+   --------------
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  Neither Catharon Productions, Inc. and contributors
+                  nor you shall use the name of the other for
+                  commercial, advertising, or promotional purposes
+                  without specific prior written permission.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  We suggest, but do not require, that you use the following
+                  phrase to refer to this software in your documentation: &amp;apos;this
+                  software is based in part on the Catharon Typography Project&amp;apos;.
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  As you have not signed this license, you are not required
+                  to accept it. However, as the Catharon Packages are
+                  copyrighted material, only this license, or another one
+                  contracted with the authors, grants you the right to use,
+                  distribute, and modify it. Therefore, by using, distributing,
+                  or modifying the Catharon Packages, you indicate that
+                  you understand and accept all the terms of this license.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Catharon&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Catharon License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;58e5b111fced9523ea570b59bbe13b9e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;                  The Catharon Open Source LICENSE\n                    ----------------------------\n\n                            2000-Jul-04\n\n          Copyright (C) 2000 by Catharon Productions, Inc.\n\n\n\nIntroduction\n============\n\n  This  license  applies to  source  files  distributed by  Catharon\n  Productions,  Inc.  in  several  archive packages.   This  license\n  applies  to all files  found in  such packages  which do  not fall\n  under their own explicit license.\n\n  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG\n  (Independent JPEG  Group) licenses, which  all encourage inclusion\n  and  use of  free  software in  commercial  and freeware  products\n  alike.  As a consequence, its main points are that:\n\n    o We  don&#39;t promise that  this software works.  However,  we are\n      interested in any kind of bug reports. (`as is&#39; distribution)\n\n    o You can  use this software for whatever you  want, in parts or\n      full form, without having to pay us. (`royalty-free&#39; usage)\n\n    o You may not pretend that  you wrote this software.  If you use\n      it, or  only parts of it,  in a program,  you must acknowledge\n      somewhere  in  your  documentation  that  you  have  used  the\n      Catharon Code. (`credits&#39;)\n\n  We  specifically  permit  and  encourage  the  inclusion  of  this\n  software, with  or without modifications,  in commercial products.\n  We disclaim  all warranties  covering the packages  distributed by\n  Catharon  Productions, Inc.  and  assume no  liability related  to\n  their use.\n\n\nLegal Terms\n===========\n\n0. Definitions\n--------------\n\n  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,\n  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally\n  distributed by Catharon Productions, Inc.\n\n  `You&#39; refers to  the licensee, or person using  the project, where\n  `using&#39; is a generic term including compiling the project&#39;s source\n  code as  well as linking it  to form a  `program&#39; or `executable&#39;.\n  This  program  is referred  to  as `a  program  using  one of  the\n  Catharon Packages&#39;.\n\n  This  license applies  to all  files distributed  in  the original\n  Catharon  Package(s),  including  all  source code,  binaries  and\n  documentation,  unless  otherwise  stated   in  the  file  in  its\n  original, unmodified form as  distributed in the original archive.\n  If you are  unsure whether or not a particular  file is covered by\n  this license, you must contact us to verify this.\n\n  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon\n  Productions, Inc.  All rights reserved except as specified below.\n\n1. No Warranty\n--------------\n\n  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY\n  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,\n  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR\n  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS\n  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO\n  USE THE CATHARON PACKAGE.\n\n2. Redistribution\n-----------------\n\n  This  license  grants  a  worldwide, royalty-free,  perpetual  and\n  irrevocable right  and license to use,  execute, perform, compile,\n  display,  copy,   create  derivative  works   of,  distribute  and\n  sublicense the  Catharon Packages (in both source  and object code\n  forms)  and  derivative works  thereof  for  any  purpose; and  to\n  authorize others  to exercise  some or all  of the  rights granted\n  herein, subject to the following conditions:\n\n    o Redistribution  of source code  must retain this  license file\n      (`license.txt&#39;) unaltered; any additions, deletions or changes\n      to   the  original   files  must   be  clearly   indicated  in\n      accompanying  documentation.   The  copyright notices  of  the\n      unaltered, original  files must be preserved in  all copies of\n      source files.\n\n    o Redistribution  in binary form must provide  a disclaimer that\n      states  that the  software is  based in  part on  the  work of\n      Catharon Productions, Inc. in the distribution documentation.\n\n  These conditions  apply to any  software derived from or  based on\n  the Catharon Packages, not just  the unmodified files.  If you use\n  our work, you  must acknowledge us.  However, no  fee need be paid\n  to us.\n\n3. Advertising\n--------------\n\n  Neither Catharon Productions, Inc.  and contributors nor you shall\n  use  the  name  of  the  other  for  commercial,  advertising,  or\n  promotional purposes without specific prior written permission.\n\n  We suggest, but do not  require, that you use the following phrase\n  to refer to this software in your documentation: &#39;this software is\n  based in part on the Catharon Typography Project&#39;.\n\n  As  you have  not signed  this license,  you are  not  required to\n  accept  it.  However,  as  the Catharon  Packages are  copyrighted\n  material, only  this license, or  another one contracted  with the\n  authors, grants you  the right to use, distribute,  and modify it.\n  Therefore,  by  using,  distributing,  or modifying  the  Catharon\n  Packages,  you indicate  that you  understand and  accept  all the\n  terms of this license.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;\n            The Catharon Open Source LICENSE\n            &lt;br /&gt;\n----------------------------\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;\n            2000-Jul-04\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Copyright (C) 2000 by Catharon Productions, Inc.\n         &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Introduction\n            &lt;br /&gt;\n============\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This license applies to source files distributed by\n            Catharon Productions, Inc. in several archive packages.\n            This license applies to all files found in such packages\n            which do not fall under their own explicit license.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This license was inspired by the BSD, Artistic, and IJG\n            (Independent JPEG Group) licenses, which all encourage\n            inclusion and use of free software in commercial and freeware\n            products alike. As a consequence, its main points are that:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  We don&amp;apos;t promise that this software works. However, we are\n                  interested in any kind of bug reports. (`as is&amp;apos; distribution)\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  You can use this software for whatever you want, in parts\n                  or full form, without having to pay us. (`royalty-free&amp;apos; usage)\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  You may not pretend that you wrote this software. If you use it,\n                  or only parts of it, in a program, you must acknowledge somewhere in\n                  your documentation that you have used the Catharon Code. (`credits&amp;apos;)\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n        \n&lt;/ul&gt;\n         &lt;p&gt;\n            We specifically permit and encourage the inclusion of this software,\n            with or without modifications, in commercial products. We disclaim\n            all warranties covering the packages distributed by Catharon\n            Productions, Inc. and assume no liability related to their use.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Legal Terms\n            &lt;br /&gt;\n===========\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 0.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Definitions\n                  &lt;br /&gt;\n   --------------\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  Throughout this license, the terms `Catharon Package&amp;apos;,\n                  `package&amp;apos;, and `Catharon Code&amp;apos; refer to the set of files\n                  originally distributed by Catharon Productions, Inc.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  `You&amp;apos; refers to the licensee, or person using the project,\n                  where `using&amp;apos; is a generic term including compiling\n                  the project&amp;apos;s source code as well as linking it to form\n                  a `program&amp;apos; or `executable&amp;apos;. This program is referred\n                  to as `a program using one of the Catharon Packages&amp;apos;.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  This license applies to all files distributed in the original\n                  Catharon Package(s), including all source code, binaries\n                  and documentation, unless otherwise stated in the file in\n                  its original, unmodified form as distributed in the original\n                  archive. If you are unsure whether or not a particular file is\n                  covered by this license, you must contact us to verify this.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  The Catharon Packages are copyright (C) 2000 by Catharon\n                  Productions, Inc. All rights reserved except as specified below.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  No Warranty\n                  &lt;br /&gt;\n   --------------\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  THE CATHARON PACKAGES ARE PROVIDED `AS IS&amp;apos; WITHOUT WARRANTY\n                  OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT\n                  LIMITED TO, WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n                  A PARTICULAR PURPOSE. IN NO EVENT WILL ANY OF THE AUTHORS\n                  OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES CAUSED BY\n                  THE USE OF OR THE INABILITY TO USE THE CATHARON PACKAGE.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistribution\n                  &lt;br /&gt;\n   -----------------\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  This license grants a worldwide, royalty-free, perpetual\n                  and irrevocable right and license to use, execute,\n                  perform, compile, display, copy, create derivative\n                  works of, distribute and sublicense the Catharon\n                  Packages (in both source and object code forms) and\n                  derivative works thereof for any purpose; and to\n                  authorize others to exercise some or all of the rights\n                  granted herein, subject to the following conditions:\n               &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;   \n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n                     &lt;p&gt;\n                        Redistribution of source code must retain this license file\n                        (`license.txt&amp;apos;) unaltered; any additions, deletions or changes\n                        to the original files must be clearly indicated in accompanying\n                        documentation. The copyright notices of the unaltered,\n                        original files must be preserved in all copies of source files.\n                     &lt;/p&gt;\n\n                   &lt;/li&gt;\n                   \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n                     &lt;p&gt;\n                        Redistribution in binary form must provide a disclaimer\n                        that states that the software is based in part on the work of\n                        Catharon Productions, Inc. in the distribution documentation.\n                     &lt;/p&gt;\n\n                  &lt;/li&gt;\n               \n&lt;/ul&gt;\n            &lt;p&gt;\n               These conditions apply to any software derived from\n               or based on the Catharon Packages, not just the\n               unmodified files. If you use our work, you must\n               acknowledge us. However, no fee need be paid to us.\n            &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Advertising\n                  &lt;br /&gt;\n   --------------\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  Neither Catharon Productions, Inc. and contributors\n                  nor you shall use the name of the other for\n                  commercial, advertising, or promotional purposes\n                  without specific prior written permission.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  We suggest, but do not require, that you use the following\n                  phrase to refer to this software in your documentation: &amp;apos;this\n                  software is based in part on the Catharon Typography Project&amp;apos;.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  As you have not signed this license, you are not required\n                  to accept it. However, as the Catharon Packages are\n                  copyrighted material, only this license, or another one\n                  contracted with the authors, grants you the right to use,\n                  distribute, and modify it. Therefore, by using, distributing,\n                  or modifying the Catharon Packages, you indicate that\n                  you understand and accept all the terms of this license.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/scummvm/scummvm/blob/v2.8.0/LICENSES/CatharonLicense.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/scummvm/scummvm/blob/v2.8.0/LICENSES/CatharonLicense.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:52:51Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/scummvm/scummvm/blob/v2.8.0/LICENSES/CatharonLicense.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Catharon&quot;,
+        &quot;licenseText&quot;: &quot;                  The Catharon Open Source LICENSE\n                    ----------------------------\n\n                            2000-Jul-04\n\n          Copyright (C) 2000 by Catharon Productions, Inc.\n\n\n\nIntroduction\n============\n\n  This  license  applies to  source  files  distributed by  Catharon\n  Productions,  Inc.  in  several  archive packages.   This  license\n  applies  to all files  found in  such packages  which do  not fall\n  under their own explicit license.\n\n  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG\n  (Independent JPEG  Group) licenses, which  all encourage inclusion\n  and  use of  free  software in  commercial  and freeware  products\n  alike.  As a consequence, its main points are that:\n\n    o We  don&#39;t promise that  this software works.  However,  we are\n      interested in any kind of bug reports. (`as is&#39; distribution)\n\n    o You can  use this software for whatever you  want, in parts or\n      full form, without having to pay us. (`royalty-free&#39; usage)\n\n    o You may not pretend that  you wrote this software.  If you use\n      it, or  only parts of it,  in a program,  you must acknowledge\n      somewhere  in  your  documentation  that  you  have  used  the\n      Catharon Code. (`credits&#39;)\n\n  We  specifically  permit  and  encourage  the  inclusion  of  this\n  software, with  or without modifications,  in commercial products.\n  We disclaim  all warranties  covering the packages  distributed by\n  Catharon  Productions, Inc.  and  assume no  liability related  to\n  their use.\n\n\nLegal Terms\n===========\n\n0. Definitions\n--------------\n\n  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,\n  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally\n  distributed by Catharon Productions, Inc.\n\n  `You&#39; refers to  the licensee, or person using  the project, where\n  `using&#39; is a generic term including compiling the project&#39;s source\n  code as  well as linking it  to form a  `program&#39; or `executable&#39;.\n  This  program  is referred  to  as `a  program  using  one of  the\n  Catharon Packages&#39;.\n\n  This  license applies  to all  files distributed  in  the original\n  Catharon  Package(s),  including  all  source code,  binaries  and\n  documentation,  unless  otherwise  stated   in  the  file  in  its\n  original, unmodified form as  distributed in the original archive.\n  If you are  unsure whether or not a particular  file is covered by\n  this license, you must contact us to verify this.\n\n  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon\n  Productions, Inc.  All rights reserved except as specified below.\n\n1. No Warranty\n--------------\n\n  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY\n  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,\n  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR\n  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS\n  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO\n  USE THE CATHARON PACKAGE.\n\n2. Redistribution\n-----------------\n\n  This  license  grants  a  worldwide, royalty-free,  perpetual  and\n  irrevocable right  and license to use,  execute, perform, compile,\n  display,  copy,   create  derivative  works   of,  distribute  and\n  sublicense the  Catharon Packages (in both source  and object code\n  forms)  and  derivative works  thereof  for  any  purpose; and  to\n  authorize others  to exercise  some or all  of the  rights granted\n  herein, subject to the following conditions:\n\n    o Redistribution  of source code  must retain this  license file\n      (`license.txt&#39;) unaltered; any additions, deletions or changes\n      to   the  original   files  must   be  clearly   indicated  in\n      accompanying  documentation.   The  copyright notices  of  the\n      unaltered, original  files must be preserved in  all copies of\n      source files.\n\n    o Redistribution  in binary form must provide  a disclaimer that\n      states  that the  software is  based in  part on  the  work of\n      Catharon Productions, Inc. in the distribution documentation.\n\n  These conditions  apply to any  software derived from or  based on\n  the Catharon Packages, not just  the unmodified files.  If you use\n  our work, you  must acknowledge us.  However, no  fee need be paid\n  to us.\n\n3. Advertising\n--------------\n\n  Neither Catharon Productions, Inc.  and contributors nor you shall\n  use  the  name  of  the  other  for  commercial,  advertising,  or\n  promotional purposes without specific prior written permission.\n\n  We suggest, but do not  require, that you use the following phrase\n  to refer to this software in your documentation: &#39;this software is\n  based in part on the Catharon Typography Project&#39;.\n\n  As  you have  not signed  this license,  you are  not  required to\n  accept  it.  However,  as  the Catharon  Packages are  copyrighted\n  material, only  this license, or  another one contracted  with the\n  authors, grants you  the right to use, distribute,  and modify it.\n  Therefore,  by  using,  distributing,  or modifying  the  Catharon\n  Packages,  you indicate  that you  understand and  accept  all the\n  terms of this license.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;\n            The Catharon Open Source LICENSE\n            &lt;br /&gt;\n----------------------------\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n         &lt;p&gt;\n            2000-Jul-04\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Copyright (C) 2000 by Catharon Productions, Inc.\n         &lt;/p&gt;\n\n         &lt;/span&gt;&lt;/div&gt;\n         &lt;p&gt;\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Introduction\n            &lt;br /&gt;\n============\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This license applies to source files distributed by\n            Catharon Productions, Inc. in several archive packages.\n            This license applies to all files found in such packages\n            which do not fall under their own explicit license.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This license was inspired by the BSD, Artistic, and IJG\n            (Independent JPEG Group) licenses, which all encourage\n            inclusion and use of free software in commercial and freeware\n            products alike. As a consequence, its main points are that:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  We don&amp;apos;t promise that this software works. However, we are\n                  interested in any kind of bug reports. (`as is&amp;apos; distribution)\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  You can use this software for whatever you want, in parts\n                  or full form, without having to pay us. (`royalty-free&amp;apos; usage)\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  You may not pretend that you wrote this software. If you use it,\n                  or only parts of it, in a program, you must acknowledge somewhere in\n                  your documentation that you have used the Catharon Code. (`credits&amp;apos;)\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n        \n&lt;/ul&gt;\n         &lt;p&gt;\n            We specifically permit and encourage the inclusion of this software,\n            with or without modifications, in commercial products. We disclaim\n            all warranties covering the packages distributed by Catharon\n            Productions, Inc. and assume no liability related to their use.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Legal Terms\n            &lt;br /&gt;\n===========\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 0.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Definitions\n                  &lt;br /&gt;\n   --------------\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  Throughout this license, the terms `Catharon Package&amp;apos;,\n                  `package&amp;apos;, and `Catharon Code&amp;apos; refer to the set of files\n                  originally distributed by Catharon Productions, Inc.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  `You&amp;apos; refers to the licensee, or person using the project,\n                  where `using&amp;apos; is a generic term including compiling\n                  the project&amp;apos;s source code as well as linking it to form\n                  a `program&amp;apos; or `executable&amp;apos;. This program is referred\n                  to as `a program using one of the Catharon Packages&amp;apos;.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  This license applies to all files distributed in the original\n                  Catharon Package(s), including all source code, binaries\n                  and documentation, unless otherwise stated in the file in\n                  its original, unmodified form as distributed in the original\n                  archive. If you are unsure whether or not a particular file is\n                  covered by this license, you must contact us to verify this.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  The Catharon Packages are copyright (C) 2000 by Catharon\n                  Productions, Inc. All rights reserved except as specified below.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  No Warranty\n                  &lt;br /&gt;\n   --------------\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  THE CATHARON PACKAGES ARE PROVIDED `AS IS&amp;apos; WITHOUT WARRANTY\n                  OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT\n                  LIMITED TO, WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n                  A PARTICULAR PURPOSE. IN NO EVENT WILL ANY OF THE AUTHORS\n                  OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES CAUSED BY\n                  THE USE OF OR THE INABILITY TO USE THE CATHARON PACKAGE.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistribution\n                  &lt;br /&gt;\n   -----------------\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  This license grants a worldwide, royalty-free, perpetual\n                  and irrevocable right and license to use, execute,\n                  perform, compile, display, copy, create derivative\n                  works of, distribute and sublicense the Catharon\n                  Packages (in both source and object code forms) and\n                  derivative works thereof for any purpose; and to\n                  authorize others to exercise some or all of the rights\n                  granted herein, subject to the following conditions:\n               &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;   \n                  \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n                     &lt;p&gt;\n                        Redistribution of source code must retain this license file\n                        (`license.txt&amp;apos;) unaltered; any additions, deletions or changes\n                        to the original files must be clearly indicated in accompanying\n                        documentation. The copyright notices of the unaltered,\n                        original files must be preserved in all copies of source files.\n                     &lt;/p&gt;\n\n                   &lt;/li&gt;\n                   \n&lt;li&gt;\n                     &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; o&lt;/span&gt;&lt;/var&gt;\n                     &lt;p&gt;\n                        Redistribution in binary form must provide a disclaimer\n                        that states that the software is based in part on the work of\n                        Catharon Productions, Inc. in the distribution documentation.\n                     &lt;/p&gt;\n\n                  &lt;/li&gt;\n               \n&lt;/ul&gt;\n            &lt;p&gt;\n               These conditions apply to any software derived from\n               or based on the Catharon Packages, not just the\n               unmodified files. If you use our work, you must\n               acknowledge us. However, no fee need be paid to us.\n            &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Advertising\n                  &lt;br /&gt;\n   --------------\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  Neither Catharon Productions, Inc. and contributors\n                  nor you shall use the name of the other for\n                  commercial, advertising, or promotional purposes\n                  without specific prior written permission.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  We suggest, but do not require, that you use the following\n                  phrase to refer to this software in your documentation: &amp;apos;this\n                  software is based in part on the Catharon Typography Project&amp;apos;.\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  As you have not signed this license, you are not required\n                  to accept it. However, as the Catharon Packages are\n                  copyrighted material, only this license, or another one\n                  contracted with the authors, grants you the right to use,\n                  distribute, and modify it. Therefore, by using, distributing,\n                  or modifying the Catharon Packages, you indicate that\n                  you understand and accept all the terms of this license.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n      &quot;,
+        &quot;name&quot;: &quot;Catharon License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/scummvm/scummvm/blob/v2.8.0/LICENSES/CatharonLicense.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The Catharon Open Source LICENSE\n----------------------------\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;2000-Jul-04   Copyright (C) 2000 by Catharon Productions, Inc.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nIntroduction\n============\n\nThis license applies to source files distributed by Catharon Productions, Inc. in several archive packages. This license applies to all files found in such packages which do not fall under their own explicit license.\n\nThis license was inspired by the BSD, Artistic, and IJG (Independent JPEG Group) licenses, which all encourage inclusion and use of free software in commercial and freeware products alike. As a consequence, its main points are that:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;o\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   We don&#39;t promise that this software works. However, we are interested in any kind of bug reports. (`as is&#39; distribution)\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;o\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   You can use this software for whatever you want, in parts or full form, without having to pay us. (`royalty-free&#39; usage)\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;o\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   You may not pretend that you wrote this software. If you use it, or only parts of it, in a program, you must acknowledge somewhere in your documentation that you have used the Catharon Code. (`credits&#39;)\n\nWe specifically permit and encourage the inclusion of this software, with or without modifications, in commercial products. We disclaim all warranties covering the packages distributed by Catharon Productions, Inc. and assume no liability related to their use.\n\nLegal Terms\n===========\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;0.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Definitions\n   --------------\n\n   Throughout this license, the terms `Catharon Package&#39;, `package&#39;, and `Catharon Code&#39; refer to the set of files originally distributed by Catharon Productions, Inc.\n\n   `You&#39; refers to the licensee, or person using the project, where `using&#39; is a generic term including compiling the project&#39;s source code as well as linking it to form a `program&#39; or `executable&#39;. This program is referred to as `a program using one of the Catharon Packages&#39;.\n\n   This license applies to all files distributed in the original Catharon Package(s), including all source code, binaries and documentation, unless otherwise stated in the file in its original, unmodified form as distributed in the original archive. If you are unsure whether or not a particular file is covered by this license, you must contact us to verify this.\n\n   The Catharon Packages are copyright (C) 2000 by Catharon Productions, Inc. All rights reserved except as specified below.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   No Warranty\n   --------------\n\n   THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO USE THE CATHARON PACKAGE.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Redistribution\n   -----------------\n\n   This license grants a worldwide, royalty-free, perpetual and irrevocable right and license to use, execute, perform, compile, display, copy, create derivative works of, distribute and sublicense the Catharon Packages (in both source and object code forms) and derivative works thereof for any purpose; and to authorize others to exercise some or all of the rights granted herein, subject to the following conditions:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;o\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n      Redistribution of source code must retain this license file (`license.txt&#39;) unaltered; any additions, deletions or changes to the original files must be clearly indicated in accompanying documentation. The copyright notices of the unaltered, original files must be preserved in all copies of source files.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;o\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n      Redistribution in binary form must provide a disclaimer that states that the software is based in part on the work of Catharon Productions, Inc. in the distribution documentation.\n\n   These conditions apply to any software derived from or based on the Catharon Packages, not just the unmodified files. If you use our work, you must acknowledge us. However, no fee need be paid to us.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Advertising\n   --------------\n\n   Neither Catharon Productions, Inc. and contributors nor you shall use the name of the other for commercial, advertising, or promotional purposes without specific prior written permission.\n\n   We suggest, but do not require, that you use the following phrase to refer to this software in your documentation: &#39;this software is based in part on the Catharon Typography Project&#39;.\n\n   As you have not signed this license, you are not required to accept it. However, as the Catharon Packages are copyrighted material, only this license, or another one contracted with the authors, grants you the right to use, distribute, and modify it. Therefore, by using, distributing, or modifying the Catharon Packages, you indicate that you understand and accept all the terms of this license.\n   \n   &quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/91d3ea456c504abfb84e120ebf672d7e">FedoraEntry:91d3ea456c504abfb84e120ebf672d7e</a> for <a href="/?license=Fedora:Catharon"><span class="licensename"><span class="namespace">Fedora:</span>Catharon</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Catharon</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:91d3ea456c504abfb84e120ebf672d7e">[<a href="/fact/FedoraEntry/91d3ea456c504abfb84e120ebf672d7e">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Catharon&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Catharon&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;91d3ea456c504abfb84e120ebf672d7e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Catharon&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Catharon&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/daa09b8ec151162e48464cbd14439cc2">ScancodeData:daa09b8ec151162e48464cbd14439cc2</a> for <a href="/?license=scancode:catharon-osl"><span class="licensename"><span class="namespace">scancode:</span>catharon-osl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>catharon-osl</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></li><li><span class="licensename">Catharon Open Source License</span></li><li><span class="licensename">Catharon OSL</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:daa09b8ec151162e48464cbd14439cc2">[<a href="/fact/ScancodeData/daa09b8ec151162e48464cbd14439cc2">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/scummvm/scummvm/tree/master/engines/ags/lib/freetype-2.1.3/autohint" target="_blank">https://github.com/scummvm/scummvm/tree/master/engines/ags/lib/freetype-2.1.3/autohint</a></li><li><a href="https://www.copperspice.com/docs/cs_overview/legal-3rdparty.html" target="_blank">https://www.copperspice.com/docs/cs_overview/legal-3rdparty.html</a></li><li><a href="https://github.com/search?q=%22The+Catharon+Open+Source+LICENSE%22&amp;type=code" target="_blank">https://github.com/search?q=%22The+Catharon+Open+Source+LICENSE%22&amp;type=code</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/scummvm/scummvm/blob/master/LICENSES/CatharonLicense.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Catharon Open Source LICENSE
+
+2000-Jul-04
+
+Introduction
+============
+
+  This  license  applies to  source  files  distributed by  Catharon
+  Productions,  Inc.  in  several  archive packages.   This  license
+  applies  to all files  found in  such packages  which do  not fall
+  under their own explicit license.
+
+  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG
+  (Independent JPEG  Group) licenses, which  all encourage inclusion
+  and  use of  free  software in  commercial  and freeware  products
+  alike.  As a consequence, its main points are that:
+
+    o We  don&#39;t promise that  this software works.  However,  we are
+      interested in any kind of bug reports. (`as is&#39; distribution)
+
+    o You can  use this software for whatever you  want, in parts or
+      full form, without having to pay us. (`royalty-free&#39; usage)
+
+    o You may not pretend that  you wrote this software.  If you use
+      it, or  only parts of it,  in a program,  you must acknowledge
+      somewhere  in  your  documentation  that  you  have  used  the
+      Catharon Code. (`credits&#39;)
+
+  We  specifically  permit  and  encourage  the  inclusion  of  this
+  software, with  or without modifications,  in commercial products.
+  We disclaim  all warranties  covering the packages  distributed by
+  Catharon  Productions, Inc.  and  assume no  liability related  to
+  their use.
+
+
+Legal Terms
+===========
+
+0. Definitions
+--------------
+
+  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,
+  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally
+  distributed by Catharon Productions, Inc.
+
+  `You&#39; refers to  the licensee, or person using  the project, where
+  `using&#39; is a generic term including compiling the project&#39;s source
+  code as  well as linking it  to form a  `program&#39; or `executable&#39;.
+  This  program  is referred  to  as `a  program  using  one of  the
+  Catharon Packages&#39;.
+
+  This  license applies  to all  files distributed  in  the original
+  Catharon  Package(s),  including  all  source code,  binaries  and
+  documentation,  unless  otherwise  stated   in  the  file  in  its
+  original, unmodified form as  distributed in the original archive.
+  If you are  unsure whether or not a particular  file is covered by
+  this license, you must contact us to verify this.
+
+  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon
+  Productions, Inc.  All rights reserved except as specified below.
+
+1. No Warranty
+--------------
+
+  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY
+  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,
+  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR
+  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO
+  USE THE CATHARON PACKAGE.
+
+2. Redistribution
+-----------------
+
+  This  license  grants  a  worldwide, royalty-free,  perpetual  and
+  irrevocable right  and license to use,  execute, perform, compile,
+  display,  copy,   create  derivative  works   of,  distribute  and
+  sublicense the  Catharon Packages (in both source  and object code
+  forms)  and  derivative works  thereof  for  any  purpose; and  to
+  authorize others  to exercise  some or all  of the  rights granted
+  herein, subject to the following conditions:
+
+    o Redistribution  of source code  must retain this  license file
+      (`license.txt&#39;) unaltered; any additions, deletions or changes
+      to   the  original   files  must   be  clearly   indicated  in
+      accompanying  documentation.   The  copyright notices  of  the
+      unaltered, original  files must be preserved in  all copies of
+      source files.
+
+    o Redistribution  in binary form must provide  a disclaimer that
+      states  that the  software is  based in  part on  the  work of
+      Catharon Productions, Inc. in the distribution documentation.
+
+  These conditions  apply to any  software derived from or  based on
+  the Catharon Packages, not just  the unmodified files.  If you use
+  our work, you  must acknowledge us.  However, no  fee need be paid
+  to us.
+
+3. Advertising
+--------------
+
+  Neither Catharon Productions, Inc.  and contributors nor you shall
+  use  the  name  of  the  other  for  commercial,  advertising,  or
+  promotional purposes without specific prior written permission.
+
+  We suggest, but do not  require, that you use the following phrase
+  to refer to this software in your documentation: &#39;this software is
+  based in part on the Catharon Typography Project&#39;.
+
+  As  you have  not signed  this license,  you are  not  required to
+  accept  it.  However,  as  the Catharon  Packages are  copyrighted
+  material, only  this license, or  another one contracted  with the
+  authors, grants you  the right to use, distribute,  and modify it.
+  Therefore,  by  using,  distributing,  or modifying  the  Catharon
+  Packages,  you indicate  that you  understand and  accept  all the
+  terms of this license.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:catharon-osl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Catharon OSL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Catharon Open Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Catharon&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;daa09b8ec151162e48464cbd14439cc2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/scummvm/scummvm/blob/master/LICENSES/CatharonLicense.txt&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/scummvm/scummvm/tree/master/engines/ags/lib/freetype-2.1.3/autohint&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.copperspice.com/docs/cs_overview/legal-3rdparty.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/search?q=%22The+Catharon+Open+Source+LICENSE%22&amp;type=code&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Catharon Open Source LICENSE\n\n2000-Jul-04\n\nIntroduction\n============\n\n  This  license  applies to  source  files  distributed by  Catharon\n  Productions,  Inc.  in  several  archive packages.   This  license\n  applies  to all files  found in  such packages  which do  not fall\n  under their own explicit license.\n\n  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG\n  (Independent JPEG  Group) licenses, which  all encourage inclusion\n  and  use of  free  software in  commercial  and freeware  products\n  alike.  As a consequence, its main points are that:\n\n    o We  don&#39;t promise that  this software works.  However,  we are\n      interested in any kind of bug reports. (`as is&#39; distribution)\n\n    o You can  use this software for whatever you  want, in parts or\n      full form, without having to pay us. (`royalty-free&#39; usage)\n\n    o You may not pretend that  you wrote this software.  If you use\n      it, or  only parts of it,  in a program,  you must acknowledge\n      somewhere  in  your  documentation  that  you  have  used  the\n      Catharon Code. (`credits&#39;)\n\n  We  specifically  permit  and  encourage  the  inclusion  of  this\n  software, with  or without modifications,  in commercial products.\n  We disclaim  all warranties  covering the packages  distributed by\n  Catharon  Productions, Inc.  and  assume no  liability related  to\n  their use.\n\n\nLegal Terms\n===========\n\n0. Definitions\n--------------\n\n  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,\n  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally\n  distributed by Catharon Productions, Inc.\n\n  `You&#39; refers to  the licensee, or person using  the project, where\n  `using&#39; is a generic term including compiling the project&#39;s source\n  code as  well as linking it  to form a  `program&#39; or `executable&#39;.\n  This  program  is referred  to  as `a  program  using  one of  the\n  Catharon Packages&#39;.\n\n  This  license applies  to all  files distributed  in  the original\n  Catharon  Package(s),  including  all  source code,  binaries  and\n  documentation,  unless  otherwise  stated   in  the  file  in  its\n  original, unmodified form as  distributed in the original archive.\n  If you are  unsure whether or not a particular  file is covered by\n  this license, you must contact us to verify this.\n\n  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon\n  Productions, Inc.  All rights reserved except as specified below.\n\n1. No Warranty\n--------------\n\n  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY\n  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,\n  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR\n  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS\n  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO\n  USE THE CATHARON PACKAGE.\n\n2. Redistribution\n-----------------\n\n  This  license  grants  a  worldwide, royalty-free,  perpetual  and\n  irrevocable right  and license to use,  execute, perform, compile,\n  display,  copy,   create  derivative  works   of,  distribute  and\n  sublicense the  Catharon Packages (in both source  and object code\n  forms)  and  derivative works  thereof  for  any  purpose; and  to\n  authorize others  to exercise  some or all  of the  rights granted\n  herein, subject to the following conditions:\n\n    o Redistribution  of source code  must retain this  license file\n      (`license.txt&#39;) unaltered; any additions, deletions or changes\n      to   the  original   files  must   be  clearly   indicated  in\n      accompanying  documentation.   The  copyright notices  of  the\n      unaltered, original  files must be preserved in  all copies of\n      source files.\n\n    o Redistribution  in binary form must provide  a disclaimer that\n      states  that the  software is  based in  part on  the  work of\n      Catharon Productions, Inc. in the distribution documentation.\n\n  These conditions  apply to any  software derived from or  based on\n  the Catharon Packages, not just  the unmodified files.  If you use\n  our work, you  must acknowledge us.  However, no  fee need be paid\n  to us.\n\n3. Advertising\n--------------\n\n  Neither Catharon Productions, Inc.  and contributors nor you shall\n  use  the  name  of  the  other  for  commercial,  advertising,  or\n  promotional purposes without specific prior written permission.\n\n  We suggest, but do not  require, that you use the following phrase\n  to refer to this software in your documentation: &#39;this software is\n  based in part on the Catharon Typography Project&#39;.\n\n  As  you have  not signed  this license,  you are  not  required to\n  accept  it.  However,  as  the Catharon  Packages are  copyrighted\n  material, only  this license, or  another one contracted  with the\n  authors, grants you  the right to use, distribute,  and modify it.\n  Therefore,  by  using,  distributing,  or modifying  the  Catharon\n  Packages,  you indicate  that you  understand and  accept  all the\n  terms of this license.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/scummvm/scummvm/blob/master/LICENSES/CatharonLicense.txt&quot;,
+        &quot;_key&quot;: &quot;catharon-osl&quot;,
+        &quot;_name&quot;: &quot;Catharon Open Source License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/search?q=%22The+Catharon+Open+Source+LICENSE%22&amp;type=code&quot;
+        ],
+        &quot;_owner&quot;: &quot;Catharon&quot;,
+        &quot;_shortName&quot;: &quot;Catharon OSL&quot;,
+        &quot;_spdxId&quot;: &quot;Catharon&quot;,
+        &quot;_text&quot;: &quot;The Catharon Open Source LICENSE\n\n2000-Jul-04\n\nIntroduction\n============\n\n  This  license  applies to  source  files  distributed by  Catharon\n  Productions,  Inc.  in  several  archive packages.   This  license\n  applies  to all files  found in  such packages  which do  not fall\n  under their own explicit license.\n\n  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG\n  (Independent JPEG  Group) licenses, which  all encourage inclusion\n  and  use of  free  software in  commercial  and freeware  products\n  alike.  As a consequence, its main points are that:\n\n    o We  don&#39;t promise that  this software works.  However,  we are\n      interested in any kind of bug reports. (`as is&#39; distribution)\n\n    o You can  use this software for whatever you  want, in parts or\n      full form, without having to pay us. (`royalty-free&#39; usage)\n\n    o You may not pretend that  you wrote this software.  If you use\n      it, or  only parts of it,  in a program,  you must acknowledge\n      somewhere  in  your  documentation  that  you  have  used  the\n      Catharon Code. (`credits&#39;)\n\n  We  specifically  permit  and  encourage  the  inclusion  of  this\n  software, with  or without modifications,  in commercial products.\n  We disclaim  all warranties  covering the packages  distributed by\n  Catharon  Productions, Inc.  and  assume no  liability related  to\n  their use.\n\n\nLegal Terms\n===========\n\n0. Definitions\n--------------\n\n  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,\n  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally\n  distributed by Catharon Productions, Inc.\n\n  `You&#39; refers to  the licensee, or person using  the project, where\n  `using&#39; is a generic term including compiling the project&#39;s source\n  code as  well as linking it  to form a  `program&#39; or `executable&#39;.\n  This  program  is referred  to  as `a  program  using  one of  the\n  Catharon Packages&#39;.\n\n  This  license applies  to all  files distributed  in  the original\n  Catharon  Package(s),  including  all  source code,  binaries  and\n  documentation,  unless  otherwise  stated   in  the  file  in  its\n  original, unmodified form as  distributed in the original archive.\n  If you are  unsure whether or not a particular  file is covered by\n  this license, you must contact us to verify this.\n\n  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon\n  Productions, Inc.  All rights reserved except as specified below.\n\n1. No Warranty\n--------------\n\n  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY\n  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,\n  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR\n  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS\n  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO\n  USE THE CATHARON PACKAGE.\n\n2. Redistribution\n-----------------\n\n  This  license  grants  a  worldwide, royalty-free,  perpetual  and\n  irrevocable right  and license to use,  execute, perform, compile,\n  display,  copy,   create  derivative  works   of,  distribute  and\n  sublicense the  Catharon Packages (in both source  and object code\n  forms)  and  derivative works  thereof  for  any  purpose; and  to\n  authorize others  to exercise  some or all  of the  rights granted\n  herein, subject to the following conditions:\n\n    o Redistribution  of source code  must retain this  license file\n      (`license.txt&#39;) unaltered; any additions, deletions or changes\n      to   the  original   files  must   be  clearly   indicated  in\n      accompanying  documentation.   The  copyright notices  of  the\n      unaltered, original  files must be preserved in  all copies of\n      source files.\n\n    o Redistribution  in binary form must provide  a disclaimer that\n      states  that the  software is  based in  part on  the  work of\n      Catharon Productions, Inc. in the distribution documentation.\n\n  These conditions  apply to any  software derived from or  based on\n  the Catharon Packages, not just  the unmodified files.  If you use\n  our work, you  must acknowledge us.  However, no  fee need be paid\n  to us.\n\n3. Advertising\n--------------\n\n  Neither Catharon Productions, Inc.  and contributors nor you shall\n  use  the  name  of  the  other  for  commercial,  advertising,  or\n  promotional purposes without specific prior written permission.\n\n  We suggest, but do not  require, that you use the following phrase\n  to refer to this software in your documentation: &#39;this software is\n  based in part on the Catharon Typography Project&#39;.\n\n  As  you have  not signed  this license,  you are  not  required to\n  accept  it.  However,  as  the Catharon  Packages are  copyrighted\n  material, only  this license, or  another one contracted  with the\n  authors, grants you  the right to use, distribute,  and modify it.\n  Therefore,  by  using,  distributing,  or modifying  the  Catharon\n  Packages,  you indicate  that you  understand and  accept  all the\n  terms of this license.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://github.com/scummvm/scummvm/tree/master/engines/ags/lib/freetype-2.1.3/autohint&quot;,
+            &quot;https://www.copperspice.com/docs/cs_overview/legal-3rdparty.html&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/082719d2082f536bcba06f11927507b9">OrtLicenseCategorization:082719d2082f536bcba06f11927507b9</a> for <a href="/?license=SPDX:Catharon"><span class="licensename"><span class="namespace">SPDX:</span>Catharon</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Catharon</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:082719d2082f536bcba06f11927507b9">[<a href="/fact/OrtLicenseCategorization/082719d2082f536bcba06f11927507b9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:082719d2082f536bcba06f11927507b9">[<a href="/fact/OrtLicenseCategorization/082719d2082f536bcba06f11927507b9">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Catharon&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;082719d2082f536bcba06f11927507b9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Catharon&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/f3a41b3c2fa86ff2fb2306818552de28">OrtLicenseCategorization:f3a41b3c2fa86ff2fb2306818552de28</a> for <a href="/?license=SPDX:LicenseRef-scancode-catharon-osl"><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-catharon-osl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LicenseRef-scancode-catharon-osl</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f3a41b3c2fa86ff2fb2306818552de28">[<a href="/fact/OrtLicenseCategorization/f3a41b3c2fa86ff2fb2306818552de28">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f3a41b3c2fa86ff2fb2306818552de28">[<a href="/fact/OrtLicenseCategorization/f3a41b3c2fa86ff2fb2306818552de28">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LicenseRef-scancode-catharon-osl&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;f3a41b3c2fa86ff2fb2306818552de28&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LicenseRef-scancode-catharon-osl&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/8008fc8df0daacb2b998483ca67a6405">CavilLicenseChange:8008fc8df0daacb2b998483ca67a6405</a> for <a href="/?license=cavil:Catharon"><span class="licensename"><span class="namespace">cavil:</span>Catharon</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Catharon</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Catharon</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Catharon&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Catharon&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;8008fc8df0daacb2b998483ca67a6405&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Catharon&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Catharon&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/d287ba96cdca14f5e739d526b758d409">MetaeffektLicense:d287ba96cdca14f5e739d526b758d409</a> for <a href="/?license=metaeffekt:Catharon Open Source License"><span class="licensename"><span class="namespace">metaeffekt:</span>Catharon Open Source License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Catharon Open Source License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">Catharon</span></li><li><span class="licensename">Catharon License</span></li><li><span class="licensename">Catharon LICENSE</span></li><li><span class="licensename">Catharon OSL</span></li><li><span class="licensename">Catharon-OSL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>catharon-osl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Catharon Open Source License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Catharon&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Catharon&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Catharon License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Catharon LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Catharon OSL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Catharon-OSL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:catharon-osl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;d287ba96cdca14f5e739d526b758d409&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Catharon License&quot;,
+            &quot;Catharon LICENSE&quot;,
+            &quot;Catharon OSL&quot;,
+            &quot;Catharon-OSL&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Catharon Open Source License&quot;,
+        &quot;_category&quot;: &quot;Catharon&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:catharon-osl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Catharon&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HitachiOpenLicense">HitachiOpenLicense</a>: <a href="/fact/HitachiOpenLicense/42a3d7d568c5be4b9cd6cd716bd27848">HitachiOpenLicense:42a3d7d568c5be4b9cd6cd716bd27848</a> for <a href="/?license=hitachi:Catharon Open Source LICENSE"><span class="licensename"><span class="namespace">hitachi:</span>Catharon Open Source LICENSE</span></a></h3><h4>Description:</h4><span>The &quot;Catharon Package&quot;, &quot;package&quot;, and &quot;Catharon Code&quot; are all original source code, binaries, and related documentation distributed by Catharon Productions, Inc. Sublicensing means that the person who has granted this license re-grants the license granted to you to a third party.</span><h4>Permissions:</h4><ul><li><h5>Description:</h5><span>Related documents should be treated in the same way as software.</span><h5>Actions:</h5><ul><li><b>Use the obtained source code without modification</b>: <br><span>Use the fetched code as it is.</span></li><li><b>Using Modified Source Code</b>: <br><span></span></li><li><b>Use the retrieved binaries</b>: <br><span>Use the fetched binary as it is.</span></li><li><b>Use binaries generated from modified source code</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>RESTRICTION</b>: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.<br>Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.</li><li><h5>Description:</h5><span>Related documents should be treated in the same way as software.</span><h5>Actions:</h5><ul><li><b>Distribute the fetched binaries</b>: <br><span>Redistribute the fetched binaries as they are</span></li><li><b>Distribute the generated binaries from modified source code</b>: <br><span></span></li><li><b>Sublicense the acquired source code.</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li><li><b>Sublicensing Modified Source Code</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li><li><b>Sublicense the acquired binaries</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li><li><b>Sublicense the generated binaries from modified source code</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li><li><b>Display the obtained source code</b>: <br><span></span></li><li><b>Execute the obtained source code.</b>: <br><span></span></li><li><b>Display the modified source code</b>: <br><span></span></li><li><b>Executing Modified Source Code</b>: <br><span></span></li><li><b>Display the retrieved binary</b>: <br><span></span></li><li><b>Display the generated binary from the modified source code</b>: <br><span></span></li><li><b>Execute the generated binary from the modified source code</b>: <br><span></span></li><li><b>Execute the obtained binary</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>RESTRICTION</b>: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.<br>Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.</li><li><b>OBLIGATION</b>: Acknowledgements<br></li></ul></li><li><h5>Description:</h5><span>Related documents should be treated in the same way as software.</span><h5>Actions:</h5><ul><li><b>Distribute the obtained source code without modification</b>: <br><span>Redistribute the code as it was obtained</span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>RESTRICTION</b>: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.<br>Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.</li><li><b>OBLIGATION</b>: Give you a copy of the relevant license.<br></li><li><b>OBLIGATION</b>: Include the copyright notice contained in the software<br></li><li><b>OBLIGATION</b>: Acknowledgements<br></li></ul></li><li><h5>Description:</h5><span>Related documents should be treated in the same way as software.</span><h5>Actions:</h5><ul><li><b>Modify the obtained source code.</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>RESTRICTION</b>: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.<br>Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.</li><li><b>OBLIGATION</b>: Indicate your changes in the materials that accompany the distribution.<br></li><li><b>OBLIGATION</b>: Include the copyright notice contained in the software<br></li><li><b>OBLIGATION</b>: Acknowledgements<br></li></ul></li><li><h5>Description:</h5><span>Related documents should be treated in the same way as software.</span><h5>Actions:</h5><ul><li><b>Distribution of Modified Source Code</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>RESTRICTION</b>: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.<br>Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.</li><li><b>OBLIGATION</b>: Give you a copy of the relevant license.<br></li><li><b>OBLIGATION</b>: Indicate your changes in the materials that accompany the distribution.<br></li><li><b>OBLIGATION</b>: Include the copyright notice contained in the software<br></li><li><b>OBLIGATION</b>: Acknowledgements<br></li></ul></li><li><h5>Description:</h5><span>Treat related documentation in the same way as software. Use of the following phrase in materials and advertisements accompanying the distribution is recommended: &#39;&#39;this software is based in part on the Catharon Typography Project&#39;&#39;. This software is based in part on the Catharon Typography Project&#39;</span><h5>Actions:</h5><ul><li><b>Use the names of copyright holders and contributors in advertising and sales promotion.</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>REQUISITE</b>: Get special permission in writing.<br></li></ul><h4>Notices:</h4><ul><li><h5>Description:</h5><span>There is no guarantee.</span><h5>Content:</h5><span>the software is provided &quot;as-is&quot; and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. the software is provided &quot;as-is&quot; and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability and fitness for a particular purpose.</span></li><li><h5>Content:</h5><span>Neither the author nor the copyright holder shall be liable for any damage caused by the use or inability to use such software.</span></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">hitachi:</span>Catharon Open Source LICENSE</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>HitachiOpenLicense: </b>The &quot;Catharon Package&quot;, &quot;package&quot;, and &quot;Catharon Code&quot; are all original source code, binaries, and related documentation distributed by Catharon Productions, Inc. Sublicensing means that the person who has granted this license re-grants the license granted to you to a third party.<span class="provided-by">(provided by: <span title="HitachiOpenLicense:42a3d7d568c5be4b9cd6cd716bd27848">[<a href="/fact/HitachiOpenLicense/42a3d7d568c5be4b9cd6cd716bd27848">HitachiOpenLicense</a>]</span>)</span></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>                  The Catharon Open Source LICENSE
+                    ----------------------------
+
+                            2000-Jul-04
+
+          Copyright (C) 2000 by Catharon Productions, Inc.
+
+
+
+Introduction
+============
+
+  This  license  applies to  source  files  distributed by  Catharon
+  Productions,  Inc.  in  several  archive packages.   This  license
+  applies  to all files  found in  such packages  which do  not fall
+  under their own explicit license.
+
+  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG
+  (Independent JPEG  Group) licenses, which  all encourage inclusion
+  and  use of  free  software in  commercial  and freeware  products
+  alike.  As a consequence, its main points are that:
+
+    o We  don&#39;t promise that  this software works.  However,  we are
+      interested in any kind of bug reports. (`as is&#39; distribution)
+
+    o You can  use this software for whatever you  want, in parts or
+      full form, without having to pay us. (`royalty-free&#39; usage)
+
+    o You may not pretend that  you wrote this software.  If you use
+      it, or  only parts of it,  in a program,  you must acknowledge
+      somewhere  in  your  documentation  that  you  have  used  the
+      Catharon Code. (`credits&#39;)
+
+  We  specifically  permit  and  encourage  the  inclusion  of  this
+  software, with  or without modifications,  in commercial products.
+  We disclaim  all warranties  covering the packages  distributed by
+  Catharon  Productions, Inc.  and  assume no  liability related  to
+  their use.
+
+
+Legal Terms
+===========
+
+0. Definitions
+--------------
+
+  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,
+  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally
+  distributed by Catharon Productions, Inc.
+
+  `You&#39; refers to  the licensee, or person using  the project, where
+  `using&#39; is a generic term including compiling the project&#39;s source
+  code as  well as linking it  to form a  `program&#39; or `executable&#39;.
+  This  program  is referred  to  as `a  program  using  one of  the
+  Catharon Packages&#39;.
+
+  This  license applies  to all  files distributed  in  the original
+  Catharon  Package(s),  including  all  source code,  binaries  and
+  documentation,  unless  otherwise  stated   in  the  file  in  its
+  original, unmodified form as  distributed in the original archive.
+  If you are  unsure whether or not a particular  file is covered by
+  this license, you must contact us to verify this.
+
+  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon
+  Productions, Inc.  All rights reserved except as specified below.
+
+1. No Warranty
+--------------
+
+  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY
+  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,
+  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR
+  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO
+  USE THE CATHARON PACKAGE.
+
+2. Redistribution
+-----------------
+
+  This  license  grants  a  worldwide, royalty-free,  perpetual  and
+  irrevocable right  and license to use,  execute, perform, compile,
+  display,  copy,   create  derivative  works   of,  distribute  and
+  sublicense the  Catharon Packages (in both source  and object code
+  forms)  and  derivative works  thereof  for  any  purpose; and  to
+  authorize others  to exercise  some or all  of the  rights granted
+  herein, subject to the following conditions:
+
+    o Redistribution  of source code  must retain this  license file
+      (`license.txt&#39;) unaltered; any additions, deletions or changes
+      to   the  original   files  must   be  clearly   indicated  in
+      accompanying  documentation.   The  copyright notices  of  the
+      unaltered, original  files must be preserved in  all copies of
+      source files.
+
+    o Redistribution  in binary form must provide  a disclaimer that
+      states  that the  software is  based in  part on  the  work of
+      Catharon Productions, Inc. in the distribution documentation.
+
+  These conditions  apply to any  software derived from or  based on
+  the Catharon Packages, not just  the unmodified files.  If you use
+  our work, you  must acknowledge us.  However, no  fee need be paid
+  to us.
+
+3. Advertising
+--------------
+
+  Neither Catharon Productions, Inc.  and contributors nor you shall
+  use  the  name  of  the  other  for  commercial,  advertising,  or
+  promotional purposes without specific prior written permission.
+
+  We suggest, but do not  require, that you use the following phrase
+  to refer to this software in your documentation: &#39;this software is
+  based in part on the Catharon Typography Project&#39;.
+
+  As  you have  not signed  this license,  you are  not  required to
+  accept  it.  However,  as  the Catharon  Packages are  copyrighted
+  material, only  this license, or  another one contracted  with the
+  authors, grants you  the right to use, distribute,  and modify it.
+  Therefore,  by  using,  distributing,  or modifying  the  Catharon
+  Packages,  you indicate  that you  understand and  accept  all the
+  terms of this license.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;hitachi:Catharon Open Source LICENSE&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HitachiOpenLicense&quot;,
+        &quot;42a3d7d568c5be4b9cd6cd716bd27848&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;                  The Catharon Open Source LICENSE\n                    ----------------------------\n\n                            2000-Jul-04\n\n          Copyright (C) 2000 by Catharon Productions, Inc.\n\n\n\nIntroduction\n============\n\n  This  license  applies to  source  files  distributed by  Catharon\n  Productions,  Inc.  in  several  archive packages.   This  license\n  applies  to all files  found in  such packages  which do  not fall\n  under their own explicit license.\n\n  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG\n  (Independent JPEG  Group) licenses, which  all encourage inclusion\n  and  use of  free  software in  commercial  and freeware  products\n  alike.  As a consequence, its main points are that:\n\n    o We  don&#39;t promise that  this software works.  However,  we are\n      interested in any kind of bug reports. (`as is&#39; distribution)\n\n    o You can  use this software for whatever you  want, in parts or\n      full form, without having to pay us. (`royalty-free&#39; usage)\n\n    o You may not pretend that  you wrote this software.  If you use\n      it, or  only parts of it,  in a program,  you must acknowledge\n      somewhere  in  your  documentation  that  you  have  used  the\n      Catharon Code. (`credits&#39;)\n\n  We  specifically  permit  and  encourage  the  inclusion  of  this\n  software, with  or without modifications,  in commercial products.\n  We disclaim  all warranties  covering the packages  distributed by\n  Catharon  Productions, Inc.  and  assume no  liability related  to\n  their use.\n\n\nLegal Terms\n===========\n\n0. Definitions\n--------------\n\n  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,\n  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally\n  distributed by Catharon Productions, Inc.\n\n  `You&#39; refers to  the licensee, or person using  the project, where\n  `using&#39; is a generic term including compiling the project&#39;s source\n  code as  well as linking it  to form a  `program&#39; or `executable&#39;.\n  This  program  is referred  to  as `a  program  using  one of  the\n  Catharon Packages&#39;.\n\n  This  license applies  to all  files distributed  in  the original\n  Catharon  Package(s),  including  all  source code,  binaries  and\n  documentation,  unless  otherwise  stated   in  the  file  in  its\n  original, unmodified form as  distributed in the original archive.\n  If you are  unsure whether or not a particular  file is covered by\n  this license, you must contact us to verify this.\n\n  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon\n  Productions, Inc.  All rights reserved except as specified below.\n\n1. No Warranty\n--------------\n\n  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY\n  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,\n  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR\n  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS\n  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO\n  USE THE CATHARON PACKAGE.\n\n2. Redistribution\n-----------------\n\n  This  license  grants  a  worldwide, royalty-free,  perpetual  and\n  irrevocable right  and license to use,  execute, perform, compile,\n  display,  copy,   create  derivative  works   of,  distribute  and\n  sublicense the  Catharon Packages (in both source  and object code\n  forms)  and  derivative works  thereof  for  any  purpose; and  to\n  authorize others  to exercise  some or all  of the  rights granted\n  herein, subject to the following conditions:\n\n    o Redistribution  of source code  must retain this  license file\n      (`license.txt&#39;) unaltered; any additions, deletions or changes\n      to   the  original   files  must   be  clearly   indicated  in\n      accompanying  documentation.   The  copyright notices  of  the\n      unaltered, original  files must be preserved in  all copies of\n      source files.\n\n    o Redistribution  in binary form must provide  a disclaimer that\n      states  that the  software is  based in  part on  the  work of\n      Catharon Productions, Inc. in the distribution documentation.\n\n  These conditions  apply to any  software derived from or  based on\n  the Catharon Packages, not just  the unmodified files.  If you use\n  our work, you  must acknowledge us.  However, no  fee need be paid\n  to us.\n\n3. Advertising\n--------------\n\n  Neither Catharon Productions, Inc.  and contributors nor you shall\n  use  the  name  of  the  other  for  commercial,  advertising,  or\n  promotional purposes without specific prior written permission.\n\n  We suggest, but do not  require, that you use the following phrase\n  to refer to this software in your documentation: &#39;this software is\n  based in part on the Catharon Typography Project&#39;.\n\n  As  you have  not signed  this license,  you are  not  required to\n  accept  it.  However,  as  the Catharon  Packages are  copyrighted\n  material, only  this license, or  another one contracted  with the\n  authors, grants you  the right to use, distribute,  and modify it.\n  Therefore,  by  using,  distributing,  or modifying  the  Catharon\n  Packages,  you indicate  that you  understand and  accept  all the\n  terms of this license.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HitachiOpenLicense&quot;,
+                    &quot;The \&quot;Catharon Package\&quot;, \&quot;package\&quot;, and \&quot;Catharon Code\&quot; are all original source code, binaries, and related documentation distributed by Catharon Productions, Inc. Sublicensing means that the person who has granted this license re-grants the license granted to you to a third party.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;content&quot;: &quot;                  The Catharon Open Source LICENSE\n                    ----------------------------\n\n                            2000-Jul-04\n\n          Copyright (C) 2000 by Catharon Productions, Inc.\n\n\n\nIntroduction\n============\n\n  This  license  applies to  source  files  distributed by  Catharon\n  Productions,  Inc.  in  several  archive packages.   This  license\n  applies  to all files  found in  such packages  which do  not fall\n  under their own explicit license.\n\n  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG\n  (Independent JPEG  Group) licenses, which  all encourage inclusion\n  and  use of  free  software in  commercial  and freeware  products\n  alike.  As a consequence, its main points are that:\n\n    o We  don&#39;t promise that  this software works.  However,  we are\n      interested in any kind of bug reports. (`as is&#39; distribution)\n\n    o You can  use this software for whatever you  want, in parts or\n      full form, without having to pay us. (`royalty-free&#39; usage)\n\n    o You may not pretend that  you wrote this software.  If you use\n      it, or  only parts of it,  in a program,  you must acknowledge\n      somewhere  in  your  documentation  that  you  have  used  the\n      Catharon Code. (`credits&#39;)\n\n  We  specifically  permit  and  encourage  the  inclusion  of  this\n  software, with  or without modifications,  in commercial products.\n  We disclaim  all warranties  covering the packages  distributed by\n  Catharon  Productions, Inc.  and  assume no  liability related  to\n  their use.\n\n\nLegal Terms\n===========\n\n0. Definitions\n--------------\n\n  Throughout this license,  the terms `Catharon Package&#39;, `package&#39;,\n  and  `Catharon  Code&#39;  refer   to  the  set  of  files  originally\n  distributed by Catharon Productions, Inc.\n\n  `You&#39; refers to  the licensee, or person using  the project, where\n  `using&#39; is a generic term including compiling the project&#39;s source\n  code as  well as linking it  to form a  `program&#39; or `executable&#39;.\n  This  program  is referred  to  as `a  program  using  one of  the\n  Catharon Packages&#39;.\n\n  This  license applies  to all  files distributed  in  the original\n  Catharon  Package(s),  including  all  source code,  binaries  and\n  documentation,  unless  otherwise  stated   in  the  file  in  its\n  original, unmodified form as  distributed in the original archive.\n  If you are  unsure whether or not a particular  file is covered by\n  this license, you must contact us to verify this.\n\n  The  Catharon   Packages  are  copyright  (C)   2000  by  Catharon\n  Productions, Inc.  All rights reserved except as specified below.\n\n1. No Warranty\n--------------\n\n  THE CATHARON PACKAGES ARE PROVIDED `AS IS&#39; WITHOUT WARRANTY OF ANY\n  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,\n  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR\n  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS\n  BE LIABLE FOR ANY DAMAGES CAUSED BY THE USE OF OR THE INABILITY TO\n  USE THE CATHARON PACKAGE.\n\n2. Redistribution\n-----------------\n\n  This  license  grants  a  worldwide, royalty-free,  perpetual  and\n  irrevocable right  and license to use,  execute, perform, compile,\n  display,  copy,   create  derivative  works   of,  distribute  and\n  sublicense the  Catharon Packages (in both source  and object code\n  forms)  and  derivative works  thereof  for  any  purpose; and  to\n  authorize others  to exercise  some or all  of the  rights granted\n  herein, subject to the following conditions:\n\n    o Redistribution  of source code  must retain this  license file\n      (`license.txt&#39;) unaltered; any additions, deletions or changes\n      to   the  original   files  must   be  clearly   indicated  in\n      accompanying  documentation.   The  copyright notices  of  the\n      unaltered, original  files must be preserved in  all copies of\n      source files.\n\n    o Redistribution  in binary form must provide  a disclaimer that\n      states  that the  software is  based in  part on  the  work of\n      Catharon Productions, Inc. in the distribution documentation.\n\n  These conditions  apply to any  software derived from or  based on\n  the Catharon Packages, not just  the unmodified files.  If you use\n  our work, you  must acknowledge us.  However, no  fee need be paid\n  to us.\n\n3. Advertising\n--------------\n\n  Neither Catharon Productions, Inc.  and contributors nor you shall\n  use  the  name  of  the  other  for  commercial,  advertising,  or\n  promotional purposes without specific prior written permission.\n\n  We suggest, but do not  require, that you use the following phrase\n  to refer to this software in your documentation: &#39;this software is\n  based in part on the Catharon Typography Project&#39;.\n\n  As  you have  not signed  this license,  you are  not  required to\n  accept  it.  However,  as  the Catharon  Packages are  copyrighted\n  material, only  this license, or  another one contracted  with the\n  authors, grants you  the right to use, distribute,  and modify it.\n  Therefore,  by  using,  distributing,  or modifying  the  Catharon\n  Packages,  you indicate  that you  understand and  accept  all the\n  terms of this license.&quot;,
+        &quot;description&quot;: &quot;The \&quot;Catharon Package\&quot;, \&quot;package\&quot;, and \&quot;Catharon Code\&quot; are all original source code, binaries, and related documentation distributed by Catharon Productions, Inc. Sublicensing means that the person who has granted this license re-grants the license granted to you to a third party.&quot;,
+        &quot;name&quot;: &quot;hitachi:Catharon Open Source LICENSE&quot;,
+        &quot;notices&quot;: [
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;the software is provided \&quot;as-is\&quot; and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. the software is provided \&quot;as-is\&quot; and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability and fitness for a particular purpose.&quot;,
+                    &quot;description&quot;: &quot;There is no guarantee.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            },
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;Neither the author nor the copyright holder shall be liable for any damage caused by the use or inability to use such software.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            }
+        ],
+        &quot;permissions&quot;: [
+            {
+                &quot;_str&quot;: &quot;Description: Related documents should be treated in the same way as software.\nActions:\n- Ol Use the obtained source code without modification (Use the fetched code as it is.)\n- Ol Using Modified Source Code\n- Ol Use the retrieved binaries (Use the fetched binary as it is.)\n- Ol Use binaries generated from modified source code\n\nConditions:\nOl RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Using Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched binary as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the retrieved binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Use binaries generated from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;contents&quot;: {
+                        &quot;description&quot;: &quot;Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.&quot;,
+                        &quot;name&quot;: &quot;An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.&quot;,
+                        &quot;type&quot;: &quot;RESTRICTION&quot;
+                    },
+                    &quot;tag&quot;: &quot;Ol&quot;
+                },
+                &quot;description&quot;: &quot;Related documents should be treated in the same way as software.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: Related documents should be treated in the same way as software.\nActions:\n- Ol Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Ol Distribute the generated binaries from modified source code\n- Ol Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Ol Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Ol Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Ol Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Ol Display the obtained source code\n- Ol Execute the obtained source code.\n- Ol Display the modified source code\n- Ol Executing Modified Source Code\n- Ol Display the retrieved binary\n- Ol Display the generated binary from the modified source code\n- Ol Execute the generated binary from the modified source code\n- Ol Execute the obtained binary\n\nConditions:\nAND\n  Ol RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  Ol OBLIGATION: Acknowledgements\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the fetched binaries as they are&quot;,
+                            &quot;name&quot;: &quot;Distribute the fetched binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribute the generated binaries from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicense the acquired source code.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicensing Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicense the acquired binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicense the generated binaries from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Display the obtained source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Execute the obtained source code.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Display the modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Executing Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Display the retrieved binary&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Display the generated binary from the modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Execute the generated binary from the modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Execute the obtained binary&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;description&quot;: &quot;Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.&quot;,
+                                &quot;name&quot;: &quot;An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.&quot;,
+                                &quot;type&quot;: &quot;RESTRICTION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Acknowledgements&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;Related documents should be treated in the same way as software.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: Related documents should be treated in the same way as software.\nActions:\n- Ol Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  Ol RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  Ol OBLIGATION: Give you a copy of the relevant license.\n  Ol OBLIGATION: Include the copyright notice contained in the software\n  Ol OBLIGATION: Acknowledgements\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;name&quot;: &quot;Distribute the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;description&quot;: &quot;Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.&quot;,
+                                &quot;name&quot;: &quot;An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.&quot;,
+                                &quot;type&quot;: &quot;RESTRICTION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Give you a copy of the relevant license.&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the copyright notice contained in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Acknowledgements&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;Related documents should be treated in the same way as software.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: Related documents should be treated in the same way as software.\nActions:\n- Ol Modify the obtained source code.\n\nConditions:\nAND\n  Ol RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  Ol OBLIGATION: Indicate your changes in the materials that accompany the distribution.\n  Ol OBLIGATION: Include the copyright notice contained in the software\n  Ol OBLIGATION: Acknowledgements\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Modify the obtained source code.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;description&quot;: &quot;Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.&quot;,
+                                &quot;name&quot;: &quot;An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.&quot;,
+                                &quot;type&quot;: &quot;RESTRICTION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Indicate your changes in the materials that accompany the distribution.&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the copyright notice contained in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Acknowledgements&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;Related documents should be treated in the same way as software.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: Related documents should be treated in the same way as software.\nActions:\n- Ol Distribution of Modified Source Code\n\nConditions:\nAND\n  Ol RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  Ol OBLIGATION: Give you a copy of the relevant license.\n  Ol OBLIGATION: Indicate your changes in the materials that accompany the distribution.\n  Ol OBLIGATION: Include the copyright notice contained in the software\n  Ol OBLIGATION: Acknowledgements\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribution of Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;description&quot;: &quot;Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.&quot;,
+                                &quot;name&quot;: &quot;An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.&quot;,
+                                &quot;type&quot;: &quot;RESTRICTION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Give you a copy of the relevant license.&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Indicate your changes in the materials that accompany the distribution.&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the copyright notice contained in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Acknowledgements&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;Related documents should be treated in the same way as software.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: Treat related documentation in the same way as software. Use of the following phrase in materials and advertisements accompanying the distribution is recommended: &#39;&#39;this software is based in part on the Catharon Typography Project&#39;&#39;. This software is based in part on the Catharon Typography Project&#39;\nActions:\n- Ol Use the names of copyright holders and contributors in advertising and sales promotion.\n\nConditions:\nOl REQUISITE: Get special permission in writing.\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Use the names of copyright holders and contributors in advertising and sales promotion.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;contents&quot;: {
+                        &quot;name&quot;: &quot;Get special permission in writing.&quot;,
+                        &quot;type&quot;: &quot;REQUISITE&quot;
+                    },
+                    &quot;tag&quot;: &quot;Ol&quot;
+                },
+                &quot;description&quot;: &quot;Treat related documentation in the same way as software. Use of the following phrase in materials and advertisements accompanying the distribution is recommended: &#39;&#39;this software is based in part on the Catharon Typography Project&#39;&#39;. This software is based in part on the Catharon Typography Project&#39;&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;HitachiOpenLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/5cad1a875b2556b12968baafa45468b7">LicenseLynx:5cad1a875b2556b12968baafa45468b7</a> for <a href="/?license=spdx:Catharon"><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Catharon</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Catharon License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Catharon Open Source License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Catharon OSL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>catharon-osl</span></li><li><span class="licensename"><span class="namespace">scancode:</span>LicenseRef-scancode-catharon-osl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Catharon&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:Catharon Open Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:Catharon OSL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:catharon-osl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:LicenseRef-scancode-catharon-osl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Catharon License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;5cad1a875b2556b12968baafa45468b7&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:Catharon Open Source License&quot;,
+            &quot;scancode:Catharon OSL&quot;,
+            &quot;scancode:catharon-osl&quot;,
+            &quot;scancode:LicenseRef-scancode-catharon-osl&quot;,
+            &quot;spdx:Catharon License&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:Catharon&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

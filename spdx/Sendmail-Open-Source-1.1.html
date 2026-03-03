@@ -1,0 +1,1177 @@
+<html><head><title>ldbcollector: spdx:Sendmail-Open-Source-1.1</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:Sendmail-Open-Source-1.1</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail Open Source License 1.1</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Sendmail Open Source License 1.1</span></li><li><span class="licensename">Sendmail Open Source License v1.1</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail Open Source License v1.1</span></li><li><span class="licensename">Sendmail-Open-Source-1.1</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Sendmail-Open-Source-1.1</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Sendmail-Open-Source-1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sendmail-open-source-1.1</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail Open Source 1.1 License</span></li><li><span class="licensename">Sendmail Open Source v1.1 License</span></li><li><span class="licensename">Sendmail-Open-Source</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:20266e57f0e4931afef11e4702510da9">[<a href="/fact/ScancodeData/20266e57f0e4931afef11e4702510da9">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:958eec2a0070a33e5fbed07a538d84e6">[<a href="/fact/SPDXLicense/958eec2a0070a33e5fbed07a538d84e6">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:dc689e3aceab301421dbb358e7d42798">[<a href="/fact/FedoraEntry/dc689e3aceab301421dbb358e7d42798">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:37fa439cbd55baa49402bc6de84eef5f">[<a href="/fact/OrtLicenseCategorization/37fa439cbd55baa49402bc6de84eef5f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:37fa439cbd55baa49402bc6de84eef5f">[<a href="/fact/OrtLicenseCategorization/37fa439cbd55baa49402bc6de84eef5f">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>Note that this license is distinct and not a different version from Sendmail or Sendmail-8.23<span class="provided-by">(provided by: <span title="SPDXLicense:958eec2a0070a33e5fbed07a538d84e6">[<a href="/fact/SPDXLicense/958eec2a0070a33e5fbed07a538d84e6">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail" target="_blank">https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>SENDMAIL OPEN SOURCE LICENSE
+
+The following license terms and conditions apply to this open source
+software (&quot;Software&quot;), unless a different license is obtained directly
+from Sendmail, Inc. (&quot;Sendmail&quot;) located at 6475 Christie Ave, Suite 350,
+Emeryville, CA 94608, USA.
+
+Use, modification and redistribution (including distribution of any
+modified or derived work) of the Software in source and binary forms is
+permitted only if each of the following conditions of 1-6 are met:
+
+1. Redistributions of the Software qualify as &quot;freeware&quot; or &quot;open
+   source software&quot; under one of the following terms:
+
+   (a) Redistributions are made at no charge beyond the reasonable
+       cost of materials and delivery; or
+
+   (b) Redistributions are accompanied by a copy of the modified
+       Source Code (on an acceptable machine-readable medium) or by an
+       irrevocable offer to provide a copy of the modified Source Code
+       (on an acceptable machine-readable medium) for up to three years
+       at the cost of materials and delivery. Such redistributions must
+       allow further use, modification, and redistribution of the Source
+       Code under substantially the same terms as this license. For
+       the purposes of redistribution &quot;Source Code&quot; means the complete
+       human-readable, compilable, linkable, and operational source
+       code of the redistributed module(s) including all modifications.
+
+2. Redistributions of the Software Source Code must retain the
+   copyright notices as they appear in each Source Code file, these
+   license terms and conditions, and the disclaimer/limitation of
+   liability set forth in paragraph 6 below. Redistributions of the
+   Software Source Code must also comply with the copyright notices
+   and/or license terms and conditions imposed by contributors on
+   embedded code. The contributors&#39; license terms and conditions
+   and/or copyright notices are contained in the Source Code
+   distribution.
+
+3. Redistributions of the Software in binary form must reproduce the
+   Copyright Notice described below, these license terms and conditions,
+   and the disclaimer/limitation of liability set forth in paragraph
+   6 below, in the documentation and/or other materials provided with
+   the binary distribution.  For the purposes of binary distribution,
+   &quot;Copyright Notice&quot; refers to the following language: &quot;Copyright (c)
+   1998-2009 Sendmail, Inc. All rights reserved.&quot;
+
+4. Neither the name, trademark or logo of Sendmail, Inc. (including
+   without limitation its subsidiaries or affiliates) or its contributors
+   may be used to endorse or promote products, or software or services
+   derived from this Software without specific prior written permission.
+   The name &quot;sendmail&quot; is a registered trademark and service mark of
+   Sendmail, Inc.
+
+5. We reserve the right to cancel this license if you do not comply with 
+   the terms.  This license is governed by California law and both of us 
+   agree that for any dispute arising out of or relating to this Software, 
+   that jurisdiction and venue is proper in San Francisco or Alameda 
+   counties.  These license terms and conditions reflect the complete 
+   agreement for the license of the Software (which means this supercedes 
+   prior or contemporaneous agreements or representations).  If any term
+   or condition under this license is found to be invalid, the remaining
+   terms and conditions still apply.
+
+6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY
+   SENDMAIL AND ITS CONTRIBUTORS &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND
+   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A
+   PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL
+   OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+   TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+   WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;
+            SENDMAIL OPEN SOURCE LICENSE
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;
+            The following license terms and conditions apply to this open
+            source software (&amp;quot;Software&amp;quot;), unless a different license is
+            obtained directly from Sendmail, Inc. (&amp;quot;Sendmail&amp;quot;) located
+            at 6475 Christie Ave, Suite 350, Emeryville, CA 94608, USA.
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+
+         &lt;p&gt;
+            Use, modification and redistribution (including
+            distribution of any modified or derived work) of the
+            Software in source and binary forms is permitted only
+            if each of the following conditions of 1-6 are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions of the Software qualify as &amp;quot;freeware&amp;quot; or
+                  &amp;quot;open source software&amp;quot; under one of the following terms:
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; (a)&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions are made at no charge beyond the
+                  reasonable cost of materials and delivery; or
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; (b)&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions are accompanied by a copy of the modified
+                  Source Code (on an acceptable machine-readable medium) or
+                  by an irrevocable offer to provide a copy of the modified
+                  Source Code (on an acceptable machine-readable medium) for
+                  up to three years at the cost of materials and delivery. Such
+                  redistributions must allow further use, modification, and
+                  redistribution of the Source Code under substantially the
+                  same terms as this license. For the purposes of redistribution
+                  &amp;quot;Source Code&amp;quot; means the complete human-readable,
+                  compilable, linkable, and operational source code of
+                  the redistributed module(s) including all modifications.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions of the Software Source Code must retain
+                  the copyright notices as they appear in each Source
+                  Code file, these license terms and conditions, and the
+                  disclaimer/limitation of liability set forth in paragraph
+                  6 below. Redistributions of the Software Source Code must
+                  also comply with the copyright notices and/or license terms
+                  and conditions imposed by contributors on embedded code. The
+                  contributors&amp;apos; license terms and conditions and/or copyright
+                  notices are contained in the Source Code distribution.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions of the Software in binary form must reproduce
+                  the Copyright Notice described below, these license terms
+                  and conditions, and the disclaimer/limitation of liability
+                  set forth in paragraph 6 below, in the documentation and/or
+                  other materials provided with the binary distribution.
+                  For the purposes of binary distribution, &amp;quot;Copyright
+                  Notice&amp;quot; refers to the following language: &amp;quot;Copyright
+                  (c) 1998-2009 Sendmail, Inc. All rights reserved.&amp;quot;
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Neither the name, trademark or logo of Sendmail, Inc.
+                  (including without limitation its subsidiaries or affiliates)
+                  or its contributors may be used to endorse or promote
+                  products, or software or services derived from this Software
+                  without specific prior written permission. The name &amp;quot;sendmail&amp;quot;
+                  is a registered trademark and service mark of Sendmail, Inc.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  We reserve the right to cancel this license if you do not
+                  comply with the terms. This license is governed by California
+                  law and both of us agree that for any dispute arising out of
+                  or relating to this Software, that jurisdiction and venue is
+                  proper in San Francisco or Alameda counties. These license
+                  terms and conditions reflect the complete agreement for
+                  the license of the Software (which means this supercedes
+                  prior or contemporaneous agreements or representations).
+                  If any term or condition under this license is found to be
+                  invalid, the remaining terms and conditions still apply.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Disclaimer/Limitation of Liability: THIS SOFTWARE IS
+                  PROVIDED BY SENDMAIL AND ITS CONTRIBUTORS &amp;quot;AS IS&amp;quot; WITHOUT
+                  WARRANTY OF ANY KIND AND ANY EXPRESS OR IMPLIED WARRANTIES,
+                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+                  OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR
+                  A PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO
+                  EVENT SHALL SENDMAIL OR ITS CONTRIBUTORS BE LIABLE FOR
+                  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+                  OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+                  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+                  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+                  AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+                  LIABILITY, OR TORT (INCLUDING WITHOUT LIMITATION NEGLIGENCE
+                  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+                  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;$Revision: 1.1 $ $Date: 2009/07/16 18:43:18 $&lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li><li><details><summary>Text:</summary><pre>SENDMAIL OPEN SOURCE LICENSE
+
+The following license terms and conditions apply to this open source
+software (&quot;Software&quot;), unless a different license is obtained directly
+from Sendmail, Inc. (&quot;Sendmail&quot;) located at 6475 Christie Ave, Suite 350,
+Emeryville, CA 94608, USA.
+
+Use, modification and redistribution (including distribution of any
+modified or derived work) of the Software in source and binary forms is
+permitted only if each of the following conditions of 1-6 are met:
+
+1. Redistributions of the Software qualify as &quot;freeware&quot; or &quot;open
+   source software&quot; under one of the following terms:
+
+   (a) Redistributions are made at no charge beyond the reasonable
+       cost of materials and delivery; or
+
+   (b) Redistributions are accompanied by a copy of the modified
+       Source Code (on an acceptable machine-readable medium) or by an
+       irrevocable offer to provide a copy of the modified Source Code
+       (on an acceptable machine-readable medium) for up to three years
+       at the cost of materials and delivery. Such redistributions must
+       allow further use, modification, and redistribution of the Source
+       Code under substantially the same terms as this license. For
+       the purposes of redistribution &quot;Source Code&quot; means the complete
+       human-readable, compilable, linkable, and operational source
+       code of the redistributed module(s) including all modifications.
+
+2. Redistributions of the Software Source Code must retain the
+   copyright notices as they appear in each Source Code file, these
+   license terms and conditions, and the disclaimer/limitation of
+   liability set forth in paragraph 6 below. Redistributions of the
+   Software Source Code must also comply with the copyright notices
+   and/or license terms and conditions imposed by contributors on
+   embedded code. The contributors&#39; license terms and conditions
+   and/or copyright notices are contained in the Source Code
+   distribution.
+
+3. Redistributions of the Software in binary form must reproduce the
+   Copyright Notice described below, these license terms and conditions,
+   and the disclaimer/limitation of liability set forth in paragraph
+   6 below, in the documentation and/or other materials provided with
+   the binary distribution.  For the purposes of binary distribution,
+   &quot;Copyright Notice&quot; refers to the following language: &quot;Copyright (c)
+   1998-2009 Sendmail, Inc. All rights reserved.&quot;
+
+4. Neither the name, trademark or logo of Sendmail, Inc. (including
+   without limitation its subsidiaries or affiliates) or its contributors
+   may be used to endorse or promote products, or software or services
+   derived from this Software without specific prior written permission.
+   The name &quot;sendmail&quot; is a registered trademark and service mark of
+   Sendmail, Inc.
+
+5. We reserve the right to cancel this license if you do not comply with 
+   the terms.  This license is governed by California law and both of us 
+   agree that for any dispute arising out of or relating to this Software, 
+   that jurisdiction and venue is proper in San Francisco or Alameda 
+   counties.  These license terms and conditions reflect the complete 
+   agreement for the license of the Software (which means this supercedes 
+   prior or contemporaneous agreements or representations).  If any term
+   or condition under this license is found to be invalid, the remaining
+   terms and conditions still apply.
+
+6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY
+   SENDMAIL AND ITS CONTRIBUTORS &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND
+   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A
+   PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL
+   OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+   TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+   WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/958eec2a0070a33e5fbed07a538d84e6">SPDXLicense:958eec2a0070a33e5fbed07a538d84e6</a> for <a href="/?license=spdx:Sendmail-Open-Source-1.1"><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail Open Source License v1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:958eec2a0070a33e5fbed07a538d84e6">[<a href="/fact/SPDXLicense/958eec2a0070a33e5fbed07a538d84e6">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>Note that this license is distinct and not a different version from Sendmail or Sendmail-8.23<span class="provided-by">(provided by: <span title="SPDXLicense:958eec2a0070a33e5fbed07a538d84e6">[<a href="/fact/SPDXLicense/958eec2a0070a33e5fbed07a538d84e6">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail" target="_blank">https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>SENDMAIL OPEN SOURCE LICENSE
+
+The following license terms and conditions apply to this open source
+software (&quot;Software&quot;), unless a different license is obtained directly
+from Sendmail, Inc. (&quot;Sendmail&quot;) located at 6475 Christie Ave, Suite 350,
+Emeryville, CA 94608, USA.
+
+Use, modification and redistribution (including distribution of any
+modified or derived work) of the Software in source and binary forms is
+permitted only if each of the following conditions of 1-6 are met:
+
+1. Redistributions of the Software qualify as &quot;freeware&quot; or &quot;open
+   source software&quot; under one of the following terms:
+
+   (a) Redistributions are made at no charge beyond the reasonable
+       cost of materials and delivery; or
+
+   (b) Redistributions are accompanied by a copy of the modified
+       Source Code (on an acceptable machine-readable medium) or by an
+       irrevocable offer to provide a copy of the modified Source Code
+       (on an acceptable machine-readable medium) for up to three years
+       at the cost of materials and delivery. Such redistributions must
+       allow further use, modification, and redistribution of the Source
+       Code under substantially the same terms as this license. For
+       the purposes of redistribution &quot;Source Code&quot; means the complete
+       human-readable, compilable, linkable, and operational source
+       code of the redistributed module(s) including all modifications.
+
+2. Redistributions of the Software Source Code must retain the
+   copyright notices as they appear in each Source Code file, these
+   license terms and conditions, and the disclaimer/limitation of
+   liability set forth in paragraph 6 below. Redistributions of the
+   Software Source Code must also comply with the copyright notices
+   and/or license terms and conditions imposed by contributors on
+   embedded code. The contributors&#39; license terms and conditions
+   and/or copyright notices are contained in the Source Code
+   distribution.
+
+3. Redistributions of the Software in binary form must reproduce the
+   Copyright Notice described below, these license terms and conditions,
+   and the disclaimer/limitation of liability set forth in paragraph
+   6 below, in the documentation and/or other materials provided with
+   the binary distribution.  For the purposes of binary distribution,
+   &quot;Copyright Notice&quot; refers to the following language: &quot;Copyright (c)
+   1998-2009 Sendmail, Inc. All rights reserved.&quot;
+
+4. Neither the name, trademark or logo of Sendmail, Inc. (including
+   without limitation its subsidiaries or affiliates) or its contributors
+   may be used to endorse or promote products, or software or services
+   derived from this Software without specific prior written permission.
+   The name &quot;sendmail&quot; is a registered trademark and service mark of
+   Sendmail, Inc.
+
+5. We reserve the right to cancel this license if you do not comply with 
+   the terms.  This license is governed by California law and both of us 
+   agree that for any dispute arising out of or relating to this Software, 
+   that jurisdiction and venue is proper in San Francisco or Alameda 
+   counties.  These license terms and conditions reflect the complete 
+   agreement for the license of the Software (which means this supercedes 
+   prior or contemporaneous agreements or representations).  If any term
+   or condition under this license is found to be invalid, the remaining
+   terms and conditions still apply.
+
+6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY
+   SENDMAIL AND ITS CONTRIBUTORS &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND
+   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A
+   PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL
+   OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+   TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+   WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;
+            SENDMAIL OPEN SOURCE LICENSE
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;
+            The following license terms and conditions apply to this open
+            source software (&amp;quot;Software&amp;quot;), unless a different license is
+            obtained directly from Sendmail, Inc. (&amp;quot;Sendmail&amp;quot;) located
+            at 6475 Christie Ave, Suite 350, Emeryville, CA 94608, USA.
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+
+         &lt;p&gt;
+            Use, modification and redistribution (including
+            distribution of any modified or derived work) of the
+            Software in source and binary forms is permitted only
+            if each of the following conditions of 1-6 are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions of the Software qualify as &amp;quot;freeware&amp;quot; or
+                  &amp;quot;open source software&amp;quot; under one of the following terms:
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; (a)&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions are made at no charge beyond the
+                  reasonable cost of materials and delivery; or
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; (b)&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions are accompanied by a copy of the modified
+                  Source Code (on an acceptable machine-readable medium) or
+                  by an irrevocable offer to provide a copy of the modified
+                  Source Code (on an acceptable machine-readable medium) for
+                  up to three years at the cost of materials and delivery. Such
+                  redistributions must allow further use, modification, and
+                  redistribution of the Source Code under substantially the
+                  same terms as this license. For the purposes of redistribution
+                  &amp;quot;Source Code&amp;quot; means the complete human-readable,
+                  compilable, linkable, and operational source code of
+                  the redistributed module(s) including all modifications.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions of the Software Source Code must retain
+                  the copyright notices as they appear in each Source
+                  Code file, these license terms and conditions, and the
+                  disclaimer/limitation of liability set forth in paragraph
+                  6 below. Redistributions of the Software Source Code must
+                  also comply with the copyright notices and/or license terms
+                  and conditions imposed by contributors on embedded code. The
+                  contributors&amp;apos; license terms and conditions and/or copyright
+                  notices are contained in the Source Code distribution.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions of the Software in binary form must reproduce
+                  the Copyright Notice described below, these license terms
+                  and conditions, and the disclaimer/limitation of liability
+                  set forth in paragraph 6 below, in the documentation and/or
+                  other materials provided with the binary distribution.
+                  For the purposes of binary distribution, &amp;quot;Copyright
+                  Notice&amp;quot; refers to the following language: &amp;quot;Copyright
+                  (c) 1998-2009 Sendmail, Inc. All rights reserved.&amp;quot;
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Neither the name, trademark or logo of Sendmail, Inc.
+                  (including without limitation its subsidiaries or affiliates)
+                  or its contributors may be used to endorse or promote
+                  products, or software or services derived from this Software
+                  without specific prior written permission. The name &amp;quot;sendmail&amp;quot;
+                  is a registered trademark and service mark of Sendmail, Inc.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  We reserve the right to cancel this license if you do not
+                  comply with the terms. This license is governed by California
+                  law and both of us agree that for any dispute arising out of
+                  or relating to this Software, that jurisdiction and venue is
+                  proper in San Francisco or Alameda counties. These license
+                  terms and conditions reflect the complete agreement for
+                  the license of the Software (which means this supercedes
+                  prior or contemporaneous agreements or representations).
+                  If any term or condition under this license is found to be
+                  invalid, the remaining terms and conditions still apply.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,20}&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;
+               &lt;p&gt;
+                  Disclaimer/Limitation of Liability: THIS SOFTWARE IS
+                  PROVIDED BY SENDMAIL AND ITS CONTRIBUTORS &amp;quot;AS IS&amp;quot; WITHOUT
+                  WARRANTY OF ANY KIND AND ANY EXPRESS OR IMPLIED WARRANTIES,
+                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+                  OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR
+                  A PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO
+                  EVENT SHALL SENDMAIL OR ITS CONTRIBUTORS BE LIABLE FOR
+                  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+                  OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+                  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+                  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+                  AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+                  LIABILITY, OR TORT (INCLUDING WITHOUT LIMITATION NEGLIGENCE
+                  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+                  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;$Revision: 1.1 $ $Date: 2009/07/16 18:43:18 $&lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail Open Source License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;958eec2a0070a33e5fbed07a538d84e6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;Note that this license is distinct and not a different version from Sendmail or Sendmail-8.23&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;SENDMAIL OPEN SOURCE LICENSE\n\nThe following license terms and conditions apply to this open source\nsoftware (\&quot;Software\&quot;), unless a different license is obtained directly\nfrom Sendmail, Inc. (\&quot;Sendmail\&quot;) located at 6475 Christie Ave, Suite 350,\nEmeryville, CA 94608, USA.\n\nUse, modification and redistribution (including distribution of any\nmodified or derived work) of the Software in source and binary forms is\npermitted only if each of the following conditions of 1-6 are met:\n\n1. Redistributions of the Software qualify as \&quot;freeware\&quot; or \&quot;open\n   source software\&quot; under one of the following terms:\n\n   (a) Redistributions are made at no charge beyond the reasonable\n       cost of materials and delivery; or\n\n   (b) Redistributions are accompanied by a copy of the modified\n       Source Code (on an acceptable machine-readable medium) or by an\n       irrevocable offer to provide a copy of the modified Source Code\n       (on an acceptable machine-readable medium) for up to three years\n       at the cost of materials and delivery. Such redistributions must\n       allow further use, modification, and redistribution of the Source\n       Code under substantially the same terms as this license. For\n       the purposes of redistribution \&quot;Source Code\&quot; means the complete\n       human-readable, compilable, linkable, and operational source\n       code of the redistributed module(s) including all modifications.\n\n2. Redistributions of the Software Source Code must retain the\n   copyright notices as they appear in each Source Code file, these\n   license terms and conditions, and the disclaimer/limitation of\n   liability set forth in paragraph 6 below. Redistributions of the\n   Software Source Code must also comply with the copyright notices\n   and/or license terms and conditions imposed by contributors on\n   embedded code. The contributors&#39; license terms and conditions\n   and/or copyright notices are contained in the Source Code\n   distribution.\n\n3. Redistributions of the Software in binary form must reproduce the\n   Copyright Notice described below, these license terms and conditions,\n   and the disclaimer/limitation of liability set forth in paragraph\n   6 below, in the documentation and/or other materials provided with\n   the binary distribution.  For the purposes of binary distribution,\n   \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c)\n   1998-2009 Sendmail, Inc. All rights reserved.\&quot;\n\n4. Neither the name, trademark or logo of Sendmail, Inc. (including\n   without limitation its subsidiaries or affiliates) or its contributors\n   may be used to endorse or promote products, or software or services\n   derived from this Software without specific prior written permission.\n   The name \&quot;sendmail\&quot; is a registered trademark and service mark of\n   Sendmail, Inc.\n\n5. We reserve the right to cancel this license if you do not comply with \n   the terms.  This license is governed by California law and both of us \n   agree that for any dispute arising out of or relating to this Software, \n   that jurisdiction and venue is proper in San Francisco or Alameda \n   counties.  These license terms and conditions reflect the complete \n   agreement for the license of the Software (which means this supercedes \n   prior or contemporaneous agreements or representations).  If any term\n   or condition under this license is found to be invalid, the remaining\n   terms and conditions still apply.\n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY\n   SENDMAIL AND ITS CONTRIBUTORS \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND\n   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n   IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A\n   PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL\n   OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED\n   TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\n   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\n   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n   WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\n   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;\n            SENDMAIL OPEN SOURCE LICENSE\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;\n            The following license terms and conditions apply to this open\n            source software (&amp;quot;Software&amp;quot;), unless a different license is\n            obtained directly from Sendmail, Inc. (&amp;quot;Sendmail&amp;quot;) located\n            at 6475 Christie Ave, Suite 350, Emeryville, CA 94608, USA.\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n\n         &lt;p&gt;\n            Use, modification and redistribution (including\n            distribution of any modified or derived work) of the\n            Software in source and binary forms is permitted only\n            if each of the following conditions of 1-6 are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions of the Software qualify as &amp;quot;freeware&amp;quot; or\n                  &amp;quot;open source software&amp;quot; under one of the following terms:\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; (a)&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions are made at no charge beyond the\n                  reasonable cost of materials and delivery; or\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; (b)&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions are accompanied by a copy of the modified\n                  Source Code (on an acceptable machine-readable medium) or\n                  by an irrevocable offer to provide a copy of the modified\n                  Source Code (on an acceptable machine-readable medium) for\n                  up to three years at the cost of materials and delivery. Such\n                  redistributions must allow further use, modification, and\n                  redistribution of the Source Code under substantially the\n                  same terms as this license. For the purposes of redistribution\n                  &amp;quot;Source Code&amp;quot; means the complete human-readable,\n                  compilable, linkable, and operational source code of\n                  the redistributed module(s) including all modifications.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions of the Software Source Code must retain\n                  the copyright notices as they appear in each Source\n                  Code file, these license terms and conditions, and the\n                  disclaimer/limitation of liability set forth in paragraph\n                  6 below. Redistributions of the Software Source Code must\n                  also comply with the copyright notices and/or license terms\n                  and conditions imposed by contributors on embedded code. The\n                  contributors&amp;apos; license terms and conditions and/or copyright\n                  notices are contained in the Source Code distribution.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions of the Software in binary form must reproduce\n                  the Copyright Notice described below, these license terms\n                  and conditions, and the disclaimer/limitation of liability\n                  set forth in paragraph 6 below, in the documentation and/or\n                  other materials provided with the binary distribution.\n                  For the purposes of binary distribution, &amp;quot;Copyright\n                  Notice&amp;quot; refers to the following language: &amp;quot;Copyright\n                  (c) 1998-2009 Sendmail, Inc. All rights reserved.&amp;quot;\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Neither the name, trademark or logo of Sendmail, Inc.\n                  (including without limitation its subsidiaries or affiliates)\n                  or its contributors may be used to endorse or promote\n                  products, or software or services derived from this Software\n                  without specific prior written permission. The name &amp;quot;sendmail&amp;quot;\n                  is a registered trademark and service mark of Sendmail, Inc.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  We reserve the right to cancel this license if you do not\n                  comply with the terms. This license is governed by California\n                  law and both of us agree that for any dispute arising out of\n                  or relating to this Software, that jurisdiction and venue is\n                  proper in San Francisco or Alameda counties. These license\n                  terms and conditions reflect the complete agreement for\n                  the license of the Software (which means this supercedes\n                  prior or contemporaneous agreements or representations).\n                  If any term or condition under this license is found to be\n                  invalid, the remaining terms and conditions still apply.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Disclaimer/Limitation of Liability: THIS SOFTWARE IS\n                  PROVIDED BY SENDMAIL AND ITS CONTRIBUTORS &amp;quot;AS IS&amp;quot; WITHOUT\n                  WARRANTY OF ANY KIND AND ANY EXPRESS OR IMPLIED WARRANTIES,\n                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n                  OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR\n                  A PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO\n                  EVENT SHALL SENDMAIL OR ITS CONTRIBUTORS BE LIABLE FOR\n                  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,\n                  OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\n                  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n                  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED\n                  AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n                  LIABILITY, OR TORT (INCLUDING WITHOUT LIMITATION NEGLIGENCE\n                  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n                  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;$Revision: 1.1 $ $Date: 2009/07/16 18:43:18 $&lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T21:05:06Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;Note that this license is distinct and not a different version from Sendmail or Sendmail-8.23&quot;,
+        &quot;licenseId&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;,
+        &quot;licenseText&quot;: &quot;SENDMAIL OPEN SOURCE LICENSE\n\nThe following license terms and conditions apply to this open source\nsoftware (\&quot;Software\&quot;), unless a different license is obtained directly\nfrom Sendmail, Inc. (\&quot;Sendmail\&quot;) located at 6475 Christie Ave, Suite 350,\nEmeryville, CA 94608, USA.\n\nUse, modification and redistribution (including distribution of any\nmodified or derived work) of the Software in source and binary forms is\npermitted only if each of the following conditions of 1-6 are met:\n\n1. Redistributions of the Software qualify as \&quot;freeware\&quot; or \&quot;open\n   source software\&quot; under one of the following terms:\n\n   (a) Redistributions are made at no charge beyond the reasonable\n       cost of materials and delivery; or\n\n   (b) Redistributions are accompanied by a copy of the modified\n       Source Code (on an acceptable machine-readable medium) or by an\n       irrevocable offer to provide a copy of the modified Source Code\n       (on an acceptable machine-readable medium) for up to three years\n       at the cost of materials and delivery. Such redistributions must\n       allow further use, modification, and redistribution of the Source\n       Code under substantially the same terms as this license. For\n       the purposes of redistribution \&quot;Source Code\&quot; means the complete\n       human-readable, compilable, linkable, and operational source\n       code of the redistributed module(s) including all modifications.\n\n2. Redistributions of the Software Source Code must retain the\n   copyright notices as they appear in each Source Code file, these\n   license terms and conditions, and the disclaimer/limitation of\n   liability set forth in paragraph 6 below. Redistributions of the\n   Software Source Code must also comply with the copyright notices\n   and/or license terms and conditions imposed by contributors on\n   embedded code. The contributors&#39; license terms and conditions\n   and/or copyright notices are contained in the Source Code\n   distribution.\n\n3. Redistributions of the Software in binary form must reproduce the\n   Copyright Notice described below, these license terms and conditions,\n   and the disclaimer/limitation of liability set forth in paragraph\n   6 below, in the documentation and/or other materials provided with\n   the binary distribution.  For the purposes of binary distribution,\n   \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c)\n   1998-2009 Sendmail, Inc. All rights reserved.\&quot;\n\n4. Neither the name, trademark or logo of Sendmail, Inc. (including\n   without limitation its subsidiaries or affiliates) or its contributors\n   may be used to endorse or promote products, or software or services\n   derived from this Software without specific prior written permission.\n   The name \&quot;sendmail\&quot; is a registered trademark and service mark of\n   Sendmail, Inc.\n\n5. We reserve the right to cancel this license if you do not comply with \n   the terms.  This license is governed by California law and both of us \n   agree that for any dispute arising out of or relating to this Software, \n   that jurisdiction and venue is proper in San Francisco or Alameda \n   counties.  These license terms and conditions reflect the complete \n   agreement for the license of the Software (which means this supercedes \n   prior or contemporaneous agreements or representations).  If any term\n   or condition under this license is found to be invalid, the remaining\n   terms and conditions still apply.\n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY\n   SENDMAIL AND ITS CONTRIBUTORS \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND\n   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n   IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A\n   PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL\n   OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED\n   TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\n   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\n   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n   WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\n   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;\n            SENDMAIL OPEN SOURCE LICENSE\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;\n            The following license terms and conditions apply to this open\n            source software (&amp;quot;Software&amp;quot;), unless a different license is\n            obtained directly from Sendmail, Inc. (&amp;quot;Sendmail&amp;quot;) located\n            at 6475 Christie Ave, Suite 350, Emeryville, CA 94608, USA.\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n\n         &lt;p&gt;\n            Use, modification and redistribution (including\n            distribution of any modified or derived work) of the\n            Software in source and binary forms is permitted only\n            if each of the following conditions of 1-6 are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 1.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions of the Software qualify as &amp;quot;freeware&amp;quot; or\n                  &amp;quot;open source software&amp;quot; under one of the following terms:\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; (a)&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions are made at no charge beyond the\n                  reasonable cost of materials and delivery; or\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; (b)&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions are accompanied by a copy of the modified\n                  Source Code (on an acceptable machine-readable medium) or\n                  by an irrevocable offer to provide a copy of the modified\n                  Source Code (on an acceptable machine-readable medium) for\n                  up to three years at the cost of materials and delivery. Such\n                  redistributions must allow further use, modification, and\n                  redistribution of the Source Code under substantially the\n                  same terms as this license. For the purposes of redistribution\n                  &amp;quot;Source Code&amp;quot; means the complete human-readable,\n                  compilable, linkable, and operational source code of\n                  the redistributed module(s) including all modifications.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 2.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions of the Software Source Code must retain\n                  the copyright notices as they appear in each Source\n                  Code file, these license terms and conditions, and the\n                  disclaimer/limitation of liability set forth in paragraph\n                  6 below. Redistributions of the Software Source Code must\n                  also comply with the copyright notices and/or license terms\n                  and conditions imposed by contributors on embedded code. The\n                  contributors&amp;apos; license terms and conditions and/or copyright\n                  notices are contained in the Source Code distribution.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 3.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions of the Software in binary form must reproduce\n                  the Copyright Notice described below, these license terms\n                  and conditions, and the disclaimer/limitation of liability\n                  set forth in paragraph 6 below, in the documentation and/or\n                  other materials provided with the binary distribution.\n                  For the purposes of binary distribution, &amp;quot;Copyright\n                  Notice&amp;quot; refers to the following language: &amp;quot;Copyright\n                  (c) 1998-2009 Sendmail, Inc. All rights reserved.&amp;quot;\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 4.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Neither the name, trademark or logo of Sendmail, Inc.\n                  (including without limitation its subsidiaries or affiliates)\n                  or its contributors may be used to endorse or promote\n                  products, or software or services derived from this Software\n                  without specific prior written permission. The name &amp;quot;sendmail&amp;quot;\n                  is a registered trademark and service mark of Sendmail, Inc.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 5.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  We reserve the right to cancel this license if you do not\n                  comply with the terms. This license is governed by California\n                  law and both of us agree that for any dispute arising out of\n                  or relating to this Software, that jurisdiction and venue is\n                  proper in San Francisco or Alameda counties. These license\n                  terms and conditions reflect the complete agreement for\n                  the license of the Software (which means this supercedes\n                  prior or contemporaneous agreements or representations).\n                  If any term or condition under this license is found to be\n                  invalid, the remaining terms and conditions still apply.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,20}\&quot;&gt; 6.&lt;/span&gt;&lt;/var&gt;\n               &lt;p&gt;\n                  Disclaimer/Limitation of Liability: THIS SOFTWARE IS\n                  PROVIDED BY SENDMAIL AND ITS CONTRIBUTORS &amp;quot;AS IS&amp;quot; WITHOUT\n                  WARRANTY OF ANY KIND AND ANY EXPRESS OR IMPLIED WARRANTIES,\n                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n                  OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR\n                  A PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO\n                  EVENT SHALL SENDMAIL OR ITS CONTRIBUTORS BE LIABLE FOR\n                  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,\n                  OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\n                  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n                  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED\n                  AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n                  LIABILITY, OR TORT (INCLUDING WITHOUT LIMITATION NEGLIGENCE\n                  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n                  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;$Revision: 1.1 $ $Date: 2009/07/16 18:43:18 $&lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+        &quot;name&quot;: &quot;Sendmail Open Source License v1.1&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;SENDMAIL OPEN SOURCE LICENSE\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; The following license terms and conditions apply to this open source software (\&quot;Software\&quot;), unless a different license is obtained directly from Sendmail, Inc. (\&quot;Sendmail\&quot;) located at 6475 Christie Ave, Suite 350, Emeryville, CA 94608, USA.\n\n&lt;&lt;endOptional&gt;&gt;\nUse, modification and redistribution (including distribution of any modified or derived work) of the Software in source and binary forms is permitted only if each of the following conditions of 1-6 are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Redistributions of the Software qualify as \&quot;freeware\&quot; or \&quot;open source software\&quot; under one of the following terms:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Redistributions are made at no charge beyond the reasonable cost of materials and delivery; or\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Redistributions are accompanied by a copy of the modified Source Code (on an acceptable machine-readable medium) or by an irrevocable offer to provide a copy of the modified Source Code (on an acceptable machine-readable medium) for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution \&quot;Source Code\&quot; means the complete human-readable, compilable, linkable, and operational source code of the redistributed module(s) including all modifications.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Redistributions of the Software Source Code must retain the copyright notices as they appear in each Source Code file, these license terms and conditions, and the disclaimer/limitation of liability set forth in paragraph 6 below. Redistributions of the Software Source Code must also comply with the copyright notices and/or license terms and conditions imposed by contributors on embedded code. The contributors&#39; license terms and conditions and/or copyright notices are contained in the Source Code distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Redistributions of the Software in binary form must reproduce the Copyright Notice described below, these license terms and conditions, and the disclaimer/limitation of liability set forth in paragraph 6 below, in the documentation and/or other materials provided with the binary distribution. For the purposes of binary distribution, \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c) 1998-2009 Sendmail, Inc. All rights reserved.\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Neither the name, trademark or logo of Sendmail, Inc. (including without limitation its subsidiaries or affiliates) or its contributors may be used to endorse or promote products, or software or services derived from this Software without specific prior written permission. The name \&quot;sendmail\&quot; is a registered trademark and service mark of Sendmail, Inc.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   We reserve the right to cancel this license if you do not comply with the terms. This license is governed by California law and both of us agree that for any dispute arising out of or relating to this Software, that jurisdiction and venue is proper in San Francisco or Alameda counties. These license terms and conditions reflect the complete agreement for the license of the Software (which means this supercedes prior or contemporaneous agreements or representations). If any term or condition under this license is found to be invalid, the remaining terms and conditions still apply.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n   Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL AND ITS CONTRIBUTORS \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n   \n   &lt;&lt;beginOptional&gt;&gt;$Revision: 1.1 $ $Date: 2009/07/16 18:43:18 $\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/dc689e3aceab301421dbb358e7d42798">FedoraEntry:dc689e3aceab301421dbb358e7d42798</a> for <a href="/?license=Fedora:Sendmail-Open-Source-1.1"><span class="licensename"><span class="namespace">Fedora:</span>Sendmail-Open-Source-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Sendmail-Open-Source-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:dc689e3aceab301421dbb358e7d42798">[<a href="/fact/FedoraEntry/dc689e3aceab301421dbb358e7d42798">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Sendmail-Open-Source-1.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;dc689e3aceab301421dbb358e7d42798&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Sendmail-Open-Source-1.1&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/20266e57f0e4931afef11e4702510da9">ScancodeData:20266e57f0e4931afef11e4702510da9</a> for <a href="/?license=scancode:sendmail-open-source-1.1"><span class="licensename"><span class="namespace">scancode:</span>sendmail-open-source-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>sendmail-open-source-1.1</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail Open Source License v1.1</span></li><li><span class="licensename">Sendmail Open Source License v1.1</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:20266e57f0e4931afef11e4702510da9">[<a href="/fact/ScancodeData/20266e57f0e4931afef11e4702510da9">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail" target="_blank">https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>SENDMAIL OPEN SOURCE LICENSE
+
+The following license terms and conditions apply to this open source
+software (&quot;Software&quot;), unless a different license is obtained directly
+from Sendmail, Inc. (&quot;Sendmail&quot;) located at 6475 Christie Ave, Suite 350,
+Emeryville, CA 94608, USA.
+
+Use, modification and redistribution (including distribution of any
+modified or derived work) of the Software in source and binary forms is
+permitted only if each of the following conditions of 1-6 are met:
+
+1. Redistributions of the Software qualify as &quot;freeware&quot; or &quot;open
+   source software&quot; under one of the following terms:
+
+   (a) Redistributions are made at no charge beyond the reasonable
+       cost of materials and delivery; or
+
+   (b) Redistributions are accompanied by a copy of the modified
+       Source Code (on an acceptable machine-readable medium) or by an
+       irrevocable offer to provide a copy of the modified Source Code
+       (on an acceptable machine-readable medium) for up to three years
+       at the cost of materials and delivery. Such redistributions must
+       allow further use, modification, and redistribution of the Source
+       Code under substantially the same terms as this license. For
+       the purposes of redistribution &quot;Source Code&quot; means the complete
+       human-readable, compilable, linkable, and operational source
+       code of the redistributed module(s) including all modifications.
+
+2. Redistributions of the Software Source Code must retain the
+   copyright notices as they appear in each Source Code file, these
+   license terms and conditions, and the disclaimer/limitation of
+   liability set forth in paragraph 6 below. Redistributions of the
+   Software Source Code must also comply with the copyright notices
+   and/or license terms and conditions imposed by contributors on
+   embedded code. The contributors&#39; license terms and conditions
+   and/or copyright notices are contained in the Source Code
+   distribution.
+
+3. Redistributions of the Software in binary form must reproduce the
+   Copyright Notice described below, these license terms and conditions,
+   and the disclaimer/limitation of liability set forth in paragraph
+   6 below, in the documentation and/or other materials provided with
+   the binary distribution.  For the purposes of binary distribution,
+   &quot;Copyright Notice&quot; refers to the following language: &quot;Copyright (c)
+   1998-2009 Sendmail, Inc. All rights reserved.&quot;
+
+4. Neither the name, trademark or logo of Sendmail, Inc. (including
+   without limitation its subsidiaries or affiliates) or its contributors
+   may be used to endorse or promote products, or software or services
+   derived from this Software without specific prior written permission.
+   The name &quot;sendmail&quot; is a registered trademark and service mark of
+   Sendmail, Inc.
+
+5. We reserve the right to cancel this license if you do not comply with 
+   the terms.  This license is governed by California law and both of us 
+   agree that for any dispute arising out of or relating to this Software, 
+   that jurisdiction and venue is proper in San Francisco or Alameda 
+   counties.  These license terms and conditions reflect the complete 
+   agreement for the license of the Software (which means this supercedes 
+   prior or contemporaneous agreements or representations).  If any term
+   or condition under this license is found to be invalid, the remaining
+   terms and conditions still apply.
+
+6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY
+   SENDMAIL AND ITS CONTRIBUTORS &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND
+   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A
+   PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL
+   OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+   TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+   WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:sendmail-open-source-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail Open Source License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail Open Source License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;20266e57f0e4931afef11e4702510da9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;SENDMAIL OPEN SOURCE LICENSE\n\nThe following license terms and conditions apply to this open source\nsoftware (\&quot;Software\&quot;), unless a different license is obtained directly\nfrom Sendmail, Inc. (\&quot;Sendmail\&quot;) located at 6475 Christie Ave, Suite 350,\nEmeryville, CA 94608, USA.\n\nUse, modification and redistribution (including distribution of any\nmodified or derived work) of the Software in source and binary forms is\npermitted only if each of the following conditions of 1-6 are met:\n\n1. Redistributions of the Software qualify as \&quot;freeware\&quot; or \&quot;open\n   source software\&quot; under one of the following terms:\n\n   (a) Redistributions are made at no charge beyond the reasonable\n       cost of materials and delivery; or\n\n   (b) Redistributions are accompanied by a copy of the modified\n       Source Code (on an acceptable machine-readable medium) or by an\n       irrevocable offer to provide a copy of the modified Source Code\n       (on an acceptable machine-readable medium) for up to three years\n       at the cost of materials and delivery. Such redistributions must\n       allow further use, modification, and redistribution of the Source\n       Code under substantially the same terms as this license. For\n       the purposes of redistribution \&quot;Source Code\&quot; means the complete\n       human-readable, compilable, linkable, and operational source\n       code of the redistributed module(s) including all modifications.\n\n2. Redistributions of the Software Source Code must retain the\n   copyright notices as they appear in each Source Code file, these\n   license terms and conditions, and the disclaimer/limitation of\n   liability set forth in paragraph 6 below. Redistributions of the\n   Software Source Code must also comply with the copyright notices\n   and/or license terms and conditions imposed by contributors on\n   embedded code. The contributors&#39; license terms and conditions\n   and/or copyright notices are contained in the Source Code\n   distribution.\n\n3. Redistributions of the Software in binary form must reproduce the\n   Copyright Notice described below, these license terms and conditions,\n   and the disclaimer/limitation of liability set forth in paragraph\n   6 below, in the documentation and/or other materials provided with\n   the binary distribution.  For the purposes of binary distribution,\n   \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c)\n   1998-2009 Sendmail, Inc. All rights reserved.\&quot;\n\n4. Neither the name, trademark or logo of Sendmail, Inc. (including\n   without limitation its subsidiaries or affiliates) or its contributors\n   may be used to endorse or promote products, or software or services\n   derived from this Software without specific prior written permission.\n   The name \&quot;sendmail\&quot; is a registered trademark and service mark of\n   Sendmail, Inc.\n\n5. We reserve the right to cancel this license if you do not comply with \n   the terms.  This license is governed by California law and both of us \n   agree that for any dispute arising out of or relating to this Software, \n   that jurisdiction and venue is proper in San Francisco or Alameda \n   counties.  These license terms and conditions reflect the complete \n   agreement for the license of the Software (which means this supercedes \n   prior or contemporaneous agreements or representations).  If any term\n   or condition under this license is found to be invalid, the remaining\n   terms and conditions still apply.\n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY\n   SENDMAIL AND ITS CONTRIBUTORS \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND\n   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n   IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A\n   PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL\n   OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED\n   TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\n   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\n   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n   WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\n   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;sendmail-open-source-1.1&quot;,
+        &quot;_name&quot;: &quot;Sendmail Open Source License v1.1&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/trusteddomainproject/OpenDMARC/blob/master/LICENSE.Sendmail&quot;
+        ],
+        &quot;_owner&quot;: &quot;Sendmail&quot;,
+        &quot;_shortName&quot;: &quot;Sendmail Open Source License v1.1&quot;,
+        &quot;_spdxId&quot;: &quot;Sendmail-Open-Source-1.1&quot;,
+        &quot;_text&quot;: &quot;SENDMAIL OPEN SOURCE LICENSE\n\nThe following license terms and conditions apply to this open source\nsoftware (\&quot;Software\&quot;), unless a different license is obtained directly\nfrom Sendmail, Inc. (\&quot;Sendmail\&quot;) located at 6475 Christie Ave, Suite 350,\nEmeryville, CA 94608, USA.\n\nUse, modification and redistribution (including distribution of any\nmodified or derived work) of the Software in source and binary forms is\npermitted only if each of the following conditions of 1-6 are met:\n\n1. Redistributions of the Software qualify as \&quot;freeware\&quot; or \&quot;open\n   source software\&quot; under one of the following terms:\n\n   (a) Redistributions are made at no charge beyond the reasonable\n       cost of materials and delivery; or\n\n   (b) Redistributions are accompanied by a copy of the modified\n       Source Code (on an acceptable machine-readable medium) or by an\n       irrevocable offer to provide a copy of the modified Source Code\n       (on an acceptable machine-readable medium) for up to three years\n       at the cost of materials and delivery. Such redistributions must\n       allow further use, modification, and redistribution of the Source\n       Code under substantially the same terms as this license. For\n       the purposes of redistribution \&quot;Source Code\&quot; means the complete\n       human-readable, compilable, linkable, and operational source\n       code of the redistributed module(s) including all modifications.\n\n2. Redistributions of the Software Source Code must retain the\n   copyright notices as they appear in each Source Code file, these\n   license terms and conditions, and the disclaimer/limitation of\n   liability set forth in paragraph 6 below. Redistributions of the\n   Software Source Code must also comply with the copyright notices\n   and/or license terms and conditions imposed by contributors on\n   embedded code. The contributors&#39; license terms and conditions\n   and/or copyright notices are contained in the Source Code\n   distribution.\n\n3. Redistributions of the Software in binary form must reproduce the\n   Copyright Notice described below, these license terms and conditions,\n   and the disclaimer/limitation of liability set forth in paragraph\n   6 below, in the documentation and/or other materials provided with\n   the binary distribution.  For the purposes of binary distribution,\n   \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c)\n   1998-2009 Sendmail, Inc. All rights reserved.\&quot;\n\n4. Neither the name, trademark or logo of Sendmail, Inc. (including\n   without limitation its subsidiaries or affiliates) or its contributors\n   may be used to endorse or promote products, or software or services\n   derived from this Software without specific prior written permission.\n   The name \&quot;sendmail\&quot; is a registered trademark and service mark of\n   Sendmail, Inc.\n\n5. We reserve the right to cancel this license if you do not comply with \n   the terms.  This license is governed by California law and both of us \n   agree that for any dispute arising out of or relating to this Software, \n   that jurisdiction and venue is proper in San Francisco or Alameda \n   counties.  These license terms and conditions reflect the complete \n   agreement for the license of the Software (which means this supercedes \n   prior or contemporaneous agreements or representations).  If any term\n   or condition under this license is found to be invalid, the remaining\n   terms and conditions still apply.\n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY\n   SENDMAIL AND ITS CONTRIBUTORS \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND\n   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n   IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR A\n   PARTICULAR PURPOSE ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL SENDMAIL\n   OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED\n   TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\n   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\n   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n   WITHOUT LIMITATION NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\n   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/37fa439cbd55baa49402bc6de84eef5f">OrtLicenseCategorization:37fa439cbd55baa49402bc6de84eef5f</a> for <a href="/?license=SPDX:Sendmail-Open-Source-1.1"><span class="licensename"><span class="namespace">SPDX:</span>Sendmail-Open-Source-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Sendmail-Open-Source-1.1</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:37fa439cbd55baa49402bc6de84eef5f">[<a href="/fact/OrtLicenseCategorization/37fa439cbd55baa49402bc6de84eef5f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:37fa439cbd55baa49402bc6de84eef5f">[<a href="/fact/OrtLicenseCategorization/37fa439cbd55baa49402bc6de84eef5f">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Sendmail-Open-Source-1.1&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;37fa439cbd55baa49402bc6de84eef5f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Sendmail-Open-Source-1.1&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/f117c4436fcf3c6e0f72e756a784ed44">CavilLicenseChange:f117c4436fcf3c6e0f72e756a784ed44</a> for <a href="/?license=cavil:Sendmail-Open-Source-1.1"><span class="licensename"><span class="namespace">cavil:</span>Sendmail-Open-Source-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Sendmail-Open-Source-1.1</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail-Open-Source-1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Sendmail-Open-Source-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail-Open-Source-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;f117c4436fcf3c6e0f72e756a784ed44&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Sendmail-Open-Source-1.1&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Sendmail-Open-Source-1.1&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/7ed5ff5c0ffe028587f1c5e22a963fe5">MetaeffektLicense:7ed5ff5c0ffe028587f1c5e22a963fe5</a> for <a href="/?license=metaeffekt:Sendmail Open Source License 1.1"><span class="licensename"><span class="namespace">metaeffekt:</span>Sendmail Open Source License 1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Sendmail Open Source License 1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></li></ul></li><li><b>other LicenseName Hints (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail Open Source 1.1 License</span></li><li><span class="licensename">Sendmail Open Source License 1.1</span></li><li><span class="licensename">sendmail open source License 1.1</span></li><li><span class="licensename">Sendmail Open Source License v1.1</span></li><li><span class="licensename">sendmail open source License v1.1</span></li><li><span class="licensename">Sendmail Open Source v1.1 License</span></li><li><span class="licensename">Sendmail-Open-Source</span></li><li><span class="licensename">Sendmail-Open-Source-1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sendmail-open-source-1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Sendmail Open Source License 1.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail-Open-Source&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail-Open-Source-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail Open Source 1.1 License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail Open Source v1.1 License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail Open Source License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail Open Source License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;sendmail open source License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;sendmail open source License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:sendmail-open-source-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;7ed5ff5c0ffe028587f1c5e22a963fe5&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Sendmail-Open-Source-1.1&quot;,
+            &quot;Sendmail Open Source 1.1 License&quot;,
+            &quot;Sendmail Open Source v1.1 License&quot;,
+            &quot;Sendmail Open Source License v1.1&quot;,
+            &quot;Sendmail Open Source License 1.1&quot;,
+            &quot;sendmail open source License 1.1&quot;,
+            &quot;sendmail open source License v1.1&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Sendmail Open Source License 1.1&quot;,
+        &quot;_category&quot;: &quot;Sendmail-Open-Source&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:sendmail-open-source-1.1&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/e7b4409253f031f52d38ea61558f45f0">LicenseLynx:e7b4409253f031f52d38ea61558f45f0</a> for <a href="/?license=spdx:Sendmail-Open-Source-1.1"><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-Open-Source-1.1</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail Open Source License v1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sendmail-open-source-1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:sendmail-open-source-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Sendmail Open Source License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;e7b4409253f031f52d38ea61558f45f0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:sendmail-open-source-1.1&quot;,
+            &quot;spdx:Sendmail Open Source License v1.1&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:Sendmail-Open-Source-1.1&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

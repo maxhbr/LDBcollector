@@ -1,0 +1,682 @@
+<html><head><title>ldbcollector: spdx:HPND-sell-variant-MIT-disclaimer-rev</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:HPND-sell-variant-MIT-disclaimer-rev</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li><li><b>other LicenseNames (13):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer (sell variant; with MIT disclaimer; reverse)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Historical Permission Notice and Disclaimer (sell variant; with MIT disclaimer; reverse)</span></li><li><span class="licensename">HPND sell variant with MIT disclaimer - reverse</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND sell variant with MIT disclaimer - reverse</span></li><li><span class="licensename">HPND sell variant with MIT disclaimer reverse</span></li><li><span class="licensename"><span class="namespace">scancode:</span>HPND sell variant with MIT disclaimer reverse</span></li><li><span class="licensename">HPND-sell-MIT-Disclaimer-rev</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>HPND-sell-MIT-Disclaimer-rev</span></li><li><span class="licensename">HPND-sell-variant-MIT-disclaimer-rev</span></li><li><span class="licensename"><span class="namespace">cavil:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-sell-variant-mit-disclaimer-rev</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice &amp; Disclaimer (sell variant with MIT disclaimer - reverse)</span></li><li><span class="licensename">HPND sell</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:8e3daca85e1a95656e395475a97198f8">[<a href="/fact/ScancodeData/8e3daca85e1a95656e395475a97198f8">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:35a72231dcbe29e81984622b5ea595d3">[<a href="/fact/SPDXLicense/35a72231dcbe29e81984622b5ea595d3">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:4bf35d2bd2901cca5ca00094b740b655">[<a href="/fact/FedoraEntry/4bf35d2bd2901cca5ca00094b740b655">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b49243a991a9eb68d7490a926d610fc2">[<a href="/fact/OrtLicenseCategorization/b49243a991a9eb68d7490a926d610fc2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b49243a991a9eb68d7490a926d610fc2">[<a href="/fact/OrtLicenseCategorization/b49243a991a9eb68d7490a926d610fc2">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license matches the text of HPND-sell-variant-MIT-disclaimer, but reverses the order of the clauses.<span class="provided-by">(provided by: <span title="SPDXLicense:35a72231dcbe29e81984622b5ea595d3">[<a href="/fact/SPDXLicense/35a72231dcbe29e81984622b5ea595d3">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>Added in SPDX license list 3.24<span class="provided-by">(provided by: <span title="ScancodeData:8e3daca85e1a95656e395475a97198f8">[<a href="/fact/ScancodeData/8e3daca85e1a95656e395475a97198f8">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c" target="_blank">https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Disclaimer:
+
+The software is provided &quot;as is&quot;, without warranty of any kind,
+express or implied, including but not limited to the warranties
+of merchantability, fitness for a particular purpose and
+noninfringement. In no event shall the author(s) be liable for
+any claim, damages or other liability, whether in an action of
+contract, tort or otherwise, arising from, out of or in connection
+with the software or the use or other dealings in the software.
+         
+Permission to use, copy, modify, distribute, and sell this
+software and its documentation for any purpose is hereby
+granted without fee, provided that the above copyright notice
+appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            by Jim Knoble &amp;lt;jmknoble@pobox.com&amp;gt;
+            Copyright (C) 1999,2000,2001 Jim Knoble
+         &lt;/span&gt;&lt;/var&gt;
+         &lt;p&gt;
+            Disclaimer:
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The software is provided &amp;quot;as is&amp;quot;, without warranty of any kind,
+            express or implied, including but not limited to the warranties
+            of merchantability, fitness for a particular purpose and
+            noninfringement. In no event shall the author(s) be liable for
+            any claim, damages or other liability, whether in an action of
+            contract, tort or otherwise, arising from, out of or in connection
+            with the software or the use or other dealings in the software.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Permission to use, copy, modify, distribute, and sell this
+            software and its documentation for any purpose is hereby
+            granted without fee, provided that the above copyright notice
+            appear in all copies and that both that copyright notice and
+            this permission notice appear in supporting documentation.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Disclaimer:
+
+The software is provided &quot;as is&quot;, without warranty of any kind,
+express or implied, including but not limited to the warranties
+of merchantability, fitness for a particular purpose and
+noninfringement. In no event shall the author(s) be liable for
+any claim, damages or other liability, whether in an action of
+contract, tort or otherwise, arising from, out of or in connection
+with the software or the use or other dealings in the software.
+         
+Permission to use, copy, modify, distribute, and sell this
+software and its documentation for any purpose is hereby
+granted without fee, provided that the above copyright notice
+appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/35a72231dcbe29e81984622b5ea595d3">SPDXLicense:35a72231dcbe29e81984622b5ea595d3</a> for <a href="/?license=spdx:HPND-sell-variant-MIT-disclaimer-rev"><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND sell variant with MIT disclaimer - reverse</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:35a72231dcbe29e81984622b5ea595d3">[<a href="/fact/SPDXLicense/35a72231dcbe29e81984622b5ea595d3">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license matches the text of HPND-sell-variant-MIT-disclaimer, but reverses the order of the clauses.<span class="provided-by">(provided by: <span title="SPDXLicense:35a72231dcbe29e81984622b5ea595d3">[<a href="/fact/SPDXLicense/35a72231dcbe29e81984622b5ea595d3">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c" target="_blank">https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Disclaimer:
+
+The software is provided &quot;as is&quot;, without warranty of any kind,
+express or implied, including but not limited to the warranties
+of merchantability, fitness for a particular purpose and
+noninfringement. In no event shall the author(s) be liable for
+any claim, damages or other liability, whether in an action of
+contract, tort or otherwise, arising from, out of or in connection
+with the software or the use or other dealings in the software.
+         
+Permission to use, copy, modify, distribute, and sell this
+software and its documentation for any purpose is hereby
+granted without fee, provided that the above copyright notice
+appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt;&lt;span title=&quot;can be replaced with the pattern .{0,5000}&quot;&gt; 
+            by Jim Knoble &amp;lt;jmknoble@pobox.com&amp;gt;
+            Copyright (C) 1999,2000,2001 Jim Knoble
+         &lt;/span&gt;&lt;/var&gt;
+         &lt;p&gt;
+            Disclaimer:
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The software is provided &amp;quot;as is&amp;quot;, without warranty of any kind,
+            express or implied, including but not limited to the warranties
+            of merchantability, fitness for a particular purpose and
+            noninfringement. In no event shall the author(s) be liable for
+            any claim, damages or other liability, whether in an action of
+            contract, tort or otherwise, arising from, out of or in connection
+            with the software or the use or other dealings in the software.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Permission to use, copy, modify, distribute, and sell this
+            software and its documentation for any purpose is hereby
+            granted without fee, provided that the above copyright notice
+            appear in all copies and that both that copyright notice and
+            this permission notice appear in supporting documentation.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND sell variant with MIT disclaimer - reverse&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;35a72231dcbe29e81984622b5ea595d3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license matches the text of HPND-sell-variant-MIT-disclaimer, but reverses the order of the clauses.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Disclaimer:\n\nThe software is provided \&quot;as is\&quot;, without warranty of any kind,\nexpress or implied, including but not limited to the warranties\nof merchantability, fitness for a particular purpose and\nnoninfringement. In no event shall the author(s) be liable for\nany claim, damages or other liability, whether in an action of\ncontract, tort or otherwise, arising from, out of or in connection\nwith the software or the use or other dealings in the software.\n         \nPermission to use, copy, modify, distribute, and sell this\nsoftware and its documentation for any purpose is hereby\ngranted without fee, provided that the above copyright notice\nappear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            by Jim Knoble &amp;lt;jmknoble@pobox.com&amp;gt;\n            Copyright (C) 1999,2000,2001 Jim Knoble\n         &lt;/span&gt;&lt;/var&gt;\n         &lt;p&gt;\n            Disclaimer:\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The software is provided &amp;quot;as is&amp;quot;, without warranty of any kind,\n            express or implied, including but not limited to the warranties\n            of merchantability, fitness for a particular purpose and\n            noninfringement. In no event shall the author(s) be liable for\n            any claim, damages or other liability, whether in an action of\n            contract, tort or otherwise, arising from, out of or in connection\n            with the software or the use or other dealings in the software.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Permission to use, copy, modify, distribute, and sell this\n            software and its documentation for any purpose is hereby\n            granted without fee, provided that the above copyright notice\n            appear in all copies and that both that copyright notice and\n            this permission notice appear in supporting documentation.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:59:55Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license matches the text of HPND-sell-variant-MIT-disclaimer, but reverses the order of the clauses.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+        &quot;licenseText&quot;: &quot;Disclaimer:\n\nThe software is provided \&quot;as is\&quot;, without warranty of any kind,\nexpress or implied, including but not limited to the warranties\nof merchantability, fitness for a particular purpose and\nnoninfringement. In no event shall the author(s) be liable for\nany claim, damages or other liability, whether in an action of\ncontract, tort or otherwise, arising from, out of or in connection\nwith the software or the use or other dealings in the software.\n         \nPermission to use, copy, modify, distribute, and sell this\nsoftware and its documentation for any purpose is hereby\ngranted without fee, provided that the above copyright notice\nappear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt;&lt;span title=\&quot;can be replaced with the pattern .{0,5000}\&quot;&gt; \n            by Jim Knoble &amp;lt;jmknoble@pobox.com&amp;gt;\n            Copyright (C) 1999,2000,2001 Jim Knoble\n         &lt;/span&gt;&lt;/var&gt;\n         &lt;p&gt;\n            Disclaimer:\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The software is provided &amp;quot;as is&amp;quot;, without warranty of any kind,\n            express or implied, including but not limited to the warranties\n            of merchantability, fitness for a particular purpose and\n            noninfringement. In no event shall the author(s) be liable for\n            any claim, damages or other liability, whether in an action of\n            contract, tort or otherwise, arising from, out of or in connection\n            with the software or the use or other dealings in the software.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Permission to use, copy, modify, distribute, and sell this\n            software and its documentation for any purpose is hereby\n            granted without fee, provided that the above copyright notice\n            appear in all copies and that both that copyright notice and\n            this permission notice appear in supporting documentation.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;HPND sell variant with MIT disclaimer - reverse&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;by Jim Knoble &lt;jmknoble@pobox.com&gt; Copyright (C) 1999,2000,2001 Jim Knoble\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\nDisclaimer:\n\nThe software is provided \&quot;as is\&quot;, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the author(s) be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/4bf35d2bd2901cca5ca00094b740b655">FedoraEntry:4bf35d2bd2901cca5ca00094b740b655</a> for <a href="/?license=Fedora:HPND-sell-variant-MIT-disclaimer-rev"><span class="licensename"><span class="namespace">Fedora:</span>HPND-sell-variant-MIT-disclaimer-rev</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:4bf35d2bd2901cca5ca00094b740b655">[<a href="/fact/FedoraEntry/4bf35d2bd2901cca5ca00094b740b655">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;4bf35d2bd2901cca5ca00094b740b655&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;HPND-sell-variant-MIT-disclaimer-rev&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/8e3daca85e1a95656e395475a97198f8">ScancodeData:8e3daca85e1a95656e395475a97198f8</a> for <a href="/?license=scancode:hpnd-sell-variant-mit-disclaimer-rev"><span class="licensename"><span class="namespace">scancode:</span>hpnd-sell-variant-mit-disclaimer-rev</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-sell-variant-mit-disclaimer-rev</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND sell variant with MIT disclaimer - reverse</span></li><li><span class="licensename">HPND sell variant with MIT disclaimer reverse</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:8e3daca85e1a95656e395475a97198f8">[<a href="/fact/ScancodeData/8e3daca85e1a95656e395475a97198f8">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Added in SPDX license list 3.24<span class="provided-by">(provided by: <span title="ScancodeData:8e3daca85e1a95656e395475a97198f8">[<a href="/fact/ScancodeData/8e3daca85e1a95656e395475a97198f8">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c" target="_blank">https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Disclaimer:
+
+The software is provided &quot;as is&quot;, without warranty of any kind,
+express or implied, including but not limited to the warranties
+of merchantability, fitness for a particular purpose and
+noninfringement. In no event shall the author(s) be liable for
+any claim, damages or other liability, whether in an action of
+contract, tort or otherwise, arising from, out of or in connection
+with the software or the use or other dealings in the software.
+         
+Permission to use, copy, modify, distribute, and sell this
+software and its documentation for any purpose is hereby
+granted without fee, provided that the above copyright notice
+appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:hpnd-sell-variant-mit-disclaimer-rev&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND sell variant with MIT disclaimer reverse&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND sell variant with MIT disclaimer - reverse&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;8e3daca85e1a95656e395475a97198f8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Added in SPDX license list 3.24&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Disclaimer:\n\nThe software is provided \&quot;as is\&quot;, without warranty of any kind,\nexpress or implied, including but not limited to the warranties\nof merchantability, fitness for a particular purpose and\nnoninfringement. In no event shall the author(s) be liable for\nany claim, damages or other liability, whether in an action of\ncontract, tort or otherwise, arising from, out of or in connection\nwith the software or the use or other dealings in the software.\n         \nPermission to use, copy, modify, distribute, and sell this\nsoftware and its documentation for any purpose is hereby\ngranted without fee, provided that the above copyright notice\nappear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;hpnd-sell-variant-mit-disclaimer-rev&quot;,
+        &quot;_name&quot;: &quot;HPND sell variant with MIT disclaimer - reverse&quot;,
+        &quot;_notes&quot;: &quot;Added in SPDX license list 3.24&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/sigmavirus24/x11-ssh-askpass/blob/master/dynlist.c&quot;
+        ],
+        &quot;_owner&quot;: &quot;Ian Stapleton Cordasco&quot;,
+        &quot;_shortName&quot;: &quot;HPND sell variant with MIT disclaimer reverse&quot;,
+        &quot;_spdxId&quot;: &quot;HPND-sell-variant-MIT-disclaimer-rev&quot;,
+        &quot;_text&quot;: &quot;Disclaimer:\n\nThe software is provided \&quot;as is\&quot;, without warranty of any kind,\nexpress or implied, including but not limited to the warranties\nof merchantability, fitness for a particular purpose and\nnoninfringement. In no event shall the author(s) be liable for\nany claim, damages or other liability, whether in an action of\ncontract, tort or otherwise, arising from, out of or in connection\nwith the software or the use or other dealings in the software.\n         \nPermission to use, copy, modify, distribute, and sell this\nsoftware and its documentation for any purpose is hereby\ngranted without fee, provided that the above copyright notice\nappear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/b49243a991a9eb68d7490a926d610fc2">OrtLicenseCategorization:b49243a991a9eb68d7490a926d610fc2</a> for <a href="/?license=SPDX:HPND-sell-variant-MIT-disclaimer-rev"><span class="licensename"><span class="namespace">SPDX:</span>HPND-sell-variant-MIT-disclaimer-rev</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b49243a991a9eb68d7490a926d610fc2">[<a href="/fact/OrtLicenseCategorization/b49243a991a9eb68d7490a926d610fc2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b49243a991a9eb68d7490a926d610fc2">[<a href="/fact/OrtLicenseCategorization/b49243a991a9eb68d7490a926d610fc2">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;b49243a991a9eb68d7490a926d610fc2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HPND-sell-variant-MIT-disclaimer-rev&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/66deb154761ae5385ba42c4d5c59ca93">CavilLicenseChange:66deb154761ae5385ba42c4d5c59ca93</a> for <a href="/?license=cavil:HPND-sell-variant-MIT-disclaimer-rev"><span class="licensename"><span class="namespace">cavil:</span>HPND-sell-variant-MIT-disclaimer-rev</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;66deb154761ae5385ba42c4d5c59ca93&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;HPND-sell-variant-MIT-disclaimer-rev&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:HPND-sell-variant-MIT-disclaimer-rev&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/ee9d38b44ed81f276232433f3d1b9afd">MetaeffektLicense:ee9d38b44ed81f276232433f3d1b9afd</a> for <a href="/?license=metaeffekt:HPND-sell-MIT-Disclaimer-rev"><span class="licensename"><span class="namespace">metaeffekt:</span>HPND-sell-MIT-Disclaimer-rev</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>HPND-sell-MIT-Disclaimer-rev</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Historical Permission Notice and Disclaimer (sell variant; with MIT disclaimer; reverse)</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice &amp; Disclaimer (sell variant with MIT disclaimer - reverse)</span></li><li><span class="licensename">HPND sell</span></li><li><span class="licensename">HPND sell variant with MIT disclaimer - reverse</span></li><li><span class="licensename">HPND-sell-variant-MIT-disclaimer-rev</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-sell-variant-mit-disclaimer-rev</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:HPND-sell-MIT-Disclaimer-rev&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:Historical Permission Notice and Disclaimer (sell variant; with MIT disclaimer; reverse)&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND sell&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND sell variant with MIT disclaimer - reverse&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice &amp; Disclaimer (sell variant with MIT disclaimer - reverse)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:hpnd-sell-variant-mit-disclaimer-rev&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;ee9d38b44ed81f276232433f3d1b9afd&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;HPND-sell-variant-MIT-disclaimer-rev&quot;,
+            &quot;HPND sell variant with MIT disclaimer - reverse&quot;,
+            &quot;Historical Permission Notice &amp; Disclaimer (sell variant with MIT disclaimer - reverse)&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Historical Permission Notice and Disclaimer (sell variant; with MIT disclaimer; reverse)&quot;,
+        &quot;_category&quot;: &quot;HPND sell&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:hpnd-sell-variant-mit-disclaimer-rev&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:HPND-sell-MIT-Disclaimer-rev&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/cf3996161a2e4194ab43dffb09cfd3e8">LicenseLynx:cf3996161a2e4194ab43dffb09cfd3e8</a> for <a href="/?license=spdx:HPND-sell-variant-MIT-disclaimer-rev"><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant-MIT-disclaimer-rev</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND sell variant with MIT disclaimer - reverse</span></li><li><span class="licensename"><span class="namespace">scancode:</span>HPND sell variant with MIT disclaimer reverse</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-sell-variant-mit-disclaimer-rev</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:HPND sell variant with MIT disclaimer reverse&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:hpnd-sell-variant-mit-disclaimer-rev&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:HPND sell variant with MIT disclaimer - reverse&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;cf3996161a2e4194ab43dffb09cfd3e8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:HPND sell variant with MIT disclaimer reverse&quot;,
+            &quot;scancode:hpnd-sell-variant-mit-disclaimer-rev&quot;,
+            &quot;spdx:HPND sell variant with MIT disclaimer - reverse&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:HPND-sell-variant-MIT-disclaimer-rev&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>

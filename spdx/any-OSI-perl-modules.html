@@ -1,0 +1,624 @@
+<html><head><title>ldbcollector: spdx:any-OSI-perl-modules</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script><script type="text/javascript" src="https://unpkg.com/@hpcc-js/wasm@2.20.0/dist/index.umd.js"></script><script type="text/javascript" src="https://unpkg.com/d3-graphviz@5.6.0/build/d3-graphviz.js"></script></head><body><h1>spdx:any-OSI-perl-modules</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>any-OSI-perl-modules</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Any OSI License - Perl Modules</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Any OSI License - Perl Modules</span></li><li><span class="licensename">Any OSI Perl Modules</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Any OSI Perl Modules</span></li><li><span class="licensename">any-OSI-perl-modules</span></li><li><span class="licensename"><span class="namespace">cavil:</span>any-OSI-perl-modules</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>any-OSI-perl-modules</span></li><li><span class="licensename"><span class="namespace">scancode:</span>any-osi-perl-modules</span></li><li><span class="licensename"><span class="namespace">spdx:</span>any-OSI-perl-modules</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Unstated License<span class="provided-by">(provided by: <span title="ScancodeData:bb06edcb4b380354d8966ca8701b787d">[<a href="/fact/ScancodeData/bb06edcb4b380354d8966ca8701b787d">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:76ab6b88a3929c162d3529ef199836f1">[<a href="/fact/SPDXLicense/76ab6b88a3929c162d3529ef199836f1">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:eee64cfb4e1c1f47ee0f627626e1b303">[<a href="/fact/FedoraEntry/eee64cfb4e1c1f47ee0f627626e1b303">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>unstated-license</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2410c4da9a300800f0e495edafc19ab4">[<a href="/fact/OrtLicenseCategorization/2410c4da9a300800f0e495edafc19ab4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2410c4da9a300800f0e495edafc19ab4">[<a href="/fact/OrtLicenseCategorization/2410c4da9a300800f0e495edafc19ab4">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is similar in spirit to any-OSI, but has some more specific text. It is used in several Perl modules.<span class="provided-by">(provided by: <span title="SPDXLicense:76ab6b88a3929c162d3529ef199836f1">[<a href="/fact/SPDXLicense/76ab6b88a3929c162d3529ef199836f1">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE" target="_blank">https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE</a></li><li><a href="https://metacpan.org/pod/Net::MQTT::Simple#LICENSE" target="_blank">https://metacpan.org/pod/Net::MQTT::Simple#LICENSE</a></li><li><a href="https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE" target="_blank">https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software may be redistributed under the terms of the GPL, LGPL,
+modified BSD, or Artistic license, or any of the other OSI approved
+licenses listed at http://www.opensource.org/licenses/alphabetical.
+Distribution is allowed under all of these licenses, or any smaller
+subset of multiple or just one of these licenses.
+
+When using a packaged version, please refer to the package metadata to see
+under which license terms it was distributed. Alternatively, a distributor
+may choose to replace the LICENSE section of the documentation and/or
+include a LICENSE file to reflect the license(s) they chose to redistribute
+under.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            This software may be redistributed under the terms of the GPL, LGPL,
+            modified BSD, or Artistic license, or any of the other OSI approved
+            licenses listed at http://www.opensource.org/licenses/alphabetical.
+            Distribution is allowed under all of these licenses, or any smaller
+            subset of multiple or just one of these licenses.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            When using a packaged version, please refer to the package metadata to see
+            under which license terms it was distributed. Alternatively, a distributor
+            may choose to replace the LICENSE section of the documentation and/or
+            include a LICENSE file to reflect the license(s) they chose to redistribute
+            under.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/76ab6b88a3929c162d3529ef199836f1">SPDXLicense:76ab6b88a3929c162d3529ef199836f1</a> for <a href="/?license=spdx:any-OSI-perl-modules"><span class="licensename"><span class="namespace">spdx:</span>any-OSI-perl-modules</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>any-OSI-perl-modules</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Any OSI License - Perl Modules</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:76ab6b88a3929c162d3529ef199836f1">[<a href="/fact/SPDXLicense/76ab6b88a3929c162d3529ef199836f1">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is similar in spirit to any-OSI, but has some more specific text. It is used in several Perl modules.<span class="provided-by">(provided by: <span title="SPDXLicense:76ab6b88a3929c162d3529ef199836f1">[<a href="/fact/SPDXLicense/76ab6b88a3929c162d3529ef199836f1">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE" target="_blank">https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE</a></li><li><a href="https://metacpan.org/pod/Net::MQTT::Simple#LICENSE" target="_blank">https://metacpan.org/pod/Net::MQTT::Simple#LICENSE</a></li><li><a href="https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE" target="_blank">https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software may be redistributed under the terms of the GPL, LGPL,
+modified BSD, or Artistic license, or any of the other OSI approved
+licenses listed at http://www.opensource.org/licenses/alphabetical.
+Distribution is allowed under all of these licenses, or any smaller
+subset of multiple or just one of these licenses.
+
+When using a packaged version, please refer to the package metadata to see
+under which license terms it was distributed. Alternatively, a distributor
+may choose to replace the LICENSE section of the documentation and/or
+include a LICENSE file to reflect the license(s) they chose to redistribute
+under.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            This software may be redistributed under the terms of the GPL, LGPL,
+            modified BSD, or Artistic license, or any of the other OSI approved
+            licenses listed at http://www.opensource.org/licenses/alphabetical.
+            Distribution is allowed under all of these licenses, or any smaller
+            subset of multiple or just one of these licenses.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            When using a packaged version, please refer to the package metadata to see
+            under which license terms it was distributed. Alternatively, a distributor
+            may choose to replace the LICENSE section of the documentation and/or
+            include a LICENSE file to reflect the license(s) they chose to redistribute
+            under.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:any-OSI-perl-modules&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Any OSI License - Perl Modules&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;76ab6b88a3929c162d3529ef199836f1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This is similar in spirit to any-OSI, but has some more specific text. It is used in several Perl modules.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;This software may be redistributed under the terms of the GPL, LGPL,\nmodified BSD, or Artistic license, or any of the other OSI approved\nlicenses listed at http://www.opensource.org/licenses/alphabetical.\nDistribution is allowed under all of these licenses, or any smaller\nsubset of multiple or just one of these licenses.\n\nWhen using a packaged version, please refer to the package metadata to see\nunder which license terms it was distributed. Alternatively, a distributor\nmay choose to replace the LICENSE section of the documentation and/or\ninclude a LICENSE file to reflect the license(s) they chose to redistribute\nunder.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            This software may be redistributed under the terms of the GPL, LGPL,\n            modified BSD, or Artistic license, or any of the other OSI approved\n            licenses listed at http://www.opensource.org/licenses/alphabetical.\n            Distribution is allowed under all of these licenses, or any smaller\n            subset of multiple or just one of these licenses.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            When using a packaged version, please refer to the package metadata to see\n            under which license terms it was distributed. Alternatively, a distributor\n            may choose to replace the LICENSE section of the documentation and/or\n            include a LICENSE file to reflect the license(s) they chose to redistribute\n            under.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/pod/Net::MQTT::Simple#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/pod/Net::MQTT::Simple#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:58:52Z&quot;,
+                &quot;url&quot;: &quot;https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:58:52Z&quot;,
+                &quot;url&quot;: &quot;https://metacpan.org/pod/Net::MQTT::Simple#LICENSE&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2026-02-20T20:58:52Z&quot;,
+                &quot;url&quot;: &quot;https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This is similar in spirit to any-OSI, but has some more specific text. It is used in several Perl modules.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:any-OSI-perl-modules&quot;,
+        &quot;licenseText&quot;: &quot;This software may be redistributed under the terms of the GPL, LGPL,\nmodified BSD, or Artistic license, or any of the other OSI approved\nlicenses listed at http://www.opensource.org/licenses/alphabetical.\nDistribution is allowed under all of these licenses, or any smaller\nsubset of multiple or just one of these licenses.\n\nWhen using a packaged version, please refer to the package metadata to see\nunder which license terms it was distributed. Alternatively, a distributor\nmay choose to replace the LICENSE section of the documentation and/or\ninclude a LICENSE file to reflect the license(s) they chose to redistribute\nunder.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            This software may be redistributed under the terms of the GPL, LGPL,\n            modified BSD, or Artistic license, or any of the other OSI approved\n            licenses listed at http://www.opensource.org/licenses/alphabetical.\n            Distribution is allowed under all of these licenses, or any smaller\n            subset of multiple or just one of these licenses.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            When using a packaged version, please refer to the package metadata to see\n            under which license terms it was distributed. Alternatively, a distributor\n            may choose to replace the LICENSE section of the documentation and/or\n            include a LICENSE file to reflect the license(s) they chose to redistribute\n            under.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Any OSI License - Perl Modules&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE&quot;,
+            &quot;https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE&quot;,
+            &quot;https://metacpan.org/pod/Net::MQTT::Simple#LICENSE&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;This software may be redistributed under the terms of the GPL, LGPL, modified BSD, or Artistic license, or any of the other OSI approved licenses listed at http://www.opensource.org/licenses/alphabetical. Distribution is allowed under all of these licenses, or any smaller subset of multiple or just one of these licenses.\n\nWhen using a packaged version, please refer to the package metadata to see under which license terms it was distributed. Alternatively, a distributor may choose to replace the LICENSE section of the documentation and/or include a LICENSE file to reflect the license(s) they chose to redistribute under.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/eee64cfb4e1c1f47ee0f627626e1b303">FedoraEntry:eee64cfb4e1c1f47ee0f627626e1b303</a> for <a href="/?license=Fedora:any-OSI-perl-modules"><span class="licensename"><span class="namespace">Fedora:</span>any-OSI-perl-modules</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>any-OSI-perl-modules</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>any-OSI-perl-modules</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:eee64cfb4e1c1f47ee0f627626e1b303">[<a href="/fact/FedoraEntry/eee64cfb4e1c1f47ee0f627626e1b303">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:any-OSI-perl-modules&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:any-OSI-perl-modules&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;eee64cfb4e1c1f47ee0f627626e1b303&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;any-OSI-perl-modules&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:any-OSI-perl-modules&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/bb06edcb4b380354d8966ca8701b787d">ScancodeData:bb06edcb4b380354d8966ca8701b787d</a> for <a href="/?license=scancode:any-osi-perl-modules"><span class="licensename"><span class="namespace">scancode:</span>any-osi-perl-modules</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>any-osi-perl-modules</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Any OSI License - Perl Modules</span></li><li><span class="licensename">Any OSI Perl Modules</span></li><li><span class="licensename"><span class="namespace">spdx:</span>any-OSI-perl-modules</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Unstated License<span class="provided-by">(provided by: <span title="ScancodeData:bb06edcb4b380354d8966ca8701b787d">[<a href="/fact/ScancodeData/bb06edcb4b380354d8966ca8701b787d">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE" target="_blank">https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE</a></li><li><a href="https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE" target="_blank">https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE</a></li><li><a href="https://metacpan.org/pod/Net::MQTT::Simple#LICENSE" target="_blank">https://metacpan.org/pod/Net::MQTT::Simple#LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software may be redistributed under the terms of the GPL, LGPL,
+modified BSD, or Artistic license, or any of the other OSI approved
+licenses listed at http://www.opensource.org/licenses/alphabetical.
+Distribution is allowed under all of these licenses, or any smaller
+subset of multiple or just one of these licenses.
+
+When using a packaged version, please refer to the package metadata to see
+under which license terms it was distributed. Alternatively, a distributor
+may choose to replace the LICENSE section of the documentation and/or
+include a LICENSE file to reflect the license(s) they chose to redistribute
+under.
+</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:any-osi-perl-modules&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Any OSI Perl Modules&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Any OSI License - Perl Modules&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:any-OSI-perl-modules&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;bb06edcb4b380354d8966ca8701b787d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Unstated License&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/pod/Net::MQTT::Simple#LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This software may be redistributed under the terms of the GPL, LGPL,\nmodified BSD, or Artistic license, or any of the other OSI approved\nlicenses listed at http://www.opensource.org/licenses/alphabetical.\nDistribution is allowed under all of these licenses, or any smaller\nsubset of multiple or just one of these licenses.\n\nWhen using a packaged version, please refer to the package metadata to see\nunder which license terms it was distributed. Alternatively, a distributor\nmay choose to replace the LICENSE section of the documentation and/or\ninclude a LICENSE file to reflect the license(s) they chose to redistribute\nunder.\n&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Unstated License&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;any-osi-perl-modules&quot;,
+        &quot;_name&quot;: &quot;Any OSI License - Perl Modules&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://metacpan.org/release/JUERD/Exporter-Tidy-0.09/view/Tidy.pm#LICENSE&quot;,
+            &quot;https://metacpan.org/pod/Qmail::Deliverable::Client#LICENSE&quot;,
+            &quot;https://metacpan.org/pod/Net::MQTT::Simple#LICENSE&quot;
+        ],
+        &quot;_owner&quot;: &quot;Unspecified&quot;,
+        &quot;_shortName&quot;: &quot;Any OSI Perl Modules&quot;,
+        &quot;_spdxId&quot;: &quot;any-OSI-perl-modules&quot;,
+        &quot;_text&quot;: &quot;This software may be redistributed under the terms of the GPL, LGPL,\nmodified BSD, or Artistic license, or any of the other OSI approved\nlicenses listed at http://www.opensource.org/licenses/alphabetical.\nDistribution is allowed under all of these licenses, or any smaller\nsubset of multiple or just one of these licenses.\n\nWhen using a packaged version, please refer to the package metadata to see\nunder which license terms it was distributed. Alternatively, a distributor\nmay choose to replace the LICENSE section of the documentation and/or\ninclude a LICENSE file to reflect the license(s) they chose to redistribute\nunder.\n&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/2410c4da9a300800f0e495edafc19ab4">OrtLicenseCategorization:2410c4da9a300800f0e495edafc19ab4</a> for <a href="/?license=SPDX:any-OSI-perl-modules"><span class="licensename"><span class="namespace">SPDX:</span>any-OSI-perl-modules</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>any-OSI-perl-modules</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>unstated-license</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2410c4da9a300800f0e495edafc19ab4">[<a href="/fact/OrtLicenseCategorization/2410c4da9a300800f0e495edafc19ab4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2410c4da9a300800f0e495edafc19ab4">[<a href="/fact/OrtLicenseCategorization/2410c4da9a300800f0e495edafc19ab4">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:any-OSI-perl-modules&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;2410c4da9a300800f0e495edafc19ab4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;unstated-license&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;unstated-license&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:any-OSI-perl-modules&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/c18b7a56e0525189d14e52fa152ced3f">CavilLicenseChange:c18b7a56e0525189d14e52fa152ced3f</a> for <a href="/?license=cavil:any-OSI-perl-modules"><span class="licensename"><span class="namespace">cavil:</span>any-OSI-perl-modules</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>any-OSI-perl-modules</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">any-OSI-perl-modules</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:any-OSI-perl-modules&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;any-OSI-perl-modules&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;c18b7a56e0525189d14e52fa152ced3f&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;any-OSI-perl-modules&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:any-OSI-perl-modules&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/LicenseLynx">LicenseLynx</a>: <a href="/fact/LicenseLynx/1cb2920588019f2187a37086924ec06c">LicenseLynx:1cb2920588019f2187a37086924ec06c</a> for <a href="/?license=spdx:any-OSI-perl-modules"><span class="licensename"><span class="namespace">spdx:</span>any-OSI-perl-modules</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>any-OSI-perl-modules</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Any OSI License - Perl Modules</span></li><li><span class="licensename"><span class="namespace">scancode:</span>Any OSI Perl Modules</span></li><li><span class="licensename"><span class="namespace">scancode:</span>any-osi-perl-modules</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:any-OSI-perl-modules&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:Any OSI Perl Modules&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:any-osi-perl-modules&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:Any OSI License - Perl Modules&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;LicenseLynx&quot;,
+        &quot;1cb2920588019f2187a37086924ec06c&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;license_lynx_aliases&quot;: [
+            &quot;scancode:Any OSI Perl Modules&quot;,
+            &quot;scancode:any-osi-perl-modules&quot;,
+            &quot;spdx:Any OSI License - Perl Modules&quot;
+        ],
+        &quot;license_lynx_canonical&quot;: &quot;spdx:any-OSI-perl-modules&quot;
+    },
+    &quot;type&quot;: &quot;LicenseLynx&quot;
+}</pre></details></li></ul></body></html>
