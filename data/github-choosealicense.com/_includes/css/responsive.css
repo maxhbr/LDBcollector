@@ -146,25 +146,17 @@
     font-size: 10px;
   }
   .license-rules:not(.license-rules-sidebar) li {
+    padding-left: 14px;
     margin-right: 5px;
     font-size: 10px;
     -webkit-text-size-adjust: none;
   }
-  .license-rules:not(.license-rules-sidebar) li span {
-    background-size: 44px;
+  .license-rules:not(.license-rules-sidebar) .license-marker {
     width: 10px;
-    height: 10px;
+    font-size: 10px;
+    left: 0;
     top: 1px;
-    position: relative;
-  }
-  .license-rules:not(.license-rules-sidebar) .license-conditions span {
-    background-position: -34px 0;
-  }
-  .license-rules:not(.license-rules-sidebar) .license-permissions span {
-    background-position: -24px 0px;
-  }
-  .license-rules:not(.license-rules-sidebar) .license-limitations span {
-    background-position: -14px 0;
+    position: absolute;
   }
 
   .hint--large::after{
