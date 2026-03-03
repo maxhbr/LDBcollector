@@ -2,6 +2,7 @@
 
 set -e
 
+cd "$(dirname "$0")"
 mkdir -p OSADL-checklists
 cd OSADL-checklists
 set -x
