@@ -5,6 +5,7 @@ module Ldbcollector.Model.OutputLicense
   ( OutputLicense,
     toOutputLicense,
     getOutputLicense,
+    getOutputLicensesByNames,
     getAllOutputLicenses,
     getOutputLicensesByNamespace,
   )
@@ -17,7 +18,7 @@ import Data.Graph.Inductive.Graph qualified as G
 import Data.Text qualified as T
 import Data.Vector qualified as V
 import Ldbcollector.Model.LicenseFact (LicenseNameCluster (..), getImpliedLicenseTypes)
-import Ldbcollector.Model.LicenseGraph (LicenseGraph, LicenseGraphM, LicenseGraphNode (LGFact, LGName), LicenseGraphType, getLicenseGraphLicenseNames, runLicenseGraphM', _gr)
+import Ldbcollector.Model.LicenseGraph (LicenseGraph, LicenseGraphM, LicenseGraphNode (LGFact, LGName), LicenseGraphType, getLicenseGraphLicenseNames, runLicenseGraphM', stderrLog, _gr)
 import Ldbcollector.Model.LicenseGraphAlgo (focus, getLicenseNameClusterM)
 import Ldbcollector.Model.LicenseName (LicenseName (LicenseName))
 import Ldbcollector.Model.LicenseStatement (LicenseType (..))
@@ -71,23 +72,27 @@ getOutputLicense (needleNames, sameNames, otherNames) = do
   cluster <- getLicenseNameClusterM (needleNames, sameNames, otherNames)
   return (toOutputLicense subgraph cluster)
 
+getOutputLicenseForName :: LicenseGraph -> LicenseName -> LicenseGraphM (Maybe OutputLicense)
+getOutputLicenseForName frozen lic = do
+  result <-
+    lift . try . fmap fst $
+      runLicenseGraphM' frozen $
+        focus False mempty (V.singleton (LGName lic)) $
+          \(needleNames, sameNames, otherNames, _statements) -> do
+            Just <$> getOutputLicense (needleNames, sameNames, otherNames)
+  case result of
+    Right ol -> return ol
+    Left (_ :: SomeException) -> return Nothing
+
+getOutputLicensesByNames :: Vector LicenseName -> LicenseGraphM [OutputLicense]
+getOutputLicensesByNames licenseNames = do
+  frozen <- MTL.get
+  catMaybes . V.toList <$> V.mapM (getOutputLicenseForName frozen) licenseNames
+
 getAllOutputLicenses :: LicenseGraphM [OutputLicense]
 getAllOutputLicenses = do
   allLicenseNames <- MTL.gets getLicenseGraphLicenseNames
-  frozen <- MTL.get
-  catMaybes . V.toList <$> V.mapM (getOutputLicenseForName frozen) allLicenseNames
-  where
-    getOutputLicenseForName :: LicenseGraph -> LicenseName -> LicenseGraphM (Maybe OutputLicense)
-    getOutputLicenseForName frozen lic = do
-      result <-
-        lift . try . fmap fst $
-          runLicenseGraphM' frozen $
-            focus False mempty (V.singleton (LGName lic)) $
-              \(needleNames, sameNames, otherNames, _statements) -> do
-                Just <$> getOutputLicense (needleNames, sameNames, otherNames)
-      case result of
-        Right ol -> return ol
-        Left (_ :: SomeException) -> return Nothing
+  getOutputLicensesByNames allLicenseNames
 
 getOutputLicensesByNamespace :: Text -> LicenseGraphM [OutputLicense]
 getOutputLicensesByNamespace ns = do
@@ -99,17 +104,34 @@ getOutputLicensesByNamespace ns = do
               _ -> False
           )
           allLicenseNames
-  frozen <- MTL.get
-  catMaybes . V.toList <$> V.mapM (getOutputLicenseForName frozen) filteredLicenses
+  outputLicenses <- getOutputLicensesByNames filteredLicenses
+  warnOnOverlappingLicenses ns outputLicenses
+  return outputLicenses
   where
-    getOutputLicenseForName :: LicenseGraph -> LicenseName -> LicenseGraphM (Maybe OutputLicense)
-    getOutputLicenseForName frozen lic = do
-      result <-
-        lift . try . fmap fst $
-          runLicenseGraphM' frozen $
-            focus False mempty (V.singleton (LGName lic)) $
-              \(needleNames, sameNames, otherNames, _statements) -> do
-                Just <$> getOutputLicense (needleNames, sameNames, otherNames)
-      case result of
-        Right ol -> return ol
-        Left (_ :: SomeException) -> return Nothing
+    warnOnOverlappingLicenses :: Text -> [OutputLicense] -> LicenseGraphM ()
+    warnOnOverlappingLicenses namespace outputLicenses =
+      mapM_ warnIfOverlapping (pairs outputLicenses)
+      where
+        warnIfOverlapping :: (OutputLicense, OutputLicense) -> LicenseGraphM ()
+        warnIfOverlapping (leftLicense, rightLicense) =
+          let overlappingNames = clusterNames leftLicense `intersect` clusterNames rightLicense
+           in unless (null overlappingNames) $ do
+                let leftName = primaryName leftLicense
+                    rightName = primaryName rightLicense
+                    overlapDisplay = intercalate ", " (map show overlappingNames)
+                stderrLog $ "WARNING: namespace '" ++ T.unpack namespace ++ "' has overlapping licenses '" ++ show leftName ++ "' and '" ++ show rightName ++ "' on: " ++ overlapDisplay
+
+        clusterNames :: OutputLicense -> [LicenseName]
+        clusterNames (OutputLicense (LicenseNameCluster name sameNames otherNames) _) =
+          nub $ filter isInNamespace (name : sameNames ++ otherNames)
+
+        primaryName :: OutputLicense -> LicenseName
+        primaryName (OutputLicense (LicenseNameCluster name _ _) _) = name
+
+        isInNamespace :: LicenseName -> Bool
+        isInNamespace = \case
+          LicenseName (Just licNS) name -> licNS == namespace && not ("LicenseRef-" `isInfixOf` T.unpack name)
+          _ -> False
+
+        pairs :: [a] -> [(a, a)]
+        pairs xs = [(x, y) | (x : ys) <- tails xs, y <- ys]

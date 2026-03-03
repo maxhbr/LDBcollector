@@ -5,6 +5,7 @@
 module Ldbcollector.Sink.JSON
   ( writeJSON,
     writeOutputLicensesJSON,
+    writeOutputLicensesToFile,
   )
 where
 
@@ -16,7 +17,7 @@ import Data.Text qualified as T
 import Data.Text.Lazy.IO qualified as I
 import Data.Vector qualified as V
 import Ldbcollector.Model
-import MyPrelude ((</>))
+import MyPrelude (createDirectoryIfMissing, dropFileName, (</>))
 
 writeJSON :: FilePath -> LicenseGraphM ()
 writeJSON json = do
@@ -36,7 +37,12 @@ writeJSON json = do
 
 writeOutputLicensesJSON :: FilePath -> Text -> LicenseGraphM ()
 writeOutputLicensesJSON outdir ns = do
-  let json= outdir </> (T.unpack ns) <.> "json"
+  let json = outdir </> (T.unpack ns) <.> "json"
   infoLog $ "generate concise " ++ json
   outputLicenses <- getOutputLicensesByNamespace ns
+  writeOutputLicensesToFile json outputLicenses
+
+writeOutputLicensesToFile :: (ToJSON a) => FilePath -> [a] -> LicenseGraphM ()
+writeOutputLicensesToFile json outputLicenses = do
+  lift $ createDirectoryIfMissing True (dropFileName json)
   lift $ I.writeFile json (encodeToLazyText outputLicenses)

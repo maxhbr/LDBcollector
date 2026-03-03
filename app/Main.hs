@@ -6,6 +6,7 @@ module Main where
 import Control.Concurrent (getNumCapabilities)
 import Control.Concurrent.Async.Pool (mapConcurrently, withTaskGroup)
 import Control.Monad.State qualified as MTL
+import Data.Map qualified as Map
 import Data.Maybe (fromMaybe)
 import Data.Set qualified as Set
 import Data.Text qualified as T
@@ -29,6 +30,7 @@ data Command
   | Default Text
   | Write [String] Text
   | WriteNS String Text
+  | WriteSource String Text
   deriving (Show)
 
 writeFilesByName :: FilePath -> LicenseName -> LicenseGraphM ()
@@ -59,6 +61,54 @@ writeSvgByNS outDir filteredLicenses selectedNS = do
     lift $ withTaskGroup (max 1 (numCaps - 3)) $ \group -> do
       _ <- mapConcurrently group (runLicenseGraphM' graph . writeFilesByName outDir) (V.toList filteredLicenses)
       return ()
+
+writeBySource :: FilePath -> Vector LicenseName -> SourceRef -> LicenseGraphM ()
+writeBySource outDir filteredLicenses source = do
+  timedLGM ("writing " ++ show (V.length filteredLicenses) ++ " licenses for source=" ++ show source) $ do
+    numCaps <- lift $ getNumCapabilities
+    graph <- MTL.get
+    lift $ withTaskGroup (max 1 (numCaps - 3)) $ \group -> do
+      _ <- mapConcurrently group (runLicenseGraphM' graph . writeFilesByName outDir) (V.toList filteredLicenses)
+      return ()
+
+sourceNamespace :: SourceRef -> Text
+sourceNamespace (Source sourceName) =
+  case sourceName of
+    "OpenSourceOrgLicenses" -> "osi"
+    "GoogleLicensePolicy" -> "google"
+    "ScancodeLicenseDB" -> "scancode"
+    "ChooseALicense" -> "cal"
+    "TLDRNamings" -> "tldr-slug"
+    "FOSS License" -> "foss-license"
+    "HitachiOpenLicense" -> "hitachi"
+    _ -> T.pack (strToLower sourceName)
+
+getSourceLicenseNames :: SourceRef -> LicenseGraphM (Vector LicenseName)
+getSourceLicenseNames source = do
+  graph <- MTL.get
+  let expectedNamespace = sourceNamespace source
+  let relevantNodes =
+        Set.unions
+          [ nodes
+            | ((src, _fact), (nodes, _edges)) <- Map.toList (_facts graph),
+              src == source
+          ]
+      licenseNames =
+        nub
+          [ ln
+            | node <- Set.toList relevantNodes,
+              Just (LGName ln) <- [Map.lookup node (_node_map_rev graph)],
+              isInNamespace expectedNamespace ln
+          ]
+  return (V.fromList licenseNames)
+  where
+    isInNamespace :: Text -> LicenseName -> Bool
+    isInNamespace expectedNs = \case
+      LicenseName (Just licNS) _ ->
+        let licNSFolded = T.toCaseFold licNS
+            expectedFolded = T.toCaseFold expectedNs
+         in licNSFolded == expectedFolded
+      _ -> False
 
 curation :: Vector CurationItem
 curation =
@@ -106,7 +156,7 @@ executeCommand = \case
   Serve -> serve
   Generate outDir -> do
     writeNameClustersCsv (T.unpack outDir </> "license-name-clusters.csv")
-    writeJSON (T.unpack outDir </> "yacp.json")
+    writeJSON (T.unpack outDir </> "ldb.json")
   Default outDir -> do
     executeCommand (Generate outDir)
     executeCommand (WriteNS "spdx" outDir)
@@ -120,8 +170,17 @@ executeCommand = \case
                 _ -> False
             )
             allLicenseNames
-    writeSvgByNS (T.unpack outDir) filteredLicenses (fromString ns)
     writeOutputLicensesJSON (T.unpack outDir) (fromString ns)
+    writeSvgByNS (T.unpack outDir) filteredLicenses (fromString ns)
+  WriteSource sourceName outDir -> do
+    let source = Source sourceName
+        ns = sourceNamespace source
+    filteredLicenses <- getSourceLicenseNames source
+    when (V.null filteredLicenses) $
+      fail ("No license clusters found for source " ++ show source ++ " after namespace filtering")
+    outputLicenses <- getOutputLicensesByNames filteredLicenses
+    writeOutputLicensesToFile (T.unpack outDir </> T.unpack ns <.> "json") outputLicenses
+    writeBySource (T.unpack outDir) filteredLicenses source
 
 optDir :: Parser Text
 optDir = strOption $ long "output-dir" <> short 'o' <> metavar "DIR" <> value "_generatedV2" <> help "Output directory for generated files"
@@ -145,6 +204,11 @@ writeNSParser =
   fmap (\(ns, mOutDir) -> WriteNS ns (fromMaybe "_generatedV2" mOutDir)) $
     (,) <$> argument str (metavar "NAMESPACE") <*> optional optDir
 
+writeSourceParser :: Parser Command
+writeSourceParser =
+  fmap (\(source, mOutDir) -> WriteSource source (fromMaybe "_generatedV2" mOutDir)) $
+    (,) <$> argument str (metavar "SOURCE") <*> optional optDir
+
 -- | Build a parser for source filtering flags.
 --   Supports --enable SOURCE and --disable SOURCE.
 --   If any --enable flags are given, only those sources run (whitelist mode).
@@ -163,6 +227,7 @@ cmdParser =
         <> command "default" (info defaultParser (progDesc "Generate and write SPDX licenses"))
         <> command "write" (info writeParser (progDesc "Write files for specific license names"))
         <> command "writeNS" (info writeNSParser (progDesc "Write files for licenses in namespace"))
+        <> command "writeSource" (info writeSourceParser (progDesc "Write files for clusters touched by source"))
     )
 
 mainParser :: ParserInfo (SourceFilter, Maybe Command)
