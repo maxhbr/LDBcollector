@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:0f0b454a-2948-46bb-ac88-394a779d69cc"
+                "@id": "_:9903af57-b688-4646-9690-bd2f78b9db8c"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:0f0b454a-2948-46bb-ac88-394a779d69cc",
+            "@id": "_:9903af57-b688-4646-9690-bd2f78b9db8c",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/Noweb",
-            "spdx:timestamp": "2026-01-30T09:02:53Z",
+            "spdx:timestamp": "2026-02-20T20:52:49Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

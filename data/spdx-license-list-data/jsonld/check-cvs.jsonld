@@ -13,7 +13,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:dd39296f-99cf-4ec0-8410-24e9b16d8158"
+                "@id": "_:59186a97-f724-432d-9430-612720cb7f9a"
             },
             "spdx:licenseText": "Permission is granted to copy and/or distribute this file, with or\nwithout modifications, provided this notice is preserved.\n",
             "rdfs:seeAlso": "http://cvs.savannah.gnu.org/viewvc/cvs/ccvs/contrib/check_cvs.in?revision=1.1.4.3&view=markup&pathrev=cvs1-11-23#l2",
@@ -22,7 +22,7 @@
             "spdx:name": "check-cvs License"
         },
         {
-            "@id": "_:dd39296f-99cf-4ec0-8410-24e9b16d8158",
+            "@id": "_:59186a97-f724-432d-9430-612720cb7f9a",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -36,7 +36,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://cvs.savannah.gnu.org/viewvc/cvs/ccvs/contrib/check_cvs.in?revision=1.1.4.3&view=markup&pathrev=cvs1-11-23#l2",
-            "spdx:timestamp": "2026-01-30T09:02:59Z",
+            "spdx:timestamp": "2026-02-20T20:53:53Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

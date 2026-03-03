@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:ee97518f-c7bc-4a49-883b-2e8376d879be",
+            "@id": "_:e2458ff6-5ff3-4e0f-82d9-6819ab3adc57",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://github.com/jonmacs/jove/blob/4_17/LICENSE",
-            "spdx:timestamp": "2026-01-30T09:03:17Z",
+            "spdx:timestamp": "2026-02-20T20:56:10Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -34,7 +34,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:ee97518f-c7bc-4a49-883b-2e8376d879be"
+                "@id": "_:e2458ff6-5ff3-4e0f-82d9-6819ab3adc57"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",

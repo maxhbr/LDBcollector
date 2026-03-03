@@ -9,21 +9,21 @@
   "crossRef": [
     {
       "match": "false",
-      "url": "https://github.com/FreeRADIUS/freeradius-client/blob/master/COPYRIGHT#L32",
-      "isValid": true,
-      "isLive": true,
-      "timestamp": "2026-01-30T09:05:20Z",
-      "isWayBackLink": false,
-      "order": 0
-    },
-    {
-      "match": "false",
       "url": "https://github.com/radcli/radcli/blob/master/COPYRIGHT#L34",
       "isValid": true,
       "isLive": true,
-      "timestamp": "2026-01-30T09:05:21Z",
+      "timestamp": "2026-02-20T21:01:57Z",
       "isWayBackLink": false,
       "order": 1
+    },
+    {
+      "match": "false",
+      "url": "https://github.com/FreeRADIUS/freeradius-client/blob/master/COPYRIGHT#L32",
+      "isValid": true,
+      "isLive": true,
+      "timestamp": "2026-02-20T21:01:58Z",
+      "isWayBackLink": false,
+      "order": 0
     }
   ],
   "seeAlso": [

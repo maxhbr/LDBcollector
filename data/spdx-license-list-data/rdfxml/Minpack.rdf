@@ -9,21 +9,6 @@
     >false</spdx:isDeprecatedLicenseId>
     <rdfs:seeAlso>http://www.netlib.org/minpack/disclaimer</rdfs:seeAlso>
     <rdfs:seeAlso>https://gitlab.com/libeigen/eigen/-/blob/master/COPYING.MINPACK</rdfs:seeAlso>
-    <spdx:crossRef>
-      <spdx:CrossRef>
-        <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isWayBackLink>
-        <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</spdx:isValid>
-        <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</spdx:isLive>
-        <spdx:url>https://gitlab.com/libeigen/eigen/-/blob/master/COPYING.MINPACK</spdx:url>
-        <spdx:timestamp>2026-01-30T09:03:59Z</spdx:timestamp>
-        <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</spdx:order>
-        <spdx:match>false</spdx:match>
-      </spdx:CrossRef>
-    </spdx:crossRef>
     <spdx:licenseTextHtml>
          &lt;p&gt;
             Minpack Copyright Notice (1999)
@@ -202,13 +187,28 @@ Redistribution and use in source and binary forms, with or without modification,
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
+        <spdx:url>https://gitlab.com/libeigen/eigen/-/blob/master/COPYING.MINPACK</spdx:url>
+        <spdx:timestamp>2026-02-20T20:57:50Z</spdx:timestamp>
+        <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</spdx:order>
+        <spdx:match>false</spdx:match>
+      </spdx:CrossRef>
+    </spdx:crossRef>
+    <spdx:name>Minpack License</spdx:name>
+    <spdx:crossRef>
+      <spdx:CrossRef>
+        <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</spdx:isWayBackLink>
+        <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</spdx:isValid>
+        <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</spdx:isLive>
         <spdx:url>http://www.netlib.org/minpack/disclaimer</spdx:url>
-        <spdx:timestamp>2026-01-30T09:04:00Z</spdx:timestamp>
+        <spdx:timestamp>2026-02-20T20:57:51Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>true</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
-    <spdx:name>Minpack License</spdx:name>
   </spdx:ListedLicense>
 </rdf:RDF>

@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:c4accd44-435c-417f-83ea-fd0aec88fedc",
+            "@id": "_:4393ee10-33ec-44f6-93a9-a24b492879f3",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://core.tcl-lang.org/tk/file?name=compat/unistd.h",
-            "spdx:timestamp": "2026-01-30T09:06:02Z",
+            "spdx:timestamp": "2026-02-20T21:05:06Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -37,7 +37,7 @@
             "rdfs:seeAlso": "https://core.tcl-lang.org/tk/file?name=compat/unistd.h",
             "spdx:name": "Historical Permission Notice and Disclaimer - University of California variant",
             "spdx:crossRef": {
-                "@id": "_:c4accd44-435c-417f-83ea-fd0aec88fedc"
+                "@id": "_:4393ee10-33ec-44f6-93a9-a24b492879f3"
             },
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",

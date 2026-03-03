@@ -1,30 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:f8ffd8bf-7019-49ee-8e46-ec09bcf76ac3",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://www.ietf.org/rfc/rfc1952.txt",
-            "spdx:timestamp": "2026-01-30T09:03:15Z",
-            "spdx:order": {
-                "@value": "1",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "true",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:82bf29ec-6d9d-44de-a071-276978063a73",
+            "@id": "_:524f13cc-d7fd-46d4-a7b8-2b73a17c434f",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -38,12 +15,35 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://github.com/Cyan4973/xxHash/blob/dev/doc/xxhash_spec.md",
-            "spdx:timestamp": "2026-01-30T09:03:16Z",
+            "spdx:timestamp": "2026-02-20T20:55:39Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "false",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:50dc7463-b117-45b4-8a9e-f9f39f972e15",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://www.ietf.org/rfc/rfc1952.txt",
+            "spdx:timestamp": "2026-02-20T20:55:39Z",
+            "spdx:order": {
+                "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "true",
             "@type": "spdx:CrossRef"
         },
         {
@@ -57,16 +57,16 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "@type": "spdx:ListedLicense",
-            "spdx:name": "LPD Documentation License",
             "spdx:crossRef": [
                 {
-                    "@id": "_:82bf29ec-6d9d-44de-a071-276978063a73"
+                    "@id": "_:50dc7463-b117-45b4-8a9e-f9f39f972e15"
                 },
                 {
-                    "@id": "_:f8ffd8bf-7019-49ee-8e46-ec09bcf76ac3"
+                    "@id": "_:524f13cc-d7fd-46d4-a7b8-2b73a17c434f"
                 }
             ],
+            "@type": "spdx:ListedLicense",
+            "spdx:name": "LPD Documentation License",
             "spdx:standardLicenseTemplate": "<<var;name=\"copyright\";original=\"Copyright (c) Yann Collet  \";match=\".{0,5000}\">>\nPermission is granted to copy and distribute this document for any purpose and without charge, including translations into other languages and incorporation into compilations, provided that the copyright notice and this notice are preserved, and that any substantive changes or deletions from the original are clearly marked.<<beginOptional>> Distribution of this document is unlimited.<<endOptional>>\n\n",
             "spdx:isOsiApproved": {
                 "@value": "false",

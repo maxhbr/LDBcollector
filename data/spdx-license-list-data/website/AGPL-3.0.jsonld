@@ -1,30 +1,15 @@
 {
     "@graph": [
         {
-            "@id": "_:4942ac07-e21d-40c3-a3cf-1ad150645aad",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://www.gnu.org/licenses/agpl.txt",
-            "spdx:timestamp": "2026-01-30T09:03:01Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "N/A",
-            "@type": "spdx:CrossRef"
-        },
-        {
             "@id": "http://spdx.org/licenses/AGPL-3.0",
+            "spdx:crossRef": [
+                {
+                    "@id": "_:4b42bef8-ca89-4346-bb72-10aae908f70e"
+                },
+                {
+                    "@id": "_:5acac2c8-3db7-4d9f-9dba-d2f75cd2510a"
+                }
+            ],
             "rdfs:seeAlso": [
                 "https://www.gnu.org/licenses/agpl.txt",
                 "https://opensource.org/licenses/AGPL-3.0"
@@ -49,18 +34,33 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:name": "GNU Affero General Public License v3.0",
-            "spdx:deprecatedVersion": "3.0",
-            "spdx:crossRef": [
-                {
-                    "@id": "_:7e825c1f-f071-4fd0-af9e-b19de84e0f4d"
-                },
-                {
-                    "@id": "_:4942ac07-e21d-40c3-a3cf-1ad150645aad"
-                }
-            ]
+            "spdx:deprecatedVersion": "3.0"
         },
         {
-            "@id": "_:7e825c1f-f071-4fd0-af9e-b19de84e0f4d",
+            "@id": "_:4b42bef8-ca89-4346-bb72-10aae908f70e",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://www.gnu.org/licenses/agpl.txt",
+            "spdx:timestamp": "2026-02-20T20:54:24Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:5acac2c8-3db7-4d9f-9dba-d2f75cd2510a",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -74,7 +74,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://opensource.org/licenses/AGPL-3.0",
-            "spdx:timestamp": "2026-01-30T09:03:01Z",
+            "spdx:timestamp": "2026-02-20T20:53:54Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

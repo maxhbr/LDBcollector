@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:db7c8998-9092-46b4-9e59-19430e0eeb66",
+            "@id": "_:fe29edfa-852a-4ca6-ab15-9ddac21bac1b",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/SNIA_Public_License",
-            "spdx:timestamp": "2026-01-30T09:04:27Z",
+            "spdx:timestamp": "2026-02-20T20:58:51Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -27,7 +27,7 @@
             "@id": "http://spdx.org/licenses/SNIA",
             "@type": "spdx:ListedLicense",
             "spdx:crossRef": {
-                "@id": "_:db7c8998-9092-46b4-9e59-19430e0eeb66"
+                "@id": "_:fe29edfa-852a-4ca6-ab15-9ddac21bac1b"
             },
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",

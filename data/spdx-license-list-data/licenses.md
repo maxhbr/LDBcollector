@@ -1,5 +1,5 @@
 # License List
-The following licenses have been generated from the license list version 297da51
+The following licenses have been generated from the license list version 3.28.0
 
 ## Licenses with Short Identifiers
 
@@ -69,6 +69,7 @@ The following licenses have been generated from the license list version 297da51
 | Blue Oak Model License 1.0.0                                                              | [BlueOak-1.0.0][]                        | Y    |           |
 | Boehm-Demers-Weiser GC License                                                            | [Boehm-GC][]                             |      |           |
 | Boehm-Demers-Weiser GC License (without fee)                                              | [Boehm-GC-without-fee][]                 |      |           |
+| Buena Onda License Agreement v1.1                                                         | [BOLA-1.1][]                             |      |           |
 | Borceux license                                                                           | [Borceux][]                              |      |           |
 | Brian Gladman 2-Clause License                                                            | [Brian-Gladman-2-Clause][]               |      |           |
 | Brian Gladman 3-Clause License                                                            | [Brian-Gladman-3-Clause][]               |      |           |
@@ -535,6 +536,7 @@ The following licenses have been generated from the license list version 297da51
 | Open Public License v1.0                                                                  | [OPL-1.0][]                              |      |           |
 | United    Kingdom Open Parliament Licence v3.0                                            | [OPL-UK-3.0][]                           |      |           |
 | Open Publication License v1.0                                                             | [OPUBL-1.0][]                            |      |           |
+| OSC License 1.0                                                                           | [OSC-1.0][]                              | Y    |           |
 | OSET Public License version 2.1                                                           | [OSET-PL-2.1][]                          | Y    |           |
 | Open Software License 1.0                                                                 | [OSL-1.0][]                              | Y    | Y         |
 | Open Software License 1.1                                                                 | [OSL-1.1][]                              |      | Y         |
@@ -775,6 +777,7 @@ The following licenses have been generated from the license list version 297da51
 | Solderpad Hardware License v2.0                       | [SHL-2.0][]                              |
 | Solderpad Hardware License v2.1                       | [SHL-2.1][]                              |
 | Simple Library Usage Exception                        | [Simple-Library-Usage-exception][]       |
+| sqlitestudio OpenSSL exception                        | [sqlitestudio-OpenSSL-exception][]       |
 | stunnel Exception                                     | [stunnel-exception][]                    |
 | SWI exception                                         | [SWI-exception][]                        |
 | Swift Exception                                       | [Swift-exception][]                      |
@@ -889,6 +892,7 @@ The following licenses have been generated from the license list version 297da51
 [BlueOak-1.0.0]: text/BlueOak-1.0.0.txt
 [Boehm-GC]: text/Boehm-GC.txt
 [Boehm-GC-without-fee]: text/Boehm-GC-without-fee.txt
+[BOLA-1.1]: text/BOLA-1.1.txt
 [Borceux]: text/Borceux.txt
 [Brian-Gladman-2-Clause]: text/Brian-Gladman-2-Clause.txt
 [Brian-Gladman-3-Clause]: text/Brian-Gladman-3-Clause.txt
@@ -1383,6 +1387,7 @@ The following licenses have been generated from the license list version 297da51
 [OPL-1.0]: text/OPL-1.0.txt
 [OPL-UK-3.0]: text/OPL-UK-3.0.txt
 [OPUBL-1.0]: text/OPUBL-1.0.txt
+[OSC-1.0]: text/OSC-1.0.txt
 [OSET-PL-2.1]: text/OSET-PL-2.1.txt
 [OSL-1.0]: text/OSL-1.0.txt
 [OSL-1.1]: text/OSL-1.1.txt
@@ -1621,6 +1626,7 @@ The following licenses have been generated from the license list version 297da51
 [SHL-2.0]: text/SHL-2.0.txt
 [SHL-2.1]: text/SHL-2.1.txt
 [Simple-Library-Usage-exception]: text/Simple-Library-Usage-exception.txt
+[sqlitestudio-OpenSSL-exception]: text/sqlitestudio-OpenSSL-exception.txt
 [stunnel-exception]: text/stunnel-exception.txt
 [SWI-exception]: text/SWI-exception.txt
 [Swift-exception]: text/Swift-exception.txt

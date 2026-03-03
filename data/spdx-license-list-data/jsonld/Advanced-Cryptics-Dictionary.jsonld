@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:4dc3f743-26c3-4543-a0e5-9bc27d60556a",
+            "@id": "_:cf324131-cb0f-4730-ae38-363936326587",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2",
-            "spdx:timestamp": "2026-01-30T09:05:11Z",
+            "spdx:timestamp": "2026-02-20T21:01:55Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -34,7 +34,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:4dc3f743-26c3-4543-a0e5-9bc27d60556a"
+                "@id": "_:cf324131-cb0f-4730-ae38-363936326587"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",

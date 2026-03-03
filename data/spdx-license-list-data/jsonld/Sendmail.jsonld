@@ -1,30 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:a8d6be24-2a9c-4b0e-9bf0-848bdd984977",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://web.archive.org/web/20160322142305/https://www.sendmail.com/pdfs/open_source/sendmail_license.pdf",
-            "spdx:timestamp": "2026-01-30T09:05:58Z",
-            "spdx:order": {
-                "@value": "1",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "N/A",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:78811351-4b93-4dd1-a888-19ed1e32728e",
+            "@id": "_:773c2e61-9755-499b-91fe-0f940bdb0ee4",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -38,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://www.sendmail.com/pdfs/open_source/sendmail_license.pdf",
-            "spdx:timestamp": "2026-01-30T09:05:58Z",
+            "spdx:timestamp": "2026-02-20T21:04:05Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -47,15 +24,30 @@
             "@type": "spdx:CrossRef"
         },
         {
+            "@id": "_:7e098230-bb7d-4309-a2dc-514db36d1439",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://web.archive.org/web/20160322142305/https://www.sendmail.com/pdfs/open_source/sendmail_license.pdf",
+            "spdx:timestamp": "2026-02-20T21:04:05Z",
+            "spdx:order": {
+                "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
+            "@type": "spdx:CrossRef"
+        },
+        {
             "@id": "http://spdx.org/licenses/Sendmail",
-            "spdx:crossRef": [
-                {
-                    "@id": "_:78811351-4b93-4dd1-a888-19ed1e32728e"
-                },
-                {
-                    "@id": "_:a8d6be24-2a9c-4b0e-9bf0-848bdd984977"
-                }
-            ],
             "rdfs:seeAlso": [
                 "https://web.archive.org/web/20160322142305/https://www.sendmail.com/pdfs/open_source/sendmail_license.pdf",
                 "http://www.sendmail.com/pdfs/open_source/sendmail_license.pdf"
@@ -64,6 +56,14 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
+            "spdx:crossRef": [
+                {
+                    "@id": "_:7e098230-bb7d-4309-a2dc-514db36d1439"
+                },
+                {
+                    "@id": "_:773c2e61-9755-499b-91fe-0f940bdb0ee4"
+                }
+            ],
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"

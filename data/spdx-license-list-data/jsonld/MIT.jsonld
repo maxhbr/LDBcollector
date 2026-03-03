@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:c1d41aab-0b04-49a5-b498-eb8ac03d6676",
+            "@id": "_:f60004a8-c9af-4bab-afb1-b08d7c79777e",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -11,16 +11,16 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:isLive": {
-                "@value": "true",
+                "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:url": "http://opensource.org/licenses/MIT",
-            "spdx:timestamp": "2026-01-30T09:03:04Z",
+            "spdx:url": "https://opensource.org/license/mit/",
+            "spdx:timestamp": "2026-02-20T20:54:26Z",
             "spdx:order": {
-                "@value": "1",
+                "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
-            "spdx:match": "true",
+            "spdx:match": "N/A",
             "@type": "spdx:CrossRef"
         },
         {
@@ -30,18 +30,18 @@
                 "http://opensource.org/licenses/MIT"
             ],
             "spdx:name": "MIT License",
+            "spdx:crossRef": [
+                {
+                    "@id": "_:098e3156-065a-416f-9ec0-aa44f02ec03a"
+                },
+                {
+                    "@id": "_:f60004a8-c9af-4bab-afb1-b08d7c79777e"
+                }
+            ],
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:crossRef": [
-                {
-                    "@id": "_:be8ad7ea-e6cc-4e24-9c5f-71ff7685f419"
-                },
-                {
-                    "@id": "_:c1d41aab-0b04-49a5-b498-eb8ac03d6676"
-                }
-            ],
             "spdx:isFsfLibre": {
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -56,7 +56,7 @@
             }
         },
         {
-            "@id": "_:be8ad7ea-e6cc-4e24-9c5f-71ff7685f419",
+            "@id": "_:098e3156-065a-416f-9ec0-aa44f02ec03a",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -66,16 +66,16 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:isLive": {
-                "@value": "false",
+                "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:url": "https://opensource.org/license/mit/",
-            "spdx:timestamp": "2026-01-30T09:03:04Z",
+            "spdx:url": "http://opensource.org/licenses/MIT",
+            "spdx:timestamp": "2026-02-20T20:54:26Z",
             "spdx:order": {
-                "@value": "0",
+                "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
-            "spdx:match": "N/A",
+            "spdx:match": "true",
             "@type": "spdx:CrossRef"
         }
     ],

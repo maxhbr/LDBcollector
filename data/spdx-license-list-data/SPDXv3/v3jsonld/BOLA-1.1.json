@@ -1,0 +1,39 @@
+{
+  "@context" : "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph" : [ {
+    "@id" : "_:creationInfo_0",
+    "type" : "CreationInfo",
+    "specVersion" : "3.0.1",
+    "createdBy" : [ "https://spdx.org/licenses/creatoragent/3_28_0" ],
+    "createdUsing" : [ "https://spdx.org/tools/licenselistpublisher" ],
+    "created" : "2026-02-20T00:00:00Z",
+    "comment" : "This object is created and maintained by the SPDX legal team (https://spdx.dev/engage/participate/legal-team/) using the LicenseListPublisher (https://github.com/spdx/licenselistpublisher)"
+  }, {
+    "spdxId" : "http://spdx.org/licenses/BOLA-1.1_document",
+    "type" : "SpdxDocument",
+    "rootElement" : [ "http://spdx.org/licenses/BOLA-1.1" ],
+    "name" : "BOLA-1.1 document",
+    "comment" : "SPDX Document For BOLA-1.1",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://spdx.org/tools/licenselistpublisher",
+    "type" : "Tool",
+    "name" : "SPDX License List Publisher",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://spdx.org/licenses/creatoragent/3_28_0",
+    "type" : "Organization",
+    "name" : "SPDX Legal Team",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "http://spdx.org/licenses/BOLA-1.1",
+    "type" : "expandedlicensing_ListedLicense",
+    "expandedlicensing_isOsiApproved" : false,
+    "expandedlicensing_seeAlso" : [ "https://blitiri.com.ar/p/bola/" ],
+    "simplelicensing_licenseText" : "I don't like licenses, because I don't like having to worry about all this\nlegal stuff just for a simple piece of software I don't really mind anyone\nusing. But I also believe that it's important that people share and give back;\nso I'm placing this work under the following license.\n\n\nBOLA - Buena Onda License Agreement (v1.1)\n------------------------------------------\n\nThis work is provided 'as-is', without any express or implied warranty. In no\nevent will the authors be held liable for any damages arising from the use of\nthis work.\n\nTo all effects and purposes, this work is to be considered Public Domain.\n\n\nHowever, if you want to be \"buena onda\", you should:\n\n1. Not take credit for it, and give proper recognition to the authors.\n2. Share your modifications, so everybody benefits from them.\n3. Do something nice for the authors.\n4. Help someone who needs it: sign up for some volunteer work or help your\n   neighbour paint the house.\n5. Don't waste. Anything, but specially energy that comes from natural\n   non-renewable resources. Extra points if you discover or invent something\n   to replace them.\n6. Be tolerant. Everything that's good in nature comes from cooperation.\n",
+    "name" : "Buena Onda License Agreement v1.1",
+    "expandedlicensing_standardLicenseTemplate" : "<<beginOptional>>I don't like licenses, because I don't like having to worry about all this legal stuff just for a simple piece of software I don't really mind anyone using. But I also believe that it's important that people share and give back; so I'm placing this work under the following license.\n\n<<endOptional>><<beginOptional>> BOLA - Buena Onda License Agreement (v1.1)\n------------------------------------------\n\n<<endOptional>>\nThis work is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this work.\n\nTo all effects and purposes, this work is to be considered Public Domain.\n\nHowever, if you want to be \"buena onda\", you should:\n\n   <<var;name=\"bullet\";original=\"1.\";match=\".{0,20}\">> Not take credit for it, and give proper recognition to the authors.\n   <<var;name=\"bullet\";original=\"2.\";match=\".{0,20}\">> Share your modifications, so everybody benefits from them.\n   <<var;name=\"bullet\";original=\"3.\";match=\".{0,20}\">> Do something nice for the authors.\n   <<var;name=\"bullet\";original=\"4.\";match=\".{0,20}\">> Help someone who needs it: sign up for some volunteer work or help your neighbour paint the house.\n   <<var;name=\"bullet\";original=\"5.\";match=\".{0,20}\">> Don't waste. Anything, but specially energy that comes from natural non-renewable resources. Extra points if you discover or invent something to replace them.\n   <<var;name=\"bullet\";original=\"6.\";match=\".{0,20}\">> Be tolerant. Everything that's good in nature comes from cooperation.",
+    "creationInfo" : "_:creationInfo_0",
+    "expandedlicensing_isDeprecatedLicenseId" : false
+  } ]
+}

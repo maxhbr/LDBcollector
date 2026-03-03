@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:4faf926e-8fe9-4b7c-b372-b088a6e4e14c",
+            "@id": "_:59a7f010-9224-4c94-9f1f-6f51f011cc9c",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://opensource.org/licenses/CATOSL-1.1",
-            "spdx:timestamp": "2026-01-30T09:03:01Z",
+            "spdx:timestamp": "2026-02-20T20:53:54Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -34,7 +34,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:4faf926e-8fe9-4b7c-b372-b088a6e4e14c"
+                "@id": "_:59a7f010-9224-4c94-9f1f-6f51f011cc9c"
             },
             "spdx:isOsiApproved": {
                 "@value": "true",

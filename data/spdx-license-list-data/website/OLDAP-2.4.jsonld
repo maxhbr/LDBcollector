@@ -3,9 +3,6 @@
         {
             "@id": "http://spdx.org/licenses/OLDAP-2.4",
             "rdfs:comment": "This license was released 8 December 2000.",
-            "spdx:crossRef": {
-                "@id": "_:80f9f8ec-1f83-4e26-bc09-247bdfd552ca"
-            },
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -19,10 +16,13 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:name": "Open LDAP Public License v2.4"
+            "spdx:name": "Open LDAP Public License v2.4",
+            "spdx:crossRef": {
+                "@id": "_:21819307-be7e-4f5f-b8f4-7087ea0fbb65"
+            }
         },
         {
-            "@id": "_:80f9f8ec-1f83-4e26-bc09-247bdfd552ca",
+            "@id": "_:21819307-be7e-4f5f-b8f4-7087ea0fbb65",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -36,7 +36,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cd1284c4a91a8a380d904eee68d1583f989ed386",
-            "spdx:timestamp": "2026-01-30T09:03:03Z",
+            "spdx:timestamp": "2026-02-20T20:54:25Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

@@ -4,13 +4,13 @@
             "@id": "http://spdx.org/licenses/MIT-Modern-Variant",
             "spdx:crossRef": [
                 {
-                    "@id": "_:345d044c-be50-4fe4-ad6a-1bcab34ab90f"
+                    "@id": "_:d36ae895-d05d-42b7-8fa5-ae3d8ddffd61"
                 },
                 {
-                    "@id": "_:d4f5faa9-efd1-4a4f-a8d3-41667645c82c"
+                    "@id": "_:7a50b013-0390-49b3-b7f4-8f38b125bcf2"
                 },
                 {
-                    "@id": "_:446c51b2-af71-4130-a32d-073752fbdfa1"
+                    "@id": "_:d61848c5-e937-448e-8a72-b5e2018d301c"
                 }
             ],
             "spdx:isOsiApproved": {
@@ -34,30 +34,7 @@
             "spdx:name": "MIT License Modern Variant"
         },
         {
-            "@id": "_:345d044c-be50-4fe4-ad6a-1bcab34ab90f",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://ptolemy.berkeley.edu/copyright.htm",
-            "spdx:timestamp": "2026-01-30T09:03:16Z",
-            "spdx:order": {
-                "@value": "1",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "true",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:d4f5faa9-efd1-4a4f-a8d3-41667645c82c",
+            "@id": "_:d36ae895-d05d-42b7-8fa5-ae3d8ddffd61",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -71,7 +48,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants",
-            "spdx:timestamp": "2026-01-30T09:03:15Z",
+            "spdx:timestamp": "2026-02-20T20:55:39Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -80,7 +57,30 @@
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:446c51b2-af71-4130-a32d-073752fbdfa1",
+            "@id": "_:7a50b013-0390-49b3-b7f4-8f38b125bcf2",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://ptolemy.berkeley.edu/copyright.htm",
+            "spdx:timestamp": "2026-02-20T20:55:39Z",
+            "spdx:order": {
+                "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "true",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:d61848c5-e937-448e-8a72-b5e2018d301c",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -94,7 +94,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html",
-            "spdx:timestamp": "2026-01-30T09:03:16Z",
+            "spdx:timestamp": "2026-02-20T20:55:40Z",
             "spdx:order": {
                 "@value": "2",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

@@ -3,7 +3,7 @@
         {
             "@id": "http://spdx.org/licenses/ThirdEye",
             "spdx:crossRef": {
-                "@id": "_:f73859fc-fffe-47e0-9b78-f209a4e41e59"
+                "@id": "_:b173c10a-0874-4704-91eb-a4d208897c1d"
             },
             "@type": "spdx:ListedLicense",
             "spdx:isDeprecatedLicenseId": {
@@ -22,7 +22,7 @@
             "rdfs:comment": "This is a variant to MIPS license with extra paragraph."
         },
         {
-            "@id": "_:f73859fc-fffe-47e0-9b78-f209a4e41e59",
+            "@id": "_:b173c10a-0874-4704-91eb-a4d208897c1d",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -36,7 +36,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://sourceware.org/cgit/binutils-gdb/tree/include/coff/symconst.h#n11",
-            "spdx:timestamp": "2026-01-30T09:03:17Z",
+            "spdx:timestamp": "2026-02-20T20:56:10Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

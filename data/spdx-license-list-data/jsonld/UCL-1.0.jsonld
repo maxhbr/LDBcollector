@@ -4,7 +4,7 @@
             "@id": "http://spdx.org/licenses/UCL-1.0",
             "rdfs:seeAlso": "https://opensource.org/licenses/UCL-1.0",
             "spdx:crossRef": {
-                "@id": "_:2be9c9ea-adf4-400e-921c-e59ddd309304"
+                "@id": "_:44e96c60-bda6-401c-90e0-14413d8f7dbe"
             },
             "spdx:name": "Upstream Compatibility License v1.0",
             "spdx:standardLicenseHeaderTemplate": "Licensed under the Upstream Compatibility License 1.0\n\n",
@@ -24,7 +24,7 @@
             "spdx:standardLicenseHeaderHtml": "\n      <p>Licensed under the Upstream Compatibility License 1.0</p>\n\n      "
         },
         {
-            "@id": "_:2be9c9ea-adf4-400e-921c-e59ddd309304",
+            "@id": "_:44e96c60-bda6-401c-90e0-14413d8f7dbe",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -38,7 +38,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://opensource.org/licenses/UCL-1.0",
-            "spdx:timestamp": "2026-01-30T09:03:01Z",
+            "spdx:timestamp": "2026-02-20T20:53:54Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

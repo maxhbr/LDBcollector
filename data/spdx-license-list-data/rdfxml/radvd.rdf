@@ -78,6 +78,9 @@
       </spdx:licenseTextHtml>
     <rdfs:comment>This license is almost a match to Inner-Net-2.0, but it includes clause 4 which Inner-Net-2.0 omits.</rdfs:comment>
     <spdx:name>radvd License</spdx:name>
+    <rdfs:seeAlso>https://github.com/radvd-project/radvd/blob/master/COPYRIGHT</rdfs:seeAlso>
+    <spdx:isDeprecatedLicenseId rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</spdx:isDeprecatedLicenseId>
     <spdx:crossRef>
       <spdx:CrossRef>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -87,15 +90,12 @@
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
         <spdx:url>https://github.com/radvd-project/radvd/blob/master/COPYRIGHT</spdx:url>
-        <spdx:timestamp>2026-01-30T09:05:56Z</spdx:timestamp>
+        <spdx:timestamp>2026-02-20T21:03:33Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>false</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
-    <rdfs:seeAlso>https://github.com/radvd-project/radvd/blob/master/COPYRIGHT</rdfs:seeAlso>
-    <spdx:isDeprecatedLicenseId rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</spdx:isDeprecatedLicenseId>
     <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</spdx:isOsiApproved>
     <spdx:standardLicenseTemplate>The author(s) grant permission for redistribution and use in source and binary forms, with or without modification, of the software and documentation provided that the following conditions are met:

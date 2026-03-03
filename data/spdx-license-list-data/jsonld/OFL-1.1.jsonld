@@ -1,39 +1,16 @@
 {
     "@graph": [
         {
-            "@id": "_:18a6456b-4ed8-43dd-a8d8-0db44397ca2e",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web",
-            "spdx:timestamp": "2026-01-30T09:04:35Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "false",
-            "@type": "spdx:CrossRef"
-        },
-        {
             "@id": "http://spdx.org/licenses/OFL-1.1",
+            "spdx:name": "SIL Open Font License 1.1",
             "spdx:crossRef": [
                 {
-                    "@id": "_:18a6456b-4ed8-43dd-a8d8-0db44397ca2e"
+                    "@id": "_:cbcdd7d9-e1df-40e3-b539-b0887ad3b5ce"
                 },
                 {
-                    "@id": "_:15a948eb-390b-40de-85d5-48aa7326013a"
+                    "@id": "_:0aa7f596-1421-4ca3-a3a6-4d67de16ee72"
                 }
             ],
-            "spdx:name": "SIL Open Font License 1.1",
             "spdx:isOsiApproved": {
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -57,7 +34,30 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:15a948eb-390b-40de-85d5-48aa7326013a",
+            "@id": "_:cbcdd7d9-e1df-40e3-b539-b0887ad3b5ce",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web",
+            "spdx:timestamp": "2026-02-20T21:00:25Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "false",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:0aa7f596-1421-4ca3-a3a6-4d67de16ee72",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -71,7 +71,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://opensource.org/licenses/OFL-1.1",
-            "spdx:timestamp": "2026-01-30T09:04:36Z",
+            "spdx:timestamp": "2026-02-20T21:00:25Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

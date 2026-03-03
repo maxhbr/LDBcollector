@@ -8,6 +8,7 @@
     <spdx:isFsfLibre rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</spdx:isFsfLibre>
     <rdfs:seeAlso>http://www.cecill.info/licences/Licence_CeCILL_V2-en.html</rdfs:seeAlso>
+    <rdfs:comment>French version can be found here: http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html</rdfs:comment>
     <spdx:crossRef>
       <spdx:CrossRef>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -17,13 +18,12 @@
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
         <spdx:url>http://www.cecill.info/licences/Licence_CeCILL_V2-en.html</spdx:url>
-        <spdx:timestamp>2026-01-30T09:06:07Z</spdx:timestamp>
+        <spdx:timestamp>2026-02-20T21:05:06Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>false</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
-    <rdfs:comment>French version can be found here: http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html</rdfs:comment>
     <spdx:licenseText>
 CeCILL FREE SOFTWARE LICENSE AGREEMENT
 

@@ -1,27 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "http://spdx.org/licenses/swrule",
-            "spdx:licenseText": "The style package is copyrighted but may be used and extended in any way, as long as a pointer to the original author is maintained. The author is not liable for any problem that may or may not result from using this package. Use at your own risk.\n",
-            "rdfs:seeAlso": "https://ctan.math.utah.edu/ctan/tex-archive/macros/generic/misc/swrule.sty",
-            "spdx:licenseTextHtml": "\n         <p>\n            The style package is copyrighted but may be used and extended\n            in any way, as long as a pointer to the original author is\n            maintained. The author is not liable for any problem that may\n            or may not result from using this package. Use at your own risk.\n         </p>\n\n      ",
-            "spdx:standardLicenseTemplate": "The style package is copyrighted but may be used and extended in any way, as long as a pointer to the original author is maintained. The author is not liable for any problem that may or may not result from using this package. Use at your own risk.\n\n",
-            "spdx:isDeprecatedLicenseId": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:crossRef": {
-                "@id": "_:85a005ff-1e23-4025-987e-095a63b73087"
-            },
-            "spdx:isOsiApproved": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:name": "swrule License",
-            "@type": "spdx:ListedLicense"
-        },
-        {
-            "@id": "_:85a005ff-1e23-4025-987e-095a63b73087",
+            "@id": "_:49cee8de-9910-465e-9051-133f9767cd43",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,13 +15,33 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://ctan.math.utah.edu/ctan/tex-archive/macros/generic/misc/swrule.sty",
-            "spdx:timestamp": "2026-01-30T09:03:03Z",
+            "spdx:timestamp": "2026-02-20T20:54:25Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "false",
             "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "http://spdx.org/licenses/swrule",
+            "spdx:licenseText": "The style package is copyrighted but may be used and extended in any way, as long as a pointer to the original author is maintained. The author is not liable for any problem that may or may not result from using this package. Use at your own risk.\n",
+            "rdfs:seeAlso": "https://ctan.math.utah.edu/ctan/tex-archive/macros/generic/misc/swrule.sty",
+            "spdx:licenseTextHtml": "\n         <p>\n            The style package is copyrighted but may be used and extended\n            in any way, as long as a pointer to the original author is\n            maintained. The author is not liable for any problem that may\n            or may not result from using this package. Use at your own risk.\n         </p>\n\n      ",
+            "spdx:standardLicenseTemplate": "The style package is copyrighted but may be used and extended in any way, as long as a pointer to the original author is maintained. The author is not liable for any problem that may or may not result from using this package. Use at your own risk.\n\n",
+            "spdx:isDeprecatedLicenseId": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:crossRef": {
+                "@id": "_:49cee8de-9910-465e-9051-133f9767cd43"
+            },
+            "spdx:isOsiApproved": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:name": "swrule License",
+            "@type": "spdx:ListedLicense"
         }
     ],
     "@context": {

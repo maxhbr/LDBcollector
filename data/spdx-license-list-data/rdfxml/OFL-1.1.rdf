@@ -5,6 +5,7 @@
     xmlns:ptr="http://www.w3.org/2009/pointers#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
   <spdx:ListedLicense rdf:about="http://spdx.org/licenses/OFL-1.1">
+    <spdx:name>SIL Open Font License 1.1</spdx:name>
     <spdx:crossRef>
       <spdx:CrossRef>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -14,13 +15,12 @@
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
         <spdx:url>http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web</spdx:url>
-        <spdx:timestamp>2026-01-30T09:04:35Z</spdx:timestamp>
+        <spdx:timestamp>2026-02-20T21:00:25Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>false</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
-    <spdx:name>SIL Open Font License 1.1</spdx:name>
     <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</spdx:isOsiApproved>
     <rdfs:comment>This license was released 26 February 2007. The identifier OFL-1.1 can be used to indicate that version 1.1 of the SIL Open Font License applies, without asserting whether or not a Reserved Font Name is used. See OFL-1.1-RFN and OFL-1.1-no-RFN for alternative identifiers that can be used to express explicitly that a Reserved Font Name is used or is not used, respectively.</rdfs:comment>
@@ -142,7 +142,7 @@ with Reserved Font Name &amp;lt;Reserved Font Name&amp;gt;.&lt;/p&gt;
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
         <spdx:url>https://opensource.org/licenses/OFL-1.1</spdx:url>
-        <spdx:timestamp>2026-01-30T09:04:36Z</spdx:timestamp>
+        <spdx:timestamp>2026-02-20T21:00:25Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</spdx:order>
         <spdx:match>N/A</spdx:match>

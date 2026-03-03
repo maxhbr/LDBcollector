@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:af1ea38e-b1ad-4149-8abf-907cf1bfd446"
+                "@id": "_:316363ff-37a4-484c-a70e-70057e8548d6"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:af1ea38e-b1ad-4149-8abf-907cf1bfd446",
+            "@id": "_:316363ff-37a4-484c-a70e-70057e8548d6",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright",
-            "spdx:timestamp": "2026-01-30T09:03:14Z",
+            "spdx:timestamp": "2026-02-20T20:55:37Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:fef69d33-0666-4cbf-a5f2-4f0ac50f7648",
+            "@id": "_:c438e7e7-3ec5-4d33-8a23-023bd65a9449",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://people.freebsd.org/~phk/",
-            "spdx:timestamp": "2026-01-30T09:04:31Z",
+            "spdx:timestamp": "2026-02-20T20:59:24Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -24,7 +24,7 @@
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:c3a2c25d-eebe-4007-8827-ba7746e06fb5",
+            "@id": "_:ecf65598-6409-4ee1-bded-30c204b3ba5b",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -38,7 +38,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/Beerware",
-            "spdx:timestamp": "2026-01-30T09:04:31Z",
+            "spdx:timestamp": "2026-02-20T20:59:24Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -53,20 +53,20 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:licenseTextHtml": "\n       <p>&quot;THE BEER-WARE LICENSE&quot; (Revision 42):</p>\n\n      <p><var class=\"replaceable-license-text\"><span title=\"can be replaced with the pattern <phk@FreeBSD.ORG>|<phk@login.dkuug.dk>\"> &lt;phk@FreeBSD.ORG&gt;</span></var> wrote this file. As long as you retain\n         this notice you can do whatever you want with this stuff. If we meet some day, and you think this\n         stuff is worth it, you can buy me a beer in return Poul-Henning Kamp</p>\n\n    ",
-            "spdx:crossRef": [
-                {
-                    "@id": "_:fef69d33-0666-4cbf-a5f2-4f0ac50f7648"
-                },
-                {
-                    "@id": "_:c3a2c25d-eebe-4007-8827-ba7746e06fb5"
-                }
-            ],
             "rdfs:seeAlso": [
                 "https://people.freebsd.org/~phk/",
                 "https://fedoraproject.org/wiki/Licensing/Beerware"
             ],
             "@type": "spdx:ListedLicense",
             "spdx:name": "Beerware License",
+            "spdx:crossRef": [
+                {
+                    "@id": "_:c438e7e7-3ec5-4d33-8a23-023bd65a9449"
+                },
+                {
+                    "@id": "_:ecf65598-6409-4ee1-bded-30c204b3ba5b"
+                }
+            ],
             "spdx:standardLicenseTemplate": "\"THE BEER-WARE LICENSE\" (Revision 42):\n\n<<var;name=\"email\";original=\"<phk@FreeBSD.ORG>\";match=\"<phk@FreeBSD.ORG>|<phk@login.dkuug.dk>\">> wrote this file. As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n\n",
             "spdx:licenseText": "\"THE BEER-WARE LICENSE\" (Revision 42):  <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you  can do whatever you want with this stuff. If we meet some day, and you think  this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
             "spdx:isDeprecatedLicenseId": {

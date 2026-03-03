@@ -4,10 +4,10 @@
             "@id": "http://spdx.org/licenses/Elastic-2.0",
             "spdx:crossRef": [
                 {
-                    "@id": "_:ee801858-0563-4f7f-8650-94d86114dbb3"
+                    "@id": "_:2f301ac6-66a0-4597-bed2-60ae16e97382"
                 },
                 {
-                    "@id": "_:9c0669d8-1912-4d18-abf0-34b00b39e5d2"
+                    "@id": "_:d8e09b84-bd7e-4684-a6f2-35283355c5f9"
                 }
             ],
             "@type": "spdx:ListedLicense",
@@ -30,30 +30,7 @@
             "spdx:name": "Elastic License 2.0"
         },
         {
-            "@id": "_:ee801858-0563-4f7f-8650-94d86114dbb3",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://github.com/elastic/elasticsearch/blob/master/licenses/ELASTIC-LICENSE-2.0.txt",
-            "spdx:timestamp": "2026-01-30T09:03:09Z",
-            "spdx:order": {
-                "@value": "1",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "false",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:9c0669d8-1912-4d18-abf0-34b00b39e5d2",
+            "@id": "_:2f301ac6-66a0-4597-bed2-60ae16e97382",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -67,12 +44,35 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://www.elastic.co/licensing/elastic-license",
-            "spdx:timestamp": "2026-01-30T09:03:09Z",
+            "spdx:timestamp": "2026-02-20T20:54:35Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "true",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:d8e09b84-bd7e-4684-a6f2-35283355c5f9",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://github.com/elastic/elasticsearch/blob/master/licenses/ELASTIC-LICENSE-2.0.txt",
+            "spdx:timestamp": "2026-02-20T20:54:35Z",
+            "spdx:order": {
+                "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "false",
             "@type": "spdx:CrossRef"
         }
     ],

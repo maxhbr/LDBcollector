@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:486ef823-7c2a-4f5a-ad8d-48907d8e5565"
+                "@id": "_:bf33e36d-85ff-454f-9979-b49f973f129c"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:486ef823-7c2a-4f5a-ad8d-48907d8e5565",
+            "@id": "_:bf33e36d-85ff-454f-9979-b49f973f129c",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/Latex2e",
-            "spdx:timestamp": "2026-01-30T09:03:15Z",
+            "spdx:timestamp": "2026-02-20T20:55:38Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

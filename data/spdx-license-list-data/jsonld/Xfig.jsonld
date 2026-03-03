@@ -2,17 +2,6 @@
     "@graph": [
         {
             "@id": "http://spdx.org/licenses/Xfig",
-            "spdx:crossRef": [
-                {
-                    "@id": "_:e6bbdaac-3113-4eee-b32b-e0bc36c7d9a6"
-                },
-                {
-                    "@id": "_:ff76161c-49c5-450d-ae51-24a38fba2dc8"
-                },
-                {
-                    "@id": "_:ed83d385-d50a-4cfc-b76f-2f21dc16a8c3"
-                }
-            ],
             "spdx:licenseText": "Any party obtaining a copy of these files is granted, free of charge, \na full and unrestricted irrevocable, world-wide, paid up, royalty-free, \nnonexclusive right and license to deal in this software and documentation \nfiles (the \"Software\"), including without limitation the rights to use, \ncopy, modify, merge, publish and/or distribute copies of the Software, \nand to permit persons who receive copies from any such party to do so, \nwith the only requirement being that this copyright notice remain intact.\n",
             "rdfs:seeAlso": [
                 "https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am",
@@ -21,6 +10,17 @@
             ],
             "spdx:name": "Xfig License",
             "@type": "spdx:ListedLicense",
+            "spdx:crossRef": [
+                {
+                    "@id": "_:b926b26a-3455-4cf0-82b8-890599b52a3b"
+                },
+                {
+                    "@id": "_:7224eb4e-cb8f-4bcd-a7aa-53a8da6e604c"
+                },
+                {
+                    "@id": "_:fbcaea9d-5977-475b-870d-3a0a4c976422"
+                }
+            ],
             "spdx:standardLicenseTemplate": "Any party obtaining a copy of these files is granted, free of charge, a full and unrestricted irrevocable, world-wide, paid up, royalty-free, nonexclusive right and license to deal in this software and documentation files (the \"Software\"), including without limitation the rights to use, copy, modify, merge, publish and/or distribute copies of the Software, and to permit persons who receive copies from any such party to do so, with the only requirement being that this copyright notice remain intact.\n\n",
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -33,53 +33,7 @@
             }
         },
         {
-            "@id": "_:e6bbdaac-3113-4eee-b32b-e0bc36c7d9a6",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am",
-            "spdx:timestamp": "2026-01-30T09:04:28Z",
-            "spdx:order": {
-                "@value": "2",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "N/A",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:ff76161c-49c5-450d-ae51-24a38fba2dc8",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c",
-            "spdx:timestamp": "2026-01-30T09:04:28Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "false",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:ed83d385-d50a-4cfc-b76f-2f21dc16a8c3",
+            "@id": "_:b926b26a-3455-4cf0-82b8-890599b52a3b",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -93,12 +47,58 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant",
-            "spdx:timestamp": "2026-01-30T09:04:27Z",
+            "spdx:timestamp": "2026-02-20T20:58:52Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "true",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:7224eb4e-cb8f-4bcd-a7aa-53a8da6e604c",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am",
+            "spdx:timestamp": "2026-02-20T20:58:52Z",
+            "spdx:order": {
+                "@value": "2",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:fbcaea9d-5977-475b-870d-3a0a4c976422",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c",
+            "spdx:timestamp": "2026-02-20T20:58:53Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "false",
             "@type": "spdx:CrossRef"
         }
     ],

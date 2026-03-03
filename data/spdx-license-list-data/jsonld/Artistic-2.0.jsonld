@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:3aa9b35d-142e-4d54-acfa-846ebfaad918",
+            "@id": "_:9e5f8241-a7bb-4f32-a088-c0b475486d55",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://www.perlfoundation.org/artistic_license_2_0",
-            "spdx:timestamp": "2026-01-30T09:05:57Z",
+            "spdx:timestamp": "2026-02-20T21:03:34Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -24,30 +24,7 @@
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:b35ad78d-c72e-42b5-8e5a-ac29101b77b0",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://opensource.org/licenses/artistic-license-2.0",
-            "spdx:timestamp": "2026-01-30T09:05:56Z",
-            "spdx:order": {
-                "@value": "2",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "N/A",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:0a012203-dfe3-407c-8fcf-84e127bf4f30",
+            "@id": "_:e845a6e3-2286-4386-b455-508e033d8020",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -61,7 +38,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://www.perlfoundation.org/artistic-license-20.html",
-            "spdx:timestamp": "2026-01-30T09:05:56Z",
+            "spdx:timestamp": "2026-02-20T21:03:34Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -70,18 +47,30 @@
             "@type": "spdx:CrossRef"
         },
         {
+            "@id": "_:5b2bb7f8-2e51-440c-94b5-1147fe2ab462",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://opensource.org/licenses/artistic-license-2.0",
+            "spdx:timestamp": "2026-02-20T21:03:34Z",
+            "spdx:order": {
+                "@value": "2",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
+            "@type": "spdx:CrossRef"
+        },
+        {
             "@id": "http://spdx.org/licenses/Artistic-2.0",
-            "spdx:crossRef": [
-                {
-                    "@id": "_:0a012203-dfe3-407c-8fcf-84e127bf4f30"
-                },
-                {
-                    "@id": "_:b35ad78d-c72e-42b5-8e5a-ac29101b77b0"
-                },
-                {
-                    "@id": "_:3aa9b35d-142e-4d54-acfa-846ebfaad918"
-                }
-            ],
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -92,6 +81,17 @@
                 "https://opensource.org/licenses/artistic-license-2.0",
                 "https://www.perlfoundation.org/artistic-license-20.html",
                 "http://www.perlfoundation.org/artistic_license_2_0"
+            ],
+            "spdx:crossRef": [
+                {
+                    "@id": "_:5b2bb7f8-2e51-440c-94b5-1147fe2ab462"
+                },
+                {
+                    "@id": "_:9e5f8241-a7bb-4f32-a088-c0b475486d55"
+                },
+                {
+                    "@id": "_:e845a6e3-2286-4386-b455-508e033d8020"
+                }
             ],
             "spdx:isFsfLibre": {
                 "@value": "true",

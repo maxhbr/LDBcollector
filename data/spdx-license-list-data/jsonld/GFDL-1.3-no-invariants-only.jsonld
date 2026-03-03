@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:31e2dd96-cd29-493d-851f-8993f98e0ce5",
+            "@id": "_:efd522e9-b15f-4722-94d9-c5718f581041",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://www.gnu.org/licenses/fdl-1.3.txt",
-            "spdx:timestamp": "2026-01-30T09:05:58Z",
+            "spdx:timestamp": "2026-02-20T21:04:04Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -33,10 +33,10 @@
             "spdx:name": "GNU Free Documentation License v1.3 only - no invariants",
             "rdfs:comment": "This license was released 3 November 2008. The identifier GFDL-1.3-only-no-invariants should only be used when there are no Invariant Sections, Front-Cover Texts or Back-Cover Texts. See GFDL-1.3-only and GFDL-1.3-only-invariants for alternatives.",
             "rdfs:seeAlso": "https://www.gnu.org/licenses/fdl-1.3.txt",
-            "@type": "spdx:ListedLicense",
             "spdx:crossRef": {
-                "@id": "_:31e2dd96-cd29-493d-851f-8993f98e0ce5"
+                "@id": "_:efd522e9-b15f-4722-94d9-c5718f581041"
             },
+            "@type": "spdx:ListedLicense",
             "spdx:isOsiApproved": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"

@@ -13,15 +13,13 @@
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
-        <spdx:url>https://github.com/Slicer/Slicer/blob/main/License.txt</spdx:url>
-        <spdx:timestamp>2026-01-30T09:03:06Z</spdx:timestamp>
+        <spdx:url>https://slicer.org/LICENSE</spdx:url>
+        <spdx:timestamp>2026-02-20T20:54:27Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</spdx:order>
+        >0</spdx:order>
         <spdx:match>false</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
-    <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</spdx:isOsiApproved>
     <spdx:crossRef>
       <spdx:CrossRef>
         <spdx:isWayBackLink rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -30,13 +28,15 @@
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
-        <spdx:url>https://slicer.org/LICENSE</spdx:url>
-        <spdx:timestamp>2026-01-30T09:03:05Z</spdx:timestamp>
+        <spdx:url>https://github.com/Slicer/Slicer/blob/main/License.txt</spdx:url>
+        <spdx:timestamp>2026-02-20T20:54:27Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >0</spdx:order>
+        >1</spdx:order>
         <spdx:match>false</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
+    <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</spdx:isOsiApproved>
     <spdx:licenseTextHtml>
 		&lt;var class="optional-license-text"&gt; 
 			3D Slicer Contribution and Software License Agreement (&amp;quot;Agreement&amp;quot;)&lt;br /&gt;

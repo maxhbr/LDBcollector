@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:12a245c9-bd6b-40fb-b80b-682a2a5567fe",
+            "@id": "_:5ef8fd2c-69eb-4ae4-9f73-d58f17934898",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
-            "spdx:timestamp": "2026-01-30T09:03:10Z",
+            "spdx:timestamp": "2026-02-20T20:55:05Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -33,14 +33,14 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "rdfs:comment": "French version can be found here: http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html",
-            "spdx:crossRef": {
-                "@id": "_:12a245c9-bd6b-40fb-b80b-682a2a5567fe"
-            },
             "rdfs:seeAlso": "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
             "@type": "spdx:ListedLicense",
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:crossRef": {
+                "@id": "_:5ef8fd2c-69eb-4ae4-9f73-d58f17934898"
             },
             "spdx:isFsfLibre": {
                 "@value": "true",

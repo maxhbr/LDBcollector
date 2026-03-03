@@ -16,13 +16,13 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:name": "Open LDAP Public License v2.4",
             "spdx:crossRef": {
-                "@id": "_:13284fc1-cc39-49fd-858f-da51cdc6b860"
-            }
+                "@id": "_:e31311ee-3899-4ddf-94b8-7bd213e2dd5d"
+            },
+            "spdx:name": "Open LDAP Public License v2.4"
         },
         {
-            "@id": "_:13284fc1-cc39-49fd-858f-da51cdc6b860",
+            "@id": "_:e31311ee-3899-4ddf-94b8-7bd213e2dd5d",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -36,7 +36,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cd1284c4a91a8a380d904eee68d1583f989ed386",
-            "spdx:timestamp": "2026-01-30T09:03:03Z",
+            "spdx:timestamp": "2026-02-20T20:54:25Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

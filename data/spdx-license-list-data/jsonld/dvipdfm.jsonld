@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:91fa85f4-fe23-4eb8-85eb-ec1117315cf2"
+                "@id": "_:83e918f3-cd4f-4168-a866-b9311279a175"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:91fa85f4-fe23-4eb8-85eb-ec1117315cf2",
+            "@id": "_:83e918f3-cd4f-4168-a866-b9311279a175",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/dvipdfm",
-            "spdx:timestamp": "2026-01-30T09:05:23Z",
+            "spdx:timestamp": "2026-02-20T21:02:30Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

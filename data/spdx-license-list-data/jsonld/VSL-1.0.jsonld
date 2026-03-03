@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:61d56eda-bbb1-4a18-8461-ac9fbe300380",
+            "@id": "_:fd6e2d06-3e22-41f2-844e-79b3ae2ae5f0",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://opensource.org/licenses/VSL-1.0",
-            "spdx:timestamp": "2026-01-30T09:03:02Z",
+            "spdx:timestamp": "2026-02-20T20:54:24Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -34,7 +34,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:61d56eda-bbb1-4a18-8461-ac9fbe300380"
+                "@id": "_:fd6e2d06-3e22-41f2-844e-79b3ae2ae5f0"
             },
             "spdx:isOsiApproved": {
                 "@value": "true",

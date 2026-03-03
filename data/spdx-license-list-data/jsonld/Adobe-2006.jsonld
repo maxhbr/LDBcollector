@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:f709d9e2-cbde-4db2-af44-351c6bc8e59a",
+            "@id": "_:cf9f70a4-c70d-4a5d-b039-a4686e7184f7",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/AdobeLicense",
-            "spdx:timestamp": "2026-01-30T09:04:01Z",
+            "spdx:timestamp": "2026-02-20T20:58:20Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -34,7 +34,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:f709d9e2-cbde-4db2-af44-351c6bc8e59a"
+                "@id": "_:cf9f70a4-c70d-4a5d-b039-a4686e7184f7"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",

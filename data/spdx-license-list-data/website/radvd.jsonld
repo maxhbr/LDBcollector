@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:eaf2c3b0-1401-4a1a-aa9e-44c347fbfd5d",
+            "@id": "_:18561ed1-6e2f-4994-b1bd-ec358cdc44e6",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://github.com/radvd-project/radvd/blob/master/COPYRIGHT",
-            "spdx:timestamp": "2026-01-30T09:05:56Z",
+            "spdx:timestamp": "2026-02-20T21:03:33Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:eaf2c3b0-1401-4a1a-aa9e-44c347fbfd5d"
+                "@id": "_:18561ed1-6e2f-4994-b1bd-ec358cdc44e6"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",

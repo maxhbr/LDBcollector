@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:91c71b95-4c4c-4c92-a6b8-79d0b087b1dc",
+            "@id": "_:ac723bf2-d397-4057-8b5f-ce66b924bf88",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://github.com/AcademySoftwareFoundation/foundation/blob/main/digital_assets/aswf_digital_assets_license_v1.1.txt",
-            "spdx:timestamp": "2026-01-30T09:05:56Z",
+            "spdx:timestamp": "2026-02-20T21:03:33Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -34,7 +34,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:91c71b95-4c4c-4c92-a6b8-79d0b087b1dc"
+                "@id": "_:ac723bf2-d397-4057-8b5f-ce66b924bf88"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",

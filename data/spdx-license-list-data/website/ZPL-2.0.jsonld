@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:a6b0c9a9-860a-48c8-8ec2-4087370ea9f2",
+            "@id": "_:eefb1474-5e43-4a00-8f81-1f5412bd67c3",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://opensource.org/licenses/ZPL-2.0",
-            "spdx:timestamp": "2026-01-30T09:05:12Z",
+            "spdx:timestamp": "2026-02-20T21:01:57Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -24,7 +24,7 @@
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:a1e1bac4-eb1d-498f-ad1c-b87cff62e59e",
+            "@id": "_:85f77064-3619-49c0-b4cb-2be01b118a04",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -38,7 +38,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://old.zope.org/Resources/License/ZPL-2.0",
-            "spdx:timestamp": "2026-01-30T09:05:12Z",
+            "spdx:timestamp": "2026-02-20T21:01:56Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -59,18 +59,18 @@
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:crossRef": [
-                {
-                    "@id": "_:a6b0c9a9-860a-48c8-8ec2-4087370ea9f2"
-                },
-                {
-                    "@id": "_:a1e1bac4-eb1d-498f-ad1c-b87cff62e59e"
-                }
-            ],
             "spdx:isFsfLibre": {
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
+            "spdx:crossRef": [
+                {
+                    "@id": "_:85f77064-3619-49c0-b4cb-2be01b118a04"
+                },
+                {
+                    "@id": "_:eefb1474-5e43-4a00-8f81-1f5412bd67c3"
+                }
+            ],
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
