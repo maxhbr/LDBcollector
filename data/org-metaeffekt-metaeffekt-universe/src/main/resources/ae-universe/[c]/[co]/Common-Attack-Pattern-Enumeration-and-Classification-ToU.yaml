@@ -5,6 +5,7 @@
 canonicalName: "Common Attack Pattern Enumeration and Classification ToU"
 category: "CAPEC ToU"
 shortName: "CAPEC-ToU"
+spdxIdentifier: "CAPEC-tou"
 
 alternativeNames:
   - "Common Attack Pattern Enumeration and Classification ToU"

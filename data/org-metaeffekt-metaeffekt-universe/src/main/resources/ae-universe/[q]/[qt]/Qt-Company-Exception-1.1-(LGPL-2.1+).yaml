@@ -1,0 +1,25 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Qt Company Exception 1.1 (LGPL-2.1+)"
+category: "Qt Company Exception"
+shortName: "Qt-Company-Exception-1.1-LGPL-2.1+"
+spdxIdentifier: "Qt-LGPL-exception-1.1"
+
+canonicalNameHistory:
+  - "Qt LGPL Exception 1.1"
+  - "Qt Company Exception 1.1 (LGPL)"
+
+type: "exception"
+
+alternativeNames:
+  - "Nokia Qt exception, Version 1.1"
+  - "Nokia Qt exception 1.1"
+  - "Nokia-Qt-exception, Version 1.1"
+  - "Nokia-Qt-exception, 1.1"
+  - "Nokia Qt LGPL Exception version 1.1"
+  - "Qt-LGPL-exception-1.1"
+
+otherIds: 
+  - "scancode:qt-lgpl-exception-1.1"

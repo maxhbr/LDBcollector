@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "AC3Filter Modifier (GPL-2.0)"
+category: "AC3Filter Modifier"
+shortName: "AC3Filter-GPL-2.0"
+
+canonicalNameHistory:
+  - "AC3Filter License"
+  - "AC3Filter Modifier"
+
+type: "modifier"
+
+alternativeNames:
+  - "AC3-Filter License"
+  - "AC3-Filter-License"
+  - "ac3 filter license"
+
+otherIds: 
+  - "scancode:ac3filter"

@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "FLTK Exception (LGPL)"
+category: "FLTK Exception"
+shortName: "FLTK-Exception-LGPL"
+spdxIdentifier: "FLTK-exception"
+
+canonicalNameHistory:
+  - "FLTK Exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:fltk-exception-lgpl-2.0"

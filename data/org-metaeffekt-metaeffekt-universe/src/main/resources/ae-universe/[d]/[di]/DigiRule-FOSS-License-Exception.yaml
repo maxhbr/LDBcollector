@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "DigiRule FOSS License Exception"
+category: "DigiRule Exception"
+spdxIdentifier: "DigiRule-FOSS-exception"
+
+canonicalNameHistory:
+  - "DigiRule FOSS License Exception (GPL 2.0)"
+
+type: "exception"
+
+alternativeNames:
+  - "DigiRule FOSS License Exception"
+
+otherIds: 
+  - "scancode:digirule-foss-exception"

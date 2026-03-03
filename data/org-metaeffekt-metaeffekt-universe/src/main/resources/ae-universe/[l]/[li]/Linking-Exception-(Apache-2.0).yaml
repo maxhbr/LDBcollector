@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Linking Exception (Apache-2.0)"
+category: "Apache Linking Exception"
+shortName: "Linking-Exception-Apache-2.0"
+
+canonicalNameHistory:
+  - "Apache 2.0 Linking Exception"
+  - "Linking Exception (Apache)"
+
+type: "exception"
+
+alternativeNames:
+  - "Apache 2.0 with Linking Exception"
+
+otherIds: 
+  - "scancode:compuphase-linking-exception"

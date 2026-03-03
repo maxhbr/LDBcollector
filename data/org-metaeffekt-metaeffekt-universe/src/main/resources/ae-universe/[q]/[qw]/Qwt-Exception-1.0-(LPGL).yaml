@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Qwt Exception 1.0 (LPGL)"
+category: "Qwt Exception"
+shortName: "Qwt-Exception-1.0-LGPL"
+spdxIdentifier: "Qwt-exception-1.0"
+
+canonicalNameHistory:
+  - "Qwt Exception 1.0"
+
+type: "exception"
+
+alternativeNames:
+  - "Qwt License Version 1.0"
+
+otherIds: 
+  - "scancode:qwt-exception-1.0"

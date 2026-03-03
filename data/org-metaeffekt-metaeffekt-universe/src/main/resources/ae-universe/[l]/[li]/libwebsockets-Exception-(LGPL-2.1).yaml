@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
-canonicalName: "libwebsockets Exception (LGPL 2.1)"
+canonicalName: "libwebsockets Exception (LGPL-2.1)"
 category: "libwebsockets Exception"
 shortName: "libwebsockets-Exception-LGPL-2.1"
+
+canonicalNameHistory:
+  - "libwebsockets Exception (LGPL 2.1)"
 
 type: "exception"
 

@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Digia Qt Exception (LGPL-2.1)"
+category: "Digia Qt Exception"
+shortName: "Digia-Qt-Exception-LGPL-2.1"
+
+canonicalNameHistory:
+  - "Digia Qt Exception 2.1 (LGPL)"
+
+type: "exception"
+
+alternativeNames:
+  - "Digia Qt Exception to LGPL 2.1"
+
+otherIds: 
+  - "scancode:digia-qt-exception-lgpl-2.1"

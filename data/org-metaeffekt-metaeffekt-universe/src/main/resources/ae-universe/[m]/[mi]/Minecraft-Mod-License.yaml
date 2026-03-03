@@ -5,6 +5,7 @@
 canonicalName: "Minecraft Mod License"
 category: "Minecraft Mod License"
 shortName: "Minecraft-Mod"
+spdxIdentifier: "MMPL-1.0.1"
 
 alternativeNames:
   - "Minecraft Mod Public License Version 1.0.1"

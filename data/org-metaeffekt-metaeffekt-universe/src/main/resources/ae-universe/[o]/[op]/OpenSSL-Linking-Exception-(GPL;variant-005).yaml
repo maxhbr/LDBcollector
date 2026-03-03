@@ -1,0 +1,22 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "OpenSSL Linking Exception (GPL; variant 005)"
+category: "OpenSSL Linking Exception"
+shortName: "OpenSSL-Linking-Exception-GPL-005"
+spdxIdentifier: "vsftpd-openssl-exception"
+
+canonicalNameHistory:
+  - "vsftpd OpenSSL exception"
+  - "vsftpd OpenSSL Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "vsftpd-openssl-exception"
+  - "vsftpd OpenSSL exception"
+  - "Linking Exception (vsftpd)"
+
+otherIds: 
+  - "scancode:vsftpd-openssl-exception"

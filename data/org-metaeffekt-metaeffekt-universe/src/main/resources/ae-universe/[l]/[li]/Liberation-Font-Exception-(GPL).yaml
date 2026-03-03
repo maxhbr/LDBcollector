@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Liberation Font Exception (GPL)"
-category: "Liberation Font"
+category: "Liberation Font Exception"
 shortName: "Liberation-Font-Exception-GPL"
 
 type: "exception"

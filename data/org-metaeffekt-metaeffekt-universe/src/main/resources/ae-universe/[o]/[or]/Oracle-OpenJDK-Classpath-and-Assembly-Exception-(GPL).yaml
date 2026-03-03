@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Oracle OpenJDK Classpath and Assembly Exception (GPL)"
+category: "Oracle OpenJDK Exception"
+shortName: "Oracle-OpenJDK-Classpath-Assembly-Exception-GPL"
+
+canonicalNameHistory:
+  - "OpenJDK Classpath and Assembly Exception"
+  - "Oracle OpenJDK Classpath and Assembly Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "http://openjdk.java.net/legal/assembly-exception.html"
+
+otherIds: 
+  - "scancode:openjdk-exception"

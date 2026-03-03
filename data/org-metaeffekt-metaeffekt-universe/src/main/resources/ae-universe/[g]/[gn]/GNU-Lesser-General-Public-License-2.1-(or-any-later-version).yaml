@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "GNU Lesser General Public License 2.1 (or any later version)"
-category: "LGPL"
+category: "LesserGPL"
 shortName: "LGPL-2.1+"
 spdxIdentifier: "LGPL-2.1-or-later"
 
@@ -24,7 +24,6 @@ alternativeNames:
   - "LGPL v2.1+"
   - "LGPL version 2.1+"
   - "LGPL(v2.1+)"
-  - "GNU LIBRARY GENERAL PUBLIC LICENSE, Version 2.1+"
   - "GNU Lesser GPL 2.1+"
   - "GNU Lesser General Public License (LGPL), version 2.1+"
   - "GNU Lesser General Public License (LGPL), version 2.1 or later"

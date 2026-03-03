@@ -2,16 +2,16 @@
 
 Project providing insights on the {metæffekt} license database covering
 
-* 2972 modeled license terms,
-* 213 exceptions,
+* 3016 modeled license terms,
+* 214 exceptions,
 * 15 modifiers
 * 2 restrictions
 * 309 specific and commonly used license expressions, and
 * 61 consolidated markers
 
-as of February 1st 2026.
+as of February 24th 2026.
 
-A total of 3202 differentiated terms, modifiers, restrictions and exceptions!
+A total of 3247 differentiated terms, modifiers, restrictions and exceptions!
 
 The following links provide letter-specific overviews on the license information:
 
@@ -103,9 +103,9 @@ the license name is problematic.
   Copyright (c) nexB Inc. and others. All rights reserved.
   ScanCode is a trademark of nexB Inc.
 
-- [Open CoDE License Compliance](https://wikijs.opencode.de/de/Hilfestellungen_und_Richtlinien/Lizenzcompliance) 
-  approval information is Open CoDE Public Domain. The status information shown reflects version 1.4 from
-  January 2024.
+- [openCode License Compliance](https://wikijs.opencode.de/de/Hilfestellungen_und_Richtlinien/Lizenzcompliance) 
+  approval information is openCode Public Domain. The status information shown reflects version 1.7 from
+  23.02.2026.
 
 The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 

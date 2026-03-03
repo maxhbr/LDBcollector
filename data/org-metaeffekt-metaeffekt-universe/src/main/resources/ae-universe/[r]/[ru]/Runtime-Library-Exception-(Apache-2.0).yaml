@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Runtime Library Exception (Apache-2.0)"
+category: "Apache Runtime Library Exception"
+shortName: "Runtime-Library-Exception-Apache-2.0"
+spdxIdentifier: "Swift-exception"
+
+canonicalNameHistory:
+  - "Swift Exception"
+  - "Runtime Library Exception (Apache)"
+
+type: "exception"
+
+alternativeNames:
+  - "Apache 2.0 with Runtime Library Exception"
+
+otherIds: 
+  - "scancode:apple-runtime-library-exception"

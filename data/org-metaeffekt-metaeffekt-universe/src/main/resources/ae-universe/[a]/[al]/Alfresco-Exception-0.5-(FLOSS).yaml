@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Alfresco Exception 0.5 (FLOSS)"
+category: "Alfresco Exception"
+shortName: "Alfresco-Exception-0.5-FLOSS"
+
+canonicalNameHistory:
+  - "Alfresco FLOSS Exception 0.5"
+
+type: "exception"
+
+alternativeNames:
+  - "Alfresco FLOSS Exception v0.5"
+  - "Alfresco Software, Ltd. FLOSS License Exception 0.5"
+
+otherIds: 
+  - "scancode:alfresco-exception-0.5"

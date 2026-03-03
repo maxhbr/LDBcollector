@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "GNU Lesser General Public License 3.0 (or any later version)"
-category: "LGPL"
+category: "LesserGPL"
 shortName: "LGPL-3.0+"
 spdxIdentifier: "LGPL-3.0-or-later"
 
@@ -35,7 +35,6 @@ alternativeNames:
   - "GNU LGPL license v3.0+"
   - "GNU Lesser General Public Licence, Version 3+"
   - "GNU Lesser General Public License (GNU LGPL), Version 3+"
-  - "GNU LIBRARY GENERAL PUBLIC LICENSE, Version 3.0+"
   - "GNU Lesser GPL, Version 3+"
   - "GNU Lesser General Public License (LGPL) v3.0+"
   - "GNU Lesser General Public License (LGPL), Version 3+"

@@ -6,7 +6,16 @@ canonicalName: "Open WebUI License"
 category: "Open WebUI"
 shortName: "Open-WebUI"
 
+canonicalNameHistory:
+  - "BSD-3 for OpenWebUI"
+  - "BSD 3-Clause License (OpenWebUI)"
+
 alternativeNames:
+  - "BSD 3-Clause License (OpenWebUI)"
+  - "BSD-3 for OpenWebUI"
+  - "OpenWebUI-BSD"
+  - "BSD-3-Clause-License-OpenWebUI"
+  - "https://github.com/open-webui/open-webui/blob/main/LICENSE"
   - "Open WebUI License 2025"
 
 otherIds: 
