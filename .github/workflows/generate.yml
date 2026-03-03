@@ -15,28 +15,28 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: main-source
-
-      - name: Checkout generatedV2 branch
-        uses: actions/checkout@v4
-        with:
-          ref: generatedV2
-          path: _generatedV2
+          fetch-depth: 0
 
       - name: Setup Nix
         uses: cachix/install-nix-action@v25
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Fetch generatedV2 branch
+        run: |
+          cd main-source
+          git fetch origin generatedV2:generatedV2
+
       - name: Generate data
         run: |
           cd main-source
-          ./nix-run.sh --default
+          ./regenerate.sh
 
       - name: Commit and push
         run: |
-          cd _generatedV2
+          cd main-source/_generatedV2
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           git diff --staged --quiet || git commit -m "Update generated license data"
-          git push origin generatedV2
+          git push origin HEAD:generatedV2

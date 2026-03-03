@@ -159,7 +159,7 @@ executeCommand = \case
     writeJSON (T.unpack outDir </> "ldb.json")
   Default outDir -> do
     executeCommand (Generate outDir)
-    executeCommand (WriteNS "spdx" outDir)
+    executeCommand (WriteSource "SPDX" outDir)
   Write names outDir -> mapM_ (writeFilesByName (T.unpack outDir) . fromString) names
   WriteNS ns outDir -> do
     allLicenseNames <- MTL.gets getLicenseGraphLicenseNames
