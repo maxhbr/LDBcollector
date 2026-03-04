@@ -1,0 +1,26 @@
+<!--
+SPDX-FileCopyrightText: 2026 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+<select name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>{% for group_name, group_choices, group_index in widget.optgroups %}{% if group_name %}
+  <optgroup label="{{ group_name }}">{% endif %}{% for option in group_choices %}
+    {% include option.template_name with widget=option %}{% endfor %}{% if group_name %}
+      </optgroup>{% endif %}{% endfor %}
+</select>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var $ = django.jQuery;
+    var $select = $('#{{ widget.attrs.id }}');
+    $select.select2({
+      tags: true,
+      placeholder: $select.data('placeholder') || '',
+      theme: $select.data('theme') || 'default',
+      createTag: function(params) {
+        var term = $.trim(params.term);
+        if (!term) return null;
+        var value = term.startsWith('LicenseRef-') ? term : 'LicenseRef-' + term;
+        return { id: value, text: value };
+      }
+    });
+  });
+</script>

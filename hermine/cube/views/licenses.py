@@ -32,7 +32,7 @@ from odf.text import H, P, Span
 
 from cube.filters import LicenseFilter
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
-from cube.forms.licenses import ObligationForm, CompatibilityForm
+from cube.forms.licenses import LicenseForm, ObligationForm, CompatibilityForm
 from cube.forms.licenses import (
     ObligationGenericDiffForm,
     CopyReferenceLicensesForm,
@@ -119,10 +119,12 @@ class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
         return context
 
 
-class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+class LicenseDataUpdateView(
+    LoginRequiredMixin, PermissionRequiredMixin, UpdateView
+):
     permission_required = "cube.change_license"
     model = License
-    fields = LICENSE_SHARED_FIELDS
+    form_class = LicenseForm
     template_name = "cube/license_update.html"
     obligations = []
 
@@ -138,7 +140,7 @@ class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
 
     def form_valid(self, form):
         if "duplicate" in self.request.POST:
-            self.object.save()
+            self.object = form.save()
             for obligation in self.obligations:
                 obligation.pk = None
                 obligation.license = self.object
@@ -185,27 +187,12 @@ class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, Delet
         return reverse("cube:license_detail", args=[self.object.from_license.pk])
 
 
-class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
+class LicenseCreateView(
+    LoginRequiredMixin, PermissionRequiredMixin, CreateView
+):
     permission_required = "cube.add_license"
     model = License
-    fields = [
-        "spdx_id",
-        "long_name",
-        "url",
-        "copyleft",
-        "law_choice",
-        "venue_choice",
-        "patent_grant",
-        "osi_approved",
-        "fsf_approved",
-        "foss",
-        "non_commercial",
-        "ethical_clause",
-        "warranty",
-        "liability",
-        "comment",
-        "verbatim",
-    ]
+    form_class = LicenseForm
     template_name = "cube/license_create.html"
 
 

@@ -23,19 +23,20 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
-  <form method="post">
-    {% csrf_token %}
-    {{ form }}
-    <div class="field is-horizontal">
-      <div class="field-label"></div>
-      <div class="field-body">
-        <div class="field">
-          <div class="control">
-            <button type="submit" class="button is-primary">{{ label|default:"Save" }}</button>
-            <button type="submit" class="button" name="duplicate">Save as new (duplicate)</button>
-          </div>
+  <form method="post" style="max-width: 50rem">
+      {% csrf_token %}
+      {{ form }}
+      {{ form.media }}
+      <div class="field is-grouped is-grouped-right mt-4">
+        <div class="control">
+          <a class="button" href="{% url "cube:license_detail" license.id %}">Cancel</a>
+        </div>
+        <div class="control">
+          <button type="submit" class="button" name="duplicate">Save as new (duplicate)</button>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-primary">Save</button>
         </div>
       </div>
-    </div>
   </form>
 {% endblock %}

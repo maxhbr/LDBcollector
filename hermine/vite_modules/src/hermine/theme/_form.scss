@@ -1,9 +1,4 @@
 .field {
-  &.has-check {
-    .field-body {
-      margin-top: $default-padding * .125;
-    }
-  }
   .control {
     .mdi-24px.mdi-set, .mdi-24px.mdi:before {
       font-size: inherit;
