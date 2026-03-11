@@ -17,9 +17,9 @@ class FieldsetFormMixin:
     def template_name(self):
         return "django/forms/fieldset.html"
 
-    def get_context(self):
-        context = super().get_context()
-        fields_by_name = {bf.name: (bf, errors) for bf, errors in context["fields"]}
+    @property
+    def fieldset_groups(self):
+        fields_by_name = {bf.name: (bf, bf.errors) for bf in self}
         fieldset_groups = []
         used = set()
         for title, opts in self.fieldsets:
@@ -40,13 +40,15 @@ class FieldsetFormMixin:
                     used.add(name)
             fieldset_groups.append((title, group_fields, collapsible))
 
-        orphan_fields = [
-            (bf, errors) for bf, errors in context["fields"] if bf.name not in used
-        ]
+        orphan_fields = [(bf, bf.errors) for bf in self if bf.name not in used]
         if orphan_fields:
             fieldset_groups.append(("", orphan_fields, []))
 
-        context["fieldset_groups"] = fieldset_groups
+        return fieldset_groups
+
+    def get_context(self):
+        context = super().get_context()
+        context["fieldset_groups"] = self.fieldset_groups
         return context
 
 

@@ -22,5 +22,18 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
-  {% include "cube/includes/default_form.html" %}
+  <form method="post" style="max-width: 50rem">
+    {% csrf_token %}
+    {{ form }}
+    {{ form.media }}
+    <section class="card mb-5">
+      <div class="card-content">
+        <p class="has-text-grey">
+          <i class="fa fa-info-circle"></i>&nbsp;You can add explicit compatibilities after creating the license.
+        </p>
+      </div>
+    </section>
+    {% url "cube:license_list" as cancel_url %}
+    {% include "cube/includes/bulma_submit.html" with label="Save" cancel_url=cancel_url %}
+  </form>
 {% endblock %}

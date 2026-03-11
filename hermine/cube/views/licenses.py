@@ -32,8 +32,10 @@ from odf.text import H, P, Span
 
 from cube.filters import LicenseFilter
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
-from cube.forms.licenses import LicenseForm, ObligationForm, CompatibilityForm
 from cube.forms.licenses import (
+    LicenseForm,
+    ObligationForm,
+    CompatibilityForm,
     ObligationGenericDiffForm,
     CopyReferenceLicensesForm,
     CopyReferenceGenericsForm,
@@ -119,9 +121,7 @@ class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
         return context
 
 
-class LicenseDataUpdateView(
-    LoginRequiredMixin, PermissionRequiredMixin, UpdateView
-):
+class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = "cube.change_license"
     model = License
     form_class = LicenseForm
@@ -134,6 +134,7 @@ class LicenseDataUpdateView(
         obj = super().get_object(queryset)
         if "duplicate" in self.request.POST:
             self.obligations = list(obj.obligation_set.all())
+            self.compatibilities = list(obj.compatibility_from.all())
             obj.pk = None
             obj.long_name = obj.long_name + " (copy)"
         return obj
@@ -145,6 +146,10 @@ class LicenseDataUpdateView(
                 obligation.pk = None
                 obligation.license = self.object
                 obligation.save()
+            for compat in self.compatibilities:
+                compat.pk = None
+                compat.from_license = self.object
+                compat.save()
             return redirect(self.get_success_url())
         return super().form_valid(form)
 
@@ -187,9 +192,7 @@ class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, Delet
         return reverse("cube:license_detail", args=[self.object.from_license.pk])
 
 
-class LicenseCreateView(
-    LoginRequiredMixin, PermissionRequiredMixin, CreateView
-):
+class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     permission_required = "cube.add_license"
     model = License
     form_class = LicenseForm
