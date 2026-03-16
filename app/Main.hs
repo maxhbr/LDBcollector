@@ -136,7 +136,7 @@ curation =
               ("Apache-1.1", ["Apache (v1.1)", "Apache Software License 1.1", "ASL 1.1", "Apache Software License, Version 1.1"]),
               ("Apache-2.0", ["Apache (v2.0)", "Apache Software License 2.0", "ASL 2.0", "Apache License, Version 2.0", "ALv2"]),
               ("BSL-1.0", ["BSL (v1)"]),
-              ("BSD-2-Clause", ["BSD (2 clause)", "BSD License (two clause)"]),
+              ("BSD-2-Clause", ["BSD (2 clause)", "BSD License (two clause)", "2-clause-BSDL"]),
               ("BSD-3-Clause", ["BSD (3 clause)", "BSD License (no advertising)"]),
               ("BSD-4-Clause", ["BSD License (original)"]),
               ("MIT", ["MIT license (also X11)", "The MIT License"]),
