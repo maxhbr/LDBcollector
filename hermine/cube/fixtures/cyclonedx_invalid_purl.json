@@ -1,0 +1,60 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "bom-ref": "my-app",
+      "type": "application",
+      "name": "my-application",
+      "version": "1.0.0"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "valid-component",
+      "type": "library",
+      "name": "valid-lib",
+      "version": "1.0.0",
+      "purl": "pkg:npm/valid-lib@1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "invalid-purl-component",
+      "type": "library",
+      "name": "docker-image",
+      "version": "latest",
+      "purl": "pkg:npm/invalid-purl:sha256@f080f91",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "my-app",
+      "dependsOn": [
+        "valid-component",
+        "invalid-purl-component"
+      ]
+    },
+    {
+      "ref": "valid-component",
+      "dependsOn": []
+    },
+    {
+      "ref": "invalid-purl-component",
+      "dependsOn": []
+    }
+  ]
+}
