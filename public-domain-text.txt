@@ -29,6 +29,13 @@ text = '''
 text here
 '''
 
+package = enchant
+location = src/prefix.c
+text = '''
+This source code is public domain. You can relicense this code
+under whatever license you want.
+'''
+
 package = fcitx5-mozc
 location = LICENSE
 text = '''
