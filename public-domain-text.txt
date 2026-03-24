@@ -29,6 +29,12 @@ text = '''
 text here
 '''
 
+package = python-rst2rng
+location = rst2rng/serializer.py
+text = '''
+This file released to the Public Domain by David Mertz
+'''
+
 package = enchant
 location = src/prefix.c
 text = '''
