@@ -23,7 +23,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
-  <form method="post" style="max-width: 50rem">
+  <form id="license-form" method="post" style="max-width: 50rem">
     {% csrf_token %}
     {{ form.errors }}
     {% for title, group_fields, collapsible_sections in form.fieldset_groups %}
@@ -38,13 +38,13 @@ SPDX-License-Identifier: AGPL-3.0-only
               {% for compatibility in object.compatibility_from.all %}
                 <span class="tag {{ compatibility.to_license|licenseAllowedCSS }}">
                   {{ compatibility.to_license.spdx_id }}
-                  ({{ compatibility.get_direction_display }})&nbsp;<a href="{% url 'cube:compatibility_delete' license.pk compatibility.pk %}" class="delete" target="_blank"></a>
+                  ({{ compatibility.get_direction_display }})&nbsp;<a href="{% url 'cube:compatibility_delete' license.pk compatibility.pk %}" class="delete"></a>
                 </span>
               {% empty %}
                 <span class="has-text-grey">No compatibilities defined.</span>
               {% endfor %}
             </div>
-            <a href="{% url 'cube:compatibility_create' license.pk %}" class="button is-small is-white" target="_blank">
+            <a href="{% url 'cube:compatibility_create' license.pk %}" class="button is-small is-white">
               <i class="fa fa-plus"></i>&nbsp;Add
             </a>
           </div>
@@ -65,4 +65,16 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </div>
   </form>
+  <script>
+    (function () {
+      const form = document.getElementById("license-form");
+      let dirty = false;
+      form.addEventListener("input", function () { dirty = true; });
+      form.addEventListener("change", function () { dirty = true; });
+      form.addEventListener("submit", function () { dirty = false; });
+      window.addEventListener("beforeunload", function (e) {
+        if (dirty) { e.preventDefault(); e.returnValue = ""; }
+      });
+    })();
+  </script>
 {% endblock %}

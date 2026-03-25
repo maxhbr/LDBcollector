@@ -182,6 +182,9 @@ class CompatibilityCreateView(
     form_class = CompatibilityForm
     template_name = "cube/compatibility_create.html"
 
+    def get_success_url(self):
+        return reverse("cube:license_update", args=[self.license.pk])
+
 
 class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     permission_required = "cube.change_license"
@@ -189,7 +192,7 @@ class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, Delet
     template_name = "cube/compatibility_confirm_delete.html"
 
     def get_success_url(self):
-        return reverse("cube:license_detail", args=[self.object.from_license.pk])
+        return reverse("cube:license_update", args=[self.object.from_license.pk])
 
 
 class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
