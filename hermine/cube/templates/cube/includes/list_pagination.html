@@ -1,0 +1,59 @@
+<nav class="pagination is-centered" role="navigation" aria-label="Pagination">
+  <ul class="pagination-list">
+    {% if page_obj.number > 2 %}
+      <li>
+        <a class="pagination-link"
+           href="{% querystring page=1 %}"
+           aria-label="Go to first page"
+        >
+          1
+        </a>
+      </li>
+    {% endif %}
+    {% if page_obj.number > 3 %}
+      <li class="mt-0">
+        <span class="pagination-ellipsis">&hellip;</span>
+      </li>
+    {% endif %}
+    {% if page_obj.has_previous %}
+      <li class="mt-0">
+        <a class="pagination-link"
+           href="{% querystring page=page_obj.previous_page_number %}"
+           aria-label="Go to page {{ page_obj.previous_page_number }}"
+        >
+          {{ page_obj.previous_page_number }}
+        </a>
+      </li>
+    {% endif %}
+    <li class="mt-0">
+      <a class="pagination-link is-current" aria-label="Page {{ page_obj.number }}" aria-current="page">
+        {{ page_obj.number }}
+      </a>
+    </li>
+    {% if page_obj.has_next %}
+      <li class="mt-0">
+        <a class="pagination-link"
+           href="{% querystring page=page_obj.next_page_number %}"
+           aria-label="Go to page {{ page_obj.next_page_number }}"
+        >
+          {{ page_obj.next_page_number }}
+        </a>
+      </li>
+    {% endif %}
+    {% if page_obj.number < page_obj.paginator.num_pages|add:"-2" %}
+      <li class="mt-0">
+        <span class="pagination-ellipsis">&hellip;</span>
+      </li>
+    {% endif %}
+    {% if page_obj.number < page_obj.paginator.num_pages|add:"-1" %}
+      <li class="mt-0">
+        <a class="pagination-link"
+           href="{% querystring page=page_obj.paginator.num_pages %}"
+           aria-label="Go to last page"
+        >
+          {{ page_obj.paginator.num_pages }}
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
