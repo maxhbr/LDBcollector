@@ -29,6 +29,18 @@ text = '''
 text here
 '''
 
+package = tcputils
+location = README
+text = '''
+These programs are released into the public domain.  You may do
+anything you like with them, including modifying them and selling
+the binaries without source for ridiculous amounts of money without
+saying who made them originally.
+
+However, I would be happy if you release your works with complete
+source for free use.
+'''
+
 package = python-rst2rng
 location = rst2rng/serializer.py
 text = '''
