@@ -16,9 +16,14 @@ from cube.forms.release_validation import (
     CreateLicenseChoiceForm,
 )
 from cube.models import (
+    Compatibility,
+    Generic,
     LicenseCuration,
     LicenseChoice,
+    LicensePolicy,
     Exploitation,
+    Obligation,
+    Release,
     Version,
     Usage,
     License,
@@ -380,5 +385,355 @@ class LicenseDeletePermissionTestCase(TestCase):
         # Grant permission and try again → should be 200 on GET
         perm = Permission.objects.get(codename="delete_license")
         self.user.user_permissions.add(perm)
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+
+class LicenseListViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_license_list(self):
+        url = reverse("cube:license_list")
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        self.assertContains(res, "LicenseRef-FakeLicense")
+
+    def test_license_list_filter(self):
+        url = reverse("cube:license_list") + "?spdx_id=FakeLicense"
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+
+class LicenseCreateViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_get_create_form(self):
+        url = reverse("cube:license_create")
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+    def test_create_license(self):
+        url = reverse("cube:license_create")
+        res = self.client.post(
+            url,
+            {
+                "spdx_id": "LicenseRef-NewTest-1.0",
+                "long_name": "New Test License",
+                "copyleft": "None",
+                "foss": "Yes",
+            },
+        )
+        self.assertEqual(res.status_code, 302)
+        self.assertTrue(
+            License.objects.filter(spdx_id="LicenseRef-NewTest-1.0").exists()
+        )
+
+
+class LicenseUpdateViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_get_update_form(self):
+        url = reverse("cube:license_update", kwargs={"pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+    def test_update_license(self):
+        url = reverse("cube:license_update", kwargs={"pk": 1})
+        res = self.client.post(
+            url,
+            {
+                "spdx_id": "LicenseRef-FakeLicense",
+                "long_name": "Updated Name",
+                "copyleft": "Strong",
+                "foss": "Yes",
+            },
+        )
+        self.assertEqual(res.status_code, 302)
+        lic = License.objects.get(pk=1)
+        self.assertEqual(lic.long_name, "Updated Name")
+
+    def test_duplicate_license(self):
+        url = reverse("cube:license_update", kwargs={"pk": 1})
+        original_count = License.objects.count()
+        obligation_count = Obligation.objects.filter(license_id=1).count()
+        res = self.client.post(
+            url,
+            {
+                "spdx_id": "LicenseRef-FakeLicense-Copy",
+                "long_name": "Fake License (copy)",
+                "copyleft": "None",
+                "foss": "Yes",
+                "duplicate": "1",
+            },
+        )
+        self.assertEqual(res.status_code, 302)
+        self.assertEqual(License.objects.count(), original_count + 1)
+        copy = License.objects.get(spdx_id="LicenseRef-FakeLicense-Copy")
+        self.assertEqual(copy.obligation_set.count(), obligation_count)
+
+
+class LicensePolicyUpdateViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_get_policy_form(self):
+        url = reverse("cube:license_update_policy", kwargs={"pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+    def test_update_policy(self):
+        url = reverse("cube:license_update_policy", kwargs={"pk": 1})
+        res = self.client.post(
+            url,
+            {
+                "status": "Checked",
+                "categories": "test",
+                "allowed": "always",
+                "allowed_explanation": "Allowed for testing",
+            },
+        )
+        self.assertRedirects(res, reverse("cube:license_detail", args=[1]))
+        policy = LicensePolicy.objects.get(license_id=1)
+        self.assertEqual(policy.allowed, "always")
+
+
+class LicensePrintViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_print_license_odt(self):
+        url = reverse("cube:license_print", kwargs={"pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(res["Content-Type"], "application/vnd.oasis.opendocument.text")
+        self.assertIn("attachment", res["Content-Disposition"])
+
+
+class ObligationCRUDViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_create_obligation(self):
+        url = reverse("cube:obligation_create", kwargs={"license_pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+        res = self.client.post(
+            url,
+            {
+                "name": "New Test Obligation",
+                "verbatim": "Test verbatim text",
+                "passivity": "Active",
+                "trigger_expl": "DistributionSourceDistributionNonSource",
+                "trigger_mdf": "AlteredUnmodified",
+            },
+        )
+        self.assertEqual(res.status_code, 302)
+        obligation = Obligation.objects.get(name="New Test Obligation")
+        self.assertEqual(obligation.license_id, 1)
+
+    def test_update_obligation(self):
+        obligation = Obligation.objects.filter(license_id=1).first()
+        url = reverse("cube:obligation_update", kwargs={"pk": obligation.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+        res = self.client.post(
+            url,
+            {
+                "name": obligation.name,
+                "verbatim": "Updated verbatim",
+                "passivity": "Passive",
+                "trigger_expl": obligation.trigger_expl,
+                "trigger_mdf": obligation.trigger_mdf,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:license_detail", args=[1]))
+        obligation.refresh_from_db()
+        self.assertEqual(obligation.verbatim, "Updated verbatim")
+
+    def test_delete_obligation(self):
+        obligation = Obligation.objects.filter(license_id=1).first()
+        url = reverse("cube:obligation_delete", kwargs={"pk": obligation.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+        res = self.client.post(url)
+        self.assertEqual(res.status_code, 302)
+        self.assertFalse(Obligation.objects.filter(pk=obligation.pk).exists())
+
+
+class ObligationsOrphansViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_orphan_obligations_list(self):
+        url = reverse("cube:obligations_orphans")
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+
+class CompatibilityCRUDViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_create_and_delete_compatibility(self):
+        # Create a second license to set up compatibility
+        lic2 = License.objects.create(
+            spdx_id="LicenseRef-Compat-Target",
+            long_name="Compatibility Target License",
+        )
+
+        # Create
+        url = reverse("cube:compatibility_create", kwargs={"license_pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+        res = self.client.post(
+            url,
+            {
+                "to_license": lic2.pk,
+                "direction": "A",
+            },
+        )
+        self.assertEqual(res.status_code, 302)
+        compat = Compatibility.objects.get(from_license_id=1, to_license=lic2)
+        self.assertEqual(compat.direction, "A")
+
+        # Delete
+        url = reverse(
+            "cube:compatibility_delete",
+            kwargs={"license_pk": 1, "pk": compat.pk},
+        )
+        res = self.client.post(url)
+        self.assertEqual(res.status_code, 302)
+        self.assertFalse(Compatibility.objects.filter(pk=compat.pk).exists())
+
+
+class GenericCRUDViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_generic_list(self):
+        url = reverse("cube:generic_list")
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+    def test_generic_detail(self):
+        url = reverse("cube:generic_detail", kwargs={"pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+    def test_create_generic(self):
+        url = reverse("cube:generic_create")
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+        res = self.client.post(
+            url,
+            {
+                "name": "New Test Generic",
+                "description": "Test description",
+                "in_core": True,
+                "metacategory": "Mentions",
+                "passivity": "Active",
+            },
+        )
+        self.assertEqual(res.status_code, 302)
+        self.assertTrue(Generic.objects.filter(name="New Test Generic").exists())
+
+    def test_update_generic(self):
+        url = reverse("cube:generic_update", kwargs={"pk": 1})
+        generic = Generic.objects.get(pk=1)
+        res = self.client.post(
+            url,
+            {
+                "name": generic.name,
+                "description": "Updated description",
+                "in_core": generic.in_core,
+                "metacategory": generic.metacategory,
+                "passivity": generic.passivity,
+            },
+        )
+        self.assertEqual(res.status_code, 302)
+        generic.refresh_from_db()
+        self.assertEqual(generic.description, "Updated description")
+
+
+class ReleaseDeleteViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_delete_release(self):
+        release = Release.objects.get(pk=2)
+        product_pk = release.product_id
+        url = reverse("cube:release_delete", kwargs={"pk": 2})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+        res = self.client.post(url)
+        self.assertRedirects(
+            res, reverse("cube:product_detail", kwargs={"pk": product_pk})
+        )
+        self.assertFalse(Release.objects.filter(pk=2).exists())
+
+
+class ReleaseObligationsViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_release_obligations(self):
+        url = reverse("cube:release_obligations", kwargs={"pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+
+class ReleaseGenericViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_release_generic(self):
+        url = reverse(
+            "cube:release_generic",
+            kwargs={"release_pk": 1, "generic_id": 1},
+        )
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+
+class UsageCRUDViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_get_create_usage_form(self):
+        url = reverse("cube:usage_create", kwargs={"release_pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+    def test_update_usage(self):
+        usage = Usage.objects.get(pk=1)
+        url = reverse("cube:usage_update", kwargs={"pk": usage.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+    def test_delete_usage(self):
+        usage = Usage.objects.get(pk=1)
+        url = reverse("cube:usage_delete", kwargs={"pk": usage.pk})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+        res = self.client.post(url)
+        self.assertEqual(res.status_code, 302)
+        self.assertFalse(Usage.objects.filter(pk=usage.pk).exists())
+
+
+class ScopeUsagesDeleteViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_scope_usages_delete(self):
+        url = reverse("cube:scope_usages_delete", kwargs={"release_pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+
+        res = self.client.post(url)
+        self.assertEqual(res.status_code, 302)
+        self.assertEqual(Usage.objects.filter(release_id=1).count(), 0)
+
+
+class ReleaseUpdateViewTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_get_release_update_form(self):
+        url = reverse("cube:release_update", kwargs={"pk": 1})
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
