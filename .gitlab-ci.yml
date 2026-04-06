@@ -32,6 +32,7 @@ tests:
   stage: test
   rules:
     - if: "$CI_PIPELINE_SOURCE == 'merge_request_event'"
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
   script:
     - apk --no-cache add curl
     - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev
@@ -54,7 +55,15 @@ tests:
     - poetry run djhtml cube/templates/ --check
     - poetry run python manage.py collectstatic --noinput
     - poetry run python manage.py makemigrations | grep "No changes detected" || (echo "Migrations are not up to date" && exit 1)
-    - poetry run python manage.py test
+    - poetry run coverage run manage.py test
+    - poetry run coverage report
+    - poetry run coverage xml
+  coverage: '/^TOTAL\s+.*\s+(\d+%)$/'
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: hermine/coverage.xml
 
 pages:
   stage: production
