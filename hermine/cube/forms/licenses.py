@@ -87,6 +87,31 @@ class LicenseForm(FieldsetFormMixin, ModelForm):
         }
 
 
+class GenericForm(FieldsetFormMixin, ModelForm):
+    fieldsets = [
+        (
+            "General characteristics",
+            {"fields": ["name", "description", "metacategory", "passivity"]},
+        ),
+        (
+            "Internal policy",
+            {"fields": ["internal_process", "in_core", "team"]},
+        ),
+    ]
+
+    class Meta:
+        model = Generic
+        fields = [
+            "name",
+            "description",
+            "metacategory",
+            "passivity",
+            "internal_process",
+            "in_core",
+            "team",
+        ]
+
+
 class ObligationGenericDiffForm(ModelForm):
     generic = ModelChoiceField(queryset=Generic.objects.all(), to_field_name="name")
 

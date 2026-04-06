@@ -278,7 +278,7 @@ class Generic(models.Model):
     objects = GenericManager()
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated = models.DateTimeField(auto_now=True, null=True, blank=True)
-    PASSIVITY_CHOICES = [("Active", "Active"), ("Passive", "Passive")]
+    PASSIVITY_CHOICES = [("Active", "Active (DO)"), ("Passive", "Passive (DON'T)")]
     METAGATEGORY_CHOICES = [
         ("Communication", "Communication constraints"),
         ("IPManagement", "IP management"),
@@ -291,29 +291,50 @@ class Generic(models.Model):
     name = models.CharField(
         max_length=200,
         unique=True,
-        help_text="Short description of the compliance action. Unique.",
+        help_text="The name of the action to perform.",
     )
     description = models.TextField(
-        max_length=2500, blank=True, help_text="Longer description, optional."
-    )
-    in_core = models.BooleanField(
-        default=False,
-        help_text="If True, means this compliance action is assumed to systematically fit to the enterprise policy. "
-        "Otherwise, means it has to be manually checked.",
+        max_length=2500,
+        blank=True,
+        help_text="What needs to be done, or not done, to be compliant.",
     )
     metacategory = models.CharField(
+        "Category",
         max_length=40,
         choices=METAGATEGORY_CHOICES,
         blank=True,
-        help_text="A category of compliance action.",
+        help_text="Select the category of compliance.",
     )
-    team = models.ForeignKey(Team, on_delete=models.SET_NULL, null=True, blank=True)
     passivity = models.CharField(
+        "Action type",
         max_length=20,
         choices=PASSIVITY_CHOICES,
         blank=True,
-        help_text="A compliance action needs to conduct some kind of action"
-        "(Active) or NOT to do specific things (Passive)",
+        help_text='The action can be "Active" (you SHOULD perform some action) '
+        'or "Passive" (you SHOULD NOT do something)',
+    )
+
+    internal_process = models.TextField(
+        max_length=2500,
+        blank=True,
+        help_text="Define the specific actions to take in your organization related to the compliance action.",
+    )
+    in_core = models.BooleanField(
+        "Included by default",
+        default=False,
+        choices=[
+            (True, "Yes (no action required)"),
+            (False, "No (action required)"),
+        ],
+        help_text="If selected, this compliance action is part of the core policy of your organization, and no further action is required.",
+    )
+    team = models.ForeignKey(
+        Team,
+        verbose_name="Team",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        help_text="The team in charge for this compliance action.",
     )
 
     @cached_property

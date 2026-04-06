@@ -34,6 +34,7 @@ from cube.filters import LicenseFilter
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
 from cube.forms.licenses import (
     LicenseForm,
+    GenericForm,
     ObligationForm,
     CompatibilityForm,
     ObligationGenericDiffForm,
@@ -573,7 +574,7 @@ class GenericCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
     permission_required = "cube.add_generic"
     model = Generic
     template_name = "cube/generic_create.html"
-    fields = "__all__"
+    form_class = GenericForm
 
     def get_success_url(self):
         return reverse("cube:generic_detail", args=[self.object.id])
@@ -583,7 +584,7 @@ class GenericUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     permission_required = "cube.change_generic"
     model = Generic
     template_name = "cube/generic_update.html"
-    fields = "__all__"
+    form_class = GenericForm
 
     def get_success_url(self):
         return reverse("cube:generic_detail", args=[self.object.id])
