@@ -13,7 +13,7 @@ obligations = []
 
 for filename in os.listdir("./generics"):
     if filename.endswith(".json"):
-        file = open("./generics/" + filename, "r")
+        file = open("./generics/" + filename, "r", encoding="utf8")
         generic_fields = json.load(file)
         objects.append(
             {
@@ -29,7 +29,7 @@ for filename in os.listdir("./generics"):
 
 for filename in os.listdir("./licenses"):
     if filename.endswith(".json"):
-        file = open("./licenses/" + filename, "r")
+        file = open("./licenses/" + filename, "r", encoding="utf8")
         license_fields = json.load(file)
         obligations.extend(license_fields["obligations"])
         del license_fields["obligations"]

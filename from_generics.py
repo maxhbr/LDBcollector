@@ -17,7 +17,7 @@ TMP_DIR_PATH = "./tmp_generics/"
 if not os.path.exists(TMP_DIR_PATH):
     os.makedirs(TMP_DIR_PATH)
 
-with open("generics.json") as source_file:
+with open("generics.json", encoding="utf-8") as source_file:
     data = json.load(source_file)
 
 
@@ -40,5 +40,6 @@ for generic in generics:
     filename = unicodedata.normalize("NFKD", generic["name"])
     filename = re.sub(r"[^\w\s-]", "", filename).strip().lower()
     filename = re.sub(r"[-\s]+", "-", filename)
-    file = open(TMP_DIR_PATH + filename + ".json", "w")
+    file = open(TMP_DIR_PATH + filename + ".json", "w", encoding="utf-8")
     json.dump(generic, file, indent=2)
+    file.close()

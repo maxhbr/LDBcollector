@@ -14,6 +14,7 @@ LICENSE_SHARED_FIELDS = (
     "liability",
     "warranty",
     "law_choice",
+    "venue_choice",
     "comment",
     "verbatim",
 )

@@ -8,8 +8,8 @@ import unicodedata
 
 from common import LICENSE_SHARED_FIELDS, GENERIC_SHARED_FIELDS
 
-f = open("dist/shared.json", "r")
-data = json.load(f)
+with open("dist/shared.json", "r", encoding="utf8") as f:
+    data = json.load(f)
 
 licenses = {}
 obligations = []

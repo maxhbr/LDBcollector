@@ -15,15 +15,23 @@ TMP_DIR_PATH = "./tmp_licenses/"
 if not os.path.exists(TMP_DIR_PATH):
     os.makedirs(TMP_DIR_PATH)
 
-with open("licenses.json") as source_file:
+with open("licenses.json", encoding="utf-8") as source_file:
     data = json.load(source_file)
 
 
 licenses = {}
 obligations = []
 
+license_checked = set()
+
+# Get all licenses with status checked
 for obj in data:
-    if obj["model"] == "cube.license":
+    if obj["model"] == "cube.licensepolicy":
+        if obj["fields"]["status"].lower() == "checked":
+            license_checked.update(obj["fields"]["license"])
+
+for obj in data:
+    if obj["model"] == "cube.license" and obj["fields"]["spdx_id"] in license_checked:
         licenses[obj["fields"]["spdx_id"]] = {
             key: value
             for key, value in obj["fields"].items()
@@ -31,9 +39,12 @@ for obj in data:
         }
         licenses[obj["fields"]["spdx_id"]]["obligations"] = []
 
-    if obj["model"] == "cube.obligation":
-        obligations.append(obj["fields"])
+    if obj["model"] == "cube.obligation" and any(licens in license_checked for licens in obj["fields"]["license"]):
+        license_fields = obj["fields"]
+        license_fields["license"] = [licens for licens in obj["fields"]["license"] if licens in license_checked]
+        obligations.append(license_fields)
 
+print("licenses with status checked: ", len(license_checked))
 print("licenses: ", len(licenses))
 print("obligations: ", len(obligations))
 
@@ -42,5 +53,6 @@ for obligation in obligations:
     licenses[spdx_id]["obligations"].append(obligation)
 
 for spdx_id, license_fields in licenses.items():
-    file = open(TMP_DIR_PATH + spdx_id + ".json", "w")
+    file = open(TMP_DIR_PATH + spdx_id + ".json", "w", encoding="utf-8")
     json.dump(license_fields, file, indent=4)
+    file.close()
