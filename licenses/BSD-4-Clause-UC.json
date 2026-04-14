@@ -1,0 +1,74 @@
+{
+    "spdx_id": "BSD-4-Clause-UC",
+    "long_name": "BSD-4-Clause (University of California-Specific)",
+    "steward": "",
+    "copyleft": "None",
+    "url": "http://www.freebsd.org/copyright/license.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "This is the same license as the BSD-4-Clause, but with a copyright notice for the Regents of the University of California. Captures the retroactive deletion of the third (advertising) clause of the Original BSD license for BSD-licensed code developed by UC Berkeley and its contributors (see ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "BSD-4-Clause-UC"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-4-Clause-UC"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-4-Clause-UC"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "4. Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-4-Clause-UC"
+            ],
+            "generic": [
+                "Add specific mentions in advertising"
+            ],
+            "name": "Display acknowledgment in advertising mentionning features",
+            "verbatim": "3. All advertising materials mentioning features or use of this software must display the following acknowledgement: This product includes software developed by the University of California, Berkeley and its contributors.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

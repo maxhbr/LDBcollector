@@ -1,0 +1,74 @@
+{
+    "spdx_id": "AMPAS",
+    "long_name": "Academy of Motion Picture Arts and Sciences BSD",
+    "steward": "Academy of Motion Picture Arts and Sciences",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "State of California",
+    "venue_choice": "State of California",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "AMPAS"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Acceptance to retain the copyright notice,",
+            "verbatim": "* Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "AMPAS"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce the above copyright notice in the documentation",
+            "verbatim": "* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "AMPAS"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "Respect trademarks",
+            "verbatim": "* Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "AMPAS"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "Interdiction to use AMPAS to endorse or promote products derived",
+            "verbatim": "Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

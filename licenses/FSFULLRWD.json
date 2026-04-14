@@ -1,0 +1,35 @@
+{
+    "spdx_id": "FSFULLRWD",
+    "long_name": "FSF Unlimited License (With License Retention and Warranty Disclaimer)",
+    "steward": "Free Software Foundation, Inc.",
+    "copyleft": "None",
+    "url": "https://spdx.org/licenses/FSFULLRWD.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Partial",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "FSFULLRWD"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve license in source code",
+            "verbatim": "This Makefile.in is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it, with or without modifications, as long as this notice is preserved.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

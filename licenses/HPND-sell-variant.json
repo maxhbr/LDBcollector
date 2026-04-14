@@ -1,0 +1,61 @@
+{
+    "spdx_id": "HPND-sell-variant",
+    "long_name": "Historical Permission Notice and Disclaimer - sell variant",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://spdx.org/licenses/HPND-sell-variant.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "Variant of HPND license that explicitly includes the permission to sell the software,",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "HPND-sell-variant"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce licence and legal mentions in documentation",
+            "verbatim": "and that both that copyright notice and this permission notice appear in supporting documentation",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "HPND-sell-variant"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "provided that the above copyright notice appears in all copies",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "HPND-sell-variant"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "Do not use project or contributor names for endorsement or promotion",
+            "verbatim": "and that the name of <copyright holder> <or related entities> is not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

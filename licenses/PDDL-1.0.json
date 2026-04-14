@@ -1,0 +1,46 @@
+{
+    "spdx_id": "PDDL-1.0",
+    "long_name": "ODC Public Domain Dedication & License 1.0",
+    "steward": "",
+    "copyleft": "None",
+    "url": "http://opendatacommons.org/licenses/pddl/1.0/",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "No",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "For databases",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "PDDL-1.0"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "Respect trademarks",
+            "verbatim": "2.2 Rights not covered.[...]\r\nc. This Document does not cover any trade marks associated with the Database. Please see Section 4.3 later in this Document for further details.\r\nUsers of this Database are cautioned that they may have to clear other rights or consult other licences.\r\n\r\n4.3  Relationship to trade marks. This Document does not grant You a licence for any trade marks that the Rightsholder may own or that the Rightsholder may use to cover the Work. Users of this Database are cautioned that they may have to clear other rights or consult other licences.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "PDDL-1.0"
+            ],
+            "generic": null,
+            "name": "Respect moral rights",
+            "verbatim": "3.4 Moral rights. This section covers moral rights, including the right to be identified as the author of the Work or to object to treatment that would otherwise prejudice the author's honour and reputation, or any other derogatory treatment:\r\na. For jurisdictions allowing waiver of moral rights, Licensor waives all moral rights that Licensor may have in the Work to the fullest extent possible by the law of the relevant jurisdiction under Section 6.4;\r\nb. If waiver of moral rights under Section 3.4 a in the relevant jurisdiction is not possible, Licensor agrees not to assert any moral rights over the Work and waives all claims in moral rights to the fullest extent possible by the law of the relevant jurisdiction under Section 6.4; and\r\nc. For jurisdictions not allowing waiver or an agreement not to assert moral rights under Section 3.4 a and b, the author may retain their moral rights over the copyrighted aspects of the Work.\r\nPlease note that some jurisdictions do not allow for the waiver of moral rights, and so moral rights may still subsist over the work in some jurisdictions.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

@@ -23,23 +23,10 @@
                 "SISSL"
             ],
             "generic": [
-                "Add specific mentions in the source code"
-            ],
-            "name": "Exhibit A in source code or documentation",
-            "verbatim": "3.2 Required Notices . You must duplicate the notice in Exhibit A in each file of the Source Code. If it is not possible to put such notice in a particular Source Code file due to its structure, then You must include such notice in a location (such as a relevant directory) where a user would be likely to look for such a notice. If You created one or more Modification(s) You may add Your name as a Contributor to the notice described in Exhibit A. You must also duplicate this License in any documentation for the Source Code where You describe recipients' rights or ownership rights relating to Initial Code. \r\n[...]\r\nEXHIBIT A - Sun Standards License\r\n\"The contents of this file are subject to the Sun Standards License Version 1.1 (the \"License\"); You may not use this file except in compliance with the License. You may obtain a copy of the License at _______________________________.\r\nSoftware distributed under the License is distributed on an \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, either \r\nexpress or implied. See the License for the specific language governing rights and limitations under the License. \r\nThe Original Code is ______________________________________.\r\nThe Initial Developer of the Original Code is: Sun Microsystems, Inc..\r\nPortions created by: _______________________________________\r\nare Copyright (C): _______________________________________\r\nAll Rights Reserved.\r\nContributor(s): _______________________________________",
-            "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
-        },
-        {
-            "license": [
-                "SISSL"
-            ],
-            "generic": [
                 "Add specific legal mentions in the documentation"
             ],
-            "name": "Add license notice in documentation",
-            "verbatim": "3.3. [...] and if You include a notice stating that the Source Code version of the Original Code is available under the terms of this License. The notice must be conspicuously included in any notice in an Executable or Source versions, related documentation or collateral in which You describe recipients' rights relating to the Original Code.",
+            "name": "Information about other license",
+            "verbatim": "3.3. [...] If You distribute the Executable and Source versions under a different license You must make it absolutely clear that any terms which differ from this License are offered by You alone, not by the Initial Developer. [...]",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
@@ -64,8 +51,21 @@
             "generic": [
                 "Add specific legal mentions in the documentation"
             ],
-            "name": "Information about other license",
-            "verbatim": "3.3. [...] If You distribute the Executable and Source versions under a different license You must make it absolutely clear that any terms which differ from this License are offered by You alone, not by the Initial Developer. [...]",
+            "name": "Add license notice in documentation",
+            "verbatim": "3.3. [...] and if You include a notice stating that the Source Code version of the Original Code is available under the terms of this License. The notice must be conspicuously included in any notice in an Executable or Source versions, related documentation or collateral in which You describe recipients' rights relating to the Original Code.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "SISSL"
+            ],
+            "generic": [
+                "Add specific mentions in the source code"
+            ],
+            "name": "Exhibit A in source code or documentation",
+            "verbatim": "3.2 Required Notices . You must duplicate the notice in Exhibit A in each file of the Source Code. If it is not possible to put such notice in a particular Source Code file due to its structure, then You must include such notice in a location (such as a relevant directory) where a user would be likely to look for such a notice. If You created one or more Modification(s) You may add Your name as a Contributor to the notice described in Exhibit A. You must also duplicate this License in any documentation for the Source Code where You describe recipients' rights or ownership rights relating to Initial Code. \r\n[...]\r\nEXHIBIT A - Sun Standards License\r\n\"The contents of this file are subject to the Sun Standards License Version 1.1 (the \"License\"); You may not use this file except in compliance with the License. You may obtain a copy of the License at _______________________________.\r\nSoftware distributed under the License is distributed on an \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, either \r\nexpress or implied. See the License for the specific language governing rights and limitations under the License. \r\nThe Original Code is ______________________________________.\r\nThe Initial Developer of the Original Code is: Sun Microsystems, Inc..\r\nPortions created by: _______________________________________\r\nare Copyright (C): _______________________________________\r\nAll Rights Reserved.\r\nContributor(s): _______________________________________",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
@@ -101,19 +101,6 @@
                 "SISSL"
             ],
             "generic": [
-                "Weak Copyleft"
-            ],
-            "name": "Weak copyleft (in the event that the Modifications do not meet Standard requirements)",
-            "verbatim": "3.1 Application of License. The Source Code version of Original Code may be distributed only under the terms of this License or a future version of this License released under Section 6.1, and You must include a copy of this License with every copy of the Source Code You distribute. You may not offer or impose any terms on any Source Code version that alters or restricts the applicable version of this License or the recipients' rights hereunder. Your license for shipment of the Contributor Version is conditioned upon Your full compliance with this Section. The Modifications which You create must comply with all requirements set out by the Standards body in effect one hundred twenty (120) days before You ship the Contributor Version. In the event that the Modifications do not meet such requirements, You agree to publish either (i) any deviation from the Standards protocol resulting from implementation of Your Modifications and a reference implementation of Your Modifications or (ii) Your Modifications in Source Code form, and to make any such deviation and reference implementation or Modifications available to all third parties under the same terms as this license on a royalty free basis within thirty (30) days of Your first customer shipment of Your Modifications.",
-            "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "Altered"
-        },
-        {
-            "license": [
-                "SISSL"
-            ],
-            "generic": [
                 "Inability to Comply Due to Statute or Regulation"
             ],
             "name": "Explain Inability to Comply Due to Statute or Regulation.",
@@ -121,6 +108,19 @@
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "SISSL"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak copyleft (in the event that the Modifications do not meet Standard requirements)",
+            "verbatim": "3.1 Application of License. The Source Code version of Original Code may be distributed only under the terms of this License or a future version of this License released under Section 6.1, and You must include a copy of this License with every copy of the Source Code You distribute. You may not offer or impose any terms on any Source Code version that alters or restricts the applicable version of this License or the recipients' rights hereunder. Your license for shipment of the Contributor Version is conditioned upon Your full compliance with this Section. The Modifications which You create must comply with all requirements set out by the Standards body in effect one hundred twenty (120) days before You ship the Contributor Version. In the event that the Modifications do not meet such requirements, You agree to publish either (i) any deviation from the Standards protocol resulting from implementation of Your Modifications and a reference implementation of Your Modifications or (ii) Your Modifications in Source Code form, and to make any such deviation and reference implementation or Modifications available to all third parties under the same terms as this license on a royalty free basis within thirty (30) days of Your first customer shipment of Your Modifications.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
         },
         {
             "license": [

@@ -1,0 +1,48 @@
+{
+    "spdx_id": "Afmparse",
+    "long_name": "Afmparse License",
+    "steward": "Adobe Systems Incorporated",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/Afmparse",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Afmparse"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "1) This entire notice continues to be included in the file,",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Afmparse"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Track and mention modifications in the source code",
+            "verbatim": "2) If the file has been modified in any way, a notice of such modification is conspicuously indicated.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        }
+    ]
+}

@@ -36,12 +36,12 @@
                 "OSL-3.0"
             ],
             "generic": [
-                "Do not enforce patent rights (Patent peace)"
+                "Strong Copyleft"
             ],
-            "name": "Termination for Patent Action.",
-            "verbatim": "10) Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License as of the date You commence an action, including a cross-claim or counterclaim, against Licensor or any licensee alleging that the Original Work infringes a patent. This termination provision shall not apply for an action alleging patent infringement by combinations of the Original Work with other software or hardware.",
-            "passivity": "Passive",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "name": "Network Strong Coplyleft",
+            "verbatim": "1.  b) to translate, adapt, alter, transform, modify, or arrange the Original Work, thereby creating derivative works (\"Derivative Works\") based upon the Original Work;\r\nc) to distribute or communicate copies of the Original Work and Derivative Works to the public, with the proviso that copies of Original Work or Derivative Works that You distribute or communicate shall be licensed under this Open Software License;\r\n5) External Deployment. The term \"External Deployment\" means the use, distribution, or communication of the Original Work or Derivative Works in any way such that the Original Work or Derivative Works may be used by anyone other than You, whether those works are distributed or communicated to those persons or made available as an application intended for use over a network. As an express condition for the grants of license hereunder, You must treat any External Deployment by You of the Original Work or a Derivative Work as a distribution under section 1(c).",
+            "passivity": "Active",
+            "trigger_expl": "NetworkAccess",
             "trigger_mdf": "AlteredUnmodified"
         },
         {
@@ -49,12 +49,12 @@
                 "OSL-3.0"
             ],
             "generic": [
-                "Strong Copyleft"
+                "Do not enforce patent rights (Patent peace)"
             ],
-            "name": "Network Strong Coplyleft",
-            "verbatim": "1.  b) to translate, adapt, alter, transform, modify, or arrange the Original Work, thereby creating derivative works (\"Derivative Works\") based upon the Original Work;\r\nc) to distribute or communicate copies of the Original Work and Derivative Works to the public, with the proviso that copies of Original Work or Derivative Works that You distribute or communicate shall be licensed under this Open Software License;\r\n5) External Deployment. The term \"External Deployment\" means the use, distribution, or communication of the Original Work or Derivative Works in any way such that the Original Work or Derivative Works may be used by anyone other than You, whether those works are distributed or communicated to those persons or made available as an application intended for use over a network. As an express condition for the grants of license hereunder, You must treat any External Deployment by You of the Original Work or a Derivative Work as a distribution under section 1(c).",
-            "passivity": "Active",
-            "trigger_expl": "NetworkAccess",
+            "name": "Termination for Patent Action.",
+            "verbatim": "10) Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License as of the date You commence an action, including a cross-claim or counterclaim, against Licensor or any licensee alleging that the Original Work infringes a patent. This termination provision shall not apply for an action alleging patent infringement by combinations of the Original Work with other software or hardware.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
         {

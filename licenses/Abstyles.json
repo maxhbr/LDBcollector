@@ -2,7 +2,7 @@
     "spdx_id": "Abstyles",
     "long_name": "Abstyles License",
     "steward": "",
-    "copyleft": "None",
+    "copyleft": "Strong",
     "url": "https://fedoraproject.org/wiki/Licensing/Abstyles",
     "osi_approved": false,
     "fsf_approved": null,
@@ -43,6 +43,19 @@
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Abstyles"
+            ],
+            "generic": [
+                "Strong Copyleft"
+            ],
+            "name": "Strong Copyleft",
+            "verbatim": "[...] provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
         }
     ]
 }

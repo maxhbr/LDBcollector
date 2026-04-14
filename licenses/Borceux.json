@@ -1,0 +1,21 @@
+{
+    "spdx_id": "Borceux",
+    "long_name": "Borceux license",
+    "steward": "Francis Borceux",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/Borceux",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Absent",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": []
+}

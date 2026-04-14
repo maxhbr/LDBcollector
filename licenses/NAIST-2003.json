@@ -1,0 +1,59 @@
+{
+    "spdx_id": "NAIST-2003",
+    "long_name": "Nara Institute of Science and Technology License (2003)",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text",
+    "osi_approved": null,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "NAIST-2003"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "must include both the above copyright notice and the following\r\nparagraphs.\r\n[...]\r\nPROVIDED that the provisions of Section 3 (\"NO WARRANTY\") will ALWAYS appear on, or be attached to, the Program, which is distributed substantially in the same form as set out herein",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NAIST-2003"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "must include both the above copyright notice and the following\r\nparagraphs.\r\n[...]\r\nPROVIDED that the provisions of Section 3 (\"NO WARRANTY\") will ALWAYS appear on, or be attached to, the Program, which is distributed substantially in the same form as set out herein",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "NAIST-2003"
+            ],
+            "generic": null,
+            "name": "Respect applicable laws",
+            "verbatim": "and that such intended distribution, if actually made, will neither violate or otherwise contravene any of the laws and regulations of the countries having\r\njurisdiction over the User or the intended distribution itself.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}
