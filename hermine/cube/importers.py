@@ -350,7 +350,10 @@ def import_cyclonedx_file(
 ):
     json_validator = JsonStrictValidator(SchemaVersion.V1_6)
     cyclonedx_file_content = cyclonedx_file.read()
-    parsed_json = json.loads(cyclonedx_file_content)
+    try:
+        parsed_json = json.loads(cyclonedx_file_content)
+    except json.JSONDecodeError as e:
+        raise SBOMImportFailure(f"Could not parse CycloneDX file. {e}")
     raw_purls = _strip_invalid_purls(parsed_json)
     cleaned_content = json.dumps(parsed_json)
     validation_errors = json_validator.validate_str(cleaned_content)
