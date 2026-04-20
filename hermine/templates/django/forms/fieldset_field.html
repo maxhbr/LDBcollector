@@ -1,0 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2026 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{% if field.label %}{{ field.label_tag }}{% endif %}
+{% if field.help_text %}<p class="helptext help"{% if field.auto_id %} id="{{ field.auto_id }}_helptext"{% endif %}>{{ field.help_text|safe }}</p>{% endif %}
+<div class="control">
+  {{ field }}
+</div>
+{{ field.errors }}

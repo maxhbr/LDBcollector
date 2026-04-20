@@ -70,21 +70,46 @@ class License(models.Model):
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated = models.DateTimeField(auto_now=True, null=True, blank=True)
     spdx_id = models.CharField(
-        "SPDX Identifier", max_length=200, unique=True, validators=[validate_spdx_id]
+        "SPDX Identifier",
+        help_text="The SPDX identifier can be found on the spdx.org website",
+        max_length=200,
+        unique=True,
+        validators=[validate_spdx_id],
     )
     long_name = models.CharField("Name", max_length=200, blank=True)
-    steward = models.CharField(max_length=200, blank=True)
-    copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
-    url = models.URLField(max_length=200, blank=True)
-    osi_approved = models.BooleanField(null=True, verbose_name="OSI Approved")
-    fsf_approved = models.BooleanField(null=True, verbose_name="FSF Approved")
-    foss = models.CharField(
-        "Actually FOSS", max_length=20, choices=FOSS_CHOICES, blank=True
+    steward = models.CharField(
+        max_length=200,
+        blank=True,
+        help_text="The organization supporting the development of this license",
     )
-    patent_grant = models.BooleanField(null=True)
+    copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
+    url = models.URLField(
+        max_length=200, blank=True, help_text="The link to the official license"
+    )
+    osi_approved = models.BooleanField(null=True, verbose_name="Approved by OSI")
+    fsf_approved = models.BooleanField(null=True, verbose_name="Approved by FSF")
+    foss = models.CharField(
+        "FOSS Status",
+        max_length=20,
+        choices=FOSS_CHOICES,
+        blank=True,
+        help_text="Whether this license is considered Free/Open Source",
+    )
+    patent_grant = models.BooleanField(
+        null=True,
+        help_text="Whether the license includes a patent grant clause",
+    )
     ethical_clause = models.BooleanField(null=True)
-    non_commercial = models.BooleanField("Only non-commercial use", null=True)
-    non_tivoisation = models.BooleanField(null=True)
+    non_commercial = models.BooleanField(
+        "Commercial use",
+        null=True,
+        blank=True,
+        choices=((None, "Unknown"), (True, "Disallowed"), (False, "Allowed")),
+    )
+    non_tivoisation = models.BooleanField(
+        null=True,
+        help_text="Whether the license forbid inclusion of the software in hardware that prevents users from running modified versions",
+    )
     liability = models.CharField(
         "Limitation of Liability", max_length=30, choices=LIABILITY_CHOICES, blank=True
     )
@@ -102,11 +127,7 @@ class License(models.Model):
         blank=True,
         help_text="This field will be included when exporting license for public sharing",
     )
-    verbatim = models.TextField(
-        "Exact text of the license",
-        blank=True,
-        help_text="Only necessary if the license has no official SPDX ID",
-    )
+    verbatim = models.TextField("Exact text of the license", blank=True)
     objects = LicenseManager()
 
     def natural_key(self):

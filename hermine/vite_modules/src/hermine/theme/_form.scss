@@ -1,9 +1,4 @@
 .field {
-  &.has-check {
-    .field-body {
-      margin-top: $default-padding * .125;
-    }
-  }
   .control {
     .mdi-24px.mdi-set, .mdi-24px.mdi:before {
       font-size: inherit;
@@ -49,6 +44,17 @@
   }
 }
 
+.card .field.bulma:not(.is-horizontal) {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .helptext {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
 .field.bulma.bulma-error {
   input, select, .help {
     @extend .is-danger
@@ -86,6 +92,39 @@
         max-height: 27px;
       }
     }
+  }
+}
+
+/**
+  Form sections for grouped forms (e.g. license create/edit)
+ */
+
+.form-section {
+  margin-bottom: $default-padding;
+
+  &[open] .form-section-toggle::before {
+    content: "- ";
+  }
+}
+
+.form-section-toggle {
+  cursor: pointer;
+  color: $link;
+  font-weight: 600;
+  padding: $default-padding * .25 0;
+  margin-top: $default-padding * .25;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::before {
+    content: "+ ";
+  }
+
+  &:hover {
+    color: $link-hover;
   }
 }
 

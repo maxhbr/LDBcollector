@@ -23,19 +23,58 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
-  <form method="post">
+  <form id="license-form" method="post" style="max-width: 50rem">
     {% csrf_token %}
-    {{ form }}
-    <div class="field is-horizontal">
-      <div class="field-label"></div>
-      <div class="field-body">
-        <div class="field">
-          <div class="control">
-            <button type="submit" class="button is-primary">{{ label|default:"Save" }}</button>
-            <button type="submit" class="button" name="duplicate">Save as new (duplicate)</button>
+    {{ form.errors }}
+    {% for title, group_fields, collapsible_sections in form.fieldset_groups %}
+      {% include "django/forms/fieldset_card.html" %}
+      {% if title == "Usage" %}
+        <section class="card mb-5">
+          <header class="card-header">
+            <p class="card-header-title">Explicit compatibilities</p>
+          </header>
+          <div class="card-content">
+            <div class="tags">
+              {% for compatibility in object.compatibility_from.all %}
+                <span class="tag {{ compatibility.to_license|licenseAllowedCSS }}">
+                  {{ compatibility.to_license.spdx_id }}
+                  ({{ compatibility.get_direction_display }})&nbsp;<a href="{% url 'cube:compatibility_delete' license.pk compatibility.pk %}" class="delete"></a>
+                </span>
+              {% empty %}
+                <span class="has-text-grey">No compatibilities defined.</span>
+              {% endfor %}
+            </div>
+            <a href="{% url 'cube:compatibility_create' license.pk %}" class="button is-small is-white">
+              <i class="fa fa-plus"></i>&nbsp;Add
+            </a>
           </div>
-        </div>
+        </section>
+      {% endif %}
+    {% endfor %}
+    {% for field in form.hidden_fields %}{{ field }}{% endfor %}
+    {{ form.media }}
+    <div class="field is-grouped is-grouped-right mt-4">
+      <div class="control">
+        <a class="button" href="{% url "cube:license_detail" license.id %}">Cancel</a>
+      </div>
+      <div class="control">
+        <button type="submit" class="button" name="duplicate">Save as new (duplicate)</button>
+      </div>
+      <div class="control">
+        <button type="submit" class="button is-primary">Save</button>
       </div>
     </div>
   </form>
+  <script>
+    (function () {
+      const form = document.getElementById("license-form");
+      let dirty = false;
+      form.addEventListener("input", function () { dirty = true; });
+      form.addEventListener("change", function () { dirty = true; });
+      form.addEventListener("submit", function () { dirty = false; });
+      window.addEventListener("beforeunload", function (e) {
+        if (dirty) { e.preventDefault(); e.returnValue = ""; }
+      });
+    })();
+  </script>
 {% endblock %}

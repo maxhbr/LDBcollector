@@ -32,8 +32,10 @@ from odf.text import H, P, Span
 
 from cube.filters import LicenseFilter
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
-from cube.forms.licenses import ObligationForm, CompatibilityForm
 from cube.forms.licenses import (
+    LicenseForm,
+    ObligationForm,
+    CompatibilityForm,
     ObligationGenericDiffForm,
     CopyReferenceLicensesForm,
     CopyReferenceGenericsForm,
@@ -122,7 +124,7 @@ class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
 class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = "cube.change_license"
     model = License
-    fields = LICENSE_SHARED_FIELDS
+    form_class = LicenseForm
     template_name = "cube/license_update.html"
     obligations = []
 
@@ -132,17 +134,22 @@ class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
         obj = super().get_object(queryset)
         if "duplicate" in self.request.POST:
             self.obligations = list(obj.obligation_set.all())
+            self.compatibilities = list(obj.compatibility_from.all())
             obj.pk = None
             obj.long_name = obj.long_name + " (copy)"
         return obj
 
     def form_valid(self, form):
         if "duplicate" in self.request.POST:
-            self.object.save()
+            self.object = form.save()
             for obligation in self.obligations:
                 obligation.pk = None
                 obligation.license = self.object
                 obligation.save()
+            for compat in self.compatibilities:
+                compat.pk = None
+                compat.from_license = self.object
+                compat.save()
             return redirect(self.get_success_url())
         return super().form_valid(form)
 
@@ -175,6 +182,9 @@ class CompatibilityCreateView(
     form_class = CompatibilityForm
     template_name = "cube/compatibility_create.html"
 
+    def get_success_url(self):
+        return reverse("cube:license_update", args=[self.license.pk])
+
 
 class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     permission_required = "cube.change_license"
@@ -182,30 +192,13 @@ class CompatibilityDeleteView(LoginRequiredMixin, PermissionRequiredMixin, Delet
     template_name = "cube/compatibility_confirm_delete.html"
 
     def get_success_url(self):
-        return reverse("cube:license_detail", args=[self.object.from_license.pk])
+        return reverse("cube:license_update", args=[self.object.from_license.pk])
 
 
 class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     permission_required = "cube.add_license"
     model = License
-    fields = [
-        "spdx_id",
-        "long_name",
-        "url",
-        "copyleft",
-        "law_choice",
-        "venue_choice",
-        "patent_grant",
-        "osi_approved",
-        "fsf_approved",
-        "foss",
-        "non_commercial",
-        "ethical_clause",
-        "warranty",
-        "liability",
-        "comment",
-        "verbatim",
-    ]
+    form_class = LicenseForm
     template_name = "cube/license_create.html"
 
 
