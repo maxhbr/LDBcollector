@@ -63,11 +63,28 @@ class SearchMixin:
 
 
 class CreateLicenseRelatedMixin:
+    """
+    To be used with ModelForm/CreateView on models that have a ForeignKey to License
+
+    The ForeignKey field can most of the time completely be ommited of the ModelForm
+    field list, as it is automatically added before validation by this mixin.
+
+    The only exception is if the ForeignKey field is part of a multifield constraint (like
+    unique together), in which case it should be included in the form as a hidden field
+    for model validations to run correctly.
+    """
+
     related_field_name = "license"
 
     def dispatch(self, request, *args, **kwargs):
         self.license = get_object_or_404(License, id=kwargs["license_pk"])
         return super().dispatch(request, *args, **kwargs)
+
+    def get_initial(self):
+        """
+        Only used in the hidden field case
+        """
+        return {self.related_field_name: self.license}
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

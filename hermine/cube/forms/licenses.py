@@ -2,7 +2,7 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.db import transaction
-from django.forms import ModelForm, ModelChoiceField, Form
+from django.forms import ModelForm, ModelChoiceField, Form, HiddenInput
 
 from cube.forms.mixins import AutocompleteFormMixin, FieldsetFormMixin
 from cube.forms.widgets import SpdxIdentifierWidget
@@ -233,5 +233,6 @@ class ObligationForm(AutocompleteFormMixin, ModelForm):
 class CompatibilityForm(AutocompleteFormMixin, ModelForm):
     class Meta:
         model = Compatibility
-        fields = ("to_license", "direction")
+        fields = ("from_license", "to_license", "direction")
         autocomplete_fields = ["to_license"]
+        widgets = {"from_license": HiddenInput()}
