@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import (
 )
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import ValidationError, SuspiciousOperation
+from django.core.paginator import Paginator
 from django.db.models import Count
 from django.db.models.functions import Lower
 from django.forms import modelform_factory
@@ -30,7 +31,7 @@ from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
-from cube.filters import LicenseFilter
+from cube.filters import LicenseFilter, ObligationByGenericFilter
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
 from cube.forms.licenses import (
     LicenseForm,
@@ -568,6 +569,20 @@ class GenericDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
     model = Generic
     context_object_name = "generic"
     template_name = "cube/generic_detail.html"
+    obligations_paginate_by = 20
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        obligations_qs = self.object.obligation_set.select_related("license")
+        obligation_filter = ObligationByGenericFilter(
+            self.request.GET, queryset=obligations_qs
+        )
+        paginator = Paginator(obligation_filter.qs, self.obligations_paginate_by)
+        page_number = self.request.GET.get("page")
+        context["page_obj"] = paginator.get_page(page_number)
+        context["filter"] = obligation_filter
+        context["obligations_count"] = obligations_qs.count()
+        return context
 
 
 class GenericCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
