@@ -301,6 +301,11 @@ SPDX-License-Identifier: MIT
       <section class="section is-main-section content">
         {% block content %}
         {% endblock %}
+        {% block pagination %}
+          {% if page_obj %}
+            {% include "cube/includes/list_pagination.html" %}
+          {% endif %}
+        {% endblock %}
       </section>
       <footer class="footer">
         <div class="container-fluid">
