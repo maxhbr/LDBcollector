@@ -231,7 +231,7 @@ class LicensePolicy(models.Model):
         "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True
     )
     allowed_explanation = models.TextField(
-        "OSS Policy explanation", max_length=1500, blank=True
+        "Internal comment", max_length=1500, blank=True
     )
 
     def __str__(self):
