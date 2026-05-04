@@ -49,11 +49,11 @@
                 "MS-PL"
             ],
             "generic": [
-                "Weak Copyleft"
+                "Do not enforce patent rights (Patent peace)"
             ],
-            "name": "Weak Copyleft",
-            "verbatim": "D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.",
-            "passivity": "Active",
+            "name": "Patent rights revoked if patent claim is brought",
+            "verbatim": "(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.",
+            "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
@@ -62,11 +62,11 @@
                 "MS-PL"
             ],
             "generic": [
-                "Do not enforce patent rights (Patent peace)"
+                "Weak Copyleft"
             ],
-            "name": "Patent rights revoked if patent claim is brought",
-            "verbatim": "(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.",
-            "passivity": "Passive",
+            "name": "Weak Copyleft",
+            "verbatim": "D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.",
+            "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },

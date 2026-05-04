@@ -1,0 +1,144 @@
+{
+    "spdx_id": "CC-BY-ND-4.0",
+    "long_name": "Creative Commons Attribution No Derivatives 4.0 International",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "No",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": true,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "[License for non software Work & non derivative]",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "a. Attribution.\r\n1. If You Share the Licensed Material, You must:\r\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\r\ni. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\r\nii. a copyright notice;\r\niii. a notice that refers to this Public License;\r\niv. a notice that refers to the disclaimer of warranties;\r\nv. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce license",
+            "verbatim": "Section 3 License Conditions.\r\n\r\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\r\n\r\na. Attribution.\r\n1. If You Share the Licensed Material, You must:\r\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\r\ni. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\r\nii. a copyright notice;\r\niii. a notice that refers to this Public License;\r\niv. a notice that refers to the disclaimer of warranties;\r\nv. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Mentions modifications",
+            "verbatim": "Section 3 - a. 1. B. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": [
+                "Do not restrict the rights of the license"
+            ],
+            "name": "Do not restrict the rights of the license",
+            "verbatim": "Section 2 - a. 5. B. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "do not use trademark",
+            "verbatim": "Section 2 Scope - b.\r\n2. Patent and trademark rights are not licensed under this Public License.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "Do not imply any connection or endorsement with the author",
+            "verbatim": "Section 2 - a. 6. No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": null,
+            "name": "Don't make adaptions",
+            "verbatim": "Section 2 Scope.\r\n\r\na. License grant.\r\n[...]\r\n4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": null,
+            "name": "Do not impose any technological measures restricting users (DRM)",
+            "verbatim": "Section 2 - a. \r\n5. Downstream recipients.\r\nA. Offer from the Licensor \u2013 Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\r\nB. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": null,
+            "name": "Respect Database Producer Rights (Sui Generis Database Rights)",
+            "verbatim": "Section 4 Sui Generis Database Rights.\r\n\r\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\r\n\r\na. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database, provided You do not Share Adapted Material;\r\nb. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and\r\nc. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\r\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CC-BY-ND-4.0"
+            ],
+            "generic": null,
+            "name": "Respect moral rights",
+            "verbatim": "Section 2 Scope - \r\nb. Other rights.\r\n1. Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

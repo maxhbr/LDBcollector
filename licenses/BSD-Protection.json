@@ -1,0 +1,74 @@
+{
+    "spdx_id": "BSD-Protection",
+    "long_name": "BSD Protection License",
+    "steward": "",
+    "copyleft": "Strong",
+    "url": "https://fedoraproject.org/wiki/Licensing/BSD_Protection_License",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "No",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "This is a kind of anti-GPL license, with some sort of twisted copyleft clause.",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "BSD-Protection"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "2. Verbatim copies.\r\n   You may copy and distribute verbatim copies of the Program as you\r\n   receive it, in any medium, provided that you conspicuously and\r\n   appropriately publish on each copy an appropriate copyright notice;\r\n   keep intact all the notices that refer to this License and to the\r\n   absence of any warranty; and give any other recipients of the\r\n   Program a copy of this License along with the Program.\r\n\r\n3. Modification and redistribution under closed license.\r\n   You may modify your copy or copies of the Program, and distribute\r\n   the resulting derivative works, provided that you meet the\r\n   following conditions:\r\n   a) The copyright notice and disclaimer on the Program must be\r\n      reproduced and included in the source code[...].\r\n\r\n4. Modification and redistribution under open license.\r\n   You may modify your copy or copies of the Program, and distribute\r\n   the resulting derivative works, provided that you meet the\r\n   following conditions:\r\n   a) The copyright notice and disclaimer on the Program must be\r\n      reproduced and included in the source code[...].",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-Protection"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "2. Verbatim copies.\r\n   You may copy and distribute verbatim copies of the Program as you\r\n   receive it, in any medium, provided that you conspicuously and\r\n   appropriately publish on each copy an appropriate copyright notice;\r\n   keep intact all the notices that refer to this License and to the\r\n   absence of any warranty; and give any other recipients of the\r\n   Program a copy of this License along with the Program.\r\n3. Modification and redistribution under closed license.\r\n   You may modify your copy or copies of the Program, and distribute\r\n   the resulting derivative works, provided that you meet the\r\n   following conditions:\r\n   a) The copyright notice and disclaimer on the Program must be\r\n      reproduced and included in the [...] documentation, and/or\r\n      other materials provided in a manner in which such notices are\r\n      normally distributed.\r\n[...]\r\n4. Modification and redistribution under open license.\r\n   You may modify your copy or copies of the Program, and distribute\r\n   the resulting derivative works, provided that you meet the\r\n   following conditions:\r\n   a) The copyright notice and disclaimer on the Program must be\r\n      reproduced and included in the [...] documentation, and/or\r\n      other materials provided in a manner in which such notices are\r\n      normally distributed.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-Protection"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Marking modifications in source code",
+            "verbatim": "3.    b) The derivative work must be clearly identified as such, in order\r\n      that it may not be confused with the original work.\r\n\r\n4.   b) You must clearly indicate the nature and date of any changes made\r\n      to the Program.  The full details need not necessarily be\r\n      included in the individual modified files, provided that each\r\n      modified file is clearly marked as such and instructions are\r\n      included on where the full details of the modifications may be\r\n      found.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "BSD-Protection"
+            ],
+            "generic": [
+                "Strong Copyleft"
+            ],
+            "name": "Reverse Copyleft Anti-GPL",
+            "verbatim": "3.   c) The license under which the derivative work is distributed must\r\n      expressly prohibit the distribution of further derivative works.\r\n\r\n4.    c) You must cause any work that you distribute or publish, that in\r\n      whole or in part contains or is derived from the Program or any\r\n      part thereof, to be licensed as a whole at no charge to all third\r\n      parties under the terms of this License.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

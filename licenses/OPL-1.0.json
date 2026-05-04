@@ -140,23 +140,10 @@
                 "OPL-1.0"
             ],
             "generic": [
-                "Do not enforce patent rights (Patent peace)"
+                "Inform about potential additionnal IP rights"
             ],
-            "name": "Termination Upon Litigation",
-            "verbatim": "8.2. Termination Upon Litigation. If You initiate litigation by asserting a patent infringement claim (excluding declatory judgment actions) against Initial Developer or a Contributor (the Initial Developer or Contributor against whom You file such action is referred to as \"Participant\") alleging that:\r\n\r\n    (a) such Participant's Contributor Version directly or indirectly infringes any patent, then any and all rights granted by such Participant to You under Sections 2.1 and/or 2.2 of this License shall, upon 60 days notice from Participant terminate prospectively, unless if within 60 days after receipt of notice You either: (i) agree in writing to pay Participant a mutually agreeable reasonable royalty for Your past and future use of Modifications made by such Participant, or (ii) withdraw Your litigation claim with respect to the Contributor Version against such Participant. If within 60 days of notice, a reasonable royalty and payment arrangement are not mutually agreed upon in writing by the parties or the litigation claim is not withdrawn, the rights granted by Participant to You under Sections 2.1 and/or 2.2 automatically terminate at the expiration of the 60 day notice period specified above.\r\n    (b) any software, hardware, or device, other than such Participant's Contributor Version, directly or indirectly infringes any patent, then any rights granted to You by such Participant under Sections 2.1(b) and 2.2(b) are revoked effective as of the date You first made, used, sold, distributed, or had made, Modifications made by that Participant.",
-            "passivity": "Passive",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
-        },
-        {
-            "license": [
-                "OPL-1.0"
-            ],
-            "generic": [
-                "Weak Copyleft"
-            ],
-            "name": "Weak copyleft file based",
-            "verbatim": "3.1. Application of License. The Modifications which You create or to which You contribute are governed by the terms of this License, including without limitation Section 2.2. The Source Code version of Covered Code may be distributed only under the terms of this License or a future version of this License released under Section 6.1,",
+            "name": "Mention of 3rd party IP claims in LEGAL file",
+            "verbatim": "3.4. Intellectual Property Matters\r\n\r\n    (a) Third Party Claims. If You have knowledge that a party claims an intellectual property right in particular functionality or code (or its utilization under this License), you must include a text file with the source code distribution titled \"LEGAL\" which describes the claim and the party making the claim in sufficient detail that a recipient will know whom to contact. If you obtain such knowledge after You make Your Modification available as described in Section 3.2, You shall promptly modify the LEGAL file in all copies You make available thereafter and shall take other steps (such as notifying appropriate mailing lists or newsgroups) reasonably calculated to inform those who received the Covered Code that new knowledge has been obtained.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
@@ -179,11 +166,24 @@
                 "OPL-1.0"
             ],
             "generic": [
-                "Inform about potential additionnal IP rights"
+                "Weak Copyleft"
             ],
-            "name": "Mention of 3rd party IP claims in LEGAL file",
-            "verbatim": "3.4. Intellectual Property Matters\r\n\r\n    (a) Third Party Claims. If You have knowledge that a party claims an intellectual property right in particular functionality or code (or its utilization under this License), you must include a text file with the source code distribution titled \"LEGAL\" which describes the claim and the party making the claim in sufficient detail that a recipient will know whom to contact. If you obtain such knowledge after You make Your Modification available as described in Section 3.2, You shall promptly modify the LEGAL file in all copies You make available thereafter and shall take other steps (such as notifying appropriate mailing lists or newsgroups) reasonably calculated to inform those who received the Covered Code that new knowledge has been obtained.",
+            "name": "Weak copyleft file based",
+            "verbatim": "3.1. Application of License. The Modifications which You create or to which You contribute are governed by the terms of this License, including without limitation Section 2.2. The Source Code version of Covered Code may be distributed only under the terms of this License or a future version of this License released under Section 6.1,",
             "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OPL-1.0"
+            ],
+            "generic": [
+                "Do not enforce patent rights (Patent peace)"
+            ],
+            "name": "Termination Upon Litigation",
+            "verbatim": "8.2. Termination Upon Litigation. If You initiate litigation by asserting a patent infringement claim (excluding declatory judgment actions) against Initial Developer or a Contributor (the Initial Developer or Contributor against whom You file such action is referred to as \"Participant\") alleging that:\r\n\r\n    (a) such Participant's Contributor Version directly or indirectly infringes any patent, then any and all rights granted by such Participant to You under Sections 2.1 and/or 2.2 of this License shall, upon 60 days notice from Participant terminate prospectively, unless if within 60 days after receipt of notice You either: (i) agree in writing to pay Participant a mutually agreeable reasonable royalty for Your past and future use of Modifications made by such Participant, or (ii) withdraw Your litigation claim with respect to the Contributor Version against such Participant. If within 60 days of notice, a reasonable royalty and payment arrangement are not mutually agreed upon in writing by the parties or the litigation claim is not withdrawn, the rights granted by Participant to You under Sections 2.1 and/or 2.2 automatically terminate at the expiration of the 60 day notice period specified above.\r\n    (b) any software, hardware, or device, other than such Participant's Contributor Version, directly or indirectly infringes any patent, then any rights granted to You by such Participant under Sections 2.1(b) and 2.2(b) are revoked effective as of the date You first made, used, sold, distributed, or had made, Modifications made by that Participant.",
+            "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         }

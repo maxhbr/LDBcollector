@@ -1,0 +1,21 @@
+{
+    "spdx_id": "libselinux-1.0",
+    "long_name": "libselinux public domain notice",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://spdx.org/licenses/libselinux-1.0.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "Public-domain-equivalent license",
+    "verbatim": "",
+    "obligations": []
+}

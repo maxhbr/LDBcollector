@@ -1,0 +1,59 @@
+{
+    "spdx_id": "APAFML",
+    "long_name": "Adobe Postscript AFM License",
+    "steward": "Adobe Systems Incorporated",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Absent",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "[Font License]",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "APAFML"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in source code",
+            "verbatim": "[...] provided that all copyright notices are retained;\r\n\r\n[...] ; and that this paragraph is not modified.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "APAFML"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Track and mention modifications",
+            "verbatim": "[...] that all modifications to this file or any of the AFM files are prominently noted in the modified file(s);",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "APAFML"
+            ],
+            "generic": null,
+            "name": "The license file must be distributed with AFM Files",
+            "verbatim": "This file and the 14 PostScript(R) AFM files it accompanies may be used, copied, and distributed",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "spdx_id": "GD",
+    "long_name": "GD License",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://spdx.org/licenses/GD.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Partial",
+    "law_choice": "None",
+    "venue_choice": "None",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "GD"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Credit must be given in user-accessible documentation (see list below)",
+            "verbatim": "[...] provided that this notice is present in user-accessible supporting documentation. \r\n[...]\r\nCredit must be given in user-accessible documentation.\r\n\r\nCredits and license terms In order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them. \u2022 Portions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health. \u2022 Portions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc. \u2022 Portions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner. \u2022 Portions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs. \u2022 Portions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org). \u2022 Portions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org). \u2022 Portions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org). \u2022 Portions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright \u00a9 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information. \u2022 Portions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell. \u2022 Portions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell. \u2022 Portions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande. \u2022 Portions relating to GIF animations copyright 2004 Jaakko Hyv\u00e4tti (jaakko.hyvatti@iki.fi)",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

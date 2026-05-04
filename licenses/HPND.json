@@ -1,0 +1,61 @@
+{
+    "spdx_id": "HPND",
+    "long_name": "Historical Permission Notice and Disclaimer",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://opensource.org/licenses/HPND",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "HPND"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "and that both that the copyright notice and this permission notice appear in supporting documentation,",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "HPND"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": ", provided that the above copyright notice appear in all copies,",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "HPND"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "and that the name of <copyright holder> <or related entities> not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

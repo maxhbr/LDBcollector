@@ -75,10 +75,10 @@
                 "EPL-1.0"
             ],
             "generic": [
-                "Indemnify contributors against claims"
+                "License Agreement must exclude other contributors for additionnal terms"
             ],
-            "name": "Indemnification of contributors",
-            "verbatim": "4. COMMERCIAL DISTRIBUTION\r\n\r\n[....]  hereby agrees to defend and indemnify\r\nevery other Contributor (\"Indemnified Contributor\") against any losses, damages\r\nand costs (collectively \"Losses\") arising from claims, lawsuits and other\r\nlegal actions brought by a third party against the Indemnified Contributor\r\nto the extent caused by the acts or omissions of such Commercial Contributor\r\nin connection with its distribution of the Program in a commercial product\r\noffering. The obligations in this section do not apply to any claims or Losses\r\nrelating to any actual or alleged intellectual property infringement. In order\r\nto qualify, an Indemnified Contributor must: a) promptly notify the Commercial\r\nContributor in writing of such claim, and b) allow the Commercial Contributor\r\nto control, and cooperate with the Commercial Contributor in, the defense\r\nand any related settlement negotiations. The Indemnified Contributor may participate\r\nin any such claim at its own expense.",
+            "name": "License agreement disclaiming warranty and liability on behalf of other contributors",
+            "verbatim": "b. its license agreement:\r\n\r\ni. effectively disclaims on behalf of all Contributors all warranties and\r\nconditions, express and implied, including warranties or conditions of title\r\nand non-infringement, and implied warranties or conditions of merchantability\r\nand fitness for a particular purpose;\r\n\r\nii. effectively excludes on behalf of all Contributors all liability for damages,\r\nincluding direct, indirect, special, incidental and consequential damages,\r\nsuch as lost profits;",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
@@ -88,10 +88,10 @@
                 "EPL-1.0"
             ],
             "generic": [
-                "License Agreement must exclude other contributors for additionnal terms"
+                "Indemnify contributors against claims"
             ],
-            "name": "License agreement disclaiming warranty and liability on behalf of other contributors",
-            "verbatim": "b. its license agreement:\r\n\r\ni. effectively disclaims on behalf of all Contributors all warranties and\r\nconditions, express and implied, including warranties or conditions of title\r\nand non-infringement, and implied warranties or conditions of merchantability\r\nand fitness for a particular purpose;\r\n\r\nii. effectively excludes on behalf of all Contributors all liability for damages,\r\nincluding direct, indirect, special, incidental and consequential damages,\r\nsuch as lost profits;",
+            "name": "Indemnification of contributors",
+            "verbatim": "4. COMMERCIAL DISTRIBUTION\r\n\r\n[....]  hereby agrees to defend and indemnify\r\nevery other Contributor (\"Indemnified Contributor\") against any losses, damages\r\nand costs (collectively \"Losses\") arising from claims, lawsuits and other\r\nlegal actions brought by a third party against the Indemnified Contributor\r\nto the extent caused by the acts or omissions of such Commercial Contributor\r\nin connection with its distribution of the Program in a commercial product\r\noffering. The obligations in this section do not apply to any claims or Losses\r\nrelating to any actual or alleged intellectual property infringement. In order\r\nto qualify, an Indemnified Contributor must: a) promptly notify the Commercial\r\nContributor in writing of such claim, and b) allow the Commercial Contributor\r\nto control, and cooperate with the Commercial Contributor in, the defense\r\nand any related settlement negotiations. The Indemnified Contributor may participate\r\nin any such claim at its own expense.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"

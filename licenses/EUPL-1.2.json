@@ -36,19 +36,6 @@
                 "EUPL-1.2"
             ],
             "generic": [
-                "Preserve legal mentions in source code"
-            ],
-            "name": "Preserve License and notices in source code",
-            "verbatim": "5. [...]\r\nAttribution right: The Licensee shall keep intact all copyright, patent or trademarks notices and all notices that refer to the Licence and to the disclaimer of warranties. The Licensee must include a copy of such notices and a copy of the Licence with every copy of the Work he/she distributes or communicates.",
-            "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
-        },
-        {
-            "license": [
-                "EUPL-1.2"
-            ],
-            "generic": [
                 "Reproduce license and legal mentions in documentation"
             ],
             "name": "License and notices in documentation",
@@ -69,6 +56,19 @@
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "EUPL-1.2"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "5. [...]\r\nAttribution right: The Licensee shall keep intact all copyright, patent or trademarks notices and all notices that refer to the Licence and to the disclaimer of warranties. The Licensee must include a copy of such notices and a copy of the Licence with every copy of the Work he/she distributes or communicates.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
         },
         {
             "license": [
@@ -103,6 +103,19 @@
             "generic": [
                 "Strong Copyleft"
             ],
+            "name": "Strong Copyleft",
+            "verbatim": "5. Obligations of the Licensee\r\n[...]\r\n\r\nCopyleft clause: If the Licensee distributes or communicates copies of the Original Works or Derivative Works, this Distribution or Communication will be done under the terms of this Licence or of a later version of this Licence unless the Original Work is expressly distributed only under this version of the Licence \u2014 for example by communicating 'EUPL v. 1.2 only'. The Licensee (becoming Licensor) cannot offer or impose any additional terms or conditions on the Work or Derivati",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EUPL-1.2"
+            ],
+            "generic": [
+                "Strong Copyleft"
+            ],
             "name": "Strong network copyleft compatible with license listed in appendix",
             "verbatim": "1. Definitions [...]\r\n- 'Distribution' or 'Communication': any act of selling, giving, lending, renting, distributing, communicating, transmitting, or otherwise making available, online or offline, copies of the Work or providing access to its essential functionalities at the disposal of any other natural or legal person.\r\n Copyleft clause: If the Licensee distributes or communicates copies of the Original Works or Derivative Works, this Distribution or Communication will be done under the terms of this Licence or of a later version of this Licence unless the Original Work is expressly distributed only under this version of the Licence - for example by communicating 'EUPL v. 1.2 only'. The Licensee (becoming Licensor) cannot offer or impose any additional terms or conditions on the Work or Derivative Work that alter or restrict the terms of the Licence.\r\nCompatibility clause: If the Licensee Distributes or Communicates Derivative Works or copies thereof based upon both the Work and another work licensed under a Compatible Licence, this Distribution or Communication can be done under the terms of this Compatible Licence. For the sake of this clause, 'Compatible Licence' refers to the licences listed in the appendix attached to this Licence. Should the Licensee's obligations under the Compatible Licence conflict with his/her obligations under this Licence, the obligations of the Compatible Licence shall prevail.",
             "passivity": "Active",
@@ -114,11 +127,11 @@
                 "EUPL-1.2"
             ],
             "generic": [
-                "Strong Copyleft"
+                "Do not use project or contributor names for endorsement or promotion."
             ],
-            "name": "Strong Copyleft",
-            "verbatim": "5. Obligations of the Licensee\r\n[...]\r\n\r\nCopyleft clause: If the Licensee distributes or communicates copies of the Original Works or Derivative Works, this Distribution or Communication will be done under the terms of this Licence or of a later version of this Licence unless the Original Work is expressly distributed only under this version of the Licence — for example by communicating 'EUPL v. 1.2 only'. The Licensee (becoming Licensor) cannot offer or impose any additional terms or conditions on the Work or Derivati",
-            "passivity": "Active",
+            "name": "No use of names for endorsment",
+            "verbatim": "5. [...]\r\nLegal Protection: This Licence does not grant permission to use the trade names, trademarks, service marks, or names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the copyright notice.",
+            "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
@@ -131,19 +144,6 @@
             ],
             "name": "Respect trademarks",
             "verbatim": "5. [...]\r\nAttribution right: The Licensee shall keep intact all copyright, patent or trademarks notices and all notices that refer to the Licence and to the disclaimer of warranties. The Licensee must include a copy of such notices and a copy of the Licence with every copy of the Work he/she distributes or communicates. The Licensee must cause any Derivative Work to carry prominent notices stating that the Work has been modified and the date of modification.\r\n [...]\r\nLegal Protection: This Licence does not grant permission to use the trade names, trademarks, service marks, or names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the copyright notice.",
-            "passivity": "Passive",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
-        },
-        {
-            "license": [
-                "EUPL-1.2"
-            ],
-            "generic": [
-                "Do not use project or contributor names for endorsement or promotion."
-            ],
-            "name": "No use of names for endorsment",
-            "verbatim": "5. [...]\r\nLegal Protection: This Licence does not grant permission to use the trade names, trademarks, service marks, or names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the copyright notice.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"

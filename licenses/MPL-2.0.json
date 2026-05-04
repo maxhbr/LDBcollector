@@ -28,7 +28,7 @@
             "name": "Inform end user how to get CSC",
             "verbatim": "3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\n    such Covered Software must also be made available in Source Code Form, as described in Section 3.1, and You must inform recipients of the Executable Form how they can obtain a copy of such Source Code Form by reasonable means in a timely manner, at a charge no more than the cost of distribution to the recipient; and",
             "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_expl": "DistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
         {
@@ -88,19 +88,6 @@
                 "MPL-2.0"
             ],
             "generic": [
-                "Weak Copyleft"
-            ],
-            "name": "Weak Copyleft",
-            "verbatim": "3.1. Distribution of Source Form\r\n\r\nAll distribution of Covered Software in Source Code Form, including any Modifications that You create or to which You contribute, must be under the terms of this License. [...] You may not attempt to alter or restrict the recipients’ rights in the Source Code Form.\r\n\r\n3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\n[...]\r\n    You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients’ rights in the Source Code Form under this License.",
-            "passivity": "",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
-        },
-        {
-            "license": [
-                "MPL-2.0"
-            ],
-            "generic": [
                 "Do not enforce patent rights (Patent peace)"
             ],
             "name": "Patent Peace",
@@ -119,6 +106,19 @@
             "name": "Description of inability to comply",
             "verbatim": "4. Inability to Comply Due to Statute or Regulation\r\n\r\nIf it is impossible for You to comply with any of the terms of this License with respect to some or all of the Covered Software due to statute, judicial order, or regulation then You must: (a) comply with the terms of this License to the maximum extent possible; and (b) describe the limitations and the code they affect. Such description must be placed in a text file included with all distributions of the Covered Software under this License. Except to the extent prohibited by statute or regulation, such description must be sufficiently detailed for a recipient of ordinary skill to be able to understand it",
             "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "MPL-2.0"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak Copyleft",
+            "verbatim": "3.1. Distribution of Source Form\r\n\r\nAll distribution of Covered Software in Source Code Form, including any Modifications that You create or to which You contribute, must be under the terms of this License. [...] You may not attempt to alter or restrict the recipients\u2019 rights in the Source Code Form.\r\n\r\n3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\n[...]\r\n    You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients\u2019 rights in the Source Code Form under this License.",
+            "passivity": "",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },

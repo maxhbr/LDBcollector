@@ -5,7 +5,7 @@
     "copyleft": "None",
     "url": "https://creativecommons.org/licenses/by/3.0/legalcode",
     "osi_approved": false,
-    "fsf_approved": null,
+    "fsf_approved": false,
     "foss": "No",
     "patent_grant": false,
     "ethical_clause": false,
@@ -23,13 +23,13 @@
                 "CC-BY-3.0"
             ],
             "generic": [
-                "Reproduce license and legal mentions in documentation"
+                "Track and mention modifications in the source code"
             ],
-            "name": "Reproduce license",
-            "verbatim": "4.\r\na. You may Distribute or Publicly Perform the Work only under the terms of this License. You must include a copy of, or the Uniform Resource Identifier (URI) for, this License with every copy of the Work You Distribute or Publicly Perform.",
+            "name": "Mention modifications",
+            "verbatim": "3. [...]\r\nb. to create and Reproduce Adaptations provided that any such Adaptation, including any translation in any medium, takes reasonable steps to clearly label, demarcate or otherwise identify that changes were made to the original Work. For example, a translation could be marked \"The original work was translated from English to Spanish,\" or a modification could indicate \"The original work has been modified.\";",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
+            "trigger_mdf": "Altered"
         },
         {
             "license": [
@@ -49,13 +49,13 @@
                 "CC-BY-3.0"
             ],
             "generic": [
-                "Track and mention modifications in the source code"
+                "Reproduce license and legal mentions in documentation"
             ],
-            "name": "Mention modifications",
-            "verbatim": "3. [...]\r\nb. to create and Reproduce Adaptations provided that any such Adaptation, including any translation in any medium, takes reasonable steps to clearly label, demarcate or otherwise identify that changes were made to the original Work. For example, a translation could be marked \"The original work was translated from English to Spanish,\" or a modification could indicate \"The original work has been modified.\";",
+            "name": "Reproduce license",
+            "verbatim": "4.\r\na. You may Distribute or Publicly Perform the Work only under the terms of this License. You must include a copy of, or the Uniform Resource Identifier (URI) for, this License with every copy of the Work You Distribute or Publicly Perform.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "Altered"
+            "trigger_mdf": "AlteredUnmodified"
         },
         {
             "license": [
@@ -88,22 +88,22 @@
                 "CC-BY-3.0"
             ],
             "generic": null,
-            "name": "Respect moral rights",
-            "verbatim": "4. c. Except as otherwise agreed in writing by the Licensor or as may be otherwise permitted by applicable law, if You Reproduce, Distribute or Publicly Perform the Work either by itself or as part of any Adaptations or Collections, You must not distort, mutilate, modify or take other derogatory action in relation to the Work which would be prejudicial to the Original Author's honor or reputation. Licensor agrees that in those jurisdictions (e.g. Japan), in which any exercise of the right granted in Section 3(b) of this License (the right to make Adaptations) would be deemed to be a distortion, mutilation, modification or other derogatory action prejudicial to the Original Author's honor and reputation, the Licensor will waive or not assert, as appropriate, this Section, to the fullest extent permitted by the applicable national law, to enable You to reasonably exercise Your right under Section 3(b) of this License (right to make Adaptations) but not otherwise.",
+            "name": "Do not impose any technological measures restricting users (DRM)",
+            "verbatim": "4.a. [...]\r\nWhen You Distribute or Publicly Perform the Work, You may not impose any effective technological measures on the Work that restrict the ability of a recipient of the Work from You to exercise the rights granted to that recipient under the terms of the License.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "Altered"
+            "trigger_mdf": "AlteredUnmodified"
         },
         {
             "license": [
                 "CC-BY-3.0"
             ],
             "generic": null,
-            "name": "Do not impose any technological measures restricting users (DRM)",
-            "verbatim": "4.a. [...]\r\nWhen You Distribute or Publicly Perform the Work, You may not impose any effective technological measures on the Work that restrict the ability of a recipient of the Work from You to exercise the rights granted to that recipient under the terms of the License.",
+            "name": "Respect moral rights",
+            "verbatim": "4. c. Except as otherwise agreed in writing by the Licensor or as may be otherwise permitted by applicable law, if You Reproduce, Distribute or Publicly Perform the Work either by itself or as part of any Adaptations or Collections, You must not distort, mutilate, modify or take other derogatory action in relation to the Work which would be prejudicial to the Original Author's honor or reputation. Licensor agrees that in those jurisdictions (e.g. Japan), in which any exercise of the right granted in Section 3(b) of this License (the right to make Adaptations) would be deemed to be a distortion, mutilation, modification or other derogatory action prejudicial to the Original Author's honor and reputation, the Licensor will waive or not assert, as appropriate, this Section, to the fullest extent permitted by the applicable national law, to enable You to reasonably exercise Your right under Section 3(b) of this License (right to make Adaptations) but not otherwise.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
+            "trigger_mdf": "Altered"
         }
     ]
 }

@@ -1,0 +1,35 @@
+{
+    "spdx_id": "ADSL",
+    "long_name": "Amazon Digital Services License",
+    "steward": "Amazon Digital Services, Inc.",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Partial",
+    "warranty": "Partial",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "ADSL"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Do not remove any proprietary notices",
+            "verbatim": "[...]\r\nYou may copy, display, modify and redistribute the software code either by itself or as incorporated into your code; provided that you do not remove any proprietary notices.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}
