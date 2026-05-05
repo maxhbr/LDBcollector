@@ -198,6 +198,10 @@ When a component is proposed under different licenses, you must explicitly which
 Check that the licenses are compatible with your policy.
 You can add derogations in order to handle specific corner cases.
 
+#### Validation Step 6: check compatibility with exploitation licenses
+
+Check that the licenses of the included components are compatible with the exploitation licenses of your release.
+
 ### Read your validated SBOM
 
 Once you have passed all the validation steps, you can read the resulting SBOM in the "Bill of Materials" tab. You can tweak each usage, for instance to change the exploitation on individual components. You can also export the result as CSV.
