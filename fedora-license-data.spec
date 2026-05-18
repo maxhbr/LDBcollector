@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.74
+Version:        1.75
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,22 @@ make check-grammar
 
 
 %changelog
+* Mon May 18 2026 Miroslav Suchý <msuchy@redhat.com> 1.75-1
+- add MIT WITH fmt-exception
+- add LicenseRef-Remix-icon-license-1.0 as not-allowed
+- add LPD-document as allowed-content
+- add public domain dedication from tcputils
+- add GPL-2.0-only WITH eCos-exception-2.0 as allowed
+- rename temporary AdditionRef-WebM-patent-license to Google-Patent-WebM
+- Add public-domain dedication for python-rnc2rng
+- add public domain dedication from enchant
+- Add rocq-doc as known exception to OPUBL-1.0
+- add GPL-3.0-or-later WITH CGAL-linking-exception
+- replace temporary ID with sqlitestudio-OpenSSL-exception
+- add gstreamer1-doc as known exception to OPUBL-1.0
+- add public domain dedication from fcitx5-mozc
+- add public domain dedication from bsd-games
+
 * Fri Feb 27 2026 Miroslav Suchý <msuchy@redhat.com> 1.74-1
 - remove LicenseRef-Romio as it equals to SPDX ID mpich2
 - add public domain dedication from gstreamer1-plugins-bad-free
