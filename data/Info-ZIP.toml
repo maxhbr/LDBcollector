@@ -1,9 +1,0 @@
-[license]
-
-expression = "Info-ZIP"
-
-status = [ "allowed" ]
-
-url = '''
-http://www.info-zip.org/license.html
-'''
