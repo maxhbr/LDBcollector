@@ -2,7 +2,6 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from functools import reduce
-from urllib.parse import urlparse
 
 from django.db.models import Q, Count, Subquery, OuterRef, F, Value
 from django.db.models.functions import Coalesce
@@ -10,6 +9,7 @@ from django.forms import Form, CharField
 from django.http import Http404
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
+from django.utils.http import url_has_allowed_host_and_scheme
 
 from cube.models import License, Release
 from cube.utils.reference import is_shared_reference_loaded
@@ -122,6 +122,16 @@ class ReleaseContextMixin:
 
 
 class QuerySuccessUrlMixin:
+    def _get_from_path(self):
+        candidate = self.request.GET.get("from")
+        if candidate and url_has_allowed_host_and_scheme(
+            candidate,
+            allowed_hosts={self.request.get_host()},
+            require_https=self.request.is_secure(),
+        ):
+            return candidate
+        return None
+
     def get_default_success_url(self):
         if hasattr(self, "success_url") and self.success_url is not None:
             return self.success_url
@@ -134,11 +144,14 @@ class QuerySuccessUrlMixin:
             )
 
     def get_success_url(self):
-        path = urlparse(self.request.GET.get("from")).path
-        if path and path.startswith("/"):
-            return path
+        return self._get_from_path() or self.get_default_success_url()
 
-        return self.get_default_success_url()
+    def get_cancel_url(self):
+        return self._get_from_path() or self.get_default_success_url()
+
+    def get_context_data(self, **kwargs):
+        kwargs.setdefault("cancel_url", self.get_cancel_url())
+        return super().get_context_data(**kwargs)
 
 
 class ReleaseExploitationFormMixin:
