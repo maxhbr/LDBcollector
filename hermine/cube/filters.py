@@ -127,6 +127,23 @@ class DerogationFilter(FilterSet):
     exploitation = ValueFilter()
 
 
+class ObligationByGenericFilter(FilterSet):
+    search = django_filters.CharFilter(
+        field_name="license__spdx_id",
+        lookup_expr="icontains",
+        label="Search for a license",
+    )
+    copyleft = ValueFilter(field_name="license__copyleft", label="Copyleft type")
+    o = django_filters.OrderingFilter(
+        fields=(("license__long_name", "license"),),
+        choices=(
+            ("license__long_name", "Alphabetical order (A-Z)"),
+            ("-license__long_name", "Alphabetical order (Z-A)"),
+        ),
+        label="Sort by (license)",
+    )
+
+
 class LicenseChoiceFilter(FilterSet):
     search_expression_in = django_filters.CharFilter(
         field_name="expression_in", lookup_expr="icontains", label="License expression"
