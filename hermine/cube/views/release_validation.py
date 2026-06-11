@@ -206,11 +206,24 @@ class AbstractResetCorrectedLicenseView(
 # Step 1
 
 
-class ReleaseLicenseCurationCreateView(AbstractCreateUsageConditionView):
+class ReleaseLicenseCurationCreateView(
+    QuerySuccessUrlMixin, AbstractCreateUsageConditionView
+):
     model = LicenseCuration
     form_class = CreateLicenseCurationForm
     template_name = "cube/release_licensecuration_create.html"
     permission_required = "cube.add_licensecuration"
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        # Ensure curations are applied immediately
+        update_validation_step_1(self.usage.release)
+        return response
+
+    def get_default_success_url(self):
+        return reverse(
+            "cube:release_validation_step_1", kwargs={"pk": self.usage.release.id}
+        )
 
 
 class ReleaseCuratedLicensesView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
