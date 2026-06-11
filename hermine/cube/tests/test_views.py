@@ -587,6 +587,7 @@ class CompatibilityCRUDViewTestCase(ForceLoginMixin, TestCase):
         res = self.client.post(
             url,
             {
+                "from_license": 1,
                 "to_license": lic2.pk,
                 "direction": "A",
             },
