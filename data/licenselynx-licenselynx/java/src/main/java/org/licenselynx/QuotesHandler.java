@@ -2,7 +2,6 @@
  * SPDX-FileCopyrightText: Copyright 2025 Siemens AG
  * SPDX-License-Identifier: BSD-3-Clause
  */
-
 package org.licenselynx;
 
 
@@ -32,10 +31,9 @@ final class QuotesHandler
             '＂'  // FULLWIDTH QUOTATION MARK
     };
 
-    // Private constructor prevents instantiation.
     private QuotesHandler()
     {
-        throw new AssertionError("Utility class should not be instantiated.");
+        // utility class
     }
 
     /**

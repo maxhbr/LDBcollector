@@ -3,7 +3,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
 #
 from dataclasses import dataclass
+
 from licenselynx.license_source import LicenseSource
+from licenselynx.organization import Organization
 
 
 @dataclass
@@ -11,7 +13,7 @@ class LicenseObject(object):
     """LicenseObject class represents a license with a canonical name and source."""
 
     id: str
-    src: LicenseSource
+    src: str
 
     def is_spdx_identifier(self):
         """
@@ -33,3 +35,18 @@ class LicenseObject(object):
         :return: True if source of LicenseObject is custom
         """
         return self.src == LicenseSource.CUSTOM
+
+    def is_organization_source(self) -> bool:
+        """
+        Checks if source of LicenseObject is any organization.
+        :return: True if source of LicenseObject is an Organization
+        """
+        return self.src in [org.value for org in Organization]
+
+    def is_organization_source_of(self, org: Organization) -> bool:
+        """
+        Checks if source of LicenseObject is a specific organization.
+        :param org: Organization enum value to check against
+        :return: True if source matches the given organization
+        """
+        return self.src == org

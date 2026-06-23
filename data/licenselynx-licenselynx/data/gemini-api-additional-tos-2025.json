@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "gemini-api-additional-tos-2025",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

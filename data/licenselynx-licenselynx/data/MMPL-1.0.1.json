@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "MMPL-1.0.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Minecraft Mod Public License v1.0.1"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

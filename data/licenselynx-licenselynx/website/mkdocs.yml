@@ -39,12 +39,25 @@ extra_css:
 
 nav:
   - Introduction: index.md
-  - FAQ: faq.md
-  - Data Quality: data-quality.md
-  - How LicenseLynx works: licenselynxworks.md
   - Installation: installation.md
   - Usage: usage.md
-  - Contributing: contribution.md
+  - How LicenseLynx works: licenselynxworks.md
+  - API Reference: api-reference.md
+  - Data:
+      - Data Quality: data/data-quality.md
+      - Data Specification: data/data-specification.md
+      - Automated Data Retrieval: data/data-retrieval.md
+      - Matching Behavior: data/matching-behavior.md
+      - Data Validation: data/data-validation.md
+      - Risky Mappings: data/risky-mappings.md
+      - Alias Decisions: data/alias-decisions.md
+  - FAQ: faq.md
+  - Contributing:
+      - Overview: contribution.md
+      - Adding Mappings: contributing/adding-mappings.md
+      - Organization Mappings: contributing/organization-mappings.md
+      - New Language Library: contributing/new-language-library.md
+      - Releases: contributing/releases.md
 
 extra:
   social:
@@ -54,7 +67,14 @@ extra:
 plugins:
   - search
 
-copyright: Copyright &copy; 2025 Siemens AG
+copyright: >-
+  Copyright &copy; 2025 Siemens AG
+  <span class="footer-license">
+    <a href="https://raw.githubusercontent.com/licenselynx/licenselynx/main/website/LICENSE" target="_blank" rel="license noopener" aria-label="Website license file">
+      <img src="/assets/cc-mark.svg" alt="" aria-hidden="true" class="footer-license__icon">
+      <span class="footer-license__text">CC BY 4.0</span>
+    </a>
+  </span>
 
 markdown_extensions:
   - attr_list

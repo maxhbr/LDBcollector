@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "vanderbilt-sla-1.0",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

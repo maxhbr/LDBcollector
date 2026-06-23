@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "llama-4-cla-2025",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

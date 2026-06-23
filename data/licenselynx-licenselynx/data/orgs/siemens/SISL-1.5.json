@@ -1,0 +1,20 @@
+{
+    "canonical": {
+        "id": "SISL-1.5",
+        "src": "siemens"
+    },
+    "aliases": {
+        "custom": [
+            "Siemens Inner Source License 1.5",
+            "Siemens Inner Source License v1.5",
+            "Siemens_Inner_Source_License_v1.5",
+            "Siemens_Inner_Source_License_v1.5.md",
+            "SISL 1.5",
+            "SISL_1.5",
+            "The Siemens Inner Source License - 1.5"
+        ]
+    },
+    "isMajorVersionOnly": false,
+    "rejected": [],
+    "risky": []
+}

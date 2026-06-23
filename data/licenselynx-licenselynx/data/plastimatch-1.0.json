@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "plastimatch-1.0",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

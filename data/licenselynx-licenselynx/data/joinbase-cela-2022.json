@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "joinbase-cela-2022",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

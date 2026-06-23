@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "gnu-emacs-gpl-1985",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

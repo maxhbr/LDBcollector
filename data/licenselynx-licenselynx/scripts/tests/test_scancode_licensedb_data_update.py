@@ -138,7 +138,8 @@ def test_handle_data_update(mock_exists, scancode_licensedb_update):
     scancode_licensedb_update.handle_data(aliases, license_key)
 
     # Assert that update_license_file was called with the correct arguments
-    scancode_licensedb_update.update_license_file.assert_called_once_with(license_key, aliases)
+    scancode_licensedb_update.update_license_file.assert_called_once_with(license_key, aliases, alias_key="scancodeLicensedb")
+    scancode_licensedb_update.create_license_file.assert_not_called()
 
     # Assert that create_license_file was NOT called
     scancode_licensedb_update.create_license_file.assert_not_called()
@@ -162,12 +163,13 @@ def test_handle_data_create(mock_exists, scancode_licensedb_update):
     # Define input arguments
     aliases = ["Alias1", "Alias2"]
     license_key = "test_license"
+    alias_key = "scancodeLicensedb"
 
     # Call the method under test
     instance.handle_data(aliases, license_key)
 
     # Assert that create_license_file was called with the correct arguments
-    instance.create_license_file.assert_called_once_with(license_key, aliases)
+    instance.create_license_file.assert_called_once_with(license_key, aliases, alias_key)
 
     # Assert that update_license_file was NOT called
     instance.update_license_file.assert_not_called()

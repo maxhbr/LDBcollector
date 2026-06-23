@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "BOLA-1.1",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Buena Onda License Agreement v1.1"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "siesta-academic-individuals",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

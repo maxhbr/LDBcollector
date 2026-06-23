@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "sqlitestudio-OpenSSL-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "sqlitestudio OpenSSL exception"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

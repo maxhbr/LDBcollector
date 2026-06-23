@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "charmpp-converse-2017",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

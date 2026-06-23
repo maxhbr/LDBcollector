@@ -9,19 +9,20 @@ plugins {
     id 'jacoco'
     id 'idea'
     id 'checkstyle'
-    id 'signing'
     id 'maven-publish'
     id 'org.ajoberstar.grgit' version '4.1.1'
     id 'org.barfuin.gradle.jacocolog' version '3.1.0'
     id 'org.barfuin.gradle.taskinfo' version '2.2.0'
+    id 'org.jreleaser' version '1.24.0'
+    id 'org.licenselynx.build'
 }
 
 repositories {
     mavenCentral()
 }
 
-
 import org.gradle.internal.jvm.Jvm
+
 
 /*
  * - - - -  PROJECT METADATA  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -44,7 +45,7 @@ ext {
         }
     }
     website = 'https://licenselynx.org/'
-    codeRepo = 'https://github.org/licenselynx/licenselynx'
+    codeRepo = 'https://github.com/licenselynx/licenselynx'
 }
 
 group = 'org.licenselynx'
@@ -71,11 +72,9 @@ dependencies {
     testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.16'
 
     implementation 'org.slf4j:slf4j-api:2.0.17'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.21.0'
 
     compileOnly group: 'net.jcip', name: 'jcip-annotations', version: '1.0'
     compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
-    compileOnly 'javax.annotation:javax.annotation-api:1.3.2'
 }
 
 
@@ -83,12 +82,24 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+sourceSets {
+    main {
+        java.srcDir(tasks.named('generateJava').flatMap { it.generatedJavaDir })
+    }
+    templates {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+
+
 /*
  * - - - -  INTELLIJ CONFIG  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
 idea.module {
     downloadSources = true
     downloadJavadoc = true
+    generatedSourceDirs += layout.buildDirectory.dir('licenselynx/java')
     excludeDirs += file('.idea')
     excludeDirs += file('_support')
     excludeDirs += file('bin')
@@ -122,14 +133,14 @@ tasks.register('createVersionFile') {
     outputs.file(outFile)
     doLast {
         Properties props = new Properties()
-        props.setProperty('clean', String.valueOf(project.ext.gitCleanBuild))
-        props.setProperty('libGroup', project.group)
-        props.setProperty('libName', project.name)
-        props.setProperty('libVersion', project.getVersion().toString())
-        props.setProperty('libWebsite', "${project.ext.codeRepo}/-/tree/main/java")
-        props.setProperty('libDescription', project.description)
-        props.setProperty('specName', project.name)
-        props.setProperty('specWebsite', project.ext.website)
+        props.setProperty('clean', String.valueOf(rootProject.ext.gitCleanBuild))
+        props.setProperty('libGroup', rootProject.group)
+        props.setProperty('libName', rootProject.name)
+        props.setProperty('libVersion', rootProject.getVersion().toString())
+        props.setProperty('libWebsite', "${rootProject.ext.codeRepo}/tree/main/java")
+        props.setProperty('libDescription', rootProject.description)
+        props.setProperty('specName', rootProject.name)
+        props.setProperty('specWebsite', rootProject.ext.website)
         outFile.withPrintWriter('UTF-8', {
             props.store(it, rootProject.name + ' version information')
         })
@@ -138,34 +149,6 @@ tasks.register('createVersionFile') {
 tasks.named('processResources').configure { it.dependsOn(tasks.createVersionFile) }
 sourceSets.main.resources.srcDir(tasks.createVersionFile.temporaryDir)
 
-tasks.register("checkAndDownloadJson") {
-    def resourcesDir = file("src/main/resources")
-    def jsonFile = file("$resourcesDir/merged_data.json")
-    def downloadUrl = "https://licenselynx.org/json/latest/mapping.json"
-
-    doLast {
-        if (!jsonFile.exists()) {
-            println "merged_data.json not found. Downloading from $downloadUrl..."
-            resourcesDir.mkdirs()
-            jsonFile.withOutputStream { output ->
-                new URL(downloadUrl).withInputStream { input ->
-                    output << input
-                }
-            }
-            println "Downloaded data.json to $jsonFile"
-        } else {
-            println "merged_data.json already exists. Skipping download."
-        }
-    }
-}
-
-tasks.named("processResources") {
-    def isCI = System.getenv("CI")
-
-    if (!isCI) {
-        dependsOn("checkAndDownloadJson")
-    }
-}
 
 /*
  * - - - -  TESTS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -193,26 +176,26 @@ tasks.named('jar').configure {
     manifest {
         attributes = [
             'Manifest-Version'           : '1.0',
-            'Specification-Title'        : project.name,
+            'Specification-Title'        : rootProject.name,
             'Specification-Vendor'       : 'The LicenseLynx OSS Project',
             'Specification-Vendor-Id'    : 'org.licenselynx',
-            'Specification-Version'      : project.version,
-            'Implementation-Title'       : project.name,
+            'Specification-Version'      : rootProject.version,
+            'Implementation-Title'       : rootProject.name,
             'Implementation-Vendor'      : 'The LicenseLynx OSS Project',
             'Implementation-Vendor-Id'   : 'org.licenselynx',
-            'Implementation-Version'     : project.version,
-            'Implementation-SCM-Revision': project.ext.gitHash,
+            'Implementation-Version'     : rootProject.version,
+            'Implementation-SCM-Revision': rootProject.ext.gitHash,
             'Automatic-Module-Name'      : 'org.licenselynx',
-            'Website'                    : project.ext.website,
+            'Website'                    : rootProject.ext.website,
             'Created-By'                 : "Gradle ${gradle.gradleVersion}",
             'Built-By'                   : System.getProperty('user.name'),
             'Build-Jdk'                  : Jvm.current().toString(),
-            'Build-Clean'                : project.ext.gitCleanBuild
+            'Build-Clean'                : rootProject.ext.gitCleanBuild
         ]
     }
     doFirst {
         manifest {
-            attributes 'Build-Timestamp': project.ext.buildTimestamp.toString()
+            attributes 'Build-Timestamp': rootProject.ext.buildTimestamp.toString()
         }
     }
 }
@@ -269,8 +252,8 @@ tasks.named('javadoc').configure {
     }
 
     // workaround for JDK 9+: https://github.com/gradle/gradle/issues/11182
-    def currentJavaVersion = JavaVersion.current()
-    if (currentJavaVersion >= JavaVersion.VERSION_1_9) {
+    def toolchainVersion = java.toolchain.languageVersion.get().asInt()
+    if (toolchainVersion >= 9) {
         options.addStringOption("-release", "8")
     }
 }
@@ -280,7 +263,7 @@ tasks.named('javadoc').configure {
  * - - - -  CHECKSTYLE  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
 checkstyle {
-    toolVersion '8.27'
+    toolVersion = '8.27'
     showViolations = true
     ignoreFailures = false
 }
@@ -299,24 +282,13 @@ dependencies {
 /*
  * - - - -  PUBLISHING  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
+
+
 publishing {
     repositories {
         maven {
-            name = 'localBuildDir'
-            url = project.layout.buildDirectory.dir('maven-repo-test')
-        }
-        if (project.hasProperty('licenselynx_publish_credentials')) {
-            maven {
-                name = 'mavenSonatypeCentral'
-                url = 'https://central.sonatype.com/api/v1/publisher'
-                credentials(HttpHeaderCredentials) {
-                    name = "Authorization"
-                    value = "Bearer ${licenselynx_publish_credentials}"
-                }
-                authentication {
-                    header(HttpHeaderAuthentication)
-                }
-            }
+            name = 'stagingDeploy'
+            url = project.layout.buildDirectory.dir('staging-deploy')
         }
     }
     publications {
@@ -344,22 +316,43 @@ publishing {
                 scm {
                     connection = 'scm:git:git@github.com:' + ga
                     developerConnection = 'scm:git:git@github.com:' + ga
-                    url = 'https://github.com/' +ga
+                    url = 'https://github.com/' + ga
                 }
             }
         }
     }
 }
 
-if (!Boolean.parseBoolean(System.getenv('CI')) || project.hasProperty('signingKey')) {
-    signing {
-        if (Boolean.parseBoolean(System.getenv('CI'))) {
-            def signingKey = project.getProperty('signingKey')
-            def signingPassword = project.getProperty('signingPassword')
-            useInMemoryPgpKeys(signingKey, signingPassword)
-        } else {
-            useGpgCmd()   // use local GPG installation and agent
+
+/*
+ * - - - -  JRELEASER  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+
+jreleaser {
+    gitRootSearch = true
+    project {
+        copyright = 'Copyright (c) Siemens AG 2025 ALL RIGHTS RESERVED'
+    }
+    release {
+        github {
+            skipTag = true
+            skipRelease = true
         }
-        sign publishing.publications.mavenJava
+    }
+    signing {
+        active = 'ALWAYS'
+        armored = true
+    }
+    deploy {
+        maven {
+            mavenCentral {
+                sonatype {
+                    active = 'RELEASE'
+                    url = 'https://central.sonatype.com/api/v1/publisher'
+                    stagingRepository(layout.buildDirectory.dir('staging-deploy').get())
+                }
+            }
+        }
     }
 }

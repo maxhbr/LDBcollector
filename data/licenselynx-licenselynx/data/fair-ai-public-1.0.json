@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "fair-ai-public-1.0",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

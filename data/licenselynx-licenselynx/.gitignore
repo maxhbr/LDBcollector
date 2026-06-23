@@ -7,16 +7,19 @@ venv
 .venv
 .idea
 *.log
+_support/
 
 # --- JAVA ---
 
 # Gradle generated files
-/java/.gradle/
+.gradle/
 /java/build/
 /java/bin/
+/java/buildSrc/build/
+/java/buildSrc/bin/
 
 # IntelliJ control files
-/java/.idea/
+.idea/
 /java/out/
 /Java/*.iml
 /Java/*.ipr
@@ -77,5 +80,7 @@ venv
 !typescript/tests/resources/*
 !typescript/package-lock.json
 !data/*
+
+!go/testdata/*
 
 .DS_Store

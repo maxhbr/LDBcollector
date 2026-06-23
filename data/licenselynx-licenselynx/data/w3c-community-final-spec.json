@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "w3c-community-final-spec",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

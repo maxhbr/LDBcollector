@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "bigscience-open-rail-m2",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

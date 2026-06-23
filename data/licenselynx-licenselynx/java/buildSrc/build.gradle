@@ -1,0 +1,45 @@
+/**
+ * SPDX-FileCopyrightText: Copyright 2025 Siemens AG
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+plugins {
+    id 'java-gradle-plugin'
+    id 'idea'
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation' << '-proc:none'
+}
+
+
+idea.module {
+    downloadSources = true
+    downloadJavadoc = true
+}
+idea.project {
+    jdkName = JavaVersion.VERSION_1_8
+    languageLevel = JavaVersion.VERSION_1_8
+}
+
+
+gradlePlugin {
+    plugins {
+        buildPlugin {
+            id = 'org.licenselynx.build'
+            implementationClass = 'org.licenselynx.build.BuildPlugin'
+        }
+    }
+}

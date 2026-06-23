@@ -15,12 +15,22 @@
         "Custom License": {
             "id": "custom-license",
             "src": "custom"
+        },
+        "Incomplete License": {
+            "id": "",
+            "src": "spdx"
         }
     },
     "riskyMap": {
         "BSD Zero Clause Risky": {
             "id": "0BSD",
             "src": "spdx"
+        }
+    },
+    "testOrg": {
+        "test-org-license": {
+            "id": "testOrgId",
+            "src": "testOrg"
         }
     }
 }

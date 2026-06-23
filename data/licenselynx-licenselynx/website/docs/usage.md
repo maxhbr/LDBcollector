@@ -1,61 +1,96 @@
 # Usage
 
-LicenseLynx provides libraries for Python, Java, and TypeScript, making it easy to integrate into projects regardless of the programming language.
-Below are instructions and examples for each language.
-In each language the method `map` returns an `LicenseObject`, which holds the information of the canonical name and source for the license name.
+The `map` method is the core of every LicenseLynx library. It takes a license name string and returns a `LicenseObject` containing the canonical `id` and its `src` (source).
+
+For the full method signatures, parameters, and error handling, see the [API Reference](api-reference.md).
+
+If no match is found, Python returns `None`, Java returns `null`, and TypeScript rejects the `Promise`.
+For quote normalization and lookup order, see [Matching Behavior](data/matching-behavior.md).
 
 ## Python
-
-To use LicenseLynx in Python, you can call the `map` method from the `LicenseLynx` module to map a license name.
-
-**Example:**
 
 ```python
 from licenselynx.licenselynx import LicenseLynx
 
-# Map the license name
-license_object = LicenseLynx.map("licenseName")
-
-print(license_object.id)
-print(license_object.src)
-```
-
-## TypeScript
-
-In TypeScript, you need to import the `map` function from the `LicenseLynx` module and use it to map a license name.
-
-Example:
-
-```typescript
-import {map} from "@licenselynx/licenselynx";
-
-// Map the license name
-const licenseObject = map('license1');
-
-console.log(licenseObject.id);
-console.log(licenseObject.src);
+result = LicenseLynx.map("MIT")
+print(result.id)   # "MIT"
+print(result.src)  # "spdx"
 ```
 
 ## Java
 
-For Java, use the `map` method from the `LicenseLynx` class to achieve the same functionality.
-
-Example:
-
 ```java
-import org.licenselynx.*;
+import org.licenselynx.LicenseLynx;
+import org.licenselynx.LicenseObject;
 
-public class LicenseExample {
-    public static void main(String[] args) {
-        // Map the license name
-        LicenseObject licenseObject = LicenseLynx.map("licenseName");
-        System.out.println(licenseObject.getId());
-        System.out.println(licenseObject.getSrc());
-    }
-}
+LicenseObject result = LicenseLynx.map("MIT");
+System.out.println(result.getId());   // "MIT"
+System.out.println(result.getSrc());  // "spdx"
 ```
 
-## Data mapping
+## TypeScript
 
-It is also possible to retrieve the whole license mapping as one json-file.
-To always get the most recent version, use `/json/latest/mapping.json`.
+`map` returns a `Promise`.
+
+```typescript
+import {map} from "@licenselynx/licenselynx";
+
+const result = await map('MIT');
+console.log(result.id);   // "MIT"
+console.log(result.src);  // "spdx"
+```
+
+## Risky Mappings
+
+All languages support an optional `risky` parameter. When enabled, the lookup falls back to lower-confidence mappings if no match is found in the stable map. See [Risky Mappings](data/risky-mappings.md) for details.
+
+=== "Python"
+
+    ```python
+    result = LicenseLynx.map("gpl3", risky=True)
+    ```
+
+=== "Java"
+
+    ```java
+    LicenseObject result = LicenseLynx.map("gpl3", true);
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    const result = await map('gpl3', true);
+    ```
+
+## Organization Mappings
+
+All languages support an optional `org` parameter for looking up organization-specific licenses (e.g., inner-source licenses). See the [API Reference](api-reference.md#organization) for the full `Organization` enum.
+
+=== "Python"
+
+    ```python
+    from licenselynx.organization import Organization
+
+    result = LicenseLynx.map("SISL-1.4", org=Organization.SIEMENS)
+    ```
+
+=== "Java"
+
+    ```java
+    import org.licenselynx.Organization;
+
+    LicenseObject result = LicenseLynx.map("SISL-1.4", Organization.Siemens);
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    import {map, Organization} from "@licenselynx/licenselynx";
+
+    const result = await map('SISL-1.4', false, Organization.Siemens);
+    ```
+
+## Data Mapping
+
+The full license mapping is also available as a JSON file at [`/json/latest/mapping.json`](https://licenselynx.org/json/latest/mapping.json).
+See the [Data Specification](data/data-specification.md) for the format.

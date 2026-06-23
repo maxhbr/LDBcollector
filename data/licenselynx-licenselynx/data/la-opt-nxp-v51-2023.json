@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "la-opt-nxp-v51-2023",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "acki-nacki-node-2024-10-04",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

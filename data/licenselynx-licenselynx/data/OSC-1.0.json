@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "OSC-1.0",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "OSC License 1.0"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

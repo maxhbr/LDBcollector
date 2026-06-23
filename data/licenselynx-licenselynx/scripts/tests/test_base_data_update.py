@@ -60,7 +60,7 @@ def test_update_license_file(mock_json_dump, mock_open, mock_join, base_data_upd
     canonical_id = "test_license"
     aliases = ["alias2", "alias with 'some quotes'", "Don't test one single quote", "“alias” ‘alias’"]
 
-    base_data_update.update_license_file(canonical_id, aliases)
+    base_data_update.update_license_file(canonical_id, aliases, None)
 
     expected_data = {"canonical": {"id": "test"},
                      "aliases": {'source': ['alias1'], 'custom': ['"alias" "alias"', 'alias with "some quotes"', 'custom alias'],
@@ -82,7 +82,7 @@ def test_update_license_file_rejected_and_risky(mock_json_dump, mock_open, mock_
     canonical_id = "test_license"
     aliases = ["risky_alias", "rejected_alias"]
 
-    base_data_update.update_license_file(canonical_id, aliases)
+    base_data_update.update_license_file(canonical_id, aliases, None)
 
     expected_data = {"canonical": {"id": "test"}, "aliases": {"test_source": ["alias1"], "custom": []}, "rejected": ["rejected_alias"],
                      "risky": ["risky_alias"]}

@@ -5,19 +5,25 @@ on:
       - main
     paths:
       - typescript/**
+      - .github/workflows/typescript.yaml
+      - codecov.yml
   pull_request:
     branches:
       - main
     paths:
       - typescript/**
+      - .github/workflows/typescript.yaml
+      - codecov.yml
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   tests:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -28,18 +34,16 @@ jobs:
       - name: Run the automated tests
         run: |
           cd typescript
-          npm run test | grep "All files" | awk '{print $10}' > coverage.txt
-      - name: Run coverage badge job
-        run: |
-          sudo apt-get install xq
-          pip install anybadge
-          cov_value=$(cat typescript/coverage.txt)
-          cov_rounded=$(printf "%.1f\n" $(bc <<< "${cov_value}"))
-          echo "Coverage found: ${cov_rounded}%"
-          anybadge --label typescript:coverage --value ${cov_rounded} --suffix "%" --file website/badges/coverage-typescript.svg --overwrite
-      - uses: stefanzweifel/git-auto-commit-action@v5
+          npm test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2  # v6.0.0
         with:
-          commit_message: Update badge for typescript
+          files: typescript/coverage/lcov.info
+          flags: typescript
+          fail_ci_if_error: true
+          disable_search: true
+          verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
       
 
   integration-test:
@@ -59,19 +63,13 @@ jobs:
           python3 scripts/src/load/merge_data.py -o ./typescript/resources/merged_data.json
           cd typescript
           npm run build
-      - name: Run integration test
+      - name: Link package
         run: |
           cd typescript
           npm link
-          npm --version
-          npx --version
-          npm ls --global @licenselynx/licenselynx
-          mkdir -p ../../test-project && cd ../../test-project
-          echo "import {map} from '@licenselynx/licenselynx'; map('0BSD').then(value => console.log(value.id));" > run.mjs
-          npm link @licenselynx/licenselynx
-          result="$(npx ts-node run.mjs)"
-          echo $result
-          if [[ $result == "0BSD" ]]; then exit 0; else exit -1; fi
+      - name: Run smoke tests against linked package
+        working-directory: typescript
+        run: npm run test:smoke
 
   lint:
     runs-on: ubuntu-latest

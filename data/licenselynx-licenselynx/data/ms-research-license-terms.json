@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "ms-research-license-terms",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

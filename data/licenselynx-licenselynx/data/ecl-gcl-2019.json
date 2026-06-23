@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "ecl-gcl-2019",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

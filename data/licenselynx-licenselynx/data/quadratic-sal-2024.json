@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "quadratic-sal-2024",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

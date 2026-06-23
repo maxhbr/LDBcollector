@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "gsap-standard-no-charge-2025",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

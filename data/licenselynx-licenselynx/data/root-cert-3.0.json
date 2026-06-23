@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "root-cert-3.0",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

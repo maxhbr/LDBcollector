@@ -29,7 +29,7 @@ jobs:
       - name: Run the automated tests
         run: |
           cd python
-          poetry run pytest -vv
+          poetry run pytest -vv -m "not smoke"
       - name: Test build
         run: |
           mkdir -p python/licenselynx/resources
@@ -55,13 +55,13 @@ jobs:
           distribution: 'temurin'
           java-version: 8
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v6
       - name: Run build release
         run: |
-          mkdir ./java/src/main/resources/
-          python3 scripts/src/load/merge_data.py -o ./java/src/main/resources/merged_data.json
+          mkdir _support
+          python3 scripts/src/load/merge_data.py -o _support/merged_data.build.json
           cd java
-          ./gradlew ${GRADLE_ARGUMENTS} clean assemble test jacocoTestReport
+          ./gradlew -Plicenselynx.datafile=../_support/merged_data.build.json ${GRADLE_ARGUMENTS} clean build
 
   test-and-lint-typescript:
     runs-on: ubuntu-latest
@@ -78,7 +78,7 @@ jobs:
       - name: Run the automated tests
         run: |
           cd typescript
-          npm run test
+          npx jest --coverage --testPathIgnorePatterns='smoke'
       - name: Run linting
         run: |
           cd typescript
@@ -155,3 +155,47 @@ jobs:
           npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+
+  deploy-java:
+    name: Publish Java artifact to Maven Central
+    runs-on: ubuntu-latest
+    needs: test-and-lint-java
+    environment: maven-central
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Setup Java (runner JDK for Gradle + JReleaser)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 21
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+      - name: Build merged data
+        run: |
+          mkdir _support
+          python3 scripts/src/load/merge_data.py -o _support/merged_data.build.json
+      - name: Build, sign, and upload to Sonatype Central Portal
+        run: |
+          cd java
+          ./gradlew -Plicenselynx.datafile=../_support/merged_data.build.json \
+            clean publish jreleaserDeploy --stacktrace
+        env:
+          JRELEASER_GPG_PASSPHRASE:        ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
+          JRELEASER_GPG_PUBLIC_KEY:        ${{ secrets.JRELEASER_GPG_PUBLIC_KEY }}
+          JRELEASER_GPG_SECRET_KEY:        ${{ secrets.JRELEASER_GPG_SECRET_KEY }}
+          JRELEASER_MAVENCENTRAL_USERNAME: ${{ secrets.JRELEASER_MAVENCENTRAL_USERNAME }}
+          JRELEASER_MAVENCENTRAL_PASSWORD: ${{ secrets.JRELEASER_MAVENCENTRAL_PASSWORD }}
+          JRELEASER_GITHUB_TOKEN:          ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload JReleaser output on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jreleaser-log
+          path: |
+            java/build/jreleaser/trace.log
+            java/build/jreleaser/output.properties

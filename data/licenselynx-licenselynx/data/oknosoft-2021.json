@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "oknosoft-2021",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

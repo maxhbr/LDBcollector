@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "canonical-iprights-2015",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

@@ -19,6 +19,10 @@
         "GPL",
         "LicenseRef-GPL"
     ],
-    "risky": [],
+    "risky": [
+        "GNU General Public License 1.0",
+        "GPL 1.0",
+        "gpl-1.0"
+    ],
     "isMajorVersionOnly": true
 }

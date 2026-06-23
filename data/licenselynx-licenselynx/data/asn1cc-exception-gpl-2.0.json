@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "asn1cc-exception-gpl-2.0",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

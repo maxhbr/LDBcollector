@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "CAPEC-tou",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "Common Attack    Pattern Enumeration and Classification License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

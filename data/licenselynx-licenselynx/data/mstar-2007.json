@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "mstar-2007",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

@@ -8,7 +8,10 @@
             "GNU General Public License v3.0 or later",
             "GPL-3.0+"
         ],
-        "custom": [],
+        "custom": [
+            "\"GPL-3.0-or-later\"",
+            "\"GPLv3+\""
+        ],
         "scancodeLicensedb": [
             "GNU General Public License 3.0 or later",
             "GPL 3.0 or later",
@@ -31,6 +34,34 @@
         ]
     },
     "rejected": [],
-    "risky": [],
+    "risky": [
+        "\"GNU General Public License v3\",",
+        "\"GNU GPLv3\"",
+        "\"GPL-3\",",
+        "\"GPL-3.0\"",
+        "'GNU (GPLv3)",
+        "'Gnu GPL3 (Gnu Public License)",
+        "GENERAL PUBLIC LICENSE, version 3 (GPL-3.0)",
+        "GNU General Public License 3.0",
+        "GNU General Public License v3",
+        "GNU General Public License v3 (GPLv3)",
+        "GNU General Public License, Version 3.0",
+        "gpl-3.0",
+        "GPL 3.0",
+        "GPL v3",
+        "gpl3",
+        "GPL3",
+        "GPLv3",
+        "LicenseRef-gpl-3.0",
+        "License :: GNU General Public License v3",
+        "License :: GNU General Public License v3 (GPLv3)",
+        "License :: GPLv3",
+        "License :: OSI Approved :: GNU General Public License v3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "License :: OSI Approved :: GPLv3",
+        "OSI Approved :: GNU General Public License v3",
+        "OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "OSI Approved :: GPLv3"
+    ],
     "isMajorVersionOnly": true
 }

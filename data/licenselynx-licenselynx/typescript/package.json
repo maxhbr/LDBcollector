@@ -1,6 +1,6 @@
 {
     "name": "@licenselynx/licenselynx",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "author": "Leo Reinmann",
     "keywords": [],
     "license": "BSD-3-Clause",
@@ -18,7 +18,8 @@
     "scripts": {
         "clean": "rimraf --no-interactive --verbose dist",
         "build": "esbuild index.ts --bundle --platform=node --target=node10 --outdir=dist && tsc --emitDeclarationOnly --outDir dist",
-        "test": "jest --coverage",
+        "test": "jest --coverage --testPathIgnorePatterns='smoke'",
+        "test:smoke": "jest tests/smoke.test.ts",
         "lint": "eslint *.ts "
     },
     "repository": {

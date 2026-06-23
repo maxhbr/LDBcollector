@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "gigablast-apache-2.0-exception",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

@@ -1,0 +1,30 @@
+{
+  "stableMap": {
+    "Apache 2.0": {
+      "id": "Apache-2.0",
+      "src": "spdx"
+    },
+    "MIT": {
+      "id": "MIT",
+      "src": "spdx"
+    }
+  },
+  "riskyMap": {
+    "Apache License": {
+      "id": "Apache-2.0",
+      "src": "spdx"
+    }
+  },
+  "acme-corp": {
+    "ACME-LIC": {
+      "id": "ACME-LIC",
+      "src": "acme-corp"
+    }
+  },
+  "siemens": {
+    "SIEMENS-ISL": {
+      "id": "SIEMENS-ISL",
+      "src": "siemens"
+    }
+  }
+}

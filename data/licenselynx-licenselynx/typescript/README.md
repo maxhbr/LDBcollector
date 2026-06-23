@@ -25,6 +25,28 @@ console.log(licenseObject.src);
 const licenseObject = map('license1', true);
 ```
 
+## Organization Licenses
+
+Organizations can register internal/proprietary license identifiers that are kept separate from OSS licenses.
+To look up an organization license, pass the `org` parameter:
+
+```typescript
+import {map, Organization, isOrganizationSource, isOrganizationSourceOf} from "@licenselynx/licenselynx";
+
+// Map a license name within an organization
+const licenseObject = map('licenseName', false, Organization.Siemens);
+```
+
+Helper functions for inspecting organization sources:
+
+```typescript
+// Check if the license comes from any organization
+isOrganizationSource(licenseObject); // returns true if from any org
+
+// Check if the license comes from a specific organization
+isOrganizationSourceOf(licenseObject, Organization.Siemens); // returns true if from Siemens
+```
+
 ## License
 
 This project is licensed under the [BSD 3-Clause "New" or "Revised" License](../LICENSE) (SPDX-License-Identifier: BSD-3-Clause).

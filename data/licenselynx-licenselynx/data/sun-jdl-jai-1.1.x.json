@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "sun-jdl-jai-1.1.x",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

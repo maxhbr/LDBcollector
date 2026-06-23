@@ -6,6 +6,8 @@ import json
 import os
 import re
 import sys
+from typing import Optional
+
 import requests
 
 from src.logger import setup_logger
@@ -65,13 +67,17 @@ class BaseDataUpdate:
         else:
             self._LOGGER.debug(f"File '{filepath}' does not exist.")
 
-    def update_license_file(self, canonical_id: str, aliases: list[str]) -> None:
+    def update_license_file(self, canonical_id: str, aliases: list[str], alias_key: Optional[str] = None) -> None:
         """
         Update the existing license with metadata
         Args:
             canonical_id: Canonical ID for the license
             aliases: List of name variations for the license
+            alias_key: JSON key of the alias list
         """
+        if not alias_key:
+            alias_key = self._src
+
         self._LOGGER.debug(f"Updating license file for {canonical_id} with aliases {aliases} for source {self._src}")
         filepath = os.path.join(self._DATA_DIR, f"{canonical_id}.json")
 
@@ -88,8 +94,8 @@ class BaseDataUpdate:
         normalized_aliases = self._normalize_alias_list(aliases)
 
         # Add each unique alias to license if alias is not None
-        self.add_alias_list_to_existing_mapping(aliases_list, canonical_id, data, existing_aliases, normalized_aliases, rejected_aliases,
-                                                risky_aliases)
+        self.add_alias_list_to_existing_mapping(aliases_list, alias_key, canonical_id, data, existing_aliases, normalized_aliases,
+                                                rejected_aliases, risky_aliases)
 
         custom_aliases = self._create_custom_list_for_quotes(normalized_aliases)
 
@@ -98,13 +104,13 @@ class BaseDataUpdate:
                 existing_aliases["custom"].append(alias)
 
         existing_aliases["custom"].sort(key=lambda y: y.lower())
-        if self._src in data["aliases"]:
-            existing_aliases[self._src].sort(key=lambda y: y.lower())
+        if alias_key in data["aliases"]:
+            existing_aliases[alias_key].sort(key=lambda y: y.lower())
 
         with open(filepath, 'w') as outfile:
             json.dump(data, outfile, indent=4)
 
-    def add_alias_list_to_existing_mapping(self, aliases_list: list[str], canonical_id: str, data: dict,
+    def add_alias_list_to_existing_mapping(self, aliases_list: list[str], alias_key: str, canonical_id: str, data: dict,
                                            existing_aliases: dict[str, list[str]], normalized_aliases: list[str],
                                            rejected_aliases: list[str], risky_aliases: list[str]) -> None:
         for alias in normalized_aliases:
@@ -118,11 +124,11 @@ class BaseDataUpdate:
                 self._LOGGER.debug(f"Updating alias for canonical id {canonical_id}")
 
                 # Create list for the source if not already existing
-                if self._src not in data["aliases"]:
-                    existing_aliases[self._src] = list()
-                existing_aliases[self._src].append(alias)
+                if alias_key not in data["aliases"]:
+                    existing_aliases[alias_key] = list()
+                existing_aliases[alias_key].append(alias)
 
-    def create_license_file(self, canonical_id: str, aliases: list[str]) -> None:
+    def create_license_file(self, canonical_id: str, aliases: list[str], alias_key: Optional[str] = None) -> None:
         """
         Creates the license file for the given license ID and name
         Args:
@@ -130,6 +136,9 @@ class BaseDataUpdate:
             aliases: Dictionary of aliases of the license
         """
         self._LOGGER.debug(f"Creating new data file: {canonical_id}.json")
+
+        if not alias_key:
+            alias_key = self._src
 
         normalized_aliases = self._normalize_alias_list(aliases)
         normalized_aliases.sort(key=lambda y: y.lower())
@@ -141,7 +150,7 @@ class BaseDataUpdate:
                 "src": self._src,
             },
             "aliases": {
-                self._src: normalized_aliases,
+                alias_key: normalized_aliases,
                 "custom": custom_list
             },
             "rejected": [],

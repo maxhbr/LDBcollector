@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "stability-ai-nc-2023-12-06",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

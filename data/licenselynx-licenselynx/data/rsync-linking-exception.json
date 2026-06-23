@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "rsync-linking-exception",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "rsync Linking Exception"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

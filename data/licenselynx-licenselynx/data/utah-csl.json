@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "utah-csl",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

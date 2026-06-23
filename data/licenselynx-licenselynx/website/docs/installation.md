@@ -2,36 +2,35 @@
 
 ## Python
 
-To install the Python library, run following command:
+Requires Python **3.11** or higher.
 
 ```shell
-pip install licenselynx 
+pip install licenselynx
 ```
 
 ## Java
 
-To install the Java library, add it to Gradle or Maven build.
+Requires Java **8** or higher.
 
-build.gradle:
+=== "Gradle"
 
-```groovy
-implementation 'org.licenselynx:licenselynx:2.1.0'
-```
+    ```groovy
+    implementation 'org.licenselynx:licenselynx:2.2.0'
+    ```
 
-pom.xml:
+=== "Maven"
 
-```xml
-
-<dependency>
-    <groupId>org.licenselynx</groupId>
-    <artifactId>licenselynx</artifactId>
-    <version>2.1.0</version>
-</dependency>
-```
+    ```xml
+    <dependency>
+        <groupId>org.licenselynx</groupId>
+        <artifactId>licenselynx</artifactId>
+        <version>2.2.0</version>
+    </dependency>
+    ```
 
 ## TypeScript
 
-To install the TypeScript library, run following command:
+Compatible with Node.js **10** and above. No runtime dependencies.
 
 ```shell
 npm install @licenselynx/licenselynx

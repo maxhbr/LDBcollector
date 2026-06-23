@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "gemma-pup-2024-02-21",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

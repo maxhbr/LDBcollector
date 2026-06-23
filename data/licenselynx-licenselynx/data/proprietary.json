@@ -4,7 +4,9 @@
         "src": "scancode-licensedb"
     },
     "aliases": {
-        "custom": [],
+        "custom": [
+            "'Proprietary'"
+        ],
         "scancodeLicensedb": [
             "Proprietary"
         ]

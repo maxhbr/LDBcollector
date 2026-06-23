@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "tencent-hunyuan-3d-2.0-cla",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

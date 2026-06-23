@@ -5,19 +5,25 @@ on:
       - main
     paths:
       - python/**
+      - .github/workflows/python.yaml
+      - codecov.yml
   pull_request:
     branches:
       - main
     paths:
       - python/**
+      - .github/workflows/python.yaml
+      - codecov.yml
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   tests:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install Poetry
         run: |
           pipx install poetry
@@ -38,7 +44,7 @@ jobs:
       - name: Run the automated tests
         run: |
           cd python
-          poetry run coverage run --branch -m pytest -vv
+          poetry run coverage run --branch -m pytest -vv -m "not smoke"
           poetry run coverage report --omit="tests/*"
           poetry run coverage xml --omit="tests/*"
       - name: Test build
@@ -48,17 +54,44 @@ jobs:
           cd python
           poetry build
           python3 check_files.py
-      - name: Run coverage badge
-        run: |
-          sudo apt-get install xq
-          pip install anybadge
-          cov_value=$(xq --xpath "//coverage/@line-rate" python/coverage.xml)
-          cov_rounded=$(printf "%.1f\n" $(bc <<< "100*${cov_value}"))
-          echo "Coverage found: ${cov_rounded}%"
-          anybadge --label python:coverage --value ${cov_rounded} --suffix "%" --file website/badges/coverage-python.svg --overwrite
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2  # v6.0.0
         with:
-          commit_message: Update badge for python
+          files: python/coverage.xml
+          flags: python
+          fail_ci_if_error: true
+          disable_search: true
+          verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+  integration-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: |
+          pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: poetry
+          cache-dependency-path: python/poetry.lock
+      - name: Set Poetry environment
+        run: |
+          cd python
+          poetry env use 3.11
+      - name: Build package with real data
+        run: |
+          mkdir -p python/licenselynx/resources
+          python3 scripts/src/load/merge_data.py -o ./python/licenselynx/resources/merged_data.json
+          cd python
+          poetry install
+      - name: Run smoke tests against installed package
+        run: |
+          cd python
+          poetry run python -m pytest tests/test_smoke_installed.py -v
 
   lint:
     runs-on: ubuntu-latest

@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "treeware-option-2",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "a-star-logic-memoire-temp",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "nvidia-model-training-2025",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

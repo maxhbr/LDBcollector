@@ -35,7 +35,7 @@ def test_identify_major_only_licenses():
 
 
 def test_write_to_license_file(tmp_path, monkeypatch):
-    monkeypatch.setattr(update_major_version_only, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(update_major_version_only, "DEFAULT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(update_major_version_only, "JSON_EXTENSION", ".json")
 
     lic = "testlicense"
@@ -53,7 +53,7 @@ def test_write_to_license_file(tmp_path, monkeypatch):
 
 
 def test_update_flag_in_licence_files(tmp_path, monkeypatch):
-    monkeypatch.setattr(update_major_version_only, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(update_major_version_only, "DEFAULT_DATA_DIR", str(tmp_path))
     monkeypatch.setattr(update_major_version_only, "JSON_EXTENSION", ".json")
 
     major_licenses = ["major_license"]

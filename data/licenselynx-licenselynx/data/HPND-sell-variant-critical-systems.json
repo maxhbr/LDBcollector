@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "HPND-sell-variant-critical-systems",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "HPND - sell variant with safety critical systems clause"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

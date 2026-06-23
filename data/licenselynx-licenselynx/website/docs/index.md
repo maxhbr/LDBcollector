@@ -12,7 +12,7 @@
 <div align="center"><img src="assets/licenselynx-simple-explanation-light.png#only-light" alt="LicenseLynx Workflow Explanation"></div>
 <div align="center"><img src="assets/licenselynx-simple-explanation-dark.png#only-dark" alt="LicenseLynx Workflow Explanation"></div>
 
-## Main features
+## Main Features
 
 <div class="grid cards" markdown>
 
@@ -38,7 +38,7 @@
 
 - __Free and Open-Source__
   
-    Licensed under BSD-3-Clause
+    Code under BSD-3-Clause
 </div>
 
 How can we map a license string found in the wild automatically and deterministically?
@@ -58,10 +58,15 @@ LicenseLynx aims to solve this problem by bridging the gap between unknown or am
 Additionally, we offer libraries for Python, Java, and TypeScript to streamline the process of mapping licenses to their canonical names,  
 typically represented by SPDX IDs.
 -->
-## Getting started
+## Getting Started
 
-For more information, head to the [FAQ](faq.md) and [How LicenseLynx works](licenselynxworks.md).  
-Follow the page [Installation](installation.md) to install LicenseLynx and follow the page [Usage](usage.md) on how to use LicenseLynx in your projects.
+Choose a starting point:
+
+- Install a library: [Installation](installation.md)
+- Map license strings in code: [Usage](usage.md)
+- Understand where the mappings come from: [How LicenseLynx works](licenselynxworks.md)
+- Work with the raw mapping data: [Data Specification](data/data-specification.md)
+- Contribute mappings or docs: [Contributing](contribution.md)
 
 ## Key Features
 

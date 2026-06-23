@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "odin-2000",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

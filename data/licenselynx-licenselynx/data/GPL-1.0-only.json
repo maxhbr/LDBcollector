@@ -8,16 +8,14 @@
             "GNU General Public License v1.0 only",
             "GPL-1.0"
         ],
-        "custom": [],
-        "scancodeLicensedb": [
-            "GNU General Public License 1.0",
-            "GPL 1.0",
-            "gpl-1.0"
-        ]
+        "custom": []
     },
     "rejected": [
         "GNU General Public License (GPL)",
-        "GPL"
+        "GNU General Public License 1.0",
+        "GPL",
+        "GPL 1.0",
+        "gpl-1.0"
     ],
     "risky": [],
     "isMajorVersionOnly": true

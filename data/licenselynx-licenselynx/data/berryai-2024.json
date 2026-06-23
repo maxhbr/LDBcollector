@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "berryai-2024",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

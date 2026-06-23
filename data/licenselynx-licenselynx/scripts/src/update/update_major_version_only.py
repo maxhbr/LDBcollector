@@ -1,7 +1,8 @@
 import json
 import os
 from collections import Counter
-from src.validate.data_validation import extract_license_list_with_semver, build_dict_with_base_name_license, DATA_DIR, JSON_EXTENSION
+from src.validate.data_validation import extract_license_list_with_semver, build_dict_with_base_name_license, DEFAULT_DATA_DIR, \
+    JSON_EXTENSION
 
 
 def _get_non_unique(numbers):
@@ -39,16 +40,16 @@ def _update_flag_in_licence_files(major_version_only_license_list, not_major_ver
 
 def _write_to_license_file(canonical_license_list, is_major_version_only=False):
     for license in canonical_license_list:
-        with open(os.path.join(DATA_DIR, str(license + JSON_EXTENSION)), 'r') as f:
+        with open(os.path.join(DEFAULT_DATA_DIR, str(license + JSON_EXTENSION)), 'r') as f:
             json_data = json.load(f)
             json_data['isMajorVersionOnly'] = is_major_version_only
-        with open(os.path.join(DATA_DIR, str(license + JSON_EXTENSION)), 'w') as f:
+        with open(os.path.join(DEFAULT_DATA_DIR, str(license + JSON_EXTENSION)), 'w') as f:
             json.dump(json_data, f, indent=4)
 
 
 def main():
     licenses_list = []
-    extract_license_list_with_semver(licenses_list)
+    extract_license_list_with_semver(licenses_list, DEFAULT_DATA_DIR)
 
     base_name_dict = build_dict_with_base_name_license(licenses_list)
 

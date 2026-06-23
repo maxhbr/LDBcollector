@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "olf-icla-1.0",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

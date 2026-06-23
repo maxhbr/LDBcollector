@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "flux-1-nc",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

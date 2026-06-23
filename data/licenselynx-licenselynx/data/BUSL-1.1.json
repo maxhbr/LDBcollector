@@ -7,7 +7,9 @@
         "spdx": [
             "Business Source License 1.1"
         ],
-        "custom": [],
+        "custom": [
+            "# Business Source License 1.1"
+        ],
         "scancodeLicensedb": [
             "bsl-1.1",
             "LicenseRef-scancode-bsl-1.1"

@@ -1,0 +1,15 @@
+{
+    "canonical": {
+        "id": "ParaType-Free-Font-1.3",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "ParaType Free Font Licensing Agreement v1.3"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": [],
+    "isMajorVersionOnly": true
+}

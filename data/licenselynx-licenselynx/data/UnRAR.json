@@ -1,0 +1,14 @@
+{
+    "canonical": {
+        "id": "UnRAR",
+        "src": "spdx"
+    },
+    "aliases": {
+        "spdx": [
+            "UnRAR License"
+        ],
+        "custom": []
+    },
+    "rejected": [],
+    "risky": []
+}

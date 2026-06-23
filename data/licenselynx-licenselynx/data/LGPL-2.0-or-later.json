@@ -8,7 +8,9 @@
             "GNU Library General Public License v2 or later",
             "LGPL-2.0+"
         ],
-        "custom": [],
+        "custom": [
+            "\"LGPL-2.0-or-later\""
+        ],
         "scancodeLicensedb": [
             "GNU Library General Public License 2.0 or later",
             "LGPL 2.0 or later",
@@ -20,6 +22,26 @@
         "LGPLv2+",
         "LicenseRef-LGPL"
     ],
-    "risky": [],
+    "risky": [
+        "GNU Lesser General Public License 2.0",
+        "GNU Lesser General Public License v2",
+        "GNU Lesser General Public License v2 (LGPLv2)",
+        "GNU Library General Public License 2.0",
+        "lgpl-2.0",
+        "LGPL 2.0",
+        "LGPL v2.0",
+        "LGPLv2",
+        "LicenseRef-LGPL-2",
+        "LicenseRef-LGPL-2.0",
+        "License :: GNU Lesser General Public License v2",
+        "License :: GNU Lesser General Public License v2 (LGPLv2)",
+        "License :: LGPLv2",
+        "License :: OSI Approved :: GNU Lesser General Public License v2",
+        "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+        "License :: OSI Approved :: LGPLv2",
+        "OSI Approved :: GNU Lesser General Public License v2",
+        "OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+        "OSI Approved :: LGPLv2"
+    ],
     "isMajorVersionOnly": false
 }

@@ -1,0 +1,18 @@
+{
+    "canonical": {
+        "id": "Vixie-Cron",
+        "src": "spdx"
+    },
+    "aliases": {
+        "custom": [],
+        "scancodeLicensedb": [
+            "LicenseRef-scancode-vixie-cron",
+            "vixie-cron"
+        ],
+        "spdx": [
+            "Vixie Cron License"
+        ]
+    },
+    "rejected": [],
+    "risky": []
+}

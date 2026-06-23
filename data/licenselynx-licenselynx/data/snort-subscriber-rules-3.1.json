@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "snort-subscriber-rules-3.1",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

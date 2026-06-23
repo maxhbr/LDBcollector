@@ -6,17 +6,19 @@ import sys
 from typing import Optional
 from licenselynx.license_object import LicenseObject
 from licenselynx.license_map_singleton import _LicenseMapSingleton
+from licenselynx.organization import Organization
 from licenselynx.quotes_handler import _QuotesHandler
 
 
 class LicenseLynx:
 
     @staticmethod
-    def map(license_name: str, risky: bool = False) -> Optional[LicenseObject]:
+    def map(license_name: str, risky: bool = False, org: Optional[Organization] = None) -> Optional[LicenseObject]:
         """
         Maps license name to the canonical license identifier
         :param license_name: string of a license name
         :param risky: enable risky mappings
+        :param org: organization enum
         :return: LicenseObject with the canonical license identifier and source, None if no license is found,
         or throws an exception if a runtime error occurs
         """
@@ -28,6 +30,9 @@ class LicenseLynx:
 
             if not license_object and risky:
                 license_object = instance.merged_data.risky_map.get(license_name)
+
+            if not license_object and org:
+                license_object = instance.merged_data.organizations[org].get(license_name)
 
             if not license_object:
                 return None

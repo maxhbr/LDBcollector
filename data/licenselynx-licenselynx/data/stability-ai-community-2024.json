@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "stability-ai-community-2024",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

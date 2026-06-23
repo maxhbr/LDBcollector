@@ -27,6 +27,10 @@
         <property name="tabWidth" value="4" />
         <property name="ignorePattern" value="^\s*\*\s*\S+$" />
     </module>
+    <module name="Header">
+        <property name="fileExtensions" value="java,gradle"/>
+        <property name="headerFile" value="${config_loc}/java.header"/>
+    </module>
     <module name="RegexpSingleline">
         <property name="fileExtensions" value="java,js,json,jsp,properties,ts,txt,xml" />
         <property name="severity" value="info" />

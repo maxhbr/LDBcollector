@@ -6,7 +6,7 @@ import os
 import tempfile
 
 import pytest
-from src.load.merge_data import read_data, write_data, main
+from src.load.merge_data import read_data, write_data, main, _build_maps_from_dir, read_org_data
 
 
 @pytest.fixture
@@ -157,6 +157,188 @@ def test_main_integration(temp_data_dir, temp_output_file, monkeypatch):
     }
 
     assert output_data == expected_output
+
+
+def test_build_maps_from_dir(tmpdir):
+    license1 = {
+        "canonical": {"id": "MIT"},
+        "aliases": {"spdx": ["MIT License"]},
+        "risky": ["mit-risky"]
+    }
+    license2 = {
+        "canonical": {"id": "Apache-2.0"},
+        "aliases": {"spdx": ["Apache License 2.0"], "custom": ["Apache2"]},
+        "risky": ["apache-risky"]
+    }
+    with open(tmpdir.join("MIT.json"), 'w') as f:
+        json.dump(license1, f)
+    with open(tmpdir.join("Apache-2.0.json"), 'w') as f:
+        json.dump(license2, f)
+
+    canonical_dict, risky_dict = _build_maps_from_dir(str(tmpdir))
+
+    # Canonical IDs present
+    assert "MIT" in canonical_dict
+    assert "Apache-2.0" in canonical_dict
+
+    # Aliases present
+    assert "MIT License" in canonical_dict
+    assert "Apache License 2.0" in canonical_dict
+    assert "Apache2" in canonical_dict
+
+    # Canonical dict maps to correct objects
+    assert canonical_dict["MIT"] == {"id": "MIT"}
+    assert canonical_dict["MIT License"] == {"id": "MIT"}
+    assert canonical_dict["Apache-2.0"] == {"id": "Apache-2.0"}
+
+    # Risky entries
+    assert "mit-risky" in risky_dict
+    assert risky_dict["mit-risky"] == {"id": "MIT"}
+    assert "apache-risky" in risky_dict
+    assert risky_dict["apache-risky"] == {"id": "Apache-2.0"}
+
+
+def test_build_maps_from_dir_skips_non_json(tmpdir):
+    license1 = {
+        "canonical": {"id": "MIT"},
+        "aliases": {"spdx": ["MIT License"]},
+        "risky": []
+    }
+    with open(tmpdir.join("MIT.json"), 'w') as f:
+        json.dump(license1, f)
+    with open(tmpdir.join("README.txt"), 'w') as f:
+        f.write("This is not a JSON file")
+
+    canonical_dict, risky_dict = _build_maps_from_dir(str(tmpdir))
+
+    # Only JSON file processed
+    assert "MIT" in canonical_dict
+    assert "MIT License" in canonical_dict
+    assert len(canonical_dict) == 2
+    assert len(risky_dict) == 0
+
+
+def test_read_org_data_single_org(tmpdir):
+    org_dir = tmpdir.mkdir("orgs").mkdir("testOrg")
+    license1 = {
+        "canonical": {"id": "testOrgId", "src": "testOrg"},
+        "aliases": {"custom": ["testOrg License"]},
+        "isMajorVersionOnly": False,
+        "rejected": [],
+        "risky": ["testOrg-risky"]
+    }
+    with open(org_dir.join("testOrgId.json"), 'w') as f:
+        json.dump(license1, f)
+
+    result = read_org_data(str(tmpdir))
+
+    assert "testOrg" in result
+    test_org_map = result["testOrg"]
+
+    # Canonical ID present
+    assert "testOrgId" in test_org_map
+    assert test_org_map["testOrgId"] == {"id": "testOrgId", "src": "testOrg"}
+
+    # Alias present
+    assert "testOrg License" in test_org_map
+    assert test_org_map["testOrg License"] == {"id": "testOrgId", "src": "testOrg"}
+
+    # Risky entries merged into org map
+    assert "testOrg-risky" in test_org_map
+    assert test_org_map["testOrg-risky"] == {"id": "testOrgId", "src": "testOrg"}
+
+
+def test_read_org_data_multiple_orgs(tmpdir):
+    orgs_dir = tmpdir.mkdir("orgs")
+    test_org_dir = orgs_dir.mkdir("testOrg")
+    acme_dir = orgs_dir.mkdir("acme")
+
+    test_org_license = {
+        "canonical": {"id": "testOrgId", "src": "testOrg"},
+        "aliases": {"custom": ["testOrg License"]},
+        "risky": []
+    }
+    acme_license = {
+        "canonical": {"id": "ACME-1.0", "src": "acme"},
+        "aliases": {"custom": ["ACME License"]},
+        "risky": []
+    }
+    with open(test_org_dir.join("testOrgId.json"), 'w') as f:
+        json.dump(test_org_license, f)
+    with open(acme_dir.join("ACME-1.0.json"), 'w') as f:
+        json.dump(acme_license, f)
+
+    result = read_org_data(str(tmpdir))
+
+    assert "testOrg" in result
+    assert "acme" in result
+
+
+def test_read_org_data_no_orgs_dir(tmpdir):
+    result = read_org_data(str(tmpdir))
+    assert result == {}
+
+
+def test_read_org_data_empty_org(tmpdir):
+    tmpdir.mkdir("orgs").mkdir("testOrg")
+
+    result = read_org_data(str(tmpdir))
+
+    assert "testOrg" in result
+    assert result["testOrg"] == {}
+
+
+def test_main_integration_with_orgs(monkeypatch):
+    with tempfile.TemporaryDirectory() as temp_dir:
+        # Create main license files
+        main_license = {
+            "canonical": {"id": "MIT", "src": "spdx"},
+            "aliases": {"source1": ["MIT License"]},
+            "risky": ["mit-risky"]
+        }
+        with open(os.path.join(temp_dir, "MIT.json"), 'w') as f:
+            json.dump(main_license, f)
+
+        # Create org subdir with org license files
+        org_dir = os.path.join(temp_dir, "orgs", "testOrg")
+        os.makedirs(org_dir)
+        org_license = {
+            "canonical": {"id": "testOrgId", "src": "testOrg"},
+            "aliases": {"custom": ["testOrg License"]},
+            "risky": ["testOrg-risky"]
+        }
+        with open(os.path.join(org_dir, "testOrgId.json"), 'w') as f:
+            json.dump(org_license, f)
+
+        # Create temp output file
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".json") as tmp_out:
+            output_path = tmp_out.name
+
+        try:
+            monkeypatch.setattr('src.load.merge_data.DATA_DIR', temp_dir)
+            monkeypatch.setattr('sys.argv', ['merge_data', '--output', output_path])
+            main()
+
+            with open(output_path, 'r') as f:
+                output_data = json.load(f)
+
+            assert "stableMap" in output_data
+            assert "riskyMap" in output_data
+            assert "testOrg" in output_data
+
+            # Verify stableMap content
+            assert "MIT" in output_data["stableMap"]
+            assert "MIT License" in output_data["stableMap"]
+
+            # Verify riskyMap content
+            assert "mit-risky" in output_data["riskyMap"]
+
+            # Verify testOrg content (canonical + aliases + risky merged)
+            assert "testOrgId" in output_data["testOrg"]
+            assert "testOrg License" in output_data["testOrg"]
+            assert "testOrg-risky" in output_data["testOrg"]
+        finally:
+            os.remove(output_path)
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "os-maintenance-fee-eula",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

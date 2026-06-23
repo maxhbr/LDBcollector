@@ -1,0 +1,105 @@
+name: Go CI
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - go/**
+      - data/**
+      - .github/workflows/go.yaml
+      - codecov.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - go/**
+      - data/**
+      - .github/workflows/go.yaml
+      - codecov.yml
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  check-generated-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: '1.26'
+      - name: Generate merged data
+        run: |
+          mkdir -p _support
+          python3 scripts/src/load/merge_data.py -o ./_support/merged_data.build.json
+      - name: Regenerate Go sources
+        run: |
+          cd go
+          go generate ./...
+      - name: Verify generated files are committed
+        run: |
+          git diff --exit-code -- go
+          if [ -n "$(git status --short --untracked-files=all -- go)" ]; then
+            git status --short --untracked-files=all -- go
+            exit 1
+          fi
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false  # we still want tests to run if vet fails, and we want all versions to run even if one fails
+      matrix:
+        go-version:
+          - '1.25'
+          - '1.26'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: ${{ matrix.go-version }}
+      - name: Run go vet
+        run: |
+          cd go
+          go vet ./...
+      # we only want one of the tests jobs to generate coverage reports to avoid conflicts when uploading to codecov
+      - name: Run tests with coverage
+        if: matrix.go-version == '1.26'
+        run: |
+          cd go
+          go test -race -coverprofile=coverage.out ./...
+      - name: Run tests
+        if: matrix.go-version != '1.26'
+        run: |
+          cd go
+          go test -race ./...
+      - name: Upload coverage to Codecov
+        if: matrix.go-version == '1.26'
+        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2  # v6.0.0
+        with:
+          files: go/coverage.out
+          flags: go
+          fail_ci_if_error: true
+          disable_search: true
+          verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: '1.26'
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v9
+        with:
+          version: v2.12.2
+          working-directory: go

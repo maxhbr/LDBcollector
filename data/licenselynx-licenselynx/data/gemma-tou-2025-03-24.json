@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "gemma-tou-2025-03-24",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

@@ -12,6 +12,9 @@ on:
     paths:
       - data/**
       - .github/workflows/data.yaml
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   validation:
     runs-on: ubuntu-latest
@@ -21,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{secrets.PUSH_TOKEN}}
+          token: ${{ secrets.PUSH_TOKEN || github.token }}
       - name: Install Poetry
         run: |
           pipx install poetry
@@ -44,7 +47,7 @@ jobs:
           cd scripts
           poetry run data_validation
       - name: Run statistics file
-        if: github.event.pull_request.base.ref == 'main'
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
         run: |
           pip install anybadge
           python3 scripts/src/load/merge_data.py -o ./scripts/src/statistics/merged_data.json
@@ -54,7 +57,7 @@ jobs:
           echo "Creating badge with total mappings: ${TOTAL_MAPPINGS}"
           anybadge --label "total mappings" --value "${TOTAL_MAPPINGS}" --file website/badges/total-mappings.svg --overwrite
       - name: Upload statistics file
-        if: github.event.pull_request.base.ref == 'main'
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update total mappings badge"

@@ -7,7 +7,9 @@
         "spdx": [
             "Creative Commons Attribution Non Commercial No Derivatives 4.0 International"
         ],
-        "custom": [],
+        "custom": [
+            "# Attribution-NonCommercial-NoDerivatives 4.0 International"
+        ],
         "scancodeLicensedb": [
             "CC-BY-NC-ND-4.0",
             "cc-by-nc-nd-4.0",

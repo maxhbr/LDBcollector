@@ -31,5 +31,17 @@ For more information, refer to [Contributing](contribution.md).
 
 ## How to suggest changes in the data?
 
-Contributions to LicenseLynx are very welcome and can be done by creating issues and merge requests.  
+Contributions to LicenseLynx are very welcome and can be done by creating issues and pull requests.  
 For more information, refer to [Contributing](contribution.md).
+
+## What are risky mappings?
+
+Some license names are ambiguous or cannot be mapped with full confidence. Instead of guessing, LicenseLynx puts these into a separate **risky map** that is not queried by default.
+You opt in explicitly by passing `risky=True` (Python), `true` (Java/TypeScript) as a parameter.
+See [Risky Mappings](data/risky-mappings.md) for a full explanation.
+
+## What are organization-specific mappings?
+
+Some organizations maintain internal licenses (e.g., inner-source licenses) that are not part of any public license list.
+All libraries support an optional `org` parameter in `map()` to search these organization-specific maps in addition to the standard lookup.
+See the [API Reference](api-reference.md) for details.

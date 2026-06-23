@@ -1,0 +1,82 @@
+codecov:
+  require_ci_to_pass: true
+  notify:
+    wait_for_ci: true
+
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+  status:
+    project:
+      default:
+        informational: true
+      go:
+        flags:
+          - go
+        target: 90%
+        informational: false
+    patch:
+      default:
+        informational: true
+
+flag_management:
+  default_rules:
+    carryforward: true
+  individual_flags:
+    - name: python
+      paths:
+        - python/
+      carryforward: true
+    - name: java
+      paths:
+        - java/
+      carryforward: true
+    - name: typescript
+      paths:
+        - typescript/
+      carryforward: true
+    - name: go
+      paths:
+        - go/
+      carryforward: true
+    - name: scripts
+      paths:
+        - scripts/
+      carryforward: true
+
+component_management:
+  individual_components:
+    - component_id: python
+      name: Python
+      paths:
+        - python/**
+    - component_id: java
+      name: Java
+      paths:
+        - java/**
+    - component_id: typescript
+      name: TypeScript
+      paths:
+        - typescript/**
+    - component_id: go
+      name: Go
+      paths:
+        - go/**
+    - component_id: scripts
+      name: Scripts
+      paths:
+        - scripts/**
+
+comment:
+  layout: "condensed_header, diff, condensed_files"
+  behavior: default
+  require_changes: false
+  show_carryforward_flags: true
+
+ignore:
+  - "**/tests/**"
+  - "**/test/**"
+  - "java/build/**"
+  - "**/*.spec.ts"
+  - "**/*.test.ts"

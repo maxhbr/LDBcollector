@@ -5,24 +5,21 @@
     },
     "aliases": {
         "spdx": [
-            "GNU Affero General Public License v3.0 only"
+            "GNU Affero General Public License v3.0",
+            "GNU Affero General Public License v3.0 only",
+            "AGPL-3.0"
         ],
-        "custom": [],
-        "scancodeLicensedb": [
-            "AGPL 3.0",
-            "AGPL-3.0",
-            "agpl-3.0",
-            "GNU Affero General Public License 3.0",
-            "LicenseRef-AGPL-3.0"
-        ],
-        "pypi": [
-            "GNU Affero General Public License v3",
-            "License :: GNU Affero General Public License v3",
-            "License :: OSI Approved :: GNU Affero General Public License v3",
-            "OSI Approved :: GNU Affero General Public License v3"
+        "custom": [
+            "\"AGPL-3.0-only\""
         ]
     },
-    "rejected": [],
+    "rejected": [
+        "agpl-3.0",
+        "AGPL 3.0",
+        "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
+        "GNU Affero General Public License 3.0",
+        "LicenseRef-AGPL-3.0"
+    ],
     "risky": [],
     "isMajorVersionOnly": true
 }

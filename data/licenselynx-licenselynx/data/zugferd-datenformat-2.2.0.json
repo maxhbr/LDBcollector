@@ -1,7 +1,7 @@
 {
     "canonical": {
         "id": "zugferd-datenformat-2.2.0",
-        "src": "scancodeLicensedb"
+        "src": "scancode-licensedb"
     },
     "aliases": {
         "scancodeLicensedb": [

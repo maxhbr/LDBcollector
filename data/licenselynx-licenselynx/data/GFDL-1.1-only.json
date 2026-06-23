@@ -8,14 +8,13 @@
             "GFDL-1.1",
             "GNU Free Documentation License v1.1 only"
         ],
-        "custom": [],
-        "scancodeLicensedb": [
-            "GFDL 1.1",
-            "gfdl-1.1",
-            "GNU Free Documentation License v1.1"
-        ]
+        "custom": []
     },
-    "rejected": [],
+    "rejected": [
+        "GFDL 1.1",
+        "gfdl-1.1",
+        "GNU Free Documentation License v1.1"
+    ],
     "risky": [],
     "isMajorVersionOnly": false
 }

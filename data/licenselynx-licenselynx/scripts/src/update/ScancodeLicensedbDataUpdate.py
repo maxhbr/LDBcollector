@@ -81,13 +81,14 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
             aliases: List of license name variations
             license_key: ScanCode LicenseDB's license key
         """
+        alias_key = "scancodeLicensedb"
 
         if os.path.exists(os.path.join(self._DATA_DIR, f"{license_key}.json")):
-            self.update_license_file(license_key, aliases)
+            self.update_license_file(license_key, aliases,  alias_key=alias_key)
         else:
             unrecognized_license_id = self.process_unrecognized_license_id(aliases, license_key)
             if unrecognized_license_id:
-                self.create_license_file(unrecognized_license_id, aliases)
+                self.create_license_file(unrecognized_license_id, aliases, alias_key)
 
     def process_licenses(self) -> None:
         """
@@ -123,7 +124,7 @@ class ScancodeLicensedbDataUpdate(BaseDataUpdate):
                 if not spdx_id.startswith("LicenseRef"):
                     self._LOGGER.debug(f"{license_key} is already a spdx license")
                     aliases = self.get_aliases(license_data, is_spdx=True)
-                    self.update_license_file(spdx_id, aliases)
+                    self.update_license_file(spdx_id, aliases, alias_key="scancodeLicensedb")
                 else:
                     self._LOGGER.debug("Starts with 'LicenseRef' as SPDX key")
                     aliases = self.get_aliases(license_data, is_spdx=False)

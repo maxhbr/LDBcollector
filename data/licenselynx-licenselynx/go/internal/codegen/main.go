@@ -1,0 +1,279 @@
+// SPDX-FileCopyrightText: Copyright 2026 Siemens AG
+// SPDX-License-Identifier: BSD-3-Clause
+
+package main
+
+import (
+	"bytes"
+	"encoding/json"
+	"errors"
+	"flag"
+	"fmt"
+	"go/format"
+	"os"
+	"path/filepath"
+	"sort"
+	"strings"
+	"unicode"
+)
+
+const defaultPackageName = "licenselynx"
+
+type canonicalRecord struct {
+	ID  string `json:"id"`
+	Src string `json:"src"`
+}
+
+type mergedData map[string]map[string]canonicalRecord
+
+type generator struct {
+	packageName string
+	outputDir   string
+	data        mergedData
+}
+
+func main() {
+	if err := run(os.Args[1:]); err != nil {
+		_, _ = fmt.Fprintf(os.Stderr, "code generation failed: %v\n", err)
+		os.Exit(1)
+	}
+}
+
+func run(args []string) error {
+	flags := flag.NewFlagSet("codegen", flag.ContinueOnError)
+	flags.SetOutput(new(bytes.Buffer))
+
+	inputPath := flags.String("input", "", "path to merged_data.json")
+	outputDir := flags.String("output", "", "directory for generated files")
+	packageName := flags.String("package", defaultPackageName, "package name for generated files")
+
+	if err := flags.Parse(args); err != nil {
+		return err
+	}
+
+	if *inputPath == "" {
+		return errors.New("missing required -input")
+	}
+
+	if *outputDir == "" {
+		return errors.New("missing required -output")
+	}
+
+	data, err := readMergedData(*inputPath)
+	if err != nil {
+		return err
+	}
+
+	g := generator{
+		packageName: *packageName,
+		outputDir:   *outputDir,
+		data:        data,
+	}
+
+	return g.generate()
+}
+
+func readMergedData(inputPath string) (mergedData, error) {
+	content, err := os.ReadFile(inputPath)
+	if err != nil {
+		return nil, fmt.Errorf("read input: %w", err)
+	}
+
+	var data mergedData
+	if err := json.Unmarshal(content, &data); err != nil {
+		return nil, fmt.Errorf("parse input json: %w", err)
+	}
+
+	return data, nil
+}
+
+func (g generator) generate() error {
+	if err := os.MkdirAll(g.outputDir, 0o755); err != nil {
+		return fmt.Errorf("create output directory: %w", err)
+	}
+
+	if err := g.writeMapFile("stable_map_generated.go", "generatedStableMap", g.data["stableMap"]); err != nil {
+		return err
+	}
+
+	if err := g.writeMapFile("risky_map_generated.go", "generatedRiskyMap", g.data["riskyMap"]); err != nil {
+		return err
+	}
+
+	orgNames := g.organizationNames()
+	for _, orgName := range orgNames {
+		if err := g.writeMapFile(orgFilename(orgName), orgVarName(orgName), g.data[orgName]); err != nil {
+			return err
+		}
+	}
+
+	if err := g.writeOrganizationsFile(orgNames); err != nil {
+		return err
+	}
+
+	if err := g.writeOrganizationIndexFile(orgNames); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g generator) organizationNames() []string {
+	orgNames := make([]string, 0, len(g.data))
+	for name := range g.data {
+		if name == "stableMap" || name == "riskyMap" {
+			continue
+		}
+
+		orgNames = append(orgNames, name)
+	}
+
+	sort.Strings(orgNames)
+	return orgNames
+}
+
+func (g generator) writeMapFile(filename, varName string, entries map[string]canonicalRecord) error {
+	if entries == nil {
+		entries = map[string]canonicalRecord{}
+	}
+
+	var builder strings.Builder
+	writeGeneratedHeader(&builder, g.packageName)
+	_, _ = fmt.Fprintf(&builder, "var %s = map[string]LicenseObject{\n", varName)
+
+	keys := sortedKeys(entries)
+	for _, key := range keys {
+		record := entries[key]
+		_, _ = fmt.Fprintf(
+			&builder,
+			"\t%q: {ID: %q, Src: %q},\n",
+			key,
+			record.ID,
+			record.Src,
+		)
+	}
+
+	_, _ = builder.WriteString("}\n")
+	return writeFormattedFile(filepath.Join(g.outputDir, filename), builder.String())
+}
+
+func (g generator) writeOrganizationsFile(orgNames []string) error {
+	var builder strings.Builder
+	writeGeneratedHeader(&builder, g.packageName)
+
+	if len(orgNames) == 0 {
+		_, _ = builder.WriteString("const ()\n")
+		return writeFormattedFile(filepath.Join(g.outputDir, "organizations_generated.go"), builder.String())
+	}
+
+	_, _ = builder.WriteString("const (\n")
+	for _, orgName := range orgNames {
+		_, _ = fmt.Fprintf(&builder, "\t%s Organization = %q\n", orgConstName(orgName), orgName)
+	}
+	_, _ = builder.WriteString(")\n")
+
+	return writeFormattedFile(filepath.Join(g.outputDir, "organizations_generated.go"), builder.String())
+}
+
+func (g generator) writeOrganizationIndexFile(orgNames []string) error {
+	var builder strings.Builder
+	writeGeneratedHeader(&builder, g.packageName)
+	_, _ = builder.WriteString("var generatedOrgMaps = map[Organization]map[string]LicenseObject{\n")
+	for _, orgName := range orgNames {
+		_, _ = fmt.Fprintf(&builder, "\t%s: %s,\n", orgConstName(orgName), orgVarName(orgName))
+	}
+	_, _ = builder.WriteString("}\n")
+
+	return writeFormattedFile(filepath.Join(g.outputDir, "org_index_generated.go"), builder.String())
+}
+
+func writeGeneratedHeader(builder *strings.Builder, packageName string) {
+	_, _ = builder.WriteString("// SPDX-FileCopyrightText: Copyright 2026 Siemens AG\n")
+	_, _ = builder.WriteString("// SPDX-License-Identifier: BSD-3-Clause\n")
+	_, _ = builder.WriteString("// Code generated by go/internal/codegen. DO NOT EDIT.\n\n")
+	_, _ = fmt.Fprintf(builder, "package %s\n\n", packageName)
+}
+
+func writeFormattedFile(filename, source string) error {
+	formattedSource, err := format.Source([]byte(source))
+	if err != nil {
+		return fmt.Errorf("format %s: %w", filepath.Base(filename), err)
+	}
+
+	if err := os.WriteFile(filename, formattedSource, 0o644); err != nil {
+		return fmt.Errorf("write %s: %w", filepath.Base(filename), err)
+	}
+
+	return nil
+}
+
+func sortedKeys[K ~string, V any](entries map[K]V) []K {
+	keys := make([]K, 0, len(entries))
+	for key := range entries {
+		keys = append(keys, key)
+	}
+
+	sort.Slice(keys, func(i, j int) bool {
+		return keys[i] < keys[j]
+	})
+
+	return keys
+}
+
+func orgFilename(name string) string {
+	return "org_" + sanitizeFilename(name) + "_map_generated.go"
+}
+
+func orgVarName(name string) string {
+	return "generated" + identifierSuffix(name) + "Map"
+}
+
+func orgConstName(name string) string {
+	return "Org" + identifierSuffix(name)
+}
+
+func sanitizeFilename(name string) string {
+	var builder strings.Builder
+	for _, r := range strings.ToLower(name) {
+		if unicode.IsLetter(r) || unicode.IsDigit(r) {
+			builder.WriteRune(r)
+			continue
+		}
+
+		builder.WriteByte('_')
+	}
+
+	return builder.String()
+}
+
+func identifierSuffix(name string) string {
+	parts := strings.FieldsFunc(name, func(r rune) bool {
+		return !unicode.IsLetter(r) && !unicode.IsDigit(r)
+	})
+
+	if len(parts) == 0 {
+		return "Org"
+	}
+
+	var builder strings.Builder
+	for _, part := range parts {
+		if part == "" {
+			continue
+		}
+
+		runes := []rune(strings.ToLower(part))
+		runes[0] = unicode.ToUpper(runes[0])
+		builder.WriteString(string(runes))
+	}
+
+	suffix := builder.String()
+	if suffix == "" {
+		return "Org"
+	}
+
+	if unicode.IsDigit([]rune(suffix)[0]) {
+		return "X" + suffix
+	}
+
+	return suffix
+}
