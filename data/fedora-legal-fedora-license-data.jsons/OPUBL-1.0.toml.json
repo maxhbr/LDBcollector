@@ -6,6 +6,7 @@
     ],
     "usage": " Allowed-for documentation if the copyright holder does not exercise any of the “LICENSE OPTIONS” listed in Section VI\n",
     "packages_with_exceptions": [
+      "gstreamer1-doc",
       "vim"
     ]
   },
