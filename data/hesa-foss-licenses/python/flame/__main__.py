@@ -44,12 +44,6 @@ def get_parser():
                         help='Add licenses as found in the supplied directory',
                         default=None)
 
-    parser.add_argument('-lmf', '--license-matrix-file',
-                        type=str,
-                        dest='license_matrix_file',
-                        help='Supply license matrix to override OSADL\'s license compatibility matrix',
-                        default=None)
-
     parser.add_argument('-ndu', '--no-dual-update',
                         action='store_true',
                         help='do not update dual licenses (e.g. GPL-2.0-or-later -> GPL-2.0-only OR GPL-3.0-only)',
@@ -86,12 +80,16 @@ def get_parser():
     parser.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
     parser.add_argument('--validate-scancode', action='store_true', dest='validate_scancode', help='Validate that the resulting license expression is valid according to SPDX syntax and identifier exists in the Scancode license list', default=False)
     parser.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
-    parser.add_argument('--validate-osadl', action='store_true', dest='validate_osadl', help='Validate that the resulting licenses are supported by OSADL\'s compatibility matrix.', default=False)
 
     # license
     parser_e = subparsers.add_parser(
         'license', help='Convert license to SPDX identifiers and syntax')
     parser_e.set_defaults(which='license', func=show_license)
+    parser_e.add_argument('-sc', '--scancode-keys',
+                          action='store_true',
+                          dest='scancode_keys',
+                          help='Output license with scancode keys instead of SPDX identifiers',
+                          default=False)
     parser_e.add_argument('license', type=str, nargs='+', help='license expression to fix')
 
     # full license
@@ -102,9 +100,9 @@ def get_parser():
 
     # compatibility
     parser_c = subparsers.add_parser(
-        'compat', help='Convert license to using licenses existing in the OSADL\'s matrix')
+        'compat', help='Convert license to a license typically supported by other compliance tools')
     parser_c.set_defaults(which='compat', func=compatibility)
-    parser_c.add_argument('license', type=str, nargs='+', help='license name to display')
+    parser_c.add_argument('license', type=str, nargs='+', help='license to convert')
 
     # simplify
     parser_s = subparsers.add_parser(
@@ -222,8 +220,9 @@ def compatibility(fl, formatter, args):
 
 def show_license(fl, formatter, args):
     validations = __validations(args)
+    scancode_keys = args.scancode_keys
     expression = fl.expression_license(' '.join(args.license), validations=validations, update_dual=(not args.no_dual_update))
-    return formatter.format_expression(expression, args.verbose)
+    return formatter.format_expression(expression, args.verbose, scancode_keys)
 
 def full_license(fl, formatter, args):
     expr_split = fl.expression_license(args.license)['identified_license'].split()
@@ -240,8 +239,6 @@ def __validations(args):
         validations.append(Validation.SPDX)
     if args.validate_relaxed:
         validations.append(Validation.RELAXED)
-    if args.validate_osadl:
-        validations.append(Validation.OSADL)
     if args.validate_scancode:
         validations.append(Validation.SCANCODE)
 
@@ -262,7 +259,6 @@ def main():
     config['additional-license-dir'] = args.additional_license_dir
     config['license-dir'] = args.license_dir
     config['flame-config'] = args.flame_config
-    config['license-matrix-file'] = args.license_matrix_file
 
     try:
         fl = FossLicenses(config=config)

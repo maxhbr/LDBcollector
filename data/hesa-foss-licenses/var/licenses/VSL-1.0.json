@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Vovida Software License v. 1.0",
     "scancode_key": "vsl-1.0",
@@ -19,6 +23,7 @@
         "Vovida Software License, Version 1.0",
         "VSL, 1.0",
         "VSL, Version 1.0",
-        "The Vovida Software License v. 1.0"
+        "The Vovida Software License v. 1.0",
+        "vsl-1-0"
     ]
 }

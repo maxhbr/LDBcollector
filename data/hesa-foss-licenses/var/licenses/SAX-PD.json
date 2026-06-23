@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "SAX Public Domain Notice",
     "scancode_key": "sax-pd",
@@ -17,7 +21,7 @@
         "https://spdx.org/licenses/sax-pd",
         "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt",
         "scancode:sax-pd",
-      "sax-pd",
-      "The SAX License"
+        "sax-pd",
+        "The SAX License"
     ]
 }

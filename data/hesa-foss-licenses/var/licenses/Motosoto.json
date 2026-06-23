@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Motosoto Open Source License v0.9.1",
     "scancode_key": "motosoto-0.9.1",
@@ -19,6 +23,7 @@
         "MOTOSOTO OPEN SOURCE LICENSE",
         "osi:Motosoto",
         "scancode:motosoto-0.9.1",
-        "Motosoto Open Source License"
+        "Motosoto Open Source License",
+        "motosoto"
     ]
 }

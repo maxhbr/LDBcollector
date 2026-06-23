@@ -47,12 +47,15 @@ def test_aliases_bad_input():
 def test_expression_license():
     lic = fl.expression_license("GPL2+", update_dual=False)
     assert lic['identified_license'] == "GPL-2.0-or-later"
+    assert lic['identified_license_scancode_key'] == "gpl-2.0-plus"
 
     lic = fl.expression_license("GPL (v2 or later)", update_dual=False)
     assert lic['identified_license'] == "GPL-2.0-or-later"
+    assert lic['identified_license_scancode_key'] == "gpl-2.0-plus"
 
     lic = fl.expression_license("BSD-3-Clause and BSD3", update_dual=False)
     assert lic['identified_license'] == "BSD-3-Clause"
+    assert lic['identified_license_scancode_key'] == "bsd-new"
 
 def test_with_license_1():
     lic = fl.expression_license("BSD-3-Clause WITH SomeException", update_dual=False)
@@ -61,11 +64,13 @@ def test_with_license_1():
 def test_with_license_2():
     lic = fl.expression_license("BSD3 w/SomeException", update_dual=False)
     assert lic['identified_license'] == "BSD-3-Clause WITH SomeException"
+    assert lic['identified_license_scancode_key'] == "bsd-new WITH SomeException"
 
 def test_with_license_with_parent():
     """Test issue 69"""
     lic = fl.expression_license("GNU General Public License v2 or later (GPLv2+)", update_dual=False)
     assert lic['identified_license'] == "GPL-2.0-or-later"
+    assert lic['identified_license_scancode_key'] == "gpl-2.0-plus"
     pass
 
 def test_expression_license_types():

@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "FastCGI DevKit",
-    "scancode_key": "fastcgi-devkit", 
+    "scancode_key": "fastcgi-devkit",
     "spdxid": "OML",
     "aliases": [
         "OML",

@@ -1,21 +1,25 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "VIM License",
-  "scancode_key": "vim", 
-  "spdxid": "Vim",
-  "aliases": [
-   "Vim",
-   "Vim License",
-   "vim",
-   "VIM License",
-   "scancode://vim",
-   "VIM LICENSE",
-   "vim License",
-   "vim license",
-   "VIM licnese",
-   "scancode:vim"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "VIM License",
+    "scancode_key": "vim",
+    "spdxid": "Vim",
+    "aliases": [
+        "Vim",
+        "Vim License",
+        "vim",
+        "VIM License",
+        "scancode://vim",
+        "VIM LICENSE",
+        "vim License",
+        "vim license",
+        "VIM licnese",
+        "scancode:vim"
+    ]
 }

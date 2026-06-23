@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Q Public License Version 1.0",
+    "scancode_key": "qpl-1.0",
+    "spdxid": "QPL-1.0",
+    "aliases": [
+        "License :: OSI Approved :: Qt Public License (QPL)",
+        "Q Public License 1.0",
+        "Q PUBLIC LICENSE version 1.0",
+        "scancode://qpl-1.0",
+        "The Q Public License Version (QPL-1.0)",
+        "osi:QPL-1.0",
+        "QPL 1.0",
+        "QPL, Version 1.0",
+        "Q Public License",
+        "Q Public License (QPL), Version 1.0",
+        "scancode:qpl-1.0",
+        "qpl-1-0",
+        "The Q Public License Version"
+    ]
+}

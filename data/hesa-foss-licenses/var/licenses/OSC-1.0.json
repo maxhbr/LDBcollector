@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "OSC License 1.0",
+    "scancode_key": "osc-1.0",
+    "spdxid": "OSC-1.0",
+    "aliases": [
+        "osc-1-0",
+        "OSC License 1.0"
+    ]
+}

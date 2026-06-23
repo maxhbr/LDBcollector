@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Sun Public License 1.0",
     "scancode_key": "spl-1.0",
@@ -17,6 +21,7 @@
         "SUN PUBLIC LICENSE Version 1.0",
         "osi:SPL-1.0",
         "scancode:spl-1.0",
-        "SPL, Version 1.0"
+        "SPL, Version 1.0",
+        "spl-1-0"
     ]
 }

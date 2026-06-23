@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "MIT License",
-    "scancode_key": "mit", 
+    "scancode_key": "mit",
     "spdxid": "MIT",
     "aliases": [
         "MIT license (also X11)",
@@ -43,11 +47,13 @@
         "The MIT Licensse",
         "Expat (MIT)",
         "MIT / Expat",
-      "MIT License (MIT License)",
-      "LICENSE-MIT",
-      "MIT (http://mootools.net/license.txt)",
-      "c-ares license",
-      "Expat/MIT",
-      "LicenseRef-C-Ares"
+        "MIT License (MIT License)",
+        "LICENSE-MIT",
+        "MIT (http://mootools.net/license.txt)",
+        "c-ares license",
+        "Expat/MIT",
+        "LicenseRef-C-Ares",
+        "expat~x",
+        "LicenseRef-c-Ares"
     ]
 }

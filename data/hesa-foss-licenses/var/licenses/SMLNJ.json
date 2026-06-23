@@ -1,8 +1,12 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
     "name": "Standard ML of New Jersey",
     "scancode_key": "standard-ml-nj",
     "spdxid": "SMLNJ",
@@ -14,6 +18,7 @@
         "Standard ML of New Jersey License",
         "scancode:standard-ml-nj",
         "SMLNJ LICENSE",
-        "STANDARD ML OF NEW JERSEY COPYRIGHT NOTICE, LICENSE AND DISCLAIMER"
-  ]
+        "STANDARD ML OF NEW JERSEY COPYRIGHT NOTICE, LICENSE AND DISCLAIMER",
+        "smlnj"
+    ]
 }

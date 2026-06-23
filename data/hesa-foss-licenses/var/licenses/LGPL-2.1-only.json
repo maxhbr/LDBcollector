@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "GNU Lesser General Public License 2.1",
     "scancode_key": "lgpl-2.1",
@@ -64,14 +68,14 @@
         "The GNU Lesser General Public License, version 2.1",
         "GNU LGPL version 2.1",
         "LGPLv2.1 only",
-      "Lesser General Public License (LGPL) (LGPL 2.1)",
-      "GNU Lesser General Public Licensev2.1",
-      "GNU Lesser General Public License-2.1",
-      "LGPL2_1",
-      "LGPL version 2.1",
-      "The GNU GNU GNU Lesser General Public License Version 2.1",
-      "GNU Lesser General Public License-2.1-only",
-      "lgpl-2.1-only",
-      "GNU LGPL-2.1-only"
+        "Lesser General Public License (LGPL) (LGPL 2.1)",
+        "GNU Lesser General Public Licensev2.1",
+        "GNU Lesser General Public License-2.1",
+        "LGPL2_1",
+        "LGPL version 2.1",
+        "The GNU GNU GNU Lesser General Public License Version 2.1",
+        "GNU Lesser General Public License-2.1-only",
+        "lgpl-2.1-only",
+        "GNU LGPL-2.1-only"
     ]
 }

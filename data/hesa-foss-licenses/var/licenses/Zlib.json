@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "ZLIB License",
-    "scancode_key": "zlib", 
+    "scancode_key": "zlib",
     "spdxid": "Zlib",
     "aliases": [
         "Zlib",
@@ -27,16 +31,16 @@
         "scancode:zlib",
         "scancode:d-zlib",
         "osi:Zlib",
-      "zlib-libpng",
-      "Zlib license",
-      "zlib license",
-      "Zlib (simple permissive)",
-      "ZLIB_LIBPNG_LICENSE",
-      "Z-lib license",
-      "ZLIB_LICENSE",
-      "zlib-libpng-like-permissive",
-      "Zlib License",
-      "ZLIB",
-      "https://zlib.net/zlib_license.html"
+        "zlib-libpng",
+        "Zlib license",
+        "zlib license",
+        "Zlib (simple permissive)",
+        "ZLIB_LIBPNG_LICENSE",
+        "Z-lib license",
+        "ZLIB_LICENSE",
+        "zlib-libpng-like-permissive",
+        "Zlib License",
+        "ZLIB",
+        "https://zlib.net/zlib_license.html"
     ]
 }

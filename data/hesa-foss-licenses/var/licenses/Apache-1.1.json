@@ -2,7 +2,11 @@
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": "",
-        "date": "2023-08-29"
+        "date": "2023-08-29",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Apache License 1.1",
     "scancode_key": "apache-1.1",
@@ -22,10 +26,10 @@
         "https://spdx.org/licenses/apache-1.1",
         "scancode:apache-1.1",
         "osi:Apache-1.1",
-      "apache-1.1",
-      "Apache 1.1",
-      "Apache License v.1.1",
-      "APACHE1.1",
-      "Apache License, Version 1.1"
+        "apache-1.1",
+        "Apache 1.1",
+        "Apache License v.1.1",
+        "APACHE1.1",
+        "Apache License, Version 1.1"
     ]
 }

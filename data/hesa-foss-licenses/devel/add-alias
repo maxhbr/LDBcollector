@@ -1,0 +1,39 @@
+#!/bin/env python3
+
+# SPDX-FileCopyrightText: 2026 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+import json
+import sys
+
+if len(sys.argv) < 2:
+    print("SYNTAX ERROR")
+    sys,exit(1)
+
+LICENSE=sys.argv[1]
+ALIASES=sys.argv[2:]
+
+LICENSE_FILE=f'var/licenses/{LICENSE}.json'
+NEW_LICENSE_FILE=f'var/licenses/{LICENSE}.new'
+
+with open(LICENSE_FILE) as fp:
+    print("License: " + LICENSE)
+    data = json.load(fp)
+    #print("data: " + json.dumps(data, indent=4))
+    current_aliases = data['aliases']
+    print("  * current nr of aliases: " + str(len(current_aliases)))
+    for alias in ALIASES:
+        if alias not in current_aliases:
+            current_aliases.append(alias)
+            
+    print("  * new nr of aliases:     " + str(len(current_aliases)))
+    fp.close()
+
+    #print(json.dumps(data, indent=4))
+    with open(LICENSE_FILE, 'w') as fp:
+        json.dump(data, fp, indent=4)
+        fp.close()
+        print(f'Updated {LICENSE_FILE}')
+
+    

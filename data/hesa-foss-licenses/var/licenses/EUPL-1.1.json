@@ -1,31 +1,36 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "European Union Public Licence 1.1",
-  "scancode_key": "eupl-1.1",
-  "spdxid": "EUPL-1.1",
-  "aliases": [
-   "EUPL-1.1",
-   "European Union Public License 1.1",
-   "eupl-1.1",
-   "European Union Public License, Version 1.1",
-   "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
-   "European Union Public Licence, v.1.1",
-   "scancode://eupl-1.1",
-   "EUPL 1.1",
-   "EUPL Version 1.1",
-   "EUPL v.1.1",
-   "EUPL V.1.1",
-   "European Union Public License V. 1.1",
-   "European Union Public License v.1.1",
-   "European Union Public License (EUPL) version 1.1",
-   "European Union Public License v1.1",
-   "European Union Public License version 1.1",
-   "scancode:eupl-1.1",
-   "osi:EUPL-1.1",
-   "European Union Public Licence 1.1 (EUPL 1.1)",
-   "The European Union Public License, version 1.1"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "European Union Public Licence 1.1",
+    "scancode_key": "eupl-1.1",
+    "spdxid": "EUPL-1.1",
+    "aliases": [
+        "EUPL-1.1",
+        "European Union Public License 1.1",
+        "eupl-1.1",
+        "European Union Public License, Version 1.1",
+        "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
+        "European Union Public Licence, v.1.1",
+        "scancode://eupl-1.1",
+        "EUPL 1.1",
+        "EUPL Version 1.1",
+        "EUPL v.1.1",
+        "EUPL V.1.1",
+        "European Union Public License V. 1.1",
+        "European Union Public License v.1.1",
+        "European Union Public License (EUPL) version 1.1",
+        "European Union Public License v1.1",
+        "European Union Public License version 1.1",
+        "scancode:eupl-1.1",
+        "osi:EUPL-1.1",
+        "European Union Public Licence 1.1 (EUPL 1.1)",
+        "The European Union Public License, version 1.1",
+        "eupl-1-1"
+    ]
 }

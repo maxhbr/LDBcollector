@@ -52,5 +52,3 @@ def test_compat_validations():
     with pytest.raises(FlameException):
         c = fl.expression_compatibility_as('No no license', [Validation.SPDX], update_dual=False)
 
-    with pytest.raises(FlameException):
-        c = fl.expression_compatibility_as('No no license', [Validation.OSADL], update_dual=False)

@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 forte version 1.1",
+    "scancode_key": "liliq-rplus-1.1",
+    "spdxid": "LiLiQ-Rplus-1.1",
+    "aliases": [
+        "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 forte version 1.1",
+        "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 forte, Version 1.1",
+        "LiLiQ-R+",
+        "LiLiQ-Rplus-1.1",
+        "LiLiQ Rplus License 1.1",
+        "http://opensource.org/licenses/LiLiQ-Rplus-1.1 [no longer live]",
+        "https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-en-francais/licence-libre-du- quebec-reciprocite-forte-liliq-r-v1-1/ [no longer live]",
+        "https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-in-english/quebec-free-and-open-source-licence-strong-reciprocity-liliq-r-v1-1/",
+        "LiLiQ Rplus, 1.1",
+        "LiLiQ Rplus License, 1.1",
+        "LiLiQ Rplus License, Version 1.1",
+        "LiLiQ Rplus, Version 1.1",
+        "liliq-rplus-1-1"
+    ]
+}

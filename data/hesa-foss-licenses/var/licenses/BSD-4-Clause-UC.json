@@ -1,8 +1,12 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-	"comment": "",
-	"date": "2023-08-29"
+        "comment": "",
+        "date": "2023-08-29",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "BSD-4-Clause-UC",
     "scancode_key": "bsd-original-uc",
@@ -12,10 +16,10 @@
         "BSD-4-Clause-UC",
         "scancode://bsd-original-uc",
         "BSD-Original-UC",
-      "bsd-original-uc",
-      "bsd-4-clause-uc",
-      "bsd-4-clause-ucb",
-      "bsd-4-clause-california",
-      "BSD-4-clause-California"
+        "bsd-original-uc",
+        "bsd-4-clause-uc",
+        "bsd-4-clause-ucb",
+        "bsd-4-clause-california",
+        "BSD-4-clause-California"
     ]
 }

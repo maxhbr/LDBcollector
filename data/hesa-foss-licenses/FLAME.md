@@ -61,13 +61,13 @@ BSD-3-Clause AND LicenseRef-flame-x11-keith-packard
 
 ## Get a license expression with compatible licenses
 
-You want an expression with licenses that are supported by [osadl_matrix](https://github.com/priv-kweihmann/osadl-matrix):
+You want an expression with licenses that are supported by typical compliance tools:
 ```
 $ flame compat "BSD3 & x11-keith-packard"
 BSD-3-Clause AND HPND
 ```
 
-You want an expression with licenses that are supported by [osadl_matrix](https://github.com/priv-kweihmann/osadl-matrix) from `BBSD3 & x11-keith-packard` with info on how the data was found:
+You want an expression with licenses that are supported by typical compliance tools from `BBSD3 & x11-keith-packard` with info on how the data was found:
 ```
 $ flame --verbose compat "BSD3 & x11-keith-packard"
 BSD-3-Clause AND HPND
@@ -110,7 +110,7 @@ or -> OR
 
 ## Compatibilities
 
-To list all licenses that has a license with same compatibility as an license known to [osadl_matrix](https://github.com/priv-kweihmann/osadl-matrix) (incomplete listing below):
+To list all licenses that has a license with same compatibility as an license known to typical compliance tools (incomplete listing below):
 ``` 
 $ flame compats
 LicenseRef-flame-x11-keith-packard -> HPND

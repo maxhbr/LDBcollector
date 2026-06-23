@@ -1,0 +1,29 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "PHP License 3.0",
+    "scancode_key": "php-3.0",
+    "spdxid": "PHP-3.0",
+    "aliases": [
+        "PHP-3.0",
+        "PHP License 3.0",
+        "PHP License v3.0",
+        "scancode://php-3.0",
+        "The PHP License, Version 3.0",
+        "osi:PHP-3.0",
+        "PHP",
+        "PHP, 3.0",
+        "PHP License, 3.0",
+        "PHP License, version 3.0",
+        "PHP License, Version 3.0",
+        "PHP, Version 3.0",
+        "scancode:php-3.0",
+        "php-3-0"
+    ]
+}

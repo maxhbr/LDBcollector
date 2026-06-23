@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "MirOS License",
     "scancode_key": "mir-os",
@@ -19,6 +23,7 @@
         "http://www.opensource.org/licenses/miros",
         "osi:MirOS",
         "scancode:mir-os",
-        "License :: OSI Approved :: MirOS License (MirOS)"
+        "License :: OSI Approved :: MirOS License (MirOS)",
+        "miros"
     ]
 }

@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Universal Permissive License (UPL) v1.0",
     "scancode_key": "upl-1.0",
@@ -18,6 +22,7 @@
         "scancode:upl-1.0",
         "License :: OSI Approved :: Universal Permissive License",
         "License :: OSI Approved :: Universal Permissive License (UPL)",
-        "The Universal Permissive License Version 1.0"
+        "The Universal Permissive License Version 1.0",
+        "upl-1-0"
     ]
 }

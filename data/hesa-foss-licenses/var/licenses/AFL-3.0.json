@@ -1,23 +1,27 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Academic Free License 3.0",
-  "scancode_key": "afl-3.0",
-  "spdxid": "AFL-3.0",
-  "aliases": [
-   "Academic Free License v3.0",
-   "afl-3.0",
-   "Academic Free License 3.0",
-   "Academic Free License, Version 3.0",
-   "scancode://afl-3.0",
-   "AFL 3.0",
-   "AFL, Version 3.0",
-   "AFL, 3.0",
-   "scancode:afl-3.0",
-   "osi:AFL-3.0",
-    "osi:afl-3.0",
-    "Academic Free License version 3.0"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Academic Free License 3.0",
+    "scancode_key": "afl-3.0",
+    "spdxid": "AFL-3.0",
+    "aliases": [
+        "Academic Free License v3.0",
+        "afl-3.0",
+        "Academic Free License 3.0",
+        "Academic Free License, Version 3.0",
+        "scancode://afl-3.0",
+        "AFL 3.0",
+        "AFL, Version 3.0",
+        "AFL, 3.0",
+        "scancode:afl-3.0",
+        "osi:AFL-3.0",
+        "osi:afl-3.0",
+        "Academic Free License version 3.0"
+    ]
 }

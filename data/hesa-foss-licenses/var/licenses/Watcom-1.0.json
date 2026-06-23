@@ -1,0 +1,29 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Sybase Open Watcom Public License v1.0",
+    "scancode_key": "sybase",
+    "spdxid": "Watcom-1.0",
+    "aliases": [
+        "Open Watcom 1.0",
+        "scancode://sybase",
+        "Sybase Open Watcom Public License 1.0",
+        "The Sybase Open Source Licence",
+        "Watcom-1.0",
+        "Watcom License 1.0",
+        "osi:Watcom-1.0",
+        "scancode:sybase",
+        "Sybase Open Watcom Public License version 1.0",
+        "Watcom 1.0",
+        "Watcom License, 1.0",
+        "Watcom License, Version 1.0",
+        "Watcom, Version 1.0",
+        "watcom-1-0"
+    ]
+}

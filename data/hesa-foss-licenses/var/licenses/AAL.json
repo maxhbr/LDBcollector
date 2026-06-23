@@ -1,18 +1,22 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Attribution Assurance License",
-  "scancode_key": "attribution",
-  "spdxid": "AAL",
-  "aliases": [
-   "AAL",
-   "Attribution Assurance License",
-   "Attribution Assurance Licenses",
-   "License :: OSI Approved :: Attribution Assurance License",
-   "scancode://attribution",
-   "osi:attribution",
-   "scancode:attribution"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Attribution Assurance License",
+    "scancode_key": "attribution",
+    "spdxid": "AAL",
+    "aliases": [
+        "AAL",
+        "Attribution Assurance License",
+        "Attribution Assurance Licenses",
+        "License :: OSI Approved :: Attribution Assurance License",
+        "scancode://attribution",
+        "osi:attribution",
+        "scancode:attribution"
+    ]
 }

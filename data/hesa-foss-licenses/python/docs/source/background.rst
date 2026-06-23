@@ -28,7 +28,7 @@ example is the `X11-Style (Keith Packard)
 license, which really is the same license as the `Historical
 Permission Notice and Disclaimer - sell variant
 <https://spdx.org/licenses/HPND-sell-variant.html>`_. `X11-Style
-(Keith Packard)` is not supported in for example the `OSADL matrix <https://github.com/priv-kweihmann/osadl-matrix>`_, but `HPND-sell-variant` is. Again, a seasoned license engineer or lawyer knows which licenses are compatible and not, but we need to make it possible for a machine to assist us. 
+(Keith Packard)` is not supported by typical compliance tools, but `HPND-sell-variant` is. Again, a seasoned license engineer or lawyer knows which licenses are compatible and not, but we need to make it possible for a machine to assist us. 
 
 Description
 ===========

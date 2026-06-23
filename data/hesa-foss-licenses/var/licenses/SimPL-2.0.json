@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Simple Public License Version 2.0",
+    "scancode_key": "simpl-2.0",
+    "spdxid": "SimPL-2.0",
+    "aliases": [
+        "scancode://simpl-2.0",
+        "SimPL-2.0",
+        "Simple Public License 2.0",
+        "Simple Public License (SimPL-2.0)",
+        "simpl-2-0"
+    ]
+}

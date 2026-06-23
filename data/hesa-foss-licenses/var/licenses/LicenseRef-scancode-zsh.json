@@ -1,12 +1,16 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Z Shell License",
-  "scancode_key": "zsh",
-  "spdxid": "LicenseRef-scancode-zsh",
-  "aliases": [
-    "ZSH License"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Z Shell License",
+    "scancode_key": "zsh",
+    "spdxid": "LicenseRef-scancode-zsh",
+    "aliases": [
+        "ZSH License"
+    ]
 }

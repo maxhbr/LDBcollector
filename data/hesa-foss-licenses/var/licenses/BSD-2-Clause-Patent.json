@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "BSD-2-Clause Plus Patent",
     "scancode_key": "bsd-plus-patent",
@@ -14,6 +18,7 @@
         "scancode:bsd-plus-patent",
         "osi:BSDplusPatent",
         "bsd-plus-patent",
-        "BSD+Patent"
-  ]
+        "BSD+Patent",
+        "bsd-2-clause-patent"
+    ]
 }

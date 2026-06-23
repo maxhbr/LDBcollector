@@ -1,0 +1,23 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "BSD 3-Clause Open MPI variant",
+    "scancode_key": "bsd-3-clause-open-mpi",
+    "spdxid": "BSD-3-Clause-Open-MPI",
+    "aliases": [
+        "BSD 3-Clause License (Open MPI)",
+        "BSD 3-Clause Open MPI Variant",
+        "Open MPI License",
+        "scancode://bsd-3-clause-open-mpi",
+        "BSD-3-Clause-Open-MPI",
+        "BSD 3-Clause Open MPI variant",
+        "scancode:bsd-3-clause-open-mpi",
+        "bsd-3-clause-open-mpi"
+    ]
+}

@@ -1,23 +1,27 @@
 {
-  "meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Affero General Public License 1.0",
-  "scancode_key": "agpl-1.0",
-  "spdxid": "AGPL-1.0-only",
-  "aliases": [
-    "Affero General Public License 1.0",
-    "Affero General Public License (v. 1)",
-    "Affero General Public License v1.0 only",
-    "AGPL 1.0",
-    "AGPL-1.0-only",
-    "scancode://agpl-1.0",
-    "Affero General Public License",
-    "Affero General Public License v1.0",
-    "AFFERO GENERAL PUBLIC LICENSE Version 1",
-    "AGPL-1.0",
-    "AGPLv1",
-    "scancode:agpl-1.0"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Affero General Public License 1.0",
+    "scancode_key": "agpl-1.0",
+    "spdxid": "AGPL-1.0-only",
+    "aliases": [
+        "Affero General Public License 1.0",
+        "Affero General Public License (v. 1)",
+        "Affero General Public License v1.0 only",
+        "AGPL 1.0",
+        "AGPL-1.0-only",
+        "scancode://agpl-1.0",
+        "Affero General Public License",
+        "Affero General Public License v1.0",
+        "AFFERO GENERAL PUBLIC LICENSE Version 1",
+        "AGPL-1.0",
+        "AGPLv1",
+        "scancode:agpl-1.0"
+    ]
 }

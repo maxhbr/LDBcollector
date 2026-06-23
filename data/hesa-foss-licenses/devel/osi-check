@@ -1,0 +1,175 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: 2026 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+TMP_DIR=tmp-licenses
+mkdir -p ${TMP_DIR}
+cd ${TMP_DIR}
+
+OSI_API=https://opensource.org/api
+OSI_LICENSES=${OSI_API}/licenses
+
+if [ "$1" != "" ]
+then
+    DEBUG=true
+fi
+
+err()
+{
+    if [ "$DEBUG" != "" ]
+    then
+        echo "$*" 1>&2
+    fi
+}
+
+verbose()
+{
+    err "$*"
+}
+
+download()
+{
+    URL="$1"
+    INDENT="$2"
+    FILE="$(basename $URL)"
+    
+    verbose "${INDENT}Download \"$URL\""
+    if [ -f "${FILE}" ]
+    then
+        verbose "${INDENT}  * \"$FILE\" already exists, not downloading $URL"
+        return
+    fi
+    
+    verbose "${INDENT}  * downloading \"$URL\""
+    curl -s -LJO "${URL}"
+    if [ $? -ne 0 ]
+    then
+        err "Failed downloading \"$URL\""
+        exit 1
+    fi
+}
+
+check_foss_licenses_helper()
+{
+    ALIAS="$1"
+    EXPECTED="$2"
+    NAME="$3"
+
+    if [ "$EXPECTED" = "" ]
+    then
+        echo "Expected $EXPECTED.... . Alias: $ALIAS"
+        if [ "$ALIAS"  = "los-alamos-national-labs-bsd-3-variant" ]
+        then
+            echo "ignoring $ALIAS, since SPDXID is missing"
+            return
+        else
+            exit 0
+        fi
+    fi
+
+    cd .. > /dev/null 2>&1
+    LICENSE_FILE=./var/licenses/${EXPECTED}.json
+    LICENSE_FILE2=./var/licenses/${EXPECTED}.LICENSE
+    if [ ! -f  $LICENSE_FILE ]
+    then
+        echo "License missing"
+        echo "  ALIAS:        $ALIAS"
+        echo "  EXPECTED:     $EXPECTED"
+        echo "  LICENSE_FILE  $LICENSE_FILE"
+        echo -n "  License file: "
+        ls -al $LICENSE_FILE
+        echo xdg-open "https://scancode-licensedb.aboutcode.org/?search=$EXPECTED"
+#        xdg-open "https://scancode-licensedb.aboutcode.org/?search=$EXPECTED"
+        exit 1
+    fi
+    ACTUAL=$(./devel/flame -of text license "$ALIAS")
+    ACTUAL_NAMED=$(./devel/flame -of text license "$NAME")
+
+    # check alias
+    if [ "${EXPECTED}" != "${ACTUAL}" ]
+    then
+        verbose "      missing: ${ALIAS} ${EXPECTED}"
+        echo "./devel/flame -of text license $ALIAS"
+        echo "# License ${EXPECTED} is missing alias: $ALIAS"
+        ./devel/add-alias ${EXPECTED} ${ALIAS}
+        echo git add $LICENSE_FILE $LICENSE_FILE2
+        echo git diff $LICENSE_FILE
+        echo git commit -m " 'add alias for: ${EXPECTED}' " $LICENSE_FILE $LICENSE_FILE2
+        echo "Press enter to continue...."
+        read ans
+        echo "....continuing"
+        
+    else
+        verbose "      already present: ${ALIAS} ${EXPECTED}"
+    fi
+
+    # check name
+    if [ "${EXPECTED}" != "${ACTUAL_NAMED}" ]
+    then
+        verbose "      missing: ${NAME} ${EXPECTED}"
+        echo "./devel/flame -of text license \"$NAME\""
+        echo "# License ${EXPECTED} is missing name: $NAME"
+        ./devel/add-alias ${EXPECTED} "${NAME}"
+        echo git add $LICENSE_FILE $LICENSE_FILE2
+        echo git diff $LICENSE_FILE
+        echo git commit -m " 'add alias for: ${EXPECTED}' " $LICENSE_FILE $LICENSE_FILE2
+        echo "Press enter to continue...."
+        read ans
+        echo "....continuing"
+        
+    else
+        verbose "      already present: ${NAME} ${EXPECTED}"
+    fi
+    cd - > /dev/null 2>&1
+}
+
+check_foss_licenses()
+{
+    LICENSE_ID="$1"
+    LICENSE_SPDX_ID="$2"
+    LICENSE_NAME="$3"
+    verbose "     Checking $LICENSE_ID - $LICENSE_SPDX_ID - $LICENSE_NAME"
+
+    verbose "         Checking $LICENSE_ID - $LICENSE_SPDX_ID"
+    check_foss_licenses_helper "$LICENSE_ID" "${LICENSE_SPDX_ID}" "${LICENSE_NAME}"
+
+}
+
+check_license()
+{
+    LICENSE_ID="$1"
+    verbose "  * Check license: $LICENSE_ID"
+    OSI_LICENSE="${OSI_API}/license/$LICENSE_ID"
+
+    download "${OSI_LICENSE}" "    "
+    LICENSE_FILE="$(basename ${OSI_LICENSE})"
+
+    LICENSE_SPDX_ID="$(cat $LICENSE_FILE | jq -r .spdx_id | sed 's, ,,g')"
+    LICENSE_NAME="$(cat $LICENSE_FILE | jq -r .name)"
+
+    if [ "$LICENSE_ID" == "ecos-2-0" ] || [ "$LICENSE_ID" == "lgpl-2-0" ] || [ "$LICENSE_ID" == "gpl-1-0" ] || [ "$LICENSE_ID" == "agpl-3-0" ] || [ "$LICENSE_ID" == "lgpl-3-0" ] || [ "$LICENSE_ID" == "gpl-3-0" ] || [ "$LICENSE_ID" == "nokia" ]
+    then
+        echo "Ignore $LICENSE_ID"
+        return
+    fi
+    
+    check_foss_licenses "$LICENSE_ID" "$LICENSE_SPDX_ID" "$LICENSE_NAME"
+}
+
+license_list()
+{
+    verbose "Looping over all licenses"
+    LICENSE_FILE="$(basename $OSI_LICENSES)"
+    for LICENSE in $(cat "${LICENSE_FILE}"  | jq -r .[].id )
+    do
+        echo "Checking license: ${LICENSE}"
+        check_license "${LICENSE}"
+    done
+}
+
+
+download "$OSI_LICENSES"
+license_list
+

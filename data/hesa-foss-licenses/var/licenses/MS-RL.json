@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Microsoft Reciprocal License",
+    "scancode_key": "ms-rl",
+    "spdxid": "MS-RL",
+    "aliases": [
+        "Microsoft Reciprocal License (MS-RL)",
+        "ms-rl",
+        "scancode://ms-rl",
+        "MS License, RL",
+        "MS License, Version RL",
+        "Ms-RL",
+        "MS-RL",
+        "MS, Version RL",
+        "osi:MS-RL",
+        "scancode:ms-rl",
+        "Microsoft Reciprocal License"
+    ]
+}

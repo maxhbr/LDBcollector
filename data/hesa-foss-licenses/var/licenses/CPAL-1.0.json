@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Common Public Attribution License 1.0",
+    "scancode_key": "cpal-1.0",
+    "spdxid": "CPAL-1.0",
+    "aliases": [
+        "Common Public Attribution License 1.0",
+        "Common Public Attribution License Version 1.0",
+        "Common Public Attribution License Version 1.0 (CPAL-1.0)",
+        "cpal_1.0",
+        "scancode://cpal-1.0",
+        "Common Public Attribution License",
+        "CPAL-1.0",
+        "osi:CPAL-1.0",
+        "scancode:cpal-1.0",
+        "cpal-1-0"
+    ]
+}

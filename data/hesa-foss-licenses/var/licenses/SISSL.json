@@ -1,0 +1,27 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Sun Industry Standards Source License 1.1",
+    "scancode_key": "sun-sissl-1.1",
+    "spdxid": "SISSL",
+    "aliases": [
+        "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
+        "scancode://sun-sissl-1.1",
+        "SISSL",
+        "SISSL 1.1",
+        "Sun Industry Standards Source License",
+        "Sun Industry Standards Source License 1.1",
+        "Sun Industry Standards Source License v1.1",
+        "Sun Industry Standards Source License Version 1.1",
+        "sun-issl",
+        "osi:SISSL",
+        "Sun Industry Standards Source License - Version 1.1",
+        "sissl"
+    ]
+}

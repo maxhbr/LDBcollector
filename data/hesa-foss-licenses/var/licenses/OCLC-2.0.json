@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "OCLC Research Public License 2.0",
+    "scancode_key": "oclc-2.0",
+    "spdxid": "OCLC-2.0",
+    "aliases": [
+        "oclc2",
+        "OCLC-2.0",
+        "OCLC Research Public License 2.0",
+        "scancode://oclc-2.0",
+        "The OCLC Research Public License, Version 2.0",
+        "OCLC 2.0",
+        "OCLC License 2.0",
+        "OCLC License, Version 2.0",
+        "OCLC, Version 2.0",
+        "osi:OCLC-2.0",
+        "scancode:oclc-2.0",
+        "oclc-2-0",
+        "The OCLC Research Public License 2.0 License"
+    ]
+}

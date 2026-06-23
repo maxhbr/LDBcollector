@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "CNRI Open Source License Agreement for Python 1.6",
     "scancode_key": "cnri-python-1.6",
@@ -21,11 +25,12 @@
         "http://www.opensource.org/licenses/CNRI-Python",
         "osi:CNRI-Python",
         "scancode:cnri-python-1.6",
-      "The CNRI portion of the multi-part Python License",
-      "CNRI",
-      "CNRI Python Software Foundation License",
-      "CNRI Python Software Foundation License License",
-      "CNRI-Python Python Open Source GPL Compatible License Agreement",
-      "CNRI-PYTHON"
+        "The CNRI portion of the multi-part Python License",
+        "CNRI",
+        "CNRI Python Software Foundation License",
+        "CNRI Python Software Foundation License License",
+        "CNRI-Python Python Open Source GPL Compatible License Agreement",
+        "CNRI-PYTHON",
+        "cnri-python"
     ]
 }

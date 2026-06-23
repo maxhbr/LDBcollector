@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "This is TEST data. DO NOT USE",
-	"comment": "Update meta information. Add alias (3-BSD)"
+      "comment": "Update meta information. Add alias (3-BSD)",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "spdxid": "BSD-3-Clause",
     "aliases": [ "BSD3", "3-BSD", "bsd-new" ],

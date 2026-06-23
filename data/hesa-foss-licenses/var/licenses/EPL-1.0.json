@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Eclipse Public License 1.0",
     "scancode_key": "epl-1.0",
@@ -42,9 +46,10 @@
         "Eclipse Public License - v 1.0",
         "License :: OSI Approved :: Eclipse Public License 1.0",
         "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
-      "Eclipse Public License 1.0.",
-      "Eclipse Public License Version 1.0",
-      "Eclipse Public License-v 1.0",
-      "epl-1"
+        "Eclipse Public License 1.0.",
+        "Eclipse Public License Version 1.0",
+        "Eclipse Public License-v 1.0",
+        "epl-1",
+        "epl-1-0"
     ]
 }

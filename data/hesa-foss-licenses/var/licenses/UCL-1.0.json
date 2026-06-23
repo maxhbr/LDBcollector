@@ -1,0 +1,22 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Upstream Compatibility License v1.0",
+    "scancode_key": "ucl-1.0",
+    "spdxid": "UCL-1.0",
+    "aliases": [
+        "scancode://ucl-1.0",
+        "Upstream Compatibility License 1.0",
+        "Upstream Compatibility License v1.0",
+        "osi:UCL-1.0",
+        "scancode:ucl-1.0",
+        "UCL-1.0",
+        "ucl-1-0"
+    ]
+}

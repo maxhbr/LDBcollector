@@ -1,9 +1,13 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
-    "name": "GNU Lesser General Public License 2.1 or later", 
+    "name": "GNU Lesser General Public License 2.1 or later",
     "scancode_key": "lgpl-2.1-plus",
     "spdxid": "LGPL-2.1-or-later",
     "aliases": [
@@ -63,12 +67,12 @@
         "lgpl-2.1-plus",
         "LPGL-2.1+",
         "LGPL-2.1-or later",
-      "GNU Library or Lesser General Public License (LGPL) (LGPL 2.1+)",
-      "GNU Lesser General Public License-2.1+",
-      "GNU Lesser General Public License-2.1-or-later",
-      "lgpl-2.1+",
-      "lgpl-2.1-or-later",
-      "lpgl-2.1+",
-      "GNU LGPL-2.1-or-later"
+        "GNU Library or Lesser General Public License (LGPL) (LGPL 2.1+)",
+        "GNU Lesser General Public License-2.1+",
+        "GNU Lesser General Public License-2.1-or-later",
+        "lgpl-2.1+",
+        "lgpl-2.1-or-later",
+        "lpgl-2.1+",
+        "GNU LGPL-2.1-or-later"
     ]
 }

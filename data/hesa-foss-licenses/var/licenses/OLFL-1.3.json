@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Open Logistics Foundation License Version 1.3",
+    "scancode_key": "olfl-1.3",
+    "spdxid": "OLFL-1.3",
+    "aliases": [
+        "olfl-1-3",
+        "Open Logistics Foundation License v1.3"
+    ]
+}

@@ -126,7 +126,7 @@ stats:
 	@echo "|Compatibilities | `./devel/flame compats     | wc -l`     |"
 	@echo "|Operators       | `./devel/flame operators   | wc -l`     |"
 	@echo "|Ambiguities     | `./devel/flame ambiguities | wc -l`    |"
-	@echo "|Compounds       | `./devel/flame compounds   | wc -l`     |"
+	@echo "|Compounds       | `./devel/flame compounds   | wc -l`    |"
 	@echo "|No versions     | `./devel/flame no-versions   | wc -l`     |"
 
 stats-file:

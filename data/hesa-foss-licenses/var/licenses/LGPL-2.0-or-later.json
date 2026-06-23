@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "GNU Library General Public License 2.0 or later",
     "scancode_key": "lgpl-2.0-plus",
@@ -33,15 +37,16 @@
         "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version",
         "scancode:lgpl-2.0-plus",
         "lgpl-2.0-plus",
-      "License :: OSI Approved :: GNU Lesser General Public License v2 or later",
-      "LGPLv2 or later",
-      "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
-      "GNU Lesser General Public License-2.0-or-later",
-      "GNU Lesser General Public License-2+",
-      "GNU Lesser General Public v2+",
-      "lgpl-2+",
-      "GNU GNU Lesser General Public License-2.0-or-later",
-      "lgpl-2.0-or-later",
-      "GNU Lesser General Public License-2.0"
+        "License :: OSI Approved :: GNU Lesser General Public License v2 or later",
+        "LGPLv2 or later",
+        "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+        "GNU Lesser General Public License-2.0-or-later",
+        "GNU Lesser General Public License-2+",
+        "GNU Lesser General Public v2+",
+        "lgpl-2+",
+        "GNU GNU Lesser General Public License-2.0-or-later",
+        "lgpl-2.0-or-later",
+        "GNU Lesser General Public License-2.0",
+        "LGPL-2.0-later"
     ]
 }

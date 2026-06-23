@@ -1,13 +1,17 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "ISO 8879",
-  "scancode_key": "iso-8879",
-  "spdxid": "LicenseRef-scancode-iso-8879",
-  "aliases": [
-      "LicenseRef-ISO-8879",
-      "iso-8879"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "ISO 8879",
+    "scancode_key": "iso-8879",
+    "spdxid": "LicenseRef-scancode-iso-8879",
+    "aliases": [
+        "LicenseRef-ISO-8879",
+        "iso-8879"
+    ]
 }

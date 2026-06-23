@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "CeCILL Free Software License Agreement v2.1",
     "scancode_key": "cecill-2.1",
@@ -23,7 +27,9 @@
         "osi:CECILL-2.1",
         "scancode:cecill-2.1",
         "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1",
-      "\"License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1",
-      "CeCILL_V2.1"
+        "\"License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1",
+        "CeCILL_V2.1",
+        "cecill-2-1",
+        "Cea Cnrs Inria Logiciel Libre License, version 2.1"
     ]
 }

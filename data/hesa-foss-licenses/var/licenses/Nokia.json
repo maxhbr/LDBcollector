@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Nokia Open Source License 1.0a",
     "scancode_key": "nokos-1.0a",
@@ -15,6 +19,7 @@
         "scancode://nokos-1.0a",
         "Nokia License",
         "NOKIA License",
+        "NOKIA",
         "NOKIA LICENSE",
         "Nokia Open Source License",
         "NOKIA Open Source License",
@@ -22,6 +27,8 @@
         "NOKOS",
         "osi:nokia",
         "scancode:nokos-1.0a",
-        "License :: Nokia Open Source License (NOKOS)"
+        "nokos-1.0a",
+        "License :: Nokia Open Source License (NOKOS)",
+        "nokia"
     ]
 }

@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "PHP License 3.01",
+    "scancode_key": "php-3.01",
+    "spdxid": "PHP-3.01",
+    "aliases": [
+        "PHP-3.01",
+        "PHP License 3.01",
+        "PHP License v3.01",
+        "PHP License, version 3.01",
+        "scancode://php-3.01",
+        "PHP, 3.01",
+        "PHP, Version 3.01",
+        "scancode:php-3.01",
+        "php-3-01"
+    ]
+}

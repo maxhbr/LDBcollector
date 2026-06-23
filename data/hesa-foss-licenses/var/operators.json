@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-	"comment": "Operators (and mappings to SPDX) allowed"
+        "comment": "Operators (and mappings to SPDX) allowed",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "operators": {
         " OR ": "OR",
@@ -19,4 +23,4 @@
         " WITH ": "WITH",
         "_or_": "OR"
     }
-}   
+}

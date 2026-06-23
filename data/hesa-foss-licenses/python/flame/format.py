@@ -91,7 +91,7 @@ class OutputFormatter():
         """
         return None, None
 
-    def format_expression(self, expression, verbose=False):
+    def format_expression(self, expression, verbose=False, scancode_keys=False):
         """
         Return a formatted string of the compatibilities :func:`flame.license_db.FossLicenses.alias_list`.
 
@@ -329,7 +329,7 @@ class JsonOutputFormatter(OutputFormatter):
     def format_compat_list(self, all_compats, verbose=False):
         return json.dumps(all_compats, indent=4), None
 
-    def format_expression(self, expression, verbose=False):
+    def format_expression(self, expression, verbose=False, scancode_keys=False):
         return json.dumps(expression, indent=4), None
 
     def format_alias_list(self, all_aliases, verbose=False):
@@ -371,7 +371,7 @@ class YamlOutputFormatter(OutputFormatter):
     def format_compat_list(self, all_compats, verbose=False):
         return None, None
 
-    def format_expression(self, expression, verbose=False):
+    def format_expression(self, expression, verbose=False, scancode_keys=False):
         return yaml.safe_dump(expression), None
 
     def format_alias_list(self, all_aliases, verbose=False):
@@ -442,9 +442,12 @@ class TextOutputFormatter(OutputFormatter):
             ret.append(f' * "{id_lic["queried_name"]}" -> "{id_lic["name"]}" via "{id_lic["identified_via"]}"')
         return "\n".join(ret)
 
-    def format_expression(self, expression, verbose=False):
+    def format_expression(self, expression, verbose=False, scancode_keys=False):
         ret = []
-        id_lic = expression['identified_license']
+        if scancode_keys:
+            id_lic = expression['identified_license_scancode_key']
+        else:
+            id_lic = expression['identified_license']
         ret.append(f'{id_lic}')
         if verbose:
             for identification in expression['identifications']:

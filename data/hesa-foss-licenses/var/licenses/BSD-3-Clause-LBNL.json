@@ -1,0 +1,23 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Lawrence Berkeley National Labs BSD variant license",
+    "scancode_key": "lbnl-bsd",
+    "spdxid": "BSD-3-Clause-LBNL",
+    "aliases": [
+        "BSD-3-Clause-LBNL",
+        "BSD 3-Clause License (Lawrence Berkeley National Labs)",
+        "Lawrence Berkeley National Labs BSD variant license",
+        "LBNL BSD Variant",
+        "scancode://lbnl-bsd",
+        "LBNL BSD",
+        "bsd-3-clause-lbnl",
+        "Lawrence Berkeley National Labs BSD Variant License"
+    ]
+}

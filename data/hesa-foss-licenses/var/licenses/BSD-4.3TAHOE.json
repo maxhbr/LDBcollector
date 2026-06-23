@@ -1,13 +1,17 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Berkeley Software License Agreement",
-  "scancode_key": "bsla",
-  "spdxid": "BSD-4.3TAHOE",
-  "aliases": [
-    "bsla",
-    "BSLA"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Berkeley Software License Agreement",
+    "scancode_key": "bsla",
+    "spdxid": "BSD-4.3TAHOE",
+    "aliases": [
+        "bsla",
+        "BSLA"
+    ]
 }

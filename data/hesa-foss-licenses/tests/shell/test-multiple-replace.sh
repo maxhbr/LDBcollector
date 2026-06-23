@@ -73,7 +73,7 @@ bulk_check_mutliple()
 }
 
 bulk_check_singles "GNU Lesser General Public License" \
-                   "LGPL-2.0-only OR LGPL-2.1-only OR LGPL-3.0-only" 
+                   "LGPL-2.1-only OR LGPL-3.0-only" 
 
 bulk_check_mutliple "GNU Lesser General Public License" \
-                    "LGPL-2.0-only OR LGPL-2.1-only OR LGPL-3.0-only" 
+                    "LGPL-2.1-only OR LGPL-3.0-only" 

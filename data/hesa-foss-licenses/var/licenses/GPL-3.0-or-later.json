@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "GNU General Public License 3.0 or later",
-    "scancode_key": "gpl-3.0-plus", 
+    "scancode_key": "gpl-3.0-plus",
     "spdxid": "GPL-3.0-or-later",
     "aliases": [
         "GPL-3.0-or-later",
@@ -55,16 +59,16 @@
         "GPL 3+",
         "gpl-3.0-plus",
         "License :: OSI Approved :: GNU General Public License v3 or later",
-      "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
-      "GPLv3 or later",
-      "GNU General Public License-3.0-or-later",
-      "GNU General Public License 3+",
-      "GNU General Public Licensev3+",
-      "GNU General Public License3+",
-      "GNU General Public License-3+",
-      "General Public License 3+",
-      "gpl-3+",
-      "gpl-3.0-or-later",
-      "GPLV3+"
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+        "GPLv3 or later",
+        "GNU General Public License-3.0-or-later",
+        "GNU General Public License 3+",
+        "GNU General Public Licensev3+",
+        "GNU General Public License3+",
+        "GNU General Public License-3+",
+        "General Public License 3+",
+        "gpl-3+",
+        "gpl-3.0-or-later",
+        "GPLV3+"
     ]
 }

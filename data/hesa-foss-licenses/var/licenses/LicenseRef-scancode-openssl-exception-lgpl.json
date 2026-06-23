@@ -1,11 +1,14 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "OpenSSL exception to LGPL",
-  "scancode_key": "openssl-exception-lgpl",
-  "spdxid": "LicenseRef-scancode-openssl-exception-lgpl",
-  "aliases": [
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "OpenSSL exception to LGPL",
+    "scancode_key": "openssl-exception-lgpl",
+    "spdxid": "LicenseRef-scancode-openssl-exception-lgpl",
+    "aliases": []
 }

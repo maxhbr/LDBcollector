@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "OSET Public License version 2.1",
+    "scancode_key": "oset-pl-2.1",
+    "spdxid": "OSET-PL-2.1",
+    "aliases": [
+        "OSET-PL-2.1",
+        "OSET Public License 2.1",
+        "OSET Public License version 2.1",
+        "scancode://oset-pl-2.1",
+        "OSET PL, 2.1",
+        "OSET PL, Version 2.1",
+        "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1",
+        "osi:OPL-2.1",
+        "scancode:oset-pl-2.1",
+        "oset-pl-2-1"
+    ]
+}

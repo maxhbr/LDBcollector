@@ -1,24 +1,28 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "IBM Public License",
-  "scancode_key": "ibmpl-1.0",
-  "spdxid": "IPL-1.0",
-  "aliases": [
-   "ibmpl",
-   "IBM Public License 1.0",
-   "IBM Public License v1.0",
-   "IBM Public License Version 1.0",
-   "IBM Public License, Version 1.0",
-   "IPL 1.0",
-   "IPL-1.0",
-   "License :: OSI Approved :: IBM Public License",
-   "scancode://ibmpl-1.0",
-   "IBM Public License",
-   "IPL, Version 1.0",
-   "osi:IPL-1.0",
-   "scancode:ibmpl-1.0"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "IBM Public License",
+    "scancode_key": "ibmpl-1.0",
+    "spdxid": "IPL-1.0",
+    "aliases": [
+        "ibmpl",
+        "IBM Public License 1.0",
+        "IBM Public License v1.0",
+        "IBM Public License Version 1.0",
+        "IBM Public License, Version 1.0",
+        "IPL 1.0",
+        "IPL-1.0",
+        "License :: OSI Approved :: IBM Public License",
+        "scancode://ibmpl-1.0",
+        "IBM Public License",
+        "IPL, Version 1.0",
+        "osi:IPL-1.0",
+        "scancode:ibmpl-1.0"
+    ]
 }

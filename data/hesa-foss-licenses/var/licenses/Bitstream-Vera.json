@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Bitstream Vera Font License",
     "scancode_key": "bitstream",
@@ -10,13 +14,13 @@
         "Bitstream vera",
         "Bitstream Vera",
         "bitstream",
-      "Bitstream",
-      "Bitstream Vera Font",
-      "Bitstream Vera Fonts Copyright",
-      "Bitstream Vera Font License",
-      "Bitstream Vera License 1.0",
-      "Bitstream Vera License v1.00",
-      "Bitstream Vera License",
-      "bitstream-vera"
+        "Bitstream",
+        "Bitstream Vera Font",
+        "Bitstream Vera Fonts Copyright",
+        "Bitstream Vera Font License",
+        "Bitstream Vera License 1.0",
+        "Bitstream Vera License v1.00",
+        "Bitstream Vera License",
+        "bitstream-vera"
     ]
 }

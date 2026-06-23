@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Common Public License 1.0",
     "scancode_key": "cpl-1.0",
@@ -22,8 +26,9 @@
         "Common Public License v. 1.0",
         "scancode:cpl-1.0",
         "osi:CPL-1.0",
-      "cpl-1.0",
-      "CPL v1.0",
-      "cpl-1"
+        "cpl-1.0",
+        "CPL v1.0",
+        "cpl-1",
+        "cpl-1-0"
     ]
 }

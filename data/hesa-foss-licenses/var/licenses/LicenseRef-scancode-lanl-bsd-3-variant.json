@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Los Alamos National Labs BSD-3 Variant",
+    "scancode_key": "lanl-bsd-3-variant",
+    "spdxid": "LicenseRef-scancode-lanl-bsd-3-variant",
+    "aliases": [
+        "los-alamos-national-labs-bsd-3-variant"
+    ]
+}

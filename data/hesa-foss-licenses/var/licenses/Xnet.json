@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Altera License",
     "scancode_key": "xnet",
@@ -19,6 +23,7 @@
         "XNet license",
         "X.Net License",
         "XNet License",
-        "License :: OSI Approved :: X.Net License"
+        "License :: OSI Approved :: X.Net License",
+        "xnet"
     ]
 }

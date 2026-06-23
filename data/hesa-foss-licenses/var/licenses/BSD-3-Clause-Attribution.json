@@ -1,19 +1,23 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "BSD Acknowledgment License",
-  "scancode_key": "bsd-ack",
-  "spdxid": "BSD-3-Clause-Attribution",
-  "aliases": [
-   "BSD 3-Clause License (attribution)",
-   "BSD Acknowledgment License",
-   "scancode://bsd-ack",
-   "BSD 3-Clause Attribution",
-   "BSD with attribution",
-    "scancode:bsd-ack",
-    "BSD 3 Clause Attribution",
-    "bsd-3-clause-attribution"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "BSD Acknowledgment License",
+    "scancode_key": "bsd-ack",
+    "spdxid": "BSD-3-Clause-Attribution",
+    "aliases": [
+        "BSD 3-Clause License (attribution)",
+        "BSD Acknowledgment License",
+        "scancode://bsd-ack",
+        "BSD 3-Clause Attribution",
+        "BSD with attribution",
+        "scancode:bsd-ack",
+        "BSD 3 Clause Attribution",
+        "bsd-3-clause-attribution"
+    ]
 }

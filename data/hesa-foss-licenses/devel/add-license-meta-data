@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: 2026 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+#
+# Loop over all JSON file (not the schema) and invoke the
+# corresponding python file to insert meta data to license files
+#
+JSON_FILES=$(find var/ -name "*.json" | grep -v license_schema)
+
+for json_file in $JSON_FILES
+do
+    echo "$json_file"
+    echo " * add metadata"
+    devel/add-license-meta-data.py $json_file || exit 1
+    echo " * diff"
+    git diff -w $json_file
+    echo ""
+    echo "Press enter to continue"
+    read ans
+done

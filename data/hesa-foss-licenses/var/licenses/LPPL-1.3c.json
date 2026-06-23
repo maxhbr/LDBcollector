@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "LaTeX Project Public License v1.3c",
+    "scancode_key": "lppl-1.3c",
+    "spdxid": "LPPL-1.3c",
+    "aliases": [
+        "LaTeX Project Public License 1.3c",
+        "LaTeX Project Public License v1.3c",
+        "LaTeX Project Public License, Version 1.3c",
+        "lppl-1.3c",
+        "LPPL-1.3c",
+        "scancode://lppl-1.3c",
+        "LPPL, 1.3c",
+        "LPPL, Version 1.3c",
+        "osi:LPPL-1.3c",
+        "scancode:lppl-1.3c",
+        "lppl-1-3c"
+    ]
+}

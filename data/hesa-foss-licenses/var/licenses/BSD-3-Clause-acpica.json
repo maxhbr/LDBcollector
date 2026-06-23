@@ -1,13 +1,17 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Intel BSD License",
-  "scancode_key": "intel-bsd",
-  "spdxid": "BSD-3-Clause-acpica",
-  "aliases": [
-    "bsd-3-clause-intel",
-    "BSD-3-clause-intel"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Intel BSD License",
+    "scancode_key": "intel-bsd",
+    "spdxid": "BSD-3-Clause-acpica",
+    "aliases": [
+        "bsd-3-clause-intel",
+        "BSD-3-clause-intel"
+    ]
 }

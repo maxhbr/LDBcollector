@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Blue Oak Model License 1.0.0",
     "scancode_key": "blueoak-1.0.0",
@@ -14,6 +18,7 @@
         "blueoak-1.0.0",
         "License :: OSI Approved :: Blue Oak Model License",
         "License :: OSI Approved :: Blue Oak Model License (BlueOak-1.0.0)",
-        "Blue Oak Model License"
+        "Blue Oak Model License",
+        "blueoak-1-0-0"
     ]
 }

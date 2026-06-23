@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Indiana University Extreme! Lab Software License Version 1.1.1",
     "scancode_key": "indiana-extreme",
@@ -9,7 +13,7 @@
     "compatibility_as": "BSD-4-Clause",
     "aliases": [
         "indiana-extreme",
-      "indiana-extreme-1.1",
-      "Indiana University Extreme! Lab Software License 1.1.1"
+        "indiana-extreme-1.1",
+        "Indiana University Extreme! Lab Software License 1.1.1"
     ]
 }

@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "W3C Software Notice and License",
     "scancode_key": "w3c",
@@ -19,7 +23,7 @@
         "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
         "scancode:w3c",
         "osi:W3C",
-      "w3c",
-      "The W3C License"
+        "w3c",
+        "The W3C License"
     ]
 }

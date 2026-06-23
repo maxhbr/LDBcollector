@@ -5,5 +5,4 @@
 jsonschema
 PyYAML
 license_expression
-osadl_matrix
 spdx_license_list

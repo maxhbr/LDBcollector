@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "FSF Unlimited License",
     "scancode_key": "fsf-free",
@@ -11,7 +15,7 @@
         "scancode://fsf-free",
         "FSFUL",
         "scancode:fsf-free",
-      "fsf-free",
-      "fsful"
+        "fsf-free",
+        "fsful"
     ]
 }

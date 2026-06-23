@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Creative Commons Attribution-ShareAlike 4.0 International Public License",
-    "scancode_key": "cc-by-sa-4.0", 
+    "scancode_key": "cc-by-sa-4.0",
     "spdxid": "CC-BY-SA-4.0",
     "aliases": [
         "CC-BY-SA-4.0",

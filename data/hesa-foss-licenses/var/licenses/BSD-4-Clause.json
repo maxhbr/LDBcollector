@@ -1,8 +1,12 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-	"comment": "",
-	"date": "2023-08-29"
+        "comment": "",
+        "date": "2023-08-29",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "BSD-4-Clause",
     "scancode_key": "bsd-original",
@@ -22,12 +26,12 @@
         "Original BSD license",
         "bsd-original",
         "BSD-4-Clause-License",
-      "BSD4.4 clause",
-      "BSD 4 Clause",
-      "BSD4_CLAUSE",
-      "4-clause BSD",
-      "BSD 4-clause \"Original\" or \"Old\" License",
-      "text://BSD-4-clause",
-      "BSD-4-clause"
+        "BSD4.4 clause",
+        "BSD 4 Clause",
+        "BSD4_CLAUSE",
+        "4-clause BSD",
+        "BSD 4-clause \"Original\" or \"Old\" License",
+        "text://BSD-4-clause",
+        "BSD-4-clause"
     ]
 }

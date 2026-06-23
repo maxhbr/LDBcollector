@@ -1,12 +1,16 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "OCaml LGPL Linking Exception",
     "scancode_key": "ocaml-lgpl-linking-exception",
     "spdxid": "OCaml-LGPL-linking-exception",
     "aliases": [
-        "ocaml-lgpl-linking-exception"        
+        "ocaml-lgpl-linking-exception"
     ]
 }

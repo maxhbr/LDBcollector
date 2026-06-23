@@ -30,15 +30,7 @@ def test_compat_default():
     compat = fl_default.expression_compatibility_as("MIT")
     assert compat['compat_license'] == 'MIT'
 
-def test_compat_matrix_mit():
-    compat = fl_default.expression_compatibility_as("MIT", validations=[Validation.OSADL])
-    assert compat['compat_license'] == 'MIT'
-
 def test_compat_matrix_unknown():
     compat = fl_default.expression_compatibility_as("unknown")
     assert compat['compat_license'] == 'unknown'
-
-def test_compat_matrix_unknown_validate():
-    with pytest.raises(FlameException):
-        compat = fl_default.expression_compatibility_as("unknown", validations=[Validation.OSADL])
 

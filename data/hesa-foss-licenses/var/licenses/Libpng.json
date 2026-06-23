@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Libpng License",
-    "scancode_key": "libpng", 
+    "scancode_key": "libpng",
     "spdxid": "Libpng",
     "aliases": [
         "Libpng",
@@ -14,7 +18,7 @@
         "scancode://libpng",
         "PNG Reference Library License 1",
         "PNG Reference Library License version 1",
-      "libpng",
-      "LIBPNG"
+        "libpng",
+        "LIBPNG"
     ]
 }

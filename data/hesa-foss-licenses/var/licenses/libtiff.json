@@ -1,17 +1,21 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "X11-Style (Tiff)",
-    "scancode_key": "x11-tiff", 
+    "scancode_key": "x11-tiff",
     "spdxid": "libtiff",
     "aliases": [
         "libtiff",
         "libtiff License",
         "scancode://x11-tiff",
         "X11-Style (Tiff)",
-      "x11-tiff",
-      "LIBTIFF"
+        "x11-tiff",
+        "LIBTIFF"
     ]
 }

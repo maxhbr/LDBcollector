@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "X11-Style (Open Group)",
-    "scancode_key": "mit-open-group", 
+    "scancode_key": "mit-open-group",
     "spdxid": "MIT-open-group",
     "aliases": [
         "MIT-open-group",
@@ -16,6 +20,8 @@
         "X11-Style (Open Group)",
         "mit-open-group",
         "scancode:mit-open-group",
-        "x11-opengroup"
+        "x11-opengroup",
+        "opengroup-mit",
+        "OpenGroup-MIT"
     ]
 }

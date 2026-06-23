@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "FSF Unlimited License (with License Retention)",
     "scancode_key": "fsf-unlimited",
@@ -15,9 +19,10 @@
         "FSFULLR",
         "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it",
         "scancode:fsf-unlimited",
-      "fsf-unlimited",
-      "fsfullr",
-      "FSF-unlimited",
-      "fsf-unlimited-permission"
+        "fsf-unlimited",
+        "fsfullr",
+        "FSF-unlimited",
+        "fsf-unlimited-permission",
+        "FSF-unlimited-permission"
     ]
 }

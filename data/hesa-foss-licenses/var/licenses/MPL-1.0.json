@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Mozilla Public License 1.0",
-    "scancode_key": "mpl-1.0", 
+    "scancode_key": "mpl-1.0",
     "spdxid": "MPL-1.0",
     "aliases": [
         "MPL-1.0",
@@ -18,7 +22,8 @@
         "scancode:mpl-1.0",
         "osi:MPL-1.0",
         "mpl-1.0",
-      "Mozilla Public License, version 1.0",
-      "MPL-1.1 Public License Public License.1"
+        "Mozilla Public License, version 1.0",
+        "Mozilla Public License.1",
+        "mpl-1-0"
     ]
 }

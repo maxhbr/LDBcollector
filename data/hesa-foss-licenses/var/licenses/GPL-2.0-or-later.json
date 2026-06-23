@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-	"comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "GPL 2.0 or later",
     "scancode_key": "gpl-2.0-plus",
@@ -58,18 +62,19 @@
         "gpl-2.0-plus",
         "License :: OSI Approved :: GNU General Public License v2 or later",
         "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
-      "GPLv2-or-later",
-      "GPLv2 or later",
-      "GNU General Public License-2.0-or-later",
-      "GNU General Public Licensev2+",
-      "GNU General Public License-2+",
-      "GNU General Public License-2.0+",
-      "https://spdx.org/licenses/GNU General Public License-2.0+.html",
-      "GNU General Public License-2.0+ https://spdx.org/licenses/GNU General Public License-2.0+.html",
-      "GNU General Public LicenseV2 +",
-      "GNU General Public License2+",
-      "gpl-2+",
-      "gpl-2.0-or-later",
-      "GNU GPL-2.0-or-later"
+        "GPLv2-or-later",
+        "GPLv2 or later",
+        "GNU General Public License-2.0-or-later",
+        "GNU General Public Licensev2+",
+        "GNU General Public License-2+",
+        "GNU General Public License-2.0+",
+        "https://spdx.org/licenses/GNU General Public License-2.0+.html",
+        "GNU General Public License-2.0+ https://spdx.org/licenses/GNU General Public License-2.0+.html",
+        "GNU General Public LicenseV2 +",
+        "GNU General Public License2+",
+        "gpl-2+",
+        "gpl-2.0-or-later",
+        "GNU GPL-2.0-or-later",
+        "GPL-2.0-later"
     ]
 }

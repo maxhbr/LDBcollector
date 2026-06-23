@@ -19,8 +19,6 @@ from flame.config import LICENSE_OPERATORS_FILE, LICENSE_COMPOUNDS_FILE, LICENSE
 from flame.exception import FlameException
 from jsonschema import validate
 
-import osadl_matrix
-
 json_schema = None
 
 FLAME_ALIASES_TAG = 'aliases'
@@ -56,7 +54,6 @@ LICENSE_SPLIT_RE_CLEAN = r' AND | OR |\(|\) | \||\&'
 class Validation(Enum):
     RELAXED = 1
     SPDX = 2
-    OSADL = 3
     SCANCODE = 4
 
 
@@ -252,6 +249,24 @@ class FossLicenses:
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[LICENSE_OPERATORS_TAG] = self.__read_json(LICENSE_OPERATORS_FILE)['operators']
 
+    def __is_keyword(self, license_token):
+        return license_token in ['OR', 'AND', '(', ')', 'WITH']
+
+    def __expression_license_scancode(self, license_expression):
+        license_expression_scancode = []
+        fixed_license_expression = license_expression.replace('(', ' ( ').replace(')', ' ) ')
+        for license_token in fixed_license_expression.split(' '):
+            if not license_token:
+                continue
+            elif self.__is_keyword(license_token):
+                pass
+            else:
+                if license_token in self.license_db['licenses']:
+                    license_token = str(self.license_db['licenses'][license_token].get('scancode_key', license_token))
+            license_expression_scancode.append(license_token)
+
+        return ' '.join(license_expression_scancode)
+
     def __identify_license(self, name):
         if name in self.license_db[LICENSES_TAG]:
             ret_name = name
@@ -271,7 +286,7 @@ class FossLicenses:
             'identified_via': ret_id,
         }
 
-    def __init_needles(self, needles, needle_tag, license_expression, allow_letter=False):
+    def __init_needles(self, needles, needle_tag, allow_letter=False):
         if needle_tag not in self.needles_map:
             my_needles = []
             for needle in reversed(collections.OrderedDict(sorted(needles.items(), key=lambda x: len(x[0])))):
@@ -287,7 +302,7 @@ class FossLicenses:
 
     def __update_license_expression_helper(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
-        self.__init_needles(needles, needle_tag, license_expression, allow_letter)
+        self.__init_needles(needles, needle_tag, allow_letter)
         for c_needle in self.needles_map[needle_tag]:
             regexp = c_needle[0]
             needle = c_needle[1]
@@ -555,9 +570,11 @@ class FossLicenses:
                 parse_text = f'Parsing failed: {update_problem}.'
 
             raise FlameException(f'Could not parse the license "{license_expression}". {amb_text} {parse_text}')
+        simplified = str(self.simplify([license_parsed]))
         ret = {
             'queried_license': license_expression,
-            FLAME_IDENTIFIED_LICENSE_TAG: str(self.simplify([license_parsed])),
+            FLAME_IDENTIFIED_LICENSE_TAG: simplified,
+            'identified_license_scancode_key': self.__expression_license_scancode(simplified),
             'identifications': replacements,
             'ambiguities': ambiguities,
             'updated_license': updated_license,
@@ -645,7 +662,7 @@ class FossLicenses:
         return self.license(name)['license']['scancode_key']
 
     def compatibility_as_list(self) -> [str]:
-        """Return a list of all the licenses missing in the OSADL matrix but having a known similar compatibility.
+        """Return a list of all the licenses not supported by typical compliance tools but having a known similar compatibility.
 
         :Example:
 
@@ -854,7 +871,6 @@ class FossLicenses:
 
         compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE, compat_license_expression)]
         compat_licenses = [x for x in compat_licenses if x]
-        compat_support = self.__validate_compatibilities_support(compat_licenses)
 
         self.__validate_license(validations, compat_license_expression)
 
@@ -865,7 +881,6 @@ class FossLicenses:
             'identification': expression_full,
             FLAME_IDENTIFIED_LICENSE_TAG: str(expression_full[FLAME_IDENTIFIED_LICENSE_TAG]),
             FLAME_COMPATIBLE_LICENSE_TAG: str(compat_license_expression),
-            'compat_support': compat_support,
         }
         self.compat_cache[cache_key] = ret
         return ret
@@ -878,32 +893,6 @@ class FossLicenses:
                 self.__validate_license_scancode(license_expression)
             if Validation.RELAXED in validations:
                 self.__validate_license_relaxed(license_expression)
-            if Validation.OSADL in validations:
-                compat_license_expression = self.expression_compatibility_as(license_expression)['compat_license']
-                compat_licenses = [x.strip() for x in re.split('\\(|OR|AND|\\)', compat_license_expression)]
-                compat_licenses = [x for x in compat_licenses if x]
-                compat_support = self.__validate_compatibilities_support(compat_licenses)
-                self.__validate_licenses_osadl(compat_support)
-
-    def __validate_compatibilities_support(self, licenses):
-        compat_support = {}
-        compat_support['licenses'] = []
-        all_supported = True
-        for lic in licenses:
-            support = self.__validate_compatibility_support(lic)
-            compat_support['licenses'].append({
-                'license': lic,
-                'supported': support,
-            })
-            all_supported = all_supported and support
-        compat_support['supported'] = all_supported
-
-        return compat_support
-
-    def __validate_compatibility_support(self, lic):
-        if not self.supported_licenses:
-            self.support_licenses = osadl_matrix.supported_licenses(self.license_matrix_file)
-        return lic in self.support_licenses
 
     def __validate_license_spdx(self, expr):
         """
@@ -937,13 +926,6 @@ class FossLicenses:
             lic = _lic.strip()
             if " " in lic.strip():
                 raise FlameException(f'Found license with multiple words "{lic}"')
-
-    def __validate_licenses_osadl(self, compat_supported):
-        """
-        """
-        if not compat_supported['supported']:
-            raise FlameException('Not all licenses supported by OSADL\'s compatibility matrix',
-                                 compat_supported)
 
     def __license_list(self, expr):
         SPDX_OPERATORS = ['AND', 'OR', 'WITH']

@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Nara Institute License 2003",
     "scancode_key": "naist-2003",
@@ -11,7 +15,7 @@
         "Nara Institute License 2003",
         "scancode://naist-2003",
         "Nara Institute of Science and Technology License (2003)",
-      "scancode:naist-2003",
-      "naist-2003"
+        "scancode:naist-2003",
+        "naist-2003"
     ]
 }

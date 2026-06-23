@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "This is TEST data. DO NOT USE",
-	"comment": "adapting to new format"
+      "comment": "adapting to new format",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "spdxid": "GPL-2.0-or-later",
     "scancode_key": "gpl-2.0-plus",

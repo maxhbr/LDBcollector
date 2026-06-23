@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Reciprocal Public License 1.1",
+    "scancode_key": "rpl-1.1",
+    "spdxid": "RPL-1.1",
+    "aliases": [
+        "Reciprocal Public License 1.1",
+        "Reciprocal Public License, Version 1.1",
+        "RPL-1.1",
+        "scancode://rpl-1.1",
+        "osi:RPL-1.1",
+        "Reciprocal Public License, version 1.1",
+        "RPL 1.1",
+        "RPL, Version 1.1",
+        "scancode:rpl-1.1",
+        "rpl-1-1"
+    ]
+}

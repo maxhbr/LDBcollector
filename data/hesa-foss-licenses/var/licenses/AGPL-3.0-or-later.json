@@ -1,7 +1,11 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "GNU Affero General Public License 3.0 or later",
     "scancode_key": "agpl-3.0-plus",
@@ -47,8 +51,8 @@
         "agpl-3.0-plus",
         "AGPLv3.0+",
         "AGPL-3+",
-      "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
-      "agpl-3+",
-      "GNU AGPL-3.0-or-later"
+        "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+        "agpl-3+",
+        "GNU AGPL-3.0-or-later"
     ]
 }

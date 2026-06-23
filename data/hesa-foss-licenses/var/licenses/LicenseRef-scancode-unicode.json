@@ -1,12 +1,16 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-},
-  "name": "Unicode Inc License Agreement",
-  "scancode_key": "unicode",
-  "spdxid": "LicenseRef-scancode-unicode",
-  "aliases": [
-    "unicode"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "Unicode Inc License Agreement",
+    "scancode_key": "unicode",
+    "spdxid": "LicenseRef-scancode-unicode",
+    "aliases": [
+        "unicode"
+    ]
 }

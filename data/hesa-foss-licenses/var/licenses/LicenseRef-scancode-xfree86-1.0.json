@@ -1,15 +1,19 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "XFree86 License 1.0",
-  "scancode_key": "xfree86-1.0",
-  "spdxid": "LicenseRef-scancode-xfree86-1.0",
-  "aliases": [
-    "XFree86 1.0 License",
-    "XFree86 1.0",
-    "xfree86 1.0",
-    "xfree86-1.0"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
+    },
+    "name": "XFree86 License 1.0",
+    "scancode_key": "xfree86-1.0",
+    "spdxid": "LicenseRef-scancode-xfree86-1.0",
+    "aliases": [
+        "XFree86 1.0 License",
+        "XFree86 1.0",
+        "xfree86 1.0",
+        "xfree86-1.0"
+    ]
 }

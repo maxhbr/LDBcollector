@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Open Data Commons Attribution License v1.0",
-    "scancode_key": "odc-by-1.0", 
+    "scancode_key": "odc-by-1.0",
     "spdxid": "ODC-By-1.0",
     "aliases": [
         "ODC-By-1.0",

@@ -1,10 +1,14 @@
 {
     "meta": {
         "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-        "comment": ""
+        "comment": "",
+        "license": "CC-BY-4.0",
+        "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+        "project": "FOSS Licenses",
+        "project_url": "https://github.com/hesa/foss-licenses/"
     },
     "name": "Historical Permission Notice and Disclaimer",
-    "scancode_key": "historical", 
+    "scancode_key": "historical",
     "spdxid": "HPND",
     "aliases": [
         "HPND",
@@ -20,8 +24,8 @@
         "historical",
         "License :: OSI Approved :: Historical Permission Notice and Disclaimer",
         "License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND)",
-      "open source HPND License",
-      "Historical Permission Notice and Disclaimer - sell variant",
-      "hpnd"
+        "open source HPND License",
+        "Historical Permission Notice and Disclaimer - sell variant",
+        "hpnd"
     ]
 }
