@@ -26,7 +26,7 @@ func TestCreateObligation(t *testing.T) {
 			Comment:        ptr("unit test no license ids"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Category:       ptr("GENERAL"),
+			Category:       "GENERAL",
 			ExternalRef: models.ObligationSchemaExtension{
 				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
 			},
@@ -54,7 +54,7 @@ func TestCreateObligation(t *testing.T) {
 			Active:         ptr(true),
 			TextUpdatable:  ptr(true),
 			LicenseIds:     []uuid.UUID{res.Data[0].Id},
-			Category:       ptr("DISTRIBUTION"),
+			Category:       "DISTRIBUTION",
 			ExternalRef: models.ObligationSchemaExtension{
 				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
 			},
@@ -72,7 +72,7 @@ func TestCreateObligation(t *testing.T) {
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
 			LicenseIds:     []uuid.UUID{uuid.New()},
-			Category:       ptr("GENERAL"),
+			Category:       "GENERAL",
 		}
 
 		w := makeRequest("POST", "/obligations", dto, true)
@@ -97,7 +97,7 @@ func TestCreateObligation(t *testing.T) {
 			Comment:        ptr("missing topic"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Category:       ptr("GENERAL"),
+			Category:       "GENERAL",
 		}
 
 		w := makeRequest("POST", "/obligations", dto, true)
@@ -119,7 +119,7 @@ func TestUpdateObligation(t *testing.T) {
 			Comment:        ptr("unit test comment"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Category:       ptr("GENERAL"),
+			Category:       "GENERAL",
 			ExternalRef: models.ObligationSchemaExtension{
 				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
 			},
@@ -255,7 +255,7 @@ func TestDeleteObligation(t *testing.T) {
 		Comment:        ptr("delete comment"),
 		Active:         ptr(true),
 		TextUpdatable:  ptr(true),
-		Category:       ptr("GENERAL"),
+		Category:       "GENERAL",
 	}
 	_id = assertObligationCreated(t, dto)
 	id := _id.String()
@@ -310,12 +310,7 @@ func assertObligationCreated(t *testing.T, dto models.ObligationCreateDTO) uuid.
 	if ob.Comment != nil {
 		assertField("Comment", *dto.Comment, *ob.Comment)
 	}
-	if ob.Category != nil {
-		assertField("Category", *dto.Category, *ob.Category)
-	} else {
-		assertField("Category", *dto.Category, "GENERAL")
-	}
-
+	assertField("Category", dto.Category, ob.Category)
 	assertField("Classification", dto.Classification, ob.Classification)
 	assertField("Active", *dto.Active, ob.Active)
 	assertField("TextUpdatable", *dto.TextUpdatable, ob.TextUpdatable)
@@ -389,7 +384,7 @@ func assertObligationUpdated(t *testing.T, id uuid.UUID, dto models.ObligationUp
 		assertField("Comment", *dto.Comment, *ob.Comment)
 	}
 	if dto.Category != nil {
-		assertField("Category", *dto.Category, *ob.Category)
+		assertField("Category", *dto.Category, ob.Category)
 	}
 	if dto.Classification != nil {
 		assertField("Classification", *dto.Classification, ob.Classification)

@@ -832,7 +832,7 @@ const docTemplate = `{
                     "200": {
                         "description": "JWT token",
                         "schema": {
-                            "$ref": "#/definitions/models.TokenResonse"
+                            "$ref": "#/definitions/models.TokenResponse"
                         }
                     },
                     "401": {
@@ -961,6 +961,166 @@ const docTemplate = `{
                     },
                     "500": {
                         "description": "Unable to create obligation",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/categories": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
+                "description": "Get all active obligation categories from the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get all active obligation categories",
+                "operationId": "GetAllObligationCategories",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active obligation categories only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationCategoryResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Unable to fetch obligation categories",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Unable to fetch obligation categories",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Create an obligation category",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Create an obligation category",
+                "operationId": "CreateObligationCategory",
+                "parameters": [
+                    {
+                        "description": "Obligation category to create",
+                        "name": "obligation_category",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationCategory"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationCategoryResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "409": {
+                        "description": "obligation category already exists",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while creating new obligation category",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligations/categories/{category}": {
+            "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Deactivate an obligation category",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Deactivate obligation category",
+                "operationId": "DeleteObligationCategory",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Obligation Category",
+                        "name": "category",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "cannot delete obligation category 'DISTRIBUTION' as it's still referenced by some obligations",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "obligation category 'DISTRIBUTION' not found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "something went wrong while deleting obligation category",
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
@@ -1837,9 +1997,9 @@ const docTemplate = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": " JWT token",
+                        "description": "JWT token",
                         "schema": {
-                            "$ref": "#/definitions/models.TokenResonse"
+                            "$ref": "#/definitions/models.TokenResponse"
                         }
                     },
                     "401": {
@@ -2801,6 +2961,36 @@ const docTemplate = `{
                 }
             }
         },
+        "models.ObligationCategory": {
+            "type": "object",
+            "required": [
+                "category"
+            ],
+            "properties": {
+                "category": {
+                    "type": "string",
+                    "example": "GENERAL"
+                }
+            }
+        },
+        "models.ObligationCategoryResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationCategory"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
         "models.ObligationClassification": {
             "type": "object",
             "required": [
@@ -3306,7 +3496,7 @@ const docTemplate = `{
                 }
             }
         },
-        "models.TokenResonse": {
+        "models.TokenResponse": {
             "type": "object",
             "properties": {
                 "data": {

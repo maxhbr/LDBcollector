@@ -228,7 +228,7 @@ func TestLoginAndRefreshTokenExpiry(t *testing.T) {
 		w := makeRequest("POST", "/login", loginPayload, false)
 		assert.Equal(t, http.StatusOK, w.Code)
 
-		var res models.TokenResonse
+		var res models.TokenResponse
 		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
 			t.Fatalf("failed to unmarshal login response: %v", err)
 		}
@@ -291,7 +291,7 @@ func TestLoginAndRefreshTokenExpiry(t *testing.T) {
 		w := makeRequest("POST", "/refresh-token", refreshPayload, false)
 		assert.Equal(t, http.StatusOK, w.Code)
 
-		var res models.TokenResonse
+		var res models.TokenResponse
 		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
 			t.Fatalf("failed to unmarshal refresh response: %v", err)
 		}

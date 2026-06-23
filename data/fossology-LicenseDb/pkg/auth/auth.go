@@ -612,7 +612,7 @@ func UpdateProfile(c *gin.Context) {
 
 		res := models.UserResponse{
 			Data:   []models.User{updatedUser},
-			Status: http.StatusCreated,
+			Status: http.StatusOK,
 			Meta: &models.PaginationMeta{
 				ResourceCount: 1,
 			},
@@ -797,9 +797,9 @@ func GetUser(c *gin.Context) {
 //	@Tags			Users
 //	@Accept			json
 //	@Produce		json
-//	@Param			user	body		models.UserLogin	true	"Login credentials"
-//	@Success		200		{object}	models.TokenResonse	"JWT token"
-//	@Failure		401		{object}	models.LicenseError	"Incorrect username or password"
+//	@Param			user	body		models.UserLogin		true	"Login credentials"
+//	@Success		200		{object}	models.TokenResponse	"JWT token"
+//	@Failure		401		{object}	models.LicenseError		"Incorrect username or password"
 //	@Router			/login [post]
 func Login(c *gin.Context) {
 	var input models.UserLogin
@@ -887,7 +887,7 @@ func Login(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, er)
 		return
 	}
-	res := models.TokenResonse{
+	res := models.TokenResponse{
 		Status: http.StatusOK,
 		Data:   *token,
 	}
@@ -944,9 +944,9 @@ func GetUserProfile(c *gin.Context) {
 //	@Tags			Users
 //	@Accept			json
 //	@Produce		json
-//	@Param			user	body		models.RefreshToken	true	"Refresh token payload"
-//	@Success		200		{object}	models.TokenResonse	" JWT token"
-//	@Failure		401		{object}	models.LicenseError	"Invalid or expired refresh token"
+//	@Param			user	body		models.RefreshToken		true	"Refresh token payload"
+//	@Success		200		{object}	models.TokenResponse	"JWT token"
+//	@Failure		401		{object}	models.LicenseError		"Invalid or expired refresh token"
 //	@Router			/refresh-token [post]
 func VerifyRefreshToken(c *gin.Context) {
 	logger.LogInfo("VerifyRefreshToken called")
@@ -1031,7 +1031,7 @@ func VerifyRefreshToken(c *gin.Context) {
 
 	logger.LogInfo("VerifyRefreshToken completed successfully", zap.String("userID", userID.String()))
 
-	c.JSON(http.StatusOK, models.TokenResonse{
+	c.JSON(http.StatusOK, models.TokenResponse{
 		Status: http.StatusOK,
 		Data:   *tokens,
 	})

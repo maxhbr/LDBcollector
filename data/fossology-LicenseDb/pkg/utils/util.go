@@ -319,15 +319,17 @@ func PerformObligationMapActions(tx *gorm.DB, userId uuid.UUID, obligation *mode
 
 	for _, licId := range newLicenseIds {
 		var license models.LicenseDB
-		activeStatus := true
-		if err := tx.Where(models.LicenseDB{Id: licId, Active: &activeStatus}).First(&license).Error; err != nil {
+		if err := tx.Where(models.LicenseDB{Id: licId}).First(&license).Error; err != nil {
 			errs = append(errs, fmt.Errorf("unable to associate license '%s' to obligation '%s': %s", licId, obligation.Id, err.Error()))
 		} else {
 			newLicenseAssociations = append(newLicenseAssociations, license)
 		}
 	}
 
-	if err := tx.Model(obligation).Association("Licenses").Replace(newLicenseAssociations); err != nil {
+	// Use a local model copy so association replacement does not mutate caller state
+	// that may be used for changelog old/new comparisons.
+	obligationModel := models.Obligation{Id: obligation.Id}
+	if err := tx.Model(&obligationModel).Association("Licenses").Replace(newLicenseAssociations); err != nil {
 		errs = append(errs, err)
 	}
 
@@ -341,15 +343,17 @@ func PerformLicenseMapActions(tx *gorm.DB, userId uuid.UUID, license *models.Lic
 
 	for _, obId := range newObligationIds {
 		var ob models.Obligation
-		activeStatus := true
-		if err := tx.Where(models.Obligation{Id: obId, Active: &activeStatus}).Preload("Classification").Preload("Type").First(&ob).Error; err != nil {
+		if err := tx.Where(models.Obligation{Id: obId}).Preload("Classification").Preload("Category").Preload("Type").First(&ob).Error; err != nil {
 			errs = append(errs, fmt.Errorf("unable to associate obligation '%s': %s", obId, err.Error()))
 		} else {
 			newObligationAssociations = append(newObligationAssociations, ob)
 		}
 	}
 
-	if err := tx.Debug().Model(license).Association("Obligations").Replace(newObligationAssociations); err != nil {
+	// Use a local model copy so association replacement does not mutate the caller's
+	// pre-update license instance used later for changelog old/new comparisons.
+	licenseModel := models.LicenseDB{Id: license.Id}
+	if err := tx.Model(&licenseModel).Association("Obligations").Replace(newObligationAssociations); err != nil {
 		errs = append(errs, err)
 	}
 
@@ -411,6 +415,28 @@ func AddChangelogForObligationClassification(tx *gorm.DB, userId uuid.UUID, oldO
 	return nil
 }
 
+func AddChangelogForObligationCategory(tx *gorm.DB, userId uuid.UUID, oldObCategory, newObCategory *models.ObligationCategory) error {
+	var changes []models.ChangeLog
+	AddChangelog("Active", oldObCategory.Active, newObCategory.Active, &changes)
+	AddChangelog("Category", &oldObCategory.Category, &newObCategory.Category, &changes)
+
+	if len(changes) != 0 {
+		audit := models.Audit{
+			UserId:     userId,
+			TypeId:     newObCategory.Id,
+			Timestamp:  time.Now(),
+			Type:       "CATEGORY",
+			ChangeLogs: changes,
+		}
+
+		if err := tx.Create(&audit).Error; err != nil {
+			return errors.New("unable to update obligation category")
+		}
+	}
+
+	return nil
+}
+
 func ToggleObligationClassificationActiveStatus(userId uuid.UUID, tx *gorm.DB, obClassification *models.ObligationClassification) error {
 	newObClassification := *obClassification
 	newActive := !*obClassification.Active
@@ -420,6 +446,17 @@ func ToggleObligationClassificationActiveStatus(userId uuid.UUID, tx *gorm.DB, o
 	}
 
 	return AddChangelogForObligationClassification(tx, userId, obClassification, &newObClassification)
+}
+
+func ToggleObligationCategoryActiveStatus(userId uuid.UUID, tx *gorm.DB, obCategory *models.ObligationCategory) error {
+	newObCategory := *obCategory
+	newActive := !*obCategory.Active
+	newObCategory.Active = &newActive
+	if err := tx.Clauses(clause.Returning{}).Updates(&newObCategory).Error; err != nil {
+		return errors.New("unable to change 'active' status of obligation type")
+	}
+
+	return AddChangelogForObligationCategory(tx, userId, obCategory, &newObCategory)
 }
 
 // ObligationTypeStatusCode is internally used for checking status of a obligation type creation
@@ -504,6 +541,41 @@ func CreateObClassification(obClassification *models.ObligationClassification, u
 	return err, status
 }
 
+func CreateObCategory(obCategory *models.ObligationCategory, userId uuid.UUID) (error, ObligationFieldCreateStatusCode) {
+	if err := validations.Validate.Struct(obCategory); err != nil {
+		return err, VALIDATION_FAILED
+	}
+
+	var status ObligationFieldCreateStatusCode
+	err := db.DB.Transaction(func(tx *gorm.DB) error {
+		result := tx.Where(&models.ObligationCategory{Category: obCategory.Category}).FirstOrCreate(&obCategory)
+		if result.Error != nil {
+			status = CREATE_FAILED
+			return result.Error
+		}
+		if result.RowsAffected == 0 {
+			if *obCategory.Active {
+				status = CONFLICT
+				return errors.New("obligation category already exists")
+			}
+			if err := ToggleObligationCategoryActiveStatus(userId, tx, obCategory); err != nil {
+				status = CONFLICT_ACTIVATION_FAILED
+				return err
+			}
+		} else {
+			if err := AddChangelogForObligationCategory(tx, userId, &models.ObligationCategory{}, obCategory); err != nil {
+				status = CREATE_FAILED
+				return err
+			}
+		}
+
+		status = CREATED
+		return nil
+	})
+
+	return err, status
+}
+
 // Populatedb populates the database with license data from a JSON file.
 func Populatedb(datafile string) {
 	var licenses []models.LicenseJson
@@ -575,6 +647,29 @@ func Populatedb(datafile string) {
 			log.Printf("%s%s: %s%s", red, obClassification.Classification, err.Error(), reset)
 		}
 	}
+
+	DEFAULT_OBLIGATION_CATEGORIES := []*models.ObligationCategory{
+		{Category: "DISTRIBUTION"},
+		{Category: "PATENT"},
+		{Category: "INTERNAL"},
+		{Category: "CONTRACTUAL"},
+		{Category: "EXPORT_CONTROL"},
+		{Category: "GENERAL"},
+	}
+
+	for _, obCategory := range DEFAULT_OBLIGATION_CATEGORIES {
+		err, status := CreateObCategory(obCategory, user.Id)
+
+		if status == CREATED || status == CONFLICT {
+			green := "\033[32m"
+			reset := "\033[0m"
+			log.Printf("%s%s: %s%s", green, obCategory.Category, "Obligation category created successfully", reset)
+		} else {
+			red := "\033[31m"
+			reset := "\033[0m"
+			log.Printf("%s%s: %s%s", red, obCategory.Category, err.Error(), reset)
+		}
+	}
 }
 
 // SetSimilarityThreshold parses the env var and sets the threshold in Postgres.
@@ -618,7 +713,7 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 		audit.Entity = lic.ConvertToLicenseResponseDTO()
 	case "OBLIGATION":
 		var ob models.Obligation
-		if err := db.DB.Joins("Type").Joins("Classification").Where(&models.Obligation{Id: audit.TypeId}).First(&ob).Error; err != nil {
+		if err := db.DB.Joins("Type").Joins("Classification").Joins("Category").Where(&models.Obligation{Id: audit.TypeId}).First(&ob).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   "obligation corresponding with this audit does not exist",
@@ -649,6 +744,19 @@ func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   "obligation classification corresponding with this audit does not exist",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return err
+		}
+	case "CATEGORY":
+		audit.Entity = &models.ObligationCategory{}
+		if err := db.DB.Where(&models.ObligationCategory{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "obligation category corresponding with this audit does not exist",
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),

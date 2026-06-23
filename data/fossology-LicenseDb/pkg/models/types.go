@@ -358,7 +358,7 @@ type RefreshToken struct {
 	RefreshToken string `json:"refresh_token" example:"your_refresh_token_here"`
 }
 
-// TokenResonse represents the response structure for token generation API.
-type TokenResonse ApiResponse[Tokens]
+// TokenResponse represents the response structure for token generation API.
+type TokenResponse ApiResponse[Tokens]
 
 // can add all other response structures in similar manner

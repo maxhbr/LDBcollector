@@ -369,6 +369,26 @@ definitions:
         example: https://opensource.org/licenses/MIT
         type: string
     type: object
+  models.ObligationCategory:
+    properties:
+      category:
+        example: GENERAL
+        type: string
+    required:
+    - category
+    type: object
+  models.ObligationCategoryResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.ObligationCategory'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
   models.ObligationClassification:
     properties:
       classification:
@@ -722,7 +742,7 @@ definitions:
     required:
     - text
     type: object
-  models.TokenResonse:
+  models.TokenResponse:
     properties:
       data:
         $ref: '#/definitions/models.Tokens'
@@ -1369,7 +1389,7 @@ paths:
         "200":
           description: JWT token
           schema:
-            $ref: '#/definitions/models.TokenResonse'
+            $ref: '#/definitions/models.TokenResponse'
         "401":
           description: Incorrect username or password
           schema:
@@ -1592,6 +1612,110 @@ paths:
       - '{}': []
         ApiKeyAuth: []
       summary: Fetches audits corresponding to an obligation
+      tags:
+      - Obligations
+  /obligations/categories:
+    get:
+      consumes:
+      - application/json
+      description: Get all active obligation categories from the service
+      operationId: GetAllObligationCategories
+      parameters:
+      - description: Active obligation categories only
+        in: query
+        name: active
+        required: true
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ObligationCategoryResponse'
+        "400":
+          description: Unable to fetch obligation categories
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Unable to fetch obligation categories
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
+      summary: Get all active obligation categories
+      tags:
+      - Obligations
+    post:
+      consumes:
+      - application/json
+      description: Create an obligation category
+      operationId: CreateObligationCategory
+      parameters:
+      - description: Obligation category to create
+        in: body
+        name: obligation_category
+        required: true
+        schema:
+          $ref: '#/definitions/models.ObligationCategory'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.ObligationCategoryResponse'
+        "400":
+          description: invalid json body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "409":
+          description: obligation category already exists
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: something went wrong while creating new obligation category
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Create an obligation category
+      tags:
+      - Obligations
+  /obligations/categories/{category}:
+    delete:
+      consumes:
+      - application/json
+      description: Deactivate an obligation category
+      operationId: DeleteObligationCategory
+      parameters:
+      - description: Obligation Category
+        in: path
+        name: category
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+        "400":
+          description: cannot delete obligation category 'DISTRIBUTION' as it's still
+            referenced by some obligations
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "404":
+          description: obligation category 'DISTRIBUTION' not found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: something went wrong while deleting obligation category
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Deactivate obligation category
       tags:
       - Obligations
   /obligations/classifications:
@@ -2017,9 +2141,9 @@ paths:
       - application/json
       responses:
         "200":
-          description: ' JWT token'
+          description: JWT token
           schema:
-            $ref: '#/definitions/models.TokenResonse'
+            $ref: '#/definitions/models.TokenResponse'
         "401":
           description: Invalid or expired refresh token
           schema:

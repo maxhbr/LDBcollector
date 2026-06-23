@@ -200,7 +200,7 @@ func TestUpdateProfile(t *testing.T) {
 		}
 		loginW := makeRequest("POST", "/login", loginData, false)
 		if loginW.Code == http.StatusOK {
-			var loginRes models.TokenResonse
+			var loginRes models.TokenResponse
 			if err := json.Unmarshal(loginW.Body.Bytes(), &loginRes); err == nil {
 				AuthToken = loginRes.Data.AccessToken
 				resetPassword := models.ProfileUpdate{
@@ -212,7 +212,7 @@ func TestUpdateProfile(t *testing.T) {
 				loginData.Userpassword = "fossy"
 				loginW2 := makeRequest("POST", "/login", loginData, false)
 				if loginW2.Code == http.StatusOK {
-					var loginRes2 models.TokenResonse
+					var loginRes2 models.TokenResponse
 					if err := json.Unmarshal(loginW2.Body.Bytes(), &loginRes2); err == nil {
 						AuthToken = loginRes2.Data.AccessToken
 					}
@@ -290,7 +290,7 @@ func TestVerifyRefreshToken(t *testing.T) {
 		t.Skipf("Cannot login to get refresh token: status %d", loginW.Code)
 	}
 
-	var loginRes models.TokenResonse
+	var loginRes models.TokenResponse
 	if err := json.Unmarshal(loginW.Body.Bytes(), &loginRes); err != nil {
 		t.Fatalf("Failed to parse login response: %v", err)
 	}
@@ -307,7 +307,7 @@ func TestVerifyRefreshToken(t *testing.T) {
 		w := makeRequest("POST", "/refresh-token", refreshReq, false)
 		assert.Equal(t, http.StatusOK, w.Code)
 
-		var res models.TokenResonse
+		var res models.TokenResponse
 		if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
 			t.Errorf("Error unmarshalling JSON: %v", err)
 			return

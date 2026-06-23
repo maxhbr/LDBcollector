@@ -69,7 +69,7 @@ func TestGetObligation(t *testing.T) {
 		Comment:        ptr("Test comment"),
 		Active:         ptr(true),
 		TextUpdatable:  ptr(false),
-		Category:       ptr("GENERAL"),
+		Category:       "GENERAL",
 	}
 	createW := makeRequest("POST", "/obligations", dto, true)
 	assert.Equal(t, http.StatusCreated, createW.Code)
@@ -137,7 +137,7 @@ func TestGetObligationAudits(t *testing.T) {
 		Comment:        ptr("Test comment"),
 		Active:         ptr(true),
 		TextUpdatable:  ptr(false),
-		Category:       ptr("GENERAL"),
+		Category:       "GENERAL",
 	}
 	createW := makeRequest("POST", "/obligations", dto, true)
 	assert.Equal(t, http.StatusCreated, createW.Code)
@@ -376,7 +376,7 @@ func TestImportObligations(t *testing.T) {
 			Comment:        ptr("unit test comment"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Category:       ptr("GENERAL"),
+			Category:       "GENERAL",
 			ExternalRef: models.ObligationSchemaExtension{
 				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
 			},

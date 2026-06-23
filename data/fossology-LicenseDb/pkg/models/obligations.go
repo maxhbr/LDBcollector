@@ -12,7 +12,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"strings"
 
 	"github.com/google/uuid"
 	"gorm.io/datatypes"
@@ -29,36 +28,16 @@ type Obligation struct {
 	TextUpdatable              *bool                                         `gorm:"column:text_updatable;default:false"`
 	ObligationClassificationId uuid.UUID                                     `gorm:"type:uuid;column:obligation_classification_id"`
 	ObligationTypeId           uuid.UUID                                     `gorm:"type:uuid;column:obligation_type_id"`
+	ObligationCategoryId       uuid.UUID                                     `gorm:"type:uuid;column:obligation_category_id"`
 	Licenses                   []LicenseDB                                   `gorm:"many2many:obligation_licenses; joinForeignKey:obligation_id;joinReferences:license_db_id"`
 	Type                       *ObligationType                               `gorm:"foreignKey:ObligationTypeId;references:Id"`
 	Classification             *ObligationClassification                     `gorm:"foreignKey:ObligationClassificationId;references:Id"`
-	Category                   *string                                       `json:"category" gorm:"default:GENERAL" enums:"DISTRIBUTION,PATENT,INTERNAL,CONTRACTUAL,EXPORT_CONTROL,GENERAL" example:"DISTRIBUTION"`
+	Category                   *ObligationCategory                           `gorm:"foreignKey:ObligationCategoryId;references:Id"`
 	ExternalRef                datatypes.JSONType[ObligationSchemaExtension] `gorm:"column:external_ref"`
 }
 
 func (Obligation) TableName() string {
 	return "obligations"
-}
-
-var validCategories = []string{"DISTRIBUTION", "PATENT", "INTERNAL", "CONTRACTUAL", "EXPORT_CONTROL", "GENERAL"}
-
-func validateCategory(o *Obligation) error {
-	// Check if the provided category is in the list of valid categories. Nil value allowed, will default to GENERAL
-	if o.Category == nil {
-		return nil
-	}
-	allCategories := strings.Join(validCategories, ", ")
-	categoryValid := false
-	for _, cat := range validCategories {
-		if *o.Category == cat {
-			categoryValid = true
-			break
-		}
-	}
-	if !categoryValid {
-		return fmt.Errorf("category must be one of the following values: %s", allCategories)
-	}
-	return nil
 }
 
 func (o *Obligation) BeforeCreate(tx *gorm.DB) (err error) {
@@ -116,8 +95,25 @@ func (o *Obligation) BeforeCreate(tx *gorm.DB) (err error) {
 		return errors.New("classification cannot be empty")
 	}
 
-	if err := validateCategory(o); err != nil {
-		return err
+	if o.Category != nil {
+		var obCategories []ObligationCategory
+		if err := tx.Find(&obCategories).Error; err != nil {
+			return err
+		}
+		allCategories := ""
+		for i := 0; i < len(obCategories); i++ {
+			if *obCategories[i].Active {
+				allCategories += fmt.Sprintf(" %s", obCategories[i].Category)
+				if o.Category.Category == obCategories[i].Category {
+					o.Category = &obCategories[i]
+				}
+			}
+		}
+		if o.Classification.Id.String() == "" {
+			return fmt.Errorf("obligation category must be one of the following values:%s", allCategories)
+		}
+	} else {
+		return errors.New("category cannot be empty")
 	}
 
 	return nil
@@ -167,9 +163,23 @@ func (o *Obligation) BeforeUpdate(tx *gorm.DB) (err error) {
 			return fmt.Errorf("obligation classification must be one of the following values:%s", allClassifications)
 		}
 	}
-
-	if err := validateCategory(o); err != nil {
-		return err
+	if o.Category != nil {
+		var obCategories []ObligationCategory
+		if err := tx.Find(&obCategories).Error; err != nil {
+			return err
+		}
+		allCategories := ""
+		for i := 0; i < len(obCategories); i++ {
+			if *obCategories[i].Active {
+				allCategories += fmt.Sprintf(" %s", obCategories[i].Category)
+				if o.Category.Category == obCategories[i].Category {
+					o.Category = &obCategories[i]
+				}
+			}
+		}
+		if o.Classification.Id.String() == "" {
+			return fmt.Errorf("obligation category must be one of the following values:%s", allCategories)
+		}
 	}
 
 	return nil
@@ -185,15 +195,9 @@ func (o *Obligation) ConvertToObligationResponseDTO() ObligationResponseDTO {
 		LicenseIds:     []uuid.UUID{},
 		Type:           o.Type.Type,
 		Classification: o.Classification.Classification,
+		Category:       o.Category.Category,
 		Comment:        o.Comment,
 		ExternalRef:    o.ExternalRef.Data(),
-	}
-
-	if o.Category != nil && *o.Category != "" {
-		dto.Category = o.Category
-	} else {
-		category := "GENERAL"
-		dto.Category = &category
 	}
 
 	for _, lic := range o.Licenses {
@@ -214,7 +218,7 @@ type ObligationResponseDTO struct {
 	Active         bool                      `json:"active"`
 	TextUpdatable  bool                      `json:"text_updatable" example:"true"`
 	LicenseIds     []uuid.UUID               `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
-	Category       *string                   `json:"category" example:"DISTRIBUTION" validate:"required"`
+	Category       string                    `json:"category" example:"DISTRIBUTION" validate:"required"`
 	ExternalRef    ObligationSchemaExtension `json:"external_ref"`
 }
 
@@ -246,7 +250,9 @@ func (obDto *ObligationUpdateDTO) ConvertToObligation() Obligation {
 	o.Comment = obDto.Comment
 	o.Active = obDto.Active
 	o.TextUpdatable = obDto.TextUpdatable
-	o.Category = obDto.Category
+	if obDto.Category != nil {
+		o.Category = &ObligationCategory{Category: *obDto.Category}
+	}
 
 	return o
 }
@@ -261,7 +267,7 @@ type ObligationCreateDTO struct {
 	Active         *bool                     `json:"active"`
 	TextUpdatable  *bool                     `json:"text_updatable" example:"true"`
 	LicenseIds     []uuid.UUID               `json:"license_ids" validate:"required" swaggertype:"array,string" example:"f81d4fae-7dec-11d0-a765-00a0c91e6bf6,f812jfae-7dbc-11d0-a765-00a0hf06bf6"`
-	Category       *string                   `json:"category" example:"DISTRIBUTION"`
+	Category       string                    `json:"category" example:"DISTRIBUTION"`
 	ExternalRef    ObligationSchemaExtension `json:"external_ref"`
 }
 
@@ -273,7 +279,9 @@ func (dto *ObligationCreateDTO) ConvertToObligation() Obligation {
 	o.Comment = dto.Comment
 	o.Active = dto.Active
 	o.TextUpdatable = dto.TextUpdatable
-	o.Category = dto.Category
+	o.Category = &ObligationCategory{
+		Category: dto.Category,
+	}
 
 	o.Type = &ObligationType{
 		Type: dto.Type,
@@ -319,7 +327,9 @@ func (obDto *ObligationFileDTO) ConvertToObligation() Obligation {
 	o.Comment = obDto.Comment
 	o.Active = obDto.Active
 	o.TextUpdatable = obDto.TextUpdatable
-	o.Category = obDto.Category
+	if obDto.Category != nil {
+		o.Category = &ObligationCategory{Category: *obDto.Category}
+	}
 
 	var ext ObligationSchemaExtension
 

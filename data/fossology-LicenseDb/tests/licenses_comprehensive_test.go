@@ -240,7 +240,7 @@ func TestImportLicenses(t *testing.T) {
 			Comment:        ptr("try to link obligations to a license in POST request"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Category:       ptr("GENERAL"),
+			Category:       "GENERAL",
 			ExternalRef: models.ObligationSchemaExtension{
 				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
 			},
@@ -307,7 +307,7 @@ func TestImportLicenses(t *testing.T) {
 			Comment:        ptr("try to link obligations to a license in POST request"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Category:       ptr("GENERAL"),
+			Category:       "GENERAL",
 			ExternalRef: models.ObligationSchemaExtension{
 				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
 			},
@@ -396,7 +396,7 @@ func TestImportLicenses(t *testing.T) {
 			Comment:        ptr("try to link obligations to a license in POST request"),
 			Active:         ptr(true),
 			TextUpdatable:  ptr(false),
-			Category:       ptr("GENERAL"),
+			Category:       "GENERAL",
 			ExternalRef: models.ObligationSchemaExtension{
 				ObligationExplanation: ptr("this is a test explaination to test the external ref functionality"),
 			},

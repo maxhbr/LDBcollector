@@ -92,13 +92,14 @@ func GetDashboardData(c *gin.Context) {
 
 	if err := db.DB.Model(&models.LicenseDB{}).
 		Select("rf_risk as risk, count(*) as count").
+		Where(&models.LicenseDB{Active: &active}).
 		Group("rf_risk").
 		Scan(&licenseFrequency).Error; err != nil {
 		logger.LogError("error fetching risk license frequencies", zap.Error(err))
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "something went wrong",
-			Error:     "error fetching risk liicense frequencies",
+			Error:     "error fetching risk license frequencies",
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
@@ -107,8 +108,10 @@ func GetDashboardData(c *gin.Context) {
 	}
 
 	if err := db.DB.Model(&models.Obligation{}).
-		Select("category, count(*) as count").
-		Group("category").
+		Select("obligation_categories.category, count(*) as count").
+		Joins("JOIN obligation_categories ON obligation_categories.id = obligations.obligation_category_id").
+		Where(&models.Obligation{Active: &active}).
+		Group("obligation_categories.category").
 		Scan(&categoryFrequency).Error; err != nil {
 		logger.LogError("error fetching category obligation frequencies", zap.Error(err))
 		er := models.LicenseError{

@@ -155,6 +155,9 @@ func Router() *gin.Engine {
 				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
 				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
 				obligations.POST("/similarity", getSimilarObligations)
+				obligations.GET("/categories", GetAllObligationCategories)
+				obligations.POST("/categories", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationCategory)
+				obligations.DELETE("/categories/:category", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationCategory)
 			}
 			audit := authorizedv1.Group("/audits")
 			{
@@ -197,6 +200,7 @@ func Router() *gin.Engine {
 				obligations.GET("export", ExportObligations)
 				obligations.GET("/types", GetAllObligationType)
 				obligations.GET("/classifications", GetAllObligationClassification)
+				obligations.GET("/categories", GetAllObligationCategories)
 			}
 			audit := unAuthorizedv1.Group("/audits")
 			{
@@ -262,6 +266,8 @@ func Router() *gin.Engine {
 				obligations.DELETE("/types/:type", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationType)
 				obligations.POST("/classifications", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationClassification)
 				obligations.DELETE("/classifications/:classification", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationClassification)
+				obligations.POST("/categories", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), CreateObligationCategory)
+				obligations.DELETE("/categories/:category", middleware.RoleBasedAccessMiddleware([]string{"ADMIN"}), DeleteObligationCategory)
 				obligations.POST("/similarity", getSimilarObligations)
 			}
 			oidcClient := authorizedv1.Group("/oidcClients")

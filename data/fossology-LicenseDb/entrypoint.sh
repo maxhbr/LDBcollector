@@ -19,6 +19,7 @@ entry_level_user_email="fossy_super_admin@example.org"
 
 echo "API_SECRET=$(openssl rand -hex 32)" >> /app/.env
 echo "REFRESH_TOKEN_SECRET=$(openssl rand -hex 32)" >> /app/.env
+echo "ENABLE_SMTP=false" >> /app/.env
 
 echo "Initializing PostgreSQL database..."
 PGPASSWORD=$db_password psql -h "$db_host" -U "$db_user" -p "$db_port" -d "$db_name"<<EOF

@@ -96,7 +96,7 @@ func GetAudit(c *gin.Context) {
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
-			Message:   fmt.Sprintf("no license with id '%s' exists", id),
+			Message:   fmt.Sprintf("no audit with id '%s' exists", id),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -154,7 +154,7 @@ func GetChangeLogs(c *gin.Context) {
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
-			Message:   fmt.Sprintf("no license with id '%s' exists", id),
+			Message:   fmt.Sprintf("no audit with id '%s' exists", id),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -221,7 +221,7 @@ func GetChangeLogbyId(c *gin.Context) {
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
-			Message:   fmt.Sprintf("no license with id '%s' exists", auditId),
+			Message:   fmt.Sprintf("no audit with id '%s' exists", auditId),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
@@ -234,7 +234,7 @@ func GetChangeLogbyId(c *gin.Context) {
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
-			Message:   fmt.Sprintf("no license with id '%s' exists", changelogId),
+			Message:   fmt.Sprintf("no changelog with id '%s' exists", changelogId),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
