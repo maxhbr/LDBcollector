@@ -96,7 +96,6 @@ library
     , libyaml
     , mtl
     , network-uri
-    , opensource
     , pretty-terminal
     , scotty
     , split
@@ -146,7 +145,6 @@ executable ldbcollector-exe
     , libyaml
     , mtl
     , network-uri
-    , opensource
     , optparse-applicative
     , pretty-terminal
     , scotty
@@ -201,7 +199,6 @@ test-suite ldbcollector-test
     , libyaml
     , mtl
     , network-uri
-    , opensource
     , pretty-terminal
     , scotty
     , split
