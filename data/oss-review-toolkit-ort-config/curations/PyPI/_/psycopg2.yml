@@ -1,0 +1,7 @@
+- id: "PyPI::psycopg2:[2.2.0,3.0.0["
+  curations:
+    comment: |
+      Licensed under LGPL-3.0-or-later with OpenSSL exception. See:
+      https://github.com/psycopg/psycopg2/blob/2_9_11/LICENSE
+    declared_license_mapping:
+      "LGPL with exceptions": "LGPL-3.0-or-later WITH openvpn-openssl-exception"

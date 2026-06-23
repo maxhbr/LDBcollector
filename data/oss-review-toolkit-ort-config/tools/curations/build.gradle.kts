@@ -6,6 +6,13 @@ import org.ossreviewtoolkit.tools.curations.GenerateLicenseClassificationsTask
 import org.ossreviewtoolkit.tools.curations.VerifyPackageConfigurationsTask
 import org.ossreviewtoolkit.tools.curations.VerifyPackageCurationsTask
 
+val javaLanguageVersion: String by project
+
+tasks.named<UpdateDaemonJvm>("updateDaemonJvm") {
+    languageVersion = JavaLanguageVersion.of(javaLanguageVersion)
+    vendor = JvmVendorSpec.ADOPTIUM
+}
+
 tasks {
     register<GenerateLicenseClassificationsTask>("generateLicenseClassifications")
     register<GenerateAspNetCoreCurationsTask>("generateAspNetCoreCurations")

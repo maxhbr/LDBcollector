@@ -1,0 +1,8 @@
+- id: "PyPI::pandas:[1.0,4.0.0["
+  curations:
+    comment: |
+      Licensed under BSD-3-Clause, see:
+      https://github.com/pandas-dev/pandas/blob/v2.3.3/LICENSE
+      https://github.com/pandas-dev/pandas/blob/v3.0.1/LICENSE
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"

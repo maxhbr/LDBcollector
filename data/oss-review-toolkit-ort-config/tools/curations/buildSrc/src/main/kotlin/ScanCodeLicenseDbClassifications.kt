@@ -17,7 +17,7 @@ import org.ossreviewtoolkit.model.licenses.LicenseCategorization
 import org.ossreviewtoolkit.model.licenses.LicenseCategory
 import org.ossreviewtoolkit.model.licenses.LicenseClassifications
 import org.ossreviewtoolkit.model.yamlMapper
-import org.ossreviewtoolkit.utils.spdx.SpdxSingleLicenseExpression
+import org.ossreviewtoolkit.utils.spdxexpression.SpdxSingleLicenseExpression
 
 private const val INDEX_JSON_URL =  "https://scancode-licensedb.aboutcode.org/index.json"
 private const val DISCLAIMER_TEXT = """

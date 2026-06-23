@@ -8,6 +8,8 @@ repositories {
 
 dependencies {
     implementation(ortLibs.model)
+    implementation(ortLibs.utils.common)
+    implementation(ortLibs.utils.spdxExpression)
     implementation(ortLibs.ortPlugins.packageManagers.nuget)
 
     // Leave out the versions so that the same versions as in ORT are used.

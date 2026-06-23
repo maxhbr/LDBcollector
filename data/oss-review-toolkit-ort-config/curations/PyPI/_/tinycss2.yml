@@ -1,0 +1,7 @@
+- id: "PyPI::tinycss2:[1.0.0,2.0.0["
+  curations:
+    comment: |
+      Licensed under BSD-3-Clause, see:
+      https://github.com/Kozea/tinycss2/blob/v1.5.1/LICENSE
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"

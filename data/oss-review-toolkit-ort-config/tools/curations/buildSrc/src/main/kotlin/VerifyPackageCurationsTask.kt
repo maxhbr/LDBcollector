@@ -6,7 +6,7 @@ import org.gradle.api.GradleException
 import org.gradle.api.tasks.TaskAction
 import org.ossreviewtoolkit.model.PackageCuration
 import org.ossreviewtoolkit.model.mapper
-import org.ossreviewtoolkit.utils.spdx.SpdxExpression
+import org.ossreviewtoolkit.utils.spdxexpression.SpdxExpression
 import org.semver4j.range.RangeList
 import org.semver4j.range.RangeListFactory
 

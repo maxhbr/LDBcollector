@@ -1,0 +1,7 @@
+- id: "PyPI::weasyprint:[0.20,69.0["
+  curations:
+    comment: |
+      Licensed under BSD-3-Clause, see:
+      https://github.com/Kozea/WeasyPrint/blob/v68.1/LICENSE
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"

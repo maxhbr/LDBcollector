@@ -5,7 +5,7 @@
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-        http://www.apache.org/licenses/LICENSE-2.0
+        https://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
@@ -44,7 +44,7 @@ This project contains or depends on third-party software components pursuant to 
     )]
     [#list mergedLicenses as resolvedLicense]
         [#assign licenseName = resolvedLicense.license.simpleLicense()]
-        [#assign licenseText = licenseTextProvider.getLicenseText(licenseName)!]
+        [#assign licenseText = licenseFactProvider.getLicenseText(licenseName)!]
         [#if !licenseText?has_content][#continue][/#if]
         [#if isFirst]
             [#assign isFirst = false]
@@ -58,7 +58,7 @@ This project contains or depends on third-party software components pursuant to 
 ${copyrights?join("\n", "", "\n")}
 ${licenseText}
         [#assign exceptionName = resolvedLicense.license.exception()!]
-        [#assign exceptionText = licenseTextProvider.getLicenseText(exceptionName)!]
+        [#assign exceptionText = licenseFactProvider.getLicenseText(exceptionName)!]
         [#if exceptionText?has_content]
 ${exceptionText}
         [/#if]

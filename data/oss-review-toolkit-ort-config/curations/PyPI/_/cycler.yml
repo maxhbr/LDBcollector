@@ -1,0 +1,7 @@
+- id: "PyPI::cycler:[0.9.0,1.0.0["
+  curations:
+    comment: |
+      Versions from 0.9.0 to 0.12.1 are confirmed to be licensed under BSD-3-Clause.
+      See: https://github.com/matplotlib/cycler/blob/v0.12.1/LICENSE
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"

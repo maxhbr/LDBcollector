@@ -5,7 +5,7 @@
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-        http://www.apache.org/licenses/LICENSE-2.0
+        https://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
@@ -36,7 +36,7 @@
 [#assign filteredLicenses = helper.filterForCategory(mergedLicenses, noticeCategoryName)]
 [#list filteredLicenses as resolvedLicense]
     [#assign licenseName = resolvedLicense.license.simpleLicense()]
-    [#assign licenseText = licenseTextProvider.getLicenseText(licenseName)!]
+    [#assign licenseText = licenseFactProvider.getLicenseText(licenseName)!]
     [#if !licenseText?has_content][#continue][/#if]
     [#if !hasNoticeProjectLicenses]
 This software includes external packages and source code.
@@ -54,7 +54,7 @@ The applicable license information is listed below:
 ${copyrights?join("\n", "", "\n")}
 ${licenseText}
     [#assign exceptionName = resolvedLicense.license.exception()!]
-    [#assign exceptionText = licenseTextProvider.getLicenseText(exceptionName)!]
+    [#assign exceptionText = licenseFactProvider.getLicenseText(exceptionName)!]
     [#if exceptionText?has_content]
 ${exceptionText}
     [/#if]
@@ -97,15 +97,15 @@ ${copyrights?join("\n", "")}
         are configured not to be included in notice files, and filter all licenses that are contained in the license
         files already printed above.
     --]
-    [#assign licensesFilteredBySource = LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED.filter(package.license.licenses)]
+    [#assign resolvedLicenseInfo = LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED.filter(package.license, package.licenseChoices)]
     [#assign resolvedLicenses = helper.filterForCategory(
-        package.licensesNotInLicenseFiles(licensesFilteredBySource),
+        package.licensesNotInLicenseFiles(resolvedLicenseInfo.licenses),
         noticeCategoryName
     )]
     [#assign isFirst = true]
     [#list resolvedLicenses as resolvedLicense]
         [#assign licenseName = resolvedLicense.license.simpleLicense()]
-        [#assign licenseText = licenseTextProvider.getLicenseText(licenseName)!]
+        [#assign licenseText = licenseFactProvider.getLicenseText(licenseName)!]
         [#if !licenseText?has_content][#continue][/#if]
         [#if isFirst]
             [#if !hasNoticePackageLicenses]
@@ -127,7 +127,7 @@ The following copyrights and licenses were found in the source code of this pack
 ${copyrights?join("\n", "", "\n")}
 ${licenseText}
         [#assign exceptionName = resolvedLicense.license.exception()!]
-        [#assign exceptionText = licenseTextProvider.getLicenseText(exceptionName)!]
+        [#assign exceptionText = licenseFactProvider.getLicenseText(exceptionName)!]
         [#if exceptionText?has_content]
 ${exceptionText}
         [/#if]

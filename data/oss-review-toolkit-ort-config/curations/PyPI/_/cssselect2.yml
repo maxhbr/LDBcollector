@@ -1,0 +1,7 @@
+- id: "PyPI::cssselect2:[0.1.0,1.0.0["
+  curations:
+    comment: |
+      Licensed under BSD-3-Clause, see:
+      https://github.com/Kozea/cssselect2/blob/0.9.0/LICENSE
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"

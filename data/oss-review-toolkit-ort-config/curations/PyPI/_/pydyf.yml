@@ -1,0 +1,7 @@
+- id: "PyPI::pydyf:[0.1.0,1.0.0["
+  curations:
+    comment: |
+      Licensed under BSD-3-Clause, see:
+      https://github.com/CourtBouillon/pydyf/blob/v0.12.1/LICENSE
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"
