@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:a83fa0ce-96e6-4e96-a7b1-7bfe8b2832f6",
+            "@id": "_:9e67d218-cd2b-46b1-8678-5b82bae1c2a5",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,12 +15,12 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://github.com/zdohnal/hplip/blob/master/COPYING#L939",
-            "spdx:timestamp": "2026-02-20T20:56:49Z",
+            "spdx:timestamp": "2026-05-28T16:16:40Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
-            "spdx:match": "false",
+            "spdx:match": "true",
             "@type": "spdx:CrossRef"
         },
         {
@@ -41,7 +41,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:a83fa0ce-96e6-4e96-a7b1-7bfe8b2832f6"
+                "@id": "_:9e67d218-cd2b-46b1-8678-5b82bae1c2a5"
             }
         }
     ],

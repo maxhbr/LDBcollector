@@ -9,7 +9,7 @@
     </obsoletedBys>
     <crossRefs>
       <crossRef>https://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html</crossRef>
-      <crossRef>https://opensource.org/licenses/LGPL-2.1</crossRef>
+      <crossRef>https://opensource.org/license/LGPL-2.1</crossRef>
     </crossRefs>
     <standardLicenseHeader>
       Copyright (C) <alt name="copyright" match=".+">year name of author</alt>
@@ -654,9 +654,12 @@
         by James Random Hacker.
       </p>
       <p>
-	<optional>&lt;</optional>signature of Ty Coon<optional>&gt;</optional>,
+	<optional>&lt;</optional>
+        signature of <alt match="Ty Coon|Moe Ghoul" name="sample-signee">Ty Coon</alt>
+        <optional>&gt;</optional>,
 	1 April 1990<br></br>
-        Ty Coon, President of Vice<br></br>
+        <alt match="Ty Coon|Moe Ghoul" name="sample-signee">Ty Coon</alt>,
+        President of Vice<br></br>
         That's all there is to it!
       </p>
     </optional>

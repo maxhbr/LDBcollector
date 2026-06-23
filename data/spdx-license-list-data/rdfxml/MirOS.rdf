@@ -14,7 +14,7 @@ Provided that these terms and disclaimer and all copyright notices are retained 
 This work is provided "AS IS" and WITHOUT WARRANTY of any kind, to the utmost extent permitted by applicable law, neither express nor implied; without malicious intent or gross negligence. In no event may a licensor, author or contributor be held liable for indirect, direct, other damage, loss, or other issues arising in any way out of dealing in the work, even if advised of the possibility of such damage or existence of a defect, except proven that it results out of said person's immediate fault when using the work as intended.
 
 </spdx:licenseText>
-    <rdfs:seeAlso>https://opensource.org/licenses/MirOS</rdfs:seeAlso>
+    <rdfs:seeAlso>https://opensource.org/license/MirOS</rdfs:seeAlso>
     <spdx:licenseTextHtml>
       &lt;div class="optional-license-text"&gt; 
          &lt;p&gt;The MirOS Licence&lt;/p&gt;
@@ -56,9 +56,9 @@ This work is provided "AS IS" and WITHOUT WARRANTY of any kind, to the utmost ex
         <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isLive>
-        <spdx:url>https://opensource.org/licenses/MirOS</spdx:url>
-        <spdx:timestamp>2026-02-20T20:52:50Z</spdx:timestamp>
+        >true</spdx:isLive>
+        <spdx:url>https://opensource.org/license/MirOS</spdx:url>
+        <spdx:timestamp>2026-05-28T16:14:42Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>N/A</spdx:match>

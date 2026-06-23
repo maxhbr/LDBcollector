@@ -27,7 +27,7 @@ THIS SOFTWARE IS PROVIDED BY NAUMEN "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANT
 
 This software consists of contributions made by NAUMEN and Contributors. Specific attributions are listed in the accompanying credits file.
 </spdx:licenseText>
-    <rdfs:seeAlso>https://opensource.org/licenses/Naumen</rdfs:seeAlso>
+    <rdfs:seeAlso>https://opensource.org/license/Naumen</rdfs:seeAlso>
     <spdx:licenseTextHtml>
       &lt;div class="optional-license-text"&gt; 
          &lt;p&gt;NAUMEN Public License&lt;/p&gt;
@@ -117,9 +117,9 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
         <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isLive>
-        <spdx:url>https://opensource.org/licenses/Naumen</spdx:url>
-        <spdx:timestamp>2026-02-20T21:04:05Z</spdx:timestamp>
+        >true</spdx:isLive>
+        <spdx:url>https://opensource.org/license/Naumen</spdx:url>
+        <spdx:timestamp>2026-05-28T16:13:57Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>N/A</spdx:match>

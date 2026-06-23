@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:73fbede9-1e93-4698-a29e-0eb7ddd2be30"
+                "@id": "_:e55165bb-94e8-49e4-91ee-cebbe95a9eee"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:73fbede9-1e93-4698-a29e-0eb7ddd2be30",
+            "@id": "_:e55165bb-94e8-49e4-91ee-cebbe95a9eee",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/TOSL",
-            "spdx:timestamp": "2026-02-20T20:54:27Z",
+            "spdx:timestamp": "2026-05-28T16:15:21Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

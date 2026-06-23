@@ -5,15 +5,15 @@ PREFIX spdx: <http://spdx.org/rdf/terms#>
 
 <http://spdx.org/licenses/Naumen>
         a                             spdx:ListedLicense;
-        rdfs:seeAlso                  "https://opensource.org/licenses/Naumen";
+        rdfs:seeAlso                  "https://opensource.org/license/Naumen";
         spdx:crossRef                 [ a                   spdx:CrossRef;
-                                        spdx:isLive         false;
+                                        spdx:isLive         true;
                                         spdx:isValid        true;
                                         spdx:isWayBackLink  false;
                                         spdx:match          "N/A";
                                         spdx:order          "0"^^<http://www.w3.org/2001/XMLSchema#int>;
-                                        spdx:timestamp      "2026-02-20T21:04:05Z";
-                                        spdx:url            "https://opensource.org/licenses/Naumen"
+                                        spdx:timestamp      "2026-05-28T16:13:57Z";
+                                        spdx:url            "https://opensource.org/license/Naumen"
                                       ];
         spdx:isDeprecatedLicenseId    false;
         spdx:isOsiApproved            true;

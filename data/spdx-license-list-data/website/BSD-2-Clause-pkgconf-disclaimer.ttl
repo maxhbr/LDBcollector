@@ -10,9 +10,9 @@ PREFIX spdx: <http://spdx.org/rdf/terms#>
                                         spdx:isLive         true;
                                         spdx:isValid        true;
                                         spdx:isWayBackLink  false;
-                                        spdx:match          "false";
+                                        spdx:match          "true";
                                         spdx:order          "1"^^<http://www.w3.org/2001/XMLSchema#int>;
-                                        spdx:timestamp      "2026-02-20T20:53:22Z";
+                                        spdx:timestamp      "2026-05-28T16:17:10Z";
                                         spdx:url            "https://github.com/audacious-media-player/audacious/blob/master/COPYING"
                                       ];
         spdx:crossRef                 [ a                   spdx:CrossRef;
@@ -21,7 +21,7 @@ PREFIX spdx: <http://spdx.org/rdf/terms#>
                                         spdx:isWayBackLink  false;
                                         spdx:match          "false";
                                         spdx:order          "0"^^<http://www.w3.org/2001/XMLSchema#int>;
-                                        spdx:timestamp      "2026-02-20T20:53:21Z";
+                                        spdx:timestamp      "2026-05-28T16:17:10Z";
                                         spdx:url            "https://github.com/audacious-media-player/audacious/blob/master/src/audacious/main.cc"
                                       ];
         spdx:isDeprecatedLicenseId    false;

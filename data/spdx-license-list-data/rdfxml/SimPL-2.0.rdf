@@ -43,7 +43,7 @@ License for the License
 
 You may do anything that you want with the SimPL text; it's a license form to use in any way that you find helpful.  To avoid confusion, however, if you change the terms in any way then you may not call your license the Simple Public License or the SimPL (but feel free to acknowledge that your license is "based on the Simple Public License").
 </spdx:licenseText>
-    <rdfs:seeAlso>https://opensource.org/licenses/SimPL-2.0</rdfs:seeAlso>
+    <rdfs:seeAlso>https://opensource.org/license/SiMPL-2.0</rdfs:seeAlso>
     <spdx:licenseTextHtml>
       &lt;div class="optional-license-text"&gt; 
          &lt;p&gt;Simple Public License (SimPL)&lt;/p&gt;
@@ -206,9 +206,9 @@ You may do anything that you want with the SimPL text; it's a license form to us
         <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isLive>
-        <spdx:url>https://opensource.org/licenses/SimPL-2.0</spdx:url>
-        <spdx:timestamp>2026-02-20T20:55:05Z</spdx:timestamp>
+        >true</spdx:isLive>
+        <spdx:url>https://opensource.org/license/SiMPL-2.0</spdx:url>
+        <spdx:timestamp>2026-05-28T16:16:36Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>N/A</spdx:match>

@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:02d16df4-cdb4-4450-866a-55ca4d3c2558",
+            "@id": "_:8f0c23f3-a87e-402a-a422-15faa8b890d8",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,9 +15,32 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://ec.europa.eu/idabc/servlets/Doc027f.pdf?id=31096",
-            "spdx:timestamp": "2026-02-20T20:56:43Z",
+            "spdx:timestamp": "2026-05-28T16:13:40Z",
             "spdx:order": {
                 "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "false",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:b244ddc1-2e8f-4b68-af06-3d62542c787c",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "http://ec.europa.eu/idabc/en/document/7330.html",
+            "spdx:timestamp": "2026-05-28T16:13:40Z",
+            "spdx:order": {
+                "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "false",
@@ -27,10 +50,10 @@
             "@id": "http://spdx.org/licenses/EUPL-1.0",
             "spdx:crossRef": [
                 {
-                    "@id": "_:02d16df4-cdb4-4450-866a-55ca4d3c2558"
+                    "@id": "_:b244ddc1-2e8f-4b68-af06-3d62542c787c"
                 },
                 {
-                    "@id": "_:504d063e-54c5-48e6-a870-31f9a8314ff4"
+                    "@id": "_:8f0c23f3-a87e-402a-a422-15faa8b890d8"
                 }
             ],
             "rdfs:seeAlso": [
@@ -51,29 +74,6 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             }
-        },
-        {
-            "@id": "_:504d063e-54c5-48e6-a870-31f9a8314ff4",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "http://ec.europa.eu/idabc/en/document/7330.html",
-            "spdx:timestamp": "2026-02-20T20:56:42Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "false",
-            "@type": "spdx:CrossRef"
         }
     ],
     "@context": {

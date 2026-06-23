@@ -126,10 +126,10 @@ Permission is granted to anyone to use this software for any purpose on any comp
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
         <spdx:url>https://github.com/lsof-org/lsof/blob/master/COPYING</spdx:url>
-        <spdx:timestamp>2026-02-20T21:04:05Z</spdx:timestamp>
+        <spdx:timestamp>2026-05-28T16:17:40Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
-        <spdx:match>false</spdx:match>
+        <spdx:match>true</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
     <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"

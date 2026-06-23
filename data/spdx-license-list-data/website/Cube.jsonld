@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:ee38b1aa-cb8c-43a8-99dd-02f070c02147"
+                "@id": "_:88d5f593-a140-49bd-98d0-99340e308297"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:ee38b1aa-cb8c-43a8-99dd-02f070c02147",
+            "@id": "_:88d5f593-a140-49bd-98d0-99340e308297",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/Cube",
-            "spdx:timestamp": "2026-02-20T20:57:50Z",
+            "spdx:timestamp": "2026-05-28T16:17:41Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

@@ -17,7 +17,7 @@ DARÜBER HINAUS IST EINE HAFTUNG AUSGESCHLOSSEN.
 
 DIE VORSTEHENDE HAFTUNGSBESCHRÄNKUNG GILT AUCH FÜR DIE HAFTUNG DER MITARBEITER, VERTRETER UND ORGANE DER URHEBER ODER URHEBERRECHTSINHABER.
 </spdx:licenseText>
-    <rdfs:seeAlso>https://opensource.org/license/osc-license-1-0</rdfs:seeAlso>
+    <rdfs:seeAlso>https://opensource.org/license/OSC-1.0</rdfs:seeAlso>
     <spdx:licenseTextHtml>
 		&lt;div class="replaceable-license-text"&gt;&lt;span title="can be replaced with the pattern .{0,5000}"&gt; 
 			&lt;p&gt;Copyright (c) &amp;lt;Jahr&amp;gt; &amp;lt;Copyright Inhaber&amp;gt;&lt;/p&gt;
@@ -68,9 +68,9 @@ DIE VORSTEHENDE HAFTUNGSBESCHRÄNKUNG GILT AUCH FÜR DIE HAFTUNG DER MITARBEITER
         <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isLive>
-        <spdx:url>https://opensource.org/license/osc-license-1-0</spdx:url>
-        <spdx:timestamp>2026-02-20T20:58:20Z</spdx:timestamp>
+        >true</spdx:isLive>
+        <spdx:url>https://opensource.org/license/OSC-1.0</spdx:url>
+        <spdx:timestamp>2026-05-28T16:13:49Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>N/A</spdx:match>

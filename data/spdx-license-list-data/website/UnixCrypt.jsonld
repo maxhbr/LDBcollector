@@ -2,23 +2,23 @@
     "@graph": [
         {
             "@id": "http://spdx.org/licenses/UnixCrypt",
-            "spdx:crossRef": [
-                {
-                    "@id": "_:38d59ce4-43dc-4a94-8fe2-124fd9fcf62b"
-                },
-                {
-                    "@id": "_:29bd4a9c-0913-474b-8414-70fe8c106fad"
-                },
-                {
-                    "@id": "_:d2780fae-0e1d-419d-bdb9-ffb3c60416f5"
-                }
-            ],
             "rdfs:seeAlso": [
                 "https://foss.heptapod.net/python-libs/passlib/-/blob/branch/stable/LICENSE#L70",
                 "https://archive.eclipse.org/jetty/8.0.1.v20110908/xref/org/eclipse/jetty/http/security/UnixCrypt.html",
                 "https://opensource.apple.com/source/JBoss/JBoss-737/jboss-all/jetty/src/main/org/mortbay/util/UnixCrypt.java.auto.html"
             ],
             "spdx:standardLicenseTemplate": "<<var;name=\"copyright\";original=\"Copyright (c) 1996 Aki Yoshida. All rights reserved.\";match=\".{0,5000}\">>\nPermission to use, copy, modify and distribute this software for non-commercial or commercial purposes and without fee is hereby granted provided that this copyright notice appears in all copies.\n\n",
+            "spdx:crossRef": [
+                {
+                    "@id": "_:0bc153d7-6372-4841-9420-2cde3cd7d5af"
+                },
+                {
+                    "@id": "_:95dbe1a7-85e3-4e06-8bc0-02d134ee08af"
+                },
+                {
+                    "@id": "_:6fea139f-d580-4ae3-a0eb-9d612c48f8a4"
+                }
+            ],
             "spdx:name": "UnixCrypt License",
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
@@ -33,53 +33,7 @@
             }
         },
         {
-            "@id": "_:38d59ce4-43dc-4a94-8fe2-124fd9fcf62b",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://opensource.apple.com/source/JBoss/JBoss-737/jboss-all/jetty/src/main/org/mortbay/util/UnixCrypt.java.auto.html",
-            "spdx:timestamp": "2026-02-20T20:58:55Z",
-            "spdx:order": {
-                "@value": "1",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "N/A",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:29bd4a9c-0913-474b-8414-70fe8c106fad",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://foss.heptapod.net/python-libs/passlib/-/blob/branch/stable/LICENSE#L70",
-            "spdx:timestamp": "2026-02-20T20:58:54Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "false",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:d2780fae-0e1d-419d-bdb9-ffb3c60416f5",
+            "@id": "_:0bc153d7-6372-4841-9420-2cde3cd7d5af",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -93,9 +47,55 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://archive.eclipse.org/jetty/8.0.1.v20110908/xref/org/eclipse/jetty/http/security/UnixCrypt.html",
-            "spdx:timestamp": "2026-02-20T20:58:55Z",
+            "spdx:timestamp": "2026-05-28T16:14:46Z",
             "spdx:order": {
                 "@value": "2",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:95dbe1a7-85e3-4e06-8bc0-02d134ee08af",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://foss.heptapod.net/python-libs/passlib/-/blob/branch/stable/LICENSE#L70",
+            "spdx:timestamp": "2026-05-28T16:14:47Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "false",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:6fea139f-d580-4ae3-a0eb-9d612c48f8a4",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://opensource.apple.com/source/JBoss/JBoss-737/jboss-all/jetty/src/main/org/mortbay/util/UnixCrypt.java.auto.html",
+            "spdx:timestamp": "2026-05-28T16:14:46Z",
+            "spdx:order": {
+                "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "N/A",

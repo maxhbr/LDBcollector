@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:9e93c5c3-4c82-4f6c-afe9-0dc3687d4fc2"
+                "@id": "_:3ce0c1ed-4604-477d-9961-016afe9b0405"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:9e93c5c3-4c82-4f6c-afe9-0dc3687d4fc2",
+            "@id": "_:3ce0c1ed-4604-477d-9961-016afe9b0405",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/Bahyph",
-            "spdx:timestamp": "2026-02-20T21:01:57Z",
+            "spdx:timestamp": "2026-05-28T16:18:17Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

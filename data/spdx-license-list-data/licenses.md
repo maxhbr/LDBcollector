@@ -1,5 +1,5 @@
 # License List
-The following licenses have been generated from the license list version 3.28.0
+The following licenses have been generated from the license list version 3dfd9aa
 
 ## Licenses with Short Identifiers
 
@@ -73,6 +73,7 @@ The following licenses have been generated from the license list version 3.28.0
 | Borceux license                                                                           | [Borceux][]                              |      |           |
 | Brian Gladman 2-Clause License                                                            | [Brian-Gladman-2-Clause][]               |      |           |
 | Brian Gladman 3-Clause License                                                            | [Brian-Gladman-3-Clause][]               |      |           |
+| Brian Gladman 3-Clause License (no conversion clause)                                     | [Brian-Gladman-3-Clause-no-conversion][] |      |           |
 | BSD 1-Clause License                                                                      | [BSD-1-Clause][]                         | Y    |           |
 | BSD 2-Clause "Simplified" License                                                         | [BSD-2-Clause][]                         | Y    | Y         |
 | BSD 2-Clause - Ian Darwin variant                                                         | [BSD-2-Clause-Darwin][]                  |      |           |
@@ -177,7 +178,7 @@ The following licenses have been generated from the license list version 3.28.0
 | Creative Commons Share Alike 1.0 Generic                                                  | [CC-SA-1.0][]                            |      |           |
 | Creative Commons Zero v1.0 Universal                                                      | [CC0-1.0][]                              |      | Y         |
 | Common Development and Distribution License 1.0                                           | [CDDL-1.0][]                             | Y    | Y         |
-| Common Development and Distribution License 1.1                                           | [CDDL-1.1][]                             |      |           |
+| Common Development and Distribution License 1.1                                           | [CDDL-1.1][]                             | Y    |           |
 | Common Documentation License 1.0                                                          | [CDL-1.0][]                              |      |           |
 | Community Data License Agreement Permissive 1.0                                           | [CDLA-Permissive-1.0][]                  |      |           |
 | Community Data License Agreement Permissive 2.0                                           | [CDLA-Permissive-2.0][]                  |      |           |
@@ -460,6 +461,7 @@ The following licenses have been generated from the license list version 3.28.0
 | Mulan Permissive Software License, Version 2                                              | [MulanPSL-2.0][]                         | Y    |           |
 | Multics License                                                                           | [Multics][]                              | Y    |           |
 | Mup License                                                                               | [Mup][]                                  |      |           |
+| MVT License 1.1                                                                           | [MVT-1.1][]                              |      |           |
 | Nara Institute of Science and Technology License (2003)                                   | [NAIST-2003][]                           |      |           |
 | NASA Open Source Agreement 1.3                                                            | [NASA-1.3][]                             | Y    |           |
 | Naumen Public License                                                                     | [Naumen][]                               | Y    |           |
@@ -738,6 +740,7 @@ The following licenses have been generated from the license list version 3.28.0
 | GNOME examples exception                              | [GNOME-examples-exception][]             |
 | GNU Compiler Exception                                | [GNU-compiler-exception][]               |
 | GNU JavaMail exception                                | [gnu-javamail-exception][]               |
+| Google Additional IP Rights Grant (Patents) - WebM    | [Google-Patent-WebM][]                   |
 | GPL-3.0 389 DS Base Exception                         | [GPL-3.0-389-ds-base-exception][]        |
 | GPL-3.0 Interface Exception                           | [GPL-3.0-interface-exception][]          |
 | GPL-3.0 Linking Exception                             | [GPL-3.0-linking-exception][]            |
@@ -896,6 +899,7 @@ The following licenses have been generated from the license list version 3.28.0
 [Borceux]: text/Borceux.txt
 [Brian-Gladman-2-Clause]: text/Brian-Gladman-2-Clause.txt
 [Brian-Gladman-3-Clause]: text/Brian-Gladman-3-Clause.txt
+[Brian-Gladman-3-Clause-no-conversion]: text/Brian-Gladman-3-Clause-no-conversion.txt
 [BSD-1-Clause]: text/BSD-1-Clause.txt
 [BSD-2-Clause]: text/BSD-2-Clause.txt
 [BSD-2-Clause-Darwin]: text/BSD-2-Clause-Darwin.txt
@@ -1309,6 +1313,7 @@ The following licenses have been generated from the license list version 3.28.0
 [MulanPSL-2.0]: text/MulanPSL-2.0.txt
 [Multics]: text/Multics.txt
 [Mup]: text/Mup.txt
+[MVT-1.1]: text/MVT-1.1.txt
 [NAIST-2003]: text/NAIST-2003.txt
 [NASA-1.3]: text/NASA-1.3.txt
 [Naumen]: text/Naumen.txt
@@ -1586,6 +1591,7 @@ The following licenses have been generated from the license list version 3.28.0
 [GNOME-examples-exception]: text/GNOME-examples-exception.txt
 [GNU-compiler-exception]: text/GNU-compiler-exception.txt
 [gnu-javamail-exception]: text/gnu-javamail-exception.txt
+[Google-Patent-WebM]: text/Google-Patent-WebM.txt
 [GPL-3.0-389-ds-base-exception]: text/GPL-3.0-389-ds-base-exception.txt
 [GPL-3.0-interface-exception]: text/GPL-3.0-interface-exception.txt
 [GPL-3.0-linking-exception]: text/GPL-3.0-linking-exception.txt

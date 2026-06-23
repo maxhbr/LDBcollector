@@ -16,16 +16,16 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
+            "spdx:crossRef": {
+                "@id": "_:cda3ed1d-ebf5-45a0-9618-43f70a8af6d6"
+            },
             "spdx:isOsiApproved": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:crossRef": {
-                "@id": "_:e0fce5ee-b884-47d9-81e2-723a593eb582"
             }
         },
         {
-            "@id": "_:e0fce5ee-b884-47d9-81e2-723a593eb582",
+            "@id": "_:cda3ed1d-ebf5-45a0-9618-43f70a8af6d6",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -39,7 +39,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://www.mozilla.org/MPL/NPL/1.0/",
-            "spdx:timestamp": "2026-02-20T20:54:26Z",
+            "spdx:timestamp": "2026-05-28T16:17:09Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

@@ -12,7 +12,15 @@
             "spdx:standardLicenseHeader": "Licensed under the Open Software License version 2.1\n\n",
             "rdfs:seeAlso": [
                 "http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm",
-                "https://opensource.org/licenses/OSL-2.1"
+                "https://opensource.org/license/OSL-2.1"
+            ],
+            "spdx:crossRef": [
+                {
+                    "@id": "_:609f35a9-c580-454d-a784-ca21d2c203f4"
+                },
+                {
+                    "@id": "_:d8795236-9b09-4587-8610-5179fe82cf97"
+                }
             ],
             "spdx:standardLicenseHeaderTemplate": "Licensed under the Open Software License version 2.1\n\n",
             "spdx:isDeprecatedLicenseId": {
@@ -20,14 +28,6 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:standardLicenseHeaderHtml": "\n      <p>Licensed under the Open Software License version 2.1</p>\n\n      ",
-            "spdx:crossRef": [
-                {
-                    "@id": "_:5b56f851-b6d5-42a7-af33-fb3f7e07a742"
-                },
-                {
-                    "@id": "_:59a14283-ac23-4c8b-8df3-12b4ad83bd7c"
-                }
-            ],
             "spdx:isOsiApproved": {
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -37,7 +37,7 @@
             "rdfs:comment": "Same as version 2.0 of this license except with changes to section 10"
         },
         {
-            "@id": "_:5b56f851-b6d5-42a7-af33-fb3f7e07a742",
+            "@id": "_:609f35a9-c580-454d-a784-ca21d2c203f4",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -51,7 +51,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm",
-            "spdx:timestamp": "2026-02-20T20:56:43Z",
+            "spdx:timestamp": "2026-05-28T16:14:04Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -60,7 +60,7 @@
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:59a14283-ac23-4c8b-8df3-12b4ad83bd7c",
+            "@id": "_:d8795236-9b09-4587-8610-5179fe82cf97",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -73,8 +73,8 @@
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:url": "https://opensource.org/licenses/OSL-2.1",
-            "spdx:timestamp": "2026-02-20T20:56:43Z",
+            "spdx:url": "https://opensource.org/license/OSL-2.1",
+            "spdx:timestamp": "2026-05-28T16:14:04Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

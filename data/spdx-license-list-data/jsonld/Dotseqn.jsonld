@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:5b122f2a-0f20-4067-9bef-234581462aec",
+            "@id": "_:ae0c27a9-43a8-492a-946b-52170cfc65ab",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +15,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://fedoraproject.org/wiki/Licensing/Dotseqn",
-            "spdx:timestamp": "2026-02-20T21:03:00Z",
+            "spdx:timestamp": "2026-05-28T16:13:56Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -34,7 +34,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:5b122f2a-0f20-4067-9bef-234581462aec"
+                "@id": "_:ae0c27a9-43a8-492a-946b-52170cfc65ab"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",

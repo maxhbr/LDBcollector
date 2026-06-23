@@ -1,0 +1,40 @@
+{
+  "@context" : "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph" : [ {
+    "@id" : "_:creationInfo_0",
+    "type" : "CreationInfo",
+    "specVersion" : "3.0.1",
+    "createdBy" : [ "https://spdx.org/licenses/creatoragent/3dfd9aa" ],
+    "createdUsing" : [ "https://spdx.org/tools/licenselistpublisher" ],
+    "created" : "2026-05-28T00:00:00Z",
+    "comment" : "This object is created and maintained by the SPDX legal team (https://spdx.dev/engage/participate/legal-team/) using the LicenseListPublisher (https://github.com/spdx/licenselistpublisher)"
+  }, {
+    "spdxId" : "http://spdx.org/licenses/Brian-Gladman-3-Clause-no-conversion_document",
+    "type" : "SpdxDocument",
+    "rootElement" : [ "http://spdx.org/licenses/Brian-Gladman-3-Clause-no-conversion" ],
+    "name" : "Brian-Gladman-3-Clause-no-conversion document",
+    "comment" : "SPDX Document For Brian-Gladman-3-Clause-no-conversion",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://spdx.org/tools/licenselistpublisher",
+    "type" : "Tool",
+    "name" : "SPDX License List Publisher",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "https://spdx.org/licenses/creatoragent/3dfd9aa",
+    "type" : "Organization",
+    "name" : "SPDX Legal Team",
+    "creationInfo" : "_:creationInfo_0"
+  }, {
+    "spdxId" : "http://spdx.org/licenses/Brian-Gladman-3-Clause-no-conversion",
+    "type" : "expandedlicensing_ListedLicense",
+    "expandedlicensing_isOsiApproved" : false,
+    "expandedlicensing_seeAlso" : [ "https://github.com/krb5/krb5/blob/kfw-4.0.1-beta1/src/lib/crypto/builtin/aes/aesopt.h" ],
+    "simplelicensing_licenseText" : "Copyright (c) 2001, Dr Brian Gladman <brg@gladman.uk.net>, Worcester, UK.\nAll rights reserved.\n\nLICENSE TERMS\n\nThe free distribution and use of this software in both source and binary\nform is allowed (with or without changes) provided that:\n\n  1. distributions of this source code include the above copyright\n     notice, this list of conditions and the following disclaimer;\n  2. distributions in binary form include the above copyright\n     notice, this list of conditions and the following disclaimer\n     in the documentation and/or other associated materials;\n  3. the copyright holder's name is not used to endorse products\n     built using this software without specific written permission.\n\nDISCLAIMER\nThis software is provided 'as is' with no explcit or implied warranties\nin respect of any properties, including, but not limited to, correctness\nand fitness for purpose.\n",
+    "name" : "Brian Gladman 3-Clause License (no conversion clause)",
+    "comment" : "This license is similar to Brian-Gladman-3-Clause but omits the clause about alternative licensing.",
+    "expandedlicensing_standardLicenseTemplate" : "<<var;name=\"copyright\";original=\"Copyright (c) 2001, Dr Brian Gladman <brg@gladman.uk.net>, Worcester, UK. All rights reserved.\";match=\".{0,5000}\">>\nLICENSE TERMS\n\nThe free distribution and use of this software in both source and binary form is allowed (with or without changes) provided that:\n\n   <<var;name=\"bullet\";original=\"1.\";match=\".{0,20}\">> distributions of this source code include the above copyright notice, this list of conditions and the following disclaimer;\n   <<var;name=\"bullet\";original=\"2.\";match=\".{0,20}\">> distributions in binary form include the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other associated materials;\n   <<var;name=\"bullet\";original=\"3.\";match=\".{0,20}\">> the copyright holder's name is not used to endorse products built using this software without specific written permission.\nDISCLAIMER\n\nThis software is provided 'as is' with no explcit or implied warranties in respect of any properties, including, but not limited to, correctness and fitness for purpose.\n\n",
+    "creationInfo" : "_:creationInfo_0",
+    "expandedlicensing_isDeprecatedLicenseId" : false
+  } ]
+}

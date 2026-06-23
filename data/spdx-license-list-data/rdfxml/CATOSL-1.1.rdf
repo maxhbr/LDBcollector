@@ -120,7 +120,7 @@ The provisions that follow set forth the terms and conditions under which you ma
 
 11.7 This License constitutes the entire agreement between the parties with respect to the subject matter hereof.
 </spdx:licenseText>
-    <rdfs:seeAlso>https://opensource.org/licenses/CATOSL-1.1</rdfs:seeAlso>
+    <rdfs:seeAlso>https://opensource.org/license/CATOSL-1.1</rdfs:seeAlso>
     <spdx:licenseTextHtml>
       &lt;div class="optional-license-text"&gt; 
          &lt;p&gt;Computer Associates Trusted Open Source License
@@ -718,9 +718,9 @@ The provisions that follow set forth the terms and conditions under which you ma
         <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isLive>
-        <spdx:url>https://opensource.org/licenses/CATOSL-1.1</spdx:url>
-        <spdx:timestamp>2026-02-20T20:53:54Z</spdx:timestamp>
+        >true</spdx:isLive>
+        <spdx:url>https://opensource.org/license/CATOSL-1.1</spdx:url>
+        <spdx:timestamp>2026-05-28T16:15:18Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>N/A</spdx:match>

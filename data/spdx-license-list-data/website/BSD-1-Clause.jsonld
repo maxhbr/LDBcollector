@@ -11,7 +11,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:cb7ab96f-e8e0-4e52-86af-a4b1c31e364c"
+                "@id": "_:435872eb-2af0-408f-9033-ed1919ed16dc"
             },
             "spdx:isOsiApproved": {
                 "@value": "true",
@@ -21,7 +21,7 @@
             "@type": "spdx:ListedLicense"
         },
         {
-            "@id": "_:cb7ab96f-e8e0-4e52-86af-a4b1c31e364c",
+            "@id": "_:435872eb-2af0-408f-9033-ed1919ed16dc",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -35,7 +35,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://svnweb.freebsd.org/base/head/include/ifaddrs.h?revision=326823",
-            "spdx:timestamp": "2026-02-20T21:05:36Z",
+            "spdx:timestamp": "2026-05-28T16:16:39Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

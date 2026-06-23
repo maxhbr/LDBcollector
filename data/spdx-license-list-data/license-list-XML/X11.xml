@@ -4,7 +4,7 @@
       <crossRefs>
          <crossRef>http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3</crossRef>
       </crossRefs>
-      <notes>This is same as MIT, but with no advertising clause added.</notes>
+      <notes>This is same as MIT, but with a clause added which prohibits advertising.</notes>
     <text>
       <titleText>
          <p>X11 License</p>

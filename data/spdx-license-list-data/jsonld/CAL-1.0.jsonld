@@ -1,7 +1,30 @@
 {
     "@graph": [
         {
-            "@id": "_:3449d068-ca1e-4c05-be80-3124ccf68488",
+            "@id": "_:c97a4786-563c-4e34-bba0-550dbbfc3dd5",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "http://cryptographicautonomylicense.com/license-text.html",
+            "spdx:timestamp": "2026-05-28T16:18:43Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "N/A",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:385b577f-1b09-4ae5-81e9-3292b4187553",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -14,8 +37,8 @@
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:url": "https://opensource.org/licenses/CAL-1.0",
-            "spdx:timestamp": "2026-02-20T20:52:52Z",
+            "spdx:url": "https://opensource.org/license/CAL-1.0",
+            "spdx:timestamp": "2026-05-28T16:18:43Z",
             "spdx:order": {
                 "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -24,47 +47,24 @@
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:04028af0-baf4-455c-8165-940d8557dc93",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "http://cryptographicautonomylicense.com/license-text.html",
-            "spdx:timestamp": "2026-02-20T20:52:52Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "false",
-            "@type": "spdx:CrossRef"
-        },
-        {
             "@id": "http://spdx.org/licenses/CAL-1.0",
-            "spdx:crossRef": [
-                {
-                    "@id": "_:3449d068-ca1e-4c05-be80-3124ccf68488"
-                },
-                {
-                    "@id": "_:04028af0-baf4-455c-8165-940d8557dc93"
-                }
-            ],
             "spdx:isOsiApproved": {
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
+            "rdfs:comment": "The first draft of this license was released February 2019, and the fourth revision was approved by the OSI February 2020.",
             "rdfs:seeAlso": [
-                "https://opensource.org/licenses/CAL-1.0",
+                "https://opensource.org/license/CAL-1.0",
                 "http://cryptographicautonomylicense.com/license-text.html"
             ],
-            "rdfs:comment": "The first draft of this license was released February 2019, and the fourth revision was approved by the OSI February 2020.",
+            "spdx:crossRef": [
+                {
+                    "@id": "_:c97a4786-563c-4e34-bba0-550dbbfc3dd5"
+                },
+                {
+                    "@id": "_:385b577f-1b09-4ae5-81e9-3292b4187553"
+                }
+            ],
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"

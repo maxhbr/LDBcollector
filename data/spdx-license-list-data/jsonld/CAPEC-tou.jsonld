@@ -1,6 +1,29 @@
 {
     "@graph": [
         {
+            "@id": "_:d2416fce-8803-4a24-bd97-7cd255e8ae38",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://capec.mitre.org/about/termsofuse.html",
+            "spdx:timestamp": "2026-05-28T16:13:45Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "true",
+            "@type": "spdx:CrossRef"
+        },
+        {
             "@id": "http://spdx.org/licenses/CAPEC-tou",
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
@@ -18,31 +41,8 @@
             "rdfs:seeAlso": "https://capec.mitre.org/about/termsofuse.html",
             "spdx:name": "Common Attack    Pattern Enumeration and Classification License",
             "spdx:crossRef": {
-                "@id": "_:709532a7-4d17-4d42-ba82-1feae45a9fff"
+                "@id": "_:d2416fce-8803-4a24-bd97-7cd255e8ae38"
             }
-        },
-        {
-            "@id": "_:709532a7-4d17-4d42-ba82-1feae45a9fff",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://capec.mitre.org/about/termsofuse.html",
-            "spdx:timestamp": "2026-02-20T21:03:34Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "true",
-            "@type": "spdx:CrossRef"
         }
     ],
     "@context": {

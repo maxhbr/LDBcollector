@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:3db694ac-e0c6-4f89-930d-0cfed9f1e0d0",
+            "@id": "_:0d7c8e15-f0dd-4894-801e-e6322285d7ad",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,12 +15,12 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://github.com/westes/flex/blob/master/COPYING",
-            "spdx:timestamp": "2026-02-20T20:56:49Z",
+            "spdx:timestamp": "2026-05-28T16:18:19Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
-            "spdx:match": "false",
+            "spdx:match": "true",
             "@type": "spdx:CrossRef"
         },
         {
@@ -34,7 +34,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:crossRef": {
-                "@id": "_:3db694ac-e0c6-4f89-930d-0cfed9f1e0d0"
+                "@id": "_:0d7c8e15-f0dd-4894-801e-e6322285d7ad"
             },
             "spdx:isOsiApproved": {
                 "@value": "false",

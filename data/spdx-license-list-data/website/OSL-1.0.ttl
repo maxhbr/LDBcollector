@@ -6,15 +6,15 @@ PREFIX spdx: <http://spdx.org/rdf/terms#>
 <http://spdx.org/licenses/OSL-1.0>
         a                               spdx:ListedLicense;
         rdfs:comment                    "This license has been superseded.";
-        rdfs:seeAlso                    "https://opensource.org/licenses/OSL-1.0";
+        rdfs:seeAlso                    "https://opensource.org/license/OSL-1.0";
         spdx:crossRef                   [ a                   spdx:CrossRef;
                                           spdx:isLive         true;
                                           spdx:isValid        true;
                                           spdx:isWayBackLink  false;
                                           spdx:match          "N/A";
                                           spdx:order          "0"^^<http://www.w3.org/2001/XMLSchema#int>;
-                                          spdx:timestamp      "2026-02-20T21:04:35Z";
-                                          spdx:url            "https://opensource.org/licenses/OSL-1.0"
+                                          spdx:timestamp      "2026-05-28T16:16:33Z";
+                                          spdx:url            "https://opensource.org/license/OSL-1.0"
                                         ];
         spdx:isDeprecatedLicenseId      false;
         spdx:isFsfLibre                 true;

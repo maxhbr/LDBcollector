@@ -1,10 +1,33 @@
 {
     "@graph": [
         {
+            "@id": "_:57cf4c4f-20d6-42a1-a669-a006f90d6aa1",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "http://cvs.savannah.gnu.org/viewvc/cvs/ccvs/contrib/check_cvs.in?revision=1.1.4.3&view=markup&pathrev=cvs1-11-23#l2",
+            "spdx:timestamp": "2026-05-28T16:13:40Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "false",
+            "@type": "spdx:CrossRef"
+        },
+        {
             "@id": "http://spdx.org/licenses/check-cvs",
             "@type": "spdx:ListedLicense",
             "spdx:crossRef": {
-                "@id": "_:cf2fdbe4-019f-4ed8-9f28-8f0caa585e85"
+                "@id": "_:57cf4c4f-20d6-42a1-a669-a006f90d6aa1"
             },
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
@@ -20,29 +43,6 @@
             "rdfs:comment": "This license is similar to FSFULLR.",
             "spdx:licenseTextHtml": "\n         <p>\n            Permission is granted to copy and/or distribute this file, with\n            or without modifications, provided this notice is preserved.\n         </p>\n\n      ",
             "spdx:name": "check-cvs License"
-        },
-        {
-            "@id": "_:cf2fdbe4-019f-4ed8-9f28-8f0caa585e85",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "http://cvs.savannah.gnu.org/viewvc/cvs/ccvs/contrib/check_cvs.in?revision=1.1.4.3&view=markup&pathrev=cvs1-11-23#l2",
-            "spdx:timestamp": "2026-02-20T20:53:53Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "N/A",
-            "@type": "spdx:CrossRef"
         }
     ],
     "@context": {

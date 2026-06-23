@@ -1,7 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:82f2d139-db27-44bf-877e-cd38556fecb0",
+            "@id": "_:76b003a6-b7fd-4315-a4bd-f77ef589bce5",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -14,10 +14,10 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:url": "https://www.gnu.org/licenses/lgpl+gpl-3.0.txt",
-            "spdx:timestamp": "2026-02-20T21:05:36Z",
+            "spdx:url": "https://opensource.org/license/LGPL-3.0",
+            "spdx:timestamp": "2026-05-28T16:13:42Z",
             "spdx:order": {
-                "@value": "1",
+                "@value": "2",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "N/A",
@@ -25,21 +25,21 @@
         },
         {
             "@id": "http://spdx.org/licenses/LGPL-3.0-only",
-            "rdfs:seeAlso": [
-                "https://www.gnu.org/licenses/lgpl+gpl-3.0.txt",
-                "https://opensource.org/licenses/LGPL-3.0",
-                "https://www.gnu.org/licenses/lgpl-3.0-standalone.html"
-            ],
             "spdx:crossRef": [
                 {
-                    "@id": "_:48700d09-1118-40ae-9419-9ab048d429ee"
+                    "@id": "_:8d2722cc-ff60-4d5e-acf2-675d71ca3eea"
                 },
                 {
-                    "@id": "_:82f2d139-db27-44bf-877e-cd38556fecb0"
+                    "@id": "_:4a4f6424-450c-41cf-a9d7-9a85409c550a"
                 },
                 {
-                    "@id": "_:3d73dc30-b80f-49e9-901b-3965757e160c"
+                    "@id": "_:76b003a6-b7fd-4315-a4bd-f77ef589bce5"
                 }
+            ],
+            "rdfs:seeAlso": [
+                "https://www.gnu.org/licenses/lgpl+gpl-3.0.txt",
+                "https://www.gnu.org/licenses/lgpl-3.0-standalone.html",
+                "https://opensource.org/license/LGPL-3.0"
             ],
             "spdx:isDeprecatedLicenseId": {
                 "@value": "false",
@@ -61,7 +61,7 @@
             "rdfs:comment": "This license was released: 29 June 2007. This refers to when only this version of the LGPL is used (as opposed to \"or later\"). The markup includes the GPL-3.0 text as optional text, because the LGPL-3.0 is structured as a supplement to the terms of GPL-3.0."
         },
         {
-            "@id": "_:48700d09-1118-40ae-9419-9ab048d429ee",
+            "@id": "_:8d2722cc-ff60-4d5e-acf2-675d71ca3eea",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -71,20 +71,20 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:isLive": {
-                "@value": "true",
+                "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:url": "https://opensource.org/licenses/LGPL-3.0",
-            "spdx:timestamp": "2026-02-20T21:05:06Z",
+            "spdx:url": "https://www.gnu.org/licenses/lgpl+gpl-3.0.txt",
+            "spdx:timestamp": "2026-05-28T16:13:42Z",
             "spdx:order": {
-                "@value": "2",
+                "@value": "1",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "N/A",
             "@type": "spdx:CrossRef"
         },
         {
-            "@id": "_:3d73dc30-b80f-49e9-901b-3965757e160c",
+            "@id": "_:4a4f6424-450c-41cf-a9d7-9a85409c550a",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -98,7 +98,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://www.gnu.org/licenses/lgpl-3.0-standalone.html",
-            "spdx:timestamp": "2026-02-20T21:06:06Z",
+            "spdx:timestamp": "2026-05-28T16:13:42Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"

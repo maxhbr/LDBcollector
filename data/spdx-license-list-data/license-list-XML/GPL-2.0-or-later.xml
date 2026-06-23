@@ -4,7 +4,7 @@
   name="GNU General Public License v2.0 or later">
     <crossRefs>
       <crossRef>https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html</crossRef>
-      <crossRef>https://opensource.org/licenses/GPL-2.0</crossRef>
+      <crossRef>https://opensource.org/license/GPL-2.0</crossRef>
       <crossRef>https://github.com/openjdk/jdk/blob/6162e2c5213c5dd7c1127fd9616b543efa898962/LICENSE</crossRef>
     </crossRefs>
     <notes>
@@ -440,8 +440,11 @@
         `Gnomovision' (which makes passes at compilers) written by James Hacker.
       </p>
       <p>
-	<optional spacing="none">&lt;</optional>signature of Ty Coon<optional spacing="none">&gt;</optional>,
-	1 April 1989 Ty Coon, President of Vice
+	<optional spacing="none">&lt;</optional>
+        signature of <alt match="Ty Coon|Moe Ghoul" name="sample-signee">Ty Coon</alt>
+        <optional spacing="none">&gt;</optional>,
+	1 April 1989 <alt match="Ty Coon|Moe Ghoul" name="sample-signee">Ty Coon</alt>,
+        President of Vice
       </p>
     </optional>
     <optional>

@@ -301,7 +301,7 @@ PART 7: SAMPLE REQUIREMENTS FOR THE DESCRIPTION OF DISTRIBUTED MODIFICATIONS
 
 Each Subsequent Contributor (including the Initial Contributor where the Initial Contributor qualifies as a Subsequent Contributor) is invited (but not required) to cause each Subsequent Work created or contributed to by that Subsequent Contributor to contain a file documenting the changes such Subsequent Contributor made to create that Subsequent Work and the date of any change. //***EXHIBIT A ENDS HERE.***//
 </spdx:licenseText>
-    <rdfs:seeAlso>https://opensource.org/licenses/APL-1.0</rdfs:seeAlso>
+    <rdfs:seeAlso>https://opensource.org/license/APL-1.0</rdfs:seeAlso>
     <spdx:licenseTextHtml>
       &lt;div class="optional-license-text"&gt; 
          &lt;p&gt;ADAPTIVE PUBLIC LICENSE
@@ -1754,9 +1754,9 @@ EXHIBIT A (to the Adaptive Public License)
         <spdx:isValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isValid>
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</spdx:isLive>
-        <spdx:url>https://opensource.org/licenses/APL-1.0</spdx:url>
-        <spdx:timestamp>2026-02-20T20:54:34Z</spdx:timestamp>
+        >true</spdx:isLive>
+        <spdx:url>https://opensource.org/license/APL-1.0</spdx:url>
+        <spdx:timestamp>2026-05-28T16:16:41Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
         <spdx:match>N/A</spdx:match>

@@ -1,30 +1,7 @@
 {
     "@graph": [
         {
-            "@id": "_:524f13cc-d7fd-46d4-a7b8-2b73a17c434f",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "https://github.com/Cyan4973/xxHash/blob/dev/doc/xxhash_spec.md",
-            "spdx:timestamp": "2026-02-20T20:55:39Z",
-            "spdx:order": {
-                "@value": "0",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "false",
-            "@type": "spdx:CrossRef"
-        },
-        {
-            "@id": "_:50dc7463-b117-45b4-8a9e-f9f39f972e15",
+            "@id": "_:073b8ffb-4a1f-4e1d-b43c-9c8bbc265d2a",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -38,9 +15,32 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "https://www.ietf.org/rfc/rfc1952.txt",
-            "spdx:timestamp": "2026-02-20T20:55:39Z",
+            "spdx:timestamp": "2026-05-28T16:15:16Z",
             "spdx:order": {
                 "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "true",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:721a3d21-9aeb-406d-9f76-43de81e4bb19",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "https://github.com/Cyan4973/xxHash/blob/dev/doc/xxhash_spec.md",
+            "spdx:timestamp": "2026-05-28T16:15:16Z",
+            "spdx:order": {
+                "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
             },
             "spdx:match": "true",
@@ -59,10 +59,10 @@
             },
             "spdx:crossRef": [
                 {
-                    "@id": "_:50dc7463-b117-45b4-8a9e-f9f39f972e15"
+                    "@id": "_:721a3d21-9aeb-406d-9f76-43de81e4bb19"
                 },
                 {
-                    "@id": "_:524f13cc-d7fd-46d4-a7b8-2b73a17c434f"
+                    "@id": "_:073b8ffb-4a1f-4e1d-b43c-9c8bbc265d2a"
                 }
             ],
             "@type": "spdx:ListedLicense",

@@ -5,24 +5,24 @@ PREFIX spdx: <http://spdx.org/rdf/terms#>
 
 <http://spdx.org/licenses/RSCPL>
         a                             spdx:ListedLicense;
-        rdfs:seeAlso                  "https://opensource.org/licenses/RSCPL" , "http://wayback.archive.org/web/20060715140826/http://www.risource.org/RPL/RPL-1.0A.shtml";
+        rdfs:seeAlso                  "http://wayback.archive.org/web/20060715140826/http://www.risource.org/RPL/RPL-1.0A.shtml" , "https://opensource.org/license/RSCPL";
         spdx:crossRef                 [ a                   spdx:CrossRef;
                                         spdx:isLive         false;
                                         spdx:isValid        false;
                                         spdx:isWayBackLink  false;
                                         spdx:match          "N/A";
                                         spdx:order          "0"^^<http://www.w3.org/2001/XMLSchema#int>;
-                                        spdx:timestamp      "2026-02-20T21:03:00Z";
+                                        spdx:timestamp      "2026-05-28T16:17:42Z";
                                         spdx:url            "http://wayback.archive.org/web/20060715140826/http://www.risource.org/RPL/RPL-1.0A.shtml"
                                       ];
         spdx:crossRef                 [ a                   spdx:CrossRef;
-                                        spdx:isLive         false;
+                                        spdx:isLive         true;
                                         spdx:isValid        true;
                                         spdx:isWayBackLink  false;
                                         spdx:match          "N/A";
                                         spdx:order          "1"^^<http://www.w3.org/2001/XMLSchema#int>;
-                                        spdx:timestamp      "2026-02-20T21:03:00Z";
-                                        spdx:url            "https://opensource.org/licenses/RSCPL"
+                                        spdx:timestamp      "2026-05-28T16:17:42Z";
+                                        spdx:url            "https://opensource.org/license/RSCPL"
                                       ];
         spdx:isDeprecatedLicenseId    false;
         spdx:isOsiApproved            true;

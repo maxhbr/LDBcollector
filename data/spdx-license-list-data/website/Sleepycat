@@ -142,7 +142,8 @@
           <div style="margin-left: 20px;">
             <ul>
              <li>
-               https://opensource.org/licenses/Sleepycat [no longer live]
+               <a href="https://opensource.org/license/Sleepycat" rel="rdfs:seeAlso" isValid=true isLive=true isWayBackLink=false match=N/A timestamp=2026-05-28T16:13:49Z>https://opensource.org/license/Sleepycat</a>
+               <!--Tentative way of displaying information <p>isValid: true, isLive: true, isWayBackLink: false, match: N/A, timestamp: 2026-05-28T16:13:49Z</p> -->
              </li>
            </ul>
           </div>

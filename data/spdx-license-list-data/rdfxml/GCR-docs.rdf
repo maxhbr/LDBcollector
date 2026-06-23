@@ -105,10 +105,10 @@ IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY C
         <spdx:isLive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</spdx:isLive>
         <spdx:url>https://github.com/GNOME/gcr/blob/master/docs/COPYING</spdx:url>
-        <spdx:timestamp>2026-02-20T20:55:36Z</spdx:timestamp>
+        <spdx:timestamp>2026-05-28T16:15:25Z</spdx:timestamp>
         <spdx:order rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >0</spdx:order>
-        <spdx:match>false</spdx:match>
+        <spdx:match>true</spdx:match>
       </spdx:CrossRef>
     </spdx:crossRef>
     <spdx:isOsiApproved rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"

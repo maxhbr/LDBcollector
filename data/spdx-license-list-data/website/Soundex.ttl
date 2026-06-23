@@ -10,9 +10,9 @@ PREFIX spdx: <http://spdx.org/rdf/terms#>
                                         spdx:isLive         true;
                                         spdx:isValid        true;
                                         spdx:isWayBackLink  false;
-                                        spdx:match          "false";
+                                        spdx:match          "true";
                                         spdx:order          "0"^^<http://www.w3.org/2001/XMLSchema#int>;
-                                        spdx:timestamp      "2026-02-20T21:01:57Z";
+                                        spdx:timestamp      "2026-05-28T16:13:50Z";
                                         spdx:url            "https://metacpan.org/release/RJBS/Text-Soundex-3.05/source/Soundex.pm#L3-11"
                                       ];
         spdx:isDeprecatedLicenseId    false;

@@ -1,7 +1,30 @@
 {
     "@graph": [
         {
-            "@id": "_:15e1f9fa-63d3-4390-8b37-8423416da0d7",
+            "@id": "_:a365e347-8b40-4ced-86a5-78591e00f639",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:url": "http://www.ncftp.com/ncftp/doc/LICENSE.txt",
+            "spdx:timestamp": "2026-05-28T16:17:40Z",
+            "spdx:order": {
+                "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:match": "true",
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "_:e00ea23c-c472-42e1-8a90-6e214c55a32e",
             "spdx:isWayBackLink": {
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -15,7 +38,7 @@
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
             "spdx:url": "http://gianluca.dellavedova.org/2011/01/03/clarified-artistic-license/",
-            "spdx:timestamp": "2026-02-20T21:01:29Z",
+            "spdx:timestamp": "2026-05-28T16:17:40Z",
             "spdx:order": {
                 "@value": "0",
                 "@type": "http://www.w3.org/2001/XMLSchema#int"
@@ -40,43 +63,20 @@
                 "@value": "false",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
+            "spdx:crossRef": [
+                {
+                    "@id": "_:e00ea23c-c472-42e1-8a90-6e214c55a32e"
+                },
+                {
+                    "@id": "_:a365e347-8b40-4ced-86a5-78591e00f639"
+                }
+            ],
             "spdx:isFsfLibre": {
                 "@value": "true",
                 "@type": "http://www.w3.org/2001/XMLSchema#boolean"
             },
-            "spdx:crossRef": [
-                {
-                    "@id": "_:15e1f9fa-63d3-4390-8b37-8423416da0d7"
-                },
-                {
-                    "@id": "_:a603a32e-6036-4111-8b1f-13763c9214c5"
-                }
-            ],
             "spdx:name": "Clarified Artistic License",
             "@type": "spdx:ListedLicense"
-        },
-        {
-            "@id": "_:a603a32e-6036-4111-8b1f-13763c9214c5",
-            "spdx:isWayBackLink": {
-                "@value": "false",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isValid": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:isLive": {
-                "@value": "true",
-                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
-            },
-            "spdx:url": "http://www.ncftp.com/ncftp/doc/LICENSE.txt",
-            "spdx:timestamp": "2026-02-20T21:01:25Z",
-            "spdx:order": {
-                "@value": "1",
-                "@type": "http://www.w3.org/2001/XMLSchema#int"
-            },
-            "spdx:match": "true",
-            "@type": "spdx:CrossRef"
         }
     ],
     "@context": {
