@@ -28,15 +28,17 @@ use Spooky::Patterns::XS;
 use Text::Glob 'glob_to_regex';
 use Try::Tiny;
 
-$Text::Glob::strict_wildcard_slash = 0;
-
 our @EXPORT_OK = (
-  qw(buckets file_and_checksum slurp_and_decode load_ignored_files lines_context obs_ssh_auth paginate),
-  qw(parse_exclude_file parse_service_file pattern_checksum pattern_matches read_lines request_id_from_external_link),
-  qw(run_cmd snippet_checksum spdx_link ssh_sign @SPDX_LICENSES @SPDX_EXCEPTIONS)
+  qw(buckets file_and_checksum slurp_and_decode load_ignored_files lines_context normalize_license_expr),
+  qw(obs_ssh_auth paginate parse_exclude_file parse_service_file pattern_checksum pattern_matches),
+  qw(pattern_contains_redundant_skip read_lines request_id_from_external_link run_cmd snippet_checksum),
+  qw(spdx_link ssh_sign validate_tags),
+  qw(@SPDX_LICENSES @SPDX_EXCEPTIONS)
 );
 
 my $MAX_FILE_SIZE = 30000;
+use constant MAX_TAG_LENGTH => 32;
+use constant MAX_TAGS       => 16;
 
 # Service modes that guarantee checkouts are complete and not amended by the OBS server
 my $SAFE_OBS_SRVICE_MODES = {buildtime => 1, localonly => 1, manual => 1, disabled => 1};
@@ -190,6 +192,7 @@ sub lines_context ($lines) {
 }
 
 sub load_ignored_files ($db) {
+  local $Text::Glob::strict_wildcard_slash = 0;
   my %ignored_file_res = map { $_->[0] => glob_to_regex($_->[0]) } @{$db->select('ignored_files', 'glob')->arrays};
   return \%ignored_file_res;
 }
@@ -204,6 +207,24 @@ sub obs_ssh_auth ($challenge, $user, $key) {
   return qq{Signature keyId="$user",algorithm="ssh",signature="$signature",headers="(created)",created="$now"};
 }
 
+sub validate_tags ($tags) {
+  return ([],    undef)                              unless defined $tags;
+  return (undef, 'tags must be an array of strings') unless ref $tags eq 'ARRAY';
+
+  my (@clean, %seen);
+  for my $tag (@$tags) {
+    return (undef, 'tags must be an array of strings') if ref $tag || !defined $tag;
+    my $trimmed = $tag;
+    $trimmed =~ s/^\s+|\s+$//g;
+    next                                                            if $trimmed eq '';
+    return (undef, 'tag exceeds ' . MAX_TAG_LENGTH . ' characters') if length($trimmed) > MAX_TAG_LENGTH;
+    next                                                            if $seen{$trimmed}++;
+    push @clean, $trimmed;
+  }
+  return (undef,   'too many tags, maximum is ' . MAX_TAGS) if @clean > MAX_TAGS;
+  return (\@clean, undef);
+}
+
 sub paginate ($results, $options) {
   my $total = @$results ? $results->[0]{total} : 0;
   delete $_->{total} for @$results;
@@ -214,6 +235,7 @@ sub parse_exclude_file ($path, $name) {
   my $content = path($path)->slurp;
   my $exclude = [];
 
+  local $Text::Glob::strict_wildcard_slash = 0;
   for my $line (split "\n", $content) {
     next unless $line =~ /^\s*([^\s\#]\S+)\s*:\s*(\S+)(?:\s.*)?$/;
     my ($pattern, $file) = ($1, $2);
@@ -252,7 +274,27 @@ sub pattern_matches ($pattern, $text) {
   return $matches;
 }
 
-sub read_lines ($path, $start_line, $end_line) {
+sub pattern_contains_redundant_skip ($pattern) {
+  return $pattern =~ /^\s*\$SKIP/ || $pattern =~ /\$SKIP\d*\s*$/;
+}
+
+# Normalize a license expression for matching: lower-case, collapse whitespace, drop "LicenseRef-"
+# prefixes, treat a trailing "+" as the SPDX "-or-later", and sort the operands of a flat "OR" list
+# (which is commutative, unlike "AND"/"WITH" or anything with parentheses)
+sub normalize_license_expr ($expr) {
+  my $norm = lc $expr;
+  $norm =~ s/^\s+|\s+$//g;
+  $norm =~ s/\s+/ /g;
+  return '' if $norm eq '';
+  $norm =~ s/licenseref-//g;
+  $norm =~ s/\+(?=\s|$)/-or-later/g;
+  if ($norm !~ /[()]/ && $norm !~ /\band\b/ && $norm !~ /\bwith\b/ && $norm =~ /\bor\b/) {
+    $norm = join ' or ', sort split / or /, $norm;
+  }
+  return $norm;
+}
+
+sub read_lines ($path, $start_line, $end_line, $with_line_numbers = 0) {
   my %needed_lines;
   for (my $line = $start_line; $line <= $end_line; $line += 1) {
     $needed_lines{$line} = 1;
@@ -268,7 +310,9 @@ sub read_lines ($path, $start_line, $end_line) {
       from_to($line, 'ISO-LATIN-1', 'UTF-8', Encode::FB_DEFAULT);
       $line = decode 'UTF-8', $line, Encode::FB_DEFAULT;
     }
-    $text .= "$line\n";
+
+    # Prefix the absolute line number for reference (display-only, must not leak into patterns/snippets)
+    $text .= $with_line_numbers ? sprintf("%6d  %s\n", $index, $line) : "$line\n";
   }
   return $text;
 }

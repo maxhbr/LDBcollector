@@ -27,9 +27,9 @@ sub dig_report {
   my ($self, $id, $limit_to_file) = @_;
 
   my $db            = $self->pg->db;
-  my $pkg           = $db->select('bot_packages',  '*',    {id       => $id})->hash;
-  my $ignored       = $db->select('ignored_lines', 'hash', {packname => $pkg->{name}});
-  my %ignored_lines = map { $_->{hash} => 1 } $ignored->hashes->each;
+  my $pkg           = $db->select('bot_packages',  '*',            {id       => $id})->hash;
+  my $ignored       = $db->select('ignored_lines', ['id', 'hash'], {packname => $pkg->{name}});
+  my %ignored_lines = map { $_->{hash} => $_->{id} } $ignored->hashes->each;
 
   my $report = $self->_dig_report($db, {}, $pkg, \%ignored_lines, $limit_to_file);
 
@@ -59,22 +59,29 @@ sub sanitized_dig_report {
 }
 
 sub shortname ($self, $chksum) {
-  my $db     = $self->pg->db;
-  my $lentry = $db->select('report_checksums', 'shortname', {checksum => $chksum})->hash;
-  if ($lentry) {
+  my $db = $self->pg->db;
+  if (my $lentry = $db->select('report_checksums', 'shortname', {checksum => $chksum})->hash) {
     return $lentry->{shortname};
   }
 
   # try to find a unique name for the checksum
   my $chars = ['a' .. 'z', 'A' .. 'Z', '0' .. '9'];
-  while (1) {
+  for (1 .. 100) {
     my $shortname = join('', map { $chars->[rand @$chars] } 1 .. 6);
-    $db->query(
+    my $inserted  = $db->query(
       'insert into report_checksums (checksum, shortname)
-       values (?,?) on conflict do nothing', $chksum, $shortname
-    );
-    return $shortname if $db->select('report_checksums', 'id', {shortname => $shortname, checksum => $chksum})->hash;
+       values (?,?) on conflict do nothing returning shortname', $chksum, $shortname
+    )->hash;
+    return $inserted->{shortname} if $inserted;
+
+    # The insert was a no-op. The conflict could be on either unique index:
+    # if another writer already assigned a shortname to this checksum, use it;
+    # otherwise our random shortname was taken, so loop and try a new one.
+    if (my $existing = $db->select('report_checksums', 'shortname', {checksum => $chksum})->hash) {
+      return $existing->{shortname};
+    }
   }
+  die "Could not allocate a shortname for checksum $chksum after 100 attempts";
 }
 
 sub source_for {
@@ -157,17 +164,18 @@ sub summary ($self, $id) {
     $summary{licenses}{$text} = $report->{licenses}{$license}{risk};
   }
 
-  my $db    = $self->pg->db;
+  # Walk the full set of winning files (file_snippets_to_show), not the
+  # expansion-truncated subset in $report->{snippets}. max_expanded_files
+  # only caps how many file blocks the renderer shows; the diff/score
+  # must compare every snippet hash, otherwise two content-equivalent
+  # packages can produce different scores just because their first-N
+  # alphabetical files happen to contain different subsets of the global
+  # winning set.
   my $files = {};
-  for my $id (keys %{$report->{snippets}}) {
-    my $snippets = $db->query(
-      'SELECT mf.filename, s.hash
-       FROM file_snippets fs JOIN matched_files mf ON (fs.file = mf.id) JOIN snippets s ON (fs.snippet = s.id)
-       WHERE mf.id = ?', $id
-    )->hashes;
-    for my $snippet (@$snippets) {
-      my $list = $files->{$snippet->{filename}} ||= [];
-      push @$list, $snippet->{hash};
+  for my $file_id (keys %{$report->{missed_snippets}}) {
+    my $filename = $report->{files}{$file_id};
+    for my $snip_row (@{$report->{missed_snippets}{$file_id}}) {
+      push @{$files->{$filename}}, $snip_row->[3];
     }
   }
   $summary{missed_snippets} = $files;
@@ -217,7 +225,7 @@ sub _check_ignores {
         for my $m (@marks) {
           $m->[1]->{risk} = 0;
           next unless $freport->{$m->[0]};
-          $matches_to_ignore->{$freport->{$m->[0]}} = 1;
+          $matches_to_ignore->{$freport->{$m->[0]}} = $ignored_lines->{$hex};
         }
       }
       else {
@@ -311,14 +319,25 @@ sub _dig_report {
       'file',        'sline',         'eline',               'classified',
       'license'
     ],
-    $query,
-    {order_by => 'sline'}
+    $query
   );
+
+  # Order by content-stable keys (filename, then snippet id, then sline) so
+  # the dedup winner for each snippet is the same across packages with the
+  # same content. sline is package-local because it shifts when surrounding
+  # non-keyword text differs even slightly, so it must not be the primary
+  # key. snippet id is hash-derived and stable.
+  my @snip_rows = sort {
+         ($report->{files}{$a->{file}} // '') cmp($report->{files}{$b->{file}} // '')
+      || $a->{id}    <=> $b->{id}
+      || $a->{sline} <=> $b->{sline}
+  } $snippets->hashes->each;
+
   my %file_snippets_to_ignore;
   my %file_snippets_to_show;
   my %snippets_shown;
 
-  for my $snip_row ($snippets->hashes->each) {
+  for my $snip_row (@snip_rows) {
     if ( !defined $report->{files}{$snip_row->{file}}
       || $snippets_shown{$snip_row->{id}}
       || (!$snip_row->{license} && $snip_row->{classified}))
@@ -339,7 +358,7 @@ sub _dig_report {
   my %matches_to_ignore;
   my %snippets_to_remove;
 
-  for my $file (keys %file_snippets_to_show) {
+  for my $file (sort { $report->{files}{$a} cmp $report->{files}{$b} } keys %file_snippets_to_show) {
     last if $num_expanded++ > $expanded_limit;
 
     $report->{expanded}{$file} = 1;
@@ -362,7 +381,10 @@ sub _dig_report {
     my $pid = $match->{pattern};
 
     if (!defined $report->{files}{$match->{file}}) {
-      $matches_to_ignore{$match->{id}} = 1;
+
+      # File is hidden by an ignored_files glob; there is no ignored_lines
+      # row backing this, so leave the FK column NULL
+      $matches_to_ignore{$match->{id}} = undef;
       next;
     }
 
@@ -381,7 +403,7 @@ sub _dig_report {
     $report->{licenses}{$pattern->{license}}
       ||= {name => $pattern->{license}, spdx => $pattern->{spdx}, risk => $pattern->{risk}};
     $report->{licenses}{$pattern->{license}}{flaghash}{$_} ||= $pattern->{$_}
-      for qw(patent trademark export_restricted);
+      for qw(patent trademark export_restricted cla eula);
 
     my $rl = $report->{risks}{$pattern->{risk}};
     push(@{$rl->{$pattern->{license}}{$pid}}, $match->{file});
@@ -429,7 +451,7 @@ sub _dig_report {
   # in case ignored lines found unignored matches (i.e. first load), update them
   # and restart the report
   for my $mig (keys %matches_to_ignore) {
-    $db->update('pattern_matches', {ignored => 1}, {id => $mig});
+    $db->update('pattern_matches', {ignored => 1, ignored_line => $matches_to_ignore{$mig}}, {id => $mig});
   }
 
   if (%matches_to_ignore) {
@@ -614,9 +636,9 @@ sub _sanitize_report {
 
   # Emails and URLs
   my $emails = $report->{emails};
-  $report->{emails} = [map { [$_, $emails->{$_}] } sort { $emails->{$b} <=> $emails->{$a} } keys %$emails];
+  $report->{emails} = [map { [$_, $emails->{$_}] } sort { $emails->{$b} <=> $emails->{$a} || $a cmp $b } keys %$emails];
   my $urls = $report->{urls};
-  $report->{urls} = [map { [$_, $urls->{$_}] } sort { $urls->{$b} <=> $urls->{$a} } keys %$urls];
+  $report->{urls} = [map { [$_, $urls->{$_}] } sort { $urls->{$b} <=> $urls->{$a} || $a cmp $b } keys %$urls];
 }
 
 1;

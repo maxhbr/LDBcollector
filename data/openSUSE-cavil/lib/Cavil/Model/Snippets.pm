@@ -63,10 +63,22 @@ sub from_file ($self, $file_id, $first_line, $last_line) {
   my ($text, $hash) = file_and_checksum($path, $first_line, $last_line);
   my $snippet_id
     = $self->find_or_create({hash => $hash, text => $text, package => $package->{id}, prefix => 'manual:'});
+
+  # Avoid duplicate links when the same range is requested again (e.g. an agent retry)
+  my $exists = $db->select('file_snippets', 'id',
+    {file => $file_id, snippet => $snippet_id, sline => $first_line, eline => $last_line})->hash;
   $db->insert('file_snippets',
-    {package => $package->{id}, snippet => $snippet_id, sline => $first_line, eline => $last_line, file => $file_id});
+    {package => $package->{id}, snippet => $snippet_id, sline => $first_line, eline => $last_line, file => $file_id})
+    unless $exists;
 
   return $snippet_id;
+}
+
+sub from_file_path ($self, $package_id, $filename, $first_line, $last_line) {
+  return undef
+    unless my $file
+    = $self->pg->db->select('matched_files', 'id', {package => $package_id, filename => $filename})->hash;
+  return $self->from_file($file->{id}, $first_line, $last_line);
 }
 
 sub id_for_checksum ($self, $checksum) {
@@ -142,7 +154,21 @@ sub packages_for_snippet ($self, $id) {
     ->arrays->flatten->to_array;
 }
 
-sub with_context ($self, $id) {
+sub _occurrence ($db, $id, $file_id) {
+  my $sql = 'SELECT fs.package, p.name, sline, eline, file, filename, p.checkout_dir
+     FROM file_snippets fs JOIN matched_files m ON (m.id = fs.file)
+       JOIN bot_packages p ON (p.id = fs.package)
+     WHERE snippet = ?';
+  my @bind = ($id);
+  if (defined $file_id) {
+    $sql .= ' AND fs.file = ?';
+    push @bind, $file_id;
+  }
+  $sql .= ' LIMIT 1';
+  return $db->query($sql, @bind)->hash;
+}
+
+sub with_context ($self, $id, $file_id = undef) {
   return undef unless my $snippet = $self->find($id);
 
   my $text     = $snippet->{text};
@@ -151,13 +177,16 @@ sub with_context ($self, $id) {
   my $matches  = {};
   my $keywords = {};
 
-  my $db      = $self->pg->db;
-  my $example = $db->query(
-    'SELECT fs.package, p.name, sline, eline, file, filename, p.checkout_dir
-     FROM file_snippets fs JOIN matched_files m ON (m.id = fs.file)
-       JOIN bot_packages p ON (p.id = fs.package)
-     WHERE snippet = ? LIMIT 1', $id
-  )->hash;
+  my $db = $self->pg->db;
+
+  # Snippets are deduplicated by content hash, so the same snippet can occur in
+  # many files across many packages, each with its own line numbers. When a
+  # caller knows which occurrence it is showing (file_id), scope the lookup to
+  # that file so the reported line numbers and context match it; otherwise fall
+  # back to an arbitrary occurrence (standalone snippet views).
+  my $example;
+  $example = _occurrence($db, $id, $file_id) if defined $file_id;
+  $example //= _occurrence($db, $id, undef);
 
   if ($example) {
     $sline   = $example->{sline};

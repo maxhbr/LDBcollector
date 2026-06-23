@@ -77,10 +77,9 @@ The use of machine learning models for text classification is entirely optional,
 pattern matching system used for identifying clusters of legal keywords (snippets) has a false-positive rate of about
 80%. And even a simple model can identify almost all of them.
 
-There are currently two example implementations for a companion text classification server application:
-
-1. https://github.com/kraih/Character-level-cnn-pytorch/
-2. https://github.com/kraih/llama-lawyer
+The [openSUSE HuggingFace org](https://huggingface.co/openSUSE) has a collection of models fine-tuned specifically for
+this task, such as `Cavil-Qwen3.5-4B`. These models are usually deployed with a
+[llama.cpp](https://github.com/ggml-org/llama.cpp) server.
 
 ## Review Workflow
 
@@ -154,15 +153,18 @@ Reports may be automatically accepted by the system under these conditions:
 
 These are the standard risk levels used for license patterns included with Cavil:
 
-* 1 - `Public Domain`: (e.g., Public domain, CC0, Unlicense).
-* 2 - `Permissive`: (e.g., MIT, Apache 2.0, BSD-3-Clause). These require attribution but minimal other obligations.
-* 3 - `Copyleft`: (e.g., LGPL, MPL, EPL). These require that modifications to the library itself be shared, but
-                  generally allow linking to proprietary code. Share modifications.
-* 4 - `Obligations`: (e.g., legacy advertising clauses, AGPL). These may contain clauses that are
-                     administratively painful (e.g., requiring specific advertising acknowledgments).
-* 5 - `Strong Obligations`: (e.g.,SSPL). These usually trigger source disclosure obligations for the entire software
-                            stack if distributed or accessed over a network.
-* 6 - `Non-Commercial`: field-of-use, or ethical restrictions (e.g., "JSON License - Good not Evil"). They limit how
+* 1 - `Public Domain`: (e.g., Public-Domain, CC0, Unlicense). Code is safe for any use with zero compliance overhead.
+* 2 - `Permissive`: (e.g., MIT, Apache 2.0, BSD-3-Clause). Attribution is required, but there are minimal restrictions
+                    on modification or distribution.
+* 3 - `Weak Copyleft`: (e.g., LGPL, MPL, EPL). Reciprocity applies at the file level. Changes to the library itself
+                       must be shared, but linking to non-copyleft code is permitted.
+* 4 - `Strong Copyleft`: (e.g., GPL-2.0-only, GPL-3.0-or-later). Reciprocity applies at the component or derivative
+                         work level.
+* 5 - `Managed Obligations`: (e.g., legacy advertising clauses, AGPL). Requires specialized compliance workflows.
+                             Includes network source disclosure or burdensome advertising clauses.
+* 6 - `Obligations`: (e.g.,SSPL). Extreme reciprocity or non-free terms. Licenses may trigger source disclosure for the
+                     entire stack.
+* 7 - `Non-Commercial`: field-of-use, or ethical restrictions (e.g., "JSON License - Good not Evil"). They limit how
                         customers can use the software.
 * 9 - `Unknown`: Keywords and phrases used to identify potential candidates for new license patterns.
 

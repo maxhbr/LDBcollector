@@ -16,27 +16,61 @@
 package Cavil::Model::Patterns;
 use Mojo::Base -base, -signatures;
 
-use Cavil::Util qw(paginate pattern_checksum spdx_link);
-use Mojo::File 'path';
-use Mojo::JSON qw(true false);
+use Cavil::Util qw(normalize_license_expr paginate pattern_checksum spdx_link);
+use Mojo::File  qw(path);
+use Mojo::JSON  qw(true false);
 use Spooky::Patterns::XS;
 use Storable;
 
 has [qw(cache log pg minion)];
 
+use constant LICENSE_DETAIL_MATCH_LIMIT   => 10_000;
+use constant LICENSE_DETAIL_PACKAGE_LIMIT => 1_000;
+use constant LICENSE_PREDICTION_THRESHOLD => 0.3;
+use constant LICENSE_PREDICTION_LIMIT     => 10;
+
 sub autocomplete ($self) {
   my $licenses = {};
 
-  my $patterns
-    = $self->pg->db->query('SELECT DISTINCT(license), risk, patent, trademark, export_restricted FROM license_patterns')
-    ->hashes;
+  my $patterns = $self->pg->db->query(
+    'SELECT DISTINCT(license), risk, patent, trademark, export_restricted, cla, eula FROM license_patterns')->hashes;
   for my $pattern ($patterns->each) {
-    $licenses->{$pattern->{license}}
-      = {risk => $pattern->{risk}, patent => false, trademark => false, export_restricted => false};
+    $licenses->{$pattern->{license}} = {
+      risk              => $pattern->{risk},
+      patent            => $pattern->{patent},
+      trademark         => $pattern->{trademark},
+      export_restricted => $pattern->{export_restricted},
+      cla               => $pattern->{cla},
+      eula              => $pattern->{eula}
+    };
   }
   delete $licenses->{''};
 
   return $licenses;
+}
+
+sub closest_licenses ($self, $expr) {
+  my $licenses = $self->autocomplete;
+
+  # Exact match after normalization (case, whitespace, "+"/"-or-later", "OR" order)
+  my %canonical;
+  $canonical{normalize_license_expr($_)} //= $_ for sort keys %$licenses;
+  my $normalized = normalize_license_expr($expr);
+  return {closest => []} unless length $normalized;
+  if (my $exact = $canonical{$normalized}) {
+    return {exact => {license => $exact, %{$licenses->{$exact}}}};
+  }
+
+  # Otherwise rank known licenses by trigram similarity to the normalized expression
+  my $matches = $self->pg->db->query(
+    "SELECT license, similarity(LOWER(license), ?) AS score
+       FROM (SELECT DISTINCT license FROM license_patterns WHERE license != '') AS known
+      WHERE similarity(LOWER(license), ?) >= ?
+      ORDER BY score DESC, license ASC
+      LIMIT ?", $normalized, $normalized, LICENSE_PREDICTION_THRESHOLD, LICENSE_PREDICTION_LIMIT
+  )->hashes;
+
+  return {closest => [map { {license => $_->{license}, score => $_->{score}} } @$matches]};
 }
 
 sub closest_pattern ($self, $text) {
@@ -78,6 +112,8 @@ sub create ($self, %args) {
       patent            => $args{patent}            // 0,
       trademark         => $args{trademark}         // 0,
       export_restricted => $args{export_restricted} // 0,
+      cla               => $args{cla}               // 0,
+      eula              => $args{eula}              // 0,
       license           => $args{license}           // '',
       spdx              => $spdx,
       risk              => $args{risk} // 5,
@@ -141,15 +177,43 @@ sub load_unspecific ($self, $matcher) {
   rename $tmp, $cachefile;
 }
 
-sub match_count($self, $id) {
+sub match_count ($self, $id) {
   return $self->pg->db->query(
     'SELECT COUNT(*) AS matches, COUNT(DISTINCT(package)) AS packages
        FROM pattern_matches WHERE pattern = ?', $id
   )->hash;
 }
 
+sub capped_match_count ($self, $id) {
+  my $match_limit   = LICENSE_DETAIL_MATCH_LIMIT;
+  my $package_limit = LICENSE_DETAIL_PACKAGE_LIMIT;
+  my $count         = $self->pg->db->query(
+    'SELECT match_counts.matches, match_counts.matches_capped,
+       package_counts.packages, package_counts.packages_capped
+     FROM (SELECT 1) base
+       LEFT JOIN LATERAL (
+         SELECT LEAST(COUNT(*)::int, ?) AS matches, COUNT(*) > ? AS matches_capped
+         FROM (SELECT 1 FROM pattern_matches pm WHERE pm.pattern = ? LIMIT ?) limited_matches
+       ) match_counts ON true
+       LEFT JOIN LATERAL (
+         SELECT LEAST(COUNT(*)::int, ?) AS packages, COUNT(*) > ? AS packages_capped
+         FROM (SELECT DISTINCT pm.package FROM pattern_matches pm WHERE pm.pattern = ? LIMIT ?) limited_packages
+       ) package_counts ON true', $match_limit, $match_limit, $id, $match_limit + 1, $package_limit, $package_limit,
+    $id, $package_limit + 1
+  )->hash;
+
+  return {
+    matches         => 0 + ($count->{matches}  // 0),
+    packages        => 0 + ($count->{packages} // 0),
+    matches_capped  => $count->{matches_capped}  ? true : false,
+    packages_capped => $count->{packages_capped} ? true : false
+  };
+}
+
 sub remove_proposal ($self, $checksum) {
-  return $self->pg->db->delete('proposed_changes', {token_hexsum => $checksum})->rows;
+  my $sth = $self->pg->db->dbh->prepare('DELETE FROM proposed_changes WHERE token_hexsum = ?');
+  my $rc  = $sth->execute($checksum);
+  return $rc > 0;
 }
 
 sub all ($self) {
@@ -176,13 +240,19 @@ sub checksum ($self, $pattern) {
 }
 
 sub for_license ($self, $license) {
-  return $self->pg->db->query(
-    'SELECT lp.*, bu1.login AS owner_login, bu2.login AS contributor_login
+  my $patterns = $self->pg->db->query(
+    'SELECT lp.*, bu1.login AS owner_login, bu2.login AS contributor_login,
+       NULL AS matches, NULL AS matches_capped,
+       NULL AS packages, NULL AS packages_capped
      FROM license_patterns lp LEFT JOIN bot_users bu1 ON (bu1.id = lp.owner)
        LEFT JOIN bot_users bu2 ON (bu2.id = lp.contributor)
      WHERE license = ?
      ORDER BY lp.created', $license
   )->hashes->to_array;
+  for my $pattern (@$patterns) {
+    $pattern->{spdx_html} = spdx_link($pattern->{spdx});
+  }
+  return $patterns;
 }
 
 sub ignore_pattern_exists ($self, $name, $checksum) {
@@ -300,7 +370,11 @@ sub propose_create ($self, %args) {
           package              => $args{package},
           patent               => $args{patent}            // '0',
           trademark            => $args{trademark}         // '0',
-          export_restricted    => $args{export_restricted} // '0'
+          export_restricted    => $args{export_restricted} // '0',
+          cla                  => $args{cla}               // '0',
+          eula                 => $args{eula}              // '0',
+          ai_assisted          => $args{ai_assisted}       // 0,
+          reason               => $args{reason}            // ''
         }
       },
       owner        => $args{owner},
@@ -333,7 +407,7 @@ sub propose_ignore ($self, %args) {
           highlighted_licenses => $args{highlighted_licenses},
           edited               => $args{edited} // '0',
           package              => $args{package},
-          ai_assisted          => $args{ai_assisted} // '0',
+          ai_assisted          => $args{ai_assisted} // 0,
           reason               => $args{reason}      // ''
         }
       },
@@ -483,6 +557,8 @@ sub update ($self, $id, %args) {
       patent            => $args{patent}            // 0,
       trademark         => $args{trademark}         // 0,
       export_restricted => $args{export_restricted} // 0,
+      cla               => $args{cla}               // 0,
+      eula              => $args{eula}              // 0,
       risk              => $args{risk}              // 5,
       ($args{owner} ? (owner => $args{owner}) : ())
     },

@@ -278,3 +278,54 @@ DROP TABLE IF EXISTS api_keys CASCADE;
 ALTER TABLE bot_packages ADD COLUMN ai_assisted boolean DEFAULT false NOT NULL;
 ALTER TABLE api_keys ADD COLUMN write_access boolean DEFAULT false NOT NULL;
 CREATE INDEX ON bot_packages (ai_assisted);
+
+-- 34 up
+CREATE TABLE package_notes (
+  id           bigserial PRIMARY KEY,
+  package_name text NOT NULL,
+  package      int REFERENCES bot_packages(id) ON DELETE SET NULL,
+  author       int REFERENCES bot_users(id) NOT NULL,
+  ai_assisted  boolean DEFAULT false NOT NULL,
+  body         text NOT NULL,
+  lawyer_only  boolean DEFAULT false NOT NULL,
+  created      timestamp with time zone DEFAULT now() NOT NULL,
+  edited       timestamp with time zone
+);
+CREATE INDEX ON package_notes (package_name, id DESC);
+CREATE INDEX ON package_notes (author);
+
+-- 34 down
+DROP TABLE IF EXISTS package_notes;
+
+-- 35 up
+CREATE INDEX bot_packages_open_reviews_idx ON bot_packages (priority DESC, external_link, unresolved_matches, name)
+WHERE state = 'new' AND obsolete = false;
+
+-- 36 up
+ALTER TABLE package_notes ADD COLUMN tags text[] NOT NULL DEFAULT '{}';
+CREATE INDEX package_notes_tags_idx ON package_notes USING gin (tags);
+
+-- 36 down
+DROP INDEX IF EXISTS package_notes_tags_idx;
+ALTER TABLE package_notes DROP COLUMN IF EXISTS tags;
+
+-- 37 up
+ALTER TABLE api_keys ADD COLUMN can_finalize_reviews boolean DEFAULT false NOT NULL;
+
+-- 37 down
+ALTER TABLE api_keys DROP COLUMN IF EXISTS can_finalize_reviews;
+
+-- 38 up
+ALTER TABLE bot_packages     ADD COLUMN cla  boolean DEFAULT false NOT NULL,
+                             ADD COLUMN eula boolean DEFAULT false NOT NULL;
+ALTER TABLE license_patterns ADD COLUMN cla  boolean DEFAULT false NOT NULL,
+                             ADD COLUMN eula boolean DEFAULT false NOT NULL;
+
+-- 38 down
+ALTER TABLE bot_packages     DROP COLUMN IF EXISTS cla,
+                             DROP COLUMN IF EXISTS eula;
+ALTER TABLE license_patterns DROP COLUMN IF EXISTS cla,
+                             DROP COLUMN IF EXISTS eula;
+
+-- 39 up
+CREATE EXTENSION IF NOT EXISTS "pg_trgm";

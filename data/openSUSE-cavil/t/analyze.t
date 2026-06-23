@@ -1,17 +1,5 @@
-# Copyright (C) 2018-2020 SUSE LLC
-#
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License along
-# with this program; if not, see <http://www.gnu.org/licenses/>.
+# SPDX-FileCopyrightText: SUSE LLC
+# SPDX-License-Identifier: GPL-2.0-or-later
 
 use Mojo::Base -strict;
 
@@ -44,9 +32,63 @@ subtest 'Analyze background job' => sub {
   $t->app->minion->perform_jobs;
 
   my $res = $t->app->pg->db->select('bot_packages', '*', {id => 2})->hashes->[0];
-  is $res->{result}, undef,                                                                         'result cleared';
-  is $res->{notice}, "Diff to closest match 1:\n\n  Different spec file license: Artistic-2.0\n\n", 'different spec';
-  is $res->{state},  'new',                                                                         'not approved';
+  is $res->{result}, undef, 'result cleared';
+  is $res->{notice}, "Diff to closest match 1\n\n  Spec file license  Artistic-2.0 -> GPL-1.0-or-later\n",
+    'different spec';
+  is $res->{state}, 'new', 'not approved';
+};
+
+subtest 'Analyze clears stale notice when reusing a previous accepted review' => sub {
+  my $pkgs = $t->app->packages;
+  my $db   = $t->app->pg->db;
+  my $pkg1 = $pkgs->find(1);
+
+  my $pkg3_id = $pkgs->add(
+    name            => 'perl-Mojolicious',
+    checkout_dir    => $pkg1->{checkout_dir},
+    api_url         => 'https://api.opensuse.org',
+    requesting_user => 1,
+    project         => 'devel:languages:perl',
+    package         => 'perl-Mojolicious',
+    srcmd5          => $pkg1->{checkout_dir},
+    priority        => 5
+  );
+
+  $db->query(
+    'INSERT INTO bot_reports (package, ldig_report, specfile_report, rolemodel)
+     SELECT ?, ldig_report, specfile_report, rolemodel FROM bot_reports WHERE package = ?', $pkg3_id, 1
+  );
+  $db->query('UPDATE bot_packages SET indexed = NOW(), checksum = ?, notice = ? WHERE id = ?',
+    $pkg1->{checksum}, 'stale notice', $pkg3_id);
+
+  $t->app->minion->enqueue(analyzed => [$pkg3_id]);
+  $t->app->minion->perform_jobs;
+
+  my $res = $pkgs->find($pkg3_id);
+  is $res->{state},  'acceptable',                                                      'approved from previous review';
+  is $res->{notice}, undef,                                                             'stale notice cleared';
+  is $res->{result}, 'Accepted because previously reviewed under the same license (1)', 'reused previous review';
+};
+
+subtest 'Re-analyze refreshes notice on already-reviewed packages' => sub {
+  my $pkgs = $t->app->packages;
+  my $db   = $t->app->pg->db;
+
+  # Mark package 2 as lawyer-reviewed with a stale notice from before the
+  # package was approved, and a result the lawyer set manually.
+  $db->query(
+    "UPDATE bot_packages SET state = 'acceptable_by_lawyer', reviewing_user = 1, reviewed = NOW(),
+     result = 'lawyer approved', notice = 'Found new unresolved matches in something' WHERE id = 2"
+  );
+
+  $t->app->minion->enqueue(analyzed => [2]);
+  $t->app->minion->perform_jobs;
+
+  my $res = $pkgs->find(2);
+  is $res->{state},          'acceptable_by_lawyer', 'state preserved';
+  is $res->{result},         'lawyer approved',      'result preserved';
+  is $res->{reviewing_user}, 1,                      'reviewing user preserved';
+  like $res->{notice}, qr/Diff to closest match \d+/, 'notice refreshed to current delta';
 };
 
 subtest 'Prevent analyze race condition' => sub {
@@ -61,6 +103,36 @@ subtest 'Prevent analyze race condition' => sub {
   $worker->unregister;
   undef $guard;
   ok $minion->lock('processing_pkg_1', 0), 'lock no longer exists';
+};
+
+subtest 'dig_report tolerates pattern_matches in files covered by an ignored_files glob' => sub {
+  my $app = $t->app;
+  my $db  = $app->pg->db;
+
+  my $filename = $db->query(
+    'SELECT mf.filename FROM matched_files mf
+       JOIN pattern_matches pm ON pm.file = mf.id
+      WHERE pm.package = 1 AND pm.ignored = false
+      LIMIT 1'
+  )->hash->{filename};
+  ok $filename, "file with unignored pattern_match available ($filename)";
+
+  $app->ignored_files->add($filename, 'test_bot');
+  is $db->select('ignored_lines')->rows, 0, 'no ignored_lines row backs the glob';
+
+  my $report = eval { $app->reports->dig_report(1) };
+  ok !$@,     'dig_report does not raise an FK violation' or diag $@;
+  ok $report, 'got a report';
+
+  my $still_unignored = $db->query(
+    'SELECT COUNT(*) AS c FROM pattern_matches pm
+       JOIN matched_files mf ON pm.file = mf.id
+      WHERE pm.package = 1 AND mf.filename = ? AND pm.ignored = false', $filename
+  )->hash->{c};
+  is $still_unignored, 0, 'matches in the ignored-glob file are now marked ignored';
+
+  my $with_fake_fk = $db->query('SELECT COUNT(*) AS c FROM pattern_matches WHERE ignored_line IS NOT NULL')->hash->{c};
+  is $with_fake_fk, 0, 'glob-ignored matches do not invent an ignored_lines reference';
 };
 
 done_testing;

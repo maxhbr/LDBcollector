@@ -1,42 +1,67 @@
 import './sass/app.scss';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/neo.css';
-
-import 'timeago';
 import 'bootstrap';
-import 'codemirror';
-import 'moment';
-
-import {setupCodeMirrorForFile} from './legacy/file.js';
-import {setupReviewDetails} from './legacy/review.js';
-import {fromNow} from './legacy/time.js';
 import ApiKeys from './vue/ApiKeys.vue';
+import CavilMenu from './vue/CavilMenu.vue';
 import CavilStatistics from './vue/CavilStatistics.vue';
 import ClassifySnippets from './vue/ClassifySnippets.vue';
+import EditPattern from './vue/EditPattern.vue';
 import EditSnippet from './vue/EditSnippet.vue';
+import FileBrowser from './vue/FileBrowser.vue';
 import IgnoredFiles from './vue/IgnoredFiles.vue';
 import IgnoredMatches from './vue/IgnoredMatches.vue';
 import KnownLicenses from './vue/KnownLicenses.vue';
 import KnownProducts from './vue/KnownProducts.vue';
+import LicenseDetails from './vue/LicenseDetails.vue';
 import MissingLicenses from './vue/MissingLicenses.vue';
 import OpenReviews from './vue/OpenReviews.vue';
 import ProductReviews from './vue/ProductReviews.vue';
 import ProposedPatterns from './vue/ProposedPatterns.vue';
+import RecentNotes from './vue/RecentNotes.vue';
 import RecentPatterns from './vue/RecentPatterns.vue';
 import RecentReviews from './vue/RecentReviews.vue';
+import ReportDetails from './vue/ReportDetails.vue';
 import ReportMetadata from './vue/ReportMetadata.vue';
 import ReviewSearch from './vue/ReviewSearch.vue';
-import $ from 'jquery';
+import moment from 'moment';
 import {createApp} from 'vue';
 
-window.$ = $;
-window.jQuery = $;
+function updateBackToTopVisibility() {
+  const visible = window.scrollY > 200;
+  document.querySelectorAll('.back-to-top').forEach(el => {
+    el.classList.toggle('visible', visible);
+  });
+}
+window.addEventListener('scroll', updateBackToTopVisibility, {passive: true});
+document.addEventListener('DOMContentLoaded', updateBackToTopVisibility);
+
+function fromNow(selector = '.from-now') {
+  document.querySelectorAll(selector).forEach(el => {
+    const epoch = Number(el.textContent);
+    const value = Number.isFinite(epoch) ? epoch * 1000 : el.getAttribute('datetime') || el.textContent;
+    el.textContent = moment(value).fromNow();
+  });
+}
+
+function parseJsonData(el, name, fallback) {
+  const value = el.dataset[name];
+  if (!value) return fallback;
+  return JSON.parse(value);
+}
 
 window.cavil = {
-  fireIndex: undefined,
-  fires: undefined,
-  myCodeMirror: undefined,
+  setupMenu() {
+    const el = document.getElementById('cavil-menubar');
+    if (!el) return;
+
+    createApp(CavilMenu, {
+      currentUser: el.dataset.currentUser,
+      hasAdminRole: el.dataset.hasAdminRole === '1',
+      initialStats: parseJsonData(el, 'stats', {missing: 0, proposals: 0}),
+      roles: parseJsonData(el, 'roles', []),
+      urls: parseJsonData(el, 'urls', {})
+    }).mount(el);
+  },
 
   setupProposedPatterns(currentUser, hasAdminRole) {
     const app = createApp(ProposedPatterns);
@@ -66,6 +91,12 @@ window.cavil = {
     app.mount('#edit-snippet');
   },
 
+  setupEditPattern(pattern) {
+    const app = createApp(EditPattern);
+    app.config.globalProperties.currentPattern = pattern;
+    app.mount('#edit-pattern');
+  },
+
   setupIgnoredMatches() {
     createApp(IgnoredMatches).mount('#ignored-matches');
   },
@@ -84,6 +115,12 @@ window.cavil = {
 
   setupKnownProducts() {
     createApp(KnownProducts).mount('#known-products');
+  },
+
+  setupLicenseDetails(licenseName) {
+    const app = createApp(LicenseDetails);
+    app.config.globalProperties.licenseName = licenseName;
+    app.mount('#license-details');
   },
 
   setupRecentPatterns(hasAdminRole) {
@@ -106,13 +143,30 @@ window.cavil = {
     createApp(RecentReviews).mount('#recent-reviews');
   },
 
-  setupReportMetadata(pkgId, hasManagerRole, hasAdminRole, hasLawyerRole) {
+  setupRecentNotes(canSeeLawyerOnly) {
+    const app = createApp(RecentNotes);
+    app.config.globalProperties.canSeeLawyerOnly = canSeeLawyerOnly;
+    app.mount('#recent-notes');
+  },
+
+  setupReportMetadata(pkgId, hasManagerRole, hasAdminRole, hasLawyerRole, reindexUrl, shouldReindex) {
     const app = createApp(ReportMetadata);
     app.config.globalProperties.pkgId = pkgId;
     app.config.globalProperties.hasManagerRole = hasManagerRole;
     app.config.globalProperties.hasAdminRole = hasAdminRole;
     app.config.globalProperties.hasLawyerRole = hasLawyerRole;
+    app.config.globalProperties.reindexUrl = reindexUrl;
+    app.config.globalProperties.shouldReindex = shouldReindex;
     app.mount('#report-metadata');
+  },
+
+  setupReportDetails(pkgId, hasAdminRole, hasContributorRole, isObsolete = false) {
+    const app = createApp(ReportDetails);
+    app.config.globalProperties.pkgId = pkgId;
+    app.config.globalProperties.hasAdminRole = hasAdminRole;
+    app.config.globalProperties.hasContributorRole = hasContributorRole;
+    app.config.globalProperties.isObsolete = isObsolete;
+    app.mount('#report-details');
   },
 
   setupReviewSearch(pkg) {
@@ -121,11 +175,16 @@ window.cavil = {
     app.mount('#review-search');
   },
 
+  setupFileBrowser(pkgId, initialPath) {
+    const app = createApp(FileBrowser);
+    app.config.globalProperties.pkgId = pkgId;
+    app.config.globalProperties.fileBrowserInitialPath = initialPath;
+    app.mount('#file-browser');
+  },
+
   setupStatistics() {
     createApp(CavilStatistics).mount('#statistics');
   },
 
-  fromNow,
-  setupCodeMirrorForFile,
-  setupReviewDetails
+  fromNow
 };

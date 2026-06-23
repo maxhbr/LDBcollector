@@ -18,8 +18,11 @@ use Mojo::Base -strict;
 use Test::More;
 use Mojo::File qw(path curfile tempfile);
 use Mojo::JSON qw(decode_json);
-use Cavil::Util (qw(buckets lines_context obs_ssh_auth parse_exclude_file parse_service_file pattern_matches),
-  qw(request_id_from_external_link run_cmd spdx_link ssh_sign));
+use Cavil::Util (
+  qw(buckets lines_context normalize_license_expr obs_ssh_auth parse_exclude_file parse_service_file),
+  qw(pattern_matches pattern_contains_redundant_skip read_lines request_id_from_external_link run_cmd),
+  qw(spdx_link ssh_sign validate_tags)
+);
 
 my $PRIVATE_KEY = tempfile->spew(<<'EOF');
 -----BEGIN OPENSSH PRIVATE KEY-----
@@ -127,6 +130,46 @@ subtest 'pattern_matches' => sub {
   ok !pattern_matches('foo $SKIP3 bar', 'foo ya da ya da bar foo'), 'no match';
 };
 
+subtest 'pattern_contains_redundant_skip' => sub {
+  ok pattern_contains_redundant_skip('$SKIP foo'),        'redundant $SKIP at beginning';
+  ok pattern_contains_redundant_skip('foo $SKIP'),        'redundant $SKIP at end';
+  ok !pattern_contains_redundant_skip('foo $SKIP19 bar'), 'no redundant $SKIP';
+};
+
+subtest 'normalize_license_expr' => sub {
+  is normalize_license_expr('MIT'),                 'mit',             'lower-cases a simple identifier';
+  is normalize_license_expr('  GPL-2.0-only '),     'gpl-2.0-only',    'trims surrounding whitespace';
+  is normalize_license_expr("MIT\t AND   MPL-2.0"), 'mit and mpl-2.0', 'collapses internal whitespace';
+  is normalize_license_expr(''),                    '',                'empty string stays empty';
+  is normalize_license_expr('   '),                 '',                'whitespace-only string normalizes to empty';
+
+  subtest '"+" is treated as the SPDX "-or-later"' => sub {
+    is normalize_license_expr('GPL-2.0+'),        'gpl-2.0-or-later',        'trailing "+" on a lone token';
+    is normalize_license_expr('MIT OR GPL-2.0+'), 'gpl-2.0-or-later or mit', 'trailing "+" inside an expression';
+  };
+
+  subtest '"LicenseRef-" prefixes are dropped' => sub {
+    is normalize_license_expr('LicenseRef-MPL-2'),    'mpl-2',    'strips a LicenseRef- prefix';
+    is normalize_license_expr('licenseref-Custom-1'), 'custom-1', 'strips a lower-case licenseref- prefix';
+  };
+
+  subtest 'flat "OR" lists are sorted (commutative)' => sub {
+    is normalize_license_expr('MIT OR Apache-2.0'), 'apache-2.0 or mit', 'two operands are reordered';
+    is normalize_license_expr('GPL-2.0-or-later OR Artistic-1.0-Perl OR MIT'),
+      'artistic-1.0-perl or gpl-2.0-or-later or mit', 'three operands are sorted alphabetically';
+    is normalize_license_expr('Apache-2.0 OR MIT'), normalize_license_expr('MIT OR Apache-2.0'),
+      'reordered OR expressions normalize identically';
+  };
+
+  subtest '"AND"/"WITH"/parentheses are left in original order' => sub {
+    is normalize_license_expr('MIT AND Apache-2.0'), 'mit and apache-2.0', 'AND is not reordered';
+    is normalize_license_expr('GPL-2.0-only WITH Classpath-exception-2.0'),
+      'gpl-2.0-only with classpath-exception-2.0', 'WITH is not reordered';
+    is normalize_license_expr('(MIT OR Apache-2.0) AND GPL-2.0-only'), '(mit or apache-2.0) and gpl-2.0-only',
+      'expressions with parentheses are not reordered';
+  };
+};
+
 subtest 'request_id_from_external_link' => sub {
   is request_id_from_external_link('obs#1234'),     1234,  'right id';
   is request_id_from_external_link('ibs#4321'),     4321,  'right id';
@@ -141,6 +184,28 @@ subtest 'run_cmd' => sub {
   is $result->{exit_code}, 0,       'right exit code';
   is $result->{stderr},    '',      'right stderr';
   is $result->{stdout},    "foo\n", 'right stdout';
+};
+
+subtest 'read_lines' => sub {
+  my $file = tempfile;
+  my $fh   = $file->open('>:raw');
+  print $fh "alpha\n";
+  print $fh "b\xC3\xA4r\n";
+  print $fh "caf\xE9\n";
+  close $fh;
+
+  is read_lines($file, 1, 3),  "alpha\nb\x{e4}r\ncaf\x{e9}\n", 'reads all requested lines and decodes mixed encodings';
+  is read_lines($file, 2, 2),  "b\x{e4}r\n",                   'reads a single line range';
+  is read_lines($file, 2, 10), "b\x{e4}r\ncaf\x{e9}\n",        'ignores non-existent lines beyond file end';
+
+  subtest 'with line numbers' => sub {
+    is read_lines($file, 1, 3, 1), "     1  alpha\n     2  b\x{e4}r\n     3  caf\x{e9}\n",
+      'prefixes each line with its absolute line number';
+    is read_lines($file, 2, 2, 1), "     2  b\x{e4}r\n", 'single line keeps its absolute number';
+    is read_lines($file, 2, 10, 1), "     2  b\x{e4}r\n     3  caf\x{e9}\n",
+      'numbering reflects file position, not offset within the range';
+    is read_lines($file, 1, 3, 0), "alpha\nb\x{e4}r\ncaf\x{e9}\n", 'falsy flag is identical to omitting it';
+  };
 };
 
 subtest 'spdx_link' => sub {
@@ -197,6 +262,80 @@ subtest 'ssh_sign' => sub {
   isnt ssh_sign($PRIVATE_KEY, 'realm2', 'message'),  $signature, 'different signature';
   isnt ssh_sign($PRIVATE_KEY, 'realm',  'message2'), $signature, 'different signature';
   is ssh_sign($PRIVATE_KEY, 'realm', 'message'), $signature, 'identical signature';
+};
+
+subtest 'validate_tags' => sub {
+  subtest 'undef and empty inputs' => sub {
+    my ($clean, $error) = validate_tags(undef);
+    is_deeply $clean, [], 'undef yields empty array';
+    is $error, undef, 'no error';
+
+    ($clean, $error) = validate_tags([]);
+    is_deeply $clean, [], 'empty array stays empty';
+    is $error, undef, 'no error';
+  };
+
+  subtest 'happy paths' => sub {
+    my ($clean, $error) = validate_tags(['review']);
+    is_deeply $clean, ['review'], 'single tag passes through';
+    is $error, undef, 'no error';
+
+    ($clean, $error) = validate_tags(['review', 'demo', 'triage']);
+    is_deeply $clean, ['review', 'demo', 'triage'], 'multiple tags preserve order';
+
+    ($clean, $error) = validate_tags(['  review  ']);
+    is_deeply $clean, ['review'], 'whitespace trimmed';
+
+    ($clean, $error) = validate_tags(['review', 'review', 'demo', 'review']);
+    is_deeply $clean, ['review', 'demo'], 'duplicates collapsed, first occurrence wins';
+
+    ($clean, $error) = validate_tags(['review', '', '   ', 'demo']);
+    is_deeply $clean, ['review', 'demo'], 'empty and whitespace-only tags dropped';
+  };
+
+  subtest 'length cap (32 characters)' => sub {
+    my ($clean, $error) = validate_tags(['x' x 32]);
+    is_deeply $clean, ['x' x 32], 'exactly 32 characters accepted';
+    is $error, undef, 'no error at the boundary';
+
+    ($clean, $error) = validate_tags(['x' x 33]);
+    is $clean, undef, 'over-cap returns undef';
+    like $error, qr/tag exceeds 32 characters/, 'error mentions the cap';
+  };
+
+  subtest 'count cap (16 tags)' => sub {
+    my @sixteen = map {"t$_"} 1 .. 16;
+    my ($clean, $error) = validate_tags([@sixteen]);
+    is_deeply $clean, [@sixteen], 'exactly 16 tags accepted';
+    is $error, undef, 'no error at the boundary';
+
+    ($clean, $error) = validate_tags([@sixteen, 't17']);
+    is $clean, undef, 'over-cap returns undef';
+    like $error, qr/too many tags, maximum is 16/, 'error mentions the cap';
+
+    # Whitespace-only entries don't count toward the cap.
+    ($clean, $error) = validate_tags([@sixteen, '', '   ']);
+    is_deeply $clean, [@sixteen], 'blank fillers do not consume the budget';
+    is $error, undef, 'no error';
+  };
+
+  subtest 'rejects non-string elements' => sub {
+    my ($clean, $error) = validate_tags('review');
+    is $clean, undef, 'scalar input rejected';
+    like $error, qr/tags must be an array of strings/, 'error explains';
+
+    ($clean, $error) = validate_tags({review => 1});
+    is $clean, undef, 'hashref input rejected';
+    like $error, qr/tags must be an array of strings/, 'error explains';
+
+    ($clean, $error) = validate_tags(['review', [], 'demo']);
+    is $clean, undef, 'arrayref element rejected';
+    like $error, qr/tags must be an array of strings/, 'error explains';
+
+    ($clean, $error) = validate_tags(['review', undef]);
+    is $clean, undef, 'undef element rejected';
+    like $error, qr/tags must be an array of strings/, 'error explains';
+  };
 };
 
 subtest 'obs_ssh_auth' => sub {

@@ -1,11 +1,13 @@
-# Copyright SUSE LLC
+# SPDX-FileCopyrightText: SUSE LLC
 # SPDX-License-Identifier: GPL-2.0-or-later
+
 package Cavil;
 use Mojo::Base 'Mojolicious', -signatures;
 
 use Mojo::Pg;
 use Cavil::Classifier;
 use Cavil::Git;
+use Cavil::Model::Notes;
 use Cavil::Model::IgnoredFiles;
 use Cavil::Model::Packages;
 use Cavil::Model::Patterns;
@@ -35,7 +37,7 @@ has sync => sub ($self) {
   return $sync;
 };
 
-our $VERSION = '1.020';
+our $VERSION = '1.024';
 
 sub startup ($self) {
 
@@ -44,7 +46,7 @@ sub startup ($self) {
   $self->secrets($config->{secrets});
 
   if (my $classifier = $config->{classifier}) {
-    $self->classifier->url($classifier->{url})->token($classifier->{token});
+    $self->classifier->type($classifier->{type})->url($classifier->{url})->token($classifier->{token});
   }
 
   # Avoid huge temp files in "/tmp"
@@ -138,6 +140,8 @@ sub startup ($self) {
 
   $self->helper(api_keys => sub ($c) { state $keys = Cavil::Model::APIKeys->new(pg => $c->pg) });
 
+  $self->helper(notes => sub ($c) { state $nts = Cavil::Model::Notes->new(pg => $c->pg) });
+
   # Migrations (do not run automatically, use the migrate command)
   #
   my $path = $self->home->child('migrations', 'cavil.sql');
@@ -199,7 +203,9 @@ sub startup ($self) {
   # API with key
   $api_key->any('/mcp' => $mcp_action)->name('mcp');
   $api_key->get('/api/v1/whoami')->to('API#whoami')->name('whoami_api');
+  $api_key->get('/api/v1/reports')->to('API#reports');
   $api_key->get('/api/v1/report/<id:num>' => [format => ['json', 'txt', 'mcp']])->to('Report#report');
+  $api_key->get('/api/v1/spdx/<id:num>')->to('Report#spdx');
 
   # API Keys
   $logged_in->get('/api_keys')->to('APIKeys#list')->name('list_api_keys');
@@ -215,13 +221,25 @@ sub startup ($self) {
     ->name('pagination_review_search');
   $public->get('/reviews/recent')->to('Reviewer#list_recent')->name('reviews_recent');
   $logged_in->get('/reviews/file_view/<id:num>/*file' => {file => ''})->to('Reviewer#file_view')->name('file_view');
+  $logged_in->get('/reviews/file_view_meta/<id:num>/*file' => {file => ''})
+    ->to('Reviewer#file_view_meta')
+    ->name('file_view_meta');
   $logged_in->get('/reviews/details/<id:num>')->to('Reviewer#details')->name('package_details');
   $logged_in->get('/reviews/meta/<id:num>')->to('Reviewer#meta')->name('package_meta');
-  $logged_in->get('/reviews/report/<id:num>' => [format => ['json', 'txt', 'html']])
-    ->to('Report#report', format => 'html')
+  $logged_in->get('/reviews/report/<id:num>' => [format => ['json', 'txt']])
+    ->to('Report#report', format => 'json')
     ->name('report');
-  $logged_in->get('/reviews/fetch_source/<id:num>' => [format => ['json', 'html']])
-    ->to('Report#source', format => 'html');
+  $logged_in->get('/reviews/report_details/<id:num>')->to('Report#details')->name('report_details');
+  $logged_in->get('/reviews/fetch_source/<id:num>' => [format => ['json']])->to('Report#source', format => 'json');
+  $logged_in->get('/reviews/notes/recent'          => [format => ['html', 'json']])
+    ->to('Notes#recent', format => 'html')
+    ->name('recent_notes');
+  $logged_in->get('/reviews/notes/tags' => [format => ['json']])->to('Notes#tags', format => 'json')->name('note_tags');
+  $logged_in->get('/reviews/notes/<id:num>')->to('Notes#list')->name('list_notes');
+  $logged_in->post('/reviews/notes/<id:num>')->to('Notes#create')->name('create_note');
+  $logged_in->patch('/reviews/notes/<id:num>')->to('Notes#update')->name('update_note');
+  $logged_in->delete('/reviews/notes/<id:num>')->to('Notes#remove')->name('remove_note');
+  $logged_in->post('/reviews/notes/preview')->to('Notes#preview')->name('preview_note');
   $admin->post('/reviews/review_package/<id:num>')->to('Reviewer#review_package')->name('review_package');
   $manager->post('/reviews/fasttrack_package/<id:num>')->to('Reviewer#fasttrack_package')->name('fasttrack_package');
   $admin->post('/reviews/reindex/<id:num>')->to('Reviewer#reindex_package')->name('reindex_package');
@@ -235,6 +253,7 @@ sub startup ($self) {
   $admin->post('/licenses/create_pattern')->to('License#create_pattern')->name('create_pattern');
   $logged_in->get('/licenses/proposed')->to('License#proposed')->name('proposed_patterns');
   $logged_in->get('/licenses/missing')->to('License#missing')->name('missing_licenses');
+  $logged_in->get('/licenses/proposed/stats')->to('License#proposal_stats')->name('proposed_patterns_stats');
   $logged_in->get('/licenses/proposed/meta')->to('License#proposed_meta')->name('proposed_patterns_meta');
   $logged_in->get('/licenses/recent')->to('License#recent')->name('recent_patterns');
   $logged_in->get('/licenses/recent/meta')->to('License#recent_meta')->name('recent_patterns_meta');
@@ -251,6 +270,15 @@ sub startup ($self) {
   # Public because of fine grained access controls (owner of proposal may remove it again)
   $public->post('/licenses/proposed/remove/:checksum')->to('License#remove_proposal')->name('proposed_remove');
 
+  $logged_in->get('/licenses/pattern/<id:num>.json')->to('License#pattern_detail')->name('pattern_detail');
+  $admin->post('/licenses/pattern/<id:num>.json')->to('License#update_pattern_json')->name('update_pattern_json');
+  $logged_in->get('/licenses/pattern/<id:num>/match_count.json')
+    ->to('License#match_count_json')
+    ->name('pattern_match_count');
+  $public->get('/licenses/meta/*name' => {name => ''})->to('License#show_meta')->name('license_show_meta');
+  $admin->post('/licenses/meta/*name' => {name => ''})
+    ->to('License#update_patterns_json')
+    ->name('update_patterns_json');
   $admin->get('/licenses/edit_pattern/<id:num>')->to('License#edit_pattern')->name('edit_pattern');
   $admin->post('/licenses/update_pattern/<id:num>')->to('License#update_pattern')->name('update_pattern');
   $admin->post('/licenses/update_patterns')->to('License#update_patterns')->name('update_patterns');
@@ -267,11 +295,12 @@ sub startup ($self) {
   $classifier->post('/snippets/<id:num>')->to('Snippet#approve')->name('approve_snippets');
   $logged_in->get('/snippet/edit/<id:num>')->to('Snippet#edit')->name('edit_snippet');
   $logged_in->get('/snippet/meta/<id:num>')->to('Snippet#meta')->name('snippet_meta');
+  $logged_in->get('/snippet/smart_edit/<id:num>')->to('Snippet#smart_edit')->name('snippet_smart_edit');
   $public->post('/snippet/closest')->to('Snippet#closest')->name('snippet_closest');
   $admin_or_contributor->get('/snippets/from_file/:file/<start:num>/<end:num>')
     ->to('Snippet#from_file')
     ->name('new_snippet');
-  $admin_or_contributor->post('/snippet/decision/<id:num>')->to('Snippet#decision')->name('snippet_decision');
+  $admin_or_contributor->post('/snippet/batch_decision')->to('Snippet#batch_decision')->name('snippet_batch_decision');
 
   $logged_in->get('/stats')->to('Stats#index')->name('stats');
   $logged_in->get('/stats/meta')->to('Stats#meta')->name('stats_meta');

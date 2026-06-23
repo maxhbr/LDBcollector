@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="row mt-3">
-      <div class="col-12 alert alert-primary" role="alert">
+      <cavil-notice-panel intro class="col-12">
         These are the most recently added license patterns and some metrics for how well they are performing. The
         metrics are most useful after a full database reindexing. License patterns without any matches are highlighted
         in red.
-      </div>
+      </cavil-notice-panel>
     </div>
     <div class="row g-4">
       <div class="col-9">
@@ -48,11 +48,17 @@
       <div v-for="pattern in patterns" :key="pattern.id" class="row recent-pattern-container">
         <div class="col-12 recent-pattern-file-container">
           <div class="recent-pattern-header">
-            <b>{{ pattern.license }}</b
-            >, risk {{ pattern.risk }}
-            <a v-if="hasAdminRole === true" :href="pattern.editUrl" class="float-end"
-              ><i class="fa-solid fa-pen-to-square"></i
-            ></a>
+            <div class="recent-pattern-title">
+              <b>{{ pattern.license }}</b>
+              <span class="cavil-meta-badges recent-pattern-meta-badges">
+                <span class="cavil-meta-badge cavil-meta-badge-muted">Risk {{ pattern.risk }}</span>
+              </span>
+            </div>
+            <div v-if="hasAdminRole === true" class="recent-pattern-actions">
+              <a class="cavil-icon-action" :href="pattern.editUrl" title="Edit pattern" aria-label="Edit pattern">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </a>
+            </div>
           </div>
           <div class="recent-pattern-source">
             <table class="pattern">
@@ -80,27 +86,24 @@
           </div>
         </div>
       </div>
-      <a
-        id="back-to-top"
-        href="#"
-        class="btn btn-primary btn-lg back-to-top"
-        role="button"
-        title="Click to return to the top"
-        data-bs-toggle="tooltip"
-        data-placement="left"
-        ><i class="fa-solid fa-angle-up"></i
-      ></a>
+      <div v-if="loadingMore" class="text-center text-muted my-3">
+        <i class="fa-solid fa-rotate fa-spin"></i> Loading more patterns
+      </div>
+      <BackToTop />
     </div>
   </div>
 </template>
 
 <script>
+import BackToTop from './components/BackToTop.vue';
+import CavilNoticePanel from './components/CavilNoticePanel.vue';
 import {genParamWatchers, getParams} from './helpers/params.js';
 import UserAgent from '@mojojs/user-agent';
 import moment from 'moment';
 
 export default {
   name: 'RecentPatterns',
+  components: {BackToTop, CavilNoticePanel},
   data() {
     const params = getParams({
       hasContributor: false,
@@ -111,7 +114,8 @@ export default {
       params: {...params, before: 0},
       patterns: null,
       patternUrl: '/licenses/recent/meta',
-      total: null
+      total: null,
+      loadingMore: false
     };
   },
   mounted() {
@@ -158,8 +162,15 @@ export default {
         this.loadMore();
       }
     },
-    loadMore() {
-      this.getPatterns();
+    async loadMore() {
+      if (this.loadingMore) return;
+      if (this.patterns !== null && this.total !== null && this.patterns.length >= this.total) return;
+      this.loadingMore = true;
+      try {
+        await this.getPatterns();
+      } finally {
+        this.loadingMore = false;
+      }
     },
     refreshPage() {
       this.total = null;
@@ -178,12 +189,31 @@ export default {
   margin-top: 1rem;
 }
 .recent-pattern-header {
+  align-items: center;
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 1px solid rgb(208, 215, 222);
+  display: flex;
   font-size: 13px;
+  gap: 0.75rem;
+  justify-content: space-between;
   line-height: 20px;
   padding: 10px;
+}
+.recent-pattern-title {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.recent-pattern-meta-badges {
+  margin-left: 0.25rem;
+}
+.recent-pattern-actions {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.4rem;
 }
 .recent-pattern-header a,
 .recent-pattern-footer a,
@@ -196,20 +226,21 @@ export default {
   text-decoration: underline;
 }
 .recent-pattern-file-container {
+  border: 1px solid rgb(208, 215, 222);
+  border-radius: 6px;
+  overflow: hidden;
   padding: 0;
 }
 .recent-pattern-footer {
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0 0.25rem 0.25rem;
+  border-top: 1px solid rgb(208, 215, 222);
   font-size: 13px;
   line-height: 20px;
   padding: 10px;
 }
 .recent-pattern-source {
-  border: 1px solid #dfe2e5 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
+  background: #fff;
+  overflow: auto;
 }
 .recent-pattern-source td.linenumber,
 .recent-pattern-source td.code {
@@ -222,7 +253,8 @@ export default {
   border: 0 !important;
 }
 .recent-pattern-source td.code {
-  padding-left: 0.5em;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   color: #24292e;
   margin-left: 0.5em;
   white-space: -moz-pre-wrap;

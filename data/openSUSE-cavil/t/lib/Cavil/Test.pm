@@ -17,6 +17,7 @@ package Cavil::Test;
 use Mojo::Base -base, -signatures;
 
 use Mojo::File qw(path tempdir);
+use Mojo::JSON qw(from_json to_json);
 use Mojo::Pg;
 use Mojo::URL;
 use Mojo::Util qw(scope_guard);
@@ -45,7 +46,7 @@ sub default_config ($self) {
     cache_dir                                => $self->cache_dir,
     tokens                                   => ['test_token'],
     pg                                       => $self->postgres_url,
-    acceptable_risk                          => 3,
+    acceptable_risk                          => 4,
     auto_accept_risk                         => 0,
     index_bucket_average                     => 100,
     cleanup_bucket_average                   => 50,
@@ -265,7 +266,124 @@ sub ui_fixtures ($self, $app) {
   $pkgs->update($harbor);
   $pkgs->unpack($pkg_id);
 
+  # Synthetic package with many unresolved keyword matches. Built from a real
+  # tarball and indexed by the regular unpack + analyze pipeline so the
+  # missed_files collection is genuine (no bot_reports surgery). Drives the
+  # "more previews hidden" indicator on the report UI and is a reusable
+  # fixture for any future test that needs a large unresolved set.
+  $self->_synthetic_many_unresolved_fixture($app, $usr_id);
+
   $app->minion->perform_jobs();
+
+  # Inflate the perl-Mojolicious Apache-2.0 risk-5 bucket with 100 fake files
+  # so the UI test can verify the per-license file-list cap
+  # (min_files_short_report) keeps the in-bucket file list manageable.
+  my $db     = $app->pg->db;
+  my $row    = $db->select('bot_reports', 'ldig_report', {package => 1})->hash;
+  my $report = from_json($row->{ldig_report});
+
+  my $fake_pid = 999999;
+  my @fake_ids = 9000 .. 9099;
+  $report->{files}{$_} = "fake/lots-of-files/file$_.txt" for @fake_ids;
+  $report->{risks}{5}{'Apache-2.0'}{$fake_pid} = [@fake_ids];
+
+  $db->update('bot_reports', {ldig_report => to_json($report)}, {package => 1});
+
+  # Seed notes on perl-Mojolicious so the Notes tab has data the moment
+  # the UI test opens either review #1 (mojo#1) or review #2 (mojo#2). The two
+  # bot_packages rows share the package name and the notes are stored under
+  # the name, so both reports should show the same list. The dummy auth flow
+  # creates "tester" only on first login, so all seeds are authored by the
+  # existing test_bot user; tests verify admin-delete by logging in as tester
+  # and self-delete by writing a new note first.
+  my $bot_id = $app->users->find(login => 'test_bot')->{id};
+  my $notes  = $app->notes;
+
+  # 25 seeded notes so endless scroll must fetch a second page (default
+  # page size is 20). The oldest entry doubles as a lawyer-only fixture so
+  # the lawyer-only highlighting + tab-badge tinting always have data when
+  # an admin views the second page.
+  for my $i (1 .. 25) {
+    my $lawyer = $i == 1 ? 1 : 0;
+    my $body
+      = $i == 25
+      ? "Latest review notes.\n\n* check Apache-2.0 obligations\n* verify shipped LICENSE"
+      : "Seed note #$i for **perl-Mojolicious**.";
+    $notes->add(1, 'perl-Mojolicious', $bot_id, $body, $lawyer, $i == 25 ? 1 : 0);
+  }
+}
+
+# Builds a real, indexable test package whose files each contain one
+# distinctive keyword that matches a license-less pattern. The result is a
+# fully analyzed package with one unresolved snippet per file, comfortably
+# more than `max_expanded_files`. Generates the tarball + spec on disk so
+# the regular unpack pipeline can process it; no bot_reports surgery.
+sub _synthetic_many_unresolved_fixture ($self, $app, $usr_id) {
+  my $checkout_md5 = 'cafefeed00000000000000000000abcd';
+  my $synth_dir    = $self->checkout_dir->child('synthetic-many-unresolved', $checkout_md5)->make_path;
+
+  $synth_dir->child('synthetic-many-unresolved.spec')->spew(<<'SPEC');
+Name:           synthetic-many-unresolved
+Version:        1.0
+Release:        0
+Summary:        Synthetic package with many unresolved keyword matches
+License:        Artistic-2.0
+Group:          Development/Libraries/Perl
+Source0:        synthetic-many-unresolved-1.0.tar.gz
+BuildArch:      noarch
+
+%description
+Each generated source file contains the keyword
+"PUDDLE_OF_SYNTHETIC_KEYWORDS appears in this exact spot" which is
+registered as a keyword pattern with no license, so every file becomes
+an unresolved match after indexing.
+SPEC
+
+  # Each file gets a unique marker adjacent to the keyword so the snippet
+  # hash (which includes ~5 words of context around the keyword) is distinct
+  # per file. Without this, all 110 files would share one snippet and only
+  # one missed-file would be reported.
+  my $stage = tempdir;
+  my $src   = $stage->child('synthetic-many-unresolved-1.0')->make_path;
+  for my $i (1 .. 110) {
+    my $marker = sprintf('UNIQUE_FILE_MARKER_%03d', $i);
+    $src->child(sprintf('file_%03d.txt', $i))->spew(<<"FILE");
+Synthetic file $i for UI testing.
+
+$marker PUDDLE_OF_SYNTHETIC_KEYWORDS appears in this exact spot.
+
+Trailing padding so the snippet has surrounding context to render.
+FILE
+  }
+  my $tarball = $synth_dir->child('synthetic-many-unresolved-1.0.tar.gz')->to_string;
+  system('tar', '-czf', $tarball, '-C', $stage->to_string, 'synthetic-many-unresolved-1.0') == 0
+    or die "Failed to create synthetic tarball: $?";
+
+  # Low priority + "zzz_" external_link prefix sort the package to the very
+  # end of every open-reviews page so the existing row-index assertions
+  # (mojo#1 first, test#6 at row 10, etc.) keep passing.
+  my $pkgs   = $app->packages;
+  my $pkg_id = $pkgs->add(
+    name            => 'synthetic-many-unresolved',
+    checkout_dir    => $checkout_md5,
+    api_url         => 'https://api.opensuse.org',
+    requesting_user => $usr_id,
+    project         => 'devel:test',
+    package         => 'synthetic-many-unresolved',
+    srcmd5          => $checkout_md5,
+    priority        => 1
+  );
+  my $pkg = $pkgs->find($pkg_id);
+  $pkg->{external_link} = 'zzz_synth#1';
+  $pkgs->update($pkg);
+  $pkgs->imported($pkg_id);
+  $pkgs->unpack($pkg_id);
+
+  # License-less pattern → every match becomes an unresolved snippet
+  $app->patterns->create(
+    pattern   => 'PUDDLE_OF_SYNTHETIC_KEYWORDS appears in this exact spot',
+    unique_id => '00000000-0000-0000-0000-000000000001'
+  );
 }
 
 sub unpack_fixtures ($self, $app) {

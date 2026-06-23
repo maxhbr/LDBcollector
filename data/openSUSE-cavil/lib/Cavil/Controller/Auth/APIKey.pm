@@ -22,7 +22,17 @@ sub check ($self) {
   my $token = $1;
 
   $self->_denied and return undef unless defined(my $user = $self->api_keys->find_by_key($token));
-  $self->stash('cavil.api.user' => $user->{login}, 'cavil.api.write_access' => $user->{write_access});
+
+  # Capability scopes, derived from the key for now (later straight from the key's own scopes)
+  my @scopes = ('cavil:read');
+  push @scopes, 'cavil:write'            if $user->{write_access};
+  push @scopes, 'cavil:reviews.finalize' if $user->{can_finalize_reviews};
+
+  $self->stash(
+    'cavil.api.user'         => $user->{login},
+    'cavil.api.write_access' => $user->{write_access},
+    'cavil.api.scopes'       => \@scopes
+  );
 
   return 1;
 }

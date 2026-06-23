@@ -101,12 +101,20 @@ sub find ($self, $id) {
     ['bot_packages', [-left => 'bot_users', id => 'reviewing_user']],
     [
       'bot_packages.*',
-      \'extract(epoch from bot_packages.created) as created_epoch',
+      \'extract(epoch from bot_packages.created)  as created_epoch',
       \'extract(epoch from bot_packages.reviewed) as reviewed_epoch',
+      \'extract(epoch from bot_packages.imported) as imported_epoch',
+      \'extract(epoch from bot_packages.unpacked) as unpacked_epoch',
+      \'extract(epoch from bot_packages.indexed)  as indexed_epoch',
       \'bot_users.login as login'
     ],
     {'bot_packages.id' => $id}
   )->hash;
+}
+
+sub find_by_link ($self, $link) {
+  return $self->pg->db->query('SELECT id FROM bot_packages WHERE external_link = ? AND obsolete = FALSE', $link)
+    ->arrays->flatten->to_array;
 }
 
 sub find_by_name_and_md5 ($self, $pkg, $md5) {
@@ -116,15 +124,16 @@ sub find_by_name_and_md5 ($self, $pkg, $md5) {
 sub flags ($self, $id) {
 
   # Only include flags that have a field in the bot_packages table
-  my @flags = qw(patent trademark export_restricted);
+  my @flags = qw(patent trademark export_restricted cla eula);
   my $flags = {map { $_ => 0 } @flags};
 
   my $results = $self->pg->db->query(
     qq{
-      SELECT patent, trademark, export_restricted
+      SELECT patent, trademark, export_restricted, cla, eula
       FROM pattern_matches pm JOIN license_patterns lp ON pm.pattern = lp.id
       WHERE pm.package = ? AND pm.ignored = false
-        AND (lp.patent = true OR lp.trademark = true OR lp.export_restricted = true)
+        AND (lp.patent = true OR lp.trademark = true OR lp.export_restricted = true
+             OR lp.cla = true OR lp.eula = true)
     }, $id
   )->hashes->to_array;
   for my $result (@$results) {
@@ -168,14 +177,38 @@ sub history ($self, $name, $checksum, $id) {
 }
 
 sub ignore_line ($self, $options) {
-
-  my $db = $self->pg->db;
-  $db->query(
+  my $db       = $self->pg->db;
+  my $inserted = $db->query(
     'insert into ignored_lines (hash, packname, owner, contributor) values (?, ?, ?, ?)
-     on conflict do nothing', $options->{hash}, $options->{package}, $options->{owner}, $options->{contributor}
+     on conflict do nothing returning id', $options->{hash}, $options->{package}, $options->{owner},
+    $options->{contributor}
+  )->hash;
+  my $ignore_id
+    = $inserted
+    ? $inserted->{id}
+    : $db->select('ignored_lines', 'id', {hash => $options->{hash}, packname => $options->{package}})->hash->{id};
+
+  # A new ignored_lines row does not change file contents or pattern definitions, so a full reindex is unnecessary
+  $db->query(
+    'update pattern_matches pm
+       set ignored = true, ignored_line = ?
+       from file_snippets fs, snippets s, bot_packages bp
+       where pm.file = fs.file
+         and pm.package = fs.package
+         and fs.snippet = s.id
+         and pm.package = bp.id
+         and s.hash = ?
+         and bp.name = ?
+         and bp.obsolete = false
+         and bp.indexed is not null
+         and pm.sline <= fs.eline
+         and pm.eline >= fs.sline
+         and pm.ignored = false', $ignore_id, $options->{hash}, $options->{package}
   );
 
-  $self->reindex_packages($options->{package}, {delay => $options->{delay}});
+  my $ids = $db->select('bot_packages', 'id', {name => $options->{package}, obsolete => 0, indexed => {'!=' => undef}})
+    ->arrays->flatten->to_array;
+  $self->analyze($_, 9) for @$ids;
 }
 
 sub remove_ignored_line ($self, $id, $user) {
@@ -286,12 +319,22 @@ sub paginate_product_reviews ($self, $name, $options) {
 
   my $trademark = '';
   if ($options->{trademark} eq 'true') {
-    $patent = 'AND trademark = true';
+    $trademark = 'AND trademark = true';
   }
 
   my $export_restricted = '';
   if ($options->{export_restricted} eq 'true') {
     $export_restricted = 'AND export_restricted = true';
+  }
+
+  my $cla = '';
+  if ($options->{cla} eq 'true') {
+    $cla = 'AND cla = true';
+  }
+
+  my $eula = '';
+  if ($options->{eula} eq 'true') {
+    $eula = 'AND eula = true';
   }
 
   my $results = $db->query(
@@ -301,6 +344,7 @@ sub paginate_product_reviews ($self, $name, $options) {
         checksum, unresolved_matches, COUNT(*) OVER() AS total
       FROM bot_package_products JOIN bot_packages ON (bot_packages.id = bot_package_products.package)
       WHERE bot_package_products.product = ? $search $attention $unresolved $patent $trademark $export_restricted
+        $cla $eula
       ORDER BY bot_packages.id DESC
       LIMIT ? OFFSET ?
     }, $product->{id}, $options->{limit}, $options->{offset}
@@ -426,6 +470,7 @@ sub git_import ($self, $id, $data, $priority = 5) {
   return $self->minion->enqueue(
     git_import => [$id, $data] => {
       priority => $priority,
+      attempts => 5,
       notes    => {external_link => $pkg->{external_link}, package => $pkg->{name}, "pkg_$id" => 1}
     }
   );
@@ -436,6 +481,7 @@ sub obs_import ($self, $id, $data, $priority = 5) {
   return $self->minion->enqueue(
     obs_import => [$id, $data] => {
       priority => $priority,
+      attempts => 5,
       notes    => {external_link => $pkg->{external_link}, package => $pkg->{name}, "pkg_$id" => 1}
     }
   );
@@ -502,9 +548,17 @@ sub obsolete_old_packages ($self, $days_to_keep_orphaned, $days_to_keep_orphaned
 }
 
 sub reindex ($self, $id, @args) {
+  my $minion = $self->minion;
 
   # Protect from race conditions (even before creating a background job)
-  return undef unless $self->minion->lock("processing_pkg_$id", 0);
+  return undef unless $minion->lock("processing_pkg_$id", 0);
+
+  # Skip if an import or unpack is already queued or running - that chain will
+  # index the package itself, and an orphan reindex would race the unpack and
+  # fail "is not unpacked yet" once the unpack clears the field
+  return undef
+    if $minion->jobs(
+    {tasks => ['obs_import', 'git_import', 'unpack'], states => ['inactive', 'active'], notes => ["pkg_$id"]})->total;
 
   # Make sure package exists and is eligible for reindexing
   return undef
@@ -530,10 +584,9 @@ sub reindex_matched_packages ($self, $pid, $priority = 0) {
   }
 }
 
-sub reindex_packages ($self, $name, $options = {}) {
-  my $delay = $options->{delay} || 0;
-  my $ids   = $self->pg->db->select('bot_packages', 'id', {name => $name})->arrays->flatten->to_array;
-  $self->reindex($_, 3, [], $delay) for @$ids;
+sub reindex_packages ($self, $name) {
+  my $ids = $self->pg->db->select('bot_packages', 'id', {name => $name})->arrays->flatten->to_array;
+  $self->reindex($_, 3) for @$ids;
 }
 
 sub remove_spdx_report ($self, $id) {

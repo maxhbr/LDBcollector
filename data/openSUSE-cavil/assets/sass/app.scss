@@ -4,8 +4,148 @@
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 @import "~@fortawesome/fontawesome-free/scss/v4-shims.scss";
 
-.navbar-brand img {
-  height: 100%
+.cavil-brand {
+  align-items: center;
+  display: inline-flex;
+  gap: .6rem;
+  margin-right: 1.25rem;
+}
+.cavil-brand img {
+  height: 32px;
+  width: 32px;
+}
+.cavil-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+.cavil-brand-name {
+  color: #17202a;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.cavil-brand-subtitle {
+  color: #6c757d;
+  font-size: .72rem;
+  font-weight: 500;
+}
+.cavil-navbar-search {
+  margin-right: .75rem;
+  min-width: 14rem;
+}
+.cavil-search-input {
+  border-radius: 6px;
+  font-size: .875rem;
+}
+.cavil-user-menu-icon {
+  margin-right: .25rem;
+}
+.cavil-user-name {
+  display: inline-block;
+  max-width: 14ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+.cavil-menu-badge {
+  margin-left: .35rem;
+  vertical-align: text-bottom;
+}
+.cavil-user-dropdown .dropdown-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.cavil-dropdown-badge {
+  margin-left: 1rem;
+}
+.cavil-role-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+}
+@media (max-width: 991.98px) {
+  .cavil-navbar-search {
+    margin: .5rem 0;
+    min-width: 0;
+    width: 100%;
+  }
+}
+.cavil-icon-action {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  color: #24292f;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  text-decoration: none;
+  width: 30px;
+}
+button.cavil-icon-action {
+  cursor: pointer;
+}
+.cavil-icon-action:hover,
+.cavil-icon-action:focus,
+.cavil-icon-action.active {
+  background: #f3f4f6;
+  color: #0969da;
+  text-decoration: none;
+}
+.cavil-icon-action-danger:hover,
+.cavil-icon-action-danger:focus {
+  color: #cf222e;
+}
+.cavil-icon-action:disabled,
+.cavil-icon-action.disabled {
+  color: #8c959f;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.cavil-meta-badges {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.cavil-meta-badge {
+  border: 1px solid transparent;
+  border-radius: 2em;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 0 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.cavil-meta-badge-muted {
+  background: #eaeef2;
+  border-color: rgba(110, 119, 129, 0.25);
+  color: #57606a;
+}
+.cavil-meta-badge-info {
+  background: #ddf4ff;
+  border-color: #54aeff66;
+  color: #0550ae;
+}
+.cavil-meta-badge-warning {
+  background: #fff8c5;
+  border-color: #d4a72c66;
+  color: #7d4e00;
+}
+.cavil-meta-badge-danger {
+  background: #ffebe9;
+  border-color: #ffcecb;
+  color: #cf222e;
+}
+a.cavil-meta-badge:hover,
+a.cavil-meta-badge:focus {
+  filter: brightness(0.96);
+  text-decoration: none;
 }
 select.prio-box {
   width: 100% !important;
@@ -20,7 +160,6 @@ select.state-box {
 h2 a {
   text-decoration: none;
 }
-
 /* license key word */
 pre .lkw {
   background-color: #FCF8B2;
@@ -37,17 +176,8 @@ textarea.mono-textarea {
   border-top: 0 !important;
   border-radius: 0 0 .25rem .25rem;
 
-  td.actions, td.quick-actions {
-    padding-left: 5px;
-
-    i {
-      color: white;
-    }
-  }
-
   td.quick-actions {
-    padding-right: 10px;
-    font-size: 13px;
+    position: relative;
   }
 
   td.linenumber, td.code {
@@ -101,7 +231,7 @@ textarea.mono-textarea {
     }
   }
 
-  tr.risk-9, tr.risk-6, tr.risk-5, tr.risk-4, tr.risk-3, tr.risk-2, tr.risk-1 {
+  tr.risk-9, tr.risk-8, tr.risk-7, tr.risk-6, tr.risk-5, tr.risk-4, tr.risk-3, tr.risk-2, tr.risk-1, tr.risk-0 {
     .code {
       color: white;
     }
@@ -111,19 +241,19 @@ textarea.mono-textarea {
     }
   }
 
-  tr.risk-6 {
+  tr.risk-7, tr.risk-8 {
     background-color: #d7252a;
   }
 
-  tr.risk-5 {
+  tr.risk-6 {
     background-color: #eb882c;
   }
 
-  tr.risk-4 {
+  tr.risk-5 {
     background-color: #d8a223;
   }
 
-  tr.risk-3 {
+  tr.risk-3, tr.risk-4 {
     background-color: #029f93;
   }
 
@@ -133,6 +263,12 @@ textarea.mono-textarea {
 
   tr.risk-1 {
     background-color: #016396;
+  }
+
+  // Risk 0 = explicitly approved / no-risk patterns. Matches the
+  // .license-0 green used elsewhere for the same semantic.
+  tr.risk-0 {
+    background-color: #1f883d;
   }
 }
 
@@ -153,14 +289,6 @@ span.diff-added {
 }
 #prev-snippet-row {
   display: none;
-}
-
-.found-pattern {
-  background-color: #dfd;
-}
-
-.found-keyword-1 {
-  background-color: #fdd !important;
 }
 
 html {
@@ -188,25 +316,56 @@ body {
 .top-buffer {
   margin-top:20px;
 }
-.back-to-top {
+.btn.back-to-top {
+  align-items: center;
   bottom: 20px;
+  box-shadow: 0 4px 12px rgba(27, 31, 36, 0.3);
   cursor: pointer;
-  display: none;
+  display: inline-flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  opacity: 0;
+  padding: 0;
+  pointer-events: none;
   position: fixed;
   right: 20px;
-  z-index: 1000;
+  transition: opacity 0.2s ease-in-out;
+  width: 40px;
+  z-index: 1040;
+}
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.file-container {
+  border: 1px solid rgb(208, 215, 222);
+  border-radius: 6px;
+  margin-top: 5px;
+  // Intentionally NOT overflow: hidden. The inline ▲/▼ extend buttons and the
+  // action pulldown menu in FileSource sit slightly outside their row's edge,
+  // and clipping them at the container boundary used to cut them in half on
+  // the first/last match rows. Inner backgrounds (.file header, .source row
+  // borders) are rounded individually so the corners still look clean.
 }
 .file {
-  background-color: #f1f8ff;
-  border: 1px solid #c8e1ff;
-  border-radius: .25rem .25rem 0 0;
+  background-color: rgb(246, 248, 250);
+  border: 0 !important;
+  border-bottom: 1px solid rgb(208, 215, 222) !important;
+  border-radius: 5px 5px 0 0;
   font-size: 13px;
   line-height: 20px;
-  margin-top: 5px;
+  margin-top: 0;
   padding: 10px;
 }
 .file a {
   color: #586069;
+}
+.file-container .source {
+  border: 0 !important;
+  border-radius: 0;
+  margin-bottom: 0;
 }
 .fineprint {
   font-size: 0.3em;
@@ -231,10 +390,6 @@ body {
   border: 2px solid #f00 !important;
 }
 
-.CodeMirror {
-  height: 100%;
-}
-
 .cavil-copy {
   font-size: 14px;
 }
@@ -257,12 +412,14 @@ body {
   margin-top: 1rem;
 }
 .pattern-file-container {
+  border: 1px solid rgb(208, 215, 222);
+  border-radius: 6px;
+  overflow: hidden;
   padding: 0;
 }
 .pattern-header {
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 1px solid rgb(208, 215, 222);
   font-size: 13px;
   line-height: 20px;
   padding: 10px;
@@ -275,9 +432,7 @@ body {
   text-decoration: underline;
 }
 .pattern-source {
-  border: 1px solid #dfe2e5 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
+  background: #fff;
   font-family: monospace;
   font-size: 12px;
   line-height: 20px;
@@ -295,9 +450,8 @@ body {
   word-break: break-all;
 }
 .pattern-footer {
-  border: 1px solid rgb(208, 215, 222);
-  border-top: 0;
-  border-radius: 0 0 0.25rem 0.25rem;
+  background-color: rgb(246, 248, 250);
+  border-top: 1px solid rgb(208, 215, 222);
   font-size: 13px;
   line-height: 20px;
   padding: 10px;

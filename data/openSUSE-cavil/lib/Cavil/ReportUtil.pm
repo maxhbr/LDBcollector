@@ -24,15 +24,38 @@ use Cavil::Licenses 'lic';
 
 our @EXPORT_OK = (
   qw(estimated_risk incompatible_licenses minimal_snippet report_checksum report_shortname),
-  qw(summary_delta summary_delta_score)
+  qw(smart_edit_snippet summary_delta summary_delta_score)
 );
 
-# For now we only watch out for GPL-2.0-only and Apache-2.0
-my $INCOMPATIBLE_LICENSE_RULES = [{licenses => ['GPL-2.0-only', 'Apache-2.0']}];
+use constant PAD_WORDS => 5;
+
+# Each rule triggers when ALL of its SPDX identifiers are present in the
+# package's digest report. The hint above each rule is a starting point for
+# further reading - the actual legal analysis is more nuanced.
+my $INCOMPATIBLE_LICENSE_RULES = [
+
+  # Apache 2.0's patent termination and indemnification clauses add
+  # restrictions that GPL-2.0-only does not permit. Resolved in GPLv3.
+  {licenses => ['GPL-2.0-only', 'Apache-2.0']},
+
+  # GPL-2.0-only forbids the "or any later version" upgrade, so v2-only code
+  # cannot be combined with v3-family code in a single work. v2-or-later is
+  # fine because it can be relicensed to v3 at distribution time.
+  {licenses => ['GPL-2.0-only', 'GPL-3.0-only']}, {licenses => ['GPL-2.0-only', 'GPL-3.0-or-later']},
+
+  # AGPL-3.0 is GPL-3.0 plus the network-use clause; same v2-only conflict
+  # as above.
+  {licenses => ['GPL-2.0-only', 'AGPL-3.0-only']}, {licenses => ['GPL-2.0-only', 'AGPL-3.0-or-later']},
+
+  # CDDL is a file-scoped weak copyleft (MPL-derived). The classic
+  # "ZFS-on-Linux" combination - FSF, SFC and most distributions treat
+  # GPL+CDDL as incompatible.
+  {licenses => ['GPL-2.0-only', 'CDDL-1.0']}, {licenses => ['GPL-2.0-only', 'CDDL-1.1']},
+];
 
 sub estimated_risk ($risk, $match) {
   my $estimated = int(($risk * $match + 9 * (1 - $match)) + 0.5);
-  return $match < 0.9 && $estimated <= 3 ? 4 : $estimated;
+  return $match < 0.9 && $estimated <= 4 ? 5 : $estimated;
 }
 
 sub incompatible_licenses ($dig_report, $rules = $INCOMPATIBLE_LICENSE_RULES) {
@@ -42,9 +65,18 @@ sub incompatible_licenses ($dig_report, $rules = $INCOMPATIBLE_LICENSE_RULES) {
   push @spdx, map { $_->{spdx} } grep { $_->{spdx} } values %{$dig_report->{licenses}  || {}};
   push @spdx, map { $_->[3] } grep    { $_->[3] } values %{$dig_report->{missed_files} || {}};
 
+  # The Classpath exception was created specifically to permit combining GPL
+  # code with code under otherwise-incompatible licenses (typically Apache-2.0
+  # Java libraries), so strip "GPL... WITH Classpath-exception-2.0" fragments
+  # before the substring match below.
+  s/\b(?:A|L)?GPL-[\d.]+(?:-only|-or-later|\+)?\s+WITH\s+Classpath-exception-2\.0\b//gi for @spdx;
+
+  # Anchor against adjacent SPDX identifier characters so that e.g.
+  # "GPL-3.0-or-later" does not match inside "AGPL-3.0-or-later", and
+  # "GPL-2.0-only" does not match inside "LGPL-2.0-only".
   my @regexes;
   for my $rule (@$rules) {
-    push @regexes, [qr/\Q$_\E/i, $_] for @{$rule->{licenses}};
+    push @regexes, [qr/(?<![\w.+-])\Q$_\E(?![\w.+-])/i, $_] for @{$rule->{licenses}};
   }
 
   my %matches;
@@ -70,10 +102,11 @@ sub incompatible_licenses ($dig_report, $rules = $INCOMPATIBLE_LICENSE_RULES) {
 }
 
 sub minimal_snippet ($snippet) {
-  my $keywords = $snippet->{keywords} // {};
-  my $matches  = $snippet->{matches}  // {};
-  return $snippet->{text} unless keys %$keywords;
-  return $snippet->{text} unless keys %$matches;
+  my $start_line = $snippet->{sline}    // 1;
+  my $keywords   = $snippet->{keywords} // {};
+  my $matches    = $snippet->{matches}  // {};
+  return {text => $snippet->{text}, start_line => $start_line} unless keys %$keywords;
+  return {text => $snippet->{text}, start_line => $start_line} unless keys %$matches;
 
   my $lines = [split("\n", $snippet->{text}, -1)];
 
@@ -89,7 +122,100 @@ sub minimal_snippet ($snippet) {
     $end = $i - 1 if $matches->{$i};
   }
 
-  return join "\n", @$lines[$start .. $end];
+  return {text => join("\n", @$lines[$start .. $end]), start_line => $start_line + $start};
+}
+
+# Anchor for the start of a copyright line. Matches optional leading whitespace
+# and common comment markers (#, *, //, ;), then one of: Copyright [optional
+# (c)/(C)/©], a bare (c)/(C)/©, or an SPDX-FileCopyrightText: /
+# SPDX-SnippetCopyrightText: prefix.
+my $COPYRIGHT_ANCHOR = qr{
+  ^
+  (                                                       # $1: prefix to preserve
+    \s* (?: [\#*/;]+ \s* )?
+    (?:
+      SPDX-(?:File|Snippet)CopyrightText:
+      | Copyright (?: \s* (?: \(c\) | \(C\) | © ) )?
+      | (?: \(c\) | \(C\) | © ) (?: \s* Copyright )?
+    )
+  )
+  \s+ \S .* $                                             # at least one word follows
+}x;
+
+# Collapse the variable part of a copyright line (holders, years, emails, URLs)
+# to $SKIP10. Returns the original line unchanged if it does not look like a
+# copyright declaration. Operates on a single line (no embedded newlines).
+sub _collapse_copyright_line ($line) {
+  return $line unless $line =~ $COPYRIGHT_ANCHOR;
+  return "$1 \$SKIP10";
+}
+
+# Auto-trim a snippet down to its legally meaningful core: strip license-match
+# lines at the boundaries (via minimal_snippet), then trim word-by-word outside
+# the keyword span, keeping at most PAD_WORDS words of padding on each side.
+# Finally, collapse the variable portion of any copyright lines in the result
+# to $SKIP10. The text is no longer a strict substring of the original, but
+# still matches the original via Cavil::Util::pattern_matches because $SKIP10
+# is a wildcard. Line count is preserved so frontend line decorations remain
+# valid.
+sub smart_edit_snippet ($snippet) {
+  my $original_text  = $snippet->{text}     // '';
+  my $original_sline = $snippet->{sline}    // 1;
+  my $keywords       = $snippet->{keywords} // {};
+
+  my $minimal       = minimal_snippet($snippet);
+  my $text          = $minimal->{text};
+  my $minimal_sline = $minimal->{start_line};
+
+  my $finalize = sub ($result_text, $start_line) {
+    my $collapsed = join "\n", map { _collapse_copyright_line($_) } split /\n/, $result_text, -1;
+    return {text => $collapsed, start_line => $start_line, changed => $collapsed eq $original_text ? 0 : 1};
+  };
+
+  return $finalize->($text, $minimal_sline) unless keys %$keywords;
+
+  # Rebase keyword line indices into the trimmed text
+  my $offset   = $minimal_sline - $original_sline;
+  my @kw_lines = sort { $a <=> $b } grep { $_ >= 0 } map { $_ - $offset } keys %$keywords;
+  return $finalize->($text, $minimal_sline) unless @kw_lines;
+
+  my @lines    = split /\n/, $text, -1;
+  my $first_kw = $kw_lines[0];
+  my $last_kw  = $kw_lines[-1];
+  return $finalize->($text, $minimal_sline) if $last_kw >= @lines;
+
+  # Byte offsets for the start of the first keyword line and the end of the
+  # last keyword line (without the trailing newline)
+  my $span_start = 0;
+  $span_start += length($lines[$_]) + 1 for 0 .. $first_kw - 1;
+  my $span_end = $span_start;
+  $span_end += length($lines[$_]) + 1 for $first_kw .. $last_kw - 1;
+  $span_end += length($lines[$last_kw]);
+
+  # Leading trim: keep at most PAD_WORDS tokens of the prefix
+  my $new_start = 0;
+  if ($span_start > 0) {
+    my $prefix = substr($text, 0, $span_start);
+    my @starts;
+    while ($prefix =~ /\S+/g) { push @starts, $-[0] }
+    if (@starts > PAD_WORDS) { $new_start = $starts[-PAD_WORDS] }
+  }
+
+  # Trailing trim: keep at most PAD_WORDS tokens of the suffix
+  my $new_end = length($text);
+  if ($span_end < $new_end) {
+    my $suffix = substr($text, $span_end);
+    my @ends;
+    while ($suffix =~ /\S+/g) { push @ends, $+[0] }
+    if (@ends > PAD_WORDS) { $new_end = $span_end + $ends[PAD_WORDS - 1] }
+  }
+
+  my $trimmed = substr($text, $new_start, $new_end - $new_start);
+
+  # Adjust start_line by the number of complete lines dropped from the front
+  my $dropped_lines = (substr($text, 0, $new_start) =~ tr/\n//);
+
+  return $finalize->($trimmed, $minimal_sline + $dropped_lines);
 }
 
 sub report_checksum ($specfile_report, $dig_report) {
@@ -109,14 +235,16 @@ sub report_checksum ($specfile_report, $dig_report) {
     $text .= "\n";
   }
 
-  # Unique snippets of unresolved keyword matches
-  if (my $snippets = $dig_report->{snippets}) {
+  # Unique snippets of unresolved keyword matches. Walk missed_snippets (the
+  # full set of winning files) rather than snippets (the expansion-truncated
+  # subset), and sort the resulting hashes so two content-equivalent
+  # packages produce the same checksum regardless of file_id ordering.
+  if (my $snippets = $dig_report->{missed_snippets}) {
     my @all;
-    for my $file (sort keys %$snippets) {
-      my $matches = $snippets->{$file};
-      push @all, $matches->{$_} for sort keys %$matches;
+    for my $file (keys %$snippets) {
+      push @all, $_->[3] for @{$snippets->{$file}};
     }
-    $text .= "SNIPPET:$_\n" for uniq @all;
+    $text .= "SNIPPET:$_\n" for sort +uniq @all;
   }
 
   # License incompatibilities
@@ -147,44 +275,45 @@ sub report_shortname ($chksum, $specfile_report, $dig_report) {
 }
 
 sub summary_delta ($old, $new) {
-  my $text = '';
+  my @blocks;
 
   # Specfile license change
   if ($new->{specfile} ne $old->{specfile}) {
-    $text .= "  Different spec file license: $old->{specfile}\n\n";
+    push @blocks, "  Spec file license  $old->{specfile} -> $new->{specfile}";
   }
 
   # New snippet matches
   my $new_snippets = _new_snippets($old, $new);
   if (my @files = sort values %$new_snippets) {
-    my $file = $files[0];
-    my $num  = uniq(@files) - 1;
-    if ($num == 0) {
-      $text .= "  Found new unresolved matches in $file\n\n";
-    }
-    elsif ($num == 1) {
-      $text .= "  Found new unresolved matches in $file and 1 other file\n\n";
+    my $first = $files[0];
+    my $num   = uniq @files;
+    if ($num == 1) {
+      push @blocks, "  New unresolved matches\n    $first";
     }
     else {
-      $text .= "  Found new unresolved matches in $file and $num other files\n\n";
+      my $more = $num - 1;
+      push @blocks, "  New unresolved matches in $num files\n    $first\n    + $more more";
     }
   }
 
-  # New licenses
+  # New licenses, sorted by risk desc then SPDX alphabetical
   my $new_licenses = _new_licenses($old, $new);
-  my @lines;
-  for my $lic (sort keys %$new_licenses) {
-    push @lines, "  Found new license $lic (risk $new_licenses->{$lic}) not present in old report";
+  if (my @lics = keys %$new_licenses) {
+    my @sorted = sort { $new_licenses->{$b} <=> $new_licenses->{$a} || $a cmp $b } @lics;
+    my $count  = scalar @sorted;
+    my @lines  = ("  New licenses ($count, by risk)");
+    push @lines,  map {"    $new_licenses->{$_}  $_"} @sorted;
+    push @blocks, join("\n", @lines);
   }
-  $text .= join("\n", @lines) . "\n\n" if @lines;
 
   # License incompatibilities
   if (my @licenses = _new_incompatibilities($old, $new)) {
     my $licenses = join(', ', @licenses);
-    $text .= "  Found new possible license incompatibility involving: $licenses\n\n";
+    push @blocks, "  Possible license incompatibility\n    $licenses";
   }
 
-  return length $text ? "Diff to closest match $old->{id}:\n\n$text" : '';
+  return '' unless @blocks;
+  return "Diff to closest match $old->{id}\n\n" . join("\n\n", @blocks) . "\n";
 }
 
 sub summary_delta_score ($old, $new) {

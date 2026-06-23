@@ -16,8 +16,8 @@
 package Cavil::Controller::License;
 use Mojo::Base 'Mojolicious::Controller', -signatures;
 
-use Algorithm::Diff qw(sdiff);
 use Cavil::Licenses qw(lic);
+use Cavil::Util     qw(spdx_link);
 
 sub create_pattern ($self) {
   my $validation = $self->validation;
@@ -28,6 +28,8 @@ sub create_pattern ($self) {
   $validation->optional('patent');
   $validation->optional('trademark');
   $validation->optional('export_restricted');
+  $validation->optional('cla');
+  $validation->optional('eula');
   return $self->reply->json_validation_error if $validation->has_error;
 
   my $pattern = $validation->param('pattern');
@@ -40,7 +42,9 @@ sub create_pattern ($self) {
     risk              => $validation->param('risk'),
     patent            => $validation->param('patent'),
     trademark         => $validation->param('trademark'),
-    export_restricted => $validation->param('export_restricted')
+    export_restricted => $validation->param('export_restricted'),
+    cla               => $validation->param('cla'),
+    eula              => $validation->param('eula')
   );
 
   if ($match->{conflict}) {
@@ -52,53 +56,45 @@ sub create_pattern ($self) {
 }
 
 sub edit_pattern ($self) {
-  my $id       = $self->stash('id');
-  my $patterns = $self->patterns;
+  my $id      = $self->stash('id');
+  my $pattern = $self->patterns->find($id);
+  return $self->reply->not_found unless $pattern;
+  $self->render(template => 'license/edit_pattern', match => $pattern);
+}
 
-  my $pattern = $patterns->find($id);
-
-  my $count = $patterns->match_count($id);
-  $pattern->{matches}  = $count->{matches};
-  $pattern->{packages} = $count->{packages};
-
-  my $result = $patterns->closest_matches($pattern->{pattern}, 2);
-  my $best   = $result->[0];
-
-  # likely perfect match
-  $best = $result->[1] if $best->{pattern} && $best->{pattern} == $id;
-
-  my $sim = $best->{match};
-  $best = $patterns->find($best->{pattern});
-
-  my $p1 = Spooky::Patterns::XS::normalize($pattern->{pattern});
-  $self->stash('diff', undef);
-  if ($best) {
-    my $p2     = Spooky::Patterns::XS::normalize($best->{pattern});
-    my @words1 = map { $_->[1] } @$p1;
-    my @words2 = map { $_->[1] } @$p2;
-    my $diff   = sdiff(\@words1, \@words2);
-
-    my $line = 1;
-    for my $row (@$diff) {
-      if ($row->[0] eq 'u' || $row->[0] eq 'c' || $row->[0] eq '-') {
-        my $w1 = shift @$p1;
-        $line = $w1->[0];
-      }
-      push(@$row, $line);
-    }
-    $self->stash('diff',       $diff);
-    $self->stash('next_best',  $best);
-    $self->stash('similarity', int($sim * 1000 + 0.5) / 10);
-  }
-  else {
-    $self->stash('next_best', undef);
-  }
-
-  return $self->_edit_pattern($pattern);
+sub match_count_json ($self) {
+  my $id    = $self->stash('id');
+  my $count = $self->param('capped') ? $self->patterns->capped_match_count($id) : $self->patterns->match_count($id);
+  $self->render(json => $count);
 }
 
 sub list ($self) {
   $self->render;
+}
+
+sub pattern_detail ($self) {
+  my $id      = $self->stash('id');
+  my $pattern = $self->patterns->find($id);
+  return $self->reply->not_found unless $pattern;
+  $self->render(json => $pattern);
+}
+
+sub show_meta ($self) {
+  my $name = $self->stash('name');
+  $name = '' if $name eq '*Pattern without license*';
+  my $patterns = $self->patterns->for_license($name);
+  return $self->reply->not_found unless @$patterns;
+  my $spdx = $patterns->[0]{spdx} // '';
+  $self->render(
+    json => {
+      license         => $name,
+      display_license => $name eq '' ? '*Pattern without license*' : $name,
+      spdx            => $spdx,
+      spdx_html       => spdx_link($spdx),
+      patterns        => $patterns,
+      can_admin       => $self->current_user_has_role('admin') ? \1 : \0
+    }
+  );
 }
 
 sub missing ($self) {
@@ -111,13 +107,28 @@ sub new_pattern ($self) {
   return $self->reply->json_validation_error if $validation->has_error;
 
   my $lname = $validation->param('license-name');
-  $self->stash('diff',      undef);
-  $self->stash('next_best', 0);
-  return $self->_edit_pattern({license => $lname});
+  $self->render(
+    template => 'license/edit_pattern',
+    match    => {
+      license           => $lname,
+      pattern           => '',
+      risk              => 0,
+      patent            => 0,
+      trademark         => 0,
+      export_restricted => 0,
+      cla               => 0,
+      eula              => 0,
+      packname          => ''
+    }
+  );
 }
 
 sub proposed ($self) {
   $self->render('license/proposed_patterns');
+}
+
+sub proposal_stats ($self) {
+  $self->render(json => $self->patterns->proposal_stats);
 }
 
 sub proposed_meta ($self) {
@@ -159,7 +170,6 @@ sub recent_meta ($self) {
 sub remove_pattern ($self) {
   my $id       = $self->stash('id');
   my $patterns = $self->patterns;
-  my $pattern  = $patterns->find($id);
   $self->packages->reindex_matched_packages($id);
   $patterns->expire_cache;
   $patterns->remove($id);
@@ -174,14 +184,14 @@ sub remove_proposal ($self) {
   my $is_owner = $patterns->is_proposal_owner($checksum, $self->current_user);
   return $self->render('permissions', status => 403) unless $is_owner || $is_admin;
 
-  my $rows = $patterns->remove_proposal($checksum);
-  $self->render(json => {removed => $rows});
+  my $removed = $patterns->remove_proposal($checksum);
+  $self->render(json => {removed => $removed ? 1 : 0});
 }
 
 sub show ($self) {
   my $name = $self->stash('name');
   $name = '' if $name eq '*Pattern without license*';
-  $self->render(license => $name, patterns => $self->patterns->for_license($name));
+  $self->render(license => $name);
 }
 
 sub update_pattern ($self) {
@@ -193,6 +203,8 @@ sub update_pattern ($self) {
   $validation->optional('patent');
   $validation->optional('trademark');
   $validation->optional('export_restricted');
+  $validation->optional('cla');
+  $validation->optional('eula');
   return $self->reply->json_validation_error if $validation->has_error;
 
   my $id       = $self->stash('id');
@@ -209,6 +221,8 @@ sub update_pattern ($self) {
     patent            => $validation->param('patent'),
     trademark         => $validation->param('trademark'),
     export_restricted => $validation->param('export_restricted'),
+    cla               => $validation->param('cla'),
+    eula              => $validation->param('eula'),
     risk              => $validation->param('risk'),
     owner             => $owner_id
   );
@@ -220,6 +234,45 @@ sub update_pattern ($self) {
   $self->packages->mark_matched_for_reindex($id);
   $self->flash(success => 'Pattern has been updated, reindexing all affected packages.');
   $self->redirect_to('edit_pattern', id => $id);
+}
+
+sub update_pattern_json ($self) {
+  my $validation = $self->validation;
+  $validation->required('pattern');
+  $validation->optional('license');
+  $validation->optional('packname');
+  $validation->optional('risk')->num;
+  $validation->optional('patent');
+  $validation->optional('trademark');
+  $validation->optional('export_restricted');
+  $validation->optional('cla');
+  $validation->optional('eula');
+  return $self->reply->json_validation_error if $validation->has_error;
+
+  my $id       = $self->stash('id');
+  my $patterns = $self->patterns;
+  my $pattern  = $validation->param('pattern');
+  my $owner_id = $self->users->id_for_login($self->current_user);
+
+  my $result = $patterns->update(
+    $id,
+    packname          => $validation->param('packname'),
+    pattern           => $pattern,
+    license           => $validation->param('license'),
+    patent            => $validation->param('patent'),
+    trademark         => $validation->param('trademark'),
+    export_restricted => $validation->param('export_restricted'),
+    cla               => $validation->param('cla'),
+    eula              => $validation->param('eula'),
+    risk              => $validation->param('risk'),
+    owner             => $owner_id
+  );
+  return $self->render(json => {error => 'Conflicting license pattern already exists.'}, status => 409)
+    if $result->{conflict};
+
+  $patterns->expire_cache;
+  $self->packages->mark_matched_for_reindex($id);
+  $self->render(json => {updated => 1});
 }
 
 sub update_patterns ($self) {
@@ -244,8 +297,24 @@ sub update_patterns ($self) {
   $self->redirect_to('license_show', name => $license);
 }
 
-sub _edit_pattern ($self, $match) {
-  $self->render(template => 'license/edit_pattern', match => $match);
+sub update_patterns_json ($self) {
+  my $validation = $self->validation;
+  $validation->required('license');
+  $validation->optional('spdx');
+  return $self->reply->json_validation_error if $validation->has_error;
+
+  my $license = $validation->param('license');
+  my $spdx    = $validation->param('spdx') // '';
+  return $self->render(
+    json => {
+      error =>
+        qq{"$spdx" is not a valid SPDX expression. Use a "LicenseRef-*" prefix for licenses not yet part of the spec.}
+    },
+    status => 400
+  ) unless $spdx eq '' || lic($spdx)->is_valid_expression;
+
+  my $rows = $self->pg->db->query('UPDATE license_patterns SET spdx = ? WHERE license = ?', $spdx, $license)->rows;
+  $self->render(json => {updated => $rows, spdx => $spdx, spdx_html => spdx_link($spdx)});
 }
 
 1;

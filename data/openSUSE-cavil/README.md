@@ -7,10 +7,10 @@
 
 ## Features
 
-* Source code legal review system for RPMs, DEBs, Tarballs, Kiwi images, Docker images, and Helm charts
+* Source code legal review system for RPMs, DEBs, Tarballs and various other package formats
 * High performance source code scanner with support for recursively decompressing almost any archive format
 * 28.000 curated patterns for 2000 license combinations with 500 distinct SPDX expressions
-* Software Bill of Materials (SBOM) support with SPDX 2.2 reports
+* Software Bill of Materials (SBOM) support with SPDX 2.3 reports
 * Legal risk assessments by lawyers for every pattern match
 * Human reviews with approval/rejection workflow, and optional automatic approvals based on risk
 * Optional support for machine learning models to classify pattern matches
@@ -44,7 +44,30 @@ It is strongly recommended to combine Cavil with a machine learning model for te
 matching system used for identifying clusters of legal keywords (snippets) has a false-positive rate of about 80%. Even
 a simple model can identify almost all of them.
 
-There are currently two example implementations for a companion server application (usually running on port 5000):
+The [openSUSE HuggingFace org](https://huggingface.co/openSUSE) has a collection of models fine-tuned specifically for
+this task, such as `Cavil-Qwen3.5-4B`.
+
+### Llama.cpp
+
+The recommended deployment method for these models is a [llama.cpp](https://github.com/ggml-org/llama.cpp) server.
+
+```
+$ llama-server Cavil-Qwen3.5-4B.f16.gguf --host localhost --port 5000 --api-key TOKEN
+```
+
+Just start the server and add a `classifier` section like this to your `cavil.conf`.
+
+```
+classifier => {
+  type  => 'llama_cpp',
+  url   => 'http://localhost:5000',
+  token => 'TOKEN'
+}
+```
+
+### Legacy
+
+Alternatively there are also two implementations for our legacy classifier API:
 
 1. https://github.com/kraih/Character-level-cnn-pytorch/
 2. https://github.com/kraih/llm-lawyer
@@ -52,15 +75,15 @@ There are currently two example implementations for a companion server applicati
 ## Getting Started
 
   The easiest way to get started with Cavil is the included staging scripts for setting up a quick development
-  environment. All you need is an empty PostgreSQL database (with the `pgcrypto` extension activated) and the following
-  dependencies:
+  environment. All you need is an empty PostgreSQL database (with the `pgcrypto` and `pg_trgm` extensions
+  activated) and the following dependencies:
 
     $ sudo zypper in -C postgresql-server postgresql-contrib 'rubygem(sass)'
     $ sudo zypper in -C perl-Mojolicious perl-Mojolicious-Plugin-Webpack \
       perl-Mojo-Pg perl-Minion perl-File-Unpack perl-Cpanel-JSON-XS \
       perl-Spooky-Patterns-XS perl-Mojolicious-Plugin-OAuth2 perl-Mojo-JWT \
       perl-BSD-Resource perl-Term-ProgressBar perl-Text-Glob perl-IPC-Run \
-      perl-Try-Tiny perl-MCP git git-lfs
+      perl-Try-Tiny perl-MCP perl-CommonMark git git-lfs
     $ npm i
     $ npm run build
 

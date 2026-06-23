@@ -36,6 +36,27 @@ $t->app->patterns->create(pattern => 'SPDX-License-Identifier: Apache-2.0',   li
 $t->app->patterns->create(pattern => 'SPDX-License-Identifier: GPL-2.0-only', license => 'GPL-2.0-only');
 $t->app->pg->db->query('UPDATE license_patterns SET spdx = $1 WHERE license = $1', $_) for qw(Apache-2.0 GPL-2.0-only);
 
+# Add licenses for prediction
+$t->app->patterns->create(pattern => 'SPDX-License-Identifier: LGPL-2.1-or-later', license => 'LGPL-2.1-or-later');
+$t->app->patterns->create(pattern => 'SPDX-License-Identifier: MPL-2.0-only',      license => 'MPL-2.0-only');
+$t->app->patterns->create(pattern => 'SPDX-License-Identifier: MPL-2.0-or-later',  license => 'MPL-2.0-or-later');
+$t->app->patterns->create(
+  pattern => 'SPDX-License-Identifier: MIT AND LGPL-2.1-or-later',
+  license => 'MIT AND LGPL-2.1-or-later'
+);
+$t->app->patterns->create(
+  pattern => 'SPDX-License-Identifier: MIT AND MPL-2.0-only',
+  license => 'MIT AND MPL-2.0-only'
+);
+$t->app->patterns->create(
+  pattern => 'SPDX-License-Identifier: MIT AND MPL-2.0-or-later',
+  license => 'MIT AND MPL-2.0-or-later'
+);
+$t->app->patterns->create(
+  pattern => 'SPDX-License-Identifier: GPL-2.0-only WITH Classpath-exception-2.0',
+  license => 'GPL-2.0-only WITH Classpath-exception-2.0'
+);
+
 # Add files with incompatible licenses
 my $pkg = $t->app->packages->find(1);
 my $dir = path($cavil_test->checkout_dir, $pkg->{name}, $pkg->{checkout_dir});
@@ -62,16 +83,55 @@ subtest 'API keys' => sub {
       ->json_is('/keys/0/id'    => 1)
       ->json_is('/keys/0/owner' => 2)
       ->json_like('/keys/0/api_key' => qr/^[a-f0-9\-]{20,}$/i)
-      ->json_is('/keys/0/description'  => 'Test key')
-      ->json_is('/keys/0/write_access' => 0)
+      ->json_is('/keys/0/description'          => 'Test key')
+      ->json_is('/keys/0/write_access'         => 0)
+      ->json_is('/keys/0/can_finalize_reviews' => 0)
       ->json_has('/keys/0/expires_epoch');
     $key = $t->tx->res->json('/keys/0/api_key');
 
     $t->get_ok('/logout')->status_is(302)->header_is(Location => '/');
   };
 
+  subtest 'can_finalize_reviews flag respects type and explicit opt-in' => sub {
+    $t->get_ok('/login')->status_is(302);
+
+    # Read-only key with the flag asserted true: flag must be coerced off.
+    $t->post_ok('/api_keys' => form =>
+        {expires => $expires, type => 'read-only', description => 'RO with flag attempt', can_finalize_reviews => '1'})
+      ->status_is(200);
+
+    # Read-write key without the flag: default off.
+    $t->post_ok('/api_keys' => form => {expires => $expires, type => 'read-write', description => 'RW default'})
+      ->status_is(200);
+
+    # Read-write key with the explicit opt-in: flag on.
+    $t->post_ok('/api_keys' => form =>
+        {expires => $expires, type => 'read-write', description => 'RW with finalize', can_finalize_reviews => '1'})
+      ->status_is(200);
+
+    $t->get_ok('/api_keys/meta')->status_is(200);
+    my $keys    = $t->tx->res->json('/keys');
+    my %by_desc = map { $_->{description} => $_ } @$keys;
+    is $by_desc{'RO with flag attempt'}{can_finalize_reviews}, 0, 'read-only ignores opt-in';
+    is $by_desc{'RO with flag attempt'}{write_access},         0, 'still read-only';
+    is $by_desc{'RW default'}{can_finalize_reviews},           0, 'read-write defaults off';
+    is $by_desc{'RW default'}{write_access},                   1, 'is read-write';
+    is $by_desc{'RW with finalize'}{can_finalize_reviews},     1, 'opt-in respected';
+
+    # Cleanup so other subtests still see a known key set.
+    for my $k (@$keys) {
+      next if $k->{description} eq 'Test key';
+      $t->delete_ok("/api_keys/$k->{id}")->status_is(200);
+    }
+
+    $t->get_ok('/logout')->status_is(302);
+  };
+
   subtest 'Access API without key' => sub {
     $t->get_ok('/api/v1/whoami')
+      ->status_is(403)
+      ->json_is('/error' => 'It appears you have insufficient permissions for accessing this resource');
+    $t->get_ok('/api/v1/reports')
       ->status_is(403)
       ->json_is('/error' => 'It appears you have insufficient permissions for accessing this resource');
     $t->get_ok('/api/v1/report/1.json')
@@ -81,6 +141,9 @@ subtest 'API keys' => sub {
       ->status_is(403)
       ->json_is('/error' => 'It appears you have insufficient permissions for accessing this resource');
     $t->get_ok('/api/v1/report/1.mcp')
+      ->status_is(403)
+      ->json_is('/error' => 'It appears you have insufficient permissions for accessing this resource');
+    $t->get_ok('/api/v1/spdx/1')
       ->status_is(403)
       ->json_is('/error' => 'It appears you have insufficient permissions for accessing this resource');
   };
@@ -113,7 +176,73 @@ subtest 'API keys' => sub {
       ->content_like(qr/Package:.+perl-Mojolicious/)
       ->content_like(qr/Checkout:.+c7cfdab0e71b0bebfdf8b2dc3badfecd/)
       ->content_like(qr/Apache-2.0:.+3 files/)
-      ->content_like(qr/LICENSE.+Snippet: 2.+Hash: 3c/);
+      ->content_like(qr/LICENSE.+Line: \d+.+Snippet: 2/);
+  };
+
+  subtest 'Access SPDX with API key' => sub {
+    $t->get_ok('/api/v1/spdx/1' => {Authorization => "Bearer $key"})
+      ->status_is(408)
+      ->content_like(qr/Your SPDX report is being generated/)
+      ->content_unlike(qr/<nav>/);
+    $t->get_ok('/api/v1/spdx/1' => {Authorization => "Bearer $key"})
+      ->status_is(408)
+      ->content_like(qr/Your SPDX report is being generated/)
+      ->content_unlike(qr/<nav>/);
+    $t->app->minion->perform_jobs;
+    $t->get_ok('/api/v1/spdx/1' => {Authorization => "Bearer $key"})
+      ->status_is(200)
+      ->content_like(qr/SPDXVersion: SPDX-2.3/);
+  };
+
+  subtest 'List reports by external link' => sub {
+    subtest 'Find by open request link' => sub {
+      $t->post_ok(
+        '/requests' => {Authorization => 'Token test_token'} => form => {external_link => 'obs#123', package => 2})
+        ->status_is(200)
+        ->json_is('/created', 'obs#123');
+      $t->post_ok(
+        '/requests' => {Authorization => 'Token test_token'} => form => {external_link => 'obs#123', package => 1})
+        ->status_is(200)
+        ->json_is('/created', 'obs#123');
+      $t->get_ok('/api/v1/reports' => {Authorization => "Bearer $key"} => form => {external_link => 'obs#123'})
+        ->status_is(200)
+        ->json_is('/reports/0/id', 1)
+        ->json_is('/reports/1/id', 2)
+        ->json_hasnt('/reports/2');
+      $t->delete_ok('/requests' => {Authorization => 'Token test_token'} => form => {external_link => 'obs#123'})
+        ->status_is(200);
+    };
+
+    subtest 'Find by package link' => sub {
+      subtest 'Not obsolete' => sub {
+        $t->app->pg->db->query('UPDATE bot_packages SET obsolete = false WHERE id = 1');
+        $t->get_ok('/api/v1/reports' => {Authorization => "Bearer $key"} => form => {external_link => 'mojo#1'})
+          ->status_is(200)
+          ->json_is('/reports/0/id', 1)
+          ->json_hasnt('/reports/1');
+      };
+
+      subtest 'Obsolete' => sub {
+        $t->app->pg->db->query('UPDATE bot_packages SET obsolete = true WHERE id = 1');
+        $t->get_ok('/api/v1/reports' => {Authorization => "Bearer $key"} => form => {external_link => 'mojo#1'})
+          ->status_is(200)
+          ->json_hasnt('/reports/0');
+        $t->app->pg->db->query('UPDATE bot_packages SET obsolete = false WHERE id = 1');
+      };
+    };
+
+    subtest 'Find by mixed links' => sub {
+      $t->post_ok(
+        '/requests' => {Authorization => 'Token test_token'} => form => {external_link => 'mojo#1', package => 1})
+        ->status_is(200)
+        ->json_is('/created', 'mojo#1');
+      $t->get_ok('/api/v1/reports' => {Authorization => "Bearer $key"} => form => {external_link => 'mojo#1'})
+        ->status_is(200)
+        ->json_is('/reports/0/id', 1)
+        ->json_hasnt('/reports/1');
+      $t->delete_ok('/requests' => {Authorization => 'Token test_token'} => form => {external_link => 'mojo#1'})
+        ->status_is(200);
+    };
   };
 
   subtest 'API keys from multiple users' => sub {
@@ -165,6 +294,93 @@ subtest 'API keys' => sub {
     $t->delete_ok('/api_keys/2')->status_is(200)->json_is('/removed' => 0);
     $t->get_ok('/logout')->status_is(302)->header_is(Location => '/');
   }
+};
+
+subtest 'License prediction' => sub {
+  subtest 'Exact matches' => sub {
+    my $exact = $t->app->patterns->closest_licenses('GPL-2.0-only');
+    is $exact->{exact}{license}, 'GPL-2.0-only', 'exact identifier match returns -only license';
+
+    $exact = $t->app->patterns->closest_licenses('LGPL-2.1-or-later');
+    is $exact->{exact}{license}, 'LGPL-2.1-or-later', 'exact identifier match returns -or-later license';
+
+    $exact = $t->app->patterns->closest_licenses('MPL-2.0+');
+    is $exact->{exact}{license}, 'MPL-2.0-or-later', '"+" is treated as the SPDX "-or-later" suffix';
+
+    $exact = $t->app->patterns->closest_licenses('  mit AND   mpl-2.0-only ');
+    is $exact->{exact}{license}, 'MIT AND MPL-2.0-only', 'case and whitespace differences still match exactly';
+  };
+
+  subtest 'Close matches' => sub {
+    my $matches = $t->app->patterns->closest_licenses('MIT LGPL-2.1');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}], ['MIT AND LGPL-2.1-or-later', 'LGPL-2.1-or-later'],
+      'ranks the compound expression above the bare identifier';
+
+    $matches = $t->app->patterns->closest_licenses('mit lgpl-2.1-or-later');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}],
+      ['MIT AND LGPL-2.1-or-later', 'LGPL-2.1-or-later', 'MIT AND MPL-2.0-or-later', 'MPL-2.0-or-later'],
+      'case-insensitive ranking by trigram similarity';
+
+    $matches = $t->app->patterns->closest_licenses('GPL-2.0 Classpath-exception-2.0');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}], ['GPL-2.0-only WITH Classpath-exception-2.0'],
+      'ranks the matching WITH-exception license first';
+
+    $matches = $t->app->patterns->closest_licenses('MPL-2.0');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}],
+      ['MPL-2.0-only', 'MPL-2.0-or-later', 'MIT AND MPL-2.0-only', 'MIT AND MPL-2.0-or-later', 'GPL-2.0-only'],
+      'closest standalone identifier ranks ahead of compound expressions';
+
+    $matches = $t->app->patterns->closest_licenses('LicenseRef-MPL-2');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}],
+      ['MPL-2.0-only', 'MPL-2.0-or-later', 'MIT AND MPL-2.0-only'], 'LicenseRef- prefix is stripped before ranking';
+
+    $matches = $t->app->patterns->closest_licenses('MPL-2-or-later');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}],
+      ['MPL-2.0-or-later', 'MIT AND MPL-2.0-or-later', 'LGPL-2.1-or-later', 'MIT AND LGPL-2.1-or-later',
+      'MPL-2.0-only'], 'ranks the matching -or-later identifier first';
+
+    $matches = $t->app->patterns->closest_licenses('MPL-2+');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}],
+      ['MPL-2.0-or-later', 'MIT AND MPL-2.0-or-later', 'LGPL-2.1-or-later', 'MIT AND LGPL-2.1-or-later',
+      'MPL-2.0-only'], '"+" normalizes to "-or-later" and ranks identically to MPL-2-or-later';
+
+    $matches = $t->app->patterns->closest_licenses('MPL-2-only');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}],
+      ['MPL-2.0-only', 'MIT AND MPL-2.0-only', 'GPL-2.0-only', 'MPL-2.0-or-later'],
+      'ranks the matching -only identifier first';
+
+    $matches = $t->app->patterns->closest_licenses('mpl');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}], ['MPL-2.0-only'],
+      'a short fragment only matches the closest identifier above threshold';
+
+    $matches = $t->app->patterns->closest_licenses('MIT OR MPL-2.0');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}],
+      [
+      'MIT AND MPL-2.0-or-later',
+      'MPL-2.0-or-later',
+      'MIT AND MPL-2.0-only',
+      'MPL-2.0-only',
+      'MIT AND LGPL-2.1-or-later'
+      ],
+      'suggests the closest known expressions for an unknown OR expression';
+
+    $matches = $t->app->patterns->closest_licenses('MIT AND MPL-2.0');
+    is_deeply [map { $_->{license} } @{$matches->{closest}}],
+      [
+      'MIT AND MPL-2.0-only',
+      'MIT AND MPL-2.0-or-later',
+      'MPL-2.0-only',
+      'MIT AND LGPL-2.1-or-later',
+      'MPL-2.0-or-later'
+      ],
+      'suggests the closest known expressions for an unknown AND expression';
+  };
+
+  subtest 'No matches' => sub {
+    my $matches = $t->app->patterns->closest_licenses('BSD-2-Clause');
+    ok !$matches->{exact}, 'unknown expression has no exact match';
+    is_deeply $matches->{closest}, [], 'unknown expression has no close matches';
+  };
 };
 
 done_testing;

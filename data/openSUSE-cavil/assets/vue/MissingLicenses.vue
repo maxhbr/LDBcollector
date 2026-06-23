@@ -1,97 +1,109 @@
 <template>
   <div>
     <div class="row mt-3">
-      <div class="col-12 alert alert-primary" role="alert">
+      <cavil-notice-panel intro class="col-12">
         These are snippets with possibly missing licenses or license combinations that have been flagged by contributors
         for risk assessment.
-      </div>
+      </cavil-notice-panel>
     </div>
     <div v-if="changes !== null && changes.length > 0">
-      <div v-for="change in changes" :key="change.id" class="row change-container">
-        <div v-if="change.state === 'proposed'" class="col-12 change-file-container">
-          <div class="change-header">
-            <span v-if="change.action === 'missing_license'">
-              Missing license reported by <b>{{ change.login }}</b>
-              <span v-if="change.package !== null"
-                >,
-                <a :href="change.package.pkgUrl" target="_blank"
-                  >for <b>{{ change.package.name }}</b></a
+      <transition-group name="row" tag="div" @before-leave="onBeforeLeave" @leave="onLeave">
+        <div v-for="change in changes" :key="change.id" class="row change-container">
+          <div v-if="change.state === 'proposed'" class="col-12 change-file-container">
+            <div class="change-header">
+              <div class="change-title">
+                <span v-if="change.action === 'missing_license'">
+                  Missing license reported by <b>{{ change.login }}</b>
+                  <span class="cavil-meta-badges change-meta-badges">
+                    <span class="cavil-meta-badge cavil-meta-badge-danger">missing license</span>
+                    <a :href="change.editUrl" target="_blank" class="cavil-meta-badge cavil-meta-badge-muted">
+                      snippet
+                    </a>
+                    <a
+                      v-if="change.package !== null"
+                      :href="change.package.pkgUrl"
+                      target="_blank"
+                      class="cavil-meta-badge cavil-meta-badge-muted"
+                    >
+                      {{ change.package.name }}
+                    </a>
+                  </span>
+                </span>
+              </div>
+              <div v-if="currentUser === change.login" class="change-actions">
+                <button
+                  @click="dismissProposal(change)"
+                  type="button"
+                  class="cavil-icon-action cavil-icon-action-danger"
+                  title="Dismiss proposal"
+                  aria-label="Dismiss proposal"
                 >
-              </span>
-            </span>
-            <span v-if="currentUser === change.login" class="float-end">
-              <a @click="dismissProposal(change)" href="#"><i class="fa-solid fa-xmark"></i></a>
-            </span>
-          </div>
-          <div class="change-source">
-            <table>
-              <tbody>
-                <tr v-for="line in change.lines" :key="line.num">
-                  <td class="linenumber">{{ line.num }}</td>
-                  <td :class="getClassForLine(line)">{{ line.text }}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="change-form">
-            <span v-if="hasAdminRole">
-              <a class="btn btn-primary mb-2" :href="change.editUrl" target="_blank" role="button">Edit Pattern</a>
-              &nbsp;
-              <button @click="dismissProposal(change)" class="btn btn-danger btn-sm mb-2">Dismiss</button>
-            </span>
-          </div>
-          <div class="change-footer">
-            <div v-if="change.closest !== null">
-              <a :href="change.closest.licenseUrl" target="_blank">
-                <b>{{ change.closest.similarity }}%</b> similarity to
-                <b>{{ change.closest.license_name === '' ? 'Keyword Pattern' : change.closest.license_name }}</b
-                >, estimated risk
-                {{ change.closest.risk }}
-              </a>
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
             </div>
-            <div v-else>No similarity to any known licenses</div>
+            <div class="change-source">
+              <table>
+                <tbody>
+                  <tr v-for="line in change.lines" :key="line.num">
+                    <td class="linenumber">{{ line.num }}</td>
+                    <td :class="getClassForLine(line)">{{ line.text }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="change-form">
+              <span v-if="hasAdminRole">
+                <a class="btn btn-primary mb-2" :href="change.editUrl" target="_blank" role="button">Edit Pattern</a>
+                &nbsp;
+                <button @click="dismissProposal(change)" class="btn btn-danger btn-sm mb-2">Dismiss</button>
+              </span>
+            </div>
+            <div class="change-footer">
+              <div v-if="change.closest !== null">
+                <a :href="change.closest.licenseUrl" target="_blank">
+                  <b>{{ change.closest.similarity }}%</b> similarity to
+                  <b>{{ change.closest.license_name === '' ? 'Keyword Pattern' : change.closest.license_name }}</b
+                  >, estimated risk
+                  {{ change.closest.risk }}
+                </a>
+              </div>
+              <div v-else>No similarity to any known licenses</div>
+            </div>
+          </div>
+          <div v-else-if="change.state === 'updating'" class="col-12">
+            <div class="change-confirmation"><i class="fa-solid fa-rotate fa-spin"></i> Updating proposal</div>
           </div>
         </div>
-        <div v-else-if="change.state === 'updating'" class="col-12">
-          <div class="change-confirmation"><i class="fa-solid fa-rotate fa-spin"></i> Updating proposal</div>
-        </div>
-        <div v-else-if="change.state === 'accepted'" class="col-12">
-          <div class="change-confirmation">
-            Change has been accepted, reindexing related packages in 10 minutes if necessary
-          </div>
-        </div>
-        <div v-else-if="change.state === 'dismissed'" class="col-12">
-          <div class="change-confirmation">Proposal has been dismissed</div>
-        </div>
+      </transition-group>
+      <div v-if="loadingMore" class="text-center text-muted my-3">
+        <i class="fa-solid fa-rotate fa-spin"></i> Loading more missing licenses
       </div>
-      <a
-        id="back-to-top"
-        href="#"
-        class="btn btn-primary btn-lg back-to-top"
-        role="button"
-        title="Click to return to the top"
-        data-bs-toggle="tooltip"
-        data-placement="left"
-        ><i class="fa-solid fa-angle-up"></i
-      ></a>
+      <BackToTop />
     </div>
     <div v-else-if="changes === null"><i class="fa-solid fa-rotate fa-spin"></i> Loading missing licenses</div>
     <div v-else>There are currently no missing licenses.</div>
+    <ToastNotifier ref="toaster" />
   </div>
 </template>
 
 <script>
+import BackToTop from './components/BackToTop.vue';
+import CavilNoticePanel from './components/CavilNoticePanel.vue';
+import ToastNotifier from './components/ToastNotifier.vue';
 import UserAgent from '@mojojs/user-agent';
 
 export default {
   name: 'MissingLicenses',
+  components: {BackToTop, CavilNoticePanel, ToastNotifier},
   data() {
     return {
       ignoreForPackage: true,
       params: {before: 0},
       changes: null,
       changeUrl: '/licenses/proposed/meta?action=missing_license',
-      total: null
+      total: null,
+      loadingMore: false
     };
   },
   mounted() {
@@ -149,14 +161,37 @@ export default {
         this.loadMore();
       }
     },
-    loadMore() {
-      this.getChanges();
+    async loadMore() {
+      if (this.loadingMore) return;
+      if (this.changes !== null && this.total !== null && this.changes.length >= this.total) return;
+      this.loadingMore = true;
+      try {
+        await this.getChanges();
+      } finally {
+        this.loadingMore = false;
+      }
     },
     async dismissProposal(change) {
       change.state = 'updating';
       const ua = new UserAgent({baseURL: window.location.href});
       await ua.post(change.removeUrl);
-      change.state = 'dismissed';
+      this.removeChange(change);
+      this.$refs.toaster?.notify('Proposal dismissed', 'danger');
+    },
+    removeChange(change) {
+      const i = this.changes.indexOf(change);
+      if (i !== -1) this.changes.splice(i, 1);
+    },
+    onBeforeLeave(el) {
+      el.style.maxHeight = el.scrollHeight + 'px';
+      el.style.overflow = 'hidden';
+    },
+    onLeave(el) {
+      void el.offsetHeight;
+      el.style.maxHeight = '0';
+      el.style.marginTop = '0';
+      el.style.marginBottom = '0';
+      el.style.opacity = '0';
     }
   }
 };
@@ -175,13 +210,43 @@ export default {
   margin-bottom: 4rem;
   margin-top: 1rem;
 }
+.row-leave-active {
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    margin 0.35s ease;
+}
+.row-move {
+  transition: transform 0.3s ease;
+}
 .change-header {
+  align-items: center;
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 1px solid rgb(208, 215, 222);
+  display: flex;
   font-size: 13px;
+  gap: 0.75rem;
+  justify-content: space-between;
   line-height: 20px;
   padding: 10px;
+}
+.change-title {
+  min-width: 0;
+}
+.change-title > span {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.change-meta-badges {
+  margin-left: 0.25rem;
+}
+.change-actions {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.4rem;
 }
 .change-header a,
 .change-file a,
@@ -195,26 +260,26 @@ export default {
   text-decoration: underline;
 }
 .change-file-container {
+  border: 1px solid rgb(208, 215, 222);
+  border-radius: 6px;
+  overflow: hidden;
   padding: 0;
 }
 .change-form {
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-bottom: 0;
+  border-top: 1px solid rgb(208, 215, 222);
   padding: 10px;
 }
 .change-footer {
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0 0.25rem 0.25rem;
+  border-top: 1px solid rgb(208, 215, 222);
   font-size: 13px;
   line-height: 20px;
   padding: 10px;
 }
 .change-source {
-  border: 1px solid #dfe2e5 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
+  background: #fff;
+  overflow: auto;
 }
 .change-source td.linenumber,
 .change-source td.code {
@@ -227,7 +292,8 @@ export default {
   border: 0 !important;
 }
 .change-source td.code {
-  padding-left: 0.5em;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   color: #24292e;
   margin-left: 0.5em;
   white-space: -moz-pre-wrap;

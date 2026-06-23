@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="row mt-3">
-      <div class="col-12 alert alert-primary" role="alert">
+      <cavil-notice-panel intro class="col-12">
         These are license pattern changes proposed by contributors. New patterns are guaranted to match the snippet they
         were created for, and can only use an existing license and risk combination.
-      </div>
+      </cavil-notice-panel>
     </div>
     <div class="row g-4">
       <div class="col-9">
@@ -38,164 +38,197 @@
       </div>
     </div>
     <div v-if="changes !== null && changes.length > 0">
-      <div v-for="change in changes" :key="change.id" class="row change-container">
-        <div v-if="change.state === 'proposed'" class="col-12 change-file-container">
-          <div class="change-header">
-            <span v-if="change.action === 'create_pattern'">
-              Create license pattern from
-              <a :href="change.editUrl" target="_blank">
-                <b v-if="change.data.edited === true">edited snippet</b>
-                <b v-else>unedited snippet</b> </a
-              >, by <b>{{ change.login }}</b>
-              <span v-if="change.package !== null"
-                >,
-                <a :href="change.package.pkgUrl" target="_blank"
-                  >for <b>{{ change.package.name }}</b></a
+      <transition-group name="row" tag="div" @before-leave="onBeforeLeave" @leave="onLeave">
+        <div v-for="change in changes" :key="change.id" class="row change-container">
+          <div v-if="change.state === 'proposed'" class="col-12 change-file-container">
+            <div class="change-header">
+              <div class="change-title">
+                <span v-if="change.action === 'create_pattern'">
+                  Proposed by <b>{{ change.login }}</b>
+                  <span class="cavil-meta-badges change-meta-badges">
+                    <span class="cavil-meta-badge cavil-meta-badge-info">license pattern</span>
+                    <a :href="change.editUrl" target="_blank" class="cavil-meta-badge cavil-meta-badge-muted">
+                      {{ change.data.edited === true ? 'edited snippet' : 'unedited snippet' }}
+                    </a>
+                    <span v-if="change.data.ai_assisted" class="cavil-meta-badge cavil-meta-badge-info">
+                      <i class="fa-solid fa-robot"></i> AI assisted
+                    </span>
+                    <a
+                      v-if="change.package !== null"
+                      :href="change.package.pkgUrl"
+                      target="_blank"
+                      class="cavil-meta-badge cavil-meta-badge-muted"
+                    >
+                      {{ change.package.name }}
+                    </a>
+                  </span>
+                </span>
+                <span v-else-if="change.action === 'create_ignore'">
+                  Proposed by <b>{{ change.login }}</b>
+                  <span class="cavil-meta-badges change-meta-badges">
+                    <span class="cavil-meta-badge cavil-meta-badge-warning">ignore pattern</span>
+                    <a :href="change.editUrl" target="_blank" class="cavil-meta-badge cavil-meta-badge-muted">
+                      snippet
+                    </a>
+                    <span v-if="change.data.ai_assisted" class="cavil-meta-badge cavil-meta-badge-info">
+                      <i class="fa-solid fa-robot"></i> AI assisted
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div v-if="currentUser === change.login" class="change-actions">
+                <button
+                  @click="rejectProposal(change)"
+                  type="button"
+                  class="cavil-icon-action cavil-icon-action-danger"
+                  title="Reject proposal"
+                  aria-label="Reject proposal"
                 >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+            <div class="change-source">
+              <table :class="getClassForCode(change)">
+                <tbody>
+                  <tr v-for="line in change.lines" :key="line.num">
+                    <td class="linenumber">{{ line.num }}</td>
+                    <td :class="getClassForLine(line)">{{ line.text }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="change-form">
+              <div v-if="change.action === 'create_pattern'">
+                <div class="row">
+                  <div class="col mb-3">
+                    <label class="fomr-label" for="license">License</label>
+                    <input v-model="change.data.license" type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2 mb-3">
+                    <div class="form-floating">
+                      <select v-model="change.data.risk" class="form-control">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                      </select>
+                      <label for="risk" class="form-label">Risk</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-check">
+                      <input v-model="change.data.patent" type="checkbox" class="form-check-input" />
+                      <label class="form-check-label" for="patent">Patent</label>
+                    </div>
+                    <div class="form-check">
+                      <input v-model="change.data.trademark" type="checkbox" class="form-check-input" />
+                      <label class="form-check-label" for="trademark">Trademark</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-check">
+                      <input v-model="change.data.cla" type="checkbox" class="form-check-input" />
+                      <label class="form-check-label" for="cla">CLA</label>
+                    </div>
+                    <div class="form-check">
+                      <input v-model="change.data.eula" type="checkbox" class="form-check-input" />
+                      <label class="form-check-label" for="eula">EULA</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-check">
+                      <input v-model="change.data.export_restricted" type="checkbox" class="form-check-input" />
+                      <label class="form-check-label" for="export_restricted">Export Restricted</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-else-if="change.action === 'create_ignore'">
+                <div class="row">
+                  <div class="col mb-3">
+                    <label class="form-label" for="license">Package</label>
+                    <div class="d-flex form-check align-items-center form-check">
+                      <input
+                        class="form-check-input"
+                        id="ignore-one"
+                        type="checkbox"
+                        name="ignore-for"
+                        value="one"
+                        v-model="ignoreForPackage"
+                      />
+                      <input
+                        v-model="change.data.from"
+                        type="text"
+                        class="form-control ms-2"
+                        :disabled="!ignoreForPackage"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-if="change.data.reason" class="row">
+                <div class="col mb-3">
+                  <label class="form-label" for="reason">Reason</label>
+                  <textarea v-model="change.data.reason" class="form-control" disabled="disabled" rows="3"></textarea>
+                </div>
+              </div>
+              <span v-if="hasAdminRole">
+                <button @click="acceptProposal(change)" class="btn btn-success mb-2">Accept</button>
+                &nbsp;
+                <button @click="rejectProposal(change)" class="btn btn-danger btn-sm mb-2">Reject</button>
               </span>
-            </span>
-            <span v-else-if="change.action === 'create_ignore'">
-              Create ignore pattern from <a :href="change.editUrl" target="_blank"> <b>snippet</b></a
-              >, by <b>{{ change.login }}</b>
-              <span v-if="change.data.ai_assisted">&nbsp;<i class="fa-solid fa-robot"></i></span>
-            </span>
-            <span v-if="currentUser === change.login" class="float-end">
-              <a @click="rejectProposal(change)" href="#"><i class="fa-solid fa-xmark"></i></a>
-            </span>
+            </div>
+            <div class="change-footer">
+              <div v-if="change.closest !== null">
+                <a :href="change.closest.licenseUrl" target="_blank">
+                  <b>{{ change.closest.similarity }}%</b> similarity to
+                  <b>{{ change.closest.license_name === '' ? 'Keyword Pattern' : change.closest.license_name }}</b
+                  >, estimated risk
+                  {{ change.closest.risk }}
+                </a>
+              </div>
+              <div v-else>No similarity to any known licenses</div>
+            </div>
           </div>
-          <div class="change-source">
-            <table :class="getClassForCode(change)">
-              <tbody>
-                <tr v-for="line in change.lines" :key="line.num">
-                  <td class="linenumber">{{ line.num }}</td>
-                  <td :class="getClassForLine(line)">{{ line.text }}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="change-form">
-            <div v-if="change.action === 'create_pattern'">
-              <div class="row">
-                <div class="col mb-3">
-                  <label class="fomr-label" for="license">License</label>
-                  <input v-model="change.data.license" type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-2 mb-3">
-                  <div class="form-floating">
-                    <select v-model="change.data.risk" class="form-control">
-                      <option>0</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>9</option>
-                    </select>
-                    <label for="risk" class="form-label">Risk</label>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="form-check">
-                    <input v-model="change.data.patent" type="checkbox" class="form-check-input" />
-                    <label class="form-check-label" for="patent">Patent</label>
-                  </div>
-                  <div class="form-check">
-                    <input v-model="change.data.trademark" type="checkbox" class="form-check-input" />
-                    <label class="form-check-label" for="trademark">Trademark</label>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="form-check">
-                    <input v-model="change.data.export_restricted" type="checkbox" class="form-check-input" />
-                    <label class="form-check-label" for="export_restricted">Export Restricted</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div v-else-if="change.action === 'create_ignore'">
-              <div class="row">
-                <div class="col mb-3">
-                  <label class="form-label" for="license">Package</label>
-                  <div class="d-flex form-check align-items-center form-check">
-                    <input
-                      class="form-check-input"
-                      id="ignore-one"
-                      type="checkbox"
-                      name="ignore-for"
-                      value="one"
-                      v-model="ignoreForPackage"
-                    />
-                    <input
-                      v-model="change.data.from"
-                      type="text"
-                      class="form-control ms-2"
-                      :disabled="!ignoreForPackage"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div v-if="change.data.reason" class="row">
-              <div class="col mb-3">
-                <label class="form-label" for="reason">Reason</label>
-                <textarea v-model="change.data.reason" class="form-control" disabled="disabled" rows="3"></textarea>
-              </div>
-            </div>
-            <span v-if="hasAdminRole">
-              <button @click="acceptProposal(change)" class="btn btn-success mb-2">Accept</button>
-              &nbsp;
-              <button @click="rejectProposal(change)" class="btn btn-danger btn-sm mb-2">Reject</button>
-            </span>
-          </div>
-          <div class="change-footer">
-            <div v-if="change.closest !== null">
-              <a :href="change.closest.licenseUrl" target="_blank">
-                <b>{{ change.closest.similarity }}%</b> similarity to
-                <b>{{ change.closest.license_name === '' ? 'Keyword Pattern' : change.closest.license_name }}</b
-                >, estimated risk
-                {{ change.closest.risk }}
-              </a>
-            </div>
-            <div v-else>No similarity to any known licenses</div>
+          <div v-else-if="change.state === 'updating'" class="col-12">
+            <div class="change-confirmation"><i class="fa-solid fa-rotate fa-spin"></i> Updating proposal</div>
           </div>
         </div>
-        <div v-else-if="change.state === 'updating'" class="col-12">
-          <div class="change-confirmation"><i class="fa-solid fa-rotate fa-spin"></i> Updating proposal</div>
-        </div>
-        <div v-else-if="change.state === 'accepted'" class="col-12">
-          <div class="change-confirmation">
-            Change has been accepted, reindexing related packages in 10 minutes if necessary
-          </div>
-        </div>
-        <div v-else-if="change.state === 'rejected'" class="col-12">
-          <div class="change-confirmation">Proposal has been removed</div>
-        </div>
+      </transition-group>
+      <div v-if="loadingMore" class="text-center text-muted my-3">
+        <i class="fa-solid fa-rotate fa-spin"></i> Loading more changes
       </div>
-      <a
-        id="back-to-top"
-        href="#"
-        class="btn btn-primary btn-lg back-to-top"
-        role="button"
-        title="Click to return to the top"
-        data-bs-toggle="tooltip"
-        data-placement="left"
-        ><i class="fa-solid fa-angle-up"></i
-      ></a>
+      <BackToTop />
     </div>
     <div v-else-if="changes === null"><i class="fa-solid fa-rotate fa-spin"></i> Loading changes</div>
     <div v-else>There are currently no proposed changes.</div>
+    <ToastNotifier ref="toaster" />
   </div>
 </template>
 
 <script>
+import BackToTop from './components/BackToTop.vue';
+import CavilNoticePanel from './components/CavilNoticePanel.vue';
+import ToastNotifier from './components/ToastNotifier.vue';
 import {genParamWatchers, getParams} from './helpers/params.js';
 import UserAgent from '@mojojs/user-agent';
 
+// Accept/reject removes changes from the top without firing a scroll event, so refill the
+// buffer proactively once it drops below this many remaining changes.
+const REFILL_THRESHOLD = 5;
+
 export default {
   name: 'ProposedPatterns',
+  components: {BackToTop, CavilNoticePanel, ToastNotifier},
   data() {
     const params = getParams({createIgnore: true, createPattern: true, filter: ''});
 
@@ -204,7 +237,8 @@ export default {
       changeUrl: '/licenses/proposed/meta',
       ignoreForPackage: true,
       params: {...params, before: 0},
-      total: null
+      total: null,
+      loadingMore: false
     };
   },
   mounted() {
@@ -219,27 +253,33 @@ export default {
       change.state = 'updating';
 
       const ua = new UserAgent({baseURL: window.location.href});
-      const form = change.data;
-      form.contributor = change.login;
-      form.delay = 600;
+      const formData = {...change.data};
+      formData.contributor = change.login;
+      formData.delay = 600;
+      let kind = null;
       if (change.action === 'create_pattern') {
-        for (const key of ['patent', 'trademark', 'export_restricted']) {
-          change.data[key] = change.data[key] === true ? '1' : '0';
+        for (const key of ['patent', 'trademark', 'export_restricted', 'cla', 'eula']) {
+          formData[key] = change.data[key] === true ? '1' : '0';
         }
-        form['create-pattern'] = 1;
-        form.checksum = change.token_hexsum;
+        formData.checksum = change.token_hexsum;
+        kind = 'create-pattern';
       } else if (change.action === 'create_ignore') {
-        form.hash = change.token_hexsum;
+        formData.hash = change.token_hexsum;
         if (this.ignoreForPackage === true) {
-          form['create-ignore'] = 1;
-          form.from = change.data.from;
+          formData.from = change.data.from;
+          kind = 'create-ignore';
         } else {
-          form['mark-non-license'] = 1;
+          kind = 'mark-non-license';
         }
       }
-      await ua.post(change.createUrl, {form});
+      const body = {actions: [{kind, snippetId: change.data.snippet, formData}]};
+      await ua.post('/snippet/batch_decision', {json: body, headers: {Accept: 'application/json'}});
 
-      change.state = 'accepted';
+      this.removeChange(change);
+      this.$refs.toaster?.notify(
+        'Proposal accepted, reindexing related packages in 10 minutes if necessary',
+        'success'
+      );
     },
     async getChanges() {
       const url = new URL(this.changeUrl, window.location.href);
@@ -260,18 +300,19 @@ export default {
         change.state = 'proposed';
         change.editUrl = `/snippet/edit/${change.data.snippet}`;
         change.removeUrl = `/licenses/proposed/remove/${change.token_hexsum}`;
-        change.createUrl = `/snippet/decision/${change.data.snippet}`;
 
         if (change.package !== null) change.package.pkgUrl = `/reviews/details/${change.package.id}`;
         if (change.closest !== null) change.closest.licenseUrl = `/licenses/edit_pattern/${change.closest.id}`;
 
         if (change.action === 'create_pattern') {
-          for (const key of ['edited', 'patent', 'trademark', 'export_restricted']) {
+          for (const key of ['edited', 'patent', 'trademark', 'export_restricted', 'cla', 'eula']) {
             change.data[key] = change.data[key] === '1' ? true : false;
           }
         } else if (change.action === 'create_ignore') {
           change.editUrl = `${change.editUrl}?hash=${change.token_hexsum}&from=${change.data.from}`;
         }
+
+        if (change.data.ai_assisted !== undefined) change.data.ai_assisted = change.data.ai_assisted == 1;
 
         const highlightedKeywords = change.data.highlighted_keywords ?? [];
         const highlightedLicenses = change.data.highlighted_licenses ?? [];
@@ -309,14 +350,44 @@ export default {
         this.loadMore();
       }
     },
-    loadMore() {
-      this.getChanges();
+    async loadMore() {
+      if (this.loadingMore) return;
+      if (this.changes !== null && this.total !== null && this.changes.length >= this.total) return;
+      this.loadingMore = true;
+      try {
+        await this.getChanges();
+      } finally {
+        this.loadingMore = false;
+      }
     },
     async rejectProposal(change) {
       change.state = 'updating';
       const ua = new UserAgent({baseURL: window.location.href});
       await ua.post(change.removeUrl);
-      change.state = 'rejected';
+      this.removeChange(change);
+      this.$refs.toaster?.notify('Proposal removed', 'danger');
+    },
+    removeChange(change) {
+      const i = this.changes.indexOf(change);
+      if (i !== -1) this.changes.splice(i, 1);
+      if (this.total !== null && this.total > 0) this.total--;
+      this.refillBuffer();
+    },
+    refillBuffer() {
+      // The list shrinks from the top as proposals are accepted/rejected, which does not trigger
+      // the scroll handler. Pull in the next page before the user runs out of changes to act on.
+      if (this.changes !== null && this.changes.length < REFILL_THRESHOLD) this.loadMore();
+    },
+    onBeforeLeave(el) {
+      el.style.maxHeight = el.scrollHeight + 'px';
+      el.style.overflow = 'hidden';
+    },
+    onLeave(el) {
+      void el.offsetHeight;
+      el.style.maxHeight = '0';
+      el.style.marginTop = '0';
+      el.style.marginBottom = '0';
+      el.style.opacity = '0';
     },
     refreshPage() {
       this.total = null;
@@ -342,13 +413,43 @@ export default {
   margin-bottom: 4rem;
   margin-top: 1rem;
 }
+.row-leave-active {
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    margin 0.35s ease;
+}
+.row-move {
+  transition: transform 0.3s ease;
+}
 .change-header {
+  align-items: center;
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 1px solid rgb(208, 215, 222);
+  display: flex;
   font-size: 13px;
+  gap: 0.75rem;
+  justify-content: space-between;
   line-height: 20px;
   padding: 10px;
+}
+.change-title {
+  min-width: 0;
+}
+.change-title > span {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.change-meta-badges {
+  margin-left: 0.25rem;
+}
+.change-actions {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.4rem;
 }
 .change-header a,
 .change-file a,
@@ -362,26 +463,26 @@ export default {
   text-decoration: underline;
 }
 .change-file-container {
+  border: 1px solid rgb(208, 215, 222);
+  border-radius: 6px;
+  overflow: hidden;
   padding: 0;
 }
 .change-form {
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-bottom: 0;
+  border-top: 1px solid rgb(208, 215, 222);
   padding: 10px;
 }
 .change-footer {
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0 0.25rem 0.25rem;
+  border-top: 1px solid rgb(208, 215, 222);
   font-size: 13px;
   line-height: 20px;
   padding: 10px;
 }
 .change-source {
-  border: 1px solid #dfe2e5 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
+  background: #fff;
+  overflow: auto;
 }
 .change-source td.linenumber,
 .change-source td.code {
@@ -394,7 +495,8 @@ export default {
   border: 0 !important;
 }
 .change-source td.code {
-  padding-left: 0.5em;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   color: #24292e;
   margin-left: 0.5em;
   white-space: -moz-pre-wrap;

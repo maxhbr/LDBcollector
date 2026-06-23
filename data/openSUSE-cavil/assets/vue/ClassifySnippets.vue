@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="row mt-3">
-      <div v-if="hasClassifierRole === true" class="col-11 alert alert-primary" role="alert">
+      <cavil-notice-panel v-if="hasClassifierRole === true" intro class="col-11">
         These snippets have been pre-processed by our machine learning model to decide if they are legal text or not.
         Legal text is highlighted in yellow. You can help us improve the model by voting the decisions up or down.
-      </div>
-      <div v-else class="col-11 alert alert-primary" role="alert">
+      </cavil-notice-panel>
+      <cavil-notice-panel v-else intro class="col-11">
         These snippets have been pre-processed by our machine learning model to decide if they are legal text or not.
         Legal text is highlighted in yellow.
-      </div>
+      </cavil-notice-panel>
     </div>
     <div class="row g-4">
       <div class="col-8">
@@ -18,6 +18,9 @@
               <div class="form-floating">
                 <select v-model="params.confidence" @change="refreshPage()" class="form-control cavil-pkg-confidence">
                   <option value="100">Any</option>
+                  <option value="95">95% or less</option>
+                  <option value="90">90% or less</option>
+                  <option value="80">80% or less</option>
                   <option value="70">70% or less</option>
                   <option value="50">50% or less</option>
                   <option value="30">30% or less</option>
@@ -153,26 +156,23 @@
           </div>
         </div>
       </div>
-      <a
-        id="back-to-top"
-        href="#"
-        class="btn btn-primary btn-lg back-to-top"
-        role="button"
-        title="Click to return to the top"
-        data-bs-toggle="tooltip"
-        data-placement="left"
-        ><i class="fa-solid fa-angle-up"></i
-      ></a>
+      <div v-if="loadingMore" class="text-center text-muted my-3">
+        <i class="fa-solid fa-rotate fa-spin"></i> Loading more snippets
+      </div>
+      <BackToTop />
     </div>
   </div>
 </template>
 
 <script>
+import BackToTop from './components/BackToTop.vue';
+import CavilNoticePanel from './components/CavilNoticePanel.vue';
 import {genParamWatchers, getParams} from './helpers/params.js';
 import UserAgent from '@mojojs/user-agent';
 
 export default {
   name: 'ClassifySnippets',
+  components: {BackToTop, CavilNoticePanel},
   data() {
     const params = getParams({
       confidence: 100,
@@ -187,7 +187,8 @@ export default {
       params: {...params, before: 0},
       snippets: null,
       snippetUrl: '/snippets/meta',
-      total: null
+      total: null,
+      loadingMore: false
     };
   },
   mounted() {
@@ -250,8 +251,15 @@ export default {
         this.loadMore();
       }
     },
-    loadMore() {
-      this.getSnippets();
+    async loadMore() {
+      if (this.loadingMore) return;
+      if (this.snippets !== null && this.total !== null && this.snippets.length >= this.total) return;
+      this.loadingMore = true;
+      try {
+        await this.getSnippets();
+      } finally {
+        this.loadingMore = false;
+      }
     },
     refreshPage() {
       this.total = null;
@@ -287,8 +295,7 @@ export default {
 }
 .snippet-file {
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 1px solid rgb(208, 215, 222);
   font-size: 13px;
   line-height: 20px;
   padding: 10px;
@@ -303,12 +310,14 @@ export default {
   text-decoration: underline;
 }
 .snippet-file-container {
+  border: 1px solid rgb(208, 215, 222);
+  border-radius: 6px;
+  overflow: hidden;
   padding: 0;
 }
 .snippet-footer {
   background-color: rgb(246, 248, 250);
-  border: 1px solid rgb(208, 215, 222);
-  border-radius: 0 0.25rem 0.25rem;
+  border-top: 1px solid rgb(208, 215, 222);
   font-size: 13px;
   line-height: 20px;
   padding: 10px;
@@ -325,9 +334,8 @@ export default {
 }
 
 .snippet-source {
-  border: 1px solid #dfe2e5 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
+  background: #fff;
+  overflow: auto;
 }
 
 .snippet-source td.linenumber,
@@ -342,7 +350,8 @@ export default {
 }
 
 .snippet-source td.code {
-  padding-left: 0.5em;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   color: #24292e;
   margin-left: 0.5em;
   white-space: -moz-pre-wrap;

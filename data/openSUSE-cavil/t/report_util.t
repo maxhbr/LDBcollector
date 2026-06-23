@@ -17,19 +17,19 @@ use Mojo::Base -strict;
 
 use Test::More;
 use Cavil::ReportUtil (qw(estimated_risk incompatible_licenses minimal_snippet report_checksum report_shortname),
-  qw( summary_delta summary_delta_score));
+  qw(smart_edit_snippet summary_delta summary_delta_score));
 
 subtest 'estimated_risk' => sub {
   subtest 'Risk 0' => sub {
     is estimated_risk(0, 0.10), 8, 'high risk';
     is estimated_risk(0, 0.20), 7, 'high risk';
     is estimated_risk(0, 0.30), 6, 'high risk';
-    is estimated_risk(0, 0.40), 5, 'high risk';
-    is estimated_risk(0, 0.50), 5, 'high risk';
-    is estimated_risk(0, 0.60), 4, 'high risk';
-    is estimated_risk(0, 0.70), 4, 'high risk';
-    is estimated_risk(0, 0.80), 4, 'high risk';
-    is estimated_risk(0, 0.89), 4, 'high risk';
+    is estimated_risk(0, 0.40), 5, 'medium risk';
+    is estimated_risk(0, 0.50), 5, 'medium risk';
+    is estimated_risk(0, 0.60), 5, 'medium risk';
+    is estimated_risk(0, 0.70), 5, 'medium risk';
+    is estimated_risk(0, 0.80), 5, 'medium risk';
+    is estimated_risk(0, 0.89), 5, 'medium risk';
     is estimated_risk(0, 0.90), 1, 'low risk';
     is estimated_risk(0, 0.94), 1, 'low risk';
     is estimated_risk(0, 0.95), 0, 'low risk';
@@ -42,10 +42,10 @@ subtest 'estimated_risk' => sub {
     is estimated_risk(1, 0.30), 7, 'high risk';
     is estimated_risk(1, 0.40), 6, 'high risk';
     is estimated_risk(1, 0.50), 5, 'high risk';
-    is estimated_risk(1, 0.60), 4, 'high risk';
-    is estimated_risk(1, 0.70), 4, 'high risk';
-    is estimated_risk(1, 0.80), 4, 'high risk';
-    is estimated_risk(1, 0.89), 4, 'high risk';
+    is estimated_risk(1, 0.60), 5, 'high risk';
+    is estimated_risk(1, 0.70), 5, 'high risk';
+    is estimated_risk(1, 0.80), 5, 'medium risk';
+    is estimated_risk(1, 0.89), 5, 'medium risk';
     is estimated_risk(1, 0.90), 2, 'low risk';
     is estimated_risk(1, 0.93), 2, 'low risk';
     is estimated_risk(1, 0.94), 1, 'low risk';
@@ -59,9 +59,9 @@ subtest 'estimated_risk' => sub {
     is estimated_risk(2, 0.40), 6, 'high risk';
     is estimated_risk(2, 0.50), 6, 'high risk';
     is estimated_risk(2, 0.60), 5, 'high risk';
-    is estimated_risk(2, 0.70), 4, 'high risk';
-    is estimated_risk(2, 0.80), 4, 'high risk';
-    is estimated_risk(2, 0.89), 4, 'high risk';
+    is estimated_risk(2, 0.70), 5, 'high risk';
+    is estimated_risk(2, 0.80), 5, 'medium risk';
+    is estimated_risk(2, 0.89), 5, 'medium risk';
     is estimated_risk(2, 0.90), 3, 'low risk';
     is estimated_risk(2, 0.92), 3, 'low risk';
     is estimated_risk(2, 0.93), 2, 'low risk';
@@ -74,11 +74,11 @@ subtest 'estimated_risk' => sub {
     is estimated_risk(3, 0.30), 7, 'high risk';
     is estimated_risk(3, 0.40), 7, 'high risk';
     is estimated_risk(3, 0.50), 6, 'high risk';
-    is estimated_risk(3, 0.60), 5, 'high risk';
-    is estimated_risk(3, 0.70), 5, 'high risk';
-    is estimated_risk(3, 0.80), 4, 'high risk';
-    is estimated_risk(3, 0.90), 4, 'high risk';
-    is estimated_risk(3, 0.91), 4, 'high risk';
+    is estimated_risk(3, 0.60), 5, 'medium risk';
+    is estimated_risk(3, 0.70), 5, 'medium risk';
+    is estimated_risk(3, 0.80), 5, 'medium risk';
+    is estimated_risk(3, 0.90), 4, 'low risk';
+    is estimated_risk(3, 0.91), 4, 'low risk';
     is estimated_risk(3, 0.92), 3, 'low risk';
     is estimated_risk(3, 0.99), 3, 'low risk';
   };
@@ -91,10 +91,10 @@ subtest 'estimated_risk' => sub {
     is estimated_risk(4, 0.50), 7, 'high risk';
     is estimated_risk(4, 0.60), 6, 'high risk';
     is estimated_risk(4, 0.70), 6, 'high risk';
-    is estimated_risk(4, 0.80), 5, 'high risk';
-    is estimated_risk(4, 0.90), 5, 'high risk';
-    is estimated_risk(4, 0.91), 4, 'high risk';
-    is estimated_risk(4, 0.99), 4, 'high risk';
+    is estimated_risk(4, 0.80), 5, 'medium risk';
+    is estimated_risk(4, 0.90), 5, 'medium risk';
+    is estimated_risk(4, 0.91), 4, 'low risk';
+    is estimated_risk(4, 0.99), 4, 'low risk';
   };
 
   subtest 'Risk 5' => sub {
@@ -108,8 +108,8 @@ subtest 'estimated_risk' => sub {
     is estimated_risk(5, 0.80), 6, 'high risk';
     is estimated_risk(5, 0.87), 6, 'high risk';
     is estimated_risk(5, 0.88), 5, 'high risk';
-    is estimated_risk(5, 0.90), 5, 'high risk';
-    is estimated_risk(5, 0.99), 5, 'high risk';
+    is estimated_risk(5, 0.90), 5, 'medium risk';
+    is estimated_risk(5, 0.99), 5, 'medium risk';
   };
 
   subtest 'Risk 6' => sub {
@@ -190,24 +190,85 @@ subtest 'incompatible_licenses' => sub {
     is_deeply incompatible_licenses($report), [{licenses => ['GPL-2.0-only', 'Apache-2.0']}],
       'incompatible licenses found';
   };
+
+  subtest 'GPL-2.0-only vs v3 family' => sub {
+    my $report = {
+      licenses => {
+        'GPL-2.0-only'     => {risk => 5, spdx => 'GPL-2.0-only'},
+        'GPL-3.0-or-later' => {risk => 5, spdx => 'GPL-3.0-or-later'}
+      }
+    };
+    is_deeply incompatible_licenses($report), [{licenses => ['GPL-2.0-only', 'GPL-3.0-or-later']}],
+      'GPL-2.0-only and GPL-3.0-or-later flagged';
+
+    $report = {
+      licenses => {
+        'GPL-2.0-only'      => {risk => 5, spdx => 'GPL-2.0-only'},
+        'AGPL-3.0-or-later' => {risk => 5, spdx => 'AGPL-3.0-or-later'}
+      }
+    };
+    is_deeply incompatible_licenses($report), [{licenses => ['GPL-2.0-only', 'AGPL-3.0-or-later']}],
+      'GPL-2.0-only and AGPL-3.0-or-later flagged';
+  };
+
+  subtest 'GPL-2.0-only vs CDDL' => sub {
+    my $report
+      = {
+      licenses => {'GPL-2.0-only' => {risk => 5, spdx => 'GPL-2.0-only'}, 'CDDL-1.0' => {risk => 5, spdx => 'CDDL-1.0'}}
+      };
+    is_deeply incompatible_licenses($report), [{licenses => ['GPL-2.0-only', 'CDDL-1.0']}],
+      'GPL-2.0-only and CDDL-1.0 flagged (ZFS-on-Linux case)';
+
+    $report
+      = {
+      licenses => {'GPL-2.0-only' => {risk => 5, spdx => 'GPL-2.0-only'}, 'CDDL-1.1' => {risk => 5, spdx => 'CDDL-1.1'}}
+      };
+    is_deeply incompatible_licenses($report), [{licenses => ['GPL-2.0-only', 'CDDL-1.1']}],
+      'GPL-2.0-only and CDDL-1.1 flagged';
+  };
+
+  subtest 'Classpath exception is not flagged' => sub {
+    my $report = {
+      licenses => {
+        'GPL-2.0 with Classpath exception' => {risk => 5, spdx => 'GPL-2.0-only WITH Classpath-exception-2.0'},
+        'Apache-2.0'                       => {risk => 2, spdx => 'Apache-2.0'}
+      }
+    };
+    is_deeply incompatible_licenses($report), [], 'Classpath exception permits combining GPL with Apache-2.0';
+
+    # The Classpath-exception strip must not also remove a sibling GPL term
+    # that appears elsewhere in the same SPDX expression.
+    $report = {
+      licenses => {
+        'Mixed'      => {risk => 5, spdx => '(GPL-2.0-only WITH Classpath-exception-2.0) AND GPL-2.0-only'},
+        'Apache-2.0' => {risk => 2, spdx => 'Apache-2.0'}
+      }
+    };
+    is_deeply incompatible_licenses($report), [{licenses => ['GPL-2.0-only', 'Apache-2.0']}],
+      'plain GPL-2.0-only alongside an excepted variant is still flagged';
+  };
 };
 
 subtest 'minimal_snippet' => sub {
   subtest 'Minimal snippets' => sub {
-    is minimal_snippet({text => 'foo'}),             'foo',             'minimal snippet';
-    is minimal_snippet({text => "foo\nbar\nbaz\n"}), "foo\nbar\nbaz\n", 'minimal snippet';
-    is minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {}}), "foo\nbar\nbaz\n", 'minimal snippet';
-    is minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {}, matches => {}}), "foo\nbar\nbaz\n",
-      'minimal snippet';
-    is minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {1 => 1}, matches => {}}), "foo\nbar\nbaz\n",
-      'minimal snippet';
-    is minimal_snippet({text => "foo", keywords => {0 => 1}, matches => {}}),       'foo', 'minimal snippet';
-    is minimal_snippet({text => "foo", keywords => {0 => 1}, matches => {0 => 1}}), 'foo', 'minimal snippet';
+    is_deeply minimal_snippet({text => 'foo'}), {'text' => 'foo', start_line => 1}, 'minimal snippet';
+    is_deeply minimal_snippet({text => "foo\nbar\nbaz\n", sline => 23}),
+      {'text' => "foo\nbar\nbaz\n", start_line => 23}, 'minimal snippet';
+    is_deeply minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {}}),
+      {'text' => "foo\nbar\nbaz\n", start_line => 1}, 'minimal snippet';
+    is_deeply minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {}, matches => {}}),
+      {'text' => "foo\nbar\nbaz\n", start_line => 1}, 'minimal snippet';
+    is_deeply minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {1 => 1}, matches => {}}),
+      {'text' => "foo\nbar\nbaz\n", start_line => 1}, 'minimal snippet';
+    is_deeply minimal_snippet({text => "foo", keywords => {0 => 1}, matches => {}}),
+      {'text' => 'foo', start_line => 1}, 'minimal snippet';
+    is_deeply minimal_snippet({text => "foo", keywords => {0 => 1}, matches => {0 => 1}}),
+      {'text' => 'foo', start_line => 1}, 'minimal snippet';
   };
 
   subtest 'Overlapping license at beginning' => sub {
-    is minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {1 => 24}, matches => {0 => 23}}), "bar\nbaz\n",
-      'minimal snippet';
+    is_deeply minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {1 => 24}, matches => {0 => 23}}),
+      {'text' => "bar\nbaz\n", start_line => 2}, 'minimal snippet';
 
     my $snippet = {
       "keywords" => {"30" => 22897},
@@ -269,7 +330,8 @@ subtest 'minimal_snippet' => sub {
       = "\n#![cfg_attr(\n    feature = \"cargo-clippy\",\n    allow(doc_markdown, inline_always, "
       . "new_ret_no_self)\n)]\n\n//! encoding_rs is a Gecko-oriented Free Software / Open Source"
       . " implementation\n//! of the [Encoding Standard](https://encoding.spec.whatwg.org/) in Rust.\n";
-    is minimal_snippet($snippet), $expected_text, 'overlapping license at beginning removed';
+    is_deeply minimal_snippet($snippet), {text => $expected_text, start_line => 40},
+      'overlapping license at beginning removed';
   };
 
   subtest 'Multiple overlapping licenses at beginning' => sub {
@@ -278,18 +340,188 @@ subtest 'minimal_snippet' => sub {
       keywords => {5 => 24},
       matches  => {0 => 23, 2 => 27, 3 => 34}
     };
-    is minimal_snippet($snippet), "five\nsix\nseven\n", 'minimal snippet';
+    is minimal_snippet($snippet)->{text}, "five\nsix\nseven\n", 'minimal snippet';
   };
 
   subtest 'Overlapping license at end' => sub {
-    is minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {1 => 24}, matches => {2 => 23}}), "foo\nbar",
+    is minimal_snippet({text => "foo\nbar\nbaz\n", keywords => {1 => 24}, matches => {2 => 23}})->{text}, "foo\nbar",
       'minimal snippet';
   };
 
   subtest 'Multiple overlapping licenses at end' => sub {
     my $snippet
       = {text => "one\ntwo\nthree\nfour\nfive\nsix\nseven\n", keywords => {2 => 24}, matches => {6 => 23, 4 => 27}};
-    is minimal_snippet($snippet), "one\ntwo\nthree\nfour", 'minimal snippet';
+    is minimal_snippet($snippet)->{text}, "one\ntwo\nthree\nfour", 'minimal snippet';
+  };
+};
+
+subtest 'smart_edit_snippet' => sub {
+  subtest 'No keywords is a no-op' => sub {
+    is_deeply smart_edit_snippet({text => "foo\nbar\nbaz\n", sline => 5}),
+      {text => "foo\nbar\nbaz\n", start_line => 5, changed => 0}, 'no keywords, no change';
+    is_deeply smart_edit_snippet({text => "foo\nbar\nbaz\n", sline => 5, keywords => {}, matches => {}}),
+      {text => "foo\nbar\nbaz\n", start_line => 5, changed => 0}, 'empty keywords, no change';
+  };
+
+  subtest 'Keywords in the middle, both sides trimmed' => sub {
+    my $snippet = {
+      text =>
+        "line one\nline two\nline three\nKEYWORD HERE\nafter one\nafter two\nafter three\nafter four\nafter five\nafter six\nafter seven\n",
+      keywords => {3 => 42},
+      sline    => 1
+    };
+    my $result = smart_edit_snippet($snippet);
+    is $result->{text}, "one\nline two\nline three\nKEYWORD HERE\nafter one\nafter two\nafter",
+      'trimmed to keyword core with PAD_WORDS padding';
+    is $result->{start_line}, 1, 'start line unchanged (still on line 1)';
+    is $result->{changed},    1, 'snippet was trimmed';
+  };
+
+  subtest 'Padding shorter than PAD_WORDS keeps everything' => sub {
+    my $snippet = {text => "ab cd\nKEYWORD\nef gh\n", keywords => {1 => 1}, sline => 1};
+    is_deeply smart_edit_snippet($snippet), {text => "ab cd\nKEYWORD\nef gh\n", start_line => 1, changed => 0},
+      'short padding kept as-is';
+  };
+
+  subtest 'Keyword at the start: only trailing side trimmed' => sub {
+    my $snippet = {text => "KEYWORD\none\ntwo three four five six\n", keywords => {0 => 1}, sline => 7};
+    my $result  = smart_edit_snippet($snippet);
+    is $result->{text},       "KEYWORD\none\ntwo three four five", 'tail trimmed to 5 tokens';
+    is $result->{start_line}, 7,                                   'start line preserved';
+    is $result->{changed},    1,                                   'snippet was trimmed';
+  };
+
+  subtest 'Keyword at the end: only leading side trimmed' => sub {
+    my $snippet = {text => "ab cd ef gh ij kl\nmn\nKEYWORD\n", keywords => {2 => 1}, sline => 1};
+    my $result  = smart_edit_snippet($snippet);
+    is $result->{text},       "ef gh ij kl\nmn\nKEYWORD\n", 'leading trimmed to 5 tokens';
+    is $result->{start_line}, 1,                            'start line still 1 (trimmed within first line)';
+    is $result->{changed},    1,                            'snippet was trimmed';
+  };
+
+  subtest 'Dropping entire leading lines bumps start_line' => sub {
+    my $snippet = {
+      text     => "alpha\nbeta\ngamma\ndelta\nepsilon\nzeta eta theta iota kappa\nKEYWORD\nlambda mu nu xi omicron\n",
+      keywords => {6 => 1},
+      sline    => 1
+    };
+    my $result = smart_edit_snippet($snippet);
+    is $result->{text}, "zeta eta theta iota kappa\nKEYWORD\nlambda mu nu xi omicron\n", 'leading whole lines dropped';
+    is $result->{start_line}, 6, 'start line bumped by 5 dropped lines';
+    is $result->{changed},    1, 'snippet was trimmed';
+  };
+
+  subtest 'Delegates overlapping license boundary trim to minimal_snippet' => sub {
+    my $snippet = {
+      text     => "MATCH ONE\nMATCH TWO\nKEYWORD\ntrail one two three four five six seven\n",
+      keywords => {2 => 24},
+      matches  => {0 => 23, 1 => 23},
+      sline    => 10
+    };
+    my $result = smart_edit_snippet($snippet);
+    is $result->{text}, "KEYWORD\ntrail one two three four",
+      'minimal_snippet strips leading match lines, then trailing pad trimmed';
+    is $result->{start_line}, 12, 'start line follows minimal_snippet offset';
+    is $result->{changed},    1,  'snippet was trimmed';
+  };
+
+  subtest 'Collapses copyright lines to $SKIP10' => sub {
+    my @cases = (
+      ['Copyright (c) 2018 Foo Bar',                               'Copyright (c) $SKIP10'],
+      ['Copyright (C) 2024 SUSE LLC',                              'Copyright (C) $SKIP10'],
+      ['Copyright © 2019 John Doe',                                'Copyright © $SKIP10'],
+      ['Copyright 2016, 2018-2019 Joe Anybody',                    'Copyright $SKIP10'],
+      ['Copyright (c) 2003-2018 Foo',                              'Copyright (c) $SKIP10'],
+      ['Copyright (c) 2003, 2005, 2018 Foo',                       'Copyright (c) $SKIP10'],
+      ['Copyright (c) 2018 Jane Doe <jane@example.org>',           'Copyright (c) $SKIP10'],
+      ['Copyright (c) Alice, some rights reserved',                'Copyright (c) $SKIP10'],
+      ['Copyright 2018-present Foo Project',                       'Copyright $SKIP10'],
+      ['(c) 2018 Foo',                                             '(c) $SKIP10'],
+      ['(C) Copyright 2018 Foo',                                   '(C) Copyright $SKIP10'],
+      ['© 2019 Example Corporation <https://corp.example.com>',    '© $SKIP10'],
+      ['SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>', 'SPDX-FileCopyrightText: $SKIP10'],
+      ['SPDX-FileCopyrightText: Contributors to Example Project',  'SPDX-FileCopyrightText: $SKIP10'],
+      ['SPDX-SnippetCopyrightText: (C) Example Cooperative',       'SPDX-SnippetCopyrightText: $SKIP10'],
+    );
+    for my $case (@cases) {
+      my ($input, $expected) = @$case;
+      my $snippet = {text => $input, keywords => {0 => 1}, sline => 1};
+      is smart_edit_snippet($snippet)->{text}, $expected, "collapsed: $input";
+    }
+  };
+
+  subtest 'Preserves comment-marker prefixes on copyright lines' => sub {
+    my @cases = (
+      ['# Copyright (C) 2024 SUSE LLC', '# Copyright (C) $SKIP10'],
+      ['// Copyright (c) 2018 Foo',     '// Copyright (c) $SKIP10'],
+      [' * Copyright (c) 2018 Foo',     ' * Copyright (c) $SKIP10'],
+      ['## Copyright 2018 Foo',         '## Copyright $SKIP10'],
+      ['; Copyright (c) 2018 Foo',      '; Copyright (c) $SKIP10'],
+    );
+    for my $case (@cases) {
+      my ($input, $expected) = @$case;
+      my $snippet = {text => $input, keywords => {0 => 1}, sline => 1};
+      is smart_edit_snippet($snippet)->{text}, $expected, "preserved prefix on: $input";
+    }
+  };
+
+  subtest 'Does not collapse non-copyright text' => sub {
+    my @cases = (
+      'Copyright',                              # bare anchor with nothing after
+      'The Copyright Office should be sent',    # anchor not at line start
+      'Licensed under the Apache License',      # no copyright anchor at all
+      'see Copyright notice above',             # anchor mid-sentence
+    );
+    for my $line (@cases) {
+      my $snippet = {text => $line, keywords => {0 => 1}, sline => 1};
+      is smart_edit_snippet($snippet)->{text}, $line, "not collapsed: $line";
+    }
+  };
+
+  subtest 'Collapses each line of a multi-line copyright stack independently' => sub {
+    my $snippet = {
+      text     => "Copyright (c) 2018 Foo\nCopyright (c) 2019 Bar\nCopyright (c) 2020 Baz <baz\@x>\n",
+      keywords => {0 => 1, 1 => 1, 2 => 1},
+      sline    => 1
+    };
+    is smart_edit_snippet($snippet)->{text}, "Copyright (c) \$SKIP10\nCopyright (c) \$SKIP10\nCopyright (c) \$SKIP10\n",
+      'each line collapsed, line count preserved';
+  };
+
+  subtest 'Mixed copyright and non-copyright lines' => sub {
+    my $snippet = {
+      text     => "Copyright (c) 2018 Foo\nLicensed under MIT\nSee Copyright notice\n",
+      keywords => {1 => 1},
+      sline    => 1
+    };
+    is smart_edit_snippet($snippet)->{text}, "Copyright (c) \$SKIP10\nLicensed under MIT\nSee Copyright notice\n",
+      'only the copyright line is collapsed';
+  };
+
+  subtest 'Collapse applies even when nothing else is trimmed' => sub {
+    my $snippet = {text => "Copyright (c) 2018 Foo\n", keywords => {0 => 1}, sline => 1};
+    my $result  = smart_edit_snippet($snippet);
+    is $result->{text},    "Copyright (c) \$SKIP10\n", 'short text still gets copyright collapsed';
+    is $result->{changed}, 1,                          'reported as changed';
+  };
+
+  subtest 'No-op when text has no copyright lines and no trimming applies' => sub {
+    my $snippet = {text => "ab cd\nKEYWORD\nef gh\n", keywords => {1 => 1}, sline => 1};
+    my $result  = smart_edit_snippet($snippet);
+    is $result->{text},    "ab cd\nKEYWORD\nef gh\n", 'unchanged';
+    is $result->{changed}, 0,                         'no change reported';
+  };
+
+  subtest 'Combines trimming with copyright collapse' => sub {
+    my $snippet = {
+      text     => "noise one two three four five\nCopyright (c) 2018 Foo Bar\nKEYWORD\ntrail one two three four five\n",
+      keywords => {2 => 1},
+      sline    => 1
+    };
+    my $result = smart_edit_snippet($snippet);
+    is $result->{text}, "Copyright (c) \$SKIP10\nKEYWORD\ntrail one two three four",
+      'trimmed leading noise and collapsed copyright';
+    is $result->{changed}, 1, 'reported as changed';
   };
 };
 
@@ -325,33 +557,33 @@ subtest 'report_checksum' => sub {
     is report_checksum(
       {main => {license => 'MIT'}},
       {
-        licenses => {'Apache-2.0' => {risk => 2}, 'BSD-3-Clause' => {risk => 1}},
-        snippets => {2            => {4    => '6d5198bd51f0617d05bf585rb3dc475f'}}
+        licenses        => {'Apache-2.0' => {risk => 2}, 'BSD-3-Clause' => {risk => 1}},
+        missed_snippets => {2            => [[10, 20, 4, '6d5198bd51f0617d05bf585rb3dc475f']]}
       }
       ),
-      'e53a9998d69ce6a27f198c415abaf363', 'one snippets present';
+      'e53a9998d69ce6a27f198c415abaf363', 'one snippet present';
     is report_checksum(
       {main => {license => 'MIT'}},
       {
-        licenses => {'Apache-2.0' => {risk => 2}, 'BSD-3-Clause' => {risk => 1}},
-        snippets => {
-          2 => {4 => '6d5198bd51f0617d05bf585rb3dc475f', 2 => '9d5198bd51f0a17d05af585rb3dc475e'},
-          3 => {1 => '1f5198bd51fb617d05bf585rb3dc47ae'}
+        licenses        => {'Apache-2.0' => {risk => 2}, 'BSD-3-Clause' => {risk => 1}},
+        missed_snippets => {
+          2 => [[10, 20, 4, '6d5198bd51f0617d05bf585rb3dc475f'], [30, 40, 2, '9d5198bd51f0a17d05af585rb3dc475e']],
+          3 => [[10, 20, 1, '1f5198bd51fb617d05bf585rb3dc47ae']]
         }
       }
       ),
-      '7351d8ac9fd4bbdb1cdda1293984c58d', 'one snippets present';
+      '1715f865453e0ab679688cf0c219fbe4', 'multiple snippets present';
     is report_checksum(
       {main => {license => 'MIT'}},
       {
-        licenses => {'Apache-2.0' => {risk => 2}, 'BSD-3-Clause' => {risk => 1}},
-        snippets => {
-          2 => {4 => '6d5198bd51f0617d05bf585rb3dc475f', 2 => '9d5198bd51f0a17d05af585rb3dc475e'},
-          3 => {1 => '1f5198bd51fb617d05bf585rb3dc47ae', 4 => '6d5198bd51f0617d05bf585rb3dc475f'}
+        licenses        => {'Apache-2.0' => {risk => 2}, 'BSD-3-Clause' => {risk => 1}},
+        missed_snippets => {
+          2 => [[10, 20, 4, '6d5198bd51f0617d05bf585rb3dc475f'], [30, 40, 2, '9d5198bd51f0a17d05af585rb3dc475e']],
+          3 => [[10, 20, 1, '1f5198bd51fb617d05bf585rb3dc47ae'], [30, 40, 4, '6d5198bd51f0617d05bf585rb3dc475f']]
         }
       }
       ),
-      '7351d8ac9fd4bbdb1cdda1293984c58d', 'exclude duplicate snippets';
+      '1715f865453e0ab679688cf0c219fbe4', 'duplicate snippet hashes deduped';
   };
 
   subtest 'License incompatibility' => sub {
@@ -661,7 +893,7 @@ subtest 'summary_delta' => sub {
       {id => 1, specfile => 'MIT',      missed_snippets => {}, licenses => {}},
       {id => 2, specfile => 'GPL-2.0+', missed_snippets => {}, licenses => {}}
       ),
-      "Diff to closest match 1:\n\n  Different spec file license: MIT\n\n", 'different specfile';
+      "Diff to closest match 1\n\n  Spec file license  MIT -> GPL-2.0+\n", 'different specfile';
   };
 
   subtest 'Incompatible licenses' => sub {
@@ -697,9 +929,8 @@ subtest 'summary_delta' => sub {
         incompatible_licenses => [{licenses => ['GPL-2.0-only', 'Apache-2.0']}]
       }
       ),
-      "Diff to closest match 1:\n\n  Found new license GPL-2.0-only (risk 1) not present in old report\n\n"
-      . "  Found new possible license incompatibility involving: GPL-2.0-only, Apache-2.0\n\n",
-      'new incompatible licenses';
+      "Diff to closest match 1\n\n  New licenses (1, by risk)\n    1  GPL-2.0-only\n\n"
+      . "  Possible license incompatibility\n    GPL-2.0-only, Apache-2.0\n", 'new incompatible licenses';
   };
 
   subtest 'Snippets' => sub {
@@ -784,8 +1015,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/LICENSE\n\n",
-        'new file with snippets';
+        "Diff to closest match 1\n\n  New unresolved matches\n    Mojolicious-7.25/LICENSE\n", 'new file with snippets';
       is summary_delta(
         {
           id              => 1,
@@ -806,7 +1036,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/COPYING\n\n",
+        "Diff to closest match 1\n\n  New unresolved matches\n    Mojolicious-7.25/COPYING\n",
         'different file with snippets';
       is summary_delta(
         {
@@ -828,7 +1058,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/README\n\n",
+        "Diff to closest match 1\n\n  New unresolved matches\n    Mojolicious-7.25/README\n",
         'different snippets in same files';
       is summary_delta(
         {
@@ -853,7 +1083,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/LEGAL\n\n",
+        "Diff to closest match 1\n\n  New unresolved matches\n    Mojolicious-7.25/LEGAL\n",
         'additional snippets in same files';
       is summary_delta(
         {
@@ -874,7 +1104,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/COPYING and 1 other file\n\n",
+        "Diff to closest match 1\n\n  New unresolved matches in 2 files\n    Mojolicious-7.25/COPYING\n    + 1 more\n",
         'two new files';
       is summary_delta(
         {
@@ -897,7 +1127,7 @@ subtest 'summary_delta' => sub {
           licenses => {}
         }
         ),
-        "Diff to closest match 1:\n\n  Found new unresolved matches in Mojolicious-7.25/COPYING and 2 other files\n\n",
+        "Diff to closest match 1\n\n  New unresolved matches in 3 files\n    Mojolicious-7.25/COPYING\n    + 2 more\n",
         'three new files';
     };
   };
@@ -926,7 +1156,7 @@ subtest 'summary_delta' => sub {
         {id => 1, specfile => 'MIT', missed_snippets => {}, licenses => {'Apache-2.0' => 5}},
         {id => 2, specfile => 'MIT', missed_snippets => {}, licenses => {'Apache-2.0' => 5, 'MIT' => 3}}
         ),
-        "Diff to closest match 1:\n\n  Found new license MIT (risk 3) not present in old report\n\n", 'new license';
+        "Diff to closest match 1\n\n  New licenses (1, by risk)\n    3  MIT\n", 'new license';
       is summary_delta(
         {id => 1, specfile => 'MIT', missed_snippets => {}, licenses => {'Apache-2.0' => 5}},
         {
@@ -936,14 +1166,12 @@ subtest 'summary_delta' => sub {
           licenses        => {'Apache-2.0' => 5, 'MIT' => 3, 'GPL-2.0+' => 1}
         }
         ),
-        "Diff to closest match 1:\n\n  Found new license GPL-2.0+ (risk 1) not present in old report\n"
-        . "  Found new license MIT (risk 3) not present in old report\n\n", 'new licenses';
+        "Diff to closest match 1\n\n  New licenses (2, by risk)\n    3  MIT\n    1  GPL-2.0+\n", 'new licenses';
       is summary_delta(
         {id => 1, specfile => 'MIT', missed_snippets => {}, licenses => {}},
         {id => 2, specfile => 'MIT', missed_snippets => {}, licenses => {'Apache-2.0' => 5, 'MIT' => 3}}
         ),
-        "Diff to closest match 1:\n\n  Found new license Apache-2.0 (risk 5) not present in old report\n"
-        . "  Found new license MIT (risk 3) not present in old report\n\n", 'more new licenses';
+        "Diff to closest match 1\n\n  New licenses (2, by risk)\n    5  Apache-2.0\n    3  MIT\n", 'more new licenses';
     };
   };
 };

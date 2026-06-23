@@ -1,0 +1,33 @@
+# Notes
+
+% if (@$notes) {
+<%== $total %> note<%== $total == 1 ? '' : 's' %> found, showing <%== $start %>-<%== $end %>.
+
+Pagination: limit=<%== $limit %>, offset=<%== $offset %><% if (defined $next_offset) { %>, next_offset=<%== $next_offset %><% } else { %>, next_offset=none<% } %>
+% if (@$tags) {
+Filters: tags=<%== join(', ', @$tags) %><%== $relevant_only ? ', relevant_only=true' : '' %>
+% } elsif ($relevant_only) {
+Filters: relevant_only=true
+% }
+
+
+%   for my $note (@$notes) {
+%     my $body = $note->{body};
+%     $body = substr($body, 0, 4000) . "\n[Note body truncated]" if length $body > 4000;
+%     $body =~ s/^/> /mg;
+%     my $relevance = '[other report]';
+%     if (defined $current_package_id && $note->{package_id} && $note->{package_id} == $current_package_id) {
+%       $relevance = '[this report]';
+%     }
+%     elsif (defined $current_checksum && defined $note->{package_checksum} && $note->{package_checksum} eq $current_checksum) {
+%       $relevance = '[same report]';
+%     }
+## Note #<%= $note->{id} %> by <%== $note->{author_login} %> (<%= Mojo::Date->new($note->{created_epoch})->to_datetime %>) <%== $relevance %><%== $note->{ai_assisted} ? ' [AI-assisted]' : '' %><%== $note->{lawyer_only} ? ' [lawyer-only]' : '' %><%== @{$note->{tags}} ? ' [tags: ' . join(', ', @{$note->{tags}}) . ']' : '' %>
+
+%== $body
+
+%   }
+% }
+% else {
+There are currently no notes matching this query.
+% }

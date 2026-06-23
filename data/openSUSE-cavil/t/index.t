@@ -115,7 +115,7 @@ ok $db->select('bot_packages', ['unpacked'], {id => 1})->hash->{unpacked}, 'unpa
 # Verify report checksum
 my $specfile = $t->app->reports->specfile_report(1);
 my $dig      = $t->app->reports->dig_report(1);
-is report_checksum($specfile, $dig), '42af80e97542a008844a74245b19a147', 'right checksum';
+is report_checksum($specfile, $dig), '7d2fa36eff75adc8d7c309b8ff025992', 'right checksum';
 
 # Check matches
 my $res = $db->select(
@@ -155,27 +155,33 @@ $t->get_ok('/login')->status_is(302)->header_is(Location => '/');
 $t->get_ok('/licenses/edit_pattern/1')->status_is(200)->content_like(qr/License/);
 
 subtest 'Pattern change' => sub {
-  $t->get_ok('/licenses/edit_pattern/1')
+  $t->get_ok('/licenses/edit_pattern/1')->status_is(200)->element_exists('#edit-pattern[data-pattern]');
+  $t->get_ok('/licenses/pattern/1.json')
     ->status_is(200)
-    ->element_exists('input[name=license][value=Apache-2.0]')
-    ->text_is('textarea[name=pattern]' => 'You may obtain a copy of the License at')
-    ->element_exists_not('input:checked');
+    ->json_is('/license'   => 'Apache-2.0')
+    ->json_is('/pattern'   => 'You may obtain a copy of the License at')
+    ->json_is('/patent'    => 0)
+    ->json_is('/trademark' => 0);
   $t->post_ok('/licenses/update_pattern/1' => form => {license => 'Apache-2.0', pattern => 'real-time web framework'})
     ->status_is(302)
     ->header_is(Location => '/licenses/edit_pattern/1');
   $t->get_ok('/licenses/Apache-2.0')
     ->status_is(200)
-    ->element_exists('div div a[href=/licenses/edit_pattern/1]')
-    ->text_is('div pre' => 'real-time web framework')
+    ->element_exists('#license-details')
     ->text_like('.alert-success' => qr/Pattern has been updated, reindexing all affected packages/);
+  $t->get_ok('/licenses/meta/Apache-2.0')->status_is(200)->json_is('/display_license' => 'Apache-2.0');
+  my $patterns = $t->tx->res->json->{patterns};
+  my ($pattern) = grep { $_->{id} == 1 } @$patterns;
+  is $pattern->{pattern}, 'real-time web framework', 'license meta includes updated pattern';
+  ok exists $pattern->{matches_capped},  'license meta includes match cap marker';
+  ok exists $pattern->{packages_capped}, 'license meta includes package cap marker';
 
   $t->post_ok('/licenses/update_patterns' => form => {license => 'Apache-2.0', spdx => 'Apache-2'})
     ->status_is(302)
     ->header_is(Location => '/licenses/Apache-2.0');
   $t->get_ok('/licenses/Apache-2.0')
     ->status_is(200)
-    ->element_exists('div div a[href=/licenses/edit_pattern/1]')
-    ->text_is('div pre' => 'real-time web framework')
+    ->element_exists('#license-details')
     ->text_like('.alert-danger' => qr/not a valid SPDX expression/);
 
   $t->post_ok('/licenses/update_patterns' => form => {license => 'Apache-2.0', spdx => 'Apache-2.0'})
@@ -183,9 +189,59 @@ subtest 'Pattern change' => sub {
     ->header_is(Location => '/licenses/Apache-2.0');
   $t->get_ok('/licenses/Apache-2.0')
     ->status_is(200)
-    ->element_exists('div div a[href=/licenses/edit_pattern/1]')
-    ->text_is('div pre' => 'real-time web framework')
+    ->element_exists('#license-details')
     ->text_like('.alert-success' => qr/2 patterns have been updated/);
+  $t->get_ok('/licenses/meta/Apache-2.0')->status_is(200)->json_is('/spdx' => 'Apache-2.0');
+};
+
+subtest 'Pattern detail JSON endpoint' => sub {
+  $t->get_ok('/licenses/pattern/1.json')
+    ->status_is(200)
+    ->json_is('/id'      => 1)
+    ->json_is('/license' => 'Apache-2.0')
+    ->json_is('/pattern' => 'real-time web framework')
+    ->json_has('/risk')
+    ->json_has('/spdx');
+
+  $t->get_ok('/licenses/pattern/999999.json')->status_is(404);
+
+  # Logging out must put the JSON endpoint back behind the login wall.
+  $t->get_ok('/logout')->status_is(302);
+  $t->get_ok('/licenses/pattern/1.json')->status_is(401)->content_like(qr/Login Required/);
+  $t->get_ok('/login')->status_is(302);
+};
+
+subtest 'Pattern match count JSON endpoint' => sub {
+  $t->get_ok('/licenses/pattern/1/match_count.json')->status_is(200)->json_has('/matches')->json_has('/packages');
+
+  # Logging out must put the JSON endpoint back behind the login wall.
+  $t->get_ok('/logout')->status_is(302);
+  $t->get_ok('/licenses/pattern/1/match_count.json')->status_is(401)->content_like(qr/Login Required/);
+  $t->get_ok('/login')->status_is(302);
+};
+
+subtest 'License detail JSON endpoint permissions' => sub {
+  $t->get_ok('/licenses/meta/Apache-2.0')
+    ->status_is(200)
+    ->json_is('/license'   => 'Apache-2.0')
+    ->json_is('/can_admin' => 1);
+
+  $t->post_ok('/licenses/meta/Apache-2.0' => form => {license => 'Apache-2.0', spdx => 'Apache-2.0'})
+    ->status_is(200)
+    ->json_is('/updated' => 2);
+
+  $t->get_ok('/logout')->status_is(302);
+  $t->get_ok('/licenses/meta/Apache-2.0')
+    ->status_is(200)
+    ->json_is('/license'   => 'Apache-2.0')
+    ->json_is('/can_admin' => 0);
+  $t->post_ok('/licenses/meta/Apache-2.0' => form => {license => 'Apache-2.0', spdx => 'Apache-2.0'})
+    ->status_is(403)
+    ->content_like(qr/Permission/);
+  $t->post_ok('/licenses/pattern/1.json' => form => {license => 'Apache-2.0', pattern => 'real-time web framework'})
+    ->status_is(403)
+    ->content_like(qr/Permission/);
+  $t->get_ok('/login')->status_is(302);
 };
 
 # Automatic reindexing
@@ -345,6 +401,79 @@ subtest 'Prevent index race condition' => sub {
   ok $t->app->packages->reindex(1), 'reindexing';
 
   ok !$t->app->packages->reindex(99999), 'package does not exist';
+};
+
+subtest 'Reindex skips when an import or unpack is queued' => sub {
+  my $minion = $t->app->minion;
+
+  # Drain anything left over from prior subtests
+  $minion->perform_jobs;
+
+  for my $task (qw(obs_import git_import unpack)) {
+    my $blocker = $minion->enqueue($task => [1] => {notes => {pkg_1 => 1}});
+    ok !$t->app->packages->reindex(1), "reindex skipped while $task is inactive";
+    is $minion->jobs({tasks => ['index'], states => ['inactive']})->total, 0, "no orphan index enqueued ($task)";
+    $minion->backend->remove_job($blocker);
+  }
+
+  ok $t->app->packages->reindex(1), 'reindex proceeds once the queue is clear';
+  $minion->perform_jobs;
+};
+
+subtest 'Index retries instead of failing when unpacked is transiently null' => sub {
+  my $minion = $t->app->minion;
+  my $db     = $t->app->pg->db;
+
+  $minion->perform_jobs;
+
+  # Simulate an unpack-in-progress: unpacked has just been cleared by _unpack
+  # but the actual unpack work has not finished yet
+  $db->update('bot_packages', {unpacked => undef}, {id => 1});
+
+  my $job_id = $minion->enqueue('index', [1]);
+  my $worker = $minion->worker->register;
+  my $job    = $worker->dequeue(0, {id => $job_id});
+  is $job->execute, undef, 'no error from execute';
+  $worker->unregister;
+
+  my $info = $minion->job($job_id)->info;
+  is $info->{state},   'inactive', 'job was retried instead of failed';
+  is $info->{retries}, 1,          'retried once';
+  is $info->{result},  undef,      'no failure result yet';
+
+  # Simulate the unpack finishing (sets unpacked) and the delay expiring so the
+  # retried job becomes ready for a worker again
+  $db->update('bot_packages', {unpacked => \'now()'}, {id => 1});
+  $db->update('minion_jobs',  {delayed  => \'now()'}, {id => $job_id});
+
+  $minion->perform_jobs;
+  is $minion->job($job_id)->info->{state}, 'finished', 'retried job eventually succeeds';
+};
+
+subtest 'Index gives up after too many retries' => sub {
+  my $minion = $t->app->minion;
+  my $db     = $t->app->pg->db;
+
+  $minion->perform_jobs;
+  $db->update('bot_packages', {unpacked => undef}, {id => 1});
+
+  my $job_id = $minion->enqueue('index', [1]);
+
+  # Burn through the retry budget without waiting on real delays
+  for my $attempt (1 .. 11) {
+    $db->update('minion_jobs', {delayed => \'now()'}, {id => $job_id});
+    my $worker = $minion->worker->register;
+    my $job    = $worker->dequeue(0, {id => $job_id});
+    last unless $job;
+    $job->execute;
+    $worker->unregister;
+  }
+
+  my $info = $minion->job($job_id)->info;
+  is $info->{state}, 'failed', 'job eventually fails when unpack never completes';
+  like $info->{result}, qr/gave up after \d+ retries/, 'result mentions retry exhaustion';
+
+  $db->update('bot_packages', {unpacked => \'now()'}, {id => 1});
 };
 
 done_testing();

@@ -1,17 +1,5 @@
-# Copyright (C) 2018-2024 SUSE LLC
-#
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License along
-# with this program; if not, see <http://www.gnu.org/licenses/>.
+# SPDX-FileCopyrightText: SUSE LLC
+# SPDX-License-Identifier: GPL-2.0-or-later
 
 package Cavil::Task::Analyze;
 use Mojo::Base 'Mojolicious::Plugin', -signatures;
@@ -104,11 +92,16 @@ sub _analyzed ($job, $id) {
   return $job->finish("Package $id is already being processed")
     unless my $guard = $minion->guard("processing_pkg_$id", 172800);
 
-  # Only "new" and "acceptable" can be reviewed automatically
+  # Only "new" and "acceptable" can be reviewed automatically. Already
+  # reviewed packages still need their notice refreshed so it doesn't
+  # display a stale diff from before the package was approved.
   my $pkg = $pkgs->find($id);
   return unless my $pkg_shortname = $pkg->{checksum};
   return unless $pkg->{indexed};
-  return if $pkg->{state} ne 'new' && $pkg->{state} ne 'acceptable';
+  if ($pkg->{state} ne 'new' && $pkg->{state} ne 'acceptable') {
+    _refresh_notice($app, $pkg);
+    return;
+  }
 
   # Incomplete checkout
   my $specfile = $reports->specfile_report($id);
@@ -179,6 +172,7 @@ sub _analyzed ($job, $id) {
     $pkg->{state}            = $found_acceptable_by_lawyer ? 'acceptable_by_lawyer' : 'acceptable';
     $pkg->{review_timestamp} = 1;
     $pkg->{reviewing_user}   = undef;
+    $pkg->{notice}           = undef;
     $pkg->{result}           = "Accepted because previously reviewed under the same license ($f_id)";
     $pkgs->update($pkg);
     return;
@@ -206,47 +200,28 @@ sub _analyzed ($job, $id) {
 }
 
 sub _look_for_smallest_delta ($app, $pkg, $allow_accept, $has_manual_review, $incomplete_checkout) {
-  my $reports = $app->reports;
-  my $pkgs    = $app->packages;
+  my $pkgs = $app->packages;
+  my ($matched_id, $best, $summary) = _smallest_delta($app, $pkg);
 
-  my $older_reviews = $pkgs->old_reviews($pkg);
-  my $new_summary   = $reports->summary($pkg->{id});
-
-  my $best_score;
-  my $best;
-  my %checked;
-  for my $old (@$older_reviews) {
-    next if $checked{$old->{checksum}};
-    my $old_summary = $reports->summary($old->{id});
-    my $score       = summary_delta_score($old_summary, $new_summary);
-
-    # don't look further
-    if (!$score) {
-      $pkg->{result} = undef;
-      if ($allow_accept) {
-        $pkg->{result}           = "Accepted because of no significant difference ($old->{id})";
-        $pkg->{state}            = 'acceptable';
-        $pkg->{review_timestamp} = 1;
-        $pkg->{reviewing_user}   = undef;
-      }
-
-      $pkg->{notice} = "Not found any significant difference against $old->{id}";
-      if ($incomplete_checkout) {
-        $pkg->{notice} .= ', manual review is required because the checkout might be incomplete';
-      }
-      elsif (!$has_manual_review) {
-        $pkg->{notice} .= ', manual review is required because previous reports are missing a reviewing user';
-      }
-
-      $pkgs->update($pkg);
-      return;
+  if (defined $matched_id && !$best) {
+    $pkg->{result} = undef;
+    if ($allow_accept) {
+      $pkg->{result}           = "Accepted because of no significant difference ($matched_id)";
+      $pkg->{state}            = 'acceptable';
+      $pkg->{review_timestamp} = 1;
+      $pkg->{reviewing_user}   = undef;
     }
 
-    $checked{$old->{checksum}} = 1;
-    if (!$best || $score < $best_score) {
-      $best       = $old_summary;
-      $best_score = $score;
+    $pkg->{notice} = "Not found any significant difference against $matched_id";
+    if ($incomplete_checkout) {
+      $pkg->{notice} .= ', manual review is required because the checkout might be incomplete';
     }
+    elsif (!$has_manual_review) {
+      $pkg->{notice} .= ', manual review is required because previous reports are missing a reviewing user';
+    }
+
+    $pkgs->update($pkg);
+    return;
   }
 
   unless ($best) {
@@ -256,7 +231,52 @@ sub _look_for_smallest_delta ($app, $pkg, $allow_accept, $has_manual_review, $in
     return;
   }
 
-  $pkgs->update({id => $pkg->{id}, result => undef, notice => summary_delta($best, $new_summary)});
+  $pkgs->update({id => $pkg->{id}, result => undef, notice => summary_delta($best, $summary)});
+}
+
+# Refresh just the notice column for already-reviewed packages, so the text
+# rendered in the report reflects the current dig-report state rather than
+# whatever it was when the package was last in 'new' state. Leaves state,
+# result, reviewing_user, and review_timestamp untouched.
+sub _refresh_notice ($app, $pkg) {
+  my ($matched_id, $best, $summary) = _smallest_delta($app, $pkg);
+
+  my $notice;
+  if (defined $matched_id && !$best) {
+    $notice = "Not found any significant difference against $matched_id";
+  }
+  elsif ($best) {
+    $notice = summary_delta($best, $summary);
+    $notice = undef unless length $notice;
+  }
+  $app->packages->update({id => $pkg->{id}, notice => $notice});
+}
+
+# Find the closest matching older review. Returns (matched_id, best_summary,
+# new_summary). If a zero-delta match is found, best_summary is undef and
+# matched_id is the zero-delta review id. Otherwise best_summary is the
+# closest non-zero match (or undef when no older reviews exist).
+sub _smallest_delta ($app, $pkg) {
+  my $reports       = $app->reports;
+  my $older_reviews = $app->packages->old_reviews($pkg);
+  my $new_summary   = $reports->summary($pkg->{id});
+
+  my ($best, $best_score);
+  my %checked;
+  for my $old (@$older_reviews) {
+    next if $checked{$old->{checksum}};
+    my $old_summary = $reports->summary($old->{id});
+    my $score       = summary_delta_score($old_summary, $new_summary);
+    return ($old->{id}, undef, $new_summary) unless $score;
+
+    $checked{$old->{checksum}} = 1;
+    if (!$best || $score < $best_score) {
+      $best       = $old_summary;
+      $best_score = $score;
+    }
+  }
+
+  return (undef, $best, $new_summary);
 }
 
 1;
