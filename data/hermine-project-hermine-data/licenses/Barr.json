@@ -1,0 +1,33 @@
+{
+    "spdx_id": "Barr",
+    "long_name": "Barr License",
+    "steward": "Michael Barr",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/Barr",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Partial",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "License for a package of commutative diagram macros built on top of Xy-pic.\r\n\r\n\r\nInclusion in a commercial software package, Michael Barr (email: barr@barrs.org) would appreciate receiving a free copy.",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Barr"
+            ],
+            "generic": null,
+            "name": "Package must be renamed if changed",
+            "verbatim": "[...]\r\nIf changed, it must be renamed",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Unmodified"
+        }
+    ]
+}

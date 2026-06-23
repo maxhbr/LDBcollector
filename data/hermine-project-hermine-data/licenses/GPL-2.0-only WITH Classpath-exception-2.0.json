@@ -6,11 +6,11 @@
     "url": "https://spdx.org/licenses/Classpath-exception-2.0.html",
     "osi_approved": null,
     "fsf_approved": null,
-    "foss": "",
+    "foss": "Yes",
     "patent_grant": false,
     "ethical_clause": false,
     "non_commercial": false,
-    "non_tivoisation": null,
+    "non_tivoisation": false,
     "liability": "Full",
     "warranty": "Full",
     "law_choice": "none",
@@ -36,6 +36,19 @@
                 "GPL-2.0-only WITH Classpath-exception-2.0"
             ],
             "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Licence and copyright",
+            "verbatim": "1. You may copy and distribute verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "GPL-2.0-only WITH Classpath-exception-2.0"
+            ],
+            "generic": [
                 "Display legal mentions in the user interface (if applicable)"
             ],
             "name": "display copyright and licence program",
@@ -49,9 +62,9 @@
                 "GPL-2.0-only WITH Classpath-exception-2.0"
             ],
             "generic": [
-                "Reproduce license and legal mentions in documentation"
+                "Preserve legal mentions in source code"
             ],
-            "name": "Licence and copyright",
+            "name": "preserve IP mentions in osurce code",
             "verbatim": "1. You may copy and distribute verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.",
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
@@ -69,19 +82,6 @@
             "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "Altered"
-        },
-        {
-            "license": [
-                "GPL-2.0-only WITH Classpath-exception-2.0"
-            ],
-            "generic": [
-                "Preserve legal mentions in source code"
-            ],
-            "name": "preserve IP mentions in osurce code",
-            "verbatim": "1. You may copy and distribute verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.",
-            "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "AlteredUnmodified"
         },
         {
             "license": [

@@ -1,0 +1,139 @@
+{
+    "spdx_id": "CDDL-1.1",
+    "long_name": "Common Development and Distribution License 1.1",
+    "steward": "Oracle",
+    "copyleft": "Weak",
+    "url": "http://glassfish.java.net/public/CDDL+GPL_1_1.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "California law/Santa Clara venue",
+    "venue_choice": "Federal Courts of the Northern District of California and the state courts of the State of California",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user",
+            "verbatim": "3.1. Availability of Source Code.\r\nAny Covered Software that You distribute or otherwise make available in Executable form must also be made available in Source Code form [...] You must inform recipients of any such Covered Software in Executable form as to how they can obtain such Covered Software in Source Code form in a reasonable manner on or through a medium customarily used for software exchange.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "License and notices in Source code",
+            "verbatim": "3.1 [...] You must include a copy of this License with every copy of the Source Code form of the Covered Software You distribute or otherwise make available. \r\n3.3 [...] You may not remove or alter any copyright, patent or trademark notices contained within the Covered Software, or any notices of licensing or any descriptive text giving attribution to any Contributor or the Initial Developer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "Add specific legal mentions in the documentation"
+            ],
+            "name": "Include location of source code in documentation",
+            "verbatim": "3.1 [...]You must inform recipients of any such Covered Software in Executable form as to how they can obtain such Covered Software in Source Code form in a reasonable manner on or through a medium customarily used for software exchange.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Include a notice identifying a contributor",
+            "verbatim": "3.3. Required Notices.\r\nYou must include a notice in each of Your Modifications that identifies You as the Contributor of the Modification.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "Do not restrict the rights of the license"
+            ],
+            "name": "Don't limit rights from upstream",
+            "verbatim": "3.5. Distribution of Executable Versions.\r\nYou may distribute the Executable form of the Covered Software under the terms of this License or under the terms of a license of Your choice, which may contain terms different from this License, provided that You are in compliance with the terms of this License and that the license for the Executable form does not attempt to limit or alter the recipient's rights in the Source Code form from the rights set forth in this License.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "License Agreement must exclude other contributors for additionnal terms"
+            ],
+            "name": "Licence agreement : Stating clearly that other contributors are not bound by any extra provision",
+            "verbatim": "3.4 [...]\r\nYou must make it absolutely clear that any such warranty, support, indemnity or liability obligation is offered by You alone, \r\n3.5 [...]\r\n You must make it absolutely clear that any terms which differ from this License are offered by You alone, not by the Initial Developer or Contributor.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "Indemnify contributors against claims"
+            ],
+            "name": "Contributor indemnification",
+            "verbatim": "3.4 [...]\r\nYou hereby agree to indemnify the Initial Developer and every Contributor for any liability incurred by the Initial Developer or such Contributor as a result of warranty, support, indemnity or liability terms You offer. \r\n3.5 [...]\r\nYou hereby agree to indemnify the Initial Developer and every Contributor for any liability incurred by the Initial Developer or such Contributor as a result of any such terms You offer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "Do not enforce patent rights (Patent peace)"
+            ],
+            "name": "Patent Peace",
+            "verbatim": "6.3. If You assert a patent infringement claim against Participant alleging\r\nthat the Participant Software directly or indirectly infringes any patent\r\nwhere such claim is resolved (such as by license or settlement) prior to the\r\ninitiation of patent infringement litigation, then the reasonable value of\r\nthe licenses granted by such Participant under Sections 2.1 or 2.2 shall be\r\ntaken into account in determining the amount or value of any payment or license.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "CDDL-1.1"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak copyleft",
+            "verbatim": "3.1 [...]  and that Source Code form must be distributed only under the terms of this License.\r\n[...]\r\n3.2. Modifications.\r\nThe Modifications that You create or to which You contribute are governed by the terms of this License. \r\n[...]\r\n3.5. Distribution of Executable Versions.\r\nYou may distribute the Executable form of the Covered Software under the terms of this License or under the terms of a license of Your choice, which may contain terms different from this License, provided that You are in compliance with the terms of this License and that the license for the Executable form does not attempt to limit or alter the recipient's rights in the Source Code form from the rights set forth in this License.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

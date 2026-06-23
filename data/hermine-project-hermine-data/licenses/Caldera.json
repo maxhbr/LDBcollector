@@ -1,0 +1,74 @@
+{
+    "spdx_id": "Caldera",
+    "long_name": "Caldera License",
+    "steward": "Caldera International, Inc.",
+    "copyleft": "None",
+    "url": "http://www.lemis.com/grog/UNIX/ancient-source-all.pdf",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:\r\n\r\n32-bit 32V UNIX\r\n\r\n16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Caldera"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Reproduce licence and legal mentions in documentation",
+            "verbatim": "Redistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.\r\n\r\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Caldera"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Must retain the above copyright notice",
+            "verbatim": "Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n\r\nRedistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.\r\n\r\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Caldera"
+            ],
+            "generic": [
+                "Add specific mentions in advertising"
+            ],
+            "name": "Must display this acknowledgement",
+            "verbatim": "All advertising materials mentioning features or use of this software must display the following acknowledgement:\r\n\r\nThis product includes software developed or owned by Caldera International, Inc.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Caldera"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment or promotion",
+            "verbatim": "Neither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

@@ -23,9 +23,9 @@
                 "BlueOak-1.0.0"
             ],
             "generic": null,
-            "name": "Reproduce license",
-            "verbatim": "## Notices\r\n\r\nYou must ensure that everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license or a link to <https://blueoakcouncil.org/license/1.0.0>.",
-            "passivity": "Active",
+            "name": "Patent Peace",
+            "verbatim": "## Patent\r\nEach contributor licenses you to do everything with this software that would otherwise infringe any patent claims they can license or become able to license.",
+            "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
@@ -34,9 +34,9 @@
                 "BlueOak-1.0.0"
             ],
             "generic": null,
-            "name": "Patent Peace",
-            "verbatim": "## Patent\r\nEach contributor licenses you to do everything with this software that would otherwise infringe any patent claims they can license or become able to license.",
-            "passivity": "Passive",
+            "name": "Reproduce license",
+            "verbatim": "## Notices\r\n\r\nYou must ensure that everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license or a link to <https://blueoakcouncil.org/license/1.0.0>.",
+            "passivity": "Active",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         }

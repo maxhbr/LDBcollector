@@ -1,0 +1,21 @@
+{
+    "spdx_id": "LicenseRef-scancode-json-pd",
+    "long_name": "JSON Public Domain Notice",
+    "steward": "",
+    "copyleft": "None",
+    "url": "https://scancode-licensedb.aboutcode.org/json-pd.html",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "liability": "Absent",
+    "warranty": "Partial",
+    "law_choice": "",
+    "venue_choice": "",
+    "comment": "Public Domain",
+    "verbatim": "json2.js\r\n 2011-10-19\r\n\r\n Public Domain.\r\n\r\n NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.\r\n\r\n See http://www.JSON.org/js.html\r\n\r\nThis code should be minified before deployment.\r\nSee http://javascript.crockford.com/jsmin.html\r\n\r\nUSE YOUR OWN COPY. IT IS EXTREMELY UNWISE TO LOAD CODE FROM SERVERS YOU DO NOT CONTROL.",
+    "obligations": []
+}

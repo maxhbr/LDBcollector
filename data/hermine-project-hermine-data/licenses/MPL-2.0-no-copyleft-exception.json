@@ -28,7 +28,7 @@
             "name": "Inform end user how to get CSC",
             "verbatim": "3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\nsuch Covered Software must also be made available in Source Code Form, as described in Section 3.1, and You must inform recipients of the Executable Form how they can obtain a copy of such Source Code Form by reasonable means in a timely manner, at a charge no more than the cost of distribution to the recipient; and",
             "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_expl": "DistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
         {
@@ -49,10 +49,10 @@
                 "MPL-2.0-no-copyleft-exception"
             ],
             "generic": [
-                "Indemnify contributors against claims"
+                "Do not restrict the rights of the license"
             ],
-            "name": "Indemnification of contributors",
-            "verbatim": "3.5\r\nYou hereby agree to indemnify every Contributor for any liability incurred by such Contributor as a result of warranty, support, indemnity or liability terms You offer. You may include additional disclaimers of warranty and limitations of liability specific to any jurisdiction.",
+            "name": "Don't limit rights from upstream",
+            "verbatim": "3.2. Distribution of Executable Form\r\n(b) You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients' rights in the Source Code Form under this License.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
@@ -62,10 +62,10 @@
                 "MPL-2.0-no-copyleft-exception"
             ],
             "generic": [
-                "Do not restrict the rights of the license"
+                "Indemnify contributors against claims"
             ],
-            "name": "Don't limit rights from upstream",
-            "verbatim": "3.2. Distribution of Executable Form\r\n(b) You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients' rights in the Source Code Form under this License.",
+            "name": "Indemnification of contributors",
+            "verbatim": "3.5\r\nYou hereby agree to indemnify every Contributor for any liability incurred by such Contributor as a result of warranty, support, indemnity or liability terms You offer. You may include additional disclaimers of warranty and limitations of liability specific to any jurisdiction.",
             "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"

@@ -1,0 +1,113 @@
+{
+    "spdx_id": "Aladdin",
+    "long_name": "Aladdin Free Public License",
+    "steward": "Aladdin Enterprises",
+    "copyleft": "Strong",
+    "url": "http://pages.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm",
+    "osi_approved": false,
+    "fsf_approved": false,
+    "foss": "No-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": true,
+    "non_tivoisation": false,
+    "liability": "Full",
+    "warranty": "Full",
+    "law_choice": "This License is governed by the laws of the State of California, U.S.A., excluding choice of law rules.",
+    "venue_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Aladdin"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user",
+            "verbatim": "2.(c) (iv) You must accompany the Work with the complete corresponding machine-readable source code, delivered on a medium customarily used for software interchange. The source code for a work means the preferred form of the work for making modifications to it. For an executable work, complete source code means all the source code for all modules it contains, plus any associated interface definition files, plus the scripts used to control compilation and installation of the executable code. If you distribute with the Work any component that is normally distributed (in either source or binary form) with the major components (compiler, kernel, and so on) of the operating system on which the executable runs, you must also distribute the source code of that component if you have it and are allowed to do so;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Aladdin"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "You must include : name, e-mail address, date and purpose of the change",
+            "verbatim": "2.(c)(i) If you have modified the Program, you must cause the Work to carry prominent notices stating that you have modified the Program's files and the date of any change. In each source file that you have modified, you must include a prominent notice that you have modified the file, including your name, your e-mail address (if any), and the date and purpose of the change;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "Aladdin"
+            ],
+            "generic": [
+                "Display legal mentions in the user interface (if applicable)"
+            ],
+            "name": "Display a copyright and warranty notice",
+            "verbatim": "2.(c).(iii) If the Work normally reads commands interactively when run, you must cause it, at each time the Work commences operation, to print or display an announcement including an appropriate copyright notice and a notice that there is no warranty (or else, saying that you provide a warranty). Such notice must also state that users may redistribute the Work only under the conditions of this License and tell the user how to view the copy of this License included with the Work. (Exceptions: if the Program is interactive but normally prints or displays such an announcement only at the request of a user, such as in an \"About box\", the Work is required to print or display the notice only under the same circumstances; if the Program itself is interactive but does not normally print such an announcement, the Work is not required to print an announcement.);",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Aladdin"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "you must include either a written copy of this License on documentation",
+            "verbatim": "2.(c).(v) If you distribute any written or printed material at all with the Work, such material must include either a written copy of this License, or a prominent written indication that the Work is covered by this License and written instructions for printing and/or displaying the copy of the License on the distribution medium;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Aladdin"
+            ],
+            "generic": [
+                "Do not restrict the rights of the license"
+            ],
+            "name": "Do not restrict the rights of the incense",
+            "verbatim": "(vi) You may not impose any further restrictions on the recipient's exercise of the rights granted herein.\r\nIf distribution of executable or object code is made by offering the equivalent ability to copy from a designated place, then offering equivalent ability to copy the source code from the same place counts as distribution of the source code, even though third parties are not compelled to copy the source code along with the object code.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Aladdin"
+            ],
+            "generic": [
+                "Don't sell the software in itself"
+            ],
+            "name": "Don't sell the software in itself",
+            "verbatim": "2.(a) Distribution of the Program or any work based on the Program by a commercial organization to any third party is prohibited if any payment is made in connection with such distribution, whether directly (as in payment for a copy of the Program) or indirectly (as in payment for some service related to the Program, or payment for some product or service that includes a copy of the Program \"without charge\"; these are only examples, and not an exhaustive enumeration of prohibited activities). The following methods of distribution involving payment shall not in and of themselves be a violation of this restriction:\r\n(i) Posting the Program on a public access information storage and retrieval service for which a fee is received for retrieving information (such as an on-line service), provided that the fee is not content-dependent (i.e., the fee would be the same for retrieving the same volume of information consisting of random data) and that access to the service and to the Program is available independent of any other product or service. An example of a service that does not fall under this section is an on-line service that is operated by a company and that is only available to customers of that company. (This is not an exhaustive enumeration.)\r\n(ii) Distributing the Program on removable computer-readable media, provided that the files containing the Program are reproduced entirely and verbatim on such media, that all information on such media be redistributable for non-commercial purposes without charge, and that such media are distributed by themselves (except for accompanying documentation) independent of any other product or service. Examples of such media include CD-ROM, magnetic tape, and optical storage media. (This is not intended to be an exhaustive list.) An example of a distribution that does not fall under this section is a CD-ROM included in a book or magazine. (This is not an exhaustive enumeration.)",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Aladdin"
+            ],
+            "generic": [
+                "Strong Copyleft"
+            ],
+            "name": "Strong Copyleft",
+            "verbatim": "2.(c). (ii) You must cause the Work to be licensed as a whole and at no charge to all third parties under the terms of this License;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

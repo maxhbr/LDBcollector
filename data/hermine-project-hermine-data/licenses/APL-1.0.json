@@ -114,11 +114,11 @@
                 "APL-1.0"
             ],
             "generic": [
-                "Do not enforce patent rights (Patent peace)"
+                "Weak Copyleft"
             ],
-            "name": "Do not enforce patent rights (Patent peace)",
-            "verbatim": "a) This License does not include or grant any patent license whatsoever from the Initial Contributor, Subsequent Contributor, or any Distributor unless, at the time the Initial Work is first distributed or made available under this License (as the case may be), the Initial Contributor has selected pursuant to Part 6 of Exhibit A the patent terms in paragraphs A, B, C, D and E from Part 6 of Exhibit A. If this is not done then the Initial Work and any other Subsequent Work is made available under the License without any patent license (the \"PATENTS-EXCLUDED LICENSE\").\r\n\r\nPART 6: PATENT LICENSING TERMS\r\nFor the purposes of this License, paragraphs A, B, C, D and E of this Part 6 of Exhibit A are only incorporated and form part of the terms of the License if the Initial Contributor places an \"X\" or \"x\" in the selection box alongside the YES answer to the question immediately below.\r\n\r\nIs this a Patents-Included License pursuant to Section 2.2 of the License?\r\n\r\nYES [ ]\r\n\r\nNO [ ]\r\n\r\nBy default, if YES is not selected by the Initial Contributor, the answer is NO.",
-            "passivity": "Passive",
+            "name": "Weak copyleft",
+            "verbatim": "3.3. SOURCE CODE DISTRIBUTIONS.\r\nWhen a Distributor makes the Licensed Work, or any portion thereof, available to any Person in Source Code form, it must be made available under this License \r\n\r\n 3.6. INDEPENDENT MODULES.\r\nThis License shall not apply to Independent Modules of any Initial Contributor, Subsequent Contributor, Distributor or any Recipient, and such Independent Modules may be licensed or made available under one or more separate license agreements.\r\n3.7. LARGER WORKS.\r\nAny Distributor or Recipient may create or contribute to a Larger Work by combining any of the Licensed Work with other code not governed by the terms of this License, and may distribute the Larger Work as one or more products. However, in any such case, Distributor or Recipient (as the case may be) must make sure that the requirements of this License are fulfilled for the Licensed Work portion of the Larger Work.",
+            "passivity": "",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
@@ -127,11 +127,11 @@
                 "APL-1.0"
             ],
             "generic": [
-                "Weak Copyleft"
+                "Do not enforce patent rights (Patent peace)"
             ],
-            "name": "Weak copyleft",
-            "verbatim": "3.3. SOURCE CODE DISTRIBUTIONS.\r\nWhen a Distributor makes the Licensed Work, or any portion thereof, available to any Person in Source Code form, it must be made available under this License \r\n\r\n 3.6. INDEPENDENT MODULES.\r\nThis License shall not apply to Independent Modules of any Initial Contributor, Subsequent Contributor, Distributor or any Recipient, and such Independent Modules may be licensed or made available under one or more separate license agreements.\r\n3.7. LARGER WORKS.\r\nAny Distributor or Recipient may create or contribute to a Larger Work by combining any of the Licensed Work with other code not governed by the terms of this License, and may distribute the Larger Work as one or more products. However, in any such case, Distributor or Recipient (as the case may be) must make sure that the requirements of this License are fulfilled for the Licensed Work portion of the Larger Work.",
-            "passivity": "",
+            "name": "Do not enforce patent rights (Patent peace)",
+            "verbatim": "a) This License does not include or grant any patent license whatsoever from the Initial Contributor, Subsequent Contributor, or any Distributor unless, at the time the Initial Work is first distributed or made available under this License (as the case may be), the Initial Contributor has selected pursuant to Part 6 of Exhibit A the patent terms in paragraphs A, B, C, D and E from Part 6 of Exhibit A. If this is not done then the Initial Work and any other Subsequent Work is made available under the License without any patent license (the \"PATENTS-EXCLUDED LICENSE\").\r\n\r\nPART 6: PATENT LICENSING TERMS\r\nFor the purposes of this License, paragraphs A, B, C, D and E of this Part 6 of Exhibit A are only incorporated and form part of the terms of the License if the Initial Contributor places an \"X\" or \"x\" in the selection box alongside the YES answer to the question immediately below.\r\n\r\nIs this a Patents-Included License pursuant to Section 2.2 of the License?\r\n\r\nYES [ ]\r\n\r\nNO [ ]\r\n\r\nBy default, if YES is not selected by the Initial Contributor, the answer is NO.",
+            "passivity": "Passive",
             "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "AlteredUnmodified"
         },
