@@ -1,12 +1,115 @@
-#  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+#  SPDX-FileCopyrightText: 2026 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.db import transaction
-from django.forms import ModelForm, ModelChoiceField, Form
+from django.forms import ModelForm, ModelChoiceField, Form, HiddenInput
 
-from cube.forms.mixins import AutocompleteFormMixin
+from cube.forms.mixins import AutocompleteFormMixin, FieldsetFormMixin
+from cube.forms.widgets import SpdxIdentifierWidget
 from cube.models import Generic, Obligation, License, Compatibility
 from cube.utils.reference import GENERIC_SHARED_FIELDS, LICENSE_SHARED_FIELDS
+
+
+class LicenseForm(FieldsetFormMixin, ModelForm):
+    fieldsets = [
+        (
+            "License identity",
+            {
+                "fields": [
+                    "long_name",
+                    "spdx_id",
+                    "url",
+                    "steward",
+                    ("Add a public comment", ("comment",)),
+                ]
+            },
+        ),
+        ("Usage", {"fields": ["copyleft", "non_commercial", "ethical_clause"]}),
+        (
+            "FOSS status",
+            {
+                "fields": [
+                    "osi_approved",
+                    "fsf_approved",
+                    "foss",
+                    (
+                        "Add applicable law and competent court",
+                        ("law_choice", "venue_choice"),
+                    ),
+                ]
+            },
+        ),
+        (
+            "Characteristics",
+            {
+                "fields": [
+                    "patent_grant",
+                    "warranty",
+                    "liability",
+                    "non_tivoisation",
+                ]
+            },
+        ),
+        (
+            "License text",
+            {
+                "fields": [
+                    "verbatim",
+                ]
+            },
+        ),
+    ]
+
+    class Meta:
+        model = License
+        fields = [
+            "long_name",
+            "spdx_id",
+            "url",
+            "steward",
+            "comment",
+            "copyleft",
+            "non_commercial",
+            "ethical_clause",
+            "osi_approved",
+            "fsf_approved",
+            "foss",
+            "law_choice",
+            "venue_choice",
+            "patent_grant",
+            "warranty",
+            "liability",
+            "non_tivoisation",
+            "verbatim",
+        ]
+        widgets = {
+            "spdx_id": SpdxIdentifierWidget,
+        }
+
+
+class GenericForm(FieldsetFormMixin, ModelForm):
+    fieldsets = [
+        (
+            "General characteristics",
+            {"fields": ["name", "description", "metacategory", "passivity"]},
+        ),
+        (
+            "Internal policy",
+            {"fields": ["internal_process", "in_core", "team"]},
+        ),
+    ]
+
+    class Meta:
+        model = Generic
+        fields = [
+            "name",
+            "description",
+            "metacategory",
+            "passivity",
+            "internal_process",
+            "in_core",
+            "team",
+        ]
 
 
 class ObligationGenericDiffForm(ModelForm):
@@ -155,5 +258,6 @@ class ObligationForm(AutocompleteFormMixin, ModelForm):
 class CompatibilityForm(AutocompleteFormMixin, ModelForm):
     class Meta:
         model = Compatibility
-        fields = ("to_license", "direction")
+        fields = ("from_license", "to_license", "direction")
         autocomplete_fields = ["to_license"]
+        widgets = {"from_license": HiddenInput()}

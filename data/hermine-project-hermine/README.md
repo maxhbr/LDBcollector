@@ -1,6 +1,6 @@
 <!--
-SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
-SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+SPDX-FileCopyrightText: 2021-2026 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022-2026 Martin Delabre <gitlab.com/delabre.martin>
 
 SPDX-License-Identifier: CC-BY-4.0
 -->

@@ -14,27 +14,13 @@ SPDX-License-Identifier: AGPL-3.0-only
   <ul>
     <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url 'cube:license_list' %}">Licenses</a></li>
-    <li>{{ license.spdx_id }}</li>
+    <li>{{ license.long_name }}</li>
   </ul>
 {% endblock %}
 
 {% block actions %}
-  {% if perms.cube.change_license %}
-    <a class="button" href="{% url "cube:license_update" license.id %}">
-      <span class="icon">
-        <i class="fas fa-edit"></i>
-      </span>
-      <span>Edit or duplicate</span>
-    </a>
-    <a class="button" href="{% url "cube:license_update_policy" license.id %}">
-      <span class="icon">
-        <i class="fas fa-edit"></i>
-      </span>
-      <span>Edit policy</span>
-    </a>
-  {% endif %}
   {% if can_delete %}
-    <a class="button is-danger" href="{% url "cube:license_delete" license.id %}">
+    <a class="button is-danger" href="{% url "cube:license_delete" license.id %}" aria-label="Delete this license">
       <span class="icon">
         <i class="fas fa-trash"></i>
       </span>
@@ -68,7 +54,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <span>Print (ODT export)</span>
         </a>
         {% if perms.cube.change_license %}
-          <a href="{% url "admin:cube_license_change" license.id %}" class="dropdown-item"  target="_blank">
+          <a href="{% url "admin:cube_license_change" license.id %}" class="dropdown-item" target="_blank">
             <span class="icon is-small">
               <i class="fas fa-edit"></i>
             </span>
@@ -81,24 +67,26 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block herozone %}
-  <div class="hero-body">
-    <p class="title">{{ license.long_name }}</p>
-  </div>
+  <p class="title">
+    {{ license.long_name }}
+    <span class="tag {{ license|licenseAllowedCSS }}">
+      {{ license.policy.get_allowed_display|default:"Not reviewed" }}
+    </span>
+  </p>
 {% endblock %}
 
 {% block infoitem %}
-  <p class="subtitle" style="text-transform: uppercase;">
-    <span class="icon is-medium">
-      <i class="fas fa-balance-scale"></i>
-    </span>
-    License
-  </p>
+  {% if license.updated or license.created %}
+    <p class="is-size-7 has-text-grey">
+      Last updated on {{ license.updated|default:license.created|date:"N j, Y - g:i A" }}
+    </p>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
 
   {% if license.reference_diff != 0 %}
-    <div class="message is-info">
+    <div class="message is-info" role="alert">
       <div class="message-body">
         <p>
           {% if license.reference_diff == 1 %}
@@ -112,265 +100,412 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
   {% endif %}
 
-  <section class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        <span class="icon">
-          <i class="fas fa-info-circle"></i>
-        </span>
-        Main characteristics of this license
-      </p>
-    </header>
-    <div class="card-content">
-      <div class="columns">
-        <div class="column">
-          <p><b>SPDX identifier:</b>
+  {# --- Two side-by-side summary cards --- #}
+  <div class="columns">
+
+    {# Left card: License characteristics #}
+    <div class="column">
+      <section class="card" aria-label="License characteristics">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon">
+              <i class="fas fa-info-circle" aria-hidden="true"></i>
+            </span>
+            License characteristics
+          </p>
+          {% if perms.cube.change_license %}
+            <a class="card-header-icon" href="{% url "cube:license_update" license.id %}"
+               aria-label="Edit license characteristics">
+              Edit
+              <span class="icon">
+                <i class="fas fa-edit" aria-hidden="true"></i>
+              </span>
+            </a>
+          {% endif %}
+        </header>
+        <div class="card-content">
+          <p>
+            <b>SPDX:</b>
             {% if 'LicenseRef-' in object.spdx_id or 'WITH' in object.spdx_id %}
-              <span> {{ object.spdx_id }} </span>
+              <span>{{ object.spdx_id }}</span>
             {% else %}
-              <a href="https://spdx.org/licenses/{{ object.spdx_id }}.html" target="_blank">
-                <span> {{ object.spdx_id }}</span>
+              <a href="https://spdx.org/licenses/{{ object.spdx_id }}.html" target="_blank"
+                 aria-label="View {{ object.spdx_id }} on SPDX.org">
+                {{ object.spdx_id }}
                 <span class="icon is-small">
-                  <i class="fas fa-link"></i>
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                 </span>
               </a>
             {% endif %}
             {% if object.url %}
-              <a href="{{object.url}}" target="_blank">(Other URL)</a>
+              <a href="{{ object.url }}" target="_blank" aria-label="Other URL for this license">
+                <span class="icon is-small">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </span>
+              </a>
             {% endif %}
           </p>
-          <p><b>Review status:</b>
-            <span class="tag {{ license|licenseReviewCSS }}">
-              {{ license.policy.get_status_display }}
-            </span>
+          <p>
+            <b>Copyleft:</b> {{ license.get_copyleft_display|default:"Unknown" }}
           </p>
-          <p><b>FOSS policy status:</b>
-            <span class="tag {{ license|licenseAllowedCSS }}">
-              {{ license.policy.get_allowed_display }}
-            </span>
+          <p>
+            <b>Contained in this license:</b>
+            {% if license.patent_grant %}patent grant{% endif %}{% if license.patent_grant and license.warranty %}
+              , {% endif %}{% if license.warranty %}disclaimer of warranty{% endif %}{% if license.liability %}
+                {% if license.patent_grant or license.warranty %}, {% endif %}limitation of liability{% endif %}
           </p>
-          <p><b>Explanation of FOSS policy:</b></p>
-          {% if license.policy.allowed_explanation %}
-            <div class="content">
-              {{ license.policy.allowed_explanation|linebreaks }}
-            </div>
-          {% else %}
+          {% if license.comment %}
             <p>
-              <em>No explanation has been given for this OSS policy</em> {% if perms.cube.change_licensepolicy %}- <a href="{% url "cube:license_update_policy" license.id %}">Edit</a>{% endif %}
+              <b>Public comment:</b> {{ license.comment|truncatewords:15 }}
             </p>
           {% endif %}
-        </div>
-        <div class="column">
-          <p><b>Copyleft:</b>
-            <span class="tag {{ license|licenseCopyleftCSS }}">
-              {{ license.get_copyleft_display|default:"Unknown" }}
-            </span>
-          </p>
-          <p><b>Explicit compatibilities:</b>
-            {% for compatibility in license.compatibility_from.all %}
-              <span class="tag {{ compatibility.to_license|licenseAllowedCSS }}">
-                {{ compatibility.to_license.spdx_id }}
-                ({{ compatibility.get_direction_display }}&nbsp;<a href="{% url 'cube:compatibility_delete' license.pk compatibility.pk %}" class="delete"></a>
-              </span>
-            {% endfor %}
-            <a href="{% url 'cube:compatibility_create' license.pk %}" class="button is-small is-white">
-              <i class="fa fa-plus"></i>
-            </a>
-          </p>
-          <p><b>Actually FOSS:</b>
-            <span class="tag {{ license|licenseFOSSCSS }}">
-              {{ license.get_foss_display|default:"Unknown" }}
-            </span>
-          </p>
-          <p><b>Patent Grant:</b>
-            {{ license.patent_grant|yesno:"Yes,No,Maybe" }}
-          </p>
-          <p><b>Ethical clause:</b>
-            {{ license.ethical_clause|yesno:"Yes,No,Maybe" }}
-          </p>
-          <p><b>Restricted to non-commercial use:</b>
-            {{ license.non_commercial|yesno:"Yes,No,Maybe" }}
-          </p>
-        </div>
 
-        <div class="column">
-          <p><b>Choice of law:</b>
-            {{ license.law_choice|default:"None" }}
-          </p>
-          <p><b>Choice of venue:</b>
-            {{ license.venue_choice|default:"None" }}
-          </p>
-          <p><b>Disclaimer of Warranty:</b>
-            {{ license.get_warranty_display|default:"Unknown" }}
-          </p>
-          <p><b>Limitation of Liability:</b>
-            {{ license.get_liability_display|default:"Unknown" }}
-          </p>
-
-          <!-- Show optional comment -->
-          {% if license.comment %}
-            <p><b>Your comment :</b></p>
-            <div class="content">
-              {{ license.comment|linebreaks }}
+          <details>
+            <summary><b>View all characteristics</b></summary>
+            <div class="mt-3">
+              <p>
+                <b>Actually FOSS:</b>
+                <span class="tag {{ license|licenseFOSSCSS }}">
+                  {{ license.get_foss_display|default:"Unknown" }}
+                </span>
+              </p>
+              <p>
+                <b>Patent Grant:</b>
+                {{ license.patent_grant|yesno:"Yes,No,Maybe" }}
+              </p>
+              <p>
+                <b>Ethical clause:</b>
+                {{ license.ethical_clause|yesno:"Yes,No,Maybe" }}
+              </p>
+              <p>
+                <b>Restricted to non-commercial use:</b>
+                {{ license.non_commercial|yesno:"Yes,No,Maybe" }}
+              </p>
+              <p>
+                <b>Choice of law:</b>
+                {{ license.law_choice|default:"None" }}
+              </p>
+              <p>
+                <b>Choice of venue:</b>
+                {{ license.venue_choice|default:"None" }}
+              </p>
+              <p>
+                <b>Disclaimer of Warranty:</b>
+                {{ license.get_warranty_display|default:"Unknown" }}
+              </p>
+              <p>
+                <b>Limitation of Liability:</b>
+                {{ license.get_liability_display|default:"Unknown" }}
+              </p>
+              <p>
+                <b>Explicit compatibilities:</b>
+                {% for compatibility in license.compatibility_from.all %}
+                  <span class="tag {{ compatibility.to_license|licenseAllowedCSS }}">
+                    {{ compatibility.to_license.spdx_id }}
+                    ({{ compatibility.get_direction_display }}&nbsp;<a
+                      href="{% url 'cube:compatibility_delete' license.pk compatibility.pk %}" class="delete"
+                      aria-label="Remove compatibility with {{ compatibility.to_license.spdx_id }}"></a>
+                  </span>
+                {% endfor %}
+                <a href="{% url 'cube:compatibility_create' license.pk %}" class="button is-small is-white"
+                   aria-label="Add compatibility">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </a>
+              </p>
+              <p>
+                <strong>
+                  {% if license.is_core_covered %}
+                    <span class="icon"><i class="fas fa-check has-text-success" aria-hidden="true"></i></span>
+                    This license is covered by the obligations in the core
+                  {% else %}
+                    <span class="icon has-text-grey"><i class="fas fa-times" aria-hidden="true"></i></span>
+                    This license is NOT covered by the obligations in the core
+                  {% endif %}
+                </strong>
+              </p>
             </div>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    {# Right card: Internal policy #}
+    <div class="column">
+      <section class="card" aria-label="Internal policy">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon">
+              <i class="fas fa-shield-alt" aria-hidden="true"></i>
+            </span>
+            Internal policy
+          </p>
+          {% if perms.cube.change_licensepolicy %}
+            <a class="card-header-icon" href="{% url "cube:license_update_policy" license.id %}"
+               aria-label="Edit internal policy">
+              Edit
+              <span class="icon">
+                <i class="fas fa-edit" aria-hidden="true"></i>
+              </span>
+            </a>
+          {% endif %}
+        </header>
+        <div class="card-content">
+          <p>
+            <b>Policy status:</b>
+            <span class="tag {{ license|licenseAllowedCSS }}">
+              {{ license.policy.get_allowed_display|default:"Not reviewed" }}
+            </span>
+          </p>
+          {% if license.policy.allowed_explanation %}
+            <p>
+              <b>Internal comment:</b> {{ license.policy.allowed_explanation|truncatewords:20 }}
+            </p>
           {% else %}
-            <p>Comment: <i>no comment</i></p>
+            <p>
+              <em>No internal comment</em>
+              {% if perms.cube.change_licensepolicy %}
+                - <a href="{% url "cube:license_update_policy" license.id %}">Edit</a>
+              {% endif %}
+            </p>
           {% endif %}
 
-          <p><strong>
-            {% if license.is_core_covered %}
-              <span class="icon"><i class="fas fa-check has-text-success"></i></span>
-              This license is covered by the obligations in the core
-            {% else %}
-              <span class="icon has-text-grey"><i class="fas fa-times"></i></span>
-              This license is NOT covered by the obligations in the core
-            {% endif %}
-          </strong></p>
+          <details>
+            <summary><b>View all details</b></summary>
+            <div class="mt-3">
+              <p>
+                <b>Review status:</b>
+                <span class="tag {{ license|licenseReviewCSS }}">
+                  {{ license.policy.get_status_display }}
+                </span>
+              </p>
+              <p>
+                <b>FOSS policy status:</b>
+                <span class="tag {{ license|licenseAllowedCSS }}">
+                  {{ license.policy.get_allowed_display }}
+                </span>
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  {# --- License text (collapsible) --- #}
+  {% if license.verbatim %}
+    <details class="mb-4">
+      <summary>
+        <strong>Show the license text</strong>
+        <span class="icon is-small">
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </span>
+      </summary>
+      <div class="box mt-2">
+        <div class="is-italic">{{ license.verbatim|linebreaks }}</div>
+      </div>
+    </details>
+  {% endif %}
+
+  {# --- Authorized contexts --- #}
+  {% if license.policy.allowed != "always" or license.context_derogations %}
+    <section class="box has-background-white mt-5" aria-label="Authorized contexts">
+      <div class="is-flex is-justify-content-space-between is-align-items-start">
+        <div>
+          <h2 class="title is-4 mb-1">
+            <span class="icon"><i class="fas fa-exclamation-circle" aria-hidden="true"></i></span>
+            Authorized contexts
+          </h2>
+          <p class="is-6 has-text-grey mb-1">
+            Define the contexts in which this license is allowed by your organization, according to technical or
+            business criteria.
+          </p>
+        </div>
+        <a href="{% url "cube:authorizedcontext_create" license.id %}" class="button is-outlined"
+           aria-label="Add an authorized context">
+          <span class="icon"><i class="fas fa-plus" aria-hidden="true"></i></span>
+          <span>Add context</span>
+        </a>
+      </div>
+
+      {% if license.context_derogations %}
+        {% if license.product_derogations.count > 0 %}
+          <p class="mb-3">
+            There {{ license.context_derogations.count|pluralize:"is,are" }} {{ license.context_derogations.count }}
+            generic context{{ license.context_derogations.count|pluralize }} authorized for this license and
+            <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}">{{ license.product_derogations.count }}
+              product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.
+          </p>
+        {% endif %}
+
+        {% for derogation in license.context_derogations %}
+          <article class="card mb-3" aria-label="Authorized context {{ forloop.counter }}">
+            <div class="card-content">
+              <div class="columns">
+                <div class="column">
+                  <p class="has-text-weight-bold mb-2">Authorized context</p>
+                  <p>This license is authorized only in the following context:</p>
+                  <ul>
+                    {% if derogation.linking %}
+                      <li>{{ derogation.get_linking_display }}</li>
+                    {% endif %}
+                    {% if derogation.modification %}
+                      <li>{{ derogation.get_modification_display }}</li>
+                    {% endif %}
+                    {% if derogation.exploitation %}
+                      <li>{{ derogation.get_exploitation_display }}</li>
+                    {% endif %}
+                    {% if derogation.category %}
+                      <li>Category: {{ derogation.category }}</li>
+                    {% endif %}
+                    {% if derogation.scope %}
+                      <li>Scope: {{ derogation.scope }}</li>
+                    {% endif %}
+                  </ul>
+                </div>
+                <div class="column">
+                  <div class="is-flex is-justify-content-space-between is-align-items-start">
+                    <p class="has-text-weight-bold mb-2">Justification:</p>
+                    <div class="buttons has-addons">
+                      <a href="{% url "cube:authorizedcontext_update" derogation.id %}?from={{ request.path|urlencode }}"
+                         class="button is-small" aria-label="Edit this authorized context">
+                        <span class="icon is-small"><i class="fas fa-edit" aria-hidden="true"></i></span>
+                      </a>
+                      <a href="{% url "admin:cube_derogation_delete" derogation.id %}" class="button is-small"
+                         aria-label="Delete this authorized context">
+                        <span class="icon is-small"><i class="fas fa-trash-alt" aria-hidden="true"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                  {% if derogation.justification %}
+                    <p>{{ derogation.justification|truncatewords:30 }}</p>
+                    {% if derogation.justification|length > 200 %}
+                      <a href="{% url "cube:authorizedcontext_update" derogation.id %}?from={{ request.path|urlencode }}">View
+                        more</a>
+                    {% endif %}
+                  {% else %}
+                    <p><em>No justification</em></p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      {% else %}
+        <p>
+          <em>There are no generic contexts of usage authorized for this license.</em>
+          {% if license.derogations.count > 0 %}
+            There are
+            <a href="{% url "cube:derogation_list" %}?search_license={{ license.spdx_id }}">{{ license.product_derogations.count }}
+              product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.
+          {% endif %}
+        </p>
+      {% endif %}
+    </section>
+  {% endif %}
+
+  {# --- Obligations --- #}
+  <section aria-label="Obligations">
+    <div class="level mt-5">
+      <div class="level-left">
+        <div class="level-item">
+          <h2 class="title is-4">Obligations</h2>
+        </div>
+      </div>
+      <div class="level-right">
+        <div class="level-item">
+          {% if perms.cube.add_obligation %}
+            <a href="{% url "cube:obligation_create" license.id %}" class="button is-outlined"
+               aria-label="Add an obligation">
+              <span class="icon"><i class="fas fa-plus" aria-hidden="true"></i></span>
+              <span>Add obligation</span>
+            </a>
+          {% endif %}
         </div>
       </div>
     </div>
-  </section>
-  {% if license.verbatim %}
-    <section class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon">
-            <i class="fas fa-info-circle"></i>
-          </span>
-          Text of the license
-        </p>
-      </header>
-      <div class="card-content">
-        <details>
-          <summary><strong>Verbatim text of the license:</strong></summary>
-          <div class="is-italic">{{ license.verbatim|linebreaks }}</div>
-        </details>
-      </div>
-    </section>
-  {% endif %}
-  {% if license.policy.allowed == "context" or license.context_derogations %}
-    <section class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon">
-            <i class="fas fa-exclamation-circle"></i>
-          </span>
-          Authorized contexts:
-        </p>
-      </header>
 
-      <div class="card-content">
-        {% if license.context_derogations %}
-          <p>There is {{ license.context_derogations.count }} generic contexts authorized for this license (listed below) and {% if license.derogations.count > 0 %} <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
-          <div class="table-container">
-            <table>
-              <tr>
-                <th>Linking</th>
-                <th>Modification</th>
-                <th>Exploitation</th>
-                <th>Product category</th>
-                <th>Scope</th>
-                <th>Justification</th>
-                <th>Updated</th>
-                <th>Action</th>
-              </tr>
-              {% for derogation in license.context_derogations %}
-                <tr>
-                  <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
-                  <td>{{ derogation.get_modification_display|default:"<em>Any</em>" }}</td>
-                  <td>{{ derogation.get_exploitation_display|default:"<em>Any</em>" }}</td>
-                  <td>{{ derogation.category|default:"<em>Any</em>" }}</td>
-                  <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
-                  <td>
-                    {{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}
-                  </td>
-                  <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
-                  <td style="white-space: nowrap">
-                    <a href="{% url "cube:authorizedcontext_update" derogation.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-                    <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
-                  </td>
-                </tr>
-              {% endfor %}
-            </table>
-          </div>
-        {% else %}
-          <p><em>There are no generic contexts of usage authorized for this license.</em>{% if license.derogations.count > 0 %} There are <a href="{% url "cube:derogation_list" %}?search_license={{ license.spdx_id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
-        {% endif %}
-        <p><a href="{% url "cube:authorizedcontext_create" license.id %}" class="button">
-          <span class="icon"><i class="fas fa-plus"></i></span>
-          <span>Add an authorized context</span>
-        </a></p>
-
-      </div>
-    </section>
-  {% endif %}
-
-  <div class="level">
-    <div class="level-left">
-      <div class="level-item">
-        <h2 class="title is-2">Obligations attached to this license</h2>
-      </div>
-    </div>
-    <div class="level-right">
-      <div class="level-item">
-        {% if perms.cube.add_obligation %}
-          <a href="{% url "cube:obligation_create" license.id %}" class="button">
-            <span class="icon"><i class="fas fa-plus"></i></span><span>Attach new obligation</span>
-          </a>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-
-  {% if perms.cube.view_obligation %}
-    {% regroup license.obligation_set.all by generic.get_metacategory_display as metacategory_list %}
-    {% for metacategory in metacategory_list %}
-      <h3>Obligations related to {{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
-      {% for obligation in metacategory.list %}
-        <div class="card">
-          <header class="card-header level">
-            <div class="card-header-title level-left">
-              <p>{{ obligation.name }} {% if obligation.passivity %}({{ obligation.passivity }}){% endif %}</p>
+    {% if perms.cube.view_obligation %}
+      {% for obligation in license.obligation_set.all %}
+        <article class="card mb-3" aria-label="Obligation: {{ obligation.generic.name|default:obligation.name }}">
+          <header class="card-header">
+            <div class="card-header-title">
+              <div>
+                <p class="has-text-weight-bold">
+                  {% if obligation.generic %}
+                    {{ obligation.generic.name }}
+                  {% else %}
+                    {{ obligation.name }}
+                  {% endif %}
+                </p>
+              </div>
             </div>
-            <div class="level-right">
-              <div class="buttons has-addons level-item">
+            <div class="card-header-icon">
+              <div class="buttons has-addons">
                 {% if perms.cube.change_obligation %}
-                  <a href="{% url "cube:obligation_update" obligation.id %}" class="button">
-                    <span class="icon is-small"><i class="fas fa-edit"></i></span>
-                    <span>Edit obligation</span>
+                  <a href="{% url "cube:obligation_update" obligation.id %}" class="button is-small"
+                     aria-label="Edit obligation {{ obligation.generic.name|default:obligation.name }}">
+                    <span class="icon is-small"><i class="fas fa-edit" aria-hidden="true"></i></span>
                   </a>
                 {% endif %}
                 {% if perms.cube.delete_obligation %}
-                  <a href="{% url "cube:obligation_delete" obligation.id %}" class="button">
-                    <span class="icon is-small"><i class="fas fa-trash-alt"></i></span>
-                    <span>Delete obligation</span>
+                  <a href="{% url "cube:obligation_delete" obligation.id %}" class="button is-small"
+                     aria-label="Delete obligation {{ obligation.generic.name|default:obligation.name }}">
+                    <span class="icon is-small"><i class="fas fa-trash-alt" aria-hidden="true"></i></span>
                   </a>
                 {% endif %}
               </div>
             </div>
           </header>
           <div class="card-content">
-            <div class="content">
-              {% if obligation.generic %}
-                <p>Related to compliance action: <a href="{% url 'cube:generic_detail' obligation.generic.id %}">{{obligation.generic}}</a> </p>
-              {% endif %}
-              {% if obligation.passivity == "Active" %}
-                <p>Applies:</p>
-                <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
-                  <li>{{ obligation.get_trigger_expl_display }}</li></ul>
-              {% endif %}
-              <br>
-              <details>
-                <summary><strong>Corresponding text in the license:</strong></summary>
-                <div class="is-italic">{{ obligation.verbatim|linebreaks }}</div>
-              </details>
+            <div class="columns">
+              <div class="column">
+                {% if obligation.passivity %}
+                  <p>
+                    Obligation type :
+                    <strong>
+                      {% if obligation.passivity == "Active" %}
+                        Active (DO)
+                      {% else %}
+                        Passive (DON'T)
+                      {% endif %}
+                    </strong>
+                  </p>
+                {% endif %}
+                {% if obligation.passivity == "Active" %}
+                  <p>Applies:</p>
+                  <ul>
+                    <li>{{ obligation.get_trigger_mdf_display }}</li>
+                    <li>{{ obligation.get_trigger_expl_display }}</li>
+                  </ul>
+                {% endif %}
+                {% if obligation.generic %}
+                  <a href="{% url 'cube:generic_detail' obligation.generic.id %}">View the compliance action</a>
+                {% endif %}
+              </div>
+              <div class="column">
+                {% if obligation.verbatim %}
+                  <p class="has-text-weight-bold">License text :</p>
+                  {% if obligation.verbatim|length > 200 %}
+                    <details class="verbatim-expand">
+                      <summary>
+                        <span class="verbatim-short">{{ obligation.verbatim|truncatewords:30 }}</span>
+                        <span class="verbatim-full">{{ obligation.verbatim }}</span>
+                        <b class="verbatim-toggle">View more...</b>
+                      </summary>
+                    </details>
+                  {% else %}
+                    <p>{{ obligation.verbatim }}</p>
+                  {% endif %}
+                {% endif %}
+              </div>
             </div>
           </div>
-        </div>
+        </article>
       {% endfor %}
-    {% endfor %}
-  {% else %}
-    <p>You do not have the permissions to view obligations attached to this license.</p>
-  {% endif %}
+    {% else %}
+      <p>You do not have the permissions to view obligations attached to this license.</p>
+    {% endif %}
+  </section>
 
 {% endblock %}

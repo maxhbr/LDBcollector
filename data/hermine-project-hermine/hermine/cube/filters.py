@@ -5,6 +5,8 @@ import django_filters
 from django.db.models import Q
 from django_filters.constants import EMPTY_VALUES
 
+from cube.models import License
+
 
 class ValueFilter(django_filters.ChoiceFilter):
     @property
@@ -39,9 +41,13 @@ class ComponentOrVersionFilter(MultiFieldSearchFilter):
     fields = ("component__name", "version__component__name")
 
 
-class ReleaseBomFilter(
-    django_filters.FilterSet,
-):
+class FilterSet(django_filters.FilterSet):
+    @property
+    def collapsible_fields(self):
+        return getattr(getattr(self, "Meta", {}), "collapsible_fields", [])
+
+
+class ReleaseBomFilter(FilterSet):
     search = django_filters.CharFilter(
         field_name="version__purl", lookup_expr="icontains", label="Search"
     )
@@ -53,19 +59,39 @@ class ReleaseBomFilter(
     )
 
 
-class LicenseFilter(
-    django_filters.FilterSet,
-):
+class LicenseFilter(FilterSet):
     search = MultiFieldSearchFilter(fields=("spdx_id", "long_name"), label="Search")
     copyleft = ValueFilter()
+    policy__status = ValueFilter(label="Review status")
+    o = django_filters.OrderingFilter(
+        label="Sort by",
+        choices=(
+            ("long_name", "Alphabetical order (A-Z)"),
+            ("-long_name", "Alphabetical order (Z-A)"),
+            ("-created", "Recently added"),
+        ),
+        fields=("long_name", "created"),
+        field_labels={"long_name": "Alphabetical order", "created": "Recently added"},
+    )
+
     patent_grant = ValueFilter()
     policy__allowed = ValueFilter()
-    policy__status = ValueFilter()
-    o = django_filters.OrderingFilter(fields=("spdx_id", "policy__allowed"))
+
+    class Meta:
+        model = License
+        fields = [
+            "search",
+            "o",
+            "policy__status",
+            "copyleft",
+            "policy__allowed",
+            "patent_grant",
+        ]
+        collapsible_fields = ["policy__allowed", "patent_grant"]
 
 
 class LicenseCurationFilter(
-    django_filters.FilterSet,
+    FilterSet,
 ):
     search_component = ComponentOrVersionFilter(label="Component")
     search_expression_in = django_filters.CharFilter(
@@ -77,7 +103,7 @@ class LicenseCurationFilter(
 
 
 class ComponentFilter(
-    django_filters.FilterSet,
+    FilterSet,
 ):
     search = django_filters.CharFilter(
         field_name="name", lookup_expr="icontains", label="Name"
@@ -90,7 +116,7 @@ class ComponentFilter(
     o = django_filters.OrderingFilter(fields=("name", "usages_count"))
 
 
-class DerogationFilter(django_filters.FilterSet):
+class DerogationFilter(FilterSet):
     search_license = MultiFieldSearchFilter(
         fields=("license__spdx_id", "license__long_name"), label="License"
     )
@@ -101,7 +127,24 @@ class DerogationFilter(django_filters.FilterSet):
     exploitation = ValueFilter()
 
 
-class LicenseChoiceFilter(django_filters.FilterSet):
+class ObligationByGenericFilter(FilterSet):
+    search = django_filters.CharFilter(
+        field_name="license__spdx_id",
+        lookup_expr="icontains",
+        label="Search for a license",
+    )
+    copyleft = ValueFilter(field_name="license__copyleft", label="Copyleft type")
+    o = django_filters.OrderingFilter(
+        fields=(("license__long_name", "license"),),
+        choices=(
+            ("license__long_name", "Alphabetical order (A-Z)"),
+            ("-license__long_name", "Alphabetical order (Z-A)"),
+        ),
+        label="Sort by (license)",
+    )
+
+
+class LicenseChoiceFilter(FilterSet):
     search_expression_in = django_filters.CharFilter(
         field_name="expression_in", lookup_expr="icontains", label="License expression"
     )

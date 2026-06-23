@@ -55,7 +55,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 {% elif usage.version.curations|length > 1 %}
                   {{ usage.version.curations|length }} curations apply. {% if perms.cube.change_licensecuration %}Edit curations
                     {% for curation in usage.version.curations %}
-                      <a href="{% url "cube:licensecuration_update" choice.pk %}?from={{ request.path|urlencode }}">
+                      <a href="{% url "cube:licensecuration_update" curation.pk %}?from={{ request.path|urlencode }}">
                         {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
                     {% endfor %}{% endif %}
                 {% endif %}
@@ -105,7 +105,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 {% elif usage.version.curations|length > 1 %}
                   {{ usage.version.curations|length }} curations apply. {% if perms.cube.change_licensecuration %}Edit curations
                     {% for curation in usage.version.curations %}
-                      <a href="{% url "cube:licensecuration_update" choice.pk %}?from={{ request.path|urlencode }}">
+                      <a href="{% url "cube:licensecuration_update" curation.pk %}?from={{ request.path|urlencode }}">
                         {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
                     {% endfor %}{% endif %}
                 {% endif %}

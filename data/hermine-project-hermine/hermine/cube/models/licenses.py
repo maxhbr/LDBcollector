@@ -70,21 +70,46 @@ class License(models.Model):
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated = models.DateTimeField(auto_now=True, null=True, blank=True)
     spdx_id = models.CharField(
-        "SPDX Identifier", max_length=200, unique=True, validators=[validate_spdx_id]
+        "SPDX Identifier",
+        help_text="The SPDX identifier can be found on the spdx.org website",
+        max_length=200,
+        unique=True,
+        validators=[validate_spdx_id],
     )
     long_name = models.CharField("Name", max_length=200, blank=True)
-    steward = models.CharField(max_length=200, blank=True)
-    copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
-    url = models.URLField(max_length=200, blank=True)
-    osi_approved = models.BooleanField(null=True, verbose_name="OSI Approved")
-    fsf_approved = models.BooleanField(null=True, verbose_name="FSF Approved")
-    foss = models.CharField(
-        "Actually FOSS", max_length=20, choices=FOSS_CHOICES, blank=True
+    steward = models.CharField(
+        max_length=200,
+        blank=True,
+        help_text="The organization supporting the development of this license",
     )
-    patent_grant = models.BooleanField(null=True)
+    copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
+    url = models.URLField(
+        max_length=200, blank=True, help_text="The link to the official license"
+    )
+    osi_approved = models.BooleanField(null=True, verbose_name="Approved by OSI")
+    fsf_approved = models.BooleanField(null=True, verbose_name="Approved by FSF")
+    foss = models.CharField(
+        "FOSS Status",
+        max_length=20,
+        choices=FOSS_CHOICES,
+        blank=True,
+        help_text="Whether this license is considered Free/Open Source",
+    )
+    patent_grant = models.BooleanField(
+        null=True,
+        help_text="Whether the license includes a patent grant clause",
+    )
     ethical_clause = models.BooleanField(null=True)
-    non_commercial = models.BooleanField("Only non-commercial use", null=True)
-    non_tivoisation = models.BooleanField(null=True)
+    non_commercial = models.BooleanField(
+        "Commercial use",
+        null=True,
+        blank=True,
+        choices=((None, "Unknown"), (True, "Disallowed"), (False, "Allowed")),
+    )
+    non_tivoisation = models.BooleanField(
+        null=True,
+        help_text="Whether the license forbid inclusion of the software in hardware that prevents users from running modified versions",
+    )
     liability = models.CharField(
         "Limitation of Liability", max_length=30, choices=LIABILITY_CHOICES, blank=True
     )
@@ -102,11 +127,7 @@ class License(models.Model):
         blank=True,
         help_text="This field will be included when exporting license for public sharing",
     )
-    verbatim = models.TextField(
-        "Exact text of the license",
-        blank=True,
-        help_text="Only necessary if the license has no official SPDX ID",
-    )
+    verbatim = models.TextField("Exact text of the license", blank=True)
     objects = LicenseManager()
 
     def natural_key(self):
@@ -210,7 +231,7 @@ class LicensePolicy(models.Model):
         "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True
     )
     allowed_explanation = models.TextField(
-        "OSS Policy explanation", max_length=1500, blank=True
+        "Internal comment", max_length=1500, blank=True
     )
 
     def __str__(self):
@@ -257,7 +278,7 @@ class Generic(models.Model):
     objects = GenericManager()
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated = models.DateTimeField(auto_now=True, null=True, blank=True)
-    PASSIVITY_CHOICES = [("Active", "Active"), ("Passive", "Passive")]
+    PASSIVITY_CHOICES = [("Active", "Active (DO)"), ("Passive", "Passive (DON'T)")]
     METAGATEGORY_CHOICES = [
         ("Communication", "Communication constraints"),
         ("IPManagement", "IP management"),
@@ -270,29 +291,50 @@ class Generic(models.Model):
     name = models.CharField(
         max_length=200,
         unique=True,
-        help_text="Short description of the compliance action. Unique.",
+        help_text="The name of the action to perform.",
     )
     description = models.TextField(
-        max_length=2500, blank=True, help_text="Longer description, optional."
-    )
-    in_core = models.BooleanField(
-        default=False,
-        help_text="If True, means this compliance action is assumed to systematically fit to the enterprise policy. "
-        "Otherwise, means it has to be manually checked.",
+        max_length=2500,
+        blank=True,
+        help_text="What needs to be done, or not done, to be compliant.",
     )
     metacategory = models.CharField(
+        "Category",
         max_length=40,
         choices=METAGATEGORY_CHOICES,
         blank=True,
-        help_text="A category of compliance action.",
+        help_text="Select the category of compliance.",
     )
-    team = models.ForeignKey(Team, on_delete=models.SET_NULL, null=True, blank=True)
     passivity = models.CharField(
+        "Action type",
         max_length=20,
         choices=PASSIVITY_CHOICES,
         blank=True,
-        help_text="A compliance action needs to conduct some kind of action"
-        "(Active) or NOT to do specific things (Passive)",
+        help_text='The action can be "Active" (you SHOULD perform some action) '
+        'or "Passive" (you SHOULD NOT do something)',
+    )
+
+    internal_process = models.TextField(
+        max_length=2500,
+        blank=True,
+        help_text="Define the specific actions to take in your organization related to the compliance action.",
+    )
+    in_core = models.BooleanField(
+        "Included by default",
+        default=False,
+        choices=[
+            (True, "Yes (no action required)"),
+            (False, "No (action required)"),
+        ],
+        help_text="If selected, this compliance action is part of the core policy of your organization, and no further action is required.",
+    )
+    team = models.ForeignKey(
+        Team,
+        verbose_name="Team",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        help_text="The team in charge for this compliance action.",
     )
 
     @cached_property

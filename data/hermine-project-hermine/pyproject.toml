@@ -61,6 +61,13 @@ extend-exclude = "hermine/cube/migrations"
 requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.coverage.run]
+source = ["cube"]
+omit = ["*/migrations/*", "*/tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+
 [tool.ruff]
 # See https://github.com/charliermarsh/ruff#configuration
 

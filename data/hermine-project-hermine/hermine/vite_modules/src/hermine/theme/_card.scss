@@ -45,4 +45,14 @@
       color: $grey;
     }
   }
+
+  .verbatim-expand {
+    .verbatim-full { display: none; }
+
+    &[open] {
+      .verbatim-short { display: none; }
+      .verbatim-full { display: inline; }
+      .verbatim-toggle { display: none; }
+    }
+  }
 }

@@ -301,13 +301,18 @@ SPDX-License-Identifier: MIT
       <section class="section is-main-section content">
         {% block content %}
         {% endblock %}
+        {% block pagination %}
+          {% if page_obj %}
+            {% include "cube/includes/list_pagination.html" %}
+          {% endif %}
+        {% endblock %}
       </section>
       <footer class="footer">
         <div class="container-fluid">
           <div class="level">
             <div class="level-left">
               <div class="level-item">
-                © 2021, Hermine project contributors
+                © 2021-2026, Hermine project contributors
               </div>
               <div class="level-item">
                 <a href="https://gitlab.com/hermine-project/hermine" style="height: 20px">

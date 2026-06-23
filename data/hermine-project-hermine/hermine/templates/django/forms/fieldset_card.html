@@ -1,0 +1,28 @@
+<!--
+SPDX-FileCopyrightText: 2026 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+<section class="card mb-5">
+  {% if title %}
+    <header class="card-header">
+      <p class="card-header-title">{{ title }}</p>
+    </header>
+  {% endif %}
+  <div class="card-content">
+    {% for field, errors in group_fields %}
+      <div{% with classes=field.css_classes %} class="field bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
+        {{ field.as_field_group }}
+      </div>
+    {% endfor %}
+    {% for section_title, section_fields in collapsible_sections %}
+      <details class="form-section"{% for field, errors in section_fields %}{% if field.errors %} open{% endif %}{% endfor %}>
+        <summary class="form-section-toggle">{{ section_title }}</summary>
+        {% for field, errors in section_fields %}
+          <div{% with classes=field.css_classes %} class="field bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
+            {{ field.as_field_group }}
+          </div>
+        {% endfor %}
+      </details>
+    {% endfor %}
+  </div>
+</section>

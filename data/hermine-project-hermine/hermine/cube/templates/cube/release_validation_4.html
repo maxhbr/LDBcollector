@@ -66,7 +66,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             {% elif perms.cube.add_licensechoice %}
               <a href="{% url 'cube:release_licensechoice_create' usage.id %}">Add choice rule</a>
             {% endif %}</td>
-            {% if perms.cube.add_licensecuration %}<td><a href="{% url "cube:release_licensecuration_create" usage.id %}">Correct license</a></td>{% endif %}
+            {% if perms.cube.add_licensecuration %}<td><a href="{% url "cube:release_licensecuration_create" usage.id %}?from={{ request.path|urlencode }}">Correct license</a></td>{% endif %}
             <td>{% if perms.cube.change_usage %}
               <a href="{% url "cube:usage_update" usage.id %}?from={{ request.path|urlencode }}" title="Edit this usage"><span class="icon"><i class="fas fa-edit"></i></span></a>
             {% endif %}{% if perms.cube.delete_usage %}
