@@ -23,8 +23,16 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '21'
+          distribution: temurin
+          java-version: 25
+      - name: Downgrade to Kotlin 2.3
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KOTLIN_VERSION: 2.3.21
+        run: |
+          gh release download v$KOTLIN_VERSION --repo JetBrains/kotlin --pattern kotlin-compiler-$KOTLIN_VERSION.zip
+          unzip -q kotlin-compiler-$KOTLIN_VERSION.zip -d "$RUNNER_TEMP/kotlin"
+          echo "$RUNNER_TEMP/kotlin/kotlinc/bin" >> "$GITHUB_PATH"
       - name: Check license classifications
         run: ./scripts/check-license-classifications.main.kts
 

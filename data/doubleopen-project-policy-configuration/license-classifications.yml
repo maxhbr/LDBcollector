@@ -576,6 +576,14 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://spdx.org/licenses/Bahyph.html
+  - id: "Bahyph"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:modification-related-obligations"
+
   - id: "Beerware"
     categories:
       - "permissive"
@@ -599,6 +607,13 @@ categorizations:
       - "include-in-notice-file"
       - "property:distribute-source-code"
       - "property:patent-clause"
+
+  # https://spdx.org/licenses/Bitstream-Charter.html
+  - id: "Bitstream-Charter"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
 
   - id: "Bitstream-Vera"
     categories:
@@ -848,6 +863,14 @@ categorizations:
       - "include-in-notice-file"
       - "property:creativecommons"
       - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-SA-1.0.html
+  - id: "CC-BY-SA-1.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "CC-BY-SA-2.0"
     categories:
@@ -1501,6 +1524,11 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+
+  # https://spdx.org/licenses/HPND-Markus-Kuhn.html
+  - id: "HPND-Markus-Kuhn"
+    categories:
+      - "permissive"
 
   # https://spdx.org/licenses/HPND-sell-variant.html
   - id: "HPND-sell-variant"
@@ -2905,6 +2933,14 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/efsl-2.0.html
+  - id: "LicenseRef-scancode-efsl-2.0"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+
   - id: "LicenseRef-scancode-ekioh"
     categories:
       - "permissive"
@@ -3705,6 +3741,13 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/zsh.html
+  - id: "LicenseRef-scancode-zsh"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   - id: "LicenseRef-sflow-license"
     categories:
       - "proprietary-free"
@@ -4043,6 +4086,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:mark-modifications"
 
   - id: "Plexus"
     categories:
@@ -4062,6 +4106,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:mark-modifications"
 
   # https://www.python.org/download/releases/2.0.1/license/
   - id: "Python-2.0.1"
