@@ -19,8 +19,8 @@ import Control.Exception (try, SomeException)
 
 isOsiApproved :: Maybe Bool -> LicenseStatement
 isOsiApproved (Just True) = LicenseRating $ PositiveLicenseRating (ScopedLicenseTag "OSI" "Approved" NoLicenseTagText)
-isOsiApproved (Just False) = LicenseRating $ NegativeLicenseRating (ScopedLicenseTag "OSI" "Rejected" NoLicenseTagText)
-isOsiApproved Nothing = LicenseRating $ NegativeLicenseRating (ScopedLicenseTag "OSI" "Not-Approved" NoLicenseTagText)
+isOsiApproved (Just False) = LicenseRating $ NeutralLicenseRating (ScopedLicenseTag "OSI" "Not-Approved" NoLicenseTagText)
+isOsiApproved Nothing = LicenseRating $ NeutralLicenseRating (ScopedLicenseTag "OSI" "Not-Approved" NoLicenseTagText)
 
 -- | Represents a license entry from the new OSI API at
 --   https://opensource.org/api/license

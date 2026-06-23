@@ -90,7 +90,7 @@ instance LicenseFactC OKFNLicense where
           let osdConfromance = _osd_conformance l
            in case osdConfromance of
                 "approved" -> isOsiApproved (Just True)
-                "rejected" -> isOsiApproved (Just False)
+                "rejected" -> LicenseRating (NegativeLicenseRating (ScopedLicenseTag "OSI" "Rejected" NoLicenseTagText))
                 _ ->
                   let tag = ScopedLicenseTag "OSD" (pack osdConfromance) NoLicenseTagText
                    in LicenseRating $ NeutralLicenseRating tag
