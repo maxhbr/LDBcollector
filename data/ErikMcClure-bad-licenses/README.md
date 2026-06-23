@@ -185,7 +185,7 @@ UNOFFICIAL LEGAL ADVICE: Don't use these. Like, ever.
 
 - **[GO FUCK YOURSELF PRIVATE LICENSE](GFYPL)**
 
-    Basically just ARR but requiring you to say "Go fuck yourself" to the licensee within 3 meters. You are also not allowed to look at the license, and if you do, refer back to the first part of this description.
+    Basically just ARR but requiring you to say "Go fuck yourself" to the licensee within 3 meters. You are also not allowed to look at the license, and if you do, refer back to the first part of this description. [Source](https://github.com/devOS-Sanity-Edition/GFYPL/blob/mistress/GFYPL)
 
 - **[Don't Be A Jerk License](dbaj-license.md)**
 
@@ -206,3 +206,7 @@ UNOFFICIAL LEGAL ADVICE: Don't use these. Like, ever.
 - **[D&R (Death and Repudiation) License](DEATH.md)**
 
   Only dead people can use the software. If you are found to be not dead, you will be punished to the fullest extent of the law. If you escape such punishments, you will be severely punished to the fullest extent of a new revised law that encompasses infinite punishments.
+
+- **[BEER-WARE](BEER-WARE)**
+
+  You can do what you want, but when you meet the author, you have to buy them a beer.
