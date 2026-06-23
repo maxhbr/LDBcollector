@@ -43,3 +43,4 @@ alternativeNames:
 otherIds: 
   - "scancode:agpl-3.0"
   - "osi:AGPL-3.0"
+  - "osi-spdx:AGPL-3.0-only"

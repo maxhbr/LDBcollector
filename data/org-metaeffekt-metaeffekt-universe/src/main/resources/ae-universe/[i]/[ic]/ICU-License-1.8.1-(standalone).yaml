@@ -1,0 +1,22 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "ICU License 1.8.1 (standalone)"
+category: "ICU"
+spdxIdentifier: "ICU"
+
+canonicalNameHistory:
+  - "ICU License"
+
+openCoDEStatus: "approved"
+
+osiStatus: "approved"
+
+alternativeNames:
+  - "ICU License"
+  - "Early SLF4J License"
+
+otherIds: 
+  - "scancode:x11"
+  - "osi:ICU"

@@ -69,6 +69,7 @@ alternativeNames:
   - "LGPLv3+"
   - "LGPL 3+"
   - "LGPL 3.0+"
+  - "LGPL 3.0 or later"
   - "Lesser General Public License (LGPL) v 3.0+"
   - "Lesser General Public License, version 3 or greater"
   - "Lesser General Public License (LGPL) version 3.0+"
@@ -98,6 +99,8 @@ alternativeNames:
   - "Lesser General Public License as published by the Free Software Foundation; either version 3 of the license or (at your option) any later version"
   - "Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version"
   - "Lesser General Public License (LGPL) version 3.0 or at your option any later version"
+  - "GNU Lesser General Public License 3.0 or later"
 
 otherIds: 
   - "scancode:lgpl-3.0-plus"
+  - "osi:LGPL-3.0"

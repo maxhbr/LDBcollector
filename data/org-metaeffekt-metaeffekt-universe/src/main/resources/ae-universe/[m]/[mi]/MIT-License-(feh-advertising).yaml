@@ -14,6 +14,9 @@ alternativeNames:
   - "MIT FEH"
   - "MIT-feh"
   - "MIT-FEH"
+  - "feh License"
+  - "MIT Acknowledgment License"
 
 otherIds: 
   - "scancode:mit-ack"
+  - "fedora:MIT#feh"

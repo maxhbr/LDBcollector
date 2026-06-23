@@ -3,10 +3,13 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "CMU License"
-category: "MIT"
+category: "CMU"
 spdxIdentifier: "MIT-CMU"
 
 openCoDEStatus: "approved"
 
+osiStatus: "approved"
+
 otherIds: 
   - "scancode:cmu-uc"
+  - "osi:MIT-CMU"

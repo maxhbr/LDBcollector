@@ -12,5 +12,13 @@ canonicalNameHistory:
 
 type: "exception"
 
+alternativeNames:
+  - "Autoconf Exception 2.0"
+  - "Autoconf exception 2.0"
+  - "Autoconf-exception-2.0"
+  - "Autoconf Exception v2"
+  - "Autoconf exception v2"
+  - "Autoconf-exception-v2"
+
 otherIds: 
   - "scancode:autoconf-exception-2.0"

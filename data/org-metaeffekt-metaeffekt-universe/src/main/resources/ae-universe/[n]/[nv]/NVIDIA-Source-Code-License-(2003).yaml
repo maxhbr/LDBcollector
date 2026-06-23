@@ -3,9 +3,10 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "NVIDIA Source Code License (2003)"
-category: "NVIDIA Source"
+category: "NVIDIA Source Code"
 shortName: "NVIDIA-Source-2003"
 
 alternativeNames:
+  - "NVIDIA Source Code License (2003)"
   - "NVIDIA 2003 Source Code License"
 

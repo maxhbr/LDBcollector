@@ -11,6 +11,9 @@ canonicalNameHistory:
 
 openCoDEStatus: "approved"
 
+osiStatus: "approved"
+osiCategory: "uncategorized"
+
 alternativeNames:
   - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1"
   - "Common Development and Distribution License 1.1"
@@ -26,3 +29,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:cddl-1.1"
+  - "osi:CDDL-1.1"

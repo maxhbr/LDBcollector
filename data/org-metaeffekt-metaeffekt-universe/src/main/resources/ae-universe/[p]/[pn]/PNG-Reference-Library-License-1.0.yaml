@@ -9,6 +9,9 @@ spdxIdentifier: "Libpng"
 
 openCoDEStatus: "approved"
 
+alternativeNames:
+  - "libpng License"
+
 otherIds: 
   - "scancode:libpng"
   - "scancode:libpng-1.6.35"

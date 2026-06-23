@@ -11,5 +11,11 @@ canonicalNameHistory:
 
 openCoDEStatus: "approved"
 
+alternativeNames:
+  - "BSD 3-Clause Modification"
+  - "BSD Modification Variant"
+  - "BSD-Modification-Variant"
+  - "Repoze License"
+
 otherIds: 
   - "scancode:repoze"

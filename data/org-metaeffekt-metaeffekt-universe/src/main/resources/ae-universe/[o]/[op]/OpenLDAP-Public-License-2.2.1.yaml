@@ -13,6 +13,7 @@ alternativeNames:
   - "OLDAP License 2.2.1"
   - "OpenLDAP Public License Version 2.2.1, 1 March 2000"
   - "THIS WORK IS SUBJECT TO VERSION 2.2.1 OF THE OPENLDAP PUBLIC LICENSE"
+  - "Open LDAP Public License v2.2.1"
 
 otherIds: 
   - "scancode:openldap-2.2.1"

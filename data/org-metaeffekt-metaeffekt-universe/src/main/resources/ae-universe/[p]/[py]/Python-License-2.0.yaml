@@ -16,5 +16,5 @@ alternativeNames:
   - "Python License 2.0"
 
 otherIds: 
-  - "osi:Python-2.0"
   - "scancode:python"
+  - "osi:Python-2.0"

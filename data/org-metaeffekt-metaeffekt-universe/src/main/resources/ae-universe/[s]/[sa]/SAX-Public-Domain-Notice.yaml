@@ -9,11 +9,13 @@ spdxIdentifier: "SAX-PD"
 openCoDEStatus: "approved"
 
 alternativeNames:
+  - "SAX Public Domain Notice"
   - "http://www.spdx.org/licenses/SAX-PD"
   - "for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)"
   - "http://www.saxproject.org/copying.html"
   - "https://spdx.org/licenses/sax-pd"
   - "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"
+  - "Sax Public Domain Notice"
 
 otherIds: 
   - "scancode:sax-pd"

@@ -1,0 +1,23 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "IBM PowerPC Initialization and Boot Software License"
+category: "IBM PowerPC"
+shortName: "IBM-PIBS"
+spdxIdentifier: "IBM-pibs"
+
+canonicalNameHistory:
+  - "IBM pibs License"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "IBM pibs"
+  - "IBM PIBS"
+  - "IBM-pibs"
+  - "IBM-PIBS"
+  - "IBM PowerPC Initialization and Boot Software"
+
+otherIds: 
+  - "scancode:ibm-pibs"

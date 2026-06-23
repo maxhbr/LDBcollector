@@ -13,3 +13,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:mpich"
+  - "fedora:MIT"

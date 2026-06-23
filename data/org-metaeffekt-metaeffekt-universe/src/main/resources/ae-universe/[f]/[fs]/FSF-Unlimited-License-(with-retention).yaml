@@ -9,7 +9,10 @@ spdxIdentifier: "FSFULLR"
 openCoDEStatus: "approved"
 
 alternativeNames:
+  - "FSF Unlimited License (With License Retention and Warranty Disclaimer)"
+  - "FSF Unlimited License No Warranty"
   - "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
 
 otherIds: 
   - "scancode:fsf-unlimited"
+  - "fedora:FSF_Unlimited_License#License_Retention_Variant"

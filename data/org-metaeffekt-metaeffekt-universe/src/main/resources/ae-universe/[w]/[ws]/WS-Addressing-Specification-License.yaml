@@ -11,6 +11,7 @@ openCoDEStatus: "not approved"
 alternativeNames:
   - "WS Addressing Specification License"
   - "WS/WS-Addressing.xsd"
+  - "WS-Addressing-200408"
 
 otherIds: 
   - "scancode:ws-addressing-spec"

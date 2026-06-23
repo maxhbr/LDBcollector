@@ -16,4 +16,5 @@ alternativeNames:
 
 otherIds: 
   - "scancode:attribution"
-  - "osi:attribution"
+  - "osi:aal"
+  - "osi-spdx:AAL"

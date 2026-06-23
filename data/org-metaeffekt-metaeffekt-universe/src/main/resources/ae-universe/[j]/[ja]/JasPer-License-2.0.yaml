@@ -9,11 +9,7 @@ spdxIdentifier: "JasPer-2.0"
 openCoDEStatus: "approved"
 
 alternativeNames:
-  - "JasPer, Version 2.0"
-  - "JasPer 2.0"
-  - "JasPer License, 2.0"
-  - "JasPer License Version 2.0"
-  - "JasPer License v2.0"
+  - "JasPer License"
 
 otherIds: 
   - "scancode:jasper-2.0"

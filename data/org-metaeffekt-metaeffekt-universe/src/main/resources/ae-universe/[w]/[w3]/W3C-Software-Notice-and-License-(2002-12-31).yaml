@@ -14,7 +14,9 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
+  - "W3C Software Notice and License (2002-12-31)"
+  - "W3C Software Notice and License - 2002-12-31"
 
 otherIds: 
   - "scancode:w3c"
-  - "osi:W3C"
+  - "osi-spdx:W3C"

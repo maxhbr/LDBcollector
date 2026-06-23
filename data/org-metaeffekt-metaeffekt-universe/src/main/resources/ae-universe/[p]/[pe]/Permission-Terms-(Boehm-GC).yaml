@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Permission Terms (Boehm-GC)"
+category: "Permission"
+shortName: "PT-Boehm-GC"
+spdxIdentifier: "Boehm-GC"
+
+canonicalNameHistory:
+  - "Permission Terms Var009"
+  - "Permission Terms (variant 009)"
+
+alternativeNames:
+  - "Boehm-GC"
+  - "GC License"
+
+otherIds: 
+  - "scancode:mozilla-gc"

@@ -9,6 +9,13 @@ spdxIdentifier: "CNRI-Python-GPL-Compatible"
 
 canonicalNameHistory:
   - "CNRI Open Source License Agreement for Python 1.6.1"
+  - "CNRI License Agreement"
+
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "Python-2.0"
+
+alternativeNames:
+  - "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
 
 otherIds: 
   - "scancode:cnri-python-1.6.1"

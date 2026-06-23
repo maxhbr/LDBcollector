@@ -10,6 +10,7 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "ldap-sdk-free-use"
+  - "UnboundID-LDAP-SDK-Free-Use-License"
 
 otherIds: 
   - "scancode:ldap-sdk-free-use"

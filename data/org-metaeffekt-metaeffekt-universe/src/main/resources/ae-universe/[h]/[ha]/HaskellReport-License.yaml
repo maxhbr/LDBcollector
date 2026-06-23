@@ -10,6 +10,8 @@ alternativeNames:
   - "HaskellReport License"
   - "HASKELLREPORT LICENSE"
   - "HASKELLREPORT License"
+  - "Haskell Language Report License"
 
 otherIds: 
   - "scancode:haskell-report"
+  - "fedora:Haskell_Language_Report_License"

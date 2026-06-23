@@ -48,6 +48,7 @@ alternativeNames:
   - "TinySCHEME License"
   - "3 clause BSD license"
   - "http://framework.zend.com/license/new-bsd"
+  - "ANTLR 3 License"
 
 otherIds: 
   - "scancode:bsd-new"

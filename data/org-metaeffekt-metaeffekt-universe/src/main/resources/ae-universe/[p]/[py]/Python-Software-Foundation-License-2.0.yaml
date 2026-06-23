@@ -20,3 +20,4 @@ alternativeNames:
 otherIds: 
   - "scancode:psf-2.0"
   - "osi:Python-2.0"
+  - "osi-spdx:PSF-2-0"

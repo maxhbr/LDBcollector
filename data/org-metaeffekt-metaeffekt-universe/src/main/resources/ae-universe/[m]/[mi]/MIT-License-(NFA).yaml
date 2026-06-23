@@ -15,6 +15,9 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "MITNFA"
   - "MIT +no-false-attribs license"
+  - "MIT with no false attribution License"
+  - "MIT with no-false-attribs"
 
 otherIds: 
   - "scancode:mit-no-false-attribs"
+  - "fedora:MITNFA"

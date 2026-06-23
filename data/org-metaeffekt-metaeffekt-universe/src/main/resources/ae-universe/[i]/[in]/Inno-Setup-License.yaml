@@ -10,6 +10,7 @@ spdxIdentifier: "InnoSetup"
 alternativeNames:
   - "Inno Setup License"
   - "http://www.jrsoftware.org/files/is/license.txt"
+  - "Inno-Setup-License"
 
 otherIds: 
   - "scancode:inno-setup"

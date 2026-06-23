@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Permission Term (Veillard)"
+category: "Permission"
+shortName: "PT-Veillard"
+spdxIdentifier: "ISC-Veillard"
+
+canonicalNameHistory:
+  - "Permission Terms Var008"
+  - "Permission Terms (variant 008)"
+  - "ISC License (Veillard)"
+
+alternativeNames:
+  - "ISC-Veillard"
+  - "ISC Veillard variant"
+  - "MIT Veillard Variant"
+
+otherIds: 
+  - "scancode:mit-veillard-variant"

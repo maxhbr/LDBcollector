@@ -13,7 +13,8 @@ canonicalNameHistory:
 type: "exception"
 
 alternativeNames:
-  - "Qwt License Version 1.0"
+  - "Qwt exception 1.0"
+  - "Qwt License"
 
 otherIds: 
   - "scancode:qwt-exception-1.0"

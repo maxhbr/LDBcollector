@@ -16,7 +16,8 @@ alternativeNames:
   - "CNRI PYTHON"
   - "CNRI-Python"
   - "CNRI-PYTHON"
+  - "CNRI Open Source License Agreement for Python 1.6"
 
 otherIds: 
   - "scancode:cnri-python-1.6"
-  - "osi:CNRI-Python"
+  - "osi-scancode:CNRI-Python"

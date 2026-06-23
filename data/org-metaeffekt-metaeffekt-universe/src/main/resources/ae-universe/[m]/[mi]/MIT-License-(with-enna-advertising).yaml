@@ -11,6 +11,8 @@ alternativeNames:
   - "MIT ENNA"
   - "MIT-enna"
   - "MIT-ENNA"
+  - "enna License"
 
 otherIds: 
   - "scancode:enna"
+  - "fedora:MIT#enna"

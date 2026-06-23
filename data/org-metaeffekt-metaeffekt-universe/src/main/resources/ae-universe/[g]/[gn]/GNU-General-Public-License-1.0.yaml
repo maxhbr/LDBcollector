@@ -9,12 +9,19 @@ spdxIdentifier: "GPL-1.0-only"
 
 openCoDEStatus: "approved"
 
+osiStatus: "approved"
+osiSupersededById: "GPL-3.0"
+osiCategory: "superseded"
+
 alternativeNames:
   - "GNU General Public License, Version 1"
   - "GNU General Public License, version 1"
   - "GPL 1.0"
   - "GNU General Public License (v1)"
   - "GNU GENERAL PUBLIC LICENSE Version 1"
+  - "GNU General Public License v1.0 only"
+  - "GPL-1.0"
 
 otherIds: 
   - "scancode:gpl-1.0"
+  - "osi:GPL-1.0"

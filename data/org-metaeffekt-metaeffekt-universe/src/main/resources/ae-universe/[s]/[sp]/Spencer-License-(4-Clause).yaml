@@ -13,6 +13,8 @@ alternativeNames:
   - "Spencer License, 93"
   - "Spencer License, 94"
   - "Spencer License, 97"
+  - "Henry Spencer Regexp License"
 
 otherIds: 
   - "scancode:hs-regexp"
+  - "fedora:Henry_Spencer_Reg-Ex_Library_License"

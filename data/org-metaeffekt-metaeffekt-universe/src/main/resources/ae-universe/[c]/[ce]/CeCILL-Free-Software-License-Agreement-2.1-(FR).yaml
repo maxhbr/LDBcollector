@@ -9,6 +9,9 @@ shortName: "cecill-2.1-fr"
 canonicalNameHistory:
   - "CeCILL Free Software License Agreement v2.1 French"
 
+osiStatus: "approved"
+osiCategory: "international"
+
 alternativeNames:
   - "CeCILL Free Software License Agreement v2.1 French"
   - "CeCILL Free Software License Agreement 2.1 (FR)"

@@ -14,3 +14,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:fraunhofer-fdk-aac-codec"
+  - "fedora:FDK-AAC"

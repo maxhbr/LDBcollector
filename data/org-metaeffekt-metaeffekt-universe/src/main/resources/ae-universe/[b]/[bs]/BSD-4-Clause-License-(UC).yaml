@@ -14,6 +14,7 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "BSD-4-Clause-UC"
   - "BSD-4-Clause (University of California-Specific)"
+  - "BSD-Original-UC"
 
 otherIds: 
   - "scancode:bsd-original-uc"

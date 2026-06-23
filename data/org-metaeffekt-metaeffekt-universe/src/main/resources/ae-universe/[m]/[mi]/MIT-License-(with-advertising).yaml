@@ -15,6 +15,9 @@ alternativeNames:
   - "MIT-advertising License"
   - "MIT-ADVERTISING LICENSE"
   - "MIT-ADVERTISING License"
+  - "Enlightenment License (e16)"
+  - "Enlightenment (EFL) MIT-Style License"
 
 otherIds: 
   - "scancode:enlightenment"
+  - "fedora:MIT_With_Advertising"

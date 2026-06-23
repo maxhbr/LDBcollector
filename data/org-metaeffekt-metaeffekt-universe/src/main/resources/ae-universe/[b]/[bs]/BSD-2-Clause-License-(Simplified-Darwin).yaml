@@ -12,6 +12,9 @@ alternativeNames:
   - "BSD 2-Clause License (Simplified Darwin)"
   - "BSD-2-Clause-Darwin"
   - "BSD 2-Clause - Ian Darwin variant"
+  - "BSD Simplified Darwin"
+  - "BSD-Simplified-Darwin"
+  - "Fine Free File Command License"
 
 otherIds: 
   - "scancode:bsd-simplified-darwin"

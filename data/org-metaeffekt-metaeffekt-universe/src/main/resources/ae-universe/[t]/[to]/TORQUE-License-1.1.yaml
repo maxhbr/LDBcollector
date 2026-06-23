@@ -12,6 +12,8 @@ alternativeNames:
   - "TORQUE License, Version 1.1"
   - "TORQUE License, 1.1"
   - "TORQUE v2.5+ Software License v1.1"
+  - "TORQUE-Software-License-1.1"
 
 otherIds: 
   - "scancode:torque-1.1"
+  - "fedora:TORQUEv1.1"

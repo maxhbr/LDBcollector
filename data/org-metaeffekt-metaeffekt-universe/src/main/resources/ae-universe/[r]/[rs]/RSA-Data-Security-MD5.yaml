@@ -8,5 +8,8 @@ spdxIdentifier: "RSA-MD"
 
 openCoDEStatus: "approved"
 
+alternativeNames:
+  - "RSA Message-Digest License (MD5)"
+
 otherIds: 
   - "scancode:rsa-md5"

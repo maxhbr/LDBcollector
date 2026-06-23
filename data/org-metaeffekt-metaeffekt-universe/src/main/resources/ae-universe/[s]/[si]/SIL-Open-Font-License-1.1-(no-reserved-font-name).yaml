@@ -12,5 +12,5 @@ osiStatus: "approved"
 osiCategory: "special purpose"
 
 otherIds: 
-  - "osi:OFL-1.1"
   - "scancode:ofl-1.1-no-rfn"
+  - "osi:OFL-1.1"

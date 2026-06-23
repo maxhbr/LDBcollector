@@ -42,6 +42,10 @@ alternativeNames:
   - "License [MIT](LICENSE)"
   - "under the [MIT](License) license"
   - "standard MIT terms"
+  - "Bouncy Castle License"
+  - "Bouncy Castle Licence"
+  - "Bouncycastle license"
+  - "Bouncycastle-license"
 
 otherIds: 
   - "scancode:mit"

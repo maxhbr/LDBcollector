@@ -16,3 +16,4 @@ alternativeNames:
 otherIds: 
   - "scancode:simpl-2.0"
   - "osi:SimPL-2.0"
+  - "osi-spdx:SiMPL-2.0"

@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "ICU License (2014)"
+category: "ICU"
+shortName: "ICU-2014"
+
+canonicalNameHistory:
+  - "ICU Composite License"
+
+otherIds: 
+  - "scancode:ibm-icu"

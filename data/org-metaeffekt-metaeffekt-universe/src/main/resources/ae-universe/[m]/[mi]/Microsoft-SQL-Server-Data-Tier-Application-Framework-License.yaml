@@ -9,5 +9,10 @@ shortName: "MS-SQL-Server-Data-Tier-AF-2022"
 canonicalNameHistory:
   - "Microsoft Software License (Data-Tier Application Framework)"
 
+alternativeNames:
+  - "MICROSOFT SOFTWARE LICENSE TERMS MICROSOFT SQL SERVER DATA-TIER APPLICATION FRAMEWORK"
+  - "Microsoft SQL Server Data-Tier Application Framework"
+  - "MICROSOFT SQL SERVER DATA-TIER APPLICATION FRAMEWORK LICENSE"
+
 otherIds: 
   - "scancode:ms-data-tier-af-2022"

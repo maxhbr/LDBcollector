@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
 
 canonicalName: "Microsoft Pylance Extension for Visual Studio Code License"
-category: "Microsoft Pylance Extension for Visual Studio Code"
-shortName: "MS-Pylance-Extension-VS-Code-2021"
+category: "Microsoft Pylance Extension"
+shortName: "MS-Pylance-Extension-VS-Code"
 
 alternativeNames:
   - "Microsoft Pylance Extension for Visual Studio Code License"

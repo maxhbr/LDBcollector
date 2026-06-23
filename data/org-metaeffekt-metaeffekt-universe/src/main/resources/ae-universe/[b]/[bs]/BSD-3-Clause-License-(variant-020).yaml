@@ -9,5 +9,9 @@ shortName: "BSD-3-Clause-020"
 canonicalNameHistory:
   - "BSD 3-Clause License Var020"
 
+alternativeNames:
+  - "Jsch License"
+  - "JSch License"
+
 otherIds: 
   - "scancode:libzip"

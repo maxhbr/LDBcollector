@@ -6,5 +6,11 @@ canonicalName: "Oracle Binary Code License Agreement (Java SE and JavaFX 2013 Re
 category: "Oracle BCLA"
 shortName: "Oracle-BCLA-Java-SE-JavaFX-2013-Restricted"
 
+alternativeNames:
+  - "Oracle Binary Code License Agreement (Java SE and JavaFX 2013 Restricted)"
+  - "Oracle-BCLA-Java-SE-Java-FX-2013-Restricted"
+  - "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX 2013 Restricted"
+  - "Oracle Binary Code License Agreement for the Java SE Platform Products Restricted 2013-04-02"
+
 otherIds: 
   - "scancode:oracle-bcl-javase-platform-javafx-2013"

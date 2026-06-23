@@ -10,5 +10,8 @@ spdxIdentifier: "NTP-0"
 canonicalNameHistory:
   - "Permission Terms Var027"
 
+alternativeNames:
+  - "NTP No Attribution"
+
 otherIds: 
   - "scancode:ntp-0"

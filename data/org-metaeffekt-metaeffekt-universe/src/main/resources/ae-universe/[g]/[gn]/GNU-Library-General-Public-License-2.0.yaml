@@ -36,6 +36,8 @@ alternativeNames:
   - "GNU Library General Public License Version 2"
   - "http://www.gnu.org/licenses/old-licenses/lgpl-2.0.txt"
   - "https://www.gnu.org/licenses/old-licenses/lgpl-2.0.txt"
+  - "License: LGPL-2"
+  - "GNU Library General Public License v2 only"
 
 otherIds: 
   - "scancode:lgpl-2.0"

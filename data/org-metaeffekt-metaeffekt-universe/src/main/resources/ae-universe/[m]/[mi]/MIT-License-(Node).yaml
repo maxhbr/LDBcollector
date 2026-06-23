@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "MIT License (Node)"
+category: "MIT"
+shortName: "MIT-Node"
+
+canonicalNameHistory:
+  - "Node License"
+
+alternativeNames:
+  - "Node-js License"
+  - "Node.js License"
+
+otherIds: 
+  - "scancode:node-js"

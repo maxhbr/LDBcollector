@@ -14,6 +14,7 @@ alternativeNames:
   - "OpenLDAP Public License Version 2.4"
   - "OpenLDAP 2.4"
   - "THIS WORK IS SUBJECT TO VERSION 2.4 OF THE OPENLDAP PUBLIC LICENSE"
+  - "Open LDAP Public License v2.4"
 
 otherIds: 
   - "scancode:openldap-2.4"

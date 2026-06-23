@@ -19,7 +19,9 @@ alternativeNames:
   - "Universal Permissive License, Version 1.0"
   - "Universal Permissive License (UPL) v1.0"
   - "UPL-1.0"
+  - "Universal Permissive License v1.0"
 
 otherIds: 
   - "scancode:upl-1.0"
   - "osi:UPL"
+  - "osi-spdx:UPL-1.0"

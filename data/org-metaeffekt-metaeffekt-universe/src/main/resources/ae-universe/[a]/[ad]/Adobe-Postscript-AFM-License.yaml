@@ -1,0 +1,23 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Adobe Postscript AFM License"
+category: "Adobe Postscript"
+shortName: "Adobe-Postscript-AFM"
+spdxIdentifier: "APAFML"
+
+canonicalNameHistory:
+  - "APAFML"
+  - "APAFML License"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "APAFML"
+  - "Adobe Postscript AFM License"
+  - "Adobe-AFM"
+
+otherIds: 
+  - "scancode:apafml"
+  - "fedora:AdobePostscriptAFM"

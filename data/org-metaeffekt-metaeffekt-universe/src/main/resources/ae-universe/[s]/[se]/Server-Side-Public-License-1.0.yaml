@@ -14,6 +14,10 @@ alternativeNames:
   - "Server Side Public License, Version 1.0"
   - "Server Side Public License v1.0"
   - "Server Side Public License VERSION 1"
+  - "Server Side Public License, v 1"
+  - "MongoDB Server Side Public License 1.0"
+  - "MongoDB-SSPL-1.0"
+  - "Server Side Public License (SSPL) 1.0"
 
 otherIds: 
   - "scancode:mongodb-sspl-1.0"

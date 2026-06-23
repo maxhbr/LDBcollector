@@ -7,8 +7,9 @@ category: "Sencha Commercial"
 shortName: "Sencha-Commercial-1.1"
 
 alternativeNames:
-  - "Sencha Commercial License Version 1.11"
   - "Sencha Commercial 1.11"
+  - "Sencha Commercial License"
+  - "Sencha Commercial Software License Agreement: Ext JS and Ext GWT, Version 1.9"
 
 otherIds: 
   - "scancode:sencha-commercial"

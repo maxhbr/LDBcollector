@@ -8,5 +8,9 @@ spdxIdentifier: "GD"
 
 openCoDEStatus: "approved"
 
+alternativeNames:
+  - "GD Graphics (Draw) Library License"
+  - "libgd License 2018"
+
 otherIds: 
   - "scancode:libgd-2018"

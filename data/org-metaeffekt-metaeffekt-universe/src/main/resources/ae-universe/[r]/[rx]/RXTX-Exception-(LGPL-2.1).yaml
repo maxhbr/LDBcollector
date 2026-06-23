@@ -14,6 +14,8 @@ type: "exception"
 
 alternativeNames:
   - "RXTX exception to LGPL 2.1"
+  - "RXTX Exception to LGPL 2.1 License"
+  - "RXTX License v 2.1"
 
 otherIds: 
   - "scancode:rxtx-exception-lgpl-2.1"

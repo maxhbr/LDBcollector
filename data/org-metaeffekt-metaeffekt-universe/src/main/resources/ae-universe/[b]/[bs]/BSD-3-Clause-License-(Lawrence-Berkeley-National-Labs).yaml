@@ -22,4 +22,5 @@ alternativeNames:
 
 otherIds: 
   - "scancode:lbnl-bsd"
+  - "fedora:LBNLBSD"
   - "osi:BSD-3-Clause-LBNL"

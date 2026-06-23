@@ -41,6 +41,7 @@
 |<sup><a name="YOLO-WTFPLSE-License-1.2">[YOLO WTFPLSE License 1.2]([yo]/YOLO-WTFPLSE-License-1.2.yaml)</a></sup>|<sup>YOLO WTFPLSE</sup>|<sup>YOLO-WTFPLSE-1.2</sup>| | | | |<sup>[cc0-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc0-1.0.LICENSE), [public-domain](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/public-domain.LICENSE)</sup>|<sup>terms</sup>|
 |<sup><a name="YPL-1.0">[YPL 1.0]([yp]/YPL-1.0.yaml)</a></sup>|<sup>YPL</sup>|<sup> </sup>|<sup>[YPL-1.0](https://spdx.org/licenses/YPL-1.0.html)</sup>| | |<sup>[ypl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.0.LICENSE)</sup>|<sup>[ypl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.0.LICENSE)</sup>|<sup>terms</sup>|
 |<sup><a name="YPL-1.1">[YPL 1.1]([yp]/YPL-1.1.yaml)</a></sup>|<sup>YPL</sup>|<sup> </sup>|<sup>[YPL-1.1](https://spdx.org/licenses/YPL-1.1.html)</sup>| | |<sup>[ypl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.1.LICENSE)</sup>|<sup>[ypl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.1.LICENSE)</sup>|<sup>terms</sup>|
+|<sup><a name="Yuan-2.0-License">[Yuan 2.0 License]([yu]/Yuan-2.0-License.yaml)</a></sup>|<sup>Yuan</sup>|<sup>Yuan-2.9</sup>| | | | | |<sup>terms</sup>|
 
 [3](../[3]/README.md) -
 [4](../[4]/README.md) -

@@ -13,14 +13,12 @@ osiStatus: "approved"
 osiCategory: "popular/strong community"
 
 alternativeNames:
-  - "GNU Lesser General Public License, Version 2.1"
   - "GNU LESSER GENERAL PUBLIC LICENSE 2.1"
   - "GNU LESSER GENERAL PUBLIC LICENSE Version 2.1"
   - "GNU LGPL(v2.1)"
   - "GNU LIBRARY GENERAL PUBLIC LICENSE, Version 2.1, February 1999"
   - "GNU Lesser GPL 2.1"
   - "GNU Lesser General Public License (LGPL) 2.1"
-  - "GNU Lesser General Public License version 2.1"
   - "GNU Lesser General Public License, 2.1"
   - "GNU Lesser General Public License, v. 2.1"
   - "GNU Lesser Public License 2.1"
@@ -66,7 +64,10 @@ alternativeNames:
   - "https://licencas.softwarelivre.org/lgpl-2.1.pt-br.odt"
   - "http://jxself.org/translations/lgpl-2.1.ru.shtml"
   - "GNU Lesser General Public License v2.1"
+  - "Lesser General Public License version 2.1"
+  - "Lesser General Public License Version 2.1"
 
 otherIds: 
   - "scancode:lgpl-2.1"
   - "osi:LGPL-2.1"
+  - "osi-spdx:LGPL-2.1-only"

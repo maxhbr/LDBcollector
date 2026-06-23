@@ -21,6 +21,7 @@ alternativeNames:
   - "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc"
   - "https://spdx.org/licenses/sgi-b-1.1"
   - "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+  - "SGI Free Software License B v1.1"
 
 otherIds: 
   - "scancode:sgi-freeb-1.1"

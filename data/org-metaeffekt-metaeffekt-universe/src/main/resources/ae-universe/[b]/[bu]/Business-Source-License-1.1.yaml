@@ -10,6 +10,7 @@ spdxIdentifier: "BUSL-1.1"
 alternativeNames:
   - "Business Source License 1.1"
   - "https://github.com/getsentry/sentry/blob/master/LICENSE"
+  - "Business-Source-License-1.1"
 
 otherIds: 
   - "scancode:bsl-1.1"

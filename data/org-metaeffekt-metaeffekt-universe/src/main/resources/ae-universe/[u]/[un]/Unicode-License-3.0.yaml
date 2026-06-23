@@ -9,6 +9,9 @@ spdxIdentifier: "Unicode-3.0"
 canonicalNameHistory:
   - "Unicode License v3"
 
+osiStatus: "approved"
+osiCategory: "special purpose"
+
 alternativeNames:
   - "Unicode-3.0"
   - "Unicode License v3"
@@ -17,3 +20,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:unicode-v3"
+  - "osi:Unicode-3.0"

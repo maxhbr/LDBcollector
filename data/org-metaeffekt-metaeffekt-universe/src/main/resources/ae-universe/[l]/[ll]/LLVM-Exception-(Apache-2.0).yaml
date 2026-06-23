@@ -20,6 +20,7 @@ alternativeNames:
   - "LLVM-exception"
   - "LLVM-EXCEPTION"
   - "Apache Exception LLVM"
+  - "LLVM Exception to Apache 2.0"
 
 otherIds: 
   - "scancode:llvm-exception"

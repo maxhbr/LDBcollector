@@ -9,6 +9,12 @@ shortName: "Xceed-Community-2021"
 alternativeNames:
   - "Xceed Community License 2021"
   - "XCEED SOFTWARE, INC. COMMUNITY LICENSE"
+  - "Xceed DocX for Non-Commercial Use Community License Agreement"
+  - "Xceed Extended WPF Toolkit for Non-Commercial Use Community License Agreement"
+  - "Xceed Fluent Assertions for Non-Commercial Use Community License Agreement"
+  - "Xceed-DocX-NC-CLA"
+  - "Xceed-Extended-WPF-Toolkit-NC-CLA"
+  - "Xceed-FA-NC-CLA"
 
 otherIds: 
   - "scancode:xceed-community-2021"

@@ -11,6 +11,8 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "PNG Reference Library License 2"
+  - "PNG Reference Library version 2"
+  - "PNG Reference Library License version 2"
 
 otherIds: 
   - "scancode:libpng-v2"

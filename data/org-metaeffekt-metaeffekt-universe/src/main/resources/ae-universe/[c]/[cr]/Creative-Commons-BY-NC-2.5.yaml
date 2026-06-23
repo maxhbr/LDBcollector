@@ -15,13 +15,14 @@ openCoDEStatus: "not approved"
 osiStatus: "ineligible"
 
 alternativeNames:
-  - "Creative Commons Attribution Non Commercial 2.5 Generic"
   - "CC-BY-NC-2.5"
   - "CC BY-NC 2.5"
   - "Creative Commons BY-NC 2.5"
   - "Attribution-NonCommercial 2.5"
   - "http://creativecommons.org/licenses/by-nc/2.5"
   - "https://creativecommons.org/licenses/by-nc/2.5"
+  - "Creative Commons Attribution Non Commercial 2.5"
+  - "Creative Commons Attribution Non-Commercial 2.5"
 
 otherIds: 
   - "scancode:cc-by-nc-2.5"

@@ -6,5 +6,10 @@ canonicalName: "Oracle Technology Network Development and Distribution License"
 category: "OTN Development"
 shortName: "OTN-Dev-Dist"
 
+alternativeNames:
+  - "Oracle Technology Network Development and Distribution License"
+  - "Oracle Technology Network License Agreement Distribution"
+  - "Oracle-OTN-Distribution"
+
 otherIds: 
   - "scancode:otn-dev-dist"

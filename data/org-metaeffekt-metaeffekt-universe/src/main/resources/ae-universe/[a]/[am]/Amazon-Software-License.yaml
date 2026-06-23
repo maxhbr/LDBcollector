@@ -9,6 +9,7 @@ shortName: "Amazon-SL"
 alternativeNames:
   - "http://aws.amazon.com/asl/"
   - "Amazon Software License"
+  - "Amazon-SL-2008"
 
 otherIds: 
   - "scancode:amazon-sl"

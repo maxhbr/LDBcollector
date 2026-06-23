@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "CMU License (copyright holder variant)"
+category: "CMU"
+shortName: "CMU-copyright-holder"
+
+canonicalNameHistory:
+  - "Permission Terms (variant 125)"
+  - "ElementTree License"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "Pillow is licensed under the open source MIT-CMU License"
+  - "ElementTree License"
+  - "Python Imaging Library (PIL) License"
+
+otherIds: 
+  - "scancode:secret-labs-2011"

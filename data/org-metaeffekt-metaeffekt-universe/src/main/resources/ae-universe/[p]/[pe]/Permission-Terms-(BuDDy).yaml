@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Permission Terms (BuDDy)"
+category: "Permission"
+shortName: "PT-BuDDy"
+spdxIdentifier: "Buddy"
+
+canonicalNameHistory:
+  - "MIT License (Buddy)"
+  - "Permission Terms (variant 144)"
+
+alternativeNames:
+  - "MIT Buddy License"
+  - "MIT-Buddy"
+
+otherIds: 
+  - "MIT License (Buddy)"

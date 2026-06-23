@@ -22,3 +22,4 @@ alternativeNames:
 otherIds: 
   - "scancode:nokos-1.0a"
   - "osi:nokia"
+  - "osi-spdx:Nokia"

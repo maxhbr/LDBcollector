@@ -32,6 +32,8 @@ alternativeNames:
   - "http://creativecommons.org/licenses/publicdomain"
   - "Copyright: public-domain"
   - "This software is freely available to the public for use"
+  - "Public Domain (Public Domain)"
+  - "PUBLIC-DOMAIN"
 
 otherIds: 
   - "scancode:public-domain"

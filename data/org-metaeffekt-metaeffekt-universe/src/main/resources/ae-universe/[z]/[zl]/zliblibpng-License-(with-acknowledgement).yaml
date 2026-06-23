@@ -13,8 +13,16 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "zlib-acknowledgement"
-  - "zlib/libpng License with Acknowledgement"
   - "zlib with acknowledgement"
+  - "Zlib License"
+  - "zlib/libpng License"
+  - "Nunit License"
+  - "NUnit License"
+  - "NUnit-License"
+  - "ZLIB License with Acknowledgment"
+  - "ZLIB-License with Acknowledgment"
+  - "zlib-libpng License with Acknowledgement"
 
 otherIds: 
   - "scancode:zlib-acknowledgement"
+  - "fedora:ZlibWithAcknowledgement"

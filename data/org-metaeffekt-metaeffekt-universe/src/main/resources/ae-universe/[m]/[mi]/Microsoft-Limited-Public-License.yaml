@@ -9,5 +9,8 @@ spdxIdentifier: "MS-LPL"
 canonicalNameHistory:
   - "Microsoft LimitedPublic License"
 
+alternativeNames:
+  - "Microsoft Limited Permissive License"
+
 otherIds: 
   - "scancode:ms-lpl"

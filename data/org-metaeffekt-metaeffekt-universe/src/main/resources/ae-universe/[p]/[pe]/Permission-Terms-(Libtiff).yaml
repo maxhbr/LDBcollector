@@ -15,6 +15,10 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "Permission Terms (SL)"
+  - "libtiff License"
+  - "HylaFax License"
+  - "X11-Style (Tiff)"
 
 otherIds: 
   - "scancode:x11-tiff"
+  - "fedora:libtiff"

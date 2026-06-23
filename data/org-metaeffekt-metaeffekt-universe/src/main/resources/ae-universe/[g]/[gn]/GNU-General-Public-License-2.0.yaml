@@ -71,3 +71,4 @@ alternativeNames:
 otherIds: 
   - "scancode:gpl-2.0"
   - "osi:GPL-2.0"
+  - "osi-spdx:GPL-2.0-only"

@@ -15,6 +15,7 @@ alternativeNames:
   - "https://spdx.org/licenses/condor-1.1"
   - "http://www.cs.wisc.edu/condor/license.html"
   - "http://www.condorproject.org"
+  - "Condor Public License v1.1"
 
 otherIds: 
   - "scancode:condor-1.1"

@@ -11,5 +11,13 @@ canonicalNameHistory:
 
 type: "exception"
 
+alternativeNames:
+  - "Spell-Checker exception to LGPL 2.1 or later"
+  - "Spell-Checker Exception (LGPL-2.1+)"
+  - "Spell-Checker-Exception-LGPL-2.1+"
+  - "spell-checker-exception-lgpl-2.1-plus"
+  - "Spell-Checker-Exception-LGPL-2.1-plus"
+  - "Spell-Checker Exception LGPL"
+
 otherIds: 
   - "scancode:spell-checker-exception-lgpl-2.1-plus"

@@ -1,17 +1,17 @@
-# {metæffekt}-universe
+# {metæffekt} Universe
 
 Project providing insights on the {metæffekt} license database covering
 
-* 3016 modeled license terms,
-* 214 exceptions,
+* 3118 modeled license terms,
+* 217 exceptions,
 * 15 modifiers
 * 2 restrictions
-* 309 specific and commonly used license expressions, and
-* 61 consolidated markers
+* 326 specific and commonly used license expressions, and
+* 73 consolidated markers
 
-as of February 24th 2026.
+as of June 17th 2026.
 
-A total of 3247 differentiated terms, modifiers, restrictions and exceptions!
+A total of 3352 differentiated terms, modifiers, restrictions and exceptions!
 
 The following links provide letter-specific overviews on the license information:
 
@@ -58,10 +58,10 @@ the level of granularity and paradigms set forth by {metæffekt}. Second, the da
 available commercial licenses (at least not to the extent required).
 
 This is why {metæffekt} choose to create an overarching database of licenses, 
-references, exceptions, and expressions; the {metæffekt}-universe.
+references, exceptions, and expressions; the {metæffekt} Universe.
 
 ## Is {metæffekt} handing back to the FOSS Compliance Community?
-Sure. We intend to provide those parts of our {metæffekt}-universe to the community, which we are allowed to share.
+Sure. We intend to provide those parts of our {metæffekt} Universe to the community, which we are allowed to share.
 
 The only issue is time and resources. {metæffekt} is a self-financed company that makes a
 living from customer projects. With our limited time and resources we have to be very focused. 
@@ -86,7 +86,7 @@ are used for identification purposes only.
 
 Please note that this database of license terms yields to be a complete reference of public terms and conditions.
 Yet this also means that licenses are part of the universe that may be insulting, sexist, racist, discriminating or 
-simply unethical. {metaæffekt} does neither promote these licenses nor adopt the language or statements. 
+simply unethical. {metæffekt} does neither promote these licenses nor adopt the language or statements. 
 In order to reduce the visibility of such terms we apply - in contrary to our usual policy - abbreviations in case
 the license name is problematic.
 
@@ -118,9 +118,9 @@ to [contact@metaeffekt.com](mailto:contact@metaeffekt.com). Modifications will t
 internal dataset to produce the corrected outputs.
 
 ## Further information
-{metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
+{metæffekt} provides visualization of the {metæffekt} Universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 32.4.1 is used as reference version.
+Currently, ScanCode version 32.5.0 is used as reference version.
 
 Non-approved OSI status information is not yet complete; more details is added incrementally.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected
@@ -136,10 +136,10 @@ The following table summarizes and details the OSI status values:
 | submitted        | The license has been submitted or at least requested, but has not yet been further processed.                                     | no                  |
 | pending          | The license is in discussion / review. No decision is available yet.                                                              | no                  |
 | approved         | The license was officially approved by OSI.                                                                                       | yes                 |
-| withdrawn        | The license was withdrawn by the submitter (i.e. the license stuart).                                                             | no                  |
+| withdrawn        | The license was withdrawn by the submitter (i.e. the license steward).                                                            | no                  |
 | rejected         | The license was rejected by OSI. The license is either not a valid license or does not conform to the OSI Open Source Definition. | no                  |
 | ineligible       | The terms are not considered a (software) license or show obvious conditions adverse to the OSI Open Source Definition.           | no                  |
 | unclear          | Information from OSI mailing lists and wiki content do not convey sufficient results. Links broken.                               | no                  |
 
 Regarding SPDX the latest version from https://github.com/spdx/license-list-data
-main branch is used to synchronize the {metæffekt}-universe.
+main branch is used to synchronize the {metæffekt} Universe.

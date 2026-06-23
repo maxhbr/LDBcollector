@@ -10,6 +10,9 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "TCL License"
+  - "TCL/TK License"
+  - "TCL-TK License"
 
 otherIds: 
   - "scancode:tcl"
+  - "fedora:TCL"

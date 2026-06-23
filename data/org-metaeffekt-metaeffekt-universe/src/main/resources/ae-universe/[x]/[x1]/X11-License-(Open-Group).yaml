@@ -17,6 +17,7 @@ alternativeNames:
   - "mit-open-group"
   - "MIT-open-group"
   - "MIT Open Group variant"
+  - "X11-Style (Open Group)"
 
 otherIds: 
   - "scancode:x11-opengroup"

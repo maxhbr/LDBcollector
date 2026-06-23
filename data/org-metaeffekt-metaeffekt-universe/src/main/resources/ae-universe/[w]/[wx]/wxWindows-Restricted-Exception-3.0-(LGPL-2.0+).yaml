@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "wxWindows Restricted Exception 3.0 (LGPL-2.0+)"
+category: "wxWindows Restricted Exception"
+shortName: "wxWindows-Restricted-Exception-3.0-LGPL-2.0+"
+
+canonicalNameHistory:
+  - "wxWindows Restricted Licence 3.0"
+
+type: "exception"
+
+alternativeNames:
+  - "wxWindows Restricted Licence, Version 3"
+
+otherIds: 
+  - "scancode:wxwindows-r-3.0"

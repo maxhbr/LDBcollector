@@ -10,6 +10,8 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "Bitstream Vera License"
+  - "Bitstream Vera Font License"
+  - "Bitstream Vera Fonts Copyright"
 
 otherIds: 
   - "scancode:bitstream"

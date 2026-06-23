@@ -1,0 +1,22 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Apple Sample Code License 2006"
+category: "Apple Sample Code"
+shortName: "Apple-Sample-Code-2006"
+spdxIdentifier: "AML"
+
+canonicalNameHistory:
+  - "Apple MIT License"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "Apple MIT License"
+  - "Apple Sample Code License 2006"
+  - "AppleJavaExtensions Agreement"
+
+otherIds: 
+  - "scancode:aml"
+  - "fedora:Apple_MIT_License"

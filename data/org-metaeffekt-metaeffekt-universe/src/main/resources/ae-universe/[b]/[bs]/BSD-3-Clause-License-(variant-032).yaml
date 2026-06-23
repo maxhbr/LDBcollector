@@ -11,3 +11,7 @@ canonicalNameHistory:
   - "BSD 3-Clause License Var031"
   - "BSD 3-Clause License (variant 031)"
 
+alternativeNames:
+  - "Yahoo BSD License"
+  - "Yahoo-BSD-License"
+

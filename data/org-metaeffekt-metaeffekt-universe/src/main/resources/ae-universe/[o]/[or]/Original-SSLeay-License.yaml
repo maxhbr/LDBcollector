@@ -10,6 +10,7 @@ alternativeNames:
   - "Original SSLeay License"
   - "SSLeay-standalone"
   - "SSLeay License - standalone"
+  - "Original-SSLeay"
 
 otherIds: 
   - "scancode:ssleay-windows"

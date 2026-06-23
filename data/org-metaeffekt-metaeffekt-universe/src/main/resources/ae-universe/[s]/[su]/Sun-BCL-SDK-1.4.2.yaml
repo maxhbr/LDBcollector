@@ -9,5 +9,9 @@ shortName: "Sun-BCL-SDK-1.4.2"
 canonicalNameHistory:
   - "Sun Binary Code License SDK 1.4.2"
 
+alternativeNames:
+  - "Sun Binary Code License Agreement (J2SDK)"
+  - "Sun License for J2SDK"
+
 otherIds: 
   - "scancode:sun-bcl-sdk-1.4.2"

@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2026. All rights reserved.
+
+canonicalName: "Matrix Template Library License"
+category: "MTLL"
+spdxIdentifier: "MTLL"
+
+canonicalNameHistory:
+  - "MTLL"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "MTL License"
+  - "MTL LICENSE"
+  - "Software License for MTL"
+
+otherIds: 
+  - "scancode:mtll"
+  - "fedora:Matrix_Template_Library_License"

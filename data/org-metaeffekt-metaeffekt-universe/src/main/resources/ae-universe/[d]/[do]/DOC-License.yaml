@@ -11,6 +11,7 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "DOC License"
   - "DOC LICENSE"
+  - "ACE TAO License"
 
 otherIds: 
   - "scancode:ace-tao"
