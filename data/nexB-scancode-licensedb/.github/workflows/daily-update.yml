@@ -4,20 +4,25 @@ on:
     - cron: '0 16 * * 1-5'
   workflow_dispatch:
 
+permissions: {}
 jobs:
   update_licenseDB:
     name: Daily LicenseDB Update
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     defaults:
       run:
         shell: bash
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
         with:
           python-version: 3.12
 
@@ -26,8 +31,9 @@ jobs:
 
       - name: Commit and Push to Publish
         run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git config --global user.name 'LicenseDB Update GitHub Action'
-          git config --global user.email 'asmahapatra@nexb.com'
+          git config --global user.email 'automation@aboutcode.org'
           git add docs/* etc/*
           git commit -m "Automated LicenseDB update with latest from scancode-toolkit develop"
           git push
