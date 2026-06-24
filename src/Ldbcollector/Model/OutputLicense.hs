@@ -20,7 +20,7 @@ import Data.Vector qualified as V
 import Ldbcollector.Model.LicenseFact (LicenseNameCluster (..), getImpliedLicenseTypes)
 import Ldbcollector.Model.LicenseGraph (LicenseGraph, LicenseGraphM, LicenseGraphNode (LGFact, LGName), LicenseGraphType, getLicenseGraphLicenseNames, runLicenseGraphM', stderrLog, _gr)
 import Ldbcollector.Model.LicenseGraphAlgo (focus, getLicenseNameClusterM)
-import Ldbcollector.Model.LicenseName (LicenseName (LicenseName))
+import Ldbcollector.Model.LicenseName (LicenseName (LicenseName), unsetNS)
 import Ldbcollector.Model.LicenseStatement (LicenseType (..))
 import MyPrelude
 
@@ -32,15 +32,26 @@ data OutputLicense = OutputLicense
 instance ToJSON OutputLicense where
   toJSON (OutputLicense (LicenseNameCluster ln olns olnhs) lt) =
     object
-      [ "licenseName" .= ln,
-        "otherLicenseNames" .= olns,
-        "otherLicenseNameHints" .= olnhs,
+      [ "licenseName" .= unsetNS ln,
+        "otherLicenseNames" .= unscopedOlns,
+        "otherLicenseNameHints" .= unscopedOlnhs,
         "licenseType" .= show lt,
         "complex"
           .= object
-            [ "licenseType" .= lt
+            [ "licenseType" .= lt,
+              "licenseName" .= ln,
+              "otherLicenseNames" .= olns,
+              "otherLicenseNameHints" .= olnhs
             ]
       ]
+    where
+      -- Drop the scope (namespace) from each name and deduplicate.
+      -- 'LicenseName' equality is case-folded over the full rendered name,
+      -- so unscoping first collapses names that only differed by scope.
+      unscopedOlns = nub (map unsetNS olns)
+      -- Hints that already appear in 'otherLicenseNames' are dropped, so a
+      -- name only survives in one of the two unscoped lists.
+      unscopedOlnhs = filter (`notElem` unscopedOlns) (nub (map unsetNS olnhs))
 
 toOutputLicense :: LicenseGraphType -> LicenseNameCluster -> OutputLicense
 toOutputLicense subgraph cluster =
