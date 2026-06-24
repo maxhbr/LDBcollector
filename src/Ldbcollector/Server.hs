@@ -300,6 +300,17 @@ summaryContent licenseGraph subgraph cluster = do
   H.h1 "Summary"
   licenseFactsImplicationsToMarkup facts cluster
   H.h1 "by Source"
+  let allSources = (nub . map fst . Map.keys . _facts) licenseGraph
+  let contributingSources =
+        (nub . mapMaybe (getSourceOfFact licenseGraph . getFactId)) facts
+  H.ul H.! A.class_ "capsulUl" $
+    mapM_
+      ( \source ->
+          let contributed = source `elem` contributingSources
+              cls = if contributed then "capsul contributed" else "capsul not-contributed"
+           in H.li H.! A.class_ cls $ H.toMarkup (show source)
+      )
+      allSources
   H.ul $
     mapM_
       ( \fact -> H.li $ do

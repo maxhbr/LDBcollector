@@ -74,6 +74,7 @@ header form {
 
 .capsulUl {
     list-style-type: none;
+    overflow: hidden;
 }
 
 .capsulUl > li, .capsul {
@@ -86,6 +87,17 @@ header form {
 }
 .capsulUl > li {
     float: left;
+}
+
+.capsul.contributed {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+.capsul.not-contributed {
+    background-color: #e9ecef;
+    border-color: #ccc;
+    color: #6c757d;
 }
 
 @media (min-width:1200px) {
